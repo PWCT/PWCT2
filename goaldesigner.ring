@@ -9,10 +9,18 @@ load "stdlib.ring"
 load "guilib.ring"
 load "translation/english.ring"
 
-new qApp {
-	win = new qMainWindow() {
+if filename()  = sysargv[2] {
+	Test_GoalDesigner()
+}
+
+func Test_GoalDesigner
+	new qApp {
+		oGoalDesigner = new GoalDesigner
+		exec()
+	}
+
+class GoalDesigner
+	win = new qWidget() {
 		setWindowTitle(T_GD_WindowTitle) # "Goal Designer"
 		showMaximized()
 	}
-	exec()
-}
