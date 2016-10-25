@@ -22,5 +22,13 @@ func Test_GoalDesigner
 class GoalDesigner
 	win = new qWidget() {
 		setWindowTitle(T_GD_WindowTitle) # "Goal Designer"
+		tree1 = new qtreewidget(win) {
+			setGeometry(0,0,400,400)
+			setcolumncount(1)
+			firststep = new qtreewidgetitem()
+			firststep.settext(0,"The First Step")
+			addtoplevelitem(firststep)
+			setheaderlabel("Steps Tree")
+		}		
 		showMaximized()
 	}
