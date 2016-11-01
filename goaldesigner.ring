@@ -15,14 +15,15 @@ if filename()  = sysargv[2] {
 
 func Test_GoalDesigner
 	new qApp {
-		oGoalDesigner = new GoalDesigner
+		oGoalDesignerController = new GoalDesignerController
+		oGoalDesignerController.Start()
 		exec()
 	}
 
-class GoalDesigner
+class GoalDesignerView
 	win = new qWidget() {
 		setWindowTitle(T_GD_WindowTitle) # "Goal Designer"
-		tree1 = new qtreewidget(win) {
+		StepsTree = new qtreewidget(win) {
 			setGeometry(0,0,400,400)
 			setcolumncount(1)
 			firststep = new qtreewidgetitem()
@@ -30,5 +31,16 @@ class GoalDesigner
 			addtoplevelitem(firststep)
 			setheaderlabel("Steps Tree")
 		}		
-		showMaximized()
 	}
+	Func Show
+		win {showMaximized()} 
+
+Class GoalDesignerController
+	oView = new GoalDesignerView
+	oModel = new GoalDesignerModel
+	Func Start
+		oView.Show()
+
+Class GoalDesignerModel
+
+
