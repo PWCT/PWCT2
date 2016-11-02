@@ -23,14 +23,7 @@ func Test_GoalDesigner
 class GoalDesignerView
 	win = new qWidget() {
 		setWindowTitle(T_GD_WindowTitle) # "Goal Designer"
-		StepsTree = new qtreewidget(win) {
-			setGeometry(0,0,400,400)
-			setcolumncount(1)
-			firststep = new qtreewidgetitem()
-			firststep.settext(0,"The First Step")
-			addtoplevelitem(firststep)
-			setheaderlabel("Steps Tree")
-		}
+		StepsTree = new StepsTree(win)
 		layout1 = new qVBoxLayout()
 		{	
 			AddWidget(StepsTree)
@@ -48,4 +41,12 @@ Class GoalDesignerController
 
 Class GoalDesignerModel
 
-
+Class StepsTree from qtreewidget
+	firststep
+	func init win
+		super.init(win)
+		setcolumncount(1)
+		firststep = new qtreewidgetitem()
+		firststep.settext(0,"The First Step")
+		addtoplevelitem(firststep)
+		setheaderlabel("Steps Tree")
