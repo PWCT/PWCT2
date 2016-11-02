@@ -30,7 +30,12 @@ class GoalDesignerView
 			firststep.settext(0,"The First Step")
 			addtoplevelitem(firststep)
 			setheaderlabel("Steps Tree")
+		}
+		layout1 = new qVBoxLayout()
+		{	
+			AddWidget(StepsTree)
 		}		
+		SetLayout(Layout1)
 	}
 	Func Show
 		win {showMaximized()} 
