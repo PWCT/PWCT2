@@ -46,21 +46,19 @@ class GoalDesignerController
 
 class GoalDesignerModel
 
-class StepsTree from qtreewidget	
+class StepsTree from qTreeWidget	
 
 	oFirststep
-	cFirststeptext  = "The First Step"
-	cStepsTreeText = "Steps Tree"
 
 	func Init win
 		super.init(win)
 		setcolumncount(1)
 		oFirststep = new qtreewidgetitem()
-		oFirststep.settext(0,cFirststeptext)
+		oFirststep.settext(0,T_GD_FirstStep)
 		addtoplevelitem(oFirststep)
-		setheaderlabel(cStepsTreeText )
+		setheaderlabel(T_GD_StepsTree)
 
 	func AddNode oParent,cText
-		myitem = new qtreewidgetitem()
-		myitem.settext(0,cText)
-		oParent.addchild(myitem)
+		oItem = new qtreewidgetitem()
+		oItem.settext(0,cText)
+		oParent.addchild(oItem)

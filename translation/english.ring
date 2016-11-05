@@ -9,4 +9,8 @@
 
 # Goal Designer Window
 
-T_GD_WindowTitle = "Goal Designer"
+	T_GD_WindowTitle = "Goal Designer"
+
+	# Steps Tree
+	T_GD_Firststep  = "The First Step"
+	T_GD_StepsTree = "Steps Tree"
