@@ -18,9 +18,9 @@ if filename()  = sysargv[2] {
 func Test_GoalDesigner
 
 	new qApp {
-		$objname = "oGoalDesignerController"
-		oGoalDesignerController = new GoalDesignerController
-		oGoalDesignerController.Start()
+		$objname = "$GoalDesigner"
+		$GoalDesigner = new GoalDesignerController
+		$GoalDesigner.Start()
 		exec()
 	}
 
@@ -42,7 +42,7 @@ class GoalDesignerView
 	}
 
 	func Show
-		win {showMaximized()} 
+		win { showMaximized() }
 
 
 class GoalDesignerController
@@ -54,7 +54,7 @@ class GoalDesignerController
 		oView.Show()
 
 	func AddStep 
-		see oView.StepsTree.currentindex().row()
+ 
 
 class GoalDesignerModel
 

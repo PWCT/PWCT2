@@ -10,4 +10,4 @@
 $objname = ""
 
 # Goal Designer Window
-oGoalDesignerController = NULL
+$GoalDesigner  = NULL
