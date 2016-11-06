@@ -23,6 +23,17 @@ func Test_GoalDesigner
 		exec()
 	}
 
+class GoalDesignerController
+
+	oView = new GoalDesignerView
+	oModel = new GoalDesignerModel
+
+	func Start
+		oView.Show()
+
+	func AddStep 
+ 		see "nice" + nl
+
 class GoalDesignerView
 
 	win = new qWidget() {
@@ -67,17 +78,6 @@ class StepsTreeView from qTreeWidget
 		oParent.addchild(oItem)
 		return oItem
 
-
-class GoalDesignerController
-
-	oView = new GoalDesignerView
-	oModel = new GoalDesignerModel
-
-	func Start
-		oView.Show()
-
-	func AddStep 
- 		see "nice" + nl
 
 class GoalDesignerModel
 
