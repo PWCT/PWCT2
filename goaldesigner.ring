@@ -10,7 +10,6 @@ load "guilib.ring"
 load "globals.ring"
 load "translation/english.ring"
 
-
 if filename()  = sysargv[2] {
 	Test_GoalDesigner()
 }
@@ -28,10 +27,10 @@ class GoalDesignerView
 
 	win = new qWidget() {
 		setWindowTitle(T_GD_WindowTitle) # "Goal Designer"
-		StepsTree = new StepsTree(win)
+		StepsTree = new StepsTreeView(win)
 		btnAddStep = new qPushButton(win) {
 			setText("New Step")
-			setClickEvent($objname+".AddStep()")
+			setClickEvent($objname+".AddStep()")			
 		}
 		layout1 = new qVBoxLayout()
 		{	
@@ -44,6 +43,30 @@ class GoalDesignerView
 	func Show
 		win { showMaximized() }
 
+class StepsTreeView from qTreeWidget	
+
+	oFirststep
+
+	aTree = []	# Node ID , Node Object
+
+	func Init win
+		super.init(win)
+		setcolumncount(1)
+		oFirststep = new qtreewidgetitem()
+		oFirststep.settext(0,T_GD_FirstStep)
+		addtoplevelitem(oFirststep)
+		aTree + [ 0 , oFirstStep ] 
+		#addnode(oFirststep,"test")
+		#oNode = addnode(oFirststep,"test 2")
+		#addnode(oNode,"test 3")
+		setheaderlabel(T_GD_StepsTree)
+
+	func AddNode oParent,cText
+		oItem = new qtreewidgetitem()
+		oItem.settext(0,cText)
+		oParent.addchild(oItem)
+		return oItem
+
 
 class GoalDesignerController
 
@@ -54,7 +77,7 @@ class GoalDesignerController
 		oView.Show()
 
 	func AddStep 
- 
+ 		see "nice" + nl
 
 class GoalDesignerModel
 
@@ -64,29 +87,9 @@ class GoalDesignerModel
 	AddStep(0,[:name = T_GD_FirstStep])
 
 	Func AddStep nParent,Content
-		return oStepsTreeModel.AddNode(nParent,Content)
+		nID =  oStepsTreeModel.AddNode(nParent,Content)
 
 
-class StepsTree from qTreeWidget	
-
-	oFirststep
-
-	func Init win
-		super.init(win)
-		setcolumncount(1)
-		oFirststep = new qtreewidgetitem()
-		oFirststep.settext(0,T_GD_FirstStep)
-		addtoplevelitem(oFirststep)
-		addnode(oFirststep,"test")
-		oNode = addnode(oFirststep,"test 2")
-		addnode(oNode,"test 3")
-		setheaderlabel(T_GD_StepsTree)
-
-	func AddNode oParent,cText
-		oItem = new qtreewidgetitem()
-		oItem.settext(0,cText)
-		oParent.addchild(oItem)
-		return oItem
 
 /*
 	Tree Model Class
