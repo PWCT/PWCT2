@@ -32,13 +32,16 @@ class GoalDesignerController
 		oView.Show()
 
 	func AddStep 
- 		see "nice" + nl
+		oItem  = oView.oStepsTree.currentItem()
+		nParentID = oView.oStepsTree.IDByObj(oItem)
+ 		nID = oModel.AddStep(nParentID,[:name = "test"])
+		oView.oStepsTree.addnode(oView.oStepsTree.objbyid(nParentID),nID,"test")
 
 class GoalDesignerView
 
 	win = new qWidget() {
 		setWindowTitle(T_GD_WindowTitle) # "Goal Designer"
-		StepsTree = new StepsTreeView(win)
+		oStepsTree = new StepsTreeView(win)
 		btnAddStep = new qPushButton(win) {
 			setText("New Step")
 			setClickEvent($objname+".AddStep()")			
@@ -46,7 +49,7 @@ class GoalDesignerView
 		layout1 = new qVBoxLayout()
 		{	
 			AddWidget(btnAddStep)
-			AddWidget(StepsTree)
+			AddWidget(oStepsTree)
 		}		
 		SetLayout(Layout1)
 	}
@@ -58,7 +61,7 @@ class StepsTreeView from qTreeWidget
 
 	oFirststep
 
-	aTree = []	# Node ID , Node Object
+	aTree = []	# Node ID , Node Object , Node Object.pObject
 
 	func Init win
 		super.init(win)
@@ -66,18 +69,24 @@ class StepsTreeView from qTreeWidget
 		oFirststep = new qtreewidgetitem()
 		oFirststep.settext(0,T_GD_FirstStep)
 		addtoplevelitem(oFirststep)
-		aTree + [ 0 , oFirstStep ] 
-		#addnode(oFirststep,"test")
-		#oNode = addnode(oFirststep,"test 2")
-		#addnode(oNode,"test 3")
+		AddToTree(1,oFirstStep)
 		setheaderlabel(T_GD_StepsTree)
 
-	func AddNode oParent,cText
+	func AddNode oParent,nID,cText
 		oItem = new qtreewidgetitem()
 		oItem.settext(0,cText)
 		oParent.addchild(oItem)
+		AddToTree(nID,oItem)
 		return oItem
 
+	func ObjByID id
+		return aTree[std_find2(aTree,id,1)][2]
+
+	func IDByObj oObj
+		return aTree[std_find2(aTree,oObj.pObject,3)][1]
+
+	func AddToTree nID,oObject
+		aTree + [nID,oObject,oObject.pObject]
 
 class GoalDesignerModel
 
@@ -88,8 +97,7 @@ class GoalDesignerModel
 
 	Func AddStep nParent,Content
 		nID =  oStepsTreeModel.AddNode(nParent,Content)
-
-
+		return nID
 
 /*
 	Tree Model Class
