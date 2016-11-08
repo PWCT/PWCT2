@@ -38,7 +38,19 @@ class GoalDesignerController
 		oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)
 
 	func AddStepAction
-		AddStep("test")
+		oInput = New QInputDialog(oView.win)
+		{
+			setwindowtitle("Enter the step name?")
+			setgeometry(100,100,400,50)
+			setlabeltext("Step Name")
+			settextvalue("")
+			lcheck = exec()
+		}
+		if lCheck  {
+			AddStep(oInput.textvalue())
+		}
+	
+
 
 class GoalDesignerView
 
@@ -103,7 +115,7 @@ class GoalDesignerModel
 	# Add the first step
 	AddStep(0,[:name = T_GD_FirstStep])
 
-	Func AddStep nParent,Content
+	func AddStep nParent,Content
 		nID =  oStepsTreeModel.AddNode(nParent,Content)
 		return nID
 
@@ -124,7 +136,7 @@ class TreeModel
 		The method check where to inset new nodes
 		We have tree in the correct order (Top-Down)
 	*/
-	Func AddNode  nParent,Content
+	func AddNode  nParent,Content
 		nID++	# Increase the Automatic ID by 1
 		nPos = FindNewNodePosition(nParent)
 		insert(aList,nPos, [nID, nParent, Content])
@@ -136,7 +148,7 @@ class TreeModel
 		The goal is to keep the tree in the correct order
 		So we don't need to order the tree when we generate the code
 	*/
-	Func FindNewNodePosition nParent
+	func FindNewNodePosition nParent
 		for x = 1 to len(aList) {
 			if aList[x][1] = nParent {
 				for x2 = x+1 to len(aList) {
