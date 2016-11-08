@@ -33,7 +33,7 @@ class GoalDesignerController
 
 	func AddStep cStepName
 		oItem  = oView.oStepsTree.currentItem()
-		nParentID = oView.oStepsTree.IDByObj(oItem)
+		nParentID = oView.oStepsTree.GetIDByObj(oItem)
  		nStepID = oModel.AddStep(nParentID,[:name = cStepName])
 		oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)
 
@@ -60,11 +60,9 @@ class GoalDesignerView
 	func Show
 		win { showMaximized() }
 
-class StepsTreeView from qTreeWidget	
+class StepsTreeView from TreeControl
 
 	oFirststep
-
-	aTree = []	# Node ID , Node Object , Node Object.pObject
 
 	func Init win
 		super.init(win)
@@ -75,8 +73,12 @@ class StepsTreeView from qTreeWidget
 		AddToTree(1,oFirstStep)
 		setheaderlabel(T_GD_StepsTree)
 
+class TreeControl from qTreeWidget	
+
+	aTree = []	# Node ID , Node Object , Node Object.pObject
+
 	func AddStep nParentID,nID,cText
-		oParent = objbyid(nParentID)
+		oParent = GetObjByID(nParentID)
 		oItem = new qtreewidgetitem()
 		oItem.settext(0,cText)
 		oParent.addchild(oItem)
@@ -85,10 +87,10 @@ class StepsTreeView from qTreeWidget
 		setCurrentItem(oParent,0)	# Focus on Parent Step
 		return oItem
 
-	func ObjByID id
+	func GetObjByID id
 		return aTree[std_find2(aTree,id,1)][2]
 
-	func IDByObj oObj
+	func GetIDByObj oObj
 		return aTree[std_find2(aTree,oObj.pObject,3)][1]
 
 	func AddToTree nID,oObject
@@ -117,6 +119,24 @@ class TreeModel
 
 	Func AddNode  nParent,Content
 		nID++	# Increase the Automatic ID by 1
-		aList + [nID, nParent, Content]
+		nPos = FindNewNodePosition(nParent)
+		insert(aList,nPos, [nID, nParent, Content])
+		see copy("*",60)+nl
+		see aList
 		return nID	# Return the Node ID
 
+	Func FindNewNodePosition nParent
+		for x = 1 to len(aList) {
+			if aList[x][1] = nParent {
+				for x2 = x+1 to len(aList) {
+					if aList[x2][2] != nParent {
+						return x2-1
+					}
+				}
+			}
+		}
+		return len(aList)
+
+
+
+		
