@@ -109,7 +109,9 @@ class GoalDesignerModel
 
 /*
 	Tree Model Class
-	nNodeID	-   nParentID   -  Content
+	We manage the tree data as a table
+	The table contains the next columns
+	nNodeID - nParentID - Content
 */
 
 class TreeModel
@@ -126,8 +128,6 @@ class TreeModel
 		nID++	# Increase the Automatic ID by 1
 		nPos = FindNewNodePosition(nParent)
 		insert(aList,nPos, [nID, nParent, Content])
-		see copy("*",60)+nl
-		see aList
 		return nID	# Return the Node ID
 
 	/*
