@@ -31,11 +31,14 @@ class GoalDesignerController
 	func Start
 		oView.Show()
 
-	func AddStep 
+	func AddStep cStepName
 		oItem  = oView.oStepsTree.currentItem()
 		nParentID = oView.oStepsTree.IDByObj(oItem)
- 		nStepID = oModel.AddStep(nParentID,[:name = "test"])
-		oView.oStepsTree.addnode(nParentID,nStepID,"test")
+ 		nStepID = oModel.AddStep(nParentID,[:name = cStepName])
+		oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)
+
+	func AddStepAction
+		AddStep("test")
 
 class GoalDesignerView
 
@@ -44,7 +47,7 @@ class GoalDesignerView
 		oStepsTree = new StepsTreeView(win)
 		btnAddStep = new qPushButton(win) {
 			setText("New Step")
-			setClickEvent($objname+".AddStep()")			
+			setClickEvent($objname+".AddStepAction()")			
 		}
 		layout1 = new qVBoxLayout()
 		{	
@@ -72,12 +75,14 @@ class StepsTreeView from qTreeWidget
 		AddToTree(1,oFirstStep)
 		setheaderlabel(T_GD_StepsTree)
 
-	func AddNode nParentID,nID,cText
+	func AddStep nParentID,nID,cText
 		oParent = objbyid(nParentID)
 		oItem = new qtreewidgetitem()
 		oItem.settext(0,cText)
 		oParent.addchild(oItem)
 		AddToTree(nID,oItem)
+		setCurrentItem(oItem,0)	# To Display the item (become visible)
+		setCurrentItem(oParent,0)	# Focus on Parent Step
 		return oItem
 
 	func ObjByID id
