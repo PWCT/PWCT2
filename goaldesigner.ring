@@ -117,6 +117,11 @@ class TreeModel
 	aList = []		# Tree Content
 	nID = 0		# Automatic ID for each node
 
+	/*
+		The next method add new nodes to the tree
+		The method check where to inset new nodes
+		We have tree in the correct order (Top-Down)
+	*/
 	Func AddNode  nParent,Content
 		nID++	# Increase the Automatic ID by 1
 		nPos = FindNewNodePosition(nParent)
@@ -125,6 +130,12 @@ class TreeModel
 		see aList
 		return nID	# Return the Node ID
 
+	/*
+		The next method get the position of the new node
+		We use the inset() function later to add new nodes
+		The goal is to keep the tree in the correct order
+		So we don't need to order the tree when we generate the code
+	*/
 	Func FindNewNodePosition nParent
 		for x = 1 to len(aList) {
 			if aList[x][1] = nParent {
