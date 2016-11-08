@@ -34,8 +34,8 @@ class GoalDesignerController
 	func AddStep 
 		oItem  = oView.oStepsTree.currentItem()
 		nParentID = oView.oStepsTree.IDByObj(oItem)
- 		nID = oModel.AddStep(nParentID,[:name = "test"])
-		oView.oStepsTree.addnode(oView.oStepsTree.objbyid(nParentID),nID,"test")
+ 		nStepID = oModel.AddStep(nParentID,[:name = "test"])
+		oView.oStepsTree.addnode(nParentID,nStepID,"test")
 
 class GoalDesignerView
 
@@ -72,7 +72,8 @@ class StepsTreeView from qTreeWidget
 		AddToTree(1,oFirstStep)
 		setheaderlabel(T_GD_StepsTree)
 
-	func AddNode oParent,nID,cText
+	func AddNode nParentID,nID,cText
+		oParent = objbyid(nParentID)
 		oItem = new qtreewidgetitem()
 		oItem.settext(0,cText)
 		oParent.addchild(oItem)
