@@ -50,6 +50,22 @@ class GoalDesignerController
 			AddStep(oInput.textvalue())
 		}
 	
+	func EditStepAction
+		oItem  = oView.oStepsTree.currentItem()
+		nStepID = oView.oStepsTree.GetIDByObj(oItem)
+		oInput = New QInputDialog(oView.win)
+		{
+			setwindowtitle("Enter the step name?")
+			setgeometry(100,100,400,50)
+			setlabeltext("Step Name")
+			settextvalue(oItem.text(0))
+			lcheck = exec()
+		}
+		if lCheck  {
+			cText = oInput.textvalue()
+			oItem.setText(0,cText)
+			oModel.EditStepName(nStepID,cText)
+		}		
 
 
 class GoalDesignerView
@@ -61,9 +77,18 @@ class GoalDesignerView
 			setText("New Step")
 			setClickEvent($objname+".AddStepAction()")			
 		}
-		layout1 = new qVBoxLayout()
+		btnEditStep = new qPushButton(win) {
+			setText("Edit Step")
+			setClickEvent($objname+".EditStepAction()")			
+		}
+		layoutBtns = new qHBoxLayout()
 		{	
 			AddWidget(btnAddStep)
+			AddWidget(btnEditStep)
+		}
+		layout1 = new qVBoxLayout()
+		{	
+			AddLayout(layoutBtns)
 			AddWidget(oStepsTree)
 		}		
 		SetLayout(Layout1)
@@ -119,6 +144,11 @@ class GoalDesignerModel
 		nID =  oStepsTreeModel.AddNode(nParent,Content)
 		return nID
 
+	func EditStepName nStepID,cStepName
+		aContent = oStepsTreeModel.GetNodeContent(nStepID)
+		aContent[:name] = cStepName
+		oStepsTreeModel.SetNodeContent(nStepID,aContent)
+
 /*
 	Tree Model Class
 	We manage the tree data as a table
@@ -128,7 +158,7 @@ class GoalDesignerModel
 
 class TreeModel
 
-	aList = []		# Tree Content
+	aList = []		# Tree Content [nNodeID - nParentID - Content]
 	nID = 0		# Automatic ID for each node
 
 	/*
@@ -160,6 +190,19 @@ class TreeModel
 		}
 		return len(aList)
 
+	/*
+		The next method edit the node content in the tree
+	*/
+	func SetNodeContent nNodeID,Content
+		nPos = find(aList,nNodeID,1)
+		aList[nPos][3] = Content
+
+	/*
+		The next method get the node content from the tree
+	*/
+	func GetNodeContent nNodeID
+		nPos = find(aList,nNodeID,1)
+		return aList[nPos][3]
 
 
 		
