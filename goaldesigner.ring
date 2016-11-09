@@ -67,6 +67,8 @@ class GoalDesignerController
 			oModel.EditStepName(nStepID,cText)
 		}		
 
+	func PrintStepsAction
+		oModel.PrintSteps()
 
 class GoalDesignerView
 
@@ -81,10 +83,15 @@ class GoalDesignerView
 			setText("Edit Step")
 			setClickEvent($objname+".EditStepAction()")			
 		}
+		btnPrintSteps = new qPushButton(win) {
+			setText("Print Steps")
+			setClickEvent($objname+".PrintStepsAction()")			
+		}
 		layoutBtns = new qHBoxLayout()
 		{	
 			AddWidget(btnAddStep)
 			AddWidget(btnEditStep)
+			AddWidget(btnPrintSteps)
 		}
 		layout1 = new qVBoxLayout()
 		{	
@@ -149,6 +156,11 @@ class GoalDesignerModel
 		aContent[:name] = cStepName
 		oStepsTreeModel.SetNodeContent(nStepID,aContent)
 
+	func PrintSteps
+		for x in oStepsTreeModel.getdata() {
+			puts( x[C_TREEMODEL_CONTENT][:name] )
+		}
+
 /*
 	Tree Model Class
 	We manage the tree data as a table
@@ -180,9 +192,9 @@ class TreeModel
 	*/
 	func FindNewNodePosition nParent
 		for x = 1 to len(aList) {
-			if aList[x][1] = nParent {
+			if aList[x][C_TREEMODEL_NODEID] = nParent {
 				for x2 = x+1 to len(aList) {
-					if aList[x2][2] != nParent {
+					if aList[x2][C_TREEMODEL_PARENTID] != nParent {
 						return x2-1
 					}
 				}
@@ -194,15 +206,18 @@ class TreeModel
 		The next method edit the node content in the tree
 	*/
 	func SetNodeContent nNodeID,Content
-		nPos = find(aList,nNodeID,1)
-		aList[nPos][3] = Content
+		nPos = find(aList,nNodeID,C_TREEMODEL_NODEID)
+		aList[nPos][C_TREEMODEL_CONTENT] = Content
 
 	/*
 		The next method get the node content from the tree
 	*/
 	func GetNodeContent nNodeID
-		nPos = find(aList,nNodeID,1)
-		return aList[nPos][3]
+		nPos = find(aList,nNodeID,C_TREEMODEL_NODEID)
+		return aList[nPos][C_TREEMODEL_CONTENT]
 
-
-		
+	/*
+		The next function return the tree list
+	*/
+	func getdata
+		return aList

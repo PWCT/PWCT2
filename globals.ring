@@ -11,3 +11,8 @@ $objname = ""
 
 # Goal Designer Window
 $GoalDesigner  = NULL
+
+# Tree Model
+C_TREEMODEL_NODEID    = 1
+C_TREEMODEL_PARENTID = 2
+C_TREEMODEL_CONTENT  = 3
