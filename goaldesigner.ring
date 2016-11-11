@@ -79,6 +79,30 @@ class GoalDesignerController
 		oItem.parent().takechild(oItem.parent().indexofchild(oItem))
 		oModel.DeleteStep(nStepID)
 
+	func MoveStepUpAction
+		oItem  = oView.oStepsTree.currentItem()
+		nStepID = oView.oStepsTree.GetIDByObj(oItem)
+		oParent = oItem.Parent()
+		nIndex = oParent.IndexofChild(oItem)
+		if nIndex > 0 {	# Not The First Item
+			oParent.TakeChild(nIndex)
+			oParent.InsertChild(nIndex-1,oItem)
+			oParent.SetExpanded(True)
+			oItem.SetExpanded(True)	
+		}
+
+	func MoveStepDownAction
+		oItem  = oView.oStepsTree.currentItem()
+		nStepID = oView.oStepsTree.GetIDByObj(oItem)
+		oParent = oItem.Parent()
+		nIndex = oParent.IndexofChild(oItem)
+		if nIndex < oParent.ChildCount() - 1 { # Not the Last Item
+			oParent.TakeChild(nIndex)
+			oParent.InsertChild(nIndex+1,oItem)
+			oParent.SetExpanded(True)
+			oItem.SetExpanded(True)	
+		}
+
 	func PrintStepsAction
 		oModel.PrintSteps()
 
@@ -99,6 +123,14 @@ class GoalDesignerView
 			setText("Delete Step")
 			setClickEvent($objname+".DeleteStepAction()")			
 		}
+		btnMoveStepUp = new qPushButton(win) {
+			setText("Move Up")
+			setClickEvent($objname+".MoveStepUpAction()")			
+		}
+		btnMoveStepDown = new qPushButton(win) {
+			setText("Move Down")
+			setClickEvent($objname+".MoveStepDownAction()")			
+		}
 		btnPrintSteps = new qPushButton(win) {
 			setText("Print Steps")
 			setClickEvent($objname+".PrintStepsAction()")			
@@ -108,6 +140,8 @@ class GoalDesignerView
 			AddWidget(btnAddStep)
 			AddWidget(btnEditStep)
 			AddWidget(btnDeleteStep)
+			AddWidget(btnMoveStepUp)
+			AddWidget(btnMoveStepDown)
 			AddWidget(btnPrintSteps)
 		}
 		layout1 = new qVBoxLayout()
