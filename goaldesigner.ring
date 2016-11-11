@@ -82,18 +82,25 @@ class GoalDesignerController
 	func MoveStepUpAction
 		oItem  = oView.oStepsTree.currentItem()
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
+		if nStepID = 1 {	# Avoid start point
+			return
+		}
 		oParent = oItem.Parent()
 		nIndex = oParent.IndexofChild(oItem)
 		if nIndex > 0 {	# Not The First Item
 			oParent.TakeChild(nIndex)
 			oParent.InsertChild(nIndex-1,oItem)
 			oParent.SetExpanded(True)
-			oItem.SetExpanded(True)	
+			oItem.SetExpanded(True)
+			oModel.MoveStepUp(nStepID)	
 		}
 
 	func MoveStepDownAction
 		oItem  = oView.oStepsTree.currentItem()
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
+		if nStepID = 1 {	# Avoid start point
+			return
+		}
 		oParent = oItem.Parent()
 		nIndex = oParent.IndexofChild(oItem)
 		if nIndex < oParent.ChildCount() - 1 { # Not the Last Item
@@ -101,6 +108,7 @@ class GoalDesignerController
 			oParent.InsertChild(nIndex+1,oItem)
 			oParent.SetExpanded(True)
 			oItem.SetExpanded(True)	
+			oModel.MoveStepDown(nStepID)	
 		}
 
 	func PrintStepsAction
@@ -215,6 +223,12 @@ class GoalDesignerModel
 	func DeleteStep nStepID
 		oStepsTreeModel.DeleteNode(nStepID)
 
+	func MoveStepUp nStepID
+		oStepsTreeModel.MoveNodeUp(nStepID)
+
+	func MoveStepDown nStepID
+		oStepsTreeModel.MoveNodeDown(nStepID)
+
 /*
 	Tree Model Class
 	We manage the tree data as a table
@@ -305,6 +319,18 @@ class TreeModel
 		}
 	
 	/*
+		The next method get a list of the Children data
+		Input : Children list of indexes 
+		Output : Children list of data
+	*/
+	func GetChildren aChildren
+		aOutput = []
+		for x in aChildren {
+			aOutput + aList[x]
+		}
+		return aOutput
+
+	/*
 		Remove node and it's children
 	*/
 	func DeleteNode nNodeID
@@ -314,3 +340,49 @@ class TreeModel
 		nPos = find(aList,nNodeID,C_TREEMODEL_NODEID)		
 		del(aList,nPos)
 
+	/*
+		The next method move a node up
+	*/
+	func MoveNodeUp nNodeID
+		nPos = find(aList,nNodeID,C_TREEMODEL_NODEID)		
+		nParentID = aList[nPos][C_TREEMODEL_PARENTID]
+		# Find the sibiling node (Up)
+		for x=nPos-1 to 1 step -1 {
+			if aList[x][C_TREEMODEL_PARENTID] = nParentID {
+				nPos2 = x
+				exit 
+			}
+		}
+		# Get Children List
+			aMove = GetChildren(Children(aList[nPos2][C_TREEMODEL_NODEID]))
+		# Add the Parent Node
+			Insert(aMove,0,aList[nPos2])
+		# Delete The Node
+			DeleteNode(aList[nPos2][C_TREEMODEL_NODEID])
+		# Get the Last Item in the Node children that we move up
+			aChildren = children(nNodeID)
+		# Insert Items after the last item in the node children 
+			if len(aChildren) > 0 {
+				nPos3 = aChildren[Len(aChildren)]
+			else 
+				nPos3 = find(aList,nNodeID,C_TREEMODEL_NODEID)		
+			}
+			for x = len(aMove) to 1 step -1 {
+				Insert(aList,nPos3,aMove[x])
+			}
+
+	
+	/*
+		The next method move the Node down
+	*/
+	func MoveNodeDown nNodeID
+		nPos = find(aList,nNodeID,C_TREEMODEL_NODEID)		
+		nParentID = aList[nPos][C_TREEMODEL_PARENTID]
+		# Find the sibiling node (Down)
+		for x=nPos+1 to len(aList) {
+			if aList[x][C_TREEMODEL_PARENTID] = nParentID {
+				nPos2 = x
+				exit 
+			}
+		}
+		MoveNodeUp(aList[nPos2][C_TREEMODEL_NODEID])
