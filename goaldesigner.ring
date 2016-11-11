@@ -246,7 +246,7 @@ class TreeModel
 		The next method return a list of the node children
 		The list contains each node index
 	*/
-	func children nNodeID
+	func Children nNodeID
 		nPos = find(aList,nNodeID,C_TREEMODEL_NODEID)
 		nSize = len(aList)
 		aChildren = []
@@ -266,9 +266,9 @@ class TreeModel
 	*/
 	func DeleteChildren aChildren
 		# We remove from bottom to up to keep the node index valid during deletion
-		for x = len(aChildren) to 1 step -1 
+		for x = len(aChildren) to 1 step -1  {
 			del(aList,aChildren[x])
-		next 
+		}
 	
 	/*
 		Remove node and it's children
