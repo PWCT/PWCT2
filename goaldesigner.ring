@@ -176,11 +176,14 @@ class StepsTreeView from TreeControl
 		AddToTree(1,oFirstStep)
 		setheaderlabel(T_GD_StepsTree)
 
+	func AddStep nParentID,nID,cText
+		AddNode(nParentID,nID,cText)
+
 class TreeControl from qTreeWidget	
 
 	aTree = []	# Node ID , Node Object , Node Object.pObject
 
-	func AddStep nParentID,nID,cText
+	func AddNode nParentID,nID,cText
 		oParent = GetObjByID(nParentID)
 		oItem = new qtreewidgetitem()
 		oItem.settext(0,cText)
