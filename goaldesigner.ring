@@ -341,34 +341,59 @@ class TreeModel
 		del(aList,nPos)
 
 	/*
-		The next method move a node up
+		The next method find the sibling node (UP)
 	*/
-	func MoveNodeUp nNodeID
+	func SiblingUp nNodeID
 		nPos = find(aList,nNodeID,C_TREEMODEL_NODEID)		
 		nParentID = aList[nPos][C_TREEMODEL_PARENTID]
-		# Find the sibiling node (Up)
+		# Find the sibling node (Up)
+		nPos2 = 0
 		for x=nPos-1 to 1 step -1 {
 			if aList[x][C_TREEMODEL_PARENTID] = nParentID {
 				nPos2 = x
 				exit 
 			}
 		}
+		return nPos2
+
+	/*
+		The next method find the sibling node (Down)
+	*/
+	func SiblingDown nNodeID
+		nPos = find(aList,nNodeID,C_TREEMODEL_NODEID)		
+		nParentID = aList[nPos][C_TREEMODEL_PARENTID]
+		# Find the sibiling node (Down)
+		nPos2 = 0
+		for x=nPos+1 to len(aList) {
+			if aList[x][C_TREEMODEL_PARENTID] = nParentID {
+				nPos2 = x
+				exit 
+			}
+		}
+		return nPos2
+
+	/*
+		The next method move a node up
+	*/
+	func MoveNodeUp nNodeID
+		# Find the sibling node (Up)
+			nPos = SiblingUp(nNodeID)
 		# Get Children List
-			aMove = GetChildren(Children(aList[nPos2][C_TREEMODEL_NODEID]))
+			aMove = GetChildren(Children(aList[nPos][C_TREEMODEL_NODEID]))
 		# Add the Parent Node
-			Insert(aMove,0,aList[nPos2])
+			Insert(aMove,0,aList[nPos])
 		# Delete The Node
-			DeleteNode(aList[nPos2][C_TREEMODEL_NODEID])
+			DeleteNode(aList[nPos][C_TREEMODEL_NODEID])
 		# Get the Last Item in the Node children that we move up
 			aChildren = children(nNodeID)
-		# Insert Items after the last item in the node children 
 			if len(aChildren) > 0 {
-				nPos3 = aChildren[Len(aChildren)]
+				nPos2 = aChildren[Len(aChildren)]
 			else 
-				nPos3 = find(aList,nNodeID,C_TREEMODEL_NODEID)		
+				nPos2 = find(aList,nNodeID,C_TREEMODEL_NODEID)		
 			}
+		# Insert Items after the last item in the node children 
 			for x = len(aMove) to 1 step -1 {
-				Insert(aList,nPos3,aMove[x])
+				Insert(aList,nPos2,aMove[x])
 			}
 
 	
@@ -376,13 +401,7 @@ class TreeModel
 		The next method move the Node down
 	*/
 	func MoveNodeDown nNodeID
-		nPos = find(aList,nNodeID,C_TREEMODEL_NODEID)		
-		nParentID = aList[nPos][C_TREEMODEL_PARENTID]
 		# Find the sibiling node (Down)
-		for x=nPos+1 to len(aList) {
-			if aList[x][C_TREEMODEL_PARENTID] = nParentID {
-				nPos2 = x
-				exit 
-			}
-		}
-		MoveNodeUp(aList[nPos2][C_TREEMODEL_NODEID])
+			nPos = SiblingDown(nNodeID)
+		# Move The Sibling node (Up)
+			MoveNodeUp(aList[nPos][C_TREEMODEL_NODEID])
