@@ -53,6 +53,9 @@ class GoalDesignerController
 	func EditStepAction
 		oItem  = oView.oStepsTree.currentItem()
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
+		if nStepID = 1 {	# Avoid start point
+			return
+		}
 		oInput = New QInputDialog(oView.win)
 		{
 			setwindowtitle("Enter the step name?")
@@ -66,6 +69,15 @@ class GoalDesignerController
 			oItem.setText(0,cText)
 			oModel.EditStepName(nStepID,cText)
 		}		
+
+	func DeleteStepAction
+		oItem  = oView.oStepsTree.currentItem()
+		nStepID = oView.oStepsTree.GetIDByObj(oItem)
+		if nStepID = 1 {	# Avoid start point
+			return
+		}
+		oItem.parent().takechild(oItem.parent().indexofchild(oItem))
+		oModel.DeleteStep(nStepID)
 
 	func PrintStepsAction
 		oModel.PrintSteps()
@@ -83,6 +95,10 @@ class GoalDesignerView
 			setText("Edit Step")
 			setClickEvent($objname+".EditStepAction()")			
 		}
+		btnDeleteStep = new qPushButton(win) {
+			setText("Delete Step")
+			setClickEvent($objname+".DeleteStepAction()")			
+		}
 		btnPrintSteps = new qPushButton(win) {
 			setText("Print Steps")
 			setClickEvent($objname+".PrintStepsAction()")			
@@ -91,6 +107,7 @@ class GoalDesignerView
 		{	
 			AddWidget(btnAddStep)
 			AddWidget(btnEditStep)
+			AddWidget(btnDeleteStep)
 			AddWidget(btnPrintSteps)
 		}
 		layout1 = new qVBoxLayout()
@@ -161,6 +178,9 @@ class GoalDesignerModel
 			puts( x[C_TREEMODEL_CONTENT][:name] )
 		}
 
+	func DeleteStep nStepID
+		oStepsTreeModel.DeleteNode(nStepID)
+
 /*
 	Tree Model Class
 	We manage the tree data as a table
@@ -217,7 +237,46 @@ class TreeModel
 		return aList[nPos][C_TREEMODEL_CONTENT]
 
 	/*
-		The next function return the tree list
+		The next method return the tree list
 	*/
-	func getdata
+	func GetData
 		return aList
+
+	/*
+		The next method return a list of the node children
+		The list contains each node index
+	*/
+	func children nNodeID
+		nPos = find(aList,nNodeID,C_TREEMODEL_NODEID)
+		nSize = len(aList)
+		aChildren = []
+		aParents = []
+		aParents + nNodeID
+		for x = nPos + 1 to nSize {
+			if find(aParents,aList[x][C_TREEMODEL_PARENTID]) {
+				aChildren + x
+				aParents + aList[x][C_TREEMODEL_NODEID]
+			}
+		}
+		return aChildren
+
+	/*
+		Remove children from the Tree
+		The input is a list of each node index
+	*/
+	func DeleteChildren aChildren
+		# We remove from bottom to up to keep the node index valid during deletion
+		for x = len(aChildren) to 1 step -1 
+			del(aList,aChildren[x])
+		next 
+	
+	/*
+		Remove node and it's children
+	*/
+	func DeleteNode nNodeID
+		# Delete Children
+		DeleteChildren(Children(nNodeID)) 		
+		# Delete the node itself
+		nPos = find(aList,nNodeID,C_TREEMODEL_NODEID)		
+		del(aList,nPos)
+
