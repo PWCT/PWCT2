@@ -121,8 +121,8 @@ class GoalDesignerController
 			return
 		}
 		oModel.CutStep(nStepID)
-		oItem.parent().takechild(oItem.parent().indexofchild(oItem))
 		oView.oStepsTree.SaveStep(oItem)
+		oItem.parent().takechild(oItem.parent().indexofchild(oItem))
 
 	func CopyStepsAction
 		oItem  = oView.oStepsTree.currentItem()
