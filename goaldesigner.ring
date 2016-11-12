@@ -140,7 +140,11 @@ class GoalDesignerController
 		oParentItem  = oView.oStepsTree.currentItem()
 		nParentStepID = oView.oStepsTree.GetIDByObj(oParentItem)
 		oModel.PasteStep(nParentStepID)
-		oView.oStepsTree.PasteStep(oParentItem)
+		oNewParentItem = oView.oStepsTree.PasteStep(oParentItem)
+		# Update the Object|StepID List
+			aStepsObjectsList = oView.oStepsTree.StepsList(oNewParentItem)
+			aStepsDataList = oModel.GetBuffer()
+			oView.oStepsTree.AddNodesFromBuffer(aStepsObjectsList,aStepsDataList)
 	
 class GoalDesignerView
 
@@ -241,15 +245,34 @@ class StepsTreeView from TreeControl
 		# Copy the Steps to the buffer
 			oStepBuffer = oItem.Clone()
 
-	func PasteStep oParentItem
-		oParentItem.AddChild(oStepBuffer.Clone())
-		setCurrentItem(oStepBuffer,0)
+	func PasteStep oParentStep
+		oNewItems = oStepBuffer.Clone()
+		oParentStep.AddChild(oNewItems)
+		setCurrentItem(oNewItems,0)
+		return oNewItems
 
 	func isbuffernotempty
 		if isObject(oStepBuffer) {
 			return true
 		}
 		return false
+
+	/*
+		The next method take a Step as input
+		Then return a list of the step and the steps children in order
+	*/
+	func StepsList oParentStep
+		aList = []
+		SubStepsList(aList,oParentStep)
+		return aList
+
+	func SubStepsList aList,oParentStep
+		aList + oParentStep
+		for x=1 to oParentStep.childcount() {
+			SubStepsList(aList,oParentStep.child(x-1))
+		}
+		
+		
 
 class TreeControl from qTreeWidget	
 
@@ -273,6 +296,15 @@ class TreeControl from qTreeWidget
 
 	func AddToTree nID,oObject
 		aTree + [nID,oObject,oObject.pObject]
+
+	/*
+		The next method is used after Paste operation to update the Tree list
+		With the new nodes data
+	*/
+	func AddNodesFromBuffer aNodesObjectsList,aNodesDataList
+		for x = 1 to len(aNodesObjectsList) {
+			AddToTree(aNodesDataList[C_TREEMODEL_NODEID],aNodesObjectsList[x])
+		}
 
 class GoalDesignerModel
 
@@ -312,6 +344,9 @@ class GoalDesignerModel
 
 	func PasteStep nParentStepID
 		oStepsTreeModel.PasteNode(nParentStepID)
+
+	func GetBuffer
+		return oStepsTreeModel.GetBuffer()
 /*
 	Tree Model Class
 	We manage the tree data as a table
@@ -545,3 +580,9 @@ class TreeModel
 			for node in aBuffer {
 				Insert(aList,nPos,node)
 			}
+
+	/*
+		The next method return the tree list in the buffer that are used for Cut,Copy and Paste
+	*/
+	func GetBuffer
+		return aBuffer
