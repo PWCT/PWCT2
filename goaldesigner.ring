@@ -125,6 +125,13 @@ class GoalDesignerController
 		oView.oStepsTree.SaveStep(oItem)
 
 	func CopyStepsAction
+		oItem  = oView.oStepsTree.currentItem()
+		nStepID = oView.oStepsTree.GetIDByObj(oItem)
+		if nStepID = 1 {	# Avoid start point
+			return
+		}
+		oModel.CopyStep(nStepID)
+		oView.oStepsTree.SaveStep(oItem)
 
 	func PasteStepsAction
 
@@ -280,6 +287,8 @@ class GoalDesignerModel
 	func CutStep nStepID
 		oStepsTreeModel.CutNode(nStepID)
 
+	func CopyStep nStepID
+		oStepsTreeModel.CopyNode(nStepID)
 
 /*
 	Tree Model Class
@@ -464,11 +473,18 @@ class TreeModel
 		The next method Cut the Node
 	*/
 	func CutNode nNodeID
+		nPos = CopyNode(nNodeID)
+		# Delete The Node
+			DeleteNode(aList[nPos][C_TREEMODEL_NODEID])
+
+	/*
+		The next method Copy the Node
+	*/
+	func CopyNode nNodeID
 		# Get the Node position
 			nPos = find(aList,nNodeID,C_TREEMODEL_NODEID)		
 		# Get Children List
 			aBuffer = GetChildren(Children(aList[nPos][C_TREEMODEL_NODEID]))
 		# Add the Parent Node
 			Insert(aBuffer,0,aList[nPos])
-		# Delete The Node
-			DeleteNode(aList[nPos][C_TREEMODEL_NODEID])
+		return nPos
