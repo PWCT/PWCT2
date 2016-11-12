@@ -311,7 +311,7 @@ class TreeControl from qTreeWidget
 	*/
 	func AddNodesFromBuffer aNodesObjectsList,aNodesDataList
 		for x = 1 to len(aNodesObjectsList) {
-			AddToTree(aNodesDataList[C_TREEMODEL_NODEID],aNodesObjectsList[x])
+			AddToTree(aNodesDataList[x][C_TREEMODEL_NODEID],aNodesObjectsList[x])
 		}
 
 class GoalDesignerModel
