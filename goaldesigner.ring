@@ -115,6 +115,14 @@ class GoalDesignerController
 		oModel.PrintSteps()
 
 	func CutStepsAction
+		oItem  = oView.oStepsTree.currentItem()
+		nStepID = oView.oStepsTree.GetIDByObj(oItem)
+		if nStepID = 1 {	# Avoid start point
+			return
+		}
+		oModel.CutStep(nStepID)
+		oItem.parent().takechild(oItem.parent().indexofchild(oItem))
+		oView.oStepsTree.SaveStep(oItem)
 
 	func CopyStepsAction
 
@@ -199,6 +207,8 @@ class StepsTreeView from TreeControl
 
 	oFirststep
 
+	oStepBuffer = NULL # Used for Cut,Copy & Paste operations
+
 	func Init win
 		super.init(win)
 		setcolumncount(1)
@@ -210,6 +220,9 @@ class StepsTreeView from TreeControl
 
 	func AddStep nParentID,nID,cText
 		AddNode(nParentID,nID,cText)
+
+	func SaveStep oItem
+		oStepBuffer = oItem
 
 class TreeControl from qTreeWidget	
 
@@ -264,6 +277,10 @@ class GoalDesignerModel
 	func MoveStepDown nStepID
 		oStepsTreeModel.MoveNodeDown(nStepID)
 
+	func CutStep nStepID
+		oStepsTreeModel.CutNode(nStepID)
+
+
 /*
 	Tree Model Class
 	We manage the tree data as a table
@@ -275,6 +292,8 @@ class TreeModel
 
 	aList = []		# Tree Content [nNodeID - nParentID - Content]
 	nID = 0		# Automatic ID for each node
+
+	aBuffer = []		# List used for Cut, Copy & Paste operations
 
 	/*
 		The next method add new nodes to the tree
@@ -440,3 +459,16 @@ class TreeModel
 			nPos = SiblingDown(nNodeID)
 		# Move The Sibling node (Up)
 			MoveNodeUp(aList[nPos][C_TREEMODEL_NODEID])
+
+	/*
+		The next method Cut the Node
+	*/
+	func CutNode nNodeID
+		# Get the Node position
+			nPos = find(aList,nNodeID,C_TREEMODEL_NODEID)		
+		# Get Children List
+			aBuffer = GetChildren(Children(aList[nPos][C_TREEMODEL_NODEID]))
+		# Add the Parent Node
+			Insert(aBuffer,0,aList[nPos])
+		# Delete The Node
+			DeleteNode(aList[nPos][C_TREEMODEL_NODEID])
