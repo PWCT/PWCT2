@@ -577,7 +577,8 @@ class TreeModel
 			else
 				nPos = find(aList,nParentNodeID,C_TREEMODEL_NODEID)
 			}
-			for node in aBuffer {
+			for x = len(aBuffer) to 1 step -1 {
+				node = aBuffer[x] 
 				Insert(aList,nPos,node)
 			}
 
