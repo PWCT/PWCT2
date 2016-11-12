@@ -289,10 +289,18 @@ class TreeControl from qTreeWidget
 		return oItem
 
 	func GetObjByID id
-		return aTree[std_find2(aTree,id,1)][2]
+		nPos = std_find2(aTree,id,1)
+		if nPos = 0 {
+			raise("GetObjByID() - Can't find the object!")
+		}
+		return aTree[nPos][2]
 
 	func GetIDByObj oObj
-		return aTree[std_find2(aTree,oObj.pObject,3)][1]
+		nPos = std_find2(aTree,oObj.pObject,3)
+		if nPos = 0 {
+			raise("GetIDByObj() - Can't find the ID!")
+		}
+		return aTree[nPos][1]
 
 	func AddToTree nID,oObject
 		aTree + [nID,oObject,oObject.pObject]
