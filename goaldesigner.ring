@@ -229,7 +229,12 @@ class StepsTreeView from TreeControl
 		AddNode(nParentID,nID,cText)
 
 	func SaveStep oItem
-		oStepBuffer = oItem
+		# Delete old steps in the buffer
+			if isObject(oStepBuffer) {
+				oStepBuffer.Delete()
+			}
+		# Copy the Steps to the buffer
+			oStepBuffer = oItem
 
 class TreeControl from qTreeWidget	
 
@@ -473,7 +478,8 @@ class TreeModel
 		The next method Cut the Node
 	*/
 	func CutNode nNodeID
-		nPos = CopyNode(nNodeID)
+		# Copy the Node Data
+			nPos = CopyNode(nNodeID)
 		# Delete The Node
 			DeleteNode(aList[nPos][C_TREEMODEL_NODEID])
 
