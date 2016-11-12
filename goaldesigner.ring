@@ -235,11 +235,14 @@ class StepsTreeView from TreeControl
 		AddNode(nParentID,nID,cText)
 
 	func SaveStep oItem
+		if isObject(oStepBuffer) {
+			oStepBuffer.Delete()
+		}
 		# Copy the Steps to the buffer
-			oStepBuffer = oItem
+			oStepBuffer = oItem.Clone()
 
 	func PasteStep oParentItem
-		oParentItem.AddChild(oStepBuffer)
+		oParentItem.AddChild(oStepBuffer.Clone())
 		setCurrentItem(oStepBuffer,0)
 
 	func isbuffernotempty
