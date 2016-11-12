@@ -514,5 +514,34 @@ class TreeModel
 
 	/*
 		The next method Paste the Node
+		We have the nodes in the aBuffer List 
+		When we paste, We must
+			1 - Change the parent ID of the first node to the input of PasteNode method
+			2 - Change the ID of each node to be a new and unique ID
 	*/
 	func PasteNode nParentNodeID
+		nID++
+		# Get the maximum ID value in the Buffer
+		nMax = 0
+		for node in aBuffer { 
+			nMax = max(nMax,  node[C_TREEMODEL_NODEID] )
+		}
+		# Update Each Node ID
+		for x=1 to len(aBuffer) { 			
+			aBuffer[x][C_TREEMODEL_NODEID] += nID
+			aBuffer[x][C_TREEMODEL_PARENTID] += nID
+		}
+		# Update the first node parent ID		
+			aBuffer[1][C_TREEMODEL_PARENTID] = nParentNodeID
+		# Update the ID
+			nID = nID + nMax + 1
+		# Copy the nodes
+			aChildren = Children(nParentNodeID)
+			if len(aChildren) > 0 {
+				nPos = aChildren[len(aChildren)]
+			else
+				nPos = find(aList,nParentNodeID,C_TREEMODEL_NODEID)
+			}
+			for node in aBuffer {
+				Insert(aList,nPos,node)
+			}
