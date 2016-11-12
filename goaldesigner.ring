@@ -134,7 +134,13 @@ class GoalDesignerController
 		oView.oStepsTree.SaveStep(oItem)
 
 	func PasteStepsAction
-
+		if oView.oStepsTree.isbuffernotempty() = false {
+			return
+		}
+		oParentItem  = oView.oStepsTree.currentItem()
+		nParentStepID = oView.oStepsTree.GetIDByObj(oParentItem)
+		oModel.PasteStep(nParentStepID)
+		oView.oStepsTree.PasteStep(oParentItem)
 	
 class GoalDesignerView
 
@@ -229,12 +235,18 @@ class StepsTreeView from TreeControl
 		AddNode(nParentID,nID,cText)
 
 	func SaveStep oItem
-		# Delete old steps in the buffer
-			if isObject(oStepBuffer) {
-				oStepBuffer.Delete()
-			}
 		# Copy the Steps to the buffer
 			oStepBuffer = oItem
+
+	func PasteStep oParentItem
+		oParentItem.AddChild(oStepBuffer)
+		setCurrentItem(oStepBuffer,0)
+
+	func isbuffernotempty
+		if isObject(oStepBuffer) {
+			return true
+		}
+		return false
 
 class TreeControl from qTreeWidget	
 
@@ -295,6 +307,8 @@ class GoalDesignerModel
 	func CopyStep nStepID
 		oStepsTreeModel.CopyNode(nStepID)
 
+	func PasteStep nParentStepID
+		oStepsTreeModel.PasteNode(nParentStepID)
 /*
 	Tree Model Class
 	We manage the tree data as a table
@@ -494,3 +508,8 @@ class TreeModel
 		# Add the Parent Node
 			Insert(aBuffer,0,aList[nPos])
 		return nPos
+
+	/*
+		The next method Paste the Node
+	*/
+	func PasteNode nParentNodeID
