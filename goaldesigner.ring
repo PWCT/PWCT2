@@ -114,6 +114,13 @@ class GoalDesignerController
 	func PrintStepsAction
 		oModel.PrintSteps()
 
+	func CutStepsAction
+
+	func CopyStepsAction
+
+	func PasteStepsAction
+
+	
 class GoalDesignerView
 
 	win = new qWidget() {
@@ -149,6 +156,22 @@ class GoalDesignerView
 			setClickEvent($objname+".PrintStepsAction()")			
 		}
 		setBtnImage(btnPrintSteps,"images/print.png")
+		btnCutSteps = new qPushButton(win) {
+			setText("Cut")
+			setClickEvent($objname+".CutStepsAction()")			
+		}
+		setBtnImage(btnCutSteps,"images/cut.png")
+		btnCopySteps = new qPushButton(win) {
+			setText("Copy")
+			setClickEvent($objname+".CopyStepsAction()")			
+		}
+		setBtnImage(btnCopySteps,"images/copy.png")
+		btnPasteSteps = new qPushButton(win) {
+			setText("Paste")
+			setClickEvent($objname+".PasteStepsAction()")			
+		}
+		setBtnImage(btnPasteSteps,"images/paste.png")
+
 		layoutBtns = new qHBoxLayout()
 		{	
 			AddWidget(btnAddStep)
@@ -157,6 +180,9 @@ class GoalDesignerView
 			AddWidget(btnMoveStepUp)
 			AddWidget(btnMoveStepDown)
 			AddWidget(btnPrintSteps)
+			AddWidget(btnCutSteps)
+			AddWidget(btnCopySteps)
+			AddWidget(btnPasteSteps)
 		}
 		layout1 = new qVBoxLayout()
 		{	
