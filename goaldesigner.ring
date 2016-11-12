@@ -123,26 +123,32 @@ class GoalDesignerView
 			setText("New Step")
 			setClickEvent($objname+".AddStepAction()")			
 		}
+		setBtnImage(btnAddStep,"images/new.png")
 		btnEditStep = new qPushButton(win) {
 			setText("Edit Step")
 			setClickEvent($objname+".EditStepAction()")			
-		}
+		}		
+		setBtnImage(btnEditStep,"images/edit.png")
 		btnDeleteStep = new qPushButton(win) {
 			setText("Delete Step")
 			setClickEvent($objname+".DeleteStepAction()")			
 		}
+		setBtnImage(btnDeleteStep,"images/delete.png")
 		btnMoveStepUp = new qPushButton(win) {
 			setText("Move Up")
 			setClickEvent($objname+".MoveStepUpAction()")			
 		}
+		setBtnImage(btnMoveStepUp,"images/up.png")
 		btnMoveStepDown = new qPushButton(win) {
 			setText("Move Down")
 			setClickEvent($objname+".MoveStepDownAction()")			
 		}
+		setBtnImage(btnMoveStepDown,"images/down.png")
 		btnPrintSteps = new qPushButton(win) {
 			setText("Print Steps")
 			setClickEvent($objname+".PrintStepsAction()")			
 		}
+		setBtnImage(btnPrintSteps,"images/print.png")
 		layoutBtns = new qHBoxLayout()
 		{	
 			AddWidget(btnAddStep)
