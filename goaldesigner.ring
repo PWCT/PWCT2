@@ -147,15 +147,10 @@ class GoalDesignerController
 			oView.oStepsTree.AddNodesFromBuffer(aStepsObjectsList,aStepsDataList)
 
 	func IncreaseSizeAction
-		myfont = new qfont("",0,0,0)
-		myfont.setpixelsize(24)
-		oView.oStepsTree.SetFont(myfont)
+		oView.oStepsTree.IncreaseFontSize()
 
 	func DecreaseSizeAction
-		myfont = new qfont("",0,0,0)
-		myfont.setpixelsize(12)
-		oView.oStepsTree.SetFont(myfont)
-
+		oView.oStepsTree.DecreaseFontSize()
 	
 class GoalDesignerView
 
@@ -300,6 +295,13 @@ class TreeControl from qTreeWidget
 
 	aTree = []	# Node ID , Node Object , Node Object.pObject
 
+	font  nFontSize = 12	# The font object and the font size
+
+	func init win
+		super.init(win)
+		font = new qFont("",0,0,0)
+		font.setpixelsize(nFontSize)
+
 	func AddNode nParentID,nID,cText
 		oParent = GetObjByID(nParentID)
 		oItem = new qtreewidgetitem()
@@ -335,6 +337,18 @@ class TreeControl from qTreeWidget
 		for x = 1 to len(aNodesObjectsList) {
 			AddToTree(aNodesDataList[x][C_TREEMODEL_NODEID],aNodesObjectsList[x])
 		}
+
+	func IncreaseFontSize
+		if nFontSize >= 72 { return }
+		nFontSize += 2	
+		font.setpixelsize(nFontSize)
+		SetFont(font)
+
+	func DecreaseFontSize
+		if nFontSize <= 12 { return }
+		nFontSize -= 2	
+		font.setpixelsize(nFontSize)
+		SetFont(font)
 
 class GoalDesignerModel
 
