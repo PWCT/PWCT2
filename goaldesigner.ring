@@ -145,6 +145,10 @@ class GoalDesignerController
 			aStepsObjectsList = oView.oStepsTree.StepsList(oNewParentItem)
 			aStepsDataList = oModel.GetBuffer()
 			oView.oStepsTree.AddNodesFromBuffer(aStepsObjectsList,aStepsDataList)
+
+	func IncreaseSizeAction
+
+	func DecreaseSizeAction
 	
 class GoalDesignerView
 
@@ -196,7 +200,16 @@ class GoalDesignerView
 			setClickEvent($objname+".PasteStepsAction()")			
 		}
 		setBtnImage(btnPasteSteps,"images/paste.png")
-
+		btnIncreaseSize = new qPushButton(win) {
+			setText("Increase Size")
+			setClickEvent($objname+".IncreaseSizeAction()")			
+		}
+		setBtnImage(btnIncreaseSize,"images/zoomin.png")
+		btnDecreaseSize = new qPushButton(win) {
+			setText("Decrease Size")
+			setClickEvent($objname+".DecreaseSizeAction()")			
+		}
+		setBtnImage(btnDecreaseSize,"images/zoomout.png")
 		layoutBtns = new qHBoxLayout()
 		{	
 			AddWidget(btnAddStep)
@@ -208,6 +221,8 @@ class GoalDesignerView
 			AddWidget(btnCutSteps)
 			AddWidget(btnCopySteps)
 			AddWidget(btnPasteSteps)
+			AddWidget(btnIncreaseSize)
+			AddWidget(btnDecreaseSize)
 		}
 		layout1 = new qVBoxLayout()
 		{	
@@ -289,18 +304,18 @@ class TreeControl from qTreeWidget
 		return oItem
 
 	func GetObjByID id
-		nPos = std_find2(aTree,id,1)
+		nPos = std_find2(aTree,id,C_TREECONTROL_ID)
 		if nPos = 0 {
 			raise("GetObjByID() - Can't find the object!")
 		}
-		return aTree[nPos][2]
+		return aTree[nPos][C_TREECONTROL_OBJECT]
 
 	func GetIDByObj oObj
-		nPos = std_find2(aTree,oObj.pObject,3)
+		nPos = std_find2(aTree,oObj.pObject,C_TREECONTROL_OBJECTPOINTER)
 		if nPos = 0 {
 			raise("GetIDByObj() - Can't find the ID!")
 		}
-		return aTree[nPos][1]
+		return aTree[nPos][C_TREECONTROL_ID]
 
 	func AddToTree nID,oObject
 		aTree + [nID,oObject,oObject.pObject]
