@@ -147,8 +147,15 @@ class GoalDesignerController
 			oView.oStepsTree.AddNodesFromBuffer(aStepsObjectsList,aStepsDataList)
 
 	func IncreaseSizeAction
+		myfont = new qfont("",0,0,0)
+		myfont.setpixelsize(24)
+		oView.oStepsTree.SetFont(myfont)
 
 	func DecreaseSizeAction
+		myfont = new qfont("",0,0,0)
+		myfont.setpixelsize(12)
+		oView.oStepsTree.SetFont(myfont)
+
 	
 class GoalDesignerView
 
