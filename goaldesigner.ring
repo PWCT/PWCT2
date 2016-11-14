@@ -283,6 +283,18 @@ class StepsTreeView from TreeControl
 		# Copy the Steps to the buffer
 			oStepBuffer = oItem.Clone()
 		# Save the Labels Controls
+			SaveLabels(oItem)
+
+	func PasteStep oParentStep
+		oNewItems = oStepBuffer.Clone()
+		oParentStep.AddChild(oNewItems)
+		setCurrentItem(oNewItems,0)
+		# Add the Labels Controls
+			AddLabels(oNewItems)
+		return oNewItems
+
+	func SaveLabels oItem
+		# Save the Labels Controls
 			if lUseLabels {
 				aItems = StepsList(oItem)
 				aLabels = []
@@ -291,10 +303,7 @@ class StepsTreeView from TreeControl
 				}
 			}
 
-	func PasteStep oParentStep
-		oNewItems = oStepBuffer.Clone()
-		oParentStep.AddChild(oNewItems)
-		setCurrentItem(oNewItems,0)
+	func AddLabels oNewItems
 		# Add the Labels Controls
 			aItems = StepsList(oNewItems)
 			for x=1 to len(aItems) {
@@ -306,7 +315,6 @@ class StepsTreeView from TreeControl
 				}
 				setItemWidget(oItem,0,oLabel2)
 			}
-		return oNewItems
 
 	func isbuffernotempty
 		if isObject(oStepBuffer) {
