@@ -237,9 +237,18 @@ class GoalDesignerView
 	func Show
 		win { showMaximized() }
 
+class HTMLStyles
+
+	func htmltext cText,cTextColor,cBackColor
+		cHTML =  "<span style='background-color:#{backcolor}'><font color='#{textcolor}'>#{text}</font></span>"
+		cHTML = substr(cHTML,"#{backcolor}",cBackColor)
+		cHTML = substr(cHTML,"#{textcolor}",cTextColor)
+		cHTML = substr(cHTML,"#{text}",cText)
+		return cHTML
+
 class StepsTreeView from TreeControl
 
-	oFirststep
+	oFirststep oStyle = new HTMLStyles
 
 	oStepBuffer = NULL # Used for Cut,Copy & Paste operations
 
@@ -247,13 +256,29 @@ class StepsTreeView from TreeControl
 		super.init(win)
 		setcolumncount(1)
 		oFirststep = new qtreewidgetitem()
-		oFirststep.settext(0,T_GD_FirstStep)
 		addtoplevelitem(oFirststep)
 		AddToTree(1,oFirstStep)
-		setheaderlabel(T_GD_StepsTree)
+		setheaderlabel(T_GD_StepsTree )
+
+		oLabel = new qLabel(self) {
+			settext(this.oStyle.htmltext(T_GD_FirstStep,"green",""))
+			setStyleSheet("font-size:" + this.nFontSize + "pt;")
+		}
+		setItemWidget(oFirstStep,0, oLabel)	
+
+	func GetItemLabel oItem
+		oLabel = new qLabel
+		oLabel.pObject =  itemwidget(oItem,0).pObject
+		return oLabel
 
 	func AddStep nParentID,nID,cText
-		AddNode(nParentID,nID,cText)
+		oItem = AddNode(nParentID,nID,cText)
+		oItem.setText(0,"")
+		oLabel = new qLabel(self) {
+			settext(this.oStyle.htmltext(cText,"green",""))
+			setStyleSheet("font-size:" + this.nFontSize + "pt;")
+		}
+		setItemWidget(oItem,0, oLabel)
 
 	func SaveStep oItem
 		if isObject(oStepBuffer) {
@@ -289,13 +314,28 @@ class StepsTreeView from TreeControl
 			SubStepsList(aList,oParentStep.child(x-1))
 		}
 		
-		
+	func IncreaseFontSize
+		super.IncreaseFontSize()
+		UpdateFontSize()		
+
+	func DecreaseFontSize
+		super.DecreaseFontSize()
+		UpdateFontSize()		
+
+	func UpdateFontSize
+		aItems = stepsList(oFirstStep)
+		for item in aItems {
+			oLabel = GetItemLabel(item)
+			oLabel.setStyleSheet("font-size:" + nFontSize + "pt;")
+		}
+
 
 class TreeControl from qTreeWidget	
 
 	aTree = []	# Node ID , Node Object , Node Object.pObject
 
 	font  nFontSize = 12	# The font object and the font size
+
 
 	func init win
 		super.init(win)
