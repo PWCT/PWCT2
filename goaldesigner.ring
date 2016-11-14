@@ -66,7 +66,7 @@ class GoalDesignerController
 		}
 		if lCheck  {
 			cText = oInput.textvalue()
-			oItem.setText(0,cText)
+			oView.oStepsTree.editstep(oItem,cText)
 			oModel.EditStepName(nStepID,cText)
 		}		
 
@@ -279,6 +279,14 @@ class StepsTreeView from TreeControl
 
 	func AddStep nParentID,nID,cText
 		AddNode(nParentID,nID,cText)
+
+	func EditStep oItem,cText
+		if lUseLabels = false {
+			oItem.setText(0,cText)
+		else
+			oLabel = GetItemLabel(oItem)
+			oLabel.SetText(this.oStyle.htmltext(cText,"green",""))
+		}
 
 	func SaveStep oItem
 		if isObject(oStepBuffer) {
