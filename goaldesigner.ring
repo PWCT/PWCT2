@@ -311,8 +311,8 @@ class StepsTreeView from TreeControl
 				oItem = aItems[x]
 				aLabel = aLabels[x]
 				oLabel2 = new qLabel(Self) {
-					setText(aLabel[1])
-					setStyleSheet(aLabel[2])					
+					setText(aLabel[C_NODELABEL_TEXT])
+					setStyleSheet(aLabel[C_NODELABEL_STYLESHEET])					
 				}
 				setItemWidget(oItem,0,oLabel2)
 			}
