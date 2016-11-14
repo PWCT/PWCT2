@@ -91,7 +91,7 @@ class GoalDesignerController
 			oView.oStepsTree.SaveLabels(oItem)
 			oParent.TakeChild(nIndex)
 			oParent.InsertChild(nIndex-1,oItem)
-			oView.oStepsTree.RestoreLabels(oItem)
+			oView.oStepsTree.RestoreLabels(oItem,True)
 			oParent.SetExpanded(True)
 			oItem.SetExpanded(True)
 			oModel.MoveStepUp(nStepID)	
@@ -109,7 +109,7 @@ class GoalDesignerController
 			oView.oStepsTree.SaveLabels(oItem)
 			oParent.TakeChild(nIndex)
 			oParent.InsertChild(nIndex+1,oItem)
-			oView.oStepsTree.RestoreLabels(oItem)
+			oView.oStepsTree.RestoreLabels(oItem,True)
 			oParent.SetExpanded(True)
 			oItem.SetExpanded(True)	
 			oModel.MoveStepDown(nStepID)	
@@ -257,7 +257,8 @@ class StepsTreeView from TreeControl
 	oStepBuffer = NULL # Used for Cut,Copy & Paste operations
 
 	lUseLabels = True	# Use QLabel for each Tree Item
-	aLabels = []
+
+	aLabels = []		# List of Labels controls	
 
 	func Init win
 		super.init(win)
@@ -302,7 +303,7 @@ class StepsTreeView from TreeControl
 		oParentStep.AddChild(oNewItems)
 		setCurrentItem(oNewItems,0)
 		# Add the Labels Controls
-			RestoreLabels(oNewItems)
+			RestoreLabels(oNewItems,False)
 		return oNewItems
 
 	func SaveLabels oItem
@@ -326,7 +327,7 @@ class StepsTreeView from TreeControl
 				}
 			}
 
-	func RestoreLabels oNewItems
+	func RestoreLabels oNewItems,lDeleteLabels
 		# Add the Labels Controls
 			aItems = StepsList(oNewItems)
 			aTempLabels = aLabels[len(aLabels)]
@@ -340,12 +341,14 @@ class StepsTreeView from TreeControl
 				setItemWidget(oItem,0,oLabel2)
 			}
 			/*
-				We check the size
-				We remove the list only if we have more than one list
+				We check the lDeleteLabels Variable
+				We remove the list only if the value is true
 				This means calling savelabels() then restorelabels() directly
 				This happens in Move Up and Move Down operations
+				While in Paste operation the lDeleteLabels will be false
+				Because we may use paste more than one time.
 			*/
-			if len(aLabels) > 1 {
+			if lDeleteLabels {
 				del(aLabels,len(aLabels))
 			}
 
