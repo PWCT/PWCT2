@@ -252,6 +252,8 @@ class StepsTreeView from TreeControl
 
 	oStepBuffer = NULL # Used for Cut,Copy & Paste operations
 
+	lUseLabels = True	# Use QLabel for each Tree Item
+
 	func Init win
 		super.init(win)
 		setcolumncount(1)
@@ -259,7 +261,6 @@ class StepsTreeView from TreeControl
 		addtoplevelitem(oFirststep)
 		AddToTree(1,oFirstStep)
 		setheaderlabel(T_GD_StepsTree )
-
 		oLabel = new qLabel(self) {
 			settext(this.oStyle.htmltext(T_GD_FirstStep,"green",""))
 			setStyleSheet("font-size:" + this.nFontSize + "pt;")
@@ -272,13 +273,7 @@ class StepsTreeView from TreeControl
 		return oLabel
 
 	func AddStep nParentID,nID,cText
-		oItem = AddNode(nParentID,nID,cText)
-		oItem.setText(0,"")
-		oLabel = new qLabel(self) {
-			settext(this.oStyle.htmltext(cText,"green",""))
-			setStyleSheet("font-size:" + this.nFontSize + "pt;")
-		}
-		setItemWidget(oItem,0, oLabel)
+		AddNode(nParentID,nID,cText)
 
 	func SaveStep oItem
 		if isObject(oStepBuffer) {
@@ -336,6 +331,7 @@ class TreeControl from qTreeWidget
 
 	font  nFontSize = 12	# The font object and the font size
 
+	lUseLabels = False	# Use QLabel for each Tree Item
 
 	func init win
 		super.init(win)
@@ -345,12 +341,20 @@ class TreeControl from qTreeWidget
 	func AddNode nParentID,nID,cText
 		oParent = GetObjByID(nParentID)
 		oItem = new qtreewidgetitem()
-		oItem.settext(0,cText)
+		if lUseLabels = False {	
+			oItem.settext(0,cText)
+		}
 		oParent.addchild(oItem)
 		AddToTree(nID,oItem)
 		setCurrentItem(oItem,0)	# To Display the item (become visible)
 		setCurrentItem(oParent,0)	# Focus on Parent Step
-		return oItem
+		if lUseLabels = True {
+			oLabel = new qLabel(self) {
+				settext(this.oStyle.htmltext(cText,"green",""))
+				setStyleSheet("font-size:" + this.nFontSize + "pt;")
+			}
+			setItemWidget(oItem,0,oLabel)
+		}		 
 
 	func GetObjByID id
 		nPos = std_find2(aTree,id,C_TREECONTROL_ID)
