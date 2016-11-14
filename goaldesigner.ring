@@ -309,24 +309,44 @@ class StepsTreeView from TreeControl
 		# Save the Labels Controls
 			if lUseLabels {
 				aItems = StepsList(oItem)
-				aLabels = []
+				/*
+					Create new list in aLabels
+					Because this feature is shared between
+						Move Up / Move Down
+						Cut, Copy and Paste
+					We may copy/cut a step ---> this call saveLabels()
+					Then we move a step up/down ---> this call saveLabels() 
+									again then  restoreLabels()
+					Then we call paste ---> this call restorelabels()					
+				*/
+				aLabels + []
 				for item in aItems {
 					oLabel = GetItemLabel(item)
-					aLabels + [oLabel.text(),oLabel.StyleSheet()]
+					aLabels[len(aLabels)] + [oLabel.text(),oLabel.StyleSheet()]
 				}
 			}
 
 	func RestoreLabels oNewItems
 		# Add the Labels Controls
 			aItems = StepsList(oNewItems)
+			aTempLabels = aLabels[len(aLabels)]
 			for x=1 to len(aItems) {
 				oItem = aItems[x]
-				aLabel = aLabels[x]
+				aLabel = aTempLabels[x]
 				oLabel2 = new qLabel(Self) {
 					setText(aLabel[C_NODELABEL_TEXT])
 					setStyleSheet(aLabel[C_NODELABEL_STYLESHEET])					
 				}
 				setItemWidget(oItem,0,oLabel2)
+			}
+			/*
+				We check the size
+				We remove the list only if we have more than one list
+				This means calling savelabels() then restorelabels() directly
+				This happens in Move Up and Move Down operations
+			*/
+			if len(aLabels) > 1 {
+				del(aLabels,len(aLabels))
 			}
 
 	func isbuffernotempty
