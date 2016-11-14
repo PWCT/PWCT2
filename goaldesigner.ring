@@ -252,7 +252,7 @@ class StepsTreeView from TreeControl
 
 	oStepBuffer = NULL # Used for Cut,Copy & Paste operations
 
-	lUseLabels = True	# Use QLabel for each Tree Item
+	#lUseLabels = True	# Use QLabel for each Tree Item
 
 	func Init win
 		super.init(win)
@@ -318,6 +318,9 @@ class StepsTreeView from TreeControl
 		UpdateFontSize()		
 
 	func UpdateFontSize
+		if lUseLabels = false {
+			return 
+		}
 		aItems = stepsList(oFirstStep)
 		for item in aItems {
 			oLabel = GetItemLabel(item)
