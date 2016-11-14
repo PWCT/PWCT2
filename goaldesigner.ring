@@ -88,8 +88,10 @@ class GoalDesignerController
 		oParent = oItem.Parent()
 		nIndex = oParent.IndexofChild(oItem)
 		if nIndex > 0 {	# Not The First Item
+			oView.oStepsTree.SaveLabels(oItem)
 			oParent.TakeChild(nIndex)
 			oParent.InsertChild(nIndex-1,oItem)
+			oView.oStepsTree.RestoreLabels(oItem)
 			oParent.SetExpanded(True)
 			oItem.SetExpanded(True)
 			oModel.MoveStepUp(nStepID)	
@@ -104,8 +106,10 @@ class GoalDesignerController
 		oParent = oItem.Parent()
 		nIndex = oParent.IndexofChild(oItem)
 		if nIndex < oParent.ChildCount() - 1 { # Not the Last Item
+			oView.oStepsTree.SaveLabels(oItem)
 			oParent.TakeChild(nIndex)
 			oParent.InsertChild(nIndex+1,oItem)
+			oView.oStepsTree.RestoreLabels(oItem)
 			oParent.SetExpanded(True)
 			oItem.SetExpanded(True)	
 			oModel.MoveStepDown(nStepID)	
@@ -290,7 +294,7 @@ class StepsTreeView from TreeControl
 		oParentStep.AddChild(oNewItems)
 		setCurrentItem(oNewItems,0)
 		# Add the Labels Controls
-			AddLabels(oNewItems)
+			RestoreLabels(oNewItems)
 		return oNewItems
 
 	func SaveLabels oItem
@@ -304,7 +308,7 @@ class StepsTreeView from TreeControl
 				}
 			}
 
-	func AddLabels oNewItems
+	func RestoreLabels oNewItems
 		# Add the Labels Controls
 			aItems = StepsList(oNewItems)
 			for x=1 to len(aItems) {
