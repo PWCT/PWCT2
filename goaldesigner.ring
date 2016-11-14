@@ -299,7 +299,8 @@ class StepsTreeView from TreeControl
 				aItems = StepsList(oItem)
 				aLabels = []
 				for item in aItems {
-					aLabels + GetItemLabel(item)
+					oLabel = GetItemLabel(item)
+					aLabels + [oLabel.text(),oLabel.StyleSheet()]
 				}
 			}
 
@@ -308,10 +309,10 @@ class StepsTreeView from TreeControl
 			aItems = StepsList(oNewItems)
 			for x=1 to len(aItems) {
 				oItem = aItems[x]
-				oLabel = aLabels[x]
+				aLabel = aLabels[x]
 				oLabel2 = new qLabel(Self) {
-					setText(oLabel.text())
-					setStyleSheet(oLabel.StyleSheet())					
+					setText(aLabel[1])
+					setStyleSheet(aLabel[2])					
 				}
 				setItemWidget(oItem,0,oLabel2)
 			}
