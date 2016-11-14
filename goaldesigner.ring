@@ -252,7 +252,8 @@ class StepsTreeView from TreeControl
 
 	oStepBuffer = NULL # Used for Cut,Copy & Paste operations
 
-	#lUseLabels = True	# Use QLabel for each Tree Item
+	lUseLabels = True	# Use QLabel for each Tree Item
+	aLabels = []
 
 	func Init win
 		super.init(win)
@@ -281,11 +282,30 @@ class StepsTreeView from TreeControl
 		}
 		# Copy the Steps to the buffer
 			oStepBuffer = oItem.Clone()
+		# Save the Labels Controls
+			if lUseLabels {
+				aItems = StepsList(oItem)
+				aLabels = []
+				for item in aItems {
+					aLabels + GetItemLabel(item)
+				}
+			}
 
 	func PasteStep oParentStep
 		oNewItems = oStepBuffer.Clone()
 		oParentStep.AddChild(oNewItems)
 		setCurrentItem(oNewItems,0)
+		# Add the Labels Controls
+			aItems = StepsList(oNewItems)
+			for x=1 to len(aItems) {
+				oItem = aItems[x]
+				oLabel = aLabels[x]
+				oLabel2 = new qLabel(Self) {
+					setText(oLabel.text())
+					setStyleSheet(oLabel.StyleSheet())					
+				}
+				setItemWidget(oItem,0,oLabel2)
+			}
 		return oNewItems
 
 	func isbuffernotempty
