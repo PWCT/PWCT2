@@ -34,7 +34,14 @@ class GoalDesignerController
 	func AddStep cStepName
 		oItem  = oView.oStepsTree.currentItem()
 		nParentID = oView.oStepsTree.GetIDByObj(oItem)
- 		nStepID = oModel.AddStep(nParentID,[:name = cStepName])
+ 		nStepID = oModel.AddStep(nParentID,[
+				:name = cStepName,
+				:active = True , 
+				:code = "" , 
+			 	:date = date() ,
+				:time = time()
+			]
+		)
 		oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)
 
 	func AddStepAction
@@ -466,7 +473,11 @@ class GoalDesignerModel
 	oStepsTreeModel = new TreeModel
 
 	# Add the first step
-	AddStep(0,[:name = T_GD_FirstStep])
+	AddStep(0,[:name = T_GD_FirstStep ,
+		      :active = True , 
+		      :code = "" , 
+		      :date = date() ,
+		      :time = time()])
 
 	func AddStep nParent,Content
 		nID =  oStepsTreeModel.AddNode(nParent,Content)
