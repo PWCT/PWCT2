@@ -61,7 +61,7 @@ class GoalDesignerController
 			setwindowtitle("Enter the step name?")
 			setgeometry(100,100,400,50)
 			setlabeltext("Step Name")
-			settextvalue(oItem.text(0))
+			settextvalue(this.oModel.GetStepName(nStepID))
 			lcheck = exec()
 		}
 		if lCheck  {
@@ -476,6 +476,10 @@ class GoalDesignerModel
 		aContent = oStepsTreeModel.GetNodeContent(nStepID)
 		aContent[:name] = cStepName
 		oStepsTreeModel.SetNodeContent(nStepID,aContent)
+
+	func GetStepName nStepID
+		aContent = oStepsTreeModel.GetNodeContent(nStepID)
+		return aContent[:name] 
 
 	func PrintSteps
 		for x in oStepsTreeModel.getdata() {
