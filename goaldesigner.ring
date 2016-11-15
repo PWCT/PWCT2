@@ -250,12 +250,15 @@ class GoalDesignerView
 
 class HTMLStyles
 
-	func htmltext cText,cTextColor,cBackColor
+	func text cText,cTextColor,cBackColor
 		cHTML =  "<span style='background-color:#{backcolor}'><font color='#{textcolor}'>#{text}</font></span>"
 		cHTML = substr(cHTML,"#{backcolor}",cBackColor)
 		cHTML = substr(cHTML,"#{textcolor}",cTextColor)
 		cHTML = substr(cHTML,"#{text}",cText)
 		return cHTML
+
+	func image cFile
+		return "<img src='"+cFile+"'> "
 
 class StepsTreeView from TreeControl
 
@@ -275,7 +278,7 @@ class StepsTreeView from TreeControl
 		AddToTree(1,oFirstStep)
 		setheaderlabel(T_GD_StepsTree )
 		oLabel = new qLabel(self) {
-			settext(this.oStyle.htmltext(T_GD_FirstStep,"green",""))
+			settext(this.oStyle.image("images/nodeicon.png")+ this.oStyle.text(T_GD_FirstStep,"green",""))
 			setStyleSheet("font-size:" + this.nFontSize + "pt;")
 		}
 		setItemWidget(oFirstStep,0, oLabel)	
@@ -293,7 +296,7 @@ class StepsTreeView from TreeControl
 			oItem.setText(0,cText)
 		else
 			oLabel = GetItemLabel(oItem)
-			oLabel.SetText(this.oStyle.htmltext(cText,"green",""))
+			oLabel.SetText(this.oStyle.image("images/nodeicon.png")+this.oStyle.text(cText,"green",""))
 		}
 
 	func SaveStep oItem
@@ -423,12 +426,14 @@ class TreeControl from qTreeWidget
 		setCurrentItem(oItem,0)	# To Display the item (become visible)
 		setCurrentItem(oParent,0)	# Focus on Parent Step
 		if lUseLabels = True {
-			oLabel = new qLabel(self) {
-				settext(this.oStyle.htmltext(cText,"green",""))
+			oLabel = new qLabel(self) {			
+				settext(this.oStyle.image("images/nodeicon.png")+this.oStyle.text(cText,"green",""))
 				setStyleSheet("font-size:" + this.nFontSize + "pt;")
 			}
 			setItemWidget(oItem,0,oLabel)
 		}		 
+
+
 
 	func GetObjByID id
 		nPos = std_find2(aTree,id,C_TREECONTROL_ID)
