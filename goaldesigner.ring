@@ -542,7 +542,8 @@ class GoalDesignerModel
 
 	func GetStepIgnoreStatus nStepID
 		aContent = oStepsTreeModel.GetNodeContent(nStepID)
-		return aContent[:active] 
+		# The Ignore Status is the reverse of the Active Status
+		return not aContent[:active] 
 
 	func PrintSteps
 		for x in oStepsTreeModel.getdata() {
