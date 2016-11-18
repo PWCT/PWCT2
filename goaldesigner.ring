@@ -419,6 +419,20 @@ class StepsTreeView from TreeControl
 		}
 
 	func IgnoreStep oItem,nIgnore
+		aItems = StepsList(oItem)
+		if nIgnore {
+			for item in aItems {
+				oLabel = GetItemLabel(item)
+				cText = "test"
+				oLabel.SetText(this.oStyle.image("images/ignorestep.png")+this.oStyle.text(cText,"green",""))
+			}
+		else 
+			for item in aItems {
+				oLabel = GetItemLabel(item)
+				cText = "test"
+				oLabel.SetText(this.oStyle.image("images/nodeicon.png")+this.oStyle.text(cText,"green",""))
+			}
+		}
 
 class TreeControl from qTreeWidget	
 
