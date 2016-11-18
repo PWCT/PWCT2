@@ -545,9 +545,7 @@ class GoalDesignerModel
 	*/
 	func IgnoreStep nStepID,nIgnore
 		# Set Ignore status for the parent step 
-			aContent = oStepsTreeModel.GetNodeContent(nStepID)
-			aContent[:active]  = nIgnore
-			oStepsTreeModel.SetNodeContent(nStepID,aContent)
+			oStepsTreeModel.GetNodeContent(nStepID)[:active]  = nIgnore
 		# Set Ignore status for children steps
 			aChildren = oStepsTreeModel.Children(nStepID)	
 			for nIndex in aChildren {
