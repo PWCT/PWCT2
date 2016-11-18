@@ -73,7 +73,7 @@ class GoalDesignerController
 		}
 		if lCheck  {
 			cText = oInput.textvalue()
-			oView.oStepsTree.editstep(oItem,cText)
+			oView.oStepsTree.editstep(oItem,cText,this.oModel.GetStepIgnoreStatus(nStepID))
 			oModel.EditStepName(nStepID,cText)
 		}		
 
@@ -308,12 +308,16 @@ class StepsTreeView from TreeControl
 	func AddStep nParentID,nID,cText
 		AddNode(nParentID,nID,cText)
 
-	func EditStep oItem,cText
+	func EditStep oItem,cText,lIgnoreStatus
 		if lUseLabels = false {
 			oItem.setText(0,cText)
 		else
 			oLabel = GetItemLabel(oItem)
-			oLabel.SetText(this.oStyle.image("images/nodeicon.png")+this.oStyle.text(cText,"green",""))
+			if lIgnoreStatus { 
+				oLabel.SetText(this.oStyle.image("images/ignorestep.png")+this.oStyle.text(cText,"green",""))
+			else
+				oLabel.SetText(this.oStyle.image("images/nodeicon.png")+this.oStyle.text(cText,"green",""))
+			}
 		}
 
 	func SaveStep oItem
@@ -535,6 +539,10 @@ class GoalDesignerModel
 	func GetStepName nStepID
 		aContent = oStepsTreeModel.GetNodeContent(nStepID)
 		return aContent[:name] 
+
+	func GetStepIgnoreStatus nStepID
+		aContent = oStepsTreeModel.GetNodeContent(nStepID)
+		return aContent[:active] 
 
 	func PrintSteps
 		for x in oStepsTreeModel.getdata() {
