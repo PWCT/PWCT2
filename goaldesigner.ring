@@ -295,7 +295,7 @@ class StepsTreeView from TreeControl
 		AddToTree(1,oFirstStep)
 		setheaderlabel(T_GD_StepsTree )
 		oLabel = new qLabel(self) {
-			settext(this.oStyle.image("images/nodeicon.png")+ this.oStyle.text(T_GD_FirstStep,"green",""))
+			settext(this.oStyle.image(C_LABELIMAGE_NODEICON)+ this.oStyle.text(T_GD_FirstStep,"green",""))
 			setStyleSheet("font-size:" + this.nFontSize + "pt;")
 		}
 		setItemWidget(oFirstStep,0, oLabel)	
@@ -314,9 +314,9 @@ class StepsTreeView from TreeControl
 		else
 			oLabel = GetItemLabel(oItem)
 			if lIgnoreStatus { 
-				oLabel.SetText(this.oStyle.image("images/ignorestep.png")+this.oStyle.text(cText,"green",""))
+				oLabel.SetText(this.oStyle.image(C_LABELIMAGE_IGNORESTEP)+this.oStyle.text(cText,"green",""))
 			else
-				oLabel.SetText(this.oStyle.image("images/nodeicon.png")+this.oStyle.text(cText,"green",""))
+				oLabel.SetText(this.oStyle.image(C_LABELIMAGE_NODEICON)+this.oStyle.text(cText,"green",""))
 			}
 		}
 
@@ -428,20 +428,20 @@ class StepsTreeView from TreeControl
 			for item in aItems {
 				oLabel = GetItemLabel(item)
 				cText = ItemLabelTextWithoutImages(oLabel)
-				oLabel.SetText(this.oStyle.image("images/ignorestep.png")+cText)
+				oLabel.SetText(this.oStyle.image(C_LABELIMAGE_IGNORESTEP)+cText)
 			}
 		else 
 			for item in aItems {
 				oLabel = GetItemLabel(item)
 				cText = ItemLabelTextWithoutImages(oLabel)
-				oLabel.SetText(this.oStyle.image("images/nodeicon.png")+cText)
+				oLabel.SetText(this.oStyle.image(C_LABELIMAGE_NODEICON)+cText)
 			}
 		}
 
 	func ItemLabelTextWithoutImages oLabel
 		cText = oLabel.Text()
-		cText = substr(cText,this.oStyle.image("images/nodeicon.png"),"")
-		cText = substr(cText,this.oStyle.image("images/ignorestep.png"),"")
+		cText = substr(cText,this.oStyle.image(C_LABELIMAGE_NODEICON),"")
+		cText = substr(cText,this.oStyle.image(C_LABELIMAGE_IGNORESTEP),"")
 		return cText
 
 
@@ -470,7 +470,7 @@ class TreeControl from qTreeWidget
 		setCurrentItem(oParent,0)	# Focus on Parent Step
 		if lUseLabels = True {
 			oLabel = new qLabel(self) {			
-				settext(this.oStyle.image("images/nodeicon.png")+this.oStyle.text(cText,"green",""))
+				settext(this.oStyle.image(C_LABELIMAGE_NODEICON)+this.oStyle.text(cText,"green",""))
 				setStyleSheet("font-size:" + this.nFontSize + "pt;")
 			}
 			setItemWidget(oItem,0,oLabel)
@@ -546,7 +546,9 @@ class GoalDesignerModel
 
 	func PrintSteps
 		for x in oStepsTreeModel.getdata() {
-			puts( x[C_TREEMODEL_CONTENT][:name] )
+			puts( x[C_TREEMODEL_CONTENT][:name] +
+				 " .. Ignore : " +
+				x[C_TREEMODEL_CONTENT][:active])
 		}
 
 	func DeleteStep nStepID
@@ -574,12 +576,14 @@ class GoalDesignerModel
 		The next function  ignore step (Enable/Disable step)
 	*/
 	func IgnoreStep nStepID,nIgnore
+		# The Active Status is the reverse of the Ignore Status
+			nActive = not nIgnore
 		# Set Ignore status for the parent step 
-			oStepsTreeModel.GetNodeContent(nStepID)[:active]  = nIgnore
+			oStepsTreeModel.GetNodeContent(nStepID)[:active]  = nActive
 		# Set Ignore status for children steps
 			aChildren = oStepsTreeModel.Children(nStepID)	
 			for nIndex in aChildren {
-				oStepsTreeModel.GetData()[nIndex][C_TREEMODEL_CONTENT][:active]  = nIgnore
+				oStepsTreeModel.GetData()[nIndex][C_TREEMODEL_CONTENT][:active]  = nActive
 			}
 /*
 	Tree Model Class

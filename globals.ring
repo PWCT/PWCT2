@@ -25,3 +25,7 @@ C_TREECONTROL_OBJECTPOINTER 	= 3
 # Label Control Data
 C_NODELABEL_TEXT 		= 1
 C_NODELABEL_STYLESHEET 	= 2
+
+# Node Label Image
+C_LABELIMAGE_NODEICON	= "images/nodeicon.png"
+C_LABELIMAGE_IGNORESTEP	= "images/ignorestep.png"
