@@ -164,7 +164,8 @@ class GoalDesignerController
 		oView.oStepsTree.DecreaseFontSize()
 
 	func IgnoreStepAction		
-		if oView.checkIgnore.checkstate() { # True 
+		# We uses if statement because CheckState() output = 2 when True
+		if oView.checkIgnore.checkstate() { 
 			nIgnore = True
 		else
 			nIgnore = False
