@@ -544,7 +544,15 @@ class GoalDesignerModel
 		The next function  ignore step (Enable/Disable step)
 	*/
 	func IgnoreStep nStepID,nIgnore
-
+		# Set Ignore status for the parent step 
+			aContent = oStepsTreeModel.GetNodeContent(nStepID)
+			aContent[:active]  = nIgnore
+			oStepsTreeModel.SetNodeContent(nStepID,aContent)
+		# Set Ignore status for children steps
+			aChildren = oStepsTreeModel.Children(nStepID)	
+			for nIndex in aChildren {
+				oStepsTreeModel.GetData()[nIndex][C_TREEMODEL_CONTENT][:active]  = nIgnore
+			}
 /*
 	Tree Model Class
 	We manage the tree data as a table
