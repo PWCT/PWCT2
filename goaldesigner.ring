@@ -162,6 +162,17 @@ class GoalDesignerController
 
 	func DecreaseSizeAction
 		oView.oStepsTree.DecreaseFontSize()
+
+	func IgnoreStepAction		
+		if oView.checkIgnore.checkstate() { # True 
+			nIgnore = True
+		else
+			nIgnore = False
+		}
+		oItem  = oView.oStepsTree.currentItem()
+		nStepID = oView.oStepsTree.GetIDByObj(oItem)
+		oModel.IgnoreStep(nStepID,nIgnore)
+		oView.oStepsTree.IgnoreStep(oItem,nIgnore)
 	
 class GoalDesignerView
 
@@ -223,6 +234,10 @@ class GoalDesignerView
 			setClickEvent($objname+".DecreaseSizeAction()")			
 		}
 		setBtnImage(btnDecreaseSize,"images/zoomout.png")
+		checkIgnore = new qCheckBox(win) {
+			setText("x")
+			setstateChangedEvent($objname+".IgnoreStepAction()")		
+		}
 		layoutBtns = new qHBoxLayout()
 		{	
 			AddWidget(btnAddStep)
@@ -236,6 +251,7 @@ class GoalDesignerView
 			AddWidget(btnPasteSteps)
 			AddWidget(btnIncreaseSize)
 			AddWidget(btnDecreaseSize)
+			AddWidget(checkIgnore)
 		}
 		layout1 = new qVBoxLayout()
 		{	
@@ -401,6 +417,7 @@ class StepsTreeView from TreeControl
 			oLabel.setStyleSheet("font-size:" + nFontSize + "pt;")
 		}
 
+	func IgnoreStep oItem,nIgnore
 
 class TreeControl from qTreeWidget	
 
@@ -522,6 +539,12 @@ class GoalDesignerModel
 
 	func GetBuffer
 		return oStepsTreeModel.GetBuffer()
+
+	/*
+		The next function  ignore step (Enable/Disable step)
+	*/
+	func IgnoreStep nStepID,nIgnore
+
 /*
 	Tree Model Class
 	We manage the tree data as a table
@@ -762,3 +785,4 @@ class TreeModel
 	*/
 	func GetBuffer
 		return aBuffer
+
