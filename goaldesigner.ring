@@ -15,6 +15,7 @@ load "goaldesigner/goaldesignermodel.ring"
 load "goaldesigner/treecontrol.ring"
 load "goaldesigner/stepstreeview.ring"
 load "goaldesigner/htmlstyles.ring"
+load "goaldesigner/stepcodeview.ring"
 
 if filename()  = sysargv[2] {
 	Test_GoalDesigner()
@@ -331,26 +332,4 @@ class GoalDesignerView
 
 	func Show
 		win { showMaximized() }
-
-class StepCodeView from QTextEdit
-
-	font  nFontSize = 12	# The font object and the font size
-
-	func init win
-		super.init(win)
-		font = new qFont("",0,0,0)
-		font.setpixelsize(nFontSize)
-		return self
-
-	func IncreaseFontSize
-		if nFontSize >= 72 { return }
-		nFontSize += 2	
-		font.setpixelsize(nFontSize)
-		SetFont(font)
-
-	func DecreaseFontSize
-		if nFontSize <= 12 { return }
-		nFontSize -= 2	
-		font.setpixelsize(nFontSize)
-		SetFont(font)
 
