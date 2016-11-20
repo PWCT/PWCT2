@@ -194,8 +194,9 @@ class GoalDesignerView
 	win = new qWidget() {
 		setWindowTitle(T_GD_WindowTitle) # "Goal Designer"
 		oPageDesign = new qWidget() {
-			oStepsTree = new StepsTreeView(oPageDesign) 
-			oStepStree.setCurrentItemChangedEvent($objname+".StepChangedAction()") 			
+			oStepsTree = new StepsTreeView(oPageDesign) {
+				setCurrentItemChangedEvent($objname+".StepChangedAction()") 			
+			}
 			oPageDesignLayout = new qVBoxLayout() {
 				AddWidget(oStepsTree)
 			}
@@ -357,6 +358,7 @@ class StepsTreeView from TreeControl
 			setStyleSheet("font-size:" + this.nFontSize + "pt;")
 		}
 		setItemWidget(oFirstStep,0, oLabel)	
+		return self
 
 	func GetItemLabel oItem
 		oLabel = new qLabel
