@@ -161,6 +161,7 @@ class StepsTreeView from TreeControl
 		}
 
 	func IgnoreStep oItem,nIgnore
+		setEnabled(False)
 		aItems = StepsList(oItem)
 		if nIgnore {
 			for item in aItems {
@@ -175,6 +176,7 @@ class StepsTreeView from TreeControl
 				oLabel.SetText(this.oStyle.image(C_LABELIMAGE_NODEICON)+cText)
 			}
 		}
+		setEnabled(True)
 
 	func ItemLabelTextWithoutImages oLabel
 		cText = oLabel.Text()

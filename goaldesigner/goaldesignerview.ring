@@ -28,7 +28,7 @@ class GoalDesignerView
 			SetLayout(oPageCodeLayout)
 		}		
 		oTab = new qtabwidget(win) {
-			InsertTab(0,oPageDesign,"Steps Tree")
+			InsertTab(0,oPageDesign,"Design")
 			InsertTab(1,oPageCode,"Step Code")
 		}
 		btnAddStep = new qPushButton(win) {
