@@ -176,13 +176,26 @@ class GoalDesignerController
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
 		oModel.IgnoreStep(nStepID,nIgnore)
 		oView.oStepsTree.IgnoreStep(oItem,nIgnore)
-	
+
+	func StepChangedAction
+		oItem  = oView.oStepsTree.currentItem()
+		nStepID = oView.oStepsTree.GetIDByObj(oItem)
+		# Change the Ignore CheckBox Status
+			if oModel.GetStepIgnoreStatus(nStepID) {
+				oView.checkIgnore.setCheckstate(2)
+			else
+				oView.checkIgnore.setCheckstate(0)
+			}	
+		# Change the Step Code Value
+			oView.oStepCode.setText(oModel.GetStepCode(nStepID))
+
 class GoalDesignerView
 
 	win = new qWidget() {
 		setWindowTitle(T_GD_WindowTitle) # "Goal Designer"
 		oPageDesign = new qWidget() {
-			oStepsTree = new StepsTreeView(oPageDesign)
+			oStepsTree = new StepsTreeView(oPageDesign) 
+			oStepStree.setCurrentItemChangedEvent($objname+".StepChangedAction()") 			
 			oPageDesignLayout = new qVBoxLayout() {
 				AddWidget(oStepsTree)
 			}
@@ -587,6 +600,10 @@ class GoalDesignerModel
 		aContent = oStepsTreeModel.GetNodeContent(nStepID)
 		# The Ignore Status is the reverse of the Active Status
 		return not aContent[:active] 
+
+	func GetStepCode nStepID
+		aContent = oStepsTreeModel.GetNodeContent(nStepID)
+		return aContent[:code] 
 
 	func PrintSteps
 		for x in oStepsTreeModel.getdata() {
