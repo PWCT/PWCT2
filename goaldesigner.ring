@@ -189,6 +189,7 @@ class GoalDesignerController
 					oView.checkIgnore.setCheckstate(0)
 				# Set the step code
 					oView.oStepCode.setText("")
+					oView.oStepCode.setEnabled(False)
 				return
 			}
 		# Change the Ignore CheckBox Status
@@ -198,6 +199,7 @@ class GoalDesignerController
 				oView.checkIgnore.setCheckstate(0)
 			}	
 		# Change the Step Code Value
+			oView.oStepCode.setEnabled(True)
 			oView.oStepCode.setText(oModel.GetStepCode(nStepID))
 
 	func StepCodeChangedAction
