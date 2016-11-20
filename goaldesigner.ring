@@ -178,8 +178,19 @@ class GoalDesignerController
 		oView.oStepsTree.IgnoreStep(oItem,nIgnore)
 
 	func StepChangedAction
+		if not oView.oStepsTree.isEnabled() {
+			return
+		}
 		oItem  = oView.oStepsTree.currentItem()
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
+		# Check if it's the start point
+			if nStepID = 1 {	# Avoid start point
+				# Set Ignore Checkbox status
+					oView.checkIgnore.setCheckstate(0)
+				# Set the step code
+					oView.oStepCode.setText("")
+				return
+			}
 		# Change the Ignore CheckBox Status
 			if oModel.GetStepIgnoreStatus(nStepID) {
 				oView.checkIgnore.setCheckstate(2)
@@ -192,6 +203,9 @@ class GoalDesignerController
 	func StepCodeChangedAction
 		oItem  = oView.oStepsTree.currentItem()
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
+		if nStepID = 1 {	# Avoid start point			
+			return
+		}	
 		oModel.SaveStepCode(nStepID,oView.oStepCode.ToPlainText())
 
 class GoalDesignerView
@@ -398,11 +412,20 @@ class StepsTreeView from TreeControl
 			SaveLabels(oItem)
 
 	func PasteStep oParentStep
+		/*
+			We uses setEnabled() to use isEnabled() later in StepChangedAction 
+			The idea is to disable the action during PasteStep() Execution
+			Because this will lead to errors in finding the step data 
+			Because we update the view first then the model
+			Also executing the StepChangedAction during this process is not necessary
+		*/
+		setEnabled(False)
 		oNewItems = oStepBuffer.Clone()
 		oParentStep.AddChild(oNewItems)
 		setCurrentItem(oNewItems,0)
 		# Add the Labels Controls
 			RestoreLabels(oNewItems,False)
+		setEnabled(True)
 		return oNewItems
 
 	func SaveLabels oItem
@@ -525,6 +548,7 @@ class TreeControl from qTreeWidget
 		super.init(win)
 		font = new qFont("",0,0,0)
 		font.setpixelsize(nFontSize)
+		return self
 
 	func AddNode nParentID,nID,cText
 		oParent = GetObjByID(nParentID)
