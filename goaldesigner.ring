@@ -189,6 +189,11 @@ class GoalDesignerController
 		# Change the Step Code Value
 			oView.oStepCode.setText(oModel.GetStepCode(nStepID))
 
+	func StepCodeChangedAction
+		oItem  = oView.oStepsTree.currentItem()
+		nStepID = oView.oStepsTree.GetIDByObj(oItem)
+		oModel.SaveStepCode(nStepID,oView.oStepCode.ToPlainText())
+
 class GoalDesignerView
 
 	win = new qWidget() {
@@ -203,7 +208,9 @@ class GoalDesignerView
 			SetLayout(oPageDesignLayout)
 		}
 		oPageCode = new qWidget() {
-			oStepCode = new StepCodeView(oPageCode) 
+			oStepCode = new StepCodeView(oPageCode)  {
+				setTextChangedEvent($objname+".StepCodeChangedAction()")
+			}
 			oPageCodeLayout= new qVBoxLayout() {
 				AddWidget(oStepCode)
 			}
@@ -311,6 +318,7 @@ class StepCodeView from QTextEdit
 		super.init(win)
 		font = new qFont("",0,0,0)
 		font.setpixelsize(nFontSize)
+		return self
 
 	func IncreaseFontSize
 		if nFontSize >= 72 { return }
@@ -648,6 +656,13 @@ class GoalDesignerModel
 			for nIndex in aChildren {
 				oStepsTreeModel.GetData()[nIndex][C_TREEMODEL_CONTENT][:active]  = nActive
 			}
+
+	/*
+		The next function save the step code
+	*/
+	func SaveStepCode nStepID,cCode
+		oStepsTreeModel.GetNodeContent(nStepID)[:code]  = cCode
+
 /*
 	Tree Model Class
 	We manage the tree data as a table
