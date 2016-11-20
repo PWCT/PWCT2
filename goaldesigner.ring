@@ -185,9 +185,17 @@ class GoalDesignerView
 				AddWidget(oStepsTree)
 			}
 			SetLayout(oPageDesignLayout)
+		}
+		oPageCode = new qWidget() {
+			oStepCode = new qTextEdit(oPageCode) 
+			oPageCodeLayout= new qVBoxLayout() {
+				AddWidget(oStepCode)
+			}
+			SetLayout(oPageCodeLayout)
 		}		
 		oTab = new qtabwidget(win) {
-			inserttab(0,oPageDesign,"Steps Tree")
+			InsertTab(0,oPageDesign,"Steps Tree")
+			InsertTab(1,oPageCode,"Step Code")
 		}
 		btnAddStep = new qPushButton(win) {
 			setText("New Step")
@@ -489,8 +497,6 @@ class TreeControl from qTreeWidget
 			}
 			setItemWidget(oItem,0,oLabel)
 		}		 
-
-
 
 	func GetObjByID id
 		nPos = std_find2(aTree,id,C_TREECONTROL_ID)
