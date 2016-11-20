@@ -179,7 +179,16 @@ class GoalDesignerView
 
 	win = new qWidget() {
 		setWindowTitle(T_GD_WindowTitle) # "Goal Designer"
-		oStepsTree = new StepsTreeView(win)
+		oPageDesign = new qWidget() {
+			oStepsTree = new StepsTreeView(oPageDesign)
+			oPageDesignLayout = new qVBoxLayout() {
+				AddWidget(oStepsTree)
+			}
+			SetLayout(oPageDesignLayout)
+		}		
+		oTab = new qtabwidget(win) {
+			inserttab(0,oPageDesign,"Steps Tree")
+		}
 		btnAddStep = new qPushButton(win) {
 			setText("New Step")
 			setClickEvent($objname+".AddStepAction()")			
@@ -257,9 +266,10 @@ class GoalDesignerView
 		layout1 = new qVBoxLayout()
 		{	
 			AddLayout(layoutBtns)
-			AddWidget(oStepsTree)
+			AddWidget(oTab)
 		}		
 		SetLayout(Layout1)
+		oStepsTree.SetFocus(0)
 	}
 
 	func Show
