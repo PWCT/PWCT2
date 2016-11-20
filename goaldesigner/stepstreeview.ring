@@ -1,0 +1,184 @@
+/*
+**	Project : Programming Without Coding Technology (PWCT) Version 2.0
+**	File Purpose :  Steps Tree View Class
+**	Date : 2016.11.20
+**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
+*/
+
+class StepsTreeView from TreeControl
+
+	oFirststep oStyle = new HTMLStyles
+
+	oStepBuffer = NULL # Used for Cut,Copy & Paste operations
+
+	lUseLabels = True	# Use QLabel for each Tree Item
+
+	aLabels = []		# List of Labels controls	
+
+	func Init win
+		super.init(win)
+		setcolumncount(1)
+		oFirststep = new qtreewidgetitem()
+		addtoplevelitem(oFirststep)
+		AddToTree(1,oFirstStep)
+		setheaderlabel(T_GD_StepsTree )
+		oLabel = new qLabel(self) {
+			settext(this.oStyle.image(C_LABELIMAGE_NODEICON)+ this.oStyle.text(T_GD_FirstStep,"green",""))
+			setStyleSheet("font-size:" + this.nFontSize + "pt;")
+		}
+		setItemWidget(oFirstStep,0, oLabel)	
+		return self
+
+	func GetItemLabel oItem
+		oLabel = new qLabel
+		oLabel.pObject =  itemwidget(oItem,0).pObject
+		return oLabel
+
+	func AddStep nParentID,nID,cText
+		AddNode(nParentID,nID,cText)
+
+	func EditStep oItem,cText,lIgnoreStatus
+		if lUseLabels = false {
+			oItem.setText(0,cText)
+		else
+			oLabel = GetItemLabel(oItem)
+			if lIgnoreStatus { 
+				oLabel.SetText(this.oStyle.image(C_LABELIMAGE_IGNORESTEP)+this.oStyle.text(cText,"green",""))
+			else
+				oLabel.SetText(this.oStyle.image(C_LABELIMAGE_NODEICON)+this.oStyle.text(cText,"green",""))
+			}
+		}
+
+	func SaveStep oItem
+		if isObject(oStepBuffer) {
+			oStepBuffer.Delete()
+		}
+		# Copy the Steps to the buffer
+			oStepBuffer = oItem.Clone()
+		# Save the Labels Controls
+			SaveLabels(oItem)
+
+	func PasteStep oParentStep
+		/*
+			We uses setEnabled() to use isEnabled() later in StepChangedAction 
+			The idea is to disable the action during PasteStep() Execution
+			Because this will lead to errors in finding the step data 
+			Because we update the view first then the model
+			Also executing the StepChangedAction during this process is not necessary
+		*/
+		setEnabled(False)
+		oNewItems = oStepBuffer.Clone()
+		oParentStep.AddChild(oNewItems)
+		setCurrentItem(oNewItems,0)
+		# Add the Labels Controls
+			RestoreLabels(oNewItems,False)
+		setEnabled(True)
+		return oNewItems
+
+	func SaveLabels oItem
+		# Save the Labels Controls
+			if lUseLabels {
+				aItems = StepsList(oItem)
+				/*
+					Create new list in aLabels
+					Because this feature is shared between
+						Move Up / Move Down
+						Cut, Copy and Paste
+					We may copy/cut a step ---> this call saveLabels()
+					Then we move a step up/down ---> this call saveLabels() 
+									again then  restoreLabels()
+					Then we call paste ---> this call restorelabels()					
+				*/
+				aLabels + []
+				for item in aItems {
+					oLabel = GetItemLabel(item)
+					aLabels[len(aLabels)] + [oLabel.text(),oLabel.StyleSheet()]
+				}
+			}
+
+	func RestoreLabels oNewItems,lDeleteLabels
+		# Add the Labels Controls
+			aItems = StepsList(oNewItems)
+			aTempLabels = aLabels[len(aLabels)]
+			for x=1 to len(aItems) {
+				oItem = aItems[x]
+				aLabel = aTempLabels[x]
+				oLabel2 = new qLabel(Self) {
+					setText(aLabel[C_NODELABEL_TEXT])
+					setStyleSheet(aLabel[C_NODELABEL_STYLESHEET])					
+				}
+				setItemWidget(oItem,0,oLabel2)
+			}
+			/*
+				We check the lDeleteLabels Variable
+				We remove the list only if the value is true
+				This means calling savelabels() then restorelabels() directly
+				This happens in Move Up and Move Down operations
+				While in Paste operation the lDeleteLabels will be false
+				Because we may use paste more than one time.
+			*/
+			if lDeleteLabels {
+				del(aLabels,len(aLabels))
+			}
+
+	func isbuffernotempty
+		if isObject(oStepBuffer) {
+			return true
+		}
+		return false
+
+	/*
+		The next method take a Step as input
+		Then return a list of the step and the steps children in order
+	*/
+	func StepsList oParentStep
+		aList = []
+		SubStepsList(aList,oParentStep)
+		return aList
+
+	func SubStepsList aList,oParentStep
+		aList + oParentStep
+		for x=1 to oParentStep.childcount() {
+			SubStepsList(aList,oParentStep.child(x-1))
+		}
+		
+	func IncreaseFontSize
+		super.IncreaseFontSize()
+		UpdateFontSize()		
+
+	func DecreaseFontSize
+		super.DecreaseFontSize()
+		UpdateFontSize()		
+
+	func UpdateFontSize
+		if lUseLabels = false {
+			return 
+		}
+		aItems = stepsList(oFirstStep)
+		for item in aItems {
+			oLabel = GetItemLabel(item)
+			oLabel.setStyleSheet("font-size:" + nFontSize + "pt;")
+		}
+
+	func IgnoreStep oItem,nIgnore
+		aItems = StepsList(oItem)
+		if nIgnore {
+			for item in aItems {
+				oLabel = GetItemLabel(item)
+				cText = ItemLabelTextWithoutImages(oLabel)
+				oLabel.SetText(this.oStyle.image(C_LABELIMAGE_IGNORESTEP)+cText)
+			}
+		else 
+			for item in aItems {
+				oLabel = GetItemLabel(item)
+				cText = ItemLabelTextWithoutImages(oLabel)
+				oLabel.SetText(this.oStyle.image(C_LABELIMAGE_NODEICON)+cText)
+			}
+		}
+
+	func ItemLabelTextWithoutImages oLabel
+		cText = oLabel.Text()
+		cText = substr(cText,this.oStyle.image(C_LABELIMAGE_NODEICON),"")
+		cText = substr(cText,this.oStyle.image(C_LABELIMAGE_IGNORESTEP),"")
+		return cText
+
