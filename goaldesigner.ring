@@ -159,9 +159,11 @@ class GoalDesignerController
 
 	func IncreaseSizeAction
 		oView.oStepsTree.IncreaseFontSize()
+		oView.oStepCode.IncreaseFontSize()
 
 	func DecreaseSizeAction
 		oView.oStepsTree.DecreaseFontSize()
+		oView.oStepCode.DecreaseFontSize()
 
 	func IgnoreStepAction		
 		# We uses if statement because CheckState() output = 2 when True
@@ -187,7 +189,7 @@ class GoalDesignerView
 			SetLayout(oPageDesignLayout)
 		}
 		oPageCode = new qWidget() {
-			oStepCode = new qTextEdit(oPageCode) 
+			oStepCode = new StepCodeView(oPageCode) 
 			oPageCodeLayout= new qVBoxLayout() {
 				AddWidget(oStepCode)
 			}
@@ -286,6 +288,27 @@ class GoalDesignerView
 
 	func Show
 		win { showMaximized() }
+
+class StepCodeView from QTextEdit
+
+	font  nFontSize = 12	# The font object and the font size
+
+	func init win
+		super.init(win)
+		font = new qFont("",0,0,0)
+		font.setpixelsize(nFontSize)
+
+	func IncreaseFontSize
+		if nFontSize >= 72 { return }
+		nFontSize += 2	
+		font.setpixelsize(nFontSize)
+		SetFont(font)
+
+	func DecreaseFontSize
+		if nFontSize <= 12 { return }
+		nFontSize -= 2	
+		font.setpixelsize(nFontSize)
+		SetFont(font)
 
 class HTMLStyles
 
