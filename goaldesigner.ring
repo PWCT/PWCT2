@@ -14,6 +14,7 @@ load "goaldesigner/treemodel.ring"
 load "goaldesigner/goaldesignermodel.ring"
 load "goaldesigner/treecontrol.ring"
 load "goaldesigner/stepstreeview.ring"
+load "goaldesigner/htmlstyles.ring"
 
 if filename()  = sysargv[2] {
 	Test_GoalDesigner()
@@ -352,16 +353,4 @@ class StepCodeView from QTextEdit
 		nFontSize -= 2	
 		font.setpixelsize(nFontSize)
 		SetFont(font)
-
-class HTMLStyles
-
-	func text cText,cTextColor,cBackColor
-		cHTML =  "<span style='background-color:#{backcolor}'><font color='#{textcolor}'>#{text}</font></span>"
-		cHTML = substr(cHTML,"#{backcolor}",cBackColor)
-		cHTML = substr(cHTML,"#{textcolor}",cTextColor)
-		cHTML = substr(cHTML,"#{text}",cText)
-		return cHTML
-
-	func image cFile
-		return "<img src='"+cFile+"'> "
 
