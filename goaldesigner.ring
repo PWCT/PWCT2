@@ -269,6 +269,10 @@ class GoalDesignerView
 			AddWidget(oTab)
 		}		
 		SetLayout(Layout1)
+		/*
+			We set the focus on the steps tree to enable setting the current item
+			This is important after creating the Tabs
+		*/
 		oStepsTree.SetFocus(0)
 	}
 
