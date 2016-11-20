@@ -12,6 +12,7 @@ load "translation/english.ring"
 
 load "goaldesigner/treemodel.ring"
 load "goaldesigner/goaldesignermodel.ring"
+load "goaldesigner/treecontrol.ring"
 
 
 if filename()  = sysargv[2] {
@@ -540,75 +541,4 @@ class StepsTreeView from TreeControl
 		cText = substr(cText,this.oStyle.image(C_LABELIMAGE_NODEICON),"")
 		cText = substr(cText,this.oStyle.image(C_LABELIMAGE_IGNORESTEP),"")
 		return cText
-
-
-class TreeControl from qTreeWidget	
-
-	aTree = []	# Node ID , Node Object , Node Object.pObject
-
-	font  nFontSize = 12	# The font object and the font size
-
-	lUseLabels = False	# Use QLabel for each Tree Item
-
-	func init win
-		super.init(win)
-		font = new qFont("",0,0,0)
-		font.setpixelsize(nFontSize)
-		return self
-
-	func AddNode nParentID,nID,cText
-		oParent = GetObjByID(nParentID)
-		oItem = new qtreewidgetitem()
-		if lUseLabels = False {	
-			oItem.settext(0,cText)
-		}
-		oParent.addchild(oItem)
-		AddToTree(nID,oItem)
-		setCurrentItem(oItem,0)	# To Display the item (become visible)
-		setCurrentItem(oParent,0)	# Focus on Parent Step
-		if lUseLabels = True {
-			oLabel = new qLabel(self) {			
-				settext(this.oStyle.image(C_LABELIMAGE_NODEICON)+this.oStyle.text(cText,"green",""))
-				setStyleSheet("font-size:" + this.nFontSize + "pt;")
-			}
-			setItemWidget(oItem,0,oLabel)
-		}		 
-
-	func GetObjByID id
-		nPos = std_find2(aTree,id,C_TREECONTROL_ID)
-		if nPos = 0 {
-			raise("GetObjByID() - Can't find the object!")
-		}
-		return aTree[nPos][C_TREECONTROL_OBJECT]
-
-	func GetIDByObj oObj
-		nPos = std_find2(aTree,oObj.pObject,C_TREECONTROL_OBJECTPOINTER)
-		if nPos = 0 {
-			raise("GetIDByObj() - Can't find the ID!")
-		}
-		return aTree[nPos][C_TREECONTROL_ID]
-
-	func AddToTree nID,oObject
-		aTree + [nID,oObject,oObject.pObject]
-
-	/*
-		The next method is used after Paste operation to update the Tree list
-		With the new nodes data
-	*/
-	func AddNodesFromBuffer aNodesObjectsList,aNodesDataList
-		for x = 1 to len(aNodesObjectsList) {
-			AddToTree(aNodesDataList[x][C_TREEMODEL_NODEID],aNodesObjectsList[x])
-		}
-
-	func IncreaseFontSize
-		if nFontSize >= 72 { return }
-		nFontSize += 2	
-		font.setpixelsize(nFontSize)
-		SetFont(font)
-
-	func DecreaseFontSize
-		if nFontSize <= 12 { return }
-		nFontSize -= 2	
-		font.setpixelsize(nFontSize)
-		SetFont(font)
 
