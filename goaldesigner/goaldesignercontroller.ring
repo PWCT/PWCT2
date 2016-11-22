@@ -166,6 +166,7 @@ class GoalDesignerController from WindowsBase
 		if not oView.oStepsTree.isEnabled() {
 			return
 		}
+		oView.oStepsTree.setEnabled(False)
 		oItem  = oView.oStepsTree.currentItem()
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
 		# Check if it's the start point
@@ -177,6 +178,7 @@ class GoalDesignerController from WindowsBase
 				# Set the step code
 					oView.oStepCode.setText("")
 					oView.oStepCode.setEnabled(False)
+					oView.oStepsTree.setEnabled(True)
 				return
 			}
 		# Change the Ignore CheckBox Status
@@ -190,6 +192,7 @@ class GoalDesignerController from WindowsBase
 		# Change the Step Code Value
 			oView.oStepCode.setEnabled(True)
 			oView.oStepCode.setText(oModel.GetStepCode(nStepID))
+		oView.oStepsTree.setEnabled(True)
 
 	func StepCodeChangedAction
 		oItem  = oView.oStepsTree.currentItem()
