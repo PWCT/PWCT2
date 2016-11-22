@@ -14,4 +14,4 @@ class FindStepController from WindowsBase
 
 	func CloseAction
 		oView.Close()
-		super.Close()
+		Super.Close()

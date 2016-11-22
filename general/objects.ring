@@ -9,8 +9,15 @@
 # List of objects (Windows/Forms)
 	$ObjectsList = []
 
+# The Object ID Counter
+	$ObjectID = 0
+
 # Variable used for Windows/Forms object name - used for setting events 
 	$ObjName = ""
+
+# The next constants for the Objects List
+	C_OBJECTSLIST_ID = 1
+	C_OBJECTSLIST_OBJECT = 2
 
 /*
 	The next function create new object, add the object to the $ObjectsList
@@ -19,19 +26,32 @@
 */
 
 func Open_Window cClass
-	$ObjectsList + ""
-	$ObjName = "$ObjectsList[" + len($ObjectsList) + "]"
+	$ObjectID++
+	$ObjectsList + [$ObjectID,""]	
+	$ObjName = "$ObjectsList[Get_Window_Pos("+$ObjectID+")]" +
+			 "[C_OBJECTSLIST_OBJECT]"
 	cCode = $ObjName + " = new " + cClass + nl + 
 		  $ObjName + ".start()"
 	eval(cCode)
 
 /*
+	The next function get the Window ID
+	Then search in the Objects List to find the Window Item Position
+*/
+
+func Get_Window_Pos nID
+	return find($ObjectsList,nID,C_OBJECTSLIST_ID)
+
+/*
 	The next class is the parent class for Windows/Forms Classes
+	When you create a new class, just use from WindowsBase
+	When you close the window just use Super.Close()
 */
 
 class WindowsBase
 
-	nID = len($ObjectsList)
+	nID = $ObjectID
 
 	func Close
-		del($ObjectsList,nID)
+		nPos = Get_Window_Pos(nID)
+		del($ObjectsList,nPos)
