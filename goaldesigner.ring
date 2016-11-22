@@ -7,7 +7,7 @@
 
 load "stdlib.ring"
 load "guilib.ring"
-load "globals.ring"
+load "general/globals.ring"
 load "translation/english.ring"
 
 load "goaldesigner/goaldesignercontroller.ring"
