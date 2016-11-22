@@ -86,6 +86,11 @@ class GoalDesignerView
 			setClickEvent($objname+".DecreaseSizeAction()")			
 		}
 		setBtnImage(btnDecreaseSize,"images/zoomout.png")
+		btnSearch = new qPushButton(win) {
+			setText("Search")
+			setClickEvent($objname+".SearchAction()")			
+		}
+		setBtnImage(btnSearch,"images/search.png")
 		checkIgnore = new qCheckBox(win) {
 			setText("x")
 			setstateChangedEvent($objname+".IgnoreStepAction()")		
@@ -103,6 +108,7 @@ class GoalDesignerView
 			AddWidget(btnPasteSteps)
 			AddWidget(btnIncreaseSize)
 			AddWidget(btnDecreaseSize)
+			AddWidget(btnSearch)
 			AddWidget(checkIgnore)
 		}
 		layout1 = new qVBoxLayout()

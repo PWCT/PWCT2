@@ -199,3 +199,5 @@ class GoalDesignerController
 		}	
 		oModel.SaveStepCode(nStepID,oView.oStepCode.ToPlainText())
 
+
+	func SearchAction
