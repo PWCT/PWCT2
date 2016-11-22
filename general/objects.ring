@@ -18,9 +18,20 @@
 	Then call the start() method
 */
 
-func create_object cClass
+func Open_Window cClass
 	$ObjectsList + ""
 	$ObjName = "$ObjectsList[" + len($ObjectsList) + "]"
 	cCode = $ObjName + " = new " + cClass + nl + 
 		  $ObjName + ".start()"
 	eval(cCode)
+
+/*
+	The next class is the parent class for Windows/Forms Classes
+*/
+
+class WindowsBase
+
+	nID = len($ObjectsList)
+
+	func Close
+		del($ObjectsList,nID)

@@ -5,7 +5,7 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-class FindStepController
+class FindStepController from WindowsBase
 
 	oView = new FindStepView
 
@@ -14,3 +14,4 @@ class FindStepController
 
 	func CloseAction
 		oView.Close()
+		super.Close()

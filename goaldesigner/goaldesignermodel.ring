@@ -5,7 +5,6 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-
 class GoalDesignerModel
 
 	oStepsTreeModel = new TreeModel

@@ -5,7 +5,7 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-class GoalDesignerController
+class GoalDesignerController from WindowsBase
 
 	oView = new GoalDesignerView
 	oModel = new GoalDesignerModel
@@ -201,4 +201,4 @@ class GoalDesignerController
 
 
 	func SearchAction
-		create_object("FindStepController")
+		Open_Window("FindStepController")

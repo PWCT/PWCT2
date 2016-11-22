@@ -5,15 +5,13 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-
-/*
-	Tree Model Class
-	We manage the tree data as a table
-	The table contains the next columns
-	nNodeID - nParentID - Content
-*/
-
 class TreeModel
+
+	/*
+		We manage the Tree data as a Table
+		The Table contains the next columns
+		nNodeID - nParentID - Content
+	*/
 
 	aList = []		# Tree Content [nNodeID - nParentID - Content]
 	nID = 0		# Automatic ID for each node
