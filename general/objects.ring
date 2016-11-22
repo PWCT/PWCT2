@@ -7,7 +7,7 @@
 
 
 # List of objects (Windows/Forms)
-	$ObjectsList = []
+	$ObjectsList = []	# Contains sub lists [object ID , Object]
 
 # The Object ID Counter
 	$ObjectID = 0
@@ -16,8 +16,8 @@
 	$ObjName = ""
 
 # The next constants for the Objects List
-	C_OBJECTSLIST_ID = 1
-	C_OBJECTSLIST_OBJECT = 2
+	C_OBJECTSLIST_ID 		= 1
+	C_OBJECTSLIST_OBJECT 	= 2
 
 /*
 	The next function create new object, add the object to the $ObjectsList
