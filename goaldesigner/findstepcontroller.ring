@@ -5,8 +5,6 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-$FindStep = NULL
-
 class FindStepController
 
 	oView = new FindStepView

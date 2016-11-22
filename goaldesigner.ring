@@ -8,6 +8,7 @@
 load "stdlib.ring"
 load "guilib.ring"
 load "general/globals.ring"
+load "general/objects.ring"
 load "translation/english.ring"
 
 load "goaldesigner/goaldesignercontroller.ring"
@@ -28,8 +29,6 @@ if filename()  = sysargv[2] {
 func Test_GoalDesigner
 
 	new qApp {
-		$objname = "$GoalDesigner"
-		$GoalDesigner = new GoalDesignerController
-		$GoalDesigner.Start()
+		create_object("GoalDesignerController")
 		exec()
 	}

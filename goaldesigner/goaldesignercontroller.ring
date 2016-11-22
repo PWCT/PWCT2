@@ -201,5 +201,4 @@ class GoalDesignerController
 
 
 	func SearchAction
-		$objname = "$findstep"
-		$findstep = new FindStepController { start() }
+		create_object("FindStepController")
