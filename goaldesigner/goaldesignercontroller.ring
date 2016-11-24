@@ -10,6 +10,12 @@ class GoalDesignerController from WindowsBase
 	oView = new GoalDesignerView
 	oModel = new GoalDesignerModel
 
+	# Flag used by move step up/down to disable this event
+		lStepChangedActionEnabled = True 
+
+	# Flag used by the event to disable infinite loop (calling the event again and again)
+		lStepChangedActive = False	
+
 	func Start
 		oView.Show()
 
@@ -85,6 +91,7 @@ class GoalDesignerController from WindowsBase
 			oItem.SetExpanded(True)
 			oModel.MoveStepUp(nStepID)	
 		}
+		lStepChangedActionEnabled = False
 
 	func MoveStepDownAction
 		oItem  = oView.oStepsTree.currentItem()
@@ -103,6 +110,7 @@ class GoalDesignerController from WindowsBase
 			oItem.SetExpanded(True)	
 			oModel.MoveStepDown(nStepID)	
 		}
+		lStepChangedActionEnabled = False
 
 	func PrintStepsAction
 		oModel.PrintSteps()
@@ -130,6 +138,7 @@ class GoalDesignerController from WindowsBase
 		if oView.oStepsTree.isbuffernotempty() = false {
 			return
 		}
+		lStepChangedActionEnabled = False
 		oParentItem  = oView.oStepsTree.currentItem()
 		nParentStepID = oView.oStepsTree.GetIDByObj(oParentItem)
 		oModel.PasteStep(nParentStepID)
@@ -163,36 +172,34 @@ class GoalDesignerController from WindowsBase
 		oView.oStepsTree.IgnoreStep(oItem,nIgnore)
 
 	func StepChangedAction
-		if not oView.oStepsTree.isEnabled() {
-			return
+		if lStepChangedActionEnabled = False {
+				lStepChangedActionEnabled = True
+				return
 		}
-		oView.oStepsTree.setEnabled(False)
+		if lStepChangedActive { return }
+		lStepChangedActive = True
 		oItem  = oView.oStepsTree.currentItem()
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
 		# Check if it's the start point
 			if nStepID = 1 {	# Avoid start point
 				# Set Ignore Checkbox status
-					oView.checkIgnore.setEnabled(False)
-					oView.checkIgnore.setCheckstate(0)
-					oView.checkIgnore.setEnabled(True)
+					SetCheckIgnoreStatus(0)
 				# Set the step code
 					oView.oStepCode.setText("")
 					oView.oStepCode.setEnabled(False)
-					oView.oStepsTree.setEnabled(True)
+				lStepChangedActive = False
 				return
 			}
 		# Change the Ignore CheckBox Status
-			oView.checkIgnore.setEnabled(False)
 			if oModel.GetStepIgnoreStatus(nStepID) {
-				oView.checkIgnore.setCheckstate(2)
+				SetCheckIgnoreStatus(2)
 			else
-				oView.checkIgnore.setCheckstate(0)
+				SetCheckIgnoreStatus(0)
 			}	
-			oView.checkIgnore.setEnabled(True)
 		# Change the Step Code Value
 			oView.oStepCode.setEnabled(True)
 			oView.oStepCode.setText(oModel.GetStepCode(nStepID))
-		oView.oStepsTree.setEnabled(True)
+		lStepChangedActive = False
 
 	func StepCodeChangedAction
 		oItem  = oView.oStepsTree.currentItem()
@@ -202,6 +209,10 @@ class GoalDesignerController from WindowsBase
 		}	
 		oModel.SaveStepCode(nStepID,oView.oStepCode.ToPlainText())
 
-
 	func SearchAction
 		Open_Window("FindStepController")
+
+	func SetCheckIgnoreStatus nStatus
+		oView.checkIgnore.setEnabled(False)
+		oView.checkIgnore.setCheckstate(nStatus)
+		oView.checkIgnore.setEnabled(True)

@@ -41,7 +41,7 @@ class GoalDesignerModel
 	func PrintSteps
 		for x in oStepsTreeModel.getdata() {
 			puts( x[C_TREEMODEL_CONTENT][:name] +
-				 " .. Ignore : " +
+				 " .. Active : " +
 				x[C_TREEMODEL_CONTENT][:active])
 		}
 

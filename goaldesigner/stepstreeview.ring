@@ -59,20 +59,11 @@ class StepsTreeView from TreeControl
 			SaveLabels(oItem)
 
 	func PasteStep oParentStep
-		/*
-			We uses setEnabled() to use isEnabled() later in StepChangedAction 
-			The idea is to disable the action during PasteStep() Execution
-			Because this will lead to errors in finding the step data 
-			Because we update the view first then the model
-			Also executing the StepChangedAction during this process is not necessary
-		*/
-		setEnabled(False)
 		oNewItems = oStepBuffer.Clone()
 		oParentStep.AddChild(oNewItems)
 		setCurrentItem(oNewItems,0)
 		# Add the Labels Controls
 			RestoreLabels(oNewItems,False)
-		setEnabled(True)
 		return oNewItems
 
 	func SaveLabels oItem
@@ -161,7 +152,6 @@ class StepsTreeView from TreeControl
 		}
 
 	func IgnoreStep oItem,nIgnore
-		setEnabled(False)
 		aItems = StepsList(oItem)
 		if nIgnore {
 			for item in aItems {
@@ -176,7 +166,6 @@ class StepsTreeView from TreeControl
 				oLabel.SetText(this.oStyle.image(C_LABELIMAGE_NODEICON)+cText)
 			}
 		}
-		setEnabled(True)
 
 	func ItemLabelTextWithoutImages oLabel
 		cText = oLabel.Text()
