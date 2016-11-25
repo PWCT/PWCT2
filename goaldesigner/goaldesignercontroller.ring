@@ -143,6 +143,7 @@ class GoalDesignerController from WindowsBase
 		if oView.oStepsTree.isbuffernotempty() = false {
 			return
 		}
+		oView.win.SetEnabled(False)
 		lStepChangedActionEnabled = False
 		oParentItem  = oView.oStepsTree.currentItem()
 		nParentStepID = oView.oStepsTree.GetIDByObj(oParentItem)
@@ -152,6 +153,7 @@ class GoalDesignerController from WindowsBase
 			aStepsObjectsList = oView.oStepsTree.StepsList(oNewParentItem)
 			aStepsDataList = oModel.GetBuffer()
 			oView.oStepsTree.AddNodesFromBuffer(aStepsObjectsList,aStepsDataList)
+		oView.win.SetEnabled(True)
 
 	func IncreaseSizeAction
 		oView.oStepsTree.IncreaseFontSize()
@@ -192,7 +194,7 @@ class GoalDesignerController from WindowsBase
 				# Set the step code
 					oView.oStepCode.setText("")
 					oView.oStepCode.setEnabled(False)
-				lStepChangedActive = False
+				lActionActive = False
 				return
 			}
 		# Change the Ignore CheckBox Status
