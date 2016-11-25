@@ -14,7 +14,7 @@ class GoalDesignerController from WindowsBase
 		lStepChangedActionEnabled = True 
 
 	# Flag used by the event to disable infinite loop (calling the event again and again)
-		lStepChangedActive = False	
+		lActionActive = False	
 
 	func Start
 		oView.Show()
@@ -66,14 +66,15 @@ class GoalDesignerController from WindowsBase
 		}		
 
 	func DeleteStepAction
-		lStepChangedActionEnabled = False
 		oItem  = oView.oStepsTree.currentItem()
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
 		if nStepID = 1 {	# Avoid start point
 			return
 		}
+		oView.win.SetEnabled(False)
 		oItem.parent().takechild(oItem.parent().indexofchild(oItem))
 		oModel.DeleteStep(nStepID)
+		oView.win.SetEnabled(True)
 
 	func MoveStepUpAction
 		oItem  = oView.oStepsTree.currentItem()
@@ -123,9 +124,11 @@ class GoalDesignerController from WindowsBase
 		if nStepID = 1 {	# Avoid start point
 			return
 		}
+		oView.win.SetEnabled(False)
 		oModel.CutStep(nStepID)
 		oView.oStepsTree.SaveStep(oItem)
 		oItem.parent().takechild(oItem.parent().indexofchild(oItem))
+		oView.win.SetEnabled(True)
 
 	func CopyStepsAction
 		oItem  = oView.oStepsTree.currentItem()
@@ -178,8 +181,8 @@ class GoalDesignerController from WindowsBase
 				lStepChangedActionEnabled = True
 				return
 		}
-		if lStepChangedActive { return }
-		lStepChangedActive = True
+		if lActionActive { return }
+		lActionActive = True
 		oItem  = oView.oStepsTree.currentItem()
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
 		# Check if it's the start point
@@ -201,7 +204,7 @@ class GoalDesignerController from WindowsBase
 		# Change the Step Code Value
 			oView.oStepCode.setEnabled(True)
 			oView.oStepCode.setText(oModel.GetStepCode(nStepID))
-		lStepChangedActive = False
+		lActionActive = False
 
 	func StepCodeChangedAction
 		oItem  = oView.oStepsTree.currentItem()
