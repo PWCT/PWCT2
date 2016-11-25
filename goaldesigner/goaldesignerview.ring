@@ -10,9 +10,7 @@ class GoalDesignerView
 	win = new qWidget() {
 		setWindowTitle(T_GD_WindowTitle) # "Goal Designer"
 		oPageDesign = new qWidget() {
-			oStepsTree = new StepsTreeView(oPageDesign) {
-				#setCurrentItemChangedEvent($objname+".StepChangedAction()") 			
-			}
+			oStepsTree = new StepsTreeView(oPageDesign)
 			oPageDesignLayout = new qVBoxLayout() {
 				AddWidget(oStepsTree)
 			}
