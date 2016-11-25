@@ -68,10 +68,10 @@ class GoalDesignerController from WindowsBase
 		if nStepID = 1 {	# Avoid start point
 			return
 		}
-		oView.win.SetEnabled(False)
+		#oView.win.SetEnabled(False)
 		oItem.parent().takechild(oItem.parent().indexofchild(oItem))
 		oModel.DeleteStep(nStepID)
-		oView.win.SetEnabled(True)
+		#oView.win.SetEnabled(True)
 
 	func MoveStepUpAction
 		oItem  = oView.oStepsTree.currentItem()
@@ -118,11 +118,11 @@ class GoalDesignerController from WindowsBase
 		if nStepID = 1 {	# Avoid start point
 			return
 		}
-		oView.win.SetEnabled(False)
+		#oView.win.SetEnabled(False)
 		oModel.CutStep(nStepID)
 		oView.oStepsTree.SaveStep(oItem)
 		oItem.parent().takechild(oItem.parent().indexofchild(oItem))
-		oView.win.SetEnabled(True)
+		#oView.win.SetEnabled(True)
 
 	func CopyStepsAction
 		oItem  = oView.oStepsTree.currentItem()
@@ -130,16 +130,16 @@ class GoalDesignerController from WindowsBase
 		if nStepID = 1 {	# Avoid start point
 			return
 		}
-		oView.win.SetEnabled(False)
+		#oView.win.SetEnabled(False)
 		oModel.CopyStep(nStepID)
 		oView.oStepsTree.SaveStep(oItem)
-		oView.win.SetEnabled(True)
+		#oView.win.SetEnabled(True)
 
 	func PasteStepsAction
 		if oView.oStepsTree.isbuffernotempty() = false {
 			return
 		}
-		oView.win.SetEnabled(False)
+		#oView.win.SetEnabled(False)
 		oParentItem  = oView.oStepsTree.currentItem()
 		nParentStepID = oView.oStepsTree.GetIDByObj(oParentItem)
 		oModel.PasteStep(nParentStepID)
@@ -148,7 +148,7 @@ class GoalDesignerController from WindowsBase
 			aStepsObjectsList = oView.oStepsTree.StepsList(oNewParentItem)
 			aStepsDataList = oModel.GetBuffer()
 			oView.oStepsTree.AddNodesFromBuffer(aStepsObjectsList,aStepsDataList)
-		oView.win.SetEnabled(True)
+		#oView.win.SetEnabled(True)
 
 	func IncreaseSizeAction
 		oView.oStepsTree.IncreaseFontSize()
