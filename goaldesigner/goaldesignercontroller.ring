@@ -66,6 +66,7 @@ class GoalDesignerController from WindowsBase
 		}		
 
 	func DeleteStepAction
+		lStepChangedActionEnabled = False
 		oItem  = oView.oStepsTree.currentItem()
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
 		if nStepID = 1 {	# Avoid start point
@@ -116,6 +117,7 @@ class GoalDesignerController from WindowsBase
 		oModel.PrintSteps()
 
 	func CutStepsAction
+		lStepChangedActionEnabled = False
 		oItem  = oView.oStepsTree.currentItem()
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
 		if nStepID = 1 {	# Avoid start point
