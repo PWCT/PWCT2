@@ -14,7 +14,7 @@ class GoalDesignerController from WindowsBase
 		lStepChangedActionEnabled = True 
 
 	# Flag used by the event to disable infinite loop (calling the event again and again)
-		lActionActive = False	
+		lStepChangedActive = False	
 
 	func Start
 		oView.Show()
@@ -185,8 +185,8 @@ class GoalDesignerController from WindowsBase
 				lStepChangedActionEnabled = True
 				return
 		}
-		if lActionActive { return }
-		lActionActive = True
+		if lStepChangedActive { return }
+		lStepChangedActive = True
 		oItem  = oView.oStepsTree.currentItem()
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
 		# Check if it's the start point
@@ -196,7 +196,7 @@ class GoalDesignerController from WindowsBase
 				# Set the step code
 					oView.oStepCode.setText("")
 					oView.oStepCode.setEnabled(False)
-				lActionActive = False
+				lStepChangedActive = False
 				return
 			}
 		# Change the Ignore CheckBox Status
@@ -208,7 +208,7 @@ class GoalDesignerController from WindowsBase
 		# Change the Step Code Value
 			oView.oStepCode.setEnabled(True)
 			oView.oStepCode.setText(oModel.GetStepCode(nStepID))
-		lActionActive = False
+		lStepChangedActive = False
 
 	func StepCodeChangedAction
 		oItem  = oView.oStepsTree.currentItem()

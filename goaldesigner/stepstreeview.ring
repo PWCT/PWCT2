@@ -130,7 +130,8 @@ class StepsTreeView from TreeControl
 	func SubStepsList aList,oParentStep
 		aList + oParentStep
 		for x=1 to oParentStep.childcount() {
-			SubStepsList(aList,oParentStep.child(x-1))
+			oItem = oParentStep.child(x-1)			
+			SubStepsList(aList,oItem)
 		}
 		
 	func IncreaseFontSize

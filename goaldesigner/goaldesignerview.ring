@@ -30,6 +30,7 @@ class GoalDesignerView
 		oTab = new qtabwidget(win) {
 			InsertTab(0,oPageDesign,"Design")
 			InsertTab(1,oPageCode,"Step Code")
+			#setCurrentChangedEvent($objname+".StepChangedAction()") 			
 		}
 		btnAddStep = new qPushButton(win) {
 			setText("New Step")
