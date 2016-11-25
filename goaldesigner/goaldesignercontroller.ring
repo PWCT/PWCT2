@@ -10,9 +10,6 @@ class GoalDesignerController from WindowsBase
 	oView = new GoalDesignerView
 	oModel = new GoalDesignerModel
 
-	# Flag used by move step up/down to disable this event
-		lStepChangedActionEnabled = True 
-
 	# Flag used by the event to disable infinite loop (calling the event again and again)
 		lStepChangedActive = False	
 
@@ -93,7 +90,6 @@ class GoalDesignerController from WindowsBase
 			oItem.SetExpanded(True)
 			oModel.MoveStepUp(nStepID)	
 		}
-		lStepChangedActionEnabled = False
 
 	func MoveStepDownAction
 		oItem  = oView.oStepsTree.currentItem()
@@ -112,7 +108,6 @@ class GoalDesignerController from WindowsBase
 			oItem.SetExpanded(True)	
 			oModel.MoveStepDown(nStepID)	
 		}
-		lStepChangedActionEnabled = False
 
 	func PrintStepsAction
 		oModel.PrintSteps()
@@ -123,7 +118,6 @@ class GoalDesignerController from WindowsBase
 		if nStepID = 1 {	# Avoid start point
 			return
 		}
-		lStepChangedActionEnabled = False
 		oView.win.SetEnabled(False)
 		oModel.CutStep(nStepID)
 		oView.oStepsTree.SaveStep(oItem)
@@ -145,7 +139,6 @@ class GoalDesignerController from WindowsBase
 		if oView.oStepsTree.isbuffernotempty() = false {
 			return
 		}
-		lStepChangedActionEnabled = False
 		oView.win.SetEnabled(False)
 		oParentItem  = oView.oStepsTree.currentItem()
 		nParentStepID = oView.oStepsTree.GetIDByObj(oParentItem)
@@ -181,10 +174,6 @@ class GoalDesignerController from WindowsBase
 		oView.oStepsTree.IgnoreStep(oItem,nIgnore)
 
 	func StepChangedAction
-		if lStepChangedActionEnabled = False {
-				lStepChangedActionEnabled = True
-				return
-		}
 		if lStepChangedActive { return }
 		lStepChangedActive = True
 		oItem  = oView.oStepsTree.currentItem()
