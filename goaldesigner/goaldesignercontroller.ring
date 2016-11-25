@@ -118,12 +118,12 @@ class GoalDesignerController from WindowsBase
 		oModel.PrintSteps()
 
 	func CutStepsAction
-		lStepChangedActionEnabled = False
 		oItem  = oView.oStepsTree.currentItem()
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
 		if nStepID = 1 {	# Avoid start point
 			return
 		}
+		lStepChangedActionEnabled = False
 		oView.win.SetEnabled(False)
 		oModel.CutStep(nStepID)
 		oView.oStepsTree.SaveStep(oItem)
@@ -136,15 +136,17 @@ class GoalDesignerController from WindowsBase
 		if nStepID = 1 {	# Avoid start point
 			return
 		}
+		oView.win.SetEnabled(False)
 		oModel.CopyStep(nStepID)
 		oView.oStepsTree.SaveStep(oItem)
+		oView.win.SetEnabled(True)
 
 	func PasteStepsAction
 		if oView.oStepsTree.isbuffernotempty() = false {
 			return
 		}
-		oView.win.SetEnabled(False)
 		lStepChangedActionEnabled = False
+		oView.win.SetEnabled(False)
 		oParentItem  = oView.oStepsTree.currentItem()
 		nParentStepID = oView.oStepsTree.GetIDByObj(oParentItem)
 		oModel.PasteStep(nParentStepID)
