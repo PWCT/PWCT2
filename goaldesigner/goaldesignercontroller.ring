@@ -147,19 +147,10 @@ class GoalDesignerController from WindowsBase
 		oView.oStepsTree.DecreaseFontSize()
 		oView.oStepCode.DecreaseFontSize()
 
-	func IgnoreStepAction
-		if not oView.checkIgnore.isEnabled() {
-			return
-		}
-		# We uses if statement because CheckState() output = 2 when True
-		if oView.checkIgnore.checkstate() { 
-			nIgnore = True
-		else
-			nIgnore = False
-		}
+	func IgnoreStepAction		
 		oItem  = oView.oStepsTree.currentItem()
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
-		oModel.IgnoreStep(nStepID,nIgnore)
+		nIgnore = oModel.IgnoreStep(nStepID)
 		oView.oStepsTree.IgnoreStep(oItem,nIgnore)
 
 	func StepChangedAction
@@ -167,19 +158,11 @@ class GoalDesignerController from WindowsBase
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
 		# Check if it's the start point
 			if nStepID = 1 {	# Avoid start point
-				# Set Ignore Checkbox status
-					SetCheckIgnoreStatus(0)
 				# Set the step code
 					oView.oStepCode.setText("")
 					oView.oStepCode.setEnabled(False)
 				return
 			}
-		# Change the Ignore CheckBox Status
-			if oModel.GetStepIgnoreStatus(nStepID) {
-				SetCheckIgnoreStatus(2)
-			else
-				SetCheckIgnoreStatus(0)
-			}	
 		# Change the Step Code Value
 			oView.oStepCode.setEnabled(True)
 			oView.oStepCode.setText(oModel.GetStepCode(nStepID))
@@ -195,7 +178,3 @@ class GoalDesignerController from WindowsBase
 	func SearchAction
 		Open_Window("FindStepController")
 
-	func SetCheckIgnoreStatus nStatus
-		oView.checkIgnore.setEnabled(False)
-		oView.checkIgnore.setCheckstate(nStatus)
-		oView.checkIgnore.setEnabled(True)

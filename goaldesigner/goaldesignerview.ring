@@ -90,9 +90,9 @@ class GoalDesignerView
 			setClickEvent($objname+".SearchAction()")			
 		}
 		setBtnImage(btnSearch,"images/search.png")
-		checkIgnore = new qCheckBox(win) {
-			setText("x")
-			setstateChangedEvent($objname+".IgnoreStepAction()")		
+		btnIgnore = new qPushButton(win) {
+			setText("Comment/UnComment")
+			setClickEvent($objname+".IgnoreStepAction()")		
 		}
 		layoutBtns = new qHBoxLayout()
 		{	
@@ -108,7 +108,7 @@ class GoalDesignerView
 			AddWidget(btnIncreaseSize)
 			AddWidget(btnDecreaseSize)
 			AddWidget(btnSearch)
-			AddWidget(checkIgnore)
+			AddWidget(btnIgnore)
 		}
 		layout1 = new qVBoxLayout()
 		{	

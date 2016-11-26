@@ -69,9 +69,9 @@ class GoalDesignerModel
 	/*
 		The next function  ignore step (Enable/Disable step)
 	*/
-	func IgnoreStep nStepID,nIgnore
+	func IgnoreStep nStepID
 		# The Active Status is the reverse of the Ignore Status
-			nActive = not nIgnore
+			nActive = not oStepsTreeModel.GetNodeContent(nStepID)[:active]
 		# Set Ignore status for the parent step 
 			oStepsTreeModel.GetNodeContent(nStepID)[:active]  = nActive
 		# Set Ignore status for children steps
@@ -79,6 +79,7 @@ class GoalDesignerModel
 			for nIndex in aChildren {
 				oStepsTreeModel.GetData()[nIndex][C_TREEMODEL_CONTENT][:active]  = nActive
 			}
+		return not nActive
 
 	/*
 		The next function save the step code
