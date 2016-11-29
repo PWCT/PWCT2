@@ -19,9 +19,9 @@ class FindStepController from WindowsBase
 	func ReplaceAllAction
 
 	func SearchKeyPressAction
-		if oView.oSearchFilter.getKeyCode() = Qt_Key_Escape			
+		if oView.oSearchFilter.getKeyCode() = Qt_Key_Escape {	
 			CloseAction()		
-		ok
+		}
 
 	func CloseAction
 		oView.Close()
