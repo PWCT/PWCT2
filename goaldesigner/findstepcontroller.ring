@@ -10,7 +10,7 @@ class FindStepController from WindowsBase
 	oView = new FindStepView
 
 	func Start
-		oView.Show()
+		oView.win.Show()
 
 	func FindValueAction
 

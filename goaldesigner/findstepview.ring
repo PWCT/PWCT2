@@ -7,22 +7,20 @@
 
 class FindStepView
 
-	win
-
 	cSearchText = "" 
 	cReplaceText = ""
 
-	func show
+	# Create the window and the Controls
 
 		win = new qWidget()
 		{
-			oLblFindWhat = new qLabel(this.win)
+			oLblFindWhat = new qLabel(win)
 			{
 				setText("Find What : ")
 			}
-			oSearchValue = new qlineedit(this.win)
+			oSearchValue = new qlineedit(win)
 			{
-				setText(this.cSearchText)
+				setText(cSearchText)
 				setReturnPressedEvent($objname+".FindValueAction()")
 			}
 			oLayout1 = new qHBoxLayout()
@@ -30,13 +28,13 @@ class FindStepView
 			addWidget(oLblFindWhat)
 				addWidget(oSearchValue)
 			}		
-			oLblReplaceWith = new qLabel(this.win)
+			oLblReplaceWith = new qLabel(win)
 			{
 				setText("Replace with ")
 			}
-			oReplaceValue = new qlineedit(this.win)
+			oReplaceValue = new qlineedit(win)
 			{
-				setText(this.cReplaceText)
+				setText(cReplaceText)
 			}
 	
 			oLayout2 = new qHBoxLayout()
@@ -44,7 +42,7 @@ class FindStepView
 				addWidget(oLblReplaceWith)
 				addWidget(oReplaceValue)
 			}
-			oSearchCase = new qCheckbox(this.win)
+			oSearchCase = new qCheckbox(win)
 			{
 				setText("Case Sensitive")
 			}
@@ -52,22 +50,22 @@ class FindStepView
 			{
 				addWidget(oSearchCase)			
 			}
-			oBtnFind = new qPushButton(this.win)
+			oBtnFind = new qPushButton(win)
 			{
 				setText("Find/Find Next")
 				setclickevent($objname+".FindValueAction()")
 			}
-			oBtnReplace = new qPushButton(this.win)
+			oBtnReplace = new qPushButton(win)
 			{
 				setText("Replace")
 				setclickevent($objname+".ReplaceAction()")
 			}
-			oBtnReplaceAll = new qPushButton(this.win)
+			oBtnReplaceAll = new qPushButton(win)
 			{
 				setText("Replace All")
 				setclickevent($objname+".ReplaceAllAction()")
 			}
-			oBtnClose = new qPushButton(this.win)
+			oBtnClose = new qPushButton(win)
 			{
 				setText("Close")
 				setclickevent($objname+".CloseAction()")
@@ -89,17 +87,16 @@ class FindStepView
 
 			setLayout(oLayout5)
 
-			setwinicon(this.win,"images/search.png")
+			setwinicon(win,"images/search.png")
 			setWindowTitle("Find/Replace")		
 			setStyleSheet("background-color:white;")
 			setFixedsize(550,160)
 			setwindowflags(Qt_CustomizeWindowHint | Qt_WindowTitleHint | Qt_WindowStaysOnTopHint) 
 
-			oSearchFilter = new qallevents(this.win)
+			oSearchFilter = new qallevents(win)
 			oSearchFilter.setKeyPressEvent($objname+".SearchKeyPressAction()")								
 			installeventfilter(oSearchFilter)
 
-			show()
 		}
 
 	func Close
