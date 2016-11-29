@@ -96,7 +96,7 @@ class FindStepView
 			setwindowflags(Qt_CustomizeWindowHint | Qt_WindowTitleHint | Qt_WindowStaysOnTopHint) 
 
 			oSearchFilter = new qallevents(this.win)
-			oSearchFilter.setKeyPressEvent("pSearchKeyPress()")								
+			oSearchFilter.setKeyPressEvent($objname+".SearchKeyPressAction()")								
 			installeventfilter(oSearchFilter)
 
 			show()

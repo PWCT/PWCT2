@@ -18,6 +18,8 @@ class FindStepController from WindowsBase
 
 	func ReplaceAllAction
 
+	func SearchKeyPressAction
+
 	func CloseAction
 		oView.Close()
 		Super.Close()
