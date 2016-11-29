@@ -23,7 +23,7 @@ class FindStepView
 			oSearchValue = new qlineedit(this.win)
 			{
 				setText(this.cSearchText)
-				setReturnPressedEvent("pFindValue()")
+				setReturnPressedEvent($objname+".FindValueAction()")
 			}
 			oLayout1 = new qHBoxLayout()
 			{
@@ -55,17 +55,17 @@ class FindStepView
 			oBtnFind = new qPushButton(this.win)
 			{
 				setText("Find/Find Next")
-				setclickevent("pFindValue()")
+				setclickevent($objname+".FindValueAction()")
 			}
 			oBtnReplace = new qPushButton(this.win)
 			{
 				setText("Replace")
-				setclickevent("pReplace()")
+				setclickevent($objname+".ReplaceAction()")
 			}
 			oBtnReplaceAll = new qPushButton(this.win)
 			{
 				setText("Replace All")
-				setclickevent("pReplaceAll()")
+				setclickevent($objname+".ReplaceAllAction()")
 			}
 			oBtnClose = new qPushButton(this.win)
 			{

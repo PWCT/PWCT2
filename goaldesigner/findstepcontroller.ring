@@ -12,6 +12,12 @@ class FindStepController from WindowsBase
 	func Start
 		oView.Show()
 
+	func FindValueAction
+
+	func ReplaceAction
+
+	func ReplaceAllAction
+
 	func CloseAction
 		oView.Close()
 		Super.Close()
