@@ -7,8 +7,10 @@
 
 class FindStepView
 
-	cSearchText = "" 
-	cReplaceText = ""
+	# The Search and Replace Text
+
+		cSearchText = "" 
+		cReplaceText = ""
 
 	# Create the window and the Controls
 
