@@ -94,6 +94,7 @@ class GoalDesignerView
 			setText("Comment/UnComment")
 			setClickEvent($objname+".IgnoreStepAction()")		
 		}
+		setBtnImage(btnIgnore,"images/comments.png")
 		layoutBtns = new qHBoxLayout()
 		{	
 			AddWidget(btnAddStep)
