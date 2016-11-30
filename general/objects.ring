@@ -35,6 +35,16 @@ func Open_Window cClass
 	eval(cCode)
 
 /*
+	The next function return the last window created
+*/
+
+func Last_Window
+	nSize = len($ObjectsList) 
+	if nSize > 0 {
+		return $ObjectsList[nSize][C_OBJECTSLIST_OBJECT]
+	}
+
+/*
 	The next function get the Window ID
 	Then search in the Objects List to find the Window Item Position
 */
