@@ -32,17 +32,14 @@ func Open_Window cClass
 			 "[C_OBJECTSLIST_OBJECT]"
 	cCode = $ObjName + " = new " + cClass + nl + 
 		  $ObjName + ".start()"
-	eval(cCode)
+	eval(cCode)	
 
 /*
 	The next function return the last window created
 */
 
 func Last_Window
-	nSize = len($ObjectsList) 
-	if nSize > 0 {
-		return $ObjectsList[nSize][C_OBJECTSLIST_OBJECT]
-	}
+	return $ObjectsList[len($ObjectsList)][C_OBJECTSLIST_OBJECT]
 
 /*
 	The next function get the Window ID

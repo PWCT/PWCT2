@@ -38,12 +38,12 @@ class FindStepView
 			{
 				setText(cReplaceText)
 			}
-	
 			oLayout2 = new qHBoxLayout()
 			{
 				addWidget(oLblReplaceWith)
 				addWidget(oReplaceValue)
 			}
+
 			oSearchCase = new qCheckbox(win)
 			{
 				setText("Case Sensitive")
@@ -52,6 +52,18 @@ class FindStepView
 			{
 				addWidget(oSearchCase)			
 			}
+
+			oLblResults = new qLabel(win)
+			{
+				setText("Results")
+			}
+			oListResult = new qlistwidget(win)
+			oLayout4 = new qHBoxLayout()
+			{
+				addWidget(oLblResults)
+				addWidget(oListResult)
+			}
+
 			oBtnFind = new qPushButton(win)
 			{
 				setText("Find/Find Next")
@@ -72,22 +84,23 @@ class FindStepView
 				setText("Close")
 				setclickevent($objname+".CloseAction()")
 			}
-			oLayout4 = new qHBoxLayout()
+			oLayout5 = new qHBoxLayout()
 			{
 				addWidget(oBtnFind)
 				addWidget(oBtnReplace)
 				addWidget(oBtnReplaceAll)
 				addWidget(oBtnClose)
 			}
-			oLayout5 = new qVBoxLayout()
+			oLayout6 = new qVBoxLayout()
 			{
 				AddLayout(oLayout1)
 				AddLayout(oLayout2)
 				AddLayout(oLayout3)
 				AddLayout(oLayout4)
+				AddLayout(oLayout5)
 			}
 
-			setLayout(oLayout5)
+			setLayout(oLayout6)
 
 			setwinicon(win,"images/search.png")
 			setWindowTitle("Find/Replace")		
