@@ -177,4 +177,4 @@ class GoalDesignerController from WindowsBase
 
 	func SearchAction
 		Open_Window("FindStepController")
-
+		Last_Window().setGoalDesignerObject(self)

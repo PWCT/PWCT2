@@ -9,10 +9,16 @@ class FindStepController from WindowsBase
 
 	oView = new FindStepView
 
+	oGDRef 	# Goal Designer Object Reference
+
 	func Start
 		oView.win.Show()
 
 	func FindValueAction
+		cFind = oView.oSearchValue.Text()	
+	
+	func setGoalDesignerObject oGD
+		oGDRef = Object2Pointer(oGD)  
 
 	func ReplaceAction
 
