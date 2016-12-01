@@ -57,7 +57,10 @@ class FindStepView
 			{
 				setText("Results")
 			}
-			oListResult = new qlistwidget(win)
+			oListResult = new qListWidget(win) {
+				SetMinimumWidth(600)
+				SetMinimumHeight(400)
+			}
 			oLayout4 = new qHBoxLayout()
 			{
 				addWidget(oLblResults)
@@ -102,10 +105,7 @@ class FindStepView
 
 			setLayout(oLayout6)
 
-			setwinicon(win,"images/search.png")
 			setWindowTitle("Find/Replace")		
-			setStyleSheet("background-color:white;")
-			setFixedsize(550,160)
 			setwindowflags(Qt_CustomizeWindowHint | Qt_WindowTitleHint | Qt_WindowStaysOnTopHint) 
 
 			oSearchFilter = new qallevents(win)
