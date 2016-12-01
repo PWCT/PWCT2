@@ -46,6 +46,10 @@ func Last_Window
 */
 
 func Method cMethod
+	cMethod = Trim(cMethod)
+	if right(cMethod,1) != ")" {
+		cMethod += "()"
+	}
 	return $objname+"."+cMethod
 
 /*

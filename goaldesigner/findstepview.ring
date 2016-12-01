@@ -23,7 +23,7 @@ class FindStepView
 			oSearchValue = new qlineedit(win)
 			{
 				setText(cSearchText)
-				setReturnPressedEvent(Method("FindValueAction()"))
+				setReturnPressedEvent(Method(:FindValueAction))
 			}
 			oLayout1 = new qHBoxLayout()
 			{
@@ -67,22 +67,22 @@ class FindStepView
 			oBtnFind = new qPushButton(win)
 			{
 				setText("Find/Find Next")
-				setclickevent(Method("FindValueAction()"))
+				setclickevent(Method(:FindValueAction))
 			}
 			oBtnReplace = new qPushButton(win)
 			{
 				setText("Replace")
-				setclickevent(Method("ReplaceAction()"))
+				setclickevent(Method(:ReplaceAction))
 			}
 			oBtnReplaceAll = new qPushButton(win)
 			{
 				setText("Replace All")
-				setclickevent(Method("ReplaceAllAction()"))
+				setclickevent(Method(:ReplaceAllAction))
 			}
 			oBtnClose = new qPushButton(win)
 			{
 				setText("Close")
-				setclickevent(Method("CloseAction()"))
+				setclickevent(Method(:CloseAction))
 			}
 			oLayout5 = new qHBoxLayout()
 			{
@@ -109,7 +109,7 @@ class FindStepView
 			setwindowflags(Qt_CustomizeWindowHint | Qt_WindowTitleHint | Qt_WindowStaysOnTopHint) 
 
 			oSearchFilter = new qallevents(win)
-			oSearchFilter.setKeyPressEvent(Method("SearchKeyPressAction()"))								
+			oSearchFilter.setKeyPressEvent(Method(:SearchKeyPressAction))								
 			installeventfilter(oSearchFilter)
 
 		}
