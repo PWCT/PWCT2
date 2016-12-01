@@ -29,6 +29,6 @@ if filename()  = sysargv[2] {
 func Test_GoalDesigner
 
 	new qApp {
-		Open_Window("GoalDesignerController")
+		Open_Window(:GoalDesignerController)
 		exec()
 	}

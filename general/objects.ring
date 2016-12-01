@@ -32,6 +32,7 @@ func Open_Window cClass
 			 "[C_OBJECTSLIST_OBJECT]"
 	cCode = $ObjName + " = new " + cClass + nl + 
 		  $ObjName + ".start()"
+	$ObjName = $ObjName + "."
 	eval(cCode)	
 
 /*

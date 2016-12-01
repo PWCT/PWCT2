@@ -18,7 +18,7 @@ class GoalDesignerView
 		}
 		oPageCode = new qWidget() {
 			oStepCode = new StepCodeView(oPageCode)  {
-				setTextChangedEvent($objname+".StepCodeChangedAction()")
+				setTextChangedEvent($objname+"StepCodeChangedAction()")
 			}
 			oPageCodeLayout= new qVBoxLayout() {
 				AddWidget(oStepCode)
@@ -28,71 +28,71 @@ class GoalDesignerView
 		oTab = new qtabwidget(win) {
 			InsertTab(0,oPageDesign,"Design")
 			InsertTab(1,oPageCode,"Step Code")
-			setCurrentChangedEvent($objname+".StepChangedAction()") 			
+			setCurrentChangedEvent($objname+"StepChangedAction()") 			
 		}
 		btnAddStep = new qPushButton(win) {
 			setText("New Step")
-			setClickEvent($objname+".AddStepAction()")			
+			setClickEvent($objname+"AddStepAction()")			
 		}
 		setBtnImage(btnAddStep,"images/new.png")
 		btnEditStep = new qPushButton(win) {
 			setText("Edit Step")
-			setClickEvent($objname+".EditStepAction()")			
+			setClickEvent($objname+"EditStepAction()")			
 		}		
 		setBtnImage(btnEditStep,"images/edit.png")
 		btnDeleteStep = new qPushButton(win) {
 			setText("Delete Step")
-			setClickEvent($objname+".DeleteStepAction()")			
+			setClickEvent($objname+"DeleteStepAction()")			
 		}
 		setBtnImage(btnDeleteStep,"images/delete.png")
 		btnMoveStepUp = new qPushButton(win) {
 			setText("Move Up")
-			setClickEvent($objname+".MoveStepUpAction()")			
+			setClickEvent($objname+"MoveStepUpAction()")			
 		}
 		setBtnImage(btnMoveStepUp,"images/up.png")
 		btnMoveStepDown = new qPushButton(win) {
 			setText("Move Down")
-			setClickEvent($objname+".MoveStepDownAction()")			
+			setClickEvent($objname+"MoveStepDownAction()")			
 		}
 		setBtnImage(btnMoveStepDown,"images/down.png")
 		btnPrintSteps = new qPushButton(win) {
 			setText("Print Steps")
-			setClickEvent($objname+".PrintStepsAction()")			
+			setClickEvent($objname+"PrintStepsAction()")			
 		}
 		setBtnImage(btnPrintSteps,"images/print.png")
 		btnCutSteps = new qPushButton(win) {
 			setText("Cut")
-			setClickEvent($objname+".CutStepsAction()")			
+			setClickEvent($objname+"CutStepsAction()")			
 		}
 		setBtnImage(btnCutSteps,"images/cut.png")
 		btnCopySteps = new qPushButton(win) {
 			setText("Copy")
-			setClickEvent($objname+".CopyStepsAction()")			
+			setClickEvent($objname+"CopyStepsAction()")			
 		}
 		setBtnImage(btnCopySteps,"images/copy.png")
 		btnPasteSteps = new qPushButton(win) {
 			setText("Paste")
-			setClickEvent($objname+".PasteStepsAction()")			
+			setClickEvent($objname+"PasteStepsAction()")			
 		}
 		setBtnImage(btnPasteSteps,"images/paste.png")
 		btnIncreaseSize = new qPushButton(win) {
 			setText("Increase Size")
-			setClickEvent($objname+".IncreaseSizeAction()")			
+			setClickEvent($objname+"IncreaseSizeAction()")			
 		}
 		setBtnImage(btnIncreaseSize,"images/zoomin.png")
 		btnDecreaseSize = new qPushButton(win) {
 			setText("Decrease Size")
-			setClickEvent($objname+".DecreaseSizeAction()")			
+			setClickEvent($objname+"DecreaseSizeAction()")			
 		}
 		setBtnImage(btnDecreaseSize,"images/zoomout.png")
 		btnSearch = new qPushButton(win) {
 			setText("Search")
-			setClickEvent($objname+".SearchAction()")			
+			setClickEvent($objname+"SearchAction()")			
 		}
 		setBtnImage(btnSearch,"images/search.png")
 		btnIgnore = new qPushButton(win) {
 			setText("Comment/UnComment")
-			setClickEvent($objname+".IgnoreStepAction()")		
+			setClickEvent($objname+"IgnoreStepAction()")		
 		}
 		setBtnImage(btnIgnore,"images/comments.png")
 		layoutBtns = new qHBoxLayout()

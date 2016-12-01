@@ -176,5 +176,5 @@ class GoalDesignerController from WindowsBase
 		oModel.SaveStepCode(nStepID,oView.oStepCode.ToPlainText())
 
 	func SearchAction
-		Open_Window("FindStepController")
+		Open_Window(:FindStepController)
 		Last_Window().setGoalDesignerObject(self)
