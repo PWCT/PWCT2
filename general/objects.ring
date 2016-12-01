@@ -32,7 +32,6 @@ func Open_Window cClass
 			 "[C_OBJECTSLIST_OBJECT]"
 	cCode = $ObjName + " = new " + cClass + nl + 
 		  $ObjName + ".start()"
-	$ObjName = $ObjName + "."
 	eval(cCode)	
 
 /*
@@ -41,6 +40,13 @@ func Open_Window cClass
 
 func Last_Window
 	return $ObjectsList[len($ObjectsList)][C_OBJECTSLIST_OBJECT]
+
+/*
+	The next function for using in GUI controls events
+*/
+
+func Method cMethod
+	return $objname+"."+cMethod
 
 /*
 	The next function get the Window ID
