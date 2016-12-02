@@ -16,6 +16,14 @@ class FindStepController from WindowsBase
 
 	func FindValueAction
 		cFind = oView.oSearchValue.Text()	
+		aTree = GD().oModel.oStepsTreeModel.GetData()
+		oView.oListResult.Clear()
+		for item in aTree {
+			aContent = item[C_TREEMODEL_CONTENT]
+			if substr(aContent[:name],cFind) > 0 {				
+				oView.oListResult.AddItem(aContent[:name])
+			}
+		}
 	
 	func setGoalDesignerObject oGD
 		oGDRef = Object2Pointer(oGD)  
