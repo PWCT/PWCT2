@@ -11,16 +11,20 @@ class FindStepController from WindowsBase
 
 	oGDRef 	# Goal Designer Object Reference
 
+	aStepIDResult = [] # Array contains the IDs of the search result
+
 	func Start
 		oView.win.Show()
 
 	func FindValueAction
 		cFind = oView.oSearchValue.Text()	
 		aTree = GD().oModel.oStepsTreeModel.GetData()
+		aStepIDResult = []
 		oView.oListResult.Clear()
 		for item in aTree {
 			aContent = item[C_TREEMODEL_CONTENT]
 			if substr(aContent[:name],cFind) > 0 {				
+				aStepIDResult + item[C_TREEMODEL_NODEID]
 				oView.oListResult.AddItem(aContent[:name])
 			}
 		}
