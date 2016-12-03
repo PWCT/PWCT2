@@ -9,7 +9,7 @@ class FindStepController from WindowsBase
 
 	oView = new FindStepView
 
-	oGDRef 	# Goal Designer Object Reference
+	oGDID		# Goal Designer Object ID 
 
 	aStepIDResult = [] # Array contains the IDs of the search result
 
@@ -42,14 +42,28 @@ class FindStepController from WindowsBase
 		oItem = GD().oView.oStepsTree.GetObjByID(nStepID)
 		GD().oView.oStepsTree.SetCurrentItem(oItem,0)
 
-
 	func setGoalDesignerObject oGD
-		oGDRef = Object2Pointer(oGD)  
+		oGDID = oGD.ObjectID()
 
 	func GD
-		return Pointer2Object(oGDRef)
+		return GetObjectByID(oGDID)
 
 	func ReplaceAction
+		if len(aStepIDResult) = 0 { return }	
+		nIndex = oView.oListResult.CurrentRow() + 1
+		nStepID = aStepIDResult[nIndex]	
+		oItem = GD().oView.oStepsTree.GetObjByID(nStepID)
+		cFind = oView.oSearchValue.Text()	
+		cReplace = oView.oReplaceValue.Text()	
+		cText = GD().oModel.GetStepName(nStepID)
+		lState = oView.oSearchCase.CheckState()
+		if lState = false {
+			cText = substr(cText,cFind,cReplace,true) 
+		else
+			cText = substr(cText,cFind,cReplace) 
+		}
+		GD().oView.oStepsTree.editstep(oItem,cText,GD().oModel.GetStepIgnoreStatus(nStepID))
+		GD().oModel.EditStepName(nStepID,cText)		
 
 	func ReplaceAllAction
 

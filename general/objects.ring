@@ -73,3 +73,9 @@ class WindowsBase
 	func Close
 		nPos = Get_Window_Pos(nID)
 		del($ObjectsList,nPos)
+
+	func ObjectID
+		return nID
+
+	func GetObjectByID nID
+		return $ObjectsList[nID][C_OBJECTSLIST_OBJECT]
