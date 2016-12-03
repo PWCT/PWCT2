@@ -36,7 +36,11 @@ class FindStepController from WindowsBase
 		}
 
 	func ItemSelectedAction
-		
+		nIndex = oView.oListResult.CurrentRow() + 1
+		nStepID = aStepIDResult[nIndex]
+		oItem = GD().oView.oStepsTree.GetObjByID(nStepID)
+		GD().oView.oStepsTree.SetCurrentItem(oItem,0)
+
 
 	func setGoalDesignerObject oGD
 		oGDRef = Object2Pointer(oGD)  
