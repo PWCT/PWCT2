@@ -60,7 +60,7 @@ class FindStepView
 			oListResult = new qListWidget(win) {
 				SetMinimumWidth(600)
 				SetMinimumHeight(400)
-				setitemDoubleClickedEvent( Method(:ItemSelectedAction) )
+				setCurrentItemChangedEvent( Method(:ItemSelectedAction) )
 			}
 			oLayout4 = new qHBoxLayout()
 			{

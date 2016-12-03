@@ -36,6 +36,7 @@ class FindStepController from WindowsBase
 		}
 
 	func ItemSelectedAction
+		if len(aStepIDResult) = 0 { return }		
 		nIndex = oView.oListResult.CurrentRow() + 1
 		nStepID = aStepIDResult[nIndex]
 		oItem = GD().oView.oStepsTree.GetObjByID(nStepID)
