@@ -69,7 +69,7 @@ class FindStepView
 
 			oBtnFind = new qPushButton(win)
 			{
-				setText("Find/Find Next")
+				setText("Search")
 				setclickevent(Method(:FindValueAction))
 			}
 			oBtnReplace = new qPushButton(win)
