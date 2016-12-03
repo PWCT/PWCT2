@@ -21,9 +21,15 @@ class FindStepController from WindowsBase
 		aTree = GD().oModel.oStepsTreeModel.GetData()
 		aStepIDResult = []
 		oView.oListResult.Clear()
+		lState = oView.oSearchCase.CheckState()
 		for item in aTree {
 			aContent = item[C_TREEMODEL_CONTENT]
-			if substr(aContent[:name],cFind) > 0 {				
+			cStepName = aContent[:name]
+			if lState = False {	# Don't Match the case
+				cStepName = lower(cStepName)
+				cFind = lower(cFind)
+			}
+			if substr(cStepName,cFind) > 0 {				
 				aStepIDResult + item[C_TREEMODEL_NODEID]
 				oView.oListResult.AddItem(aContent[:name])
 			}
