@@ -34,7 +34,10 @@ class FindStepController from WindowsBase
 				oView.oListResult.AddItem(aContent[:name])
 			}
 		}
-	
+
+	func ItemSelectedAction
+		
+
 	func setGoalDesignerObject oGD
 		oGDRef = Object2Pointer(oGD)  
 
