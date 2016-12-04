@@ -60,6 +60,7 @@ class FindStepController from WindowsBase
 	func ReplaceStep nStepID
 		oItem = GD().oView.oStepsTree.GetObjByID(nStepID)
 		cFind = oView.oSearchValue.Text()	
+		if cFind = "" { return }
 		cReplace = oView.oReplaceValue.Text()	
 		cText = GD().oModel.GetStepName(nStepID)
 		lState = oView.oSearchCase.CheckState()
