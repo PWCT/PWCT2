@@ -34,6 +34,9 @@ class FindStepController from WindowsBase
 				oView.oListResult.AddItem(aContent[:name])
 			}
 		}
+		if len(aStepIDResult) > 0 {
+			oView.oListResult.SetCurrentRow(0,2)
+		}
 
 	func ItemSelectedAction
 		if len(aStepIDResult) = 0 { return }		
@@ -52,6 +55,9 @@ class FindStepController from WindowsBase
 		if len(aStepIDResult) = 0 { return }	
 		nIndex = oView.oListResult.CurrentRow() + 1
 		nStepID = aStepIDResult[nIndex]	
+		ReplaceStep(nStepID)
+
+	func ReplaceStep nStepID
 		oItem = GD().oView.oStepsTree.GetObjByID(nStepID)
 		cFind = oView.oSearchValue.Text()	
 		cReplace = oView.oReplaceValue.Text()	
@@ -63,9 +69,14 @@ class FindStepController from WindowsBase
 			cText = substr(cText,cFind,cReplace) 
 		}
 		GD().oView.oStepsTree.editstep(oItem,cText,GD().oModel.GetStepIgnoreStatus(nStepID))
-		GD().oModel.EditStepName(nStepID,cText)		
+		GD().oModel.EditStepName(nStepID,cText)
+		oView.oListResult.Item(find(aStepIDResult,nStepID)-1).SetText(cText)
 
 	func ReplaceAllAction
+		if len(aStepIDResult) = 0 { return }	
+		for nStepID in aStepIDResult {
+			ReplaceStep(nStepID)
+		}
 
 	func SearchKeyPressAction
 		if oView.oSearchFilter.getKeyCode() = Qt_Key_Escape {	
