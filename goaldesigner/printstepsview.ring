@@ -47,7 +47,7 @@ class PrintStepsView
 			}			
 
 			SetLayout(Layout2)
-			resize(500,400)
+			resize(600,500)
 			setWindowTitle("Print Steps")		
 			setwindowflags(Qt_CustomizeWindowHint | Qt_WindowTitleHint | Qt_WindowStaysOnTopHint) 
 
