@@ -21,6 +21,8 @@ load "goaldesigner/goaldesignermodel.ring"
 load "goaldesigner/treemodel.ring"
 load "goaldesigner/findstepcontroller.ring"
 load "goaldesigner/findstepview.ring"
+load "goaldesigner/printstepscontroller.ring"
+load "goaldesigner/printstepsview.ring"
 
 if filename()  = sysargv[2] {
 	Test_GoalDesigner()
