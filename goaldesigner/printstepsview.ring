@@ -20,9 +20,9 @@ class PrintStepsView
 				SetLayout(oPageDesignLayout)
 			}
 			oPageCode = new qWidget() {
-				oStepCode = new qTextEdit(oPageCode)  
+				oStepsCode = new qTextEdit(oPageCode)  
 				oPageCodeLayout= new qVBoxLayout() {
-					AddWidget(oStepCode)
+					AddWidget(oStepsCode)
 				}
 				SetLayout(oPageCodeLayout)
 			}		
@@ -47,7 +47,7 @@ class PrintStepsView
 			}			
 
 			SetLayout(Layout2)
-
+			resize(500,400)
 			setWindowTitle("Print Steps")		
 			setwindowflags(Qt_CustomizeWindowHint | Qt_WindowTitleHint | Qt_WindowStaysOnTopHint) 
 

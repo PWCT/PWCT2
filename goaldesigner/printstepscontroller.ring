@@ -16,6 +16,7 @@ class PrintStepsController from WindowsBase
 
 	func ShowData
 		oView.oStepsTree.setText(GD().oModel.StepsTreeText())
+		oView.oStepsCode.setText(GD().oModel.StepsTreeCode())
 
 	func setGoalDesignerObject oGD
 		oGDID = oGD.ObjectID()

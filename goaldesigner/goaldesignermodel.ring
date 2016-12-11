@@ -53,6 +53,13 @@ class GoalDesignerModel
 		}
 		return cText
 
+	func StepsTreeCode
+		cText = ""
+		for x in oStepsTreeModel.getdata() {
+			cText += x[C_TREEMODEL_CONTENT][:code] + nl
+		}
+		return cText
+
 	func DeleteStep nStepID
 		oStepsTreeModel.DeleteNode(nStepID)
 
