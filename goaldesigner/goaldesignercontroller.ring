@@ -108,6 +108,7 @@ class GoalDesignerController from WindowsBase
 		#oModel.PrintSteps()
 		Open_Window(:PrintStepsController)
 		Last_Window().setGoalDesignerObject(self)
+		Last_Window().ShowData()
 
 	func CutStepsAction
 		oItem  = oView.oStepsTree.currentItem()
