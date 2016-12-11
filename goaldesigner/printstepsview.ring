@@ -32,11 +32,21 @@ class PrintStepsView
 				InsertTab(1,oPageCode,"Source Code")
 			}
 
-			layout1 = new qVBoxLayout()
-			{	
+			layout1 = new qHBoxLayout() {
+				btnClose = new qPushButton(win) {
+					setText("Close")
+					setClickEvent(Method(:CloseAction))
+				}
+				AddWidget(btnClose)
+			}
+
+			layout2 = new qVBoxLayout()
+			{					
 				AddWidget(oTab)
+				AddLayout(Layout1)
 			}			
-			SetLayout(Layout1)
+
+			SetLayout(Layout2)
 
 			setWindowTitle("Print Steps")		
 			setwindowflags(Qt_CustomizeWindowHint | Qt_WindowTitleHint | Qt_WindowStaysOnTopHint) 
