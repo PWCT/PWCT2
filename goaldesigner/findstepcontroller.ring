@@ -5,16 +5,11 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-class FindStepController from WindowsBase
+class FindStepController from GoalDesignerSubWindowsParent
 
 	oView = new FindStepView
 
-	oGDID		# Goal Designer Object ID 
-
 	aStepIDResult = [] # Array contains the IDs of the search result
-
-	func Start
-		oView.win.Show()
 
 	func FindValueAction
 		cFind = oView.oSearchValue.Text()	
@@ -44,12 +39,6 @@ class FindStepController from WindowsBase
 		nStepID = aStepIDResult[nIndex]
 		oItem = GD().oView.oStepsTree.GetObjByID(nStepID)
 		GD().oView.oStepsTree.SetCurrentItem(oItem,0)
-
-	func setGoalDesignerObject oGD
-		oGDID = oGD.ObjectID()
-
-	func GD
-		return GetObjectByID(oGDID)
 
 	func ReplaceAction
 		if len(aStepIDResult) = 0 { return }	
@@ -83,7 +72,3 @@ class FindStepController from WindowsBase
 		if oView.oSearchFilter.getKeyCode() = Qt_Key_Escape {	
 			CloseAction()		
 		}
-
-	func CloseAction
-		oView.Close()
-		Super.Close()

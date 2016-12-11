@@ -5,25 +5,10 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-class PrintStepsController from WindowsBase
+class PrintStepsController from GoalDesignerSubWindowsParent
 
 	oView = new PrintStepsView
-
-	oGDID		# Goal Designer Object ID 
-
-	func Start
-		oView.win.Show()
 
 	func ShowData
 		oView.oStepsTree.setText(GD().oModel.StepsTreeText())
 		oView.oStepsCode.setText(GD().oModel.StepsTreeCode())
-
-	func setGoalDesignerObject oGD
-		oGDID = oGD.ObjectID()
-
-	func GD
-		return GetObjectByID(oGDID)
-
-	func CloseAction
-		oView.Close()
-		Super.Close()
