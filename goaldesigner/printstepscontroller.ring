@@ -12,3 +12,19 @@ class PrintStepsController from GoalDesignerSubWindowsParent
 	func ShowData
 		oView.oStepsTree.setText(GD().oModel.StepsTreeText())
 		oView.oStepsCode.setText(GD().oModel.StepsTreeCode())
+
+	func PrintStepsTreeAction
+		printer1 = new qPrinter(0) {
+			setoutputformat(1)	# 1 = pdf
+			setoutputfilename("StepsTree.pdf")
+		}	
+		oView.oStepsTree.print(printer1)		
+		system("start StepsTree.pdf")
+
+	func PrintSourceCodeAction
+		printer1 = new qPrinter(0) {
+			setoutputformat(1)	# 1 = pdf
+			setoutputfilename("StepsCode.pdf")
+		}
+		oView.oStepsCode.print(printer1)
+		system("start StepsCode.pdf")

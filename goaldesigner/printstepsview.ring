@@ -33,11 +33,21 @@ class PrintStepsView
 			}
 
 			layout1 = new qHBoxLayout() {
+				btnPrintStepsTree = new qPushButton(win) {
+					setText("Print Steps Tree")
+					setClickEvent(Method(:PrintStepsTreeAction))
+				}
+				btnPrintSourceCode = new qPushButton(win) {
+					setText("Print Source Code")
+					setClickEvent(Method(:PrintSourceCodeAction))
+				}
 				btnClose = new qPushButton(win) {
 					setText("Close")
 					setClickEvent(Method(:CloseAction))
 				}
-				AddWidget(btnClose)
+				AddWidget(btnPrintStepsTree)
+				AddWidget(btnPrintSourceCode)
+				AddWidget(btnClose)		
 			}
 
 			layout2 = new qVBoxLayout()
