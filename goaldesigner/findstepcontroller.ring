@@ -13,7 +13,7 @@ class FindStepController from GoalDesignerSubWindowsParent
 
 	func FindValueAction
 		cFind = oView.oSearchValue.Text()	
-		aTree = GD().oModel.oStepsTreeModel.GetData()
+		aTree = Parent().oModel.oStepsTreeModel.GetData()
 		aStepIDResult = []
 		oView.oListResult.Clear()
 		lState = oView.oSearchCase.CheckState()
@@ -37,8 +37,8 @@ class FindStepController from GoalDesignerSubWindowsParent
 		if len(aStepIDResult) = 0 { return }		
 		nIndex = oView.oListResult.CurrentRow() + 1
 		nStepID = aStepIDResult[nIndex]
-		oItem = GD().oView.oStepsTree.GetObjByID(nStepID)
-		GD().oView.oStepsTree.SetCurrentItem(oItem,0)
+		oItem = Parent().oView.oStepsTree.GetObjByID(nStepID)
+		Parent().oView.oStepsTree.SetCurrentItem(oItem,0)
 
 	func ReplaceAction
 		if len(aStepIDResult) = 0 { return }	
@@ -47,19 +47,19 @@ class FindStepController from GoalDesignerSubWindowsParent
 		ReplaceStep(nStepID)
 
 	func ReplaceStep nStepID
-		oItem = GD().oView.oStepsTree.GetObjByID(nStepID)
+		oItem = Parent().oView.oStepsTree.GetObjByID(nStepID)
 		cFind = oView.oSearchValue.Text()	
 		if cFind = "" { return }
 		cReplace = oView.oReplaceValue.Text()	
-		cText = GD().oModel.GetStepName(nStepID)
+		cText = Parent().oModel.GetStepName(nStepID)
 		lState = oView.oSearchCase.CheckState()
 		if lState = false {
 			cText = substr(cText,cFind,cReplace,true) 
 		else
 			cText = substr(cText,cFind,cReplace) 
 		}
-		GD().oView.oStepsTree.editstep(oItem,cText,GD().oModel.GetStepIgnoreStatus(nStepID))
-		GD().oModel.EditStepName(nStepID,cText)
+		Parent().oView.oStepsTree.editstep(oItem,cText,Parent().oModel.GetStepIgnoreStatus(nStepID))
+		Parent().oModel.EditStepName(nStepID,cText)
 		oView.oListResult.Item(find(aStepIDResult,nStepID)-1).SetText(cText)
 
 	func ReplaceAllAction

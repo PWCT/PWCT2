@@ -106,7 +106,7 @@ class GoalDesignerController from WindowsBase
 
 	func PrintStepsAction
 		Open_Window(:PrintStepsController)
-		Last_Window().setGoalDesignerObject(self)
+		Last_Window().setParentObject(self)
 		Last_Window().ShowData()
 
 	func CutStepsAction
@@ -179,4 +179,4 @@ class GoalDesignerController from WindowsBase
 
 	func SearchAction
 		Open_Window(:FindStepController)
-		Last_Window().setGoalDesignerObject(self)
+		Last_Window().setParentObject(self)

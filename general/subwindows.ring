@@ -7,16 +7,16 @@
 
 class GoalDesignerSubWindowsParent from WindowsBase
 
-	oGDID		# Goal Designer Object ID 
+	oParentID		# Goal Designer Object ID 
 
 	func Start
 		oView.win.Show()
 
-	func setGoalDesignerObject oGD
-		oGDID = oGD.ObjectID()
+	func setParentObject oGD
+		oParentID = oGD.ObjectID()
 
-	func GD
-		return GetObjectByID(oGDID)
+	func Parent
+		return GetObjectByID(oParentID)
 
 	func CloseAction
 		oView.Close()

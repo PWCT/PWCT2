@@ -10,8 +10,8 @@ class PrintStepsController from GoalDesignerSubWindowsParent
 	oView = new PrintStepsView
 
 	func ShowData
-		oView.oStepsTree.setText(GD().oModel.StepsTreeText())
-		oView.oStepsCode.setText(GD().oModel.StepsTreeCode())
+		oView.oStepsTree.setText(Parent().oModel.StepsTreeText())
+		oView.oStepsCode.setText(Parent().oModel.StepsTreeCode())
 
 	func PrintStepsTreeAction
 		printer1 = new qPrinter(0) {
