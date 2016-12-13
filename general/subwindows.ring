@@ -7,16 +7,16 @@
 
 class SubWindowsParent from WindowsBase
 
-	oParentID		# Goal Designer Object ID 
+	nParentID		# Goal Designer Object ID 
 
 	func Start
 		oView.win.Show()
 
-	func setParentObject oGD
-		oParentID = oGD.ObjectID()
+	func setParentObject oParent
+		nParentID = oParent.ObjectID()
 
 	func Parent
-		return GetObjectByID(oParentID)
+		return GetObjectByID(nParentID)
 
 	func CloseAction
 		oView.Close()
