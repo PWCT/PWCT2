@@ -5,7 +5,7 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-class FindStepController from GoalDesignerSubWindowsParent
+class FindStepController from SubWindowsParent
 
 	oView = new FindStepView
 

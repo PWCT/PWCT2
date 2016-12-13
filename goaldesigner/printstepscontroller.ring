@@ -5,7 +5,7 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-class PrintStepsController from GoalDesignerSubWindowsParent
+class PrintStepsController from SubWindowsParent
 
 	oView = new PrintStepsView
 

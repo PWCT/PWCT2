@@ -5,7 +5,7 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-class GoalDesignerSubWindowsParent from WindowsBase
+class SubWindowsParent from WindowsBase
 
 	oParentID		# Goal Designer Object ID 
 
