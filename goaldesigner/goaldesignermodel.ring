@@ -21,9 +21,6 @@ class GoalDesignerModel
 		return nID
 
 	func EditStepName nStepID,cStepName
-		//aContent = oStepsTreeModel.GetNodeContent(nStepID)
-		//aContent[:name] = cStepName
-		//oStepsTreeModel.SetNodeContent(nStepID,aContent)
 		oStepsTreeModel.GetNodeContent(nStepID)[:name] = cStepName
 
 	func GetStepName nStepID
