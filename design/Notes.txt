@@ -66,6 +66,15 @@ because we have the raise() method
 
 Solution : std_raise()
 
+(8) using the next code lead to crash
 
+	func AddFirstStep
+		#nID =  oInteractionModel.AddUserInteraction() 
+		AddStep(0,[:name = T_GD_FirstStep ,
+			      :active = True , 
+			      :code = "" , 
+			      :interactionid = 5  } ])
+
+note the mistake of putting } in the list
 
 

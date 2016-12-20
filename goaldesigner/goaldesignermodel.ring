@@ -8,13 +8,13 @@
 class GoalDesignerModel
 
 	oStepsTreeModel = new TreeModel
+	oInteractionModel = new InteractionModel
 
 	# Add the first step
-	AddStep(0,[:name = T_GD_FirstStep ,
-		      :active = True , 
-		      :code = "" , 
-		      :date = date() ,
-		      :time = time()])
+		AddStep(0,[:name = T_GD_FirstStep ,
+			      :active = True , 
+			      :code = "" , 
+			      :interactionid = oInteractionModel.AddUserInteraction()  ])
 
 	func AddStep nParent,Content
 		nID =  oStepsTreeModel.AddNode(nParent,Content)

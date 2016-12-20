@@ -22,3 +22,8 @@
 # Node Label Image
 	C_LABELIMAGE_NODEICON	= "images/nodeicon.png"
 	C_LABELIMAGE_IGNORESTEP	= "images/ignorestep.png"
+
+# Interaction Model
+	C_INTERACTION_USERSTEP		= 1
+	C_INTERACTION_GENERTATEDSTEP 	= 2
+

@@ -20,8 +20,7 @@ class GoalDesignerController from WindowsBase
 				:name = cStepName,
 				:active = True , 
 				:code = "" , 
-			 	:date = date() ,
-				:time = time()
+			 	:interactionid = oModel.oInteractionModel.AddUserInteraction()
 			]
 		)
 		oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)
