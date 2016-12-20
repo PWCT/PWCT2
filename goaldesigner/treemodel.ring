@@ -245,3 +245,9 @@ class TreeModel
 	func GetBuffer
 		return aBuffer
 
+	/*
+		The next method set the buffer list
+	*/
+	func SetBuffer aNewBuffer
+		aBuffer = aNewBuffer
+		
