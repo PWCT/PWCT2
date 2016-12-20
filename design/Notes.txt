@@ -1,0 +1,71 @@
+/*
+**	Project : Programming Without Coding Technology (PWCT) Version 2.0
+**	File Purpose :  Notes Document
+**	Date : 2016.11.25
+**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
+*/
+
+(1) We need to use a global variable for each new window !
+	So we can use it for controls events
+
+(2) When we write code inside classes that use direct or indirect
+inheritance from QWidget we can't use the find() function
+because we have the find() method
+
+Solution : std_find() , std_find2() and std_find3()
+
+(3) IsMainSourceFile() doesn't work because filename() will return the stdlib.ring every time !
+
+(4) Trying to run Ring Notepad , I discovered that a hang process happened because of Web View !
+
+(5) To find icons
+	http://findicons.com/search/transparent-delete-icon
+
+(6) Error in Cut Steps contains children then paste from the start point
+To produce the error
+1 - create step "one" - copy paste
+one
+  one 
+    one 
+      one
+Then
+one
+  one 
+    one 
+      one
+one
+  one 
+    one 
+      one
+
+After that click cut cut cut and so on until the start point
+then click paste
+
+the error happens in this code
+	func SubStepsList aList,oParentStep
+		aList + oParentStep
+		for x=1 to oParentStep.childcount() {
+			oItem = oParentStep.child(x-1)	# here
+			SubStepsList(aList,oItem)
+		}
+
+where a return is done and the event code execution is terminated
+without any error messages !
+
+when we comment the next code, we don't have this problem
+	setCurrentItemChangedEvent($objname+".StepChangedAction()") 		
+
+I think the problem is running an event during the execution of another event !
+	This lead to a situation where the second event cancel the first event !
+
+We avoided setCurrentItemChangedEvent() to avoid many problems and complexity.
+
+(7) When we write code inside classes that use direct or indirect
+inheritance from QWidget we can't use the raise() function
+because we have the raise() method
+
+Solution : std_raise()
+
+
+
+

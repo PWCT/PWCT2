@@ -1,0 +1,16 @@
+/*
+**	Project : Programming Without Coding Technology (PWCT) Version 2.0
+**	File Purpose :  Bugs document
+**	Date : 2016.12.21
+**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
+*/
+
+(1)  We created over 6 thouands steps, then using the search window
+after selecting an item in the search result list we get the next error
+Line 285 GetObjByID() - Can't find the object!
+In raise In function std_raise() in file stdfunctions.ring
+called from line 43  In method getobjbyid() in file goaldesigner/treecontrol.ring
+called from line 2  In method itemselectedaction() in file goaldesigner/findstepcontroller.ring
+called from line 1  In qapp_exec In method exec() in file ring_qt.ring
+called from line 38  In function test_goaldesigner() in file B:/pwct2/goaldesigner.ring
+called from line 31  in file B:/pwct2/goaldesigner.ring

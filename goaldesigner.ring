@@ -7,9 +7,11 @@
 
 load "stdlib.ring"
 load "guilib.ring"
+
 load "general/globals.ring"
 load "general/objects.ring"
 load "general/subwindows.ring"
+
 load "translation/english.ring"
 
 load "goaldesigner/goaldesignercontroller.ring"
