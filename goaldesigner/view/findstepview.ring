@@ -18,7 +18,7 @@ class FindStepView
 		{
 			oLblFindWhat = new qLabel(win)
 			{
-				setText("Find What : ")
+				setText(T_GD_FS_FINDWHAT)
 			}
 			oSearchValue = new qlineedit(win)
 			{
@@ -32,7 +32,7 @@ class FindStepView
 			}		
 			oLblReplaceWith = new qLabel(win)
 			{
-				setText("Replace with ")
+				setText(T_GD_FS_REPLACEWITH)
 			}
 			oReplaceValue = new qlineedit(win)
 			{
@@ -46,7 +46,7 @@ class FindStepView
 
 			oSearchCase = new qCheckbox(win)
 			{
-				setText("Case Sensitive")
+				setText(T_GD_FS_CASESENSITIVE)
 			}
 			oLayout3 = new qHBoxLayout()
 			{
@@ -55,7 +55,7 @@ class FindStepView
 
 			oLblResults = new qLabel(win)
 			{
-				setText("Results")
+				setText(T_GD_FS_RESULTS)
 			}
 			oListResult = new qListWidget(win) {
 				SetMinimumWidth(600)
@@ -70,22 +70,22 @@ class FindStepView
 
 			oBtnFind = new qPushButton(win)
 			{
-				setText("Search")
+				setText(T_GD_FS_SEARCH)
 				setclickevent(Method(:FindValueAction))
 			}
 			oBtnReplace = new qPushButton(win)
 			{
-				setText("Replace")
+				setText(T_GD_FS_REPLACE)
 				setclickevent(Method(:ReplaceAction))
 			}
 			oBtnReplaceAll = new qPushButton(win)
 			{
-				setText("Replace All")
+				setText(T_GD_FS_REPLACEALL)
 				setclickevent(Method(:ReplaceAllAction))
 			}
 			oBtnClose = new qPushButton(win)
 			{
-				setText("Close")
+				setText(T_GD_FS_CLOSE)
 				setclickevent(Method(:CloseAction))
 			}
 			oLayout5 = new qHBoxLayout()
