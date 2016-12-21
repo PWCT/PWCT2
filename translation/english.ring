@@ -18,6 +18,7 @@
 	T_GD_MOVEUP = "Move Up"					# Button
 	T_GD_MOVEDOWN = "Move Down"				# Button
 	T_GD_PRINTSTEPS = "Print Steps"				# Button
+	T_GD_CUT = "Cut"						# Button
 	T_GD_COPY = "Copy"						# Button
 	T_GD_PASTE = "Paste"					# Button
 	T_GD_INCERASESIZE = "Increase Size"			# Button
