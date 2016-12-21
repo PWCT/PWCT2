@@ -9,7 +9,22 @@
 
 # Goal Designer Window
 
-	T_GD_WindowTitle = "Goal Designer"
+	T_GD_GOALDESIGNER = "Goal Designer"			# The Window Title
+	T_GD_DESIGN = "Design"					# Tab Page
+	T_GD_STEPCODE = "Step Code"				# Tab Page
+	T_GD_NEWSTEP = "New Step"				# Button	
+	T_GD_EDITSTEP = "Edit Step"				# Button
+	T_GD_DELETESTEP = "Delete Step"				# Button
+	T_GD_MOVEUP = "Move Up"					# Button
+	T_GD_MOVEDOWN = "Move Down"				# Button
+	T_GD_PRINTSTEPS = "Print Steps"				# Button
+	T_GD_COPY = "Copy"						# Button
+	T_GD_PASTE = "Paste"					# Button
+	T_GD_INCERASESIZE = "Increase Size"			# Button
+	T_GD_DECREASESIZE = "Decrease Size"			# Button
+	T_GD_SEARCH = "Search"					# Button
+	T_GD_COMMENTUNCOMMENT = "Comment/UnComment"  # Button
+
 
 	# Steps Tree
 	T_GD_Firststep  = "Start Point (Not Step)"

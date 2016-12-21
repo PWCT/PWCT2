@@ -8,7 +8,7 @@
 class GoalDesignerView
 
 	win = new qWidget() {
-		setWindowTitle(T_GD_WindowTitle) # "Goal Designer"
+		setWindowTitle(T_GD_GOALDESIGNER)
 		oPageDesign = new qWidget() {
 			oStepsTree = new StepsTreeView(oPageDesign)
 			oPageDesignLayout = new qVBoxLayout() {
@@ -26,72 +26,72 @@ class GoalDesignerView
 			SetLayout(oPageCodeLayout)
 		}		
 		oTab = new qtabwidget(win) {
-			InsertTab(0,oPageDesign,"Design")
-			InsertTab(1,oPageCode,"Step Code")
+			InsertTab(0,oPageDesign,T_GD_DESIGN)
+			InsertTab(1,oPageCode,T_GD_STEPCODE)
 			setCurrentChangedEvent(Method(:StepChangedAction)) 			
 		}
 		btnAddStep = new qPushButton(win) {
-			setText("New Step")
+			setText(T_GD_NEWSTEP)
 			setClickEvent(Method(:AddStepAction))			
 		}
 		setBtnImage(btnAddStep,"images/new.png")
 		btnEditStep = new qPushButton(win) {
-			setText("Edit Step")
+			setText(T_GD_EDITSTEP)
 			setClickEvent(Method(:EditStepAction))			
 		}		
 		setBtnImage(btnEditStep,"images/edit.png")
 		btnDeleteStep = new qPushButton(win) {
-			setText("Delete Step")
+			setText(T_GD_DELETESTEP)
 			setClickEvent(Method(:DeleteStepAction))			
 		}
 		setBtnImage(btnDeleteStep,"images/delete.png")
 		btnMoveStepUp = new qPushButton(win) {
-			setText("Move Up")
+			setText(T_GD_MOVEUP)
 			setClickEvent(Method(:MoveStepUpAction))		
 		}
 		setBtnImage(btnMoveStepUp,"images/up.png")
 		btnMoveStepDown = new qPushButton(win) {
-			setText("Move Down")
+			setText(T_GD_MOVEDOWN)
 			setClickEvent(Method(:MoveStepDownAction))			
 		}
 		setBtnImage(btnMoveStepDown,"images/down.png")
 		btnPrintSteps = new qPushButton(win) {
-			setText("Print Steps")
+			setText(T_GD_PRINTSTEPS)
 			setClickEvent(Method(:PrintStepsAction))			
 		}
 		setBtnImage(btnPrintSteps,"images/print.png")
 		btnCutSteps = new qPushButton(win) {
-			setText("Cut")
+			setText(T_GD_CUT)
 			setClickEvent(Method(:CutStepsAction))			
 		}
 		setBtnImage(btnCutSteps,"images/cut.png")
 		btnCopySteps = new qPushButton(win) {
-			setText("Copy")
+			setText(T_GD_COPY)
 			setClickEvent(Method(:CopyStepsAction))			
 		}
 		setBtnImage(btnCopySteps,"images/copy.png")
 		btnPasteSteps = new qPushButton(win) {
-			setText("Paste")
+			setText(T_GD_PASTE)
 			setClickEvent(Method(:PasteStepsAction))			
 		}
 		setBtnImage(btnPasteSteps,"images/paste.png")
 		btnIncreaseSize = new qPushButton(win) {
-			setText("Increase Size")
+			setText(T_GD_INCERASESIZE)
 			setClickEvent(Method(:IncreaseSizeAction))			
 		}
 		setBtnImage(btnIncreaseSize,"images/zoomin.png")
 		btnDecreaseSize = new qPushButton(win) {
-			setText("Decrease Size")
+			setText(T_GD_DECREASESIZE)
 			setClickEvent(Method(:DecreaseSizeAction))			
 		}
 		setBtnImage(btnDecreaseSize,"images/zoomout.png")
 		btnSearch = new qPushButton(win) {
-			setText("Search")
+			setText(T_GD_SEARCH)
 			setClickEvent(Method(:SearchAction))			
 		}
 		setBtnImage(btnSearch,"images/search.png")
 		btnIgnore = new qPushButton(win) {
-			setText("Comment/UnComment")
+			setText(T_GD_COMMENTUNCOMMENT)
 			setClickEvent(Method(:IgnoreStepAction))	
 		}
 		setBtnImage(btnIgnore,"images/comments.png")
