@@ -28,21 +28,21 @@ class PrintStepsView
 			}		
 
 			oTab = new qtabwidget(win) {
-				InsertTab(0,oPageSteps,"Steps Tree")
-				InsertTab(1,oPageCode,"Source Code")
+				InsertTab(0,oPageSteps,T_GD_PS_STEPSTREE)
+				InsertTab(1,oPageCode,T_GD_PS_SOURCECODE)
 			}
 
 			layout1 = new qHBoxLayout() {
 				btnPrintStepsTree = new qPushButton(win) {
-					setText("Print Steps Tree")
+					setText(T_GD_PS_PRINTSTEPSTREE)
 					setClickEvent(Method(:PrintStepsTreeAction))
 				}
 				btnPrintSourceCode = new qPushButton(win) {
-					setText("Print Source Code")
+					setText(T_GD_PS_PRINTSOURCECODE)
 					setClickEvent(Method(:PrintSourceCodeAction))
 				}
 				btnClose = new qPushButton(win) {
-					setText("Close")
+					setText(T_GD_PS_CLOSE)
 					setClickEvent(Method(:CloseAction))
 				}
 				AddWidget(btnPrintStepsTree)
@@ -58,7 +58,7 @@ class PrintStepsView
 
 			SetLayout(Layout2)
 			resize(600,500)
-			setWindowTitle("Print Steps")		
+			setWindowTitle(T_GD_PS_PRINTSTEP)		
 			setwindowflags(Qt_CustomizeWindowHint | Qt_WindowTitleHint | Qt_WindowStaysOnTopHint) 
 
 		}

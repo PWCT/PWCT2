@@ -16,6 +16,12 @@
 	T_GD_StepsTree = "Steps Tree"
 
 # Print Steps Window
+	T_GD_PS_PRINTSTEP = "Print Steps"				# The Window Title
+	T_GD_PS_STEPSTREE = "Steps Tree"			# Tab Page Header
+	T_GD_PS_SOURCECODE = "Source Code"			# Tab Page Header
+	T_GD_PS_PRINTSTEPSTREE = "Print Steps Tree"		# Button
+	T_GD_PS_PRINTSOURCECODE = "Print Source Code"	# Button
+	T_GD_PS_CLOSE = "Close"					# Button
 
 # Find Step Window
 
