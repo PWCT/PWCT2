@@ -5,15 +5,19 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
+# Load Ring Libraries
 load "stdlib.ring"
 load "guilib.ring"
 
+# Load General Libraries
 load "general/globals/globals.ring"
 load "general/objectslib/objects.ring"
 load "general/objectslib/subwindows.ring"
 
+# Load the Translation File
 load "translation/english.ring"
 
+# Load the Goal Designer Files
 load "goaldesigner/controller/goaldesignercontroller.ring"
 load "goaldesigner/view/goaldesignerview.ring"
 load "goaldesigner/view/stepcodeview.ring"
