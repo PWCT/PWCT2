@@ -9,7 +9,7 @@ class SubWindowsParent from WindowsBase
 
 	nParentID		# Goal Designer Object ID 
 
-	func Start
+	func Start		
 		oView.win.Show()
 
 	func setParentObject oParent

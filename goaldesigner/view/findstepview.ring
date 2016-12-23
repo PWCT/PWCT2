@@ -16,6 +16,7 @@ class FindStepView
 
 		win = new qWidget()
 		{
+			setLayoutDirection(T_LAYOUTDIRECTION)
 			oLblFindWhat = new qLabel(win)
 			{
 				setText(T_GD_FS_FINDWHAT)

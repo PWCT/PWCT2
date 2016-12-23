@@ -6,6 +6,8 @@
 ** 	Author : Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
+# Layout Direction
+	T_LAYOUTDIRECTION = 0		# Left to Right
 
 # Goal Designer Window
 

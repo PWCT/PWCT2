@@ -11,7 +11,7 @@ class PrintStepsView
 
 		win = new qWidget()
 		{
-
+			setLayoutDirection(T_LAYOUTDIRECTION)
 			oPageSteps = new qWidget() {
 				oStepsTree = new qTextEdit(oPageSteps)
 				oPageDesignLayout = new qVBoxLayout() {

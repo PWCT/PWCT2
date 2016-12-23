@@ -8,6 +8,7 @@
 class GoalDesignerView
 
 	win = new qWidget() {
+		setLayoutDirection(T_LAYOUTDIRECTION)
 		setWindowTitle(T_GD_GOALDESIGNER)
 		oPageDesign = new qWidget() {
 			oStepsTree = new StepsTreeView(oPageDesign)
