@@ -41,4 +41,14 @@ class InteractionModel
 			aList + aTempList
 		# Return the new interaction ID 
 			return nID
-		
+
+	/*
+		The next method is used to delete an Interaction Record
+		The input is the Interaction ID
+	*/
+	func DeleteInteraction nStepInteractionID
+		# Find the interaction record
+			nPos = find(aList,1,nStepInteractionID)
+		# Delete the record
+			Del(aList,nPos)
+
