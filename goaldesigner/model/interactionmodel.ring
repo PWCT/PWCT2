@@ -17,9 +17,12 @@ class InteractionModel
 		The user step is used for organization (Comment) or (Written Code by hand)
 	*/
 	func AddUserInteraction
-		nID++		# Increment the ID Counter
-		aList + [nID,C_INTERACTION_USERSTEP,NULL,Date(),Time()]
-		return nID
+		# Increment the ID Counter
+			nID++		
+		# Add the new interaction record
+			aList + [nID,C_INTERACTION_USERSTEP,NULL,Date(),Time()]
+		# Return the new Interaction ID
+			return nID
 
 	/*
 		The next method is used to update the Interaction ID of a step after paste
@@ -37,5 +40,5 @@ class InteractionModel
 		# Add the new interaction record
 			aList + aTempList
 		# Return the new interaction ID 
-		return nID
+			return nID
 		
