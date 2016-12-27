@@ -240,6 +240,27 @@ class TreeModel
 			}
 
 	/*
+		The next method update the Interaction IDs of the buffer (Used for Paste)
+		We will keep a list of the updated IDs to be used when the steps
+		Share the same interaction ID 
+		
+	*/
+	func UpdateInteractionIDs oInteractionModel
+		aUpdatedIDs  = []
+		for x = 1 to len(aBuffer) {
+			nID = aBuffer[x][C_TREEMODEL_CONTENT][:interactionid] 
+			nPos = find(aUpdatedIDs,nID,1)
+			if nPos = 0 {
+				nNewID = oInteractionModel.NewInteractionIDAfterPaste(nID)
+				aBuffer[x][C_TREEMODEL_CONTENT][:interactionid] = nNewID
+				aUpdatedIDs + [nID,nNewID] 
+			else
+				nNewID = aUpdatedIDs[nPos][2]
+				aBuffer[x][C_TREEMODEL_CONTENT][:interactionid] = nNewID
+			}
+		}
+
+	/*
 		The next method return the tree list in the buffer that are used for Cut,Copy and Paste
 	*/
 	func GetBuffer

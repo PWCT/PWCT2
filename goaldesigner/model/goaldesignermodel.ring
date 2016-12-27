@@ -73,6 +73,7 @@ class GoalDesignerModel
 		oStepsTreeModel.CopyNode(nStepID)
 
 	func PasteStep nParentStepID
+		oStepsTreeModel.UpdateInteractionIDs(oInteractionModel)
 		oStepsTreeModel.PasteNode(nParentStepID)
 
 	func GetBuffer

@@ -31,7 +31,11 @@ class InteractionModel
 	*/
 	func NewInteractionIDAfterPaste nStepInteractionID
 		# Find the interaction record
-			nPos = find(aList,1,nStepInteractionID)
+			nPos = find(aList,nStepInteractionID,1)
+		# Check the interaction record
+			if nPos = 0 {
+				return nStepInteractionID
+			}
 		# Get the interaction record
 			aTempList = aList[nPos]
 		# Update the interaction ID
@@ -41,14 +45,14 @@ class InteractionModel
 			aList + aTempList
 		# Return the new interaction ID 
 			return nID
-
+	
 	/*
 		The next method is used to delete an Interaction Record
 		The input is the Interaction ID
 	*/
 	func DeleteInteraction nStepInteractionID
 		# Find the interaction record
-			nPos = find(aList,1,nStepInteractionID)
+			nPos = find(aList,nStepInteractionID,1)
 		# Delete the record
 			if nPos != 0 {		# Check that we have the record
 				Del(aList,nPos)

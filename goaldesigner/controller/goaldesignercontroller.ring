@@ -135,7 +135,7 @@ class GoalDesignerController from WindowsBase
 		nParentStepID = oView.oStepsTree.GetIDByObj(oParentItem)
 		oModel.PasteStep(nParentStepID)
 		oNewParentItem = oView.oStepsTree.PasteStep(oParentItem)
-		# Update the Object|StepID List
+		# Update the [Object,StepID] List
 			aStepsObjectsList = oView.oStepsTree.StepsList(oNewParentItem)
 			aStepsDataList = oModel.GetBuffer()
 			oView.oStepsTree.AddNodesFromBuffer(aStepsObjectsList,aStepsDataList)
