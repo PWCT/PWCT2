@@ -50,7 +50,7 @@ class InteractionModel
 		# Find the interaction record
 			nPos = find(aList,1,nStepInteractionID)
 		# Delete the record
-			if nPos != 0 {
+			if nPos != 0 {		# Check that we have the record
 				Del(aList,nPos)
 			}
 
