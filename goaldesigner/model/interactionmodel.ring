@@ -27,10 +27,15 @@ class InteractionModel
 		But with a different ID
 	*/
 	func NewInteractionIDAfterPaste nStepInteractionID
-		nPos = find(aList,1,nStepInteractionID)
-		aTempList = aList[nPos]
-		nID++		# Increment the ID Counter
-		aTempList[1] = nID
-		aList + aTempList
+		# Find the interaction record
+			nPos = find(aList,1,nStepInteractionID)
+		# Get the interaction record
+			aTempList = aList[nPos]
+		# Update the interaction ID
+			nID++		# Increment the ID Counter
+			aTempList[1] = nID
+		# Add the new interaction record
+			aList + aTempList
+		# Return the new interaction ID 
 		return nID
 		
