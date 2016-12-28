@@ -8,9 +8,17 @@
 class TimeMachineView from QSlider
 
 	nInteractionPoints = 0
+	nActiveInteraction = 0
 
 	func init win
 		super.init(win)
 		resize(400,30)
 		settickinterval(100)
+		setMinimum(0)
+		setMaximum(nInteractionPoints)
 		setorientation(Qt_Horizontal)
+
+	func setInteractionPoints nCount
+		# we uses -1 to avoid counting the start point interaction
+			nInteractionPoints = nCount-1
+		setMaximum(nInteractionPoints)

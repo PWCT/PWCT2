@@ -58,3 +58,8 @@ class InteractionModel
 				Del(aList,nPos)
 			}
 
+	/*
+		The next method return the number of interaction
+	*/
+	func InteractionsCount
+		return len(aList)

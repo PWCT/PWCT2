@@ -24,6 +24,11 @@ class GoalDesignerController from WindowsBase
 			]
 		)
 		oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)
+		UpdateTheTimeMachine()
+
+	func UpdateTheTimeMachine
+		nInteractionsCount = oModel.oInteractionModel.InteractionsCount()
+		oView.sliderTimeMachine.setInteractionPoints(nInteractionsCount)
 
 	func AddStepAction
 		oInput = New QInputDialog(oView.win)
@@ -139,6 +144,8 @@ class GoalDesignerController from WindowsBase
 			aStepsObjectsList = oView.oStepsTree.StepsList(oNewParentItem)
 			aStepsDataList = oModel.GetBuffer()
 			oView.oStepsTree.AddNodesFromBuffer(aStepsObjectsList,aStepsDataList)
+		# Update the Time Machine
+			UpdateTheTimeMachine()
 
 	func IncreaseSizeAction
 		oView.oStepsTree.IncreaseFontSize()
