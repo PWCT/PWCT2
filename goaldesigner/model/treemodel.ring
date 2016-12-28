@@ -86,6 +86,24 @@ class TreeModel
 		return aChildren
 
 	/*
+		The next method return a list of the node children
+		The list contains each node ID
+	*/
+	func ChildrenIDs nNodeID
+		nPos = find(aList,nNodeID,C_TREEMODEL_NODEID)
+		nSize = len(aList)
+		aChildren = []
+		aParents = []
+		aParents + nNodeID
+		for x = nPos + 1 to nSize {
+			if find(aParents,aList[x][C_TREEMODEL_PARENTID]) {
+				aChildren + aList[x][C_TREEMODEL_NODEID]
+				aParents + aList[x][C_TREEMODEL_NODEID]
+			}
+		}
+		return aChildren
+
+	/*
 		Remove children from the Tree
 		The input is a list of each node index
 	*/
