@@ -112,7 +112,9 @@ class GoalDesignerView
 			AddWidget(btnSearch)
 			AddWidget(btnIgnore)
 		}
-		sliderTimeMachine = new TimeMachineView(win)
+		sliderTimeMachine = new TimeMachineView(win) {
+			setValueChangedEvent(Method(:ChangeTimeMachinePointAction))
+		}
 		layoutTimeMachine = new qHBoxLayout()
 		{	
 			AddWidget(sliderTimeMachine)

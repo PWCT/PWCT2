@@ -17,6 +17,8 @@ class TimeMachineView from QSlider
 		setMinimum(0)
 		setMaximum(nInteractionPoints)
 		setorientation(Qt_Horizontal)
+		# we return self to be able to use braces {} after calling init()
+			return self
 
 	func setInteractionPoints nCount
 		# we uses -1 to avoid counting the start point interaction

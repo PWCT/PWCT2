@@ -186,3 +186,6 @@ class GoalDesignerController from WindowsBase
 	func SearchAction
 		Open_Window(:FindStepController)
 		Last_Window().setParentObject(self)
+
+	func ChangeTimeMachinePointAction
+
