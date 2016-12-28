@@ -71,6 +71,8 @@ class GoalDesignerController from WindowsBase
 		}
 		oItem.parent().takechild(oItem.parent().indexofchild(oItem))
 		oModel.DeleteStep(nStepID)
+		# Update the Time Machine
+			UpdateTheTimeMachine()
 
 	func MoveStepUpAction
 		oItem  = oView.oStepsTree.currentItem()
