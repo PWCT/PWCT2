@@ -112,9 +112,15 @@ class GoalDesignerView
 			AddWidget(btnSearch)
 			AddWidget(btnIgnore)
 		}
+		sliderTimeMachine = new TimeMachineView(win)
+		layoutTimeMachine = new qHBoxLayout()
+		{	
+			AddWidget(sliderTimeMachine)
+		}
 		layout1 = new qVBoxLayout()
 		{	
 			AddLayout(layoutBtns)
+			AddLayout(layoutTimeMachine)
 			AddWidget(oTab)
 		}		
 		SetLayout(Layout1)
