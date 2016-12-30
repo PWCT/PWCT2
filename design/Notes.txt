@@ -77,4 +77,8 @@ Solution : std_raise()
 
 note the mistake of putting } in the list
 
-
+(9) Working with QSlider or QDial works fine with
+	setValueChangedEvent()
+	But setActionTrigerredEvent() lead to more events that doesn't present
+	the expected behaviour of limited events (moving in the limited range only)
+	

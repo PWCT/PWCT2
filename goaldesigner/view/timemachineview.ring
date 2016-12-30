@@ -23,7 +23,9 @@ class TimeMachineView from QSlider
 		# we uses -1 to avoid counting the start point interaction
 			nInteractionPoints = nCount-1
 		setMaximum(nInteractionPoints)
+		setEnabled(False)		# To disable value changed event
 		setValue(nInteractionPoints)
+		setEnabled(True)		# To enable value changed event 
 		nActiveInteraction = nInteractionPoints  
 
 	func GetActiveInteraction

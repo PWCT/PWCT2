@@ -192,7 +192,7 @@ class GoalDesignerController from WindowsBase
 	func ChangeTimeMachinePointAction
 		nOldTMValue = oView.sliderTimeMachine.GetActiveInteraction()
 		nTMValue = oView.sliderTimeMachine.value()
-		//puts ( " old value = " + nOldTMValue + " current value = " + nTMValue)
+		// puts( " old value = " + nOldTMValue + " current value = " + nTMValue)
 		if nOldTMValue = nTMValue {
 			//puts("No Action")
 			return
@@ -210,7 +210,7 @@ class GoalDesignerController from WindowsBase
 		nMaxIID = max(nTMValue,nOldTMValue)
 		aList = oModel.GetStepsInTimeRange(nMinIID,nMaxIID)
 		for item in aList {
-			see item[3][:name] + nl
+			// puts( item[3][:name] )
 			oItem = oView.oStepsTree.GetObjByID(item[1])
 			if direction = C_TMDIRECTION_BACKWARD {
 				oView.oStepsTree.itemwidget(oItem,0).Hide()
