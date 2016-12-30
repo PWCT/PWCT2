@@ -139,3 +139,17 @@ class GoalDesignerModel
 	func SaveStepCode nStepID,cCode
 		oStepsTreeModel.GetNodeContent(nStepID)[:code]  = cCode
 
+	/*
+		The next method get steps in interaction range (min,max) value
+	*/
+	func GetStepsInTimeRange nIIDMin,nIIDMax
+		aList = oStepsTreeModel.GetData()
+		for x = len(aList) to 1 step -1 {
+			item = aList[x]
+			nIID =  item[C_TREEMODEL_CONTENT][:interactionid]
+			# x = 1 avoid start point
+			if (nIID <= nIIDMin ) or (nIID > nIIDMax) or (x=1) {
+				del(aList,x)
+			}
+		}
+		return aList

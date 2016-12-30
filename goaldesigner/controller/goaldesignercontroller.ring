@@ -190,4 +190,31 @@ class GoalDesignerController from WindowsBase
 		Last_Window().setParentObject(self)
 
 	func ChangeTimeMachinePointAction
-
+		nOldTMValue = oView.sliderTimeMachine.GetActiveInteraction()
+		nTMValue = oView.sliderTimeMachine.value()
+		//puts ( " old value = " + nOldTMValue + " current value = " + nTMValue)
+		if nOldTMValue = nTMValue {
+			//puts("No Action")
+			return
+		}
+		if nTMValue > nOldTMValue { 
+			Direction = C_TMDIRECTION_FORWARD	# Add Steps
+		else
+			Direction = C_TMDIRECTION_BACKWARD	# Remove Steps
+		}
+		oView.sliderTimeMachine.SetActiveInteraction(nTMValue)
+		# We uses + 1 to skip the start point
+			nTMValue = oModel.oInteractionModel.GetInteractionID(nTMValue + 1)
+			nOldTMValue = oModel.oInteractionModel.GetInteractionID(nOldTMValue + 1)
+		nMinIID = min(nTMValue,nOldTMValue)
+		nMaxIID = max(nTMValue,nOldTMValue)
+		aList = oModel.GetStepsInTimeRange(nMinIID,nMaxIID)
+		for item in aList {
+			see item[3][:name] + nl
+			oItem = oView.oStepsTree.GetObjByID(item[1])
+			if direction = C_TMDIRECTION_BACKWARD {
+				oView.oStepsTree.itemwidget(oItem,0).Hide()
+			else
+				oView.oStepsTree.itemwidget(oItem,0).Show()
+			}
+		}

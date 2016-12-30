@@ -63,3 +63,17 @@ class InteractionModel
 	*/
 	func InteractionsCount
 		return len(aList)
+
+	/*
+		The next method return the interaction record 
+	*/
+	func GetInteraction nIndex
+		return aList[nIndex] 
+	
+	/*
+		The next method return the interaction ID
+	*/
+	func GetInteractionID nIndex
+		if nIndex = 0 { return 0 }
+		if nIndex > len(aList) {  nIndex = len(aList) }
+		return aList[nIndex][C_INTERACTIONRECORD_ID]
