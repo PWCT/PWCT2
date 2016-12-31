@@ -27,3 +27,12 @@ called from line 44  In function test_goaldesigner() in file B:/pwct2/goaldesign
 called from line 37  in file B:/pwct2/goaldesigner.ring
 
 (3) During some tests, I discovered bad steps order in the search window
+
+(4) Fixed : Trying paste many times lead to runtime error
+The problem is related to triggering this event during another event execution
+	setValueChangedEvent(Method(:ChangeTimeMachinePointAction))
+Solution: Save the event, remove it, change value then set it again.
+		cEvent = getValueChangedEvent()
+		setValueChangedEvent("")
+		setValue(nInteractionPoints)
+		setValueChangedEvent(cEvent)
