@@ -47,14 +47,18 @@ class GoalDesignerModel
 	func StepsTreeText
 		cText = ""
 		for x in oStepsTreeModel.getdata() {
-			cText += x[C_TREEMODEL_CONTENT][:name] + nl
+			if x[C_TREEMODEL_CONTENT][:visible] {
+				cText += x[C_TREEMODEL_CONTENT][:name] + nl
+			}
 		}
 		return cText
 
 	func StepsTreeCode
 		cText = ""
 		for x in oStepsTreeModel.getdata() {
-			cText += x[C_TREEMODEL_CONTENT][:code] + nl
+			if x[C_TREEMODEL_CONTENT][:visible] {
+				cText += x[C_TREEMODEL_CONTENT][:code] + nl
+			}
 		}
 		return cText
 
