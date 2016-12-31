@@ -19,6 +19,7 @@ class FindStepController from SubWindowsParent
 		lState = oView.oSearchCase.CheckState()
 		for item in aTree {
 			aContent = item[C_TREEMODEL_CONTENT]
+			if not aContent[:visible] { loop }
 			cStepName = aContent[:name]
 			if lState = False {	# Don't Match the case
 				cStepName = lower(cStepName)
