@@ -215,10 +215,14 @@ class GoalDesignerController from WindowsBase
 		for x = len(aList) to 1 step -1 {
 			item = aList[x]
 			// puts( item[3][:name] )
-			oItem = oView.oStepsTree.GetObjByID(item[1])
 			if direction = C_TMDIRECTION_BACKWARD {
-				oView.oStepsTree.itemwidget(oItem,0).Hide()
+				oItem = oView.oStepsTree.GetObjByID(item[1])
+				oView.oStepsTree.DelByObj(oItem)
+				oItem.parent().takechild(oItem.parent().indexofchild(oItem))
 			else
-				oView.oStepsTree.itemwidget(oItem,0).Show()
+				nStepID = item[1]
+				nParentID = item[2]
+				cStepName = item[3][:name]
+				oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)
 			}
 		}

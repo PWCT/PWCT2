@@ -51,6 +51,20 @@ class TreeControl from qTreeWidget
 		}
 		return aTree[nPos][C_TREECONTROL_ID]
 
+	func DelByID id
+		nPos = std_find2(aTree,id,C_TREECONTROL_ID)
+		if nPos = 0 {
+			std_raise("GetObjByID() - Can't find the object!")
+		}
+		del(aTree,nPos)
+
+	func DelByObj oObj
+		nPos = std_find2(aTree,oObj.pObject,C_TREECONTROL_OBJECTPOINTER)
+		if nPos = 0 {
+			std_raise("GetIDByObj() - Can't find the ID!")
+		}
+		del(aTree,nPos)
+
 	func AddToTree nID,oObject
 		aTree + [nID,oObject,oObject.pObject]
 
