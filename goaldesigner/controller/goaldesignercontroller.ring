@@ -20,7 +20,8 @@ class GoalDesignerController from WindowsBase
 				:name = cStepName,
 				:active = True , 
 				:code = "" , 
-			 	:interactionid = oModel.oInteractionModel.AddUserInteraction()
+			 	:interactionid = oModel.oInteractionModel.AddUserInteraction() ,
+				:visible = True
 			]
 		)
 		oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)
@@ -194,13 +195,15 @@ class GoalDesignerController from WindowsBase
 		nTMValue = oView.sliderTimeMachine.value()
 		// puts( " old value = " + nOldTMValue + " current value = " + nTMValue)
 		if nOldTMValue = nTMValue {
-			//puts("No Action")
+			// puts("No Action")
 			return
 		}
 		if nTMValue > nOldTMValue { 
 			Direction = C_TMDIRECTION_FORWARD	# Add Steps
+			lVisible = True
 		else
 			Direction = C_TMDIRECTION_BACKWARD	# Remove Steps
+			lVisible = False
 		}
 		oView.sliderTimeMachine.SetActiveInteraction(nTMValue)
 		# We uses + 1 to skip the start point
@@ -208,8 +211,9 @@ class GoalDesignerController from WindowsBase
 			nOldTMValue = oModel.oInteractionModel.GetInteractionID(nOldTMValue + 1)
 		nMinIID = min(nTMValue,nOldTMValue)
 		nMaxIID = max(nTMValue,nOldTMValue)
-		aList = oModel.GetStepsInTimeRange(nMinIID,nMaxIID)
-		for item in aList {
+		aList = oModel.GetStepsInTimeRange(nMinIID,nMaxIID,lVisible)
+		for x = len(aList) to 1 step -1 {
+			item = aList[x]
 			// puts( item[3][:name] )
 			oItem = oView.oStepsTree.GetObjByID(item[1])
 			if direction = C_TMDIRECTION_BACKWARD {

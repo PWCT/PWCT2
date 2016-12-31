@@ -14,7 +14,8 @@ class GoalDesignerModel
 		AddStep(0,[:name = T_GD_FirstStep ,
 			      :active = True , 
 			      :code = "" , 
-			      :interactionid = oInteractionModel.AddUserInteraction()  ])
+			      :interactionid = oInteractionModel.AddUserInteraction() ,
+			      :visible = True ])
 
 	func AddStep nParent,Content
 		nID =  oStepsTreeModel.AddNode(nParent,Content)
@@ -141,8 +142,9 @@ class GoalDesignerModel
 
 	/*
 		The next method get steps in interaction range (min,max) value
+		And set the visible attribute (True/False) using lVisible Parameter
 	*/
-	func GetStepsInTimeRange nIIDMin,nIIDMax
+	func GetStepsInTimeRange nIIDMin,nIIDMax,lVisible
 		aList = oStepsTreeModel.GetData()
 		for x = len(aList) to 1 step -1 {
 			item = aList[x]
@@ -150,6 +152,8 @@ class GoalDesignerModel
 			# x = 1 avoid start point
 			if (nIID <= nIIDMin ) or (nIID > nIIDMax) or (x=1) {
 				del(aList,x)
+			else 
+				oStepsTreeModel.aList[x][C_TREEMODEL_CONTENT][:visible] = lVisible
 			}
 		}
 		return aList
