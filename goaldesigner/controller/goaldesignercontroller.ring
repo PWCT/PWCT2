@@ -70,6 +70,7 @@ class GoalDesignerController from WindowsBase
 		if nStepID = 1 {	# Avoid start point
 			return
 		}
+		oView.oStepsTree.DelByObj(oItem)	# Remove it from the [oItem|ID] List
 		oItem.parent().takechild(oItem.parent().indexofchild(oItem))
 		oModel.DeleteStep(nStepID)
 		# Update the Time Machine
