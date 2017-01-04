@@ -81,4 +81,8 @@ note the mistake of putting } in the list
 	setValueChangedEvent()
 	But setActionTrigerredEvent() lead to more events that doesn't present
 	the expected behaviour of limited events (moving in the limited range only)
-	
+
+(10) using {} after init() method requires that the init() method must
+contains
+		return self
+

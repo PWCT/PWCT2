@@ -38,8 +38,14 @@ class FindStepController from SubWindowsParent
 		if len(aStepIDResult) = 0 { return }		
 		nIndex = oView.oListResult.CurrentRow() + 1
 		nStepID = aStepIDResult[nIndex]
-		oItem = Parent().oView.oStepsTree.GetObjByID(nStepID)
-		Parent().oView.oStepsTree.SetCurrentItem(oItem,0)
+		Try {
+			oItem = Parent().oView.oStepsTree.GetObjByID(nStepID)
+			Parent().oView.oStepsTree.SetCurrentItem(oItem,0)			
+		Catch	
+			# The Item is not found (Maybe because of Time Position Change)		
+			FindValueAction()		
+		}
+
 
 	func ReplaceAction
 		if len(aStepIDResult) = 0 { return }	
