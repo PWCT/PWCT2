@@ -28,11 +28,26 @@ class GoalDesignerController from WindowsBase
 		oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)
 		UpdateTheTimeMachine()
 
+	func TimeMachineGotoPresent
+		if not oView.sliderTimeMachine.IsPresent() { 
+			# Save Current Item
+				oItem  = oView.oStepsTree.currentItem()
+			# Go to the Present
+			nActiveInteraction = oView.sliderTimeMachine.nActiveInteraction
+			nInteractionsCount = oModel.oInteractionModel.InteractionsCount()
+			oView.sliderTimeMachine.setInteractionPoints(nInteractionsCount)
+			oView.sliderTimeMachine.nActiveInteraction = nActiveInteraction
+			ChangeTimeMachinePointAction()
+			# Restore Item
+				oView.oStepsTree.SetCurrentItem(oItem,0)	
+		}
+
 	func UpdateTheTimeMachine
 		nInteractionsCount = oModel.oInteractionModel.InteractionsCount()
 		oView.sliderTimeMachine.setInteractionPoints(nInteractionsCount)
 
 	func AddStepAction
+		TimeMachineGotoPresent()
 		oInput = New QInputDialog(oView.win)
 		{
 			setwindowtitle("Enter the step name?")
@@ -141,6 +156,8 @@ class GoalDesignerController from WindowsBase
 		if oView.oStepsTree.isbuffernotempty() = false {
 			return
 		}
+		# Time Machine - Present
+			TimeMachineGotoPresent()
 		oParentItem  = oView.oStepsTree.currentItem()
 		nParentStepID = oView.oStepsTree.GetIDByObj(oParentItem)
 		oModel.PasteStep(nParentStepID)

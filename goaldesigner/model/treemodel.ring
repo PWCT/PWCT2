@@ -31,7 +31,7 @@ class TreeModel
 
 	/*
 		The next method get the position of the new node
-		We use the inset() function later to add new nodes
+		We use the insert() function later to add new nodes
 		The goal is to keep the tree in the correct order
 		So we don't need to order the tree when we generate the code
 	*/

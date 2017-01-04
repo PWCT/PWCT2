@@ -29,7 +29,12 @@ class TimeMachineController
 		nMinIID = min(nTMValue,nOldTMValue)
 		nMaxIID = max(nTMValue,nOldTMValue)
 		aList = oModel.GetStepsInTimeRange(nMinIID,nMaxIID,lVisible)		
-		for x = len(aList) to 1 step -1 {
+		# Take in mind groupd of steps in the same interaction
+			aList = Sort(aList,1)
+			if direction = C_TMDIRECTION_BACKWARD {
+				aList = Reverse(aList)
+			}
+		for x = 1 to len(aList) {
 			item = aList[x]
 			// puts( item[3][:name] )
 			if direction = C_TMDIRECTION_BACKWARD {

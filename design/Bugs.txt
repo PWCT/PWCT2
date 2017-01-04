@@ -48,7 +48,7 @@ called from line 45  In function test_goaldesigner() in file B:/pwct2/goaldesign
 called from line 38  in file B:/pwct2/goaldesigner.ring
 
 
-(6) Error after using paste then the time machine
+(6) Fixed : Error after using paste then the time machine
 Go to the past and use paste, then go to the future (present)  and move backward
 Also the same error happens when we add steps in the past
 then then go to the future (present) and move backward
@@ -72,6 +72,25 @@ called from line 2  In method changetimemachinepointaction() in file goaldesigne
 called from line 1  In qapp_exec In method exec() in file ring_qt.ring
 called from line 45  In function test_goaldesigner() in file B:/pwct2/goaldesigner.ring
 called from line 38  in file B:/pwct2/goaldesigner.ring
+
+(7)  Fixed : Creating new steps in the past
+
+Line 285 GetObjByID() - Can't find the object!
+In raise In function std_raise() in file stdfunctions.ring
+called from line 43  In method getobjbyid() in file goaldesigner/view/treecontrol.ring
+called from line 23  In method addnode() in file goaldesigner/view/treecontrol.ring
+called from line 38  In method addstep() in file goaldesigner/view/stepstreeview.ring
+called from line 2  In method changetimemachinepoint() in file goaldesigner/controller/timemachinecontroller.ring
+called from line 213  In method changetimemachinepointaction() in file goaldesigner/controller/goaldesignercontroller.ring
+called from line 40  In method timemachinegotopresent() in file goaldesigner/controller/goaldesignercontroller.ring
+called from line 59  In method addstepaction() in file goaldesigner/controller/goaldesignercontroller.ring
+called from line 1  In qapp_exec In method exec() in file ring_qt.ring
+called from line 46  In function test_goaldesigner() in file B:/pwct2/goaldesigner.ring
+called from line 39  in file B:/pwct2/goaldesigner.ring
+
+(8) Bad Order of steps after paste and new steps operations in the paste
+The problem is inside 	func FindNewNodePosition in TreeModel.ring
+
 
 
 

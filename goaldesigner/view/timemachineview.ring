@@ -34,3 +34,6 @@ class TimeMachineView from QSlider
 
 	func SetActiveInteraction nValue
 		nActiveInteraction = nValue
+
+	func IsPresent	# Last Interaction
+		return (nInteractionPoints = nActiveInteraction)
