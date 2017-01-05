@@ -8,8 +8,8 @@
 ===========================================================
 Status
 	* Bugs Count : 10
-	* Fixed Bugs : 9
-	* UnFixed Bugs : 1
+	* Fixed Bugs : 10
+	* UnFixed Bugs : 0
 ===========================================================
 (1)  Fixed : We created over 6 thouands steps, then using the search window
 after selecting an item in the search result list we get the next error
@@ -147,9 +147,26 @@ The problem is Fixed by this check : if nPos = 0 { return }
 		# Check if we don't have nodes Up
 			if nPos = 0 { return }
 ===========================================================
-(10) After using Move Up/Down then the time machine we get bad order
+(10) Fixed :  After using Move Up/Down then the time machine we get bad order
 To reproduce the bug
 	* Create one two three steps
 	* move three up and one down so we have three two one
 	* use the time mahcine backward then forward you get one two three !
+
+Fixed by using this function
+
+	func CheckInsertStep oView,oModel,nParentID,nStepID,nStepIID
+		# Get the Next step after this step
+			nPos = oModel.oStepsTreeModel.SiblingDown(nStepID)
+		if nPos != 0 {
+			nStepID2 = oModel.oStepsTreeModel.GetData()[nPos][C_TREEMODEL_NODEID]
+			nStepIID2 = oModel.oStepsTreeModel.GetData()[nPos][C_TREEMODEL_CONTENT][:interactionid]
+			if nStepIID2 < nStepIID  { # The next Step is visible  
+					oItem = oView.oStepsTree.GetObjByID(nStepID2)
+					nIndex = oItem.parent().indexofchild(oItem)
+					nIndex++	 	# Start from 1 not 0
+					return nIndex 	# True and the Item Index
+			}
+		}
+		return False
 ===========================================================

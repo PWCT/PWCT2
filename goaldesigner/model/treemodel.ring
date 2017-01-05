@@ -107,6 +107,15 @@ class TreeModel
 		return aChildren
 
 	/*
+		The next method return the index of a node with respect to the parent
+		Input : Parent ID , Node ID
+	*/
+	func ChildIndex nParentID,nNodeID
+		aChildList = ChildrenIDs(nParentID)
+		return Find(aChildList,nNodeID)
+
+
+	/*
 		Remove children from the Tree
 		The input is a list of each node index
 	*/

@@ -37,6 +37,9 @@ class StepsTreeView from TreeControl
 	func AddStep nParentID,nID,cText
 		AddNode(nParentID,nID,cText)
 
+	func InsertStep nParentID,nID,cText,nIndex
+		InsertNode(nParentID,nID,cText,nIndex)
+
 	func EditStep oItem,cText,lIgnoreStatus
 		if lUseLabels = false {
 			oItem.setText(0,cText)

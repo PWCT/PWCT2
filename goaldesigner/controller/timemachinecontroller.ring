@@ -29,7 +29,7 @@ class TimeMachineController
 		nMinIID = min(nTMValue,nOldTMValue)
 		nMaxIID = max(nTMValue,nOldTMValue)
 		aList = oModel.GetStepsInTimeRange(nMinIID,nMaxIID,lVisible)		
-		# Take in mind groupd of steps in the same interaction
+		# Take in mind group of steps in the same interaction
 			aList = Sort(aList,1)
 			if direction = C_TMDIRECTION_BACKWARD {
 				aList = Reverse(aList)
@@ -42,9 +42,42 @@ class TimeMachineController
 				oView.oStepsTree.DelByObj(oItem)
 				oItem.parent().takechild(oItem.parent().indexofchild(oItem))
 			else
-				nStepID = item[1]
-				nParentID = item[2]
-				cStepName = item[3][:name]
-				oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)
+				nStepID = item[C_TREEMODEL_NODEID]
+				nParentID = item[C_TREEMODEL_PARENTID]
+				cStepName = item[C_TREEMODEL_CONTENT][:name]
+				nStepIID = item[C_TREEMODEL_CONTENT][:interactionid]
+				lInsert = CheckInsertStep(oView,oModel,nParentID,nStepID,nStepIID)
+				if lInsert= False { 
+					oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)
+				else
+					nIndex = lInsert--	# Start from 0 not 1
+					oView.oStepsTree.InsertStep(nParentID,nStepID,cStepName,nIndex)
+				}
 			}
 		}
+
+	/*
+		The next method will
+		Check if we will insert the step (before another step)
+		Or we will add it (to the end) 
+		This function is required and necessary when we have situation like
+		Three  - Third interaction
+		Two    - Second Interaction
+		One	- First Interaction
+		After we get the step One (First Interaction) we need to insert the
+		Step Two Before it (Second Interaction)
+	*/
+	func CheckInsertStep oView,oModel,nParentID,nStepID,nStepIID
+		# Get the Next step after this step
+			nPos = oModel.oStepsTreeModel.SiblingDown(nStepID)
+		if nPos != 0 {
+			nStepID2 = oModel.oStepsTreeModel.GetData()[nPos][C_TREEMODEL_NODEID]
+			nStepIID2 = oModel.oStepsTreeModel.GetData()[nPos][C_TREEMODEL_CONTENT][:interactionid]
+			if nStepIID2 < nStepIID  { # The next Step is visible  
+					oItem = oView.oStepsTree.GetObjByID(nStepID2)
+					nIndex = oItem.parent().indexofchild(oItem)
+					nIndex++	 	# Start from 1 not 0
+					return nIndex 	# True and the Item Index
+			}
+		}
+		return False
