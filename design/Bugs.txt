@@ -88,9 +88,32 @@ called from line 1  In qapp_exec In method exec() in file ring_qt.ring
 called from line 46  In function test_goaldesigner() in file B:/pwct2/goaldesigner.ring
 called from line 39  in file B:/pwct2/goaldesigner.ring
 
-(8) Bad Order of steps after paste and new steps operations in the paste
+(8) Fixed : Bad Order of steps after paste and new steps operations in the paste
 The problem is inside 	func FindNewNodePosition in TreeModel.ring
+How to reproduce the bug?
+	Create one two three steps
+	goto the past where we have one only
+	Select one copy and paste many times
+	select one create new steps ok ok
+	open search window, display all steps
+	you will see ok ok before nested one 
 
+The problem is solved by maintaining a parent list
+
+	func FindNewNodePosition nParent
+		for x = 1 to len(aList) {
+			if aList[x][C_TREEMODEL_NODEID] = nParent {
+				aParentList = [nParent]
+				for x2 = x+1 to len(aList) {
+					if find(aParentList,aList[x2][C_TREEMODEL_PARENTID]) = 0 {
+						return x2-1
+					else
+						aParentList + aList[x2][C_TREEMODEL_NODEID]
+					}
+				}
+			}
+		}
+		return len(aList)
 
 
 

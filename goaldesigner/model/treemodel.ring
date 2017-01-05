@@ -38,9 +38,12 @@ class TreeModel
 	func FindNewNodePosition nParent
 		for x = 1 to len(aList) {
 			if aList[x][C_TREEMODEL_NODEID] = nParent {
+				aParentList = [nParent]
 				for x2 = x+1 to len(aList) {
-					if aList[x2][C_TREEMODEL_PARENTID] != nParent {
+					if find(aParentList,aList[x2][C_TREEMODEL_PARENTID]) = 0 {
 						return x2-1
+					else
+						aParentList + aList[x2][C_TREEMODEL_NODEID]
 					}
 				}
 			}
