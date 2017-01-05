@@ -176,6 +176,8 @@ class TreeModel
 	func MoveNodeUp nNodeID
 		# Find the sibling node (Up)
 			nPos = SiblingUp(nNodeID)
+		# Check if we don't have nodes Up
+			if nPos = 0 { return }
 		# Get Children List
 			aMove = GetChildren(Children(aList[nPos][C_TREEMODEL_NODEID]))
 		# Add the Parent Node

@@ -115,6 +115,36 @@ The problem is solved by maintaining a parent list
 		}
 		return len(aList)
 
+(9) Fixed : During Move Up Opeartion
 
+Line 180 Error (R2) : Array Access (Index out of range) !
+In method children() in file goaldesigner/model/treemodel.ring
+called from line 180  In method getchildren() in file goaldesigner/model/treemodel.ring
+called from line 180  In method movenodeup() in file goaldesigner/model/treemodel.ring
+called from line 86  In method movestepup() in file goaldesigner/model/goaldesignermodel.ring
+called from line 110  In method movestepupaction() in file goaldesigner/controller/goaldesignercontroller.ring
+called from line 1  In qapp_exec In method exec() in file ring_qt.ring
+called from line 46  In function test_goaldesigner() in file B:/pwct2/goaldesigner.ring
+called from line 39  in file B:/pwct2/goaldesigner.ring
 
+To reproduce the bug
+	* Create one two three steps
+	* move three up and two down to have three two one
+	* use the time machine backward and forward
+	* this lead to one two three (another bug in the order by time machine)
+	* select three then click move up - you get the error message
 
+The problem is Fixed by this check : if nPos = 0 { return }
+
+	func MoveNodeUp nNodeID
+		# Find the sibling node (Up)
+			nPos = SiblingUp(nNodeID)
+		# Check if we don't have nodes Up
+			if nPos = 0 { return }
+
+(10) After using Move Up/Down then the time machine we get bad order
+To reproduce the bug
+	* Create one two three steps
+	* move three up and one down so we have three two one
+	* use the time mahcine backward then forward you get one two three !
+	
