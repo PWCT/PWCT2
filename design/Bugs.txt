@@ -5,7 +5,13 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-(1)  Can't Reproduce : We created over 6 thouands steps, then using the search window
+===========================================================
+Status
+	* Bugs Count : 10
+	* Fixed Bugs : 9
+	* UnFixed Bugs : 1
+===========================================================
+(1)  Fixed : We created over 6 thouands steps, then using the search window
 after selecting an item in the search result list we get the next error
 Line 285 GetObjByID() - Can't find the object!
 In raise In function std_raise() in file stdfunctions.ring
@@ -14,8 +20,8 @@ called from line 2  In method itemselectedaction() in file goaldesigner/findstep
 called from line 1  In qapp_exec In method exec() in file ring_qt.ring
 called from line 38  In function test_goaldesigner() in file B:/pwct2/goaldesigner.ring
 called from line 31  in file B:/pwct2/goaldesigner.ring
-
-(2) Can't Reproduce : During move up/down after copy/paste and delete operations
+===========================================================
+(2) Fixed : During move up/down after copy/paste and delete operations
 Line 177 Error (R2) : Array Access (Index out of range) !
 In method children() in file goaldesigner/model/treemodel.ring
 called from line 177  In method getchildren() in file goaldesigner/model/treemodel.ring
@@ -25,9 +31,9 @@ called from line 85  In method movestepupaction() in file goaldesigner/controlle
 called from line 1  In qapp_exec In method exec() in file ring_qt.ring
 called from line 44  In function test_goaldesigner() in file B:/pwct2/goaldesigner.ring
 called from line 37  in file B:/pwct2/goaldesigner.ring
-
-(3) Can't Reproduce : During some tests, I discovered bad steps order in the search window
-
+===========================================================
+(3) Fixed : During some tests, I discovered bad steps order in the search window
+===========================================================
 (4) Fixed : Trying paste many times lead to runtime error
 The problem is related to triggering this event during another event execution
 	setValueChangedEvent(Method(:ChangeTimeMachinePointAction))
@@ -36,7 +42,7 @@ Solution: Save the event, remove it, change value then set it again.
 		setValueChangedEvent("")
 		setValue(nInteractionPoints)
 		setValueChangedEvent(cEvent)
-
+===========================================================
 (5) Fixed : Open search window, display all steps, go to the past using the time machine
 select a step in the future from the search window
 Line 285 GetObjByID() - Can't find the object!
@@ -46,8 +52,7 @@ called from line 2  In method itemselectedaction() in file goaldesigner/controll
 called from line 1  In qapp_exec In method exec() in file ring_qt.ring
 called from line 45  In function test_goaldesigner() in file B:/pwct2/goaldesigner.ring
 called from line 38  in file B:/pwct2/goaldesigner.ring
-
-
+===========================================================
 (6) Fixed : Error after using paste then the time machine
 Go to the past and use paste, then go to the future (present)  and move backward
 Also the same error happens when we add steps in the past
@@ -72,7 +77,7 @@ called from line 2  In method changetimemachinepointaction() in file goaldesigne
 called from line 1  In qapp_exec In method exec() in file ring_qt.ring
 called from line 45  In function test_goaldesigner() in file B:/pwct2/goaldesigner.ring
 called from line 38  in file B:/pwct2/goaldesigner.ring
-
+===========================================================
 (7)  Fixed : Creating new steps in the past
 
 Line 285 GetObjByID() - Can't find the object!
@@ -87,7 +92,7 @@ called from line 59  In method addstepaction() in file goaldesigner/controller/g
 called from line 1  In qapp_exec In method exec() in file ring_qt.ring
 called from line 46  In function test_goaldesigner() in file B:/pwct2/goaldesigner.ring
 called from line 39  in file B:/pwct2/goaldesigner.ring
-
+===========================================================
 (8) Fixed : Bad Order of steps after paste and new steps operations in the paste
 The problem is inside 	func FindNewNodePosition in TreeModel.ring
 How to reproduce the bug?
@@ -114,7 +119,7 @@ The problem is solved by maintaining a parent list
 			}
 		}
 		return len(aList)
-
+===========================================================
 (9) Fixed : During Move Up Opeartion
 
 Line 180 Error (R2) : Array Access (Index out of range) !
@@ -141,10 +146,10 @@ The problem is Fixed by this check : if nPos = 0 { return }
 			nPos = SiblingUp(nNodeID)
 		# Check if we don't have nodes Up
 			if nPos = 0 { return }
-
+===========================================================
 (10) After using Move Up/Down then the time machine we get bad order
 To reproduce the bug
 	* Create one two three steps
 	* move three up and one down so we have three two one
 	* use the time mahcine backward then forward you get one two three !
-	
+===========================================================
