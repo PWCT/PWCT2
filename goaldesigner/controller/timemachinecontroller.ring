@@ -16,7 +16,7 @@ class TimeMachineController
 			nInteractionsCount = oModel.oInteractionModel.InteractionsCount()
 			oView.sliderTimeMachine.setInteractionPoints(nInteractionsCount)
 			oView.sliderTimeMachine.nActiveInteraction = nActiveInteraction
-			ChangeTimeMachinePointAction()
+			ChangeTimeMachinePoint(oView,oModel)
 			# Restore Item
 				oView.oStepsTree.SetCurrentItem(oItem,0)	
 		}

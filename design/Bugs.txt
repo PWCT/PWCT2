@@ -7,8 +7,8 @@
 
 ===========================================================
 Status
-	* Bugs Count : 10
-	* Fixed Bugs : 10
+	* Bugs Count : 11
+	* Fixed Bugs : 11
 	* UnFixed Bugs : 0
 ===========================================================
 (1)  Fixed : We created over 6 thouands steps, then using the search window
@@ -169,4 +169,13 @@ Fixed by using this function
 			}
 		}
 		return False
+===========================================================
+(11) Fixed
+Line 19 Error (R3) : Calling Function without definition !: changetimemachinepointaction
+In method timemachinegotopresent() in file goaldesigner/controller/timemachinecontroller.ring
+called from line 32  In method timemachinegotopresent() in file goaldesigner/controller/goaldesignercontroller.ring
+called from line 39  In method addstepaction() in file goaldesigner/controller/goaldesignercontroller.ring
+called from line 1  In qapp_exec In method exec() in file ring_qt.ring
+called from line 46  In function test_goaldesigner() in file B:/pwct2/goaldesigner.ring
+called from line 39  in file B:/pwct2/goaldesigner.ring
 ===========================================================
