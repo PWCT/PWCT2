@@ -29,18 +29,7 @@ class GoalDesignerController from WindowsBase
 		UpdateTheTimeMachine()
 
 	func TimeMachineGotoPresent
-		if not oView.sliderTimeMachine.IsPresent() { 
-			# Save Current Item
-				oItem  = oView.oStepsTree.currentItem()
-			# Go to the Present
-			nActiveInteraction = oView.sliderTimeMachine.nActiveInteraction
-			nInteractionsCount = oModel.oInteractionModel.InteractionsCount()
-			oView.sliderTimeMachine.setInteractionPoints(nInteractionsCount)
-			oView.sliderTimeMachine.nActiveInteraction = nActiveInteraction
-			ChangeTimeMachinePointAction()
-			# Restore Item
-				oView.oStepsTree.SetCurrentItem(oItem,0)	
-		}
+		oTMController.TimeMachineGotoPresent(oView,oModel)
 
 	func UpdateTheTimeMachine
 		nInteractionsCount = oModel.oInteractionModel.InteractionsCount()
