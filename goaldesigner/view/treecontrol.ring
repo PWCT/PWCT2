@@ -20,22 +20,7 @@ class TreeControl from qTreeWidget
 		return self
 
 	func AddNode nParentID,nID,cText
-		oParent = GetObjByID(nParentID)
-		oItem = new qtreewidgetitem()
-		if lUseLabels = False {	
-			oItem.settext(0,cText)
-		}
-		oParent.addchild(oItem)
-		AddToTree(nID,oItem)
-		setCurrentItem(oItem,0)	# To Display the item (become visible)
-		setCurrentItem(oParent,0)	# Focus on Parent Step
-		if lUseLabels = True {
-			oLabel = new qLabel(self) {			
-				settext(this.oStyle.image(C_LABELIMAGE_NODEICON)+this.oStyle.text(cText,"green",""))
-				setStyleSheet("font-size:" + this.nFontSize + "pt;")
-			}
-			setItemWidget(oItem,0,oLabel)
-		}		 
+		InsertNode(nParentID,nID,cText,-1)
 
 	func InsertNode nParentID,nID,cText,nIndex
 		oParent = GetObjByID(nParentID)
@@ -43,7 +28,11 @@ class TreeControl from qTreeWidget
 		if lUseLabels = False {	
 			oItem.settext(0,cText)
 		}
-		oParent.InsertChild(nIndex,oItem)
+		if nIndex = -1 {
+			oParent.addchild(oItem)
+		else
+			oParent.InsertChild(nIndex,oItem)
+		}
 		AddToTree(nID,oItem)
 		setCurrentItem(oItem,0)	# To Display the item (become visible)
 		setCurrentItem(oParent,0)	# Focus on Parent Step
