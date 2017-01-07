@@ -97,6 +97,7 @@ class GoalDesignerController from WindowsBase
 			oParent.SetExpanded(True)
 			oItem.SetExpanded(True)
 			oModel.MoveStepUp(nStepID)	
+			oView.oStepsTree.SetCurrentItem(oItem,0)	
 		}
 
 	func MoveStepDownAction
@@ -115,6 +116,7 @@ class GoalDesignerController from WindowsBase
 			oParent.SetExpanded(True)
 			oItem.SetExpanded(True)	
 			oModel.MoveStepDown(nStepID)	
+			oView.oStepsTree.SetCurrentItem(oItem,0)	
 		}
 
 	func PrintStepsAction
