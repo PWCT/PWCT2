@@ -202,3 +202,19 @@ class GoalDesignerController from WindowsBase
 
 	func ChangeTimeMachinePointAction
 		oTMController.ChangeTimeMachinePoint(oView,oModel)
+
+	func KeyPress
+		Puts( oView.oFilter.getkeycode() )
+		nKey = oView.oFilter.getkeycode()
+		switch nKey {
+			case 61	# CTR + +
+				IncreaseSizeAction()
+			case 45	# CTR + -
+				DecreaseSizeAction()
+			case 70	# CTRL+F
+				SearchAction()
+			case 78	# CTRL+N
+				AddStepAction()
+			case 80	# CTRL+P
+				PrintStepsAction()		
+		}

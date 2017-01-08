@@ -131,6 +131,11 @@ class GoalDesignerView
 			This is important after creating the Tabs
 		*/
 		oStepsTree.SetFocus(0)
+
+		# KeyPress Event
+			oFilter = new qAllEvents(win)
+			oFilter.setKeyPressEvent(Method(:KeyPress))
+			installeventfilter(oFilter)
 	}
 
 	func Show
