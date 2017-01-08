@@ -28,3 +28,8 @@ class PrintStepsController from SubWindowsParent
 		}
 		oView.oStepsCode.print(printer1)
 		system("start StepsCode.pdf")
+
+	func KeyPressAction
+		if oView.oWinFilter.getKeyCode() = Qt_Key_Escape {	
+			CloseAction()		
+		}

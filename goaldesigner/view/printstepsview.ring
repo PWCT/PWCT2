@@ -61,6 +61,10 @@ class PrintStepsView
 			setWindowTitle(T_GD_PS_PRINTSTEP)		
 			setwindowflags(Qt_CustomizeWindowHint | Qt_WindowTitleHint | Qt_WindowStaysOnTopHint) 
 
+			oWinFilter = new qallevents(win)
+			oWinFilter.setKeyPressEvent(Method(:KeyPressAction))								
+			installeventfilter(oWinFilter)
+
 		}
 
 	func Close
