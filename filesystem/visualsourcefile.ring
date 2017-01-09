@@ -6,3 +6,5 @@
 */
 
 class VisualSourceFile
+
+	cFileName = "application.pwct"

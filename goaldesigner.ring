@@ -36,6 +36,8 @@ load "goaldesigner/view/timemachineview.ring"
 load "goaldesigner/controller/timemachinecontroller.ring"
 
 # Load the File System Files
+load "filesystem/databasesqlite.ring"
+load "filesystem/database.ring"
 load "filesystem/visualsourcefile.ring"
 
 if filename()  = sysargv[2] {
