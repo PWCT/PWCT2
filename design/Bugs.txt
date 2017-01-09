@@ -7,9 +7,9 @@
 
 ===========================================================
 Status
-	* Bugs Count : 11
+	* Bugs Count : 12
 	* Fixed Bugs : 11
-	* UnFixed Bugs : 0
+	* UnFixed Bugs : 1
 ===========================================================
 (1)  Fixed : We created over 6 thouands steps, then using the search window
 after selecting an item in the search result list we get the next error
@@ -175,6 +175,20 @@ Line 19 Error (R3) : Calling Function without definition !: changetimemachinepoi
 In method timemachinegotopresent() in file goaldesigner/controller/timemachinecontroller.ring
 called from line 32  In method timemachinegotopresent() in file goaldesigner/controller/goaldesignercontroller.ring
 called from line 39  In method addstepaction() in file goaldesigner/controller/goaldesignercontroller.ring
+called from line 1  In qapp_exec In method exec() in file ring_qt.ring
+called from line 46  In function test_goaldesigner() in file B:/pwct2/goaldesigner.ring
+called from line 39  in file B:/pwct2/goaldesigner.ring
+===========================================================
+(12)
+Using the Time Machine with large number of steps
+Line 285 GetObjByID() - Can't find the object!
+In raise In function std_raise() in file stdfunctions.ring
+called from line 50  In method getobjbyid() in file goaldesigner/view/treecontrol.ring
+called from line 26  In method insertnode() in file goaldesigner/view/treecontrol.ring
+called from line 23  In method addnode() in file goaldesigner/view/treecontrol.ring
+called from line 38  In method addstep() in file goaldesigner/view/stepstreeview.ring
+called from line 2  In method changetimemachinepoint() in file goaldesigner/controller/timemachinecontroller.ring
+called from line 204  In method changetimemachinepointaction() in file goaldesigner/controller/goaldesignercontroller.ring
 called from line 1  In qapp_exec In method exec() in file ring_qt.ring
 called from line 46  In function test_goaldesigner() in file B:/pwct2/goaldesigner.ring
 called from line 39  in file B:/pwct2/goaldesigner.ring

@@ -33,6 +33,10 @@
 	T_GD_Firststep  = "نقطة البداية (ليست خطوة)"
 	T_GD_StepsTree = "شجرة الخطوات"
 
+	# New Step
+	T_GD_NEWSTEP_ENTERSTEPNAME = "أدخل إسم الخطوة ؟"
+	T_GD_NEWSTEP_STEPNAME = "إسم الخطوة"
+
 # Print Steps Window
 	T_GD_PS_PRINTSTEP = "طباعة الخطوات"			# The Window Title
 	T_GD_PS_STEPSTREE = "شجرة الخطوات"			# Tab Page Header

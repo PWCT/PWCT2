@@ -39,9 +39,9 @@ class GoalDesignerController from WindowsBase
 		TimeMachineGotoPresent()
 		oInput = New QInputDialog(oView.win)
 		{
-			setwindowtitle("Enter the step name?")
+			setwindowtitle(T_GD_NEWSTEP_ENTERSTEPNAME) # "Enter the step name?"
 			setgeometry(100,100,400,50)
-			setlabeltext("Step Name")
+			setlabeltext(T_GD_NEWSTEP_STEPNAME)  # "Step Name"
 			settextvalue("")
 			lcheck = exec()
 		}
@@ -57,9 +57,9 @@ class GoalDesignerController from WindowsBase
 		}
 		oInput = New QInputDialog(oView.win)
 		{
-			setwindowtitle("Enter the step name?")
+			setwindowtitle(T_GD_NEWSTEP_ENTERSTEPNAME)
 			setgeometry(100,100,400,50)
-			setlabeltext("Step Name")
+			setlabeltext(T_GD_NEWSTEP_STEPNAME)
 			settextvalue(this.oModel.GetStepName(nStepID))
 			lcheck = exec()
 		}

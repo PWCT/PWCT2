@@ -33,6 +33,10 @@
 	T_GD_Firststep  = "Start Point (Not Step)"
 	T_GD_StepsTree = "Steps Tree"
 
+	# New Step
+	T_GD_NEWSTEP_ENTERSTEPNAME = "Enter the step name?"
+	T_GD_NEWSTEP_STEPNAME = "Step Name"
+
 # Print Steps Window
 	T_GD_PS_PRINTSTEP = "Print Steps"				# The Window Title
 	T_GD_PS_STEPSTREE = "Steps Tree"			# Tab Page Header

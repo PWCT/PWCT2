@@ -107,7 +107,7 @@ class FindStepView
 
 			setLayout(oLayout6)
 
-			setWindowTitle("Find/Replace")		
+			setWindowTitle(T_GD_FS_FINDREPLACE)		
 			setwindowflags(Qt_CustomizeWindowHint | Qt_WindowTitleHint | Qt_WindowStaysOnTopHint) 
 
 			oSearchFilter = new qallevents(win)
