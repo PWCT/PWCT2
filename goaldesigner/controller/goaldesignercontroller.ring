@@ -72,9 +72,9 @@ class GoalDesignerController from WindowsBase
 	func DeleteStepAction
 		new qmessagebox(oView.win)
 		{
-                		setwindowtitle("Delete Step")
-                		settext("Are you sure?")
-                		setInformativeText("Do you want to delete the step?")
+                		setwindowtitle(T_GD_DELETESTEP_DELETESTEP) #  "Delete Step"
+                		settext(T_GD_DELETESTEP_AREYOUSURE) # "Are you sure?"
+                		setInformativeText(T_GD_DELETESTEP_DOYOUWANT) # "Do you want to delete the step?"
                 		setstandardbuttons(QMessageBox_Yes | QMessageBox_No)
                 		result = exec()
 		          this.oView.win {

@@ -37,6 +37,11 @@
 	T_GD_NEWSTEP_ENTERSTEPNAME = "Enter the step name?"
 	T_GD_NEWSTEP_STEPNAME = "Step Name"
 
+	# Delete Step
+	T_GD_DELETESTEP_DELETESTEP = "Delete Step"
+	T_GD_DELETESTEP_AREYOUSURE = "Are you sure?"
+	T_GD_DELETESTEP_DOYOUWANT = "Do you want to delete the step?"
+
 # Print Steps Window
 	T_GD_PS_PRINTSTEP = "Print Steps"				# The Window Title
 	T_GD_PS_STEPSTREE = "Steps Tree"			# Tab Page Header

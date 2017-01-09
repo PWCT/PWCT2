@@ -37,6 +37,12 @@
 	T_GD_NEWSTEP_ENTERSTEPNAME = "أدخل إسم الخطوة ؟"
 	T_GD_NEWSTEP_STEPNAME = "إسم الخطوة"
 
+	# Delete Step
+	T_GD_DELETESTEP_DELETESTEP = "حذف خطوة"
+	T_GD_DELETESTEP_AREYOUSURE = "هل انت متاكد؟"
+	T_GD_DELETESTEP_DOYOUWANT = "هل تريد حذف هذه الخطوة؟"
+
+
 # Print Steps Window
 	T_GD_PS_PRINTSTEP = "طباعة الخطوات"			# The Window Title
 	T_GD_PS_STEPSTREE = "شجرة الخطوات"			# Tab Page Header
