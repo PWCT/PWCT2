@@ -15,8 +15,8 @@ load "general/objectslib/objects.ring"
 load "general/objectslib/subwindows.ring"
 
 # Load the Translation File
-#load "translation/english.ring"
-load "translation/arabic.ring"
+load "translation/english.ring"
+#load "translation/arabic.ring"
 
 # Load the Goal Designer Files
 load "goaldesigner/controller/goaldesignercontroller.ring"
@@ -34,6 +34,9 @@ load "goaldesigner/view/printstepsview.ring"
 load "goaldesigner/model/interactionmodel.ring"
 load "goaldesigner/view/timemachineview.ring"
 load "goaldesigner/controller/timemachinecontroller.ring"
+
+# Load the File System Files
+load "filesystem/visualsourcefile.ring"
 
 if filename()  = sysargv[2] {
 	Test_GoalDesigner()
