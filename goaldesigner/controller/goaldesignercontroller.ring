@@ -70,6 +70,19 @@ class GoalDesignerController from WindowsBase
 		}		
 
 	func DeleteStepAction
+		new qmessagebox(oView.win)
+		{
+                		setwindowtitle("Delete Step")
+                		settext("Are you sure?")
+                		setInformativeText("Do you want to delete the step?")
+                		setstandardbuttons(QMessageBox_Yes | QMessageBox_No)
+                		result = exec()
+		          this.oView.win {
+                        		if result = QMessageBox_No {
+					return 
+                        		}
+                		}
+		}
 		oItem  = oView.oStepsTree.currentItem()
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
 		if nStepID = 1 {	# Avoid start point
