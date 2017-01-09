@@ -7,7 +7,7 @@
 
 class Database
 
-	oDatabase = new FSDatabaseSQLite
+	oDatabase = new DatabaseSQLite
 
 	func init
 		oDatabase.init()

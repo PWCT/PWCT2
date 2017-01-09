@@ -10,6 +10,7 @@ class GoalDesignerController from WindowsBase
 	oView = new GoalDesignerView
 	oModel = new GoalDesignerModel
 	oTMController = new TimeMachineController
+	oVisualSourceFile = new VisualSourceFile
 
 	func Start
 		oView.Show()

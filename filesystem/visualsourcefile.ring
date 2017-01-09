@@ -8,3 +8,5 @@
 class VisualSourceFile
 
 	cFileName = "application.pwct"
+
+	oDatabase = new Database()

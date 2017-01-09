@@ -5,7 +5,7 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-class FSDatabaseSQLite
+class DatabaseSQLite
 
 	oSQLite 
 
