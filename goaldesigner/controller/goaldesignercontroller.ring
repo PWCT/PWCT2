@@ -263,6 +263,6 @@ class GoalDesignerController from WindowsBase
 		oVisualSourceFile.LoadTables()
 		mydata =  oVisualSourceFile.GetStepsTreeTable()
 		for t in mydata {
-			see t[3] + nl
+			see t[3][:name] + nl
 		}
 		Puts ( :done )

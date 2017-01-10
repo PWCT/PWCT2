@@ -76,9 +76,16 @@ class VisualSourceFile
 		cSQL = "SELECT * FROM STEPSTREE"
 		aResult = oDatabase.Execute(cSQL)
 		for record in aResult {
-			aStepsTable + [ record[:stepid] , record[:parentid] , record[:name] ,
-					   record[:active] , record[:code] , record[:interactionid] ,
-					   record[:visible] ] 
+			aStepsTable + [ record[:stepid] , 
+					  record[:parentid] , 
+					  [
+						  :name 	= record[:name] ,
+						  :active 	= record[:active] , 
+						  :code 	= record[:code] , 
+						  :interactionid = record[:interactionid] ,
+						  :visible 	= record[:visible]
+					  ]
+					] 
 		}
 
 	func LoadInteractionsTable
@@ -86,8 +93,13 @@ class VisualSourceFile
 		cSQL = "SELECT * FROM INTERACTIONS"
 		aResult = oDatabase.Execute(cSQL)
 		for record in aResult {
-			aInteractionsTable + [ record[:interactionid] , record[:type] , record[:component] ,
-					   record[:date] , record[:time] ] 
+			aInteractionsTable + [ 
+				record[:interactionid] , 
+				record[:type] , 
+				record[:component] ,
+				record[:date] , 
+				record[:time] 
+			] 
 		}
 
 	func SaveStepsTable
