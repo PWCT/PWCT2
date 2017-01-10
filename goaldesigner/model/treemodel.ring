@@ -244,21 +244,22 @@ class TreeModel
 			2 - Change the ID of each node to be a new and unique ID
 	*/
 	func PasteNode nParentNodeID
-		nID++
-		# Get the maximum ID value in the Buffer
-		nMax = 0
-		for node in aBuffer { 
-			nMax = max(nMax,  node[C_TREEMODEL_NODEID] )
-		}
+		# Get the nodes Count in the Buffer
+			nMax = len(aBuffer)
+		# Map between the NodeID in the buffer and the new NodeID 
+			aIDsMap = []
 		# Update Each Node ID
-		for x=1 to len(aBuffer) { 			
-			aBuffer[x][C_TREEMODEL_NODEID] += nID
-			aBuffer[x][C_TREEMODEL_PARENTID] += nID
+		for x=1 to len(aBuffer) { 	
+			aIDsMap + [aBuffer[x][C_TREEMODEL_NODEID],nID]		
+			aBuffer[x][C_TREEMODEL_NODEID] = nID
+			nID++
+			nPos = find(aIDsMap,aBuffer[x][C_TREEMODEL_PARENTID],1)
+			if nPos > 0 {
+				aBuffer[x][C_TREEMODEL_PARENTID] = aIDsMap[nPos][2]
+			}
 		}
 		# Update the first node parent ID		
 			aBuffer[1][C_TREEMODEL_PARENTID] = nParentNodeID
-		# Update the ID
-			nID = nID + nMax + 1
 		# Copy the nodes
 			aChildren = Children(nParentNodeID)
 			if len(aChildren) > 0 {
