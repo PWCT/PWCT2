@@ -77,3 +77,9 @@ class InteractionModel
 		if nIndex = 0 { return 0 }
 		if nIndex > len(aList) {  nIndex = len(aList) }
 		return aList[nIndex][C_INTERACTIONRECORD_ID]
+
+	/*
+		The next method is used to get the Interactions data
+	*/
+	func GetData
+		return aList

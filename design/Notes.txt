@@ -86,3 +86,18 @@ note the mistake of putting } in the list
 contains
 		return self
 
+(11) using substr()
+		cSQL = substr(cSQL,"#{V1}", ""+record[C_TREEMODEL_NODEID]   )
+	requires "" + to avoid data type error
+
+(12) using substr() in
+			cSQL = "INSERT INTO STEPSTREE (STEPID,PARENTID,NAME,ACTIVE,CODE,INTERACTIONID,VISIBLE)
+         				VALUES (#{V1},#{V2},'#{V3}',#{V4},'#{V5}', #{V6},#{V7}); " 
+			cSQL = substr(cSQL,"#{V1}", ""+record[C_TREEMODEL_NODEID]   )
+			cSQL = substr(cSQL,"#{V2}", ""+record[C_TREEMODEL_PARENTID]  )
+			cSQL = substr(cSQL,"#{V3}", record[C_TREEMODEL_CONTENT][:name]  )
+			cSQL = substr(cSQL,"#{V4}", ""+record[C_TREEMODEL_CONTENT][:active]  )
+			cSQL = substr(cSQL,"#{V5}", record[C_TREEMODEL_CONTENT][:code]  )
+			cSQL = substr(cSQL,"#{V6}", ""+record[C_TREEMODEL_CONTENT][:interactionid]  )
+			cSQL = substr(cSQL,"#{V7}", ""+record[C_TREEMODEL_CONTENT][:visible]  )
+	Is very slow !

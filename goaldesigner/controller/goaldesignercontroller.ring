@@ -249,3 +249,20 @@ class GoalDesignerController from WindowsBase
 				MoveStepDownAction()
 
 		}
+
+	func SaveFileAction
+		oVisualSourceFile.Open()
+		oVisualSourceFile.SetStepsTreeTable(oModel.oStepsTreeModel.GetData())
+		oVisualSourceFile.SetInteractionsTable(oModel.oInteractionModel.GetData())
+		oVisualSourceFile.CreateTables()
+		oVisualSourceFile.SaveTables()
+		Puts ( :done )
+
+	func LoadFileAction
+		oVisualSourceFile.Open()
+		oVisualSourceFile.LoadTables()
+		mydata =  oVisualSourceFile.GetStepsTreeTable()
+		for t in mydata {
+			see t[3] + nl
+		}
+		Puts ( :done )

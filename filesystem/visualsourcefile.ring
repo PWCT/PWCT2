@@ -15,8 +15,7 @@ class VisualSourceFile
 
 	aInteractionsTable = []
 
-	func Open cFile
-		cFileName = cFile
+	func Open 
 		oDatabase.Open(cFileName)
 
 	func Close
@@ -28,10 +27,10 @@ class VisualSourceFile
 	func GetFile
 		return cFileName
 
-	func SetStepsTable aData
+	func SetStepsTreeTable aData
 		aStepsTable = aData
 
-	func GetStepsTable
+	func GetStepsTreeTable
 		return aStepsTable
 
 	func SetInteractionsTable aData
@@ -48,7 +47,7 @@ class VisualSourceFile
 		LoadStepsTable()
 		LoadInteractionsTable()
 
-	func SaveTable
+	func SaveTables
 		SaveStepsTable()
 		SaveInteractionsTable()
 
@@ -95,13 +94,13 @@ class VisualSourceFile
 		for record in aStepsTable {
 			cSQL = "INSERT INTO STEPSTREE (STEPID,PARENTID,NAME,ACTIVE,CODE,INTERACTIONID,VISIBLE)
          				VALUES (#{V1},#{V2},'#{V3}',#{V4},'#{V5}', #{V6},#{V7}); " 
-			cSQL = substr(cSQL,"#{V1}", record[C_TREEMODEL_NODEID]   )
-			cSQL = substr(cSQL,"#{V2}", record[C_TREEMODEL_PARENTID]  )
+			cSQL = substr(cSQL,"#{V1}", ""+record[C_TREEMODEL_NODEID]   )
+			cSQL = substr(cSQL,"#{V2}", ""+record[C_TREEMODEL_PARENTID]  )
 			cSQL = substr(cSQL,"#{V3}", record[C_TREEMODEL_CONTENT][:name]  )
-			cSQL = substr(cSQL,"#{V4}", record[C_TREEMODEL_CONTENT][:active]  )
+			cSQL = substr(cSQL,"#{V4}", ""+record[C_TREEMODEL_CONTENT][:active]  )
 			cSQL = substr(cSQL,"#{V5}", record[C_TREEMODEL_CONTENT][:code]  )
-			cSQL = substr(cSQL,"#{V6}", record[C_TREEMODEL_CONTENT][:interactionid]  )
-			cSQL = substr(cSQL,"#{V7}", record[C_TREEMODEL_CONTENT][:visible]  )
+			cSQL = substr(cSQL,"#{V6}", ""+record[C_TREEMODEL_CONTENT][:interactionid]  )
+			cSQL = substr(cSQL,"#{V7}", ""+record[C_TREEMODEL_CONTENT][:visible]  )
 			oDatabase.Execute(cSQL)
 		}
 
@@ -109,8 +108,8 @@ class VisualSourceFile
 		for record in aInteractionsTable {
 			cSQL = "INSERT INTO INTERACTIONS (INTERACTIONID,TYPE,COMPONENT,DATE,TIME)
          				VALUES (#{V1},#{V2},'#{V3}','#{V4}','#{V5}'); " 
-			cSQL = substr(cSQL,"#{V1}", record[C_INTERACTIONRECORD_ID])
-			cSQL = substr(cSQL,"#{V2}", record[C_INTERACTIONRECORD_TYPE])
+			cSQL = substr(cSQL,"#{V1}", ""+record[C_INTERACTIONRECORD_ID])
+			cSQL = substr(cSQL,"#{V2}", ""+record[C_INTERACTIONRECORD_TYPE])
 			cSQL = substr(cSQL,"#{V3}", record[C_INTERACTIONRECORD_COMPONENT])
 			cSQL = substr(cSQL,"#{V4}", record[C_INTERACTIONRECORD_DATE])
 			cSQL = substr(cSQL,"#{V5}", record[C_INTERACTIONRECORD_TIME])

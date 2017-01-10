@@ -115,8 +115,18 @@ class GoalDesignerView
 		sliderTimeMachine = new TimeMachineView(win) {
 			setValueChangedEvent(Method(:ChangeTimeMachinePointAction))
 		}
+		btnSaveFile = new qPushButton(win) {
+			setText("Save File")
+			setClickEvent(Method(:SaveFileAction))	
+		}
+		btnLoadFile = new qPushButton(win) {
+			setText("Load File")
+			setClickEvent(Method(:LoadFileAction))	
+		}
 		layoutTimeMachine = new qHBoxLayout()
 		{	
+			AddWidget(btnSaveFile)
+			AddWidget(btnLoadFile)
 			AddWidget(sliderTimeMachine)
 		}
 		layout1 = new qVBoxLayout()
