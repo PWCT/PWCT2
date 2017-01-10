@@ -71,6 +71,12 @@ class TreeModel
 		return aList
 
 	/*
+		The next method set the tree list
+	*/
+	func SetData aData
+		aList = aData
+
+	/*
 		The next method return a list of the node children
 		The list contains each node index
 	*/

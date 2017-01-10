@@ -83,3 +83,9 @@ class InteractionModel
 	*/
 	func GetData
 		return aList
+
+	/*
+		The next method is used to set the Interactions data
+	*/
+	func SetData aData
+		aList = aData

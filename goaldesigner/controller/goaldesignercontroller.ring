@@ -261,8 +261,11 @@ class GoalDesignerController from WindowsBase
 	func LoadFileAction
 		oVisualSourceFile.Open()
 		oVisualSourceFile.LoadTables()
-		mydata =  oVisualSourceFile.GetStepsTreeTable()
-		for t in mydata {
-			see t[3][:name] + nl
-		}
+		aStepsTree   =  oVisualSourceFile.GetStepsTreeTable()
+		aInteractions =  oVisualSourceFile.GetInteractionsTable()
+		oModel.oStepsTreeModel.SetData(aStepsTree)
+		oModel.oInteractionModel.SetData(aInteractions)
+		oView.oStepsTree.taketoplevelitem(0)	
+		oView.oStepsTree.aTree = []
+		oView.oStepsTree.AddStartPoint()
 		Puts ( :done )

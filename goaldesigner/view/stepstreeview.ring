@@ -17,6 +17,10 @@ class StepsTreeView from TreeControl
 
 	func Init win
 		super.init(win)
+		AddStartPoint()
+		return self
+
+	func AddStartPoint
 		setcolumncount(1)
 		oFirststep = new qtreewidgetitem()
 		addtoplevelitem(oFirststep)
@@ -27,7 +31,7 @@ class StepsTreeView from TreeControl
 			setStyleSheet("font-size:" + this.nFontSize + "pt;")
 		}
 		setItemWidget(oFirstStep,0, oLabel)	
-		return self
+		setCurrentItem(oFirstStep,0)
 
 	func GetItemLabel oItem
 		oLabel = new qLabel
