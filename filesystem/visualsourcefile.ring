@@ -118,7 +118,7 @@ class VisualSourceFile
 			cSQL = substr(cSQL,"#{V5}", record[C_TREEMODEL_CONTENT][:code]  )
 			cSQL = substr(cSQL,"#{V6}", ""+record[C_TREEMODEL_CONTENT][:interactionid]  )
 			cSQL = substr(cSQL,"#{V7}", ""+record[C_TREEMODEL_CONTENT][:visible]  )			
-			cSQLALL + cSQL					
+			cSQLALL += cSQL					
 		}
 		oDatabase.Execute("begin")
 		oDatabase.Execute(cSQLAll)
