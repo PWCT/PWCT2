@@ -100,7 +100,8 @@ contains
 			cSQL = substr(cSQL,"#{V5}", record[C_TREEMODEL_CONTENT][:code]  )
 			cSQL = substr(cSQL,"#{V6}", ""+record[C_TREEMODEL_CONTENT][:interactionid]  )
 			cSQL = substr(cSQL,"#{V7}", ""+record[C_TREEMODEL_CONTENT][:visible]  )
-	Is very slow !
+	Is slow !
+	But after tests, it's not very slow the real problem was in (13)
 
 (13) Using SQLite execute with many insert operations is very slow ! 
 	This is solved using (begin) and (end) commands before execution 
