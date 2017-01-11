@@ -251,11 +251,13 @@ class GoalDesignerController from WindowsBase
 		}
 
 	func SaveFileAction
+		oVisualSourceFile.RemoveFile()
 		oVisualSourceFile.Open()
 		oVisualSourceFile.SetStepsTreeTable(oModel.oStepsTreeModel.GetData())
 		oVisualSourceFile.SetInteractionsTable(oModel.oInteractionModel.GetData())
 		oVisualSourceFile.CreateTables()
 		oVisualSourceFile.SaveTables()
+		oVisualSourceFile.Close()
 		Puts ( :done )
 
 	func LoadFileAction
@@ -263,6 +265,7 @@ class GoalDesignerController from WindowsBase
 		oVisualSourceFile.LoadTables()
 		aStepsTree   =  oVisualSourceFile.GetStepsTreeTable()
 		aInteractions =  oVisualSourceFile.GetInteractionsTable()
+		oVisualSourceFile.Close()
 		del(aStepsTree,1)	# remove start point
 		oModel.oStepsTreeModel.SetData([])
 		oModel.AddStep(0,[:name = T_GD_FirstStep ,
