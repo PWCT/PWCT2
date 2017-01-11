@@ -258,7 +258,6 @@ class GoalDesignerController from WindowsBase
 		oVisualSourceFile.CreateTables()
 		oVisualSourceFile.SaveTables()
 		oVisualSourceFile.Close()
-		Puts ( :done )
 
 	func LoadFileAction
 		oVisualSourceFile.Open()
@@ -279,4 +278,3 @@ class GoalDesignerController from WindowsBase
 		oView.oStepsTree.aTree = []
 		oView.oStepsTree.AddStartPoint()
 		PasteStepsAction()
-		Puts ( :done )
