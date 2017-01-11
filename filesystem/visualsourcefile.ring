@@ -19,6 +19,10 @@ class VisualSourceFile
 		remove(cFileName)
 
 	func Open 
+		/*
+			We call init() here not after oDatabase = new Database
+			Because when we call close() we need init() again before open()
+		*/
 		oDatabase.init()
 		oDatabase.Open(cFileName)
 
