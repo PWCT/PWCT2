@@ -250,6 +250,7 @@ class TreeModel
 			2 - Change the ID of each node to be a new and unique ID
 	*/
 	func PasteNode nParentNodeID
+		nID++
 		# Get the nodes Count in the Buffer
 			nMax = len(aBuffer)
 		# Map between the NodeID in the buffer and the new NodeID 
