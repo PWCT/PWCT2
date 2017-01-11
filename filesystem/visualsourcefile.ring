@@ -107,9 +107,8 @@ class VisualSourceFile
 		}
 
 	func SaveStepsTable
-		cSQL = ""
-		for record in aStepsTable {
-			/*
+		cSQLAll = ""
+		for record in aStepsTable {						
 			cSQL = "INSERT INTO STEPSTREE (STEPID,PARENTID,NAME,ACTIVE,CODE,INTERACTIONID,VISIBLE)
          				VALUES (#{V1},#{V2},'#{V3}',#{V4},'#{V5}', #{V6},#{V7}); " + NL
 			cSQL = substr(cSQL,"#{V1}", ""+record[C_TREEMODEL_NODEID]   )
@@ -118,27 +117,16 @@ class VisualSourceFile
 			cSQL = substr(cSQL,"#{V4}", ""+record[C_TREEMODEL_CONTENT][:active]  )
 			cSQL = substr(cSQL,"#{V5}", record[C_TREEMODEL_CONTENT][:code]  )
 			cSQL = substr(cSQL,"#{V6}", ""+record[C_TREEMODEL_CONTENT][:interactionid]  )
-			cSQL = substr(cSQL,"#{V7}", ""+record[C_TREEMODEL_CONTENT][:visible]  )
-			cSQLALL += cSQL
-			*/
-			cSQL2 = "INSERT INTO STEPSTREE (STEPID,PARENTID,NAME,ACTIVE,CODE,INTERACTIONID,VISIBLE)
-         				VALUES ("+
-				record[C_TREEMODEL_NODEID] + "," +
-				record[C_TREEMODEL_PARENTID] + "," +
-				"'" + record[C_TREEMODEL_CONTENT][:name] + "'," +
-				record[C_TREEMODEL_CONTENT][:active]+ "," +
-				"'" + record[C_TREEMODEL_CONTENT][:code] + "'," +
-				record[C_TREEMODEL_CONTENT][:interactionid]+ "," +
-				record[C_TREEMODEL_CONTENT][:visible] +
-				"); " + NL
-			cSQL += cSQL2
+			cSQL = substr(cSQL,"#{V7}", ""+record[C_TREEMODEL_CONTENT][:visible]  )			
+			cSQLALL + cSQL					
 		}
-		oDatabase.Execute(cSQL)
+		oDatabase.Execute("begin")
+		oDatabase.Execute(cSQLAll)
+		oDatabase.Execute("end")
 
 	func SaveInteractionsTable
-		cSQL = ""
-		for record in aInteractionsTable {			
-			/*
+		cSQLAll = ""		
+		for record in aInteractionsTable {						
 			cSQL = "INSERT INTO INTERACTIONS (INTERACTIONID,TYPE,COMPONENT,DATE,TIME)
          				VALUES (#{V1},#{V2},'#{V3}','#{V4}','#{V5}'); " + NL
 			cSQL = substr(cSQL,"#{V1}", ""+record[C_INTERACTIONRECORD_ID])
@@ -146,17 +134,9 @@ class VisualSourceFile
 			cSQL = substr(cSQL,"#{V3}", record[C_INTERACTIONRECORD_COMPONENT])
 			cSQL = substr(cSQL,"#{V4}", record[C_INTERACTIONRECORD_DATE])
 			cSQL = substr(cSQL,"#{V5}", record[C_INTERACTIONRECORD_TIME])
-			cSQLALL += cSQL
-			*/
-			cSQL2 = "INSERT INTO INTERACTIONS (INTERACTIONID,TYPE,COMPONENT,DATE,TIME)
-         				VALUES ("+
-			record[C_INTERACTIONRECORD_ID] + "," +
-			record[C_INTERACTIONRECORD_TYPE] + "," +
-			"'" + record[C_INTERACTIONRECORD_COMPONENT] + "'," +
-			"'" + record[C_INTERACTIONRECORD_DATE] + "'," +
-			"'" + record[C_INTERACTIONRECORD_TIME] +  "'" +
-			"); " + NL
-			cSQL += cSQL2
+			cSQLAll += cSQL						
 		}
-			oDatabase.Execute(cSQL)
+		oDatabase.Execute("begin")
+		oDatabase.Execute(cSQLAll)	
+		oDatabase.Execute("end")
 
