@@ -265,16 +265,15 @@ class GoalDesignerController from WindowsBase
 		aStepsTree   =  oVisualSourceFile.GetStepsTreeTable()
 		aInteractions =  oVisualSourceFile.GetInteractionsTable()
 		oVisualSourceFile.Close()
-		del(aStepsTree,1)	# remove start point
-		oModel.oStepsTreeModel.SetData([])
-		oModel.AddStep(0,[:name = T_GD_FirstStep ,
-			      :active = True , 
-			      :code = "" , 
-			      :interactionid = 1 ,
-			      :visible = True ])
-		oModel.oStepsTreeModel.SetBuffer(aStepsTree)
+		oModel.oStepsTreeModel.SetData(aStepsTree)
 		oModel.oInteractionModel.SetData(aInteractions)
 		oView.oStepsTree.taketoplevelitem(0)	
 		oView.oStepsTree.aTree = []
 		oView.oStepsTree.AddStartPoint()
-		PasteStepsAction()
+		for x = 2 to len(aStepsTree) {
+			nStepID      = 0+aStepsTree[x][1]
+			nParentID   = 0+aStepsTree[x][2]
+			cStepName  = aStepsTree[x][3][:name]
+			puts (cStepName)
+			oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)					
+		}

@@ -105,3 +105,13 @@ contains
 
 (13) Using SQLite execute with many insert operations is very slow ! 
 	This is solved using (begin) and (end) commands before execution 
+
+(14) I was having a problem in loading the steps from the database
+Then I discovered that each field value I get is a string ! 
+And I need to convert from strings to numbers
+		for x = 2 to len(aStepsTree) {
+			nStepID      = 0+aStepsTree[x][1]
+			nParentID   = 0+aStepsTree[x][2]
+			cStepName  = aStepsTree[x][3][:name]
+			oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)					
+		}
