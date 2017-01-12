@@ -274,6 +274,7 @@ class GoalDesignerController from WindowsBase
 			nStepID      = 0+aStepsTree[x][1]
 			nParentID   = 0+aStepsTree[x][2]
 			cStepName  = aStepsTree[x][3][:name]
-			puts (cStepName)
 			oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)					
 		}
+		# Update the Time Machine
+			UpdateTheTimeMachine()

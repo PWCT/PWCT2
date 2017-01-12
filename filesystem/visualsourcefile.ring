@@ -84,14 +84,14 @@ class VisualSourceFile
 		cSQL = "SELECT * FROM STEPSTREE"
 		aResult = oDatabase.Execute(cSQL)
 		for record in aResult {
-			aStepsTable + [ record[:stepid] , 
-					  record[:parentid] , 
+			aStepsTable + [ 0+record[:stepid] , 
+					  0+record[:parentid] , 
 					  [
 						  :name 	= record[:name] ,
-						  :active 	= record[:active] , 
+						  :active 	= 0+record[:active] , 
 						  :code 	= record[:code] , 
-						  :interactionid = record[:interactionid] ,
-						  :visible 	= record[:visible]
+						  :interactionid = 0+record[:interactionid] ,
+						  :visible 	= 0+record[:visible]
 					  ]
 					] 
 		}
@@ -102,8 +102,8 @@ class VisualSourceFile
 		aResult = oDatabase.Execute(cSQL)
 		for record in aResult {
 			aInteractionsTable + [ 
-				record[:interactionid] , 
-				record[:type] , 
+				0+record[:interactionid] , 
+				0+record[:type] , 
 				record[:component] ,
 				record[:date] , 
 				record[:time] 
