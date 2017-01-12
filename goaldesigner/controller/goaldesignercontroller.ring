@@ -271,8 +271,8 @@ class GoalDesignerController from WindowsBase
 		oView.oStepsTree.aTree = []
 		oView.oStepsTree.AddStartPoint()
 		for x = 2 to len(aStepsTree) {
-			nStepID      = 0+aStepsTree[x][1]
-			nParentID   = 0+aStepsTree[x][2]
+			nStepID      = aStepsTree[x][1]
+			nParentID   = aStepsTree[x][2]
 			cStepName  = aStepsTree[x][3][:name]
 			oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)					
 		}
