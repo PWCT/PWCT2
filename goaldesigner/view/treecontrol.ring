@@ -20,7 +20,7 @@ class TreeControl from qTreeWidget
 		return self
 
 	func AddNode nParentID,nID,cText
-		InsertNode(nParentID,nID,cText,-1)
+		return InsertNode(nParentID,nID,cText,-1)
 
 	func InsertNode nParentID,nID,cText,nIndex
 		oParent = GetObjByID(nParentID)
@@ -43,6 +43,7 @@ class TreeControl from qTreeWidget
 			}
 			setItemWidget(oItem,0,oLabel)
 		}
+		return oItem
 
 	func GetObjByID id
 		nPos = std_find2(aTree,id,C_TREECONTROL_ID)

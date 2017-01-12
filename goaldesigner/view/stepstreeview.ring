@@ -39,7 +39,7 @@ class StepsTreeView from TreeControl
 		return oLabel
 
 	func AddStep nParentID,nID,cText
-		AddNode(nParentID,nID,cText)
+		return AddNode(nParentID,nID,cText)
 
 	func InsertStep nParentID,nID,cText,nIndex
 		InsertNode(nParentID,nID,cText,nIndex)
