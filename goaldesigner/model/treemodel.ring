@@ -19,6 +19,18 @@ class TreeModel
 	aBuffer = []		# List used for Cut, Copy & Paste operations
 
 	/*
+		The next method return the ID
+	*/
+	func GetID
+		return nID
+
+	/*
+		The next method set the ID
+	*/
+	func SetID nIDValue
+		nID = nIDValue
+
+	/*
 		The next method add new nodes to the tree
 		The method check where to inset new nodes
 		We have tree in the correct order (Top-Down)

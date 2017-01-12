@@ -15,6 +15,8 @@ class VisualSourceFile
 
 	aInteractionsTable = []
 
+	nStepsID = 0 		nInteractionsID = 0	
+
 	func RemoveFile
 		remove(cFileName)
 
@@ -47,9 +49,22 @@ class VisualSourceFile
 	func GetInteractionsTable
 		return aInteractionsTable
 
+	func SetStepsID nID
+		nStepsID = nID
+
+	func GetStepsID
+		return nStepsID
+
+	func SetInteractionsID nID
+		nInteractionsID = nID
+
+	func GetInteractionsID 
+		return nInteractionsID
+
 	func CreateTables
 		CreateStepsTable()
 		CreateInteractionsTable()
+		CreateIDsTable()
 
 	func LoadTables
 		LoadStepsTable()
@@ -77,6 +92,12 @@ class VisualSourceFile
          			COMPONENT  			TEXT  			NOT NULL,
          			DATE        			TEXT,
          			TIME        			TEXT );"
+		oDatabase.Execute(cSQL)
+
+	func CreateIDsTable
+		cSql = "CREATE TABLE IDS(
+		         	STEPSID		INT 		NOT NULL,
+		         	INTERACTIONSID	INT 		NOT NULL );"
 		oDatabase.Execute(cSQL)
 
 	func LoadStepsTable
@@ -109,6 +130,13 @@ class VisualSourceFile
 				record[:time] 
 			] 
 		}
+
+	func LoadIDsTable
+		cSQL = "SELECT * FROM IDS"
+		aResult = oDatabase.Execute(cSQL)
+		record = aResult[1]
+		nStepsID 		= record[:stepsid]
+		nInteractionsID 	= record[:interactionsid]
 
 	func SaveStepsTable
 		cSQLAll = ""
@@ -143,4 +171,11 @@ class VisualSourceFile
 		oDatabase.Execute("begin")
 		oDatabase.Execute(cSQLAll)	
 		oDatabase.Execute("end")
+
+	func SaveIDsTable						
+		cSQL = "INSERT INTO IDS (STEPSID,INTERACTIONSID)
+         			VALUES (#{V1},#{V2}); " 
+		cSQL = substr(cSQL,"#{V1}", ""+nStepsID)
+		cSQL = substr(cSQL,"#{V2}", ""+nInteractionsID)						
+		oDatabase.Execute(cSQL)	
 

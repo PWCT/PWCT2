@@ -13,6 +13,18 @@ class InteractionModel
 			# 			C_INTERACTION_GENERATEDSTEP
 
 	/*
+		The next method return the ID
+	*/
+	func GetID
+		return nID
+
+	/*
+		The next method set the ID
+	*/
+	func SetID nIDValue
+		nID = nIDValue
+
+	/*
 		The next method is used when the user create a step 
 		The user step is used for organization (Comment) or (Written Code by hand)
 	*/

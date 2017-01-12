@@ -255,6 +255,8 @@ class GoalDesignerController from WindowsBase
 		oVisualSourceFile.Open()
 		oVisualSourceFile.SetStepsTreeTable(oModel.oStepsTreeModel.GetData())
 		oVisualSourceFile.SetInteractionsTable(oModel.oInteractionModel.GetData())
+		oVisualSourceFile.SetStepsID(oModel.oStepsTreeModel.GetID())
+		oVisualSourceFile.SetInteractionsID(oModel.oInteractionModel.GetID())
 		oVisualSourceFile.CreateTables()
 		oVisualSourceFile.SaveTables()
 		oVisualSourceFile.Close()
@@ -267,6 +269,8 @@ class GoalDesignerController from WindowsBase
 		oVisualSourceFile.Close()
 		oModel.oStepsTreeModel.SetData(aStepsTree)
 		oModel.oInteractionModel.SetData(aInteractions)
+		oModel.oStepsTreeModel.SetID(oVisualSourceFile.GetStepsID())
+		oModel.oInteractionModel.SetID(oVisualSourceFile.GetInteractionsID())
 		oView.oStepsTree.taketoplevelitem(0)	
 		oView.oStepsTree.aTree = []
 		oView.oStepsTree.AddStartPoint()
