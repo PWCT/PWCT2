@@ -62,15 +62,17 @@ class VisualSourceFile
 		return nInteractionsID
 
 	func CreateTables
+		CreateIDsTable()
 		CreateStepsTable()
 		CreateInteractionsTable()
-		CreateIDsTable()
 
 	func LoadTables
+		LoadIDsTable()
 		LoadStepsTable()
 		LoadInteractionsTable()
 
 	func SaveTables
+		SaveIDsTable()
 		SaveStepsTable()
 		SaveInteractionsTable()
 
@@ -135,8 +137,8 @@ class VisualSourceFile
 		cSQL = "SELECT * FROM IDS"
 		aResult = oDatabase.Execute(cSQL)
 		record = aResult[1]
-		nStepsID 		= record[:stepsid]
-		nInteractionsID 	= record[:interactionsid]
+		nStepsID 		= 0+record[:stepsid]
+		nInteractionsID 	= 0+record[:interactionsid]
 
 	func SaveStepsTable
 		cSQLAll = ""
