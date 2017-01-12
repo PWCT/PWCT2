@@ -116,11 +116,11 @@ class GoalDesignerView
 			setValueChangedEvent(Method(:ChangeTimeMachinePointAction))
 		}
 		btnSaveFile = new qPushButton(win) {
-			setText("Save File")
+			setText(T_GD_SAVEFILE) 	# "Save File"
 			setClickEvent(Method(:SaveFileAction))	
 		}
 		btnLoadFile = new qPushButton(win) {
-			setText("Load File")
+			setText(T_GD_LOADFILE)	# "Load File"
 			setClickEvent(Method(:LoadFileAction))	
 		}
 		layoutTimeMachine = new qHBoxLayout()

@@ -42,6 +42,11 @@
 	T_GD_DELETESTEP_AREYOUSURE = "Are you sure?"
 	T_GD_DELETESTEP_DOYOUWANT = "Do you want to delete the step?"
 
+	# Files
+	T_GD_LOADFILE = "Load File"
+	T_GD_SAVEFILE = "Save File"
+
+
 # Print Steps Window
 	T_GD_PS_PRINTSTEP = "Print Steps"				# The Window Title
 	T_GD_PS_STEPSTREE = "Steps Tree"			# Tab Page Header

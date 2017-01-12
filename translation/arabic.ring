@@ -42,6 +42,9 @@
 	T_GD_DELETESTEP_AREYOUSURE = "هل انت متاكد؟"
 	T_GD_DELETESTEP_DOYOUWANT = "هل تريد حذف هذه الخطوة؟"
 
+	# Files
+	T_GD_LOADFILE = "فتح ملف"
+	T_GD_SAVEFILE = "حفظ ملف"
 
 # Print Steps Window
 	T_GD_PS_PRINTSTEP = "طباعة الخطوات"			# The Window Title

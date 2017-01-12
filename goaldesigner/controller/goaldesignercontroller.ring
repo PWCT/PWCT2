@@ -262,24 +262,29 @@ class GoalDesignerController from WindowsBase
 		oVisualSourceFile.Close()
 
 	func LoadFileAction
-		oVisualSourceFile.Open()
-		oVisualSourceFile.LoadTables()
-		aStepsTree   =  oVisualSourceFile.GetStepsTreeTable()
-		aInteractions =  oVisualSourceFile.GetInteractionsTable()
-		oVisualSourceFile.Close()
-		oModel.oStepsTreeModel.SetData(aStepsTree)
-		oModel.oInteractionModel.SetData(aInteractions)
-		oModel.oStepsTreeModel.SetID(oVisualSourceFile.GetStepsID())
-		oModel.oInteractionModel.SetID(oVisualSourceFile.GetInteractionsID())
-		oView.oStepsTree.taketoplevelitem(0)	
-		oView.oStepsTree.aTree = []
-		oView.oStepsTree.AddStartPoint()
-		for x = 2 to len(aStepsTree) {
-			nStepID      = aStepsTree[x][1]
-			nParentID   = aStepsTree[x][2]
-			cStepName  = aStepsTree[x][3][:name]
-			oItem = oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)					
-			oView.oStepsTree.IgnoreStep(oItem,not aStepsTree[x][3][:active])
-		}
+		# Get Data From the Visual Source File
+			oVisualSourceFile.Open()
+			oVisualSourceFile.LoadTables()
+			aStepsTree   =  oVisualSourceFile.GetStepsTreeTable()
+			aInteractions =  oVisualSourceFile.GetInteractionsTable()
+			oVisualSourceFile.Close()
+		# Update Objects
+			oModel.oStepsTreeModel.SetData(aStepsTree)
+			oModel.oInteractionModel.SetData(aInteractions)
+			oModel.oStepsTreeModel.SetID(oVisualSourceFile.GetStepsID())
+			oModel.oInteractionModel.SetID(oVisualSourceFile.GetInteractionsID())
+		# Remove the current Steps From the Tree Control
+			oView.oStepsTree.taketoplevelitem(0)	
+			oView.oStepsTree.aTree = []
+			oView.oStepsTree.AddStartPoint()
+		# Add Steps to the Tree
+			for x = 2 to len(aStepsTree) {
+				nStepID      = aStepsTree[x][1]
+				nParentID   = aStepsTree[x][2]
+				cStepName  = aStepsTree[x][3][:name]
+				lIgnore = not aStepsTree[x][3][:active]
+				oItem = oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)					
+				oView.oStepsTree.IgnoreStep(oItem,lIgnore)
+			}
 		# Update the Time Machine
 			UpdateTheTimeMachine()
