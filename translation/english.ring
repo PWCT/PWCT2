@@ -43,7 +43,7 @@
 	T_GD_DELETESTEP_DOYOUWANT = "Do you want to delete the step?"
 
 	# Files
-	T_GD_LOADFILE = "Load File"
+	T_GD_OPENFILE = "Open File"
 	T_GD_SAVEFILE = "Save File"
 
 

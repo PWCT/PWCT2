@@ -251,6 +251,12 @@ class GoalDesignerController from WindowsBase
 		}
 
 	func SaveFileAction
+		# Set the file Name
+			new qfiledialog(oView.win) {
+				cFileName = getsavefilename(this.oView.win,"open file",currentdir(),"source files(*.pwct)")
+			}
+			if cFileName = NULL { return }
+			oVisualSourceFile.cFileName = cFileName
 		oVisualSourceFile.RemoveFile()
 		oVisualSourceFile.Open()
 		oVisualSourceFile.SetStepsTreeTable(oModel.oStepsTreeModel.GetData())
@@ -261,7 +267,13 @@ class GoalDesignerController from WindowsBase
 		oVisualSourceFile.SaveTables()
 		oVisualSourceFile.Close()
 
-	func LoadFileAction
+	func OpenFileAction
+		# Get the file Name
+			new qfiledialog(oView.win) {
+				cFileName = getopenfilename(this.oView.win,"open file",currentdir(),"source files(*.pwct)")
+			}
+			if cFileName = NULL { return }
+			oVisualSourceFile.cFileName = cFileName
 		# Get Data From the Visual Source File
 			oVisualSourceFile.Open()
 			oVisualSourceFile.LoadTables()

@@ -43,7 +43,7 @@
 	T_GD_DELETESTEP_DOYOUWANT = "هل تريد حذف هذه الخطوة؟"
 
 	# Files
-	T_GD_LOADFILE = "فتح ملف"
+	T_GD_OPENFILE = "فتح ملف"
 	T_GD_SAVEFILE = "حفظ ملف"
 
 # Print Steps Window

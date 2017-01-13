@@ -115,18 +115,20 @@ class GoalDesignerView
 		sliderTimeMachine = new TimeMachineView(win) {
 			setValueChangedEvent(Method(:ChangeTimeMachinePointAction))
 		}
+		btnOpenFile = new qPushButton(win) {
+			setText(T_GD_OPENFILE)	# "Load File"
+			setClickEvent(Method(:OpenFileAction))	
+		}
+		setBtnImage(btnOpenFile,"images/open.png")
 		btnSaveFile = new qPushButton(win) {
 			setText(T_GD_SAVEFILE) 	# "Save File"
 			setClickEvent(Method(:SaveFileAction))	
 		}
-		btnLoadFile = new qPushButton(win) {
-			setText(T_GD_LOADFILE)	# "Load File"
-			setClickEvent(Method(:LoadFileAction))	
-		}
+		setBtnImage(btnSaveFile,"images/save.png")		
 		layoutTimeMachine = new qHBoxLayout()
 		{	
-			AddWidget(btnSaveFile)
-			AddWidget(btnLoadFile)
+			AddWidget(btnOpenFile)
+			AddWidget(btnSaveFile)		
 			AddWidget(sliderTimeMachine)
 		}
 		layout1 = new qVBoxLayout()
