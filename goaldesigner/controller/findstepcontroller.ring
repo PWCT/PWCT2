@@ -42,9 +42,19 @@ class FindStepController from SubWindowsParent
 			oItem = Parent().oView.oStepsTree.GetObjByID(nStepID)
 			Parent().oView.oStepsTree.SetCurrentItem(oItem,0)			
 		Catch	
+			new qmessagebox(oView.win)
+ 			 {
+    		            	setwindowtitle("Sorry")
+       			         	settext("Can't find the item")                 
+                			setstandardbuttons(QMessageBox_Yes)
+                			show()
+       			 }
 			# The Item is not found (Maybe because of Time Position Change)		
-			FindValueAction()	
-		}
+				cEvent = oView.oListResult.getCurrentItemChangedEvent()
+				oView.oListResult.setCurrentItemChangedEvent("")
+				FindValueAction()	
+				oView.oListResult.setCurrentItemChangedEvent(cEvent)
+		}		
 
 	func ReplaceAction
 		if len(aStepIDResult) = 0 { return }	

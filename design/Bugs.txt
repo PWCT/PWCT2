@@ -7,9 +7,9 @@
 
 ===========================================================
 Status
-	* Bugs Count : 14
+	* Bugs Count : 15
 	* Fixed Bugs : 14
-	* UnFixed Bugs : 0
+	* UnFixed Bugs : 1
 ===========================================================
 (1)  Fixed : We created over 6 thouands steps, then using the search window
 after selecting an item in the search result list we get the next error
@@ -198,3 +198,140 @@ Fixed : The node ID after paste operation - Avoid extra large numbers
 ===========================================================
 (14) 
 Fixed : Very slow save operation - solved using begin and end commands
+===========================================================
+(15) Fixed
+Line 61 Error (R4) : Stack Overflow !
+In find In get_window_pos In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 45  In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
+called from line 1  In qapp_exec In method exec() in file ring_qt.ring
+called from line 51  In function test_goaldesigner() in file B:/pwct2/goaldesigner.ring
+
+Solved using the next code in itemselectedaction()
+	# The Item is not found (Maybe because of Time Position Change)		
+				cEvent = oView.oListResult.getCurrentItemChangedEvent()
+				oView.oListResult.setCurrentItemChangedEvent("")
+				FindValueAction()	
+				oView.oListResult.setCurrentItemChangedEvent(cEvent)
