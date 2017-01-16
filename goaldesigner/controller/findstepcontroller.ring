@@ -44,8 +44,8 @@ class FindStepController from SubWindowsParent
 		Catch	
 			new qmessagebox(oView.win)
  			 {
-    		            	setwindowtitle("Sorry")
-       			         	settext("Can't find the item")                 
+    		            	setwindowtitle(T_GD_FS_SORRY) # "Sorry"
+       			         	settext(T_GD_FD_CANTFINDTHEITEM) # "Can't find the item"                 
                 			setstandardbuttons(QMessageBox_Yes)
                 			show()
        			 }

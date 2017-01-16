@@ -65,4 +65,5 @@
 	T_GD_FS_REPLACE = "استبدال"			# Button
 	T_GD_FS_REPLACEALL = "استبدال الجميع"		# Button
 	T_GD_FS_CLOSE = "اغلاق"				# Button
-
+	T_GD_FS_SORRY = "عفوا"				
+	T_GD_FD_CANTFINDTHEITEM  = "لايمكن ايجاد الخطوة"

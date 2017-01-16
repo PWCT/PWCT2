@@ -66,4 +66,5 @@
 	T_GD_FS_REPLACE = "Replace"			# Button
 	T_GD_FS_REPLACEALL = "Replace All"		# Button
 	T_GD_FS_CLOSE = "Close"				# Button
-
+	T_GD_FS_SORRY = "Sorry"				
+	T_GD_FD_CANTFINDTHEITEM  = "Can't find the step"
