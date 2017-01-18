@@ -40,7 +40,7 @@ load "filesystem/databasesqlite.ring"
 load "filesystem/database.ring"
 load "filesystem/visualsourcefile.ring"
 
-if filename()  = sysargv[2] {
+if IsMainSourceFile() {
 	Test_GoalDesigner()
 }
 
