@@ -5,7 +5,7 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-class PrintStepsView
+class PrintStepsView from WindowsViewParent
 
 	# Create the window and the Controls
 
@@ -67,5 +67,3 @@ class PrintStepsView
 
 		}
 
-	func Close
-		win.close()

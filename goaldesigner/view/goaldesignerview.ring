@@ -5,7 +5,7 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-class GoalDesignerView
+class GoalDesignerView from WindowsViewParent
 
 	win = new qWidget() {
 		setLayoutDirection(T_LAYOUTDIRECTION)

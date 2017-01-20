@@ -5,7 +5,7 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-class FindStepView
+class FindStepView from WindowsViewParent
 
 	# The Search and Replace Text
 
@@ -116,5 +116,4 @@ class FindStepView
 
 		}
 
-	func Close
-		win.close()
+
