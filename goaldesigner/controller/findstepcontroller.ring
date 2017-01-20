@@ -5,7 +5,7 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-class FindStepController from SubWindowsParent
+class FindStepController from WindowsControllerParent
 
 	oView = new FindStepView
 

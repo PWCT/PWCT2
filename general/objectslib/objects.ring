@@ -7,31 +7,31 @@
 
 
 # List of objects (Windows/Forms)
-	$ObjectsList = []	# Contains sub lists [object ID , Object]
+	$RingQt_ObjectsList = []	# Contains sub lists [object ID , Object]
 
 # The Object ID Counter
-	$ObjectID = 0
+	$RingQt_ObjectID = 0
 
 # Variable used for Windows/Forms object name - used for setting events 
-	$ObjName = ""
+	$RingQt_ObjName = ""
 
 # The next constants for the Objects List
-	C_OBJECTSLIST_ID 		= 1
-	C_OBJECTSLIST_OBJECT 	= 2
+	C_RINGQT_OBJECTSLIST_ID 		= 1
+	C_RINGQT_OBJECTSLIST_OBJECT 	= 2
 
 /*
-	The next function create new object, add the object to the $ObjectsList
-	Then set $ObjName to the object in the $ObjectsList
+	The next function create new object, add the object to the $RingQt_ObjectsList
+	Then set $RingQt_ObjName to the object in the $RingQt_ObjectsList
 	Then call the start() method
 */
 
 func Open_Window cClass
-	$ObjectID++
-	$ObjectsList + [$ObjectID,""]	
-	$ObjName = "$ObjectsList[Get_Window_Pos("+$ObjectID+")]" +
-			 "[C_OBJECTSLIST_OBJECT]"
-	cCode = $ObjName + " = new " + cClass + nl + 
-		  $ObjName + ".start()"
+	$RingQt_ObjectID++
+	$RingQt_ObjectsList + [$RingQt_ObjectID,""]	
+	$RingQt_ObjName = "$RingQt_ObjectsList[Get_Window_Pos("+$RingQt_ObjectID+")]" +
+			 "[C_RINGQT_OBJECTSLIST_OBJECT]"
+	cCode = $RingQt_ObjName + " = new " + cClass + nl + 
+		  $RingQt_ObjName + ".start()"
 	eval(cCode)	
 
 /*
@@ -39,7 +39,7 @@ func Open_Window cClass
 */
 
 func Last_Window
-	return $ObjectsList[len($ObjectsList)][C_OBJECTSLIST_OBJECT]
+	return $RingQt_ObjectsList[len($RingQt_ObjectsList)][C_RINGQT_OBJECTSLIST_OBJECT]
 
 /*
 	The next function for using in GUI controls events
@@ -50,7 +50,7 @@ func Method cMethod
 	if right(cMethod,1) != ")" {
 		cMethod += "()"
 	}
-	return $objname+"."+cMethod
+	return $RingQt_objname+"."+cMethod
 
 /*
 	The next function get the Window ID
@@ -58,7 +58,7 @@ func Method cMethod
 */
 
 func Get_Window_Pos nID
-	return find($ObjectsList,nID,C_OBJECTSLIST_ID)
+	return find($RingQt_ObjectsList,nID,C_RINGQT_OBJECTSLIST_ID)
 
 /*
 	The next class is the parent class for Windows/Forms Classes
@@ -66,16 +66,16 @@ func Get_Window_Pos nID
 	When you close the window just use Super.Close()
 */
 
-class WindowsBase
+class WindowsControllerBase
 
-	nID = $ObjectID
+	nID = $RingQt_ObjectID
 
 	func Close
 		nPos = Get_Window_Pos(nID)
-		del($ObjectsList,nPos)
+		del($RingQt_ObjectsList,nPos)
 
 	func ObjectID
 		return nID
 
 	func GetObjectByID nID
-		return $ObjectsList[nID][C_OBJECTSLIST_OBJECT]
+		return $RingQt_ObjectsList[nID][C_RINGQT_OBJECTSLIST_OBJECT]

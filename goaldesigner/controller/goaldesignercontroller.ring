@@ -5,7 +5,7 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-class GoalDesignerController from WindowsBase
+class GoalDesignerController from WindowsControllerParent
 
 	oView = new GoalDesignerView
 	oModel = new GoalDesignerModel

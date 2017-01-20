@@ -5,7 +5,7 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-class PrintStepsController from SubWindowsParent
+class PrintStepsController from WindowsControllerParent
 
 	oView = new PrintStepsView
 
