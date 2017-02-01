@@ -23,7 +23,7 @@ class ComponentsBrowserView from WindowsViewParent
 				AddWidget(labelSearch)
 				AddWidget(TextSearch)
 			}
-			ComponentsTree = new StepsTreeView(win)
+			ComponentsTree = new ComponentsTreeView(win)
 			layoutAll = new qVBoxLayout() {
 				AddLayout(LayoutSearch)
 				AddWidget(ComponentsTree)

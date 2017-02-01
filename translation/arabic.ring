@@ -76,3 +76,5 @@
 
 	T_CB_COMPONENTSBROWSER = "متصفح المكونات"
 	T_CB_SEARCH	= "بحث"
+	T_CB_COMPONENTSTREE = "شجرة المكونات"
+	T_CB_RINGPWCT = "رينج بدون كود"

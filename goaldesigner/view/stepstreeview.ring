@@ -15,6 +15,9 @@ class StepsTreeView from TreeControl
 
 	aLabels = []		# List of Labels controls	
 
+	cControlHeader = T_GD_StepsTree 
+	cStartPointText = T_GD_FirstStep
+
 	func Init win
 		super.init(win)
 		AddStartPoint()
@@ -25,9 +28,9 @@ class StepsTreeView from TreeControl
 		oFirststep = new qtreewidgetitem()
 		addtoplevelitem(oFirststep)
 		AddToTree(1,oFirstStep)
-		setheaderlabel(T_GD_StepsTree )
+		setheaderlabel(cControlHeader)
 		oLabel = new qLabel(self) {
-			settext(this.oStyle.image(C_LABELIMAGE_NODEICON)+ this.oStyle.text(T_GD_FirstStep,"green",""))
+			settext(this.oStyle.image(C_LABELIMAGE_NODEICON)+ this.oStyle.text(this.cStartPointText,"green",""))
 			setStyleSheet("font-size:" + this.nFontSize + "pt;")
 		}
 		setItemWidget(oFirstStep,0, oLabel)	

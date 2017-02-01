@@ -36,6 +36,7 @@ load "goaldesigner/controller/timemachinecontroller.ring"
 # Load the Components Browser Files
 load "componentsbrowser/controller/componentsbrowsercontroller.ring"
 load "componentsbrowser/view/componentsbrowserview.ring"
+load "componentsbrowser/view/componentstreeview.ring"
 
 # Load the File System Files
 load "filesystem/databasesqlite.ring"
