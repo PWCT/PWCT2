@@ -38,6 +38,10 @@ load "componentsbrowser/controller/componentsbrowsercontroller.ring"
 load "componentsbrowser/view/componentsbrowserview.ring"
 load "componentsbrowser/view/componentstreeview.ring"
 
+# Load the component classes
+load "component/controller/componentcontrollerparent.ring"
+load "component/view/componentviewparent.ring"
+
 # Load the File System Files
 load "filesystem/databasesqlite.ring"
 load "filesystem/database.ring"
