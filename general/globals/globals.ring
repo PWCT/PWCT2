@@ -34,6 +34,7 @@
 	C_TMDIRECTION_BACKWARD		= 1
 	C_TMDIRECTION_FORWARD		= 2
 
-
-
+# Components Files List
+	aComponentsFilesList = []
+	oGDWindow = NULL
 

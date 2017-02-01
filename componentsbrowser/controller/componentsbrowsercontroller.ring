@@ -64,6 +64,13 @@ class ComponentsBrowserController from WindowsControllerParent
 		}
 		aContent = oModel.GetNodeContent(nID)
 		cFile = aContent[:Code]
-		cFile = "vpl/english/" + cFile
-		cCode = read(cFile)
-		Eval(cCode)
+		cFilePath = "vpl/english/" + cFile + ".ring"
+		if find(aComponentsFilesList,cFilePath) = 0 { 
+			aComponentsFilesList + cFilePath
+			Eval("Load '" + cFilePath + "'")
+		}
+		self {
+			eval(cFile+"_component(parent())")
+		}
+
+		

@@ -26,8 +26,9 @@ class GoalDesignerController from WindowsControllerParent
 				:visible = True
 			]
 		)
-		oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)
+		oItem = oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)
 		UpdateTheTimeMachine()
+		return oItem
 
 	func TimeMachineGotoPresent
 		oTMController.TimeMachineGotoPresent(oView,oModel)
