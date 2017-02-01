@@ -71,3 +71,7 @@
 	T_GD_FS_CLOSE = "Close"				# Button
 	T_GD_FS_SORRY = "Sorry"				
 	T_GD_FD_CANTFINDTHEITEM  = "Can't find the step"
+
+# Components Browser Window
+
+	T_CB_COMPONENTSBROWSER = "Components Browser"

@@ -302,5 +302,7 @@ class GoalDesignerController from WindowsControllerParent
 			UpdateTheTimeMachine()
 
 	func InteractAction
+		Open_Window(:ComponentsBrowserController)
+		Last_Window().setParentObject(self)
 
 	func ModifyAction
