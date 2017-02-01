@@ -304,5 +304,6 @@ class GoalDesignerController from WindowsControllerParent
 	func InteractAction
 		Open_Window(:ComponentsBrowserController)
 		Last_Window().setParentObject(self)
+		Last_Window().AddComponents()
 
 	func ModifyAction

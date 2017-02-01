@@ -18,7 +18,7 @@ class ComponentsBrowserView from WindowsViewParent
 			}
 			oTextSearch = new qLineEdit(win) {
 				setFixedHeight(30)
-				setTextChangedEvent( Method( :SearchAction ) )
+				setTextEditedEvent( Method( :SearchAction ) )
 			}
 			olayoutSearch = new qHBoxLayout() {
 				AddWidget(olabelSearch)

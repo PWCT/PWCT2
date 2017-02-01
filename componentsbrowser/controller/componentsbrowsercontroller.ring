@@ -10,8 +10,6 @@ class ComponentsBrowserController from WindowsControllerParent
 	oView = new ComponentsBrowserView
 	oModel = new TreeModel
 
-	AddComponents()
-
 	func KeyPressAction
 		if oView.oWinFilter.getKeyCode() = Qt_Key_Escape {	
 			CloseAction()		
@@ -38,6 +36,12 @@ class ComponentsBrowserController from WindowsControllerParent
 	func SearchAction
 		cFind = oView.oTextSearch.Text()	
 		aTree = oModel.GetData()
+		if cFind = "" {
+			oView.oComponentsTree {
+				SetCurrentItem(oFirstStep,0)
+			}
+			return
+		}
 		for x=2 to len(aTree) {
 			item = aTree[x]
 			aContent = item[C_TREEMODEL_CONTENT]

@@ -116,3 +116,7 @@ And I need to convert from strings to numbers
 			oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)					
 		}
 	Then i did this change in visualsource.ring
+
+(15) I changed the objects library to use RingQt_nID instead of nID
+	Because using nID in any method in any class that inherit from the objects classes
+	Will lead to problem
