@@ -75,3 +75,4 @@
 # Components Browser Window
 
 	T_CB_COMPONENTSBROWSER = "متصفح المكونات"
+	T_CB_SEARCH	= "بحث"

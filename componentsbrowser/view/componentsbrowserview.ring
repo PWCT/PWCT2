@@ -13,6 +13,22 @@ class ComponentsBrowserView from WindowsViewParent
 		{
 			setLayoutDirection(T_LAYOUTDIRECTION)
 
+			labelSearch = new qLabel(win) {
+				SetText(T_CB_SEARCH) 	# "Search"
+			}
+			TextSearch = new qTextEdit(win) {
+				setFixedHeight(30)
+			}
+			layoutSearch = new qHBoxLayout() {
+				AddWidget(labelSearch)
+				AddWidget(TextSearch)
+			}
+			ComponentsTree = new StepsTreeView(win)
+			layoutAll = new qVBoxLayout() {
+				AddLayout(LayoutSearch)
+				AddWidget(ComponentsTree)
+			}
+			SetLayout(LayoutAll)
 			resize(600,500)
 			setWindowTitle(T_CB_COMPONENTSBROWSER)		
 			setwindowflags(Qt_CustomizeWindowHint | Qt_WindowTitleHint | Qt_WindowStaysOnTopHint) 
