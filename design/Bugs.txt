@@ -7,8 +7,8 @@
 
 ===========================================================
 Status
-	* Bugs Count : 15
-	* Fixed Bugs : 15
+	* Bugs Count : 16
+	* Fixed Bugs : 16
 	* UnFixed Bugs : 0
 ===========================================================
 (1)  Fixed : We created over 6 thouands steps, then using the search window
@@ -335,3 +335,17 @@ Solved using the next code in itemselectedaction()
 				oView.oListResult.setCurrentItemChangedEvent("")
 				FindValueAction()	
 				oView.oListResult.setCurrentItemChangedEvent(cEvent)
+
+===========================================================
+(16) Fixed
+Line 2 Error (R12) : error in property name, property not found! : omodel
+In method settext() in file ring_qt.ring
+called from line 2  In method showdata() in file goaldesigner/controller/printstepscontroller.ring
+called from line 139  In method printstepsaction() in file goaldesigner/controller/goaldesignercontroller.ring
+called from line 1  In qapp_exec In method exec() in file ring_qt.ring
+called from line 54  In function test_goaldesigner() in file B:/pwct2/goaldesigner.ring
+called from line 47  in file B:/pwct2/goaldesigner.ring
+
+The problem was in the Objects Library , using RingQt_nID instead of nID
+=========================================================== 
+
