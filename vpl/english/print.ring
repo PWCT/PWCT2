@@ -1,4 +1,4 @@
-func print_component oParent
+func print_component_start oParent
 	oGDWindow = oParent.RingQt_nID
 	win = new qWidget() {
 		resize(400,400)

@@ -69,8 +69,6 @@ class ComponentsBrowserController from WindowsControllerParent
 			aComponentsFilesList + cFilePath
 			Eval("Load '" + cFilePath + "'")
 		}
-		self {
-			eval(cFile+"_component(parent())")
-		}
+		eval(cFile+"_component_start(parent())")
 
 		
