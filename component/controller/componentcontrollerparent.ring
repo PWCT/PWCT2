@@ -20,13 +20,13 @@ Class ComponentControllerParent from WindowsControllerParent
 		nStepID = parent().oView.oStepsTree.GetIDByObj(oItem)
 		parent().oModel.SaveStepCode(nStepID,cCode)
 
-	func SaveParent
+	func GetParentStep 
 		oItem = parent().oView.oStepsTree.currentItem()
 		return oItem
 
-	func SaveLast
+	func GetActiveStep 
 		return oItem
 
-	func SetParent oNewItem
+	func SetActiveStep oNewItem
 		oItem = oNewItem
 		parent().oView.oStepsTree.SetCurrentItem(oItem,0)
