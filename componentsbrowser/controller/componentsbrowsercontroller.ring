@@ -57,3 +57,13 @@ class ComponentsBrowserController from WindowsControllerParent
 		}
 
 	func SelectAction
+		oItem  = oView.oComponentsTree.currentItem()
+		nID = oView.oComponentsTree.GetIDByObj(oItem)
+		if nID = 1 {	# Avoid root node
+			return
+		}
+		aContent = oModel.GetNodeContent(nID)
+		cFile = aContent[:Code]
+		cFile = "vpl/english/" + cFile
+		cCode = read(cFile)
+		Eval(cCode)

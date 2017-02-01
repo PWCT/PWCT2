@@ -47,7 +47,7 @@ class ComponentsBrowserView from WindowsViewParent
 			SetLayout(oLayoutAll)
 			resize(600,500)
 			setWindowTitle(T_CB_COMPONENTSBROWSER)		
-			setwindowflags(Qt_CustomizeWindowHint | Qt_WindowTitleHint | Qt_WindowStaysOnTopHint) 
+			setwindowflags(Qt_CustomizeWindowHint | Qt_WindowTitleHint) 
 
 			oWinFilter = new qallevents(win)
 			oWinFilter.setKeyPressEvent(Method(:KeyPressAction))								
