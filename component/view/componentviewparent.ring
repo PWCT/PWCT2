@@ -6,3 +6,9 @@
 */
 
 class ComponentViewParent from WindowsViewParent
+
+	win = new qWidget() {
+		resize(400,400)
+		LayoutAll = new qVBoxLayout()
+		SetLayout(LayoutAll)
+	}

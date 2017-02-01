@@ -24,12 +24,11 @@ Class PrintComponentController from ComponentControllerParent
 		SetStepCode("Yes I'm the new code")
 
 class PrintComponentView from ComponentViewParent
-	win = new qWidget() {
-		resize(400,400)
-		setWindowTitle("Print Component")
+	 
+		win.setWindowTitle("Print Component")
 		#setwindowflags(Qt_CustomizeWindowHint | Qt_WindowTitleHint) 
-		new qPushButton(win) {
+		btnTest = new qPushButton(win) {
 			setText(:test)
 			setClickEvent( Method(:TestAction) )
 		}
-	}
+	 	LayoutAll.AddWidget(btnTest)
