@@ -1,21 +1,27 @@
-func print_component_start oParent
-	oGDWindow = oParent.RingQt_nID
+func PrintComponentStart oParent
+	Open_Window(:PrintComponentController)
+	Last_Window().setParentObject(oParent)
+
+Class PrintComponentController from WindowsControllerParent
+
+	oView = new PrintComponentView
+
+	func testAction 
+		oItem = parent().AddStep('test')
+		parent().oView.oStepsTree.SetCurrentItem(oItem,0)
+		oItem = parent().AddStep('one')
+		nStepID = parent().oView.oStepsTree.GetIDByObj(oItem)
+		parent().oModel.SaveStepCode(nStepID,"The one step code")
+		oItem = parent().AddStep('two')
+		nStepID = parent().oView.oStepsTree.GetIDByObj(oItem)
+		parent().oModel.SaveStepCode(nStepID,"The two step code")
+
+class PrintComponentView from WindowsViewParent
 	win = new qWidget() {
 		resize(400,400)
 		setWindowTitle("Print Component")
 		new qPushButton(win) {
 			setText(:test)
-			setClickEvent("print_component_go($RingQt_ObjectsList[oGDWindow][2])")
+			setClickEvent( Method(:TestAction) )
 		}
-		show()
 	}
-
-func print_component_go oParent
-	oItem = oParent.AddStep('test')
-	oParent.oView.oStepsTree.SetCurrentItem(oItem,0)
-	oItem = oParent.AddStep('one')
-	nStepID = oParent.oView.oStepsTree.GetIDByObj(oItem)
-	oParent.oModel.SaveStepCode(nStepID,"The one step code")
-	oItem = oParent.AddStep('two')
-	nStepID = oParent.oView.oStepsTree.GetIDByObj(oItem)
-	oParent.oModel.SaveStepCode(nStepID,"The two step code")

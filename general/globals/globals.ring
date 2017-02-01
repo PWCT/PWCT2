@@ -36,5 +36,3 @@
 
 # Components Files List
 	aComponentsFilesList = []
-	oGDWindow = NULL
-
