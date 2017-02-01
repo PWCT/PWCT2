@@ -29,5 +29,5 @@ class ComponentsTreeView from StepsTreeView
 			nParentID   = aStepsTree[x][2]
 			cStepName  = aStepsTree[x][3][:name]
 			oItem = AddStep(nParentID,nStepID,cStepName)								
-			SetCurrentItem(oItem,1)
+			ScrollToItem(oItem,0)
 		}
