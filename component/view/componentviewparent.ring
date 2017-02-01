@@ -9,6 +9,15 @@ class ComponentViewParent from WindowsViewParent
 
 	win = new qWidget() {
 		resize(400,400)
+		setWindowTitle("Interation Window")
 		LayoutAll = new qVBoxLayout()
 		SetLayout(LayoutAll)
 	}
+
+	func AddTitle cTitle
+		oLabel = new qLabel(win) {
+			setText(cTitle)
+			setFixedHeight(50)
+			setStyleSheet("font-size:16pt;color:white;background-color:purple;")
+		}
+		LayoutAll.AddWidget(oLabel)

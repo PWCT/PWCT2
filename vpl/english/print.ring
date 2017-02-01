@@ -25,8 +25,7 @@ Class PrintComponentController from ComponentControllerParent
 
 class PrintComponentView from ComponentViewParent
 	 
-		win.setWindowTitle("Print Component")
-		#setwindowflags(Qt_CustomizeWindowHint | Qt_WindowTitleHint) 
+		AddTitle("Print Component")
 		btnTest = new qPushButton(win) {
 			setText(:test)
 			setClickEvent( Method(:TestAction) )
