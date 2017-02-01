@@ -32,7 +32,6 @@ class ComponentsBrowserController from WindowsControllerParent
 			oView.oComponentsTree.ScrollToItem(oItem,0)
 		}
 
-
 	func SearchAction
 		cFind = oView.oTextSearch.Text()	
 		aTree = oModel.GetData()
@@ -56,3 +55,5 @@ class ComponentsBrowserController from WindowsControllerParent
 				exit
 			}
 		}
+
+	func SelectAction

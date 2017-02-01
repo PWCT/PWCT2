@@ -78,3 +78,5 @@
 	T_CB_SEARCH	= "بحث"
 	T_CB_COMPONENTSTREE = "شجرة المكونات"
 	T_CB_RINGPWCT = "رينج بدون كود"
+	T_CB_SELECT = "حسنا"
+	T_CB_CLOSE = "إغلاق"

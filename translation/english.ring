@@ -78,3 +78,5 @@
 	T_CB_SEARCH	= "Search"
 	T_CB_COMPONENTSTREE = "Components Tree"
 	T_CB_RINGPWCT = "RingPWCT"
+	T_CB_SELECT = "Ok"
+	T_CB_CLOSE = "Close"

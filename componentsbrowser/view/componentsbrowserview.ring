@@ -17,7 +17,6 @@ class ComponentsBrowserView from WindowsViewParent
 				SetText(T_CB_SEARCH) 	# "Search"
 			}
 			oTextSearch = new qLineEdit(win) {
-				setFixedHeight(30)
 				setTextEditedEvent( Method( :SearchAction ) )
 			}
 			olayoutSearch = new qHBoxLayout() {
@@ -25,9 +24,25 @@ class ComponentsBrowserView from WindowsViewParent
 				AddWidget(oTextSearch)
 			}
 			oComponentsTree = new ComponentsTreeView(win)
+			oBtnSelect = new qPushButton(win)
+			{
+				setText(T_CB_SELECT)
+				setclickevent(Method(:SelectAction))
+			}
+			oBtnClose = new qPushButton(win)
+			{
+				setText(T_CB_CLOSE)
+				setclickevent(Method(:CloseAction))
+			}
+			oLayoutButtons = new qHBoxLayout()
+			{
+				addWidget(oBtnSelect)
+				addWidget(oBtnClose)
+			}
 			olayoutAll = new qVBoxLayout() {
 				AddLayout(oLayoutSearch)
 				AddWidget(oComponentsTree)
+				AddLayout(oLayoutButtons)
 			}
 			SetLayout(oLayoutAll)
 			resize(600,500)
