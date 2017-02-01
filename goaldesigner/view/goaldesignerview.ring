@@ -129,10 +129,12 @@ class GoalDesignerView from WindowsViewParent
 			setText(T_GD_INTERACT) 	# "Interact"
 			setClickEvent(Method(:InteractAction))	
 		}
+		setBtnImage(btnInteract,"images/interact.png")
 		btnModify = new qPushButton(win) {
 			setText(T_GD_MODIFY) 	# "Modify"
 			setClickEvent(Method(:ModifyAction))	
 		}		
+		setBtnImage(btnModify,"images/modify.png")
 		layoutTimeMachine = new qHBoxLayout()
 		{	
 			AddWidget(btnOpenFile)
