@@ -14,20 +14,4 @@ class ComponentsTreeView from StepsTreeView
 	# As a result of nested call to AddStartPoint()
 	func Init win
 		super.init(win)
-		AddComponents()
 		return self
-
-	func AddComponents
-		oVisualSourceFile = new VisualSourceFile
-		oVisualSourceFile.cFileName = "vpl/components.pwct"
-		oVisualSourceFile.Open()
-		oVisualSourceFile.LoadTables()
-		aStepsTree   =  oVisualSourceFile.GetStepsTreeTable()
-		oVisualSourceFile.Close()
-		for x = 2 to len(aStepsTree) {
-			nStepID      = aStepsTree[x][1]
-			nParentID   = aStepsTree[x][2]
-			cStepName  = aStepsTree[x][3][:name]
-			oItem = AddStep(nParentID,nStepID,cStepName)								
-			ScrollToItem(oItem,0)
-		}
