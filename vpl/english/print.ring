@@ -7,14 +7,21 @@ Class PrintComponentController from ComponentControllerParent
 	oView = new PrintComponentView
 
 	func testAction 
-		oItem = parent().AddStep('test')
-		parent().oView.oStepsTree.SetCurrentItem(oItem,0)
-		oItem = parent().AddStep('one')
-		nStepID = parent().oView.oStepsTree.GetIDByObj(oItem)
-		parent().oModel.SaveStepCode(nStepID,"The one step code")
-		oItem = parent().AddStep('two')
-		nStepID = parent().oView.oStepsTree.GetIDByObj(oItem)
-		parent().oModel.SaveStepCode(nStepID,"The two step code")
+		oParent = SaveParent()
+		NewParentStep(:Test)
+			NewStep(:one)
+				SetStepCode("The one step code")
+			NewStep(:two)
+				SetStepCode("The two step code")
+				oParent2 = SaveLast()
+		SetParent(oParent)
+		NewParentStep(:Test2)
+			NewStep(:one2)
+				SetStepCode("The one step code")
+			NewStep(:two2)
+				SetStepCode("The two step code")
+		SetParent(oParent2)
+		SetStepCode("Yes I'm the new code")
 
 class PrintComponentView from ComponentViewParent
 	win = new qWidget() {
