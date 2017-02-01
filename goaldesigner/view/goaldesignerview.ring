@@ -124,11 +124,21 @@ class GoalDesignerView from WindowsViewParent
 			setText(T_GD_SAVEFILE) 	# "Save File"
 			setClickEvent(Method(:SaveFileAction))	
 		}
-		setBtnImage(btnSaveFile,"images/save.png")		
+		setBtnImage(btnSaveFile,"images/save.png")
+		btnInteract = new qPushButton(win) {
+			setText(T_GD_INTERACT) 	# "Interact"
+			setClickEvent(Method(:InteractAction))	
+		}
+		btnModify = new qPushButton(win) {
+			setText(T_GD_MODIFY) 	# "Modify"
+			setClickEvent(Method(:ModifyAction))	
+		}		
 		layoutTimeMachine = new qHBoxLayout()
 		{	
 			AddWidget(btnOpenFile)
 			AddWidget(btnSaveFile)		
+			AddWidget(btnInteract)		
+			AddWidget(btnModify)		
 			AddWidget(sliderTimeMachine)
 		}
 		layout1 = new qVBoxLayout()

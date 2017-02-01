@@ -300,3 +300,7 @@ class GoalDesignerController from WindowsControllerParent
 			}
 		# Update the Time Machine
 			UpdateTheTimeMachine()
+
+	func InteractAction
+
+	func ModifyAction

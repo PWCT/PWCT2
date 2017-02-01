@@ -46,6 +46,9 @@
 	T_GD_OPENFILE = "Open File"
 	T_GD_SAVEFILE = "Save File"
 
+	# Using Components
+	T_GD_INTERACT = "Interact"
+	T_GD_MODIFY    = "Modify"
 
 # Print Steps Window
 	T_GD_PS_PRINTSTEP = "Print Steps"				# The Window Title

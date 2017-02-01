@@ -46,6 +46,10 @@
 	T_GD_OPENFILE = "فتح ملف"
 	T_GD_SAVEFILE = "حفظ ملف"
 
+	# Using Components
+	T_GD_INTERACT = "تفاعل"
+	T_GD_MODIFY    = "تعديل"
+
 # Print Steps Window
 	T_GD_PS_PRINTSTEP = "طباعة الخطوات"			# The Window Title
 	T_GD_PS_STEPSTREE = "شجرة الخطوات"			# Tab Page Header
