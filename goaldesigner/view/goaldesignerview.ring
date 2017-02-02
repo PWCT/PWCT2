@@ -8,10 +8,16 @@
 class GoalDesignerView from WindowsViewParent
 
 	win = new qWidget() {
+		setFocusPolicy(2)	# Support Keyboard keys like 'a' and 'z'
 		setLayoutDirection(T_LAYOUTDIRECTION)
 		setWindowTitle(T_GD_GOALDESIGNER)
 		oPageDesign = new qWidget() {
-			oStepsTree = new StepsTreeView(oPageDesign)
+			oStepsTree = new StepsTreeView(oPageDesign) {
+				setFocusPolicy(2)	# Support Keyboard keys like 'a' and 'z'
+				oTreeFilter = new qAllEvents(oStepsTree)
+				oTreeFilter.setKeyPressEvent(Method(:TreeKeyPress))
+				installeventfilter(oTreeFilter)
+			}
 			oPageDesignLayout = new qVBoxLayout() {
 				AddWidget(oStepsTree)
 			}

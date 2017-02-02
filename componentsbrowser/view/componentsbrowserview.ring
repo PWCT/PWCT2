@@ -26,7 +26,9 @@ class ComponentsBrowserView from WindowsViewParent
 				AddWidget(olabelSearch)
 				AddWidget(oTextSearch)
 			}
-			oComponentsTree = new ComponentsTreeView(win)
+			oComponentsTree = new ComponentsTreeView(win) {
+				setdoubleClickedEvent(Method(:SelectAction))
+			}
 			oBtnSelect = new qPushButton(win)
 			{
 				setText(T_CB_SELECT)

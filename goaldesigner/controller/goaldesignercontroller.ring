@@ -218,6 +218,15 @@ class GoalDesignerController from WindowsControllerParent
 	func ChangeTimeMachinePointAction
 		oTMController.ChangeTimeMachinePoint(oView,oModel)
 
+	func TreeKeyPress
+		nKey = oView.oTreeFilter.getkeycode()
+		if ( nKey >= 65 ) and (nKey <= 90 )  { # Keys from 'a' to 'z' 
+			InteractAction()
+			Last_Window().oView.oTextSearch.setText(CHAR(nKey))			
+			Last_Window().SearchAction()
+		}
+		oView.oTreeFilter.setEventOutput(False)
+
 	func KeyPress
 		#Puts( oView.oFilter.getkeycode() )
 		nKey = oView.oFilter.getkeycode()
@@ -251,6 +260,7 @@ class GoalDesignerController from WindowsControllerParent
 			case 84		# CTRL+T
 				InteractAction()
 		}
+		oView.oTreeFilter.setEventOutput(False)
 
 	func SaveFileAction
 		# Set the file Name
