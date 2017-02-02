@@ -32,11 +32,9 @@ class ComponentViewParent from WindowsViewParent
 	func TextBox cTitle,cVariable
 		oLabel = new qLabel(win) {
 			setText(cTitle)
-			#setFixedHeight(40)
 			setStyleSheet("font-size:14pt;color:white;background-color:purple;")
 		}
 		oText = new qLineEdit(win) {
-			#setFixedHeight(40)
 			setStyleSheet("font-size:14pt")
 		}
 		oLayout = new qHBoxLayout() {
@@ -44,6 +42,24 @@ class ComponentViewParent from WindowsViewParent
 		}
 		oLayoutAll.AddLayout(oLayout)
 		aVariables + [oText,cVariable,C_INTERACTION_CT_TEXTBOX ]
+
+	func ListBox cTitle,cVariable,aItems
+		oLabel = new qLabel(win) {
+			setText(cTitle)
+			setStyleSheet("font-size:14pt;color:white;background-color:purple;")
+		}
+		oList = new qListWidget(win) {
+			setStyleSheet("font-size:14pt")
+			for item in aItems {		
+				AddItem(Item)
+			}
+			setCurrentRow(0,2)
+		}
+		oLayout = new qHBoxLayout() {
+			AddWidget(oLabel) AddWidget(oList)
+		}
+		oLayoutAll.AddLayout(oLayout)
+		aVariables + [oList,cVariable,C_INTERACTION_CT_LISTBOX ]
 
 	func PageButtons
 		oBtnAgain = new qPushButton(win) {
