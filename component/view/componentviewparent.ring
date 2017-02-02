@@ -114,6 +114,6 @@ class ComponentViewParent from WindowsViewParent
 			case C_INTERACTION_CT_TEXTBOX 
 				oObject.settext(aValues[x])
 			case C_INTERACTION_CT_LISTBOX 
-				oObject.setcurrentrow((0+aValues[x])-1,2)
+				oObject.setcurrentrow((0+aValues[x])-1,2 | dec("10"))
 			}
 		}
