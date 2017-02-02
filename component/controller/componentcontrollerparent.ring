@@ -27,10 +27,14 @@ Class ComponentControllerParent from WindowsControllerParent
 			if ISNULL(oParent) { 
 				oParent = parent().oView.oStepsTree.currentItem() 
 				GenerateIID()
+				SaveVariablesValues()
 			}
 
 	func GenerateIID
 				nIID = parent().AddGeneratedInteraction(cComponent)
+
+	func SaveVariablesValues
+			parent().SaveVariablesValues(nIID,oView.GetVariablesValues())
 
 	func SetStepCode cCode
 		nStepID = parent().oView.oStepsTree.GetIDByObj(oItem)
@@ -67,7 +71,7 @@ Class ComponentControllerParent from WindowsControllerParent
 	func AgainAction			
 		GenerateAction()
 		parent().oView.oStepsTree.SetCurrentItem(oParent,0)
-		GenerateIID()
+		oParent = NULL
 
 	func GenerateAction		# To be written in the component
 

@@ -18,7 +18,7 @@ class ComponentViewParent from WindowsViewParent
 		installeventfilter(oWinFilter)
 	}
 
-	aVariables = []	# List contains the control + variable Name
+	aVariables = []	# List contains the [ Control Object , variable Name , Type ]
 
 	func Title cTitle
 		oLabel = new qLabel(win) {
@@ -79,7 +79,6 @@ class ComponentViewParent from WindowsViewParent
 		}
 	 	oLayoutAll.AddLayout(oLayoutButtons)
 
-
 	func Variable cVariable
 		nPos = find(aVariables,cVariable,C_INTERACTION_VL_NAME)
 		oObject = aVariables[nPos][C_INTERACTION_VL_OBJECT]
@@ -91,3 +90,17 @@ class ComponentViewParent from WindowsViewParent
 				cValue = oObject.currentrow() + 1
 		}
 		return cValue
+
+	func GetVariablesValues
+		cVariablesValues = ""
+		for item in aVariables {
+			oObject = item[C_INTERACTION_VL_OBJECT]
+			switch item[C_INTERACTION_VL_TYPE] {
+			case C_INTERACTION_CT_TEXTBOX 
+				cValue = oObject.text()
+			case C_INTERACTION_CT_LISTBOX 
+				cValue = "" + (oObject.currentrow() + 1)
+			}
+			cVariablesValues += cValue + ";;_RV_;;"
+		}
+		return cVariablesValues
