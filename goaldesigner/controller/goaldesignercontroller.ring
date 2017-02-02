@@ -353,7 +353,7 @@ class GoalDesignerController from WindowsControllerParent
 		# Check Step Type
 			nIID = oModel.GetInteractionID(nStepID)
 		# Get the Component File Name
-			cFile = oModel.oInteractionModel.GetInteractionComponent(nIID)
+			cFile = oModel.GetInteractionComponent(nIID)
 		# Use the Component
 				Open_Window(cFile+:ComponentController)
 				Last_Window().setParentObject(self)
