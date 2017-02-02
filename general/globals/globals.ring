@@ -36,3 +36,14 @@
 
 # Components Files List
 	aComponentsFilesList = []
+
+# Interaction - Variables List
+	C_INTERACTION_VL_OBJECT 	= 1
+	C_INTERACTION_VL_NAME 		= 2
+	C_INTERACTION_VL_TYPE 		= 3
+
+# Interaction - Controls Types
+	C_INTERACTION_CT_TEXTBOX  	= 1
+	C_INTERACTION_CT_CHECKBOX  	= 2
+	C_INTERACTION_CT_LISTBOX  	= 3
+

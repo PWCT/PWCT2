@@ -22,11 +22,13 @@ Class PrintComponentController from ComponentControllerParent
 				SetStepCode("The two step code")
 		SetActiveStep(oParent2)
 		SetStepCode("Yes I'm the new code")
+		SetActiveStep(oParent)
+		NewParentStep("Print Text : " + oView.Variable(:text))
 
 class PrintComponentView from ComponentViewParent
 	 
 		Title("Print Component")
-		TextBox("Enter text : " , "text")
+		TextBox("Enter text : " , :text)
 		btnTest = new qPushButton(win) {
 			setText(:test)
 			setClickEvent( Method(:TestAction) )

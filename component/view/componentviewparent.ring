@@ -41,4 +41,14 @@ class ComponentViewParent from WindowsViewParent
 			AddWidget(oLabel) AddWidget(oText)
 		}
 		LayoutAll.AddLayout(oLayout)
-		aVariables + [oText,cVariable]
+		aVariables + [oText,cVariable,C_INTERACTION_CT_TEXTBOX ]
+
+	func Variable cVariable
+		nPos = find(aVariables,cVariable,C_INTERACTION_VL_NAME)
+		oObject = aVariables[nPos][C_INTERACTION_VL_OBJECT]
+		cValue = NULL
+		switch aVariables[nPos][C_INTERACTION_VL_TYPE] {
+			case C_INTERACTION_CT_TEXTBOX 
+				cValue = oObject.text()
+		}
+		return cValue
