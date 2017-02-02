@@ -8,7 +8,7 @@
 class GoalDesignerView from WindowsViewParent
 
 	win = new qWidget() {
-		setFocusPolicy(2)	# Support Keyboard keys like 'a' and 'z'
+		#setFocusPolicy(2)	# Support Keyboard keys like 'a' and 'z'
 		setLayoutDirection(T_LAYOUTDIRECTION)
 		setWindowTitle(T_GD_GOALDESIGNER)
 		oPageDesign = new qWidget() {

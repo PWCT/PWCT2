@@ -230,8 +230,13 @@ class GoalDesignerController from WindowsControllerParent
 		oView.oTreeFilter.setEventOutput(False)
 
 	func KeyPress
-		#Puts( oView.oFilter.getkeycode() )
 		nKey = oView.oFilter.getkeycode()
+		if oView.oTreeFilter.getmodifiers() = 0 {	# No CTRL Key is pressed
+			if not (nKey=16777223) { 	# DEL
+				return
+			}
+		}
+		#Puts( oView.oFilter.getkeycode() )
 		switch nKey {
 			case 61		# CTRL + +
 				IncreaseSizeAction()
