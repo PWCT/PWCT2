@@ -87,5 +87,7 @@ class ComponentViewParent from WindowsViewParent
 		switch aVariables[nPos][C_INTERACTION_VL_TYPE] {
 			case C_INTERACTION_CT_TEXTBOX 
 				cValue = oObject.text()
+			case C_INTERACTION_CT_LISTBOX 
+				cValue = oObject.currentrow() + 1
 		}
 		return cValue
