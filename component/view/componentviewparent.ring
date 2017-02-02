@@ -10,6 +10,7 @@ class ComponentViewParent from WindowsViewParent
 	win = new qWidget() {
 		resize(600,10)
 		setWindowTitle("Interation Window")
+		setwindowflags(Qt_CustomizeWindowHint | Qt_WindowTitleHint | Qt_WindowStaysOnTopHint) 
 		oLayoutAll = new qVBoxLayout() 
 		SetLayout(oLayoutAll)
 		oWinFilter = new qallevents(win)
