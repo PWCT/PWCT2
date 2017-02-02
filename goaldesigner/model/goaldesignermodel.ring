@@ -15,7 +15,8 @@ class GoalDesignerModel
 			      :active = True , 
 			      :code = "" , 
 			      :interactionid = oInteractionModel.AddUserInteraction() ,
-			      :visible = True  ])
+			      :visible = True ,
+			      :stepnumber = 1  ])
 
 	func AddStep nParent,Content
 		nID =  oStepsTreeModel.AddNode(nParent,Content)
