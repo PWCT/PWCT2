@@ -51,3 +51,6 @@
 # Interaction - Mode
 	C_INTERACTIONMODE_NEW 		= 1
 	C_INTERACTIONMODE_MODIFY  	= 2
+
+# Interaction
+	C_INTERACTIONVALUES_SEPARATOR = ";;_RV_;;"

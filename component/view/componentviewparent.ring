@@ -101,12 +101,12 @@ class ComponentViewParent from WindowsViewParent
 			case C_INTERACTION_CT_LISTBOX 
 				cValue = "" + (oObject.currentrow() + 1)
 			}
-			cVariablesValues += cValue + ";;_RV_;;"
+			cVariablesValues += cValue + C_INTERACTIONVALUES_SEPARATOR
 		}
 		return cVariablesValues
 
 	func SetVariablesValues cVariablesValues
-		aValues = Split(cVariablesValues,";;_RV_;;")
+		aValues = Split(cVariablesValues,C_INTERACTIONVALUES_SEPARATOR)
 		for x = 1 to len( aVariables ) {
 			item = aVariables[x]
 			oObject = item[C_INTERACTION_VL_OBJECT]
