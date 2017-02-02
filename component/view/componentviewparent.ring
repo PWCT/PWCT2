@@ -17,6 +17,8 @@ class ComponentViewParent from WindowsViewParent
 		installeventfilter(oWinFilter)
 	}
 
+	aVariables = []	# List contains the control + variable Name
+
 	func AddTitle cTitle
 		oLabel = new qLabel(win) {
 			setText(cTitle)
@@ -24,3 +26,19 @@ class ComponentViewParent from WindowsViewParent
 			setStyleSheet("font-size:16pt;color:white;background-color:purple;")
 		}
 		LayoutAll.AddWidget(oLabel)
+
+	func AddTextBox cTitle,cVariable
+		oLabel = new qLabel(win) {
+			setText(cTitle)
+			setFixedHeight(50)
+			setStyleSheet("font-size:16pt;color:white;background-color:purple;")
+		}
+		oText = new qLineEdit(win) {
+			setFixedHeight(50)
+			setStyleSheet("font-size:16pt")
+		}
+		oLayout = new qHBoxLayout() {
+			AddWidget(oLabel) AddWidget(oText)
+		}
+		LayoutAll.AddLayout(oLayout)
+		aVariables + [oText,cVariable]
