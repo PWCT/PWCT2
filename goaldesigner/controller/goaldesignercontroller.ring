@@ -220,10 +220,12 @@ class GoalDesignerController from WindowsControllerParent
 
 	func TreeKeyPress
 		nKey = oView.oTreeFilter.getkeycode()
-		if ( nKey >= 65 ) and (nKey <= 90 )  { # Keys from 'a' to 'z' 
-			InteractAction()
-			Last_Window().oView.oTextSearch.setText(CHAR(nKey))			
-			Last_Window().SearchAction()
+		if oView.oTreeFilter.getmodifiers() = 0 {	# No CTRL Key is pressed
+			if ( nKey >= 65 ) and (nKey <= 90 )  { # Keys from 'a' to 'z' 
+				InteractAction()
+				Last_Window().oView.oTextSearch.setText(Lower(Char(nKey)))			
+				Last_Window().SearchAction()
+			}
 		}
 		oView.oTreeFilter.setEventOutput(False)
 
