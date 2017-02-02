@@ -10,8 +10,8 @@ class ComponentViewParent from WindowsViewParent
 	win = new qWidget() {
 		resize(600,10)
 		setWindowTitle("Interation Window")
-		LayoutAll = new qVBoxLayout() 
-		SetLayout(LayoutAll)
+		oLayoutAll = new qVBoxLayout() 
+		SetLayout(oLayoutAll)
 		oWinFilter = new qallevents(win)
 		oWinFilter.setKeyPressEvent(Method(:KeyPressAction))								
 		installeventfilter(oWinFilter)
@@ -25,7 +25,7 @@ class ComponentViewParent from WindowsViewParent
 			setFixedHeight(50)
 			setStyleSheet("font-size:16pt;color:white;background-color:purple;")
 		}
-		LayoutAll.AddWidget(oLabel)
+		oLayoutAll.AddWidget(oLabel)
 
 	func TextBox cTitle,cVariable
 		oLabel = new qLabel(win) {
@@ -40,15 +40,26 @@ class ComponentViewParent from WindowsViewParent
 		oLayout = new qHBoxLayout() {
 			AddWidget(oLabel) AddWidget(oText)
 		}
-		LayoutAll.AddLayout(oLayout)
+		oLayoutAll.AddLayout(oLayout)
 		aVariables + [oText,cVariable,C_INTERACTION_CT_TEXTBOX ]
 
 	func PageButtons
-		btnOk = new qPushButton(win) {
+		oBtnAgain = new qPushButton(win) {
+			setText("Again")
+			setClickEvent( Method(:AgainAction) )
+		}
+		oBtnOk = new qPushButton(win) {
 			setText("Ok")
 			setClickEvent( Method(:GenerateAction) )
 		}
-	 	LayoutAll.AddWidget(btnOk)
+		oBtnClose = new qPushButton(win) {
+			setText("Cancel")
+			setClickEvent( Method(:CloseAction) )
+		}
+		oLayoutButtons = new qHBoxLayout() {
+			AddWidget(oBtnAgain) AddWidget(oBtnOk) AddWidget(oBtnClose)
+		}
+	 	oLayoutAll.AddLayout(oLayoutButtons)
 
 
 	func Variable cVariable

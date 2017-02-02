@@ -35,3 +35,7 @@ Class ComponentControllerParent from WindowsControllerParent
 		if oView.oWinFilter.getKeyCode() = Qt_Key_Escape {	
 			CloseAction()		
 		}
+
+	func GenerateAction		# To be written in the component
+
+	func AgainAction			# To be written in the component
