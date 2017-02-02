@@ -80,3 +80,8 @@
 	T_CB_RINGPWCT = "رينج بدون كود"
 	T_CB_SELECT = "حسنا"
 	T_CB_CLOSE = "إغلاق"
+
+# Interaction Pages
+	T_IP_AGAIN = "مرة اخري"
+	T_IP_OK = "حسنا"
+	T_IP_CLOSE = "اغلاق"

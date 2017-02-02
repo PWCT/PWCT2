@@ -90,10 +90,11 @@ class VisualSourceFile
 	func CreateInteractionsTable
 		cSql = "CREATE TABLE INTERACTIONS(
 		         	INTERACTIONID 		INT 	PRIMARY KEY	NOT NULL,
-		         	TYPE 				INT 			NOT NULL,
-         			COMPONENT  			TEXT  			NOT NULL,
+		         	TYPE 				INT 				NOT NULL,
+         			COMPONENT  		TEXT  			NOT NULL,
          			DATE        			TEXT,
-         			TIME        			TEXT );"
+         			TIME        			TEXT,
+				VARIABLESVALUES	TEXT );"
 		oDatabase.Execute(cSQL)
 
 	func CreateIDsTable
@@ -129,7 +130,8 @@ class VisualSourceFile
 				0+record[:type] , 
 				record[:component] ,
 				record[:date] , 
-				record[:time] 
+				record[:time] ,
+				record[:variablesvalues]
 			] 
 		}
 
@@ -161,13 +163,14 @@ class VisualSourceFile
 	func SaveInteractionsTable
 		cSQLAll = ""		
 		for record in aInteractionsTable {						
-			cSQL = "INSERT INTO INTERACTIONS (INTERACTIONID,TYPE,COMPONENT,DATE,TIME)
-         				VALUES (#{V1},#{V2},'#{V3}','#{V4}','#{V5}'); " + NL
+			cSQL = "INSERT INTO INTERACTIONS (INTERACTIONID,TYPE,COMPONENT,DATE,TIME,VARIABLESVALUES)
+         				VALUES (#{V1},#{V2},'#{V3}','#{V4}','#{V5}','#{V6}'); " + NL
 			cSQL = substr(cSQL,"#{V1}", ""+record[C_INTERACTIONRECORD_ID])
 			cSQL = substr(cSQL,"#{V2}", ""+record[C_INTERACTIONRECORD_TYPE])
 			cSQL = substr(cSQL,"#{V3}", record[C_INTERACTIONRECORD_COMPONENT])
 			cSQL = substr(cSQL,"#{V4}", record[C_INTERACTIONRECORD_DATE])
 			cSQL = substr(cSQL,"#{V5}", record[C_INTERACTIONRECORD_TIME])
+			cSQL = substr(cSQL,"#{V6}", record[C_INTERACTIONRECORD_VARIABLESVALUES])
 			cSQLAll += cSQL						
 		}
 		oDatabase.Execute("begin")

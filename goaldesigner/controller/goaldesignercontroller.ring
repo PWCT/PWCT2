@@ -30,6 +30,24 @@ class GoalDesignerController from WindowsControllerParent
 		UpdateTheTimeMachine()
 		return oItem
 
+	func AddGeneratedInteraction 
+		oModel.oInteractionModel.AddUserInteraction()
+
+	func AddGeneratedStep cStepName,nIID
+		oItem  = oView.oStepsTree.currentItem()
+		nParentID = oView.oStepsTree.GetIDByObj(oItem)
+ 		nStepID = oModel.AddStep(nParentID,[
+				:name = cStepName,
+				:active = True , 
+				:code = "" , 
+			 	:interactionid = nIID ,
+				:visible = True
+			]
+		)
+		oItem = oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)
+		UpdateTheTimeMachine()
+		return oItem
+
 	func TimeMachineGotoPresent
 		oTMController.TimeMachineGotoPresent(oView,oModel)
 

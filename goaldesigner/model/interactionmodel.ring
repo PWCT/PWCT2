@@ -8,7 +8,7 @@
 class InteractionModel
 
 	nID = 0	# The ID Counter
-	aList = []	# Interactions List [ ID , nType, Component , Date , Time ]
+	aList = []	# Interactions List [ ID , nType, Component , Date , Time, Variables Values ]
 			# Interaction Type is C_INTERACTION_USERSTEP or
 			# 			C_INTERACTION_GENERATEDSTEP
 
@@ -32,7 +32,7 @@ class InteractionModel
 		# Increment the ID Counter
 			nID++		
 		# Add the new interaction record
-			aList + [nID,C_INTERACTION_USERSTEP,NULL,Date(),Time()]
+			aList + [nID,C_INTERACTION_USERSTEP,NULL,Date(),Time(), NULL ]
 		# Return the new Interaction ID
 			return nID
 

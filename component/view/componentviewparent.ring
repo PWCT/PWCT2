@@ -63,15 +63,15 @@ class ComponentViewParent from WindowsViewParent
 
 	func PageButtons
 		oBtnAgain = new qPushButton(win) {
-			setText("Again")
+			setText(T_IP_AGAIN)	# "Again"
 			setClickEvent( Method(:AgainAction) )
 		}
 		oBtnOk = new qPushButton(win) {
-			setText("Ok")
+			setText(T_IP_OK)		# "Ok"
 			setClickEvent( Method(:OkAction) )
 		}
 		oBtnClose = new qPushButton(win) {
-			setText("Close")
+			setText(T_IP_CLOSE)    # "Close"
 			setClickEvent( Method(:CloseAction) )
 		}
 		oLayoutButtons = new qHBoxLayout() {

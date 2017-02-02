@@ -80,3 +80,8 @@
 	T_CB_RINGPWCT = "RingPWCT"
 	T_CB_SELECT = "Ok"
 	T_CB_CLOSE = "Close"
+
+# Interaction Pages
+	T_IP_AGAIN = "Again"
+	T_IP_OK = "Ok"
+	T_IP_CLOSE = "Close"
