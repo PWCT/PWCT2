@@ -25,8 +25,8 @@ Class PrintComponentController from ComponentControllerParent
 
 class PrintComponentView from ComponentViewParent
 	 
-		AddTitle("Print Component")
-		AddTextBox("Enter text : " , "text")
+		Title("Print Component")
+		TextBox("Enter text : " , "text")
 		btnTest = new qPushButton(win) {
 			setText(:test)
 			setClickEvent( Method(:TestAction) )

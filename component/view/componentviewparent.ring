@@ -19,7 +19,7 @@ class ComponentViewParent from WindowsViewParent
 
 	aVariables = []	# List contains the control + variable Name
 
-	func AddTitle cTitle
+	func Title cTitle
 		oLabel = new qLabel(win) {
 			setText(cTitle)
 			setFixedHeight(50)
@@ -27,7 +27,7 @@ class ComponentViewParent from WindowsViewParent
 		}
 		LayoutAll.AddWidget(oLabel)
 
-	func AddTextBox cTitle,cVariable
+	func TextBox cTitle,cVariable
 		oLabel = new qLabel(win) {
 			setText(cTitle)
 			setFixedHeight(50)
