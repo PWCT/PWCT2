@@ -21,7 +21,8 @@ Class ComponentControllerParent from WindowsControllerParent
 
 	func NewParentStep cStep
 		if nInteractionMode = C_INTERACTIONMODE_MODIFY {
-			SelectStep()
+			nStepID = SelectStep()
+			EditStepName(cStep,nStepID)
 			return
 		}
 		SaveRoot()
@@ -31,16 +32,25 @@ Class ComponentControllerParent from WindowsControllerParent
 
 	func NewStep cStep
 		if nInteractionMode = C_INTERACTIONMODE_MODIFY {
-			SelectStep()
+			nStepID = SelectStep()
+			EditStepName(cStep,nStepID)
 			return
 		}
 		SaveRoot()
 		nStepNumber++
 		oItem = parent().AddGeneratedStep(cStep,nIID,nStepNumber)
 
-	func SelectStep 
+	func SelectStep   
 		nStepNumber++
-		oItem = parent().SelectStep(nIID,nStepNumber)
+		aList = parent().SelectStep(nIID,nStepNumber)
+		oItem = aList[1]
+		nStepID = aList[2]
+		return nStepID
+
+	func EditStepName cStep,nStepID
+		parent().oView.oStepsTree.editstep(oItem,cStep,parent().oModel.GetStepIgnoreStatus(nStepID))
+		parent().oModel.EditStepName(nStepID,cStep)
+
 
 	func SaveRoot
 		# Save the root node

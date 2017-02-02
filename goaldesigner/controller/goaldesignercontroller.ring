@@ -56,7 +56,7 @@ class GoalDesignerController from WindowsControllerParent
 	func SelectStep nIID,nStepNumber
 		nStepID = oModel.GetStepIDbyIID(nIID,nStepNumber)
 		oItem = oView.oStepsTree.GetObjByID(nStepID)
-		return oItem
+		return [oItem,nStepID]
 
 	func TimeMachineGotoPresent
 		oTMController.TimeMachineGotoPresent(oView,oModel)
