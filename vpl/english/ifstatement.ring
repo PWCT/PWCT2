@@ -7,8 +7,10 @@ Class IfStatementComponentController from ComponentControllerParent
 		NewParentStep("If " + Variable(:condition))
 			SetStepCode("if " +  Variable(:condition) + " { " )
 			NewStep("Start Here")
+			oStep = GetActiveStep()
 			NewStep("End of IF Statement")
 				SetStepCode("}")
+			SetActiveStep(oStep)
 
 class IfStatementComponentView from ComponentViewParent
 	 
