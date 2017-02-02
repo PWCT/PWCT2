@@ -80,5 +80,6 @@ class ComponentsBrowserController from WindowsControllerParent
 				Open_Window(cFile+:ComponentController)
 				Last_Window().setParentObject(parent())
 				Last_Window().cComponent = cFile
+				Last_Window().nInteractionMode = C_INTERACTIONMODE_NEW
 			CloseAction()
 		}

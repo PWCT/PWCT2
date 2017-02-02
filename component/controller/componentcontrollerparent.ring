@@ -13,6 +13,8 @@ Class ComponentControllerParent from WindowsControllerParent
 	nIID	= NULL		# Interaction ID
 	cComponent  = NULL	# Component Name
 
+	nInteractionMode		# New or Modify
+
 	func NewParentStep cStep
 		SaveRoot()
 		oItem = parent().AddGeneratedStep(cStep,nIID)
