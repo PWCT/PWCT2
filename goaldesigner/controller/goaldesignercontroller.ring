@@ -354,8 +354,11 @@ class GoalDesignerController from WindowsControllerParent
 			nIID = oModel.GetInteractionID(nStepID)
 		# Get the Component File Name
 			cFile = oModel.GetInteractionComponent(nIID)
+		# Get the Interaction Variables Values
+			cVariablesValues = oModel.GetInteractionVariablesValues(nIID)
 		# Use the Component
 				Open_Window(cFile+:ComponentController)
 				Last_Window().setParentObject(self)
 				Last_Window().cComponent = cFile
+				Last_Window().cVariablesValues = cVariablesValues
 				Last_Window().nInteractionMode = C_INTERACTIONMODE_MODIFY

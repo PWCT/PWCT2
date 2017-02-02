@@ -67,6 +67,16 @@ class InteractionModel
 
 
 	/*
+		The next method get the Interaction Variables Values
+	*/
+	func GetInteractionVariablesValues nIID
+		# Find the Interaction record
+			nPos = find(aList,nIID,C_INTERACTIONRECORD_ID)
+		# Return the component file 
+			return aList[nPos][C_INTERACTIONRECORD_VARIABLESVALUES]
+
+
+	/*
 		The next method is used to update the Interaction ID of a step after paste
 		We create new Interaction Record with the same information
 		But with a different ID

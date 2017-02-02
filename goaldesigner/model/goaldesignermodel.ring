@@ -89,6 +89,10 @@ class GoalDesignerModel
 	func GetInteractionComponent nIID
 		return oInteractionModel.GetInteractionComponent(nIID)
 
+	func GetInteractionVariablesValues nIID
+		return oInteractionModel.GetInteractionVariablesValues(nIID)
+
+
 	func MoveStepUp nStepID
 		oStepsTreeModel.MoveNodeUp(nStepID)
 
