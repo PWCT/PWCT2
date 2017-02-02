@@ -42,6 +42,9 @@ Class ComponentControllerParent from WindowsControllerParent
 
 	func SelectStep   
 		nStepNumber++
+		if nStepNumber = 1 {
+			SaveVariablesValues()
+		}
 		aList = parent().SelectStep(nIID,nStepNumber)
 		oItem = aList[1]
 		nStepID = aList[2]
@@ -50,7 +53,6 @@ Class ComponentControllerParent from WindowsControllerParent
 	func EditStepName cStep,nStepID
 		parent().oView.oStepsTree.editstep(oItem,cStep,parent().oModel.GetStepIgnoreStatus(nStepID))
 		parent().oModel.EditStepName(nStepID,cStep)
-
 
 	func SaveRoot
 		# Save the root node
