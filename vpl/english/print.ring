@@ -6,7 +6,7 @@ Class PrintComponentController from ComponentControllerParent
 
 	oView = new PrintComponentView
 
-	func testAction 
+	func GenerateAction 
 		oParent = GetParentStep()
 		NewParentStep(:Test)
 			NewStep(:one)
@@ -29,8 +29,4 @@ class PrintComponentView from ComponentViewParent
 	 
 		Title("Print Component")
 		TextBox("Enter text : " , :text)
-		btnTest = new qPushButton(win) {
-			setText(:test)
-			setClickEvent( Method(:TestAction) )
-		}
-	 	LayoutAll.AddWidget(btnTest)
+		PageButtons()

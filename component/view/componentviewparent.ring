@@ -43,6 +43,14 @@ class ComponentViewParent from WindowsViewParent
 		LayoutAll.AddLayout(oLayout)
 		aVariables + [oText,cVariable,C_INTERACTION_CT_TEXTBOX ]
 
+	func PageButtons
+		btnOk = new qPushButton(win) {
+			setText("Ok")
+			setClickEvent( Method(:GenerateAction) )
+		}
+	 	LayoutAll.AddWidget(btnOk)
+
+
 	func Variable cVariable
 		nPos = find(aVariables,cVariable,C_INTERACTION_VL_NAME)
 		oObject = aVariables[nPos][C_INTERACTION_VL_OBJECT]
