@@ -33,7 +33,7 @@ class ComponentViewParent from WindowsViewParent
 		oLabel = new qLabel(win) {
 			setText(cTitle)
 			#setFixedHeight(40)
-			setStyleSheet("font-size:14pt;")
+			setStyleSheet("font-size:14pt;color:white;background-color:purple;")
 		}
 		oText = new qLineEdit(win) {
 			#setFixedHeight(40)
