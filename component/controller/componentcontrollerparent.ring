@@ -8,12 +8,15 @@
 Class ComponentControllerParent from WindowsControllerParent
 
 	oItem  
+	oParent = NULL 
 
 	func NewParentStep cStep
+		if ISNULL(oParent) { oParent = parent().oView.oStepsTree.currentItem() }
 		oItem = parent().AddStep(cStep)
 		parent().oView.oStepsTree.SetCurrentItem(oItem,0)
 
 	func NewStep cStep
+		if ISNULL(oParent) { oParent = parent().oView.oStepsTree.currentItem() }
 		oItem = parent().AddStep(cStep)
 
 	func SetStepCode cCode
@@ -50,6 +53,7 @@ Class ComponentControllerParent from WindowsControllerParent
 
 	func AgainAction			
 		GenerateAction()
+		parent().oView.oStepsTree.SetCurrentItem(oParent,0)
 
 	func GenerateAction		# To be written in the component
 
