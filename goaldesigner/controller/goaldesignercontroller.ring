@@ -347,3 +347,15 @@ class GoalDesignerController from WindowsControllerParent
 		Last_Window().AddComponents()
 
 	func ModifyAction
+		# Get the Selected Step
+			oItem  = oView.oStepsTree.currentItem()
+			nStepID = oView.oStepsTree.GetIDByObj(oItem)
+		# Check Step Type
+			nIID = oModel.GetInteractionID(nStepID)
+		# Get the Component File Name
+			cFile = oModel.oInteractionModel.GetInteractionComponent(nIID)
+		# Use the Component
+				Open_Window(cFile+:ComponentController)
+				Last_Window().setParentObject(self)
+				Last_Window().cComponent = cFile
+				Last_Window().nInteractionMode = C_INTERACTIONMODE_MODIFY

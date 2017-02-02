@@ -74,13 +74,17 @@ class GoalDesignerModel
 			oStepsTreeModel.DeleteNode(nStepID)
 
 	func DeleteInteractionRecord nStepID
+		# Get Interaction ID
+			nIID = GetInteractionID(nStepID)
+		# Delete the Interaction Record
+			oInteractionModel.DeleteInteraction(nIID)
+		
+	func GetInteractionID nStepID
 		# Get Content
 			aContent = oStepsTreeModel.GetNodeContent(nStepID)
 		# Get Interaction ID
 			nIID = aContent[:interactionid]
-		# Delete the Interaction Record
-			oInteractionModel.DeleteInteraction(nIID)
-		
+		return nIID
 
 	func MoveStepUp nStepID
 		oStepsTreeModel.MoveNodeUp(nStepID)
