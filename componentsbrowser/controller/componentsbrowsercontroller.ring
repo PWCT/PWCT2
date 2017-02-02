@@ -15,6 +15,12 @@ class ComponentsBrowserController from WindowsControllerParent
 			CloseAction()		
 		}
 
+	func EnterPressAction
+		oView.oTextFilter.setEventOutput(False)
+		if oView.oTextFilter.getKeyCode() = 16777220 {	
+			SelectAction()	
+		}
+
 	func AddComponents
 		oVisualSourceFile = new VisualSourceFile
 		oVisualSourceFile.cFileName = "vpl/components.pwct"

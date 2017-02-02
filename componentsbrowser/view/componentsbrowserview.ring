@@ -18,6 +18,9 @@ class ComponentsBrowserView from WindowsViewParent
 			}
 			oTextSearch = new qLineEdit(win) {
 				setTextEditedEvent( Method( :SearchAction ) )
+				oTextFilter = new qallevents(oTextSearch)
+				oTextFilter.setKeyPressEvent(Method(:EnterPressAction))								
+				installeventfilter(oTextFilter)
 			}
 			olayoutSearch = new qHBoxLayout() {
 				AddWidget(olabelSearch)
