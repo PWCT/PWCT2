@@ -36,6 +36,16 @@ Class ComponentControllerParent from WindowsControllerParent
 			CloseAction()		
 		}
 
+	func Variable cVariable
+		return oView.Variable(cVariable)
+
+	func OkAction			
+		GenerateAction()
+		CloseAction()
+
+	func AgainAction			
+		GenerateAction()
+
 	func GenerateAction		# To be written in the component
 
-	func AgainAction			# To be written in the component
+

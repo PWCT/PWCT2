@@ -50,7 +50,7 @@ class ComponentViewParent from WindowsViewParent
 		}
 		oBtnOk = new qPushButton(win) {
 			setText("Ok")
-			setClickEvent( Method(:GenerateAction) )
+			setClickEvent( Method(:OkAction) )
 		}
 		oBtnClose = new qPushButton(win) {
 			setText("Cancel")

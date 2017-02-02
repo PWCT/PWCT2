@@ -23,7 +23,7 @@ Class PrintComponentController from ComponentControllerParent
 		SetActiveStep(oParent2)
 		SetStepCode("Yes I'm the new code")
 		SetActiveStep(oParent)
-		NewParentStep("Print Text : " + oView.Variable(:text))
+		NewParentStep("Print Text : " + Variable(:text))
 
 class PrintComponentView from ComponentViewParent
 	 
