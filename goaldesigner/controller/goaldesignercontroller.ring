@@ -33,6 +33,9 @@ class GoalDesignerController from WindowsControllerParent
 	func AddGeneratedInteraction cComponent
 		return oModel.oInteractionModel.AddGeneratedInteraction(cComponent)
 
+	func SaveVariablesValues nIID,cVariablesValues
+		oModel.oInteractionModel.SaveVariablesValues(nIID,cVariablesValues)
+
 	func AddGeneratedStep cStepName,nIID
 		oItem  = oView.oStepsTree.currentItem()
 		nParentID = oView.oStepsTree.GetIDByObj(oItem)

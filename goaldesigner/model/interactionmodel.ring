@@ -48,6 +48,14 @@ class InteractionModel
 			return nID
 
 	/*
+		The next method is used to save the Interaction Variables Values
+	*/
+	func SaveVariablesValues nIID,cVariablesValues
+		# Find the Interaction record
+			nPos = find(aList,nIID,C_INTERACTIONRECORD_ID)
+		# Save the Variables Values
+			aList[nPos][C_INTERACTIONRECORD_VARIABLESVALUES] = cVariablesValues
+	/*
 		The next method is used to update the Interaction ID of a step after paste
 		We create new Interaction Record with the same information
 		But with a different ID
@@ -75,7 +83,7 @@ class InteractionModel
 	*/
 	func DeleteInteraction nStepInteractionID
 		# Find the interaction record
-			nPos = find(aList,nStepInteractionID,1)
+			nPos = find(aList,nStepInteractionID,C_INTERACTIONRECORD_ID)
 		# Delete the record
 			if nPos != 0 {		# Check that we have the record
 				Del(aList,nPos)
