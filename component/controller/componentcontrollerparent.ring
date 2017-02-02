@@ -11,13 +11,17 @@ Class ComponentControllerParent from WindowsControllerParent
 	oParent = NULL 
 
 	func NewParentStep cStep
-		if ISNULL(oParent) { oParent = parent().oView.oStepsTree.currentItem() }
+		SaveRoot()
 		oItem = parent().AddStep(cStep)
 		parent().oView.oStepsTree.SetCurrentItem(oItem,0)
 
 	func NewStep cStep
-		if ISNULL(oParent) { oParent = parent().oView.oStepsTree.currentItem() }
+		SaveRoot()
 		oItem = parent().AddStep(cStep)
+
+	func SaveRoot
+		# Save the root node
+			if ISNULL(oParent) { oParent = parent().oView.oStepsTree.currentItem() }
 
 	func SetStepCode cCode
 		nStepID = parent().oView.oStepsTree.GetIDByObj(oItem)
