@@ -25,17 +25,18 @@ class ComponentViewParent from WindowsViewParent
 			setText(cTitle)
 			setFixedHeight(50)
 			setStyleSheet("font-size:16pt;color:white;background-color:purple;")
+			setalignment(Qt_AlignHCenter |  Qt_AlignVCenter )
 		}
 		oLayoutAll.AddWidget(oLabel)
 
 	func TextBox cTitle,cVariable
 		oLabel = new qLabel(win) {
 			setText(cTitle)
-			setFixedHeight(50)
-			setStyleSheet("font-size:16pt;color:white;background-color:purple;")
+			setFixedHeight(40)
+			setStyleSheet("font-size:16pt;")
 		}
 		oText = new qLineEdit(win) {
-			setFixedHeight(50)
+			setFixedHeight(40)
 			setStyleSheet("font-size:16pt")
 		}
 		oLayout = new qHBoxLayout() {
