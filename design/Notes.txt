@@ -120,3 +120,25 @@ And I need to convert from strings to numbers
 (15) I changed the objects library to use RingQt_nID instead of nID
 	Because using nID in any method in any class that inherit from the objects classes
 	Will lead to problem
+
+
+(16) Generate Steps example
+
+	func GenerateAction 
+		oParent = GetParentStep()
+		NewParentStep(:Test)
+			NewStep(:one)
+				SetStepCode("The one step code")
+			NewStep(:two)
+				SetStepCode("The two step code")
+				oParent2 = GetActiveStep()
+		SetActiveStep(oParent)
+		NewParentStep(:Test2)
+			NewStep(:one2)
+				SetStepCode("The one step code")
+			NewStep(:two2)
+				SetStepCode("The two step code")
+		SetActiveStep(oParent2)
+		SetStepCode("Yes I'm the new code")
+		SetActiveStep(oParent)
+		NewParentStep("Print Text : " + Variable(:text))
