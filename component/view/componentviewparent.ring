@@ -106,3 +106,14 @@ class ComponentViewParent from WindowsViewParent
 		return cVariablesValues
 
 	func SetVariablesValues cVariablesValues
+		aValues = Split(cVariablesValues,";;_RV_;;")
+		for x = 1 to len( aVariables ) {
+			item = aVariables[x]
+			oObject = item[C_INTERACTION_VL_OBJECT]
+			switch item[C_INTERACTION_VL_TYPE] {
+			case C_INTERACTION_CT_TEXTBOX 
+				oObject.settext(aValues[x])
+			case C_INTERACTION_CT_LISTBOX 
+				oObject.setcurrentrow((0+aValues[x])-1,2)
+			}
+		}
