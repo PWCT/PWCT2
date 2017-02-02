@@ -65,10 +65,11 @@ class ComponentsBrowserController from WindowsControllerParent
 		aContent = oModel.GetNodeContent(nID)
 		cFile = aContent[:Code]
 		cFilePath = "vpl/english/" + cFile + ".ring"
-		if find(aComponentsFilesList,cFilePath) = 0 { 
-			aComponentsFilesList + cFilePath
-			Eval("Load '" + cFilePath + "'")
+		if fexists(cFilePath) {
+			if find(aComponentsFilesList,cFilePath) = 0 { 
+				aComponentsFilesList + cFilePath
+				Eval("Load '" + cFilePath + "'")
+			}
+			eval(cFile+"ComponentStart(parent())")
+			CloseAction()
 		}
-		eval(cFile+"ComponentStart(parent())")
-
-		
