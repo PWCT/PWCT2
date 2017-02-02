@@ -8,9 +8,10 @@
 Class ComponentControllerParent from WindowsControllerParent
 
 	oItem  
-	oParent = NULL 
-	nIID	= NULL # Interaction ID
-	cComponent = NULL # Component Name
+	oParent = NULL
+
+	nIID	= NULL		# Interaction ID
+	cComponent  = NULL	# Component Name
 
 	func NewParentStep cStep
 		SaveRoot()
