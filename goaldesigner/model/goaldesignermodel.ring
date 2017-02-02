@@ -173,3 +173,14 @@ class GoalDesignerModel
 			}
 		}
 		return aList
+
+
+	func GetStepIDbyIID nIID,nStepNumber
+		aList = oStepsTreeModel.GetData()
+		for x = len(aList) to 1 step -1 {
+			item = aList[x]
+			if  item[C_TREEMODEL_CONTENT][:interactionid] = nIID and
+  			    item[C_TREEMODEL_CONTENT][:stepNumber] = nStepNumber {
+				return item[C_TREEMODEL_NODEID]
+			}
+		}

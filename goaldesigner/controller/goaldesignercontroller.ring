@@ -53,6 +53,11 @@ class GoalDesignerController from WindowsControllerParent
 		UpdateTheTimeMachine()
 		return oItem
 
+	func SelectStep nIID,nStepNumber
+		nStepID = oModel.GetStepIDbyIID(nIID,nStepNumber)
+		oItem = oView.oStepsTree.GetObjByID(nStepID)
+		return oItem
+
 	func TimeMachineGotoPresent
 		oTMController.TimeMachineGotoPresent(oView,oModel)
 
@@ -371,5 +376,6 @@ class GoalDesignerController from WindowsControllerParent
 					Last_Window().cComponent = cFile
 					Last_Window().cVariablesValues = cVariablesValues
 					Last_Window().nInteractionMode = C_INTERACTIONMODE_MODIFY
+					Last_Window().nIID = nIID
 					Last_Window().SetVariablesValues()
 			}
