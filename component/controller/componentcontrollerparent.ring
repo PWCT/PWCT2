@@ -104,10 +104,14 @@ Class ComponentControllerParent from WindowsControllerParent
 		GenerateAction()
 		CloseAction()
 
-	func AgainAction			
+	func AgainAction	
+		noldInteractionMode = nInteractionMode
+		nInteractionMode = C_INTERACTIONMODE_NEW	
 		GenerateAction()
 		parent().oView.oStepsTree.SetCurrentItem(oParent,0)
 		oParent = NULL
+		nInteractionMode = noldInteractionMode
+		nStepNumber = 0
 
 	func GenerateAction		# To be written in the component
 
