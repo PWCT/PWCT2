@@ -30,8 +30,8 @@ class GoalDesignerController from WindowsControllerParent
 		UpdateTheTimeMachine()
 		return oItem
 
-	func AddGeneratedInteraction 
-		oModel.oInteractionModel.AddUserInteraction()
+	func AddGeneratedInteraction cComponent
+		return oModel.oInteractionModel.AddGeneratedInteraction(cComponent)
 
 	func AddGeneratedStep cStepName,nIID
 		oItem  = oView.oStepsTree.currentItem()

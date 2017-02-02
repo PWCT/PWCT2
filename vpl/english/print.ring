@@ -1,6 +1,7 @@
-func PrintComponentStart oParent
+func PrintComponentStart oParent,cComponent
 	Open_Window(:PrintComponentController)
 	Last_Window().setParentObject(oParent)
+	Last_Window().cComponent = cComponent
 
 Class PrintComponentController from ComponentControllerParent 
 

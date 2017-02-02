@@ -37,6 +37,17 @@ class InteractionModel
 			return nID
 
 	/*
+		The next method is used when the component generate a step 
+	*/
+	func AddGeneratedInteraction cComponent
+		# Increment the ID Counter
+			nID++		
+		# Add the new interaction record
+			aList + [nID,C_INTERACTION_USERSTEP,cComponent,Date(),Time(), NULL ]
+		# Return the new Interaction ID
+			return nID
+
+	/*
 		The next method is used to update the Interaction ID of a step after paste
 		We create new Interaction Record with the same information
 		But with a different ID

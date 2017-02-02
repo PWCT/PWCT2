@@ -9,19 +9,24 @@ Class ComponentControllerParent from WindowsControllerParent
 
 	oItem  
 	oParent = NULL 
+	nIID	= NULL # Interaction ID
+	cComponent = NULL # Component Name
 
 	func NewParentStep cStep
 		SaveRoot()
-		oItem = parent().AddStep(cStep)
+		oItem = parent().AddGeneratedStep(cStep,nIID)
 		parent().oView.oStepsTree.SetCurrentItem(oItem,0)
 
 	func NewStep cStep
 		SaveRoot()
-		oItem = parent().AddStep(cStep)
+		oItem = parent().AddGeneratedStep(cStep,nIID)
 
 	func SaveRoot
 		# Save the root node
-			if ISNULL(oParent) { oParent = parent().oView.oStepsTree.currentItem() }
+			if ISNULL(oParent) { 
+				oParent = parent().oView.oStepsTree.currentItem() 
+				nIID = parent().AddGeneratedInteraction(cComponent)
+			}
 
 	func SetStepCode cCode
 		nStepID = parent().oView.oStepsTree.GetIDByObj(oItem)
