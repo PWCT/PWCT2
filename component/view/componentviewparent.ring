@@ -71,7 +71,7 @@ class ComponentViewParent from WindowsViewParent
 			setClickEvent( Method(:OkAction) )
 		}
 		oBtnClose = new qPushButton(win) {
-			setText("Cancel")
+			setText("Close")
 			setClickEvent( Method(:CloseAction) )
 		}
 		oLayoutButtons = new qHBoxLayout() {
