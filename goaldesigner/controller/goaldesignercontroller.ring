@@ -248,7 +248,8 @@ class GoalDesignerController from WindowsControllerParent
 				MoveStepUpAction()
 			case 68		# CTRL+D
 				MoveStepDownAction()
-
+			case 84		# CTRL+T
+				InteractAction()
 		}
 
 	func SaveFileAction
