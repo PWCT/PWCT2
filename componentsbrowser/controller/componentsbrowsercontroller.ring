@@ -76,6 +76,9 @@ class ComponentsBrowserController from WindowsControllerParent
 				aComponentsFilesList + cFilePath
 				Eval("Load '" + cFilePath + "'")
 			}
-			eval(cFile+"ComponentStart(parent(),'"+cFile +"')")
+			# Start the Component
+				Open_Window(cFile+:ComponentController)
+				Last_Window().setParentObject(parent())
+				Last_Window().cComponent = cFile
 			CloseAction()
 		}
