@@ -35,13 +35,13 @@ Class ComponentControllerParent from WindowsControllerParent
 			}
 
 	func GenerateIID
-				nIID = parent().AddGeneratedInteraction(cComponent)
+		nIID = parent().AddGeneratedInteraction(cComponent)
 
 	func SaveVariablesValues
-			parent().SaveVariablesValues(nIID,oView.GetVariablesValues())
+		parent().SaveVariablesValues(nIID,oView.GetVariablesValues())
 
 	func SetVariablesValues
-			oView.SetVariablesValues(cVariablesValues)
+		oView.SetVariablesValues(cVariablesValues)
 
 	func SetStepCode cCode
 		nStepID = parent().oView.oStepsTree.GetIDByObj(oItem)
