@@ -17,14 +17,18 @@ Class ComponentControllerParent from WindowsControllerParent
 
 	cVariablesValues		# Variables Values
 
+	nStepNumber = 0 	# Step Number
+
 	func NewParentStep cStep
 		SaveRoot()
-		oItem = parent().AddGeneratedStep(cStep,nIID)
+		nStepNumber++
+		oItem = parent().AddGeneratedStep(cStep,nIID,nStepNumber)
 		parent().oView.oStepsTree.SetCurrentItem(oItem,0)
 
 	func NewStep cStep
 		SaveRoot()
-		oItem = parent().AddGeneratedStep(cStep,nIID)
+		nStepNumber++
+		oItem = parent().AddGeneratedStep(cStep,nIID,nStepNumber)
 
 	func SaveRoot
 		# Save the root node
@@ -36,6 +40,7 @@ Class ComponentControllerParent from WindowsControllerParent
 
 	func GenerateIID
 		nIID = parent().AddGeneratedInteraction(cComponent)
+		nStepNumber = 0
 
 	func SaveVariablesValues
 		parent().SaveVariablesValues(nIID,oView.GetVariablesValues())
