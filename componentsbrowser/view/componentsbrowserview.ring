@@ -48,7 +48,7 @@ class ComponentsBrowserView from WindowsViewParent
 				AddLayout(oLayoutButtons)
 			}
 			SetLayout(oLayoutAll)
-			resize(600,500)
+			resize(300,400)
 			setWindowTitle(T_CB_COMPONENTSBROWSER)		
 			setwindowflags(Qt_CustomizeWindowHint | Qt_WindowTitleHint | Qt_WindowStaysOnTopHint) 
 

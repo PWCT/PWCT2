@@ -32,12 +32,12 @@ class ComponentViewParent from WindowsViewParent
 	func TextBox cTitle,cVariable
 		oLabel = new qLabel(win) {
 			setText(cTitle)
-			setFixedHeight(40)
-			setStyleSheet("font-size:16pt;")
+			#setFixedHeight(40)
+			setStyleSheet("font-size:14pt;")
 		}
 		oText = new qLineEdit(win) {
-			setFixedHeight(40)
-			setStyleSheet("font-size:16pt")
+			#setFixedHeight(40)
+			setStyleSheet("font-size:14pt")
 		}
 		oLayout = new qHBoxLayout() {
 			AddWidget(oLabel) AddWidget(oText)
