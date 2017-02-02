@@ -8,10 +8,13 @@
 class ComponentViewParent from WindowsViewParent
 
 	win = new qWidget() {
-		resize(400,400)
+		resize(600,10)
 		setWindowTitle("Interation Window")
-		LayoutAll = new qVBoxLayout()
+		LayoutAll = new qVBoxLayout() 
 		SetLayout(LayoutAll)
+		oWinFilter = new qallevents(win)
+		oWinFilter.setKeyPressEvent(Method(:KeyPressAction))								
+		installeventfilter(oWinFilter)
 	}
 
 	func AddTitle cTitle

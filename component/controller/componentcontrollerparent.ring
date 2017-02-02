@@ -30,3 +30,8 @@ Class ComponentControllerParent from WindowsControllerParent
 	func SetActiveStep oNewItem
 		oItem = oNewItem
 		parent().oView.oStepsTree.SetCurrentItem(oItem,0)
+
+	func KeyPressAction
+		if oView.oWinFilter.getKeyCode() = Qt_Key_Escape {	
+			CloseAction()		
+		}
