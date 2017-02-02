@@ -219,7 +219,7 @@ class GoalDesignerController from WindowsControllerParent
 		oTMController.ChangeTimeMachinePoint(oView,oModel)
 
 	func KeyPress
-		#Puts( oView.oFilter.getkeycode() )
+		Puts( oView.oFilter.getkeycode() )
 		nKey = oView.oFilter.getkeycode()
 		switch nKey {
 			case 61		# CTRL + +

@@ -32,8 +32,13 @@ Class ComponentControllerParent from WindowsControllerParent
 		parent().oView.oStepsTree.SetCurrentItem(oItem,0)
 
 	func KeyPressAction
-		if oView.oWinFilter.getKeyCode() = Qt_Key_Escape {	
-			CloseAction()		
+		switch oView.oWinFilter.getKeyCode() {
+			case Qt_Key_Escape 
+				CloseAction()		
+			case 87	# CTRL+W
+				OkAction()
+			case 71 	# CTRL+G
+				AgainAction()
 		}
 
 	func Variable cVariable
