@@ -104,3 +104,5 @@ class ComponentViewParent from WindowsViewParent
 			cVariablesValues += cValue + ";;_RV_;;"
 		}
 		return cVariablesValues
+
+	func SetVariablesValues cVariablesValues

@@ -40,6 +40,9 @@ Class ComponentControllerParent from WindowsControllerParent
 	func SaveVariablesValues
 			parent().SaveVariablesValues(nIID,oView.GetVariablesValues())
 
+	func SetVariablesValues
+			oView.SetVariablesValues(cVariablesValues)
+
 	func SetStepCode cCode
 		nStepID = parent().oView.oStepsTree.GetIDByObj(oItem)
 		parent().oModel.SaveStepCode(nStepID,cCode)
