@@ -28,6 +28,8 @@ class GoalDesignerController from WindowsControllerParent
 				:steptype = C_STEPTYPE_COMMENT 
 			]
 		)
+		oView.oStepsTree.cColor = "green"
+		oView.oStepsTree.cBackColor = ""
 		oItem = oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)
 		UpdateTheTimeMachine()
 		return oItem
@@ -51,9 +53,23 @@ class GoalDesignerController from WindowsControllerParent
 				:steptype = nStepType 
 			]
 		)
+		SetStepColor(nStepType)
 		oItem = oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)
 		UpdateTheTimeMachine()
 		return oItem
+
+	func SetStepColor nStepType
+		switch nStepType {
+		case C_STEPTYPE_ROOT
+			oView.oStepsTree.cColor = "white"
+			oView.oStepsTree.cBackColor = "purple"
+		case C_STEPTYPE_ALLOWINTERACTION
+			oView.oStepsTree.cColor = "black"
+			oView.oStepsTree.cBackColor = "yellow"
+		case C_STEPTYPE_INFO
+			oView.oStepsTree.cColor = "black"
+			oView.oStepsTree.cBackColor = ""
+		}
 
 	func SelectStep nIID,nStepNumber
 		nStepID = oModel.GetStepIDbyIID(nIID,nStepNumber)
