@@ -32,7 +32,7 @@ class ComponentViewParent from WindowsViewParent
 	func TextBox cTitle,cVariable
 		oLabel = new qLabel(win) {
 			setText(cTitle)
-			setStyleSheet("font-size:14pt;color:white;background-color:purple;")
+			setStyleSheet("font-size:14pt")
 		}
 		oText = new qLineEdit(win) {
 			setStyleSheet("font-size:14pt")
@@ -46,7 +46,7 @@ class ComponentViewParent from WindowsViewParent
 	func ListBox cTitle,cVariable,aItems
 		oLabel = new qLabel(win) {
 			setText(cTitle)
-			setStyleSheet("font-size:14pt;color:white;background-color:purple;")
+			setStyleSheet("font-size:14pt")
 		}
 		oList = new qListWidget(win) {
 			setStyleSheet("font-size:14pt")
