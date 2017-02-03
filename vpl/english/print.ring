@@ -14,6 +14,6 @@ Class PrintComponentController from ComponentControllerParent
 class PrintComponentView from ComponentViewParent
 	 
 		Title("Print Component")
-		TextBox("Enter text : " , :text)
+		TextBox("Text : " , :text)
 		ListBox("Type :", :type , ["Literal","Expression"])
 		PageButtons()

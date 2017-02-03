@@ -15,5 +15,5 @@ Class IfStatementComponentController from ComponentControllerParent
 class IfStatementComponentView from ComponentViewParent
 	 
 		Title("If Statement Component")
-		TextBox("Enter Condition : " , :condition)
+		TextBox("Condition : " , :condition)
 		PageButtons()
