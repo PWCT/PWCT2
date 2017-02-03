@@ -204,6 +204,10 @@ class GoalDesignerController from WindowsControllerParent
 		oView.oStepsTree.SaveStep(oItem)
 
 	func PasteStepsAction
+		 if not AllowInteractButton() {
+			ShowMessage("Sorry","Can't paste steps in this step!")
+			return
+		}
 		if oView.oStepsTree.isbuffernotempty() = false {
 			return
 		}
