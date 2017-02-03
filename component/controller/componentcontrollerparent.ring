@@ -19,6 +19,8 @@ Class ComponentControllerParent from WindowsControllerParent
 
 	nStepNumber = 0 	# Step Number
 
+	lAllowInteraction	= False	# The step allow sub steps
+
 	func NewParentStep cStep
 		if nInteractionMode = C_INTERACTIONMODE_MODIFY {
 			nStepID = SelectStep()
@@ -27,7 +29,7 @@ Class ComponentControllerParent from WindowsControllerParent
 		}
 		SaveRoot()
 		nStepNumber++
-		oItem = parent().AddGeneratedStep(cStep,nIID,nStepNumber)
+		AddStep(cStep,nIID,nStepNumber)
 		parent().oView.oStepsTree.SetCurrentItem(oItem,0)
 
 	func NewStep cStep
@@ -38,7 +40,22 @@ Class ComponentControllerParent from WindowsControllerParent
 		}
 		SaveRoot()
 		nStepNumber++
-		oItem = parent().AddGeneratedStep(cStep,nIID,nStepNumber)
+		AddStep(cStep,nIID,nStepNumber)
+
+	func AddStep cStep,nIID,nStepNumber
+		if nStepNumber = 1 {
+			nStepType = C_STEPTYPE_ROOT
+		else
+			nStepType = C_STEPTYPE_INFO
+		}
+		if lAllowInteraction {
+			lAllowInteraction = False
+			nStepType = C_STEPTYPE_INTERACT
+		}
+		oItem = parent().AddGeneratedStep(cStep,nIID,nStepNumber,nStepType)
+
+	func AllowInteraction
+		lAllowInteraction = True
 
 	func SelectStep   
 		nStepNumber++

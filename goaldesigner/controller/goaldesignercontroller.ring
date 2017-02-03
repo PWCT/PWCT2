@@ -38,7 +38,7 @@ class GoalDesignerController from WindowsControllerParent
 	func SaveVariablesValues nIID,cVariablesValues
 		oModel.oInteractionModel.SaveVariablesValues(nIID,cVariablesValues)
 
-	func AddGeneratedStep cStepName,nIID,nStepNumber
+	func AddGeneratedStep cStepName,nIID,nStepNumber,nStepType
 		oItem  = oView.oStepsTree.currentItem()
 		nParentID = oView.oStepsTree.GetIDByObj(oItem)
  		nStepID = oModel.AddStep(nParentID,[
@@ -48,7 +48,7 @@ class GoalDesignerController from WindowsControllerParent
 			 	:interactionid = nIID ,
 				:visible = True , 
 				:stepnumber = nStepNumber ,
-				:steptype = C_STEPTYPE_COMMENT 
+				:steptype = nStepType 
 			]
 		)
 		oItem = oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)
