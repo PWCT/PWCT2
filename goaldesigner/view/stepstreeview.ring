@@ -190,7 +190,7 @@ class StepsTreeView from TreeControl
 			cColor = "green"
 			cBackColor = ""
 		case C_STEPTYPE_ROOT
-			cColor = "purple"
+			cColor = "blue"
 			cBackColor = ""
 		case C_STEPTYPE_ALLOWINTERACTION
 			cColor = "black"
