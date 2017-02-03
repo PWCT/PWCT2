@@ -57,3 +57,13 @@ func Test_GoalDesigner
 		Open_Window(:GoalDesignerController)
 		exec()
 	}
+
+
+func ShowMessage cTitle,cMessage
+		new qmessagebox(NULL)
+		{
+                		setwindowtitle(cTitle)
+                		settext(cMessage)
+                		setstandardbuttons(QMessageBox_Ok)
+                		result = exec()
+		}

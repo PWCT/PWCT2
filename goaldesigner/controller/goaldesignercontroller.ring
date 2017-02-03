@@ -273,7 +273,6 @@ class GoalDesignerController from WindowsControllerParent
 				return
 			}
 		}
-		#Puts( oView.oFilter.getkeycode() )
 		switch nKey {
 			case 61		# CTRL + +
 				IncreaseSizeAction()
@@ -360,6 +359,10 @@ class GoalDesignerController from WindowsControllerParent
 			UpdateTheTimeMachine()
 
 	func InteractAction
+		 if not AllowInteractButton() {
+			ShowMessage("Sorry","Can't start new Interaction from this step!")
+			return
+		}
 		Open_Window(:ComponentsBrowserController)
 		Last_Window().setParentObject(self)
 		Last_Window().AddComponents()
@@ -390,3 +393,27 @@ class GoalDesignerController from WindowsControllerParent
 					Last_Window().nIID = nIID
 					Last_Window().SetVariablesValues()
 			}
+
+	func AllowInteractButton
+		oItem  = oView.oStepsTree.currentItem()
+		nStepID = oView.oStepsTree.GetIDByObj(oItem)
+		nStepType = oModel.GetStepType(nStepID)
+		# Interact Button Status
+		if nStepType = C_STEPTYPE_COMMENT  or
+		   nStepType = C_STEPTYPE_ALLOWINTERACTION 	{
+			return True
+		}
+		return False
+
+	Func AllowDeleteButton
+		oItem  = oView.oStepsTree.currentItem()
+		nStepID = oView.oStepsTree.GetIDByObj(oItem)
+		nStepType = oModel.GetStepType(nStepID)
+		# Delete Button Status
+		if nStepType = C_STEPTYPE_COMMENT  or
+		   nStepType = C_STEPTYPE_ROOT 	{
+			return True
+		}
+		return False
+
+
