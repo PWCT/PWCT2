@@ -113,7 +113,7 @@ class GoalDesignerController from WindowsControllerParent
 		}		
 
 	func DeleteStepAction
-		 if not AllowDeleteButton() {
+		if not AllowDeleteButton() {
 			ShowMessage("Sorry","Can't Delete Sub Step!")
 			return
 		}
@@ -185,6 +185,10 @@ class GoalDesignerController from WindowsControllerParent
 		Last_Window().ShowData()
 
 	func CutStepsAction
+		if not AllowDeleteButton() {
+			ShowMessage("Sorry","Can't Cut Sub Step!")
+			return
+		}
 		oItem  = oView.oStepsTree.currentItem()
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
 		if nStepID = 1 {	# Avoid start point
@@ -195,6 +199,10 @@ class GoalDesignerController from WindowsControllerParent
 		oItem.parent().takechild(oItem.parent().indexofchild(oItem))
 
 	func CopyStepsAction
+		if not AllowDeleteButton() {
+			ShowMessage("Sorry","Can't Copy Sub Step!")
+			return
+		}
 		oItem  = oView.oStepsTree.currentItem()
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
 		if nStepID = 1 {	# Avoid start point
