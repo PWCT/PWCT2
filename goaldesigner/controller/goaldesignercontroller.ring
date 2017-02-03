@@ -142,6 +142,10 @@ class GoalDesignerController from WindowsControllerParent
 			UpdateTheTimeMachine()
 
 	func MoveStepUpAction
+		if not AllowDeleteButton() {
+			ShowMessage("Sorry","Can't Move Sub Step Up!")
+			return
+		}
 		oItem  = oView.oStepsTree.currentItem()
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
 		if nStepID = 1 {	# Avoid start point
@@ -161,6 +165,10 @@ class GoalDesignerController from WindowsControllerParent
 		}
 
 	func MoveStepDownAction
+		if not AllowDeleteButton() {
+			ShowMessage("Sorry","Can't Move Sub Step Down!")
+			return
+		}
 		oItem  = oView.oStepsTree.currentItem()
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
 		if nStepID = 1 {	# Avoid start point
@@ -240,7 +248,11 @@ class GoalDesignerController from WindowsControllerParent
 		oView.oStepsTree.DecreaseFontSize()
 		oView.oStepCode.DecreaseFontSize()
 
-	func IgnoreStepAction		
+	func IgnoreStepAction	
+		if not AllowDeleteButton() {
+			ShowMessage("Sorry","Can't Comment/Uncomment Sub Step!")
+			return
+		}	
 		oItem  = oView.oStepsTree.currentItem()
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
 		nIgnore = oModel.IgnoreStep(nStepID)
