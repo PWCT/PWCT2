@@ -109,6 +109,10 @@ class GoalDesignerController from WindowsControllerParent
 		}		
 
 	func DeleteStepAction
+		 if not AllowDeleteButton() {
+			ShowMessage("Sorry","Can't Delete Sub Step!")
+			return
+		}
 		new qmessagebox(oView.win)
 		{
                 		setwindowtitle(T_GD_DELETESTEP_DELETESTEP) #  "Delete Step"
