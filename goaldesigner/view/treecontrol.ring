@@ -13,6 +13,9 @@ class TreeControl from qTreeWidget
 
 	lUseLabels = False	# Use QLabel for each Tree Item
 
+	cColor = "green"		# Node Color
+	cBackColor = ""		# Node Background Color
+
 	func init win
 		super.init(win)
 		font = new qFont("",0,0,0)
@@ -38,7 +41,8 @@ class TreeControl from qTreeWidget
 		setCurrentItem(oParent,0)	# Focus on Parent Step
 		if lUseLabels = True {
 			oLabel = new qLabel(self) {			
-				settext(this.oStyle.image(C_LABELIMAGE_NODEICON)+this.oStyle.text(cText,"green",""))
+				settext(this.oStyle.image(C_LABELIMAGE_NODEICON)+
+						this.oStyle.text(cText,this.cColor,this.cBackColor))
 				setStyleSheet("font-size:" + this.nFontSize + "pt;")
 			}
 			setItemWidget(oItem,0,oLabel)
