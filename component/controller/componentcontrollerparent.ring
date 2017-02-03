@@ -50,7 +50,7 @@ Class ComponentControllerParent from WindowsControllerParent
 		}
 		if lAllowInteraction {
 			lAllowInteraction = False
-			nStepType = C_STEPTYPE_INTERACT
+			nStepType = C_STEPTYPE_ALLOWINTERACTION
 		}
 		oItem = parent().AddGeneratedStep(cStep,nIID,nStepNumber,nStepType)
 

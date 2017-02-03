@@ -6,6 +6,7 @@ Class IfStatementComponentController from ComponentControllerParent
 
 		NewParentStep("If " + Variable(:condition))
 			SetStepCode("if " +  Variable(:condition) + " { " )
+			AllowInteraction()
 			NewStep("Start Here")
 			oStep = GetActiveStep()
 			NewStep("End of IF Statement")
