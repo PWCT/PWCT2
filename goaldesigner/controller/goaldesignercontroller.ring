@@ -87,6 +87,10 @@ class GoalDesignerController from WindowsControllerParent
 		}
 	
 	func EditStepAction
+		 if not AllowEditStepButton() {
+			ShowMessage("Sorry","Can't Edit Generated Step, Use Modify!")
+			return
+		}
 		oItem  = oView.oStepsTree.currentItem()
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
 		if nStepID = 1 {	# Avoid start point
@@ -416,7 +420,7 @@ class GoalDesignerController from WindowsControllerParent
 		}
 		return False
 
-	Func AllowDeleteButton
+	func AllowDeleteButton
 		oItem  = oView.oStepsTree.currentItem()
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
 		nStepType = oModel.GetStepType(nStepID)
@@ -427,4 +431,13 @@ class GoalDesignerController from WindowsControllerParent
 		}
 		return False
 
+	func AllowEditStepButton
+		oItem  = oView.oStepsTree.currentItem()
+		nStepID = oView.oStepsTree.GetIDByObj(oItem)
+		nStepType = oModel.GetStepType(nStepID)
+		# Delete Button Status
+		if nStepType = C_STEPTYPE_COMMENT  {
+			return True
+		}
+		return False
 
