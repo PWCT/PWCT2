@@ -87,7 +87,7 @@ class GoalDesignerController from WindowsControllerParent
 		}
 	
 	func EditStepAction
-		 if not AllowEditStepButton() {
+		 if not IsComment() {
 			ShowMessage("Sorry","Can't Edit Generated Step, Use Modify!")
 			return
 		}
@@ -113,7 +113,7 @@ class GoalDesignerController from WindowsControllerParent
 		}		
 
 	func DeleteStepAction
-		if not AllowDeleteButton() {
+		if not IsCommentOrRoot() {
 			ShowMessage("Sorry","Can't Delete Sub Step!")
 			return
 		}
@@ -142,7 +142,7 @@ class GoalDesignerController from WindowsControllerParent
 			UpdateTheTimeMachine()
 
 	func MoveStepUpAction
-		if not AllowDeleteButton() {
+		if not IsCommentOrRoot() {
 			ShowMessage("Sorry","Can't Move Sub Step Up!")
 			return
 		}
@@ -165,7 +165,7 @@ class GoalDesignerController from WindowsControllerParent
 		}
 
 	func MoveStepDownAction
-		if not AllowDeleteButton() {
+		if not IsCommentOrRoot() {
 			ShowMessage("Sorry","Can't Move Sub Step Down!")
 			return
 		}
@@ -193,7 +193,7 @@ class GoalDesignerController from WindowsControllerParent
 		Last_Window().ShowData()
 
 	func CutStepsAction
-		if not AllowDeleteButton() {
+		if not IsCommentOrRoot() {
 			ShowMessage("Sorry","Can't Cut Sub Step!")
 			return
 		}
@@ -207,7 +207,7 @@ class GoalDesignerController from WindowsControllerParent
 		oItem.parent().takechild(oItem.parent().indexofchild(oItem))
 
 	func CopyStepsAction
-		if not AllowDeleteButton() {
+		if not IsCommentOrRoot() {
 			ShowMessage("Sorry","Can't Copy Sub Step!")
 			return
 		}
@@ -249,7 +249,7 @@ class GoalDesignerController from WindowsControllerParent
 		oView.oStepCode.DecreaseFontSize()
 
 	func IgnoreStepAction	
-		if not AllowDeleteButton() {
+		if not IsCommentOrRoot() {
 			ShowMessage("Sorry","Can't Comment/Uncomment Sub Step!")
 			return
 		}	
@@ -444,7 +444,7 @@ class GoalDesignerController from WindowsControllerParent
 		}
 		return False
 
-	func AllowDeleteButton
+	func IsCommentOrRoot
 		oItem  = oView.oStepsTree.currentItem()
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
 		nStepType = oModel.GetStepType(nStepID)
@@ -455,7 +455,7 @@ class GoalDesignerController from WindowsControllerParent
 		}
 		return False
 
-	func AllowEditStepButton
+	func IsComment
 		oItem  = oView.oStepsTree.currentItem()
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
 		nStepType = oModel.GetStepType(nStepID)
