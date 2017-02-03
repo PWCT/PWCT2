@@ -242,14 +242,14 @@ class GoalDesignerController from WindowsControllerParent
 				return
 			}
 		#  Avoid generated steps (Not Comment)
-			if not nStepType = C_STEPTYPE_COMMENT  {
+			if nStepType != C_STEPTYPE_COMMENT  {
 				oView.oStepCode.setText(oModel.GetStepCode(nStepID))
-				oView.oStepCode.setEnabled(False)
+				oView.oStepCode.setEnabled(False)			
 				return
 			}
 		# Change the Step Code Value
-			oView.oStepCode.setEnabled(True)
 			oView.oStepCode.setText(oModel.GetStepCode(nStepID))
+			oView.oStepCode.setEnabled(True)
 
 	func StepCodeChangedAction
 		oItem  = oView.oStepsTree.currentItem()
