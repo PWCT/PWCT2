@@ -30,7 +30,8 @@ class StepsTreeView from TreeControl
 		AddToTree(1,oFirstStep)
 		setheaderlabel(cControlHeader)
 		oLabel = new qLabel(self) {
-			settext(this.oStyle.image(C_LABELIMAGE_NODEICON)+ this.oStyle.text(this.cStartPointText,"green",""))
+			settext(this.oStyle.image(C_LABELIMAGE_NODEICON)+
+				 this.oStyle.text(this.cStartPointText,"green",""))
 			setStyleSheet("font-size:" + this.nFontSize + "pt;")
 		}
 		setItemWidget(oFirstStep,0, oLabel)	
@@ -53,9 +54,11 @@ class StepsTreeView from TreeControl
 		else
 			oLabel = GetItemLabel(oItem)
 			if lIgnoreStatus { 
-				oLabel.SetText(this.oStyle.image(C_LABELIMAGE_IGNORESTEP)+this.oStyle.text(cText,"green",""))
+				oLabel.SetText(this.oStyle.image(C_LABELIMAGE_IGNORESTEP)+
+				this.oStyle.text(cText,this.cColor,this.cBackColor))
 			else
-				oLabel.SetText(this.oStyle.image(C_LABELIMAGE_NODEICON)+this.oStyle.text(cText,"green",""))
+				oLabel.SetText(this.oStyle.image(C_LABELIMAGE_NODEICON)+
+				this.oStyle.text(cText,this.cColor,this.cBackColor))
 			}
 		}
 

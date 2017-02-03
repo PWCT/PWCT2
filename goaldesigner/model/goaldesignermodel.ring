@@ -39,6 +39,10 @@ class GoalDesignerModel
 		aContent = oStepsTreeModel.GetNodeContent(nStepID)
 		return aContent[:code] 
 
+	func GetStepType nStepID
+		aContent = oStepsTreeModel.GetNodeContent(nStepID)
+		return aContent[:steptype] 
+
 	func PrintSteps
 		for x in oStepsTreeModel.getdata() {
 			puts( x[C_TREEMODEL_CONTENT][:name] +
