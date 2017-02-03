@@ -302,9 +302,10 @@ class GoalDesignerController from WindowsControllerParent
 		nKey = oView.oTreeFilter.getkeycode()
 		if oView.oTreeFilter.getmodifiers() = 0 {	# No CTRL Key is pressed
 			if ( nKey >= 65 ) and (nKey <= 90 )  { # Keys from 'a' to 'z' 
-				InteractAction()
-				Last_Window().oView.oTextSearch.setText(Lower(Char(nKey)))			
-				Last_Window().SearchAction()
+				if InteractAction() {
+					Last_Window().oView.oTextSearch.setText(Lower(Char(nKey)))			
+					Last_Window().SearchAction()
+				}
 			}
 		}
 		oView.oTreeFilter.setEventOutput(False)
@@ -404,11 +405,12 @@ class GoalDesignerController from WindowsControllerParent
 	func InteractAction
 		 if not AllowInteractButton() {
 			ShowMessage("Sorry","Can't start new Interaction from this step!")
-			return
+			return False
 		}
 		Open_Window(:ComponentsBrowserController)
 		Last_Window().setParentObject(self)
 		Last_Window().AddComponents()
+		return True
 
 	func ModifyAction
 		# Get the Selected Step
