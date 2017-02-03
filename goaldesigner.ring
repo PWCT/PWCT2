@@ -60,10 +60,11 @@ func Test_GoalDesigner
 
 
 func ShowMessage cTitle,cMessage
-		new qmessagebox(NULL)
-		{
-                		setwindowtitle(cTitle)
-                		settext(cMessage)
-                		setstandardbuttons(QMessageBox_Ok)
-                		result = exec()
-		}
+
+	new qmessagebox(NULL)
+	{
+		setwindowtitle(cTitle)
+		settext(cMessage)
+		setstandardbuttons(QMessageBox_Ok)
+		result = exec()
+	}
