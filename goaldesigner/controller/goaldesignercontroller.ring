@@ -24,7 +24,8 @@ class GoalDesignerController from WindowsControllerParent
 				:code = "" , 
 			 	:interactionid = oModel.oInteractionModel.AddUserInteraction() ,
 				:visible = True , 
-				:stepnumber = 1
+				:stepnumber = 1 ,
+				:steptype = C_STEPTYPE_COMMENT 
 			]
 		)
 		oItem = oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)
@@ -46,7 +47,8 @@ class GoalDesignerController from WindowsControllerParent
 				:code = "" , 
 			 	:interactionid = nIID ,
 				:visible = True , 
-				:stepnumber = nStepNumber
+				:stepnumber = nStepNumber ,
+				:steptype = C_STEPTYPE_COMMENT 
 			]
 		)
 		oItem = oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)

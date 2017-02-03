@@ -85,7 +85,8 @@ class VisualSourceFile
          			CODE        		TEXT,
          			INTERACTIONID        INT     			NOT NULL,
          			VISIBLE         		INT ,
-				STEPNUMBER		INT);"
+				STEPNUMBER		INT ,
+				STEPTYPE			INT);"
 		oDatabase.Execute(cSQL)
 
 	func CreateInteractionsTable
@@ -117,7 +118,8 @@ class VisualSourceFile
 						  :code 	= record[:code] , 
 						  :interactionid = 0+record[:interactionid] ,
 						  :visible 	= 0+record[:visible],
-						  :stepnumber= 0+record[:stepnumber]
+						  :stepnumber= 0+record[:stepnumber],
+						  :steptype = 0+record[:steptype]
 					  ]
 					] 
 		}
@@ -147,8 +149,9 @@ class VisualSourceFile
 	func SaveStepsTable
 		cSQLAll = ""
 		for record in aStepsTable {						
-			cSQL = "INSERT INTO STEPSTREE (STEPID,PARENTID,NAME,ACTIVE,CODE,INTERACTIONID,VISIBLE,STEPNUMBER)
-         				VALUES (#{V1},#{V2},'#{V3}',#{V4},'#{V5}', #{V6},#{V7},#{V8}); " + NL
+			cSQL = "INSERT INTO STEPSTREE (STEPID,PARENTID,NAME,"+
+			"ACTIVE,CODE,INTERACTIONID,VISIBLE,STEPNUMBER,STEPTYPE)"+
+         		"VALUES (#{V1},#{V2},'#{V3}',#{V4},'#{V5}', #{V6},#{V7},#{V8},#{V9}); " + NL
 			cSQL = substr(cSQL,"#{V1}", ""+record[C_TREEMODEL_NODEID]   )
 			cSQL = substr(cSQL,"#{V2}", ""+record[C_TREEMODEL_PARENTID]  )
 			cSQL = substr(cSQL,"#{V3}", record[C_TREEMODEL_CONTENT][:name]  )
@@ -157,6 +160,7 @@ class VisualSourceFile
 			cSQL = substr(cSQL,"#{V6}", ""+record[C_TREEMODEL_CONTENT][:interactionid]  )
 			cSQL = substr(cSQL,"#{V7}", ""+record[C_TREEMODEL_CONTENT][:visible]  )			
 			cSQL = substr(cSQL,"#{V8}", ""+record[C_TREEMODEL_CONTENT][:stepnumber]  )			
+			cSQL = substr(cSQL,"#{V9}", ""+record[C_TREEMODEL_CONTENT][:steptype]  )			
 			cSQLALL += cSQL					
 		}
 		oDatabase.Execute("begin")
