@@ -73,6 +73,10 @@ class GoalDesignerController from WindowsControllerParent
 		oView.sliderTimeMachine.setInteractionPoints(nInteractionsCount)
 
 	func AddStepAction
+		if not IsCommentOrAllowInteraction() {
+			ShowMessage("Sorry","Can't Add New Step in this location!")
+			return
+		}
 		TimeMachineGotoPresent()
 		oInput = New QInputDialog(oView.win)
 		{
@@ -465,3 +469,13 @@ class GoalDesignerController from WindowsControllerParent
 		}
 		return False
 
+	func IsCommentOrAllowInteraction
+		oItem  = oView.oStepsTree.currentItem()
+		nStepID = oView.oStepsTree.GetIDByObj(oItem)
+		nStepType = oModel.GetStepType(nStepID)
+		# Delete Button Status
+		if nStepType = C_STEPTYPE_COMMENT  or
+		   nStepType = C_STEPTYPE_ALLOWINTERACTION 	{
+			return True
+		}
+		return False
