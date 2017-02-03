@@ -233,11 +233,18 @@ class GoalDesignerController from WindowsControllerParent
 	func StepChangedAction
 		oItem  = oView.oStepsTree.currentItem()
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
-		# Check if it's the start point
-			if nStepID = 1 {	# Avoid start point
+		nStepType = oModel.GetStepType(nStepID)
+		# Avoid Start point
+			if nStepID = 1 {	
 				# Set the step code
 					oView.oStepCode.setText("")
 					oView.oStepCode.setEnabled(False)
+				return
+			}
+		#  Avoid generated steps (Not Comment)
+			if not nStepType = C_STEPTYPE_COMMENT  {
+				oView.oStepCode.setText(oModel.GetStepCode(nStepID))
+				oView.oStepCode.setEnabled(False)
 				return
 			}
 		# Change the Step Code Value
