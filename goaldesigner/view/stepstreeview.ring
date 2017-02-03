@@ -184,3 +184,18 @@ class StepsTreeView from TreeControl
 		cText = substr(cText,this.oStyle.image(C_LABELIMAGE_IGNORESTEP),"")
 		return cText
 
+	func SetStepColor nStepType
+		switch nStepType {
+		case C_STEPTYPE_COMMENT
+			cColor = "green"
+			cBackColor = ""
+		case C_STEPTYPE_ROOT
+			cColor = "purple"
+			cBackColor = ""
+		case C_STEPTYPE_ALLOWINTERACTION
+			cColor = "black"
+			cBackColor = "yellow"
+		case C_STEPTYPE_INFO
+			cColor = "black"
+			cBackColor = ""
+		}

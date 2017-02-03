@@ -60,6 +60,8 @@ class TimeMachineController
 				nParentID = item[C_TREEMODEL_PARENTID]
 				cStepName = item[C_TREEMODEL_CONTENT][:name]
 				nStepIID = item[C_TREEMODEL_CONTENT][:interactionid]
+				nStepType = item[C_TREEMODEL_CONTENT][:steptype]
+				oView.oStepsTree.SetStepColor(nStepType)
 				lInsert = CheckInsertStep(oView,oModel,nParentID,nStepID,nStepIID)
 				if lInsert= False { 
 					oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)
