@@ -74,7 +74,7 @@ class GoalDesignerModel
 		# Delete Interaction Records for Children
 			aChildren = oStepsTreeModel.ChildrenIDs(nStepID)
 			for x in aChildren {
-				DeleteInteractionRecord(nStepID)
+				DeleteInteractionRecord(x)
 			}
 		# Delete Node
 			oStepsTreeModel.DeleteNode(nStepID)
