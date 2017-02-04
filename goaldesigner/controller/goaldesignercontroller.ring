@@ -378,6 +378,7 @@ class GoalDesignerController from WindowsControllerParent
 		oVisualSourceFile.Close()
 
 	func OpenFileAction
+		oView.oStepsTree.DisableEvents()
 		# Get the file Name
 			new qfiledialog(oView.win) {
 				cFileName = getopenfilename(this.oView.win,"open file",currentdir(),"source files(*.pwct)")
@@ -412,6 +413,7 @@ class GoalDesignerController from WindowsControllerParent
 			}
 		# Update the Time Machine
 			UpdateTheTimeMachine()
+		oView.oStepsTree.EnableEvents()
 
 	func InteractAction
 		 if not AllowInteractButton() {
