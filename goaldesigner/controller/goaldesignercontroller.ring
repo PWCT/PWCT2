@@ -117,8 +117,10 @@ class GoalDesignerController from WindowsControllerParent
 		}		
 
 	func DeleteStepAction
+		oView.oStepsTree.DisableEvents()
 		if not IsCommentOrRoot() {
 			ShowMessage("Sorry","Can't Delete Sub Step!")
+			oView.oStepsTree.EnableEvents()
 			return
 		}
 		new qmessagebox(oView.win)
@@ -128,15 +130,21 @@ class GoalDesignerController from WindowsControllerParent
                 		setInformativeText(T_GD_DELETESTEP_DOYOUWANT) # "Do you want to delete the step?"
                 		setstandardbuttons(QMessageBox_Yes | QMessageBox_No)
                 		result = exec()
-		          this.oView.win {
+		          	this.oView.win {
                         		if result = QMessageBox_No {
-					return 
+						oView.oStepsTree.EnableEvents()
+						return 
                         		}
                 		}
 		}
 		oItem  = oView.oStepsTree.currentItem()
+		if ISNULL(oItem.pObject) {
+			oView.oStepsTree.EnableEvents()
+			return
+		}
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
 		if nStepID = 1 {	# Avoid start point
+			oView.oStepsTree.EnableEvents()
 			return
 		}
 		oView.oStepsTree.DelByObj(oItem)	# Remove it from the [oItem|ID] List
@@ -144,6 +152,7 @@ class GoalDesignerController from WindowsControllerParent
 		oModel.DeleteStep(nStepID)
 		# Update the Time Machine
 			UpdateTheTimeMachine()
+		oView.oStepsTree.EnableEvents()
 
 	func MoveStepUpAction
 		if not IsCommentOrRoot() {

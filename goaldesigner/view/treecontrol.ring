@@ -16,6 +16,8 @@ class TreeControl from qTreeWidget
 	cColor = "green"		# Node Color
 	cBackColor = ""		# Node Background Color
 
+	cEventString
+
 	func init win
 		super.init(win)
 		font = new qFont("",0,0,0)
@@ -106,3 +108,18 @@ class TreeControl from qTreeWidget
 		setCurrentItemChangedEvent("")
 		super.SetCurrentItem(oItem,nFlag)
 		setCurrentItemChangedEvent(cEvent)
+
+	func CurrentItem
+		cEvent = getCurrentItemChangedEvent()
+		setCurrentItemChangedEvent("")
+		oItem = super.CurrentItem()
+		setCurrentItemChangedEvent(cEvent)
+		return oItem
+
+	func DisableEvents
+		cEventString = getCurrentItemChangedEvent()
+		setCurrentItemChangedEvent("")
+
+	func EnableEvents
+		setCurrentItemChangedEvent(cEventString)
+
