@@ -100,6 +100,7 @@
 	T_CB_CLOSE = "إغلاق"
 
 # Interaction Pages
+	T_IP_WINDOWTITLE = "نافذة التفاعل"
 	T_IP_AGAIN = "مرة اخري"
 	T_IP_OK = "حسنا"
 	T_IP_CLOSE = "اغلاق"

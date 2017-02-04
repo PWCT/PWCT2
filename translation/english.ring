@@ -100,6 +100,7 @@
 	T_CB_CLOSE = "Close"
 
 # Interaction Pages
+	T_IP_WINDOWTITLE = "Interation Window"
 	T_IP_AGAIN = "Again"
 	T_IP_OK = "Ok"
 	T_IP_CLOSE = "Close"
