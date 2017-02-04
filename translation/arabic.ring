@@ -104,3 +104,21 @@
 	T_IP_AGAIN = "مرة اخري"
 	T_IP_OK = "حسنا"
 	T_IP_CLOSE = "اغلاق"
+
+#==================================================
+# 	Components  Translation
+#==================================================
+
+# Print Component
+
+	# Steps Tree
+		T_CT_PRINT_ST_PRINT = "اطبع "
+	# Interaction Page
+		T_CT_PRINT_IP_TITLE  = "مكون الطباعة"
+		T_CT_PRINT_IP_TEXT = "النص : "
+		T_CT_PRINT_IP_TYPE = "النوع :"
+		T_CT_PRINT_IP_TYPELIST = ["عبارة حرفية","تعبير"]
+
+
+# IF Statement Component
+

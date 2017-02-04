@@ -13,8 +13,8 @@ load "guilib.ring"
 load "general/globals/globals.ring"
 
 # Load the Translation File
-load "translation/english.ring"
-#load "translation/arabic.ring"
+#load "translation/english.ring"
+load "translation/arabic.ring"
 
 # Load the Goal Designer Files
 load "goaldesigner/controller/goaldesignercontroller.ring"

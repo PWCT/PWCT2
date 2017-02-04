@@ -11,7 +11,7 @@ Class PrintComponentController from ComponentControllerParent
 
 	func GenerateAction 
 
-		NewStep("Print " + Variable(:text))
+		NewStep(T_CT_PRINT_ST_PRINT + Variable(:text))  # "Print " 
 		if Variable(:type) = 1 {
 			SetStepCode("See " + CHAR(34) + Variable(:text) + CHAR(34) )
 		else
@@ -20,7 +20,7 @@ Class PrintComponentController from ComponentControllerParent
 
 class PrintComponentView from ComponentViewParent
 	 
-		Title("Print Component")
-		TextBox("Text : " , :text)
-		ListBox("Type :", :type , ["Literal","Expression"])
+		Title(T_CT_PRINT_IP_TITLE)	# "Print Component"
+		TextBox(T_CT_PRINT_IP_TEXT , :text)  # "Text : "
+		ListBox(T_CT_PRINT_IP_TYPE, :type , T_CT_PRINT_IP_TYPELIST) # "Type :"	 ["Literal","Expression"]
 		PageButtons()
