@@ -101,3 +101,8 @@ class TreeControl from qTreeWidget
 		font.setpixelsize(nFontSize)
 		SetFont(font)
 
+	func SetCurrentItem oItem,nFlag
+		cEvent = getCurrentItemChangedEvent()
+		setCurrentItemChangedEvent("")
+		super.SetCurrentItem(oItem,nFlag)
+		setCurrentItemChangedEvent(cEvent)
