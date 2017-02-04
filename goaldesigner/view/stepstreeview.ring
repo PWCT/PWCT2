@@ -202,3 +202,10 @@ class StepsTreeView from TreeControl
 			cColor = "black"
 			cBackColor = ""
 		}
+
+	func currentitem
+		oItem = super.currentitem()
+		if PtrCmp(oItem.pObject,NULL) {
+			return oFirststep
+		}
+		return oItem
