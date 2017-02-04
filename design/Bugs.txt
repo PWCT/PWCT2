@@ -898,3 +898,12 @@ Solved in delete Step code using ISNULL()
 			oView.oStepsTree.EnableEvents()
 			return
 		}
+
+Solution modified to  the next code in StepsTreeView.ring
+
+	func currentitem
+		oItem = super.currentitem()
+		if PtrCmp(oItem.pObject,NULL) {
+			return oFirststep
+		}
+		return oItem
