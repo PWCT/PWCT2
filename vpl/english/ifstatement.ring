@@ -11,17 +11,17 @@ Class IfStatementComponentController from ComponentControllerParent
 
 	func GenerateAction 
 
-		NewParentStep("If " + Variable(:condition))
+		NewParentStep(T_CT_IFSTATEMENT_ST_IF + Variable(:condition)) # "If "
 			SetStepCode("if " +  Variable(:condition) + " { " )
 			AllowInteraction()
-			NewStep("Start Here")
+			NewStep(T_CT_IFSTATEMENT_ST_STARTHERE) # "Start Here"
 			oStep = GetActiveStep()
-			NewStep("End of IF Statement")
+			NewStep(T_CT_IFSTATEMENT_ST_ENDOFIFSTATEMENT) # "End of IF Statement"
 				SetStepCode("}")
 			SetActiveStep(oStep)
 
 class IfStatementComponentView from ComponentViewParent
 	 
-		Title("If Statement Component")
-		TextBox("Condition : " , :condition)
+		Title(T_CT_IFSTEATEMENT_IP_TITLE)	# "If Statement Component"
+		TextBox(T_CT_IFSTEATEMENT_IP_CONDITION , :condition) # "Condition : "
 		PageButtons()
