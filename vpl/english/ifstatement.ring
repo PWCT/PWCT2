@@ -1,3 +1,10 @@
+/*
+**	Project : Programming Without Coding Technology (PWCT) Version 2.0
+**	File Purpose :  If Statement Component
+**	Date : 2017.02.04
+**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
+*/
+
 Class IfStatementComponentController from ComponentControllerParent 
 
 	oView = new IfStatementComponentView

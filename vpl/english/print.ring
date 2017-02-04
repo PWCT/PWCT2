@@ -1,3 +1,10 @@
+/*
+**	Project : Programming Without Coding Technology (PWCT) Version 2.0
+**	File Purpose :  Print Component
+**	Date : 2017.02.04
+**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
+*/
+
 Class PrintComponentController from ComponentControllerParent 
 
 	oView = new PrintComponentView

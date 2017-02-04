@@ -224,6 +224,7 @@ class GoalDesignerController from WindowsControllerParent
 		oView.oStepsTree.SaveStep(oItem)
 
 	func PasteStepsAction
+		puts(:beforepaste)
 		 if not AllowInteractButton() {
 			ShowMessage("Sorry","Can't paste steps in this step!")
 			return
@@ -245,6 +246,7 @@ class GoalDesignerController from WindowsControllerParent
 			UpdateTheTimeMachine()
 		# Activate the same step (parent)
 			oView.oStepsTree.SetCurrentItem(oParentItem,0)	
+		puts(:afterpaste)
 
 	func IncreaseSizeAction
 		oView.oStepsTree.IncreaseFontSize()
@@ -483,3 +485,6 @@ class GoalDesignerController from WindowsControllerParent
 			return True
 		}
 		return False
+
+	func TreeNodeChangedAction
+		Puts(:ItemChanged)

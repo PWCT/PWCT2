@@ -1,4 +1,3 @@
-
 /*
 **	Project : Programming Without Coding Technology (PWCT) Version 2.0
 **	File Purpose :  Goal Designer Window
