@@ -63,6 +63,11 @@
 	T_GD_BM_CANTCOMMENT = "لايمكن تفعيل او الغاء تفعيل خطوات فرعية بمفردها"
 	T_GD_BM_CANTINTERACT = "لايمكن بداية تفاعل جديد من هذه الخطوة"
 
+	# Dialog
+	T_GD_DM_OPENFILE = "فتح ملف"
+	T_GD_DM_SAVEFILE = "حفظ ملف"
+	T_GD_DM_FILETYPE = "ملفات المصدر(*.pwct)"
+
 # Print Steps Window
 	T_GD_PS_PRINTSTEP = "طباعة الخطوات"			# The Window Title
 	T_GD_PS_STEPSTREE = "شجرة الخطوات"			# Tab Page Header

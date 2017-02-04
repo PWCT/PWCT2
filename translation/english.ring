@@ -63,6 +63,11 @@
 	T_GD_BM_CANTCOMMENT = "Can't Comment/Uncomment Sub Step!"
 	T_GD_BM_CANTINTERACT = "Can't start new Interaction from this step!"
 
+	# Dialog
+	T_GD_DM_OPENFILE = "Open File"
+	T_GD_DM_SAVEFILE = "Save File"
+	T_GD_DM_FILETYPE = "source files(*.pwct)"
+
 # Print Steps Window
 	T_GD_PS_PRINTSTEP = "Print Steps"				# The Window Title
 	T_GD_PS_STEPSTREE = "Steps Tree"			# Tab Page Header

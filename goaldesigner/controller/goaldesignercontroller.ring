@@ -367,7 +367,7 @@ class GoalDesignerController from WindowsControllerParent
 	func SaveFileAction
 		# Set the file Name
 			new qfiledialog(oView.win) {
-				cFileName = getsavefilename(this.oView.win,"open file",currentdir(),"source files(*.pwct)")
+				cFileName = getsavefilename(this.oView.win,T_GD_DM_SAVEFILE ,currentdir(),T_GD_DM_FILETYPE)
 			}
 			if cFileName = NULL { return }
 			oVisualSourceFile.cFileName = cFileName
@@ -385,7 +385,7 @@ class GoalDesignerController from WindowsControllerParent
 		oView.oStepsTree.DisableEvents()
 		# Get the file Name
 			new qfiledialog(oView.win) {
-				cFileName = getopenfilename(this.oView.win,"open file",currentdir(),"source files(*.pwct)")
+				cFileName = getopenfilename(this.oView.win,T_GD_DM_OPENFILE ,currentdir(),T_GD_DM_FILETYPE)
 			}
 			if cFileName = NULL { return }
 			oVisualSourceFile.cFileName = cFileName
