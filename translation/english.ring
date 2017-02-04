@@ -50,6 +50,19 @@
 	T_GD_INTERACT = "Interact"
 	T_GD_MODIFY    = "Modify"
 
+	# Buttons Messages
+	T_GD_BM_SORRY 	= "Sorry"
+	T_GD_BM_CANTADD 	= "Can't Add New Step in this location!"
+	T_GD_BM_CANTEDIT	= "Can't Edit Generated Step, Use Modify!"
+	T_GD_BM_CANTDELETE = "Can't Delete Sub Step!"
+	T_GD_BM_CANTMOVEUP = "Can't Move Sub Step Up!"
+	T_GD_BM_CANTMOVEDOWN = "Can't Move Sub Step Down!"
+	T_GD_BM_CANTCUT = "Can't Cut Sub Step!"
+	T_GD_BM_CANTCOPY = "Can't Copy Sub Step!"
+	T_GD_BM_CANTPASTE = "Can't paste steps in this step!"
+	T_GD_BM_CANTCOMMENT = "Can't Comment/Uncomment Sub Step!"
+	T_GD_BM_CANTINTERACT = "Can't start new Interaction from this step!"
+
 # Print Steps Window
 	T_GD_PS_PRINTSTEP = "Print Steps"				# The Window Title
 	T_GD_PS_STEPSTREE = "Steps Tree"			# Tab Page Header

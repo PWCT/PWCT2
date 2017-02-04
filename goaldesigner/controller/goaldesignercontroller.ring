@@ -74,7 +74,8 @@ class GoalDesignerController from WindowsControllerParent
 
 	func AddStepAction
 		if not AllowInteractButton() {
-			ShowMessage("Sorry","Can't Add New Step in this location!")
+			# "Can't Add New Step in this location!"
+			ShowMessage(T_GD_BM_SORRY,T_GD_BM_CANTADD)
 			return
 		}
 		TimeMachineGotoPresent()
@@ -92,7 +93,7 @@ class GoalDesignerController from WindowsControllerParent
 	
 	func EditStepAction
 		 if not IsComment() {
-			ShowMessage("Sorry","Can't Edit Generated Step, Use Modify!")
+			ShowMessage(T_GD_BM_SORRY,T_GD_BM_CANTEDIT)
 			return
 		}
 		oItem  = oView.oStepsTree.currentItem()
@@ -118,7 +119,8 @@ class GoalDesignerController from WindowsControllerParent
 
 	func DeleteStepAction
 		if not IsCommentOrRoot() {
-			ShowMessage("Sorry","Can't Delete Sub Step!")
+			# "Can't Delete Sub Step!"
+			ShowMessage(T_GD_BM_SORRY,T_GD_BM_CANTDELETE)
 			return
 		}
 		new qmessagebox(oView.win)
@@ -152,7 +154,8 @@ class GoalDesignerController from WindowsControllerParent
 
 	func MoveStepUpAction
 		if not IsCommentOrRoot() {
-			ShowMessage("Sorry","Can't Move Sub Step Up!")
+			# "Can't Move Sub Step Up!"
+			ShowMessage(T_GD_BM_SORRY,T_GD_BM_CANTMOVEUP)
 			return
 		}
 		oItem  = oView.oStepsTree.currentItem()
@@ -175,7 +178,8 @@ class GoalDesignerController from WindowsControllerParent
 
 	func MoveStepDownAction
 		if not IsCommentOrRoot() {
-			ShowMessage("Sorry","Can't Move Sub Step Down!")
+			# "Can't Move Sub Step Down!"
+			ShowMessage(T_GD_BM_SORRY ,T_GD_BM_CANTMOVEDOWN)
 			return
 		}
 		oItem  = oView.oStepsTree.currentItem()
@@ -203,7 +207,8 @@ class GoalDesignerController from WindowsControllerParent
 
 	func CutStepsAction
 		if not IsCommentOrRoot() {
-			ShowMessage("Sorry","Can't Cut Sub Step!")
+			# "Can't Cut Sub Step!"
+			ShowMessage(T_GD_BM_SORRY,T_GD_BM_CANTCUT)
 			return
 		}
 		oItem  = oView.oStepsTree.currentItem()
@@ -217,7 +222,8 @@ class GoalDesignerController from WindowsControllerParent
 
 	func CopyStepsAction
 		if not IsCommentOrRoot() {
-			ShowMessage("Sorry","Can't Copy Sub Step!")
+			# "Can't Copy Sub Step!"
+			ShowMessage(T_GD_BM_SORRY,T_GD_BM_CANTCOPY)
 			return
 		}
 		oItem  = oView.oStepsTree.currentItem()
@@ -230,7 +236,8 @@ class GoalDesignerController from WindowsControllerParent
 
 	func PasteStepsAction
 		 if not AllowInteractButton() {
-			ShowMessage("Sorry","Can't paste steps in this step!")
+			# "Can't paste steps in this step!"
+			ShowMessage(T_GD_BM_SORRY ,T_GD_BM_CANTPAST)
 			return
 		}
 		if oView.oStepsTree.isbuffernotempty() = false {
@@ -261,7 +268,8 @@ class GoalDesignerController from WindowsControllerParent
 
 	func IgnoreStepAction	
 		if not IsCommentOrRoot() {
-			ShowMessage("Sorry","Can't Comment/Uncomment Sub Step!")
+			# "Can't Comment/Uncomment Sub Step!"
+			ShowMessage(T_GD_BM_SORRY,T_GD_BM_CANTCOMMENT)
 			return
 		}	
 		oItem  = oView.oStepsTree.currentItem()
@@ -413,7 +421,8 @@ class GoalDesignerController from WindowsControllerParent
 
 	func InteractAction
 		 if not AllowInteractButton() {
-			ShowMessage("Sorry","Can't start new Interaction from this step!")
+			# "Can't start new Interaction from this step!"
+			ShowMessage(T_GD_BM_SORRY,T_GD_BM_CANTINTERACT)
 			return False
 		}
 		Open_Window(:ComponentsBrowserController)

@@ -50,6 +50,19 @@
 	T_GD_INTERACT = "تفاعل"
 	T_GD_MODIFY    = "تعديل"
 
+	# Buttons Messages
+	T_GD_BM_SORRY 	= "عفوا"
+	T_GD_BM_CANTADD 	= "لايمكن اضافة خطوة جديدة فى هذا المكان"
+	T_GD_BM_CANTEDIT	= "لايمكن تعديل اسم خطوة تم توليدها"
+	T_GD_BM_CANTDELETE = "لايمكن حذف خطوة فرعية - احذف المكون كاملا"
+	T_GD_BM_CANTMOVEUP = "لايمكن نقل خطوة فرعية للاعلى - انقل المكون كاملا"
+	T_GD_BM_CANTMOVEDOWN = "لايمكن نقل خطوة فرعية للاسفل - انقل المكون كاملا"
+	T_GD_BM_CANTCUT = "لايمكن قص خطوة فرعية - قم بقص المكون كاملا"
+	T_GD_BM_CANTCOPY = "لايمكن نسخ خطوة فرعية - قم بنسخ المكون كاملا"
+	T_GD_BM_CANTPASTE = "لايمكن لصق الخطوات فى هذا المكان"
+	T_GD_BM_CANTCOMMENT = "لايمكن تفعيل او الغاء تفعيل خطوات فرعية بمفردها"
+	T_GD_BM_CANTINTERACT = "لايمكن بداية تفاعل جديد من هذه الخطوة"
+
 # Print Steps Window
 	T_GD_PS_PRINTSTEP = "طباعة الخطوات"			# The Window Title
 	T_GD_PS_STEPSTREE = "شجرة الخطوات"			# Tab Page Header
