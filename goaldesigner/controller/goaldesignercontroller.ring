@@ -136,12 +136,17 @@ class GoalDesignerController from WindowsControllerParent
 		}
 		oItem  = oView.oStepsTree.currentItem()
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
-		if nStepID = 1 {	# Avoid start point
-			return
+		if nStepID = 1 {	# Delete All Steps
+			# Remove the current Steps From the Tree Control
+				oView.oStepsTree.taketoplevelitem(0)	
+				oView.oStepsTree.aTree = []
+				oView.oStepsTree.AddStartPoint()
+			oModel = new GoalDesignerModel
+		else
+			oView.oStepsTree.DelByObj(oItem)	# Remove it from the [oItem|ID] List
+			oItem.parent().takechild(oItem.parent().indexofchild(oItem))
+			oModel.DeleteStep(nStepID)
 		}
-		oView.oStepsTree.DelByObj(oItem)	# Remove it from the [oItem|ID] List
-		oItem.parent().takechild(oItem.parent().indexofchild(oItem))
-		oModel.DeleteStep(nStepID)
 		# Update the Time Machine
 			UpdateTheTimeMachine()
 
