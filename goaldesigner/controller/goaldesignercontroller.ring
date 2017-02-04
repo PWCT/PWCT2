@@ -478,13 +478,39 @@ class GoalDesignerController from WindowsControllerParent
 	func IsGeneratedStep
 		return not IsComment()
 
+	func IsMoveUp
+		oItem  = oView.oStepsTree.currentItem()
+		nStepID = oView.oStepsTree.GetIDByObj(oItem)
+		if oModel.oStepsTreeModel.SiblingUp(nStepID) {
+			return True
+		else
+			return False
+		}
+
+	func IsMoveDown
+		oItem  = oView.oStepsTree.currentItem()
+		nStepID = oView.oStepsTree.GetIDByObj(oItem)
+		if oModel.oStepsTreeModel.SiblingDown(nStepID) {
+			return True
+		else
+			return False
+		}
+
 	func TreeNodeChangedAction
 		oView.BtnInteract.setEnabled(AllowInteractButton())
 		oView.BtnEditStep.setEnabled(IsComment())
 		oView.BtnAddStep.setEnabled(AllowInteractButton())
 		oView.BtnDeleteStep.setEnabled(IsCommentOrRoot())
-		oView.BtnMoveStepUp.setEnabled(IsCommentOrRoot())
-		oView.BtnMoveStepDown.setEnabled(IsCommentOrRoot())
+		if IsMoveUp() {
+			oView.BtnMoveStepUp.setEnabled(IsCommentOrRoot())
+		else
+			oView.BtnMoveStepUp.setEnabled(False)
+		}
+		if IsMoveDown() {
+			oView.BtnMoveStepDown.setEnabled(IsCommentOrRoot())
+		else
+			oView.BtnMoveStepDown.setEnabled(False)
+		}
 		oView.BtnCutSteps.setEnabled(IsCommentOrRoot())
 		oView.BtnCopySteps.setEnabled(IsCommentOrRoot())
 		oView.BtnPasteSteps.setEnabled(AllowInteractButton())
