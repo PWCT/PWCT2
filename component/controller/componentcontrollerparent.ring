@@ -68,8 +68,12 @@ Class ComponentControllerParent from WindowsControllerParent
 		return nStepID
 
 	func EditStepName cStep,nStepID
-		parent().oView.oStepsTree.editstep(oItem,cStep,parent().oModel.GetStepIgnoreStatus(nStepID))
-		parent().oModel.EditStepName(nStepID,cStep)
+		# Set the Step Color
+			nStepType = parent().oModel.GetStepType(nStepID)
+			parent().SetStepColor(nStepType)
+		# Modify the step
+			parent().oView.oStepsTree.editstep(oItem,cStep,parent().oModel.GetStepIgnoreStatus(nStepID))
+			parent().oModel.EditStepName(nStepID,cStep)
 
 	func SaveRoot
 		# Save the root node
