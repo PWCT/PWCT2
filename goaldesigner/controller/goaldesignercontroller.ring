@@ -73,7 +73,7 @@ class GoalDesignerController from WindowsControllerParent
 		oView.sliderTimeMachine.setInteractionPoints(nInteractionsCount)
 
 	func AddStepAction
-		if not IsCommentOrAllowInteraction() {
+		if not AllowInteractButton() {
 			ShowMessage("Sorry","Can't Add New Step in this location!")
 			return
 		}
@@ -456,7 +456,7 @@ class GoalDesignerController from WindowsControllerParent
 		oItem  = oView.oStepsTree.currentItem()
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
 		nStepType = oModel.GetStepType(nStepID)
-		# Delete Button Status
+		# Delete|Move|Cut|Copy Buttons Status
 		if nStepType = C_STEPTYPE_COMMENT  or
 		   nStepType = C_STEPTYPE_ROOT 	{
 			return True
@@ -467,22 +467,24 @@ class GoalDesignerController from WindowsControllerParent
 		oItem  = oView.oStepsTree.currentItem()
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
 		nStepType = oModel.GetStepType(nStepID)
-		# Delete Button Status
+		# Edit Button Status
 		if nStepType = C_STEPTYPE_COMMENT  {
 			return True
 		}
 		return False
 
-	func IsCommentOrAllowInteraction
-		oItem  = oView.oStepsTree.currentItem()
-		nStepID = oView.oStepsTree.GetIDByObj(oItem)
-		nStepType = oModel.GetStepType(nStepID)
-		# Delete Button Status
-		if nStepType = C_STEPTYPE_COMMENT  or
-		   nStepType = C_STEPTYPE_ALLOWINTERACTION 	{
-			return True
-		}
-		return False
+	func IsGeneratedStep
+		return not IsComment()
 
 	func TreeNodeChangedAction
 		oView.BtnInteract.setEnabled(AllowInteractButton())
+		oView.BtnEditStep.setEnabled(IsComment())
+		oView.BtnAddStep.setEnabled(AllowInteractButton())
+		oView.BtnDeleteStep.setEnabled(IsCommentOrRoot())
+		oView.BtnMoveStepUp.setEnabled(IsCommentOrRoot())
+		oView.BtnMoveStepDown.setEnabled(IsCommentOrRoot())
+		oView.BtnCutSteps.setEnabled(IsCommentOrRoot())
+		oView.BtnCopySteps.setEnabled(IsCommentOrRoot())
+		oView.BtnPasteSteps.setEnabled(AllowInteractButton())
+		oView.BtnIgnore.setEnabled(IsCommentOrRoot())
+		oView.BtnModify.setEnabled(IsGeneratedStep())
