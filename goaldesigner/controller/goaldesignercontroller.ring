@@ -243,6 +243,8 @@ class GoalDesignerController from WindowsControllerParent
 			oView.oStepsTree.AddNodesFromBuffer(aStepsObjectsList,aStepsDataList)
 		# Update the Time Machine
 			UpdateTheTimeMachine()
+		# Activate the same step (parent)
+			oView.oStepsTree.SetCurrentItem(oParentItem,0)	
 
 	func IncreaseSizeAction
 		oView.oStepsTree.IncreaseFontSize()
