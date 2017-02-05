@@ -23,7 +23,7 @@ class ComponentsBrowserController from WindowsControllerParent
 
 	func AddComponents
 		oVisualSourceFile = new VisualSourceFile
-		oVisualSourceFile.cFileName = "vpl/components.pwct"
+		oVisualSourceFile.cFileName = T_CB_COMPONENTSFILE # "vpl/components.pwct"
 		oVisualSourceFile.Open()
 		oVisualSourceFile.LoadTables()
 		aStepsTree   =  oVisualSourceFile.GetStepsTreeTable()

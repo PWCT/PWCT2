@@ -106,13 +106,17 @@
 	T_IP_CLOSE = "Close"
 
 #==================================================
+
+T_CB_COMPONENTSFILE = "vpl/components.pwct"
+
+#==================================================
 # 	Components  Translation
 #==================================================
 
 # Print Component
 
 	# Steps Tree
-		T_CT_PRINT_ST_PRINT = "Print"
+		T_CT_PRINT_ST_PRINT = "Print "
 	# Interaction Page
 		T_CT_PRINT_IP_TITLE  = "Print Component"
 		T_CT_PRINT_IP_TEXT = "Text : "
