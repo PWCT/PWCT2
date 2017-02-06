@@ -331,11 +331,6 @@ class EnvironmentView from WindowsViewParent
 					settooltip("Save As")
 				 } ,
 				new qpushbutton(win) { 
-					setbtnimage(self,"images/undo.png") 
-					setclickevent("pUndo()")
-					settooltip("Undo")
-				} ,
-				new qpushbutton(win) { 
 					setbtnimage(self,"images/cut.png")
 					setclickevent("pCut()")
 					settooltip("Cut")
