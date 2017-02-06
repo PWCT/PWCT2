@@ -10,16 +10,13 @@ class EnvironmentView from WindowsViewParent
 	# Create the window and the Controls
 		win = new qMainWindow()
 		{
-
 			setLayoutDirection(T_LAYOUTDIRECTION)
 			setWindowTitle("Programming Without Coding Technology")
-
 			self.CreateMenuBar(win)
 			self.CreateToolbar(win)
 			self.CreateStatusBar(win)
 			self.CreateFilesManager(win)
 			self.CreateGoalDesigner(win)
-
 			setwinicon(win,"images/pwct.png")
 			showmaximized()	
 		}
