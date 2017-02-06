@@ -56,7 +56,7 @@ class ComponentViewParent from WindowsViewParent
 			for item in aItems {		
 				AddItem(Item)
 			}
-			setCurrentRow(0,2)
+			setCurrentRow(0,3)
 		}
 		oLayout = new qHBoxLayout() {
 			AddWidget(oLabel) AddWidget(oList)

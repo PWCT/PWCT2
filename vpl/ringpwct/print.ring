@@ -23,11 +23,7 @@ class PrintComponentView from ComponentViewParent
 		# "Print Component"
 			Title(T_CT_PRINT_IP_TITLE)	
 		# "Text : "
-			TextBox(T_CT_PRINT_IP_TEXT , :text)  { 
-				setText('" "')
-			}
+			TextBox(T_CT_PRINT_IP_TEXT , :text)
 		# "Type :"	 ["Literal","Expression"]
-			ListBox(T_CT_PRINT_IP_TYPE, :type , T_CT_PRINT_IP_TYPELIST) { 
-				setCurrentRow(1,3)
-			}
+			ListBox(T_CT_PRINT_IP_TYPE, :type , T_CT_PRINT_IP_TYPELIST) 
 		PageButtons()
