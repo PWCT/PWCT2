@@ -9,12 +9,25 @@ Class ProgramController
 
 	cFileName = "noname.ring"
 	cSourceCode = ""
+	cCurrentDir = CurrentDir() + "/"	# The Goal Designer Folder
 
 	func Debug oGD
 		Prepare(oGD)	# Save the source code to the file
+		if iswindows() {
+			cCode = 'start '+cCurrentDir+'run "' + cFileName + '"' + nl 
+		else
+			cCode = 'cd $(dirname "'+cFileName+'") ; ' + ' ring "' + cFileName + '"' + nl 
+		}
+		system(cCode)
 
 	func Run oGD
 		Prepare(oGD)	# Save the source code to the file
+		if iswindows() {
+			cCode = 'start '+cCurrentDir+'run2 "' + cFileName + '"' + nl 
+		else
+			cCode = 'cd $(dirname "'+cFileName+'") ; ' + ' ring "' + cFileName + '"' + nl 
+		}
+		system(cCode)
 
 	func RunGUI oGD
 		Prepare(oGD)	# Save the source code to the file
