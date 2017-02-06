@@ -29,6 +29,7 @@ class ComponentViewParent from WindowsViewParent
 			setalignment(Qt_AlignHCenter |  Qt_AlignVCenter )
 		}
 		oLayoutAll.AddWidget(oLabel)
+		return oLabel
 
 	func TextBox cTitle,cVariable
 		oLabel = new qLabel(win) {
@@ -43,6 +44,7 @@ class ComponentViewParent from WindowsViewParent
 		}
 		oLayoutAll.AddLayout(oLayout)
 		aVariables + [oText,cVariable,C_INTERACTION_CT_TEXTBOX ]
+		return oText
 
 	func ListBox cTitle,cVariable,aItems
 		oLabel = new qLabel(win) {
@@ -61,6 +63,7 @@ class ComponentViewParent from WindowsViewParent
 		}
 		oLayoutAll.AddLayout(oLayout)
 		aVariables + [oList,cVariable,C_INTERACTION_CT_LISTBOX ]
+		return oList
 
 	func PageButtons
 		oBtnAgain = new qPushButton(win) {
