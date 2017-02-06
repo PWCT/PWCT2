@@ -39,32 +39,32 @@ class GoalDesignerView from WindowsViewParent
 			setCurrentChangedEvent(Method(:StepChangedAction)) 			
 		}
 		btnAddStep = new qPushButton(win) {
-			setText(T_GD_NEWSTEP)
+			setToolTip(T_GD_NEWSTEP)
 			setClickEvent(Method(:AddStepAction))			
 		}
 		setBtnImage(btnAddStep,"images/new.png")
 		btnEditStep = new qPushButton(win) {
-			setText(T_GD_EDITSTEP)
+			setToolTip(T_GD_EDITSTEP)
 			setClickEvent(Method(:EditStepAction))			
 		}		
 		setBtnImage(btnEditStep,"images/edit.png")
 		btnDeleteStep = new qPushButton(win) {
-			setText(T_GD_DELETESTEP)
+			setToolTip(T_GD_DELETESTEP)
 			setClickEvent(Method(:DeleteStepAction))			
 		}
 		setBtnImage(btnDeleteStep,"images/delete.png")
 		btnMoveStepUp = new qPushButton(win) {
-			setText(T_GD_MOVEUP)
+			setToolTip(T_GD_MOVEUP)
 			setClickEvent(Method(:MoveStepUpAction))		
 		}
 		setBtnImage(btnMoveStepUp,"images/up.png")
 		btnMoveStepDown = new qPushButton(win) {
-			setText(T_GD_MOVEDOWN)
+			setToolTip(T_GD_MOVEDOWN)
 			setClickEvent(Method(:MoveStepDownAction))			
 		}
 		setBtnImage(btnMoveStepDown,"images/down.png")
 		btnPrintSteps = new qPushButton(win) {
-			setText(T_GD_PRINTSTEPS)
+			setToolTip(T_GD_PRINTSTEPS)
 			setClickEvent(Method(:PrintStepsAction))			
 		}
 		setBtnImage(btnPrintSteps,"images/print.png")
@@ -99,7 +99,7 @@ class GoalDesignerView from WindowsViewParent
 		}
 		setBtnImage(btnSearch,"images/search.png")
 		btnIgnore = new qPushButton(win) {
-			setText(T_GD_COMMENTUNCOMMENT)
+			setToolTip(T_GD_COMMENTUNCOMMENT)
 			setClickEvent(Method(:IgnoreStepAction))	
 		}
 		setBtnImage(btnIgnore,"images/comments.png")
@@ -129,12 +129,12 @@ class GoalDesignerView from WindowsViewParent
 		}
 		setBtnImage(btnSaveFile,"images/save.png")
 		btnInteract = new qPushButton(win) {
-			setText(T_GD_INTERACT) 	# "Interact"
+			setToolTip(T_GD_INTERACT) 	# "Interact"
 			setClickEvent(Method(:InteractAction))	
 		}
 		setBtnImage(btnInteract,"images/interact.png")
 		btnModify = new qPushButton(win) {
-			setText(T_GD_MODIFY) 	# "Modify"
+			setToolTip(T_GD_MODIFY) 	# "Modify"
 			setClickEvent(Method(:ModifyAction))	
 		}		
 		setBtnImage(btnModify,"images/modify.png")
