@@ -69,32 +69,32 @@ class GoalDesignerView from WindowsViewParent
 		}
 		setBtnImage(btnPrintSteps,"images/print.png")
 		btnCutSteps = new qPushButton(win) {
-			setText(T_GD_CUT)
+			setToolTip(T_GD_CUT)
 			setClickEvent(Method(:CutStepsAction))			
 		}
 		setBtnImage(btnCutSteps,"images/cut.png")
 		btnCopySteps = new qPushButton(win) {
-			setText(T_GD_COPY)
+			setToolTip(T_GD_COPY)
 			setClickEvent(Method(:CopyStepsAction))			
 		}
 		setBtnImage(btnCopySteps,"images/copy.png")
 		btnPasteSteps = new qPushButton(win) {
-			setText(T_GD_PASTE)
+			setToolTip(T_GD_PASTE)
 			setClickEvent(Method(:PasteStepsAction))			
 		}
 		setBtnImage(btnPasteSteps,"images/paste.png")
 		btnIncreaseSize = new qPushButton(win) {
-			setText(T_GD_INCERASESIZE)
+			setToolTip(T_GD_INCERASESIZE)
 			setClickEvent(Method(:IncreaseSizeAction))			
 		}
 		setBtnImage(btnIncreaseSize,"images/zoomin.png")
 		btnDecreaseSize = new qPushButton(win) {
-			setText(T_GD_DECREASESIZE)
+			setToolTip(T_GD_DECREASESIZE)
 			setClickEvent(Method(:DecreaseSizeAction))			
 		}
 		setBtnImage(btnDecreaseSize,"images/zoomout.png")
 		btnSearch = new qPushButton(win) {
-			setText(T_GD_SEARCH)
+			setToolTip(T_GD_SEARCH)
 			setClickEvent(Method(:SearchAction))			
 		}
 		setBtnImage(btnSearch,"images/search.png")
@@ -103,28 +103,16 @@ class GoalDesignerView from WindowsViewParent
 			setClickEvent(Method(:IgnoreStepAction))	
 		}
 		setBtnImage(btnIgnore,"images/comments.png")
-		layoutBtns = new qHBoxLayout()
-		{				
-			AddWidget(btnPrintSteps)
-			AddWidget(btnCutSteps)
-			AddWidget(btnCopySteps)
-			AddWidget(btnPasteSteps)
-			AddWidget(btnIncreaseSize)
-			AddWidget(btnDecreaseSize)
-			AddWidget(btnSearch)
-			insertStretch( -1, 1 )
-		}
-		
 		sliderTimeMachine = new TimeMachineView(win) {
 			setValueChangedEvent(Method(:ChangeTimeMachinePointAction))
 		}
 		btnOpenFile = new qPushButton(win) {
-			setText(T_GD_OPENFILE)	# "Load File"
+			setToolTip(T_GD_OPENFILE)	# "Load File"
 			setClickEvent(Method(:OpenFileAction))	
 		}
 		setBtnImage(btnOpenFile,"images/open.png")
 		btnSaveFile = new qPushButton(win) {
-			setText(T_GD_SAVEFILE) 	# "Save File"
+			setToolTip(T_GD_SAVEFILE) 	# "Save File"
 			setClickEvent(Method(:SaveFileAction))	
 		}
 		setBtnImage(btnSaveFile,"images/save.png")
@@ -139,17 +127,17 @@ class GoalDesignerView from WindowsViewParent
 		}		
 		setBtnImage(btnModify,"images/modify.png")
 		btnDebug = new qPushButton(win) {
-			setText(T_GD_DEBUG) 	# "Debug"
+			setToolTip(T_GD_DEBUG) 	# "Debug"
 			setClickEvent(Method(:DebugAction))	
 		}		
 		setBtnImage(btnDebug,"images/debug.png")
 		btnRun = new qPushButton(win) {
-			setText(T_GD_RUN) 	# "Run"
+			setToolTip(T_GD_RUN) 	# "Run"
 			setClickEvent(Method(:RunAction))	
 		}		
 		setBtnImage(btnRun,"images/run.png")
 		btnRunGUI = new qPushButton(win) {
-			setText(T_GD_RUNGUI) 	# "Run GUI"
+			setToolTip(T_GD_RUNGUI) 	# "Run GUI"
 			setClickEvent(Method(:RunGUIAction))	
 		}		
 		setBtnImage(btnRunGUI,"images/rungui.bmp")
@@ -159,7 +147,14 @@ class GoalDesignerView from WindowsViewParent
 			AddWidget(btnSaveFile)	
 			AddWidget(btnDebug)		
 			AddWidget(btnRun)		
-			AddWidget(btnRunGUI)		
+			AddWidget(btnRunGUI)	
+			AddWidget(btnCutSteps)
+			AddWidget(btnCopySteps)
+			AddWidget(btnPasteSteps)
+			AddWidget(btnIncreaseSize)
+			AddWidget(btnDecreaseSize)
+			AddWidget(btnSearch)
+			AddWidget(btnPrintSteps)	
 			AddWidget(sliderTimeMachine)
 		}
 		layoutVBtns = new qVBoxLayout()
@@ -180,7 +175,6 @@ class GoalDesignerView from WindowsViewParent
 		}
 		layout1 = new qVBoxLayout()
 		{	
-			AddLayout(layoutBtns)
 			AddLayout(layoutTimeMachine)
 			AddLayout(layoutRegion)
 		}		

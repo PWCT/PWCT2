@@ -59,7 +59,7 @@ class EnvironmentView from WindowsViewParent
 		
 		oDock2 = new qdockwidget(win,0) {
 			setwidget(last_window().oView.win)
-			setwindowtitle("Source Code")			
+			setwindowtitle("Visual Source")			
 		}
 
 		adddockwidget(2,oDock1,2)		
