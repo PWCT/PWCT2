@@ -15,14 +15,7 @@ class EnvironmentView from WindowsViewParent
 
 		self.CreateToolbar()
 		self.CreateMenuBar(win)
-
-
-
-		status1 = new qstatusbar(win) {
-			showmessage("Ready!",0)
-		}
-
-		setstatusbar(status1)
+		self.CreateStatusBar(win)
 
 		tree1 = new qtreeview(win) {
 			#setclickedevent("pChangeFile()")
@@ -379,3 +372,8 @@ class EnvironmentView from WindowsViewParent
 
 		win.setmenubar(menu1)
 
+	func CreateStatusBar win
+		status1 = new qstatusbar(win) {
+			showmessage("Ready!",0)
+		}
+		win.setstatusbar(status1) 
