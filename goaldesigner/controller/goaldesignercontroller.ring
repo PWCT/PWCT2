@@ -12,6 +12,7 @@ class GoalDesignerController from WindowsControllerParent
 	oTMController = new TimeMachineController
 	oVisualSourceFile = new VisualSourceFile
 	oProgramController = new ProgramController
+	cComponentsPath = "vpl/ringpwct/"
 
 	func Start
 		oView.Show()
@@ -449,7 +450,7 @@ class GoalDesignerController from WindowsControllerParent
 		# Get the Interaction Variables Values
 			cVariablesValues = oModel.GetInteractionVariablesValues(nIID)
 		# Check the component File
-			cFilePath = "vpl/english/" + cFile + ".ring"
+			cFilePath = cComponentsPath + cFile + ".ring"
 			if fexists(cFilePath) {
 				if find(aComponentsFilesList,cFilePath) = 0 { 
 					aComponentsFilesList + cFilePath

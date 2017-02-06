@@ -9,6 +9,7 @@ class ComponentsBrowserController from WindowsControllerParent
 
 	oView = new ComponentsBrowserView
 	oModel = new TreeModel
+	cComponentsPath = "vpl/ringpwct/"
 
 	func KeyPressAction
 		if oView.oWinFilter.getKeyCode() = Qt_Key_Escape {	
@@ -70,7 +71,7 @@ class ComponentsBrowserController from WindowsControllerParent
 		}
 		aContent = oModel.GetNodeContent(nID)
 		cFile = aContent[:Code]
-		cFilePath = "vpl/english/" + cFile + ".ring"
+		cFilePath = cComponentsPath + cFile + ".ring"
 		if fexists(cFilePath) {
 			if find(aComponentsFilesList,cFilePath) = 0 { 
 				aComponentsFilesList + cFilePath

@@ -7,9 +7,9 @@
 
 ===========================================================
 Status
-	* Bugs Count : 23
+	* Bugs Count : 24
 	* Fixed Bugs : 23
-	* UnFixed Bugs : 0
+	* UnFixed Bugs : 1
 ===========================================================
 (1)  Fixed : We created over 6 thouands steps, then using the search window
 after selecting an item in the search result list we get the next error
@@ -907,3 +907,13 @@ Solution modified to  the next code in StepsTreeView.ring
 			return oFirststep
 		}
 		return oItem
+=======================================================
+(24)
+Line 281 Error (R2) : Array Access (Index out of range) !
+In method pastenode() in file goaldesigner/model/treemodel.ring
+called from line 116  In method pastestep() in file goaldesigner/model/goaldesignermodel.ring
+called from line 252  In method pastestepsaction() in file goaldesigner/controller/goaldesignercontroller.ring
+called from line 1  In qapp_exec In method exec() in file ring_qt.ring
+called from line 59  In function test_goaldesigner() in file B:/pwct2/goaldesigner.ring
+called from line 52  in file B:/pwct2/goaldesigner.ring
+=======================================================
