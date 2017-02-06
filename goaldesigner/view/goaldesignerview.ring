@@ -106,16 +106,6 @@ class GoalDesignerView from WindowsViewParent
 		sliderTimeMachine = new TimeMachineView(win) {
 			setValueChangedEvent(Method(:ChangeTimeMachinePointAction))
 		}
-		btnOpenFile = new qPushButton(win) {
-			setToolTip(T_GD_OPENFILE)	# "Load File"
-			setClickEvent(Method(:OpenFileAction))	
-		}
-		setBtnImage(btnOpenFile,"images/open.png")
-		btnSaveFile = new qPushButton(win) {
-			setToolTip(T_GD_SAVEFILE) 	# "Save File"
-			setClickEvent(Method(:SaveFileAction))	
-		}
-		setBtnImage(btnSaveFile,"images/save.png")
 		btnInteract = new qPushButton(win) {
 			setToolTip(T_GD_INTERACT) 	# "Interact"
 			setClickEvent(Method(:InteractAction))	
@@ -125,29 +115,9 @@ class GoalDesignerView from WindowsViewParent
 			setToolTip(T_GD_MODIFY) 	# "Modify"
 			setClickEvent(Method(:ModifyAction))	
 		}		
-		setBtnImage(btnModify,"images/modify.png")
-		btnDebug = new qPushButton(win) {
-			setToolTip(T_GD_DEBUG) 	# "Debug"
-			setClickEvent(Method(:DebugAction))	
-		}		
-		setBtnImage(btnDebug,"images/debug.png")
-		btnRun = new qPushButton(win) {
-			setToolTip(T_GD_RUN) 	# "Run"
-			setClickEvent(Method(:RunAction))	
-		}		
-		setBtnImage(btnRun,"images/run.png")
-		btnRunGUI = new qPushButton(win) {
-			setToolTip(T_GD_RUNGUI) 	# "Run GUI"
-			setClickEvent(Method(:RunGUIAction))	
-		}		
-		setBtnImage(btnRunGUI,"images/rungui.bmp")
+		setBtnImage(btnModify,"images/modify.png")		
 		layoutTimeMachine = new qHBoxLayout()
 		{	
-			AddWidget(btnOpenFile)
-			AddWidget(btnSaveFile)	
-			AddWidget(btnDebug)		
-			AddWidget(btnRun)		
-			AddWidget(btnRunGUI)	
 			AddWidget(btnCutSteps)
 			AddWidget(btnCopySteps)
 			AddWidget(btnPasteSteps)
