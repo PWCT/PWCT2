@@ -8,70 +8,20 @@
 class EnvironmentView from WindowsViewParent
 
 	# Create the window and the Controls
-	win = new qMainWindow()
-	{
-		setLayoutDirection(T_LAYOUTDIRECTION)
-		setWindowTitle("Programming Without Coding Technology")
+		win = new qMainWindow()
+		{
 
-		self.CreateToolbar()
-		self.CreateMenuBar(win)
-		self.CreateStatusBar(win)
-		self.CreateFilesManager(win)
-		self.CreateGoalDesigner(win)
+			setLayoutDirection(T_LAYOUTDIRECTION)
+			setWindowTitle("Programming Without Coding Technology")
 
-		setwinicon(win,"images/pwct.png")
-		showmaximized()	
+			self.CreateMenuBar(win)
+			self.CreateToolbar(win)
+			self.CreateStatusBar(win)
+			self.CreateFilesManager(win)
+			self.CreateGoalDesigner(win)
 
-	}
-
-	func CreateToolbar
-		aBtns = [
-				new qpushbutton(win) { 
-					setbtnimage(self,"images/new.png") 
-					setclickevent("pNew()")
-					settooltip("New File")
-				} ,
-				new qpushbutton(win) { 
-					setbtnimage(self,"images/open.png") 
-					setclickevent("pOpen()")
-					settooltip("Open File")
-				} ,
-				new qpushbutton(win) { 
-					setbtnimage(self,"images/save.png")
-					setclickevent("pSave()")
-					settooltip("Save")
-				 } ,
-				new qpushbutton(win) { 
-					setbtnimage(self,"images/saveas.png")
-					setclickevent("pSaveAs()")
-					settooltip("Save As")
-				 } ,
-				
-				new qpushbutton(win) { 
-					setbtnimage(self,"images/debug.png") 
-					setclickevent("pDebug()")
-					settooltip("Debug (Run then wait!)")
-				} ,
-				new qpushbutton(win) { 
-					setbtnimage(self,"images/run.png") 
-					setclickevent("pRun()")
-					settooltip("Run the program")
-				} ,
-				new qpushbutton(win) { 
-					setbtnimage(self,"images/rungui.bmp") 
-					setclickevent("pRunNoConsole()")
-					settooltip("Run GUI Application (No Console)")
-				} ,
-				new qpushbutton(win) { 
-					setbtnimage(self,"images/close.png") 
-					setclickevent("pQuit()")
-					settooltip("Quit")
-				} 
-			]
-		win {
-			tool1 = addtoolbar("files")  {
-	  			for x in aBtns addwidget(x) addseparator() next
-			}
+			setwinicon(win,"images/pwct.png")
+			showmaximized()	
 		}
 
 	func CreateMenuBar win
@@ -251,11 +201,57 @@ class EnvironmentView from WindowsViewParent
 		}
 		win.setmenubar(menu1)
 
-	func CreateStatusBar win
-		status1 = new qstatusbar(win) {
-			showmessage("Ready!",0)
+	func CreateToolbar win
+		aBtns = [
+				new qpushbutton(win) { 
+					setbtnimage(self,"images/new.png") 
+					setclickevent("pNew()")
+					settooltip("New File")
+				} ,
+				new qpushbutton(win) { 
+					setbtnimage(self,"images/open.png") 
+					setclickevent("pOpen()")
+					settooltip("Open File")
+				} ,
+				new qpushbutton(win) { 
+					setbtnimage(self,"images/save.png")
+					setclickevent("pSave()")
+					settooltip("Save")
+				 } ,
+				new qpushbutton(win) { 
+					setbtnimage(self,"images/saveas.png")
+					setclickevent("pSaveAs()")
+					settooltip("Save As")
+				 } ,
+				
+				new qpushbutton(win) { 
+					setbtnimage(self,"images/debug.png") 
+					setclickevent("pDebug()")
+					settooltip("Debug (Run then wait!)")
+				} ,
+				new qpushbutton(win) { 
+					setbtnimage(self,"images/run.png") 
+					setclickevent("pRun()")
+					settooltip("Run the program")
+				} ,
+				new qpushbutton(win) { 
+					setbtnimage(self,"images/rungui.bmp") 
+					setclickevent("pRunNoConsole()")
+					settooltip("Run GUI Application (No Console)")
+				} ,
+				new qpushbutton(win) { 
+					setbtnimage(self,"images/close.png") 
+					setclickevent("pQuit()")
+					settooltip("Quit")
+				} 
+			]
+		win {
+			tool1 = addtoolbar("files")  {
+	  			for x in aBtns { 
+					addwidget(x) addseparator()
+				}
+			}
 		}
-		win.setstatusbar(status1) 
 
 	func CreateFilesManager win
 		tree1 = new qtreeview(win) {
@@ -292,3 +288,9 @@ class EnvironmentView from WindowsViewParent
 			setwindowtitle("Goal Designer")			
 		}
 		win.adddockwidget(2,oDock2,2)		
+
+	func CreateStatusBar win
+		status1 = new qstatusbar(win) {
+			showmessage("Ready!",0)
+		}
+		win.setstatusbar(status1) 
