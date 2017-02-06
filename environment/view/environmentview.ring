@@ -8,233 +8,14 @@
 class EnvironmentView from WindowsViewParent
 
 	# Create the window and the Controls
-	win =new qMainWindow()
+	win = new qMainWindow()
 	{
 		setLayoutDirection(T_LAYOUTDIRECTION)
 		setWindowTitle("Programming Without Coding Technology")
 
 		self.CreateToolbar()
+		self.CreateMenuBar(win)
 
-		menu1 = new qmenubar(win) {		
-			subFile = addmenu("File")
-			subEdit = addmenu("Edit")
-			subView = addmenu("View")
-			subProgram = addmenu("Program")
-			subHelp = addmenu("Help")
-			subFile { 
-				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+n"))
-					#setbtnimage(self,"images/new.png")
-					settext("New")
-					setclickevent("pNew()")
-				}
-				addaction(oAction)
-				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+o"))
-					#setbtnimage(self,"images/open.png") 
-					settext("Open")
-					setclickevent("pOpen()")
-				}
-				addaction(oAction)
-				addseparator()
-				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+s"))
-					#setbtnimage(self,"images/save.png")
-					settext("Save")
-					setclickevent("pSave()")
-				}
-				addaction(oAction)
-				addseparator()
-				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+e"))
-					#setbtnimage(self,"images/saveas.png")
-					settext("Save As")
-					setclickevent("pSaveAs()")
-				}
-				addaction(oAction)
-				addseparator()
-				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+p"))
-					#setbtnimage(self,"images/print.png")
-					settext("Print to PDF")
-					setclickevent("pPrint()")
-				}
-				addaction(oAction)
-				addseparator()
-				oAction = new qaction(win) {
-					setShortcut(new QKeySequence("Ctrl+q"))
-					#setbtnimage(self,"images/close.png") 
-					settext("Exit")
-					setstatustip("Exit")
-					setclickevent("pQuit()")
-				}
-				addaction(oAction)
-			}
-			subEdit { 
-				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+z"))
-					#setbtnimage(self,"images/undo.png")
-					settext("Undo")
-					setclickevent("pUndo()")
-				}
-				addaction(oAction)
-				addseparator()
-				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+x"))
-					#setbtnimage(self,"images/cut.png")
-					settext("Cut")
-					setclickevent("pCut()")
-				}
-				addaction(oAction)
-				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+c"))
-					#setbtnimage(self,"images/copy.png")
-					settext("Copy")
-					setclickevent("pCopy()")
-				}
-				addaction(oAction)
-				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+v"))
-					#setbtnimage(self,"images/paste.png")
-					settext("Paste")
-					setclickevent("pPaste()")
-				}
-				addaction(oAction)
-				addseparator()
-				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+i"))
-					#setbtnimage(self,"images/font.png")
-					settext("Font")
-					setclickevent("pFont()")
-				}
-				addseparator()
-				addaction(oAction)
-				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+t"))
-					#setbtnimage(self,"images/colors.jpg")
-					settext("Text Color")
-					setclickevent("pColor()")
-				}
-				addaction(oAction)
-				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+b"))
-					#setbtnimage(self,"images/colors.jpg")
-					settext("Back Color")
-					setclickevent("pColor2()")
-				}
-				addaction(oAction)
-				addseparator()
-				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+g"))
-					settext("Go to line")
-					setclickevent("pGoto()")
-				}
-				addaction(oAction)
-				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+f"))
-					#setbtnimage(self,"images/search.png")
-					settext("Find and Replace")
-					setclickevent("pFind()")
-				}
-				addaction(oAction)
-				addseparator()
-				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+h"))
-					settext("Set Tab Width")
-					setclickevent("pTabWidth()")
-				}
-				addaction(oAction)
-			}				
-			subView {
-				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+j"))
-					#setbtnimage(self,"images/project.png")
-					settext("Project Files")
-					setclickevent("pProject()")
-				}
-				addaction(oAction)			
-				addseparator()	
-				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+u"))
-					#setbtnimage(self,"images/source.png")
-					setclickevent("pSourceCode()")
-					settext("Source Code")
-				}
-				addaction(oAction)	
-				addseparator()	
-				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+w"))
-					#setbtnimage(self,"images/richtext.png")
-					setclickevent("pWebBrowser()")
-					settext("Web Browser")
-				}
-				addaction(oAction)	
-			}
-			subProgram { 
-				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+d"))
-					#setbtnimage(self,"images/debug.png")
-					settext("Debug (Run then wait!)")
-					setclickevent("pDebug()")
-				}
-				addaction(oAction)
-				addseparator()
-				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+r"))
-					#setbtnimage(self,"images/run.png")
-					settext("Run")
-					setclickevent("pRun()")
-				}
-				addaction(oAction)
-				addseparator()
-				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+F5"))
-					#setbtnimage(self,"images/run.png")
-					settext("Run GUI Application (No Console)")
-					setclickevent("pRunNoConsole()")
-				}
-				addaction(oAction)	
-			}
-			subHelp { 
-
-				subHelpLF = addmenu("Language Reference")
-				subHelpLF { 
-					oAction = new qAction(win) {
-						settext("CHM File")
-						setclickevent("pOpenCHM()")
-					}
-					addaction(oAction)
-					oAction = new qAction(win) {
-						settext("PDF File")
-						setclickevent("pOpenPDF()")
-					}
-					addaction(oAction)
-				}
-				addseparator()
-				subHelpTools = addmenu("Development Tools")
-				subHelpTools { 
-
-					oAction = new qAction(win) {
-						settext("Programming Language")
-						setclickevent("pLang()")
-					}
-					addaction(oAction)
-					oAction = new qAction(win) {
-						settext("GUI Library")
-						setclickevent("pGUI()")
-					}
-					addaction(oAction)
-				}
-				addseparator()
-					oAction = new qAction(win) {
-						settext("About")
-						setclickevent("pAbout()")
-					}
-					addaction(oAction)			
-			}
-		}
-
-		setmenubar(menu1)
 
 
 		status1 = new qstatusbar(win) {
@@ -373,3 +154,227 @@ class EnvironmentView from WindowsViewParent
 	  			for x in aBtns addwidget(x) addseparator() next
 			}
 		}
+
+	func CreateMenuBar win
+
+		menu1 = new qmenubar(win) {		
+			subFile = addmenu("File")
+			subEdit = addmenu("Edit")
+			subView = addmenu("View")
+			subProgram = addmenu("Program")
+			subHelp = addmenu("Help")
+			subFile { 
+				oAction = new qAction(win) {
+					setShortcut(new QKeySequence("Ctrl+n"))
+					setbtnimage(self,"images/new.png")
+					settext("New")
+					setclickevent("pNew()")
+				}
+				addaction(oAction)
+				oAction = new qAction(win) {
+					setShortcut(new QKeySequence("Ctrl+o"))
+					setbtnimage(self,"images/open.png") 
+					settext("Open")
+					setclickevent("pOpen()")
+				}
+				addaction(oAction)
+				addseparator()
+				oAction = new qAction(win) {
+					setShortcut(new QKeySequence("Ctrl+s"))
+					setbtnimage(self,"images/save.png")
+					settext("Save")
+					setclickevent("pSave()")
+				}
+				addaction(oAction)
+				addseparator()
+				oAction = new qAction(win) {
+					setShortcut(new QKeySequence("Ctrl+e"))
+					setbtnimage(self,"images/saveas.png")
+					settext("Save As")
+					setclickevent("pSaveAs()")
+				}
+				addaction(oAction)
+				addseparator()
+				oAction = new qAction(win) {
+					setShortcut(new QKeySequence("Ctrl+p"))
+					setbtnimage(self,"images/print.png")
+					settext("Print to PDF")
+					setclickevent("pPrint()")
+				}
+				addaction(oAction)
+				addseparator()
+				oAction = new qaction(win) {
+					setShortcut(new QKeySequence("Ctrl+q"))
+					setbtnimage(self,"images/close.png") 
+					settext("Exit")
+					setstatustip("Exit")
+					setclickevent("pQuit()")
+				}
+				addaction(oAction)
+			}
+			subEdit { 
+				oAction = new qAction(win) {
+					setShortcut(new QKeySequence("Ctrl+z"))
+					setbtnimage(self,"images/undo.png")
+					settext("Undo")
+					setclickevent("pUndo()")
+				}
+				addaction(oAction)
+				addseparator()
+				oAction = new qAction(win) {
+					setShortcut(new QKeySequence("Ctrl+x"))
+					setbtnimage(self,"images/cut.png")
+					settext("Cut")
+					setclickevent("pCut()")
+				}
+				addaction(oAction)
+				oAction = new qAction(win) {
+					setShortcut(new QKeySequence("Ctrl+c"))
+					setbtnimage(self,"images/copy.png")
+					settext("Copy")
+					setclickevent("pCopy()")
+				}
+				addaction(oAction)
+				oAction = new qAction(win) {
+					setShortcut(new QKeySequence("Ctrl+v"))
+					setbtnimage(self,"images/paste.png")
+					settext("Paste")
+					setclickevent("pPaste()")
+				}
+				addaction(oAction)
+				addseparator()
+				oAction = new qAction(win) {
+					setShortcut(new QKeySequence("Ctrl+i"))
+					setbtnimage(self,"images/font.png")
+					settext("Font")
+					setclickevent("pFont()")
+				}
+				addseparator()
+				addaction(oAction)
+				oAction = new qAction(win) {
+					setShortcut(new QKeySequence("Ctrl+t"))
+					setbtnimage(self,"images/colors.jpg")
+					settext("Text Color")
+					setclickevent("pColor()")
+				}
+				addaction(oAction)
+				oAction = new qAction(win) {
+					setShortcut(new QKeySequence("Ctrl+b"))
+					setbtnimage(self,"images/colors.jpg")
+					settext("Back Color")
+					setclickevent("pColor2()")
+				}
+				addaction(oAction)
+				addseparator()
+				oAction = new qAction(win) {
+					setShortcut(new QKeySequence("Ctrl+g"))
+					settext("Go to line")
+					setclickevent("pGoto()")
+				}
+				addaction(oAction)
+				oAction = new qAction(win) {
+					setShortcut(new QKeySequence("Ctrl+f"))
+					setbtnimage(self,"images/search.png")
+					settext("Find and Replace")
+					setclickevent("pFind()")
+				}
+				addaction(oAction)
+				addseparator()
+				oAction = new qAction(win) {
+					setShortcut(new QKeySequence("Ctrl+h"))
+					settext("Set Tab Width")
+					setclickevent("pTabWidth()")
+				}
+				addaction(oAction)
+			}				
+			subView {
+				oAction = new qAction(win) {
+					setShortcut(new QKeySequence("Ctrl+j"))
+					setbtnimage(self,"images/project.png")
+					settext("Project Files")
+					setclickevent("pProject()")
+				}
+				addaction(oAction)			
+				addseparator()	
+				oAction = new qAction(win) {
+					setShortcut(new QKeySequence("Ctrl+u"))
+					setbtnimage(self,"images/source.png")
+					setclickevent("pSourceCode()")
+					settext("Source Code")
+				}
+				addaction(oAction)	
+				addseparator()	
+				oAction = new qAction(win) {
+					setShortcut(new QKeySequence("Ctrl+w"))
+					setbtnimage(self,"images/richtext.png")
+					setclickevent("pWebBrowser()")
+					settext("Web Browser")
+				}
+				addaction(oAction)	
+			}
+			subProgram { 
+				oAction = new qAction(win) {
+					setShortcut(new QKeySequence("Ctrl+d"))
+					setbtnimage(self,"images/debug.png")
+					settext("Debug (Run then wait!)")
+					setclickevent("pDebug()")
+				}
+				addaction(oAction)
+				addseparator()
+				oAction = new qAction(win) {
+					setShortcut(new QKeySequence("Ctrl+r"))
+					setbtnimage(self,"images/run.png")
+					settext("Run")
+					setclickevent("pRun()")
+				}
+				addaction(oAction)
+				addseparator()
+				oAction = new qAction(win) {
+					setShortcut(new QKeySequence("Ctrl+F5"))
+					setbtnimage(self,"images/run.png")
+					settext("Run GUI Application (No Console)")
+					setclickevent("pRunNoConsole()")
+				}
+				addaction(oAction)	
+			}
+			subHelp { 
+
+				subHelpLF = addmenu("Language Reference")
+				subHelpLF { 
+					oAction = new qAction(win) {
+						settext("CHM File")
+						setclickevent("pOpenCHM()")
+					}
+					addaction(oAction)
+					oAction = new qAction(win) {
+						settext("PDF File")
+						setclickevent("pOpenPDF()")
+					}
+					addaction(oAction)
+				}
+				addseparator()
+				subHelpTools = addmenu("Development Tools")
+				subHelpTools { 
+
+					oAction = new qAction(win) {
+						settext("Programming Language")
+						setclickevent("pLang()")
+					}
+					addaction(oAction)
+					oAction = new qAction(win) {
+						settext("GUI Library")
+						setclickevent("pGUI()")
+					}
+					addaction(oAction)
+				}
+				addseparator()
+					oAction = new qAction(win) {
+						settext("About")
+						setclickevent("pAbout()")
+					}
+					addaction(oAction)			
+			}
+		}
+
+		win.setmenubar(menu1)
+
