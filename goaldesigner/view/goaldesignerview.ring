@@ -116,8 +116,10 @@ class GoalDesignerView from WindowsViewParent
 			setClickEvent(Method(:ModifyAction))	
 		}		
 		setBtnImage(btnModify,"images/modify.png")		
+		labelTM = new qLabel(win) { setText("The Time Machine") }
 		layoutTimeMachine = new qHBoxLayout()
 		{	
+			AddWidget(LabelTM)
 			AddWidget(sliderTimeMachine)
 		}
 		layoutVBtns = new qVBoxLayout()
@@ -140,8 +142,8 @@ class GoalDesignerView from WindowsViewParent
 			insertStretch( -1, 1 )
 		}
 		layoutRegion = new qHBoxLayout() {
-			AddWidget(oTab)
 			AddLayout(layoutVBtns)
+			AddWidget(oTab)
 		}
 		layout1 = new qVBoxLayout()
 		{	

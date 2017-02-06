@@ -276,7 +276,7 @@ class EnvironmentView from WindowsViewParent
 			setwindowtitle("Project Files")
 			setwidget(tree1)
 		}
-		win.adddockwidget(1,oDock1,1)
+		win.adddockwidget(2,oDock1,2)
 
 	func CreateGoalDesigner win
 		Open_Window(:GoalDesignerController)		
@@ -284,7 +284,7 @@ class EnvironmentView from WindowsViewParent
 			setwidget(last_window().oView.win)
 			setwindowtitle("Goal Designer")			
 		}
-		win.adddockwidget(2,oDock2,2)		
+		win.adddockwidget(1,oDock2,1)		
 
 	func CreateStatusBar win
 		status1 = new qstatusbar(win) {
