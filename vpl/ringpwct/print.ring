@@ -23,7 +23,7 @@ Class PrintComponentController from ComponentControllerParent
 		cText = oView.myText.text() 
 		if  nRow = 1 and cText  = "" {		
 			oView.myText.setText('" "')
-		elseif  nRow = 0 and cText  = '" "' 
+		elseif  nRow = 0 and cText  = '" "'  
 			oView.myText.setText("")		
 		}
 
