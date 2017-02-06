@@ -68,6 +68,11 @@
 	T_GD_DM_SAVEFILE = "Save File"
 	T_GD_DM_FILETYPE = "source files(*.pwct)"
 
+	# Program
+	T_GD_DEBUG	 	= "Debug"
+	T_GD_RUN			= "Run"
+	T_GD_RUNGUI		= "RunGUI"
+
 # Print Steps Window
 	T_GD_PS_PRINTSTEP = "Print Steps"				# The Window Title
 	T_GD_PS_STEPSTREE = "Steps Tree"			# Tab Page Header

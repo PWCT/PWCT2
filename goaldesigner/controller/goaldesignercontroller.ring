@@ -530,3 +530,9 @@ class GoalDesignerController from WindowsControllerParent
 		oView.BtnPasteSteps.setEnabled(AllowInteractButton())
 		oView.BtnIgnore.setEnabled(IsCommentOrRoot())
 		oView.BtnModify.setEnabled(IsGeneratedStep())
+
+	func DebugAction
+
+	func RunAction
+
+	func RunGUIAction

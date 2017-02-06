@@ -68,6 +68,11 @@
 	T_GD_DM_SAVEFILE = "حفظ ملف"
 	T_GD_DM_FILETYPE = "ملفات المصدر(*.pwct)"
 
+	# Program
+	T_GD_DEBUG	 	= "تنقيح"
+	T_GD_RUN			= "تشغيل"
+	T_GD_RUNGUI		= "تشغيل برنامج رسومي"
+
 # Print Steps Window
 	T_GD_PS_PRINTSTEP = "طباعة الخطوات"			# The Window Title
 	T_GD_PS_STEPSTREE = "شجرة الخطوات"			# Tab Page Header

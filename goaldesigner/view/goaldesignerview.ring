@@ -142,12 +142,30 @@ class GoalDesignerView from WindowsViewParent
 			setClickEvent(Method(:ModifyAction))	
 		}		
 		setBtnImage(btnModify,"images/modify.png")
+		btnDebug = new qPushButton(win) {
+			setText(T_GD_DEBUG) 	# "Debug"
+			setClickEvent(Method(:DebugAction))	
+		}		
+		setBtnImage(btnDebug,"images/debug.png")
+		btnRun = new qPushButton(win) {
+			setText(T_GD_RUN) 	# "Run"
+			setClickEvent(Method(:RunAction))	
+		}		
+		setBtnImage(btnRun,"images/run.png")
+		btnRunGUI = new qPushButton(win) {
+			setText(T_GD_RUNGUI) 	# "Run GUI"
+			setClickEvent(Method(:RunGUIAction))	
+		}		
+		setBtnImage(btnRunGUI,"images/rungui.bmp")
 		layoutTimeMachine = new qHBoxLayout()
 		{	
 			AddWidget(btnOpenFile)
 			AddWidget(btnSaveFile)		
 			AddWidget(btnInteract)		
 			AddWidget(btnModify)		
+			AddWidget(btnDebug)		
+			AddWidget(btnRun)		
+			AddWidget(btnRunGUI)		
 			AddWidget(sliderTimeMachine)
 		}
 		layout1 = new qVBoxLayout()
