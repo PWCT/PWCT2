@@ -195,22 +195,6 @@ class EnvironmentView from WindowsViewParent
 				}
 				addaction(oAction)	
 			}
-		/*
-			subBrowser { 
-
-				for x=1 to len(aBrowserLinks)
-					item = aBrowserLinks[x]
-					oAction = new qAction(win) {
-						settext(item[1])
-						setclickevent("pBrowserLink("+x+")")
-					}
-					addaction(oAction)	
-					if x != len(aBrowserLinks)
-						addseparator()	
-					ok
-				next
-			}
-			*/
 			subHelp { 
 
 				subHelpLF = addmenu("Language Reference")
@@ -261,8 +245,8 @@ class EnvironmentView from WindowsViewParent
 
 		tree1 = new qtreeview(win) {
 			#setclickedevent("pChangeFile()")
-			setGeometry(00,00,200,400)
-			setmaximumwidth(300)
+			#setGeometry(00,00,200,400)
+			#setmaximumwidth(300)
 			#chdir(cStartUpFolder)
 			oDir = new QDir()					
 			ofile = new QFileSystemModel() {
@@ -298,10 +282,9 @@ class EnvironmentView from WindowsViewParent
 		}
 
 		adddockwidget(1,oDock1,1)
-		adddockwidget(2,oDock2,2)
-		#adddockwidget(2,oDock3,1)
+		adddockwidget(2,oDock2,2)		
 
-		#setwinicon(self,cCurrentDir + "/images/notepad.png")
+		setwinicon(win,"images/pwct.png")
 		showmaximized()	
 
 	}
