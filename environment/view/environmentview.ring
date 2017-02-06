@@ -52,12 +52,11 @@ class EnvironmentView from WindowsViewParent
 		
 		oDock2 = new qdockwidget(win,0) {
 			setwidget(last_window().oView.win)
-			setwindowtitle("Visual Source")			
+			setwindowtitle("Goal Designer")			
 		}
 
-		adddockwidget(2,oDock1,2)		
-		adddockwidget(1,oDock2,1)
-
+		adddockwidget(1,oDock1,1)
+		adddockwidget(2,oDock2,2)		
 
 		setwinicon(win,"images/pwct.png")
 		showmaximized()	
@@ -87,41 +86,7 @@ class EnvironmentView from WindowsViewParent
 					setclickevent("pSaveAs()")
 					settooltip("Save As")
 				 } ,
-				new qpushbutton(win) { 
-					setbtnimage(self,"images/cut.png")
-					setclickevent("pCut()")
-					settooltip("Cut")
-				 } ,
-				new qpushbutton(win) { 
-					setbtnimage(self,"images/copy.png") 
-					setclickevent("pCopy()")
-					settooltip("Copy")
-				} ,
-				new qpushbutton(win) { 
-					setbtnimage(self,"images/paste.png") 
-					setclickevent("pPaste()")
-					settooltip("Paste")
-				} ,
-				new qpushbutton(win) { 
-					setbtnimage(self,"images/font.png") 
-					setclickevent("pFont()")
-					settooltip("Font")
-				} ,
-				new qpushbutton(win) { 
-					setbtnimage(self,"images/colors.jpg") 
-					setclickevent("pColor()")
-					settooltip("Text Color")
-				} ,
-				new qpushbutton(win) { 
-					setbtnimage(self,"images/search.png") 
-					setclickevent("pFind()")
-					settooltip("Find and Replace")
-				} ,
-				new qpushbutton(win) { 
-					setbtnimage(self,"images/print.png") 
-					setclickevent("pPrint()")
-					settooltip("Print")
-				} ,
+				
 				new qpushbutton(win) { 
 					setbtnimage(self,"images/debug.png") 
 					setclickevent("pDebug()")
@@ -150,7 +115,6 @@ class EnvironmentView from WindowsViewParent
 		}
 
 	func CreateMenuBar win
-
 		menu1 = new qmenubar(win) {		
 			subFile = addmenu("File")
 			subEdit = addmenu("Edit")
@@ -369,7 +333,6 @@ class EnvironmentView from WindowsViewParent
 					addaction(oAction)			
 			}
 		}
-
 		win.setmenubar(menu1)
 
 	func CreateStatusBar win
