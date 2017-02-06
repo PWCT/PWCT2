@@ -18,7 +18,7 @@ Class PrintComponentController from ComponentControllerParent
 			SetStepCode("See " + Variable(:text) )	
 		}
 
-	func ItemSelectedAction
+	func TypeChangeAction
 		nRow = oView.myList.CurrentRow()
 		cText = oView.myText.text() 
 		if  nRow = 1 and cText  = "" {		
@@ -35,6 +35,6 @@ class PrintComponentView from ComponentViewParent
 			myText = TextBox(T_CT_PRINT_IP_TEXT , :text)
 		# "Type :"	 ["Literal","Expression"]
 			myList = ListBox(T_CT_PRINT_IP_TYPE, :type , T_CT_PRINT_IP_TYPELIST)  {
-				setCurrentItemChangedEvent( Method(:ItemSelectedAction) )
+				setCurrentItemChangedEvent( Method(:TypeChangeAction) )
 			}
 		PageButtons()
