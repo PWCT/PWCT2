@@ -139,3 +139,12 @@ T_CB_COMPONENTSFILE = "vpl/components.pwct"
 	# Interaction Page
 		T_CT_IFSTEATEMENT_IP_TITLE  = "If Statement Component"
 		T_CT_IFSTEATEMENT_IP_CONDITION = "Condition : "
+
+# GetInput Component
+
+	# Step Stree
+		T_CT_GETINPUT_ST_INPUT  = "Input "
+
+	# Interaction Page
+		T_CT_GETINPUT_IP_TITLE = "Get Input Component"
+		T_CT_GETINPUT_IP_VARIABLE = "Variable : "

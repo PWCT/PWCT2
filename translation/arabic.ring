@@ -139,3 +139,12 @@ T_CB_COMPONENTSFILE = "vpl/arabiccomponents.pwct"
 	# Interaction Page
 		T_CT_IFSTEATEMENT_IP_TITLE  = "مكون جملة الشرط إذا"
 		T_CT_IFSTEATEMENT_IP_CONDITION = "الشرط : "
+
+# GetInput Component
+
+	# Step Stree
+		T_CT_GETINPUT_ST_INPUT  = "ادخل "
+
+	# Interaction Page
+		T_CT_GETINPUT_IP_TITLE = "مكون الحصول على المدخلات"
+		T_CT_GETINPUT_IP_VARIABLE = "المتغير : "
