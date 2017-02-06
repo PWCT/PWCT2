@@ -118,13 +118,6 @@ class GoalDesignerView from WindowsViewParent
 		setBtnImage(btnModify,"images/modify.png")		
 		layoutTimeMachine = new qHBoxLayout()
 		{	
-			AddWidget(btnCutSteps)
-			AddWidget(btnCopySteps)
-			AddWidget(btnPasteSteps)
-			AddWidget(btnIncreaseSize)
-			AddWidget(btnDecreaseSize)
-			AddWidget(btnSearch)
-			AddWidget(btnPrintSteps)	
 			AddWidget(sliderTimeMachine)
 		}
 		layoutVBtns = new qVBoxLayout()
@@ -137,11 +130,18 @@ class GoalDesignerView from WindowsViewParent
 			AddWidget(btnInteract)		
 			AddWidget(btnModify)		
 			AddWidget(btnIgnore)
+			AddWidget(btnCutSteps)
+			AddWidget(btnCopySteps)
+			AddWidget(btnPasteSteps)
+			AddWidget(btnIncreaseSize)
+			AddWidget(btnDecreaseSize)
+			AddWidget(btnSearch)
+			AddWidget(btnPrintSteps)	
 			insertStretch( -1, 1 )
 		}
 		layoutRegion = new qHBoxLayout() {
-			AddLayout(layoutVBtns)
 			AddWidget(oTab)
+			AddLayout(layoutVBtns)
 		}
 		layout1 = new qVBoxLayout()
 		{	
