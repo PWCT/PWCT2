@@ -533,7 +533,10 @@ class GoalDesignerController from WindowsControllerParent
 		oView.BtnModify.setEnabled(IsGeneratedStep())
 
 	func DebugAction
+		oProgramController.Debug(self)
 
 	func RunAction
+		oProgramController.Run(self)
 
 	func RunGUIAction
+		oProgramController.RunGUI(self)

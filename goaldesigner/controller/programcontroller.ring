@@ -7,3 +7,8 @@
 
 Class ProgramController
 
+	func Debug oGD
+
+	func Run oGD
+
+	func RunGUI oGD
