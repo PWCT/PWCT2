@@ -112,6 +112,7 @@ class GoalDesignerView from WindowsViewParent
 			AddWidget(btnIncreaseSize)
 			AddWidget(btnDecreaseSize)
 			AddWidget(btnSearch)
+			insertStretch( -1, 1 )
 		}
 		
 		sliderTimeMachine = new TimeMachineView(win) {
@@ -155,8 +156,7 @@ class GoalDesignerView from WindowsViewParent
 		layoutTimeMachine = new qHBoxLayout()
 		{	
 			AddWidget(btnOpenFile)
-			AddWidget(btnSaveFile)		
-
+			AddWidget(btnSaveFile)	
 			AddWidget(btnDebug)		
 			AddWidget(btnRun)		
 			AddWidget(btnRunGUI)		
@@ -172,7 +172,7 @@ class GoalDesignerView from WindowsViewParent
 			AddWidget(btnInteract)		
 			AddWidget(btnModify)		
 			AddWidget(btnIgnore)
-			
+			insertStretch( -1, 1 )
 		}
 		layoutRegion = new qHBoxLayout() {
 			AddLayout(layoutVBtns)
