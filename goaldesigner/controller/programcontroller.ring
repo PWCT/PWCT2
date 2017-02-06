@@ -10,18 +10,21 @@ Class ProgramController
 	cFileName = "noname.ring"
 	cSourceCode = ""
 	cCurrentDir = CurrentDir() + "/"	# The Goal Designer Folder
+	cDebugBatch = "run"
+	cRunBatch = "run2"
+	cRunGUIBatch = "run2"
 
 	func Debug oGD
 		Prepare(oGD)	# Save the source code to the file
-		RunBatch("run","")
+		RunBatch(cDebugBatch,"")
 
 	func Run oGD
 		Prepare(oGD)	# Save the source code to the file
-		RunBatch("run2","")
+		RunBatch(cRunBatch,"")
 
 	func RunGUI oGD
 		Prepare(oGD)	# Save the source code to the file
-		RunBatch("run2","/b")
+		RunBatch(cRunGUIBatch,"/b")
 
 	private
 
