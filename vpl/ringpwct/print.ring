@@ -18,12 +18,23 @@ Class PrintComponentController from ComponentControllerParent
 			SetStepCode("See " + Variable(:text) )	
 		}
 
+	func ItemSelectedAction
+		nRow = oView.myList.CurrentRow()
+		cText = oView.myText.text() 
+		if  nRow = 1 and cText  = "" {		
+			oView.myText.setText('" "')
+		elseif  nRow = 0 and cText  = '" "' 
+			oView.myText.setText("")		
+		}
+
 class PrintComponentView from ComponentViewParent
 	 
 		# "Print Component"
 			Title(T_CT_PRINT_IP_TITLE)	
 		# "Text : "
-			TextBox(T_CT_PRINT_IP_TEXT , :text)
+			myText = TextBox(T_CT_PRINT_IP_TEXT , :text)
 		# "Type :"	 ["Literal","Expression"]
-			ListBox(T_CT_PRINT_IP_TYPE, :type , T_CT_PRINT_IP_TYPELIST) 
+			myList = ListBox(T_CT_PRINT_IP_TYPE, :type , T_CT_PRINT_IP_TYPELIST)  {
+				setCurrentItemChangedEvent( Method(:ItemSelectedAction) )
+			}
 		PageButtons()
