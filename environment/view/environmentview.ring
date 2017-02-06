@@ -20,7 +20,6 @@ class EnvironmentView from WindowsViewParent
 			subEdit = addmenu("Edit")
 			subView = addmenu("View")
 			subProgram = addmenu("Program")
-			subBrowser = addmenu("Browser")
 			subHelp = addmenu("Help")
 			subFile { 
 				oAction = new qAction(win) {
