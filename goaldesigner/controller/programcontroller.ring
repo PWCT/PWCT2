@@ -13,30 +13,15 @@ Class ProgramController
 
 	func Debug oGD
 		Prepare(oGD)	# Save the source code to the file
-		if iswindows() {
-			cCode = 'start '+cCurrentDir+'run "' + cFileName + '"' + nl 
-		else
-			cCode = 'cd $(dirname "'+cFileName+'") ; ' + ' ring "' + cFileName + '"' + nl 
-		}
-		system(cCode)
+		RunBatch("run","")
 
 	func Run oGD
 		Prepare(oGD)	# Save the source code to the file
-		if iswindows() {
-			cCode = 'start '+cCurrentDir+'run2 "' + cFileName + '"' + nl 
-		else
-			cCode = 'cd $(dirname "'+cFileName+'") ; ' + ' ring "' + cFileName + '"' + nl 
-		}
-		system(cCode)
+		RunBatch("run2","")
 
 	func RunGUI oGD
 		Prepare(oGD)	# Save the source code to the file
-		if iswindows() {
-			cCode = 'start /b '+cCurrentDir+'run2 "' + cFileName + '"' + nl 		
-		else
-			cCode = 'cd $(dirname "'+cFileName+'") ; ' + ' ring "' + cFileName + '"' + nl 
-		}
-		system(cCode)
+		RunBatch("run2","/b")
 
 	private
 
@@ -51,3 +36,12 @@ Class ProgramController
 
 		func SaveToFile
 			write(cFileName,cSourceCode)
+
+		func RunBatch cFile,cPara
+			if iswindows() {
+				cCode = 'start '+cPara+ " " +
+					cCurrentDir+cFile+' "' + cFileName + '"' + nl 
+			else
+				cCode = 'cd $(dirname "'+cFileName+'") ; ' + ' ring "' + cFileName + '"' + nl 
+			}
+			system(cCode)
