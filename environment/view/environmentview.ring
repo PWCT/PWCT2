@@ -7,6 +7,9 @@
 
 class EnvironmentView from WindowsViewParent
 
+	# Attributes
+	Tree1   oFile 
+
 	# Create the window and the Controls
 		win = new qMainWindow()
 		{
@@ -255,16 +258,16 @@ class EnvironmentView from WindowsViewParent
 			setclickedevent(Method(:ChangeFileAction))
 			setmaximumwidth(300)			
 			oDir = new QDir()					
-			ofile = new QFileSystemModel() {
+			this.ofile = new QFileSystemModel() {
 				setrootpath(oDir.currentpath())				
 				myfiles = new qstringlist()
 				myfiles.append("*.pwct")
 				setnamefilters(myfiles)	
 				setNameFilterDisables(false)
 			}
-			setmodel(ofile)
-			myindex = ofile.index(oDir.currentpath(),0)
-			for x = 1 to ofile.columncount() {
+			setmodel(this.ofile)
+			myindex = this.ofile.index(oDir.currentpath(),0)
+			for x = 1 to this.ofile.columncount() {
 				hidecolumn(x)
 			}
 			setcurrentindex(myindex)
@@ -274,7 +277,7 @@ class EnvironmentView from WindowsViewParent
 		oDock1 = new qdockwidget(win,0) {
 			setGeometry(00,00,200,200)
 			setwindowtitle("Project Files")
-			setwidget(tree1)
+			setwidget(this.tree1)
 		}
 		win.adddockwidget(2,oDock1,2)
 

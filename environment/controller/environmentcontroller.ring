@@ -33,3 +33,8 @@ class EnvironmentController from WindowsControllerParent
 		parent().DebugAction()
 
 	func ChangeFileAction
+		oItem = oView.tree1.currentindex()
+		if oView.oFile.isdir(oItem) {
+			return
+		}
+		cActiveFileName = oView.oFile.filepath(oItem)
