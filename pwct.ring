@@ -53,17 +53,22 @@ load "filesystem/database.ring"
 load "filesystem/visualsourcefile.ring"
 
 if IsMainSourceFile() {
-	Test_GoalDesigner()
+	Start_Environment()
 }
 
 func Test_GoalDesigner
 
 	new qApp {
-		//Open_Window(:GoalDesignerController)
-		Open_Window(:EnvironmentController)
+		Open_Window(:GoalDesignerController)
 		exec()
 	}
 
+func Start_Environment
+
+	PWCT_APP = new qApp {
+		Open_Window(:EnvironmentController)
+		exec()
+	}
 
 func ShowMessage cTitle,cMessage 
 

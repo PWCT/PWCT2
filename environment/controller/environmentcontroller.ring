@@ -39,3 +39,7 @@ class EnvironmentController from WindowsControllerParent
 		}
 		parent().oVisualSourceFile.cFileName = oView.oFile.filepath(oItem)
 		parent().OpenFileAction2()
+
+	func CloseAction
+		Super.CloseAction()
+		PWCT_APP.Quit()

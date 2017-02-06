@@ -5,6 +5,9 @@
 ** 	Author : Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
+# Application
+	PWCT_APP = NULL
+
 # Tree Model
 	C_TREEMODEL_NODEID    = 1
 	C_TREEMODEL_PARENTID = 2
