@@ -10,4 +10,18 @@ class EnvironmentController from WindowsControllerParent
 
 	oView = new EnvironmentView
 
+	func NewAction
+
+	func OpenAction
+
+	func SaveAction
+
+	func SaveAsAction
+
+	func RunAction
+
+	func RunGUIAction
+
+	func DebugAction
+
 	func ChangeFileAction

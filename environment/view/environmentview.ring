@@ -205,43 +205,43 @@ class EnvironmentView from WindowsViewParent
 		aBtns = [
 				new qpushbutton(win) { 
 					setbtnimage(self,"images/new.png") 
-					setclickevent("pNew()")
+					setclickevent(Method(:NewAction))
 					settooltip("New File")
 				} ,
 				new qpushbutton(win) { 
 					setbtnimage(self,"images/open.png") 
-					setclickevent("pOpen()")
+					setclickevent(Method(:OpenAction))
 					settooltip("Open File")
 				} ,
 				new qpushbutton(win) { 
 					setbtnimage(self,"images/save.png")
-					setclickevent("pSave()")
+					setclickevent(Method(:SaveAction))
 					settooltip("Save")
 				 } ,
 				new qpushbutton(win) { 
 					setbtnimage(self,"images/saveas.png")
-					setclickevent("pSaveAs()")
+					setclickevent(Method(:SaveAsAction))
 					settooltip("Save As")
 				 } ,
 				
 				new qpushbutton(win) { 
 					setbtnimage(self,"images/debug.png") 
-					setclickevent("pDebug()")
+					setclickevent(Method(:DebugAction))
 					settooltip("Debug (Run then wait!)")
 				} ,
 				new qpushbutton(win) { 
 					setbtnimage(self,"images/run.png") 
-					setclickevent("pRun()")
+					setclickevent(Method(:RunAction))
 					settooltip("Run the program")
 				} ,
 				new qpushbutton(win) { 
 					setbtnimage(self,"images/rungui.bmp") 
-					setclickevent("pRunNoConsole()")
+					setclickevent(Method(:RunGUIAction))
 					settooltip("Run GUI Application (No Console)")
 				} ,
 				new qpushbutton(win) { 
 					setbtnimage(self,"images/close.png") 
-					setclickevent("pQuit()")
+					setclickevent(Method(:CloseAction))
 					settooltip("Quit")
 				} 
 			]
