@@ -16,36 +16,8 @@ class EnvironmentView from WindowsViewParent
 		self.CreateToolbar()
 		self.CreateMenuBar(win)
 		self.CreateStatusBar(win)
+		self.CreateFilesManager(win)
 
-		tree1 = new qtreeview(win) {
-			#setclickedevent("pChangeFile()")
-			#setGeometry(00,00,200,400)
-			setmaximumwidth(300)
-			#chdir(cStartUpFolder)
-			oDir = new QDir()					
-			ofile = new QFileSystemModel() {
-				setrootpath(oDir.currentpath())				
-				myfiles = new qstringlist()
-				myfiles.append("*.pwct")
-				setnamefilters(myfiles)	
-				setNameFilterDisables(false)
-			}
-			setmodel(ofile)
-			myindex = ofile.index(oDir.currentpath(),0)
-			for x = 1 to ofile.columncount() {
-				hidecolumn(x)
-			}
-			setcurrentindex(myindex)
-			setexpanded(myindex,true)
-			header().hide()			
-			#chdir(exefolder())
-		}
-
-		oDock1 = new qdockwidget(win,0) {
-			setGeometry(00,00,200,200)
-			setwindowtitle("Project Files")
-			setwidget(tree1)
-		}
 
 		Open_Window(:GoalDesignerController)
 
@@ -55,14 +27,13 @@ class EnvironmentView from WindowsViewParent
 			setwindowtitle("Goal Designer")			
 		}
 
-		adddockwidget(1,oDock1,1)
+
 		adddockwidget(2,oDock2,2)		
 
 		setwinicon(win,"images/pwct.png")
 		showmaximized()	
 
 	}
-
 
 	func CreateToolbar
 		aBtns = [
@@ -340,3 +311,37 @@ class EnvironmentView from WindowsViewParent
 			showmessage("Ready!",0)
 		}
 		win.setstatusbar(status1) 
+
+
+	func CreateFilesManager win
+		tree1 = new qtreeview(win) {
+			#setclickedevent("pChangeFile()")
+			#setGeometry(00,00,200,400)
+			setmaximumwidth(300)
+			#chdir(cStartUpFolder)
+			oDir = new QDir()					
+			ofile = new QFileSystemModel() {
+				setrootpath(oDir.currentpath())				
+				myfiles = new qstringlist()
+				myfiles.append("*.pwct")
+				setnamefilters(myfiles)	
+				setNameFilterDisables(false)
+			}
+			setmodel(ofile)
+			myindex = ofile.index(oDir.currentpath(),0)
+			for x = 1 to ofile.columncount() {
+				hidecolumn(x)
+			}
+			setcurrentindex(myindex)
+			setexpanded(myindex,true)
+			header().hide()			
+			#chdir(exefolder())
+		}
+
+		oDock1 = new qdockwidget(win,0) {
+			setGeometry(00,00,200,200)
+			setwindowtitle("Project Files")
+			setwidget(tree1)
+		}
+
+		win.adddockwidget(1,oDock1,1)
