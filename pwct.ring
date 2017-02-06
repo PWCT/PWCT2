@@ -1,6 +1,6 @@
 /*
 **	Project : Programming Without Coding Technology (PWCT) Version 2.0
-**	File Purpose :  Goal Designer Window
+**	File Purpose :  PWCT Main File
 **	Date : 2016.10.25
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
@@ -15,6 +15,10 @@ load "general/globals/globals.ring"
 # Load the Translation File
 load "translation/english.ring"
 #load "translation/arabic.ring"
+
+# Load the Environment Files
+load "environment/controller/environmentcontroller.ring"
+load "environment/view/environmentview.ring"
 
 # Load the Goal Designer Files
 load "goaldesigner/controller/goaldesignercontroller.ring"
@@ -55,7 +59,8 @@ if IsMainSourceFile() {
 func Test_GoalDesigner
 
 	new qApp {
-		Open_Window(:GoalDesignerController)
+		//Open_Window(:GoalDesignerController)
+		Open_Window(:EnvironmentController)
 		exec()
 	}
 
