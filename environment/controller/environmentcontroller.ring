@@ -37,4 +37,5 @@ class EnvironmentController from WindowsControllerParent
 		if oView.oFile.isdir(oItem) {
 			return
 		}
-		cActiveFileName = oView.oFile.filepath(oItem)
+		parent().oVisualSourceFile.cFileName = oView.oFile.filepath(oItem)
+		parent().OpenFileAction2()

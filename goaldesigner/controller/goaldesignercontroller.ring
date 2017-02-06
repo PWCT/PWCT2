@@ -398,6 +398,10 @@ class GoalDesignerController from WindowsControllerParent
 			}
 			if cFileName = NULL { return }
 			oVisualSourceFile.cFileName = cFileName
+			OpenFileAction2()
+		oView.oStepsTree.EnableEvents()
+
+	func OpenFileAction2
 		# Get Data From the Visual Source File
 			oVisualSourceFile.Open()
 			oVisualSourceFile.LoadTables()
@@ -426,7 +430,6 @@ class GoalDesignerController from WindowsControllerParent
 			}
 		# Update the Time Machine
 			UpdateTheTimeMachine()
-		oView.oStepsTree.EnableEvents()
 
 	func InteractAction
 		 if not AllowInteractButton() {
