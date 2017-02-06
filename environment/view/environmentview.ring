@@ -17,18 +17,7 @@ class EnvironmentView from WindowsViewParent
 		self.CreateMenuBar(win)
 		self.CreateStatusBar(win)
 		self.CreateFilesManager(win)
-
-
-		Open_Window(:GoalDesignerController)
-
-		
-		oDock2 = new qdockwidget(win,0) {
-			setwidget(last_window().oView.win)
-			setwindowtitle("Goal Designer")			
-		}
-
-
-		adddockwidget(2,oDock2,2)		
+		self.CreateGoalDesigner(win)
 
 		setwinicon(win,"images/pwct.png")
 		showmaximized()	
@@ -193,15 +182,7 @@ class EnvironmentView from WindowsViewParent
 					setShortcut(new QKeySequence("Ctrl+u"))
 					setbtnimage(self,"images/source.png")
 					setclickevent("pSourceCode()")
-					settext("Source Code")
-				}
-				addaction(oAction)	
-				addseparator()	
-				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+w"))
-					setbtnimage(self,"images/richtext.png")
-					setclickevent("pWebBrowser()")
-					settext("Web Browser")
+					settext("Goal Designer")
 				}
 				addaction(oAction)	
 			}
@@ -303,3 +284,11 @@ class EnvironmentView from WindowsViewParent
 			setwidget(tree1)
 		}
 		win.adddockwidget(1,oDock1,1)
+
+	func CreateGoalDesigner win
+		Open_Window(:GoalDesignerController)		
+		oDock2 = new qdockwidget(win,0) {
+			setwidget(last_window().oView.win)
+			setwindowtitle("Goal Designer")			
+		}
+		win.adddockwidget(2,oDock2,2)		
