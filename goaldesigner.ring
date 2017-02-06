@@ -60,7 +60,7 @@ func Test_GoalDesigner
 	}
 
 
-func ShowMessage cTitle,cMessage
+func ShowMessage cTitle,cMessage 
 
 	new qmessagebox(NULL)
 	{

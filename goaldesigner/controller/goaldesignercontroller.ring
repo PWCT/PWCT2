@@ -328,6 +328,7 @@ class GoalDesignerController from WindowsControllerParent
 
 	func KeyPress
 		nKey = oView.oFilter.getkeycode()
+		puts(nkey)
 		if oView.oTreeFilter.getmodifiers() = 0 {	# No CTRL Key is pressed
 			if not (nKey=16777223) { 	# DEL
 				return
@@ -358,10 +359,17 @@ class GoalDesignerController from WindowsControllerParent
 				CutStepsAction()
 			case 85		# CTRL+U
 				MoveStepUpAction()
-			case 68		# CTRL+D
+			case 79		# CTRL+O
 				MoveStepDownAction()
 			case 84		# CTRL+T
 				InteractAction()
+			case 68		# CTRL+D
+				DebugAction()
+			case 82		# CTRL+R
+				RunAction()
+			case 16777268	# CTRL+F5
+				RunGuiAction()
+
 		}
 		oView.oTreeFilter.setEventOutput(False)
 
