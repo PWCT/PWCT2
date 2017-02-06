@@ -143,14 +143,6 @@ class EnvironmentView from WindowsViewParent
 			}
 			subEdit { 
 				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+z"))
-					setbtnimage(self,"images/undo.png")
-					settext("Undo")
-					setclickevent("pUndo()")
-				}
-				addaction(oAction)
-				addseparator()
-				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+x"))
 					setbtnimage(self,"images/cut.png")
 					settext("Cut")
@@ -181,38 +173,10 @@ class EnvironmentView from WindowsViewParent
 				addseparator()
 				addaction(oAction)
 				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+t"))
-					setbtnimage(self,"images/colors.jpg")
-					settext("Text Color")
-					setclickevent("pColor()")
-				}
-				addaction(oAction)
-				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+b"))
-					setbtnimage(self,"images/colors.jpg")
-					settext("Back Color")
-					setclickevent("pColor2()")
-				}
-				addaction(oAction)
-				addseparator()
-				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+g"))
-					settext("Go to line")
-					setclickevent("pGoto()")
-				}
-				addaction(oAction)
-				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+f"))
 					setbtnimage(self,"images/search.png")
 					settext("Find and Replace")
 					setclickevent("pFind()")
-				}
-				addaction(oAction)
-				addseparator()
-				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+h"))
-					settext("Set Tab Width")
-					setclickevent("pTabWidth()")
 				}
 				addaction(oAction)
 			}				
@@ -312,13 +276,10 @@ class EnvironmentView from WindowsViewParent
 		}
 		win.setstatusbar(status1) 
 
-
 	func CreateFilesManager win
 		tree1 = new qtreeview(win) {
-			#setclickedevent("pChangeFile()")
-			#setGeometry(00,00,200,400)
-			setmaximumwidth(300)
-			#chdir(cStartUpFolder)
+			setclickedevent(Method(:ChangeFileAction))
+			setmaximumwidth(300)			
 			oDir = new QDir()					
 			ofile = new QFileSystemModel() {
 				setrootpath(oDir.currentpath())				
@@ -335,13 +296,10 @@ class EnvironmentView from WindowsViewParent
 			setcurrentindex(myindex)
 			setexpanded(myindex,true)
 			header().hide()			
-			#chdir(exefolder())
 		}
-
 		oDock1 = new qdockwidget(win,0) {
 			setGeometry(00,00,200,200)
 			setwindowtitle("Project Files")
 			setwidget(tree1)
 		}
-
 		win.adddockwidget(1,oDock1,1)

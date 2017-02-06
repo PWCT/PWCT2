@@ -9,3 +9,5 @@
 class EnvironmentController from WindowsControllerParent
 
 	oView = new EnvironmentView
+
+	func ChangeFileAction
