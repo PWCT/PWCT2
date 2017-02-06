@@ -31,6 +31,12 @@ Class ProgramController
 
 	func RunGUI oGD
 		Prepare(oGD)	# Save the source code to the file
+		if iswindows() {
+			cCode = 'start /b '+cCurrentDir+'run2 "' + cFileName + '"' + nl 		
+		else
+			cCode = 'cd $(dirname "'+cFileName+'") ; ' + ' ring "' + cFileName + '"' + nl 
+		}
+		system(cCode)
 
 	private
 
