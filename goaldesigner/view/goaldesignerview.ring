@@ -104,12 +104,7 @@ class GoalDesignerView from WindowsViewParent
 		}
 		setBtnImage(btnIgnore,"images/comments.png")
 		layoutBtns = new qHBoxLayout()
-		{	
-			AddWidget(btnAddStep)
-			AddWidget(btnEditStep)
-			AddWidget(btnDeleteStep)
-			AddWidget(btnMoveStepUp)
-			AddWidget(btnMoveStepDown)
+		{				
 			AddWidget(btnPrintSteps)
 			AddWidget(btnCutSteps)
 			AddWidget(btnCopySteps)
@@ -117,8 +112,8 @@ class GoalDesignerView from WindowsViewParent
 			AddWidget(btnIncreaseSize)
 			AddWidget(btnDecreaseSize)
 			AddWidget(btnSearch)
-			AddWidget(btnIgnore)
 		}
+		
 		sliderTimeMachine = new TimeMachineView(win) {
 			setValueChangedEvent(Method(:ChangeTimeMachinePointAction))
 		}
@@ -161,18 +156,33 @@ class GoalDesignerView from WindowsViewParent
 		{	
 			AddWidget(btnOpenFile)
 			AddWidget(btnSaveFile)		
-			AddWidget(btnInteract)		
-			AddWidget(btnModify)		
+
 			AddWidget(btnDebug)		
 			AddWidget(btnRun)		
 			AddWidget(btnRunGUI)		
 			AddWidget(sliderTimeMachine)
 		}
+		layoutVBtns = new qVBoxLayout()
+		{	
+			AddWidget(btnAddStep)
+			AddWidget(btnEditStep)
+			AddWidget(btnDeleteStep)
+			AddWidget(btnMoveStepUp)
+			AddWidget(btnMoveStepDown)
+			AddWidget(btnInteract)		
+			AddWidget(btnModify)		
+			AddWidget(btnIgnore)
+			
+		}
+		layoutRegion = new qHBoxLayout() {
+			AddLayout(layoutVBtns)
+			AddWidget(oTab)
+		}
 		layout1 = new qVBoxLayout()
 		{	
 			AddLayout(layoutBtns)
 			AddLayout(layoutTimeMachine)
-			AddWidget(oTab)
+			AddLayout(layoutRegion)
 		}		
 		SetLayout(Layout1)
 		/*

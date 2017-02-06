@@ -27,7 +27,7 @@ class EnvironmentView from WindowsViewParent
 		tree1 = new qtreeview(win) {
 			#setclickedevent("pChangeFile()")
 			#setGeometry(00,00,200,400)
-			#setmaximumwidth(300)
+			setmaximumwidth(300)
 			#chdir(cStartUpFolder)
 			oDir = new QDir()					
 			ofile = new QFileSystemModel() {
@@ -62,8 +62,9 @@ class EnvironmentView from WindowsViewParent
 			setwindowtitle("Source Code")			
 		}
 
-		adddockwidget(1,oDock1,1)
-		adddockwidget(2,oDock2,2)		
+		adddockwidget(2,oDock1,2)		
+		adddockwidget(1,oDock2,1)
+
 
 		setwinicon(win,"images/pwct.png")
 		showmaximized()	
