@@ -32,6 +32,7 @@ load "goaldesigner/view/printstepsview.ring"
 load "goaldesigner/model/interactionmodel.ring"
 load "goaldesigner/view/timemachineview.ring"
 load "goaldesigner/controller/timemachinecontroller.ring"
+load "goaldesigner/controller/programcontroller.ring"
 
 # Load the Components Browser Files
 load "componentsbrowser/controller/componentsbrowsercontroller.ring"

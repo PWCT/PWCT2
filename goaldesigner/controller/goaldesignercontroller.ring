@@ -11,6 +11,7 @@ class GoalDesignerController from WindowsControllerParent
 	oModel = new GoalDesignerModel
 	oTMController = new TimeMachineController
 	oVisualSourceFile = new VisualSourceFile
+	oProgramController = new ProgramController
 
 	func Start
 		oView.Show()
