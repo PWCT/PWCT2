@@ -441,7 +441,7 @@ class GoalDesignerController from WindowsControllerParent
 			oModel.oInteractionModel.SetID(oVisualSourceFile.GetInteractionsID())
 		oView.oStepsTree.setUpdatesEnabled(False)
 		oView.oStepsTree.blockSignals(True)
-		see clock() + nl
+		#see clock() + nl
 		# Remove the current Steps From the Tree Control
 			oView.oStepsTree.taketoplevelitem(0)	
 			oView.oStepsTree.aTree = []
@@ -458,7 +458,7 @@ class GoalDesignerController from WindowsControllerParent
 			}
 		# Update the Time Machine
 			UpdateTheTimeMachine()
-		see clock() + nl
+		#see clock() + nl
 		oView.oStepsTree.setUpdatesEnabled(True)
 		oView.oStepsTree.blockSignals(False)
 		oView.oStepsTree.oFirstStep.SetExpanded(True)

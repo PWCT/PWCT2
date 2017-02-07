@@ -288,7 +288,8 @@ class EnvironmentView from WindowsViewParent
 			setwidget(last_window().oView.win)
 			setwindowtitle("Goal Designer")			
 		}
-		win.adddockwidget(1,oDock2,1)		
+		win.adddockwidget(1,oDock2,1)	
+		return oDock2	
 
 	func CreateStatusBar win
 		status1 = new qstatusbar(win) {

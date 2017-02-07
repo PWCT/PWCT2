@@ -38,7 +38,7 @@ class TreeControl from qTreeWidget
 		oLabel = new qLabel(self) 
 		SetLabelFont(oLabel)
 		oLabel.settext(oStyle.image(cImage)+
-					oStyle.text(cText,cColor,cBackColor))			
+					oStyle.text(cText,cColor,cBackColor))					
 		oParent.addchild(oItem)
 		setItemWidget(oItem,0,oLabel)
 		AddToTree(nID,oItem)
