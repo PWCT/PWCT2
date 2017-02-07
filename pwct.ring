@@ -67,9 +67,17 @@ func Start_Environment
 
 	PWCT_APP = new qApp {
 		StyleFusion()
+		DisplaySplashScreen(PWCT_APP)
 		Open_Window(:EnvironmentController)
 		exec()
 	}
+
+func DisplaySplashScreen oApp
+		oPixMap = new qPixMap("images/pwctlogo.png")
+		oSplash = new qSplashScreen(oPixMap)
+		oSplash.Show()
+		sleep(1)
+		oApp.ProcessEvents()
 
 func ShowMessage cTitle,cMessage 
 
