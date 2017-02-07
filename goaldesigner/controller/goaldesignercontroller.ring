@@ -375,6 +375,27 @@ class GoalDesignerController from WindowsControllerParent
 		}
 		oView.oTreeFilter.setEventOutput(False)
 
+	func NewFileAction
+		# Set the file Name
+			new qfiledialog(oView.win) {
+				cFileName = getsavefilename(this.oView.win,"New File",currentdir(),T_GD_DM_FILETYPE)
+			}
+			if cFileName = NULL { return }
+			oVisualSourceFile.cFileName = cFileName
+		# Remove the current Steps From the Tree Control
+			oView.oStepsTree.taketoplevelitem(0)	
+			oView.oStepsTree.aTree = []
+			oView.oStepsTree.AddStartPoint()
+		# Create new Model (Steps Tree and Interactions)
+			oModel = new GoalDesignerModel
+		# Create the file
+			SaveFileAction2()
+		# Update the Time Machine
+			UpdateTheTimeMachine()
+
+	func SaveCurrentFileAction
+		SaveFileAction2()
+
 	func SaveFileAction
 		# Set the file Name
 			new qfiledialog(oView.win) {
@@ -382,6 +403,9 @@ class GoalDesignerController from WindowsControllerParent
 			}
 			if cFileName = NULL { return }
 			oVisualSourceFile.cFileName = cFileName
+			SaveFileAction2()
+
+	func SaveFileAction2
 		oVisualSourceFile.RemoveFile()
 		oVisualSourceFile.Open()
 		oVisualSourceFile.SetStepsTreeTable(oModel.oStepsTreeModel.GetData())

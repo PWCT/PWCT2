@@ -14,11 +14,13 @@ class EnvironmentController from WindowsControllerParent
 		setParentObject(Last_Window())
 	 
 	func NewAction
+		parent().NewFileAction()
 
 	func OpenAction
 		parent().OpenFileAction()
 
 	func SaveAction
+		parent().SaveCurrentFileAction()
 
 	func SaveAsAction
 		parent().SaveFileAction()
