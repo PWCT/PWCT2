@@ -66,6 +66,7 @@ func Test_GoalDesigner
 func Start_Environment
 
 	PWCT_APP = new qApp {
+		StyleFusion()
 		Open_Window(:EnvironmentController)
 		exec()
 	}
