@@ -45,11 +45,16 @@ class TreeControl from qTreeWidget
 			oLabel = new qLabel(self) {			
 				settext(this.oStyle.image(C_LABELIMAGE_NODEICON)+
 						this.oStyle.text(cText,this.cColor,this.cBackColor))
-				setStyleSheet("font-size:" + this.nFontSize + "pt;")
+				this.SetLabelFont(oLabel)
 			}
 			setItemWidget(oItem,0,oLabel)
 		}
 		return oItem
+
+	func SetLabelFont oLabel
+		cFontFam =  font().family() 				
+		oLabel.setStyleSheet('font-family: "'+cFontFam+
+					'" ; font-size:' + this.nFontSize + "pt;")
 
 	func GetObjByID id
 		nPos = std_find2(aTree,id,C_TREECONTROL_ID)

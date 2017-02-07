@@ -14,6 +14,8 @@ class GoalDesignerController from WindowsControllerParent
 	oProgramController = new ProgramController
 	cComponentsPath = "vpl/ringpwct/"
 
+	cFont = "MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0"
+
 	func Start
 		oView.Show()
 
@@ -551,3 +553,23 @@ class GoalDesignerController from WindowsControllerParent
 
 	func RunGUIAction
 		oProgramController.RunGUI(self)
+
+	func FontAction
+		oFontDialog = new qfontdialog() {
+			oFont = new qfont("",0,0,0)
+			oFont.fromstring(this.cFont)
+			SetCurrentFont(oFont)
+			aFont = GetFont()
+		}
+		if aFont[1] != NULL {
+			cFont = aFont[1]
+			SetFont()	# set the new font
+		}	
+
+	Func SetFont 
+		oFont = new qFont("",0,0,0)
+		oFont.FromString(cFont)
+		oView.oStepsTree.SetFont(oFont)
+		oView.oStepsTree.Font = oFont
+		oView.oStepsTree.nFontSize  = oFont.PointSize()
+		oView.oStepsTree.UpdateFontSize()

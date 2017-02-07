@@ -32,7 +32,7 @@ class StepsTreeView from TreeControl
 		oLabel = new qLabel(self) {
 			settext(this.oStyle.image(C_LABELIMAGE_NODEICON)+
 				 this.oStyle.text(this.cStartPointText,"green",""))
-			setStyleSheet("font-size:" + this.nFontSize + "pt;")
+			this.SetLabelFont(oLabel)
 		}
 		setItemWidget(oFirstStep,0, oLabel)	
 		setCurrentItem(oFirstStep,0)
@@ -159,11 +159,15 @@ class StepsTreeView from TreeControl
 		if lUseLabels = false {
 			return 
 		}
-		aItems = stepsList(oFirstStep)
-		for item in aItems {
-			oLabel = GetItemLabel(item)
-			oLabel.setStyleSheet("font-size:" + nFontSize + "pt;")
-		}
+		# Set the Font Size of the start point
+			oLabel = GetItemLabel(oFirstStep)
+			SetLabelFont(oLabel)
+		# Set the Font Size of the sub steps
+			aItems = stepsList(oFirstStep)
+			for item in aItems {
+				oLabel = GetItemLabel(item)
+				SetLabelFont(oLabel)
+			}
 
 	func IgnoreStep oItem,nIgnore
 		aItems = StepsList(oItem)

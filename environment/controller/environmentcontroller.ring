@@ -56,6 +56,9 @@ class EnvironmentController from WindowsControllerParent
 	func PasteAction
 		parent().PasteStepsAction()
 
+	func FontAction
+		parent().FontAction()		
+
 	func FindAction
 		parent().SearchAction()
 
