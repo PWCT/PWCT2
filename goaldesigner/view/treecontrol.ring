@@ -18,6 +18,7 @@ class TreeControl from qTreeWidget
 
 	cEventString
 
+
 	func init win
 		super.init(win)
 		font = new qFont("",0,0,0)
@@ -35,11 +36,10 @@ class TreeControl from qTreeWidget
 		else
 			cImage = 	C_LABELIMAGE_NODEICON
 		}
-		oLabel = new qLabel(null) {			
-			this.SetLabelFont(oLabel)
-			settext(this.oStyle.image(cImage)+
-			this.oStyle.text(cText,this.cColor,this.cBackColor))
-		}
+		oLabel = new qLabel(self) 
+		SetLabelFont(oLabel)
+		oLabel.settext(oStyle.image(cImage)+
+					oStyle.text(cText,cColor,cBackColor))			
 		oParent.addchild(oItem)
 		setItemWidget(oItem,0,oLabel)
 		AddToTree(nID,oItem)
