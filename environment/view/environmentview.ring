@@ -256,6 +256,7 @@ class EnvironmentView from WindowsViewParent
 	func CreateFilesManager win
 		tree1 = new qtreeview(win) {
 			setclickedevent(Method(:ChangeFileAction))
+			setactivatedevent(Method(:ChangeFileAction))
 			setmaximumwidth(300)			
 			oDir = new QDir()					
 			this.ofile = new QFileSystemModel() {
