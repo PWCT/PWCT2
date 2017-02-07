@@ -128,3 +128,5 @@ class TreeControl from qTreeWidget
 	func EnableEvents
 		setCurrentItemChangedEvent(cEventString)
 
+	func SetFontObject oFont
+		font = oFont

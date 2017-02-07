@@ -142,3 +142,36 @@ And I need to convert from strings to numbers
 		SetStepCode("Yes I'm the new code")
 		SetActiveStep(oParent)
 		NewParentStep("Print Text : " + Variable(:text))
+
+(17)
+
+A problem in this code
+		oView.oStepsTree.font = oFont
+
+solved by this code
+
+			oView.oStepsTree.setFontObject(oFont)
+
+The problem is that oStepsTree class contains the font attribute
+		using oView.oStepsTree.font = oFont
+		will call the SetFont() Method
+While oStepsTree contains this methods by inheritance from QWidget class !
+
+(18)
+
+	in the class region
+	when we uses braces
+	Self point to the class object
+	But we don't have a way to get the self object of the brace
+	This may be necessary when we create objects in arrays then use braces
+
+	Solution is to move the code to a method
+	So we can pass self to setbtnimage()
+
+	func CreateToolbar win
+		aBtns = [
+				new qpushbutton(win) { 
+					setbtnimage(self,"images/new.png") 
+					setclickevent(Method(:NewAction))
+					settooltip("New File")
+				} ,

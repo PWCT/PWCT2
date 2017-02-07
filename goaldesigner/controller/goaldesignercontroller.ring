@@ -563,13 +563,14 @@ class GoalDesignerController from WindowsControllerParent
 		}
 		if aFont[1] != NULL {
 			cFont = aFont[1]
-			SetFont()	# set the new font
+			SetFontName()	# set the new font
+			oView.oStepsTree.UpdateFontSize()
 		}	
 
-	Func SetFont 
-		oFont = new qFont("",0,0,0)
+	func SetFontName   
+		oFont = new qfont("",0,0,0)
 		oFont.FromString(cFont)
 		oView.oStepsTree.SetFont(oFont)
-		oView.oStepsTree.Font = oFont
+		oView.oStepsTree.setFontObject(oFont)
 		oView.oStepsTree.nFontSize  = oFont.PointSize()
-		oView.oStepsTree.UpdateFontSize()
+
