@@ -440,6 +440,7 @@ class GoalDesignerController from WindowsControllerParent
 			oModel.oStepsTreeModel.SetID(oVisualSourceFile.GetStepsID())
 			oModel.oInteractionModel.SetID(oVisualSourceFile.GetInteractionsID())
 		oView.oStepsTree.setUpdatesEnabled(False)
+		oView.oStepsTree.blockSignals(True)
 		see clock() + nl
 		# Remove the current Steps From the Tree Control
 			oView.oStepsTree.taketoplevelitem(0)	
@@ -459,6 +460,7 @@ class GoalDesignerController from WindowsControllerParent
 			UpdateTheTimeMachine()
 		see clock() + nl
 		oView.oStepsTree.setUpdatesEnabled(True)
+		oView.oStepsTree.blockSignals(False)
 		oView.oStepsTree.oFirstStep.SetExpanded(True)
 
 	func InteractAction

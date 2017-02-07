@@ -18,7 +18,6 @@ class TreeControl from qTreeWidget
 
 	cEventString
 
-
 	func init win
 		super.init(win)
 		font = new qFont("",0,0,0)
