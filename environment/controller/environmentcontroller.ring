@@ -43,3 +43,18 @@ class EnvironmentController from WindowsControllerParent
 	func CloseAction
 		Super.CloseAction()
 		PWCT_APP.Quit()
+
+	func PrintAction
+		parent().PrintStepsAction()
+
+	func CutAction
+		parent().CutStepsAction()
+
+	func CopyAction
+		parent().CopyStepsAction()
+
+	func PasteAction
+		parent().PasteStepsAction()
+
+	func FindAction
+		parent().SearchAction()
