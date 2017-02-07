@@ -76,3 +76,15 @@ class EnvironmentController from WindowsControllerParent
 		else
 			oObject.Show()
 		}
+
+	func LanguageAction
+		ShowMessage("Programming Language",
+		"This application developed using the Ring programming language")
+
+	func GUIAction
+		ShowMessage("GUI Library",
+		"This application uses the Qt GUI Library through RingQt")
+
+	func AboutAction
+		ShowMessage("About",
+		"2017, Mahmoud Fayed <msfclipper@yahoo.com>")	

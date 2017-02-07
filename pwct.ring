@@ -73,10 +73,11 @@ func Start_Environment
 
 func ShowMessage cTitle,cMessage 
 
-	new qmessagebox(NULL)
+	win = new qmessagebox(NULL)
 	{
 		setwindowtitle(cTitle)
 		settext(cMessage)
 		setstandardbuttons(QMessageBox_Ok)
+		setwinicon(win,"images/pwct.png")
 		result = exec()
 	}
