@@ -8,7 +8,7 @@
 class EnvironmentView from WindowsViewParent
 
 	# Attributes
-	Tree1   oFile 
+	Tree1   oFile  oDock1 oDock2
 
 	# Create the window and the Controls
 		win = new qMainWindow()
