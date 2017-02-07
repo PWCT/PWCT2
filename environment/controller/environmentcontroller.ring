@@ -77,6 +77,12 @@ class EnvironmentController from WindowsControllerParent
 			oObject.Show()
 		}
 
+	func CHMAction
+		System( "start " + exefolder()+"/../docs/ring.chm" )
+
+	func PDFAction
+		System( "start " + exefolder()+"/../docs/ring.pdf" )
+
 	func LanguageAction
 		ShowMessage("Programming Language",
 		"This application developed using the Ring programming language")
