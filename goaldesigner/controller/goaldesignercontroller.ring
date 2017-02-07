@@ -439,23 +439,27 @@ class GoalDesignerController from WindowsControllerParent
 			oModel.oInteractionModel.SetData(aInteractions)
 			oModel.oStepsTreeModel.SetID(oVisualSourceFile.GetStepsID())
 			oModel.oInteractionModel.SetID(oVisualSourceFile.GetInteractionsID())
+		oView.oStepsTree.setUpdatesEnabled(False)
+		see clock() + nl
 		# Remove the current Steps From the Tree Control
 			oView.oStepsTree.taketoplevelitem(0)	
 			oView.oStepsTree.aTree = []
 			oView.oStepsTree.AddStartPoint()
 		# Add Steps to the Tree
 			for x = 2 to len(aStepsTree) {
-				nStepID      = aStepsTree[x][1]
-				nParentID   = aStepsTree[x][2]
-				cStepName  = aStepsTree[x][3][:name]
-				lIgnore = not aStepsTree[x][3][:active]
-				nStepType = aStepsTree[x][3][:steptype]
+				nStepID      = aStepsTree[x][C_TREEMODEL_NODEID]
+				nParentID   = aStepsTree[x][C_TREEMODEL_PARENTID]
+				cStepName  = aStepsTree[x][C_TREEMODEL_CONTENT][:name]
+				lIgnore = not aStepsTree[x][C_TREEMODEL_CONTENT][:active]
+				nStepType = aStepsTree[x][C_TREEMODEL_CONTENT][:steptype]
 				SetStepColor(nStepType)
-				oItem = oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)					
-				oView.oStepsTree.IgnoreStep(oItem,lIgnore)
+				oItem = oView.oStepsTree.SerialAdd(nParentID,nStepID,cStepName,lIgnore)					
 			}
 		# Update the Time Machine
 			UpdateTheTimeMachine()
+		see clock() + nl
+		oView.oStepsTree.setUpdatesEnabled(True)
+		oView.oStepsTree.oFirstStep.SetExpanded(True)
 
 	func InteractAction
 		 if not AllowInteractButton() {

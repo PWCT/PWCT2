@@ -78,6 +78,7 @@ func DisplaySplashScreen oApp
 		oSplash = new qSplashScreen(oPixMap)
 		oSplash.Show()
 		sleep(1)
+		oSplash.Close()
 		oApp.ProcessEvents()
 
 func ShowMessage cTitle,cMessage 

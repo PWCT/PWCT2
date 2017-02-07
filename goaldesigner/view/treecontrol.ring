@@ -27,6 +27,24 @@ class TreeControl from qTreeWidget
 	func AddNode nParentID,nID,cText
 		return InsertNode(nParentID,nID,cText,-1)
 
+	func SerialAdd nParentID,nID,cText,lIgnore
+		oParent = GetObjByID(nParentID)
+		oItem = new qtreewidgetitem() 
+		if lIgnore {
+			cImage = 	C_LABELIMAGE_IGNORESTEP
+		else
+			cImage = 	C_LABELIMAGE_NODEICON
+		}
+		oLabel = new qLabel(null) {			
+			this.SetLabelFont(oLabel)
+			settext(this.oStyle.image(cImage)+
+			this.oStyle.text(cText,this.cColor,this.cBackColor))
+		}
+		oParent.addchild(oItem)
+		setItemWidget(oItem,0,oLabel)
+		AddToTree(nID,oItem)
+		oItem.setExpanded(true)
+
 	func InsertNode nParentID,nID,cText,nIndex
 		oParent = GetObjByID(nParentID)
 		oItem = new qtreewidgetitem()
@@ -43,9 +61,9 @@ class TreeControl from qTreeWidget
 		setCurrentItem(oParent,0)	# Focus on Parent Step
 		if lUseLabels = True {
 			oLabel = new qLabel(self) {			
+				this.SetLabelFont(oLabel)
 				settext(this.oStyle.image(C_LABELIMAGE_NODEICON)+
 						this.oStyle.text(cText,this.cColor,this.cBackColor))
-				this.SetLabelFont(oLabel)
 			}
 			setItemWidget(oItem,0,oLabel)
 		}
