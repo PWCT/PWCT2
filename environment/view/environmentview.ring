@@ -36,14 +36,14 @@ class EnvironmentView from WindowsViewParent
 					setShortcut(new QKeySequence("Ctrl+n"))
 					setbtnimage(self,"images/new.png")
 					settext("New")
-					setclickevent("pNew()")
+					setclickevent(Method(:NewAction))
 				}
 				addaction(oAction)
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+o"))
 					setbtnimage(self,"images/open.png") 
 					settext("Open")
-					setclickevent("pOpen()")
+					setclickevent(Method(:OpenAction))
 				}
 				addaction(oAction)
 				addseparator()
@@ -51,7 +51,7 @@ class EnvironmentView from WindowsViewParent
 					setShortcut(new QKeySequence("Ctrl+s"))
 					setbtnimage(self,"images/save.png")
 					settext("Save")
-					setclickevent("pSave()")
+					setclickevent(Method(:SaveAction))
 				}
 				addaction(oAction)
 				addseparator()
@@ -59,7 +59,7 @@ class EnvironmentView from WindowsViewParent
 					setShortcut(new QKeySequence("Ctrl+e"))
 					setbtnimage(self,"images/saveas.png")
 					settext("Save As")
-					setclickevent("pSaveAs()")
+					setclickevent(Method(:SaveAsAction))
 				}
 				addaction(oAction)
 				addseparator()
@@ -67,7 +67,7 @@ class EnvironmentView from WindowsViewParent
 					setShortcut(new QKeySequence("Ctrl+p"))
 					setbtnimage(self,"images/print.png")
 					settext("Print to PDF")
-					setclickevent("pPrint()")
+					setclickevent(Method(:PrintAction))
 				}
 				addaction(oAction)
 				addseparator()
@@ -76,7 +76,7 @@ class EnvironmentView from WindowsViewParent
 					setbtnimage(self,"images/close.png") 
 					settext("Exit")
 					setstatustip("Exit")
-					setclickevent("pQuit()")
+					setclickevent(Method(:CloseAction))
 				}
 				addaction(oAction)
 			}
@@ -85,21 +85,21 @@ class EnvironmentView from WindowsViewParent
 					setShortcut(new QKeySequence("Ctrl+x"))
 					setbtnimage(self,"images/cut.png")
 					settext("Cut")
-					setclickevent("pCut()")
+					setclickevent(Method(:CutAction))
 				}
 				addaction(oAction)
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+c"))
 					setbtnimage(self,"images/copy.png")
 					settext("Copy")
-					setclickevent("pCopy()")
+					setclickevent(Method(:CopyAction))
 				}
 				addaction(oAction)
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+v"))
 					setbtnimage(self,"images/paste.png")
 					settext("Paste")
-					setclickevent("pPaste()")
+					setclickevent(Method(:PasteAction))
 				}
 				addaction(oAction)
 				addseparator()
@@ -107,7 +107,7 @@ class EnvironmentView from WindowsViewParent
 					setShortcut(new QKeySequence("Ctrl+i"))
 					setbtnimage(self,"images/font.png")
 					settext("Font")
-					setclickevent("pFont()")
+					setclickevent(Method(:FontAction))
 				}
 				addseparator()
 				addaction(oAction)
@@ -115,7 +115,7 @@ class EnvironmentView from WindowsViewParent
 					setShortcut(new QKeySequence("Ctrl+f"))
 					setbtnimage(self,"images/search.png")
 					settext("Find and Replace")
-					setclickevent("pFind()")
+					setclickevent(Method(:FindAction))
 				}
 				addaction(oAction)
 			}				
@@ -124,14 +124,14 @@ class EnvironmentView from WindowsViewParent
 					setShortcut(new QKeySequence("Ctrl+j"))
 					setbtnimage(self,"images/project.png")
 					settext("Project Files")
-					setclickevent("pProject()")
+					setclickevent(Method(:ProjectAction))
 				}
 				addaction(oAction)			
 				addseparator()	
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+u"))
 					setbtnimage(self,"images/source.png")
-					setclickevent("pSourceCode()")
+					setclickevent(Method(:GoalDesignerAction))
 					settext("Goal Designer")
 				}
 				addaction(oAction)	
@@ -141,7 +141,7 @@ class EnvironmentView from WindowsViewParent
 					setShortcut(new QKeySequence("Ctrl+d"))
 					setbtnimage(self,"images/debug.png")
 					settext("Debug (Run then wait!)")
-					setclickevent("pDebug()")
+					setclickevent(Method(:DebugAction))
 				}
 				addaction(oAction)
 				addseparator()
@@ -149,7 +149,7 @@ class EnvironmentView from WindowsViewParent
 					setShortcut(new QKeySequence("Ctrl+r"))
 					setbtnimage(self,"images/run.png")
 					settext("Run")
-					setclickevent("pRun()")
+					setclickevent(Method(:RunAction))
 				}
 				addaction(oAction)
 				addseparator()
@@ -157,7 +157,7 @@ class EnvironmentView from WindowsViewParent
 					setShortcut(new QKeySequence("Ctrl+F5"))
 					setbtnimage(self,"images/run.png")
 					settext("Run GUI Application (No Console)")
-					setclickevent("pRunNoConsole()")
+					setclickevent(Method(:RunGUIAction))
 				}
 				addaction(oAction)	
 			}
@@ -167,12 +167,12 @@ class EnvironmentView from WindowsViewParent
 				subHelpLF { 
 					oAction = new qAction(win) {
 						settext("CHM File")
-						setclickevent("pOpenCHM()")
+						setclickevent(Method(:CHMAction))
 					}
 					addaction(oAction)
 					oAction = new qAction(win) {
 						settext("PDF File")
-						setclickevent("pOpenPDF()")
+						setclickevent(Method(:PDFAction))
 					}
 					addaction(oAction)
 				}
@@ -182,19 +182,19 @@ class EnvironmentView from WindowsViewParent
 
 					oAction = new qAction(win) {
 						settext("Programming Language")
-						setclickevent("pLang()")
+						setclickevent(Method(:LanguageAction))
 					}
 					addaction(oAction)
 					oAction = new qAction(win) {
 						settext("GUI Library")
-						setclickevent("pGUI()")
+						setclickevent(Method(:GUIAction))
 					}
 					addaction(oAction)
 				}
 				addseparator()
 					oAction = new qAction(win) {
 						settext("About")
-						setclickevent("pAbout()")
+						setclickevent(Method(:AboutAction))
 					}
 					addaction(oAction)			
 			}
