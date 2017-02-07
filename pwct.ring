@@ -73,6 +73,7 @@ func Start_Environment
 	}
 
 func DisplaySplashScreen oApp
+
 		oPixMap = new qPixMap("images/pwctlogo.png")
 		oSplash = new qSplashScreen(oPixMap)
 		oSplash.Show()
