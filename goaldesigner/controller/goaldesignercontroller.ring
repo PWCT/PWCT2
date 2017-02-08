@@ -13,7 +13,6 @@ class GoalDesignerController from WindowsControllerParent
 	oVisualSourceFile = new VisualSourceFile
 	oProgramController = new ProgramController
 	cComponentsPath = "vpl/ringpwct/"
-
 	cFont = "MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0"
 
 	func Start

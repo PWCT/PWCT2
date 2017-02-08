@@ -9,7 +9,7 @@ class ComponentViewParent from WindowsViewParent
 
 	win = new qWidget() {
 		setLayoutDirection(T_LAYOUTDIRECTION)
-		resize(600,10)
+		resize(300,10)
 		setWindowTitle(T_IP_WINDOWTITLE) # "Interation Window"
 		setwindowflags(Qt_CustomizeWindowHint | Qt_WindowTitleHint | Qt_WindowStaysOnTopHint) 
 		oLayoutAll = new qVBoxLayout() 
@@ -22,6 +22,7 @@ class ComponentViewParent from WindowsViewParent
 	aVariables = []	# List contains the [ Control Object , variable Name , Type ]
 
 	func Title cTitle
+		/*
 		oLabel = new qLabel(win) {
 			setText(cTitle)
 			setFixedHeight(50)
@@ -29,15 +30,17 @@ class ComponentViewParent from WindowsViewParent
 			setalignment(Qt_AlignHCenter |  Qt_AlignVCenter )
 		}
 		oLayoutAll.AddWidget(oLabel)
-		return oLabel
+		*/
+		win.setWindowTitle(cTitle)
+		return #oLabel
 
 	func TextBox cTitle,cVariable
 		oLabel = new qLabel(win) {
 			setText(cTitle)
-			setStyleSheet("font-size:14pt")
+			#setStyleSheet("font-size:14pt")
 		}
 		oText = new qLineEdit(win) {
-			setStyleSheet("font-size:14pt")
+			#setStyleSheet("font-size:14pt")
 		}
 		oLayout = new qHBoxLayout() {
 			AddWidget(oLabel) AddWidget(oText)
@@ -49,10 +52,10 @@ class ComponentViewParent from WindowsViewParent
 	func ListBox cTitle,cVariable,aItems
 		oLabel = new qLabel(win) {
 			setText(cTitle)
-			setStyleSheet("font-size:14pt")
+			#setStyleSheet("font-size:14pt")
 		}
 		oList = new qListWidget(win) {
-			setStyleSheet("font-size:14pt")
+			#setStyleSheet("font-size:14pt")
 			for item in aItems {		
 				AddItem(Item)
 			}

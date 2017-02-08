@@ -7,9 +7,9 @@
 
 ===========================================================
 Status
-	* Bugs Count : 24
+	* Bugs Count : 25
 	* Fixed Bugs : 23
-	* UnFixed Bugs : 1
+	* UnFixed Bugs : 2
 ===========================================================
 (1)  Fixed : We created over 6 thouands steps, then using the search window
 after selecting an item in the search result list we get the next error
@@ -916,4 +916,15 @@ called from line 252  In method pastestepsaction() in file goaldesigner/controll
 called from line 1  In qapp_exec In method exec() in file ring_qt.ring
 called from line 59  In function test_goaldesigner() in file B:/pwct2/goaldesigner.ring
 called from line 52  in file B:/pwct2/goaldesigner.ring
+=======================================================
+(25)
+
+Line 81 Error (R2) : Array Access (Index out of range) !
+In method getobjectbyid() in file objectslib/objects.ring
+called from line 19  In method parent() in file objectslib/subwindows.ring    
+called from line 49  In method changefileaction() in file environment/controller/environmentcontroller.ring
+called from line 1  In qapp_exec In method exec() in file ring_qt.ring
+called from line 72  In function start_environment() in file B:/pwct2/pwct.ring
+called from line 56  in file B:/pwct2/pwct.ring
+
 =======================================================
