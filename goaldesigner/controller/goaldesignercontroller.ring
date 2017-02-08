@@ -403,6 +403,8 @@ class GoalDesignerController from WindowsControllerParent
 			if cFileName = NULL { return }
 			oVisualSourceFile.cFileName = cFileName
 			SaveFileAction2()
+		# Set the docable widget title
+			oView.win.ParentWidget().setWindowTitle(cFileName)
 
 	func SaveFileAction2
 		oVisualSourceFile.RemoveFile()
@@ -425,6 +427,8 @@ class GoalDesignerController from WindowsControllerParent
 			oVisualSourceFile.cFileName = cFileName
 			OpenFileAction2()
 		oView.oStepsTree.EnableEvents()
+		# Set the docable widget title
+			oView.win.ParentWidget().setWindowTitle(cFileName)
 
 	func OpenFileAction2
 		# Get Data From the Visual Source File
@@ -617,4 +621,5 @@ class GoalDesignerController from WindowsControllerParent
 			oVisualSourceFile = new VisualSourceFile
 		# Update the Time Machine
 			UpdateTheTimeMachine()
-		oView.win.ParentWidget().setWindowTitle("Goal Designer")
+		# Set the docable widget title
+			oView.win.ParentWidget().setWindowTitle("Goal Designer")
