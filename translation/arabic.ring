@@ -11,6 +11,9 @@
 
 # PWCT Environment
 	T_ENV_TITLE = "تقنية البرمجة بدون كود"
+	T_ENV_DOCK_PROJECTFILES = "ملفات المشروع"
+	T_ENV_DOCK_GOALDESIGNER = "مصمم الهدف"
+	T_ENV_STATUSBAR_READY = "!جاهز"
 	T_ENV_MENU_FILE = "ملف"
 	T_ENV_MENU_EDIT = "تحرير"
 	T_ENV_MENU_VIEW = "عرض" 
@@ -43,6 +46,7 @@
 # Goal Designer Window
 
 	T_GD_GOALDESIGNER = "مصمم الهدف"			# The Window Title
+	T_GD_THETIMEMACHINE = "الة الزمن"			# Label
 	T_GD_DESIGN = "التصميم"					# Tab Page
 	T_GD_STEPCODE = "كود الخطوة"				# Tab Page
 	T_GD_NEWSTEP = "خطوة جديدة"				# Button	

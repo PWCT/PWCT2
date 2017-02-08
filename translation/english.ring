@@ -11,6 +11,9 @@
 
 # PWCT Environment
 	T_ENV_TITLE = "Programming Without Coding Technology"
+	T_ENV_DOCK_PROJECTFILES = "Project Files"
+	T_ENV_DOCK_GOALDESIGNER = "Goal Designer"
+	T_ENV_STATUSBAR_READY = "Ready!"
 	T_ENV_MENU_FILE = "File"
 	T_ENV_MENU_EDIT = "Edit"
 	T_ENV_MENU_VIEW = "View" 
@@ -43,6 +46,7 @@
 # Goal Designer Window
 
 	T_GD_GOALDESIGNER = "Goal Designer"			# The Window Title
+	T_GD_THETIMEMACHINE = "The Time Machine"	# Label
 	T_GD_DESIGN = "Design"					# Tab Page
 	T_GD_STEPCODE = "Step Code"				# Tab Page
 	T_GD_NEWSTEP = "New Step"				# Button	

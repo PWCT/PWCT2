@@ -276,7 +276,7 @@ class EnvironmentView from WindowsViewParent
 		}
 		oDock1 = new qdockwidget(win,0) {
 			setGeometry(00,00,200,200)
-			setwindowtitle("Project Files")
+			setwindowtitle(T_ENV_DOCK_PROJECTFILES) # "Project Files"
 			setwidget(this.tree1)
 		}
 		win.adddockwidget(2,oDock1,2)
@@ -285,13 +285,13 @@ class EnvironmentView from WindowsViewParent
 		Open_Window(:GoalDesignerController)		
 		oDock = new qdockwidget(win,0) {
 			setwidget(last_window().oView.win)
-			setwindowtitle("Goal Designer")			
+			setwindowtitle(T_ENV_DOCK_GOALDESIGNER) # "Goal Designer"		 
 		}
 		win.adddockwidget(1,oDock,1)	
 		return oDock
 
 	func CreateStatusBar win
 		status1 = new qstatusbar(win) {
-			showmessage("Ready!",0)
+			showmessage(T_ENV_STATUSBAR_READY,0)
 		}
 		win.setstatusbar(status1) 

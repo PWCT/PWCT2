@@ -125,7 +125,7 @@ class GoalDesignerView from WindowsViewParent
 			setClickEvent(Method(:CloseFileAction))	
 		}		
 		setBtnImage(btnCloseWindow,"images/ipclose.png")	
-		labelTM = new qLabel(win) { setText("The Time Machine") }
+		labelTM = new qLabel(win) { setText(T_GD_THETIMEMACHINE) } # "The Time Machine"
 		layoutTimeMachine = new qHBoxLayout()
 		{	
 			AddWidget(LabelTM)
