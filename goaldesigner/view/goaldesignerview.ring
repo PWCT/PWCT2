@@ -12,6 +12,7 @@ class GoalDesignerView from WindowsViewParent
 		setWindowTitle(T_GD_GOALDESIGNER)
 		oPageDesign = new qWidget() {
 			oStepsTree = new StepsTreeView(oPageDesign) {
+				setExpandsOnDoubleClick(False)
 				setDoubleClickedEvent(Method(:ModifyAction))
 				setCurrentItemChangedEvent(Method(:TreeNodeChangedAction))
 				setFocusPolicy(2)	# Support Keyboard keys like 'a' and 'z'
