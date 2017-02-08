@@ -164,8 +164,7 @@ class GoalDesignerView from WindowsViewParent
 		# KeyPress Event
 			oFilter = new qAllEvents(win)
 			oFilter.setKeyPressEvent(Method(:KeyPress))
-			oFilter.setCloseEvent(Method(:CloseAction))
-			installeventfilter(oFilter)
+			installeventfilter(oFilter)	
 	}
 
 	func Show
