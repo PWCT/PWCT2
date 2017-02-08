@@ -7,9 +7,9 @@
 
 ===========================================================
 Status
-	* Bugs Count : 25
+	* Bugs Count : 26
 	* Fixed Bugs : 24
-	* UnFixed Bugs : 1
+	* UnFixed Bugs : 2
 ===========================================================
 (1)  Fixed : We created over 6 thouands steps, then using the search window
 after selecting an item in the search result list we get the next error
@@ -929,3 +929,14 @@ called from line 1  In qapp_exec In method exec() in file ring_qt.ring
 called from line 59  In function test_goaldesigner() in file B:/pwct2/goaldesigner.ring
 called from line 52  in file B:/pwct2/goaldesigner.ring
 =======================================================
+(26)
+Open files from project explorer
+Then close the opened file
+Then click on the open file from the toolbar 
+Lead to crash
+
+The reason is that when we open file using project explorer we set it as the active file
+And the toolbar use the active object (controller) behind this file
+Closing the file, delete the controller object so we have the crash
+
+Solution when a file is closed we have to change the active file 
