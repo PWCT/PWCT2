@@ -606,7 +606,7 @@ class GoalDesignerController from WindowsControllerParent
 			parent().setParentObject(self)		 
 		}
 
-	func CloseWindowAction
+	func CloseFileAction
 		# Remove the current Steps From the Tree Control
 			oView.oStepsTree.taketoplevelitem(0)	
 			oView.oStepsTree.aTree = []

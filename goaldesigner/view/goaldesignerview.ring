@@ -18,7 +18,7 @@ class GoalDesignerView from WindowsViewParent
 				setFocusPolicy(2)	# Support Keyboard keys like 'a' and 'z'
 				oTreeFilter = new qAllEvents(oStepsTree)
 				oTreeFilter.setKeyPressEvent(Method(:TreeKeyPress))
-				# We are adding this herer (not in the window win)
+				# We are adding this here (not in the window win)
 				# Because In window while inside dockable windows, doesn't work
 				oTreeFilter.setFocusInEvent(Method(:ActivateWindowAction))
 				installeventfilter(oTreeFilter)
@@ -121,8 +121,8 @@ class GoalDesignerView from WindowsViewParent
 		}		
 		setBtnImage(btnModify,"images/modify.png")		
 		btnCloseWindow = new qPushButton(win) {
-			setToolTip("Close Window") 	# "Close Window"
-			setClickEvent(Method(:CloseWindowAction))	
+			setToolTip("Close File") 	# "Close File"
+			setClickEvent(Method(:CloseFileAction))	
 		}		
 		setBtnImage(btnCloseWindow,"images/ipclose.png")	
 		labelTM = new qLabel(win) { setText("The Time Machine") }
