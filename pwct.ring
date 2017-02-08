@@ -13,8 +13,8 @@ load "guilib.ring"
 load "general/globals/globals.ring"
 
 # Load the Translation File
-#load "translation/english.ring"
-load "translation/arabic.ring"
+load "translation/english.ring"
+#load "translation/arabic.ring"
 
 # Load the Environment Files
 load "environment/controller/environmentcontroller.ring"
@@ -66,7 +66,9 @@ func Test_GoalDesigner
 func Start_Environment
 
 	PWCT_APP = new qApp {
-		StyleFusion()
+		if not T_LAYOUTDIRECTION {
+			StyleFusion()
+		}
 		DisplaySplashScreen(PWCT_APP)
 		Open_Window(:EnvironmentController)
 		exec()
