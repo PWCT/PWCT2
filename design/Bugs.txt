@@ -8,8 +8,8 @@
 ===========================================================
 Status
 	* Bugs Count : 25
-	* Fixed Bugs : 23
-	* UnFixed Bugs : 2
+	* Fixed Bugs : 24
+	* UnFixed Bugs : 1
 ===========================================================
 (1)  Fixed : We created over 6 thouands steps, then using the search window
 after selecting an item in the search result list we get the next error
@@ -908,16 +908,7 @@ Solution modified to  the next code in StepsTreeView.ring
 		}
 		return oItem
 =======================================================
-(24)
-Line 281 Error (R2) : Array Access (Index out of range) !
-In method pastenode() in file goaldesigner/model/treemodel.ring
-called from line 116  In method pastestep() in file goaldesigner/model/goaldesignermodel.ring
-called from line 252  In method pastestepsaction() in file goaldesigner/controller/goaldesignercontroller.ring
-called from line 1  In qapp_exec In method exec() in file ring_qt.ring
-called from line 59  In function test_goaldesigner() in file B:/pwct2/goaldesigner.ring
-called from line 52  in file B:/pwct2/goaldesigner.ring
-=======================================================
-(25)
+(24) Fixed
 
 Line 81 Error (R2) : Array Access (Index out of range) !
 In method getobjectbyid() in file objectslib/objects.ring
@@ -927,4 +918,14 @@ called from line 1  In qapp_exec In method exec() in file ring_qt.ring
 called from line 72  In function start_environment() in file B:/pwct2/pwct.ring
 called from line 56  in file B:/pwct2/pwct.ring
 
+The problem is solved in the objects library
+=======================================================
+(25)
+Line 281 Error (R2) : Array Access (Index out of range) !
+In method pastenode() in file goaldesigner/model/treemodel.ring
+called from line 116  In method pastestep() in file goaldesigner/model/goaldesignermodel.ring
+called from line 252  In method pastestepsaction() in file goaldesigner/controller/goaldesignercontroller.ring
+called from line 1  In qapp_exec In method exec() in file ring_qt.ring
+called from line 59  In function test_goaldesigner() in file B:/pwct2/goaldesigner.ring
+called from line 52  in file B:/pwct2/goaldesigner.ring
 =======================================================
