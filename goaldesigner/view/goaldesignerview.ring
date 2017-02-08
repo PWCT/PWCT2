@@ -164,7 +164,7 @@ class GoalDesignerView from WindowsViewParent
 		# KeyPress Event
 			oFilter = new qAllEvents(win)
 			oFilter.setKeyPressEvent(Method(:KeyPress))
-			#oFilter.setWindowActivateEvent(Method(:ActivateWindowAction))
+			oFilter.setCloseEvent(Method(:CloseAction))
 			installeventfilter(oFilter)
 	}
 
