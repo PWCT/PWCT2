@@ -14,7 +14,7 @@ class EnvironmentView from WindowsViewParent
 		win = new qMainWindow()
 		{
 			setLayoutDirection(T_LAYOUTDIRECTION)
-			setWindowTitle("Programming Without Coding Technology")
+			setWindowTitle(T_ENV_TITLE) # "Programming Without Coding Technology"
 			self.CreateMenuBar(win)
 			self.CreateToolbar(win)
 			self.CreateStatusBar(win)

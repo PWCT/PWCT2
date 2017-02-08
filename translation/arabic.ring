@@ -10,6 +10,7 @@
 	T_LAYOUTDIRECTION = 1		# Right to Left
 
 # PWCT Environment
+	T_ENV_TITLE = "تقنية البرمجة بدون كود"
 	T_ENV_MENU_FILE = "ملف"
 	T_ENV_MENU_EDIT = "تحرير"
 	T_ENV_MENU_VIEW = "عرض" 

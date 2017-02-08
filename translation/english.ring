@@ -10,6 +10,7 @@
 	T_LAYOUTDIRECTION = 0		# Left to Right
 
 # PWCT Environment
+	T_ENV_TITLE = "Programming Without Coding Technology"
 	T_ENV_MENU_FILE = "File"
 	T_ENV_MENU_EDIT = "Edit"
 	T_ENV_MENU_VIEW = "View" 
