@@ -617,3 +617,4 @@ class GoalDesignerController from WindowsControllerParent
 			oVisualSourceFile = new VisualSourceFile
 		# Update the Time Machine
 			UpdateTheTimeMachine()
+		oView.win.ParentWidget().setWindowTitle("Goal Designer")
