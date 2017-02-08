@@ -121,7 +121,7 @@ class GoalDesignerView from WindowsViewParent
 		}		
 		setBtnImage(btnModify,"images/modify.png")		
 		btnCloseWindow = new qPushButton(win) {
-			setToolTip("Close File") 	# "Close File"
+			setToolTip(T_GD_CLOSEFILE) 	# "Close File"
 			setClickEvent(Method(:CloseFileAction))	
 		}		
 		setBtnImage(btnCloseWindow,"images/ipclose.png")	

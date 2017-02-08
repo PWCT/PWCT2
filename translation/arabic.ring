@@ -27,7 +27,7 @@
 	T_GD_DECREASESIZE = "تقليل الحجم"			# Button
 	T_GD_SEARCH = "بحث"					# Button
 	T_GD_COMMENTUNCOMMENT = "تعليق/الغاء التعليق" 	# Button
-
+	T_GD_CLOSEFILE = "اغلاق الملف"				# Button
 
 	# Steps Tree
 	T_GD_Firststep  = "نقطة البداية (ليست خطوة)"

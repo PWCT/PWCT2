@@ -27,7 +27,7 @@
 	T_GD_DECREASESIZE = "Decrease Size"			# Button
 	T_GD_SEARCH = "Search"					# Button
 	T_GD_COMMENTUNCOMMENT = "Comment/UnComment"  # Button
-
+	T_GD_CLOSEFILE = "Close File"				# Button
 
 	# Steps Tree
 	T_GD_Firststep  = "Start Point (Not Step)"
