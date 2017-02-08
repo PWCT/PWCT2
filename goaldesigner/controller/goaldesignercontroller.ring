@@ -602,9 +602,6 @@ class GoalDesignerController from WindowsControllerParent
 		oView.oStepsTree.nFontSize  = oFont.PointSize()
 
 	func ActivateWindowAction	
-		if isparent()	 {
-			parent().setParentObject(self)
-		else
-			puts(:noparent)
+		if IsParent() {
+			parent().setParentObject(self)		 
 		}
-		 
