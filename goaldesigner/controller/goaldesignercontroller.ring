@@ -605,3 +605,15 @@ class GoalDesignerController from WindowsControllerParent
 		if IsParent() {
 			parent().setParentObject(self)		 
 		}
+
+	func CloseWindowAction
+		# Remove the current Steps From the Tree Control
+			oView.oStepsTree.taketoplevelitem(0)	
+			oView.oStepsTree.aTree = []
+			oView.oStepsTree.AddStartPoint()
+		# Create new Model (Steps Tree and Interactions)
+			oModel = new GoalDesignerModel
+		# Create the file
+			oVisualSourceFile = new VisualSourceFile
+		# Update the Time Machine
+			UpdateTheTimeMachine()

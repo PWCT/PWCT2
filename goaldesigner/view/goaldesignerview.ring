@@ -120,6 +120,11 @@ class GoalDesignerView from WindowsViewParent
 			setClickEvent(Method(:ModifyAction))	
 		}		
 		setBtnImage(btnModify,"images/modify.png")		
+		btnCloseWindow = new qPushButton(win) {
+			setToolTip("Close Window") 	# "Close Window"
+			setClickEvent(Method(:CloseWindowAction))	
+		}		
+		setBtnImage(btnCloseWindow,"images/ipclose.png")	
 		labelTM = new qLabel(win) { setText("The Time Machine") }
 		layoutTimeMachine = new qHBoxLayout()
 		{	
@@ -143,6 +148,7 @@ class GoalDesignerView from WindowsViewParent
 			AddWidget(btnDecreaseSize)
 			AddWidget(btnSearch)
 			AddWidget(btnPrintSteps)	
+			AddWidget(btnCloseWindow)	
 			insertStretch( -1, 1 )
 		}
 		layoutRegion = new qHBoxLayout() {
