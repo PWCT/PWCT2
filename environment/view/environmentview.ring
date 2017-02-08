@@ -26,23 +26,23 @@ class EnvironmentView from WindowsViewParent
 
 	func CreateMenuBar win
 		menu1 = new qmenubar(win) {		
-			subFile = addmenu("File")
-			subEdit = addmenu("Edit")
-			subView = addmenu("View")
-			subProgram = addmenu("Program")
-			subHelp = addmenu("Help")
+			subFile = addmenu(T_ENV_MENU_FILE) # "File"
+			subEdit = addmenu(T_ENV_MENU_EDIT) # "Edit"
+			subView = addmenu(T_ENV_MENU_VIEW) # "View"
+			subProgram = addmenu(T_ENV_MENU_PROGRAM) # "Program"
+			subHelp = addmenu(T_ENV_MENU_HELP) # "Help"
 			subFile { 
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+n"))
 					setbtnimage(self,"images/new.png")
-					settext("New")
+					settext(T_ENV_MENU_NEW) # "New"
 					setclickevent(Method(:NewAction))
 				}
 				addaction(oAction)
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+o"))
 					setbtnimage(self,"images/open.png") 
-					settext("Open")
+					settext(T_ENV_MENU_OPEN) # "Open"
 					setclickevent(Method(:OpenAction))
 				}
 				addaction(oAction)
@@ -50,7 +50,7 @@ class EnvironmentView from WindowsViewParent
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+s"))
 					setbtnimage(self,"images/save.png")
-					settext("Save")
+					settext(T_ENV_MENU_SAVE) # "Save"
 					setclickevent(Method(:SaveAction))
 				}
 				addaction(oAction)
@@ -58,7 +58,7 @@ class EnvironmentView from WindowsViewParent
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+e"))
 					setbtnimage(self,"images/saveas.png")
-					settext("Save As")
+					settext(T_ENV_MENU_SAVEAS) # "Save As"
 					setclickevent(Method(:SaveAsAction))
 				}
 				addaction(oAction)
@@ -66,7 +66,7 @@ class EnvironmentView from WindowsViewParent
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+p"))
 					setbtnimage(self,"images/print.png")
-					settext("Print to PDF")
+					settext(T_ENV_MENU_PRINT) # "Print to PDF"
 					setclickevent(Method(:PrintAction))
 				}
 				addaction(oAction)
@@ -74,8 +74,7 @@ class EnvironmentView from WindowsViewParent
 				oAction = new qaction(win) {
 					setShortcut(new QKeySequence("Ctrl+q"))
 					setbtnimage(self,"images/close.png") 
-					settext("Exit")
-					setstatustip("Exit")
+					settext(T_ENV_MENU_EXIT) # "Exit"
 					setclickevent(Method(:CloseAction))
 				}
 				addaction(oAction)
@@ -84,21 +83,21 @@ class EnvironmentView from WindowsViewParent
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+x"))
 					setbtnimage(self,"images/cut.png")
-					settext("Cut")
+					settext(T_ENV_MENU_CUT) # "Cut"
 					setclickevent(Method(:CutAction))
 				}
 				addaction(oAction)
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+c"))
 					setbtnimage(self,"images/copy.png")
-					settext("Copy")
+					settext(T_ENV_MENU_COPY) # "Copy"
 					setclickevent(Method(:CopyAction))
 				}
 				addaction(oAction)
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+v"))
 					setbtnimage(self,"images/paste.png")
-					settext("Paste")
+					settext(T_ENV_MENU_PASTE) # "Paste"
 					setclickevent(Method(:PasteAction))
 				}
 				addaction(oAction)
@@ -106,7 +105,7 @@ class EnvironmentView from WindowsViewParent
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+i"))
 					setbtnimage(self,"images/font.png")
-					settext("Font")
+					settext(T_ENV_MENU_FONT) # "Font"
 					setclickevent(Method(:FontAction))
 				}
 				addseparator()
@@ -114,7 +113,7 @@ class EnvironmentView from WindowsViewParent
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+f"))
 					setbtnimage(self,"images/search.png")
-					settext("Find and Replace")
+					settext(T_ENV_MENU_FINDREPLACE) # "Find and Replace"
 					setclickevent(Method(:FindAction))
 				}
 				addaction(oAction)
@@ -123,7 +122,7 @@ class EnvironmentView from WindowsViewParent
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+j"))
 					setbtnimage(self,"images/project.png")
-					settext("Project Files")
+					settext(T_ENV_MENU_PROJECTFILES ) # "Project Files"
 					setclickevent(Method(:ProjectAction))
 				}
 				addaction(oAction)			
@@ -132,7 +131,7 @@ class EnvironmentView from WindowsViewParent
 					setShortcut(new QKeySequence("Ctrl+u"))
 					setbtnimage(self,"images/source.png")
 					setclickevent(Method(:GoalDesignerAction))
-					settext("Goal Designer")
+					settext(T_ENV_MENU_GOALDESIGNER) # "Goal Designer"
 				}
 				addaction(oAction)	
 			}
@@ -140,7 +139,7 @@ class EnvironmentView from WindowsViewParent
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+d"))
 					setbtnimage(self,"images/debug.png")
-					settext("Debug (Run then wait!)")
+					settext(T_ENV_MENU_DEBUG) # "Debug (Run then wait!)"
 					setclickevent(Method(:DebugAction))
 				}
 				addaction(oAction)
@@ -148,7 +147,7 @@ class EnvironmentView from WindowsViewParent
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+r"))
 					setbtnimage(self,"images/run.png")
-					settext("Run")
+					settext(T_ENV_MENU_RUN) # "Run"
 					setclickevent(Method(:RunAction))
 				}
 				addaction(oAction)
@@ -156,44 +155,44 @@ class EnvironmentView from WindowsViewParent
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+F5"))
 					setbtnimage(self,"images/run.png")
-					settext("Run GUI Application (No Console)")
+					settext(T_ENV_MENU_RUNNOCONSOLE) # "Run GUI Application (No Console)"
 					setclickevent(Method(:RunGUIAction))
 				}
 				addaction(oAction)	
 			}
 			subHelp { 
 
-				subHelpLF = addmenu("Language Reference")
+				subHelpLF = addmenu(T_ENV_MENU_LANGREF) # "Language Reference"
 				subHelpLF { 
 					oAction = new qAction(win) {
-						settext("CHM File")
+						settext(T_ENV_MENU_CHM) # "CHM File"
 						setclickevent(Method(:CHMAction))
 					}
 					addaction(oAction)
 					oAction = new qAction(win) {
-						settext("PDF File")
+						settext(T_ENV_MENU_PDF)
 						setclickevent(Method(:PDFAction))
 					}
 					addaction(oAction)
 				}
 				addseparator()
-				subHelpTools = addmenu("Development Tools")
+				subHelpTools = addmenu(T_ENV_MENU_DEVTOOLS) # "Development Tools"
 				subHelpTools { 
 
 					oAction = new qAction(win) {
-						settext("Programming Language")
+						settext(T_ENV_MENU_PROGLANG) # "Programming Language"
 						setclickevent(Method(:LanguageAction))
 					}
 					addaction(oAction)
 					oAction = new qAction(win) {
-						settext("GUI Library")
+						settext(T_ENV_MENU_GUILIB) # "GUI Library"
 						setclickevent(Method(:GUIAction))
 					}
 					addaction(oAction)
 				}
 				addseparator()
 					oAction = new qAction(win) {
-						settext("About")
+						settext(T_ENV_MENU_ABOUT) # "About"
 						setclickevent(Method(:AboutAction))
 					}
 					addaction(oAction)			

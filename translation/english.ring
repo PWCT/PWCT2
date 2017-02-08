@@ -9,6 +9,36 @@
 # Layout Direction
 	T_LAYOUTDIRECTION = 0		# Left to Right
 
+# PWCT Environment
+	T_ENV_MENU_FILE = "File"
+	T_ENV_MENU_EDIT = "Edit"
+	T_ENV_MENU_VIEW = "View" 
+	T_ENV_MENU_PROGRAM = "Program"
+	T_ENV_MENU_HELP = "Help"
+	T_ENV_MENU_NEW = "New"
+	T_ENV_MENU_OPEN = "Open"
+	T_ENV_MENU_SAVE = "Save"
+	T_ENV_MENU_SAVEAS = "Save As"
+	T_ENV_MENU_PRINT = "Print to PDF"
+	T_ENV_MENU_EXIT = "Exit"
+	T_ENV_MENU_CUT = "Cut"
+	T_ENV_MENU_COPY = "Copy"
+	T_ENV_MENU_PASTE = "Paste"
+	T_ENV_MENU_FONT = "Font"
+	T_ENV_MENU_FINDREPLACE = "Find and Replace"
+	T_ENV_MENU_PROJECTFILES = "Project Files"
+	T_ENV_MENU_GOALDESIGNER = "Goal Designer"
+	T_ENV_MENU_DEBUG = "Debug (Run then wait!)"
+	T_ENV_MENU_RUN = "Run"
+	T_ENV_MENU_RUNNOCONSOLE = "Run GUI Application (No Console)"
+	T_ENV_MENU_LANGREF = "Language Reference"
+	T_ENV_MENU_CHM = "CHM File"
+	T_ENV_MENU_PDF = "PDF File"
+	T_ENV_MENU_DEVTOOLS = "Development Tools"
+	T_ENV_MENU_PROGLANG =  "Programming Language"
+	T_ENV_MENU_GUILIB = "GUI Library"
+	T_ENV_MENU_ABOUT =  "About"
+
 # Goal Designer Window
 
 	T_GD_GOALDESIGNER = "Goal Designer"			# The Window Title

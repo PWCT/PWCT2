@@ -9,6 +9,36 @@
 # Layout Direction
 	T_LAYOUTDIRECTION = 1		# Right to Left
 
+# PWCT Environment
+	T_ENV_MENU_FILE = "ملف"
+	T_ENV_MENU_EDIT = "تحرير"
+	T_ENV_MENU_VIEW = "عرض" 
+	T_ENV_MENU_PROGRAM = "برنامج"
+	T_ENV_MENU_HELP = "مساعدة"
+	T_ENV_MENU_NEW = "جديد"
+	T_ENV_MENU_OPEN = "فتح"
+	T_ENV_MENU_SAVE = "حفظ"
+	T_ENV_MENU_SAVEAS = "حفظ بإسم"
+	T_ENV_MENU_PRINT = "طباعة"
+	T_ENV_MENU_EXIT = "خروج"
+	T_ENV_MENU_CUT = "قص"
+	T_ENV_MENU_COPY = "نسخ"
+	T_ENV_MENU_PASTE = "لسخ"
+	T_ENV_MENU_FONT = "الخط"
+	T_ENV_MENU_FINDREPLACE = "بحث واستبدال"
+	T_ENV_MENU_PROJECTFILES = "ملفات المشروع"
+	T_ENV_MENU_GOALDESIGNER = "مصمم الهدف"
+	T_ENV_MENU_DEBUG = "تنقيح - تشغيل ثم انتظار"
+	T_ENV_MENU_RUN = "تشغيل"
+	T_ENV_MENU_RUNNOCONSOLE = "تشغيل تطبيق رسومى"
+	T_ENV_MENU_LANGREF = "مرجع اللغة"
+	T_ENV_MENU_CHM = "ملف مساعدة للتصفح الالكترونى"
+	T_ENV_MENU_PDF = "ملف مساعدة جاهز للطباعة"
+	T_ENV_MENU_DEVTOOLS = "أدوات التطوير"
+	T_ENV_MENU_PROGLANG =  "لغة البرمجة"
+	T_ENV_MENU_GUILIB = "المكتبة الرسومية"
+	T_ENV_MENU_ABOUT =  "حول"
+
 # Goal Designer Window
 
 	T_GD_GOALDESIGNER = "مصمم الهدف"			# The Window Title
