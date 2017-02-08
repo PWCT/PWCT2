@@ -19,7 +19,7 @@ class EnvironmentView from WindowsViewParent
 			self.CreateToolbar(win)
 			self.CreateStatusBar(win)
 			self.CreateFilesManager(win)
-			self.CreateGoalDesigner(win)
+			oDock2 = self.CreateGoalDesigner(win)
 			setwinicon(win,"images/pwct.png")
 			showmaximized()	
 		}
@@ -284,12 +284,12 @@ class EnvironmentView from WindowsViewParent
 
 	func CreateGoalDesigner win
 		Open_Window(:GoalDesignerController)		
-		oDock2 = new qdockwidget(win,0) {
+		oDock = new qdockwidget(win,0) {
 			setwidget(last_window().oView.win)
 			setwindowtitle("Goal Designer")			
 		}
-		win.adddockwidget(1,oDock2,1)	
-		return oDock2	
+		win.adddockwidget(1,oDock,1)	
+		return oDock
 
 	func CreateStatusBar win
 		status1 = new qstatusbar(win) {
