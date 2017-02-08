@@ -45,6 +45,7 @@ class EnvironmentController from WindowsControllerParent
 		oDock.setWindowTitle(cFileName)
 		# Set the parent to be the Goal Designer Window	
 			setParentObject(Last_Window())	 
+		see "ID = " + SELF.RingQt_nParentID + NL
 
 		parent().oVisualSourceFile.cFileName = cFileName
 		parent().OpenFileAction2()
