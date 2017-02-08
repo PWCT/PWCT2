@@ -205,43 +205,43 @@ class EnvironmentView from WindowsViewParent
 				new qpushbutton(win) { 
 					setbtnimage(self,"images/new.png") 
 					setclickevent(Method(:NewAction))
-					settooltip("New File")
+					settooltip(T_ENV_MENU_NEW) # "New File"
 				} ,
 				new qpushbutton(win) { 
 					setbtnimage(self,"images/open.png") 
 					setclickevent(Method(:OpenAction))
-					settooltip("Open File")
+					settooltip(T_ENV_MENU_OPEN) # "Open File"
 				} ,
 				new qpushbutton(win) { 
 					setbtnimage(self,"images/save.png")
 					setclickevent(Method(:SaveAction))
-					settooltip("Save")
+					settooltip(T_ENV_MENU_SAVE) # "Save"
 				 } ,
 				new qpushbutton(win) { 
 					setbtnimage(self,"images/saveas.png")
 					setclickevent(Method(:SaveAsAction))
-					settooltip("Save As")
+					settooltip(T_ENV_MENU_SAVEAS) # "Save As"
 				 } ,
 				
 				new qpushbutton(win) { 
 					setbtnimage(self,"images/debug.png") 
 					setclickevent(Method(:DebugAction))
-					settooltip("Debug (Run then wait!)")
+					settooltip(T_ENV_MENU_DEBUG) # "Debug (Run then wait!)"
 				} ,
 				new qpushbutton(win) { 
 					setbtnimage(self,"images/run.png") 
 					setclickevent(Method(:RunAction))
-					settooltip("Run the program")
+					settooltip(T_ENV_MENU_RUN) # "Run the program"
 				} ,
 				new qpushbutton(win) { 
 					setbtnimage(self,"images/rungui.bmp") 
 					setclickevent(Method(:RunGUIAction))
-					settooltip("Run GUI Application (No Console)")
+					settooltip(T_ENV_MENU_RUNNOCONSOLE) # "Run GUI Application (No Console)"
 				} ,
 				new qpushbutton(win) { 
 					setbtnimage(self,"images/close.png") 
 					setclickevent(Method(:CloseAction))
-					settooltip("Quit")
+					settooltip(T_ENV_MENU_EXIT) # "Exit"
 				} 
 			]
 		win {
