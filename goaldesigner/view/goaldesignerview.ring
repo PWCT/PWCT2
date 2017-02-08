@@ -18,6 +18,9 @@ class GoalDesignerView from WindowsViewParent
 				setFocusPolicy(2)	# Support Keyboard keys like 'a' and 'z'
 				oTreeFilter = new qAllEvents(oStepsTree)
 				oTreeFilter.setKeyPressEvent(Method(:TreeKeyPress))
+				# We are adding this herer (not in the window win)
+				# Because In window while inside dockable windows, doesn't work
+				oTreeFilter.setFocusInEvent(Method(:ActivateWindowAction))
 				installeventfilter(oTreeFilter)
 			}
 			oPageDesignLayout = new qVBoxLayout() {
@@ -161,6 +164,7 @@ class GoalDesignerView from WindowsViewParent
 		# KeyPress Event
 			oFilter = new qAllEvents(win)
 			oFilter.setKeyPressEvent(Method(:KeyPress))
+			#oFilter.setWindowActivateEvent(Method(:ActivateWindowAction))
 			installeventfilter(oFilter)
 	}
 

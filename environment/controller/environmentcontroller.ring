@@ -12,7 +12,9 @@ class EnvironmentController from WindowsControllerParent
 
 	# Set the parent to be the Goal Designer Window	
 		setParentObject(Last_Window())
-	 
+	# Set the goal designer parent to be the Environment window
+		Last_Window().setParentObject(self)
+
 	func NewAction
 		parent().NewFileAction()
 
@@ -44,6 +46,8 @@ class EnvironmentController from WindowsControllerParent
 		oDock.setWindowTitle(cFileName)
 		# Set the parent to be the Goal Designer Window	
 			setParentObject(Last_Window())
+		# Set the goal designer parent to be the Environment window
+			Last_Window().setParentObject(self)
 		parent().oVisualSourceFile.cFileName = cFileName
 		parent().OpenFileAction2()
 
