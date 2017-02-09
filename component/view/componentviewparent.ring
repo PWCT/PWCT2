@@ -21,6 +21,9 @@ class ComponentViewParent from WindowsViewParent
 
 	aVariables = []	# List contains the [ Control Object , variable Name , Type ]
 
+	lFirstTextBox = True 	# For Setting the focus
+	oFirstText			# First Textbox
+
 	func Title cTitle
 		
 		oLabel = new qLabel(win) {
@@ -37,10 +40,13 @@ class ComponentViewParent from WindowsViewParent
 	func TextBox cTitle,cVariable
 		oLabel = new qLabel(win) {
 			setText(cTitle)
-			#setStyleSheet("font-size:14pt")
 		}
 		oText = new qLineEdit(win) {
-			#setStyleSheet("font-size:14pt")
+			if this.lFirstTextBox {
+				this.lFirstTextBox = False
+				setFocus(0)
+				this.oFirstText = oText
+			}
 		}
 		oLayout = new qHBoxLayout() {
 			AddWidget(oLabel) AddWidget(oText)
@@ -52,7 +58,6 @@ class ComponentViewParent from WindowsViewParent
 	func ListBox cTitle,cVariable,aItems
 		oLabel = new qLabel(win) {
 			setText(cTitle)
-			#setStyleSheet("font-size:14pt")
 		}
 		oList = new qListWidget(win) {
 			#setStyleSheet("font-size:14pt")
@@ -128,3 +133,5 @@ class ComponentViewParent from WindowsViewParent
 				oObject.setcurrentrow((0+aValues[x])-1,2 | dec("10"))
 			}
 		}
+
+ 

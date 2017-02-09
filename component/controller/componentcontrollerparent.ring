@@ -145,6 +145,13 @@ Class ComponentControllerParent from WindowsControllerParent
 			nStepNumber = 0
 		}
 
+	func Start
+		Super.Start()
+		oView.win.activateWindow()
+		if oView.lFirstTextBox = False {
+			oView.oFirstText.SetFocus(0)
+		}
+
 	func GenerateAction		# To be written in the component
 
 
