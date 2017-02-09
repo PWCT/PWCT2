@@ -129,7 +129,7 @@ Class ComponentControllerParent from WindowsControllerParent
 		return True
 
 	func OkAction	
-		if CheckInteract() {
+		if nInteractionMode = C_INTERACTIONMODE_MODIFY  or CheckInteract() {
 			GenerateAction()
 			CloseAction()
 		}

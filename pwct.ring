@@ -90,6 +90,7 @@ func ShowMessage cTitle,cMessage
 		setwindowtitle(cTitle)
 		settext(cMessage)
 		setstandardbuttons(QMessageBox_Ok)
+		setwindowflags(Qt_WindowStaysOnTopHint) 
 		setwinicon(win,"images/pwct.png")
 		result = exec()
 	}
