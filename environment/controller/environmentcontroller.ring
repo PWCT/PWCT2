@@ -11,15 +11,17 @@ class EnvironmentController from WindowsControllerParent
 	oView = new EnvironmentView
 
 	SetParents()
-
-	Last_Window().oView.win.ActivateWindow()
-	Last_Window().oView.oStepsTree.SetFocus(0)
+	SetFocusToStepsTree()
 
 	func SetParents
 		# Set the parent to be the Goal Designer Window	
 			setParentObject(Last_Window())
 		# Set the goal designer parent to be the Environment window
 			Last_Window().setParentObject(self)
+
+	func SetFocusToStepsTree
+		Last_Window().oView.win.ActivateWindow()
+		Last_Window().oView.oStepsTree.SetFocus(0)
 
 	func NewAction
 		parent().NewFileAction()
