@@ -83,10 +83,10 @@ class EnvironmentController from WindowsControllerParent
 		parent().SearchAction()
 
 	func ProjectAction
-		ToggleVisible(oView.oDock1)
+		ToggleVisible(oView.oDockFilesManager)
 
 	func GoalDesignerAction
-		ToggleVisible(oView.oDock2)
+		ToggleVisible(oView.oDockGoalDesigner)
 
 	func ToggleVisible oObject
 		if oObject.isvisible() {

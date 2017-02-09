@@ -8,7 +8,7 @@
 class EnvironmentView from WindowsViewParent
 
 	# Attributes
-	Tree1   oFile  oDockFilesManger oDockGoalDesigner
+	Tree1   oFile  oDockFilesManager oDockGoalDesigner
 
 	nGoalDesignerWindowID
 
