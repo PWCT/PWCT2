@@ -474,6 +474,7 @@ class GoalDesignerController from WindowsControllerParent
 		Last_Window().setParentObject(self)
 		Last_Window().AddComponents()
 		#Parent().oView.CreateDockableWindow(Last_Window().oView.win,T_CB_COMPONENTSBROWSER,1)
+		oView.layoutVPages.AddWidget(Last_Window().oView.win)
 		return True
 
 	func ModifyAction
@@ -503,6 +504,7 @@ class GoalDesignerController from WindowsControllerParent
 					Last_Window().SetVariablesValues()
 				#Parent().oView.CreateDockableWindow(Last_Window().oView.win,
 				#	Last_Window().oView.win.windowtitle(),1)
+				oView.layoutVPages.AddWidget(Last_Window().oView.win)
 			}
 
 	func AllowInteractButton
