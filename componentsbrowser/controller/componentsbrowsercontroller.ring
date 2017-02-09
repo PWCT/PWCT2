@@ -89,6 +89,8 @@ class ComponentsBrowserController from WindowsControllerParent
 			#CloseAction()
 			# Clear the Search TextBox
 				oView.oTextSearch.SetText("")
+			# Add the Page to the goal designer
+				Parent().oView.layoutVPages.AddWidget(Last_Window().oView.win)
 		}
 
 	#func CloseAction
