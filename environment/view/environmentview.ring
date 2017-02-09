@@ -275,6 +275,7 @@ class EnvironmentView from WindowsViewParent
 			header().hide()			
 		}
 		oDock1 = new qdockwidget(win,0) {
+			setLayoutDirection(C_TRANSLATION_ENGLISH)
 			setGeometry(00,00,200,200)
 			setwindowtitle(T_ENV_DOCK_PROJECTFILES) # "Project Files"
 			setwidget(this.tree1)
@@ -284,6 +285,7 @@ class EnvironmentView from WindowsViewParent
 	func CreateGoalDesigner win
 		Open_Window(:GoalDesignerController)		
 		oDock = new qdockwidget(win,0) {
+			setLayoutDirection(C_TRANSLATION_ENGLISH)
 			setwidget(last_window().oView.win)
 			setwindowtitle(T_ENV_DOCK_GOALDESIGNER) # "Goal Designer"		 
 		}
