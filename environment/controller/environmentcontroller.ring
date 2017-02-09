@@ -12,6 +12,9 @@ class EnvironmentController from WindowsControllerParent
 
 	SetParents()
 
+	Last_Window().oView.win.ActivateWindow()
+	Last_Window().oView.oStepsTree.SetFocus(0)
+
 	func SetParents
 		# Set the parent to be the Goal Designer Window	
 			setParentObject(Last_Window())
