@@ -22,15 +22,15 @@ class ComponentViewParent from WindowsViewParent
 	aVariables = []	# List contains the [ Control Object , variable Name , Type ]
 
 	func Title cTitle
-		/*
+		
 		oLabel = new qLabel(win) {
 			setText(cTitle)
-			setFixedHeight(50)
-			setStyleSheet("font-size:16pt;color:white;background-color:purple;")
+			setFixedHeight(20)
+			setStyleSheet("font-size:10pt;color:white;background-color:purple;")
 			setalignment(Qt_AlignHCenter |  Qt_AlignVCenter )
 		}
 		oLayoutAll.AddWidget(oLabel)
-		*/
+		
 		win.setWindowTitle(cTitle)
 		return #oLabel
 

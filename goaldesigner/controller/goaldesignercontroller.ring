@@ -473,7 +473,6 @@ class GoalDesignerController from WindowsControllerParent
 		Open_Window(:ComponentsBrowserController)
 		Last_Window().setParentObject(self)
 		Last_Window().AddComponents()
-		#Parent().oView.CreateDockableWindow(Last_Window().oView.win,T_CB_COMPONENTSBROWSER,1)
 		oView.layoutVPages.AddWidget(Last_Window().oView.win)
 		return True
 
@@ -502,8 +501,6 @@ class GoalDesignerController from WindowsControllerParent
 					Last_Window().nInteractionMode = C_INTERACTIONMODE_MODIFY
 					Last_Window().nIID = nIID
 					Last_Window().SetVariablesValues()
-				#Parent().oView.CreateDockableWindow(Last_Window().oView.win,
-				#	Last_Window().oView.win.windowtitle(),1)
 				oView.layoutVPages.AddWidget(Last_Window().oView.win)
 			}
 
