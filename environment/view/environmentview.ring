@@ -10,6 +10,8 @@ class EnvironmentView from WindowsViewParent
 	# Attributes
 	Tree1   oFile  oDock1 oDock2
 
+	nGoalDesignerWindowID
+
 	# Create the window and the Controls
 		win = new qMainWindow()
 		{
@@ -284,6 +286,7 @@ class EnvironmentView from WindowsViewParent
 
 	func CreateGoalDesigner win
 		Open_Window(:GoalDesignerController)		
+		nGoalDesignerWindowID = Last_WindowID()
 		oDock = new qdockwidget(win,0) {
 			setLayoutDirection(C_TRANSLATION_ENGLISH)
 			setwidget(last_window().oView.win)
