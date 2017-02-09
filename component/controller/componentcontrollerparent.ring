@@ -121,18 +121,29 @@ Class ComponentControllerParent from WindowsControllerParent
 	func Variable cVariable
 		return oView.Variable(cVariable)
 
-	func OkAction			
-		GenerateAction()
-		CloseAction()
+	func CheckInteract
+		if not Parent().AllowInteractButton() {
+			ShowMessage(T_GD_BM_SORRY,T_GD_BM_CANTINTERACT)
+			return false
+		}
+		return True
+
+	func OkAction	
+		if CheckInteract() {
+			GenerateAction()
+			CloseAction()
+		}
 
 	func AgainAction	
-		noldInteractionMode = nInteractionMode
-		nInteractionMode = C_INTERACTIONMODE_NEW	
-		GenerateAction()
-		parent().oView.oStepsTree.SetCurrentItem(oParent,0)
-		oParent = NULL
-		nInteractionMode = noldInteractionMode
-		nStepNumber = 0
+		if CheckInteract() {
+			noldInteractionMode = nInteractionMode
+			nInteractionMode = C_INTERACTIONMODE_NEW	
+			GenerateAction()
+			parent().oView.oStepsTree.SetCurrentItem(oParent,0)
+			oParent = NULL
+			nInteractionMode = noldInteractionMode
+			nStepNumber = 0
+		}
 
 	func GenerateAction		# To be written in the component
 
