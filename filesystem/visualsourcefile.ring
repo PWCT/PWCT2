@@ -5,9 +5,11 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
+C_VSF_NOFILENAME = "noname.pwct"
+
 class VisualSourceFile
 
-	cFileName = "application.pwct"
+	cFileName = C_VSF_NOFILENAME  # "noname.pwct"
 
 	oDatabase = new Database
 
@@ -16,6 +18,12 @@ class VisualSourceFile
 	aInteractionsTable = []
 
 	nStepsID = 0 		nInteractionsID = 0	
+
+	func IsFileOpened
+		if cFileName = C_VSF_NOFILENAME {
+			return False
+		}
+		return True
 
 	func RemoveFile
 		remove(cFileName)

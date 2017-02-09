@@ -45,10 +45,11 @@ class EnvironmentController from WindowsControllerParent
 			return
 		}
 		cFileName = oView.oFile.filepath(oItem)
-		oDock = oView.CreateGoalDesigner(oView.win)
-		oDock.setWindowTitle(cFileName)
-		#oDock.setAttribute(Qt_WA_DeleteOnClose,True)
-		SetParents()
+		if Parent().IsFileOpened() {
+			oDock = oView.CreateGoalDesigner(oView.win)
+			oDock.setWindowTitle(cFileName)
+			SetParents()
+		}
 		parent().oVisualSourceFile.cFileName = cFileName
 		parent().OpenFileAction2()
 

@@ -626,3 +626,6 @@ class GoalDesignerController from WindowsControllerParent
 			UpdateTheTimeMachine()
 		# Set the docable widget title
 			oView.win.ParentWidget().setWindowTitle("Goal Designer")
+
+	func IsFileOpened
+		return oVisualSourceFile.IsFileOpened()

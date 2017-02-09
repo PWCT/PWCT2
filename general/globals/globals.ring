@@ -67,3 +67,6 @@
 # Language
 	C_TRANSLATION_ARABIC = 1
 	C_TRANSLATION_ENGLISH = 0
+
+# Visual Source file
+	C_VSF_NOFILENAME = "noname.pwct"
