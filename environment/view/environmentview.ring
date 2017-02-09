@@ -282,7 +282,7 @@ class EnvironmentView from WindowsViewParent
 			setwindowtitle(T_ENV_DOCK_PROJECTFILES) # "Project Files"
 			setwidget(this.tree1)
 		}
-		win.adddockwidget(2,oDock1,2)
+		win.adddockwidget(1,oDock1,1)
 
 	func CreateGoalDesigner win
 		Open_Window(:GoalDesignerController)		
@@ -292,7 +292,7 @@ class EnvironmentView from WindowsViewParent
 			setwidget(last_window().oView.win)
 			setwindowtitle(T_ENV_DOCK_GOALDESIGNER) # "Goal Designer"		 
 		}
-		win.adddockwidget(1,oDock,1)	
+		win.adddockwidget(2,oDock,1)	
 		return oDock
 
 	func CreateDockableWindow oWidget,cTitle,nPos

@@ -70,3 +70,6 @@
 
 # Visual Source file
 	C_VSF_NOFILENAME = "noname.pwct"
+
+# Components Path
+	C_CB_COMPONENTSPATH = "vpl/ringpwct/"

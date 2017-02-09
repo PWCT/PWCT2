@@ -9,7 +9,7 @@ class ComponentsBrowserController from WindowsControllerParent
 
 	oView = new ComponentsBrowserView
 	oModel = new TreeModel
-	cComponentsPath = "vpl/ringpwct/"
+	cComponentsPath = C_CB_COMPONENTSPATH # "vpl/ringpwct/"
 
 	func KeyPressAction
 		if oView.oWinFilter.getKeyCode() = Qt_Key_Escape {	
