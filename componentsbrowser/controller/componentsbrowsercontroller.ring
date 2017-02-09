@@ -12,8 +12,12 @@ class ComponentsBrowserController from WindowsControllerParent
 	cComponentsPath = C_CB_COMPONENTSPATH # "vpl/ringpwct/"
 
 	func KeyPressAction
-		if oView.oWinFilter.getKeyCode() = Qt_Key_Escape {	
-			CloseAction()		
+		nKeyCode = oView.oWinFilter.getKeyCode()
+		switch nKeyCode {	
+		case Qt_Key_Escape
+			CloseAction()	
+		case 87	# CTRL+W
+			CloseAction()	
 		}
 
 	func EnterPressAction
