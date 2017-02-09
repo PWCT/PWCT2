@@ -292,6 +292,15 @@ class EnvironmentView from WindowsViewParent
 		win.adddockwidget(1,oDock,1)	
 		return oDock
 
+	func CreateDockableWindow oWidget,cTitle,nPos
+		oDock = new qdockwidget(win,0) {
+			setLayoutDirection(C_TRANSLATION_ENGLISH)
+			setwidget(oWidget)
+			setwindowtitle(cTitle)  	 
+		}
+		win.adddockwidget(1,oDock,nPos)	
+
+
 	func CreateStatusBar win
 		status1 = new qstatusbar(win) {
 			showmessage(T_ENV_STATUSBAR_READY,0)
