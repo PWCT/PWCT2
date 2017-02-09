@@ -52,9 +52,7 @@ load "filesystem/databasesqlite.ring"
 load "filesystem/database.ring"
 load "filesystem/visualsourcefile.ring"
 
-if IsMainSourceFile() {
-	Start_Environment()
-}
+Start_Environment()
 
 func Test_GoalDesigner
 
