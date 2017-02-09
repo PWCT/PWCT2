@@ -94,5 +94,7 @@ class ComponentsBrowserController from WindowsControllerParent
 				Last_Window().Start()	# Show The Window
 		}
 
-	#func CloseAction
-	#	oView.win.ParentWidget().Close()		
+ 	func Start
+		Super.Start()
+		oView.win.activateWindow()
+		oView.oTextSearch.SetFocus(0)
