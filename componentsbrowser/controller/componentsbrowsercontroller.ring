@@ -83,6 +83,8 @@ class ComponentsBrowserController from WindowsControllerParent
 				Last_Window().cComponent = cFile
 				Last_Window().nInteractionMode = C_INTERACTIONMODE_NEW
 			#CloseAction()
+			# Clear the Search TextBox
+				oView.oTextSearch.SetText("")
 		}
 
 	#func CloseAction
