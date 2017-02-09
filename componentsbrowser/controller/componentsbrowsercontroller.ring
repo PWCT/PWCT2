@@ -86,7 +86,6 @@ class ComponentsBrowserController from WindowsControllerParent
 				Last_Window().setParentObject(parent())
 				Last_Window().cComponent = cFile
 				Last_Window().nInteractionMode = C_INTERACTIONMODE_NEW
-			#CloseAction()
 			# Clear the Search TextBox
 				oView.oTextSearch.SetText("")
 			# Add the Page to the goal designer
