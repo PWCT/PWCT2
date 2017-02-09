@@ -8,7 +8,7 @@
 class EnvironmentView from WindowsViewParent
 
 	# Attributes
-	Tree1   oFile  oDock1 oDock2
+	Tree1   oFile  oDockFilesManger oDockGoalDesigner
 
 	nGoalDesignerWindowID
 
@@ -21,7 +21,7 @@ class EnvironmentView from WindowsViewParent
 			self.CreateToolbar(win)
 			self.CreateStatusBar(win)
 			self.CreateFilesManager(win)
-			oDock2 = self.CreateGoalDesigner(win)
+			oDockGoalDesigner = self.CreateGoalDesigner(win)
 			setwinicon(win,"images/pwct.png")
 			showmaximized()	
 		}
@@ -276,13 +276,13 @@ class EnvironmentView from WindowsViewParent
 			setexpanded(myindex,true)
 			header().hide()			
 		}
-		oDock1 = new qdockwidget(win,0) {
+		oDockFilesManager = new qdockwidget(win,0) {
 			setLayoutDirection(C_TRANSLATION_ENGLISH)
 			setGeometry(00,00,200,200)
 			setwindowtitle(T_ENV_DOCK_PROJECTFILES) # "Project Files"
 			setwidget(this.tree1)
 		}
-		win.adddockwidget(1,oDock1,1)
+		win.adddockwidget(1,oDockFilesManager,1)
 
 	func CreateGoalDesigner win
 		Open_Window(:GoalDesignerController)		

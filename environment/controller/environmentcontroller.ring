@@ -54,6 +54,8 @@ class EnvironmentController from WindowsControllerParent
 			oDock = oView.CreateGoalDesigner(oView.win)
 			oDock.setWindowTitle(cFileName)
 			SetParents()
+		else
+			oView.oDockGoalDesigner.setWindowTitle(cFileName)
 		}
 		parent().oVisualSourceFile.cFileName = cFileName
 		parent().OpenFileAction2()
