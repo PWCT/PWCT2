@@ -470,10 +470,11 @@ class GoalDesignerController from WindowsControllerParent
 			ShowMessage(T_GD_BM_SORRY,T_GD_BM_CANTINTERACT)
 			return False
 		}
-		Open_Window(:ComponentsBrowserController)
+		Open_WindowNoShow(:ComponentsBrowserController)
 		Last_Window().setParentObject(self)
 		Last_Window().AddComponents()
-		oView.layoutVPages.AddWidget(Last_Window().oView.win)
+		oView.layoutCB.AddWidget(Last_Window().oView.win)
+		Last_Window().Start()	# Show The Window
 		return True
 
 	func ModifyAction
@@ -494,7 +495,8 @@ class GoalDesignerController from WindowsControllerParent
 					Eval("Load '" + cFilePath + "'")
 				}
 				# Use the Component
-					Open_Window(cFile+:ComponentController)
+					# We use Open_WindowNoShow() to avoid flickering
+					Open_WindowNoShow(cFile+:ComponentController)
 					Last_Window().setParentObject(self)
 					Last_Window().cComponent = cFile
 					Last_Window().cVariablesValues = cVariablesValues
@@ -502,6 +504,7 @@ class GoalDesignerController from WindowsControllerParent
 					Last_Window().nIID = nIID
 					Last_Window().SetVariablesValues()
 				oView.layoutVPages.AddWidget(Last_Window().oView.win)
+				Last_Window().Start()	# Show The Window
 			}
 
 	func AllowInteractButton

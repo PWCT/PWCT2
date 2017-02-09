@@ -151,8 +151,10 @@ class GoalDesignerView from WindowsViewParent
 			AddWidget(btnCloseWindow)	
 			insertStretch( -1, 1 )
 		}
-		layoutVPages = new qVBoxLayout()		
+		layoutVPages = new qVBoxLayout()
+		layoutCB = new qVBoxLayout()
 		layoutRegion = new qHBoxLayout() {
+			AddLayout(layoutCB)
 			AddLayout(layoutVBtns)
 			AddWidget(oTab)
 			AddLayout(layoutVPages)

@@ -82,7 +82,7 @@ class ComponentsBrowserController from WindowsControllerParent
 				Eval("Load '" + cFilePath + "'")
 			}
 			# Start the Component
-				Open_Window(cFile+:ComponentController)
+				Open_WindowNoShow(cFile+:ComponentController)
 				Last_Window().setParentObject(parent())
 				Last_Window().cComponent = cFile
 				Last_Window().nInteractionMode = C_INTERACTIONMODE_NEW
@@ -91,6 +91,7 @@ class ComponentsBrowserController from WindowsControllerParent
 				oView.oTextSearch.SetText("")
 			# Add the Page to the goal designer
 				Parent().oView.layoutVPages.AddWidget(Last_Window().oView.win)
+				Last_Window().Start()	# Show The Window
 		}
 
 	#func CloseAction

@@ -88,6 +88,7 @@ class ComponentViewParent from WindowsViewParent
 			AddWidget(oBtnAgain) AddWidget(oBtnOk) AddWidget(oBtnClose)
 		}
 	 	oLayoutAll.AddLayout(oLayoutButtons)
+		oLayoutAll.insertStretch( -1, 1 )
 
 	func Variable cVariable
 		nPos = find(aVariables,cVariable,C_INTERACTION_VL_NAME)
