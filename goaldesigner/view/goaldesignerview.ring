@@ -154,9 +154,9 @@ class GoalDesignerView from WindowsViewParent
 		layoutVPages = new qVBoxLayout()
 		layoutCB = new qVBoxLayout()
 		layoutRegion = new qHBoxLayout() {
-			AddLayout(layoutCB)
 			AddLayout(layoutVBtns)
 			AddWidget(oTab)
+			AddLayout(layoutCB)
 			AddLayout(layoutVPages)
 		}
 		layout1 = new qVBoxLayout()
