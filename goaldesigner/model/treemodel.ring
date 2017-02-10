@@ -19,6 +19,12 @@ class TreeModel
 	aBuffer = []		# List used for Cut, Copy & Paste operations
 
 	/*
+		The next method return the Count of Nodes
+	*/
+	func Count
+		return len(aList)
+
+	/*
 		The next method return the ID
 	*/
 	func GetID

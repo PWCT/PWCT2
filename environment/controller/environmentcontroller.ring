@@ -50,7 +50,7 @@ class EnvironmentController from WindowsControllerParent
 			return
 		}
 		cFileName = oView.oFile.filepath(oItem)
-		if Parent().IsFileOpened() {
+		if Parent().IsFileOpened() or not Parent().IsFileEmpty() {
 			oDock = oView.CreateGoalDesigner(oView.win)
 			oDock.setWindowTitle(cFileName)
 			SetParents()

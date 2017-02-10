@@ -658,3 +658,6 @@ class GoalDesignerController from WindowsControllerParent
 
 	func IsFileOpened
 		return oVisualSourceFile.IsFileOpened()
+
+	func IsFileEmpty
+		return oModel.IsEmpty()

@@ -189,3 +189,9 @@ class GoalDesignerModel
 				return item[C_TREEMODEL_NODEID]
 			}
 		}
+
+	func IsEmpty
+		if oStepsTreeModel.Count() <= 1 { # Start Point only
+			return True
+		}
+		return False
