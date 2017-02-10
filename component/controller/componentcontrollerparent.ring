@@ -111,7 +111,7 @@ Class ComponentControllerParent from WindowsControllerParent
 	func KeyPressAction
 		switch oView.oWinFilter.getKeyCode() {
 			case Qt_Key_Escape 
-				CloseAction()		
+				CloseBtnAction()		
 			case 87	# CTRL+W
 				OkAction()
 			case 71 	# CTRL+G
