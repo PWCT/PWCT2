@@ -35,14 +35,14 @@ class EnvironmentView from WindowsViewParent
 			subHelp = addmenu(T_ENV_MENU_HELP) # "Help"
 			subFile { 
 				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+n"))
+					setShortcut(new QKeySequence("Ctrl+Alt+n"))
 					setbtnimage(self,"images/new.png")
 					settext(T_ENV_MENU_NEW) # "New"
 					setclickevent(Method(:NewAction))
 				}
 				addaction(oAction)
 				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+o"))
+					setShortcut(new QKeySequence("Ctrl+Alt+o"))
 					setbtnimage(self,"images/open.png") 
 					settext(T_ENV_MENU_OPEN) # "Open"
 					setclickevent(Method(:OpenAction))
@@ -58,7 +58,7 @@ class EnvironmentView from WindowsViewParent
 				addaction(oAction)
 				addseparator()
 				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+e"))
+					setShortcut(new QKeySequence("Ctrl+Alt+s"))
 					setbtnimage(self,"images/saveas.png")
 					settext(T_ENV_MENU_SAVEAS) # "Save As"
 					setclickevent(Method(:SaveAsAction))
@@ -105,7 +105,7 @@ class EnvironmentView from WindowsViewParent
 				addaction(oAction)
 				addseparator()
 				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+i"))
+					setShortcut(new QKeySequence("Alt+f"))
 					setbtnimage(self,"images/font.png")
 					settext(T_ENV_MENU_FONT) # "Font"
 					setclickevent(Method(:FontAction))
@@ -122,7 +122,7 @@ class EnvironmentView from WindowsViewParent
 			}				
 			subView {
 				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+j"))
+					setShortcut(new QKeySequence("Alt+p"))
 					setbtnimage(self,"images/project.png")
 					settext(T_ENV_MENU_PROJECTFILES ) # "Project Files"
 					setclickevent(Method(:ProjectAction))
@@ -130,7 +130,7 @@ class EnvironmentView from WindowsViewParent
 				addaction(oAction)			
 				addseparator()	
 				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+u"))
+					setShortcut(new QKeySequence("Alt+g"))
 					setbtnimage(self,"images/source.png")
 					setclickevent(Method(:GoalDesignerAction))
 					settext(T_ENV_MENU_GOALDESIGNER) # "Goal Designer"

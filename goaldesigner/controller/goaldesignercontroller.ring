@@ -375,7 +375,6 @@ class GoalDesignerController from WindowsControllerParent
 				RunAction()
 			case 16777268	# CTRL+F5
 				RunGuiAction()
-
 		}
 		oView.oTreeFilter.setEventOutput(False)
 
