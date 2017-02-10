@@ -518,7 +518,7 @@ class GoalDesignerController from WindowsControllerParent
 					Last_Window().nInteractionMode = C_INTERACTIONMODE_MODIFY
 					Last_Window().nIID = nIID
 					Last_Window().SetVariablesValues()
-				oView.layoutVPages.AddWidget(Last_Window().oView.win)
+				oView.layoutVPages.InsertWidget(0,Last_Window().oView.win,0,0)
 				Last_Window().Start()	# Show The Window
 			}
 
