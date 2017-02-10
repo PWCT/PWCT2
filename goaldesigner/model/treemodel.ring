@@ -20,18 +20,24 @@ class TreeModel
 
 	/*
 		The next method return the Count of Nodes
+		Parameters : None
+		Output : The Nodes Count As Number
 	*/
 	func Count
 		return len(aList)
 
 	/*
 		The next method return the ID
+		Parameters : None
+		Output : The ID of the Last Node
 	*/
 	func GetID
 		return nID
 
 	/*
-		The next method set the ID
+		The next method set the ID of the Last Node
+		Parameters : The ID Value as Number
+		Output : None
 	*/
 	func SetID nIDValue
 		nID = nIDValue
@@ -40,6 +46,8 @@ class TreeModel
 		The next method add new nodes to the tree
 		The method check where to inset new nodes
 		We have tree in the correct order (Top-Down)
+		Parameters : Parent ID , Content List
+		Output : The new node ID
 	*/
 	func AddNode  nParent,Content
 		nID++	# Increase the Automatic ID by 1
@@ -52,6 +60,8 @@ class TreeModel
 		We use the insert() function later to add new nodes
 		The goal is to keep the tree in the correct order
 		So we don't need to order the tree when we generate the code
+		Parameters : Parent ID
+		Output : the Position as Number
 	*/
 	func FindNewNodePosition nParent
 		for x = 1 to len(aList) {
@@ -70,6 +80,8 @@ class TreeModel
 
 	/*
 		The next method edit the node content in the tree
+		Parameters : The Node ID and the Content List
+		Output : None
 	*/
 	func SetNodeContent nNodeID,Content
 		nPos = find(aList,nNodeID,C_TREEMODEL_NODEID)
@@ -77,6 +89,8 @@ class TreeModel
 
 	/*
 		The next method get the node content from the tree
+		Parameters : The Node ID
+		Output : The Content List
 	*/
 	func GetNodeContent nNodeID
 		nPos = find(aList,nNodeID,C_TREEMODEL_NODEID)
@@ -84,12 +98,16 @@ class TreeModel
 
 	/*
 		The next method return the tree list
+		Parameters : None
+		Output : The Nodes List
 	*/
 	func GetData
 		return aList
 
 	/*
 		The next method set the tree list
+		Parameters : The Tree Nodes List
+		Output : None
 	*/
 	func SetData aData
 		aList = aData
@@ -97,6 +115,8 @@ class TreeModel
 	/*
 		The next method return a list of the node children
 		The list contains each node index
+		Parameters : The Node ID
+		Output : Children List
 	*/
 	func Children nNodeID
 		nPos = find(aList,nNodeID,C_TREEMODEL_NODEID)
@@ -115,6 +135,8 @@ class TreeModel
 	/*
 		The next method return a list of the node children
 		The list contains each node ID
+		Parameters : Node ID
+		Output : Children IDs List
 	*/
 	func ChildrenIDs nNodeID
 		nPos = find(aList,nNodeID,C_TREEMODEL_NODEID)
@@ -132,7 +154,9 @@ class TreeModel
 
 	/*
 		The next method return the index of a node with respect to the parent
-		Input : Parent ID , Node ID
+		Parameters : Parent ID , Node ID
+		Output : Node Index with respect to the Parent
+		
 	*/
 	func ChildIndex nParentID,nNodeID
 		aChildList = ChildrenIDs(nParentID)
@@ -142,6 +166,8 @@ class TreeModel
 	/*
 		Remove children from the Tree
 		The input is a list of each node index
+		Parameters : Nodes Positions List
+		Output : None
 	*/
 	func DeleteChildren aChildren
 		# We remove from bottom to up to keep the node index valid during deletion
@@ -151,7 +177,7 @@ class TreeModel
 	
 	/*
 		The next method get a list of the Children data
-		Input : Children list of indexes 
+		Parameters : Children list of indexes 
 		Output : Children list of data
 	*/
 	func GetChildren aChildren
@@ -163,6 +189,8 @@ class TreeModel
 
 	/*
 		Remove node and it's children
+		Parameters : The Node ID
+		Output : None
 	*/
 	func DeleteNode nNodeID
 		# Delete Children
@@ -173,6 +201,8 @@ class TreeModel
 
 	/*
 		The next method find the sibling node (UP)
+		Parameters : The Node ID
+		Output : The Position of the sibling node (up)
 	*/
 	func SiblingUp nNodeID
 		nPos = find(aList,nNodeID,C_TREEMODEL_NODEID)		
@@ -189,6 +219,8 @@ class TreeModel
 
 	/*
 		The next method find the sibling node (Down)
+		Parameters : The Node ID
+		Output : The position of the sibling node (Down)
 	*/
 	func SiblingDown nNodeID
 		nPos = find(aList,nNodeID,C_TREEMODEL_NODEID)		
@@ -205,6 +237,8 @@ class TreeModel
 
 	/*
 		The next method move a node up
+		Parameters : The Node ID
+		Output : None
 	*/
 	func MoveNodeUp nNodeID
 		# Find the sibling node (Up)
@@ -232,6 +266,8 @@ class TreeModel
 	
 	/*
 		The next method move the Node down
+		Parameters : NodeID
+		Output : None
 	*/
 	func MoveNodeDown nNodeID
 		# Find the sibiling node (Down)
@@ -241,6 +277,8 @@ class TreeModel
 
 	/*
 		The next method Cut the Node
+		Parameters : The Node ID
+		Output : None
 	*/
 	func CutNode nNodeID
 		# Copy the Node Data
@@ -250,6 +288,8 @@ class TreeModel
 
 	/*
 		The next method Copy the Node
+		Parameters : The Node ID
+		Output : The Node Position
 	*/
 	func CopyNode nNodeID
 		# Get the Node position
@@ -266,6 +306,8 @@ class TreeModel
 		When we paste, We must
 			1 - Change the parent ID of the first node to the input of PasteNode method
 			2 - Change the ID of each node to be a new and unique ID
+		Parameters : The Parent Node ID
+		Output : None
 	*/
 	func PasteNode nParentNodeID
 		nID++
@@ -299,12 +341,16 @@ class TreeModel
 
 	/*
 		The next method return the tree list in the buffer that are used for Cut,Copy and Paste
+		Parameters : None
+		Output : The Buffer List
 	*/
 	func GetBuffer
 		return aBuffer
 
 	/*
 		The next method set the buffer list
+		Parameters : The Buffer List
+		Output : None
 	*/
 	func SetBuffer aNewBuffer
 		aBuffer = aNewBuffer
