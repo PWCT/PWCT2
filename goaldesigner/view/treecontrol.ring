@@ -18,14 +18,32 @@ class TreeControl from qTreeWidget
 
 	cEventString
 
+	/*
+		The next method set the object attributes values		
+		Parameters : The Parent Window as QWidget Object
+		Output : The Object Reference (Self)
+	*/
+
 	func init win
 		super.init(win)
 		font = new qFont("",0,0,0)
 		font.setpixelsize(nFontSize)
 		return self
 
+	/*
+		The next method Add new node to the Tree control	
+		Parameters : The Parent Node ID, The Node ID, The Node Text
+		Output : Reference to The Node Object (Type : QTreeWidgetItem)
+	*/
+
 	func AddNode nParentID,nID,cText
 		return InsertNode(nParentID,nID,cText,-1)
+
+	/*
+		The next method Add a node and set the colors 		
+		Parameters :  The Parent Node ID, The Node ID, The Node Text , Ignore Status
+		Output : None
+	*/
 
 	func SerialAdd nParentID,nID,cText,lIgnore
 		oParent = GetObjByID(nParentID)
@@ -43,6 +61,12 @@ class TreeControl from qTreeWidget
 		setItemWidget(oItem,0,oLabel)
 		AddToTree(nID,oItem)
 		oItem.setExpanded(true)
+
+	/*
+		The next method Insert a node and create the Node Label 	
+		Parameters :  The Parent Node ID, The Node ID, The Node Text , Index (insert Position)
+		Output : Reference to The Node Object (Type : QTreeWidgetItem)
+	*/
 
 	func InsertNode nParentID,nID,cText,nIndex
 		oParent = GetObjByID(nParentID)
@@ -68,10 +92,22 @@ class TreeControl from qTreeWidget
 		}
 		return oItem
 
+	/*
+		The next method set the font of the label of the Node Item
+		Parameters :  Reference to The Node Object (Type : QTreeWidgetItem)
+		Output : None
+	*/
+
 	func SetLabelFont oLabel
 		cFontFam =  font().family() 				
 		oLabel.setStyleSheet('font-family: "'+cFontFam+
 					'" ; font-size:' + this.nFontSize + "pt;")
+
+	/*
+		The next method get the Tree Node Object using the Tree Node ID
+		Parameters :  The Node ID
+		Output : Reference to The Node Object (Type : QTreeWidgetItem)
+	*/
 
 	func GetObjByID id
 		nPos = std_find2(aTree,id,C_TREECONTROL_ID)
@@ -80,12 +116,24 @@ class TreeControl from qTreeWidget
 		}
 		return aTree[nPos][C_TREECONTROL_OBJECT]
 
+	/*
+		The next method get the Tree Node ID using the Tree Node Object
+		Parameters :  Reference to The Node Object (Type : QTreeWidgetItem)
+		Output : The Node ID 
+	*/
+
 	func GetIDByObj oObj
 		nPos = std_find2(aTree,oObj.pObject,C_TREECONTROL_OBJECTPOINTER)
 		if nPos = 0 {
 			std_raise("GetIDByObj() - Can't find the ID!")
 		}
 		return aTree[nPos][C_TREECONTROL_ID]
+
+	/*
+		The next method delete node using the Node ID
+		Parameters :  The Node ID
+		Output : None
+	*/
 
 	func DelByID id
 		nPos = std_find2(aTree,id,C_TREECONTROL_ID)
@@ -94,6 +142,12 @@ class TreeControl from qTreeWidget
 		}
 		del(aTree,nPos)
 
+	/*
+		The next method delete node using the Object ID 
+		Parameters :  Reference to The Node Object (Type : QTreeWidgetItem)
+		Output : None
+	*/
+
 	func DelByObj oObj
 		nPos = std_find2(aTree,oObj.pObject,C_TREECONTROL_OBJECTPOINTER)
 		if nPos = 0 {
@@ -101,17 +155,32 @@ class TreeControl from qTreeWidget
 		}
 		del(aTree,nPos)
 
+	/*
+		The next method Add new node to the Tree List of nodes and IDs
+		Parameters :  Node ID , Reference to The Node Object (Type : QTreeWidgetItem)
+		Output : None
+	*/
+
 	func AddToTree nID,oObject
 		aTree + [nID,oObject,oObject.pObject]
 
 	/*
 		The next method is used after Paste operation to update the Tree list
 		With the new nodes data
+		Parameters :  The Nodes Objects List , The Nodes Data List (ParentID, NodeID, Content)
+		Output : None
 	*/
+
 	func AddNodesFromBuffer aNodesObjectsList,aNodesDataList
 		for x = 1 to len(aNodesObjectsList) {
 			AddToTree(aNodesDataList[x][C_TREEMODEL_NODEID],aNodesObjectsList[x])
 		}
+
+	/*
+		The next method increase the font size by 2 points
+		Parameters :  None
+		Output : None
+	*/
 
 	func IncreaseFontSize
 		if nFontSize >= 72 { return }
@@ -119,17 +188,36 @@ class TreeControl from qTreeWidget
 		font.setpixelsize(nFontSize)
 		SetFont(font)
 
+	/*
+		The next method decrease the font size by 2 points
+		Parameters :  None
+		Output : None
+	*/
+
 	func DecreaseFontSize
 		if nFontSize <= 12 { return }
 		nFontSize -= 2	
 		font.setpixelsize(nFontSize)
 		SetFont(font)
 
+	/*
+		The next method set the current item (Active Item) 
+		It will disable the CurrentItemChangedEvent event during this change
+		Parameters :  Reference to The Node Object (Type : QTreeWidgetItem) , The Flag
+		Output : None
+	*/
+
 	func SetCurrentItem oItem,nFlag
 		cEvent = getCurrentItemChangedEvent()
 		setCurrentItemChangedEvent("")
 		super.SetCurrentItem(oItem,nFlag)
 		setCurrentItemChangedEvent(cEvent)
+
+	/*
+		The next method return the current item (Active Item) 
+		Parameters :  None
+		Output : Reference to The Node Object (Type : QTreeWidgetItem)
+	*/
 
 	func CurrentItem
 		cEvent = getCurrentItemChangedEvent()
@@ -138,12 +226,32 @@ class TreeControl from qTreeWidget
 		setCurrentItemChangedEvent(cEvent)
 		return oItem
 
+	/*
+		The next method disable the currentItemChangedEvent
+		Parameters :  None
+		Output : None
+	*/
+
 	func DisableEvents
 		cEventString = getCurrentItemChangedEvent()
 		setCurrentItemChangedEvent("")
 
+	/*
+		The next method enable the currentItemChangedEvent
+		Parameters :  None
+		Output : None
+	*/
+
 	func EnableEvents
 		setCurrentItemChangedEvent(cEventString)
+
+	/*
+		The next method set the font Object
+		We set a defined attributed in this class called (Font)
+		We uses it for setting the nodes font through the Labels created for each item
+		Parameters :  The font object (QFont)
+		Output : None
+	*/
 
 	func SetFontObject oFont
 		font = oFont
