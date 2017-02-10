@@ -354,7 +354,14 @@ class GoalDesignerController from WindowsControllerParent
 			case 16777223  	# DEL
 				DeleteStepAction()
 			case 69		# CTRL+E
-				EditStepAction()
+				oItem  = oView.oStepsTree.currentItem()
+				nStepID = oView.oStepsTree.GetIDByObj(oItem)
+				nStepType = oModel.GetStepType(nStepID)
+				if nStepType = C_STEPTYPE_COMMENT {
+					EditStepAction()
+				else	
+					ModifyAction()
+				}
 			case 67		# CTRL+C
 				CopyStepsAction()
 			case 73		# CTRL+I
