@@ -15,6 +15,9 @@ class GoalDesignerController from WindowsControllerParent
 	cComponentsPath = "vpl/ringpwct/"
 	cFont = "MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0"
 
+	lIsComponentsBrowserOpened = False 
+	nComponentsBrowserWindowID 
+
 	func Start
 		oView.Show()
 
@@ -321,8 +324,8 @@ class GoalDesignerController from WindowsControllerParent
 		if oView.oTreeFilter.getmodifiers() = 0 {	# No CTRL Key is pressed
 			if ( nKey >= 65 ) and (nKey <= 90 )  { # Keys from 'a' to 'z' 
 				if InteractAction() {
-					Last_Window().oView.oTextSearch.setText(Lower(Char(nKey)))			
-					Last_Window().SearchAction()
+					ComponentsBrowserWindow().oView.oTextSearch.setText(Lower(Char(nKey)))			
+					ComponentsBrowserWindow().SearchAction()
 				}
 			}
 		}
@@ -470,12 +473,24 @@ class GoalDesignerController from WindowsControllerParent
 			ShowMessage(T_GD_BM_SORRY,T_GD_BM_CANTINTERACT)
 			return False
 		}
-		Open_WindowNoShow(:ComponentsBrowserController)
-		Last_Window().setParentObject(self)
-		Last_Window().AddComponents()
-		oView.layoutCB.AddWidget(Last_Window().oView.win)
-		Last_Window().Start()	# Show The Window
+		if not lIsComponentsBrowserOpened {
+			lIsComponentsBrowserOpened = True
+			Open_WindowNoShow(:ComponentsBrowserController)
+			Last_Window().setParentObject(self)
+			Last_Window().AddComponents()
+			oView.layoutCB.AddWidget(Last_Window().oView.win)
+			Last_Window().Start()	# Show The Window
+			nComponentsBrowserWindowID = Last_WindowID()
+		else
+			ComponentsBrowserWindow().Start()
+		}
 		return True
+
+	func ComponentsBrowserWindow
+		return GetObjectByID(nComponentsBrowserWindowID)
+
+	func ComponentsBrowserClosed
+		lIsComponentsBrowserOpened = False
 
 	func ModifyAction
 		# Get the Selected Step

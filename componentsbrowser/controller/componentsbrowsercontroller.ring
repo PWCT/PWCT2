@@ -97,3 +97,7 @@ class ComponentsBrowserController from WindowsControllerParent
 		Super.Start()
 		oView.win.activateWindow()
 		oView.oTextSearch.SetFocus(0)
+
+	func CloseAction
+		Parent().ComponentsBrowserClosed()
+		Super.CloseAction()
