@@ -52,43 +52,86 @@ load "filesystem/databasesqlite.ring"
 load "filesystem/database.ring"
 load "filesystem/visualsourcefile.ring"
 
+# Run PWCT Environment
 Start_Environment()
+
+/*
+	The next function run the Goal Designer Alone
+	It can be used for testing
+	This function was used before creating the PWCT Environment
+	Where everything started from creating the Goal Designer	
+	Parameters : None
+	Output : None
+*/
 
 func Test_GoalDesigner
 
 	new qApp {
-		Open_Window(:GoalDesignerController)
-		exec()
+		# Start the Goal Designer Window
+			Open_Window(:GoalDesignerController)
+		# Execute the Application (Give control to the GUI Loop)
+			exec()
 	}
+
+
+/*
+	The next function run the PWCT Environment
+	This create the Main Window, Menubar, Toolbar, .. etc
+	Also the Project Files and Goal Designer Dockable windows
+	Parameters : None
+	Output : None
+*/
 
 func Start_Environment
 
+	# We have PWCT_APP as a global variable/object of the QApplication class
 	PWCT_APP = new qApp {
-		if not T_LAYOUTDIRECTION {
-			StyleFusion()
-		}
-		DisplaySplashScreen(PWCT_APP)
-		Open_Window(:EnvironmentController)
-		exec()
+		# We use the style with English User Interface only
+			if not T_LAYOUTDIRECTION {	# T_LAYOUTDIRECTION = 0 for English
+				StyleFusion()
+			}
+		# Dispaly the splash screen 
+			DisplaySplashScreen(PWCT_APP)
+		# Start the PWCT Environment Window
+			Open_Window(:EnvironmentController)
+		# Execute the Application (Give control to the GUI Loop)
+			exec()
 	}
+
+/*
+	The next function display the Splash Screen
+	This screen display an image present the PWCT Logo for one second
+	Parameters : QApplication Object
+	Output : None
+*/
 
 func DisplaySplashScreen oApp
 
-	oPixMap = new qPixMap("images/pwctlogo.png")
-	oSplash = new qSplashScreen(oPixMap)
-	oSplash.Show()
-	sleep(1)
-	oSplash.Close()
-	oApp.ProcessEvents()
+	# Load the Image File
+		oPixMap = new qPixMap("images/pwctlogo.png")
+	# Create the Splash Screen Object
+		oSplash = new qSplashScreen(oPixMap)
+		oSplash.Show()
+	# Wait for one second
+		sleep(1)
+	# Close the Splash Creen
+		oSplash.Close()
+
+/*
+	The next function display a messagebox
+	Parameters : The Window Title as String and The Message Content As String
+	Output : None
+*/
 
 func ShowMessage cTitle,cMessage 
 
-	win = new qmessagebox(NULL)
-	{
-		setwindowtitle(cTitle)
-		settext(cMessage)
-		setstandardbuttons(QMessageBox_Ok)
-		setwindowflags(Qt_WindowStaysOnTopHint) 
-		setwinicon(win,"images/pwct.png")
-		result = exec()
-	}
+	# Create the Messagebox Window
+		win = new qmessagebox(NULL)
+		{
+			setwindowtitle(cTitle)
+			settext(cMessage)
+			setstandardbuttons(QMessageBox_Ok)
+			setwindowflags(Qt_WindowStaysOnTopHint) 
+			setwinicon(win,"images/pwct.png")
+			result = exec()
+		}
