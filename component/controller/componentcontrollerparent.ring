@@ -132,7 +132,7 @@ Class ComponentControllerParent from WindowsControllerParent
 		if nInteractionMode = C_INTERACTIONMODE_MODIFY  or CheckInteract() {
 			GenerateAction()
 			parent().oView.oStepsTree.setFocus(0)
-			CloseAction()		
+			CloseAction()				
 		}
 
 	func AgainAction	
@@ -152,6 +152,12 @@ Class ComponentControllerParent from WindowsControllerParent
 		if oView.lFirstTextBox = False {
 			oView.oFirstText.SetFocus(0)
 		}
+
+	func CloseBtnAction
+		if nInteractionMode = C_INTERACTIONMODE_MODIFY  {
+			parent().InteractionPageToModifyClosed()
+		}
+		Super.CloseAction()
 
 	func GenerateAction		# To be written in the component
 

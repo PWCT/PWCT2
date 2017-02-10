@@ -86,7 +86,7 @@ class ComponentViewParent from WindowsViewParent
 		setBtnImage(oBtnOk,"images/ipok.png")
 		oBtnClose = new qPushButton(win) {
 			setText(T_IP_CLOSE)    # "Close"
-			setClickEvent( Method(:CloseAction) )
+			setClickEvent( Method(:CloseBtnAction) )
 		}
 		setBtnImage(oBtnClose,"images/ipclose.png")
 		oLayoutButtons = new qHBoxLayout() {

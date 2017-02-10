@@ -18,6 +18,8 @@ class GoalDesignerController from WindowsControllerParent
 	lIsComponentsBrowserOpened = False 
 	nComponentsBrowserWindowID 
 
+	nInteractionPagesToModifyCount = 0
+
 	func Start
 		oView.Show()
 
@@ -523,7 +525,14 @@ class GoalDesignerController from WindowsControllerParent
 				oView.layoutVPages.InsertWidget(0,Last_Window().oView.win,0,0)
 				Last_Window().Start()	# Show The Window
 				oView.widgetVPages.Show()	# Show the Splitter Widget
+				nInteractionPagesToModifyCount++
 			}
+
+	func InteractionPageToModifyClosed
+		nInteractionPagesToModifyCount--
+		if nInteractionPagesToModifyCount = 0 {
+			oView.widgetVPages.Hide()
+		}
 
 	func AllowInteractButton
 		oItem  = oView.oStepsTree.currentItem()
