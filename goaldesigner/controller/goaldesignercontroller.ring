@@ -492,6 +492,7 @@ class GoalDesignerController from WindowsControllerParent
 
 	func ComponentsBrowserClosed
 		lIsComponentsBrowserOpened = False
+		oView.widgetCB.Hide()
 
 	func ModifyAction
 		# Get the Selected Step
