@@ -7,8 +7,8 @@
 
 class TimeMachineView from QSlider
 
-	nInteractionPoints = 0
-	nActiveInteraction = 0
+	nInteractionPoints = 0	# Number of Interactions in the History
+	nActiveInteraction = 0	# Number of the current active Interaction
 
 	/*
 		The next method set the default control attributes
