@@ -132,7 +132,7 @@ Class ComponentControllerParent from WindowsControllerParent
 		if nInteractionMode = C_INTERACTIONMODE_MODIFY  or CheckInteract() {
 			GenerateAction()
 			parent().oView.oStepsTree.setFocus(0)
-			CloseAction()				
+			CloseBtnAction()				
 		}
 
 	func AgainAction	
