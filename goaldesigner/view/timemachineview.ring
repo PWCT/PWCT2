@@ -10,6 +10,12 @@ class TimeMachineView from QSlider
 	nInteractionPoints = 0
 	nActiveInteraction = 0
 
+	/*
+		The next method set the default control attributes
+		Parameters : The parent widget (QWidget)
+		Output : Reference to the object (Self)
+	*/
+
 	func init win
 		super.init(win)
 		resize(400,30)
@@ -18,6 +24,13 @@ class TimeMachineView from QSlider
 		setorientation(Qt_Horizontal)
 		# we return self to be able to use braces {} after calling init()
 			return self
+
+	/*
+		The next method set the Maximum Interactions Count
+		Then move to the last value (last Interaction)
+		Parameters : nCount as Number
+		Ouput : None
+	*/
 
 	func setInteractionPoints nCount
 		# we uses -1 to avoid counting the start point interaction
@@ -29,11 +42,30 @@ class TimeMachineView from QSlider
 		setValueChangedEvent(cEvent)	# Set the event again
 		nActiveInteraction = nInteractionPoints  
 
+	/*
+		The next method get the Active Interaction Number
+		Parameters : None
+		Output : The active interation number
+	*/
+
 	func GetActiveInteraction
 		return nActiveInteraction
 
+	/*
+		The next method set the Active Interaction Number
+		Parameters :  The active interation number
+		Output : None
+	*/
+
 	func SetActiveInteraction nValue
 		nActiveInteraction = nValue
+
+	/*
+		The next method check if the active interaction is the last one or not
+		This to know if we are in the present or in the past
+		Parameters : None
+		Output : True/False based on the IsPresent status
+	*/
 
 	func IsPresent	# Last Interaction
 		return (nInteractionPoints = nActiveInteraction)
