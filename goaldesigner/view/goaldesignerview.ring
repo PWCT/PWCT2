@@ -7,6 +7,8 @@
 
 class GoalDesignerView from WindowsViewParent
 
+	# Create the window and the Controls
+
 	win = new qWidget() {
 		setLayoutDirection(T_LAYOUTDIRECTION)
 		setWindowTitle(T_GD_GOALDESIGNER)
@@ -187,6 +189,12 @@ class GoalDesignerView from WindowsViewParent
 			oFilter.setKeyPressEvent(Method(:KeyPress))
 			installeventfilter(oFilter)	
 	}
+
+	/*
+		The next method display the window and Maximize it
+		Parameters : None
+		Output : None
+	*/
 
 	func Show
 		win { showMaximized() }
