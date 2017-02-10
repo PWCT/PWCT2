@@ -153,11 +153,25 @@ class GoalDesignerView from WindowsViewParent
 		}
 		layoutVPages = new qVBoxLayout()
 		layoutCB = new qVBoxLayout()
+		widgetCB = new qWidget() {
+			setLayout(layoutCB)
+			hide()
+		}
+		widgetVPages = new qWidget() {
+			setLayout(layoutVPages)
+			hide()
+		}
+		oSplitter = new qSplitter(win) {
+			AddWidget(oTab)
+			AddWidget(widgetCB)
+			AddWidget(widgetVPages)
+		}		
 		layoutRegion = new qHBoxLayout() {
 			AddLayout(layoutVBtns)
-			AddWidget(oTab)
-			AddLayout(layoutCB)
-			AddLayout(layoutVPages)
+			AddWidget(oSplitter)
+			#AddWidget(oTab)
+			#AddLayout(layoutCB)
+			#AddLayout(layoutVPages)
 		}
 		layout1 = new qVBoxLayout()
 		{	

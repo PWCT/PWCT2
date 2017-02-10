@@ -481,6 +481,7 @@ class GoalDesignerController from WindowsControllerParent
 			oView.layoutCB.AddWidget(Last_Window().oView.win)
 			Last_Window().Start()	# Show The Window
 			nComponentsBrowserWindowID = Last_WindowID()
+			oView.widgetCB.show()
 		else
 			ComponentsBrowserWindow().Start()
 		}
@@ -520,6 +521,7 @@ class GoalDesignerController from WindowsControllerParent
 					Last_Window().SetVariablesValues()
 				oView.layoutVPages.InsertWidget(0,Last_Window().oView.win,0,0)
 				Last_Window().Start()	# Show The Window
+				oView.widgetVPages.Show()	# Show the Splitter Widget
 			}
 
 	func AllowInteractButton
