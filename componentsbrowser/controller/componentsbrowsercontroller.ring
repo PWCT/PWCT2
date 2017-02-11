@@ -11,6 +11,12 @@ class ComponentsBrowserController from WindowsControllerParent
 	oModel = new TreeModel
 	cComponentsPath = C_CB_COMPONENTSPATH # "vpl/ringpwct/"
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func KeyPressAction
 		nKeyCode = oView.oWinFilter.getKeyCode()
 		switch nKeyCode {	
@@ -20,11 +26,23 @@ class ComponentsBrowserController from WindowsControllerParent
 			CloseAction()	
 		}
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func EnterPressAction
 		oView.oTextFilter.setEventOutput(False)
 		if oView.oTextFilter.getKeyCode() = 16777220 {	
 			SelectAction()	
 		}
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func AddComponents
 		oVisualSourceFile = new VisualSourceFile
@@ -42,6 +60,12 @@ class ComponentsBrowserController from WindowsControllerParent
 			oItem = oView.oComponentsTree.AddStep(nParentID,nStepID,cStepName)								
 			oView.oComponentsTree.ScrollToItem(oItem,0)
 		}
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func SearchAction
 		cFind = oView.oTextSearch.Text()	
@@ -67,6 +91,12 @@ class ComponentsBrowserController from WindowsControllerParent
 			}
 		}
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func SelectAction
 		oItem  = oView.oComponentsTree.currentItem()
 		nID = oView.oComponentsTree.GetIDByObj(oItem)
@@ -90,10 +120,22 @@ class ComponentsBrowserController from WindowsControllerParent
 				oView.oTextSearch.SetText("")
 		}
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
  	func Start
 		Super.Start()
 		oView.win.activateWindow()
 		oView.oTextSearch.SetFocus(0)
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func CloseAction
 		Parent().ComponentsBrowserClosed()

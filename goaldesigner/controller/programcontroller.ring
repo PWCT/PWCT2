@@ -14,13 +14,31 @@ Class ProgramController
 	cRunBatch = "run2"
 	cRunGUIBatch = "run2"
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func Debug oGD
 		Prepare(oGD)	# Save the source code to the file
 		RunBatch(cDebugBatch,"")
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func Run oGD
 		Prepare(oGD)	# Save the source code to the file
 		RunBatch(cRunBatch,"")
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func RunGUI oGD
 		Prepare(oGD)	# Save the source code to the file
@@ -28,17 +46,41 @@ Class ProgramController
 
 	private
 
+		/*
+			Purpose : 
+			Parameters :
+			Output : 
+		*/
+
 		func Prepare oGD
 			# Get the Source Code
 				GetCode(oGD)
 			# Save the code to the file
 				SaveToFile()
 
+		/*
+			Purpose : 
+			Parameters :
+			Output : 
+		*/
+
 		func GetCode oGD
 			cSourceCode = oGD.oModel.StepsTreeCode()
 
+		/*
+			Purpose : 
+			Parameters :
+			Output : 
+		*/
+
 		func SaveToFile
 			write(cFileName,cSourceCode)
+
+		/*
+			Purpose : 
+			Parameters :
+			Output : 
+		*/
 
 		func RunBatch cFile,cPara
 			if iswindows() {

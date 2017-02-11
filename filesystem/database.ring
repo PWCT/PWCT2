@@ -9,14 +9,38 @@ class Database
 
 	oDatabase = new DatabaseSQLite
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func init
 		oDatabase.init()
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func open cFileName
 		oDatabase.Open(cFileName)
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func execute cSQL
 		return oDatabase.Execute(cSQL)
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func close
 		oDatabase.close()

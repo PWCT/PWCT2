@@ -190,6 +190,7 @@ class GoalDesignerView from WindowsViewParent
 			installeventfilter(oFilter)	
 	}
 
+	
 	/*
 		The next method display the window and Maximize it
 		Parameters : None

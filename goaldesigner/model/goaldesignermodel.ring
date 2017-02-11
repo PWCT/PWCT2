@@ -19,29 +19,71 @@ class GoalDesignerModel
 			      :stepnumber = 1 ,
 			      :steptype = C_STEPTYPE_COMMENT  ])
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func AddStep nParent,Content
 		nID =  oStepsTreeModel.AddNode(nParent,Content)
 		return nID
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func EditStepName nStepID,cStepName
 		oStepsTreeModel.GetNodeContent(nStepID)[:name] = cStepName
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func GetStepName nStepID
 		aContent = oStepsTreeModel.GetNodeContent(nStepID)
 		return aContent[:name] 
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func GetStepIgnoreStatus nStepID
 		aContent = oStepsTreeModel.GetNodeContent(nStepID)
 		# The Ignore Status is the reverse of the Active Status
 		return not aContent[:active] 
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func GetStepCode nStepID
 		aContent = oStepsTreeModel.GetNodeContent(nStepID)
 		return aContent[:code] 
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func GetStepType nStepID
 		aContent = oStepsTreeModel.GetNodeContent(nStepID)
 		return aContent[:steptype] 
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func PrintSteps
 		for x in oStepsTreeModel.getdata() {
@@ -49,6 +91,12 @@ class GoalDesignerModel
 				 " .. Active : " +
 				x[C_TREEMODEL_CONTENT][:active])
 		}
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func StepsTreeText
 		cText = ""
@@ -59,6 +107,12 @@ class GoalDesignerModel
 		}
 		return cText
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func StepsTreeCode
 		cText = ""
 		for x in oStepsTreeModel.getdata() {
@@ -67,6 +121,12 @@ class GoalDesignerModel
 			}
 		}
 		return cText
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func DeleteStep nStepID
 		# Delete Interaction Records
@@ -88,6 +148,11 @@ class GoalDesignerModel
 				DeleteInteractionRecord(x)
 			}
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func DeleteInteractionRecord nStepID
 		# Get Interaction ID
@@ -95,6 +160,12 @@ class GoalDesignerModel
 		# Delete the Interaction Record
 			oInteractionModel.DeleteInteraction(nIID)
 	
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func GetInteractionID nStepID
 		# Get Content
 			aContent = oStepsTreeModel.GetNodeContent(nStepID)
@@ -102,26 +173,67 @@ class GoalDesignerModel
 			nIID = aContent[:interactionid]
 		return nIID
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func GetInteractionComponent nIID
 		return oInteractionModel.GetInteractionComponent(nIID)
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func GetInteractionVariablesValues nIID
 		return oInteractionModel.GetInteractionVariablesValues(nIID)
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func MoveStepUp nStepID
 		oStepsTreeModel.MoveNodeUp(nStepID)
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func MoveStepDown nStepID
 		oStepsTreeModel.MoveNodeDown(nStepID)
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func CutStep nStepID
 		# Delete Interaction Records (The Time Machine keep them in a buffer for paste)
 			DeleteInteractionsRecords(nStepID)
 		oStepsTreeModel.CutNode(nStepID)
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func CopyStep nStepID
 		oStepsTreeModel.CopyNode(nStepID)
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func PasteStep nParentStepID
 		UpdateInteractionIDs()
@@ -148,6 +260,12 @@ class GoalDesignerModel
 			}
 		}
 
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func GetBuffer
 		return oStepsTreeModel.GetBuffer()
@@ -191,6 +309,11 @@ class GoalDesignerModel
 		}
 		return aList
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func GetStepIDbyIID nIID,nStepNumber
 		aList = oStepsTreeModel.GetData()
@@ -201,6 +324,12 @@ class GoalDesignerModel
 				return item[C_TREEMODEL_NODEID]
 			}
 		}
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func IsEmpty
 		if oStepsTreeModel.Count() <= 1 { # Start Point only

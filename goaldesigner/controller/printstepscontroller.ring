@@ -9,9 +9,21 @@ class PrintStepsController from WindowsControllerParent
 
 	oView = new PrintStepsView
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func ShowData
 		oView.oStepsTree.setText(Parent().oModel.StepsTreeText())
 		oView.oStepsCode.setText(Parent().oModel.StepsTreeCode())
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func PrintStepsTreeAction
 		printer1 = new qPrinter(0) {
@@ -21,6 +33,12 @@ class PrintStepsController from WindowsControllerParent
 		oView.oStepsTree.print(printer1)		
 		system("start StepsTree.pdf")
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func PrintSourceCodeAction
 		printer1 = new qPrinter(0) {
 			setoutputformat(1)	# 1 = pdf
@@ -28,6 +46,12 @@ class PrintStepsController from WindowsControllerParent
 		}
 		oView.oStepsCode.print(printer1)
 		system("start StepsCode.pdf")
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func KeyPressAction
 		if oView.oWinFilter.getKeyCode() = Qt_Key_Escape {	

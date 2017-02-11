@@ -7,6 +7,12 @@
 
 class TimeMachineController
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func TimeMachineGotoPresent oView,oModel
 		if not oView.sliderTimeMachine.IsPresent() { 
 			# Save Current Item
@@ -20,6 +26,12 @@ class TimeMachineController
 			# Restore Item
 				oView.oStepsTree.SetCurrentItem(oItem,0)	
 		}
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func ChangeTimeMachinePoint oView,oModel
 		nOldTMValue = oView.sliderTimeMachine.GetActiveInteraction()

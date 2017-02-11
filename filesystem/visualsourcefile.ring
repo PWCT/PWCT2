@@ -19,14 +19,32 @@ class VisualSourceFile
 
 	nStepsID = 0 		nInteractionsID = 0	
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func IsFileOpened
 		if cFileName = C_VSF_NOFILENAME {
 			return False
 		}
 		return True
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func RemoveFile
 		remove(cFileName)
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func Open 
 		/*
@@ -36,53 +54,143 @@ class VisualSourceFile
 		oDatabase.init()
 		oDatabase.Open(cFileName)
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func Close
 		oDatabase.Close()
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func SetFile cFile
 		cFileName = cFile
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func GetFile
 		return cFileName
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func SetStepsTreeTable aData
 		aStepsTable = aData
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func GetStepsTreeTable
 		return aStepsTable
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func SetInteractionsTable aData
 		aInteractionsTable = aData
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func GetInteractionsTable
 		return aInteractionsTable
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func SetStepsID nID
 		nStepsID = nID
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func GetStepsID
 		return nStepsID
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func SetInteractionsID nID
 		nInteractionsID = nID
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func GetInteractionsID 
 		return nInteractionsID
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func CreateTables
 		CreateIDsTable()
 		CreateStepsTable()
 		CreateInteractionsTable()
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func LoadTables
 		LoadIDsTable()
 		LoadStepsTable()
 		LoadInteractionsTable()
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func SaveTables
 		SaveIDsTable()
 		SaveStepsTable()
 		SaveInteractionsTable()
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func CreateStepsTable
 		cSql = "CREATE TABLE STEPSTREE(
@@ -97,6 +205,12 @@ class VisualSourceFile
 				STEPTYPE			INT);"
 		oDatabase.Execute(cSQL)
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func CreateInteractionsTable
 		cSql = "CREATE TABLE INTERACTIONS(
 		         	INTERACTIONID 		INT 	PRIMARY KEY	NOT NULL,
@@ -107,11 +221,23 @@ class VisualSourceFile
 				VARIABLESVALUES	TEXT );"
 		oDatabase.Execute(cSQL)
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func CreateIDsTable
 		cSql = "CREATE TABLE IDS(
 		         	STEPSID		INT 		NOT NULL,
 		         	INTERACTIONSID	INT 		NOT NULL );"
 		oDatabase.Execute(cSQL)
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func LoadStepsTable
 		aStepsTable = []
@@ -132,6 +258,12 @@ class VisualSourceFile
 					] 
 		}
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func LoadInteractionsTable
 		aInteractionsTable = []
 		cSQL = "SELECT * FROM INTERACTIONS"
@@ -147,12 +279,24 @@ class VisualSourceFile
 			] 
 		}
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func LoadIDsTable
 		cSQL = "SELECT * FROM IDS"
 		aResult = oDatabase.Execute(cSQL)
 		record = aResult[1]
 		nStepsID 		= 0+record[:stepsid]
 		nInteractionsID 	= 0+record[:interactionsid]
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func SaveStepsTable
 		cSQLAll = ""
@@ -175,6 +319,12 @@ class VisualSourceFile
 		oDatabase.Execute(cSQLAll)
 		oDatabase.Execute("end")
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func SaveInteractionsTable
 		cSQLAll = ""		
 		for record in aInteractionsTable {						
@@ -191,6 +341,12 @@ class VisualSourceFile
 		oDatabase.Execute("begin")
 		oDatabase.Execute(cSQLAll)	
 		oDatabase.Execute("end")
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func SaveIDsTable						
 		cSQL = "INSERT INTO IDS (STEPSID,INTERACTIONSID)

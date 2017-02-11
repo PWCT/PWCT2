@@ -12,6 +12,13 @@ class ComponentsTreeView from StepsTreeView
 
 	# We create the Init Method to avoid adding the root two times
 	# As a result of nested call to AddStartPoint()
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func Init win
 		super.init(win)
 		return self

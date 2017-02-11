@@ -26,6 +26,12 @@ class EnvironmentView from WindowsViewParent
 			showmaximized()	
 		}
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func CreateMenuBar win
 		menu1 = new qmenubar(win) {		
 			subFile = addmenu(T_ENV_MENU_FILE) # "File"
@@ -202,6 +208,12 @@ class EnvironmentView from WindowsViewParent
 		}
 		win.setmenubar(menu1)
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func CreateToolbar win
 		aBtns = [
 				new qpushbutton(win) { 
@@ -254,6 +266,12 @@ class EnvironmentView from WindowsViewParent
 			}
 		}
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func CreateFilesManager win
 		tree1 = new qtreeview(win) {
 			setclickedevent(Method(:ChangeFileAction))
@@ -284,6 +302,12 @@ class EnvironmentView from WindowsViewParent
 		}
 		win.adddockwidget(1,oDockFilesManager,1)
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func CreateGoalDesigner win
 		Open_Window(:GoalDesignerController)		
 		nGoalDesignerWindowID = Last_WindowID()
@@ -295,6 +319,12 @@ class EnvironmentView from WindowsViewParent
 		win.adddockwidget(2,oDock,1)	
 		return oDock
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func CreateDockableWindow oWidget,cTitle,nPos
 		oDock = new qdockwidget(win,0) {
 			setLayoutDirection(C_TRANSLATION_ENGLISH)
@@ -303,6 +333,12 @@ class EnvironmentView from WindowsViewParent
 		}
 		win.adddockwidget(1,oDock,nPos)	
 
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func CreateStatusBar win
 		status1 = new qstatusbar(win) {

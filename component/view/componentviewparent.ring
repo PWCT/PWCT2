@@ -24,6 +24,12 @@ class ComponentViewParent from WindowsViewParent
 	lFirstTextBox = True 	# For Setting the focus
 	oFirstText			# First Textbox
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func Title cTitle
 		
 		oLabel = new qLabel(win) {
@@ -36,6 +42,12 @@ class ComponentViewParent from WindowsViewParent
 		
 		win.setWindowTitle(cTitle)
 		return #oLabel
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func TextBox cTitle,cVariable
 		oLabel = new qLabel(win) {
@@ -55,6 +67,12 @@ class ComponentViewParent from WindowsViewParent
 		aVariables + [oText,cVariable,C_INTERACTION_CT_TEXTBOX ]
 		return oText
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func ListBox cTitle,cVariable,aItems
 		oLabel = new qLabel(win) {
 			setText(cTitle)
@@ -72,6 +90,12 @@ class ComponentViewParent from WindowsViewParent
 		oLayoutAll.AddLayout(oLayout)
 		aVariables + [oList,cVariable,C_INTERACTION_CT_LISTBOX ]
 		return oList
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func PageButtons
 		oBtnAgain = new qPushButton(win) {
@@ -95,6 +119,12 @@ class ComponentViewParent from WindowsViewParent
 	 	oLayoutAll.AddLayout(oLayoutButtons)
 		oLayoutAll.insertStretch( -1, 1 )
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func Variable cVariable
 		nPos = find(aVariables,cVariable,C_INTERACTION_VL_NAME)
 		oObject = aVariables[nPos][C_INTERACTION_VL_OBJECT]
@@ -106,6 +136,12 @@ class ComponentViewParent from WindowsViewParent
 				cValue = oObject.currentrow() + 1
 		}
 		return cValue
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func GetVariablesValues
 		cVariablesValues = ""
@@ -120,6 +156,12 @@ class ComponentViewParent from WindowsViewParent
 			cVariablesValues += cValue + C_INTERACTIONVALUES_SEPARATOR
 		}
 		return cVariablesValues
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func SetVariablesValues cVariablesValues
 		aValues = Split(cVariablesValues,C_INTERACTIONVALUES_SEPARATOR)

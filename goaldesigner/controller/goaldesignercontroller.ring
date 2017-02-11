@@ -20,8 +20,20 @@ class GoalDesignerController from WindowsControllerParent
 
 	nInteractionPagesToModifyCount = 0
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func Start
 		oView.Show()
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func AddStep cStepName
 		oItem  = oView.oStepsTree.currentItem()
@@ -41,11 +53,29 @@ class GoalDesignerController from WindowsControllerParent
 		UpdateTheTimeMachine()
 		return oItem
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func AddGeneratedInteraction cComponent
 		return oModel.oInteractionModel.AddGeneratedInteraction(cComponent)
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func SaveVariablesValues nIID,cVariablesValues
 		oModel.oInteractionModel.SaveVariablesValues(nIID,cVariablesValues)
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func AddGeneratedStep cStepName,nIID,nStepNumber,nStepType
 		oItem  = oView.oStepsTree.currentItem()
@@ -65,20 +95,50 @@ class GoalDesignerController from WindowsControllerParent
 		UpdateTheTimeMachine()
 		return oItem
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func SetStepColor nStepType
 		oView.oStepsTree.SetStepColor(nStepType)
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func SelectStep nIID,nStepNumber
 		nStepID = oModel.GetStepIDbyIID(nIID,nStepNumber)
 		oItem = oView.oStepsTree.GetObjByID(nStepID)
 		return [oItem,nStepID]
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func TimeMachineGotoPresent
 		oTMController.TimeMachineGotoPresent(oView,oModel)
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func UpdateTheTimeMachine
 		nInteractionsCount = oModel.oInteractionModel.InteractionsCount()
 		oView.sliderTimeMachine.setInteractionPoints(nInteractionsCount)
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func AddStepAction
 		if not AllowInteractButton() {
@@ -99,6 +159,12 @@ class GoalDesignerController from WindowsControllerParent
 			AddStep(oInput.textvalue())
 		}
 	
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func EditStepAction
 		 if not IsComment() {
 			ShowMessage(T_GD_BM_SORRY,T_GD_BM_CANTEDIT)
@@ -124,6 +190,12 @@ class GoalDesignerController from WindowsControllerParent
 			oView.oStepsTree.editstep(oItem,cText,this.oModel.GetStepIgnoreStatus(nStepID))
 			oModel.EditStepName(nStepID,cText)
 		}		
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func DeleteStepAction
 		if not IsCommentOrRoot() {
@@ -160,6 +232,12 @@ class GoalDesignerController from WindowsControllerParent
 		# Update the Time Machine
 			UpdateTheTimeMachine()
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func MoveStepUpAction
 		if not IsCommentOrRoot() {
 			# "Can't Move Sub Step Up!"
@@ -184,6 +262,12 @@ class GoalDesignerController from WindowsControllerParent
 			oView.oStepsTree.SetCurrentItem(oItem,0)	
 		}
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func MoveStepDownAction
 		if not IsCommentOrRoot() {
 			# "Can't Move Sub Step Down!"
@@ -207,6 +291,12 @@ class GoalDesignerController from WindowsControllerParent
 			oModel.MoveStepDown(nStepID)	
 			oView.oStepsTree.SetCurrentItem(oItem,0)	
 		}
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func PrintStepsAction
 		Open_Window(:PrintStepsController)
@@ -235,6 +325,12 @@ class GoalDesignerController from WindowsControllerParent
 		# Update the Time Machine
 			UpdateTheTimeMachine()
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func CopyStepsAction
 		if not IsCommentOrRoot() {
 			# "Can't Copy Sub Step!"
@@ -248,6 +344,12 @@ class GoalDesignerController from WindowsControllerParent
 		}
 		oModel.CopyStep(nStepID)
 		oView.oStepsTree.SaveStep(oItem)
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func PasteStepsAction
 		 if not AllowInteractButton() {
@@ -273,13 +375,31 @@ class GoalDesignerController from WindowsControllerParent
 		# Activate the same step (parent)
 			oView.oStepsTree.SetCurrentItem(oParentItem,0)	
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func IncreaseSizeAction
 		oView.oStepsTree.IncreaseFontSize()
 		oView.oStepCode.IncreaseFontSize()
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func DecreaseSizeAction
 		oView.oStepsTree.DecreaseFontSize()
 		oView.oStepCode.DecreaseFontSize()
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func IgnoreStepAction	
 		if not IsCommentOrRoot() {
@@ -291,6 +411,12 @@ class GoalDesignerController from WindowsControllerParent
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
 		nIgnore = oModel.IgnoreStep(nStepID)
 		oView.oStepsTree.IgnoreStep(oItem,nIgnore)
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func StepChangedAction
 		oItem  = oView.oStepsTree.currentItem()
@@ -313,6 +439,12 @@ class GoalDesignerController from WindowsControllerParent
 			oView.oStepCode.setText(oModel.GetStepCode(nStepID))
 			oView.oStepCode.setEnabled(True)
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func StepCodeChangedAction
 		oItem  = oView.oStepsTree.currentItem()
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
@@ -321,12 +453,30 @@ class GoalDesignerController from WindowsControllerParent
 		}	
 		oModel.SaveStepCode(nStepID,oView.oStepCode.ToPlainText())
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func SearchAction
 		Open_Window(:FindStepController)
 		Last_Window().setParentObject(self)
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func ChangeTimeMachinePointAction
 		oTMController.ChangeTimeMachinePoint(oView,oModel)
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func TreeKeyPress
 		nKey = oView.oTreeFilter.getkeycode()
@@ -339,6 +489,12 @@ class GoalDesignerController from WindowsControllerParent
 			}
 		}
 		oView.oTreeFilter.setEventOutput(False)
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func KeyPress
 		nKey = oView.oFilter.getkeycode()
@@ -392,6 +548,12 @@ class GoalDesignerController from WindowsControllerParent
 		}
 		oView.oTreeFilter.setEventOutput(False)
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func NewFileAction
 		# Set the file Name
 			new qfiledialog(oView.win) {
@@ -410,8 +572,20 @@ class GoalDesignerController from WindowsControllerParent
 		# Update the Time Machine
 			UpdateTheTimeMachine()
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func SaveCurrentFileAction
 		SaveFileAction2()
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func SaveFileAction
 		# Set the file Name
@@ -424,6 +598,12 @@ class GoalDesignerController from WindowsControllerParent
 		# Set the docable widget title
 			oView.win.ParentWidget().setWindowTitle(cFileName)
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func SaveFileAction2
 		oVisualSourceFile.RemoveFile()
 		oVisualSourceFile.Open()
@@ -434,6 +614,12 @@ class GoalDesignerController from WindowsControllerParent
 		oVisualSourceFile.CreateTables()
 		oVisualSourceFile.SaveTables()
 		oVisualSourceFile.Close()
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func OpenFileAction
 		oView.oStepsTree.DisableEvents()
@@ -447,6 +633,12 @@ class GoalDesignerController from WindowsControllerParent
 		oView.oStepsTree.EnableEvents()
 		# Set the docable widget title
 			oView.win.ParentWidget().setWindowTitle(cFileName)
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func OpenFileAction2
 		# Get Data From the Visual Source File
@@ -482,6 +674,12 @@ class GoalDesignerController from WindowsControllerParent
 		oView.oStepsTree.blockSignals(False)
 		oView.oStepsTree.oFirstStep.SetExpanded(True)
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func InteractAction
 		 if not AllowInteractButton() {
 			# "Can't start new Interaction from this step!"
@@ -502,12 +700,30 @@ class GoalDesignerController from WindowsControllerParent
 		}
 		return True
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func ComponentsBrowserWindow
 		return GetObjectByID(nComponentsBrowserWindowID)
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func ComponentsBrowserClosed
 		lIsComponentsBrowserOpened = False
 		oView.widgetCB.Hide()
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func ModifyAction
 		# Get the Selected Step
@@ -541,11 +757,23 @@ class GoalDesignerController from WindowsControllerParent
 				nInteractionPagesToModifyCount++
 			}
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func InteractionPageToModifyClosed
 		nInteractionPagesToModifyCount--
 		if nInteractionPagesToModifyCount = 0 {
 			oView.widgetVPages.Hide()
 		}
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func AllowInteractButton
 		oItem  = oView.oStepsTree.currentItem()
@@ -558,6 +786,12 @@ class GoalDesignerController from WindowsControllerParent
 		}
 		return False
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func IsCommentOrRoot
 		oItem  = oView.oStepsTree.currentItem()
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
@@ -569,6 +803,12 @@ class GoalDesignerController from WindowsControllerParent
 		}
 		return False
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func IsComment
 		oItem  = oView.oStepsTree.currentItem()
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
@@ -579,8 +819,20 @@ class GoalDesignerController from WindowsControllerParent
 		}
 		return False
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func IsGeneratedStep
 		return not IsComment()
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func IsMoveUp
 		oItem  = oView.oStepsTree.currentItem()
@@ -591,6 +843,12 @@ class GoalDesignerController from WindowsControllerParent
 			return False
 		}
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func IsMoveDown
 		oItem  = oView.oStepsTree.currentItem()
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
@@ -599,6 +857,12 @@ class GoalDesignerController from WindowsControllerParent
 		else
 			return False
 		}
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func TreeNodeChangedAction
 		oView.BtnInteract.setEnabled(AllowInteractButton())
@@ -621,14 +885,38 @@ class GoalDesignerController from WindowsControllerParent
 		oView.BtnIgnore.setEnabled(IsCommentOrRoot())
 		oView.BtnModify.setEnabled(IsGeneratedStep())
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func DebugAction
 		oProgramController.Debug(self)
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func RunAction
 		oProgramController.Run(self)
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func RunGUIAction
 		oProgramController.RunGUI(self)
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func FontAction
 		oFontDialog = new qfontdialog() {
@@ -643,6 +931,12 @@ class GoalDesignerController from WindowsControllerParent
 			oView.oStepsTree.UpdateFontSize()
 		}	
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func SetFontName   
 		oFont = new qfont("",0,0,0)
 		oFont.FromString(cFont)
@@ -650,10 +944,22 @@ class GoalDesignerController from WindowsControllerParent
 		oView.oStepsTree.setFontObject(oFont)
 		oView.oStepsTree.nFontSize  = oFont.PointSize()
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func ActivateWindowAction	
 		if IsParent() {
 			parent().setParentObject(self)		 
 		}
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func CloseFileAction
 		# Remove the current Steps From the Tree Control
@@ -669,8 +975,20 @@ class GoalDesignerController from WindowsControllerParent
 		# Set the docable widget title
 			oView.win.ParentWidget().setWindowTitle("Goal Designer")
 
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
+
 	func IsFileOpened
 		return oVisualSourceFile.IsFileOpened()
+
+	/*
+		Purpose : 
+		Parameters :
+		Output : 
+	*/
 
 	func IsFileEmpty
 		return oModel.IsEmpty()
