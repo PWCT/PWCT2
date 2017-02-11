@@ -69,6 +69,17 @@ class GoalDesignerModel
 		return cText
 
 	func DeleteStep nStepID
+		# Delete Interaction Records
+			DeleteInteractionsRecords(nStepID)
+		# Delete Node
+			oStepsTreeModel.DeleteNode(nStepID)
+
+	/*
+		The next method delete the interactions records for the step and children	
+		Parameters : The Step ID
+		Output : None
+	*/
+	func DeleteInteractionsRecords nStepID 
 		# Delete Interaction Record
 			DeleteInteractionRecord(nStepID)
 		# Delete Interaction Records for Children
@@ -76,8 +87,7 @@ class GoalDesignerModel
 			for x in aChildren {
 				DeleteInteractionRecord(x)
 			}
-		# Delete Node
-			oStepsTreeModel.DeleteNode(nStepID)
+
 
 	func DeleteInteractionRecord nStepID
 		# Get Interaction ID
@@ -106,6 +116,8 @@ class GoalDesignerModel
 		oStepsTreeModel.MoveNodeDown(nStepID)
 
 	func CutStep nStepID
+		# Delete Interaction Records (The Time Machine keep them in a buffer for paste)
+			DeleteInteractionsRecords(nStepID)
 		oStepsTreeModel.CutNode(nStepID)
 
 	func CopyStep nStepID

@@ -213,6 +213,11 @@ class GoalDesignerController from WindowsControllerParent
 		Last_Window().setParentObject(self)
 		Last_Window().ShowData()
 
+	/*
+		The next method cut a step from the Steps Tree
+		Parameters : None
+		Output : None
+	*/
 	func CutStepsAction
 		if not IsCommentOrRoot() {
 			# "Can't Cut Sub Step!"
@@ -227,6 +232,8 @@ class GoalDesignerController from WindowsControllerParent
 		oModel.CutStep(nStepID)
 		oView.oStepsTree.SaveStep(oItem)
 		oItem.parent().takechild(oItem.parent().indexofchild(oItem))
+		# Update the Time Machine
+			UpdateTheTimeMachine()
 
 	func CopyStepsAction
 		if not IsCommentOrRoot() {

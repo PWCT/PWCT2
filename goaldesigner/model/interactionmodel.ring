@@ -12,6 +12,8 @@ class InteractionModel
 			# Interaction Type is C_INTERACTION_USERSTEP or
 			# 			C_INTERACTION_GENERATEDSTEP
 
+	aDeletedInteractions = []	# Required for Cut/Paste Operation
+
 	/*
 		The next method return the ID
 	*/
@@ -84,12 +86,20 @@ class InteractionModel
 	func NewInteractionIDAfterPaste nStepInteractionID
 		# Find the interaction record
 			nPos = find(aList,nStepInteractionID,1)
-		# Check the interaction record
+		# Check deleted interaction record (Cut/Paste) 
 			if nPos = 0 {
-				return nStepInteractionID
+				nPos = find(aDeletedInteractions,nStepInteractionID,1)
+				# Check the interaction record
+				if nPos = 0 {
+					return nStepInteractionID
+				else
+					# Get the interaction record
+					aTempList = aDeletedInteractions[nPos]
+				}
+			else
+				# Get the interaction record
+				aTempList = aList[nPos]
 			}
-		# Get the interaction record
-			aTempList = aList[nPos]
 		# Update the interaction ID
 			nID++		# Increment the ID Counter
 			aTempList[1] = nID
@@ -105,6 +115,8 @@ class InteractionModel
 	func DeleteInteraction nStepInteractionID
 		# Find the interaction record
 			nPos = find(aList,nStepInteractionID,C_INTERACTIONRECORD_ID)
+		# Add the interaction record to the deleted list		
+			aDeletedInteractions + aList[nPos]		
 		# Delete the record
 			if nPos != 0 {		# Check that we have the record
 				Del(aList,nPos)
