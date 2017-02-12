@@ -27,8 +27,8 @@ class StepsColorsController from WindowsControllerParent
 		}	
 
 		if len(r) < 2  { r = "0" + r }
-		if len(g) < 2  { g = "0" + r }
-		if len(b) < 2  { b = "0" + r }
+		if len(g) < 2  { g = "0" + g }
+		if len(b) < 2  { b = "0" + b }
 
 		cColor = "#" + r + g + b
 
