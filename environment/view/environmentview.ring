@@ -24,6 +24,10 @@ class EnvironmentView from WindowsViewParent
 			oDockGoalDesigner = self.CreateGoalDesigner(win)
 			setwinicon(win,"images/pwct.png")
 			showmaximized()	
+			oFilter = new qAllevents(win) {
+				setcloseevent(Method(:QuitAction))
+			}
+			installeventfilter(oFilter)
 		}
 
 	/*
