@@ -12,9 +12,9 @@ class ComponentsBrowserController from WindowsControllerParent
 	cComponentsPath = C_CB_COMPONENTSPATH # "vpl/ringpwct/"
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Key Press Action
+		Parameters : None
+		Output : None
 	*/
 
 	func KeyPressAction
@@ -27,9 +27,9 @@ class ComponentsBrowserController from WindowsControllerParent
 		}
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Enter Press Action
+		Parameters : None
+		Output : None
 	*/
 
 	func EnterPressAction
@@ -39,9 +39,9 @@ class ComponentsBrowserController from WindowsControllerParent
 		}
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Add Components to the List
+		Parameters : None
+		Output : None
 	*/
 
 	func AddComponents
@@ -62,9 +62,9 @@ class ComponentsBrowserController from WindowsControllerParent
 		}
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Search in the Components list
+		Parameters : None
+		Output : None
 	*/
 
 	func SearchAction
@@ -92,9 +92,9 @@ class ComponentsBrowserController from WindowsControllerParent
 		}
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Open the Selected component to use it
+		Parameters : None
+		Output : None
 	*/
 
 	func SelectAction
@@ -121,9 +121,9 @@ class ComponentsBrowserController from WindowsControllerParent
 		}
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Show the components browser window and activate search textBox
+		Parameters : None
+		Output : None
 	*/
 
  	func Start
@@ -132,9 +132,9 @@ class ComponentsBrowserController from WindowsControllerParent
 		oView.oTextSearch.SetFocus(0)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Close the window
+		Parameters : None
+		Output : None
 	*/
 
 	func CloseAction
