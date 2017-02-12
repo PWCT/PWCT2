@@ -68,7 +68,6 @@ class StepsColorsView from WindowsViewParent
 			Addwidget(btnAllowInteractionbackcolor)			
 		}
 
-
 		# Step Type : GeneratedLeaf
 
 		labelLeaf =  new qlabel(win) {
@@ -88,12 +87,31 @@ class StepsColorsView from WindowsViewParent
 			Addwidget(btnLeafbackcolor)			
 		}
 
-							
+		# Step Type : Written Data
+
+		labelData =  new qlabel(win) {
+			setText(" Written Data In Interaction Pages")
+			setFixedWidth(300)
+		}
+		btnDataText = new qpushbutton(win) {
+			setText("TextColor")
+		}
+		btnDatabackcolor = new qpushbutton(win) {
+			setText("BackColor")
+		}
+
+		LayoutHData = new qHboxlayout() {
+			Addwidget(labelData)
+			Addwidget(btnDataText)
+			Addwidget(btnDatabackcolor)			
+		}
+
 		LayoutAll = new qVBoxlayout() {
 			Addlayout(layoutHComment)
 			Addlayout(layoutHRoot)
 			Addlayout(layoutHAllowInteraction)
 			Addlayout(layoutHLeaf)
+			Addlayout(layoutHData)
 		}
 		
 		setLayout(layoutAll)
