@@ -11,6 +11,27 @@ class StepsColorsView from WindowsViewParent
 	
 		setWindowTitle(T_SC_WINDOWTITLE) # "Steps Colors Window"
 
+		# Titles
+
+		labelType =  new qlabel(win) {
+			setText("Step Type")
+			setFixedWidth(300)
+		}
+
+		labelTextColor =  new qlabel(win) {
+			setText("Text Color")
+		}
+
+		labelBackColor =  new qlabel(win) {
+			setText("Back Color")
+		}
+
+		LayoutTitles = new qHboxlayout() {
+			Addwidget(labelType)
+			Addwidget(LabelTextColor)
+			Addwidget(labelbackColor)		
+		}
+
 		# Step Type : Comment 
 
 		labelComment =  new qlabel(win) {
@@ -112,6 +133,7 @@ class StepsColorsView from WindowsViewParent
 		}
 
 		LayoutAll = new qVBoxlayout() {
+			Addlayout(layouttitles)
 			Addlayout(layoutHComment)
 			Addlayout(layoutHRoot)
 			Addlayout(layoutHAllowInteraction)
