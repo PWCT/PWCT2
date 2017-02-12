@@ -21,6 +21,8 @@ Class ComponentControllerParent from WindowsControllerParent
 
 	lAllowInteraction	= False	# The step allow sub steps
 
+	oStyle = new HTMLStyles
+
 	/*
 		Purpose : Create a Step as parent to other steps
 		Parameters : The Step Name as string 

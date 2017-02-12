@@ -25,7 +25,7 @@ class EnvironmentView from WindowsViewParent
 			setwinicon(win,"images/pwct.png")
 			showmaximized()	
 			oFilter = new qAllevents(win) {
-				setcloseevent(Method(:QuitAction))
+				setcloseevent("PWCT_APP.Quit()")
 			}
 			installeventfilter(oFilter)
 		}

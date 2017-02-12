@@ -179,3 +179,8 @@ While oStepsTree contains this methods by inheritance from QWidget class !
 (19) Using Anonymous functions in functions that called as action for events is bad
 	this will let eval() don't delete the byte code after the function call
 	because the anonymous function increase the functions count
+
+(20) here	func CloseAction		
+		PWCT_APP.Quit()
+	we quit directly because closing the window first will delete the object
+ and when this method is called from close event we get error !

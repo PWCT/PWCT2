@@ -126,16 +126,7 @@ class EnvironmentController from WindowsControllerParent
 		Output : None
 	*/
 
-	func CloseAction
-		Super.CloseAction()
-		QuitAction()
-
-	/*
-		Purpose : The next method quit the PWCT environment
-		Parameters : None		
-		Output : None
-	*/
-	func QuitAction
+	func CloseAction		
 		PWCT_APP.Quit()
 
 	/*
