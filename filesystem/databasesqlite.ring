@@ -10,36 +10,36 @@ class DatabaseSQLite
 	oSQLite 
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Init. the object
+		Parameters : None
+		Output :  None
 	*/
 
 	func init
 		oSQLite = sqlite_init()
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Open the Database
+		Parameters : the file name
+		Output : None
 	*/
 
 	func open cFileName
 		SQLite_Open(oSQLite,cFileName)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Execute the query
+		Parameters : The SQL Statement
+		Output : The Query Result
 	*/
 
 	func execute cSQL
 		return SQLite_Execute(oSQLite,cSQL)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Close the database
+		Parameters : None
+		Output : None
 	*/
 
 	func close
