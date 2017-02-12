@@ -20,9 +20,9 @@ class GoalDesignerModel
 			      :steptype = C_STEPTYPE_COMMENT  ])
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Add step
+		Parameters :the Parent ID and the step content list
+		Output : The new step ID
 	*/
 
 	func AddStep nParent,Content
@@ -30,18 +30,18 @@ class GoalDesignerModel
 		return nID
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose :  Edit step name
+		Parameters : The step ID and the new Step Name
+		Output : None
 	*/
 
 	func EditStepName nStepID,cStepName
 		oStepsTreeModel.GetNodeContent(nStepID)[:name] = cStepName
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose :  Get Step Name
+		Parameters : The Step ID
+		Output : The Step Name
 	*/
 
 	func GetStepName nStepID
@@ -60,9 +60,9 @@ class GoalDesignerModel
 		return not aContent[:active] 
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose :  Get the Step Code
+		Parameters : The step ID
+		Output : The step code
 	*/
 
 	func GetStepCode nStepID
@@ -70,9 +70,9 @@ class GoalDesignerModel
 		return aContent[:code] 
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Get Step Type
+		Parameters : The Step ID as Number
+		Output : The Step Type as Number
 	*/
 
 	func GetStepType nStepID
@@ -80,9 +80,9 @@ class GoalDesignerModel
 		return aContent[:steptype] 
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Print Steps to Console Window
+		Parameters : None
+		Output : None
 	*/
 
 	func PrintSteps
@@ -93,9 +93,9 @@ class GoalDesignerModel
 		}
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Get the Steps Tree Text
+		Parameters : None
+		Output : The steps Tree Text as String
 	*/
 
 	func StepsTreeText
@@ -108,9 +108,9 @@ class GoalDesignerModel
 		return cText
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Get the Steps Tree Code
+		Parameters : None
+		Output : Steps Tree Code as String
 	*/
 
 	func StepsTreeCode
@@ -123,9 +123,9 @@ class GoalDesignerModel
 		return cText
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Delete Step
+		Parameters : The Step ID as Number
+		Output :  None
 	*/
 
 	func DeleteStep nStepID
@@ -149,9 +149,9 @@ class GoalDesignerModel
 			}
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Delete Interaction record
+		Parameters : the step ID
+		Output : None
 	*/
 
 	func DeleteInteractionRecord nStepID
@@ -161,9 +161,9 @@ class GoalDesignerModel
 			oInteractionModel.DeleteInteraction(nIID)
 	
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Get Interaction record ID
+		Parameters : THE Step ID as Number
+		Output : Interaction ID as Number
 	*/
 
 	func GetInteractionID nStepID
@@ -174,9 +174,9 @@ class GoalDesignerModel
 		return nIID
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Get the Interaction Component
+		Parameters : The Interaction ID
+		Output : Interaction component as string
 	*/
 
 	func GetInteractionComponent nIID
@@ -192,27 +192,27 @@ class GoalDesignerModel
 		return oInteractionModel.GetInteractionVariablesValues(nIID)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Move Step Up
+		Parameters : The step ID
+		Output : None
 	*/
 
 	func MoveStepUp nStepID
 		oStepsTreeModel.MoveNodeUp(nStepID)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Move Step Down
+		Parameters : The Step ID
+		Output : None
 	*/
 
 	func MoveStepDown nStepID
 		oStepsTreeModel.MoveNodeDown(nStepID)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Cut Step
+		Parameters : The Step ID
+		Output : None
 	*/
 
 	func CutStep nStepID
@@ -221,18 +221,18 @@ class GoalDesignerModel
 		oStepsTreeModel.CutNode(nStepID)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Copy Step
+		Parameters : The Step ID
+		Output : None
 	*/
 
 	func CopyStep nStepID
 		oStepsTreeModel.CopyNode(nStepID)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Paste Step
+		Parameters : The Parent Step ID
+		Output : None
 	*/
 
 	func PasteStep nParentStepID
@@ -243,6 +243,8 @@ class GoalDesignerModel
 		The next method update the Interaction IDs of the buffer (Used for Paste)
 		We will keep a list of the updated IDs to be used when the steps
 		Share the same interaction ID 
+		Parameters : None		
+		Output : None
 		
 	*/
 	func UpdateInteractionIDs 
@@ -262,9 +264,9 @@ class GoalDesignerModel
 
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Get the buffer list
+		Parameters : None
+		Output : The buffer list
 	*/
 
 	func GetBuffer
@@ -272,6 +274,8 @@ class GoalDesignerModel
 
 	/*
 		The next function  ignore step (Enable/Disable step)
+		Parameters : The Step ID
+		Output : True/False (not Active Status)
 	*/
 	func IgnoreStep nStepID
 		# The Active Status is the reverse of the Ignore Status
@@ -287,6 +291,8 @@ class GoalDesignerModel
 
 	/*
 		The next function save the step code
+		Parameters : The step ID and the step code
+		Output : None
 	*/
 	func SaveStepCode nStepID,cCode
 		oStepsTreeModel.GetNodeContent(nStepID)[:code]  = cCode
@@ -294,6 +300,8 @@ class GoalDesignerModel
 	/*
 		The next method get steps in interaction range (min,max) value
 		And set the visible attribute (True/False) using lVisible Parameter
+		Parameters : Interaction ID Min , Interaction ID Maximum , Logical Visible
+		Output : Sub Steps Tree List
 	*/
 	func GetStepsInTimeRange nIIDMin,nIIDMax,lVisible
 		aList = oStepsTreeModel.GetData()
@@ -310,9 +318,9 @@ class GoalDesignerModel
 		return aList
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Get Step ID By Interaction ID
+		Parameters : The Interaction ID and the Step Number (Order)
+		Output : The Step ID
 	*/
 
 	func GetStepIDbyIID nIID,nStepNumber
@@ -326,9 +334,9 @@ class GoalDesignerModel
 		}
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Is Steps Tree Empty?
+		Parameters : None
+		Output : True/False 
 	*/
 
 	func IsEmpty

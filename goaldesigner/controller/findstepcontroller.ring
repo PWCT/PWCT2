@@ -116,8 +116,8 @@ class FindStepController from WindowsControllerParent
 
 	/*
 		Purpose : Search Key Press Action
-		Parameters :
-		Output : 
+		Parameters : None
+		Output : None
 	*/
 
 	func SearchKeyPressAction
