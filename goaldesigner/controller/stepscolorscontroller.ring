@@ -34,13 +34,23 @@ class StepsColorsController from WindowsControllerParent
 
 		switch nBtnNumber {
 			case 1
+				oView.btnCommentText.setstylesheet("background-color: #"+cColor)
 			case 2
+				oView.btnCommentBackColor.setstylesheet("background-color: #"+cColor)
 			case 3
+				oView.btnRootText.setstylesheet("background-color: #"+cColor)
 			case 4
+				oView.btnRootBackColor.setstylesheet("background-color: #"+cColor)
 			case 5
+				oView.btnAllowInteractionText.setstylesheet("background-color: #"+cColor)
 			case 6
+				oView.btnAllowInteractionBackColor.setstylesheet("background-color: #"+cColor)
 			case 7
+				oView.btnLeafText.setstylesheet("background-color: #"+cColor)
 			case 8
+				oView.btnLeafBackColor.setstylesheet("background-color: #"+cColor)
 			case 9
+				oView.btnDataText.setstylesheet("background-color: #"+cColor)
 			case 10
+				oView.btnDataBackColor.setstylesheet("background-color: #"+cColor)
 		}
