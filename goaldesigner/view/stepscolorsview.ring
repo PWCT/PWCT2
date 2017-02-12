@@ -68,11 +68,32 @@ class StepsColorsView from WindowsViewParent
 			Addwidget(btnAllowInteractionbackcolor)			
 		}
 
+
+		# Step Type : GeneratedLeaf
+
+		labelLeaf =  new qlabel(win) {
+			setText(" The generated step is Leaf")
+			setFixedWidth(300)
+		}
+		btnLeafText = new qpushbutton(win) {
+			setText("TextColor")
+		}
+		btnLeafbackcolor = new qpushbutton(win) {
+			setText("BackColor")
+		}
+
+		LayoutHLeaf = new qHboxlayout() {
+			Addwidget(labelLeaf)
+			Addwidget(btnLeafText)
+			Addwidget(btnLeafbackcolor)			
+		}
+
 							
 		LayoutAll = new qVBoxlayout() {
 			Addlayout(layoutHComment)
 			Addlayout(layoutHRoot)
-			Addlayout(layouthAllowInteraction)
+			Addlayout(layoutHAllowInteraction)
+			Addlayout(layoutHLeaf)
 		}
 		
 		setLayout(layoutAll)
