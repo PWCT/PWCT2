@@ -820,18 +820,18 @@ class GoalDesignerController from WindowsControllerParent
 		return False
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Check is Generated Step
+		Parameters : None
+		Output : None
 	*/
 
 	func IsGeneratedStep
 		return not IsComment()
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Check Is Move Up
+		Parameters : None
+		Output : True/False
 	*/
 
 	func IsMoveUp
@@ -844,9 +844,9 @@ class GoalDesignerController from WindowsControllerParent
 		}
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Check Is Move Down
+		Parameters : None
+		Output : True/False
 	*/
 
 	func IsMoveDown
@@ -859,9 +859,9 @@ class GoalDesignerController from WindowsControllerParent
 		}
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Tree Node Changed Action
+		Parameters : None
+		Output : None
 	*/
 
 	func TreeNodeChangedAction
@@ -886,36 +886,36 @@ class GoalDesignerController from WindowsControllerParent
 		oView.BtnModify.setEnabled(IsGeneratedStep())
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Debug Action
+		Parameters : None
+		Output : None
 	*/
 
 	func DebugAction
 		oProgramController.Debug(self)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Run Action
+		Parameters : None
+		Output : None
 	*/
 
 	func RunAction
 		oProgramController.Run(self)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Run GUI Action
+		Parameters : None
+		Output : None
 	*/
 
 	func RunGUIAction
 		oProgramController.RunGUI(self)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Font Action
+		Parameters : None
+		Output : None
 	*/
 
 	func FontAction
@@ -932,9 +932,9 @@ class GoalDesignerController from WindowsControllerParent
 		}	
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Set Font Name
+		Parameters : None
+		Output : None
 	*/
 
 	func SetFontName   
@@ -945,9 +945,9 @@ class GoalDesignerController from WindowsControllerParent
 		oView.oStepsTree.nFontSize  = oFont.PointSize()
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Activate Window Action
+		Parameters : None
+		Output : None
 	*/
 
 	func ActivateWindowAction	
@@ -956,9 +956,9 @@ class GoalDesignerController from WindowsControllerParent
 		}
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Close File Action
+		Parameters : None
+		Output : None
 	*/
 
 	func CloseFileAction
@@ -976,18 +976,18 @@ class GoalDesignerController from WindowsControllerParent
 			oView.win.ParentWidget().setWindowTitle("Goal Designer")
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : IsFileOpened
+		Parameters : None
+		Output : None
 	*/
 
 	func IsFileOpened
 		return oVisualSourceFile.IsFileOpened()
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Is File Empty
+		Parameters : None
+		Output : None
 	*/
 
 	func IsFileEmpty
