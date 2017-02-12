@@ -18,6 +18,7 @@ class StepsColorsController from WindowsControllerParent
 	func colorAction nBtnNumber
 
 		new qcolordialog() { 
+			setwindowflags(Qt_WindowStaysOnTopHint) 
 			r = exec()		
 			if r = 0 return ok
 			oColor = currentcolor()

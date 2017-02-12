@@ -120,16 +120,16 @@ class EnvironmentView from WindowsViewParent
 					settext(T_ENV_MENU_FONT) # "Font"
 					setclickevent(Method(:FontAction))
 				}
-				addseparator()
 				addaction(oAction)
+				addseparator()
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Alt+c"))
 					setbtnimage(self,"images/colors.png")
 					settext(T_ENV_MENU_COLORS) # "Colors"
 					setclickevent(Method(:ColorsAction))
 				}
-				addseparator()
 				addaction(oAction)
+				addseparator()
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+f"))
 					setbtnimage(self,"images/search.png")
