@@ -41,9 +41,11 @@ class StepsColorsView from WindowsViewParent
 		}
 		btnCommentText = new qpushbutton(win) {
 			setText(" :: ")
+			setStyleSheet("background-color:" + C_STEPCOLOR_COMMENT_TEXT )
 		}
 		btnCommentbackcolor = new qpushbutton(win) {
 			setText(" :: ")
+			setStyleSheet("background-color:" + C_STEPCOLOR_COMMENT_BACKCOLOR )
 		}
 
 		LayoutHComment = new qHboxlayout() {
@@ -60,9 +62,11 @@ class StepsColorsView from WindowsViewParent
 		}
 		btnRootText = new qpushbutton(win) {
 			setText(" :: ")
+			setStyleSheet("background-color:" + C_STEPCOLOR_ROOT_TEXT )
 		}
 		btnRootbackcolor = new qpushbutton(win) {
 			setText(" :: ")
+			setStyleSheet("background-color:" + C_STEPCOLOR_ROOT_BACKCOLOR )
 		}
 
 		LayoutHRoot = new qHboxlayout() {
@@ -79,9 +83,11 @@ class StepsColorsView from WindowsViewParent
 		}
 		btnAllowInteractionText = new qpushbutton(win) {
 			setText(" :: ")
+			setStyleSheet("background-color:" + C_STEPCOLOR_ALLOWINTERACTION_TEXT )
 		}
 		btnAllowInteractionbackcolor = new qpushbutton(win) {
 			setText(" :: ")
+			setStyleSheet("background-color:" + C_STEPCOLOR_ALLOWINTERACTION_BACKCOLOR )
 		}
 
 		LayoutHAllowInteraction = new qHboxlayout() {
@@ -98,9 +104,11 @@ class StepsColorsView from WindowsViewParent
 		}
 		btnLeafText = new qpushbutton(win) {
 			setText(" :: ")
+			setStyleSheet("background-color:" + C_STEPCOLOR_INFO_TEXT )
 		}
 		btnLeafbackcolor = new qpushbutton(win) {
 			setText(" :: ")
+			setStyleSheet("background-color:" + C_STEPCOLOR_INFO_BACKCOLOR )
 		}
 
 		LayoutHLeaf = new qHboxlayout() {
@@ -117,9 +125,11 @@ class StepsColorsView from WindowsViewParent
 		}
 		btnDataText = new qpushbutton(win) {
 			setText(" :: ")
+			setStyleSheet("background-color:" + C_STEPCOLOR_DATA_TEXT )
 		}
 		btnDatabackcolor = new qpushbutton(win) {
 			setText(" :: ")
+			setStyleSheet("background-color:" + C_STEPCOLOR_DATA_BACKCOLOR )
 		}
 
 		LayoutHData = new qHboxlayout() {
