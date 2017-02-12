@@ -1,4 +1,4 @@
-﻿/* 
+/* 
 **	Project : Programming Without Coding Technology (PWCT) Version 2.0
 ** 	File Purpose : Translation File
 ** 	Language : Arabic
@@ -139,7 +139,7 @@
 	T_SC_BACKCOLOR = "لون الخلفية"
 	T_SC_TYPECOMMENT = "خطوات التعليقات"
 	T_SC_TYPEROOT = "الخطوات الاولى الناتجة من المكونات"
-	T_SC_TYPEALLOW = "الخطوات الناتجة التى تسمع ببداية التفاعل "
+	T_SC_TYPEALLOW = "الخطوات الناتجة التى تسمح ببداية التفاعل "
 	T_SC_TYPELEAF = "الخطوات التى لا تحتوى على خطوات فرعية"
 	T_SC_TYPEDATA = "البيانات المدخلة فى شاشات التفاعل "
 	T_SC_CLOSE = "إغلاق"
