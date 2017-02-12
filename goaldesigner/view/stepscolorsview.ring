@@ -106,12 +106,18 @@ class StepsColorsView from WindowsViewParent
 			Addwidget(btnDatabackcolor)			
 		}
 
+		btnClose = new qpushbutton(win) {
+			setText("Close")
+			setclickevent(Method(:closeAction))
+		}
+
 		LayoutAll = new qVBoxlayout() {
 			Addlayout(layoutHComment)
 			Addlayout(layoutHRoot)
 			Addlayout(layoutHAllowInteraction)
 			Addlayout(layoutHLeaf)
 			Addlayout(layoutHData)
+			AddWidget(btnClose)
 		}
 		
 		setLayout(layoutAll)
