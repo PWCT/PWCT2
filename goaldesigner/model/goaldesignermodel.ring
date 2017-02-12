@@ -344,3 +344,25 @@ class GoalDesignerModel
 			return True
 		}
 		return False
+
+	/*
+		Purpose : Remove HTML Tags from Step Name
+		Parameters : Step Name As String 
+		Output : Step name as String 
+	*/
+	func RemoveTags cStr
+		cOutput = ""
+		lTagStart = False 
+		for x = 1 to len(cStr) { 
+			if lTagStart and cStr[x] = ">" {
+				lTagStart = False
+				loop 
+			}
+			if lTagStart { Loop }
+			if cLetter cStr[x] = "<" {
+				lTagStart = True
+				loop 
+			}
+			cOutput += cStr[x]
+		}
+		return cOutput
