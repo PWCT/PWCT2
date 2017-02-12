@@ -11,7 +11,7 @@ Class IfStatementComponentController from ComponentControllerParent
 
 	func GenerateAction 
 
-		NewParentStep(T_CT_IFSTATEMENT_ST_IF + oStyle.text(   Variable(:condition) ,:green,"")  )  # "If "
+		NewParentStep(T_CT_IFSTATEMENT_ST_IF + StyleData(Variable(:condition) )  )  # "If "
 			SetStepCode("if " +  Variable(:condition) + " { " )
 			AllowInteraction()
 			NewStep(T_CT_IFSTATEMENT_ST_STARTHERE) # "Start Here"

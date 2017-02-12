@@ -11,7 +11,7 @@ Class GetInputComponentController from ComponentControllerParent
 
 	func GenerateAction 
 
-		NewStep(T_CT_GETINPUT_ST_INPUT + oStyle.text(  Variable(:text),:green,"")    )  # "Input " 
+		NewStep(T_CT_GETINPUT_ST_INPUT + StyleData(  Variable(:text) )  ) # "Input " 
 		SetStepCode("Give " + Variable(:text) )	
 
 class GetInputComponentView from ComponentViewParent

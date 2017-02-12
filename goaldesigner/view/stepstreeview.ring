@@ -194,17 +194,17 @@ class StepsTreeView from TreeControl
 	func SetStepColor nStepType
 		switch nStepType {
 		case C_STEPTYPE_COMMENT
-			cColor = "green"
-			cBackColor = ""
+			cColor = C_STEPCOLOR_COMMENT_TEXT 				# "green"
+			cBackColor = C_STEPCOLOR_COMMENT_BACKCOLOR			# ""
 		case C_STEPTYPE_ROOT
-			cColor = "blue"
-			cBackColor = ""
+			cColor = C_STEPCOLOR_ROOT_TEXT 					# "blue"
+			cBackColor = C_STEPCOLOR_ROOT_BACKCOLOR 			# ""
 		case C_STEPTYPE_ALLOWINTERACTION
-			cColor = "black"
-			cBackColor = "yellow"
+			cColor = C_STEPCOLOR_ALLOWINTERACTION_TEXT 			#"black"
+			cBackColor = C_STEPCOLOR_ALLOWINTERACTION_BACKCOLOR 	#"yellow"
 		case C_STEPTYPE_INFO
-			cColor = "black"
-			cBackColor = ""
+			cColor = C_STEPCOLOR_INFO_TEXT					# "black"
+			cBackColor = C_STEPCOLOR_INFO_BACKCOLOR			# ""
 		}
 
 	func currentitem

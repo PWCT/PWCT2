@@ -11,7 +11,7 @@ Class PrintComponentController from ComponentControllerParent
 
 	func GenerateAction 
 
-		NewStep( T_CT_PRINT_ST_PRINT + oStyle.text(  Variable(:text) ,"green","" )  ) # "Print " 
+		NewStep( T_CT_PRINT_ST_PRINT + StyleData(  Variable(:text) ) ) # "Print " 
 		if Variable(:type) = 1 {
 			SetStepCode("See " + CHAR(34) + Variable(:text) + CHAR(34) )
 		else

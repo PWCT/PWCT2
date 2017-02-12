@@ -287,6 +287,12 @@ Class ComponentControllerParent from WindowsControllerParent
 		}
 		Super.CloseAction()
 
+
+	/*
+	*/
+	func StyleData cText 
+		return oStyle.text(  cText,C_STEPCOLOR_DATA_TEXT,C_STEPCOLOR_DATA_BACKCOLOR) 
+
 	/*
 		Purpose : Generate Action (To be written in the component)
 		Parameters : None
