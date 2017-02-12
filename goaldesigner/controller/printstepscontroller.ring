@@ -10,9 +10,9 @@ class PrintStepsController from WindowsControllerParent
 	oView = new PrintStepsView
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Show the data 
+		Parameters : None
+		Output :  None 
 	*/
 
 	func ShowData
@@ -20,9 +20,9 @@ class PrintStepsController from WindowsControllerParent
 		oView.oStepsCode.setText(Parent().oModel.StepsTreeCode())
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Print Steps Tree 
+		Parameters : None
+		Output : None
 	*/
 
 	func PrintStepsTreeAction
@@ -34,9 +34,9 @@ class PrintStepsController from WindowsControllerParent
 		system("start StepsTree.pdf")
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Print Source Code
+		Parameters : None
+		Output : None 
 	*/
 
 	func PrintSourceCodeAction
@@ -48,9 +48,9 @@ class PrintStepsController from WindowsControllerParent
 		system("start StepsCode.pdf")
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Key Press Action
+		Parameters : None
+		Output : None 
 	*/
 
 	func KeyPressAction

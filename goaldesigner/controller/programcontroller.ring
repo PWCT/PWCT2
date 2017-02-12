@@ -15,9 +15,9 @@ Class ProgramController
 	cRunGUIBatch = "run2"
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Debug
+		Parameters : Goal Designer Object
+		Output :  None
 	*/
 
 	func Debug oGD
@@ -25,9 +25,9 @@ Class ProgramController
 		RunBatch(cDebugBatch,"")
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Run
+		Parameters : Goal Designer Object
+		Output :  None
 	*/
 
 	func Run oGD
@@ -35,9 +35,9 @@ Class ProgramController
 		RunBatch(cRunBatch,"")
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Run GUI Application
+		Parameters : goal designer object
+		Output :  None
 	*/
 
 	func RunGUI oGD
@@ -47,9 +47,9 @@ Class ProgramController
 	private
 
 		/*
-			Purpose : 
-			Parameters :
-			Output : 
+			Purpose : Prepare the file
+			Parameters : Goal Designer Object
+			Output : None
 		*/
 
 		func Prepare oGD
@@ -59,27 +59,27 @@ Class ProgramController
 				SaveToFile()
 
 		/*
-			Purpose : 
-			Parameters :
-			Output : 
+			Purpose : Get the Source Code
+			Parameters : Goal Designer Object
+			Output : the source code
 		*/
 
 		func GetCode oGD
 			cSourceCode = oGD.oModel.StepsTreeCode()
 
 		/*
-			Purpose : 
-			Parameters :
-			Output : 
+			Purpose : Save to file
+			Parameters : None
+			Output : None
 		*/
 
 		func SaveToFile
 			write(cFileName,cSourceCode)
 
 		/*
-			Purpose : 
-			Parameters :
-			Output : 
+			Purpose : Run Batch File
+			Parameters : The file Name and parameters
+			Output : None
 		*/
 
 		func RunBatch cFile,cPara

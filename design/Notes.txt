@@ -175,3 +175,7 @@ While oStepsTree contains this methods by inheritance from QWidget class !
 					setclickevent(Method(:NewAction))
 					settooltip("New File")
 				} ,
+
+(19) Using Anonymous functions in functions that called as action for events is bad
+	this will let eval() don't delete the byte code after the function call
+	because the anonymous function increase the functions count

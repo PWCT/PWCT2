@@ -8,9 +8,9 @@
 class TimeMachineController
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Time Machine Goto Present
+		Parameters : View Object and Model Object
+		Output : None
 	*/
 
 	func TimeMachineGotoPresent oView,oModel
@@ -28,9 +28,9 @@ class TimeMachineController
 		}
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Change Time Machine Point
+		Parameters : View Object and Model Object
+		Output : None
 	*/
 
 	func ChangeTimeMachinePoint oView,oModel
@@ -94,6 +94,8 @@ class TimeMachineController
 		One	- First Interaction
 		After we get the step One (First Interaction) we need to insert the
 		Step Two Before it (Second Interaction)
+		Parameters : View Object, Model Object, Parent Step ID, Step ID and Step Interaction ID
+		Output : True/False
 	*/
 	func CheckInsertStep oView,oModel,nParentID,nStepID,nStepIID
 		# Get the Next step after this step
