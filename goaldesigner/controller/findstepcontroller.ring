@@ -12,9 +12,9 @@ class FindStepController from WindowsControllerParent
 	aStepIDResult = [] # Array contains the IDs of the search result
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Find Value Action
+		Parameters : None
+		Output : None
 	*/
 
 	func FindValueAction
@@ -41,9 +41,9 @@ class FindStepController from WindowsControllerParent
 		}
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Item Selected Action
+		Parameters : None
+		Output : None
 	*/
 
 	func ItemSelectedAction
@@ -69,9 +69,9 @@ class FindStepController from WindowsControllerParent
 		}		
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Replace Action
+		Parameters : None
+		Output : None
 	*/
 
 	func ReplaceAction
@@ -81,9 +81,9 @@ class FindStepController from WindowsControllerParent
 		ReplaceStep(nStepID)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Replace Step 
+		Parameters : The Step ID
+		Output :  None
 	*/
 
 	func ReplaceStep nStepID
@@ -103,9 +103,9 @@ class FindStepController from WindowsControllerParent
 		oView.oListResult.Item(find(aStepIDResult,nStepID)-1).SetText(cText)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose :  Replace All Action
+		Parameters : None
+		Output :  None
 	*/
 
 	func ReplaceAllAction
@@ -115,7 +115,7 @@ class FindStepController from WindowsControllerParent
 		}
 
 	/*
-		Purpose : 
+		Purpose : Search Key Press Action
 		Parameters :
 		Output : 
 	*/
