@@ -56,4 +56,6 @@ class StepsColorsView from WindowsViewParent
 		}
 		
 		setLayout(layoutAll)
+
+		setwindowflags(Qt_CustomizeWindowHint | Qt_WindowTitleHint | Qt_WindowStaysOnTopHint) 
 	}
