@@ -30,27 +30,37 @@ class StepsColorsController from WindowsControllerParent
 		if len(g) < 2  { g = "0" + r }
 		if len(b) < 2  { b = "0" + r }
 
-		cColor = r + g + b
+		cColor = "#" + r + g + b
 
 		switch nBtnNumber {
 			case 1
-				oView.btnCommentText.setstylesheet("background-color: #"+cColor)
+				oView.btnCommentText.setstylesheet("background-color: "+cColor)
+				C_STEPCOLOR_COMMENT_TEXT = cColor
 			case 2
-				oView.btnCommentBackColor.setstylesheet("background-color: #"+cColor)
+				oView.btnCommentBackColor.setstylesheet("background-color: "+cColor)
+				C_STEPCOLOR_COMMENT_BACKCOLOR = cColor
 			case 3
-				oView.btnRootText.setstylesheet("background-color: #"+cColor)
+				oView.btnRootText.setstylesheet("background-color: "+cColor)
+				C_STEPCOLOR_ROOT_TEXT = cColor
 			case 4
-				oView.btnRootBackColor.setstylesheet("background-color: #"+cColor)
+				oView.btnRootBackColor.setstylesheet("background-color: "+cColor)
+				C_STEPCOLOR_ROOT_BACKCOLOR = cColor
 			case 5
-				oView.btnAllowInteractionText.setstylesheet("background-color: #"+cColor)
+				oView.btnAllowInteractionText.setstylesheet("background-color: "+cColor)
+				C_STEPCOLOR_ALLOWINTERACTION_TEXT = cColor
 			case 6
-				oView.btnAllowInteractionBackColor.setstylesheet("background-color: #"+cColor)
+				oView.btnAllowInteractionBackColor.setstylesheet("background-color: "+cColor)
+				C_STEPCOLOR_ALLOWINTERACTION_BACKCOLOR = cColor
 			case 7
-				oView.btnLeafText.setstylesheet("background-color: #"+cColor)
+				oView.btnLeafText.setstylesheet("background-color: "+cColor)
+				C_STEPCOLOR_LEAF_TEXT = cColor
 			case 8
-				oView.btnLeafBackColor.setstylesheet("background-color: #"+cColor)
+				oView.btnLeafBackColor.setstylesheet("background-color: "+cColor)
+				C_STEPCOLOR_LEAF_BACKCOLOR = cColor
 			case 9
-				oView.btnDataText.setstylesheet("background-color: #"+cColor)
+				oView.btnDataText.setstylesheet("background-color: "+cColor)
+				C_STEPCOLOR_DATA_TEXT = cColor
 			case 10
-				oView.btnDataBackColor.setstylesheet("background-color: #"+cColor)
+				oView.btnDataBackColor.setstylesheet("background-color: "+cColor)
+				C_STEPCOLOR_DATA_BACKCOLOR = cColor
 		}
