@@ -8,8 +8,8 @@
 ===========================================================
 Status
 	* Bugs Count : 27
-	* Fixed Bugs : 25
-	* UnFixed Bugs : 2
+	* Fixed Bugs : 26
+	* UnFixed Bugs : 1
 ===========================================================
 (1)  Fixed : We created over 6 thouands steps, then using the search window
 after selecting an item in the search result list we get the next error
@@ -945,7 +945,7 @@ Solution when a file is closed we have to change the active file
 Solved by avoiding the destroy to windows when we close dockable widgets
 ====================================================
 
-(27)
+(27) Fixed 
 
 Line 119 Error (R2) : Array Access (Index out of range) !
 In method deleteinteraction() in file goaldesigner/model/interactionmodel.ring
@@ -957,3 +957,4 @@ called from line 1  In qapp_exec In method exec() in file ring_qt.ring
 called from line 98  In function start_environment() in file B:/pwct2/pwct.ring
 called from line 56  in file B:/pwct2/pwct.ring
 
+====================================================
