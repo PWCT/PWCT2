@@ -9,21 +9,22 @@ class StepsColorsView from WindowsViewParent
 
 	win = new qWidget() {
 	
+		setLayoutDirection(T_LAYOUTDIRECTION)
 		setWindowTitle(T_SC_WINDOWTITLE) # "Steps Colors Window"
 
 		# Titles
 
 		labelType =  new qlabel(win) {
-			setText("Step Type")
+			setText(T_SC_STEPTYPE) # "Step Type"
 			setFixedWidth(300)
 		}
 
 		labelTextColor =  new qlabel(win) {
-			setText("Text Color")
+			setText(T_SC_TEXTCOLOR) # "Text Color"
 		}
 
 		labelBackColor =  new qlabel(win) {
-			setText("Back Color")
+			setText(T_SC_BACKCOLOR) # "Back Color"
 		}
 
 		LayoutTitles = new qHboxlayout() {
@@ -35,14 +36,14 @@ class StepsColorsView from WindowsViewParent
 		# Step Type : Comment 
 
 		labelComment =  new qlabel(win) {
-			setText(" This is a comment! ")
+			setText(T_SC_TYPECOMMENT) # " This is a comment! "
 			setFixedWidth(300)
 		}
 		btnCommentText = new qpushbutton(win) {
-			setText("TextColor")
+			setText(" :: ")
 		}
 		btnCommentbackcolor = new qpushbutton(win) {
-			setText("BackColor")
+			setText(" :: ")
 		}
 
 		LayoutHComment = new qHboxlayout() {
@@ -54,14 +55,14 @@ class StepsColorsView from WindowsViewParent
 		# Step Type : Root 
 
 		labelRoot =  new qlabel(win) {
-			setText(" The first step generated from Interaction ")
+			setText(T_SC_TYPEROOT) # " The first step generated from Interaction "
 			setFixedWidth(300)
 		}
 		btnRootText = new qpushbutton(win) {
-			setText("TextColor")
+			setText(" :: ")
 		}
 		btnRootbackcolor = new qpushbutton(win) {
-			setText("BackColor")
+			setText(" :: ")
 		}
 
 		LayoutHRoot = new qHboxlayout() {
@@ -73,14 +74,14 @@ class StepsColorsView from WindowsViewParent
 		# Step Type : Allow Interaction
 
 		labelAllowInteraction =  new qlabel(win) {
-			setText(" The generated step Allows Interaction ")
+			setText(T_SC_TYPEALLOW) # "The generated step Allows Interaction"
 			setFixedWidth(300)
 		}
 		btnAllowInteractionText = new qpushbutton(win) {
-			setText("TextColor")
+			setText(" :: ")
 		}
 		btnAllowInteractionbackcolor = new qpushbutton(win) {
-			setText("BackColor")
+			setText(" :: ")
 		}
 
 		LayoutHAllowInteraction = new qHboxlayout() {
@@ -92,14 +93,14 @@ class StepsColorsView from WindowsViewParent
 		# Step Type : GeneratedLeaf
 
 		labelLeaf =  new qlabel(win) {
-			setText(" The generated step is Leaf")
+			setText(T_SC_TYPELEAF) # "The generated step is Leaf"
 			setFixedWidth(300)
 		}
 		btnLeafText = new qpushbutton(win) {
-			setText("TextColor")
+			setText(" :: ")
 		}
 		btnLeafbackcolor = new qpushbutton(win) {
-			setText("BackColor")
+			setText(" :: ")
 		}
 
 		LayoutHLeaf = new qHboxlayout() {
@@ -111,14 +112,14 @@ class StepsColorsView from WindowsViewParent
 		# Step Type : Written Data
 
 		labelData =  new qlabel(win) {
-			setText(" Written Data In Interaction Pages")
+			setText(T_SC_TYPEDATA) # "Written Data In Interaction Pages"
 			setFixedWidth(300)
 		}
 		btnDataText = new qpushbutton(win) {
-			setText("TextColor")
+			setText(" :: ")
 		}
 		btnDatabackcolor = new qpushbutton(win) {
-			setText("BackColor")
+			setText(" :: ")
 		}
 
 		LayoutHData = new qHboxlayout() {
@@ -128,7 +129,7 @@ class StepsColorsView from WindowsViewParent
 		}
 
 		btnClose = new qpushbutton(win) {
-			setText("Close")
+			setText(T_SC_CLOSE) # "Close"
 			setclickevent(Method(:closeAction))
 		}
 

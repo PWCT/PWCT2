@@ -134,6 +134,15 @@
 # Steps Colors Window
 
 	T_SC_WINDOWTITLE = "Steps Colors Window"
+	T_SC_STEPTYPE = "Step Type"
+	T_SC_TEXTCOLOR = "Text Color"
+	T_SC_BACKCOLOR = "Back Color"
+	T_SC_TYPECOMMENT = "This is a comment!"
+	T_SC_TYPEROOT = "The first step generated from Interaction"
+	T_SC_TYPEALLOW = "The generated step Allows Interaction"
+	T_SC_TYPELEAF = "The generated step is Leaf"
+	T_SC_TYPEDATA = "Written Data In Interaction Pages"
+	T_SC_CLOSE = "Close"
 
 # Components Browser Window
 
