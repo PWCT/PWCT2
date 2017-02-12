@@ -22,9 +22,9 @@ Class ComponentControllerParent from WindowsControllerParent
 	lAllowInteraction	= False	# The step allow sub steps
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Create a Step as parent to other steps
+		Parameters : The Step Name as string 
+		Output : None
 	*/
 
 	func NewParentStep cStep
@@ -39,9 +39,9 @@ Class ComponentControllerParent from WindowsControllerParent
 		parent().oView.oStepsTree.SetCurrentItem(oItem,0)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Create new step (child) in the steps tree 
+		Parameters : The step name as string 
+		Output : None
 	*/
 
 	func NewStep cStep
@@ -55,9 +55,9 @@ Class ComponentControllerParent from WindowsControllerParent
 		AddStep(cStep,nIID,nStepNumber)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Use the goal designer to add new step 
+		Parameters : Step Name, Step ID and the Step Number (Order)
+		Output : None
 	*/
 
 	func AddStep cStep,nIID,nStepNumber
@@ -73,18 +73,18 @@ Class ComponentControllerParent from WindowsControllerParent
 		oItem = parent().AddGeneratedStep(cStep,nIID,nStepNumber,nStepType)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Determine if the generated step will allows interaction or not
+		Parameters : None
+		Output : None
 	*/
 
 	func AllowInteraction
 		lAllowInteraction = True
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Select step in the Goal Designer
+		Parameters : None
+		Output : The Step ID
 	*/
 
 	func SelectStep   
@@ -98,9 +98,9 @@ Class ComponentControllerParent from WindowsControllerParent
 		return nStepID
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Edit step name 
+		Parameters : The step name and the Step ID
+		Output : None
 	*/
 
 	func EditStepName cStep,nStepID
@@ -112,9 +112,9 @@ Class ComponentControllerParent from WindowsControllerParent
 			parent().oModel.EditStepName(nStepID,cStep)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Save reference to the Root node in the goal designer
+		Parameters : None
+		Output : None
 	*/
 
 	func SaveRoot
@@ -126,9 +126,9 @@ Class ComponentControllerParent from WindowsControllerParent
 			}
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Generate Interaction ID
+		Parameters : None
+		Output : Output
 	*/
 
 	func GenerateIID
@@ -145,18 +145,18 @@ Class ComponentControllerParent from WindowsControllerParent
 		parent().SaveVariablesValues(nIID,oView.GetVariablesValues())
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Set Interaction Variables Values
+		Parameters : None
+		Output : None
 	*/
 
 	func SetVariablesValues
 		oView.SetVariablesValues(cVariablesValues)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Set the Step Code
+		Parameters : The Step Code as String
+		Output : None
 	*/
 
 	func SetStepCode cCode
@@ -164,9 +164,9 @@ Class ComponentControllerParent from WindowsControllerParent
 		parent().oModel.SaveStepCode(nStepID,cCode)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Get the Parent Step of the steps that will be generated 
+		Parameters : None
+		Output : None
 	*/
 
 	func GetParentStep 
@@ -174,18 +174,18 @@ Class ComponentControllerParent from WindowsControllerParent
 		return oItem
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose :  Get reference to the active step 
+		Parameters : None
+		Output : None
 	*/
 
 	func GetActiveStep 
 		return oItem
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Set the Active Step in the Goal Designer
+		Parameters : Reference to the new active step
+		Output : None
 	*/
 
 	func SetActiveStep oNewItem
@@ -193,9 +193,9 @@ Class ComponentControllerParent from WindowsControllerParent
 		parent().oView.oStepsTree.SetCurrentItem(oItem,0)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Key press action - support keyboard shortcuts
+		Parameters : None
+		Output : None
 	*/
 
 	func KeyPressAction
@@ -209,18 +209,18 @@ Class ComponentControllerParent from WindowsControllerParent
 		}
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Get Variable Value from the Interaction Page
+		Parameters : The Variable Name
+		Output : None
 	*/
 
 	func Variable cVariable
 		return oView.Variable(cVariable)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Check if we can start new interaction from the current step
+		Parameters : None
+		Output : True/False
 	*/
 
 	func CheckInteract
@@ -231,9 +231,9 @@ Class ComponentControllerParent from WindowsControllerParent
 		return True
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Execute the Ok button action
+		Parameters : None
+		Output : None
 	*/
 
 	func OkAction	
@@ -244,9 +244,9 @@ Class ComponentControllerParent from WindowsControllerParent
 		}
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Execute the Again button action
+		Parameters : None
+		Output : None
 	*/
 
 	func AgainAction	
@@ -261,9 +261,9 @@ Class ComponentControllerParent from WindowsControllerParent
 		}
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Show the Interaction window and activate the first textbox
+		Parameters : None
+		Output : None
 	*/
 
 	func Start
@@ -274,9 +274,9 @@ Class ComponentControllerParent from WindowsControllerParent
 		}
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Close Button Action
+		Parameters : None
+		Output : None
 	*/
 
 	func CloseBtnAction
@@ -285,6 +285,12 @@ Class ComponentControllerParent from WindowsControllerParent
 		}
 		Super.CloseAction()
 
-	func GenerateAction		# To be written in the component
+	/*
+		Purpose : Generate Action (To be written in the component)
+		Parameters : None
+		Output : None
+	*/
+
+	func GenerateAction		
 
 
