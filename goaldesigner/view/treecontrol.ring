@@ -48,6 +48,7 @@ class TreeControl from qTreeWidget
 	func SerialAdd nParentID,nID,cText,lIgnore
 		oParent = GetObjByID(nParentID)
 		oItem = new qtreewidgetitem() 
+		cText = PrepareNodeText(cText)
 		if lIgnore {
 			cImage = 	C_LABELIMAGE_IGNORESTEP
 		else

@@ -207,6 +207,11 @@ class StepsTreeView from TreeControl
 			cBackColor = C_STEPCOLOR_INFO_BACKCOLOR			# ""
 		}
 
+	func PrepareNodeText cText
+		cText = substr(cText,"C_STEPCOLOR_DATA_TEXT",C_STEPCOLOR_DATA_TEXT)
+		cText = substr(cText,"C_STEPCOLOR_DATA_BACKCOLOR",C_STEPCOLOR_DATA_BACKCOLOR)
+		return cText 
+
 	func currentitem
 		oItem = super.currentitem()
 		if PtrCmp(oItem.pObject,NULL) {
