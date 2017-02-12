@@ -27,13 +27,15 @@ class FindStepController from WindowsControllerParent
 			aContent = item[C_TREEMODEL_CONTENT]
 			if not aContent[:visible] { loop }
 			cStepName = aContent[:name]
+			cStepName = Parent().oModel.RemoveTags(cStepName)
+			cStepNamePure = cStepName
 			if lState = False {	# Don't Match the case
 				cStepName = lower(cStepName)
 				cFind = lower(cFind)
 			}
 			if substr(cStepName,cFind) > 0 {				
 				aStepIDResult + item[C_TREEMODEL_NODEID]
-				oView.oListResult.AddItem(aContent[:name])
+				oView.oListResult.AddItem(cStepNamePure)
 			}
 		}
 		if len(aStepIDResult) > 0 {

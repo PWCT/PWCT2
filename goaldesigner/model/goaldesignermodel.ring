@@ -359,7 +359,7 @@ class GoalDesignerModel
 				loop 
 			}
 			if lTagStart { Loop }
-			if cLetter cStr[x] = "<" {
+			if cStr[x] = "<" {
 				lTagStart = True
 				loop 
 			}

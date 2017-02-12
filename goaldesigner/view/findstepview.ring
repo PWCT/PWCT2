@@ -59,8 +59,6 @@ class FindStepView from WindowsViewParent
 				setText(T_GD_FS_RESULTS)
 			}
 			oListResult = new qListWidget(win) {
-				SetMinimumWidth(600)
-				SetMinimumHeight(400)
 				setCurrentItemChangedEvent( Method(:ItemSelectedAction) )
 			}
 			oLayout4 = new qHBoxLayout()
