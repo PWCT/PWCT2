@@ -14,9 +14,9 @@ class EnvironmentController from WindowsControllerParent
 	SetFocusToStepsTree()
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Set the Parent Object for Environment and goal designer
+		Parameters : None
+		Output : None
 	*/
 
 	func SetParents
@@ -26,9 +26,9 @@ class EnvironmentController from WindowsControllerParent
 			Last_Window().setParentObject(self)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Set the focus to the steps tree
+		Parameters : None
+		Output : None
 	*/
 
 	func SetFocusToStepsTree
@@ -36,72 +36,72 @@ class EnvironmentController from WindowsControllerParent
 		Last_Window().oView.oStepsTree.SetFocus(0)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : New File Action
+		Parameters : None
+		Output : None
 	*/
 
 	func NewAction
 		parent().NewFileAction()
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Open File Action
+		Parameters : None
+		Output : None
 	*/
 
 	func OpenAction
 		parent().OpenFileAction()
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose :  Save File Action
+		Parameters : None
+		Output : None
 	*/
 
 	func SaveAction
 		parent().SaveCurrentFileAction()
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : File Save As Action
+		Parameters : None
+		Output : None
 	*/
 
 	func SaveAsAction
 		parent().SaveFileAction()
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Run File Action
+		Parameters : None
+		Output : None
 	*/
 
 	func RunAction
 		parent().RunAction()
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Run GUI Application Action
+		Parameters : None
+		Output : None
 	*/
 
 	func RunGUIAction
 		parent().RunGUIAction()
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Debug Program Action
+		Parameters : None
+		Output : None
 	*/
 
 	func DebugAction
 		parent().DebugAction()
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Change Opened File Action
+		Parameters : None
+		Output : None
 	*/
 
 	func ChangeFileAction
@@ -121,9 +121,9 @@ class EnvironmentController from WindowsControllerParent
 		parent().OpenFileAction2()
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Close Action - Close the window and the application 
+		Parameters : None
+		Output : None
 	*/
 
 	func CloseAction
@@ -131,81 +131,81 @@ class EnvironmentController from WindowsControllerParent
 		PWCT_APP.Quit()
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Print File Action
+		Parameters : None
+		Output : None
 	*/
 
 	func PrintAction
 		parent().PrintStepsAction()
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Cut Action
+		Parameters : None
+		Output : None
 	*/
 
 	func CutAction
 		parent().CutStepsAction()
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Copy Action
+		Parameters : None
+		Output : None
 	*/
 
 	func CopyAction
 		parent().CopyStepsAction()
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Paste Action
+		Parameters : None
+		Output : None
 	*/
 
 	func PasteAction
 		parent().PasteStepsAction()
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose :  Font Action
+		Parameters : None
+		Output : None
 	*/
 
 	func FontAction
 		parent().FontAction()		
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Find Action
+		Parameters : None
+		Output : None
 	*/
 
 	func FindAction
 		parent().SearchAction()
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Project Action
+		Parameters : None
+		Output : None
 	*/
 
 	func ProjectAction
 		ToggleVisible(oView.oDockFilesManager)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Goal Designer Action
+		Parameters : None
+		Output : None
 	*/
 
 	func GoalDesignerAction
 		ToggleVisible(oView.oDockGoalDesigner)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : ToggleVisible Action
+		Parameters : None
+		Output : None
 	*/
 
 	func ToggleVisible oObject
@@ -216,27 +216,27 @@ class EnvironmentController from WindowsControllerParent
 		}
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Open Help - CHM File 
+		Parameters : None
+		Output : None
 	*/
 
 	func CHMAction
 		System( "start " + exefolder()+"/../docs/ring.chm" )
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Open Help - PDF File
+		Parameters : None
+		Output : None
 	*/
 
 	func PDFAction
 		System( "start " + exefolder()+"/../docs/ring.pdf" )
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Menubar - Language Item Action
+		Parameters : None
+		Output : None
 	*/
 
 	func LanguageAction
@@ -244,9 +244,9 @@ class EnvironmentController from WindowsControllerParent
 		"This application developed using the Ring programming language")
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Menubar - Help Menu - GUI Item Action
+		Parameters : None
+		Output : None
 	*/
 
 	func GUIAction
@@ -254,9 +254,9 @@ class EnvironmentController from WindowsControllerParent
 		"This application uses the Qt GUI Library through RingQt")
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Menubar - Help Menu - About Item Action
+		Parameters : None
+		Output : None
 	*/
 
 	func AboutAction

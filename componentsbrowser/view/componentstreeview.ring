@@ -14,9 +14,9 @@ class ComponentsTreeView from StepsTreeView
 	# As a result of nested call to AddStartPoint()
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : init. the object
+		Parameters : None
+		Output : reference to the object (Self)
 	*/
 
 	func Init win
