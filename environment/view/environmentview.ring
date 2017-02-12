@@ -123,6 +123,14 @@ class EnvironmentView from WindowsViewParent
 				addseparator()
 				addaction(oAction)
 				oAction = new qAction(win) {
+					setShortcut(new QKeySequence("Alt+c"))
+					setbtnimage(self,"images/colors.png")
+					settext(T_ENV_MENU_COLORS) # "Colors"
+					setclickevent(Method(:ColorsAction))
+				}
+				addseparator()
+				addaction(oAction)
+				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+f"))
 					setbtnimage(self,"images/search.png")
 					settext(T_ENV_MENU_FINDREPLACE) # "Find and Replace"

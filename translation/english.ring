@@ -29,6 +29,7 @@
 	T_ENV_MENU_COPY = "Copy"
 	T_ENV_MENU_PASTE = "Paste"
 	T_ENV_MENU_FONT = "Font"
+	T_ENV_MENU_COLORS = "Colors"
 	T_ENV_MENU_FINDREPLACE = "Find and Replace"
 	T_ENV_MENU_PROJECTFILES = "Project Files"
 	T_ENV_MENU_GOALDESIGNER = "Goal Designer"
@@ -129,6 +130,10 @@
 	T_GD_FS_CLOSE = "Close"				# Button
 	T_GD_FS_SORRY = "Sorry"				
 	T_GD_FD_CANTFINDTHEITEM  = "Can't find the step"
+
+# Steps Colors Window
+
+	T_SC_WINDOWTITLE = "Steps Colors Window"
 
 # Components Browser Window
 

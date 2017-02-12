@@ -6,3 +6,8 @@
 */
 
 class StepsColorsView from WindowsViewParent
+
+	win = new qWidget() {
+		resize(400,400)
+		setWindowTitle(T_SC_WINDOWTITLE) # "Steps Colors Window"
+	}

@@ -29,6 +29,7 @@
 	T_ENV_MENU_COPY = "نسخ"
 	T_ENV_MENU_PASTE = "لسخ"
 	T_ENV_MENU_FONT = "الخط"
+	T_ENV_MENU_COLORS = "الألوان"
 	T_ENV_MENU_FINDREPLACE = "بحث واستبدال"
 	T_ENV_MENU_PROJECTFILES = "ملفات المشروع"
 	T_ENV_MENU_GOALDESIGNER = "مصمم الهدف"
@@ -129,6 +130,10 @@
 	T_GD_FS_CLOSE = "اغلاق"				# Button
 	T_GD_FS_SORRY = "عفوا"				
 	T_GD_FD_CANTFINDTHEITEM  = "لايمكن ايجاد الخطوة"
+
+# Steps Colors Window
+
+	T_SC_WINDOWTITLE = "نافذة ألوان الخطوات"
 
 # Components Browser Window
 

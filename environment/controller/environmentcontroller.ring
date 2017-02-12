@@ -175,6 +175,15 @@ class EnvironmentController from WindowsControllerParent
 		parent().FontAction()		
 
 	/*
+		Purpose : Colors Action 
+		Parameters : None
+		Output : None
+	*/
+	
+	func ColorsAction
+		parent().ColorsAction()
+
+	/*
 		Purpose : Find Action
 		Parameters : None
 		Output : None
@@ -261,3 +270,4 @@ class EnvironmentController from WindowsControllerParent
 	func AboutAction
 		ShowMessage("About",
 		"2017, Mahmoud Fayed <msfclipper@yahoo.com>")	
+

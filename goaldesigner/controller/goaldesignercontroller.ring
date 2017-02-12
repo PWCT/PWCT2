@@ -937,6 +937,16 @@ class GoalDesignerController from WindowsControllerParent
 		}	
 
 	/*
+		Purpose : Colors Action
+		Parameters : None
+		Output : None
+	*/
+
+	func ColorsAction
+		Open_Window(:StepsColorsController)
+		Last_Window().Start()			# Show the Window
+
+	/*
 		Purpose : Set Font Name
 		Parameters : None
 		Output : None
