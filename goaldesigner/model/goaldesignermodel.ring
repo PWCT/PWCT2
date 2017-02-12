@@ -102,8 +102,8 @@ class GoalDesignerModel
 		cText = ""
 		for x in oStepsTreeModel.getdata() {
 			if x[C_TREEMODEL_CONTENT][:visible] {
-				cText += x[C_TREEMODEL_CONTENT][:name] + nl
-			}
+				cText += removetags(x[C_TREEMODEL_CONTENT][:name]) + nl
+			} 
 		}
 		return cText
 
