@@ -71,6 +71,7 @@ class TreeControl from qTreeWidget
 	func InsertNode nParentID,nID,cText,nIndex
 		oParent = GetObjByID(nParentID)
 		oItem = new qtreewidgetitem()
+		cText = PrepareNodeText(cText)
 		if lUseLabels = False {	
 			oItem.settext(0,cText)
 		}
@@ -91,6 +92,15 @@ class TreeControl from qTreeWidget
 			setItemWidget(oItem,0,oLabel)
 		}
 		return oItem
+
+	/*
+		Purpose : Can be replaced in child classes with custom processing on node text 
+				Like replacing colors for example 
+		Parameters : Node Text as String 
+		Output : Node Text as String 
+	*/
+	func PrepareNodeText cText
+		return cText 
 
 	/*
 		The next method set the font of the label of the Node Item
