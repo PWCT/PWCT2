@@ -21,18 +21,18 @@ class GoalDesignerController from WindowsControllerParent
 	nInteractionPagesToModifyCount = 0
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Show the Window
+		Parameters : None
+		Output : None
 	*/
 
 	func Start
 		oView.Show()
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Add Step
+		Parameters : Step Name
+		Output : Item Object
 	*/
 
 	func AddStep cStepName
@@ -54,27 +54,27 @@ class GoalDesignerController from WindowsControllerParent
 		return oItem
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Add Generated Step Interaction
+		Parameters : The component Name
+		Output : Interaction ID
 	*/
 
 	func AddGeneratedInteraction cComponent
 		return oModel.oInteractionModel.AddGeneratedInteraction(cComponent)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Save Variables Values
+		Parameters : Interaction ID and Variables Values
+		Output : None
 	*/
 
 	func SaveVariablesValues nIID,cVariablesValues
 		oModel.oInteractionModel.SaveVariablesValues(nIID,cVariablesValues)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Add Generated Step
+		Parameters : Step Name, Interaction ID, Step Number and Step Type
+		Output : Item Object
 	*/
 
 	func AddGeneratedStep cStepName,nIID,nStepNumber,nStepType
@@ -96,18 +96,18 @@ class GoalDesignerController from WindowsControllerParent
 		return oItem
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Set Step Color
+		Parameters : Step Type
+		Output : None
 	*/
 
 	func SetStepColor nStepType
 		oView.oStepsTree.SetStepColor(nStepType)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Select Step
+		Parameters : Interaction ID and Step Number
+		Output : List contains the Item Object and the Step ID
 	*/
 
 	func SelectStep nIID,nStepNumber
@@ -116,18 +116,18 @@ class GoalDesignerController from WindowsControllerParent
 		return [oItem,nStepID]
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Use the Time Machine to go to Present
+		Parameters : None
+		Output : None
 	*/
 
 	func TimeMachineGotoPresent
 		oTMController.TimeMachineGotoPresent(oView,oModel)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Update The Time Machine
+		Parameters : None
+		Output : None
 	*/
 
 	func UpdateTheTimeMachine
@@ -135,9 +135,9 @@ class GoalDesignerController from WindowsControllerParent
 		oView.sliderTimeMachine.setInteractionPoints(nInteractionsCount)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Add Step Action
+		Parameters : None
+		Output : None
 	*/
 
 	func AddStepAction
@@ -160,9 +160,9 @@ class GoalDesignerController from WindowsControllerParent
 		}
 	
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Edit Step Action
+		Parameters : None
+		Output : None
 	*/
 
 	func EditStepAction
@@ -192,9 +192,9 @@ class GoalDesignerController from WindowsControllerParent
 		}		
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Delete Step Action
+		Parameters : None
+		Output : None
 	*/
 
 	func DeleteStepAction
@@ -233,9 +233,9 @@ class GoalDesignerController from WindowsControllerParent
 			UpdateTheTimeMachine()
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Move Step Up Action
+		Parameters : None
+		Output : None
 	*/
 
 	func MoveStepUpAction
@@ -263,9 +263,9 @@ class GoalDesignerController from WindowsControllerParent
 		}
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Move Step Down Action
+		Parameters : None
+		Output : None
 	*/
 
 	func MoveStepDownAction
@@ -293,9 +293,9 @@ class GoalDesignerController from WindowsControllerParent
 		}
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Print Steps Action
+		Parameters : None
+		Output : None
 	*/
 
 	func PrintStepsAction
@@ -326,9 +326,9 @@ class GoalDesignerController from WindowsControllerParent
 			UpdateTheTimeMachine()
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Copy Steps Action
+		Parameters : None
+		Output : None
 	*/
 
 	func CopyStepsAction
@@ -346,9 +346,9 @@ class GoalDesignerController from WindowsControllerParent
 		oView.oStepsTree.SaveStep(oItem)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Paste Steps Action
+		Parameters : None
+		Output : None
 	*/
 
 	func PasteStepsAction
