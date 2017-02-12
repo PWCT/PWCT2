@@ -115,10 +115,10 @@ class InteractionModel
 	func DeleteInteraction nStepInteractionID
 		# Find the interaction record
 			nPos = find(aList,nStepInteractionID,C_INTERACTIONRECORD_ID)
-		# Add the interaction record to the deleted list		
-			aDeletedInteractions + aList[nPos]		
 		# Delete the record
 			if nPos != 0 {		# Check that we have the record
+				# Add the interaction record to the deleted list		
+					aDeletedInteractions + aList[nPos]		
 				Del(aList,nPos)
 			}
 

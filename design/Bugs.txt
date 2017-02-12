@@ -7,7 +7,7 @@
 
 ===========================================================
 Status
-	* Bugs Count : 26
+	* Bugs Count : 27
 	* Fixed Bugs : 25
 	* UnFixed Bugs : 2
 ===========================================================
@@ -943,3 +943,17 @@ Closing the file, delete the controller object so we have the crash
 Solution when a file is closed we have to change the active file 
 
 Solved by avoiding the destroy to windows when we close dockable widgets
+====================================================
+
+(27)
+
+Line 119 Error (R2) : Array Access (Index out of range) !
+In method deleteinteraction() in file goaldesigner/model/interactionmodel.ring
+called from line 161  In method deleteinteractionrecord() in file goaldesigner/model/goaldesignermodel.ring
+called from line 148  In method deleteinteractionsrecords() in file goaldesigner/model/goaldesignermodel.ring
+called from line 220  In method cutstep() in file goaldesigner/model/goaldesignermodel.ring
+called from line 322  In method cutstepsaction() in file goaldesigner/controller/goaldesignercontroller.ring
+called from line 1  In qapp_exec In method exec() in file ring_qt.ring
+called from line 98  In function start_environment() in file B:/pwct2/pwct.ring
+called from line 56  in file B:/pwct2/pwct.ring
+

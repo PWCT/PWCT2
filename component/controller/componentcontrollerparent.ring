@@ -289,6 +289,9 @@ Class ComponentControllerParent from WindowsControllerParent
 
 
 	/*
+		Purpose : Set Text color and backcolor 
+		Parameters : Text as String 
+		Output : Styled Text as String 
 	*/
 	func StyleData cText 
 		return oStyle.text(  cText, "C_STEPCOLOR_DATA_TEXT" ,"C_STEPCOLOR_DATA_BACKCOLOR") 

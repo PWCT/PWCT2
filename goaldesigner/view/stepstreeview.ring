@@ -49,6 +49,7 @@ class StepsTreeView from TreeControl
 		InsertNode(nParentID,nID,cText,nIndex)
 
 	func EditStep oItem,cText,lIgnoreStatus
+		cText = PrepareNodeText(cText)
 		if lUseLabels = false {
 			oItem.setText(0,cText)
 		else
@@ -108,7 +109,7 @@ class StepsTreeView from TreeControl
 				oItem = aItems[x]
 				aLabel = aTempLabels[x]
 				oLabel2 = new qLabel(Self) {
-					setText(aLabel[C_NODELABEL_TEXT])
+					setText(this.prepareNodeText(aLabel[C_NODELABEL_TEXT]))
 					setStyleSheet(aLabel[C_NODELABEL_STYLESHEET])					
 				}
 				setItemWidget(oItem,0,oLabel2)
@@ -175,12 +176,14 @@ class StepsTreeView from TreeControl
 			for item in aItems {
 				oLabel = GetItemLabel(item)
 				cText = ItemLabelTextWithoutImages(oLabel)
+				cText = PrepareNodeText(cText)
 				oLabel.SetText(this.oStyle.image(C_LABELIMAGE_IGNORESTEP)+cText)
 			}
 		else 
 			for item in aItems {
 				oLabel = GetItemLabel(item)
 				cText = ItemLabelTextWithoutImages(oLabel)
+				cText = PrepareNodeText(cText)
 				oLabel.SetText(this.oStyle.image(C_LABELIMAGE_NODEICON)+cText)
 			}
 		}
