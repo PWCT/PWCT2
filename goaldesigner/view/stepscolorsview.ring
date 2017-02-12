@@ -42,10 +42,12 @@ class StepsColorsView from WindowsViewParent
 		btnCommentText = new qpushbutton(win) {
 			setText(" :: ")
 			setStyleSheet("background-color:" + C_STEPCOLOR_COMMENT_TEXT )
+			setClickevent(Method("ColorAction(1)"))
 		}
 		btnCommentbackcolor = new qpushbutton(win) {
 			setText(" :: ")
 			setStyleSheet("background-color:" + C_STEPCOLOR_COMMENT_BACKCOLOR )
+			setClickevent(Method("ColorAction(2)"))
 		}
 
 		LayoutHComment = new qHboxlayout() {
@@ -63,10 +65,12 @@ class StepsColorsView from WindowsViewParent
 		btnRootText = new qpushbutton(win) {
 			setText(" :: ")
 			setStyleSheet("background-color:" + C_STEPCOLOR_ROOT_TEXT )
+			setClickevent(Method("ColorAction(3)"))
 		}
 		btnRootbackcolor = new qpushbutton(win) {
 			setText(" :: ")
 			setStyleSheet("background-color:" + C_STEPCOLOR_ROOT_BACKCOLOR )
+			setClickevent(Method("ColorAction(4)"))
 		}
 
 		LayoutHRoot = new qHboxlayout() {
@@ -84,10 +88,12 @@ class StepsColorsView from WindowsViewParent
 		btnAllowInteractionText = new qpushbutton(win) {
 			setText(" :: ")
 			setStyleSheet("background-color:" + C_STEPCOLOR_ALLOWINTERACTION_TEXT )
+			setClickevent(Method("ColorAction(5)"))
 		}
 		btnAllowInteractionbackcolor = new qpushbutton(win) {
 			setText(" :: ")
 			setStyleSheet("background-color:" + C_STEPCOLOR_ALLOWINTERACTION_BACKCOLOR )
+			setClickevent(Method("ColorAction(6)"))
 		}
 
 		LayoutHAllowInteraction = new qHboxlayout() {
@@ -105,10 +111,12 @@ class StepsColorsView from WindowsViewParent
 		btnLeafText = new qpushbutton(win) {
 			setText(" :: ")
 			setStyleSheet("background-color:" + C_STEPCOLOR_INFO_TEXT )
+			setClickevent(Method("ColorAction(7)"))
 		}
 		btnLeafbackcolor = new qpushbutton(win) {
 			setText(" :: ")
 			setStyleSheet("background-color:" + C_STEPCOLOR_INFO_BACKCOLOR )
+			setClickevent(Method("ColorAction(8)"))
 		}
 
 		LayoutHLeaf = new qHboxlayout() {
@@ -126,10 +134,12 @@ class StepsColorsView from WindowsViewParent
 		btnDataText = new qpushbutton(win) {
 			setText(" :: ")
 			setStyleSheet("background-color:" + C_STEPCOLOR_DATA_TEXT )
+			setClickevent(Method("ColorAction(9)"))
 		}
 		btnDatabackcolor = new qpushbutton(win) {
 			setText(" :: ")
 			setStyleSheet("background-color:" + C_STEPCOLOR_DATA_BACKCOLOR )
+			setClickevent(Method("ColorAction(10)"))
 		}
 
 		LayoutHData = new qHboxlayout() {
