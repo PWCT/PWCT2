@@ -7,7 +7,7 @@
 
 Class ProgramController
 
-	cFileName = "noname.ring"
+	cFileName = C_FILENONAME 		# "noname.ring"
 	cSourceCode = ""
 	cCurrentDir = CurrentDir() + "/"	# The Goal Designer Folder
 	cDebugBatch = "run"
@@ -85,8 +85,8 @@ Class ProgramController
 		func RunBatch cFile,cPara
 			if iswindows() {
 				cCode = 'start '+cPara+ " " +
-					cCurrentDir+cFile+' "' + cFileName + '"' + nl 
+					cCurrentDir+cFile+' "' + cFileName + '"' + nl
 			else
-				cCode = 'cd $(dirname "'+cFileName+'") ; ' + ' ring "' + cFileName + '"' + nl 
-			}
+				cCode = 'cd $(dirname "'+cFileName+'") ; ' + ' ring "' + cFileName + '"'  + nl
+			}			
 			system(cCode)

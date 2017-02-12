@@ -7,6 +7,8 @@
 
 # Application
 	PWCT_APP = NULL
+	C_FILENONAME = "noname.ring"
+	remove( C_FILENONAME)
 
 # Tree Model
 	C_TREEMODEL_NODEID    = 1
