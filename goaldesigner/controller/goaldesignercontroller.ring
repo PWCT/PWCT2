@@ -376,9 +376,9 @@ class GoalDesignerController from WindowsControllerParent
 			oView.oStepsTree.SetCurrentItem(oParentItem,0)	
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Increase Size Action
+		Parameters : None
+		Output : None
 	*/
 
 	func IncreaseSizeAction
@@ -386,9 +386,9 @@ class GoalDesignerController from WindowsControllerParent
 		oView.oStepCode.IncreaseFontSize()
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Decrease Size Action
+		Parameters : None
+		Output : None
 	*/
 
 	func DecreaseSizeAction
@@ -396,9 +396,9 @@ class GoalDesignerController from WindowsControllerParent
 		oView.oStepCode.DecreaseFontSize()
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Ignore Step Action
+		Parameters : None
+		Output : None
 	*/
 
 	func IgnoreStepAction	
@@ -413,9 +413,9 @@ class GoalDesignerController from WindowsControllerParent
 		oView.oStepsTree.IgnoreStep(oItem,nIgnore)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Step Changed Action
+		Parameters : None
+		Output : None
 	*/
 
 	func StepChangedAction
@@ -440,9 +440,9 @@ class GoalDesignerController from WindowsControllerParent
 			oView.oStepCode.setEnabled(True)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Step Code Changed Action
+		Parameters : None
+		Output : None
 	*/
 
 	func StepCodeChangedAction
@@ -454,9 +454,9 @@ class GoalDesignerController from WindowsControllerParent
 		oModel.SaveStepCode(nStepID,oView.oStepCode.ToPlainText())
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Search Action
+		Parameters : None
+		Output : None
 	*/
 
 	func SearchAction
@@ -464,18 +464,18 @@ class GoalDesignerController from WindowsControllerParent
 		Last_Window().setParentObject(self)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Change Time Machine Point Action
+		Parameters : None
+		Output : None
 	*/
 
 	func ChangeTimeMachinePointAction
 		oTMController.ChangeTimeMachinePoint(oView,oModel)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Tree Key Press
+		Parameters : None
+		Output : None
 	*/
 
 	func TreeKeyPress
@@ -491,9 +491,9 @@ class GoalDesignerController from WindowsControllerParent
 		oView.oTreeFilter.setEventOutput(False)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Key Press Action
+		Parameters : None
+		Output : None
 	*/
 
 	func KeyPress
@@ -549,9 +549,9 @@ class GoalDesignerController from WindowsControllerParent
 		oView.oTreeFilter.setEventOutput(False)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : New File Action
+		Parameters : None
+		Output : None
 	*/
 
 	func NewFileAction
@@ -573,18 +573,18 @@ class GoalDesignerController from WindowsControllerParent
 			UpdateTheTimeMachine()
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Save Current File Action
+		Parameters : None
+		Output : None
 	*/
 
 	func SaveCurrentFileAction
 		SaveFileAction2()
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Save File Action
+		Parameters : None
+		Output : None
 	*/
 
 	func SaveFileAction
@@ -599,9 +599,9 @@ class GoalDesignerController from WindowsControllerParent
 			oView.win.ParentWidget().setWindowTitle(cFileName)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Save File Action 2
+		Parameters : None
+		Output : None
 	*/
 
 	func SaveFileAction2
@@ -616,9 +616,9 @@ class GoalDesignerController from WindowsControllerParent
 		oVisualSourceFile.Close()
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Open File Action
+		Parameters : None
+		Output : None
 	*/
 
 	func OpenFileAction
@@ -635,9 +635,9 @@ class GoalDesignerController from WindowsControllerParent
 			oView.win.ParentWidget().setWindowTitle(cFileName)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Open File Action 2
+		Parameters : None
+		Output : None
 	*/
 
 	func OpenFileAction2
@@ -675,9 +675,9 @@ class GoalDesignerController from WindowsControllerParent
 		oView.oStepsTree.oFirstStep.SetExpanded(True)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Start New Interaction
+		Parameters : None
+		Output : None
 	*/
 
 	func InteractAction
@@ -701,18 +701,18 @@ class GoalDesignerController from WindowsControllerParent
 		return True
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Get the Components Browser Window Object
+		Parameters : None
+		Output : Components Browser Object
 	*/
 
 	func ComponentsBrowserWindow
 		return GetObjectByID(nComponentsBrowserWindowID)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Called when the componetns browser is closed
+		Parameters : None
+		Output : None
 	*/
 
 	func ComponentsBrowserClosed
@@ -720,9 +720,9 @@ class GoalDesignerController from WindowsControllerParent
 		oView.widgetCB.Hide()
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Modify Action
+		Parameters : None
+		Output : None
 	*/
 
 	func ModifyAction
@@ -758,9 +758,9 @@ class GoalDesignerController from WindowsControllerParent
 			}
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Interaction page (modify) closed
+		Parameters : None
+		Output : None
 	*/
 
 	func InteractionPageToModifyClosed
@@ -770,9 +770,9 @@ class GoalDesignerController from WindowsControllerParent
 		}
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Check Allow Interact Button
+		Parameters : None
+		Output : True/False
 	*/
 
 	func AllowInteractButton
@@ -787,9 +787,9 @@ class GoalDesignerController from WindowsControllerParent
 		return False
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Check is comment or root
+		Parameters : None
+		Output : True/False
 	*/
 
 	func IsCommentOrRoot
@@ -804,9 +804,9 @@ class GoalDesignerController from WindowsControllerParent
 		return False
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Check Is Comment
+		Parameters : None
+		Output : True/False
 	*/
 
 	func IsComment
