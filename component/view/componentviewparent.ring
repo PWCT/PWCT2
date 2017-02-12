@@ -25,9 +25,9 @@ class ComponentViewParent from WindowsViewParent
 	oFirstText			# First Textbox
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Display title in the Interaction Page
+		Parameters : The Title as String
+		Output : The Label Object
 	*/
 
 	func Title cTitle
@@ -41,12 +41,12 @@ class ComponentViewParent from WindowsViewParent
 		oLayoutAll.AddWidget(oLabel)
 		
 		win.setWindowTitle(cTitle)
-		return #oLabel
+		return oLabel
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Display Label+Textbox in the Interation page
+		Parameters : The Label Title and the Variable Name
+		Output : The Textbox Object
 	*/
 
 	func TextBox cTitle,cVariable
@@ -68,9 +68,9 @@ class ComponentViewParent from WindowsViewParent
 		return oText
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Add Label+ListBox in the interaction page
+		Parameters : The label title, the variable name and the Listbox items
+		Output : the listbox object
 	*/
 
 	func ListBox cTitle,cVariable,aItems
@@ -92,9 +92,9 @@ class ComponentViewParent from WindowsViewParent
 		return oList
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Add the page buttons (Ok, Again and Close) to the interaction page
+		Parameters : None
+		Output : None
 	*/
 
 	func PageButtons
@@ -120,9 +120,9 @@ class ComponentViewParent from WindowsViewParent
 		oLayoutAll.insertStretch( -1, 1 )
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Get Variable Value from the Interaction page
+		Parameters : The Variable name as string
+		Output : The variable value
 	*/
 
 	func Variable cVariable
@@ -138,9 +138,9 @@ class ComponentViewParent from WindowsViewParent
 		return cValue
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Get Interaction page variables values as string
+		Parameters : None
+		Output : String of varaibles values 
 	*/
 
 	func GetVariablesValues
@@ -158,9 +158,9 @@ class ComponentViewParent from WindowsViewParent
 		return cVariablesValues
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Set the Interaction Page Variables Values
+		Parameters : Variables Values as String
+		Output : None
 	*/
 
 	func SetVariablesValues cVariablesValues
