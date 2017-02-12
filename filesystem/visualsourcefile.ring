@@ -301,9 +301,9 @@ class VisualSourceFile
 	func SaveStepsTable
 		cSQLAll = ""
 		for record in aStepsTable {						
-			cSQL = "INSERT INTO STEPSTREE (STEPID,PARENTID,NAME,"+
-			"ACTIVE,CODE,INTERACTIONID,VISIBLE,STEPNUMBER,STEPTYPE)"+
-         		"VALUES (#{V1},#{V2},'#{V3}',#{V4},'#{V5}', #{V6},#{V7},#{V8},#{V9}); " + NL
+			cSQL = `INSERT INTO STEPSTREE (STEPID,PARENTID,NAME,`+
+			`ACTIVE,CODE,INTERACTIONID,VISIBLE,STEPNUMBER,STEPTYPE)`+
+         		`VALUES (#{V1},#{V2},'#{V3}',#{V4},'#{V5}', #{V6},#{V7},#{V8},#{V9}); ` + NL
 			cSQL = substr(cSQL,"#{V1}", ""+record[C_TREEMODEL_NODEID]   )
 			cSQL = substr(cSQL,"#{V2}", ""+record[C_TREEMODEL_PARENTID]  )
 			cSQL = substr(cSQL,"#{V3}", record[C_TREEMODEL_CONTENT][:name]  )

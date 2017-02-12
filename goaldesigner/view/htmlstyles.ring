@@ -14,7 +14,7 @@ class HTMLStyles
 	*/
 
 	func text cText,cTextColor,cBackColor
-		cHTML =  "<span style='background-color:#{backcolor}'><font color='#{textcolor}'>#{text}</font></span>"
+		cHTML =  `<span style="background-color:#{backcolor}"><font color="#{textcolor}">#{text}</font></span>`
 		cHTML = substr(cHTML,"#{backcolor}",cBackColor)
 		cHTML = substr(cHTML,"#{textcolor}",cTextColor)
 		cHTML = substr(cHTML,"#{text}",cText)
