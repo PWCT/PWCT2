@@ -27,9 +27,9 @@ class EnvironmentView from WindowsViewParent
 		}
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Create the Menubar
+		Parameters : The window Object
+		Output : None
 	*/
 
 	func CreateMenuBar win
@@ -209,9 +209,9 @@ class EnvironmentView from WindowsViewParent
 		win.setmenubar(menu1)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Create the toolbar
+		Parameters : The Window Object
+		Output : None
 	*/
 
 	func CreateToolbar win
@@ -267,9 +267,9 @@ class EnvironmentView from WindowsViewParent
 		}
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Create the Files Manager Window
+		Parameters : The Window Object
+		Output : None
 	*/
 
 	func CreateFilesManager win
@@ -303,9 +303,9 @@ class EnvironmentView from WindowsViewParent
 		win.adddockwidget(1,oDockFilesManager,1)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Create the goal designer window
+		Parameters : The window object
+		Output : None
 	*/
 
 	func CreateGoalDesigner win
@@ -320,9 +320,9 @@ class EnvironmentView from WindowsViewParent
 		return oDock
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Create Dockable window
+		Parameters : The Widget, Window title and the dock position
+		Output : None
 	*/
 
 	func CreateDockableWindow oWidget,cTitle,nPos
@@ -335,9 +335,9 @@ class EnvironmentView from WindowsViewParent
 
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Create the Status bar
+		Parameters : The Window object
+		Output : None
 	*/
 
 	func CreateStatusBar win
