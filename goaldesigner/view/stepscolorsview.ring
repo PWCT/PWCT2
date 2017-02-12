@@ -49,10 +49,30 @@ class StepsColorsView from WindowsViewParent
 			Addwidget(btnRootbackcolor)			
 		}
 
+		# Step Type : Allow Interaction
+
+		labelAllowInteraction =  new qlabel(win) {
+			setText(" The generated step Allows Interaction ")
+			setFixedWidth(300)
+		}
+		btnAllowInteractionText = new qpushbutton(win) {
+			setText("TextColor")
+		}
+		btnAllowInteractionbackcolor = new qpushbutton(win) {
+			setText("BackColor")
+		}
+
+		LayoutHAllowInteraction = new qHboxlayout() {
+			Addwidget(labelAllowInteraction)
+			Addwidget(btnAllowInteractionText)
+			Addwidget(btnAllowInteractionbackcolor)			
+		}
+
 							
 		LayoutAll = new qVBoxlayout() {
 			Addlayout(layoutHComment)
 			Addlayout(layoutHRoot)
+			Addlayout(layouthAllowInteraction)
 		}
 		
 		setLayout(layoutAll)
