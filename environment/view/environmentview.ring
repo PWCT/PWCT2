@@ -21,8 +21,8 @@ class EnvironmentView from WindowsViewParent
 			self.CreateToolbar(win)
 			self.CreateStatusBar(win)
 			self.CreateFilesManager(win)
-			self.CreateOutputWindow(win)
 			oDockGoalDesigner = self.CreateGoalDesigner(win)
+			self.CreateOutputWindow(win)
 			setwinicon(win,"images/pwct.png")
 			showmaximized()	
 			oFilter = new qAllevents(win) {
@@ -155,6 +155,14 @@ class EnvironmentView from WindowsViewParent
 					settext(T_ENV_MENU_GOALDESIGNER) # "Goal Designer"
 				}
 				addaction(oAction)	
+				addseparator()	
+				oAction = new qAction(win) {
+					setShortcut(new QKeySequence("Alt+o"))
+					setbtnimage(self,"images/source.png")
+					setclickevent(Method(:OutputWindowAction))
+					settext(T_ENV_MENU_OUTPUTWINDOW) # "Output Window"
+				}
+				addaction(oAction)
 			}
 			subProgram { 
 				oAction = new qAction(win) {
@@ -392,4 +400,4 @@ class EnvironmentView from WindowsViewParent
 			setwidget( oProcessWindow )		
 			setwindowtitle("Output Window")
 		}
-		win.adddockwidget(1,oDockOutputWindow,1)
+		win.adddockwidget(2,oDockOutputWindow,1)
