@@ -8,7 +8,10 @@
 class EnvironmentView from WindowsViewParent
 
 	# Attributes
-	Tree1   oFile  oDockFilesManager oDockGoalDesigner  oDockOutputWindow
+	Tree1   oFile  oDockFilesManager oDockGoalDesigner  
+
+	# Process Window
+	oDockOutputWindow	oProcess oProcessText   oProcessEditbox
 
 	nGoalDesignerWindowID
 
@@ -21,8 +24,8 @@ class EnvironmentView from WindowsViewParent
 			self.CreateToolbar(win)
 			self.CreateStatusBar(win)
 			self.CreateFilesManager(win)
-			oDockGoalDesigner = self.CreateGoalDesigner(win)
 			self.CreateOutputWindow(win)
+			oDockGoalDesigner = self.CreateGoalDesigner(win)
 			setwinicon(win,"images/pwct.png")
 			showmaximized()	
 			oFilter = new qAllevents(win) {
@@ -337,7 +340,7 @@ class EnvironmentView from WindowsViewParent
 			setwidget(last_window().oView.win)
 			setwindowtitle(T_ENV_DOCK_GOALDESIGNER) # "Goal Designer"		 
 		}
-		win.adddockwidget(2,oDock,1)	
+		win.adddockwidget(1,oDock,1)	
 		return oDock
 
 	/*
@@ -379,20 +382,20 @@ class EnvironmentView from WindowsViewParent
 			setText("Input :")
 		}
 		oProcessText = new qlineEdit(oProcessWindow) {
-			setreturnPressedEvent("pSendProcessData(oProcess,oProcessText,oProcessEditbox)")
+			setreturnPressedEvent(Method(:SendDataAction))
 		}
 		oProcessbtnSend = new qpushbutton(oProcessWindow) {
 			setText("Send")
-			setClickevent("pSendProcessData(oProcess,oProcessText,oProcessEditbox)")
+			setClickevent(Method(:SendDataAction))
 		}
 		oProcessLayout1 = new qhboxlayout() {
 			AddWidget(oProcessLabel)
-			AddWidget(oProcessText)
+			AddWidget(this.oProcessText)
 			Addwidget(oProcessbtnSend)
 		}
 		oProcessEditbox = new qPlaintextedit(oProcessWindow) 
 		oProcessLayout2 = new qvboxlayout() {
-			addWidget(oProcesseditbox)
+			addWidget(this.oProcesseditbox)
 			addlayout(oProcesslayout1)
 		}
 		oProcessWindow.setlayout(oProcessLayout2)			

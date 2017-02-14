@@ -280,3 +280,36 @@ class EnvironmentController from WindowsControllerParent
 		ShowMessage("About",
 		"2017, Mahmoud Fayed <msfclipper@yahoo.com>")	
 
+
+	/*
+		Purpose : Send Process Data
+		Parameters : None
+		Output : None
+	*/
+
+	func sendDataAction
+		oView {
+			if ISNULL(oProcess) { return }
+			cText = oProcessText.text() + windowsnl()
+			oProcess.write(cText ,len(cText))
+		}
+
+	/*
+		Purpose : Get Process Data
+		Parameters : None
+		Output : None
+	*/
+
+	func getDataAction
+		oView {
+			if ISNULL(oProcess) { return }
+			cText = oProcess.readallstandardoutput().data()
+ 			aText = str2list(cText)
+			for x = len(aText) to 1 step -1 {
+				if substr(aText[x],"echo off")  {
+					del(aText,x)			
+				}
+			}
+			cText = list2str(aText)			 
+ 			oProcessEditbox.insertplaintext(cText)
+		}

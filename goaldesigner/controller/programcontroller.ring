@@ -42,7 +42,31 @@ Class ProgramController
 
 	func RunGUI oGD
 		Prepare(oGD)	# Save the source code to the file
-		RunBatch(cRunGUIBatch,"/b")
+		if iswindows() {
+			oGD.parent().oView.oProcessEditbox.setplaintext("")
+			oGD.parent().oView.oProcessText.setFocus(0)
+			oGD.parent().oView.oProcess = RunProcess(cCurrentDir+"run2.bat",cFileName,oGD.parent().Method(:GetDataAction))
+		else
+			RunBatch(cRunGUIBatch,"/b")
+		}
+
+	/*
+		Purpose : Run Process
+		Parameters : Program, Arguments and Method for Get Data Event
+		Output :  None
+	*/
+
+	func RunProcess cProgram,cArg,cGetDataFunc
+		oStringList = new qStringlist() {
+			append(cArg)
+		}
+		oProcess = new qprocess(NULL) {
+			setprogram( cProgram)
+			setarguments(ostringlist)
+			setreadyreadstandardoutputevent(cGetDataFunc)
+			start_3(  QIODevice_ReadWrite )
+		} 
+		return oProcess
 
 	private
 
