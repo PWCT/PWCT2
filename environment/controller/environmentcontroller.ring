@@ -307,7 +307,8 @@ class EnvironmentController from WindowsControllerParent
 			cText = oProcess.readallstandardoutput().data()
  			aText = str2list(cText)
 			for x = len(aText) to 1 step -1 {
-				if substr(aText[x],"echo off")  {
+				if substr(aText[x],"echo off")  or
+					 trim(aText[x]) = NULL  {
 					del(aText,x)			
 				}
 			}
