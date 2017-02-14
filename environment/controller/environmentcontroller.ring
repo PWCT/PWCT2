@@ -292,6 +292,7 @@ class EnvironmentController from WindowsControllerParent
 			if ISNULL(oProcess) { return }
 			cText = oProcessText.text() + windowsnl()
 			oProcess.write(cText ,len(cText))
+			oProcessEditbox.insertplaintext(cText)
 		}
 
 	/*
