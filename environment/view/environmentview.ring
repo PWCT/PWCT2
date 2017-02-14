@@ -24,8 +24,8 @@ class EnvironmentView from WindowsViewParent
 			self.CreateToolbar(win)
 			self.CreateStatusBar(win)
 			self.CreateFilesManager(win)
-			self.CreateOutputWindow(win)
 			oDockGoalDesigner = self.CreateGoalDesigner(win)
+			self.CreateOutputWindow(win)
 			setwinicon(win,"images/pwct.png")
 			showmaximized()	
 			oFilter = new qAllevents(win) {
