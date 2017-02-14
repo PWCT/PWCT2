@@ -8,7 +8,7 @@
 class EnvironmentView from WindowsViewParent
 
 	# Attributes
-	Tree1   oFile  oDockFilesManager oDockGoalDesigner
+	Tree1   oFile  oDockFilesManager oDockGoalDesigner  oDockOutputWindow
 
 	nGoalDesignerWindowID
 
@@ -21,6 +21,7 @@ class EnvironmentView from WindowsViewParent
 			self.CreateToolbar(win)
 			self.CreateStatusBar(win)
 			self.CreateFilesManager(win)
+			self.CreateOutputWindow(win)
 			oDockGoalDesigner = self.CreateGoalDesigner(win)
 			setwinicon(win,"images/pwct.png")
 			showmaximized()	
@@ -357,3 +358,38 @@ class EnvironmentView from WindowsViewParent
 			showmessage(T_ENV_STATUSBAR_READY,0)
 		}
 		win.setstatusbar(status1) 
+
+	/*
+		Purpose : Create the Output Window 
+		Parameters : The Window Object 
+		Output : None
+	*/
+
+	func createOutputWindow win
+		oProcessWindow = new qWidget()
+		oProcessLabel = new qLabel(oProcessWindow) {
+			setText("Input :")
+		}
+		oProcessText = new qlineEdit(oProcessWindow) {
+			setreturnPressedEvent("pSendProcessData(oProcess,oProcessText,oProcessEditbox)")
+		}
+		oProcessbtnSend = new qpushbutton(oProcessWindow) {
+			setText("Send")
+			setClickevent("pSendProcessData(oProcess,oProcessText,oProcessEditbox)")
+		}
+		oProcessLayout1 = new qhboxlayout() {
+			AddWidget(oProcessLabel)
+			AddWidget(oProcessText)
+			Addwidget(oProcessbtnSend)
+		}
+		oProcessEditbox = new qPlaintextedit(oProcessWindow) 
+		oProcessLayout2 = new qvboxlayout() {
+			addWidget(oProcesseditbox)
+			addlayout(oProcesslayout1)
+		}
+		oProcessWindow.setlayout(oProcessLayout2)			
+		oDockOutputWindow = new qDockWidget(win,0) {
+			setwidget( oProcessWindow )		
+			setwindowtitle("Output Window")
+		}
+		win.adddockwidget(1,oDockOutputWindow,1)
