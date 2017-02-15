@@ -320,14 +320,14 @@ Class ComponentControllerParent from WindowsControllerParent
 		# Check that the parent component accept the current component 
 			if cParentComponentName = "SP" { return True }
 			cComponentsPath = C_CB_COMPONENTSPATH
-			cFilePath = cComponentsPath + cFile + ".ring"
+			cFilePath = cComponentsPath + cParentComponentName + ".ring"
 			if fexists(cFilePath) {
 				if find(aComponentsFilesList,cFilePath) = 0 { 
 					aComponentsFilesList + cFilePath
 					Eval("Load '" + cFilePath + "'")
 				}
 				# Check the Component
-					oObject = eval("return new " + cFile+:ComponentController) 					
+					eval("oObject = new " + cParentComponentName+:ComponentController) 					
 					return oObject.CheckAllowChild(cChildComponentName,nStepNumber)
 			}
 		return True
