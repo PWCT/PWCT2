@@ -5,7 +5,6 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-
 class EnvironmentController from WindowsControllerParent
 
 	oView = new EnvironmentView
@@ -13,6 +12,10 @@ class EnvironmentController from WindowsControllerParent
 	cCurrentDir = CurrentDir() + "/"	# The PWCT Folder
 	cSettingsFile = cCurrentDir + "pwct.ini"
 	cFont = "MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0"
+
+	lShowFilesManager = True
+	lShowGoalDesigner = True
+	lShowOutputWindow = True
 
 	SetParents()
 	SetFocusToStepsTree()
@@ -23,7 +26,7 @@ class EnvironmentController from WindowsControllerParent
 		Output : None
 	*/
 	func Start
-		restoreSettings()
+		LoadSettings()
 		super.Start()
 		
 
@@ -346,12 +349,39 @@ class EnvironmentController from WindowsControllerParent
 		write(cSettingsFile,cSettings)
 
 	/*
+		Purpose : Load Settings
+		Parameters : None
+		Output : None
+	*/
+
+	func LoadSettings	
+		if fexists(cSettingsFile) { 
+			eval(read(cSettingsFile))
+			RestoreSettings()
+		}
+
+	/*
 		Purpose : Restore Settings
 		Parameters : None
 		Output : None
 	*/
 
-	func RestoreSettings	
-		if fexists(cSettingsFile) { 
-			eval(read(cSettingsFile))
+	func RestoreSettings
+
+ 		if lShowFilesManager {
+			oView.oDockFilesManager.show()
+		else
+			oView.oDockFilesManager.hide()
+		}
+
+		if lShowGoalDesigner {
+			oView.oDockGoalDesigner.show()
+		else
+			oView.oDockGoalDesigner.hide()
+		}
+
+		if lShowOutputWindow {
+			oView.oDockOutputWindow.show()
+		else
+			oView.oDockOutputWindow.hide()
 		}
