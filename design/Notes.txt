@@ -184,3 +184,13 @@ While oStepsTree contains this methods by inheritance from QWidget class !
 		PWCT_APP.Quit()
 	we quit directly because closing the window first will delete the object
  and when this method is called from close event we get error !
+
+(21) HERE I forget return !
+
+	func GetParentComponentName
+		GetParentComponentDetails()[1]
+
+solved by
+
+	func GetParentComponentName
+		return GetParentComponentDetails()[1]

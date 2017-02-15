@@ -1081,7 +1081,7 @@ class GoalDesignerController from WindowsControllerParent
 	*/
 
 	func GetParentComponentName
-		GetParentComponentDetails()[1]
+		return GetParentComponentDetails()[1]
 
 	/*
 		Purpose : Get Parent Step Number  - Used for Rules
@@ -1090,4 +1090,4 @@ class GoalDesignerController from WindowsControllerParent
 	*/
 
 	func GetParentStepNumber
-		GetParentComponentDetails()[2]
+		return GetParentComponentDetails()[2]
