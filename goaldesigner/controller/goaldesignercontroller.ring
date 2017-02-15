@@ -657,6 +657,26 @@ class GoalDesignerController from WindowsControllerParent
 			oModel.oInteractionModel.SetData(aInteractions)
 			oModel.oStepsTreeModel.SetID(oVisualSourceFile.GetStepsID())
 			oModel.oInteractionModel.SetID(oVisualSourceFile.GetInteractionsID())
+		RefreshStepsTree2(aStepsTree)
+		oView.oStepsTree.oFirstStep.SetExpanded(True)
+
+	/*
+		Purpose : Refresh Steps Tree
+		Parameters : None
+		Output : None
+	*/
+
+	func RefreshStepsTree
+		aStepsTree = oModel.oStepsTreeModel.getdata()
+		RefreshStepsTree2(aStepsTree)
+
+	/*
+		Purpose : Refresh Steps Tree
+		Parameters : The Steps Tree List 
+		Output : None
+	*/
+
+	func RefreshStepsTree2 aStepsTree
 		oView.oStepsTree.setUpdatesEnabled(False)
 		oView.oStepsTree.blockSignals(True)
 		# Remove the current Steps From the Tree Control
@@ -963,6 +983,7 @@ class GoalDesignerController from WindowsControllerParent
 
 	func ColorsAction
 		Open_Window(:StepsColorsController)
+		Last_Window().setParentObject(self)
 		Last_Window().Start()			# Show the Window
 
 	/*

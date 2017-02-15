@@ -65,3 +65,5 @@ class StepsColorsController from WindowsControllerParent
 				oView.btnDataBackColor.setstylesheet("background-color: "+cColor)
 				C_STEPCOLOR_DATA_BACKCOLOR = cColor
 		}
+
+		parent().refreshStepsTree()
