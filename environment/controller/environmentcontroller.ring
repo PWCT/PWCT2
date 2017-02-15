@@ -26,8 +26,8 @@ class EnvironmentController from WindowsControllerParent
 		Output : None
 	*/
 	func Start
-		LoadSettings()
 		super.Start()
+		LoadSettings()
 		
 
 	/*
