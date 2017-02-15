@@ -49,6 +49,17 @@ class GoalDesignerModel
 		return aContent[:name] 
 
 	/*
+		Purpose :  Get Step Number
+		Parameters : The Step ID
+		Output : The Step Number
+	*/
+
+	func GetStepNumber nStepID
+		aContent = oStepsTreeModel.GetNodeContent(nStepID)
+		return aContent[:stepnumber] 
+
+
+	/*
 		Purpose : 
 		Parameters :
 		Output : 
@@ -78,6 +89,15 @@ class GoalDesignerModel
 	func GetStepType nStepID
 		aContent = oStepsTreeModel.GetNodeContent(nStepID)
 		return aContent[:steptype] 
+
+	/*
+		Purpose : Get Step Parent
+		Parameters : The Step ID as Number
+		Output : The Parent Step ID as Number
+	*/
+
+	func GetStepParent nStepID
+		return GetNodeParent(nStepID)
 
 	/*
 		Purpose : Print Steps to Console Window

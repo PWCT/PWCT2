@@ -1047,3 +1047,40 @@ class GoalDesignerController from WindowsControllerParent
 
 	func IsFileEmpty
 		return oModel.IsEmpty()
+
+	/*
+		Purpose : Get Parent Component Name - Used for Rules
+		Parameters : None
+		Output : None
+	*/
+
+	func GetParentComponentName
+		oItem  = oView.oStepsTree.currentItem()
+		nStepID = oView.oStepsTree.GetIDByObj(oItem)
+		if nStepID = 1 {	# start point
+			return "SP"
+		}
+		nStepType = oModel.GetStepType(nStepID)
+		# Get parent component (Not Comment)
+		while nStepType = C_STEPTYPE_COMMENT  {
+			nStepID = oModel.getStepParent(nStepID)
+			if nStepID = 1 {	# start point
+				return "SP"
+			}
+			nStepType = oModel.GetStepType(nStepID)
+		}
+		nIID = oModel.GetInteractionID(nStepID)
+		cFile = oModel.GetInteractionComponent(nIID)
+		return cFile
+
+	/*
+		Purpose : Get Parent Step Number  - Used for Rules
+		Parameters : None
+		Output : None
+	*/
+
+	func GetParentStepNumber
+		oItem  = oView.oStepsTree.currentItem()
+		nStepID = oView.oStepsTree.GetIDByObj(oItem)
+		nStepNumber = oModel.GetStepNumber(nStepID)
+		return nStepNumber

@@ -97,6 +97,16 @@ class TreeModel
 		return aList[nPos][C_TREEMODEL_CONTENT]
 
 	/*
+		The next method get the node parent from the tree
+		Parameters : The Node ID
+		Output : The Parent ID
+	*/
+	func GetNodeParent nNodeID
+		nPos = find(aList,nNodeID,C_TREEMODEL_NODEID)
+		return aList[nPos][C_TREEMODEL_PARENTID]
+
+
+	/*
 		The next method return the tree list
 		Parameters : None
 		Output : The Nodes List
