@@ -552,7 +552,7 @@ class GoalDesignerController from WindowsControllerParent
 		Purpose : New File Action
 		Parameters : None
 		Output : None
-	*/
+	*/  
 
 	func NewFileAction
 		# Set the file Name
@@ -932,9 +932,28 @@ class GoalDesignerController from WindowsControllerParent
 		}
 		if aFont[1] != NULL {
 			cFont = aFont[1]
-			SetFontName()	# set the new font
-			oView.oStepsTree.UpdateFontSize()
+			UpdateFont()
 		}	
+
+
+	/*
+		Purpose : Update Font 
+		Parameters : None
+		Output : None
+	*/
+
+	func UpdateFont
+		SetFontName()	# set the new font
+		UpdateFontSize()
+
+	/*
+		Purpose : Update Font  Size
+		Parameters : None
+		Output : None
+	*/
+
+	func UpdateFontSize
+		oView.oStepsTree.UpdateFontSize()
 
 	/*
 		Purpose : Colors Action

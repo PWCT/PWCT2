@@ -7,15 +7,16 @@
 
 class EnvironmentController from WindowsControllerParent
 
-	oView = new EnvironmentView
-
 	cCurrentDir = CurrentDir() + "/"	# The PWCT Folder
 	cSettingsFile = cCurrentDir + "pwct.ini"
 	cFont = "MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0"
+	nFontSize = 12
 
 	lShowFilesManager = True
 	lShowGoalDesigner = True
 	lShowOutputWindow = True
+
+	oView = new EnvironmentView
 
 	SetParents()
 	SetFocusToStepsTree()
@@ -27,8 +28,7 @@ class EnvironmentController from WindowsControllerParent
 	*/
 	func Start
 		super.Start()
-		LoadSettings()
-		
+		LoadSettings()	
 
 	/*
 		Purpose : Set the Parent Object for Environment and goal designer
@@ -341,7 +341,10 @@ class EnvironmentController from WindowsControllerParent
 	*/
 
 	func SaveSettings
+		cFont = parent().cFont
+		nFontSize = parent().oView.oStepsTree.nFontSize
 		cSettings = "cFont = '" + cFont + "'" + nl + 
+			    "nFontSize = " + nFontSize  + nl + 
 			    "lShowFilesManager = " + oView.oDockFilesManager.isvisible() + nl +
 			    "lShowGoalDesigner = " + oView.oDockGoalDesigner.isvisible() + nl +
 			    "lShowOutputWindow = " + oView.oDockOutputWindow.isvisible() + nl 
@@ -357,7 +360,7 @@ class EnvironmentController from WindowsControllerParent
 	func LoadSettings	
 		if fexists(cSettingsFile) { 
 			eval(read(cSettingsFile))
-			RestoreSettings()
+			RestoreSettings()	
 		}
 
 	/*
@@ -385,3 +388,9 @@ class EnvironmentController from WindowsControllerParent
 		else
 			oView.oDockOutputWindow.hide()
 		}
+
+		# Set The Goal Designer Font
+			parent().cFont = cFont
+			parent().UpdateFont()
+			parent().oView.oStepsTree.nFontSize = nFontSize			
+			parent().UpdateFontSize()
