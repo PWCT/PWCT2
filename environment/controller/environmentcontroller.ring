@@ -10,8 +10,22 @@ class EnvironmentController from WindowsControllerParent
 
 	oView = new EnvironmentView
 
+	cCurrentDir = CurrentDir() + "/"	# The PWCT Folder
+	cSettingsFile = cCurrentDir + "pwct.ini"
+	cFont = "MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0"
+
 	SetParents()
 	SetFocusToStepsTree()
+
+	/*
+		Purpose : Show the window
+		Parameters : None
+		Output : None
+	*/
+	func Start
+		restoreSettings()
+		super.Start()
+		
 
 	/*
 		Purpose : Set the Parent Object for Environment and goal designer
@@ -127,6 +141,7 @@ class EnvironmentController from WindowsControllerParent
 	*/
 
 	func CloseAction		
+		saveSettings()
 		PWCT_APP.Quit()
 
 	/*
@@ -314,4 +329,29 @@ class EnvironmentController from WindowsControllerParent
 			}
 			cText = list2str(aText)			 
  			oProcessEditbox.insertplaintext(cText)
+		}
+
+	/*
+		Purpose : Save Settings 
+		Parameters : None
+		Output : None
+	*/
+
+	func SaveSettings
+		cSettings = "cFont = '" + cFont + "'" + nl + 
+			    "lShowFilesManager = " + oView.oDockFilesManager.isvisible() + nl +
+			    "lShowGoalDesigner = " + oView.oDockGoalDesigner.isvisible() + nl +
+			    "lShowOutputWindow = " + oView.oDockOutputWindow.isvisible() + nl 
+		cSettings = substr(cSettings,nl,char(13)+char(10))
+		write(cSettingsFile,cSettings)
+
+	/*
+		Purpose : Restore Settings
+		Parameters : None
+		Output : None
+	*/
+
+	func RestoreSettings	
+		if fexists(cSettingsFile) { 
+			eval(read(cSettingsFile))
 		}
