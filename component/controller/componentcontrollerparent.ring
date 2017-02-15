@@ -239,10 +239,10 @@ Class ComponentControllerParent from WindowsControllerParent
 	*/
 
 	func OkAction	
-		if nInteractionMode = C_INTERACTIONMODE_MODIFY  or CheckInteract() {
-			GenerateAction()
-			parent().oView.oStepsTree.setFocus(0)
-			CloseBtnAction()				
+		if nInteractionMode = C_INTERACTIONMODE_MODIFY  or ( CheckInteract()  and RulesAllow() ) {
+				GenerateAction()
+				parent().oView.oStepsTree.setFocus(0)
+				CloseBtnAction()				
 		}
 
 	/*
@@ -252,7 +252,7 @@ Class ComponentControllerParent from WindowsControllerParent
 	*/
 
 	func AgainAction	
-		if CheckInteract() {
+		if CheckInteract() and RulesAllow() {
 			noldInteractionMode = nInteractionMode
 			nInteractionMode = C_INTERACTIONMODE_NEW	
 			GenerateAction()
@@ -303,6 +303,17 @@ Class ComponentControllerParent from WindowsControllerParent
 	*/
 
 	func GenerateAction		
+
+	/*
+		Purpose : Check Rules
+		Parameters : None
+		Output : None
+	*/
+
+	func RulesAllow 
+		cParentComponentName = parent().getparentComponentName()
+		nStepNumber = parent().getparentStepNumber()
+		return CheckAllowParent(cParentComponentName,nStepNumber)
 
 	/*
 		Purpose : CheckAllowParent (To be written in the component)

@@ -1080,7 +1080,7 @@ class GoalDesignerController from WindowsControllerParent
 		Output : None
 	*/
 
-	func GetParentStepName
+	func GetParentComponentName
 		GetParentComponentDetails()[1]
 
 	/*
