@@ -304,4 +304,22 @@ Class ComponentControllerParent from WindowsControllerParent
 
 	func GenerateAction		
 
+	/*
+		Purpose : CheckAllowParent (To be written in the component)
+		Parameters : Parent Component Name, Parent Step Number
+		Output : None
+	*/
+
+	func CheckAllowParent cParentComponentName,nParentStepNumber
+		return True
+
+	/*
+		Purpose : CheckAllowChild (To be written in the component)
+		Parameters : Child Component Name, Parent Step Number
+		Output : None
+	*/
+
+	func CheckAllowChild cChildComponentName,nParentStepNumber
+		return True
+
 
