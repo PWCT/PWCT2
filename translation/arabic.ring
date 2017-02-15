@@ -45,6 +45,12 @@
 	T_ENV_MENU_GUILIB = "المكتبة الرسومية"
 	T_ENV_MENU_ABOUT =  "حول"
 
+	# Output Window
+
+	T_ENV_OW_TITLE = "نافذة النتائج"
+	T_ENV_OW_SEND = "ارسال"
+	T_ENV_OW_INPUT = "ادخل :"
+
 # Goal Designer Window
 
 	T_GD_GOALDESIGNER = "مصمم الهدف"			# The Window Title

@@ -379,13 +379,13 @@ class EnvironmentView from WindowsViewParent
 	func createOutputWindow win
 		oProcessWindow = new qWidget()
 		oProcessLabel = new qLabel(oProcessWindow) {
-			setText("Input :")
+			setText(T_ENV_OW_INPUT) # "Input :"
 		}
 		oProcessText = new qlineEdit(oProcessWindow) {
 			setreturnPressedEvent(Method(:SendDataAction))
 		}
 		oProcessbtnSend = new qpushbutton(oProcessWindow) {
-			setText("Send")
+			setText(T_ENV_OW_SEND)	# "Send"
 			setClickevent(Method(:SendDataAction))
 		}
 		oProcessLayout1 = new qhboxlayout() {
@@ -400,7 +400,8 @@ class EnvironmentView from WindowsViewParent
 		}
 		oProcessWindow.setlayout(oProcessLayout2)			
 		oDockOutputWindow = new qDockWidget(win,0) {
+			setLayoutDirection(C_TRANSLATION_ENGLISH)
 			setwidget( oProcessWindow )		
-			setwindowtitle("Output Window")
+			setwindowtitle(T_ENV_OW_TITLE)  # "Output Window"
 		}
 		win.adddockwidget(2,oDockOutputWindow,1)

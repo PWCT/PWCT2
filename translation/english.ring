@@ -45,6 +45,12 @@
 	T_ENV_MENU_GUILIB = "GUI Library"
 	T_ENV_MENU_ABOUT =  "About"
 
+	# Output Window
+
+	T_ENV_OW_TITLE = "Output Window"
+	T_ENV_OW_SEND = "Send"
+	T_ENV_OW_INPUT = "Input :"
+
 # Goal Designer Window
 
 	T_GD_GOALDESIGNER = "Goal Designer"			# The Window Title
