@@ -362,6 +362,13 @@ class GoalDesignerController from WindowsControllerParent
 		}
 		# Time Machine - Present
 			TimeMachineGotoPresent()
+		# Check Rules before the Paste Operation 
+			aPasteRoots = oModel.getpasteTopComponents()
+			for cComponent in aPasteRoots {
+				if not RulesAllow(cComponent) {
+					return
+				}
+			}
 		oParentItem  = oView.oStepsTree.currentItem()
 		nParentStepID = oView.oStepsTree.GetIDByObj(oParentItem)
 		oModel.PasteStep(nParentStepID)

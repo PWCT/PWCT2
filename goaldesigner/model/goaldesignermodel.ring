@@ -97,7 +97,7 @@ class GoalDesignerModel
 	*/
 
 	func GetStepParent nStepID
-		return GetNodeParent(nStepID)
+		return oStepsTreeModel.GetNodeParent(nStepID)
 
 	/*
 		Purpose : Print Steps to Console Window
@@ -267,6 +267,7 @@ class GoalDesignerModel
 		Output : None
 		
 	*/
+
 	func UpdateInteractionIDs 
 		aUpdatedIDs  = []
 		for x = 1 to len(oStepsTreeModel.aBuffer) {
@@ -282,6 +283,45 @@ class GoalDesignerModel
 			}
 		}
 
+	/*
+		Purpose : Get Paste Top Components 
+		We need the list of these components to check the Rules before the paste operation
+		Parameters : None
+		Output : List of Components Names 
+	*/
+
+	func GetPasteTopComponents 
+		# Check if we have steps in the buffer
+			if len(oStepsTreeModel.aBuffer) = 0 {
+				return []	# No top components
+			}
+		# Check if the root is a Generated Step (Component) 
+			nIID = oStepsTreeModel.aBuffer[1][C_TREEMODEL_CONTENT][:interactionid] 
+			cComponent = oInteractionModel.getInteractionComponent(nIID)
+			if cComponent != NULL { # Not Comment 
+				return [cComponent]
+			}
+		# Here the root is a comment (User Step)
+			aOutputList = []
+			aCommentsParent = [ oStepsTreeModel.aBuffer[1][C_TREEMODEL_NODEID] ]
+		# Loop on the Comments Parent List
+			for x = 1 to len(aComponentsFilesList) {
+				# Loop on the Nodes to Paste
+				for t = 2 to len(oStepsTreeModel.aBuffer) {
+					nStepID = oStepsTreeModel.aBuffer[t][C_TREEMODEL_NODEID]
+					nParentID = oStepsTreeModel.aBuffer[t][C_TREEMODEL_PARENTID]
+					nIID = oStepsTreeModel.aBuffer[t][C_TREEMODEL_CONTENT][:interactionid] 
+					cComponent = oInteractionModel.getInteractionComponent(nIID)
+					if find(aCommentsParent,nParentID) {
+						if cComponent = NULL {	# Comment
+							aCommentsParent + nStepID 
+						else					# Generated Step
+							aOutputList + cComponent				
+						}
+					}
+				}
+			}
+			return aOutputList
 
 	/*
 		Purpose : Get the buffer list
