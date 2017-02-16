@@ -1091,3 +1091,45 @@ class GoalDesignerController from WindowsControllerParent
 
 	func GetParentStepNumber
 		return GetParentComponentDetails()[2]
+
+	/*
+		Purpose : Get Component Object
+		Parameters : None
+		Output : None
+	*/
+
+	func GetComponentObject cComponentName
+		cComponentsPath = C_CB_COMPONENTSPATH
+		cFilePath = cComponentsPath + cComponentName + ".ring"
+		if fexists(cFilePath) {
+			if find(aComponentsFilesList,cFilePath) = 0 { 
+				aComponentsFilesList + cFilePath
+				Eval("Load '" + cFilePath + "'")
+			}
+			# Check the Component
+				eval("oObject = new " + cComponentName+:ComponentController) 					
+				return oObject
+		}
+
+	/*
+		Purpose : Check Rules
+		Parameters : None
+		Output : None
+	*/
+
+	func RulesAllow cChildComponentName
+		# Prepare Variables 
+			cParentComponentName = getparentComponentName()
+			nStepNumber = getparentStepNumber()
+			cComponentsPath = C_CB_COMPONENTSPATH
+			cFilePath = cComponentsPath + cParentComponentName + ".ring"
+		# Check that the current component support the parent component 
+			oChild = GetComponentObject(cChildComponentName)
+			lCheck = oChild.CheckAllowParent(cParentComponentName,nStepNumber)
+			if not lCheck { return false } 
+		# Check that the parent component accept the current component 
+			if cParentComponentName = "SP" { return True }
+			oParent = GetComponentObject(cParentComponentName)
+			return oParent.CheckAllowChild(cChildComponentName,nStepNumber)
+
+	

@@ -311,26 +311,7 @@ Class ComponentControllerParent from WindowsControllerParent
 	*/
 
 	func RulesAllow 
-		cParentComponentName = parent().getparentComponentName()
-		nStepNumber = parent().getparentStepNumber()
-		cChildComponentName = cComponent
-		# Check that the current component support the parent component 
-			lCheck = CheckAllowParent(cParentComponentName,nStepNumber)
-			if not lCheck { return false } 
-		# Check that the parent component accept the current component 
-			if cParentComponentName = "SP" { return True }
-			cComponentsPath = C_CB_COMPONENTSPATH
-			cFilePath = cComponentsPath + cParentComponentName + ".ring"
-			if fexists(cFilePath) {
-				if find(aComponentsFilesList,cFilePath) = 0 { 
-					aComponentsFilesList + cFilePath
-					Eval("Load '" + cFilePath + "'")
-				}
-				# Check the Component
-					eval("oObject = new " + cParentComponentName+:ComponentController) 					
-					return oObject.CheckAllowChild(cChildComponentName,nStepNumber)
-			}
-		return True
+		return parent().rulesAllow(cComponent)
 
 	/*
 		Purpose : CheckAllowParent (To be written in the component)
