@@ -343,3 +343,15 @@ Class ComponentControllerParent from WindowsControllerParent
 			return True 
 		}
 		return False
+
+	/*
+		Check that the variable is not empty 
+		Parameters : Variable Name 
+		Output : True (If Empty) and Display Message Box - False if not empty
+	*/
+	func NoValueMsg cVariable 
+		if 	NoValue(cVariable) {
+			msginfo(T_CT_SORRY,T_CT_ENTERREQUIREDDATA)
+			return True
+		}
+		return False 

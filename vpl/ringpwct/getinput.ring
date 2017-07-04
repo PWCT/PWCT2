@@ -11,10 +11,7 @@ Class GetInputComponentController from ComponentControllerParent
 
 	func GenerateAction 
 
-		if NoValue(:text) {
-			msginfo(T_CT_SORRY,T_CT_ENTERREQUIREDDATA)
-			return False 
-		}
+		if NoValueMsg(:text) { return False }
 
 		NewStep(T_CT_GETINPUT_ST_INPUT + StyleData(  Variable(:text) )  ) # "Input " 
 		SetStepCode("Give " + Variable(:text) )	
