@@ -11,7 +11,7 @@ Class GetInputComponentController from ComponentControllerParent
 
 	func GenerateAction 
 
-		if trim(Variable(:text)) = NULL {
+		if NoValue(:text) {
 			msginfo(T_CT_SORRY,T_CT_ENTERREQUIREDDATA)
 			return False 
 		}
