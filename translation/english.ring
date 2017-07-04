@@ -174,6 +174,9 @@ T_CB_COMPONENTSFILE = "vpl/components.pwct"
 # 	Components  Translation
 #==================================================
 
+	T_CT_SORRY = "Sorry"
+	T_CT_ENTERREQUIREDDATA = "Enter the Required Data!"
+
 # Print Component
 
 	# Steps Tree

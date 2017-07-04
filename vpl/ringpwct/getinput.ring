@@ -11,6 +11,11 @@ Class GetInputComponentController from ComponentControllerParent
 
 	func GenerateAction 
 
+		if trim(Variable(:text)) = NULL {
+			msginfo(T_CT_SORRY,T_CT_ENTERREQUIREDDATA)
+			return False 
+		}
+
 		NewStep(T_CT_GETINPUT_ST_INPUT + StyleData(  Variable(:text) )  ) # "Input " 
 		SetStepCode("Give " + Variable(:text) )	
 

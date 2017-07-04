@@ -175,6 +175,9 @@ T_CB_COMPONENTSFILE = "vpl/arabiccomponents.pwct"
 # 	Components  Translation
 #==================================================
 
+	T_CT_SORRY = "عفوا"
+	T_CT_ENTERREQUIREDDATA = "أدخل البيانات المطلوبة!"
+
 # Print Component
 
 	# Steps Tree
