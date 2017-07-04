@@ -11,6 +11,8 @@ Class IfStatementComponentController from ComponentControllerParent
 
 	func GenerateAction 
 
+		if NoValueMsg(:Condition) { return False }
+
 		NewParentStep(T_CT_IFSTATEMENT_ST_IF + StyleData(Variable(:condition) )  )  # "If "
 			SetStepCode("if " +  Variable(:condition) + " { " )
 			AllowInteraction()

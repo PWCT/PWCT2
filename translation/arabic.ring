@@ -223,3 +223,15 @@ T_CB_COMPONENTSFILE = "vpl/arabiccomponents.pwct"
 		T_CT_FORLOOP_IP_TO = "الي : "
 		T_CT_FORLOOP_IP_STEP = "الخطوة : "
 		T_CT_FORLOOP_IP_STARTVALUE = "س = 1"
+
+
+# While Loop Component 
+
+	# Steps Tree
+		T_CT_WHILELOOP_ST_WHILE = "طالما "
+		T_CT_WHILELOOP_ST_STARTHERE = "ابدأ هنا"
+		T_CT_WHILELOOP_ST_ENDOFWHILELOOP = "نهاية حلقة طالما"
+
+	# Interaction Page
+		T_CT_WHILELOOP_IP_TITLE = "مكون حلقة طالما"
+		T_CT_WHILELOOP_IP_CONDITION = "الشرط : "
