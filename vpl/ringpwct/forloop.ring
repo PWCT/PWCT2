@@ -22,6 +22,8 @@ Class ForLoopComponentController from ComponentControllerParent
 				SetStepCode("}")
 			SetActiveStep(oStep)
 
+		return True 
+
 class ForLoopComponentView from ComponentViewParent
 	 
 		Title(T_CT_FORLOOP_IP_TITLE)	# "For Loop Component"

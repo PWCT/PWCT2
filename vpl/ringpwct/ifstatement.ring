@@ -20,6 +20,8 @@ Class IfStatementComponentController from ComponentControllerParent
 				SetStepCode("}")
 			SetActiveStep(oStep)
 
+		return True 
+
 class IfStatementComponentView from ComponentViewParent
 	 
 		Title(T_CT_IFSTEATEMENT_IP_TITLE)	# "If Statement Component"

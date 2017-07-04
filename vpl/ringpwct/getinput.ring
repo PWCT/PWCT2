@@ -14,6 +14,8 @@ Class GetInputComponentController from ComponentControllerParent
 		NewStep(T_CT_GETINPUT_ST_INPUT + StyleData(  Variable(:text) )  ) # "Input " 
 		SetStepCode("Give " + Variable(:text) )	
 
+		return True 
+
 class GetInputComponentView from ComponentViewParent
 	 
 		Title(T_CT_GETINPUT_IP_TITLE)				# "Get Input Component"

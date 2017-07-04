@@ -18,6 +18,8 @@ Class PrintComponentController from ComponentControllerParent
 			SetStepCode("See " + Variable(:text)  )	
 		}
 
+		return True 
+
 	func TypeChangeAction
 		nRow = oView.myList.CurrentRow()
 		cText = oView.myText.text() 
