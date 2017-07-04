@@ -333,3 +333,13 @@ Class ComponentControllerParent from WindowsControllerParent
 		return True
 
 
+	/*
+		Check that the variable is not empty 
+		Parameters : Variable Name 
+		Output : True (If Empty) - False if not empty
+	*/
+	func NoValue cVariable
+		if trim(Variable(:text)) = NULL {
+			return True 
+		}
+		return False
