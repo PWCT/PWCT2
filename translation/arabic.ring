@@ -243,3 +243,12 @@ T_CB_COMPONENTSFILE = "vpl/arabiccomponents.pwct"
 		T_CT_PRINT_IP_LEFTSIDE  = "الطرف الأيسر : "
 		T_CT_PRINT_IP_RIGHTSIDE = "الطرف الأيمن : "
 
+# Else If Component
+
+	# Steps Tree
+		T_CT_ELSEIF_ST_ELSEIF = "إلا إذا "
+		T_CT_ELSEIF_ST_STARTHERE = "ابدأ هنا"
+	
+	# Interaction Page
+		T_CT_ELSEIF_IP_TITLE = "مكون إلا إذا"
+		T_CT_ELSEIF_IP_CONDITION = "الشرط : " 
