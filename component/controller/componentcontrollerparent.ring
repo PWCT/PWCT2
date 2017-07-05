@@ -355,3 +355,8 @@ Class ComponentControllerParent from WindowsControllerParent
 			return True
 		}
 		return False 
+
+	/*
+		Called After Selecting the component, Opening the window
+	*/
+	func AfterOpen

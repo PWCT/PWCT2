@@ -116,6 +116,7 @@ class ComponentsBrowserController from WindowsControllerParent
 				Last_Window().setParentObject(parent())
 				Last_Window().cComponent = cFile
 				Last_Window().nInteractionMode = C_INTERACTIONMODE_NEW
+				Last_Window().AfterOpen()
 			# Clear the Search TextBox
 				oView.oTextSearch.SetText("")
 		}

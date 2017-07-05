@@ -787,6 +787,7 @@ class GoalDesignerController from WindowsControllerParent
 				Last_Window().Start()	# Show The Window
 				oView.widgetVPages.Show()	# Show the Splitter Widget
 				nInteractionPagesToModifyCount++
+				Last_Window().AfterOpen()
 			}
 
 	/*
