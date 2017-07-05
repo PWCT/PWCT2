@@ -295,7 +295,29 @@ Class ComponentControllerParent from WindowsControllerParent
 		Output : Styled Text as String 
 	*/
 	func StyleData cText 
-		return oStyle.text(  cText, "C_STEPCOLOR_DATA_TEXT" ,"C_STEPCOLOR_DATA_BACKCOLOR") 
+		return oStyle.text( htmlspecialchars(cText) , "C_STEPCOLOR_DATA_TEXT" ,"C_STEPCOLOR_DATA_BACKCOLOR") 
+
+	/*
+		HTML Special Character 
+		Input : String contains Special Characters like < and >
+		Output : String to be displayed in HTML pages
+	*/
+	func HTMLSpecialChars cStr
+		cResult = ""
+		if isstring(cStr) and len(cStr) > 0 {
+			for x in cStr {
+				if x = '&'  { 
+					cResult += '&amp;' 
+				elseif x = '"' cResult += '&quot;'
+				elseif x = "'" cResult += '&#039;'
+				elseif x = '<' cResult += '&lt;'
+				elseif x = '>' cResult += '&gt;'
+				elseif x = ' ' cResult += '&nbsp;'
+				else 	    cResult += x
+				}
+			}
+		}
+		return cResult
 
 	/*
 		Purpose : Generate Action (To be written in the component)
@@ -360,3 +382,4 @@ Class ComponentControllerParent from WindowsControllerParent
 		Called After Selecting the component, Opening the window
 	*/
 	func AfterOpen
+

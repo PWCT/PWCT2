@@ -28,3 +28,5 @@ class HTMLStyles
 
 	func image cFile
 		return "<img src='"+cFile+"'> "
+
+
