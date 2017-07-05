@@ -1,6 +1,6 @@
 /*
 **	Project : Programming Without Coding Technology (PWCT) Version 2.0
-**	File Purpose :  WhileLoop Component
+**	File Purpose :  While Loop Component
 **	Date : 2017.07.04
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
