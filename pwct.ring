@@ -63,7 +63,7 @@ Start_Environment()
 	The next function run the Goal Designer Alone
 	It can be used for testing
 	This function was used before creating the PWCT Environment
-	Where everything started from creating the Goal Designer	
+	Where everything started from creating the Goal Designer
 	Parameters : None
 	Output : None
 */
@@ -94,7 +94,7 @@ func Start_Environment
 			if not T_LAYOUTDIRECTION {	# T_LAYOUTDIRECTION = 0 for English
 				StyleFusion()
 			}
-		# Dispaly the splash screen 
+		# Dispaly the splash screen
 			DisplaySplashScreen(PWCT_APP)
 		# Start the PWCT Environment Window
 			Open_Window(:EnvironmentController)
@@ -127,7 +127,7 @@ func DisplaySplashScreen oApp
 	Output : None
 */
 
-func ShowMessage cTitle,cMessage 
+func ShowMessage cTitle,cMessage
 
 	# Create the Messagebox Window
 		win = new qmessagebox(NULL)
@@ -135,9 +135,7 @@ func ShowMessage cTitle,cMessage
 			setwindowtitle(cTitle)
 			settext(cMessage)
 			setstandardbuttons(QMessageBox_Ok)
-			setwindowflags(Qt_WindowStaysOnTopHint) 
+			setwindowflags(Qt_WindowStaysOnTopHint)
 			setwinicon(win,"images/pwct.png")
 			result = exec()
 		}
-
-

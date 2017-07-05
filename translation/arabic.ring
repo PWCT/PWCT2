@@ -235,3 +235,11 @@ T_CB_COMPONENTSFILE = "vpl/arabiccomponents.pwct"
 	# Interaction Page
 		T_CT_WHILELOOP_IP_TITLE = "مكون حلقة طالما"
 		T_CT_WHILELOOP_IP_CONDITION = "الشرط : "
+
+# Assignment Component
+
+	# Interaction Page
+		T_CT_ASSIGNMENT_IP_TITLE = "مكون الإسناد"
+		T_CT_PRINT_IP_LEFTSIDE  = "الطرف الأيسر : "
+		T_CT_PRINT_IP_RIGHTSIDE = "الطرف الأيمن : "
+

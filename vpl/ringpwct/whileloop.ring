@@ -10,8 +10,8 @@ Class WhileLoopComponentController from ComponentControllerParent
 	oView = new WhileLoopComponentView
 
 	func GenerateAction 
-
-		if NoValueMsg(:Condition) { return False }
+								
+		if NoValueMsg(:condition) { return False }
 
 		NewParentStep(T_CT_WHILELOOP_ST_WHILE + StyleData(Variable(:condition) )  )  # "If "
 			SetStepCode("while " +  Variable(:condition) + " { " )
