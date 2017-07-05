@@ -339,7 +339,7 @@ Class ComponentControllerParent from WindowsControllerParent
 		Output : True (If Empty) - False if not empty
 	*/
 	func NoValue cVariable
-		if trim(Variable(:text)) = NULL {
+		if trim(Variable(cVariable)) = NULL {
 			return True 
 		}
 		return False
