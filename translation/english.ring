@@ -271,3 +271,13 @@ T_CB_COMPONENTSFILE = "vpl/components.pwct"
 	# Interaction Page
 		T_CT_SWITCH_IP_TITLE = "Switch Component"
 		T_CT_SWITCH_IP_VARIABLE = "Variable : "
+
+# Case Component 
+
+	# Steps Tree
+		T_CT_CASE_ST_CASE = "Case "
+		T_CT_CASE_ST_STARTHERE = "Start Here"
+
+	# Interaction Page
+		T_CT_CASE_IP_TITLE = "Case Component"
+		T_CT_CASE_IP_VALUE = "Value : "
