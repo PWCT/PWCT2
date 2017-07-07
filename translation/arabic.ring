@@ -323,3 +323,13 @@ T_CB_COMPONENTSFILE = "vpl/arabiccomponents.pwct"
 
 	# Interaction Page
 		T_CT_TRYCATCH_IP_TITLE = "مكون جرب عالج"
+
+
+# Exit Component
+
+	# Steps Tree
+		T_CT_EXIT_ST_EXIT = "خروج من الحلقة "
+		T_CT_EXIT_IP_TITLE = "مكون الخروج"
+
+	# Interaction Page
+		T_CT_EXIT_IP_VALUE = "القيمة : "
