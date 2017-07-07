@@ -333,3 +333,12 @@ T_CB_COMPONENTSFILE = "vpl/arabiccomponents.pwct"
 
 	# Interaction Page
 		T_CT_EXIT_IP_VALUE = "القيمة : "
+
+# Loop Component
+
+	# Steps Tree
+		T_CT_LOOP_ST_LOOP = "تخطي "
+	
+	# Interaction Page
+		T_CT_LOOP_IP_TITLE = "المكون التخطي"
+		T_CT_LOOP_IP_VALUE = "القيمة : "

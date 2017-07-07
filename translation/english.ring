@@ -329,3 +329,12 @@ T_CB_COMPONENTSFILE = "vpl/components.pwct"
 
 	# Interaction Page
 		T_CT_EXIT_IP_VALUE = "Value : "
+
+# Loop Component
+
+	# Steps Tree
+		T_CT_LOOP_ST_LOOP = "Loop "
+	
+	# Interaction Page
+		T_CT_LOOP_IP_TITLE = "Loop Component"
+		T_CT_LOOP_IP_VALUE = "Value : "
