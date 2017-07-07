@@ -13,12 +13,12 @@ Class WhileLoopComponentController from ComponentControllerParent
 								
 		if NoValueMsg(:condition) { return False }
 
-		NewParentStep(T_CT_WHILELOOP_ST_WHILE + StyleData(Variable(:condition) )  )  # "If "
+		NewParentStep(T_CT_WHILELOOP_ST_WHILE + StyleData(Variable(:condition) )  )  
 			SetStepCode("while " +  Variable(:condition) + " { " )
 			AllowInteraction()
-			NewStep(T_CT_WHILELOOP_ST_STARTHERE) # "Start Here"
+			NewStep(T_CT_WHILELOOP_ST_STARTHERE) 
 			oStep = GetActiveStep()
-			NewStep(T_CT_WHILELOOP_ST_ENDOFWHILELOOP) # "End of WhileLoop"
+			NewStep(T_CT_WHILELOOP_ST_ENDOFWHILELOOP) 
 				SetStepCode("}")
 			SetActiveStep(oStep)
 
