@@ -300,3 +300,14 @@ T_CB_COMPONENTSFILE = "vpl/arabiccomponents.pwct"
 		T_CT_FORINLOOP_IP_IN = "في : " 
 		T_CT_FORINLOOP_IP_INVALUE = "القائمة"
 		T_CT_FORLOOP_IP_STEP = "1"
+
+# Do Again Component 
+
+	# Steps Tree
+		T_CT_DOAGAIN_ST_DO = "نفذ "
+		T_CT_DOAGAIN_ST_STARTHERE =  "ابدأ هنا"
+		T_CT_DOAGAIN_ST_AGAIN = "مرة أخرى لو "
+
+	# Interaction Page
+		T_CT_DOAGAIN_IP_TITLE = "مكون نفذ مرة أخرى لو"
+		T_CT_DOAGAIN_IP_CONDITION = "الشرط : "

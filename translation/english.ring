@@ -298,3 +298,14 @@ T_CB_COMPONENTSFILE = "vpl/components.pwct"
 		T_CT_FORINLOOP_IP_IN = "In : " 
 		T_CT_FORINLOOP_IP_INVALUE = "aList"
 		T_CT_FORLOOP_IP_STEP = "1"
+
+# Do Again Component 
+
+	# Steps Tree
+		T_CT_DOAGAIN_ST_DO = "Do "
+		T_CT_DOAGAIN_ST_STARTHERE =  "Start Here"
+		T_CT_DOAGAIN_ST_AGAIN = "Again "
+
+	# Interaction Page
+		T_CT_DOAGAIN_IP_TITLE = "Do Again Component"
+		T_CT_DOAGAIN_IP_CONDITION = "Condition : "
