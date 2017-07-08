@@ -73,8 +73,10 @@ class ComponentViewParent from WindowsViewParent
 		Output : The Checkbox Object
 	*/
 
-	func CheckBox cTitle,cVariable
-		oCheck = new qCheckBox(win) 
+	func CheckBox cText,cVariable
+		oCheck = new qCheckBox(win) {
+			setText(cText)
+		}
 		oLayout = new qHBoxLayout() {
 			AddWidget(oCheck)
 		}
@@ -147,6 +149,8 @@ class ComponentViewParent from WindowsViewParent
 		switch aVariables[nPos][C_INTERACTION_VL_TYPE] {
 			case C_INTERACTION_CT_TEXTBOX 
 				cValue = oObject.text()
+			case C_INTERACTION_CT_CHECKBOX 
+				cValue = oObject.checkstate()
 			case C_INTERACTION_CT_LISTBOX 
 				cValue = oObject.currentrow() + 1
 		}
@@ -165,6 +169,8 @@ class ComponentViewParent from WindowsViewParent
 			switch item[C_INTERACTION_VL_TYPE] {
 			case C_INTERACTION_CT_TEXTBOX 
 				cValue = oObject.text()
+			case C_INTERACTION_CT_CHECKBOX 
+				cValue = "" + oObject.checkstate()
 			case C_INTERACTION_CT_LISTBOX 
 				cValue = "" + (oObject.currentrow() + 1)
 			}
@@ -186,6 +192,8 @@ class ComponentViewParent from WindowsViewParent
 			switch item[C_INTERACTION_VL_TYPE] {
 			case C_INTERACTION_CT_TEXTBOX 
 				oObject.settext(aValues[x])
+			case C_INTERACTION_CT_CHECKBOX
+				oObject.setcheckstate(0+aValues[x])
 			case C_INTERACTION_CT_LISTBOX 
 				oObject.setcurrentrow((0+aValues[x])-1,2 | dec("10"))
 			}

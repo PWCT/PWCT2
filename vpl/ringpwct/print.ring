@@ -39,4 +39,6 @@ class PrintComponentView from ComponentViewParent
 			myList = ListBox(T_CT_PRINT_IP_TYPE, :type , T_CT_PRINT_IP_TYPELIST)  {
 				setCurrentItemChangedEvent( Method(:TypeChangeAction) )
 			}
+		# New Line 
+			CheckBox(T_CT_PRINT_IP_NEWLINE,:newline)
 		PageButtons()

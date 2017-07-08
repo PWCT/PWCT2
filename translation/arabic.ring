@@ -187,6 +187,7 @@ T_CB_COMPONENTSFILE = "vpl/arabiccomponents.pwct"
 		T_CT_PRINT_IP_TEXT = "النص : "
 		T_CT_PRINT_IP_TYPE = "النوع :"
 		T_CT_PRINT_IP_TYPELIST = ["عبارة حرفية","تعبير"]
+		T_CT_PRINT_IP_NEWLINE = "سطر جديد"
 
 # IF Statement Component
 
