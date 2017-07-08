@@ -242,6 +242,9 @@ Class ComponentControllerParent from WindowsControllerParent
 		if nInteractionMode = C_INTERACTIONMODE_MODIFY  or ( CheckInteract()  and RulesAllow() ) {
 				if GenerateAction() {
 					parent().oView.oStepsTree.setFocus(0)
+					# To Correctly draw items (Avoid a Qt bug in drawing)
+						parent().oView.oStepsTree.collapseitem(oItem)
+						parent().oView.oStepsTree.expanditem(oItem)
 					CloseBtnAction()				
 				}
 		}
