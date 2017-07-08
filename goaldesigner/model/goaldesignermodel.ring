@@ -10,6 +10,8 @@ class GoalDesignerModel
 	oStepsTreeModel = new TreeModel
 	oInteractionModel = new InteractionModel
 
+	oInteractionModelBuffer	# Used for Copy/Paste Operation
+
 	# Add the first step
 		AddStep(0,[:name = T_GD_FirstStep ,
 			      :active = True , 
@@ -248,6 +250,9 @@ class GoalDesignerModel
 
 	func CopyStep nStepID
 		oStepsTreeModel.CopyNode(nStepID)
+		# We copy the interaction data to support copying steps from a file
+		# Then paste in another file with different InteractionModel object 
+			oInteractionModelBuffer = oInteractionModel
 
 	/*
 		Purpose : Paste Step
@@ -274,7 +279,7 @@ class GoalDesignerModel
 			nID = oStepsTreeModel.aBuffer[x][C_TREEMODEL_CONTENT][:interactionid] 
 			nPos = find(aUpdatedIDs,nID,1)
 			if nPos = 0 {
-				nNewID = oInteractionModel.NewInteractionIDAfterPaste(nID)
+				nNewID = oInteractionModel.NewInteractionIDAfterPaste(oInteractionModelBuffer,nID)
 				oStepsTreeModel.aBuffer[x][C_TREEMODEL_CONTENT][:interactionid] = nNewID
 				aUpdatedIDs + [nID,nNewID] 
 			else
@@ -297,7 +302,7 @@ class GoalDesignerModel
 			}
 		# Check if the root is a Generated Step (Component) 
 			nIID = oStepsTreeModel.aBuffer[1][C_TREEMODEL_CONTENT][:interactionid] 
-			cComponent = oInteractionModel.getInteractionComponent(nIID)
+			cComponent = oInteractionModelBuffer.getInteractionComponent(nIID)
 			if cComponent != NULL { # Not Comment 
 				return [cComponent]
 			}
@@ -311,7 +316,7 @@ class GoalDesignerModel
 					nStepID = oStepsTreeModel.aBuffer[t][C_TREEMODEL_NODEID]
 					nParentID = oStepsTreeModel.aBuffer[t][C_TREEMODEL_PARENTID]
 					nIID = oStepsTreeModel.aBuffer[t][C_TREEMODEL_CONTENT][:interactionid] 
-					cComponent = oInteractionModel.getInteractionComponent(nIID)
+					cComponent = oInteractionModelBuffer.getInteractionComponent(nIID)
 					if find(aCommentsParent,nParentID) {
 						if cComponent = NULL {	# Comment
 							aCommentsParent + nStepID 

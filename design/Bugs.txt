@@ -8,8 +8,8 @@
 ===========================================================
 Status
 	* Bugs Count : 30
-	* Fixed Bugs : 29
-	* UnFixed Bugs : 1
+	* Fixed Bugs : 30
+	* UnFixed Bugs : 0
 ===========================================================
 (1)  Fixed : We created over 6 thouands steps, then using the search window
 after selecting an item in the search result list we get the next error
@@ -979,7 +979,7 @@ called from line 1  In qapp_exec In method exec() in file ring_qt.ring
 called from line 59  In function test_goaldesigner() in file B:/pwct2/goaldesigner.ring
 called from line 52  in file B:/pwct2/goaldesigner.ring
 =======================================================
-(*)
+(30) Fixed 
 Line 68 Error (R2) : Array Access (Index out of range) !
 In method getinteractioncomponent() in file goaldesigner/model/interactionmodel.ring
 called from line 300  In method getpastetopcomponents() in file goaldesigner/model/goaldesignermodel.ring
@@ -991,6 +991,10 @@ called from line 60  in file B:/pwct2/pwct.ring
 
 The problem is finding the Interaction record when we copy steps from a file
 Then trying to paste in another file that doesn't contains the interaction data 
+
+Solved by using the InteractionBuffer object 
+Where we copy the interactions data when we copy steps 
+
 
 ====================================================
 

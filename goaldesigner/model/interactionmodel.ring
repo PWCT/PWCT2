@@ -65,7 +65,9 @@ class InteractionModel
 		# Find the Interaction record
 			nPos = find(aList,nIID,C_INTERACTIONRECORD_ID)
 		# Return the component file 
-			return aList[nPos][C_INTERACTIONRECORD_COMPONENT]
+			if nPos {
+				return aList[nPos][C_INTERACTIONRECORD_COMPONENT]
+			}
 
 
 	/*
@@ -82,23 +84,26 @@ class InteractionModel
 		The next method is used to update the Interaction ID of a step after paste
 		We create new Interaction Record with the same information
 		But with a different ID
+		We get Interaction Object as parameter because we may copy from 
+		A file but paste in another file (So we have the Interaction Object 
+		from the first file).
 	*/
-	func NewInteractionIDAfterPaste nStepInteractionID
+	func NewInteractionIDAfterPaste oInteractionBuffer,nStepInteractionID
 		# Find the interaction record
-			nPos = find(aList,nStepInteractionID,1)
+			nPos = find(oInteractionBuffer.aList,nStepInteractionID,1)
 		# Check deleted interaction record (Cut/Paste) 
 			if nPos = 0 {
-				nPos = find(aDeletedInteractions,nStepInteractionID,1)
+				nPos = find(oInteractionBuffer.aDeletedInteractions,nStepInteractionID,1)
 				# Check the interaction record
 				if nPos = 0 {
 					return nStepInteractionID
 				else
 					# Get the interaction record
-					aTempList = aDeletedInteractions[nPos]
+					aTempList = oInteractionBuffer.aDeletedInteractions[nPos]
 				}
 			else
 				# Get the interaction record
-				aTempList = aList[nPos]
+				aTempList = oInteractionBuffer.aList[nPos]
 			}
 		# Update the interaction ID
 			nID++		# Increment the ID Counter
