@@ -68,6 +68,21 @@ class ComponentViewParent from WindowsViewParent
 		return oText
 
 	/*
+		Purpose : Display Checkbox in the Interation page
+		Parameters : The Checkbox Title and the Variable Name
+		Output : The Checkbox Object
+	*/
+
+	func CheckBox cTitle,cVariable
+		oCheck = new qCheckBox(win) 
+		oLayout = new qHBoxLayout() {
+			AddWidget(oCheck)
+		}
+		oLayoutAll.AddLayout(oLayout)
+		aVariables + [oCheck,cVariable,C_INTERACTION_CT_CHECKBOX ]
+		return oCheck
+
+	/*
 		Purpose : Add Label+ListBox in the interaction page
 		Parameters : The label title, the variable name and the Listbox items
 		Output : the listbox object
