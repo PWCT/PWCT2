@@ -7,8 +7,8 @@
 
 ===========================================================
 Status
-	* Bugs Count : 28
-	* Fixed Bugs : 27
+	* Bugs Count : 29
+	* Fixed Bugs : 28
 	* UnFixed Bugs : 1
 ===========================================================
 (1)  Fixed : We created over 6 thouands steps, then using the search window
@@ -956,11 +956,8 @@ called from line 322  In method cutstepsaction() in file goaldesigner/controller
 called from line 1  In qapp_exec In method exec() in file ring_qt.ring
 called from line 98  In function start_environment() in file B:/pwct2/pwct.ring
 called from line 56  in file B:/pwct2/pwct.ring
-
 ====================================================
-
 (28) Fixed 
-
 Line 130 Error (R2) : Array Access (Index out of range) !
 In method variable() in file component/view/componentviewparent.ring
 called from line 220  In method variable() in file component/controller/componentcontrollerparent.ring
@@ -972,5 +969,11 @@ called from line 208  In method keypressaction() in file component/controller/co
 called from line 1  In qapp_exec In method exec() in file ring_qt.ring
 called from line 102  In function start_environment() in file B:/pwct2/pwct.ring
 called from line 60  in file B:/pwct2/pwct.ring
-
-
+====================================================
+(29) Fixed 
+Bad drawing for items after interaction
+	In componentcontrollerParent.ring  (OkAction Method)
+					# To Correctly draw items (Avoid a Qt bug in drawing)
+						parent().oView.oStepsTree.collapseitem(oItem)
+						parent().oView.oStepsTree.expanditem(oItem)
+====================================================
