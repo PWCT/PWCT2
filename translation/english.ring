@@ -340,3 +340,12 @@ T_CB_COMPONENTSFILE = "vpl/components.pwct"
 	# Interaction Page
 		T_CT_LOOP_IP_TITLE = "Loop Component"
 		T_CT_LOOP_IP_VALUE = "Value : "
+
+# GetChar() Component 
+
+	# Steps Tree
+		T_CT_GETCHAR_ST_GETCHAR = "Get Character"
+
+	# Interaction Page
+		T_CT_GETCHAR_IP_TITLE = "Get Character Component"
+		T_CT_GETCHAR_IP_OUTPUT = "Output (Variable) : "
