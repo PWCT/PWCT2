@@ -28,15 +28,9 @@ class ForLoopComponentView from ComponentViewParent
 	 
 		Title(T_CT_FORLOOP_IP_TITLE)	# "For Loop Component"
 		# "Start : "
-		TextBox(T_CT_FORLOOP_IP_START , :start) {
-			setText(T_CT_FORLOOP_IP_STARTVALUE)
-		}
+		TextBoxValue(T_CT_FORLOOP_IP_START , :start,T_CT_FORLOOP_IP_STARTVALUE)
 		# "to : "
-		TextBox(T_CT_FORLOOP_IP_TO , :to) {
-			setText("10")
-		}
+		TextBoxValue(T_CT_FORLOOP_IP_TO , :to,"10")
 		# "Step : "
-		TextBox(T_CT_FORLOOP_IP_STEP , :step) {
-			setText("1")
-		}
+		TextBoxValue(T_CT_FORLOOP_IP_STEP , :step,"1")
 		PageButtons()

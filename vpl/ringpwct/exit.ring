@@ -21,7 +21,5 @@ Class ExitComponentController from ComponentControllerParent
 class ExitComponentView from ComponentViewParent
 	 
 		Title(T_CT_EXIT_IP_TITLE)	
-		TextBox(T_CT_EXIT_IP_VALUE , :value) {
-			settext("1")
-		 }
+		TextBoxValue(T_CT_EXIT_IP_VALUE , :value, "1")
 		PageButtons()

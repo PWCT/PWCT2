@@ -21,7 +21,5 @@ Class LoopComponentController from ComponentControllerParent
 class LoopComponentView from ComponentViewParent
 	 
 		Title(T_CT_LOOP_IP_TITLE)	
-		TextBox(T_CT_LOOP_IP_VALUE , :value) {
-			settext("1")
-		 }
+		TextBoxValue(T_CT_LOOP_IP_VALUE , :value,"1")
 		PageButtons()

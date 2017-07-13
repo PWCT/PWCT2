@@ -14,7 +14,7 @@ load "general/globals/globals.ring"
 
 # Load the Translation File
 load "translation/english.ring"
-load "translation/arabic.ring"
+#load "translation/arabic.ring"
 
 # Load the Environment Files
 load "environment/controller/environmentcontroller.ring"

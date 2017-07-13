@@ -21,7 +21,5 @@ Class GetCharComponentController from ComponentControllerParent
 class GetCharComponentView from ComponentViewParent
 	 
 		Title(T_CT_GETCHAR_IP_TITLE)	
-		TextBox(T_CT_GETCHAR_IP_OUTPUT , :Output) {
-			setText("c")
-		}
+		TextBoxValue(T_CT_GETCHAR_IP_OUTPUT , :Output,"c")
 		PageButtons()

@@ -23,10 +23,6 @@ Class InputComponentController from ComponentControllerParent
 class InputComponentView from ComponentViewParent
 	 
 		Title(T_CT_INPUT_IP_TITLE)	
-		TextBox(T_CT_INPUT_IP_COUNT , :Count) {
-			setText("30")
-		}
-		TextBox(T_CT_INPUT_IP_OUTPUT , :Output) {
-			setText(T_CT_INPUT_IP_OUTPUTVARIABLE)
-		}
+		TextBoxValue(T_CT_INPUT_IP_COUNT , :Count, "30")
+		TextBoxValue(T_CT_INPUT_IP_OUTPUT , :Output, T_CT_INPUT_IP_OUTPUTVARIABLE)		
 		PageButtons()
