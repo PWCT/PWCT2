@@ -382,6 +382,21 @@ Class ComponentControllerParent from WindowsControllerParent
 		}
 		return False 
 
+
+	/*
+		Check that each list item is not empty 
+		Parameters : List Name 
+		Output : True (If Empty) and Display Message Box - False if not empty
+	*/
+	func NoValueMsgList aList
+		for cVariable in aList {
+			if 	NoValue(cVariable) {
+				msginfo(T_CT_SORRY,T_CT_ENTERREQUIREDDATA)
+				return True
+			}
+		}
+		return False 
+
 	/*
 		Called After Selecting the component, Opening the window
 	*/
