@@ -401,7 +401,7 @@ Class ComponentControllerParent from WindowsControllerParent
 		Prepare Interaction page variable value to be in Step as Data 		
 	*/
 	func StepData cValue
-		return StyleData(Variable(cValue)
+		return StyleData(Variable(cValue))
 
 	/*
 		Called After Selecting the component, Opening the window
