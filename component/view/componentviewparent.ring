@@ -68,6 +68,14 @@ class ComponentViewParent from WindowsViewParent
 		return oText
 
 	/*
+		Textbox with init. value 
+	*/
+	func TextBoxValue cTitle,cVariable,cValue 
+		Textbox(cTitle,cVariable) {
+			setText(cValue)
+		}
+
+	/*
 		Purpose : Display Checkbox in the Interation page
 		Parameters : The Checkbox Title and the Variable Name
 		Output : The Checkbox Object
