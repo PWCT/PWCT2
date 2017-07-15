@@ -115,8 +115,8 @@ class ComponentViewParent from WindowsViewParent
 			AddWidget(oText)
 		}
 		oLayoutAll.AddLayout(oLayout)
-		aVariables + [oCheck,"cb"+cVariable,C_INTERACTION_CT_CHECKBOX ]
-		aVariables + [oText,"tb"+cVariable,C_INTERACTION_CT_TEXTBOX ]
+		aVariables + [oCheck,"l"+cVariable,C_INTERACTION_CT_CHECKBOX ]
+		aVariables + [oText,cVariable,C_INTERACTION_CT_TEXTBOX ]
 		return [oCheck,oText]
 		
 
