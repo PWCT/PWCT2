@@ -38,7 +38,6 @@ Class CallFuncComponentController from ComponentControllerParent
 		SetStepCode(cOutputEqual + Variable(:Name) + 
 				"(" + Variable(:Parameters) + ")")
 
-
 		return True 
 
 class CallFuncComponentView from ComponentViewParent

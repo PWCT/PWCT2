@@ -381,3 +381,12 @@ T_CB_COMPONENTSFILE = "vpl/components.pwct"
 		T_CT_CALLFUNC_IP_NAME = "Name : "
 		T_CT_CALLFUNC_IP_PARAMETERS = "Parameters : "
 		T_CT_CALLFUNC_IP_OUTPUT = "Output : "
+
+# Return Component
+
+	# Interaction Page
+		T_CT_RETURN_ST_RETURN = "Return "
+
+	# Steps Tree
+		T_CT_RETURN_IP_TITLE = "Return Component"
+		T_CT_RETURN_IP_VALUE = "Value : "

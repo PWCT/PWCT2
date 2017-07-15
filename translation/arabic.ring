@@ -387,3 +387,12 @@ T_CB_COMPONENTSFILE = "vpl/arabiccomponents.pwct"
 		T_CT_CALLFUNC_IP_NAME = "الإسم : "
 		T_CT_CALLFUNC_IP_PARAMETERS = "المعطيات : "
 		T_CT_CALLFUNC_IP_OUTPUT = "الناتج : "
+
+# Return Component
+
+	# Interaction Page
+		T_CT_RETURN_ST_RETURN = "ارجاع قيمة "
+
+	# Steps Tree
+		T_CT_RETURN_IP_TITLE = "مكون إرجاع القيمة"
+		T_CT_RETURN_IP_VALUE = "القيمة : "
