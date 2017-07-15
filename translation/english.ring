@@ -364,7 +364,7 @@ T_CB_COMPONENTSFILE = "vpl/components.pwct"
 # Define Function Component 
 
 	# Steps Tree
-		T_CT_FUNC_ST_FUNC = "func "
+		T_CT_FUNC_ST_FUNC = "function "
 		T_CT_FUNC_ST_STARTHERE = "Start Here"
 		T_CT_FUNC_ST_ENDOFFUNC = "End of Function"
 
@@ -373,3 +373,11 @@ T_CB_COMPONENTSFILE = "vpl/components.pwct"
 		T_CT_FUNC_IP_NAME = "Name : "
 		T_CT_FUNC_IP_PARAMETERS = "Parameters : "
 		T_CT_FUNC_IP_OUTPUT = "Output : "
+
+# Define Call Function Component 
+
+	# Interaction Page
+		T_CT_CALLFUNC_IP_TITLE = "Call Function Component"
+		T_CT_CALLFUNC_IP_NAME = "Name : "
+		T_CT_CALLFUNC_IP_PARAMETERS = "Parameters : "
+		T_CT_CALLFUNC_IP_OUTPUT = "Output : "
