@@ -71,9 +71,10 @@ class ComponentViewParent from WindowsViewParent
 		Textbox with init. value 
 	*/
 	func TextBoxValue cTitle,cVariable,cValue 
-		Textbox(cTitle,cVariable) {
+		oText =Textbox(cTitle,cVariable) {
 			setText(cValue)
 		}
+		return oText
 
 	/*
 		Purpose : Display Checkbox in the Interation page
@@ -91,6 +92,34 @@ class ComponentViewParent from WindowsViewParent
 		oLayoutAll.AddLayout(oLayout)
 		aVariables + [oCheck,cVariable,C_INTERACTION_CT_CHECKBOX ]
 		return oCheck
+
+	/*
+		Purpose : Display Checkbox and Textbox
+		Parameters : The Title and the Variable Name
+		Output : list [The Checkbox Object,The ListBox Object]
+	*/
+
+	func CheckBoxTextBox cText,cVariable
+		oCheck = new qCheckBox(win) {
+			setText(cText)
+		}
+		oText = new qLineEdit(win) {
+			if this.lFirstTextBox {
+				this.lFirstTextBox = False
+				setFocus(0)
+				this.oFirstText = oText
+			}
+		}
+		oLayout = new qHBoxLayout() {
+			AddWidget(oCheck)
+			AddWidget(oText)
+		}
+		oLayoutAll.AddLayout(oLayout)
+		aVariables + [oCheck,"cb"+cVariable,C_INTERACTION_CT_CHECKBOX ]
+		aVariables + [oText,"tb"+cVariable,C_INTERACTION_CT_TEXTBOX ]
+		return [oCheck,oText]
+		
+
 
 	/*
 		Purpose : Add Label+ListBox in the interaction page
