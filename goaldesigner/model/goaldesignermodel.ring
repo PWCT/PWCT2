@@ -238,6 +238,11 @@ class GoalDesignerModel
 	*/
 
 	func CutStep nStepID
+
+		# We copy the interaction data to support copying steps from a file
+		# Then paste in another file with different InteractionModel object 
+			oInteractionModelBuffer = oInteractionModel
+
 		# Delete Interaction Records (The Time Machine keep them in a buffer for paste)
 			DeleteInteractionsRecords(nStepID)
 		oStepsTreeModel.CutNode(nStepID)
