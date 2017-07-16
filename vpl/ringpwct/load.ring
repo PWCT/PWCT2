@@ -10,9 +10,16 @@ Class LoadComponentController from ComponentControllerParent
 	oView = new LoadComponentView
 
 	func GenerateAction 
+
+		cFile = Variable(:file)
+		
+		# No Extension
+		if not substr(cFile,".") {
+			cFile += ".ring"
+		}
 								
-		NewParentStep(T_CT_LOAD_ST_LOAD + StepData(:file)   )  
-			SetStepCode("load " + '"' + Variable(:file) + '"')
+		NewStep(T_CT_LOAD_ST_LOAD + StyleData(cFile)   )  
+			SetStepCode("load " + '"' + cFile + '"')
 
 		return True 
 
