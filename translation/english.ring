@@ -399,3 +399,12 @@ T_CB_COMPONENTSFILE = "vpl/components.pwct"
 	# Steps Tree
 		T_CT_LOAD_IP_TITLE = "Load Component"
 		T_CT_LOAD_IP_FILE = "File : "
+
+# Basic Program Component
+
+	# Steps Tree
+		T_CT_BASICPROGRAM_ST_THEFIRSTSTEP = "The First Step"
+		T_CT_BASICPROGRAM_ST_LOADFILES = "Load Files"
+		T_CT_BASICPROGRAM_ST_STATEMENTS = "Statements"
+		T_CT_BASICPROGRAM_ST_FUNCTIONS = "Functions"
+		T_CT_BASICPROGRAM_ST_CLASSES = "Classes"
