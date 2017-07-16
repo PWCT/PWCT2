@@ -49,5 +49,7 @@ class PrintComponentView from ComponentViewParent
 				setCurrentItemChangedEvent( Method(:TypeChangeAction) )
 			}
 		# New Line 
-			CheckBox(T_CT_PRINT_IP_NEWLINE,:newline)
+			CheckBox(T_CT_PRINT_IP_NEWLINE,:newline) {
+				setcheckstate(2)
+			}
 		PageButtons()
