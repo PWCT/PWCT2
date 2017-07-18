@@ -21,7 +21,7 @@ class ComponentWizardGenerator
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-Class #{f1}ComponentController from ComponentControllerParent 
+class #{f1}ComponentController from ComponentControllerParent 
 
 	oView = new #{f1}ComponentView
 
@@ -67,3 +67,10 @@ class #{f1}ComponentView from ComponentViewParent
 		cFileEnglish = cFile + "English.ring"
 		cFileArabic = cFile + "Arabic.ring"
 		write(cFileComponent,cTemplate)
+		aWords = split(cTemplate," ")
+		aWords = filter(aWords, func cWord { 
+			if left(cWord,2) = "T_" {
+				return True
+			}
+			return False
+		})
