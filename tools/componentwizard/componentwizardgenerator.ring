@@ -42,6 +42,31 @@ class #{f1}ComponentView from ComponentViewParent
 #===========================================
 #===========================================
 
+	cEmptyPageTemplate = cTemplateHeader + `
+class #{f1}ComponentController from ComponentControllerParent 
+
+	oView = new #{f1}ComponentView
+
+	func GenerateAction 
+
+		NewStep( "" ) 
+		SetStepCode("" )
+
+		return True 
+
+	func AfterOpen 
+		OkAction()
+
+class #{f1}ComponentView from ComponentViewParent
+	 
+		Title( T_CT_#{f3}_IP_TITLE )	
+
+		PageButtons()
+`
+#===========================================
+#===========================================
+
+
 
 	func setComponentName cName
 		cComponentName = cName
@@ -62,6 +87,13 @@ class #{f1}ComponentView from ComponentViewParent
 
 	func EmptyComponentTemplate
 		cTemplate = cEmptyComponentTemplate
+		ProcessTemplate(cTemplate)
+
+	func EmptyPageTemplate
+		cTemplate = cEmptyPageTemplate
+		ProcessTemplate(cTemplate)
+
+	func ProcessTemplate cTemplate
 		cTemplate = TemplateValues(cTemplate)
 		cFile = cFolder + "/" + lower(cComponentName) 
 		cFileComponent = cFile + ".ring"

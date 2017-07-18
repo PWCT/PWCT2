@@ -29,6 +29,7 @@ class componentwizardController from windowsControllerParent
 			case 1		# Empty File 
 				oGenerator.EmptyComponentTemplate()
 			case 2		# Empty Page
+				oGenerator.EmptyPageTemplate()
 			case 3		# One Textbox
 			case 4		# Two Textboxes
 			case 5		# Three Textboxes
