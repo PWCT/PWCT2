@@ -10,11 +10,11 @@ class ComponentWizardGenerator
 	cComponentName = ""
 	cComponentConstant = ""
 
-#===========================================
-#===========================================
-	cEmptyComponentTemplate = `
+	cFolder = ""
 
-/*
+#===========================================
+#===========================================
+	cEmptyComponentTemplate = `/*
 **	Project : Programming Without Coding Technology (PWCT) Version 2.0
 **	File Purpose :  #{f1} Component
 **	Date : #{f2}
@@ -34,7 +34,7 @@ Class #{f1}ComponentController from ComponentControllerParent
 
 class #{f1}ComponentView from ComponentViewParent
 	 
-		Title(T_CT_#{f3}_IP_TITLE)	
+		Title( T_CT_#{f3}_IP_TITLE )	
 
 		PageButtons()
 `
@@ -46,10 +46,24 @@ class #{f1}ComponentView from ComponentViewParent
 		cComponentName = cName
 		cComponentConstant = UPPER(cName)
 
+	func setFolder cName 
+		cFolder = cName
+
+	func mydate
+		aList = TimeList()
+		return aList[19] + "." + aList[10] + "." + aList[6]		
+
 	func TemplateValues cTemplate
 		cTemplate = substr(cTemplate,"#{f1}",cComponentName)
-		cTemplate = substr(cTemplate,"#{f2}",date())
+		cTemplate = substr(cTemplate,"#{f2}",mydate())
 		cTemplate = substr(cTemplate,"#{f3}",cComponentConstant)
+		return cTemplate
 
 	func EmptyComponentTemplate
-		cTemplate = cEmptyComponentTemplate 
+		cTemplate = cEmptyComponentTemplate
+		cTemplate = TemplateValues(cTemplate)
+		cFile = cFolder + "/" + lower(cComponentName) 
+		cFileComponent = cFile + ".ring"
+		cFileEnglish = cFile + "English.ring"
+		cFileArabic = cFile + "Arabic.ring"
+		write(cFileComponent,cTemplate)
