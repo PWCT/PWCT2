@@ -75,3 +75,10 @@ class #{f1}ComponentView from ComponentViewParent
 			}
 			return False
 		})
+		for word in aWords {
+			word += ' = "" '
+		}
+		cTranslationFile =  TemplateValues(cTemplateHeader) + 
+					WindowsNL() + list2str(aWords)
+		write(cFileEnglish,cTranslationFile)
+		write(cFileArabic,cTranslationFile)
