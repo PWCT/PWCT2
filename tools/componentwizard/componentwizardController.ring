@@ -17,6 +17,20 @@ class componentwizardController from windowsControllerParent
 
 	oView = new componentwizardView
 
+	aQuickScripts = [
+`NewStep( "" ) 
+SetStepCode("" )`,
+`
+`,
+`
+`
+]
+
+	PrepareView()
+
+	func PrepareView
+		oView.textQuickScript.setPlaintext(aQuickScripts[1])
+
 	func CloseApp
 		oView.Close()
 
@@ -60,5 +74,4 @@ class componentwizardController from windowsControllerParent
 	func stcheck
 
 	func quickScripts
-
-
+		oView.textQuickScript.setPlaintext(aQuickScripts[oView.ComboQuickScript.CurrentIndex()])	
