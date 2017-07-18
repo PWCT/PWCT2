@@ -1,6 +1,7 @@
 # Form/Window Controller - Source Code File
 
 load "componentwizardView.ring"
+load "componentwizardgenerator.ring"
 
 import System.GUI
 
@@ -20,3 +21,6 @@ class componentwizardController from windowsControllerParent
 		oView.Close()
 
 	func GenerateCode
+
+	func ChangeTemplate
+		
