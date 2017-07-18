@@ -59,28 +59,36 @@ SetStepCode("" )',
 			case 2		# Empty Page
 				oGenerator.EmptyPageTemplate()
 			case 3		# One Textbox
+				oGenerator.OneTextboxTemplate()
 			case 4		# Two Textboxes
+				oGenerator.TwoTextboxesTemplate()
 			case 5		# Three Textboxes
+				oGenerator.ThreeTextboxesTemplate()
 		}
 
 	func ChangeTemplate
 		switch oView.listTemplate.currentrow() {
 			case 1		# Empty File 
-				cText = "Interaction Page - Title"
+				cText = "Interaction Page - Title" + WindowsNL() +
+				"Steps Tree Constants"
 			case 2		# Empty Page
-				cText = "Interaction Page - Title"
+				cText = "Interaction Page - Title" + WindowsNL() +
+				"Steps Tree Constants"
 			case 3		# One Textbox
 				cText = "Interaction Page - Title" + WindowsNL() +
-				"First Label (First Textbox)" 
+				"First Label (First Textbox)" + WindowsNL() +
+				"Steps Tree Constants"
 			case 4		# Two Textboxes
 				cText = "Interaction Page - Title" + WindowsNL() +
 				"First Label (First Textbox)" + WindowsNL() +
-				"Second Label (Second Textbox)" 
+				"Second Label (Second Textbox)" + WindowsNL() +
+				"Steps Tree Constants"
 			case 5		# Three Textboxes
 				cText = "Interaction Page - Title" + WindowsNL() +
 				"First Label (First Textbox)" + WindowsNL() +
 				"Second Label (Second Textbox)"  + WindowsNL() +
-				"Third Label (Third Textbox)"  
+				"Third Label (Third Textbox)"  + WindowsNL() +
+				"Steps Tree Constants"
 		}		
 		oView.textInfo.setplaintext(cText)
 

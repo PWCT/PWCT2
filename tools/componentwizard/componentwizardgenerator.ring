@@ -102,6 +102,12 @@ class #{f1}ComponentView from ComponentViewParent
 		cTemplate = cEmptyPageTemplate
 		ProcessTemplate(cTemplate)
 
+	func OneTextboxTemplate
+
+	func TwoTextboxesTemplate
+
+	func ThreeTextboxesTemplate
+
 	func ProcessTemplate cTemplate
 		cTemplate = TemplateValues(cTemplate)
 		cFile = cFolder + "/" + lower(cComponentName) 
