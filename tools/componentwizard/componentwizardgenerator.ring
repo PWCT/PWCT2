@@ -116,10 +116,23 @@ class #{f1}ComponentView from ComponentViewParent
 			}
 			return False
 		})
-		for word in aWords {
-			word += ' = "" '
+		aWordsEnglish = aWords 
+		aWordsArabic = aWords
+		aEnglishData = str2list(cEnglishData)
+		aArabicData = str2list(cArabicData)
+		nIndex = 1
+		for word in aWordsEnglish {
+			word += ' = "' + aEnglishData[nIndex] + '"'
+			nIndex++
 		}
-		cTranslationFile =  TemplateValues(cTemplateHeader) + 
-					WindowsNL() + list2str(aWords)
-		write(cFileEnglish,cTranslationFile)
-		write(cFileArabic,cTranslationFile)
+		nIndex = 1
+		for word in aWordsArabic {
+			word += ' = "' + aArabicData[nIndex] + '"'
+			nIndex++
+		}
+		cEnglishFile =  TemplateValues(cTemplateHeader) + 
+					WindowsNL() + list2str(aWordsEnglish)
+		cArabicFile =  TemplateValues(cTemplateHeader) + 
+					WindowsNL() + list2str(aWordsArabic)
+		write(cFileEnglish,cEnglishFile)
+		write(cFileArabic,cArabicFile)
