@@ -85,34 +85,34 @@ SetStepCode("" )',
 		oView.textInfo.setplaintext(cText)
 
 	func ststep
-		oView.TextStepsTree.insertplaintext('')		
+		oView.TextStepsTree.insertplaintext('NewStep("")')		
 
 	func stparentstep
-		oView.TextStepsTree.insertplaintext('')		
+		oView.TextStepsTree.insertplaintext('NewParentStep("")')		
 
 	func ststepcode
-		oView.TextStepsTree.insertplaintext('')		
+		oView.TextStepsTree.insertplaintext('SteStepCode("")')		
 
 	func ststepdata
-		oView.TextStepsTree.insertplaintext('')		
+		oView.TextStepsTree.insertplaintext('StepData(:xxx)')		
 
 	func stvariable
-		oView.TextStepsTree.insertplaintext('')		
+		oView.TextStepsTree.insertplaintext('Variable(:xxx)')		
 
 	func stconstant
-		oView.TextStepsTree.insertplaintext('')		
+		oView.TextStepsTree.insertplaintext('T_CT_XXX_ST_')		
 
 	func stga
-		oView.TextStepsTree.insertplaintext('')		
+		oView.TextStepsTree.insertplaintext('oStep = GetActiveStep()')		
 
 	func stsa
-		oView.TextStepsTree.insertplaintext('')		
+		oView.TextStepsTree.insertplaintext('SetActiveStep(oStep)')		
 
 	func stai
-		oView.TextStepsTree.insertplaintext('')		
+		oView.TextStepsTree.insertplaintext('AllowInteraction()')		
 
 	func stcheck
-		oView.TextStepsTree.insertplaintext('')		
+		oView.TextStepsTree.insertplaintext('	if NoValueMsg(:XXX) { return False }')		
 
 	func quickScripts
 		oView.textQuickScript.setPlaintext(aQuickScripts[oView.ComboQuickScript.CurrentIndex()])	
