@@ -85,24 +85,34 @@ SetStepCode("" )',
 		oView.textInfo.setplaintext(cText)
 
 	func ststep
+		oView.TextStepsTree.insertplaintext('')		
 
 	func stparentstep
+		oView.TextStepsTree.insertplaintext('')		
 
 	func ststepcode
+		oView.TextStepsTree.insertplaintext('')		
 
 	func ststepdata
+		oView.TextStepsTree.insertplaintext('')		
 
 	func stvariable
+		oView.TextStepsTree.insertplaintext('')		
 
 	func stconstant
+		oView.TextStepsTree.insertplaintext('')		
 
 	func stga
+		oView.TextStepsTree.insertplaintext('')		
 
 	func stsa
+		oView.TextStepsTree.insertplaintext('')		
 
 	func stai
+		oView.TextStepsTree.insertplaintext('')		
 
 	func stcheck
+		oView.TextStepsTree.insertplaintext('')		
 
 	func quickScripts
 		oView.textQuickScript.setPlaintext(aQuickScripts[oView.ComboQuickScript.CurrentIndex()])	
