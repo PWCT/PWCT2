@@ -42,6 +42,7 @@ SetStepCode("" )',
 
 	func PrepareView
 		oView.textQuickScript.setPlaintext(aQuickScripts[1])
+		ChangeTemplate()
 
 	func CloseApp
 		oView.Close()
@@ -52,8 +53,7 @@ SetStepCode("" )',
 		oGenerator.setFolder(oView.textFolder.text())
 		oGenerator.setEnglishData(oView.textEnglish.toPlaintext())
 		oGenerator.setArabicData(oView.textArabic.toPlaintext())
-		nTemplate = oView.ListTemplate.currentrow()
-		switch nTemplate {
+		switch oView.ListTemplate.currentrow() {
 			case 1		# Empty File 
 				oGenerator.EmptyComponentTemplate()
 			case 2		# Empty Page
@@ -64,7 +64,26 @@ SetStepCode("" )',
 		}
 
 	func ChangeTemplate
-		
+		switch oView.listTemplate.currentrow() {
+			case 1		# Empty File 
+				cText = "Interaction Page - Title"
+			case 2		# Empty Page
+				cText = "Interaction Page - Title"
+			case 3		# One Textbox
+				cText = "Interaction Page - Title" + WindowsNL() +
+				"First Label (First Textbox)" 
+			case 4		# Two Textboxes
+				cText = "Interaction Page - Title" + WindowsNL() +
+				"First Label (First Textbox)" + WindowsNL() +
+				"Second Label (Second Textbox)" 
+			case 5		# Three Textboxes
+				cText = "Interaction Page - Title" + WindowsNL() +
+				"First Label (First Textbox)" + WindowsNL() +
+				"Second Label (Second Textbox)"  + WindowsNL() +
+				"Third Label (Third Textbox)"  
+		}		
+		oView.textInfo.setplaintext(cText)
+
 	func ststep
 
 	func stparentstep
