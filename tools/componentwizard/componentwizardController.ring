@@ -85,22 +85,26 @@ SetStepCode("" )',
 		oView.textInfo.setplaintext(cText)
 
 	func ststep
-		oView.TextStepsTree.insertplaintext('NewStep("")')		
+		oView.TextStepsTree.insertplaintext('NewStep()')		
 
 	func stparentstep
-		oView.TextStepsTree.insertplaintext('NewParentStep("")')		
+		oView.TextStepsTree.insertplaintext('NewParentStep()')		
 
 	func ststepcode
 		oView.TextStepsTree.insertplaintext('SteStepCode("")')		
 
 	func ststepdata
-		oView.TextStepsTree.insertplaintext('StepData(:xxx)')		
+		cVar = InputBox("Step Data","Variable :")
+		oView.TextStepsTree.insertplaintext('StepData(:'+cVar+')')		
 
 	func stvariable
-		oView.TextStepsTree.insertplaintext('Variable(:xxx)')		
+		cVar = InputBox("Step Data","Variable :")
+		oView.TextStepsTree.insertplaintext('Variable(:'+cVar+')')		
 
 	func stconstant
-		oView.TextStepsTree.insertplaintext('T_CT_XXX_ST_')		
+		cComponent = UPPER(oView.textName.text())
+		cVar = UPPER(InputBox("Step Data","Variable :"))
+		oView.TextStepsTree.insertplaintext('T_CT_'+cComponent+'_ST_'+cVar)		
 
 	func stga
 		oView.TextStepsTree.insertplaintext('oStep = GetActiveStep()')		
@@ -112,7 +116,8 @@ SetStepCode("" )',
 		oView.TextStepsTree.insertplaintext('AllowInteraction()')		
 
 	func stcheck
-		oView.TextStepsTree.insertplaintext('	if NoValueMsg(:XXX) { return False }')		
+		cVar = InputBox("Step Data","Variable :")
+		oView.TextStepsTree.insertplaintext('	if NoValueMsg(:'+cVar+') { return False }')		
 
 	func quickScripts
 		oView.textQuickScript.setPlaintext(aQuickScripts[oView.ComboQuickScript.CurrentIndex()])	
