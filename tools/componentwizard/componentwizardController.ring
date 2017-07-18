@@ -39,3 +39,23 @@ class componentwizardController from windowsControllerParent
 
 	func ChangeTemplate
 		
+	func ststep
+
+	func stparentstep
+
+	func ststepcode
+
+	func ststepdata
+
+	func stvariable
+
+	func stconstant
+
+	func stga
+
+	func stsa
+
+	func stai
+
+	func stcheck
+
