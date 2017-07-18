@@ -59,3 +59,6 @@ class componentwizardController from windowsControllerParent
 
 	func stcheck
 
+	func quickScripts
+
+
