@@ -14,13 +14,14 @@ class ComponentWizardGenerator
 
 #===========================================
 #===========================================
-	cEmptyComponentTemplate = `/*
+	cTemplateHeader = `/*
 **	Project : Programming Without Coding Technology (PWCT) Version 2.0
 **	File Purpose :  #{f1} Component
 **	Date : #{f2}
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
-
+`
+	cEmptyComponentTemplate = cTemplateHeader + `
 class #{f1}ComponentController from ComponentControllerParent 
 
 	oView = new #{f1}ComponentView
