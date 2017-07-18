@@ -12,6 +12,9 @@ class ComponentWizardGenerator
 
 	cFolder = ""
 
+	cEnglishData = ""
+	cArabicData = ""
+
 #===========================================
 #===========================================
 	cTemplateHeader = `/*
@@ -74,6 +77,12 @@ class #{f1}ComponentView from ComponentViewParent
 
 	func setFolder cName 
 		cFolder = cName
+
+	func setEnglishData cData
+		cEnglishData = cData
+
+	func setArabicData cData
+		cArabicData = cData
 
 	func mydate
 		aList = TimeList()

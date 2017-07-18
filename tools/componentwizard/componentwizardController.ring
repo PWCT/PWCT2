@@ -24,6 +24,8 @@ class componentwizardController from windowsControllerParent
 		oGenerator = new ComponentWizardGenerator 
 		oGenerator.setComponentName(oView.textName.text())
 		oGenerator.setFolder(oView.textFolder.text())
+		oGenerator.setEnglishData(oView.textEnglish.toPlaintext())
+		oGenerator.setArabicData(oView.textArabic.toPlaintext())
 		nTemplate = oView.ListTemplate.currentrow()
 		switch nTemplate {
 			case 1		# Empty File 
