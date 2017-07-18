@@ -1,8 +1,8 @@
 # Start Form Designer File
 aObjectsList = [
 	[ :name = "Window" , :id = 1 , :classname = "formdesigner_qwidget" , :data = [
-		 :x = 0 , : y = 3  , 
-		 :width =  677 , :height = 527 , 
+		 :x = 0 , : y = -44  , 
+		 :width =  677 , :height = 574 , 
 		 :title =  "Component Wizard" , 
 		 :backcolor =  "" , 
 		 :windowflags =  "Qt_Window | Qt_WindowTitleHint | Qt_WindowSystemMenuHint | Qt_WindowCloseButtonHint | Qt_CustomizeWindowHint" , 
@@ -104,13 +104,13 @@ aObjectsList = [
 	],
 	[ :name = "ListWidget1" , :id = 9 , :classname = "formdesigner_qlistwidget" , :data = [
 		 :x = 93 , : y = 123  , 
-		 :width =  392 , :height = 192 , 
+		 :width =  392 , :height = 112 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
 		 :font =  "Arial" , 
 		 :parent =  "win"  ,
 		 :cItems =  "Empty File,Empty Page,One Textbox,Two Textboxes,Three Textboxes",
-		 :cCurrentRow =  "",
+		 :cCurrentRow =  "1",
 		 :setcurrentItemChangedEvent =  "",
 		 :setcurrentRowChangedEvent =  "",
 		 :setcurrentTextChangedEvent =  "",
@@ -124,18 +124,18 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Label4" , :id = 10 , :classname = "formdesigner_qlabel" , :data = [
-		 :x = 20 , : y = 327  , 
+		 :x = 20 , : y = 367  , 
 		 :width =  68 , :height = 27 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
 		 :font =  "Arial" , 
 		 :parent =  "win"  ,
-		 :text =  "Data",
+		 :text =  "Data :",
 		 :textalign =  0
 		]
 	],
 	[ :name = "Tab1" , :id = 11 , :classname = "formdesigner_qtabwidget" , :data = [
-		 :x = 90 , : y = 335  , 
+		 :x = 90 , : y = 375  , 
 		 :width =  393 , :height = 143 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
@@ -145,7 +145,7 @@ aObjectsList = [
 		 :PagesTitles =  "English,Arabic"
 		]
 	],
-	[ :name = "TextEdit1" , :id = 13 , :classname = "formdesigner_qtextedit" , :data = [
+	[ :name = "TextEnglish" , :id = 13 , :classname = "formdesigner_qtextedit" , :data = [
 		 :x = 4 , : y = 5  , 
 		 :width =  370 , :height = 100 , 
 		 :textcolor =  "black" , 
@@ -162,13 +162,41 @@ aObjectsList = [
 		 :setundoAvailableEvent =  ""
 		]
 	],
-	[ :name = "TextEdit2" , :id = 14 , :classname = "formdesigner_qtextedit" , :data = [
+	[ :name = "TextArabic" , :id = 14 , :classname = "formdesigner_qtextedit" , :data = [
 		 :x = 4 , : y = 5  , 
 		 :width =  370 , :height = 100 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
 		 :font =  "Arial" , 
 		 :parent =  "Tab1Page2"  ,
+		 :text =  "",
+		 :setcopyAvailableEvent =  "",
+		 :setcurrentCharFormatChangedEvent =  "",
+		 :setcursorPositionChangedEvent =  "",
+		 :setredoAvailableEvent =  "",
+		 :setselectionChangedEvent =  "",
+		 :settextChangedEvent =  "",
+		 :setundoAvailableEvent =  ""
+		]
+	],
+	[ :name = "Label13" , :id = 15 , :classname = "formdesigner_qlabel" , :data = [
+		 :x = 22 , : y = 243  , 
+		 :width =  59 , :height = 27 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Info : ",
+		 :textalign =  0
+		]
+	],
+	[ :name = "TextInfo" , :id = 17 , :classname = "formdesigner_qtextedit" , :data = [
+		 :x = 93 , : y = 248  , 
+		 :width =  392 , :height = 111 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
 		 :text =  "",
 		 :setcopyAvailableEvent =  "",
 		 :setcurrentCharFormatChangedEvent =  "",
