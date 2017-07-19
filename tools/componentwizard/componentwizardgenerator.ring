@@ -137,12 +137,22 @@ class #{f1}ComponentView from ComponentViewParent
 		aArabicData = str2list(cArabicData)
 		nIndex = 1
 		for word in aWordsEnglish {
-			word += ' = "' + aEnglishData[nIndex] + '"'
+			if nIndex <= len(aEnglishData) {
+				cValue = aEnglishData[nIndex]
+			else
+				cValue = ""
+			}
+			word += ' = "' + cValue + '"'
 			nIndex++
 		}
 		nIndex = 1
 		for word in aWordsArabic {
-			word += ' = "' + aArabicData[nIndex] + '"'
+			if nIndex <= len(aArabicData) {
+				cValue = aArabicData[nIndex]
+			else
+				cValue = ""
+			}
+			word += ' = "' + cValue + '"'
 			nIndex++
 		}
 		cEnglishFile =  TemplateValues(cTemplateHeader) + 

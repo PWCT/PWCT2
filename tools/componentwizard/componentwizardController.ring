@@ -23,16 +23,16 @@ SetStepCode("" )',
 'NewParentStep("" )
 	SetStepCode("" )
 	AllowInteraction()
-	NewStep(T_CT_XXX_ST_STARTHERE)
+	NewStep( T_CT_XXX_ST_STARTHERE )
 	oStep = GetActiveStep()
 	SetActiveStep(oStep)
 ',
 'NewParentStep("" )
 	SetStepCode("" )
 	AllowInteraction()
-	NewStep(T_CT_XXX_ST_STARTHERE)
+	NewStep( T_CT_XXX_ST_STARTHERE )
 	oStep = GetActiveStep()
-	NewStep(T_CT_XXX_ST_END)
+	NewStep( T_CT_XXX_ST_END )
 		SetStepCode("")
 	SetActiveStep(oStep)
 '
@@ -113,7 +113,7 @@ SetStepCode("" )',
 	func stconstant
 		cComponent = UPPER(oView.textName.text())
 		cVar = UPPER(InputBox("Step Data","Variable :"))
-		oView.TextStepsTree.insertplaintext('T_CT_'+cComponent+'_ST_'+cVar)		
+		oView.TextStepsTree.insertplaintext(' T_CT_'+cComponent+'_ST_'+cVar + " ")		
 
 	func stga
 		oView.TextStepsTree.insertplaintext('oStep = GetActiveStep()')		
