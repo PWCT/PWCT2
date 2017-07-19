@@ -167,3 +167,24 @@ class #{f1}ComponentView from ComponentViewParent
 					WindowsNL() + list2str(aWordsArabic)
 		write(cFileEnglish,cEnglishFile)
 		write(cFileArabic,cArabicFile)
+
+		# Update useenglish.ring and usearabic.ring 
+		# To load translation files 
+
+		cUseEnglishFile = cFolder + "/translation/useenglish.ring"
+		cUseArabicFile = cFolder + "/translation/usearabic.ring"
+		cUseEnglish = read(cUseEnglishFile)
+		cUseArabic = read(cUseArabicFile)
+
+		cAddUseEnglish = 'load "english/' + lower(cComponentName)  + 'English.ring"'
+		cAddUseArabic = 'load "arabic/' + lower(cComponentName)  + 'Arabic.ring"'
+
+		if not substr(cUseEnglish,cAddUseEnglish) {
+			cUseEnglish += WindowsNl() + cAddUseEnglish
+			Write(cUseEnglishFile,cUseEnglish)
+		}
+
+		if not substr(cUseArabic,cAddUseArabic) {
+			cUseArabic += WindowsNl() + cAddUseArabic
+			Write(cUseArabicFile,cUseArabic)
+		}
