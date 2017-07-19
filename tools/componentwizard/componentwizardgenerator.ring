@@ -165,6 +165,8 @@ class #{f1}ComponentView from ComponentViewParent
 					WindowsNL() + list2str(aWordsEnglish)
 		cArabicFile =  TemplateValues(cTemplateHeader) + 
 					WindowsNL() + list2str(aWordsArabic)
+		cEnglishFile = substr(cEnglishFile,nl,Windowsnl())
+		cArabicFile = substr(cArabicFile,nl,Windowsnl())
 		write(cFileEnglish,cEnglishFile)
 		write(cFileArabic,cArabicFile)
 
