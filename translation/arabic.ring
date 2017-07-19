@@ -180,7 +180,6 @@ T_CB_COMPONENTSFILE = "vpl/arabiccomponents.pwct"
 	T_CT_SORRY = "عفوا"
 	T_CT_ENTERREQUIREDDATA = "أدخل البيانات المطلوبة!"
 
-
 # Load Components Translation
 
 	load "../vpl/ringpwct/translation/usearabic.ring"

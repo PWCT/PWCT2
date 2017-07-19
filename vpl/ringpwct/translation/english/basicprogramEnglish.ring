@@ -1,0 +1,8 @@
+# Basic Program Component
+
+	# Steps Tree
+		T_CT_BASICPROGRAM_ST_THEFIRSTSTEP = "The First Step"
+		T_CT_BASICPROGRAM_ST_LOADFILES = "Load Files"
+		T_CT_BASICPROGRAM_ST_STATEMENTS = "Statements"
+		T_CT_BASICPROGRAM_ST_FUNCTIONS = "Functions"
+		T_CT_BASICPROGRAM_ST_CLASSES = "Classes"
