@@ -124,7 +124,13 @@ class #{f1}ComponentView from ComponentViewParent
 		cFileEnglish = cFile + "English.ring"
 		cFileArabic = cFile + "Arabic.ring"
 		write(cFileComponent,cTemplate)
-		aWords = split(cTemplate," ")
+		# We will reverse the classes (User Interface will be first)
+		# So we can get Interaction Page constants first	
+		# Then the Steps Tree Constants 
+			nPos = substr(cTemplate,"ComponentViewParent")
+			cWordsTemplate = substr(cTemplate,nPos) +
+						substr(cTemplate,1,nPos)
+		aWords = split(cWordsTemplate," ")
 		aWords = filter(aWords, func cWord { 
 			if left(cWord,2) = "T_" {
 				return True
