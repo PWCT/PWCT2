@@ -1,6 +1,6 @@
-# Assignment Component
+๏ปฟ# Assignment Component
 
 	# Interaction Page
-		T_CT_ASSIGNMENT_IP_TITLE = "ใ฿ๆไ วแลำไวฯ"
-		T_CT_PRINT_IP_LEFTSIDE  = "วแุัÝ วแรํำั : "
-		T_CT_PRINT_IP_RIGHTSIDE = "วแุัÝ วแรํใไ : "
+		T_CT_ASSIGNMENT_IP_TITLE = "ู…ููู ุงูุฅุณูุงุฏ"
+		T_CT_PRINT_IP_LEFTSIDE  = "ุงูุทุฑู ุงูุฃูุณุฑ : "
+		T_CT_PRINT_IP_RIGHTSIDE = "ุงูุทุฑู ุงูุฃูู…ู : "

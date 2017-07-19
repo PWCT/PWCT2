@@ -1,12 +1,12 @@
-# Print Component
+๏ปฟ# Print Component
 
 	# Steps Tree
-		T_CT_PRINT_ST_PRINT = "วุศฺ "
-		T_CT_PRINT_ST_NEWLINE  = " (ำุั ฬฯํฯ) "
+		T_CT_PRINT_ST_PRINT = "ุงุทุจุน "
+		T_CT_PRINT_ST_NEWLINE  = " (ุณุทุฑ ุฌุฏูุฏ) "
 
 	# Interaction Page
-		T_CT_PRINT_IP_TITLE  = "ใ฿ๆไ วแุศวฺษ"
-		T_CT_PRINT_IP_TEXT = "วแไี : "
-		T_CT_PRINT_IP_TYPE = "วแไๆฺ :"
-		T_CT_PRINT_IP_TYPELIST = ["ฺศวัษ อัÝํษ","สฺศํั"]
-		T_CT_PRINT_IP_NEWLINE = "ำุั ฬฯํฯ"
+		T_CT_PRINT_IP_TITLE  = "ู…ููู ุงูุทุจุงุนุฉ"
+		T_CT_PRINT_IP_TEXT = "ุงููุต : "
+		T_CT_PRINT_IP_TYPE = "ุงูููุน :"
+		T_CT_PRINT_IP_TYPELIST = ["ุนุจุงุฑุฉ ุญุฑููุฉ","ุชุนุจูุฑ"]
+		T_CT_PRINT_IP_NEWLINE = "ุณุทุฑ ุฌุฏูุฏ"

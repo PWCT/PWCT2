@@ -1,8 +1,8 @@
-# Loop Component
+пїњ# Loop Component
 
 	# Steps Tree
-		T_CT_LOOP_ST_LOOP = " ќЎн "
+		T_CT_LOOP_ST_LOOP = "Ў™ЎЃЎЈўК "
 	
 	# Interaction Page
-		T_CT_LOOP_IP_TITLE = "«бгяжд «б ќЎн"
-		T_CT_LOOP_IP_VALUE = "«бёнг… : "
+		T_CT_LOOP_IP_TITLE = "ЎІўДўЕўГўИўЖ ЎІўДЎ™ЎЃЎЈўК"
+		T_CT_LOOP_IP_VALUE = "ЎІўДўВўКўЕЎ© : "

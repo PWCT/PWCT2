@@ -1,7 +1,7 @@
-# Call Function Component 
+๏ปฟ# Call Function Component 
 
 	# Interaction Page
-		T_CT_CALLFUNC_IP_TITLE = "ใ฿ๆไ ลำสฯฺวม วแฯวแษ"
-		T_CT_CALLFUNC_IP_NAME = "วแลำใ : "
-		T_CT_CALLFUNC_IP_PARAMETERS = "วแใฺุํวส : "
-		T_CT_CALLFUNC_IP_OUTPUT = "วแไวสฬ : "
+		T_CT_CALLFUNC_IP_TITLE = "ู…ููู ุฅุณุชุฏุนุงุก ุงูุฏุงูุฉ"
+		T_CT_CALLFUNC_IP_NAME = "ุงูุฅุณู… : "
+		T_CT_CALLFUNC_IP_PARAMETERS = "ุงูู…ุนุทูุงุช : "
+		T_CT_CALLFUNC_IP_OUTPUT = "ุงููุงุชุฌ : "

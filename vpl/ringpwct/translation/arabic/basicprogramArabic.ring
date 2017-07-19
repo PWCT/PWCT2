@@ -1,8 +1,8 @@
-# Basic Program Component
+я╗┐# Basic Program Component
 
 	# Steps Tree
-		T_CT_BASICPROGRAM_ST_THEFIRSTSTEP = "╟с╬╪ц╔ ╟с╟цсь"
-		T_CT_BASICPROGRAM_ST_LOADFILES = "╩═уэс ╟сус▌╟╩"
-		T_CT_BASICPROGRAM_ST_STATEMENTS = "╟с├ц╟у╤"
-		T_CT_BASICPROGRAM_ST_FUNCTIONS = "╟с╧ц╟с"
-		T_CT_BASICPROGRAM_ST_CLASSES = "╟с▌╞╟╩"
+		T_CT_BASICPROGRAM_ST_THEFIRSTSTEP = "╪з┘Д╪о╪╖┘И╪й ╪з┘Д╪з┘И┘Д┘Й"
+		T_CT_BASICPROGRAM_ST_LOADFILES = "╪к╪н┘Е┘К┘Д ╪з┘Д┘Е┘Д┘Б╪з╪к"
+		T_CT_BASICPROGRAM_ST_STATEMENTS = "╪з┘Д╪г┘И╪з┘Е╪▒"
+		T_CT_BASICPROGRAM_ST_FUNCTIONS = "╪з┘Д╪п┘И╪з┘Д"
+		T_CT_BASICPROGRAM_ST_CLASSES = "╪з┘Д┘Б╪ж╪з╪к"

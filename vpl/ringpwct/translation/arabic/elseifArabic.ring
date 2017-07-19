@@ -1,9 +1,9 @@
-# Else If Component
+ï»¿# Else If Component
 
 	# Steps Tree
-		T_CT_ELSEIF_ST_ELSEIF = "ÅáÇ ÅÐÇ "
-		T_CT_ELSEIF_ST_STARTHERE = "ÇÈÏÃ åäÇ"
+		T_CT_ELSEIF_ST_ELSEIF = "Ø¥Ù„Ø§ Ø¥Ø°Ø§ "
+		T_CT_ELSEIF_ST_STARTHERE = "Ø§Ø¨Ø¯Ø£ Ù‡Ù†Ø§"
 	
 	# Interaction Page
-		T_CT_ELSEIF_IP_TITLE = "ãßæä ÅáÇ ÅÐÇ"
-		T_CT_ELSEIF_IP_CONDITION = "ÇáÔÑØ : " 
+		T_CT_ELSEIF_IP_TITLE = "Ù…ÙƒÙˆÙ† Ø¥Ù„Ø§ Ø¥Ø°Ø§"
+		T_CT_ELSEIF_IP_CONDITION = "Ø§Ù„Ø´Ø±Ø· : " 

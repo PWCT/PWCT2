@@ -1,8 +1,8 @@
-# Else Component
+ο»Ώ# Else Component
 
 	# Steps Tree
-		T_CT_ELSE_ST_ELSE = "ΫνΡ Παί"
-		T_CT_ELSE_ST_STARTHERE = "ΗΘΟΓ εδΗ"
+		T_CT_ELSE_ST_ELSE = "ΨΊΩΨ± Ψ°Ω„Ωƒ"
+		T_CT_ELSE_ST_STARTHERE = "Ψ§Ψ¨Ψ―Ψ£ Ω‡Ω†Ψ§"
 
 	# Interaction Page
-		T_CT_ELSE_IP_TITLE = "γίζδ ΫνΡ Παί"
+		T_CT_ELSE_IP_TITLE = "Ω…ΩƒΩΩ† ΨΊΩΨ± Ψ°Ω„Ωƒ"

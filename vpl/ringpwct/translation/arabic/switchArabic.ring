@@ -1,10 +1,10 @@
-# Switch Component
+๏ปฟ# Switch Component
 
 	# Steps Tree
-		T_CT_SWITCH_ST_SWITCH = "ใÝสวอ "
-		T_CT_SWITCH_ST_STARTHERE = "วศฯร ๅไว"
-		T_CT_SWITCH_ST_ENDOFSWITCH = "ไๅวํษ วแใÝสวอ"
+		T_CT_SWITCH_ST_SWITCH = "ู…ูุชุงุญ "
+		T_CT_SWITCH_ST_STARTHERE = "ุงุจุฏุฃ ููุง"
+		T_CT_SWITCH_ST_ENDOFSWITCH = "ููุงูุฉ ุงูู…ูุชุงุญ"
 
 	# Interaction Page
-		T_CT_SWITCH_IP_TITLE = "ใ฿ๆไ วแใÝสวอ"
-		T_CT_SWITCH_IP_VARIABLE = "วแใสÛํั : "
+		T_CT_SWITCH_IP_TITLE = "ู…ููู ุงูู…ูุชุงุญ"
+		T_CT_SWITCH_IP_VARIABLE = "ุงูู…ุชุบูุฑ : "

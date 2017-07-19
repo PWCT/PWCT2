@@ -1,15 +1,15 @@
-# For Loop Component 
+пїњ# For Loop Component 
 
 	# Steps Tree
-		T_CT_FORLOOP_ST_FOR = "гд "
-		T_CT_FORLOOP_ST_TO = "≈бм "
-		T_CT_FORLOOP_ST_STEP = "«бќЎж… "
-		T_CT_FORLOOP_ST_STARTHERE = "«»ѕ√ ед«"
-		T_CT_FORLOOP_ST_ENDOFFORLOOP = "де«н… Ќбё… гд"
+		T_CT_FORLOOP_ST_FOR = "ўЕўЖ "
+		T_CT_FORLOOP_ST_TO = "Ў•ўДўЙ "
+		T_CT_FORLOOP_ST_STEP = "ЎІўДЎЃЎЈўИЎ© "
+		T_CT_FORLOOP_ST_STARTHERE = "ЎІЎ®ЎѓЎ£ ўЗўЖЎІ"
+		T_CT_FORLOOP_ST_ENDOFFORLOOP = "ўЖўЗЎІўКЎ© Ў≠ўДўВЎ© ўЕўЖ"
 
 	# Interaction Page 
-		T_CT_FORLOOP_IP_TITLE = "гяжд Ќбё… гд"
-		T_CT_FORLOOP_IP_START  = "«б»ѕ«н… : "
-		T_CT_FORLOOP_IP_TO = "«бн : "
-		T_CT_FORLOOP_IP_STEP = "«бќЎж… : "
-		T_CT_FORLOOP_IP_STARTVALUE = "” = 1"
+		T_CT_FORLOOP_IP_TITLE = "ўЕўГўИўЖ Ў≠ўДўВЎ© ўЕўЖ"
+		T_CT_FORLOOP_IP_START  = "ЎІўДЎ®ЎѓЎІўКЎ© : "
+		T_CT_FORLOOP_IP_TO = "ЎІўДўК : "
+		T_CT_FORLOOP_IP_STEP = "ЎІўДЎЃЎЈўИЎ© : "
+		T_CT_FORLOOP_IP_STARTVALUE = "Ў≥ = 1"

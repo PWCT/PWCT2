@@ -1,10 +1,10 @@
-# IF Statement Component
+ï»¿# IF Statement Component
 
 	# Steps Tree
-		T_CT_IFSTATEMENT_ST_IF = "ÅÐÇ "
-		T_CT_IFSTATEMENT_ST_STARTHERE = "ÇÈÏÃ åäÇ"
-		T_CT_IFSTATEMENT_ST_ENDOFIFSTATEMENT = "äåÇíÉ ÇáÔÑØ"
+		T_CT_IFSTATEMENT_ST_IF = "Ø¥Ø°Ø§ "
+		T_CT_IFSTATEMENT_ST_STARTHERE = "Ø§Ø¨Ø¯Ø£ Ù‡Ù†Ø§"
+		T_CT_IFSTATEMENT_ST_ENDOFIFSTATEMENT = "Ù†Ù‡Ø§ÙŠØ© Ø§Ù„Ø´Ø±Ø·"
 
 	# Interaction Page
-		T_CT_IFSTEATEMENT_IP_TITLE  = "ãßæä ÌãáÉ ÇáÔÑØ ÅÐÇ"
-		T_CT_IFSTEATEMENT_IP_CONDITION = "ÇáÔÑØ : "
+		T_CT_IFSTEATEMENT_IP_TITLE  = "Ù…ÙƒÙˆÙ† Ø¬Ù…Ù„Ø© Ø§Ù„Ø´Ø±Ø· Ø¥Ø°Ø§"
+		T_CT_IFSTEATEMENT_IP_CONDITION = "Ø§Ù„Ø´Ø±Ø· : "

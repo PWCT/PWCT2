@@ -1,11 +1,11 @@
-# Try Catch Component
+О╩©# Try Catch Component
 
 	# Steps Tree
-		T_CT_TRYCATCH_ST_TRY = "лях"
-		T_CT_TRYCATCH_ST_STARTHERE = "гхоц ЕДг"
-		T_CT_TRYCATCH_ST_CATCH = "згАл гАньц"
-		T_CT_TRYCATCH_ST_END = "ДЕгМи гАйляхи"
+		T_CT_TRYCATCH_ST_TRY = "ь╛ь╠ь╗"
+		T_CT_TRYCATCH_ST_STARTHERE = "ь╖ь╗ь╞ьё ы┤ы├ь╖"
+		T_CT_TRYCATCH_ST_CATCH = "ь╧ь╖ы└ь╛ ь╖ы└ь╝ь╥ьё"
+		T_CT_TRYCATCH_ST_END = "ы├ы┤ь╖ы┼ь╘ ь╖ы└ь╙ь╛ь╠ь╗ь╘"
 
 	# Interaction Page
-		T_CT_TRYCATCH_IP_TITLE = "ЦъФД лях згАл"
+		T_CT_TRYCATCH_IP_TITLE = "ы┘ы┐ы┬ы├ ь╛ь╠ь╗ ь╧ь╖ы└ь╛"
 

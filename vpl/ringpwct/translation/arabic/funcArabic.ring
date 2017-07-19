@@ -1,12 +1,12 @@
-# Define Function Component 
+๏ปฟ# Define Function Component 
 
 	# Steps Tree
-		T_CT_FUNC_ST_FUNC = "วแฯวแษ "
-		T_CT_FUNC_ST_STARTHERE = "วศฯร ๅไว"
-		T_CT_FUNC_ST_ENDOFFUNC = "ไๅวํษ วแฯวแษ"
+		T_CT_FUNC_ST_FUNC = "ุงูุฏุงูุฉ "
+		T_CT_FUNC_ST_STARTHERE = "ุงุจุฏุฃ ููุง"
+		T_CT_FUNC_ST_ENDOFFUNC = "ููุงูุฉ ุงูุฏุงูุฉ"
 
 	# Interaction Page
-		T_CT_FUNC_IP_TITLE = "ใ฿ๆไ สฺัํÝ วแฯวแษ"
-		T_CT_FUNC_IP_NAME = "วแลำใ : "
-		T_CT_FUNC_IP_PARAMETERS = "วแใฺุํวส : "
-		T_CT_FUNC_IP_OUTPUT = "วแไวสฬ : "
+		T_CT_FUNC_IP_TITLE = "ู…ููู ุชุนุฑูู ุงูุฏุงูุฉ"
+		T_CT_FUNC_IP_NAME = "ุงูุฅุณู… : "
+		T_CT_FUNC_IP_PARAMETERS = "ุงูู…ุนุทูุงุช : "
+		T_CT_FUNC_IP_OUTPUT = "ุงููุงุชุฌ : "

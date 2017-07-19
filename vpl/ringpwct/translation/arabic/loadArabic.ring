@@ -1,8 +1,8 @@
-# Load Component
+я╗┐# Load Component
 
 	# Interaction Page
-		T_CT_LOAD_ST_LOAD = "┼╙╩╧┌╟┴ ╟сус▌ "
+		T_CT_LOAD_ST_LOAD = "╪е╪│╪к╪п╪╣╪з╪б ╪з┘Д┘Е┘Д┘Б "
 
 	# Steps Tree
-		T_CT_LOAD_IP_TITLE = "у▀цф ┼╙╩╧┌╟┴ ╟сус▌"
-		T_CT_LOAD_IP_FILE = "┼╙у ╟сус▌ : "
+		T_CT_LOAD_IP_TITLE = "┘Е┘Г┘И┘Ж ╪е╪│╪к╪п╪╣╪з╪б ╪з┘Д┘Е┘Д┘Б"
+		T_CT_LOAD_IP_FILE = "╪е╪│┘Е ╪з┘Д┘Е┘Д┘Б : "

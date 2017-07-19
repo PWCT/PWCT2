@@ -1,8 +1,8 @@
-# Return Component
+ï»¿# Return Component
 
 	# Interaction Page
-		T_CT_RETURN_ST_RETURN = "ÇÑÌÇÚ ÞíãÉ "
+		T_CT_RETURN_ST_RETURN = "Ø§Ø±Ø¬Ø§Ø¹ Ù‚ÙŠÙ…Ø© "
 
 	# Steps Tree
-		T_CT_RETURN_IP_TITLE = "ãßæä ÅÑÌÇÚ ÇáÞíãÉ"
-		T_CT_RETURN_IP_VALUE = "ÇáÞíãÉ : "
+		T_CT_RETURN_IP_TITLE = "Ù…ÙƒÙˆÙ† Ø¥Ø±Ø¬Ø§Ø¹ Ø§Ù„Ù‚ÙŠÙ…Ø©"
+		T_CT_RETURN_IP_VALUE = "Ø§Ù„Ù‚ÙŠÙ…Ø© : "

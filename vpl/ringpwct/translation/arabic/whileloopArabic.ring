@@ -1,10 +1,10 @@
-# While Loop Component 
+๏ปฟ# While Loop Component 
 
 	# Steps Tree
-		T_CT_WHILELOOP_ST_WHILE = "ุวแใว "
-		T_CT_WHILELOOP_ST_STARTHERE = "วศฯร ๅไว"
-		T_CT_WHILELOOP_ST_ENDOFWHILELOOP = "ไๅวํษ อแÞษ ุวแใว"
+		T_CT_WHILELOOP_ST_WHILE = "ุทุงูู…ุง "
+		T_CT_WHILELOOP_ST_STARTHERE = "ุงุจุฏุฃ ููุง"
+		T_CT_WHILELOOP_ST_ENDOFWHILELOOP = "ููุงูุฉ ุญููุฉ ุทุงูู…ุง"
 
 	# Interaction Page
-		T_CT_WHILELOOP_IP_TITLE = "ใ฿ๆไ อแÞษ ุวแใว"
-		T_CT_WHILELOOP_IP_CONDITION = "วแิัุ : "
+		T_CT_WHILELOOP_IP_TITLE = "ู…ููู ุญููุฉ ุทุงูู…ุง"
+		T_CT_WHILELOOP_IP_CONDITION = "ุงูุดุฑุท : "

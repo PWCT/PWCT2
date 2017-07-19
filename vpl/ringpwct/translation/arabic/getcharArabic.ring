@@ -1,9 +1,9 @@
-# GetChar() Component 
+๏ปฟ# GetChar() Component 
 
 	# Steps Tree
-		T_CT_GETCHAR_ST_GETCHAR = "วำสÞศวแ อัÝ"
+		T_CT_GETCHAR_ST_GETCHAR = "ุงุณุชูุจุงู ุญุฑู"
 
 	# Interaction Page
-		T_CT_GETCHAR_IP_TITLE = "ใ฿ๆไ วำสÞศวแ อัÝ"
-		T_CT_GETCHAR_IP_OUTPUT = "วแไวสฬ (ใสÛํั) : "
+		T_CT_GETCHAR_IP_TITLE = "ู…ููู ุงุณุชูุจุงู ุญุฑู"
+		T_CT_GETCHAR_IP_OUTPUT = "ุงููุงุชุฌ (ู…ุชุบูุฑ) : "
 

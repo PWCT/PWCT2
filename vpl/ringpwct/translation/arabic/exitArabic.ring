@@ -1,8 +1,8 @@
-# Exit Component
+пїњ# Exit Component
 
 	# Steps Tree
-		T_CT_EXIT_ST_EXIT = "ќ—жћ гд «бЌбё… "
-		T_CT_EXIT_IP_TITLE = "гяжд «бќ—жћ"
+		T_CT_EXIT_ST_EXIT = "ЎЃЎ±ўИЎђ ўЕўЖ ЎІўДЎ≠ўДўВЎ© "
+		T_CT_EXIT_IP_TITLE = "ўЕўГўИўЖ ЎІўДЎЃЎ±ўИЎђ"
 
 	# Interaction Page
-		T_CT_EXIT_IP_VALUE = "«бёнг… : "
+		T_CT_EXIT_IP_VALUE = "ЎІўДўВўКўЕЎ© : "

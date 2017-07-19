@@ -1,9 +1,9 @@
-# Case Component 
+пїњ# Case Component 
 
 	# Steps Tree
-		T_CT_CASE_ST_CASE = "Ём Ќ«б… "
-		T_CT_CASE_ST_STARTHERE = "«»ѕ√ ед«"
+		T_CT_CASE_ST_CASE = "ўБўЙ Ў≠ЎІўДЎ© "
+		T_CT_CASE_ST_STARTHERE = "ЎІЎ®ЎѓЎ£ ўЗўЖЎІ"
 
 	# Interaction Page
-		T_CT_CASE_IP_TITLE = "гяжд Ём Ќ«б…"
-		T_CT_CASE_IP_VALUE = "«бёнг… : "
+		T_CT_CASE_IP_TITLE = "ўЕўГўИўЖ ўБўЙ Ў≠ЎІўДЎ©"
+		T_CT_CASE_IP_VALUE = "ЎІўДўВўКўЕЎ© : "

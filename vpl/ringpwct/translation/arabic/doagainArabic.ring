@@ -1,10 +1,10 @@
-# Do Again Component 
+ο»Ώ# Do Again Component 
 
 	# Steps Tree
-		T_CT_DOAGAIN_ST_DO = "δέΠ "
-		T_CT_DOAGAIN_ST_STARTHERE =  "ΗΘΟΓ εδΗ"
-		T_CT_DOAGAIN_ST_AGAIN = "γΡΙ ΓΞΡμ αζ "
+		T_CT_DOAGAIN_ST_DO = "Ω†ΩΨ° "
+		T_CT_DOAGAIN_ST_STARTHERE =  "Ψ§Ψ¨Ψ―Ψ£ Ω‡Ω†Ψ§"
+		T_CT_DOAGAIN_ST_AGAIN = "Ω…Ψ±Ψ© Ψ£Ψ®Ψ±Ω‰ Ω„Ω "
 
 	# Interaction Page
-		T_CT_DOAGAIN_IP_TITLE = "γίζδ δέΠ γΡΙ ΓΞΡμ αζ"
-		T_CT_DOAGAIN_IP_CONDITION = "ΗαΤΡΨ : "
+		T_CT_DOAGAIN_IP_TITLE = "Ω…ΩƒΩΩ† Ω†ΩΨ° Ω…Ψ±Ψ© Ψ£Ψ®Ψ±Ω‰ Ω„Ω"
+		T_CT_DOAGAIN_IP_CONDITION = "Ψ§Ω„Ψ΄Ψ±Ψ· : "

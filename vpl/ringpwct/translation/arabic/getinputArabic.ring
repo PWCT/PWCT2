@@ -1,8 +1,8 @@
-# GetInput Component
+я╗┐# GetInput Component
 
 	# Step Stree
-		T_CT_GETINPUT_ST_INPUT  = "╟╧╬с "
+		T_CT_GETINPUT_ST_INPUT  = "╪з╪п╪о┘Д "
 
 	# Interaction Page
-		T_CT_GETINPUT_IP_TITLE = "у▀цф ╟с═╒цс ┌сь ╟су╧╬с╟╩"
-		T_CT_GETINPUT_IP_VARIABLE = "╟су╩█э╤ : "
+		T_CT_GETINPUT_IP_TITLE = "┘Е┘Г┘И┘Ж ╪з┘Д╪н╪╡┘И┘Д ╪╣┘Д┘Й ╪з┘Д┘Е╪п╪о┘Д╪з╪к"
+		T_CT_GETINPUT_IP_VARIABLE = "╪з┘Д┘Е╪к╪║┘К╪▒ : "

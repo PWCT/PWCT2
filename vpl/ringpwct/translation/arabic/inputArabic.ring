@@ -1,10 +1,10 @@
-# Input() Component
+๏ปฟ# Input() Component
 
 	# Steps Tree
-		T_CT_INPUT_ST_INPUT = "วฯฮแ"
+		T_CT_INPUT_ST_INPUT = "ุงุฏุฎู"
 
 	# Interaction Page
-		T_CT_INPUT_IP_TITLE = "ใ฿ๆไ วฯฮแ()"
-		T_CT_INPUT_IP_COUNT = "ฺฯฯ วแอัๆÝ : "
-		T_CT_INPUT_IP_OUTPUT = "วแไวสฬ (ใสÛํั) : "
-		T_CT_INPUT_IP_OUTPUTVARIABLE = "วแไวสฬ"
+		T_CT_INPUT_IP_TITLE = "ู…ููู ุงุฏุฎู()"
+		T_CT_INPUT_IP_COUNT = "ุนุฏุฏ ุงูุญุฑูู : "
+		T_CT_INPUT_IP_OUTPUT = "ุงููุงุชุฌ (ู…ุชุบูุฑ) : "
+		T_CT_INPUT_IP_OUTPUTVARIABLE = "ุงููุงุชุฌ"
