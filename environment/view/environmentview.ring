@@ -300,7 +300,6 @@ class EnvironmentView from WindowsViewParent
 		tree1 = new qtreeview(win) {
 			setclickedevent(Method(:ChangeFileAction))
 			setactivatedevent(Method(:ChangeFileAction))
-			setmaximumwidth(300)			
 			oDir = new QDir()					
 			this.ofile = new QFileSystemModel() {
 				setrootpath(oDir.currentpath())				
@@ -319,7 +318,7 @@ class EnvironmentView from WindowsViewParent
 			header().hide()			
 		}
 		oDockFilesManager = new qdockwidget(win,0) {
-			setMinimumwidth(200)
+			setMinimumwidth(250)
 			setLayoutDirection(C_TRANSLATION_ENGLISH)
 			setGeometry(00,00,200,200)
 			setwindowtitle(T_ENV_DOCK_PROJECTFILES) # "Project Files"
@@ -337,7 +336,7 @@ class EnvironmentView from WindowsViewParent
 		Open_Window(:GoalDesignerController)		
 		nGoalDesignerWindowID = Last_WindowID()
 		oDock = new qdockwidget(win,0) {
-			setMinimumwidth(700)
+			setMinimumwidth(800)
 			setLayoutDirection(C_TRANSLATION_ENGLISH)
 			setwidget(last_window().oView.win)
 			setwindowtitle(T_ENV_DOCK_GOALDESIGNER) # "Goal Designer"		 
@@ -402,7 +401,7 @@ class EnvironmentView from WindowsViewParent
 		}
 		oProcessWindow.setlayout(oProcessLayout2)			
 		oDockOutputWindow = new qDockWidget(win,0) {
-			setMaximumwidth(200)
+			setMinimumWidth(200)
 			setLayoutDirection(C_TRANSLATION_ENGLISH)
 			setwidget( oProcessWindow )		
 			setwindowtitle(T_ENV_OW_TITLE)  # "Output Window"
