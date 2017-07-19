@@ -410,3 +410,7 @@ T_CB_COMPONENTSFILE = "vpl/components.pwct"
 		T_CT_BASICPROGRAM_ST_STATEMENTS = "Statements"
 		T_CT_BASICPROGRAM_ST_FUNCTIONS = "Functions"
 		T_CT_BASICPROGRAM_ST_CLASSES = "Classes"
+
+# Load Components Translation
+
+	load "../vpl/ringpwct/translation/useenglish.ring"

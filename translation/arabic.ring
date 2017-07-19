@@ -416,3 +416,7 @@ T_CB_COMPONENTSFILE = "vpl/arabiccomponents.pwct"
 		T_CT_BASICPROGRAM_ST_STATEMENTS = "الأوامر"
 		T_CT_BASICPROGRAM_ST_FUNCTIONS = "الدوال"
 		T_CT_BASICPROGRAM_ST_CLASSES = "الفئات"
+
+# Load Components Translation
+
+	load "../vpl/ringpwct/translation/usearabic.ring"
