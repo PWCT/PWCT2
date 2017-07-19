@@ -37,6 +37,9 @@ class StepsTreeView from TreeControl
 		setItemWidget(oFirstStep,0, oLabel)	
 		setCurrentItem(oFirstStep,0)
 
+	func ActivateTheFirstStep
+		setCurrentItem(oFirstStep,0)
+
 	func GetItemLabel oItem
 		oLabel = new qLabel
 		oLabel.pObject =  itemwidget(oItem,0).pObject

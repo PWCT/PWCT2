@@ -60,6 +60,7 @@ class ComponentsBrowserController from WindowsControllerParent
 			oItem = oView.oComponentsTree.AddStep(nParentID,nStepID,cStepName)								
 			oView.oComponentsTree.ScrollToItem(oItem,0)
 		}
+		oView.oComponentsTree.ActivateTheFirstStep()
 
 	/*
 		Purpose : Search in the Components list
