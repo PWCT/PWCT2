@@ -20,6 +20,8 @@ class GoalDesignerController from WindowsControllerParent
 
 	nInteractionPagesToModifyCount = 0
 
+	lInteractionPagesInGoalDesigner = False
+
 	/*
 		Purpose : Show the Window
 		Parameters : None
@@ -783,9 +785,13 @@ class GoalDesignerController from WindowsControllerParent
 					Last_Window().nInteractionMode = C_INTERACTIONMODE_MODIFY
 					Last_Window().nIID = nIID
 					Last_Window().SetVariablesValues()
-				oView.layoutVPages.InsertWidget(0,Last_Window().oView.win,0,0)
-				Last_Window().Start()	# Show The Window
-				oView.widgetVPages.Show()	# Show the Splitter Widget
+				if lInteractionPagesInGoalDesigner {
+					oView.layoutVPages.InsertWidget(0,Last_Window().oView.win,0,0)
+					Last_Window().Start()	# Show The Window
+					oView.widgetVPages.Show()	# Show the Splitter Widget
+				else
+					Last_Window().Start()	# Show The Window
+				}
 				nInteractionPagesToModifyCount++
 				Last_Window().AfterOpen()
 			}
