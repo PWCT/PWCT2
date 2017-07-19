@@ -15,6 +15,8 @@ class ComponentWizardGenerator
 	cEnglishData = ""
 	cArabicData = ""
 
+	cStepsTree = ""
+
 #===========================================
 #===========================================
 	cTemplateHeader = `/*
@@ -31,8 +33,7 @@ class #{f1}ComponentController from ComponentControllerParent
 
 	func GenerateAction 
 
-		NewStep( "" ) 
-		SetStepCode("" )
+		#{f4}
 
 		return True 
 
@@ -52,8 +53,7 @@ class #{f1}ComponentController from ComponentControllerParent
 
 	func GenerateAction 
 
-		NewStep( "" ) 
-		SetStepCode("" )
+		#{f4}
 
 		return True 
 
@@ -84,6 +84,9 @@ class #{f1}ComponentView from ComponentViewParent
 	func setArabicData cData
 		cArabicData = cData
 
+	func setStepsTree cSteps
+		cStepsTree = cSteps
+
 	func mydate
 		aList = TimeList()
 		return aList[19] + "." + aList[10] + "." + aList[6]		
@@ -92,6 +95,7 @@ class #{f1}ComponentView from ComponentViewParent
 		cTemplate = substr(cTemplate,"#{f1}",cComponentName)
 		cTemplate = substr(cTemplate,"#{f2}",mydate())
 		cTemplate = substr(cTemplate,"#{f3}",cComponentConstant)
+		cTemplate = substr(cTemplate,"#{f4}",cStepsTree)
 		return cTemplate
 
 	func EmptyComponentTemplate

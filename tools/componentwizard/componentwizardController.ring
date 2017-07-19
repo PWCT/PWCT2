@@ -53,6 +53,7 @@ SetStepCode("" )',
 		oGenerator.setFolder(oView.textFolder.text())
 		oGenerator.setEnglishData(oView.textEnglish.toPlaintext())
 		oGenerator.setArabicData(oView.textArabic.toPlaintext())
+		oGenerator.setStepsTree(oView.textStepsTree.toPlaintext())
 		switch oView.ListTemplate.currentrow() {
 			case 1		# Empty File 
 				oGenerator.EmptyComponentTemplate()
