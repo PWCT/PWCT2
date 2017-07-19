@@ -26,6 +26,10 @@ class ComponentWizardGenerator
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 `
+
+#===========================================
+#===========================================
+
 	cEmptyComponentTemplate = cTemplateHeader + `
 class #{f1}ComponentController from ComponentControllerParent 
 
@@ -64,6 +68,69 @@ class #{f1}ComponentView from ComponentViewParent
 	 
 		Title( T_CT_#{f3}_IP_TITLE )	
 
+		PageButtons()
+`
+#===========================================
+#===========================================
+
+	cOneTextBoxTemplate = cTemplateHeader + `
+class #{f1}ComponentController from ComponentControllerParent 
+
+	oView = new #{f1}ComponentView
+
+	func GenerateAction 
+
+#{f4}
+
+		return True 
+
+class #{f1}ComponentView from ComponentViewParent
+	 
+		Title( T_CT_#{f3}_IP_TITLE )	
+		TextBox(T_CT_#{f3}_IP_VALUE , :value)
+		PageButtons()
+`
+#===========================================
+#===========================================
+
+	cTwoTextBoxesTemplate = cTemplateHeader + `
+class #{f1}ComponentController from ComponentControllerParent 
+
+	oView = new #{f1}ComponentView
+
+	func GenerateAction 
+
+#{f4}
+
+		return True 
+
+class #{f1}ComponentView from ComponentViewParent
+	 
+		Title( T_CT_#{f3}_IP_TITLE )	
+		TextBox(T_CT_#{f3}_IP_VALUE , :value)
+		TextBox(T_CT_#{f3}_IP_VALUE2, :value2)
+		PageButtons()
+`
+#===========================================
+#===========================================
+
+	cThreeTextBoxesTemplate = cTemplateHeader + `
+class #{f1}ComponentController from ComponentControllerParent 
+
+	oView = new #{f1}ComponentView
+
+	func GenerateAction 
+
+#{f4}
+
+		return True 
+
+class #{f1}ComponentView from ComponentViewParent
+	 
+		Title( T_CT_#{f3}_IP_TITLE )	
+		TextBox(T_CT_#{f3}_IP_VALUE , :value)
+		TextBox(T_CT_#{f3}_IP_VALUE2, :value2)
+		TextBox(T_CT_#{f3}_IP_VALUE3, :value3)
 		PageButtons()
 `
 #===========================================
@@ -112,10 +179,16 @@ class #{f1}ComponentView from ComponentViewParent
 		ProcessTemplate(cTemplate)
 
 	func OneTextboxTemplate
+		cTemplate = cOneTextBoxTemplate
+		ProcessTemplate(cTemplate)
 
 	func TwoTextboxesTemplate
+		cTemplate = cTwoTextBoxesTemplate
+		ProcessTemplate(cTemplate)
 
 	func ThreeTextboxesTemplate
+		cTemplate = cThreeTextBoxesTemplate
+		ProcessTemplate(cTemplate)
 
 	func ProcessTemplate cTemplate
 		cTemplate = TemplateValues(cTemplate)
