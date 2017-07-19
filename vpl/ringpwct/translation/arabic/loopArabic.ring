@@ -1,0 +1,8 @@
+# Loop Component
+
+	# Steps Tree
+		T_CT_LOOP_ST_LOOP = " ŒÿÌ "
+	
+	# Interaction Page
+		T_CT_LOOP_IP_TITLE = "«·„ﬂÊ‰ «· ŒÿÌ"
+		T_CT_LOOP_IP_VALUE = "«·ﬁÌ„… : "

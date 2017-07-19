@@ -1,0 +1,8 @@
+# GetInput Component
+
+	# Step Stree
+		T_CT_GETINPUT_ST_INPUT  = "«œŒ· "
+
+	# Interaction Page
+		T_CT_GETINPUT_IP_TITLE = "„ﬂÊ‰ «·Õ’Ê· ⁄·Ï «·„œŒ·« "
+		T_CT_GETINPUT_IP_VARIABLE = "«·„ €Ì— : "
