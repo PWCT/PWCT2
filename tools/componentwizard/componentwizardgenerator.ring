@@ -33,7 +33,7 @@ class #{f1}ComponentController from ComponentControllerParent
 
 	func GenerateAction 
 
-		#{f4}
+#{f4}
 
 		return True 
 
@@ -53,7 +53,7 @@ class #{f1}ComponentController from ComponentControllerParent
 
 	func GenerateAction 
 
-		#{f4}
+#{f4}
 
 		return True 
 
@@ -86,6 +86,11 @@ class #{f1}ComponentView from ComponentViewParent
 
 	func setStepsTree cSteps
 		cStepsTree = cSteps
+		aStepsTree = str2list(cStepsTree)
+		for x in aStepsTree {
+			x = CHAR(9) + CHAR(9) + x
+		}
+		cStepsTree = list2str(aStepsTree)
 
 	func mydate
 		aList = TimeList()
