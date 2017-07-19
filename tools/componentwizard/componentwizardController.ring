@@ -18,22 +18,22 @@ class componentwizardController from windowsControllerParent
 	oView = new componentwizardView
 
 	aQuickScripts = [
-'NewStep( "" ) 
-SetStepCode("" )',
-'NewParentStep("" )
-	SetStepCode("" )
+'NewStep(  ) 
+SetStepCode( "" )',
+'NewParentStep(  )
+	SetStepCode( "" )
 	AllowInteraction()
 	NewStep( T_CT_XXX_ST_STARTHERE )
 	oStep = GetActiveStep()
 	SetActiveStep(oStep)
 ',
-'NewParentStep("" )
-	SetStepCode("" )
+'NewParentStep(  )
+	SetStepCode( "" )
 	AllowInteraction()
 	NewStep( T_CT_XXX_ST_STARTHERE )
 	oStep = GetActiveStep()
 	NewStep( T_CT_XXX_ST_END )
-		SetStepCode("")
+		SetStepCode( "" )
 	SetActiveStep(oStep)
 '
 ]
