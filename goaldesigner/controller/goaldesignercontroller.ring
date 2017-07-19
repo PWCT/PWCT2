@@ -22,6 +22,7 @@ class GoalDesignerController from WindowsControllerParent
 
 	lInteractionPagesInGoalDesigner = False
 
+
 	/*
 		Purpose : Show the Window
 		Parameters : None

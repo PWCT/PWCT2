@@ -49,8 +49,11 @@ class EnvironmentController from WindowsControllerParent
 	*/
 
 	func SetFocusToStepsTree
-		Last_Window().oView.win.ActivateWindow()
-		Last_Window().oView.oStepsTree.SetFocus(0)
+		# Open Components Browser
+			parent().InteractAction()
+		# Set Focus to Steps Tree
+			parent().oView.win.ActivateWindow()
+			parent().oView.oStepsTree.SetFocus(0)
 
 	/*
 		Purpose : New File Action
