@@ -75,7 +75,7 @@
 	T_GD_CLOSEFILE = "Close File"				# Button
 
 	# Steps Tree
-	T_GD_Firststep  = "Start Point (Not Step)"
+	T_GD_Firststep  = "Start Point"
 	T_GD_StepsTree = "Steps Tree"
 
 	# New Step

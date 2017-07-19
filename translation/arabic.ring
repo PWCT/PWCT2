@@ -1,4 +1,4 @@
-﻿/* 
+/* 
 **	Project : Programming Without Coding Technology (PWCT) Version 2.0
 ** 	File Purpose : Translation File
 ** 	Language : Arabic
@@ -75,7 +75,7 @@
 	T_GD_CLOSEFILE = "اغلاق الملف"				# Button
 
 	# Steps Tree
-	T_GD_Firststep  = "نقطة البداية (ليست خطوة)"
+	T_GD_Firststep  = "نقطة البداية"
 	T_GD_StepsTree = "شجرة الخطوات"
 
 	# New Step
