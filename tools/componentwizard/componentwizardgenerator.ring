@@ -121,8 +121,8 @@ class #{f1}ComponentView from ComponentViewParent
 		cTemplate = TemplateValues(cTemplate)
 		cFile = cFolder + "/" + lower(cComponentName) 
 		cFileComponent = cFile + ".ring"
-		cFileEnglish = cFile + "English.ring"
-		cFileArabic = cFile + "Arabic.ring"
+		cFileEnglish = cFolder + "/translation/english/" + lower(cComponentName) + "English.ring"
+		cFileArabic = cFolder + "/translation/arabic/" + lower(cComponentName) + "Arabic.ring"
 		write(cFileComponent,cTemplate)
 		# We will reverse the classes (User Interface will be first)
 		# So we can get Interaction Page constants first	
