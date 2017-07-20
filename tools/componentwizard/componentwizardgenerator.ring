@@ -87,7 +87,7 @@ class #{f1}ComponentController from ComponentControllerParent
 class #{f1}ComponentView from ComponentViewParent
 	 
 		Title( T_CT_#{f3}_IP_TITLE )	
-		TextBox(T_CT_#{f3}_IP_VALUE , :value)
+		TextBox( T_CT_#{f3}_IP_VALUE , :value)
 		PageButtons()
 `
 #===========================================
@@ -107,8 +107,8 @@ class #{f1}ComponentController from ComponentControllerParent
 class #{f1}ComponentView from ComponentViewParent
 	 
 		Title( T_CT_#{f3}_IP_TITLE )	
-		TextBox(T_CT_#{f3}_IP_VALUE , :value)
-		TextBox(T_CT_#{f3}_IP_VALUE2, :value2)
+		TextBox( T_CT_#{f3}_IP_VALUE , :value)
+		TextBox( T_CT_#{f3}_IP_VALUE2 , :value2)
 		PageButtons()
 `
 #===========================================
@@ -128,9 +128,9 @@ class #{f1}ComponentController from ComponentControllerParent
 class #{f1}ComponentView from ComponentViewParent
 	 
 		Title( T_CT_#{f3}_IP_TITLE )	
-		TextBox(T_CT_#{f3}_IP_VALUE , :value)
-		TextBox(T_CT_#{f3}_IP_VALUE2, :value2)
-		TextBox(T_CT_#{f3}_IP_VALUE3, :value3)
+		TextBox( T_CT_#{f3}_IP_VALUE , :value)
+		TextBox( T_CT_#{f3}_IP_VALUE2 , :value2)
+		TextBox( T_CT_#{f3}_IP_VALUE3 , :value3)
 		PageButtons()
 `
 #===========================================
@@ -151,10 +151,10 @@ class #{f1}ComponentController from ComponentControllerParent
 class #{f1}ComponentView from ComponentViewParent
 	 
 		Title( T_CT_#{f3}_IP_TITLE )	
-		TextBox(T_CT_#{f3}_IP_VALUE , :value)
-		TextBox(T_CT_#{f3}_IP_VALUE2, :value2)
-		TextBox(T_CT_#{f3}_IP_VALUE3, :value3)
-		TextBox(T_CT_#{f3}_IP_VALUE4, :value4)
+		TextBox( T_CT_#{f3}_IP_VALUE , :value)
+		TextBox( T_CT_#{f3}_IP_VALUE2 , :value2)
+		TextBox( T_CT_#{f3}_IP_VALUE3 , :value3)
+		TextBox( T_CT_#{f3}_IP_VALUE4 , :value4)
 		PageButtons()
 `
 #===========================================
@@ -175,11 +175,11 @@ class #{f1}ComponentController from ComponentControllerParent
 class #{f1}ComponentView from ComponentViewParent
 	 
 		Title( T_CT_#{f3}_IP_TITLE )	
-		TextBox(T_CT_#{f3}_IP_VALUE , :value)
-		TextBox(T_CT_#{f3}_IP_VALUE2, :value2)
-		TextBox(T_CT_#{f3}_IP_VALUE3, :value3)
-		TextBox(T_CT_#{f3}_IP_VALUE4, :value4)
-		TextBox(T_CT_#{f3}_IP_VALUE5, :value5)
+		TextBox( T_CT_#{f3}_IP_VALUE , :value)
+		TextBox( T_CT_#{f3}_IP_VALUE2 , :value2)
+		TextBox( T_CT_#{f3}_IP_VALUE3 , :value3)
+		TextBox( T_CT_#{f3}_IP_VALUE4 , :value4)
+		TextBox( T_CT_#{f3}_IP_VALUE5 , :value5)
 		PageButtons()
 `
 #===========================================
