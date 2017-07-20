@@ -1,8 +1,8 @@
 # Start Form Designer File
 aObjectsList = [
 	[ :name = "Window" , :id = 1 , :classname = "formdesigner_qwidget" , :data = [
-		 :x = -537 , : y = -75  , 
-		 :width =  1048 , :height = 574 , 
+		 :x = -868 , : y = -44  , 
+		 :width =  1300 , :height = 574 , 
 		 :title =  "Component Wizard" , 
 		 :backcolor =  "" , 
 		 :windowflags =  "Qt_Window | Qt_WindowTitleHint | Qt_WindowSystemMenuHint | Qt_WindowCloseButtonHint | Qt_CustomizeWindowHint" , 
@@ -220,7 +220,7 @@ aObjectsList = [
 	],
 	[ :name = "TextStepsTree" , :id = 17 , :classname = "formdesigner_qtextedit" , :data = [
 		 :x = 502 , : y = 159  , 
-		 :width =  528 , :height = 198 , 
+		 :width =  778 , :height = 198 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
 		 :font =  "MS Shell Dlg 2,18,-1,5,50,0,0,0,0,0" , 
@@ -263,7 +263,7 @@ aObjectsList = [
 	],
 	[ :name = "TextQuickScript" , :id = 20 , :classname = "formdesigner_qtextedit" , :data = [
 		 :x = 499 , : y = 401  , 
-		 :width =  529 , :height = 136 , 
+		 :width =  779 , :height = 136 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
 		 :font =  "Arial" , 
@@ -408,6 +408,30 @@ aObjectsList = [
 		 :text =  "Use",
 		 :BtnImage =  "",
 		 :setClickEvent =  "UseScript"
+		]
+	],
+	[ :name = "Button14" , :id = 32 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 1035 , : y = 128  , 
+		 :width =  70 , :height = 25 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "StepData(1)",
+		 :BtnImage =  "",
+		 :setClickEvent =  "stepdata1"
+		]
+	],
+	[ :name = "Button15" , :id = 33 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 1107 , : y = 128  , 
+		 :width =  87 , :height = 26 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "VariableValue(1)",
+		 :BtnImage =  "",
+		 :setClickEvent =  "Variablevalue1"
 		]
 	]
 ]

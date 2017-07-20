@@ -148,6 +148,12 @@ SetStepCode(  )',
 		cVar = InputBox("Step Data","Variable :")
 		oView.TextStepsTree.insertplaintext('	if NoValueMsg(:'+cVar+') { return False }')		
 
+	func StepData1
+		oView.TextStepsTree.insertplaintext('StepData(:value)')		
+
+	func VariableValue1
+		oView.TextStepsTree.insertplaintext('Variable(:value)')		
+
 	func quickScripts
 		oView.textQuickScript.setPlaintext(aQuickScripts[oView.ComboQuickScript.CurrentIndex()])	
 
