@@ -19,21 +19,21 @@ class componentwizardController from windowsControllerParent
 
 	aQuickScripts = [
 'NewStep(  ) 
-SetStepCode( "" )',
+SetStepCode(  )',
 'NewParentStep(  )
-	SetStepCode( "" )
+	SetStepCode(  )
 	AllowInteraction()
 	NewStep( T_CT_XXX_ST_STARTHERE )
 	oStep = GetActiveStep()
 	SetActiveStep(oStep)
 ',
 'NewParentStep(  )
-	SetStepCode( "" )
+	SetStepCode(  )
 	AllowInteraction()
 	NewStep( T_CT_XXX_ST_STARTHERE )
 	oStep = GetActiveStep()
 	NewStep( T_CT_XXX_ST_END )
-		SetStepCode( "" )
+		SetStepCode(  )
 	SetActiveStep(oStep)
 '
 ]
@@ -150,3 +150,6 @@ SetStepCode( "" )',
 
 	func quickScripts
 		oView.textQuickScript.setPlaintext(aQuickScripts[oView.ComboQuickScript.CurrentIndex()])	
+
+	func UseScript
+		oView.textStepsTree.SetPlaintext(oView.textQuickScript.toplaintext())
