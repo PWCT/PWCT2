@@ -30,3 +30,4 @@ load "arabic/trycatchArabic.ring"
 load "arabic/whileloopArabic.ring"
 
 load "arabic/newemptylistArabic.ring"
+load "arabic/newlistbyrangeArabic.ring"
