@@ -65,6 +65,10 @@ SetStepCode( "" )',
 				oGenerator.TwoTextboxesTemplate()
 			case 5		# Three Textboxes
 				oGenerator.ThreeTextboxesTemplate()
+			case 6		# Four Textboxes
+				oGenerator.FourTextboxesTemplate()
+			case 7		# Five Textboxes
+				oGenerator.FiveTextboxesTemplate()
 		}
 
 	func ChangeTemplate
@@ -90,6 +94,22 @@ SetStepCode( "" )',
 				"Second Label (Second Textbox)"  + WindowsNL() +
 				"Third Label (Third Textbox)"  + WindowsNL() +
 				"Steps Tree Constants"
+			case 6		# Four Textboxes
+				cText = "Interaction Page - Title" + WindowsNL() +
+				"First Label (First Textbox)" + WindowsNL() +
+				"Second Label (Second Textbox)"  + WindowsNL() +
+				"Third Label (Third Textbox)"  + WindowsNL() +
+				"Label 4 (Textbox 4)"  + WindowsNL() +
+				"Steps Tree Constants"
+			case 7		# Five Textboxes
+				cText = "Interaction Page - Title" + WindowsNL() +
+				"First Label (First Textbox)" + WindowsNL() +
+				"Second Label (Second Textbox)"  + WindowsNL() +
+				"Third Label (Third Textbox)"  + WindowsNL() +
+				"Label 4 (Textbox 4)"  + WindowsNL() +
+				"Label 5 (Textbox 5)"  + WindowsNL() +
+				"Steps Tree Constants"
+
 		}		
 		oView.textInfo.setplaintext(cText)
 

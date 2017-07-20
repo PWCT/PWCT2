@@ -137,6 +137,55 @@ class #{f1}ComponentView from ComponentViewParent
 #===========================================
 
 
+	cFourTextBoxesTemplate = cTemplateHeader + `
+class #{f1}ComponentController from ComponentControllerParent 
+
+	oView = new #{f1}ComponentView
+
+	func GenerateAction 
+
+#{f4}
+
+		return True 
+
+class #{f1}ComponentView from ComponentViewParent
+	 
+		Title( T_CT_#{f3}_IP_TITLE )	
+		TextBox(T_CT_#{f3}_IP_VALUE , :value)
+		TextBox(T_CT_#{f3}_IP_VALUE2, :value2)
+		TextBox(T_CT_#{f3}_IP_VALUE3, :value3)
+		TextBox(T_CT_#{f3}_IP_VALUE4, :value4)
+		PageButtons()
+`
+#===========================================
+#===========================================
+
+
+	cFiveTextBoxesTemplate = cTemplateHeader + `
+class #{f1}ComponentController from ComponentControllerParent 
+
+	oView = new #{f1}ComponentView
+
+	func GenerateAction 
+
+#{f4}
+
+		return True 
+
+class #{f1}ComponentView from ComponentViewParent
+	 
+		Title( T_CT_#{f3}_IP_TITLE )	
+		TextBox(T_CT_#{f3}_IP_VALUE , :value)
+		TextBox(T_CT_#{f3}_IP_VALUE2, :value2)
+		TextBox(T_CT_#{f3}_IP_VALUE3, :value3)
+		TextBox(T_CT_#{f3}_IP_VALUE4, :value4)
+		TextBox(T_CT_#{f3}_IP_VALUE5, :value5)
+		PageButtons()
+`
+#===========================================
+#===========================================
+
+
 
 	func setComponentName cName
 		cComponentName = cName
@@ -188,6 +237,14 @@ class #{f1}ComponentView from ComponentViewParent
 
 	func ThreeTextboxesTemplate
 		cTemplate = cThreeTextBoxesTemplate
+		ProcessTemplate(cTemplate)
+
+	func FourTextboxesTemplate
+		cTemplate = cFourTextBoxesTemplate
+		ProcessTemplate(cTemplate)
+
+	func FiveTextboxesTemplate
+		cTemplate = cFiveTextBoxesTemplate
 		ProcessTemplate(cTemplate)
 
 	func ProcessTemplate cTemplate
