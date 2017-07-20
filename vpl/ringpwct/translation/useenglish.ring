@@ -28,3 +28,5 @@ load "english/returnEnglish.ring"
 load "english/switchEnglish.ring"
 load "english/trycatchEnglish.ring"
 load "english/whileloopEnglish.ring"
+
+load "english/newemptylistEnglish.ring"

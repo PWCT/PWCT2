@@ -28,3 +28,5 @@ load "arabic/returnArabic.ring"
 load "arabic/switchArabic.ring"
 load "arabic/trycatchArabic.ring"
 load "arabic/whileloopArabic.ring"
+
+load "arabic/newemptylistArabic.ring"
