@@ -35,6 +35,28 @@ SetStepCode(  )',
 	NewStep( T_CT_XXX_ST_END )
 		SetStepCode(  )
 	SetActiveStep(oStep)
+',
+'
+
+if Variable(:value3) = NULL {
+	NewStep( StepData(:value4) + " = " +  T_CT_FINDITEM_ST_FIND  + StepData(:value2) +  T_CT_FINDITEM_ST_INLIST + StepData(:value) ) 
+	SetStepCode( Variable(:value4) + " = binarysearch(" + Variable(:value) + "," + Variable(:value2) + ")" )
+else
+	NewStep( StepData(:value4) + " = " +  T_CT_FINDITEM_ST_FIND  + StepData(:value2) +  T_CT_FINDITEM_ST_INLIST + StepData(:value) +  T_CT_FINDITEM_ST_COLUMN + StepData(:value3) ) 
+	SetStepCode( Variable(:value4) + " = binarysearch(" + Variable(:value) + "," + Variable(:value2) + "," + Variable(:value3) + ")" )
+}
+',
+'
+if Variable(:value3) = NULL {
+	NewStep( StepData(:value5) + " = " +  T_CT_FINDITEM_ST_FIND  + StepData(:value2) +  T_CT_FINDITEM_ST_INLIST + StepData(:value) ) 
+	SetStepCode( Variable(:value5) + " = find(" + Variable(:value) + "," + Variable(:value2) + ")" )
+elseif Variable(:value3) != NULL and Variable(:value4) = NULL
+	NewStep( StepData(:value5) + " = " +  T_CT_FINDITEM_ST_FIND  + StepData(:value2) +  T_CT_FINDITEM_ST_INLIST + StepData(:value) +  T_CT_FINDITEM_ST_COLUMN + StepData(:value3) ) 
+	SetStepCode( Variable(:value5) + " = find(" + Variable(:value) + "," + Variable(:value2) + "," + Variable(:value3) + ")" )
+else
+	NewStep( StepData(:value5) + " = " +  T_CT_FINDITEM_ST_FIND  + StepData(:value2) +  T_CT_FINDITEM_ST_INLIST + StepData(:value) +  T_CT_FINDITEM_ST_COLUMN + StepData(:value3) +  T_CT_FINDITEM_ST_ATTRIBUTE + StepData(:value4)  ) 
+	SetStepCode( Variable(:value5) + " = find(" + Variable(:value) + "," + Variable(:value2) + "," + Variable(:value3) + "," + Variable(:value4)+ ")" )
+}
 '
 ]
 
