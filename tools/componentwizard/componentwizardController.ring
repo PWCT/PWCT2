@@ -184,11 +184,8 @@ else
 
 	func FunctionCall
 		cComponent = UPPER(oView.textName.text())
+		cFuncName = InputBox("Function Call","Function Name :")
 		nParaCount = 0+InputBox("Function Call","Parameters Count :")
-		aParaData = []
-		for x = 1 to nParaCount {
-			aParaData + InputBox("Function Call","Parameter (" + x + ")")
-		}
 		cCode = "NewStep( #{f1}  )" + WindowsNL() + 
 			"SetStepCode( #{f2} )" + WindowsNL() 
 		cStepName = ""
@@ -197,13 +194,18 @@ else
 			cStepName += "StepData(:Value" + (nParaCount+1) + ")"
 			cStepName += ' + " = " '
 			cStepCode += "Variable(:Value" + (nParaCount+1) + ")"
-			cStepCode += ' + " = " '
+			cStepCode += ' + " = #{f1}(" '
+			cStepCode = substr(cStepCode,"#{f1}",cFuncName)
 			for x = 1 to nParaCount {
 				if x = 1 { t = " " else t = x }
 				cStepName += ' +  T_CT_'+cComponent+
 				'_ST_VALUE'+t + " + StepData(:Value" + t + ")" 
-				cStepCode += ' +  T_CT_'+cComponent+
-				'_ST_VALUE'+t + " + Variable(:Value" + t + ")" 
+				cStepCode += " + Variable(:Value" + t + ")" 
+				if x != nParaCount {
+					cStepCode += ' + "," '
+				else 	
+					cStepCode += ' + ")" '
+				}
 			}
 		cCode = substr(cCode,"#{f1}",cStepName)
 		cCode = substr(cCode,"#{f2}",cStepCode)		
