@@ -181,3 +181,30 @@ else
 
 	func UseScript
 		oView.textStepsTree.SetPlaintext(oView.textQuickScript.toplaintext())
+
+	func FunctionCall
+		cComponent = UPPER(oView.textName.text())
+		nParaCount = 0+InputBox("Function Call","Parameters Count :")
+		aParaData = []
+		for x = 1 to nParaCount {
+			aParaData + InputBox("Function Call","Parameter (" + x + ")")
+		}
+		cCode = "NewStep( #{f1}  )" + WindowsNL() + 
+			"SetStepCode( #{f2} )" + WindowsNL() 
+		cStepName = ""
+		cStepCode  = ""
+		# Prepare the Step Name & Step Code
+			cStepName += "StepData(:Value" + (nParaCount+1) + ")"
+			cStepName += ' + " = " '
+			cStepCode += "Variable(:Value" + (nParaCount+1) + ")"
+			cStepCode += ' + " = " '
+			for x = 1 to nParaCount {
+				if x = 1 { t = " " else t = x }
+				cStepName += ' +  T_CT_'+cComponent+
+				'_ST_VALUE'+t + " + StepData(:Value" + t + ")" 
+				cStepCode += ' +  T_CT_'+cComponent+
+				'_ST_VALUE'+t + " + Variable(:Value" + t + ")" 
+			}
+		cCode = substr(cCode,"#{f1}",cStepName)
+		cCode = substr(cCode,"#{f2}",cStepCode)		
+		oView.TextStepsTree.insertplaintext(cCode)				
