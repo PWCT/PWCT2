@@ -267,6 +267,14 @@ class #{f1}ComponentView from ComponentViewParent
 			}
 			return False
 		})
+		# Remove duplicates 
+			aWords2 = aWords 
+			aWords = []
+			for x in aWords2 {
+				if not find(aWords,x) {
+					aWords + x
+				}
+			}
 		aWordsEnglish = aWords 
 		aWordsArabic = aWords
 		aEnglishData = str2list(cEnglishData)
