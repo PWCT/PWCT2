@@ -11,8 +11,13 @@ class substringtransformComponentController from ComponentControllerParent
 
 	func GenerateAction 
 
-		NewStep( StepData(:Value4) + " = "  +  T_CT_SUBSTRINGTRANSFORM_ST_VALUE  + StepData(:Value ) +  T_CT_SUBSTRINGTRANSFORM_ST_VALUE2 + StepData(:Value2) +  T_CT_SUBSTRINGTRANSFORM_ST_VALUE3 + StepData(:Value3)  )
-		SetStepCode( Variable(:Value4) + " = substr("  + Variable(:Value ) + ","  + Variable(:Value2) + ","  + Variable(:Value3) + ")"  )
+ 		if Variable(:value5) {
+			NewStep( StepData(:Value4) + " = "  +  T_CT_SUBSTRINGTRANSFORM_ST_VALUE  + StepData(:Value ) +  T_CT_SUBSTRINGTRANSFORM_ST_VALUE2 + StepData(:Value2) +  T_CT_SUBSTRINGTRANSFORM_ST_VALUE3 + StepData(:Value3) + T_CT_SUBSTRINGTRANSFORM_ST_VALUE5)
+			SetStepCode( Variable(:Value4) + " = substr("  + Variable(:Value ) + ","  + Variable(:Value2) + ","  + Variable(:Value3) + ")"  )
+		else 
+			NewStep( StepData(:Value4) + " = "  +  T_CT_SUBSTRINGTRANSFORM_ST_VALUE  + StepData(:Value ) +  T_CT_SUBSTRINGTRANSFORM_ST_VALUE2 + StepData(:Value2) +  T_CT_SUBSTRINGTRANSFORM_ST_VALUE3 + StepData(:Value3))
+			SetStepCode( Variable(:Value4) + " = substr("  + Variable(:Value ) + ","  + Variable(:Value2) + ","  + Variable(:Value3) + ",1)"  )
+		}
 
 		return True 
 
@@ -23,4 +28,8 @@ class substringtransformComponentView from ComponentViewParent
 		TextBox( T_CT_SUBSTRINGTRANSFORM_IP_VALUE2 , :value2)
 		TextBox( T_CT_SUBSTRINGTRANSFORM_IP_VALUE3 , :value3)
 		TextBox( T_CT_SUBSTRINGTRANSFORM_IP_VALUE4 , :value4)
+		# Match Case 
+			CheckBox(T_CT_SUBSTRINGTRANSFORM_IP_VALUE5,:value5) {
+				setcheckstate(2)
+			}
 		PageButtons()
