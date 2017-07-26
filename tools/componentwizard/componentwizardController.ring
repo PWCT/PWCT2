@@ -18,7 +18,7 @@ class componentwizardController from windowsControllerParent
 	oView = new componentwizardView
 
 	aQuickScripts = [
-'NewStep(  ) 
+'NewStep(  )
 SetStepCode(  )',
 'NewParentStep(  )
 	SetStepCode(  )
@@ -39,22 +39,22 @@ SetStepCode(  )',
 '
 
 if Variable(:value3) = NULL {
-	NewStep( StepData(:value4) + " = " +  T_CT_FINDITEM_ST_FIND  + StepData(:value2) +  T_CT_FINDITEM_ST_INLIST + StepData(:value) ) 
+	NewStep( StepData(:value4) + " = " +  T_CT_FINDITEM_ST_FIND  + StepData(:value2) +  T_CT_FINDITEM_ST_INLIST + StepData(:value) )
 	SetStepCode( Variable(:value4) + " = binarysearch(" + Variable(:value) + "," + Variable(:value2) + ")" )
 else
-	NewStep( StepData(:value4) + " = " +  T_CT_FINDITEM_ST_FIND  + StepData(:value2) +  T_CT_FINDITEM_ST_INLIST + StepData(:value) +  T_CT_FINDITEM_ST_COLUMN + StepData(:value3) ) 
+	NewStep( StepData(:value4) + " = " +  T_CT_FINDITEM_ST_FIND  + StepData(:value2) +  T_CT_FINDITEM_ST_INLIST + StepData(:value) +  T_CT_FINDITEM_ST_COLUMN + StepData(:value3) )
 	SetStepCode( Variable(:value4) + " = binarysearch(" + Variable(:value) + "," + Variable(:value2) + "," + Variable(:value3) + ")" )
 }
 ',
 '
 if Variable(:value3) = NULL {
-	NewStep( StepData(:value5) + " = " +  T_CT_FINDITEM_ST_FIND  + StepData(:value2) +  T_CT_FINDITEM_ST_INLIST + StepData(:value) ) 
+	NewStep( StepData(:value5) + " = " +  T_CT_FINDITEM_ST_FIND  + StepData(:value2) +  T_CT_FINDITEM_ST_INLIST + StepData(:value) )
 	SetStepCode( Variable(:value5) + " = find(" + Variable(:value) + "," + Variable(:value2) + ")" )
 elseif Variable(:value3) != NULL and Variable(:value4) = NULL
-	NewStep( StepData(:value5) + " = " +  T_CT_FINDITEM_ST_FIND  + StepData(:value2) +  T_CT_FINDITEM_ST_INLIST + StepData(:value) +  T_CT_FINDITEM_ST_COLUMN + StepData(:value3) ) 
+	NewStep( StepData(:value5) + " = " +  T_CT_FINDITEM_ST_FIND  + StepData(:value2) +  T_CT_FINDITEM_ST_INLIST + StepData(:value) +  T_CT_FINDITEM_ST_COLUMN + StepData(:value3) )
 	SetStepCode( Variable(:value5) + " = find(" + Variable(:value) + "," + Variable(:value2) + "," + Variable(:value3) + ")" )
 else
-	NewStep( StepData(:value5) + " = " +  T_CT_FINDITEM_ST_FIND  + StepData(:value2) +  T_CT_FINDITEM_ST_INLIST + StepData(:value) +  T_CT_FINDITEM_ST_COLUMN + StepData(:value3) +  T_CT_FINDITEM_ST_ATTRIBUTE + StepData(:value4)  ) 
+	NewStep( StepData(:value5) + " = " +  T_CT_FINDITEM_ST_FIND  + StepData(:value2) +  T_CT_FINDITEM_ST_INLIST + StepData(:value) +  T_CT_FINDITEM_ST_COLUMN + StepData(:value3) +  T_CT_FINDITEM_ST_ATTRIBUTE + StepData(:value4)  )
 	SetStepCode( Variable(:value5) + " = find(" + Variable(:value) + "," + Variable(:value2) + "," + Variable(:value3) + "," + Variable(:value4)+ ")" )
 }
 '
@@ -70,14 +70,14 @@ else
 		oView.Close()
 
 	func GenerateCode
-		oGenerator = new ComponentWizardGenerator 
+		oGenerator = new ComponentWizardGenerator
 		oGenerator.setComponentName(oView.textName.text())
 		oGenerator.setFolder(oView.textFolder.text())
 		oGenerator.setEnglishData(oView.textEnglish.toPlaintext())
 		oGenerator.setArabicData(oView.textArabic.toPlaintext())
 		oGenerator.setStepsTree(oView.textStepsTree.toPlaintext())
 		switch oView.ListTemplate.currentrow() {
-			case 1		# Empty File 
+			case 1		# Empty File
 				oGenerator.EmptyComponentTemplate()
 			case 2		# Empty Page
 				oGenerator.EmptyPageTemplate()
@@ -95,7 +95,7 @@ else
 
 	func ChangeTemplate
 		switch oView.listTemplate.currentrow() {
-			case 1		# Empty File 
+			case 1		# Empty File
 				cText = "Interaction Page - Title" + WindowsNL() +
 				"Steps Tree Constants"
 			case 2		# Empty Page
@@ -132,52 +132,52 @@ else
 				"Label 5 (Textbox 5)"  + WindowsNL() +
 				"Steps Tree Constants"
 
-		}		
+		}
 		oView.textInfo.setplaintext(cText)
 
 	func ststep
-		oView.TextStepsTree.insertplaintext('NewStep()')		
+		oView.TextStepsTree.insertplaintext('NewStep()')
 
 	func stparentstep
-		oView.TextStepsTree.insertplaintext('NewParentStep()')		
+		oView.TextStepsTree.insertplaintext('NewParentStep()')
 
 	func ststepcode
-		oView.TextStepsTree.insertplaintext('SteStepCode("")')		
+		oView.TextStepsTree.insertplaintext('SteStepCode("")')
 
 	func ststepdata
 		cVar = InputBox("Step Data","Variable :")
-		oView.TextStepsTree.insertplaintext('StepData(:'+cVar+')')		
+		oView.TextStepsTree.insertplaintext('StepData(:'+cVar+')')
 
 	func stvariable
 		cVar = InputBox("Step Data","Variable :")
-		oView.TextStepsTree.insertplaintext('Variable(:'+cVar+')')		
+		oView.TextStepsTree.insertplaintext('Variable(:'+cVar+')')
 
 	func stconstant
 		cComponent = UPPER(oView.textName.text())
 		cVar = UPPER(InputBox("Step Data","Variable :"))
-		oView.TextStepsTree.insertplaintext(' T_CT_'+cComponent+'_ST_'+cVar + " ")		
+		oView.TextStepsTree.insertplaintext(' T_CT_'+cComponent+'_ST_'+cVar + " ")
 
 	func stga
-		oView.TextStepsTree.insertplaintext('oStep = GetActiveStep()')		
+		oView.TextStepsTree.insertplaintext('oStep = GetActiveStep()')
 
 	func stsa
-		oView.TextStepsTree.insertplaintext('SetActiveStep(oStep)')		
+		oView.TextStepsTree.insertplaintext('SetActiveStep(oStep)')
 
 	func stai
-		oView.TextStepsTree.insertplaintext('AllowInteraction()')		
+		oView.TextStepsTree.insertplaintext('AllowInteraction()')
 
 	func stcheck
 		cVar = InputBox("Step Data","Variable :")
-		oView.TextStepsTree.insertplaintext('	if NoValueMsg(:'+cVar+') { return False }')		
+		oView.TextStepsTree.insertplaintext('	if NoValueMsg(:'+cVar+') { return False }')
 
 	func StepData1
-		oView.TextStepsTree.insertplaintext('StepData(:value)')		
+		oView.TextStepsTree.insertplaintext('StepData(:value)')
 
 	func VariableValue1
-		oView.TextStepsTree.insertplaintext('Variable(:value)')		
+		oView.TextStepsTree.insertplaintext('Variable(:value)')
 
 	func quickScripts
-		oView.textQuickScript.setPlaintext(aQuickScripts[oView.ComboQuickScript.CurrentIndex()])	
+		oView.textQuickScript.setPlaintext(aQuickScripts[oView.ComboQuickScript.CurrentIndex()])
 
 	func UseScript
 		oView.textStepsTree.SetPlaintext(oView.textQuickScript.toplaintext())
@@ -186,8 +186,8 @@ else
 		cComponent = UPPER(oView.textName.text())
 		cFuncName = InputBox("Function Call","Function Name :")
 		nParaCount = 0+InputBox("Function Call","Parameters Count :")
-		cCode = "NewStep( #{f1}  )" + WindowsNL() + 
-			"SetStepCode( #{f2} )" + WindowsNL() 
+		cCode = "NewStep( #{f1}  )" + WindowsNL() +
+			"SetStepCode( #{f2} )" + WindowsNL()
 		cStepName = ""
 		cStepCode  = ""
 		# Prepare the Step Name & Step Code
@@ -199,14 +199,14 @@ else
 			for x = 1 to nParaCount {
 				if x = 1 { t = " " else t = x }
 				cStepName += ' +  T_CT_'+cComponent+
-				'_ST_VALUE'+t + " + StepData(:Value" + t + ")" 
-				cStepCode += " + Variable(:Value" + t + ")" 
+				'_ST_VALUE'+t + " + StepData(:Value" + t + ")"
+				cStepCode += " + Variable(:Value" + t + ")"
 				if x != nParaCount {
 					cStepCode += ' + "," '
-				else 	
+				else
 					cStepCode += ' + ")" '
 				}
 			}
 		cCode = substr(cCode,"#{f1}",cStepName)
-		cCode = substr(cCode,"#{f2}",cStepCode)		
-		oView.TextStepsTree.insertplaintext(cCode)				
+		cCode = substr(cCode,"#{f2}",cStepCode)
+		oView.TextStepsTree.insertplaintext(cCode)
