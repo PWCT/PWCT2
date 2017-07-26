@@ -191,6 +191,7 @@ else
 		cStepName = ""
 		cStepCode  = ""
 		# Prepare the Step Name & Step Code
+		if nParaCount > 0 {
 			cStepName += "StepData(:Value" + (nParaCount+1) + ")"
 			cStepName += ' + " = " '
 			cStepCode += "Variable(:Value" + (nParaCount+1) + ")"
@@ -207,6 +208,14 @@ else
 					cStepCode += ' + ")" '
 				}
 			}
+		else
+			cStepName += "StepData(:Value) + ' = ' "
+			cStepName +=  ' +  T_CT_'+cComponent+
+				'_ST_VALUE'
+			cStepCode += "Variable(:Value) + ' = ' + " + 
+				'"' + cFuncName + "()" + '"'
+			
+		}			
 		cCode = substr(cCode,"#{f1}",cStepName)
 		cCode = substr(cCode,"#{f2}",cStepCode)
 		oView.TextStepsTree.insertplaintext(cCode)
