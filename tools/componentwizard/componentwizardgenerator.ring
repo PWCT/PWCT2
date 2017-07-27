@@ -201,7 +201,7 @@ class #{f1}ComponentView from ComponentViewParent
 		Title( T_CT_#{f3}_IP_TITLE )	
 		TextBox( T_CT_#{f3}_IP_VALUE , :value)
 		ListBox( T_CT_#{f3}_IP_VALUE2 , :value2, 
-				T_CT_#{f3}_IP_VALUE2LIST)
+				T_CT_#{f3}_IP_VALUE2LIST )
 		TextBox( T_CT_#{f3}_IP_VALUE5 , :value5)
 		PageButtons()
 `
