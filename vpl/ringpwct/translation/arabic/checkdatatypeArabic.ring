@@ -13,5 +13,5 @@ T_CT_CHECKDATATYPE_IP_VALUE3 = "الناتج :"
 T_CT_CHECKDATATYPE_ST_VALUE = "افحص القيمة"
 T_CT_CHECKDATATYPE_ST_VALUE2 = "  باستخدام الدالة : "
 T_CT_CHECKDATATYPE_IP_VALUE2LIST = [
-			"isstring","isnumber","islist","type","isnull"
+			"هل النوع عبارة حرفية","هل النوع رقمي","هل النوع قائمة","الحصول على النوع","هل المحتوى فارغ"
 ]

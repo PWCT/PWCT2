@@ -13,5 +13,5 @@ T_CT_CHECKDATATYPE_IP_VALUE3 = "Output :"
 T_CT_CHECKDATATYPE_ST_VALUE = "Check Value "
 T_CT_CHECKDATATYPE_ST_VALUE2 = " Using Function : "
 T_CT_CHECKDATATYPE_IP_VALUE2LIST = [
-			"isstring","isnumber","islist","type","isnull"
+			"Is string","Is number","Is list","Get type","Is null"
 ]
