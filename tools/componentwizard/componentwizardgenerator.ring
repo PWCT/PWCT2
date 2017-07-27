@@ -314,7 +314,11 @@ class #{f1}ComponentView from ComponentViewParent
 			else
 				cValue = ""
 			}
-			word += ' = "' + cValue + '"'
+			if startswith(cValue,"[") and Endswith(cValue,"]") {
+				word += ' = ' + cValue
+			else
+				word += ' = "' + cValue + '"'
+			}
 			nIndex++
 		}
 		nIndex = 1
@@ -324,7 +328,11 @@ class #{f1}ComponentView from ComponentViewParent
 			else
 				cValue = ""
 			}
-			word += ' = "' + cValue + '"'
+			if startswith(cValue,"[") and Endswith(cValue,"]") {
+				word += ' = ' + cValue 
+			else
+				word += ' = "' + cValue + '"'
+			}
 			nIndex++
 		}
 		cEnglishFile =  TemplateValues(cTemplateHeader) + 
