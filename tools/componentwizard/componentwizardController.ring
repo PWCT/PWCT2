@@ -91,6 +91,8 @@ else
 				oGenerator.FourTextboxesTemplate()
 			case 7		# Five Textboxes
 				oGenerator.FiveTextboxesTemplate()
+			case 8		# Textbox-Listbox-Textbox
+				oGenerator.TextListTextTemplate()
 		}
 
 	func ChangeTemplate
@@ -131,7 +133,13 @@ else
 				"Label 4 (Textbox 4)"  + WindowsNL() +
 				"Label 5 (Textbox 5)"  + WindowsNL() +
 				"Steps Tree Constants"
-
+			case 8		# Textbox - Listbox - Textbox
+				cText = "Interaction Page - Title" + WindowsNL() +
+				"First Label (First Textbox)" + WindowsNL() +
+				"Second Label (Listbox)"  + WindowsNL() +
+				"Listbox Items as List"  + WindowsNL() +
+				"Third Label (Textbox)"  + WindowsNL() +
+				"Steps Tree Constants"
 		}
 		oView.textInfo.setplaintext(cText)
 
@@ -218,4 +226,25 @@ else
 		}			
 		cCode = substr(cCode,"#{f1}",cStepName)
 		cCode = substr(cCode,"#{f2}",cStepCode)
+		oView.TextStepsTree.insertplaintext(cCode)
+
+	func FunctionsListbox
+		cComponent = UPPER(oView.textName.text())
+		nFuncCount = 0+InputBox("Functions List","Functions Count :")
+		cCode = `
+		switch Variable(:Value2) {
+			#{f1}
+		}
+
+		NewStep( StepData(:Value3) + " = "  +  T_CT_#{f2}_ST_VALUE  +
+			 StepData(:Value ) +  T_CT_#{f2}_ST_VALUE2 + 
+			StyleData(T_CT_#{f2}_IP_VALUE2LIST[Variable(:Value2)])  )
+		SetStepCode( Variable(:Value3) + " = "+cFunc+"("  + Variable(:Value ) + ")"  )
+		`
+		cStr = windowsnl()
+		for x = 1 to nFuncCount {
+			cStr += copy(char(9),3)+'case '+x+' cFunc = "" ' + windowsnl()
+		}
+		cCode = substr(cCode,"#{f1}",cStr)
+		cCode = substr(cCode,"#{f2}",cComponent)
 		oView.TextStepsTree.insertplaintext(cCode)

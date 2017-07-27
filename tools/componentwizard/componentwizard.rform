@@ -1,8 +1,8 @@
 # Start Form Designer File
 aObjectsList = [
 	[ :name = "Window" , :id = 1 , :classname = "formdesigner_qwidget" , :data = [
-		 :x = -896 , : y = -75  , 
-		 :width =  1300 , :height = 574 , 
+		 :x = -896 , : y = 0  , 
+		 :width =  1344 , :height = 574 , 
 		 :title =  "Component Wizard" , 
 		 :backcolor =  "" , 
 		 :windowflags =  "Qt_Window | Qt_WindowTitleHint | Qt_WindowSystemMenuHint | Qt_WindowCloseButtonHint | Qt_CustomizeWindowHint" , 
@@ -109,7 +109,7 @@ aObjectsList = [
 		 :backcolor =  "" , 
 		 :font =  "Arial" , 
 		 :parent =  "win"  ,
-		 :cItems =  "Empty File,Empty Page,One Textbox,Two Textboxes,Three Textboxes,Four Textboxes,Five Textboxes",
+		 :cItems =  "Empty File,Empty Page,One Textbox,Two Textboxes,Three Textboxes,Four Textboxes,Five Textboxes,Textbox-Listbox-Textbox",
 		 :cCurrentRow =  "4",
 		 :setcurrentItemChangedEvent =  "",
 		 :setcurrentRowChangedEvent =  "ChangeTemplate",
@@ -220,7 +220,7 @@ aObjectsList = [
 	],
 	[ :name = "TextStepsTree" , :id = 17 , :classname = "formdesigner_qtextedit" , :data = [
 		 :x = 502 , : y = 159  , 
-		 :width =  778 , :height = 198 , 
+		 :width =  828 , :height = 198 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
 		 :font =  "MS Shell Dlg 2,18,-1,5,50,0,0,0,0,0" , 
@@ -263,7 +263,7 @@ aObjectsList = [
 	],
 	[ :name = "TextQuickScript" , :id = 20 , :classname = "formdesigner_qtextedit" , :data = [
 		 :x = 499 , : y = 401  , 
-		 :width =  779 , :height = 136 , 
+		 :width =  829 , :height = 136 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
 		 :font =  "Arial" , 
@@ -279,7 +279,7 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Button3" , :id = 21 , :classname = "formdesigner_qpushbutton" , :data = [
-		 :x = 587 , : y = 128  , 
+		 :x = 567 , : y = 128  , 
 		 :width =  38 , :height = 26 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
@@ -291,7 +291,7 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Button21" , :id = 22 , :classname = "formdesigner_qpushbutton" , :data = [
-		 :x = 625 , : y = 128  , 
+		 :x = 605 , : y = 128  , 
 		 :width =  68 , :height = 26 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
@@ -303,7 +303,7 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Button22" , :id = 23 , :classname = "formdesigner_qpushbutton" , :data = [
-		 :x = 693 , : y = 128  , 
+		 :x = 673 , : y = 128  , 
 		 :width =  58 , :height = 26 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
@@ -315,7 +315,7 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Button23" , :id = 24 , :classname = "formdesigner_qpushbutton" , :data = [
-		 :x = 751 , : y = 128  , 
+		 :x = 731 , : y = 128  , 
 		 :width =  58 , :height = 26 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
@@ -327,7 +327,7 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Button24" , :id = 25 , :classname = "formdesigner_qpushbutton" , :data = [
-		 :x = 809 , : y = 128  , 
+		 :x = 789 , : y = 128  , 
 		 :width =  48 , :height = 26 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
@@ -339,7 +339,7 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Button25" , :id = 26 , :classname = "formdesigner_qpushbutton" , :data = [
-		 :x = 858 , : y = 128  , 
+		 :x = 838 , : y = 128  , 
 		 :width =  48 , :height = 26 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
@@ -351,7 +351,7 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Button26" , :id = 27 , :classname = "formdesigner_qpushbutton" , :data = [
-		 :x = 906 , : y = 128  , 
+		 :x = 886 , : y = 128  , 
 		 :width =  28 , :height = 26 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
@@ -363,7 +363,7 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Button27" , :id = 28 , :classname = "formdesigner_qpushbutton" , :data = [
-		 :x = 935 , : y = 128  , 
+		 :x = 915 , : y = 128  , 
 		 :width =  28 , :height = 26 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
@@ -375,7 +375,7 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Button28" , :id = 29 , :classname = "formdesigner_qpushbutton" , :data = [
-		 :x = 964 , : y = 128  , 
+		 :x = 944 , : y = 128  , 
 		 :width =  28 , :height = 26 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
@@ -387,7 +387,7 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Button29" , :id = 30 , :classname = "formdesigner_qpushbutton" , :data = [
-		 :x = 993 , : y = 128  , 
+		 :x = 973 , : y = 128  , 
 		 :width =  38 , :height = 26 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
@@ -411,7 +411,7 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Button14" , :id = 32 , :classname = "formdesigner_qpushbutton" , :data = [
-		 :x = 1035 , : y = 128  , 
+		 :x = 1015 , : y = 128  , 
 		 :width =  70 , :height = 25 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
@@ -423,7 +423,7 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Button15" , :id = 33 , :classname = "formdesigner_qpushbutton" , :data = [
-		 :x = 1107 , : y = 128  , 
+		 :x = 1087 , : y = 128  , 
 		 :width =  87 , :height = 26 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
@@ -435,7 +435,7 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Button33" , :id = 34 , :classname = "formdesigner_qpushbutton" , :data = [
-		 :x = 1196 , : y = 128  , 
+		 :x = 1176 , : y = 128  , 
 		 :width =  77 , :height = 26 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
@@ -444,6 +444,18 @@ aObjectsList = [
 		 :text =  "Function Call",
 		 :BtnImage =  "",
 		 :setClickEvent =  "FunctionCall"
+		]
+	],
+	[ :name = "Button34" , :id = 35 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 1253 , : y = 128  , 
+		 :width =  77 , :height = 26 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Functions List",
+		 :BtnImage =  "",
+		 :setClickEvent =  "FunctionsListbox"
 		]
 	]
 ]
