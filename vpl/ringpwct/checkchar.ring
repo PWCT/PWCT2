@@ -16,7 +16,15 @@ class checkcharComponentController from ComponentControllerParent
 					
 					case 1 cFunc = "isalnum" 
 					case 2 cFunc = "isalpha" 
-		
+					case 3 cFunc = "iscntrl"
+					case 4 cFunc = "isdigit"
+					case 5 cFunc = "isgraph"
+					case 6 cFunc = "islower"
+					case 7 cFunc = "isprint"
+					case 8 cFunc = "ispunct"
+					case 9 cFunc = "isspace" 
+					case 10 cFunc = "isupper"
+					case 11 cFunc = "isxdigit"
 				}
 		
 				NewStep( StepData(:Value3) + " = "  +  T_CT_CHECKCHAR_ST_VALUE  +
