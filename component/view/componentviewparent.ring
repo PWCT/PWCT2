@@ -6,10 +6,11 @@
 */
 
 class ComponentViewParent from WindowsViewParent
-
 	win = new qWidget() {
 		setLayoutDirection(T_LAYOUTDIRECTION)
-		resize(300,10)
+		oDesktop = new qDesktopwidget() 
+		move((oDesktop.width()-400)/2,(oDesktop.height()-300)/2)
+		resize(400,10)
 		setWindowTitle(T_IP_WINDOWTITLE) # "Interation Window"
 		setwindowflags(Qt_CustomizeWindowHint | Qt_WindowTitleHint | Qt_WindowStaysOnTopHint) 
 		oLayoutAll = new qVBoxLayout() 
@@ -137,6 +138,7 @@ class ComponentViewParent from WindowsViewParent
 				AddItem(Item)
 			}
 			setCurrentRow(0,3)
+			setminimumheight(150)
 		}
 		oLayout = new qHBoxLayout() {
 			AddWidget(oLabel) AddWidget(oList)

@@ -30,6 +30,6 @@ class checkdatatypeComponentView from ComponentViewParent
 	 
 		Title( T_CT_CHECKDATATYPE_IP_TITLE )	
 		TextBox( T_CT_CHECKDATATYPE_IP_VALUE , :value)
-		ListBox( T_CT_CHECKDATATYPE_IP_VALUE2 , :value2,T_CT_CHECKDATATYPE_IP_VALUE2LIST)
+		ListBox( T_CT_CHECKDATATYPE_IP_VALUE2 , :value2,T_CT_CHECKDATATYPE_IP_VALUE2LIST) 
 		TextBox( T_CT_CHECKDATATYPE_IP_VALUE3 , :value3)
 		PageButtons()
