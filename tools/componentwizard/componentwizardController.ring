@@ -248,3 +248,13 @@ else
 		cCode = substr(cCode,"#{f1}",cStr)
 		cCode = substr(cCode,"#{f2}",cComponent)
 		oView.TextStepsTree.insertplaintext(cCode)
+
+	func ClearData
+		oView {
+			textName.setText("")
+			ListTemplate.setcurrentrow(4,3)
+			textEnglish.setplaintext(" Component")
+			textArabic.setplaintext("مكون ")
+			textStepsTree.setplaintext("")
+			comboQuickScript.setCurrentIndex(1)
+		}
