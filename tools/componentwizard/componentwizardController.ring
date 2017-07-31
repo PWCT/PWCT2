@@ -258,3 +258,41 @@ else
 			textStepsTree.setplaintext("")
 			comboQuickScript.setCurrentIndex(1)
 		}
+
+	func FunctionCallNoOutput
+		cComponent = UPPER(oView.textName.text())
+		cFuncName = InputBox("Function Call","Function Name :")
+		nParaCount = 0+InputBox("Function Call","Parameters Count :")
+		cCode = "NewStep( #{f1}  )" + WindowsNL() +
+			"SetStepCode( #{f2} )" + WindowsNL()
+		cStepName = ""
+		cStepCode  = ""
+		# Prepare the Step Name & Step Code
+		if nParaCount > 0 {
+			cStepCode += ' "#{f1}(" '
+			cStepCode = substr(cStepCode,"#{f1}",cFuncName)
+			for x = 1 to nParaCount {
+				if x = 1 { t = " " else t = x }
+				if x != 1 {
+					cStepName += ' +  '
+				}
+				cStepName += 'T_CT_'+cComponent+
+				'_ST_VALUE'+t + " + StepData(:Value" + t + ")"
+				cStepCode += " + Variable(:Value" + t + ")"
+				if x != nParaCount {
+					cStepCode += ' + "," '
+				else
+					cStepCode += ' + ")" '
+				}
+			}
+		else
+			cStepName += "StepData(:Value) + ' = ' "
+			cStepName +=  ' +  T_CT_'+cComponent+
+				'_ST_VALUE'
+			cStepCode += "Variable(:Value) + ' = ' + " + 
+				'"' + cFuncName + "()" + '"'			
+		}			
+		cCode = substr(cCode,"#{f1}",cStepName)
+		cCode = substr(cCode,"#{f2}",cStepCode)
+		oView.TextStepsTree.insertplaintext(cCode)
+
