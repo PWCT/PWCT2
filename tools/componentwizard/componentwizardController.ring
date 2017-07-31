@@ -93,6 +93,9 @@ else
 				oGenerator.FiveTextboxesTemplate()
 			case 8		# Textbox-Listbox-Textbox
 				oGenerator.TextListTextTemplate()
+			case 9		# Textbox-Listbox-Textbox-Textbox
+				oGenerator.TextListTextTextTemplate()
+
 		}
 
 	func ChangeTemplate
@@ -139,6 +142,14 @@ else
 				"Second Label (Listbox)"  + WindowsNL() +
 				"Listbox Items as List"  + WindowsNL() +
 				"Third Label (Textbox)"  + WindowsNL() +
+				"Steps Tree Constants"
+			case 9		# Textbox - Listbox - Textbox - Textbox
+				cText = "Interaction Page - Title" + WindowsNL() +
+				"First Label (First Textbox)" + WindowsNL() +
+				"Second Label (Listbox)"  + WindowsNL() +
+				"Listbox Items as List"  + WindowsNL() +
+				"Third Label (Textbox)"  + WindowsNL() +
+				"Label 4 (Textbox)"  + WindowsNL() +
 				"Steps Tree Constants"
 		}
 		oView.textInfo.setplaintext(cText)
