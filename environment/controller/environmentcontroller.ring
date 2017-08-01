@@ -138,6 +138,8 @@ class EnvironmentController from WindowsControllerParent
 			# We need both of them (Show & Raise)
 				oDock.show()
 				oDock.raise()
+			# Set the Goal Designer Font
+				GoalDesignerFont()
 		else
 			oView.oDockGoalDesigner.setWindowTitle(cFileName)
 		}
@@ -405,7 +407,9 @@ class EnvironmentController from WindowsControllerParent
 		else
 			oView.oDockOutputWindow.hide()
 		}
+		GoalDesignerFont()
 
+	func GoalDesignerFont
 		# Set The Goal Designer Font
 			parent().cFont = cFont
 			parent().UpdateFont()
