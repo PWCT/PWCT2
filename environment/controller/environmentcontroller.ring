@@ -134,6 +134,10 @@ class EnvironmentController from WindowsControllerParent
 			oDock = oView.CreateGoalDesigner(oView.win)
 			oDock.setWindowTitle(cFileName)
 			SetParents()
+			oView.win.tabifydockwidget(oView.oDockGoalDesigner,oDock)
+			# We need both of them (Show & Raise)
+				oDock.show()
+				oDock.raise()
 		else
 			oView.oDockGoalDesigner.setWindowTitle(cFileName)
 		}
