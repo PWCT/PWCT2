@@ -54,10 +54,10 @@ class StepsColorsController from WindowsControllerParent
 				C_STEPCOLOR_ALLOWINTERACTION_BACKCOLOR = cColor
 			case 7
 				oView.btnLeafText.setstylesheet("background-color: "+cColor)
-				C_STEPCOLOR_LEAF_TEXT = cColor
+				C_STEPCOLOR_INFO_TEXT = cColor
 			case 8
 				oView.btnLeafBackColor.setstylesheet("background-color: "+cColor)
-				C_STEPCOLOR_LEAF_BACKCOLOR = cColor
+				C_STEPCOLOR_INFO_BACKCOLOR = cColor
 			case 9
 				oView.btnDataText.setstylesheet("background-color: "+cColor)
 				C_STEPCOLOR_DATA_TEXT = cColor
