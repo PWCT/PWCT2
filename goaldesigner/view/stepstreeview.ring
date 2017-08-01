@@ -23,6 +23,16 @@ class StepsTreeView from TreeControl
 		AddStartPoint()
 		return self
 
+	/*
+		The next method is the same as Init 
+		but uses AddStartPoint2() to create the item without 
+		creating new qLabel object for it.
+	*/
+	func Init2 win
+		super.init(win)
+		AddStartPoint2()
+		return self
+
 	func AddStartPoint
 		setcolumncount(1)
 		oFirststep = new qtreewidgetitem()
@@ -35,6 +45,19 @@ class StepsTreeView from TreeControl
 			this.SetLabelFont(oLabel)
 		}
 		setItemWidget(oFirstStep,0, oLabel)	
+		setCurrentItem(oFirstStep,0)
+
+	/*
+		The next method is the same as AddStartPoint but doesn't
+		create new qLabel object for the item.
+	*/
+	func AddStartPoint2
+		setcolumncount(1)
+		oFirststep = new qtreewidgetitem()
+		addtoplevelitem(oFirststep)
+		AddToTree(1,oFirstStep)
+		setheaderlabel(cControlHeader)
+		oFirstStep.settext(0,this.cStartPointText)
 		setCurrentItem(oFirstStep,0)
 
 	func ActivateTheFirstStep

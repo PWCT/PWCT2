@@ -59,13 +59,14 @@ class ComponentsBrowserController from WindowsControllerParent
 			nStepID      = aStepsTree[x][1]
 			nParentID   = aStepsTree[x][2]
 			cStepName  = aStepsTree[x][3][:name]
-			oView.oComponentsTree.SerialAdd(nParentID,nStepID,cStepName,False)								
+			oItem = oView.oComponentsTree.AddNode(nParentID,nStepID,cStepName)								
+			oView.oComponentsTree.scrolltoitem(oItem,0)
 		}
 		oView.oComponentsTree.oFirstStep.SetExpanded(True)
 		oView.oComponentsTree.ActivateTheFirstStep()
 		oView.oComponentsTree.setupdatesenabled(True)
 		oView.oComponentsTree.blocksignals(False)
-		
+
 	/*
 		Purpose : Search in the Components list
 		Parameters : None

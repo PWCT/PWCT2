@@ -199,3 +199,16 @@ solved by
 A good Rule in the Components Browser
 Component = Leaf Nodes only 
 Doamin Tree = Any Node contains Children 
+
+(23)
+I increased the performance of loading the components browser Tree
+By creating new methods 
+	init2()
+	AddSerial2()
+	Where we don't create new qLabel object for each item
+	Also using setStylesheet() we can have 
+		Font Size, Color & Icon for all items 
+	Performance increased from 1.3 second to 0.3 second 
+	while we have around 100 components 
+
+

@@ -64,6 +64,20 @@ class TreeControl from qTreeWidget
 		oItem.setExpanded(true)
 
 	/*
+		The next method is the same as SerialAdd
+		But doesn't create new QLabel object for each item 
+		It uses the default item object.
+	*/
+
+	func SerialAdd2 nParentID,nID,cText
+		oParent = GetObjByID(nParentID)
+		oItem = new qtreewidgetitem() 
+		oParent.addchild(oItem)
+		oItem.settext(0,cText)
+		AddToTree(nID,oItem)
+		oItem.setExpanded(true)
+
+	/*
 		The next method Insert a node and create the Node Label 	
 		Parameters :  The Parent Node ID, The Node ID, The Node Text , Index (insert Position)
 		Output : Reference to The Node Object (Type : QTreeWidgetItem)

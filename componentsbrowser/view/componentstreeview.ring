@@ -7,6 +7,8 @@
 
 class ComponentsTreeView from StepsTreeView
 
+	lDefaultTree = True		# True = Don't create qLabel for each item
+
 	cControlHeader = T_CB_COMPONENTSTREE 
 	cStartPointText = T_CB_RINGPWCT
 
@@ -20,5 +22,24 @@ class ComponentsTreeView from StepsTreeView
 	*/
 
 	func Init win
-		super.init(win)
+		if lDefaultTree {
+			super.init2(win)
+			TreeStyle()
+		else
+			super.init(win)
+		}
 		return self
+
+	func TreeStyle
+		setStyleSheet('QTreeWidget { color: green; font-size: '+nFontSize+'pt  } '+
+			'QTreeView::branch:open { image: url("' + C_LABELIMAGE_NODEICON + '") }'  )
+
+	func AddNode nParentID,nStepID,cStepName
+		if lDefaultTree {
+			SerialAdd2(nParentID,nStepID,cStepName)								
+		else
+			oItem = super.AddNode(nParentID,nStepID,cStepName)								
+			scrolltoitem(oItem,0)
+		}
+
+	
