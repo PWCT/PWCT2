@@ -34,6 +34,7 @@ class ComponentsTreeView from StepsTreeView
 		setStyleSheet(
 			'QTreeWidget { color: green; font-size: '+nFontSize+'pt  } '+
 			'QTreeWidget::branch:open { image: url("' + C_LABELIMAGE_NODEICON + '") }' +
+			'QTreeWidget::!active { selection-background-color:rgba(0,65,255,255) ; selection-color:white; } ; ' +
 			'QTreeWidget::branch:closed:has-children { image: url("' + C_LABELIMAGE_NODEICON + '") }'
 			 )
 
