@@ -31,8 +31,11 @@ class ComponentsTreeView from StepsTreeView
 		return self
 
 	func TreeStyle
-		setStyleSheet('QTreeWidget { color: green; font-size: '+nFontSize+'pt  } '+
-			'QTreeView::branch:open { image: url("' + C_LABELIMAGE_NODEICON + '") }'  )
+		setStyleSheet(
+			'QTreeWidget { color: green; font-size: '+nFontSize+'pt  } '+
+			'QTreeWidget::branch:open { image: url("' + C_LABELIMAGE_NODEICON + '") }' +
+			'QTreeWidget::branch:closed:has-children { image: url("' + C_LABELIMAGE_NODEICON + '") }'
+			 )
 
 	func AddNode nParentID,nStepID,cStepName
 		if lDefaultTree {
