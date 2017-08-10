@@ -39,8 +39,8 @@ load "goaldesigner/controller/timemachinecontroller.ring"
 load "goaldesigner/controller/programcontroller.ring"
 
 # Load Steps Colors Files
-load "goaldesigner/controller/stepsColorsController.ring"
-load "goaldesigner/view/stepscolorsView.ring"
+load "goaldesigner/controller/stepscolorscontroller.ring"
+load "goaldesigner/view/stepscolorsview.ring"
 
 # Load the Components Browser Files
 load "componentsbrowser/controller/componentsbrowsercontroller.ring"
