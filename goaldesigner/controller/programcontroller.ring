@@ -47,7 +47,9 @@ Class ProgramController
 			oGD.parent().oView.oProcessText.setFocus(0)
 			oGD.parent().oView.oProcess = RunProcess(cCurrentDir+"run2.bat",cFileName,oGD.parent().Method(:GetDataAction))
 		else
-			RunBatch(cRunGUIBatch,"/b")
+			oGD.parent().oView.oProcessEditbox.setplaintext("")
+			oGD.parent().oView.oProcessText.setFocus(0)
+			oGD.parent().oView.oProcess = RunProcess("ring",cFileName,oGD.parent().Method(:GetDataAction))
 		}
 
 	/*
