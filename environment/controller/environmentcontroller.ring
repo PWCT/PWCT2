@@ -266,7 +266,10 @@ class EnvironmentController from WindowsControllerParent
 	*/
 
 	func CHMAction
-		System( "start " + exefolder()+"/../docs/ring.chm" )
+		new QDesktopServices {
+			OpenURL(new qURL("file:///"+substr(exefolder(),"\","/")+"../docs/ring.chm") )
+		}
+
 
 	/*
 		Purpose : Open Help - PDF File
@@ -275,7 +278,10 @@ class EnvironmentController from WindowsControllerParent
 	*/
 
 	func PDFAction
-		System( "start " + exefolder()+"/../docs/ring.pdf" )
+		new QDesktopServices {
+			OpenURL(new qURL("file:///"+substr(exefolder(),"\","/")+"../docs/ring.pdf") )
+		}
+
 
 	/*
 		Purpose : Menubar - Language Item Action
