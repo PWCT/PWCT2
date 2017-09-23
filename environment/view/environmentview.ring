@@ -240,43 +240,43 @@ class EnvironmentView from WindowsViewParent
 
 	func CreateToolbar win
 		aBtns = [
-				new qpushbutton(win) { 
+				new qToolbutton(win) { 
 					setbtnimage(self,"images/new.png") 
 					setclickevent(Method(:NewAction))
 					settooltip(T_ENV_MENU_NEW) # "New File"
 				} ,
-				new qpushbutton(win) { 
+				new qToolbutton(win) { 
 					setbtnimage(self,"images/open.png") 
 					setclickevent(Method(:OpenAction))
 					settooltip(T_ENV_MENU_OPEN) # "Open File"
 				} ,
-				new qpushbutton(win) { 
+				new qToolbutton(win) { 
 					setbtnimage(self,"images/save.png")
 					setclickevent(Method(:SaveAction))
 					settooltip(T_ENV_MENU_SAVE) # "Save"
 				 } ,
-				new qpushbutton(win) { 
+				new qToolbutton(win) { 
 					setbtnimage(self,"images/saveas.png")
 					setclickevent(Method(:SaveAsAction))
 					settooltip(T_ENV_MENU_SAVEAS) # "Save As"
 				 } ,
 				
-				new qpushbutton(win) { 
+				new qToolbutton(win) { 
 					setbtnimage(self,"images/debug.png") 
 					setclickevent(Method(:DebugAction))
 					settooltip(T_ENV_MENU_DEBUG) # "Debug (Run then wait!)"
 				} ,
-				new qpushbutton(win) { 
+				new qToolbutton(win) { 
 					setbtnimage(self,"images/run.png") 
 					setclickevent(Method(:RunAction))
 					settooltip(T_ENV_MENU_RUN) # "Run the program"
 				} ,
-				new qpushbutton(win) { 
-					setbtnimage(self,"images/rungui.bmp") 
+				new qToolbutton(win) { 
+					setbtnimage(self,"images/rungui.png") 
 					setclickevent(Method(:RunGUIAction))
 					settooltip(T_ENV_MENU_RUNNOCONSOLE) # "Run GUI Application (No Console)"
 				} ,
-				new qpushbutton(win) { 
+				new qToolbutton(win) { 
 					setbtnimage(self,"images/close.png") 
 					setclickevent(Method(:CloseAction))
 					settooltip(T_ENV_MENU_EXIT) # "Exit"
