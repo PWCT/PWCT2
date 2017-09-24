@@ -42,15 +42,12 @@ Class ProgramController
 
 	func RunGUI oGD
 		Prepare(oGD)	# Save the source code to the file
-		if iswindows() {
-			oGD.parent().oView.oProcessEditbox.setplaintext("")
-			oGD.parent().oView.oProcessText.setFocus(0)
-			oGD.parent().oView.oProcess = RunProcess(cCurrentDir+"run2.bat",cFileName,oGD.parent().Method(:GetDataAction))
-		else
-			oGD.parent().oView.oProcessEditbox.setplaintext("")
-			oGD.parent().oView.oProcessText.setFocus(0)
-			oGD.parent().oView.oProcess = RunProcess("ring",cFileName,oGD.parent().Method(:GetDataAction))
-		}
+		oGD.parent().oView.oProcessEditbox.setplaintext("")
+		oGD.parent().oView.oProcessText.setFocus(0)
+		cDir = currentdir()
+		chdir(JustFilePath(cFileName))
+		oGD.parent().oView.oProcess = RunProcess(exefilename(),cFileName,oGD.parent().Method(:GetDataAction))
+		chdir(cDir)
 
 	/*
 		Purpose : Run Process
