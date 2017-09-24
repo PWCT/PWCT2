@@ -1,0 +1,31 @@
+/*
+**	Project 	: Programming Without Coding Technology (PWCT) Version 2.0
+**	File Purpose 	: HTML Functions Class
+**	Date 		: 2017.09.24
+**	Author 		: Mahmoud Fayed <msfclipper@yahoo.com>
+*/
+
+class HTMLFunctions
+
+
+	/*
+		HTML Special Character 
+		Input : String contains Special Characters like < and >
+		Output : String to be displayed in HTML pages
+	*/
+	func HTMLSpecialChars cStr
+		cResult = ""
+		if isstring(cStr) and len(cStr) > 0 {
+			for x in cStr {
+				if x = '&'  { 
+					cResult += '&amp;' 
+				elseif x = '"' cResult += '&quot;'
+				elseif x = "'" cResult += '&#039;'
+				elseif x = '<' cResult += '&lt;'
+				elseif x = '>' cResult += '&gt;'
+				elseif x = ' ' cResult += '&nbsp;'
+				else 	    cResult += x
+				}
+			}
+		}
+		return cResult

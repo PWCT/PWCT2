@@ -37,6 +37,7 @@ load "goaldesigner/model/interactionmodel.ring"
 load "goaldesigner/view/timemachineview.ring"
 load "goaldesigner/controller/timemachinecontroller.ring"
 load "goaldesigner/controller/programcontroller.ring"
+load "goaldesigner/controller/htmlfunctions.ring"
 
 # Load Steps Colors Files
 load "goaldesigner/controller/stepscolorscontroller.ring"

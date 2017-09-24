@@ -22,6 +22,8 @@ Class ComponentControllerParent from WindowsControllerParent
 	lAllowInteraction	= False	# The step allow sub steps
 
 	oStyle = new HTMLStyles
+	oHTMLFunctions = new HTMLFunctions
+
 
 	/*
 		Purpose : Create a Step as parent to other steps
@@ -307,21 +309,7 @@ Class ComponentControllerParent from WindowsControllerParent
 		Output : String to be displayed in HTML pages
 	*/
 	func HTMLSpecialChars cStr
-		cResult = ""
-		if isstring(cStr) and len(cStr) > 0 {
-			for x in cStr {
-				if x = '&'  { 
-					cResult += '&amp;' 
-				elseif x = '"' cResult += '&quot;'
-				elseif x = "'" cResult += '&#039;'
-				elseif x = '<' cResult += '&lt;'
-				elseif x = '>' cResult += '&gt;'
-				elseif x = ' ' cResult += '&nbsp;'
-				else 	    cResult += x
-				}
-			}
-		}
-		return cResult
+		return oHTMLFunctions.HTMLSpecialChars(cStr)
 
 	/*
 		Purpose : Generate Action (To be written in the component)
