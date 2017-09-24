@@ -9,6 +9,8 @@ class FindStepController from WindowsControllerParent
 
 	oView = new FindStepView
 
+	oHTMLFunctions = new HTMLFunctions
+
 	aStepIDResult = [] # Array contains the IDs of the search result
 
 	/*
@@ -35,6 +37,7 @@ class FindStepController from WindowsControllerParent
 			}
 			if substr(cStepName,cFind) > 0 {				
 				aStepIDResult + item[C_TREEMODEL_NODEID]
+				cStepNamePure = oHTMLFunctions.HTMLSpecialChars2Text(cStepNamePure)
 				oView.oListResult.AddItem(cStepNamePure)
 			}
 		}

@@ -29,3 +29,16 @@ class HTMLFunctions
 			}
 		}
 		return cResult
+
+	/*
+		HTML Special Character to Normal Text
+	*/
+
+	func HTMLSpecialChars2Text cStr
+		cStr = substr(cStr,'&amp;',"&")
+		cStr = substr(cStr,'&quot;','"')
+		cStr = substr(cStr,'&#039;',"'")
+		cStr = substr(cStr,'&lt;',"<")
+		cStr = substr(cStr,'&gt;',">")
+		cStr = substr(cStr,'&nbsp;'," ")
+		return cStr
