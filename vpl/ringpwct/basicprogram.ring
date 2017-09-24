@@ -9,6 +9,8 @@ Class BasicProgramComponentController from ComponentControllerParent
 
 	oView = new BasicProgramComponentView
 
+	lNoInteractionPage = True
+
 	func GenerateAction 
 								
 		NewParentStep(T_CT_BASICPROGRAM_ST_THEFIRSTSTEP )  

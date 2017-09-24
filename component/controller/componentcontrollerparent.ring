@@ -21,6 +21,9 @@ Class ComponentControllerParent from WindowsControllerParent
 
 	lAllowInteraction	= False	# The step allow sub steps
 
+
+	lNoInteractionPage = False	# No Interaction Page 
+
 	oStyle = new HTMLStyles
 	oHTMLFunctions = new HTMLFunctions
 
@@ -241,6 +244,9 @@ Class ComponentControllerParent from WindowsControllerParent
 	*/
 
 	func OkAction	
+		if lNoInteractionPage {
+			oView.win.hide()
+		}
 		if nInteractionMode = C_INTERACTIONMODE_MODIFY  or ( CheckInteract()  and RulesAllow() ) {
 				if GenerateAction() {
 					parent().oView.oStepsTree.setFocus(0)
@@ -250,6 +256,10 @@ Class ComponentControllerParent from WindowsControllerParent
 						parent().oView.oStepsTree.expanditem(oItem)
 					CloseBtnAction()				
 				}
+		else 
+			if lNoInteractionPage {
+				closebtnAction()
+			}
 		}
 
 	/*
