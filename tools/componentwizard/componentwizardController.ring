@@ -95,6 +95,15 @@ else
 				oGenerator.TextListTextTemplate()
 			case 9		# Textbox-Listbox-Textbox-Textbox
 				oGenerator.TextListTextTextTemplate()
+			case 10		# 6 Textboxes
+				oGenerator.SixTextboxesTemplate()
+			case 11		# 7 Textboxes
+				oGenerator.SevenTextboxesTemplate()
+			case 12		# 8 Textboxes
+				oGenerator.EightTextboxesTemplate()
+			case 13		# 9 Textboxes
+				oGenerator.NineTextboxesTemplate()
+
 
 		}
 
