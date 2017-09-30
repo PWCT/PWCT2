@@ -151,6 +151,49 @@ else
 				"Third Label (Textbox)"  + WindowsNL() +
 				"Label 4 (Textbox)"  + WindowsNL() +
 				"Steps Tree Constants"
+			case 10		# 6 Textboxes
+				cText = "Interaction Page - Title" + WindowsNL() +
+				"First Label (First Textbox)" + WindowsNL() +
+				"Second Label (Second Textbox)"  + WindowsNL() +
+				"Third Label (Third Textbox)"  + WindowsNL() +
+				"Label 4 (Textbox 4)"  + WindowsNL() +
+				"Label 5 (Textbox 5)"  + WindowsNL() +
+				"Label 6 (Textbox 6)"  + WindowsNL() +
+				"Steps Tree Constants"
+			case 11		# 7 Textboxes
+				cText = "Interaction Page - Title" + WindowsNL() +
+				"First Label (First Textbox)" + WindowsNL() +
+				"Second Label (Second Textbox)"  + WindowsNL() +
+				"Third Label (Third Textbox)"  + WindowsNL() +
+				"Label 4 (Textbox 4)"  + WindowsNL() +
+				"Label 5 (Textbox 5)"  + WindowsNL() +
+				"Label 6 (Textbox 6)"  + WindowsNL() +
+				"Label 7 (Textbox 7)"  + WindowsNL() +
+				"Steps Tree Constants"
+			case 12		# 8 Textboxes
+				cText = "Interaction Page - Title" + WindowsNL() +
+				"First Label (First Textbox)" + WindowsNL() +
+				"Second Label (Second Textbox)"  + WindowsNL() +
+				"Third Label (Third Textbox)"  + WindowsNL() +
+				"Label 4 (Textbox 4)"  + WindowsNL() +
+				"Label 5 (Textbox 5)"  + WindowsNL() +
+				"Label 6 (Textbox 6)"  + WindowsNL() +
+				"Label 7 (Textbox 7)"  + WindowsNL() +
+				"Label 8 (Textbox 8)"  + WindowsNL() +
+				"Steps Tree Constants"
+			case 13		# 9 Textboxes
+				cText = "Interaction Page - Title" + WindowsNL() +
+				"First Label (First Textbox)" + WindowsNL() +
+				"Second Label (Second Textbox)"  + WindowsNL() +
+				"Third Label (Third Textbox)"  + WindowsNL() +
+				"Label 4 (Textbox 4)"  + WindowsNL() +
+				"Label 5 (Textbox 5)"  + WindowsNL() +
+				"Label 6 (Textbox 6)"  + WindowsNL() +
+				"Label 7 (Textbox 7)"  + WindowsNL() +
+				"Label 8 (Textbox 8)"  + WindowsNL() +
+				"Label 9 (Textbox 9)"  + WindowsNL() +
+				"Steps Tree Constants"
+
 		}
 		oView.textInfo.setplaintext(cText)
 

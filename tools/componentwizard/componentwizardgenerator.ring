@@ -185,6 +185,115 @@ class #{f1}ComponentView from ComponentViewParent
 #===========================================
 #===========================================
 
+
+	c6TextBoxesTemplate = cTemplateHeader + `
+class #{f1}ComponentController from ComponentControllerParent 
+
+	oView = new #{f1}ComponentView
+
+	func GenerateAction 
+
+#{f4}
+
+		return True 
+
+class #{f1}ComponentView from ComponentViewParent
+	 
+		Title( T_CT_#{f3}_IP_TITLE )	
+		TextBox( T_CT_#{f3}_IP_VALUE , :value)
+		TextBox( T_CT_#{f3}_IP_VALUE2 , :value2)
+		TextBox( T_CT_#{f3}_IP_VALUE3 , :value3)
+		TextBox( T_CT_#{f3}_IP_VALUE4 , :value4)
+		TextBox( T_CT_#{f3}_IP_VALUE5 , :value5)
+		TextBox( T_CT_#{f3}_IP_VALUE6 , :value6)
+		PageButtons()
+`
+#===========================================
+#===========================================
+
+	c7TextBoxesTemplate = cTemplateHeader + `
+class #{f1}ComponentController from ComponentControllerParent 
+
+	oView = new #{f1}ComponentView
+
+	func GenerateAction 
+
+#{f4}
+
+		return True 
+
+class #{f1}ComponentView from ComponentViewParent
+	 
+		Title( T_CT_#{f3}_IP_TITLE )	
+		TextBox( T_CT_#{f3}_IP_VALUE , :value)
+		TextBox( T_CT_#{f3}_IP_VALUE2 , :value2)
+		TextBox( T_CT_#{f3}_IP_VALUE3 , :value3)
+		TextBox( T_CT_#{f3}_IP_VALUE4 , :value4)
+		TextBox( T_CT_#{f3}_IP_VALUE5 , :value5)
+		TextBox( T_CT_#{f3}_IP_VALUE6 , :value6)
+		TextBox( T_CT_#{f3}_IP_VALUE7 , :value7)
+		PageButtons()
+`
+#===========================================
+#===========================================
+
+	c8TextBoxesTemplate = cTemplateHeader + `
+class #{f1}ComponentController from ComponentControllerParent 
+
+	oView = new #{f1}ComponentView
+
+	func GenerateAction 
+
+#{f4}
+
+		return True 
+
+class #{f1}ComponentView from ComponentViewParent
+	 
+		Title( T_CT_#{f3}_IP_TITLE )	
+		TextBox( T_CT_#{f3}_IP_VALUE , :value)
+		TextBox( T_CT_#{f3}_IP_VALUE2 , :value2)
+		TextBox( T_CT_#{f3}_IP_VALUE3 , :value3)
+		TextBox( T_CT_#{f3}_IP_VALUE4 , :value4)
+		TextBox( T_CT_#{f3}_IP_VALUE5 , :value5)
+		TextBox( T_CT_#{f3}_IP_VALUE6 , :value6)
+		TextBox( T_CT_#{f3}_IP_VALUE7 , :value7)
+		TextBox( T_CT_#{f3}_IP_VALUE8 , :value8)
+		PageButtons()
+`
+#===========================================
+#===========================================
+
+	c9TextBoxesTemplate = cTemplateHeader + `
+class #{f1}ComponentController from ComponentControllerParent 
+
+	oView = new #{f1}ComponentView
+
+	func GenerateAction 
+
+#{f4}
+
+		return True 
+
+class #{f1}ComponentView from ComponentViewParent
+	 
+		Title( T_CT_#{f3}_IP_TITLE )	
+		TextBox( T_CT_#{f3}_IP_VALUE , :value)
+		TextBox( T_CT_#{f3}_IP_VALUE2 , :value2)
+		TextBox( T_CT_#{f3}_IP_VALUE3 , :value3)
+		TextBox( T_CT_#{f3}_IP_VALUE4 , :value4)
+		TextBox( T_CT_#{f3}_IP_VALUE5 , :value5)
+		TextBox( T_CT_#{f3}_IP_VALUE6 , :value6)
+		TextBox( T_CT_#{f3}_IP_VALUE7 , :value7)
+		TextBox( T_CT_#{f3}_IP_VALUE8 , :value8)
+		TextBox( T_CT_#{f3}_IP_VALUE9 , :value9)
+		PageButtons()
+`
+#===========================================
+#===========================================
+
+
+
 	cTextListTextTemplate = cTemplateHeader + `
 class #{f1}ComponentController from ComponentControllerParent 
 
@@ -292,6 +401,22 @@ class #{f1}ComponentView from ComponentViewParent
 
 	func FiveTextboxesTemplate
 		cTemplate = cFiveTextBoxesTemplate
+		ProcessTemplate(cTemplate)
+
+	func SixTextboxesTemplate
+		cTemplate = c6TextBoxesTemplate
+		ProcessTemplate(cTemplate)
+
+	func SevenTextboxesTemplate
+		cTemplate = c7TextBoxesTemplate
+		ProcessTemplate(cTemplate)
+
+	func EightTextboxesTemplate
+		cTemplate = c8TextBoxesTemplate
+		ProcessTemplate(cTemplate)
+
+	func NineTextboxesTemplate
+		cTemplate = c9TextBoxesTemplate
 		ProcessTemplate(cTemplate)
 
 	func TextListTextTemplate
