@@ -225,7 +225,7 @@ else
 
 	func stconstant
 		cComponent = UPPER(oView.textName.text())
-		cVar = UPPER(InputBox("Step Data","Variable :"))
+		cVar = UPPER(InputBox("Define Constant","Name :"))
 		oView.TextStepsTree.insertplaintext(' T_CT_'+cComponent+'_ST_'+cVar + " ")
 
 	func stga
