@@ -213,7 +213,7 @@ else
 		oView.TextStepsTree.insertplaintext('NewParentStep()')
 
 	func ststepcode
-		oView.TextStepsTree.insertplaintext('SteStepCode("")')
+		oView.TextStepsTree.insertplaintext('SetStepCode("")')
 
 	func ststepdata
 		cVar = InputBox("Step Data","Variable :")
