@@ -779,25 +779,25 @@ class GoalDesignerController from WindowsControllerParent
 					aComponentsFilesList + cFilePath
 					Eval("Load '" + cFilePath + "'")
 				}
-				# Use the Component
-					# We use Open_WindowNoShow() to avoid flickering
-					Open_WindowNoShow(cFile+:ComponentController)
-					Last_Window().setParentObject(self)
-					Last_Window().cComponent = cFile
-					Last_Window().cVariablesValues = cVariablesValues
-					Last_Window().nInteractionMode = C_INTERACTIONMODE_MODIFY
-					Last_Window().nIID = nIID
-					Last_Window().SetVariablesValues()
-				if lInteractionPagesInGoalDesigner {
-					oView.layoutVPages.InsertWidget(0,Last_Window().oView.win,0,0)
-					Last_Window().Start()	# Show The Window
-					oView.widgetVPages.Show()	# Show the Splitter Widget
-				else
-					Last_Window().Start()	# Show The Window
-				}
-				nInteractionPagesToModifyCount++
-				Last_Window().AfterOpen()
 			}
+			# Use the Component
+				# We use Open_WindowNoShow() to avoid flickering
+				Open_WindowNoShow(cFile+:ComponentController)
+				Last_Window().setParentObject(self)
+				Last_Window().cComponent = cFile
+				Last_Window().cVariablesValues = cVariablesValues
+				Last_Window().nInteractionMode = C_INTERACTIONMODE_MODIFY
+				Last_Window().nIID = nIID
+				Last_Window().SetVariablesValues()
+			if lInteractionPagesInGoalDesigner {
+				oView.layoutVPages.InsertWidget(0,Last_Window().oView.win,0,0)
+				Last_Window().Start()	# Show The Window
+				oView.widgetVPages.Show()	# Show the Splitter Widget
+			else
+				Last_Window().Start()	# Show The Window
+			}
+			nInteractionPagesToModifyCount++
+			Last_Window().AfterOpen()
 
 	/*
 		Purpose : Interaction page (modify) closed

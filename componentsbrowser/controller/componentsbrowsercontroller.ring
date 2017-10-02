@@ -120,15 +120,15 @@ class ComponentsBrowserController from WindowsControllerParent
 				aComponentsFilesList + cFilePath
 				Eval("Load '" + cFilePath + "'")
 			}
-			# Start the Component
-				Open_Window(cFile+:ComponentController)
-				Last_Window().setParentObject(parent())
-				Last_Window().cComponent = cFile
-				Last_Window().nInteractionMode = C_INTERACTIONMODE_NEW
-				Last_Window().AfterOpen()
-			# Clear the Search TextBox
-				oView.oTextSearch.SetText("")
 		}
+		# Start the Component
+			Open_Window(cFile+:ComponentController)
+			Last_Window().setParentObject(parent())
+			Last_Window().cComponent = cFile
+			Last_Window().nInteractionMode = C_INTERACTIONMODE_NEW
+			Last_Window().AfterOpen()
+		# Clear the Search TextBox
+			oView.oTextSearch.SetText("")
 		if not Parent().lComponentsBrowserInGoalDesigner {
 			oView.win.hide()
 		}
