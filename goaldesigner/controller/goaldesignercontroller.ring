@@ -1123,10 +1123,11 @@ class GoalDesignerController from WindowsControllerParent
 				aComponentsFilesList + cFilePath
 				Eval("Load '" + cFilePath + "'")
 			}
-			# Check the Component
-				eval("oObject = new " + cComponentName+:ComponentController) 					
-				return oObject
 		}
+		# Check the Component
+			eval("oObject = new " + cComponentName+:ComponentController) 					
+			return oObject
+
 
 	/*
 		Purpose : Check Rules
