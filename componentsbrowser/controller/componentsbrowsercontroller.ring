@@ -115,12 +115,7 @@ class ComponentsBrowserController from WindowsControllerParent
 		aContent = oModel.GetNodeContent(nID)
 		cFile = aContent[:Code]
 		cFilePath = cComponentsPath + cFile + ".ring"
-		if fexists(cFilePath) {
-			if find(aComponentsFilesList,cFilePath) = 0 { 
-				aComponentsFilesList + cFilePath
-				Eval("Load '" + cFilePath + "'")
-			}
-		}
+		Parent().CheckLoadingComponent(cFilePath)
 		# Start the Component
 			Open_Window(cFile+:ComponentController)
 			Last_Window().setParentObject(parent())

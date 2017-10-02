@@ -756,6 +756,20 @@ class GoalDesignerController from WindowsControllerParent
 		lIsComponentsBrowserOpened = False
 		oView.widgetCB.Hide()
 
+
+	/*
+		Purpose 	: Check loading the component file 
+		Parameters 	: Component File Name
+		Output		: None
+	*/
+	func CheckLoadingComponent cFilePath
+		if fexists(cFilePath) {
+			if find(aComponentsFilesList,cFilePath) = 0 { 
+				aComponentsFilesList + cFilePath
+				Eval("Load '" + cFilePath + "'")
+			}
+		}
+
 	/*
 		Purpose : Modify Action
 		Parameters : None
@@ -774,12 +788,7 @@ class GoalDesignerController from WindowsControllerParent
 			cVariablesValues = oModel.GetInteractionVariablesValues(nIID)
 		# Check the component File
 			cFilePath = cComponentsPath + cFile + ".ring"
-			if fexists(cFilePath) {
-				if find(aComponentsFilesList,cFilePath) = 0 { 
-					aComponentsFilesList + cFilePath
-					Eval("Load '" + cFilePath + "'")
-				}
-			}
+			CheckLoadingComponent(cFilePath)
 			# Use the Component
 				# We use Open_WindowNoShow() to avoid flickering
 				Open_WindowNoShow(cFile+:ComponentController)
@@ -1118,12 +1127,7 @@ class GoalDesignerController from WindowsControllerParent
 	func GetComponentObject cComponentName
 		cComponentsPath = C_CB_COMPONENTSPATH
 		cFilePath = cComponentsPath + cComponentName + ".ring"
-		if fexists(cFilePath) {
-			if find(aComponentsFilesList,cFilePath) = 0 { 
-				aComponentsFilesList + cFilePath
-				Eval("Load '" + cFilePath + "'")
-			}
-		}
+		CheckLoadingComponent(cFilePath)
 		# Check the Component
 			eval("oObject = new " + cComponentName+:ComponentController) 					
 			return oObject
