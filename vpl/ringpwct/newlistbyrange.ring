@@ -11,8 +11,8 @@ class newlistbyrangeComponentController from ComponentControllerParent
 
 	func GenerateAction 
 
-		NewStep( StepData(:value) + " = [" + StepData(:value2) + ":" + StepData(:value3) + "]" ) 
-		SetStepCode( Variable(:value) + " = [" + Variable(:value2) + ":" + Variable(:value3) + "]")
+		NewStep( StepData(:value) + " = " + StepData(:value2) + ":" + StepData(:value3)  ) 
+		SetStepCode( Variable(:value) + " = " + Variable(:value2) + ":" + Variable(:value3) )
 
 		return True 
 
