@@ -57,6 +57,9 @@ load "filesystem/databasesqlite.ring"
 load "filesystem/database.ring"
 load "filesystem/visualsourcefile.ring"
 
+# Load Components 
+load "vpl/ringpwct/ringpwct.ring"
+
 # Run PWCT Environment
 Start_Environment()
 
