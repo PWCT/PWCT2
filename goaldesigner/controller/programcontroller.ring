@@ -14,6 +14,8 @@ Class ProgramController
 	cRunBatch = "run2"
 	cRunGUIBatch = "run2"
 
+	lSetFocusToInput = False
+
 	/*
 		Purpose : Debug
 		Parameters : Goal Designer Object
@@ -43,7 +45,9 @@ Class ProgramController
 	func RunGUI oGD
 		Prepare(oGD)	# Save the source code to the file
 		oGD.parent().oView.oProcessEditbox.setplaintext("")
-		oGD.parent().oView.oProcessText.setFocus(0)
+		if lSetFocusToInput {
+			oGD.parent().oView.oProcessText.setFocus(0)
+		}
 		cDir = currentdir()
 		chdir(JustFilePath(cFileName))
 		oGD.parent().oView.oProcess = RunProcess(exefilename(),cFileName,oGD.parent().Method(:GetDataAction))
