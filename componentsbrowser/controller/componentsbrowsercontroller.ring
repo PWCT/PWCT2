@@ -11,6 +11,8 @@ class ComponentsBrowserController from WindowsControllerParent
 	oModel = new TreeModel
 	cComponentsPath = C_CB_COMPONENTSPATH # "vpl/ringpwct/"
 
+	lHideOnlyDontClose = True
+
 	/*
 		Purpose : Key Press Action
 		Parameters : None
@@ -127,6 +129,9 @@ class ComponentsBrowserController from WindowsControllerParent
 			# Clear the Search TextBox
 				oView.oTextSearch.SetText("")
 		}
+		if not Parent().lComponentsBrowserInGoalDesigner {
+			oView.win.hide()
+		}
 
 	/*
 		Purpose : Show the components browser window and activate search textBox
@@ -138,7 +143,13 @@ class ComponentsBrowserController from WindowsControllerParent
 		Super.Start()
 		oView.win.activateWindow()
 		oView.oTextSearch.SetFocus(0)
-
+		if not Parent().lComponentsBrowserInGoalDesigner {
+			oView.win {
+				oDesktop = new qDesktopwidget() 
+				move((oDesktop.width()-500)/2,(oDesktop.height()-500)/2)
+				resize(500,500)
+			}
+		}
 	/*
 		Purpose : Close the window
 		Parameters : None
@@ -146,5 +157,9 @@ class ComponentsBrowserController from WindowsControllerParent
 	*/
 
 	func CloseAction
+		if lHideOnlyDontClose {
+			oView.win.hide()
+			return 
+		}
 		Parent().ComponentsBrowserClosed()
 		Super.CloseAction()

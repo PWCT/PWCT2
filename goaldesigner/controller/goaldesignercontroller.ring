@@ -1,8 +1,8 @@
 /*
-**	Project : Programming Without Coding Technology (PWCT) Version 2.0
-**	File Purpose :  Goal Designer Controller Class
-**	Date : 2016.11.20
-**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
+**	Project 	: Programming Without Coding Technology (PWCT) Version 2.0
+**	File Purpose 	: Goal Designer Controller Class
+**	Date 		: 2016.11.20
+**	Author 		: Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
 class GoalDesignerController from WindowsControllerParent
@@ -21,7 +21,7 @@ class GoalDesignerController from WindowsControllerParent
 	nInteractionPagesToModifyCount = 0
 
 	lInteractionPagesInGoalDesigner = False
-
+	lComponentsBrowserInGoalDesigner = False
 
 	/*
 		Purpose : Show the Window
@@ -724,10 +724,12 @@ class GoalDesignerController from WindowsControllerParent
 		if not lIsComponentsBrowserOpened {
 			lIsComponentsBrowserOpened = True
 			Open_WindowNoShow(:ComponentsBrowserController)
-			Last_Window().setParentObject(self)
 			Last_Window().AddComponents()
-			oView.layoutCB.AddWidget(Last_Window().oView.win)
+			Last_Window().setParentObject(self)
 			Last_Window().Start()	# Show The Window
+			if lComponentsBrowserInGoalDesigner {
+				oView.layoutCB.AddWidget(Last_Window().oView.win)
+			}
 			nComponentsBrowserWindowID = Last_WindowID()
 			oView.widgetCB.show()
 		else

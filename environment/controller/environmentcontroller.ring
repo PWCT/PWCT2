@@ -50,7 +50,9 @@ class EnvironmentController from WindowsControllerParent
 
 	func SetFocusToStepsTree
 		# Open Components Browser
-			parent().InteractAction()
+			if parent().lComponentsBrowserInGoalDesigner {
+				parent().InteractAction()
+			}
 		# Set Focus to Steps Tree
 			parent().oView.win.ActivateWindow()
 			parent().oView.oStepsTree.SetFocus(0)
