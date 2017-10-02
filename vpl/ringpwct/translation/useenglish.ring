@@ -9,6 +9,7 @@
 load "english/assignmentEnglish.ring"
 load "english/basicprogramEnglish.ring"
 load "english/callfuncEnglish.ring"
+load "english/callfuncbyvariableEnglish.ring"
 load "english/caseEnglish.ring"
 load "english/doagainEnglish.ring"
 load "english/elseEnglish.ring"

@@ -9,6 +9,7 @@
 load "arabic/assignmentArabic.ring"
 load "arabic/basicprogramArabic.ring"
 load "arabic/callfuncArabic.ring"
+load "arabic/callfuncbyvariableArabic.ring"
 load "arabic/caseArabic.ring"
 load "arabic/doagainArabic.ring"
 load "arabic/elseArabic.ring"
