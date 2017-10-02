@@ -24,6 +24,7 @@ class GoalDesignerView from WindowsViewParent
 				# Because In window while inside dockable windows, doesn't work
 				oTreeFilter.setFocusInEvent(Method(:ActivateWindowAction))
 				installeventfilter(oTreeFilter)
+				setstylesheet("selection-color:black; selection-background-color:cyan;")
 			}
 			oPageDesignLayout = new qVBoxLayout() {
 				AddWidget(oStepsTree)
