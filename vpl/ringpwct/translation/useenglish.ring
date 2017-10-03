@@ -171,3 +171,5 @@ load "english/importEnglish.ring"
 load "english/setobjectattributeEnglish.ring"
 load "english/getobjectattributeEnglish.ring"
 load "english/callmethodEnglish.ring"
+
+load "english/anonfuncEnglish.ring"

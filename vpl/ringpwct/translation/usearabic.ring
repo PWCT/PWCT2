@@ -171,3 +171,5 @@ load "arabic/importArabic.ring"
 load "arabic/setobjectattributeArabic.ring"
 load "arabic/getobjectattributeArabic.ring"
 load "arabic/callmethodArabic.ring"
+
+load "arabic/anonfuncArabic.ring"
