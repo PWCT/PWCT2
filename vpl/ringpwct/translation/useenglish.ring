@@ -173,3 +173,4 @@ load "english/getobjectattributeEnglish.ring"
 load "english/callmethodEnglish.ring"
 
 load "english/anonfuncEnglish.ring"
+load "english/nestedfuncEnglish.ring"

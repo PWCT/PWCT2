@@ -173,3 +173,4 @@ load "arabic/getobjectattributeArabic.ring"
 load "arabic/callmethodArabic.ring"
 
 load "arabic/anonfuncArabic.ring"
+load "arabic/nestedfuncArabic.ring"
