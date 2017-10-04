@@ -174,3 +174,5 @@ load "arabic/callmethodArabic.ring"
 
 load "arabic/anonfuncArabic.ring"
 load "arabic/nestedfuncArabic.ring"
+load "arabic/refmeta_localsArabic.ring"
+load "arabic/refmeta_globalsArabic.ring"

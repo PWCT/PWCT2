@@ -174,3 +174,5 @@ load "english/callmethodEnglish.ring"
 
 load "english/anonfuncEnglish.ring"
 load "english/nestedfuncEnglish.ring"
+load "english/refmeta_localsEnglish.ring"
+load "english/refmeta_globalsEnglish.ring"
