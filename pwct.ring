@@ -14,7 +14,12 @@ load "general/globals/globals.ring"
 
 # Load the Translation File
 load "translation/english.ring"
-#load "translation/arabic.ring"
+
+if len(sysargv) >= 3 {
+	if lower(sysargv[3]) = :arabic {
+		eval( ' load "translation/arabic.ring" ' )
+	}
+}
 
 # Load the Environment Files
 load "environment/controller/environmentcontroller.ring"
