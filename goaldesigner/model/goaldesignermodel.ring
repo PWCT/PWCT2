@@ -137,6 +137,7 @@ class GoalDesignerModel
 
 	func StepsTreeCode
 		aParent 	= [0]	# List contains temp. parent stack 
+		aParentType 	= [C_STEPTYPE_COMMENT]
 		nLastParent 	= 0
 		cText = ""
 		for x in oStepsTreeModel.getdata() {
@@ -145,16 +146,25 @@ class GoalDesignerModel
 					nLastParent = x[C_TREEMODEL_PARENTID]	
 					if find(aParent,nLastParent) = 0 {
 						aParent + nLastParent
+						aParentType + x[C_TREEMODEL_CONTENT][:steptype]
 					else 
 						while len(aParent) > 0 {
 							del(aParent,len(aParent))
+							del(aParentType,len(aParentType))
 							if aParent[len(aParent)] = nLastParent {
 								exit
 							}
 						}
 					}
 				}
-				nTabs = Copy(Char(9),len(aParent)-2) 
+				# Calculate Back Tabs based on steps like "Start Here"
+					nBackTabs = 2	# for "Start Point"
+					for steptype in aParentType {
+						if steptype = C_STEPTYPE_ALLOWINTERACTION {
+							nBackTabs++
+						}
+					}
+				nTabs = Copy(Char(9),len(aParent)-nBackTabs) 
 			if x[C_TREEMODEL_CONTENT][:visible] and x[C_TREEMODEL_CONTENT][:active] {
 				if trim(x[C_TREEMODEL_CONTENT][:code]) != NULL {					
 					cText += nTabs + x[C_TREEMODEL_CONTENT][:code] + windowsnl()
