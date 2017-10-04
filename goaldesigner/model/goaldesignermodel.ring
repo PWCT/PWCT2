@@ -139,7 +139,9 @@ class GoalDesignerModel
 		cText = ""
 		for x in oStepsTreeModel.getdata() {
 			if x[C_TREEMODEL_CONTENT][:visible] and x[C_TREEMODEL_CONTENT][:active] {
-				cText += x[C_TREEMODEL_CONTENT][:code] + windowsnl()
+				if trim(x[C_TREEMODEL_CONTENT][:code]) != NULL {
+					cText += x[C_TREEMODEL_CONTENT][:code] + windowsnl()
+				}
 			}
 		}
 		return cText
