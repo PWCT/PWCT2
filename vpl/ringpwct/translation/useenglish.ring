@@ -202,3 +202,5 @@ load "english/refmeta_addmethodEnglish.ring"
 load "english/refmeta_getattributeEnglish.ring"
 load "english/refmeta_setattributeEnglish.ring"
 load "english/refmeta_mergemethodsEnglish.ring"
+
+load "english/refmeta_packagenameEnglish.ring"

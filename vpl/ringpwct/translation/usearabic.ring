@@ -202,3 +202,5 @@ load "arabic/refmeta_addmethodArabic.ring"
 load "arabic/refmeta_getattributeArabic.ring"
 load "arabic/refmeta_setattributeArabic.ring"
 load "arabic/refmeta_mergemethodsArabic.ring"
+
+load "arabic/refmeta_packagenameArabic.ring"
