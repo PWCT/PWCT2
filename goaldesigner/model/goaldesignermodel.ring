@@ -136,11 +136,28 @@ class GoalDesignerModel
 	*/
 
 	func StepsTreeCode
+		aParent 	= [0]	# List contains temp. parent stack 
+		nLastParent 	= 0
 		cText = ""
 		for x in oStepsTreeModel.getdata() {
+			# Calculate Tabs
+				if x[C_TREEMODEL_PARENTID] != nLastParent {
+					nLastParent = x[C_TREEMODEL_PARENTID]	
+					if find(aParent,nLastParent) = 0 {
+						aParent + nLastParent
+					else 
+						while len(aParent) > 0 {
+							del(aParent,len(aParent))
+							if aParent[len(aParent)] = nLastParent {
+								exit
+							}
+						}
+					}
+				}
+				nTabs = Copy(Char(9),len(aParent)-2) 
 			if x[C_TREEMODEL_CONTENT][:visible] and x[C_TREEMODEL_CONTENT][:active] {
-				if trim(x[C_TREEMODEL_CONTENT][:code]) != NULL {
-					cText += x[C_TREEMODEL_CONTENT][:code] + windowsnl()
+				if trim(x[C_TREEMODEL_CONTENT][:code]) != NULL {					
+					cText += nTabs + x[C_TREEMODEL_CONTENT][:code] + windowsnl()
 				}
 			}
 		}
