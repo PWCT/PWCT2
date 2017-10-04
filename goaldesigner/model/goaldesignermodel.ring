@@ -121,25 +121,28 @@ class GoalDesignerModel
 	*/
 
 	func StepsTreeText
-		cText = ""
-		for x in oStepsTreeModel.getdata() {
-			if x[C_TREEMODEL_CONTENT][:visible] {
-				cText += removetags(x[C_TREEMODEL_CONTENT][:name]) + nl
-			} 
-		}
-		return cText
+		return StepsTreeProcess()[:steps]
 
 	/*
 		Purpose : Get the Steps Tree Code
 		Parameters : None
 		Output : Steps Tree Code as String
 	*/
-
 	func StepsTreeCode
+		return StepsTreeProcess()[:code]
+
+
+	/*
+		Purpose : Get the Steps Tree Code and Steps 
+		Parameters : None
+		Output : [Source Code, Steps Tree]
+	*/
+	func StepsTreeProcess
 		aParent 	= [0]	# List contains temp. parent stack 
 		aParentType 	= [C_STEPTYPE_COMMENT]
 		nLastParent 	= 0
-		cText = ""
+		cCode = ""
+		cSteps = ""
 		for x in oStepsTreeModel.getdata() {
 			# Calculate Tabs
 				if x[C_TREEMODEL_PARENTID] != nLastParent {
@@ -167,11 +170,16 @@ class GoalDesignerModel
 				nTabs = Copy(Char(9),len(aParent)-nBackTabs) 
 			if x[C_TREEMODEL_CONTENT][:visible] and x[C_TREEMODEL_CONTENT][:active] {
 				if trim(x[C_TREEMODEL_CONTENT][:code]) != NULL {					
-					cText += nTabs + x[C_TREEMODEL_CONTENT][:code] + windowsnl()
+					cCode += nTabs + x[C_TREEMODEL_CONTENT][:code] + windowsnl()
 				}
 			}
+			if x[C_TREEMODEL_CONTENT][:visible] {
+				if x[C_TREEMODEL_NODEID] != 1 {		# Avoid the Start Point
+					cSteps += nTabs + removetags(x[C_TREEMODEL_CONTENT][:name]) + nl
+				}
+			} 
 		}
-		return cText
+		return [:code = cCode,:steps = cSteps]
 
 	/*
 		Purpose : Delete Step
