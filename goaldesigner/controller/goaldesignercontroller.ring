@@ -943,6 +943,7 @@ class GoalDesignerController from WindowsControllerParent
 	*/
 
 	func DebugAction
+		setProgramConrollerFileName()
 		oProgramController.Debug(self)
 
 	/*
@@ -952,6 +953,7 @@ class GoalDesignerController from WindowsControllerParent
 	*/
 
 	func RunAction
+		setProgramConrollerFileName()
 		oProgramController.Run(self)
 
 	/*
@@ -961,7 +963,19 @@ class GoalDesignerController from WindowsControllerParent
 	*/
 
 	func RunGUIAction
+		setProgramControllerFileName()
 		oProgramController.RunGUI(self)
+
+	/*
+		Purpose : Set Program Controller File Name 
+			  Determine the Generated source code file
+		Parameters : None
+		Output : None
+	*/
+
+	func setProgramControllerFileName
+		oProgramController.cFileName = substr(oVisualSourceFile.cFileName,".pwct",".ring")
+
 
 	/*
 		Purpose : Font Action
