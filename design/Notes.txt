@@ -5,23 +5,16 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-(1) We need to use a global variable for each new window !
-	So we can use it for controls events
-
-(2) When we write code inside classes that use direct or indirect
+(1) When we write code inside classes that use direct or indirect
 inheritance from QWidget we can't use the find() function
 because we have the find() method
 
 Solution : std_find() , std_find2() and std_find3()
 
-(3) IsMainSourceFile() doesn't work because filename() will return the stdlib.ring every time !
-
-(4) Trying to run Ring Notepad , I discovered that a hang process happened because of Web View !
-
-(5) To find icons
+(2) To find icons
 	http://findicons.com/search/transparent-delete-icon
 
-(6) Error in Cut Steps contains children then paste from the start point
+(3) Error in Cut Steps contains children then paste from the start point
 To produce the error
 1 - create step "one" - copy paste
 one
@@ -60,37 +53,26 @@ I think the problem is running an event during the execution of another event !
 
 We avoided setCurrentItemChangedEvent() to avoid many problems and complexity.
 
-(7) When we write code inside classes that use direct or indirect
+(4) When we write code inside classes that use direct or indirect
 inheritance from QWidget we can't use the raise() function
 because we have the raise() method
 
 Solution : std_raise()
 
-(8) using the next code lead to crash
-
-	func AddFirstStep
-		#nID =  oInteractionModel.AddUserInteraction() 
-		AddStep(0,[:name = T_GD_FirstStep ,
-			      :active = True , 
-			      :code = "" , 
-			      :interactionid = 5  } ])
-
-note the mistake of putting } in the list
-
-(9) Working with QSlider or QDial works fine with
+(5) Working with QSlider or QDial works fine with
 	setValueChangedEvent()
 	But setActionTrigerredEvent() lead to more events that doesn't present
 	the expected behaviour of limited events (moving in the limited range only)
 
-(10) using {} after init() method requires that the init() method must
+(6) using {} after init() method requires that the init() method must
 contains
 		return self
 
-(11) using substr()
+(7) using substr()
 		cSQL = substr(cSQL,"#{V1}", ""+record[C_TREEMODEL_NODEID]   )
 	requires "" + to avoid data type error
 
-(12) using substr() in
+(8) using substr() in
 			cSQL = "INSERT INTO STEPSTREE (STEPID,PARENTID,NAME,ACTIVE,CODE,INTERACTIONID,VISIBLE)
          				VALUES (#{V1},#{V2},'#{V3}',#{V4},'#{V5}', #{V6},#{V7}); " 
 			cSQL = substr(cSQL,"#{V1}", ""+record[C_TREEMODEL_NODEID]   )
@@ -103,10 +85,10 @@ contains
 	Is slow !
 	But after tests, it's not very slow the real problem was in (13)
 
-(13) Using SQLite execute with many insert operations is very slow ! 
+(9) Using SQLite execute with many insert operations is very slow ! 
 	This is solved using (begin) and (end) commands before execution 
 
-(14) I was having a problem in loading the steps from the database
+(10) I was having a problem in loading the steps from the database
 Then I discovered that each field value I get is a string ! 
 And I need to convert from strings to numbers
 		for x = 2 to len(aStepsTree) {
@@ -117,12 +99,12 @@ And I need to convert from strings to numbers
 		}
 	Then i did this change in visualsource.ring
 
-(15) I changed the objects library to use RingQt_nID instead of nID
+(11) I changed the objects library to use RingQt_nID instead of nID
 	Because using nID in any method in any class that inherit from the objects classes
 	Will lead to problem
 
 
-(16) Generate Steps example
+(12) Generate Steps example
 
 	func GenerateAction 
 		oParent = GetParentStep()
@@ -143,7 +125,7 @@ And I need to convert from strings to numbers
 		SetActiveStep(oParent)
 		NewParentStep("Print Text : " + Variable(:text))
 
-(17)
+(13)
 
 A problem in this code
 		oView.oStepsTree.font = oFont
@@ -157,7 +139,7 @@ The problem is that oStepsTree class contains the font attribute
 		will call the SetFont() Method
 While oStepsTree contains this methods by inheritance from QWidget class !
 
-(18)
+(14)
 
 	in the class region
 	when we uses braces
@@ -176,16 +158,16 @@ While oStepsTree contains this methods by inheritance from QWidget class !
 					settooltip("New File")
 				} ,
 
-(19) Using Anonymous functions in functions that called as action for events is bad
+(15) Using Anonymous functions in functions that called as action for events is bad
 	this will let eval() don't delete the byte code after the function call
 	because the anonymous function increase the functions count
 
-(20) here	func CloseAction		
+(16) here	func CloseAction		
 		PWCT_APP.Quit()
 	we quit directly because closing the window first will delete the object
  and when this method is called from close event we get error !
 
-(21) HERE I forget return !
+(17) HERE I forget return !
 
 	func GetParentComponentName
 		GetParentComponentDetails()[1]
@@ -195,12 +177,12 @@ solved by
 	func GetParentComponentName
 		return GetParentComponentDetails()[1]
 
-(22)
+(18)
 A good Rule in the Components Browser
 Component = Leaf Nodes only 
 Doamin Tree = Any Node contains Children 
 
-(23)
+(19)
 I increased the performance of loading the components browser Tree
 By creating new methods 
 	init2()
