@@ -780,6 +780,10 @@ class GoalDesignerController from WindowsControllerParent
 		# Get the Selected Step
 			oItem  = oView.oStepsTree.currentItem()
 			nStepID = oView.oStepsTree.GetIDByObj(oItem)
+		# Avoid the Start Point 
+			if nStepID = 1 {
+				return
+			}
 		# Check Step Type
 			nIID = oModel.GetInteractionID(nStepID)
 		# Get the Component File Name
