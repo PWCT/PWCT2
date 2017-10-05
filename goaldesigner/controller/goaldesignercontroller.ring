@@ -726,10 +726,10 @@ class GoalDesignerController from WindowsControllerParent
 			Open_WindowNoShow(:ComponentsBrowserController)
 			Last_Window().AddComponents()
 			Last_Window().setParentObject(self)
-			Last_Window().Start()	# Show The Window
 			if lComponentsBrowserInGoalDesigner {
 				oView.layoutCB.AddWidget(Last_Window().oView.win)
 			}
+			Last_Window().Start()	# Show The Window
 			nComponentsBrowserWindowID = Last_WindowID()
 			oView.widgetCB.show()
 		else
