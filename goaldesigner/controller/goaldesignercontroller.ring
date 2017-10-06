@@ -947,7 +947,7 @@ class GoalDesignerController from WindowsControllerParent
 	*/
 
 	func DebugAction
-		setProgramConrollerFileName()
+		setProgramControllerFileName()
 		oProgramController.Debug(self)
 
 	/*
@@ -957,7 +957,7 @@ class GoalDesignerController from WindowsControllerParent
 	*/
 
 	func RunAction
-		setProgramConrollerFileName()
+		setProgramControllerFileName()
 		oProgramController.Run(self)
 
 	/*
