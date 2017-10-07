@@ -16,7 +16,8 @@ class EnvironmentController from WindowsControllerParent
 	lShowGoalDesigner = True
 	lShowOutputWindow = True
 
-	aActiveFiles = []	# [Window Object, Visual Source File Name]
+	# [Dockable Window Object, Visual Source File Name, Steps Tree Object]
+		aActiveFiles = []	
 
 	oView = new EnvironmentView
 
@@ -139,7 +140,8 @@ class EnvironmentController from WindowsControllerParent
 			if nPos {
 				aActiveFiles[nPos][1].show()
 				aActiveFiles[nPos][1].raise()
-				aActiveFiles[nPos][1].setfocus(0)
+				aActiveFiles[nPos][3].setfocus(0)
+				oView.tree1.setfocus(0)
 				return
 			}
 		if Parent().IsFileOpened() or not Parent().IsFileEmpty() {
@@ -159,6 +161,8 @@ class EnvironmentController from WindowsControllerParent
 			# Add the file to the Active Files List 
 				aActiveFiles + [oView.oDockGoalDesigner,cFileName]
 		}
+		# Add the Steps Tree to the aActiveFiles list 
+			aActiveFiles[len(aActiveFiles)] + parent().oView.oStepsTree
 		parent().oVisualSourceFile.cFileName = cFileName
 		parent().OpenFileAction2()
 		# Set focus to the window to be used when we Run the application
@@ -166,6 +170,18 @@ class EnvironmentController from WindowsControllerParent
 		# Set focus to the Files Manager Tree
 			oView.tree1.setfocus(0)
 
+
+	/*
+		Purpose : Remove file from the Active Files List
+		Parameters : The File Name as String
+		Output : None
+	*/
+	
+	func RemoveFileFromActiveFilesList cFileName 
+		nPos = find(aActiveFiles,cFileName,2)
+		if nPos {
+			del(aActiveFiles,nPos)
+		}
 
 	/*
 		Purpose : Close Action - Close the window and the application 

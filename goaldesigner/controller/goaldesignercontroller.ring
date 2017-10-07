@@ -647,6 +647,8 @@ class GoalDesignerController from WindowsControllerParent
 				cFileName = getopenfilename(this.oView.win,T_GD_DM_OPENFILE ,currentdir(),T_GD_DM_FILETYPE)
 			}
 			if cFileName = NULL { return }
+			# Remove the file from the Active Files List 
+				parent().RemoveFileFromActiveFilesList(oVisualSourceFile.cFileName)
 			oVisualSourceFile.cFileName = cFileName
 			OpenFileAction2()
 		oView.oStepsTree.EnableEvents()
@@ -1065,6 +1067,8 @@ class GoalDesignerController from WindowsControllerParent
 	*/
 
 	func CloseFileAction
+		# Remove the file from the Active Files List 
+			parent().RemoveFileFromActiveFilesList(oVisualSourceFile.cFileName)
 		# Remove the current Steps From the Tree Control
 			oView.oStepsTree.taketoplevelitem(0)	
 			oView.oStepsTree.aTree = []
