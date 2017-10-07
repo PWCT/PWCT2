@@ -147,6 +147,10 @@ class EnvironmentController from WindowsControllerParent
 		}
 		parent().oVisualSourceFile.cFileName = cFileName
 		parent().OpenFileAction2()
+		# Set focus to the window to be used when we Run the application
+			parent().oView.win.setfocus(0)
+		# Set focus to the Files Manager Tree
+			oView.tree1.setfocus(0)
 
 	/*
 		Purpose : Close Action - Close the window and the application 
