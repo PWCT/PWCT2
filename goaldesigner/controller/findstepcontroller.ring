@@ -97,14 +97,18 @@ class FindStepController from WindowsControllerParent
 		if cFind = "" { return }
 		cReplace = oView.oReplaceValue.Text()	
 		cText = Parent().oModel.GetStepName(nStepID)
+		cCode = Parent().oModel.GetStepCode(nStepID)
 		lState = oView.oSearchCase.CheckState()
 		if lState = false {
 			cText = substr(cText,cFind,cReplace,true) 
+			cCode = substr(cCode,cFind,cReplace,true) 
 		else
 			cText = substr(cText,cFind,cReplace) 
+			cCode = substr(cCode,cFind,cReplace) 
 		}
 		Parent().oView.oStepsTree.editstep(oItem,cText,Parent().oModel.GetStepIgnoreStatus(nStepID))
 		Parent().oModel.EditStepName(nStepID,cText)
+		Parent().oModel.EditStepCode(nStepID,cCode)
 		cText = Parent().oModel.RemoveTags(cText)
 		cText = oHTMLFunctions.HTMLSpecialChars2Text(cText)
 		oView.oListResult.Item(find(aStepIDResult,nStepID)-1).SetText(cText)

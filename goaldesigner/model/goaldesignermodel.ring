@@ -83,6 +83,17 @@ class GoalDesignerModel
 		return aContent[:code] 
 
 	/*
+		Purpose :  Edit step code
+		Parameters : The step ID and the new Step Code
+		Output : None
+	*/
+
+	func EditStepCode nStepID,cStepCode
+		oStepsTreeModel.GetNodeContent(nStepID)[:code] = cStepCode
+
+
+
+	/*
 		Purpose : Get Step Type
 		Parameters : The Step ID as Number
 		Output : The Step Type as Number
