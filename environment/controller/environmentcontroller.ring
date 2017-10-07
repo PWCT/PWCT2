@@ -165,8 +165,8 @@ class EnvironmentController from WindowsControllerParent
 			aActiveFiles[len(aActiveFiles)] + parent().oView.oStepsTree
 		parent().oVisualSourceFile.cFileName = cFileName
 		parent().OpenFileAction2()
-		# Set focus to the window to be used when we Run the application
-			parent().oView.win.setfocus(0)
+		# Set focus to the Steps Tree to be used when we Run the application
+			parent().oView.oStepsTree.setfocus(0)
 		# Set focus to the Files Manager Tree
 			oView.tree1.setfocus(0)
 
