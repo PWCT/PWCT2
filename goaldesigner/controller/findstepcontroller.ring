@@ -60,12 +60,12 @@ class FindStepController from WindowsControllerParent
 			Parent().oView.oStepsTree.SetCurrentItem(oItem,0)			
 		Catch	
 			new qmessagebox(oView.win)
- 			 {
+			{
     		            	setwindowtitle(T_GD_FS_SORRY) # "Sorry"
        			         	settext(T_GD_FD_CANTFINDTHEITEM) # "Can't find the item"                 
                 			setstandardbuttons(QMessageBox_Yes)
                 			show()
-       			 }
+			}
 			# The Item is not found (Maybe because of Time Position Change)		
 				cEvent = oView.oListResult.getCurrentItemChangedEvent()
 				oView.oListResult.setCurrentItemChangedEvent("")
@@ -105,6 +105,8 @@ class FindStepController from WindowsControllerParent
 		}
 		Parent().oView.oStepsTree.editstep(oItem,cText,Parent().oModel.GetStepIgnoreStatus(nStepID))
 		Parent().oModel.EditStepName(nStepID,cText)
+		cText = Parent().oModel.RemoveTags(cText)
+		cText = oHTMLFunctions.HTMLSpecialChars2Text(cText)
 		oView.oListResult.Item(find(aStepIDResult,nStepID)-1).SetText(cText)
 
 	/*
