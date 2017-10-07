@@ -33,6 +33,11 @@ class EnvironmentController from WindowsControllerParent
 	func Start
 		super.Start()
 		LoadSettings()	
+		# Add the Default file (NoName) to the Active Files List
+			aActiveFiles + [oView.oDockGoalDesigner,parent().oVisualSourceFile.cFileName]
+			aActiveFiles[len(aActiveFiles)] + parent().oView.oStepsTree
+
+
 
 	/*
 		Purpose : Set the Parent Object for Environment and goal designer
@@ -193,9 +198,10 @@ class EnvironmentController from WindowsControllerParent
 		for aItem in aActiveFiles {
 			if not aItem[1].visibleregion().isEmpty() {
 				aItem[3].setfocus(0)
-				exit
+				return
 			}
 		}
+
 
 	/*
 		Purpose : Close Action - Close the window and the application 
