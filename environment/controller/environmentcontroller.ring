@@ -16,6 +16,8 @@ class EnvironmentController from WindowsControllerParent
 	lShowGoalDesigner = True
 	lShowOutputWindow = True
 
+	aActiveFiles = []	# [Window Object, Visual Source File Name]
+
 	oView = new EnvironmentView
 
 	SetParents()
@@ -132,6 +134,14 @@ class EnvironmentController from WindowsControllerParent
 			return
 		}
 		cFileName = oView.oFile.filepath(oItem)
+		# If the file is already opened, Activate the window
+			nPos = find(aActiveFiles,cFileName,2)
+			if nPos {
+				aActiveFiles[nPos][1].show()
+				aActiveFiles[nPos][1].raise()
+				aActiveFiles[nPos][1].setfocus(0)
+				return
+			}
 		if Parent().IsFileOpened() or not Parent().IsFileEmpty() {
 			oDock = oView.CreateGoalDesigner(oView.win)
 			oDock.setWindowTitle(cFileName)
@@ -142,8 +152,12 @@ class EnvironmentController from WindowsControllerParent
 				oDock.raise()
 			# Set the Goal Designer Font
 				GoalDesignerFont()
+			# Add the file to the Active Files List 
+				aActiveFiles + [oDock,cFileName]
 		else
 			oView.oDockGoalDesigner.setWindowTitle(cFileName)
+			# Add the file to the Active Files List 
+				aActiveFiles + [oView.oDockGoalDesigner,cFileName]
 		}
 		parent().oVisualSourceFile.cFileName = cFileName
 		parent().OpenFileAction2()
@@ -151,6 +165,7 @@ class EnvironmentController from WindowsControllerParent
 			parent().oView.win.setfocus(0)
 		# Set focus to the Files Manager Tree
 			oView.tree1.setfocus(0)
+
 
 	/*
 		Purpose : Close Action - Close the window and the application 
