@@ -340,6 +340,7 @@ class EnvironmentView from WindowsViewParent
 			setLayoutDirection(C_TRANSLATION_ENGLISH)
 			setwidget(last_window().oView.win)
 			setwindowtitle(T_ENV_DOCK_GOALDESIGNER) # "Goal Designer"		 
+			setvisibilitychangedevent(Method(:ActiveGoalDesignerChanged))
 		}
 		win.adddockwidget(1,oDock,1)	
 		return oDock

@@ -1180,4 +1180,4 @@ class GoalDesignerController from WindowsControllerParent
 			oParent = GetComponentObject(cParentComponentName)
 			return oParent.CheckAllowChild(cChildComponentName,nStepNumber)
 
-	
+
