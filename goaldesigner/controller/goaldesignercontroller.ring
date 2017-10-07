@@ -394,6 +394,8 @@ class GoalDesignerController from WindowsControllerParent
 	func IncreaseSizeAction
 		oView.oStepsTree.IncreaseFontSize()
 		oView.oStepCode.IncreaseFontSize()
+		# Set default font size for the Environment, To be used when we open another files
+			parent().nFontSize = oView.oStepsTree.nFontSize
 
 	/*
 		Purpose : Decrease Size Action
@@ -404,6 +406,8 @@ class GoalDesignerController from WindowsControllerParent
 	func DecreaseSizeAction
 		oView.oStepsTree.DecreaseFontSize()
 		oView.oStepCode.DecreaseFontSize()
+		# Set default font size for the Environment, To be used when we open another files
+			parent().nFontSize = oView.oStepsTree.nFontSize
 
 	/*
 		Purpose : Ignore Step Action
