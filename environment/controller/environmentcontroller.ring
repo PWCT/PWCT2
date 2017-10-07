@@ -36,7 +36,9 @@ class EnvironmentController from WindowsControllerParent
 		# Add the Default file (NoName) to the Active Files List
 			aActiveFiles + [oView.oDockGoalDesigner,parent().oVisualSourceFile.cFileName]
 			aActiveFiles[len(aActiveFiles)] + parent().oView.oStepsTree
-
+		# Goal Designer - Default file 
+			oView.oDockGoalDesigner.setWindowTitle(
+				T_ENV_DOCK_GOALDESIGNER + " : " + parent().oVisualSourceFile.cFileName)
 
 
 	/*
@@ -153,7 +155,7 @@ class EnvironmentController from WindowsControllerParent
 		lActiveGoalDesignerChanged = false
 		if Parent().IsFileOpened() or not Parent().IsFileEmpty() {
 			oDock = oView.CreateGoalDesigner(oView.win)
-			oDock.setWindowTitle(cFileName)
+			oDock.setWindowTitle(JustFileName(cFileName))
 			SetParents()
 			oView.win.tabifydockwidget(oView.oDockGoalDesigner,oDock)
 			# We need both of them (Show & Raise)
@@ -164,7 +166,7 @@ class EnvironmentController from WindowsControllerParent
 			# Add the file to the Active Files List 
 				aActiveFiles + [oDock,cFileName]
 		else
-			oView.oDockGoalDesigner.setWindowTitle(cFileName)
+			oView.oDockGoalDesigner.setWindowTitle(JustFileName(cFileName))
 			# Add the file to the Active Files List 
 				aActiveFiles + [oView.oDockGoalDesigner,cFileName]
 		}
