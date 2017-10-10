@@ -268,7 +268,7 @@ Class ComponentControllerParent from WindowsControllerParent
 	*/
 	func CheckTimeProblem
 		if (nInteractionMode = C_INTERACTIONMODE_MODIFY) and not (nIID <= parent().TimeMachineActiveInteractionID() ) {
-			msginfo("Sorry","Can't modify the future while we are in the past! Revise the Time Machine position")
+			msginfo(T_GD_BM_SORRY,T_GD_BM_CANTMODIFYFUTURE)
 			return True
 		}
 		return False

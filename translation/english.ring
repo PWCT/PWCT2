@@ -107,6 +107,7 @@
 	T_GD_BM_CANTPASTE = "Can't paste steps in this step!"
 	T_GD_BM_CANTCOMMENT = "Can't Comment/Uncomment Sub Step!"
 	T_GD_BM_CANTINTERACT = "Can't start new Interaction from this step!"
+	T_GD_BM_CANTMODIFYFUTURE = "Can't modify the future while we are in the past! Revise the Time Machine position"
 
 	# Dialog
 	T_GD_DM_OPENFILE = "Open File"
