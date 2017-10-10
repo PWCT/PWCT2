@@ -111,3 +111,12 @@ class TimeMachineController
 			}
 		}
 		return False
+
+	/*
+		Get the Current Time Machine - Active Interaction ID
+	*/	
+	func ActiveInteractionID oView,oModel
+		nTMValue = oView.sliderTimeMachine.value()
+		nTMValue = oModel.oInteractionModel.GetInteractionID(nTMValue + 1)
+		return nTMValue
+		

@@ -247,20 +247,31 @@ Class ComponentControllerParent from WindowsControllerParent
 		if lNoInteractionPage {
 			oView.win.hide()
 		}
-		if nInteractionMode = C_INTERACTIONMODE_MODIFY  or ( CheckInteract()  and RulesAllow() ) {
-				if GenerateAction() {
-					parent().oView.oStepsTree.setFocus(0)
-					# To Correctly draw items (Avoid a Qt bug in drawing)
-						oItem = parent().oView.oStepsTree.currentItem() 
-						parent().oView.oStepsTree.collapseitem(oItem)
-						parent().oView.oStepsTree.expanditem(oItem)
-					CloseBtnAction()				
-				}
+		if CheckTimeProblem() { return } 
+		if nInteractionMode = C_INTERACTIONMODE_MODIFY  or (CheckInteract()  and RulesAllow()) {
+			if GenerateAction() {
+				parent().oView.oStepsTree.setFocus(0)
+				# To Correctly draw items (Avoid a Qt bug in drawing)
+					oItem = parent().oView.oStepsTree.currentItem() 
+					parent().oView.oStepsTree.collapseitem(oItem)
+					parent().oView.oStepsTree.expanditem(oItem)
+				CloseBtnAction()				
+			}
 		else 
 			if lNoInteractionPage {
 				closebtnAction()
 			}
 		}
+
+	/*
+		Check time problem - Modify the future while we are in the past!
+	*/
+	func CheckTimeProblem
+		if (nInteractionMode = C_INTERACTIONMODE_MODIFY) and not (nIID <= parent().TimeMachineActiveInteractionID() ) {
+			msginfo("Sorry","Can't modify the future while we are in the past! Revise the Time Machine position")
+			return True
+		}
+		return False
 
 	/*
 		Purpose : Execute the Again button action
@@ -269,6 +280,7 @@ Class ComponentControllerParent from WindowsControllerParent
 	*/
 
 	func AgainAction	
+		if CheckTimeProblem() { return } 
 		if CheckInteract() and RulesAllow() {
 			noldInteractionMode = nInteractionMode
 			nInteractionMode = C_INTERACTIONMODE_NEW	

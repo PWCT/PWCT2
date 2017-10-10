@@ -138,6 +138,14 @@ class GoalDesignerController from WindowsControllerParent
 		oView.sliderTimeMachine.setInteractionPoints(nInteractionsCount)
 
 	/*
+		Purpose : Get the Time Machine - Active Interaction ID
+		Parameter : None 
+		Output : Active Interaction ID
+	*/
+	func TimeMachineActiveInteractionID
+		return oTMController.activeInteractionID(oView,oModel)
+
+	/*
 		Purpose : Add Step Action
 		Parameters : None
 		Output : None
