@@ -42,7 +42,11 @@ class EnvironmentController from WindowsControllerParent
 			oView.oDockGoalDesigner.setWindowTitle(
 				T_ENV_DOCK_GOALDESIGNER + " : " + parent().oVisualSourceFile.cFileName)
 		if lTabifyOutputAndFiles {
-			oView.win.tabifydockwidget(oView.oDockOutputWindow,oView.oDockFilesManager)
+			if T_LAYOUTDIRECTION = 0 {
+				oView.win.tabifydockwidget(oView.oDockOutputWindow,oView.oDockFilesManager)
+			else 
+				oView.win.tabifydockwidget(oView.oDockFilesManager,oView.oDockOutputWindow)
+			}
 			oView.oDockOutputWindow.raise()
 		}
 
