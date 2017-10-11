@@ -16,7 +16,7 @@ class EnvironmentController from WindowsControllerParent
 	lShowGoalDesigner = True
 	lShowOutputWindow = True
 
-	lTabifyOutputAndFiles = True
+	lTabifyOutputAndFiles = 0
 
 	# [Dockable Window Object, Visual Source File Name, Steps Tree Object]
 		aActiveFiles = []	

@@ -23,9 +23,15 @@ class EnvironmentView from WindowsViewParent
 			self.CreateMenuBar(win)
 			self.CreateToolbar(win)
 			self.CreateStatusBar(win)
-			self.CreateFilesManager(win)
-			oDockGoalDesigner = self.CreateGoalDesigner(win)
-			self.CreateOutputWindow(win)
+			if T_LAYOUTDIRECTION = 0 {
+				self.CreateFilesManager(win)
+				oDockGoalDesigner = self.CreateGoalDesigner(win)
+				self.CreateOutputWindow(win)
+			else 
+				self.CreateOutputWindow(win)
+				oDockGoalDesigner = self.CreateGoalDesigner(win)
+				self.CreateFilesManager(win)
+			}
 			setwinicon(win,"images/pwct.png")
 			showmaximized()	
 			oFilter = new qAllevents(win) {
@@ -407,4 +413,4 @@ class EnvironmentView from WindowsViewParent
 			setwidget( oProcessWindow )		
 			setwindowtitle(T_ENV_OW_TITLE)  # "Output Window"
 		}
-		win.adddockwidget(2,oDockOutputWindow,1)
+		win.adddockwidget(1,oDockOutputWindow,1)
