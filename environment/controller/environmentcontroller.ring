@@ -16,6 +16,8 @@ class EnvironmentController from WindowsControllerParent
 	lShowGoalDesigner = True
 	lShowOutputWindow = True
 
+	lTabifyOutputAndFiles = True
+
 	# [Dockable Window Object, Visual Source File Name, Steps Tree Object]
 		aActiveFiles = []	
 		lActiveGoalDesignerChanged = True
@@ -39,7 +41,10 @@ class EnvironmentController from WindowsControllerParent
 		# Goal Designer - Default file 
 			oView.oDockGoalDesigner.setWindowTitle(
 				T_ENV_DOCK_GOALDESIGNER + " : " + parent().oVisualSourceFile.cFileName)
-
+		if lTabifyOutputAndFiles {
+			oView.win.tabifydockwidget(oView.oDockOutputWindow,oView.oDockFilesManager)
+			oView.oDockOutputWindow.raise()
+		}
 
 	/*
 		Purpose : Set the Parent Object for Environment and goal designer
