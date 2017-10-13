@@ -40,12 +40,11 @@ class GoalDesignerController from WindowsControllerParent
 	*/
 
 	func Activate
+		# Just Load the Components 
+			LoadComponentsBrowserComponents()
 		# Open Components Browser
 			if lComponentsBrowserInGoalDesigner {
-				InteractAction()
-			else 
-				# Just Load the Components 
-				opencomponentsBrowser()
+				InteractAction()			
 			}
 		# Set Focus to Steps Tree
 			oView.win.ActivateWindow()
@@ -754,16 +753,9 @@ class GoalDesignerController from WindowsControllerParent
 			ShowMessage(T_GD_BM_SORRY,T_GD_BM_CANTINTERACT)
 			return False
 		}
-		if not lIsComponentsBrowserOpened {
-			lIsComponentsBrowserOpened = True
-			Open_WindowNoShow(:ComponentsBrowserController)
-			Last_Window().AddComponents()
-			Last_Window().setParentObject(self)
-			if lComponentsBrowserInGoalDesigner {
-				oView.layoutCB.AddWidget(Last_Window().oView.win)
-			}
-			Last_Window().Start()	# Show The Window
-			nComponentsBrowserWindowID = Last_WindowID()
+		if lComponentsBrowserInGoalDesigner {
+			oView.layoutCB.AddWidget(ComponentsBrowserWindow().oView.win)
+			ComponentsBrowserWindow().Start()
 			oView.widgetCB.show()
 		else
 			ComponentsBrowserWindow().Start()
@@ -771,20 +763,17 @@ class GoalDesignerController from WindowsControllerParent
 		return True
 
 	/*
-		Purpose : Open the Components Browser Window
+		Purpose 	: Load the Components Browser components 
+		Parameters 	: None
+		Output 		: None
 	*/
 
-	func OpenComponentsBrowser
+	func LoadComponentsBrowserComponents
 		lIsComponentsBrowserOpened = True
 		Open_WindowNoShow(:ComponentsBrowserController)
 		Last_Window().AddComponents()
 		Last_Window().setParentObject(self)
-		//if lComponentsBrowserInGoalDesigner {
-		//	oView.layoutCB.AddWidget(Last_Window().oView.win)
-		//}
-		//Last_Window().Start()	# Show The Window
 		nComponentsBrowserWindowID = Last_WindowID()
-		//oView.widgetCB.show()	
 
 
 	/*
