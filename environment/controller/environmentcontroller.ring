@@ -25,8 +25,9 @@ class EnvironmentController from WindowsControllerParent
 	oView = new EnvironmentView
 
 	SetParents()
-	SetFocusToStepsTree()
-	parent().opencomponentsBrowser()
+
+	# Default Settings
+		parent().activate()
 
 	/*
 		Purpose : Show the window
@@ -63,20 +64,6 @@ class EnvironmentController from WindowsControllerParent
 		# Set the goal designer parent to be the Environment window
 			Last_Window().setParentObject(self)
 
-	/*
-		Purpose : Set the focus to the steps tree
-		Parameters : None
-		Output : None
-	*/
-
-	func SetFocusToStepsTree
-		# Open Components Browser
-			if parent().lComponentsBrowserInGoalDesigner {
-				parent().InteractAction()
-			}
-		# Set Focus to Steps Tree
-			parent().oView.win.ActivateWindow()
-			parent().oView.oStepsTree.SetFocus(0)
 
 	/*
 		Purpose : New File Action

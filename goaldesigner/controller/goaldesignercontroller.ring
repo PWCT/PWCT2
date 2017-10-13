@@ -32,6 +32,25 @@ class GoalDesignerController from WindowsControllerParent
 	func Start
 		oView.Show()
 
+
+	/*
+		Purpose 	: The window is active, Default Settings.
+		Parameters 	: None
+		Output	 	: None
+	*/
+
+	func Activate
+		# Open Components Browser
+			if lComponentsBrowserInGoalDesigner {
+				InteractAction()
+			else 
+				# Just Load the Components 
+				opencomponentsBrowser()
+			}
+		# Set Focus to Steps Tree
+			oView.win.ActivateWindow()
+			oView.oStepsTree.SetFocus(0)
+
 	/*
 		Purpose : Add Step
 		Parameters : Step Name
