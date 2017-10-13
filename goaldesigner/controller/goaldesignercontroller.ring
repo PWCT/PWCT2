@@ -752,6 +752,23 @@ class GoalDesignerController from WindowsControllerParent
 		return True
 
 	/*
+		Purpose : Open the Components Browser Window
+	*/
+
+	func OpenComponentsBrowser
+		lIsComponentsBrowserOpened = True
+		Open_WindowNoShow(:ComponentsBrowserController)
+		Last_Window().AddComponents()
+		Last_Window().setParentObject(self)
+		//if lComponentsBrowserInGoalDesigner {
+		//	oView.layoutCB.AddWidget(Last_Window().oView.win)
+		//}
+		//Last_Window().Start()	# Show The Window
+		nComponentsBrowserWindowID = Last_WindowID()
+		//oView.widgetCB.show()	
+
+
+	/*
 		Purpose : Get the Components Browser Window Object
 		Parameters : None
 		Output : Components Browser Object

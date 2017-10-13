@@ -26,6 +26,7 @@ class EnvironmentController from WindowsControllerParent
 
 	SetParents()
 	SetFocusToStepsTree()
+	parent().opencomponentsBrowser()
 
 	/*
 		Purpose : Show the window
