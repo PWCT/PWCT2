@@ -521,7 +521,9 @@ class GoalDesignerController from WindowsControllerParent
 	func TreeKeyPress
 		nKey = oView.oTreeFilter.getkeycode()
 		if oView.oTreeFilter.getmodifiers() = 0 {	# No CTRL Key is pressed
-			if ( nKey >= 65 ) and (nKey <= 90 )  { # Keys from 'a' to 'z' 
+			# Keys from 'a' to 'z' and Arabic Keys
+			if 	(( nKey >= 65   ) and (nKey <= 90   )) or  
+ 				(( nKey >= 1575 ) and (nKey <= 1610 ))	{ 
 				if InteractAction() {
 					ComponentsBrowserWindow().oView.oTextSearch.setText(Lower(Char(nKey)))			
 					ComponentsBrowserWindow().SearchAction()
