@@ -7,4 +7,7 @@ cls
 rc pwct.rc
 cl /DEBUG pwct.c pwct.res /link advapi32.lib shell32.lib /SUBSYSTEM:WINDOWS,"5.01" 
 
+cl /DEBUG pwctarabic.c pwct.res /link advapi32.lib shell32.lib /SUBSYSTEM:WINDOWS,"5.01" 
+
 copy pwct.exe ..\
+copy pwctarabic.exe ..\
