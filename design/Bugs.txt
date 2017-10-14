@@ -7,7 +7,7 @@
 
 ===========================================================
 Status
-	* Bugs Count : 31
+	* Bugs Count : 32
 	* Fixed Bugs : 31
 	* UnFixed Bugs : 0
 ===========================================================
@@ -1012,4 +1012,22 @@ called from line 1  In qapp_exec In method exec() in file ring_qt.ring
 called from line 102  In function start_environment() in file B:/pwct2/pwct.ring
 called from line 60  in file B:/pwct2/pwct.ring
 
+=======================================================
 
+(32) Fixed
+
+
+Line 789 Error (R24) : Using uninitialized variable : ncomponentsbrowserwindowid 
+In method componentsbrowserwindow() in file goaldesigner/controller/goaldesignercontroller.ring
+called from line 764  In method interactaction() in file goaldesigner/controller/goaldesignercontroller.ring
+called from line 528  In method treekeypress() in file ring_qt.ring
+called from line 14  In qapp_exec In method exec() in file B:/pwct2/pwct.ring
+called from line 111  In function start_environment() in file B:/pwct2/pwct.ring
+called from line 69  in file B:/pwct2/pwct.ring 
+
+Solved in goaldesignerController.ring 
+	Method : openfileAction2	
+			# Prepare the Components Browser 
+			Activate()
+
+=======================================================

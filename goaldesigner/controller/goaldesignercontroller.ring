@@ -684,6 +684,7 @@ class GoalDesignerController from WindowsControllerParent
 		# Set the docable widget title
 			oView.win.ParentWidget().setWindowTitle(cFileName)
 
+
 	/*
 		Purpose : Open File Action 2
 		Parameters : None
@@ -704,6 +705,8 @@ class GoalDesignerController from WindowsControllerParent
 			oModel.oInteractionModel.SetID(oVisualSourceFile.GetInteractionsID())
 		RefreshStepsTree2(aStepsTree)
 		oView.oStepsTree.oFirstStep.SetExpanded(True)
+		# Prepare the Components Browser 
+			Activate()
 
 	/*
 		Purpose : Refresh Steps Tree
