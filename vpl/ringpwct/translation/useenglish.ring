@@ -204,3 +204,4 @@ load "english/refmeta_setattributeEnglish.ring"
 load "english/refmeta_mergemethodsEnglish.ring"
 
 load "english/refmeta_packagenameEnglish.ring"
+load "english/stdlib_putsEnglish.ring"
