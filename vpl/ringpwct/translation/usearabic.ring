@@ -205,3 +205,4 @@ load "arabic/refmeta_mergemethodsArabic.ring"
 
 load "arabic/refmeta_packagenameArabic.ring"
 load "arabic/stdlib_putsArabic.ring"
+load "arabic/stdlib_printArabic.ring"
