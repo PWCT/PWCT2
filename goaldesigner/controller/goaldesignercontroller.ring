@@ -822,6 +822,11 @@ class GoalDesignerController from WindowsControllerParent
 	*/
 
 	func ModifyAction
+		# Check if it is a comment (Step Double Click) 		
+			if IsComment() { 
+				editstepaction() 
+				return 
+			}
 		# Get the Selected Step
 			oItem  = oView.oStepsTree.currentItem()
 			nStepID = oView.oStepsTree.GetIDByObj(oItem)
