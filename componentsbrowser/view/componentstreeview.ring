@@ -7,10 +7,12 @@
 
 class ComponentsTreeView from StepsTreeView
 
-	lDefaultTree = True		# True = Don't create qLabel for each item
+	lDefaultTree 	= True		# True = Don't create qLabel for each item
 
-	cControlHeader = T_CB_COMPONENTSTREE 
+	cControlHeader 	= T_CB_COMPONENTSTREE 
 	cStartPointText = T_CB_RINGPWCT
+
+	nFontSize 	= 16
 
 	# We create the Init Method to avoid adding the root two times
 	# As a result of nested call to AddStartPoint()
