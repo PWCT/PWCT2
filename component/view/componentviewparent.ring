@@ -27,7 +27,8 @@ class ComponentViewParent from WindowsViewParent
 
 	nTitleFontSize 		= 20
 	nTitleFixedHeight 	= 40
-	nControlsFontSize	= 20
+	nControlsFontSize	= 16
+	nButtonsFontSize	= 14
 
 	/*
 		Purpose : Display title in the Interaction Page
@@ -166,16 +167,19 @@ class ComponentViewParent from WindowsViewParent
 
 	func PageButtons
 		oBtnAgain = new qPushButton(win) {
+			setStyleSheet("font-size:"+this.nButtonsFontSize+"pt;")
 			setText(T_IP_AGAIN)	# "Again"
 			setClickEvent( Method(:AgainAction) )
 		}
 		setBtnImage(oBtnAgain,"images/ipagain.png")
 		oBtnOk = new qPushButton(win) {
+			setStyleSheet("font-size:"+this.nButtonsFontSize+"pt;")
 			setText(T_IP_OK)		# "Ok"
 			setClickEvent( Method(:OkAction) )
 		}
 		setBtnImage(oBtnOk,"images/ipok.png")
 		oBtnClose = new qPushButton(win) {
+			setStyleSheet("font-size:"+this.nButtonsFontSize+"pt;")
 			setText(T_IP_CLOSE)    # "Close"
 			setClickEvent( Method(:CloseBtnAction) )
 		}
