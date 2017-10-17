@@ -25,6 +25,9 @@ class ComponentViewParent from WindowsViewParent
 	lFirstTextBox = True 	# For Setting the focus
 	oFirstText			# First Textbox
 
+	nTitleFontSize 		= 20
+	nTitleFixedHeight 	= 40
+
 	/*
 		Purpose : Display title in the Interaction Page
 		Parameters : The Title as String
@@ -35,8 +38,8 @@ class ComponentViewParent from WindowsViewParent
 		
 		oLabel = new qLabel(win) {
 			setText(cTitle)
-			setFixedHeight(20)
-			setStyleSheet("font-size:10pt;color:white;background-color:purple;")
+			setFixedHeight(this.nTitleFixedHeight)
+			setStyleSheet("font-size:"+this.nTitleFontSize+"pt;color:white;background-color:purple;")
 			setalignment(Qt_AlignHCenter |  Qt_AlignVCenter )
 		}
 		oLayoutAll.AddWidget(oLabel)
