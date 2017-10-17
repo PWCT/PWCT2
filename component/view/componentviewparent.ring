@@ -27,6 +27,7 @@ class ComponentViewParent from WindowsViewParent
 
 	nTitleFontSize 		= 20
 	nTitleFixedHeight 	= 40
+	nControlsFontSize	= 20
 
 	/*
 		Purpose : Display title in the Interaction Page
@@ -56,8 +57,10 @@ class ComponentViewParent from WindowsViewParent
 	func TextBox cTitle,cVariable
 		oLabel = new qLabel(win) {
 			setText(cTitle)
+			setStyleSheet("font-size:"+this.nControlsFontSize+"pt;")
 		}
 		oText = new qLineEdit(win) {
+			setStyleSheet("font-size:"+this.nControlsFontSize+"pt;")
 			if this.lFirstTextBox {
 				this.lFirstTextBox = False
 				setFocus(0)
@@ -76,6 +79,7 @@ class ComponentViewParent from WindowsViewParent
 	*/
 	func TextBoxValue cTitle,cVariable,cValue 
 		oText =Textbox(cTitle,cVariable) {
+			setStyleSheet("font-size:"+this.nControlsFontSize+"pt;")
 			setText(cValue)
 		}
 		return oText
@@ -88,6 +92,7 @@ class ComponentViewParent from WindowsViewParent
 
 	func CheckBox cText,cVariable
 		oCheck = new qCheckBox(win) {
+			setStyleSheet("font-size:"+this.nControlsFontSize+"pt;")
 			setText(cText)
 		}
 		oLayout = new qHBoxLayout() {
@@ -105,9 +110,11 @@ class ComponentViewParent from WindowsViewParent
 
 	func CheckBoxTextBox cText,cVariable
 		oCheck = new qCheckBox(win) {
+			setStyleSheet("font-size:"+this.nControlsFontSize+"pt;")
 			setText(cText)
 		}
 		oText = new qLineEdit(win) {
+			setStyleSheet("font-size:"+this.nControlsFontSize+"pt;")
 			if this.lFirstTextBox {
 				this.lFirstTextBox = False
 				setFocus(0)
@@ -133,10 +140,11 @@ class ComponentViewParent from WindowsViewParent
 
 	func ListBox cTitle,cVariable,aItems
 		oLabel = new qLabel(win) {
+			setStyleSheet("font-size:"+this.nControlsFontSize+"pt;")
 			setText(cTitle)
 		}
 		oList = new qListWidget(win) {
-			#setStyleSheet("font-size:14pt")
+			setStyleSheet("font-size:"+this.nControlsFontSize+"pt;")
 			for item in aItems {		
 				AddItem(Item)
 			}
