@@ -7,10 +7,10 @@
 
 class ComponentViewParent from WindowsViewParent
 
-	aVariables = []	# List contains the [ Control Object , variable Name , Type ]
+	aVariables = []		# List contains the [ Control Object , variable Name , Type ]
 
 	lFirstTextBox = True 	# For Setting the focus
-	oFirstText			# First Textbox
+	oFirstText		# First Textbox
 
 	nTitleFontSize 		= 18
 	nTitleFixedHeight 	= 40
@@ -18,6 +18,14 @@ class ComponentViewParent from WindowsViewParent
 	nButtonsFontSize	= 12
 
 	nWindowWidth		= 600
+
+	cssText    = "border:1px solid black;border-radius:7px;"
+
+	if T_LAYOUTDIRECTION = 1 {
+		textAlign = Qt_AlignRight
+	else 
+		textAlign = Qt_AlignLeft
+	}
 
 	win = new qWidget() {
 		setLayoutDirection(T_LAYOUTDIRECTION)
@@ -50,7 +58,6 @@ class ComponentViewParent from WindowsViewParent
 			setalignment(Qt_AlignHCenter |  Qt_AlignVCenter )
 		}
 		oLayoutAll.AddWidget(oLabel)
-		
 		win.setWindowTitle(cTitle)
 		return oLabel
 
@@ -66,7 +73,8 @@ class ComponentViewParent from WindowsViewParent
 			setStyleSheet("font-size:"+this.nControlsFontSize+"pt;")
 		}
 		oText = new qLineEdit(win) {
-			setStyleSheet("font-size:"+this.nControlsFontSize+"pt;")
+			setStyleSheet(this.cssText+"font-size:"+this.nControlsFontSize+"pt;")
+			setAlignment(this.textAlign)
 			if this.lFirstTextBox {
 				this.lFirstTextBox = False
 				setFocus(0)
@@ -84,9 +92,10 @@ class ComponentViewParent from WindowsViewParent
 		Textbox with init. value 
 	*/
 	func TextBoxValue cTitle,cVariable,cValue 
-		oText =Textbox(cTitle,cVariable) {
-			setStyleSheet("font-size:"+this.nControlsFontSize+"pt;")
+		oText = Textbox(cTitle,cVariable) {
+			setStyleSheet(this.cssText+"font-size:"+this.nControlsFontSize+"pt;")
 			setText(cValue)
+			setAlignment(this.textAlign)
 		}
 		return oText
 
@@ -120,12 +129,13 @@ class ComponentViewParent from WindowsViewParent
 			setText(cText)
 		}
 		oText = new qLineEdit(win) {
-			setStyleSheet("font-size:"+this.nControlsFontSize+"pt;")
+			setStyleSheet(this.cssText+"font-size:"+this.nControlsFontSize+"pt;")
 			if this.lFirstTextBox {
 				this.lFirstTextBox = False
 				setFocus(0)
 				this.oFirstText = oText
 			}
+			setAlignment(this.textAlign)
 		}
 		oLayout = new qHBoxLayout() {
 			AddWidget(oCheck)
