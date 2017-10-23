@@ -6,11 +6,24 @@
 */
 
 class ComponentViewParent from WindowsViewParent
+
+	aVariables = []	# List contains the [ Control Object , variable Name , Type ]
+
+	lFirstTextBox = True 	# For Setting the focus
+	oFirstText			# First Textbox
+
+	nTitleFontSize 		= 18
+	nTitleFixedHeight 	= 40
+	nControlsFontSize	= 16
+	nButtonsFontSize	= 12
+
+	nWindowWidth		= 600
+
 	win = new qWidget() {
 		setLayoutDirection(T_LAYOUTDIRECTION)
 		oDesktop = new qDesktopwidget() 
-		move((oDesktop.width()-400)/2,(oDesktop.height()-300)/2)
-		resize(400,10)
+		move((oDesktop.width()-nWindowWidth)/2,(oDesktop.height()-300)/2)
+		resize(nWindowWidth,10)
 		setWindowTitle(T_IP_WINDOWTITLE) # "Interation Window"
 		setwindowflags(Qt_CustomizeWindowHint | Qt_WindowTitleHint | Qt_WindowStaysOnTopHint) 
 		oLayoutAll = new qVBoxLayout() 
@@ -20,15 +33,7 @@ class ComponentViewParent from WindowsViewParent
 		installeventfilter(oWinFilter)
 	}
 
-	aVariables = []	# List contains the [ Control Object , variable Name , Type ]
 
-	lFirstTextBox = True 	# For Setting the focus
-	oFirstText			# First Textbox
-
-	nTitleFontSize 		= 20
-	nTitleFixedHeight 	= 40
-	nControlsFontSize	= 16
-	nButtonsFontSize	= 14
 
 	/*
 		Purpose : Display title in the Interaction Page
