@@ -21,12 +21,6 @@ class ComponentViewParent from WindowsViewParent
 
 	cssText    = "border:1px solid black;border-radius:7px;"
 
-	if T_LAYOUTDIRECTION = 1 {
-		textAlign = Qt_AlignRight
-	else 
-		textAlign = Qt_AlignLeft
-	}
-
 	win = new qWidget() {
 		setLayoutDirection(T_LAYOUTDIRECTION)
 		oDesktop = new qDesktopwidget() 
@@ -74,7 +68,6 @@ class ComponentViewParent from WindowsViewParent
 		}
 		oText = new qLineEdit(win) {
 			setStyleSheet(this.cssText+"font-size:"+this.nControlsFontSize+"pt;")
-			setAlignment(this.textAlign)
 			if this.lFirstTextBox {
 				this.lFirstTextBox = False
 				setFocus(0)
@@ -95,7 +88,6 @@ class ComponentViewParent from WindowsViewParent
 		oText = Textbox(cTitle,cVariable) {
 			setStyleSheet(this.cssText+"font-size:"+this.nControlsFontSize+"pt;")
 			setText(cValue)
-			setAlignment(this.textAlign)
 		}
 		return oText
 
@@ -135,7 +127,6 @@ class ComponentViewParent from WindowsViewParent
 				setFocus(0)
 				this.oFirstText = oText
 			}
-			setAlignment(this.textAlign)
 		}
 		oLayout = new qHBoxLayout() {
 			AddWidget(oCheck)
