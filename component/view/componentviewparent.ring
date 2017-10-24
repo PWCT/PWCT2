@@ -18,13 +18,14 @@ class ComponentViewParent from WindowsViewParent
 	nButtonsFontSize	= 12
 
 	nWindowWidth		= 600
+	nWindowHeight		= 300
 
 	cssText    = "border:1px solid black;border-radius:7px;"
 
 	win = new qWidget() {
 		setLayoutDirection(T_LAYOUTDIRECTION)
 		oDesktop = new qDesktopwidget() 
-		move((oDesktop.width()-nWindowWidth)/2,(oDesktop.height()-300)/2)
+		move((oDesktop.width()-nWindowWidth)/2,(oDesktop.height()-nWindowHeight)/2)
 		resize(nWindowWidth,10)
 		setWindowTitle(T_IP_WINDOWTITLE) # "Interation Window"
 		setwindowflags(Qt_CustomizeWindowHint | Qt_WindowTitleHint | Qt_WindowStaysOnTopHint) 
