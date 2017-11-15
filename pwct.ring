@@ -15,10 +15,9 @@ load "general/globals/globals.ring"
 # Load the Translation File
 load "translation/english.ring"
 
-if len(sysargv) >= 3 {
-	if lower(sysargv[3]) = :arabic {
-		eval( ' load "translation/arabic.ring" ' )
-	}
+for item in sysargv item = lower(item) next 
+if find(sysargv, :arabic) {
+	eval( ' load "translation/arabic.ring" ' )
 }
 
 # Load the Environment Files

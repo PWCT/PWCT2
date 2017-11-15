@@ -64,10 +64,10 @@ Class ProgramController
 			append(cArg)
 		}
 		oProcess = new qprocess(NULL) {
-			setprogram( cProgram)
+			setprogram(cProgram)
 			setarguments(ostringlist)
 			setreadyreadstandardoutputevent(cGetDataFunc)
-			start_3(  QIODevice_ReadWrite )
+			start_3(QIODevice_ReadWrite)
 		} 
 		return oProcess
 
