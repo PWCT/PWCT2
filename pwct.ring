@@ -21,7 +21,9 @@ if find(sysargv, :arabic) {
 }
 
 # We need this on macOS when we run the executable from finder!
+if ismacosx() and justfilename(exefolder()) != "ring" {
 	chdir(exefolder())
+}
 
 # Load the Environment Files
 load "environment/controller/environmentcontroller.ring"
