@@ -20,6 +20,9 @@ if find(sysargv, :arabic) {
 	eval( ' load "translation/arabic.ring" ' )
 }
 
+# We need this on macOS when we run the executable from finder!
+	chdir(exefolder())
+
 # Load the Environment Files
 load "environment/controller/environmentcontroller.ring"
 load "environment/view/environmentview.ring"
