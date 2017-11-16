@@ -50,7 +50,7 @@ Class ProgramController
 		}
 		cDir = currentdir()
 		chdir(JustFilePath(cFileName))
-		oGD.parent().oView.oProcess = RunProcess(exefilename(),cFileName,oGD.parent().Method(:GetDataAction))
+		oGD.parent().oView.oProcess = RunProcess("ring",cFileName,oGD.parent().Method(:GetDataAction))
 		chdir(cDir)
 
 	/*
