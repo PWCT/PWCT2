@@ -7,7 +7,11 @@
 
 class Database
 
-	oDatabase = new DatabaseSQLiteQt
+	if isAndroid() {
+		oDatabase = new DatabaseSQLiteQt
+	else 
+		oDatabase = new DatabaseSQLite
+	}
 
 	/*
 		Purpose : Init. the object
