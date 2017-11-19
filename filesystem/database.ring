@@ -7,7 +7,7 @@
 
 class Database
 
-	oDatabase = new DatabaseSQLite
+	oDatabase = new DatabaseSQLiteQt
 
 	/*
 		Purpose : Init. the object
