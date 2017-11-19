@@ -21,7 +21,9 @@ class GoalDesignerController from WindowsControllerParent
 	nInteractionPagesToModifyCount = 0
 
 	lInteractionPagesInGoalDesigner = False
-	lComponentsBrowserInGoalDesigner = False
+	lComponentsBrowserInGoalDesigner = True
+
+	lCallInteract = True
 
 	/*
 		Purpose : Show the Window
@@ -41,10 +43,13 @@ class GoalDesignerController from WindowsControllerParent
 
 	func Activate
 		# Just Load the Components 
-			LoadComponentsBrowserComponents()
+			if lCallInteract {
+				LoadComponentsBrowserComponents()
+			}
 		# Open Components Browser
-			if lComponentsBrowserInGoalDesigner {
-				InteractAction()			
+			if lComponentsBrowserInGoalDesigner and lCallInteract {
+				InteractAction()
+				lCallInteract = False			
 			}
 		# Set Focus to Steps Tree
 			oView.win.ActivateWindow()

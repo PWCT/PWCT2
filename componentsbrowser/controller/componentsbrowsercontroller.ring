@@ -7,11 +7,11 @@
 
 class ComponentsBrowserController from WindowsControllerParent
 
-	oView = new ComponentsBrowserView
-	oModel = new TreeModel
-	cComponentsPath = C_CB_COMPONENTSPATH # "vpl/ringpwct/"
+	oView 			= new ComponentsBrowserView
+	oModel 			= new TreeModel
+	cComponentsPath 	= C_CB_COMPONENTSPATH # "vpl/ringpwct/"
 
-	lHideOnlyDontClose = True
+	lHideOnlyDontClose 	= True
 
 	/*
 		Purpose : Key Press Action
@@ -59,10 +59,10 @@ class ComponentsBrowserController from WindowsControllerParent
 			setupdatesenabled(False)
 			blocksignals(True)
 			for x = 2 to len(aStepsTree) {
-				nStepID      = aStepsTree[x][1]
-				nParentID   = aStepsTree[x][2]
-				cStepName  = aStepsTree[x][3][:name]
-				oItem = AddNode(nParentID,nStepID,cStepName)								
+				nStepID      	= aStepsTree[x][1]
+				nParentID   	= aStepsTree[x][2]
+				cStepName  	= aStepsTree[x][3][:name]
+				oItem 		= AddNode(nParentID,nStepID,cStepName)								
 				scrolltoitem(oItem,0)
 			}
 			setupdatesenabled(True)
@@ -70,6 +70,7 @@ class ComponentsBrowserController from WindowsControllerParent
 			oFirstStep.SetExpanded(True)
 			ActivateTheFirstStep()
 		}
+
 	/*
 		Purpose : Search in the Components list
 		Parameters : None
