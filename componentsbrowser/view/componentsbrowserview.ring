@@ -26,21 +26,23 @@ class ComponentsBrowserView from WindowsViewParent
 				AddWidget(olabelSearch)
 				AddWidget(oTextSearch)
 			}
+
 			oComponentsTree = new ComponentsTreeView(win) {
 				setdoubleClickedEvent(Method(:SelectAction))
 			}
+
 			oBtnSelect = new qPushButton(win)
 			{
 				setText(T_CB_SELECT)
 				setclickevent(Method(:SelectAction))
 			}
-			setBtnImage(oBtnSelect,"images/ipok.png")
+			setBtnImage(oBtnSelect,AppFile("images/ipok.png"))
 			oBtnClose = new qPushButton(win)
 			{
 				setText(T_CB_CLOSE)
 				setclickevent(Method(:CloseAction))
 			}
-			setBtnImage(oBtnClose,"images/ipclose.png")
+			setBtnImage(oBtnClose,AppFile("images/ipclose.png"))
 			oLayoutButtons = new qHBoxLayout()
 			{
 				addWidget(oBtnSelect)

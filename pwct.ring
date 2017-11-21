@@ -126,7 +126,7 @@ func Start_Environment
 func DisplaySplashScreen oApp
 
 	# Load the Image File
-		oPixMap = new qPixMap("images/pwctlogo.png")
+		oPixMap = new qPixMap(AppFile("images/pwctlogo.png"))
 	# Create the Splash Screen Object
 		oSplash = new qSplashScreen(oPixMap)
 		oSplash.Show()
@@ -150,6 +150,6 @@ func ShowMessage cTitle,cMessage
 			settext(cMessage)
 			setstandardbuttons(QMessageBox_Ok)
 			setwindowflags(Qt_WindowStaysOnTopHint)
-			setwinicon(win,"images/pwct.png")
+			setwinicon(win,AppFile("images/pwct.png"))
 			result = exec()
 		}

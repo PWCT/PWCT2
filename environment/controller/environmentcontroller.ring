@@ -25,10 +25,8 @@ class EnvironmentController from WindowsControllerParent
 	oView = new EnvironmentView
 
 	SetParents()
-
 	# Default Settings
 		parent().activate()
-
 	/*
 		Purpose : Show the window
 		Parameters : None

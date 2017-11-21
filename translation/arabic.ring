@@ -171,8 +171,8 @@
 
 #==================================================
 
-T_CB_COMPONENTSFILE = "vpl/arabiccomponents.pwct"
-
+//T_CB_COMPONENTSFILE = "vpl/arabiccomponents.pwct"
+T_CB_COMPONENTSFILE = "arabiccomponents.pwct"
 
 #==================================================
 # 	Components  Translation

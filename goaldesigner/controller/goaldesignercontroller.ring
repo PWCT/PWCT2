@@ -12,6 +12,7 @@ class GoalDesignerController from WindowsControllerParent
 	oTMController = new TimeMachineController
 	oVisualSourceFile = new VisualSourceFile
 	oProgramController = new ProgramController
+
 	cComponentsPath = "vpl/ringpwct/"
 	cFont = "MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0"
 
@@ -47,10 +48,12 @@ class GoalDesignerController from WindowsControllerParent
 				LoadComponentsBrowserComponents()
 			}
 		# Open Components Browser
+
 			if lComponentsBrowserInGoalDesigner and lCallInteract {
 				InteractAction()
 				lCallInteract = False			
 			}
+
 		# Set Focus to Steps Tree
 			oView.win.ActivateWindow()
 			oView.oStepsTree.SetFocus(0)

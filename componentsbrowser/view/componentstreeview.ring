@@ -7,7 +7,7 @@
 
 class ComponentsTreeView from StepsTreeView
 
-	lDefaultTree 	= True		# True = Don't create qLabel for each item
+	lDefaultTree 	= True	# True = Don't create qLabel for each item
 
 	cControlHeader 	= T_CB_COMPONENTSTREE 
 	cStartPointText = T_CB_RINGPWCT

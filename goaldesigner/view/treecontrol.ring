@@ -189,6 +189,7 @@ class TreeControl from qTreeWidget
 	func AddToTree nID,oObject
 		aTree + [nID,oObject,oObject.pObject]
 
+
 	/*
 		The next method is used after Paste operation to update the Tree list
 		With the new nodes data

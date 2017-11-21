@@ -32,7 +32,7 @@ class EnvironmentView from WindowsViewParent
 				oDockGoalDesigner = self.CreateGoalDesigner(win)
 				self.CreateFilesManager(win)
 			}
-			setwinicon(win,"images/pwct.png")
+			setwinicon(win,AppFile("images/pwct.png"))
 			showmaximized()	
 			oFilter = new qAllevents(win) {
 				setcloseevent("PWCT_APP.Quit()")
@@ -56,14 +56,14 @@ class EnvironmentView from WindowsViewParent
 			subFile { 
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+Alt+n"))
-					setbtnimage(self,"images/new.png")
+					setbtnimage(self,AppFile("images/new.png"))
 					settext(T_ENV_MENU_NEW) # "New"
 					setclickevent(Method(:NewAction))
 				}
 				addaction(oAction)
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+Alt+o"))
-					setbtnimage(self,"images/open.png") 
+					setbtnimage(self,AppFile("images/open.png")) 
 					settext(T_ENV_MENU_OPEN) # "Open"
 					setclickevent(Method(:OpenAction))
 				}
@@ -71,7 +71,7 @@ class EnvironmentView from WindowsViewParent
 				addseparator()
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+s"))
-					setbtnimage(self,"images/save.png")
+					setbtnimage(self,AppFile("images/save.png"))
 					settext(T_ENV_MENU_SAVE) # "Save"
 					setclickevent(Method(:SaveAction))
 				}
@@ -79,7 +79,7 @@ class EnvironmentView from WindowsViewParent
 				addseparator()
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+Alt+s"))
-					setbtnimage(self,"images/saveas.png")
+					setbtnimage(self,AppFile("images/saveas.png"))
 					settext(T_ENV_MENU_SAVEAS) # "Save As"
 					setclickevent(Method(:SaveAsAction))
 				}
@@ -87,7 +87,7 @@ class EnvironmentView from WindowsViewParent
 				addseparator()
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+p"))
-					setbtnimage(self,"images/print.png")
+					setbtnimage(self,AppFile("images/print.png"))
 					settext(T_ENV_MENU_PRINT) # "Print to PDF"
 					setclickevent(Method(:PrintAction))
 				}
@@ -95,7 +95,7 @@ class EnvironmentView from WindowsViewParent
 				addseparator()
 				oAction = new qaction(win) {
 					setShortcut(new QKeySequence("Ctrl+q"))
-					setbtnimage(self,"images/close.png") 
+					setbtnimage(self,AppFile("images/close.png"))
 					settext(T_ENV_MENU_EXIT) # "Exit"
 					setclickevent(Method(:CloseAction))
 				}
@@ -104,21 +104,21 @@ class EnvironmentView from WindowsViewParent
 			subEdit { 
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+x"))
-					setbtnimage(self,"images/cut.png")
+					setbtnimage(self,AppFile("images/cut.png"))
 					settext(T_ENV_MENU_CUT) # "Cut"
 					setclickevent(Method(:CutAction))
 				}
 				addaction(oAction)
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+c"))
-					setbtnimage(self,"images/copy.png")
+					setbtnimage(self,AppFile("images/copy.png"))
 					settext(T_ENV_MENU_COPY) # "Copy"
 					setclickevent(Method(:CopyAction))
 				}
 				addaction(oAction)
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+v"))
-					setbtnimage(self,"images/paste.png")
+					setbtnimage(self,AppFile("images/paste.png"))
 					settext(T_ENV_MENU_PASTE) # "Paste"
 					setclickevent(Method(:PasteAction))
 				}
@@ -126,7 +126,7 @@ class EnvironmentView from WindowsViewParent
 				addseparator()
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Alt+f"))
-					setbtnimage(self,"images/font.png")
+					setbtnimage(self,AppFile("images/font.png"))
 					settext(T_ENV_MENU_FONT) # "Font"
 					setclickevent(Method(:FontAction))
 				}
@@ -134,7 +134,7 @@ class EnvironmentView from WindowsViewParent
 				addseparator()
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Alt+c"))
-					setbtnimage(self,"images/colors.png")
+					setbtnimage(self,AppFile("images/colors.png"))
 					settext(T_ENV_MENU_COLORS) # "Colors"
 					setclickevent(Method(:ColorsAction))
 				}
@@ -142,7 +142,7 @@ class EnvironmentView from WindowsViewParent
 				addseparator()
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+f"))
-					setbtnimage(self,"images/search.png")
+					setbtnimage(self,AppFile("images/search.png"))
 					settext(T_ENV_MENU_FINDREPLACE) # "Find and Replace"
 					setclickevent(Method(:FindAction))
 				}
@@ -151,7 +151,7 @@ class EnvironmentView from WindowsViewParent
 			subView {
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Alt+p"))
-					setbtnimage(self,"images/project.png")
+					setbtnimage(self,AppFile("images/project.png"))
 					settext(T_ENV_MENU_PROJECTFILES ) # "Project Files"
 					setclickevent(Method(:ProjectAction))
 				}
@@ -159,7 +159,7 @@ class EnvironmentView from WindowsViewParent
 				addseparator()	
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Alt+g"))
-					setbtnimage(self,"images/source.png")
+					setbtnimage(self,AppFile("images/source.png"))
 					setclickevent(Method(:GoalDesignerAction))
 					settext(T_ENV_MENU_GOALDESIGNER) # "Goal Designer"
 				}
@@ -167,7 +167,7 @@ class EnvironmentView from WindowsViewParent
 				addseparator()	
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Alt+o"))
-					setbtnimage(self,"images/source.png")
+					setbtnimage(self,AppFile("images/source.png"))
 					setclickevent(Method(:OutputWindowAction))
 					settext(T_ENV_MENU_OUTPUTWINDOW) # "Output Window"
 				}
@@ -176,7 +176,7 @@ class EnvironmentView from WindowsViewParent
 			subProgram { 
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+d"))
-					setbtnimage(self,"images/debug.png")
+					setbtnimage(self,AppFile("images/debug.png"))
 					settext(T_ENV_MENU_DEBUG) # "Debug (Run then wait!)"
 					setclickevent(Method(:DebugAction))
 				}
@@ -184,7 +184,7 @@ class EnvironmentView from WindowsViewParent
 				addseparator()
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+r"))
-					setbtnimage(self,"images/run.png")
+					setbtnimage(self,AppFile("images/run.png"))
 					settext(T_ENV_MENU_RUN) # "Run"
 					setclickevent(Method(:RunAction))
 				}
@@ -192,7 +192,7 @@ class EnvironmentView from WindowsViewParent
 				addseparator()
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+F5"))
-					setbtnimage(self,"images/run.png")
+					setbtnimage(self,AppFile("images/run.png"))
 					settext(T_ENV_MENU_RUNNOCONSOLE) # "Run GUI Application (No Console)"
 					setclickevent(Method(:RunGUIAction))
 				}
@@ -247,43 +247,43 @@ class EnvironmentView from WindowsViewParent
 	func CreateToolbar win
 		aBtns = [
 				new qToolbutton(win) { 
-					setbtnimage(self,"images/new.png") 
+					setbtnimage(self,AppFile("images/new.png"))
 					setclickevent(Method(:NewAction))
 					settooltip(T_ENV_MENU_NEW) # "New File"
 				} ,
 				new qToolbutton(win) { 
-					setbtnimage(self,"images/open.png") 
+					setbtnimage(self,AppFile("images/open.png")) 
 					setclickevent(Method(:OpenAction))
 					settooltip(T_ENV_MENU_OPEN) # "Open File"
 				} ,
 				new qToolbutton(win) { 
-					setbtnimage(self,"images/save.png")
+					setbtnimage(self,AppFile("images/save.png"))
 					setclickevent(Method(:SaveAction))
 					settooltip(T_ENV_MENU_SAVE) # "Save"
 				 } ,
 				new qToolbutton(win) { 
-					setbtnimage(self,"images/saveas.png")
+					setbtnimage(self,AppFile("images/saveas.png"))
 					setclickevent(Method(:SaveAsAction))
 					settooltip(T_ENV_MENU_SAVEAS) # "Save As"
 				 } ,
 				
 				new qToolbutton(win) { 
-					setbtnimage(self,"images/debug.png") 
+					setbtnimage(self,AppFile("images/debug.png"))
 					setclickevent(Method(:DebugAction))
 					settooltip(T_ENV_MENU_DEBUG) # "Debug (Run then wait!)"
 				} ,
 				new qToolbutton(win) { 
-					setbtnimage(self,"images/run.png") 
+					setbtnimage(self,AppFile("images/run.png"))
 					setclickevent(Method(:RunAction))
 					settooltip(T_ENV_MENU_RUN) # "Run the program"
 				} ,
 				new qToolbutton(win) { 
-					setbtnimage(self,"images/rungui.png") 
+					setbtnimage(self,AppFile("images/rungui.png"))
 					setclickevent(Method(:RunGUIAction))
 					settooltip(T_ENV_MENU_RUNNOCONSOLE) # "Run GUI Application (No Console)"
 				} ,
 				new qToolbutton(win) { 
-					setbtnimage(self,"images/close.png") 
+					setbtnimage(self,AppFile("images/close.png"))
 					setclickevent(Method(:CloseAction))
 					settooltip(T_ENV_MENU_EXIT) # "Exit"
 				} 
@@ -303,6 +303,7 @@ class EnvironmentView from WindowsViewParent
 	*/
 
 	func CreateFilesManager win
+
 		tree1 = new qtreeview(win) {
 			setclickedevent(Method(:ChangeFileAction))
 			setactivatedevent(Method(:ChangeFileAction))
@@ -323,6 +324,7 @@ class EnvironmentView from WindowsViewParent
 			setexpanded(myindex,true)
 			header().hide()			
 		}
+		
 		oDockFilesManager = new qdockwidget(win,0) {
 			setMinimumwidth(250)
 			setLayoutDirection(C_TRANSLATION_ENGLISH)

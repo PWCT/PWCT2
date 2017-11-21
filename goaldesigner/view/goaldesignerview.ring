@@ -49,67 +49,67 @@ class GoalDesignerView from WindowsViewParent
 			setToolTip(T_GD_NEWSTEP)
 			setClickEvent(Method(:AddStepAction))			
 		}
-		setBtnImage(btnAddStep,"images/new.png")
+		setBtnImage(btnAddStep,AppFile("images/new.png"))
 		btnEditStep = new qPushButton(win) {
 			setToolTip(T_GD_EDITSTEP)
 			setClickEvent(Method(:EditStepAction))			
 		}		
-		setBtnImage(btnEditStep,"images/edit.png")
+		setBtnImage(btnEditStep,AppFile("images/edit.png"))
 		btnDeleteStep = new qPushButton(win) {
 			setToolTip(T_GD_DELETESTEP)
 			setClickEvent(Method(:DeleteStepAction))			
 		}
-		setBtnImage(btnDeleteStep,"images/delete.png")
+		setBtnImage(btnDeleteStep,AppFile("images/delete.png"))
 		btnMoveStepUp = new qPushButton(win) {
 			setToolTip(T_GD_MOVEUP)
 			setClickEvent(Method(:MoveStepUpAction))		
 		}
-		setBtnImage(btnMoveStepUp,"images/up.png")
+		setBtnImage(btnMoveStepUp,AppFile("images/up.png"))
 		btnMoveStepDown = new qPushButton(win) {
 			setToolTip(T_GD_MOVEDOWN)
 			setClickEvent(Method(:MoveStepDownAction))			
 		}
-		setBtnImage(btnMoveStepDown,"images/down.png")
+		setBtnImage(btnMoveStepDown,AppFile("images/down.png"))
 		btnPrintSteps = new qPushButton(win) {
 			setToolTip(T_GD_PRINTSTEPS)
 			setClickEvent(Method(:PrintStepsAction))			
 		}
-		setBtnImage(btnPrintSteps,"images/print.png")
+		setBtnImage(btnPrintSteps,AppFile("images/print.png"))
 		btnCutSteps = new qPushButton(win) {
 			setToolTip(T_GD_CUT)
 			setClickEvent(Method(:CutStepsAction))			
 		}
-		setBtnImage(btnCutSteps,"images/cut.png")
+		setBtnImage(btnCutSteps,AppFile("images/cut.png"))
 		btnCopySteps = new qPushButton(win) {
 			setToolTip(T_GD_COPY)
 			setClickEvent(Method(:CopyStepsAction))			
 		}
-		setBtnImage(btnCopySteps,"images/copy.png")
+		setBtnImage(btnCopySteps,AppFile("images/copy.png"))
 		btnPasteSteps = new qPushButton(win) {
 			setToolTip(T_GD_PASTE)
 			setClickEvent(Method(:PasteStepsAction))			
 		}
-		setBtnImage(btnPasteSteps,"images/paste.png")
+		setBtnImage(btnPasteSteps,AppFile("images/paste.png"))
 		btnIncreaseSize = new qPushButton(win) {
 			setToolTip(T_GD_INCERASESIZE)
 			setClickEvent(Method(:IncreaseSizeAction))			
 		}
-		setBtnImage(btnIncreaseSize,"images/zoomin.png")
+		setBtnImage(btnIncreaseSize,AppFile("images/zoomin.png"))
 		btnDecreaseSize = new qPushButton(win) {
 			setToolTip(T_GD_DECREASESIZE)
 			setClickEvent(Method(:DecreaseSizeAction))			
 		}
-		setBtnImage(btnDecreaseSize,"images/zoomout.png")
+		setBtnImage(btnDecreaseSize,AppFile("images/zoomout.png"))
 		btnSearch = new qPushButton(win) {
 			setToolTip(T_GD_SEARCH)
 			setClickEvent(Method(:SearchAction))			
 		}
-		setBtnImage(btnSearch,"images/search.png")
+		setBtnImage(btnSearch,AppFile("images/search.png"))
 		btnIgnore = new qPushButton(win) {
 			setToolTip(T_GD_COMMENTUNCOMMENT)
 			setClickEvent(Method(:IgnoreStepAction))	
 		}
-		setBtnImage(btnIgnore,"images/comments.png")
+		setBtnImage(btnIgnore,AppFile("images/comments.png"))
 		sliderTimeMachine = new TimeMachineView(win) {
 			setValueChangedEvent(Method(:ChangeTimeMachinePointAction))
 		}
@@ -117,17 +117,17 @@ class GoalDesignerView from WindowsViewParent
 			setToolTip(T_GD_INTERACT) 	# "Interact"
 			setClickEvent(Method(:InteractAction))	
 		}
-		setBtnImage(btnInteract,"images/interact.png")
+		setBtnImage(btnInteract,AppFile("images/interact.png"))
 		btnModify = new qPushButton(win) {
 			setToolTip(T_GD_MODIFY) 	# "Modify"
 			setClickEvent(Method(:ModifyAction))	
 		}		
-		setBtnImage(btnModify,"images/modify.png")		
+		setBtnImage(btnModify,AppFile("images/modify.png"))	
 		btnCloseWindow = new qPushButton(win) {
 			setToolTip(T_GD_CLOSEFILE) 	# "Close File"
 			setClickEvent(Method(:CloseFileAction))	
 		}		
-		setBtnImage(btnCloseWindow,"images/ipclose.png")	
+		setBtnImage(btnCloseWindow,AppFile("images/ipclose.png"))	
 		labelTM = new qLabel(win) { setText(T_GD_THETIMEMACHINE) } # "The Time Machine"
 		layoutTimeMachine = new qHBoxLayout()
 		{	
@@ -189,6 +189,7 @@ class GoalDesignerView from WindowsViewParent
 			oFilter = new qAllEvents(win)
 			oFilter.setKeyPressEvent(Method(:KeyPress))
 			installeventfilter(oFilter)	
+
 	}
 
 	

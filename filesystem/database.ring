@@ -7,7 +7,7 @@
 
 class Database
 
-	if isAndroid() {
+	if ismobile() {
 		oDatabase = new DatabaseSQLiteQt
 	else 
 		oDatabase = new DatabaseSQLite
