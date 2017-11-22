@@ -9,9 +9,11 @@
 	T_LANGUAGE = "arabic"
 
 # Layout Direction
+
 	T_LAYOUTDIRECTION = 1		# Right to Left
 
 # PWCT Environment
+
 	T_ENV_TITLE = "تقنية البرمجة بدون كود"
 	T_ENV_DOCK_PROJECTFILES = "ملفات المشروع"
 	T_ENV_DOCK_GOALDESIGNER = "مصمم الهدف"
@@ -75,27 +77,33 @@
 	T_GD_CLOSEFILE = "اغلاق الملف"				# Button
 
 	# Steps Tree
+
 	T_GD_Firststep  = "نقطة البداية"
 	T_GD_StepsTree = "شجرة الخطوات"
 
 	# New Step
+
 	T_GD_NEWSTEP_ENTERSTEPNAME = "أدخل إسم الخطوة ؟"
 	T_GD_NEWSTEP_STEPNAME = "إسم الخطوة"
 
 	# Delete Step
+
 	T_GD_DELETESTEP_DELETESTEP = "حذف خطوة"
 	T_GD_DELETESTEP_AREYOUSURE = "هل انت متاكد؟"
 	T_GD_DELETESTEP_DOYOUWANT = "هل تريد حذف هذه الخطوة؟"
 
 	# Files
+
 	T_GD_OPENFILE = "فتح ملف"
 	T_GD_SAVEFILE = "حفظ ملف"
 
 	# Using Components
+
 	T_GD_INTERACT = "تفاعل"
 	T_GD_MODIFY    = "تعديل"
 
 	# Buttons Messages
+
 	T_GD_BM_SORRY 	= "عفوا"
 	T_GD_BM_CANTADD 	= "لايمكن اضافة خطوة جديدة فى هذا المكان"
 	T_GD_BM_CANTEDIT	= "لايمكن تعديل اسم خطوة تم توليدها"
@@ -110,16 +118,19 @@
 	T_GD_BM_CANTMODIFYFUTURE = "لايمكن تعديل المستقبل بينما نحن فى الماضى - راجع مكان الة الزمن"
 
 	# Dialog
+
 	T_GD_DM_OPENFILE = "فتح ملف"
 	T_GD_DM_SAVEFILE = "حفظ ملف"
 	T_GD_DM_FILETYPE = "ملفات المصدر(*.pwct)"
 
 	# Program
+
 	T_GD_DEBUG	 	= "تنقيح"
 	T_GD_RUN			= "تشغيل"
 	T_GD_RUNGUI		= "تشغيل برنامج رسومي"
 
 # Print Steps Window
+
 	T_GD_PS_PRINTSTEP = "طباعة الخطوات"			# The Window Title
 	T_GD_PS_STEPSTREE = "شجرة الخطوات"			# Tab Page Header
 	T_GD_PS_SOURCECODE = "الكود المصدري"			# Tab Page Header
@@ -164,6 +175,7 @@
 	T_CB_CLOSE = "إغلاق"
 
 # Interaction Pages
+
 	T_IP_WINDOWTITLE = "نافذة التفاعل"
 	T_IP_AGAIN = "مرة اخري"
 	T_IP_OK = "حسنا"
@@ -171,8 +183,12 @@
 
 #==================================================
 
-//T_CB_COMPONENTSFILE = "vpl/arabiccomponents.pwct"
-T_CB_COMPONENTSFILE = "arabiccomponents.pwct"
+	if PWCTIsMobile(:componentsfile) {
+		T_CB_COMPONENTSFILE = "arabiccomponents.pwct"
+	else
+		T_CB_COMPONENTSFILE = "vpl/arabiccomponents.pwct"
+	}
+
 
 #==================================================
 # 	Components  Translation

@@ -9,7 +9,7 @@ class ComponentsBrowserController from WindowsControllerParent
 
 	oView 			= new ComponentsBrowserView
 	oModel 			= new TreeModel
-	cComponentsPath 	= C_CB_COMPONENTSPATH # "vpl/ringpwct/"
+	cComponentsPath 	= C_CB_COMPONENTSPATH 
 
 	lHideOnlyDontClose 	= True
 

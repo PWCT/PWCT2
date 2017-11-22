@@ -9,9 +9,11 @@
 	T_LANGUAGE = "english"
 
 # Layout Direction
+
 	T_LAYOUTDIRECTION = 0		# Left to Right
 
 # PWCT Environment
+
 	T_ENV_TITLE = "Programming Without Coding Technology"
 	T_ENV_DOCK_PROJECTFILES = "Project Files"
 	T_ENV_DOCK_GOALDESIGNER = "Goal Designer"
@@ -75,27 +77,33 @@
 	T_GD_CLOSEFILE = "Close File"				# Button
 
 	# Steps Tree
+
 	T_GD_Firststep  = "Start Point"
 	T_GD_StepsTree = "Steps Tree"
 
 	# New Step
+
 	T_GD_NEWSTEP_ENTERSTEPNAME = "Enter the step name?"
 	T_GD_NEWSTEP_STEPNAME = "Step Name"
 
 	# Delete Step
+
 	T_GD_DELETESTEP_DELETESTEP = "Delete Step"
 	T_GD_DELETESTEP_AREYOUSURE = "Are you sure?"
 	T_GD_DELETESTEP_DOYOUWANT = "Do you want to delete the step?"
 
 	# Files
+
 	T_GD_OPENFILE = "Open File"
 	T_GD_SAVEFILE = "Save File"
 
 	# Using Components
+
 	T_GD_INTERACT = "Interact"
 	T_GD_MODIFY    = "Modify"
 
 	# Buttons Messages
+
 	T_GD_BM_SORRY 	= "Sorry"
 	T_GD_BM_CANTADD 	= "Can't Add New Step in this location!"
 	T_GD_BM_CANTEDIT	= "Can't Edit Generated Step, Use Modify!"
@@ -110,16 +118,19 @@
 	T_GD_BM_CANTMODIFYFUTURE = "Can't modify the future while we are in the past! Revise the Time Machine position"
 
 	# Dialog
+
 	T_GD_DM_OPENFILE = "Open File"
 	T_GD_DM_SAVEFILE = "Save File"
 	T_GD_DM_FILETYPE = "source files(*.pwct)"
 
 	# Program
+
 	T_GD_DEBUG	 	= "Debug"
 	T_GD_RUN			= "Run"
 	T_GD_RUNGUI		= "RunGUI"
 
 # Print Steps Window
+
 	T_GD_PS_PRINTSTEP = "Print Steps"				# The Window Title
 	T_GD_PS_STEPSTREE = "Steps Tree"			# Tab Page Header
 	T_GD_PS_SOURCECODE = "Source Code"			# Tab Page Header
@@ -164,6 +175,7 @@
 	T_CB_CLOSE = "Close"
 
 # Interaction Pages
+
 	T_IP_WINDOWTITLE = "Interation Window"
 	T_IP_AGAIN = "Again"
 	T_IP_OK = "Ok"
@@ -171,8 +183,13 @@
 
 #==================================================
 
-//T_CB_COMPONENTSFILE = "vpl/components.pwct"
-T_CB_COMPONENTSFILE = "components.pwct"
+	if PWCTIsMobile(:componentsfile) {
+		T_CB_COMPONENTSFILE = "components.pwct"
+	else
+		T_CB_COMPONENTSFILE = "vpl/components.pwct"
+	}
+
+
 #==================================================
 # 	Components  Translation
 #==================================================
