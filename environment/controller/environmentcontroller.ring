@@ -50,6 +50,12 @@ class EnvironmentController from WindowsControllerParent
 			oView.oDockOutputWindow.raise()
 		}
 
+		if PWCTIsMobile(:Tabify) {
+			oView.win.tabifydockwidget(oView.oDockOutputWindow,oView.oDockFilesManager)
+			oView.win.tabifydockwidget(oView.oDockOutputWindow,oView.oDockGoalDesigner)
+			oView.oDockGoalDesigner.raise()
+		}
+
 	/*
 		Purpose : Set the Parent Object for Environment and goal designer
 		Parameters : None
