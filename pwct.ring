@@ -169,5 +169,6 @@ func PWCTIsMobile cOption
 		:AddToTree		(Avoid Crash!)
 		:IPTitle		(Interaction Page Title Height)
 		:Tabify			(GoalDesigner,Output,Project Files)
+		:componentsfile		(Path to components file)
 	*/
 	return isMobile()
