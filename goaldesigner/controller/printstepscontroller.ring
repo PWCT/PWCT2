@@ -32,8 +32,10 @@ class PrintStepsController from WindowsControllerParent
 			setoutputformat(1)	# 1 = pdf
 			setoutputfilename("StepsTree.pdf")
 		}	
-		oView.oStepsTree.print(printer1)		
-		system("start StepsTree.pdf")
+		oView.oStepsTree.print(printer1)
+		new QDesktopServices {
+			OpenURL(new qURL("file:///"+substr(currentdir(),"\","/")+"/StepsTree.pdf")) 
+		}				
 
 	/*
 		Purpose : Print Source Code
@@ -47,7 +49,10 @@ class PrintStepsController from WindowsControllerParent
 			setoutputfilename("StepsCode.pdf")
 		}
 		oView.oStepsCode.print(printer1)
-		system("start StepsCode.pdf")
+		new QDesktopServices {
+			OpenURL(new qURL("file:///"+substr(currentdir(),"\","/")+"/StepsCode.pdf")) 
+		}				
+
 
 	/*
 		Purpose : Key Press Action
