@@ -25,8 +25,8 @@
 	C_NODELABEL_STYLESHEET 			= 2
 
 # Node Label Image
-	C_LABELIMAGE_NODEICON			= "images/nodeicon.png"
-	C_LABELIMAGE_IGNORESTEP			= "images/ignorestep.png"
+	C_LABELIMAGE_NODEICON			= AppFile("images/nodeicon.png")
+	C_LABELIMAGE_IGNORESTEP			= AppFile("images/ignorestep.png")
 
 # Interaction Model
 	C_INTERACTIONRECORD_ID 			= 1

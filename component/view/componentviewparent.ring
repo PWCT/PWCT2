@@ -48,7 +48,11 @@ class ComponentViewParent from WindowsViewParent
 		
 		oLabel = new qLabel(win) {
 			setText(cTitle)
-			setFixedHeight(this.nTitleFixedHeight)
+			if PWCTisMobile(:IPTitle) {
+				setFixedHeight(this.nTitleFixedHeight*3)
+			else
+				setFixedHeight(this.nTitleFixedHeight)
+			}
 			setStyleSheet("font-size:"+this.nTitleFontSize+"pt;color:white;background-color:purple;")
 			setalignment(Qt_AlignHCenter |  Qt_AlignVCenter )
 		}

@@ -153,3 +153,20 @@ func ShowMessage cTitle,cMessage
 			setwinicon(win,AppFile("images/pwct.png"))
 			result = exec()
 		}
+
+
+/*
+	The next function to Control if we need to use the Mobile Settings or Not
+*/
+
+func PWCTIsMobile cOption	
+	/*
+	 We can use cOption to have more control on settings
+	 cOption can be 
+		:FontFamily		(Avoid Crash!)
+		:Database		(Use Qt to access SQLite)
+		:ComponentsBrowser	(Full Screen Window)
+		:AddToTree		(Avoid Crash!)
+		:IPTitle		(Interaction Page Title Height)
+	*/
+	return isMobile()

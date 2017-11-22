@@ -7,7 +7,7 @@
 
 class Database
 
-	if ismobile() {
+	if PWCTIsMobile(:Database) {
 		oDatabase = new DatabaseSQLiteQt
 	else 
 		oDatabase = new DatabaseSQLite

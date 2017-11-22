@@ -60,7 +60,11 @@ class TreeControl from qTreeWidget
 					oStyle.text(cText,cColor,cBackColor))					
 		oParent.addchild(oItem)
 		setItemWidget(oItem,0,oLabel)
-		AddToTree(nID,oItem)
+		if PWCTisMobile(:AddToTree) {
+			aTree + [nID,oItem,oItem.pObject]
+		else 
+			AddToTree(nID,oItem)
+		}
 		oItem.setExpanded(true)
 
 	/*
@@ -74,7 +78,11 @@ class TreeControl from qTreeWidget
 		oItem = new qtreewidgetitem() 
 		oParent.addchild(oItem)
 		oItem.settext(0,cText)
-		AddToTree(nID,oItem)
+		if PWCTisMobile(:AddToTree) {
+			aTree + [nID,oItem,oItem.pObject]
+		else
+			AddToTree(nID,oItem)
+		}
 		oItem.setExpanded(true)
 
 	/*
@@ -95,7 +103,11 @@ class TreeControl from qTreeWidget
 		else
 			oParent.InsertChild(nIndex,oItem)
 		}
-		AddToTree(nID,oItem)
+		if PWCTisMobile(:AddToTree) {
+			aTree + [nID,oItem,oItem.pObject]	
+		else
+			AddToTree(nID,oItem)
+		}
 		setCurrentItem(oItem,0)	# To Display the item (become visible)
 		setCurrentItem(oParent,0)	# Focus on Parent Step
 		if lUseLabels = True {
@@ -124,9 +136,16 @@ class TreeControl from qTreeWidget
 	*/
 
 	func SetLabelFont oLabel
-		cFontFam =  font().family() 				
-		oLabel.setStyleSheet('font-family: "'+cFontFam+
-					'" ; font-size:' + this.nFontSize + "pt;")
+		# Using font().family() on Android lead to Crash!
+		if PWCTIsMobile(:FontFamily) {
+			oLabel.setStyleSheet("font-size:" + this.nFontSize + "pt;")
+		else 
+			cFontFam =  font().family() 				
+			oLabel.setStyleSheet('font-family: "'+cFontFam+
+				'" ; font-size:' + this.nFontSize + "pt;")
+		}
+
+
 
 	/*
 		The next method get the Tree Node Object using the Tree Node ID
@@ -199,7 +218,11 @@ class TreeControl from qTreeWidget
 
 	func AddNodesFromBuffer aNodesObjectsList,aNodesDataList
 		for x = 1 to len(aNodesObjectsList) {
-			AddToTree(aNodesDataList[x][C_TREEMODEL_NODEID],aNodesObjectsList[x])
+			if PWCTisMobile(:AddToTree) {
+				aTree + [aNodesDataList[x][C_TREEMODEL_NODEID],aNodesObjectsList[x],aNodesObjectsList[x].pObject]
+			else
+				AddToTree(aNodesDataList[x][C_TREEMODEL_NODEID],aNodesObjectsList[x])
+			}
 		}
 
 	/*

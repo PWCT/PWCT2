@@ -22,7 +22,7 @@ class GoalDesignerController from WindowsControllerParent
 	nInteractionPagesToModifyCount = 0
 
 	lInteractionPagesInGoalDesigner = False
-	lComponentsBrowserInGoalDesigner = True
+	lComponentsBrowserInGoalDesigner = False
 
 	lCallInteract = True
 
@@ -703,7 +703,7 @@ class GoalDesignerController from WindowsControllerParent
 		# Get Data From the Visual Source File
 			oVisualSourceFile.Open()
 			oVisualSourceFile.LoadTables()
-			aStepsTree   =  oVisualSourceFile.GetStepsTreeTable()
+			aStepsTree    =  oVisualSourceFile.GetStepsTreeTable()
 			aInteractions =  oVisualSourceFile.GetInteractionsTable()
 			oVisualSourceFile.Close()
 		# Update Objects
@@ -741,13 +741,13 @@ class GoalDesignerController from WindowsControllerParent
 			oView.oStepsTree.AddStartPoint()
 		# Add Steps to the Tree
 			for x = 2 to len(aStepsTree) {
-				nStepID      = aStepsTree[x][C_TREEMODEL_NODEID]
-				nParentID   = aStepsTree[x][C_TREEMODEL_PARENTID]
-				cStepName  = aStepsTree[x][C_TREEMODEL_CONTENT][:name]
-				lIgnore = not aStepsTree[x][C_TREEMODEL_CONTENT][:active]
-				nStepType = aStepsTree[x][C_TREEMODEL_CONTENT][:steptype]
+				nStepID		= aStepsTree[x][C_TREEMODEL_NODEID]
+				nParentID	= aStepsTree[x][C_TREEMODEL_PARENTID]
+				cStepName	= aStepsTree[x][C_TREEMODEL_CONTENT][:name]
+				lIgnore		= not aStepsTree[x][C_TREEMODEL_CONTENT][:active]
+				nStepType	= aStepsTree[x][C_TREEMODEL_CONTENT][:steptype]
 				SetStepColor(nStepType)
-				oItem = oView.oStepsTree.SerialAdd(nParentID,nStepID,cStepName,lIgnore)					
+				oItem		= oView.oStepsTree.SerialAdd(nParentID,nStepID,cStepName,lIgnore)					
 			}
 		# Update the Time Machine
 			UpdateTheTimeMachine()

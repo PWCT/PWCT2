@@ -142,9 +142,13 @@ class ComponentsBrowserController from WindowsControllerParent
 		oView.oTextSearch.SetFocus(0)
 		if not Parent().lComponentsBrowserInGoalDesigner {
 			oView.win {
-				oDesktop = new qDesktopwidget() 
-				move((oDesktop.width()-500)/2,(oDesktop.height()-500)/2)
-				resize(500,500)
+				if PWCTisMobile(:ComponentsBrowser) {
+					showmaximized()
+				else 
+					oDesktop = new qDesktopwidget() 
+					move((oDesktop.width()-500)/2,(oDesktop.height()-500)/2)
+					resize(500,500)
+				}
 			}
 		}
 	/*
