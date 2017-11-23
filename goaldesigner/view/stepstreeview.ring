@@ -37,12 +37,7 @@ class StepsTreeView from TreeControl
 		setcolumncount(1)
 		oFirststep = new qtreewidgetitem()
 		addtoplevelitem(oFirststep)
-		if PWCTisMobile(:AddToTree) {
-			aTree + [1,oFirstStep,oFirstStep.pObject]
-			
-		else
-			AddToTree(1,oFirstStep)
-		}
+		AddToTree(1,oFirstStep)
 		setheaderlabel(cControlHeader)
 		oLabel = new qLabel(self) {
 			settext(this.oStyle.image(C_LABELIMAGE_NODEICON)+
@@ -61,11 +56,7 @@ class StepsTreeView from TreeControl
 		setcolumncount(1)
 		oFirststep = new qtreewidgetitem()
 		addtoplevelitem(oFirststep)
-		if PWCTisMobile(:AddToTree) {
-			aTree + [1,oFirstStep,oFirstStep.pObject]
-		else
-			AddToTree(1,oFirstStep)
-		}
+		AddToTree(1,oFirstStep)
 		setheaderlabel(cControlHeader)
 		oFirstStep.settext(0,this.cStartPointText)
 		setCurrentItem(oFirstStep,0)

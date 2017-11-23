@@ -60,11 +60,7 @@ class TreeControl from qTreeWidget
 					oStyle.text(cText,cColor,cBackColor))					
 		oParent.addchild(oItem)
 		setItemWidget(oItem,0,oLabel)
-		if PWCTisMobile(:AddToTree) {
-			aTree + [nID,oItem,oItem.pObject]
-		else 
-			AddToTree(nID,oItem)
-		}
+		AddToTree(nID,oItem)
 		oItem.setExpanded(true)
 
 	/*
@@ -78,11 +74,7 @@ class TreeControl from qTreeWidget
 		oItem = new qtreewidgetitem() 
 		oParent.addchild(oItem)
 		oItem.settext(0,cText)
-		if PWCTisMobile(:AddToTree) {
-			aTree + [nID,oItem,oItem.pObject]
-		else
-			AddToTree(nID,oItem)
-		}
+		AddToTree(nID,oItem)
 		oItem.setExpanded(true)
 
 	/*
@@ -103,11 +95,7 @@ class TreeControl from qTreeWidget
 		else
 			oParent.InsertChild(nIndex,oItem)
 		}
-		if PWCTisMobile(:AddToTree) {
-			aTree + [nID,oItem,oItem.pObject]	
-		else
-			AddToTree(nID,oItem)
-		}
+		AddToTree(nID,oItem)
 		setCurrentItem(oItem,0)	# To Display the item (become visible)
 		setCurrentItem(oParent,0)	# Focus on Parent Step
 		if lUseLabels = True {
@@ -218,11 +206,7 @@ class TreeControl from qTreeWidget
 
 	func AddNodesFromBuffer aNodesObjectsList,aNodesDataList
 		for x = 1 to len(aNodesObjectsList) {
-			if PWCTisMobile(:AddToTree) {
-				aTree + [aNodesDataList[x][C_TREEMODEL_NODEID],aNodesObjectsList[x],aNodesObjectsList[x].pObject]
-			else
-				AddToTree(aNodesDataList[x][C_TREEMODEL_NODEID],aNodesObjectsList[x])
-			}
+			AddToTree(aNodesDataList[x][C_TREEMODEL_NODEID],aNodesObjectsList[x])
 		}
 
 	/*

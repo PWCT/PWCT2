@@ -166,7 +166,6 @@ func PWCTIsMobile cOption
 		:FontFamily		(Avoid Crash!)
 		:Database		(Use Qt to access SQLite)
 		:ComponentsBrowser	(Full Screen Window)
-		:AddToTree		(Avoid Crash!)
 		:IPTitle		(Interaction Page Title Height)
 		:Tabify			(GoalDesigner,Output,Project Files)
 		:componentsfile		(Path to components file)
