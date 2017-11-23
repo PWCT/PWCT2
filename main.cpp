@@ -66,6 +66,12 @@ RING_FUNC(ring_ismobileqt)
     RING_API_RETNUMBER(1);
 }
 
+RING_FUNC(ring_qDebug)
+{
+    // A function used by RingQt (Appfile() function) to access files using resources
+    qDebug( RING_API_GETSTRING(1) );
+}
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc,argv);
@@ -100,6 +106,7 @@ int main(int argc, char *argv[])
     pRingState = ring_state_new();
     ring_vm_funcregister("loadlib",ring_loadlib);
     ring_vm_funcregister("ismobileqt",ring_ismobileqt);
+    ring_vm_funcregister("qdebug",ring_qDebug);
     ring_state_runobjectfile(pRingState,"pwct.ringo");
     ring_state_delete(pRingState);
 
