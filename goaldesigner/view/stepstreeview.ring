@@ -39,6 +39,7 @@ class StepsTreeView from TreeControl
 		addtoplevelitem(oFirststep)
 		if PWCTisMobile(:AddToTree) {
 			aTree + [1,oFirstStep,oFirstStep.pObject]
+			
 		else
 			AddToTree(1,oFirstStep)
 		}
@@ -50,6 +51,7 @@ class StepsTreeView from TreeControl
 		}
 		setItemWidget(oFirstStep,0, oLabel)	
 		setCurrentItem(oFirstStep,0)
+
 
 	/*
 		The next method is the same as AddStartPoint but doesn't

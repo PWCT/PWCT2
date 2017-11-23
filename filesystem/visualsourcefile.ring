@@ -299,7 +299,7 @@ class VisualSourceFile
 	*/
 
 	func SaveStepsTable
-		cSQLAll = ""
+		oDatabase.ExecBegin()
 		for record in aStepsTable {						
 			cSQL = `INSERT INTO STEPSTREE (STEPID,PARENTID,NAME,`+
 			`ACTIVE,CODE,INTERACTIONID,VISIBLE,STEPNUMBER,STEPTYPE)`+
@@ -313,11 +313,9 @@ class VisualSourceFile
 			cSQL = substr(cSQL,"#{V7}", ""+record[C_TREEMODEL_CONTENT][:visible]  )			
 			cSQL = substr(cSQL,"#{V8}", ""+record[C_TREEMODEL_CONTENT][:stepnumber]  )			
 			cSQL = substr(cSQL,"#{V9}", ""+record[C_TREEMODEL_CONTENT][:steptype]  )			
-			cSQLALL += cSQL					
+			oDatabase.Execute(cSQL)				
 		}
-		oDatabase.Execute("begin")
-		oDatabase.Execute(cSQLAll)
-		oDatabase.Execute("end")
+		oDatabase.ExecEnd()
 
 	/*
 		Purpose : Save the Interactions table
@@ -325,8 +323,8 @@ class VisualSourceFile
 		Output : None
 	*/
 
-	func SaveInteractionsTable
-		cSQLAll = ""		
+	func SaveInteractionsTable	
+		oDatabase.ExecBegin()	
 		for record in aInteractionsTable {						
 			cSQL = "INSERT INTO INTERACTIONS (INTERACTIONID,TYPE,COMPONENT,DATE,TIME,VARIABLESVALUES)
          				VALUES (#{V1},#{V2},'#{V3}','#{V4}','#{V5}','#{V6}'); " + NL
@@ -336,11 +334,9 @@ class VisualSourceFile
 			cSQL = substr(cSQL,"#{V4}", record[C_INTERACTIONRECORD_DATE])
 			cSQL = substr(cSQL,"#{V5}", record[C_INTERACTIONRECORD_TIME])
 			cSQL = substr(cSQL,"#{V6}", record[C_INTERACTIONRECORD_VARIABLESVALUES])
-			cSQLAll += cSQL						
-		}
-		oDatabase.Execute("begin")
-		oDatabase.Execute(cSQLAll)	
-		oDatabase.Execute("end")
+			oDatabase.Execute(cSQL)						
+		}	
+		oDatabase.ExecEnd()
 
 	/*
 		Purpose : Save the IDs Table

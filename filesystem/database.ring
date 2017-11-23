@@ -49,3 +49,20 @@ class Database
 	func close
 		oDatabase.close()
 		
+
+	/*
+		Purpose : Begin Group of SQL Statements
+		Parameters : None
+		Output : None
+	*/
+
+	func execBegin 
+		oDatabase.execBegin()
+
+	/*
+		Purpose : End Group of SQL Statements
+		Parameters : None
+		Output : None
+	*/
+	func execEnd
+		oDatabase.execEnd()

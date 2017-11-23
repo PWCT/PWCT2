@@ -9,6 +9,7 @@ class DatabaseSQLiteQt
 
 	oSQLite 
 
+
 	/*
 		Purpose : Init. the object
 		Parameters : None
@@ -18,8 +19,7 @@ class DatabaseSQLiteQt
 	func init
 		new QSqlDatabase() {
 			this.oSQLite = addDatabase("QSQLITE")
-		}	
-
+		}
 
 	/*
 		Purpose : Open the Database
@@ -57,8 +57,6 @@ class DatabaseSQLiteQt
 			}
 			delete()
 		}
-
-
 		return aResult
 
 	/*
@@ -69,4 +67,21 @@ class DatabaseSQLiteQt
 
 	func close
 		oSQLite.Close()
+
+	/*
+		Purpose : Begin Group of SQL Statements
+		Parameters : None
+		Output : None
+	*/
 		
+	func execBegin 
+		execute("begin")
+
+	/*
+		Purpose : End Group of SQL Statements
+		Parameters : None
+		Output : None
+	*/
+
+	func execEnd
+		execute("end")

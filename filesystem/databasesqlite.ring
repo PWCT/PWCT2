@@ -45,3 +45,21 @@ class DatabaseSQLite
 	func close
 		SQLite_close(oSQLite)
 		
+
+	/*
+		Purpose : Begin Group of SQL Statements
+		Parameters : None
+		Output : None
+	*/
+
+	func execBegin 
+		execute("begin")
+
+	/*
+		Purpose : End Group of SQL Statements
+		Parameters : None
+		Output : None
+	*/
+
+	func execEnd
+		execute("end")
