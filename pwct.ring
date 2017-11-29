@@ -170,5 +170,6 @@ func PWCTIsMobile cOption
 		:Tabify			(GoalDesigner,Output,Project Files)
 		:componentsfile		(Path to components file)
 		:OpenFilesInNewTabs     (Open each PWCT file in separate Goal Designer)
+		:StepsColorsMinimumWidth(Steps Colors - Label Minimum Width)
 	*/
 	return isMobile()

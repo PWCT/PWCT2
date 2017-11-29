@@ -7,6 +7,12 @@
 
 class StepsColorsView from WindowsViewParent
 
+	if PWCTIsMobile(:StepsColorsMinimumWidth) {
+		nMinimumWidth = 600
+	else
+		nMinimumWidth = 300
+	}
+
 	win = new qWidget() {
 	
 		setLayoutDirection(T_LAYOUTDIRECTION)
@@ -16,7 +22,7 @@ class StepsColorsView from WindowsViewParent
 
 		labelType =  new qlabel(win) {
 			setText(T_SC_STEPTYPE) # "Step Type"
-			setFixedWidth(300)
+			setminimumwidth(nMinimumWidth)
 		}
 
 		labelTextColor =  new qlabel(win) {
@@ -37,7 +43,7 @@ class StepsColorsView from WindowsViewParent
 
 		labelComment =  new qlabel(win) {
 			setText(T_SC_TYPECOMMENT) # " This is a comment! "
-			setFixedWidth(300)
+			setminimumwidth(nMinimumWidth)
 		}
 		btnCommentText = new qpushbutton(win) {
 			setText(" :: ")
@@ -60,7 +66,7 @@ class StepsColorsView from WindowsViewParent
 
 		labelRoot =  new qlabel(win) {
 			setText(T_SC_TYPEROOT) # " The first step generated from Interaction "
-			setFixedWidth(300)
+			setminimumwidth(nMinimumWidth)
 		}
 		btnRootText = new qpushbutton(win) {
 			setText(" :: ")
@@ -83,7 +89,7 @@ class StepsColorsView from WindowsViewParent
 
 		labelAllowInteraction =  new qlabel(win) {
 			setText(T_SC_TYPEALLOW) # "The generated step Allows Interaction"
-			setFixedWidth(300)
+			setminimumwidth(nMinimumWidth)
 		}
 		btnAllowInteractionText = new qpushbutton(win) {
 			setText(" :: ")
@@ -106,7 +112,7 @@ class StepsColorsView from WindowsViewParent
 
 		labelLeaf =  new qlabel(win) {
 			setText(T_SC_TYPELEAF) # "The generated step is Leaf"
-			setFixedWidth(300)
+			setminimumwidth(nMinimumWidth)
 		}
 		btnLeafText = new qpushbutton(win) {
 			setText(" :: ")
@@ -129,7 +135,7 @@ class StepsColorsView from WindowsViewParent
 
 		labelData =  new qlabel(win) {
 			setText(T_SC_TYPEDATA) # "Written Data In Interaction Pages"
-			setFixedWidth(300)
+			setminimumwidth(nMinimumWidth)
 		}
 		btnDataText = new qpushbutton(win) {
 			setText(" :: ")
