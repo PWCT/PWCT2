@@ -192,7 +192,7 @@ class EnvironmentView from WindowsViewParent
 				addseparator()
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+F5"))
-					setbtnimage(self,AppFile("images/run.png"))
+					setbtnimage(self,AppFile("images/rungui.png"))
 					settext(T_ENV_MENU_RUNNOCONSOLE) # "Run GUI Application (No Console)"
 					setclickevent(Method(:RunGUIAction))
 				}
