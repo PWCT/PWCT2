@@ -47,7 +47,8 @@ class DatabaseSQLiteQt
 			while movenext() {
 				aRow = []
 				oRecord = record()
-				for x = 1 to oRecord.count() {
+				nMax = oRecord.count()
+				for x = 1 to nMax {
 					aRow + [
 						oRecord.fieldName(x-1) ,
 						query.value(x-1).tostring()

@@ -86,7 +86,8 @@ class ComponentsBrowserController from WindowsControllerParent
 			}
 			return
 		}
-		for x=2 to len(aTree) {
+		nMax = len(aTree) 
+		for x=2 to nMax {
 			item = aTree[x]
 			aContent = item[C_TREEMODEL_CONTENT]
 			cStepName = aContent[:name]

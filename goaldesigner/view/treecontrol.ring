@@ -18,6 +18,7 @@ class TreeControl from qTreeWidget
 
 	cEventString
 
+
 	/*
 		The next method set the object attributes values		
 		Parameters : The Parent Window as QWidget Object
@@ -70,12 +71,12 @@ class TreeControl from qTreeWidget
 	*/
 
 	func SerialAdd2 nParentID,nID,cText
-		oParent = GetObjByID(nParentID)
-		oItem = new qtreewidgetitem() 
-		oParent.addchild(oItem)
-		oItem.settext(0,cText)
-		AddToTree(nID,oItem)
+		oItem = new qtreewidgetitem() {
+			settext(0,cText)			
+		}
+		GetObjByID(nParentID) { addchild(oItem) }
 		oItem.setExpanded(true)
+		AddToTree(nID,oItem)
 
 	/*
 		The next method Insert a node and create the Node Label 	
