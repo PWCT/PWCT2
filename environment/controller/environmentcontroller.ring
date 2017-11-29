@@ -189,6 +189,11 @@ class EnvironmentController from WindowsControllerParent
 			oView.tree1.setfocus(0)
 		lActiveGoalDesignerChanged = True
 
+		if PWCTIsMobile(:OpenFilesInNewTabs) {
+			oView.oDockGoalDesigner.show()
+			oView.oDockGoalDesigner.raise()
+		}
+
 	/*
 		Purpose : Remove file from the Active Files List
 		Parameters : The File Name as String
