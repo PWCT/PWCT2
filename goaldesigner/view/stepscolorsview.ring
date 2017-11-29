@@ -8,7 +8,7 @@
 class StepsColorsView from WindowsViewParent
 
 	if PWCTIsMobile(:StepsColorsMinimumWidth) {
-		nMinimumWidth = 600
+		nMinimumWidth = 1200
 	else
 		nMinimumWidth = 300
 	}
