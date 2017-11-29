@@ -18,7 +18,11 @@ class EnvironmentController from WindowsControllerParent
 
 	lTabifyOutputAndFiles = 0
 
-	lOpenFilesInNewTabs = False 
+	if PWCTIsMobile(:OpenFilesInNewTabs) {
+		lOpenFilesInNewTabs = False 
+	else 
+		lOpenFilesInNewTabs = True
+	}
 
 	# [Dockable Window Object, Visual Source File Name, Steps Tree Object]
 		aActiveFiles = []	

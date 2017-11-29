@@ -169,5 +169,6 @@ func PWCTIsMobile cOption
 		:IPTitle		(Interaction Page Title Height)
 		:Tabify			(GoalDesigner,Output,Project Files)
 		:componentsfile		(Path to components file)
+		:OpenFilesInNewTabs     (Open each PWCT file in separate Goal Designer)
 	*/
 	return isMobile()
