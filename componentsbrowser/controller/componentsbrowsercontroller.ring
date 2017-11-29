@@ -63,7 +63,7 @@ class ComponentsBrowserController from WindowsControllerParent
 				nStepID      	= aStepsTree[x][1]
 				nParentID   	= aStepsTree[x][2]
 				cStepName  	= aStepsTree[x][3][:name]
-				oItem 		= SerialAdd2(nParentID,nStepID,cStepName)								
+				SerialAdd2(nParentID,nStepID,cStepName)								
 			}
 			setupdatesenabled(True)
 			blocksignals(False)

@@ -132,7 +132,7 @@ func DisplaySplashScreen oApp
 		oSplash.Show()
 	# Wait for one second
 		sleep(1)
-	# Close the Splash Creen
+	# Close the Splash Screen
 		oSplash.Close()
 
 /*
