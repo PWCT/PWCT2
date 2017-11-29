@@ -72,11 +72,14 @@ class TreeControl from qTreeWidget
 
 	func SerialAdd2 nParentID,nID,cText
 		oItem = new qtreewidgetitem() {
-			settext(0,cText)			
-		}
-		GetObjByID(nParentID) { addchild(oItem) }
-		oItem.setExpanded(true)
+			settext(0,cText)		
+			this.GetObjByID(nParentID) { 
+				addchild(oItem) 
+			}
+			setExpanded(true)
+		}		
 		AddToTree(nID,oItem)
+		
 
 	/*
 		The next method Insert a node and create the Node Label 	

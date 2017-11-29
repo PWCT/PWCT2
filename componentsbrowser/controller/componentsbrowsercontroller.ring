@@ -56,8 +56,8 @@ class ComponentsBrowserController from WindowsControllerParent
 		oModel.SetID(oVisualSourceFile.GetStepsID())
 		oVisualSourceFile.Close()
 		oView.oComponentsTree {
-			setupdatesenabled(False)
 			blocksignals(True)
+			setupdatesenabled(False)
 			nMax = len(aStepsTree)
 			for x = 2 to nMax {
 				nStepID      	= aStepsTree[x][1]
