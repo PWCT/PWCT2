@@ -161,6 +161,7 @@ class ComponentsBrowserController from WindowsControllerParent
 	func CloseAction
 		if lHideOnlyDontClose {
 			oView.win.hide()
+			Parent().ComponentsBrowserHidden()
 			return 
 		}
 		Parent().ComponentsBrowserClosed()

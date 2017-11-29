@@ -815,6 +815,8 @@ class GoalDesignerController from WindowsControllerParent
 		lIsComponentsBrowserOpened = False
 		oView.widgetCB.Hide()
 
+	func ComponentsBrowserHidden
+		oView.widgetCB.Hide()
 
 	/*
 		Purpose 	: Check loading the component file 
