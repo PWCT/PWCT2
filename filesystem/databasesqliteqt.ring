@@ -43,15 +43,21 @@ class DatabaseSQLiteQt
 	func execute cSQL
 		aResult = []
 		query = new QSqlQuery() {
-			exec(cSQL)
-			while movenext() {
-				aRow = []
-				oRecord = record()
-				nMax = oRecord.count()
+			setForwardOnly(true)		
+			prepare(cSQL)	
+			exec_2()
+			oRecord = record()
+			nMax = oRecord.count()
+			aRecord = []
+			for x = 1 to nMax {
+				aRecord + oRecord.fieldName(x-1)
+			}
+			while movenext() {				
+				aRow = []			
 				for x = 1 to nMax {
 					aRow + [
-						oRecord.fieldName(x-1) ,
-						query.value(x-1).tostring()
+						aRecord[x],
+						value(x-1).tostring()
 					]
 				}
 				aResult + aRow
