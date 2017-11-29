@@ -18,6 +18,8 @@ class EnvironmentController from WindowsControllerParent
 
 	lTabifyOutputAndFiles = 0
 
+	lOpenFilesInNewTabs = False 
+
 	# [Dockable Window Object, Visual Source File Name, Steps Tree Object]
 		aActiveFiles = []	
 		lActiveGoalDesignerChanged = True
@@ -145,16 +147,18 @@ class EnvironmentController from WindowsControllerParent
 		}
 		cFileName = oView.oFile.filepath(oItem)
 		# If the file is already opened, Activate the window
-			nPos = find(aActiveFiles,cFileName,2)
-			if nPos {
-				aActiveFiles[nPos][1].show()
-				aActiveFiles[nPos][1].raise()
-				aActiveFiles[nPos][3].setfocus(0)
-				oView.tree1.setfocus(0)
-				return
+			if lOpenFilesInNewTabs {
+				nPos = find(aActiveFiles,cFileName,2)
+				if nPos {
+					aActiveFiles[nPos][1].show()
+					aActiveFiles[nPos][1].raise()
+					aActiveFiles[nPos][3].setfocus(0)
+					oView.tree1.setfocus(0)
+					return
+				}
 			}
 		lActiveGoalDesignerChanged = false
-		if Parent().IsFileOpened() or not Parent().IsFileEmpty() {
+		if (Parent().IsFileOpened() or not Parent().IsFileEmpty()) and lOpenFilesInNewTabs {
 			oDock = oView.CreateGoalDesigner(oView.win)
 			oDock.setWindowTitle(JustFileName(cFileName))
 			SetParents()
