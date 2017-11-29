@@ -788,12 +788,13 @@ class GoalDesignerController from WindowsControllerParent
 	*/
 
 	func LoadComponentsBrowserComponents
-		lIsComponentsBrowserOpened = True
-		Open_WindowNoShow(:ComponentsBrowserController)
-		Last_Window().AddComponents()
-		Last_Window().setParentObject(self)
-		nComponentsBrowserWindowID = Last_WindowID()
-
+		if lIsComponentsBrowserOpened = False {
+			lIsComponentsBrowserOpened = True
+			Open_WindowNoShow(:ComponentsBrowserController)
+			Last_Window().AddComponents()
+			Last_Window().setParentObject(self)
+			nComponentsBrowserWindowID = Last_WindowID()
+		}
 
 	/*
 		Purpose : Get the Components Browser Window Object
