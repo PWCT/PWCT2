@@ -133,7 +133,9 @@ func DisplaySplashScreen oApp
 		oSplash = new qSplashScreen(oPixMap)
 		oSplash.Show()
 	# Wait for one second
-		sleep(1)
+		if ! PWCTIsMobile(:SplashScreen) {
+			sleep(1)
+		}		
 	# Close the Splash Screen
 		oSplash.Close()
 
@@ -173,5 +175,6 @@ func PWCTIsMobile cOption
 		:componentsfile		(Path to components file)
 		:OpenFilesInNewTabs     (Open each PWCT file in separate Goal Designer)
 		:StepsColorsMinimumWidth(Steps Colors - Label Minimum Width)
+		:SplashScreen		(Splash Screen - Check for waiting)
 	*/
 	return isMobile()
