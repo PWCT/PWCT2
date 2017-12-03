@@ -13,7 +13,10 @@ class ComponentsBrowserController from WindowsControllerParent
 
 	lHideOnlyDontClose 	= True
 
-	lWriteComponentsFile	= False
+	# Write Ring source code (list) instead of using SQLite
+		lWriteComponentsFile	= False		
+	# Use Ring source code instead of using SQLite
+		lUseComponentsFile	= True 
 
 	/*
 		Purpose : Key Press Action
@@ -49,19 +52,25 @@ class ComponentsBrowserController from WindowsControllerParent
 	*/
 
 	func AddComponents
-		oVisualSourceFile = new VisualSourceFile
-		oVisualSourceFile.cFileName = T_CB_COMPONENTSFILE # "vpl/components.pwct"
-		oVisualSourceFile.Open()
-		oVisualSourceFile.LoadTables()
-		aStepsTree   =  oVisualSourceFile.GetStepsTreeTable()
+		if ! lUseComponentsFile {
+			oVisualSourceFile = new VisualSourceFile
+			oVisualSourceFile.cFileName = T_CB_COMPONENTSFILE # "vpl/components.pwct"
+			oVisualSourceFile.Open()
+			oVisualSourceFile.LoadTables()
+			aStepsTree   = oVisualSourceFile.GetStepsTreeTable()
+			nStepsID = oVisualSourceFile.GetStepsID()
+			oVisualSourceFile.Close()
+		else 
+			aStepsTree = $aComponentsStepsTree
+			nStepsID = $nComponentsStepsID
+		}
 		if lWriteComponentsFile {
 			cCode = "$aComponentsStepsTree = " + List2RingCode(aStepsTree) + nl
 			cCode += "$nComponentsStepsID = " + oVisualSourceFile.GetStepsID() + nl
 			write("componentsbrowser/componentslist.ring",cCode)
 		}
 		oModel.SetData(aStepsTree)
-		oModel.SetID(oVisualSourceFile.GetStepsID())
-		oVisualSourceFile.Close()
+		oModel.SetID(nStepsID)
 		oView.oComponentsTree {
 			blocksignals(True)
 			setupdatesenabled(False)
