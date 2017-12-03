@@ -11,6 +11,7 @@ load "guilib.ring"
 
 # Load General Libraries
 load "general/globals/globals.ring"
+load "general/mainlib.ring"
 
 # Load the Translation File
 load "translation/english.ring"

@@ -71,6 +71,7 @@ class ComponentsBrowserController from WindowsControllerParent
 			ActivateTheFirstStep()
 		}
 
+
 	/*
 		Purpose : Search in the Components list
 		Parameters : None
