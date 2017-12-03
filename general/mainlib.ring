@@ -9,11 +9,11 @@ load "stdlib.ring"
 
 if isMainSourceFile() {
 	mylist = [ 1,2,3,"four","five",[ :six = 6 , :seven = 7],8,:nine,:ten]
-	see listToRingCode(mylist)
+	see list2RingCode(mylist)
 }
 
-func ListToRingCode aList
-	cCode = "["+nl
+func List2RingCode aList
+	cCode = "["+Windowsnl()
 	lStart = True
 	for item in aList {
 		if !lStart {
@@ -26,8 +26,8 @@ func ListToRingCode aList
 		elseif isnumber(item)
 			cCode += (""+item)
 		elseif islist(item)
-			cCode += ListToRingCode(item)
+			cCode += List2RingCode(item)
 		}
 	}
-	cCode += nl+"]"
+	cCode += windowsnl()+"]"
 	return cCode

@@ -13,6 +13,8 @@ class ComponentsBrowserController from WindowsControllerParent
 
 	lHideOnlyDontClose 	= True
 
+	lWriteComponentsFile	= False
+
 	/*
 		Purpose : Key Press Action
 		Parameters : None
@@ -52,6 +54,11 @@ class ComponentsBrowserController from WindowsControllerParent
 		oVisualSourceFile.Open()
 		oVisualSourceFile.LoadTables()
 		aStepsTree   =  oVisualSourceFile.GetStepsTreeTable()
+		if lWriteComponentsFile {
+			cCode = "$aComponentsStepsTree = " + List2RingCode(aStepsTree) + nl
+			cCode += "$nComponentsStepsID = " + oVisualSourceFile.GetStepsID() + nl
+			write("componentsbrowser/componentslist.ring",cCode)
+		}
 		oModel.SetData(aStepsTree)
 		oModel.SetID(oVisualSourceFile.GetStepsID())
 		oVisualSourceFile.Close()
