@@ -202,3 +202,12 @@ class GoalDesignerView from WindowsViewParent
 	func Show
 		win { showMaximized() }
 
+
+	/*
+		Purpose : Fix drawing of items (Avoid Qt Bug)
+	*/
+
+	func FixDrawing 		
+		oItem = oStepsTree.currentItem() 
+		oStepsTree.collapseitem(oItem)
+		oStepsTree.expanditem(oItem)

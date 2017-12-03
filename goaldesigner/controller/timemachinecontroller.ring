@@ -84,6 +84,10 @@ class TimeMachineController
 			}
 		}
 
+		# To Correctly draw items (Avoid a Qt bug in drawing)
+			oView.FixDrawing()
+
+
 	/*
 		The next method will
 		Check if we will insert the step (before another step)

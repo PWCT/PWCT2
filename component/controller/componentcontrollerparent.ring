@@ -255,9 +255,7 @@ Class ComponentControllerParent from WindowsControllerParent
 			if GenerateAction() {
 				parent().oView.oStepsTree.setFocus(0)
 				# To Correctly draw items (Avoid a Qt bug in drawing)
-					oItem = parent().oView.oStepsTree.currentItem() 
-					parent().oView.oStepsTree.collapseitem(oItem)
-					parent().oView.oStepsTree.expanditem(oItem)
+					parent().oView.FixDrawing()
 				CloseBtnAction()
 			}
 		else 
