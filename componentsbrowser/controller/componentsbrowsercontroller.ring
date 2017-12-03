@@ -16,7 +16,11 @@ class ComponentsBrowserController from WindowsControllerParent
 	# Write Ring source code (list) instead of using SQLite
 		lWriteComponentsFile	= False		
 	# Use Ring source code instead of using SQLite
-		lUseComponentsFile	= True 
+		if PWCTIsMobile(:UseComponentsFile) {
+			lUseComponentsFile	= True 
+		else 
+			lUseComponentsFile	= False
+		}
 
 	/*
 		Purpose : Key Press Action
@@ -58,11 +62,11 @@ class ComponentsBrowserController from WindowsControllerParent
 			oVisualSourceFile.Open()
 			oVisualSourceFile.LoadTables()
 			aStepsTree   = oVisualSourceFile.GetStepsTreeTable()
-			nStepsID = oVisualSourceFile.GetStepsID()
+			nStepsID     = oVisualSourceFile.GetStepsID()
 			oVisualSourceFile.Close()
 		else 
 			aStepsTree = $aComponentsStepsTree
-			nStepsID = $nComponentsStepsID
+			nStepsID   = $nComponentsStepsID
 		}
 		if lWriteComponentsFile {
 			cCode = "$aComponentsStepsTree = " + List2RingCode(aStepsTree) + nl

@@ -176,5 +176,6 @@ func PWCTIsMobile cOption
 		:OpenFilesInNewTabs     (Open each PWCT file in separate Goal Designer)
 		:StepsColorsMinimumWidth(Steps Colors - Label Minimum Width)
 		:SplashScreen		(Splash Screen - Check for waiting)
+		:UseComponentsFile	(Components Browser - Using Ring Code instead of SQLite)
 	*/
 	return isMobile()
