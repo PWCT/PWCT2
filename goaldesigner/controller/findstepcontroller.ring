@@ -119,6 +119,10 @@ class FindStepController from WindowsControllerParent
 		cText = Parent().oModel.RemoveTags(cText)
 		cText = oHTMLFunctions.HTMLSpecialChars2Text(cText)
 		oView.oListResult.Item(find(aStepIDResult,nStepID)-1).SetText(cText)
+		# Referesh the component (Open Interaction window then click ok)
+			parent().openComponent(nStepID)	
+			last_Window().OkAction()
+
 
 	/*
 		Purpose :  Replace All Action
