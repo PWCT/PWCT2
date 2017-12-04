@@ -851,6 +851,26 @@ class GoalDesignerController from WindowsControllerParent
 				return
 			}
 		# Check Step Type
+			openComponent(nStepID)
+		# Display the Window 
+			if lInteractionPagesInGoalDesigner {
+				oView.layoutVPages.InsertWidget(0,Last_Window().oView.win,0,0)
+				Last_Window().Start()	# Show The Window
+				oView.widgetVPages.Show()	# Show the Splitter Widget
+			else
+				Last_Window().Start()	# Show The Window
+			}
+			nInteractionPagesToModifyCount++
+			Last_Window().AfterOpen()
+
+	/*
+		Purpose : Open component without displaying the Interaction window 
+		Parameters : The Step ID
+		Output	: None
+	*/
+
+	func OpenComponent nStepID
+		# Check Step Type
 			nIID = oModel.GetInteractionID(nStepID)
 		# Get the Component File Name
 			cFile = oModel.GetInteractionComponent(nIID)
@@ -868,15 +888,7 @@ class GoalDesignerController from WindowsControllerParent
 				Last_Window().nInteractionMode = C_INTERACTIONMODE_MODIFY
 				Last_Window().nIID = nIID
 				Last_Window().SetVariablesValues()
-			if lInteractionPagesInGoalDesigner {
-				oView.layoutVPages.InsertWidget(0,Last_Window().oView.win,0,0)
-				Last_Window().Start()	# Show The Window
-				oView.widgetVPages.Show()	# Show the Splitter Widget
-			else
-				Last_Window().Start()	# Show The Window
-			}
-			nInteractionPagesToModifyCount++
-			Last_Window().AfterOpen()
+
 
 	/*
 		Purpose : Interaction page (modify) closed
