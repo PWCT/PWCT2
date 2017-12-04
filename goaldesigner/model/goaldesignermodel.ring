@@ -253,13 +253,23 @@ class GoalDesignerModel
 		return oInteractionModel.GetInteractionComponent(nIID)
 
 	/*
-		Purpose : 
-		Parameters :
-		Output : 
+		Purpose : Get the Interaction variables values
+		Parameters : the Interaction ID as number
+		Output : the Interaction values as string
 	*/
 
 	func GetInteractionVariablesValues nIID
 		return oInteractionModel.GetInteractionVariablesValues(nIID)
+
+	/*
+		Purpose : Set the Interaction variables values
+		Parameters : the Interaction ID as number, the Interaction values as string
+		Output : None
+	*/
+
+	func SetInteractionVariablesValues nIID,cValue
+		return oInteractionModel.SetInteractionVariablesValues(nIID,cValue)
+
 
 	/*
 		Purpose : Move Step Up

@@ -76,8 +76,19 @@ class InteractionModel
 	func GetInteractionVariablesValues nIID
 		# Find the Interaction record
 			nPos = find(aList,nIID,C_INTERACTIONRECORD_ID)
-		# Return the component file 
+		# Return the interaction values
 			return aList[nPos][C_INTERACTIONRECORD_VARIABLESVALUES]
+
+
+	/*
+		The next method set the Interaction Variables Values
+	*/
+	func SetInteractionVariablesValues nIID,cValue
+		# Find the Interaction record
+			nPos = find(aList,nIID,C_INTERACTIONRECORD_ID)
+		# Set the Interaction values
+			aList[nPos][C_INTERACTIONRECORD_VARIABLESVALUES] = cValue
+
 
 
 	/*
