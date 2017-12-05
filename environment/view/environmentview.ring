@@ -174,29 +174,39 @@ class EnvironmentView from WindowsViewParent
 				addaction(oAction)
 			}
 			subProgram { 
-				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+d"))
-					setbtnimage(self,AppFile("images/debug.png"))
-					settext(T_ENV_MENU_DEBUG) # "Debug (Run then wait!)"
-					setclickevent(Method(:DebugAction))
+				if PWCTIsMobile(:RunApplication) {
+					oAction = new qAction(win) {
+						setShortcut(new QKeySequence("Ctrl+r"))
+						setbtnimage(self,AppFile("images/rungui.png"))
+						settext(T_ENV_MENU_RUN) # "Run"
+						setclickevent(Method(:RunGUIAction))
+					}
+					addaction(oAction)
+				else 
+					oAction = new qAction(win) {
+						setShortcut(new QKeySequence("Ctrl+d"))
+						setbtnimage(self,AppFile("images/debug.png"))
+						settext(T_ENV_MENU_DEBUG) # "Debug (Run then wait!)"
+						setclickevent(Method(:DebugAction))
+					}
+					addaction(oAction)
+					addseparator()
+					oAction = new qAction(win) {
+						setShortcut(new QKeySequence("Ctrl+r"))
+						setbtnimage(self,AppFile("images/run.png"))
+						settext(T_ENV_MENU_RUN) # "Run"
+						setclickevent(Method(:RunAction))
+					}
+					addaction(oAction)
+					addseparator()
+					oAction = new qAction(win) {
+						setShortcut(new QKeySequence("Ctrl+F5"))
+						setbtnimage(self,AppFile("images/rungui.png"))
+						settext(T_ENV_MENU_RUNNOCONSOLE) # "Run GUI Application (No Console)"
+						setclickevent(Method(:RunGUIAction))
+					}
+					addaction(oAction)	
 				}
-				addaction(oAction)
-				addseparator()
-				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+r"))
-					setbtnimage(self,AppFile("images/run.png"))
-					settext(T_ENV_MENU_RUN) # "Run"
-					setclickevent(Method(:RunAction))
-				}
-				addaction(oAction)
-				addseparator()
-				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+F5"))
-					setbtnimage(self,AppFile("images/rungui.png"))
-					settext(T_ENV_MENU_RUNNOCONSOLE) # "Run GUI Application (No Console)"
-					setclickevent(Method(:RunGUIAction))
-				}
-				addaction(oAction)	
 			}
 			subHelp { 
 
@@ -245,49 +255,83 @@ class EnvironmentView from WindowsViewParent
 	*/
 
 	func CreateToolbar win
-		aBtns = [
-				new qToolbutton(win) { 
-					setbtnimage(self,AppFile("images/new.png"))
-					setclickevent(Method(:NewAction))
-					settooltip(T_ENV_MENU_NEW) # "New File"
-				} ,
-				new qToolbutton(win) { 
-					setbtnimage(self,AppFile("images/open.png")) 
-					setclickevent(Method(:OpenAction))
-					settooltip(T_ENV_MENU_OPEN) # "Open File"
-				} ,
-				new qToolbutton(win) { 
-					setbtnimage(self,AppFile("images/save.png"))
-					setclickevent(Method(:SaveAction))
-					settooltip(T_ENV_MENU_SAVE) # "Save"
-				 } ,
-				new qToolbutton(win) { 
-					setbtnimage(self,AppFile("images/saveas.png"))
-					setclickevent(Method(:SaveAsAction))
-					settooltip(T_ENV_MENU_SAVEAS) # "Save As"
-				 } ,
-				
-				new qToolbutton(win) { 
-					setbtnimage(self,AppFile("images/debug.png"))
-					setclickevent(Method(:DebugAction))
-					settooltip(T_ENV_MENU_DEBUG) # "Debug (Run then wait!)"
-				} ,
-				new qToolbutton(win) { 
-					setbtnimage(self,AppFile("images/run.png"))
-					setclickevent(Method(:RunAction))
-					settooltip(T_ENV_MENU_RUN) # "Run the program"
-				} ,
-				new qToolbutton(win) { 
-					setbtnimage(self,AppFile("images/rungui.png"))
-					setclickevent(Method(:RunGUIAction))
-					settooltip(T_ENV_MENU_RUNNOCONSOLE) # "Run GUI Application (No Console)"
-				} ,
-				new qToolbutton(win) { 
-					setbtnimage(self,AppFile("images/close.png"))
-					setclickevent(Method(:CloseAction))
-					settooltip(T_ENV_MENU_EXIT) # "Exit"
-				} 
-			]
+		if PWCTIsMobile(:RunApplication) {
+			aBtns = [
+					new qToolbutton(win) { 
+						setbtnimage(self,AppFile("images/new.png"))
+						setclickevent(Method(:NewAction))
+						settooltip(T_ENV_MENU_NEW) # "New File"
+					} ,
+					new qToolbutton(win) { 
+						setbtnimage(self,AppFile("images/open.png")) 
+						setclickevent(Method(:OpenAction))
+						settooltip(T_ENV_MENU_OPEN) # "Open File"
+					} ,
+					new qToolbutton(win) { 
+						setbtnimage(self,AppFile("images/save.png"))
+						setclickevent(Method(:SaveAction))
+						settooltip(T_ENV_MENU_SAVE) # "Save"
+					} ,
+					new qToolbutton(win) { 
+						setbtnimage(self,AppFile("images/saveas.png"))
+						setclickevent(Method(:SaveAsAction))
+						settooltip(T_ENV_MENU_SAVEAS) # "Save As"
+					} ,				
+					new qToolbutton(win) { 
+						setbtnimage(self,AppFile("images/rungui.png"))
+						setclickevent(Method(:RunAction))
+						settooltip(T_ENV_MENU_RUN) # "Run the program"
+					} ,
+					new qToolbutton(win) { 
+						setbtnimage(self,AppFile("images/close.png"))
+						setclickevent(Method(:CloseAction))
+						settooltip(T_ENV_MENU_EXIT) # "Exit"
+					} 
+				]
+		else
+			aBtns = [
+					new qToolbutton(win) { 
+						setbtnimage(self,AppFile("images/new.png"))
+						setclickevent(Method(:NewAction))
+						settooltip(T_ENV_MENU_NEW) # "New File"
+					} ,
+					new qToolbutton(win) { 
+						setbtnimage(self,AppFile("images/open.png")) 
+						setclickevent(Method(:OpenAction))
+						settooltip(T_ENV_MENU_OPEN) # "Open File"
+					} ,
+					new qToolbutton(win) { 
+						setbtnimage(self,AppFile("images/save.png"))
+						setclickevent(Method(:SaveAction))
+						settooltip(T_ENV_MENU_SAVE) # "Save"
+					} ,
+					new qToolbutton(win) { 
+						setbtnimage(self,AppFile("images/saveas.png"))
+						setclickevent(Method(:SaveAsAction))
+						settooltip(T_ENV_MENU_SAVEAS) # "Save As"
+					} ,				
+					new qToolbutton(win) { 
+						setbtnimage(self,AppFile("images/debug.png"))
+						setclickevent(Method(:DebugAction))
+						settooltip(T_ENV_MENU_DEBUG) # "Debug (Run then wait!)"
+					} ,
+					new qToolbutton(win) { 
+						setbtnimage(self,AppFile("images/run.png"))
+						setclickevent(Method(:RunAction))
+						settooltip(T_ENV_MENU_RUN) # "Run the program"
+					} ,
+					new qToolbutton(win) { 
+						setbtnimage(self,AppFile("images/rungui.png"))
+						setclickevent(Method(:RunGUIAction))
+						settooltip(T_ENV_MENU_RUNNOCONSOLE) # "Run GUI Application (No Console)"
+					} ,
+					new qToolbutton(win) { 
+						setbtnimage(self,AppFile("images/close.png"))
+						setclickevent(Method(:CloseAction))
+						settooltip(T_ENV_MENU_EXIT) # "Exit"
+					} 
+				]
+		}
 		win {
 			tool1 = addtoolbar("files")  {
 	  			for x in aBtns { 
