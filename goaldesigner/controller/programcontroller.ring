@@ -96,9 +96,11 @@ Class ProgramController
 	*/	
 
 	func RunOnMobile oGD
+		freopen("programoutput.txt","w+",stdout)
 		pState = ring_state_init()
 		ring_state_runcode(pState,"load '" + cFileName +"'")
 		ring_state_delete(pState)
+		oGD.parent().oView.oProcessEditbox.setplaintext(read("programoutput.txt"))
 
 	private
 
