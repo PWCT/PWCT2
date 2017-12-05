@@ -107,11 +107,11 @@ Class ProgramController
 			cCode = 'load "' + cFileName + '"'
 			write("runprogram.ring",cCode)
 		ring_state_main("runprogram.ring")
+		oGD.parent().oView.oProcessEditbox.setplaintext(read("programoutput.txt"))
+		oGD.parent().oView.oDockOutputWindow.raise()
 		remove("runprogram.ring")
 		remove("programoutput.txt")
 		remove("programinput.txt")
-		oGD.parent().oView.oProcessEditbox.setplaintext(read("programoutput.txt"))
-		oGD.parent().oView.oDockOutputWindow.raise()
 
 	private
 
