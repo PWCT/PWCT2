@@ -44,6 +44,15 @@ Class ProgramController
 
 	func RunGUI oGD
 		Prepare(oGD)	# Save the source code to the file
+		RunGUIDesktop(oGD)
+
+	/*
+		Purpose : Run GUI Application - Desktop
+		Parameters : goal designer object
+		Output :  None
+	*/
+
+	func RunGUIDesktop oGD
 		oGD.parent().oView.oProcessEditbox.setplaintext("")
 		if lSetFocusToInput {
 			oGD.parent().oView.oProcessText.setFocus(0)
