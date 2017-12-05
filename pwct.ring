@@ -177,5 +177,7 @@ func PWCTIsMobile cOption
 		:StepsColorsMinimumWidth(Steps Colors - Label Minimum Width)
 		:SplashScreen		(Splash Screen - Check for waiting)
 		:UseComponentsFile	(Components Browser - Using Ring Code instead of SQLite)
+		:RunApplication		(Run Application)
 	*/
+	if cOption = :RunApplication return True ok
 	return isMobile()

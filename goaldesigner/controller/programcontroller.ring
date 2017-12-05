@@ -24,7 +24,11 @@ Class ProgramController
 
 	func Debug oGD
 		Prepare(oGD)	# Save the source code to the file
-		RunBatch(cDebugBatch,"")
+		if PWCTIsMobile(:RunApplication) {
+			RunOnMobile(oGD)
+		else
+			RunBatch(cDebugBatch,"")
+		}
 
 	/*
 		Purpose : Run
@@ -34,7 +38,11 @@ Class ProgramController
 
 	func Run oGD
 		Prepare(oGD)	# Save the source code to the file
-		RunBatch(cRunBatch,"")
+		if PWCTIsMobile(:RunApplication) {
+			RunOnMobile(oGD)
+		else
+			RunBatch(cRunBatch,"")
+		}
 
 	/*
 		Purpose : Run GUI Application
@@ -44,7 +52,11 @@ Class ProgramController
 
 	func RunGUI oGD
 		Prepare(oGD)	# Save the source code to the file
-		RunGUIDesktop(oGD)
+		if PWCTIsMobile(:RunApplication) {
+			RunOnMobile(oGD)
+		else
+			RunGUIDesktop(oGD)
+		}
 
 	/*
 		Purpose : Run GUI Application - Desktop
@@ -79,6 +91,14 @@ Class ProgramController
 			start_3(QIODevice_ReadWrite)
 		} 
 		return oProcess
+
+	/*
+	*/	
+
+	func RunOnMobile oGD
+		pState = ring_state_init()
+		ring_state_runcode(pState,"load '" + cFileName +"'")
+		ring_state_delete(pState)
 
 	private
 
