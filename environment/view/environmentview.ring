@@ -388,25 +388,29 @@ class EnvironmentView from WindowsViewParent
 
 	func createOutputWindow win
 		oProcessWindow = new qWidget()
-		oProcessLabel = new qLabel(oProcessWindow) {
-			setText(T_ENV_OW_INPUT) # "Input :"
-		}
-		oProcessText = new qlineEdit(oProcessWindow) {
-			setreturnPressedEvent(Method(:SendDataAction))
-		}
-		oProcessbtnSend = new qpushbutton(oProcessWindow) {
-			setText(T_ENV_OW_SEND)	# "Send"
-			setClickevent(Method(:SendDataAction))
-		}
-		oProcessLayout1 = new qhboxlayout() {
-			AddWidget(oProcessLabel)
-			AddWidget(this.oProcessText)
-			Addwidget(oProcessbtnSend)
+		if ! PWCTIsMobile(:SendDataToApplication) {
+			oProcessLabel = new qLabel(oProcessWindow) {
+				setText(T_ENV_OW_INPUT) # "Input :"
+			}
+			oProcessText = new qlineEdit(oProcessWindow) {
+				setreturnPressedEvent(Method(:SendDataAction))
+			}
+			oProcessbtnSend = new qpushbutton(oProcessWindow) {
+				setText(T_ENV_OW_SEND)	# "Send"
+				setClickevent(Method(:SendDataAction))
+			}
+			oProcessLayout1 = new qhboxlayout() {
+				AddWidget(oProcessLabel)
+				AddWidget(this.oProcessText)
+				Addwidget(oProcessbtnSend)
+			}
 		}
 		oProcessEditbox = new qPlaintextedit(oProcessWindow) 
 		oProcessLayout2 = new qvboxlayout() {
 			addWidget(this.oProcesseditbox)
-			addlayout(oProcesslayout1)
+			if ! PWCTIsMobile(:SendDataToApplication) {
+				addlayout(oProcesslayout1)			
+			}
 		}
 		oProcessWindow.setlayout(oProcessLayout2)			
 		oDockOutputWindow = new qDockWidget(win,0) {
