@@ -101,6 +101,10 @@ int main(int argc, char *argv[])
     QFile::copy(":/vpl/arabiccomponents.pwct",path4);
 
 
+    QString path5 ;
+    path5 = path+"/mobileapplibs.ring";
+    QFile::copy(":/mobileapp/mobileapplibs.ring",path5);
+
     // Call Ring and run the Application
     RingState *pRingState;
     pRingState = ring_state_new();

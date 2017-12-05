@@ -104,7 +104,8 @@ Class ProgramController
 		# We use runprogram.ring instead of using cFileName directly
 		# Just to get more control in the future, Where we can add more code
 		# Before running the program
-			cCode = 'load "' + cFileName + '"'
+			cCode = 'load "mobileapplibs.ring"' + nl +
+				'load "' + cFileName + '"'
 			write("runprogram.ring",cCode)
 		ring_state_main("runprogram.ring")
 		oGD.parent().oView.oProcessEditbox.setplaintext(read("programoutput.txt"))
