@@ -93,14 +93,23 @@ Class ProgramController
 		return oProcess
 
 	/*
+		Purpose : Run on Mobile 
+		Parameters : Goal Designer Object 
+		Output : None
 	*/	
 
 	func RunOnMobile oGD
 		freopen("programoutput.txt","w+",stdout)
 		freopen("programinput.txt","r",stdin)
-		pState = ring_state_init()
-		ring_state_runcode(pState,"load '" + cFileName +"'")
-		ring_state_delete(pState)
+		# We use runprogram.ring instead of using cFileName directly
+		# Just to get more control in the future, Where we can add more code
+		# Before running the program
+			cCode = 'load "' + cFileName + '"'
+			write("runprogram.ring",cCode)
+		ring_state_main("runprogram.ring")
+		remove("runprogram.ring")
+		remove("programoutput.txt")
+		remove("programinput.txt")
 		oGD.parent().oView.oProcessEditbox.setplaintext(read("programoutput.txt"))
 		oGD.parent().oView.oDockOutputWindow.raise()
 
