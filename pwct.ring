@@ -178,6 +178,7 @@ func PWCTIsMobile cOption
 		:SplashScreen		(Splash Screen - Check for waiting)
 		:UseComponentsFile	(Components Browser - Using Ring Code instead of SQLite)
 		:RunApplication		(Run Application)
+		:MobileAppLibs		(Loading Mobile Application Libs - guilib for mobile)
 	*/
 	//if cOption = :RunApplication or cOption = :SendDataToApplication  return True ok
 	return isMobile()

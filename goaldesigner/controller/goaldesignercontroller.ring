@@ -1253,3 +1253,29 @@ class GoalDesignerController from WindowsControllerParent
 			return oParent.CheckAllowChild(cChildComponentName,nStepNumber)
 
 
+	/*
+		Purpose : Check output from the application when we run PWCT on Mobile
+		Parameters : None 
+		Output : None 
+	*/
+
+	func CheckOutputOnMobile
+		oProgramController.CheckOutputOnMobile(self)
+
+	/*
+		Purpose : Enable Check output from the application when we run PWCT on Mobile
+		Parameters : None 
+		Output : None 
+	*/
+
+	func EnableCheckOutputOnMobile
+		oView.oCheckOutputOnMobileTimer.start()
+
+	/*
+		Purpose : Disable Check output from the application when we run PWCT on Mobile
+		Parameters : None 
+		Output : None 
+	*/
+
+	func DisableCheckOutputOnMobile
+		oView.oCheckOutputOnMobileTimer.stop()

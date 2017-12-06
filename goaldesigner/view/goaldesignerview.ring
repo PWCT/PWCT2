@@ -190,6 +190,13 @@ class GoalDesignerView from WindowsViewParent
 			oFilter.setKeyPressEvent(Method(:KeyPress))
 			installeventfilter(oFilter)	
 
+		# Timer to check output (For Mobile)
+  		oCheckOutputOnMobileTimer = new qtimer(win) {
+                        setinterval(1000)
+                        settimeoutevent(Method(:CheckOutputOnMobile))
+                        stop()
+                }
+
 	}
 
 	

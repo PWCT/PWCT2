@@ -104,15 +104,31 @@ Class ProgramController
 		# We use runprogram.ring instead of using cFileName directly
 		# Just to get more control in the future, Where we can add more code
 		# Before running the program
-			cCode = 'load "mobileapplibs.ring"' + nl +
-				'load "' + cFileName + '"'
+			cCode = ""
+			if PWCTIsMobile(:MobileAppLibs) {
+				cCode = 'load "mobileapplibs.ring"' + nl 
+			}
+			cCode += 'load "' + cFileName + '"'
 			write("runprogram.ring",cCode)
+		oGD.EnableCheckOutputOnMobile()
 		ring_state_main("runprogram.ring")
-		oGD.parent().oView.oProcessEditbox.setplaintext(read("programoutput.txt"))
-		oGD.parent().oView.oDockOutputWindow.raise()
+		oGD.DisableCheckOutputOnMobile()
+		CheckOutputOnMobile(oGD)
 		remove("runprogram.ring")
 		remove("programoutput.txt")
 		remove("programinput.txt")
+
+	/*
+		Purpose : Check output from the application when we run PWCT on Mobile
+		Parameters : None 
+		Output : None 
+	*/
+
+	func CheckOutputOnMobile oGD
+		if fexists("programoutput.txt") {
+			oGD.parent().oView.oProcessEditbox.setplaintext(read("programoutput.txt"))
+			oGD.parent().oView.oDockOutputWindow.raise()
+		}
 
 	private
 
