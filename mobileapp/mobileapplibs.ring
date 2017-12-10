@@ -338,6 +338,15 @@ GUILib = new GUILib
 
 cDialogIcon = ""
 
+func ringvm_give 
+	return InputBox("","Enter Data :")
+
+func input x
+	return InputBox("","Enter Data (" + x + ")")
+
+func getchar 
+	return InputBox("","Get Character :")
+
 func setwinicon pWindow,cImage
 	if cImage = NULL return ok		
 	pWindow.setWindowIcon(new qicon(new qpixmap(cImage)))
