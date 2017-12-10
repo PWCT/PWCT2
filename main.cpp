@@ -53,6 +53,7 @@ extern "C" {
 #include "ring_objfile.c"
 
 void ringapp_delete_file(QString path,const char *cFile) ;
+void ringapp_deleteappfiles(void) ;
 
 RING_FUNC(ring_loadlib)
 {
@@ -81,9 +82,7 @@ int main(int argc, char *argv[])
     QDir::setCurrent(path);
 
     // Delete the application files
-    ringapp_delete_file(path,"pwct.ringo");
-    ringapp_delete_file(path,"components.pwct");
-    ringapp_delete_file(path,"arabiccomponents.pwct");
+    ringapp_deleteappfiles();
 
     // Copy Ring Object File (pwct.ringo) from Resources to Temp Folder
     QString path2 ;
@@ -114,8 +113,21 @@ int main(int argc, char *argv[])
     ring_state_runobjectfile(pRingState,"pwct.ringo");
     ring_state_delete(pRingState);
 
+    ringapp_deleteappfiles();
+
     return 0;
 
+}
+
+void ringapp_deleteappfiles(void)
+{
+    QString path ;
+    path = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) ;
+    QDir::setCurrent(path);
+    ringapp_delete_file(path,"pwct.ringo");
+    ringapp_delete_file(path,"components.pwct");
+    ringapp_delete_file(path,"arabiccomponents.pwct");
+    ringapp_delete_file(path,"mobileapplibs.ring");
 }
 
 void ringapp_delete_file(QString path,const char *cFile)
