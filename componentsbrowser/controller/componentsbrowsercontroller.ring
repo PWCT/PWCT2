@@ -114,7 +114,7 @@ class ComponentsBrowserController from WindowsControllerParent
 			cStepName = aContent[:name]
 			cStepName = lower(cStepName)
 			cFind = lower(cFind)
-			if substr(cStepName,cFind) > 0 {			
+			if left(cStepName,len(cFind)) = cFind {			
 				nID =  item[C_TREEMODEL_NODEID]
 				oItem = oView.oComponentsTree.GetObjByID(nID)
 				oView.oComponentsTree.SetCurrentItem(oItem,0)
