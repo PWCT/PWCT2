@@ -31,3 +31,14 @@ func List2RingCode aList
 	}
 	cCode += windowsnl()+"]"
 	return cCode
+
+func RemoveFirstTabs cString,nCount
+	aList = str2list(cString)
+	for item in aList 
+		if left(item,nCount) = Copy(char(9),nCount)
+			if len(item) > nCount
+				item = substr(item,nCount+1)
+			ok
+		ok
+	next
+	return list2str(aList)

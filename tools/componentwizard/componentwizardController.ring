@@ -380,3 +380,25 @@ else
 		cCode = substr(cCode,"#{f1}",cStr)
 		cCode = substr(cCode,"#{f2}",cComponent)
 		oView.TextStepsTree.insertplaintext(cCode)
+		cEnglishText = "Class Component
+Object
+Method
+[#{f1}]
+Parameters
+Output"
+
+		cArabicText = "مكون فئة ال 
+اسم الكائن :
+الميثود : 
+[#{f1}]
+المعطيات :
+الناتج :"
+		cStr = ""
+		for x = 1 to nFuncCount {
+			if x != 1 { cStr += "," }
+			cStr += '""'
+		}
+		cEnglishText = substr(cEnglishText,"#{f1}",cStr)
+		cArabicText  = substr(cArabicText, "#{f1}",cStr)
+		oView.textEnglish.setplaintext(cEnglishText)
+		oView.textArabic.setplaintext(cArabicText)
