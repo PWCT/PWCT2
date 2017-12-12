@@ -359,3 +359,24 @@ else
 		cCode = substr(cCode,"#{f2}",cStepCode)
 		oView.TextStepsTree.insertplaintext(cCode)
 
+	func ClassMethodsListbox
+		cComponent = UPPER(oView.textName.text())
+		nFuncCount = 0+InputBox("Class Methods List","Methods Count :")
+		cCode = `
+		switch Variable(:Value2) {
+			#{f1}
+		}
+
+		# Get the function Name 
+			cFuncName = T_CT_#{f2}_IP_VALUE2LIST [Variable(:Value2)]
+
+		# Generate Step and Code using common method 
+			common_callobjectmethod(cFunc,cFuncName)
+		`
+		cStr = windowsnl()
+		for x = 1 to nFuncCount {
+			cStr += copy(char(9),3)+'case '+x+' cFunc = "" ' + windowsnl()
+		}
+		cCode = substr(cCode,"#{f1}",cStr)
+		cCode = substr(cCode,"#{f2}",cComponent)
+		oView.TextStepsTree.insertplaintext(cCode)

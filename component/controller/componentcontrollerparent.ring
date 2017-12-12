@@ -419,3 +419,54 @@ Class ComponentControllerParent from WindowsControllerParent
 	*/
 	func AfterOpen
 
+#=========================================================================
+#
+#	Methods to be used by components for common generation 
+#	of steps and code
+#
+#=========================================================================
+
+	/*
+		The next method for classes components 
+		When we call object method 
+	*/
+
+	func common_callobjectmethod cFunc,cFuncName
+
+		# Process the Method|Function Name 
+			nPos = substr(cFuncName,"(")
+			# Remove (parameters) from the name
+				if nPos {	
+					cFuncName = left(cFuncName,nPos-1)
+				}
+	
+		# Set the Object Name if it was written
+		# Object Name is optional because we can use braces { }
+
+			if Variable(:Value) != NULL {
+				cObjectNameForStepName = StepData(:Value) + "."
+				cObjectNameForStepCode = Variable(:Value) + "."
+			else 
+				cObjectNameForStepName = ""
+				cObjectNameForStepCode = ""
+			}
+
+		# Set the Output variable if it was written 
+
+			if Variable(:Value4) != NULL {
+				cOutputNameForStepName = StepData(:Value4) + " = "
+				cOutputNameForStepCode = Variable(:Value4) + " = "
+			else 
+				cOutputNameForStepName = ""
+				cOutputNameForStepCode = ""
+			}
+
+		NewStep( cOutputNameForStepName  +
+				cObjectNameForStepName + 
+				StyleData(cFuncName) +
+				"(" + StepData(:Value3) + ")" )
+
+		SetStepCode( cOutputNameForStepCode +
+				cObjectNameForStepCode+
+				cFunc+"("  + Variable(:Value3 ) + ")"  )
+		

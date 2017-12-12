@@ -22,40 +22,9 @@ class stdbaseclassComponentController from ComponentControllerParent
 
 		# Get the function Name 
 			cFuncName = T_CT_STDBASECLASS_IP_VALUE2LIST [Variable(:Value2)]
-			nPos = substr(cFuncName,"(")
-			# Remove (parameters) from the name
-				if nPos {	
-					cFuncName = left(cFuncName,nPos-1)
-				}
-	
-		# Set the Object Name if it was written
-		# Object Name is optional because we can use braces { }
 
-			if Variable(:Value) != NULL {
-				cObjectNameForStepName = StepData(:Value) + "."
-				cObjectNameForStepCode = Variable(:Value) + "."
-			else 
-				cObjectNameForStepName = ""
-				cObjectNameForStepCode = ""
-			}
-
-		# Set the Output variable if it was written 
-
-			if Variable(:Value4) != NULL {
-				cOutputNameForStepName = StepData(:Value4) + " = "
-				cOutputNameForStepCode = Variable(:Value4) + " = "
-			else 
-				cOutputNameForStepName = ""
-				cOutputNameForStepCode = ""
-			}
-
-		NewStep( cOutputNameForStepName  +
-				cObjectNameForStepName + 
-				StyleData(cFuncName) +
-				"(" + StepData(:Value3) + ")" )
-		SetStepCode( cOutputNameForStepCode +
-				cObjectNameForStepCode+
-				cFunc+"("  + Variable(:Value3 ) + ")"  )
+		# Generate Step and Code using common method 
+			common_callobjectmethod(cFunc,cFuncName)
 		
 		return True 
 

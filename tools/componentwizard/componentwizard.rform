@@ -1,7 +1,7 @@
 # Start Form Designer File
 aObjectsList = [
 	[ :name = "Window" , :id = 1 , :classname = "formdesigner_qwidget" , :data = [
-		 :x = 0 , : y = 0  , 
+		 :x = -693 , : y = 0  , 
 		 :width =  1344 , :height = 615 , 
 		 :title =  "Component Wizard" , 
 		 :backcolor =  "" , 
@@ -480,6 +480,18 @@ aObjectsList = [
 		 :text =  "Function Call (No Output)",
 		 :BtnImage =  "",
 		 :setClickEvent =  "FunctionCallNoOutput"
+		]
+	],
+	[ :name = "Button37" , :id = 38 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 1166 , : y = 349  , 
+		 :width =  107 , :height = 26 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Class Methods",
+		 :BtnImage =  "",
+		 :setClickEvent =  "ClassMethodsListbox"
 		]
 	]
 ]
