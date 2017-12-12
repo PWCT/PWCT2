@@ -183,6 +183,7 @@
 	load "sqlite_execute.ring"
 	load "sqlite_init.ring"
 	load "sqlite_open.ring"
+	load "stdbaseclass.ring"
 	load "stdlib_apppath.ring"
 	load "stdlib_binarydigits.ring"
 	load "stdlib_capitalized.ring"
@@ -435,6 +436,7 @@
 	aComponentsFilesList + (cComponentsPath + "sqlite_execute.ring")
 	aComponentsFilesList + (cComponentsPath + "sqlite_init.ring")
 	aComponentsFilesList + (cComponentsPath + "sqlite_open.ring")
+	aComponentsFilesList + (cComponentsPath + "stdbaseclass.ring")
 	aComponentsFilesList + (cComponentsPath + "stdlib_apppath.ring")
 	aComponentsFilesList + (cComponentsPath + "stdlib_binarydigits.ring")
 	aComponentsFilesList + (cComponentsPath + "stdlib_capitalized.ring")
