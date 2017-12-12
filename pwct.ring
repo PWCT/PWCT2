@@ -8,6 +8,7 @@
 # Load Ring Libraries
 load "stdlib.ring"
 load "guilib.ring"
+load "tracelib.ring"
 
 # Load General Libraries
 load "general/globals/globals.ring"

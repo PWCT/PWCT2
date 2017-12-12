@@ -146,7 +146,7 @@ $aComponentsStepsTree = [
 ],[
 6,5,[
 [
-"name","If"
+"name","The If Statement"
 ],[
 "active",1
 ],[
@@ -164,7 +164,7 @@ $aComponentsStepsTree = [
 ],[
 35,6,[
 [
-"name","If Statement"
+"name","If"
 ],[
 "active",1
 ],[
@@ -218,7 +218,7 @@ $aComponentsStepsTree = [
 ],[
 16,5,[
 [
-"name","Switch"
+"name","The Switch Statement"
 ],[
 "active",1
 ],[
@@ -236,7 +236,7 @@ $aComponentsStepsTree = [
 ],[
 36,16,[
 [
-"name","Switch Statement"
+"name","Switch"
 ],[
 "active",1
 ],[
@@ -4931,6 +4931,42 @@ $aComponentsStepsTree = [
 "steptype",1
 ]
 ]
+],[
+281,228,[
+[
+"name","Classes"
+],[
+"active",1
+],[
+"code",""
+],[
+"interactionid",277
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
 ]
 ]
-$nComponentsStepsID = 280
+],[
+282,281,[
+[
+"name","StdBase Class"
+],[
+"active",1
+],[
+"code","stdbaseclass"
+],[
+"interactionid",278
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+]
+]
+]
+]
+$nComponentsStepsID = 282
