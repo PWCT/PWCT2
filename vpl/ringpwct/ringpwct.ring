@@ -91,6 +91,7 @@
 	load "input.ring"
 	load "insertitem.ring"
 	load "list2string.ring"
+	load "listclass.ring"
 	load "load.ring"
 	load "loop.ring"
 	load "lower.ring"
@@ -236,6 +237,7 @@
 	load "stdlib_times.ring"
 	load "stdlib_trim.ring"
 	load "string2list.ring"
+	load "stringclass.ring"
 	load "stringcompare.ring"
 	load "stringcopy.ring"
 	load "stringleft.ring"
@@ -344,6 +346,7 @@
 	aComponentsFilesList + (cComponentsPath + "input.ring")
 	aComponentsFilesList + (cComponentsPath + "insertitem.ring")
 	aComponentsFilesList + (cComponentsPath + "list2string.ring")
+	aComponentsFilesList + (cComponentsPath + "listclass.ring")
 	aComponentsFilesList + (cComponentsPath + "load.ring")
 	aComponentsFilesList + (cComponentsPath + "loop.ring")
 	aComponentsFilesList + (cComponentsPath + "lower.ring")
@@ -489,6 +492,7 @@
 	aComponentsFilesList + (cComponentsPath + "stdlib_times.ring")
 	aComponentsFilesList + (cComponentsPath + "stdlib_trim.ring")
 	aComponentsFilesList + (cComponentsPath + "string2list.ring")
+	aComponentsFilesList + (cComponentsPath + "stringclass.ring")
 	aComponentsFilesList + (cComponentsPath + "stringcompare.ring")
 	aComponentsFilesList + (cComponentsPath + "stringcopy.ring")
 	aComponentsFilesList + (cComponentsPath + "stringleft.ring")
