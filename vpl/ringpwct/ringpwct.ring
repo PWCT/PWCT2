@@ -136,6 +136,12 @@
 	load "package.ring"
 	load "prevfilename.ring"
 	load "print.ring"
+	load "qappclass.ring"
+	load "qhboxlayout.ring"
+	load "qlabelclass.ring"
+	load "qpushbuttonclass.ring"
+	load "qvboxlayoutclass.ring"
+	load "qwidgetclass.ring"
 	load "raise.ring"
 	load "randbytes.ring"
 	load "refmeta_addattribute.ring"
@@ -391,6 +397,12 @@
 	aComponentsFilesList + (cComponentsPath + "package.ring")
 	aComponentsFilesList + (cComponentsPath + "prevfilename.ring")
 	aComponentsFilesList + (cComponentsPath + "print.ring")
+	aComponentsFilesList + (cComponentsPath + "qappclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qhboxlayout.ring")
+	aComponentsFilesList + (cComponentsPath + "qlabelclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qpushbuttonclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qvboxlayoutclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qwidgetclass.ring")
 	aComponentsFilesList + (cComponentsPath + "raise.ring")
 	aComponentsFilesList + (cComponentsPath + "randbytes.ring")
 	aComponentsFilesList + (cComponentsPath + "refmeta_addattribute.ring")
