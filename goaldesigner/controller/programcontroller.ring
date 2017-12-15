@@ -16,6 +16,8 @@ Class ProgramController
 
 	lSetFocusToInput = False
 
+	oState = NULL
+
 	/*
 		Purpose : Debug
 		Parameters : Goal Designer Object
@@ -111,7 +113,11 @@ Class ProgramController
 			cCode += 'load "' + cFileName + '"'
 			write("runprogram.ring",cCode)
 		oGD.EnableCheckOutputOnMobile()
-		ring_state_main("runprogram.ring")
+		if isobject(oState) {
+			ring_state_delete(oState)
+		}
+		oState = ring_state_new()
+		ring_state_mainfile(oState,"runprogram.ring")
 		oGD.DisableCheckOutputOnMobile()
 		CheckOutputOnMobile(oGD)
 		remove("runprogram.ring")
