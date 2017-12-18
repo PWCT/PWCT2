@@ -148,7 +148,6 @@ class TreeControl from qTreeWidget
 	func GetObjByID id
 		nPos = std_find2(aTree,id,C_TREECONTROL_ID)
 		if nPos = 0 {
-			? "ID = " + id
 			std_raise("GetObjByID() - Can't find the object!")
 		}
 		return aTree[nPos][C_TREECONTROL_OBJECT]

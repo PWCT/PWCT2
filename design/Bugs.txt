@@ -7,9 +7,9 @@
 
 ===========================================================
 Status
-	* Bugs Count : 32
+	* Bugs Count : 33
 	* Fixed Bugs : 32
-	* UnFixed Bugs : 0
+	* UnFixed Bugs : 1
 ===========================================================
 (1)  Fixed : We created over 6 thouands steps, then using the search window
 after selecting an item in the search result list we get the next error
@@ -1031,3 +1031,23 @@ Solved in goaldesignerController.ring
 			Activate()
 
 =======================================================
+
+(33)
+
+use component (new object) - add braces
+modify - remove braces 
+modify - add braces 
+
+Line 285 GetObjByID() - Can't find the object! 
+In raise In function std_raise() in file goaldesigner/view/treecontrol.ring
+called from line 152  In method getobjbyid() in file goaldesigner/controller/goaldesignercontroller.ring
+called from line 2  In method selectstep() in file component/controller/componentcontrollerparent.ring
+called from line 99  In method selectstep() in file component/controller/componentcontrollerparent.ring
+called from line 36  In method newparentstep() in file braces.ring
+called from line 14  In method generateaction() in file component/controller/componentcontrollerparent.ring
+called from line 451  In method runcomponentfromcomponent() in file newobj.ring
+called from line 46  In method generateaction() in file component/controller/componentcontrollerparent.ring
+called from line 252  In method okaction() in file ring_qt.ring
+called from line 14  In qapp_exec In method exec() in file B:/pwct2/pwct.ring
+called from line 119  In function start_environment() in file B:/pwct2/pwct.ring
+called from line 77  in file B:/pwct2/pwct.ring 
