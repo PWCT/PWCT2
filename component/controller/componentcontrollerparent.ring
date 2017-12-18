@@ -34,10 +34,21 @@ Class ComponentControllerParent from WindowsControllerParent
 	func NewParentStep cStep
 		if nInteractionMode = C_INTERACTIONMODE_MODIFY {
 			nStepID = SelectStep()
-			EditStepName(cStep,nStepID)
-			return
+			if nStepID != NULL {
+				EditStepName(cStep,nStepID)
+				return
+			}
+			# In some cases nStepID will become NULL
+			# Like a component generate many steps 
+			# Then modify - avoid/delete some of these steps	
+			# Then modify - add/generate these steps again 
+			# Here nStepID = NULL and we are in nInteractionMode = C_INTERACTIONMODE_MODIFY {
 		}
-		SaveRoot()
+		# We do this check to avoid generating new IID while 
+		# We are modifying the component 
+		if nInteractionMode != C_INTERACTIONMODE_MODIFY {
+			SaveRoot()
+		}
 		nStepNumber++
 		AddStep(cStep,nIID,nStepNumber)
 		parent().oView.oStepsTree.SetCurrentItem(oItem,0)
@@ -51,10 +62,14 @@ Class ComponentControllerParent from WindowsControllerParent
 	func NewStep cStep
 		if nInteractionMode = C_INTERACTIONMODE_MODIFY {
 			nStepID = SelectStep()
-			EditStepName(cStep,nStepID)
-			return
+			if nStepID != NULL {
+				EditStepName(cStep,nStepID)
+				return
+			}
 		}
-		SaveRoot()
+		if nInteractionMode != C_INTERACTIONMODE_MODIFY {
+			SaveRoot()
+		}
 		nStepNumber++
 		AddStep(cStep,nIID,nStepNumber)
 

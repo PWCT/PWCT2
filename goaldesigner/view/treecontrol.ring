@@ -153,6 +153,14 @@ class TreeControl from qTreeWidget
 		return aTree[nPos][C_TREECONTROL_OBJECT]
 
 	/*
+		Check ID (if we have it or not)
+	*/
+	
+	func CheckID id
+		return std_find2(aTree,id,C_TREECONTROL_ID)
+
+
+	/*
 		The next method get the Tree Node ID using the Tree Node Object
 		Parameters :  Reference to The Node Object (Type : QTreeWidgetItem)
 		Output : The Node ID 
@@ -164,6 +172,13 @@ class TreeControl from qTreeWidget
 			std_raise("GetIDByObj() - Can't find the ID!")
 		}
 		return aTree[nPos][C_TREECONTROL_ID]
+
+	/*
+		Check Object 
+	*/
+	
+	func CheckObj oObj 
+		return std_find2(aTree,oObj.pObject,C_TREECONTROL_OBJECTPOINTER)
 
 	/*
 		The next method delete node using the Node ID

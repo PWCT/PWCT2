@@ -8,8 +8,8 @@
 ===========================================================
 Status
 	* Bugs Count : 33
-	* Fixed Bugs : 32
-	* UnFixed Bugs : 1
+	* Fixed Bugs : 33
+	* UnFixed Bugs : 0
 ===========================================================
 (1)  Fixed : We created over 6 thouands steps, then using the search window
 after selecting an item in the search result list we get the next error
@@ -1032,7 +1032,7 @@ Solved in goaldesignerController.ring
 
 =======================================================
 
-(33)
+(33) Fixed 
 
 use component (new object) - add braces
 modify - remove braces 
@@ -1051,3 +1051,28 @@ called from line 252  In method okaction() in file ring_qt.ring
 called from line 14  In qapp_exec In method exec() in file B:/pwct2/pwct.ring
 called from line 119  In function start_environment() in file B:/pwct2/pwct.ring
 called from line 77  in file B:/pwct2/pwct.ring 
+
+solved in componentControllerParent
+
+func NewParentStep cStep
+		if nInteractionMode = C_INTERACTIONMODE_MODIFY {
+			nStepID = SelectStep()
+			if nStepID != NULL {
+				EditStepName(cStep,nStepID)
+				return
+			}
+			# In some cases nStepID will become NULL
+			# Like a component generate many steps 
+			# Then modify - avoid/delete some of these steps	
+			# Then modify - add/generate these steps again 
+			# Here nStepID = NULL and we are in nInteractionMode = C_INTERACTIONMODE_MODIFY {
+		}
+		# We do this check to avoid generating new IID while 
+		# We are modifying the component 
+		if nInteractionMode != C_INTERACTIONMODE_MODIFY {
+			SaveRoot()
+		}
+		nStepNumber++
+		AddStep(cStep,nIID,nStepNumber)
+		parent().oView.oStepsTree.SetCurrentItem(oItem,0)
+

@@ -43,7 +43,17 @@ class newobjComponentController from ComponentControllerParent
 		}
 
 		if Variable(:braces) {
-			RunComponentFromComponent(new bracesComponentController)
+			//RunComponentFromComponent(new bracesComponentController)
+		? :here1
+		NewParentStep( T_CT_BRACES_ST_BRACESTART )
+		? :here2
+			SetStepCode( "{" )
+			AllowInteraction()
+			NewStep( T_CT_BRACES_ST_STARTHERE )
+			oStep = GetActiveStep()
+			NewStep( T_CT_BRACES_ST_BRACEEND )
+			SetStepCode( "}" )
+			SetActiveStep(oStep)
 		}
 
 		return True 
