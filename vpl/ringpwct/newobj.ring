@@ -11,11 +11,18 @@ class newobjComponentController from ComponentControllerParent
 
 	func GenerateAction 
 
+		cInit = ""
+		if Variable(:init) and Variable(:value3) = NULL and
+			 right(Variable(:value2),2) != "()" {
+			cInit = "()"
+		}
+
+
 		if Variable(:value) = NULL {
 		
 			if Variable(:value3) = NULL {
 				NewParentStep( T_CT_NEWOBJ_ST_NEWOBJ  + StepData(:value2) )
-				SetStepCode(  "new " + Variable(:value2) )
+				SetStepCode(  "new " + Variable(:value2) + cInit )
 			else
 				NewParentStep( T_CT_NEWOBJ_ST_NEWOBJ  + StepData(:value2)  + "(" + StepData(:value3) + ")" )
 				SetStepCode(  "new " + Variable(:value2) + "(" + Variable(:value3) + ")" )
@@ -25,7 +32,7 @@ class newobjComponentController from ComponentControllerParent
 		
 			if Variable(:value3) = NULL {
 				NewParentStep( StepData(:value) + " = " + T_CT_NEWOBJ_ST_NEWOBJ  + StepData(:value2) )
-				SetStepCode(  variable(:value) + " = new " + Variable(:value2) )
+				SetStepCode(  variable(:value) + " = new " + Variable(:value2) + cInit )
 			else
 				NewParentStep( StepData(:value) + " = " + T_CT_NEWOBJ_ST_NEWOBJ  + StepData(:value2)  +
 							 "(" + StepData(:value3) + ")" )
