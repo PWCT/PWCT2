@@ -434,9 +434,18 @@ Class ComponentControllerParent from WindowsControllerParent
 			lNoInteractionPage 	= this.lNoInteractionPage		
 			oStyle 			= this.oStyle
 			oHTMLFunctions 		= this.oHTMLFunctions
+
 			RingQt_nID		= this.RingQt_nID
 			RingQt_nParentID	= this.RingQt_nParentID
+	
+			oView			= this.oView
+
 		}
+
+	func RunComponentFromComponent oCom
+		UseComponentFromComponent(oCom)
+		oCom.GenerateAction()
+
 
 #=========================================================================
 #

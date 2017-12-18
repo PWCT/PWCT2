@@ -43,10 +43,7 @@ class newobjComponentController from ComponentControllerParent
 		}
 
 		if Variable(:braces) {
-			oCom = new bracesComponentController
-			oCom.oView = oView
-			UseComponentFromComponent(oCom)
-			oCom.GenerateAction()
+			RunComponentFromComponent(new bracesComponentController)
 		}
 
 		return True 
