@@ -1279,3 +1279,31 @@ class GoalDesignerController from WindowsControllerParent
 
 	func DisableCheckOutputOnMobile
 		oView.oCheckOutputOnMobileTimer.stop()
+
+
+	/*
+		Delete Extra steps in the interaction after we 
+		Modify it and change the interaction options 
+
+		We will delete steps in the same interaction
+		where the step number > nStepsCount
+	*/
+
+	func DeleteExtraSteps nIID,nStepsCount
+		aList = oModel.GetStepsInTimeRange(nIID-1,nIID,True)
+		# Take in mind group of steps in the same interaction
+			aList = Sort(aList,1)
+			aList = Reverse(aList)
+		for x = 1 to len(aList) {
+			item = aList[x]
+			nStepID 	= item[C_TREEMODEL_NODEID]
+			nStepNumber 	= item[C_TREEMODEL_CONTENT][:stepnumber]
+			if nStepNumber > nStepsCount {
+				oItem = oView.oStepsTree.GetObjByID(nStepID) 
+				oView.oStepsTree.DelByObj(oItem)
+				oItem.parent().takechild(oItem.parent().indexofchild(oItem))
+				# We don't call deletestep() to avoid deleting the interactaction
+					oModel.oStepsTreeModel.DeleteNode(nStepID)
+			}
+		}
+					

@@ -247,9 +247,13 @@ Class ComponentControllerParent from WindowsControllerParent
 		if CheckTimeProblem() { return } 
 		if nInteractionMode = C_INTERACTIONMODE_MODIFY  or (CheckInteract()  and RulesAllow()) {
 			if nInteractionMode != C_INTERACTIONMODE_MODIFY  {
-				parent().TimeMachineGotoPresent()				
+				parent().TimeMachineGotoPresent()
 			}
-			if GenerateAction() {
+			if GenerateAction() { 
+				# Delete extra steps after modify 
+					if nInteractionMode = C_INTERACTIONMODE_MODIFY {
+						parent().DeleteExtraSteps(nIID,nStepNumber)
+					}
 				parent().oView.oStepsTree.setFocus(0)
 				# To Correctly draw items (Avoid a Qt bug in drawing)
 					parent().oView.FixDrawing()
