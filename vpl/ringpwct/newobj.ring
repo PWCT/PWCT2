@@ -14,25 +14,32 @@ class newobjComponentController from ComponentControllerParent
 		if Variable(:value) = NULL {
 		
 			if Variable(:value3) = NULL {
-				NewStep( T_CT_NEWOBJ_ST_NEWOBJ  + StepData(:value2) )
+				NewParentStep( T_CT_NEWOBJ_ST_NEWOBJ  + StepData(:value2) )
 				SetStepCode(  "new " + Variable(:value2) )
 			else
-				NewStep( T_CT_NEWOBJ_ST_NEWOBJ  + StepData(:value2)  + "(" + StepData(:value3) + ")" )
+				NewParentStep( T_CT_NEWOBJ_ST_NEWOBJ  + StepData(:value2)  + "(" + StepData(:value3) + ")" )
 				SetStepCode(  "new " + Variable(:value2) + "(" + Variable(:value3) + ")" )
 			}
 		
 		else
 		
 			if Variable(:value3) = NULL {
-				NewStep( StepData(:value) + " = " + T_CT_NEWOBJ_ST_NEWOBJ  + StepData(:value2) )
+				NewParentStep( StepData(:value) + " = " + T_CT_NEWOBJ_ST_NEWOBJ  + StepData(:value2) )
 				SetStepCode(  variable(:value) + " = new " + Variable(:value2) )
 			else
-				NewStep( StepData(:value) + " = " + T_CT_NEWOBJ_ST_NEWOBJ  + StepData(:value2)  +
+				NewParentStep( StepData(:value) + " = " + T_CT_NEWOBJ_ST_NEWOBJ  + StepData(:value2)  +
 							 "(" + StepData(:value3) + ")" )
 				SetStepCode(  variable(:value) + " = new " + Variable(:value2) + "(" + Variable(:value3) + ")" )
 			}
 		
 		
+		}
+
+		if Variable(:braces) {
+			oCom = new bracesComponentController
+			oCom.oView = oView
+			UseComponentFromComponent(oCom)
+			oCom.GenerateAction()
 		}
 
 		return True 
@@ -43,4 +50,12 @@ class newobjComponentView from ComponentViewParent
 		TextBox( T_CT_NEWOBJ_IP_VALUE , :value)
 		TextBox( T_CT_NEWOBJ_IP_VALUE2 , :value2)
 		TextBox( T_CT_NEWOBJ_IP_VALUE3 , :value3)
+		# Add Braces 
+			CheckBox(T_CT_NEWOBJ_IP_BRACES,:braces) {
+				setcheckstate(2)
+			}
+		# Init() Method
+			CheckBox(T_CT_NEWOBJ_IP_INIT,:init) {
+				setcheckstate(2)
+			}
 		PageButtons()

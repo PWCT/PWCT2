@@ -8,24 +8,21 @@
 Class ComponentControllerParent from WindowsControllerParent
 
 	oItem  
-	oParent = NULL
+	oParent 		= NULL
 
-	nIID	= NULL		# Interaction ID
-	cComponent  = NULL	# Component Name
+	nIID			= NULL		# Interaction ID
+	cComponent  		= NULL		# Component Name
 
-	nInteractionMode		# New or Modify
+	nInteractionMode			# New or Modify
+	cVariablesValues 	= NULL		# Variables Values
 
-	cVariablesValues		# Variables Values
+	nStepNumber 		= 0 		# Step Number
+	lAllowInteraction	= False		# The step allow sub steps
 
-	nStepNumber = 0 	# Step Number
+	lNoInteractionPage 	= False		# No Interaction Page 
 
-	lAllowInteraction	= False	# The step allow sub steps
-
-
-	lNoInteractionPage = False	# No Interaction Page 
-
-	oStyle = new HTMLStyles
-	oHTMLFunctions = new HTMLFunctions
+	oStyle 			= new HTMLStyles
+	oHTMLFunctions 		= new HTMLFunctions
 
 
 	/*
@@ -418,6 +415,28 @@ Class ComponentControllerParent from WindowsControllerParent
 		Called After Selecting the component, Opening the window
 	*/
 	func AfterOpen
+
+
+	/*
+		To call component (GenerateAction) from another component 
+	*/
+	func UseComponentFromComponent oObject 
+		oObject 
+		{
+			oItem  			= this.oItem
+			oParent 		= this.oParent		
+			nIID			= this.nIID
+			cComponent  		= this.cComponent		
+			nInteractionMode	= this.nInteractionMode		
+			cVariablesValues	= this.cVariablesValues		
+			nStepNumber 		= this.nStepNumber		
+			lAllowInteraction 	= this.lAllowInteraction		
+			lNoInteractionPage 	= this.lNoInteractionPage		
+			oStyle 			= this.oStyle
+			oHTMLFunctions 		= this.oHTMLFunctions
+			RingQt_nID		= this.RingQt_nID
+			RingQt_nParentID	= this.RingQt_nParentID
+		}
 
 #=========================================================================
 #
