@@ -6,7 +6,7 @@
 */
 
 
-T_CT_LISTCLASS_IP_TITLE = "Class Component"
+T_CT_LISTCLASS_IP_TITLE = "List Class Component"
 T_CT_LISTCLASS_IP_VALUE = "Object"
 T_CT_LISTCLASS_IP_VALUE2 = "Method"
 T_CT_LISTCLASS_IP_VALUE2LIST = ["add(value)","delete(nIndex)","find","findincolumn(nColumn,Value)","first","init(String|List)","insert(nIndex,Value)","item(nIndex)","last","operator","print","println","reverse","set(nIndex,Value)","size","sort","swap","value"]
