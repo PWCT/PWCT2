@@ -137,7 +137,7 @@
 	load "prevfilename.ring"
 	load "print.ring"
 	load "qappclass.ring"
-	load "qhboxlayout.ring"
+	load "qhboxlayoutclass.ring"
 	load "qlabelclass.ring"
 	load "qpushbuttonclass.ring"
 	load "qvboxlayoutclass.ring"
@@ -398,7 +398,7 @@
 	aComponentsFilesList + (cComponentsPath + "prevfilename.ring")
 	aComponentsFilesList + (cComponentsPath + "print.ring")
 	aComponentsFilesList + (cComponentsPath + "qappclass.ring")
-	aComponentsFilesList + (cComponentsPath + "qhboxlayout.ring")
+	aComponentsFilesList + (cComponentsPath + "qhboxlayoutclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qlabelclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qpushbuttonclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qvboxlayoutclass.ring")

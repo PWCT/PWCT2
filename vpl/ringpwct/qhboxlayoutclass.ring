@@ -5,9 +5,9 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-class qhboxlayoutComponentController from ComponentControllerParent 
+class qhboxlayoutClassComponentController from ComponentControllerParent 
 
-	oView = new qhboxlayoutComponentView
+	oView = new qhboxlayoutClassComponentView
 
 	func GenerateAction 
 
@@ -87,7 +87,7 @@ class qhboxlayoutComponentController from ComponentControllerParent
 
 		return True 
 
-class qhboxlayoutComponentView from ComponentViewParent
+class qhboxlayoutClassComponentView from ComponentViewParent
 	 
 		Title( T_CT_QHBOXLAYOUT_IP_TITLE )	
 		TextBox( T_CT_QHBOXLAYOUT_IP_VALUE , :value)
