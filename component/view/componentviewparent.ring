@@ -18,15 +18,12 @@ class ComponentViewParent from WindowsViewParent
 	nButtonsFontSize	= 12
 
 	nWindowWidth		= 600
-	nWindowHeight		= 600
+	nWindowHeight		= 400
 
 	cssText    = "border:1px solid black;border-radius:7px;"
 
 	win = new qWidget() {
 		setLayoutDirection(T_LAYOUTDIRECTION)
-		oDesktop = new qDesktopwidget() 
-		move((oDesktop.width()-nWindowWidth)/2,(oDesktop.height()-nWindowHeight)/2)
-		resize(nWindowWidth,10)
 		setWindowTitle(T_IP_WINDOWTITLE) # "Interation Window"
 		setwindowflags(Qt_CustomizeWindowHint | Qt_WindowTitleHint | Qt_WindowStaysOnTopHint) 
 		oLayoutAll = new qVBoxLayout() 
@@ -36,7 +33,16 @@ class ComponentViewParent from WindowsViewParent
 		installeventfilter(oWinFilter)
 	}
 
+	oDesktop = new qDesktopwidget() 
+	CenterTheWindow()
 
+	/*
+		Center the window
+	*/
+	
+	func CenterTheWindow 
+		win.move((oDesktop.width()-nWindowWidth)/2,(oDesktop.height()-nWindowHeight)/2)
+		win.resize(nWindowWidth,10)
 
 	/*
 		Purpose : Display title in the Interaction Page
@@ -162,8 +168,7 @@ class ComponentViewParent from WindowsViewParent
 			}
 			setCurrentRow(0,3)
 			setminimumwidth(350)
-			setminimumheight(450)
-			
+			setminimumheight(250)			
 		}
 		oLayout = new qHBoxLayout() {
 			AddWidget(oLabel) AddWidget(oList)
@@ -201,7 +206,7 @@ class ComponentViewParent from WindowsViewParent
 			AddWidget(oBtnAgain) AddWidget(oBtnOk) AddWidget(oBtnClose)
 		}
 	 	oLayoutAll.AddLayout(oLayoutButtons)
-		oLayoutAll.insertStretch( -1, 1 )
+		//oLayoutAll.insertStretch( -1, 1 )
 
 	/*
 		Purpose : Get Variable Value from the Interaction page
