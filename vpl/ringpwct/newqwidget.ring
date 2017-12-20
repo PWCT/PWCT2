@@ -21,7 +21,7 @@ class newqwidgetComponentController from ComponentControllerParent
 		
 		cCode = ""
 		if Variable(:value2) != NULL {
-			cCode = "setWindowTitle(" + Variable(:value2) + ")" + nl
+			cCode = 'setWindowTitle("' + Variable(:value2) + '")' + nl
 		}
 		if Variable(:value3) != NULL {
 			nTop = Variable(:value3)
@@ -46,7 +46,7 @@ class newqwidgetComponentController from ComponentControllerParent
 		}
 		cCode += "resize("+nWidth+","+nHeight+")"+nl
 		if Variable(:value7) != NULL {
-			cCode += "setStyleSheet(" + Variable(:value7) + ")" + nl
+			cCode += 'setStyleSheet("' + Variable(:value7) + '")' + nl
 		}
 		
 		
