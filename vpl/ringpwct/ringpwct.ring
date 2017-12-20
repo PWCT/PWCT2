@@ -118,6 +118,7 @@
 	load "newlistbysize.ring"
 	load "newobj.ring"
 	load "newqapp.ring"
+	load "newqwidget.ring"
 	load "numbersandbytes.ring"
 	load "odbc_autocommit.ring"
 	load "odbc_close.ring"
@@ -380,6 +381,7 @@
 	aComponentsFilesList + (cComponentsPath + "newlistbysize.ring")
 	aComponentsFilesList + (cComponentsPath + "newobj.ring")
 	aComponentsFilesList + (cComponentsPath + "newqapp.ring")
+	aComponentsFilesList + (cComponentsPath + "newqwidget.ring")
 	aComponentsFilesList + (cComponentsPath + "numbersandbytes.ring")
 	aComponentsFilesList + (cComponentsPath + "odbc_autocommit.ring")
 	aComponentsFilesList + (cComponentsPath + "odbc_close.ring")
