@@ -19,7 +19,8 @@ class newqappComponentController from ComponentControllerParent
 			cOutCode = Variable(:value) + " = " 
 		}
 		NewParentStep( cOutStep +  T_CT_NEWQAPP_NEWQAPP  )
-			SetStepCode( cOutCode + " new qApp {")
+			SetStepCode( 'load "guilib.ring"' + nl +
+					cOutCode + " new qApp {")
 			AllowInteraction()
 			NewStep( T_CT_NEWQAPP_ST_STARTHERE )
 			oStep = GetActiveStep()
