@@ -144,27 +144,9 @@ $aComponentsStepsTree = [
 ]
 ]
 ],[
-286,285,[
-[
-"name","Application Class"
-],[
-"active",1
-],[
-"code","qappclass"
-],[
-"interactionid",282
-],[
-"visible",1
-],[
-"stepnumber",1
-],[
-"steptype",1
-]
-]
-],[
 287,285,[
 [
-"name","Controls"
+"name","Application"
 ],[
 "active",1
 ],[
@@ -180,15 +162,15 @@ $aComponentsStepsTree = [
 ]
 ]
 ],[
-293,287,[
+307,287,[
 [
-"name","Widget Class"
+"name","new GUI Application"
 ],[
 "active",1
 ],[
-"code","qwidgetclass"
+"code","newqapp"
 ],[
-"interactionid",289
+"interactionid",297
 ],[
 "visible",1
 ],[
@@ -198,7 +180,97 @@ $aComponentsStepsTree = [
 ]
 ]
 ],[
-289,287,[
+308,287,[
+[
+"name","new Window"
+],[
+"active",1
+],[
+"code","newqwidget"
+],[
+"interactionid",298
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+]
+]
+],[
+309,287,[
+[
+"name","new Label"
+],[
+"active",1
+],[
+"code","newqlabel"
+],[
+"interactionid",299
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+]
+]
+],[
+294,285,[
+[
+"name","Classes"
+],[
+"active",1
+],[
+"code",""
+],[
+"interactionid",290
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+]
+]
+],[
+295,294,[
+[
+"name","Application Class"
+],[
+"active",1
+],[
+"code","qappclass"
+],[
+"interactionid",291
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+]
+]
+],[
+297,294,[
+[
+"name","Window Class"
+],[
+"active",1
+],[
+"code","qwidgetclass"
+],[
+"interactionid",292
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+]
+]
+],[
+299,294,[
 [
 "name","Label Class"
 ],[
@@ -206,7 +278,7 @@ $aComponentsStepsTree = [
 ],[
 "code","qlabelclass"
 ],[
-"interactionid",285
+"interactionid",293
 ],[
 "visible",1
 ],[
@@ -216,7 +288,7 @@ $aComponentsStepsTree = [
 ]
 ]
 ],[
-290,287,[
+301,294,[
 [
 "name","Button Class"
 ],[
@@ -224,7 +296,7 @@ $aComponentsStepsTree = [
 ],[
 "code","qpushbuttonclass"
 ],[
-"interactionid",286
+"interactionid",294
 ],[
 "visible",1
 ],[
@@ -234,33 +306,15 @@ $aComponentsStepsTree = [
 ]
 ]
 ],[
-288,285,[
+303,294,[
 [
-"name","Layouts"
-],[
-"active",1
-],[
-"code",""
-],[
-"interactionid",284
-],[
-"visible",1
-],[
-"stepnumber",1
-],[
-"steptype",1
-]
-]
-],[
-291,288,[
-[
-"name","Vertical Box Layout Class"
+"name","Vertical Layout Class"
 ],[
 "active",1
 ],[
 "code","qvboxlayoutclass"
 ],[
-"interactionid",287
+"interactionid",295
 ],[
 "visible",1
 ],[
@@ -270,15 +324,15 @@ $aComponentsStepsTree = [
 ]
 ]
 ],[
-292,288,[
+305,294,[
 [
-"name","Horizontal Box Layout Class"
+"name","Horizontal Layout Class"
 ],[
 "active",1
 ],[
 "code","qhboxlayoutclass"
 ],[
-"interactionid",288
+"interactionid",296
 ],[
 "visible",1
 ],[
@@ -5167,4 +5221,4 @@ $aComponentsStepsTree = [
 ]
 ]
 ]
-$nComponentsStepsID = 293
+$nComponentsStepsID = 309
