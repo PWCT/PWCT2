@@ -52,12 +52,12 @@ class newqpushbuttonComponentController from ComponentControllerParent
 					cCode += 'setClickEvent(' + Variable(:value9) + ')' + nl
 				}
 				
-				NewParentStep(  cOutStep + T_CT_NEWQLABEL_ST_NEWQLABEL + " " + StepData(:value2)  )
+				NewParentStep(  cOutStep + T_CT_NEWQPUSHBUTTON_ST_NEWQPUSHBUTTON + " " + StepData(:value2)  )
 					SetStepCode( cOutCode + "new qPushButton("+Variable(:value8)+") { " + nl + cCode )
 					AllowInteraction()
-					NewStep( T_CT_NEWQLABEL_ST_STARTHERE )
+					NewStep( T_CT_NEWQPUSHBUTTON_ST_STARTHERE )
 					oStep = GetActiveStep()
-					NewStep( T_CT_NEWQLABEL_ST_END )
+					NewStep( T_CT_NEWQPUSHBUTTON_ST_END )
 						SetStepCode( "}" )
 					SetActiveStep(oStep)
 
