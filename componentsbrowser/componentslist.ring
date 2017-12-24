@@ -288,6 +288,24 @@ $aComponentsStepsTree = [
 ]
 ]
 ],[
+314,287,[
+[
+"name","new Treeview"
+],[
+"active",1
+],[
+"code","newqtreeview"
+],[
+"interactionid",304
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+]
+]
+],[
 294,285,[
 [
 "name","Classes"
@@ -5293,4 +5311,4 @@ $aComponentsStepsTree = [
 ]
 ]
 ]
-$nComponentsStepsID = 313
+$nComponentsStepsID = 314
