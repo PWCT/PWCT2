@@ -396,6 +396,24 @@ $aComponentsStepsTree = [
 ]
 ]
 ],[
+320,287,[
+[
+"name","new Spinbox"
+],[
+"active",1
+],[
+"code","newqspinbox"
+],[
+"interactionid",310
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+]
+]
+],[
 294,285,[
 [
 "name","Classes"
@@ -5401,4 +5419,4 @@ $aComponentsStepsTree = [
 ]
 ]
 ]
-$nComponentsStepsID = 319
+$nComponentsStepsID = 320
