@@ -124,6 +124,7 @@
 	load "newqpushbutton.ring"
 	load "newqtextedit.ring"
 	load "newqtreeview.ring"
+	load "newqtreevwidget.ring"
 	load "newqwidget.ring"
 	load "numbersandbytes.ring"
 	load "odbc_autocommit.ring"
@@ -393,6 +394,7 @@
 	aComponentsFilesList + (cComponentsPath + "newqpushbutton.ring")
 	aComponentsFilesList + (cComponentsPath + "newqtextedit.ring")
 	aComponentsFilesList + (cComponentsPath + "newqtreeview.ring")
+	aComponentsFilesList + (cComponentsPath + "newqtreevwidget.ring")
 	aComponentsFilesList + (cComponentsPath + "newqwidget.ring")
 	aComponentsFilesList + (cComponentsPath + "numbersandbytes.ring")
 	aComponentsFilesList + (cComponentsPath + "odbc_autocommit.ring")
