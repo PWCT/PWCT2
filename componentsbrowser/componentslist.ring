@@ -414,6 +414,24 @@ $aComponentsStepsTree = [
 ]
 ]
 ],[
+321,287,[
+[
+"name","new Slider"
+],[
+"active",1
+],[
+"code","newqslider"
+],[
+"interactionid",311
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+]
+]
+],[
 294,285,[
 [
 "name","Classes"
@@ -5419,4 +5437,4 @@ $aComponentsStepsTree = [
 ]
 ]
 ]
-$nComponentsStepsID = 320
+$nComponentsStepsID = 321

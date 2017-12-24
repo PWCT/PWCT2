@@ -124,6 +124,7 @@
 	load "newqlistwidget.ring"
 	load "newqprogressbar.ring"
 	load "newqpushbutton.ring"
+	load "newqslider.ring"
 	load "newqspinbox.ring"
 	load "newqtablewidget.ring"
 	load "newqtabwidget.ring"
@@ -399,6 +400,7 @@
 	aComponentsFilesList + (cComponentsPath + "newqlistwidget.ring")
 	aComponentsFilesList + (cComponentsPath + "newqprogressbar.ring")
 	aComponentsFilesList + (cComponentsPath + "newqpushbutton.ring")
+	aComponentsFilesList + (cComponentsPath + "newqslider.ring")
 	aComponentsFilesList + (cComponentsPath + "newqspinbox.ring")
 	aComponentsFilesList + (cComponentsPath + "newqtablewidget.ring")
 	aComponentsFilesList + (cComponentsPath + "newqtabwidget.ring")
