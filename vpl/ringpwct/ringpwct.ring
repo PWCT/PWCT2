@@ -118,6 +118,7 @@
 	load "newlistbysize.ring"
 	load "newobj.ring"
 	load "newqapp.ring"
+	load "newqcombobox.ring"
 	load "newqlabel.ring"
 	load "newqlineedit.ring"
 	load "newqlistwidget.ring"
@@ -388,6 +389,7 @@
 	aComponentsFilesList + (cComponentsPath + "newlistbysize.ring")
 	aComponentsFilesList + (cComponentsPath + "newobj.ring")
 	aComponentsFilesList + (cComponentsPath + "newqapp.ring")
+	aComponentsFilesList + (cComponentsPath + "newqcombobox.ring")
 	aComponentsFilesList + (cComponentsPath + "newqlabel.ring")
 	aComponentsFilesList + (cComponentsPath + "newqlineedit.ring")
 	aComponentsFilesList + (cComponentsPath + "newqlistwidget.ring")
