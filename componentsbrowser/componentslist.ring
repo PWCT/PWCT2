@@ -252,6 +252,24 @@ $aComponentsStepsTree = [
 ]
 ]
 ],[
+312,287,[
+[
+"name","new Textedit"
+],[
+"active",1
+],[
+"code","newqtextedit"
+],[
+"interactionid",302
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+]
+]
+],[
 294,285,[
 [
 "name","Classes"
@@ -5257,4 +5275,4 @@ $aComponentsStepsTree = [
 ]
 ]
 ]
-$nComponentsStepsID = 311
+$nComponentsStepsID = 312

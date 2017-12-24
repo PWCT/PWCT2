@@ -121,6 +121,7 @@
 	load "newqlabel.ring"
 	load "newqlineedit.ring"
 	load "newqpushbutton.ring"
+	load "newqtextedit.ring"
 	load "newqwidget.ring"
 	load "numbersandbytes.ring"
 	load "odbc_autocommit.ring"
@@ -387,6 +388,7 @@
 	aComponentsFilesList + (cComponentsPath + "newqlabel.ring")
 	aComponentsFilesList + (cComponentsPath + "newqlineedit.ring")
 	aComponentsFilesList + (cComponentsPath + "newqpushbutton.ring")
+	aComponentsFilesList + (cComponentsPath + "newqtextedit.ring")
 	aComponentsFilesList + (cComponentsPath + "newqwidget.ring")
 	aComponentsFilesList + (cComponentsPath + "numbersandbytes.ring")
 	aComponentsFilesList + (cComponentsPath + "odbc_autocommit.ring")
