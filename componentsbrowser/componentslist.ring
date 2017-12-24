@@ -450,6 +450,24 @@ $aComponentsStepsTree = [
 ]
 ]
 ],[
+323,287,[
+[
+"name","new Dial"
+],[
+"active",1
+],[
+"code","newqdial"
+],[
+"interactionid",313
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+]
+]
+],[
 294,285,[
 [
 "name","Classes"
@@ -5455,4 +5473,4 @@ $aComponentsStepsTree = [
 ]
 ]
 ]
-$nComponentsStepsID = 322
+$nComponentsStepsID = 323
