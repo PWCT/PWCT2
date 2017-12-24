@@ -378,6 +378,24 @@ $aComponentsStepsTree = [
 ]
 ]
 ],[
+319,287,[
+[
+"name","new Progressbar"
+],[
+"active",1
+],[
+"code","newqprogressbar"
+],[
+"interactionid",309
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+]
+]
+],[
 294,285,[
 [
 "name","Classes"
@@ -5383,4 +5401,4 @@ $aComponentsStepsTree = [
 ]
 ]
 ]
-$nComponentsStepsID = 318
+$nComponentsStepsID = 319
