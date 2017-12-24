@@ -342,6 +342,24 @@ $aComponentsStepsTree = [
 ]
 ]
 ],[
+317,287,[
+[
+"name","new Tab"
+],[
+"active",1
+],[
+"code","newqtabwidget"
+],[
+"interactionid",307
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+]
+]
+],[
 294,285,[
 [
 "name","Classes"
@@ -5347,4 +5365,4 @@ $aComponentsStepsTree = [
 ]
 ]
 ]
-$nComponentsStepsID = 316
+$nComponentsStepsID = 317
