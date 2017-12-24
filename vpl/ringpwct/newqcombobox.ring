@@ -51,7 +51,7 @@ class newqcomboboxComponentController from ComponentControllerParent
 						}
 						
 						
-						NewParentStep(  cOutStep + T_CT_NEWQCOMBOBOX_ST_NEWQCOMBOBOX + " " + StepData(:value2) )
+						NewParentStep(  cOutStep + T_CT_NEWQCOMBOBOX_ST_NEWQCOMBOBOX  )
 							SetStepCode( cOutCode + "new QComboBox("+Variable(:value8)+") { " + nl + cCode )
 							AllowInteraction()
 							NewStep( T_CT_NEWQCOMBOBOX_ST_STARTHERE )

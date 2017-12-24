@@ -47,7 +47,7 @@ class newqdialComponentController from ComponentControllerParent
 				}
 				
 				
-				NewParentStep(  cOutStep + T_CT_NEWQDIAL_ST_NEWQDIAL + " " + StepData(:value2) )
+				NewParentStep(  cOutStep + T_CT_NEWQDIAL_ST_NEWQDIAL )
 					SetStepCode( cOutCode + "new QDial("+Variable(:value7)+") { " + nl + cCode )
 					AllowInteraction()
 					NewStep( T_CT_NEWQDIAL_ST_STARTHERE )

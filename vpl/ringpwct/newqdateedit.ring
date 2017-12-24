@@ -47,7 +47,7 @@ class newqdateeditComponentController from ComponentControllerParent
 				}
 				
 				
-				NewParentStep(  cOutStep + T_CT_NEWQDATEEDIT_ST_NEWQDATEEDIT + " " + StepData(:value2) )
+				NewParentStep(  cOutStep + T_CT_NEWQDATEEDIT_ST_NEWQDATEEDIT  )
 					SetStepCode( cOutCode + "new QDateEdit("+Variable(:value7)+") { " + nl + cCode )
 					AllowInteraction()
 					NewStep( T_CT_NEWQDATEEDIT_ST_STARTHERE )

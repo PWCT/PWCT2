@@ -48,7 +48,7 @@ class newqtreevwidgetComponentController from ComponentControllerParent
 				}
 				
 				
-				NewParentStep(  cOutStep + T_CT_NEWQTREEWIDGET_ST_NEWQTREEWIDGET + " " + StepData(:value2) )
+				NewParentStep(  cOutStep + T_CT_NEWQTREEWIDGET_ST_NEWQTREEWIDGET )
 					SetStepCode( cOutCode + "new QTreeWidget("+Variable(:value7)+") { " + nl + cCode )
 					AllowInteraction()
 					NewStep( T_CT_NEWQTREEWIDGET_ST_STARTHERE )

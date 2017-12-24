@@ -47,7 +47,7 @@ class newqspinboxComponentController from ComponentControllerParent
 				}
 				
 				
-				NewParentStep(  cOutStep + T_CT_NEWQSPINBOX_ST_NEWQSPINBOX + " " + StepData(:value2) )
+				NewParentStep(  cOutStep + T_CT_NEWQSPINBOX_ST_NEWQSPINBOX )
 					SetStepCode( cOutCode + "new QSpinBox("+Variable(:value7)+") { " + nl + cCode )
 					AllowInteraction()
 					NewStep( T_CT_NEWQSPINBOX_ST_STARTHERE )

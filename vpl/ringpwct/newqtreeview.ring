@@ -48,7 +48,7 @@ class newqtreeviewComponentController from ComponentControllerParent
 				}
 				
 				
-				NewParentStep(  cOutStep + T_CT_NEWQTREEVIEW_ST_NEWQTREEVIEW + " " + StepData(:value2) )
+				NewParentStep(  cOutStep + T_CT_NEWQTREEVIEW_ST_NEWQTREEVIEW  )
 					SetStepCode( cOutCode + "new QTreeView("+Variable(:value7)+") { " + nl + cCode )
 					AllowInteraction()
 					NewStep( T_CT_NEWQTREEVIEW_ST_STARTHERE )

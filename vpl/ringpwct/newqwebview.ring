@@ -47,7 +47,7 @@ class newqwebviewComponentController from ComponentControllerParent
 				}
 				
 				
-				NewParentStep(  cOutStep + T_CT_NEWQWEBVIEW_ST_NEWQWEBVIEW + " " + StepData(:value2) )
+				NewParentStep(  cOutStep + T_CT_NEWQWEBVIEW_ST_NEWQWEBVIEW  )
 					SetStepCode( cOutCode + "new QWebView("+Variable(:value7)+") { " + nl + cCode )
 					AllowInteraction()
 					NewStep( T_CT_NEWQWEBVIEW_ST_STARTHERE )

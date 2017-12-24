@@ -47,7 +47,7 @@ class newqprogressbarComponentController from ComponentControllerParent
 				}
 				
 				
-				NewParentStep(  cOutStep + T_CT_NEWQPROGRESSBAR_ST_NEWQPROGRESSBAR + " " + StepData(:value2) )
+				NewParentStep(  cOutStep + T_CT_NEWQPROGRESSBAR_ST_NEWQPROGRESSBAR )
 					SetStepCode( cOutCode + "new QProgressBar("+Variable(:value7)+") { " + nl + cCode )
 					AllowInteraction()
 					NewStep( T_CT_NEWQPROGRESSBAR_ST_STARTHERE )

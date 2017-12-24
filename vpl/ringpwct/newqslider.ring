@@ -47,7 +47,7 @@ class newqsliderComponentController from ComponentControllerParent
 				}
 				
 				
-				NewParentStep(  cOutStep + T_CT_NEWQSLIDER_ST_NEWQSLIDER + " " + StepData(:value2) )
+				NewParentStep(  cOutStep + T_CT_NEWQSLIDER_ST_NEWQSLIDER  )
 					SetStepCode( cOutCode + "new QSlider("+Variable(:value7)+") { " + nl + cCode )
 					AllowInteraction()
 					NewStep( T_CT_NEWQSLIDER_ST_STARTHERE )

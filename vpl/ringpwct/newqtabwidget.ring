@@ -47,7 +47,7 @@ class newqtabwidgetComponentController from ComponentControllerParent
 				}
 				
 				
-				NewParentStep(  cOutStep + T_CT_NEWQTABWIDGET_ST_NEWQTABWIDGET + " " + StepData(:value2) )
+				NewParentStep(  cOutStep + T_CT_NEWQTABWIDGET_ST_NEWQTABWIDGET  )
 					SetStepCode( cOutCode + "new QTabWidget("+Variable(:value7)+") { " + nl + cCode )
 					AllowInteraction()
 					NewStep( T_CT_NEWQTABWIDGET_ST_STARTHERE )

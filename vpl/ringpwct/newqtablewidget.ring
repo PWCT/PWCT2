@@ -47,7 +47,7 @@ class newqtablewidgetComponentController from ComponentControllerParent
 				}
 				
 				
-				NewParentStep(  cOutStep + T_CT_NEWQTABLEWIDGET_ST_NEWQTABLEWIDGET + " " + StepData(:value2) )
+				NewParentStep(  cOutStep + T_CT_NEWQTABLEWIDGET_ST_NEWQTABLEWIDGET )
 					SetStepCode( cOutCode + "new QTableWidget("+Variable(:value7)+") { " + nl + cCode )
 					AllowInteraction()
 					NewStep( T_CT_NEWQTABLEWIDGET_ST_STARTHERE )
