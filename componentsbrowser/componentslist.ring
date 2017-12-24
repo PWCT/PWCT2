@@ -504,6 +504,24 @@ $aComponentsStepsTree = [
 ]
 ]
 ],[
+326,287,[
+[
+"name","new Radiobutton"
+],[
+"active",1
+],[
+"code","newqradiobutton"
+],[
+"interactionid",316
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+]
+]
+],[
 294,285,[
 [
 "name","Classes"
@@ -5509,4 +5527,4 @@ $aComponentsStepsTree = [
 ]
 ]
 ]
-$nComponentsStepsID = 325
+$nComponentsStepsID = 326
