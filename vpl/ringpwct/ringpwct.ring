@@ -123,6 +123,7 @@
 	load "newqlineedit.ring"
 	load "newqlistwidget.ring"
 	load "newqpushbutton.ring"
+	load "newqtablewidget.ring"
 	load "newqtabwidget.ring"
 	load "newqtextedit.ring"
 	load "newqtreeview.ring"
@@ -395,6 +396,7 @@
 	aComponentsFilesList + (cComponentsPath + "newqlineedit.ring")
 	aComponentsFilesList + (cComponentsPath + "newqlistwidget.ring")
 	aComponentsFilesList + (cComponentsPath + "newqpushbutton.ring")
+	aComponentsFilesList + (cComponentsPath + "newqtablewidget.ring")
 	aComponentsFilesList + (cComponentsPath + "newqtabwidget.ring")
 	aComponentsFilesList + (cComponentsPath + "newqtextedit.ring")
 	aComponentsFilesList + (cComponentsPath + "newqtreeview.ring")
