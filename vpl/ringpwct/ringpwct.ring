@@ -115,6 +115,7 @@
 	load "nestedfunc.ring"
 	load "newemptylist.ring"
 	load "newhyperlink.ring"
+	load "newimage.ring"
 	load "newlistbyrange.ring"
 	load "newlistbysize.ring"
 	load "newmediaplayer.ring"
@@ -401,6 +402,7 @@
 	aComponentsFilesList + (cComponentsPath + "nestedfunc.ring")
 	aComponentsFilesList + (cComponentsPath + "newemptylist.ring")
 	aComponentsFilesList + (cComponentsPath + "newhyperlink.ring")
+	aComponentsFilesList + (cComponentsPath + "newimage.ring")
 	aComponentsFilesList + (cComponentsPath + "newlistbyrange.ring")
 	aComponentsFilesList + (cComponentsPath + "newlistbysize.ring")
 	aComponentsFilesList + (cComponentsPath + "newmediaplayer.ring")
