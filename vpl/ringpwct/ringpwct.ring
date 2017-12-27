@@ -125,6 +125,7 @@
 	load "newqcombobox.ring"
 	load "newqdateedit.ring"
 	load "newqdial.ring"
+	load "newqframe.ring"
 	load "newqlabel.ring"
 	load "newqlineedit.ring"
 	load "newqlistwidget.ring"
@@ -410,6 +411,7 @@
 	aComponentsFilesList + (cComponentsPath + "newqcombobox.ring")
 	aComponentsFilesList + (cComponentsPath + "newqdateedit.ring")
 	aComponentsFilesList + (cComponentsPath + "newqdial.ring")
+	aComponentsFilesList + (cComponentsPath + "newqframe.ring")
 	aComponentsFilesList + (cComponentsPath + "newqlabel.ring")
 	aComponentsFilesList + (cComponentsPath + "newqlineedit.ring")
 	aComponentsFilesList + (cComponentsPath + "newqlistwidget.ring")

@@ -594,6 +594,24 @@ $aComponentsStepsTree = [
 ]
 ]
 ],[
+331,287,[
+[
+"name","new Frame"
+],[
+"active",1
+],[
+"code","newqframe"
+],[
+"interactionid",321
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+]
+]
+],[
 294,285,[
 [
 "name","Classes"
@@ -5599,4 +5617,4 @@ $aComponentsStepsTree = [
 ]
 ]
 ]
-$nComponentsStepsID = 330
+$nComponentsStepsID = 331
