@@ -648,6 +648,24 @@ $aComponentsStepsTree = [
 ]
 ]
 ],[
+334,287,[
+[
+"name","new Menubar"
+],[
+"active",1
+],[
+"code","newmenubar"
+],[
+"interactionid",324
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+]
+]
+],[
 294,285,[
 [
 "name","Classes"
@@ -5653,4 +5671,4 @@ $aComponentsStepsTree = [
 ]
 ]
 ]
-$nComponentsStepsID = 333
+$nComponentsStepsID = 334
