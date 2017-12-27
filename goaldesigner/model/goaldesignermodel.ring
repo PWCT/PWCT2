@@ -181,7 +181,7 @@ class GoalDesignerModel
 				nTabs = Copy(Char(9),len(aParent)-nBackTabs) 
 			if x[C_TREEMODEL_CONTENT][:visible] and x[C_TREEMODEL_CONTENT][:active] {
 				if trim(x[C_TREEMODEL_CONTENT][:code]) != NULL {					
-					cCode += nTabs + x[C_TREEMODEL_CONTENT][:code] + windowsnl()
+					cCode += nTabs + substr(x[C_TREEMODEL_CONTENT][:code],nl,Windowsnl()+nTabs) + windowsnl()
 				}
 			}
 			if x[C_TREEMODEL_CONTENT][:visible] {
