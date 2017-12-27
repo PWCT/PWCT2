@@ -16,6 +16,9 @@ class newseparatorComponentController from ComponentControllerParent
 
 		return True 
 
+	func AfterOpen 
+		OkAction()
+
 class newseparatorComponentView from ComponentViewParent
 	 
 		Title( T_CT_NEWSEPARATOR_IP_TITLE )	
