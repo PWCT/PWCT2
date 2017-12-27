@@ -1,11 +1,11 @@
-/*
+﻿/*
 **	Project : Programming Without Coding Technology (PWCT) Version 2.0
 **	File Purpose :  newqlistwidget Component
 **	Date : 2017.12.24
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-T_CT_NEWQLISTWIDGET_IP_TITLE = "مكون مربع تحرير"
+T_CT_NEWQLISTWIDGET_IP_TITLE = "مكون مربع قائمة"
 T_CT_NEWQLISTWIDGET_IP_VALUE = "اسم الكائن : "
 T_CT_NEWQLISTWIDGET_IP_VALUE2 = "العناصر :"
 T_CT_NEWQLISTWIDGET_IP_VALUE3 = "السطر :"
