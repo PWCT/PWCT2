@@ -117,6 +117,7 @@
 	load "newhyperlink.ring"
 	load "newlistbyrange.ring"
 	load "newlistbysize.ring"
+	load "newmediaplayer.ring"
 	load "newobj.ring"
 	load "newqapp.ring"
 	load "newqbuttongroup.ring"
@@ -401,6 +402,7 @@
 	aComponentsFilesList + (cComponentsPath + "newhyperlink.ring")
 	aComponentsFilesList + (cComponentsPath + "newlistbyrange.ring")
 	aComponentsFilesList + (cComponentsPath + "newlistbysize.ring")
+	aComponentsFilesList + (cComponentsPath + "newmediaplayer.ring")
 	aComponentsFilesList + (cComponentsPath + "newobj.ring")
 	aComponentsFilesList + (cComponentsPath + "newqapp.ring")
 	aComponentsFilesList + (cComponentsPath + "newqbuttongroup.ring")

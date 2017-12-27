@@ -576,6 +576,24 @@ $aComponentsStepsTree = [
 ]
 ]
 ],[
+330,287,[
+[
+"name","new Media Player"
+],[
+"active",1
+],[
+"code","newmediaplayer"
+],[
+"interactionid",320
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+]
+]
+],[
 294,285,[
 [
 "name","Classes"
@@ -5581,4 +5599,4 @@ $aComponentsStepsTree = [
 ]
 ]
 ]
-$nComponentsStepsID = 329
+$nComponentsStepsID = 330
