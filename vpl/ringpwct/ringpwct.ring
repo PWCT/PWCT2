@@ -114,6 +114,7 @@
 	load "mysql_rollback.ring"
 	load "nestedfunc.ring"
 	load "newemptylist.ring"
+	load "newhyperlink.ring"
 	load "newlistbyrange.ring"
 	load "newlistbysize.ring"
 	load "newobj.ring"
@@ -396,6 +397,7 @@
 	aComponentsFilesList + (cComponentsPath + "mysql_rollback.ring")
 	aComponentsFilesList + (cComponentsPath + "nestedfunc.ring")
 	aComponentsFilesList + (cComponentsPath + "newemptylist.ring")
+	aComponentsFilesList + (cComponentsPath + "newhyperlink.ring")
 	aComponentsFilesList + (cComponentsPath + "newlistbyrange.ring")
 	aComponentsFilesList + (cComponentsPath + "newlistbysize.ring")
 	aComponentsFilesList + (cComponentsPath + "newobj.ring")
