@@ -254,7 +254,7 @@ $aComponentsStepsTree = [
 ],[
 312,287,[
 [
-"name","new Textedit"
+"name","new Editbox"
 ],[
 "active",1
 ],[
@@ -621,6 +621,24 @@ $aComponentsStepsTree = [
 "code","newimage"
 ],[
 "interactionid",322
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+]
+]
+],[
+333,287,[
+[
+"name","new Timer"
+],[
+"active",1
+],[
+"code","newtimer"
+],[
+"interactionid",323
 ],[
 "visible",1
 ],[
@@ -5635,4 +5653,4 @@ $aComponentsStepsTree = [
 ]
 ]
 ]
-$nComponentsStepsID = 332
+$nComponentsStepsID = 333
