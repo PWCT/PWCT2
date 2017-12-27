@@ -558,6 +558,24 @@ $aComponentsStepsTree = [
 ]
 ]
 ],[
+329,287,[
+[
+"name","new Video "
+],[
+"active",1
+],[
+"code","newvideowidget"
+],[
+"interactionid",319
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+]
+]
+],[
 294,285,[
 [
 "name","Classes"
@@ -5563,4 +5581,4 @@ $aComponentsStepsTree = [
 ]
 ]
 ]
-$nComponentsStepsID = 328
+$nComponentsStepsID = 329

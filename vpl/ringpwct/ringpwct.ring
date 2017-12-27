@@ -139,6 +139,7 @@
 	load "newqtreevwidget.ring"
 	load "newqwebview.ring"
 	load "newqwidget.ring"
+	load "newvideowidget.ring"
 	load "numbersandbytes.ring"
 	load "odbc_autocommit.ring"
 	load "odbc_close.ring"
@@ -422,6 +423,7 @@
 	aComponentsFilesList + (cComponentsPath + "newqtreevwidget.ring")
 	aComponentsFilesList + (cComponentsPath + "newqwebview.ring")
 	aComponentsFilesList + (cComponentsPath + "newqwidget.ring")
+	aComponentsFilesList + (cComponentsPath + "newvideowidget.ring")
 	aComponentsFilesList + (cComponentsPath + "numbersandbytes.ring")
 	aComponentsFilesList + (cComponentsPath + "odbc_autocommit.ring")
 	aComponentsFilesList + (cComponentsPath + "odbc_close.ring")
