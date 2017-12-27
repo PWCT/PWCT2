@@ -113,6 +113,7 @@
 	load "mysql_result2.ring"
 	load "mysql_rollback.ring"
 	load "nestedfunc.ring"
+	load "newaction.ring"
 	load "newemptylist.ring"
 	load "newhyperlink.ring"
 	load "newimage.ring"
@@ -403,6 +404,7 @@
 	aComponentsFilesList + (cComponentsPath + "mysql_result2.ring")
 	aComponentsFilesList + (cComponentsPath + "mysql_rollback.ring")
 	aComponentsFilesList + (cComponentsPath + "nestedfunc.ring")
+	aComponentsFilesList + (cComponentsPath + "newaction.ring")
 	aComponentsFilesList + (cComponentsPath + "newemptylist.ring")
 	aComponentsFilesList + (cComponentsPath + "newhyperlink.ring")
 	aComponentsFilesList + (cComponentsPath + "newimage.ring")
