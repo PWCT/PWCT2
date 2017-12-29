@@ -201,6 +201,7 @@ class GoalDesignerController from WindowsControllerParent
 		}
 		if lCheck  {
 			AddStep(oInput.textvalue())
+			oView.fixDrawing()
 		}
 	
 	/*
