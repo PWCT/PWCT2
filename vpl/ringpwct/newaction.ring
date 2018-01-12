@@ -25,12 +25,12 @@ class newactionComponentController from ComponentControllerParent
 		if Variable(:value4) != NULL {
 			cCode += char(9)+"setClickEvent(" + Variable(:value4) + ")" + nl
 		}
-		NewParentStep(  cOutStep + T_CT_NEWQACTION_ST_NEWQACTION  )
+		NewParentStep(  cOutStep + T_CT_NEWACTION_ST_NEWACTION  )
 		SetStepCode( cOutCode + "new QAction("+Variable(:value2)+")" + " { " + nl + cCode + nl )
 			AllowInteraction()
-			NewStep( T_CT_NEWQACTION_ST_STARTHERE )
+			NewStep( T_CT_NEWACTION_ST_STARTHERE )
 			oStep = GetActiveStep()
-			NewStep( T_CT_NEWQACTION_ST_END )
+			NewStep( T_CT_NEWACTION_ST_END )
 			SetStepCode( "}" + nl + "addAction(" + Variable(:value) + ")" + nl)
 			SetActiveStep(oStep)
 

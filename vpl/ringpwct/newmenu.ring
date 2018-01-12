@@ -18,12 +18,12 @@ class newmenuComponentController from ComponentControllerParent
 			cOutStep =  StepData(:value) + " = "
 			cOutCode = Variable(:value) + " = " 
 		}
-		NewParentStep(  cOutStep + T_CT_NEWQMENU_ST_NEWQMENUBAR  )
+		NewParentStep(  cOutStep + T_CT_NEWMENU_ST_NEWMENU  )
 		SetStepCode( cOutCode + "addMenu('"+Variable(:value2)+"')" + nl + Variable(:value) + " { " + nl  )
 			AllowInteraction()
-			NewStep( T_CT_NEWQMENU_ST_STARTHERE )
+			NewStep( T_CT_NEWMENU_ST_STARTHERE )
 			oStep = GetActiveStep()
-			NewStep( T_CT_NEWQMENU_ST_END )
+			NewStep( T_CT_NEWMENU_ST_END )
 			SetStepCode( "}" )
 			SetActiveStep(oStep)
 
