@@ -146,6 +146,7 @@
 	load "newqwebview.ring"
 	load "newqwidget.ring"
 	load "newseparator.ring"
+	load "newstatusbar.ring"
 	load "newtimer.ring"
 	load "newtoolbar.ring"
 	load "newvideowidget.ring"
@@ -439,6 +440,7 @@
 	aComponentsFilesList + (cComponentsPath + "newqwebview.ring")
 	aComponentsFilesList + (cComponentsPath + "newqwidget.ring")
 	aComponentsFilesList + (cComponentsPath + "newseparator.ring")
+	aComponentsFilesList + (cComponentsPath + "newstatusbar.ring")
 	aComponentsFilesList + (cComponentsPath + "newtimer.ring")
 	aComponentsFilesList + (cComponentsPath + "newtoolbar.ring")
 	aComponentsFilesList + (cComponentsPath + "newvideowidget.ring")
