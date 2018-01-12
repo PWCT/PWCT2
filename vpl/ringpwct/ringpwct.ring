@@ -147,6 +147,7 @@
 	load "newqwidget.ring"
 	load "newseparator.ring"
 	load "newtimer.ring"
+	load "newtoolbar.ring"
 	load "newvideowidget.ring"
 	load "numbersandbytes.ring"
 	load "odbc_autocommit.ring"
@@ -439,6 +440,7 @@
 	aComponentsFilesList + (cComponentsPath + "newqwidget.ring")
 	aComponentsFilesList + (cComponentsPath + "newseparator.ring")
 	aComponentsFilesList + (cComponentsPath + "newtimer.ring")
+	aComponentsFilesList + (cComponentsPath + "newtoolbar.ring")
 	aComponentsFilesList + (cComponentsPath + "newvideowidget.ring")
 	aComponentsFilesList + (cComponentsPath + "numbersandbytes.ring")
 	aComponentsFilesList + (cComponentsPath + "odbc_autocommit.ring")
