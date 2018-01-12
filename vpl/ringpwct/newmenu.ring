@@ -19,7 +19,7 @@ class newmenuComponentController from ComponentControllerParent
 			cOutCode = Variable(:value) + " = " 
 		}
 		NewParentStep(  cOutStep + T_CT_NEWMENU_ST_NEWMENU  )
-		SetStepCode( cOutCode + "addMenu('"+Variable(:value2)+"')" + nl + Variable(:value) + " { " + nl  )
+		SetStepCode( cOutCode + "addMenu("+'"'+Variable(:value2)+'"'+")" + nl + Variable(:value) + " { " + nl  )
 			AllowInteraction()
 			NewStep( T_CT_NEWMENU_ST_STARTHERE )
 			oStep = GetActiveStep()

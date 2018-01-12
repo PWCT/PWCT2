@@ -20,7 +20,7 @@ class newactionComponentController from ComponentControllerParent
 		}
 		cCode = ""
 		if Variable(:value3) != NULL {
-			cCode += char(9)+"setText('" + Variable(:value3) + "')" + nl
+			cCode += char(9)+"setText(" + '"' + Variable(:value3) + '"' + ")" + nl
 		}
 		if Variable(:value4) != NULL {
 			cCode += char(9)+"setClickEvent(" + Variable(:value4) + ")" + nl
