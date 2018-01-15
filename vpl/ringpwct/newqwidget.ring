@@ -51,7 +51,7 @@ class newqwidgetComponentController from ComponentControllerParent
 		
 		
 		NewParentStep(  cOutStep + T_CT_NEWQWIDGET_ST_NEWQWIDGET + " " + StepData(:value2) )
-			SetStepCode( cOutCode + "new qWidget() { " + nl + cCode )
+			SetStepCode( cOutCode + "new qMainWindow() { " + nl + cCode )
 			AllowInteraction()
 			NewStep( T_CT_NEWQWIDGET_ST_STARTHERE )
 			oStep = GetActiveStep()
