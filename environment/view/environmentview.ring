@@ -15,7 +15,7 @@ class EnvironmentView from WindowsViewParent
 
 	nGoalDesignerWindowID
 
-	lDockForComponentsBrowser = False
+	lDockForComponentsBrowser = True
 
 	# Create the window and the Controls
 		win = new qMainWindow()

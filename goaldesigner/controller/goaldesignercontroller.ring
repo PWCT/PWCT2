@@ -62,6 +62,7 @@ class GoalDesignerController from WindowsControllerParent
 			oView.win.ActivateWindow()
 			oView.oStepsTree.SetFocus(0)
 
+
 	/*
 		Purpose : Add Step
 		Parameters : Step Name
@@ -798,12 +799,23 @@ class GoalDesignerController from WindowsControllerParent
 	*/
 
 	func LoadComponentsBrowserComponents
+		if parent().isdockForComponentsBrowser() and parent().lDockForComponentsBrowserIsVisible = True {
+			nComponentsBrowserWindowID = parent().nComponentsBrowserWindowID 
+			ComponentsBrowserWindow().setParentObject(self)
+			return 
+		}
 		if lIsComponentsBrowserOpened = False {
 			lIsComponentsBrowserOpened = True
 			Open_WindowNoShow(:ComponentsBrowserController)
 			Last_Window().AddComponents()
 			Last_Window().setParentObject(self)
 			nComponentsBrowserWindowID = Last_WindowID()
+		}
+		parent() {
+			if isdockForComponentsBrowser() and lDockForComponentsBrowserIsVisible = False {
+				lDockForComponentsBrowserIsVisible = True
+				nComponentsBrowserWindowID = Last_WindowID()
+			}
 		}
 
 	/*

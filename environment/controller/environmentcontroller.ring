@@ -16,6 +16,9 @@ class EnvironmentController from WindowsControllerParent
 	lShowGoalDesigner = True
 	lShowOutputWindow = True
 
+	lDockForComponentsBrowserIsVisible = False
+	nComponentsBrowserWindowID
+
 	lTabifyOutputAndFiles = 0
 
 	if PWCTIsMobile(:OpenFilesInNewTabs) {
@@ -24,7 +27,12 @@ class EnvironmentController from WindowsControllerParent
 		lOpenFilesInNewTabs = True
 	}
 
-	# [Dockable Window Object, Visual Source File Name, Steps Tree Object]
+	/* 
+		[Dockable Window Object, 
+		 Visual Source File Name, 
+		 Steps Tree Object, 
+		 Goal Designer Object   ]
+	*/
 		aActiveFiles = []	
 		lActiveGoalDesignerChanged = True
 
@@ -44,6 +52,7 @@ class EnvironmentController from WindowsControllerParent
 		# Add the Default file (NoName) to the Active Files List
 			aActiveFiles + [oView.oDockGoalDesigner,parent().oVisualSourceFile.cFileName]
 			aActiveFiles[len(aActiveFiles)] + parent().oView.oStepsTree
+			aActiveFiles[len(aActiveFiles)] + parent()
 		# Goal Designer - Default file 
 			oView.oDockGoalDesigner.setWindowTitle(
 				T_ENV_DOCK_GOALDESIGNER + " : " + parent().oVisualSourceFile.cFileName)
@@ -161,6 +170,7 @@ class EnvironmentController from WindowsControllerParent
 					aActiveFiles[nPos][1].raise()
 					aActiveFiles[nPos][3].setfocus(0)
 					oView.tree1.setfocus(0)
+					SetParentForComponentsBrowser(aActiveFiles[nPos][4])
 					return
 				}
 			}
@@ -184,6 +194,7 @@ class EnvironmentController from WindowsControllerParent
 		}
 		# Add the Steps Tree to the aActiveFiles list 
 			aActiveFiles[len(aActiveFiles)] + parent().oView.oStepsTree
+			aActiveFiles[len(aActiveFiles)] + parent()
 		parent().oVisualSourceFile.cFileName = cFileName
 		parent().OpenFileAction2()
 		# Set focus to the Steps Tree to be used when we Run the application
@@ -217,6 +228,7 @@ class EnvironmentController from WindowsControllerParent
 		for aItem in aActiveFiles {
 			if not aItem[1].visibleregion().isEmpty() {
 				aItem[3].setfocus(0)
+				SetParentForComponentsBrowser(aItem[4])
 				return
 			}
 		}
@@ -492,3 +504,11 @@ class EnvironmentController from WindowsControllerParent
 
 	func IsDockForComponentsBrowser
 		return oView.lDockForComponentsBrowser
+
+
+	func SetParentForComponentsBrowser oParent
+		# if we are using dockable window for the components browser 
+		# Set the parent for the components browser window 
+		if lDockForComponentsBrowserIsVisible {
+			parent().componentsBrowserWindow().setParentObject(oParent)
+		}
