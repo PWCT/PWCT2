@@ -8,12 +8,14 @@
 class EnvironmentView from WindowsViewParent
 
 	# Attributes
-	Tree1   oFile  oDockFilesManager oDockGoalDesigner  
+	Tree1   oFile  oDockFilesManager oDockGoalDesigner oDockComponentsBrowser
 
 	# Process Window
 	oDockOutputWindow	oProcess oProcessText   oProcessEditbox
 
 	nGoalDesignerWindowID
+
+	lDockForComponentsBrowser = False
 
 	# Create the window and the Controls
 		win = new qMainWindow()
@@ -31,6 +33,9 @@ class EnvironmentView from WindowsViewParent
 				self.CreateOutputWindow(win)
 				oDockGoalDesigner = self.CreateGoalDesigner(win)
 				self.CreateFilesManager(win)
+			}
+			if lDockForComponentsBrowser {
+				self.CreateComponentsBrowser(win)
 			}
 			setwinicon(win,AppFile("images/pwct.png"))
 			showmaximized()	
@@ -464,3 +469,17 @@ class EnvironmentView from WindowsViewParent
 			setwindowtitle(T_ENV_OW_TITLE)  # "Output Window"
 		}
 		win.adddockwidget(1,oDockOutputWindow,1)
+
+	/*
+		Purpose : Create the Components Browser Window 
+		Parameters : The Window Object 
+		Output : None
+	*/
+
+	func createComponentsBrowser win
+		oDockComponentsBrowser = new qDockWidget(win,0) {
+			setMinimumWidth(300)
+			setLayoutDirection(C_TRANSLATION_ENGLISH)
+			setwindowtitle(T_ENV_DOCK_COMPONENTSBROWSER) 
+		}
+		win.adddockwidget(1,oDockComponentsBrowser,1)

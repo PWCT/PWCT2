@@ -17,6 +17,7 @@
 	T_ENV_TITLE = "Programming Without Coding Technology"
 	T_ENV_DOCK_PROJECTFILES = "Project Files"
 	T_ENV_DOCK_GOALDESIGNER = "Goal Designer"
+	T_ENV_DOCK_COMPONENTSBROWSER = "Components Browser"
 	T_ENV_STATUSBAR_READY = "Ready!"
 	T_ENV_MENU_FILE = "File"
 	T_ENV_MENU_EDIT = "Edit"
@@ -54,6 +55,7 @@
 	T_ENV_OW_TITLE = "Output Window"
 	T_ENV_OW_SEND = "Send"
 	T_ENV_OW_INPUT = "Input :"
+
 
 # Goal Designer Window
 

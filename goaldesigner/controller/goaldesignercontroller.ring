@@ -776,13 +776,19 @@ class GoalDesignerController from WindowsControllerParent
 			ShowMessage(T_GD_BM_SORRY,T_GD_BM_CANTINTERACT)
 			return False
 		}
-		if lComponentsBrowserInGoalDesigner {
-			oView.layoutCB.AddWidget(ComponentsBrowserWindow().oView.win)
+		if parent().IsDockForComponentsBrowser() {
+			parent().oView.oDockComponentsBrowser.setWidget(ComponentsBrowserWindow().oView.win)
 			ComponentsBrowserWindow().Start()
-			oView.widgetCB.show()
-		else
-			ComponentsBrowserWindow().Start()
+		else 
+			if lComponentsBrowserInGoalDesigner {
+				oView.layoutCB.AddWidget(ComponentsBrowserWindow().oView.win)
+				ComponentsBrowserWindow().Start()
+				oView.widgetCB.show()
+			else
+				ComponentsBrowserWindow().Start()
+			}
 		}
+
 		return True
 
 	/*

@@ -47,6 +47,9 @@ class EnvironmentController from WindowsControllerParent
 		# Goal Designer - Default file 
 			oView.oDockGoalDesigner.setWindowTitle(
 				T_ENV_DOCK_GOALDESIGNER + " : " + parent().oVisualSourceFile.cFileName)
+		if IsDockForComponentsBrowser() {
+			oView.win.tabifydockwidget(oView.oDockOutputWindow,oView.oDockComponentsBrowser)
+		}
 		if lTabifyOutputAndFiles {
 			if T_LAYOUTDIRECTION = 0 {
 				oView.win.tabifydockwidget(oView.oDockOutputWindow,oView.oDockFilesManager)
@@ -486,3 +489,6 @@ class EnvironmentController from WindowsControllerParent
 			parent().UpdateFont()
 			parent().oView.oStepsTree.nFontSize = nFontSize			
 			parent().UpdateFontSize()
+
+	func IsDockForComponentsBrowser
+		return oView.lDockForComponentsBrowser
