@@ -67,6 +67,7 @@ Class ProgramController
 	*/
 
 	func RunGUIDesktop oGD
+		oGD.parent().oView.oDockOutputWindow.raise()
 		oGD.parent().oView.oProcessEditbox.setplaintext("")
 		if lSetFocusToInput {
 			oGD.parent().oView.oProcessText.setFocus(0)

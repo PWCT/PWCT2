@@ -12,7 +12,6 @@ class ComponentsBrowserView from WindowsViewParent
 		win = new qWidget()
 		{
 			setLayoutDirection(T_LAYOUTDIRECTION)
-
 			olabelSearch = new qLabel(win) {
 				SetText(T_CB_SEARCH) 	# "Search"
 			}

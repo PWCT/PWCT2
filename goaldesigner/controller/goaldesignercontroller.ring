@@ -780,6 +780,8 @@ class GoalDesignerController from WindowsControllerParent
 		if parent().IsDockForComponentsBrowser() {
 			parent().oView.oDockComponentsBrowser.setWidget(ComponentsBrowserWindow().oView.win)
 			ComponentsBrowserWindow().Start()
+			parent().oView.oDockComponentsBrowser.show()
+			parent().oView.oDockComponentsBrowser.Raise()
 		else 
 			if lComponentsBrowserInGoalDesigner {
 				oView.layoutCB.AddWidget(ComponentsBrowserWindow().oView.win)
@@ -835,10 +837,13 @@ class GoalDesignerController from WindowsControllerParent
 
 	func ComponentsBrowserClosed
 		lIsComponentsBrowserOpened = False
-		oView.widgetCB.Hide()
+		ComponentsBrowserHidden()
 
 	func ComponentsBrowserHidden
 		oView.widgetCB.Hide()
+		if parent().isdockForComponentsBrowser() {
+			parent().oView.oDockComponentsBrowser.Hide()
+		}
 
 	/*
 		Purpose 	: Check loading the component file 
