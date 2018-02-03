@@ -400,7 +400,7 @@ class GoalDesignerController from WindowsControllerParent
 	func PasteStepsAction
 		 if not AllowInteractButton() {
 			# "Can't paste steps in this step!"
-			ShowMessage(T_GD_BM_SORRY ,T_GD_BM_CANTPAST)
+			ShowMessage(T_GD_BM_SORRY ,T_GD_BM_CANTPASTE)
 			return
 		}
 		if oView.oStepsTree.isbuffernotempty() = false {
@@ -429,6 +429,11 @@ class GoalDesignerController from WindowsControllerParent
 			oView.oStepsTree.SetCurrentItem(oParentItem,0)	
 		# Fix Drawing 
 			oView.fixDrawing()
+		# Expand Items 
+			aSteps = oView.oStepsTree.StepsList(oParentItem)
+			for oItem in aSteps {
+				oItem.setexpanded(True)
+			}
 
 	/*
 		Purpose : Increase Size Action
