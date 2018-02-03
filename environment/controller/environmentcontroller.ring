@@ -179,7 +179,9 @@ class EnvironmentController from WindowsControllerParent
 			open_windowandlink(:quickmsgController,self)
 			# "Loading the Visual Source File..."
 			QuickMsg().setText(T_ENV_LOADING)
+			oView.Tree1.blocksignals(True)
 			PWCT_APP.processevents()
+			oView.Tree1.blocksignals(False)
 		lActiveGoalDesignerChanged = false
 		if (Parent().IsFileOpened() or not Parent().IsFileEmpty()) and lOpenFilesInNewTabs {
 			oDock = oView.CreateGoalDesigner(oView.win)
