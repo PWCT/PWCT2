@@ -70,6 +70,9 @@ load "filesystem/databasesqliteqt.ring"
 load "filesystem/database.ring"
 load "filesystem/visualsourcefile.ring"
 
+# Quick Message 
+load "general/quickmsgController.ring"
+
 # Load Components 
 load "vpl/ringpwct/ringpwct.ring"
 

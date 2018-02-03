@@ -157,6 +157,10 @@ class EnvironmentController from WindowsControllerParent
 	*/
 
 	func ChangeFileAction
+		open_windowandlink(:quickmsgController,self)
+		QuickMsg().setText("Loading the Visual Source File...")
+		QuickMsg().start()
+		PWCT_APP.processevents()
 		nClock = clock()
 		oItem = oView.tree1.currentindex()
 		if oView.oFile.isdir(oItem) {
@@ -208,6 +212,7 @@ class EnvironmentController from WindowsControllerParent
 			oView.oDockGoalDesigner.raise()
 		}
 		showmessageInStatusBar("Change File Time: " + ( (clock()-nClock) / Clockspersecond() ) )
+		QuickMsg().CloseMsg()
 
 	/*
 		Purpose : Remove file from the Active Files List
