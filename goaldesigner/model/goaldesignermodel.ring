@@ -12,6 +12,8 @@ class GoalDesignerModel
 
 	oInteractionModelBuffer	# Used for Copy/Paste Operation
 
+	oHTMLFunctions = new HTMLFunctions
+
 	# Add the first step
 		AddStep(0,[:name = T_GD_FirstStep ,
 			      :active = True , 
@@ -479,18 +481,4 @@ class GoalDesignerModel
 		Output : Step name as String 
 	*/
 	func RemoveTags cStr
-		cOutput = ""
-		lTagStart = False 
-		for x = 1 to len(cStr) { 
-			if lTagStart and cStr[x] = ">" {
-				lTagStart = False
-				loop 
-			}
-			if lTagStart { Loop }
-			if cStr[x] = "<" {
-				lTagStart = True
-				loop 
-			}
-			cOutput += cStr[x]
-		}
-		return cOutput
+		return oHTMLFunctions.RemoveTags(cStr)

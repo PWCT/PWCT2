@@ -42,3 +42,20 @@ class HTMLFunctions
 		cStr = substr(cStr,'&gt;',">")
 		cStr = substr(cStr,'&nbsp;'," ")
 		return cStr
+
+	func RemoveTags cStr
+		cOutput = ""
+		lTagStart = False 
+		for x = 1 to len(cStr) { 
+			if lTagStart and cStr[x] = ">" {
+				lTagStart = False
+				loop 
+			}
+			if lTagStart { Loop }
+			if cStr[x] = "<" {
+				lTagStart = True
+				loop 
+			}
+			cOutput += cStr[x]
+		}
+		return cOutput

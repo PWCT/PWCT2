@@ -18,6 +18,7 @@ class TreeControl from qTreeWidget
 
 	cEventString
 
+	oStyle = new HTMLStyles
 
 	/*
 		The next method set the object attributes values		
@@ -63,6 +64,7 @@ class TreeControl from qTreeWidget
 		SetLabelFont(oLabel)
 		oLabel.settext(oStyle.image(cImage)+
 					oStyle.text(cText,cColor,cBackColor))					
+		
 		oParent.addchild(oItem)
 		setItemWidget(oItem,0,oLabel)
 		AddToTree(nID,oItem)

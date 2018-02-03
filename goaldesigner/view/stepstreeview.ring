@@ -7,7 +7,7 @@
 
 class StepsTreeView from TreeControl
 
-	oFirststep oStyle = new HTMLStyles
+	oFirststep 
 
 	oStepBuffer = NULL # Used for Cut,Copy & Paste operations
 

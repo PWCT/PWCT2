@@ -30,3 +30,4 @@ class HTMLStyles
 		return "<img src='"+cFile+"'> "
 
 
+
