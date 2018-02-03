@@ -19,6 +19,8 @@ class TreeControl from qTreeWidget
 	cEventString
 
 	oHTML = new HTMLFunctions
+	oTempFont = NULL
+
 
 	/*
 		The next method set the object attributes values		
@@ -61,7 +63,7 @@ class TreeControl from qTreeWidget
 			cImage = 	C_LABELIMAGE_NODEICON
 		}
 		oLabel = new qLabel(self) 
-		SetLabelFont(oLabel)
+		SetLabelFont2(oLabel)
 		oLabel.settext(oStyle.image(cImage)+
 					oStyle.text(cText,cColor,cBackColor))					
 		oParent.addchild(oItem)
@@ -111,7 +113,7 @@ class TreeControl from qTreeWidget
 		setCurrentItem(oParent,0)	# Focus on Parent Step
 		if lUseLabels = True {
 			oLabel = new qLabel(self) {			
-				this.SetLabelFont(oLabel)
+				this.SetLabelFont2(oLabel)
 				settext(this.oStyle.image(C_LABELIMAGE_NODEICON)+
 						this.oStyle.text(cText,this.cColor,this.cBackColor))
 			}
@@ -144,7 +146,16 @@ class TreeControl from qTreeWidget
 				'" ; font-size:' + this.nFontSize + "pt;")
 		}
 
-
+	func SetLabelFont2 oLabel
+		# Faster than SetLabelFont 
+		cFontFam =  font().family() 				
+		if not isObject(oTempFont) {
+			oTempFont = new qfont(cFontFam,nFontSize,-1,0)
+		else 
+			oTempFont.setFamily(cFontFam)
+			oTempFont.setPointsize(nFontSize)
+		}
+      		oLabel.setFont(oTempFont)
 
 	/*
 		The next method get the Tree Node Object using the Tree Node ID
