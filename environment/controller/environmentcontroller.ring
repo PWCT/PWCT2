@@ -177,7 +177,8 @@ class EnvironmentController from WindowsControllerParent
 			}
 		# Display Message
 			open_windowandlink(:quickmsgController,self)
-			QuickMsg().setText("Loading the Visual Source File...")
+			# "Loading the Visual Source File..."
+			QuickMsg().setText(T_ENV_LOADING)
 			PWCT_APP.processevents()
 		lActiveGoalDesignerChanged = false
 		if (Parent().IsFileOpened() or not Parent().IsFileEmpty()) and lOpenFilesInNewTabs {

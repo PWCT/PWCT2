@@ -49,6 +49,7 @@
 	T_ENV_MENU_PROGLANG =  "لغة البرمجة"
 	T_ENV_MENU_GUILIB = "المكتبة الرسومية"
 	T_ENV_MENU_ABOUT =  "حول"
+	T_ENV_LOADING = "...تحميل ملف المصدر المرئي"
 
 	# Output Window
 

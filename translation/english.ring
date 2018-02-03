@@ -49,6 +49,7 @@
 	T_ENV_MENU_PROGLANG =  "Programming Language"
 	T_ENV_MENU_GUILIB = "GUI Library"
 	T_ENV_MENU_ABOUT =  "About"
+	T_ENV_LOADING = "Loading the Visual Source File..."
 
 	# Output Window
 
