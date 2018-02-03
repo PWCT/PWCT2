@@ -157,6 +157,7 @@ class EnvironmentController from WindowsControllerParent
 	*/
 
 	func ChangeFileAction
+		nClock = clock()
 		oItem = oView.tree1.currentindex()
 		if oView.oFile.isdir(oItem) {
 			return
@@ -202,11 +203,11 @@ class EnvironmentController from WindowsControllerParent
 		# Set focus to the Files Manager Tree
 			oView.tree1.setfocus(0)
 		lActiveGoalDesignerChanged = True
-
 		if PWCTIsMobile(:OpenFilesInNewTabs) {
 			oView.oDockGoalDesigner.show()
 			oView.oDockGoalDesigner.raise()
 		}
+		showmessageInStatusBar("Change File Time: " + ( (clock()-nClock) / Clockspersecond() ) )
 
 	/*
 		Purpose : Remove file from the Active Files List
@@ -512,3 +513,6 @@ class EnvironmentController from WindowsControllerParent
 		if lDockForComponentsBrowserIsVisible {
 			parent().componentsBrowserWindow().setParentObject(oParent)
 		}
+
+	func ShowMessageInStatusBar cMsg
+		oView.oStatusBar.showMessage(cMsg,0)

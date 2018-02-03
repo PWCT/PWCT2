@@ -709,6 +709,7 @@ class GoalDesignerController from WindowsControllerParent
 	*/
 
 	func OpenFileAction2
+		nClock = clock()
 		# Get Data From the Visual Source File
 			oVisualSourceFile.Open()
 			oVisualSourceFile.LoadTables()
@@ -724,6 +725,7 @@ class GoalDesignerController from WindowsControllerParent
 		oView.oStepsTree.oFirstStep.SetExpanded(True)
 		# Prepare the Components Browser 
 			Activate()
+		showmessageInStatusBar("Loading Time: " + ( (clock()-nClock) / Clockspersecond() ) )
 
 	/*
 		Purpose : Refresh Steps Tree
@@ -777,9 +779,13 @@ class GoalDesignerController from WindowsControllerParent
 			ShowMessage(T_GD_BM_SORRY,T_GD_BM_CANTINTERACT)
 			return False
 		}
-		if parent().IsDockForComponentsBrowser() {
+		if parent().IsDockForComponentsBrowser() and parent().lDockForComponentsBrowserIsVisible = True {
 			parent().oView.oDockComponentsBrowser.setWidget(ComponentsBrowserWindow().oView.win)
 			ComponentsBrowserWindow().Start()
+			parent().oView.oDockComponentsBrowser.show()
+			parent().oView.oDockComponentsBrowser.Raise()
+		elseif parent().IsDockForComponentsBrowser() and parent().lDockForComponentsBrowserIsVisible = False 
+			ComponentsBrowserWindow().oView.win.show()
 			parent().oView.oDockComponentsBrowser.show()
 			parent().oView.oDockComponentsBrowser.Raise()
 		else 
@@ -1334,3 +1340,5 @@ class GoalDesignerController from WindowsControllerParent
 			}
 		}
 					
+	func ShowMessageInStatusBar cMsg
+		parent().showmessageInStatusBar(cMsg)

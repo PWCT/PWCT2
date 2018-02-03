@@ -9,6 +9,7 @@ class EnvironmentView from WindowsViewParent
 
 	# Attributes
 	Tree1   oFile  oDockFilesManager oDockGoalDesigner oDockComponentsBrowser
+	oStatusbar
 
 	# Process Window
 	oDockOutputWindow	oProcess oProcessText   oProcessEditbox
@@ -424,10 +425,10 @@ class EnvironmentView from WindowsViewParent
 	*/
 
 	func CreateStatusBar win
-		status1 = new qstatusbar(win) {
+		oStatusBar = new qstatusbar(win) {
 			showmessage(T_ENV_STATUSBAR_READY,0)
 		}
-		win.setstatusbar(status1) 
+		win.setstatusbar(oStatusBar) 
 
 	/*
 		Purpose : Create the Output Window 
