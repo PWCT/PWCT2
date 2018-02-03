@@ -112,8 +112,11 @@ class TreeControl from qTreeWidget
 		setCurrentItem(oItem,0)	# To Display the item (become visible)
 		setCurrentItem(oParent,0)	# Focus on Parent Step
 		if lUseLabels = True {
-			oLabel = new qLabel(self) {			
-				this.SetLabelFont2(oLabel)
+			oLabel = new qLabel(self) {
+				# if we used setlabelfont2() here
+				# when we cut steps and paste
+				# we don't see the change in the font!			
+				this.SetLabelFont(oLabel)
 				settext(this.oStyle.image(C_LABELIMAGE_NODEICON)+
 						this.oStyle.text(cText,this.cColor,this.cBackColor))
 			}
