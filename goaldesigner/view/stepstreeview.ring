@@ -19,8 +19,12 @@ class StepsTreeView from TreeControl
 	cStartPointText = T_GD_FirstStep
 
 	func Init win
-		super.init(win)
-		AddStartPoint()
+		if lUseLabels = False {
+			init2(win)
+		else
+			super.init(win)
+			AddStartPoint()
+		}
 		return self
 
 	/*

@@ -47,6 +47,10 @@ class TreeControl from qTreeWidget
 	*/
 
 	func SerialAdd nParentID,nID,cText,lIgnore
+		if lUseLabels = False {
+			SerialAdd2(nParentID,nID,cText)
+			return
+		}
 		oParent = GetObjByID(nParentID)
 		oItem = new qtreewidgetitem() 
 		cText = PrepareNodeText(cText)
