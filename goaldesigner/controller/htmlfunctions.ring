@@ -44,6 +44,7 @@ class HTMLFunctions
 		return cStr
 
 	func RemoveTags cStr
+		if not substr(cStr,"<") { return cStr }
 		cOutput = ""
 		lTagStart = False 
 		for x = 1 to len(cStr) { 

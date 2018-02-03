@@ -9,7 +9,7 @@ class StepsTreeView from TreeControl
 
 	oFirststep  oStyle = new HTMLStyles
 
-	oStepBuffer = NULL # Used for Cut,Copy & Paste operations
+	oStepBuffer = NULL 	# Used for Cut,Copy & Paste operations
 
 	lUseLabels = True	# Use QLabel for each Tree Item
 

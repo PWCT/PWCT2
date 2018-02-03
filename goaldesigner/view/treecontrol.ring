@@ -18,6 +18,8 @@ class TreeControl from qTreeWidget
 
 	cEventString
 
+	oHTML = new HTMLFunctions
+
 	/*
 		The next method set the object attributes values		
 		Parameters : The Parent Window as QWidget Object
@@ -62,7 +64,6 @@ class TreeControl from qTreeWidget
 		SetLabelFont(oLabel)
 		oLabel.settext(oStyle.image(cImage)+
 					oStyle.text(cText,cColor,cBackColor))					
-		
 		oParent.addchild(oItem)
 		setItemWidget(oItem,0,oLabel)
 		AddToTree(nID,oItem)
@@ -75,6 +76,8 @@ class TreeControl from qTreeWidget
 	*/
 
 	func SerialAdd2 nParentID,nID,cText
+		cText = oHTML.RemoveTags(cText)
+		cText = oHTML.HTMLSpecialChars2Text(cText)
 		oItem = new qtreewidgetitem() {
 			settext(0,cText)		
 			this.GetObjByID(nParentID) { 
