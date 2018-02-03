@@ -427,6 +427,8 @@ class GoalDesignerController from WindowsControllerParent
 			UpdateTheTimeMachine()
 		# Activate the same step (parent)
 			oView.oStepsTree.SetCurrentItem(oParentItem,0)	
+		# Fix Drawing 
+			oView.fixDrawing()
 
 	/*
 		Purpose : Increase Size Action
