@@ -7,7 +7,7 @@
 
 class ComponentsTreeView from StepsTreeView
 
-	lDefaultTree 	= True	# True = Don't create qLabel for each item
+	lUseLabels 	= False	# True = Don't create qLabel for each item
 
 	cControlHeader 	= T_CB_COMPONENTSTREE 
 	cStartPointText = T_CB_RINGPWCT
@@ -24,7 +24,7 @@ class ComponentsTreeView from StepsTreeView
 	*/
 
 	func Init win
-		if lDefaultTree {
+		if not lUseLabels {
 			super.init2(win)
 			TreeStyle()
 		else
@@ -41,7 +41,7 @@ class ComponentsTreeView from StepsTreeView
 			 )
 
 	func AddNode nParentID,nStepID,cStepName
-		if lDefaultTree {
+		if not lUseLabels {
 			SerialAdd2(nParentID,nStepID,cStepName)								
 		else
 			oItem = super.AddNode(nParentID,nStepID,cStepName)								
