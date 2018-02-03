@@ -18,8 +18,6 @@ class TreeControl from qTreeWidget
 
 	cEventString
 
-	oStyle = new HTMLStyles
-
 	/*
 		The next method set the object attributes values		
 		Parameters : The Parent Window as QWidget Object
