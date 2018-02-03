@@ -156,11 +156,7 @@ class EnvironmentController from WindowsControllerParent
 		Output : None
 	*/
 
-	func ChangeFileAction
-		open_windowandlink(:quickmsgController,self)
-		QuickMsg().setText("Loading the Visual Source File...")
-		QuickMsg().start()
-		PWCT_APP.processevents()
+	func ChangeFileAction	
 		nClock = clock()
 		oItem = oView.tree1.currentindex()
 		if oView.oFile.isdir(oItem) {
@@ -179,6 +175,10 @@ class EnvironmentController from WindowsControllerParent
 					return
 				}
 			}
+		# Display Message
+			open_windowandlink(:quickmsgController,self)
+			QuickMsg().setText("Loading the Visual Source File...")
+			PWCT_APP.processevents()
 		lActiveGoalDesignerChanged = false
 		if (Parent().IsFileOpened() or not Parent().IsFileEmpty()) and lOpenFilesInNewTabs {
 			oDock = oView.CreateGoalDesigner(oView.win)
