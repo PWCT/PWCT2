@@ -53,7 +53,7 @@ class GoalDesignerController from WindowsControllerParent
 			}
 		# Open Components Browser
 
-			if lComponentsBrowserInGoalDesigner and lCallInteract {
+			if (lComponentsBrowserInGoalDesigner or PWCTIsMobile(:ComponentsBrowser) ) and lCallInteract {
 				InteractAction()
 				lCallInteract = False			
 			}

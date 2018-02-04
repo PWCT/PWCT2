@@ -8,8 +8,8 @@
 class EnvironmentView from WindowsViewParent
 
 	# Attributes
-	Tree1   oFile  oDockFilesManager oDockGoalDesigner oDockComponentsBrowser
-	oStatusbar
+	Tree1   oFile  oDockFilesManager oDockGoalDesigner
+	oDockComponentsBrowser  oStatusbar
 
 	# Process Window
 	oDockOutputWindow	oProcess oProcessText   oProcessEditbox
