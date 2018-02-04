@@ -151,6 +151,9 @@ class ComponentsBrowserController from WindowsControllerParent
 		if not Parent().lComponentsBrowserInGoalDesigner {
 			oView.win.hide()
 		}
+		if PWCTIsMobile(:ComponentSelected) {
+			parent().parent().oView.oDockGoalDesigner.raise()
+		}
 
 	/*
 		Purpose : Show the components browser window and activate search textBox

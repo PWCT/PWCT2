@@ -1322,11 +1322,12 @@ class GoalDesignerController from WindowsControllerParent
 
 
 	/*
-		Delete Extra steps in the interaction after we 
-		Modify it and change the interaction options 
-
-		We will delete steps in the same interaction
-		where the step number > nStepsCount
+		Purpose	   : Delete Extra steps in the interaction after we 
+			     Modify it and change the interaction options 
+			     We will delete steps in the same interaction
+			     where the step number > nStepsCount
+		Parameters : The interaction ID, The Steps Count 
+		Output 	   : None
 	*/
 
 	func DeleteExtraSteps nIID,nStepsCount
@@ -1346,6 +1347,12 @@ class GoalDesignerController from WindowsControllerParent
 					oModel.oStepsTreeModel.DeleteNode(nStepID)
 			}
 		}
-					
+
+	/*
+		Purpose 	: Display message in the status bar
+		Parameters      : The message as string 
+		Output		: None
+	*/			
+		
 	func ShowMessageInStatusBar cMsg
 		parent().showmessageInStatusBar(cMsg)

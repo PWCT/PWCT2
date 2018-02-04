@@ -183,6 +183,7 @@ func PWCTIsMobile cOption
 		:UseComponentsFile	(Components Browser - Using Ring Code instead of SQLite)
 		:RunApplication		(Run Application)
 		:MobileAppLibs		(Loading Mobile Application Libs - guilib for mobile)
+		:ComponentSelected	(Components Browser - After selecting a component)
 	*/
 	//if cOption = :RunApplication or cOption = :SendDataToApplication  return True ok
 	return isMobile()
