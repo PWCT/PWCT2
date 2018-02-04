@@ -148,7 +148,7 @@ class ComponentsBrowserController from WindowsControllerParent
 			Last_Window().AfterOpen()
 		# Clear the Search TextBox
 			oView.oTextSearch.SetText("")
-		if not Parent().lComponentsBrowserInGoalDesigner {
+		if not Parent().lComponentsBrowserInGoalDesigner and not parent().isDockForComponentsBrowser() {
 			oView.win.hide()
 		}
 		if PWCTIsMobile(:ComponentSelected) and parent().isDockForComponentsBrowser() {
