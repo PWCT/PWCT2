@@ -151,7 +151,7 @@ class ComponentsBrowserController from WindowsControllerParent
 		if not Parent().lComponentsBrowserInGoalDesigner {
 			oView.win.hide()
 		}
-		if PWCTIsMobile(:ComponentSelected) {
+		if PWCTIsMobile(:ComponentSelected) and parent().isDockForComponentsBrowser() {
 			parent().parent().oView.oDockGoalDesigner.raise()
 		}
 
@@ -183,7 +183,7 @@ class ComponentsBrowserController from WindowsControllerParent
 	*/
 
 	func CloseAction
-		if lHideOnlyDontClose {
+		if lHideOnlyDontClose and not parent().isDockForComponentsBrowser() {
 			oView.win.hide()
 			Parent().ComponentsBrowserHidden()
 			return 

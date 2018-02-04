@@ -1356,3 +1356,10 @@ class GoalDesignerController from WindowsControllerParent
 		
 	func ShowMessageInStatusBar cMsg
 		parent().showmessageInStatusBar(cMsg)
+
+
+	/*
+		Check using dockable window for the components browser 
+	*/
+	func isdockForComponentsBrowser
+		return parent().isdockForComponentsBrowser()
