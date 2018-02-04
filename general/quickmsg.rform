@@ -6,7 +6,7 @@ aObjectsList = [
 		 :title =  "Form1" , 
 		 :backcolor =  "#2f5e5b" , 
 		 :windowflags =  "Qt_ToolTip | Qt_WindowStaysOnTopHint | Qt_CustomizeWindowHint" , 
-		 :mainlayout =  "" ,
+		 :mainlayout =  "Layout1" ,
 		 :WindowIcon =  "" , 
 		 :Menubar =  ""  ,
 		 :IndexType =  0  
@@ -23,6 +23,17 @@ aObjectsList = [
 		 :text =  "Loading...",
 		 :BtnImage =  "",
 		 :setClickEvent =  "closeMsg"
+		]
+	],
+	[ :name = "Layout1" , :id = 3 , :classname = "formdesigner_qlayout" , :data = [
+		 :x = 62 , : y = 0  , 
+		 :width =  61 , :height = 12 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :LayoutType =  0,
+		 :LayoutObjects =  "oMsg"
 		]
 	]
 ]
