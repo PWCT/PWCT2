@@ -30,6 +30,9 @@ class GoalDesignerController from WindowsControllerParent
 
 	lCallInteract = True
 
+	# Increase performance when adding many steps 
+		lUseSuperSerialAdd = True
+
 	/*
 		Purpose : Show the Window
 		Parameters : None
@@ -761,15 +764,19 @@ class GoalDesignerController from WindowsControllerParent
 			oView.oStepsTree.aTree = []
 			oView.oStepsTree.AddStartPoint()
 		# Add Steps to the Tree
-			nMax = len(aStepsTree) 
-			for x = 2 to nMax {
-				nStepID		= aStepsTree[x][C_TREEMODEL_NODEID]
-				nParentID	= aStepsTree[x][C_TREEMODEL_PARENTID]
-				cStepName	= aStepsTree[x][C_TREEMODEL_CONTENT][:name]
-				lIgnore		= not aStepsTree[x][C_TREEMODEL_CONTENT][:active]
-				nStepType	= aStepsTree[x][C_TREEMODEL_CONTENT][:steptype]
-				SetStepColor(nStepType)
-				oItem		= oView.oStepsTree.SerialAdd(nParentID,nStepID,cStepName,lIgnore)					
+			if lUseSuperSerialAdd {
+				oView.oStepsTree.SuperSerialAdd(aStepsTree)
+			else
+				nMax = len(aStepsTree) 
+				for x = 2 to nMax {
+					nStepID		= aStepsTree[x][C_TREEMODEL_NODEID]
+					nParentID	= aStepsTree[x][C_TREEMODEL_PARENTID]
+					cStepName	= aStepsTree[x][C_TREEMODEL_CONTENT][:name]
+					lIgnore		= not aStepsTree[x][C_TREEMODEL_CONTENT][:active]
+					nStepType	= aStepsTree[x][C_TREEMODEL_CONTENT][:steptype]
+					SetStepColor(nStepType)
+					oItem		= oView.oStepsTree.SerialAdd(nParentID,nStepID,cStepName,lIgnore)					
+				}
 			}
 		# Update the Time Machine
 			UpdateTheTimeMachine()
