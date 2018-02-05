@@ -35,7 +35,9 @@ class GoalDesignerController from WindowsControllerParent
 	# Increase performance when adding many steps 
 		lUseSuperSerialAdd 	= True
 		# Max Steps that uses Colors 
-		nMaxStepsCount 		= 50000
+			nMaxStepsCount 		= 50000
+		# Show loading progress 
+			lShowLoadingProgress	= False
 	/*
 		Purpose : Show the Window
 		Parameters : None
@@ -845,13 +847,15 @@ class GoalDesignerController from WindowsControllerParent
 				AddToTree(nID,oItem)
 				oItem.setExpanded(true)
 			}
-			if x % 100 = 0 {
-				showmessageInStatusBar("Loading : " + floor((x/nMax)*100) + "%")
-				oView.oStepsTree.setUpdatesEnabled(True)
-				oView.oStepsTree.blockSignals(False)
-				PWCT_APP.processevents()
-				oView.oStepsTree.setUpdatesEnabled(False)
-				oView.oStepsTree.blockSignals(True)
+			if lShowLoadingProgress {
+				if x % 100 = 0 {
+					showmessageInStatusBar("Loading : " + floor((x/nMax)*100) + "%")
+					oView.oStepsTree.setUpdatesEnabled(True)
+					oView.oStepsTree.blockSignals(False)
+					PWCT_APP.processevents()
+					oView.oStepsTree.setUpdatesEnabled(False)
+					oView.oStepsTree.blockSignals(True)
+				}
 			}
 		}
 
