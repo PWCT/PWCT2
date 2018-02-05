@@ -845,6 +845,14 @@ class GoalDesignerController from WindowsControllerParent
 				AddToTree(nID,oItem)
 				oItem.setExpanded(true)
 			}
+			if x % 100 = 0 {
+				showmessageInStatusBar("Loading : " + floor((x/nMax)*100) + "%")
+				oView.oStepsTree.setUpdatesEnabled(True)
+				oView.oStepsTree.blockSignals(False)
+				PWCT_APP.processevents()
+				oView.oStepsTree.setUpdatesEnabled(False)
+				oView.oStepsTree.blockSignals(True)
+			}
 		}
 
 	/*
