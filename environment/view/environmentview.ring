@@ -16,7 +16,11 @@ class EnvironmentView from WindowsViewParent
 
 	nGoalDesignerWindowID
 
-	lDockForComponentsBrowser = True
+	if PWCTIsMobile(:DockForComponentsBrowser) {
+		lDockForComponentsBrowser = False
+	else 
+		lDockForComponentsBrowser = True
+	}
 
 	# Create the window and the Controls
 		win = new qMainWindow()

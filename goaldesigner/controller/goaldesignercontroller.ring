@@ -24,11 +24,13 @@ class GoalDesignerController from WindowsControllerParent
 	lInteractionPagesInGoalDesigner = False
 	if PWCTIsMobile(:ComponentsBrowser) {
 		lComponentsBrowserInGoalDesigner = False
+		lCallInteract = False
 	else
 		lComponentsBrowserInGoalDesigner = True
+		lCallInteract = True
 	}
 
-	lCallInteract = True
+	lLoadComponents = True
 
 	# Increase performance when adding many steps 
 		lUseSuperSerialAdd 	= True
@@ -52,7 +54,7 @@ class GoalDesignerController from WindowsControllerParent
 
 	func Activate
 		# Just Load the Components 
-			if lCallInteract {
+			if lLoadComponents {
 				LoadComponentsBrowserComponents()
 			}
 		# Open Components Browser

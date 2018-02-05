@@ -184,6 +184,7 @@ func PWCTIsMobile cOption
 		:RunApplication		(Run Application)
 		:MobileAppLibs		(Loading Mobile Application Libs - guilib for mobile)
 		:ComponentSelected	(Components Browser - After selecting a component)
+		:DockForComponentsBrowser (Dockable window for components browser)
 	*/
 	//if cOption = :RunApplication or cOption = :SendDataToApplication  return True ok
 	return isMobile()
