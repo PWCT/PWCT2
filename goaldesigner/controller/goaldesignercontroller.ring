@@ -409,12 +409,15 @@ class GoalDesignerController from WindowsControllerParent
 		# Time Machine - Present
 			TimeMachineGotoPresent()
 		# Check Rules before the Paste Operation 
+		# We commented this to avoid low performance problem
+		/*
 			aPasteRoots = oModel.getpasteTopComponents()
 			for cComponent in aPasteRoots {
 				if not RulesAllow(cComponent) {
 					return
 				}
 			}
+		*/
 		oParentItem  = oView.oStepsTree.currentItem()
 		nParentStepID = oView.oStepsTree.GetIDByObj(oParentItem)
 		oModel.PasteStep(nParentStepID)
@@ -426,7 +429,7 @@ class GoalDesignerController from WindowsControllerParent
 		# Update the Time Machine
 			UpdateTheTimeMachine()
 		# Activate the same step (parent)
-			oView.oStepsTree.SetCurrentItem(oParentItem,0)	
+			oView.oStepsTree.SetCurrentItem(oParentItem,0)
 		# Fix Drawing 
 			oView.fixDrawing()
 		# Expand Items 
