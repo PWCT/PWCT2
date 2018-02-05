@@ -14,11 +14,9 @@ class HTMLStyles
 	*/
 
 	func text cText,cTextColor,cBackColor
-		cHTML =  `<span style="background-color:#{backcolor}"><font color="#{textcolor}">#{text}</font></span>`
-		cHTML = substr(cHTML,"#{backcolor}",cBackColor)
-		cHTML = substr(cHTML,"#{textcolor}",cTextColor)
-		cHTML = substr(cHTML,"#{text}",cText)
-		return cHTML
+		return `<span style="background-color:`+cBackColor+
+			`"><font color="`+cTextColor+`">`+cText+
+			`</font></span>`
 
 	/*
 		The next method return the HTML code for displaying an Image
