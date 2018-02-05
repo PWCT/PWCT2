@@ -35,7 +35,7 @@ class GoalDesignerController from WindowsControllerParent
 	# Increase performance when adding many steps 
 		lUseSuperSerialAdd 	= True
 		# Max Steps that uses Colors 
-			nMaxStepsCount 		= 50000
+			nMaxStepsCount 		= 500
 		# Show loading progress 
 			lShowLoadingProgress	= False
 	/*
@@ -804,12 +804,19 @@ class GoalDesignerController from WindowsControllerParent
 				taketoplevelitem(0)	
 				aTree = []
 				AddStartPoint2()
+				/*
 				setStyleSheet(
 				'QTreeWidget { color: green; font-size: '+nFontSize+'pt  } '+
 				'QTreeWidget::branch:open { image: url("' + C_LABELIMAGE_NODEICON + '") }' +
 				'QTreeWidget::!active { selection-background-color:rgba(0,65,255,255) ; selection-color:white; } ; ' +
 				'QTreeWidget::branch:closed:has-children { image: url("' + C_LABELIMAGE_NODEICON + '") }'
 				 )
+				*/
+				setStyleSheet(
+				'QTreeWidget { color: black; font-size: '+nFontSize+'pt  } '+
+				'QTreeWidget::!active { selection-background-color:rgba(0,65,255,255) ; selection-color:white; } ; ' 
+				 )
+
 			}
 		}
 		for x = 2 to nMax {
@@ -839,8 +846,8 @@ class GoalDesignerController from WindowsControllerParent
 					oParent.addchild(oItem)
 					setItemWidget(oItem,0,oLabel)
 				else 
-					cText = oHTML.HTMLSpecialChars2Text(cText)
-					cText = oHTML.RemoveTags(cText)
+					//cText = oHTML.HTMLSpecialChars2Text(cText)
+					//cText = oHTML.RemoveTags(cText)
 					oParent.addchild(oItem)
 					oItem.setText(0,cText)
 				}
