@@ -46,41 +46,6 @@ class TreeControl from qTreeWidget
 
 
 	/*
-		Purpose : Quickly add many steps to the Steps Tree 
-			  This function increase the performance 	
-		Parameters : The steps Tree
-		Output : None
-	*/
-	func superserialadd aStepsTree
-		nMax = len(aStepsTree) 
-		for x = 2 to nMax {
-			aStep = aStepsTree[x]
-			nID		= aStep[C_TREEMODEL_NODEID]
-			nParentID	= aStep[C_TREEMODEL_PARENTID]
-			cText		= aStep[C_TREEMODEL_CONTENT][:name]
-			lIgnore		= not aStep[C_TREEMODEL_CONTENT][:active]
-			nStepType	= aStep[C_TREEMODEL_CONTENT][:steptype]
-			SetStepColor(nStepType)
-			oParent = GetObjByID(nParentID)
-			cText = PrepareNodeText(cText)
-			if lIgnore {
-				cImage = C_LABELIMAGE_IGNORESTEP
-			else
-				cImage = C_LABELIMAGE_NODEICON
-			}
-			oItem = new qtreewidgetitem() 
-			oLabel = new qLabel(self) 
-			SetLabelFont2(oLabel)
-			oLabel.settext(oStyle.image(cImage)+
-					oStyle.text(cText,cColor,cBackColor))					
-			oParent.addchild(oItem)
-			setItemWidget(oItem,0,oLabel)
-			AddToTree(nID,oItem)
-			oItem.setExpanded(true)
-		}
-
-
-	/*
 		The next method Add a node and set the colors 		
 		Parameters :  The Parent Node ID, The Node ID, The Node Text , Ignore Status
 		Output : None

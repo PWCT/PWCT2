@@ -765,7 +765,7 @@ class GoalDesignerController from WindowsControllerParent
 			oView.oStepsTree.AddStartPoint()
 		# Add Steps to the Tree
 			if lUseSuperSerialAdd {
-				oView.oStepsTree.SuperSerialAdd(aStepsTree)
+				SuperSerialAdd(aStepsTree)
 			else
 				nMax = len(aStepsTree) 
 				for x = 2 to nMax {
@@ -783,6 +783,42 @@ class GoalDesignerController from WindowsControllerParent
 		oView.oStepsTree.setUpdatesEnabled(True)
 		oView.oStepsTree.blockSignals(False)
 		oView.oStepsTree.oFirstStep.SetExpanded(True)
+
+	/*
+		Purpose : Quickly add many steps to the Steps Tree 
+			  This function increase the performance 	
+		Parameters : The steps Tree
+		Output : None
+	*/
+	func superserialadd aStepsTree
+		nMax = len(aStepsTree) 
+		for x = 2 to nMax {
+			aStep = aStepsTree[x]
+			nID		= aStep[C_TREEMODEL_NODEID]
+			nParentID	= aStep[C_TREEMODEL_PARENTID]
+			cText		= aStep[C_TREEMODEL_CONTENT][:name]
+			lIgnore		= not aStep[C_TREEMODEL_CONTENT][:active]
+			nStepType	= aStep[C_TREEMODEL_CONTENT][:steptype]
+			oView.oStepsTree {
+				SetStepColor(nStepType)
+				oParent = GetObjByID(nParentID)
+				cText = PrepareNodeText(cText)
+				if lIgnore {
+					cImage = C_LABELIMAGE_IGNORESTEP
+				else
+					cImage = C_LABELIMAGE_NODEICON
+				}
+				oItem = new qtreewidgetitem() 
+				oLabel = new qLabel(self) 
+				SetLabelFont2(oLabel)
+				oLabel.settext(oStyle.image(cImage)+
+						oStyle.text(cText,cColor,cBackColor))					
+				oParent.addchild(oItem)
+				setItemWidget(oItem,0,oLabel)
+				AddToTree(nID,oItem)
+				oItem.setExpanded(true)
+			}
+		}
 
 	/*
 		Purpose : Start New Interaction
