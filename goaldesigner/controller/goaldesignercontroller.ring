@@ -31,8 +31,9 @@ class GoalDesignerController from WindowsControllerParent
 	lCallInteract = True
 
 	# Increase performance when adding many steps 
-		lUseSuperSerialAdd = True
-
+		lUseSuperSerialAdd 	= True
+		# Max Steps that uses Colors 
+		nMaxStepsCount 		= 50000
 	/*
 		Purpose : Show the Window
 		Parameters : None
@@ -790,8 +791,23 @@ class GoalDesignerController from WindowsControllerParent
 		Parameters : The steps Tree
 		Output : None
 	*/
-	func superserialadd aStepsTree
+
+	func SuperSerialAdd aStepsTree
 		nMax = len(aStepsTree) 
+		if nMax > this.nMaxStepsCount {
+			oView.oStepsTree {
+				lUseLabels = False
+				taketoplevelitem(0)	
+				aTree = []
+				AddStartPoint2()
+				setStyleSheet(
+				'QTreeWidget { color: green; font-size: '+nFontSize+'pt  } '+
+				'QTreeWidget::branch:open { image: url("' + C_LABELIMAGE_NODEICON + '") }' +
+				'QTreeWidget::!active { selection-background-color:rgba(0,65,255,255) ; selection-color:white; } ; ' +
+				'QTreeWidget::branch:closed:has-children { image: url("' + C_LABELIMAGE_NODEICON + '") }'
+				 )
+			}
+		}
 		for x = 2 to nMax {
 			aStep = aStepsTree[x]
 			nID		= aStep[C_TREEMODEL_NODEID]
@@ -800,21 +816,30 @@ class GoalDesignerController from WindowsControllerParent
 			lIgnore		= not aStep[C_TREEMODEL_CONTENT][:active]
 			nStepType	= aStep[C_TREEMODEL_CONTENT][:steptype]
 			oView.oStepsTree {
-				SetStepColor(nStepType)
+				if nMax <= this.nMaxStepsCount {
+					SetStepColor(nStepType)
+				}
 				oParent = GetObjByID(nParentID)
-				cText = PrepareNodeText(cText)
 				if lIgnore {
 					cImage = C_LABELIMAGE_IGNORESTEP
 				else
 					cImage = C_LABELIMAGE_NODEICON
 				}
 				oItem = new qtreewidgetitem() 
-				oLabel = new qLabel(self) 
-				SetLabelFont2(oLabel)
-				oLabel.settext(oStyle.image(cImage)+
-						oStyle.text(cText,cColor,cBackColor))					
-				oParent.addchild(oItem)
-				setItemWidget(oItem,0,oLabel)
+				if nMax < this.nMaxStepsCount {
+					oLabel = new qLabel(self) 
+					SetLabelFont2(oLabel)
+					cText = PrepareNodeText(cText)
+					oLabel.settext(oStyle.image(cImage)+
+							oStyle.text(cText,cColor,cBackColor))					
+					oParent.addchild(oItem)
+					setItemWidget(oItem,0,oLabel)
+				else 
+					cText = oHTML.HTMLSpecialChars2Text(cText)
+					cText = oHTML.RemoveTags(cText)
+					oParent.addchild(oItem)
+					oItem.setText(0,cText)
+				}
 				AddToTree(nID,oItem)
 				oItem.setExpanded(true)
 			}
