@@ -35,13 +35,15 @@ class ComponentsBrowserView from WindowsViewParent
 				setText(T_CB_SELECT)
 				setclickevent(Method(:SelectAction))
 			}
-			setBtnImage(oBtnSelect,AppFile("images/ipok.png"))
 			oBtnClose = new qPushButton(win)
 			{
 				setText(T_CB_CLOSE)
 				setclickevent(Method(:CloseAction))
 			}
-			setBtnImage(oBtnClose,AppFile("images/ipclose.png"))
+			if not T_LAYOUTDIRECTION {
+				setBtnImage(oBtnSelect,AppFile("images/ipok.png"))
+				setBtnImage(oBtnClose,AppFile("images/ipclose.png"))
+			}
 			oLayoutButtons = new qHBoxLayout()
 			{
 				addWidget(oBtnSelect)

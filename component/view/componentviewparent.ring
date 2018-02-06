@@ -189,19 +189,21 @@ class ComponentViewParent from WindowsViewParent
 			setText(T_IP_AGAIN)	# "Again"
 			setClickEvent( Method(:AgainAction) )
 		}
-		setBtnImage(oBtnAgain,AppFile("images/ipagain.png"))
 		oBtnOk = new qPushButton(win) {
 			setStyleSheet("font-size:"+this.nButtonsFontSize+"pt;")
 			setText(T_IP_OK)		# "Ok"
 			setClickEvent( Method(:OkAction) )
 		}
-		setBtnImage(oBtnOk,AppFile("images/ipok.png"))
 		oBtnClose = new qPushButton(win) {
 			setStyleSheet("font-size:"+this.nButtonsFontSize+"pt;")
 			setText(T_IP_CLOSE)    # "Close"
 			setClickEvent( Method(:CloseBtnAction) )
 		}
-		setBtnImage(oBtnClose,AppFile("images/ipclose.png"))
+		if not T_LAYOUTDIRECTION {
+			setBtnImage(oBtnAgain,AppFile("images/ipagain.png"))
+			setBtnImage(oBtnOk,AppFile("images/ipok.png"))
+			setBtnImage(oBtnClose,AppFile("images/ipclose.png"))
+		}
 		oLayoutButtons = new qHBoxLayout() {
 			AddWidget(oBtnAgain) AddWidget(oBtnOk) AddWidget(oBtnClose)
 		}
