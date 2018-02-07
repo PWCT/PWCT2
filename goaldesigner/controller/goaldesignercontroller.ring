@@ -824,6 +824,7 @@ class GoalDesignerController from WindowsControllerParent
 			nID		= aStep[C_TREEMODEL_NODEID]
 			nParentID	= aStep[C_TREEMODEL_PARENTID]
 			cText		= aStep[C_TREEMODEL_CONTENT][:name]
+			cPlainText	= aStep[C_TREEMODEL_CONTENT][:plainname]
 			lIgnore		= not aStep[C_TREEMODEL_CONTENT][:active]
 			nStepType	= aStep[C_TREEMODEL_CONTENT][:steptype]
 			oView.oStepsTree {
@@ -846,7 +847,7 @@ class GoalDesignerController from WindowsControllerParent
 					oParent.addchild(oItem)
 					setItemWidget(oItem,0,oLabel)
 				else 
-					oItem.setText(0,cText)
+					oItem.setText(0,cPlainText)
 					oParent.addchild(oItem)
 				}
 				AddToTree(nID,oItem)
