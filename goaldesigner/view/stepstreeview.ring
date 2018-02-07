@@ -133,6 +133,10 @@ class StepsTreeView from TreeControl
 			}
 
 	func RestoreLabels oNewItems,lDeleteLabels
+		if not lUseLabels {
+			return
+		}
+
 		# Add the Labels Controls
 			aItems = StepsList(oNewItems)
 			aTempLabels = aLabels[len(aLabels)]
