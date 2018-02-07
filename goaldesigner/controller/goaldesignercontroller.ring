@@ -38,7 +38,7 @@ class GoalDesignerController from WindowsControllerParent
 			nMaxStepsCount 		= 500
 			lUseMaxStepsCount	= True
 		# Show loading progress 
-			lShowLoadingProgress	= False
+			lShowLoadingProgress	= True
 
 	oHTMLFunctions = new HTMLFunctions
 
