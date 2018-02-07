@@ -43,6 +43,10 @@ class HTMLFunctions
 		cStr = substr(cStr,'&nbsp;'," ")
 		return cStr
 
+	/*
+		Remove Tags from the string 
+	*/
+
 	func RemoveTags cStr
 		if not substr(cStr,"<") { return cStr }
 		cOutput = ""
@@ -60,3 +64,10 @@ class HTMLFunctions
 			cOutput += cStr[x]
 		}
 		return cOutput
+
+	/*
+		Get the Plain text from a string contains HTML 
+	*/
+
+	func PlainText cHtml
+		return RemoveTags(HTMLSpecialChars2Text(cHTML))
