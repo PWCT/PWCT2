@@ -39,6 +39,9 @@ class GoalDesignerController from WindowsControllerParent
 			lUseMaxStepsCount	= True
 		# Show loading progress 
 			lShowLoadingProgress	= False
+
+	oHTMLFunctions = new HTMLFunctions
+
 	/*
 		Purpose : Show the Window
 		Parameters : None
@@ -79,6 +82,7 @@ class GoalDesignerController from WindowsControllerParent
 	*/
 
 	func AddStep cStepName
+		cPlainStepName = oHTMLFunctions.PlainText(cStepName)
 		oItem  = oView.oStepsTree.currentItem()
 		nParentID = oView.oStepsTree.GetIDByObj(oItem)
  		nStepID = oModel.AddStep(nParentID,[
@@ -88,7 +92,8 @@ class GoalDesignerController from WindowsControllerParent
 			 	:interactionid = oModel.oInteractionModel.AddUserInteraction() ,
 				:visible = True , 
 				:stepnumber = 1 ,
-				:steptype = C_STEPTYPE_COMMENT 
+				:steptype = C_STEPTYPE_COMMENT,
+				:plainname = cPlainStepName
 			]
 		)
 		SetStepColor(C_STEPTYPE_COMMENT)
@@ -121,6 +126,7 @@ class GoalDesignerController from WindowsControllerParent
 	*/
 
 	func AddGeneratedStep cStepName,nIID,nStepNumber,nStepType
+		cPlainStepName = oHTMLFunctions.PlainText(cStepName)
 		oItem  = oView.oStepsTree.currentItem()
 		nParentID = oView.oStepsTree.GetIDByObj(oItem)
  		nStepID = oModel.AddStep(nParentID,[
@@ -130,7 +136,8 @@ class GoalDesignerController from WindowsControllerParent
 			 	:interactionid = nIID ,
 				:visible = True , 
 				:stepnumber = nStepNumber ,
-				:steptype = nStepType 
+				:steptype = nStepType,
+				:plainname = cPlainStepName 
 			]
 		)
 		SetStepColor(nStepType)

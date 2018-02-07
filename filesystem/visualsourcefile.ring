@@ -194,15 +194,16 @@ class VisualSourceFile
 
 	func CreateStepsTable
 		cSql = "CREATE TABLE STEPSTREE(
-		         	STEPID 		INT 	PRIMARY KEY	NOT NULL,
+		         	STEPID 			INT 	PRIMARY KEY	NOT NULL,
 		         	PARENTID 		INT 			NOT NULL,
          			NAME  			TEXT  			NOT NULL,
-         			ACTIVE          		INT     			NOT NULL,
+				PLAINNAME 		TEXT  			NOT NULL,
+         			ACTIVE         		INT     			NOT NULL,
          			CODE        		TEXT,
-         			INTERACTIONID        INT     			NOT NULL,
-         			VISIBLE         		INT ,
+         			INTERACTIONID	        INT     			NOT NULL,
+         			VISIBLE        		INT ,
 				STEPNUMBER		INT ,
-				STEPTYPE			INT);"
+				STEPTYPE		INT);"
 		oDatabase.Execute(cSQL)
 
 	/*
@@ -253,7 +254,8 @@ class VisualSourceFile
 						  :interactionid = 0+record[:interactionid] ,
 						  :visible 	= 0+record[:visible],
 						  :stepnumber= 0+record[:stepnumber],
-						  :steptype = 0+record[:steptype]
+						  :steptype = 0+record[:steptype],
+						  :plainname 	= record[:plainname] 
 					  ]
 					] 
 		}
@@ -302,8 +304,8 @@ class VisualSourceFile
 		oDatabase.ExecBegin()
 		for record in aStepsTable {						
 			cSQL = `INSERT INTO STEPSTREE (STEPID,PARENTID,NAME,`+
-			`ACTIVE,CODE,INTERACTIONID,VISIBLE,STEPNUMBER,STEPTYPE)`+
-         		`VALUES (#{V1},#{V2},'#{V3}',#{V4},'#{V5}', #{V6},#{V7},#{V8},#{V9}); ` + NL
+			`ACTIVE,CODE,INTERACTIONID,VISIBLE,STEPNUMBER,STEPTYPE,PLAINNAME)`+
+         		`VALUES (#{V1},#{V2},'#{V3}',#{V4},'#{V5}', #{V6},#{V7},#{V8},#{V9},'#{V10}'); ` + NL
 			cSQL = substr(cSQL,"#{V1}", ""+record[C_TREEMODEL_NODEID]   )
 			cSQL = substr(cSQL,"#{V2}", ""+record[C_TREEMODEL_PARENTID]  )
 			cSQL = substr(cSQL,"#{V3}", record[C_TREEMODEL_CONTENT][:name]  )
@@ -313,6 +315,7 @@ class VisualSourceFile
 			cSQL = substr(cSQL,"#{V7}", ""+record[C_TREEMODEL_CONTENT][:visible]  )			
 			cSQL = substr(cSQL,"#{V8}", ""+record[C_TREEMODEL_CONTENT][:stepnumber]  )			
 			cSQL = substr(cSQL,"#{V9}", ""+record[C_TREEMODEL_CONTENT][:steptype]  )			
+			cSQL = substr(cSQL,"#{V10}", ""+record[C_TREEMODEL_CONTENT][:plainname]  )			
 			oDatabase.Execute(cSQL)				
 		}
 		oDatabase.ExecEnd()
