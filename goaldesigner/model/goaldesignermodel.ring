@@ -188,7 +188,7 @@ class GoalDesignerModel
 			}
 			if x[C_TREEMODEL_CONTENT][:visible] {
 				if x[C_TREEMODEL_NODEID] != 1 {		# Avoid the Start Point
-					cSteps += nTabs + removetags(x[C_TREEMODEL_CONTENT][:name]) + nl
+					cSteps += nTabs + x[C_TREEMODEL_CONTENT][:plainname] + nl
 				}
 			} 
 		}

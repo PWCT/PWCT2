@@ -9,8 +9,6 @@ class PrintStepsController from WindowsControllerParent
 
 	oView = new PrintStepsView
 
-	oHTMLFunctions = new HTMLFunctions
-
 	/*
 		Purpose : Show the data 
 		Parameters : None
@@ -18,7 +16,7 @@ class PrintStepsController from WindowsControllerParent
 	*/
 
 	func ShowData
-		oView.oStepsTree.setText(oHTMLFunctions.HTMLSpecialChars2Text(Parent().oModel.StepsTreeText()))
+		oView.oStepsTree.setText(Parent().oModel.StepsTreeText())
 		oView.oStepsCode.setText(Parent().oModel.StepsTreeCode())
 
 	/*
