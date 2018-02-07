@@ -205,17 +205,32 @@ class StepsTreeView from TreeControl
 		aItems = StepsList(oItem)
 		if nIgnore {
 			for item in aItems {
-				oLabel = GetItemLabel(item)
-				cText = ItemLabelTextWithoutImages(oLabel)
-				cText = PrepareNodeText(cText)
-				oLabel.SetText(this.oStyle.image(C_LABELIMAGE_IGNORESTEP)+cText)
+				if lUseLabels = true {		
+					oLabel = GetItemLabel(item)
+					cText = ItemLabelTextWithoutImages(oLabel)
+					cText = PrepareNodeText(cText)
+					oLabel.SetText(this.oStyle.image(C_LABELIMAGE_IGNORESTEP)+cText)
+				else 
+					cText = item.text(0)
+					if left(cText,3) != "// " {
+						item.settext(0,"// " + item.text(0))
+					}
+				}
 			}
 		else 
 			for item in aItems {
-				oLabel = GetItemLabel(item)
-				cText = ItemLabelTextWithoutImages(oLabel)
-				cText = PrepareNodeText(cText)
-				oLabel.SetText(this.oStyle.image(C_LABELIMAGE_NODEICON)+cText)
+				if lUseLabels = true {		
+					oLabel = GetItemLabel(item)
+					cText = ItemLabelTextWithoutImages(oLabel)
+					cText = PrepareNodeText(cText)
+					oLabel.SetText(this.oStyle.image(C_LABELIMAGE_NODEICON)+cText)
+				else 
+					cText = item.text(0)
+					if left(cText,3) = "// " {
+						cText = substr(cText,4)
+					}
+					item.settext(0,cText)
+				}
 			}
 		}
 
