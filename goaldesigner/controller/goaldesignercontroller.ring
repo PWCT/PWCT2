@@ -1454,3 +1454,12 @@ class GoalDesignerController from WindowsControllerParent
 	*/
 	func isdockForComponentsBrowser
 		return parent().isdockForComponentsBrowser()
+
+
+	/*
+		Used to prepare the step name before adding it to the steps tree 
+		small visual source file --> no change 
+		large visual source file --> remove HTML 
+	*/
+	func prepareStepName cStep
+		return oView.oStepsTree.prepareStepName(cStep)

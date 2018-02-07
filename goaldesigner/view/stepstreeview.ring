@@ -18,6 +18,8 @@ class StepsTreeView from TreeControl
 	cControlHeader = T_GD_StepsTree 
 	cStartPointText = T_GD_FirstStep
 
+	oHTMLFunctions = new HTMLFunctions
+
 	func Init win
 		if lUseLabels = False {
 			init2(win)
@@ -271,3 +273,10 @@ class StepsTreeView from TreeControl
 			return oFirststep
 		}
 		return oItem
+
+	func prepareStepName cStepName
+		if lUseLabels = true {		
+			return cStepName 
+		else 
+			return oHTMLFunctions.plainText(cStepName)
+		}

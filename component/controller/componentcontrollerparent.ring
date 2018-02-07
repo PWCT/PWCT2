@@ -32,10 +32,11 @@ Class ComponentControllerParent from WindowsControllerParent
 	*/
 
 	func NewParentStep cStep
+		cStepName = parent().prepareStepName(cStep)
 		if nInteractionMode = C_INTERACTIONMODE_MODIFY {
 			nStepID = SelectStep()
 			if nStepID != NULL {
-				EditStepName(cStep,nStepID)
+				EditStepName(cStepName,nStepID)
 				return
 			}
 			# In some cases nStepID will become NULL
@@ -60,10 +61,11 @@ Class ComponentControllerParent from WindowsControllerParent
 	*/
 
 	func NewStep cStep
+		cStepName = parent().prepareStepName(cStep)
 		if nInteractionMode = C_INTERACTIONMODE_MODIFY {
 			nStepID = SelectStep()
 			if nStepID != NULL {
-				EditStepName(cStep,nStepID)
+				EditStepName(cStepName,nStepID)
 				return
 			}
 		}
