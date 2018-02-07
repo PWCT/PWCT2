@@ -71,10 +71,14 @@ class TimeMachineController
 				nStepID = item[C_TREEMODEL_NODEID]
 				nParentID = item[C_TREEMODEL_PARENTID]
 				cStepName = item[C_TREEMODEL_CONTENT][:name]
+				cPlainStepName = item[C_TREEMODEL_CONTENT][:plainname]
 				nStepIID = item[C_TREEMODEL_CONTENT][:interactionid]
 				nStepType = item[C_TREEMODEL_CONTENT][:steptype]
 				oView.oStepsTree.SetStepColor(nStepType)
 				lInsert = CheckInsertStep(oView,oModel,nParentID,nStepID,nStepIID)
+				if not oView.oStepsTree.luseLabels {
+					cStepName = cPlainStepName
+				}
 				if lInsert= False { 
 					oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)
 				else
