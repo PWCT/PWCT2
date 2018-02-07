@@ -847,6 +847,9 @@ class GoalDesignerController from WindowsControllerParent
 					oParent.addchild(oItem)
 					setItemWidget(oItem,0,oLabel)
 				else 
+					if lIgnore {
+						cPlainText = "// " + cPlainText
+					}
 					oItem.setText(0,cPlainText)
 					oParent.addchild(oItem)
 				}
