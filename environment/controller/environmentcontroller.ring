@@ -27,6 +27,8 @@ class EnvironmentController from WindowsControllerParent
 		lOpenFilesInNewTabs = True
 	}
 
+	lDisplayLoadingMessage = True
+
 	/* 
 		[Dockable Window Object, 
 		 Visual Source File Name, 
@@ -176,12 +178,14 @@ class EnvironmentController from WindowsControllerParent
 				}
 			}
 		# Display Message
-			open_windowandlink(:quickmsgController,self)
-			# "Loading the Visual Source File..."
-			QuickMsg().setText(T_ENV_LOADING)
-			oView.Tree1.blocksignals(True)
-			PWCT_APP.processevents()
-			oView.Tree1.blocksignals(False)
+			if lDisplayLoadingMessage {
+				open_windowandlink(:quickmsgController,self)
+				# "Loading the Visual Source File..."
+				QuickMsg().setText(T_ENV_LOADING)
+				oView.Tree1.blocksignals(True)
+				PWCT_APP.processevents()
+				oView.Tree1.blocksignals(False)
+			}
 		lActiveGoalDesignerChanged = false
 		if (Parent().IsFileOpened() or not Parent().IsFileEmpty()) and lOpenFilesInNewTabs {
 			oDock = oView.CreateGoalDesigner(oView.win)
@@ -215,7 +219,9 @@ class EnvironmentController from WindowsControllerParent
 			oView.oDockGoalDesigner.raise()
 		}
 		showmessageInStatusBar("Change File Time: " + ( (clock()-nClock) / Clockspersecond() ) )
-		QuickMsg().CloseMsg()
+		if lDisplayLoadingMessage {
+			QuickMsg().CloseMsg()
+		}
 
 	/*
 		Purpose : Remove file from the Active Files List
