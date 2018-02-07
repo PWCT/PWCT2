@@ -36,6 +36,7 @@ class GoalDesignerController from WindowsControllerParent
 		lUseSuperSerialAdd 	= True
 		# Max Steps that uses Colors 
 			nMaxStepsCount 		= 500
+			lUseMaxStepsCount	= False
 		# Show loading progress 
 			lShowLoadingProgress	= False
 	/*
@@ -798,7 +799,7 @@ class GoalDesignerController from WindowsControllerParent
 
 	func SuperSerialAdd aStepsTree
 		nMax = len(aStepsTree) 
-		if nMax > this.nMaxStepsCount {
+		if nMax > this.nMaxStepsCount and lUseMaxStepsCount {
 			oView.oStepsTree {
 				lUseLabels = False
 				taketoplevelitem(0)	
@@ -827,7 +828,7 @@ class GoalDesignerController from WindowsControllerParent
 			lIgnore		= not aStep[C_TREEMODEL_CONTENT][:active]
 			nStepType	= aStep[C_TREEMODEL_CONTENT][:steptype]
 			oView.oStepsTree {
-				if nMax <= this.nMaxStepsCount {
+				if nMax <= this.nMaxStepsCount or not this.lUseMaxStepsCount {
 					SetStepColor(nStepType)
 				}
 				oParent = GetObjByID(nParentID)
@@ -837,7 +838,7 @@ class GoalDesignerController from WindowsControllerParent
 					cImage = C_LABELIMAGE_NODEICON
 				}
 				oItem = new qtreewidgetitem() 
-				if nMax < this.nMaxStepsCount {
+				if nMax < this.nMaxStepsCount or not this.lUseMaxStepsCount {
 					oLabel = new qLabel(self) 
 					SetLabelFont2(oLabel)
 					cText = PrepareNodeText(cText)
