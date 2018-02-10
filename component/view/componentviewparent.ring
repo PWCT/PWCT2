@@ -248,7 +248,9 @@ class ComponentViewParent from WindowsViewParent
 			case C_INTERACTION_CT_LISTBOX 
 				cValue = "" + (oObject.currentrow() + 1)
 			}
-			cVariablesValues += cValue + C_INTERACTIONVALUES_SEPARATOR
+			cVariablesValues += 
+				item[C_INTERACTION_VL_NAME] + C_INTERACTIONVALUES_SEPARATOR +
+				cValue + C_INTERACTIONVALUES_SEPARATOR
 		}
 		return cVariablesValues
 
@@ -262,15 +264,25 @@ class ComponentViewParent from WindowsViewParent
 		aValues = Split(cVariablesValues,C_INTERACTIONVALUES_SEPARATOR)
 		for x = 1 to len( aVariables ) {
 			item = aVariables[x]
+			if len(aValues) = len(aVariables) {
+				# Support old files that doesn't store the variable name
+				cValue = aValues[x]
+			else 
+				cValue = GetVariableValue(aValues,item[C_INTERACTION_VL_NAME])
+			}
 			oObject = item[C_INTERACTION_VL_OBJECT]
 			switch item[C_INTERACTION_VL_TYPE] {
 			case C_INTERACTION_CT_TEXTBOX 
-				oObject.settext(aValues[x])
+				oObject.settext(cValue)
 			case C_INTERACTION_CT_CHECKBOX
-				oObject.setcheckstate(0+aValues[x])
+				oObject.setcheckstate(0+cValue)
 			case C_INTERACTION_CT_LISTBOX 
-				oObject.setcurrentrow((0+aValues[x])-1,2 | dec("10"))
+				oObject.setcurrentrow((0+cValue)-1,2 | dec("10"))
 			}
 		}
 
- 
+	func GetVariableValue aValues,cName
+ 		nPos = find(aValues,cName)
+		if nPos {
+			return aValues[nPos+1]
+		}
