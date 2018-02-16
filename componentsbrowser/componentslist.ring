@@ -15,12 +15,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
 2,1,[
 [
-"name","User Interface"
+"name","واجهة المستخدم"
 ],[
 "active",1
 ],[
@@ -33,12 +35,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
 3,2,[
 [
-"name","Console"
+"name","واجهة مستخدم خطية"
 ],[
 "active",1
 ],[
@@ -51,12 +55,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
 4,3,[
 [
-"name","Print Text"
+"name","اطبع"
 ],[
 "active",1
 ],[
@@ -69,12 +75,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
 7,3,[
 [
-"name","Get Input"
+"name","ادخال"
 ],[
 "active",1
 ],[
@@ -87,12 +95,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
 25,3,[
 [
-"name","Get Character"
+"name","إستقبال حرف"
 ],[
 "active",1
 ],[
@@ -105,12 +115,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
 26,3,[
 [
-"name","Input Number of Characters"
+"name","ادخل عدد من الحروف"
 ],[
 "active",1
 ],[
@@ -123,30 +135,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-285,2,[
+290,2,[
 [
-"name","GUI"
-],[
-"active",1
-],[
-"code",""
-],[
-"interactionid",281
-],[
-"visible",1
-],[
-"stepnumber",1
-],[
-"steptype",1
-]
-]
-],[
-287,285,[
-[
-"name","Application"
+"name","واجهة مستخدم رسومية"
 ],[
 "active",1
 ],[
@@ -159,12 +155,34 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-307,287,[
+307,290,[
 [
-"name","new GUI Application"
+"name","التطبيق"
+],[
+"active",1
+],[
+"code",""
+],[
+"interactionid",296
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+],[
+"plainname",""
+]
+]
+],[
+308,307,[
+[
+"name","تطبيق رسومي جديد"
 ],[
 "active",1
 ],[
@@ -177,12 +195,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-308,287,[
+309,307,[
 [
-"name","new Window"
+"name","نافذة جديدة"
 ],[
 "active",1
 ],[
@@ -195,12 +215,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-309,287,[
+310,307,[
 [
-"name","new Label"
+"name","عنوان جديد"
 ],[
 "active",1
 ],[
@@ -213,12 +235,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-310,287,[
+311,307,[
 [
-"name","new Button"
+"name","زر جديد"
 ],[
 "active",1
 ],[
@@ -231,12 +255,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-311,287,[
+312,307,[
 [
-"name","new Textbox"
+"name","مربع نص جديد"
 ],[
 "active",1
 ],[
@@ -249,12 +275,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-312,287,[
+313,307,[
 [
-"name","new Editbox"
+"name","مربع تحرير جديد"
 ],[
 "active",1
 ],[
@@ -267,12 +295,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-313,287,[
+314,307,[
 [
-"name","new Listbox"
+"name","مربع قائمة جديد"
 ],[
 "active",1
 ],[
@@ -285,12 +315,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-314,287,[
+315,307,[
 [
-"name","new Treeview"
+"name","عرض شجرة جديد"
 ],[
 "active",1
 ],[
@@ -303,12 +335,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-315,287,[
+316,307,[
 [
-"name","new Treewidget"
+"name","عنصر شجرة جديد"
 ],[
 "active",1
 ],[
@@ -321,12 +355,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-316,287,[
+317,307,[
 [
-"name","new Combobox"
+"name","عنصر قائمة مضغوطة جديد"
 ],[
 "active",1
 ],[
@@ -339,12 +375,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-317,287,[
+318,307,[
 [
-"name","new Tab"
+"name","عنصر فاصل صفحات جديد"
 ],[
 "active",1
 ],[
@@ -357,12 +395,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-318,287,[
+319,307,[
 [
-"name","new Table"
+"name","عنصر جدول جديد"
 ],[
 "active",1
 ],[
@@ -375,12 +415,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-319,287,[
+320,307,[
 [
-"name","new Progressbar"
+"name","عنصر شريط تقدم جديد"
 ],[
 "active",1
 ],[
@@ -393,12 +435,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-320,287,[
+321,307,[
 [
-"name","new Spinbox"
+"name","مكون عداد رقمي جديد"
 ],[
 "active",1
 ],[
@@ -411,12 +455,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-321,287,[
+322,307,[
 [
-"name","new Slider"
+"name","عنصر شريط متحرك جديد"
 ],[
 "active",1
 ],[
@@ -429,12 +475,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-322,287,[
+323,307,[
 [
-"name","new DateEdit"
+"name","عنصر تحرير التاريخ"
 ],[
 "active",1
 ],[
@@ -447,12 +495,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-323,287,[
+324,307,[
 [
-"name","new Dial"
+"name","عنصر إتصال جديد"
 ],[
 "active",1
 ],[
@@ -465,12 +515,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-324,287,[
+325,307,[
 [
-"name","new Webview"
+"name","عنصر مستعرض ويب جديد"
 ],[
 "active",1
 ],[
@@ -483,12 +535,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-325,287,[
+326,307,[
 [
-"name","new Checkbox"
+"name","عنصر مربع فحص جديد"
 ],[
 "active",1
 ],[
@@ -501,12 +555,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-326,287,[
+327,307,[
 [
-"name","new Radiobutton"
+"name","عنصر زر راديو جديد"
 ],[
 "active",1
 ],[
@@ -519,12 +575,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-327,287,[
+328,307,[
 [
-"name","new Buttongroup"
+"name","عنصر مجموعة ازرار جديد"
 ],[
 "active",1
 ],[
@@ -537,12 +595,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-328,287,[
+329,307,[
 [
-"name","new Hyperlink"
+"name","عنصر رابط تشعبى جديد"
 ],[
 "active",1
 ],[
@@ -555,12 +615,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-329,287,[
+330,307,[
 [
-"name","new Video "
+"name","عنصر فيديو جديد"
 ],[
 "active",1
 ],[
@@ -573,12 +635,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-330,287,[
+331,307,[
 [
-"name","new Media Player"
+"name","مشغل فيديو جديد"
 ],[
 "active",1
 ],[
@@ -591,12 +655,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-331,287,[
+332,307,[
 [
-"name","new Frame"
+"name","اطار عمل جديد"
 ],[
 "active",1
 ],[
@@ -609,12 +675,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-332,287,[
+333,307,[
 [
-"name","new Image"
+"name","عنصر صورة جديد"
 ],[
 "active",1
 ],[
@@ -627,12 +695,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-333,287,[
+334,307,[
 [
-"name","new Timer"
+"name","عنصر مؤقت جديد"
 ],[
 "active",1
 ],[
@@ -645,12 +715,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-334,287,[
+335,307,[
 [
-"name","new Menubar"
+"name","شريط قائمة جديد"
 ],[
 "active",1
 ],[
@@ -663,12 +735,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-335,287,[
+336,307,[
 [
-"name","new Menu"
+"name","قائمة جديدة"
 ],[
 "active",1
 ],[
@@ -681,12 +755,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-336,287,[
+337,307,[
 [
-"name","new Menu Item"
+"name","عنصر فى قائمة جديد"
 ],[
 "active",1
 ],[
@@ -699,12 +775,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-337,287,[
+338,307,[
 [
-"name","new Menu Separator"
+"name","فاصل قائمة جديد"
 ],[
 "active",1
 ],[
@@ -717,12 +795,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-338,287,[
+339,307,[
 [
-"name","new Toolbar"
+"name","شريط أدوات جديد"
 ],[
 "active",1
 ],[
@@ -735,12 +815,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-339,287,[
+340,307,[
 [
-"name","new Statusbar"
+"name","شريط حالة جديد"
 ],[
 "active",1
 ],[
@@ -753,48 +835,54 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-294,285,[
+292,290,[
 [
-"name","Classes"
+"name","الفئات"
 ],[
 "active",1
 ],[
 "code",""
 ],[
-"interactionid",290
+"interactionid",285
 ],[
 "visible",1
 ],[
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-295,294,[
+305,292,[
 [
-"name","Application Class"
+"name","فئة تطبيق رسومي"
 ],[
 "active",1
 ],[
 "code","qappclass"
 ],[
-"interactionid",291
+"interactionid",295
 ],[
 "visible",1
 ],[
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-297,294,[
+300,292,[
 [
-"name","Window Class"
+"name","فئة نافذة"
 ],[
 "active",1
 ],[
@@ -807,16 +895,58 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-299,294,[
+293,292,[
 [
-"name","Label Class"
+"name","فئة عنوان"
 ],[
 "active",1
 ],[
 "code","qlabelclass"
+],[
+"interactionid",286
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+],[
+"plainname",""
+]
+]
+],[
+294,292,[
+[
+"name","فئة زر"
+],[
+"active",1
+],[
+"code","qpushbuttonclass"
+],[
+"interactionid",287
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+],[
+"plainname",""
+]
+]
+],[
+301,292,[
+[
+"name","فئة تنسيق راسي"
+],[
+"active",1
+],[
+"code","qvboxlayoutclass"
 ],[
 "interactionid",293
 ],[
@@ -825,16 +955,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-301,294,[
+303,292,[
 [
-"name","Button Class"
+"name","فئة تنسيق افقي"
 ],[
 "active",1
 ],[
-"code","qpushbuttonclass"
+"code","qhboxlayoutclass"
 ],[
 "interactionid",294
 ],[
@@ -843,48 +975,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
-]
-]
 ],[
-303,294,[
-[
-"name","Vertical Layout Class"
-],[
-"active",1
-],[
-"code","qvboxlayoutclass"
-],[
-"interactionid",295
-],[
-"visible",1
-],[
-"stepnumber",1
-],[
-"steptype",1
-]
-]
-],[
-305,294,[
-[
-"name","Horizontal Layout Class"
-],[
-"active",1
-],[
-"code","qhboxlayoutclass"
-],[
-"interactionid",296
-],[
-"visible",1
-],[
-"stepnumber",1
-],[
-"steptype",1
+"plainname",""
 ]
 ]
 ],[
 5,1,[
 [
-"name","Control Structures"
+"name","جمل التحكم والتكرار"
 ],[
 "active",1
 ],[
@@ -897,12 +995,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
 6,5,[
 [
-"name","The If Statement"
+"name","اختبار الشرط"
 ],[
 "active",1
 ],[
@@ -915,30 +1015,34 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-35,6,[
+34,6,[
 [
-"name","If"
+"name","اذا تحقق الشرط"
 ],[
 "active",1
 ],[
 "code","ifstatement"
 ],[
-"interactionid",32
+"interactionid",31
 ],[
 "visible",1
 ],[
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
 15,6,[
 [
-"name","Else"
+"name","غير ذلك"
 ],[
 "active",1
 ],[
@@ -951,12 +1055,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
 14,6,[
 [
-"name","Else If"
+"name","الا إذا"
 ],[
 "active",1
 ],[
@@ -969,12 +1075,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
 16,5,[
 [
-"name","The Switch Statement"
+"name","المفتاح"
 ],[
 "active",1
 ],[
@@ -987,12 +1095,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
 36,16,[
 [
-"name","Switch"
+"name","المفتاح المتغير"
 ],[
 "active",1
 ],[
@@ -1005,34 +1115,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-17,16,[
+19,16,[
 [
-"name","Case"
+"name","فى حالة"
 ],[
 "active",1
 ],[
 "code","case"
-],[
-"interactionid",15
-],[
-"visible",1
-],[
-"stepnumber",1
-],[
-"steptype",1
-]
-]
-],[
-18,16,[
-[
-"name","Else"
-],[
-"active",1
-],[
-"code","else"
 ],[
 "interactionid",16
 ],[
@@ -1041,12 +1135,34 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
+]
+]
+],[
+17,16,[
+[
+"name","غير ذلك"
+],[
+"active",1
+],[
+"code","else"
+],[
+"interactionid",15
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
 8,5,[
 [
-"name","For Loop"
+"name","حلقة من"
 ],[
 "active",1
 ],[
@@ -1059,12 +1175,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
 20,5,[
 [
-"name","For In Loop"
+"name","حلقة من فى"
 ],[
 "active",1
 ],[
@@ -1077,12 +1195,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
 10,5,[
 [
-"name","While Loop"
+"name","حلقة طالما"
 ],[
 "active",1
 ],[
@@ -1095,12 +1215,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
 21,5,[
 [
-"name","Do Again Loop"
+"name","حلقة مرة أخرى لو"
 ],[
 "active",1
 ],[
@@ -1113,12 +1235,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
 22,5,[
 [
-"name","Try Catch"
+"name","جرب عالج"
 ],[
 "active",1
 ],[
@@ -1131,12 +1255,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
 23,5,[
 [
-"name","Exit"
+"name","خروج من الحلقة"
 ],[
 "active",1
 ],[
@@ -1149,12 +1275,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
 24,5,[
 [
-"name","Loop"
+"name","تخطي"
 ],[
 "active",1
 ],[
@@ -1167,12 +1295,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
 12,1,[
 [
-"name","Variables"
+"name","المتغيرات"
 ],[
 "active",1
 ],[
@@ -1185,12 +1315,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
 13,12,[
 [
-"name","Assignment"
+"name","إسناد قيمة"
 ],[
 "active",1
 ],[
@@ -1203,12 +1335,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
 27,1,[
 [
-"name","Functions"
+"name","الدوال "
 ],[
 "active",1
 ],[
@@ -1221,12 +1355,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
 28,27,[
 [
-"name","Define Function"
+"name","تعريف دالة"
 ],[
 "active",1
 ],[
@@ -1239,12 +1375,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
 29,27,[
 [
-"name","Call Function"
+"name","إستدعاء الدالة"
 ],[
 "active",1
 ],[
@@ -1257,12 +1395,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
 30,27,[
 [
-"name","Return"
+"name","إرجاع قيمة"
 ],[
 "active",1
 ],[
@@ -1275,12 +1415,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
 31,1,[
 [
-"name","Program Structure"
+"name","هيكل البرنامج"
 ],[
 "active",1
 ],[
@@ -1293,12 +1435,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
 32,31,[
 [
-"name","Load Source File"
+"name","إستدعاء ملف برمجى"
 ],[
 "active",1
 ],[
@@ -1311,12 +1455,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
 33,31,[
 [
-"name","Basic Program"
+"name","الهيكل العام للبرامج"
 ],[
 "active",1
 ],[
@@ -1329,12 +1475,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-37,1,[
+38,1,[
 [
-"name","Lists"
+"name","القوائم"
 ],[
 "active",1
 ],[
@@ -1347,12 +1495,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-38,37,[
+39,38,[
 [
-"name","New Empty List"
+"name","إنشاء قائمة فارغة"
 ],[
 "active",1
 ],[
@@ -1365,12 +1515,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-39,37,[
+40,38,[
 [
-"name","New List By Range"
+"name","إنشاء قائمة بواسطة نطاق"
 ],[
 "active",1
 ],[
@@ -1383,12 +1535,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-40,37,[
+41,38,[
 [
-"name","New List By Size"
+"name","إنشاء قائمة بواسطة الحجم"
 ],[
 "active",1
 ],[
@@ -1401,12 +1555,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-41,37,[
+42,38,[
 [
-"name","Add Item"
+"name","اضف عنصر إلى القائمة"
 ],[
 "active",1
 ],[
@@ -1419,12 +1575,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-42,37,[
+43,38,[
 [
-"name","Get List Size"
+"name","عدد عناصر القائمة"
 ],[
 "active",1
 ],[
@@ -1437,12 +1595,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-43,37,[
+44,38,[
 [
-"name","Delete Item"
+"name","حذف عنصر من القائمة"
 ],[
 "active",1
 ],[
@@ -1455,12 +1615,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-44,37,[
+45,38,[
 [
-"name","Get Item From List"
+"name","الحصول على عنصر من القائمة"
 ],[
 "active",1
 ],[
@@ -1473,12 +1635,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-45,37,[
+46,38,[
 [
-"name","Set List Item"
+"name","اسند قيمة لعنصر فى القائمة"
 ],[
 "active",1
 ],[
@@ -1491,12 +1655,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-46,37,[
+47,38,[
 [
-"name","Reverse List"
+"name","عكس القائمة"
 ],[
 "active",1
 ],[
@@ -1509,12 +1675,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-47,37,[
+48,38,[
 [
-"name","Insert Item"
+"name","حشر عنصر"
 ],[
 "active",1
 ],[
@@ -1527,12 +1695,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-48,37,[
+49,38,[
 [
-"name","Swap Items"
+"name","تبديل العناصر"
 ],[
 "active",1
 ],[
@@ -1545,12 +1715,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-49,37,[
+50,38,[
 [
-"name","Find Item"
+"name","إيجاد عنصر"
 ],[
 "active",1
 ],[
@@ -1563,12 +1735,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-50,37,[
+51,38,[
 [
-"name","Binary Search"
+"name","البحث الثنائى"
 ],[
 "active",1
 ],[
@@ -1581,12 +1755,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-51,37,[
+52,38,[
 [
-"name","Sort List"
+"name","افرز القائمة"
 ],[
 "active",1
 ],[
@@ -1599,12 +1775,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-69,37,[
+70,38,[
 [
-"name","Convert List to String"
+"name","حول قائمة إلى عبارة حرفية"
 ],[
 "active",1
 ],[
@@ -1617,12 +1795,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-52,1,[
+53,1,[
 [
-"name","Strings"
+"name","العبارات الحرفية"
 ],[
 "active",1
 ],[
@@ -1635,12 +1815,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-53,52,[
+54,53,[
 [
-"name","Get String Length"
+"name","طول عبارة حرفية"
 ],[
 "active",1
 ],[
@@ -1653,12 +1835,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-54,52,[
+55,53,[
 [
-"name","Lower Case"
+"name","التحويل للحروف الصغيرة"
 ],[
 "active",1
 ],[
@@ -1671,12 +1855,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-55,52,[
+56,53,[
 [
-"name","Upper Case"
+"name","التحويل للحروف الكبيرة"
 ],[
 "active",1
 ],[
@@ -1689,12 +1875,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-56,52,[
+57,53,[
 [
-"name","Set String Index"
+"name","تعديل حرف فى عبارة"
 ],[
 "active",1
 ],[
@@ -1707,12 +1895,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-57,52,[
+58,53,[
 [
-"name","Get String Index"
+"name","الحصول على حرف فى عبارة"
 ],[
 "active",1
 ],[
@@ -1725,12 +1915,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-58,52,[
+59,53,[
 [
-"name","Get Letters From Left"
+"name","الحصول على حروف عبارة من اليسار"
 ],[
 "active",1
 ],[
@@ -1743,12 +1935,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-59,52,[
+60,53,[
 [
-"name","Get Letters from Right"
+"name","الحصول على حروف عبارة من اليمين"
 ],[
 "active",1
 ],[
@@ -1761,12 +1955,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-60,52,[
+61,53,[
 [
-"name","Trim"
+"name","قص المسافات"
 ],[
 "active",1
 ],[
@@ -1779,12 +1975,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-61,52,[
+62,53,[
 [
-"name","Copy String"
+"name","نسخ عبارة حرفية"
 ],[
 "active",1
 ],[
@@ -1797,12 +1995,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-62,52,[
+63,53,[
 [
-"name","Get Lines Count in a String"
+"name","عدد اسطر عبارة حرفية"
 ],[
 "active",1
 ],[
@@ -1815,12 +2015,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-63,52,[
+64,53,[
 [
-"name","Find Sub String Position"
+"name","إيجاد مكان عبارة حرفية"
 ],[
 "active",1
 ],[
@@ -1833,16 +2035,19 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-64,52,[
+65,53,[
 [
-"name","Get Sub String from Position"
+"name","الحصول على عبارة حرفية بداية من مكان"
 ],[
 "active",1
 ],[
-"code","getsubstring"
+"code","getsubstring
+"
 ],[
 "interactionid",61
 ],[
@@ -1851,12 +2056,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-65,52,[
+66,53,[
 [
-"name","Get Characters from String"
+"name","الحصول على حروف من عبارة حرفية"
 ],[
 "active",1
 ],[
@@ -1869,12 +2076,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-66,52,[
+67,53,[
 [
-"name","Sub String Transform"
+"name","تحويل جزء من عبارة حرفية"
 ],[
 "active",1
 ],[
@@ -1887,12 +2096,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-67,52,[
+68,53,[
 [
-"name","String Compare"
+"name","مقارنة العبارات الحرفية"
 ],[
 "active",1
 ],[
@@ -1905,12 +2116,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-68,52,[
+69,53,[
 [
-"name","Convert String to List"
+"name","حول عبارة حرفية إلى قائمة"
 ],[
 "active",1
 ],[
@@ -1923,12 +2136,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-70,1,[
+71,1,[
 [
-"name","Date and Time"
+"name","الوقت والتاريخ"
 ],[
 "active",1
 ],[
@@ -1941,12 +2156,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-71,70,[
+72,71,[
 [
-"name","Clock"
+"name","النبضات"
 ],[
 "active",1
 ],[
@@ -1959,12 +2176,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-72,70,[
+73,71,[
 [
-"name","Clocks per second"
+"name","النبضات فى الثانية"
 ],[
 "active",1
 ],[
@@ -1977,12 +2196,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-73,70,[
+74,71,[
 [
-"name","Time"
+"name","الوقت"
 ],[
 "active",1
 ],[
@@ -1995,12 +2216,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-74,70,[
+75,71,[
 [
-"name","Date"
+"name","التاريخ"
 ],[
 "active",1
 ],[
@@ -2013,12 +2236,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-75,70,[
+76,71,[
 [
-"name","Time List"
+"name","قائمة الزمن"
 ],[
 "active",1
 ],[
@@ -2031,12 +2256,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-76,70,[
+77,71,[
 [
-"name","Add Days"
+"name","اضف ايام"
 ],[
 "active",1
 ],[
@@ -2049,12 +2276,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-77,70,[
+78,71,[
 [
-"name","diffdays"
+"name","الفرق بين تاريخ وتاريخ"
 ],[
 "active",1
 ],[
@@ -2067,12 +2296,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-78,1,[
+79,1,[
 [
-"name","Check Data Type and Conversion"
+"name","فحص نوع البيانات والتحويل"
 ],[
 "active",1
 ],[
@@ -2085,12 +2316,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-79,78,[
+80,79,[
 [
-"name","Check Data Type"
+"name","فحص نوع البيانات"
 ],[
 "active",1
 ],[
@@ -2103,12 +2336,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-80,78,[
+81,79,[
 [
-"name","Check Character"
+"name","فحص حرف"
 ],[
 "active",1
 ],[
@@ -2121,12 +2356,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-81,78,[
+82,79,[
 [
-"name","Conversion"
+"name","التحويل"
 ],[
 "active",1
 ],[
@@ -2139,16 +2376,38 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
 83,1,[
 [
-"name","Math"
+"name","الرياضيات"
 ],[
 "active",1
 ],[
 "code",""
+],[
+"interactionid",79
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+],[
+"plainname",""
+]
+]
+],[
+84,83,[
+[
+"name","الدوال الرياضية"
+],[
+"active",1
+],[
+"code","math"
 ],[
 "interactionid",80
 ],[
@@ -2157,16 +2416,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-85,83,[
+85,1,[
 [
-"name","Mathematical Functions"
+"name","الملفات"
 ],[
 "active",1
 ],[
-"code","math"
+"code",""
 ],[
 "interactionid",81
 ],[
@@ -2175,16 +2436,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-86,1,[
+86,85,[
 [
-"name","Files"
+"name","قراءة ملف "
 ],[
 "active",1
 ],[
-"code",""
+"code","file_read"
 ],[
 "interactionid",82
 ],[
@@ -2193,16 +2456,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-87,86,[
+87,85,[
 [
-"name","Read File to String"
+"name","اكتب ملف من عبارة حرفية"
 ],[
 "active",1
 ],[
-"code","file_read"
+"code","file_write"
 ],[
 "interactionid",83
 ],[
@@ -2211,16 +2476,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-88,86,[
+88,85,[
 [
-"name","Write File from String"
+"name","محتويات مجلد"
 ],[
 "active",1
 ],[
-"code","file_write"
+"code","file_dir"
 ],[
 "interactionid",84
 ],[
@@ -2229,16 +2496,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-89,86,[
+89,85,[
 [
-"name","Directory Contents"
+"name","اعد تسمية ملف"
 ],[
 "active",1
 ],[
-"code","file_dir"
+"code","file_rename"
 ],[
 "interactionid",85
 ],[
@@ -2247,16 +2516,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-90,86,[
+90,85,[
 [
-"name","Rename File"
+"name","حذف ملف"
 ],[
 "active",1
 ],[
-"code","file_rename"
+"code","file_remove"
 ],[
 "interactionid",86
 ],[
@@ -2265,16 +2536,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-91,86,[
+91,85,[
 [
-"name","Remove File"
+"name","فتح ملف"
 ],[
 "active",1
 ],[
-"code","file_remove"
+"code","file_fopen"
 ],[
 "interactionid",87
 ],[
@@ -2283,16 +2556,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-92,86,[
+92,85,[
 [
-"name","Open File"
+"name","اغلق الملف"
 ],[
 "active",1
 ],[
-"code","file_fopen"
+"code","file_close"
 ],[
 "interactionid",88
 ],[
@@ -2301,16 +2576,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-93,86,[
+93,85,[
 [
-"name","Close File"
+"name","تدفق ملف"
 ],[
 "active",1
 ],[
-"code","file_close"
+"code","file_fflush"
 ],[
 "interactionid",89
 ],[
@@ -2319,16 +2596,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-94,86,[
+94,85,[
 [
-"name","File Flush"
+"name","ملف مؤقت"
 ],[
 "active",1
 ],[
-"code","file_fflush"
+"code","file_tempfile"
 ],[
 "interactionid",90
 ],[
@@ -2337,16 +2616,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-95,86,[
+95,85,[
 [
-"name","Temp File"
+"name","اسم مؤقت"
 ],[
 "active",1
 ],[
-"code","file_tempfile"
+"code","file_tempname"
 ],[
 "interactionid",91
 ],[
@@ -2355,16 +2636,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-96,86,[
+96,85,[
 [
-"name","Temp Name"
+"name","المكان فى ملف"
 ],[
 "active",1
 ],[
-"code","file_tempname"
+"code","file_ftell"
 ],[
 "interactionid",92
 ],[
@@ -2373,16 +2656,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-97,86,[
+97,85,[
 [
-"name","File Posiiton"
+"name","بداية ملف"
 ],[
 "active",1
 ],[
-"code","file_ftell"
+"code","file_rewind"
 ],[
 "interactionid",93
 ],[
@@ -2391,16 +2676,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-98,86,[
+98,85,[
 [
-"name","File Rewind"
+"name","كائن المكان فى ملف"
 ],[
 "active",1
 ],[
-"code","file_rewind"
+"code","file_fgetpos"
 ],[
 "interactionid",94
 ],[
@@ -2409,16 +2696,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-99,86,[
+99,85,[
 [
-"name","File Position Handle"
+"name","ضبط المكان فى ملف"
 ],[
 "active",1
 ],[
-"code","file_fgetpos"
+"code","file_fsetpos"
 ],[
 "interactionid",95
 ],[
@@ -2427,16 +2716,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-100,86,[
+100,85,[
 [
-"name","Set File Position"
+"name","ملف - امسح الخطأ"
 ],[
 "active",1
 ],[
-"code","file_fsetpos"
+"code","clearerr"
 ],[
 "interactionid",96
 ],[
@@ -2445,16 +2736,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-101,86,[
+101,85,[
 [
-"name","File Clear Error"
+"name","فحص نهاية الملف"
 ],[
 "active",1
 ],[
-"code","file_clearerr"
+"code","file_feof"
 ],[
 "interactionid",97
 ],[
@@ -2463,16 +2756,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-102,86,[
+102,85,[
 [
-"name","Check End of File (EOF)"
+"name","فحص خطأ فى الملف"
 ],[
 "active",1
 ],[
-"code","file_feof"
+"code","file_ferror"
 ],[
 "interactionid",98
 ],[
@@ -2481,16 +2776,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-103,86,[
+103,85,[
 [
-"name","Check File Error"
+"name","طباعة رسالة الخطأ"
 ],[
 "active",1
 ],[
-"code","file_ferror"
+"code","file_perror"
 ],[
 "interactionid",99
 ],[
@@ -2499,16 +2796,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-104,86,[
+104,85,[
 [
-"name","Print Error"
+"name","قراءة حرف من ملف"
 ],[
 "active",1
 ],[
-"code","file_perror"
+"code","file_fgetc"
 ],[
 "interactionid",100
 ],[
@@ -2517,16 +2816,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-105,86,[
+105,85,[
 [
-"name","File Get Character"
+"name","قراءة عبارة حرفية من ملف"
 ],[
 "active",1
 ],[
-"code","file_fgetc"
+"code","file_fgets"
 ],[
 "interactionid",101
 ],[
@@ -2535,16 +2836,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-106,86,[
+106,85,[
 [
-"name","File Get String"
+"name","كتابة حرف فى ملف"
 ],[
 "active",1
 ],[
-"code","file_fgets"
+"code","file_fputc"
 ],[
 "interactionid",102
 ],[
@@ -2553,16 +2856,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-107,86,[
+107,85,[
 [
-"name","File Put Character"
+"name","كتابة عبارة حرفية فى ملف"
 ],[
 "active",1
 ],[
-"code","file_fputc"
+"code","file_fputs"
 ],[
 "interactionid",103
 ],[
@@ -2571,16 +2876,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-108,86,[
+108,85,[
 [
-"name","File Put String"
+"name","اعادة حرف الي الملف"
 ],[
 "active",1
 ],[
-"code","file_fputs"
+"code","file_ungetc"
 ],[
 "interactionid",104
 ],[
@@ -2589,16 +2896,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-109,86,[
+109,85,[
 [
-"name","File Unget Character"
+"name","قراءة بيانات من ملف"
 ],[
 "active",1
 ],[
-"code","file_ungetc"
+"code","file_fread"
 ],[
 "interactionid",105
 ],[
@@ -2607,16 +2916,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-110,86,[
+110,85,[
 [
-"name","File Read Data"
+"name","كتابة بيانات فى ملف"
 ],[
 "active",1
 ],[
-"code","file_fread"
+"code","file_fwrite"
 ],[
 "interactionid",106
 ],[
@@ -2625,16 +2936,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-111,86,[
+111,85,[
 [
-"name","File Write Data"
+"name","هل الملف موجود"
 ],[
 "active",1
 ],[
-"code","file_fwrite"
+"code","file_fexists"
 ],[
 "interactionid",107
 ],[
@@ -2643,16 +2956,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-112,86,[
+112,85,[
 [
-"name","File Exists"
+"name","الارقام والبايتس"
 ],[
 "active",1
 ],[
-"code","file_fexists"
+"code","numbersandbytes"
 ],[
 "interactionid",108
 ],[
@@ -2661,16 +2976,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-113,86,[
+113,85,[
 [
-"name","Numbers and Bytes"
+"name","اعادة فتح الملف"
 ],[
 "active",1
 ],[
-"code","numbersandbytes"
+"code","file_freopen"
 ],[
 "interactionid",109
 ],[
@@ -2679,16 +2996,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-114,86,[
+114,85,[
 [
-"name","File Reopen"
+"name","تغيير المكان فى ملف"
 ],[
 "active",1
 ],[
-"code","file_freopen"
+"code","file_fseek"
 ],[
 "interactionid",110
 ],[
@@ -2697,16 +3016,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-115,86,[
+115,1,[
 [
-"name","File Seek"
+"name","النظام"
 ],[
 "active",1
 ],[
-"code","file_fseek"
+"code",""
 ],[
 "interactionid",111
 ],[
@@ -2715,16 +3036,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-116,1,[
+116,115,[
 [
-"name","System"
+"name","تنفيذ امر فى النظام"
 ],[
 "active",1
 ],[
-"code",""
+"code","system"
 ],[
 "interactionid",112
 ],[
@@ -2733,16 +3056,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-117,116,[
+117,115,[
 [
-"name","Run System Command"
+"name","احصل على متغير من النظام"
 ],[
 "active",1
 ],[
-"code","system"
+"code","sysget"
 ],[
 "interactionid",113
 ],[
@@ -2751,16 +3076,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-118,116,[
+118,115,[
 [
-"name","Get System Variable "
+"name","فحص نظام التشغيل"
 ],[
 "active",1
 ],[
-"code","sysget"
+"code","checkos"
 ],[
 "interactionid",114
 ],[
@@ -2769,16 +3096,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-119,116,[
+119,115,[
 [
-"name","Check Operating System"
+"name","سطر جديد فى نظام الويندوز"
 ],[
 "active",1
 ],[
-"code","checkos"
+"code","windowsnl"
 ],[
 "interactionid",115
 ],[
@@ -2787,16 +3116,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-120,116,[
+120,115,[
 [
-"name","Windows New Line"
+"name","اسم الملف الحالى"
 ],[
 "active",1
 ],[
-"code","windowsnl"
+"code","filename"
 ],[
 "interactionid",116
 ],[
@@ -2805,16 +3136,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-121,116,[
+121,115,[
 [
-"name","Get Active File Name"
+"name","اسم ملف الكود السابق"
 ],[
 "active",1
 ],[
-"code","filename"
+"code","prevfilename"
 ],[
 "interactionid",117
 ],[
@@ -2823,16 +3156,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-122,116,[
+122,115,[
 [
-"name","Previous File Name"
+"name","اسم المجلد الحالى"
 ],[
 "active",1
 ],[
-"code","prevfilename"
+"code","currentdir"
 ],[
 "interactionid",118
 ],[
@@ -2841,16 +3176,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-123,116,[
+123,115,[
 [
-"name","Current Directory"
+"name","اسم الملف التنفيذي"
 ],[
 "active",1
 ],[
-"code","currentdir"
+"code","exefilename"
 ],[
 "interactionid",119
 ],[
@@ -2859,16 +3196,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-124,116,[
+124,115,[
 [
-"name","Get Executable File Name"
+"name","تغيير المجلد الحالى"
 ],[
 "active",1
 ],[
-"code","exefilename"
+"code","chdir"
 ],[
 "interactionid",120
 ],[
@@ -2877,16 +3216,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-125,116,[
+125,115,[
 [
-"name","Change Directory"
+"name","مجلد الملف التنفيذي"
 ],[
 "active",1
 ],[
-"code","chdir"
+"code","exefolder"
 ],[
 "interactionid",121
 ],[
@@ -2895,16 +3236,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-126,116,[
+126,115,[
 [
-"name","Get Executable Folder"
+"name","إصدار لغة الرينج"
 ],[
 "active",1
 ],[
-"code","exefolder"
+"code","version"
 ],[
 "interactionid",122
 ],[
@@ -2913,16 +3256,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-127,116,[
+127,115,[
 [
-"name","Get Ring Version"
+"name","اغلاق التطبيق"
 ],[
 "active",1
 ],[
-"code","version"
+"code","shutdown"
 ],[
 "interactionid",123
 ],[
@@ -2931,30 +3276,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
-]
-]
 ],[
-128,116,[
-[
-"name","Shutdown"
-],[
-"active",1
-],[
-"code","shutdown"
-],[
-"interactionid",124
-],[
-"visible",1
-],[
-"stepnumber",1
-],[
-"steptype",1
+"plainname",""
 ]
 ]
 ],[
 129,1,[
 [
-"name","Dynamic Code and Debugging"
+"name","الكود الديناميكى والتنقيح"
 ],[
 "active",1
 ],[
@@ -2967,12 +3296,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
 130,129,[
 [
-"name","Eval"
+"name","تنفيذ تعليمات"
 ],[
 "active",1
 ],[
@@ -2985,12 +3316,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-131,129,[
+132,129,[
 [
-"name","Raise"
+"name","توقف واعرض رسالة خطأ"
 ],[
 "active",1
 ],[
@@ -3003,12 +3336,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-132,129,[
+133,129,[
 [
-"name","Assert"
+"name","التحقق من شرط"
 ],[
 "active",1
 ],[
@@ -3021,12 +3356,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-133,1,[
+134,1,[
 [
-"name","Database"
+"name","قواعد البيانات"
 ],[
 "active",1
 ],[
@@ -3039,12 +3376,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-134,133,[
+135,134,[
 [
-"name","ODBC"
+"name","استخدام ال ODBC"
 ],[
 "active",1
 ],[
@@ -3057,12 +3396,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-135,134,[
+136,135,[
 [
-"name","ODBC Init"
+"name","تعريف ال ODBC"
 ],[
 "active",1
 ],[
@@ -3075,12 +3416,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-136,134,[
+137,135,[
 [
-"name","ODBC Drivers"
+"name","تعريفات ال ODBC"
 ],[
 "active",1
 ],[
@@ -3093,12 +3436,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-137,134,[
+138,135,[
 [
-"name","ODBC Data Sources"
+"name","مصادر بيانات ال ODBC"
 ],[
 "active",1
 ],[
@@ -3111,12 +3456,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-138,134,[
+139,135,[
 [
-"name","ODBC Close"
+"name","اغلاق ODBC"
 ],[
 "active",1
 ],[
@@ -3129,12 +3476,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-139,134,[
+140,135,[
 [
-"name","ODBC Connect"
+"name","اتصال بال ODBC "
 ],[
 "active",1
 ],[
@@ -3147,12 +3496,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-140,134,[
+141,135,[
 [
-"name","ODBC Disconnect"
+"name","الغاء اتصال ODBC"
 ],[
 "active",1
 ],[
@@ -3165,12 +3516,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-141,134,[
+142,135,[
 [
-"name","ODBC Execute"
+"name","تنفيذ امر بال ODBC"
 ],[
 "active",1
 ],[
@@ -3183,12 +3536,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-142,134,[
+143,135,[
 [
-"name","ODBC Column Count"
+"name","عدد الاعمدة من خلال ODBC"
 ],[
 "active",1
 ],[
@@ -3201,12 +3556,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-143,134,[
+144,135,[
 [
-"name","ODBC Fetch"
+"name","اخذ البيانات عبر ال ODBC"
 ],[
 "active",1
 ],[
@@ -3219,12 +3576,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-144,134,[
+145,135,[
 [
-"name","ODBC Get Data"
+"name","الحصول على بيانات عمود عبر ال ODBC"
 ],[
 "active",1
 ],[
@@ -3237,12 +3596,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-145,134,[
+146,135,[
 [
-"name","ODBC Tables"
+"name","الجداول عبر ال ODBC"
 ],[
 "active",1
 ],[
@@ -3255,12 +3616,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-146,134,[
+147,135,[
 [
-"name","ODBC Columns"
+"name","اعمدة جدول عبر ال ODBC"
 ],[
 "active",1
 ],[
@@ -3273,34 +3636,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-147,134,[
+149,135,[
 [
-"name","ODBC Auto Commit"
+"name","الحفظ التلقائى فى ال ODBC"
 ],[
 "active",1
 ],[
 "code","odbc_autocommit"
-],[
-"interactionid",143
-],[
-"visible",1
-],[
-"stepnumber",1
-],[
-"steptype",1
-]
-]
-],[
-148,134,[
-[
-"name","ODBC Commit"
-],[
-"active",1
-],[
-"code","odbc_commit"
 ],[
 "interactionid",144
 ],[
@@ -3309,16 +3656,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-149,134,[
+151,135,[
 [
-"name","ODBC Rollback"
+"name","حفظ العمليات عبر ال ODBC"
 ],[
 "active",1
 ],[
-"code","odbc_rollback"
+"code","odbc_commit"
 ],[
 "interactionid",145
 ],[
@@ -3327,16 +3676,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-150,133,[
+152,135,[
 [
-"name","MySQL"
+"name","الغاء حفظ العمليات عبر ال ODBC"
 ],[
 "active",1
 ],[
-"code",""
+"code","odbc_rollback"
 ],[
 "interactionid",146
 ],[
@@ -3345,16 +3696,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-151,150,[
+153,134,[
 [
-"name","MySQL Info"
+"name","استخدام MySQL"
 ],[
 "active",1
 ],[
-"code","mysql_info"
+"code",""
 ],[
 "interactionid",147
 ],[
@@ -3363,16 +3716,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-152,150,[
+154,153,[
 [
-"name","MySQL Init"
+"name","معلومات MySQL"
 ],[
 "active",1
 ],[
-"code","mysql_init"
+"code","mysql_info"
 ],[
 "interactionid",148
 ],[
@@ -3381,16 +3736,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-153,150,[
+155,153,[
 [
-"name","MySQL Error"
+"name","تجهيز MySQL"
 ],[
 "active",1
 ],[
-"code","mysql_error"
+"code","mysql_init"
 ],[
 "interactionid",149
 ],[
@@ -3399,16 +3756,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-154,150,[
+156,153,[
 [
-"name","MySQL Connect"
+"name","خطأ MySQL"
 ],[
 "active",1
 ],[
-"code","mysql_connect"
+"code","mysql_error"
 ],[
 "interactionid",150
 ],[
@@ -3417,16 +3776,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-155,150,[
+157,153,[
 [
-"name","MySQL Close"
+"name","اتصال MySQL"
 ],[
 "active",1
 ],[
-"code","mysql_close"
+"code","mysql_connect"
 ],[
 "interactionid",151
 ],[
@@ -3435,16 +3796,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-156,150,[
+158,153,[
 [
-"name","MySQL Query"
+"name","اغلاق MySQL"
 ],[
 "active",1
 ],[
-"code","mysql_query"
+"code","mysql_close"
 ],[
 "interactionid",152
 ],[
@@ -3453,16 +3816,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-157,150,[
+159,153,[
 [
-"name","MySQL Insert ID"
+"name","استعلام MySQL"
 ],[
 "active",1
 ],[
-"code","mysql_insert_id"
+"code","mysql_query"
 ],[
 "interactionid",153
 ],[
@@ -3471,16 +3836,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-158,150,[
+160,153,[
 [
-"name","MySQL Result"
+"name","كود السجل الجديد MySQL"
 ],[
 "active",1
 ],[
-"code","mysql_result"
+"code","mysql_insert_id"
 ],[
 "interactionid",154
 ],[
@@ -3489,16 +3856,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-159,150,[
+161,153,[
 [
-"name","MySQL Next Result"
+"name","ناتج استعلام MySQL"
 ],[
 "active",1
 ],[
-"code","mysql_next_result"
+"code","mysql_result"
 ],[
 "interactionid",155
 ],[
@@ -3507,16 +3876,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-160,150,[
+162,153,[
 [
-"name","MySQL Columns"
+"name","ناتج الاستعلام التالي MySQL"
 ],[
 "active",1
 ],[
-"code","mysql_columns"
+"code","mysql_next_result"
 ],[
 "interactionid",156
 ],[
@@ -3525,16 +3896,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-161,150,[
+163,153,[
 [
-"name","MySQL Result 2"
+"name","اعمدة الجدول MySQL "
 ],[
 "active",1
 ],[
-"code","mysql_result2"
+"code","mysql_columns"
 ],[
 "interactionid",157
 ],[
@@ -3543,16 +3916,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-162,150,[
+164,153,[
 [
-"name","MySQL Escape String"
+"name","ناتج الاستعلام بدون اعمدة MySQL "
 ],[
 "active",1
 ],[
-"code","mysql_escape_string"
+"code","mysql_result2"
 ],[
 "interactionid",158
 ],[
@@ -3561,16 +3936,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-163,150,[
+165,153,[
 [
-"name","MySQL Auto Commit"
+"name","معالجة عبارة حرفية MySQL"
 ],[
 "active",1
 ],[
-"code","mysql_autocommit"
+"code","mysql_escape_string"
 ],[
 "interactionid",159
 ],[
@@ -3579,16 +3956,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-164,150,[
+166,153,[
 [
-"name","MySQL Commit "
+"name","حالة الحفظ التلقائى MySQL"
 ],[
 "active",1
 ],[
-"code","mysql_commit"
+"code","mysql_autocommit"
 ],[
 "interactionid",160
 ],[
@@ -3597,16 +3976,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-165,150,[
+167,153,[
 [
-"name","MySQL Rollback"
+"name","حفظ العمليات MySQL"
 ],[
 "active",1
 ],[
-"code","mysql_rollback"
+"code","mysql_commit"
 ],[
 "interactionid",161
 ],[
@@ -3615,16 +3996,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-166,133,[
+168,153,[
 [
-"name","SQLite"
+"name","الغاء العمليات MySQL Rollback"
 ],[
 "active",1
 ],[
-"code",""
+"code","mysql_rollback"
 ],[
 "interactionid",162
 ],[
@@ -3633,16 +4016,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-167,166,[
+169,134,[
 [
-"name","SQLite Init"
+"name","استخدام SQLite"
 ],[
 "active",1
 ],[
-"code","sqlite_init"
+"code",""
 ],[
 "interactionid",163
 ],[
@@ -3651,16 +4036,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-168,166,[
+170,169,[
 [
-"name","SQLite Open"
+"name","تجهيز SQLite"
 ],[
 "active",1
 ],[
-"code","sqlite_open"
+"code","sqlite_init"
 ],[
 "interactionid",164
 ],[
@@ -3669,16 +4056,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-169,166,[
+171,169,[
 [
-"name","SQLite Execute"
+"name","فتح ملف SQLite"
 ],[
 "active",1
 ],[
-"code","sqlite_execute"
+"code","sqlite_open"
 ],[
 "interactionid",165
 ],[
@@ -3687,16 +4076,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-170,166,[
+172,169,[
 [
-"name","SQLite Close "
+"name","تنفيذ استعلام SQLite "
 ],[
 "active",1
 ],[
-"code","sqlite_close"
+"code","sqlite_execute "
 ],[
 "interactionid",166
 ],[
@@ -3705,16 +4096,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-171,1,[
+173,169,[
 [
-"name","Security and Internet Functions"
+"name","اغلاق SQLite "
 ],[
 "active",1
 ],[
-"code",""
+"code","sqlite_close"
 ],[
 "interactionid",167
 ],[
@@ -3723,16 +4116,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-172,171,[
+174,1,[
 [
-"name","MD5"
+"name","الأمان ودوال الإنترنت"
 ],[
 "active",1
 ],[
-"code","md5"
+"code",""
 ],[
 "interactionid",168
 ],[
@@ -3741,16 +4136,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-173,171,[
+175,174,[
 [
-"name","SHA1"
+"name","دالة MD5"
 ],[
 "active",1
 ],[
-"code","sha1"
+"code","md5"
 ],[
 "interactionid",169
 ],[
@@ -3759,16 +4156,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-174,171,[
+176,174,[
 [
-"name","SHA256"
+"name","دالة SHA1"
 ],[
 "active",1
 ],[
-"code","sha256"
+"code","sha1"
 ],[
 "interactionid",170
 ],[
@@ -3777,16 +4176,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-175,171,[
+177,174,[
 [
-"name","SHA512"
+"name","دالة SHA256"
 ],[
 "active",1
 ],[
-"code","sha512"
+"code","sha256"
 ],[
 "interactionid",171
 ],[
@@ -3795,16 +4196,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-176,171,[
+178,174,[
 [
-"name","SHA384"
+"name","دالة SHA512"
 ],[
 "active",1
 ],[
-"code","sha384"
+"code","sha512"
 ],[
 "interactionid",172
 ],[
@@ -3813,16 +4216,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-177,171,[
+179,174,[
 [
-"name","SHA224"
+"name","دالة SHA384"
 ],[
 "active",1
 ],[
-"code","sha224"
+"code","sha384"
 ],[
 "interactionid",173
 ],[
@@ -3831,16 +4236,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-178,171,[
+180,174,[
 [
-"name","Encrypt"
+"name","دالة SHA224"
 ],[
 "active",1
 ],[
-"code","encrypt"
+"code","sha224"
 ],[
 "interactionid",174
 ],[
@@ -3849,16 +4256,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-179,171,[
+181,174,[
 [
-"name","Decrypt"
+"name","التشفير"
 ],[
 "active",1
 ],[
-"code","decrypt"
+"code","encrypt"
 ],[
 "interactionid",175
 ],[
@@ -3867,16 +4276,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-180,171,[
+182,174,[
 [
-"name","Random Bytes"
+"name","فك التشفير"
 ],[
 "active",1
 ],[
-"code","randbytes"
+"code","decrypt"
 ],[
 "interactionid",176
 ],[
@@ -3885,16 +4296,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-181,171,[
+183,174,[
 [
-"name","Download"
+"name","دالة RandBytes"
 ],[
 "active",1
 ],[
-"code","download"
+"code","randbytes"
 ],[
 "interactionid",177
 ],[
@@ -3903,16 +4316,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-182,171,[
+184,174,[
 [
-"name","Send Email"
+"name","التحميل"
 ],[
 "active",1
 ],[
-"code","sendemail"
+"code","download"
 ],[
 "interactionid",178
 ],[
@@ -3921,16 +4336,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-183,1,[
+185,174,[
 [
-"name","Object Oriented Programming"
+"name","إرسال إيميل"
 ],[
 "active",1
 ],[
-"code",""
+"code","sendemail"
 ],[
 "interactionid",179
 ],[
@@ -3939,16 +4356,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-184,183,[
+186,1,[
 [
-"name","Define Class"
+"name","البرمجة الموجهة بالكائنات"
 ],[
 "active",1
 ],[
-"code","class"
+"code",""
 ],[
 "interactionid",180
 ],[
@@ -3957,16 +4376,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-185,183,[
+187,186,[
 [
-"name","New Object"
+"name","تعريف فئة"
 ],[
 "active",1
 ],[
-"code","newobj"
+"code","class"
 ],[
 "interactionid",181
 ],[
@@ -3975,16 +4396,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-186,183,[
+188,186,[
 [
-"name","Braces"
+"name","كائن جديد"
 ],[
 "active",1
 ],[
-"code","braces"
+"code","newobj"
 ],[
 "interactionid",182
 ],[
@@ -3993,16 +4416,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-187,183,[
+189,186,[
 [
-"name","Free Typing"
+"name","اقواس المجموعة"
 ],[
 "active",1
 ],[
-"code","freetyping"
+"code","braces"
 ],[
 "interactionid",183
 ],[
@@ -4011,16 +4436,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-188,183,[
+190,186,[
 [
-"name","Access Object"
+"name","الكتابة الحرة"
 ],[
 "active",1
 ],[
-"code","accessobject"
+"code","freetyping"
 ],[
 "interactionid",184
 ],[
@@ -4029,16 +4456,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-189,183,[
+191,186,[
 [
-"name","Define Package"
+"name","دخول كائن"
 ],[
 "active",1
 ],[
-"code","package"
+"code","accessobject"
 ],[
 "interactionid",185
 ],[
@@ -4047,16 +4476,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-190,183,[
+192,186,[
 [
-"name","Import Package"
+"name","تعريف حقيبة"
 ],[
 "active",1
 ],[
-"code","import"
+"code","package"
 ],[
 "interactionid",186
 ],[
@@ -4065,16 +4496,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-191,183,[
+193,186,[
 [
-"name","Set Object Attribute"
+"name","استخدام حقيبة"
 ],[
 "active",1
 ],[
-"code","setobjectattribute"
+"code","import"
 ],[
 "interactionid",187
 ],[
@@ -4083,16 +4516,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-192,183,[
+194,186,[
 [
-"name","Get Object Attribute "
+"name","ضبط قيمة خاصية لكائن"
 ],[
 "active",1
 ],[
-"code","getobjectattribute"
+"code","setobjectattribute"
 ],[
 "interactionid",188
 ],[
@@ -4101,16 +4536,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-193,183,[
+195,186,[
 [
-"name","Call Object Method"
+"name","الحصول على قيمة خاصية لكائن"
 ],[
 "active",1
 ],[
-"code","callmethod"
+"code","getobjectattribute"
 ],[
 "interactionid",189
 ],[
@@ -4119,16 +4556,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-194,1,[
+196,186,[
 [
-"name","Functional Programming"
+"name","استدعاء ميثود"
 ],[
 "active",1
 ],[
-"code",""
+"code","callmethod"
 ],[
 "interactionid",190
 ],[
@@ -4137,16 +4576,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-195,194,[
+197,1,[
 [
-"name","Call Function by Variable"
+"name","البرمجة الوظيفية "
 ],[
 "active",1
 ],[
-"code","callfuncbyvariable"
+"code",""
 ],[
 "interactionid",191
 ],[
@@ -4155,16 +4596,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-196,194,[
+198,197,[
 [
-"name","Anonymous Function"
+"name","استدعاء دالة عبر متغير"
 ],[
 "active",1
 ],[
-"code","anonfunc"
+"code","callfuncbyvariable"
 ],[
 "interactionid",192
 ],[
@@ -4173,16 +4616,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-197,194,[
+199,197,[
 [
-"name","Nested Function"
+"name","دالة مجهولة"
 ],[
 "active",1
 ],[
-"code","nestedfunc"
+"code","anonfunc"
 ],[
 "interactionid",193
 ],[
@@ -4191,16 +4636,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-198,1,[
+200,197,[
 [
-"name","Reflection and Meta-programming"
+"name","دالة فرعية"
 ],[
 "active",1
 ],[
-"code","refmeta_locals"
+"code","nestedfunc"
 ],[
 "interactionid",194
 ],[
@@ -4209,16 +4656,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-199,198,[
+201,1,[
 [
-"name","Locals Info"
+"name","نمط ال Reflection and Meta-programming"
 ],[
 "active",1
 ],[
-"code","refmeta_locals"
+"code",""
 ],[
 "interactionid",195
 ],[
@@ -4227,16 +4676,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-200,198,[
+202,201,[
 [
-"name","Globals Info"
+"name","المتغيرات المحلية Locals"
 ],[
 "active",1
 ],[
-"code","refmeta_globals"
+"code","refmeta_locals"
 ],[
 "interactionid",196
 ],[
@@ -4245,16 +4696,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-201,198,[
+203,201,[
 [
-"name","Functions Info"
+"name","المتغيرات العامة Globals"
 ],[
 "active",1
 ],[
-"code","refmeta_functions"
+"code","refmeta_globals"
 ],[
 "interactionid",197
 ],[
@@ -4263,16 +4716,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-202,198,[
+204,201,[
 [
-"name","C Functions Info"
+"name","الدوال Functions"
 ],[
 "active",1
 ],[
-"code","refmeta_cfunctions"
+"code","refmeta_functions"
 ],[
 "interactionid",198
 ],[
@@ -4281,16 +4736,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-203,198,[
+205,201,[
 [
-"name","Is Local"
+"name","دوال السي C Functions"
 ],[
 "active",1
 ],[
-"code","refmeta_islocal"
+"code","refmeta_cfunctions"
 ],[
 "interactionid",199
 ],[
@@ -4299,16 +4756,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-204,198,[
+206,201,[
 [
-"name","Is Global"
+"name","هل المتغير محلي Is Local"
 ],[
 "active",1
 ],[
-"code","refmeta_isglobal"
+"code","refmeta_islocal"
 ],[
 "interactionid",200
 ],[
@@ -4317,16 +4776,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-205,198,[
+207,201,[
 [
-"name","Is Function"
+"name","هل المتغير عام Is Global"
 ],[
 "active",1
 ],[
-"code","refmeta_isfunction"
+"code","refmeta_isglobal"
 ],[
 "interactionid",201
 ],[
@@ -4335,16 +4796,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-206,198,[
+208,201,[
 [
-"name","Is C Function"
+"name","هل الدالة معرفة Is Function"
 ],[
 "active",1
 ],[
-"code","refmeta_iscfunction"
+"code","refmeta_isfunction"
 ],[
 "interactionid",202
 ],[
@@ -4353,16 +4816,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-207,198,[
+209,201,[
 [
-"name","Packages Info"
+"name","هل دالة السي معرفة Is C Function"
 ],[
 "active",1
 ],[
-"code","refmeta_packages"
+"code","refmeta_iscfunction"
 ],[
 "interactionid",203
 ],[
@@ -4371,16 +4836,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-208,198,[
+210,201,[
 [
-"name","Is Package"
+"name","معلومات الحقائب Packages Info"
 ],[
 "active",1
 ],[
-"code","refmeta_ispackage"
+"code","refmeta_packages"
 ],[
 "interactionid",204
 ],[
@@ -4389,16 +4856,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-209,198,[
+211,201,[
 [
-"name","Classes Info"
+"name","هل الحقيبة معرفة Is Package"
 ],[
 "active",1
 ],[
-"code","refmeta_classes"
+"code","refmeta_ispackage"
 ],[
 "interactionid",205
 ],[
@@ -4407,16 +4876,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-210,198,[
+212,201,[
 [
-"name","Is Class"
+"name","معلومات الفئات Classes Info"
 ],[
 "active",1
 ],[
-"code","refmeta_isclass"
+"code","refmeta_classes"
 ],[
 "interactionid",206
 ],[
@@ -4425,16 +4896,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-211,198,[
+213,201,[
 [
-"name","Package Classes Info"
+"name","هل الفئة معرفة Is Class"
 ],[
 "active",1
 ],[
-"code","refmeta_packageclasses"
+"code","refmeta_isclass"
 ],[
 "interactionid",207
 ],[
@@ -4443,16 +4916,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-212,198,[
+214,201,[
 [
-"name","Is Package contains Class"
+"name","معلومات فئات الحقيبة Package Classes"
 ],[
 "active",1
 ],[
-"code","refmeta_ispackageclass"
+"code","refmeta_packageclasses"
 ],[
 "interactionid",208
 ],[
@@ -4461,16 +4936,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-213,198,[
+215,201,[
 [
-"name","Class Name"
+"name","هل الحقيبة تحتوى على فئة"
 ],[
 "active",1
 ],[
-"code","refmeta_classname"
+"code",""
 ],[
 "interactionid",209
 ],[
@@ -4479,16 +4956,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-214,198,[
+216,201,[
 [
-"name","Object ID"
+"name","اسم الفئة"
 ],[
 "active",1
 ],[
-"code","refmeta_objectid"
+"code","refmeta_classname"
 ],[
 "interactionid",210
 ],[
@@ -4497,16 +4976,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-215,198,[
+217,201,[
 [
-"name","Is Object"
+"name","كود الكائن"
 ],[
 "active",1
 ],[
-"code","refmeta_isobject"
+"code","refmeta_objectid"
 ],[
 "interactionid",211
 ],[
@@ -4515,16 +4996,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-216,198,[
+218,201,[
 [
-"name","Attributes"
+"name","هل هو كائن"
 ],[
 "active",1
 ],[
-"code","refmeta_attributes"
+"code","refmeta_isobject"
 ],[
 "interactionid",212
 ],[
@@ -4533,16 +5016,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-217,198,[
+219,201,[
 [
-"name","Methods"
+"name","خصائص كائن"
 ],[
 "active",1
 ],[
-"code","refmeta_methods"
+"code","refmeta_attributes"
 ],[
 "interactionid",213
 ],[
@@ -4551,16 +5036,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-218,198,[
+220,201,[
 [
-"name","Is Attribute"
+"name","دوال كائن"
 ],[
 "active",1
 ],[
-"code","refmeta_isattribute"
+"code","refmeta_methods"
 ],[
 "interactionid",214
 ],[
@@ -4569,16 +5056,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-219,198,[
+221,201,[
 [
-"name","Is Private Attribute"
+"name","هل الكائن يحتوى على خاصية"
 ],[
 "active",1
 ],[
-"code","refmeta_isprivateattribute"
+"code","refmeta_isattribute"
 ],[
 "interactionid",215
 ],[
@@ -4587,16 +5076,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-220,198,[
+222,201,[
 [
-"name","Is Method"
+"name","هل الكائن يحتوى على خاصية خاصة"
 ],[
 "active",1
 ],[
-"code","refmeta_ismethod"
+"code","refmeta_isprivateattribute"
 ],[
 "interactionid",216
 ],[
@@ -4605,16 +5096,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-221,198,[
+223,201,[
 [
-"name","Is Private Method"
+"name","هل الكائن يحتوى على دالة"
 ],[
 "active",1
 ],[
-"code","refmeta_isprivatemethod"
+"code","refmeta_ismethod"
 ],[
 "interactionid",217
 ],[
@@ -4623,16 +5116,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-222,198,[
+224,201,[
 [
-"name","Add Attribute"
+"name","هل الكائن يحتوى على دالة خاصة"
 ],[
 "active",1
 ],[
-"code","refmeta_addattribute"
+"code","refmeta_isprivatemethod"
 ],[
 "interactionid",218
 ],[
@@ -4641,16 +5136,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-223,198,[
+225,201,[
 [
-"name","Add Method"
+"name","اضف خاصية للكائن"
 ],[
 "active",1
 ],[
-"code","refmeta_addmethod"
+"code","refmeta_addattribute"
 ],[
 "interactionid",219
 ],[
@@ -4659,16 +5156,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-224,198,[
+226,201,[
 [
-"name","Get Attribute Value"
+"name","اضافة دالة لكائن"
 ],[
 "active",1
 ],[
-"code","refmeta_getattribute"
+"code","refmeta_addmethod"
 ],[
 "interactionid",220
 ],[
@@ -4677,16 +5176,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-225,198,[
+227,201,[
 [
-"name","Set Attribute Value"
+"name","قيمة خاصية لكائن"
 ],[
 "active",1
 ],[
-"code","refmeta_setattribute"
+"code","refmeta_getattribute"
 ],[
 "interactionid",221
 ],[
@@ -4695,16 +5196,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-226,198,[
+228,201,[
 [
-"name","Merge Methods"
+"name","ضبط قيمة الخاصية لكائن"
 ],[
 "active",1
 ],[
-"code","refmeta_mergemethods"
+"code","refmeta_setattribute"
 ],[
 "interactionid",222
 ],[
@@ -4713,16 +5216,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-227,198,[
+229,201,[
 [
-"name","Package Name"
+"name","دمج الدوال الى فئة من فئة اخري"
 ],[
 "active",1
 ],[
-"code","refmeta_packagename"
+"code","refmeta_mergemethods"
 ],[
 "interactionid",223
 ],[
@@ -4731,16 +5236,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-228,1,[
+230,201,[
 [
-"name","StdLib"
+"name","اسم الحقيبة"
 ],[
 "active",1
 ],[
-"code",""
+"code","refmeta_packagename"
 ],[
 "interactionid",224
 ],[
@@ -4749,12 +5256,14 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-229,228,[
+231,1,[
 [
-"name","Functions"
+"name","المكتبة القياسية StdLib"
 ],[
 "active",1
 ],[
@@ -4767,16 +5276,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-230,229,[
+232,231,[
 [
-"name","SL Puts"
+"name","الدوال Functions"
 ],[
 "active",1
 ],[
-"code","stdlib_puts"
+"code",""
 ],[
 "interactionid",226
 ],[
@@ -4785,16 +5296,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-231,229,[
+233,232,[
 [
-"name","SL Print"
+"name","اطبع تعبير Puts"
 ],[
 "active",1
 ],[
-"code","stdlib_print"
+"code","stdlib_puts"
 ],[
 "interactionid",227
 ],[
@@ -4803,16 +5316,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-232,229,[
+234,232,[
 [
-"name","SL Print to String"
+"name","اطبع عبارة Print"
 ],[
 "active",1
 ],[
-"code","stdlib_print2str"
+"code","stdlib_print"
 ],[
 "interactionid",228
 ],[
@@ -4821,16 +5336,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-233,229,[
+235,232,[
 [
-"name","SL Get String"
+"name","اطبع الى عبارة حرفية Print2Str"
 ],[
 "active",1
 ],[
-"code","stdlib_getstring"
+"code","stdlib_print2str"
 ],[
 "interactionid",229
 ],[
@@ -4839,34 +5356,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-234,229,[
+237,232,[
 [
-"name","SL Get Number"
+"name","ادخال عبارة حرفية GetString"
 ],[
 "active",1
 ],[
-"code","stdlib_getnumber"
-],[
-"interactionid",230
-],[
-"visible",1
-],[
-"stepnumber",1
-],[
-"steptype",1
-]
-]
-],[
-235,229,[
-[
-"name","SL Application Path"
-],[
-"active",1
-],[
-"code","stdlib_apppath"
+"code","stdlib_getstring"
 ],[
 "interactionid",231
 ],[
@@ -4875,16 +5376,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-236,229,[
+239,232,[
 [
-"name","SL Just File Path"
+"name","ادخال رقم GetNumber"
 ],[
 "active",1
 ],[
-"code","stdlib_justfilepath"
+"code","stdlib_getnumber"
 ],[
 "interactionid",232
 ],[
@@ -4893,16 +5396,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-237,229,[
+240,232,[
 [
-"name","SL Just File Name"
+"name","مسار التطبيق AppPath"
 ],[
 "active",1
 ],[
-"code","stdlib_justfilename"
+"code","stdlib_apppath"
 ],[
 "interactionid",233
 ],[
@@ -4911,16 +5416,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-238,229,[
+241,232,[
 [
-"name","SL Times"
+"name","مسار الملف فقط JustFilePath"
 ],[
 "active",1
 ],[
-"code","stdlib_times"
+"code","stdlib_justfilepath"
 ],[
 "interactionid",234
 ],[
@@ -4929,16 +5436,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-239,229,[
+242,232,[
 [
-"name","SL Map"
+"name","اسم الملف فقط JustFileName"
 ],[
 "active",1
 ],[
-"code","stdlib_map"
+"code","stdlib_justfilename"
 ],[
 "interactionid",235
 ],[
@@ -4947,16 +5456,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-240,229,[
+243,232,[
 [
-"name","SL Filter"
+"name","تنفيذ دالة عدد معين من المرات Times"
 ],[
 "active",1
 ],[
-"code","stdlib_filter"
+"code","stdlib_times"
 ],[
 "interactionid",236
 ],[
@@ -4965,16 +5476,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-241,229,[
+244,232,[
 [
-"name","SL Split"
+"name","تنفيذ دالة على عناصر قائمة Map"
 ],[
 "active",1
 ],[
-"code","stdlib_split"
+"code","stdlib_map"
 ],[
 "interactionid",237
 ],[
@@ -4983,16 +5496,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-242,229,[
+245,232,[
 [
-"name","SL Split Many"
+"name","تصفية عناصر قائمة Filter"
 ],[
 "active",1
 ],[
-"code","stdlib_splitmany"
+"code","stdlib_filter"
 ],[
 "interactionid",238
 ],[
@@ -5001,16 +5516,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-243,229,[
+246,232,[
 [
-"name","SL New List"
+"name","فصل عبارة حرفية Split"
 ],[
 "active",1
 ],[
-"code","stdlib_newlist"
+"code","stdlib_split"
 ],[
 "interactionid",239
 ],[
@@ -5019,16 +5536,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-244,229,[
+247,232,[
 [
-"name","SL Capitalized"
+"name","فصل عبارة حرفية بعدة فواصل SplitMany"
 ],[
 "active",1
 ],[
-"code","stdlib_capitalized"
+"code","stdlib_splitmany"
 ],[
 "interactionid",240
 ],[
@@ -5037,16 +5556,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-245,229,[
+248,232,[
 [
-"name","SL Is Special"
+"name","قائمة جديدة NewList"
 ],[
 "active",1
 ],[
-"code","stdlib_isspecial"
+"code","stdlib_newlist"
 ],[
 "interactionid",241
 ],[
@@ -5055,16 +5576,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-246,229,[
+249,232,[
 [
-"name","SL Is Vowel"
+"name","تحويل اول حرف الى حرف كبير Capitalized"
 ],[
 "active",1
 ],[
-"code","stdlib_isvowel"
+"code","stdlib_capitalized"
 ],[
 "interactionid",242
 ],[
@@ -5073,16 +5596,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-247,229,[
+250,232,[
 [
-"name","SL Line Count"
+"name","فحص الحرف هل هو مميز IsSpecial"
 ],[
 "active",1
 ],[
-"code","stdlib_linecount"
+"code","stdlib_isspecial"
 ],[
 "interactionid",243
 ],[
@@ -5091,16 +5616,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-248,229,[
+251,232,[
 [
-"name","SL Factorial"
+"name","فحص الحرف هل هو ساكن IsVowel"
 ],[
 "active",1
 ],[
-"code","stdlib_factorial"
+"code","stdlib_isvowel"
 ],[
 "interactionid",244
 ],[
@@ -5109,16 +5636,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-249,229,[
+252,232,[
 [
-"name","SL Fibonacci"
+"name","عدد الاسطر فى ملف LineCount"
 ],[
 "active",1
 ],[
-"code","stdlib_fibonacci"
+"code","stdlib_linecount"
 ],[
 "interactionid",245
 ],[
@@ -5127,16 +5656,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-250,229,[
+253,232,[
 [
-"name","SL Is Prime"
+"name","مضروب Factorial"
 ],[
 "active",1
 ],[
-"code","stdlib_isprime"
+"code","stdlib_factorial"
 ],[
 "interactionid",246
 ],[
@@ -5145,16 +5676,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-251,229,[
+254,232,[
 [
-"name","SL Sign"
+"name","متتالية فيبوناتشي Fibonacci"
 ],[
 "active",1
 ],[
-"code","stdlib_sign"
+"code","stdlib_fibonacci"
 ],[
 "interactionid",247
 ],[
@@ -5163,16 +5696,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-252,229,[
+255,232,[
 [
-"name","SL List to File"
+"name","هل العدد اولى IsPrime"
 ],[
 "active",1
 ],[
-"code","stdlib_list2file"
+"code","stdlib_isprime"
 ],[
 "interactionid",248
 ],[
@@ -5181,16 +5716,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-253,229,[
+256,232,[
 [
-"name","SL File to List"
+"name","اشارة عدد Sign"
 ],[
 "active",1
 ],[
-"code","stdlib_file2list"
+"code","stdlib_sign"
 ],[
 "interactionid",249
 ],[
@@ -5199,16 +5736,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-254,229,[
+257,232,[
 [
-"name","SL Starts With"
+"name","قائمة الى ملف List2File"
 ],[
 "active",1
 ],[
-"code","stdlib_startswith"
+"code","stdlib_list2file"
 ],[
 "interactionid",250
 ],[
@@ -5217,16 +5756,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-255,229,[
+258,232,[
 [
-"name","SL Ends With"
+"name","ملف الى قائمة File2List"
 ],[
 "active",1
 ],[
-"code","stdlib_endswith"
+"code","stdlib_file2list"
 ],[
 "interactionid",251
 ],[
@@ -5235,16 +5776,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-256,229,[
+259,232,[
 [
-"name","SL Greatest Common Divisor"
+"name","العبارة تبدأ ب StartsWith"
 ],[
 "active",1
 ],[
-"code","stdlib_gcd"
+"code","stdlib_startswith"
 ],[
 "interactionid",252
 ],[
@@ -5253,16 +5796,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-257,229,[
+260,232,[
 [
-"name","SL Least Common Multiple"
+"name","العبارة تنتهى ب EndsWith"
 ],[
 "active",1
 ],[
-"code","stdlib_lcm"
+"code","stdlib_endswith"
 ],[
 "interactionid",253
 ],[
@@ -5271,16 +5816,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-258,229,[
+261,232,[
 [
-"name","SL Sum List"
+"name","اعلى قاسم مشترك GCD"
 ],[
 "active",1
 ],[
-"code","stdlib_sumlist"
+"code","stdlib_gcd"
 ],[
 "interactionid",254
 ],[
@@ -5289,16 +5836,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-259,229,[
+262,232,[
 [
-"name","SL Product of a List"
+"name","اقل مضاعف مشترك LCM"
 ],[
 "active",1
 ],[
-"code","stdlib_prodlist"
+"code","stdlib_lcm"
 ],[
 "interactionid",255
 ],[
@@ -5307,16 +5856,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-260,229,[
+263,232,[
 [
-"name","SL Even or Odd"
+"name","جمع عناصر القائمة SumList"
 ],[
 "active",1
 ],[
-"code","stdlib_evenorodd"
+"code","stdlib_sumlist"
 ],[
 "interactionid",256
 ],[
@@ -5325,16 +5876,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-261,229,[
+264,232,[
 [
-"name","SL Factors"
+"name","حاصل ضرب عناصر قائمة ProdList"
 ],[
 "active",1
 ],[
-"code","stdlib_factors"
+"code","stdlib_prodlist"
 ],[
 "interactionid",257
 ],[
@@ -5343,16 +5896,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-262,229,[
+265,232,[
 [
-"name","SL Is Palindrome"
+"name","زوجى او فردي EvenOrOdd"
 ],[
 "active",1
 ],[
-"code","stdlib_palindrome"
+"code","stdlib_evenorodd"
 ],[
 "interactionid",258
 ],[
@@ -5361,16 +5916,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-263,229,[
+266,232,[
 [
-"name","SL Is Leap Year"
+"name","عوامل الرقم Factors"
 ],[
 "active",1
 ],[
-"code","stdlib_isleapyear"
+"code","stdlib_factors"
 ],[
 "interactionid",259
 ],[
@@ -5379,16 +5936,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-264,229,[
+267,232,[
 [
-"name","SL Binary Digits"
+"name","الحروف واحدة من كلا الجهتين Palindrome"
 ],[
 "active",1
 ],[
-"code","stdlib_binarydigits"
+"code","stdlib_palindrome"
 ],[
 "interactionid",260
 ],[
@@ -5397,16 +5956,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-265,229,[
+268,232,[
 [
-"name","SL Matrix Multiply"
+"name","هل السنة كبيسة IsLeapYear"
 ],[
 "active",1
 ],[
-"code","stdlib_matrixmulti"
+"code","stdlib_isleapyear"
 ],[
 "interactionid",261
 ],[
@@ -5415,16 +5976,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-266,229,[
+269,232,[
 [
-"name","SL Matrix Transpose"
+"name","الارقام الثنائية BinaryDigits"
 ],[
 "active",1
 ],[
-"code","stdlib_matrixtrans"
+"code","stdlib_binarydigits"
 ],[
 "interactionid",262
 ],[
@@ -5433,16 +5996,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-267,229,[
+270,232,[
 [
-"name","SL Day of Week"
+"name","ضرب المصفوفات Matrixmultiply"
 ],[
 "active",1
 ],[
-"code","stdlib_dayofweek"
+"code","stdlib_matrixmulti"
 ],[
 "interactionid",263
 ],[
@@ -5451,16 +6016,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-268,229,[
+271,232,[
 [
-"name","SL Permutation"
+"name","تبديل المصفوفة MatrixTranspose"
 ],[
 "active",1
 ],[
-"code","stdlib_permutation"
+"code","stdlib_matrixtrans"
 ],[
 "interactionid",264
 ],[
@@ -5469,16 +6036,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-269,229,[
+272,232,[
 [
-"name","SL Read Line"
+"name","اليوم فى الأسبوع DayOfWeek"
 ],[
 "active",1
 ],[
-"code","stdlib_readline"
+"code","stdlib_dayofweek"
 ],[
 "interactionid",265
 ],[
@@ -5487,16 +6056,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-270,229,[
+273,232,[
 [
-"name","SL Sub String Position"
+"name","التبديل Permutation"
 ],[
 "active",1
 ],[
-"code","stdlib_substring"
+"code","stdlib_permutation"
 ],[
 "interactionid",266
 ],[
@@ -5505,16 +6076,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-271,229,[
+274,232,[
 [
-"name","SL Change Sub String"
+"name","قراءة سطر فى ملف ReadLine"
 ],[
 "active",1
 ],[
-"code","stdlib_changestring"
+"code","stdlib_readline"
 ],[
 "interactionid",267
 ],[
@@ -5523,16 +6096,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-272,229,[
+275,232,[
 [
-"name","SL Sleep"
+"name","مكان عبارة حرفية SubString"
 ],[
 "active",1
 ],[
-"code","stdlib_sleep"
+"code","stdlib_substring"
 ],[
 "interactionid",268
 ],[
@@ -5541,16 +6116,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-273,229,[
+276,232,[
 [
-"name","SL Is Main Source File"
+"name","تغيير جزء من عبارة حرفية ChangeString"
 ],[
 "active",1
 ],[
-"code","stdlib_ismainsourcefile"
+"code","stdlib_changestring"
 ],[
 "interactionid",269
 ],[
@@ -5559,16 +6136,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-274,229,[
+277,232,[
 [
-"name","SL Directory Exists"
+"name","التوقف لمدة بالثوانى Sleep"
 ],[
 "active",1
 ],[
-"code","stdlib_direxists"
+"code","stdlib_sleep"
 ],[
 "interactionid",270
 ],[
@@ -5577,16 +6156,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-275,229,[
+278,232,[
 [
-"name","SL Make Directory"
+"name","هل هذا ملف المشروع الأساسي IsMainSourceFile"
 ],[
 "active",1
 ],[
-"code","stdlib_makedir"
+"code","stdlib_ismainsourcefile"
 ],[
 "interactionid",271
 ],[
@@ -5595,16 +6176,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-276,229,[
+279,232,[
 [
-"name","SL File Size"
+"name","هل المجلد موجود DirExists"
 ],[
 "active",1
 ],[
-"code","stdlib_fsize"
+"code","stdlib_direxists"
 ],[
 "interactionid",272
 ],[
@@ -5613,16 +6196,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-277,229,[
+280,232,[
 [
-"name","SL Trim"
+"name","انشاء مجلد MakeDir"
 ],[
 "active",1
 ],[
-"code","stdlib_trim"
+"code","stdlib_makedir"
 ],[
 "interactionid",273
 ],[
@@ -5631,16 +6216,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-278,229,[
+281,232,[
 [
-"name","SL Epoch Time"
+"name","حجم الملف FSize"
 ],[
 "active",1
 ],[
-"code","stdlib_epochtime"
+"code","stdlib_fsize"
 ],[
 "interactionid",274
 ],[
@@ -5649,16 +6236,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-279,229,[
+282,232,[
 [
-"name","SL System Command"
+"name","قص العبارات الحرفية Trim"
 ],[
 "active",1
 ],[
-"code","stdlib_systemcmd"
+"code","stdlib_trim"
 ],[
 "interactionid",275
 ],[
@@ -5667,16 +6256,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-280,229,[
+283,232,[
 [
-"name","SL List All Files"
+"name","الزمن العصري EpochTime"
 ],[
 "active",1
 ],[
-"code","stdlib_listallfiles"
+"code","stdlib_epochtime"
 ],[
 "interactionid",276
 ],[
@@ -5685,16 +6276,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-281,228,[
+284,232,[
 [
-"name","Classes"
+"name","امر للنظام SystemCmd"
 ],[
 "active",1
 ],[
-"code",""
+"code","stdlib_systemcmd"
 ],[
 "interactionid",277
 ],[
@@ -5703,16 +6296,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-282,281,[
+285,232,[
 [
-"name","StdBase Class"
+"name","قائمة بجميع الملفات ListAllFiles"
 ],[
 "active",1
 ],[
-"code","stdbaseclass"
+"code","stdlib_listallfiles"
 ],[
 "interactionid",278
 ],[
@@ -5721,16 +6316,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-283,281,[
+286,231,[
 [
-"name","String Class"
+"name","الفئات Classes"
 ],[
 "active",1
 ],[
-"code","stringclass"
+"code",""
 ],[
 "interactionid",279
 ],[
@@ -5739,16 +6336,18 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
 ]
 ]
 ],[
-284,281,[
+287,286,[
 [
-"name","List Class"
+"name","فئة StdBase"
 ],[
 "active",1
 ],[
-"code","listclass"
+"code","stdbaseclass"
 ],[
 "interactionid",280
 ],[
@@ -5757,8 +6356,50 @@ $aComponentsStepsTree = [
 "stepnumber",1
 ],[
 "steptype",1
+],[
+"plainname",""
+]
+]
+],[
+288,286,[
+[
+"name","فئة StringClass"
+],[
+"active",1
+],[
+"code","stringclass"
+],[
+"interactionid",281
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+],[
+"plainname",""
+]
+]
+],[
+289,286,[
+[
+"name","فئة ListClass"
+],[
+"active",1
+],[
+"code","listclass"
+],[
+"interactionid",282
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+],[
+"plainname",""
 ]
 ]
 ]
 ]
-$nComponentsStepsID = 339
+$nComponentsStepsID = 340
