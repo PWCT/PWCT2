@@ -7,6 +7,7 @@
 
 # Application
 	PWCT_APP 				= NULL
+	PWCT_FOLDER				= CurrentDir()
 	C_FILENONAME 				= "noname.ring"
 	remove( C_FILENONAME)
 
