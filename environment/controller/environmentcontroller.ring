@@ -546,7 +546,7 @@ class EnvironmentController from WindowsControllerParent
 
 	func FormDesignerDock
 		cDir = CurrentDir()
-		chdir(exefolder() + "/../applications/formdesigner")
+		chdir(PWCT_FOLDER + "/formdesigner")
 		open_windowAndLink(:FormDesignerController,self)
 		# We still use setParentObject() and avoid using
 		# IsRNOTE() and RNote() in the Form Designer 
