@@ -18,6 +18,7 @@
 	T_ENV_DOCK_PROJECTFILES = "Project Files"
 	T_ENV_DOCK_GOALDESIGNER = "Goal Designer"
 	T_ENV_DOCK_COMPONENTSBROWSER = "Components Browser"
+	T_ENV_DOCK_FORMDESIGNER = "Form Designer"
 	T_ENV_STATUSBAR_READY = "Ready!"
 	T_ENV_MENU_FILE = "File"
 	T_ENV_MENU_EDIT = "Edit"

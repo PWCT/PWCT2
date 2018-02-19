@@ -1,13 +1,10 @@
-func main {
-    ? "welcome to the ring programming language"
-    for x = 1 to 10
-	? x
-    	test()
-    	if x = 3 {
-		? "three"
-    	}    
-    next
-}
-
-func test
-	? "hello from the test function"
+	SayHello()
+	SayHello2("Mahmoud")
+	myvar = myUpper("just a test")
+	See myvar
+	func SayHello
+		See "Hello World" + nl 
+	func SayHello2 cName
+		See "Hello " + cName + nl 
+	func myUpper cName
+	return Upper(cName)

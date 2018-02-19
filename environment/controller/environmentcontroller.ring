@@ -76,6 +76,12 @@ class EnvironmentController from WindowsControllerParent
 			oView.oDockGoalDesigner.raise()
 		}
 
+		if IsDockForFormDesigner() {
+			FormDesignerDock()
+			oView.win.tabifydockwidget(oView.oDockGoalDesigner,oView.oDockFormDesigner)
+		}
+
+
 	/*
 		Purpose : Set the Parent Object for Environment and goal designer
 		Parameters : None
@@ -523,6 +529,9 @@ class EnvironmentController from WindowsControllerParent
 		return oView.lDockForComponentsBrowser
 
 
+	func IsDockForFormDesigner
+		return oView.lDockForFormDesigner
+
 	func SetParentForComponentsBrowser oParent
 		# if we are using dockable window for the components browser 
 		# Set the parent for the components browser window 
@@ -532,3 +541,18 @@ class EnvironmentController from WindowsControllerParent
 
 	func ShowMessageInStatusBar cMsg
 		oView.oStatusBar.showMessage(cMsg,0)
+
+
+	func FormDesignerDock
+		cDir = CurrentDir()
+		chdir(exefolder() + "/../applications/formdesigner")
+		open_windowAndLink(:FormDesignerController,self)
+		# We still use setParentObject() and avoid using
+		# IsRNOTE() and RNote() in the Form Designer 
+		# So we can reuse the Form Designer in other Projects
+		# I.e. Ring Notepad need to know about the Form Designer 
+		# But It's necessary for the Form Designer to Know that
+		# It's used in another project!
+		FormDesigner().setParentObject(self)
+		oView.oDockFormDesigner.setWidget(FormDesigner().oView.win)
+		chdir(cDir)

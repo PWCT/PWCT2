@@ -1,17 +1,21 @@
-# Form/Window Controller - Source Code File
-
-load "sayhelloView.ring"
-
+load "sayhelloview.ring"
 import System.GUI
-
-if IsMainSourceFile() {
-	new App {
-		StyleFusion()
-		open_window(:sayhelloController)
-		exec()
-	}
+if isMainSourceFile() { 
+	new App
+		{
+			StyleFusion()
+			open_window(:SayHelloController)
+			exec()
+		}
 }
-
-class sayhelloController from windowsControllerParent
-
-	oView = new sayhelloView
+class sayHelloController from WindowsControllerParent
+	oView = new SayHelloView
+	func sayHello
+		oView {
+			label2.setText("Hello Mr. " + lineedit1.text())
+		}
+	func test
+		oView {
+			win.setwindowtitle("Nice test")
+		}
+private

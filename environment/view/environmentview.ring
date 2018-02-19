@@ -13,13 +13,16 @@ class EnvironmentView from WindowsViewParent
 
 	# Process Window
 	oDockOutputWindow	oProcess oProcessText   oProcessEditbox
+	oDockFormDesigner
 
 	nGoalDesignerWindowID
 
 	if PWCTIsMobile(:DockForComponentsBrowser) {
 		lDockForComponentsBrowser = False
+		lDockForFormDesigner	  = False
 	else 
 		lDockForComponentsBrowser = True
+		lDockForFormDesigner	  = True
 	}
 
 	# Create the window and the Controls
@@ -41,6 +44,9 @@ class EnvironmentView from WindowsViewParent
 			}
 			if lDockForComponentsBrowser {
 				self.CreateComponentsBrowser(win)
+			}
+			if lDockForFormDesigner {
+				self.CreateFormDesigner(win)
 			}
 			setwinicon(win,AppFile("images/pwct.png"))
 			showmaximized()	
@@ -488,3 +494,17 @@ class EnvironmentView from WindowsViewParent
 			setwindowtitle(T_ENV_DOCK_COMPONENTSBROWSER) 
 		}
 		win.adddockwidget(1,oDockComponentsBrowser,1)
+
+	/*
+		Purpose : Create the Form Designer Window 
+		Parameters : The Window Object 
+		Output : None
+
+	*/
+	func createFormDesigner win
+		oDockFormDesigner = new qDockWidget(win,0) {
+			setMinimumWidth(470)
+			setLayoutDirection(C_TRANSLATION_ENGLISH)
+			setwindowtitle(T_ENV_DOCK_FORMDESIGNER) 
+		}
+		win.adddockwidget(1,oDockFormDesigner,1)

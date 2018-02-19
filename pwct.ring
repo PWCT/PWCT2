@@ -76,6 +76,10 @@ load "general/quickmsgController.ring"
 # Load Components 
 load "vpl/ringpwct/ringpwct.ring"
 
+# Load the Form Designer 
+	Load "../applications/formdesigner/formdesigner.ring"
+	import formdesigner 
+
 # Run PWCT Environment
 Start_Environment()
 

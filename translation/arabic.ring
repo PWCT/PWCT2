@@ -18,6 +18,7 @@
 	T_ENV_DOCK_PROJECTFILES = "ملفات المشروع"
 	T_ENV_DOCK_GOALDESIGNER = "مصمم الهدف"
 	T_ENV_DOCK_COMPONENTSBROWSER = "مستعرض المكونات"
+	T_ENV_DOCK_FORMDESIGNER = "مصمم النماذج"
 	T_ENV_STATUSBAR_READY = "!جاهز"
 	T_ENV_MENU_FILE = "ملف"
 	T_ENV_MENU_EDIT = "تحرير"
