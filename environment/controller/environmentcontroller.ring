@@ -79,7 +79,10 @@ class EnvironmentController from WindowsControllerParent
 		if IsDockForFormDesigner() {
 			FormDesignerDock()
 			oView.win.tabifydockwidget(oView.oDockGoalDesigner,oView.oDockFormDesigner)
+			oView.oDockGoalDesigner.raise()
 		}
+
+		oView.win.showmaximized()
 
 
 	/*
@@ -528,7 +531,6 @@ class EnvironmentController from WindowsControllerParent
 	func IsDockForComponentsBrowser
 		return oView.lDockForComponentsBrowser
 
-
 	func IsDockForFormDesigner
 		return oView.lDockForFormDesigner
 
@@ -541,7 +543,6 @@ class EnvironmentController from WindowsControllerParent
 
 	func ShowMessageInStatusBar cMsg
 		oView.oStatusBar.showMessage(cMsg,0)
-
 
 	func FormDesignerDock
 		cDir = CurrentDir()

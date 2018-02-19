@@ -28,6 +28,7 @@ class EnvironmentView from WindowsViewParent
 	# Create the window and the Controls
 		win = new qMainWindow()
 		{
+			move(0,0)
 			setLayoutDirection(T_LAYOUTDIRECTION)
 			setWindowTitle(T_ENV_TITLE) # "Programming Without Coding Technology"
 			self.CreateMenuBar(win)
@@ -48,8 +49,7 @@ class EnvironmentView from WindowsViewParent
 			if lDockForFormDesigner {
 				self.CreateFormDesigner(win)
 			}
-			setwinicon(win,AppFile("images/pwct.png"))
-			showmaximized()	
+			setwinicon(win,AppFile("images/pwct.png"))	
 			oFilter = new qAllevents(win) {
 				setcloseevent("PWCT_APP.Quit()")
 			}
