@@ -16,8 +16,7 @@ load "general/mainlib.ring"
 
 # Load the Translation File
 load "translation/english.ring"
-
-for item in sysargv item = lower(item) next 
+for sysargvitem in sysargv sysargvitem = lower(sysargvitem) next 
 if find(sysargv, :arabic) {
 	eval( ' load "translation/arabic.ring" ' )
 }
