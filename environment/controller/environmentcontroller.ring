@@ -583,15 +583,9 @@ class EnvironmentController from WindowsControllerParent
 		if cFileName != cFormFile {
 			cFormFile = cFileName
 			FormDesigner().openFile(cFileName)		
-			oView.oDockFormDesigner.raise()
 		}
-		ShowMessageInStatusBar("Ready!")
 		oView.oDockFormDesigner.raise()
-		cSourceFile = substr(cFormFile,".rform","controller.pwct")
-		if fexists(cSourceFile) {
-		else 
-			return 
-		}
+		ShowMessageInStatusBar("Ready!")
 
 	func openfile cFileName
 		cFileName = substr(cFileName,".ring",".pwct")
