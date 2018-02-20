@@ -38,6 +38,8 @@ class EnvironmentController from WindowsControllerParent
 		aActiveFiles = []	
 		lActiveGoalDesignerChanged = True
 
+	cFormFile = ""
+
 	oView = new EnvironmentView
 
 	SetParents()
@@ -567,5 +569,17 @@ class EnvironmentController from WindowsControllerParent
 		if not IsDockForFormDesigner() {
 			return 
 		}
-		FormDesigner().openFile(cFileName)		
+		ShowMessageInStatusBar("Open the form file...")
+		if cFileName != cFormFile {
+			cFormFile = cFileName
+			FormDesigner().openFile(cFileName)		
+			oView.oDockFormDesigner.raise()
+		}
+		ShowMessageInStatusBar("Ready!")
 		oView.oDockFormDesigner.raise()
+		cSourceFile = substr(cFormFile,".rform","controller.pwct")
+		if fexists(cSourceFile) {
+		else 
+			return 
+		}
+
