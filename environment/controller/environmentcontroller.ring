@@ -176,10 +176,21 @@ class EnvironmentController from WindowsControllerParent
 			return
 		}
 		cFileName = oView.oFile.filepath(oItem)
+		lFormFile = False
 		if right(lower(cFileName),6) = ".rform" {
 			openFormDesignerFile(cFileName)
-			return
+			cFileName = substr(cFileName,".rform","controller.pwct")
+			lFormFile = True
  		}
+		if fexists(cFileName) {
+			openVisualFile(cFileName)
+			showmessageInStatusBar("Change File Time: " + ( (clock()-nClock) / Clockspersecond() ) )
+		}
+		if lFormFile {
+			oView.oDockFormDesigner.raise()
+		}
+		
+	func openVisualFile cFileName
 		# If the file is already opened, Activate the window
 			if lOpenFilesInNewTabs {
 				nPos = find(aActiveFiles,cFileName,2)
@@ -236,7 +247,6 @@ class EnvironmentController from WindowsControllerParent
 			oView.oDockGoalDesigner.show()
 			oView.oDockGoalDesigner.raise()
 		}
-		showmessageInStatusBar("Change File Time: " + ( (clock()-nClock) / Clockspersecond() ) )
 		if lDisplayLoadingMessage {
 			QuickMsg().CloseMsg()
 		}
@@ -583,8 +593,9 @@ class EnvironmentController from WindowsControllerParent
 			return 
 		}
 
-	func openfile cFile
-		msginfo(:wow,:nice)	
+	func openfile cFileName
+		cFileName = substr(cFileName,".ring",".pwct")
+		openVisualFile(cFileName)
 
 	func ClearActiveFormFile
 		cFormFile = ""
