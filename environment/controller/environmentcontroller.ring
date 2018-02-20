@@ -591,7 +591,7 @@ class EnvironmentController from WindowsControllerParent
 	func openfile cFileName
 		cFileName = substr(cFileName,".ring",".pwct")
 		if fexists(cFileName) {
-//			openVisualFile(cFileName)
+			openVisualFile(cFileName)
 		}
 
 	func ClearActiveFormFile
