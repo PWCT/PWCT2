@@ -174,6 +174,10 @@ class EnvironmentController from WindowsControllerParent
 			return
 		}
 		cFileName = oView.oFile.filepath(oItem)
+		if right(lower(cFileName),6) = ".rform" {
+			openFormDesignerFile(cFileName)
+			return
+ 		}
 		# If the file is already opened, Activate the window
 			if lOpenFilesInNewTabs {
 				nPos = find(aActiveFiles,cFileName,2)
@@ -212,6 +216,7 @@ class EnvironmentController from WindowsControllerParent
 			oView.oDockGoalDesigner.setWindowTitle(JustFileName(cFileName))
 			# Add the file to the Active Files List 
 				aActiveFiles + [oView.oDockGoalDesigner,cFileName]
+			oView.oDockGoalDesigner.raise()
 		}
 		# Add the Steps Tree to the aActiveFiles list 
 			aActiveFiles[len(aActiveFiles)] + parent().oView.oStepsTree
@@ -557,3 +562,10 @@ class EnvironmentController from WindowsControllerParent
 		FormDesigner().setParentObject(self)
 		oView.oDockFormDesigner.setWidget(FormDesigner().oView.win)
 		chdir(cDir)
+
+	func openFormDesignerFile cFileName	
+		if not IsDockForFormDesigner() {
+			return 
+		}
+		FormDesigner().openFile(cFileName)		
+		oView.oDockFormDesigner.raise()

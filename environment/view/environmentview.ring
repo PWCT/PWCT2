@@ -363,7 +363,6 @@ class EnvironmentView from WindowsViewParent
 	*/
 
 	func CreateFilesManager win
-
 		tree1 = new qtreeview(win) {
 			setclickedevent(Method(:ChangeFileAction))
 			setactivatedevent(Method(:ChangeFileAction))
@@ -372,6 +371,7 @@ class EnvironmentView from WindowsViewParent
 				setrootpath(oDir.currentpath())				
 				myfiles = new qstringlist()
 				myfiles.append("*.pwct")
+				myfiles.append("*.rform")
 				setnamefilters(myfiles)	
 				setNameFilterDisables(false)
 			}
