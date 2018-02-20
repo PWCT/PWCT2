@@ -583,3 +583,11 @@ class EnvironmentController from WindowsControllerParent
 			return 
 		}
 
+	func openfile cFile
+		msginfo(:wow,:nice)	
+
+	func ClearActiveFormFile
+		cFormFile = ""
+
+	func GetActiveFolder
+		return PWCT_FOLDER
