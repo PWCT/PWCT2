@@ -564,6 +564,7 @@ class EnvironmentController from WindowsControllerParent
 	func FormDesignerDock
 		cDir = CurrentDir()
 		chdir(PWCT_FOLDER + "/formdesigner")
+		import formdesigner 
 		open_windowAndLink(:FormDesignerController,self)
 		# We still use setParentObject() and avoid using
 		# IsRNOTE() and RNote() in the Form Designer 
@@ -589,7 +590,9 @@ class EnvironmentController from WindowsControllerParent
 
 	func openfile cFileName
 		cFileName = substr(cFileName,".ring",".pwct")
-		openVisualFile(cFileName)
+		if fexists(cFileName) {
+//			openVisualFile(cFileName)
+		}
 
 	func ClearActiveFormFile
 		cFormFile = ""
