@@ -599,3 +599,39 @@ class EnvironmentController from WindowsControllerParent
 
 	func GetActiveFolder
 		return PWCT_FOLDER
+	
+	func GenerateControllerClass cFileName 
+		cFileName = substr(cFileName,".ring",".pwct")
+		cFormName = substr(JustFileName(cFileName),"Controller.pwct","")
+		if fexists(cFileName) { return }
+		oVisualFile = new VisualSourceFile {
+			setfile(PWCT_FOLDER+"/templates/formcontroller.pwct")
+			Open()
+			LoadTables()
+			setfile(cFileName)
+			for aInteraction in aInteractionsTable {
+				aInteraction[C_INTERACTIONRECORD_VARIABLESVALUES] = substr(
+					aInteraction[C_INTERACTIONRECORD_VARIABLESVALUES],
+					"filename_",cFormName
+				)
+			}
+			for aStep in aStepsTable {
+				aStep[C_TREEMODEL_CONTENT][:name] = substr(
+					aStep[C_TREEMODEL_CONTENT][:name],
+					"filename_",cFormName
+				)
+				aStep[C_TREEMODEL_CONTENT][:code] = substr(
+					aStep[C_TREEMODEL_CONTENT][:code],
+					"filename_",cFormName
+				)
+				aStep[C_TREEMODEL_CONTENT][:plainname] = substr(
+					aStep[C_TREEMODEL_CONTENT][:plainname],
+					"filename_",cFormName
+				)
+			}
+			open()
+			createTables()
+			SaveTables()
+			Close()
+		}
+		
