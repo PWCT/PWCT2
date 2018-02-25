@@ -634,4 +634,4 @@ class EnvironmentController from WindowsControllerParent
 			SaveTables()
 			Close()
 		}
-		
+		openVisualFile(cFileName)
