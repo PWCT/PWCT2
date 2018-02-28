@@ -4,7 +4,7 @@ aObjectsList = [
 		 :x = 84 , : y = 77  , 
 		 :width =  400 , :height = 474 , 
 		 :title =  "Form1" , 
-		 :backcolor =  "" , 
+		 :backcolor =  "#ccff80" , 
 		 :windowflags =  "" , 
 		 :mainlayout =  "Layout1" ,
 		 :WindowIcon =  "" , 
@@ -14,22 +14,22 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Label1" , :id = 2 , :classname = "formdesigner_qlabel" , :data = [
-		 :x = 29 , : y = 26  , 
+		 :x = 3 , : y = 26  , 
 		 :width =  276 , :height = 27 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
-		 :font =  "Arial" , 
+		 :font =  "MS Shell Dlg 2,16,-1,5,50,0,0,0,0,0" , 
 		 :parent =  "win"  ,
 		 :text =  "Enter Number",
 		 :textalign =  0
 		]
 	],
-	[ :name = "LineEdit1" , :id = 4 , :classname = "formdesigner_qlineedit" , :data = [
-		 :x = 19 , : y = 77  , 
+	[ :name = "LineEdit1" , :id = 3 , :classname = "formdesigner_qlineedit" , :data = [
+		 :x = 3 , : y = 77  , 
 		 :width =  342 , :height = 35 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "white" , 
-		 :font =  "Arial" , 
+		 :font =  "MS Shell Dlg 2,16,-1,5,50,0,0,0,0,0" , 
 		 :parent =  "win"  ,
 		 :text =  "",
 		 :setTextChangedEvent =  "",
@@ -40,24 +40,24 @@ aObjectsList = [
 		 :settextEditedEvent =  ""
 		]
 	],
-	[ :name = "Button1" , :id = 5 , :classname = "formdesigner_qpushbutton" , :data = [
-		 :x = 19 , : y = 129  , 
+	[ :name = "Button1" , :id = 4 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 3 , : y = 129  , 
 		 :width =  187 , :height = 51 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
-		 :font =  "Arial" , 
+		 :font =  "MS Shell Dlg 2,16,-1,5,50,0,0,0,0,0" , 
 		 :parent =  "win"  ,
 		 :text =  "Add",
 		 :BtnImage =  "",
 		 :setClickEvent =  "AddName"
 		]
 	],
-	[ :name = "ListWidget1" , :id = 7 , :classname = "formdesigner_qlistwidget" , :data = [
-		 :x = 12 , : y = 197  , 
+	[ :name = "ListWidget1" , :id = 5 , :classname = "formdesigner_qlistwidget" , :data = [
+		 :x = 3 , : y = 197  , 
 		 :width =  340 , :height = 144 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "white" , 
-		 :font =  "Arial" , 
+		 :font =  "MS Shell Dlg 2,16,-1,5,50,0,0,0,0,0" , 
 		 :parent =  "win"  ,
 		 :cItems =  "",
 		 :cCurrentRow =  "",
@@ -73,12 +73,12 @@ aObjectsList = [
 		 :setitemSelectionChangedEvent =  ""
 		]
 	],
-	[ :name = "LineEdit2" , :id = 9 , :classname = "formdesigner_qlineedit" , :data = [
+	[ :name = "LineEdit2" , :id = 6 , :classname = "formdesigner_qlineedit" , :data = [
 		 :x = 81 , : y = 362  , 
-		 :width =  275 , :height = 44 , 
+		 :width =  275 , :height = 40 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "white" , 
-		 :font =  "Arial" , 
+		 :font =  "MS Shell Dlg 2,16,-1,5,50,0,0,0,0,0" , 
 		 :parent =  "win"  ,
 		 :text =  "",
 		 :setTextChangedEvent =  "",
@@ -89,19 +89,19 @@ aObjectsList = [
 		 :settextEditedEvent =  ""
 		]
 	],
-	[ :name = "Button2" , :id = 10 , :classname = "formdesigner_qpushbutton" , :data = [
+	[ :name = "Button2" , :id = 7 , :classname = "formdesigner_qpushbutton" , :data = [
 		 :x = 3 , : y = 362  , 
 		 :width =  74 , :height = 47 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
-		 :font =  "Arial" , 
+		 :font =  "MS Shell Dlg 2,16,-1,5,50,0,0,0,0,0" , 
 		 :parent =  "win"  ,
 		 :text =  "Sum",
 		 :BtnImage =  "",
 		 :setClickEvent =  "SumNumbers"
 		]
 	],
-	[ :name = "Layout1" , :id = 11 , :classname = "formdesigner_qlayout" , :data = [
+	[ :name = "Layout1" , :id = 8 , :classname = "formdesigner_qlayout" , :data = [
 		 :x = 262 , : y = 13  , 
 		 :width =  97 , :height = 29 , 
 		 :textcolor =  "black" , 
