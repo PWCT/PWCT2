@@ -191,6 +191,7 @@ class EnvironmentController from WindowsControllerParent
 		}
 		
 	func openVisualFile cFileName
+		cFileName = lower(cFileName)
 		# If the file is already opened, Activate the window
 			if lOpenFilesInNewTabs {
 				nPos = find(aActiveFiles,cFileName,2)
