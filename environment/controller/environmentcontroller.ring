@@ -137,12 +137,24 @@ class EnvironmentController from WindowsControllerParent
 		parent().SaveFileAction()
 
 	/*
+		Purpose : Save form file before running
+		Parameters : None
+		Output : None
+	*/
+
+	func BeforeRun
+		if isDockForFormDesigner() {
+			FormDesigner().SaveIfOnlyFileIsOpened()
+		}
+
+	/*
 		Purpose : Run File Action
 		Parameters : None
 		Output : None
 	*/
 
 	func RunAction
+		BeforeRun()
 		parent().RunAction()
 
 	/*
@@ -152,6 +164,7 @@ class EnvironmentController from WindowsControllerParent
 	*/
 
 	func RunGUIAction
+		BeforeRun()
 		parent().RunGUIAction()
 
 	/*
@@ -161,6 +174,7 @@ class EnvironmentController from WindowsControllerParent
 	*/
 
 	func DebugAction
+		BeforeRun()
 		parent().DebugAction()
 
 	/*
