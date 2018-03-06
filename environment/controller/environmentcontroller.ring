@@ -397,6 +397,15 @@ class EnvironmentController from WindowsControllerParent
 		ToggleVisible(oView.oDockOutputWindow)
 
 	/*
+		Purpose : Form Designer Window Action
+		Parameters : None
+		Output : None
+	*/
+
+	func FormDesignerWindowAction
+		ToggleVisible(oView.oDockFormDesigner)
+
+	/*
 		Purpose : ToggleVisible Action
 		Parameters : None
 		Output : None

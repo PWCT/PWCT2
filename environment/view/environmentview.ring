@@ -191,6 +191,14 @@ class EnvironmentView from WindowsViewParent
 					settext(T_ENV_MENU_OUTPUTWINDOW) # "Output Window"
 				}
 				addaction(oAction)
+				addseparator()	
+				oAction = new qAction(win) {
+					setShortcut(new QKeySequence("Alt+shift+f"))
+					setbtnimage(self,AppFile("images/source.png"))
+					setclickevent(Method(:FormDesignerWindowAction))
+					settext(T_ENV_MENU_FORMDESIGNERWINDOW) # "Form Designer"
+				}
+				addaction(oAction)
 			}
 			subProgram { 
 				if PWCTIsMobile(:RunApplication) {

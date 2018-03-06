@@ -40,6 +40,7 @@
 	T_ENV_MENU_PROJECTFILES = "Project Files"
 	T_ENV_MENU_GOALDESIGNER = "Goal Designer"
 	T_ENV_MENU_OUTPUTWINDOW = "Output Window"
+	T_ENV_MENU_FORMDESIGNERWINDOW = "Form Designer Window"
 	T_ENV_MENU_DEBUG = "Debug (Run then wait!)"
 	T_ENV_MENU_RUN = "Run"
 	T_ENV_MENU_RUNNOCONSOLE = "Run GUI Application (No Console)"

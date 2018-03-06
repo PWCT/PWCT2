@@ -40,6 +40,7 @@
 	T_ENV_MENU_PROJECTFILES = "ملفات المشروع"
 	T_ENV_MENU_GOALDESIGNER = "مصمم الهدف"
 	T_ENV_MENU_OUTPUTWINDOW = "نافذة النتائج"
+	T_ENV_MENU_FORMDESIGNERWINDOW = "نافذة مصمم النماذج"
 	T_ENV_MENU_DEBUG = "تنقيح - تشغيل ثم انتظار"
 	T_ENV_MENU_RUN = "تشغيل"
 	T_ENV_MENU_RUNNOCONSOLE = "تشغيل تطبيق رسومى"
