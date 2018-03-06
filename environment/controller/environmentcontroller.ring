@@ -609,6 +609,7 @@ class EnvironmentController from WindowsControllerParent
 			return 
 		}
 		ShowMessageInStatusBar("Open the form file...")
+		oView.oDockFormDesigner.show()
 		if cFileName != cFormFile {
 			cFormFile = cFileName
 			FormDesigner().openFile(cFileName)		
