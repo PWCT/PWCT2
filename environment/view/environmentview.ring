@@ -28,7 +28,10 @@ class EnvironmentView from WindowsViewParent
 	# Create the window and the Controls
 		win = new qMainWindow()
 		{
-			move(0,0)
+			if not PWCTIsMobile(:WindowDimensions) {
+				move(-10,0)
+				resize(1000,1000)
+			}
 			setLayoutDirection(T_LAYOUTDIRECTION)
 			setWindowTitle(T_ENV_TITLE) # "Programming Without Coding Technology"
 			self.CreateMenuBar(win)

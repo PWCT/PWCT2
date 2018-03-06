@@ -137,12 +137,13 @@ class EnvironmentController from WindowsControllerParent
 		parent().SaveFileAction()
 
 	/*
-		Purpose : Save form file before running
+		Purpose : Save files before running
 		Parameters : None
 		Output : None
 	*/
 
 	func BeforeRun
+		SaveAction()
 		if isDockForFormDesigner() {
 			FormDesigner().SaveIfOnlyFileIsOpened()
 		}
