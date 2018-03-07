@@ -5,6 +5,8 @@
 **	Author 		: Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
+C_COMPONENT_CONTROLSFONTSIZE = 16
+
 class ComponentViewParent from WindowsViewParent
 
 	aVariables = []		# List contains the [ Control Object , variable Name , Type ]
@@ -14,7 +16,7 @@ class ComponentViewParent from WindowsViewParent
 
 	nTitleFontSize 		= 18
 	nTitleFixedHeight 	= 40
-	nControlsFontSize	= 16
+	nControlsFontSize	= C_COMPONENT_CONTROLSFONTSIZE
 	nButtonsFontSize	= 12
 
 	nWindowWidth		= 600
