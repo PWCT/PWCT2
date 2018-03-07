@@ -793,6 +793,9 @@ class GoalDesignerController from WindowsControllerParent
 			}
 		# Update the Time Machine
 			UpdateTheTimeMachine()
+		# Little trick - Fix a problem in items height
+			increaseSizeAction()
+			decreaseSizeAction()
 		oView.oStepsTree.setUpdatesEnabled(True)
 		oView.oStepsTree.blockSignals(False)
 		oView.oStepsTree.oFirstStep.SetExpanded(True)
