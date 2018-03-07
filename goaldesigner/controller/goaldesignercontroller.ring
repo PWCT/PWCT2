@@ -772,6 +772,10 @@ class GoalDesignerController from WindowsControllerParent
 	func RefreshStepsTree2 aStepsTree
 		oView.oStepsTree.setUpdatesEnabled(False)
 		oView.oStepsTree.blockSignals(True)
+		# Little trick - Fix a problem in items height
+			increaseSizeAction()
+			decreaseSizeAction()
+
 		# Remove the current Steps From the Tree Control
 			oView.oStepsTree.taketoplevelitem(0)	
 			oView.oStepsTree.aTree = []
@@ -793,9 +797,6 @@ class GoalDesignerController from WindowsControllerParent
 			}
 		# Update the Time Machine
 			UpdateTheTimeMachine()
-		# Little trick - Fix a problem in items height
-			increaseSizeAction()
-			decreaseSizeAction()
 		oView.oStepsTree.setUpdatesEnabled(True)
 		oView.oStepsTree.blockSignals(False)
 		oView.oStepsTree.oFirstStep.SetExpanded(True)
@@ -843,10 +844,10 @@ class GoalDesignerController from WindowsControllerParent
 				oItem = new qtreewidgetitem() 
 				if nMax < this.nMaxStepsCount or not this.lUseMaxStepsCount {
 					oLabel = new qLabel(self) 
-					SetLabelFont2(oLabel)
 					cText = PrepareNodeText(cText)
 					oLabel.settext(oStyle.image(cImage)+
 							oStyle.text(cText,cColor,cBackColor))					
+					SetLabelFont2(oLabel)
 					oParent.addchild(oItem)
 					setItemWidget(oItem,0,oLabel)
 				else 
