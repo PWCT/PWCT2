@@ -193,3 +193,12 @@ class ComponentsBrowserController from WindowsControllerParent
 		}
 		Parent().ComponentsBrowserClosed()
 		Super.CloseAction()
+
+	/*
+		Update the font size 
+	*/
+	func UpdateFontSize nSize
+		oView.oComponentsTree { 
+			nFontSize = nSize
+			TreeStyle()
+		}

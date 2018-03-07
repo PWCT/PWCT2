@@ -571,6 +571,7 @@ class EnvironmentController from WindowsControllerParent
 			oView.oDockOutputWindow.hide()
 		}
 		GoalDesignerFont()
+		ComponentsBrowserFont()
 
 	func GoalDesignerFont
 		# Set The Goal Designer Font
@@ -578,6 +579,11 @@ class EnvironmentController from WindowsControllerParent
 			parent().UpdateFont()
 			parent().oView.oStepsTree.nFontSize = nFontSize			
 			parent().UpdateFontSize()
+
+	func ComponentsBrowserFont
+		if isDockForComponentsBrowser() {
+			parent().componentsBrowserWindow().UpdateFontSize(nFontSize)
+		}
 
 	func IsDockForComponentsBrowser
 		return oView.lDockForComponentsBrowser
