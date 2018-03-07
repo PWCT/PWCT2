@@ -149,6 +149,7 @@ class StepsTreeView from TreeControl
 					setText(this.prepareNodeText(aLabel[C_NODELABEL_TEXT]))
 					setStyleSheet(aLabel[C_NODELABEL_STYLESHEET])					
 				}
+				setLabelFont(oLabel2)
 				setItemWidget(oItem,0,oLabel2)
 			}
 			/*

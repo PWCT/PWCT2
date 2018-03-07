@@ -772,10 +772,8 @@ class GoalDesignerController from WindowsControllerParent
 	func RefreshStepsTree2 aStepsTree
 		oView.oStepsTree.setUpdatesEnabled(False)
 		oView.oStepsTree.blockSignals(True)
-		# Little trick - Fix a problem in items height
-			increaseSizeAction()
-			decreaseSizeAction()
-
+		# Set the font
+			oView.oStepsTree.PrepareFont()
 		# Remove the current Steps From the Tree Control
 			oView.oStepsTree.taketoplevelitem(0)	
 			oView.oStepsTree.aTree = []

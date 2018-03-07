@@ -275,6 +275,10 @@ class TreeControl from qTreeWidget
 		font.setpixelsize(nFontSize)
 		SetFont(font)
 
+	func PrepareFont
+		font.setpixelsize(nFontSize)
+		SetFont(font)
+
 	/*
 		The next method set the current item (Active Item) 
 		It will disable the CurrentItemChangedEvent event during this change
