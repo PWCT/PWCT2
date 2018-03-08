@@ -20,12 +20,22 @@ class StepsTreeView from TreeControl
 
 	oHTMLFunctions = new HTMLFunctions
 
+	lShowScrollbars = False
+
 	func Init win
 		if lUseLabels = False {
 			init2(win)
 		else
 			super.init(win)
 			AddStartPoint()
+		}
+		# When we have files with large lines 
+		# Instead of manually changing the header width()		
+		# We can change it using the next property
+		if lShowScrollbars {
+			sethorizontalscrollbarpolicy(Qt_ScrollBarAlwaysOn)
+			setverticalscrollbarpolicy(Qt_ScrollBarAlwaysOn)
+			setcolumnwidth(0,2000)
 		}
 		return self
 
