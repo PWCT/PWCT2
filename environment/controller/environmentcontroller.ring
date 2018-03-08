@@ -143,7 +143,9 @@ class EnvironmentController from WindowsControllerParent
 	*/
 
 	func BeforeRun
-		SaveAction()
+		if parent().IsActiveFile() {
+			SaveAction()
+		}
 		if isDockForFormDesigner() {
 			FormDesigner().SaveIfOnlyFileIsOpened()
 		}

@@ -1478,3 +1478,12 @@ class GoalDesignerController from WindowsControllerParent
 	*/
 	func prepareStepName cStep
 		return oView.oStepsTree.prepareStepName(cStep)
+
+
+	/*
+	*/
+	func IsActiveFile
+		if oVisualSourceFile.cFileName = "noname.pwct" {
+			return False 
+		} 
+		return True
