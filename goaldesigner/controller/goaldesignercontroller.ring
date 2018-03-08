@@ -803,6 +803,7 @@ class GoalDesignerController from WindowsControllerParent
 					oItem		= oView.oStepsTree.SerialAdd(nParentID,nStepID,cStepName,lIgnore)					
 				}
 			}
+
 		# Update the Time Machine
 			UpdateTheTimeMachine()
 		oView.oStepsTree.setUpdatesEnabled(True)

@@ -6,80 +6,80 @@
 */
 
 # Load Ring Libraries
-load "stdlib.ring"
-load "guilib.ring"
-load "tracelib.ring"
+	load "stdlib.ring"
+	load "guilib.ring"
+	load "tracelib.ring"
 
 # Load General Libraries
-load "general/globals/globals.ring"
-load "general/mainlib.ring"
+	load "general/globals/globals.ring"
+	load "general/mainlib.ring"
 
 # Load the Translation File
-load "translation/english.ring"
-for item in sysargv item = lower(item) next 
-if find(sysargv, :arabic) {
-	eval( ' load "translation/arabic.ring" ' )
-}
+	load "translation/english.ring"
+	for item in sysargv item = lower(item) next 
+	if find(sysargv, :arabic) {
+		eval( ' load "translation/arabic.ring" ' )
+	}
 
 # We need this on macOS when we run the executable from finder!
-if ismacosx() and justfilename(exefilename()) != "ring" {
-	chdir(exefolder())
-}
-
+	if ismacosx() and justfilename(exefilename()) != "ring" {
+		chdir(exefolder())
+	}
+	
 # Load the Environment Files
-load "environment/controller/environmentcontroller.ring"
-load "environment/view/environmentview.ring"
-
+	load "environment/controller/environmentcontroller.ring"
+	load "environment/view/environmentview.ring"
+	
 # Load the Goal Designer Files
-load "goaldesigner/controller/goaldesignercontroller.ring"
-load "goaldesigner/view/goaldesignerview.ring"
-load "goaldesigner/view/stepcodeview.ring"
-load "goaldesigner/view/htmlstyles.ring"
-load "goaldesigner/view/stepstreeview.ring"
-load "goaldesigner/view/treecontrol.ring"
-load "goaldesigner/model/goaldesignermodel.ring"
-load "goaldesigner/model/treemodel.ring"
-load "goaldesigner/controller/findstepcontroller.ring"
-load "goaldesigner/view/findstepview.ring"
-load "goaldesigner/controller/printstepscontroller.ring"
-load "goaldesigner/view/printstepsview.ring"
-load "goaldesigner/model/interactionmodel.ring"
-load "goaldesigner/view/timemachineview.ring"
-load "goaldesigner/controller/timemachinecontroller.ring"
-load "goaldesigner/controller/programcontroller.ring"
-load "goaldesigner/controller/htmlfunctions.ring"
-
+	load "goaldesigner/controller/goaldesignercontroller.ring"
+	load "goaldesigner/view/goaldesignerview.ring"
+	load "goaldesigner/view/stepcodeview.ring"
+	load "goaldesigner/view/htmlstyles.ring"
+	load "goaldesigner/view/stepstreeview.ring"
+	load "goaldesigner/view/treecontrol.ring"
+	load "goaldesigner/model/goaldesignermodel.ring"
+	load "goaldesigner/model/treemodel.ring"
+	load "goaldesigner/controller/findstepcontroller.ring"
+	load "goaldesigner/view/findstepview.ring"
+	load "goaldesigner/controller/printstepscontroller.ring"
+	load "goaldesigner/view/printstepsview.ring"
+	load "goaldesigner/model/interactionmodel.ring"
+	load "goaldesigner/view/timemachineview.ring"
+	load "goaldesigner/controller/timemachinecontroller.ring"
+	load "goaldesigner/controller/programcontroller.ring"
+	load "goaldesigner/controller/htmlfunctions.ring"
+	
 # Load Steps Colors Files
-load "goaldesigner/controller/stepscolorscontroller.ring"
-load "goaldesigner/view/stepscolorsview.ring"
-
+	load "goaldesigner/controller/stepscolorscontroller.ring"
+	load "goaldesigner/view/stepscolorsview.ring"
+	
 # Load the Components Browser Files
-load "componentsbrowser/controller/componentsbrowsercontroller.ring"
-load "componentsbrowser/view/componentsbrowserview.ring"
-load "componentsbrowser/view/componentstreeview.ring"
-load "componentsbrowser/componentslist.ring"
-
+	load "componentsbrowser/controller/componentsbrowsercontroller.ring"
+	load "componentsbrowser/view/componentsbrowserview.ring"
+	load "componentsbrowser/view/componentstreeview.ring"
+	load "componentsbrowser/componentslist.ring"
+	
 # Load the component classes
-load "component/controller/componentcontrollerparent.ring"
-load "component/view/componentviewparent.ring"
-
+	load "component/controller/componentcontrollerparent.ring"
+	load "component/view/componentviewparent.ring"
+	
 # Load the File System Files
-load "filesystem/databasesqlite.ring"
-load "filesystem/databasesqliteqt.ring"
-load "filesystem/database.ring"
-load "filesystem/visualsourcefile.ring"
+	load "filesystem/databasesqlite.ring"
+	load "filesystem/databasesqliteqt.ring"
+	load "filesystem/database.ring"
+	load "filesystem/visualsourcefile.ring"
 
 # Quick Message 
-load "general/quickmsgController.ring"
+	load "general/quickmsgController.ring"
 
 # Load Components 
-load "vpl/ringpwct/ringpwct.ring"
+	load "vpl/ringpwct/ringpwct.ring"
 
 # Load the Form Designer 
-load "formdesigner/formdesigner.ring"
+	load "formdesigner/formdesigner.ring"
 
 # Run PWCT Environment
-Start_Environment()
+	Start_Environment()
 
 /*
 	The next function run the Goal Designer Alone
