@@ -1,8 +1,8 @@
 # Start Form Designer File
 aObjectsList = [
 	[ :name = "Window" , :id = 1 , :classname = "formdesigner_qwidget" , :data = [
-		 :x = 0 , : y = 0  , 
-		 :width =  1344 , :height = 615 , 
+		 :x = 0 , : y = -40  , 
+		 :width =  1664 , :height = 919 , 
 		 :title =  "Component Wizard" , 
 		 :backcolor =  "" , 
 		 :windowflags =  "Qt_Window | Qt_WindowTitleHint | Qt_WindowSystemMenuHint | Qt_WindowMinimizeButtonHint | Qt_WindowCloseButtonHint | Qt_CustomizeWindowHint" , 
@@ -15,7 +15,7 @@ aObjectsList = [
 	],
 	[ :name = "Label1" , :id = 2 , :classname = "formdesigner_qlabel" , :data = [
 		 :x = 8 , : y = 22  , 
-		 :width =  58 , :height = 26 , 
+		 :width =  78 , :height = 26 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
 		 :font =  "Arial" , 
@@ -25,7 +25,7 @@ aObjectsList = [
 		]
 	],
 	[ :name = "textName" , :id = 3 , :classname = "formdesigner_qlineedit" , :data = [
-		 :x = 66 , : y = 22  , 
+		 :x = 106 , : y = 22  , 
 		 :width =  212 , :height = 33 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
@@ -42,7 +42,7 @@ aObjectsList = [
 	],
 	[ :name = "Label2" , :id = 4 , :classname = "formdesigner_qlabel" , :data = [
 		 :x = 14 , : y = 73  , 
-		 :width =  41 , :height = 38 , 
+		 :width =  61 , :height = 38 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
 		 :font =  "Arial" , 
@@ -52,7 +52,7 @@ aObjectsList = [
 		]
 	],
 	[ :name = "textFolder" , :id = 5 , :classname = "formdesigner_qlineedit" , :data = [
-		 :x = 66 , : y = 75  , 
+		 :x = 106 , : y = 75  , 
 		 :width =  212 , :height = 33 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
@@ -68,7 +68,7 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Button1" , :id = 6 , :classname = "formdesigner_qpushbutton" , :data = [
-		 :x = 1189 , : y = 15  , 
+		 :x = 1499 , : y = 15  , 
 		 :width =  141 , :height = 32 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
@@ -80,7 +80,7 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Button6" , :id = 7 , :classname = "formdesigner_qpushbutton" , :data = [
-		 :x = 1189 , : y = 123  , 
+		 :x = 1499 , : y = 123  , 
 		 :width =  141 , :height = 32 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
@@ -92,7 +92,7 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Label3" , :id = 8 , :classname = "formdesigner_qlabel" , :data = [
-		 :x = 293 , : y = 22  , 
+		 :x = 333 , : y = 22  , 
 		 :width =  59 , :height = 27 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
@@ -103,7 +103,7 @@ aObjectsList = [
 		]
 	],
 	[ :name = "ListTemplate" , :id = 9 , :classname = "formdesigner_qlistwidget" , :data = [
-		 :x = 343 , : y = 22  , 
+		 :x = 383 , : y = 22  , 
 		 :width =  362 , :height = 142 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
@@ -124,7 +124,7 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Label4" , :id = 10 , :classname = "formdesigner_qlabel" , :data = [
-		 :x = 744 , : y = 167  , 
+		 :x = 784 , : y = 167  , 
 		 :width =  28 , :height = 27 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
@@ -135,8 +135,8 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Tab1" , :id = 11 , :classname = "formdesigner_qtabwidget" , :data = [
-		 :x = 780 , : y = 175  , 
-		 :width =  393 , :height = 163 , 
+		 :x = 820 , : y = 175  , 
+		 :width =  663 , :height = 243 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
 		 :font =  "Arial" , 
@@ -146,11 +146,11 @@ aObjectsList = [
 		]
 	],
 	[ :name = "TextEnglish" , :id = 12 , :classname = "formdesigner_qtextedit" , :data = [
-		 :x = 3 , : y = 5  , 
-		 :width =  370 , :height = 120 , 
+		 :x = 7 , : y = 7  , 
+		 :width =  649 , :height = 195 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
-		 :font =  "Arial" , 
+		 :font =  "MS Shell Dlg 2,18,-1,5,50,0,0,0,0,0" , 
 		 :parent =  "Tab1Page1"  ,
 		 :text =  " Component",
 		 :setcopyAvailableEvent =  "",
@@ -164,10 +164,10 @@ aObjectsList = [
 	],
 	[ :name = "TextArabic" , :id = 13 , :classname = "formdesigner_qtextedit" , :data = [
 		 :x = 4 , : y = 5  , 
-		 :width =  370 , :height = 120 , 
+		 :width =  650 , :height = 193 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
-		 :font =  "Arial" , 
+		 :font =  "MS Shell Dlg 2,18,-1,5,50,0,0,0,0,0" , 
 		 :parent =  "Tab1Page2"  ,
 		 :text =  "مكون ",
 		 :setcopyAvailableEvent =  "",
@@ -180,7 +180,7 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Label13" , :id = 14 , :classname = "formdesigner_qlabel" , :data = [
-		 :x = 744 , : y = 15  , 
+		 :x = 784 , : y = 15  , 
 		 :width =  29 , :height = 27 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
@@ -191,8 +191,8 @@ aObjectsList = [
 		]
 	],
 	[ :name = "TextInfo" , :id = 15 , :classname = "formdesigner_qtextedit" , :data = [
-		 :x = 781 , : y = 15  , 
-		 :width =  392 , :height = 141 , 
+		 :x = 821 , : y = 15  , 
+		 :width =  662 , :height = 141 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
 		 :font =  "Arial" , 
@@ -208,8 +208,8 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Label6" , :id = 16 , :classname = "formdesigner_qlabel" , :data = [
-		 :x = 7 , : y = 381  , 
-		 :width =  57 , :height = 27 , 
+		 :x = 7 , : y = 461  , 
+		 :width =  77 , :height = 27 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
 		 :font =  "Arial" , 
@@ -219,8 +219,8 @@ aObjectsList = [
 		]
 	],
 	[ :name = "TextStepsTree" , :id = 17 , :classname = "formdesigner_qtextedit" , :data = [
-		 :x = 62 , : y = 382  , 
-		 :width =  1241 , :height = 208 , 
+		 :x = 102 , : y = 462  , 
+		 :width =  1383 , :height = 415 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
 		 :font =  "MS Shell Dlg 2,18,-1,5,50,0,0,0,0,0" , 
@@ -236,7 +236,7 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Label7" , :id = 18 , :classname = "formdesigner_qlabel" , :data = [
-		 :x = 69 , : y = 172  , 
+		 :x = 109 , : y = 172  , 
 		 :width =  77 , :height = 24 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
@@ -247,7 +247,7 @@ aObjectsList = [
 		]
 	],
 	[ :name = "ComboQuickScript" , :id = 19 , :classname = "formdesigner_qcombobox" , :data = [
-		 :x = 146 , : y = 172  , 
+		 :x = 186 , : y = 172  , 
 		 :width =  326 , :height = 31 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
@@ -262,11 +262,11 @@ aObjectsList = [
 		]
 	],
 	[ :name = "TextQuickScript" , :id = 20 , :classname = "formdesigner_qtextedit" , :data = [
-		 :x = 64 , : y = 208  , 
-		 :width =  639 , :height = 136 , 
+		 :x = 104 , : y = 208  , 
+		 :width =  639 , :height = 211 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
-		 :font =  "Arial" , 
+		 :font =  "MS Shell Dlg 2,18,-1,5,50,0,0,0,0,0" , 
 		 :parent =  "win"  ,
 		 :text =  "",
 		 :setcopyAvailableEvent =  "",
@@ -279,8 +279,8 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Button3" , :id = 21 , :classname = "formdesigner_qpushbutton" , :data = [
-		 :x = 107 , : y = 349  , 
-		 :width =  38 , :height = 26 , 
+		 :x = 107 , : y = 429  , 
+		 :width =  48 , :height = 26 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
 		 :font =  "Arial" , 
@@ -291,8 +291,8 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Button21" , :id = 22 , :classname = "formdesigner_qpushbutton" , :data = [
-		 :x = 155 , : y = 349  , 
-		 :width =  68 , :height = 26 , 
+		 :x = 165 , : y = 429  , 
+		 :width =  88 , :height = 26 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
 		 :font =  "Arial" , 
@@ -303,8 +303,8 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Button22" , :id = 23 , :classname = "formdesigner_qpushbutton" , :data = [
-		 :x = 233 , : y = 349  , 
-		 :width =  58 , :height = 26 , 
+		 :x = 263 , : y = 429  , 
+		 :width =  78 , :height = 26 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
 		 :font =  "Arial" , 
@@ -315,8 +315,8 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Button23" , :id = 24 , :classname = "formdesigner_qpushbutton" , :data = [
-		 :x = 301 , : y = 349  , 
-		 :width =  58 , :height = 26 , 
+		 :x = 351 , : y = 429  , 
+		 :width =  78 , :height = 26 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
 		 :font =  "Arial" , 
@@ -327,8 +327,8 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Button24" , :id = 25 , :classname = "formdesigner_qpushbutton" , :data = [
-		 :x = 369 , : y = 349  , 
-		 :width =  48 , :height = 26 , 
+		 :x = 439 , : y = 429  , 
+		 :width =  68 , :height = 26 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
 		 :font =  "Arial" , 
@@ -339,8 +339,8 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Button25" , :id = 26 , :classname = "formdesigner_qpushbutton" , :data = [
-		 :x = 427 , : y = 349  , 
-		 :width =  48 , :height = 26 , 
+		 :x = 517 , : y = 429  , 
+		 :width =  58 , :height = 26 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
 		 :font =  "Arial" , 
@@ -351,7 +351,7 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Button26" , :id = 27 , :classname = "formdesigner_qpushbutton" , :data = [
-		 :x = 485 , : y = 349  , 
+		 :x = 585 , : y = 429  , 
 		 :width =  28 , :height = 26 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
@@ -363,7 +363,7 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Button27" , :id = 28 , :classname = "formdesigner_qpushbutton" , :data = [
-		 :x = 550 , : y = 349  , 
+		 :x = 620 , : y = 429  , 
 		 :width =  28 , :height = 26 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
@@ -375,7 +375,7 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Button28" , :id = 29 , :classname = "formdesigner_qpushbutton" , :data = [
-		 :x = 588 , : y = 349  , 
+		 :x = 658 , : y = 429  , 
 		 :width =  28 , :height = 26 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
@@ -387,8 +387,8 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Button29" , :id = 30 , :classname = "formdesigner_qpushbutton" , :data = [
-		 :x = 626 , : y = 349  , 
-		 :width =  38 , :height = 26 , 
+		 :x = 696 , : y = 429  , 
+		 :width =  48 , :height = 26 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
 		 :font =  "Arial" , 
@@ -399,7 +399,7 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Button13" , :id = 31 , :classname = "formdesigner_qpushbutton" , :data = [
-		 :x = 476 , : y = 172  , 
+		 :x = 516 , : y = 172  , 
 		 :width =  114 , :height = 30 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
@@ -411,8 +411,8 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Button14" , :id = 32 , :classname = "formdesigner_qpushbutton" , :data = [
-		 :x = 674 , : y = 349  , 
-		 :width =  70 , :height = 26 , 
+		 :x = 754 , : y = 429  , 
+		 :width =  80 , :height = 26 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
 		 :font =  "Arial" , 
@@ -423,8 +423,8 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Button15" , :id = 33 , :classname = "formdesigner_qpushbutton" , :data = [
-		 :x = 754 , : y = 349  , 
-		 :width =  87 , :height = 26 , 
+		 :x = 842 , : y = 429  , 
+		 :width =  117 , :height = 26 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
 		 :font =  "Arial" , 
@@ -435,8 +435,8 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Button33" , :id = 34 , :classname = "formdesigner_qpushbutton" , :data = [
-		 :x = 851 , : y = 349  , 
-		 :width =  77 , :height = 26 , 
+		 :x = 971 , : y = 429  , 
+		 :width =  107 , :height = 26 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
 		 :font =  "Arial" , 
@@ -447,8 +447,8 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Button34" , :id = 35 , :classname = "formdesigner_qpushbutton" , :data = [
-		 :x = 938 , : y = 349  , 
-		 :width =  77 , :height = 26 , 
+		 :x = 1088 , : y = 429  , 
+		 :width =  97 , :height = 26 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
 		 :font =  "Arial" , 
@@ -459,7 +459,7 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Button35" , :id = 36 , :classname = "formdesigner_qpushbutton" , :data = [
-		 :x = 1189 , : y = 69  , 
+		 :x = 1499 , : y = 69  , 
 		 :width =  141 , :height = 32 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
@@ -471,8 +471,8 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Button36" , :id = 37 , :classname = "formdesigner_qpushbutton" , :data = [
-		 :x = 1025 , : y = 349  , 
-		 :width =  138 , :height = 26 , 
+		 :x = 1195 , : y = 429  , 
+		 :width =  168 , :height = 26 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
 		 :font =  "Arial" , 
@@ -483,7 +483,7 @@ aObjectsList = [
 		]
 	],
 	[ :name = "Button37" , :id = 38 , :classname = "formdesigner_qpushbutton" , :data = [
-		 :x = 1166 , : y = 349  , 
+		 :x = 1376 , : y = 429  , 
 		 :width =  107 , :height = 26 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
