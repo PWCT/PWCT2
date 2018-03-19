@@ -180,6 +180,11 @@ class EnvironmentController from WindowsControllerParent
 		BeforeRun()
 		parent().DebugAction()
 
+
+	func RunInBrowser
+		BeforeRun()
+		parent().RunInBrowser()
+
 	/*
 		Purpose : Change Opened File Action
 		Parameters : None

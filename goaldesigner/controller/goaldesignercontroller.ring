@@ -1196,6 +1196,14 @@ class GoalDesignerController from WindowsControllerParent
 		oProgramController.RunGUI(self)
 
 	/*
+		Run web application 
+	*/
+
+	func RunInBrowser
+		setProgramControllerFileName()
+		oProgramController.RunInBrowser(self)
+
+	/*
 		Purpose : Set Program Controller File Name 
 			  Determine the Generated source code file
 		Parameters : None
@@ -1482,9 +1490,13 @@ class GoalDesignerController from WindowsControllerParent
 
 
 	/*
+		Check if we have active visual source file
 	*/
 	func IsActiveFile
 		if oVisualSourceFile.cFileName = "noname.pwct" {
 			return False 
 		} 
 		return True
+
+
+

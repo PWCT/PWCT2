@@ -18,6 +18,9 @@ Class ProgramController
 
 	oState = NULL
 
+	cWebApplicationFolder = ""
+
+
 	/*
 		Purpose : Debug
 		Parameters : Goal Designer Object
@@ -78,14 +81,52 @@ Class ProgramController
 		chdir(cDir)
 
 	/*
+		Run web application 
+	*/
+
+	func RunInBrowser oGD
+		Prepare(oGD)	# Save the source code to the file
+		RunWebApplication(oGD,cFileName)
+
+	func RunWebApplication oGD,cFile
+		if isWindows() 
+			if cWebApplicationFolder != JustFilePath(cFile)
+				cWebApplicationFolder = JustFilePath(cFile)
+				new ServerPrepare { 
+					setApplicationPath(this.cWebApplicationFolder)
+					PrepareConfigurationFile() 
+					cServerExe = getserverExeFile()
+				}	
+				oGD.parent().oView.oProcess = RunProcess(cCurrentDir + "killwebserver.bat","",oGD.parent().Method(:GetDataAction))			
+				oGD.parent().oView.oProcess.waitForFinished(3000)
+				oWebServerProcess = RunProcess(cServerEXE,"",oGD.parent().Method(:GetDataAction))			
+				sleep(3)
+				oGD.parent().oView.oProcessEditbox.setplaintext("")
+			ok
+			new QDesktopServices {
+				OpenURL(new qURL("http://localhost:8080/"+JustFileName(cFile)))
+			}
+		else 
+			cWebURL = cFile
+			nPos = substr(cWebURL,"htdocs")
+			cWebURL = substr(cWebURL,nPOS+7)
+			new QDesktopServices {
+				OpenURL(new qURL("http://localhost/"+cWebURL))
+			}
+		ok
+
+	/*
 		Purpose : Run Process
 		Parameters : Program, Arguments and Method for Get Data Event
 		Output :  None
 	*/
 
 	func RunProcess cProgram,cArg,cGetDataFunc
+		aPara = split(cArg,",")
 		oStringList = new qStringlist() {
-			append(cArg)
+			for cPara in aPara 
+				append(cPara)
+			next
 		}
 		oProcess = new qprocess(NULL) {
 			setprogram(cProgram)

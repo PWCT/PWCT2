@@ -78,6 +78,9 @@
 # Load the Form Designer 
 	load "formdesigner/formdesigner.ring"
 
+# Load the Web Server - ServerPrepare Class
+	load "../libdepwin/Apache2.2/ring/prepare.ring"
+
 # Run PWCT Environment
 	Start_Environment()
 

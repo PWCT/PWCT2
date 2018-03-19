@@ -352,6 +352,11 @@ class EnvironmentView from WindowsViewParent
 						setclickevent(Method(:RunGUIAction))
 						settooltip(T_ENV_MENU_RUNNOCONSOLE) # "Run GUI Application (No Console)"
 					} ,
+					new qtoolbutton(win) {
+						setbtnimage(self,"images/web.png")
+						setclickEvent(Method(:RunInBrowser))
+						settooltip("Run Web Application - Open In Browser (Ctrl+F6)")
+					} ,
 					new qToolbutton(win) { 
 						setbtnimage(self,AppFile("images/close.png"))
 						setclickevent(Method(:CloseAction))
