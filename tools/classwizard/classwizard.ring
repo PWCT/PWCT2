@@ -8,6 +8,9 @@
 
 load "stdlib.ring"
 load "guilib.ring"
+load "weblib.ring"
+
+import System.web
 
 see "Enter the class name : " give cClassName
 
