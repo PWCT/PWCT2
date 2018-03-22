@@ -342,6 +342,26 @@ class #{f1}ComponentView from ComponentViewParent
 #===========================================
 #===========================================
 
+	cListTemplate = cTemplateHeader + `
+class #{f1}ComponentController from ComponentControllerParent 
+
+	oView = new #{f1}ComponentView
+
+	func GenerateAction 
+
+#{f4}
+
+		return True 
+
+class #{f1}ComponentView from ComponentViewParent
+	 
+		Title( T_CT_#{f3}_IP_TITLE )	
+		ListBox( T_CT_#{f3}_IP_VALUE , :value, 
+				T_CT_#{f3}_IP_VALUE2LIST )
+		PageButtons()
+`
+#===========================================
+#===========================================
 
 	func setComponentName cName
 		cComponentName = cName
@@ -425,6 +445,10 @@ class #{f1}ComponentView from ComponentViewParent
 
 	func TextListTextTextTemplate
 		cTemplate = cTextListTextTextTemplate
+		ProcessTemplate(cTemplate)
+
+	func OneListboxTemplate
+		cTemplate = cListTemplate
 		ProcessTemplate(cTemplate)
 
 	func ProcessTemplate cTemplate

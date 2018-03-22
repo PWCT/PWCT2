@@ -103,7 +103,8 @@ else
 				oGenerator.EightTextboxesTemplate()
 			case 13		# 9 Textboxes
 				oGenerator.NineTextboxesTemplate()
-
+			case 14		# One Listbox 
+				oGenerator.OneListboxTemplate()
 
 		}
 
@@ -202,6 +203,12 @@ else
 				"Label 8 (Textbox 8)"  + WindowsNL() +
 				"Label 9 (Textbox 9)"  + WindowsNL() +
 				"Steps Tree Constants"
+			case 14		# One Listbox 
+				cText = "Interaction Page - Title" + WindowsNL() +
+				"First Label (Listbox)"  + WindowsNL() +
+				"Listbox Items as List"  + WindowsNL() +
+				"Steps Tree Constants"
+
 
 		}
 		oView.textInfo.setplaintext(cText)
