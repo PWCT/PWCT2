@@ -67,11 +67,13 @@ class EnvironmentView from WindowsViewParent
 
 	func CreateMenuBar win
 		menu1 = new qmenubar(win) {		
-			subFile = addmenu(T_ENV_MENU_FILE) # "File"
-			subEdit = addmenu(T_ENV_MENU_EDIT) # "Edit"
-			subView = addmenu(T_ENV_MENU_VIEW) # "View"
-			subProgram = addmenu(T_ENV_MENU_PROGRAM) # "Program"
-			subHelp = addmenu(T_ENV_MENU_HELP) # "Help"
+			subFile 	= addmenu(T_ENV_MENU_FILE) # "File"
+			subEdit 	= addmenu(T_ENV_MENU_EDIT) # "Edit"
+			subView 	= addmenu(T_ENV_MENU_VIEW) # "View"
+			subProgram 	= addmenu(T_ENV_MENU_PROGRAM) # "Program"
+			subTools 	= addmenu("Tools")
+			subDistribute   = addmenu("Distribute")
+			subHelp 	= addmenu(T_ENV_MENU_HELP) # "Help"
 			subFile { 
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+Alt+n"))
@@ -234,6 +236,83 @@ class EnvironmentView from WindowsViewParent
 					}
 					addaction(oAction)	
 				}
+			}
+			subTools {
+				oAction = new qAction(win) {
+					settext("Form Designer")
+					setclickEvent(Method(:pFormDesigner))
+				}
+				addaction(oAction)
+				addseparator()
+				oAction = new qAction(win) {
+					setShortcut(new QKeySequence("Alt+R"))
+					settext("RingREPL - Console")
+					setclickEvent(Method(:pREPLConsole))
+				}
+				addaction(oAction)
+				oAction = new qAction(win) {
+					setShortcut(new QKeySequence("Alt+Shift+R"))
+					settext("RingREPL - GUI")
+					setclickEvent(Method(:pREPLGUI))
+				}
+				addaction(oAction)
+				addseparator()
+				subOSTools = addmenu("Operating System Tools")
+				subOSTools {
+					oAction = new qAction(win) {
+						settext("Terminal (Command Prompt)")
+						setShortcut(new QKeySequence("Alt+Shift+T"))
+						setclickEvent(Method(:OSTerminal))
+					}
+					addaction(oAction)
+					addseparator()
+					oAction = new qAction(win) {
+						settext("Files Manager (Explorer)")
+						setShortcut(new QKeySequence("Alt+Shift+F"))
+						setclickEvent(Method(:OSFilesManager))
+					}
+					addaction(oAction)
+				}
+			}
+			subDistribute {
+				oAction = new qAction(win) {
+					settext("Generate Ring Object File (*.ringo)")
+					setclickEvent(Method("pDistribute(1)"))
+				}
+				addaction(oAction)
+				addseparator()
+				oAction = new qAction(win) {
+					settext("Ring2EXE (Build Console Application)")
+					setclickEvent(Method("pDistribute(2)"))
+				}
+				addaction(oAction)
+				addseparator()
+				oAction = new qAction(win) {
+					settext("Ring2EXE (Distribute Application - Use All Runtime)")
+					setclickEvent(Method("pDistribute(3)"))
+				}
+				addaction(oAction)
+				oAction = new qAction(win) {
+					settext("Ring2EXE (Distribute Application - Use All Runtime - Hide Console Window)")
+					setclickEvent(Method("pDistribute(4)"))
+				}
+				addaction(oAction)
+				oAction = new qAction(win) {
+					settext("Ring2EXE (Distribute RingQt Application)")
+					setclickEvent(Method("pDistribute(5)"))
+				}
+				addaction(oAction)
+				oAction = new qAction(win) {
+					settext("Ring2EXE (Distribute RingAllegro Game)")
+					setclickEvent(Method("pDistribute(6)"))
+				}
+				addaction(oAction)
+				addseparator()
+				oAction = new qAction(win) {
+					settext("Ring2EXE (Prepare Qt Project) - Distribute for Mobile Devices)")
+					setclickEvent(Method("pDistribute(7)"))
+				}
+				addaction(oAction)
 			}
 			subHelp { 
 
