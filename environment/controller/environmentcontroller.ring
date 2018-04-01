@@ -752,3 +752,34 @@ class EnvironmentController from WindowsControllerParent
 		new QDesktopServices {
 			OpenURL(new qURL("file:///"+this.cCurrentDir))
 		}
+
+	func OpenFormDesigner	
+		cFormFileName = PWCT_FOLDER + "/formdesigner/formdesigner.ring"
+		? cFormFileName
+		RunTool(cFormFileName)
+
+	func RunTool cFileName
+		oView.oProcessEditbox.setplaintext("")
+		oView.oProcessText.setFocus(0)
+		chdir(JustFilePath(cFileName))
+		cRingEXE = exefilename()
+		oView.oProcess = parent().oProgramController.RunProcess(cRingEXE,cFileName,Method(:GetDataAction))
+		chdir(exefolder())
+
+	func RunToolConsole cFileName
+		if iswindows()
+			System('start '+exefolder()+'ring "' + cFileName + '"' + nl)
+		else
+			cCode = 'cd $(dirname "'+cFileName+'") ; ' + ' ring "' + cFileName + '"' + nl
+			system(cCode)
+		ok
+
+	func REPLConsole
+		cAppFileName = PWCT_FOLDER + "/ringrepl/repl.ring"
+		RunToolConsole(cAppFileName)
+
+	func REPLGUI
+		cAppFileName = PWCT_FOLDER + "/ringrepl/replw.ring"
+		# RunTool will split parameters using "," as separator 
+		cAppFileName += ",1"	# Style Fusion White
+		RunTool(cAppFileName)

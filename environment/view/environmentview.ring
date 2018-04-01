@@ -240,20 +240,20 @@ class EnvironmentView from WindowsViewParent
 			subTools {
 				oAction = new qAction(win) {
 					settext("Form Designer")
-					setclickEvent(Method(:pFormDesigner))
+					setclickEvent(Method(:OpenFormDesigner))
 				}
 				addaction(oAction)
 				addseparator()
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Alt+R"))
 					settext("RingREPL - Console")
-					setclickEvent(Method(:pREPLConsole))
+					setclickEvent(Method(:REPLConsole))
 				}
 				addaction(oAction)
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Alt+Shift+R"))
 					settext("RingREPL - GUI")
-					setclickEvent(Method(:pREPLGUI))
+					setclickEvent(Method(:REPLGUI))
 				}
 				addaction(oAction)
 				addseparator()
