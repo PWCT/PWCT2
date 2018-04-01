@@ -687,3 +687,63 @@ class EnvironmentController from WindowsControllerParent
 			Close()
 		}
 		openVisualFile(cFileName)
+
+	func Distribute nOption
+		cActiveFileName = parent().oProgramController.cFileName
+		if cActiveFileName = Null {
+			 return Nofileopened() 
+		}
+		parent().oProgramController.prepare(parent()) # Save before running 
+		cAppToRun = exefolder()+"/ring2exe"
+		cPara = cActiveFileName
+		switch nOption {
+			case 1	# ringo
+				cAppToRun = exefolder()+"/ring"
+				cPara += ",-go,-norun"
+			case 2	# exe 
+				cPara += ",-static"
+			case 3	# dist allruntime
+				cPara += ",-dist,-allruntime"
+			case 4	# dist allruntime gui
+				cPara += ",-dist,-allruntime,-gui"
+			case 5	# ringqt
+				cPara += ",-dist,-qt,-gui"
+			case 6	# ringallegro 
+				cPara += ",-dist,-allegro,-freeglut,-opengl,-gui"
+			case 7	# qt project
+				cPara += ",-dist,-allruntime,-gui,-mobileqt"
+		}
+		oView.oDockOutputWindow { show() raise() }		
+		oView.oProcessEditbox.setplaintext("")
+		chdir(JustFilePath(cActiveFileName))
+		oView.oProcess = parent().oProgramController.RunProcess(cAppToRun,cPara,Method(:GetDataAction))
+		OSFilesManager()
+		chdir(exefolder())
+
+	func Nofileopened
+		New qMessageBox(oView.win) {
+			setWindowTitle("Sorry")
+			setText("Save/Select the file first!")
+			show()
+		}
+
+	func OSTerminal
+		if isWindows() {
+			cCommand = 'start cmd /K "cd ' + cCurrentDir + '"'
+		elseif isLinux()
+			cCommand = "gnome-terminal"
+		elseif isMacosx()
+			cCommand = "open /Applications/Utilities/Terminal.app"
+		else 
+			return
+		}
+		system(cCommand)
+
+	func OSFilesManager 
+		cActiveFileName = parent().oProgramController.cFileName
+		if cActiveFileName != Null {
+			this.cCurrentDir = justfilepath(cActiveFileName)
+		}
+		new QDesktopServices {
+			OpenURL(new qURL("file:///"+this.cCurrentDir))
+		}

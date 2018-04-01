@@ -277,40 +277,40 @@ class EnvironmentView from WindowsViewParent
 			subDistribute {
 				oAction = new qAction(win) {
 					settext("Generate Ring Object File (*.ringo)")
-					setclickEvent(Method("pDistribute(1)"))
+					setclickEvent(Method("Distribute(1)"))
 				}
 				addaction(oAction)
 				addseparator()
 				oAction = new qAction(win) {
 					settext("Ring2EXE (Build Console Application)")
-					setclickEvent(Method("pDistribute(2)"))
+					setclickEvent(Method("Distribute(2)"))
 				}
 				addaction(oAction)
 				addseparator()
 				oAction = new qAction(win) {
 					settext("Ring2EXE (Distribute Application - Use All Runtime)")
-					setclickEvent(Method("pDistribute(3)"))
+					setclickEvent(Method("Distribute(3)"))
 				}
 				addaction(oAction)
 				oAction = new qAction(win) {
 					settext("Ring2EXE (Distribute Application - Use All Runtime - Hide Console Window)")
-					setclickEvent(Method("pDistribute(4)"))
+					setclickEvent(Method("Distribute(4)"))
 				}
 				addaction(oAction)
 				oAction = new qAction(win) {
 					settext("Ring2EXE (Distribute RingQt Application)")
-					setclickEvent(Method("pDistribute(5)"))
+					setclickEvent(Method("Distribute(5)"))
 				}
 				addaction(oAction)
 				oAction = new qAction(win) {
 					settext("Ring2EXE (Distribute RingAllegro Game)")
-					setclickEvent(Method("pDistribute(6)"))
+					setclickEvent(Method("Distribute(6)"))
 				}
 				addaction(oAction)
 				addseparator()
 				oAction = new qAction(win) {
 					settext("Ring2EXE (Prepare Qt Project) - Distribute for Mobile Devices)")
-					setclickEvent(Method("pDistribute(7)"))
+					setclickEvent(Method("Distribute(7)"))
 				}
 				addaction(oAction)
 			}

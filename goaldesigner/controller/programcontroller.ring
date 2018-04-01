@@ -178,8 +178,6 @@ Class ProgramController
 			oGD.parent().oView.oDockOutputWindow.raise()
 		}
 
-	private
-
 		/*
 			Purpose : Prepare the file
 			Parameters : Goal Designer Object
@@ -191,6 +189,8 @@ Class ProgramController
 				GetCode(oGD)
 			# Save the code to the file
 				SaveToFile()
+
+	private
 
 		/*
 			Purpose : Get the Source Code
