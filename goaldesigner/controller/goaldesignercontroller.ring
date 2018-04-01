@@ -1498,5 +1498,10 @@ class GoalDesignerController from WindowsControllerParent
 		} 
 		return True
 
+	func GetActiveFile 
+		return oVisualSourceFile.cFileName
 
-
+	func GetActiveSourceFile 
+		cActiveFileName = GetActiveFile()
+		cActiveFileName = substr(cActiveFileName,".pwct",".ring")
+		return cActiveFileName

@@ -689,7 +689,7 @@ class EnvironmentController from WindowsControllerParent
 		openVisualFile(cFileName)
 
 	func Distribute nOption
-		cActiveFileName = parent().oProgramController.cFileName
+		cActiveFileName = parent().GetActiveSourceFile()
 		if cActiveFileName = Null {
 			 return Nofileopened() 
 		}
@@ -727,7 +727,15 @@ class EnvironmentController from WindowsControllerParent
 			show()
 		}
 
+	func UpdateCurrentDirectory
+		cActiveFileName = parent().GetActiveSourceFile()
+		if cActiveFileName != Null {
+			this.cCurrentDir = justfilepath(cActiveFileName)
+		}
+
+
 	func OSTerminal
+		UpdateCurrentDirectory()
 		if isWindows() {
 			cCommand = 'start cmd /K "cd ' + cCurrentDir + '"'
 		elseif isLinux()
@@ -740,10 +748,7 @@ class EnvironmentController from WindowsControllerParent
 		system(cCommand)
 
 	func OSFilesManager 
-		cActiveFileName = parent().oProgramController.cFileName
-		if cActiveFileName != Null {
-			this.cCurrentDir = justfilepath(cActiveFileName)
-		}
+		UpdateCurrentDirectory()
 		new QDesktopServices {
 			OpenURL(new qURL("file:///"+this.cCurrentDir))
 		}
