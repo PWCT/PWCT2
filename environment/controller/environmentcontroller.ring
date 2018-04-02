@@ -795,6 +795,10 @@ class EnvironmentController from WindowsControllerParent
 	func SetMainFile
 		cActiveFileName = parent().GetActiveSourceFile()
 		oView.oTxtMainFile.setText(cActiveFileName)
+		# Generate the source code 
+			oProgramController = new ProgramController
+			oProgramController.cFileName = cActiveFileName
+			oProgramController.prepare(parent())
 
 	func GetMainFile
 		cMainFileName = trim(oView.oTxtMainFile.text())
@@ -808,18 +812,18 @@ class EnvironmentController from WindowsControllerParent
 		cMainFileName = GetMainFile()
 		if cMainFileName = Null { return Nofileopened() }
 		if not fexists(cMainFileName) { return }
-		SaveBeforeRunning()
 		oProgramController = new ProgramController
 		oProgramController.cFileName = cMainFileName
+		oProgramController.lMainFile = True
 		oProgramController.debug(parent())
 
 	func RunMainFile
 		cMainFileName = GetMainFile()
 		if cMainFileName = Null { return Nofileopened() }
 		if not fexists(cMainFileName) { return }
-		SaveBeforeRunning()
 		oProgramController = new ProgramController
 		oProgramController.cFileName = cMainFileName
+		oProgramController.lMainFile = True
 		oProgramController.Run(parent())
 
 	func RunGUIMainFile
@@ -827,8 +831,8 @@ class EnvironmentController from WindowsControllerParent
 		if cMainFileName = Null { return pNofileopened() }
 		if not fexists(cMainFileName) { return }
 		oView.oDockOutputWindow { show() raise() }		
-		SaveBeforeRunning()
 		oProgramController = new ProgramController
 		oProgramController.cFileName = cMainFileName
+		oProgramController.lMainFile = True
 		oProgramController.RunGUI(parent())
 

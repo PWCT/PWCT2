@@ -20,6 +20,7 @@ Class ProgramController
 
 	cWebApplicationFolder = ""
 
+	lMainFile	= False
 
 	/*
 		Purpose : Debug
@@ -184,11 +185,15 @@ Class ProgramController
 			Output : None
 		*/
 
-		func Prepare oGD
-			# Get the Source Code
-				GetCode(oGD)
-			# Save the code to the file
-				SaveToFile()
+	func Prepare oGD
+		# We don't do this when we run the main file 
+			if lMainFile {
+				return 
+			}
+		# Get the Source Code
+			GetCode(oGD)
+		# Save the code to the file
+			SaveToFile()
 
 	private
 
