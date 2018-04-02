@@ -15,6 +15,9 @@ class EnvironmentView from WindowsViewParent
 	oDockOutputWindow	oProcess oProcessText   oProcessEditbox
 	oDockFormDesigner
 
+	# Main File Toolbar 
+		tool2 oTxtMainFile
+
 	nGoalDesignerWindowID
 
 	if PWCTIsMobile(:DockForComponentsBrowser) {
@@ -36,6 +39,7 @@ class EnvironmentView from WindowsViewParent
 			setWindowTitle(T_ENV_TITLE) # "Programming Without Coding Technology"
 			self.CreateMenuBar(win)
 			self.CreateToolbar(win)
+			self.CreateMainFileToolbar(win)
 			self.CreateStatusBar(win)
 			if T_LAYOUTDIRECTION = 0 {
 				self.CreateFilesManager(win)
@@ -235,6 +239,50 @@ class EnvironmentView from WindowsViewParent
 						setclickevent(Method(:RunGUIAction))
 					}
 					addaction(oAction)	
+					oAction = new qAction(win) {
+						setShortcut(new QKeySequence("Ctrl+F6"))
+						setbtnimage(self,AppFile("images/web.png"))
+						settext("Run Web Application (Open In Browser)")
+						setclickEvent(Method(:RunInBrowser))
+					}
+					addaction(oAction)
+					addseparator()
+					oAction = new qAction(win) {
+						setShortcut(new QKeySequence("Ctrl+Shift+M"))
+						setbtnimage(self,("images/open.png"))
+						settext("Set the Main File to be the current source file")
+						setclickEvent(Method(:SetMainFile))
+					}
+					addaction(oAction)
+					oAction = new qAction(win) {
+						setShortcut(new QKeySequence("Ctrl+Shift+d"))
+						setbtnimage(self,AppFile("images/debug.png"))
+						settext("Main File : Debug (Run then wait!)")
+						setclickEvent(Method(:DebugMainFile))
+					}
+					addaction(oAction)
+					oAction = new qAction(win) {
+						setShortcut(new QKeySequence("Ctrl+Shift+r"))
+						setbtnimage(self,AppFile("images/run.png"))
+						settext("Main File : Run")
+						setclickEvent(Method(:RunMainFile))
+					}
+					addaction(oAction)
+					oAction = new qAction(win) {
+						setShortcut(new QKeySequence("Ctrl+Shift+F5"))
+						setbtnimage(self,AppFile("images/rungui.png"))
+						settext("Main File : Run GUI Application (No Console)")
+						setclickEvent(Method(:RunGUIMainFile))
+					}
+					addaction(oAction)
+					oAction = new qAction(win) {
+						setShortcut(new QKeySequence("Ctrl+Shift+F6"))
+						setbtnimage(self,AppFile("images/web.png"))
+						settext("Main File : Run Web Application (Open In Browser)")
+						setclickEvent(Method(:RunInBrowserMainFile))
+					}
+					addaction(oAction)
+
 				}
 			}
 			subTools {
@@ -432,7 +480,7 @@ class EnvironmentView from WindowsViewParent
 						settooltip(T_ENV_MENU_RUNNOCONSOLE) # "Run GUI Application (No Console)"
 					} ,
 					new qtoolbutton(win) {
-						setbtnimage(self,"images/web.png")
+						setbtnimage(self,AppFile("images/web.png"))
 						setclickEvent(Method(:RunInBrowser))
 						settooltip("Run Web Application - Open In Browser (Ctrl+F6)")
 					} ,
@@ -450,6 +498,55 @@ class EnvironmentView from WindowsViewParent
 				}
 			}
 		}
+
+
+	func CreateMainFileToolbar win
+		win {
+			# Main File Toolbar
+			tool2 = addtoolbar("mainfile")  {
+				oLblMainFile = new qLabel(this.win) {
+					setText("Main File : ")
+				}
+				this.oTxtMainFile = new qLineEdit(this.win) {
+					setStylesheet("border: 0px;  background-color: rgba(0, 0, 0, 0);")
+					setReadOnly(True)
+				}
+				oBtnSetFile = new qtoolbutton(this.win) {
+					setbtnimage(self,AppFile("images/open.png"))
+					setclickEvent(Method(:SetMainFile))
+					settooltip("Set the Main File to be the current source file (Ctrl+Shift+M)")
+				}
+				oBtnDebugMainFile = new qtoolbutton(this.win) {
+						setbtnimage(self,AppFile("images/debug.png"))
+						setclickevent(Method(:DebugMainFile)) 
+						settooltip("Main File : Debug  - Run then wait! (Ctrl+Shift+D)")
+				} 
+				oBtnRunMainFile = new qtoolbutton(this.win) {
+						setbtnimage(self,AppFile("images/run.png"))
+						setclickEvent(Method(:RunMainFile))
+						settooltip("Main File : Run the program (Ctrl+Shift+R)")
+				} 
+				oBtnRunGUIMainFile = new qtoolbutton(this.win) {
+						setbtnimage(self,AppFile("images/rungui.png"))
+						setclickEvent(Method(:RunGUIMainFile))
+						settooltip("Main File : Run GUI Application - No Console (Ctrl+Shift+F5)")
+				} 
+				oBtnRunWebMainFile = new qtoolbutton(this.win) {
+						setbtnimage(self,AppFile("images/web.png"))
+						setclickEvent(Method(:RunInBrowserMainFile))
+						settooltip("Main File : Run Web Application - Open In Browser (Ctrl+Shift+F6)")
+				} 
+				AddWidget(oLblMainFile)
+				AddWidget(this.oTxtMainFile)
+				AddWidget(oBtnSetFile)
+				AddWidget(oBtnDebugMainFile)
+				AddWidget(oBtnRunMainFile)
+				AddWidget(oBtnRunGUIMainFile)
+				AddWidget(oBtnRunWebMainFile)
+			}
+		}
+
+
 
 	/*
 		Purpose : Create the Files Manager Window
