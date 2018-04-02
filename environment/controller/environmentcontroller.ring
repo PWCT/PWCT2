@@ -836,3 +836,13 @@ class EnvironmentController from WindowsControllerParent
 		oProgramController.lMainFile = True
 		oProgramController.RunGUI(parent())
 
+	func RunInBrowserMainFile
+		BeforeRun()
+		cMainFileName = GetMainFile()
+		if cMainFileName = Null { return pNofileopened() }
+		if not fexists(cMainFileName) { return }
+		oView.oDockOutputWindow { show() raise() }		
+		oProgramController = new ProgramController
+		oProgramController.cFileName = cMainFileName
+		oProgramController.lMainFile = True
+		oProgramController.RunInBrowser(parent())
