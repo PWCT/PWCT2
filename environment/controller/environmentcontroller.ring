@@ -688,12 +688,15 @@ class EnvironmentController from WindowsControllerParent
 		}
 		openVisualFile(cFileName)
 
+	func SaveBeforeRunning
+		parent().oProgramController.prepare(parent()) # Save before running 
+
 	func Distribute nOption
 		cActiveFileName = parent().GetActiveSourceFile()
 		if cActiveFileName = Null {
 			 return Nofileopened() 
 		}
-		parent().oProgramController.prepare(parent()) # Save before running 
+		SaveBeforeRunning() # Save before running 
 		cAppToRun = exefolder()+"/ring2exe"
 		cPara = cActiveFileName
 		switch nOption {
@@ -783,3 +786,49 @@ class EnvironmentController from WindowsControllerParent
 		# RunTool will split parameters using "," as separator 
 		cAppFileName += ",1"	# Style Fusion White
 		RunTool(cAppFileName)
+
+
+	/*
+		Main File Toolbar 
+	*/
+
+	func SetMainFile
+		cActiveFileName = parent().GetActiveSourceFile()
+		oView.oTxtMainFile.setText(cActiveFileName)
+
+	func GetMainFile
+		cMainFileName = trim(oView.oTxtMainFile.text())
+		if cMainFileName = NULL {
+			SetMainFile() 
+			cMainFileName = trim(oView.oTxtMainFile.text())
+		}
+		return cMainFileName
+
+	func DebugMainFile
+		cMainFileName = GetMainFile()
+		if cMainFileName = Null { return Nofileopened() }
+		if not fexists(cMainFileName) { return }
+		SaveBeforeRunning()
+		oProgramController = new ProgramController
+		oProgramController.cFileName = cMainFileName
+		oProgramController.debug(parent())
+
+	func RunMainFile
+		cMainFileName = GetMainFile()
+		if cMainFileName = Null { return Nofileopened() }
+		if not fexists(cMainFileName) { return }
+		SaveBeforeRunning()
+		oProgramController = new ProgramController
+		oProgramController.cFileName = cMainFileName
+		oProgramController.Run(parent())
+
+	func RunGUIMainFile
+		cMainFileName = GetMainFile()
+		if cMainFileName = Null { return pNofileopened() }
+		if not fexists(cMainFileName) { return }
+		oView.oDockOutputWindow { show() raise() }		
+		SaveBeforeRunning()
+		oProgramController = new ProgramController
+		oProgramController.cFileName = cMainFileName
+		oProgramController.RunGUI(parent())
+
