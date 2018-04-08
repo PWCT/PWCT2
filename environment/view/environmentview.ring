@@ -287,35 +287,35 @@ class EnvironmentView from WindowsViewParent
 			}
 			subTools {
 				oAction = new qAction(win) {
-					settext("Form Designer")
+					settext(T_ENV_MENU_TOOLS_FORMDESIGNER)  # "Form Designer"
 					setclickEvent(Method(:OpenFormDesigner))
 				}
 				addaction(oAction)
 				addseparator()
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Alt+R"))
-					settext("RingREPL - Console")
+					settext(T_ENV_MENU_TOOLS_RINGREPLCONSOLE) # "RingREPL - Console"
 					setclickEvent(Method(:REPLConsole))
 				}
 				addaction(oAction)
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Alt+Shift+R"))
-					settext("RingREPL - GUI")
+					settext(T_ENV_MENU_TOOLS_RINGREPLGUI) # "RingREPL - GUI"
 					setclickEvent(Method(:REPLGUI))
 				}
 				addaction(oAction)
 				addseparator()
-				subOSTools = addmenu("Operating System Tools")
+				subOSTools = addmenu(T_ENV_MENU_TOOLS_OSTOOLS) # "Operating System Tools"
 				subOSTools {
 					oAction = new qAction(win) {
-						settext("Terminal (Command Prompt)")
+						settext(T_ENV_MENU_TOOLS_TERMINAL) # "Terminal (Command Prompt)"
 						setShortcut(new QKeySequence("Alt+Shift+T"))
 						setclickEvent(Method(:OSTerminal))
 					}
 					addaction(oAction)
 					addseparator()
 					oAction = new qAction(win) {
-						settext("Files Manager (Explorer)")
+						settext(T_ENV_MENU_TOOLS_FM) # "Files Manager (Explorer)"
 						setShortcut(new QKeySequence("Alt+Shift+F"))
 						setclickEvent(Method(:OSFilesManager))
 					}
