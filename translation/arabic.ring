@@ -24,6 +24,8 @@
 	T_ENV_MENU_EDIT = "تحرير"
 	T_ENV_MENU_VIEW = "عرض" 
 	T_ENV_MENU_PROGRAM = "برنامج"
+	T_ENV_MENU_TOOLS = "أدوات"
+	T_ENV_MENU_DISTRIBUTE = "توزيع"
 	T_ENV_MENU_HELP = "مساعدة"
 	T_ENV_MENU_NEW = "جديد"
 	T_ENV_MENU_OPEN = "فتح"

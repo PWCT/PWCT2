@@ -24,6 +24,8 @@
 	T_ENV_MENU_EDIT = "Edit"
 	T_ENV_MENU_VIEW = "View" 
 	T_ENV_MENU_PROGRAM = "Program"
+	T_ENV_MENU_TOOLS = "Tools"
+	T_ENV_MENU_DISTRIBUTE = "Distribute"
 	T_ENV_MENU_HELP = "Help"
 	T_ENV_MENU_NEW = "New"
 	T_ENV_MENU_OPEN = "Open"

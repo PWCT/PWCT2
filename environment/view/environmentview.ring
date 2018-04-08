@@ -74,9 +74,9 @@ class EnvironmentView from WindowsViewParent
 			subFile 	= addmenu(T_ENV_MENU_FILE) # "File"
 			subEdit 	= addmenu(T_ENV_MENU_EDIT) # "Edit"
 			subView 	= addmenu(T_ENV_MENU_VIEW) # "View"
-			subProgram 	= addmenu(T_ENV_MENU_PROGRAM) # "Program"
-			subTools 	= addmenu("Tools")
-			subDistribute   = addmenu("Distribute")
+			subProgram 	= addmenu(T_ENV_MENU_PROGRAM) 		# "Program"
+			subTools 	= addmenu(T_ENV_MENU_TOOLS)		# "Tools"
+			subDistribute   = addmenu(T_ENV_MENU_DISTRIBUTE) 	# "Distribute"
 			subHelp 	= addmenu(T_ENV_MENU_HELP) # "Help"
 			subFile { 
 				oAction = new qAction(win) {
