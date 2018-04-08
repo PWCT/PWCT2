@@ -74,6 +74,8 @@
 	T_ENV_MENU_ABOUT =  "حول"
 	T_ENV_LOADING = "...تحميل ملف المصدر المرئي"
 
+	T_ENV_TOOLBAR_MAINFILE = "الملف الأساسي ..."
+
 	# Output Window
 
 	T_ENV_OW_TITLE = "نافذة النتائج"

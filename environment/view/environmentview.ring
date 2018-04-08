@@ -505,7 +505,7 @@ class EnvironmentView from WindowsViewParent
 			# Main File Toolbar
 			tool2 = addtoolbar("mainfile")  {
 				oLblMainFile = new qLabel(this.win) {
-					setText("Main File : ")
+					setText(T_ENV_TOOLBAR_MAINFILE) # "Main File : "
 				}
 				this.oTxtMainFile = new qLineEdit(this.win) {
 					setStylesheet("border: 0px;  background-color: rgba(0, 0, 0, 0);")
@@ -514,27 +514,27 @@ class EnvironmentView from WindowsViewParent
 				oBtnSetFile = new qtoolbutton(this.win) {
 					setbtnimage(self,AppFile("images/open.png"))
 					setclickEvent(Method(:SetMainFile))
-					settooltip("Set the Main File to be the current source file (Ctrl+Shift+M)")
+					settooltip(T_ENV_MENU_SETMAINFILE) # "Set the Main File to be the current source file (Ctrl+Shift+M)"
 				}
 				oBtnDebugMainFile = new qtoolbutton(this.win) {
 						setbtnimage(self,AppFile("images/debug.png"))
 						setclickevent(Method(:DebugMainFile)) 
-						settooltip("Main File : Debug  - Run then wait! (Ctrl+Shift+D)")
+						settooltip(T_ENV_MENU_MAINFILEDEBUG) # "Main File : Debug  - Run then wait! (Ctrl+Shift+D)"
 				} 
 				oBtnRunMainFile = new qtoolbutton(this.win) {
 						setbtnimage(self,AppFile("images/run.png"))
 						setclickEvent(Method(:RunMainFile))
-						settooltip("Main File : Run the program (Ctrl+Shift+R)")
+						settooltip(T_ENV_MENU_MAINFILERUN) # "Main File : Run the program (Ctrl+Shift+R)"
 				} 
 				oBtnRunGUIMainFile = new qtoolbutton(this.win) {
 						setbtnimage(self,AppFile("images/rungui.png"))
 						setclickEvent(Method(:RunGUIMainFile))
-						settooltip("Main File : Run GUI Application - No Console (Ctrl+Shift+F5)")
+						settooltip(T_ENV_MENU_MAINFILERUNGUI) # "Main File : Run GUI Application - No Console (Ctrl+Shift+F5)"
 				} 
 				oBtnRunWebMainFile = new qtoolbutton(this.win) {
 						setbtnimage(self,AppFile("images/web.png"))
 						setclickEvent(Method(:RunInBrowserMainFile))
-						settooltip("Main File : Run Web Application - Open In Browser (Ctrl+Shift+F6)")
+						settooltip(T_ENV_MENU_MAINFILERUNWEB) # "Main File : Run Web Application - Open In Browser (Ctrl+Shift+F6)"
 				} 
 				AddWidget(oLblMainFile)
 				AddWidget(this.oTxtMainFile)

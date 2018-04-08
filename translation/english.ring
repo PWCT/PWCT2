@@ -74,6 +74,8 @@
 	T_ENV_MENU_ABOUT =  "About"
 	T_ENV_LOADING = "Loading the Visual Source File..."
 
+	T_ENV_TOOLBAR_MAINFILE = "Main File : "
+
 	# Output Window
 
 	T_ENV_OW_TITLE = "Output Window"
