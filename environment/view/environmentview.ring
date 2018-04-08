@@ -250,35 +250,35 @@ class EnvironmentView from WindowsViewParent
 					oAction = new qAction(win) {
 						setShortcut(new QKeySequence("Ctrl+Shift+M"))
 						setbtnimage(self,("images/open.png"))
-						settext(T_EVN_MENU_SETMAINFILE) # "Set the Main File to be the current source file"
+						settext(T_ENV_MENU_SETMAINFILE) # "Set the Main File to be the current source file"
 						setclickEvent(Method(:SetMainFile))
 					}
 					addaction(oAction)
 					oAction = new qAction(win) {
 						setShortcut(new QKeySequence("Ctrl+Shift+d"))
 						setbtnimage(self,AppFile("images/debug.png"))
-						settext(T_EVN_MENU_MAINFILEDEBUG) # "Main File : Debug (Run then wait!)"
+						settext(T_ENV_MENU_MAINFILEDEBUG) # "Main File : Debug (Run then wait!)"
 						setclickEvent(Method(:DebugMainFile))
 					}
 					addaction(oAction)
 					oAction = new qAction(win) {
 						setShortcut(new QKeySequence("Ctrl+Shift+r"))
 						setbtnimage(self,AppFile("images/run.png"))
-						settext(T_EVN_MENU_MAINFILERUN) # "Main File : Run"
+						settext(T_ENV_MENU_MAINFILERUN) # "Main File : Run"
 						setclickEvent(Method(:RunMainFile))
 					}
 					addaction(oAction)
 					oAction = new qAction(win) {
 						setShortcut(new QKeySequence("Ctrl+Shift+F5"))
 						setbtnimage(self,AppFile("images/rungui.png"))
-						settext(T_EVN_MENU_MAINFILERUNGUI) # "Main File : Run GUI Application (No Console)"
+						settext(T_ENV_MENU_MAINFILERUNGUI) # "Main File : Run GUI Application (No Console)"
 						setclickEvent(Method(:RunGUIMainFile))
 					}
 					addaction(oAction)
 					oAction = new qAction(win) {
 						setShortcut(new QKeySequence("Ctrl+Shift+F6"))
 						setbtnimage(self,AppFile("images/web.png"))
-						settext(T_EVN_MENU_MAINFILERUNWEB) # "Main File : Run Web Application (Open In Browser)"
+						settext(T_ENV_MENU_MAINFILERUNWEB) # "Main File : Run Web Application (Open In Browser)"
 						setclickEvent(Method(:RunInBrowserMainFile))
 					}
 					addaction(oAction)
