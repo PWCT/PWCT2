@@ -224,6 +224,9 @@
 	T_CT_SORRY = "عفوا"
 	T_CT_ENTERREQUIREDDATA = "أدخل البيانات المطلوبة!"
 
+# Load the Form Designer Translation 
+	load "../formdesigner/translation/arabic.ring"
+
 # Load Components Translation
 
 	load "../vpl/ringpwct/translation/usearabic.ring"

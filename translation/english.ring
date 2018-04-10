@@ -225,6 +225,9 @@
 	T_CT_SORRY = "Sorry"
 	T_CT_ENTERREQUIREDDATA = "Enter the Required Data!"
 
+# Load the Form Designer Translation 
+	load "../formdesigner/translation/english.ring"
+
 # Load Components Translation
 
 	load "../vpl/ringpwct/translation/useenglish.ring"
