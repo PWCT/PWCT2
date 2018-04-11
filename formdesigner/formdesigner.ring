@@ -31,7 +31,7 @@
 	load "stdlib.ring"
 
 # Load The Translation File
-	load "translation/english.ring"
+//	load "translation/english.ring"
 
 # Load Main Window Files 
 	load "mainwindow/qwidget.ring"
