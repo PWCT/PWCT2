@@ -16,7 +16,7 @@ class GoalDesignerView from WindowsViewParent
 			oStepsTree = new StepsTreeView(oPageDesign) {
 				setExpandsOnDoubleClick(False)
 				setDoubleClickedEvent(Method(:ModifyAction))
-				setCurrentItemChangedEvent(Method(:TreeNodeChangedAction))
+				//setCurrentItemChangedEvent(Method(:TreeNodeChangedAction))
 				setFocusPolicy(2)	# Support Keyboard keys like 'a' and 'z'
 				oTreeFilter = new qAllEvents(oStepsTree)
 				oTreeFilter.setKeyPressEvent(Method(:TreeKeyPress))
