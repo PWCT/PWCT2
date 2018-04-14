@@ -721,7 +721,7 @@ class EnvironmentController from WindowsControllerParent
 		chdir(JustFilePath(cActiveFileName))
 		oView.oProcess = parent().oProgramController.RunProcess(cAppToRun,cPara,Method(:GetDataAction))
 		OSFilesManager()
-		chdir(exefolder())
+		chdir(PWCT_FOLDER)
 
 	func Nofileopened
 		New qMessageBox(oView.win) {
@@ -758,7 +758,6 @@ class EnvironmentController from WindowsControllerParent
 
 	func OpenFormDesigner	
 		cFormFileName = PWCT_FOLDER + "/formdesigner/formdesigner.ring"
-		? cFormFileName
 		RunTool(cFormFileName)
 
 	func RunTool cFileName
@@ -767,7 +766,7 @@ class EnvironmentController from WindowsControllerParent
 		chdir(JustFilePath(cFileName))
 		cRingEXE = exefilename()
 		oView.oProcess = parent().oProgramController.RunProcess(cRingEXE,cFileName,Method(:GetDataAction))
-		chdir(exefolder())
+		chdir(PWCT_FOLDER)
 
 	func RunToolConsole cFileName
 		if iswindows()
