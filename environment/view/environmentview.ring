@@ -556,6 +556,7 @@ class EnvironmentView from WindowsViewParent
 
 	func CreateFilesManager win
 		tree1 = new qtreeview(win) {
+			setLayoutDirection(T_LAYOUTDIRECTION)
 			setclickedevent(Method(:ChangeFileAction))
 			setactivatedevent(Method(:ChangeFileAction))
 			oDir = new QDir()					
@@ -580,9 +581,9 @@ class EnvironmentView from WindowsViewParent
 		oDockFilesManager = new qdockwidget(win,0) {
 			setMinimumwidth(250)
 			setLayoutDirection(C_TRANSLATION_ENGLISH)
-			setGeometry(00,00,200,200)
-			setwindowtitle(T_ENV_DOCK_PROJECTFILES) # "Project Files"
+			setGeometry(00,00,250,200)
 			setwidget(this.tree1)
+			setwindowtitle(T_ENV_DOCK_PROJECTFILES) # "Project Files"
 		}
 		win.adddockwidget(1,oDockFilesManager,1)
 
