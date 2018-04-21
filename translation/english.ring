@@ -231,3 +231,6 @@
 # Load Components Translation
 
 	load "../vpl/ringpwct/translation/useenglish.ring"
+
+# Templates 
+		T_TEMPLATES_FORMCONTROLLER		= "/templates/formcontroller.pwct"

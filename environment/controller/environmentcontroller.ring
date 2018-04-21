@@ -657,7 +657,7 @@ class EnvironmentController from WindowsControllerParent
 		cFormName = substr(JustFileName(cFileName),"Controller.pwct","")
 		if fexists(cFileName) { return }
 		oVisualFile = new VisualSourceFile {
-			setfile(PWCT_FOLDER+"/templates/formcontroller.pwct")
+			setfile(PWCT_FOLDER+T_TEMPLATES_FORMCONTROLLER)
 			Open()
 			LoadTables()
 			setfile(cFileName)

@@ -230,3 +230,6 @@
 # Load Components Translation
 
 	load "../vpl/ringpwct/translation/usearabic.ring"
+
+# Templates 
+		T_TEMPLATES_FORMCONTROLLER		= "/templates/arabic_formcontroller.pwct"
