@@ -8,6 +8,11 @@
 
 # Call Function Component 
 
+	# Steps Tree 
+		T_CT_CALLMETHOD_ST_CALLMETHOD = "إستدعاء ميثود "
+		T_CT_CALLMETHOD_ST_CALLSTART = ""
+		T_CT_CALLMETHOD_ST_CALLEND = ""
+
 	# Interaction Page
 		T_CT_CALLMETHOD_IP_TITLE  	= "مكون إستدعاء ميثود"
 		T_CT_CALLMETHOD_IP_OBJECT 	= "الكائن : "

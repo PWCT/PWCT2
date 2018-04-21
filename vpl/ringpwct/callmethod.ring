@@ -38,8 +38,9 @@ Class CallMethodComponentController from ComponentControllerParent
 			cOutputEqual = ""
 		}
 
-		NewStep(cOutputEqual + cObject + Variable(:Name) + 
-				"(" + StepData(:Parameters) + ")" )
+		NewStep(T_CT_CALLMETHOD_ST_CALLMETHOD + cOutputEqual + cObject + Variable(:Name) + 
+				T_CT_CALLMETHOD_ST_CALLSTART + StepData(:Parameters) + 
+				T_CT_CALLMETHOD_ST_CALLEND )
 		SetStepCode(cOutputEqual + cObject + Variable(:Name) + 
 				"(" + Variable(:Parameters) + ")")
 

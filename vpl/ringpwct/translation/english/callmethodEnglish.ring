@@ -8,6 +8,11 @@
 
 # Call Function Component 
 
+	# Steps Tree 
+		T_CT_CALLMETHOD_ST_CALLMETHOD = ""
+		T_CT_CALLMETHOD_ST_CALLSTART = "( "
+		T_CT_CALLMETHOD_ST_CALLSTART = " )"
+
 	# Interaction Page
 		T_CT_CALLMETHOD_IP_TITLE 	= "Call Method Component"
 		T_CT_CALLMETHOD_IP_OBJECT 	= "Object : "
