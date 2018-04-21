@@ -11,7 +11,7 @@ Class AssignmentComponentController from ComponentControllerParent
 
 	func GenerateAction 
 
-		NewStep( StyleData(Variable(:leftside) ) + " = " + StyleData(Variable(:rightside)) ) 
+		NewStep( T_CT_ASSIGNMENT_ST_SET + StyleData(Variable(:leftside) ) + " = " + StyleData(Variable(:rightside)) ) 
 		SetStepCode(Variable(:leftside) + " = " + Variable(:rightside) )
 
 		return True 

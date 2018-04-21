@@ -8,6 +8,9 @@
 
 # Assignment Component
 
+	# Steps Tree 
+		T_CT_ASSIGNMENT_ST_SET = "إجعل "
+
 	# Interaction Page
 		T_CT_ASSIGNMENT_IP_TITLE = "مكون الإسناد"
 		T_CT_PRINT_IP_LEFTSIDE  = "الطرف الأيسر : "

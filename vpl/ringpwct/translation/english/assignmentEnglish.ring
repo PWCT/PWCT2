@@ -8,6 +8,9 @@
 
 # Assignment Component
 
+	# Steps Tree 
+		T_CT_ASSIGNMENT_ST_SET = ""
+
 	# Interaction Page
 		T_CT_ASSIGNMENT_IP_TITLE = "Assignment Component"
 		T_CT_PRINT_IP_LEFTSIDE  = "Left Side : "

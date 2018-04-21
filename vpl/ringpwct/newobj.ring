@@ -31,10 +31,10 @@ class newobjComponentController from ComponentControllerParent
 		else
 		
 			if Variable(:value3) = NULL {
-				NewParentStep( StepData(:value) + " = " + T_CT_NEWOBJ_ST_NEWOBJ  + StepData(:value2) )
+				NewParentStep( T_CT_NEWOBJ_ST_SET + StepData(:value) + " = " + T_CT_NEWOBJ_ST_NEWOBJ  + StepData(:value2) )
 				SetStepCode(  variable(:value) + " = new " + Variable(:value2) + cInit )
 			else
-				NewParentStep( StepData(:value) + " = " + T_CT_NEWOBJ_ST_NEWOBJ  + StepData(:value2)  +
+				NewParentStep( T_CT_NEWOBJ_ST_SET + StepData(:value) + " = " + T_CT_NEWOBJ_ST_NEWOBJ  + StepData(:value2)  +
 							 "(" + StepData(:value3) + ")" )
 				SetStepCode(  variable(:value) + " = new " + Variable(:value2) + "(" + Variable(:value3) + ")" )
 			}
