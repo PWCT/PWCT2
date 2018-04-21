@@ -8,6 +8,11 @@
 
 # Call Function Component 
 
+	# Steps Tree 
+		T_CT_CALLFUNC_ST_CALLFUNC = "إستدعاء الدالة "
+		T_CT_CALLFUNC_ST_FUNCCALLSTART = " "
+		T_CT_CALLFUNC_ST_FUNCCALLEND = " "
+
 	# Interaction Page
 		T_CT_CALLFUNC_IP_TITLE = "مكون إستدعاء الدالة"
 		T_CT_CALLFUNC_IP_NAME = "الإسم : "

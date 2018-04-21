@@ -33,8 +33,9 @@ Class CallFuncComponentController from ComponentControllerParent
 			cOutputEqual = ""
 		}
 
-		NewStep(cOutputEqual + Variable(:Name) + 
-				"(" + StepData(:Parameters) + ")" )
+		NewStep(T_CT_CALLFUNC_ST_CALLFUNC + cOutputEqual + Variable(:Name) + 
+				T_CT_CALLFUNC_ST_FUNCCALLSTART + StepData(:Parameters) + 
+				T_CT_CALLFUNC_ST_FUNCCALLEND )
 		SetStepCode(cOutputEqual + Variable(:Name) + 
 				"(" + Variable(:Parameters) + ")")
 

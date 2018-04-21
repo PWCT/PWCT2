@@ -19,6 +19,13 @@ class HTMLStyles
 			`</font></span>`
 
 	/*
+		Add div to align Right 
+	*/
+	func divRight cText 
+		return "<div align='right'>" + cText + "</div>"
+
+
+	/*
 		The next method return the HTML code for displaying an Image
 		Parameters : The File Name
 		Output : HTML code to display the Image file
