@@ -22,7 +22,7 @@ class EnvironmentView from WindowsViewParent
 
 	if PWCTIsMobile(:DockForComponentsBrowser) {
 		lDockForComponentsBrowser = False
-		lDockForFormDesigner	  = False
+		lDockForFormDesigner	  = True
 	else 
 		lDockForComponentsBrowser = True
 		lDockForFormDesigner	  = True
