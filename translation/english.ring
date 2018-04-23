@@ -233,4 +233,8 @@
 	load "../vpl/ringpwct/translation/useenglish.ring"
 
 # Templates 
+	if PWCTIsMobile(:formcontrollerfile) {
+		T_TEMPLATES_FORMCONTROLLER		= "formcontroller.pwct"
+	else 
 		T_TEMPLATES_FORMCONTROLLER		= "/templates/formcontroller.pwct"
+	}

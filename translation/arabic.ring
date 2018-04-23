@@ -232,4 +232,8 @@
 	load "../vpl/ringpwct/translation/usearabic.ring"
 
 # Templates 
+	if PWCTIsMobile(:formcontrollerfile) {
+		T_TEMPLATES_FORMCONTROLLER		= "arabic_formcontroller.pwct"
+	else
 		T_TEMPLATES_FORMCONTROLLER		= "/templates/arabic_formcontroller.pwct"
+	}
