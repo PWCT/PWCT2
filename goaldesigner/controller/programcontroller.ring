@@ -144,6 +144,7 @@ Class ProgramController
 	*/	
 
 	func RunOnMobile oGD
+		chdir(PWCT_FOLDER)
 		freopen("programoutput.txt","w+",stdout)
 		freopen("programinput.txt","r",stdin)
 		# We use runprogram.ring instead of using cFileName directly
@@ -153,20 +154,25 @@ Class ProgramController
 			if PWCTIsMobile(:MobileAppLibs) {
 				cCode = 'load "mobileapplibs.ring"' + nl 
 			}
-			cCode += 'load "' + cFileName + '"'
+			cCode += 'load "' + JustFileName(cFileName) + '"'
 			write("runprogram.ring",cCode)
-		oGD.EnableCheckOutputOnMobile()
+		# This will start a Timer to check the output
+			oGD.EnableCheckOutputOnMobile()
 		if isobject(oState) {
 			ring_state_delete(oState)
 		}
 		oState = ring_state_new()
 		ring_state_mainfile(oState,"runprogram.ring")
-		oGD.DisableCheckOutputOnMobile()
-		CheckOutputOnMobile(oGD)
-		remove("runprogram.ring")
-		remove("programoutput.txt")
-		remove("programinput.txt")
-
+		chdir(PWCT_FOLDER)
+		# This will stop the Timer 
+			oGD.DisableCheckOutputOnMobile()
+		# Display the Output
+			CheckOutputOnMobile(oGD)
+		# Delete Temp. Files
+			remove("runprogram.ring")
+			remove("programoutput.txt")
+			remove("programinput.txt")
+		
 	/*
 		Purpose : Check output from the application when we run PWCT on Mobile
 		Parameters : None 

@@ -189,6 +189,7 @@ func PWCTIsMobile cOption
 		:ComponentSelected	(Components Browser - After selecting a component)
 		:DockForComponentsBrowser (Dockable window for components browser)
 		:WindowDimensions	(PWCT Environment Window - Move() & Resize())
+		:ToolsDistributeMenu	(PWCT Environment - Menubar - Tools/Distribute Menu)
 	*/
 	//if cOption = :RunApplication or cOption = :SendDataToApplication  return True ok
 	return isMobile()

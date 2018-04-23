@@ -75,8 +75,10 @@ class EnvironmentView from WindowsViewParent
 			subEdit 	= addmenu(T_ENV_MENU_EDIT) # "Edit"
 			subView 	= addmenu(T_ENV_MENU_VIEW) # "View"
 			subProgram 	= addmenu(T_ENV_MENU_PROGRAM) 		# "Program"
-			subTools 	= addmenu(T_ENV_MENU_TOOLS)		# "Tools"
-			subDistribute   = addmenu(T_ENV_MENU_DISTRIBUTE) 	# "Distribute"
+			if not PWCTIsMobile(:ToolsDistributeMenu) {
+				subTools 	= addmenu(T_ENV_MENU_TOOLS)		# "Tools"
+				subDistribute   = addmenu(T_ENV_MENU_DISTRIBUTE) 	# "Distribute"
+			}
 			subHelp 	= addmenu(T_ENV_MENU_HELP) # "Help"
 			subFile { 
 				oAction = new qAction(win) {
@@ -285,82 +287,84 @@ class EnvironmentView from WindowsViewParent
 
 				}
 			}
-			subTools {
-				oAction = new qAction(win) {
-					settext(T_ENV_MENU_TOOLS_FORMDESIGNER)  # "Form Designer"
-					setclickEvent(Method(:OpenFormDesigner))
-				}
-				addaction(oAction)
-				addseparator()
-				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Alt+R"))
-					settext(T_ENV_MENU_TOOLS_RINGREPLCONSOLE) # "RingREPL - Console"
-					setclickEvent(Method(:REPLConsole))
-				}
-				addaction(oAction)
-				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Alt+Shift+R"))
-					settext(T_ENV_MENU_TOOLS_RINGREPLGUI) # "RingREPL - GUI"
-					setclickEvent(Method(:REPLGUI))
-				}
-				addaction(oAction)
-				addseparator()
-				subOSTools = addmenu(T_ENV_MENU_TOOLS_OSTOOLS) # "Operating System Tools"
-				subOSTools {
+			if not PWCTIsMobile(:ToolsDistributeMenu) {
+				subTools {
 					oAction = new qAction(win) {
-						settext(T_ENV_MENU_TOOLS_TERMINAL) # "Terminal (Command Prompt)"
-						setShortcut(new QKeySequence("Alt+Shift+T"))
-						setclickEvent(Method(:OSTerminal))
+						settext(T_ENV_MENU_TOOLS_FORMDESIGNER)  # "Form Designer"
+						setclickEvent(Method(:OpenFormDesigner))
 					}
 					addaction(oAction)
 					addseparator()
 					oAction = new qAction(win) {
-						settext(T_ENV_MENU_TOOLS_FM) # "Files Manager (Explorer)"
-						setShortcut(new QKeySequence("Alt+Shift+F"))
-						setclickEvent(Method(:OSFilesManager))
+						setShortcut(new QKeySequence("Alt+R"))
+						settext(T_ENV_MENU_TOOLS_RINGREPLCONSOLE) # "RingREPL - Console"
+						setclickEvent(Method(:REPLConsole))
+					}
+					addaction(oAction)
+					oAction = new qAction(win) {
+						setShortcut(new QKeySequence("Alt+Shift+R"))
+						settext(T_ENV_MENU_TOOLS_RINGREPLGUI) # "RingREPL - GUI"
+						setclickEvent(Method(:REPLGUI))
+					}
+					addaction(oAction)
+					addseparator()
+					subOSTools = addmenu(T_ENV_MENU_TOOLS_OSTOOLS) # "Operating System Tools"
+					subOSTools {
+						oAction = new qAction(win) {
+							settext(T_ENV_MENU_TOOLS_TERMINAL) # "Terminal (Command Prompt)"
+							setShortcut(new QKeySequence("Alt+Shift+T"))
+							setclickEvent(Method(:OSTerminal))
+						}
+						addaction(oAction)
+						addseparator()
+						oAction = new qAction(win) {
+							settext(T_ENV_MENU_TOOLS_FM) # "Files Manager (Explorer)"
+							setShortcut(new QKeySequence("Alt+Shift+F"))
+							setclickEvent(Method(:OSFilesManager))
+						}
+						addaction(oAction)
+					}
+				}
+				subDistribute {
+					oAction = new qAction(win) {
+						settext(T_ENV_MENU_DIST_RING2EXE1) # "Generate Ring Object File (*.ringo)"
+						setclickEvent(Method("Distribute(1)"))
+					}
+					addaction(oAction)
+					addseparator()
+					oAction = new qAction(win) {
+						settext(T_ENV_MENU_DIST_RING2EXE2) # "Ring2EXE (Build Console Application)"
+						setclickEvent(Method("Distribute(2)"))
+					}
+					addaction(oAction)
+					addseparator()
+					oAction = new qAction(win) {
+						settext(T_ENV_MENU_DIST_RING2EXE3) # "Ring2EXE (Distribute Application - Use All Runtime)"
+						setclickEvent(Method("Distribute(3)"))
+					}
+					addaction(oAction)
+					oAction = new qAction(win) {
+						settext(T_ENV_MENU_DIST_RING2EXE4) # "Ring2EXE (Distribute Application - Use All Runtime - Hide Console Window)"
+						setclickEvent(Method("Distribute(4)"))
+					}
+					addaction(oAction)
+					oAction = new qAction(win) {
+						settext(T_ENV_MENU_DIST_RING2EXE5) # "Ring2EXE (Distribute RingQt Application)"
+						setclickEvent(Method("Distribute(5)"))
+					}
+					addaction(oAction)
+					oAction = new qAction(win) {
+						settext(T_ENV_MENU_DIST_RING2EXE6) # "Ring2EXE (Distribute RingAllegro Game)"
+						setclickEvent(Method("Distribute(6)"))
+					}
+					addaction(oAction)
+					addseparator()
+					oAction = new qAction(win) {
+						settext(T_ENV_MENU_DIST_RING2EXE7) # "Ring2EXE (Prepare Qt Project) - Distribute for Mobile Devices)"
+						setclickEvent(Method("Distribute(7)"))
 					}
 					addaction(oAction)
 				}
-			}
-			subDistribute {
-				oAction = new qAction(win) {
-					settext(T_ENV_MENU_DIST_RING2EXE1) # "Generate Ring Object File (*.ringo)"
-					setclickEvent(Method("Distribute(1)"))
-				}
-				addaction(oAction)
-				addseparator()
-				oAction = new qAction(win) {
-					settext(T_ENV_MENU_DIST_RING2EXE2) # "Ring2EXE (Build Console Application)"
-					setclickEvent(Method("Distribute(2)"))
-				}
-				addaction(oAction)
-				addseparator()
-				oAction = new qAction(win) {
-					settext(T_ENV_MENU_DIST_RING2EXE3) # "Ring2EXE (Distribute Application - Use All Runtime)"
-					setclickEvent(Method("Distribute(3)"))
-				}
-				addaction(oAction)
-				oAction = new qAction(win) {
-					settext(T_ENV_MENU_DIST_RING2EXE4) # "Ring2EXE (Distribute Application - Use All Runtime - Hide Console Window)"
-					setclickEvent(Method("Distribute(4)"))
-				}
-				addaction(oAction)
-				oAction = new qAction(win) {
-					settext(T_ENV_MENU_DIST_RING2EXE5) # "Ring2EXE (Distribute RingQt Application)"
-					setclickEvent(Method("Distribute(5)"))
-				}
-				addaction(oAction)
-				oAction = new qAction(win) {
-					settext(T_ENV_MENU_DIST_RING2EXE6) # "Ring2EXE (Distribute RingAllegro Game)"
-					setclickEvent(Method("Distribute(6)"))
-				}
-				addaction(oAction)
-				addseparator()
-				oAction = new qAction(win) {
-					settext(T_ENV_MENU_DIST_RING2EXE7) # "Ring2EXE (Prepare Qt Project) - Distribute for Mobile Devices)"
-					setclickEvent(Method("Distribute(7)"))
-				}
-				addaction(oAction)
 			}
 			subHelp { 
 
