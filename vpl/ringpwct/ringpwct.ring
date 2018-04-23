@@ -27,9 +27,14 @@
 	load "class.ring"
 	load "clock.ring"
 	load "clockspersecond.ring"
+	load "confirmmessage.ring"
 	load "conversion.ring"
+	load "conversionclass.ring"
 	load "currentdir.ring"
+	load "datatypeclass.ring"
 	load "date.ring"
+	load "datetimeclass.ring"
+	load "debugclass.ring"
 	load "decrypt.ring"
 	load "deleteitem.ring"
 	load "diffdays.ring"
@@ -42,6 +47,7 @@
 	load "exefilename.ring"
 	load "exefolder.ring"
 	load "exit.ring"
+	load "fileclass.ring"
 	load "filename.ring"
 	load "file_clearerr.ring"
 	load "file_close.ring"
@@ -79,6 +85,9 @@
 	load "func.ring"
 	load "getchar.ring"
 	load "getcharsfromstring.ring"
+	load "getcolordialog.ring"
+	load "getfolderdialog.ring"
+	load "getfontdialog.ring"
 	load "getinput.ring"
 	load "getlistitem.ring"
 	load "getlistsize.ring"
@@ -86,17 +95,27 @@
 	load "getstringindex.ring"
 	load "getstringlength.ring"
 	load "getsubstring.ring"
+	load "hashtableclass.ring"
 	load "ifstatement.ring"
 	load "import.ring"
 	load "input.ring"
+	load "inputbox.ring"
 	load "insertitem.ring"
+	load "internetclass.ring"
+	load "libcurl_easycleanup.ring"
+	load "libcurl_easyinit.ring"
+	load "libcurl_easyperform.ring"
+	load "libcurl_easyperformsilent.ring"
+	load "libcurl_easysetopt.ring"
 	load "list2string.ring"
 	load "listclass.ring"
 	load "load.ring"
 	load "loop.ring"
 	load "lower.ring"
 	load "math.ring"
+	load "mathclass.ring"
 	load "md5.ring"
+	load "mysqlclass.ring"
 	load "mysql_autocommit.ring"
 	load "mysql_close.ring"
 	load "mysql_columns.ring"
@@ -151,6 +170,7 @@
 	load "newtoolbar.ring"
 	load "newvideowidget.ring"
 	load "numbersandbytes.ring"
+	load "odbcclass.ring"
 	load "odbc_autocommit.ring"
 	load "odbc_close.ring"
 	load "odbc_colcount.ring"
@@ -166,14 +186,41 @@
 	load "odbc_init.ring"
 	load "odbc_rollback.ring"
 	load "odbc_tables.ring"
+	load "openfiledialog.ring"
 	load "package.ring"
 	load "prevfilename.ring"
 	load "print.ring"
+	load "qalleventsclass.ring"
 	load "qappclass.ring"
+	load "qcheckboxclass.ring"
+	load "qcomboboxclass.ring"
+	load "qdatetimeeditclass.ring"
+	load "qdesktopwidgetclass.ring"
+	load "qdialsliderclass.ring"
+	load "qdockwidgetclass.ring"
+	load "qframeclass.ring"
 	load "qhboxlayoutclass.ring"
 	load "qlabelclass.ring"
+	load "qlcdnumberclass.ring"
+	load "qlineeditclass.ring"
+	load "qlistwidgetclass.ring"
+	load "qpixmapclass.ring"
+	load "qprogressbarclass.ring"
 	load "qpushbuttonclass.ring"
+	load "qradiobuttonclass.ring"
+	load "qsliderclass.ring"
+	load "qspinboxclass.ring"
+	load "qstatusbarclass.ring"
+	load "qtablewidgetclass.ring"
+	load "qtabwidgetclass.ring"
+	load "qtexteditclass.ring"
+	load "qtimerclass.ring"
+	load "qtoolbarclass.ring"
+	load "qtreewidgetclass.ring"
+	load "queueclass.ring"
 	load "qvboxlayoutclass.ring"
+	load "qvideowidgetclass.ring"
+	load "qwebviewclass.ring"
 	load "qwidgetclass.ring"
 	load "raise.ring"
 	load "randbytes.ring"
@@ -208,6 +255,8 @@
 	load "refmeta_setattribute.ring"
 	load "return.ring"
 	load "reverse.ring"
+	load "savefiledialog.ring"
+	load "securityclass.ring"
 	load "sendemail.ring"
 	load "setlistitem.ring"
 	load "setobjectattribute.ring"
@@ -217,12 +266,15 @@
 	load "sha256.ring"
 	load "sha384.ring"
 	load "sha512.ring"
+	load "showmessage.ring"
 	load "shutdown.ring"
 	load "sortlist.ring"
+	load "sqliteclass.ring"
 	load "sqlite_close.ring"
 	load "sqlite_execute.ring"
 	load "sqlite_init.ring"
 	load "sqlite_open.ring"
+	load "stackclass.ring"
 	load "stdbaseclass.ring"
 	load "stdlib_apppath.ring"
 	load "stdlib_binarydigits.ring"
@@ -288,11 +340,25 @@
 	load "switch.ring"
 	load "sysget.ring"
 	load "system.ring"
+	load "systemclass.ring"
 	load "time.ring"
 	load "timelist.ring"
+	load "treeclass.ring"
 	load "trycatch.ring"
 	load "upper.ring"
 	load "version.ring"
+	load "weblib_applicationclass.ring"
+	load "weblib_bootstrappage.ring"
+	load "weblib_htmlpage.ring"
+	load "weblib_newpage.ring"
+	load "weblib_newwebobject.ring"
+	load "weblib_newwebpagesubobject.ring"
+	load "weblib_pageclass.ring"
+	load "weblib_scriptfunctionsclass.ring"
+	load "weblib_startwebapplication.ring"
+	load "weblib_stylefunctionsclass.ring"
+	load "weblib_template.ring"
+	load "weblib_webpage.ring"
 	load "whileloop.ring"
 	load "windowsnl.ring"
 
@@ -321,9 +387,14 @@
 	aComponentsFilesList + (cComponentsPath + "class.ring")
 	aComponentsFilesList + (cComponentsPath + "clock.ring")
 	aComponentsFilesList + (cComponentsPath + "clockspersecond.ring")
+	aComponentsFilesList + (cComponentsPath + "confirmmessage.ring")
 	aComponentsFilesList + (cComponentsPath + "conversion.ring")
+	aComponentsFilesList + (cComponentsPath + "conversionclass.ring")
 	aComponentsFilesList + (cComponentsPath + "currentdir.ring")
+	aComponentsFilesList + (cComponentsPath + "datatypeclass.ring")
 	aComponentsFilesList + (cComponentsPath + "date.ring")
+	aComponentsFilesList + (cComponentsPath + "datetimeclass.ring")
+	aComponentsFilesList + (cComponentsPath + "debugclass.ring")
 	aComponentsFilesList + (cComponentsPath + "decrypt.ring")
 	aComponentsFilesList + (cComponentsPath + "deleteitem.ring")
 	aComponentsFilesList + (cComponentsPath + "diffdays.ring")
@@ -336,6 +407,7 @@
 	aComponentsFilesList + (cComponentsPath + "exefilename.ring")
 	aComponentsFilesList + (cComponentsPath + "exefolder.ring")
 	aComponentsFilesList + (cComponentsPath + "exit.ring")
+	aComponentsFilesList + (cComponentsPath + "fileclass.ring")
 	aComponentsFilesList + (cComponentsPath + "filename.ring")
 	aComponentsFilesList + (cComponentsPath + "file_clearerr.ring")
 	aComponentsFilesList + (cComponentsPath + "file_close.ring")
@@ -373,6 +445,9 @@
 	aComponentsFilesList + (cComponentsPath + "func.ring")
 	aComponentsFilesList + (cComponentsPath + "getchar.ring")
 	aComponentsFilesList + (cComponentsPath + "getcharsfromstring.ring")
+	aComponentsFilesList + (cComponentsPath + "getcolordialog.ring")
+	aComponentsFilesList + (cComponentsPath + "getfolderdialog.ring")
+	aComponentsFilesList + (cComponentsPath + "getfontdialog.ring")
 	aComponentsFilesList + (cComponentsPath + "getinput.ring")
 	aComponentsFilesList + (cComponentsPath + "getlistitem.ring")
 	aComponentsFilesList + (cComponentsPath + "getlistsize.ring")
@@ -380,17 +455,27 @@
 	aComponentsFilesList + (cComponentsPath + "getstringindex.ring")
 	aComponentsFilesList + (cComponentsPath + "getstringlength.ring")
 	aComponentsFilesList + (cComponentsPath + "getsubstring.ring")
+	aComponentsFilesList + (cComponentsPath + "hashtableclass.ring")
 	aComponentsFilesList + (cComponentsPath + "ifstatement.ring")
 	aComponentsFilesList + (cComponentsPath + "import.ring")
 	aComponentsFilesList + (cComponentsPath + "input.ring")
+	aComponentsFilesList + (cComponentsPath + "inputbox.ring")
 	aComponentsFilesList + (cComponentsPath + "insertitem.ring")
+	aComponentsFilesList + (cComponentsPath + "internetclass.ring")
+	aComponentsFilesList + (cComponentsPath + "libcurl_easycleanup.ring")
+	aComponentsFilesList + (cComponentsPath + "libcurl_easyinit.ring")
+	aComponentsFilesList + (cComponentsPath + "libcurl_easyperform.ring")
+	aComponentsFilesList + (cComponentsPath + "libcurl_easyperformsilent.ring")
+	aComponentsFilesList + (cComponentsPath + "libcurl_easysetopt.ring")
 	aComponentsFilesList + (cComponentsPath + "list2string.ring")
 	aComponentsFilesList + (cComponentsPath + "listclass.ring")
 	aComponentsFilesList + (cComponentsPath + "load.ring")
 	aComponentsFilesList + (cComponentsPath + "loop.ring")
 	aComponentsFilesList + (cComponentsPath + "lower.ring")
 	aComponentsFilesList + (cComponentsPath + "math.ring")
+	aComponentsFilesList + (cComponentsPath + "mathclass.ring")
 	aComponentsFilesList + (cComponentsPath + "md5.ring")
+	aComponentsFilesList + (cComponentsPath + "mysqlclass.ring")
 	aComponentsFilesList + (cComponentsPath + "mysql_autocommit.ring")
 	aComponentsFilesList + (cComponentsPath + "mysql_close.ring")
 	aComponentsFilesList + (cComponentsPath + "mysql_columns.ring")
@@ -445,6 +530,7 @@
 	aComponentsFilesList + (cComponentsPath + "newtoolbar.ring")
 	aComponentsFilesList + (cComponentsPath + "newvideowidget.ring")
 	aComponentsFilesList + (cComponentsPath + "numbersandbytes.ring")
+	aComponentsFilesList + (cComponentsPath + "odbcclass.ring")
 	aComponentsFilesList + (cComponentsPath + "odbc_autocommit.ring")
 	aComponentsFilesList + (cComponentsPath + "odbc_close.ring")
 	aComponentsFilesList + (cComponentsPath + "odbc_colcount.ring")
@@ -460,14 +546,41 @@
 	aComponentsFilesList + (cComponentsPath + "odbc_init.ring")
 	aComponentsFilesList + (cComponentsPath + "odbc_rollback.ring")
 	aComponentsFilesList + (cComponentsPath + "odbc_tables.ring")
+	aComponentsFilesList + (cComponentsPath + "openfiledialog.ring")
 	aComponentsFilesList + (cComponentsPath + "package.ring")
 	aComponentsFilesList + (cComponentsPath + "prevfilename.ring")
 	aComponentsFilesList + (cComponentsPath + "print.ring")
+	aComponentsFilesList + (cComponentsPath + "qalleventsclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qappclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qcheckboxclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qcomboboxclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qdatetimeeditclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qdesktopwidgetclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qdialsliderclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qdockwidgetclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qframeclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qhboxlayoutclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qlabelclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qlcdnumberclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qlineeditclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qlistwidgetclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qpixmapclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qprogressbarclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qpushbuttonclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qradiobuttonclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qsliderclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qspinboxclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qstatusbarclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qtablewidgetclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qtabwidgetclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qtexteditclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qtimerclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qtoolbarclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qtreewidgetclass.ring")
+	aComponentsFilesList + (cComponentsPath + "queueclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qvboxlayoutclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qvideowidgetclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qwebviewclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qwidgetclass.ring")
 	aComponentsFilesList + (cComponentsPath + "raise.ring")
 	aComponentsFilesList + (cComponentsPath + "randbytes.ring")
@@ -502,6 +615,8 @@
 	aComponentsFilesList + (cComponentsPath + "refmeta_setattribute.ring")
 	aComponentsFilesList + (cComponentsPath + "return.ring")
 	aComponentsFilesList + (cComponentsPath + "reverse.ring")
+	aComponentsFilesList + (cComponentsPath + "savefiledialog.ring")
+	aComponentsFilesList + (cComponentsPath + "securityclass.ring")
 	aComponentsFilesList + (cComponentsPath + "sendemail.ring")
 	aComponentsFilesList + (cComponentsPath + "setlistitem.ring")
 	aComponentsFilesList + (cComponentsPath + "setobjectattribute.ring")
@@ -511,12 +626,15 @@
 	aComponentsFilesList + (cComponentsPath + "sha256.ring")
 	aComponentsFilesList + (cComponentsPath + "sha384.ring")
 	aComponentsFilesList + (cComponentsPath + "sha512.ring")
+	aComponentsFilesList + (cComponentsPath + "showmessage.ring")
 	aComponentsFilesList + (cComponentsPath + "shutdown.ring")
 	aComponentsFilesList + (cComponentsPath + "sortlist.ring")
+	aComponentsFilesList + (cComponentsPath + "sqliteclass.ring")
 	aComponentsFilesList + (cComponentsPath + "sqlite_close.ring")
 	aComponentsFilesList + (cComponentsPath + "sqlite_execute.ring")
 	aComponentsFilesList + (cComponentsPath + "sqlite_init.ring")
 	aComponentsFilesList + (cComponentsPath + "sqlite_open.ring")
+	aComponentsFilesList + (cComponentsPath + "stackclass.ring")
 	aComponentsFilesList + (cComponentsPath + "stdbaseclass.ring")
 	aComponentsFilesList + (cComponentsPath + "stdlib_apppath.ring")
 	aComponentsFilesList + (cComponentsPath + "stdlib_binarydigits.ring")
@@ -582,10 +700,24 @@
 	aComponentsFilesList + (cComponentsPath + "switch.ring")
 	aComponentsFilesList + (cComponentsPath + "sysget.ring")
 	aComponentsFilesList + (cComponentsPath + "system.ring")
+	aComponentsFilesList + (cComponentsPath + "systemclass.ring")
 	aComponentsFilesList + (cComponentsPath + "time.ring")
 	aComponentsFilesList + (cComponentsPath + "timelist.ring")
+	aComponentsFilesList + (cComponentsPath + "treeclass.ring")
 	aComponentsFilesList + (cComponentsPath + "trycatch.ring")
 	aComponentsFilesList + (cComponentsPath + "upper.ring")
 	aComponentsFilesList + (cComponentsPath + "version.ring")
+	aComponentsFilesList + (cComponentsPath + "weblib_applicationclass.ring")
+	aComponentsFilesList + (cComponentsPath + "weblib_bootstrappage.ring")
+	aComponentsFilesList + (cComponentsPath + "weblib_htmlpage.ring")
+	aComponentsFilesList + (cComponentsPath + "weblib_newpage.ring")
+	aComponentsFilesList + (cComponentsPath + "weblib_newwebobject.ring")
+	aComponentsFilesList + (cComponentsPath + "weblib_newwebpagesubobject.ring")
+	aComponentsFilesList + (cComponentsPath + "weblib_pageclass.ring")
+	aComponentsFilesList + (cComponentsPath + "weblib_scriptfunctionsclass.ring")
+	aComponentsFilesList + (cComponentsPath + "weblib_startwebapplication.ring")
+	aComponentsFilesList + (cComponentsPath + "weblib_stylefunctionsclass.ring")
+	aComponentsFilesList + (cComponentsPath + "weblib_template.ring")
+	aComponentsFilesList + (cComponentsPath + "weblib_webpage.ring")
 	aComponentsFilesList + (cComponentsPath + "whileloop.ring")
 	aComponentsFilesList + (cComponentsPath + "windowsnl.ring")
