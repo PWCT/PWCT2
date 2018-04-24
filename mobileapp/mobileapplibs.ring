@@ -1358,6 +1358,11 @@ Func Readline fp
 	output		: True/False 
 */      
 Func IsMainSourceFile
+        # Check for Mobile
+                cPrev = PrevFileName()
+                if lower(JustFileName(cPrev)) = lower(JustFileName($cMainSourceFile))
+			return True
+		ok	
 	if len(sysargv) >= 2
 		if PrevFileName() = substr(sysargv[2],"ringo","ring")
 			return true

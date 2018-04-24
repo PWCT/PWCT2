@@ -154,6 +154,7 @@ Class ProgramController
 			if PWCTIsMobile(:MobileAppLibs) {
 				cCode = 'load "mobileapplibs.ring"' + nl 
 			}
+			cCode += "$cMainSourceFile = '" + cFileName + "'" + nl
 			cCode += 'load "' + cFileName + '"'
 			write("runprogram.ring",cCode)
 		# This will start a Timer to check the output
