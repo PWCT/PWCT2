@@ -20,7 +20,11 @@ class StepsTreeView from TreeControl
 
 	oHTMLFunctions = new HTMLFunctions
 
-	lShowScrollbars = False
+	if PWCTIsMobile(:StepsTreeScrollBars) {
+		lShowScrollbars = True
+	else 
+		lShowScrollbars = False
+	}
 
 	func Init win
 		if lUseLabels = False {

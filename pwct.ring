@@ -190,6 +190,7 @@ func PWCTIsMobile cOption
 		:DockForComponentsBrowser (Dockable window for components browser)
 		:WindowDimensions	(PWCT Environment Window - Move() & Resize())
 		:ToolsDistributeMenu	(PWCT Environment - Menubar - Tools/Distribute Menu)
+		:StepsTreeScrollBars	(Goal Designer - Steps Tree - Horizontal Scrollbars)
 	*/
 	//if cOption = :RunApplication or cOption = :SendDataToApplication  return True ok
 	return isMobile()
