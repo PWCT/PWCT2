@@ -48,70 +48,79 @@ class GoalDesignerView from WindowsViewParent
 		btnAddStep = new qPushButton(win) {
 			setToolTip(T_GD_NEWSTEP)
 			setClickEvent(Method(:AddStepAction))
-			if PWCTIsMobile(:GoalDesignerButtonsSize) {
-				setMinimumwidth(100)	
-				setMinimumHeight(100)
-			}
+			self.MobileButtonSize(btnAddStep)
 		}
 		setBtnImage(btnAddStep,AppFile("images/new.png"))
 		btnEditStep = new qPushButton(win) {
 			setToolTip(T_GD_EDITSTEP)
 			setClickEvent(Method(:EditStepAction))			
+			self.MobileButtonSize(btnEditStep)
 		}		
 		setBtnImage(btnEditStep,AppFile("images/edit.png"))
 		btnDeleteStep = new qPushButton(win) {
 			setToolTip(T_GD_DELETESTEP)
 			setClickEvent(Method(:DeleteStepAction))			
+			self.mobileButtonSize(btnDeleteStep)
 		}
 		setBtnImage(btnDeleteStep,AppFile("images/delete.png"))
 		btnMoveStepUp = new qPushButton(win) {
 			setToolTip(T_GD_MOVEUP)
-			setClickEvent(Method(:MoveStepUpAction))		
+			setClickEvent(Method(:MoveStepUpAction))	
+			self.mobileButtonSize(btnMoveStepUp)	
 		}
 		setBtnImage(btnMoveStepUp,AppFile("images/up.png"))
 		btnMoveStepDown = new qPushButton(win) {
 			setToolTip(T_GD_MOVEDOWN)
-			setClickEvent(Method(:MoveStepDownAction))			
+			setClickEvent(Method(:MoveStepDownAction))	
+			self.mobileButtonSize(btnMoveStepDown)		
 		}
 		setBtnImage(btnMoveStepDown,AppFile("images/down.png"))
 		btnPrintSteps = new qPushButton(win) {
 			setToolTip(T_GD_PRINTSTEPS)
-			setClickEvent(Method(:PrintStepsAction))			
+			setClickEvent(Method(:PrintStepsAction))	
+			self.mobileButtonSize(btnPrintSteps)		
 		}
 		setBtnImage(btnPrintSteps,AppFile("images/print.png"))
 		btnCutSteps = new qPushButton(win) {
 			setToolTip(T_GD_CUT)
-			setClickEvent(Method(:CutStepsAction))			
+			setClickEvent(Method(:CutStepsAction))	
+			self.mobileButtonSize(btnCutSteps)		
 		}
 		setBtnImage(btnCutSteps,AppFile("images/cut.png"))
 		btnCopySteps = new qPushButton(win) {
 			setToolTip(T_GD_COPY)
-			setClickEvent(Method(:CopyStepsAction))			
+			setClickEvent(Method(:CopyStepsAction))	
+			self.mobileButtonSize(btnCopySteps)		
 		}
 		setBtnImage(btnCopySteps,AppFile("images/copy.png"))
 		btnPasteSteps = new qPushButton(win) {
 			setToolTip(T_GD_PASTE)
-			setClickEvent(Method(:PasteStepsAction))			
+			setClickEvent(Method(:PasteStepsAction))	
+			self.mobileButtonSize(btnPasteSteps)		
 		}
 		setBtnImage(btnPasteSteps,AppFile("images/paste.png"))
 		btnIncreaseSize = new qPushButton(win) {
 			setToolTip(T_GD_INCERASESIZE)
-			setClickEvent(Method(:IncreaseSizeAction))			
+			setClickEvent(Method(:IncreaseSizeAction))
+			self.mobileButtonSize(btnIncreaseSize)			
 		}
 		setBtnImage(btnIncreaseSize,AppFile("images/zoomin.png"))
 		btnDecreaseSize = new qPushButton(win) {
 			setToolTip(T_GD_DECREASESIZE)
-			setClickEvent(Method(:DecreaseSizeAction))			
+			setClickEvent(Method(:DecreaseSizeAction))
+			self.mobileButtonSize(btnDecreaseSize)			
 		}
 		setBtnImage(btnDecreaseSize,AppFile("images/zoomout.png"))
 		btnSearch = new qPushButton(win) {
 			setToolTip(T_GD_SEARCH)
 			setClickEvent(Method(:SearchAction))			
+			self.mobileButtonSize(btnSearch)
 		}
 		setBtnImage(btnSearch,AppFile("images/search.png"))
 		btnIgnore = new qPushButton(win) {
 			setToolTip(T_GD_COMMENTUNCOMMENT)
-			setClickEvent(Method(:IgnoreStepAction))	
+			setClickEvent(Method(:IgnoreStepAction))
+			self.mobileButtonSize(btnIgnore)	
 		}
 		setBtnImage(btnIgnore,AppFile("images/comments.png"))
 		sliderTimeMachine = new TimeMachineView(win) {
@@ -120,18 +129,24 @@ class GoalDesignerView from WindowsViewParent
 		btnInteract = new qPushButton(win) {
 			setToolTip(T_GD_INTERACT) 	# "Interact"
 			setClickEvent(Method(:InteractAction))	
+			self.mobileButtonSize(btnInteract)
 		}
 		setBtnImage(btnInteract,AppFile("images/interact.png"))
 		btnModify = new qPushButton(win) {
 			setToolTip(T_GD_MODIFY) 	# "Modify"
 			setClickEvent(Method(:ModifyAction))	
+			self.mobileButtonSize(btnModify)
 		}		
 		setBtnImage(btnModify,AppFile("images/modify.png"))	
-		btnCloseWindow = new qPushButton(win) {
-			setToolTip(T_GD_CLOSEFILE) 	# "Close File"
-			setClickEvent(Method(:CloseFileAction))	
-		}		
-		setBtnImage(btnCloseWindow,AppFile("images/ipclose.png"))	
+		# Close File 
+		/*
+			btnCloseWindow = new qPushButton(win) {
+				setToolTip(T_GD_CLOSEFILE) 	# "Close File"
+				setClickEvent(Method(:CloseFileAction))	
+				self.mobileButtonSize(btnCloseWindow)
+			}		
+			setBtnImage(btnCloseWindow,AppFile("images/ipclose.png"))	
+		*/
 		labelTM = new qLabel(win) { setText(T_GD_THETIMEMACHINE) } # "The Time Machine"
 		layoutTimeMachine = new qHBoxLayout()
 		{	
@@ -155,7 +170,7 @@ class GoalDesignerView from WindowsViewParent
 			AddWidget(btnDecreaseSize)
 			AddWidget(btnSearch)
 			AddWidget(btnPrintSteps)	
-			AddWidget(btnCloseWindow)	
+			//AddWidget(btnCloseWindow)	
 			insertStretch( -1, 1 )
 		}
 		layoutVPages = new qVBoxLayout()
@@ -204,6 +219,16 @@ class GoalDesignerView from WindowsViewParent
 	}
 
 	
+
+	func MobileButtonSize oButton
+		oButton {
+			if PWCTIsMobile(:GoalDesignerButtonsSize) {
+				setMinimumwidth(100)	
+				setMinimumHeight(100)
+			}
+		}
+
+
 	/*
 		The next method display the window and Maximize it
 		Parameters : None
