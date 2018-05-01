@@ -47,7 +47,11 @@ class GoalDesignerView from WindowsViewParent
 		}
 		btnAddStep = new qPushButton(win) {
 			setToolTip(T_GD_NEWSTEP)
-			setClickEvent(Method(:AddStepAction))			
+			setClickEvent(Method(:AddStepAction))
+			if PWCTIsMobile(:GoalDesignerButtonsSize) {
+				setMinimumwidth(100)	
+				setMinimumHeight(100)
+			}
 		}
 		setBtnImage(btnAddStep,AppFile("images/new.png"))
 		btnEditStep = new qPushButton(win) {
