@@ -178,6 +178,7 @@ class GoalDesignerView from WindowsViewParent
 			AddWidget(btnSearch)
 			AddWidget(btnPrintSteps)		
 			insertStretch( -1, 1 )
+			setContentsMargins(0,0,0,0)
 		}
 		oButtonsScrollWidget = new qWidget() {
 			setLayout(layoutVBtns)
@@ -185,7 +186,7 @@ class GoalDesignerView from WindowsViewParent
 		oButtonsScroll = new qScrollArea(null) {
 			setFrameShape(QFrame_NoFrame)
 			if PWCTIsMobile(:GoalDesignerButtonsSize) {
-				setMaximumwidth(200)
+				setMaximumwidth(145)
 			else
 				setMaximumwidth(55)
 			}
