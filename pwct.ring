@@ -193,6 +193,8 @@ func PWCTIsMobile cOption
 		:StepsTreeScrollBars	(Goal Designer - Steps Tree - Horizontal Scrollbars)
 		:GoalDesignerButtonsSize(Goal Designer - Buttons - Width and height)
 		:GoalDesignerButtons	(Buttons that works on the steps tree)
+		:DisplayLoadingMessage	(Environemnt - Change file - loading message)
+		:ShowLoadingMessage	(Environment - Change file - Form File - loading message)
 	*/
 	//if cOption = :RunApplication or cOption = :SendDataToApplication  return True ok
 	return isMobile()

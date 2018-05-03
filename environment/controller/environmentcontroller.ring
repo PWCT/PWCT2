@@ -223,6 +223,9 @@ class EnvironmentController from WindowsControllerParent
 			else 
 				lDisplayLoadingMessage = True
 			}
+			if PWCTIsMobile(:DisplayLoadingMessage) {
+				lDisplayLoadingMessage = True
+			}
 		# If the file is already opened, Activate the window
 			if lOpenFilesInNewTabs {
 				nPos = find(aActiveFiles,cFileName,2)
@@ -632,12 +635,25 @@ class EnvironmentController from WindowsControllerParent
 			return 
 		}
 		ShowMessageInStatusBar("Open the form file...")
+		# Display Message
+			if PWCTISMobile(:ShowLoadingMessage) and lDisplayLoadingMessage {
+				open_windowandlink(:quickmsgController,self)
+				# "Loading the Visual Source File..."
+				QuickMsg().setText(T_ENV_LOADING)
+				oView.Tree1.blocksignals(True)
+				PWCT_APP.processevents()
+				oView.Tree1.blocksignals(False)
+			}
 		oView.oDockFormDesigner.show()
 		if cFileName != cFormFile {
 			cFormFile = cFileName
 			FormDesigner().openFile(cFileName)		
 		}
 		oView.oDockFormDesigner.raise()
+		# Hide Message 
+			if  PWCTISMobile(:ShowLoadingMessage) and lDisplayLoadingMessage {
+				QuickMsg().CloseMsg()
+			}
 		ShowMessageInStatusBar("Ready!")
 
 	func openfile cFileName

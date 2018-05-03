@@ -179,8 +179,23 @@ class GoalDesignerView from WindowsViewParent
 			AddWidget(btnPrintSteps)		
 			insertStretch( -1, 1 )
 		}
+		oButtonsScrollWidget = new qWidget() {
+			setLayout(layoutVBtns)
+		}
+		oButtonsScroll = new qScrollArea(null) {
+			setFrameShape(QFrame_NoFrame)
+			if PWCTIsMobile(:GoalDesignerButtonsSize) {
+				setMaximumwidth(200)
+			else
+				setMaximumwidth(55)
+			}
+			setWidget(oButtonsScrollWidget)
+			setwidgetresizable(True)
+			setHorizontalScrollBarPolicy(Qt_ScrollBarAlwaysOff)
+		}
+
 		layoutRegion = new qHBoxLayout() {
-			AddLayout(layoutVBtns)
+			AddWidget(oButtonsScroll)
 			AddWidget(oSplitter)
 		}
 		layout1 = new qVBoxLayout()
@@ -214,7 +229,7 @@ class GoalDesignerView from WindowsViewParent
 		oButton {
 			if PWCTIsMobile(:GoalDesignerButtonsSize) {
 				setMinimumwidth(100)	
-				setMinimumHeight(100)
+				setMinimumHeight(95)
 			}
 		}
 
