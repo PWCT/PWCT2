@@ -188,7 +188,7 @@ class GoalDesignerView from WindowsViewParent
 			if PWCTIsMobile(:GoalDesignerButtonsSize) {
 				setMaximumwidth(145)
 			else
-				setMaximumwidth(55)
+				setMaximumwidth(40)
 			}
 			setWidget(oButtonsScrollWidget)
 			setwidgetresizable(True)
