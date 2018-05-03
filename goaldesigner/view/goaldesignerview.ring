@@ -160,72 +160,33 @@ class GoalDesignerView from WindowsViewParent
 			AddWidget(widgetVPages)
 		}		
 
- 		if PWCTIsMobile(:GoalDesignerButtons) {
-
-			layoutHBtns = new qHBoxLayout()
-			{	
-				AddWidget(btnAddStep)
-				AddWidget(btnEditStep)
-				AddWidget(btnDeleteStep)
-				AddWidget(btnMoveStepUp)
-				AddWidget(btnMoveStepDown)
-				AddWidget(btnInteract)		
-				AddWidget(btnModify)		
-				AddWidget(btnIgnore)
-				insertStretch( -1, 1 )
-			}
-			layoutHBtns2 = new qHBoxLayout()
-			{	
-				AddWidget(btnCutSteps)
-				AddWidget(btnCopySteps)
-				AddWidget(btnPasteSteps)
-				AddWidget(btnIncreaseSize)
-				AddWidget(btnDecreaseSize)
-				AddWidget(btnSearch)
-				AddWidget(btnPrintSteps)		
-				insertStretch( -1, 1 )
-			}
-			layoutRegion = new qVBoxLayout() {
-				AddLayout(layoutHBtns)
-				AddLayout(layoutHBtns2)
-				AddWidget(oSplitter)
-			}
-			layout1 = new qVBoxLayout()
-			{	
-				AddLayout(layoutTimeMachine)
-				AddLayout(layoutRegion)
-			}
-
-		else
-			layoutVBtns = new qVBoxLayout()
-			{	
-				AddWidget(btnAddStep)
-				AddWidget(btnEditStep)
-				AddWidget(btnDeleteStep)
-				AddWidget(btnMoveStepUp)
-				AddWidget(btnMoveStepDown)
-				AddWidget(btnInteract)		
-				AddWidget(btnModify)		
-				AddWidget(btnIgnore)
-				AddWidget(btnCutSteps)
-				AddWidget(btnCopySteps)
-				AddWidget(btnPasteSteps)
-				AddWidget(btnIncreaseSize)
-				AddWidget(btnDecreaseSize)
-				AddWidget(btnSearch)
-				AddWidget(btnPrintSteps)		
-				insertStretch( -1, 1 )
-			}
-			layoutRegion = new qHBoxLayout() {
-				AddLayout(layoutVBtns)
-				AddWidget(oSplitter)
-			}
-			layout1 = new qVBoxLayout()
-			{	
-				AddLayout(layoutTimeMachine)
-				AddLayout(layoutRegion)
-			}
-
+		layoutVBtns = new qVBoxLayout()
+		{	
+			AddWidget(btnAddStep)
+			AddWidget(btnEditStep)
+			AddWidget(btnDeleteStep)
+			AddWidget(btnMoveStepUp)
+			AddWidget(btnMoveStepDown)
+			AddWidget(btnInteract)		
+			AddWidget(btnModify)		
+			AddWidget(btnIgnore)
+			AddWidget(btnCutSteps)
+			AddWidget(btnCopySteps)
+			AddWidget(btnPasteSteps)
+			AddWidget(btnIncreaseSize)
+			AddWidget(btnDecreaseSize)
+			AddWidget(btnSearch)
+			AddWidget(btnPrintSteps)		
+			insertStretch( -1, 1 )
+		}
+		layoutRegion = new qHBoxLayout() {
+			AddLayout(layoutVBtns)
+			AddWidget(oSplitter)
+		}
+		layout1 = new qVBoxLayout()
+		{	
+			AddLayout(layoutTimeMachine)
+			AddLayout(layoutRegion)
 		}
 		
 		SetLayout(Layout1)
@@ -247,9 +208,7 @@ class GoalDesignerView from WindowsViewParent
                         stop()
                 }
 
-	}
-
-	
+	}	
 
 	func MobileButtonSize oButton
 		oButton {
