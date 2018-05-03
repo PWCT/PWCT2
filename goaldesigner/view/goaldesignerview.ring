@@ -138,40 +138,11 @@ class GoalDesignerView from WindowsViewParent
 			self.mobileButtonSize(btnModify)
 		}		
 		setBtnImage(btnModify,AppFile("images/modify.png"))	
-		# Close File 
-		/*
-			btnCloseWindow = new qPushButton(win) {
-				setToolTip(T_GD_CLOSEFILE) 	# "Close File"
-				setClickEvent(Method(:CloseFileAction))	
-				self.mobileButtonSize(btnCloseWindow)
-			}		
-			setBtnImage(btnCloseWindow,AppFile("images/ipclose.png"))	
-		*/
 		labelTM = new qLabel(win) { setText(T_GD_THETIMEMACHINE) } # "The Time Machine"
 		layoutTimeMachine = new qHBoxLayout()
 		{	
 			AddWidget(LabelTM)
 			AddWidget(sliderTimeMachine)
-		}
-		layoutVBtns = new qVBoxLayout()
-		{	
-			AddWidget(btnAddStep)
-			AddWidget(btnEditStep)
-			AddWidget(btnDeleteStep)
-			AddWidget(btnMoveStepUp)
-			AddWidget(btnMoveStepDown)
-			AddWidget(btnInteract)		
-			AddWidget(btnModify)		
-			AddWidget(btnIgnore)
-			AddWidget(btnCutSteps)
-			AddWidget(btnCopySteps)
-			AddWidget(btnPasteSteps)
-			AddWidget(btnIncreaseSize)
-			AddWidget(btnDecreaseSize)
-			AddWidget(btnSearch)
-			AddWidget(btnPrintSteps)	
-			//AddWidget(btnCloseWindow)	
-			insertStretch( -1, 1 )
 		}
 		layoutVPages = new qVBoxLayout()
 		layoutCB = new qVBoxLayout()
@@ -188,15 +159,75 @@ class GoalDesignerView from WindowsViewParent
 			AddWidget(widgetCB)
 			AddWidget(widgetVPages)
 		}		
-		layoutRegion = new qHBoxLayout() {
-			AddLayout(layoutVBtns)
-			AddWidget(oSplitter)
+
+ 		if PWCTIsMobile(:GoalDesignerButtons) {
+
+			layoutHBtns = new qHBoxLayout()
+			{	
+				AddWidget(btnAddStep)
+				AddWidget(btnEditStep)
+				AddWidget(btnDeleteStep)
+				AddWidget(btnMoveStepUp)
+				AddWidget(btnMoveStepDown)
+				AddWidget(btnInteract)		
+				AddWidget(btnModify)		
+				AddWidget(btnIgnore)
+				insertStretch( -1, 1 )
+			}
+			layoutHBtns2 = new qHBoxLayout()
+			{	
+				AddWidget(btnCutSteps)
+				AddWidget(btnCopySteps)
+				AddWidget(btnPasteSteps)
+				AddWidget(btnIncreaseSize)
+				AddWidget(btnDecreaseSize)
+				AddWidget(btnSearch)
+				AddWidget(btnPrintSteps)		
+				insertStretch( -1, 1 )
+			}
+			layoutRegion = new qVBoxLayout() {
+				AddLayout(layoutHBtns)
+				AddLayout(layoutHBtns2)
+				AddWidget(oSplitter)
+			}
+			layout1 = new qVBoxLayout()
+			{	
+				AddLayout(layoutTimeMachine)
+				AddLayout(layoutRegion)
+			}
+
+		else
+			layoutVBtns = new qVBoxLayout()
+			{	
+				AddWidget(btnAddStep)
+				AddWidget(btnEditStep)
+				AddWidget(btnDeleteStep)
+				AddWidget(btnMoveStepUp)
+				AddWidget(btnMoveStepDown)
+				AddWidget(btnInteract)		
+				AddWidget(btnModify)		
+				AddWidget(btnIgnore)
+				AddWidget(btnCutSteps)
+				AddWidget(btnCopySteps)
+				AddWidget(btnPasteSteps)
+				AddWidget(btnIncreaseSize)
+				AddWidget(btnDecreaseSize)
+				AddWidget(btnSearch)
+				AddWidget(btnPrintSteps)		
+				insertStretch( -1, 1 )
+			}
+			layoutRegion = new qHBoxLayout() {
+				AddLayout(layoutVBtns)
+				AddWidget(oSplitter)
+			}
+			layout1 = new qVBoxLayout()
+			{	
+				AddLayout(layoutTimeMachine)
+				AddLayout(layoutRegion)
+			}
+
 		}
-		layout1 = new qVBoxLayout()
-		{	
-			AddLayout(layoutTimeMachine)
-			AddLayout(layoutRegion)
-		}		
+		
 		SetLayout(Layout1)
 		/*
 			We set the focus on the steps tree to enable setting the current item

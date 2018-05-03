@@ -192,6 +192,7 @@ func PWCTIsMobile cOption
 		:ToolsDistributeMenu	(PWCT Environment - Menubar - Tools/Distribute Menu)
 		:StepsTreeScrollBars	(Goal Designer - Steps Tree - Horizontal Scrollbars)
 		:GoalDesignerButtonsSize(Goal Designer - Buttons - Width and height)
+		:GoalDesignerButtons	(Buttons that works on the steps tree)
 	*/
 	//if cOption = :RunApplication or cOption = :SendDataToApplication  return True ok
 	return isMobile()
