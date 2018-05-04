@@ -142,6 +142,8 @@ func DisplaySplashScreen oApp
 	# Wait for one second
 		if ! PWCTIsMobile(:SplashScreen) {
 			sleep(1)
+		else 
+			CreateMobileFiles()
 		}		
 	# Close the Splash Screen
 		oSplash.Close()
@@ -198,3 +200,22 @@ func PWCTIsMobile cOption
 	*/
 	//if cOption = :RunApplication or cOption = :SendDataToApplication  return True ok
 	return isMobile()
+
+/*
+	This function will create the PWCT folder on the mobile
+	Then will add the application files from resources to this folder 
+*/
+
+func CreateMobileFiles
+	QStandardPaths_GenericDataLocation = 11
+	oPath = new QStandardPaths
+	cPath = oPath.writableLocation(QStandardPaths_GenericDataLocation)
+	cPath += "/PWCTApp"
+	oDir = new qDir() {
+		setCurrent(cPath)
+		MkDir("PWCTApp")
+	}
+	oFile = new qFile()
+	oFile.copy_2(":/mobileapp/mobileapplibs.ring",cPath+"/mobileapplibs.ring")
+	oFile.copy_2(":/templates/formcontroller.pwct",cPath+"/formcontroller.pwct")
+	oFile.copy_2(":/templates/arabic_formcontroller.pwct",cPath+"/arabic_formcontroller.pwct")
