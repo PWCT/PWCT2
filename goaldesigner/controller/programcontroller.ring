@@ -144,7 +144,12 @@ Class ProgramController
 	*/	
 
 	func RunOnMobile oGD
-		chdir(PWCT_FOLDER)
+		# Create guilib.ring and stdlib.ring 
+			chdir(JustFilePath(cFileName))
+			write("guilib.ring","")
+			write("stdlib.ring","")
+		RUNTIME_FOLDER = PWCT_FOLDER + "/PWCTApp/runtime"
+		chdir(RUNTIME_FOLDER)
 		freopen("programoutput.txt","w+",stdout)
 		freopen("programinput.txt","r",stdin)
 		# We use runprogram.ring instead of using cFileName directly
@@ -164,7 +169,7 @@ Class ProgramController
 		}
 		oState = ring_state_new()
 		ring_state_mainfile(oState,"runprogram.ring")
-		chdir(PWCT_FOLDER)
+		chdir(RUNTIME_FOLDER)
 		# This will stop the Timer 
 			oGD.DisableCheckOutputOnMobile()
 		# Display the Output
@@ -173,6 +178,10 @@ Class ProgramController
 			remove("runprogram.ring")
 			remove("programoutput.txt")
 			remove("programinput.txt")
+		# delete guilib.ring and stdlib.ring 
+			chdir(JustFilePath(cFileName))
+			remove("guilib.ring")
+			remove("stdlib.ring")
 		
 	/*
 		Purpose : Check output from the application when we run PWCT on Mobile

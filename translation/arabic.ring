@@ -233,7 +233,7 @@
 
 # Templates 
 	if PWCTIsMobile(:formcontrollerfile) {
-		T_TEMPLATES_FORMCONTROLLER		= "arabic_formcontroller.pwct"
+		T_TEMPLATES_FORMCONTROLLER		= PWCT_FOLDER+"/PWCTApp/templates/arabic_formcontroller.pwct"
 	else
 		T_TEMPLATES_FORMCONTROLLER		= "/templates/arabic_formcontroller.pwct"
 	}

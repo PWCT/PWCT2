@@ -8,7 +8,11 @@
 class EnvironmentController from WindowsControllerParent
 
 	cCurrentDir = CurrentDir() + "/"	# The PWCT Folder
-	cSettingsFile = cCurrentDir + "pwct.ini"
+	if PWCTISMobile(:INIFile) {
+		cSettingsFile = cCurrentDir + "/PWCTApp/runtime/pwct.ini"
+	else 
+		cSettingsFile = cCurrentDir + "pwct.ini"
+	}
 	cFont = "MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0"
 	nFontSize = 12
 

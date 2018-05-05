@@ -234,7 +234,7 @@
 
 # Templates 
 	if PWCTIsMobile(:formcontrollerfile) {
-		T_TEMPLATES_FORMCONTROLLER		= "formcontroller.pwct"
+		T_TEMPLATES_FORMCONTROLLER		= PWCT_FOLDER+"/PWCTApp/templates/formcontroller.pwct"
 	else 
 		T_TEMPLATES_FORMCONTROLLER		= "/templates/formcontroller.pwct"
 	}

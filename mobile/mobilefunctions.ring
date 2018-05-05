@@ -45,15 +45,21 @@ func PWCTIsMobile cOption
 */
 
 func CreateMobileFiles
+	cDir = currentdir()
 	QStandardPaths_GenericDataLocation = 11
 	oPath = new QStandardPaths
 	cPath = oPath.writableLocation(QStandardPaths_GenericDataLocation)
-	cPath += "/PWCTApp"
 	oDir = new qDir() {
 		setCurrent(cPath)
 		MkDir("PWCTApp")
-	}
+		setCurrent(cPath+"/PWCTApp")
+		MkDir("runtime")
+		MkDir("templates")
+	}	
 	oFile = new qFile()
-	oFile.copy_2(":/mobileapp/mobileapplibs.ring",cPath+"/mobileapplibs.ring")
-	oFile.copy_2(":/templates/formcontroller.pwct",cPath+"/formcontroller.pwct")
-	oFile.copy_2(":/templates/arabic_formcontroller.pwct",cPath+"/arabic_formcontroller.pwct")
+	oFile.copy_2(":/mobileapp/mobileapplibs.ring",cPath+"/PWCTApp/runtime/mobileapplibs.ring")
+	oFile.copy_2(":/templates/formcontroller.pwct",cPath+"/PWCTApp/templates/formcontroller.pwct")
+	oFile.copy_2(":/templates/arabic_formcontroller.pwct",cPath+"/PWCTApp/templates/arabic_formcontroller.pwct")
+	chdir(cPath)
+	remove("pwct.ringo")
+	chdir(cDir)
