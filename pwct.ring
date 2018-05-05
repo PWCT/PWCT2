@@ -81,6 +81,9 @@
 # Load the Web Server - ServerPrepare Class
 	load "../libdepwin/Apache2.2/ring/prepare.ring"
 
+# Mobile functions 
+	load "mobile/mobilefunctions.ring"
+
 # Run PWCT Environment
 	Start_Environment()
 
@@ -168,54 +171,3 @@ func ShowMessage cTitle,cMessage
 		}
 
 
-/*
-	The next function to Control if we need to use the Mobile Settings or Not
-*/
-
-func PWCTIsMobile cOption	
-	/*
-	 We can use cOption to have more control on settings
-	 cOption can be 
-		:FontFamily		(Avoid Crash!)
-		:Database		(Use Qt to access SQLite)
-		:ComponentsBrowser	(Full Screen Window)
-		:IPTitle		(Interaction Page Title Height)
-		:Tabify			(GoalDesigner,Output,Project Files)
-		:componentsfile		(Path to components file)
-		:OpenFilesInNewTabs     (Open each PWCT file in separate Goal Designer)
-		:StepsColorsMinimumWidth(Steps Colors - Label Minimum Width)
-		:SplashScreen		(Splash Screen - Check for waiting)
-		:UseComponentsFile	(Components Browser - Using Ring Code instead of SQLite)
-		:RunApplication		(Run Application)
-		:MobileAppLibs		(Loading Mobile Application Libs - guilib for mobile)
-		:ComponentSelected	(Components Browser - After selecting a component)
-		:DockForComponentsBrowser (Dockable window for components browser)
-		:WindowDimensions	(PWCT Environment Window - Move() & Resize())
-		:ToolsDistributeMenu	(PWCT Environment - Menubar - Tools/Distribute Menu)
-		:StepsTreeScrollBars	(Goal Designer - Steps Tree - Horizontal Scrollbars)
-		:GoalDesignerButtonsSize(Goal Designer - Buttons - Width and height)
-		:GoalDesignerButtons	(Buttons that works on the steps tree)
-		:DisplayLoadingMessage	(Environemnt - Change file - loading message)
-		:ShowLoadingMessage	(Environment - Change file - Form File - loading message)
-	*/
-	//if cOption = :RunApplication or cOption = :SendDataToApplication  return True ok
-	return isMobile()
-
-/*
-	This function will create the PWCT folder on the mobile
-	Then will add the application files from resources to this folder 
-*/
-
-func CreateMobileFiles
-	QStandardPaths_GenericDataLocation = 11
-	oPath = new QStandardPaths
-	cPath = oPath.writableLocation(QStandardPaths_GenericDataLocation)
-	cPath += "/PWCTApp"
-	oDir = new qDir() {
-		setCurrent(cPath)
-		MkDir("PWCTApp")
-	}
-	oFile = new qFile()
-	oFile.copy_2(":/mobileapp/mobileapplibs.ring",cPath+"/mobileapplibs.ring")
-	oFile.copy_2(":/templates/formcontroller.pwct",cPath+"/formcontroller.pwct")
-	oFile.copy_2(":/templates/arabic_formcontroller.pwct",cPath+"/arabic_formcontroller.pwct")
