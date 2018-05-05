@@ -7,9 +7,9 @@
 
 ===========================================================
 Status
-	* Bugs Count : 35
+	* Bugs Count : 36
 	* Fixed Bugs : 35
-	* UnFixed Bugs : 0
+	* UnFixed Bugs : 1
 ===========================================================
 (1)  Fixed : We created over 6 thouands steps, then using the search window
 after selecting an item in the search result list we get the next error
@@ -1110,5 +1110,13 @@ Solved in GoalDesignerModel.ring by adding oInteractionModelBuffer = oInteractio
 		# So we can paste many times, but get new interactions for each paste operation 
 			oInteractionModelBuffer = oInteractionModel
 
+
+=======================================================
+
+(36)
+
+Move up - conflict with the time machine 
+When we go back then to the present
+we see the step down (not up as expected !)
 
 =======================================================
