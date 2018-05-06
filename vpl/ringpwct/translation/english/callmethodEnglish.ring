@@ -10,8 +10,8 @@
 
 	# Steps Tree 
 		T_CT_CALLMETHOD_ST_CALLMETHOD = ""
-		T_CT_CALLMETHOD_ST_CALLSTART = "( "
-		T_CT_CALLMETHOD_ST_CALLSTART = " )"
+		T_CT_CALLMETHOD_ST_CALLSTART  = "( "
+		T_CT_CALLMETHOD_ST_CALLEND    = " )"
 
 	# Interaction Page
 		T_CT_CALLMETHOD_IP_TITLE 	= "Call Method Component"
