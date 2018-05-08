@@ -229,10 +229,9 @@ class EnvironmentController from WindowsControllerParent
 			if PWCTIsMobile(:DisplayLoadingMessage) {
 				lDisplayLoadingMessage = True
 			}
-		cFileName = lower(cFileName)
 		# If the file is already opened, Activate the window
 			if lOpenFilesInNewTabs {
-				nPos = find(aActiveFiles,cFileName,2)
+				nPos = find(aActiveFiles,lower(cFileName),2)
 				if nPos {
 					aActiveFiles[nPos][1].show()
 					aActiveFiles[nPos][1].raise()
@@ -267,7 +266,7 @@ class EnvironmentController from WindowsControllerParent
 		else
 			oView.oDockGoalDesigner.setWindowTitle(JustFileName(cFileName))
 			# Add the file to the Active Files List 
-				aActiveFiles + [oView.oDockGoalDesigner,cFileName]
+				aActiveFiles + [oView.oDockGoalDesigner,lower(cFileName)]
 			oView.oDockGoalDesigner.raise()
 		}
 		# Add the Steps Tree to the aActiveFiles list 
