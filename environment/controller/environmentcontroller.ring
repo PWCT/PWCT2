@@ -220,7 +220,6 @@ class EnvironmentController from WindowsControllerParent
 		}
 		
 	func openVisualFile cFileName
-		cFileName = lower(cFileName)
 		# Check the file size
 			if len(read(cFileName)) < 50*1024 {	# file size less than 50 KB
 				lDisplayLoadingMessage = False 
@@ -230,6 +229,7 @@ class EnvironmentController from WindowsControllerParent
 			if PWCTIsMobile(:DisplayLoadingMessage) {
 				lDisplayLoadingMessage = True
 			}
+		cFileName = lower(cFileName)
 		# If the file is already opened, Activate the window
 			if lOpenFilesInNewTabs {
 				nPos = find(aActiveFiles,cFileName,2)
