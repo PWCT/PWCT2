@@ -1,4 +1,4 @@
-load "justatestview.ring"
+load "justatestView.ring"
 import System.GUI
 if isMainSourceFile() { 
 	new App

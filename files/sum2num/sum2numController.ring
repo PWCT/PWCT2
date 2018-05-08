@@ -1,4 +1,4 @@
-load "sum2numview.ring"
+load "sum2numView.ring"
 import System.GUI
 if isMainSourceFile() { 
 	new App

@@ -1,4 +1,4 @@
-load "testfd2view.ring"
+load "testfd2View.ring"
 import System.GUI
 if isMainSourceFile() { 
 	new App

@@ -1,4 +1,4 @@
-load "findinfilesview.ring"
+load "findinfilesView.ring"
 import System.GUI
 if isMainSourceFile() { 
 	new App
