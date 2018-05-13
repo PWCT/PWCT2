@@ -322,6 +322,9 @@ Class ComponentControllerParent from WindowsControllerParent
 		if oView.lFirstTextBox = False {
 			oView.oFirstText.SetFocus(0)
 		}
+		if PWCTIsMobile(:InteractionPage) {
+			oView.win.showfullscreen()
+		}
 
 	/*
 		Purpose : Close Button Action

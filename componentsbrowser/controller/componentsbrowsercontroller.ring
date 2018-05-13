@@ -168,7 +168,7 @@ class ComponentsBrowserController from WindowsControllerParent
 		if not Parent().lComponentsBrowserInGoalDesigner {
 			oView.win {
 				if PWCTisMobile(:ComponentsBrowser) {
-					showmaximized()
+					showfullscreen()
 				else 
 					oDesktop = new qDesktopwidget() 
 					move((oDesktop.width()-500)/2,(oDesktop.height()-500)/2)
