@@ -317,14 +317,16 @@ Class ComponentControllerParent from WindowsControllerParent
 	*/
 
 	func Start
-		Super.Start()
+		if PWCTIsMobile(:InteractionPage) {
+			oView.win.showfullscreen()
+		else 
+			Super.Start()
+		}
 		oView.win.activateWindow()
 		if oView.lFirstTextBox = False {
 			oView.oFirstText.SetFocus(0)
 		}
-		if PWCTIsMobile(:InteractionPage) {
-			oView.win.showfullscreen()
-		}
+		
 
 	/*
 		Purpose : Close Button Action
