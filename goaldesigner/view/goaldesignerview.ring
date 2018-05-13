@@ -143,6 +143,13 @@ class GoalDesignerView from WindowsViewParent
 		{	
 			AddWidget(LabelTM)
 			AddWidget(sliderTimeMachine)
+			if PWCTIsMobile(:GoalDesignerFullScreen) {
+				btnMax = new qPushButton(win) {
+					setClickEvent(Method(:FullScreen))
+				}
+				setBtnImage(btnMax,AppFile("images/fullscreen.png"))
+				AddWidget(btnMax)
+			}
 		}
 		layoutVPages = new qVBoxLayout()
 		layoutCB = new qVBoxLayout()

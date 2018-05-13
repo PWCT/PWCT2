@@ -42,6 +42,10 @@ class GoalDesignerController from WindowsControllerParent
 
 	oHTMLFunctions = new HTMLFunctions
 
+	# Full Screen 
+		lFullScreen = False 
+		oDockGoalDesigner = NULL
+
 	/*
 		Purpose : Show the Window
 		Parameters : None
@@ -1505,3 +1509,13 @@ class GoalDesignerController from WindowsControllerParent
 		cActiveFileName = GetActiveFile()
 		cActiveFileName = substr(cActiveFileName,".pwct",".ring")
 		return cActiveFileName
+
+	func FullScreen
+		if lFullScreen = False {
+			lFullScreen = True 
+			oView.win.setparent(NULL)
+			oView.win.showfullscreen()
+		else 
+			lFullScreen = False 
+			oDockGoalDesigner.setWidget(oView.win)
+		}

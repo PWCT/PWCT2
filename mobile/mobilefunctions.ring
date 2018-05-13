@@ -35,6 +35,7 @@ func PWCTIsMobile cOption
 		:GoalDesignerButtons	(Buttons that works on the steps tree)
 		:DisplayLoadingMessage	(Environemnt - Change file - loading message)
 		:ShowLoadingMessage	(Environment - Change file - Form File - loading message)
+		:GoalDesignerFullScreen	(Goal Designer - Full Screen Button)
 	*/
 	//if cOption = :RunApplication or cOption = :SendDataToApplication  return True ok
 	return isMobile()

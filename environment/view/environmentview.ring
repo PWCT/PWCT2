@@ -611,6 +611,7 @@ class EnvironmentView from WindowsViewParent
 			setwindowtitle(T_ENV_DOCK_GOALDESIGNER) # "Goal Designer"		 
 			setvisibilitychangedevent(Method(:ActiveGoalDesignerChanged))
 		}
+		last_window().oDockGoalDesigner = oDock
 		win.adddockwidget(1,oDock,1)	
 		return oDock
 
