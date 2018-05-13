@@ -318,7 +318,7 @@ Class ComponentControllerParent from WindowsControllerParent
 
 	func Start
 		if PWCTIsMobile(:InteractionPage) {
-			oView.win.showfullscreen()
+			oView.win.showmaximized()
 		else 
 			Super.Start()
 		}

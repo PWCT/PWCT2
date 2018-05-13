@@ -163,7 +163,7 @@ class ComponentsBrowserController from WindowsControllerParent
 
  	func Start
 		if PWCTisMobile(:ComponentsBrowser) {
-			oView.win.showfullscreen()
+			oView.win.showmaximized()
 		else
 			Super.Start()
 		}
