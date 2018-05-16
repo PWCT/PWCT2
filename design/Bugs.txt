@@ -1119,4 +1119,32 @@ Move up - conflict with the time machine
 When we go back then to the present
 we see the step down (not up as expected !)
 
+Create four steps ( one - two - three - four )
+move the step (four) to be before (one) so we have
+four 
+one 
+two 
+three 
+Until now now problem in the time machine 
+Now create another four steps (Print one - print two - print three - print four)
+move (print four) to be up so we have 
+print four 
+four 
+one 
+two 
+three 
+print one
+print two 
+print three 
+now go back using the time machine then go forward 
+we have 
+print four 
+one 
+two 
+three 
+four 	-------> wrong place !!!
+print one 
+print two 
+print three 
+
 =======================================================
