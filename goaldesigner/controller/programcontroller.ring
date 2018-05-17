@@ -144,12 +144,19 @@ Class ProgramController
 	*/	
 
 	func RunOnMobile oGD
+		if cFileName = C_FILENONAME {	# noname.pwct 
+			cFileName = PWCT_FOLDER + "/" + C_FILENONAME
+		}
+		RUNTIME_FOLDER = PWCT_FOLDER + "/PWCTApp/runtime"
 		# Create guilib.ring and stdlib.ring 
 			chdir(JustFilePath(cFileName))
 			write("guilib.ring","")
 			write("stdlib.ring","")
-		RUNTIME_FOLDER = PWCT_FOLDER + "/PWCTApp/runtime"
 		chdir(RUNTIME_FOLDER)
+		# Delete Temp. Files
+			remove("runprogram.ring")
+			remove("programoutput.txt")
+			remove("programinput.txt")
 		freopen("programoutput.txt","w+",stdout)
 		freopen("programinput.txt","r",stdin)
 		# We use runprogram.ring instead of using cFileName directly
@@ -182,6 +189,7 @@ Class ProgramController
 			chdir(JustFilePath(cFileName))
 			remove("guilib.ring")
 			remove("stdlib.ring")
+			remove("noname.ring")	# if we are using noname.pwct 
 		
 	/*
 		Purpose : Check output from the application when we run PWCT on Mobile
