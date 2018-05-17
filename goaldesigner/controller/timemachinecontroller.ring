@@ -105,17 +105,59 @@ class TimeMachineController
 		Parameters : View Object, Model Object, Parent Step ID, Step ID and Step Interaction ID
 		Output : True/False
 	*/
+	/*
+		The next method uses a while loo (While True) 
+		And check what after unvisible steps 
+		To avoid the next problem 
+		Create four steps ( one - two - three - four )
+		move the step (four) to be before (one) so we have
+		four 
+		one 
+		two 
+		three 
+		Until now no problem in the time machine 
+		Now create another four steps (Print one - print two - print three - print four)
+		move (print four) to be up so we have 
+		four 
+		print four 
+		one 
+		two 
+		three 
+		print one
+		print two 
+		print three 
+		now go back using the time machine then go forward 
+		we have 
+		print four 
+		one 
+		two 
+		three 
+		four 	-------> wrong place !!!
+		print one 
+		print two 
+		print three 
+		So the While loop solve the problem 
+		when we are at (four) the next step will be (print four)
+		So the while loop will pass this step to the next one 
+	*/
 	func CheckInsertStep oView,oModel,nParentID,nStepID,nStepIID
-		# Get the Next step after this step
-			nPos = oModel.oStepsTreeModel.SiblingDown(nStepID)
-		if nPos != 0 {
-			nStepID2 = oModel.oStepsTreeModel.GetData()[nPos][C_TREEMODEL_NODEID]
-			nStepIID2 = oModel.oStepsTreeModel.GetData()[nPos][C_TREEMODEL_CONTENT][:interactionid]
-			if nStepIID2 < nStepIID  { # The next Step is visible  
-					oItem = oView.oStepsTree.GetObjByID(nStepID2)
-					nIndex = oItem.parent().indexofchild(oItem)
-					nIndex++	 	# Start from 1 not 0
-					return nIndex 	# True and the Item Index
+		while True {	# We will repeat the process until we find a visible step after this step 
+			# Get the Next step after this step
+				nPos = oModel.oStepsTreeModel.SiblingDown(nStepID)
+			if nPos != 0 {
+				nStepID2 = oModel.oStepsTreeModel.GetData()[nPos][C_TREEMODEL_NODEID]
+				nStepIID2 = oModel.oStepsTreeModel.GetData()[nPos][C_TREEMODEL_CONTENT][:interactionid]
+				if nStepIID2 < nStepIID  { # The next Step is visible  
+						oItem = oView.oStepsTree.GetObjByID(nStepID2)
+						nIndex = oItem.parent().indexofchild(oItem)
+						nIndex++	 	# Start from 1 not 0
+						return nIndex 	# True and the Item Index
+				else 	# The step is not visible - we need what after it 
+					# Use the unvisible step as the current step 
+						nStepID = nStepID2
+				}
+			else 
+				exit 	# No more unvisible steps to repeat the loop 
 			}
 		}
 		return False
