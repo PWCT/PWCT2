@@ -1,4 +1,4 @@
-load "sayhelloview.ring"
+load "sayhelloView.ring"
 import System.GUI
 if isMainSourceFile() { 
 	new App
