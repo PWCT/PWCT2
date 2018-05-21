@@ -43,18 +43,21 @@ class EnvironmentView from WindowsViewParent
 			self.CreateStatusBar(win)
 			if T_LAYOUTDIRECTION = 0 {
 				self.CreateFilesManager(win)
+				if lDockForFormDesigner {
+					self.CreateFormDesigner(win)
+				}
 				oDockGoalDesigner = self.CreateGoalDesigner(win)
 				self.CreateOutputWindow(win)
 			else 
 				self.CreateOutputWindow(win)
+				if lDockForFormDesigner {
+					self.CreateFormDesigner(win)
+				}
 				oDockGoalDesigner = self.CreateGoalDesigner(win)
 				self.CreateFilesManager(win)
 			}
 			if lDockForComponentsBrowser {
 				self.CreateComponentsBrowser(win)
-			}
-			if lDockForFormDesigner {
-				self.CreateFormDesigner(win)
 			}
 			setwinicon(win,AppFile("images/pwct.png"))	
 			oFilter = new qAllevents(win) {
@@ -681,7 +684,7 @@ class EnvironmentView from WindowsViewParent
 			setwidget( oProcessWindow )		
 			setwindowtitle(T_ENV_OW_TITLE)  # "Output Window"
 		}
-		win.adddockwidget(1,oDockOutputWindow,1)
+		win.adddockwidget(Qt_LeftDockWidgetArea ,oDockOutputWindow,1)
 
 	/*
 		Purpose : Create the Components Browser Window 
@@ -695,7 +698,7 @@ class EnvironmentView from WindowsViewParent
 			setLayoutDirection(C_TRANSLATION_ENGLISH)
 			setwindowtitle(T_ENV_DOCK_COMPONENTSBROWSER) 
 		}
-		win.adddockwidget(1,oDockComponentsBrowser,1)
+		win.adddockwidget(Qt_LeftDockWidgetArea,oDockComponentsBrowser,1)
 
 	/*
 		Purpose : Create the Form Designer Window 
@@ -709,4 +712,4 @@ class EnvironmentView from WindowsViewParent
 			setLayoutDirection(C_TRANSLATION_ENGLISH)
 			setwindowtitle(T_ENV_DOCK_FORMDESIGNER) 
 		}
-		win.adddockwidget(1,oDockFormDesigner,1)
+		win.adddockwidget(Qt_LeftDockWidgetArea,oDockFormDesigner,1)

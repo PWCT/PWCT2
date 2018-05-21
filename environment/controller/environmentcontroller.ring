@@ -84,7 +84,7 @@ class EnvironmentController from WindowsControllerParent
 
 		if IsDockForFormDesigner() {
 			FormDesignerDock()
-			oView.win.tabifydockwidget(oView.oDockGoalDesigner,oView.oDockFormDesigner)
+			oView.win.tabifydockwidget(oView.oDockFormDesigner,oView.oDockGoalDesigner)
 			oView.oDockGoalDesigner.raise()
 		}
 
