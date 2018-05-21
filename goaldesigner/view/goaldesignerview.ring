@@ -25,6 +25,35 @@ class GoalDesignerView from WindowsViewParent
 				oTreeFilter.setFocusInEvent(Method(:ActivateWindowAction))
 				installeventfilter(oTreeFilter)
 				setstylesheet("selection-color:black; selection-background-color:cyan;")
+				# The lines doesn't appear !
+				/*
+				setstylesheet("selection-color:black; selection-background-color:cyan;
+					branch:has-siblings:!adjoins-item {
+					    border-image: url(images/stylesheet-vline.png) ;
+					}
+					
+					branch:has-siblings:adjoins-item {
+					    border-image: url(images/stylesheet-branch-more.png);
+					}
+					
+					branch:!has-children:!has-siblings:adjoins-item {
+					    border-image: url(images/stylesheet-branch-end.png) ;
+					}
+					
+					branch:has-children:!has-siblings:closed,
+					branch:closed:has-children:has-siblings {
+					        border-image: none;
+					        image: url(images/stylesheet-branch-closed.png);
+					}
+					
+					branch:open:has-children:!has-siblings,
+					branch:open:has-children:has-siblings  {
+					        border-image: none;
+					        image: url(images/stylesheet-branch-open.png);
+					}
+					
+				")
+				*/
 			}
 			oPageDesignLayout = new qVBoxLayout() {
 				AddWidget(oStepsTree)
