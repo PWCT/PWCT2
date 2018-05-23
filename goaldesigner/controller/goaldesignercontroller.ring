@@ -35,7 +35,7 @@ class GoalDesignerController from WindowsControllerParent
 	# Increase performance when adding many steps 
 		lUseSuperSerialAdd 	= True
 		# Max Steps that uses Colors 
-			nMaxStepsCount 		= 500
+			nMaxStepsCount 		= 50000
 			lUseMaxStepsCount	= True
 		# Show loading progress 
 			lShowLoadingProgress	= True
@@ -848,7 +848,8 @@ class GoalDesignerController from WindowsControllerParent
 				if nMax <= this.nMaxStepsCount or not this.lUseMaxStepsCount {
 					SetStepColor(nStepType)
 				}
-				oParent = GetObjByID(nParentID)
+				# GetObjByID() consumes 0.08 second per 100 steps 
+					oParent = GetObjByID(nParentID)
 				if lIgnore {
 					cImage = C_LABELIMAGE_IGNORESTEP
 				else
