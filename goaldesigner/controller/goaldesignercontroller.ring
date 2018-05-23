@@ -858,9 +858,9 @@ class GoalDesignerController from WindowsControllerParent
 				if nMax < this.nMaxStepsCount or not this.lUseMaxStepsCount {
 					oLabel = new qLabel(self) 
 					cText = PrepareNodeText(cText)
+					SetLabelFont2(oLabel)
 					oLabel.settext(oStyle.image(cImage)+
 							oStyle.text(cText,cColor,cBackColor))					
-					SetLabelFont2(oLabel)
 					oParent.addchild(oItem)
 					setItemWidget(oItem,0,oLabel)
 				else 
@@ -884,6 +884,7 @@ class GoalDesignerController from WindowsControllerParent
 				}
 			}
 		}
+
 
 	/*
 		Purpose : Start New Interaction
