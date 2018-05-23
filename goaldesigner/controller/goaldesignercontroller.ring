@@ -856,6 +856,17 @@ class GoalDesignerController from WindowsControllerParent
 				}
 				oItem = new qtreewidgetitem() 
 				if nMax < this.nMaxStepsCount or not this.lUseMaxStepsCount {
+					/*
+						Performance of this section 
+						Steps Count : 100 
+						Default time with this section 		: 1.04 seconds 
+						Time without this section (no label) 	: 0.34 second 
+						This section consumes 			: 0.70 second per 100 steps 					
+						PrePareNodeText() consumes 		: 0.06 second per 100 steps 
+						SetLabelFont2() consumes 		: 0.18 second per 100 steps 
+						oStyle consumes 			: 0.14 second per 100 steps 
+						settext() and oStyle consumes 		: 0.31 second per 100 steps 
+					*/
 					oLabel = new qLabel(self) 
 					cText = PrepareNodeText(cText)
 					SetLabelFont2(oLabel)
