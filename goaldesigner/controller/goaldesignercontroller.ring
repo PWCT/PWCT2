@@ -870,12 +870,20 @@ class GoalDesignerController from WindowsControllerParent
 						settext() and oStyle consumes 		: 0.31 second per 100 steps 
 					For better performance 
 						SetLabelFont2() replaced with preparetempfont() and setlabelFont3()
-											: Gain 0.08 seconds per 100 steps 					*/
+											: Gain 0.08 seconds per 100 steps 					
+						oStyle replaces with strings instead of method calls 
+						//oLabel.settext(oStyle.image(cImage)+
+						//		oStyle.text(cText,cColor,cBackColor))					
+											: Gain 0.10 seconds per 100 steps 
+					*/
 					oLabel = new qLabel(self) 
 					cText = PrepareNodeText(cText)
 					SetLabelFont3(oLabel)
-					oLabel.settext(oStyle.image(cImage)+
-							oStyle.text(cText,cColor,cBackColor))					
+					oLabel.settext("<img src='"+cImage+"'> "+
+							`<span style="background-color:`+cBackColor+
+							`"><font color="`+cColor+`">`+cText+
+							`</font></span>`)					
+
 					oParent.addchild(oItem)
 					setItemWidget(oItem,0,oLabel)
 				else 
