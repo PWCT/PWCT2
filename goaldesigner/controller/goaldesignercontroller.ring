@@ -837,6 +837,7 @@ class GoalDesignerController from WindowsControllerParent
 			}
 		}
 		oView.oStepsTree.preparetempfont()
+		oTempFont = oView.oStepsTree.oTempFont
 		for x = 2 to nMax {
 			aStep = aStepsTree[x]
 			nID		= aStep[C_TREEMODEL_NODEID]
@@ -881,11 +882,14 @@ class GoalDesignerController from WindowsControllerParent
 						setLabelFont3() replaced with it's content 
 						//SetLabelFont3(oLabel)
 						 					: Gain 0.05 seconds per 100 steps 
+						self.oTempFont replaced with oTempFont (local variable) 
+						// oLabel.setFont(self.oTempFont)
+											: Gain 0.02 seconds 
 					*/
 					oLabel = new qLabel(self) 
 					cText = substr(substr(cText,"C_STEPCOLOR_DATA_TEXT",C_STEPCOLOR_DATA_TEXT),
 							"C_STEPCOLOR_DATA_BACKCOLOR",C_STEPCOLOR_DATA_BACKCOLOR)
-					oLabel.setFont(self.oTempFont)
+					oLabel.setFont(oTempFont)
 					oLabel.settext("<img src='"+cImage+"'> "+
 							`<span style="background-color:`+cBackColor+
 							`"><font color="`+cColor+`">`+cText+
