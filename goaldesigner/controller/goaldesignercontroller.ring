@@ -874,10 +874,15 @@ class GoalDesignerController from WindowsControllerParent
 						oStyle replaces with strings instead of method calls 
 						//oLabel.settext(oStyle.image(cImage)+
 						//		oStyle.text(cText,cColor,cBackColor))					
-											: Gain 0.10 seconds per 100 steps 
+						 					: Gain 0.10 seconds per 100 steps 
+						PrepareNodeText() replaces with two merged substr() instead of method called	
+						// cText = PrepareNodeText(cText)
+
+						 					: Gain 0.05 seconds per 100 steps 
 					*/
 					oLabel = new qLabel(self) 
-					cText = PrepareNodeText(cText)
+					cText = substr(substr(cText,"C_STEPCOLOR_DATA_TEXT",C_STEPCOLOR_DATA_TEXT),
+							"C_STEPCOLOR_DATA_BACKCOLOR",C_STEPCOLOR_DATA_BACKCOLOR)
 					SetLabelFont3(oLabel)
 					oLabel.settext("<img src='"+cImage+"'> "+
 							`<span style="background-color:`+cBackColor+
