@@ -885,6 +885,10 @@ class GoalDesignerController from WindowsControllerParent
 						self.oTempFont replaced with oTempFont (local variable) 
 						// oLabel.setFont(self.oTempFont)
 											: Gain 0.02 seconds 
+						Now oLabel.setText() consumes 0.30 seconds per 100 steps 
+							the HTML consumes  0.24 seconds per 1000 steps 
+							because using setText("test") reduce time a lot 
+							// oLabel.settext("test")
 					*/
 					oLabel = new qLabel(self) 
 					cText = substr(substr(cText,"C_STEPCOLOR_DATA_TEXT",C_STEPCOLOR_DATA_TEXT),
@@ -894,7 +898,6 @@ class GoalDesignerController from WindowsControllerParent
 							`<span style="background-color:`+cBackColor+
 							`"><font color="`+cColor+`">`+cText+
 							`</font></span>`)					
-
 					oParent.addchild(oItem)
 					setItemWidget(oItem,0,oLabel)
 				else 
