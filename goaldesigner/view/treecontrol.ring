@@ -162,6 +162,19 @@ class TreeControl from qTreeWidget
 		}
       		oLabel.setFont(oTempFont)
 
+	func preparetempfont
+		cFontFam =  font().family() 				
+		if not isObject(oTempFont) {
+			oTempFont = new qfont(cFontFam,nFontSize,-1,0)
+		else 
+			oTempFont.setFamily(cFontFam)
+			oTempFont.setPointsize(nFontSize)
+		}
+
+	func SetLabelFont3 oLabel 
+      		oLabel.setFont(oTempFont)
+
+
 	/*
 		The next method get the Tree Node Object using the Tree Node ID
 		Parameters :  The Node ID

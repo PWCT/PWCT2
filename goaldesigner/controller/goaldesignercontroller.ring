@@ -836,6 +836,7 @@ class GoalDesignerController from WindowsControllerParent
 
 			}
 		}
+		oView.oStepsTree.preparetempfont()
 		for x = 2 to nMax {
 			aStep = aStepsTree[x]
 			nID		= aStep[C_TREEMODEL_NODEID]
@@ -867,10 +868,12 @@ class GoalDesignerController from WindowsControllerParent
 						SetLabelFont2() consumes 		: 0.18 second per 100 steps 
 						oStyle consumes 			: 0.14 second per 100 steps 
 						settext() and oStyle consumes 		: 0.31 second per 100 steps 
-					*/
+					For better performance 
+						SetLabelFont2() replaced with preparetempfont() and setlabelFont3()
+											: Gain 0.08 seconds per 100 steps 					*/
 					oLabel = new qLabel(self) 
 					cText = PrepareNodeText(cText)
-					SetLabelFont2(oLabel)
+					SetLabelFont3(oLabel)
 					oLabel.settext(oStyle.image(cImage)+
 							oStyle.text(cText,cColor,cBackColor))					
 					oParent.addchild(oItem)
