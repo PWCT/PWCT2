@@ -877,13 +877,15 @@ class GoalDesignerController from WindowsControllerParent
 						 					: Gain 0.10 seconds per 100 steps 
 						PrepareNodeText() replaces with two merged substr() instead of method called	
 						// cText = PrepareNodeText(cText)
-
+						 					: Gain 0.05 seconds per 100 steps 
+						setLabelFont3() replaced with it's content 
+						//SetLabelFont3(oLabel)
 						 					: Gain 0.05 seconds per 100 steps 
 					*/
 					oLabel = new qLabel(self) 
 					cText = substr(substr(cText,"C_STEPCOLOR_DATA_TEXT",C_STEPCOLOR_DATA_TEXT),
 							"C_STEPCOLOR_DATA_BACKCOLOR",C_STEPCOLOR_DATA_BACKCOLOR)
-					SetLabelFont3(oLabel)
+					oLabel.setFont(self.oTempFont)
 					oLabel.settext("<img src='"+cImage+"'> "+
 							`<span style="background-color:`+cBackColor+
 							`"><font color="`+cColor+`">`+cText+
