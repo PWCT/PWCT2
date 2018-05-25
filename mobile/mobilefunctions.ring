@@ -37,6 +37,7 @@ func PWCTIsMobile cOption
 		:DisplayLoadingMessage	(Environemnt - Change file - loading message)
 		:ShowLoadingMessage	(Environment - Change file - Form File - loading message)
 		:GoalDesignerFullScreen	(Goal Designer - Full Screen Button)
+		:OnlyPWCTFilesFolder	(Show only PWCTFiles folder)
 	*/
 	//if cOption = :RunApplication or cOption = :SendDataToApplication  return True ok
 	return isMobile()
@@ -59,6 +60,7 @@ func CreateMobileFiles
 	}
 	oDir = new qDir() {
 		setCurrent(cPath)
+		MkDir("PWCTFiles")
 		MkDir("PWCTApp")
 		setCurrent(cPath+"/PWCTApp")
 		MkDir("runtime")
@@ -69,6 +71,6 @@ func CreateMobileFiles
 	oFile.copy_2(":/templates/formcontroller.pwct",cPath+"/PWCTApp/templates/formcontroller.pwct")
 	oFile.copy_2(":/templates/arabic_formcontroller.pwct",cPath+"/PWCTApp/templates/arabic_formcontroller.pwct")
 	write(C_VERSIONFILE,C_MOBILEVERSION)
-	chdir(cPath)
-	remove("pwct.ringo")
+	//chdir(cPath)
+	//remove("pwct.ringo")
 	chdir(cDir)
