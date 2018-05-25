@@ -5,6 +5,7 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
+C_MOBILEVERSION = "PWCT 2.0 For Mobile - 2018.05.25"
 
 /*
 	The next function to Control if we need to use the Mobile Settings or Not
@@ -50,6 +51,12 @@ func CreateMobileFiles
 	QStandardPaths_GenericDataLocation = 11
 	oPath = new QStandardPaths
 	cPath = oPath.writableLocation(QStandardPaths_GenericDataLocation)
+	C_VERSIONFILE = cPath+"/PWCTApp/runtime/version.txt"
+	if fexists(C_VERSIONFILE) {
+		if read(C_VERSIONFILE) = C_MOBILEVERSION {
+			return 
+		}
+	}
 	oDir = new qDir() {
 		setCurrent(cPath)
 		MkDir("PWCTApp")
@@ -61,6 +68,7 @@ func CreateMobileFiles
 	oFile.copy_2(":/mobileapp/mobileapplibs.ring",cPath+"/PWCTApp/runtime/mobileapplibs.ring")
 	oFile.copy_2(":/templates/formcontroller.pwct",cPath+"/PWCTApp/templates/formcontroller.pwct")
 	oFile.copy_2(":/templates/arabic_formcontroller.pwct",cPath+"/PWCTApp/templates/arabic_formcontroller.pwct")
+	write(C_VERSIONFILE,C_MOBILEVERSION)
 	chdir(cPath)
 	remove("pwct.ringo")
 	chdir(cDir)
