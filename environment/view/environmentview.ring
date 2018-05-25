@@ -585,6 +585,10 @@ class EnvironmentView from WindowsViewParent
 				hidecolumn(x)
 			}
 			setcurrentindex(myindex)
+			if PWCTIsMobile(:OnlyPWCTFilesFolder) {
+				myindex2 = this.ofile.index(oDir.currentpath()+"/PWCTFiles",0)
+				setrootindex(myindex2)
+			}
 			setexpanded(myindex,true)
 			header().hide()			
 		}
