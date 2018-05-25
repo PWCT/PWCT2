@@ -22,6 +22,8 @@ Class ProgramController
 
 	lMainFile	= False
 
+	cOutputFileText = ""
+
 	/*
 		Purpose : Debug
 		Parameters : Goal Designer Object
@@ -178,12 +180,12 @@ Class ProgramController
 		ring_state_mainfile(oState,"runprogram.ring")
 		chdir(RUNTIME_FOLDER)
 		# This will stop the Timer 
-			oGD.DisableCheckOutputOnMobile()
+			//oGD.DisableCheckOutputOnMobile()
 		# Display the Output
 			CheckOutputOnMobile(oGD)
 		# Delete Temp. Files
 			remove("runprogram.ring")
-			remove("programoutput.txt")
+			//remove("programoutput.txt")
 			remove("programinput.txt")
 		# delete guilib.ring and stdlib.ring 
 			chdir(JustFilePath(cFileName))
@@ -198,16 +200,24 @@ Class ProgramController
 	*/
 
 	func CheckOutputOnMobile oGD
+		cDir = CurrentDir()
+		RUNTIME_FOLDER = PWCT_FOLDER + "/PWCTApp/runtime"
+		chdir(RUNTIME_FOLDER)
 		if fexists("programoutput.txt") {
-			oGD.parent().oView.oProcessEditbox.setplaintext(read("programoutput.txt"))
-			oGD.parent().oView.oDockOutputWindow.raise()
+			cContent = read("programoutput.txt")
+			if cContent != cOutputFileText {
+				cOutputFileText = cContent
+				oGD.parent().oView.oProcessEditbox.setplaintext(cContent)
+				oGD.parent().oView.oDockOutputWindow.raise()
+			}
 		}
+		chdir(cDir)
 
-		/*
-			Purpose : Prepare the file
-			Parameters : Goal Designer Object
-			Output : None
-		*/
+	/*
+		Purpose : Prepare the file
+		Parameters : Goal Designer Object
+		Output : None
+	*/
 
 	func Prepare oGD
 		# We don't do this when we run the main file 
