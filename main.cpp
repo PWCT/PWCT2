@@ -1,6 +1,7 @@
 /* Copyright (c) 2013-2017 Mahmoud Fayed <msfclipper@yahoo.com> */
 
 #include <QApplication>
+#include <QWidget>
 #include <QStandardPaths>
 #include <QDir>
 #include <QFile>
@@ -77,32 +78,21 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc,argv);
 
+    QWidget waiting ;
+    waiting.setStyleSheet("background-color:purple;");
+    waiting.show();
+
     QString path ;
     path = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) ;
     QDir::setCurrent(path);
 
     // Delete the application files
-    ringapp_deleteappfiles();
+    // ringapp_deleteappfiles();
 
     // Copy Ring Object File (pwct.ringo) from Resources to Temp Folder
-    QString path2 ;
-    path2 = path+"/pwct.ringo";
-    QFile::copy(":/pwct.ringo",path2);
-
-
-    QString path3 ;
-    path3 = path+"/components.pwct";
-    QFile::copy(":/vpl/components.pwct",path3);
-
-
-    QString path4 ;
-    path4 = path+"/arabiccomponents.pwct";
-    QFile::copy(":/vpl/arabiccomponents.pwct",path4);
-
-
-    QString path5 ;
-    path5 = path+"/mobileapplibs.ring";
-    QFile::copy(":/mobileapp/mobileapplibs.ring",path5);
+    // QString path2 ;
+    // path2 = path+"/pwct.ringo";
+    // QFile::copy(":/pwct.ringo",path2);
 
     // Call Ring and run the Application
     RingState *pRingState;
@@ -110,10 +100,18 @@ int main(int argc, char *argv[])
     ring_vm_funcregister("loadlib",ring_loadlib);
     ring_vm_funcregister("ismobileqt",ring_ismobileqt);
     ring_vm_funcregister("qdebug",ring_qDebug);
-    ring_state_runobjectfile(pRingState,"pwct.ringo");
+    //ring_state_runobjectfile(pRingState,"pwct.ringo");
+
+    QFile oObjectFile(":/pwct.ringo");
+    oObjectFile.open(QFile::ReadOnly);
+    QTextStream in(&oObjectFile);
+    QString cByteCode = in.readAll();
+    pRingState->nRingInsideRing = 1 ;
+    ring_state_runobjectstring(pRingState,(char *) cByteCode.toStdString().c_str(),"pwct.ringo");
+
     ring_state_delete(pRingState);
 
-    ringapp_deleteappfiles();
+    // ringapp_deleteappfiles();
 
     return 0;
 
@@ -125,9 +123,6 @@ void ringapp_deleteappfiles(void)
     path = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) ;
     QDir::setCurrent(path);
     ringapp_delete_file(path,"pwct.ringo");
-    ringapp_delete_file(path,"components.pwct");
-    ringapp_delete_file(path,"arabiccomponents.pwct");
-    ringapp_delete_file(path,"mobileapplibs.ring");
 }
 
 void ringapp_delete_file(QString path,const char *cFile)
