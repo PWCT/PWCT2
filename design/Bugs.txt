@@ -8,8 +8,8 @@
 ===========================================================
 Status
 	* Bugs Count : 37
-	* Fixed Bugs : 36
-	* UnFixed Bugs : 1
+	* Fixed Bugs : 37
+	* UnFixed Bugs : 0
 ===========================================================
 (1)  Fixed : We created over 6 thouands steps, then using the search window
 after selecting an item in the search result list we get the next error
@@ -1173,9 +1173,16 @@ Solved using in next function by adding the loop (While True)
 		return False
 
 
-=======================================================
+==================================================================================================
 
-(37)
+(37) Fixed 
 
 The files manager - open a file then click to open it again
 The file will be opened again ! instead of displaying the opened one!
+
+Fixed in environmentController.ring - openvisualFile() method using the next code 
+
+			aActiveFilesCopy = aActiveFiles 
+			for item in aActiveFilesCopy { item[2] = lower(item[2]) }
+
+==================================================================================================

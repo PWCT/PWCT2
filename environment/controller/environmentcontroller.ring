@@ -235,7 +235,9 @@ class EnvironmentController from WindowsControllerParent
 			}
 		# If the file is already opened, Activate the window
 			if lOpenFilesInNewTabs {
-				nPos = find(aActiveFiles,lower(cFileName),2)
+				aActiveFilesCopy = aActiveFiles 
+				for item in aActiveFilesCopy { item[2] = lower(item[2]) }
+				nPos = find(aActiveFilesCopy,lower(cFileName),2)
 				if nPos {
 					aActiveFiles[nPos][1].show()
 					aActiveFiles[nPos][1].raise()
