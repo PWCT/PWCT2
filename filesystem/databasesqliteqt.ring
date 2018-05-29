@@ -43,6 +43,15 @@ class DatabaseSQLiteQt
 	func execute cSQL
 		aResult = []
 		query = new QSqlQuery() {
+			/*
+			exec("PRAGMA page_size = 4096;");
+			exec("PRAGMA cache_size = 16384;");
+			exec("PRAGMA temp_store = MEMORY;");
+			exec("PRAGMA journal_mode = OFF;");
+			exec("PRAGMA foreign_keys = OFF;");
+			exec("PRAGMA locking_mode = EXCLUSIVE;");
+			exec("PRAGMA synchronous = OFF;");
+			*/
 			setForwardOnly(true)		
 			prepare(cSQL)	
 			exec_2()

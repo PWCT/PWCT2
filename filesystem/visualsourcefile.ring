@@ -171,9 +171,11 @@ class VisualSourceFile
 	*/
 
 	func LoadTables
+		oSystemLog.addMessage("Start load tables")
 		LoadIDsTable()
 		LoadStepsTable()
 		LoadInteractionsTable()
+		oSystemLog.addMessage("End load tables")
 
 	/*
 		Purpose : Save Tables
@@ -182,9 +184,11 @@ class VisualSourceFile
 	*/
 
 	func SaveTables
+		oSystemLog.addMessage("Start save tables")
 		SaveIDsTable()
 		SaveStepsTable()
 		SaveInteractionsTable()
+		oSystemLog.addMessage("End save tables")
 
 	/*
 		Purpose : Create Steps Table
@@ -243,7 +247,10 @@ class VisualSourceFile
 	func LoadStepsTable
 		aStepsTable = []
 		cSQL = "SELECT * FROM STEPSTREE"
+		oSystemLog.addMessage("Start - Get steps tree from database")
 		aResult = oDatabase.Execute(cSQL)
+		oSystemLog.addMessage("End - Get steps tree from database")
+		oSystemLog.addMessage("Start - Query result to HashTable")
 		for record in aResult {
 			aStepsTable + [ 0+record[:stepid] , 
 					  0+record[:parentid] , 
@@ -259,6 +266,7 @@ class VisualSourceFile
 					  ]
 					] 
 		}
+		oSystemLog.addMessage("End - Query result to HashTable")
 
 	/*
 		Purpose : Load the Interactions Table
@@ -267,9 +275,12 @@ class VisualSourceFile
 	*/
 
 	func LoadInteractionsTable
+		oSystemLog.addMessage("Start - Get interactions from database")
 		aInteractionsTable = []
 		cSQL = "SELECT * FROM INTERACTIONS"
 		aResult = oDatabase.Execute(cSQL)
+		oSystemLog.addMessage("End - Get interactions from database")
+		oSystemLog.addMessage("Start - Query result to HashTable")
 		for record in aResult {
 			aInteractionsTable + [ 
 				0+record[:interactionid] , 
@@ -280,6 +291,7 @@ class VisualSourceFile
 				record[:variablesvalues]
 			] 
 		}
+		oSystemLog.addMessage("End - Query result to HashTable")
 
 	/*
 		Purpose : Load the IDs Table
@@ -288,11 +300,15 @@ class VisualSourceFile
 	*/
 
 	func LoadIDsTable
+		oSystemLog.addMessage("Start - Get IDs from database")
 		cSQL = "SELECT * FROM IDS"
 		aResult = oDatabase.Execute(cSQL)
+		oSystemLog.addMessage("End - Get interactions from database")
+		oSystemLog.addMessage("Start - Query result to HashTable")
 		record = aResult[1]
 		nStepsID 		= 0+record[:stepsid]
 		nInteractionsID 	= 0+record[:interactionsid]
+		oSystemLog.addMessage("End - Query result to HashTable")
 
 	/*
 		Purpose : Save the Steps Table
