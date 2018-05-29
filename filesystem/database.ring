@@ -7,11 +7,11 @@
 
 class Database
 
-	//if PWCTIsMobile(:Database) {
+	if PWCTIsMobile(:Database) {
 		oDatabase = new DatabaseSQLiteQt
-	//else 
-	//	oDatabase = new DatabaseSQLite
-	//}
+	else 
+		oDatabase = new DatabaseSQLite
+	}
 
 	/*
 		Purpose : Init. the object
