@@ -65,7 +65,9 @@ class GoalDesignerController from WindowsControllerParent
 	func Activate
 		# Just Load the Components 
 			if lLoadComponents {
+				oSystemLog.addMessage("Start - load components browser components")
 				LoadComponentsBrowserComponents()
+				oSystemLog.addMessage("End - load components browser components")
 			}
 		# Open Components Browser
 
@@ -751,18 +753,25 @@ class GoalDesignerController from WindowsControllerParent
 	func OpenFileAction2
 		nClock = clock()
 		# Get Data From the Visual Source File
+			oSystemLog.addMessage("Start - Get data from visual source file")
 			oVisualSourceFile.Open()
 			oVisualSourceFile.LoadTables()
 			aStepsTree    =  oVisualSourceFile.GetStepsTreeTable()
 			aInteractions =  oVisualSourceFile.GetInteractionsTable()
 			oVisualSourceFile.Close()
+			oSystemLog.addMessage("End - Get data from visual source file")
 		# Update Objects
+			oSystemLog.addMessage("Start - Update Objects")
 			oModel.oStepsTreeModel.SetData(aStepsTree)
 			oModel.oInteractionModel.SetData(aInteractions)
 			oModel.oStepsTreeModel.SetID(oVisualSourceFile.GetStepsID())
 			oModel.oInteractionModel.SetID(oVisualSourceFile.GetInteractionsID())
-		RefreshStepsTree2(aStepsTree)
-		oView.oStepsTree.oFirstStep.SetExpanded(True)
+			oSystemLog.addMessage("End - Update Objects")
+		# Refresh Steps Tree
+			oSystemLog.addMessage("Start - Refresh Steps Tree")
+			RefreshStepsTree2(aStepsTree)
+			oView.oStepsTree.oFirstStep.SetExpanded(True)
+			oSystemLog.addMessage("End - Refresh Steps Tree")
 		# Prepare the Components Browser 
 			Activate()
 		showmessageInStatusBar("Loading Time: " + ( (clock()-nClock) / Clockspersecond() ) )
@@ -822,6 +831,7 @@ class GoalDesignerController from WindowsControllerParent
 	*/
 
 	func SuperSerialAdd aStepsTree
+		oSystemLog.addMessage("Start - super serial add for tree nodes")
 		nMax = len(aStepsTree) 
 		if nMax > this.nMaxStepsCount and lUseMaxStepsCount {
 			oView.oStepsTree {
@@ -921,7 +931,7 @@ class GoalDesignerController from WindowsControllerParent
 				}
 			}
 		}
-
+		oSystemLog.addMessage("End - super serial add for tree nodes")
 
 	/*
 		Purpose : Start New Interaction
