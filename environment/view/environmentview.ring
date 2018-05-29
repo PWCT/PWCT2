@@ -401,6 +401,13 @@ class EnvironmentView from WindowsViewParent
 				}
 				addseparator()
 					oAction = new qAction(win) {
+						settext(T_ENV_MENU_LOG) # "System Log"
+						setclickevent(Method(:SystemLogAction))
+					}
+					addaction(oAction)			
+
+				addseparator()
+					oAction = new qAction(win) {
 						settext(T_ENV_MENU_ABOUT) # "About"
 						setclickevent(Method(:AboutAction))
 					}

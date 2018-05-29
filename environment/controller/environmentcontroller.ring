@@ -499,6 +499,15 @@ class EnvironmentController from WindowsControllerParent
 
 
 	/*
+		Purpose : Menubar - Help Menu - System Log Action
+		Parameters : None
+		Output : None
+	*/
+
+	func SystemLogAction
+		oSystemLog.show()
+
+	/*
 		Purpose : Send Process Data
 		Parameters : None
 		Output : None
