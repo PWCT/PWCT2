@@ -7,8 +7,8 @@
 
 ===========================================================
 Status
-	* Bugs Count : 37
-	* Fixed Bugs : 37
+	* Bugs Count : 38
+	* Fixed Bugs : 38
 	* UnFixed Bugs : 0
 ===========================================================
 (1)  Fixed : We created over 6 thouands steps, then using the search window
@@ -1186,3 +1186,34 @@ Fixed in environmentController.ring - openvisualFile() method using the next cod
 			for item in aActiveFilesCopy { item[2] = lower(item[2]) }
 
 ==================================================================================================
+
+(38) Fixed
+
+performance problem in using Qt SQLite
+
+Solved by replacing the next code 
+
+			while movenext() {		
+				aRow = list(nMax)	
+				for x = 1 to nMax {
+					aRow[x] = [
+						aRecord[x],
+						value(x-1).tostring()
+					]
+				}
+				aResult + aRow
+			}
+
+with the next code 
+
+			query = this.query
+			while movenext() {		
+				aRow = list(nMax)	
+				for x = 1 to nMax {
+					aRow[x] = [
+						aRecord[x],
+						qvariant_tostring(qsqlquery_value(query.pObject,x-1))
+					]
+				}
+				aResult + aRow
+			}

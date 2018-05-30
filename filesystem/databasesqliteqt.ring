@@ -9,6 +9,7 @@ class DatabaseSQLiteQt
 
 	oSQLite 
 
+	query  
 
 	/*
 		Purpose : Init. the object
@@ -20,6 +21,7 @@ class DatabaseSQLiteQt
 		new QSqlDatabase() {
 			this.oSQLite = addDatabase("QSQLITE")
 		}
+
 
 	/*
 		Purpose : Open the Database
@@ -33,6 +35,17 @@ class DatabaseSQLiteQt
 			Open()			
 		}
 
+		query = new QSqlQuery() {
+			//exec("PRAGMA page_size = 4096;");
+			//exec("PRAGMA cache_size = 16384;");
+			//exec("PRAGMA temp_store = MEMORY;");
+			//exec("PRAGMA journal_mode = OFF;");
+			//exec("PRAGMA foreign_keys = OFF;");
+			//exec("PRAGMA locking_mode = EXCLUSIVE;");
+			//exec("PRAGMA synchronous = OFF;");
+		}
+
+
 
 	/*
 		Purpose : Execute the query
@@ -42,36 +55,36 @@ class DatabaseSQLiteQt
 
 	func execute cSQL
 		aResult = []
-		query = new QSqlQuery() {
-			/*
-			exec("PRAGMA page_size = 4096;");
-			exec("PRAGMA cache_size = 16384;");
-			exec("PRAGMA temp_store = MEMORY;");
-			exec("PRAGMA journal_mode = OFF;");
-			exec("PRAGMA foreign_keys = OFF;");
-			exec("PRAGMA locking_mode = EXCLUSIVE;");
-			exec("PRAGMA synchronous = OFF;");
-			*/
+		query {			
 			setForwardOnly(true)		
-			prepare(cSQL)	
-			exec_2()
+			exec(cSQL)
 			oRecord = record()
 			nMax = oRecord.count()
 			aRecord = []
 			for x = 1 to nMax {
 				aRecord + oRecord.fieldName(x-1)
 			}
-			while movenext() {				
-				aRow = []			
+			/*
+				To increase the performance in this section 
+				value(x-1).tostring() changed to 
+				qvariant_tostring(qsqlquery_value(query.pObject,x-1))
+				because value() was consuming 1ms
+				Which lead to low performance when we have large files 
+					, Mahmoud Fayed 
+					, @performance - 2018/05/30 
+			*/
+			query = this.query
+			while movenext() {		
+				aRow = list(nMax)	
 				for x = 1 to nMax {
-					aRow + [
+					aRow[x] = [
 						aRecord[x],
-						value(x-1).tostring()
+						qvariant_tostring(qsqlquery_value(query.pObject,x-1))
 					]
 				}
 				aResult + aRow
 			}
-			delete()
+			finish()
 		}
 		return aResult
 
