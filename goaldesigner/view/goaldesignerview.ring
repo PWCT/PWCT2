@@ -262,6 +262,19 @@ class GoalDesignerView from WindowsViewParent
 
 	}	
 
+	func CreateStepsTree
+		oStepsTree = new StepsTreeView(oPageDesign) {
+			setExpandsOnDoubleClick(False)
+			setDoubleClickedEvent(Method(:ModifyAction))
+			setFocusPolicy(2)	# Support Keyboard keys like 'a' and 'z'
+			oTreeFilter = new qAllEvents(oStepsTree)
+			oTreeFilter.setKeyPressEvent(Method(:TreeKeyPress))
+			oTreeFilter.setFocusInEvent(Method(:ActivateWindowAction))
+			installeventfilter(oTreeFilter)
+			setstylesheet("selection-color:black; selection-background-color:cyan;")
+		}
+		oPageDesignLayout.AddWidget(oStepsTree)
+
 	func MobileButtonSize oButton
 		oButton {
 			if PWCTIsMobile(:GoalDesignerButtonsSize) {

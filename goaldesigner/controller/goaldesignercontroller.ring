@@ -834,17 +834,19 @@ class GoalDesignerController from WindowsControllerParent
 		oSystemLog.addMessage("Start - super serial add for tree nodes")
 		nMax = len(aStepsTree) 
 		if nMax > this.nMaxStepsCount and lUseMaxStepsCount {
+			oView.oStepsTree.close()
+			oView.CreateStepsTree()
 			oView.oStepsTree {
 				lUseLabels = False
-				taketoplevelitem(0)	
 				aTree = []
 				AddStartPoint2()
 				setStyleSheet(
 				'QTreeWidget { color: black; font-size: '+nFontSize+'pt  } '+
 				'QTreeWidget::!active { selection-background-color:rgba(0,65,255,255) ; selection-color:white; } ; ' 
 				 )
-
 			}
+
+
 		}
 		oView.oStepsTree.preparetempfont()
 		oTempFont = oView.oStepsTree.oTempFont
