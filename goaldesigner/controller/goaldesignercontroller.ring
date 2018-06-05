@@ -35,10 +35,10 @@ class GoalDesignerController from WindowsControllerParent
 	# Increase performance when adding many steps 
 		lUseSuperSerialAdd 	= True
 		# Max Steps that uses Colors 
-			nMaxStepsCount 		= 50000
+			nMaxStepsCount 		= 5000
 			lUseMaxStepsCount	= True
 		# Show loading progress 
-			lShowLoadingProgress	= True
+			lShowLoadingProgress	= False
 
 	oHTMLFunctions = new HTMLFunctions
 
@@ -832,21 +832,18 @@ class GoalDesignerController from WindowsControllerParent
 
 	func SuperSerialAdd aStepsTree
 		oSystemLog.addMessage("Start - super serial add for tree nodes")
+		oView.oStepsTree.close()
+		oView.CreateStepsTree(self)
+		parent().goaldesignerFont()
 		nMax = len(aStepsTree) 
 		if nMax > this.nMaxStepsCount and lUseMaxStepsCount {
-			oView.oStepsTree.close()
-			oView.CreateStepsTree()
 			oView.oStepsTree {
 				lUseLabels = False
-				aTree = []
-				AddStartPoint2()
 				setStyleSheet(
 				'QTreeWidget { color: black; font-size: '+nFontSize+'pt  } '+
 				'QTreeWidget::!active { selection-background-color:rgba(0,65,255,255) ; selection-color:white; } ; ' 
 				 )
 			}
-
-
 		}
 		oView.oStepsTree.preparetempfont()
 		oTempFont = oView.oStepsTree.oTempFont
