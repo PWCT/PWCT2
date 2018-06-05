@@ -7,8 +7,8 @@
 
 ===========================================================
 Status
-	* Bugs Count : 38
-	* Fixed Bugs : 38
+	* Bugs Count : 39
+	* Fixed Bugs : 39
 	* UnFixed Bugs : 0
 ===========================================================
 (1)  Fixed : We created over 6 thouands steps, then using the search window
@@ -1217,3 +1217,74 @@ with the next code
 				}
 				aResult + aRow
 			}
+==================================================================================================
+
+(39) Fixed
+
+PWCT - change form files
+	each time I change between two files
+		the loading time ---> increase
+		memory usage ---> increase 
+	[Performance+Memory] problem
+
+It's a Qt problem
+The problem in this line
+
+		oDesigner.oModel.FormObject() {
+		 	setBackColor(itemdata[:backcolor])		# here
+
+	Setting the backcolor of the form again lead to this problem !
+
+I solved the problem by closing the current form, creating new form from scratch when we open new forms
+
+	func DeleteAllObjectsFromModel oDesigner
+		oDesigner.oModel.DeleteAllObjects()
+		oDesigner.AddObjectsToCombo()
+		oDesigner.AddObjectProperties()
+
+	func LoadFormFromFile oDesigner
+		# Disable Updates 
+			oDesigner.oView.oSub.setupdatesenabled(False)
+			oDesigner.oView.oSub.blocksignals(True)
+		# Delete objects
+			DeleteAllObjectsFromModel(oDesigner)
+		# Create New Form 
+			CreateNewForm(oDesigner)
+		# Load the Form Data
+			eval(read(cFileName))
+		# Create Objects
+			CreateFormObjects(oDesigner,aObjectsList)
+		# Enable Updates
+			oDesigner.oView.oSub.setupdatesenabled(True)
+			oDesigner.oView.oSub.blocksignals(False)
+
+
+	func CreateNewForm oDesigner
+		# Close the form 
+			oDesigner.oModel.FormObject().close()
+
+		# Update the Model 
+			oDesigner.oModel.aObjectsList = []
+
+		# Create the form
+			oDesigner.oModel.AddObject("Window",
+				 new FormDesigner_qWidget() { hide() }
+			)
+
+		# Create the Select/Draw Label
+			oDesigner.oView.oLabelSelect = new qlabel(oDesigner.oModel.FormObject()) {
+				setGeometry(100,100,400,400)
+		 		setstylesheet("background-color:rgba(50,150,255,0.3);border: 1px solid black")
+				setautoFillBackground(false)
+				settext("")
+				setmousetracking(false)
+				hide()
+			}
+
+		# Add the form to the Sub Window
+			oDesigner.oView.oSub {
+				setwidget(oDesigner.oModel.FormObject())
+				oDesigner.oModel.ActiveObject().setSubWindow(oDesigner.oView.oSub)
+			}
+
+==================================================================================================
