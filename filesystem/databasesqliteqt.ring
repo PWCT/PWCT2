@@ -33,19 +33,11 @@ class DatabaseSQLiteQt
  		oSQLite {
 			setDatabaseName(cFileName)
 			Open()			
+			exec("PRAGMA synchronous = OFF")
+			exec("PRAGMA journal_mode = OFF")
 		}
 
-		query = new QSqlQuery() {
-			//exec("PRAGMA page_size = 4096;");
-			//exec("PRAGMA cache_size = 16384;");
-			//exec("PRAGMA temp_store = MEMORY;");
-			//exec("PRAGMA journal_mode = OFF;");
-			//exec("PRAGMA foreign_keys = OFF;");
-			//exec("PRAGMA locking_mode = EXCLUSIVE;");
-			//exec("PRAGMA synchronous = OFF;");
-		}
-
-
+		query = new QSqlQuery() 
 
 	/*
 		Purpose : Execute the query
