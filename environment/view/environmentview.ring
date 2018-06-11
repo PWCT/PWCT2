@@ -626,7 +626,7 @@ class EnvironmentView from WindowsViewParent
 			setvisibilitychangedevent(Method(:ActiveGoalDesignerChanged))
 		}
 		last_window().oDockGoalDesigner = oDock
-		win.adddockwidget(1,oDock,1)	
+		win.adddockwidget(Qt_LeftDockWidgetArea,oDock,1)	
 		return oDock
 
 	/*
@@ -641,7 +641,7 @@ class EnvironmentView from WindowsViewParent
 			setwidget(oWidget)
 			setwindowtitle(cTitle)  	 
 		}
-		win.adddockwidget(1,oDock,nPos)	
+		win.adddockwidget(Qt_LeftDockWidgetArea,oDock,nPos)	
 
 
 	/*
