@@ -47,6 +47,7 @@
 	load "windowflags/windowflagsController.ring"
 	load "windowobjects/windowobjectscontroller.ring"
 	load "objectsorder/objectsordercontroller.ring"
+	load "selobjects/selobjectscontroller.ring"
 
 # Load Controls
 	load "controls/qlabel.ring"
