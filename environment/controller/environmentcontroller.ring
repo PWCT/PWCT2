@@ -31,7 +31,8 @@ class EnvironmentController from WindowsControllerParent
 		lOpenFilesInNewTabs = True
 	}
 
-	lDisplayLoadingMessage = True
+	lUseLoadingMessage	= False
+	lDisplayLoadingMessage 	= True
 
 	/* 
 		[Dockable Window Object, 
@@ -248,7 +249,7 @@ class EnvironmentController from WindowsControllerParent
 				}
 			}
 		# Display Message
-			if lDisplayLoadingMessage {
+			if lDisplayLoadingMessage and lUseLoadingMessage {
 				open_windowandlink(:quickmsgController,self)
 				# "Loading the Visual Source File..."
 				QuickMsg().setText(T_ENV_LOADING)
@@ -291,7 +292,7 @@ class EnvironmentController from WindowsControllerParent
 			oView.oDockGoalDesigner.show()
 			oView.oDockGoalDesigner.raise()
 		}
-		if lDisplayLoadingMessage {
+		if lDisplayLoadingMessage and lUseLoadingMessage {
 			QuickMsg().CloseMsg()
 		}
 
@@ -654,7 +655,7 @@ class EnvironmentController from WindowsControllerParent
 		}
 		ShowMessageInStatusBar("Open the form file...")
 		# Display Message
-			if PWCTISMobile(:ShowLoadingMessage) and lDisplayLoadingMessage {
+			if PWCTISMobile(:ShowLoadingMessage) and lDisplayLoadingMessage and lUseLoadingMessage {
 				open_windowandlink(:quickmsgController,self)
 				# "Loading the Visual Source File..."
 				QuickMsg().setText(T_ENV_LOADING)
@@ -669,7 +670,7 @@ class EnvironmentController from WindowsControllerParent
 		}
 		oView.oDockFormDesigner.raise()
 		# Hide Message 
-			if  PWCTISMobile(:ShowLoadingMessage) and lDisplayLoadingMessage {
+			if  PWCTISMobile(:ShowLoadingMessage) and lDisplayLoadingMessage and lUseLoadingMessage {
 				QuickMsg().CloseMsg()
 			}
 		ShowMessageInStatusBar("Ready!")
