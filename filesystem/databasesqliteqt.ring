@@ -33,8 +33,6 @@ class DatabaseSQLiteQt
  		oSQLite {
 			setDatabaseName(cFileName)
 			Open()			
-			exec("PRAGMA synchronous = OFF")
-			exec("PRAGMA journal_mode = OFF")
 		}
 
 		query = new QSqlQuery() 
