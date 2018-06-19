@@ -207,6 +207,7 @@ class EnvironmentController from WindowsControllerParent
 			return
 		}
 		cFileName = oView.oFile.filepath(oItem)
+			showmessageInStatusBar("Loading File : " + cFileName)
 		lFormFile = False
 		if right(lower(cFileName),6) = ".rform" {
 			openFormDesignerFile(cFileName)
