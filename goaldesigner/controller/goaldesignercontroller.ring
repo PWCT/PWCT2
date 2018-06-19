@@ -34,6 +34,7 @@ class GoalDesignerController from WindowsControllerParent
 
 	# Increase performance when adding many steps 
 		lUseSuperSerialAdd 	= True
+		lCreateNewStepsTree	= False
 		# Max Steps that uses Colors 
 			nMaxStepsCount 		= 5000
 			lUseMaxStepsCount	= True
@@ -832,8 +833,10 @@ class GoalDesignerController from WindowsControllerParent
 
 	func SuperSerialAdd aStepsTree
 		oSystemLog.addMessage("Start - super serial add for tree nodes")
-		oView.oStepsTree.close()
-		oView.CreateStepsTree(self)
+		if lCreateNewStepsTree {
+			oView.oStepsTree.close()
+			oView.CreateStepsTree(self)
+		}
 		parent().goaldesignerFont()
 		nMax = len(aStepsTree) 
 		if nMax > this.nMaxStepsCount and lUseMaxStepsCount {
