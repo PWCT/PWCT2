@@ -76,9 +76,9 @@ class GoalDesignerController from WindowsControllerParent
 				lCallInteract = False			
 			}
 
-		# Set Focus to Steps Tree
-			oView.win.ActivateWindow()
-			oView.oStepsTree.SetFocus(0)
+	func SetFocusToStepsTree
+		oView.win.ActivateWindow()
+		oView.oStepsTree.SetFocus(0)
 
 
 	/*

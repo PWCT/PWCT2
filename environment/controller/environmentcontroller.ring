@@ -95,6 +95,9 @@ class EnvironmentController from WindowsControllerParent
 
 		oView.win.showmaximized()
 
+		# Set Focus to Steps Tree
+			parent().SetFocusToStepsTree()
+
 
 	/*
 		Purpose : Set the Parent Object for Environment and goal designer
