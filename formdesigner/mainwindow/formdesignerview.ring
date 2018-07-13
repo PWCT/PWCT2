@@ -666,6 +666,7 @@ Class FormDesignerView from WindowsViewParent
 
 	func CreateProperties
 		oProperties = new qWidget() {
+			setAttribute(Qt_WA_DeleteOnClose,True)
 			setLayoutDirection(T_LAYOUTDIRECTION)
 			oLabelObject = new qLabel(this.oProperties) {
 				setText(T_FROMDESIGNER_PROPERTIES_OBJECT) # "Object"
@@ -723,6 +724,7 @@ Class FormDesignerView from WindowsViewParent
 			setLayout(oLayout2)
 		}
 		oProperties2Widget = new qWidget() {
+			setAttribute(Qt_WA_DeleteOnClose,True)
 			setLayoutDirection(T_LAYOUTDIRECTION)
 			oBtn1 = new qPushbutton(this.oProperties2Widget) {
 				setText(T_FROMDESIGNER_PROPERTIES_MS1) # "Align - Left Sides"
@@ -896,7 +898,7 @@ Class FormDesignerView from WindowsViewParent
 			item.setFlags(False)	# Can't Edit the Item
 			oPropertiesTable.setItem(nRow,2,item)
 		else
-			oBtn = new qPushButton(NULL) {
+			oBtn = new qPushButton(oPropertiesTable) {
 				setText("::")
 				if isMobile() {
 					setfixedwidth(110)
@@ -918,7 +920,7 @@ Class FormDesignerView from WindowsViewParent
 			item.setFlags(False)	# Can't Edit the Item
 			oPropertiesTable.setItem(nRow,0,item)
 		# Combobox
-			oCombo = new qCombobox(NULL) {
+			oCombo = new qCombobox(oPropertiesTable) {
 				for cValue in aList { AddItem(cValue,0) }
 				setCurrentIndexchangedevent(this.Method(:ComboItemAction+"("+nRow+")"))
 			}
