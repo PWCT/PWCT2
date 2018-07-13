@@ -847,6 +847,11 @@ class GoalDesignerController from WindowsControllerParent
 				'QTreeWidget::!active { selection-background-color:rgba(0,65,255,255) ; selection-color:white; } ; ' 
 				 )
 			}
+		else 
+			oView.oStepsTree {
+				lUseLabels = True
+								setstylesheet("selection-color:black; selection-background-color:cyan;")
+			}
 		}
 		oView.oStepsTree.preparetempfont()
 		oTempFont = oView.oStepsTree.oTempFont
