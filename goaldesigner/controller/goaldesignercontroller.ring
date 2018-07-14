@@ -34,7 +34,7 @@ class GoalDesignerController from WindowsControllerParent
 
 	# Increase performance when adding many steps 
 		lUseSuperSerialAdd 	= True
-		lCreateNewStepsTree	= False
+		lCreateNewStepsTree	= True
 		# Max Steps that uses Colors 
 			nMaxStepsCount 		= 5000
 			lUseMaxStepsCount	= True
@@ -289,7 +289,8 @@ class GoalDesignerController from WindowsControllerParent
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
 		if nStepID = 1 {	# Delete All Steps
 			# Remove the current Steps From the Tree Control
-				oView.oStepsTree.taketoplevelitem(0)	
+				oRoot = oView.oStepsTree.taketoplevelitem(0)	
+				oRoot.delete()
 				oView.oStepsTree.aTree = []
 				oView.oStepsTree.AddStartPoint()
 			oModel = new GoalDesignerModel
@@ -665,7 +666,8 @@ class GoalDesignerController from WindowsControllerParent
 			if cFileName = NULL { return }
 			oVisualSourceFile.cFileName = cFileName
 		# Remove the current Steps From the Tree Control
-			oView.oStepsTree.taketoplevelitem(0)	
+			oRoot = oView.oStepsTree.taketoplevelitem(0)	
+			oRoot.delete()
 			oView.oStepsTree.aTree = []
 			oView.oStepsTree.AddStartPoint()
 		# Create new Model (Steps Tree and Interactions)
@@ -799,7 +801,8 @@ class GoalDesignerController from WindowsControllerParent
 		# Set the font
 			oView.oStepsTree.PrepareFont()
 		# Remove the current Steps From the Tree Control
-			oView.oStepsTree.taketoplevelitem(0)	
+			oRoot = oView.oStepsTree.taketoplevelitem(0)	
+			oRoot.delete()
 			oView.oStepsTree.aTree = []
 			oView.oStepsTree.AddStartPoint()
 		# Add Steps to the Tree
@@ -834,7 +837,8 @@ class GoalDesignerController from WindowsControllerParent
 	func SuperSerialAdd aStepsTree
 		oSystemLog.addMessage("Start - super serial add for tree nodes")
 		if lCreateNewStepsTree {
-			oView.oStepsTree.close()
+			//oView.oStepsTree.close()
+			oView.oStepsTree.delete()
 			oView.CreateStepsTree(self)
 		}
 		parent().goaldesignerFont()
@@ -1356,7 +1360,8 @@ class GoalDesignerController from WindowsControllerParent
 		# Remove the file from the Active Files List 
 			parent().RemoveFileFromActiveFilesList(oVisualSourceFile.cFileName)
 		# Remove the current Steps From the Tree Control
-			oView.oStepsTree.taketoplevelitem(0)	
+			oRoot = oView.oStepsTree.taketoplevelitem(0)	
+			oRoot.delete()
 			oView.oStepsTree.aTree = []
 			oView.oStepsTree.AddStartPoint()
 		# Create new Model (Steps Tree and Interactions)
