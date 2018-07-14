@@ -759,7 +759,8 @@ class GoalDesignerController from WindowsControllerParent
 		# Get Data From the Visual Source File
 			oSystemLog.addMessage("Start - Get data from visual source file")
 			oVisualSourceFile.Open()
-			oVisualSourceFile.LoadTables()
+			# The next call consumes 40 MB on file with 5000 steps ! very bad!
+				oVisualSourceFile.LoadTables()
 			aStepsTree    =  oVisualSourceFile.GetStepsTreeTable()
 			aInteractions =  oVisualSourceFile.GetInteractionsTable()
 			oVisualSourceFile.Close()
