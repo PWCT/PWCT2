@@ -222,7 +222,6 @@ class EnvironmentController from WindowsControllerParent
 			openVisualFile(cFileName)
 			showmessageInStatusBar("Change File Time: " + ( (clock()-nClock) / Clockspersecond() ) )
 			oView.win.setupdatesenabled(True)
-
 		}
 		if lFormFile {
 			oView.oDockFormDesigner.raise()
