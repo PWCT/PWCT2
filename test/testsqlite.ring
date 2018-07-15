@@ -2,7 +2,7 @@
 
 load "sqlitelib.ring"
 
-func main 
+func main
 	test()
 	? "After close"
 	input(2)
@@ -15,13 +15,9 @@ func test
 	input(2)
 	aResult = sqlite_execute(oSQLite,"select * from stepstree;")
 	? "after"
-	//input(2) 
-	//aResult = NULL
-	//? "after DELETE "
+	input(2) 
+	aResult = NULL
+	? "after DELETE "
 	input(2) 
 	? sqlite_close(oSQLite)
-	oSQLite = sqlite_init()
-	sqlite_open(oSQLite,"b:\pwct2\files\performance\rr.pwct")
-	aResult = sqlite_execute(oSQLite,"select * from stepstree;")
-	? sqlite_close(oSQLite)
-
+	
