@@ -65,6 +65,8 @@ class VisualSourceFile
 		oDatabase = new Database
 		aStepsTable = []
 		aInteractionsTable = []
+		nStepsID = 0 		
+		nInteractionsID = 0	
 		# We keep the cFileName, it is used for later usage 
 		
 
