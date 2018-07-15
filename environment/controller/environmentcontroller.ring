@@ -28,7 +28,7 @@ class EnvironmentController from WindowsControllerParent
 	if PWCTIsMobile(:OpenFilesInNewTabs) {
 		lOpenFilesInNewTabs = False 
 	else 
-		lOpenFilesInNewTabs = False
+		lOpenFilesInNewTabs = True
 	}
 
 	lUseLoadingMessage	= False

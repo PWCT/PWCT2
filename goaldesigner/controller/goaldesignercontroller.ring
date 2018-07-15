@@ -763,14 +763,16 @@ class GoalDesignerController from WindowsControllerParent
 				oVisualSourceFile.LoadTables()
 			aStepsTree    =  oVisualSourceFile.GetStepsTreeTable()
 			aInteractions =  oVisualSourceFile.GetInteractionsTable()
+			nStepsIDCounter = oVisualSourceFile.GetStepsID()
+			nInteractionsIDCounter = oVisualSourceFile.GetInteractionsID()
 			oVisualSourceFile.Close()
 			oSystemLog.addMessage("End - Get data from visual source file")
 		# Update Objects
 			oSystemLog.addMessage("Start - Update Objects")
 			oModel.oStepsTreeModel.SetData(aStepsTree)
 			oModel.oInteractionModel.SetData(aInteractions)
-			oModel.oStepsTreeModel.SetID(oVisualSourceFile.GetStepsID())
-			oModel.oInteractionModel.SetID(oVisualSourceFile.GetInteractionsID())
+			oModel.oStepsTreeModel.SetID(nStepsIDCounter)
+			oModel.oInteractionModel.SetID(nInteractionsIDCounter)
 			oSystemLog.addMessage("End - Update Objects")
 		# Refresh Steps Tree
 			oSystemLog.addMessage("Start - Refresh Steps Tree")

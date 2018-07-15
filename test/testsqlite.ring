@@ -13,12 +13,15 @@ func test
 	sqlite_open(oSQLite,"b:\pwct2\files\performance\large5000.pwct")
 	? "before"
 	input(2)
-	sqlite_execute(oSQLite,"PRAGMA schema.cache_size = 1;")
 	aResult = sqlite_execute(oSQLite,"select * from stepstree;")
 	? "after"
+	//input(2) 
+	//aResult = NULL
+	//? "after DELETE "
 	input(2) 
-	aResult = NULL
-	? "after DELETE "
-	input(2) 
+	? sqlite_close(oSQLite)
+	oSQLite = sqlite_init()
+	sqlite_open(oSQLite,"b:\pwct2\files\performance\rr.pwct")
+	aResult = sqlite_execute(oSQLite,"select * from stepstree;")
 	? sqlite_close(oSQLite)
 
