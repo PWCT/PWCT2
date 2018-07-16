@@ -363,7 +363,7 @@ class EnvironmentView from WindowsViewParent
 					addaction(oAction)
 					addseparator()
 					oAction = new qAction(win) {
-						settext(T_ENV_MENU_DIST_RING2EXE7) # "Ring2EXE (Prepare Qt Project) - Distribute for Mobile Devices)"
+						settext(T_ENV_MENU_DIST_RING2EXE7) # "Ring2EXE (Prepare Qt Project - Distribute for Mobile Devices)"
 						setclickEvent(Method("Distribute(7)"))
 					}
 					addaction(oAction)
