@@ -290,8 +290,7 @@ class GoalDesignerController from WindowsControllerParent
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
 		if nStepID = 1 {	# Delete All Steps
 			# Remove the current Steps From the Tree Control
-				oRoot = oView.oStepsTree.taketoplevelitem(0)	
-				oRoot.delete()
+				oView.oStepsTree.clear()
 				oView.oStepsTree.aTree = []
 				oView.oStepsTree.AddStartPoint()
 			oModel = new GoalDesignerModel
@@ -667,8 +666,7 @@ class GoalDesignerController from WindowsControllerParent
 			if cFileName = NULL { return }
 			oVisualSourceFile.cFileName = cFileName
 		# Remove the current Steps From the Tree Control
-			oRoot = oView.oStepsTree.taketoplevelitem(0)	
-			oRoot.delete()
+			oView.oStepsTree.clear()
 			oView.oStepsTree.aTree = []
 			oView.oStepsTree.AddStartPoint()
 		# Create new Model (Steps Tree and Interactions)
@@ -1365,8 +1363,7 @@ class GoalDesignerController from WindowsControllerParent
 		# Remove the file from the Active Files List 
 			parent().RemoveFileFromActiveFilesList(oVisualSourceFile.cFileName)
 		# Remove the current Steps From the Tree Control
-			oRoot = oView.oStepsTree.taketoplevelitem(0)	
-			oRoot.delete()
+			oView.oStepsTree.clear()
 			oView.oStepsTree.aTree = []
 			oView.oStepsTree.AddStartPoint()
 		# Create new Model (Steps Tree and Interactions)
