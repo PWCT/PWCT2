@@ -807,8 +807,7 @@ class GoalDesignerController from WindowsControllerParent
 		# Set the font
 			oView.oStepsTree.PrepareFont()
 		# Remove the current Steps From the Tree Control
-			oRoot = oView.oStepsTree.taketoplevelitem(0)	
-			oRoot.delete()
+			oView.oStepsTree.clear()
 			oView.oStepsTree.aTree = []
 			oView.oStepsTree.AddStartPoint()
 		# Add Steps to the Tree
