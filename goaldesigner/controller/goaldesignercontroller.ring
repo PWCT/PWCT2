@@ -769,6 +769,8 @@ class GoalDesignerController from WindowsControllerParent
 			oSystemLog.addMessage("End - Get data from visual source file")
 		# Update Objects
 			oSystemLog.addMessage("Start - Update Objects")
+			oModel.oStepsTreeModel = new TreeModel 
+			oModel.oInteractionModel = new InteractionModel
 			oModel.oStepsTreeModel.SetData(aStepsTree)
 			oModel.oInteractionModel.SetData(aInteractions)
 			oModel.oStepsTreeModel.SetID(nStepsIDCounter)
