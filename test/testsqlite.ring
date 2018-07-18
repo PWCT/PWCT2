@@ -19,5 +19,8 @@ func test
 	aResult = NULL
 	? "after DELETE "
 	input(2) 
+	callgc()
+	? "after callgc()"
+	input(2)
 	? sqlite_close(oSQLite)
 	
