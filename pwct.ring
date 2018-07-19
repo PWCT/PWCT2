@@ -142,6 +142,7 @@ func DisplaySplashScreen oApp
 		oPixMap = new qPixMap(AppFile("images/pwctlogo.png"))
 	# Create the Splash Screen Object
 		oSplash = new qSplashScreen(oPixMap)
+		oSplash.setAttribute(Qt_WA_DeleteOnClose,True)
 		oSplash.Show()
 	# Wait for one second
 		if ! PWCTIsMobile(:SplashScreen) {
@@ -151,6 +152,7 @@ func DisplaySplashScreen oApp
 		}		
 	# Close the Splash Screen
 		oSplash.Close()
+		oPixMap.delete()
 
 /*
 	The next function display a messagebox
