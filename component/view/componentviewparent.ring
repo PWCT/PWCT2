@@ -25,7 +25,7 @@ class ComponentViewParent from WindowsViewParent
 	cssText    = "border:1px solid black;border-radius:7px;"
 
 	win = new qWidget() {
-		setAttribute(Qt_WA_DeleteOnClose,True)
+		//setAttribute(Qt_WA_DeleteOnClose,True)
 		setLayoutDirection(T_LAYOUTDIRECTION)
 		setWindowTitle(T_IP_WINDOWTITLE) # "Interation Window"
 		setwindowflags(Qt_CustomizeWindowHint | Qt_WindowTitleHint | Qt_WindowStaysOnTopHint) 

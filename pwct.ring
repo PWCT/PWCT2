@@ -142,7 +142,6 @@ func DisplaySplashScreen oApp
 		oPixMap = new qPixMap(AppFile("images/pwctlogo.png"))
 	# Create the Splash Screen Object
 		oSplash = new qSplashScreen(oPixMap)
-		oSplash.setAttribute(Qt_WA_DeleteOnClose,True)
 		oSplash.Show()
 	# Wait for one second
 		if ! PWCTIsMobile(:SplashScreen) {
