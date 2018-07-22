@@ -335,8 +335,9 @@ Class ComponentControllerParent from WindowsControllerParent
 	*/
 
 	func CloseBtnAction
-		oView.oWinFilter.delete()
-		oView.oDesktop.delete()
+		# Commented to avoid runtime error (bug : 41)
+			//oView.oWinFilter.delete()
+			//oView.oDesktop.delete()
 		if nInteractionMode = C_INTERACTIONMODE_MODIFY  {
 			parent().InteractionPageToModifyClosed()
 		}

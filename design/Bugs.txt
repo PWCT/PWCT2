@@ -7,8 +7,8 @@
 
 ===========================================================
 Status
-	* Bugs Count : 40
-	* Fixed Bugs : 40
+	* Bugs Count : 41
+	* Fixed Bugs : 41
 	* UnFixed Bugs : 0
 ===========================================================
 (1)  Fixed : We created over 6 thouands steps, then using the search window
@@ -1289,7 +1289,7 @@ I solved the problem by closing the current form, creating new form from scratch
 
 ==================================================================================================
 
-(49) Fixed : memory leak when we open the visual source files in the same window 
+(40) Fixed : memory leak when we open the visual source files in the same window 
 
 Solved in environmentcontroller.ring  method : openvisualFile()
 
@@ -1299,5 +1299,27 @@ Solved in environmentcontroller.ring  method : openvisualFile()
 			}
 
 This was a logical memory leak!
+
+==================================================================================================
+
+(41) Fixed : runtime error when testing on Mobile devices (Android)
+		
+		line 9702 bad parameter type!
+		in qallevents_delete in method delete() in file
+		b:\ring\extensions\ringqt\ring_qt.ring
+		called from line 338 in method closebtnaction()
+		in file b:\pwct2\component\controller\componentcontrollerparent.ring
+		called from line 14 in qapp_exec() in method exec()
+		in file b:\ring\extensions\ringqt\ring_qt.ring
+		called from line 129 in function start_environment()
+		in file b:\pwct2\pwct.ring
+		called from line 89 in file pwct.ringo
+
+
+
+	func CloseBtnAction
+		# Commented to avoid runtime error (bug : 41)
+			//oView.oWinFilter.delete()
+			//oView.oDesktop.delete()
 
 ==================================================================================================
