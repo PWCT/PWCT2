@@ -7,8 +7,8 @@
 
 ===========================================================
 Status
-	* Bugs Count : 39
-	* Fixed Bugs : 39
+	* Bugs Count : 40
+	* Fixed Bugs : 40
 	* UnFixed Bugs : 0
 ===========================================================
 (1)  Fixed : We created over 6 thouands steps, then using the search window
@@ -1286,5 +1286,18 @@ I solved the problem by closing the current form, creating new form from scratch
 				setwidget(oDesigner.oModel.FormObject())
 				oDesigner.oModel.ActiveObject().setSubWindow(oDesigner.oView.oSub)
 			}
+
+==================================================================================================
+
+(49) Fixed : memory leak when we open the visual source files in the same window 
+
+Solved in environmentcontroller.ring  method : openvisualFile()
+
+		# If we open one file each time, clear the aActiveFiles list 
+			if not lOpenFilesInNewTabs {
+				aActiveFiles = []
+			}
+
+This was a logical memory leak!
 
 ==================================================================================================

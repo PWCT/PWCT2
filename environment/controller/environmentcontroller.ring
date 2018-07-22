@@ -251,6 +251,10 @@ class EnvironmentController from WindowsControllerParent
 					return
 				}
 			}
+		# If we open one file each time, clear the aActiveFiles list 
+			if not lOpenFilesInNewTabs {
+				aActiveFiles = []
+			}
 		# Display Message
 			if lDisplayLoadingMessage and lUseLoadingMessage {
 				open_windowandlink(:quickmsgController,self)
