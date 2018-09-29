@@ -429,31 +429,37 @@ class EnvironmentView from WindowsViewParent
 						setbtnimage(self,AppFile("images/new.png"))
 						setclickevent(Method(:NewAction))
 						settooltip(T_ENV_MENU_NEW) # "New File"
+						this.MobileButtonSize(self)
 					} ,
 					new qToolbutton(win) { 
 						setbtnimage(self,AppFile("images/open.png")) 
 						setclickevent(Method(:OpenAction))
 						settooltip(T_ENV_MENU_OPEN) # "Open File"
+						this.MobileButtonSize(self)
 					} ,
 					new qToolbutton(win) { 
 						setbtnimage(self,AppFile("images/save.png"))
 						setclickevent(Method(:SaveAction))
 						settooltip(T_ENV_MENU_SAVE) # "Save"
+						this.MobileButtonSize(self)
 					} ,
 					new qToolbutton(win) { 
 						setbtnimage(self,AppFile("images/saveas.png"))
 						setclickevent(Method(:SaveAsAction))
 						settooltip(T_ENV_MENU_SAVEAS) # "Save As"
+						this.MobileButtonSize(self)
 					} ,				
 					new qToolbutton(win) { 
 						setbtnimage(self,AppFile("images/rungui.png"))
 						setclickevent(Method(:RunAction))
 						settooltip(T_ENV_MENU_RUN) # "Run the program"
+						this.MobileButtonSize(self)
 					} ,
 					new qToolbutton(win) { 
 						setbtnimage(self,AppFile("images/close.png"))
 						setclickevent(Method(:CloseAction))
 						settooltip(T_ENV_MENU_EXIT) # "Exit"
+						this.MobileButtonSize(self)
 					} 
 				]
 		else
@@ -514,8 +520,20 @@ class EnvironmentView from WindowsViewParent
 		}
 
 
+	func MobileButtonSize oButton
+		oButton {
+			if PWCTIsMobile(:GoalDesignerButtonsSize) {
+				setMinimumwidth(100)	
+				setMinimumHeight(95)
+			}
+		}
+
 	func CreateMainFileToolbar win
 		win {
+			if PWCTIsMobile(:ToolBarInTwoRows) {
+				Qt_TopToolBarArea = 4
+				addToolBarBreak(Qt_TopToolBarArea) 
+			}
 			# Main File Toolbar
 			tool2 = addtoolbar("mainfile")  {
 				oLblMainFile = new qLabel(this.win) {
@@ -529,11 +547,13 @@ class EnvironmentView from WindowsViewParent
 					setbtnimage(self,AppFile("images/open.png"))
 					setclickEvent(Method(:SetMainFile))
 					settooltip(T_ENV_MENU_SETMAINFILE) # "Set the Main File to be the current source file (Ctrl+Shift+M)"
+					this.MobileButtonSize(self)
 				}
 				oBtnRunGUIMainFile = new qtoolbutton(this.win) {
-						setbtnimage(self,AppFile("images/rungui.png"))
-						setclickEvent(Method(:RunGUIMainFile))
-						settooltip(T_ENV_MENU_MAINFILERUNGUI) # "Main File : Run GUI Application - No Console (Ctrl+Shift+F5)"
+					setbtnimage(self,AppFile("images/rungui.png"))
+					setclickEvent(Method(:RunGUIMainFile))
+					settooltip(T_ENV_MENU_MAINFILERUNGUI) # "Main File : Run GUI Application - No Console (Ctrl+Shift+F5)"
+					this.MobileButtonSize(self)
 				} 
 				AddWidget(oLblMainFile)
 				AddWidget(this.oTxtMainFile)
