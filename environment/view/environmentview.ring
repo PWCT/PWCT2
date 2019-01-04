@@ -639,7 +639,7 @@ class EnvironmentView from WindowsViewParent
 		Open_Window(:GoalDesignerController)		
 		nGoalDesignerWindowID = Last_WindowID()
 		oDock = new qdockwidget(win,0) {
-			setMinimumwidth(800)
+			setMinimumwidth(700)
 			setLayoutDirection(C_TRANSLATION_ENGLISH)
 			setwidget(last_window().oView.win)
 			setwindowtitle(T_ENV_DOCK_GOALDESIGNER) # "Goal Designer"		 
@@ -725,7 +725,7 @@ class EnvironmentView from WindowsViewParent
 
 	func createComponentsBrowser win
 		oDockComponentsBrowser = new qDockWidget(win,0) {
-			setMinimumWidth(370)
+			setMinimumWidth(300)
 			setLayoutDirection(C_TRANSLATION_ENGLISH)
 			setwindowtitle(T_ENV_DOCK_COMPONENTSBROWSER) 
 		}
