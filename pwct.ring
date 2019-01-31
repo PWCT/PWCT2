@@ -32,28 +32,8 @@
 	load "environment/view/environmentview.ring"
 	
 # Load the Goal Designer Files
-	load "goaldesigner/controller/goaldesignercontroller.ring"
-	load "goaldesigner/view/goaldesignerview.ring"
-	load "goaldesigner/view/stepcodeview.ring"
-	load "goaldesigner/view/htmlstyles.ring"
-	load "goaldesigner/view/stepstreeview.ring"
-	load "goaldesigner/view/treecontrol.ring"
-	load "goaldesigner/model/goaldesignermodel.ring"
-	load "goaldesigner/model/treemodel.ring"
-	load "goaldesigner/controller/findstepcontroller.ring"
-	load "goaldesigner/view/findstepview.ring"
-	load "goaldesigner/controller/printstepscontroller.ring"
-	load "goaldesigner/view/printstepsview.ring"
-	load "goaldesigner/model/interactionmodel.ring"
-	load "goaldesigner/view/timemachineview.ring"
-	load "goaldesigner/controller/timemachinecontroller.ring"
-	load "goaldesigner/controller/programcontroller.ring"
-	load "goaldesigner/controller/htmlfunctions.ring"
-	
-# Load Steps Colors Files
-	load "goaldesigner/controller/stepscolorscontroller.ring"
-	load "goaldesigner/view/stepscolorsview.ring"
-	
+	load "goaldesigner/goaldesigner.ring"
+
 # Load the Components Browser Files
 	load "componentsbrowser/controller/componentsbrowsercontroller.ring"
 	load "componentsbrowser/view/componentsbrowserview.ring"
@@ -87,24 +67,6 @@
 
 # Run PWCT Environment
 	Start_Environment()
-
-/*
-	The next function run the Goal Designer Alone
-	It can be used for testing
-	This function was used before creating the PWCT Environment
-	Where everything started from creating the Goal Designer
-	Parameters : None
-	Output : None
-*/
-
-func Test_GoalDesigner
-
-	new qApp {
-		# Start the Goal Designer Window
-			Open_Window(:GoalDesignerController)
-		# Execute the Application (Give control to the GUI Loop)
-			exec()
-	}
 
 
 /*
