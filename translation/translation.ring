@@ -10,5 +10,5 @@ load "english.ring"
 # Check Arabic Translation
 	for item in sysargv item = lower(item) next 
 	if find(sysargv, :arabic) {
-		eval( ' load "arabic.ring" ' )
+		eval( ' load "translation/arabic.ring" ' )
 	}
