@@ -8,3 +8,8 @@
 	load "globals/globals.ring"
 	load "mainlib.ring"
 	load "log.ring"
+
+# We need this on macOS when we run the executable from finder!
+	if ismacosx() and justfilename(exefilename()) != "ring" {
+		chdir(exefolder())
+	}
