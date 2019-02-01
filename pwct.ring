@@ -38,10 +38,7 @@
 	load "component/view/componentviewparent.ring"
 	
 # Load the File System Files
-	load "filesystem/databasesqlite.ring"
-	load "filesystem/databasesqliteqt.ring"
-	load "filesystem/database.ring"
-	load "filesystem/visualsourcefile.ring"
+	load "filesystem/filesystem.ring"
 
 # Quick Message 
 	load "general/quickmsgController.ring"
