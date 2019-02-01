@@ -31,9 +31,6 @@
 # Load the File System Files
 	load "filesystem/filesystem.ring"
 
-# Quick Message 
-	load "general/quickmsgController.ring"
-
 # Load Components 
 	load "vpl/ringpwct/ringpwct.ring"
 
