@@ -17,7 +17,7 @@
 	Output : None
 */
 
-func Start_Environment
+func StartEnvironment
 
 	# We have PWCT_APP as a global variable/object of the QApplication class
 	PWCT_APP = new qApp {

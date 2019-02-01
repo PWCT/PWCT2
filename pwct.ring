@@ -43,5 +43,6 @@
 # Mobile functions 
 	load "mobile/mobilefunctions.ring"
 
-# Run PWCT Environment
-	Start_Environment()
+# Run PWCT Environment (See environment/environment.ring)
+	StartEnvironment()	
+
