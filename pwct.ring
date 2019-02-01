@@ -26,8 +26,7 @@
 	load "componentsbrowser/componentsbrowser.ring"
 	
 # Load the component classes
-	load "component/controller/componentcontrollerparent.ring"
-	load "component/view/componentviewparent.ring"
+	load "component/component.ring"
 	
 # Load the File System Files
 	load "filesystem/filesystem.ring"
