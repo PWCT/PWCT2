@@ -14,11 +14,7 @@
 	load "general/general.ring"
 
 # Load the Translation File
-	load "translation/english.ring"
-	for item in sysargv item = lower(item) next 
-	if find(sysargv, :arabic) {
-		eval( ' load "translation/arabic.ring" ' )
-	}
+	load "translation/translation.ring"
 
 # We need this on macOS when we run the executable from finder!
 	if ismacosx() and justfilename(exefilename()) != "ring" {
