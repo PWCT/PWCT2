@@ -11,9 +11,7 @@
 	load "tracelib.ring"
 
 # Load General Libraries
-	load "general/globals/globals.ring"
-	load "general/mainlib.ring"
-	load "general/log.ring"
+	load "general/general.ring"
 
 # Load the Translation File
 	load "translation/english.ring"
