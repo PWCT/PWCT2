@@ -28,10 +28,7 @@
 	load "goaldesigner/goaldesigner.ring"
 
 # Load the Components Browser Files
-	load "componentsbrowser/controller/componentsbrowsercontroller.ring"
-	load "componentsbrowser/view/componentsbrowserview.ring"
-	load "componentsbrowser/view/componentstreeview.ring"
-	load "componentsbrowser/componentslist.ring"
+	load "componentsbrowser/componentsbrowser.ring"
 	
 # Load the component classes
 	load "component/controller/componentcontrollerparent.ring"
