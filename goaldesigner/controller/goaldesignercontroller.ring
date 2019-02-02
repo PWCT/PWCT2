@@ -1563,14 +1563,25 @@ class GoalDesignerController from WindowsControllerParent
 			return False 
 		} 
 		return True
+	/*
+		Get the Active visual File Name (*.pwct) from the visual source file object 
+	*/
 
 	func GetActiveFile 
 		return oVisualSourceFile.cFileName
+
+	/*
+		Get the Active source file name (*.ring) 
+	*/
 
 	func GetActiveSourceFile 
 		cActiveFileName = GetActiveFile()
 		cActiveFileName = substr(cActiveFileName,".pwct",".ring")
 		return cActiveFileName
+
+	/*
+		Switch goal designer window to full screen or switch full screen to window 
+	*/
 
 	func FullScreen
 		if lFullScreen = False {
