@@ -106,7 +106,7 @@ class TimeMachineController
 		Output : True/False
 	*/
 	/*
-		The next method uses a while loo (While True) 
+		The next method uses a while loop (While True) 
 		And check what after unvisible steps 
 		To avoid the next problem 
 		Create four steps ( one - two - three - four )

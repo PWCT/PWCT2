@@ -1598,11 +1598,16 @@ class GoalDesignerController from WindowsControllerParent
 		Time Machine - Play As Movie 
 	*/
 	func PlayMovie 
-		msginfo(:wow,:wow)
+		oView.sliderTimeMachine.setValue(0)
 		oView.timerTM.Start()
 
 	/*
 		The Play Movie Timer 
 	*/
 	func PlayMovieTimer
-		? :nice
+		nValue = oView.sliderTimeMachine.Value()
+		if nValue != oView.sliderTimeMachine.getInteractionPoints() {
+			oView.sliderTimeMachine.setValue(nValue+1)	
+		else	
+			oView.timerTM.Stop()
+		} 	

@@ -43,6 +43,13 @@ class TimeMachineView from QSlider
 		nActiveInteraction = nInteractionPoints  
 
 	/*
+		Get the number of Interaction Points 
+	*/
+
+	func getInteractionPoints 
+		return nInteractionPoints
+
+	/*
 		The next method get the Active Interaction Number
 		Parameters : None
 		Output : The active interation number
