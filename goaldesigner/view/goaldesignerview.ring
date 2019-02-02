@@ -146,6 +146,11 @@ class GoalDesignerView from WindowsViewParent
 			self.mobileButtonSize(btnPlay)
 			setClickEvent(Method(:PlayMovie))
 		}
+		timerTM = new qTimer(win) {
+			setinterval(2000)
+			settimeoutevent(Method(:PlayMovieTimer))
+			stop()
+		}
 		setBtnImage(btnPlay,AppFile("images/playmovie.png"))	
 		layoutTimeMachine = new qHBoxLayout()
 		{	

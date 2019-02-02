@@ -1599,3 +1599,10 @@ class GoalDesignerController from WindowsControllerParent
 	*/
 	func PlayMovie 
 		msginfo(:wow,:wow)
+		oView.timerTM.Start()
+
+	/*
+		The Play Movie Timer 
+	*/
+	func PlayMovieTimer
+		? :nice
