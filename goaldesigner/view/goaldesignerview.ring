@@ -142,9 +142,15 @@ class GoalDesignerView from WindowsViewParent
 		}		
 		setBtnImage(btnModify,AppFile("images/modify.png"))	
 		labelTM = new qLabel(win) { setText(T_GD_THETIMEMACHINE) } # "The Time Machine"
+		btnPlay = new qPushButton(win) { # "Play As Movie"
+			self.mobileButtonSize(btnPlay)
+			setClickEvent(Method(:PlayMovie))
+		}
+		setBtnImage(btnPlay,AppFile("images/playmovie.png"))	
 		layoutTimeMachine = new qHBoxLayout()
 		{	
 			AddWidget(LabelTM)
+			AddWidget(btnPlay)
 			AddWidget(sliderTimeMachine)
 			if PWCTIsMobile(:GoalDesignerFullScreen) {
 				btnMax = new qPushButton(win) {

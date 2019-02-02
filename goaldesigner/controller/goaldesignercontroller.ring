@@ -1592,3 +1592,10 @@ class GoalDesignerController from WindowsControllerParent
 			lFullScreen = False 
 			oDockGoalDesigner.setWidget(oView.win)
 		}
+
+
+	/*
+		Time Machine - Play As Movie 
+	*/
+	func PlayMovie 
+		msginfo(:wow,:wow)
