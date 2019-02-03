@@ -204,3 +204,13 @@ class ComponentsBrowserController from WindowsControllerParent
 			nFontSize = nSize
 			TreeStyle()
 		}
+
+	/*
+		Function to get component by file name, used by the Time Mahcine 
+	*/
+	func GetComponentByFileName cComponent 
+		for item in oModel.getData() {
+			if item[C_TREEMODEL_CONTENT][:code] = cComponent  {
+				return item 
+			}
+		}

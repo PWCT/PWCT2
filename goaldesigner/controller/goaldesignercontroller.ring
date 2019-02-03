@@ -1607,6 +1607,24 @@ class GoalDesignerController from WindowsControllerParent
 	func PlayMovieTimer
 		nValue = oView.sliderTimeMachine.Value()
 		if nValue != oView.sliderTimeMachine.getInteractionPoints() {
+			# Get the Interaction Information 
+				nTMValue = oView.sliderTimeMachine.GetActiveInteraction()
+				nIID = oModel.oInteractionModel.GetInteractionID(nTMValue + 1)
+				lVisible = False
+				aList = oModel.GetStepsInTimeRange(nIID,nIID+1,lVisible)	
+				if len(aList) >= 1 {
+					item = aList[1]
+					nStepID = item[C_TREEMODEL_NODEID]
+					nStepIID = item[C_TREEMODEL_CONTENT][:interactionid]
+					nStepType = item[C_TREEMODEL_CONTENT][:steptype]
+					if nStepType = C_STEPTYPE_ROOT {
+						cComponentFile 	=  oModel.oInteractionModel.GetInteractionComponent(nStepIID)
+						aComponent 	= ComponentsBrowserWindow().GetComponentByFileName(cComponentFile)
+						cComponentName	= aComponent[C_TREEMODEL_CONTENT][:name]
+						ComponentsBrowserWindow().oView.oTextSearch.setText(cComponentName)
+						ComponentsBrowserWindow().SearchAction()
+					}
+				}
 			oView.sliderTimeMachine.setValue(nValue+1)	
 		else	
 			oView.timerTM.Stop()

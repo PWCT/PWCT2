@@ -36,19 +36,19 @@ class TimeMachineController
 	func ChangeTimeMachinePoint oView,oModel
 		nOldTMValue = oView.sliderTimeMachine.GetActiveInteraction()
 		nTMValue = oView.sliderTimeMachine.value()
-		// puts( " old value = " + nOldTMValue + " current value = " + nTMValue)
-		if nOldTMValue = nTMValue {
-			// puts("No Action")
-			return
-		}
-		if nTMValue > nOldTMValue { 
-			Direction = C_TMDIRECTION_FORWARD	# Add Steps
-			lVisible = True
-		else
-			Direction = C_TMDIRECTION_BACKWARD	# Remove Steps
-			lVisible = False
-		}
-		oView.sliderTimeMachine.SetActiveInteraction(nTMValue)
+		# Check that we have change in the Time 
+			if nOldTMValue = nTMValue {
+				return
+			}
+		# Determine the change direction (Forward|Backward)
+			if nTMValue > nOldTMValue { 
+				Direction = C_TMDIRECTION_FORWARD	# Add Steps
+				lVisible = True
+			else
+				Direction = C_TMDIRECTION_BACKWARD	# Remove Steps
+				lVisible = False
+			}
+			oView.sliderTimeMachine.SetActiveInteraction(nTMValue)
 		# We uses + 1 to skip the start point
 			nTMValue = oModel.oInteractionModel.GetInteractionID(nTMValue + 1)
 			nOldTMValue = oModel.oInteractionModel.GetInteractionID(nOldTMValue + 1)
