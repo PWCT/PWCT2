@@ -1605,6 +1605,7 @@ class GoalDesignerController from WindowsControllerParent
 		The Play Movie Timer 
 	*/
 	func PlayMovieTimer
+		oView.timerTM.Stop()
 		nValue = oView.sliderTimeMachine.Value()
 		if nValue != oView.sliderTimeMachine.getInteractionPoints() {
 			# Get the Interaction Information 
@@ -1618,16 +1619,35 @@ class GoalDesignerController from WindowsControllerParent
 					nStepIID = item[C_TREEMODEL_CONTENT][:interactionid]
 					nStepType = item[C_TREEMODEL_CONTENT][:steptype]
 					if nStepType = C_STEPTYPE_ROOT {
-						cComponentFile 	=  oModel.oInteractionModel.GetInteractionComponent(nStepIID)
-						aComponent 	= ComponentsBrowserWindow().GetComponentByFileName(cComponentFile)
-						cComponentName	= aComponent[C_TREEMODEL_CONTENT][:name]
-						ComponentsBrowserWindow().oView.oTextSearch.setText(cComponentName)
-						ComponentsBrowserWindow().SearchAction()
-						PWCT_APP.processevents()
-						sleep(1)
+						# Select the Component in the Components Browser
+							cComponentFile 	=  oModel.oInteractionModel.GetInteractionComponent(nStepIID)
+							aComponent 	= ComponentsBrowserWindow().GetComponentByFileName(cComponentFile)
+							cComponentName	= aComponent[C_TREEMODEL_CONTENT][:name]
+							ComponentsBrowserWindow().oView.oTextSearch.setText(cComponentName)
+							ComponentsBrowserWindow().SearchAction()
+							PWCT_APP.processevents()
+							sleep(1)
+						# Display the Interaction Page 
+							# Check Step Type
+								openComponent(nStepID)
+							# Display the Window 
+								if lInteractionPagesInGoalDesigner {
+									oView.layoutVPages.InsertWidget(0,Last_Window().oView.win,0,0)
+									Last_Window().Start()	# Show The Window
+									oView.widgetVPages.Show()	# Show the Splitter Widget
+								else
+									Last_Window().Start()	# Show The Window
+								}
+								nInteractionPagesToModifyCount++
+								Last_Window().AfterOpen()
+							PWCT_APP.processevents()
+							sleep(3)
+							Last_Window().CloseBtnAction()
+							PWCT_APP.processevents()
 					}
 				}
-			oView.sliderTimeMachine.setValue(nValue+1)	
+			oView.sliderTimeMachine.setValue(nValue+1)
+			oView.timerTM.Start()	
 		else	
 			oView.timerTM.Stop()
 		} 	
