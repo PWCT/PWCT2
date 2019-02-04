@@ -1623,6 +1623,8 @@ class GoalDesignerController from WindowsControllerParent
 						cComponentName	= aComponent[C_TREEMODEL_CONTENT][:name]
 						ComponentsBrowserWindow().oView.oTextSearch.setText(cComponentName)
 						ComponentsBrowserWindow().SearchAction()
+						PWCT_APP.processevents()
+						sleep(1)
 					}
 				}
 			oView.sliderTimeMachine.setValue(nValue+1)	
