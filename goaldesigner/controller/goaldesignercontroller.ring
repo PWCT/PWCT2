@@ -1631,11 +1631,17 @@ class GoalDesignerController from WindowsControllerParent
 							cComponentName	= aComponent[C_TREEMODEL_CONTENT][:name]
 							if parent().lDockForComponentsBrowserIsVisible {
 								Parent().oView.oDockComponentsBrowser.raise()
+							else 
+								ComponentsBrowserWindow().Start()
+								ComponentsBrowserWindow().oView.win.raise()
 							}
 							ComponentsBrowserWindow().oView.oTextSearch.setText(cComponentName)
 							ComponentsBrowserWindow().SearchAction()
 							PWCT_APP.processevents()
 							sleep(1)
+							if ! parent().lDockForComponentsBrowserIsVisible {
+								ComponentsBrowserWindow().CloseAction()
+							}
 						# Display the Interaction Page 
 							# Check Step Type
 								openComponent(nStepID)
@@ -1655,8 +1661,11 @@ class GoalDesignerController from WindowsControllerParent
 							sleep(3)
 							Last_Window().CloseBtnAction()
 							ComponentsBrowserWindow().oView.oTextSearch.setText("")
-							PWCT_APP.processevents()
+							oView.win.setfocus(0)
+							oView.win.show()
 							Parent().oView.oDockGoalDesigner.raise()
+							oView.win.raise()
+							PWCT_APP.processevents()
 					else 
 						# When the step type is a Comment
 							oView.sliderTimeMachine.setValue(nValue+1)
