@@ -1629,7 +1629,9 @@ class GoalDesignerController from WindowsControllerParent
 							cComponentFile 	=  oModel.oInteractionModel.GetInteractionComponent(nStepIID)
 							aComponent 	= ComponentsBrowserWindow().GetComponentByFileName(cComponentFile)
 							cComponentName	= aComponent[C_TREEMODEL_CONTENT][:name]
-							Parent().oView.oDockComponentsBrowser.raise()
+							if parent().lDockForComponentsBrowserIsVisible {
+								Parent().oView.oDockComponentsBrowser.raise()
+							}
 							ComponentsBrowserWindow().oView.oTextSearch.setText(cComponentName)
 							ComponentsBrowserWindow().SearchAction()
 							PWCT_APP.processevents()
