@@ -1599,7 +1599,7 @@ class GoalDesignerController from WindowsControllerParent
 	*/
 	func PlayMovie 
 		oView.sliderTimeMachine.setValue(0)
-		oView.timerTM.Start()
+		PlayMovieTimer()
 
 	/*
 		The Play Movie Timer 
@@ -1655,6 +1655,13 @@ class GoalDesignerController from WindowsControllerParent
 							ComponentsBrowserWindow().oView.oTextSearch.setText("")
 							PWCT_APP.processevents()
 							Parent().oView.oDockGoalDesigner.raise()
+					else 
+						# When the step type is a Comment
+							oView.sliderTimeMachine.setValue(nValue+1)
+							PWCT_APP.processevents()
+							sleep(0.5)
+							PlayMovieTimer()
+							return 
 					}
 				}
 			oView.sliderTimeMachine.setValue(nValue+1)
