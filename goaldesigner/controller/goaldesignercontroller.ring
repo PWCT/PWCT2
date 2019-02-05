@@ -1616,9 +1616,15 @@ class GoalDesignerController from WindowsControllerParent
 				if len(aList) >= 1 {
 					item = aList[1]
 					nStepID = item[C_TREEMODEL_NODEID]
+					nParentID = item[C_TREEMODEL_PARENTID]
 					nStepIID = item[C_TREEMODEL_CONTENT][:interactionid]
 					nStepType = item[C_TREEMODEL_CONTENT][:steptype]
 					if nStepType = C_STEPTYPE_ROOT {
+						# Select the parent step
+							oItem = oView.oStepsTree.GetObjByID(nParentID)
+							oView.oStepsTree.SetCurrentItem(oItem,0)
+							PWCT_APP.processevents()
+							sleep(0.5)
 						# Select the Component in the Components Browser
 							cComponentFile 	=  oModel.oInteractionModel.GetInteractionComponent(nStepIID)
 							aComponent 	= ComponentsBrowserWindow().GetComponentByFileName(cComponentFile)
@@ -1646,6 +1652,7 @@ class GoalDesignerController from WindowsControllerParent
 							PWCT_APP.processevents()
 							sleep(3)
 							Last_Window().CloseBtnAction()
+							ComponentsBrowserWindow().oView.oTextSearch.setText("")
 							PWCT_APP.processevents()
 							Parent().oView.oDockGoalDesigner.raise()
 					}
