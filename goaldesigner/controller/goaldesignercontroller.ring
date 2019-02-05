@@ -1623,6 +1623,7 @@ class GoalDesignerController from WindowsControllerParent
 							cComponentFile 	=  oModel.oInteractionModel.GetInteractionComponent(nStepIID)
 							aComponent 	= ComponentsBrowserWindow().GetComponentByFileName(cComponentFile)
 							cComponentName	= aComponent[C_TREEMODEL_CONTENT][:name]
+							Parent().oView.oDockComponentsBrowser.raise()
 							ComponentsBrowserWindow().oView.oTextSearch.setText(cComponentName)
 							ComponentsBrowserWindow().SearchAction()
 							PWCT_APP.processevents()
@@ -1640,10 +1641,13 @@ class GoalDesignerController from WindowsControllerParent
 								}
 								nInteractionPagesToModifyCount++
 								Last_Window().AfterOpen()
+							Last_Window().oView.win.setfocus(0)
+							Last_Window().oView.win.raise()
 							PWCT_APP.processevents()
 							sleep(3)
 							Last_Window().CloseBtnAction()
 							PWCT_APP.processevents()
+							Parent().oView.oDockGoalDesigner.raise()
 					}
 				}
 			oView.sliderTimeMachine.setValue(nValue+1)
