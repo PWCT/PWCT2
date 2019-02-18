@@ -7,12 +7,27 @@
 
 class PlayAsMovieController
 
+	lPlayingStarted = False 
+	lPlayingStatus  = :Stop
+
 	/*
 		Time Machine - Play As Movie 
 	*/
 	func PlayMovie oGoalDesignerController 
 		oGoalDesignerController  {
-			oView.sliderTimeMachine.setValue(0)
+			if this.lPlayingStarted = False {
+				this.lPlayingStarted = True
+				this.lPlayingStatus  = :Play
+				oView.sliderTimeMachine.setValue(0)
+			else 
+				if this.lPlayingStatus  = :Play {
+					this.lPlayingStatus  = :Stop
+					oView.timerTM.Stop()
+					return 
+				else  
+					this.lPlayingStatus  = :Play
+				}
+			}
 			PlayMovieTimer()
 		}
 
@@ -95,5 +110,7 @@ class PlayAsMovieController
 				oView.timerTM.Start()	
 			else	
 				oView.timerTM.Stop()
+				this.lPlayingStarted = False
+				this.lPlayingStatus  = :Stop
 			} 
 		}	
