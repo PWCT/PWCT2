@@ -293,6 +293,12 @@ class GoalDesignerView from WindowsViewParent
 		oStepsTree.expanditem(oItem)
 
 
+	func PlayMovieIcon 
+		setBtnImage(btnPlay,AppFile("images/playmovie.png"))	
+
+	func StopMovieIcon
+		setBtnImage(btnPlay,AppFile("images/stopmovie.png"))	
+
 # In the steps tree 
 # The lines doesn't appear !
 /*

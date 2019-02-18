@@ -19,13 +19,16 @@ class PlayAsMovieController
 				this.lPlayingStarted = True
 				this.lPlayingStatus  = :Play
 				oView.sliderTimeMachine.setValue(0)
+				oView.StopMovieIcon()
 			else 
 				if this.lPlayingStatus  = :Play {
 					this.lPlayingStatus  = :Stop
 					oView.timerTM.Stop()
+					oView.PlayMovieIcon()
 					return 
 				else  
 					this.lPlayingStatus  = :Play
+					oView.StopMovieIcon()
 				}
 			}
 			PlayMovieTimer()
@@ -112,5 +115,6 @@ class PlayAsMovieController
 				oView.timerTM.Stop()
 				this.lPlayingStarted = False
 				this.lPlayingStatus  = :Stop
+				oView.PlayMovieIcon()
 			} 
 		}	
