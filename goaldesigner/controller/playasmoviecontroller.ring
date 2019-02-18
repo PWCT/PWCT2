@@ -18,7 +18,9 @@ class PlayAsMovieController
 			if this.lPlayingStarted = False {
 				this.lPlayingStarted = True
 				this.lPlayingStatus  = :Play
-				oView.sliderTimeMachine.setValue(0)
+				if oView.sliderTimeMachine.Value() = oView.sliderTimeMachine.getInteractionPoints()  {
+					oView.sliderTimeMachine.setValue(0)
+				}
 				oView.StopMovieIcon()
 			else 
 				if this.lPlayingStatus  = :Play {
