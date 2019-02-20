@@ -182,9 +182,7 @@ class VisualSourceFile
 	*/
 
 	func LoadTables
-		if lUseSystemLog {
-			oSystemLog.addMessage("Start load tables")
-		}
+		Log("Start load tables")
 		LoadIDsTable()
 		LoadStepsTable()
 		LoadInteractionsTable()
@@ -199,15 +197,11 @@ class VisualSourceFile
 	*/
 
 	func SaveTables
-		if lUseSystemLog {
-			oSystemLog.addMessage("Start save tables")
-		}
+		Log("Start save tables")
 		SaveIDsTable()
 		SaveStepsTable()
 		SaveInteractionsTable()
-		if lUseSystemLog {
-			oSystemLog.addMessage("End save tables")
-		}
+		Log("End save tables")
 
 	/*
 		Purpose : Create Steps Table
@@ -266,14 +260,10 @@ class VisualSourceFile
 	func LoadStepsTable
 		aStepsTable = []
 		cSQL = "SELECT * FROM STEPSTREE"
-		if lUseSystemLog {
-			oSystemLog.addMessage("Start - Get steps tree from database")
-		}
+		Log("Start - Get steps tree from database")
 		aResult = oDatabase.Execute(cSQL)
-		if lUseSystemLog {
-			oSystemLog.addMessage("End - Get steps tree from database")
-			oSystemLog.addMessage("Start - Query result to HashTable")
-		}
+		Log("End - Get steps tree from database")
+		Log("Start - Query result to HashTable")
 		for record in aResult {
 			aStepsTable + [ 0+record[:stepid] , 
 					  0+record[:parentid] , 
@@ -289,9 +279,7 @@ class VisualSourceFile
 					  ]
 					] 
 		}
-		if lUseSystemLog {
-			oSystemLog.addMessage("End - Query result to HashTable")
-		}
+		Log("End - Query result to HashTable")
 
 	/*
 		Purpose : Load the Interactions Table
@@ -300,16 +288,12 @@ class VisualSourceFile
 	*/
 
 	func LoadInteractionsTable
-		if lUseSystemLog {
-			oSystemLog.addMessage("Start - Get interactions from database")
-		}
+		Log("Start - Get interactions from database")
 		aInteractionsTable = []
 		cSQL = "SELECT * FROM INTERACTIONS"
 		aResult = oDatabase.Execute(cSQL)
-		if lUseSystemLog {
-			oSystemLog.addMessage("End - Get interactions from database")
-			oSystemLog.addMessage("Start - Query result to HashTable")
-		}
+		Log("End - Get interactions from database")
+		Log("Start - Query result to HashTable")
 		for record in aResult {
 			aInteractionsTable + [ 
 				0+record[:interactionid] , 
@@ -320,9 +304,7 @@ class VisualSourceFile
 				record[:variablesvalues]
 			] 
 		}
-		if lUseSystemLog {
-			oSystemLog.addMessage("End - Query result to HashTable")
-		}
+		Log("End - Query result to HashTable")
 
 	/*
 		Purpose : Load the IDs Table
@@ -331,21 +313,15 @@ class VisualSourceFile
 	*/
 
 	func LoadIDsTable
-		if lUseSystemLog {
-			oSystemLog.addMessage("Start - Get IDs from database")
-		}
+		Log("Start - Get IDs from database")
 		cSQL = "SELECT * FROM IDS"
 		aResult = oDatabase.Execute(cSQL)
-		if lUseSystemLog {
-			oSystemLog.addMessage("End - Get interactions from database")
-			oSystemLog.addMessage("Start - Query result to HashTable")
-		}
+		Log("End - Get interactions from database")
+		Log("Start - Query result to HashTable")
 		record = aResult[1]
 		nStepsID 		= 0+record[:stepsid]
 		nInteractionsID 	= 0+record[:interactionsid]
-		if lUseSystemLog {
-			oSystemLog.addMessage("End - Query result to HashTable")
-		}
+		Log("End - Query result to HashTable")
 
 	/*
 		Purpose : Save the Steps Table
@@ -407,3 +383,14 @@ class VisualSourceFile
 		cSQL = substr(cSQL,"#{V2}", ""+nInteractionsID)						
 		oDatabase.Execute(cSQL)	
 
+
+	/*
+		Purpose : Special function for the log operation
+		Parameters : Message 
+		Output : None 
+	*/
+
+	func Log cMessage 
+		if lUseSystemLog {
+			oSystemLog.addMessage(cMessage)
+		}
