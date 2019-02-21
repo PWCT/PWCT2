@@ -1,17 +1,15 @@
-# Form/Window Controller - Source Code File
-
 load "test2View.ring"
-
 import System.GUI
-
-if IsMainSourceFile() {
-	new App {
-		StyleFusion()
-		open_window(:test2Controller)
-		exec()
-	}
+if isMainSourceFile() { 
+	new App
+		{
+			StyleFusion()
+			open_window(:test2Controller)
+			exec()
+		}
 }
-
-class test2Controller from windowsControllerParent
-
+class test2Controller from WindowsControllerParent
 	oView = new test2View
+	func change
+		oView.win.setwindowtitle("New Title!" + " Date : " + Date() + " Time : " + Time())
+private

@@ -1,16 +1,28 @@
 # Start Form Designer File
 aObjectsList = [
 	[ :name = "Window" , :id = 1 , :classname = "formdesigner_qwidget" , :data = [
-		 :x = 100 , : y = 100  , 
-		 :width =  400 , :height = 400 , 
+		 :x = 26 , : y = 62  , 
+		 :width =  654 , :height = 493 , 
 		 :title =  "Form1" , 
-		 :backcolor =  "" , 
+		 :backcolor =  "#0e3c55" , 
 		 :windowflags =  "" , 
 		 :mainlayout =  "" ,
 		 :WindowIcon =  "" , 
 		 :Menubar =  ""  ,
 		 :IndexType =  0  
 
+		]
+	],
+	[ :name = "Button1" , :id = 2 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 201 , : y = 202  , 
+		 :width =  241 , :height = 54 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "#ffff58" , 
+		 :font =  "MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0" , 
+		 :parent =  "win"  ,
+		 :text =  "Change Window Title",
+		 :BtnImage =  "",
+		 :setClickEvent =  "change"
 		]
 	]
 ]
