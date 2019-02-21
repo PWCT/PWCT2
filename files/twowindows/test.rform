@@ -3,9 +3,9 @@ aObjectsList = [
 	[ :name = "Window" , :id = 1 , :classname = "formdesigner_qwidget" , :data = [
 		 :x = 20 , : y = 20  , 
 		 :width =  470 , :height = 706 , 
-		 :title =  "Hello, World" , 
+		 :title =  "Two Windows" , 
 		 :backcolor =  "#f4ff75" , 
-		 :windowflags =  "" , 
+		 :windowflags =  "Qt_Window | Qt_WindowTitleHint | Qt_WindowCloseButtonHint | Qt_CustomizeWindowHint" , 
 		 :mainlayout =  "" ,
 		 :WindowIcon =  "" , 
 		 :Menubar =  ""  ,
@@ -41,7 +41,7 @@ aObjectsList = [
 		 :backcolor =  "" , 
 		 :font =  "Arial" , 
 		 :parent =  "win"  ,
-		 :text =  "Test",
+		 :text =  "Add String",
 		 :BtnImage =  "",
 		 :setClickEvent =  "test"
 		]
@@ -59,8 +59,8 @@ aObjectsList = [
 		]
 	],
 	[ :name = "LineEdit1" , :id = 5 , :classname = "formdesigner_qlineedit" , :data = [
-		 :x = 39 , : y = 515  , 
-		 :width =  274 , :height = 42 , 
+		 :x = 97 , : y = 516  , 
+		 :width =  213 , :height = 42 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "white" , 
 		 :font =  "Arial" , 
@@ -81,14 +81,14 @@ aObjectsList = [
 		 :backcolor =  "" , 
 		 :font =  "Arial" , 
 		 :parent =  "win"  ,
-		 :text =  "Add",
+		 :text =  "Add Text",
 		 :BtnImage =  "",
 		 :setClickEvent =  "myAdd"
 		]
 	],
 	[ :name = "Button4" , :id = 7 , :classname = "formdesigner_qpushbutton" , :data = [
 		 :x = 39 , : y = 590  , 
-		 :width =  336 , :height = 40 , 
+		 :width =  396 , :height = 40 , 
 		 :textcolor =  "black" , 
 		 :backcolor =  "" , 
 		 :font =  "Arial" , 
@@ -96,6 +96,17 @@ aObjectsList = [
 		 :text =  "Show Second Window",
 		 :BtnImage =  "",
 		 :setClickEvent =  "Second"
+		]
+	],
+	[ :name = "Label1" , :id = 8 , :classname = "formdesigner_qlabel" , :data = [
+		 :x = 50 , : y = 512  , 
+		 :width =  38 , :height = 43 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Text",
+		 :textalign =  0
 		]
 	]
 ]
