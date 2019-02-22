@@ -204,7 +204,7 @@ class EnvironmentView from WindowsViewParent
 				addaction(oAction)
 				addseparator()	
 				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Alt+shift+f"))
+					setShortcut(new QKeySequence("Alt+shift+d"))
 					setbtnimage(self,AppFile("images/source.png"))
 					setclickevent(Method(:FormDesignerWindowAction))
 					settext(T_ENV_MENU_FORMDESIGNERWINDOW) # "Form Designer"
