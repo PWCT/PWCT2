@@ -1,4 +1,4 @@
-/* Copyright (c) 2013-2017 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2018 Mahmoud Fayed <msfclipper@yahoo.com> */
 
 #include <QApplication>
 #include <QWidget>
@@ -53,9 +53,6 @@ extern "C" {
 #include "ring_vmgc.c"
 #include "ring_objfile.c"
 
-void ringapp_delete_file(QString path,const char *cFile) ;
-void ringapp_deleteappfiles(void) ;
-
 RING_FUNC(ring_loadlib)
 {
     // Just a prototype to pass functions calls to loadlib() from Ring Object File
@@ -70,7 +67,6 @@ RING_FUNC(ring_ismobileqt)
 
 RING_FUNC(ring_qDebug)
 {
-    // A function used by RingQt (Appfile() function) to access files using resources
     qDebug( RING_API_GETSTRING(1) );
 }
 
@@ -81,26 +77,17 @@ int main(int argc, char *argv[])
     QWidget waiting ;
     waiting.setStyleSheet("background-color:purple;");
     waiting.show();
+    a.processEvents();
 
     QString path ;
     path = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) ;
     QDir::setCurrent(path);
 
-    // Delete the application files
-    // ringapp_deleteappfiles();
-
-    // Copy Ring Object File (pwct.ringo) from Resources to Temp Folder
-    // QString path2 ;
-    // path2 = path+"/pwct.ringo";
-    // QFile::copy(":/pwct.ringo",path2);
-
-    // Call Ring and run the Application
     RingState *pRingState;
     pRingState = ring_state_new();
     ring_vm_funcregister("loadlib",ring_loadlib);
     ring_vm_funcregister("ismobileqt",ring_ismobileqt);
     ring_vm_funcregister("qdebug",ring_qDebug);
-    //ring_state_runobjectfile(pRingState,"pwct.ringo");
 
     QFile oObjectFile(":/pwct.ringo");
     oObjectFile.open(QFile::ReadOnly);
@@ -111,28 +98,6 @@ int main(int argc, char *argv[])
 
     ring_state_delete(pRingState);
 
-    // ringapp_deleteappfiles();
-
     return 0;
 
 }
-
-void ringapp_deleteappfiles(void)
-{
-    QString path ;
-    path = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) ;
-    QDir::setCurrent(path);
-    ringapp_delete_file(path,"pwct.ringo");
-}
-
-void ringapp_delete_file(QString path,const char *cFile)
-{
-    char mytarget[100];
-    sprintf(mytarget,"%s/%s",path.toStdString().c_str(),cFile);
-    QFile myfile;
-    myfile.setFileName(mytarget);
-    myfile.setPermissions(QFile::ReadOther | QFile::WriteOther);
-    myfile.remove();
-}
-
-
