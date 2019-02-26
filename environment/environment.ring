@@ -21,7 +21,7 @@ func StartEnvironment
 
 	# We have PWCT_APP as a global variable/object of the QApplication class
 	PWCT_APP = new qApp {
-		# We use the style with English User Interface only
+		# Set the style 
 			StyleFusion()
 		# Dispaly the splash screen
 			DisplaySplashScreen(PWCT_APP)
@@ -49,7 +49,9 @@ func DisplaySplashScreen oApp
 		if ! PWCTIsMobile(:SplashScreen) {
 			sleep(1)
 		else 
+			oSystemLog.addMessage("Create Mobile Files ... Started")
 			CreateMobileFiles()
+			oSystemLog.addMessage("Create Mobile Files ... Done")
 		}		
 	# Close the Splash Screen
 		oSplash.Close()

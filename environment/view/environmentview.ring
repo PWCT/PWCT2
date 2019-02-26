@@ -37,26 +37,38 @@ class EnvironmentView from WindowsViewParent
 			}
 			setLayoutDirection(T_LAYOUTDIRECTION)
 			setWindowTitle(T_ENV_TITLE) # "Programming Without Coding Technology"
+			oSystemLog.addMessage("Create Menubar")
 			self.CreateMenuBar(win)
+			oSystemLog.addMessage("Create Toolbar")
 			self.CreateToolbar(win)
+			oSystemLog.addMessage("Create Main File Toolbar")
 			self.CreateMainFileToolbar(win)
+			oSystemLog.addMessage("Create Statusbar")
 			self.CreateStatusBar(win)
 			if T_LAYOUTDIRECTION = 0 {
+				oSystemLog.addMessage("Create Files Manager")
 				self.CreateFilesManager(win)
 				if lDockForFormDesigner {
+					oSystemLog.addMessage("Create Form Designer")
 					self.CreateFormDesigner(win)
 				}
+				oSystemLog.addMessage("Create Goal Designer")
 				oDockGoalDesigner = self.CreateGoalDesigner(win)
+				oSystemLog.addMessage("Create Output Window")
 				self.CreateOutputWindow(win)
 			else 
+				oSystemLog.addMessage("Create Output Window")
 				self.CreateOutputWindow(win)
 				if lDockForFormDesigner {
+					oSystemLog.addMessage("Create Form Designer")
 					self.CreateFormDesigner(win)
 				}
+				oSystemLog.addMessage("Create Goal Designer")
 				oDockGoalDesigner = self.CreateGoalDesigner(win)
 				self.CreateFilesManager(win)
 			}
 			if lDockForComponentsBrowser {
+				oSystemLog.addMessage("Create Components Browser")
 				self.CreateComponentsBrowser(win)
 			}
 			setwinicon(win,AppFile("images/pwct.png"))	
@@ -64,6 +76,7 @@ class EnvironmentView from WindowsViewParent
 				setcloseevent("PWCT_APP.Quit()")
 			}
 			installeventfilter(oFilter)
+			oSystemLog.addMessage("Environment Window Loaded!")
 		}
 
 	/*
