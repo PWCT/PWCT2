@@ -176,16 +176,14 @@ Class ProgramController
 		if isobject(oState) {
 			ring_state_delete(oState)
 		}
+		cOutputFileText = ""
 		oState = ring_state_new()
 		ring_state_mainfile(oState,"runprogram.ring")
 		chdir(RUNTIME_FOLDER)
-		# This will stop the Timer 
-			//oGD.DisableCheckOutputOnMobile()
 		# Display the Output
 			CheckOutputOnMobile(oGD)
 		# Delete Temp. Files
 			remove("runprogram.ring")
-			//remove("programoutput.txt")
 			remove("programinput.txt")
 		# delete guilib.ring and stdlib.ring 
 			chdir(JustFilePath(cFileName))
