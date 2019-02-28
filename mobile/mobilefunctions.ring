@@ -5,7 +5,7 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-C_MOBILEVERSION = "PWCT 2.0 For Mobile - 2018.05.25"
+C_MOBILEVERSION = "PWCT 2.0 For Mobile - 2019.02.28"
 
 /*
 	The next function to Control if we need to use the Mobile Settings or Not
