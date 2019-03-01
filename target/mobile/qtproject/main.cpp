@@ -2,6 +2,7 @@
 
 #include <QApplication>
 #include <QWidget>
+#include <QQuickWidget>
 #include <QStandardPaths>
 #include <QDir>
 #include <QFile>
@@ -76,6 +77,7 @@ int main(int argc, char *argv[])
 
     QWidget waiting ;
     waiting.setStyleSheet("background-color:purple;");
+
     waiting.show();
     a.processEvents();
 

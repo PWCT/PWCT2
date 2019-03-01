@@ -24,6 +24,8 @@ Class ProgramController
 
 	cOutputFileText = ""
 
+	lTestQML = False
+
 	/*
 		Purpose : Debug
 		Parameters : Goal Designer Object
@@ -177,6 +179,10 @@ Class ProgramController
 			ring_state_delete(oState)
 		}
 		cOutputFileText = ""
+		if lTestQML {
+			oGD.parent().oView.win.hide()
+			PWCT_App.processevents()
+		}
 		oState = ring_state_new()
 		ring_state_mainfile(oState,"runprogram.ring")
 		chdir(RUNTIME_FOLDER)
