@@ -57,6 +57,8 @@ class EnvironmentView from WindowsViewParent
 				oSystemLog.addMessage("Create Output Window")
 				self.CreateOutputWindow(win)
 			else 
+				oSystemLog.addMessage("Create Files Manager")
+				self.CreateFilesManager(win)
 				oSystemLog.addMessage("Create Output Window")
 				self.CreateOutputWindow(win)
 				if lDockForFormDesigner {
@@ -65,7 +67,6 @@ class EnvironmentView from WindowsViewParent
 				}
 				oSystemLog.addMessage("Create Goal Designer")
 				oDockGoalDesigner = self.CreateGoalDesigner(win)
-				self.CreateFilesManager(win)
 			}
 			if lDockForComponentsBrowser {
 				oSystemLog.addMessage("Create Components Browser")

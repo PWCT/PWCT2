@@ -70,7 +70,11 @@ class EnvironmentController from WindowsControllerParent
 			oView.oDockGoalDesigner.setWindowTitle(
 				T_ENV_DOCK_GOALDESIGNER + " : " + parent().oVisualSourceFile.cFileName)
 		if IsDockForComponentsBrowser() {
-			oView.win.tabifydockwidget(oView.oDockOutputWindow,oView.oDockComponentsBrowser)
+			if T_LAYOUTDIRECTION = 0 {
+				oView.win.tabifydockwidget(oView.oDockOutputWindow,oView.oDockComponentsBrowser)
+			else 
+				oView.win.tabifydockwidget(oView.oDockOutputWindow,oView.oDockFilesManager)
+			}
 		}
 		if lTabifyOutputAndFiles {
 			if T_LAYOUTDIRECTION = 0 {
