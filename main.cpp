@@ -2,11 +2,16 @@
 
 #include <QApplication>
 #include <QWidget>
+#include <QQuickWidget>
 #include <QStandardPaths>
 #include <QDir>
 #include <QFile>
 #include <QTextStream>
 #include <QUrl>
+
+#ifdef QT_WEBVIEW_WEBENGINE_BACKEND
+	#include <QtWebEngine>
+#endif
 
 // Load Ring
 
@@ -72,10 +77,16 @@ RING_FUNC(ring_qDebug)
 
 int main(int argc, char *argv[])
 {
+
     QApplication a(argc,argv);
 
+	#ifdef QT_WEBVIEW_WEBENGINE_BACKEND
+		QtWebEngine::initialize();
+	#endif
+	
     QWidget waiting ;
     waiting.setStyleSheet("background-color:purple;");
+
     waiting.show();
     a.processEvents();
 
