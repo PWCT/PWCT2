@@ -28,14 +28,40 @@ class VSFGenerator
 	oModel = new GoalDesignerModel
 
 	func startGenerator
-		? "Hello"	
-		oVisualSourceFile = new visualSourceFile
-		oVisualSourceFile.cFileName  =  cFileName
-		oVisualSourceFile.Open()
-		oVisualSourceFile.SetStepsTreeTable(oModel.oStepsTreeModel.GetData())
-		oVisualSourceFile.SetInteractionsTable(oModel.oInteractionModel.GetData())
-		oVisualSourceFile.SetStepsID(oModel.oStepsTreeModel.GetID())
-		oVisualSourceFile.SetInteractionsID(oModel.oInteractionModel.GetID())
-		oVisualSourceFile.CreateTables()
-		oVisualSourceFile.SaveTables()
-		oVisualSourceFile.Close()
+		TestGenerator()
+		WriteVisualSourceFile()
+
+	func WriteVisualSourceFile
+		# Delete the old visual source file 
+			if fexists(cFileName) remove(cFileName) ok
+		# Write the new visual source file (*.pwct)
+			oVisualSourceFile = new visualSourceFile
+			oVisualSourceFile.cFileName  =  cFileName
+			oVisualSourceFile.Open()
+			oVisualSourceFile.SetStepsTreeTable(oModel.oStepsTreeModel.GetData())
+			oVisualSourceFile.SetInteractionsTable(oModel.oInteractionModel.GetData())
+			oVisualSourceFile.SetStepsID(oModel.oStepsTreeModel.GetID())
+			oVisualSourceFile.SetInteractionsID(oModel.oInteractionModel.GetID())
+			oVisualSourceFile.CreateTables()
+			oVisualSourceFile.SaveTables()
+			oVisualSourceFile.Close()
+	
+	func TestGenerator
+		for x = 1 to 10
+			AddRootStep("Step Number : " + x)
+		next 
+
+	func AddRootStep cStepName 
+		cPlainStepName = cStepName
+ 		nStepID = oModel.AddStep(1,[
+				:name = cStepName,
+				:active = True , 
+				:code = "" , 
+			 	:interactionid = oModel.oInteractionModel.AddUserInteraction() ,
+				:visible = True , 
+				:stepnumber = 1 ,
+				:steptype = C_STEPTYPE_COMMENT,
+				:plainname = cPlainStepName
+			]
+		)
+

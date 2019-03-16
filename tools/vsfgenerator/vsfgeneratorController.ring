@@ -21,3 +21,4 @@ class vsfgeneratorController from windowsControllerParent
 		new VSFGenerator {
 			startGenerator()
 		}
+		msginfo("Generator","Operation Done!")
