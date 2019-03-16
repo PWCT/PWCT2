@@ -193,4 +193,16 @@ By creating new methods
 	Performance increased from 1.3 second to 0.3 second 
 	while we have around 100 components 
 
+(20)
+	About QTreeWidgetItem performance 
+	In this code 
+	Using setitemwidget is what consumes most of the time 
+	And using it without resize() on qLabel kill the performance !
+	Using resize() decrease the time from over 2 seconds to just 0.18 second!
 
+	v = new qTreeWidgetItem()
+		l = new qLabel(win) { resize(10,10) } 
+		l.settext("Item <b>" + t + '</b> <font color="blue">This is some text!</font>')
+		root.addchild(v)
+		tree.setitemwidget(v,0,l)
+		 

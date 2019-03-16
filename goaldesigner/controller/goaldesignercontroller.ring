@@ -916,6 +916,7 @@ class GoalDesignerController from WindowsControllerParent
 							// oLabel.settext("test")
 					*/
 					oLabel = new qLabel(self) 
+					oLabel.resize(100,30)
 					cText = substr(substr(cText,"C_STEPCOLOR_DATA_TEXT",C_STEPCOLOR_DATA_TEXT),
 							"C_STEPCOLOR_DATA_BACKCOLOR",C_STEPCOLOR_DATA_BACKCOLOR)
 					oLabel.setFont(oTempFont)

@@ -60,6 +60,7 @@ class StepsTreeView from TreeControl
 		AddToTree(1,oFirstStep)
 		setheaderlabel(cControlHeader)
 		oLabel = new qLabel(self) {
+			resize(100,30)
 			settext(this.oStyle.image(C_LABELIMAGE_NODEICON)+
 				 this.oStyle.text(this.cStartPointText,"green",""))
 			this.SetLabelFont(oLabel)
@@ -160,6 +161,7 @@ class StepsTreeView from TreeControl
 				oItem = aItems[x]
 				aLabel = aTempLabels[x]
 				oLabel2 = new qLabel(Self) {
+					resize(100,30)
 					setText(this.prepareNodeText(aLabel[C_NODELABEL_TEXT]))
 					setStyleSheet(aLabel[C_NODELABEL_STYLESHEET])					
 				}

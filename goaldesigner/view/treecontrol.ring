@@ -65,6 +65,7 @@ class TreeControl from qTreeWidget
 		}
 		oItem = new qtreewidgetitem() 
 		oLabel = new qLabel(self) 
+		oLabel.resize(100,30)
 		SetLabelFont2(oLabel)
 		oLabel.settext(oStyle.image(cImage)+
 					oStyle.text(cText,cColor,cBackColor))					
@@ -115,6 +116,7 @@ class TreeControl from qTreeWidget
 		setCurrentItem(oParent,0)	# Focus on Parent Step
 		if lUseLabels = True {
 			oLabel = new qLabel(self) {
+				resize(100,30)
 				# if we used setlabelfont2() here
 				# when we cut steps and paste
 				# we don't see the change in the font!			
