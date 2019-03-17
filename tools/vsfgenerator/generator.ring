@@ -22,6 +22,15 @@
 	# Used by Goal Designer Model
 		load "../../goaldesigner/controller/htmlfunctions.ring"
 
+if isMainSourceFile()
+	? "Generation started!"
+	t1 = clock()
+	new VSFGenerator {
+		startGenerator()
+	}
+	? "Generation done in " + ( (clock() - t1) / clockspersecond()) + " seconds!"
+ok
+
 class VSFGenerator
 
 	cFileName = "test.pwct"
@@ -64,4 +73,3 @@ class VSFGenerator
 				:plainname = cPlainStepName
 			]
 		)
-
