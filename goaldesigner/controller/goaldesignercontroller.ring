@@ -778,7 +778,6 @@ class GoalDesignerController from WindowsControllerParent
 		# Refresh Steps Tree
 			oSystemLog.addMessage("Start - Refresh Steps Tree")
 			RefreshStepsTree2(aStepsTree)
-			oView.oStepsTree.oFirstStep.SetExpanded(True)
 			oSystemLog.addMessage("End - Refresh Steps Tree")
 		# Prepare the Components Browser 
 			Activate()
@@ -829,8 +828,9 @@ class GoalDesignerController from WindowsControllerParent
 			UpdateTheTimeMachine()
 		oView.oStepsTree.setUpdatesEnabled(True)
 		oView.oStepsTree.blockSignals(False)
-		oView.oStepsTree.oFirstStep.SetExpanded(True)
-
+		# Using setExpanded() takes a lot of time with qTreeWidget when using Labels in QTreeWidgetItem
+			oView.oStepsTree.oFirstStep.SetExpanded(True)
+		
 	/*
 		Purpose : Quickly add many steps to the Steps Tree 
 			  This function increase the performance 	
