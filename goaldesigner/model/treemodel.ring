@@ -66,7 +66,8 @@ class TreeModel
 	func FindNewNodePosition nParent
 		# Check Adding after the last record (Special Case) - for better performance 
 			if len(aList) > 0
-				if aList[len(aList)][C_TREEMODEL_PARENTID] = nParent
+				if aList[len(aList)][C_TREEMODEL_PARENTID] = nParent or 
+					aList[len(aList)][C_TREEMODEL_NODEID] = nParent
 					return len(aList)
 				ok 
 			ok
