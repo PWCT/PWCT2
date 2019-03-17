@@ -22,6 +22,7 @@ class TreeControl from qTreeWidget
 	oHTML = new HTMLFunctions
 	oTempFont = NULL
 
+	lActivateParent = True  # Activate the parent step after creating the step
 
 	/*
 		The next method set the object attributes values		
@@ -113,7 +114,9 @@ class TreeControl from qTreeWidget
 		}
 		AddToTree(nID,oItem)
 		setCurrentItem(oItem,0)	# To Display the item (become visible)
-		setCurrentItem(oParent,0)	# Focus on Parent Step
+		if lActivateParent {
+			setCurrentItem(oParent,0)	# Focus on Parent Step
+		}
 		if lUseLabels = True {
 			oLabel = new qLabel(self) {
 				resize(100,30)

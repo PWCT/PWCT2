@@ -60,6 +60,7 @@ class TimeMachineController
 			if direction = C_TMDIRECTION_BACKWARD {
 				aList = Reverse(aList)
 			}
+		oView.oStepsTree.lactivateParent = False
 		for x = 1 to len(aList) {
 			item = aList[x]
 			// puts( item[3][:name] )
@@ -87,7 +88,7 @@ class TimeMachineController
 				}
 			}
 		}
-
+		oView.oStepsTree.lactivateParent = True
 		# To Correctly draw items (Avoid a Qt bug in drawing)
 			oView.FixDrawing()
 
