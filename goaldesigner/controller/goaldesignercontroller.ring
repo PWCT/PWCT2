@@ -572,11 +572,9 @@ class GoalDesignerController from WindowsControllerParent
 	*/
 
 	func ChangeTimeMachinePointAction
-		oView.oStepsTree.setUpdatesEnabled(False)
-		oView.win.blocksignals(True)
+		oView.win.setUpdatesEnabled(False)
 		oTMController.ChangeTimeMachinePoint(oView,oModel)
-		oView.oStepsTree.setUpdatesEnabled(True)
-		oView.win.blocksignals(False)
+		oView.win.setUpdatesEnabled(True)
 
 	/*
 		Purpose : Tree Key Press
