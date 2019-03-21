@@ -860,7 +860,7 @@ class GoalDesignerController from WindowsControllerParent
 		else 
 			oView.oStepsTree {
 				lUseLabels = True
-								setstylesheet("selection-color:black; selection-background-color:cyan;")
+				setstylesheet("selection-color:black; selection-background-color:cyan;")
 			}
 		}
 		oView.oStepsTree.preparetempfont()

@@ -7,6 +7,16 @@
 
 class TimeMachineController
 
+
+	/*
+		Flag to use the Fast way to implement the Time Machine 
+		instead of Adding/removing steps when we change the time point
+		We just Show/Hide the steps based on needs 
+	*/
+	
+		lUseSetHidden = True	
+
+
 	/*
 		Purpose : Time Machine Goto Present
 		Parameters : View Object and Model Object
@@ -63,28 +73,46 @@ class TimeMachineController
 		oView.oStepsTree.lactivateParent = False
 		for x = 1 to len(aList) {
 			item = aList[x]
-			// puts( item[3][:name] )
 			if direction = C_TMDIRECTION_BACKWARD {
-				oItem = oView.oStepsTree.GetObjByID(item[1])
-				oView.oStepsTree.DelByObj(oItem)
-				oItem.parent().takechild(oItem.parent().indexofchild(oItem))
+				oItem = oView.oStepsTree.GetObjByID(item[C_TREEMODEL_NODEID])
+				if lUseSetHidden {
+					oItem.setHidden(True)
+					oItem = oView.oStepsTree.GetObjByID(item[C_TREEMODEL_PARENTID])
+					if x = len(aList) {
+						oView.oStepsTree.SetCurrentItem(oItem,0)	
+					}
+				else 
+					oView.oStepsTree.DelByObj(oItem)
+					oItem.parent().takechild(oItem.parent().indexofchild(oItem))
+				}
+
 			else
 				nStepID = item[C_TREEMODEL_NODEID]
 				nParentID = item[C_TREEMODEL_PARENTID]
-				cStepName = item[C_TREEMODEL_CONTENT][:name]
-				cPlainStepName = item[C_TREEMODEL_CONTENT][:plainname]
-				nStepIID = item[C_TREEMODEL_CONTENT][:interactionid]
-				nStepType = item[C_TREEMODEL_CONTENT][:steptype]
-				oView.oStepsTree.SetStepColor(nStepType)
-				lInsert = CheckInsertStep(oView,oModel,nParentID,nStepID,nStepIID)
-				if not oView.oStepsTree.luseLabels {
-					cStepName = cPlainStepName
-				}
-				if lInsert= False { 
-					oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)
-				else
-					nIndex = lInsert--	# Start from 0 not 1
-					oView.oStepsTree.InsertStep(nParentID,nStepID,cStepName,nIndex)
+				if lUseSetHidden {
+					oItem = oView.oStepsTree.GetObjByID(nParentID)
+					oItem.setHidden(False)
+					oItem = oView.oStepsTree.GetObjByID(nStepID)
+					oItem.setHidden(False)
+					if x = len(aList) {
+						oView.oStepsTree.SetCurrentItem(oItem,0)	
+					}
+				else 	
+					cStepName = item[C_TREEMODEL_CONTENT][:name]
+					cPlainStepName = item[C_TREEMODEL_CONTENT][:plainname]
+					nStepIID = item[C_TREEMODEL_CONTENT][:interactionid]
+					nStepType = item[C_TREEMODEL_CONTENT][:steptype]
+					oView.oStepsTree.SetStepColor(nStepType)
+					lInsert = CheckInsertStep(oView,oModel,nParentID,nStepID,nStepIID)
+					if not oView.oStepsTree.luseLabels {
+						cStepName = cPlainStepName
+					}
+					if lInsert= False { 
+						oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)
+					else
+						nIndex = lInsert--	# Start from 0 not 1
+						oView.oStepsTree.InsertStep(nParentID,nStepID,cStepName,nIndex)
+					}					
 				}
 			}
 		}
