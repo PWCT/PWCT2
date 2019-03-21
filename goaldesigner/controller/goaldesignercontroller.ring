@@ -34,14 +34,17 @@ class GoalDesignerController from WindowsControllerParent
 	lLoadComponents = True
 
 	# Increase performance when adding many steps 
-		lUseSuperSerialAdd 	= True
+		lUseSuperSerialAdd 			= True
 		# Creating new steps tree conflict with storing steps tree object in Environment Object to switch between dockable windows of goal designers
-			lCreateNewStepsTree	= False
+			lCreateNewStepsTree		= False
 		# Max Steps that uses Colors 
-			nMaxStepsCount 		= 5000
-			lUseMaxStepsCount	= True
+			nMaxStepsCount 			= 5000
+			lUseMaxStepsCount		= True
 		# Show loading progress 
-			lShowLoadingProgress	= False
+			lShowLoadingProgress		= False
+		# Expand Steps when opening files 
+			lSuperSerialAddExpandSteps 	= True 
+			nMaxStepsCountForExpandSteps    = 500
 
 	oHTMLFunctions = new HTMLFunctions
 
@@ -849,6 +852,11 @@ class GoalDesignerController from WindowsControllerParent
 		}
 		parent().goaldesignerFont()
 		nMax = len(aStepsTree) 
+		if nMax > nMaxStepsCountForExpandSteps {
+			lSuperSerialAddExpandSteps = False 
+		else 
+			lSuperSerialAddExpandSteps = True
+		}
 		if nMax > this.nMaxStepsCount and lUseMaxStepsCount {
 			oView.oStepsTree {
 				lUseLabels = False
@@ -936,7 +944,9 @@ class GoalDesignerController from WindowsControllerParent
 					oParent.addchild(oItem)
 				}
 				AddToTree(nID,oItem)
-				oItem.setExpanded(true)
+				if this.lSuperSerialAddExpandSteps {
+					oItem.setExpanded(true)
+				}
 			}
 			if lShowLoadingProgress {
 				if x % 100 = 0 {
