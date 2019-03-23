@@ -44,7 +44,7 @@ class GoalDesignerController from WindowsControllerParent
 			lShowLoadingProgress		= False
 		# Expand Steps when opening files 
 			lSuperSerialAddExpandSteps 	= True 
-			nMaxStepsCountForExpandSteps    = 500
+			nMaxStepsCountForExpandSteps    = 1200
 
 	oHTMLFunctions = new HTMLFunctions
 
