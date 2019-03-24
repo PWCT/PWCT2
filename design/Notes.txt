@@ -206,3 +206,11 @@ By creating new methods
 		root.addchild(v)
 		tree.setitemwidget(v,0,l)
 		 
+
+(21)
+
+Testing the performance with different Qt versions
+Steps Count 		Qt 5.5		Qt 5.12
+100			0.8		0.45 seconds	
+500			4.2		2.36 seconds
+1000			7.72		4.41 seconds
