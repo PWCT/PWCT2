@@ -5,7 +5,7 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-C_MOBILEVERSION = "PWCT 2.0 For Mobile - 2019.02.28"
+C_MOBILEVERSION = "PWCT 2.0 For Mobile - 2019.03.31"
 
 /*
 	The next function to Control if we need to use the Mobile Settings or Not
@@ -68,6 +68,8 @@ func CreateMobileFiles
 	}	
 	oFile = new qFile()
 	oFile.copy_2(":/mobileapp/mobileapplibs.ring",cPath+"/PWCTApp/runtime/mobileapplibs.ring")
+	oFile.copy_2(":/mobileapp/mobileapplibs2.ring",cPath+"/PWCTApp/runtime/mobileapplibs2.ring")
+	oFile.copy_2(":/mobileapp/mobileapplibs3.ring",cPath+"/PWCTApp/runtime/mobileapplibs3.ring")
 	oFile.copy_2(":/templates/formcontroller.pwct",cPath+"/PWCTApp/templates/formcontroller.pwct")
 	oFile.copy_2(":/templates/arabic_formcontroller.pwct",cPath+"/PWCTApp/templates/arabic_formcontroller.pwct")
 	write(C_VERSIONFILE,C_MOBILEVERSION)

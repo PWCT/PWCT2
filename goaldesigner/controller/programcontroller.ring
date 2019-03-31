@@ -168,7 +168,9 @@ Class ProgramController
 		# Before running the program
 			cCode = ""
 			if PWCTIsMobile(:MobileAppLibs) {
-				cCode = 'load "mobileapplibs.ring"' + nl 
+				cCode = 'load "mobileapplibs.ring"' + nl +
+					'load "mobileapplibs2.ring"' + nl + 
+					'load "mobileapplibs3.ring"' + nl 
 			}
 			cCode += "$cMainSourceFile = '" + cFileName + "'" + nl
 			cCode += 'load "' + cFileName + '"'
