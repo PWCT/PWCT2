@@ -60,6 +60,9 @@ class EnvironmentController from WindowsControllerParent
 		Output : None
 	*/
 	func Start
+		oView.win.blocksignals(True)
+		oView.win.setupdatesenabled(False)
+		oView.win.showmaximized()
 		super.Start()
 		LoadSettings()	
 		# Add the Default file (NoName) to the Active Files List
@@ -101,11 +104,11 @@ class EnvironmentController from WindowsControllerParent
 			oView.oDockGoalDesigner.raise()
 		}
 
-		oView.win.showmaximized()
-
 		# Set Focus to Steps Tree
 			parent().SetFocusToStepsTree()
 
+		oView.win.blocksignals(False)
+		oView.win.setupdatesenabled(True)
 
 	/*
 		Purpose : Set the Parent Object for Environment and goal designer
