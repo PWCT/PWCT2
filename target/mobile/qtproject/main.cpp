@@ -85,7 +85,7 @@ int main(int argc, char *argv[])
 	#endif
 	
     QWidget waiting ;
-    waiting.setStyleSheet("background-color:purple;");
+    waiting.setStyleSheet("background: url(:/images/pwctlogo.png) no-repeat center center fixed;");
 
     waiting.show();
     a.processEvents();

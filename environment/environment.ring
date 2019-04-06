@@ -39,22 +39,22 @@ func StartEnvironment
 */
 
 func DisplaySplashScreen oApp
-	# Load the Image File
-		oPixMap = new qPixMap(AppFile("images/pwctlogo.png"))
-	# Create the Splash Screen Object
-		oSplash = new qSplashScreen(oPixMap)
-		oSplash.Show()
-	# Wait for one second
 		if ! PWCTIsMobile(:SplashScreen) {
+			# Load the Image File
+				oPixMap = new qPixMap(AppFile("images/pwctlogo.png"))
+			# Create the Splash Screen Object
+				oSplash = new qSplashScreen(oPixMap)
+				oSplash.Show()
+			# Wait for one second
 				sleep(1)
+			# Close the Splash Screen
+				oSplash.Close()
+				oPixMap.delete()		
 		else 
 			oSystemLog.addMessage("Create Mobile Files ... Started")
 			CreateMobileFiles()
 			oSystemLog.addMessage("Create Mobile Files ... Done")
 		}		
-	# Close the Splash Screen
-		oSplash.Close()
-		oPixMap.delete()		
 
 /*
 	The next function display a messagebox
