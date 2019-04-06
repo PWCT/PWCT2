@@ -229,14 +229,16 @@ class EnvironmentController from WindowsControllerParent
 			lFormFile = True
  		}
 		if fexists(cFileName) {
-			oView.win.setupdatesenabled(False)
 			openVisualFile(cFileName)
 			showmessageInStatusBar("Change File Time: " + ( (clock()-nClock) / Clockspersecond() ) )
-			oView.win.setupdatesenabled(True)
 		}
 		if lFormFile {
 			oView.oDockFormDesigner.raise()
+			oView.oDockFormDesigner.show()
+			oView.oDockFormDesigner.setfocus(0)
 		}
+		oView.win.show()
+		PWCT_APP.processevents()
 		
 	func openVisualFile cFileName
 		# Check the file size
@@ -293,6 +295,7 @@ class EnvironmentController from WindowsControllerParent
 			# Add the file to the Active Files List 
 				aActiveFiles + [oView.oDockGoalDesigner,lower(cFileName)]
 			oView.oDockGoalDesigner.raise()
+			oView.oDockGoalDesigner.show()
 		}
 		# Add the Steps Tree to the aActiveFiles list 
 			aActiveFiles[len(aActiveFiles)] + parent().oView.oStepsTree
@@ -306,13 +309,15 @@ class EnvironmentController from WindowsControllerParent
 		# Set focus to the Files Manager Tree
 			oView.tree1.setfocus(0)
 		lActiveGoalDesignerChanged = True
-		if PWCTIsMobile(:OpenFilesInNewTabs) {
-			oView.oDockGoalDesigner.show()
-			oView.oDockGoalDesigner.raise()
-		}
 		if lDisplayLoadingMessage and lUseLoadingMessage {
 			QuickMsg().CloseMsg()
 		}
+		if PWCTIsMobile(:OpenFilesInNewTabs) {
+			oView.oDockGoalDesigner.raise()
+			oView.oDockGoalDesigner.show()
+			oView.oDockGoalDesigner.setfocus(0)
+		}
+
 
 	/*
 		Purpose : Remove file from the Active Files List
