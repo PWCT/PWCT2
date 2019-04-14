@@ -177,7 +177,7 @@ Class ProgramController
 			write("runprogram.ring",cCode)
 		# This will start a Timer to check the output
 			oGD.EnableCheckOutputOnMobile()
-		if isobject(oState) {
+		if ! isNULL(oState) {
 			ring_state_delete(oState)
 		}
 		cOutputFileText = ""
