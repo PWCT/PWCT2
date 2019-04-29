@@ -1,6 +1,6 @@
 # Programming Without Coding Technology (PWCT)
 
-## Version 2.0 (2018-2019)
+## Version 2.0
 
 If you want to learn programming, create applications/systems or get some new ideas
 about visual programming in the practice then you are in the right place. The goal
