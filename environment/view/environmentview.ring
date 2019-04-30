@@ -8,7 +8,7 @@
 class EnvironmentView from WindowsViewParent
 
 	# Attributes
-	Tree1   oFile  oDockFilesManager oDockGoalDesigner
+	TreeTimer Tree1   oFile  oDockFilesManager oDockGoalDesigner
 	oDockComponentsBrowser  oStatusbar
 
 	# Process Window
@@ -607,10 +607,16 @@ class EnvironmentView from WindowsViewParent
 	*/
 
 	func CreateFilesManager win
+		treeTimer = new qTimer(win) {
+			settimeoutevent(Method(:ChangeFileAction))
+			setinterval(250)
+			stop()
+		}
 		tree1 = new qtreeview(win) {
 			setLayoutDirection(T_LAYOUTDIRECTION)
-			setclickedevent(Method(:ChangeFileAction))
-			setactivatedevent(Method(:ChangeFileAction))
+			setclickedevent(Method(:ChangeFileClickAction))
+			setdoubleclickedevent(Method(:ChangeFileDoubleClickAction))
+			setactivatedevent(Method(:ChangeFileClickAction))
 			oDir = new QDir()					
 			this.ofile = new QFileSystemModel() {
 				setrootpath(oDir.currentpath())				

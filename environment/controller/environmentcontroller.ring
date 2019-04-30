@@ -28,7 +28,7 @@ class EnvironmentController from WindowsControllerParent
 	if PWCTIsMobile(:OpenFilesInNewTabs) {
 		lOpenFilesInNewTabs = False 
 	else 
-		lOpenFilesInNewTabs = True
+		lOpenFilesInNewTabs = False
 	}
 
 	if PWCTIsMobile(:UseLoadingMessage) {
@@ -214,7 +214,22 @@ class EnvironmentController from WindowsControllerParent
 		Output : None
 	*/
 
+	func ChangeFileClickAction
+		# We use a Timer because (Double Click) on QTreeView will fire the (Click) signal too!
+		lOpenFilesInNewTabs = False
+		oView.treeTimer.Start()
+		oView.oDockGoalDesigner.raise()
+		oView.oDockGoalDesigner.show()
+		oView.oDockGoalDesigner.setFocus(0)
+
+	func ChangeFileDoubleClickAction
+		oView.treeTimer.Stop()
+		lOpenFilesInNewTabs = True
+		ChangeFileAction()
+		lOpenFilesInNewTabs = False
+
 	func ChangeFileAction	
+		oView.treeTimer.Stop()
 		nClock = clock()
 		oItem = oView.tree1.currentindex()
 		if oView.oFile.isdir(oItem) {
@@ -251,22 +266,38 @@ class EnvironmentController from WindowsControllerParent
 				lDisplayLoadingMessage = True
 			}
 		# If the file is already opened, Activate the window
-			if lOpenFilesInNewTabs {
+			# We may have many files opened and (lOpenFilesInNewTabs = False)
+			# So we check len(aActiveFiles) too 
+			# This after supporting (Double Click) to open files in new tabs!
+			if lOpenFilesInNewTabs or len(aActiveFiles) > 0 {
 				aActiveFilesCopy = aActiveFiles 
 				for item in aActiveFilesCopy { item[2] = lower(item[2]) }
-				nPos = find(aActiveFilesCopy,lower(cFileName),2)
-				if nPos {
-					aActiveFiles[nPos][1].show()
-					aActiveFiles[nPos][1].raise()
-					aActiveFiles[nPos][3].setfocus(0)
-					oView.tree1.setfocus(0)
-					SetParentForComponentsBrowser(aActiveFiles[nPos][4])
-					return
-				}
+					nPos = find(aActiveFilesCopy,lower(cFileName),2)
+					if nPos {
+						aActiveFiles[nPos][1].show()
+						aActiveFiles[nPos][1].raise()
+						aActiveFiles[nPos][3].setfocus(0)
+						oView.tree1.setfocus(0)
+						SetParentForComponentsBrowser(aActiveFiles[nPos][4])
+						return
+					}
 			}
 		# If we open one file each time, clear the aActiveFiles list 
-			if not lOpenFilesInNewTabs {
-				aActiveFiles = []
+			if not lOpenFilesInNewTabs  {
+				# Be sure that we don't have many files opened already !
+				if len(aActiveFiles) = 1 {
+					aActiveFiles = []
+				else 
+					# We already have many files opened (Using Mouse Double Click) 
+					# When we change the file using (One Click)
+					# Remove the old file from aActiveFiles 
+					for x = 1 to len(aActiveFiles) {
+						if ptrcmp(aActiveFiles[x][1].pObject,oView.oDockGoalDesigner.pObject) {
+							del(aActiveFiles,x)
+							exit
+						}
+					}
+				}
 			}
 		# Display Message
 			if lDisplayLoadingMessage and lUseLoadingMessage {
