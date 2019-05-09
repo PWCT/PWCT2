@@ -571,7 +571,11 @@ class EnvironmentController from WindowsControllerParent
 	func sendDataAction
 		oView {
 			if ISNULL(oProcess) { return }
-			cText = oProcessText.text() + windowsnl()
+			if isWindows() {
+				cText = oProcessText.text() + windowsnl()
+			else 
+				cText = oProcessText.text() + nl
+			}
 			oProcess.write(cText ,len(cText))
 			oProcessEditbox.insertplaintext(cText)
 		}
