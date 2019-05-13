@@ -72,7 +72,7 @@ class EnvironmentController from WindowsControllerParent
 		# Goal Designer - Default file 
 			oView.oDockGoalDesigner.setWindowTitle(
 				T_ENV_DOCK_GOALDESIGNER + " : " + parent().oVisualSourceFile.cFileName)
-		if IsDockForComponentsBrowser() {
+		if IsDockForComponentsBrowser() and not oView.lOutpuWindowInBottom {
 			if T_LAYOUTDIRECTION = 0 {
 				oView.win.tabifydockwidget(oView.oDockOutputWindow,oView.oDockComponentsBrowser)
 			else 

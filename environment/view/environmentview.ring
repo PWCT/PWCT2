@@ -28,6 +28,9 @@ class EnvironmentView from WindowsViewParent
 		lDockForFormDesigner	  = True
 	}
 
+
+	lOutpuWindowInBottom = True 
+
 	# Create the window and the Controls
 		win = new qMainWindow()
 		{
@@ -735,7 +738,11 @@ class EnvironmentView from WindowsViewParent
 			setwidget( oProcessWindow )		
 			setwindowtitle(T_ENV_OW_TITLE)  # "Output Window"
 		}
-		win.adddockwidget(Qt_LeftDockWidgetArea ,oDockOutputWindow,1)
+		if lOutpuWindowInBottom {
+			win.adddockwidget(Qt_BottomDockWidgetArea ,oDockOutputWindow,1)
+		else 
+			win.adddockwidget(Qt_LeftDockWidgetArea ,oDockOutputWindow,1)
+		}
 
 	/*
 		Purpose : Create the Components Browser Window 
