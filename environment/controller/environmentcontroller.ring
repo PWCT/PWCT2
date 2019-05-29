@@ -28,7 +28,7 @@ class EnvironmentController from WindowsControllerParent
 	if PWCTIsMobile(:OpenFilesInNewTabs) {
 		lOpenFilesInNewTabs = False 
 	else 
-		lOpenFilesInNewTabs = False
+		lOpenFilesInNewTabs = True
 	}
 
 	if PWCTIsMobile(:UseLoadingMessage) {
@@ -216,11 +216,14 @@ class EnvironmentController from WindowsControllerParent
 
 	func ChangeFileClickAction
 		# We use a Timer because (Double Click) on QTreeView will fire the (Click) signal too!
-		lOpenFilesInNewTabs = False
-		oView.treeTimer.Start()
-		oView.oDockGoalDesigner.raise()
-		oView.oDockGoalDesigner.show()
-		oView.oDockGoalDesigner.setFocus(0)
+		if lOpenFilesInNewTabs = False {
+			oView.treeTimer.Start()
+			oView.oDockGoalDesigner.raise()
+			oView.oDockGoalDesigner.show()
+			oView.oDockGoalDesigner.setFocus(0)
+		else 
+			ChangeFileAction()
+		}
 
 	func ChangeFileDoubleClickAction
 		oView.treeTimer.Stop()
