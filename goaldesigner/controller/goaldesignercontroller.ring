@@ -38,7 +38,7 @@ class GoalDesignerController from WindowsControllerParent
 		# Creating new steps tree conflict with storing steps tree object in Environment Object to switch between dockable windows of goal designers
 			lCreateNewStepsTree		= False
 		# Max Steps that uses Colors 
-			nMaxStepsCount 			= 5000
+			nMaxStepsCount 			= 2000
 			lUseMaxStepsCount		= True
 		# Show loading progress 
 			lShowLoadingProgress		= False
