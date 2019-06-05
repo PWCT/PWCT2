@@ -894,37 +894,6 @@ class GoalDesignerController from WindowsControllerParent
 				}
 				oItem = new qtreewidgetitem() 
 				if nMax < this.nMaxStepsCount or not this.lUseMaxStepsCount {
-					/*
-						Performance of this section 
-						Steps Count : 100 
-						Default time with this section 		: 1.04 seconds 
-						Time without this section (no label) 	: 0.34 second 
-						This section consumes 			: 0.70 second per 100 steps 					
-						PrePareNodeText() consumes 		: 0.06 second per 100 steps 
-						SetLabelFont2() consumes 		: 0.18 second per 100 steps 
-						oStyle consumes 			: 0.14 second per 100 steps 
-						settext() and oStyle consumes 		: 0.31 second per 100 steps 
-					For better performance 
-						SetLabelFont2() replaced with preparetempfont() and setlabelFont3()
-											: Gain 0.08 seconds per 100 steps 					
-						oStyle replaces with strings instead of method calls 
-						//oLabel.settext(oStyle.image(cImage)+
-						//		oStyle.text(cText,cColor,cBackColor))					
-						 					: Gain 0.10 seconds per 100 steps 
-						PrepareNodeText() replaces with two merged substr() instead of method called	
-						// cText = PrepareNodeText(cText)
-						 					: Gain 0.05 seconds per 100 steps 
-						setLabelFont3() replaced with it's content 
-						//SetLabelFont3(oLabel)
-						 					: Gain 0.05 seconds per 100 steps 
-						self.oTempFont replaced with oTempFont (local variable) 
-						// oLabel.setFont(self.oTempFont)
-											: Gain 0.02 seconds 
-						Now oLabel.setText() consumes 0.30 seconds per 100 steps 
-							the HTML consumes  0.24 seconds per 1000 steps 
-							because using setText("test") reduce time a lot 
-							// oLabel.settext("test")
-					*/
 					oLabel = new qLabel(self) 
 					# Changing label Size have a notable effect on performance!
 						oLabel.resize(0,0)
