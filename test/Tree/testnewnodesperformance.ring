@@ -9,6 +9,7 @@ class myapp
 	func start 
 		new qApp {
 			win = new qWidget() { 
+				setWindowTitle("Test Tree Performance")
 				resize(800,600)
 				tree = new qtreewidget(win) { move(10,10) resize(400,400) }
 				root = new qTreeWidgetItem()
