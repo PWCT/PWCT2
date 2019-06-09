@@ -45,6 +45,8 @@ class GoalDesignerController from WindowsControllerParent
 		# Expand Steps when opening files 
 			lSuperSerialAddExpandSteps 	= True 
 			nMaxStepsCountForExpandSteps    = 1200
+		# Steps Color - Old Style (PWCT 1.9)
+			lStepColorOldStyle		= False
 
 	oHTMLFunctions = new HTMLFunctions
 
@@ -897,13 +899,19 @@ class GoalDesignerController from WindowsControllerParent
 					oLabel = new qLabel(self) 
 					# Changing label Size have a notable effect on performance!
 						oLabel.resize(0,0)
-					cText = substr(substr(cText,"C_STEPCOLOR_DATA_TEXT",C_STEPCOLOR_DATA_TEXT),
-							"C_STEPCOLOR_DATA_BACKCOLOR",C_STEPCOLOR_DATA_BACKCOLOR)
 					oLabel.setFont(oTempFont)
-					oLabel.settext("<img src='"+cImage+"'> "+
+					if this.lStepColorOldStyle {
+						oLabel.setText(cPlainText)
+						oLabel.setMaximumWidth(12*len(cPlainText))
+						oLabel.setStyleSheet("color:"+cColor+";background-color:"+cBackColor+";")
+					else 
+						cText = substr(substr(cText,"C_STEPCOLOR_DATA_TEXT",C_STEPCOLOR_DATA_TEXT),
+							"C_STEPCOLOR_DATA_BACKCOLOR",C_STEPCOLOR_DATA_BACKCOLOR)
+						oLabel.settext("<img src='"+cImage+"'> "+
 							`<span style="background-color:`+cBackColor+
 							`"><font color="`+cColor+`">`+cText+
 							`</font></span>`)					
+					}
 					oParent.addchild(oItem)
 					setItemWidget(oItem,0,oLabel)
 				else 
