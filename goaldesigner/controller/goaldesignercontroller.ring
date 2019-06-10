@@ -44,7 +44,7 @@ class GoalDesignerController from WindowsControllerParent
 			lShowLoadingProgress		= False
 		# Expand Steps when opening files 
 			lSuperSerialAddExpandSteps 	= True 
-			nMaxStepsCountForExpandSteps    = 1200
+			nMaxStepsCountForExpandSteps    = 2000
 		# Steps Color - Old Style (PWCT 1.9)
 			lStepColorOldStyle		= False
 
@@ -901,9 +901,9 @@ class GoalDesignerController from WindowsControllerParent
 						oLabel.resize(0,0)
 					oLabel.setFont(oTempFont)
 					if this.lStepColorOldStyle {
-						oLabel.setText(cPlainText)
 						oLabel.setMaximumWidth(12*len(cPlainText))
 						oLabel.setStyleSheet("color:"+cColor+";background-color:"+cBackColor+";")
+						oLabel.setText(cPlainText)
 					else 
 						cText = substr(substr(cText,"C_STEPCOLOR_DATA_TEXT",C_STEPCOLOR_DATA_TEXT),
 							"C_STEPCOLOR_DATA_BACKCOLOR",C_STEPCOLOR_DATA_BACKCOLOR)
