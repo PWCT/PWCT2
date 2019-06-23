@@ -41,10 +41,11 @@ class GoalDesignerController from WindowsControllerParent
 			nMaxStepsCount 			= 2000
 			lUseMaxStepsCount		= True
 		# Show loading progress 
-			lShowLoadingProgress		= False
+			lShowLoadingProgress		= True
 		# Expand Steps when opening files 
-			lSuperSerialAddExpandSteps 	= True 
-			nMaxStepsCountForExpandSteps    = 2000
+			lSuperSerialAddExpandSteps 	= True
+			nMaxStepsCountForExpandSteps    = 1200
+			nMinStepsToExpand		= 50
 		# Steps Color - Old Style (PWCT 1.9)
 			lStepColorOldStyle		= False
 
@@ -922,8 +923,10 @@ class GoalDesignerController from WindowsControllerParent
 					oParent.addchild(oItem)
 				}
 				AddToTree(nID,oItem)
-				if this.lSuperSerialAddExpandSteps {
-					oItem.setExpanded(true)
+				if this.lSuperSerialAddExpandSteps or x < this.nMinStepsToExpand {
+					oItem.setExpanded(True)
+				else 
+					oItem.setExpanded(False)
 				}
 			}
 			if lShowLoadingProgress {
