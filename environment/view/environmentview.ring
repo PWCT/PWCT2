@@ -81,6 +81,14 @@ class EnvironmentView from WindowsViewParent
 			}
 			installeventfilter(oFilter)
 			oSystemLog.addMessage("Environment Window Loaded!")
+			# Workaround to Avoid Resize problem for the dockable widget 
+			# Without this workaround, if we increased the height of the Output Window 
+			# Then we can't decrease it again without moving it to float window then resizing then docking it again 
+			# See : https://www.qtcentre.org/threads/60463-Nested-QDockWidget-resize-issues
+				oCentral = new qLabel(win) {
+					setMaximumWidth(0)
+				}
+				setcentralwidget(oCentral)
 		}
 
 	/*

@@ -7,8 +7,8 @@
 
 ===========================================================
 Status
-	* Bugs Count : 41
-	* Fixed Bugs : 41
+	* Bugs Count : 42
+	* Fixed Bugs : 42
 	* UnFixed Bugs : 0
 ===========================================================
 (1)  Fixed : We created over 6 thouands steps, then using the search window
@@ -1321,5 +1321,19 @@ This was a logical memory leak!
 		# Commented to avoid runtime error (bug : 41)
 			//oView.oWinFilter.delete()
 			//oView.oDesktop.delete()
+
+==================================================================================================
+
+(42) Fixed : UI Bug in resizing the output window 
+	solved in environmentview.ring 
+
+			# Workaround to Avoid Resize problem for the dockable widget 
+			# Without this workaround, if we increased the height of the Output Window 
+			# Then we can't decrease it again without moving it to float window then resizing then docking it again 
+			# See : https://www.qtcentre.org/threads/60463-Nested-QDockWidget-resize-issues
+				oCentral = new qLabel(win) {
+					setMaximumWidth(0)
+				}
+				setcentralwidget(oCentral)
 
 ==================================================================================================
