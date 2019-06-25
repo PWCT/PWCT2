@@ -726,7 +726,7 @@ class EnvironmentView from WindowsViewParent
 		}
 		oProcessEditbox = new qPlaintextedit(oProcessWindow) 
 		oProcessLayout2 = new qvboxlayout() {
-			addWidget(this.oProcesseditbox)
+			addWidget(this.oProcesseditbox)			
 			if ! PWCTIsMobile(:SendDataToApplication) {
 				addlayout(oProcesslayout1)			
 			}
@@ -739,9 +739,9 @@ class EnvironmentView from WindowsViewParent
 			setwindowtitle(T_ENV_OW_TITLE)  # "Output Window"
 		}
 		if lOutpuWindowInBottom {
-			win.adddockwidget(Qt_BottomDockWidgetArea ,oDockOutputWindow,1)
+			win.adddockwidget(Qt_BottomDockWidgetArea,oDockOutputWindow,Qt_Horizontal)
 		else 
-			win.adddockwidget(Qt_LeftDockWidgetArea ,oDockOutputWindow,1)
+			win.adddockwidget(Qt_LeftDockWidgetArea,oDockOutputWindow,Qt_Horizontal)
 		}
 
 	/*
