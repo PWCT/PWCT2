@@ -24,6 +24,7 @@ class TreeControl from qTreeWidget
 
 	lActivateParent = True  # Activate the parent step after creating the step
 
+
 	/*
 		The next method set the object attributes values		
 		Parameters : The Parent Window as QWidget Object
@@ -34,6 +35,7 @@ class TreeControl from qTreeWidget
 		super.init(win)
 		font = new qFont("",0,0,0)
 		font.setpixelsize(nFontSize)
+		setUniformRowHeights(True)
 		return self
 
 	/*
