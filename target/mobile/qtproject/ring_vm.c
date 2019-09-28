@@ -259,7 +259,7 @@ RING_API void ring_vm_loadcode ( VM *pVM )
 	**  eval() will check if there is a need to reallocation or not 
 	**  This optimization increase the performance of applications that uses eval() 
 	*/
-	nSize = (ring_list_getsize(pVM->pCode))*RING_VM_EXTRASIZE ;
+	nSize = (MAX(ring_list_getsize(pVM->pCode),RING_VM_MINVMINSTRUCTIONS))*RING_VM_EXTRASIZE ;
 	pVM->pByteCode = (ByteCode *) ring_state_calloc(pVM->pRingState,nSize,sizeof(ByteCode));
 	if ( pVM->pByteCode == NULL ) {
 		printf( RING_OOM ) ;
@@ -1391,7 +1391,7 @@ RING_API void ring_vm_callfunction ( VM *pVM,char *cFuncName )
 {
 	/* Lower Case and pass () in the end */
 	ring_string_lower(cFuncName);
-	/* Prepare (Remove effects of the currect function) */
+	/* Prepare (Remove effects of the current function) */
 	ring_list_deletelastitem_gc(pVM->pRingState,pVM->pFuncCallList);
 	/* Load the function and call it */
 	ring_vm_loadfunc2(pVM,cFuncName,0);

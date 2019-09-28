@@ -9,6 +9,8 @@
 #define RING_VM_STACK_CHECKOVERFLOW 253
 #define RING_VM_FREE_STACK_IN_CLASS_REGION_AFTER 100
 #define RING_VM_BC_ITEMS_COUNT 24
+#define RING_VM_STATE_NUMBERS_COUNT 35
+#define RING_VM_STATE_POINTERS_COUNT 10
 typedef struct ByteCode {
 	Item *aData[RING_VM_BC_ITEMS_COUNT]  ;
 	char nSize  ;
@@ -107,6 +109,10 @@ typedef struct VM {
 	List *pCLibraries  ;
 	char lNoSetterMethod  ;
 } VM ;
+typedef struct VMState {
+	int aNumbers[RING_VM_STATE_NUMBERS_COUNT]  ;
+	void *aPointers[RING_VM_STATE_POINTERS_COUNT]  ;
+} VMState ;
 /*
 **  Functions 
 **  Main 
@@ -746,6 +752,8 @@ List * ring_vm_getglobalscope ( VM *pVM ) ;
 #define RING_VM_ERROR_TEMPFILENAME "Error (R39) : Error occurred creating unique filename."
 /* Extra Size (for eval) */
 #define RING_VM_EXTRASIZE 2
+#define RING_VM_MINVMINSTRUCTIONS 100000
+#define MAX(a,b) (((a)>(b))?(a):(b))
 /* Variables Location */
 #define RING_VM_STATICVAR_THIS 12
 #endif
