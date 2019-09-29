@@ -72,6 +72,7 @@ SOURCES +=   \
     ggeopositioninfosource.cpp \
     gprintpreviewwidget.cpp \
     gprintpreviewdialog.cpp \
+	gprintdialog.cpp \
     ring_qt.cpp
 
 HEADERS  += \
@@ -127,7 +128,8 @@ HEADERS  += \
     gdrag.h \
     ggeopositioninfosource.h \
     gprintpreviewwidget.h \
-    gprintpreviewdialog.h
+    gprintpreviewdialog.h \
+	gprintdialog.h
 
 #CONFIG += mobility c++11
 #QMAKE_CXXFLAGS = -Wno-write-strings -Wno-unused-parameter -std=c++11
