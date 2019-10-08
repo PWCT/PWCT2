@@ -22,7 +22,7 @@ class GoalDesignerController from WindowsControllerParent
 
 	nInteractionPagesToModifyCount = 0
 
-	lInteractionPagesInGoalDesigner = False
+	lInteractionPagesInGoalDesigner = True
 	if PWCTIsMobile(:ComponentsBrowser) {
 		lComponentsBrowserInGoalDesigner = False
 		lCallInteract = False
@@ -1065,6 +1065,7 @@ class GoalDesignerController from WindowsControllerParent
 				oView.layoutVPages.InsertWidget(0,Last_Window().oView.win,0,0)
 				Last_Window().Start()	# Show The Window
 				oView.widgetVPages.Show()	# Show the Splitter Widget
+				oView.oVPagesScroll.Show()
 			else
 				Last_Window().Start()	# Show The Window
 			}
@@ -1108,6 +1109,7 @@ class GoalDesignerController from WindowsControllerParent
 		nInteractionPagesToModifyCount--
 		if nInteractionPagesToModifyCount = 0 {
 			oView.widgetVPages.Hide()
+			oView.oVPagesScroll.Hide()
 		}
 
 	/*

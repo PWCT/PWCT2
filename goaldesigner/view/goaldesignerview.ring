@@ -175,10 +175,18 @@ class GoalDesignerView from WindowsViewParent
 			setLayout(layoutVPages)
 			hide()
 		}
+		oVPagesScroll = new qScrollArea(null) {
+			setWidget(widgetVPages)
+			setwidgetresizable(True)
+			setminimumwidth(300)
+			Hide()
+		}
+
 		oSplitter = new qSplitter(win) {
 			AddWidget(oTab)
 			AddWidget(widgetCB)
-			AddWidget(widgetVPages)
+			//AddWidget(widgetVPages)
+			AddWidget(oVPagesScroll)
 		}		
 
 		layoutVBtns = new qVBoxLayout()
