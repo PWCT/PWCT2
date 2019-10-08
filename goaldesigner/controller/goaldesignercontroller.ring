@@ -22,7 +22,13 @@ class GoalDesignerController from WindowsControllerParent
 
 	nInteractionPagesToModifyCount = 0
 
-	lInteractionPagesInGoalDesigner = True
+	if PWCTIsMobile(:InteractionPagesInGoalDesigner) {
+		lInteractionPagesInGoalDesigner = False
+	else 
+		lInteractionPagesInGoalDesigner = True
+	}
+
+
 	if PWCTIsMobile(:ComponentsBrowser) {
 		lComponentsBrowserInGoalDesigner = False
 		lCallInteract = False
