@@ -11,7 +11,7 @@ class PlayAsMovieController
 	lPlayingStatus  = :Stop
 
 	oAutoDoc 		= new AutomaticDocumentation
-	lAutomaticDocumentation = False
+	lAutomaticDocumentation = True
 
 	/*
 		Time Machine - Play As Movie 

@@ -10,8 +10,13 @@ Class AutomaticDocumentation
 	cOutputFolder = PWCT_FOLDER+"/shots"
 	nShotID = 0
 
+	lShortName = True
+
 	func GetNewFileName
 		nShotID++
+		if lShortName {
+			return cOutputFolder+"/"+nShotID+".png"
+		}
 		return cOutputFolder+"/screenshot_"+nShotID+"_"+substr(date(),"/","_")+
 					"_"+substr(time(),":","_")+".png"
 
