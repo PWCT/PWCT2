@@ -10,6 +10,9 @@ class PlayAsMovieController
 	lPlayingStarted = False 
 	lPlayingStatus  = :Stop
 
+	oAutoDoc 		= new AutomaticDocumentation
+	lAutomaticDocumentation = False
+
 	/*
 		Time Machine - Play As Movie 
 	*/
@@ -61,6 +64,7 @@ class PlayAsMovieController
 								oView.oStepsTree.SetCurrentItem(oItem,0)
 								PWCT_APP.processevents()
 								sleep(0.5)
+								this.GetScreenShot(oView.win)
 							# Select the Component in the Components Browser
 								cComponentFile 	=  oModel.oInteractionModel.GetInteractionComponent(nStepIID)
 								aComponent 	= ComponentsBrowserWindow().GetComponentByFileName(cComponentFile)
@@ -75,6 +79,7 @@ class PlayAsMovieController
 								ComponentsBrowserWindow().SearchAction()
 								PWCT_APP.processevents()
 								sleep(1)
+								this.GetScreenShot(ComponentsBrowserWindow().oView.win)
 								if ! parent().lDockForComponentsBrowserIsVisible {
 									ComponentsBrowserWindow().CloseAction()
 								}
@@ -96,6 +101,7 @@ class PlayAsMovieController
 								Last_Window().oView.win.raise()
 								PWCT_APP.processevents()
 								sleep(3)
+								this.GetScreenShot(Last_Window().oView.win)
 								Last_Window().CloseBtnAction()
 								ComponentsBrowserWindow().oView.oTextSearch.setText("")
 								oView.win.setfocus(0)
@@ -108,6 +114,7 @@ class PlayAsMovieController
 								oView.sliderTimeMachine.setValue(nValue+1)
 								PWCT_APP.processevents()
 								sleep(0.5)
+								this.GetScreenShot(oView.win)
 								PlayMovieTimer()
 								return 
 						}
@@ -119,5 +126,11 @@ class PlayAsMovieController
 				this.lPlayingStarted = False
 				this.lPlayingStatus  = :Stop
 				oView.PlayMovieIcon()
+				this.GetScreenShot(oView.win)
 			} 
 		}	
+
+	func GetScreenShot oWin
+		if lAutomaticDocumentation {
+			oAutoDoc.GetWindowShot(oWin)
+		}

@@ -15,6 +15,7 @@
 	load "controller/htmlfunctions.ring"
 	load "controller/stepscolorscontroller.ring"
 	load "controller/playasmoviecontroller.ring"
+	load "controller/automaticdocumentation.ring"
 
 	load "view/goaldesignerview.ring"
 	load "view/stepcodeview.ring"
