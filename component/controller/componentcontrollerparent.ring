@@ -447,6 +447,21 @@ Class ComponentControllerParent from WindowsControllerParent
 
 
 	/*
+		Called After Selecting the component, Opening the window
+		The same as AfterOpen but not for internal use 
+	*/
+	func InternalAfterOpen
+		SupportAutoComplete()
+
+	func SupportAutoComplete
+		for aItem in oView.aVariables {
+			if aItem[C_INTERACTION_VL_TYPE] = C_INTERACTION_CT_TEXTBOX {
+				oTextbox = aItem[C_INTERACTION_VL_OBJECT]
+				parent().oAutoComplete.supportControl(oTextbox)
+			}
+		}
+
+	/*
 		To call component (GenerateAction) from another component 
 	*/
 	func UseComponentFromComponent oObject 

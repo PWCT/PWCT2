@@ -13,6 +13,7 @@ class GoalDesignerController from WindowsControllerParent
 	oVisualSourceFile = new VisualSourceFile
 	oProgramController = new ProgramController
 	oPlayAsMovie = new PlayAsMovieController
+	oAutoComplete = new AutoComplete
 
 	cComponentsPath = "vpl/ringpwct/"
 	cFont = "MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0"
@@ -1076,6 +1077,7 @@ class GoalDesignerController from WindowsControllerParent
 				Last_Window().Start()		# Show The Window
 			}
 			nInteractionPagesToModifyCount++
+			Last_Window().InternalAfterOpen()
 			Last_Window().AfterOpen()
 
 	/*
