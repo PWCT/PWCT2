@@ -22,18 +22,8 @@ Class PrintComponentController from ComponentControllerParent
 		NewStep( T_CT_PRINT_ST_PRINT + StyleData(  Variable(:text) )  + cNewLineText)
 
 		if Variable(:type) = 1 {
-			cText = Variable(:text)
-			if substr(cText,CHAR(34)) = 0 {
-				cChar = Char(34)
-			elseif substr(cText,"'") = 0 
-				cChar = "'"
-			elseif substr(cText,"`") = 0 
-				cChar = "`"
-			else 
-				cChar = '"'
-				cText = substr(cText,'"',`"+char(34)+"`)
-			}
-			SetStepCode(cCommand + cChar + cText + cChar)
+			cText = common_acceptanyliteral(Variable(:text))
+			SetStepCode(cCommand + cText)
 		else
 			SetStepCode(cCommand + Variable(:text) )	
 		}

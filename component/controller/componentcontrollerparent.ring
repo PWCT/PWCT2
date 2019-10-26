@@ -539,3 +539,19 @@ Class ComponentControllerParent from WindowsControllerParent
 				cObjectNameForStepCode+
 				cFunc+"("  + Variable(:Value3 ) + ")"  )
 		
+
+	/*
+		Accept literal contains characters like ", ' and `
+	*/
+	func common_acceptanyliteral cText 
+		if substr(cText,CHAR(34)) = 0 {
+			cChar = Char(34)
+		elseif substr(cText,"'") = 0 
+			cChar = "'"
+		elseif substr(cText,"`") = 0 
+			cChar = "`"
+		else 
+			cChar = '"'
+			cText = substr(cText,'"',`"+char(34)+"`)
+		}
+		return cChar + cText + cChar
