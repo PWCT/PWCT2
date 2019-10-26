@@ -22,8 +22,7 @@ Class PrintComponentController from ComponentControllerParent
 		NewStep( T_CT_PRINT_ST_PRINT + StyleData(  Variable(:text) )  + cNewLineText)
 
 		if Variable(:type) = 1 {
-			cText = common_acceptanyliteral(Variable(:text))
-			SetStepCode(cCommand + cText)
+			SetStepCode(cCommand + common_literal(Variable(:text)))
 		else
 			SetStepCode(cCommand + Variable(:text) )	
 		}

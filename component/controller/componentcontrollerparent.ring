@@ -543,7 +543,7 @@ Class ComponentControllerParent from WindowsControllerParent
 	/*
 		Accept literal contains characters like ", ' and `
 	*/
-	func common_acceptanyliteral cText 
+	func common_literal cText 
 		if substr(cText,CHAR(34)) = 0 {
 			cChar = Char(34)
 		elseif substr(cText,"'") = 0 
