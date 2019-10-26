@@ -271,9 +271,6 @@ Class ComponentControllerParent from WindowsControllerParent
 					if nInteractionMode = C_INTERACTIONMODE_MODIFY {
 						parent().DeleteExtraSteps(nIID,nStepNumber)
 					}
-				parent().oView.oStepsTree.setFocus(0)
-				# To Correctly draw items (Avoid a Qt bug in drawing)
-					parent().oView.FixDrawing()
 				CloseBtnAction()
 			}
 		else 
@@ -335,9 +332,9 @@ Class ComponentControllerParent from WindowsControllerParent
 	*/
 
 	func CloseBtnAction
-		# Commented to avoid runtime error (bug : 41)
-			//oView.oWinFilter.delete()
-			//oView.oDesktop.delete()
+		parent().oView.oStepsTree.setFocus(0)
+		# To Correctly draw items (Avoid a Qt bug in drawing)
+			parent().oView.FixDrawing()
 		if nInteractionMode = C_INTERACTIONMODE_MODIFY  {
 			parent().InteractionPageToModifyClosed()
 		}
