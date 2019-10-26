@@ -12,19 +12,19 @@ Class PrintComponentController from ComponentControllerParent
 	func GenerateAction 
 
 		if Variable(:NewLine) {
-			cNewLine = " + nl "
+			cCommand = "? "
 			cNewLineText = T_CT_PRINT_ST_NEWLINE 
 		else
-			cNewLine = ""
+			cCommand = "See "
 			cNewLineText = ""
 		}
 
 		NewStep( T_CT_PRINT_ST_PRINT + StyleData(  Variable(:text) )  + cNewLineText)
 
 		if Variable(:type) = 1 {
-			SetStepCode("See " + CHAR(34) + Variable(:text) + CHAR(34) +  cNewLine)
+			SetStepCode(cCommand + CHAR(34) + Variable(:text) + CHAR(34))
 		else
-			SetStepCode("See " + Variable(:text)  + cNewLine )	
+			SetStepCode(cCommand + Variable(:text) )	
 		}
 
 		return True 
