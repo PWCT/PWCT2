@@ -145,6 +145,8 @@ class ComponentsBrowserController from WindowsControllerParent
 			Last_Window().setParentObject(parent())
 			Last_Window().cComponent = cFile
 			Last_Window().nInteractionMode = C_INTERACTIONMODE_NEW
+			# Register the interaction page in the goal designer 
+				parent().RegisterInteractionPage()
 			Last_Window().InternalAfterOpen()
 			Last_Window().AfterOpen()
 		# Clear the Search TextBox

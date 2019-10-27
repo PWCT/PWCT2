@@ -62,6 +62,10 @@ class GoalDesignerController from WindowsControllerParent
 		lFullScreen = False 
 		oDockGoalDesigner = NULL
 
+	# List of opened interaction pages windows IDs
+		aInteractionPagesWindows = []
+
+
 	/*
 		Purpose : Show the Window
 		Parameters : None
@@ -769,6 +773,7 @@ class GoalDesignerController from WindowsControllerParent
 	*/
 
 	func OpenFileAction2
+		CloseAllInteractionPages()
 		nClock = clock()
 		# Get Data From the Visual Source File
 			oSystemLog.addMessage("Start - Get data from visual source file")
@@ -1076,9 +1081,25 @@ class GoalDesignerController from WindowsControllerParent
 			else
 				Last_Window().Start()		# Show The Window
 			}
+			RegisterInteractionPage()
 			nInteractionPagesToModifyCount++
 			Last_Window().InternalAfterOpen()
 			Last_Window().AfterOpen()
+
+	func RegisterInteractionPage
+		# Add the window ID to the interaction pages list
+			aInteractionPagesWindows + Last_Window().ObjectID()
+
+	func CloseAllInteractionPages
+		for nWindowID in aInteractionPagesWindows {
+			nPos = Get_Window_Pos(nWindowID)
+			if nPos != 0 {
+				GetObjectByID(nWindowID).closeAction()
+			}
+		}
+		aInteractionPagesWindows = []
+		oView.widgetVPages.Hide()
+		oView.oVPagesScroll.Hide()
 
 	/*
 		Purpose : Open component without displaying the Interaction window 
@@ -1365,6 +1386,8 @@ class GoalDesignerController from WindowsControllerParent
 	*/
 
 	func CloseFileAction
+		# Close All Interaction Pages 
+			CloseAllInteractionPages()
 		# Remove the file from the Active Files List 
 			parent().RemoveFileFromActiveFilesList(oVisualSourceFile.cFileName)
 		# Remove the current Steps From the Tree Control
