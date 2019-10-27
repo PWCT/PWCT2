@@ -948,3 +948,7 @@ class EnvironmentController from WindowsControllerParent
 		oProgramController.cFileName = cMainFileName
 		oProgramController.lMainFile = True
 		oProgramController.RunInBrowser(parent())
+
+	func PWCTXButton
+		parent().CheckSavingTheFile()
+		PWCT_APP.Quit()

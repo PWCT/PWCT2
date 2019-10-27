@@ -38,6 +38,7 @@ class EnvironmentView from WindowsViewParent
 				move(-10,0)
 				resize(1000,1000)
 			}
+
 			setLayoutDirection(T_LAYOUTDIRECTION)
 			setWindowTitle(T_ENV_TITLE) # "Programming Without Coding Technology"
 			oSystemLog.addMessage("Create Menubar")
@@ -77,7 +78,7 @@ class EnvironmentView from WindowsViewParent
 			}
 			setwinicon(win,AppFile("images/pwct.png"))	
 			oFilter = new qAllevents(win) {
-				setcloseevent("PWCT_APP.Quit()")
+				setCloseEvent(Method(:PWCTXButton))
 			}
 			installeventfilter(oFilter)
 			oSystemLog.addMessage("Environment Window Loaded!")
