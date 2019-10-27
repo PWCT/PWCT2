@@ -68,6 +68,10 @@ class GoalDesignerController from WindowsControllerParent
 	# Save Flag (To display a message : Save changes?)
 		lSaveFlag = False
 
+	# For coping the buffer used for cut/copy/paste steps 
+		aBackupBuffer 		= []
+		aBackupInteraction 	= []
+
 
 	/*
 		Purpose : Show the Window
@@ -316,7 +320,9 @@ class GoalDesignerController from WindowsControllerParent
 				oView.oStepsTree.clear()
 				oView.oStepsTree.aTree = []
 				oView.oStepsTree.AddStartPoint()
+			SaveBuffer()
 			oModel = new GoalDesignerModel
+			RestoreBuffer()
 		else
 			oView.oStepsTree.DelByObj(oItem)	# Remove it from the [oItem|ID] List
 			oItem.parent().takechild(oItem.parent().indexofchild(oItem))
@@ -702,7 +708,9 @@ class GoalDesignerController from WindowsControllerParent
 			oView.oStepsTree.aTree = []
 			oView.oStepsTree.AddStartPoint()
 		# Create new Model (Steps Tree and Interactions)
+			SaveBuffer()
 			oModel = new GoalDesignerModel
+			RestoreBuffer()
 		# Create the file
 			SaveFileAction2()
 		# Update the Time Machine
@@ -784,6 +792,14 @@ class GoalDesignerController from WindowsControllerParent
 		Output : None
 	*/
 
+	func SaveBuffer
+		aBackupBuffer = oModel.oStepsTreeModel.aBuffer 
+		aBackupInteraction = oModel.oInteractionModelBuffer 
+
+	func RestoreBuffer
+		oModel.oStepsTreeModel.aBuffer  = aBackupBuffer
+		oModel.oInteractionModelBuffer  = aBackupInteraction
+
 	func OpenFileAction2
 		CloseAllInteractionPages()
 		nClock = clock()
@@ -800,8 +816,10 @@ class GoalDesignerController from WindowsControllerParent
 			oSystemLog.addMessage("End - Get data from visual source file")
 		# Update Objects
 			oSystemLog.addMessage("Start - Update Objects")
+			SaveBuffer()
 			oModel.oStepsTreeModel = new TreeModel 
 			oModel.oInteractionModel = new InteractionModel
+			RestoreBuffer()
 			oModel.oStepsTreeModel.SetData(aStepsTree)
 			oModel.oInteractionModel.SetData(aInteractions)
 			oModel.oStepsTreeModel.SetID(nStepsIDCounter)
@@ -1408,7 +1426,9 @@ class GoalDesignerController from WindowsControllerParent
 			oView.oStepsTree.aTree = []
 			oView.oStepsTree.AddStartPoint()
 		# Create new Model (Steps Tree and Interactions)
+			SaveBuffer()
 			oModel = new GoalDesignerModel
+			RestoreBuffer()
 		# Create the file
 			oVisualSourceFile = new VisualSourceFile
 		# Update the Time Machine
