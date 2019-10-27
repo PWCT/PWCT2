@@ -65,6 +65,9 @@ class GoalDesignerController from WindowsControllerParent
 	# List of opened interaction pages windows IDs
 		aInteractionPagesWindows = []
 
+	# Save Flag (To display a message : Save changes?)
+		lSaveFlag = False
+
 
 	/*
 		Purpose : Show the Window
@@ -245,6 +248,7 @@ class GoalDesignerController from WindowsControllerParent
 		if lCheck  {
 			AddStep(oInput.textvalue())
 			oView.fixDrawing()
+			lSaveFlag = True
 		}
 	
 	/*
@@ -277,6 +281,7 @@ class GoalDesignerController from WindowsControllerParent
 			SetStepColor(nStepType)
 			oView.oStepsTree.editstep(oItem,cText,this.oModel.GetStepIgnoreStatus(nStepID))
 			oModel.EditStepName(nStepID,cText)
+			lSaveFlag = True
 		}		
 
 	/*
@@ -319,6 +324,7 @@ class GoalDesignerController from WindowsControllerParent
 		}
 		# Update the Time Machine
 			UpdateTheTimeMachine()
+		lSaveFlag = True
 
 	/*
 		Purpose : Move Step Up Action
@@ -349,6 +355,7 @@ class GoalDesignerController from WindowsControllerParent
 			oModel.MoveStepUp(nStepID)	
 			oView.oStepsTree.SetCurrentItem(oItem,0)	
 		}
+		lSaveFlag = True
 
 	/*
 		Purpose : Move Step Down Action
@@ -379,6 +386,7 @@ class GoalDesignerController from WindowsControllerParent
 			oModel.MoveStepDown(nStepID)	
 			oView.oStepsTree.SetCurrentItem(oItem,0)	
 		}
+		lSaveFlag = True
 
 	/*
 		Purpose : Print Steps Action
@@ -412,6 +420,7 @@ class GoalDesignerController from WindowsControllerParent
 		oItem.parent().takechild(oItem.parent().indexofchild(oItem))
 		# Update the Time Machine
 			UpdateTheTimeMachine()
+		lSaveFlag = True
 
 	/*
 		Purpose : Copy Steps Action
@@ -479,6 +488,7 @@ class GoalDesignerController from WindowsControllerParent
 			for oItem in aSteps {
 				oItem.setexpanded(True)
 			}
+		lSaveFlag = True
 
 	/*
 		Purpose : Increase Size Action
@@ -530,6 +540,7 @@ class GoalDesignerController from WindowsControllerParent
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
 		nIgnore = oModel.IgnoreStep(nStepID)
 		oView.oStepsTree.IgnoreStep(oItem,nIgnore)
+		lSaveFlag = True
 
 	/*
 		Purpose : Step Changed Action
@@ -1635,3 +1646,30 @@ class GoalDesignerController from WindowsControllerParent
 	*/
 	func PlayMovieTimer
 		oPlayAsMovie.PlayMovieTimer(self)
+
+	/*
+		Set the Save Flag (For Save Changes? message)
+	*/
+	func SetSaveFlag
+		lSaveFlag = True
+
+	/*
+		Display Messagebox (Yes/No) to save the changes to the current file
+	*/
+	func CheckSavingTheFile
+		if lSaveFlag {
+			lSaveFlag = False
+			new qmessagebox(oView.win)
+			{
+                		setwindowtitle("Save") 
+                		settext("Save Changes?") 
+                		setstandardbuttons(QMessageBox_Yes | QMessageBox_No)
+                		result = exec()
+		          	this.oView.win {
+                        		if result = QMessageBox_No {
+						return 
+                        		}
+                		}
+			}
+			SaveCurrentFileAction()
+		}

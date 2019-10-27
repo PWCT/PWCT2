@@ -261,6 +261,7 @@ class EnvironmentController from WindowsControllerParent
 		PWCT_APP.processevents()
 		
 	func openVisualFile cFileName
+		parent().CheckSavingTheFile()
 		# Check the file size
 			if len(read(cFileName)) < 50*1024 {	# file size less than 50 KB
 				lDisplayLoadingMessage = False 
