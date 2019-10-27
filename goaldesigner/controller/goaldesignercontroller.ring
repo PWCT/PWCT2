@@ -589,6 +589,7 @@ class GoalDesignerController from WindowsControllerParent
 	*/
 
 	func ChangeTimeMachinePointAction
+		CloseAllInteractionPages()
 		oView.win.setUpdatesEnabled(False)
 		oTMController.ChangeTimeMachinePoint(oView,oModel)
 		oView.win.setUpdatesEnabled(True)
@@ -1100,6 +1101,7 @@ class GoalDesignerController from WindowsControllerParent
 		aInteractionPagesWindows = []
 		oView.widgetVPages.Hide()
 		oView.oVPagesScroll.Hide()
+		nInteractionPagesToModifyCount = 0
 
 	/*
 		Purpose : Open component without displaying the Interaction window 
