@@ -238,40 +238,40 @@ class EnvironmentView from WindowsViewParent
 				addaction(oAction)
 
 				addseparator()
-				subStyle = addmenu("Mode")
+				subStyle = addmenu(T_ENV_MENU_MODE) # "Mode"
 				subStyle {
 					oAction = new qAction(win) {
 						setShortcut(new QKeySequence("Ctrl+1"))
 						setclickEvent(Method("SetMode(C_ENV_MODE_GENERAL)"))
-						settext("General (All Windows)")
+						settext(T_ENV_MENU_MODE_GENERAL) # "General (All Windows)"
 					}
 					addaction(oAction)
 					addseparator()
 					oAction = new qAction(win) {
 						setShortcut(new QKeySequence("Ctrl+2"))
 						setclickEvent(Method("SetMode(C_ENV_MODE_LEFT)"))
-						settext("Programming (All Windows) - Left")
+						settext(T_ENV_MENU_MODE_PROGRAMMING_ALL_LEFT) # "Programming (All Windows) - Left"
 					}
 					addaction(oAction)
 					addseparator()
 					oAction = new qAction(win) {
 						setShortcut(new QKeySequence("Ctrl+3"))
 						setclickEvent(Method("SetMode(C_ENV_MODE_RIGHT)"))
-						settext("Programming (All Windows) - Right")
+						settext(T_ENV_MENU_MODE_PROGRAMMING_ALL_RIGTH) # "Programming (All Windows) - Right"
 					}
 					addaction(oAction)
 					addseparator()
 					oAction = new qAction(win) {
 						setShortcut(new QKeySequence("Ctrl+4"))
 						setclickEvent(Method("SetMode(C_ENV_MODE_GD)"))
-						settext("Programming (Goal Designer)")
+						settext(T_ENV_MENU_MODE_PROGRAMMING_GOALDESIGNER) # "Programming (Goal Designer)"
 					}
 					addaction(oAction)
 					addseparator()
 					oAction = new qAction(win) {
 						setShortcut(new QKeySequence("Ctrl+5"))
 						setclickEvent(Method("SetMode(C_ENV_MODE_GUI)"))
-						settext("GUI Development (Goal Designer + Form Designer)")
+						settext(T_ENV_MENU_MODE_GUI) # "GUI Development (Goal Designer + Form Designer)"
 					}
 					addaction(oAction)
 				}

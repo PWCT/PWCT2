@@ -43,6 +43,14 @@
 	T_ENV_MENU_GOALDESIGNER = "مصمم الهدف"
 	T_ENV_MENU_OUTPUTWINDOW = "نافذة النتائج"
 	T_ENV_MENU_FORMDESIGNERWINDOW = "نافذة مصمم النماذج"
+
+	T_ENV_MENU_MODE 			= "نمط بيئة العمل"
+	T_ENV_MENU_MODE_GENERAL 		= "عام - كل النوافذ"
+	T_ENV_MENU_MODE_PROGRAMMING_ALL_LEFT 	= "برمجة - جهة اليسار"
+	T_ENV_MENU_MODE_PROGRAMMING_ALL_RIGTH	= "برمجة- من اليمين"
+	T_ENV_MENU_MODE_PROGRAMMING_GOALDESIGNER= "برمجة - مصمم الهدف"
+	T_ENV_MENU_MODE_GUI 			= "تطوير تطبيق رسومي - مصمم الهدف و مصمم النموذج"
+
 	T_ENV_MENU_DEBUG = "تنقيح - تشغيل ثم إنتظار"
 	T_ENV_MENU_RUN = "تشغيل"
 	T_ENV_MENU_RUNNOCONSOLE = "تشغيل تطبيق رسومى"

@@ -43,6 +43,15 @@
 	T_ENV_MENU_GOALDESIGNER = "Goal Designer"
 	T_ENV_MENU_OUTPUTWINDOW = "Output Window"
 	T_ENV_MENU_FORMDESIGNERWINDOW = "Form Designer Window"
+
+	T_ENV_MENU_MODE 			= "Mode"
+	T_ENV_MENU_MODE_GENERAL 		= "General (All Windows)"
+	T_ENV_MENU_MODE_PROGRAMMING_ALL_LEFT 	= "Programming (All Windows) - Left"
+	T_ENV_MENU_MODE_PROGRAMMING_ALL_RIGTH	= "Programming (All Windows) - Right"
+	T_ENV_MENU_MODE_PROGRAMMING_GOALDESIGNER= "Programming (Goal Designer)"
+	T_ENV_MENU_MODE_GUI 			= "GUI Development (Goal Designer + Form Designer)"
+
+
 	T_ENV_MENU_DEBUG = "Debug (Run then wait!)"
 	T_ENV_MENU_RUN = "Run"
 	T_ENV_MENU_RUNNOCONSOLE = "Run GUI Application (No Console)"
