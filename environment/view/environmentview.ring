@@ -236,6 +236,46 @@ class EnvironmentView from WindowsViewParent
 					settext(T_ENV_MENU_FORMDESIGNERWINDOW) # "Form Designer"
 				}
 				addaction(oAction)
+
+				addseparator()
+				subStyle = addmenu("Mode")
+				subStyle {
+					oAction = new qAction(win) {
+						setShortcut(new QKeySequence("Ctrl+1"))
+						setclickEvent(Method("SetMode(1)"))
+						settext("General (All Windows)")
+					}
+					addaction(oAction)
+					addseparator()
+					oAction = new qAction(win) {
+						setShortcut(new QKeySequence("Ctrl+2"))
+						setclickEvent(Method("SetMode(2)"))
+						settext("Programming (All Windows) - Left")
+					}
+					addaction(oAction)
+					addseparator()
+					oAction = new qAction(win) {
+						setShortcut(new QKeySequence("Ctrl+3"))
+						setclickEvent(Method("SetMode(3)"))
+						settext("Programming (All Windows) - Right")
+					}
+					addaction(oAction)
+					addseparator()
+					oAction = new qAction(win) {
+						setShortcut(new QKeySequence("Ctrl+4"))
+						setclickEvent(Method("SetMode(4)"))
+						settext("Programming (Goal Designer)")
+					}
+					addaction(oAction)
+					addseparator()
+					oAction = new qAction(win) {
+						setShortcut(new QKeySequence("Ctrl+5"))
+						setclickEvent(Method("SetMode(5)"))
+						settext("GUI Development (Goal Designer + Form Designer)")
+					}
+					addaction(oAction)
+				}
+
 			}
 			subProgram { 
 				if PWCTIsMobile(:RunApplication) {

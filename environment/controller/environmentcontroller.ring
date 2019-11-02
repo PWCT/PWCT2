@@ -952,3 +952,87 @@ class EnvironmentController from WindowsControllerParent
 	func PWCTXButton
 		parent().CheckSavingTheFile()
 		PWCT_APP.Quit()
+
+	func SetMode nMode
+		switch nMode {
+			on 1
+				oView.oDockFilesManager.Show()
+				oView.oDockGoalDesigner.show()
+				oView.oDockComponentsBrowser.show()
+				oView.oDockOutputWindow.show()
+				oView.oDockFormDesigner.show()
+				oView.win {
+					adddockwidget(Qt_LeftDockWidgetArea,this.oView.oDockFilesManager,1)
+					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockGoalDesigner,2)
+					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockComponentsBrowser,1)
+					adddockwidget(Qt_BottomDockWidgetArea,this.oView.oDockOutputWindow,1)
+					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockFormDesigner,1)
+					tabifydockwidget(this.oView.oDockGoalDesigner,this.oView.oDockFormDesigner)
+					//tabifydockwidget(this.oView.oDockGoalDesigner,this.oView.oDockComponentsBrowser)
+				}
+				oView.oDockGoalDesigner.raise()
+			on 2
+				oView.oDockFilesManager.Show()
+				oView.oDockGoalDesigner.show()
+				oView.oDockComponentsBrowser.show()
+				oView.oDockOutputWindow.show()
+				oView.oDockFormDesigner.show()
+				oView.win {
+					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockGoalDesigner,2)
+					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockFilesManager,1)
+					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockComponentsBrowser,1)
+					adddockwidget(Qt_BottomDockWidgetArea,this.oView.oDockOutputWindow,1)
+					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockFormDesigner,1)
+					tabifydockwidget(this.oView.oDockGoalDesigner,this.oView.oDockFormDesigner)
+					tabifydockwidget(this.oView.oDockFilesManager,this.oView.oDockOutputWindow)
+					tabifydockwidget(this.oView.oDockFilesManager,this.oView.oDockComponentsBrowser)
+				}
+				oView.oDockGoalDesigner.raise()
+				oView.oDockFilesManager.raise()
+			on 3
+				oView.oDockFilesManager.Show()
+				oView.oDockGoalDesigner.show()
+				oView.oDockComponentsBrowser.show()
+				oView.oDockOutputWindow.show()
+				oView.oDockFormDesigner.show()
+				oView.win {
+					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockGoalDesigner,2)
+					adddockwidget(Qt_LeftDockWidgetArea,this.oView.oDockFilesManager,1)
+					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockComponentsBrowser,1)
+					adddockwidget(Qt_BottomDockWidgetArea,this.oView.oDockOutputWindow,1)
+					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockFormDesigner,1)
+					tabifydockwidget(this.oView.oDockGoalDesigner,this.oView.oDockFormDesigner)
+					tabifydockwidget(this.oView.oDockFilesManager,this.oView.oDockOutputWindow)
+					tabifydockwidget(this.oView.oDockFilesManager,this.oView.oDockComponentsBrowser)
+				}
+				oView.oDockGoalDesigner.raise()
+				oView.oDockFilesManager.raise()
+
+			on 4
+				oView.oDockFilesManager.hide()
+				oView.oDockGoalDesigner.show()
+				oView.oDockComponentsBrowser.show()
+				oView.oDockOutputWindow.hide()
+				oView.oDockFormDesigner.hide()
+				oView.win {
+					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockGoalDesigner,2)
+					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockComponentsBrowser,1)
+					tabifydockwidget(this.oView.oDockGoalDesigner,this.oView.oDockComponentsBrowser)
+				}
+				oView.oDockGoalDesigner.raise()
+			on 5
+				oView.oDockFilesManager.hide()
+				oView.oDockGoalDesigner.show()
+				oView.oDockComponentsBrowser.show()
+				oView.oDockOutputWindow.hide()
+				oView.oDockFormDesigner.show()
+				oView.win {
+					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockGoalDesigner,2)
+					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockComponentsBrowser,1)
+					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockFormDesigner,1)
+					tabifydockwidget(this.oView.oDockGoalDesigner,this.oView.oDockComponentsBrowser)
+				}
+				oView.oDockGoalDesigner.raise()
+				oView.oDockFormDesigner.raise()
+		}
+		nDefaultMode = nMode
