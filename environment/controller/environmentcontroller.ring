@@ -953,14 +953,17 @@ class EnvironmentController from WindowsControllerParent
 		parent().CheckSavingTheFile()
 		PWCT_APP.Quit()
 
+	func ShowDockableWindows
+		oView.oDockFilesManager.Show()
+		oView.oDockGoalDesigner.show()
+		oView.oDockComponentsBrowser.show()
+		oView.oDockOutputWindow.show()
+		oView.oDockFormDesigner.show()
+
 	func SetMode nMode
 		switch nMode {
 			on C_ENV_MODE_GENERAL
-				oView.oDockFilesManager.Show()
-				oView.oDockGoalDesigner.show()
-				oView.oDockComponentsBrowser.show()
-				oView.oDockOutputWindow.show()
-				oView.oDockFormDesigner.show()
+				ShowDockableWindows()
 				oView.win {
 					adddockwidget(Qt_LeftDockWidgetArea,this.oView.oDockFilesManager,1)
 					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockGoalDesigner,2)
@@ -971,11 +974,7 @@ class EnvironmentController from WindowsControllerParent
 				}
 				oView.oDockGoalDesigner.raise()
 			on C_ENV_MODE_LEFT
-				oView.oDockFilesManager.Show()
-				oView.oDockGoalDesigner.show()
-				oView.oDockComponentsBrowser.show()
-				oView.oDockOutputWindow.show()
-				oView.oDockFormDesigner.show()
+				ShowDockableWindows()
 				oView.win {
 					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockGoalDesigner,2)
 					adddockwidget(Qt_LeftDockWidgetArea,this.oView.oDockFilesManager,1)
@@ -989,11 +988,7 @@ class EnvironmentController from WindowsControllerParent
 				oView.oDockGoalDesigner.raise()
 				oView.oDockFilesManager.raise()
 			on C_ENV_MODE_RIGHT
-				oView.oDockFilesManager.Show()
-				oView.oDockGoalDesigner.show()
-				oView.oDockComponentsBrowser.show()
-				oView.oDockOutputWindow.show()
-				oView.oDockFormDesigner.show()
+				ShowDockableWindows()
 				oView.win {
 					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockGoalDesigner,2)
 					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockFilesManager,1)
@@ -1007,9 +1002,8 @@ class EnvironmentController from WindowsControllerParent
 				oView.oDockGoalDesigner.raise()
 				oView.oDockFilesManager.raise()
 			on C_ENV_MODE_GD
+				ShowDockableWindows()
 				oView.oDockFilesManager.hide()
-				oView.oDockGoalDesigner.show()
-				oView.oDockComponentsBrowser.show()
 				oView.oDockOutputWindow.hide()
 				oView.oDockFormDesigner.hide()
 				oView.win {
@@ -1019,11 +1013,9 @@ class EnvironmentController from WindowsControllerParent
 				}
 				oView.oDockGoalDesigner.raise()
 			on C_ENV_MODE_GUI
+				ShowDockableWindows()
 				oView.oDockFilesManager.hide()
-				oView.oDockGoalDesigner.show()
-				oView.oDockComponentsBrowser.show()
 				oView.oDockOutputWindow.hide()
-				oView.oDockFormDesigner.show()
 				oView.win {
 					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockGoalDesigner,2)
 					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockComponentsBrowser,1)
