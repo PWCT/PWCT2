@@ -968,7 +968,6 @@ class EnvironmentController from WindowsControllerParent
 					adddockwidget(Qt_BottomDockWidgetArea,this.oView.oDockOutputWindow,1)
 					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockFormDesigner,1)
 					tabifydockwidget(this.oView.oDockGoalDesigner,this.oView.oDockFormDesigner)
-					//tabifydockwidget(this.oView.oDockGoalDesigner,this.oView.oDockComponentsBrowser)
 				}
 				oView.oDockGoalDesigner.raise()
 			on C_ENV_MODE_LEFT
