@@ -51,6 +51,10 @@
 	T_ENV_MENU_MODE_PROGRAMMING_GOALDESIGNER= "Programming (Goal Designer)"
 	T_ENV_MENU_MODE_GUI 			= "GUI Development (Goal Designer + Form Designer)"
 
+	T_ENV_MENU_STYLE		= "Style"
+	T_ENV_MENU_STYLEWINDOWS 	= "Windows"
+	T_ENV_MENU_STYLEFUSIONWHITE 	= "Fusion: White"
+	T_ENV_MENU_STYLEFUSIONBLACK 	= "Fusion: Black"
 
 	T_ENV_MENU_DEBUG = "Debug (Run then wait!)"
 	T_ENV_MENU_RUN = "Run"

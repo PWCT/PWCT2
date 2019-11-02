@@ -95,3 +95,8 @@
 	C_ENV_MODE_RIGHT			= 3
 	C_ENV_MODE_GD				= 4
 	C_ENV_MODE_GUI				= 5
+
+# Environment Style
+	C_ENV_STYLE_WINDOWS 	= 1
+	C_ENV_STYLE_WHITE 	= 2
+	C_ENV_STYLE_BLACK 	= 3

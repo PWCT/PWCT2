@@ -51,6 +51,11 @@
 	T_ENV_MENU_MODE_PROGRAMMING_GOALDESIGNER= "برمجة - مصمم الهدف"
 	T_ENV_MENU_MODE_GUI 			= "تطوير تطبيق رسومي - مصمم الهدف و مصمم النموذج"
 
+	T_ENV_MENU_STYLE		= "النمط"
+	T_ENV_MENU_STYLEWINDOWS 	= "ويندوز"
+	T_ENV_MENU_STYLEFUSIONWHITE 	= "عصري : أبيض"
+	T_ENV_MENU_STYLEFUSIONBLACK 	= "عصري : أسود"
+
 	T_ENV_MENU_DEBUG = "تنقيح - تشغيل ثم إنتظار"
 	T_ENV_MENU_RUN = "تشغيل"
 	T_ENV_MENU_RUNNOCONSOLE = "تشغيل تطبيق رسومى"

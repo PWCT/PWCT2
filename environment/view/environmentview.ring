@@ -276,6 +276,30 @@ class EnvironmentView from WindowsViewParent
 					addaction(oAction)
 				}
 
+				addseparator()
+				subStyle = addmenu(T_ENV_MENU_STYLE) # "Style"
+				subStyle {
+					oAction = new qAction(win) {
+						setShortcut(new QKeySequence("Ctrl+shift+1"))
+						setclickEvent(Method("SetStyle(C_ENV_STYLE_WINDOWS)"))
+						settext(T_ENV_MENU_STYLEWINDOWS)  # "Windows"
+					}
+					addaction(oAction)
+					addseparator()
+					oAction = new qAction(win) {
+						setShortcut(new QKeySequence("Ctrl+shift+2"))
+						setclickEvent(Method("SetStyle(C_ENV_STYLE_WHITE)"))
+						settext(T_ENV_MENU_STYLEFUSIONWHITE) # "Fusion: White"
+					}
+					addaction(oAction)
+					addseparator()
+					oAction = new qAction(win) {
+						setShortcut(new QKeySequence("Ctrl+shift+3"))
+						setclickEvent(Method("SetStyle(C_ENV_STYLE_BLACK)"))
+						settext(T_ENV_MENU_STYLEFUSIONBLACK)  # "Fusion: Black"
+					}
+					addaction(oAction)					
+				}
 			}
 			subProgram { 
 				if PWCTIsMobile(:RunApplication) {

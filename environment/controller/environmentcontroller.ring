@@ -1026,3 +1026,27 @@ class EnvironmentController from WindowsControllerParent
 				oView.oDockFormDesigner.raise()
 		}
 		nDefaultMode = nMode
+
+	func SetStyle nStyle
+		nDefaultStyle  = nStyle
+		Switch nStyle {
+			on C_ENV_STYLE_WINDOWS
+				StyleWindows()
+			on C_ENV_STYLE_WHITE
+				StyleFusionWhite()
+			on C_ENV_STYLE_BLACK
+				StyleFusionBlack()
+		}
+
+	func StyleWindows
+		if isWindows() {
+			PWCT_APP.StyleWindowsVista()
+		else 
+			PWCT_APP.StyleWindows()
+		}
+
+	func StyleFusionWhite
+		PWCT_APP.Stylefusion()
+
+	func StyleFusionBlack
+		PWCT_APP.Stylefusionblack()
