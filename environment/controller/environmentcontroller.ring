@@ -955,7 +955,7 @@ class EnvironmentController from WindowsControllerParent
 
 	func SetMode nMode
 		switch nMode {
-			on 1
+			on C_ENV_MODE_GENERAL
 				oView.oDockFilesManager.Show()
 				oView.oDockGoalDesigner.show()
 				oView.oDockComponentsBrowser.show()
@@ -971,7 +971,25 @@ class EnvironmentController from WindowsControllerParent
 					//tabifydockwidget(this.oView.oDockGoalDesigner,this.oView.oDockComponentsBrowser)
 				}
 				oView.oDockGoalDesigner.raise()
-			on 2
+			on C_ENV_MODE_LEFT
+				oView.oDockFilesManager.Show()
+				oView.oDockGoalDesigner.show()
+				oView.oDockComponentsBrowser.show()
+				oView.oDockOutputWindow.show()
+				oView.oDockFormDesigner.show()
+				oView.win {
+					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockGoalDesigner,2)
+					adddockwidget(Qt_LeftDockWidgetArea,this.oView.oDockFilesManager,1)
+					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockComponentsBrowser,1)
+					adddockwidget(Qt_BottomDockWidgetArea,this.oView.oDockOutputWindow,1)
+					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockFormDesigner,1)
+					tabifydockwidget(this.oView.oDockGoalDesigner,this.oView.oDockFormDesigner)
+					tabifydockwidget(this.oView.oDockFilesManager,this.oView.oDockOutputWindow)
+					tabifydockwidget(this.oView.oDockFilesManager,this.oView.oDockComponentsBrowser)
+				}
+				oView.oDockGoalDesigner.raise()
+				oView.oDockFilesManager.raise()
+			on C_ENV_MODE_RIGHT
 				oView.oDockFilesManager.Show()
 				oView.oDockGoalDesigner.show()
 				oView.oDockComponentsBrowser.show()
@@ -989,26 +1007,7 @@ class EnvironmentController from WindowsControllerParent
 				}
 				oView.oDockGoalDesigner.raise()
 				oView.oDockFilesManager.raise()
-			on 3
-				oView.oDockFilesManager.Show()
-				oView.oDockGoalDesigner.show()
-				oView.oDockComponentsBrowser.show()
-				oView.oDockOutputWindow.show()
-				oView.oDockFormDesigner.show()
-				oView.win {
-					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockGoalDesigner,2)
-					adddockwidget(Qt_LeftDockWidgetArea,this.oView.oDockFilesManager,1)
-					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockComponentsBrowser,1)
-					adddockwidget(Qt_BottomDockWidgetArea,this.oView.oDockOutputWindow,1)
-					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockFormDesigner,1)
-					tabifydockwidget(this.oView.oDockGoalDesigner,this.oView.oDockFormDesigner)
-					tabifydockwidget(this.oView.oDockFilesManager,this.oView.oDockOutputWindow)
-					tabifydockwidget(this.oView.oDockFilesManager,this.oView.oDockComponentsBrowser)
-				}
-				oView.oDockGoalDesigner.raise()
-				oView.oDockFilesManager.raise()
-
-			on 4
+			on C_ENV_MODE_GD
 				oView.oDockFilesManager.hide()
 				oView.oDockGoalDesigner.show()
 				oView.oDockComponentsBrowser.show()
@@ -1020,7 +1019,7 @@ class EnvironmentController from WindowsControllerParent
 					tabifydockwidget(this.oView.oDockGoalDesigner,this.oView.oDockComponentsBrowser)
 				}
 				oView.oDockGoalDesigner.raise()
-			on 5
+			on C_ENV_MODE_GUI
 				oView.oDockFilesManager.hide()
 				oView.oDockGoalDesigner.show()
 				oView.oDockComponentsBrowser.show()

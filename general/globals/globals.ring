@@ -89,3 +89,9 @@
 # Components Path
 	C_CB_COMPONENTSPATH 			= "vpl/ringpwct/"
 
+# Enviroment Mode
+	C_ENV_MODE_GENERAL			= 1
+	C_ENV_MODE_LEFT				= 2
+	C_ENV_MODE_RIGHT			= 3
+	C_ENV_MODE_GD				= 4
+	C_ENV_MODE_GUI				= 5

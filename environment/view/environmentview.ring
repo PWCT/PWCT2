@@ -242,35 +242,35 @@ class EnvironmentView from WindowsViewParent
 				subStyle {
 					oAction = new qAction(win) {
 						setShortcut(new QKeySequence("Ctrl+1"))
-						setclickEvent(Method("SetMode(1)"))
+						setclickEvent(Method("SetMode(C_ENV_MODE_GENERAL)"))
 						settext("General (All Windows)")
 					}
 					addaction(oAction)
 					addseparator()
 					oAction = new qAction(win) {
 						setShortcut(new QKeySequence("Ctrl+2"))
-						setclickEvent(Method("SetMode(2)"))
+						setclickEvent(Method("SetMode(C_ENV_MODE_LEFT)"))
 						settext("Programming (All Windows) - Left")
 					}
 					addaction(oAction)
 					addseparator()
 					oAction = new qAction(win) {
 						setShortcut(new QKeySequence("Ctrl+3"))
-						setclickEvent(Method("SetMode(3)"))
+						setclickEvent(Method("SetMode(C_ENV_MODE_RIGHT)"))
 						settext("Programming (All Windows) - Right")
 					}
 					addaction(oAction)
 					addseparator()
 					oAction = new qAction(win) {
 						setShortcut(new QKeySequence("Ctrl+4"))
-						setclickEvent(Method("SetMode(4)"))
+						setclickEvent(Method("SetMode(C_ENV_MODE_GD)"))
 						settext("Programming (Goal Designer)")
 					}
 					addaction(oAction)
 					addseparator()
 					oAction = new qAction(win) {
 						setShortcut(new QKeySequence("Ctrl+5"))
-						setclickEvent(Method("SetMode(5)"))
+						setclickEvent(Method("SetMode(C_ENV_MODE_GUI)"))
 						settext("GUI Development (Goal Designer + Form Designer)")
 					}
 					addaction(oAction)
