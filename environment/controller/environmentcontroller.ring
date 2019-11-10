@@ -1011,12 +1011,13 @@ class EnvironmentController from WindowsControllerParent
 			on C_ENV_MODE_GD
 				ShowDockableWindows()
 				oView.oDockFilesManager.hide()
-				oView.oDockOutputWindow.hide()
 				oView.oDockFormDesigner.hide()
 				oView.win {
-					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockGoalDesigner,2)
-					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockComponentsBrowser,1)
+					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockGoalDesigner,1)
+					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockComponentsBrowser,2)
+					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockOutputWindow,2)
 					tabifydockwidget(this.oView.oDockGoalDesigner,this.oView.oDockComponentsBrowser)
+					tabifydockwidget(this.oView.oDockComponentsBrowser,this.oView.oDockOutputWindow)
 				}
 				oView.oDockGoalDesigner.raise()
 			on C_ENV_MODE_GUI

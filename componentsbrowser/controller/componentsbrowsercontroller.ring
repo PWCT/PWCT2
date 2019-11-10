@@ -154,7 +154,8 @@ class ComponentsBrowserController from WindowsControllerParent
 		if not Parent().lComponentsBrowserInGoalDesigner and not parent().isDockForComponentsBrowser() {
 			oView.win.hide()
 		}
-		if PWCTIsMobile(:ComponentSelected) and parent().isDockForComponentsBrowser() {
+		if ( PWCTIsMobile(:ComponentSelected) and parent().isDockForComponentsBrowser()) or
+			C_ENV_DEFAULT_MODE = C_ENV_MODE_GD {
 			parent().parent().oView.oDockGoalDesigner.raise()
 		}
 
