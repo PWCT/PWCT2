@@ -1032,11 +1032,43 @@ class EnvironmentController from WindowsControllerParent
 		Switch nStyle {
 			on C_ENV_STYLE_WINDOWS
 				StyleWindows()
+				C_STEPCOLOR_COMMENT_TEXT = 'green'
+				C_STEPCOLOR_COMMENT_BACKCOLOR = '#ffd572'
+				C_STEPCOLOR_ROOT_TEXT = '#2a3178'
+				C_STEPCOLOR_ROOT_BACKCOLOR = '#6fff67'
+				C_STEPCOLOR_ALLOWINTERACTION_TEXT = '#ffffff'
+				C_STEPCOLOR_ALLOWINTERACTION_BACKCOLOR = '#418aff'
+				C_STEPCOLOR_INFO_TEXT = '#333f68'
+				C_STEPCOLOR_INFO_BACKCOLOR = '#ffbb5c'
+				C_STEPCOLOR_DATA_TEXT = 'gray'
+				C_STEPCOLOR_DATA_BACKCOLOR = '#60fff5'				
 			on C_ENV_STYLE_WHITE
 				StyleFusionWhite()
+				C_STEPCOLOR_COMMENT_TEXT = 'green'
+				C_STEPCOLOR_COMMENT_BACKCOLOR = ''
+				C_STEPCOLOR_ROOT_TEXT = 'blue'
+				C_STEPCOLOR_ROOT_BACKCOLOR = ''
+				C_STEPCOLOR_ALLOWINTERACTION_TEXT = 'black'
+				C_STEPCOLOR_ALLOWINTERACTION_BACKCOLOR = '#00ff00'
+				C_STEPCOLOR_INFO_TEXT = 'black'
+				C_STEPCOLOR_INFO_BACKCOLOR = ''
+				C_STEPCOLOR_DATA_TEXT = 'gray'
+				C_STEPCOLOR_DATA_BACKCOLOR = ''
 			on C_ENV_STYLE_BLACK
 				StyleFusionBlack()
+				C_STEPCOLOR_COMMENT_TEXT = '#ffbfb2'
+				C_STEPCOLOR_COMMENT_BACKCOLOR = ''
+				C_STEPCOLOR_ROOT_TEXT = '#bbff1a'
+				C_STEPCOLOR_ROOT_BACKCOLOR = ''
+				C_STEPCOLOR_ALLOWINTERACTION_TEXT = '#1a1a1a'
+				C_STEPCOLOR_ALLOWINTERACTION_BACKCOLOR = '#90ffb3'
+				C_STEPCOLOR_INFO_TEXT = '#ffffff'
+				C_STEPCOLOR_INFO_BACKCOLOR = ''
+				C_STEPCOLOR_DATA_TEXT = '#9e4a9d'
+				C_STEPCOLOR_DATA_BACKCOLOR = ''
 		}
+		parent().ComponentsBrowserWindow().oView.oComponentsTree.TreeStyle()
+		parent().refreshStepsTree()
 
 	func StyleWindows
 		if isWindows() {
