@@ -38,6 +38,7 @@ func PWCTIsMobile cOption
 		:ShowLoadingMessage	(Environment - Change file - Form File - loading message)
 		:GoalDesignerFullScreen	(Goal Designer - Full Screen Button)
 		:OnlyPWCTFilesFolder	(Show only PWCTFiles folder)
+		:DefaultMode		(Default mode for the PWCT Environment dockable windows)
 	*/
 	//if cOption = :RunApplication or cOption = :SendDataToApplication  return True ok
 	return isMobile()

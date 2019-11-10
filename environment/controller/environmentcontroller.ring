@@ -671,7 +671,9 @@ class EnvironmentController from WindowsControllerParent
 		ComponentsBrowserFont()
 		ComponentsFont()
 		SetStyle(C_ENV_DEFAULT_STYLE)
-		SetMode(C_ENV_DEFAULT_MODE)
+		if ! PWCTIsMobile(:DefaultMode) {
+			SetMode(C_ENV_DEFAULT_MODE)
+		}
 
 	func GoalDesignerFont
 		# Set The Goal Designer Font
