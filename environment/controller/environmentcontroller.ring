@@ -621,6 +621,7 @@ class EnvironmentController from WindowsControllerParent
 				"C_STEPSTREE_SECTIONCOLOR = '" + C_STEPSTREE_SECTIONCOLOR + "'" + nl + 
 				"C_STEPSTREE_SELECTIONBACKGROUND = '" + C_STEPSTREE_SELECTIONBACKGROUND + "'" + nl + 
 				"C_ENV_DEFAULT_STYLE = '" + C_ENV_DEFAULT_STYLE + "'" + nl + 
+				"C_ENV_DEFAULT_MODE = '" + C_ENV_DEFAULT_MODE + "'" + nl + 
 				"cFont = '" + cFont + "'" + nl + 
 			    "nFontSize = " + nFontSize  + nl + 
 			    "lShowFilesManager = " + oView.oDockFilesManager.isvisible() + nl +
@@ -670,6 +671,7 @@ class EnvironmentController from WindowsControllerParent
 		ComponentsBrowserFont()
 		ComponentsFont()
 		SetStyle(C_ENV_DEFAULT_STYLE)
+		SetMode(C_ENV_DEFAULT_MODE)
 
 	func GoalDesignerFont
 		# Set The Goal Designer Font
@@ -965,6 +967,7 @@ class EnvironmentController from WindowsControllerParent
 		oView.oDockFormDesigner.show()
 
 	func SetMode nMode
+		C_ENV_DEFAULT_MODE = nMode
 		switch nMode {
 			on C_ENV_MODE_GENERAL
 				ShowDockableWindows()
@@ -1029,7 +1032,6 @@ class EnvironmentController from WindowsControllerParent
 				oView.oDockGoalDesigner.raise()
 				oView.oDockFormDesigner.raise()
 		}
-		nDefaultMode = nMode
 
 	func SetStyle nStyle
 		C_ENV_DEFAULT_STYLE  = nStyle
