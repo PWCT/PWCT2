@@ -55,6 +55,10 @@
 	T_ENV_MENU_STYLEWINDOWS 	= "Windows"
 	T_ENV_MENU_STYLEFUSIONWHITE 	= "Fusion: White"
 	T_ENV_MENU_STYLEFUSIONBLACK 	= "Fusion: Black"
+	T_ENV_MENU_STYLEWINDOWSBLOCKS		= "Windows - Blocks"
+	T_ENV_MENU_STYLEFUSIONWHITEBLOCKS	= "Fusion: White - Blocks"
+	T_ENV_MENU_STYLEFUSIONBLACKBLOCKS 	= "Fusion: Black - Blocks"
+
 
 	T_ENV_MENU_DEBUG = "Debug (Run then wait!)"
 	T_ENV_MENU_RUN = "Run"

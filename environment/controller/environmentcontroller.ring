@@ -1040,11 +1040,23 @@ class EnvironmentController from WindowsControllerParent
 		C_ENV_DEFAULT_STYLE  = nStyle
 		Switch nStyle {
 			on C_ENV_STYLE_WINDOWS
-				StyleWindows()			
+				StyleWindows()	
+				StyleColorWhite()		
+			on C_ENV_STYLE_WINDOWSB
+				StyleWindows()	
+				StyleColorBlocks()		
 			on C_ENV_STYLE_WHITE
 				StyleFusionWhite()
+				StyleColorWhite()
+			on C_ENV_STYLE_WHITEB
+				StyleFusionWhite()
+				StyleColorBlocks()
 			on C_ENV_STYLE_BLACK
 				StyleFusionBlack()
+				StyleColorBlack()
+			on C_ENV_STYLE_BLACKB
+				StyleFusionBlack()
+				StyleColorBlocks()
 		}
 		parent().ComponentsBrowserWindow().oView.oComponentsTree.TreeStyle()
 		parent().refreshStepsTree()
@@ -1055,6 +1067,8 @@ class EnvironmentController from WindowsControllerParent
 		else 
 			PWCT_APP.StyleWindows()
 		}
+
+	func StyleColorBlocks()
 		C_STEPCOLOR_COMMENT_TEXT = 'green'
 		C_STEPCOLOR_COMMENT_BACKCOLOR = '#ffd572'
 		C_STEPCOLOR_ROOT_TEXT = '#2a3178'
@@ -1070,6 +1084,8 @@ class EnvironmentController from WindowsControllerParent
 
 	func StyleFusionWhite
 		PWCT_APP.Stylefusion()
+
+	func StyleColorWhite
 		C_STEPCOLOR_COMMENT_TEXT = 'green'
 		C_STEPCOLOR_COMMENT_BACKCOLOR = ''
 		C_STEPCOLOR_ROOT_TEXT = 'blue'
@@ -1085,15 +1101,17 @@ class EnvironmentController from WindowsControllerParent
 
 	func StyleFusionBlack
 		PWCT_APP.Stylefusionblack()
+
+	func StyleColorBlack
 		C_STEPCOLOR_COMMENT_TEXT = '#ffbfb2'
 		C_STEPCOLOR_COMMENT_BACKCOLOR = ''
 		C_STEPCOLOR_ROOT_TEXT = '#bbff1a'
 		C_STEPCOLOR_ROOT_BACKCOLOR = ''
-		C_STEPCOLOR_ALLOWINTERACTION_TEXT = 'black'
-		C_STEPCOLOR_ALLOWINTERACTION_BACKCOLOR = 'silver'
-		C_STEPCOLOR_INFO_TEXT = '#ffffff'
+		C_STEPCOLOR_ALLOWINTERACTION_TEXT = 'silver'
+		C_STEPCOLOR_ALLOWINTERACTION_BACKCOLOR = 'RGB(50,100,50)'
+		C_STEPCOLOR_INFO_TEXT = 'gray'
 		C_STEPCOLOR_INFO_BACKCOLOR = ''
-		C_STEPCOLOR_DATA_TEXT = '#9e4a9d'
+		C_STEPCOLOR_DATA_TEXT = 'white'
 		C_STEPCOLOR_DATA_BACKCOLOR = ''
 		C_STEPSTREE_SECTIONCOLOR		= "white"
 		C_STEPSTREE_SELECTIONBACKGROUND		= "#333333"

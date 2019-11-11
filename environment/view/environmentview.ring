@@ -288,17 +288,38 @@ class EnvironmentView from WindowsViewParent
 					addseparator()
 					oAction = new qAction(win) {
 						setShortcut(new QKeySequence("Ctrl+shift+2"))
+						setclickEvent(Method("SetStyle(C_ENV_STYLE_WINDOWSB)"))
+						settext(T_ENV_MENU_STYLEWINDOWSBLOCKS)  # "Windows - Blocks"
+					}
+					addaction(oAction)
+					addseparator()
+					oAction = new qAction(win) {
+						setShortcut(new QKeySequence("Ctrl+shift+3"))
 						setclickEvent(Method("SetStyle(C_ENV_STYLE_WHITE)"))
 						settext(T_ENV_MENU_STYLEFUSIONWHITE) # "Fusion: White"
 					}
 					addaction(oAction)
 					addseparator()
 					oAction = new qAction(win) {
-						setShortcut(new QKeySequence("Ctrl+shift+3"))
+						setShortcut(new QKeySequence("Ctrl+shift+4"))
+						setclickEvent(Method("SetStyle(C_ENV_STYLE_WHITEB)"))
+						settext(T_ENV_MENU_STYLEFUSIONWHITEBLOCKS) # "Fusion: White Blocks"
+					}
+					addaction(oAction)
+					addseparator()
+					oAction = new qAction(win) {
+						setShortcut(new QKeySequence("Ctrl+shift+5"))
 						setclickEvent(Method("SetStyle(C_ENV_STYLE_BLACK)"))
 						settext(T_ENV_MENU_STYLEFUSIONBLACK)  # "Fusion: Black"
 					}
-					addaction(oAction)					
+					addaction(oAction)
+					addseparator()
+					oAction = new qAction(win) {
+						setShortcut(new QKeySequence("Ctrl+shift+6"))
+						setclickEvent(Method("SetStyle(C_ENV_STYLE_BLACKB)"))
+						settext(T_ENV_MENU_STYLEFUSIONBLACKBLOCKS)  # "Fusion: Black Blocks"
+					}
+					addaction(oAction)						
 				}
 			}
 			subProgram { 

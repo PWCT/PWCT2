@@ -55,6 +55,11 @@
 	T_ENV_MENU_STYLEWINDOWS 	= "ويندوز"
 	T_ENV_MENU_STYLEFUSIONWHITE 	= "عصري : أبيض"
 	T_ENV_MENU_STYLEFUSIONBLACK 	= "عصري : أسود"
+	T_ENV_MENU_STYLEWINDOWSBLOCKS		= "ويندوز - أحجار"
+	T_ENV_MENU_STYLEFUSIONWHITEBLOCKS	= "عصر : أبيض - أحجار"
+	T_ENV_MENU_STYLEFUSIONBLACKBLOCKS 	= "عصري : أسود - أحجار"
+
+
 
 	T_ENV_MENU_DEBUG = "تنقيح - تشغيل ثم إنتظار"
 	T_ENV_MENU_RUN = "تشغيل"
