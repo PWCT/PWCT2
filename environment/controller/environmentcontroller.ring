@@ -1115,3 +1115,18 @@ class EnvironmentController from WindowsControllerParent
 		C_STEPCOLOR_DATA_BACKCOLOR = ''
 		C_STEPSTREE_SECTIONCOLOR		= "white"
 		C_STEPSTREE_SELECTIONBACKGROUND		= "#333333"
+
+	func setLang nLanguage
+		# Change the language
+			switch nLanguage {
+				case C_TRANSLATION_ENGLISH
+					load "../../translation/english.ring"
+				case C_TRANSLATION_ARABIC 
+					load "../../translation/arabic.ring"
+			}
+		# Save Settings 
+			saveSettings()
+		# Hide the current environment 
+			oView.win.hide()
+		# Open new environment 
+			Open_Window(:EnvironmentController)

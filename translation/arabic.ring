@@ -59,7 +59,9 @@
 	T_ENV_MENU_STYLEFUSIONWHITEBLOCKS	= "عصر : أبيض - أحجار"
 	T_ENV_MENU_STYLEFUSIONBLACKBLOCKS 	= "عصري : أسود - أحجار"
 
-
+	T_ENV_MENU_LANGUAGE	= "اللغة"
+	T_ENV_MENU_LANG_ENGLISH	= "إنجليزي"
+	T_ENV_MENU_LANG_ARABIC	= "عربي"
 
 	T_ENV_MENU_DEBUG = "تنقيح - تشغيل ثم إنتظار"
 	T_ENV_MENU_RUN = "تشغيل"

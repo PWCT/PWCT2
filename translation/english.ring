@@ -59,6 +59,9 @@
 	T_ENV_MENU_STYLEFUSIONWHITEBLOCKS	= "Fusion: White - Blocks"
 	T_ENV_MENU_STYLEFUSIONBLACKBLOCKS 	= "Fusion: Black - Blocks"
 
+	T_ENV_MENU_LANGUAGE	= "Language"
+	T_ENV_MENU_LANG_ENGLISH	= "English"
+	T_ENV_MENU_LANG_ARABIC	= "Arabic"
 
 	T_ENV_MENU_DEBUG = "Debug (Run then wait!)"
 	T_ENV_MENU_RUN = "Run"
