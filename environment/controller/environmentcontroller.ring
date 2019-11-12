@@ -1121,12 +1121,16 @@ class EnvironmentController from WindowsControllerParent
 			switch nLanguage {
 				case C_TRANSLATION_ENGLISH
 					load "../../translation/english.ring"
+					load "../../formdesigner/translation/english.ring"
 				case C_TRANSLATION_ARABIC 
 					load "../../translation/arabic.ring"
+					load "../../formdesigner/translation/arabic.ring"
 			}
 		# Save Settings 
 			saveSettings()
 		# Hide the current environment 
 			oView.win.hide()
+		# Restore the environment folder 
+			chdir(PWCT_FOLDER)
 		# Open new environment 
 			Open_Window(:EnvironmentController)
