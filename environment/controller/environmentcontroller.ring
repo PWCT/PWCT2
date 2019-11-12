@@ -620,8 +620,9 @@ class EnvironmentController from WindowsControllerParent
 				"C_STEPCOLOR_DATA_BACKCOLOR = '" + C_STEPCOLOR_DATA_BACKCOLOR + "'" + nl + 
 				"C_STEPSTREE_SECTIONCOLOR = '" + C_STEPSTREE_SECTIONCOLOR + "'" + nl + 
 				"C_STEPSTREE_SELECTIONBACKGROUND = '" + C_STEPSTREE_SELECTIONBACKGROUND + "'" + nl + 
-				"C_ENV_DEFAULT_STYLE = '" + C_ENV_DEFAULT_STYLE + "'" + nl + 
-				"C_ENV_DEFAULT_MODE = '" + C_ENV_DEFAULT_MODE + "'" + nl + 
+				"C_ENV_DEFAULT_STYLE = " + C_ENV_DEFAULT_STYLE  + nl + 
+				"C_ENV_DEFAULT_MODE = " + C_ENV_DEFAULT_MODE + nl + 
+				"C_ENV_DEFAULT_LANG = " + C_ENV_DEFAULT_LANG + nl + 
 				"cFont = '" + cFont + "'" + nl + 
 			    "nFontSize = " + nFontSize  + nl + 
 			    "lShowFilesManager = " + oView.oDockFilesManager.isvisible() + nl +
@@ -637,10 +638,14 @@ class EnvironmentController from WindowsControllerParent
 	*/
 
 	func LoadSettings	
+		LoadSettingsFile()
+		RestoreSettings()	
+
+	func LoadSettingsFile
 		if fexists(cSettingsFile) { 
 			eval(read(cSettingsFile))
-			RestoreSettings()	
 		}
+
 
 	/*
 		Purpose : Restore Settings
@@ -1117,6 +1122,10 @@ class EnvironmentController from WindowsControllerParent
 		C_STEPSTREE_SELECTIONBACKGROUND		= "#333333"
 
 	func setLang nLanguage
+		if C_ENV_DEFAULT_LANG = nLanguage {
+			return
+		}
+		C_ENV_DEFAULT_LANG = nLanguage
 		# Change the language
 			switch nLanguage {
 				case C_TRANSLATION_ENGLISH
