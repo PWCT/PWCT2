@@ -247,3 +247,12 @@ Steps Count 		Qt 5.5		Qt 5.12
 			the HTML consumes  0.24 seconds per 1000 steps 
 			because using setText("test") reduce time a lot 
 			// oLabel.settext("test")
+
+(23) I added the (Load Again) command to Ring to support changing language (Arabic/English)
+during the runtime 
+
+	The problem : Load command only load files one time 
+	So we added (Load Again) command to be able to load the same file many times 
+	Which is required when we call the load command from functions after calling it in
+	the top of the program. 
+
