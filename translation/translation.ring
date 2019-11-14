@@ -9,7 +9,7 @@ load "english.ring"
 
 # Check Arabic Translation
 	if UseArabic() {
-		eval( ' load "translation/arabic.ring" ' )
+		load "arabic.ring"
 	}
 
 func UseArabic 
