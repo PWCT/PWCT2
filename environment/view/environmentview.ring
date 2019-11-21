@@ -78,7 +78,7 @@ class EnvironmentView from WindowsViewParent
 			}
 			setwinicon(win,AppFile("images/pwct.png"))	
 			oFilter = new qAllevents(win) {
-				setCloseEvent(Method(:PWCTXButton))
+				setCloseEvent(Method(:CloseAction))
 			}
 			installeventfilter(oFilter)
 			oSystemLog.addMessage("Environment Window Loaded!")

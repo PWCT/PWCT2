@@ -388,7 +388,8 @@ class EnvironmentController from WindowsControllerParent
 		Output : None
 	*/
 
-	func CloseAction		
+	func CloseAction
+		parent().CheckSavingTheFile()		
 		saveSettings()
 		PWCT_APP.Quit()
 
@@ -961,10 +962,6 @@ class EnvironmentController from WindowsControllerParent
 		oProgramController.cFileName = cMainFileName
 		oProgramController.lMainFile = True
 		oProgramController.RunInBrowser(parent())
-
-	func PWCTXButton
-		parent().CheckSavingTheFile()
-		PWCT_APP.Quit()
 
 	func ShowDockableWindows
 		oView.oDockFilesManager.Show()
