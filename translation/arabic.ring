@@ -97,6 +97,9 @@
 
 	T_ENV_TOOLBAR_MAINFILE = "الملف الأساسي ..."
 
+	T_ENV_SAVE = "حفظ"
+	T_ENV_SAVECHANGES = "حفظ التغيرات؟"
+
 	# Output Window
 
 	T_ENV_OW_TITLE = "نافذة النتائج"

@@ -1683,8 +1683,8 @@ class GoalDesignerController from WindowsControllerParent
 			lSaveFlag = False
 			new qmessagebox(oView.win)
 			{
-                		setwindowtitle("Save") 
-                		settext("Save Changes?") 
+                		setwindowtitle(T_ENV_SAVE)  # "Save"
+                		settext(T_ENV_SAVECHANGES)  # "Save Changes?"
                 		setstandardbuttons(QMessageBox_Yes | QMessageBox_No)
                 		result = exec()
 		          	this.oView.win {

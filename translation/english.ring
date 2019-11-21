@@ -97,6 +97,9 @@
 
 	T_ENV_TOOLBAR_MAINFILE = "Main File : "
 
+	T_ENV_SAVE = "Save"
+	T_ENV_SAVECHANGES = "Save Changes?"
+
 	# Output Window
 
 	T_ENV_OW_TITLE = "Output Window"
