@@ -112,6 +112,12 @@ class EnvironmentController from WindowsControllerParent
 		oView.win.blocksignals(False)
 		oView.win.setupdatesenabled(True)
 
+		# WorkAround : We call this again to get the expected look
+			if ! PWCTIsMobile(:DefaultMode) {
+				SetMode(C_ENV_DEFAULT_MODE)
+			}
+	
+
 	/*
 		Purpose : Set the Parent Object for Environment and goal designer
 		Parameters : None
@@ -673,6 +679,7 @@ class EnvironmentController from WindowsControllerParent
 		else
 			oView.oDockOutputWindow.hide()
 		}
+
 		GoalDesignerFont()
 		ComponentsBrowserFont()
 		ComponentsFont()
@@ -978,10 +985,10 @@ class EnvironmentController from WindowsControllerParent
 				oView.win {
 					adddockwidget(Qt_LeftDockWidgetArea,this.oView.oDockFilesManager,1)
 					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockGoalDesigner,2)
-					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockComponentsBrowser,1)
 					adddockwidget(Qt_BottomDockWidgetArea,this.oView.oDockOutputWindow,1)
 					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockFormDesigner,1)
-					tabifydockwidget(this.oView.oDockGoalDesigner,this.oView.oDockFormDesigner)
+					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockComponentsBrowser,1)
+					tabifydockwidget(this.oView.oDockFormDesigner,this.oView.oDockGoalDesigner)
 				}
 				oView.oDockGoalDesigner.raise()
 			on C_ENV_MODE_LEFT
