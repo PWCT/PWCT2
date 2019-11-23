@@ -31,7 +31,9 @@ class EnvironmentView from WindowsViewParent
 
 	lOutpuWindowInBottom = True 
 
-	# Create the window and the Controls
+	lNoRunInConsole = True
+
+	# Create the window and the Controls 
 		win = new qMainWindow()
 		{
 			if not PWCTIsMobile(:WindowDimensions) {
@@ -593,7 +595,46 @@ class EnvironmentView from WindowsViewParent
 					} 
 				]
 		else
-			aBtns = [
+			if lNoRunInConsole  {
+				aBtns = [
+					new qToolbutton(win) { 
+						setbtnimage(self,AppFile("images/new.png"))
+						setclickevent(Method(:NewAction))
+						settooltip(T_ENV_MENU_NEW) # "New File"
+					} ,
+					new qToolbutton(win) { 
+						setbtnimage(self,AppFile("images/open.png")) 
+						setclickevent(Method(:OpenAction))
+						settooltip(T_ENV_MENU_OPEN) # "Open File"
+					} ,
+					new qToolbutton(win) { 
+						setbtnimage(self,AppFile("images/save.png"))
+						setclickevent(Method(:SaveAction))
+						settooltip(T_ENV_MENU_SAVE) # "Save"
+					} ,
+					new qToolbutton(win) { 
+						setbtnimage(self,AppFile("images/saveas.png"))
+						setclickevent(Method(:SaveAsAction))
+						settooltip(T_ENV_MENU_SAVEAS) # "Save As"
+					} ,
+					new qToolbutton(win) { 
+						setbtnimage(self,AppFile("images/rungui.png"))
+						setclickevent(Method(:RunGUIAction))
+						settooltip(T_ENV_MENU_RUNNOCONSOLE) # "Run GUI Application (No Console)"
+					} ,
+					new qtoolbutton(win) {
+						setbtnimage(self,AppFile("images/web.png"))
+						setclickEvent(Method(:RunInBrowser))
+						settooltip("Run Web Application - Open In Browser (Ctrl+F6)")
+					} ,
+					new qToolbutton(win) { 
+						setbtnimage(self,AppFile("images/close.png"))
+						setclickevent(Method(:CloseAction))
+						settooltip(T_ENV_MENU_EXIT) # "Exit"
+					} 
+				]
+		else 
+				aBtns = [
 					new qToolbutton(win) { 
 						setbtnimage(self,AppFile("images/new.png"))
 						setclickevent(Method(:NewAction))
@@ -640,6 +681,7 @@ class EnvironmentView from WindowsViewParent
 						settooltip(T_ENV_MENU_EXIT) # "Exit"
 					} 
 				]
+			}
 		}
 		win {
 			tool1 = addtoolbar("files")  {
@@ -689,23 +731,25 @@ class EnvironmentView from WindowsViewParent
 				AddWidget(this.oTxtMainFile)
 				AddWidget(oBtnSetFile)
 				if not PWCTISMobile(:MAINTOOLBAR) {
-					oBtnDebugMainFile = new qtoolbutton(this.win) {
-							setbtnimage(self,AppFile("images/debug.png"))
-							setclickevent(Method(:DebugMainFile)) 
-							settooltip(T_ENV_MENU_MAINFILEDEBUG) # "Main File : Debug  - Run then wait! (Ctrl+Shift+D)"
-					} 
-					oBtnRunMainFile = new qtoolbutton(this.win) {
-							setbtnimage(self,AppFile("images/run.png"))
-							setclickEvent(Method(:RunMainFile))
-							settooltip(T_ENV_MENU_MAINFILERUN) # "Main File : Run the program (Ctrl+Shift+R)"
-					} 
+					if ! this.lNoRunInConsole {
+						oBtnDebugMainFile = new qtoolbutton(this.win) {
+								setbtnimage(self,AppFile("images/debug.png"))
+								setclickevent(Method(:DebugMainFile)) 
+								settooltip(T_ENV_MENU_MAINFILEDEBUG) # "Main File : Debug  - Run then wait! (Ctrl+Shift+D)"
+						} 
+						oBtnRunMainFile = new qtoolbutton(this.win) {
+								setbtnimage(self,AppFile("images/run.png"))
+								setclickEvent(Method(:RunMainFile))
+								settooltip(T_ENV_MENU_MAINFILERUN) # "Main File : Run the program (Ctrl+Shift+R)"
+						} 
+						AddWidget(oBtnDebugMainFile)
+						AddWidget(oBtnRunMainFile)
+					}
 					oBtnRunWebMainFile = new qtoolbutton(this.win) {
 							setbtnimage(self,AppFile("images/web.png"))
 							setclickEvent(Method(:RunInBrowserMainFile))
 							settooltip(T_ENV_MENU_MAINFILERUNWEB) # "Main File : Run Web Application - Open In Browser (Ctrl+Shift+F6)"
 					} 
-					AddWidget(oBtnDebugMainFile)
-					AddWidget(oBtnRunMainFile)
 					AddWidget(oBtnRunGUIMainFile)
 					AddWidget(oBtnRunWebMainFile)
 				else 
