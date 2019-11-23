@@ -801,9 +801,9 @@ class EnvironmentView from WindowsViewParent
 		}
 		
 		oDockFilesManager = new qdockwidget(win,0) {
-			setMinimumwidth(250)
+			setMinimumwidth(300)
 			setLayoutDirection(C_TRANSLATION_ENGLISH)
-			setGeometry(00,00,250,200)
+			setGeometry(00,00,300,200)
 			setwidget(this.tree1)
 			setwindowtitle(T_ENV_DOCK_PROJECTFILES) # "Project Files"
 		}
@@ -910,7 +910,7 @@ class EnvironmentView from WindowsViewParent
 
 	func createComponentsBrowser win
 		oDockComponentsBrowser = new qDockWidget(win,0) {
-			setMinimumWidth(300)
+			setMinimumWidth(400)
 			setLayoutDirection(C_TRANSLATION_ENGLISH)
 			setwindowtitle(T_ENV_DOCK_COMPONENTSBROWSER) 
 		}
