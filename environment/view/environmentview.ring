@@ -820,6 +820,7 @@ class EnvironmentView from WindowsViewParent
 		nGoalDesignerWindowID = Last_WindowID()
 		oDock = new qdockwidget(win,0) {
 			setMinimumwidth(700)
+			setMinimumHeight(620)
 			setLayoutDirection(C_TRANSLATION_ENGLISH)
 			setwidget(last_window().oView.win)
 			setwindowtitle(T_ENV_DOCK_GOALDESIGNER) # "Goal Designer"		 
