@@ -9,6 +9,6 @@ cd\
 cd b:\ring\extensions\ringqt\
 call gencodeandroid.bat
 copy cpp\src\*.cpp b:\pwct2\target\mobile\qtproject\
-copy cpp\include\*.h b:\pwct2\target\mobule\qtproject\
+copy cpp\include\*.h b:\pwct2\target\mobile\qtproject\
 call gencodeqt512.bat
 cd b:\pwct2\target\mobile\update_ring
