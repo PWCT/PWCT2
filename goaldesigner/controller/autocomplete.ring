@@ -18,6 +18,12 @@ class AutoComplete
 	oCompleter = new qCompleter3(oList,NULL)
 	oCompleter.setCaseSensitivity(Qt_CaseInsensitive)
 
+	lSupportAutoComplete = True 
+
+	if PWCTIsMobile(:AutoComplete) {
+		lSupportAutoComplete = False 
+	}
+
 	func AddDefaultItems
 		# Add Common Strings 
 			if lAddCommonStrings {
@@ -61,7 +67,9 @@ class AutoComplete
 		}
 
 	func supportControl oGUIControl
-		oGUIControl.setCompleter(oCompleter)
+		if lSupportAutoComplete {
+			oGUIControl.setCompleter(oCompleter)
+		}
 
 	func AddFunctions
 		AddItems(cfunctions())
