@@ -21,8 +21,6 @@ func StartEnvironment
 
 	# We have PWCT_APP as a global variable/object of the QApplication class
 	PWCT_APP = new qApp {
-		# Set the style 
-			StyleFusion()
 		# Dispaly the splash screen
 			DisplaySplashScreen(PWCT_APP)
 		# Start the PWCT Environment Window

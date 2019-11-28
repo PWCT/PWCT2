@@ -8,14 +8,13 @@
 # Load Ring Libraries
 	load "stdlib.ring"
 	load "guilib.ring"
-	load "tracelib.ring"
 
 # Load General Libraries
 	load "general/general.ring"
 
 # Load the Translation File
 	load "translation/translation.ring"
-	
+
 # Load the Environment Files
 	load "environment/environment.ring"
 	
@@ -27,7 +26,7 @@
 	
 # Load the component classes
 	load "component/component.ring"
-	
+
 # Load the File System Files
 	load "filesystem/filesystem.ring"
 
@@ -45,4 +44,3 @@
 
 # Run PWCT Environment (See environment/environment.ring)
 	StartEnvironment()	
-

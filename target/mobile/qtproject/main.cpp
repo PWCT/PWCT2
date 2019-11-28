@@ -10,7 +10,7 @@
 #include <QUrl>
 
 #ifdef QT_WEBVIEW_WEBENGINE_BACKEND
-	#include <QtWebEngine>
+    #include <QtWebEngine>
 #endif
 
 // Load Ring
@@ -80,9 +80,9 @@ int main(int argc, char *argv[])
 
     QApplication a(argc,argv);
 
-	#ifdef QT_WEBVIEW_WEBENGINE_BACKEND
-		QtWebEngine::initialize();
-	#endif
+    #ifdef QT_WEBVIEW_WEBENGINE_BACKEND
+        QtWebEngine::initialize();
+    #endif
 	
     QWidget waiting ;
 
