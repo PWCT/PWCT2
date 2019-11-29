@@ -1,0 +1,6 @@
+See "HELLO WORLD"
+See "ENTER YOUR NAME ?"
+Give NAME
+if NAME = "MAHMOUD" { 
+	See ""HELLO " + NAME"
+}
