@@ -75,6 +75,9 @@ RING_FUNC(ring_qDebug)
     qDebug( RING_API_GETSTRING(1) );
 }
 
+void ringapp_delete_file(QString path,const char *cFile) ;
+void ringapp_deleteappfiles(void) ;
+
 int main(int argc, char *argv[])
 {
 
@@ -101,15 +104,50 @@ int main(int argc, char *argv[])
     ring_vm_funcregister("ismobileqt",ring_ismobileqt);
     ring_vm_funcregister("qdebug",ring_qDebug);
 
+
+    // Delete the application files
+    ringapp_deleteappfiles();
+
+        // Copy Ring Object File (ringapp.ringo) from Resources to Temp Folder
+        QString path2 ;
+        path2 = path+"/pwct.ringo";
+        QFile::copy(":/pwct.ringo",path2);
+        ring_state_runobjectfile(pRingState,"pwct.ringo");
+
+        // Delete the application files
+        ringapp_deleteappfiles();
+
+/*
     QFile oObjectFile(":/pwct.ringo");
     oObjectFile.open(QFile::ReadOnly);
     QTextStream in(&oObjectFile);
     QString cByteCode = in.readAll();
     pRingState->nRingInsideRing = 1 ;
     ring_state_runobjectstring(pRingState,(char *) cByteCode.toStdString().c_str(),"pwct.ringo");
+*/
+
 
     ring_state_delete(pRingState);
 
     return 0;
 
+}
+
+void ringapp_delete_file(QString path,const char *cFile)
+{
+    char mytarget[100];
+    sprintf(mytarget,"%s/%s",path.toStdString().c_str(),cFile);
+    QFile myfile;
+    myfile.setFileName(mytarget);
+    myfile.setPermissions(QFile::ReadOther | QFile::WriteOther);
+    myfile.remove();
+}
+
+
+void ringapp_deleteappfiles(void)
+{
+    QString path ;
+    path = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) ;
+    QDir::setCurrent(path);
+    ringapp_delete_file(path,"pwct.ringo");
 }
