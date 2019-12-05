@@ -125,10 +125,8 @@ int main(int argc, char *argv[])
 		// Run the object file directly from resources	
 		QFile oObjectFile(":/pwct.ringo");
 		oObjectFile.open(QFile::ReadOnly);
-		QTextStream in(&oObjectFile);
-		QString cByteCode = in.readAll();
-		pRingState->nRingInsideRing = 1 ;
-		ring_state_runobjectstring(pRingState,(char *) cByteCode.toStdString().c_str(),"pwct.ringo");
+        pRingState->nRingInsideRing = 1 ;
+        ring_state_runobjectstring(pRingState,(char *) oObjectFile.readAll().toStdString().c_str(),"pwct.ringo");
 		
     #endif
 
