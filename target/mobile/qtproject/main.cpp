@@ -111,30 +111,30 @@ int main(int argc, char *argv[])
 		// Delete the application files
 		ringapp_deleteappfiles();
 
-        // Copy Ring Object File (ringapp.ringo) from Resources to Temp Folder
-        QString path2 ;
-        path2 = path+"/pwct.ringo";
-        QFile::copy(":/pwct.ringo",path2);
-        ring_state_runobjectfile(pRingState,"pwct.ringo");
+        	// Copy Ring Object File (ringapp.ringo) from Resources to Temp Folder
+        	QString path2 ;
+        	path2 = path+"/pwct.ringo";
+        	QFile::copy(":/pwct.ringo",path2);
+        	ring_state_runobjectfile(pRingState,"pwct.ringo");
 
-        // Delete the application files
-        ringapp_deleteappfiles();
+        	// Delete the application files
+        	ringapp_deleteappfiles();
 
 	#else	
 		
 		// Run the object file directly from resources	
 		QFile oObjectFile(":/pwct.ringo");
 		oObjectFile.open(QFile::ReadOnly);
-        pRingState->nRingInsideRing = 1 ;
-        int nFileSize = oObjectFile.size();
-        unsigned char *cCode;
-        cCode = (unsigned char *) malloc(nFileSize+1);
-        memcpy(cCode,oObjectFile.readAll().toStdString().c_str(),nFileSize);
-        cCode[nFileSize] = EOF;
-        ring_state_runobjectstring(pRingState,(char *) cCode,"pwct.ringo");
-        free(cCode);
+       		int nFileSize = oObjectFile.size();
+       		unsigned char *cCode;
+        	cCode = (unsigned char *) malloc(nFileSize+1);
+        	memcpy(cCode,oObjectFile.readAll().toStdString().c_str(),nFileSize);
+        	cCode[nFileSize] = EOF;
+        	pRingState->nRingInsideRing = 1 ;
+        	ring_state_runobjectstring(pRingState,(char *) cCode,"pwct.ringo");
+        	free(cCode);
 
-    #endif
+	#endif
 
     ring_state_delete(pRingState);
 
