@@ -1,4 +1,6 @@
-/* Copyright (c) 2013-2018 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2019 Mahmoud Fayed <msfclipper@yahoo.com> */
+
+#define RINGFORMOBILE_WRITERINGOFILE	0
 
 #include <QApplication>
 #include <QWidget>
@@ -104,9 +106,10 @@ int main(int argc, char *argv[])
     ring_vm_funcregister("ismobileqt",ring_ismobileqt);
     ring_vm_funcregister("qdebug",ring_qDebug);
 
-
-    // Delete the application files
-    ringapp_deleteappfiles();
+	#if RINGFORMOBILE_WRITERINGOFILE == 1
+	
+		// Delete the application files
+		ringapp_deleteappfiles();
 
         // Copy Ring Object File (ringapp.ringo) from Resources to Temp Folder
         QString path2 ;
@@ -117,15 +120,17 @@ int main(int argc, char *argv[])
         // Delete the application files
         ringapp_deleteappfiles();
 
-/*
-    QFile oObjectFile(":/pwct.ringo");
-    oObjectFile.open(QFile::ReadOnly);
-    QTextStream in(&oObjectFile);
-    QString cByteCode = in.readAll();
-    pRingState->nRingInsideRing = 1 ;
-    ring_state_runobjectstring(pRingState,(char *) cByteCode.toStdString().c_str(),"pwct.ringo");
-*/
-
+	#else	
+		
+		// Run the object file directly from resources	
+		QFile oObjectFile(":/pwct.ringo");
+		oObjectFile.open(QFile::ReadOnly);
+		QTextStream in(&oObjectFile);
+		QString cByteCode = in.readAll();
+		pRingState->nRingInsideRing = 1 ;
+		ring_state_runobjectstring(pRingState,(char *) cByteCode.toStdString().c_str(),"pwct.ringo");
+		
+    #endif
 
     ring_state_delete(pRingState);
 
