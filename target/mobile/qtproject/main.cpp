@@ -1,6 +1,6 @@
 /* Copyright (c) 2013-2019 Mahmoud Fayed <msfclipper@yahoo.com> */
 
-#define RINGFORMOBILE_WRITERINGOFILE	1
+#define RINGFORMOBILE_WRITERINGOFILE	0
 
 #include <QApplication>
 #include <QWidget>
@@ -126,8 +126,14 @@ int main(int argc, char *argv[])
 		QFile oObjectFile(":/pwct.ringo");
 		oObjectFile.open(QFile::ReadOnly);
         pRingState->nRingInsideRing = 1 ;
-        ring_state_runobjectstring(pRingState,(char *) oObjectFile.readAll().toStdString().c_str(),"pwct.ringo");
-		
+        int nFileSize = oObjectFile.size();
+        unsigned char *cCode;
+        cCode = (unsigned char *) malloc(nFileSize+1);
+        memcpy(cCode,oObjectFile.readAll().toStdString().c_str(),nFileSize);
+        cCode[nFileSize] = EOF;
+        ring_state_runobjectstring(pRingState,(char *) cCode,"pwct.ringo");
+        free(cCode);
+
     #endif
 
     ring_state_delete(pRingState);
