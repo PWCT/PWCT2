@@ -32,7 +32,7 @@
 
 # Load The Translation File
 	if isMainSourceFile() {
-		eval(' load "translation/english.ring" ')
+		load "translation/english.ring"
 	}
 
 # Load Main Window Files 
