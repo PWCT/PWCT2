@@ -53,12 +53,6 @@ class GoalDesignerView from WindowsViewParent
 			self.MobileButtonSize(btnAddStep)
 		}
 		setBtnImage(btnAddStep,AppFile("images/new.png"))
-		btnEditStep = new qPushButton(win) {
-			setToolTip(T_GD_EDITSTEP)
-			setClickEvent(Method(:EditStepAction))			
-			self.MobileButtonSize(btnEditStep)
-		}		
-		setBtnImage(btnEditStep,AppFile("images/edit.png"))
 		btnDeleteStep = new qPushButton(win) {
 			setToolTip(T_GD_DELETESTEP)
 			setClickEvent(Method(:DeleteStepAction))			
@@ -142,7 +136,7 @@ class GoalDesignerView from WindowsViewParent
 			setClickEvent(Method(:ModifyAction))	
 			self.mobileButtonSize(btnModify)
 		}		
-		setBtnImage(btnModify,AppFile("images/modify.png"))	
+		setBtnImage(btnModify,AppFile("images/edit.png"))	
 		labelTM = new qLabel(win) { setText(T_GD_THETIMEMACHINE) } # "The Time Machine"
 		btnPlay = new qPushButton(win) { # "Play As Movie"
 			self.mobileButtonSize(btnPlay)
@@ -194,18 +188,17 @@ class GoalDesignerView from WindowsViewParent
 		layoutVBtns = new qVBoxLayout()
 		{	
 			AddWidget(btnAddStep)
-			AddWidget(btnEditStep)
+			AddWidget(btnInteract)		
+			AddWidget(btnModify)		
 			AddWidget(btnDeleteStep)
 			AddWidget(btnMoveStepUp)
 			AddWidget(btnMoveStepDown)
-			AddWidget(btnInteract)		
-			AddWidget(btnModify)		
+			AddWidget(btnIncreaseSize)
+			AddWidget(btnDecreaseSize)
 			AddWidget(btnIgnore)
 			AddWidget(btnCutSteps)
 			AddWidget(btnCopySteps)
 			AddWidget(btnPasteSteps)
-			AddWidget(btnIncreaseSize)
-			AddWidget(btnDecreaseSize)
 			AddWidget(btnSearch)
 			if not PWCTIsMobile(:DisplayPrintButton) {
 				AddWidget(btnPrintSteps)		

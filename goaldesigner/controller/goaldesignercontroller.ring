@@ -1271,7 +1271,6 @@ class GoalDesignerController from WindowsControllerParent
 
 	func TreeNodeChangedAction
 		oView.BtnInteract.setEnabled(AllowInteractButton())
-		oView.BtnEditStep.setEnabled(IsComment())
 		oView.BtnAddStep.setEnabled(AllowInteractButton())
 		oView.BtnDeleteStep.setEnabled(IsCommentOrRoot())
 		if IsMoveUp() {
@@ -1288,7 +1287,6 @@ class GoalDesignerController from WindowsControllerParent
 		oView.BtnCopySteps.setEnabled(IsCommentOrRoot())
 		oView.BtnPasteSteps.setEnabled(AllowInteractButton())
 		oView.BtnIgnore.setEnabled(IsCommentOrRoot())
-		oView.BtnModify.setEnabled(IsGeneratedStep())
 
 	/*
 		Purpose : Debug Action
