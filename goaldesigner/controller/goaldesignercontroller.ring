@@ -897,11 +897,7 @@ class GoalDesignerController from WindowsControllerParent
 		}
 		parent().goaldesignerFont()
 		nMax = len(aStepsTree) 
-		if nMax > nMaxStepsCountForExpandSteps {
-			lSuperSerialAddExpandSteps = False 
-		else 
-			lSuperSerialAddExpandSteps = True
-		}
+		lSuperSerialAddExpandSteps = ! (nMax > nMaxStepsCountForExpandSteps)
 		if nMax > this.nMaxStepsCount and lUseMaxStepsCount {
 			oView.oStepsTree {
 				lUseLabels = False
