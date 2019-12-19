@@ -1,6 +1,7 @@
 /* Copyright (c) 2013-2019 Mahmoud Fayed <msfclipper@yahoo.com> */
 
 #define RINGFORMOBILE_WRITERINGOFILE	0
+#define RINGFORMOBILE_RINGOFILEASCCODE	0
 
 #include <QApplication>
 #include <QWidget>
@@ -19,6 +20,7 @@
 
 extern "C" {
 #include "ring.h"
+#include "ringappcode.h"
 }
 
 #include "ring_qt.h"
@@ -108,8 +110,8 @@ int main(int argc, char *argv[])
 
 	#if RINGFORMOBILE_WRITERINGOFILE == 1
 	
-		// Delete the application files
-		ringapp_deleteappfiles();
+            // Delete the application files
+            ringapp_deleteappfiles();
 
         	// Copy Ring Object File (ringapp.ringo) from Resources to Temp Folder
         	QString path2 ;
@@ -122,18 +124,30 @@ int main(int argc, char *argv[])
 
 	#else	
 		
-		// Run the object file directly from resources	
-		QFile oObjectFile(":/pwct.ringo");
-		oObjectFile.open(QFile::ReadOnly);
-       		int nFileSize = oObjectFile.size();
-       		unsigned char *cCode;
-        	cCode = (unsigned char *) malloc(nFileSize+1);
-        	memcpy(cCode,oObjectFile.readAll().toStdString().c_str(),nFileSize);
-        	cCode[nFileSize] = EOF;
-        	pRingState->nRingInsideRing = 1 ;
-        	ring_state_runobjectstring(pRingState,(char *) cCode,"pwct.ringo");
-        	free(cCode);
 
+        #if RINGFORMOBILE_RINGOFILEASCCODE == 0
+                // Run the object file directly from resources
+                QFile oObjectFile(":/pwct.ringo");
+                oObjectFile.open(QFile::ReadOnly);
+                int nFileSize = oObjectFile.size();
+                unsigned char *cCode;
+                cCode = (unsigned char *) malloc(nFileSize+1);
+                memcpy(cCode,oObjectFile.readAll().toStdString().c_str(),nFileSize);
+                cCode[nFileSize] = EOF;
+                pRingState->nRingInsideRing = 1 ;
+                ring_state_runobjectstring(pRingState,(char *) cCode,"pwct.ringo");
+                free(cCode);
+        #else
+                pRingState->argc = argc;
+                pRingState->argv = argv;
+                pRingState->pRingFilesList = ring_list_new_gc(pRingState,0);
+                pRingState->pRingFilesStack = ring_list_new_gc(pRingState,0);
+                ring_list_addstring_gc(pRingState,pRingState->pRingFilesList,"pwct.ringo");
+                ring_list_addstring_gc(pRingState,pRingState->pRingFilesStack,"pwct.ringo");
+                loadRingCode(pRingState);
+                ring_objfile_updateclassespointers(pRingState);
+                ring_scanner_runprogram(pRingState);
+        #endif
 	#endif
 
     ring_state_delete(pRingState);

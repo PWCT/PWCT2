@@ -75,6 +75,7 @@ SOURCES +=   \
 	gprintdialog.cpp \
     ring_qt.cpp
 
+
 HEADERS  += \
     ring_ext.h \
     ring.h \
