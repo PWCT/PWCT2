@@ -9,6 +9,7 @@ VM * ring_vm_new ( RingState *pRingState )
 {
 	VM *pVM  ;
 	int x  ;
+	ring_state_log(pRingState,"function: ring_vm_new - start");
 	pVM = (VM *) ring_state_malloc(pRingState,sizeof(VM));
 	if ( pVM == NULL ) {
 		printf( RING_OOM ) ;
@@ -17,6 +18,7 @@ VM * ring_vm_new ( RingState *pRingState )
 	/* Ring State */
 	pVM->pRingState = pRingState ;
 	pRingState->pVM = pVM ;
+	ring_state_log(pRingState,"function: ring_vm_new - after malloc()");
 	pVM->nPC = 1 ;
 	pVM->pCode = NULL ;
 	pVM->pFunctionsMap = NULL ;
@@ -29,6 +31,7 @@ VM * ring_vm_new ( RingState *pRingState )
 	/* Information to test the lifetime of the local scope */
 	pVM->nScopeID = 0 ;
 	pVM->aScopeID = ring_list_new_gc(pVM->pRingState,0);
+	ring_state_log(pRingState,"function: ring_vm_new - after setting aScopeID");
 	ring_vm_newscope(pVM);
 	for ( x = 0 ; x < RING_VM_STACK_SIZE ; x++ ) {
 		pVM->aStack[x].nType = ITEMTYPE_NOTHING ;
@@ -40,11 +43,14 @@ VM * ring_vm_new ( RingState *pRingState )
 	**  Class Region (After the Class Name) 
 	*/
 	pVM->nInClassRegion = 0 ;
+	ring_state_log(pRingState,"function: ring_vm_new - after class region flag");
 	/* Add Variables */
 	ring_vm_addglobalvariables(pVM);
+	ring_state_log(pRingState,"function: ring_vm_new - after global variables");
 	/* Lists */
 	pVM->nListStart = 0 ;
 	pVM->pNestedLists = ring_list_new_gc(pVM->pRingState,0);
+	ring_state_log(pRingState,"function: ring_vm_new - after nested lists");
 	/* Support for nested Load Instructions */
 	pVM->nBlockFlag = 0 ;
 	pVM->aPCBlockFlag = ring_list_new_gc(pVM->pRingState,0);
@@ -60,6 +66,7 @@ VM * ring_vm_new ( RingState *pRingState )
 	/* Support for Exit/Loop Commands inside For/While loops. */
 	pVM->pExitMark = ring_list_new_gc(pVM->pRingState,0);
 	pVM->pLoopMark = ring_list_new_gc(pVM->pRingState,0);
+	ring_state_log(pRingState,"function: ring_vm_new - after exit/loop marks");
 	/* Try-Catch-Done */
 	pVM->pTry = ring_list_new_gc(pVM->pRingState,0);
 	/* Saving scope when creating new objects and calling class init method */
@@ -81,6 +88,7 @@ VM * ring_vm_new ( RingState *pRingState )
 	/* Set the main File Name */
 	pVM->cFileName = ring_list_getstring(pVM->pRingState->pRingFilesList,1) ;
 	pVM->cPrevFileName = ring_list_getstring(pVM->pRingState->pRingFilesList,1) ;
+	ring_state_log(pRingState,"function: ring_vm_new - after setting the main file");
 	/* We keep information about active package to access its classes directly with new/from */
 	pVM->aActivePackage = ring_list_new_gc(pVM->pRingState,0);
 	/* Scope of class attribute ( 0 = public 1 = private ) */
@@ -179,6 +187,7 @@ VM * ring_vm_new ( RingState *pRingState )
 	pVM->lTraceActive = 0 ;
 	pVM->nTraceEvent = 0 ;
 	pVM->pTraceData = ring_list_new_gc(pVM->pRingState,0) ;
+	ring_state_log(pRingState,"function: ring_vm_new - after trace attributes");
 	/* Eval In Scope function is Active : ringvm_evalinscope() */
 	pVM->nEvalInScope = 0 ;
 	/* Pass error in ring_vm_error() from ringvm_passerror() */
@@ -199,6 +208,7 @@ VM * ring_vm_new ( RingState *pRingState )
 	pVM->pCLibraries = ring_list_new_gc(pVM->pRingState,0);
 	/* No Setter Method (used by ring_vm_oop_setget() function) */
 	pVM->lNoSetterMethod = 0 ;
+	ring_state_log(pRingState,"function: ring_vm_new - end");
 	return pVM ;
 }
 
@@ -277,8 +287,11 @@ void ring_vm_start ( RingState *pRingState,VM *pVM )
 	pVM->pFunctionsMap = pRingState->pRingFunctionsMap ;
 	pVM->pClassesMap = pRingState->pRingClassesMap ;
 	pVM->pPackagesMap = pRingState->pRingPackagesMap ;
+	ring_state_log(pRingState,"function: ring_vm_start");
 	ring_vm_loadcode(pVM);
+	ring_state_log(pRingState,"function: ring_vm_start - after loading code");
 	ring_vm_loadcfunctions(pRingState);
+	ring_state_log(pRingState,"function: ring_vm_start - after loading c functions");
 	/* Generate Items Array &  Hash Table */
 	if ( pRingState->lRunFromThread ) {
 		ring_list_genarray(pRingState->pRingCFunctions);
@@ -288,6 +301,7 @@ void ring_vm_start ( RingState *pRingState,VM *pVM )
 		ring_list_genarray_gc(pRingState,pRingState->pRingCFunctions);
 		ring_list_genhashtable2_gc(pRingState,pRingState->pRingCFunctions);
 	}
+	ring_state_log(pRingState,"function: ring_vm_start - after generating hash tables");
 	if ( ring_list_getsize(pVM->pCode) > 0 ) {
 		pVM->nPC = 1 ;
 		ring_vm_mainloop(pVM);
@@ -749,6 +763,7 @@ int ring_vm_eval ( VM *pVM,const char *cStr )
 	Scanner *pScanner  ;
 	int aPara[3]  ;
 	ByteCode *pByteCode  ;
+	ring_state_log(pVM->pRingState,"function: ring_vm_eval() start");
 	nSize = strlen( cStr ) ;
 	if ( nSize == 0 ) {
 		return 0 ;
@@ -771,6 +786,7 @@ int ring_vm_eval ( VM *pVM,const char *cStr )
 	aPara[2] = ring_list_getsize(pVM->pClassesMap) ;
 	/* Call Parser */
 	if ( nCont == 1 ) {
+		ring_state_log(pVM->pRingState,cStr);
 		pVM->pRingState->lNoLineNumber = 1 ;
 		nRunVM = ring_parser_start(pScanner->Tokens,pVM->pRingState);
 		pVM->pRingState->lNoLineNumber = 0 ;
@@ -844,6 +860,7 @@ int ring_vm_eval ( VM *pVM,const char *cStr )
 	ring_scanner_delete(pScanner);
 	ring_list_deletelastitem_gc(pVM->pRingState,pVM->pRingState->pRingFilesList);
 	ring_list_deletelastitem_gc(pVM->pRingState,pVM->pRingState->pRingFilesStack);
+	ring_state_log(pVM->pRingState,"function: ring_vm_eval() end");
 	return nRunVM ;
 }
 
@@ -1061,7 +1078,7 @@ void ring_vm_printstack ( VM *pVM )
 {
 	int x,nSP  ;
 	printf( "\n*****************************************\n" ) ;
-	printf( "Stack Size %d \n",pVM->nSP ) ;
+	printf( "Stack Size %u \n",pVM->nSP ) ;
 	nSP = pVM->nSP ;
 	if ( nSP > 0 ) {
 		for ( x = 1 ; x <= nSP ; x++ ) {
@@ -1212,32 +1229,41 @@ void ring_vm_addglobalvariables ( VM *pVM )
 {
 	List *pList  ;
 	int x  ;
+	ring_state_log(pVM->pRingState,"function: ring_vm_addglobalvariables() start");
 	/*
 	**  Add Variables 
 	**  We write variable name in lower case because Identifiers is converted to lower by Compiler(Scanner) 
 	*/
 	ring_vm_addnewnumbervar(pVM,"true",1);
 	ring_vm_addnewnumbervar(pVM,"false",0);
+	ring_state_log(pVM->pRingState,"function: ring_vm_addglobalvariables() after logical variables");
 	ring_vm_addnewstringvar(pVM,"nl","\n");
 	ring_vm_addnewstringvar(pVM,"null","");
+	ring_state_log(pVM->pRingState,"function: ring_vm_addglobalvariables() after nl and null");
 	ring_vm_addnewpointervar(pVM,"ring_gettemp_var",NULL,0);
 	ring_vm_addnewstringvar(pVM,"ccatcherror","NULL");
 	ring_vm_addnewpointervar(pVM,"ring_settemp_var",NULL,0);
 	ring_vm_addnewnumbervar(pVM,"ring_tempflag_var",0);
+	ring_state_log(pVM->pRingState,"function: ring_vm_addglobalvariables() before standard files");
 	ring_vm_addnewcpointervar(pVM,"stdin",stdin,"file");
 	ring_vm_addnewcpointervar(pVM,"stdout",stdout,"file");
 	ring_vm_addnewcpointervar(pVM,"stderr",stderr,"file");
+	ring_state_log(pVM->pRingState,"function: ring_vm_addglobalvariables() after standard files");
 	ring_vm_addnewpointervar(pVM,"this",NULL,0);
 	ring_vm_addnewstringvar(pVM,"tab","\t");
 	ring_vm_addnewstringvar(pVM,"cr","\r");
+	ring_state_log(pVM->pRingState,"function: ring_vm_addglobalvariables() after adding variables");
 	/* Add Command Line Parameters */
 	pList = ring_vm_newvar2(pVM,"sysargv",pVM->pActiveMem);
 	ring_list_setint_gc(pVM->pRingState,pList,RING_VAR_TYPE,RING_VM_LIST);
 	ring_list_setlist_gc(pVM->pRingState,pList,RING_VAR_VALUE);
 	pList = ring_list_getlist(pList,RING_VAR_VALUE);
+	ring_state_log(pVM->pRingState,"function: ring_vm_addglobalvariables() before adding arguments");
 	for ( x = 0 ; x < pVM->pRingState->argc ; x++ ) {
 		ring_list_addstring_gc(pVM->pRingState,pList,pVM->pRingState->argv[x]);
 	}
+	ring_state_log(pVM->pRingState,"function: ring_vm_addglobalvariables() after adding arguments");
+	ring_state_log(pVM->pRingState,"function: ring_vm_addglobalvariables() end");
 }
 
 void ring_vm_mainloopforeval ( VM *pVM )

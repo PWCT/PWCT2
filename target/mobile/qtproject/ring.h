@@ -32,16 +32,14 @@
 #define RING_API extern
 #endif
 /* Constants */
-#define RING_DEBUG 0
 #define RING_TESTUNITS 0
-#define RING_TESTPERFORMANCE 1
 #define RING_SCANNEROUTPUT 0
 #define RING_PARSERSTART 1
 #define RING_PARSERTRACE 1
-#define RING_PARSERFINAL 0
 #define RING_SHOWIC 0
 #define RING_RUNVM 1
 #define RING_VMSHOWOPCODE 1
+#define RING_LOGFILE 0
 #ifndef NDEBUG
 #define NDEBUG
 #endif
@@ -52,6 +50,8 @@
 #define RING_LONGINSTRUCTION "\nError (E4) : Long VM Instruction! \n"
 #define RING_OBJFILEWRONGTYPE "\nError (E5) : The file type is not correct - the VM expect a ring object file\n"
 #define RING_OBJFILEWRONGVERSION "\nError (E6) : The Ring Object File version is not correct!\n"
+#define RING_SSCANFERROR "\nError (E7) : Internal error in using sscanf() function!\n"
+#define RING_FSCANFERROR "\nError (E8) : Internal error in using fscanf() function!\n"
 /* General */
 #define RING_PATHSIZE 256
 /* See and Give - use ringvm_see() and ringvm_give() */
@@ -79,7 +79,7 @@
 #define RING_SETBINARY _setmode(_fileno(stdin), _O_BINARY)
 #endif
 #else
-#define RING_SETBINARY ((void)0)
+#define RING_SETBINARY 0
 #endif
 #include <errno.h>
 /* Include Project Headers */

@@ -310,10 +310,12 @@ RING_API void ring_list_deleteitem_gc ( void *pState,List *pList,int index )
 		if ( pItemsPrev != NULL ) {
 			pItemsPrev->pNext = pItems->pNext ;
 		}
-		if ( pItems->pNext != NULL ) {
-			pItems->pNext->pPrev = pItemsPrev ;
+		if ( pItems != NULL ) {
+			if ( pItems->pNext != NULL ) {
+				pItems->pNext->pPrev = pItemsPrev ;
+			}
+			ring_items_delete_gc(pState,pItems);
 		}
-		ring_items_delete_gc(pState,pItems);
 		pList->nSize = pList->nSize - 1 ;
 	}
 	/* Refresh The Cache */
@@ -1323,7 +1325,6 @@ void ring_list_test ( void )
 	ring_list_delete(pList);
 	printf( "Deleting List 2 \n" ) ;
 	ring_list_delete(pList2);
-	getchar();
 	/* Create/Delete Large List */
 	printf( "Create List of 1000000 Items  \n" ) ;
 	pList = ring_list_new(1000000);
@@ -1332,10 +1333,8 @@ void ring_list_test ( void )
 		ring_list_setstring(pList,x,"empty item");
 	}
 	printf( "Done  \n" ) ;
-	getchar();
 	printf( "Deleting List 1 \n" ) ;
 	ring_list_delete(pList);
-	getchar();
 	/* Create Nested Lists */
 	printf( "List = {'first item',{'item (2) item(1)','item(2) item(2)'},'lastitem' , 50 , Pointer to int } \n  " ) ;
 	pList = ring_list_new(5);
@@ -1424,5 +1423,4 @@ void ring_list_test ( void )
 	puts(" *** Test Function Pointer *** ");
 	ring_list_callfuncpointer(pList,1,pList);
 	ring_list_delete(pList);
-	getchar();
 }

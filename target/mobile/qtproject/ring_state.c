@@ -23,10 +23,8 @@ static int nRingStateCGI  ;
 
 static void ring_testallunits ( void ) ;
 #endif
-#if RING_TESTPERFORMANCE
 
 static void ring_showtime ( void ) ;
-#endif
 
 void segfaultaction ( int sig ) ;
 /* API Functions */
@@ -72,6 +70,10 @@ RING_API RingState * ring_state_new ( void )
 	pRingState->lRunFromThread = 1 ;
 	pRingState->lLoadAgain = 0 ;
 	ring_list_addint(pRingState->aCustomGlobalScopeStack,pRingState->nCustomGlobalScopeCounter);
+	/* Log File */
+	#if RING_LOGFILE
+	pRingState->pLogFile = fopen("ringlog.txt" , "w+" );
+	#endif
 	return pRingState ;
 }
 
@@ -95,6 +97,10 @@ RING_API RingState * ring_state_delete ( RingState *pRingState )
 		ring_vm_delete(pRingState->pVM);
 	}
 	pRingState->aCustomGlobalScopeStack = ring_list_delete(pRingState->aCustomGlobalScopeStack);
+	/* Log File */
+	#if RING_LOGFILE
+	fclose( pRingState->pLogFile ) ;
+	#endif
 	ring_poolmanager_delete(pRingState);
 	ring_free(pRingState);
 	return NULL ;
@@ -218,11 +224,9 @@ RING_API void ring_state_main ( int argc, char *argv[] )
 			}
 		}
 	}
-	#if RING_TESTPERFORMANCE
 	if ( nPerformance ) {
 		ring_showtime();
 	}
-	#endif
 	srand(time(NULL));
 	/* Check Startup ring.ring */
 	if ( ring_fexists("ring.ring") && argc == 1 ) {
@@ -255,11 +259,9 @@ RING_API void ring_state_main ( int argc, char *argv[] )
 		exit(0);
 	}
 	ring_execute(cStr,nCGI,nRun,nPrintIC,nPrintICFinal,nTokens,nRules,nIns,nGenObj,nGenCObj,nWarn,argc,argv);
-	#if RING_TESTPERFORMANCE
 	if ( nPerformance ) {
 		ring_showtime();
 	}
-	#endif
 }
 
 RING_API void ring_state_runfile ( RingState *pRingState,char *cFileName )
@@ -276,6 +278,15 @@ RING_API void ring_state_runobjectstring ( RingState *pRingState,char *cString,c
 {
 	ring_scanner_runobjstring(pRingState,cString,cFileName);
 }
+
+RING_API void ring_state_log ( RingState *pRingState,const char *cStr )
+{
+	/* Log File */
+	#if RING_LOGFILE
+	fprintf( pRingState->pLogFile , "%s\n" , cStr ) ;
+	fflush(pRingState->pLogFile);
+	#endif
+}
 #if RING_TESTUNITS
 
 static void ring_testallunits ( void )
@@ -288,7 +299,6 @@ static void ring_testallunits ( void )
 	getchar();
 }
 #endif
-#if RING_TESTPERFORMANCE
 
 static void ring_showtime ( void )
 {
@@ -306,7 +316,6 @@ static void ring_showtime ( void )
 	printf( "Clock : %ld \n", myclock ) ;
 	ring_print_line();
 }
-#endif
 
 void segfaultaction ( int sig )
 {
@@ -410,6 +419,7 @@ void ring_exefolder ( char *cDirPath )
 	int x,x2,nSize  ;
 	ring_exefilename(cDir);
 	nSize = strlen( cDir ) ;
+	strcpy(cDir2,"");
 	for ( x = nSize-1 ; x >= 0 ; x-- ) {
 		if ( (cDir[x] == '\\') || (cDir[x] == '/') ) {
 			for ( x2 = x ; x2 >= 0 ; x2-- ) {

@@ -129,7 +129,7 @@ int main(int argc, char *argv[])
                 // Run the object file directly from resources
                 QFile oObjectFile(":/pwct.ringo");
                 oObjectFile.open(QFile::ReadOnly);
-                int nFileSize = oObjectFile.size();
+                unsigned int nFileSize = (unsigned int) oObjectFile.size();
                 unsigned char *cCode;
                 cCode = (unsigned char *) malloc(nFileSize+1);
                 memcpy(cCode,oObjectFile.readAll().toStdString().c_str(),nFileSize);

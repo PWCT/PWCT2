@@ -124,7 +124,7 @@ RING_API char * ring_string_lower ( char *cStr )
 {
 	unsigned int x  ;
 	for ( x = 0 ; x < strlen(cStr) ; x++ ) {
-		if ( isalpha(cStr[x]) ) {
+		if ( isalpha((unsigned char) cStr[x]) ) {
 			cStr[x] = tolower( cStr[x] );
 		}
 	}
@@ -135,7 +135,7 @@ RING_API char * ring_string_lower2 ( char *cStr,int nStrSize )
 {
 	int x  ;
 	for ( x = 0 ; x < nStrSize ; x++ ) {
-		if ( isalpha(cStr[x]) ) {
+		if ( isalpha((unsigned char) cStr[x]) ) {
 			cStr[x] = tolower( cStr[x] );
 		}
 	}
@@ -146,7 +146,7 @@ RING_API char * ring_string_upper ( char *cStr )
 {
 	unsigned int x  ;
 	for ( x = 0 ; x < strlen(cStr) ; x++ ) {
-		if ( isalpha(cStr[x]) ) {
+		if ( isalpha((unsigned char) cStr[x]) ) {
 			cStr[x] = toupper( cStr[x] );
 		}
 	}
@@ -157,7 +157,7 @@ RING_API char * ring_string_upper2 ( char *cStr,int nStrSize )
 {
 	int x  ;
 	for ( x = 0 ; x < nStrSize ; x++ ) {
-		if ( isalpha(cStr[x]) ) {
+		if ( isalpha((unsigned char) cStr[x]) ) {
 			cStr[x] = toupper( cStr[x] );
 		}
 	}
@@ -275,7 +275,6 @@ void ring_string_test ( void )
 	printf( "Test string to lower \n" ) ;
 	printf( "%s\n",ring_string_tolower(pString) ) ;
 	ring_string_delete(pString);
-	getchar();
 }
 /* Functions without state pointer */
 
