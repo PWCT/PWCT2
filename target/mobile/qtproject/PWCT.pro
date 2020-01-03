@@ -72,9 +72,8 @@ SOURCES +=   \
     ggeopositioninfosource.cpp \
     gprintpreviewwidget.cpp \
     gprintpreviewdialog.cpp \
-	gprintdialog.cpp \
+    gprintdialog.cpp \
     ring_qt.cpp
-
 
 HEADERS  += \
     ring_ext.h \
