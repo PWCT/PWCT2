@@ -7,8 +7,8 @@
 
 ===========================================================
 Status
-	* Bugs Count : 42
-	* Fixed Bugs : 42
+	* Bugs Count : 43
+	* Fixed Bugs : 43
 	* UnFixed Bugs : 0
 ===========================================================
 (1)  Fixed : We created over 6 thouands steps, then using the search window
@@ -1336,4 +1336,30 @@ This was a logical memory leak!
 				}
 				setcentralwidget(oCentral)
 
+==================================================================================================
+
+(43) Fixed : Testing on Mobile Devices lead to two problems  (2020.01.03) 
+
+	* When the window contains a timer 
+		Closing the window doesn't stop the timer 
+
+		This happens in Qt 5.12 (not Qt 5.5)
+
+	Solutions 
+
+		(1) Stop the timer before closing the window 
+			---> Bad solution because it need updating the application code 
+
+		(2) Delete the window object after closing it 
+			---> Nice solution because it could be done at the library level 
+				 Without the need to update the application code 
+
+	* When opening and closing a window many times 
+			around 250 times (Yes I did this strange test to trigger the bug!)
+		This will lead to a bug in Qt itself ---> Then Crash 
+
+	Solutions 
+
+		(1) Delete the window object after closing it 
+		
 ==================================================================================================
