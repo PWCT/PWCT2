@@ -71,6 +71,7 @@ class GoalDesignerView from WindowsViewParent
 			self.mobileButtonSize(btnMoveStepDown)		
 		}
 		setBtnImage(btnMoveStepDown,AppFile("images/down.png"))
+		/*
 		if not PWCTIsMobile(:DisplayPrintButton) {
 			btnPrintSteps = new qPushButton(win) {
 				setToolTip(T_GD_PRINTSTEPS)
@@ -79,7 +80,7 @@ class GoalDesignerView from WindowsViewParent
 			}
 			setBtnImage(btnPrintSteps,AppFile("images/print.png"))
 		}
-
+		*/
 		btnCutSteps = new qPushButton(win) {
 			setToolTip(T_GD_CUT)
 			setClickEvent(Method(:CutStepsAction))	
@@ -200,9 +201,11 @@ class GoalDesignerView from WindowsViewParent
 			AddWidget(btnCopySteps)
 			AddWidget(btnPasteSteps)
 			AddWidget(btnSearch)
+			/*
 			if not PWCTIsMobile(:DisplayPrintButton) {
 				AddWidget(btnPrintSteps)		
 			}
+			*/
 			insertStretch( -1, 1 )
 			setContentsMargins(0,0,0,0)
 		}

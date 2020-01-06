@@ -7,6 +7,8 @@
 
 class EnvironmentView from WindowsViewParent
 
+	oDesktop = new qDesktopWidget()	
+
 	# Attributes
 	TreeTimer Tree1   oFile  oDockFilesManager oDockGoalDesigner
 	oDockComponentsBrowser  oStatusbar
@@ -803,9 +805,10 @@ class EnvironmentView from WindowsViewParent
 		}
 		
 		oDockFilesManager = new qdockwidget(win,0) {
-			setMinimumwidth(300)
+			nWidth = floor(this.oDesktop.Width()*0.17)
+			setMinimumwidth(nWidth)
 			setLayoutDirection(C_TRANSLATION_ENGLISH)
-			setGeometry(00,00,300,200)
+			setGeometry(00,00,nWidth,200)
 			setwidget(this.tree1)
 			setwindowtitle(T_ENV_DOCK_PROJECTFILES) # "Project Files"
 		}
@@ -821,8 +824,10 @@ class EnvironmentView from WindowsViewParent
 		Open_Window(:GoalDesignerController)		
 		nGoalDesignerWindowID = Last_WindowID()
 		oDock = new qdockwidget(win,0) {
-			setMinimumwidth(700)
-			setMinimumHeight(620)
+			nWidth = floor(this.oDesktop.Width()*0.5)
+			nHeight = floor(this.oDesktop.Height()*0.6)
+			setMinimumwidth(nWidth)
+			setMinimumHeight(nHeight)
 			setLayoutDirection(C_TRANSLATION_ENGLISH)
 			setwidget(last_window().oView.win)
 			setwindowtitle(T_ENV_DOCK_GOALDESIGNER) # "Goal Designer"		 
@@ -893,7 +898,10 @@ class EnvironmentView from WindowsViewParent
 		}
 		oProcessWindow.setlayout(oProcessLayout2)			
 		oDockOutputWindow = new qDockWidget(win,0) {
-			setMinimumWidth(200)
+			nWidth = floor(this.oDesktop.Width()*0.2)
+			nHeight = floor(this.oDesktop.Height()*0.1)
+			setMinimumWidth(nWidth)
+			setMinimumHeight(nHeight)
 			setLayoutDirection(C_TRANSLATION_ENGLISH)
 			setwidget( oProcessWindow )		
 			setwindowtitle(T_ENV_OW_TITLE)  # "Output Window"
@@ -912,7 +920,8 @@ class EnvironmentView from WindowsViewParent
 
 	func createComponentsBrowser win
 		oDockComponentsBrowser = new qDockWidget(win,0) {
-			setMinimumWidth(400)
+			nWidth = floor(this.oDesktop.Width()*0.2)
+			setMinimumWidth(nWidth)
 			setLayoutDirection(C_TRANSLATION_ENGLISH)
 			setwindowtitle(T_ENV_DOCK_COMPONENTSBROWSER) 
 		}
@@ -926,7 +935,8 @@ class EnvironmentView from WindowsViewParent
 	*/
 	func createFormDesigner win
 		oDockFormDesigner = new qDockWidget(win,0) {
-			setMinimumWidth(470)
+			nWidth = floor(this.oDesktop.Width()*0.6)
+			setMinimumWidth(nWidth)
 			setLayoutDirection(C_TRANSLATION_ENGLISH)
 			setwindowtitle(T_ENV_DOCK_FORMDESIGNER) 
 		}
