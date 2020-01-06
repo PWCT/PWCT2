@@ -1,7 +1,5 @@
 ring pwct.ring -go -norun
 copy /Y *.ringo target\mobile\qtproject
-copy /Y mobileapp\*.ring target\mobile\qtproject\mobileapp
-copy /Y project.qrc target\mobile\qtproject\mobileapp
 cd target\mobile\qtproject
 set ANDROID_HOME=C:/JavaAndroid/AndroidSDK
 set ANDROID_NDK_ROOT=C:/JavaAndroid/android-ndk-r20b/
@@ -19,3 +17,4 @@ mingw32-make install INSTALL_ROOT=B:/pwct2/target/mobile/qtproject/build-android
 
 "C:\Qt\Qt5.12.6\5.12.6\android_armv7\bin\androiddeployqt.exe" --input %cd%/android-libPWCT.so-deployment-settings.json --output  %cd%/build-android --android-platform android-19 --jdk "C:/Program Files (x86)/Java/jdk1.8.0_05" --gradle
 
+cd ..\..\..\

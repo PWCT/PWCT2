@@ -20,7 +20,7 @@
 
 extern "C" {
 #include "ring.h"
-#include "ringappcode.h"
+//#include "ringappcode.h"
 }
 
 #include "ring_qt.h"
