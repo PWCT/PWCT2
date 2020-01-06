@@ -1,7 +1,7 @@
 /* Copyright (c) 2013-2019 Mahmoud Fayed <msfclipper@yahoo.com> */
 
 #define RINGFORMOBILE_WRITERINGOFILE	0
-#define RINGFORMOBILE_RINGOFILEASCCODE	0
+#define RINGFORMOBILE_RINGOFILEASCCODE	1
 
 #include <QApplication>
 #include <QWidget>
