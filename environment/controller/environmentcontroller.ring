@@ -563,7 +563,7 @@ class EnvironmentController from WindowsControllerParent
 
 	func AboutAction
 		ShowMessage("About",
-		"2017, Mahmoud Fayed <msfclipper@yahoo.com>")	
+		"2020, Mahmoud Fayed <msfclipper@yahoo.com>")	
 
 
 	/*

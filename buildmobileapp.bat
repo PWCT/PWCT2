@@ -1,5 +1,7 @@
 ring pwct.ring -go -norun
-copy *.ringo target\mobile\qtproject
+copy /Y *.ringo target\mobile\qtproject
+copy /Y mobileapp\*.ring target\mobile\qtproject\mobileapp
+copy /Y project.qrc target\mobile\qtproject\mobileapp
 cd target\mobile\qtproject
 set ANDROID_HOME=C:/JavaAndroid/AndroidSDK
 set ANDROID_NDK_ROOT=C:/JavaAndroid/android-ndk-r20b/
