@@ -168,15 +168,13 @@ Class ProgramController
 		# Before running the program
 			cCode = ""
 			if PWCTIsMobile(:MobileAppLibs) {
-				cCode = 'load "mobileapplibs.ring"' + nl +
-					'load "mobileapplibs2.ring"' + nl + 
-					'load "mobileapplibs3.ring"' + nl 
+				cCode = 'load "mobileapplibs.ring"' + nl  +
+					 'load "mobileapplibs2.ring"' + nl + 
+					 'load "mobileapplibs3.ring"' + nl 
 			}
 			cCode += "$cMainSourceFile = '" + cFileName + "'" + nl
 			cCode += 'load "' + cFileName + '"'
 			write("runprogram.ring",cCode)
-		# This will start a Timer to check the output
-			oGD.EnableCheckOutputOnMobile()
 		if ! isNULL(oState) {
 			ring_state_delete(oState)
 		}
@@ -188,6 +186,8 @@ Class ProgramController
 		oState = ring_state_new()
 		ring_state_mainfile(oState,"runprogram.ring")
 		chdir(RUNTIME_FOLDER)
+		# This will start a Timer to check the output
+			oGD.EnableCheckOutputOnMobile()
 		# Display the Output
 			CheckOutputOnMobile(oGD)
 		# Delete Temp. Files
