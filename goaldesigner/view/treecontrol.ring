@@ -33,7 +33,7 @@ class TreeControl from qTreeWidget
 
 	func init win
 		super.init(win)
-		font = new qFont("",0,0,0)
+		font = new qFont("arial",0,0,0)
 		font.setpixelsize(nFontSize)
 		setUniformRowHeights(True)
 		setAnimated(False)

@@ -505,6 +505,7 @@ class GoalDesignerController from WindowsControllerParent
 	func IncreaseSizeAction
 		oView.oStepsTree.IncreaseFontSize()
 		oView.oStepCode.IncreaseFontSize()
+		Parent().oView.oFilesTree.IncreaseFontSize()
 		ReflectChangeInFontSize()
 
 	/*
@@ -516,6 +517,7 @@ class GoalDesignerController from WindowsControllerParent
 	func DecreaseSizeAction
 		oView.oStepsTree.DecreaseFontSize()
 		oView.oStepCode.DecreaseFontSize()
+		Parent().oView.oFilesTree.DecreaseFontSize()
 		ReflectChangeInFontSize()
 
 	/*
