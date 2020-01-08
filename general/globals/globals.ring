@@ -79,6 +79,9 @@
 	C_STEPCOLOR_DATA_TEXT 			= "gray"
 	C_STEPCOLOR_DATA_BACKCOLOR 		= ""
 
+# Components Browser
+	C_COMPONENTSBROWSER_COLOR		= "green"
+
 # Steps Tree
 	C_STEPSTREE_SECTIONCOLOR		= "black"
 	C_STEPSTREE_SELECTIONBACKGROUND		= "cyan"
