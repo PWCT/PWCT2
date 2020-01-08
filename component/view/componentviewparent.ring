@@ -19,7 +19,7 @@ class ComponentViewParent from WindowsViewParent
 	nControlsFontSize	= C_COMPONENT_CONTROLSFONTSIZE
 	nButtonsFontSize	= 12
 
-	nWindowWidth		= 600
+	nWindowWidth		= 300
 	nWindowHeight		= 400
 
 	cssText    = "border:1px solid black;border-radius:7px;"
@@ -170,8 +170,8 @@ class ComponentViewParent from WindowsViewParent
 				AddItem(Item)
 			}
 			setCurrentRow(0,3)
-			setminimumwidth(350)
-			setminimumheight(250)			
+			setminimumwidth(250)
+			setminimumheight(100)			
 		}
 		oLayout = new qHBoxLayout() {
 			AddWidget(oLabel) AddWidget(oList)
