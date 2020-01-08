@@ -8,6 +8,7 @@
 # Load the Environment Files
 	load "controller/environmentcontroller.ring"
 	load "view/environmentview.ring"
+	load "view/treeviewcontrol.ring"
 
 /*
 	The next function run the PWCT Environment
