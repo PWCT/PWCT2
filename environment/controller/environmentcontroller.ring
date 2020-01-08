@@ -628,6 +628,8 @@ class EnvironmentController from WindowsControllerParent
 				"C_STEPSTREE_SECTIONCOLOR = '" + C_STEPSTREE_SECTIONCOLOR + "'" + nl + 
 				"C_STEPSTREE_SELECTIONBACKGROUND = '" + C_STEPSTREE_SELECTIONBACKGROUND + "'" + nl + 
 				"C_COMPONENTSBROWSER_COLOR = '" + C_COMPONENTSBROWSER_COLOR + "'" + nl + 
+				"C_INTERACTIONPAGE_TITLECOLOR = '" + C_INTERACTIONPAGE_TITLECOLOR + "'" + nl + 
+				"C_INTERACTIONPAGE_TITLEBACKCOLOR = '" + C_INTERACTIONPAGE_TITLEBACKCOLOR + "'" + nl + 
 				"C_ENV_DEFAULT_STYLE = " + C_ENV_DEFAULT_STYLE  + nl + 
 				"C_ENV_DEFAULT_MODE = " + C_ENV_DEFAULT_MODE + nl + 
 				"C_ENV_DEFAULT_LANG = " + C_ENV_DEFAULT_LANG + nl + 
@@ -1092,6 +1094,8 @@ class EnvironmentController from WindowsControllerParent
 		C_STEPSTREE_SECTIONCOLOR		= "black"
 		C_STEPSTREE_SELECTIONBACKGROUND		= "cyan"	
 		C_COMPONENTSBROWSER_COLOR		= "green"
+		C_INTERACTIONPAGE_TITLECOLOR		= "white"
+		C_INTERACTIONPAGE_TITLEBACKCOLOR	= "purple"
 
 	func StyleFusionWhite
 		PWCT_APP.Stylefusion()
@@ -1110,6 +1114,8 @@ class EnvironmentController from WindowsControllerParent
 		C_STEPSTREE_SECTIONCOLOR		= "black"
 		C_STEPSTREE_SELECTIONBACKGROUND		= "cyan"
 		C_COMPONENTSBROWSER_COLOR		= "green"
+		C_INTERACTIONPAGE_TITLECOLOR		= "white"
+		C_INTERACTIONPAGE_TITLEBACKCOLOR	= "purple"
 
 	func StyleFusionBlack
 		PWCT_APP.Stylefusionblack()
@@ -1128,7 +1134,8 @@ class EnvironmentController from WindowsControllerParent
 		C_STEPSTREE_SECTIONCOLOR		= "white"
 		C_STEPSTREE_SELECTIONBACKGROUND		= "#333333"
 		C_COMPONENTSBROWSER_COLOR		= "white"
-
+		C_INTERACTIONPAGE_TITLECOLOR		= "white"
+		C_INTERACTIONPAGE_TITLEBACKCOLOR	= "black"
 
 	func setLang nLanguage
 		if C_ENV_DEFAULT_LANG = nLanguage {

@@ -62,7 +62,9 @@ class ComponentViewParent from WindowsViewParent
 			else
 				setFixedHeight(this.nTitleFixedHeight)
 			}
-			setStyleSheet("font-size:"+this.nTitleFontSize+"pt;color:white;background-color:purple;")
+			setStyleSheet("font-size:"+this.nTitleFontSize+
+				"pt;color:"+C_INTERACTIONPAGE_TITLECOLOR+
+				";background-color:"+C_INTERACTIONPAGE_TITLEBACKCOLOR+";")
 			setalignment(Qt_AlignHCenter |  Qt_AlignVCenter )
 		}
 		oLayoutAll.AddWidget(oLabel)

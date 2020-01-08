@@ -82,6 +82,10 @@
 # Components Browser
 	C_COMPONENTSBROWSER_COLOR		= "green"
 
+# Interaction Pages 
+	C_INTERACTIONPAGE_TITLECOLOR		= "white"
+	C_INTERACTIONPAGE_TITLEBACKCOLOR	= "purple"
+
 # Steps Tree
 	C_STEPSTREE_SECTIONCOLOR		= "black"
 	C_STEPSTREE_SELECTIONBACKGROUND		= "cyan"
