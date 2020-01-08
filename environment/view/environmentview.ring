@@ -10,7 +10,7 @@ class EnvironmentView from WindowsViewParent
 	oDesktop = new qDesktopWidget()	
 
 	# Attributes
-	TreeTimer Tree1   oFile  oDockFilesManager oDockGoalDesigner
+	TreeTimer oFilesTree   oFile  oDockFilesManager oDockGoalDesigner
 	oDockComponentsBrowser  oStatusbar
 
 	# Process Window
@@ -776,7 +776,7 @@ class EnvironmentView from WindowsViewParent
 			setinterval(250)
 			stop()
 		}
-		tree1 = new qtreeview(win) {
+		oFilesTree = new qtreeview(win) {
 			setLayoutDirection(T_LAYOUTDIRECTION)
 			setclickedevent(Method(:ChangeFileClickAction))
 			setdoubleclickedevent(Method(:ChangeFileDoubleClickAction))
@@ -809,7 +809,7 @@ class EnvironmentView from WindowsViewParent
 			setMinimumwidth(nWidth)
 			setLayoutDirection(C_TRANSLATION_ENGLISH)
 			setGeometry(00,00,nWidth,200)
-			setwidget(this.tree1)
+			setwidget(this.oFilesTree)
 			setwindowtitle(T_ENV_DOCK_PROJECTFILES) # "Project Files"
 		}
 		win.adddockwidget(1,oDockFilesManager,1)

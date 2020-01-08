@@ -242,7 +242,7 @@ class EnvironmentController from WindowsControllerParent
 	func ChangeFileAction	
 		oView.treeTimer.Stop()
 		nClock = clock()
-		oItem = oView.tree1.currentindex()
+		oItem = oView.oFilesTree.currentindex()
 		if oView.oFile.isdir(oItem) {
 			return
 		}
@@ -289,7 +289,7 @@ class EnvironmentController from WindowsControllerParent
 						aActiveFiles[nPos][1].show()
 						aActiveFiles[nPos][1].raise()
 						aActiveFiles[nPos][3].setfocus(0)
-						oView.tree1.setfocus(0)
+						oView.oFilesTree.setfocus(0)
 						SetParentForComponentsBrowser(aActiveFiles[nPos][4])
 						return
 					}
@@ -316,9 +316,9 @@ class EnvironmentController from WindowsControllerParent
 				open_windowandlink(:quickmsgController,self)
 				# "Loading the Visual Source File..."
 				QuickMsg().setText(T_ENV_LOADING)
-				oView.Tree1.blocksignals(True)
+				oView.oFilesTree.blocksignals(True)
 				PWCT_APP.processevents()
-				oView.Tree1.blocksignals(False)
+				oView.oFilesTree.blocksignals(False)
 			}
 		lActiveGoalDesignerChanged = false
 		if (Parent().IsFileOpened() or not Parent().IsFileEmpty()) and lOpenFilesInNewTabs {
@@ -344,13 +344,13 @@ class EnvironmentController from WindowsControllerParent
 			aActiveFiles[len(aActiveFiles)] + parent().oView.oStepsTree
 			aActiveFiles[len(aActiveFiles)] + parent()
 		parent().oVisualSourceFile.cFileName = cFileName
-		oView.Tree1.blocksignals(True)
+		oView.oFilesTree.blocksignals(True)
 		parent().OpenFileAction2()
-		oView.Tree1.blocksignals(False)
+		oView.oFilesTree.blocksignals(False)
 		# Set focus to the Steps Tree to be used when we Run the application
 			parent().oView.oStepsTree.setfocus(0)
 		# Set focus to the Files Manager Tree
-			oView.tree1.setfocus(0)
+			oView.oFilesTree.setfocus(0)
 		lActiveGoalDesignerChanged = True
 		if lDisplayLoadingMessage and lUseLoadingMessage {
 			QuickMsg().CloseMsg()
@@ -747,9 +747,9 @@ class EnvironmentController from WindowsControllerParent
 				open_windowandlink(:quickmsgController,self)
 				# "Loading the Visual Source File..."
 				QuickMsg().setText(T_ENV_LOADING)
-				oView.Tree1.blocksignals(True)
+				oView.oFilesTree.blocksignals(True)
 				PWCT_APP.processevents()
-				oView.Tree1.blocksignals(False)
+				oView.oFilesTree.blocksignals(False)
 			}
 		oView.oDockFormDesigner.show()
 		if cFileName != cFormFile {
