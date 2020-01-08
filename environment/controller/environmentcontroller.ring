@@ -686,6 +686,7 @@ class EnvironmentController from WindowsControllerParent
 		GoalDesignerFont()
 		ComponentsBrowserFont()
 		ComponentsFont()
+		FilesTreeFont()
 		SetStyle(C_ENV_DEFAULT_STYLE)
 		if ! PWCTIsMobile(:DefaultMode) {
 			SetMode(C_ENV_DEFAULT_MODE)
@@ -702,6 +703,11 @@ class EnvironmentController from WindowsControllerParent
 		if isDockForComponentsBrowser() {
 			parent().componentsBrowserWindow().UpdateFontSize(nFontSize)
 		}
+
+	func FilesTreeFont
+		oView.oFilesTree.nFontSize = nFontSize			
+		oView.oFilesTree.UpdateFontSize()
+
 
 	func ComponentsFont
 		C_COMPONENT_CONTROLSFONTSIZE = nFontSize-2

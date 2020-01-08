@@ -529,6 +529,7 @@ class GoalDesignerController from WindowsControllerParent
 				nFontSize = this.oView.oStepsTree.nFontSize
 				ComponentsBrowserFont()
 				ComponentsFont()
+				FilesTreeFont()
 			}
 
 

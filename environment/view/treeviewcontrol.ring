@@ -32,3 +32,8 @@ class TreeViewControl from qtreeview
 	func PrepareFont
 		font.setpixelsize(nFontSize)
 		SetFont(font)
+
+	func UpdateFontSize 
+		font.setpixelsize(nFontSize)
+		SetFont(font)
+		show()
