@@ -28,6 +28,9 @@ class TreeViewControl from qtreeview
 		UpdateFontSize()
 
 	func UpdateFontSize 
+		if PWCTISMobile(:TreeViewFont) {
+			nFontSize += 4
+		}
 		font.setpixelsize(nFontSize)
 		SetFont(font)
 		TreeStyle()
