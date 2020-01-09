@@ -49,8 +49,10 @@ class EnvironmentView from WindowsViewParent
 			self.CreateMenuBar(win)
 			oSystemLog.addMessage("Create Toolbar")
 			self.CreateToolbar(win)
-			oSystemLog.addMessage("Create Main File Toolbar")
-			self.CreateMainFileToolbar(win)
+			if not PWCTIsMobile(:ShowMainFileToolbar) {
+				oSystemLog.addMessage("Create Main File Toolbar")
+				self.CreateMainFileToolbar(win)
+			}
 			oSystemLog.addMessage("Create Statusbar")
 			self.CreateStatusBar(win)
 			if T_LAYOUTDIRECTION = 0 {
@@ -565,37 +567,37 @@ class EnvironmentView from WindowsViewParent
 						setbtnimage(self,AppFile("images/new.png"))
 						setclickevent(Method(:NewAction))
 						settooltip(T_ENV_MENU_NEW) # "New File"
-						this.MobileButtonSize(self)
+						this.MobileToolButtonSize(self)
 					} ,
 					new qToolbutton(win) { 
 						setbtnimage(self,AppFile("images/open.png")) 
 						setclickevent(Method(:OpenAction))
 						settooltip(T_ENV_MENU_OPEN) # "Open File"
-						this.MobileButtonSize(self)
+						this.MobileToolButtonSize(self)
 					} ,
 					new qToolbutton(win) { 
 						setbtnimage(self,AppFile("images/save.png"))
 						setclickevent(Method(:SaveAction))
 						settooltip(T_ENV_MENU_SAVE) # "Save"
-						this.MobileButtonSize(self)
+						this.MobileToolButtonSize(self)
 					} ,
 					new qToolbutton(win) { 
 						setbtnimage(self,AppFile("images/saveas.png"))
 						setclickevent(Method(:SaveAsAction))
 						settooltip(T_ENV_MENU_SAVEAS) # "Save As"
-						this.MobileButtonSize(self)
+						this.MobileToolButtonSize(self)
 					} ,				
 					new qToolbutton(win) { 
 						setbtnimage(self,AppFile("images/rungui.png"))
 						setclickevent(Method(:RunAction))
 						settooltip(T_ENV_MENU_RUN) # "Run the program"
-						this.MobileButtonSize(self)
+						this.MobileToolButtonSize(self)
 					} ,
 					new qToolbutton(win) { 
 						setbtnimage(self,AppFile("images/close.png"))
 						setclickevent(Method(:CloseAction))
 						settooltip(T_ENV_MENU_EXIT) # "Exit"
-						this.MobileButtonSize(self)
+						this.MobileToolButtonSize(self)
 					} 
 				]
 		else
@@ -703,6 +705,15 @@ class EnvironmentView from WindowsViewParent
 				setMinimumHeight(95)
 			}
 		}
+
+	func MobileToolButtonSize oButton
+		oButton {
+			if PWCTIsMobile(:GoalDesignerButtonsSize) {
+				setMinimumwidth(200)	
+				setMinimumHeight(200)
+			}
+		}
+
 
 	func CreateMainFileToolbar win
 		win {
