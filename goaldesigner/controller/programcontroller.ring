@@ -156,6 +156,7 @@ Class ProgramController
 			chdir(JustFilePath(cFileName))
 			write("guilib.ring","")
 			write("stdlib.ring","")
+			write("stdlibcore.ring","")
 		chdir(RUNTIME_FOLDER)
 		# Delete Temp. Files
 			remove("runprogram.ring")
@@ -197,6 +198,7 @@ Class ProgramController
 			chdir(JustFilePath(cFileName))
 			remove("guilib.ring")
 			remove("stdlib.ring")
+			remove("stdlibcore.ring")
 			remove("noname.ring")	# if we are using noname.pwct 
 		
 	/*
