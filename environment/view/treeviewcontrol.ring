@@ -20,20 +20,18 @@ class TreeViewControl from qtreeview
 	func IncreaseFontSize
 		if nFontSize >= 72 { return }
 		nFontSize += 2	
-		font.setpixelsize(nFontSize)
-		SetFont(font)
+		UpdateFontSize()
 
 	func DecreaseFontSize
 		if nFontSize <= 12 { return }
 		nFontSize -= 2	
-		font.setpixelsize(nFontSize)
-		SetFont(font)
-
-	func PrepareFont
-		font.setpixelsize(nFontSize)
-		SetFont(font)
+		UpdateFontSize()
 
 	func UpdateFontSize 
 		font.setpixelsize(nFontSize)
 		SetFont(font)
+		TreeStyle()
 		show()
+
+	func TreeStyle
+		setStyleSheet('QTreeView { font-size: '+nFontSize+'pt  } ' )

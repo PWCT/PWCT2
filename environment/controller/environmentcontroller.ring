@@ -708,7 +708,6 @@ class EnvironmentController from WindowsControllerParent
 		oView.oFilesTree.nFontSize = nFontSize			
 		oView.oFilesTree.UpdateFontSize()
 
-
 	func ComponentsFont
 		C_COMPONENT_CONTROLSFONTSIZE = nFontSize-2
 
