@@ -137,7 +137,7 @@ class GoalDesignerView from WindowsViewParent
 			setClickEvent(Method(:ModifyAction))	
 			self.mobileButtonSize(btnModify)
 		}		
-		setBtnImage(btnModify,AppFile("images/edit.png"))	
+		setBtnImage(btnModify,AppFile("images/edit.png"))
 		labelTM = new qLabel(win) { setText(T_GD_THETIMEMACHINE) } # "The Time Machine"
 		btnPlay = new qPushButton(win) { # "Play As Movie"
 			self.mobileButtonSize(btnPlay)
