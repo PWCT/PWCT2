@@ -710,7 +710,7 @@ class EnvironmentView from WindowsViewParent
 		oButton {
 			if PWCTIsMobile(:GoalDesignerButtonsSize) {
 				setMinimumwidth(200)	
-				setMinimumHeight(200)
+				setMinimumHeight(150)
 			}
 		}
 
@@ -835,10 +835,12 @@ class EnvironmentView from WindowsViewParent
 		Open_Window(:GoalDesignerController)		
 		nGoalDesignerWindowID = Last_WindowID()
 		oDock = new qdockwidget(win,0) {
-			nWidth = floor(this.oDesktop.Width()*0.5)
-			nHeight = floor(this.oDesktop.Height()*0.6)
-			setMinimumwidth(nWidth)
-			setMinimumHeight(nHeight)
+			if not PWCTIsMobile(:GoalDesignerSize) {
+				nWidth = floor(this.oDesktop.Width()*0.5)
+				nHeight = floor(this.oDesktop.Height()*0.6)
+				setMinimumwidth(nWidth)
+				setMinimumHeight(nHeight)
+			}
 			setLayoutDirection(C_TRANSLATION_ENGLISH)
 			setwidget(last_window().oView.win)
 			setwindowtitle(T_ENV_DOCK_GOALDESIGNER) # "Goal Designer"		 
