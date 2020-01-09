@@ -604,6 +604,10 @@ class EnvironmentController from WindowsControllerParent
 			if ISNULL(oProcess) { return }
 			cText = oProcess.readallstandardoutput().data()
  			oProcessEditbox.insertplaintext(cText)
+			oCursor = oProcessEditbox.textcursor()
+			nPos = max(len(oProcessEditbox.toplaintext())-1,0)
+			oCursor.setPosition(nPos,1)
+			oProcessEditbox.setTextCursor(oCursor)
 		}
 
 	/*
