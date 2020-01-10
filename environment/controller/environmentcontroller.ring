@@ -603,10 +603,14 @@ class EnvironmentController from WindowsControllerParent
 		oView {
 			if ISNULL(oProcess) { return }
 			cText = oProcess.readallstandardoutput().data()
+			if isWindows() {
+				cText += WindowsNL()
+			}
  			oProcessEditbox.insertplaintext(cText)
 			oCursor = oProcessEditbox.textcursor()
 			nPos = max(len(oProcessEditbox.toplaintext())-1,0)
-			oCursor.setPosition(nPos,1)
+			oCursor.setPosition(nPos,QTextCursor_KeepAnchor)
+			oCursor.setPosition(nPos,QTextCursor_MoveAnchor)
 			oProcessEditbox.setTextCursor(oCursor)
 		}
 
