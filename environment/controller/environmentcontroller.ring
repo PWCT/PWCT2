@@ -40,6 +40,8 @@ class EnvironmentController from WindowsControllerParent
 	}
 	lDisplayLoadingMessage 	= True
 
+	lUseSetModeWorkAround   = False
+
 	/* 
 		[Dockable Window Object, 
 		 Visual Source File Name, 
@@ -113,8 +115,10 @@ class EnvironmentController from WindowsControllerParent
 		oView.win.setupdatesenabled(True)
 
 		# WorkAround : We call this again to get the expected look
-			if ! PWCTIsMobile(:DefaultMode) {
-				SetMode(C_ENV_DEFAULT_MODE)
+			if lUseSetModeWorkAround {
+				if ! PWCTIsMobile(:DefaultMode) {
+					SetMode(C_ENV_DEFAULT_MODE)			
+				}
 			}
 	
 
@@ -709,11 +713,11 @@ class EnvironmentController from WindowsControllerParent
 
 	func ComponentsBrowserFont
 		if isDockForComponentsBrowser() {
-			parent().componentsBrowserWindow().UpdateFontSize(nFontSize)
+			parent().componentsBrowserWindow().UpdateFontSize(max(nFontSize-2,11))
 		}
 
 	func FilesTreeFont
-		oView.oFilesTree.nFontSize = nFontSize			
+		oView.oFilesTree.nFontSize = max(nFontSize-2,11)			
 		oView.oFilesTree.UpdateFontSize()
 
 	func ComponentsFont
