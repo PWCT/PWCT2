@@ -77,6 +77,16 @@ class PlayAsMovieController
 								}
 								ComponentsBrowserWindow().oView.oTextSearch.setText(cComponentName)
 								ComponentsBrowserWindow().SearchAction()
+								ComponentsBrowserWindow().oView.oComponentsTree.setFocus(0)
+								ComponentsBrowserWindow().oView.oComponentsTree.show()
+								ComponentsBrowserWindow().oView.win.show()
+								PWCT_APP.processevents()
+								sleep(0.1)
+								if parent().lDockForComponentsBrowserIsVisible {
+									Parent().oView.oDockComponentsBrowser.raise()
+								else 
+									ComponentsBrowserWindow().oView.win.raise()
+								}
 								PWCT_APP.processevents()
 								sleep(1)
 								this.GetScreenShot(ComponentsBrowserWindow().oView.win)
