@@ -9,12 +9,17 @@ class TreeViewControl from qtreeview
 
 	font  nFontSize = 12	
 
+	lUseFontObject = False
+
 	func init win
 		super.init(win)
-		font = new qFont("arial",0,0,0)
-		font.setpixelsize(nFontSize)
+		if lUseFontObject {
+			font = new qFont("arial",0,0,0)
+			font.setpixelsize(nFontSize)
+		}
 		setUniformRowHeights(True)
 		setAnimated(False)
+		UpdateFontSize()
 		return self
 
 	func IncreaseFontSize
@@ -28,13 +33,13 @@ class TreeViewControl from qtreeview
 		UpdateFontSize()
 
 	func UpdateFontSize 
+		nRealFontSize = nFontSize
 		if PWCTISMobile(:TreeViewFont) {
-			nFontSize += 4
+			nRealFontSize += 4
 		}
-		font.setpixelsize(nFontSize)
-		SetFont(font)
-		TreeStyle()
+		if lUseFontObject {
+			font.setpixelsize(nRealFontSize)
+			SetFont(font)
+		}
+		setStyleSheet('font-size: '+nRealFontSize+'pt;' )
 		show()
-
-	func TreeStyle
-		setStyleSheet('QTreeView { font-size: '+nFontSize+'pt  } ' )
