@@ -120,7 +120,9 @@ class EnvironmentController from WindowsControllerParent
 					SetMode(C_ENV_DEFAULT_MODE)			
 				}
 			}
-	
+
+		# We must update the font size here when the tree is visible 
+			oView.oFilesTree.UpdateFontSize()
 
 	/*
 		Purpose : Set the Parent Object for Environment and goal designer
