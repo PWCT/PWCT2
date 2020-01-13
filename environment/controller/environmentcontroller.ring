@@ -1091,6 +1091,7 @@ class EnvironmentController from WindowsControllerParent
 		}
 		parent().ComponentsBrowserWindow().oView.oComponentsTree.TreeStyle()
 		parent().refreshStepsTree()
+		oView.oFilesTree.UpdateFontSize()
 
 	func StyleWindows
 		if isWindows() {
