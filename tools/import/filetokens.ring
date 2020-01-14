@@ -1,3 +1,5 @@
+load "../vsfgenerator/generator.ring"
+
 C_FILENAME 	= "test_tokens.ring"
 C_WIDTH		= 12
 
@@ -51,4 +53,4 @@ func PrintTokens aList
 	next
 
 func Width cText,nWidth
-	return cText+space(nWidth-len(cText))
+	return cText+Copy(" ",nWidth-len(cText))
