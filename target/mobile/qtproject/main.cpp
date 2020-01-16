@@ -93,7 +93,7 @@ int main(int argc, char *argv[])
 	
     QWidget waiting ;
 
-    waiting.setStyleSheet("background: url(:/images/pwctlogo.png) no-repeat center center fixed;");
+    waiting.setStyleSheet("background: url(:/images/pwctlogo.jpg) no-repeat center center fixed;");
 
     waiting.show();
     a.processEvents();
