@@ -2,7 +2,7 @@ ring pwct.ring -go -norun
 copy /Y *.ringo target\mobile\qtproject
 cd target\mobile\qtproject
 set ANDROID_HOME=C:/JavaAndroid/AndroidSDK
-set ANDROID_NDK_ROOT=C:/JavaAndroid/android-ndk-r20b/
+set ANDROID_NDK_ROOT=C:/JavaAndroid/android-ndk-r21/
 set ANDROID_API_VERSION=android-19
 set JAVA_HOME=C:\Program Files (x86)\Java\jdk1.8.0_05
 set ANDROID_SDK_ROOT=C:\JavaAndroid\AndroidSDK
