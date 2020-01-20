@@ -1,4 +1,4 @@
-/* Copyright (c) 2013-2018 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2020 Mahmoud Fayed <msfclipper@yahoo.com> */
 
 extern "C" {
 	#include "ring.h"
@@ -50330,23 +50330,6 @@ RING_FUNC(ring_QWidget_y)
 }
 
 
-RING_FUNC(ring_QWidget_close)
-{
-	QWidget *pObject ;
-	if ( RING_API_PARACOUNT != 1 ) {
-		RING_API_ERROR(RING_API_MISS1PARA);
-		return ;
-	}
-	RING_API_IGNORECPOINTERTYPE ;
-	if ( ! RING_API_ISPOINTER(1) ) {
-		RING_API_ERROR(RING_API_BADPARATYPE);
-		return ;
-	}
-	pObject = (QWidget *) RING_API_GETCPOINTER(1,"QWidget");
-	RING_API_RETNUMBER(pObject->close());
-}
-
-
 RING_FUNC(ring_QWidget_hide)
 {
 	QWidget *pObject ;
@@ -50715,6 +50698,28 @@ RING_FUNC(ring_QWidget_createWindowContainer)
 		return ;
 	}
 	RING_API_RETCPOINTER(pObject->createWindowContainer((QWindow *) RING_API_GETCPOINTER(2,"QWindow"),(QWidget *) RING_API_GETCPOINTER(3,"QWidget"), (Qt::WindowFlags )  (int) RING_API_GETNUMBER(4)),"QWidget");
+}
+
+RING_FUNC(ring_QWidget_close)
+{
+	QWidget *pObject ;
+	int nOutput;
+	if ( RING_API_PARACOUNT != 1 ) {
+		RING_API_ERROR(RING_API_MISS1PARA);
+		return ;
+	}
+	RING_API_IGNORECPOINTERTYPE ;
+	if ( ! RING_API_ISPOINTER(1) ) {
+		RING_API_ERROR(RING_API_BADPARATYPE);
+		return ;
+	}
+	pObject = (QWidget *) RING_API_GETCPOINTER(1,"QWidget");
+	// Close the widget
+		nOutput = pObject->close() ;
+	// Delete the widget
+		delete pObject ;
+		RING_API_SETNULLPOINTER(1);
+	RING_API_RETNUMBER(nOutput);
 }
 
 
@@ -124917,7 +124922,6 @@ RING_API void ring_qt_start(RingState *pRingState)
 	ring_vm_funcregister("qwidget_windowtype",ring_QWidget_windowType);
 	ring_vm_funcregister("qwidget_x",ring_QWidget_x);
 	ring_vm_funcregister("qwidget_y",ring_QWidget_y);
-	ring_vm_funcregister("qwidget_close",ring_QWidget_close);
 	ring_vm_funcregister("qwidget_hide",ring_QWidget_hide);
 	ring_vm_funcregister("qwidget_lower",ring_QWidget_lower);
 	ring_vm_funcregister("qwidget_raise",ring_QWidget_raise);
@@ -124937,6 +124941,7 @@ RING_API void ring_qt_start(RingState *pRingState)
 	ring_vm_funcregister("qwidget_mousegrabber",ring_QWidget_mouseGrabber);
 	ring_vm_funcregister("qwidget_settaborder",ring_QWidget_setTabOrder);
 	ring_vm_funcregister("qwidget_createwindowcontainer",ring_QWidget_createWindowContainer);
+	ring_vm_funcregister("qwidget_close",ring_QWidget_close);
 	ring_vm_funcregister("qlabel_alignment",ring_QLabel_alignment);
 	ring_vm_funcregister("qlabel_buddy",ring_QLabel_buddy);
 	ring_vm_funcregister("qlabel_hasscaledcontents",ring_QLabel_hasScaledContents);
