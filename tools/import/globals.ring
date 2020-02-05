@@ -1,0 +1,28 @@
+# User Interface 
+	C_WIDTH		= 12
+
+# Tokens Table 
+	C_TOKENTYPE 	= 1
+	C_TOKENVALUE	= 2
+
+# Token Type
+	C_KEYWORD 	= 0
+	C_OPERATOR 	= 1
+	C_LITERAL 	= 2
+	C_NUMBER 	= 3
+	C_IDENTIFIER 	= 4
+	C_ENDLINE 	= 5
+
+# Keywords List
+	aKEYWORDS = [
+		"IF","TO","OR","AND","NOT","FOR","NEW","FUNC", 
+		"FROM","NEXT","LOAD","ELSE","SEE","WHILE","OK",
+		"CLASS","RETURN","BUT", 
+		"END","GIVE","BYE","EXIT","TRY","CATCH","DONE",
+		"SWITCH","ON","OTHER","OFF", 
+		"IN","LOOP","PACKAGE","IMPORT","PRIVATE","STEP","DO",
+		"AGAIN","CALL","ELSEIF", 
+		"PUT","GET","CASE","DEF","ENDFUNC","ENDCLASS","ENDPACKAGE", 
+		"CHANGERINGKEYWORD","CHANGERINGOPERATOR","LOADSYNTAX"
+	]
+	
