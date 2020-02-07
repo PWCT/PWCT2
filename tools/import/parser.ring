@@ -3,16 +3,22 @@ class Parser
 	aTokens 	= []
 	nActiveToken 	= 0
 	nTokensCount	= 0
-	
+
+	aActiveToken	= []	
 	nTokenType 	= 0
 	cTokenValue	= ""
 	nTokenIndex 	= 0
 
+	func setTokens aList
+		aTokens 	= aList 
+		nActiveToken 	= 1
+		nTokensCount	= len(aTokens)
+
 	func LoadToken
-		aToken = aTokens[nActiveToken]
-		nTokenType 	= aToken[C_TOKENTYPE]
-		cTokenValue 	= aToken[C_TOKENVALUE]
-		nTokenIndex 	= aToken[C_TOKENINDEX]
+		aActiveToken	= aTokens[nActiveToken]
+		nTokenType 	= aActiveToken[C_TOKENTYPE]
+		cTokenValue 	= aActiveToken[C_TOKENVALUE]
+		nTokenIndex 	= aActiveToken[C_TOKENINDEX]
 
 	func NextToken
 		if nActiveToken < nTokensCount
