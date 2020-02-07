@@ -7,7 +7,7 @@ load "scanner.ring"
 func main
 	oScanner = new Scanner {
 		setFileName("test.ring")
-		GetTokens()
+		GenTokens()
 		PrintTokens()
 	}
 	
