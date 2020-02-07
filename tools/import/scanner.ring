@@ -22,7 +22,8 @@ class Scanner
 				 aKeywords[0+aToken[C_TOKENVALUE]]
 			on C_OPERATOR 
 				? Width("Operator",C_WIDTH)  + ": " +
-				 aToken[C_TOKENVALUE]
+				 aToken[C_TOKENVALUE] + " (" +
+				 aToken[C_TOKENINDEX] + ")"
 			on C_LITERAL 
 				? Width("Literal",C_WIDTH)  + ": " +
 				 aToken[C_TOKENVALUE]

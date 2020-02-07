@@ -4,6 +4,7 @@
 # Tokens Table 
 	C_TOKENTYPE 	= 1
 	C_TOKENVALUE	= 2
+	C_TOKENINDEX	= 3
 
 # Token Type
 	C_KEYWORD 	= 0
