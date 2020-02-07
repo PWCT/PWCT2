@@ -1,11 +1,3 @@
-load "../vsfgenerator/generator.ring"
-
-load "globals.ring"
-
-func main
-	aList = GetTokens("test.ring")
-	PrintTokens(aList)
-	
 func GetTokens cFileName
 	pState = ring_state_new()
 	aList = ring_state_filetokens(pState,cFileName)
@@ -35,5 +27,4 @@ func PrintTokens aList
 		off
 	next
 
-func Width cText,nWidth
-	return cText+Copy(" ",nWidth-len(cText))
+
