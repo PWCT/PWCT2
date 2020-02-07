@@ -5,6 +5,9 @@ load "general.ring"
 load "scanner.ring"
 
 func main
-	aList = GetTokens("test.ring")
-	PrintTokens(aList)
+	oScanner = new Scanner {
+		setFileName("test.ring")
+		GetTokens()
+		PrintTokens()
+	}
 	
