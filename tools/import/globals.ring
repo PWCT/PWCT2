@@ -26,4 +26,55 @@
 		"PUT","GET","CASE","DEF","ENDFUNC","ENDCLASS","ENDPACKAGE", 
 		"CHANGERINGKEYWORD","CHANGERINGOPERATOR","LOADSYNTAX"
 	]
+
+# Keywords Constants 	
+	K_IF 			= 1
+	K_TO 			= 2
+	K_OR 			= 3
+	K_AND 			= 4
+	K_NOT 			= 5
+	K_FOR 			= 6
+	K_NEW 			= 7
+	K_FUNC 			= 8
+	K_FROM 			= 9
+	K_NEXT 			= 10
+	K_LOAD 			= 11
+	K_ELSE 			= 12
+	K_SEE 			= 13
+	K_WHILE 		= 14
+	K_OK 			= 15
+	K_CLASS 		= 16
+	K_RETURN 		= 17
+	K_BUT 			= 18
+	K_END 			= 19
+	K_GIVE 			= 20
+	K_BYE 			= 21
+	K_EXIT 			= 22
+	K_TRY 			= 23
+	K_CATCH 		= 24
+	K_DONE 			= 25
+	K_SWITCH 		= 26
+	K_ON 			= 27
+	K_OTHER			= 28
+	K_OFF 			= 29
+	K_IN 			= 30
+	K_LOOP 			= 31
+	K_PACKAGE 		= 32
+	K_IMPORT 		= 33
+	K_PRIVATE 		= 34
+	K_STEP 			= 35
+	K_DO 			= 36
+	K_AGAIN 		= 37
+	K_CALL 			= 38
+	K_ELSEIF 		= 39
+	K_PUT 			= 40
+	K_GET 			= 41
+	K_CASE 			= 42
+	K_DEF 			= 43
+	K_ENDFUNC 		= 44
+	K_ENDCLASS 		= 45
+	K_ENDPACKAGE 		= 46
+	K_CHANGERINGKEYWORD 	= 47
+	K_CHANGERINGOPERATOR 	= 48
+	K_LOADSYNTAX 		= 49
 	
