@@ -6,8 +6,13 @@ load "scanner.ring"
 load "parser.ring"
 
 func main
+
 	oScanner = new Scanner {
 		setFileName("test.ring")
-		GenTokens()
+		Start()
 		PrintTokens()
+	}
+
+	oParser = new Parser {
+		setTokens(oScanner.GetTokens())
 	}
