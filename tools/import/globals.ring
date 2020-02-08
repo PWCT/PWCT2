@@ -1,6 +1,3 @@
-# User Interface 
-	C_WIDTH		= 12
-
 # Tokens Table 
 	C_TOKENTYPE 	= 1
 	C_TOKENVALUE	= 2
