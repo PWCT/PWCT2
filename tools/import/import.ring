@@ -1,7 +1,7 @@
 load "../vsfgenerator/generator.ring"
 
 load "globals.ring"
-load "general.ring"
+load "uilib.ring"
 load "scanner.ring"
 load "parser.ring"
 
