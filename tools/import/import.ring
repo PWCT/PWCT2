@@ -15,4 +15,6 @@ func main
 
 	oParser = new Parser {
 		setTokens(oScanner.GetTokens())
+		Start()
+		PrintParseTree()
 	}

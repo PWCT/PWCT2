@@ -9,9 +9,12 @@ class Parser
 	cTokenValue	= ""
 	nTokenIndex 	= 0
 
+	aParseTree	= []
+	cBuffer		= ""
+
 	func setTokens aList
 		aTokens 	= aList 
-		nActiveToken 	= 1
+		nActiveToken 	= 0
 		nTokensCount	= len(aTokens)
 
 	func LoadToken
@@ -23,11 +26,14 @@ class Parser
 	func NextToken
 		if nActiveToken < nTokensCount
 			nActiveToken++
+			LoadToken()
+			return True
 		ok
+		return False
 
 	func isKeyword cKeyword
 		return nTokenType = C_KEYWORD and 
-		   cTokenValue = cKeyword 
+		   Number(cTokenValue) = cKeyword 
 		
 	func isOperator cOperator
 		return nTokenType = C_OPERATOR and 
@@ -47,3 +53,39 @@ class Parser
 		return nTokenType = C_OPERATOR and 
 		   cTokenIndex = nIndex 
 
+	func Generate aCommand 
+		aParseTree + aCommand 
+
+	func Start 
+		do
+			Statement()	
+		again NextToken()
+
+	func Statement 
+		StmtSeeExpr()
+
+	func StmtSeeExpr
+		if isKeyWord(K_SEE)
+			NextToken()
+			Expr()
+			Generate( [
+				:Command = :See,
+				:Expression = cBuffer
+			] )
+		ok
+
+	func Expr
+		cBuffer = ""
+		Literal()
+
+	func Literal
+		if isLiteral()
+			cBuffer += cTokenValue
+			NextToken()
+			return True
+		ok
+		return False
+
+	func PrintParseTree
+		? "Parse Tree..."
+		? List2Code(aParseTree)
