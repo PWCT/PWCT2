@@ -1,9 +1,8 @@
-load "../vsfgenerator/generator.ring"
-
 load "globals.ring"
 load "uilib.ring"
 load "scanner.ring"
 load "parser.ring"
+load "generator.ring"
 
 func main
 
@@ -17,4 +16,9 @@ func main
 		setTokens(oScanner.GetTokens())
 		Start()
 		PrintParseTree()
+	}
+
+	oGenerator = new Generator {
+		setParseTree(oParser.GetParseTree())
+		Start()
 	}

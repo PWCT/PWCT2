@@ -56,6 +56,9 @@ class Parser
 	func Generate aCommand 
 		aParseTree + aCommand 
 
+	func GetParseTree 
+		return aParseTree
+
 	func Start 
 		do
 			Statement()	
