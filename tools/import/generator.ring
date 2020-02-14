@@ -1,3 +1,10 @@
+/*
+**	Project : Programming Without Coding Technology (PWCT) Version 2.0
+**	File Purpose :  Generator
+**	Date : 2020.02.15
+**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
+*/
+
 load "../vsfgenerator/generator.ring"
 
 class Generator
