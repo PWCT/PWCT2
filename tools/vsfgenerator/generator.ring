@@ -21,6 +21,9 @@
 	load "../../goaldesigner/model/interactionmodel.ring"
 	# Used by Goal Designer Model
 		load "../../goaldesigner/controller/htmlfunctions.ring"
+	load "../../goaldesigner/view/htmlstyles.ring"
+
+	load "../../translation/english.ring"
 
 if isMainSourceFile()
 	? "Generation started!"
@@ -35,6 +38,9 @@ class VSFGenerator
 
 	cFileName = "test.pwct"
 	oModel = new GoalDesignerModel
+
+	oStyle 		= new HTMLStyles
+	oHTMLFunctions	= new HTMLFunctions
 
 	func startGenerator
 		TestGenerator()
@@ -59,6 +65,7 @@ class VSFGenerator
 		for x = 1 to 10
 			AddRootStep("Step Number : " + x)
 		next 
+		AddPrintExpression("Hello, World")
 
 	func AddRootStep cStepName 
 		cPlainStepName = cStepName
@@ -73,3 +80,96 @@ class VSFGenerator
 				:plainname = cPlainStepName
 			]
 		)
+
+	func List2InteractionVariables aList 
+		cVariables = ""
+		for aItem in aList 
+			cVariables += aItem[1] + C_INTERACTIONVALUES_SEPARATOR +
+					aItem[2] + C_INTERACTIONVALUES_SEPARATOR
+		next 
+		return cVariables 
+
+	/*
+		Purpose : Add Generated Step Interaction
+		Parameters : The component Name
+		Output : Interaction ID
+	*/
+
+	func AddGeneratedInteraction cComponent
+		return oModel.oInteractionModel.AddGeneratedInteraction(cComponent)
+
+	/*
+		Purpose : Save Variables Values
+		Parameters : Interaction ID and Variables Values
+		Output : None
+	*/
+
+	func SaveVariablesValues nIID,cVariablesValues
+		oModel.oInteractionModel.SaveVariablesValues(nIID,cVariablesValues)
+
+	/*
+		Purpose : Add Generated Step
+		Parameters : Step Name, Interaction ID, Step Number and Step Type
+		Output : Item Object
+	*/
+
+	func AddGeneratedStep nParentID,cStepName,nIID,nStepNumber,nStepType
+		cPlainStepName = oHTMLFunctions.PlainText(cStepName)
+ 		nStepID = oModel.AddStep(nParentID,[
+				:name = cStepName,
+				:active = True , 
+				:code = "" , 
+			 	:interactionid = nIID ,
+				:visible = True , 
+				:stepnumber = nStepNumber ,
+				:steptype = nStepType,
+				:plainname = cPlainStepName 
+			]
+		)
+		return nStepID
+
+	/*
+		Purpose : Set Text color and backcolor 
+		Parameters : Text as String 
+		Output : Styled Text as String 
+	*/
+	func StyleData cText 
+		return oStyle.text( htmlspecialchars(cText) , "C_STEPCOLOR_DATA_TEXT" ,"C_STEPCOLOR_DATA_BACKCOLOR") 
+
+	/*
+		HTML Special Character 
+		Input : String contains Special Characters like < and >
+		Output : String to be displayed in HTML pages
+	*/
+	func HTMLSpecialChars cStr
+		return oHTMLFunctions.HTMLSpecialChars(cStr)
+
+	/*
+		Accept literal contains characters like ", ' and `
+	*/
+	func common_literal cText 
+		if substr(cText,CHAR(34)) = 0 {
+			cChar = Char(34)
+		elseif substr(cText,"'") = 0 
+			cChar = "'"
+		elseif substr(cText,"`") = 0 
+			cChar = "`"
+		else 
+			cChar = '"'
+			cText = substr(cText,'"',`"+char(34)+"`)
+		}
+		return cChar + cText + cChar
+
+	func AddPrintExpression cExpr 
+		nIID = AddGeneratedInteraction("print")
+		cVariables = List2InteractionVariables( [
+			:text 		= cExpr,
+			:type 		= "1",
+			:newline 	= "2"
+		])
+		SaveVariablesValues(nIID,cVariables)
+		nStepID = AddGeneratedStep(1,
+		T_CT_PRINT_ST_PRINT + StyleData(cExpr) + T_CT_PRINT_ST_NEWLINE,
+		nIID,1,C_STEPTYPE_ROOT)
+		oModel.SaveStepCode(nStepID,
+			"? " + common_literal(cExpr))
