@@ -15,28 +15,28 @@ class Scanner
 		return aTokens
 
 	func PrintTokens 
-		for aToken in aTokens
-			switch aToken[C_TOKENTYPE]
-			on C_KEYWORD 
+		for aToken in aTokens {
+			switch aToken[C_TOKENTYPE] {
+			case C_KEYWORD 
 				? Width("Keyword",C_WIDTH) + ": "  +
 				 aKeywords[0+aToken[C_TOKENVALUE]]
-			on C_OPERATOR 
+			case C_OPERATOR 
 				? Width("Operator",C_WIDTH)  + ": " +
 				 aToken[C_TOKENVALUE] + " (" +
 				 aToken[C_TOKENINDEX] + ")"
-			on C_LITERAL 
+			case C_LITERAL 
 				? Width("Literal",C_WIDTH)  + ": " +
 				 aToken[C_TOKENVALUE]
-			on C_NUMBER 
+			case C_NUMBER 
 				? Width("Number",C_WIDTH)  + ": " +
 				 aToken[C_TOKENVALUE]
-			on C_IDENTIFIER 
+			case C_IDENTIFIER 
 				? Width("Identifier",C_WIDTH)  + ": " +
 				 aToken[C_TOKENVALUE]
-			on C_ENDLINE 
+			case C_ENDLINE 
 				? "EndLine"	
-			off
-		next
+			}
+		}
 	
 	
 	

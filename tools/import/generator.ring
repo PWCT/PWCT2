@@ -9,10 +9,10 @@ class Generator
 
 	func Start 
 		oPWCT = new VSFGenerator 
-		for aCommand in aParseTree 
-			switch aCommand[:Command]
-				on :See 
+		for aCommand in aParseTree {
+			switch aCommand[:Command] {
+				case :See 
 					oPWCT.AddPrintExpression(aCommand[:Expression])
-			off
-		next 
+			}
+		}
 		oPWCT.WriteVisualSourceFile()

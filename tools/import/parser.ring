@@ -24,11 +24,11 @@ class Parser
 		nTokenIndex 	= aActiveToken[C_TOKENINDEX]
 
 	func NextToken
-		if nActiveToken < nTokensCount
+		if nActiveToken < nTokensCount {
 			nActiveToken++
 			LoadToken()
 			return True
-		ok
+		}
 		return False
 
 	func isKeyword cKeyword
@@ -68,25 +68,25 @@ class Parser
 		StmtSeeExpr()
 
 	func StmtSeeExpr
-		if isKeyWord(K_SEE)
+		if isKeyWord(K_SEE) {
 			NextToken()
 			Expr()
 			Generate( [
 				:Command = :See,
 				:Expression = cBuffer
 			] )
-		ok
+		}
 
 	func Expr
 		cBuffer = ""
 		Literal()
 
 	func Literal
-		if isLiteral()
+		if isLiteral() {
 			cBuffer += cTokenValue
 			NextToken()
 			return True
-		ok
+		}
 		return False
 
 	func PrintParseTree
