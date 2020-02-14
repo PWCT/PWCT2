@@ -64,8 +64,8 @@ class VSFGenerator
 	func TestGenerator
 		for x = 1 to 10
 			AddRootStep("Step Number : " + x)
+			AddPrintExpression("Hello, World " + x)
 		next 
-		AddPrintExpression("Hello, World")
 
 	func AddRootStep cStepName 
 		cPlainStepName = cStepName
@@ -160,16 +160,21 @@ class VSFGenerator
 		}
 		return cChar + cText + cChar
 
+	func UseComponent cComponentName,aVarsList
+		nIID = AddGeneratedInteraction(cComponentName)
+		cVariables = List2InteractionVariables(aVarsList)
+		SaveVariablesValues(nIID,cVariables)
+		return nIID
+
 	func AddPrintExpression cExpr 
-		nIID = AddGeneratedInteraction("print")
-		cVariables = List2InteractionVariables( [
+		nIID = UseComponent("print",[
 			:text 		= cExpr,
 			:type 		= "1",
 			:newline 	= "2"
 		])
-		SaveVariablesValues(nIID,cVariables)
-		nStepID = AddGeneratedStep(1,
+		nParentID   = 1
+		nStepNumber = 1
+		nStepID = AddGeneratedStep(nParentID,
 		T_CT_PRINT_ST_PRINT + StyleData(cExpr) + T_CT_PRINT_ST_NEWLINE,
-		nIID,1,C_STEPTYPE_ROOT)
-		oModel.SaveStepCode(nStepID,
-			"? " + common_literal(cExpr))
+		nIID,nStepNumber,C_STEPTYPE_ROOT)
+		oModel.SaveStepCode(nStepID, "? " + common_literal(cExpr))
