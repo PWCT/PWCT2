@@ -1,3 +1,10 @@
+/*
+**	Project : Programming Without Coding Technology (PWCT) Version 2.0
+**	File Purpose : Visual Source File Generator 
+**	Date : 2020.02.15
+**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
+*/
+
 # Load Ring Libraries
 	load "stdlib.ring"
 
@@ -49,7 +56,7 @@ class VSFGenerator
 		WriteVisualSourceFile()
 
 	func TestGenerator
-		for x = 1 to 100 {
+		for x = 1 to 10 {
 			AddRootStep("Step Number : " + x)
 			AddPrintExpression("Hello, World " + x)
 		}
