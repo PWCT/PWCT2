@@ -12,7 +12,7 @@ class Generator
 		for aCommand in aParseTree 
 			switch aCommand[:Command]
 				on :See 
-					oPWCT.AddRootStep("See " + aCommand[:Expression])
+					oPWCT.AddPrintExpression(aCommand[:Expression])
 			off
 		next 
 		oPWCT.WriteVisualSourceFile()

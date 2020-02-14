@@ -1,4 +1,3 @@
 see "Hello, World!"
-? 3*2+3
-Name = "Ring"
-? Name
+see "Welcome to the Ring programming language"
+see "Ring is a great language!"
