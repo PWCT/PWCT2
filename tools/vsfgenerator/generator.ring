@@ -19,10 +19,12 @@
 	load "../../goaldesigner/model/goaldesignermodel.ring"
 	load "../../goaldesigner/model/treemodel.ring"
 	load "../../goaldesigner/model/interactionmodel.ring"
-	# Used by Goal Designer Model
-		load "../../goaldesigner/controller/htmlfunctions.ring"
+
+# HTML Styles - Used by Goal Designer Model
+	load "../../goaldesigner/controller/htmlfunctions.ring"
 	load "../../goaldesigner/view/htmlstyles.ring"
 
+# Load PWCT Translation 
 	load "../../translation/english.ring"
 
 if isMainSourceFile()
@@ -46,9 +48,15 @@ class VSFGenerator
 		TestGenerator()
 		WriteVisualSourceFile()
 
+	func TestGenerator
+		for x = 1 to 100 {
+			AddRootStep("Step Number : " + x)
+			AddPrintExpression("Hello, World " + x)
+		}
+
 	func WriteVisualSourceFile
 		# Delete the old visual source file 
-			if fexists(cFileName) remove(cFileName) ok
+			if fexists(cFileName) { remove(cFileName) }
 		# Write the new visual source file (*.pwct)
 			oVisualSourceFile = new visualSourceFile
 			oVisualSourceFile.cFileName  =  cFileName
@@ -61,12 +69,6 @@ class VSFGenerator
 			oVisualSourceFile.SaveTables()
 			oVisualSourceFile.Close()
 	
-	func TestGenerator
-		for x = 1 to 10
-			AddRootStep("Step Number : " + x)
-			AddPrintExpression("Hello, World " + x)
-		next 
-
 	func AddRootStep cStepName 
 		cPlainStepName = cStepName
  		nStepID = oModel.AddStep(1,[
@@ -83,10 +85,10 @@ class VSFGenerator
 
 	func List2InteractionVariables aList 
 		cVariables = ""
-		for aItem in aList 
+		for aItem in aList {
 			cVariables += aItem[1] + C_INTERACTIONVALUES_SEPARATOR +
 					aItem[2] + C_INTERACTIONVALUES_SEPARATOR
-		next 
+		} 
 		return cVariables 
 
 	/*
@@ -110,7 +112,7 @@ class VSFGenerator
 	/*
 		Purpose : Add Generated Step
 		Parameters : Step Name, Interaction ID, Step Number and Step Type
-		Output : Item Object
+		Output : Step ID
 	*/
 
 	func AddGeneratedStep nParentID,cStepName,nIID,nStepNumber,nStepType
@@ -160,12 +162,18 @@ class VSFGenerator
 		}
 		return cChar + cText + cChar
 
+	/*
+		Replacement for using the Interaction Page
+	*/
 	func UseComponent cComponentName,aVarsList
 		nIID = AddGeneratedInteraction(cComponentName)
 		cVariables = List2InteractionVariables(aVarsList)
 		SaveVariablesValues(nIID,cVariables)
 		return nIID
 
+	/*
+		The Print Component
+	*/
 	func AddPrintExpression cExpr 
 		nIID = UseComponent("print",[
 			:text 		= cExpr,
