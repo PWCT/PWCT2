@@ -116,22 +116,22 @@ class Parser
 
 	func ring_parser_expr  
 		/* Expr --> LogicNot { and|or LogicNot } */
-		if ( logicnot() ) {
+		if logicnot() {
 			x = 1 
-			while ( iskeyword(K_AND) 	|| isoperator("&&")  	|| 
-				iskeyword(K_OR) 	|| isoperator("||") ) 	{
-				if ( iskeyword(K_AND) || isoperator("&&") ) {
+			while iskeyword(K_AND) 	or isoperator("&&")  	or 
+			      iskeyword(K_OR) 	or isoperator("||")  	{
+				if iskeyword(K_AND) or isoperator("&&") {
 					nexttoken()
 					IGNORENEWLINE() 
 					x = logicnot()
-					if ( x = 0 ) {
+					if x = 0 {
 						return 0 
 					}
 				else
 					nexttoken()
 					IGNORENEWLINE() 
 					x = logicnot()
-					if ( x = 0 ) {
+					if x = 0 {
 						return 0 
 					}
 				}
