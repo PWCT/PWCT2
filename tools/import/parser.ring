@@ -99,3 +99,45 @@ class Parser
 	func PrintParseTree
 		? "Parse Tree..."
 		? List2Code(aParseTree)
+
+	func IGNORENEWLINE
+		while epslion() end
+
+	func epslion
+		if isendline() {
+			if nexttoken() {
+				return 1 
+			}
+			if TokensCount = 1 {
+				return 1 
+			}
+		}
+		return 0 
+
+	func ring_parser_expr  
+		/* Expr --> LogicNot { and|or LogicNot } */
+		if ( logicnot() ) {
+			x = 1 
+			while ( iskeyword(K_AND) 	|| isoperator("&&")  	|| 
+				iskeyword(K_OR) 	|| isoperator("||") ) 	{
+				if ( iskeyword(K_AND) || isoperator("&&") ) {
+					nexttoken()
+					IGNORENEWLINE() 
+					x = logicnot()
+					if ( x = 0 ) {
+						return 0 
+					}
+				else
+					nexttoken()
+					IGNORENEWLINE() 
+					x = logicnot()
+					if ( x = 0 ) {
+						return 0 
+					}
+				}
+			}
+			return x 
+		}
+		return 0 
+	
+
