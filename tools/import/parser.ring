@@ -330,3 +330,38 @@ class Parser
 			return x 
 		}
 		return 0 
+
+	func term
+		/* Term --> Range { *|/|% Range } */
+		if range() {
+			x = 1 
+			while isoperator2(OP_MUL) or isoperator2(OP_DIV) or isoperator2(OP_REM) {
+				if isoperator2(OP_MUL) {
+					nexttoken()
+					IGNORENEWLINE()
+					x = range()
+					if x = 0 {
+						return 0 
+					}
+					/* Generate Code */
+				elseif isoperator2(OP_REM)
+					nexttoken()
+					IGNORENEWLINE() 
+					x = range()
+					if x = 0 {
+						return 0 
+					}
+					/* Generate Code */
+				else
+					nexttoken()
+					IGNORENEWLINE() 
+					x = range()
+					if x = 0 {
+						return 0 
+					}
+					/* Generate Code */
+				}
+			}
+			return x 
+		}
+		return 0 
