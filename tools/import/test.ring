@@ -5,6 +5,6 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-see "Hello, World!"
+see "Hello, World!"+(3*2)+cName
 see "Welcome to the Ring programming language"
 see "Ring is a great language!"

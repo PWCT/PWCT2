@@ -48,6 +48,15 @@ class Parser
 		nTokenType 	= aActiveToken[C_TOKENTYPE]
 		cTokenValue 	= aActiveToken[C_TOKENVALUE]
 		nTokenIndex 	= aActiveToken[C_TOKENINDEX]
+		AddToTextBuffer()
+
+	func ClearTextBuffer
+		cBuffer = ""
+
+	func AddToTextBuffer 
+		if Find([C_LITERAL,C_NUMBER,C_OPERATOR,C_IDENTIFIER],nTokenType) {
+	 		cBuffer += cTokenValue
+		}
 
 	func NextToken
 		if nActiveToken < nTokensCount {
@@ -77,10 +86,10 @@ class Parser
 
 	func isOperator2 nIndex
 		return nTokenType = C_OPERATOR and 
-		   cTokenIndex = nIndex 
+		   nTokenIndex = nIndex 
 	
 	func SetToken x 
-		if x >= 1 and x <= TokensCount {
+		if x >= 1 and x <= nTokensCount {
 			nActiveToken = x 
 			loadtoken()
 			return 1 
@@ -101,7 +110,7 @@ class Parser
 			if nexttoken() {
 				return 1 
 			}
-			if TokensCount = 1 {
+			if nTokensCount = 1 {
 				return 1 
 			}
 		}
@@ -113,7 +122,7 @@ class Parser
 	func passepslion
 		/* used after factor - identifier to allow {  } in new line */
 		if isendline() {
-			nLineNumber = cTokenText
+			nLineNumber = cTokenValue
 			if nexttoken() {
 				return 1 
 			}
@@ -136,8 +145,9 @@ class Parser
 
 	func StmtSeeExpr
 		if isKeyWord(K_SEE) {
+	 		ClearTextBuffer()
 			NextToken()
-			if SimpleExpr() {
+			if Expr() {
 				Generate( [
 					:Command = :See,
 					:Expression = cBuffer
@@ -653,7 +663,7 @@ class Parser
 				nAssignmentFlag = 1 
 				nBraceFlag = 0 
 				while stmt() {
-					if ActiveToken = TokensCount {
+					if nActiveToken = nTokensCount {
 						exit 
 					}
 				}
@@ -809,7 +819,7 @@ class Parser
 			/* we support literal to be able to call methods contains operators in the name */
 			if isidentifier() or isliteral() {
 				/* Prevent Accessing the self reference from outside the object */
-				if cTokenText = "self" {
+				if cTokenValue = "self" {
 					error(ERROR_ACCESSSELFREF)
 					return 0 
 				}
