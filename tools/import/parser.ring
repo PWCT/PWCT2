@@ -232,3 +232,30 @@ class Parser
 			return x 
 		}
 		return 0 
+
+	func bitorxor
+		/* BitOrXOR --> BitAnd { | | ^ BitAnd } */
+		if bitand() {
+			x = 1 
+			while isoperator2(OP_BITOR) or isoperator2(OP_XOR) {
+				if isoperator2(OP_BITOR) {
+					nexttoken()
+					IGNORENEWLINE()
+					x = bitand()
+					if x = 0 {
+						return 0 
+					}
+					/* Generate Code */
+				else
+					nexttoken()
+					IGNORENEWLINE() 
+					x = bitand()
+					if x = 0 {
+						return 0
+					}
+					/* Generate Code */
+				}
+			}
+			return x
+		}
+		return 0
