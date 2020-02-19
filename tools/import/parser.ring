@@ -140,4 +140,12 @@ class Parser
 		}
 		return 0 
 	
-
+	func logicnot
+		/* LogicNot --> Not EqualOrNot */
+		if iskeyword(K_NOT) || isoperator2(OP_NOT)  {
+			nexttoken()
+			IGNORENEWLINE()
+		}
+		x = equalornot()
+		return x 
+	
