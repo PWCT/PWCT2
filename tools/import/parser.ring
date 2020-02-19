@@ -19,6 +19,25 @@ class Parser
 	aParseTree	= []
 	cBuffer		= ""
 
+	nLineNumber 	= 1 
+	nErrorLine 	= 0 
+	nErrorsCount 	= 0 
+	nAssignmentFlag = 1 
+	nClassStart 	= 0 
+	nClassMark 	= 0 
+	nPrivateFlag 	= 0 
+	nBraceFlag 	= 0 
+	nInsertFlag 	= 0 
+	nInsertCounter 	= 0 
+	nNewObject 	= 0 
+	nFuncCallOnly 	= 0 
+	nControlStructureExpr 	= 0 
+	nControlStructureBrace 	= 0 
+	nThisOrSelfLoadA 	= 0 
+	nLoopOrExitCommand 	= 0 
+	nCheckLoopAndExit 	= 1 
+	nLoopFlag 		= 0 
+
 	func setTokens aList
 		aTokens 	= aList 
 		nActiveToken 	= 0
@@ -59,6 +78,14 @@ class Parser
 	func isOperator2 nIndex
 		return nTokenType = C_OPERATOR and 
 		   cTokenIndex = nIndex 
+	
+	func SetToken x 
+		if x >= 1 and x <= TokensCount {
+			nActiveToken = x 
+			loadtoken()
+			return 1 
+		}
+		return 0 
 
 	func Generate aCommand 
 		aParseTree + aCommand 
@@ -101,7 +128,10 @@ class Parser
 		? List2Code(aParseTree)
 
 	func IGNORENEWLINE
-		while epslion() end
+		while epslion() {}
+
+	func PASSNEWLINE 
+		while passepslion() {}
 
 	func Error cMsg 
 		raise(cMsg)
@@ -112,6 +142,19 @@ class Parser
 				return 1 
 			}
 			if TokensCount = 1 {
+				return 1 
+			}
+		}
+		return 0 
+
+	func CURRENTTOKEN 
+		return nActiveToken
+
+	func passepslion
+		/* used after factor - identifier to allow {  } in new line */
+		if isendline() {
+			nLineNumber = cTokenText
+			if nexttoken() {
 				return 1 
 			}
 		}
@@ -168,7 +211,7 @@ class Parser
 							return 0 
 						}
 					else
-						error(RING_PARSER_ERROR_EXPROPERATOR)
+						error(ERROR_EXPROPERATOR)
 						return 0 
 					}
 				else 
@@ -383,3 +426,262 @@ class Parser
 		}
 		return 0 
 	
+	func factor 
+		/* Factor --> Identifier  {mixer} [ '=' Expr ] */
+		if isidentifier() {
+			/* Generate Code */
+			nexttoken()
+			nToken = CURRENTTOKEN() 
+			PASSNEWLINE() 
+			/* Back if we don't have { */
+			if CURRENTTOKEN() > nToken {
+				if ! isoperator2(OP_BRACEOPEN) {
+					settoken(nToken)
+				}
+			}
+			/* Array Index & Object Dot */
+			x = mixer()
+			if x = 0 {
+				return 0 
+			}
+			/*
+			**  [ [ = Expr  ] 
+			**  Save State before changes by Check Operator 
+			*/
+			/* Check Operator */
+			lequal = 1 
+			if isoperator2(OP_EQUAL) {
+				nBeforeEqual = 0 
+			elseif isoperator("+=")  
+				nBeforeEqual = 1 
+			elseif isoperator("-=") 
+				nBeforeEqual = 2 
+			elseif isoperator("*=") 
+				nBeforeEqual = 3 
+			elseif isoperator("/=")
+				nBeforeEqual = 4 
+			elseif isoperator("%=") 
+				nBeforeEqual = 5 
+			elseif isoperator("&=")
+				nBeforeEqual = 6 
+			elseif isoperator("|=") 
+				nBeforeEqual = 7 
+			elseif isoperator("^=") 
+				nBeforeEqual = 8 
+			elseif isoperator("<<=")
+				nBeforeEqual = 9 
+			elseif isoperator(">>=") 
+				nBeforeEqual = 10 
+			else 
+				lequal = 0 
+				nBeforeEqual = 0 
+			}
+			if lequal = 1  and nAssignmentFlag = 1 {
+				nexttoken()
+				/* Check if the Assignment after object attribute name */
+				nLocalThisOrSelfLoadA = nThisOrSelfLoadA 
+				/* Generate Code */
+				IGNORENEWLINE() 
+				nNewObject = 0 
+				x = expr()
+				/* Check New Object and this.property or self.property to disable set property */
+				if nNewObject and lSetProperty and nLocalThisOrSelfLoadA {
+					lSetProperty = 0 
+				}
+				/* Generate Code */
+				return x 
+			}
+			/* ++ & -- */
+			if ppmm() {
+				return 1 
+			}
+			/* Generate Code */
+			return 1 
+		}
+		/* Factor - Number */
+		if isnumber() {
+			/* Generate Code */
+			nexttoken()
+			/* If we have condition - pass new lines */
+			if nControlStructureExpr {
+				IGNORENEWLINE() 
+			}
+			/* ++ and -- */
+			if ppmm() {
+				return 1 
+			}
+			/* Check using '(' after number */
+			if isoperator2(OP_FOPEN) {
+				error(ERROR_USINGBRACTAFTERNUM)
+				return 0 
+			}
+			return 1 
+		}
+		/* Factor --> Literal */
+		if isliteral() {
+			/* Generate Code */
+			nexttoken()
+			/* If we have condition - pass new lines */
+			if nControlStructureExpr {
+				IGNORENEWLINE() 
+			}
+			/* Array Index & Object Dot */
+			x = mixer()
+			if x = 0 {
+				return 0 
+			}
+			return 1 
+		}
+		/* Factor --> Literal --> ':' Identifier */
+		if isoperator2(OP_RANGE) {
+			nexttoken()
+			if isidentifier() or isanykeyword() {
+				/* Generate Code */
+				nexttoken()
+				/* Hash --> '=' Expression */
+				if isoperator2(OP_EQUAL) {
+					nexttoken()
+					/* Generate Code */
+					if expr() {
+						/* Generate Code */
+						return 1 
+					}
+					return 0 
+				}
+				return 1 
+			}
+		}
+		/* Factor --> Negative (-) Factor */
+		if isoperator2(OP_MINUS) {
+			nexttoken()
+			x = factor()
+			/* Generate Code */
+			return x 
+		elseif isoperator2(OP_BITNOT)
+			/* bitnot (~) Expr */
+			nexttoken()
+			x = expr()
+			/* Generate Code */
+			return x 
+		/* Factor --> & */
+		elseif isoperator2(OP_BITAND) 
+			nexttoken()
+			/* Generate Code */
+			if expr() {
+				return 1 
+			}
+		}
+		/* Factor --> ( Expr ) */
+		if isoperator2(OP_FOPEN) {
+			nexttoken()
+			x = nAssignmentFlag 
+			nAssignmentFlag = 0 
+			if expr() {
+				nAssignmentFlag = x 
+				if ( isoperator2(OP_FCLOSE) ) {
+					nexttoken()
+					return 1 
+				else
+					error(ERROR_MISSPARENTHESES)
+					return 0 
+				}
+			}
+			return 0 
+		}
+		/* Factor --> List */
+		if isoperator2(OP_LOPEN) {
+			x = list() 
+			return x 
+		}
+		/* Factor --> New Identifier */
+		if iskeyword(K_NEW) {
+			nexttoken()
+			IGNORENEWLINE() 
+			/* Generate Code */
+			if namedotname() {
+				/* Generate Code */
+				IGNORENEWLINE() 
+				if isoperator2(OP_BRACEOPEN) {
+					x = mixer()
+					nNewObject = 1 
+					return x 
+				elseif isoperator2(OP_FOPEN)
+					/*
+					**  Calling the init method using { } 
+					**  Generate Code (Start Brace) 
+					*/
+					/* Generate Code ( Call Function ) */
+					/* Generate Location for nPC of Getter */
+					/* Function Parameters */
+					nFuncCallOnly = 1 
+					mixer()
+					nFuncCallOnly = 0 
+					/* Generate Code (End Brace) */
+					IGNORENEWLINE() 
+					x = mixer()
+					nNewObject = 1 
+					return x 
+				}
+				nNewObject = 1 
+				/*
+				**  Generate Code 
+				**  PUSHV enable using braces to access the object 
+				*/
+				return 1 
+			}
+		}
+		/* Factor --> Anonymous Function */
+		if iskeyword(K_FUNC) or iskeyword(K_DEF) {
+			nexttoken()
+			/*
+			**  Generate Code 
+			**  Push Function Name, then jump after the function code 
+			*/
+			/* Get Function Parameters */
+			if isidentifier() or isoperator2(OP_FOPEN) {
+				if ! paralist() { return 0 }
+			}
+			/* Get Function Code */
+			if isoperator2(OP_BRACEOPEN) {
+				nexttoken()
+				x = nAssignmentFlag 
+				x2 = nNewObject 
+				x3 = nBraceFlag 
+				nAssignmentFlag = 1 
+				nBraceFlag = 0 
+				while stmt() {
+					if ActiveToken = TokensCount {
+						exit 
+					}
+				}
+				nAssignmentFlag = x 
+				nNewObject = x2 
+				nBraceFlag = x3 
+				if isoperator2(OP_BRACECLOSE) {
+					nexttoken()
+					/* Generate Code */
+					return 1 
+				}
+			}
+		}
+		/* Factor --> Call Identifier ( parameters ) */
+		if iskeyword(K_CALL) {
+			nexttoken()
+			if isidentifier() {
+				/* Generate Code */
+				/* Generate Location for nPC of Getter */
+				nexttoken()
+				/* Object Attributes */
+				if objattributes() = 0 {
+					return 0 
+				}
+				if isoperator2(OP_FOPEN) {
+					return mixer() 
+				else
+					return 0 
+				}
+			else
+				return 0 
+			}
+		}
+		return 0 
