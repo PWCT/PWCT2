@@ -87,6 +87,39 @@ class Parser
 		}
 		return 0 
 
+	func IGNORENEWLINE
+		while epslion() {}
+
+	func PASSNEWLINE 
+		while passepslion() {}
+
+	func Error cMsg 
+		raise(cMsg)
+
+	func epslion
+		if isendline() {
+			if nexttoken() {
+				return 1 
+			}
+			if TokensCount = 1 {
+				return 1 
+			}
+		}
+		return 0 
+
+	func CURRENTTOKEN 
+		return nActiveToken
+
+	func passepslion
+		/* used after factor - identifier to allow {  } in new line */
+		if isendline() {
+			nLineNumber = cTokenText
+			if nexttoken() {
+				return 1 
+			}
+		}
+		return 0 
+
 	func Generate aCommand 
 		aParseTree + aCommand 
 
@@ -127,38 +160,7 @@ class Parser
 		? "Parse Tree..."
 		? List2Code(aParseTree)
 
-	func IGNORENEWLINE
-		while epslion() {}
 
-	func PASSNEWLINE 
-		while passepslion() {}
-
-	func Error cMsg 
-		raise(cMsg)
-
-	func epslion
-		if isendline() {
-			if nexttoken() {
-				return 1 
-			}
-			if TokensCount = 1 {
-				return 1 
-			}
-		}
-		return 0 
-
-	func CURRENTTOKEN 
-		return nActiveToken
-
-	func passepslion
-		/* used after factor - identifier to allow {  } in new line */
-		if isendline() {
-			nLineNumber = cTokenText
-			if nexttoken() {
-				return 1 
-			}
-		}
-		return 0 
 
 	func ring_parser_expr  
 		/* Expr --> LogicNot { and|or LogicNot } */
@@ -685,3 +687,102 @@ class Parser
 			}
 		}
 		return 0 
+
+	func mixer 
+		/*
+		**  { . Identifier } 
+		**  Object Attributes 
+		*/
+		if objattributes() = 0 {
+			return 0 
+		}
+		/* [Index]  to access array element, Index = Expression */
+		if isoperator2(OP_LOPEN) {
+			nexttoken()
+			IGNORENEWLINE() 
+			if expr() {
+				/* Generate Code */
+				if isoperator2(OP_LCLOSE) {
+					nexttoken()
+					x = mixer()
+					if x = 0 {
+						return 0 
+					}
+				else
+					error(ERROR_MISSBRACKETS)
+					return 0 
+				}
+			else 
+				return 0 
+			}
+		}
+		/* |  [ ( [ Expr { , Expr } ] ) ]  ] */
+		if isoperator2(OP_FOPEN) {
+			/* Generate Code */
+			nexttoken()
+			IGNORENEWLINE() 
+			if isoperator2(OP_FCLOSE) {
+				nexttoken()
+				/* Generate Code */
+				IGNORENEWLINE() 
+				x = mixer()
+				return x 
+			}
+			while True {
+				nFlag = nAssignmentFlag 
+				nNew = nNewObject 
+				nAssignmentFlag = 0 
+				if expr() {
+					nAssignmentFlag = nFlag 
+					nNewObject = nNew 
+					IGNORENEWLINE() 
+					if isoperator2(OP_COMMA) {
+						nexttoken()
+					elseif isoperator2(OP_FCLOSE)  
+						nexttoken()
+						/* Generate Code */
+						x = mixer()
+						return x 
+					else 
+						error(ERROR_MISSPARENTHESES)
+						return 0 
+					}
+				else
+					return 0 
+				}
+				IGNORENEWLINE() 
+			}
+		}
+		/* Function Call Only */
+		if nFuncCallOnly = 1 {
+			return 1 
+		}
+		/* '{' {Statement} '}' */
+		if isoperator2(OP_BRACEOPEN) and nControlStructureExpr = 0 {
+			nBraceFlag++ 
+			/* Generate Code */
+			nexttoken()
+			nStatus = nAssignmentFlag 
+			nAssignmentFlag = 1 
+			while stmt() {
+				if nActiveToken = nTokensCount {
+					exit
+				}
+			}
+			nAssignmentFlag = nStatus 
+			if isoperator2(OP_BRACECLOSE) {
+				nBraceFlag-- 
+				/*
+				**  Generate Code 
+				**  if ismethod(self,"braceend") braceend() ok 
+				*/
+				nexttoken()
+				x = mixer()
+				return x 
+			else
+				error(ERROR_BRACESNOTCLOSED)
+			}
+		}
+		/* This function return 1 because the mixer is optional and comes after identifier */
+		return 1 
+	
