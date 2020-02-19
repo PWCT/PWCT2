@@ -365,3 +365,21 @@ class Parser
 			return x 
 		}
 		return 0 
+
+	func range
+		/* Range --> Factor : Factor */
+		if factor() {
+			x = 1 
+			if isoperator2(OP_RANGE) {
+				nexttoken()
+				IGNORENEWLINE()
+				x = factor()
+				if x = 0 {
+					return 0 
+				}
+				/* Generate Code */
+			}
+			return x
+		}
+		return 0 
+	
