@@ -103,6 +103,9 @@ class Parser
 	func IGNORENEWLINE
 		while epslion() end
 
+	func Error cMsg 
+		raise(cMsg)
+
 	func epslion
 		if isendline() {
 			if nexttoken() {
@@ -142,10 +145,41 @@ class Parser
 	
 	func logicnot
 		/* LogicNot --> Not EqualOrNot */
-		if iskeyword(K_NOT) || isoperator2(OP_NOT)  {
+		if iskeyword(K_NOT) or isoperator2(OP_NOT) {
 			nexttoken()
 			IGNORENEWLINE()
 		}
 		x = equalornot()
 		return x 
-	
+
+	func equalornot
+		/* EqualOrNot --> Compare { =|!= Compare } */
+		if compare() {
+			x = 1 
+			while isoperator2(OP_EQUAL) or isoperator2(OP_NOT)  {
+				if isoperator2(OP_NOT) {
+					nexttoken()
+					IGNORENEWLINE() 
+					if isoperator2(OP_EQUAL) {
+						nexttoken()
+						IGNORENEWLINE()
+						x = compare()
+						if x = 0 {
+							return 0 
+						}
+					else
+						error(RING_PARSER_ERROR_EXPROPERATOR)
+						return 0 
+					}
+				else 
+					nexttoken()
+					IGNORENEWLINE()
+					x = compare()
+					if x = 0 {
+						return 0 
+					}
+				}
+			}
+			return x 
+		}
+		return 0 

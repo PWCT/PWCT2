@@ -81,4 +81,33 @@
 	K_CHANGERINGKEYWORD 	= 47
 	K_CHANGERINGOPERATOR 	= 48
 	K_LOADSYNTAX 		= 49
-	
+
+# Error Messages (Parser)	
+	RING_PARSER_ERROR_PARALIST = "Error (C1) : Error in parameters list, expected identifier"
+	RING_PARSER_ERROR_CLASSNAME = "Error (C2) : Error in class name"
+	RING_PARSER_ERROR_OK = "Error (C3) : Unclosed control strucutre, 'ok' is missing"
+	RING_PARSER_ERROR_END = "Error (C4) : Unclosed control strucutre, 'end' is missing"
+	RING_PARSER_ERROR_NEXT = "Error (C5) : Unclosed control strucutre, next is missing"
+	RING_PARSER_ERROR_FUNCNAME = "Error (C6) : Error in function name"
+	RING_PARSER_ERROR_LISTITEM = "Error (C7) : Error in list items"
+	RING_PARSER_ERROR_MISSPARENTHESES = "Error (C8) : Parentheses ')' is missing "
+	RING_PARSER_ERROR_MISSBRACKETS = "Error (C9) : Brackets ']' is missing "
+	RING_PARSER_ERROR_PRENTCLASSNAME = "Error (C10) : Error in parent class name"
+	RING_PARSER_ERROR_EXPROPERATOR = "Error (C11) : Error in expression operator"
+	RING_PARSER_ERROR_NOCLASSDEFINED = "Error (C12) :No class definition"
+	RING_PARSER_ERROR_VARNAME = "Error (C13) : Error in variable name"
+	RING_PARSER_ERROR_NOCATCH = "Error (C14) : Try/Catch miss the Catch keyword!"
+	RING_PARSER_ERROR_NODONE = "Error (C15) : Try/Catch miss the Done keyword!"
+	RING_PARSER_ERROR_SWITCHEXPR = "Error (C16) : Error in Switch statement expression!"
+	RING_PARSER_ERROR_SWITCHOFF = "Error (C17) : Switch statement without OFF"
+	RING_PARSER_ERROR_BRACESNOTCLOSED = "Error (C18) : Missing closing brace for the block opened!"
+	RING_PARSER_ERROR_NUMERICOVERFLOW = "Error (C19) : Numeric Overflow!"
+	RING_PARSER_ERROR_PACKAGENAME = "Error (C20) : Error in package name"
+	RING_PARSER_ERROR_AGAIN = "Error (C21) : Unclosed control strucutre, 'again' is missing"
+	RING_PARSER_ERROR_FUNCREDEFINE = "Error (C22) : Function redefinition, function is already defined!"
+	RING_PARSER_ERROR_USINGBRACTAFTERNUM = "Error (C23) : Using '(' after number!"
+	RING_PARSER_ERROR_PARENTLIKESUBCLASS = "Error (C24) : The parent class name is identical to the subclass name"
+	RING_PARSER_ERROR_ACCESSSELFREF = "Error (C25) : Trying to access the self reference after the object name"
+	RING_PARSER_ERROR_CLASSREDEFINE = "Error (C26) : Class redefinition, class is already defined!"
+	RING_PARSER_WARNING_EXITOUTSIDELOOP = "Warning (W6) : Using the EXIT command outside loop!"
+	RING_PARSER_WARNING_LOOPOUTSIDELOOP = "Warning (W7) : Using the LOOP command outside loop"
