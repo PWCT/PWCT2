@@ -276,3 +276,31 @@ class Parser
 			return x
 		}
 		return 0
+
+	func bitshift
+		/* BitShift --> Arith { << | >>  Arith } */
+		if arithmetic() {
+			x = 1 
+			while isoperator("<<") or isoperator(">>") {
+				if isoperator("<<") {
+					nexttoken()
+					IGNORENEWLINE()
+					x = arithmetic()
+					if x = 0 {
+						return 0
+					}
+					/* Generate Code */
+				else
+					nexttoken()
+					IGNORENEWLINE()
+					x = arithmetic()
+					if x = 0 {
+						return 0
+					}
+					/* Generate Code */
+				}
+			}
+			return x
+		}
+		return 0
+	
