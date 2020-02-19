@@ -183,3 +183,52 @@ class Parser
 			return x 
 		}
 		return 0 
+
+	func compare
+		/* Compare --> BitORXOR { <|>|<=|>= BITORXOR } */
+		if bitorxor() {
+			x = 1 
+			while isoperator2(OP_LESS) or isoperator2(OP_GREATER) {
+				nEqual = 0 
+				if isoperator2(OP_LESS) {
+					nexttoken()
+					IGNORENEWLINE()
+					if isoperator2(OP_EQUAL) {
+						nEqual = 1 
+						nexttoken()
+					}
+					x = bitorxor()
+					if x = 0 {
+						return 0 
+					}
+					if nEqual = 0 {
+						/* Generate Code */
+					else
+						/* Generate Code */
+					}
+				else 
+					nexttoken()
+					IGNORENEWLINE() 
+					if isoperator2(OP_EQUAL) {
+						nEqual = 1 
+						nexttoken()
+						IGNORENEWLINE() 
+					}
+					x = bitorxor()
+					if x = 0 {
+						return 0 
+					}
+					if nEqual = 0 {
+						/* Generate Code */
+					else 
+						/* Generate Code */
+					}
+				}
+				/* Check <> */
+				if x = 0 {
+					return 0 
+				}
+			}
+			return x 
+		}
+		return 0 
