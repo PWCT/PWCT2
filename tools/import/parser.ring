@@ -128,41 +128,42 @@ class Parser
 
 	func Start 
 		do
-			Statement()	
+			Stmt()	
 		again NextToken()
 
-	func Statement 
-		StmtSeeExpr()
+	func Stmt 
+		return StmtSeeExpr()
 
 	func StmtSeeExpr
 		if isKeyWord(K_SEE) {
 			NextToken()
-			Expr()
-			Generate( [
-				:Command = :See,
-				:Expression = cBuffer
-			] )
+			if SimpleExpr() {
+				Generate( [
+					:Command = :See,
+					:Expression = cBuffer
+				] )
+				return 1	
+			}
 		}
-
-	func Expr
-		cBuffer = ""
-		Literal()
-
-	func Literal
-		if isLiteral() {
-			cBuffer += cTokenValue
-			NextToken()
-			return True
-		}
-		return False
+		return 0
+ 
+ 	func SimpleExpr
+ 		cBuffer = ""
+ 		return Literal()
+ 
+ 	func Literal
+ 		if isLiteral() {
+ 			cBuffer += cTokenValue
+ 			NextToken()
+ 			return True
+ 		}
+ 		return False
 
 	func PrintParseTree
 		? "Parse Tree..."
 		? List2Code(aParseTree)
 
-
-
-	func ring_parser_expr  
+	func expr  
 		/* Expr --> LogicNot { and|or LogicNot } */
 		if logicnot() {
 			x = 1 
