@@ -786,3 +786,16 @@ class Parser
 		/* This function return 1 because the mixer is optional and comes after identifier */
 		return 1 
 	
+
+	func ppmm 
+		/* ++ & -- */
+		if isoperator("++") {
+			nexttoken()
+			/* Generate Code */
+			return 1 
+		elseif isoperator("--")
+			nexttoken()
+			/* Generate Code */
+			return 1 
+		}
+		return 0 
