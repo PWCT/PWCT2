@@ -799,3 +799,23 @@ class Parser
 			return 1 
 		}
 		return 0 
+
+	func objattributes
+		/* { . Identifier } */
+		while isoperator2(OP_DOT) {
+			nexttoken()
+			IGNORENEWLINE() 
+			/* we support literal to be able to call methods contains operators in the name */
+			if isidentifier() or isliteral() {
+				/* Prevent Accessing the self reference from outside the object */
+				if cTokenText = "self" {
+					error(ERROR_ACCESSSELFREF)
+					return 0 
+				}
+				/* Generate Code */
+				nexttoken()
+			else
+				return 0 
+			}
+		}
+		return 1 
