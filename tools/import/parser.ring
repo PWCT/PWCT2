@@ -1413,4 +1413,10 @@ class Parser
 			nControlStructureBrace++ 
 		}
 		return nOutput 
-	
+
+	func csbraceend
+		if (nControlStructureBrace >= 1) and isoperator2(OP_BRACECLOSE) {
+			nControlStructureBrace-- 
+			return 1 
+		}
+		return 0 
