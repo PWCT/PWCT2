@@ -1326,4 +1326,41 @@ class Parser
 			error(ERROR_PARALIST)
 			return 0 
 		}
+
+	func list 
+		/* "["  [ Expr { , Expr } ] "]" */
+		if isoperator2(OP_LOPEN) {
+			/* Generate Code */
+			nexttoken()
+			IGNORENEWLINE()
+			if isoperator2(OP_LCLOSE) {
+				nexttoken()
+				/* Generate Code */
+				return 1 
+			}
+			while True {
+				nAssignmentFlag = 0 
+				if expr() {
+					/* Generate Code */
+					nAssignmentFlag = 1 
+					IGNORENEWLINE()
+					if isoperator2(OP_COMMA) {
+						nexttoken()
+					elseif isoperator2(OP_LCLOSE) 
+						nexttoken()
+						/* Generate Code */
+						return 1 
+					else
+						error(ERROR_LISTITEM)
+						return 0 
+					}
+				else
+					error(ERROR_LISTITEM)
+					return 0 
+				}
+				IGNORENEWLINE()
+			}
+		}
+		return 0 
 	
+		
