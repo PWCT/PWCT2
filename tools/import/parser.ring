@@ -1279,3 +1279,51 @@ class Parser
 			return 1 
 		}
 		return 0 
+
+	func paralist
+		nStart = 0 
+		if isoperator2(OP_FOPEN) {
+			nexttoken()
+			nStart = 1 
+		}
+		/* ParaList --> Epslion */
+		if isendline() or (nStart and isoperator2(OP_FCLOSE) ) {
+			nexttoken()
+			return 1 
+		}
+		/* ParaList --> [ Identifier { , Identifier }  ] */
+		if isidentifier() {
+			cToken = cTokenValue
+			nexttoken()
+			/* Support Type Identifiter */
+			if nStart and isidentifier() {
+				cToken = cTokenValue
+				nexttoken()
+			}
+			/* Generate Code */
+			while isoperator2(OP_COMMA) {
+				nexttoken()
+				IGNORENEWLINE()
+				if isidentifier() {
+					cToken = cTokenValue
+					nexttoken()
+					/* Support Type Identifiter */
+					if ( nStart and isidentifier() ) {
+						cToken = cTokenValue
+						nexttoken()
+					}
+					/* Generate Code */
+				else
+					error(ERROR_PARALIST)
+					return 0 
+				}
+			}
+			if nStart and isoperator2(OP_FCLOSE) {
+				nexttoken()
+			}
+			return 1 
+		else
+			error(ERROR_PARALIST)
+			return 0 
+		}
+	
