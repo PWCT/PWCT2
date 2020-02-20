@@ -1363,4 +1363,24 @@ class Parser
 		}
 		return 0 
 	
+	func namedotname
+		if isidentifier() {
+			/* Get Token Text */
+			nexttoken()
+			while isoperator2(OP_DOT) {
+				nexttoken()
+				if isidentifier() {
+					nexttoken()
+				else
+					error(ERROR_PACKAGENAME)
+					return 0 
+				}
+			}
+			/* Generate Code */
+			return 1 
+		else
+			error(ERROR_PACKAGENAME)
+			return 0 
+		}
+	
 		
