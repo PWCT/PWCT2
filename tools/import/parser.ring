@@ -1403,4 +1403,14 @@ class Parser
 		nInsertCounter = 0 
 		return 1 
 		
-		
+	func csexpr
+		nControlStructureExpr = 1 
+		nOutput = expr()
+		nControlStructureExpr = 0 
+		RING_PARSER_IGNORENEWLINE() 
+		if isoperator2(OP_BRACEOPEN) {
+			nexttoken()
+			nControlStructureBrace++ 
+		}
+		return nOutput 
+	
