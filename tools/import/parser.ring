@@ -157,18 +157,6 @@ class Parser
 		}
 		return 0
  
- 	func SimpleExpr
- 		cBuffer = ""
- 		return Literal()
- 
- 	func Literal
- 		if isLiteral() {
- 			cBuffer += cTokenValue
- 			NextToken()
- 			return True
- 		}
- 		return False
-
 	func PrintParseTree
 		? "Parse Tree..."
 		? List2Code(aParseTree)
