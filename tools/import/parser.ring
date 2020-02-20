@@ -38,15 +38,7 @@ class Parser
 	nCheckLoopAndExit 	= 1 
 	nLoopFlag 		= 0 
 
-	fGenerateSeeExpr = func oParser {
-		oParser {
-			Generate( [
-					:Command = :See,
-					:Expression = cBuffer
-				] )
-			clearTextBuffer()
-		}
-	}
+	oTarget = new Target 
 
 	func setTokens aList
 		aTokens 	= aList 
@@ -908,7 +900,7 @@ class Parser
 			nAssignmentFlag = 0 				
 			x = expr()
 			nAssignmentFlag = 1 
-			call fGenerateSeeExpr(self)
+			oTarget.GenerateSeeExpr(self)
 			return x 
 		}
 		/* Statement --> ? Expr */

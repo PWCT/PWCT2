@@ -9,6 +9,7 @@ load "globals.ring"
 load "uilib.ring"
 load "scanner.ring"
 load "parser.ring"
+load "target.ring"
 load "generator.ring"
 
 func main
