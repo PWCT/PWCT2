@@ -1420,3 +1420,45 @@ class Parser
 			return 1 
 		}
 		return 0 
+
+	func bracesandend lClass, nKeyword 
+		/*
+		**  This function is used to support braces { } around packages/classes/functions 
+		**  Also support using 'end' after packages/classes/functions 
+		**  IF The Parameter : lClass = True we call ring_parser_class() instead of ring_parser_stmt() 
+		**  When we support braces { } 
+		**  But the support for 'end' always uses ring_parser_class() 
+		**  Support using { } 
+		*/
+		RING_PARSER_IGNORENEWLINE() 
+		if isoperator2(OP_BRACEOPEN) {
+			nexttoken()
+			if lClass {
+				while mainclass() {
+					if nActiveToken = nTokensCount  {
+						exit
+					}
+				}
+			else
+				while stmt() {
+					if nActiveToken = nTokensCount {
+						exit
+					}
+				}
+			}
+			if isoperator2(OP_BRACECLOSE) {
+				nexttoken()
+				return 1 
+			}
+			return 0 
+		}
+		/* Support using End */
+		while mainclass() {
+			if nActiveToken = nTokensCount {
+				exit
+			}
+		}
+		if iskeyword(K_END) or iskeyword(nKeyword) {
+			nexttoken()
+		}
+		return 1 
