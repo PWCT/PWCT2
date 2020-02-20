@@ -38,6 +38,16 @@ class Parser
 	nCheckLoopAndExit 	= 1 
 	nLoopFlag 		= 0 
 
+	fGenerateSeeExpr = func oParser {
+		oParser {
+			Generate( [
+					:Command = :See,
+					:Expression = cBuffer
+				] )
+			clearTextBuffer()
+		}
+	}
+
 	func setTokens aList
 		aTokens 	= aList 
 		nActiveToken 	= 0
@@ -137,26 +147,10 @@ class Parser
 
 	func Start 
 		do
-			Statement()	
+			IGNORENEWLINE() 
+			mainclass()	
 		again NextToken()
 
-	func statement 
-		return StmtSeeExpr()
-
-	func StmtSeeExpr
-		if isKeyWord(K_SEE) {
-	 		ClearTextBuffer()
-			NextToken()
-			if Expr() {
-				Generate( [
-					:Command = :See,
-					:Expression = cBuffer
-				] )
-				return 1	
-			}
-		}
-		return 0
- 
 	func PrintParseTree
 		? "Parse Tree..."
 		? List2Code(aParseTree)
@@ -785,7 +779,6 @@ class Parser
 		/* This function return 1 because the mixer is optional and comes after identifier */
 		return 1 
 	
-
 	func ppmm 
 		/* ++ & -- */
 		if isoperator("++") {
@@ -912,9 +905,10 @@ class Parser
 		if iskeyword(K_SEE) or iskeyword(K_PUT) {
 			nexttoken()
 			IGNORENEWLINE() 
-			nAssignmentFlag = 0 
+			nAssignmentFlag = 0 				
 			x = expr()
 			nAssignmentFlag = 1 
+			call fGenerateSeeExpr(self)
 			return x 
 		}
 		/* Statement --> ? Expr */
