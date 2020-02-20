@@ -1382,5 +1382,25 @@ class Parser
 			error(ERROR_PACKAGENAME)
 			return 0 
 		}
-	
+
+
+	func parsestep
+		/* Step <expr> */
+		nInsertFlag = 1 
+		if iskeyword(K_STEP) {
+			nexttoken()
+			nAssignmentFlag = 0 
+			if csexpr() {
+				nAssignmentFlag = 1 
+				/* Generate Code */
+			else
+				return 0 
+			}
+		else
+			/* Generate Code */
+		}
+		nInsertFlag = 0 
+		nInsertCounter = 0 
+		return 1 
+		
 		
