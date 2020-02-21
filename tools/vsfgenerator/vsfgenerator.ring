@@ -51,6 +51,7 @@ class VSFGenerator
 				:plainname = cPlainStepName
 			]
 		)
+		return nStepID
 
 	func List2InteractionVariables aList 
 		cVariables = ""
@@ -155,3 +156,4 @@ class VSFGenerator
 		T_CT_PRINT_ST_PRINT + StyleData(cExpr) + T_CT_PRINT_ST_NEWLINE,
 		nIID,nStepNumber,C_STEPTYPE_ROOT)
 		oModel.SaveStepCode(nStepID, "? " + common_literal(cExpr))
+		return nStepID
