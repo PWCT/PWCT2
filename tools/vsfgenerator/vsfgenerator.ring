@@ -7,7 +7,7 @@
 
 class VSFGenerator
 
-	cFileName = "test.pwct"
+	cFileName = "test/test.pwct"
 	oModel = new GoalDesignerModel
 
 	oStyle 		= new HTMLStyles
