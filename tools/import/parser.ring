@@ -20,23 +20,13 @@ class Parser
 	cBuffer		= ""
 
 	nLineNumber 	= 1 
-	nErrorLine 	= 0 
-	nErrorsCount 	= 0 
 	nAssignmentFlag = 1 
 	nClassStart 	= 0 
-	nClassMark 	= 0 
-	nPrivateFlag 	= 0 
 	nBraceFlag 	= 0 
-	nInsertFlag 	= 0 
-	nInsertCounter 	= 0 
 	nNewObject 	= 0 
 	nFuncCallOnly 	= 0 
 	nControlStructureExpr 	= 0 
 	nControlStructureBrace 	= 0 
-	nThisOrSelfLoadA 	= 0 
-	nLoopOrExitCommand 	= 0 
-	nCheckLoopAndExit 	= 1 
-	nLoopFlag 		= 0 
 
 	oTarget = new Target 
 
@@ -465,8 +455,6 @@ class Parser
 			}
 			if lequal = 1  and nAssignmentFlag = 1 {
 				nexttoken()
-				/* Check if the Assignment after object attribute name */
-				nLocalThisOrSelfLoadA = nThisOrSelfLoadA 
 				/* Generate Code */
 				IGNORENEWLINE() 
 				nNewObject = 0 
@@ -824,7 +812,6 @@ class Parser
 					/* Set Parent Class Name In Classes Map */
 				}
 				nClassStart = 1 
-				nPrivateFlag = 0 
 				return bracesandend(1,K_ENDCLASS) 
 			else
 				error(ERROR_CLASSNAME)
@@ -868,7 +855,6 @@ class Parser
 		if iskeyword(K_PRIVATE) {
 			nexttoken()
 			if nClassStart = 1 {
-				nPrivateFlag = 1 
 				return 1 
 			else
 				error(ERROR_NOCLASSDEFINED)
@@ -964,7 +950,6 @@ class Parser
 										exit
 									}
 								}
-								nLoopFlag-- 
 								if iskeyword(K_NEXT) or iskeyword(K_END) or csbraceend() {
 									/* Generate Code */
 									nexttoken()
@@ -1071,7 +1056,6 @@ class Parser
 						exit
 					}
 				}
-				nLoopFlag-- 
 				if iskeyword(K_END) or csbraceend() {
 					/* Generate Code */
 					nexttoken()
@@ -1090,13 +1074,11 @@ class Parser
 			*/
 			nexttoken()
 			/* Save Loop|Exit commands status */
-			nLoopFlag++ 
 			while stmt() {
 				if nActiveToken = nTokensCount {
 					exit
 				}
 			}
-			nLoopFlag-- 
 			if iskeyword(K_AGAIN) {
 				/* Generate Code */
 				nexttoken()
@@ -1181,8 +1163,6 @@ class Parser
 					return 0 
 				}
 			}
-			/* Generate Code */
-			nLoopOrExitCommand = 1 
 			return 1 
 		}
 		/* Statement --> Loop (Continue) */
@@ -1194,8 +1174,6 @@ class Parser
 					return 0 
 				}
 			}
-			/* Generate Code */
-			nLoopOrExitCommand = 1 
 			return 1 
 		}
 		/* Statement --> Switch  Expr { ON|CASE Expr {Statement} } OFF */
@@ -1372,7 +1350,6 @@ class Parser
 
 	func parsestep
 		/* Step <expr> */
-		nInsertFlag = 1 
 		if iskeyword(K_STEP) {
 			nexttoken()
 			nAssignmentFlag = 0 
@@ -1385,8 +1362,6 @@ class Parser
 		else
 			/* Generate Code */
 		}
-		nInsertFlag = 0 
-		nInsertCounter = 0 
 		return 1 
 		
 	func csexpr
