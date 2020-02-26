@@ -149,8 +149,9 @@ class VSFGenerator
 		if len(cExpr) > 1 {
 			cChar = cExpr[1]
 			if cChar = '"' or cChar = "'" or cChar = "`" {
-				if cChar = cExpr[len(cExpr)] {
-					cSub = substr(cExpr,2,len(cExpr)-2)
+				nSize = len(cExpr)
+				if cChar = cExpr[nSize] {
+					cSub = substr(cExpr,2,nSize-2)
 					if substr(cSub,cChar) = 0 {
 						cType = "1"  # Literal
 						cExpr = cSub
