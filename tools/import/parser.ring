@@ -45,8 +45,21 @@ class Parser
 	func ClearTextBuffer
 		cBuffer = ""
 
+	func ValueAsString cValue
+		if substr(cValue,'"') = 0 {
+			cChar = '"'
+		elseif substr(cValue,"'") = 0 
+			cChar = "'"
+		else 
+			cChar = "`"
+		}
+		return cChar + cValue + cChar
+
 	func AddToTextBuffer 
 		if Find([C_LITERAL,C_NUMBER,C_OPERATOR,C_IDENTIFIER],nTokenType) {
+			if nTokenType = C_LITERAL {
+				cTokenValue = ValueAsString(cTokenValue)
+			}
 	 		cBuffer += cTokenValue
 		}
 
