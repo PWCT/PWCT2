@@ -145,9 +145,22 @@ class VSFGenerator
 		The Print Component
 	*/
 	func AddPrintExpression cExpr 
+		cType = "2"	# Expression
+		if len(cExpr) > 1 {
+			cChar = cExpr[1]
+			if cChar = '"' or cChar = "'" or cChar = "`" {
+				if cChar = cExpr[len(cExpr)] {
+					cSub = substr(cExpr,2,len(cExpr)-2)
+					if substr(cSub,cChar) = 0 {
+						cType = "1"  # Literal
+						cExpr = cSub
+					}	 
+				}
+			}
+		}
 		nIID = UseComponent("print",[
 			:text 		= cExpr,
-			:type 		= "1",
+			:type 		= cType,
 			:newline 	= "2"
 		])
 		nParentID   = 1
@@ -155,5 +168,9 @@ class VSFGenerator
 		nStepID = AddGeneratedStep(nParentID,
 		T_CT_PRINT_ST_PRINT + StyleData(cExpr) + T_CT_PRINT_ST_NEWLINE,
 		nIID,nStepNumber,C_STEPTYPE_ROOT)
-		oModel.SaveStepCode(nStepID, "? " + common_literal(cExpr))
+		if cType = "1" {
+			oModel.SaveStepCode(nStepID, "? " + common_literal(cExpr))
+		else 
+			oModel.SaveStepCode(nStepID, "? " + cExpr)
+		}
 		return nStepID
