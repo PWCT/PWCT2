@@ -15,7 +15,9 @@ class Generator
 		aParseTree = aTree
 
 	func Start 
-		oPWCT = new VSFGenerator 
+		oPWCT = new VSFGenerator {	
+			cFileName = "test.pwct"
+		}
 		for aCommand in aParseTree {
 			switch aCommand[:Command] {
 				case :See 
