@@ -1007,16 +1007,20 @@ class Parser
 		}
 		/* Statement --> IF Expr Statements OK */
 		if iskeyword(K_IF) {
+			ClearTextBuffer()
 			nexttoken()
 			IGNORENEWLINE() 
 			nAssignmentFlag = 0 
 			if csexpr() {
+				oTarget.GenerateIfExpr(self)
+				oTarget.GenerateBlockStart(self)
 				nAssignmentFlag = 1 
 				while stmt() {
 					if nActiveToken = nTokensCount {
 						exit
 					}
 				}
+				oTarget.GenerateBlockEnd(self)
 				/* Generate Code */
 				/* { 'But' Statements } 'Else' Statements */
 				while iskeyword(K_BUT) or iskeyword(K_ELSEIF) {
@@ -1383,7 +1387,7 @@ class Parser
 		nControlStructureExpr = 1 
 		nOutput = expr()
 		nControlStructureExpr = 0 
-		RING_PARSER_IGNORENEWLINE() 
+		IGNORENEWLINE() 
 		if isoperator2(OP_BRACEOPEN) {
 			nexttoken()
 			nControlStructureBrace++ 
@@ -1406,7 +1410,7 @@ class Parser
 		**  But the support for 'end' always uses ring_parser_class() 
 		**  Support using { } 
 		*/
-		RING_PARSER_IGNORENEWLINE() 
+		IGNORENEWLINE() 
 		if isoperator2(OP_BRACEOPEN) {
 			nexttoken()
 			if lClass {

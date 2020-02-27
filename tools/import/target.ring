@@ -24,3 +24,26 @@ class Target
 				] )
 			clearTextBuffer()
 		}
+
+	func GenerateBlockStart oParser 
+		oParser {
+			Generate( [
+					:Command = :BlockStart
+				] )
+		}
+
+	func GenerateBlockEnd oParser 
+		oParser {
+			Generate( [
+					:Command = :BlockEnd
+				] )
+		}
+
+	func GenerateIfExpr oParser 
+		oParser {
+			Generate( [
+					:Command = :If,
+					:Expression = cBuffer
+				] )
+			clearTextBuffer()
+		}
