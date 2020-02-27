@@ -15,3 +15,12 @@ class Target
 				] )
 			clearTextBuffer()
 		}
+
+	func GenerateQuestionMarkExpr oParser 
+		oParser {
+			Generate( [
+					:Command = :QuestionMark,
+					:Expression = cBuffer
+				] )
+			clearTextBuffer()
+		}

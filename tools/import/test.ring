@@ -8,3 +8,5 @@
 see "Hello, World!"+(3*2)+cName
 see "Welcome to the Ring programming language"
 see "Ring is a great language!"
+? "The current Ring version is Ring 1.12"
+? "Hello, World!"+(3*2)+cName

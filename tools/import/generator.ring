@@ -22,6 +22,9 @@ class Generator
 			switch aCommand[:Command] {
 				case :See 
 					oPWCT.AddPrintExpression(aCommand[:Expression],False)
+				case :QuestionMark 
+					oPWCT.AddPrintExpression(aCommand[:Expression],True)
+
 			}
 		}
 		oPWCT.WriteVisualSourceFile()

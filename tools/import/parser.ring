@@ -904,11 +904,13 @@ class Parser
 		}
 		/* Statement --> ? Expr */
 		if isoperator("?") {
+			clearTextBuffer()
 			nexttoken()
 			IGNORENEWLINE() 
 			nAssignmentFlag = 0 
 			x = expr()
 			nAssignmentFlag = 1 
+			oTarget.GenerateQuestionMarkExpr(self)
 			return x 
 		}
 		/* Statement --> Give|Get Identifier */
