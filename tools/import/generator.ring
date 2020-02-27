@@ -26,6 +26,8 @@ class Generator
 					oPWCT.AddPrintExpression(aCommand[:Expression],True)
 				case :if
 					oPWCT.AddIfExpression(aCommand[:Expression])
+				case :BlockEnd
+					oPWCT.popParent()
 			}
 		}
 		oPWCT.WriteVisualSourceFile()

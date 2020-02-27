@@ -12,4 +12,8 @@ see "Ring is a great language!"
 ? "Hello, World!"+(3*2)+cName
 if 3=1+2
 	? "True"
+	? "Nice work!"
+	? "Now the import feature works fine"
 ok
+? "Thanks"
+? "End of program!"

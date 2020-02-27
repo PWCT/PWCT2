@@ -13,6 +13,9 @@ class VSFGenerator
 	oStyle 		= new HTMLStyles
 	oHTMLFunctions	= new HTMLFunctions
 
+	aParents 	= [1]
+	nParentID	= 1
+
 	func startGenerator
 		TestGenerator()
 		WriteVisualSourceFile()
@@ -198,7 +201,6 @@ class VSFGenerator
 				:newline 	= cNewLine 
 			])
 		# Generate the Step and the Code
-			nParentID   = 1
 			nStepNumber = 1
 			nStepID = AddGeneratedStep(nParentID,
 			T_CT_PRINT_ST_PRINT + StyleData(cExpr) + cStepNameNewLine,
@@ -219,7 +221,6 @@ class VSFGenerator
 				:condition 	= cExpr
 			])
 		# Generate the Step and the Code
-			nParentID   = 1
 			nStepNumber = 1
 			nStepID = AddGeneratedStep(nParentID,
 				T_CT_IFSTATEMENT_ST_IF + StyleData(cExpr ) ,
@@ -234,4 +235,14 @@ class VSFGenerator
 				T_CT_IFSTATEMENT_ST_ENDOFIFSTATEMENT ,
 			nIID,nStepNumber,C_STEPTYPE_INFO)
 			oModel.SaveStepCode(nStepID3, "} " )
+		# Set the Parent 
+			aParents + nStepID2
+			SetStepsParent()
 			return nStepID
+
+	func SetStepsParent 
+		nParentID = aParents[len(aParents)]
+
+	func PopParent 
+		del(aParents,len(aParents))
+		SetStepsParent()
