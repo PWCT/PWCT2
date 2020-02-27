@@ -24,7 +24,8 @@ class Generator
 					oPWCT.AddPrintExpression(aCommand[:Expression],False)
 				case :QuestionMark 
 					oPWCT.AddPrintExpression(aCommand[:Expression],True)
-
+				case :if
+					oPWCT.AddIfExpression(aCommand[:Expression])
 			}
 		}
 		oPWCT.WriteVisualSourceFile()

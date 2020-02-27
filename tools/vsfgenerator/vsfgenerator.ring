@@ -209,3 +209,29 @@ class VSFGenerator
 				oModel.SaveStepCode(nStepID, cCommand + cExpr)
 			}
 			return nStepID
+
+	/*
+		if component 
+	*/
+	func AddIfExpression cExpr
+		# Use the Interaction Page
+			nIID = UseComponent("if",[
+				:condition 	= cExpr
+			])
+		# Generate the Step and the Code
+			nParentID   = 1
+			nStepNumber = 1
+			nStepID = AddGeneratedStep(nParentID,
+				T_CT_IFSTATEMENT_ST_IF + StyleData(cExpr ) ,
+			nIID,nStepNumber,C_STEPTYPE_ROOT)
+			oModel.SaveStepCode(nStepID, "if " +  cExpr + " { " )
+			nStepNumber++
+			nStepID2 = AddGeneratedStep(nStepID,
+				T_CT_IFSTATEMENT_ST_STARTHERE ,
+			nIID,nStepNumber,C_STEPTYPE_ALLOWINTERACTION)
+			nStepNumber++
+			nStepID3 = AddGeneratedStep(nStepID,
+				T_CT_IFSTATEMENT_ST_ENDOFIFSTATEMENT ,
+			nIID,nStepNumber,C_STEPTYPE_INFO)
+			oModel.SaveStepCode(nStepID3, "} " )
+			return nStepID
