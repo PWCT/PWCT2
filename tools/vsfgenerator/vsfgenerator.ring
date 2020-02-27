@@ -20,7 +20,7 @@ class VSFGenerator
 	func TestGenerator
 		for x = 1 to 10 {
 			AddRootStep("Step Number : " + x)
-			AddPrintExpression("Hello, World " + x)
+			AddPrintLiteral("Hello, World " + x,True)
 		}
 
 	func WriteVisualSourceFile
@@ -162,9 +162,27 @@ class VSFGenerator
 		return [:IsLiteral = lLiteral,:Expr = cExpr]
 
 	/*
+		Pass a literal to the Print component
+	*/
+
+	func AddPrintLiteral cLiteral,lNewLine 
+		AddPrintExpression(char(34) + cLiteral + char(34),lNewLine)
+
+	/*
 		The Print Component
 	*/
-	func AddPrintExpression cExpr 
+
+	func AddPrintExpression cExpr,lNewLine
+		# Add new line or not	
+			if lNewLine {
+				cNewLine = "2"
+				cCommand = "? "
+				cStepNameNewLine = T_CT_PRINT_ST_NEWLINE
+			else 
+				cNewLine = "0"
+				cCommand = "see "
+				cStepNameNewLine = ""
+			}  
 		# Literal or Expression
 			aExpr = ExprIsLiteral(cExpr)
 			if aExpr[:IsLiteral] {
@@ -177,17 +195,17 @@ class VSFGenerator
 			nIID = UseComponent("print",[
 				:text 		= cExpr,
 				:type 		= cType,
-				:newline 	= "2"
+				:newline 	= cNewLine 
 			])
 		# Generate the Step and the Code
 			nParentID   = 1
 			nStepNumber = 1
 			nStepID = AddGeneratedStep(nParentID,
-			T_CT_PRINT_ST_PRINT + StyleData(cExpr) + T_CT_PRINT_ST_NEWLINE,
+			T_CT_PRINT_ST_PRINT + StyleData(cExpr) + cStepNameNewLine,
 			nIID,nStepNumber,C_STEPTYPE_ROOT)
 			if cType = "1" {
-				oModel.SaveStepCode(nStepID, "? " + common_literal(cExpr))
+				oModel.SaveStepCode(nStepID, cCommand + common_literal(cExpr))
 			else 
-				oModel.SaveStepCode(nStepID, "? " + cExpr)
+				oModel.SaveStepCode(nStepID, cCommand + cExpr)
 			}
 			return nStepID

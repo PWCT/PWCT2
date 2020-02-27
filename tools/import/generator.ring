@@ -21,7 +21,7 @@ class Generator
 		for aCommand in aParseTree {
 			switch aCommand[:Command] {
 				case :See 
-					oPWCT.AddPrintExpression(aCommand[:Expression])
+					oPWCT.AddPrintExpression(aCommand[:Expression],False)
 			}
 		}
 		oPWCT.WriteVisualSourceFile()
