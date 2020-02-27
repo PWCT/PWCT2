@@ -18,6 +18,7 @@ class Parser
 
 	aParseTree	= []
 	cBuffer		= ""
+	lBufferFlag	= True
 
 	nLineNumber 	= 1 
 	nAssignmentFlag = 1 
@@ -40,7 +41,9 @@ class Parser
 		nTokenType 	= aActiveToken[C_TOKENTYPE]
 		cTokenValue 	= aActiveToken[C_TOKENVALUE]
 		nTokenIndex 	= aActiveToken[C_TOKENINDEX]
-		AddToTextBuffer()
+		if lBufferFlag {
+			AddToTextBuffer()
+		}
 
 	func ClearTextBuffer
 		cBuffer = ""
@@ -62,6 +65,12 @@ class Parser
 			}
 	 		cBuffer += cTokenValue
 		}
+
+	func EnableBufferFlag
+		lBufferFlag = True
+
+	func DisableBufferFlag
+		lBufferFlag = False
 
 	func NextToken
 		if nActiveToken < nTokensCount {
@@ -102,7 +111,9 @@ class Parser
 		return 0 
 
 	func IGNORENEWLINE
+		DisableBufferFlag()
 		while epslion() {}
+		EnableBufferFlag()
 
 	func PASSNEWLINE 
 		while passepslion() {}

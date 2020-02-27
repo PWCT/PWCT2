@@ -215,7 +215,7 @@ class VSFGenerator
 	*/
 	func AddIfExpression cExpr
 		# Use the Interaction Page
-			nIID = UseComponent("if",[
+			nIID = UseComponent("ifstatement",[
 				:condition 	= cExpr
 			])
 		# Generate the Step and the Code
