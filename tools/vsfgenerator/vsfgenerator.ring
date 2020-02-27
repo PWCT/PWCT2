@@ -142,10 +142,10 @@ class VSFGenerator
 		return nIID
 
 	/*
-		The Print Component
+		Determine if we have just a Literal or long Expression
 	*/
-	func AddPrintExpression cExpr 
-		cType = "2"	# Expression
+	func ExprIsLiteral cExpr
+		lLiteral = False
 		if len(cExpr) > 1 {
 			cChar = cExpr[1]
 			if cChar = '"' or cChar = "'" or cChar = "`" {
@@ -153,25 +153,41 @@ class VSFGenerator
 				if cChar = cExpr[nSize] {
 					cSub = substr(cExpr,2,nSize-2)
 					if substr(cSub,cChar) = 0 {
-						cType = "1"  # Literal
+						lLiteral = True  # Literal
 						cExpr = cSub
 					}	 
 				}
 			}
 		}
-		nIID = UseComponent("print",[
-			:text 		= cExpr,
-			:type 		= cType,
-			:newline 	= "2"
-		])
-		nParentID   = 1
-		nStepNumber = 1
-		nStepID = AddGeneratedStep(nParentID,
-		T_CT_PRINT_ST_PRINT + StyleData(cExpr) + T_CT_PRINT_ST_NEWLINE,
-		nIID,nStepNumber,C_STEPTYPE_ROOT)
-		if cType = "1" {
-			oModel.SaveStepCode(nStepID, "? " + common_literal(cExpr))
-		else 
-			oModel.SaveStepCode(nStepID, "? " + cExpr)
-		}
-		return nStepID
+		return [:IsLiteral = lLiteral,:Expr = cExpr]
+
+	/*
+		The Print Component
+	*/
+	func AddPrintExpression cExpr 
+		# Literal or Expression
+			aExpr = ExprIsLiteral(cExpr)
+			if aExpr[:IsLiteral] {
+				cType = "1"  # Literal
+				cExpr = aExpr[:Expr]
+			else 
+				cType = "2"  # Expression
+			}
+		# Use the Interaction Page
+			nIID = UseComponent("print",[
+				:text 		= cExpr,
+				:type 		= cType,
+				:newline 	= "2"
+			])
+		# Generate the Step and the Code
+			nParentID   = 1
+			nStepNumber = 1
+			nStepID = AddGeneratedStep(nParentID,
+			T_CT_PRINT_ST_PRINT + StyleData(cExpr) + T_CT_PRINT_ST_NEWLINE,
+			nIID,nStepNumber,C_STEPTYPE_ROOT)
+			if cType = "1" {
+				oModel.SaveStepCode(nStepID, "? " + common_literal(cExpr))
+			else 
+				oModel.SaveStepCode(nStepID, "? " + cExpr)
+			}
+			return nStepID
