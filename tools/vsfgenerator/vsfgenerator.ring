@@ -164,6 +164,13 @@ class VSFGenerator
 		}
 		return [:IsLiteral = lLiteral,:Expr = cExpr]
 
+	/*
+		Input  : "Some Text" as String 
+		Output : Some Text as String
+	*/
+	func JustLiteralText cLiteral 
+		return ExprIsLiteral(cLiteral)[:Expr]
+	
 	func SetStepsParent 
 		nParentID = aParents[len(aParents)]
 
@@ -247,3 +254,19 @@ class VSFGenerator
 			SetStepsParent()
 			return nStepID
 
+	/*
+		Load Component 
+	*/
+	func AddLoadLiteral cLiteral 
+		cLiteral = JustLiteralText(cLiteral)
+		# Use the Interaction Page
+			nIID = UseComponent("load",[
+				:file 		= cLiteral
+			])
+		# Generate the Step and the Code
+			nStepNumber = 1
+			nStepID = AddGeneratedStep(nParentID,
+			T_CT_LOAD_ST_LOAD + StyleData(cLiteral),
+			nIID,nStepNumber,C_STEPTYPE_ROOT)
+			oModel.SaveStepCode(nStepID, "load " + '"' + cLiteral + '"')
+			return nStepID

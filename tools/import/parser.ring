@@ -888,6 +888,7 @@ class Parser
 		return stmt() 
 	
 	func stmt
+		x = True
 		/* Statement --> Load Literal */
 		if iskeyword(K_LOAD) {
 			nexttoken()
@@ -899,6 +900,7 @@ class Parser
 			}
 			if isliteral() {
 				nexttoken()
+				oTarget.GenerateLoadLiteral(self)
 				return x 
 			}
 			return 0 

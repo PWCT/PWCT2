@@ -28,6 +28,8 @@ class Generator
 					oPWCT.AddIfExpression(aCommand[:Expression])
 				case :BlockEnd
 					oPWCT.popParent()
+				case :load 
+					oPWCT.AddLoadLiteral(aCommand[:Expression])
 			}
 		}
 		oPWCT.WriteVisualSourceFile()

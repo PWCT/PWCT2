@@ -47,3 +47,12 @@ class Target
 				] )
 			clearTextBuffer()
 		}
+
+	func GenerateLoadLiteral oParser 
+		oParser {
+			Generate( [
+					:Command = :load,
+					:Expression = cBuffer
+				] )
+			clearTextBuffer()
+		}
