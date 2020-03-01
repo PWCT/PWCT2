@@ -164,6 +164,13 @@ class VSFGenerator
 		}
 		return [:IsLiteral = lLiteral,:Expr = cExpr]
 
+	func SetStepsParent 
+		nParentID = aParents[len(aParents)]
+
+	func PopParent 
+		del(aParents,len(aParents))
+		SetStepsParent()
+
 	/*
 		Pass a literal to the Print component
 	*/
@@ -240,9 +247,3 @@ class VSFGenerator
 			SetStepsParent()
 			return nStepID
 
-	func SetStepsParent 
-		nParentID = aParents[len(aParents)]
-
-	func PopParent 
-		del(aParents,len(aParents))
-		SetStepsParent()
