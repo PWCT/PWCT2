@@ -11,9 +11,9 @@ class Generator
 
 	aParseTree = []
 
-		oPWCT = new VSFGenerator {	
-			cFileName = "test.pwct"
-		}
+	oPWCT = new VSFGenerator {	
+		cFileName = "app.pwct"
+	}
 
 	func SetParseTree aTree
 		aParseTree = aTree
