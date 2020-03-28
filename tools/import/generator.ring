@@ -11,25 +11,30 @@ class Generator
 
 	aParseTree = []
 
+		oPWCT = new VSFGenerator {	
+			cFileName = "test.pwct"
+		}
+
 	func SetParseTree aTree
 		aParseTree = aTree
 
 	func Start 
-		oPWCT = new VSFGenerator {	
-			cFileName = "test.pwct"
-		}
+
 		for aCommand in aParseTree {
-			switch aCommand[:Command] {
-				case :See 
-					oPWCT.AddPrintExpression(aCommand[:Expression],False)
-				case :QuestionMark 
-					oPWCT.AddPrintExpression(aCommand[:Expression],True)
-				case :if
-					oPWCT.AddIfExpression(aCommand[:Expression])
-				case :BlockEnd
-					oPWCT.popParent()
-				case :load 
-					oPWCT.AddLoadLiteral(aCommand[:Expression])
-			}
+			ProcessCommand(aCommand)
 		}
 		oPWCT.WriteVisualSourceFile()
+
+	func ProcessCommand aCommand
+		switch aCommand[:Command] {
+			case :See 
+				oPWCT.AddPrintExpression(aCommand[:Expression],False)
+			case :QuestionMark 
+				oPWCT.AddPrintExpression(aCommand[:Expression],True)
+			case :if
+				oPWCT.AddIfExpression(aCommand[:Expression])
+			case :BlockEnd
+				oPWCT.popParent()
+			case :load 
+				oPWCT.AddLoadLiteral(aCommand[:Expression])
+		}
