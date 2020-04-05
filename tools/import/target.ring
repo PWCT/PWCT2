@@ -56,3 +56,12 @@ class Target
 				] )
 			clearTextBuffer()
 		}
+
+	func GenerateFuncPara oParser 
+		oParser {
+			Generate( [
+				  	:Command = :Func,
+					:Parameters = cParameters
+				] )
+			clearTextBuffer()
+		}
