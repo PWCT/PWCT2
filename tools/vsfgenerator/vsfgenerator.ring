@@ -272,3 +272,8 @@ class VSFGenerator
 			nIID,nStepNumber,C_STEPTYPE_ROOT)
 			oModel.SaveStepCode(nStepID, "load " + '"' + cLiteral + '"')
 			return nStepID
+
+	/*
+		Define Function component
+	*/
+	func AddFuncParameters cParameters 
