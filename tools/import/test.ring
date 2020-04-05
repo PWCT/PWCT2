@@ -20,5 +20,5 @@ ok
 ? "Thanks"
 ? "End of program!"
 
-func test
+func test x,y
 	? "Hello from Test!"

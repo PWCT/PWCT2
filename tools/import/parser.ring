@@ -846,6 +846,7 @@ class Parser
 		if iskeyword(K_FUNC) or iskeyword(K_DEF) {
 			nexttoken()
 			IGNORENEWLINE() 
+			ClearTextBuffer()
 			if isidentifier() {
 				nexttoken()
 				if isidentifier() or isoperator2(OP_FOPEN) {
@@ -853,13 +854,13 @@ class Parser
 				else
 					x = 1 
 				}
+				oTarget.GenerateBlockEnd(self)
+				oTarget.GenerateFuncPara(self)
+				oTarget.GenerateBlockStart(self)
 				if x {
 					/* Support using { } around the function code and using 'end' after the content */
 					x = bracesandend(0,K_ENDFUNC) 
 				}
-				oTarget.GenerateBlockEnd(self)
-				oTarget.GenerateFuncPara(self)
-				oTarget.GenerateBlockStart(self)
 				return x 
 			else
 				error(ERROR_FUNCNAME)
