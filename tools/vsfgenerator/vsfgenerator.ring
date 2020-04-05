@@ -174,7 +174,8 @@ class VSFGenerator
 	func SetStepsParent 
 		nParentID = aParents[len(aParents)]
 
-	func PopParent 
+	func PopParent
+		if len(aParents) = 0 { return }
 		del(aParents,len(aParents))
 		SetStepsParent()
 
