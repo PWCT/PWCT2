@@ -172,6 +172,7 @@ class VSFGenerator
 		return ExprIsLiteral(cLiteral)[:Expr]
 	
 	func SetStepsParent 
+		if len(aParents) = 0 { return }
 		nParentID = aParents[len(aParents)]
 
 	func PopParent

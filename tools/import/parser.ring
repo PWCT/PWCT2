@@ -855,8 +855,11 @@ class Parser
 				}
 				if x {
 					/* Support using { } around the function code and using 'end' after the content */
-					return bracesandend(0,K_ENDFUNC) 
+					x = bracesandend(0,K_ENDFUNC) 
 				}
+				oTarget.GenerateBlockEnd(self)
+				oTarget.GenerateFuncPara(self)
+				oTarget.GenerateBlockStart(self)
 				return x 
 			else
 				error(ERROR_FUNCNAME)

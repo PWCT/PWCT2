@@ -61,7 +61,7 @@ class Target
 		oParser {
 			Generate( [
 				  	:Command = :Func,
-					:Parameters = cParameters
+					:Parameters = cBuffer
 				] )
 			clearTextBuffer()
 		}

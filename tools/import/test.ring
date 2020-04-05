@@ -19,3 +19,6 @@ if 3=1+2
 ok
 ? "Thanks"
 ? "End of program!"
+
+func test
+	? "Hello from Test!"
