@@ -289,3 +289,24 @@ class VSFGenerator
 				:output 	= "",
 				:lOutput	= False 
 			])
+		# Generate the Step and the Code
+			nStepNumber = 1
+			nStepID = AddGeneratedStep(nParentID,
+				T_CT_FUNC_ST_FUNC + StyleData(cFunction ) +
+				" " + StyleData(cParameters ) ,
+			nIID,nStepNumber,C_STEPTYPE_ROOT)
+			oModel.SaveStepCode(nStepID, "func " + cFunction  + 
+			" " + cParameters + " { " )
+			nStepNumber++
+			nStepID2 = AddGeneratedStep(nStepID,
+				T_CT_FUNC_ST_STARTHERE ,
+			nIID,nStepNumber,C_STEPTYPE_ALLOWINTERACTION)
+			nStepNumber++
+			nStepID3 = AddGeneratedStep(nStepID,
+				T_CT_FUNC_ST_ENDOFFUNC ,
+			nIID,nStepNumber,C_STEPTYPE_INFO)
+			oModel.SaveStepCode(nStepID3, "} " )
+		# Set the Parent 
+			aParents + nStepID2
+			SetStepsParent()
+			return nStepID
