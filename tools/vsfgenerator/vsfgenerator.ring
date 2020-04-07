@@ -276,4 +276,10 @@ class VSFGenerator
 	/*
 		Define Function component
 	*/
-	func AddFuncParameters cParameters 
+	func AddFuncParameters cFunction,cParameters 
+		# Use the Interaction Page
+			nIID = UseComponent("func",[
+				:name 		= cFunction,
+				:parameters	= cParameters,
+				:output 	= "" 
+			])
