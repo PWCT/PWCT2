@@ -38,5 +38,5 @@ class Generator
 			case :load 
 				oPWCT.AddLoadLiteral(aCommand[:Expression])
 			case :Func 
-				oPWCT.AddFuncParameters(aCommand[:Parameters])
+				oPWCT.AddFuncParameters(aCommand[:Function],aCommand[:Parameters])
 		}

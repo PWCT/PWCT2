@@ -19,6 +19,7 @@ class Parser
 	aParseTree	= []
 	cBuffer		= ""
 	lBufferFlag	= True
+	aBuffer		= []
 
 	nLineNumber 	= 1 
 	nAssignmentFlag = 1 
@@ -47,6 +48,9 @@ class Parser
 
 	func ClearTextBuffer
 		cBuffer = ""
+
+	func AddToBufferArray cAttribute 
+		aBuffer[cAttribute] = cBuffer
 
 	func ValueAsString cValue
 		if substr(cValue,'"') = 0 {
@@ -844,7 +848,9 @@ class Parser
 		}
 		/* Statement --> Func|Def Identifier [PARALIST] */
 		if iskeyword(K_FUNC) or iskeyword(K_DEF) {
+			ClearTextBuffer()
 			nexttoken()
+			AddToBufferArray(:FunctionName)		
 			IGNORENEWLINE() 
 			ClearTextBuffer()
 			if isidentifier() {
