@@ -16,6 +16,8 @@ class VSFGenerator
 	aParents 	= [1]
 	nParentID	= 1
 
+	lCheckboxTrue = 2
+
 	func startGenerator
 		TestGenerator()
 		WriteVisualSourceFile()
@@ -176,8 +178,9 @@ class VSFGenerator
 		nParentID = aParents[len(aParents)]
 
 	func PopParent
-		if len(aParents) = 0 { return }
-		del(aParents,len(aParents))
+		if len(aParents) > 1 {
+			del(aParents,len(aParents))
+		}
 		SetStepsParent()
 
 	/*
@@ -277,7 +280,7 @@ class VSFGenerator
 		Define Function component
 	*/
 	func AddFuncParameters cFunction,cParameters 
-		lParameters = True
+		lParameters = lCheckboxTrue
 		if trim(cParameters) = "" {
 			lParameters = False
 		}
