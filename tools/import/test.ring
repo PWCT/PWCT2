@@ -22,3 +22,14 @@ ok
 
 func test x,y
 	? "Hello from Test!"
+
+func one 
+	? "hello from one"
+
+func two
+	? "hello from two"
+
+func three 
+	? "hello from three "
+
+
