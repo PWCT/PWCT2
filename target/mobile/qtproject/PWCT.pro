@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui network multimedia multimediawidgets testlib printsupport widgets sql bluetooth quick quickwidgets qml positioning
+QT       += core gui network multimedia multimediawidgets testlib printsupport widgets sql bluetooth quick quickwidgets qml positioning texttospeech 3dcore 3dextras 3drender 3dlogic charts
 
 qtHaveModule(webengine) {
 	QT += webengine
@@ -73,6 +73,42 @@ SOURCES +=   \
     gprintpreviewwidget.cpp \
     gprintpreviewdialog.cpp \
     gprintdialog.cpp \
+	gtexttospeech.cpp \
+    gobjectpicker.cpp \
+    gframeaction.cpp \
+    gabstractaxis.cpp \
+    gabstractbarseries.cpp \
+    gabstractseries.cpp \
+    gareaseries.cpp \
+    gbarcategoryaxis.cpp \
+    gbarset.cpp \
+    gboxplotseries.cpp \
+    gboxset.cpp \
+    gcandlestickmodelmapper.cpp \
+    gcandlestickseries.cpp \
+    gcandlestickset.cpp \
+    gcategoryaxis.cpp \
+    gchart.cpp \
+    gdatetimeaxis.cpp \
+    ghbarmodelmapper.cpp \
+    ghboxplotmodelmapper.cpp \
+    ghcandlestickmodelmapper.cpp \
+    ghpiemodelmapper.cpp \
+    ghxymodelmapper.cpp \
+    glegendmarker.cpp \
+    glogvalueaxis.cpp \
+    gpieseries.cpp \
+    gpieslice.cpp \
+    gscatterseries.cpp \
+    gvbarmodelmapper.cpp \
+    gvboxplotmodelmapper.cpp \
+    gvcandlestickmodelmapper.cpp \
+    gvpiemodelmapper.cpp \
+    gvxymodelmapper.cpp \
+    gvalueaxis.cpp \
+    gxyseries.cpp \
+    ggraphicsscene.cpp \
+    gmovie.cpp \
     ring_qt.cpp 
 
 
@@ -130,7 +166,43 @@ HEADERS  += \
     ggeopositioninfosource.h \
     gprintpreviewwidget.h \
     gprintpreviewdialog.h \
-	gprintdialog.h
+	gprintdialog.h \
+	gtexttospeech.h \
+    gobjectpicker.h \
+    gframeaction.h \
+    gabstractaxis.h \
+    gabstractbarseries.h \
+    gabstractseries.h \
+    gareaseries.h \
+    gbarcategoryaxis.h \
+    gboxplotseries.h \
+    gbarset.h \
+    gboxset.h \
+    gcandlestickmodelmapper.h \
+    gcandlestickseries.h \
+    gcandlestickset.h \
+    gcategoryaxis.h \
+    gdatetimeaxis.h \
+    gchart.h \
+    ghbarmodelmapper.h \
+    ghboxplotmodelmapper.h \
+    ghcandlestickmodelmapper.h \
+    ghpiemodelmapper.h \
+    ghxymodelmapper.h \
+    glegendmarker.h \
+    glogvalueaxis.h \
+    gpieseries.h \
+    gscatterseries.h \
+    gpieslice.h \
+    gvbarmodelmapper.h \
+    gvboxplotmodelmapper.h \
+    gvcandlestickmodelmapper.h \
+    gvxymodelmapper.h \
+    gvpiemodelmapper.h \
+    gvalueaxis.h \
+    gxyseries.h \
+    ggraphicsscene.h \
+    gmovie.h
 
 CONFIG += warn_off
 
