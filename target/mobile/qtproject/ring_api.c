@@ -95,6 +95,9 @@ RING_API void ring_vm_loadcfunctions ( RingState *pRingState )
 	ring_vm_funcregister("nullpointer",ring_vmlib_nullpointer);
 	ring_vm_funcregister("space",ring_vmlib_space);
 	ring_vm_funcregister("ptrcmp",ring_vmlib_ptrcmp);
+	ring_vm_funcregister("pointer2string",ring_vmlib_pointer2string);
+	ring_vm_funcregister("setpointer",ring_vmlib_setpointer);
+	ring_vm_funcregister("getpointer",ring_vmlib_getpointer);
 	/* Ring State */
 	ring_vm_funcregister("ring_state_init",ring_vmlib_state_init);
 	ring_vm_funcregister("ring_state_runcode",ring_vmlib_state_runcode);
@@ -1979,6 +1982,7 @@ void ring_vmlib_nullpointer ( void *pPointer )
 void ring_vmlib_space ( void *pPointer )
 {
 	char *pString  ;
+	unsigned int nStrSize  ;
 	if ( RING_API_PARACOUNT != 1 ) {
 		RING_API_ERROR(RING_API_MISS1PARA);
 		return ;
@@ -1988,12 +1992,14 @@ void ring_vmlib_space ( void *pPointer )
 			RING_API_ERROR(RING_API_BADPARARANGE);
 			return ;
 		}
-		pString = (char *) ring_state_calloc(((VM *) pPointer)->pRingState,1,RING_API_GETNUMBER(1));
+		nStrSize = (unsigned int) RING_API_GETNUMBER(1) ;
+		pString = (char *) ring_state_malloc(((VM *) pPointer)->pRingState,nStrSize);
 		if ( pString == NULL ) {
 			printf( RING_OOM ) ;
 			exit(0);
 		}
-		RING_API_RETSTRING2(pString,RING_API_GETNUMBER(1));
+		memset(pString,' ',nStrSize);
+		RING_API_RETSTRING2(pString,nStrSize);
 		ring_state_free(((VM *) pPointer)->pRingState,pString);
 	} else {
 		RING_API_ERROR(RING_API_BADPARATYPE);
@@ -2014,6 +2020,51 @@ void ring_vmlib_ptrcmp ( void *pPointer )
 	} else {
 		RING_API_ERROR(RING_API_BADPARATYPE);
 	}
+}
+
+void ring_vmlib_pointer2string ( void *pPointer )
+{
+	RING_API_IGNORECPOINTERTYPE ;
+	if ( RING_API_PARACOUNT != 3 ) {
+		RING_API_ERROR(RING_API_MISS3PARA);
+		return ;
+	}
+	if ( ! ( RING_API_ISCPOINTER(1) && RING_API_ISNUMBER(2) && RING_API_ISNUMBER(3) ) ) {
+		RING_API_ERROR(RING_API_BADPARATYPE);
+	}
+	RING_API_RETSTRING2(((const char *) RING_API_GETCPOINTER(1,"OBJECTPOINTER"))+((int) RING_API_GETNUMBER(2)),(int) RING_API_GETNUMBER(3));
+}
+
+void ring_vmlib_setpointer ( void *pPointer )
+{
+	List *pList  ;
+	RING_API_IGNORECPOINTERTYPE ;
+	if ( RING_API_PARACOUNT != 2 ) {
+		RING_API_ERROR(RING_API_MISS2PARA);
+		return ;
+	}
+	if ( ! ( RING_API_ISCPOINTER(1) && RING_API_ISNUMBER(2) ) ) {
+		RING_API_ERROR(RING_API_BADPARATYPE);
+		return ;
+	}
+	pList = RING_API_GETLIST(1) ;
+	ring_list_setpointer(pList,RING_CPOINTER_POINTER,(void *) (size_t) RING_API_GETNUMBER(2));
+}
+
+void ring_vmlib_getpointer ( void *pPointer )
+{
+	List *pList  ;
+	RING_API_IGNORECPOINTERTYPE ;
+	if ( RING_API_PARACOUNT != 1 ) {
+		RING_API_ERROR(RING_API_MISS1PARA);
+		return ;
+	}
+	if ( ! ( RING_API_ISCPOINTER(1) ) ) {
+		RING_API_ERROR(RING_API_BADPARATYPE);
+		return ;
+	}
+	pList = RING_API_GETLIST(1) ;
+	RING_API_RETNUMBER((size_t) ring_list_getpointer(pList,RING_CPOINTER_POINTER));
 }
 /* Ring State */
 
@@ -2175,14 +2226,24 @@ void ring_vmlib_state_filetokens ( void *pPointer )
 	RingState *pState  ;
 	char *cFile  ;
 	List *pList  ;
-	if ( RING_API_PARACOUNT != 2 ) {
+	int lCase  ;
+	if ( RING_API_PARACOUNT < 2 ) {
 		RING_API_ERROR(RING_API_MISS2PARA);
 		return ;
 	}
 	pState = (RingState *) RING_API_GETCPOINTER(1,"RINGSTATE") ;
 	cFile = RING_API_GETSTRING(2);
+	/* Check the (Not Case Sensitive) feature */
+	lCase = 1 ;
+	if ( RING_API_PARACOUNT == 3 ) {
+		if ( RING_API_ISNUMBER(3) ) {
+			lCase = (int) RING_API_GETNUMBER(3) ;
+		}
+	}
 	pState->nOnlyTokens = 1 ;
+	pState->lNotCaseSensitive = lCase ;
 	ring_scanner_readfile(pState,cFile);
+	pState->lNotCaseSensitive = 1 ;
 	pState->nOnlyTokens = 0 ;
 	/* Copy The List */
 	pList = RING_API_NEWLIST ;
