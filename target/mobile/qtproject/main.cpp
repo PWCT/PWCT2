@@ -76,7 +76,8 @@ RING_FUNC(ring_ismobileqt)
 
 RING_FUNC(ring_qDebug)
 {
-    qDebug( RING_API_GETSTRING(1) );
+    // A function used by RingQt (Appfile() function) to access files using resources
+    qDebug( "%s", RING_API_GETSTRING(1) );
 }
 
 void ringapp_delete_file(QString path,const char *cFile) ;
