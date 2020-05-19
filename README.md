@@ -1,6 +1,6 @@
 # Programming Without Coding Technology (PWCT)
 
-## Version 2.0
+## Version 2.0 (Developed using the Ring programming language!)
 
 If you want to learn programming, create applications/systems or get some new ideas
 about visual programming in the practice then you are in the right place. The goal
