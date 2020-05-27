@@ -313,3 +313,20 @@ class VSFGenerator
 			aParents + nStepID2
 			SetStepsParent()
 			return nStepID
+
+
+	/*
+		if component 
+	*/
+	func AddReturnExpression cExpr
+		# Use the Interaction Page
+			nIID = UseComponent("return",[
+				:value 	= cExpr
+			])
+		# Generate the Step and the Code
+			nStepNumber = 1
+			nStepID = AddGeneratedStep(nParentID,
+			T_CT_RETURN_ST_RETURN + StyleData(cExpr),
+			nIID,nStepNumber,C_STEPTYPE_ROOT)
+			oModel.SaveStepCode(nStepID, "return " +  cExpr)
+			return nStepID
