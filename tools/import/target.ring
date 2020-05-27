@@ -66,3 +66,11 @@ class Target
 				] )
 			clearTextBuffer()
 		}
+
+	func GenerateReturn oParser 
+		oParser {
+			Generate( [
+					:Command = :Return,
+					:Expression = Parameter(:Expression)
+				] )
+		}

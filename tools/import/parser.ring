@@ -1154,12 +1154,14 @@ class Parser
 				x = expr()
 				nAssignmentFlag = 1 
 				/* Generate Code */
+				AddParameter(:Expression)
 			else 
 				/*
 				**  Generate Code 
 				**  Return NULL 
 				*/
 			}
+			oTarget.GenerateReturn(self)
 			return x 
 		}
 		/* Statement --> Try {Statement} Catch {Statement} Done */
