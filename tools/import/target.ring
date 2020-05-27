@@ -11,7 +11,7 @@ class Target
 		oParser {
 			Generate( [
 					:Command = :See,
-					:Expression = cBuffer
+					:Expression = Parameter(:Expression)
 				] )
 			clearTextBuffer()
 		}
@@ -20,7 +20,7 @@ class Target
 		oParser {
 			Generate( [
 					:Command = :QuestionMark,
-					:Expression = cBuffer
+					:Expression = Parameter(:Expression)
 				] )
 			clearTextBuffer()
 		}
@@ -43,7 +43,7 @@ class Target
 		oParser {
 			Generate( [
 					:Command = :If,
-					:Expression = cBuffer
+					:Expression = Parameter(:Condition)
 				] )
 			clearTextBuffer()
 		}
@@ -52,7 +52,7 @@ class Target
 		oParser {
 			Generate( [
 					:Command = :load,
-					:Expression = cBuffer
+					:Expression = Parameter(:FileName)
 				] )
 			clearTextBuffer()
 		}

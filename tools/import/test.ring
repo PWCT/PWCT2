@@ -31,3 +31,6 @@ func three
 
 func test x,y
 	? "Hello from Test!"
+
+func sum a,b,c
+	return a+b+c

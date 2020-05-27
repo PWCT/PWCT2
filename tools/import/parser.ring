@@ -914,6 +914,7 @@ class Parser
 			}
 			if isliteral() {
 				nexttoken()
+				AddParameter(:FileName)
 				oTarget.GenerateLoadLiteral(self)
 				return x 
 			}
@@ -926,6 +927,7 @@ class Parser
 			nAssignmentFlag = 0 				
 			x = expr()
 			nAssignmentFlag = 1 
+			AddParameter(:Expression)
 			oTarget.GenerateSeeExpr(self)
 			return x 
 		}
@@ -937,6 +939,7 @@ class Parser
 			nAssignmentFlag = 0 
 			x = expr()
 			nAssignmentFlag = 1 
+			AddParameter(:Expression)
 			oTarget.GenerateQuestionMarkExpr(self)
 			return x 
 		}
@@ -1039,6 +1042,7 @@ class Parser
 			IGNORENEWLINE() 
 			nAssignmentFlag = 0 
 			if csexpr() {
+				AddParameter(:Condition)
 				oTarget.GenerateIfExpr(self)
 				oTarget.GenerateBlockStart(self)
 				nAssignmentFlag = 1 
