@@ -49,7 +49,7 @@ class Parser
 	func ClearTextBuffer
 		cBuffer = ""
 
-	func AddToBufferArray cAttribute 
+	func AddToBufferList cAttribute 
 		aBuffer[cAttribute] = cBuffer
 
 	func ValueAsString cValue
@@ -850,7 +850,7 @@ class Parser
 		if iskeyword(K_FUNC) or iskeyword(K_DEF) {
 			ClearTextBuffer()
 			nexttoken()
-			AddToBufferArray(:FunctionName)		
+			AddToBufferList(:FunctionName)		
 			IGNORENEWLINE() 
 			ClearTextBuffer()
 			if isidentifier() {
@@ -861,7 +861,7 @@ class Parser
 					x = 1 
 				}
 				oTarget.GenerateBlockEnd(self)
-				AddToBufferArray(:FunctionParameters)		
+				AddToBufferList(:FunctionParameters)		
 				oTarget.GenerateFuncPara(self)
 				oTarget.GenerateBlockStart(self)
 				if x {
