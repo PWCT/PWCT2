@@ -861,6 +861,7 @@ class Parser
 					x = 1 
 				}
 				oTarget.GenerateBlockEnd(self)
+				AddToBufferArray(:FunctionParameters)		
 				oTarget.GenerateFuncPara(self)
 				oTarget.GenerateBlockStart(self)
 				if x {

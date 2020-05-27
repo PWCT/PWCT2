@@ -62,7 +62,7 @@ class Target
 			Generate( [
 				  	:Command = :Func,
 					:function = aBuffer[:FunctionName],
-					:Parameters = cBuffer
+					:Parameters = aBuffer[:FunctionParameters]
 				] )
 			clearTextBuffer()
 		}
