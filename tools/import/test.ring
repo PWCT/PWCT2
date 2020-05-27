@@ -20,9 +20,6 @@ ok
 ? "Thanks"
 ? "End of program!"
 
-func test x,y
-	? "Hello from Test!"
-
 func one 
 	? "hello from one"
 
@@ -32,4 +29,5 @@ func two
 func three 
 	? "hello from three "
 
-
+func test x,y
+	? "Hello from Test!"
