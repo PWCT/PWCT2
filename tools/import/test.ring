@@ -34,3 +34,18 @@ func test x,y
 
 func sum a,b,c
 	return a+b+c
+
+func testif 
+	if x = 1 
+		if y = 2
+			if z = 3
+				if r = nice()
+					? "r test"
+				ok
+				? "z test"
+			ok
+			? "y test"
+		ok
+		? "x test"
+	ok
+end 
