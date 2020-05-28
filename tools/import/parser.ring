@@ -955,6 +955,8 @@ class Parser
 					return 0 
 				}
 				/* Generate Code */
+				AddParameter(:Identifier)
+				oTarget.GenerateGiveIdentifier(self)
 				return 1 
 			else
 				error(ERROR_VARNAME)

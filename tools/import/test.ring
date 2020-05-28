@@ -49,3 +49,7 @@ func testif
 		? "x test"
 	ok
 end 
+
+func testgive 
+	? "Enter Name: " give name 
+	? "Hello " + name 

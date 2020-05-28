@@ -316,7 +316,7 @@ class VSFGenerator
 
 
 	/*
-		if component 
+		Return component 
 	*/
 	func AddReturnExpression cExpr
 		# Use the Interaction Page
@@ -330,3 +330,21 @@ class VSFGenerator
 			nIID,nStepNumber,C_STEPTYPE_ROOT)
 			oModel.SaveStepCode(nStepID, "return " +  cExpr)
 			return nStepID
+
+
+	/*
+		Give component  (Get Input Component)
+	*/
+	func AddGiveIdentifier cIdentifier
+		# Use the Interaction Page
+			nIID = UseComponent("getinput",[
+				:text 	= cIdentifier
+			])
+		# Generate the Step and the Code
+			nStepNumber = 1
+			nStepID = AddGeneratedStep(nParentID,
+			T_CT_GETINPUT_ST_INPUT + StyleData(cIdentifier),
+			nIID,nStepNumber,C_STEPTYPE_ROOT)
+			oModel.SaveStepCode(nStepID, "give " +  cIdentifier)
+			return nStepID
+	

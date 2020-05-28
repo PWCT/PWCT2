@@ -74,3 +74,11 @@ class Target
 					:Expression = Parameter(:Expression)
 				] )
 		}
+
+	func GenerateGiveIdentifier oParser 
+		oParser {
+			Generate( [
+					:Command = :Give,
+					:Identifier = Parameter(:Identifier)
+				] )
+		}

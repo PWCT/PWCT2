@@ -14,7 +14,7 @@ Class GetInputComponentController from ComponentControllerParent
 		if NoValueMsg(:text) { return False }
 
 		NewStep(T_CT_GETINPUT_ST_INPUT + StyleData(  Variable(:text) )  ) # "Input " 
-		SetStepCode("Give " + Variable(:text) )	
+		SetStepCode("give " + Variable(:text) )	
 
 		return True 
 
