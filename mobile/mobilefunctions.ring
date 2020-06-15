@@ -41,6 +41,22 @@ func PWCTIsMobile cOption
 		:DefaultMode		(Default mode for the PWCT Environment dockable windows)
 	*/
 	//if cOption = :RunApplication or cOption = :SendDataToApplication  return True ok
+	if isWebAssembly() {
+		switch cOption {
+			case :GoalDesignerButtonsSize 
+				return False 
+			case :ComponentsBrowser
+				return False
+			case :DockForComponentsBrowser
+				return False 
+			case :ComponentSelected
+				return False 
+			case :Tabify
+				return False 
+			case :InteractionPagesInGoalDesigner
+				return False
+		}
+	}
 	return isMobile()
 
 /*
@@ -49,6 +65,7 @@ func PWCTIsMobile cOption
 */
 
 func CreateMobileFiles
+	if isWebAssembly() return ok
 	cDir = currentdir()
 	QStandardPaths_GenericDataLocation = 11
 	oPath = new QStandardPaths

@@ -6,7 +6,7 @@
 */
 
 # Load Ring Libraries
-	load "stdlib.ring"
+	load "stdlibcore.ring"
 	load "guilib.ring"
 
 # Load General Libraries
