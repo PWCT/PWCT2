@@ -6,7 +6,7 @@ copy ring_ext.c ..\qtproject\
 copy b:\ring\include\*.h ..\qtproject\
 copy ring_ext.h ..\qtproject\
 cd b:\ring\extensions\ringqt\
-call gencodewebassembly.bat
+call gencodewebassemblylight.bat
 copy cpp\src\*.cpp b:\pwct2\target\webassembly\qtproject\
 copy cpp\include\*.h b:\pwct2\target\webassembly\qtproject\
 call gencodeqt512_nobluetooth.bat
