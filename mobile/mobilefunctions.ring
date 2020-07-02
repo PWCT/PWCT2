@@ -57,7 +57,7 @@ func PWCTIsMobile cOption
 				return False
 		}
 	}
-	return isMobile()
+	return isMobile() | isWebAssembly()
 
 /*
 	This function will create the PWCT folder on the mobile
