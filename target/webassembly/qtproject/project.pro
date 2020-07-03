@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui network multimedia multimediawidgets testlib printsupport widgets  quick quickwidgets qml  texttospeech charts
+QT       += core gui network multimedia multimediawidgets testlib printsupport widgets
 
 qtHaveModule(webengine) {
 	QT += webengine
@@ -59,43 +59,10 @@ SOURCES +=   \
     gstackedwidget.cpp \
     gcalendarwidget.cpp \
     gtabbar.cpp \
-    gquickwidget.cpp \
     gdrag.cpp \
     gprintpreviewwidget.cpp \
     gprintpreviewdialog.cpp \
     gprintdialog.cpp \
-    gtexttospeech.cpp \
-    gabstractaxis.cpp \
-    gabstractbarseries.cpp \
-    gabstractseries.cpp \
-    gareaseries.cpp \
-    gbarcategoryaxis.cpp \
-    gbarset.cpp \
-    gboxplotseries.cpp \
-    gboxset.cpp \
-    gcandlestickmodelmapper.cpp \
-    gcandlestickseries.cpp \
-    gcandlestickset.cpp \
-    gcategoryaxis.cpp \
-    gchart.cpp \
-    gdatetimeaxis.cpp \
-    ghbarmodelmapper.cpp \
-    ghboxplotmodelmapper.cpp \
-    ghcandlestickmodelmapper.cpp \
-    ghpiemodelmapper.cpp \
-    ghxymodelmapper.cpp \
-    glegendmarker.cpp \
-    glogvalueaxis.cpp \
-    gpieseries.cpp \
-    gpieslice.cpp \
-    gscatterseries.cpp \
-    gvbarmodelmapper.cpp \
-    gvboxplotmodelmapper.cpp \
-    gvcandlestickmodelmapper.cpp \
-    gvpiemodelmapper.cpp \
-    gvxymodelmapper.cpp \
-    gvalueaxis.cpp \
-    gxyseries.cpp \
     ggraphicsscene.cpp \
     gmovie.cpp \
     gcolordialog.cpp \
@@ -144,43 +111,10 @@ HEADERS  += \
     gcalendarwidget.h \
     gdockwidget.h \
     gtabbar.h \
-    gquickwidget.h \
     gdrag.h \
     gprintpreviewwidget.h \
     gprintpreviewdialog.h \
     gprintdialog.h \
-    gtexttospeech.h \
-    gabstractaxis.h \
-    gabstractbarseries.h \
-    gabstractseries.h \
-    gareaseries.h \
-    gbarcategoryaxis.h \
-    gboxplotseries.h \
-    gbarset.h \
-    gboxset.h \
-    gcandlestickmodelmapper.h \
-    gcandlestickseries.h \
-    gcandlestickset.h \
-    gcategoryaxis.h \
-    gdatetimeaxis.h \
-    gchart.h \
-    ghbarmodelmapper.h \
-    ghboxplotmodelmapper.h \
-    ghcandlestickmodelmapper.h \
-    ghpiemodelmapper.h \
-    ghxymodelmapper.h \
-    glegendmarker.h \
-    glogvalueaxis.h \
-    gpieseries.h \
-    gscatterseries.h \
-    gpieslice.h \
-    gvbarmodelmapper.h \
-    gvboxplotmodelmapper.h \
-    gvcandlestickmodelmapper.h \
-    gvxymodelmapper.h \
-    gvpiemodelmapper.h \
-    gvalueaxis.h \
-    gxyseries.h \
     ggraphicsscene.h \
     gmovie.h \
     gcolordialog.h \
