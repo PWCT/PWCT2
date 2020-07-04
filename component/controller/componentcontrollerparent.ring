@@ -25,6 +25,9 @@ Class ComponentControllerParent from WindowsControllerParent
 	oHTMLFunctions 		= new HTMLFunctions
 
 
+	nInsideGoalDesigner	= False
+
+
 	/*
 		Purpose : Create a Step as parent to other steps
 		Parameters : The Step Name as string 
@@ -340,7 +343,7 @@ Class ComponentControllerParent from WindowsControllerParent
 		parent().oView.oStepsTree.setFocus(0)
 		# To Correctly draw items (Avoid a Qt bug in drawing)
 			parent().oView.FixDrawing()
-		if nInteractionMode = C_INTERACTIONMODE_MODIFY  {
+		if nInteractionMode = C_INTERACTIONMODE_MODIFY  or nInsideGoalDesigner {
 			parent().InteractionPageToModifyClosed()
 		}
 		Super.CloseAction()

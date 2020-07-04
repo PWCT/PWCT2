@@ -22,6 +22,12 @@ class ComponentsBrowserController from WindowsControllerParent
 			lUseComponentsFile	= False
 		}
 
+	if PWCTIsMobile(:InteractionPagesInGoalDesigner) {
+		lInteractionPagesInGoalDesigner = False
+	else
+		lInteractionPagesInGoalDesigner = True
+	}
+
 	/*
 		Purpose : Key Press Action
 		Parameters : None
@@ -141,7 +147,20 @@ class ComponentsBrowserController from WindowsControllerParent
 		cFilePath = cComponentsPath + cFile + ".ring"
 		Parent().CheckLoadingComponent(cFilePath)
 		# Start the Component
-			Open_Window(cFile+:ComponentController)
+
+			if lInteractionPagesInGoalDesigner {
+				Open_WindowNoShow(cFile+:ComponentController)
+				parent().oView.layoutVPages.InsertWidget(0,Last_Window().oView.win,0,0)
+				Last_Window().nInsideGoalDesigner = True
+				Last_Window().Start()			# Show The Window
+				parent().oView.widgetVPages.Show()	# Show the Splitter Widget
+				parent().oView.oVPagesScroll.Show()
+				parent().nInteractionPagesToModifyCount++
+			else 
+				Open_Window(cFile+:ComponentController)
+			}
+
+
 			Last_Window().setParentObject(parent())
 			Last_Window().cComponent = cFile
 			Last_Window().nInteractionMode = C_INTERACTIONMODE_NEW
@@ -149,6 +168,8 @@ class ComponentsBrowserController from WindowsControllerParent
 				parent().RegisterInteractionPage()
 			Last_Window().InternalAfterOpen()
 			Last_Window().AfterOpen()
+
+
 		# Clear the Search TextBox
 			oView.oTextSearch.SetText("")
 		if not Parent().lComponentsBrowserInGoalDesigner and not parent().isDockForComponentsBrowser() {
