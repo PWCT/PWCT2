@@ -220,12 +220,15 @@ Class ComponentControllerParent from WindowsControllerParent
 	*/
 
 	func KeyPressAction
+		//? "Key Code : " see oView.oWinFilter.getKeyCode()
 		switch oView.oWinFilter.getKeyCode() {
 			case Qt_Key_Escape 
 				CloseBtnAction()		
-			case 87	# CTRL+W
+			case 87				# CTRL+W
 				OkAction()
-			case 71 	# CTRL+G
+			case 69				# CTRL+E (WebAssembly)
+				OkAction()
+			case 71 			# CTRL+G
 				AgainAction()
 		}
 

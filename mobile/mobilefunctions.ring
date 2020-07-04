@@ -55,6 +55,8 @@ func PWCTIsMobile cOption
 				return False 
 			case :InteractionPagesInGoalDesigner
 				return False
+			case :IPTitle
+				return False
 		}
 	}
 	return isMobile() | isWebAssembly()

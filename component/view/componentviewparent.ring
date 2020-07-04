@@ -20,20 +20,20 @@ class ComponentViewParent from WindowsViewParent
 	nButtonsFontSize	= 12
 
 	nWindowWidth		= 300
-	nWindowHeight		= 400
+	nWindowHeight		= 200
 
 	cssText    = "border:1px solid black;border-radius:7px;"
 
-	win = new qWidget() {
-		//setAttribute(Qt_WA_DeleteOnClose,True)
+	win = new QWidget() {
+		resize(nWindowWidth,nWindowHeight)
 		setLayoutDirection(T_LAYOUTDIRECTION)
 		setWindowTitle(T_IP_WINDOWTITLE) # "Interation Window"
-		setwindowflags(Qt_CustomizeWindowHint | Qt_WindowTitleHint | Qt_WindowStaysOnTopHint) 
-		oLayoutAll = new qVBoxLayout() 
+		setWindowflags(Qt_CustomizeWindowHint | Qt_WindowTitleHint | Qt_WindowStaysOnTopHint) 
+		oLayoutAll = new QVBoxLayout() 
 		SetLayout(oLayoutAll)
-		oWinFilter = new qallevents(win)
+		oWinFilter = new QAllEvents(win)
 		oWinFilter.setKeyPressEvent(Method(:KeyPressAction))								
-		installeventfilter(oWinFilter)
+		installEventFilter(oWinFilter)
 	}
 
 	oDesktop = new qDesktopwidget() 
@@ -45,7 +45,7 @@ class ComponentViewParent from WindowsViewParent
 	
 	func CenterTheWindow 
 		win.move((oDesktop.width()-nWindowWidth)/2,(oDesktop.height()-nWindowHeight)/2)
-		win.resize(nWindowWidth,10)
+		win.resize(nWindowWidth,nWindowHeight)
 
 	/*
 		Purpose : Display title in the Interaction Page
@@ -67,7 +67,7 @@ class ComponentViewParent from WindowsViewParent
 				";background-color:"+C_INTERACTIONPAGE_TITLEBACKCOLOR+";")
 			setalignment(Qt_AlignHCenter |  Qt_AlignVCenter )
 		}
-		oLayoutAll.AddWidget(oLabel)
+		oLayoutAll.AddWidget(oLabel) 
 		win.setWindowTitle(cTitle)
 		return oLabel
 
