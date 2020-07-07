@@ -12,34 +12,42 @@ class FormDesignerFileSystem from ObjectsParent
 	cFileName = "noname.rform"
 	oGenerator = new FormDesignerCodeGenerator
 
+	lUseFileDialogStaticMethods = ! isWebAssembly()
+
 	oNewFileDialog = new QFileDialog(NULL) {
+		setFilter(QDir_AllEntries|QDir_Hidden|QDir_System)
 		setFileSelectedevent(Method("oFile.NewFileDialogOperation()"))
 		setWindowTitle("New Form")
 		setLabelText(QFileDialog_Accept,"Save")
-		setNameFilter("Form files (*.rform)")
+		setNameFilter("Form files (*.rform *)")
 		setDefaultSuffix("rform")
 		setFileMode(QFileDialog_AnyFile)
 		setViewMode(QFileDialog_List)
+		setOption(QFileDialog_ShowDirsOnly,False)
 	}
 
 	oOpenFileDialog = new QFileDialog(NULL) {
+		setFilter(QDir_AllEntries|QDir_Hidden|QDir_System)
 		setFileSelectedevent(Method("oFile.OpenFileDialogOperation()"))
 		setWindowTitle("Open Form")
 		setLabelText(QFileDialog_Accept,"Open")
-		setNameFilter("Form files (*.rform)")
+		setNameFilter("Form files (*.rform *)")
 		setDefaultSuffix("rform")
 		setFileMode(QFileDialog_ExistingFile)
 		setViewMode(QFileDialog_List)
+		setOption(QFileDialog_ShowDirsOnly,False)
 	}
 
 	oSaveFileDialog = new QFileDialog(NULL) {
+		setFilter(QDir_AllEntries|QDir_Hidden|QDir_System)
 		setFileSelectedevent(Method("oFile.SaveFileDialogOperation()"))
 		setWindowTitle("Save Form")
 		setLabelText(QFileDialog_Accept,"Save")
-		setNameFilter("Form files (*.rform)")
+		setNameFilter("Form files (*.rform *)")
 		setDefaultSuffix("rform")
 		setFileMode(QFileDialog_AnyFile)
 		setViewMode(QFileDialog_List)
+		setOption(QFileDialog_ShowDirsOnly,False)
 	}
 
 	cInputFileName
@@ -82,13 +90,31 @@ class FormDesignerFileSystem from ObjectsParent
 	func NewAction oDesigner
 		# Set the file Name
 			cDir = ActiveDir(oDesigner)
-			oNewFileDialog.setDirectory(cDir) 
-			oNewFileDialog.show()
+		if lUseFileDialogStaticMethods {
+			oFileDialog = new qfiledialog(oDesigner.oView.win) {
+				cInputFileName = getsavefilename(oDesigner.oView.win,"New Form",cDir,"*.rform")
+			}
+			if cInputFileName = NULL { return }
+			cInputFileName = AddExtensionToName(cInputFileName)
+			cFileName = cInputFileName	
+			startNewForm(oDesigner)		
+		else 
+			if oDesigner.oView.lUseWebAssemblyMEMFS {
+				oNewFileDialog.setDirectory(cDir) 
+				oNewFileDialog.show()
+			else 
+				cFileName = "noname.rform"
+				startNewForm(oDesigner)
+			}
+		}
 
 	func NewFileDialogSaveAction oDesigner
 		if cInputFileName = NULL { return }
 		cInputFileName = AddExtensionToName(cInputFileName)
 		cFileName = cInputFileName
+		startNewForm(oDesigner)
+
+	func startNewForm oDesigner
 		# Delete Objects
 			DeleteAllObjects(oDesigner)
 		# Set Default Form Properties
@@ -159,8 +185,19 @@ class FormDesignerFileSystem from ObjectsParent
 	func OpenAction oDesigner
 		# Get the file Name
 			cDir = ActiveDir(oDesigner)
+		if lUseFileDialogStaticMethods {
+			oFileDialog = new qfiledialog(oDesigner.oView.win) {
+				cInputFileName = getopenfilename(oDesigner.oView.win,"Open Form",cDir,"*.rform")
+			}
+			if cInputFileName = NULL { return }
+			cFileName = cInputFileName
+			LoadFormFromFile(oDesigner)
+			# Open controller class in Ring Notepad 
+				OpenControllerClassInParent(oDesigner)
+		else
 			oOpenFileDialog.setDirectory(cDir) 
 			oOpenFileDialog.show()
+		}
 
 	func OpenFileDialogOpenAction oDesigner
 			if cInputFileName = NULL { return }
@@ -189,8 +226,20 @@ class FormDesignerFileSystem from ObjectsParent
 	func SaveFile oDesigner
 		# Set the file Name
 			cDir = ActiveDir(oDesigner)
+		if lUseFileDialogStaticMethods {
+			oFileDialog = new qfiledialog(oDesigner.oView.win) {
+				cInputFileName = getsavefilename(oDesigner.oView.win,"Save Form",cDir,"*.rform")
+			}
+			if cInputFileName = NULL { return }
+			cInputFileName = AddExtensionToName(cInputFileName)
+			cFileName = cInputFileName
+			SaveFormToFile(oDesigner)
+			# Open controller class in Ring Notepad 
+				OpenControllerClassInParent(oDesigner)
+		else 
 			oSaveFileDialog.setDirectory(cDir)
 			oSaveFileDialog.show()
+		}
 
 	func SaveFileDialogSaveAction oDesigner
 			if cInputFileName = NULL { return }

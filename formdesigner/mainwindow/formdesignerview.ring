@@ -26,6 +26,8 @@ Class FormDesignerView from WindowsViewParent
 
 	oDesktop = new QDesktopWidget()
 
+	lUseWebAssemblyMEMFS = False 
+
 	func CreateMainWindow oModel
 
 		# Create the form
@@ -68,7 +70,7 @@ Class FormDesignerView from WindowsViewParent
 				setcentralWidget(this.oArea)
 				setLayoutDirection(T_LAYOUTDIRECTION)
 			}
-			setwinicon(win,$cCurrentDir + "/image/formdesigner.png")
+			setwinicon(win,"image/formdesigner.png")
 
 		# Create the ToolBox
 			CreateToolBox()
@@ -102,7 +104,11 @@ Class FormDesignerView from WindowsViewParent
 			}
 
 		# Show the Window
-			win.showmaximized()
+			if isWebAssembly() { 
+				win.show()
+			else 
+				win.showmaximized()
+			}
 
 	func WindowMoveResizeEvents
 		oFilter = new qAllEvents(oSub) {
@@ -130,7 +136,11 @@ Class FormDesignerView from WindowsViewParent
 					setShortcut(new QKeySequence("Ctrl+shift+o"))
 					setbtnimage(self,"image/open.png")
 					settext(T_FORMDESIGNER_OPEN) # "Open"
-					setclickevent(Method(:OpenAction))
+					if this.lUseWebAssemblyMEMFS {
+						setclickevent(Method(:OpenAction))
+					else 
+						setclickevent(Method(:UploadAction))
+					}
 				}
 				addaction(oAction)
 				addseparator()
@@ -138,7 +148,11 @@ Class FormDesignerView from WindowsViewParent
 					setShortcut(new QKeySequence("Ctrl+shift+s"))
 					setbtnimage(self,"image/save.png")
 					settext(T_FORMDESIGNER_SAVE) # "Save"
-					setclickevent(Method(:SaveAction))
+					if this.lUseWebAssemblyMEMFS {
+						setclickevent(Method(:SaveAction))
+					else 
+						setclickevent(Method(:DownloadAction))
+					}
 				}
 				addaction(oAction)
 				addseparator()
@@ -146,7 +160,11 @@ Class FormDesignerView from WindowsViewParent
 					setShortcut(new QKeySequence("Ctrl+shift+e"))
 					setbtnimage(self,"image/saveas.png")
 					settext(T_FORMDESIGNER_SAVEAS) # "Save As"
-					setclickevent(Method(:SaveAsAction))
+					if this.lUseWebAssemblyMEMFS {
+						setclickevent(Method(:SaveAsAction))
+					else 
+						setclickevent(Method(:DownloadAction))
+					}
 				}
 				addaction(oAction)
 				addseparator()
@@ -162,14 +180,14 @@ Class FormDesignerView from WindowsViewParent
 					settext(T_FORMDESIGNER_UPLOAD) # "Upload"
 					setstatustip("Upload File")
 					setclickevent(Method(:UploadAction))
-					setVisible(isWebAssembly())
+					setVisible(isWebAssembly() and this.lUseWebAssemblyMEMFS)
 				}
 				addaction(oAction)
 				oAction = new qaction(this.win) {
 					settext(T_FORMDESIGNER_Download) # "Download"
 					setstatustip("Download File")
 					setclickevent(Method(:DownloadAction))
-					setVisible(isWebAssembly())
+					setVisible(isWebAssembly() and this.lUseWebAssemblyMEMFS)
 				}
 				addaction(oAction)
 
@@ -291,17 +309,29 @@ Class FormDesignerView from WindowsViewParent
 				} ,
 				new qtoolbutton(win) {
 					setbtnimage(self,AppFile("image/open.png"))
-					setclickevent(Method(:OpenAction))
+					if this.lUseWebAssemblyMEMFS {
+						setclickevent(Method(:OpenAction))
+					else 
+						setclickevent(Method(:UploadAction))
+					}
 					settooltip(T_FORMDESIGNER_TOOLBAR_OPENFILE) # "Open File"
 				} ,
 				new qtoolbutton(win) {
 					setbtnimage(self,AppFile("image/save.png"))
-					setclickevent(Method(:SaveAction))
+					if this.lUseWebAssemblyMEMFS {
+						setclickevent(Method(:SaveAction))
+					else 
+						setclickevent(Method(:DownloadAction))
+					}
 					settooltip(T_FORMDESIGNER_TOOLBAR_SAVE) # "Save"
 				} ,
 				new qtoolbutton(win) {
 					setbtnimage(self,AppFile("image/saveas.png"))
-					setclickevent(Method(:SaveAsAction))
+					if this.lUseWebAssemblyMEMFS {
+						setclickevent(Method(:SaveAsAction))
+					else 
+						setclickevent(Method(:DownloadAsAction))
+					}
 					settooltip(T_FORMDESIGNER_TOOLBAR_SAVEAS) # "Save As"
 				} ,
 				new qtoolbutton(win) {
