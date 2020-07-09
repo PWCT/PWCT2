@@ -85,7 +85,11 @@ class FormDesigner_QImage from QLabel
 						cFile = substr(cFile,len(cFormPath)+1)
 					}
 				} 
-			setImageFile(cFile)
-			DisplayProperties(oDesigner)
+			if ! isWebAssembly() {
+				ApplyOpenImageFile(oDesigner,cFile)
+			}
 		}
 
+	func ApplyOpenImageFile oDesigner,cFile
+		setImageFile(cFile)
+		DisplayProperties(oDesigner)

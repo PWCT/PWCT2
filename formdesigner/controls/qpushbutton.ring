@@ -68,9 +68,14 @@ class FormDesigner_QPushButton from QPushButton
 		switch nRow {
 			case C_AFTERCOMMON+1	# Button Image
 				cFile = oDesigner.oGeneral.SelectFile(oDesigner)
-				setBtnImageValue(cFile)
-				DisplayProperties(oDesigner)
+				if ! isWebAssembly() {
+					ApplyOpenImageFile(oDesigner,cFile)
+				}
 		}
+
+	func ApplyOpenImageFile oDesigner,cFile
+		setBtnImageValue(cFile)
+		DisplayProperties(oDesigner)
 
 	func ObjectDataAsString oDesigner,nTabsCount
 		cOutput = ObjectDataAsString2(oDesigner,nTabsCount)

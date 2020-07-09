@@ -73,7 +73,11 @@ class FormDesigner_QVideoWidget from QLineEdit
 		CommonDialogButtonAction(oDesigner,nRow)
 		if nRow = C_AFTERCOMMON {	# Video File
 			cFile = oDesigner.oGeneral.SelectFile(oDesigner)
-			setVideoFile(cFile)
-			DisplayProperties(oDesigner)
+			if ! isWebAssembly() {
+				ApplyOpenImageFile(oDesigner,cFile)
+			}
 		}
 
+	func ApplyOpenImageFile oDesigner,cFile
+		setVideoFile(cFile)
+		DisplayProperties(oDesigner)
