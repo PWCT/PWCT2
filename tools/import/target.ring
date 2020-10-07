@@ -14,6 +14,7 @@ class Target
 					:Expression = Parameter(:Expression)
 				] )
 			clearTextBuffer()
+			clearInstructionParameters()
 		}
 
 	func GenerateQuestionMarkExpr oParser 
@@ -23,6 +24,7 @@ class Target
 					:Expression = Parameter(:Expression)
 				] )
 			clearTextBuffer()
+			clearInstructionParameters()
 		}
 
 	func GenerateBlockStart oParser 
@@ -46,6 +48,7 @@ class Target
 					:Expression = Parameter(:Condition)
 				] )
 			clearTextBuffer()
+			clearInstructionParameters()
 		}
 
 	func GenerateLoadLiteral oParser 
@@ -55,6 +58,7 @@ class Target
 					:Expression = Parameter(:FileName)
 				] )
 			clearTextBuffer()
+			clearInstructionParameters()
 		}
 
 	func GenerateFuncPara oParser 
@@ -65,6 +69,7 @@ class Target
 					:Parameters = Parameter(:FunctionParameters)
 				] )
 			clearTextBuffer()
+			clearInstructionParameters()
 		}
 
 	func GenerateReturn oParser 

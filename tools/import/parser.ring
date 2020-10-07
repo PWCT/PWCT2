@@ -7,30 +7,40 @@
 
 class Parser
 
-	aTokens 	= []
-	nActiveToken 	= 0
-	nTokensCount	= 0
+	# All Tokens Data
+		aTokens 	= []
+		nActiveToken 	= 0
+		nTokensCount	= 0
 
-	aActiveToken	= []	
-	nTokenType 	= 0
-	cTokenValue	= ""
-	nTokenIndex 	= 0
+	# The Current Token Data	
+		aActiveToken	= []	
+		nTokenType 	= 0
+		cTokenValue	= ""
+		nTokenIndex 	= 0
 
-	aParseTree	= []
-	cBuffer		= ""
-	lBufferFlag	= True
-	aBuffer		= []
+	# Parsing Output (List of Instructions) 	
+		aParseTree	= []
 
-	nLineNumber 	= 1 
-	nAssignmentFlag = 1 
-	nClassStart 	= 0 
-	nBraceFlag 	= 0 
-	nNewObject 	= 0 
-	nFuncCallOnly 	= 0 
-	nControlStructureExpr 	= 0 
-	nControlStructureBrace 	= 0 
+	# Buffer for Instruction Data (Merge data from many tokens)
+		cBuffer		= ""
+		# Flag (Add token value to the buffer)
+			# We disable this flag when we use IGNORENEWLINE
+			lBufferFlag	= True
+		# List of instructions parameters 
+			aInstructionParameters	= []
 
-	oTarget = new Target 
+	# More Data (Useful for Parsing State)
+		nLineNumber 	= 1 
+		nAssignmentFlag = 1 
+		nClassStart 	= 0 
+		nBraceFlag 	= 0 
+		nNewObject 	= 0 
+		nFuncCallOnly 	= 0 
+		nControlStructureExpr 	= 0 
+		nControlStructureBrace 	= 0 
+
+	# Object provide methods determines what to generate (Instructions)	
+		oTarget = new Target 
 
 	func setTokens aList
 		aTokens 	= aList 
@@ -50,10 +60,13 @@ class Parser
 		cBuffer = ""
 
 	func AddParameter cAttribute 
-		aBuffer[cAttribute] = cBuffer
+		aInstructionParameters[cAttribute] = cBuffer
 
 	func Parameter cAttribute
-		return aBuffer[cAttribute]
+		return aInstructionParameters[cAttribute]
+
+	func ClearInstructionParameters
+		aInstructionParameters = []
 
 	func ValueAsString cValue
 		if substr(cValue,'"') = 0 {
