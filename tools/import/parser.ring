@@ -165,8 +165,12 @@ class Parser
 		}
 		return 0 
 
-	func Generate aCommand 
+	func Generate aCommand, lClear 
 		aParseTree + aCommand 
+		if lClear {
+			clearTextBuffer()
+			clearInstructionParameters()
+		}
 
 	func GetParseTree 
 		return aParseTree

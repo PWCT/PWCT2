@@ -12,9 +12,7 @@ class Target
 			Generate( [
 					:Command = :See,
 					:Expression = Parameter(:Expression)
-				] )
-			clearTextBuffer()
-			clearInstructionParameters()
+				], True )
 		}
 
 	func GenerateQuestionMarkExpr oParser 
@@ -22,23 +20,21 @@ class Target
 			Generate( [
 					:Command = :QuestionMark,
 					:Expression = Parameter(:Expression)
-				] )
-			clearTextBuffer()
-			clearInstructionParameters()
+				], True )
 		}
 
 	func GenerateBlockStart oParser 
 		oParser {
 			Generate( [
 					:Command = :BlockStart
-				] )
+				], False )
 		}
 
 	func GenerateBlockEnd oParser 
 		oParser {
 			Generate( [
 					:Command = :BlockEnd
-				] )
+				], False )
 		}
 
 	func GenerateIfExpr oParser 
@@ -46,9 +42,7 @@ class Target
 			Generate( [
 					:Command = :If,
 					:Expression = Parameter(:Condition)
-				] )
-			clearTextBuffer()
-			clearInstructionParameters()
+				], True )
 		}
 
 	func GenerateLoadLiteral oParser 
@@ -56,9 +50,7 @@ class Target
 			Generate( [
 					:Command = :load,
 					:Expression = Parameter(:FileName)
-				] )
-			clearTextBuffer()
-			clearInstructionParameters()
+				], True )
 		}
 
 	func GenerateFuncPara oParser 
@@ -67,9 +59,7 @@ class Target
 				  	:Command = :Func,
 					:function = Parameter(:FunctionName),
 					:Parameters = Parameter(:FunctionParameters)
-				] )
-			clearTextBuffer()
-			clearInstructionParameters()
+				], True )
 		}
 
 	func GenerateReturn oParser 
@@ -77,9 +67,7 @@ class Target
 			Generate( [
 					:Command = :Return,
 					:Expression = Parameter(:Expression)
-				] )
-			clearTextBuffer()
-			clearInstructionParameters()
+				], True )
 		}
 
 	func GenerateGiveIdentifier oParser 
@@ -87,7 +75,5 @@ class Target
 			Generate( [
 					:Command = :Give,
 					:Identifier = Parameter(:Identifier)
-				] )
-			clearTextBuffer()
-			clearInstructionParameters()
+				], True )
 		}
