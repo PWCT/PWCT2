@@ -15,7 +15,7 @@ load "generator.ring"
 func main
 
 	oScanner = new Scanner {
-		setFileName("test.ring")
+		setFileName("input/test.ring")
 		Start()
 		PrintTokens()
 	}
@@ -27,6 +27,7 @@ func main
 	}
 
 	oGenerator = new Generator {
+		setFileName("output/test.pwct")
 		setParseTree(oParser.GetParseTree())
 		Start()
 	}
