@@ -136,3 +136,8 @@
 	ERROR_CLASSREDEFINE = "Error (C26) : Class redefinition, class is already defined!"
 	RING_PARSER_WARNING_EXITOUTSIDELOOP = "Warning (W6) : Using the EXIT command outside loop!"
 	RING_PARSER_WARNING_LOOPOUTSIDELOOP = "Warning (W7) : Using the LOOP command outside loop"
+
+# Instruction Parameters Buffer 
+
+	C_CLEARBUFFER = True 
+	C_KEEPBUFFER  = False
