@@ -14,7 +14,7 @@ load "generator.ring"
 
 func main
 
-	ImportFile("input/test.ring","output/test.pwct",True)
+	ImportFile("input/test.ring","output/test.pwct",C_PRINTOUTPUT)
 
 func ImportFile cInputFile,cOutputFile,lPrint
 

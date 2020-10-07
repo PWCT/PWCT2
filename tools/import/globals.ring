@@ -141,3 +141,8 @@
 
 	C_CLEARBUFFER = True 
 	C_KEEPBUFFER  = False
+
+# Print Output 
+	
+	C_PRINTOUTPUT  = True
+	C_IGNOREOUTPUT = False  
