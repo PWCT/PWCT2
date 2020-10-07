@@ -14,20 +14,28 @@ load "generator.ring"
 
 func main
 
+	ImportFile("input/test.ring","output/test.pwct",True)
+
+func ImportFile cInputFile,cOutputFile,lPrint
+
 	oScanner = new Scanner {
-		setFileName("input/test.ring")
+		setFileName(cInputFile)
 		Start()
-		PrintTokens()
+		if lPrint {
+			PrintTokens()
+		}
 	}
 
 	oParser = new Parser {
 		setTokens(oScanner.GetTokens())
 		Start()
-		PrintParseTree()
+		if lPrint {
+			PrintParseTree()
+		}
 	}
 
 	oGenerator = new Generator {
-		setFileName("output/test.pwct")
+		setFileName(cOutputFile)
 		setParseTree(oParser.GetParseTree())
 		Start()
 	}
