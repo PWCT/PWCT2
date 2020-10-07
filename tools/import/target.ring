@@ -78,6 +78,8 @@ class Target
 					:Command = :Return,
 					:Expression = Parameter(:Expression)
 				] )
+			clearTextBuffer()
+			clearInstructionParameters()
 		}
 
 	func GenerateGiveIdentifier oParser 
@@ -86,4 +88,6 @@ class Target
 					:Command = :Give,
 					:Identifier = Parameter(:Identifier)
 				] )
+			clearTextBuffer()
+			clearInstructionParameters()
 		}
