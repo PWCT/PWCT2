@@ -10,8 +10,10 @@ load "parsertokens.ring"
 load "parserexpr.ring"
 load "parserclass.ring"
 load "parserstmt.ring"
+load "parserextra.ring"
 
 mergemethods(:Parser,:ParserTokens)
 mergemethods(:Parser,:ParserExpr)
 mergemethods(:Parser,:ParserClass)
 mergemethods(:Parser,:ParserStmt)
+mergemethods(:Parser,:ParserExtra)
