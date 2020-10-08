@@ -5,6 +5,7 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
+load "stdlibcore.ring"
 load "globals.ring"
 load "uilib.ring"
 load "scanner.ring"
@@ -12,9 +13,9 @@ load "parser.ring"
 load "target.ring"
 load "generator.ring"
 
-func main
-
+if isMainSourceFile() {
 	ImportFile("input/test.ring","output/test.pwct",C_PRINTOUTPUT)
+}
 
 func ImportFile cInputFile,cOutputFile,lPrint
 
