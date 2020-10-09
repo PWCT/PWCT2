@@ -348,3 +348,12 @@ class VSFGenerator
 			oModel.SaveStepCode(nStepID, "give " +  cIdentifier)
 			return nStepID
 	
+	/*
+		Define Class component 
+	*/
+	func AddDefineClass cClassName,cParentClassName 
+		# Use the Interaction Page
+			nIID = UseComponent("class",[
+				:value 	= cClassName,
+				:value2 = cParentClassName
+			])

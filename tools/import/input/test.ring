@@ -53,3 +53,7 @@ end
 func testgive 
 	? "Enter Name: " give name 
 	? "Hello " + name 
+
+class myclass from myparent 
+class human
+class employee from human 
