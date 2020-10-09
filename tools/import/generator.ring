@@ -46,4 +46,6 @@ class Generator
 				oPWCT.AddReturnExpression(aCommand[:Expression])
 			case :give 
 				oPWCT.AddGiveIdentifier(aCommand[:Identifier])
+			case :class 
+				oPWCT.AddDefineClass(aCommand[:ClassName],aCommand[:ParentClassName])
 		}
