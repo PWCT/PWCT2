@@ -357,3 +357,38 @@ class VSFGenerator
 				:value 	= cClassName,
 				:value2 = cParentClassName
 			])
+
+		# Generate the Step and the Code
+		nStepNumber = 1
+		if cParentClassName = NULL {
+			nStepID = AddGeneratedStep(nParentID,
+				 T_CT_CLASS_ST_CLASS + StyleData(cClassName),
+				 nIID,nStepNumber,C_STEPTYPE_ROOT )
+			oModel.SaveStepCode(nStepID, "class " + cClassName )
+		else
+			nStepID = AddGeneratedStep(nParentID,
+				 T_CT_CLASS_ST_CLASS + StyleData(cClassName) + T_CT_CLASS_ST_FROM +
+				StyleData(cParentClassName) ,
+				nIID,nStepNumber,C_STEPTYPE_ROOT )
+			oModel.SaveStepCode(nStepID, "class " + cClassName + " from " + cParentClassName  )
+		
+		}
+		/*
+			oStepRoot = GetActiveStep()
+			AllowInteraction()
+			NewStep( T_CT_CLASS_ST_ATTRIBUTES )
+			oStep = GetActiveStep()
+			AllowInteraction()
+			NewStep( T_CT_CLASS_ST_METHODS )
+			NewParentStep( T_CT_CLASS_ST_PRIVATE )
+			SetStepCode("private")
+			AllowInteraction()
+			NewStep( T_CT_CLASS_ST_ATTRIBUTES )
+			AllowInteraction()
+			NewStep( T_CT_CLASS_ST_METHODS )
+			SetActiveStep(oStepRoot)
+			NewStep( T_CT_CLASS_ST_END )
+				SetStepCode( "" )
+			SetActiveStep(oStep)
+
+		*/
