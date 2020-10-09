@@ -373,6 +373,18 @@ class VSFGenerator
 			oModel.SaveStepCode(nStepID, "class " + cClassName + " from " + cParentClassName  )
 		
 		}
+		nStepNumber++
+		AddGeneratedStep(nStepID, T_CT_CLASS_ST_ATTRIBUTES,
+				nIID,nStepNumber,C_STEPTYPE_ALLOWINTERACTION )
+		nStepNumber++
+		AddGeneratedStep(nStepID, T_CT_CLASS_ST_METHODS,
+				nIID,nStepNumber,C_STEPTYPE_ALLOWINTERACTION )
+		nStepNumber++
+		nStepID_Private = AddGeneratedStep(nStepID, T_CT_CLASS_ST_PRIVATE,
+				nIID,nStepNumber,C_STEPTYPE_ALLOWINTERACTION )
+		oModel.SaveStepCode(nStepID_Private, "private")
+		nStepNumber++
+
 		/*
 			oStepRoot = GetActiveStep()
 			AllowInteraction()
