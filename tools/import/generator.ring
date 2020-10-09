@@ -29,23 +29,25 @@ class Generator
 		oPWCT.WriteVisualSourceFile()
 
 	func ProcessCommand aCommand
-		switch aCommand[:Command] {
-			case :See 
-				oPWCT.AddPrintExpression(aCommand[:Expression],False)
-			case :QuestionMark 
-				oPWCT.AddPrintExpression(aCommand[:Expression],True)
-			case :if
-				oPWCT.AddIfExpression(aCommand[:Expression])
-			case :BlockEnd
-				oPWCT.popParent()
-			case :load 
-				oPWCT.AddLoadLiteral(aCommand[:Expression])
-			case :Func 
-				oPWCT.AddFuncParameters(aCommand[:Function],aCommand[:Parameters])
-			case :return
-				oPWCT.AddReturnExpression(aCommand[:Expression])
-			case :give 
-				oPWCT.AddGiveIdentifier(aCommand[:Identifier])
-			case :class 
-				oPWCT.AddDefineClass(aCommand[:ClassName],aCommand[:ParentClassName])
+		oPWCT {
+			switch aCommand[:Command] {
+				case :See 
+					AddPrintExpression(aCommand[:Expression],False)
+				case :QuestionMark 
+					AddPrintExpression(aCommand[:Expression],True)
+				case :if
+					AddIfExpression(aCommand[:Expression])
+				case :BlockEnd
+					popParent()
+				case :load 
+					AddLoadLiteral(aCommand[:Expression])
+				case :Func 
+					AddFuncParameters(aCommand[:Function],aCommand[:Parameters])
+				case :return
+					AddReturnExpression(aCommand[:Expression])
+				case :give 
+					AddGiveIdentifier(aCommand[:Identifier])
+				case :class 
+					AddDefineClass(aCommand[:ClassName],aCommand[:ParentClassName])
+			}
 		}
