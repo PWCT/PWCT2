@@ -10,8 +10,11 @@ class ParserClass
 	func mainclass
 		/* Statement --> Class Identifier  [ From Identifier ] */
 		if iskeyword(K_CLASS) {
+			ClearTextBuffer()
 			nexttoken()
+			AddParameter(:ClassName)		
 			IGNORENEWLINE() 
+			ClearTextBuffer()
 			if isidentifier() {
 				nexttoken()
 				/* [From Identifer] */
@@ -23,10 +26,16 @@ class ParserClass
 						error(ERROR_PRENTCLASSNAME)
 						return 0 
 					}
+					AddParameter(:ParentClassName)		
+					ClearTextBuffer()
 				else
 					/* Set Parent Class Name In Classes Map */
 				}
 				nClassStart = 1 
+				oTarget.GenerateBlockEnd(self)
+				oTarget.GenerateDefineClass(self)
+				oTarget.GenerateBlockStart(self)
+
 				return bracesandend(1,K_ENDCLASS) 
 			else
 				error(ERROR_CLASSNAME)
