@@ -77,3 +77,13 @@ class Target
 					:Identifier = Parameter(:Identifier)
 				], C_CLEARBUFFER )
 		}
+
+	func GenerateDefineClass oParser 
+		oParser {
+			Generate( [
+				  	:Command = :Class,
+					:classname = Parameter(:ClassName),
+					:parentclassname = Parameter(:ParentClassName)
+				], C_CLEARBUFFER )
+		}
+
