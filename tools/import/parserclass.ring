@@ -33,6 +33,7 @@ class ParserClass
 				}
 				nClassStart = 1 
 				oTarget.GenerateBlockEnd(self)
+				oTarget.GenerateBlockEnd(self)
 				oTarget.GenerateDefineClass(self)
 				oTarget.GenerateBlockStart(self)
 

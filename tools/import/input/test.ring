@@ -55,5 +55,20 @@ func testgive
 	? "Hello " + name 
 
 class myclass from myparent 
+	? "hello from myclass"
+	func myclass_m1 
+		? "m1"
+	func myclass_m2
+		? "m2"
 class human
+	? "hello from human"
+	func humanname 
+		? "human name"
+	func humanage
+		? "human age"
 class employee from human 
+	? "hello from employee"
+	func employeejob
+		? "job"
+	func salary
+		? "salary"

@@ -20,6 +20,7 @@ class VSFGenerator
 		nParentID	= 1
 
 	# Setting the Parent Step when using the Class Component 
+		lClassComponent			= False
 		nStepID_Attributes 		= 0
 		nStepID_Methods	   		= 0
 		nStepID_PrivateAttributes	= 0
@@ -399,3 +400,9 @@ class VSFGenerator
 			AddGeneratedStep(nStepID_Private, T_CT_CLASS_ST_END,
 					nIID,nStepNumber,C_STEPTYPE_INFO )
 	
+			# We are inside a class component
+				lClassComponent = True
+			# Set the Parent 
+				aParents + nStepID_Methods
+				aParents + nStepID_Attributes
+				SetStepsParent()
