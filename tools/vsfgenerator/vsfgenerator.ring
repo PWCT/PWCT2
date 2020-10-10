@@ -5,6 +5,8 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
+C_CheckboxTrue = 2
+
 class VSFGenerator
 
 	cFileName = "test/test.pwct"
@@ -13,10 +15,15 @@ class VSFGenerator
 	oStyle 		= new HTMLStyles
 	oHTMLFunctions	= new HTMLFunctions
 
-	aParents 	= [1]
-	nParentID	= 1
+	# Setting the Parent Step
+		aParents 	= [1]
+		nParentID	= 1
 
-	lCheckboxTrue = 2
+	# Setting the Parent Step when using the Class Component 
+		nStepID_Attributes 		= 0
+		nStepID_Methods	   		= 0
+		nStepID_PrivateAttributes	= 0
+		nStepID_PrivateMethods		= 0
 
 	func startGenerator
 		TestGenerator()
@@ -280,7 +287,7 @@ class VSFGenerator
 		Define Function component
 	*/
 	func AddFuncParameters cFunction,cParameters 
-		lParameters = lCheckboxTrue
+		lParameters = C_CheckboxTrue
 		if trim(cParameters) = "" {
 			lParameters = False
 		}
@@ -373,20 +380,20 @@ class VSFGenerator
 			
 			}
 			nStepNumber++
-			AddGeneratedStep(nStepID, T_CT_CLASS_ST_ATTRIBUTES,
+			nStepID_Attributes = AddGeneratedStep(nStepID, T_CT_CLASS_ST_ATTRIBUTES,
 					nIID,nStepNumber,C_STEPTYPE_ALLOWINTERACTION )
 			nStepNumber++
-			AddGeneratedStep(nStepID, T_CT_CLASS_ST_METHODS,
+			nStepID_Methods = AddGeneratedStep(nStepID, T_CT_CLASS_ST_METHODS,
 					nIID,nStepNumber,C_STEPTYPE_ALLOWINTERACTION )
 			nStepNumber++
 			nStepID_Private = AddGeneratedStep(nStepID, T_CT_CLASS_ST_PRIVATE,
 					nIID,nStepNumber,C_STEPTYPE_INFO )
 			oModel.SaveStepCode(nStepID_Private, "private")
 			nStepNumber++
-			AddGeneratedStep(nStepID_Private, T_CT_CLASS_ST_ATTRIBUTES,
+			nStepID_PrivateAttributes = AddGeneratedStep(nStepID_Private, T_CT_CLASS_ST_ATTRIBUTES,
 					nIID,nStepNumber,C_STEPTYPE_ALLOWINTERACTION )
 			nStepNumber++
-			AddGeneratedStep(nStepID_Private, T_CT_CLASS_ST_METHODS,
+			nStepID_PrivateMethods = AddGeneratedStep(nStepID_Private, T_CT_CLASS_ST_METHODS,
 					nIID,nStepNumber,C_STEPTYPE_ALLOWINTERACTION )
 			nStepNumber++
 			AddGeneratedStep(nStepID_Private, T_CT_CLASS_ST_END,
