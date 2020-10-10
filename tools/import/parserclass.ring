@@ -79,10 +79,15 @@ class ParserClass
 		}
 		/* Statement --> Package Identifier { '.' Identifier } */
 		if iskeyword(K_PACKAGE) {
+			ClearTextBuffer()
 			nexttoken()
 			IGNORENEWLINE() 
 			/* Generate Code */
 			if namedotname() {
+				oTarget.GenerateBlockEnd(self)
+				oTarget.GenerateBlockEnd(self)
+				AddParameter(:PackageName)		
+				oTarget.GeneratePackage(self)
 				/* Support using { } around the package code and using 'end' after the content */
 				return bracesandend(1,K_ENDPACKAGE) 
 			else

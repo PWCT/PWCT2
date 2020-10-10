@@ -94,3 +94,11 @@ class Target
 				  	:Command = :Private
 				], C_CLEARBUFFER )
 		}
+
+	func GeneratePackage oParser 
+		oParser {
+			Generate( [
+					:Command = :Package,
+					:PackageName = Parameter(:PackageName)
+				], C_CLEARBUFFER )
+		}

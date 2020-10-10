@@ -54,6 +54,8 @@ func testgive
 	? "Enter Name: " give name 
 	? "Hello " + name 
 
+Package MyFirstPackage
+
 class myclass from myparent 
 	? "hello from myclass"
 	func myclass_m1 
@@ -66,6 +68,9 @@ class myclass from myparent
 			? "private method 1"
 		func private_method2
 			? "private method 2"
+
+Package Application.Sales.Database
+
 class human
 	? "hello from human"
 	func humanname 

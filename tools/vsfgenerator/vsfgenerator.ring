@@ -414,3 +414,19 @@ class VSFGenerator
 		aParents + nStepID_PrivateMethods
 		aParents + nStepID_PrivateAttributes
 		SetStepsParent()
+
+	/*
+		Package component 
+	*/
+	func AddPackage cPackageName
+		# Use the Interaction Page
+			nIID = UseComponent("package",[
+				:value 	= cPackageName
+			])
+		# Generate the Step and the Code
+			nStepNumber = 1
+			nStepID = AddGeneratedStep(nParentID,
+			T_CT_PACKAGE_ST_PACKAGE + StyleData(cPackageName),
+			nIID,nStepNumber,C_STEPTYPE_ROOT)
+			oModel.SaveStepCode(nStepID, "package " + cPackageName)
+			return nStepID

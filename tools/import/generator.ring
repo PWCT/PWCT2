@@ -51,5 +51,7 @@ class Generator
 					AddDefineClass(aCommand[:ClassName],aCommand[:ParentClassName])
 				case :Private 
 					AddPrivate()
+				case :Package 
+					AddPackage(aCommand[:PackageName])
 			}
 		}
