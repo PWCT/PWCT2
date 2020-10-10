@@ -21,8 +21,6 @@ class VSFGenerator
 
 	# Setting the Parent Step when using the Class Component 
 		lClassComponent			= False
-		nStepID_Attributes 		= 0
-		nStepID_Methods	   		= 0
 		nStepID_PrivateAttributes	= 0
 		nStepID_PrivateMethods		= 0
 

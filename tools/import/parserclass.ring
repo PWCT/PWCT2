@@ -32,8 +32,14 @@ class ParserClass
 					/* Set Parent Class Name In Classes Map */
 				}
 				nClassStart = 1 
+				# We generate BlockEnd Two Times 
+				# So if we are inside a class 
+				# We end (Class Attributes) - First Block End
+				# And (Class Methods) - Second Block End
 				oTarget.GenerateBlockEnd(self)
-				oTarget.GenerateBlockEnd(self)
+				if nClassStart {
+					oTarget.GenerateBlockEnd(self)
+				}
 				oTarget.GenerateDefineClass(self)
 				oTarget.GenerateBlockStart(self)
 
