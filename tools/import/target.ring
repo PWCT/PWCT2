@@ -87,3 +87,10 @@ class Target
 				], C_CLEARBUFFER )
 		}
 
+
+	func GeneratePrivate oParser 
+		oParser {
+			Generate( [
+				  	:Command = :Private
+				], C_CLEARBUFFER )
+		}

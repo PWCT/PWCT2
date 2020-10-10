@@ -60,15 +60,26 @@ class myclass from myparent
 		? "m1"
 	func myclass_m2
 		? "m2"
+	private 
+		? "myclass - private section"
+		func private_method1
+			? "private method 1"
+		func private_method2
+			? "private method 2"
 class human
 	? "hello from human"
 	func humanname 
 		? "human name"
 	func humanage
 		? "human age"
+	private 
+		? "human - private section"
 class employee from human 
 	? "hello from employee"
 	func employeejob
 		? "job"
 	func salary
 		? "salary"
+	private 
+		func oldsalary
+			? "old salary"

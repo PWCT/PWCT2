@@ -35,19 +35,21 @@ class Generator
 					AddPrintExpression(aCommand[:Expression],False)
 				case :QuestionMark 
 					AddPrintExpression(aCommand[:Expression],True)
-				case :if
+				case :If
 					AddIfExpression(aCommand[:Expression])
 				case :BlockEnd
 					popParent()
-				case :load 
+				case :Load 
 					AddLoadLiteral(aCommand[:Expression])
 				case :Func 
 					AddFuncParameters(aCommand[:Function],aCommand[:Parameters])
-				case :return
+				case :Return
 					AddReturnExpression(aCommand[:Expression])
-				case :give 
+				case :Give 
 					AddGiveIdentifier(aCommand[:Identifier])
-				case :class 
+				case :Class 
 					AddDefineClass(aCommand[:ClassName],aCommand[:ParentClassName])
+				case :Private 
+					AddPrivate()
 			}
 		}

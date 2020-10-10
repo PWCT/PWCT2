@@ -404,3 +404,13 @@ class VSFGenerator
 				aParents + nStepID_Methods
 				aParents + nStepID_Attributes
 				SetStepsParent()
+
+	/*
+		Class - Private Attributes/Methods 
+	*/
+	func AddPrivate 
+		PopParent()	# Attributes 
+		PopParent()	# Methods 
+		aParents + nStepID_PrivateMethods
+		aParents + nStepID_PrivateAttributes
+		SetStepsParent()

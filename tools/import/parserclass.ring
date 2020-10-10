@@ -93,6 +93,7 @@ class ParserClass
 		if iskeyword(K_PRIVATE) {
 			nexttoken()
 			if nClassStart = 1 {
+				oTarget.GeneratePrivate(self)
 				return 1 
 			else
 				error(ERROR_NOCLASSDEFINED)
