@@ -7,7 +7,7 @@
 
 load "stdlib.ring"
 
-cName = "ring"
+cName = :ring
 one() two() three()
 test(1,2)
 sum(1,2,3)

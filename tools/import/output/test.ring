@@ -1,4 +1,5 @@
 load "stdlib.ring"
+cname=:ring
 one()
 two()three()
 test(1,2)
