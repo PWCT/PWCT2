@@ -22,7 +22,25 @@ class Parser
 		aParseTree	= []
 
 	# Buffer for Instruction Data (Merge data from many tokens)
-		cBuffer		= ""
+		cBuffer		= ""	# Any token that we read using LoadToken
+		cBuffer2	= ""	# Tokens before using NextToken 
+		/*
+			To understand the different between cBuffer and cBuffer2 
+			cBuffer2 is used when we have 
+				statement --> Expression 
+			Where we use 
+				AddParameterFromSecondBuffer(:Expression)
+				oTarget.GenerateExpressionCommand(self)
+			To use cBuffer2 instead of cBuffer 
+			Because if we have source code like 
+				one() two() three()
+			That call three functions 
+			Using cBuffer will generate code like 
+				one() two 
+			But using cBuffer will generate step like 
+				one() 
+			Where we avoid the token (two) 
+		*/
 		# Flag (Add token value to the buffer)
 			# We disable this flag when we use IGNORENEWLINE
 			lBufferFlag	= True

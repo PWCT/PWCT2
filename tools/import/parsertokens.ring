@@ -23,9 +23,13 @@ class ParserTokens
 
 	func ClearTextBuffer
 		cBuffer = ""
+		cBuffer2 = ""
 
 	func AddParameter cAttribute 
 		aInstructionParameters[cAttribute] = cBuffer
+
+	func AddParameterFromSecondBuffer cAttribute 
+		aInstructionParameters[cAttribute] = cBuffer2
 
 	func Parameter cAttribute
 		return aInstructionParameters[cAttribute]
@@ -51,6 +55,15 @@ class ParserTokens
 	 		cBuffer += cTokenValue
 		}
 
+	func AddToSecondTextBuffer 
+		if Find([C_LITERAL,C_NUMBER,C_OPERATOR,C_IDENTIFIER],nTokenType) {
+			if nTokenType = C_LITERAL {
+				cTokenValue = ValueAsString(cTokenValue)
+			}
+	 		cBuffer2 += cTokenValue
+		}
+
+
 	func EnableBufferFlag
 		lBufferFlag = True
 
@@ -59,6 +72,9 @@ class ParserTokens
 
 	func NextToken
 		if nActiveToken < nTokensCount {
+			if lBufferFlag {
+				AddToSecondTextBuffer()
+			}
 			nActiveToken++
 			LoadToken()
 			return True
