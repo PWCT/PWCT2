@@ -430,3 +430,16 @@ class VSFGenerator
 			nIID,nStepNumber,C_STEPTYPE_ROOT)
 			oModel.SaveStepCode(nStepID, "package " + cPackageName)
 			return nStepID
+
+	func AddExpressionCommand cExpr
+		# Use the Interaction Page
+			nIID = UseComponent("freetyping",[
+				:value 		= cExpr
+			])
+		# Generate the Step and the Code
+			nStepNumber = 1
+			nStepID = AddGeneratedStep(nParentID,
+			StyleData(cExpr),
+			nIID,nStepNumber,C_STEPTYPE_ROOT)
+			oModel.SaveStepCode(nStepID, cExpr)
+			return nStepID

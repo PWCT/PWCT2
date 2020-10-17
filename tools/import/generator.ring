@@ -53,5 +53,7 @@ class Generator
 					AddPrivate()
 				case :Package 
 					AddPackage(aCommand[:PackageName])
+				case :Expression
+					AddExpressionCommand(aCommand[:Expression])
 			}
 		}

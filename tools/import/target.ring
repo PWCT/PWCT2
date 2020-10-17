@@ -102,3 +102,11 @@ class Target
 					:PackageName = Parameter(:PackageName)
 				], C_CLEARBUFFER )
 		}
+
+	func GenerateExpressionCommand oParser 
+		oParser {
+			Generate( [
+					:Command = :Expression,
+					:Expression = Parameter(:Expression)
+				], C_CLEARBUFFER )
+		}
