@@ -1,4 +1,8 @@
 load "stdlib.ring"
+one()
+two()three()
+test(1,2)
+sum(1,2,3)
 see "Hello, World!"+(3*2)+cname
 see "Welcome to the Ring programming language"
 see "Ring is a great language!"
@@ -45,3 +49,43 @@ func testgive  {
 	give name
 	? "Hello "+name
 } 
+package myfirstpackage
+class myclass from myparent
+	? "hello from myclass"
+	func myclass_m1  { 
+		? "m1"
+	} 
+	func myclass_m2  { 
+		? "m2"
+	} 
+private
+	? "myclass - private section"
+	func private_method1  { 
+		? "private method 1"
+	} 
+	func private_method2  { 
+		? "private method 2"
+	} 
+package application.sales.database
+class human
+	? "hello from human"
+	func humanname  { 
+		? "human name"
+	} 
+	func humanage  { 
+		? "human age"
+	} 
+private
+	? "human - private section"
+class employee from human
+	? "hello from employee"
+	func employeejob  { 
+		? "job"
+	} 
+	func salary  { 
+		? "salary"
+	} 
+private
+	func oldsalary  { 
+		? "old salary"
+	} 

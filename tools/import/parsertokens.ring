@@ -99,6 +99,8 @@ class ParserTokens
 
 	func isAnyKeyword return nTokenType = C_KEYWORD
 
+	func isAnyOperator return nTokenType = C_OPERATOR 
+
 	func isOperator2 nIndex
 		return nTokenType = C_OPERATOR and 
 		   nTokenIndex = nIndex 
@@ -120,7 +122,11 @@ class ParserTokens
 		while passepslion() {}
 
 	func Error cMsg 
-		raise(cMsg)
+		? "PWCT 2.0 - Import Tool"
+		? "Compiler Error!"
+		? "Token Number: " + nActiveToken
+		? cMsg
+		ShutDown()
 
 	func epslion
 		if isendline() {

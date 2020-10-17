@@ -9,6 +9,8 @@ load "stdlib.ring"
 
 cName = "ring"
 one() two() three()
+test(1,2)
+sum(1,2,3)
 see "Hello, World!"+(3*2)+cName
 see "Welcome to the Ring programming language"
 see "Ring is a great language!"

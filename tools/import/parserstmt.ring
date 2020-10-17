@@ -400,6 +400,9 @@ class ParserStmt
 			if nBraceFlag {
 				/* if ismethod(self,"braceexpreval") braceexpreval() ok */
 			}
+			if isAnyOperator() {
+				NextToken()
+			}
 			AddParameterFromSecondBuffer(:Expression)
 			oTarget.GenerateExpressionCommand(self)
 			return 1 

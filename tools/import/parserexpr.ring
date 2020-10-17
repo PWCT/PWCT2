@@ -427,7 +427,7 @@ class ParserExpr
 					nexttoken()
 					return 1 
 				else
-					error(ERROR_MISSPARENTHESES)
+					//error(ERROR_MISSPARENTHESES)
 					return 0 
 				}
 			}
