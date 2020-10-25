@@ -37,6 +37,10 @@ class Generator
 					AddPrintExpression(aCommand[:Expression],True)
 				case :If
 					AddIfExpression(aCommand[:Expression])
+				case :But
+					AddButExpression(aCommand[:Expression])
+				case :But
+					AddElse()
 				case :BlockEnd
 					popParent()
 				case :Load 

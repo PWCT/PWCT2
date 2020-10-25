@@ -118,3 +118,18 @@ class Target
 					:Expression = Parameter(:Condition)
 				], C_CLEARBUFFER )
 		}
+
+	func GenerateButExpr oParser 
+		oParser {
+			Generate( [
+					:Command = :But,
+					:Expression = Parameter(:Condition)
+				], C_CLEARBUFFER )
+		}
+
+	func GenerateElse oParser 
+		oParser {
+			Generate( [
+				  	:Command = :Else
+				], C_CLEARBUFFER )
+		}
