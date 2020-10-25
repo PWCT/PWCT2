@@ -55,5 +55,7 @@ class Generator
 					AddPackage(aCommand[:PackageName])
 				case :Expression
 					AddExpressionCommand(aCommand[:Expression])
+				case :While
+					AddWhileExpression(aCommand[:Expression])
 			}
 		}

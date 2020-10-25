@@ -28,6 +28,7 @@ class ParserStmt
 		}
 		/* Statement --> See|Put Expr */
 		if iskeyword(K_SEE) or iskeyword(K_PUT) {
+			clearTextBuffer()
 			nexttoken()
 			IGNORENEWLINE() 
 			nAssignmentFlag = 0 				
@@ -202,18 +203,23 @@ class ParserStmt
 			**  Generate Code 
 			**  Mark for Exit command to go to outsize the loop 
 			*/
+			clearTextBuffer()
 			nexttoken()
 			IGNORENEWLINE() 
 			nAssignmentFlag = 0 
 			if csexpr() {
+				AddParameter(:Condition)
+				oTarget.GenerateWhileExpr(self)
+				oTarget.GenerateBlockStart(self)
 				nAssignmentFlag = 1 
 				/* Generate Code */
 				/* Save Loop|Exit commands status */
 				while stmt() {
-					if nActiveToken = TokensCount {
+					if nActiveToken = nTokensCount {
 						exit
 					}
 				}
+				oTarget.GenerateBlockEnd(self)
 				if iskeyword(K_END) or csbraceend() {
 					/* Generate Code */
 					nexttoken()

@@ -21,6 +21,12 @@ if 3=1+2
 	? "Nice work!"
 	? "Now the import feature works fine"
 ok
+x = 10
+while x > 0
+	? "x = " + x 
+	x--
+end
+
 ? "Thanks"
 ? "End of program!"
 

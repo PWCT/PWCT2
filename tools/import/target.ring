@@ -110,3 +110,11 @@ class Target
 					:Expression = Parameter(:Expression)
 				], C_CLEARBUFFER )
 		}
+
+	func GenerateWhileExpr oParser 
+		oParser {
+			Generate( [
+					:Command = :While,
+					:Expression = Parameter(:Condition)
+				], C_CLEARBUFFER )
+		}

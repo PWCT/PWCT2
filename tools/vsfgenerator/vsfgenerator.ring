@@ -443,3 +443,32 @@ class VSFGenerator
 			nIID,nStepNumber,C_STEPTYPE_ROOT)
 			oModel.SaveStepCode(nStepID, cExpr)
 			return nStepID
+
+	/*
+		WhileLoop component 
+	*/
+	func AddWhileExpression cExpr
+		# Use the Interaction Page
+			nIID = UseComponent("whileloop",[
+				:condition 	= cExpr
+			])
+		# Generate the Step and the Code
+			nStepNumber = 1
+			nStepID = AddGeneratedStep(nParentID,
+				T_CT_WHILELOOP_ST_WHILE + StyleData(cExpr ) ,
+			nIID,nStepNumber,C_STEPTYPE_ROOT)
+			oModel.SaveStepCode(nStepID, "while " +  cExpr + " { " )
+			nStepNumber++
+			nStepID2 = AddGeneratedStep(nStepID,
+				T_CT_WHILELOOP_ST_STARTHERE ,
+			nIID,nStepNumber,C_STEPTYPE_ALLOWINTERACTION)
+			nStepNumber++
+			nStepID3 = AddGeneratedStep(nStepID,
+				T_CT_WHILELOOP_ST_ENDOFWHILELOOP ,
+			nIID,nStepNumber,C_STEPTYPE_INFO)
+			oModel.SaveStepCode(nStepID3, "} " )
+		# Set the Parent 
+			aParents + nStepID2
+			SetStepsParent()
+			return nStepID
+
