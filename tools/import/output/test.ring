@@ -19,6 +19,17 @@ while x>0 {
 	? "x = "+x
 	x--
 } 
+if x=1 { 
+	? "one"
+	elseif x=2
+		? "two"
+	elseif x=3
+		? "three"
+	elseif x=4
+		? "four"
+	else
+		? "other number"
+} 
 ? "Thanks"
 ? "End of program!"
 func one  { 

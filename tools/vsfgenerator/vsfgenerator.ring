@@ -299,9 +299,9 @@ class VSFGenerator
 		# Generate the Step and the Code
 			nStepNumber = 1
 			nStepID = AddGeneratedStep(nParentID,
-				T_CT_ELSE_ST_ELSE + StyleData(cExpr ) ,
+				T_CT_ELSE_ST_ELSE,
 			nIID,nStepNumber,C_STEPTYPE_ROOT)
-			oModel.SaveStepCode(nStepID, "else " +  cExpr )
+			oModel.SaveStepCode(nStepID, "else")
 			nStepNumber++
 			nStepID2 = AddGeneratedStep(nStepID,
 				T_CT_ELSE_ST_STARTHERE ,

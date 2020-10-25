@@ -39,7 +39,7 @@ class Generator
 					AddIfExpression(aCommand[:Expression])
 				case :But
 					AddButExpression(aCommand[:Expression])
-				case :But
+				case :Else
 					AddElse()
 				case :BlockEnd
 					popParent()
