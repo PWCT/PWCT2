@@ -266,6 +266,56 @@ class VSFGenerator
 			return nStepID
 
 	/*
+		Else If component 
+	*/
+	func AddButExpression cExpr
+		# Use the Interaction Page
+			nIID = UseComponent("elseif",[
+				:condition 	= cExpr
+			])
+		# Generate the Step and the Code
+			nStepNumber = 1
+			nStepID = AddGeneratedStep(nParentID,
+				T_CT_ELSEIFSTATEMENT_ST_ELSEIF + StyleData(cExpr ) ,
+			nIID,nStepNumber,C_STEPTYPE_ROOT)
+			oModel.SaveStepCode(nStepID, "elseif " +  cExpr )
+			nStepNumber++
+			nStepID2 = AddGeneratedStep(nStepID,
+				T_CT_ELSEIFSTATEMENT_ST_STARTHERE ,
+			nIID,nStepNumber,C_STEPTYPE_ALLOWINTERACTION)
+			nStepNumber++
+		# Set the Parent 
+			aParents + nStepID2
+			SetStepsParent()
+			return nStepID
+
+	/*
+		Else component 
+	*/
+	func AddElse 
+		# Use the Interaction Page
+			nIID = UseComponent("else",[
+			])
+		# Generate the Step and the Code
+			nStepNumber = 1
+			nStepID = AddGeneratedStep(nParentID,
+				T_CT_ELSE_ST_ELSE + StyleData(cExpr ) ,
+			nIID,nStepNumber,C_STEPTYPE_ROOT)
+			oModel.SaveStepCode(nStepID, "else " +  cExpr )
+			nStepNumber++
+			nStepID2 = AddGeneratedStep(nStepID,
+				T_CT_ELSE_ST_STARTHERE ,
+			nIID,nStepNumber,C_STEPTYPE_ALLOWINTERACTION)
+			nStepNumber++
+		# Set the Parent 
+			aParents + nStepID2
+			SetStepsParent()
+			return nStepID
+
+
+
+
+	/*
 		Load Component 
 	*/
 	func AddLoadLiteral cLiteral 
