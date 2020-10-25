@@ -164,10 +164,14 @@ class ParserStmt
 				/* Generate Code */
 				/* { 'But' Statements } 'Else' Statements */
 				while iskeyword(K_BUT) or iskeyword(K_ELSEIF) {
+					ClearTextBuffer()
 					/* Generate Code */
 					nexttoken()
 					nAssignmentFlag = 0 
 					if expr() {
+						AddParameter(:Condition)
+						oTarget.GenerateButExpr(self)
+						oTarget.GenerateBlockStart(self)
 						nAssignmentFlag = 1 
 						/* Generate Code */
 						while stmt() {
@@ -175,17 +179,22 @@ class ParserStmt
 								exit
 							}
 						}
+						oTarget.GenerateBlockEnd(self)
 						/* Generate Code */
 					}
 				}
 				if iskeyword(K_ELSE) or iskeyword(K_OTHER) {
+					ClearTextBuffer()
 					/* Generate Code */
 					nexttoken()
+					oTarget.GenerateElse(self)
+					oTarget.GenerateBlockStart(self)
 					while stmt() {
 						if nActiveToken = nTokensCount {
 							exit 
 						}
 					}
+					oTarget.GenerateBlockEnd(self)
 				}
 				if iskeyword(K_OK) or iskeyword(K_END) or csbraceend() {
 					/* Generate Code */
