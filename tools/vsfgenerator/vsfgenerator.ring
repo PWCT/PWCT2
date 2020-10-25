@@ -276,12 +276,12 @@ class VSFGenerator
 		# Generate the Step and the Code
 			nStepNumber = 1
 			nStepID = AddGeneratedStep(nParentID,
-				T_CT_ELSEIFSTATEMENT_ST_ELSEIF + StyleData(cExpr ) ,
+				T_CT_ELSEIF_ST_ELSEIF + StyleData(cExpr ) ,
 			nIID,nStepNumber,C_STEPTYPE_ROOT)
 			oModel.SaveStepCode(nStepID, "elseif " +  cExpr )
 			nStepNumber++
 			nStepID2 = AddGeneratedStep(nStepID,
-				T_CT_ELSEIFSTATEMENT_ST_STARTHERE ,
+				T_CT_ELSEIF_ST_STARTHERE ,
 			nIID,nStepNumber,C_STEPTYPE_ALLOWINTERACTION)
 			nStepNumber++
 		# Set the Parent 

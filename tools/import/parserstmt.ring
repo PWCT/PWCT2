@@ -160,7 +160,6 @@ class ParserStmt
 						exit
 					}
 				}
-				oTarget.GenerateBlockEnd(self)
 				/* Generate Code */
 				/* { 'But' Statements } 'Else' Statements */
 				while iskeyword(K_BUT) or iskeyword(K_ELSEIF) {
@@ -198,6 +197,7 @@ class ParserStmt
 				}
 				if iskeyword(K_OK) or iskeyword(K_END) or csbraceend() {
 					/* Generate Code */
+					oTarget.GenerateBlockEnd(self)
 					nexttoken()
 					return 1 
 				else

@@ -26,6 +26,18 @@ while x > 0
 	? "x = " + x 
 	x--
 end
+if x = 1 
+	? "one"
+but x = 2
+	? "two"
+but x = 3
+	? "three"
+but x = 4
+	? "four"
+else 
+	? "other number" 
+ok
+
 
 ? "Thanks"
 ? "End of program!"
