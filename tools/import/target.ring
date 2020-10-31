@@ -133,3 +133,23 @@ class Target
 				  	:Command = :Else
 				], C_CLEARBUFFER )
 		}
+
+	func GenerateForLoop oParser 
+		oParser {
+			Generate( [
+					:Command = :For,
+					:Start = Parameter(:Start),
+					:To = Parameter(:To),
+					:Step = Parameter(:Step)
+				], C_CLEARBUFFER )
+		}
+
+	func GenerateForInLoop oParser 
+		oParser {
+			Generate( [
+					:Command = :ForIn,
+					:Variable = Parameter(:Variable),
+					:List = Parameter(:List),
+					:Step = Parameter(:Step)
+				], C_CLEARBUFFER )
+		}

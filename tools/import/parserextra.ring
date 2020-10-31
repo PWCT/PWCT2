@@ -125,6 +125,7 @@ class ParserExtra
 		else
 			/* Generate Code */
 		}
+		addParameter(:Step)
 		return 1 
 		
 	func csexpr

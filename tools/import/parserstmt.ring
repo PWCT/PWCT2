@@ -72,9 +72,11 @@ class ParserStmt
 		}
 		/* Statement --> For Identifier = Expr to Expr {Statement} Next  |  For Identifier in Expr {Statemen */
 		if iskeyword(K_FOR) {
+			clearTextBuffer()
 			nexttoken()
 			IGNORENEWLINE() 
 			if isidentifier() {
+				addParameter(:Variable)		# Used by For-In
 				nexttoken()
 				if isoperator2(OP_EQUAL) {
 					/*
@@ -83,12 +85,14 @@ class ParserStmt
 					*/
 					nAssignmentFlag = 0 
 					if expr() {
+						addParameter(:Start)
 						/*
 						**  Generate Code 
 						**  Before Equal ( = ) not += , -= ,... etc 
 						*/
 						if iskeyword(K_TO) {
 							nexttoken()
+							addParameter(:To)
 							IGNORENEWLINE() 
 							nAssignmentFlag = 0 
 							if csexpr() {
@@ -99,6 +103,7 @@ class ParserStmt
 								if x = 0 {
 									return 0 
 								}
+								oTarget.GenerateForLoop(self)
 								while stmt() {
 									if nActiveToken = nTokensCount {
 										exit
@@ -115,8 +120,10 @@ class ParserStmt
 						}
 					}
 				elseif iskeyword(K_IN)
+					clearTextBuffer()
 					/* Generate Code */
 					nexttoken()
+					addParameter(:List)
 					IGNORENEWLINE() 
 					nAssignmentFlag = 0 
 					if csexpr() {
@@ -127,6 +134,7 @@ class ParserStmt
 						if x = 0 {
 							return 0 
 						}
+						oTarget.GenerateForInLoop(self)
 						while stmt() {
 							if nActiveToken = nTokensCount {
 								exit

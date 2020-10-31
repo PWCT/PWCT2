@@ -61,5 +61,9 @@ class Generator
 					AddExpressionCommand(aCommand[:Expression])
 				case :While
 					AddWhileExpression(aCommand[:Expression])
+				case :For
+					AddWhileExpression(aCommand[:Start],aCommand[:To],aCommand[:Step])
+				case :ForIn
+					AddWhileExpression(aCommand[:Variable],aCommand[:List],aCommand[:Step])				
 			}
 		}
