@@ -79,13 +79,15 @@ class ParserStmt
 				addParameter(:Variable)		# Used by For-In
 				nexttoken()
 				if isoperator2(OP_EQUAL) {
+					nexttoken()
 					/*
 					**  Generate Code 
 					**  Mark for Exit command to go to outside the loop 
 					*/
 					nAssignmentFlag = 0 
-					if expr() {
+					if expr() {  
 						addParameter(:Start)
+					  clearTextBuffer()
 						/*
 						**  Generate Code 
 						**  Before Equal ( = ) not += , -= ,... etc 

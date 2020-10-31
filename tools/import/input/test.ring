@@ -37,7 +37,7 @@ but x = 4
 else 
 	? "other number" 
 ok
-for x = 1 to 10
+for x=1 to 10
 	? x
 next 
 aList = [1,2,3]
