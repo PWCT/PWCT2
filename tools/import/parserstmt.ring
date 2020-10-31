@@ -96,6 +96,7 @@ class ParserStmt
 							IGNORENEWLINE() 
 							nAssignmentFlag = 0 
 							if csexpr() {
+								clearTextBuffer()
 								nAssignmentFlag = 1 
 								/* Generate Code */
 								/* Step <expr> */
@@ -127,6 +128,7 @@ class ParserStmt
 					IGNORENEWLINE() 
 					nAssignmentFlag = 0 
 					if csexpr() {
+						clearTextBuffer()
 						nAssignmentFlag = 1 
 						/* Generate Code */
 						/* Step <expr> */
