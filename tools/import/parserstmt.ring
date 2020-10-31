@@ -128,7 +128,7 @@ class ParserStmt
 					clearTextBuffer()
 					/* Generate Code */
 					nexttoken()
-					addParameter(:List)
+					addParameter(:In)
 					IGNORENEWLINE() 
 					nAssignmentFlag = 0 
 					if csexpr() {
@@ -141,11 +141,13 @@ class ParserStmt
 							return 0 
 						}
 						oTarget.GenerateForInLoop(self)
+						oTarget.GenerateBlockStart(self)
 						while stmt() {
 							if nActiveToken = nTokensCount {
 								exit
 							}
 						}
+						oTarget.GenerateBlockEnd(self)
 						if iskeyword(K_NEXT) or iskeyword(K_END) or csbraceend() {
 							nexttoken()
 							/* Generate Code */

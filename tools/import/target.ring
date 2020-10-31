@@ -149,7 +149,7 @@ class Target
 			Generate( [
 					:Command = :ForIn,
 					:Variable = Parameter(:Variable),
-					:List = Parameter(:List),
+					:In = Parameter(:In),
 					:Step = Parameter(:Step)
 				], C_CLEARBUFFER )
 		}

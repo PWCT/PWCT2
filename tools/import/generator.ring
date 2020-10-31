@@ -64,6 +64,6 @@ class Generator
 				case :For
 					AddForLoop(aCommand[:Start],aCommand[:To],aCommand[:Step])
 				case :ForIn
-					AddForInLoop(aCommand[:Variable],aCommand[:List],aCommand[:Step])				
+					AddForInLoop(aCommand[:Variable],aCommand[:In],aCommand[:Step])				
 			}
 		}

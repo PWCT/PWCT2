@@ -530,7 +530,7 @@ class VSFGenerator
 		# Use the Interaction Page
 			nIID = UseComponent("forloop",[
 				:start 	= cStart,
-				:to 	= cTo,
+				:to 		= cTo,
 				:step 	= cStep
 			])
 		# Generate the Step and the Code
@@ -560,5 +560,35 @@ class VSFGenerator
 	/*
 		ForInLoop component 
 	*/
-	func AddForInLoop cVariable,cList,cStep
+	func AddForInLoop cVariable,cIn,cStep
+		if trim(cStep) = "" { cStep = "1" }
+		# Use the Interaction Page
+			nIID = UseComponent("forinloop",[
+				:variable 	= cVariable,
+				:in 				= cIn,
+				:step 			= cStep
+			])
+		# Generate the Step and the Code
+			nStepNumber = 1
+			nStepID = AddGeneratedStep(nParentID,
+			T_CT_FORINLOOP_ST_FOR + StyleData(cVariable)  + " " +
+			T_CT_FORINLOOP_ST_IN + StyleData(cIn) +  " " + 
+			T_CT_FORINLOOP_ST_STEP + StyleData(cStep),
+			nIID,nStepNumber,C_STEPTYPE_ROOT)
+			oModel.SaveStepCode(nStepID, "for " +  cVariable +
+				 " in " + cIn +
+				 " step " + cStep + " { "  )
+			nStepNumber++
+			nStepID2 = AddGeneratedStep(nStepID,
+				T_CT_FORINLOOP_ST_STARTHERE ,
+			nIID,nStepNumber,C_STEPTYPE_ALLOWINTERACTION)
+			nStepNumber++
+			nStepID3 = AddGeneratedStep(nStepID,
+				T_CT_FORINLOOP_ST_ENDOFFORLOOP ,
+			nIID,nStepNumber,C_STEPTYPE_INFO)
+			oModel.SaveStepCode(nStepID3, "} " )
+		# Set the Parent 
+			aParents + nStepID2
+			SetStepsParent()
+			return nStepID
 
