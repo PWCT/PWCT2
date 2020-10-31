@@ -107,11 +107,13 @@ class ParserStmt
 									return 0 
 								}
 								oTarget.GenerateForLoop(self)
+								oTarget.GenerateBlockStart(self)
 								while stmt() {
 									if nActiveToken = nTokensCount {
 										exit
 									}
 								}
+								oTarget.GenerateBlockEnd(self)
 								if iskeyword(K_NEXT) or iskeyword(K_END) or csbraceend() {
 									/* Generate Code */
 									nexttoken()

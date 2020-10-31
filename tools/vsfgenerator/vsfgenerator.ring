@@ -526,6 +526,7 @@ class VSFGenerator
 		ForLoop component 
 	*/
 	func AddForLoop cStart,cTo,cStep
+		if trim(cStep) = "" { cStep = "1" }
 		# Use the Interaction Page
 			nIID = UseComponent("forloop",[
 				:start 	= cStart,
