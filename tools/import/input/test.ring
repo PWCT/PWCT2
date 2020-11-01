@@ -45,6 +45,13 @@ for x in aList
 	? x
 next
 
+x = 10
+do 
+	? "x = " + x 
+	x--
+again x > 0
+
+
 ? "Thanks"
 ? "End of program!"
 

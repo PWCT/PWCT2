@@ -37,6 +37,9 @@ class ParserTokens
 	func ClearInstructionParameters
 		aInstructionParameters = []
 
+	func AddParameterToInstruction nIns,cAttribute
+		aParseTree[nIns][cAttribute] = cBuffer
+
 	func ValueAsString cValue
 		if substr(cValue,'"') = 0 {
 			cChar = '"'
@@ -161,6 +164,9 @@ class ParserTokens
 
 	func GetParseTree 
 		return aParseTree
+
+	func CurrentInstruction
+		return len(aParseTree)
 
 	func Start 
 		do

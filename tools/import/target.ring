@@ -153,3 +153,10 @@ class Target
 					:Step = Parameter(:Step)
 				], C_CLEARBUFFER )
 		}
+
+	func GenerateDoAgainExpr oParser 
+		oParser {
+			Generate( [
+					:Command = :DoAgain
+				], C_CLEARBUFFER )
+		}

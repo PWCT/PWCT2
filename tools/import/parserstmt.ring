@@ -257,23 +257,30 @@ class ParserStmt
 		}
 		/* Statement --> DO Statements AGAIN Expr */
 		if iskeyword(K_DO) {
+			clearTextBuffer()
 			/*
 			**  Generate Code 
 			**  Mark for Exit command to go to outsize the loop 
 			*/
 			nexttoken()
+			oTarget.GenerateDoAgainExpr(self)
+			nDoAgainInstruction = CurrentInstruction()
+			oTarget.GenerateBlockStart(self)
 			/* Save Loop|Exit commands status */
 			while stmt() {
 				if nActiveToken = nTokensCount {
 					exit
 				}
 			}
+			oTarget.GenerateBlockEnd(self)
 			if iskeyword(K_AGAIN) {
+				clearTextBuffer()
 				/* Generate Code */
 				nexttoken()
 				IGNORENEWLINE() 
 				nAssignmentFlag = 0 
 				if expr() {
+					AddParameterToInstruction(nDoAgainInstruction,:Condition)
 					/* Generate Code (Test Condition) */
 					nAssignmentFlag = 1 
 					return 1 
