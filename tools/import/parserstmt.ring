@@ -280,7 +280,7 @@ class ParserStmt
 				IGNORENEWLINE() 
 				nAssignmentFlag = 0 
 				if expr() {
-					AddParameterToInstruction(nDoAgainInstruction,:Condition)
+					AddParameterToInstruction(nDoAgainInstruction,:Expression)
 					/* Generate Code (Test Condition) */
 					nAssignmentFlag = 1 
 					return 1 

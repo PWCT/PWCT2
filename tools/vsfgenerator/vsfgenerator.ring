@@ -592,3 +592,31 @@ class VSFGenerator
 			SetStepsParent()
 			return nStepID
 
+	/*
+		DoAgain component 
+	*/
+	func AddDoAgainExpression cExpr
+		# Use the Interaction Page
+			nIID = UseComponent("doagain",[
+				:condition 	= cExpr
+			])
+		# Generate the Step and the Code
+			nStepNumber = 1
+			nStepID = AddGeneratedStep(nParentID,
+				T_CT_DOAGAIN_ST_DO ,
+			nIID,nStepNumber,C_STEPTYPE_ROOT)
+			oModel.SaveStepCode(nStepID, "do " +  cExpr + " { " )
+			nStepNumber++
+			nStepID2 = AddGeneratedStep(nStepID,
+				T_CT_DOAGAIN_ST_STARTHERE ,
+			nIID,nStepNumber,C_STEPTYPE_ALLOWINTERACTION)
+			nStepNumber++
+			nStepID3 = AddGeneratedStep(nStepID,
+				T_CT_DOAGAIN_ST_AGAIN + StyleData(cExpr) ,
+			nIID,nStepNumber,C_STEPTYPE_INFO)
+			oModel.SaveStepCode(nStepID3, "again " + cExpr )
+		# Set the Parent 
+			aParents + nStepID2
+			SetStepsParent()
+			return nStepID
+
