@@ -383,37 +383,51 @@ class ParserStmt
 		}
 		/* Statement --> Switch  Expr { ON|CASE Expr {Statement} } OFF */
 		if iskeyword(K_SWITCH) {
+			clearTextBuffer()
 			nexttoken()
 			IGNORENEWLINE() 
 			nAssignmentFlag = 0 
 			if csexpr() {
+				addParameter(:Variable)
 				nAssignmentFlag = 1 
 				IGNORENEWLINE() 
 				/* ON|CASE Statements */
+				oTarget.GenerateSwitch(self)
+				oTarget.GenerateBlockStart(self)
 				while iskeyword(K_ON) or iskeyword(K_CASE) {
+					clearTextBuffer()
 					nexttoken()
 					nAssignmentFlag = 0 
 					if expr() {
 						nAssignmentFlag = 1 
 						/* Generate Code */
+						addParameter(:Value)
+						oTarget.GenerateSwitchCase(self)
+						oTarget.GenerateBlockStart(self)
 						while stmt() {
 							if nActiveToken = nTokensCount {
 								exit
 							}
 						}
+						oTarget.GenerateBlockEnd(self)
 						/* Generate Code */
 					}
 				}
 				/* Other */
 				if iskeyword(K_OTHER) or iskeyword(K_ELSE) {
+					clearTextBuffer()
 					nexttoken()
+					oTarget.GenerateSwitchOther(self)
+					oTarget.GenerateBlockStart(self)
 					/* Generate Code */
 					while stmt() {
 						if nActiveToken = nTokensCount {
 							exit
 						}
 					}
+					oTarget.GenerateBlockEnd(self)
 				}
+				oTarget.GenerateBlockEnd(self)
 				/* OFF */
 				if iskeyword(K_OFF) or iskeyword(K_END) or csbraceend() {
 					nexttoken()

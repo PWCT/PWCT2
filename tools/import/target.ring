@@ -183,3 +183,26 @@ class Target
 					:Command = :Bye
 				], C_CLEARBUFFER )
 		}
+
+	 func GenerateSwitch oParser 
+		oParser {
+			Generate( [
+					:Command = :Switch,
+					:Variable = Parameter(:Variable)
+				], C_CLEARBUFFER )
+		}
+
+	 func GenerateSwitchCase oParser 
+		oParser {
+			Generate( [
+					:Command = :SwitchCase,
+					:Value = Parameter(:Value)
+				], C_CLEARBUFFER )
+		}
+
+	 func GenerateSwitchOther oParser 
+		oParser {
+			Generate( [
+					:Command = :SwitchOther
+				], C_CLEARBUFFER )
+		}

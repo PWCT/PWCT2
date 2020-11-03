@@ -57,6 +57,17 @@ do
 	x--
 again x > 0
 
+x = 3
+switch x
+	on 1
+		? "One"
+	on 2
+		? "Two"
+	on 3 
+		? "Three"
+	other 
+		? "Other number"
+off
 
 ? "Thanks"
 ? "End of program!"

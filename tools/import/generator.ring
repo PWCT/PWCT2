@@ -73,5 +73,11 @@ class Generator
 					AddLoopValue(aCommand[:Value])
 				case :Bye
 					AddBye(aCommand[:Value])
+				case :Switch
+					AddSwitchVariable(aCommand[:Variable])
+				case :SwitchCase
+					AddSwitchCaseValue(aCommand[:Value])
+				case :SwitchOther
+					AddSwitchOther()
 			}
 		}

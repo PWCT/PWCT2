@@ -671,3 +671,60 @@ class VSFGenerator
 			oModel.SaveStepCode(nStepID,  "shutdown("  + cValue + ")"  )
 			return nStepID
 	
+	/*
+		Switch Component 
+	*/
+	func AddSwitchVariable cVariable
+		# Use the Interaction Page
+			nIID = UseComponent("switch",[
+				:variable 		= cVariable
+			])
+		# Generate the Step and the Code
+			nStepNumber = 1
+			nStepID = AddGeneratedStep(nParentID,
+			T_CT_SWITCH_ST_SWITCH + StyleData(cVariable) ,
+			nIID,nStepNumber,C_STEPTYPE_ROOT)
+			oModel.SaveStepCode(nStepID, "switch " + cVariable + " { ")
+			nStepNumber++
+			nStepID2 = AddGeneratedStep(nStepID,
+				T_CT_SWITCH_ST_STARTHERE ,
+			nIID,nStepNumber,C_STEPTYPE_ALLOWINTERACTION)
+			nStepNumber++
+			nStepID3 = AddGeneratedStep(nStepID,
+				T_CT_SWITCH_ST_ENDOFSWITCH ,
+			nIID,nStepNumber,C_STEPTYPE_INFO)
+			oModel.SaveStepCode(nStepID3, "} " )
+		# Set the Parent 
+			aParents + nStepID2
+			SetStepsParent()
+			return nStepID
+
+	/*
+		Switch - Case Component 
+	*/
+	func AddSwitchCaseValue cValue
+		# Use the Interaction Page
+			nIID = UseComponent("case",[
+				:value 		= cValue
+			])
+		# Generate the Step and the Code
+			nStepNumber = 1
+			nStepID = AddGeneratedStep(nParentID,
+			T_CT_CASE_ST_CASE + StyleData(cValue) ,
+			nIID,nStepNumber,C_STEPTYPE_ROOT)
+			oModel.SaveStepCode(nStepID, "case " + cValue)
+			nStepNumber++
+			nStepID2 = AddGeneratedStep(nStepID,
+				T_CT_CASE_ST_STARTHERE ,
+			nIID,nStepNumber,C_STEPTYPE_ALLOWINTERACTION)
+		# Set the Parent 
+			aParents + nStepID2
+			SetStepsParent()
+			return nStepID
+
+
+	/*
+		Switch - Other Component 
+	*/
+	func AddSwitchOther 
+		return AddElse()
