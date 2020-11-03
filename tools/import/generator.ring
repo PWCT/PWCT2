@@ -67,5 +67,11 @@ class Generator
 					AddForInLoop(aCommand[:Variable],aCommand[:In],aCommand[:Step])				
 				case :DoAgain
 					AddDoAgainExpression(aCommand[:Expression])
+				case :Exit 
+					AddExitValue(aCommand[:Value])
+				case :Loop
+					AddLoopValue(aCommand[:Value])
+				case :Bye
+					AddBye(aCommand[:Value])
 			}
 		}

@@ -620,3 +620,54 @@ class VSFGenerator
 			SetStepsParent()
 			return nStepID
 
+	/*
+		Loop Component 
+	*/
+	func AddLoopValue cValue
+		if cValue="" { cValue = "1" }
+		# Use the Interaction Page
+			nIID = UseComponent("loop",[
+				:value 		= cValue
+			])
+		# Generate the Step and the Code
+			nStepNumber = 1
+			nStepID = AddGeneratedStep(nParentID,
+			T_CT_LOOP_ST_LOOP + StyleData(cValue) ,
+			nIID,nStepNumber,C_STEPTYPE_ROOT)
+			oModel.SaveStepCode(nStepID, "loop " + cValue)
+			return nStepID
+	
+	/*
+		Exit Component 
+	*/
+	func AddExitValue cValue
+		if cValue="" { cValue = "1" }
+		# Use the Interaction Page
+			nIID = UseComponent("exit",[
+				:value 		= cValue
+			])
+		# Generate the Step and the Code
+			nStepNumber = 1
+			nStepID = AddGeneratedStep(nParentID,
+			T_CT_EXIT_ST_EXIT + StyleData(cValue) ,
+			nIID,nStepNumber,C_STEPTYPE_ROOT)
+			oModel.SaveStepCode(nStepID, "exit " + cValue)
+			return nStepID
+	
+	/*
+		Bye Component 
+	*/
+	func AddBye cValue
+		if cValue="" { cValue = "0" }
+		# Use the Interaction Page
+			nIID = UseComponent("shutdown",[
+				:value 		= 0
+			])
+		# Generate the Step and the Code
+			nStepNumber = 1
+			nStepID = AddGeneratedStep(nParentID,
+			T_CT_SHUTDOWN_ST_VALUE + StyleData(cValue) ,
+			nIID,nStepNumber,C_STEPTYPE_ROOT)
+			oModel.SaveStepCode(nStepID,  "shutdown("  + cValue + ")"  )
+			return nStepID
+	

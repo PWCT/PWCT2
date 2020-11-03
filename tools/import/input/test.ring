@@ -39,6 +39,12 @@ else
 ok
 for x=1 to 10
 	? x
+	if x = 3 
+		loop
+	ok
+	if x = 7
+		exit 
+	ok
 next 
 aList = [1,2,3]
 for x in aList 
@@ -54,6 +60,8 @@ again x > 0
 
 ? "Thanks"
 ? "End of program!"
+
+bye
 
 func one 
 	? "hello from one"

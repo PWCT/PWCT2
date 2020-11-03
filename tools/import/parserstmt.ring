@@ -350,10 +350,12 @@ class ParserStmt
 		if iskeyword(K_BYE) {
 			nexttoken()
 			/* Generate Code */
+			oTarget.GenerateBye(self)
 			return 1 
 		}
 		/* Statement --> Exit (Go to outside the loop) */
 		if iskeyword(K_EXIT) {
+			clearTextBuffer()
 			nexttoken()
 			/* Check Number  (Exit from more than one loop) */
 			if isnumber() or isidentifier() {
@@ -361,10 +363,13 @@ class ParserStmt
 					return 0 
 				}
 			}
+			addParameter(:Value)
+			oTarget.GenerateExit(self)
 			return 1 
 		}
 		/* Statement --> Loop (Continue) */
 		if iskeyword(K_LOOP) {
+			clearTextBuffer()
 			nexttoken()
 			/* Check Number  (Continue from more than one loop) */
 			if isnumber() or isidentifier() {
@@ -372,6 +377,8 @@ class ParserStmt
 					return 0 
 				}
 			}
+			addParameter(:Value)
+			oTarget.GenerateLoop(self)
 			return 1 
 		}
 		/* Statement --> Switch  Expr { ON|CASE Expr {Statement} } OFF */

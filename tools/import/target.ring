@@ -160,3 +160,26 @@ class Target
 					:Command = :DoAgain
 				], C_CLEARBUFFER )
 		}
+
+	 func GenerateExit oParser 
+		oParser {
+			Generate( [
+					:Command = :Exit,
+					:Value = Parameter(:Value)
+				], C_CLEARBUFFER )
+		}
+
+	 func GenerateLoop oParser 
+		oParser {
+			Generate( [
+					:Command = :Loop,
+					:Value = Parameter(:Value)
+				], C_CLEARBUFFER )
+		}
+
+	 func GenerateBye oParser 
+		oParser {
+			Generate( [
+					:Command = :Bye
+				], C_CLEARBUFFER )
+		}
