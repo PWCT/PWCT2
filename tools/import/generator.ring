@@ -79,5 +79,7 @@ class Generator
 					AddSwitchCaseValue(aCommand[:Value])
 				case :SwitchOther
 					AddSwitchOther()
+				case :Import
+					AddImportValue(aCommand[:Value])
 			}
 		}

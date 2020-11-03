@@ -7,6 +7,8 @@
 
 load "stdlib.ring"
 
+import System.GUI
+
 cName = :ring
 one() two() three()
 test(1,2)

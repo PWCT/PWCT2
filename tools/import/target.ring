@@ -206,3 +206,12 @@ class Target
 					:Command = :SwitchOther
 				], C_CLEARBUFFER )
 		}
+
+	 func GenerateImportPackage oParser 
+		oParser {
+			Generate( [
+					:Command = :Import,
+					:Value = Parameter(:Value)
+				], C_CLEARBUFFER )
+		}
+

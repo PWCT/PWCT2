@@ -441,10 +441,14 @@ class ParserStmt
 		}
 		/* Statement --> Import Identifier { '.' Identifier } */
 		if iskeyword(K_IMPORT) {
+			clearTextBuffer()
 			nexttoken()
 			IGNORENEWLINE() 
 			/* Generate Code */
-			return namedotname() 
+			lOutput = namedotname() 
+			addParameter(:Value)
+			oTarget.GenerateImportPackage(self)
+			return lOutput
 		}
 		/* Statement --> epslion */
 		if epslion() {

@@ -728,3 +728,20 @@ class VSFGenerator
 	*/
 	func AddSwitchOther 
 		return AddElse()
+
+	/*
+		Import Component 
+	*/
+	func AddImportValue cValue
+		# Use the Interaction Page
+			nIID = UseComponent("import",[
+				:value 		= cValue
+			])
+		# Generate the Step and the Code
+			nStepNumber = 1
+			nStepID = AddGeneratedStep(nParentID,
+			T_CT_IMPORT_ST_IMPORT + " " + StyleData(cValue) ,
+			nIID,nStepNumber,C_STEPTYPE_ROOT)
+			oModel.SaveStepCode(nStepID, "import " + cValue)
+			return nStepID
+
