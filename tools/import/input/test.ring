@@ -71,6 +71,13 @@ switch x
 		? "Other number"
 off
 
+try	
+	? "Try some code"
+	1/0
+catch 
+	? "Catch the error"
+end
+
 ? "Thanks"
 ? "End of program!"
 
