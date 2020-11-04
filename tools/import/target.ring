@@ -215,3 +215,16 @@ class Target
 				], C_CLEARBUFFER )
 		}
 
+	func GenerateTry oParser 
+		oParser {
+			Generate( [
+					:Command = :Try
+				], C_KEEPBUFFER )
+		}
+
+	func GenerateCatch oParser 
+		oParser {
+			Generate( [
+					:Command = :Try
+				], C_KEEPBUFFER )
+		}

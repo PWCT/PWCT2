@@ -319,22 +319,28 @@ class ParserStmt
 				nControlStructureBrace++ 
 			}
 			/* Generate Code */
+			oTarget.GenerateTry(self)
+			oTarget.GenerateBlockStart(self)
 			while stmt() {
 				if nActiveToken = nTokensCount {
 					exit 
 				}
 			}
+			oTarget.GenerateBlockEnd(self)
 			if iskeyword(K_CATCH) {
 				nexttoken()
 				/*
 				**  Generate Code 
 				**  Jump from end of try block to label after done 
 				*/
+				oTarget.GenerateCatch(self)
+				oTarget.GenerateBlockStart(self)
 				while stmt() {
 					if nActiveToken = nTokensCount {
 						exit
 					}
 				}
+				oTarget.GenerateBlockEnd(self)
 				if iskeyword(K_DONE) or iskeyword(K_END) or csbraceend() {
 					nexttoken()
 					/* Generate Code */

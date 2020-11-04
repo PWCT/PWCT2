@@ -745,3 +745,9 @@ class VSFGenerator
 			oModel.SaveStepCode(nStepID, "import " + cValue)
 			return nStepID
 
+	/*
+		Try-Catch Component 
+	*/
+	func AddTry
+
+	func AddCatch

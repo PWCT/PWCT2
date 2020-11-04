@@ -81,5 +81,9 @@ class Generator
 					AddSwitchOther()
 				case :Import
 					AddImportValue(aCommand[:Value])
+				case :Try
+					AddTry()
+				case :Catch
+					AddCatch()
 			}
 		}
