@@ -6,6 +6,7 @@
 */
 
 load "stdlib.ring"
+load "guilib.ring"
 
 import System.GUI
 

@@ -225,6 +225,6 @@ class Target
 	func GenerateCatch oParser 
 		oParser {
 			Generate( [
-					:Command = :Try
+					:Command = :Catch
 				], C_KEEPBUFFER )
 		}

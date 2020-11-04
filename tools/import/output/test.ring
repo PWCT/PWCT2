@@ -1,4 +1,6 @@
 load "stdlib.ring"
+load "guilib.ring"
+import system.gui
 cname=:ring
 one()
 two()three()
@@ -30,8 +32,44 @@ if x=1 {
 	else
 		? "other number"
 } 
+for x=1 to 10 step 1 { 
+	? x
+	if x=3 { 
+		loop 1
+	} 
+	if x=7 { 
+		exit 1
+	} 
+} 
+alist=[1,2,3]
+for x in alist step 1 { 
+	? x
+} 
+x=10
+do x>0
+	? "x = "+x
+	x--
+again x>0
+x>0x=3
+switch x { 
+	case 1
+		? "One"
+	case 2
+		? "Two"
+	case 3
+		? "Three"
+	else
+		? "Other number"
+} 
+try { 
+	? "Try some code"
+	1/0
+catch 
+	? "Catch the error"
+} 
 ? "Thanks"
 ? "End of program!"
+shutdown(0)
 func one  { 
 	? "hello from one"
 } 

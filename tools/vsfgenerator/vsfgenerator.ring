@@ -20,9 +20,11 @@ class VSFGenerator
 		nParentID	= 1
 
 	# Setting the Parent Step when using the Class Component 
-		lClassComponent			= False
 		nStepID_PrivateAttributes	= 0
 		nStepID_PrivateMethods		= 0
+
+	# Setting the Parsent Step when using the Try-Catch Component 
+		nStepID_Catch				= 0
 
 	func startGenerator
 		TestGenerator()
@@ -448,8 +450,6 @@ class VSFGenerator
 			AddGeneratedStep(nStepID_Private, T_CT_CLASS_ST_END,
 					nIID,nStepNumber,C_STEPTYPE_INFO )
 	
-			# We are inside a class component
-				lClassComponent = True
 			# Set the Parent 
 				aParents + nStepID_Methods
 				aParents + nStepID_Attributes
@@ -605,7 +605,7 @@ class VSFGenerator
 			nStepID = AddGeneratedStep(nParentID,
 				T_CT_DOAGAIN_ST_DO ,
 			nIID,nStepNumber,C_STEPTYPE_ROOT)
-			oModel.SaveStepCode(nStepID, "do " +  cExpr + " { " )
+			oModel.SaveStepCode(nStepID, "do " +  cExpr )
 			nStepNumber++
 			nStepID2 = AddGeneratedStep(nStepID,
 				T_CT_DOAGAIN_ST_STARTHERE ,
@@ -749,5 +749,41 @@ class VSFGenerator
 		Try-Catch Component 
 	*/
 	func AddTry
+		# Use the Interaction Page
+			nIID = UseComponent("trycatch",[
+			])
+		# Generate the Step and the Code
+			nStepNumber = 1
+			nStepID = AddGeneratedStep(nParentID,
+				T_CT_TRYCATCH_ST_TRY ,
+			nIID,nStepNumber,C_STEPTYPE_ROOT)
+			oModel.SaveStepCode(nStepID, "try { " )
+			nStepNumber++
+			nStepID2 = AddGeneratedStep(nStepID,
+				T_CT_TRYCATCH_ST_STARTHERE ,
+			nIID,nStepNumber,C_STEPTYPE_ALLOWINTERACTION)
+
+			nStepNumber++
+			nStepID3 = AddGeneratedStep(nStepID,
+				T_CT_TRYCATCH_ST_CATCH ,
+			nIID,nStepNumber,C_STEPTYPE_ROOT)
+			oModel.SaveStepCode(nStepID3, "catch " )
+			nStepNumber++
+			nStepID_Catch = AddGeneratedStep(nStepID3,
+				T_CT_TRYCATCH_ST_STARTHERE ,
+			nIID,nStepNumber,C_STEPTYPE_ALLOWINTERACTION)
+
+			nStepNumber++
+			nStepID5 = AddGeneratedStep(nStepID,
+				T_CT_TRYCATCH_ST_END ,
+			nIID,nStepNumber,C_STEPTYPE_INFO)
+			oModel.SaveStepCode(nStepID5, "} " )
+		# Set the Parent 
+			aParents + nStepID2
+			SetStepsParent()
+			return nStepID
 
 	func AddCatch
+		PopParent()	# Try
+		aParents + nStepID_Catch
+		SetStepsParent()
