@@ -46,6 +46,7 @@
 
 	T_ENV_MENU_MODE 			= "Mode"
 	T_ENV_MENU_MODE_GENERAL 		= "General (All Windows)"
+	T_ENV_MENU_MODE_TESTING 		= "General (Testing)"
 	T_ENV_MENU_MODE_PROGRAMMING_ALL_LEFT 	= "Programming (All Windows) - Left"
 	T_ENV_MENU_MODE_PROGRAMMING_ALL_RIGTH	= "Programming (All Windows) - Right"
 	T_ENV_MENU_MODE_PROGRAMMING_GOALDESIGNER= "Programming (Goal Designer)"

@@ -1007,6 +1007,19 @@ class EnvironmentController from WindowsControllerParent
 				oView.win {
 					adddockwidget(Qt_LeftDockWidgetArea,this.oView.oDockFilesManager,1)
 					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockGoalDesigner,2)
+					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockFormDesigner,1)
+					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockOutputWindow,1)
+					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockComponentsBrowser,1)
+					tabifydockwidget(this.oView.oDockFormDesigner,this.oView.oDockGoalDesigner)
+					tabifydockwidget(this.oView.oDockOutputWindow,this.oView.oDockComponentsBrowser)
+				}
+				oView.oDockGoalDesigner.raise()
+				oView.oDockComponentsBrowser.raise()
+			on C_ENV_MODE_TESTING
+				ShowDockableWindows()
+				oView.win {
+					adddockwidget(Qt_LeftDockWidgetArea,this.oView.oDockFilesManager,1)
+					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockGoalDesigner,2)
 					adddockwidget(Qt_BottomDockWidgetArea,this.oView.oDockOutputWindow,1)
 					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockFormDesigner,1)
 					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockComponentsBrowser,1)

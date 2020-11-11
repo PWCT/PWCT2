@@ -42,7 +42,6 @@ class EnvironmentView from WindowsViewParent
 				move(-10,0)
 				resize(1000,1000)
 			}
-
 			setLayoutDirection(T_LAYOUTDIRECTION)
 			setWindowTitle(T_ENV_TITLE) # "Programming Without Coding Technology"
 			oSystemLog.addMessage("Create Menubar")
@@ -257,27 +256,34 @@ class EnvironmentView from WindowsViewParent
 					addseparator()
 					oAction = new qAction(win) {
 						setShortcut(new QKeySequence("Ctrl+2"))
+						setclickEvent(Method("SetMode(C_ENV_MODE_TESTING)"))
+						settext(T_ENV_MENU_MODE_TESTING) # "General (Testing)"
+					}
+					addaction(oAction)
+					addseparator()
+					oAction = new qAction(win) {
+						setShortcut(new QKeySequence("Ctrl+3"))
 						setclickEvent(Method("SetMode(C_ENV_MODE_LEFT)"))
 						settext(T_ENV_MENU_MODE_PROGRAMMING_ALL_LEFT) # "Programming (All Windows) - Left"
 					}
 					addaction(oAction)
 					addseparator()
 					oAction = new qAction(win) {
-						setShortcut(new QKeySequence("Ctrl+3"))
+						setShortcut(new QKeySequence("Ctrl+4"))
 						setclickEvent(Method("SetMode(C_ENV_MODE_RIGHT)"))
 						settext(T_ENV_MENU_MODE_PROGRAMMING_ALL_RIGTH) # "Programming (All Windows) - Right"
 					}
 					addaction(oAction)
 					addseparator()
 					oAction = new qAction(win) {
-						setShortcut(new QKeySequence("Ctrl+4"))
+						setShortcut(new QKeySequence("Ctrl+5"))
 						setclickEvent(Method("SetMode(C_ENV_MODE_GD)"))
 						settext(T_ENV_MENU_MODE_PROGRAMMING_GOALDESIGNER) # "Programming (Goal Designer)"
 					}
 					addaction(oAction)
 					addseparator()
 					oAction = new qAction(win) {
-						setShortcut(new QKeySequence("Ctrl+5"))
+						setShortcut(new QKeySequence("Ctrl+6"))
 						setclickEvent(Method("SetMode(C_ENV_MODE_GUI)"))
 						settext(T_ENV_MENU_MODE_GUI) # "GUI Development (Goal Designer + Form Designer)"
 					}

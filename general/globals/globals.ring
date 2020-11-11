@@ -103,10 +103,11 @@
 
 # Enviroment Mode
 	C_ENV_MODE_GENERAL			= 1
-	C_ENV_MODE_LEFT				= 2
-	C_ENV_MODE_RIGHT			= 3
-	C_ENV_MODE_GD				= 4
-	C_ENV_MODE_GUI				= 5
+	C_ENV_MODE_TESTING		= 2
+	C_ENV_MODE_LEFT				= 3
+	C_ENV_MODE_RIGHT			= 4
+	C_ENV_MODE_GD				= 5
+	C_ENV_MODE_GUI				= 6
 	C_ENV_DEFAULT_MODE			= C_ENV_MODE_GENERAL
 
 # Environment Style

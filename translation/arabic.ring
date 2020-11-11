@@ -46,6 +46,7 @@
 
 	T_ENV_MENU_MODE 			= "نمط بيئة العمل"
 	T_ENV_MENU_MODE_GENERAL 		= "عام - كل النوافذ"
+	T_ENV_MENU_MODE_TESTING 		= "عام - نافذة الإختبار فى الأسفل"
 	T_ENV_MENU_MODE_PROGRAMMING_ALL_LEFT 	= "برمجة - جهة اليسار"
 	T_ENV_MENU_MODE_PROGRAMMING_ALL_RIGTH	= "برمجة- من اليمين"
 	T_ENV_MENU_MODE_PROGRAMMING_GOALDESIGNER= "برمجة - مصمم الهدف"
