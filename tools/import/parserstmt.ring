@@ -283,6 +283,7 @@ class ParserStmt
 					AddParameterToInstruction(nDoAgainInstruction,:Expression)
 					/* Generate Code (Test Condition) */
 					nAssignmentFlag = 1 
+					clearTextBuffer()
 					return 1 
 				}
 			else
@@ -463,19 +464,14 @@ class ParserStmt
 		/* Statement --> Expr */
 		x = 0
 		if expr() {
-			/*
-			**  Generate Code 
-			**  Call expreval() if we are inside { } 
-			*/
-			if nBraceFlag {
-				/* if ismethod(self,"braceexpreval") braceexpreval() ok */
-			}
-			if isAnyOperator() {
+			if isOperator(")") {
 				NextToken()
 			}
 			AddParameterFromSecondBuffer(:Expression)
 			oTarget.GenerateExpressionCommand(self)
 			x = 1 
+			cBuffer = ""
+			cBuffer2 = ""
 		}
 		return x
 
