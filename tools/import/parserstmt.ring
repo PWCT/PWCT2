@@ -22,6 +22,7 @@ class ParserStmt
 				nexttoken()
 				AddParameter(:FileName)
 				oTarget.GenerateLoadLiteral(self)
+				clearTextBuffer()
 				return x 
 			}
 			return 0 
@@ -36,6 +37,7 @@ class ParserStmt
 			nAssignmentFlag = 1 
 			AddParameter(:Expression)
 			oTarget.GenerateSeeExpr(self)
+			clearTextBuffer()
 			return x 
 		}
 		/* Statement --> ? Expr */
@@ -48,6 +50,7 @@ class ParserStmt
 			nAssignmentFlag = 1 
 			AddParameter(:Expression)
 			oTarget.GenerateQuestionMarkExpr(self)
+			clearTextBuffer()
 			return x 
 		}
 		/* Statement --> Give|Get Identifier */
@@ -64,6 +67,7 @@ class ParserStmt
 				/* Generate Code */
 				AddParameter(:Identifier)
 				oTarget.GenerateGiveIdentifier(self)
+				clearTextBuffer()
 				return 1 
 			else
 				error(ERROR_VARNAME)
@@ -117,6 +121,7 @@ class ParserStmt
 								if iskeyword(K_NEXT) or iskeyword(K_END) or csbraceend() {
 									/* Generate Code */
 									nexttoken()
+									clearTextBuffer()
 									return 1 
 								else
 									error(ERROR_NEXT)
@@ -151,6 +156,7 @@ class ParserStmt
 						if iskeyword(K_NEXT) or iskeyword(K_END) or csbraceend() {
 							nexttoken()
 							/* Generate Code */
+							clearTextBuffer()
 							return 1 
 						else
 							error(ERROR_NEXT)
@@ -215,6 +221,7 @@ class ParserStmt
 					/* Generate Code */
 					oTarget.GenerateBlockEnd(self)
 					nexttoken()
+					clearTextBuffer()
 					return 1 
 				else
 					error(ERROR_OK)
@@ -248,6 +255,7 @@ class ParserStmt
 				if iskeyword(K_END) or csbraceend() {
 					/* Generate Code */
 					nexttoken()
+					clearTextBuffer()
 					return 1 
 				else
 					error(ERROR_END)
@@ -309,6 +317,7 @@ class ParserStmt
 				*/
 			}
 			oTarget.GenerateReturn(self)
+			clearTextBuffer()
 			return x 
 		}
 		/* Statement --> Try {Statement} Catch {Statement} Done */
@@ -345,6 +354,7 @@ class ParserStmt
 				if iskeyword(K_DONE) or iskeyword(K_END) or csbraceend() {
 					nexttoken()
 					/* Generate Code */
+					clearTextBuffer()
 					return 1 
 				else
 					error(ERROR_NODONE)
@@ -358,6 +368,7 @@ class ParserStmt
 			nexttoken()
 			/* Generate Code */
 			oTarget.GenerateBye(self)
+			clearTextBuffer()
 			return 1 
 		}
 		/* Statement --> Exit (Go to outside the loop) */
@@ -372,6 +383,7 @@ class ParserStmt
 			}
 			addParameter(:Value)
 			oTarget.GenerateExit(self)
+			clearTextBuffer()
 			return 1 
 		}
 		/* Statement --> Loop (Continue) */
@@ -386,6 +398,7 @@ class ParserStmt
 			}
 			addParameter(:Value)
 			oTarget.GenerateLoop(self)
+			clearTextBuffer()
 			return 1 
 		}
 		/* Statement --> Switch  Expr { ON|CASE Expr {Statement} } OFF */
@@ -438,6 +451,7 @@ class ParserStmt
 				/* OFF */
 				if iskeyword(K_OFF) or iskeyword(K_END) or csbraceend() {
 					nexttoken()
+					clearTextBuffer()
 					return 1 
 				else
 					error(ERROR_SWITCHOFF)
@@ -455,6 +469,7 @@ class ParserStmt
 			lOutput = namedotname() 
 			addParameter(:Value)
 			oTarget.GenerateImportPackage(self)
+			clearTextBuffer()
 			return lOutput
 		}
 		/* Statement --> epslion */
@@ -462,16 +477,14 @@ class ParserStmt
 			return 1 
 		}
 		/* Statement --> Expr */
-		x = 0
 		if expr() {
 			if isOperator(")") {
 				NextToken()
 			}
 			AddParameterFromSecondBuffer(:Expression)
 			oTarget.GenerateExpressionCommand(self)
-			x = 1 
-			cBuffer = ""
-			cBuffer2 = ""
+			clearTextBuffer()
+			return 1 
 		}
-		return x
+		return 0
 
