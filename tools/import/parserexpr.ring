@@ -434,6 +434,7 @@ class ParserExpr
 		}
 		/* Factor --> New Identifier */
 		if iskeyword(K_NEW) {
+			manualAddToTextBuffer2(" new ")
 			nexttoken()
 			IGNORENEWLINE() 
 			/* Generate Code */
