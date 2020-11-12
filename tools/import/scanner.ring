@@ -22,7 +22,10 @@ class Scanner
 		return aTokens
 
 	func PrintTokens 
+		nID = 0
 		for aToken in aTokens {
+			nID++
+			? "ID = " + nID
 			switch aToken[C_TOKENTYPE] {
 			case C_KEYWORD 
 				? Width("Keyword",C_WIDTH) + ": "  +
