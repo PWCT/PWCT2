@@ -6,7 +6,7 @@
 */
 
 class ParserStmt
-	
+
 	func stmt
 		x = True
 		/* Statement --> Load Literal */
@@ -461,6 +461,7 @@ class ParserStmt
 			return 1 
 		}
 		/* Statement --> Expr */
+		x = 0
 		if expr() {
 			/*
 			**  Generate Code 
@@ -474,7 +475,7 @@ class ParserStmt
 			}
 			AddParameterFromSecondBuffer(:Expression)
 			oTarget.GenerateExpressionCommand(self)
-			return 1 
+			x = 1 
 		}
-		return 0 
+		return x
 

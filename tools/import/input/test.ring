@@ -79,6 +79,10 @@ catch
 	? "Catch the error"
 end
 
+myobj = new myclass() 
+myobj.myclass_m1()
+myobj.myclass_m2()
+
 ? "Thanks"
 ? "End of program!"
 

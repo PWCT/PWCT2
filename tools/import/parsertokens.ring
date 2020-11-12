@@ -72,12 +72,21 @@ class ParserTokens
 	 		cBuffer2 += cTokenValue
 		}
 
-
 	func EnableBufferFlag
 		lBufferFlag = True
 
 	func DisableBufferFlag
 		lBufferFlag = False
+
+	func SaveState
+		return [
+			:cBuffer = cBuffer,
+			:cBuffer2 = cBuffer2 
+		]
+
+	func RestoreState aState
+		cBuffer = aState[:cBuffer]
+		cBuffer2 = aState[:cBuffer2]
 
 	func NextToken
 		if nActiveToken < nTokensCount {
