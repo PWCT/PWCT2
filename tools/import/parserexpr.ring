@@ -329,11 +329,6 @@ class ParserExpr
 				IGNORENEWLINE() 
 				nNewObject = 0 
 				x = expr()
-				/* Check New Object and this.property or self.property to disable set property */
-				if nNewObject and lSetProperty and nLocalThisOrSelfLoadA {
-					lSetProperty = 0 
-				}
-				/* Generate Code */
 				return x 
 			}
 			/* ++ & -- */
