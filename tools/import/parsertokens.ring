@@ -58,6 +58,12 @@ class ParserTokens
 	 		cBuffer += cTokenValue
 		}
 
+	func ManualAddToTextBuffer cText
+		cBuffer += cText
+
+	func ManualAddToTextBuffer2 cText
+		cBuffer2 += cText
+
 	func AddToSecondTextBuffer 
 		if Find([C_LITERAL,C_NUMBER,C_OPERATOR,C_IDENTIFIER],nTokenType) {
 			if nTokenType = C_LITERAL {
