@@ -10,7 +10,7 @@ load "guilib.ring"
 
 import System.GUI
 
-cName = :ring
+cName = "ring"
 one() two() three()
 test(1,2)
 sum(1,2,3)
@@ -79,6 +79,7 @@ catch
 	? "Catch the error"
 end
 
+import myfirstPackage
 myobj = new myclass() {
 	myobj.myclass_m1()
 	myobj.myclass_m2()
@@ -134,8 +135,12 @@ func testgive
 
 Package MyFirstPackage
 
+class myparent
+
 class myclass from myparent 
 	? "hello from myclass"
+	func init
+		return self 
 	func myclass_m1 
 		? "m1"
 	func myclass_m2

@@ -1,7 +1,7 @@
 load "stdlib.ring"
 load "guilib.ring"
 import system.gui
-cname=:ring
+cname="ring"
 one()
 two()three()
 test(1,2)
@@ -50,7 +50,7 @@ do x>0
 	? "x = "+x
 	x--
 again x>0
-x>0x=3
+x=3
 switch x { 
 	case 1
 		? "One"
@@ -67,6 +67,19 @@ try {
 catch 
 	? "Catch the error"
 } 
+import myfirstpackage
+myobj= new myclass(){
+myobj.myclass_m1()
+myobj.myclass_m2()
+}
+myfunc= func {
+? "test"
+}
+call myfunc()
+myobj2= new myclass(){
+myclass_m1()
+myclass_m2()
+}
 ? "Thanks"
 ? "End of program!"
 shutdown(0)
@@ -105,8 +118,13 @@ func testgive  {
 	? "Hello "+name
 } 
 package myfirstpackage
+class myparent
+private
 class myclass from myparent
 	? "hello from myclass"
+	func init  { 
+		return self
+	} 
 	func myclass_m1  { 
 		? "m1"
 	} 
