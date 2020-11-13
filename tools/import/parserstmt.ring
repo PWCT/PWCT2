@@ -288,7 +288,7 @@ class ParserStmt
 				IGNORENEWLINE() 
 				nAssignmentFlag = 0 
 				if expr() {
-					AddParameterToInstruction(nDoAgainInstruction,:Expression)
+					AddParameterToInstructionFromSecondBuffer(nDoAgainInstruction,:Expression)
 					/* Generate Code (Test Condition) */
 					nAssignmentFlag = 1 
 					clearTextBuffer()
@@ -309,7 +309,7 @@ class ParserStmt
 				x = expr()
 				nAssignmentFlag = 1 
 				/* Generate Code */
-				AddParameter(:Expression)
+				AddParameterFromSecondBuffer(:Expression)
 			else 
 				/*
 				**  Generate Code 

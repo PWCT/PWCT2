@@ -40,6 +40,9 @@ class ParserTokens
 	func AddParameterToInstruction nIns,cAttribute
 		aParseTree[nIns][cAttribute] = cBuffer
 
+	func AddParameterToInstructionFromSecondBuffer nIns,cAttribute
+		aParseTree[nIns][cAttribute] = cBuffer2
+
 	func ValueAsString cValue
 		# Check if we have "string" or 'string' or `string`
 			cValue2 = trim(cValue)

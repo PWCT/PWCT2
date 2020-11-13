@@ -15,7 +15,7 @@ class Scanner
 
 	func Start 
 		pState = ring_state_new()
-		aTokens = ring_state_filetokens(pState,cFileName,False)
+		aTokens = ring_state_filetokens(pState,cFileName,True)
 		ring_state_delete(pState)
 	
 	func GetTokens
