@@ -481,10 +481,12 @@ class ParserStmt
 			if isOperator(")") {
 				NextToken()
 			}
-			AddParameterFromSecondBuffer(:Expression)
-			oTarget.GenerateExpressionCommand(self)
-			clearTextBuffer()
+			GenerateStatementIsExpression()
 			return 1 
 		}
 		return 0
 
+Func GenerateStatementIsExpression
+		AddParameterFromSecondBuffer(:Expression)
+		oTarget.GenerateExpressionCommand(self)
+		clearTextBuffer()

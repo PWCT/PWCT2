@@ -442,6 +442,7 @@ class ParserExpr
 				/* Generate Code */
 				IGNORENEWLINE() 
 				if isoperator2(OP_BRACEOPEN) {
+					GenerateStatementIsExpression()
 					x = mixer()
 					nNewObject = 1 
 					return x 
@@ -486,10 +487,7 @@ class ParserExpr
 			if isoperator2(OP_BRACEOPEN) {
 				nexttoken()
 
-				AddParameterFromSecondBuffer(:Expression)
-				oTarget.GenerateExpressionCommand(self)
-				clearTextBuffer()
-
+				GenerateStatementIsExpression()
 
 				x = nAssignmentFlag 
 				x2 = nNewObject 
@@ -608,6 +606,7 @@ class ParserExpr
 			nBraceFlag++ 
 			/* Generate Code */
 			nexttoken()
+			GenerateStatementIsExpression()
 			nStatus = nAssignmentFlag 
 			nAssignmentFlag = 1 
 			while stmt() {
