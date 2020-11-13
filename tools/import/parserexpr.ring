@@ -472,6 +472,7 @@ class ParserExpr
 		}
 		/* Factor --> Anonymous Function */
 		if iskeyword(K_FUNC) or iskeyword(K_DEF) {
+			manualAddToTextBuffer2(" func ")
 			nexttoken()
 			/*
 			**  Generate Code 
@@ -484,6 +485,12 @@ class ParserExpr
 			/* Get Function Code */
 			if isoperator2(OP_BRACEOPEN) {
 				nexttoken()
+
+				AddParameterFromSecondBuffer(:Expression)
+				oTarget.GenerateExpressionCommand(self)
+				clearTextBuffer()
+
+
 				x = nAssignmentFlag 
 				x2 = nNewObject 
 				x3 = nBraceFlag 
@@ -506,6 +513,7 @@ class ParserExpr
 		}
 		/* Factor --> Call Identifier ( parameters ) */
 		if iskeyword(K_CALL) {
+			manualAddToTextBuffer2("call ")
 			nexttoken()
 			if isidentifier() {
 				/* Generate Code */

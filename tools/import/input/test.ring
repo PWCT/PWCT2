@@ -84,6 +84,9 @@ myobj = new myclass() {
 	myobj.myclass_m2()
 }
 
+myfunc = func { ? "test" }
+call myfunc()
+
 ? "Thanks"
 ? "End of program!"
 
