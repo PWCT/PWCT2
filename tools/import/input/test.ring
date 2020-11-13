@@ -87,6 +87,12 @@ myobj = new myclass() {
 myfunc = func { ? "test" }
 call myfunc()
 
+myobj2 = new myclass() {
+	myclass_m1()
+	myclass_m2()
+}
+
+
 ? "Thanks"
 ? "End of program!"
 
