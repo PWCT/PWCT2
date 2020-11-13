@@ -41,13 +41,21 @@ class ParserTokens
 		aParseTree[nIns][cAttribute] = cBuffer
 
 	func ValueAsString cValue
-		if substr(cValue,'"') = 0 {
-			cChar = '"'
-		elseif substr(cValue,"'") = 0 
-			cChar = "'"
-		else 
-			cChar = "`"
-		}
+		# Check if we have "string" or 'string' or `string`
+			cValue2 = trim(cValue)
+			if len(cValue2) > 1
+				if cValue2[1] = '"' or cValue2[1] = "'" or cValue2[1] = "`"
+					return cValue
+				ok
+			ok
+		# Add " " or ' ' or ` `
+			if substr(cValue,'"') = 0 {
+				cChar = '"'
+			elseif substr(cValue,"'") = 0 
+				cChar = "'"
+			else 
+				cChar = "`"
+			}
 		return cChar + cValue + cChar
 
 	func AddToTextBuffer 
@@ -68,6 +76,11 @@ class ParserTokens
 		if Find([C_LITERAL,C_NUMBER,C_OPERATOR,C_IDENTIFIER],nTokenType) {
 			if nTokenType = C_LITERAL {
 				cTokenValue = ValueAsString(cTokenValue)
+			}
+			if nTokenType = C_OPERATOR {
+				if cTokenValue = "?" {
+					return
+				}
 			}
 	 		cBuffer2 += cTokenValue
 		}
@@ -98,6 +111,15 @@ class ParserTokens
 			return True
 		}
 		return False
+
+	func PrevToken
+		if nActiveToken > 0 {
+			nActiveToken--
+			aActiveToken	= aTokens[nActiveToken]
+			nTokenType 	= aActiveToken[C_TOKENTYPE]
+			cTokenValue 	= aActiveToken[C_TOKENVALUE]
+			nTokenIndex 	= aActiveToken[C_TOKENINDEX]
+		}
 
 	func isKeyword cKeyword
 		return nTokenType = C_KEYWORD and 

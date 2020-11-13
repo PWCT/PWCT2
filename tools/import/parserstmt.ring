@@ -35,7 +35,7 @@ class ParserStmt
 			nAssignmentFlag = 0 				
 			x = expr()
 			nAssignmentFlag = 1 
-			AddParameter(:Expression)
+			AddParameterFromSecondBuffer(:Expression)
 			oTarget.GenerateSeeExpr(self)
 			clearTextBuffer()
 			return x 
@@ -48,7 +48,7 @@ class ParserStmt
 			nAssignmentFlag = 0 
 			x = expr()
 			nAssignmentFlag = 1 
-			AddParameter(:Expression)
+			AddParameterFromSecondBuffer(:Expression)
 			oTarget.GenerateQuestionMarkExpr(self)
 			clearTextBuffer()
 			return x 

@@ -4,7 +4,7 @@
 **	Date : 2020.02.15
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
-
+load "guilib.ring"
 load "stdlibcore.ring"
 load "globals.ring"
 load "uilib.ring"
