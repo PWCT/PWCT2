@@ -173,7 +173,7 @@ class ParserStmt
 			IGNORENEWLINE() 
 			nAssignmentFlag = 0 
 			if csexpr() {
-				AddParameter(:Condition)
+				AddParameterFromSecondBuffer(:Condition)
 				oTarget.GenerateIfExpr(self)
 				oTarget.GenerateBlockStart(self)
 				nAssignmentFlag = 1 
@@ -190,7 +190,7 @@ class ParserStmt
 					nexttoken()
 					nAssignmentFlag = 0 
 					if expr() {
-						AddParameter(:Condition)
+						AddParameterFromSecondBuffer(:Condition)
 						oTarget.GenerateButExpr(self)
 						oTarget.GenerateBlockStart(self)
 						nAssignmentFlag = 1 
@@ -240,7 +240,7 @@ class ParserStmt
 			IGNORENEWLINE() 
 			nAssignmentFlag = 0 
 			if csexpr() {
-				AddParameter(:Condition)
+				AddParameterFromSecondBuffer(:Condition)
 				oTarget.GenerateWhileExpr(self)
 				oTarget.GenerateBlockStart(self)
 				nAssignmentFlag = 1 
