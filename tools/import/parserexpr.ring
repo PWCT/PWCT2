@@ -14,6 +14,9 @@ class ParserExpr
 			while iskeyword(K_AND) 	or isoperator("&&")  	or 
 			      iskeyword(K_OR) 	or isoperator("||")  	{
 				if iskeyword(K_AND) or isoperator("&&") {
+					if iskeyword(K_AND) {
+						manualAddToTextBuffer2(" AND ")
+					}
 					nexttoken()
 					IGNORENEWLINE() 
 					x = logicnot()
@@ -21,6 +24,9 @@ class ParserExpr
 						return 0 
 					}
 				else
+					if iskeyword(K_OR) {
+						manualAddToTextBuffer2(" OR ")
+					}
 					nexttoken()
 					IGNORENEWLINE() 
 					x = logicnot()
@@ -36,6 +42,9 @@ class ParserExpr
 	func logicnot
 		/* LogicNot --> Not EqualOrNot */
 		if iskeyword(K_NOT) or isoperator2(OP_NOT) {
+			if iskeyword(K_NOT) {
+				manualAddToTextBuffer2(" NOT ")
+			}
 			nexttoken()
 			IGNORENEWLINE()
 		}
