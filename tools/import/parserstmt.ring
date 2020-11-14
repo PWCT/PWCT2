@@ -173,9 +173,10 @@ class ParserStmt
 			IGNORENEWLINE() 
 			nAssignmentFlag = 0 
 			if csexpr() {
-				AddParameterFromSecondBuffer(:Condition)
+				AddParameter(:Condition)
 				oTarget.GenerateIfExpr(self)
 				oTarget.GenerateBlockStart(self)
+				clearTextBuffer()
 				nAssignmentFlag = 1 
 				while stmt() {
 					if nActiveToken = nTokensCount {
@@ -190,9 +191,10 @@ class ParserStmt
 					nexttoken()
 					nAssignmentFlag = 0 
 					if expr() {
-						AddParameterFromSecondBuffer(:Condition)
+						AddParameter(:Condition)
 						oTarget.GenerateButExpr(self)
 						oTarget.GenerateBlockStart(self)
+						clearTextBuffer()
 						nAssignmentFlag = 1 
 						/* Generate Code */
 						while stmt() {
@@ -408,12 +410,13 @@ class ParserStmt
 			IGNORENEWLINE() 
 			nAssignmentFlag = 0 
 			if csexpr() {
-				addParameter(:Variable)
+				addParameterFromSecondBuffer(:Variable)
 				nAssignmentFlag = 1 
 				IGNORENEWLINE() 
 				/* ON|CASE Statements */
 				oTarget.GenerateSwitch(self)
 				oTarget.GenerateBlockStart(self)
+				clearTextBuffer()
 				while iskeyword(K_ON) or iskeyword(K_CASE) {
 					clearTextBuffer()
 					nexttoken()
@@ -421,9 +424,10 @@ class ParserStmt
 					if expr() {
 						nAssignmentFlag = 1 
 						/* Generate Code */
-						addParameter(:Value)
+						addParameterFromSecondBuffer(:Value)
 						oTarget.GenerateSwitchCase(self)
 						oTarget.GenerateBlockStart(self)
+						clearTextBuffer()
 						while stmt() {
 							if nActiveToken = nTokensCount {
 								exit
