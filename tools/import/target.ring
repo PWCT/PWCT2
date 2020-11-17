@@ -228,3 +228,12 @@ class Target
 					:Command = :Catch
 				], C_KEEPBUFFER )
 		}
+
+	 func GenerateAssignment oParser 
+		oParser {
+			Generate( [
+					:Command = :Assignment,
+					:LeftSide = Parameter(:LeftSide),
+					:RightSide = Parameter(:RightSide)
+				], C_CLEARBUFFER )
+		}

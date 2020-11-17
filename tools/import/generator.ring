@@ -85,5 +85,7 @@ class Generator
 					AddTry()
 				case :Catch
 					AddCatch()
+				case :Assignment
+					AddAssignment(aCommand[:LeftSide],aCommand[:RightSide])
 			}
 		}

@@ -333,6 +333,18 @@ class ParserExpr
 				nBeforeEqual = 0 
 			}
 			if lequal = 1  and nAssignmentFlag = 1 {
+				if nBeforeEqual = 0 {   # Operator: = 
+					AddParameterFromSecondBuffer(:LeftSide)
+					clearTextBuffer() 
+					nexttoken()
+					IGNORENEWLINE()
+					nNewObject = 0 
+					x = expr()
+					AddParameter(:RightSide)
+					oTarget.GenerateAssignment(self)
+					clearTextBuffer() 
+					return 0
+				}
 				nexttoken()
 				/* Generate Code */
 				IGNORENEWLINE() 
