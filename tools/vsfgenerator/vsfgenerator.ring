@@ -787,3 +787,21 @@ class VSFGenerator
 		PopParent()	# Try
 		aParents + nStepID_Catch
 		SetStepsParent()
+
+	/*
+		Assignment Component 
+	*/
+	func AddAssignment cLeftSide,cRightSide
+		# Use the Interaction Page
+			nIID = UseComponent("assignment",[
+				:leftside 		= cLeftSide,
+				:rightside 		= cRightSide
+			])
+		# Generate the Step and the Code
+			nStepNumber = 1
+			nStepID = AddGeneratedStep(nParentID,
+			T_CT_ASSIGNMENT_ST_SET + StyleData(cLeftSide) +
+			 " = " + StyleData(cRightSide)  ,
+			nIID,nStepNumber,C_STEPTYPE_ROOT)
+			oModel.SaveStepCode(nStepID, cLeftSide + " = " + cRightSide )
+			return nStepID
