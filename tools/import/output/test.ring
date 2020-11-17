@@ -1,7 +1,7 @@
 load "stdlib.ring"
 load "guilib.ring"
 import system.gui
-cname="ring"
+cname = "ring"
 one()
 two()three()
 test(1,2)
@@ -16,7 +16,7 @@ if 3=1+2 {
 	? "Nice work!"
 	? "Now the import feature works fine"
 } 
-x=10
+x = 10
 while x>0 { 
 	? "x = "+x
 	x--
@@ -41,16 +41,16 @@ for x=1 to 10 step 1 {
 		exit 1
 	} 
 } 
-alist=[1,2,3]
+alist = [1,2,3]
 for x in alist step 1 { 
 	? x
 } 
-x=10
+x = 10
 do x>0
 	? "x = "+x
 	x--
 again x>0
-x=3
+x = 3
 switch x { 
 	case 1
 		? "One"

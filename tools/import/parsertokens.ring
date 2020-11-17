@@ -27,9 +27,11 @@ class ParserTokens
 
 	func AddParameter cAttribute 
 		aInstructionParameters[cAttribute] = cBuffer
+		return cBuffer
 
 	func AddParameterFromSecondBuffer cAttribute 
 		aInstructionParameters[cAttribute] = cBuffer2
+		return cBuffer2
 
 	func Parameter cAttribute
 		return aInstructionParameters[cAttribute]

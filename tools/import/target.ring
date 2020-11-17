@@ -105,9 +105,14 @@ class Target
 
 	func GenerateExpressionCommand oParser 
 		oParser {
+			cExpr = Parameter(:Expression)
+			# Because we may have Assignment Component during expression
+				if Parameter(:LeftSide) != "" {
+					cExpr = Parameter(:LeftSide) + cExpr
+				}
 			Generate( [
 					:Command = :Expression,
-					:Expression = Parameter(:Expression)
+					:Expression = cExpr
 				], C_CLEARBUFFER )
 		}
 

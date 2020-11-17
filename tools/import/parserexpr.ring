@@ -340,10 +340,13 @@ class ParserExpr
 					IGNORENEWLINE()
 					nNewObject = 0 
 					x = expr()
-					AddParameter(:RightSide)
-					oTarget.GenerateAssignment(self)
-					clearTextBuffer() 
-					return 0
+					cRS = AddParameter(:RightSide)
+					if cRS != "" {
+						oTarget.GenerateAssignment(self)
+						clearTextBuffer() 
+						return 0
+					}
+					return x
 				}
 				nexttoken()
 				/* Generate Code */
