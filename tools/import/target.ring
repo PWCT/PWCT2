@@ -242,3 +242,10 @@ class Target
 					:RightSide = Parameter(:RightSide)
 				], C_CLEARBUFFER )
 		}
+
+	func GenerateUsingBraces oParser
+		oParser {
+			Generate( [
+					:Command = :UsingBraces
+				], C_CLEARBUFFER )
+		}

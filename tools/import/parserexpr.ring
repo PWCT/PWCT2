@@ -512,6 +512,8 @@ class ParserExpr
 				nexttoken()
 
 				GenerateStatementIsExpression()
+				oTarget.GenerateUsingBraces(self)
+				oTarget.GenerateBlockStart(self)
 
 				x = nAssignmentFlag 
 				x2 = nNewObject 
@@ -523,6 +525,9 @@ class ParserExpr
 						exit 
 					}
 				}
+
+				oTarget.GenerateBlockEnd(self)
+
 				nAssignmentFlag = x 
 				nNewObject = x2 
 				nBraceFlag = x3 
@@ -631,6 +636,8 @@ class ParserExpr
 			/* Generate Code */
 			nexttoken()
 			GenerateStatementIsExpression()
+			oTarget.GenerateUsingBraces(self)
+			oTarget.GenerateBlockStart(self)
 			nStatus = nAssignmentFlag 
 			nAssignmentFlag = 1 
 			while stmt() {
@@ -638,6 +645,7 @@ class ParserExpr
 					exit
 				}
 			}
+			oTarget.GenerateBlockEnd(self)
 			nAssignmentFlag = nStatus 
 			if isoperator2(OP_BRACECLOSE) {
 				nBraceFlag-- 

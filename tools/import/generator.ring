@@ -87,5 +87,7 @@ class Generator
 					AddCatch()
 				case :Assignment
 					AddAssignment(aCommand[:LeftSide],aCommand[:RightSide])
+				case :UsingBraces
+					AddUsingBraces()
 			}
 		}
