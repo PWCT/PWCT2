@@ -467,6 +467,7 @@ class ParserExpr
 				IGNORENEWLINE() 
 				if isoperator2(OP_BRACEOPEN) {
 					GenerateStatementIsExpression()
+					clearTextBuffer()
 					x = mixer()
 					nNewObject = 1 
 					return x 
@@ -483,6 +484,10 @@ class ParserExpr
 					nFuncCallOnly = 0 
 					/* Generate Code (End Brace) */
 					IGNORENEWLINE() 
+
+					GenerateStatementIsExpression()
+					clearTextBuffer()
+
 					x = mixer()
 					nNewObject = 1 
 					return x 
@@ -510,7 +515,7 @@ class ParserExpr
 			/* Get Function Code */
 			if isoperator2(OP_BRACEOPEN) {
 				nexttoken()
-
+				RemoveCurrentTokenFromBuffer()
 				GenerateStatementIsExpression()
 				oTarget.GenerateUsingBraces(self)
 				oTarget.GenerateBlockStart(self)
@@ -533,6 +538,7 @@ class ParserExpr
 				nBraceFlag = x3 
 				if isoperator2(OP_BRACECLOSE) {
 					nexttoken()
+					RemoveCurrentTokenFromBuffer()
 					/* Generate Code */
 					return 1 
 				}
@@ -635,6 +641,7 @@ class ParserExpr
 			nBraceFlag++ 
 			/* Generate Code */
 			nexttoken()
+			RemoveCurrentTokenFromBuffer()			
 			GenerateStatementIsExpression()
 			oTarget.GenerateUsingBraces(self)
 			oTarget.GenerateBlockStart(self)
@@ -654,6 +661,7 @@ class ParserExpr
 				**  if ismethod(self,"braceend") braceend() ok 
 				*/
 				nexttoken()
+				RemoveCurrentTokenFromBuffer()
 				x = mixer()
 				return x 
 			else

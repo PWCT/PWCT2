@@ -110,6 +110,8 @@ class Target
 				if Parameter(:LeftSide) != "" {
 					cExpr = Parameter(:LeftSide) + cExpr
 				}
+			# Don't generate empty lines
+				if trim(cExpr) = "" { return }
 			Generate( [
 					:Command = :Expression,
 					:Expression = cExpr

@@ -68,17 +68,23 @@ catch
 	? "Catch the error"
 } 
 import myfirstpackage
-myobj= new myclass(){
-myobj.myclass_m1()
-myobj.myclass_m2()
+myobj= new myclass()
+{
+	myobj.myclass_m1()
+	myobj.myclass_m2()
 }
-myfunc= func {
-? "test"
+myfunc = func {
+	? "test"
 }
 call myfunc()
-myobj2= new myclass(){
-myclass_m1()
-myclass_m2()
+myobj2= new myclass()
+{
+	myclass_m1()
+	myclass_m2()
+}
+myobj3= new myclass
+{
+	? "just a test!"
 }
 ? "Thanks"
 ? "End of program!"

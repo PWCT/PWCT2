@@ -93,6 +93,9 @@ myobj2 = new myclass() {
 	myclass_m2()
 }
 
+myobj3 = new myclass {
+	? "just a test!"
+}
 
 ? "Thanks"
 ? "End of program!"
