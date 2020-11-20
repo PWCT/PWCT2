@@ -340,11 +340,16 @@ class ParserExpr
 					IGNORENEWLINE()
 					nNewObject = 0 
 					x = expr()
-					cRS = AddParameter(:RightSide)
+					cRS = AddParameterFromSecondBuffer(:RightSide)
 					if cRS != "" {
+						# Remove '=' operator  in the start 
+							if left(cRS,1) = "=" { 
+								cRS = substr(cRS,2) 
+								aInstructionParameters[:RightSide] = cRS
+							}
 						oTarget.GenerateAssignment(self)
 						clearTextBuffer() 
-						return 0
+						return x
 					}
 					return x
 				}

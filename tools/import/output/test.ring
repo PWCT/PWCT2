@@ -73,7 +73,8 @@ myobj= new myclass()
 	myobj.myclass_m1()
 	myobj.myclass_m2()
 }
-myfunc = func {
+myfunc= func 
+{
 	? "test"
 }
 call myfunc()
