@@ -477,6 +477,8 @@ class ParserExpr
 					nNewObject = 1 
 					return x 
 				elseif isoperator2(OP_FOPEN)
+
+
 					/*
 					**  Calling the init method using { } 
 					**  Generate Code (Start Brace) 
@@ -489,7 +491,6 @@ class ParserExpr
 					nFuncCallOnly = 0 
 					/* Generate Code (End Brace) */
 					IGNORENEWLINE() 
-
 					GenerateStatementIsExpression()
 					clearTextBuffer()
 
@@ -519,9 +520,10 @@ class ParserExpr
 			}
 			/* Get Function Code */
 			if isoperator2(OP_BRACEOPEN) {
-				nexttoken()
-				RemoveCurrentTokenFromBuffer()
 				GenerateStatementIsExpression()
+				nexttoken()
+				//RemoveCurrentTokenFromBuffer()
+				clearTextBuffer()
 				oTarget.GenerateUsingBraces(self)
 				oTarget.GenerateBlockStart(self)
 
@@ -543,7 +545,8 @@ class ParserExpr
 				nBraceFlag = x3 
 				if isoperator2(OP_BRACECLOSE) {
 					nexttoken()
-					RemoveCurrentTokenFromBuffer()
+					clearTextBuffer()
+					//RemoveCurrentTokenFromBuffer()
 					/* Generate Code */
 					return 1 
 				}
@@ -645,9 +648,9 @@ class ParserExpr
 		if isoperator2(OP_BRACEOPEN) and nControlStructureExpr = 0 {
 			nBraceFlag++ 
 			/* Generate Code */
-			nexttoken()
 			RemoveCurrentTokenFromBuffer()			
 			GenerateStatementIsExpression()
+			nexttoken()
 			oTarget.GenerateUsingBraces(self)
 			oTarget.GenerateBlockStart(self)
 			nStatus = nAssignmentFlag 
@@ -665,8 +668,9 @@ class ParserExpr
 				**  Generate Code 
 				**  if ismethod(self,"braceend") braceend() ok 
 				*/
+				//RemoveCurrentTokenFromBuffer()
 				nexttoken()
-				RemoveCurrentTokenFromBuffer()
+				clearTextBuffer()
 				x = mixer()
 				return x 
 			else

@@ -127,8 +127,12 @@ class ParserTokens
 		}
 
 	func RemoveCurrentTokenFromBuffer
-		cBuffer = left(cBuffer,len(cBuffer)-len(cTokenValue))
-		cBuffer2 = left(cBuffer2,len(cBuffer2)-len(cTokenValue))
+		if right(cBuffer,len(cTokenValue)) = cTokenValue {
+			cBuffer = left(cBuffer,len(cBuffer)-len(cTokenValue))
+		}
+		if right(cBuffer2,len(cTokenValue)) = cTokenValue {
+			cBuffer2 = left(cBuffer2,len(cBuffer2)-len(cTokenValue))
+		}
 
 	func isKeyword cKeyword
 		return nTokenType = C_KEYWORD and 
