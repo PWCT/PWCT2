@@ -101,7 +101,7 @@ class ParserStmt
 							IGNORENEWLINE() 
 							nAssignmentFlag = 0 
 							if csexpr() {
-								addParameter(:To)
+								addParameterFromSecondBuffer(:To)
 								clearTextBuffer()
 								nAssignmentFlag = 1 
 								/* Generate Code */
