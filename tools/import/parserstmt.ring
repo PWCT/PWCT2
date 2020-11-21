@@ -98,10 +98,10 @@ class ParserStmt
 						*/
 						if iskeyword(K_TO) {
 							nexttoken()
-							addParameter(:To)
 							IGNORENEWLINE() 
 							nAssignmentFlag = 0 
 							if csexpr() {
+								addParameter(:To)
 								clearTextBuffer()
 								nAssignmentFlag = 1 
 								/* Generate Code */
