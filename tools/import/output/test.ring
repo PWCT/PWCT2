@@ -89,7 +89,10 @@ myobj3= new myclass
 }
 ? "Thanks"
 ? "End of program!"
-shutdown(0)
+myend()
+func myend  { 
+	shutdown(0)
+} 
 func one  { 
 	? "hello from one"
 } 

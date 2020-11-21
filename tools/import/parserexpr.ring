@@ -365,7 +365,7 @@ class ParserExpr
 				return 1 
 			}
 			/* Generate Code */
-			return 1 
+			return 1
 		}
 		/* Factor - Number */
 		if isnumber() {
@@ -613,7 +613,7 @@ class ParserExpr
 				/* Generate Code */
 				IGNORENEWLINE() 
 				x = mixer()
-				return x 
+				return x
 			}
 			while True {
 				nFlag = nAssignmentFlag 

@@ -484,8 +484,11 @@ class ParserStmt
 		if expr() {
 			if isOperator(")") {
 				NextToken()
-			}
+			} 
 			GenerateStatementIsExpression()
+			if isAnyKeyword() {
+				PrevToken()
+			}
 			return 1 
 		}
 		return 0

@@ -100,7 +100,10 @@ myobj3 = new myclass {
 ? "Thanks"
 ? "End of program!"
 
-bye
+myend()
+
+func myend
+	bye
 
 func one 
 	? "hello from one"
