@@ -486,7 +486,7 @@ class ParserStmt
 				NextToken()
 			} 
 			GenerateStatementIsExpression()
-			if isAnyKeyword() {
+			if isKeyword(K_FUNC) {
 				PrevToken()
 			}
 			return 1 
