@@ -254,9 +254,32 @@ class GoalDesignerView from WindowsViewParent
 	}	
 
   func StepsTreeStyle
-		return	"selection-color:"+C_STEPSTREE_SELECTIONCOLOR+
+		return	"QTreeWidget { selection-color:"+
+						C_STEPSTREE_SELECTIONCOLOR+
 						"; selection-background-color:"+
-						C_STEPSTREE_SELECTIONBACKGROUND+";"
+						C_STEPSTREE_SELECTIONBACKGROUND+
+						"; }" +
+						"
+							QTreeWidget::branch:has-siblings:!adjoins-item {
+							    border-image: url(images/stylesheet-vline.png) 0 ;
+							}
+							QTreeWidget::branch:has-siblings:adjoins-item {
+							    border-image: url(images/stylesheet-branch-more.png) 0 ;
+							}
+							QTreeWidget::branch:!has-children:!has-siblings:adjoins-item {
+							    border-image: url(images/stylesheet-branch-end.png) 0;
+							}
+							QTreeWidget::branch:has-children:!has-siblings:closed,
+							QTreeWidget::branch:closed:has-children:has-siblings {
+							        border-image: none;
+							        image: url(images/stylesheet-branch-closed.png);
+							}
+							QTreeWidget::branch:open:has-children:!has-siblings,
+							QTreeWidget::branch:open:has-children:has-siblings  {
+							        border-image: none;
+							        image: url(images/stylesheet-branch-open.png);
+							}
+						"
 
 	func StepsTreeWhiteAndBlackStyle nFontSize
 		return	'QTreeWidget { color: black; font-size: '+nFontSize+'pt  } '+
