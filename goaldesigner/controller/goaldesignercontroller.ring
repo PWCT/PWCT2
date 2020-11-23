@@ -912,7 +912,7 @@ class GoalDesignerController from WindowsControllerParent
 		else 
 			oView.oStepsTree {
 				lUseLabels = True
-				setstylesheet("selection-color:"+C_STEPSTREE_SECTIONCOLOR+
+				setstylesheet("selection-color:"+C_STEPSTREE_SELECTIONCOLOR+
 						"; selection-background-color:"+
 						C_STEPSTREE_SELECTIONBACKGROUND+";")
 			}

@@ -24,7 +24,7 @@ class GoalDesignerView from WindowsViewParent
 				# Because In window while inside dockable windows, doesn't work
 				oTreeFilter.setFocusInEvent(Method(:ActivateWindowAction))
 				installeventfilter(oTreeFilter)
-				setstylesheet("selection-color:"+C_STEPSTREE_SECTIONCOLOR+
+				setstylesheet("selection-color:"+C_STEPSTREE_SELECTIONCOLOR+
 						"; selection-background-color:"+
 						C_STEPSTREE_SELECTIONBACKGROUND+";")
 			}
@@ -269,7 +269,6 @@ class GoalDesignerView from WindowsViewParent
 		oPageDesignLayout.AddWidget(oStepsTree)
 		oStepsTree.SetFocus(0)
 
-
 	func MobileButtonSize oButton
 		oButton {
 			if PWCTIsMobile(:GoalDesignerButtonsSize) {
@@ -298,40 +297,10 @@ class GoalDesignerView from WindowsViewParent
 		oStepsTree.collapseitem(oItem)
 		oStepsTree.expanditem(oItem)
 
-
 	func PlayMovieIcon 
 		setBtnImage(btnPlay,AppFile("images/playmovie.png"))	
 
 	func StopMovieIcon
 		setBtnImage(btnPlay,AppFile("images/stopmovie.png"))	
 
-# In the steps tree 
-# The lines doesn't appear !
-/*
-setstylesheet("selection-color:black; selection-background-color:cyan;
-	branch:has-siblings:!adjoins-item {
-	    border-image: url(images/stylesheet-vline.png) ;
-	}
 	
-	branch:has-siblings:adjoins-item {
-	    border-image: url(images/stylesheet-branch-more.png);
-	}
-	
-	branch:!has-children:!has-siblings:adjoins-item {
-	    border-image: url(images/stylesheet-branch-end.png) ;
-	}
-	
-	branch:has-children:!has-siblings:closed,
-	branch:closed:has-children:has-siblings {
-	        border-image: none;
-	        image: url(images/stylesheet-branch-closed.png);
-	}
-	
-	branch:open:has-children:!has-siblings,
-	branch:open:has-children:has-siblings  {
-	        border-image: none;
-	        image: url(images/stylesheet-branch-open.png);
-	}
-	
-")
-*/
