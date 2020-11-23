@@ -154,9 +154,50 @@ class StepsColorsView from WindowsViewParent
 			Addwidget(btnDatabackcolor)			
 		}
 
+		lblStepsTreeBackColor = new QLabel(win) {
+			setText(T_SC_STEPSTREEBACKCOLOR) # "Steps Tree BackColor"
+		}
+
+		btnStepsTreeBackColor = new QPushButton(win) {
+			setText(" :: ")
+			setStyleSheet("background-color:" + C_STEPSTREE_BACKCOLOR )
+			setClickevent(Method("ColorAction(11)"))
+		}
+
+		LayoutStepsTreeBackColor = new QHboxlayout() {
+			Addwidget(lblStepsTreeBackColor)
+			Addwidget(btnStepsTreeBackColor)			
+		}
+
+		lblIndentation = new QLabel(win) {
+			setText(T_SC_INDENTATION) # "Indentation"
+		}
+
+		txtIndentation = new QLineEdit(win) {
+			setText(string(C_STEPSTREE_INDENTATION))
+			setTextChangedEvent(Method(:SetIndentation))
+		}
+
+		LayoutIndentation = new QHboxlayout() {
+			Addwidget(lblIndentation)
+			Addwidget(txtIndentation)			
+		}
+
+		checkStepsTreeLines = new QCheckBox(win) {
+			setText(T_SC_STEPSTREELINES) # "Show Steps Tree Lines"
+			setChecked(C_STEPSTREE_SHOWLINES)
+			setStateChangedEvent(Method(:StepsTreeLines))
+		} 
+
 		btnClose = new qpushbutton(win) {
 			setText(T_SC_CLOSE) # "Close"
 			setclickevent(Method(:closeAction))
+		}
+
+		LayoutGeneral = new qHBoxlayout() {
+			AddLayout(layoutStepsTreeBackColor)
+			AddLayout(LayoutIndentation)
+			AddWidget(checkStepsTreeLines)
 		}
 
 		LayoutAll = new qVBoxlayout() {
@@ -166,6 +207,7 @@ class StepsColorsView from WindowsViewParent
 			Addlayout(layoutHAllowInteraction)
 			Addlayout(layoutHLeaf)
 			Addlayout(layoutHData)
+			AddLayout(layoutGeneral)
 			AddWidget(btnClose)
 		}
 		

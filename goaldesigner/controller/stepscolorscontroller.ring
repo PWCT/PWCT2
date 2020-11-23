@@ -64,6 +64,22 @@ class StepsColorsController from WindowsControllerParent
 			case 10
 				oView.btnDataBackColor.setstylesheet("background-color: "+cColor)
 				C_STEPCOLOR_DATA_BACKCOLOR = cColor
+			case 11
+				oView.btnStepsTreeBackColor.setstylesheet("background-color: "+cColor)
+				C_STEPSTREE_BACKCOLOR = cColor
 		}
-
 		parent().refreshStepsTree()
+
+	func StepsTreeLines 
+		C_STEPSTREE_SHOWLINES = oView.checkStepsTreeLines.checkState()
+		parent().refreshStepsTree()
+
+	func SetIndentation 
+		nValue = number(oView.txtIndentation.text())
+		if nValue >= 10 and nValue < 100 {
+			oView.txtIndentation.setStyleSheet("background-color:white;")
+			C_STEPSTREE_INDENTATION = nValue 
+			parent().refreshStepsTree()
+		else 
+			oView.txtIndentation.setStyleSheet("background-color:red;")
+		}

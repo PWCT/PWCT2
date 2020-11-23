@@ -216,6 +216,9 @@
 	T_SC_TYPELEAF = "الخطوات التى لا تحتوى على خطوات فرعية"
 	T_SC_TYPEDATA = "البيانات المدخلة فى شاشات التفاعل "
 	T_SC_CLOSE = "إغلاق"
+	T_SC_STEPSTREEBACKCOLOR = "لون خلفية شجرة الخطوات"	
+	T_SC_INDENTATION = "المحاذاة"
+	T_SC_STEPSTREELINES = "إظهار خطوط شجرة الخطوات"
 
 # Components Browser Window
 

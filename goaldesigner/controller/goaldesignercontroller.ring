@@ -855,6 +855,8 @@ class GoalDesignerController from WindowsControllerParent
 	func RefreshStepsTree2 aStepsTree
 		oView.oStepsTree.setUpdatesEnabled(False)
 		oView.oStepsTree.blockSignals(True)
+		# Indentation 
+			oView.oStepsTree.setIndentation(C_STEPSTREE_INDENTATION)
 		# Set the font
 			oView.oStepsTree.PrepareFont()
 		# Remove the current Steps From the Tree Control

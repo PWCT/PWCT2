@@ -641,6 +641,9 @@ class EnvironmentController from WindowsControllerParent
 				"C_STEPCOLOR_DATA_BACKCOLOR = '" + C_STEPCOLOR_DATA_BACKCOLOR + "'" + nl + 
 				"C_STEPSTREE_SELECTIONCOLOR = '" + C_STEPSTREE_SELECTIONCOLOR + "'" + nl + 
 				"C_STEPSTREE_SELECTIONBACKGROUND = '" + C_STEPSTREE_SELECTIONBACKGROUND + "'" + nl + 
+				"C_STEPSTREE_BACKCOLOR = '" + C_STEPSTREE_BACKCOLOR + "'" + nl + 
+				"C_STEPSTREE_SHOWLINES = " + C_STEPSTREE_SHOWLINES + nl + 
+				"C_STEPSTREE_INDENTATION = " + C_STEPSTREE_INDENTATION + nl + 
 				"C_COMPONENTSBROWSER_COLOR = '" + C_COMPONENTSBROWSER_COLOR + "'" + nl + 
 				"C_INTERACTIONPAGE_TITLECOLOR = '" + C_INTERACTIONPAGE_TITLECOLOR + "'" + nl + 
 				"C_INTERACTIONPAGE_TITLEBACKCOLOR = '" + C_INTERACTIONPAGE_TITLEBACKCOLOR + "'" + nl + 
@@ -701,7 +704,9 @@ class EnvironmentController from WindowsControllerParent
 		ComponentsBrowserFont()
 		ComponentsFont()
 		FilesTreeFont()
+		cColor = C_STEPSTREE_BACKCOLOR
 		SetStyle(C_ENV_DEFAULT_STYLE)
+		C_STEPSTREE_BACKCOLOR = cColor
 		if ! PWCTIsMobile(:DefaultMode) {
 			SetMode(C_ENV_DEFAULT_MODE)
 		}

@@ -217,6 +217,9 @@
 	T_SC_TYPELEAF = "The generated step is Leaf"
 	T_SC_TYPEDATA = "Written Data In Interaction Pages"
 	T_SC_CLOSE = "Close"
+	T_SC_STEPSTREEBACKCOLOR = "Steps Tree BackColor"	
+	T_SC_INDENTATION = "Indentation"
+	T_SC_STEPSTREELINES = "Show Steps Tree Lines"
 
 # Components Browser Window
 
