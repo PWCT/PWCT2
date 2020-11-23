@@ -259,6 +259,8 @@ class GoalDesignerView from WindowsViewParent
 						C_STEPSTREE_SELECTIONCOLOR+
 						"; selection-background-color:"+
 						C_STEPSTREE_SELECTIONBACKGROUND+
+						"; background-color: " + 
+						C_STEPSTREE_BACKCOLOR+
 						"; }" 
 		if C_STEPSTREE_SHOWLINES { 
 		cStepsTreeStyle += "
