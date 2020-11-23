@@ -707,6 +707,7 @@ class EnvironmentController from WindowsControllerParent
 		cColor = C_STEPSTREE_BACKCOLOR
 		SetStyle(C_ENV_DEFAULT_STYLE)
 		C_STEPSTREE_BACKCOLOR = cColor
+		parent().refreshStepsTree()
 		if ! PWCTIsMobile(:DefaultMode) {
 			SetMode(C_ENV_DEFAULT_MODE)
 		}
