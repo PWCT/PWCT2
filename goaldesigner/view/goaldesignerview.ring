@@ -24,9 +24,7 @@ class GoalDesignerView from WindowsViewParent
 				# Because In window while inside dockable windows, doesn't work
 				oTreeFilter.setFocusInEvent(Method(:ActivateWindowAction))
 				installeventfilter(oTreeFilter)
-				setstylesheet("selection-color:"+C_STEPSTREE_SELECTIONCOLOR+
-						"; selection-background-color:"+
-						C_STEPSTREE_SELECTIONBACKGROUND+";")
+				setstylesheet(this.StepsTreeStyle())
 			}
 			oPageDesignLayout = new qVBoxLayout() {
 				AddWidget(oStepsTree)
@@ -255,6 +253,15 @@ class GoalDesignerView from WindowsViewParent
 
 	}	
 
+  func StepsTreeStyle
+		return	"selection-color:"+C_STEPSTREE_SELECTIONCOLOR+
+						"; selection-background-color:"+
+						C_STEPSTREE_SELECTIONBACKGROUND+";"
+
+	func StepsTreeWhiteAndBlackStyle nFontSize
+		return	'QTreeWidget { color: black; font-size: '+nFontSize+'pt  } '+
+						'QTreeWidget::!active { selection-background-color:rgba(0,65,255,255) ; selection-color:white; } ; ' 
+
 	func CreateStepsTree oController
 		oStepsTree = new StepsTreeView(oPageDesign) {
 			setExpandsOnDoubleClick(False)
@@ -264,7 +271,7 @@ class GoalDesignerView from WindowsViewParent
 			//oTreeFilter.setKeyPressEvent(oController.Method(:TreeKeyPress))
 			//oTreeFilter.setFocusInEvent(oController.Method(:ActivateWindowAction))
 			installeventfilter(this.oTreeFilter)
-			setstylesheet("selection-color:black; selection-background-color:cyan;")
+			setstylesheet(this.StepsTreeStyle())
 		}
 		oPageDesignLayout.AddWidget(oStepsTree)
 		oStepsTree.SetFocus(0)

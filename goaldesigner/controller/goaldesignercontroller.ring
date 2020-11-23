@@ -904,17 +904,12 @@ class GoalDesignerController from WindowsControllerParent
 		if nMax > this.nMaxStepsCount and lUseMaxStepsCount {
 			oView.oStepsTree {
 				lUseLabels = False
-				setStyleSheet(
-				'QTreeWidget { color: black; font-size: '+nFontSize+'pt  } '+
-				'QTreeWidget::!active { selection-background-color:rgba(0,65,255,255) ; selection-color:white; } ; ' 
-				 )
+				setStyleSheet(this.oView.StepsTreeWhiteAndBlackStyle(nFontSize))
 			}
 		else 
 			oView.oStepsTree {
 				lUseLabels = True
-				setstylesheet("selection-color:"+C_STEPSTREE_SELECTIONCOLOR+
-						"; selection-background-color:"+
-						C_STEPSTREE_SELECTIONBACKGROUND+";")
+				setstylesheet(this.oView.StepsTreeStyle())
 			}
 		}
 		oView.oStepsTree.preparetempfont()
