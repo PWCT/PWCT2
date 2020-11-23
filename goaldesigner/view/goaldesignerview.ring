@@ -254,12 +254,13 @@ class GoalDesignerView from WindowsViewParent
 	}	
 
   func StepsTreeStyle
-		return	"QTreeWidget { selection-color:"+
+		cStepsTreeStyle =	"QTreeWidget { selection-color:"+
 						C_STEPSTREE_SELECTIONCOLOR+
 						"; selection-background-color:"+
 						C_STEPSTREE_SELECTIONBACKGROUND+
-						"; }" +
-						"
+						"; }" 
+		if C_STEPSTREE_SHOWLINES { 
+		cStepsTreeStyle += "
 							QTreeWidget::branch:has-siblings:!adjoins-item {
 							    border-image: url(images/stylesheet-vline.png) 0 ;
 							}
@@ -280,6 +281,9 @@ class GoalDesignerView from WindowsViewParent
 							        image: url(images/stylesheet-branch-open.png);
 							}
 						"
+				}
+		return cStepsTreeStyle
+
 
 	func StepsTreeWhiteAndBlackStyle nFontSize
 		return	'QTreeWidget { color: black; font-size: '+nFontSize+'pt  } '+
