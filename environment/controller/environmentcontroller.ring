@@ -1112,6 +1112,7 @@ class EnvironmentController from WindowsControllerParent
 			on C_ENV_STYLE_BLACKB
 				StyleFusionBlack()
 				StyleColorBlocks()
+				C_COMPONENTSBROWSER_COLOR		= "white"
 				C_STEPSTREE_BACKCOLOR	= "white"
 		}
 		parent().ComponentsBrowserWindow().oView.oComponentsTree.TreeStyle()
