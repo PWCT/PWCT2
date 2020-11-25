@@ -213,7 +213,9 @@ class ComponentViewParent from WindowsViewParent
 			AddWidget(oBtnAgain) AddWidget(oBtnOk) AddWidget(oBtnClose)
 		}
 	 	oLayoutAll.AddLayout(oLayoutButtons)
-		//oLayoutAll.insertStretch( -1, 1 )
+		if C_PROPERTIES_REMOVEVERTICALSPACESBETWEENCONTROLSININTERACTIONPAGES {
+			oLayoutAll.insertStretch( -1, 1 )
+		}
 
 	/*
 		Purpose : Get Variable Value from the Interaction page
