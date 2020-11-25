@@ -701,9 +701,17 @@ class EnvironmentController from WindowsControllerParent
 		}
 
 		GoalDesignerFont()
-		ComponentsBrowserFont()
-		ComponentsFont()
-		FilesTreeFont()
+
+		if PWCTISMobile(:REFLECTCHANGEINFONTSIZE) {
+			C_PROPERTIES_REFLECTCHANGEINFONTSIZE = True
+		}
+
+		if C_PROPERTIES_REFLECTCHANGEINFONTSIZE { 
+			ComponentsBrowserFont()
+			ComponentsFont()
+			FilesTreeFont()
+		}
+
 		cColor = C_STEPSTREE_BACKCOLOR
 		SetStyle(C_ENV_DEFAULT_STYLE)
 		C_STEPSTREE_BACKCOLOR = cColor
