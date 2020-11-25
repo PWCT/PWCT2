@@ -162,6 +162,9 @@ class GoalDesignerView from WindowsViewParent
 			}
 		}
 		layoutVPages = new qVBoxLayout()
+		if C_PROPERTIES_REMOVEVERTICALSPACESBETWEENINTERACTIONPAGES {
+			layoutVPages.insertStretch( -1, 1 )
+		}
 		layoutCB = new qVBoxLayout()
 		widgetCB = new qWidget() {
 			setLayout(layoutCB)
