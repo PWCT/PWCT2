@@ -1,4 +1,4 @@
-call b:\ring\bin\../src/locatevc.bat
+call b:\ring\language\src\locatevc.bat
 
 cls
 
