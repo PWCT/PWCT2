@@ -1,6 +1,6 @@
 /* Copyright (c) 2013-2020 Mahmoud Fayed <msfclipper@yahoo.com> */
 
-#define RINGFORMOBILE_CLEARSCREEN	0
+#define RINGFORMOBILE_CLEARSCREEN	1
 #define RINGFORMOBILE_WRITERINGOFILE	0
 
 #include <QApplication>
@@ -94,8 +94,9 @@ int main(int argc, char *argv[])
 	
     #if RINGFORMOBILE_CLEARSCREEN == 1
     	QWidget waiting ;
-    	waiting.setStyleSheet("background-color:black;");
-    	waiting.show();
+	    waiting.setStyleSheet("background: url(:/images/pwctlogo.jpg) no-repeat center center fixed;");
+		waiting.show();
+		a.processEvents();
     #endif
 
     // Create Ring State and register functions
