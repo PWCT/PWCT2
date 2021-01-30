@@ -13,8 +13,7 @@ set ANDROID_NDK_HOST=windows-x86_64
 call C:\Qt\Qt5.12.6\5.12.6\mingw73_32\bin\qtenv2.bat
 b:
 cd pwct2\target\mobile\qtproject
-mingw32-make install INSTALL_ROOT=B:/pwct2/target/mobile/qtproject/build-android
-
-"C:\Qt\Qt5.12.6\5.12.6\android_armv7\bin\androiddeployqt.exe" --input %cd%/android-libPWCT.so-deployment-settings.json --output  %cd%/build-android --android-platform android-19 --jdk "C:/Program Files (x86)/Java/jdk1.8.0_05" --gradle
+mingw32-make install INSTALL_ROOT=B:/pwct2/target/mobile/qtproject/build-android/
+"C:\Qt\Qt5.12.6\5.12.6\android_armv7\bin\androiddeployqt.exe" --input %cd%/android-libproject.so-deployment-settings.json --output  %cd%/build-android --android-platform android-19 --jdk "C:/Program Files (x86)/Java/jdk1.8.0_05" --gradle
 
 cd ..\..\..\
