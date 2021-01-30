@@ -13,7 +13,7 @@ qtHaveModule(webengine) {
 
 DEPLOYMENT_PLUGIN += qsqlite
 
-TARGET = project
+TARGET = PWCT
 TEMPLATE = app
 
 DEFINES -= UNICODE
