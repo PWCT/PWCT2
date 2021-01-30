@@ -110,12 +110,16 @@
 
 # Enviroment Mode
 	C_ENV_MODE_GENERAL			= 1
-	C_ENV_MODE_TESTING		= 2
+	C_ENV_MODE_TESTING			= 2
 	C_ENV_MODE_LEFT				= 3
 	C_ENV_MODE_RIGHT			= 4
 	C_ENV_MODE_GD				= 5
 	C_ENV_MODE_GUI				= 6
-	C_ENV_DEFAULT_MODE			= C_ENV_MODE_GENERAL
+	if isWebAssembly() {
+		C_ENV_DEFAULT_MODE			= C_ENV_MODE_LEFT
+	else
+		C_ENV_DEFAULT_MODE			= C_ENV_MODE_GENERAL
+	}
 
 # Environment Style
 	C_ENV_STYLE_WINDOWS 		= 1
