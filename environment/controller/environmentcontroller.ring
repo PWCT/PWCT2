@@ -720,6 +720,12 @@ class EnvironmentController from WindowsControllerParent
 			SetMode(C_ENV_DEFAULT_MODE)
 		}
 
+		if isWebAssembly() {
+			SetMode(C_ENV_MODE_LEFT)
+			oView.oDockFilesManager.hide()
+		}
+
+
 	func GoalDesignerFont
 		# Set The Goal Designer Font
 			parent().cFont = cFont
