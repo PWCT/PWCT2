@@ -25,7 +25,9 @@ class GoalDesignerView from WindowsViewParent
 				oTreeFilter.setFocusInEvent(Method(:ActivateWindowAction))
 				installeventfilter(oTreeFilter)
 				setstylesheet(this.StepsTreeStyle())
-				setindentation(C_STEPSTREE_INDENTATION)
+				if not PWCTIsMobile(:StepsTreeIndentation) {
+					setindentation(C_STEPSTREE_INDENTATION)
+				}
 			}
 			oPageDesignLayout = new qVBoxLayout() {
 				AddWidget(oStepsTree)
