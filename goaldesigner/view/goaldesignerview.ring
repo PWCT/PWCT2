@@ -257,37 +257,61 @@ class GoalDesignerView from WindowsViewParent
 
 	}	
 
-  func StepsTreeStyle
+	func StepsTreeStyle
 		cStepsTreeStyle =	"QTreeWidget { selection-color:"+
-						C_STEPSTREE_SELECTIONCOLOR+
-						"; selection-background-color:"+
-						C_STEPSTREE_SELECTIONBACKGROUND+
-						"; background-color: " + 
-						C_STEPSTREE_BACKCOLOR+
-						"; }" 
+			C_STEPSTREE_SELECTIONCOLOR+
+				"; selection-background-color:"+
+				C_STEPSTREE_SELECTIONBACKGROUND+
+				"; background-color: " + 
+				C_STEPSTREE_BACKCOLOR+
+				"; }" 
 		if C_STEPSTREE_SHOWLINES { 
-		cStepsTreeStyle += "
-							QTreeWidget::branch:has-siblings:!adjoins-item {
-							    border-image: url(images/stylesheet-vline.png) 0 ;
-							}
-							QTreeWidget::branch:has-siblings:adjoins-item {
-							    border-image: url(images/stylesheet-branch-more.png) 0 ;
-							}
-							QTreeWidget::branch:!has-children:!has-siblings:adjoins-item {
-							    border-image: url(images/stylesheet-branch-end.png) 0;
-							}
-							QTreeWidget::branch:has-children:!has-siblings:closed,
-							QTreeWidget::branch:closed:has-children:has-siblings {
-							        border-image: none;
-							        image: url(images/stylesheet-branch-closed.png);
-							}
-							QTreeWidget::branch:open:has-children:!has-siblings,
-							QTreeWidget::branch:open:has-children:has-siblings  {
-							        border-image: none;
-							        image: url(images/stylesheet-branch-open.png);
-							}
-						"
+			if PWCTIsMobile(:GoalDesignerStepsTreeLines) {
+				cStepsTreeStyle += "
+				QTreeWidget::branch:has-siblings:!adjoins-item {
+				    border-image: url(:/images/stylesheet-vline.png) 0 ;
 				}
+				QTreeWidget::branch:has-siblings:adjoins-item {
+				    border-image: url(:/images/stylesheet-branch-more.png) 0 ;
+				}
+				QTreeWidget::branch:!has-children:!has-siblings:adjoins-item {
+				    border-image: url(:/images/stylesheet-branch-end.png) 0;
+				}
+				QTreeWidget::branch:has-children:!has-siblings:closed,
+				QTreeWidget::branch:closed:has-children:has-siblings {
+				        border-image: none;
+				        image: url(:/images/stylesheet-branch-closed.png);
+				}
+				QTreeWidget::branch:open:has-children:!has-siblings,
+				QTreeWidget::branch:open:has-children:has-siblings  {
+				        border-image: none;
+				        image: url(:/images/stylesheet-branch-open.png);
+				}
+				"
+			else	
+				cStepsTreeStyle += "
+				QTreeWidget::branch:has-siblings:!adjoins-item {
+				    border-image: url(images/stylesheet-vline.png) 0 ;
+				}
+				QTreeWidget::branch:has-siblings:adjoins-item {
+				    border-image: url(images/stylesheet-branch-more.png) 0 ;
+				}
+				QTreeWidget::branch:!has-children:!has-siblings:adjoins-item {
+				    border-image: url(images/stylesheet-branch-end.png) 0;
+				}
+				QTreeWidget::branch:has-children:!has-siblings:closed,
+				QTreeWidget::branch:closed:has-children:has-siblings {
+				        border-image: none;
+				        image: url(images/stylesheet-branch-closed.png);
+				}
+				QTreeWidget::branch:open:has-children:!has-siblings,
+				QTreeWidget::branch:open:has-children:has-siblings  {
+				        border-image: none;
+				        image: url(images/stylesheet-branch-open.png);
+				}
+				"
+			}
+		}
 		return cStepsTreeStyle
 
 
