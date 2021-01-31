@@ -139,9 +139,14 @@ class GoalDesignerView from WindowsViewParent
 			self.mobileButtonSize(btnModify)
 		}		
 		setBtnImage(btnModify,AppFile("images/edit.png"))
-		labelTM = new qLabel(win) { setText(T_GD_THETIMEMACHINE) } # "The Time Machine"
+		if not PWCTIsMobile(:TimeMachineLabel) {
+			labelTM = new qLabel(win) { setText(T_GD_THETIMEMACHINE) } # "The Time Machine"
+		}
 		btnPlay = new qPushButton(win) { # "Play As Movie"
 			self.mobileButtonSize(btnPlay)
+			if PWCTIsMobile(:PlayAsMovieWidth) {
+				setMinimumwidth(200)	
+			}
 			setClickEvent(Method(:PlayMovie))
 		}
 		timerTM = new qTimer(win) {

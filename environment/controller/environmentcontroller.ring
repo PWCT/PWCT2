@@ -53,6 +53,11 @@ class EnvironmentController from WindowsControllerParent
 
 	cFormFile = ""
 
+	if PWCTISMobile(:REFLECTCHANGEINFONTSIZE) {
+		C_PROPERTIES_REFLECTCHANGEINFONTSIZE = True
+	}
+
+
 	oView = new EnvironmentView
 
 	SetParents()
@@ -701,10 +706,6 @@ class EnvironmentController from WindowsControllerParent
 		}
 
 		GoalDesignerFont()
-
-		if PWCTISMobile(:REFLECTCHANGEINFONTSIZE) {
-			C_PROPERTIES_REFLECTCHANGEINFONTSIZE = True
-		}
 
 		if C_PROPERTIES_REFLECTCHANGEINFONTSIZE { 
 			ComponentsBrowserFont()
