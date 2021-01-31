@@ -72,7 +72,6 @@ class GoalDesignerController from WindowsControllerParent
 		aBackupBuffer 		= []
 		aBackupInteraction 	= []
 
-
 	/*
 		Purpose : Show the Window
 		Parameters : None

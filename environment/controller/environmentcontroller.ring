@@ -53,11 +53,6 @@ class EnvironmentController from WindowsControllerParent
 
 	cFormFile = ""
 
-	if PWCTISMobile(:REFLECTCHANGEINFONTSIZE) {
-		C_PROPERTIES_REFLECTCHANGEINFONTSIZE = True
-	}
-
-
 	oView = new EnvironmentView
 
 	SetParents()

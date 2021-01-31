@@ -72,52 +72,7 @@ class GoalDesignerView from WindowsViewParent
 			self.mobileButtonSize(btnMoveStepDown)		
 		}
 		setBtnImage(btnMoveStepDown,AppFile("images/down.png"))
-		/*
-		if not PWCTIsMobile(:DisplayPrintButton) {
-			btnPrintSteps = new qPushButton(win) {
-				setToolTip(T_GD_PRINTSTEPS)
-				setClickEvent(Method(:PrintStepsAction))	
-				self.mobileButtonSize(btnPrintSteps)		
-			}
-			setBtnImage(btnPrintSteps,AppFile("images/print.png"))
-		}
-		*/
-		btnCutSteps = new qPushButton(win) {
-			setToolTip(T_GD_CUT)
-			setClickEvent(Method(:CutStepsAction))	
-			self.mobileButtonSize(btnCutSteps)		
-		}
-		setBtnImage(btnCutSteps,AppFile("images/cut.png"))
-		btnCopySteps = new qPushButton(win) {
-			setToolTip(T_GD_COPY)
-			setClickEvent(Method(:CopyStepsAction))	
-			self.mobileButtonSize(btnCopySteps)		
-		}
-		setBtnImage(btnCopySteps,AppFile("images/copy.png"))
-		btnPasteSteps = new qPushButton(win) {
-			setToolTip(T_GD_PASTE)
-			setClickEvent(Method(:PasteStepsAction))	
-			self.mobileButtonSize(btnPasteSteps)		
-		}
-		setBtnImage(btnPasteSteps,AppFile("images/paste.png"))
-		btnIncreaseSize = new qPushButton(win) {
-			setToolTip(T_GD_INCERASESIZE)
-			setClickEvent(Method(:IncreaseSizeAction))
-			self.mobileButtonSize(btnIncreaseSize)			
-		}
-		setBtnImage(btnIncreaseSize,AppFile("images/zoomin.png"))
-		btnDecreaseSize = new qPushButton(win) {
-			setToolTip(T_GD_DECREASESIZE)
-			setClickEvent(Method(:DecreaseSizeAction))
-			self.mobileButtonSize(btnDecreaseSize)			
-		}
-		setBtnImage(btnDecreaseSize,AppFile("images/zoomout.png"))
-		btnSearch = new qPushButton(win) {
-			setToolTip(T_GD_SEARCH)
-			setClickEvent(Method(:SearchAction))			
-			self.mobileButtonSize(btnSearch)
-		}
-		setBtnImage(btnSearch,AppFile("images/search.png"))
+
 		btnIgnore = new qPushButton(win) {
 			setToolTip(T_GD_COMMENTUNCOMMENT)
 			setClickEvent(Method(:IgnoreStepAction))
@@ -139,14 +94,56 @@ class GoalDesignerView from WindowsViewParent
 			self.mobileButtonSize(btnModify)
 		}		
 		setBtnImage(btnModify,AppFile("images/edit.png"))
+
+		if not PWCTIsMobile(:GoalDesignerButtons) {
+
+			btnCutSteps = new qPushButton(win) {
+				setToolTip(T_GD_CUT)
+				setClickEvent(Method(:CutStepsAction))	
+				self.mobileButtonSize(btnCutSteps)		
+			}
+			setBtnImage(btnCutSteps,AppFile("images/cut.png"))
+			btnCopySteps = new qPushButton(win) {
+				setToolTip(T_GD_COPY)
+				setClickEvent(Method(:CopyStepsAction))	
+				self.mobileButtonSize(btnCopySteps)		
+			}
+			setBtnImage(btnCopySteps,AppFile("images/copy.png"))
+			btnPasteSteps = new qPushButton(win) {
+				setToolTip(T_GD_PASTE)
+				setClickEvent(Method(:PasteStepsAction))	
+				self.mobileButtonSize(btnPasteSteps)		
+			}
+			setBtnImage(btnPasteSteps,AppFile("images/paste.png"))
+			btnIncreaseSize = new qPushButton(win) {
+				setToolTip(T_GD_INCERASESIZE)
+				setClickEvent(Method(:IncreaseSizeAction))
+				self.mobileButtonSize(btnIncreaseSize)			
+			}
+			setBtnImage(btnIncreaseSize,AppFile("images/zoomin.png"))
+			btnDecreaseSize = new qPushButton(win) {
+				setToolTip(T_GD_DECREASESIZE)
+				setClickEvent(Method(:DecreaseSizeAction))
+				self.mobileButtonSize(btnDecreaseSize)			
+			}
+			setBtnImage(btnDecreaseSize,AppFile("images/zoomout.png"))
+			btnSearch = new qPushButton(win) {
+				setToolTip(T_GD_SEARCH)
+				setClickEvent(Method(:SearchAction))			
+				self.mobileButtonSize(btnSearch)
+			}
+			setBtnImage(btnSearch,AppFile("images/search.png"))
+	
+
+		}
+
+
+
 		if not PWCTIsMobile(:TimeMachineLabel) {
 			labelTM = new qLabel(win) { setText(T_GD_THETIMEMACHINE) } # "The Time Machine"
 		}
 		btnPlay = new qPushButton(win) { # "Play As Movie"
 			self.mobileButtonSize(btnPlay)
-			if PWCTIsMobile(:PlayAsMovieWidth) {
-				setMinimumwidth(200)	
-			}
 			setClickEvent(Method(:PlayMovie))
 		}
 		timerTM = new qTimer(win) {
@@ -356,7 +353,7 @@ class GoalDesignerView from WindowsViewParent
 	func MobileButtonSize oButton
 		oButton {
 			if PWCTIsMobile(:GoalDesignerButtonsSize) {
-				setMinimumwidth(100)	
+				setMinimumwidth(150)	
 				setMinimumHeight(200)
 			}
 		}

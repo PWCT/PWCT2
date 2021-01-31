@@ -12,7 +12,11 @@ class ComponentsTreeView from StepsTreeView
 	cControlHeader 	= T_CB_COMPONENTSTREE 
 	cStartPointText = T_CB_RINGPWCT
 
-	nFontSize 	= 12
+	if PWCTIsMobile(:ComponentsBrowserFont) {
+		nFontSize 	= 20
+	else 
+		nFontSize 	= 12
+	}
 
 	# We create the Init Method to avoid adding the root two times
 	# As a result of nested call to AddStartPoint()
