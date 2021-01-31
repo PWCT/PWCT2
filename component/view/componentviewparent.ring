@@ -193,16 +193,19 @@ class ComponentViewParent from WindowsViewParent
 			setStyleSheet("font-size:"+this.nButtonsFontSize+"pt;")
 			setText(T_IP_AGAIN)	# "Again"
 			setClickEvent( Method(:AgainAction) )
+			this.MobileButtonSize(self)
 		}
 		oBtnOk = new qPushButton(win) {
 			setStyleSheet("font-size:"+this.nButtonsFontSize+"pt;")
 			setText(T_IP_OK)		# "Ok"
 			setClickEvent( Method(:OkAction) )
+			this.MobileButtonSize(self)
 		}
 		oBtnClose = new qPushButton(win) {
 			setStyleSheet("font-size:"+this.nButtonsFontSize+"pt;")
 			setText(T_IP_CLOSE)    # "Close"
 			setClickEvent( Method(:CloseBtnAction) )
+			this.MobileButtonSize(self)
 		}
 		if not T_LAYOUTDIRECTION {
 			setBtnImage(oBtnAgain,AppFile("images/ipagain.png"))
@@ -215,6 +218,13 @@ class ComponentViewParent from WindowsViewParent
 	 	oLayoutAll.AddLayout(oLayoutButtons)
 		if C_PROPERTIES_REMOVEVERTICALSPACESBETWEENCONTROLSININTERACTIONPAGES {
 			oLayoutAll.insertStretch( -1, 1 )
+		}
+
+	func MobileButtonSize oButton
+		oButton {
+			if PWCTIsMobile(:ComponentsButtonsSize) {
+				setMinimumHeight(150)
+			}
 		}
 
 	/*
