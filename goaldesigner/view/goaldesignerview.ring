@@ -152,7 +152,9 @@ class GoalDesignerView from WindowsViewParent
 		setBtnImage(btnPlay,AppFile("images/playmovie.png"))	
 		layoutTimeMachine = new qHBoxLayout()
 		{	
-			AddWidget(LabelTM)
+			if not PWCTIsMobile(:TimeMachineLabel) {
+				AddWidget(LabelTM)
+			}
 			AddWidget(btnPlay)
 			AddWidget(sliderTimeMachine)
 			if PWCTIsMobile(:GoalDesignerFullScreen) {
@@ -192,19 +194,29 @@ class GoalDesignerView from WindowsViewParent
 
 		layoutVBtns = new qVBoxLayout()
 		{	
-			AddWidget(btnAddStep)
-			AddWidget(btnInteract)		
-			AddWidget(btnModify)		
-			AddWidget(btnDeleteStep)
-			AddWidget(btnMoveStepUp)
-			AddWidget(btnMoveStepDown)
-			AddWidget(btnIncreaseSize)
-			AddWidget(btnDecreaseSize)
-			AddWidget(btnIgnore)
-			AddWidget(btnCutSteps)
-			AddWidget(btnCopySteps)
-			AddWidget(btnPasteSteps)
-			AddWidget(btnSearch)
+			if not PWCTIsMobile(:GoalDesignerButtons) {
+				AddWidget(btnAddStep)
+				AddWidget(btnInteract)		
+				AddWidget(btnModify)		
+				AddWidget(btnDeleteStep)
+				AddWidget(btnMoveStepUp)
+				AddWidget(btnMoveStepDown)
+				AddWidget(btnIncreaseSize)
+				AddWidget(btnDecreaseSize)
+				AddWidget(btnIgnore)
+				AddWidget(btnCutSteps)
+				AddWidget(btnCopySteps)
+				AddWidget(btnPasteSteps)
+				AddWidget(btnSearch)
+			else 
+				AddWidget(btnAddStep)
+				AddWidget(btnInteract)		
+				AddWidget(btnModify)		
+				AddWidget(btnDeleteStep)
+				AddWidget(btnMoveStepUp)
+				AddWidget(btnMoveStepDown)
+				AddWidget(btnIgnore)
+			}
 			/*
 			if not PWCTIsMobile(:DisplayPrintButton) {
 				AddWidget(btnPrintSteps)		
@@ -340,7 +352,7 @@ class GoalDesignerView from WindowsViewParent
 		oButton {
 			if PWCTIsMobile(:GoalDesignerButtonsSize) {
 				setMinimumwidth(100)	
-				setMinimumHeight(95)
+				setMinimumHeight(200)
 			}
 		}
 
