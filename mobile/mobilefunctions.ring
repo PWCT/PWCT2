@@ -67,8 +67,6 @@ func PWCTIsMobile cOption
 				return False
 			case :ComponentsButtonsSize
 				return False
-			case :MobileAppLibs 
-				return False
 		}
 	}
 	return isMobile() | isWebAssembly()
@@ -79,7 +77,15 @@ func PWCTIsMobile cOption
 */
 
 func CreateMobileFiles
-	if isWebAssembly() return ok
+	if isWebAssembly() 
+		oFile = new qFile()
+		oFile.copy_2(":/mobileapp/mobileapplibs.ring","mobileapplibs.ring")
+		oFile.copy_2(":/mobileapp/mobileapplibs2.ring","mobileapplibs2.ring")
+		oFile.copy_2(":/mobileapp/mobileapplibs3.ring","mobileapplibs3.ring")
+		oFile.copy_2(":/templates/formcontroller.pwct","formcontroller.pwct")
+		oFile.copy_2(":/templates/arabic_formcontroller.pwct","arabic_formcontroller.pwct")
+		return 
+	ok
 	cDir = currentdir()
 	QStandardPaths_GenericDataLocation = 11
 	oPath = new QStandardPaths
