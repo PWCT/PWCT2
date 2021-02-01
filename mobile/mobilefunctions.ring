@@ -57,6 +57,16 @@ func PWCTIsMobile cOption
 				return False
 			case :IPTitle
 				return False
+			case :StepsTreeIndentation
+				return False
+			case :GoalDesignerButtons
+				return False
+			case :DefaultMode
+				return False
+			case :ComponentsBrowserFont
+				return False
+			case :ComponentsButtonsSize
+				return False
 		}
 	}
 	return isMobile() | isWebAssembly()
