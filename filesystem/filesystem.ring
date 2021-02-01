@@ -5,7 +5,7 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-	load "databasesqlite.ring"
-	load "databasesqliteqt.ring"
-	load "database.ring"
-	load "visualsourcefile.ring"
+	//load "databasesqlite.ring"
+	//load "databasesqliteqt.ring"
+	//load "database.ring"
+	load "visualsourcefile2.ring"
