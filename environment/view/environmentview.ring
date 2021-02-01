@@ -128,7 +128,11 @@ class EnvironmentView from WindowsViewParent
 					setShortcut(new QKeySequence("Ctrl+Alt+o"))
 					setbtnimage(self,AppFile("images/open.png")) 
 					settext(T_ENV_MENU_OPEN) # "Open"
-					setclickevent(Method(:OpenAction))
+					if isWebAssembly() {
+						setclickevent(Method(:UploadAction))
+					else 
+						setclickevent(Method(:OpenAction))
+					}
 				}
 				addaction(oAction)
 				addseparator()
