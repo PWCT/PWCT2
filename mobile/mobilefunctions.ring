@@ -67,6 +67,8 @@ func PWCTIsMobile cOption
 				return False
 			case :ComponentsButtonsSize
 				return False
+			case :MobileAppLibs 
+				return False
 		}
 	}
 	return isMobile() | isWebAssembly()
