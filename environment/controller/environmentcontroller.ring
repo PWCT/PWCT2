@@ -153,6 +153,10 @@ class EnvironmentController from WindowsControllerParent
 	*/
 
 	func OpenAction
+		if isWebAssembly() {
+			UploadAction()
+			return 
+		}
 		parent().OpenFileAction()
 
 	/*
@@ -162,6 +166,10 @@ class EnvironmentController from WindowsControllerParent
 	*/
 
 	func SaveAction
+		if isWebAssembly() {
+			DownloadAction()
+			return 
+		}
 		parent().SaveCurrentFileAction()
 
 	/*
@@ -171,6 +179,10 @@ class EnvironmentController from WindowsControllerParent
 	*/
 
 	func SaveAsAction
+		if isWebAssembly()
+			DownloadAction()
+			return 
+		ok
 		parent().SaveFileAction()
 
 	/*
@@ -1220,13 +1232,14 @@ class EnvironmentController from WindowsControllerParent
 
 	func DownloadAction
 		# Avoid _ in the start of the file name (Added by Qt!)
-			cDownloadedFileName = oFile.cFileName
+			cDownloadedFileName = parent().oVisualSourceFile.cFileName
 			if len(cDownloadedFileName) > 1 {
 				if ! isalnum(cDownloadedFileName[1]) {
 					cDownloadedFileName = substr(cDownloadedFileName,2)
 				}
 			}
-		WebAssemblyDownload(cDownloadedFileName,oFile.FormFileContent(self))
+		parent().saveFileAction2()
+		WebAssemblyDownload(cDownloadedFileName,read(parent().oVisualSourceFile.cFileName))
 
 	func UploadAction 
 		WebAssemblyUpload("PWCT Files (*.pwct)",Method(:FileLoaded))
