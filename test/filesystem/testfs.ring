@@ -9,18 +9,18 @@
 	load "stdlib.ring"
 
 # Load General Libraries
-	load "../general/globals/globals.ring"
-	load "../general/mainlib.ring"
-	load "../general/log.ring"
+	load "../src/general/globals/globals.ring"
+	load "../src/general/mainlib.ring"
+	load "../src/general/log.ring"
 	
 # Load the File System Files
-	load "../filesystem/databasesqlite.ring"
-	load "../filesystem/databasesqliteqt.ring"
-	load "../filesystem/database.ring"
-	load "../filesystem/visualsourcefile.ring"
+	load "../src/filesystem/databasesqlite.ring"
+	load "../src/filesystem/databasesqliteqt.ring"
+	load "../src/filesystem/database.ring"
+	load "../src/filesystem/visualsourcefile.ring"
 
 # Mobile functions 
-	load "../mobile/mobilefunctions.ring"
+	load "../src/mobile/mobilefunctions.ring"
 
 nMax = 1
 for m=1 to nMax
