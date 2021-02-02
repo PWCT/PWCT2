@@ -771,7 +771,7 @@ class EnvironmentController from WindowsControllerParent
 
 	func FormDesignerDock
 		cDir = CurrentDir()
-		chdir(PWCT_FOLDER + "/formdesigner")
+		chdir(PWCT_FOLDER + "/src/formdesigner")
 		import formdesigner 
 		open_windowAndLink(:FormDesignerController,self)
 		# We still use setParentObject() and avoid using
