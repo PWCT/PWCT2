@@ -38,7 +38,7 @@ Class ComponentControllerParent from WindowsControllerParent
 		cStepName = parent().prepareStepName(cStep)
 		if nInteractionMode = C_INTERACTIONMODE_MODIFY {
 			nStepID = SelectStep()
-			if nStepID != NULL {
+			if nStepID != -1 {
 				EditStepName(cStepName,nStepID)
 				return
 			}
@@ -67,7 +67,7 @@ Class ComponentControllerParent from WindowsControllerParent
 		cStepName = parent().prepareStepName(cStep)
 		if nInteractionMode = C_INTERACTIONMODE_MODIFY {
 			nStepID = SelectStep()
-			if nStepID != NULL {
+			if nStepID != -1 {
 				EditStepName(cStepName,nStepID)
 				return
 			}

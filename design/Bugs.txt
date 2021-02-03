@@ -7,8 +7,8 @@
 
 ===========================================================
 Status
-	* Bugs Count : 43
-	* Fixed Bugs : 43
+	* Bugs Count : 44
+	* Fixed Bugs : 44
 	* UnFixed Bugs : 0
 ===========================================================
 (1)  Fixed : We created over 6 thouands steps, then using the search window
@@ -1362,4 +1362,80 @@ This was a logical memory leak!
 
 		(1) Delete the window object after closing it 
 		
+==================================================================================================
+
+(44) Fixed: Unstable version of PWCT for WebAssembly after using Ring 1.14
+	It was because this version of Ring produce runtime error
+	At some situations when we convert (String to Number)
+	And we have a NULL string
+
+	I got different shapes of errors like
+
+
+	Line 198 Error (R41) : Invalid numeric string qtloader.js:372:25
+	In method selectstep() in file B:\pwct2\goaldesigner\controller/goaldesignercontroller.ring qtloader.js:372:25
+	called from line 119  In method selectstep() in file B:\pwct2\component\controller/componentcontrollerparent.ring qtloader.js:372:25
+	called from line 69  In method newstep() in file B:\pwct2\component\controller/componentcontrollerparent.ring qtloader.js:372:25
+	called from line 22  In method generateaction() in file B:\pwct2\vpl\ringpwct\print.ring qtloader.js:372:25
+	called from line 276  In method okaction() in file B:\pwct2\component\controller/componentcontrollerparent.ring qtloader.js:372:25
+	called from line 11572  In qapp_exec() In method exec() in file b:\ring\libraries\guilib\classes/ring_qt.ring qtloader.js:372:25
+	called from line 30  In function startenvironment() in file B:\pwct2\environment/environment.ring
+
+	Which lead to more serious errors like
+		Assertion failed: pList != NULL, at: ..\qtproject/ring/src/ring_vmstackvars.c,328,ring_vm_list_copy
+	And
+		Assertion failed: pList != NULL, at: ..\qtproject/ring/src/ring_list.c,249,ring_list_getitem
+
+
+	Solution
+
+	I did an update in PWCT to check for (-1) instead of (NULL)
+
+	This code 
+		func NewParentStep cStep
+			# some code here
+			if nStepID != NULL {
+				EditStepName(cStepName,nStepID)
+				return
+			}
+
+	Changed to
+
+			if nStepID != -1 {
+				EditStepName(cStepName,nStepID)
+				return
+			}
+
+	And the same for this code
+
+		func SelectStep nIID,nStepNumber
+			nStepID = oModel.GetStepIDbyIID(nIID,nStepNumber)
+			oItem = NULL
+			if nStepID != NULL {
+				oItem = oView.oStepsTree.GetObjByID(nStepID)
+			}
+			return [oItem,nStepID]
+
+	Changed to 
+
+			if nStepID != -1 {
+				oItem = oView.oStepsTree.GetObjByID(nStepID)
+			}
+
+	And this function
+		func GetStepIDbyIID nIID,nStepNumber
+		aList = oStepsTreeModel.GetData()
+		for x = len(aList) to 1 step -1 {
+			item = aList[x]
+			if  item[C_TREEMODEL_CONTENT][:interactionid] = nIID and
+  			    item[C_TREEMODEL_CONTENT][:stepNumber] = nStepNumber {
+				return item[C_TREEMODEL_NODEID]
+			}
+		}
+
+	Now includes
+		return -1	# In the end when the item doesn't exist
+	
+	In the future I will update Ring itself to pass this error
+	When we convert NULL to a NUMBER 
 ==================================================================================================

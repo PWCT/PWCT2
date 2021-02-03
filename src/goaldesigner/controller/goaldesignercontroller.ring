@@ -195,7 +195,7 @@ class GoalDesignerController from WindowsControllerParent
 	func SelectStep nIID,nStepNumber
 		nStepID = oModel.GetStepIDbyIID(nIID,nStepNumber)
 		oItem = NULL
-		if nStepID != NULL {
+		if nStepID != -1 {
 			oItem = oView.oStepsTree.GetObjByID(nStepID)
 		}
 		return [oItem,nStepID]

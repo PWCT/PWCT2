@@ -465,6 +465,7 @@ class GoalDesignerModel
 				return item[C_TREEMODEL_NODEID]
 			}
 		}
+		return -1
 
 	/*
 		Purpose : Is Steps Tree Empty?
