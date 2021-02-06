@@ -21,7 +21,7 @@ class VisualSourceFile
 
 	lUseSystemLog = True
 
-	lSaveToRingCode = False
+	lSaveToRingCode = True
 
 	/*
 		Purpose : Check if a file is opened
