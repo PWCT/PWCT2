@@ -18,7 +18,18 @@ class PrintStepsController from WindowsControllerParent
 	func ShowData
 		oView.oStepsTree.setText(Parent().oModel.StepsTreeText())
 		oView.oStepsCode.setText(Parent().oModel.StepsTreeCode())
-
+		if isWebAssembly() {
+			printer1 = new qPrinter(0) {
+				setoutputformat(1)	# 1 = pdf
+				setoutputfilename("StepsTree.pdf")
+			}	
+			oView.oStepsTree.print(printer1)
+			printer1 = new qPrinter(0) {
+				setoutputformat(1)	# 1 = pdf
+				setoutputfilename("StepsCode.pdf")
+			}
+			oView.oStepsCode.print(printer1)
+		}
 	/*
 		Purpose : Print Steps Tree 
 		Parameters : None
@@ -26,6 +37,10 @@ class PrintStepsController from WindowsControllerParent
 	*/
 
 	func PrintStepsTreeAction
+		if isWebAssembly() {
+			DownloadAction("StepsTree.pdf")
+			return
+		}
 		printer1 = new qPrinter(0) {
 			setoutputformat(1)	# 1 = pdf
 			setoutputfilename("StepsTree.pdf")
@@ -35,6 +50,10 @@ class PrintStepsController from WindowsControllerParent
 			OpenURL(new qURL("file:///"+substr(currentdir(),"\","/")+"/StepsTree.pdf")) 
 		}				
 
+	func DownloadAction cFileName
+		WebAssemblyDownload(cFileName,read(cFileName))
+
+
 	/*
 		Purpose : Print Source Code
 		Parameters : None
@@ -42,6 +61,10 @@ class PrintStepsController from WindowsControllerParent
 	*/
 
 	func PrintSourceCodeAction
+		if isWebAssembly() {
+			DownloadAction("StepsCode.pdf")
+			return
+		}
 		printer1 = new qPrinter(0) {
 			setoutputformat(1)	# 1 = pdf
 			setoutputfilename("StepsCode.pdf")
