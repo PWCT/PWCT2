@@ -1,0 +1,191 @@
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point (Not Step)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Start Point (Not Step)"
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Enter&nbsp;Name&nbsp;(30&nbsp;characters)&nbsp;:&nbsp;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"See "+char(34)+"Enter Name (30 characters) : "+char(34)+""
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print Enter Name (30 characters) : "
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Name</font></span> = Input ( <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">30</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"Name = Input(30)"
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Name = Input ( 30)"
+			]
+		]
+	],
+	[
+		4,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;Hello&nbsp;&quot;&nbsp;+&nbsp;Name</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"See "+char(34)+"Hello "+char(34)+" + Name"
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print "+char(34)+"Hello "+char(34)+" + Name"
+			]
+		]
+	]
+]
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"13/07/2017",
+		"07:58:34",
+		""
+	],
+	[
+		2,
+		1,
+		"print",
+		"13/07/2017",
+		"07:58:49",
+		"Enter Name (30 characters) : ;;_RV_;;1;;_RV_;;0;;_RV_;;"
+	],
+	[
+		3,
+		1,
+		"input",
+		"13/07/2017",
+		"07:58:56",
+		"30;;_RV_;;Name;;_RV_;;"
+	],
+	[
+		4,
+		1,
+		"print",
+		"13/07/2017",
+		"07:59:18",
+		""+char(34)+"Hello "+char(34)+" + Name;;_RV_;;2;;_RV_;;0;;_RV_;;"
+	]
+]
+nStepsID = 4		
+nInteractionsID = 4

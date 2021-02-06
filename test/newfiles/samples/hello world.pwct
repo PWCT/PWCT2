@@ -1,0 +1,99 @@
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point (Not Step)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Start Point (Not Step)"
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">hello world</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"See "+char(34)+"hello world"+char(34)+""
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print hello world"
+			]
+		]
+	]
+]
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"06/02/2017",
+		"09:10:09",
+		""
+	],
+	[
+		2,
+		1,
+		"print",
+		"06/02/2017",
+		"09:10:12",
+		"hello world;;_RV_;;1;;_RV_;;"
+	]
+]
+nStepsID = 12		
+nInteractionsID = 9

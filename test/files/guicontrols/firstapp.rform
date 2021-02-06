@@ -1,0 +1,170 @@
+# Start Form Designer File
+aObjectsList = [
+	[ :name = "Window" , :id = 1 , :classname = "formdesigner_qwidget" , :data = [
+		 :x = 20 , : y = -203  , 
+		 :width =  823 , :height = 674 , 
+		 :title =  "Hello World" , 
+		 :backcolor =  "#ffff00" , 
+		 :windowflags =  "" , 
+		 :mainlayout =  "" ,
+		 :WindowIcon =  "" , 
+		 :Menubar =  ""  ,
+		 :IndexType =  0  
+
+		]
+	],
+	[ :name = "Button1" , :id = 2 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 182 , : y = 17  , 
+		 :width =  188 , :height = 46 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Test",
+		 :BtnImage =  "",
+		 :setClickEvent =  "test"
+		]
+	],
+	[ :name = "LineEdit1" , :id = 3 , :classname = "formdesigner_qlineedit" , :data = [
+		 :x = 20 , : y = 73  , 
+		 :width =  350 , :height = 40 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "white" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "",
+		 :setTextChangedEvent =  "",
+		 :setcursorPositionChangedEvent =  "",
+		 :seteditingFinishedEvent =  "",
+		 :setreturnPressedEvent =  "",
+		 :setselectionChangedEvent =  "",
+		 :settextEditedEvent =  ""
+		]
+	],
+	[ :name = "Button2" , :id = 4 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 182 , : y = 123  , 
+		 :width =  188 , :height = 46 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Say Hello",
+		 :BtnImage =  "",
+		 :setClickEvent =  "SayHello"
+		]
+	],
+	[ :name = "Button4" , :id = 5 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 182 , : y = 173  , 
+		 :width =  188 , :height = 46 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Exit",
+		 :BtnImage =  "",
+		 :setClickEvent =  "Close"
+		]
+	],
+	[ :name = "ListWidget1" , :id = 6 , :classname = "formdesigner_qlistwidget" , :data = [
+		 :x = 9 , : y = 233  , 
+		 :width =  363 , :height = 212 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "white" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :cItems =  "",
+		 :cCurrentRow =  "",
+		 :setcurrentItemChangedEvent =  "",
+		 :setcurrentRowChangedEvent =  "",
+		 :setcurrentTextChangedEvent =  "",
+		 :setitemActivatedEvent =  "",
+		 :setitemChangedEvent =  "",
+		 :setitemClickedEvent =  "",
+		 :setitemDoubleClickedEvent =  "",
+		 :setitemEnteredEvent =  "",
+		 :setitemPressedEvent =  "",
+		 :setitemSelectionChangedEvent =  ""
+		]
+	],
+	[ :name = "Button6" , :id = 7 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 184 , : y = 449  , 
+		 :width =  188 , :height = 46 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Add",
+		 :BtnImage =  "",
+		 :setClickEvent =  "AddItems"
+		]
+	],
+	[ :name = "TextEdit1" , :id = 8 , :classname = "formdesigner_qtextedit" , :data = [
+		 :x = 376 , : y = 15  , 
+		 :width =  427 , :height = 420 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "white" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "",
+		 :setcopyAvailableEvent =  "",
+		 :setcurrentCharFormatChangedEvent =  "",
+		 :setcursorPositionChangedEvent =  "",
+		 :setredoAvailableEvent =  "",
+		 :setselectionChangedEvent =  "",
+		 :settextChangedEvent =  "",
+		 :setundoAvailableEvent =  ""
+		]
+	],
+	[ :name = "Button8" , :id = 9 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 611 , : y = 442  , 
+		 :width =  188 , :height = 46 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Show",
+		 :BtnImage =  "",
+		 :setClickEvent =  "ShowText"
+		]
+	],
+	[ :name = "Progressbar1" , :id = 10 , :classname = "formdesigner_qprogressbar" , :data = [
+		 :x = 13 , : y = 515  , 
+		 :width =  355 , :height = 47 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :orientation =  0,
+		 :minimum =  "",
+		 :maximum =  "",
+		 :range =  "",
+		 :value =  "50",
+		 :setvalueChangedEvent =  ""
+		]
+	],
+	[ :name = "Button7" , :id = 11 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 252 , : y = 574  , 
+		 :width =  116 , :height = 46 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "decrease",
+		 :BtnImage =  "",
+		 :setClickEvent =  "decrease"
+		]
+	],
+	[ :name = "Button12" , :id = 12 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 130 , : y = 574  , 
+		 :width =  116 , :height = 46 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "increase",
+		 :BtnImage =  "",
+		 :setClickEvent =  "increase"
+		]
+	]
+]
+# End Form Designer File

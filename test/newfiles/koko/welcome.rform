@@ -1,0 +1,185 @@
+# Start Form Designer File
+aObjectsList = [
+	[ :name = "Window" , :id = 1 , :classname = "formdesigner_qwidget" , :data = [
+		 :x = 20 , : y = -141  , 
+		 :width =  787 , :height = 712 , 
+		 :title =  "Form1" , 
+		 :backcolor =  "#6effe7" , 
+		 :windowflags =  "" , 
+		 :mainlayout =  "" ,
+		 :WindowIcon =  "" , 
+		 :Menubar =  ""  ,
+		 :IndexType =  0  
+
+		]
+	],
+	[ :name = "Label1" , :id = 2 , :classname = "formdesigner_qlabel" , :data = [
+		 :x = 271 , : y = 19  , 
+		 :width =  231 , :height = 63 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "MS Shell Dlg 2,18,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :text =  "Welcome to Koko",
+		 :textalign =  0
+		]
+	],
+	[ :name = "Button1" , :id = 3 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 19 , : y = 98  , 
+		 :width =  735 , :height = 54 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "MS Shell Dlg 2,18,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :text =  "Say Hello",
+		 :BtnImage =  "",
+		 :setClickEvent =  "hello"
+		]
+	],
+	[ :name = "Frame1" , :id = 4 , :classname = "formdesigner_qframe3" , :data = [
+		 :x = 19 , : y = 180  , 
+		 :width =  735 , :height = 414 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "#00007f" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :FrameType =  0
+		]
+	],
+	[ :name = "Label2" , :id = 5 , :classname = "formdesigner_qlabel" , :data = [
+		 :x = 62 , : y = 215  , 
+		 :width =  125 , :height = 37 , 
+		 :textcolor =  "#ffffff" , 
+		 :backcolor =  "#00007f" , 
+		 :font =  "MS Shell Dlg 2,18,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :text =  "Name",
+		 :textalign =  0
+		]
+	],
+	[ :name = "LineEdit1" , :id = 6 , :classname = "formdesigner_qlineedit" , :data = [
+		 :x = 197 , : y = 504  , 
+		 :width =  511 , :height = 43 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "white" , 
+		 :font =  "MS Shell Dlg 2,18,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :text =  "",
+		 :setTextChangedEvent =  "",
+		 :setcursorPositionChangedEvent =  "",
+		 :seteditingFinishedEvent =  "",
+		 :setreturnPressedEvent =  "",
+		 :setselectionChangedEvent =  "",
+		 :settextEditedEvent =  ""
+		]
+	],
+	[ :name = "LineEdit6" , :id = 7 , :classname = "formdesigner_qlineedit" , :data = [
+		 :x = 197 , : y = 431  , 
+		 :width =  511 , :height = 43 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "white" , 
+		 :font =  "MS Shell Dlg 2,18,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :text =  "",
+		 :setTextChangedEvent =  "",
+		 :setcursorPositionChangedEvent =  "",
+		 :seteditingFinishedEvent =  "",
+		 :setreturnPressedEvent =  "",
+		 :setselectionChangedEvent =  "",
+		 :settextEditedEvent =  ""
+		]
+	],
+	[ :name = "Label7" , :id = 8 , :classname = "formdesigner_qlabel" , :data = [
+		 :x = 62 , : y = 292  , 
+		 :width =  125 , :height = 34 , 
+		 :textcolor =  "#ffffff" , 
+		 :backcolor =  "#00007f" , 
+		 :font =  "MS Shell Dlg 2,18,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :text =  "Address",
+		 :textalign =  0
+		]
+	],
+	[ :name = "LineEdit8" , :id = 9 , :classname = "formdesigner_qlineedit" , :data = [
+		 :x = 197 , : y = 358  , 
+		 :width =  191 , :height = 43 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "white" , 
+		 :font =  "MS Shell Dlg 2,18,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :text =  "",
+		 :setTextChangedEvent =  "",
+		 :setcursorPositionChangedEvent =  "",
+		 :seteditingFinishedEvent =  "",
+		 :setreturnPressedEvent =  "",
+		 :setselectionChangedEvent =  "",
+		 :settextEditedEvent =  ""
+		]
+	],
+	[ :name = "Label9" , :id = 10 , :classname = "formdesigner_qlabel" , :data = [
+		 :x = 62 , : y = 366  , 
+		 :width =  125 , :height = 34 , 
+		 :textcolor =  "#ffffff" , 
+		 :backcolor =  "#00007f" , 
+		 :font =  "MS Shell Dlg 2,18,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :text =  "Phone",
+		 :textalign =  0
+		]
+	],
+	[ :name = "LineEdit10" , :id = 11 , :classname = "formdesigner_qlineedit" , :data = [
+		 :x = 197 , : y = 285  , 
+		 :width =  191 , :height = 43 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "white" , 
+		 :font =  "MS Shell Dlg 2,18,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :text =  "",
+		 :setTextChangedEvent =  "",
+		 :setcursorPositionChangedEvent =  "",
+		 :seteditingFinishedEvent =  "",
+		 :setreturnPressedEvent =  "",
+		 :setselectionChangedEvent =  "",
+		 :settextEditedEvent =  ""
+		]
+	],
+	[ :name = "Label11" , :id = 12 , :classname = "formdesigner_qlabel" , :data = [
+		 :x = 62 , : y = 440  , 
+		 :width =  125 , :height = 37 , 
+		 :textcolor =  "#ffffff" , 
+		 :backcolor =  "#00007f" , 
+		 :font =  "MS Shell Dlg 2,18,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :text =  "Job",
+		 :textalign =  0
+		]
+	],
+	[ :name = "LineEdit12" , :id = 13 , :classname = "formdesigner_qlineedit" , :data = [
+		 :x = 197 , : y = 212  , 
+		 :width =  511 , :height = 43 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "white" , 
+		 :font =  "MS Shell Dlg 2,18,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :text =  "",
+		 :setTextChangedEvent =  "",
+		 :setcursorPositionChangedEvent =  "",
+		 :seteditingFinishedEvent =  "",
+		 :setreturnPressedEvent =  "",
+		 :setselectionChangedEvent =  "",
+		 :settextEditedEvent =  ""
+		]
+	],
+	[ :name = "Label13" , :id = 14 , :classname = "formdesigner_qlabel" , :data = [
+		 :x = 62 , : y = 517  , 
+		 :width =  125 , :height = 37 , 
+		 :textcolor =  "#ffffff" , 
+		 :backcolor =  "#00007f" , 
+		 :font =  "MS Shell Dlg 2,18,-1,5,50,0,0,0,0,0,Regular" , 
+		 :parent =  "win"  ,
+		 :text =  "Notes",
+		 :textalign =  0
+		]
+	]
+]
+# End Form Designer File
