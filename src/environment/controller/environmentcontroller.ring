@@ -416,6 +416,10 @@ class EnvironmentController from WindowsControllerParent
 	*/
 
 	func CloseAction
+		if isWebAssembly() {
+			PWCT_APP.Quit()
+			return 
+		}
 		parent().CheckSavingTheFile()		
 		saveSettings()
 		PWCT_APP.Quit()
