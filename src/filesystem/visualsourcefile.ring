@@ -21,6 +21,8 @@ class VisualSourceFile
 
 	lUseSystemLog = True
 
+	lSaveToRingCode = False
+
 	/*
 		Purpose : Check if a file is opened
 		Parameters : None
@@ -202,6 +204,9 @@ class VisualSourceFile
 		SaveStepsTable()
 		SaveInteractionsTable()
 		Log("End save tables")
+		if lSaveToRingCode {
+			SaveTablesToRingCode()
+		}
 
 	/*
 		Purpose : Create Steps Table
@@ -394,3 +399,19 @@ class VisualSourceFile
 		if lUseSystemLog {
 			oSystemLog.addMessage(cMessage)
 		}
+
+
+	func SaveTablesToRingCode
+		Log("Start save tables")
+		cContent = "
+aStepsTable = #{f1}
+aInteractionsTable = #{f2}
+nStepsID = #{f3}		
+nInteractionsID = #{f4}
+"
+		cContent = substr(cContent,"#{f1}",List2Code(aStepsTable))
+		cContent = substr(cContent,"#{f2}",List2Code(aInteractionsTable))
+		cContent = substr(cContent,"#{f3}",""+nStepsID)
+		cContent = substr(cContent,"#{f4}",""+nInteractionsID)
+		write( cFileName+"2", cContent )		
+		Log("End save tables")

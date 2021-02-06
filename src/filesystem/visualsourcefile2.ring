@@ -280,7 +280,9 @@ nInteractionsID = #{f4}
 
 	/*
 		Convert a Ring List to Ring source code 
+		We use List2Code() from Ring StdLib
 	*/
+	/*
 	func List2Code aList
 		cCode = "["+Windowsnl()
 		lStart = True
@@ -301,3 +303,4 @@ nInteractionsID = #{f4}
 		next
 		cCode += windowsnl()+"]"
 		return cCode
+	*/
