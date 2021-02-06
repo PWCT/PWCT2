@@ -192,6 +192,9 @@ class EnvironmentController from WindowsControllerParent
 	*/
 
 	func BeforeRun
+		if isWebAssembly() {
+			return 
+		}
 		if parent().IsActiveFile() {
 			SaveAction()
 		}
