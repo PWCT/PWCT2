@@ -110,7 +110,7 @@
 	C_VSF_NOFILENAME 			= "noname.pwct"
 
 # Components Path
-	C_CB_COMPONENTSPATH 			= "vpl/ringpwct/"
+	C_CB_COMPONENTSPATH 			= "src/vpl/ringpwct"
 
 # Enviroment Mode
 	C_ENV_MODE_GENERAL			= 1

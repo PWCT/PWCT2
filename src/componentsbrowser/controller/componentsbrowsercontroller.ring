@@ -19,7 +19,7 @@ class ComponentsBrowserController from WindowsControllerParent
 		if PWCTIsMobile(:UseComponentsFile) {
 			lUseComponentsFile	= True 
 		else 
-			lUseComponentsFile	= True
+			lUseComponentsFile	= False
 		}
 
 	if PWCTIsMobile(:InteractionPagesInGoalDesigner) {

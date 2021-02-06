@@ -242,7 +242,7 @@
 	if PWCTIsMobile(:componentsfile) {
 		T_CB_COMPONENTSFILE = "components.pwct"
 	else
-		T_CB_COMPONENTSFILE = "vpl/components.pwct"
+		T_CB_COMPONENTSFILE = "src/vpl/components.pwct"
 	}
 
 

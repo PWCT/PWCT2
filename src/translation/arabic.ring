@@ -241,7 +241,7 @@
 	if PWCTIsMobile(:componentsfile) {
 		T_CB_COMPONENTSFILE = "arabiccomponents.pwct"
 	else
-		T_CB_COMPONENTSFILE = "vpl/arabiccomponents.pwct"
+		T_CB_COMPONENTSFILE = "src/vpl/arabiccomponents.pwct"
 	}
 
 
