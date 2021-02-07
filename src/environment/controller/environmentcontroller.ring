@@ -13,8 +13,13 @@ class EnvironmentController from WindowsControllerParent
 	else 
 		cSettingsFile = cCurrentDir + "pwct.ini"
 	}
-	cFont = "MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0"
-	nFontSize = 12
+	if isWebAssembly() {
+		cFont = "MS Shell Dlg 2,16,-1,5,50,0,0,0,0,0"
+		nFontSize = 16
+	else 
+		cFont = "MS Shell Dlg 2,12,-1,5,50,0,0,0,0,0"
+		nFontSize = 12
+	}
 
 	lShowFilesManager = True
 	lShowGoalDesigner = True
