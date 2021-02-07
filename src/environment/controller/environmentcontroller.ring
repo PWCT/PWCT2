@@ -567,7 +567,7 @@ class EnvironmentController from WindowsControllerParent
 	*/
 
 	func LanguageAction
-		ShowMessage("Programming Language",
+		MsgBox("Programming Language",
 		"This application developed using the Ring programming language")
 
 	/*
@@ -577,7 +577,7 @@ class EnvironmentController from WindowsControllerParent
 	*/
 
 	func GUIAction
-		ShowMessage("GUI Library",
+		MsgBox("GUI Library",
 		"This application uses the Qt GUI Library through RingQt")
 
 	/*
@@ -586,9 +586,22 @@ class EnvironmentController from WindowsControllerParent
 		Output : None
 	*/
 
+
+	Func MsgBox cTitle,cMessage
+		if isWebAssembly() {
+			new QMessagebox(oView.win) {
+				setWindowFlags(Qt_Popup | Qt_WindowTitleHint | Qt_CustomizeWindowHint)
+				setwindowtitle(cTitle)
+				setText(cMessage)
+				show()
+			}
+		else 
+			ShowMessage(cTitle,cMessage)
+		}
+
 	func AboutAction
-		ShowMessage("About",
-		"2020, Mahmoud Fayed <msfclipper@yahoo.com>")	
+		MsgBox("About",
+		"2021, Mahmoud Fayed <msfclipper@yahoo.com>")	
 
 
 	/*
