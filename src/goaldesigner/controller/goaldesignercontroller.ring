@@ -1673,6 +1673,9 @@ class GoalDesignerController from WindowsControllerParent
 		Display Messagebox (Yes/No) to save the changes to the current file
 	*/
 	func CheckSavingTheFile
+		if isWebAssembly() {
+			return 
+		}
 		if lSaveFlag {
 			lSaveFlag = False
 			new qmessagebox(oView.win)
