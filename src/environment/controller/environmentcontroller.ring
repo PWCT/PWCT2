@@ -1139,6 +1139,11 @@ class EnvironmentController from WindowsControllerParent
 				oView.oDockGoalDesigner.raise()
 				oView.oDockFormDesigner.raise()
 		}
+		if isWebAssembly() {
+			oView.oDockFilesManager.hide()
+			oView.win.Hide()
+			oView.win.ShowMaximized()
+		}
 
 	func SetStyle nStyle
 		C_ENV_DEFAULT_STYLE  = nStyle
