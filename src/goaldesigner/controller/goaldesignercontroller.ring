@@ -701,10 +701,14 @@ class GoalDesignerController from WindowsControllerParent
 
 	func NewFileAction
 		# Set the file Name
-			new qfiledialog(oView.win) {
-				cFileName = getsavefilename(this.oView.win,"New File",currentdir(),T_GD_DM_FILETYPE)
+			if ! isWebAssembly() {
+				new qfiledialog(oView.win) {
+					cFileName = getsavefilename(this.oView.win,"New File",currentdir(),T_GD_DM_FILETYPE)
+				}
+				if cFileName = NULL { return }
+			else 
+				cFileName = "noname.pwct"
 			}
-			if cFileName = NULL { return }
 			oVisualSourceFile.cFileName = cFileName
 		# Remove the current Steps From the Tree Control
 			oView.oStepsTree.clear()
