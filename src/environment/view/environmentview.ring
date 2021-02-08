@@ -140,14 +140,16 @@ class EnvironmentView from WindowsViewParent
 				}
 				addaction(oAction)
 				addseparator()
-				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Ctrl+Alt+s"))
-					setbtnimage(self,AppFile("images/saveas.png"))
-					settext(T_ENV_MENU_SAVEAS) # "Save As"
-					setclickevent(Method(:SaveAsAction))
+				if ! isWebAssembly() {
+					oAction = new qAction(win) {
+						setShortcut(new QKeySequence("Ctrl+Alt+s"))
+						setbtnimage(self,AppFile("images/saveas.png"))
+						settext(T_ENV_MENU_SAVEAS) # "Save As"
+						setclickevent(Method(:SaveAsAction))
+					}
+					addaction(oAction)
+					addseparator()
 				}
-				addaction(oAction)
-				addseparator()
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+p"))
 					setbtnimage(self,AppFile("images/print.png"))
@@ -570,7 +572,40 @@ class EnvironmentView from WindowsViewParent
 	*/
 
 	func CreateToolbar win
-		if PWCTIsMobile(:RunApplication) {
+		if isWebAssembly() {
+			aBtns = [
+					new qToolbutton(win) { 
+						setbtnimage(self,AppFile("images/new.png"))
+						setclickevent(Method(:NewAction))
+						settooltip(T_ENV_MENU_NEW) # "New File"
+						this.MobileToolButtonSize(self)
+					} ,
+					new qToolbutton(win) { 
+						setbtnimage(self,AppFile("images/open.png")) 
+						setclickevent(Method(:OpenAction))
+						settooltip(T_ENV_MENU_OPEN) # "Open File"
+						this.MobileToolButtonSize(self)
+					} ,
+					new qToolbutton(win) { 
+						setbtnimage(self,AppFile("images/save.png"))
+						setclickevent(Method(:SaveAction))
+						settooltip(T_ENV_MENU_SAVE) # "Save"
+						this.MobileToolButtonSize(self)
+					} ,
+					new qToolbutton(win) { 
+						setbtnimage(self,AppFile("images/rungui.png"))
+						setclickevent(Method(:RunAction))
+						settooltip(T_ENV_MENU_RUN) # "Run the program"
+						this.MobileToolButtonSize(self)
+					} ,
+					new qToolbutton(win) { 
+						setbtnimage(self,AppFile("images/close.png"))
+						setclickevent(Method(:CloseAction))
+						settooltip(T_ENV_MENU_EXIT) # "Exit"
+						this.MobileToolButtonSize(self)
+					} 
+				]
+		elseif PWCTIsMobile(:RunApplication) 
 			aBtns = [
 					new qToolbutton(win) { 
 						setbtnimage(self,AppFile("images/new.png"))
