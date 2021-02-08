@@ -514,21 +514,22 @@ class EnvironmentView from WindowsViewParent
 				}
 			}
 			subHelp { 
-
-				subHelpLF = addmenu(T_ENV_MENU_LANGREF) # "Language Reference"
-				subHelpLF { 
-					oAction = new qAction(win) {
-						settext(T_ENV_MENU_CHM) # "CHM File"
-						setclickevent(Method(:CHMAction))
+				if ! PWCTIsMobile(:HelpMenu) {
+					subHelpLF = addmenu(T_ENV_MENU_LANGREF) # "Language Reference"
+					subHelpLF { 
+						oAction = new qAction(win) {
+							settext(T_ENV_MENU_CHM) # "CHM File"
+							setclickevent(Method(:CHMAction))
+						}
+						addaction(oAction)
+						oAction = new qAction(win) {
+							settext(T_ENV_MENU_PDF)
+							setclickevent(Method(:PDFAction))
+						}
+						addaction(oAction)
 					}
-					addaction(oAction)
-					oAction = new qAction(win) {
-						settext(T_ENV_MENU_PDF)
-						setclickevent(Method(:PDFAction))
-					}
-					addaction(oAction)
+					addseparator()
 				}
-				addseparator()
 				subHelpTools = addmenu(T_ENV_MENU_DEVTOOLS) # "Development Tools"
 				subHelpTools { 
 

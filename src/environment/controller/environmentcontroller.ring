@@ -129,6 +129,12 @@ class EnvironmentController from WindowsControllerParent
 		# We must update the font size here when the tree is visible 
 			oView.oFilesTree.UpdateFontSize()
 
+
+		if isWebAssembly() {
+			oView.win.Hide()
+			oView.win.showmaximized()
+		}
+
 	/*
 		Purpose : Set the Parent Object for Environment and goal designer
 		Parameters : None
