@@ -212,14 +212,16 @@ class EnvironmentView from WindowsViewParent
 				addaction(oAction)
 			}				
 			subView {
-				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Alt+p"))
-					setbtnimage(self,AppFile("images/project.png"))
-					settext(T_ENV_MENU_PROJECTFILES ) # "Project Files"
-					setclickevent(Method(:ProjectAction))
+				if ! isWebAssembly() {
+					oAction = new qAction(win) {
+						setShortcut(new QKeySequence("Alt+p"))
+						setbtnimage(self,AppFile("images/project.png"))
+						settext(T_ENV_MENU_PROJECTFILES ) # "Project Files"
+						setclickevent(Method(:ProjectAction))
+					}
+					addaction(oAction)			
+					addseparator()	
 				}
-				addaction(oAction)			
-				addseparator()	
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Alt+g"))
 					setbtnimage(self,AppFile("images/source.png"))
