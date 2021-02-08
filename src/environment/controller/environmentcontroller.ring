@@ -132,6 +132,7 @@ class EnvironmentController from WindowsControllerParent
 
 		if isWebAssembly() {
 			oView.win.Hide()
+			oView.win.setWindowFlags(Qt_Window | Qt_CustomizeWindowHint)
 			oView.win.showmaximized()
 		}
 
