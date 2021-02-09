@@ -339,24 +339,25 @@ class EnvironmentView from WindowsViewParent
 					}
 					addaction(oAction)						
 				}
-
-				addseparator()
-				subLang = addmenu(T_ENV_MENU_LANGUAGE) # "Language"
-				subLang {
-					oAction = new qAction(win) {
-						setShortcut(new QKeySequence("Ctrl+shift+7"))
-						setclickEvent(Method("SetLang(C_TRANSLATION_ARABIC)"))
-						settext(T_ENV_MENU_LANG_ARABIC) # "Arabic"
-					}
-					addaction(oAction)
+				if ! PWCTIsMobile(:SelectLanguage) {
 					addseparator()
-					oAction = new qAction(win) {
-						setShortcut(new QKeySequence("Ctrl+Shift+8"))
-						setclickEvent(Method("SetLang(C_TRANSLATION_ENGLISH)"))
-						settext(T_ENV_MENU_LANG_ENGLISH) # "English"
+					subLang = addmenu(T_ENV_MENU_LANGUAGE) # "Language"
+					subLang {
+						oAction = new qAction(win) {
+							setShortcut(new QKeySequence("Ctrl+shift+7"))
+							setclickEvent(Method("SetLang(C_TRANSLATION_ARABIC)"))
+							settext(T_ENV_MENU_LANG_ARABIC) # "Arabic"
+						}
+						addaction(oAction)
+						addseparator()
+						oAction = new qAction(win) {
+							setShortcut(new QKeySequence("Ctrl+Shift+8"))
+							setclickEvent(Method("SetLang(C_TRANSLATION_ENGLISH)"))
+							settext(T_ENV_MENU_LANG_ENGLISH) # "English"
+						}
+						addaction(oAction)
+	
 					}
-					addaction(oAction)
-
 				}
 			}
 			subProgram { 
