@@ -1352,20 +1352,16 @@ class GoalDesignerController from WindowsControllerParent
 			oFont.fromstring(this.cFont)
 			SetCurrentFont(oFont)
 			setFontSelectedEvent(this.Method(:FontAction2))
-			//aFont = GetFont()
-			show()
+			if isWebAssembly() {
+				ShowFullScreen()
+			else 
+				show()
+			}
 		}
 
 	func FontAction2
 		cFont = oFontDialog.selectedfont().tostring()
-
-		//oNewFont = new QFont("",0,0,0)
-		//oNewFont.fromstring(cFont)
-
-		//if aFont[1] != NULL {
-		//	cFont = aFont[1]
-			UpdateFont()
-		//}	
+		UpdateFont()
 
 
 	/*
