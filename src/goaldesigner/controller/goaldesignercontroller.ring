@@ -72,6 +72,9 @@ class GoalDesignerController from WindowsControllerParent
 		aBackupBuffer 		= []
 		aBackupInteraction 	= []
 
+	# Font Dialog
+		oFontDialog 
+
 	/*
 		Purpose : Show the Window
 		Parameters : None
@@ -1348,12 +1351,21 @@ class GoalDesignerController from WindowsControllerParent
 			oFont = new qfont("",0,0,0)
 			oFont.fromstring(this.cFont)
 			SetCurrentFont(oFont)
-			aFont = GetFont()
+			setFontSelectedEvent(this.Method(:FontAction2))
+			//aFont = GetFont()
+			show()
 		}
-		if aFont[1] != NULL {
-			cFont = aFont[1]
+
+	func FontAction2
+		cFont = oFontDialog.selectedfont().tostring()
+
+		//oNewFont = new QFont("",0,0,0)
+		//oNewFont.fromstring(cFont)
+
+		//if aFont[1] != NULL {
+		//	cFont = aFont[1]
 			UpdateFont()
-		}	
+		//}	
 
 
 	/*
