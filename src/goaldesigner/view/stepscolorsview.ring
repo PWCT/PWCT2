@@ -209,6 +209,7 @@ class StepsColorsView from WindowsViewParent
 			Addlayout(layoutHData)
 			AddLayout(layoutGeneral)
 			AddWidget(btnClose)
+			insertStretch( -1, 1 )
 		}
 		
 		setLayout(layoutAll)
