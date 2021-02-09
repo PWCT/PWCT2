@@ -17,7 +17,7 @@ class ComponentsBrowserController from WindowsControllerParent
 		lWriteComponentsFile	= False	
 	# Use Ring source code instead of using SQLite
 		if PWCTIsMobile(:UseComponentsFile) {
-			lUseComponentsFile	= True 
+			lUseComponentsFile	= False 
 		else 
 			lUseComponentsFile	= False
 		}

@@ -84,6 +84,8 @@ func CreateMobileFiles
 		oFile.copy_2(":/mobileapp/mobileapplibs3.ring","mobileapplibs3.ring")
 		oFile.copy_2(":/templates/formcontroller.pwct","formcontroller.pwct")
 		oFile.copy_2(":/templates/arabic_formcontroller.pwct","arabic_formcontroller.pwct")
+		oFile.copy_2(":/vpl/arabiccomponents.pwct","arabiccomponents.pwct")
+		oFile.copy_2(":/vpl/components.pwct","components.pwct")
 		return 
 	ok
 	cDir = currentdir()
