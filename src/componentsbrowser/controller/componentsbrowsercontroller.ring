@@ -64,7 +64,13 @@ class ComponentsBrowserController from WindowsControllerParent
 	func AddComponents
 		if ! lUseComponentsFile {
 			oVisualSourceFile = new VisualSourceFile
-			oVisualSourceFile.cFileName = T_CB_COMPONENTSFILE # "vpl/components.pwct"
+			if isWebAssembly() {
+				oVisualSourceFile.cFileName = T_CB_COMPONENTSFILE # "vpl/components.pwct"
+			elseif PWCTisMobile(:ComponentsFile)
+				oVisualSourceFile.cFileName = CurrentDir() + "/" + T_CB_COMPONENTSFILE # "vpl/components.pwct"
+			else 
+				oVisualSourceFile.cFileName = T_CB_COMPONENTSFILE # "vpl/components.pwct"
+			}
 			oVisualSourceFile.Open()
 			oVisualSourceFile.LoadTables()
 			aStepsTree   = oVisualSourceFile.GetStepsTreeTable()

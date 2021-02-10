@@ -239,8 +239,10 @@
 
 #==================================================
 
-	if PWCTIsMobile(:componentsfile) {
+	if isWebAssembly() {
 		T_CB_COMPONENTSFILE = "components.pwct"
+	elseif PWCTIsMobile(:componentsfile) 
+		T_CB_COMPONENTSFILE = "/PWCTApp/components.pwct"
 	else
 		T_CB_COMPONENTSFILE = "src/vpl/components.pwct"
 	}
