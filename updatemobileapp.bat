@@ -1,5 +1,5 @@
 echo Generate the Ring Object File
-ring pwct.ring -go -geo -norun
+ring pwct.ring -go -norun
 echo Copy files to target\mobile\qtproject folder
 copy *.ringo target\mobile\qtproject
 rem copy /Y mobileapp\*.ring target\mobile\qtproject\mobileapp

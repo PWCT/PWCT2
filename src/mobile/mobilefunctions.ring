@@ -5,7 +5,7 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-C_MOBILEVERSION = "PWCT 2.0 For Mobile - 2019.03.31"
+C_MOBILEVERSION = "PWCT 2.0 For Mobile - 2021.02.10"
 
 /*
 	The next function to Control if we need to use the Mobile Settings or Not
@@ -112,6 +112,9 @@ func CreateMobileFiles
 	oFile.copy_2(":/mobileapp/mobileapplibs3.ring",cPath+"/PWCTApp/runtime/mobileapplibs3.ring")
 	oFile.copy_2(":/templates/formcontroller.pwct",cPath+"/PWCTApp/templates/formcontroller.pwct")
 	oFile.copy_2(":/templates/arabic_formcontroller.pwct",cPath+"/PWCTApp/templates/arabic_formcontroller.pwct")
+	oFile.copy_2(":/vpl/arabiccomponents.pwct",cPath+"/PWCTApp/arabiccomponents.pwct")
+	oFile.copy_2(":/vpl/components.pwct",cPath+"/PWCTApp/components.pwct")
+
 	write(C_VERSIONFILE,C_MOBILEVERSION)
 	//chdir(cPath)
 	//remove("pwct.ringo")
