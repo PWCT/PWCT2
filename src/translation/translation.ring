@@ -7,6 +7,8 @@
 
 load "english.ring"
 
+	lUseArabic = False
+
 # Check Arabic Translation
 	if UseArabic() {
 		load "arabic.ring"
@@ -30,8 +32,4 @@ func UseArabic
 		if C_ENV_DEFAULT_LANG	= C_TRANSLATION_ARABIC {
 			return True 
 		}
-	# WebAssembly
-		if isWebAssembly() {	
-			return True
-		}
-	return False
+	return lUseArabic
