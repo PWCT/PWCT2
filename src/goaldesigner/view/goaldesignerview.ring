@@ -327,6 +327,13 @@ class GoalDesignerView from WindowsViewParent
 				}
 				"
 			}
+
+			if UseArabic() {
+				cStepsTreeStyle = substr(cStepsTreeStyle,"stylesheet-branch-closed","arstylesheet-branch-closed")
+				cStepsTreeStyle = substr(cStepsTreeStyle,"stylesheet-branch-end","arstylesheet-branch-end")
+				cStepsTreeStyle = substr(cStepsTreeStyle,"stylesheet-branch-more","arstylesheet-branch-more")
+			}
+
 		}
 		return cStepsTreeStyle
 
