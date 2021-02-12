@@ -963,7 +963,7 @@ class EnvironmentController from WindowsControllerParent
 		}
 
 	func OpenFormDesigner	
-		cFormFileName = PWCT_FOLDER + "/formdesigner/formdesigner.ring"
+		cFormFileName = PWCT_FOLDER + "/src/formdesigner/formdesigner.ring"
 		RunTool(cFormFileName)
 
 	func RunTool cFileName
