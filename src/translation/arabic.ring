@@ -244,8 +244,8 @@
 
 # GUI Library 
 
-	T_GUILIB_TITLE = "مكتبة الواجهة الرسومية"
-	T_GUILIB_INFO = "هذا المشروع يستخدم مكتبة Qt"
+	T_GUILIB_TITLE = "الواجهة الرسومية"
+	T_GUILIB_INFO = "هذا المشروع يستخدم مكتبة Qt من خلال RingQt"
 
 # Programming Language
 
