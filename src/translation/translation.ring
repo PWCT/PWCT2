@@ -7,7 +7,7 @@
 
 load "english.ring"
 
-	lUseArabic = True
+	lUseArabic = False
 
 # Check Arabic Translation
 	if UseArabic() {
