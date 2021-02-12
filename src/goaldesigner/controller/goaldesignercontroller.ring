@@ -302,18 +302,20 @@ class GoalDesignerController from WindowsControllerParent
 			ShowMessage(T_GD_BM_SORRY,T_GD_BM_CANTDELETE)
 			return
 		}
-		new qmessagebox(oView.win)
-		{
-                		setwindowtitle(T_GD_DELETESTEP_DELETESTEP) #  "Delete Step"
-                		settext(T_GD_DELETESTEP_AREYOUSURE) # "Are you sure?"
-                		setInformativeText(T_GD_DELETESTEP_DOYOUWANT) # "Do you want to delete the step?"
-                		setstandardbuttons(QMessageBox_Yes | QMessageBox_No)
-                		result = exec()
-		          	this.oView.win {
-                        		if result = QMessageBox_No {
-						return 
-                        		}
-                		}
+		if ! isWebAssembly() {
+			new qmessagebox(oView.win)
+			{
+	                		setwindowtitle(T_GD_DELETESTEP_DELETESTEP) #  "Delete Step"
+	                		settext(T_GD_DELETESTEP_AREYOUSURE) # "Are you sure?"
+	                		setInformativeText(T_GD_DELETESTEP_DOYOUWANT) # "Do you want to delete the step?"
+	                		setstandardbuttons(QMessageBox_Yes | QMessageBox_No)
+	                		result = exec()
+			          	this.oView.win {
+	                        		if result = QMessageBox_No {
+							return 
+	                        		}
+	                		}
+			}
 		}
 		oItem  = oView.oStepsTree.currentItem()
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
