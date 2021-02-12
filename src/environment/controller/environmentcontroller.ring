@@ -589,8 +589,8 @@ class EnvironmentController from WindowsControllerParent
 	*/
 
 	func GUIAction
-		MsgBox("GUI Library",
-		"This application uses the Qt GUI Library through RingQt")
+		MsgBox(T_GUILIB_TITLE, # "GUI Library"
+		T_GUILIB_INFO) # "This application uses the Qt GUI Library through RingQt"
 
 	/*
 		Purpose : Menubar - Help Menu - About Item Action

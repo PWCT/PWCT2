@@ -242,6 +242,11 @@
 	T_ABOUT_TITLE = "حول المشروع"
 	T_ABOUT_DEVELOPER = "2021, محمود سمير فايد <msfclipper@yahoo.com>"
 
+# GUI Library 
+
+	T_GUILIB_TITLE = "مكتبة الواجهة الرسومية"
+	T_GUILIB_INFO = "هذا المشروع يستخدم مكتبة Qt"
+
 
 #==================================================
 

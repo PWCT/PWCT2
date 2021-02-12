@@ -242,6 +242,10 @@
 	T_ABOUT_TITLE = "About"
 	T_ABOUT_DEVELOPER = "2021, Mahmoud Fayed <msfclipper@yahoo.com>"
 
+# GUI Library 
+
+	T_GUILIB_TITLE = "GUI Library"
+	T_GUILIB_INFO = "This application uses the Qt GUI Library through RingQt"
 
 #==================================================
 
