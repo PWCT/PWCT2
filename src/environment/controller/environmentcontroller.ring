@@ -1073,7 +1073,11 @@ class EnvironmentController from WindowsControllerParent
 					tabifydockwidget(this.oView.oDockFormDesigner,this.oView.oDockGoalDesigner)
 					tabifydockwidget(this.oView.oDockOutputWindow,this.oView.oDockComponentsBrowser)
 					if isWebAssembly() {
-						tabifydockwidget(this.oView.oDockFilesManager,this.oView.oDockComponentsBrowser)
+						if UseArabic() {
+							tabifydockwidget(this.oView.oDockFilesManager,this.oView.oDockOutputWindow)
+						else 
+							tabifydockwidget(this.oView.oDockFilesManager,this.oView.oDockComponentsBrowser)
+						}
 					}
 				}
 				oView.oDockGoalDesigner.raise()
