@@ -237,6 +237,12 @@
 	T_IP_OK = "Ok"
 	T_IP_CLOSE = "Close"
 
+# About 
+
+	T_ABOUT_TITLE = "About"
+	T_ABOUT_DEVELOPER = "2021, Mahmoud Fayed <msfclipper@yahoo.com>"
+
+
 #==================================================
 
 	if isWebAssembly() {

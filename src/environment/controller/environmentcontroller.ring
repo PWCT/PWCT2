@@ -612,8 +612,8 @@ class EnvironmentController from WindowsControllerParent
 		}
 
 	func AboutAction
-		MsgBox("About",
-		"2021, Mahmoud Fayed <msfclipper@yahoo.com>")	
+		MsgBox(T_ABOUT_TITLE,	# "About"
+		T_ABOUT_DEVELOPER)	# "2021, Mahmoud Fayed <msfclipper@yahoo.com>" 
 
 
 	/*

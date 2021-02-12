@@ -236,6 +236,13 @@
 	T_IP_OK = "حسنا"
 	T_IP_CLOSE = "اغلاق"
 
+
+# About 
+
+	T_ABOUT_TITLE = "حول المشروع"
+	T_ABOUT_DEVELOPER = "2021, محمود سمير فايد <msfclipper@yahoo.com>"
+
+
 #==================================================
 
 	if isWebAssembly() {
