@@ -579,8 +579,8 @@ class EnvironmentController from WindowsControllerParent
 	*/
 
 	func LanguageAction
-		MsgBox("Programming Language",
-		"This application developed using the Ring programming language")
+		MsgBox(T_PL_TITLE, # "Programming Language"
+		T_PL_INFO) # "This application developed using the Ring programming language"
 
 	/*
 		Purpose : Menubar - Help Menu - GUI Item Action

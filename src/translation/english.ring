@@ -247,6 +247,12 @@
 	T_GUILIB_TITLE = "GUI Library"
 	T_GUILIB_INFO = "This application uses the Qt GUI Library through RingQt"
 
+# Programming Language
+
+	T_PL_TITLE = "Programming Language"
+	T_PL_INFO = "This application developed using the Ring programming language"
+
+
 #==================================================
 
 	if isWebAssembly() {
