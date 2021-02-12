@@ -252,6 +252,10 @@
 	T_PL_TITLE = "Programming Language"
 	T_PL_INFO = "This application developed using the Ring programming language"
 
+# System Log
+
+	T_SYSLOG_TITLE = "System Log"
+	T_SYSLOG_CLOSE = "Close"
 
 #==================================================
 

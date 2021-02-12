@@ -51,11 +51,11 @@ class systemlog
 		win = new qWidget() {
 			win = this.win
 			resize(1000,600)
-			setWindowTitle("System Log")
+			setWindowTitle(T_SYSLOG_TITLE) # "System Log"
 			setWindowFlags(Qt_Window | Qt_WindowTitleHint  | Qt_CustomizeWindowHint)
 			textlog = new qTextEdit(win)
 			btnclose = new qPushbutton(win) {
-				setText("Close")
+				setText(T_SYSLOG_CLOSE) # "Close"
 				setClickEvent("oSystemlog.win.close()")
 			}
 			layout1 = new qVBoxLayout() {
