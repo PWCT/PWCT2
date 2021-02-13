@@ -5,12 +5,12 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-===========================================================
+===========================================================================================================================
 Status
-	* Bugs Count : 44
-	* Fixed Bugs : 44
+	* Bugs Count : 45
+	* Fixed Bugs : 45
 	* UnFixed Bugs : 0
-===========================================================
+===========================================================================================================================
 (1)  Fixed : We created over 6 thouands steps, then using the search window
 after selecting an item in the search result list we get the next error
 Line 285 GetObjByID() - Can't find the object!
@@ -20,7 +20,7 @@ called from line 2  In method itemselectedaction() in file goaldesigner/findstep
 called from line 1  In qapp_exec In method exec() in file ring_qt.ring
 called from line 38  In function test_goaldesigner() in file B:/pwct2/goaldesigner.ring
 called from line 31  in file B:/pwct2/goaldesigner.ring
-===========================================================
+===========================================================================================================================
 (2) Fixed : During move up/down after copy/paste and delete operations
 Line 177 Error (R2) : Array Access (Index out of range) !
 In method children() in file goaldesigner/model/treemodel.ring
@@ -31,9 +31,9 @@ called from line 85  In method movestepupaction() in file goaldesigner/controlle
 called from line 1  In qapp_exec In method exec() in file ring_qt.ring
 called from line 44  In function test_goaldesigner() in file B:/pwct2/goaldesigner.ring
 called from line 37  in file B:/pwct2/goaldesigner.ring
-===========================================================
+===========================================================================================================================
 (3) Fixed : During some tests, I discovered bad steps order in the search window
-===========================================================
+===========================================================================================================================
 (4) Fixed : Trying paste many times lead to runtime error
 The problem is related to triggering this event during another event execution
 	setValueChangedEvent(Method(:ChangeTimeMachinePointAction))
@@ -42,7 +42,7 @@ Solution: Save the event, remove it, change value then set it again.
 		setValueChangedEvent("")
 		setValue(nInteractionPoints)
 		setValueChangedEvent(cEvent)
-===========================================================
+===========================================================================================================================
 (5) Fixed : Open search window, display all steps, go to the past using the time machine
 select a step in the future from the search window
 Line 285 GetObjByID() - Can't find the object!
@@ -52,7 +52,7 @@ called from line 2  In method itemselectedaction() in file goaldesigner/controll
 called from line 1  In qapp_exec In method exec() in file ring_qt.ring
 called from line 45  In function test_goaldesigner() in file B:/pwct2/goaldesigner.ring
 called from line 38  in file B:/pwct2/goaldesigner.ring
-===========================================================
+===========================================================================================================================
 (6) Fixed : Error after using paste then the time machine
 Go to the past and use paste, then go to the future (present)  and move backward
 Also the same error happens when we add steps in the past
@@ -77,7 +77,7 @@ called from line 2  In method changetimemachinepointaction() in file goaldesigne
 called from line 1  In qapp_exec In method exec() in file ring_qt.ring
 called from line 45  In function test_goaldesigner() in file B:/pwct2/goaldesigner.ring
 called from line 38  in file B:/pwct2/goaldesigner.ring
-===========================================================
+===========================================================================================================================
 (7)  Fixed : Creating new steps in the past
 
 Line 285 GetObjByID() - Can't find the object!
@@ -92,7 +92,7 @@ called from line 59  In method addstepaction() in file goaldesigner/controller/g
 called from line 1  In qapp_exec In method exec() in file ring_qt.ring
 called from line 46  In function test_goaldesigner() in file B:/pwct2/goaldesigner.ring
 called from line 39  in file B:/pwct2/goaldesigner.ring
-===========================================================
+===========================================================================================================================
 (8) Fixed : Bad Order of steps after paste and new steps operations in the paste
 The problem is inside 	func FindNewNodePosition in TreeModel.ring
 How to reproduce the bug?
@@ -119,7 +119,7 @@ The problem is solved by maintaining a parent list
 			}
 		}
 		return len(aList)
-===========================================================
+===========================================================================================================================
 (9) Fixed : During Move Up Opeartion
 
 Line 180 Error (R2) : Array Access (Index out of range) !
@@ -146,7 +146,7 @@ The problem is Fixed by this check : if nPos = 0 { return }
 			nPos = SiblingUp(nNodeID)
 		# Check if we don't have nodes Up
 			if nPos = 0 { return }
-===========================================================
+===========================================================================================================================
 (10) Fixed :  After using Move Up/Down then the time machine we get bad order
 To reproduce the bug
 	* Create one two three steps
@@ -169,7 +169,7 @@ Fixed by using this function
 			}
 		}
 		return False
-===========================================================
+===========================================================================================================================
 (11) Fixed
 Line 19 Error (R3) : Calling Function without definition !: changetimemachinepointaction
 In method timemachinegotopresent() in file goaldesigner/controller/timemachinecontroller.ring
@@ -178,7 +178,7 @@ called from line 39  In method addstepaction() in file goaldesigner/controller/g
 called from line 1  In qapp_exec In method exec() in file ring_qt.ring
 called from line 46  In function test_goaldesigner() in file B:/pwct2/goaldesigner.ring
 called from line 39  in file B:/pwct2/goaldesigner.ring
-===========================================================
+===========================================================================================================================
 (12) Fixed after good node ID (when we solved extra large numbers problem)
 Using the Time Machine with large number of steps
 Line 285 GetObjByID() - Can't find the object!
@@ -192,13 +192,13 @@ called from line 204  In method changetimemachinepointaction() in file goaldesig
 called from line 1  In qapp_exec In method exec() in file ring_qt.ring
 called from line 46  In function test_goaldesigner() in file B:/pwct2/goaldesigner.ring
 called from line 39  in file B:/pwct2/goaldesigner.ring
-===========================================================
+===========================================================================================================================
 (13)
 Fixed : The node ID after paste operation - Avoid extra large numbers
-===========================================================
+===========================================================================================================================
 (14) 
 Fixed : Very slow save operation - solved using begin and end commands
-===========================================================
+===========================================================================================================================
 (15) Fixed
 Line 61 Error (R4) : Stack Overflow !
 In find In get_window_pos In method itemselectedaction() in file goaldesigner/controller/findstepcontroller.ring
@@ -336,7 +336,7 @@ Solved using the next code in itemselectedaction()
 				FindValueAction()	
 				oView.oListResult.setCurrentItemChangedEvent(cEvent)
 
-===========================================================
+===========================================================================================================================
 (16) Fixed
 Line 2 Error (R12) : error in property name, property not found! : omodel
 In method settext() in file ring_qt.ring
@@ -347,7 +347,7 @@ called from line 54  In function test_goaldesigner() in file B:/pwct2/goaldesign
 called from line 47  in file B:/pwct2/goaldesigner.ring
 
 The problem was in the Objects Library , using RingQt_nID instead of nID
-=========================================================== 
+===========================================================================================================================
 (17) Fixed
 esignercontroller.ring
 called from line 75  In method init() in file ring_qt.ring
@@ -531,7 +531,7 @@ called from line 1  In qapp_exec In method exec() in file ring_qt.ring
 called from line 58  In function test_goaldesigner() in file B:/pwct2/goaldesigner.ring
 called from line 51  in file B:/pwct2/goaldesigner.ring
 
-=========================================================== 
+===========================================================================================================================
 (18) Fixed
 Just press del then enter to delete step many times
 until you get the error
@@ -543,7 +543,7 @@ called from line 236  In method keypress() in file goaldesigner/controller/goald
 called from line 1  In qapp_exec In method exec() in file ring_qt.ring
 called from line 58  In function test_goaldesigner() in file B:/pwct2/goaldesigner.ring
 called from line 51  in file B:/pwct2/goaldesigner.ring
-=========================================================== 
+===========================================================================================================================
 (19) Fixed
 Line 61 Error (R4) : Stack Overflow !
 In find In get_window_pos In method keypress() in file goaldesigner/controller/goaldesignercontroller.ring                                                      called from line 223  In method keypress() in file goaldesigner/controller/goaldesignercontroller.ring
@@ -673,7 +673,7 @@ called from line 223  In method keypress() in file goaldesigner/controller/goald
 called from line 1  In qapp_exec In method exec() in file ring_qt.ring
 called from line 58  In function test_goaldesigner() in file B:/pwct2/goaldesigner.ring
 called from line 51  in file B:/pwct2/goaldesigner.ring
-=========================================================== 
+===========================================================================================================================
 (20)  Fixed
 called from line 11  In method timemachinegotopresent() in file goaldesigner/controller/timemachinecontroller.ring
 called from line 69  In method timemachinegotopresent() in file goaldesigner/controller/goaldesignercontroller.ring
@@ -826,7 +826,7 @@ called from line 285  In method keypress() in file goaldesigner/controller/goald
 called from line 1  In qapp_exec In method exec() in file ring_qt.ring
 called from line 58  In function test_goaldesigner() in file B:/pwct2/goaldesigner.ring
 called from line 51  in file B:/pwct2/goaldesigner.ring
-=========================================================== 
+===========================================================================================================================
 (21) Fixed
 called from line 247  In method stepchangedaction() in file goaldesigner/controller/goaldesignercontroller.ring
 called from line 247  In method stepchangedaction() in file goaldesigner/controller/goaldesignercontroller.ring
@@ -867,7 +867,7 @@ called from line 1  In method stepchangedaction() in file goaldesigner/controlle
 called from line 1  In qapp_exec In method exec() in file ring_qt.ring
 called from line 58  In function test_goaldesigner() in file B:/pwct2/goaldesigner.ring
 called from line 51  in file B:/pwct2/goaldesigner.ring
-========================================================================================
+===========================================================================================================================
 (22) Fixed
 Line 285 GetIDByObj() - Can't find the ID!
 In raise In function std_raise() in file stdfunctions.ring
@@ -877,7 +877,7 @@ called from line 332  In method keypress() in file goaldesigner/controller/goald
 called from line 1  In qapp_exec In method exec() in file ring_qt.ring
 called from line 58  In function test_goaldesigner() in file B:/pwct2/goaldesigner.ring
 called from line 51  in file B:/pwct2/goaldesigner.ring
-========================================================================================
+===========================================================================================================================
 (23) Fixed
 Line 285 GetIDByObj() - Can't find the ID!
 In raise In function std_raise() in file stdfunctions.ring
@@ -907,7 +907,7 @@ Solution modified to  the next code in StepsTreeView.ring
 			return oFirststep
 		}
 		return oItem
-=======================================================
+===========================================================================================================================
 (24) Fixed
 
 Line 81 Error (R2) : Array Access (Index out of range) !
@@ -919,16 +919,14 @@ called from line 72  In function start_environment() in file B:/pwct2/pwct.ring
 called from line 56  in file B:/pwct2/pwct.ring
 
 The problem is solved in the objects library
-====================================================
+===========================================================================================================================
 (25) Fixed 
 Bad drawing for items after interaction
 	In componentcontrollerParent.ring  (OkAction Method)
 					# To Correctly draw items (Avoid a Qt bug in drawing)
 						parent().oView.oStepsTree.collapseitem(oItem)
 						parent().oView.oStepsTree.expanditem(oItem)
-====================================================
-
-=======================================================
+===========================================================================================================================
 (26) Fixed : 
 
 Open files from project explorer
@@ -943,7 +941,7 @@ Closing the file, delete the controller object so we have the crash
 Solution when a file is closed we have to change the active file 
 
 Solved by avoiding the destroy to windows when we close dockable widgets
-====================================================
+===========================================================================================================================
 
 (27) Fixed 
 
@@ -956,7 +954,7 @@ called from line 322  In method cutstepsaction() in file goaldesigner/controller
 called from line 1  In qapp_exec In method exec() in file ring_qt.ring
 called from line 98  In function start_environment() in file B:/pwct2/pwct.ring
 called from line 56  in file B:/pwct2/pwct.ring
-====================================================
+===========================================================================================================================
 (28) Fixed 
 Line 130 Error (R2) : Array Access (Index out of range) !
 In method variable() in file component/view/componentviewparent.ring
@@ -969,7 +967,7 @@ called from line 208  In method keypressaction() in file component/controller/co
 called from line 1  In qapp_exec In method exec() in file ring_qt.ring
 called from line 102  In function start_environment() in file B:/pwct2/pwct.ring
 called from line 60  in file B:/pwct2/pwct.ring
-====================================================
+===========================================================================================================================
 (29) Fixed 
 Line 281 Error (R2) : Array Access (Index out of range) !
 In method pastenode() in file goaldesigner/model/treemodel.ring
@@ -978,7 +976,7 @@ called from line 252  In method pastestepsaction() in file goaldesigner/controll
 called from line 1  In qapp_exec In method exec() in file ring_qt.ring
 called from line 59  In function test_goaldesigner() in file B:/pwct2/goaldesigner.ring
 called from line 52  in file B:/pwct2/goaldesigner.ring
-=======================================================
+===========================================================================================================================
 (30) Fixed 
 Line 68 Error (R2) : Array Access (Index out of range) !
 In method getinteractioncomponent() in file goaldesigner/model/interactionmodel.ring
@@ -996,7 +994,7 @@ Solved by using the InteractionBuffer object
 Where we copy the interactions data when we copy steps 
 
 
-====================================================
+===========================================================================================================================
 (31) Fixed
 
 The problem happens when we Cut --> Paste()
@@ -1012,7 +1010,7 @@ called from line 1  In qapp_exec In method exec() in file ring_qt.ring
 called from line 102  In function start_environment() in file B:/pwct2/pwct.ring
 called from line 60  in file B:/pwct2/pwct.ring
 
-=======================================================
+===========================================================================================================================
 
 (32) Fixed
 
@@ -1030,7 +1028,7 @@ Solved in goaldesignerController.ring
 			# Prepare the Components Browser 
 			Activate()
 
-=======================================================
+===========================================================================================================================
 
 (33) Fixed 
 
@@ -1077,7 +1075,7 @@ func NewParentStep cStep
 		parent().oView.oStepsTree.SetCurrentItem(oItem,0)
 
 
-=======================================================
+===========================================================================================================================
 
 (34) Fixed : While creating some example, using copy/paste operations
 And using the Time Machine
@@ -1094,7 +1092,7 @@ called from line 14  In qapp_exec In method exec() in file ring_qt.ring
 called from line 122  In function start_environment() in file B:/pwct2/pwct.ring
 called from line 82  in file B:/pwct2/pwct.ring 
 
-=======================================================
+===========================================================================================================================
 
 (35) Fixed : Cut|Copy then paste many times, then modify the pasted steps
 	they are using the same interaction !
@@ -1111,7 +1109,7 @@ Solved in GoalDesignerModel.ring by adding oInteractionModelBuffer = oInteractio
 			oInteractionModelBuffer = oInteractionModel
 
 
-=======================================================
+===========================================================================================================================
 
 (36) Fixed 
 
@@ -1173,7 +1171,7 @@ Solved using in next function by adding the loop (While True)
 		return False
 
 
-==================================================================================================
+===========================================================================================================================
 
 (37) Fixed 
 
@@ -1185,7 +1183,7 @@ Fixed in environmentController.ring - openvisualFile() method using the next cod
 			aActiveFilesCopy = aActiveFiles 
 			for item in aActiveFilesCopy { item[2] = lower(item[2]) }
 
-==================================================================================================
+===========================================================================================================================
 
 (38) Fixed
 
@@ -1217,7 +1215,8 @@ with the next code
 				}
 				aResult + aRow
 			}
-==================================================================================================
+
+===========================================================================================================================
 
 (39) Fixed
 
@@ -1287,7 +1286,7 @@ I solved the problem by closing the current form, creating new form from scratch
 				oDesigner.oModel.ActiveObject().setSubWindow(oDesigner.oView.oSub)
 			}
 
-==================================================================================================
+===========================================================================================================================
 
 (40) Fixed : memory leak when we open the visual source files in the same window 
 
@@ -1300,7 +1299,7 @@ Solved in environmentcontroller.ring  method : openvisualFile()
 
 This was a logical memory leak!
 
-==================================================================================================
+===========================================================================================================================
 
 (41) Fixed : runtime error when testing on Mobile devices (Android)
 		
@@ -1322,7 +1321,7 @@ This was a logical memory leak!
 			//oView.oWinFilter.delete()
 			//oView.oDesktop.delete()
 
-==================================================================================================
+===========================================================================================================================
 
 (42) Fixed : UI Bug in resizing the output window 
 	solved in environmentview.ring 
@@ -1336,7 +1335,7 @@ This was a logical memory leak!
 				}
 				setcentralwidget(oCentral)
 
-==================================================================================================
+===========================================================================================================================
 
 (43) Fixed : Testing on Mobile Devices lead to two problems  (2020.01.03) 
 
@@ -1362,7 +1361,7 @@ This was a logical memory leak!
 
 		(1) Delete the window object after closing it 
 		
-==================================================================================================
+===========================================================================================================================
 
 (44) Fixed: Unstable version of PWCT for WebAssembly after using Ring 1.14
 	It was because this version of Ring produce runtime error
@@ -1442,4 +1441,15 @@ This was a logical memory leak!
 	Update: The original problem fixed in Ring itself
 		In this commit: https://github.com/ring-lang/ring/commit/90a5068bed0450ee3a5b0ef037e0ba6ebbbd9e0f
 
-==================================================================================================
+===========================================================================================================================
+
+(45) Fixed: Changing the Style doesn't apply it to the Steps Tree
+	Try Ctrl+Shift+3 then Ctrol+Shift+4
+
+	The problem was in using UseArabic() many times
+	And this function uses Eval() and reload the Settings file
+
+	Solved In this commit by using lUseArabic flag 
+		https://github.com/MahmoudFayed/pwct2/commit/5293b1fd33411c2b23d4ffd360dec51b229e3e96
+
+===========================================================================================================================
