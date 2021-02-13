@@ -556,7 +556,7 @@ class EnvironmentController from WindowsControllerParent
 
 	func CHMAction
 		new QDesktopServices {
-			OpenURL(new qURL("file:///"+substr(exefolder(),"\","/")+"../docs/ring.chm") )
+			OpenURL(new qURL("file:///"+substr(exefolder(),"\","/")+"../documents/ring.chm") )
 		}
 
 
@@ -568,7 +568,7 @@ class EnvironmentController from WindowsControllerParent
 
 	func PDFAction
 		new QDesktopServices {
-			OpenURL(new qURL("file:///"+substr(exefolder(),"\","/")+"../docs/ring.pdf") )
+			OpenURL(new qURL("file:///"+substr(exefolder(),"\","/")+"../documents/ring.pdf") )
 		}
 
 
