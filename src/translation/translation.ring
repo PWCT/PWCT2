@@ -7,10 +7,14 @@
 
 load "english.ring"
 
+# In other files, Use lUseArabic Flag to check the language 
+# Don't use UseArabic() because it uses Eval() and update the settings 
+
 	lUseArabic = False
 
 # Check Arabic Translation
 	if UseArabic() {
+		lUseArabic = True
 		load "arabic.ring"
 	}
 

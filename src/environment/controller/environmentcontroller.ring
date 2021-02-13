@@ -1072,13 +1072,11 @@ class EnvironmentController from WindowsControllerParent
 					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockComponentsBrowser,1)
 					tabifydockwidget(this.oView.oDockFormDesigner,this.oView.oDockGoalDesigner)
 					tabifydockwidget(this.oView.oDockOutputWindow,this.oView.oDockComponentsBrowser)
-					//if isWebAssembly() {
-						if UseArabic() {
-							tabifydockwidget(this.oView.oDockFilesManager,this.oView.oDockOutputWindow)
-						else 
-							tabifydockwidget(this.oView.oDockFilesManager,this.oView.oDockComponentsBrowser)
-						}
-					//}
+					if lUseArabic {
+						tabifydockwidget(this.oView.oDockFilesManager,this.oView.oDockOutputWindow)
+					else 
+						tabifydockwidget(this.oView.oDockFilesManager,this.oView.oDockComponentsBrowser)
+					}
 				}
 				oView.oDockGoalDesigner.raise()
 				oView.oDockComponentsBrowser.raise()
