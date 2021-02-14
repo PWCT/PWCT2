@@ -40,7 +40,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Load <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;stdlib.ring&quot;+char(34)+&quot;</font></span>"
+				"Load <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">stdlib.ring</font></span>"
 			],
 			[
 				"active",
@@ -48,7 +48,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"load "+char(34)+""+char(34)+"+char(34)+"+char(34)+"stdlib.ring"+char(34)+"+char(34)+"+char(34)+""+char(34)+""
+				"load "+char(34)+"stdlib.ring"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -68,7 +68,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Load "+char(34)+"+char(34)+"+char(34)+"stdlib.ring"+char(34)+"+char(34)+"+char(34)+""
+				"Load stdlib.ring"
 			]
 		]
 	],
@@ -78,7 +78,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Load <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;guilib.ring&quot;+char(34)+&quot;</font></span>"
+				"Load <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">guilib.ring</font></span>"
 			],
 			[
 				"active",
@@ -86,7 +86,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"load "+char(34)+""+char(34)+"+char(34)+"+char(34)+"guilib.ring"+char(34)+"+char(34)+"+char(34)+""+char(34)+""
+				"load "+char(34)+"guilib.ring"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -106,7 +106,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Load "+char(34)+"+char(34)+"+char(34)+"guilib.ring"+char(34)+"+char(34)+"+char(34)+""
+				"Load guilib.ring"
 			]
 		]
 	],
@@ -154,7 +154,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cname</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;ring&quot;+char(34)+&quot;</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cname</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;ring&quot;</font></span>"
 			],
 			[
 				"active",
@@ -162,7 +162,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"cname = "+char(34)+"+char(34)+"+char(34)+"ring"+char(34)+"+char(34)+"+char(34)+""
+				"cname = "+char(34)+"ring"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -182,7 +182,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"cname = "+char(34)+"+char(34)+"+char(34)+"ring"+char(34)+"+char(34)+"+char(34)+""
+				"cname = "+char(34)+"ring"+char(34)+""
 			]
 		]
 	],
@@ -344,7 +344,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;Hello,&nbsp;World!&quot;+char(34)+&quot;+(3*2)+cname</font></span>"
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;Hello,&nbsp;World!&quot;+(3*2)+cname</font></span>"
 			],
 			[
 				"active",
@@ -352,7 +352,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"see "+char(34)+"+char(34)+"+char(34)+"Hello, World!"+char(34)+"+char(34)+"+char(34)+"+(3*2)+cname"
+				"see "+char(34)+"Hello, World!"+char(34)+"+(3*2)+cname"
 			],
 			[
 				"interactionid",
@@ -372,7 +372,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"Hello, World!"+char(34)+"+char(34)+"+char(34)+"+(3*2)+cname"
+				"Print "+char(34)+"Hello, World!"+char(34)+"+(3*2)+cname"
 			]
 		]
 	],
@@ -382,7 +382,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;Welcome&nbsp;to&nbsp;the&nbsp;Ring&nbsp;programming&nbsp;language&quot;+char(34)+&quot;</font></span>"
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Welcome&nbsp;to&nbsp;the&nbsp;Ring&nbsp;programming&nbsp;language</font></span>"
 			],
 			[
 				"active",
@@ -390,7 +390,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"see "+char(34)+"+char(34)+"+char(34)+"Welcome to the Ring programming language"+char(34)+"+char(34)+"+char(34)+""
+				"see "+char(34)+"Welcome to the Ring programming language"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -410,7 +410,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"Welcome to the Ring programming language"+char(34)+"+char(34)+"+char(34)+""
+				"Print Welcome to the Ring programming language"
 			]
 		]
 	],
@@ -420,7 +420,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;Ring&nbsp;is&nbsp;a&nbsp;great&nbsp;language!&quot;+char(34)+&quot;</font></span>"
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Ring&nbsp;is&nbsp;a&nbsp;great&nbsp;language!</font></span>"
 			],
 			[
 				"active",
@@ -428,7 +428,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"see "+char(34)+"+char(34)+"+char(34)+"Ring is a great language!"+char(34)+"+char(34)+"+char(34)+""
+				"see "+char(34)+"Ring is a great language!"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -448,7 +448,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"Ring is a great language!"+char(34)+"+char(34)+"+char(34)+""
+				"Print Ring is a great language!"
 			]
 		]
 	],
@@ -458,7 +458,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;The&nbsp;current&nbsp;Ring&nbsp;version&nbsp;is&nbsp;Ring&nbsp;1.12&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">The&nbsp;current&nbsp;Ring&nbsp;version&nbsp;is&nbsp;Ring&nbsp;1.15</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -466,7 +466,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"The current Ring version is Ring 1.12"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"The current Ring version is Ring 1.15"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -486,7 +486,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"The current Ring version is Ring 1.12"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print The current Ring version is Ring 1.15 (New Line) "
 			]
 		]
 	],
@@ -496,7 +496,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;Hello,&nbsp;World!&quot;+char(34)+&quot;+(3*2)+cname</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;Hello,&nbsp;World!&quot;+(3*2)+cname</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -504,7 +504,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"Hello, World!"+char(34)+"+char(34)+"+char(34)+"+(3*2)+cname"
+				"? "+char(34)+"Hello, World!"+char(34)+"+(3*2)+cname"
 			],
 			[
 				"interactionid",
@@ -524,7 +524,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"Hello, World!"+char(34)+"+char(34)+"+char(34)+"+(3*2)+cname (New Line) "
+				"Print "+char(34)+"Hello, World!"+char(34)+"+(3*2)+cname (New Line) "
 			]
 		]
 	],
@@ -610,7 +610,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;True&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">True</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -618,7 +618,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"True"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"True"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -638,7 +638,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"True"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print True (New Line) "
 			]
 		]
 	],
@@ -648,7 +648,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;Nice&nbsp;work!&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Nice&nbsp;work!</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -656,7 +656,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"Nice work!"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"Nice work!"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -676,7 +676,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"Nice work!"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print Nice work! (New Line) "
 			]
 		]
 	],
@@ -686,7 +686,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;Now&nbsp;the&nbsp;import&nbsp;feature&nbsp;works&nbsp;fine&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Now&nbsp;the&nbsp;import&nbsp;feature&nbsp;works&nbsp;fine</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -694,7 +694,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"Now the import feature works fine"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"Now the import feature works fine"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -714,7 +714,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"Now the import feature works fine"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print Now the import feature works fine (New Line) "
 			]
 		]
 	],
@@ -876,7 +876,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;x&nbsp;=&nbsp;&quot;+char(34)+&quot;+x</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;x&nbsp;=&nbsp;&quot;+x</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -884,7 +884,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"x = "+char(34)+"+char(34)+"+char(34)+"+x"
+				"? "+char(34)+"x = "+char(34)+"+x"
 			],
 			[
 				"interactionid",
@@ -904,7 +904,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"x = "+char(34)+"+char(34)+"+char(34)+"+x (New Line) "
+				"Print "+char(34)+"x = "+char(34)+"+x (New Line) "
 			]
 		]
 	],
@@ -1066,7 +1066,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;one&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">one</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -1074,7 +1074,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"one"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"one"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -1094,7 +1094,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"one"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print one (New Line) "
 			]
 		]
 	],
@@ -1180,7 +1180,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;two&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">two</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -1188,7 +1188,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"two"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"two"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -1208,7 +1208,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"two"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print two (New Line) "
 			]
 		]
 	],
@@ -1294,7 +1294,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;three&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">three</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -1302,7 +1302,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"three"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"three"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -1322,7 +1322,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"three"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print three (New Line) "
 			]
 		]
 	],
@@ -1408,7 +1408,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;four&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">four</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -1416,7 +1416,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"four"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"four"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -1436,7 +1436,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"four"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print four (New Line) "
 			]
 		]
 	],
@@ -1522,7 +1522,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;other&nbsp;number&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">other&nbsp;number</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -1530,7 +1530,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"other number"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"other number"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -1550,7 +1550,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"other number"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print other number (New Line) "
 			]
 		]
 	],
@@ -2358,7 +2358,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;x&nbsp;=&nbsp;&quot;+char(34)+&quot;+x</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;x&nbsp;=&nbsp;&quot;+x</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -2366,7 +2366,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"x = "+char(34)+"+char(34)+"+char(34)+"+x"
+				"? "+char(34)+"x = "+char(34)+"+x"
 			],
 			[
 				"interactionid",
@@ -2386,7 +2386,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"x = "+char(34)+"+char(34)+"+char(34)+"+x (New Line) "
+				"Print "+char(34)+"x = "+char(34)+"+x (New Line) "
 			]
 		]
 	],
@@ -2662,7 +2662,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;One&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">One</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -2670,7 +2670,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"One"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"One"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -2690,7 +2690,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"One"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print One (New Line) "
 			]
 		]
 	],
@@ -2776,7 +2776,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;Two&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Two</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -2784,7 +2784,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"Two"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"Two"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -2804,7 +2804,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"Two"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print Two (New Line) "
 			]
 		]
 	],
@@ -2890,7 +2890,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;Three&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Three</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -2898,7 +2898,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"Three"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"Three"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -2918,7 +2918,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"Three"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print Three (New Line) "
 			]
 		]
 	],
@@ -3004,7 +3004,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;Other&nbsp;number&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Other&nbsp;number</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -3012,7 +3012,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"Other number"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"Other number"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -3032,7 +3032,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"Other number"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print Other number (New Line) "
 			]
 		]
 	],
@@ -3156,7 +3156,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;Try&nbsp;some&nbsp;code&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Try&nbsp;some&nbsp;code</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -3164,7 +3164,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"Try some code"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"Try some code"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -3184,7 +3184,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"Try some code"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print Try some code (New Line) "
 			]
 		]
 	],
@@ -3308,7 +3308,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;Catch&nbsp;the&nbsp;error&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Catch&nbsp;the&nbsp;error</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -3316,7 +3316,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"Catch the error"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"Catch the error"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -3336,7 +3336,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"Catch the error"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print Catch the error (New Line) "
 			]
 		]
 	],
@@ -3764,7 +3764,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;test&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">test</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -3772,7 +3772,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"test"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"test"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -3792,7 +3792,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"test"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print test (New Line) "
 			]
 		]
 	],
@@ -4220,7 +4220,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;just&nbsp;a&nbsp;test!&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">just&nbsp;a&nbsp;test!</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -4228,7 +4228,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"just a test!"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"just a test!"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -4248,7 +4248,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"just a test!"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print just a test! (New Line) "
 			]
 		]
 	],
@@ -4296,7 +4296,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;Thanks&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Thanks</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -4304,7 +4304,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"Thanks"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"Thanks"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -4324,7 +4324,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"Thanks"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print Thanks (New Line) "
 			]
 		]
 	],
@@ -4334,7 +4334,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;End&nbsp;of&nbsp;program!&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">End&nbsp;of&nbsp;program!</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -4342,7 +4342,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"End of program!"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"End of program!"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -4362,7 +4362,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"End of program!"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print End of program! (New Line) "
 			]
 		]
 	],
@@ -4638,7 +4638,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;hello&nbsp;from&nbsp;one&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">hello&nbsp;from&nbsp;one</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -4646,7 +4646,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"hello from one"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"hello from one"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -4666,7 +4666,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"hello from one"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print hello from one (New Line) "
 			]
 		]
 	],
@@ -4790,7 +4790,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;hello&nbsp;from&nbsp;two&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">hello&nbsp;from&nbsp;two</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -4798,7 +4798,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"hello from two"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"hello from two"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -4818,7 +4818,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"hello from two"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print hello from two (New Line) "
 			]
 		]
 	],
@@ -4942,7 +4942,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;hello&nbsp;from&nbsp;three&nbsp;&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">hello&nbsp;from&nbsp;three&nbsp;</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -4950,7 +4950,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"hello from three "+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"hello from three "+char(34)+""
 			],
 			[
 				"interactionid",
@@ -4970,7 +4970,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"hello from three "+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print hello from three  (New Line) "
 			]
 		]
 	],
@@ -5094,7 +5094,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;Hello&nbsp;from&nbsp;Test!&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Hello&nbsp;from&nbsp;Test!</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -5102,7 +5102,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"Hello from Test!"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"Hello from Test!"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -5122,7 +5122,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"Hello from Test!"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print Hello from Test! (New Line) "
 			]
 		]
 	],
@@ -5702,7 +5702,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;r&nbsp;test&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">r&nbsp;test</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -5710,7 +5710,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"r test"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"r test"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -5730,7 +5730,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"r test"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print r test (New Line) "
 			]
 		]
 	],
@@ -5778,7 +5778,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;z&nbsp;test&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">z&nbsp;test</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -5786,7 +5786,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"z test"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"z test"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -5806,7 +5806,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"z test"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print z test (New Line) "
 			]
 		]
 	],
@@ -5854,7 +5854,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;y&nbsp;test&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">y&nbsp;test</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -5862,7 +5862,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"y test"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"y test"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -5882,7 +5882,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"y test"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print y test (New Line) "
 			]
 		]
 	],
@@ -5930,7 +5930,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;x&nbsp;test&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">x&nbsp;test</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -5938,7 +5938,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"x test"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"x test"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -5958,7 +5958,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"x test"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print x test (New Line) "
 			]
 		]
 	],
@@ -6120,7 +6120,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;Enter&nbsp;Name:&nbsp;&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Enter&nbsp;Name:&nbsp;</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -6128,7 +6128,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"Enter Name: "+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"Enter Name: "+char(34)+""
 			],
 			[
 				"interactionid",
@@ -6148,7 +6148,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"Enter Name: "+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print Enter Name:  (New Line) "
 			]
 		]
 	],
@@ -6196,7 +6196,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;Hello&nbsp;&quot;+char(34)+&quot;+name</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;Hello&nbsp;&quot;+name</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -6204,7 +6204,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"Hello "+char(34)+"+char(34)+"+char(34)+"+name"
+				"? "+char(34)+"Hello "+char(34)+"+name"
 			],
 			[
 				"interactionid",
@@ -6224,7 +6224,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"Hello "+char(34)+"+char(34)+"+char(34)+"+name (New Line) "
+				"Print "+char(34)+"Hello "+char(34)+"+name (New Line) "
 			]
 		]
 	],
@@ -6652,7 +6652,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;hello&nbsp;from&nbsp;myclass&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">hello&nbsp;from&nbsp;myclass</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -6660,7 +6660,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"hello from myclass"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"hello from myclass"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -6680,7 +6680,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"hello from myclass"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print hello from myclass (New Line) "
 			]
 		]
 	],
@@ -6956,7 +6956,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;m1&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">m1</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -6964,7 +6964,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"m1"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"m1"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -6984,7 +6984,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"m1"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print m1 (New Line) "
 			]
 		]
 	],
@@ -7108,7 +7108,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;m2&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">m2</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -7116,7 +7116,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"m2"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"m2"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -7136,7 +7136,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"m2"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print m2 (New Line) "
 			]
 		]
 	],
@@ -7260,7 +7260,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;myclass&nbsp;-&nbsp;private&nbsp;section&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">myclass&nbsp;-&nbsp;private&nbsp;section</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -7268,7 +7268,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"myclass - private section"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"myclass - private section"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -7288,7 +7288,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"myclass - private section"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print myclass - private section (New Line) "
 			]
 		]
 	],
@@ -7412,7 +7412,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;private&nbsp;method&nbsp;1&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">private&nbsp;method&nbsp;1</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -7420,7 +7420,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"private method 1"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"private method 1"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -7440,7 +7440,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"private method 1"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print private method 1 (New Line) "
 			]
 		]
 	],
@@ -7564,7 +7564,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;private&nbsp;method&nbsp;2&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">private&nbsp;method&nbsp;2</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -7572,7 +7572,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"private method 2"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"private method 2"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -7592,7 +7592,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"private method 2"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print private method 2 (New Line) "
 			]
 		]
 	],
@@ -7792,7 +7792,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;hello&nbsp;from&nbsp;human&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">hello&nbsp;from&nbsp;human</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -7800,7 +7800,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"hello from human"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"hello from human"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -7820,7 +7820,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"hello from human"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print hello from human (New Line) "
 			]
 		]
 	],
@@ -7944,7 +7944,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;human&nbsp;name&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">human&nbsp;name</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -7952,7 +7952,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"human name"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"human name"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -7972,7 +7972,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"human name"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print human name (New Line) "
 			]
 		]
 	],
@@ -8096,7 +8096,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;human&nbsp;age&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">human&nbsp;age</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -8104,7 +8104,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"human age"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"human age"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -8124,7 +8124,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"human age"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print human age (New Line) "
 			]
 		]
 	],
@@ -8248,7 +8248,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;human&nbsp;-&nbsp;private&nbsp;section&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">human&nbsp;-&nbsp;private&nbsp;section</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -8256,7 +8256,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"human - private section"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"human - private section"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -8276,7 +8276,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"human - private section"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print human - private section (New Line) "
 			]
 		]
 	],
@@ -8438,7 +8438,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;hello&nbsp;from&nbsp;employee&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">hello&nbsp;from&nbsp;employee</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -8446,7 +8446,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"hello from employee"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"hello from employee"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -8466,7 +8466,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"hello from employee"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print hello from employee (New Line) "
 			]
 		]
 	],
@@ -8590,7 +8590,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;job&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">job</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -8598,7 +8598,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"job"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"job"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -8618,7 +8618,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"job"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print job (New Line) "
 			]
 		]
 	],
@@ -8742,7 +8742,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;salary&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">salary</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -8750,7 +8750,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"salary"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"salary"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -8770,7 +8770,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"salary"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print salary (New Line) "
 			]
 		]
 	],
@@ -9008,7 +9008,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;+char(34)+&quot;old&nbsp;salary&quot;+char(34)+&quot;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">old&nbsp;salary</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -9016,7 +9016,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"+char(34)+"+char(34)+"old salary"+char(34)+"+char(34)+"+char(34)+""
+				"? "+char(34)+"old salary"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -9036,7 +9036,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print "+char(34)+"+char(34)+"+char(34)+"old salary"+char(34)+"+char(34)+"+char(34)+" (New Line) "
+				"Print old salary (New Line) "
 			]
 		]
 	],
@@ -9123,7 +9123,7 @@ aInteractionsTable = [
 		1,
 		"",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		""
 	],
 	[
@@ -9131,23 +9131,23 @@ aInteractionsTable = [
 		1,
 		"load",
 		"14/02/2021",
-		"04:18:31",
-		"file;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"stdlib.ring"+char(34)+"+char(34)+"+char(34)+";;_RV_;;"
+		"05:32:40",
+		"file;;_RV_;;stdlib.ring;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"load",
 		"14/02/2021",
-		"04:18:31",
-		"file;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"guilib.ring"+char(34)+"+char(34)+"+char(34)+";;_RV_;;"
+		"05:32:40",
+		"file;;_RV_;;guilib.ring;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"import",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"value;;_RV_;;system.gui;;_RV_;;"
 	],
 	[
@@ -9155,15 +9155,15 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"14/02/2021",
-		"04:18:31",
-		"leftside;;_RV_;;cname;;_RV_;;rightside;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"ring"+char(34)+"+char(34)+"+char(34)+";;_RV_;;"
+		"05:32:40",
+		"leftside;;_RV_;;cname;;_RV_;;rightside;;_RV_;;"+char(34)+"ring"+char(34)+";;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"freetyping",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"value;;_RV_;;one();;_RV_;;"
 	],
 	[
@@ -9171,7 +9171,7 @@ aInteractionsTable = [
 		1,
 		"freetyping",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"value;;_RV_;;two()three();;_RV_;;"
 	],
 	[
@@ -9179,7 +9179,7 @@ aInteractionsTable = [
 		1,
 		"freetyping",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"value;;_RV_;;test(1,2);;_RV_;;"
 	],
 	[
@@ -9187,7 +9187,7 @@ aInteractionsTable = [
 		1,
 		"freetyping",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"value;;_RV_;;sum(1,2,3);;_RV_;;"
 	],
 	[
@@ -9195,47 +9195,47 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"Hello, World!"+char(34)+"+char(34)+"+char(34)+"+(3*2)+cname;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+		"05:32:40",
+		"text;;_RV_;;"+char(34)+"Hello, World!"+char(34)+"+(3*2)+cname;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"Welcome to the Ring programming language"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+		"05:32:40",
+		"text;;_RV_;;Welcome to the Ring programming language;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"Ring is a great language!"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+		"05:32:40",
+		"text;;_RV_;;Ring is a great language!;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"The current Ring version is Ring 1.12"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:40",
+		"text;;_RV_;;The current Ring version is Ring 1.15;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"Hello, World!"+char(34)+"+char(34)+"+char(34)+"+(3*2)+cname;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:40",
+		"text;;_RV_;;"+char(34)+"Hello, World!"+char(34)+"+(3*2)+cname;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"ifstatement",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"condition;;_RV_;;3=1+2;;_RV_;;"
 	],
 	[
@@ -9243,31 +9243,31 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"True"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:40",
+		"text;;_RV_;;True;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"Nice work!"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:40",
+		"text;;_RV_;;Nice work!;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"Now the import feature works fine"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:40",
+		"text;;_RV_;;Now the import feature works fine;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"assignment",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"leftside;;_RV_;;x;;_RV_;;rightside;;_RV_;;10;;_RV_;;"
 	],
 	[
@@ -9275,7 +9275,7 @@ aInteractionsTable = [
 		1,
 		"whileloop",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"condition;;_RV_;;x>0;;_RV_;;"
 	],
 	[
@@ -9283,15 +9283,15 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"x = "+char(34)+"+char(34)+"+char(34)+"+x;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:40",
+		"text;;_RV_;;"+char(34)+"x = "+char(34)+"+x;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"freetyping",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"value;;_RV_;;x--;;_RV_;;"
 	],
 	[
@@ -9299,7 +9299,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"condition;;_RV_;;x=1;;_RV_;;"
 	],
 	[
@@ -9307,15 +9307,15 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"one"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:40",
+		"text;;_RV_;;one;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"elseif",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"condition;;_RV_;;x=2;;_RV_;;"
 	],
 	[
@@ -9323,15 +9323,15 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"two"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:40",
+		"text;;_RV_;;two;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"elseif",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"condition;;_RV_;;x=3;;_RV_;;"
 	],
 	[
@@ -9339,15 +9339,15 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"three"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:40",
+		"text;;_RV_;;three;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"elseif",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"condition;;_RV_;;x=4;;_RV_;;"
 	],
 	[
@@ -9355,15 +9355,15 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"four"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:40",
+		"text;;_RV_;;four;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"else",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		""
 	],
 	[
@@ -9371,15 +9371,15 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"other number"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:40",
+		"text;;_RV_;;other number;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		33,
 		1,
 		"forloop",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"start;;_RV_;;x=1;;_RV_;;to;;_RV_;;10;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
@@ -9387,7 +9387,7 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"text;;_RV_;;x;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -9395,7 +9395,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"condition;;_RV_;;x=3;;_RV_;;"
 	],
 	[
@@ -9403,7 +9403,7 @@ aInteractionsTable = [
 		1,
 		"loop",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"value;;_RV_;;1;;_RV_;;"
 	],
 	[
@@ -9411,7 +9411,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"condition;;_RV_;;x=7;;_RV_;;"
 	],
 	[
@@ -9419,7 +9419,7 @@ aInteractionsTable = [
 		1,
 		"exit",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"value;;_RV_;;1;;_RV_;;"
 	],
 	[
@@ -9427,7 +9427,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"leftside;;_RV_;;alist;;_RV_;;rightside;;_RV_;;[1,2,3];;_RV_;;"
 	],
 	[
@@ -9435,7 +9435,7 @@ aInteractionsTable = [
 		1,
 		"forinloop",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"variable;;_RV_;;x;;_RV_;;in;;_RV_;;alist;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
@@ -9443,7 +9443,7 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"text;;_RV_;;x;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -9451,7 +9451,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"leftside;;_RV_;;x;;_RV_;;rightside;;_RV_;;10;;_RV_;;"
 	],
 	[
@@ -9459,7 +9459,7 @@ aInteractionsTable = [
 		1,
 		"doagain",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"condition;;_RV_;;x>0;;_RV_;;"
 	],
 	[
@@ -9467,15 +9467,15 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"x = "+char(34)+"+char(34)+"+char(34)+"+x;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:40",
+		"text;;_RV_;;"+char(34)+"x = "+char(34)+"+x;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		45,
 		1,
 		"freetyping",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"value;;_RV_;;x--;;_RV_;;"
 	],
 	[
@@ -9483,7 +9483,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"leftside;;_RV_;;x;;_RV_;;rightside;;_RV_;;3;;_RV_;;"
 	],
 	[
@@ -9491,7 +9491,7 @@ aInteractionsTable = [
 		1,
 		"switch",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"variable;;_RV_;;x;;_RV_;;"
 	],
 	[
@@ -9499,7 +9499,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"value;;_RV_;;1;;_RV_;;"
 	],
 	[
@@ -9507,15 +9507,15 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"One"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:40",
+		"text;;_RV_;;One;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		50,
 		1,
 		"case",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"value;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -9523,15 +9523,15 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"Two"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:40",
+		"text;;_RV_;;Two;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		52,
 		1,
 		"case",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"value;;_RV_;;3;;_RV_;;"
 	],
 	[
@@ -9539,15 +9539,15 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"Three"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:40",
+		"text;;_RV_;;Three;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		54,
 		1,
 		"else",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		""
 	],
 	[
@@ -9555,15 +9555,15 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"Other number"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:40",
+		"text;;_RV_;;Other number;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		56,
 		1,
 		"trycatch",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		""
 	],
 	[
@@ -9571,15 +9571,15 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"Try some code"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:40",
+		"text;;_RV_;;Try some code;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		58,
 		1,
 		"freetyping",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"value;;_RV_;;1/0;;_RV_;;"
 	],
 	[
@@ -9587,15 +9587,15 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"Catch the error"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:40",
+		"text;;_RV_;;Catch the error;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		60,
 		1,
 		"import",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"value;;_RV_;;myfirstpackage;;_RV_;;"
 	],
 	[
@@ -9603,7 +9603,7 @@ aInteractionsTable = [
 		1,
 		"freetyping",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"value;;_RV_;;myobj= new myclass();;_RV_;;"
 	],
 	[
@@ -9611,7 +9611,7 @@ aInteractionsTable = [
 		1,
 		"braces",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		""
 	],
 	[
@@ -9619,7 +9619,7 @@ aInteractionsTable = [
 		1,
 		"freetyping",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"value;;_RV_;;myobj.myclass_m1();;_RV_;;"
 	],
 	[
@@ -9627,7 +9627,7 @@ aInteractionsTable = [
 		1,
 		"freetyping",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"value;;_RV_;;myobj.myclass_m2();;_RV_;;"
 	],
 	[
@@ -9635,7 +9635,7 @@ aInteractionsTable = [
 		1,
 		"freetyping",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"value;;_RV_;;myfunc= func ;;_RV_;;"
 	],
 	[
@@ -9643,7 +9643,7 @@ aInteractionsTable = [
 		1,
 		"braces",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		""
 	],
 	[
@@ -9651,15 +9651,15 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"test"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:40",
+		"text;;_RV_;;test;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		68,
 		1,
 		"freetyping",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"value;;_RV_;;call myfunc();;_RV_;;"
 	],
 	[
@@ -9667,7 +9667,7 @@ aInteractionsTable = [
 		1,
 		"freetyping",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"value;;_RV_;;myobj2= new myclass();;_RV_;;"
 	],
 	[
@@ -9675,7 +9675,7 @@ aInteractionsTable = [
 		1,
 		"braces",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		""
 	],
 	[
@@ -9683,7 +9683,7 @@ aInteractionsTable = [
 		1,
 		"freetyping",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"value;;_RV_;;myclass_m1();;_RV_;;"
 	],
 	[
@@ -9691,7 +9691,7 @@ aInteractionsTable = [
 		1,
 		"freetyping",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"value;;_RV_;;myclass_m2();;_RV_;;"
 	],
 	[
@@ -9699,7 +9699,7 @@ aInteractionsTable = [
 		1,
 		"freetyping",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"value;;_RV_;;myobj3= new myclass;;_RV_;;"
 	],
 	[
@@ -9707,7 +9707,7 @@ aInteractionsTable = [
 		1,
 		"braces",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		""
 	],
 	[
@@ -9715,31 +9715,31 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"just a test!"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:40",
+		"text;;_RV_;;just a test!;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		76,
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"Thanks"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:40",
+		"text;;_RV_;;Thanks;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		77,
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"End of program!"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:40",
+		"text;;_RV_;;End of program!;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		78,
 		1,
 		"freetyping",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"value;;_RV_;;myend();;_RV_;;"
 	],
 	[
@@ -9747,7 +9747,7 @@ aInteractionsTable = [
 		1,
 		"func",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"name;;_RV_;;myend;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -9755,7 +9755,7 @@ aInteractionsTable = [
 		1,
 		"shutdown",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"value;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -9763,7 +9763,7 @@ aInteractionsTable = [
 		1,
 		"func",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"name;;_RV_;;one;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -9771,15 +9771,15 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"hello from one"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:40",
+		"text;;_RV_;;hello from one;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		83,
 		1,
 		"func",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"name;;_RV_;;two;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -9787,15 +9787,15 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"hello from two"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:40",
+		"text;;_RV_;;hello from two;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		85,
 		1,
 		"func",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"name;;_RV_;;three;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -9803,15 +9803,15 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"hello from three "+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:40",
+		"text;;_RV_;;hello from three ;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		87,
 		1,
 		"func",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"name;;_RV_;;test;;_RV_;;parameters;;_RV_;;x,y;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -9819,15 +9819,15 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"Hello from Test!"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:40",
+		"text;;_RV_;;Hello from Test!;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		89,
 		1,
 		"func",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"name;;_RV_;;sum;;_RV_;;parameters;;_RV_;;a,b,c;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -9835,7 +9835,7 @@ aInteractionsTable = [
 		1,
 		"return",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"value;;_RV_;;a+b+c;;_RV_;;"
 	],
 	[
@@ -9843,7 +9843,7 @@ aInteractionsTable = [
 		1,
 		"func",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:40",
 		"name;;_RV_;;testif;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -9851,7 +9851,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:41",
 		"condition;;_RV_;;x=1;;_RV_;;"
 	],
 	[
@@ -9859,7 +9859,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:41",
 		"condition;;_RV_;;y=2;;_RV_;;"
 	],
 	[
@@ -9867,7 +9867,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:41",
 		"condition;;_RV_;;z=3;;_RV_;;"
 	],
 	[
@@ -9875,7 +9875,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:41",
 		"condition;;_RV_;;r=nice();;_RV_;;"
 	],
 	[
@@ -9883,39 +9883,39 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"r test"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:41",
+		"text;;_RV_;;r test;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		97,
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"z test"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:41",
+		"text;;_RV_;;z test;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		98,
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"y test"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:41",
+		"text;;_RV_;;y test;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		99,
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"x test"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:41",
+		"text;;_RV_;;x test;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		100,
 		1,
 		"func",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:41",
 		"name;;_RV_;;testgive;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -9923,15 +9923,15 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"Enter Name: "+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:41",
+		"text;;_RV_;;Enter Name: ;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		102,
 		1,
 		"getinput",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:41",
 		"text;;_RV_;;name;;_RV_;;"
 	],
 	[
@@ -9939,15 +9939,15 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"Hello "+char(34)+"+char(34)+"+char(34)+"+name;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:41",
+		"text;;_RV_;;"+char(34)+"Hello "+char(34)+"+name;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		104,
 		1,
 		"package",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:41",
 		"value;;_RV_;;myfirstpackage;;_RV_;;"
 	],
 	[
@@ -9955,7 +9955,7 @@ aInteractionsTable = [
 		1,
 		"class",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:41",
 		"value;;_RV_;;myparent;;_RV_;;value2;;_RV_;;;;_RV_;;"
 	],
 	[
@@ -9963,7 +9963,7 @@ aInteractionsTable = [
 		1,
 		"class",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:41",
 		"value;;_RV_;;myclass;;_RV_;;value2;;_RV_;;myparent;;_RV_;;"
 	],
 	[
@@ -9971,15 +9971,15 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"hello from myclass"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:41",
+		"text;;_RV_;;hello from myclass;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		108,
 		1,
 		"func",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:41",
 		"name;;_RV_;;init;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -9987,7 +9987,7 @@ aInteractionsTable = [
 		1,
 		"return",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:41",
 		"value;;_RV_;;self;;_RV_;;"
 	],
 	[
@@ -9995,7 +9995,7 @@ aInteractionsTable = [
 		1,
 		"func",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:41",
 		"name;;_RV_;;myclass_m1;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -10003,15 +10003,15 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"m1"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:41",
+		"text;;_RV_;;m1;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		112,
 		1,
 		"func",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:41",
 		"name;;_RV_;;myclass_m2;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -10019,23 +10019,23 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"m2"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:41",
+		"text;;_RV_;;m2;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		114,
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"myclass - private section"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:41",
+		"text;;_RV_;;myclass - private section;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		115,
 		1,
 		"func",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:41",
 		"name;;_RV_;;private_method1;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -10043,15 +10043,15 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"private method 1"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:41",
+		"text;;_RV_;;private method 1;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		117,
 		1,
 		"func",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:41",
 		"name;;_RV_;;private_method2;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -10059,15 +10059,15 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"private method 2"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:41",
+		"text;;_RV_;;private method 2;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		119,
 		1,
 		"package",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:41",
 		"value;;_RV_;;application.sales.database;;_RV_;;"
 	],
 	[
@@ -10075,7 +10075,7 @@ aInteractionsTable = [
 		1,
 		"class",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:41",
 		"value;;_RV_;;human;;_RV_;;value2;;_RV_;;;;_RV_;;"
 	],
 	[
@@ -10083,15 +10083,15 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"hello from human"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:41",
+		"text;;_RV_;;hello from human;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		122,
 		1,
 		"func",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:41",
 		"name;;_RV_;;humanname;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -10099,15 +10099,15 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"human name"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:41",
+		"text;;_RV_;;human name;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		124,
 		1,
 		"func",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:41",
 		"name;;_RV_;;humanage;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -10115,23 +10115,23 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"human age"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:41",
+		"text;;_RV_;;human age;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		126,
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"human - private section"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:41",
+		"text;;_RV_;;human - private section;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		127,
 		1,
 		"class",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:41",
 		"value;;_RV_;;employee;;_RV_;;value2;;_RV_;;human;;_RV_;;"
 	],
 	[
@@ -10139,15 +10139,15 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"hello from employee"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:41",
+		"text;;_RV_;;hello from employee;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		129,
 		1,
 		"func",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:41",
 		"name;;_RV_;;employeejob;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -10155,15 +10155,15 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"job"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:41",
+		"text;;_RV_;;job;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		131,
 		1,
 		"func",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:41",
 		"name;;_RV_;;salary;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -10171,15 +10171,15 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"salary"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:41",
+		"text;;_RV_;;salary;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		133,
 		1,
 		"func",
 		"14/02/2021",
-		"04:18:31",
+		"05:32:41",
 		"name;;_RV_;;oldsalary;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -10187,8 +10187,8 @@ aInteractionsTable = [
 		1,
 		"print",
 		"14/02/2021",
-		"04:18:31",
-		"text;;_RV_;;"+char(34)+"+char(34)+"+char(34)+"old salary"+char(34)+"+char(34)+"+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"05:32:41",
+		"text;;_RV_;;old salary;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	]
 ]
 nStepsID = 240		
