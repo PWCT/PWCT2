@@ -187,22 +187,22 @@ class VisualSourceFile
 cVisualSourceFileVersion = '#{f1}'
 cVisualLanguageName      = '#{f2}'
 cNaturalLanguageName     = '#{f3}'
+nStepsID                 = #{f4}		
+nInteractionsID          = #{f5}
 
-aStepsTable = #{f4}
+aStepsTable = #{f6}
 
-aInteractionsTable = #{f5}
+aInteractionsTable = #{f7}
 
-nStepsID = #{f6}		
+# End of Visual Source File"
 
-nInteractionsID = #{f7}
-"
 		cContent = substr(cContent,"#{f1}",C_VSF_VERSION)
 		cContent = substr(cContent,"#{f2}",C_VPL_NAME)
 		cContent = substr(cContent,"#{f3}",T_LANGUAGE)
-		cContent = substr(cContent,"#{f4}",List2Code(aStepsTable))
-		cContent = substr(cContent,"#{f5}",List2Code(aInteractionsTable))
-		cContent = substr(cContent,"#{f6}",""+nStepsID)
-		cContent = substr(cContent,"#{f7}",""+nInteractionsID)
+		cContent = substr(cContent,"#{f4}",""+nStepsID)
+		cContent = substr(cContent,"#{f5}",""+nInteractionsID)
+		cContent = substr(cContent,"#{f6}",List2Code(aStepsTable))
+		cContent = substr(cContent,"#{f7}",List2Code(aInteractionsTable))
 		write( cFileName, cContent )		
 		Log("End save tables")
 
@@ -288,31 +288,3 @@ nInteractionsID = #{f7}
 		if lUseSystemLog {
 			oSystemLog.addMessage(cMessage)
 		}
-
-
-	/*
-		Convert a Ring List to Ring source code 
-		We use List2Code() from Ring StdLib
-	*/
-	/*
-	func List2Code aList
-		cCode = "["+Windowsnl()
-		lStart = True
-		for item in aList 
-			if !lStart 
-				cCode += ","
-			else 
-				lStart = False
-			ok
-			if isString(item) 
-				item = substr(item,'"','"+char(34)+"')
-				cCode += '"' + item + '"' 
-			but isnumber(item)
-				cCode += (""+item)
-			but islist(item)
-				cCode += List2Code(item)
-			ok
-		next
-		cCode += windowsnl()+"]"
-		return cCode
-	*/
