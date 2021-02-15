@@ -257,6 +257,11 @@
 	T_SYSLOG_TITLE = "System Log"
 	T_SYSLOG_CLOSE = "Close"
 
+# PWCT Files 
+
+	T_PWCTFILE_ERROR = "Error"
+	T_PWCTFILE_WRONGFILEFORMAT = "Wrong File Format!"
+
 #==================================================
 
 	if isWebAssembly() {

@@ -259,6 +259,12 @@
 	T_SYSLOG_CLOSE = "خروج"
 
 
+# PWCT Files 
+
+	T_PWCTFILE_ERROR = "خطأ"
+	T_PWCTFILE_WRONGFILEFORMAT = "خطأ فى محتوي الملف"
+
+
 #==================================================
 
 	if isWebAssembly() {
