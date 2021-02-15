@@ -183,19 +183,25 @@ class VisualSourceFile
 		Log("Start save tables")
 		cContent = "# Visual Source File 
 
-cVisualSourceFileVersion = '1.0.0'
-cVisualLanguageName      = 'RingPWCT'
-cNaturalLanguageName     = 'English'
+cVisualSourceFileVersion = #{f1}
+cVisualLanguageName      = #{f2}
+cNaturalLanguageName     = #{f3}
 
-aStepsTable = #{f1}
-aInteractionsTable = #{f2}
-nStepsID = #{f3}		
-nInteractionsID = #{f4}
+aStepsTable = #{f4}
+
+aInteractionsTable = #{f5}
+
+nStepsID = #{f6}		
+
+nInteractionsID = #{f7}
 "
-		cContent = substr(cContent,"#{f1}",List2Code(aStepsTable))
-		cContent = substr(cContent,"#{f2}",List2Code(aInteractionsTable))
-		cContent = substr(cContent,"#{f3}",""+nStepsID)
-		cContent = substr(cContent,"#{f4}",""+nInteractionsID)
+		cContent = substr(cContent,"#{f1}",'1.0.0')
+		cContent = substr(cContent,"#{f2}",'RingPWCT')
+		cContent = substr(cContent,"#{f3}",'English')
+		cContent = substr(cContent,"#{f4}",List2Code(aStepsTable))
+		cContent = substr(cContent,"#{f5}",List2Code(aInteractionsTable))
+		cContent = substr(cContent,"#{f6}",""+nStepsID)
+		cContent = substr(cContent,"#{f7}",""+nInteractionsID)
 		write( cFileName, cContent )		
 		Log("End save tables")
 
