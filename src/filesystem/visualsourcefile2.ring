@@ -6,6 +6,7 @@
 */
 
 C_VSF_NOFILENAME = "noname.pwct"
+C_VSF_VERSION    = "1.0.0"
 
 class VisualSourceFile
 
@@ -195,7 +196,7 @@ nStepsID = #{f6}
 
 nInteractionsID = #{f7}
 "
-		cContent = substr(cContent,"#{f1}",'1.0.0')
+		cContent = substr(cContent,"#{f1}",C_VSF_VERSION)
 		cContent = substr(cContent,"#{f2}",'RingPWCT')
 		cContent = substr(cContent,"#{f3}",'English')
 		cContent = substr(cContent,"#{f4}",List2Code(aStepsTable))
