@@ -11,9 +11,9 @@ next
 
 cContent = "/*
 **	Project 	: Programming Without Coding Technology (PWCT) Version 2.0
-**	File Purpose 	:  Load RingPWCT Components 
+**	File Purpose 	: Load RingPWCT Components 
 **	Date 		: 2017.10.02
-**	Author 		:  Mahmoud Fayed <msfclipper@yahoo.com>
+**	Author 		: Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
 # Load RingPWCT Components 
