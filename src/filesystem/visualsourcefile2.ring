@@ -181,7 +181,12 @@ class VisualSourceFile
 
 	func SaveTables
 		Log("Start save tables")
-		cContent = "
+		cContent = "# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'English'
+
 aStepsTable = #{f1}
 aInteractionsTable = #{f2}
 nStepsID = #{f3}		
