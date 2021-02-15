@@ -281,7 +281,7 @@ class GoalDesignerView from WindowsViewParent
 				"; background-color: " + 
 				C_STEPSTREE_BACKCOLOR+
 				"; }" 
-		if C_STEPSTREE_SHOWLINES { 
+		if C_STEPSTREE_SHOWLINES and (C_ENV_DEFAULT_STYLE <= C_ENV_STYLE_WHITEB) { 
 			if PWCTIsMobile(:GoalDesignerStepsTreeLines) {
 				cStepsTreeStyle += "
 				QTreeWidget::branch:has-siblings:!adjoins-item {
