@@ -6,7 +6,7 @@
 ** 	Author : Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-	T_LANGUAGE = "arabic"
+	T_LANGUAGE = "Arabic"
 
 # Layout Direction
 

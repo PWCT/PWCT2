@@ -184,9 +184,9 @@ class VisualSourceFile
 		Log("Start save tables")
 		cContent = "# Visual Source File 
 
-cVisualSourceFileVersion = #{f1}
-cVisualLanguageName      = #{f2}
-cNaturalLanguageName     = #{f3}
+cVisualSourceFileVersion = '#{f1}'
+cVisualLanguageName      = '#{f2}'
+cNaturalLanguageName     = '#{f3}'
 
 aStepsTable = #{f4}
 
@@ -198,7 +198,7 @@ nInteractionsID = #{f7}
 "
 		cContent = substr(cContent,"#{f1}",C_VSF_VERSION)
 		cContent = substr(cContent,"#{f2}",C_VPL_NAME)
-		cContent = substr(cContent,"#{f3}",'English')
+		cContent = substr(cContent,"#{f3}",T_LANGUAGE)
 		cContent = substr(cContent,"#{f4}",List2Code(aStepsTable))
 		cContent = substr(cContent,"#{f5}",List2Code(aInteractionsTable))
 		cContent = substr(cContent,"#{f6}",""+nStepsID)
