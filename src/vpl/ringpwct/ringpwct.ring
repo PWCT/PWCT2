@@ -5,6 +5,8 @@
 **	Author 		: Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
+C_VPL_NAME = 'RingPWCT'
+
 # Load RingPWCT Components 
 
 	load "accessobject.ring"
