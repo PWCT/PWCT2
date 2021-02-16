@@ -97,6 +97,10 @@ myobj3 = new myclass {
 	? "just a test!"
 }
 
+myobj3 {
+	? "Another test!"
+}
+
 ? "Thanks"
 ? "End of program!"
 
