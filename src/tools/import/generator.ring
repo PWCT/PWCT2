@@ -22,7 +22,7 @@ class Generator
 		aParseTree = aTree
 
 	func Start 
-
+		Optimization()
 		for aCommand in aParseTree {
 			ProcessCommand(aCommand)
 		}
@@ -89,5 +89,17 @@ class Generator
 					AddAssignment(aCommand[:LeftSide],aCommand[:RightSide])
 				case :UsingBraces
 					AddUsingBraces()
+			}
+		}
+
+	func Optimization
+		nMax = len(aParseTree)
+		for t=2 to nMax {
+			aPrevCommand = aParseTree[t-1]
+			aCommand = aParseTree[t]
+			if aCommand[:Command] = :UsingBraces {
+				if aPrevCommand[:Command] = :Expression {
+					? "Action: " + aPrevCommand[:Expression]
+				}
 			}
 		}
