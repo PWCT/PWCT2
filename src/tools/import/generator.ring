@@ -89,6 +89,8 @@ class Generator
 					AddAssignment(aCommand[:LeftSide],aCommand[:RightSide])
 				case :UsingBraces
 					AddUsingBraces()
+				case :AccessObject
+					? "Access Object : " + aCommand[:Expression]
 			}
 		}
 
@@ -99,8 +101,15 @@ class Generator
 			aCommand = aParseTree[t]
 			if aCommand[:Command] = :UsingBraces {
 				if aPrevCommand[:Command] = :Expression {
+					cType = ExpressionType(aPrevCommand[:Expression])
 					? "Action: " + aPrevCommand[:Expression]
-					? "Type: " + ExpressionType(aPrevCommand[:Expression])
+					? "Type: " + cType
+					if cType = "word" {
+						aParseTree[t-1][:Command] = :AccessObject
+						del(aParseTree,t)
+						t--
+						nMax--
+					}
 				}
 			}
 		}

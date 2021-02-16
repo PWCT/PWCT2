@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'English'
-nStepsID                 = 245		
-nInteractionsID          = 137
+nStepsID                 = 241		
+nInteractionsID          = 135
 
 aStepsTable = [
 	[
@@ -4303,120 +4303,6 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">myobj3</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"myobj3"
-			],
-			[
-				"interactionid",
-				76
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"myobj3"
-			]
-		]
-	],
-	[
-		115,
-		1,
-		[
-			[
-				"name",
-				"{"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"{"
-			],
-			[
-				"interactionid",
-				77
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"{"
-			]
-		]
-	],
-	[
-		116,
-		115,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				77
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		118,
-		116,
-		[
-			[
-				"name",
 				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Another&nbsp;test!</font></span> (New Line) "
 			],
 			[
@@ -4429,7 +4315,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				78
+				76
 			],
 			[
 				"visible",
@@ -4450,45 +4336,7 @@ aStepsTable = [
 		]
 	],
 	[
-		117,
 		115,
-		[
-			[
-				"name",
-				"}"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"}"
-			],
-			[
-				"interactionid",
-				77
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"}"
-			]
-		]
-	],
-	[
-		119,
 		1,
 		[
 			[
@@ -4505,7 +4353,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				79
+				77
 			],
 			[
 				"visible",
@@ -4526,7 +4374,7 @@ aStepsTable = [
 		]
 	],
 	[
-		120,
+		116,
 		1,
 		[
 			[
@@ -4543,7 +4391,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				80
+				78
 			],
 			[
 				"visible",
@@ -4564,7 +4412,7 @@ aStepsTable = [
 		]
 	],
 	[
-		121,
+		117,
 		1,
 		[
 			[
@@ -4581,7 +4429,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				81
+				79
 			],
 			[
 				"visible",
@@ -4602,7 +4450,7 @@ aStepsTable = [
 		]
 	],
 	[
-		122,
+		118,
 		1,
 		[
 			[
@@ -4616,6 +4464,158 @@ aStepsTable = [
 			[
 				"code",
 				"func myend  { "
+			],
+			[
+				"interactionid",
+				80
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"function myend "
+			]
+		]
+	],
+	[
+		119,
+		118,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				80
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		121,
+		119,
+		[
+			[
+				"name",
+				"Shutdown <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">0</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"shutdown(0)"
+			],
+			[
+				"interactionid",
+				81
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Shutdown 0"
+			]
+		]
+	],
+	[
+		120,
+		118,
+		[
+			[
+				"name",
+				"End of Function"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				80
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of Function"
+			]
+		]
+	],
+	[
+		122,
+		1,
+		[
+			[
+				"name",
+				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">one</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"func one  { "
 			],
 			[
 				"interactionid",
@@ -4635,7 +4635,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"function myend "
+				"function one "
 			]
 		]
 	],
@@ -4683,7 +4683,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Shutdown <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">0</font></span>"
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">hello&nbsp;from&nbsp;one</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -4691,7 +4691,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"shutdown(0)"
+				"? "+char(34)+"hello from one"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -4711,7 +4711,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Shutdown 0"
+				"Print hello from one (New Line) "
 			]
 		]
 	],
@@ -4759,7 +4759,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">one</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>"
+				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">two</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>"
 			],
 			[
 				"active",
@@ -4767,7 +4767,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"func one  { "
+				"func two  { "
 			],
 			[
 				"interactionid",
@@ -4787,7 +4787,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"function one "
+				"function two "
 			]
 		]
 	],
@@ -4835,7 +4835,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">hello&nbsp;from&nbsp;one</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">hello&nbsp;from&nbsp;two</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -4843,7 +4843,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"hello from one"+char(34)+""
+				"? "+char(34)+"hello from two"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -4863,7 +4863,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print hello from one (New Line) "
+				"Print hello from two (New Line) "
 			]
 		]
 	],
@@ -4911,7 +4911,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">two</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>"
+				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">three</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>"
 			],
 			[
 				"active",
@@ -4919,7 +4919,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"func two  { "
+				"func three  { "
 			],
 			[
 				"interactionid",
@@ -4939,7 +4939,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"function two "
+				"function three "
 			]
 		]
 	],
@@ -4987,7 +4987,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">hello&nbsp;from&nbsp;two</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">hello&nbsp;from&nbsp;three&nbsp;</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -4995,7 +4995,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"hello from two"+char(34)+""
+				"? "+char(34)+"hello from three "+char(34)+""
 			],
 			[
 				"interactionid",
@@ -5015,7 +5015,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print hello from two (New Line) "
+				"Print hello from three  (New Line) "
 			]
 		]
 	],
@@ -5063,7 +5063,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">three</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>"
+				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">test</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">x,y</font></span>"
 			],
 			[
 				"active",
@@ -5071,7 +5071,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"func three  { "
+				"func test x,y { "
 			],
 			[
 				"interactionid",
@@ -5091,7 +5091,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"function three "
+				"function test x,y"
 			]
 		]
 	],
@@ -5139,7 +5139,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">hello&nbsp;from&nbsp;three&nbsp;</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Hello&nbsp;from&nbsp;Test!</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -5147,7 +5147,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"hello from three "+char(34)+""
+				"? "+char(34)+"Hello from Test!"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -5167,7 +5167,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print hello from three  (New Line) "
+				"Print Hello from Test! (New Line) "
 			]
 		]
 	],
@@ -5215,7 +5215,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">test</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">x,y</font></span>"
+				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">sum</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">a,b,c</font></span>"
 			],
 			[
 				"active",
@@ -5223,7 +5223,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"func test x,y { "
+				"func sum a,b,c { "
 			],
 			[
 				"interactionid",
@@ -5243,7 +5243,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"function test x,y"
+				"function sum a,b,c"
 			]
 		]
 	],
@@ -5291,7 +5291,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Hello&nbsp;from&nbsp;Test!</font></span> (New Line) "
+				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">a+b+c</font></span>"
 			],
 			[
 				"active",
@@ -5299,7 +5299,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"Hello from Test!"+char(34)+""
+				"return a+b+c"
 			],
 			[
 				"interactionid",
@@ -5319,7 +5319,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print Hello from Test! (New Line) "
+				"Return a+b+c"
 			]
 		]
 	],
@@ -5367,7 +5367,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">sum</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">a,b,c</font></span>"
+				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">testif</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>"
 			],
 			[
 				"active",
@@ -5375,7 +5375,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"func sum a,b,c { "
+				"func testif  { "
 			],
 			[
 				"interactionid",
@@ -5395,7 +5395,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"function sum a,b,c"
+				"function testif "
 			]
 		]
 	],
@@ -5443,7 +5443,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">a+b+c</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">x=1</font></span>"
 			],
 			[
 				"active",
@@ -5451,7 +5451,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"return a+b+c"
+				"if x=1 { "
 			],
 			[
 				"interactionid",
@@ -5471,7 +5471,577 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Return a+b+c"
+				"If x=1"
+			]
+		]
+	],
+	[
+		146,
+		145,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				93
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		148,
+		146,
+		[
+			[
+				"name",
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">y=2</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"if y=2 { "
+			],
+			[
+				"interactionid",
+				94
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"If y=2"
+			]
+		]
+	],
+	[
+		149,
+		148,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				94
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		151,
+		149,
+		[
+			[
+				"name",
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">z=3</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"if z=3 { "
+			],
+			[
+				"interactionid",
+				95
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"If z=3"
+			]
+		]
+	],
+	[
+		152,
+		151,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				95
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		154,
+		152,
+		[
+			[
+				"name",
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">r=nice()</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"if r=nice() { "
+			],
+			[
+				"interactionid",
+				96
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"If r=nice()"
+			]
+		]
+	],
+	[
+		155,
+		154,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				96
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		157,
+		155,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">r&nbsp;test</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? "+char(34)+"r test"+char(34)+""
+			],
+			[
+				"interactionid",
+				97
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print r test (New Line) "
+			]
+		]
+	],
+	[
+		156,
+		154,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				96
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		158,
+		152,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">z&nbsp;test</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? "+char(34)+"z test"+char(34)+""
+			],
+			[
+				"interactionid",
+				98
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print z test (New Line) "
+			]
+		]
+	],
+	[
+		153,
+		151,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				95
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		159,
+		149,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">y&nbsp;test</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? "+char(34)+"y test"+char(34)+""
+			],
+			[
+				"interactionid",
+				99
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print y test (New Line) "
+			]
+		]
+	],
+	[
+		150,
+		148,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				94
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		160,
+		146,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">x&nbsp;test</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? "+char(34)+"x test"+char(34)+""
+			],
+			[
+				"interactionid",
+				100
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print x test (New Line) "
+			]
+		]
+	],
+	[
+		147,
+		145,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				93
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
 			]
 		]
 	],
@@ -5514,729 +6084,7 @@ aStepsTable = [
 		]
 	],
 	[
-		146,
-		1,
-		[
-			[
-				"name",
-				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">testif</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"func testif  { "
-			],
-			[
-				"interactionid",
-				94
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"function testif "
-			]
-		]
-	],
-	[
-		147,
-		146,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				94
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		149,
-		147,
-		[
-			[
-				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">x=1</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"if x=1 { "
-			],
-			[
-				"interactionid",
-				95
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"If x=1"
-			]
-		]
-	],
-	[
-		150,
-		149,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				95
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		152,
-		150,
-		[
-			[
-				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">y=2</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"if y=2 { "
-			],
-			[
-				"interactionid",
-				96
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"If y=2"
-			]
-		]
-	],
-	[
-		153,
-		152,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				96
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		155,
-		153,
-		[
-			[
-				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">z=3</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"if z=3 { "
-			],
-			[
-				"interactionid",
-				97
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"If z=3"
-			]
-		]
-	],
-	[
-		156,
-		155,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				97
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		158,
-		156,
-		[
-			[
-				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">r=nice()</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"if r=nice() { "
-			],
-			[
-				"interactionid",
-				98
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"If r=nice()"
-			]
-		]
-	],
-	[
-		159,
-		158,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				98
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
 		161,
-		159,
-		[
-			[
-				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">r&nbsp;test</font></span> (New Line) "
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"? "+char(34)+"r test"+char(34)+""
-			],
-			[
-				"interactionid",
-				99
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Print r test (New Line) "
-			]
-		]
-	],
-	[
-		160,
-		158,
-		[
-			[
-				"name",
-				"End of IF Statement"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				98
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of IF Statement"
-			]
-		]
-	],
-	[
-		162,
-		156,
-		[
-			[
-				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">z&nbsp;test</font></span> (New Line) "
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"? "+char(34)+"z test"+char(34)+""
-			],
-			[
-				"interactionid",
-				100
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Print z test (New Line) "
-			]
-		]
-	],
-	[
-		157,
-		155,
-		[
-			[
-				"name",
-				"End of IF Statement"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				97
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of IF Statement"
-			]
-		]
-	],
-	[
-		163,
-		153,
-		[
-			[
-				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">y&nbsp;test</font></span> (New Line) "
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"? "+char(34)+"y test"+char(34)+""
-			],
-			[
-				"interactionid",
-				101
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Print y test (New Line) "
-			]
-		]
-	],
-	[
-		154,
-		152,
-		[
-			[
-				"name",
-				"End of IF Statement"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				96
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of IF Statement"
-			]
-		]
-	],
-	[
-		164,
-		150,
-		[
-			[
-				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">x&nbsp;test</font></span> (New Line) "
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"? "+char(34)+"x test"+char(34)+""
-			],
-			[
-				"interactionid",
-				102
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Print x test (New Line) "
-			]
-		]
-	],
-	[
-		151,
-		149,
-		[
-			[
-				"name",
-				"End of IF Statement"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				95
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of IF Statement"
-			]
-		]
-	],
-	[
-		148,
-		146,
-		[
-			[
-				"name",
-				"End of Function"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				94
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of Function"
-			]
-		]
-	],
-	[
-		165,
 		1,
 		[
 			[
@@ -6253,7 +6101,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				103
+				101
 			],
 			[
 				"visible",
@@ -6274,8 +6122,8 @@ aStepsTable = [
 		]
 	],
 	[
-		166,
-		165,
+		162,
+		161,
 		[
 			[
 				"name",
@@ -6291,7 +6139,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				103
+				101
 			],
 			[
 				"visible",
@@ -6312,8 +6160,8 @@ aStepsTable = [
 		]
 	],
 	[
-		168,
-		166,
+		164,
+		162,
 		[
 			[
 				"name",
@@ -6329,7 +6177,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				104
+				102
 			],
 			[
 				"visible",
@@ -6350,8 +6198,8 @@ aStepsTable = [
 		]
 	],
 	[
-		169,
-		166,
+		165,
+		162,
 		[
 			[
 				"name",
@@ -6367,7 +6215,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				105
+				103
 			],
 			[
 				"visible",
@@ -6388,8 +6236,8 @@ aStepsTable = [
 		]
 	],
 	[
-		170,
 		166,
+		162,
 		[
 			[
 				"name",
@@ -6405,7 +6253,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				106
+				104
 			],
 			[
 				"visible",
@@ -6426,8 +6274,8 @@ aStepsTable = [
 		]
 	],
 	[
-		167,
-		165,
+		163,
+		161,
 		[
 			[
 				"name",
@@ -6443,7 +6291,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				103
+				101
 			],
 			[
 				"visible",
@@ -6464,7 +6312,7 @@ aStepsTable = [
 		]
 	],
 	[
-		171,
+		167,
 		1,
 		[
 			[
@@ -6481,7 +6329,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				107
+				105
 			],
 			[
 				"visible",
@@ -6502,7 +6350,7 @@ aStepsTable = [
 		]
 	],
 	[
-		172,
+		168,
 		1,
 		[
 			[
@@ -6519,7 +6367,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				108
+				106
 			],
 			[
 				"visible",
@@ -6540,8 +6388,8 @@ aStepsTable = [
 		]
 	],
 	[
-		173,
-		172,
+		169,
+		168,
 		[
 			[
 				"name",
@@ -6557,7 +6405,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				108
+				106
 			],
 			[
 				"visible",
@@ -6578,8 +6426,8 @@ aStepsTable = [
 		]
 	],
 	[
-		174,
-		172,
+		170,
+		168,
 		[
 			[
 				"name",
@@ -6595,7 +6443,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				108
+				106
 			],
 			[
 				"visible",
@@ -6616,8 +6464,8 @@ aStepsTable = [
 		]
 	],
 	[
-		175,
-		172,
+		171,
+		168,
 		[
 			[
 				"name",
@@ -6633,7 +6481,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				108
+				106
 			],
 			[
 				"visible",
@@ -6650,6 +6498,158 @@ aStepsTable = [
 			[
 				"plainname",
 				" Private "
+			]
+		]
+	],
+	[
+		172,
+		171,
+		[
+			[
+				"name",
+				" Attributes "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				106
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				5
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				" Attributes "
+			]
+		]
+	],
+	[
+		173,
+		171,
+		[
+			[
+				"name",
+				" Methods "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				106
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				6
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				" Methods "
+			]
+		]
+	],
+	[
+		174,
+		171,
+		[
+			[
+				"name",
+				" End of class "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				106
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				7
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				" End of class "
+			]
+		]
+	],
+	[
+		175,
+		1,
+		[
+			[
+				"name",
+				" Class <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">myclass</font></span> from <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">myparent</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"class myclass from myparent"
+			],
+			[
+				"interactionid",
+				107
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				" Class myclass from myparent"
 			]
 		]
 	],
@@ -6671,7 +6671,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				108
+				107
 			],
 			[
 				"visible",
@@ -6679,7 +6679,7 @@ aStepsTable = [
 			],
 			[
 				"stepnumber",
-				5
+				2
 			],
 			[
 				"steptype",
@@ -6688,6 +6688,44 @@ aStepsTable = [
 			[
 				"plainname",
 				" Attributes "
+			]
+		]
+	],
+	[
+		182,
+		176,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">hello&nbsp;from&nbsp;myclass</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? "+char(34)+"hello from myclass"+char(34)+""
+			],
+			[
+				"interactionid",
+				108
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print hello from myclass (New Line) "
 			]
 		]
 	],
@@ -6709,7 +6747,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				108
+				107
 			],
 			[
 				"visible",
@@ -6717,7 +6755,7 @@ aStepsTable = [
 			],
 			[
 				"stepnumber",
-				6
+				3
 			],
 			[
 				"steptype",
@@ -6730,12 +6768,12 @@ aStepsTable = [
 		]
 	],
 	[
-		178,
-		175,
+		183,
+		177,
 		[
 			[
 				"name",
-				" End of class "
+				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">init</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>"
 			],
 			[
 				"active",
@@ -6743,45 +6781,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
-			],
-			[
-				"interactionid",
-				108
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				7
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				" End of class "
-			]
-		]
-	],
-	[
-		179,
-		1,
-		[
-			[
-				"name",
-				" Class <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">myclass</font></span> from <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">myparent</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"class myclass from myparent"
+				"func init  { "
 			],
 			[
 				"interactionid",
@@ -6801,17 +6801,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				" Class myclass from myparent"
+				"function init "
 			]
 		]
 	],
 	[
-		180,
-		179,
+		184,
+		183,
 		[
 			[
 				"name",
-				" Attributes "
+				"Start Here"
 			],
 			[
 				"active",
@@ -6839,17 +6839,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				" Attributes "
+				"Start Here"
 			]
 		]
 	],
 	[
 		186,
-		180,
+		184,
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">hello&nbsp;from&nbsp;myclass</font></span> (New Line) "
+				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">self</font></span>"
 			],
 			[
 				"active",
@@ -6857,7 +6857,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"hello from myclass"+char(34)+""
+				"return self"
 			],
 			[
 				"interactionid",
@@ -6877,17 +6877,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print hello from myclass (New Line) "
+				"Return self"
 			]
 		]
 	],
 	[
-		181,
-		179,
+		185,
+		183,
 		[
 			[
 				"name",
-				" Methods "
+				"End of Function"
 			],
 			[
 				"active",
@@ -6895,7 +6895,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"} "
 			],
 			[
 				"interactionid",
@@ -6911,21 +6911,21 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				3
+				4
 			],
 			[
 				"plainname",
-				" Methods "
+				"End of Function"
 			]
 		]
 	],
 	[
 		187,
-		181,
+		177,
 		[
 			[
 				"name",
-				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">init</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>"
+				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">myclass_m1</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>"
 			],
 			[
 				"active",
@@ -6933,7 +6933,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"func init  { "
+				"func myclass_m1  { "
 			],
 			[
 				"interactionid",
@@ -6953,7 +6953,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"function init "
+				"function myclass_m1 "
 			]
 		]
 	],
@@ -7001,7 +7001,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">self</font></span>"
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">m1</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -7009,7 +7009,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"return self"
+				"? "+char(34)+"m1"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -7029,7 +7029,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Return self"
+				"Print m1 (New Line) "
 			]
 		]
 	],
@@ -7073,11 +7073,11 @@ aStepsTable = [
 	],
 	[
 		191,
-		181,
+		177,
 		[
 			[
 				"name",
-				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">myclass_m1</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>"
+				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">myclass_m2</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>"
 			],
 			[
 				"active",
@@ -7085,7 +7085,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"func myclass_m1  { "
+				"func myclass_m2  { "
 			],
 			[
 				"interactionid",
@@ -7105,7 +7105,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"function myclass_m1 "
+				"function myclass_m2 "
 			]
 		]
 	],
@@ -7153,7 +7153,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">m1</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">m2</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -7161,7 +7161,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"m1"+char(34)+""
+				"? "+char(34)+"m2"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -7181,7 +7181,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print m1 (New Line) "
+				"Print m2 (New Line) "
 			]
 		]
 	],
@@ -7224,160 +7224,8 @@ aStepsTable = [
 		]
 	],
 	[
-		195,
-		181,
-		[
-			[
-				"name",
-				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">myclass_m2</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"func myclass_m2  { "
-			],
-			[
-				"interactionid",
-				115
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"function myclass_m2 "
-			]
-		]
-	],
-	[
-		196,
-		195,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				115
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		198,
-		196,
-		[
-			[
-				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">m2</font></span> (New Line) "
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"? "+char(34)+"m2"+char(34)+""
-			],
-			[
-				"interactionid",
-				116
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Print m2 (New Line) "
-			]
-		]
-	],
-	[
-		197,
-		195,
-		[
-			[
-				"name",
-				"End of Function"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				115
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of Function"
-			]
-		]
-	],
-	[
-		182,
-		179,
+		178,
+		175,
 		[
 			[
 				"name",
@@ -7393,7 +7241,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				109
+				107
 			],
 			[
 				"visible",
@@ -7414,8 +7262,8 @@ aStepsTable = [
 		]
 	],
 	[
-		183,
-		182,
+		179,
+		178,
 		[
 			[
 				"name",
@@ -7431,7 +7279,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				109
+				107
 			],
 			[
 				"visible",
@@ -7452,8 +7300,8 @@ aStepsTable = [
 		]
 	],
 	[
-		199,
-		183,
+		195,
+		179,
 		[
 			[
 				"name",
@@ -7469,7 +7317,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				117
+				115
 			],
 			[
 				"visible",
@@ -7490,8 +7338,8 @@ aStepsTable = [
 		]
 	],
 	[
-		184,
-		182,
+		180,
+		178,
 		[
 			[
 				"name",
@@ -7507,7 +7355,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				109
+				107
 			],
 			[
 				"visible",
@@ -7528,8 +7376,8 @@ aStepsTable = [
 		]
 	],
 	[
-		200,
-		184,
+		196,
+		180,
 		[
 			[
 				"name",
@@ -7542,6 +7390,158 @@ aStepsTable = [
 			[
 				"code",
 				"func private_method1  { "
+			],
+			[
+				"interactionid",
+				116
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"function private_method1 "
+			]
+		]
+	],
+	[
+		197,
+		196,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				116
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		199,
+		197,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">private&nbsp;method&nbsp;1</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? "+char(34)+"private method 1"+char(34)+""
+			],
+			[
+				"interactionid",
+				117
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print private method 1 (New Line) "
+			]
+		]
+	],
+	[
+		198,
+		196,
+		[
+			[
+				"name",
+				"End of Function"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				116
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of Function"
+			]
+		]
+	],
+	[
+		200,
+		180,
+		[
+			[
+				"name",
+				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">private_method2</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"func private_method2  { "
 			],
 			[
 				"interactionid",
@@ -7561,7 +7561,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"function private_method1 "
+				"function private_method2 "
 			]
 		]
 	],
@@ -7609,7 +7609,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">private&nbsp;method&nbsp;1</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">private&nbsp;method&nbsp;2</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -7617,7 +7617,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"private method 1"+char(34)+""
+				"? "+char(34)+"private method 2"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -7637,7 +7637,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print private method 1 (New Line) "
+				"Print private method 2 (New Line) "
 			]
 		]
 	],
@@ -7680,160 +7680,8 @@ aStepsTable = [
 		]
 	],
 	[
-		204,
-		184,
-		[
-			[
-				"name",
-				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">private_method2</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"func private_method2  { "
-			],
-			[
-				"interactionid",
-				120
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"function private_method2 "
-			]
-		]
-	],
-	[
-		205,
-		204,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				120
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		207,
-		205,
-		[
-			[
-				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">private&nbsp;method&nbsp;2</font></span> (New Line) "
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"? "+char(34)+"private method 2"+char(34)+""
-			],
-			[
-				"interactionid",
-				121
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Print private method 2 (New Line) "
-			]
-		]
-	],
-	[
-		206,
-		204,
-		[
-			[
-				"name",
-				"End of Function"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				120
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of Function"
-			]
-		]
-	],
-	[
-		185,
-		182,
+		181,
+		178,
 		[
 			[
 				"name",
@@ -7849,7 +7697,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				109
+				107
 			],
 			[
 				"visible",
@@ -7870,7 +7718,7 @@ aStepsTable = [
 		]
 	],
 	[
-		208,
+		204,
 		1,
 		[
 			[
@@ -7887,7 +7735,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				122
+				120
 			],
 			[
 				"visible",
@@ -7908,7 +7756,7 @@ aStepsTable = [
 		]
 	],
 	[
-		209,
+		205,
 		1,
 		[
 			[
@@ -7925,7 +7773,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				123
+				121
 			],
 			[
 				"visible",
@@ -7946,8 +7794,8 @@ aStepsTable = [
 		]
 	],
 	[
-		210,
-		209,
+		206,
+		205,
 		[
 			[
 				"name",
@@ -7963,7 +7811,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				123
+				121
 			],
 			[
 				"visible",
@@ -7984,8 +7832,8 @@ aStepsTable = [
 		]
 	],
 	[
-		216,
-		210,
+		212,
+		206,
 		[
 			[
 				"name",
@@ -8001,7 +7849,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				124
+				122
 			],
 			[
 				"visible",
@@ -8022,8 +7870,8 @@ aStepsTable = [
 		]
 	],
 	[
-		211,
-		209,
+		207,
+		205,
 		[
 			[
 				"name",
@@ -8039,7 +7887,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				123
+				121
 			],
 			[
 				"visible",
@@ -8060,8 +7908,8 @@ aStepsTable = [
 		]
 	],
 	[
-		217,
-		211,
+		213,
+		207,
 		[
 			[
 				"name",
@@ -8074,6 +7922,158 @@ aStepsTable = [
 			[
 				"code",
 				"func humanname  { "
+			],
+			[
+				"interactionid",
+				123
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"function humanname "
+			]
+		]
+	],
+	[
+		214,
+		213,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				123
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		216,
+		214,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">human&nbsp;name</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? "+char(34)+"human name"+char(34)+""
+			],
+			[
+				"interactionid",
+				124
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print human name (New Line) "
+			]
+		]
+	],
+	[
+		215,
+		213,
+		[
+			[
+				"name",
+				"End of Function"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				123
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of Function"
+			]
+		]
+	],
+	[
+		217,
+		207,
+		[
+			[
+				"name",
+				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">humanage</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"func humanage  { "
 			],
 			[
 				"interactionid",
@@ -8093,7 +8093,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"function humanname "
+				"function humanage "
 			]
 		]
 	],
@@ -8141,7 +8141,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">human&nbsp;name</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">human&nbsp;age</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -8149,7 +8149,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"human name"+char(34)+""
+				"? "+char(34)+"human age"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -8169,7 +8169,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print human name (New Line) "
+				"Print human age (New Line) "
 			]
 		]
 	],
@@ -8212,160 +8212,8 @@ aStepsTable = [
 		]
 	],
 	[
-		221,
-		211,
-		[
-			[
-				"name",
-				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">humanage</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"func humanage  { "
-			],
-			[
-				"interactionid",
-				127
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"function humanage "
-			]
-		]
-	],
-	[
-		222,
-		221,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				127
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		224,
-		222,
-		[
-			[
-				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">human&nbsp;age</font></span> (New Line) "
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"? "+char(34)+"human age"+char(34)+""
-			],
-			[
-				"interactionid",
-				128
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Print human age (New Line) "
-			]
-		]
-	],
-	[
-		223,
-		221,
-		[
-			[
-				"name",
-				"End of Function"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				127
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of Function"
-			]
-		]
-	],
-	[
-		212,
-		209,
+		208,
+		205,
 		[
 			[
 				"name",
@@ -8381,7 +8229,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				123
+				121
 			],
 			[
 				"visible",
@@ -8402,8 +8250,8 @@ aStepsTable = [
 		]
 	],
 	[
-		213,
-		212,
+		209,
+		208,
 		[
 			[
 				"name",
@@ -8419,7 +8267,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				123
+				121
 			],
 			[
 				"visible",
@@ -8440,8 +8288,8 @@ aStepsTable = [
 		]
 	],
 	[
-		225,
-		213,
+		221,
+		209,
 		[
 			[
 				"name",
@@ -8457,7 +8305,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				129
+				127
 			],
 			[
 				"visible",
@@ -8478,8 +8326,8 @@ aStepsTable = [
 		]
 	],
 	[
-		214,
-		212,
+		210,
+		208,
 		[
 			[
 				"name",
@@ -8495,7 +8343,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				123
+				121
 			],
 			[
 				"visible",
@@ -8516,8 +8364,8 @@ aStepsTable = [
 		]
 	],
 	[
-		215,
-		212,
+		211,
+		208,
 		[
 			[
 				"name",
@@ -8533,7 +8381,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				123
+				121
 			],
 			[
 				"visible",
@@ -8554,7 +8402,7 @@ aStepsTable = [
 		]
 	],
 	[
-		226,
+		222,
 		1,
 		[
 			[
@@ -8571,7 +8419,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				130
+				128
 			],
 			[
 				"visible",
@@ -8592,8 +8440,8 @@ aStepsTable = [
 		]
 	],
 	[
-		227,
-		226,
+		223,
+		222,
 		[
 			[
 				"name",
@@ -8609,7 +8457,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				130
+				128
 			],
 			[
 				"visible",
@@ -8630,8 +8478,8 @@ aStepsTable = [
 		]
 	],
 	[
-		233,
-		227,
+		229,
+		223,
 		[
 			[
 				"name",
@@ -8647,7 +8495,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				131
+				129
 			],
 			[
 				"visible",
@@ -8668,8 +8516,8 @@ aStepsTable = [
 		]
 	],
 	[
-		228,
-		226,
+		224,
+		222,
 		[
 			[
 				"name",
@@ -8685,7 +8533,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				130
+				128
 			],
 			[
 				"visible",
@@ -8706,8 +8554,8 @@ aStepsTable = [
 		]
 	],
 	[
-		234,
-		228,
+		230,
+		224,
 		[
 			[
 				"name",
@@ -8720,6 +8568,158 @@ aStepsTable = [
 			[
 				"code",
 				"func employeejob  { "
+			],
+			[
+				"interactionid",
+				130
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"function employeejob "
+			]
+		]
+	],
+	[
+		231,
+		230,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				130
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		233,
+		231,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">job</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? "+char(34)+"job"+char(34)+""
+			],
+			[
+				"interactionid",
+				131
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print job (New Line) "
+			]
+		]
+	],
+	[
+		232,
+		230,
+		[
+			[
+				"name",
+				"End of Function"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				130
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of Function"
+			]
+		]
+	],
+	[
+		234,
+		224,
+		[
+			[
+				"name",
+				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">salary</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"func salary  { "
 			],
 			[
 				"interactionid",
@@ -8739,7 +8739,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"function employeejob "
+				"function salary "
 			]
 		]
 	],
@@ -8787,7 +8787,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">job</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">salary</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -8795,7 +8795,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"job"+char(34)+""
+				"? "+char(34)+"salary"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -8815,7 +8815,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print job (New Line) "
+				"Print salary (New Line) "
 			]
 		]
 	],
@@ -8858,12 +8858,12 @@ aStepsTable = [
 		]
 	],
 	[
-		238,
-		228,
+		225,
+		222,
 		[
 			[
 				"name",
-				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">salary</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>"
+				" Private "
 			],
 			[
 				"active",
@@ -8871,7 +8871,121 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"func salary  { "
+				"private"
+			],
+			[
+				"interactionid",
+				128
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				4
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				" Private "
+			]
+		]
+	],
+	[
+		226,
+		225,
+		[
+			[
+				"name",
+				" Attributes "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				128
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				5
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				" Attributes "
+			]
+		]
+	],
+	[
+		227,
+		225,
+		[
+			[
+				"name",
+				" Methods "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				128
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				6
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				" Methods "
+			]
+		]
+	],
+	[
+		238,
+		227,
+		[
+			[
+				"name",
+				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oldsalary</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"func oldsalary  { "
 			],
 			[
 				"interactionid",
@@ -8891,7 +9005,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"function salary "
+				"function oldsalary "
 			]
 		]
 	],
@@ -8939,7 +9053,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">salary</font></span> (New Line) "
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">old&nbsp;salary</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -8947,7 +9061,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"? "+char(34)+"salary"+char(34)+""
+				"? "+char(34)+"old salary"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -8967,7 +9081,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Print salary (New Line) "
+				"Print old salary (New Line) "
 			]
 		]
 	],
@@ -9010,274 +9124,8 @@ aStepsTable = [
 		]
 	],
 	[
-		229,
-		226,
-		[
-			[
-				"name",
-				" Private "
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"private"
-			],
-			[
-				"interactionid",
-				130
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				4
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				" Private "
-			]
-		]
-	],
-	[
-		230,
-		229,
-		[
-			[
-				"name",
-				" Attributes "
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				130
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				5
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				" Attributes "
-			]
-		]
-	],
-	[
-		231,
-		229,
-		[
-			[
-				"name",
-				" Methods "
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				130
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				6
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				" Methods "
-			]
-		]
-	],
-	[
-		242,
-		231,
-		[
-			[
-				"name",
-				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oldsalary</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"func oldsalary  { "
-			],
-			[
-				"interactionid",
-				136
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"function oldsalary "
-			]
-		]
-	],
-	[
-		243,
-		242,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				136
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		245,
-		243,
-		[
-			[
-				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">old&nbsp;salary</font></span> (New Line) "
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"? "+char(34)+"old salary"+char(34)+""
-			],
-			[
-				"interactionid",
-				137
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Print old salary (New Line) "
-			]
-		]
-	],
-	[
-		244,
-		242,
-		[
-			[
-				"name",
-				"End of Function"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				136
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of Function"
-			]
-		]
-	],
-	[
-		232,
-		229,
+		228,
+		225,
 		[
 			[
 				"name",
@@ -9293,7 +9141,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				130
+				128
 			],
 			[
 				"visible",
@@ -9321,7 +9169,7 @@ aInteractionsTable = [
 		1,
 		"",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		""
 	],
 	[
@@ -9329,7 +9177,7 @@ aInteractionsTable = [
 		1,
 		"load",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"file;;_RV_;;stdlib.ring;;_RV_;;"
 	],
 	[
@@ -9337,7 +9185,7 @@ aInteractionsTable = [
 		1,
 		"load",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"file;;_RV_;;guilib.ring;;_RV_;;"
 	],
 	[
@@ -9345,7 +9193,7 @@ aInteractionsTable = [
 		1,
 		"import",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"value;;_RV_;;system.gui;;_RV_;;"
 	],
 	[
@@ -9353,7 +9201,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"leftside;;_RV_;;cname;;_RV_;;rightside;;_RV_;;"+char(34)+"ring"+char(34)+";;_RV_;;"
 	],
 	[
@@ -9361,7 +9209,7 @@ aInteractionsTable = [
 		1,
 		"freetyping",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"value;;_RV_;;one();;_RV_;;"
 	],
 	[
@@ -9369,7 +9217,7 @@ aInteractionsTable = [
 		1,
 		"freetyping",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"value;;_RV_;;two()three();;_RV_;;"
 	],
 	[
@@ -9377,7 +9225,7 @@ aInteractionsTable = [
 		1,
 		"freetyping",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"value;;_RV_;;test(1,2);;_RV_;;"
 	],
 	[
@@ -9385,7 +9233,7 @@ aInteractionsTable = [
 		1,
 		"freetyping",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"value;;_RV_;;sum(1,2,3);;_RV_;;"
 	],
 	[
@@ -9393,7 +9241,7 @@ aInteractionsTable = [
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"text;;_RV_;;"+char(34)+"Hello, World!"+char(34)+"+(3*2)+cname;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -9401,7 +9249,7 @@ aInteractionsTable = [
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"text;;_RV_;;Welcome to the Ring programming language;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -9409,7 +9257,7 @@ aInteractionsTable = [
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"text;;_RV_;;Ring is a great language!;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -9417,7 +9265,7 @@ aInteractionsTable = [
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"text;;_RV_;;The current Ring version is Ring 1.15;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -9425,7 +9273,7 @@ aInteractionsTable = [
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"text;;_RV_;;"+char(34)+"Hello, World!"+char(34)+"+(3*2)+cname;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -9433,7 +9281,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"condition;;_RV_;;3=1+2;;_RV_;;"
 	],
 	[
@@ -9441,7 +9289,7 @@ aInteractionsTable = [
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"text;;_RV_;;True;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -9449,7 +9297,7 @@ aInteractionsTable = [
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"text;;_RV_;;Nice work!;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -9457,7 +9305,7 @@ aInteractionsTable = [
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"text;;_RV_;;Now the import feature works fine;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -9465,7 +9313,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"leftside;;_RV_;;x;;_RV_;;rightside;;_RV_;;10;;_RV_;;"
 	],
 	[
@@ -9473,7 +9321,7 @@ aInteractionsTable = [
 		1,
 		"whileloop",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"condition;;_RV_;;x>0;;_RV_;;"
 	],
 	[
@@ -9481,7 +9329,7 @@ aInteractionsTable = [
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"text;;_RV_;;"+char(34)+"x = "+char(34)+"+x;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -9489,7 +9337,7 @@ aInteractionsTable = [
 		1,
 		"freetyping",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"value;;_RV_;;x--;;_RV_;;"
 	],
 	[
@@ -9497,7 +9345,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"condition;;_RV_;;x=1;;_RV_;;"
 	],
 	[
@@ -9505,7 +9353,7 @@ aInteractionsTable = [
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"text;;_RV_;;one;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -9513,7 +9361,7 @@ aInteractionsTable = [
 		1,
 		"elseif",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"condition;;_RV_;;x=2;;_RV_;;"
 	],
 	[
@@ -9521,7 +9369,7 @@ aInteractionsTable = [
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"text;;_RV_;;two;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -9529,7 +9377,7 @@ aInteractionsTable = [
 		1,
 		"elseif",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"condition;;_RV_;;x=3;;_RV_;;"
 	],
 	[
@@ -9537,7 +9385,7 @@ aInteractionsTable = [
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"text;;_RV_;;three;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -9545,7 +9393,7 @@ aInteractionsTable = [
 		1,
 		"elseif",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"condition;;_RV_;;x=4;;_RV_;;"
 	],
 	[
@@ -9553,7 +9401,7 @@ aInteractionsTable = [
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"text;;_RV_;;four;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -9561,7 +9409,7 @@ aInteractionsTable = [
 		1,
 		"else",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		""
 	],
 	[
@@ -9569,7 +9417,7 @@ aInteractionsTable = [
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"text;;_RV_;;other number;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -9577,7 +9425,7 @@ aInteractionsTable = [
 		1,
 		"forloop",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"start;;_RV_;;x=1;;_RV_;;to;;_RV_;;10;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
@@ -9585,7 +9433,7 @@ aInteractionsTable = [
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"text;;_RV_;;x;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -9593,7 +9441,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"condition;;_RV_;;x=3;;_RV_;;"
 	],
 	[
@@ -9601,7 +9449,7 @@ aInteractionsTable = [
 		1,
 		"loop",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"value;;_RV_;;1;;_RV_;;"
 	],
 	[
@@ -9609,7 +9457,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"condition;;_RV_;;x=7;;_RV_;;"
 	],
 	[
@@ -9617,7 +9465,7 @@ aInteractionsTable = [
 		1,
 		"exit",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"value;;_RV_;;1;;_RV_;;"
 	],
 	[
@@ -9625,7 +9473,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"leftside;;_RV_;;alist;;_RV_;;rightside;;_RV_;;[1,2,3];;_RV_;;"
 	],
 	[
@@ -9633,7 +9481,7 @@ aInteractionsTable = [
 		1,
 		"forinloop",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"variable;;_RV_;;x;;_RV_;;in;;_RV_;;alist;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
@@ -9641,7 +9489,7 @@ aInteractionsTable = [
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"text;;_RV_;;x;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -9649,7 +9497,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"leftside;;_RV_;;x;;_RV_;;rightside;;_RV_;;10;;_RV_;;"
 	],
 	[
@@ -9657,7 +9505,7 @@ aInteractionsTable = [
 		1,
 		"doagain",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"condition;;_RV_;;x>0;;_RV_;;"
 	],
 	[
@@ -9665,7 +9513,7 @@ aInteractionsTable = [
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"text;;_RV_;;"+char(34)+"x = "+char(34)+"+x;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -9673,7 +9521,7 @@ aInteractionsTable = [
 		1,
 		"freetyping",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"value;;_RV_;;x--;;_RV_;;"
 	],
 	[
@@ -9681,7 +9529,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"leftside;;_RV_;;x;;_RV_;;rightside;;_RV_;;3;;_RV_;;"
 	],
 	[
@@ -9689,7 +9537,7 @@ aInteractionsTable = [
 		1,
 		"switch",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"variable;;_RV_;;x;;_RV_;;"
 	],
 	[
@@ -9697,7 +9545,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"value;;_RV_;;1;;_RV_;;"
 	],
 	[
@@ -9705,7 +9553,7 @@ aInteractionsTable = [
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"text;;_RV_;;One;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -9713,7 +9561,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"value;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -9721,7 +9569,7 @@ aInteractionsTable = [
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"text;;_RV_;;Two;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -9729,7 +9577,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"value;;_RV_;;3;;_RV_;;"
 	],
 	[
@@ -9737,7 +9585,7 @@ aInteractionsTable = [
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"text;;_RV_;;Three;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -9745,7 +9593,7 @@ aInteractionsTable = [
 		1,
 		"else",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		""
 	],
 	[
@@ -9753,7 +9601,7 @@ aInteractionsTable = [
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"text;;_RV_;;Other number;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -9761,7 +9609,7 @@ aInteractionsTable = [
 		1,
 		"trycatch",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		""
 	],
 	[
@@ -9769,7 +9617,7 @@ aInteractionsTable = [
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"text;;_RV_;;Try some code;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -9777,7 +9625,7 @@ aInteractionsTable = [
 		1,
 		"freetyping",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"value;;_RV_;;1/0;;_RV_;;"
 	],
 	[
@@ -9785,7 +9633,7 @@ aInteractionsTable = [
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"text;;_RV_;;Catch the error;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -9793,7 +9641,7 @@ aInteractionsTable = [
 		1,
 		"import",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"value;;_RV_;;myfirstpackage;;_RV_;;"
 	],
 	[
@@ -9801,7 +9649,7 @@ aInteractionsTable = [
 		1,
 		"freetyping",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"value;;_RV_;;myobj= new myclass();;_RV_;;"
 	],
 	[
@@ -9809,7 +9657,7 @@ aInteractionsTable = [
 		1,
 		"braces",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		""
 	],
 	[
@@ -9817,7 +9665,7 @@ aInteractionsTable = [
 		1,
 		"freetyping",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"value;;_RV_;;myobj.myclass_m1();;_RV_;;"
 	],
 	[
@@ -9825,7 +9673,7 @@ aInteractionsTable = [
 		1,
 		"freetyping",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"value;;_RV_;;myobj.myclass_m2();;_RV_;;"
 	],
 	[
@@ -9833,7 +9681,7 @@ aInteractionsTable = [
 		1,
 		"freetyping",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"value;;_RV_;;myfunc= func ;;_RV_;;"
 	],
 	[
@@ -9841,7 +9689,7 @@ aInteractionsTable = [
 		1,
 		"braces",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		""
 	],
 	[
@@ -9849,7 +9697,7 @@ aInteractionsTable = [
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"text;;_RV_;;test;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -9857,7 +9705,7 @@ aInteractionsTable = [
 		1,
 		"freetyping",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"value;;_RV_;;call myfunc();;_RV_;;"
 	],
 	[
@@ -9865,7 +9713,7 @@ aInteractionsTable = [
 		1,
 		"freetyping",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"value;;_RV_;;myobj2= new myclass();;_RV_;;"
 	],
 	[
@@ -9873,7 +9721,7 @@ aInteractionsTable = [
 		1,
 		"braces",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		""
 	],
 	[
@@ -9881,7 +9729,7 @@ aInteractionsTable = [
 		1,
 		"freetyping",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"value;;_RV_;;myclass_m1();;_RV_;;"
 	],
 	[
@@ -9889,7 +9737,7 @@ aInteractionsTable = [
 		1,
 		"freetyping",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"value;;_RV_;;myclass_m2();;_RV_;;"
 	],
 	[
@@ -9897,7 +9745,7 @@ aInteractionsTable = [
 		1,
 		"freetyping",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"value;;_RV_;;myobj3= new myclass;;_RV_;;"
 	],
 	[
@@ -9905,7 +9753,7 @@ aInteractionsTable = [
 		1,
 		"braces",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		""
 	],
 	[
@@ -9913,503 +9761,487 @@ aInteractionsTable = [
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:39",
+		"10:25:00",
 		"text;;_RV_;;just a test!;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		76,
 		1,
-		"freetyping",
+		"print",
 		"16/02/2021",
-		"09:58:39",
-		"value;;_RV_;;myobj3;;_RV_;;"
+		"10:25:00",
+		"text;;_RV_;;Another test!;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		77,
 		1,
-		"braces",
+		"print",
 		"16/02/2021",
-		"09:58:39",
-		""
+		"10:25:00",
+		"text;;_RV_;;Thanks;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		78,
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:39",
-		"text;;_RV_;;Another test!;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"10:25:00",
+		"text;;_RV_;;End of program!;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		79,
 		1,
-		"print",
+		"freetyping",
 		"16/02/2021",
-		"09:58:39",
-		"text;;_RV_;;Thanks;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"10:25:00",
+		"value;;_RV_;;myend();;_RV_;;"
 	],
 	[
 		80,
 		1,
-		"print",
+		"func",
 		"16/02/2021",
-		"09:58:39",
-		"text;;_RV_;;End of program!;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"10:25:00",
+		"name;;_RV_;;myend;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		81,
 		1,
-		"freetyping",
+		"shutdown",
 		"16/02/2021",
-		"09:58:39",
-		"value;;_RV_;;myend();;_RV_;;"
+		"10:25:00",
+		"value;;_RV_;;0;;_RV_;;"
 	],
 	[
 		82,
 		1,
 		"func",
 		"16/02/2021",
-		"09:58:39",
-		"name;;_RV_;;myend;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"10:25:00",
+		"name;;_RV_;;one;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		83,
 		1,
-		"shutdown",
+		"print",
 		"16/02/2021",
-		"09:58:39",
-		"value;;_RV_;;0;;_RV_;;"
+		"10:25:00",
+		"text;;_RV_;;hello from one;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		84,
 		1,
 		"func",
 		"16/02/2021",
-		"09:58:39",
-		"name;;_RV_;;one;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"10:25:00",
+		"name;;_RV_;;two;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		85,
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:39",
-		"text;;_RV_;;hello from one;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"10:25:00",
+		"text;;_RV_;;hello from two;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		86,
 		1,
 		"func",
 		"16/02/2021",
-		"09:58:39",
-		"name;;_RV_;;two;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"10:25:00",
+		"name;;_RV_;;three;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		87,
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:39",
-		"text;;_RV_;;hello from two;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"10:25:00",
+		"text;;_RV_;;hello from three ;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		88,
 		1,
 		"func",
 		"16/02/2021",
-		"09:58:39",
-		"name;;_RV_;;three;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"10:25:00",
+		"name;;_RV_;;test;;_RV_;;parameters;;_RV_;;x,y;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		89,
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:39",
-		"text;;_RV_;;hello from three ;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"10:25:00",
+		"text;;_RV_;;Hello from Test!;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		90,
 		1,
 		"func",
 		"16/02/2021",
-		"09:58:39",
-		"name;;_RV_;;test;;_RV_;;parameters;;_RV_;;x,y;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"10:25:00",
+		"name;;_RV_;;sum;;_RV_;;parameters;;_RV_;;a,b,c;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		91,
 		1,
-		"print",
+		"return",
 		"16/02/2021",
-		"09:58:39",
-		"text;;_RV_;;Hello from Test!;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"10:25:00",
+		"value;;_RV_;;a+b+c;;_RV_;;"
 	],
 	[
 		92,
 		1,
 		"func",
 		"16/02/2021",
-		"09:58:39",
-		"name;;_RV_;;sum;;_RV_;;parameters;;_RV_;;a,b,c;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"10:25:00",
+		"name;;_RV_;;testif;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		93,
 		1,
-		"return",
+		"ifstatement",
 		"16/02/2021",
-		"09:58:39",
-		"value;;_RV_;;a+b+c;;_RV_;;"
+		"10:25:00",
+		"condition;;_RV_;;x=1;;_RV_;;"
 	],
 	[
 		94,
 		1,
-		"func",
+		"ifstatement",
 		"16/02/2021",
-		"09:58:39",
-		"name;;_RV_;;testif;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"10:25:00",
+		"condition;;_RV_;;y=2;;_RV_;;"
 	],
 	[
 		95,
 		1,
 		"ifstatement",
 		"16/02/2021",
-		"09:58:39",
-		"condition;;_RV_;;x=1;;_RV_;;"
+		"10:25:00",
+		"condition;;_RV_;;z=3;;_RV_;;"
 	],
 	[
 		96,
 		1,
 		"ifstatement",
 		"16/02/2021",
-		"09:58:39",
-		"condition;;_RV_;;y=2;;_RV_;;"
+		"10:25:00",
+		"condition;;_RV_;;r=nice();;_RV_;;"
 	],
 	[
 		97,
 		1,
-		"ifstatement",
+		"print",
 		"16/02/2021",
-		"09:58:39",
-		"condition;;_RV_;;z=3;;_RV_;;"
+		"10:25:00",
+		"text;;_RV_;;r test;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		98,
 		1,
-		"ifstatement",
+		"print",
 		"16/02/2021",
-		"09:58:39",
-		"condition;;_RV_;;r=nice();;_RV_;;"
+		"10:25:00",
+		"text;;_RV_;;z test;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		99,
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:39",
-		"text;;_RV_;;r test;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"10:25:00",
+		"text;;_RV_;;y test;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		100,
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:39",
-		"text;;_RV_;;z test;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"10:25:00",
+		"text;;_RV_;;x test;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		101,
 		1,
-		"print",
+		"func",
 		"16/02/2021",
-		"09:58:39",
-		"text;;_RV_;;y test;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"10:25:00",
+		"name;;_RV_;;testgive;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		102,
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:39",
-		"text;;_RV_;;x test;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"10:25:00",
+		"text;;_RV_;;Enter Name: ;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		103,
 		1,
-		"func",
+		"getinput",
 		"16/02/2021",
-		"09:58:39",
-		"name;;_RV_;;testgive;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"10:25:00",
+		"text;;_RV_;;name;;_RV_;;"
 	],
 	[
 		104,
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:39",
-		"text;;_RV_;;Enter Name: ;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"10:25:00",
+		"text;;_RV_;;"+char(34)+"Hello "+char(34)+"+name;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		105,
 		1,
-		"getinput",
+		"package",
 		"16/02/2021",
-		"09:58:39",
-		"text;;_RV_;;name;;_RV_;;"
+		"10:25:00",
+		"value;;_RV_;;myfirstpackage;;_RV_;;"
 	],
 	[
 		106,
 		1,
-		"print",
+		"class",
 		"16/02/2021",
-		"09:58:39",
-		"text;;_RV_;;"+char(34)+"Hello "+char(34)+"+name;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"10:25:00",
+		"value;;_RV_;;myparent;;_RV_;;value2;;_RV_;;;;_RV_;;"
 	],
 	[
 		107,
 		1,
-		"package",
+		"class",
 		"16/02/2021",
-		"09:58:39",
-		"value;;_RV_;;myfirstpackage;;_RV_;;"
+		"10:25:00",
+		"value;;_RV_;;myclass;;_RV_;;value2;;_RV_;;myparent;;_RV_;;"
 	],
 	[
 		108,
 		1,
-		"class",
+		"print",
 		"16/02/2021",
-		"09:58:39",
-		"value;;_RV_;;myparent;;_RV_;;value2;;_RV_;;;;_RV_;;"
+		"10:25:00",
+		"text;;_RV_;;hello from myclass;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		109,
 		1,
-		"class",
+		"func",
 		"16/02/2021",
-		"09:58:39",
-		"value;;_RV_;;myclass;;_RV_;;value2;;_RV_;;myparent;;_RV_;;"
+		"10:25:00",
+		"name;;_RV_;;init;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		110,
 		1,
-		"print",
+		"return",
 		"16/02/2021",
-		"09:58:39",
-		"text;;_RV_;;hello from myclass;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"10:25:00",
+		"value;;_RV_;;self;;_RV_;;"
 	],
 	[
 		111,
 		1,
 		"func",
 		"16/02/2021",
-		"09:58:39",
-		"name;;_RV_;;init;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"10:25:00",
+		"name;;_RV_;;myclass_m1;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		112,
 		1,
-		"return",
+		"print",
 		"16/02/2021",
-		"09:58:39",
-		"value;;_RV_;;self;;_RV_;;"
+		"10:25:00",
+		"text;;_RV_;;m1;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		113,
 		1,
 		"func",
 		"16/02/2021",
-		"09:58:40",
-		"name;;_RV_;;myclass_m1;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"10:25:00",
+		"name;;_RV_;;myclass_m2;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		114,
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:40",
-		"text;;_RV_;;m1;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"10:25:00",
+		"text;;_RV_;;m2;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		115,
 		1,
-		"func",
+		"print",
 		"16/02/2021",
-		"09:58:40",
-		"name;;_RV_;;myclass_m2;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"10:25:00",
+		"text;;_RV_;;myclass - private section;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		116,
 		1,
-		"print",
+		"func",
 		"16/02/2021",
-		"09:58:40",
-		"text;;_RV_;;m2;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"10:25:00",
+		"name;;_RV_;;private_method1;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		117,
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:40",
-		"text;;_RV_;;myclass - private section;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"10:25:00",
+		"text;;_RV_;;private method 1;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		118,
 		1,
 		"func",
 		"16/02/2021",
-		"09:58:40",
-		"name;;_RV_;;private_method1;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"10:25:00",
+		"name;;_RV_;;private_method2;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		119,
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:40",
-		"text;;_RV_;;private method 1;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"10:25:00",
+		"text;;_RV_;;private method 2;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		120,
 		1,
-		"func",
+		"package",
 		"16/02/2021",
-		"09:58:40",
-		"name;;_RV_;;private_method2;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"10:25:00",
+		"value;;_RV_;;application.sales.database;;_RV_;;"
 	],
 	[
 		121,
 		1,
-		"print",
+		"class",
 		"16/02/2021",
-		"09:58:40",
-		"text;;_RV_;;private method 2;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"10:25:00",
+		"value;;_RV_;;human;;_RV_;;value2;;_RV_;;;;_RV_;;"
 	],
 	[
 		122,
 		1,
-		"package",
+		"print",
 		"16/02/2021",
-		"09:58:40",
-		"value;;_RV_;;application.sales.database;;_RV_;;"
+		"10:25:00",
+		"text;;_RV_;;hello from human;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		123,
 		1,
-		"class",
+		"func",
 		"16/02/2021",
-		"09:58:40",
-		"value;;_RV_;;human;;_RV_;;value2;;_RV_;;;;_RV_;;"
+		"10:25:00",
+		"name;;_RV_;;humanname;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		124,
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:40",
-		"text;;_RV_;;hello from human;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"10:25:00",
+		"text;;_RV_;;human name;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		125,
 		1,
 		"func",
 		"16/02/2021",
-		"09:58:40",
-		"name;;_RV_;;humanname;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"10:25:00",
+		"name;;_RV_;;humanage;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		126,
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:40",
-		"text;;_RV_;;human name;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"10:25:00",
+		"text;;_RV_;;human age;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		127,
 		1,
-		"func",
+		"print",
 		"16/02/2021",
-		"09:58:40",
-		"name;;_RV_;;humanage;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"10:25:00",
+		"text;;_RV_;;human - private section;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		128,
 		1,
-		"print",
+		"class",
 		"16/02/2021",
-		"09:58:40",
-		"text;;_RV_;;human age;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"10:25:00",
+		"value;;_RV_;;employee;;_RV_;;value2;;_RV_;;human;;_RV_;;"
 	],
 	[
 		129,
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:40",
-		"text;;_RV_;;human - private section;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"10:25:00",
+		"text;;_RV_;;hello from employee;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		130,
 		1,
-		"class",
+		"func",
 		"16/02/2021",
-		"09:58:40",
-		"value;;_RV_;;employee;;_RV_;;value2;;_RV_;;human;;_RV_;;"
+		"10:25:00",
+		"name;;_RV_;;employeejob;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		131,
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:40",
-		"text;;_RV_;;hello from employee;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"10:25:00",
+		"text;;_RV_;;job;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		132,
 		1,
 		"func",
 		"16/02/2021",
-		"09:58:40",
-		"name;;_RV_;;employeejob;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"10:25:00",
+		"name;;_RV_;;salary;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		133,
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:40",
-		"text;;_RV_;;job;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"10:25:00",
+		"text;;_RV_;;salary;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		134,
 		1,
 		"func",
 		"16/02/2021",
-		"09:58:40",
-		"name;;_RV_;;salary;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"10:25:00",
+		"name;;_RV_;;oldsalary;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		135,
 		1,
 		"print",
 		"16/02/2021",
-		"09:58:40",
-		"text;;_RV_;;salary;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
-	],
-	[
-		136,
-		1,
-		"func",
-		"16/02/2021",
-		"09:58:40",
-		"name;;_RV_;;oldsalary;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
-	],
-	[
-		137,
-		1,
-		"print",
-		"16/02/2021",
-		"09:58:40",
+		"10:25:00",
 		"text;;_RV_;;old salary;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	]
 ]
