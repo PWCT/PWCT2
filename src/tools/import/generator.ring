@@ -106,7 +106,8 @@ class Generator
 		}
 
 	func ExpressionType cExpr 
-		cType = "Word"
+		cExpr = lower(cExpr)
+		cType = "word"
 		if substr(cExpr,"=") {
 			if substr(cExpr,"new") {
 				cType = "= new"
