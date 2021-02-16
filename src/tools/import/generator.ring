@@ -100,6 +100,32 @@ class Generator
 			if aCommand[:Command] = :UsingBraces {
 				if aPrevCommand[:Command] = :Expression {
 					? "Action: " + aPrevCommand[:Expression]
+					? "Type: " + ExpressionType(aPrevCommand[:Expression])
 				}
 			}
 		}
+
+	func ExpressionType cExpr 
+		cType = "Word"
+		if substr(cExpr,"=") {
+			if substr(cExpr,"new") {
+				cType = "= new"
+				if substr(cExpr,"(") and substr(cExpr,")") {
+					cType = "= new init"
+				}
+			}
+			if substr(cExpr,"func") {
+				cType = "= func"
+			}
+		else 
+			if substr(cExpr,"new") {
+				cType = "new"
+				if substr(cExpr,"(") and substr(cExpr,")") {
+					cType = "new init"
+				}
+			}
+			if substr(cExpr,"func") {
+				cType = "func"
+			}
+		}
+		return cType 
