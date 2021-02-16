@@ -20,6 +20,7 @@
 	load "../../filesystem/database.ring"
 	load "../../filesystem/visualsourcefile.ring"
 	*/
+	C_VPL_NAME = "RingPWCT"
 	load "../../filesystem/visualsourcefile2.ring"
 
 # Mobile functions 
