@@ -90,7 +90,7 @@ class Generator
 				case :UsingBraces
 					AddUsingBraces()
 				case :AccessObject
-					? "Access Object : " + aCommand[:Expression]
+					AddAccessObject(aCommand[:Expression])
 			}
 		}
 

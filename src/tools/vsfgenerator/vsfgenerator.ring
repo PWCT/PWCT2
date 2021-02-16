@@ -833,6 +833,38 @@ class VSFGenerator
 			SetStepsParent()
 			return nStepID
 
+	/*
+			Access Object Component 
+	*/
+	func AddAccessObject cValue
+		# Use the Interaction Page
+			nIID = UseComponent("accessobject",[
+				:value 		= cValue
+			])
+
+		# Generate the Step and the Code
+			nStepNumber = 1
+			nStepID = AddGeneratedStep(nParentID,
+				StyleData(cValue) + " " + T_CT_BRACES_ST_BRACESTART,
+			nIID,nStepNumber,C_STEPTYPE_ROOT)
+			oModel.SaveStepCode(nStepID, cValue + " {" )
+			nStepNumber++
+			nStepID2 = AddGeneratedStep(nStepID,
+				T_CT_BRACES_ST_STARTHERE ,
+			nIID,nStepNumber,C_STEPTYPE_ALLOWINTERACTION)
+			nStepNumber++
+			nStepID3 = AddGeneratedStep(nStepID,
+				T_CT_BRACES_ST_BRACEEND ,
+			nIID,nStepNumber,C_STEPTYPE_INFO)
+			oModel.SaveStepCode(nStepID3, "}" )
+		# Set the Parent 
+			aParents + nStepID2
+			SetStepsParent()
+			return nStepID
+
+
+
+
 
 
 
