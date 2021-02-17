@@ -945,25 +945,27 @@ class VSFGenerator
 				}
 			}
 
-		# Generate Braces 
-			nStepNumber++
-			nStepID = AddGeneratedStep(nStepID,
-				T_CT_BRACES_ST_BRACESTART,
-			nIID,nStepNumber,C_STEPTYPE_ROOT)
-			oModel.SaveStepCode(nStepID, " {" )
-			nStepNumber++
-			nStepID2 = AddGeneratedStep(nStepID,
-				T_CT_BRACES_ST_STARTHERE ,
-			nIID,nStepNumber,C_STEPTYPE_ALLOWINTERACTION)
-			nStepNumber++
-			nStepID3 = AddGeneratedStep(nStepID,
-				T_CT_BRACES_ST_BRACEEND ,
-			nIID,nStepNumber,C_STEPTYPE_INFO)
-			oModel.SaveStepCode(nStepID3, "}" )
-		# Set the Parent 
-			aParents + nStepID2
-			SetStepsParent()
-			return nStepID
+		if lBraces {
+			# Generate Braces 
+				nStepNumber++
+				nStepID = AddGeneratedStep(nStepID,
+					T_CT_BRACES_ST_BRACESTART,
+				nIID,nStepNumber,C_STEPTYPE_ROOT)
+				oModel.SaveStepCode(nStepID, " {" )
+				nStepNumber++
+				nStepID2 = AddGeneratedStep(nStepID,
+					T_CT_BRACES_ST_STARTHERE ,
+				nIID,nStepNumber,C_STEPTYPE_ALLOWINTERACTION)
+				nStepNumber++
+				nStepID3 = AddGeneratedStep(nStepID,
+					T_CT_BRACES_ST_BRACEEND ,
+				nIID,nStepNumber,C_STEPTYPE_INFO)
+				oModel.SaveStepCode(nStepID3, "}" )
+			# Set the Parent 
+				aParents + nStepID2
+				SetStepsParent()
+		}
+		return nStepID
 
 
 
