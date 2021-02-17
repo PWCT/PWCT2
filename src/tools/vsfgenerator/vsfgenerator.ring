@@ -894,6 +894,45 @@ class VSFGenerator
 			SetStepsParent()
 			return nStepID
 
+	/*
+			New Object Component 
+	*/
+	func AddNewObj cVariable,cClass,cInitPara,lInit,lBraces
+		# Use the Interaction Page
+			nIID = UseComponent("newobj",[
+				:value 		= cVariable,
+				:value2		= cClass,
+				:value3		= cInitPara
+			])
+
+		# Generate the Step and the Code
+			nStepNumber = 1
+			nStepID = AddGeneratedStep(nParentID,
+				T_CT_NEWOBJ_ST_SET + StyleData(cVariable) + " = " + T_CT_NEWOBJ_ST_NEWOBJ   + StyleData(cClass),
+			nIID,nStepNumber,C_STEPTYPE_ROOT)
+			oModel.SaveStepCode(nStepID, cVariable + " = new " + cClass + " {")
+			nStepNumber++
+			nStepID = AddGeneratedStep(nStepID,
+				T_CT_BRACES_ST_BRACESTART,
+			nIID,nStepNumber,C_STEPTYPE_ROOT)
+			oModel.SaveStepCode(nStepID, " {" )
+			nStepNumber++
+			nStepID2 = AddGeneratedStep(nStepID,
+				T_CT_BRACES_ST_STARTHERE ,
+			nIID,nStepNumber,C_STEPTYPE_ALLOWINTERACTION)
+			nStepNumber++
+			nStepID3 = AddGeneratedStep(nStepID,
+				T_CT_BRACES_ST_BRACEEND ,
+			nIID,nStepNumber,C_STEPTYPE_INFO)
+			oModel.SaveStepCode(nStepID3, "}" )
+		# Set the Parent 
+			aParents + nStepID2
+			SetStepsParent()
+			return nStepID
+
+
+
+
 
 
 
