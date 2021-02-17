@@ -898,19 +898,54 @@ class VSFGenerator
 			New Object Component 
 	*/
 	func AddNewObj cVariable,cClass,cInitPara,lInit,lBraces
+		if lInit { nInit = 2  else nInit = 0}
+		if lBraces { nBraces = 2 else nBraces = 0}
 		# Use the Interaction Page
 			nIID = UseComponent("newobj",[
 				:value 		= cVariable,
 				:value2		= cClass,
-				:value3		= cInitPara
+				:value3		= cInitPara,
+				:braces		= nBraces,
+				:init		= nInit
 			])
 
 		# Generate the Step and the Code
 			nStepNumber = 1
-			nStepID = AddGeneratedStep(nParentID,
-				T_CT_NEWOBJ_ST_SET + StyleData(cVariable) + " = " + T_CT_NEWOBJ_ST_NEWOBJ   + StyleData(cClass),
-			nIID,nStepNumber,C_STEPTYPE_ROOT)
-			oModel.SaveStepCode(nStepID, cVariable + " = new " + cClass + " {")
+		# Generate New Object Step
+
+			if cVariable = NULL {
+				if cInitPara = NULL {
+					nStepID = AddGeneratedStep(nParentID,
+						T_CT_NEWOBJ_ST_NEWOBJ + StyleData(cClass),
+						nIID,nStepNumber,C_STEPTYPE_ROOT)
+					oModel.SaveStepCode(nStepID, "new " + cClass)
+				else 
+					nStepID = AddGeneratedStep(nParentID,
+						T_CT_NEWOBJ_ST_NEWOBJ + StyleData(cClass) +
+						"(" + StyleData(cInitPara) + ")" ,
+						nIID,nStepNumber,C_STEPTYPE_ROOT)
+					oModel.SaveStepCode(nStepID, "new " + cClass +
+						"(" + cInitPara + ")" )
+				}
+			else 
+				if cInitPara = NULL {
+					nStepID = AddGeneratedStep(nParentID,
+						T_CT_NEWOBJ_ST_SET + StyleData(cVariable) + " = " + 
+						T_CT_NEWOBJ_ST_NEWOBJ + StyleData(cClass),
+						nIID,nStepNumber,C_STEPTYPE_ROOT)
+					oModel.SaveStepCode(nStepID, cVariable + " = new " + cClass)
+				else 
+					nStepID = AddGeneratedStep(nParentID,
+						T_CT_NEWOBJ_ST_SET + StyleData(cVariable) + " = " + 
+						T_CT_NEWOBJ_ST_NEWOBJ + StyleData(cClass) +
+						"(" + StyleData(cInitPara) + ")",
+						nIID,nStepNumber,C_STEPTYPE_ROOT)
+					oModel.SaveStepCode(nStepID, cVariable + " = new " + cClass +
+						"(" + cInitPara + ")" )
+				}
+			}
+
+		# Generate Braces 
 			nStepNumber++
 			nStepID = AddGeneratedStep(nStepID,
 				T_CT_BRACES_ST_BRACESTART,
