@@ -836,6 +836,7 @@ class VSFGenerator
 	/*
 			Access Object Component 
 	*/
+
 	func AddAccessObject cValue
 		# Use the Interaction Page
 			nIID = UseComponent("accessobject",[
@@ -863,7 +864,35 @@ class VSFGenerator
 			return nStepID
 
 
+	/*
+			Nested Function Component 
+	*/
+	func AddNestedFunc cVariable,cParameters
+		# Use the Interaction Page
+			nIID = UseComponent("nestedfunc",[
+				:value 		= cVariable,
+				:value2		= cParameters
+			])
 
+		# Generate the Step and the Code
+			nStepNumber = 1
+			nStepID = AddGeneratedStep(nParentID,
+				StyleData(cVariable) + " = " + T_CT_ANONFUNC_ST_FUNC + StyleData(cParameters),
+			nIID,nStepNumber,C_STEPTYPE_ROOT)
+			oModel.SaveStepCode(nStepID, cVariable + " = func " + cParameters + " {")
+			nStepNumber++
+			nStepID2 = AddGeneratedStep(nStepID,
+				T_CT_ANONFUNC_ST_STARTHERE ,
+			nIID,nStepNumber,C_STEPTYPE_ALLOWINTERACTION)
+			nStepNumber++
+			nStepID3 = AddGeneratedStep(nStepID,
+				T_CT_ANONFUNC_ST_END ,
+			nIID,nStepNumber,C_STEPTYPE_INFO)
+			oModel.SaveStepCode(nStepID3, "}" )
+		# Set the Parent 
+			aParents + nStepID2
+			SetStepsParent()
+			return nStepID
 
 
 

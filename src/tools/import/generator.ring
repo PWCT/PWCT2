@@ -91,6 +91,8 @@ class Generator
 					AddUsingBraces()
 				case :AccessObject
 					AddAccessObject(aCommand[:Expression])
+				case :NestedFunc
+					AddNestedFunc(aCommand[:Variable],aCommand[:Parameters])
 			}
 		}
 
@@ -104,10 +106,27 @@ class Generator
 					cType = ExpressionType(aPrevCommand[:Expression])
 					? "Action: " + aPrevCommand[:Expression]
 					? "Type: " + cType
-					if cType = "word" {
-						aParseTree[t-1][:Command] = :AccessObject
-						del(aParseTree,t)
-						t--
+					lDelete = False
+					switch cType {
+						case "word" 
+							aParseTree[t-1][:Command] = :AccessObject
+							lDelete = True
+						case "= func"
+							aParseTree[t-1][:Command] = :nestedfunc
+							cExpr = aParseTree[t-1][:Expression]
+							nEqualPos = substr(cExpr,"=")
+							cExpr2 = substr(cExpr,nEqualPos+1)
+							nFuncPos = substr(lower(cExpr2),"func")
+							cVariable = left(cExpr,nEqualPos-1)
+							cPara = substr(cExpr2,nFuncPos+4)
+							aParseTree[t-1][:Variable] = trim(cVariable)
+							aParseTree[t-1][:Parameters] = trim(cPara)
+							lDelete = True
+							
+					}
+					if lDelete {
+						del(aParseTree,t) 
+						t-- 
 						nMax--
 					}
 				}
