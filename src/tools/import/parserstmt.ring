@@ -133,10 +133,11 @@ class ParserStmt
 					clearTextBuffer()
 					/* Generate Code */
 					nexttoken()
-					addParameter(:In)
+					//addParameter(:In)
 					IGNORENEWLINE() 
 					nAssignmentFlag = 0 
 					if csexpr() {
+						addParameterFromSecondBuffer(:In)
 						clearTextBuffer()
 						nAssignmentFlag = 1 
 						/* Generate Code */
