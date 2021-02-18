@@ -159,6 +159,7 @@ class ParserExtra
 		IGNORENEWLINE() 
 		if isoperator2(OP_BRACEOPEN) {
 			nexttoken()
+			cleartextBuffer()
 			if lClass {
 				while mainclass() {
 					if nActiveToken = nTokensCount  {
@@ -174,6 +175,7 @@ class ParserExtra
 			}
 			if isoperator2(OP_BRACECLOSE) {
 				nexttoken()
+				cleartextBuffer()
 				return 1 
 			}
 			return 0 

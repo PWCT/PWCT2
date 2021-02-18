@@ -12,6 +12,7 @@ class ParserClass
 		if iskeyword(K_CLASS) {
 			ClearTextBuffer()
 			nexttoken()
+			RemoveOpenedBraceFromBuffer()
 			AddParameter(:ClassName)		
 			IGNORENEWLINE() 
 			ClearTextBuffer()
@@ -26,6 +27,7 @@ class ParserClass
 						error(ERROR_PRENTCLASSNAME)
 						return 0 
 					}
+					RemoveOpenedBraceFromBuffer()
 					AddParameter(:ParentClassName)		
 					ClearTextBuffer()
 				else
@@ -53,6 +55,7 @@ class ParserClass
 		if iskeyword(K_FUNC) or iskeyword(K_DEF) {
 			ClearTextBuffer()
 			nexttoken()
+			RemoveOpenedBraceFromBuffer()
 			AddParameter(:FunctionName)		
 			IGNORENEWLINE() 
 			ClearTextBuffer()
@@ -64,6 +67,7 @@ class ParserClass
 					x = 1 
 				}
 				oTarget.GenerateBlockEnd(self)
+				RemoveOpenedBraceFromBuffer()
 				AddParameter(:FunctionParameters)		
 				oTarget.GenerateFuncPara(self)
 				oTarget.GenerateBlockStart(self)
