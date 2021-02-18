@@ -16,6 +16,9 @@ if 3=1+2 {
 	? "Nice work!"
 	? "Now the import feature works fine"
 } 
+if 1+2=3 { 
+	? "True Answer"
+} 
 x = 10
 while x>0 { 
 	? "x = "+x
@@ -68,7 +71,7 @@ catch
 	? "Catch the error"
 } 
 import myfirstPackage
-myobj = new myclass
+myobj = new myclass()
 	 {
 		myobj.myclass_m1()
 		myobj.myclass_m2()
@@ -77,7 +80,7 @@ myfunc = func  {
 	? "test"
 }
 call myfunc()
-myobj2 = new myclass
+myobj2 = new myclass()
 	 {
 		myclass_m1()
 		myclass_m2()

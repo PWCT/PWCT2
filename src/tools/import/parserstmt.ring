@@ -174,6 +174,7 @@ class ParserStmt
 			IGNORENEWLINE() 
 			nAssignmentFlag = 0 
 			if csexpr() {
+				RemoveOpenedBraceFromBuffer()
 				AddParameterFromSecondBuffer(:Condition)
 				oTarget.GenerateIfExpr(self)
 				oTarget.GenerateBlockStart(self)

@@ -134,6 +134,14 @@ class ParserTokens
 			cBuffer2 = left(cBuffer2,len(cBuffer2)-len(cTokenValue))
 		}
 
+	func RemoveOpenedBraceFromBuffer
+		if right(cBuffer,1) = "{"
+			cBuffer = left(cBuffer,len(cBuffer)-1)
+		ok
+		if right(cBuffer2,1) = "{"
+			cBuffer2 = left(cBuffer2,len(cBuffer2)-1)
+		ok
+
 	func isKeyword cKeyword
 		return nTokenType = C_KEYWORD and 
 		   Number(cTokenValue) = cKeyword 
