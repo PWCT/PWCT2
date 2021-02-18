@@ -137,6 +137,7 @@ class ParserExtra
 			nexttoken()
 			nControlStructureBrace++ 
 		}
+		RemoveOpenedBraceFromBuffer()
 		return nOutput 
 
 	func csbraceend

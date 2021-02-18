@@ -32,6 +32,13 @@ while x > 0
 	? "x = " + x 
 	x--
 end
+
+x = 10
+while x > 0 {
+	? "x = " + x 
+	x--
+}
+
 if x = 1 
 	? "one"
 but x = 2
