@@ -90,6 +90,7 @@ class ParserClass
 			if namedotname() {
 				oTarget.GenerateBlockEnd(self)
 				oTarget.GenerateBlockEnd(self)
+				RemoveOpenedBraceFromBuffer()
 				AddParameter(:PackageName)		
 				oTarget.GeneratePackage(self)
 				/* Support using { } around the package code and using 'end' after the content */
