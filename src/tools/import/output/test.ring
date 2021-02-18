@@ -1,16 +1,16 @@
 load "stdlib.ring"
 load "guilib.ring"
-import system.gui
-cname = "ring"
+import System.GUI
+cName = "ring"
 one()
 two()three()
 test(1,2)
 sum(1,2,3)
-see "Hello, World!"+(3*2)+cname
+see "Hello, World!"+(3*2)+cName
 see "Welcome to the Ring programming language"
 see "Ring is a great language!"
 ? "The current Ring version is Ring 1.15"
-? "Hello, World!"+(3*2)+cname
+? "Hello, World!"+(3*2)+cName
 if 3=1+2 { 
 	? "True"
 	? "Nice work!"
@@ -41,8 +41,8 @@ for x=1 to 10 step 1 {
 		exit 1
 	} 
 } 
-alist = [1,2,3]
-for x in alist step 1 { 
+aList = [1,2,3]
+for x in aList step 1 { 
 	? x
 } 
 x = 10
@@ -67,9 +67,9 @@ try {
 catch 
 	? "Catch the error"
 } 
-import myfirstpackage
-myobj = new myclass()
-	{
+import myfirstPackage
+myobj = new myclass
+	 {
 		myobj.myclass_m1()
 		myobj.myclass_m2()
 	}
@@ -129,7 +129,7 @@ func testgive  {
 	give name
 	? "Hello "+name
 } 
-package myfirstpackage
+package MyFirstPackage
 class myparent
 private
 class myclass from myparent
@@ -151,7 +151,7 @@ private
 	func private_method2  { 
 		? "private method 2"
 	} 
-package application.sales.database
+package Application.Sales.Database
 class human
 	? "hello from human"
 	func humanname  { 
