@@ -914,7 +914,7 @@ class VSFGenerator
 		# Generate New Object Step
 
 			if cVariable = NULL {
-				if cInitPara = NULL {
+				if lInit = False {
 					nStepID = AddGeneratedStep(nParentID,
 						T_CT_NEWOBJ_ST_NEWOBJ + StyleData(cClass),
 						nIID,nStepNumber,C_STEPTYPE_ROOT)
@@ -928,7 +928,7 @@ class VSFGenerator
 						"(" + cInitPara + ")" )
 				}
 			else 
-				if cInitPara = NULL {
+				if lInit = False {
 					nStepID = AddGeneratedStep(nParentID,
 						T_CT_NEWOBJ_ST_SET + StyleData(cVariable) + " = " + 
 						T_CT_NEWOBJ_ST_NEWOBJ + StyleData(cClass),

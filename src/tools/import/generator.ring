@@ -94,10 +94,10 @@ class Generator
 				case :NestedFunc
 					AddNestedFunc(aCommand[:Variable],aCommand[:Parameters])
 				case :NewObj 
-					? "Variable : " + aCommand[:Variable]
-					? "Class : " + aCommand[:ClassName]
-					? "linit : " + aCommand[:lInit]
-					? "cInitPara : " + aCommand[:cInitParameters]
+					//? "Variable : " + aCommand[:Variable]
+					//? "Class : " + aCommand[:ClassName]
+					//? "linit : " + aCommand[:lInit]
+					//? "cInitPara : " + aCommand[:cInitParameters]
 					AddNewObj(aCommand[:Variable],aCommand[:ClassName],aCommand[:cInitParameters],aCommand[:lInit],True)
 			}
 		}
@@ -110,8 +110,8 @@ class Generator
 			if aCommand[:Command] = :UsingBraces {
 				if aPrevCommand[:Command] = :Expression {
 					cType = ExpressionType(aPrevCommand[:Expression])
-					? "Action: " + aPrevCommand[:Expression]
-					? "Type: " + cType
+					//? "Action: " + aPrevCommand[:Expression]
+					//? "Type: " + cType
 					lDelete = False
 					switch cType {
 						case "word" 
