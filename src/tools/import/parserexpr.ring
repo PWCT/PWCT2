@@ -344,10 +344,15 @@ class ParserExpr
 					if cRS != "" {
 						# Remove '=' operator  in the start 
 							if left(cRS,1) = "=" { 
-								cRS = substr(cRS,2) 
+								cRS = trim(substr(cRS,2))
 								aInstructionParameters[:RightSide] = cRS
 							}
-						oTarget.GenerateAssignment(self)
+						if trim(aInstructionParameters[:LeftSide]) != NULL {
+							oTarget.GenerateAssignment(self)
+						else 
+							aInstructionParameters[:Expression] = cRS
+							oTarget.GenerateExpressionCommand(self)
+						}
 						clearTextBuffer() 
 						return x
 					}
