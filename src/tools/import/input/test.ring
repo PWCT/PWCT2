@@ -39,6 +39,13 @@ while x > 0 {
 	x--
 }
 
+startScene = new StartScene
+
+while !WindowShouldClose()
+	? :good
+	exit
+end 
+
 if x = 1 
 	? "one"
 but x = 2
@@ -153,6 +160,11 @@ func testgive
 	? "Enter Name: " give name 
 	? "Hello " + name 
 
+func WindowShouldClose 
+	return false
+
+class StartScene
+
 Package MyFirstPackage
 
 class myparent
@@ -171,6 +183,7 @@ class myclass from myparent
 			? "private method 1"
 		func private_method2
 			? "private method 2"
+
 
 Package Application.Sales.Database
 
@@ -191,3 +204,5 @@ class employee from human
 	private 
 		func oldsalary
 			? "old salary"
+
+
