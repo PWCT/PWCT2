@@ -490,6 +490,10 @@ class ParserStmt
 			if isKeyword(K_FUNC) {
 				PrevToken()
 			}
+			if isKeyword(K_WHILE) {
+				PrevToken()
+			}
+
 			return 1 
 		}
 		return 0
