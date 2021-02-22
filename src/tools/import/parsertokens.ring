@@ -74,7 +74,7 @@ class ParserTokens
 	func ManualAddToTextBuffer cText
 		cBuffer += cText
 
-	func ManualAddToTextBuffer2 cText
+	func ManualAddToSecondTextBuffer cText
 		cBuffer2 += cText
 
 	func AddToSecondTextBuffer 

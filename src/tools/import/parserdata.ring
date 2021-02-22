@@ -37,7 +37,7 @@ class Parser
 			That call three functions 
 			Using cBuffer will generate code like 
 				one() two 
-			But using cBuffer will generate step like 
+			But using cBuffer2 will generate step like 
 				one() 
 			Where we avoid the token (two) 
 		*/

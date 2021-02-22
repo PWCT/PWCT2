@@ -15,7 +15,7 @@ class ParserExpr
 			      iskeyword(K_OR) 	or isoperator("||")  	{
 				if iskeyword(K_AND) or isoperator("&&") {
 					if iskeyword(K_AND) {
-						manualAddToTextBuffer2(" AND ")
+						manualAddToSecondTextBuffer(" AND ")
 					}
 					nexttoken()
 					IGNORENEWLINE() 
@@ -25,7 +25,7 @@ class ParserExpr
 					}
 				else
 					if iskeyword(K_OR) {
-						manualAddToTextBuffer2(" OR ")
+						manualAddToSecondTextBuffer(" OR ")
 					}
 					nexttoken()
 					IGNORENEWLINE() 
@@ -43,7 +43,7 @@ class ParserExpr
 		/* LogicNot --> Not EqualOrNot */
 		if iskeyword(K_NOT) or isoperator2(OP_NOT) {
 			if iskeyword(K_NOT) {
-				manualAddToTextBuffer2(" NOT ")
+				manualAddToSecondTextBuffer(" NOT ")
 			}
 			nexttoken()
 			IGNORENEWLINE()
@@ -468,7 +468,7 @@ class ParserExpr
 		}
 		/* Factor --> New Identifier */
 		if iskeyword(K_NEW) {
-			manualAddToTextBuffer2(" new ")
+			manualAddToSecondTextBuffer(" new ")
 			nexttoken()
 			IGNORENEWLINE() 
 			/* Generate Code */
@@ -513,7 +513,7 @@ class ParserExpr
 		}
 		/* Factor --> Anonymous Function */
 		if iskeyword(K_FUNC) or iskeyword(K_DEF) {
-			manualAddToTextBuffer2(" func ")
+			manualAddToSecondTextBuffer(" func ")
 			nexttoken()
 			/*
 			**  Generate Code 
@@ -559,7 +559,7 @@ class ParserExpr
 		}
 		/* Factor --> Call Identifier ( parameters ) */
 		if iskeyword(K_CALL) {
-			manualAddToTextBuffer2("call ")
+			manualAddToSecondTextBuffer("call ")
 			nexttoken()
 			if isidentifier() {
 				/* Generate Code */
