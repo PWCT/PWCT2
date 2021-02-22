@@ -46,13 +46,6 @@ class ParserTokens
 		aParseTree[nIns][cAttribute] = cBuffer2
 
 	func ValueAsString cValue
-		# Check if we have "string" or 'string' or `string`
-			cValue2 = trim(cValue)
-			if len(cValue2) > 1
-				if cValue2[1] = '"' or cValue2[1] = "'" or cValue2[1] = "`"
-					return cValue
-				ok
-			ok
 		# Add " " or ' ' or ` `
 			if substr(cValue,'"') = 0 {
 				cChar = '"'
@@ -64,11 +57,14 @@ class ParserTokens
 		return cChar + cValue + cChar
 
 	func AddToTextBuffer 
+		# We use cTokenValue2 to avoid updating cTokenValue 
+		# Because ValueAsString() could be called many times 
 		if Find([C_LITERAL,C_NUMBER,C_OPERATOR,C_IDENTIFIER],nTokenType) {
+			cTokenValue2 = cTokenValue
 			if nTokenType = C_LITERAL {
-				cTokenValue = ValueAsString(cTokenValue)
+				cTokenValue2 = ValueAsString(cTokenValue)
 			}
-	 		cBuffer += cTokenValue
+	 		cBuffer += cTokenValue2
 		}
 
 	func ManualAddToTextBuffer cText

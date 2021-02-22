@@ -7,8 +7,8 @@
 
 ===========================================================================================================================
 Status
-	* Bugs Count : 45
-	* Fixed Bugs : 45
+	* Bugs Count : 46
+	* Fixed Bugs : 46
 	* UnFixed Bugs : 0
 ===========================================================================================================================
 (1)  Fixed : We created over 6 thouands steps, then using the search window
@@ -1453,3 +1453,74 @@ This was a logical memory leak!
 		https://github.com/MahmoudFayed/pwct2/commit/5293b1fd33411c2b23d4ffd360dec51b229e3e96
 
 ===========================================================================================================================
+
+(46) Fixed: When using the Import Tool (Ring2PWCT) I got the next error 
+	after converting some apps 
+
+		Literal Not Closed
+
+	A little test was using 
+		print("test" + x + "','")
+	Where we get the next step in the visual source file
+		print("test" + x + ',')
+	i.e. a missing " " around ','
+
+	Solved by changing 	
+
+	func AddToTextBuffer 
+		if Find([C_LITERAL,C_NUMBER,C_OPERATOR,C_IDENTIFIER],nTokenType) {
+			if nTokenType = C_LITERAL {
+				cTokenValue = ValueAsString(cTokenValue)
+			}
+	 		cBuffer += cTokenValue
+		}
+
+	To
+
+	func AddToTextBuffer 
+		if Find([C_LITERAL,C_NUMBER,C_OPERATOR,C_IDENTIFIER],nTokenType) {
+			cTokenValue2 = cTokenValue
+			if nTokenType = C_LITERAL {
+				cTokenValue2 = ValueAsString(cTokenValue)
+			}
+	 		cBuffer += cTokenValue2
+		}
+
+	Where we use cTokenValue2 instead of updating cTokenValue 
+
+	Because the Parser call ValueAsString() two times! 
+	And updating the Token Value lead to a bug 
+	In the past I worked around it in
+
+	func ValueAsString cValue
+		# Check if we have "string" or 'string' or `string`
+			cValue2 = trim(cValue)
+			if len(cValue2) > 1
+				if cValue2[1] = '"' or cValue2[1] = "'" or cValue2[1] = "`"
+					return cValue
+				ok
+			ok
+		# Add " " or ' ' or ` `
+			if substr(cValue,'"') = 0 {
+				cChar = '"'
+			elseif substr(cValue,"'") = 0 
+				cChar = "'"
+			else 
+				cChar = "`"
+			}
+		return cChar + cValue + cChar
+
+	By using : Check if we have "string" or 'string' or `string`
+	
+	So After solving the original error I updated the function to
+
+	func ValueAsString cValue
+		# Add " " or ' ' or ` `
+			if substr(cValue,'"') = 0 {
+				cChar = '"'
+			elseif substr(cValue,"'") = 0 
+				cChar = "'"
+			else 
+				cChar = "`"
+			}
+		return cChar + cValue + cChar

@@ -1,5 +1,9 @@
 load "stdlib.ring"
 load "guilib.ring"
+try { 
+	print("test"+x+"','"+"nice")
+catch 
+} 
 import System.GUI
 cName = "ring"
 one()
@@ -28,6 +32,11 @@ x = 10
 while x>0 { 
 	? "x = "+x
 	x--
+} 
+startScene = new StartScene
+while !WindowShouldClose() { 
+	? :good
+	exit 1
 } 
 if x=1 { 
 	? "one"
@@ -137,6 +146,11 @@ func testgive  {
 	give name
 	? "Hello "+name
 } 
+func WindowShouldClose  { 
+	return false
+} 
+class StartScene
+private
 package MyFirstPackage
 class myparent
 private

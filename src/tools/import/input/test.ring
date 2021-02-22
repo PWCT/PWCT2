@@ -8,6 +8,11 @@
 load "stdlib.ring"
 load "guilib.ring"
 
+try
+	print("test" + x + "','" + "nice")
+catch 
+done
+
 import System.GUI
 
 cName = "ring"
