@@ -94,10 +94,6 @@ class Generator
 				case :NestedFunc
 					AddNestedFunc(aCommand[:Variable],aCommand[:Parameters])
 				case :NewObj 
-					//? "Variable : " + aCommand[:Variable]
-					//? "Class : " + aCommand[:ClassName]
-					//? "linit : " + aCommand[:lInit]
-					//? "cInitPara : " + aCommand[:cInitParameters]
 					AddNewObj(aCommand[:Variable],aCommand[:ClassName],aCommand[:cInitParameters],aCommand[:lInit],True)
 			}
 		}
@@ -156,6 +152,14 @@ class Generator
 							aParseTree[t-1][:lInit] = True
 							aParseTree[t-1][:cInitParameters] = cInit
 							lDelete = True
+						case "new"
+							aParseTree[t-1][:Command] = :newobj	
+							cExpr = aParseTree[t-1][:Expression]
+							nNewPos = substr(lower(cExpr),"new")
+							cClassName = substr(cExpr,nNewPos+3)
+							aParseTree[t-1][:ClassName] = trim(cClassName)
+							aParseTree[t-1][:lInit] = False
+							lDelete = True
 					}
 					if lDelete {
 						del(aParseTree,t) 
@@ -167,6 +171,7 @@ class Generator
 		}
 
 	func ExpressionType cExpr 
+		//? "Expression : " + cExpr 
 		cExpr = lower(cExpr)
 		cType = "word"
 		if substr(cExpr,"=") {
@@ -190,4 +195,5 @@ class Generator
 				cType = "func"
 			}
 		}
+		//? "Type : " + cType
 		return cType 
