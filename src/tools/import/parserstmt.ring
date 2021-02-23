@@ -493,7 +493,9 @@ class ParserStmt
 			if isKeyword(K_WHILE) {
 				PrevToken()
 			}
-
+			if isKeyword(K_NEW) {
+				PrevToken()
+			}
 			return 1 
 		}
 		return 0
