@@ -125,6 +125,7 @@ class ParserExtra
 		else
 			/* Generate Code */
 		}
+		RemoveCurrentTokenFromBuffer()
 		addParameter(:Step)
 		return 1 
 		
