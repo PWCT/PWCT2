@@ -605,7 +605,7 @@ class VSFGenerator
 			nStepID = AddGeneratedStep(nParentID,
 				T_CT_DOAGAIN_ST_DO ,
 			nIID,nStepNumber,C_STEPTYPE_ROOT)
-			oModel.SaveStepCode(nStepID, "do " +  cExpr )
+			oModel.SaveStepCode(nStepID, "do ")
 			nStepNumber++
 			nStepID2 = AddGeneratedStep(nStepID,
 				T_CT_DOAGAIN_ST_STARTHERE ,
