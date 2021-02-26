@@ -116,9 +116,6 @@ class Generator
 							loop
 						}
 					}
-					if ExpressionIsCallFunction(t) or ExpressionIsCallMethod(t) {
-						loop
-					}
 				case :UsingBraces 
 					if aPrevCommand[:Command] = :Expression {
 						cType = ExpressionType(aPrevCommand[:Expression])
@@ -181,6 +178,13 @@ class Generator
 					}
 			}
 		}
+		# Second Pass 
+			for t=2 to nMax {
+				if ExpressionIsCallFunction(t) or ExpressionIsCallMethod(t) {
+					loop
+				}
+			}
+			
 
 	func ExpressionType cExpr 
 		cExpr = lower(cExpr)
