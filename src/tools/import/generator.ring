@@ -114,7 +114,7 @@ class Generator
 							loop
 						}
 					}
-					if ExpressionIsFunctionCall(t) {
+					if ExpressionIsCallFunction(t) {
 						loop
 					}
 				case :UsingBraces 
@@ -206,7 +206,7 @@ class Generator
 		}
 		return cType 
 
-	func ExpressionIsFunctionCall nIndex
+	func ExpressionIsCallFunction nIndex
 		cExp = aParseTree[nIndex][:Expression]
 		exp = new qregularexpression() {
 			setPattern("^(\w+)\((.*)\)$")
@@ -219,4 +219,3 @@ class Generator
 			aParseTree[nIndex][:Function] = cFunc
 			aParseTree[nIndex][:Parameters] = cPara
 		}
-//? "== Function Call == " + cFunc + " == " + cPara
