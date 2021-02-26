@@ -13,6 +13,8 @@ load "parser.ring"
 load "target.ring"
 load "generator.ring"
 
+load "guilib.ring"
+
 if isMainSourceFile() {
 	ImportFile("input/test.ring","output/test.pwct",C_PRINTOUTPUT)
 }

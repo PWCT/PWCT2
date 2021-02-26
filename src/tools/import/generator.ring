@@ -109,13 +109,15 @@ class Generator
 						if trim(aCommand[:Expression]) = ")" {
 							aParseTree[t-1][:Expression] += ")"
 							del(aParseTree,t) t-- nMax--
+							loop
 						}
+					}
+					if ExpressionIsFunctionCall(t) {
+						loop
 					}
 				case :UsingBraces 
 					if aPrevCommand[:Command] = :Expression {
 						cType = ExpressionType(aPrevCommand[:Expression])
-						//? "Action: " + aPrevCommand[:Expression]
-						//? "Type: " + cType
 						lDelete = False
 						switch cType {
 							case "word" 
@@ -177,7 +179,6 @@ class Generator
 		}
 
 	func ExpressionType cExpr 
-		//? "Expression : " + cExpr 
 		cExpr = lower(cExpr)
 		cType = "word"
 		if substr(cExpr,"=") {
@@ -201,5 +202,16 @@ class Generator
 				cType = "func"
 			}
 		}
-		//? "Type : " + cType
 		return cType 
+
+	func ExpressionIsFunctionCall nIndex
+		cExp = aParseTree[nIndex][:Expression]
+		exp = new qregularexpression() {
+			setPattern("^(\w+)\((.*)\)$")
+			match = match(cExp,0,0,0)
+			if match.hasmatch() {
+				cFunc = match.captured(1)
+				cPara = match.captured(2)
+? "== Function Call == " + cFunc + " == " + cPara
+			}
+		}
