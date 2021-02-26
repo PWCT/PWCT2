@@ -63,7 +63,7 @@ for x in aList step 1 {
 	? x
 } 
 x = 10
-do x>0
+do 
 	? "x = "+x
 	x--
 again x>0

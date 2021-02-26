@@ -968,6 +968,31 @@ class VSFGenerator
 		return nStepID
 
 
+	/*
+		Call Function Component 
+	*/
+	func AddCallFunction cFunction,cParameters
+		lParameters = False 
+		if cParameters != NULL 
+			lParameters = C_CheckboxTrue
+		ok
+		# Use the Interaction Page
+			nIID = UseComponent("callfunc",[
+				:lOutput = 0,
+				:name = cFunction,
+				:Parameters = cParameters,
+				:lParameters = lParameters
+			])
+		# Generate the Step and the Code
+			nStepNumber = 1
+			nStepID = AddGeneratedStep(nParentID,
+			cFunction+
+			T_CT_CALLFUNC_ST_FUNCCALLSTART + StyleData(cParameters) +
+			T_CT_CALLFUNC_ST_FUNCCALLEND ,
+			nIID,nStepNumber,C_STEPTYPE_ROOT)
+			oModel.SaveStepCode(nStepID, cFunction + "(" +
+				 cParameters + ")" )
+			return nStepID
 
 
 

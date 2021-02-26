@@ -95,6 +95,8 @@ class Generator
 					AddNestedFunc(aCommand[:Variable],aCommand[:Parameters])
 				case :NewObj 
 					AddNewObj(aCommand[:Variable],aCommand[:ClassName],aCommand[:cInitParameters],aCommand[:lInit],True)
+				case :CallFunction 
+					AddCallFunction(aCommand[:function],aCommand[:Parameters])
 			}
 		}
 
@@ -209,9 +211,12 @@ class Generator
 		exp = new qregularexpression() {
 			setPattern("^(\w+)\((.*)\)$")
 			match = match(cExp,0,0,0)
-			if match.hasmatch() {
-				cFunc = match.captured(1)
-				cPara = match.captured(2)
-? "== Function Call == " + cFunc + " == " + cPara
-			}
 		}
+		if match.hasmatch() {
+			cFunc = match.captured(1)
+			cPara = match.captured(2)
+			aParseTree[nIndex][:Command] = :CallFunction
+			aParseTree[nIndex][:Function] = cFunc
+			aParseTree[nIndex][:Parameters] = cPara
+		}
+//? "== Function Call == " + cFunc + " == " + cPara
