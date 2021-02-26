@@ -97,6 +97,8 @@ class Generator
 					AddNewObj(aCommand[:Variable],aCommand[:ClassName],aCommand[:cInitParameters],aCommand[:lInit],True)
 				case :CallFunction 
 					AddCallFunction(aCommand[:function],aCommand[:Parameters])
+				case :CallMethod
+					AddCallMethod(aCommand[:Object],aCommand[:Method],aCommand[:Parameters])
 			}
 		}
 
@@ -114,7 +116,7 @@ class Generator
 							loop
 						}
 					}
-					if ExpressionIsCallFunction(t) {
+					if ExpressionIsCallFunction(t) or ExpressionIsCallMethod(t) {
 						loop
 					}
 				case :UsingBraces 
@@ -219,3 +221,20 @@ class Generator
 			aParseTree[nIndex][:Function] = cFunc
 			aParseTree[nIndex][:Parameters] = cPara
 		}
+
+	func ExpressionIsCallMethod nIndex
+		cExp = aParseTree[nIndex][:Expression]
+		exp = new qregularexpression() {
+			setPattern("^(\w+)\.(\w+)\((.*)\)$")
+			match = match(cExp,0,0,0)
+		}
+		if match.hasmatch() {
+			cObject = match.captured(1)
+			cMethod = match.captured(2)
+			cParameters = match.captured(3)
+			aParseTree[nIndex][:Command] = :CallMethod
+			aParseTree[nIndex][:Object] = cObject
+			aParseTree[nIndex][:Method] = cMethod
+			aParseTree[nIndex][:Parameters] = cParameters
+		}
+

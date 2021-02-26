@@ -994,7 +994,30 @@ class VSFGenerator
 				 cParameters + ")" )
 			return nStepID
 
-
-
-
-
+	/*
+		Call Method Component 
+	*/
+	func AddCallMethod cObject,cMethod,cParameters
+		lParameters = False 
+		if cParameters != NULL 
+			lParameters = C_CheckboxTrue
+		ok
+		# Use the Interaction Page
+			nIID = UseComponent("callmethod",[
+				:lOutput = 0,
+				:Object = cObject,
+				:name = cMethod,
+				:Parameters = cParameters,
+				:lParameters = lParameters
+			])
+		# Generate the Step and the Code
+			nStepNumber = 1
+			cObject += "."
+			nStepID = AddGeneratedStep(nParentID,
+			cObject + cMethod+
+			T_CT_CALLMETHOD_ST_CALLSTART + StyleData(cParameters) +
+			T_CT_CALLMETHOD_ST_CALLEND  ,
+			nIID,nStepNumber,C_STEPTYPE_ROOT)
+			oModel.SaveStepCode(nStepID, cObject+cMethod + "(" +
+				 cParameters + ")" )
+			return nStepID
