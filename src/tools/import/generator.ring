@@ -179,9 +179,12 @@ class Generator
 			}
 		}
 		# Second Pass 
-			for t=2 to nMax {
-				if ExpressionIsCallFunction(t) or ExpressionIsCallMethod(t) {
-					loop
+			nMax = len(aParseTree)
+			for t=1 to nMax {
+				if aParseTree[t][:Command] = :Expression {
+					if ExpressionIsCallFunction(t) or ExpressionIsCallMethod(t) {
+						loop 
+					}
 				}
 			}
 			
