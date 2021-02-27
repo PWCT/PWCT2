@@ -7,7 +7,7 @@
 
 ===========================================================================================================================
 Status
-	* Bugs Count : 46
+	* Bugs Count : 47
 	* Fixed Bugs : 46
 	* UnFixed Bugs : 0
 ===========================================================================================================================
@@ -1524,3 +1524,38 @@ This was a logical memory leak!
 				cChar = "`"
 			}
 		return cChar + cValue + cChar
+
+===========================================================================================================================
+
+(47) Ring2PWCT - problem in samples/QuickStart/ObjectOriented/OOP1.ring
+
+	Happens in this program 
+
+	New point { x=10  y=20  z=30  print() }
+	Class Point x y z func print see x + nl + y + nl + z + nl
+
+	WorkAround (Adding new line after attributes)
+
+	New point { x=10  y=20  z=30  print() }
+	Class Point x y z 
+	func print see x + nl + y + nl + z + nl
+
+
+	In this code
+
+		/* Statement --> Expr */
+		if expr() {
+			if isOperator(")") {
+				NextToken()
+			} 
+			GenerateStatementIsExpression()
+			if isKeyword(K_FUNC) {
+				PrevToken()
+			} 	
+		# ...
+
+	Workaround - Remove if isKeyword(K_FUNC) {
+
+
+
+===========================================================================================================================

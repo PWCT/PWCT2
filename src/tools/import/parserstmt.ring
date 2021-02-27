@@ -497,6 +497,7 @@ class ParserStmt
 				PrevToken()
 			}
 			return 1 
+
 		}
 		return 0
 
