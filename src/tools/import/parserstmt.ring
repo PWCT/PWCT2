@@ -487,13 +487,9 @@ class ParserStmt
 				NextToken()
 			} 
 			GenerateStatementIsExpression()
-			if isKeyword(K_FUNC) {
-				PrevToken()
-			}
-			if isKeyword(K_WHILE) {
-				PrevToken()
-			}
-			if isKeyword(K_NEW) {
+			if 	isKeyword(K_FUNC) or 
+				isKeyword(K_WHILE) or
+				isKeyword(K_NEW) {
 				PrevToken()
 			}
 			return 1 
