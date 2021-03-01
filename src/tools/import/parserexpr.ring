@@ -411,6 +411,10 @@ class ParserExpr
 			nexttoken()
 			if isidentifier() or isanykeyword() {
 				/* Generate Code */
+					if isAnyKeyword() {
+						cBuffer += lower(aKeywords[0+aActiveToken[C_TOKENVALUE]])
+						cBuffer2 += lower(aKeywords[0+aActiveToken[C_TOKENVALUE]])
+					}
 				nexttoken()
 				/* Hash --> '=' Expression */
 				if isoperator2(OP_EQUAL) {
