@@ -38,6 +38,7 @@ class ParserStmt
 			AddParameterFromSecondBuffer(:Expression)
 			oTarget.GenerateSeeExpr(self)
 			clearTextBuffer()
+			FixTheCurrentToken()
 			return x 
 		}
 		/* Statement --> ? Expr */
@@ -51,6 +52,7 @@ class ParserStmt
 			AddParameterFromSecondBuffer(:Expression)
 			oTarget.GenerateQuestionMarkExpr(self)
 			clearTextBuffer()
+			FixTheCurrentToken()
 			return x 
 		}
 		/* Statement --> Give|Get Identifier */
@@ -488,15 +490,19 @@ class ParserStmt
 				NextToken()
 			} 
 			GenerateStatementIsExpression()
-			if 	isKeyword(K_FUNC) or 
-				isKeyword(K_WHILE) or
-				isKeyword(K_NEW) {
-				PrevToken()
-			}
+			FixTheCurrentToken()
 			return 1 
 
 		}
 		return 0
+
+Func FixTheCurrentToken
+		if 	isKeyword(K_FUNC) or 
+			isKeyword(K_WHILE) or
+			isKeyword(K_GIVE) or
+			isKeyword(K_NEW) {
+			PrevToken()
+		}
 
 Func GenerateStatementIsExpression
 		AddParameterFromSecondBuffer(:Expression)
