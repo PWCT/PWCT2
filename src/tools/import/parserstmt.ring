@@ -400,7 +400,7 @@ class ParserStmt
 					return 0 
 				}
 			}
-			addParameter(:Value)
+			addParameterFromSecondBuffer(:Value)
 			oTarget.GenerateLoop(self)
 			clearTextBuffer()
 			return 1 
