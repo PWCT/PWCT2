@@ -7,9 +7,9 @@
 
 ===========================================================================================================================
 Status
-	* Bugs Count : 47
-	* Fixed Bugs : 46
-	* UnFixed Bugs : 0
+	* Bugs Count : 48
+	* Fixed Bugs : 47
+	* UnFixed Bugs : 1
 ===========================================================================================================================
 (1)  Fixed : We created over 6 thouands steps, then using the search window
 after selecting an item in the search result list we get the next error
@@ -1556,6 +1556,28 @@ This was a logical memory leak!
 
 	Workaround - Remove if isKeyword(K_FUNC) {
 
+===========================================================================================================================
 
+(48) Fixed a bug in Ring2PWCT when converting WinStartupManager.ring 
+
+	Solved in this commit
+
+	https://github.com/MahmoudFayed/pwct2/commit/8a10258c58057ac98f71dfab2fd632e020c006ab
+
+	In file:  src/tools/vsfgenerator/vsfgenerator.ring 
+
+
+	func AddCatch
+		PopParent()	# Try
+		aParents + nStepID_Catch
+		SetStepsParent()
+
+	Changed to 
+	func AddCatch
+		// We don't need PopParent() 	
+		// PopParent()	# Try
+		aParents + nStepID_Catch
+		SetStepsParent()
 
 ===========================================================================================================================
+
