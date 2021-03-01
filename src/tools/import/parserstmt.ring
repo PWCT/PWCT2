@@ -334,6 +334,7 @@ class ParserStmt
 			/* Generate Code */
 			oTarget.GenerateTry(self)
 			oTarget.GenerateBlockStart(self)
+			clearTextBuffer()
 			while stmt() {
 				if nActiveToken = nTokensCount {
 					exit 
