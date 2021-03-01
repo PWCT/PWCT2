@@ -125,12 +125,7 @@ class ParserExtra
 		else
 			/* Generate Code */
 		}
-		//RemoveCurrentTokenFromBuffer()
-		//addParameter(:Step)
-
 		addParameterFromSecondBuffer(:Step)
-
-		//addParameter(:Step)
 		return 1 
 		
 	func csexpr
