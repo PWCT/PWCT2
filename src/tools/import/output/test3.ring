@@ -6,15 +6,15 @@ func main  {
 			catch 
 				? :error
 			} 
-		} 
-		try { 
-			see 1/0
-		catch 
-			? :error
+			try { 
+				see 1/0
+			catch 
+				? :error
+			} 
 		} 
 	} 
+	return true
 } 
-return true
 func one  { 
 	? :one
 } 

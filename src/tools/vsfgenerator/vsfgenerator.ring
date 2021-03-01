@@ -784,7 +784,8 @@ class VSFGenerator
 			return nStepID
 
 	func AddCatch
-		PopParent()	# Try
+		// We don't need PopParent() 	
+		// PopParent()	# Try
 		aParents + nStepID_Catch
 		SetStepsParent()
 
