@@ -385,7 +385,7 @@ class ParserStmt
 					return 0 
 				}
 			}
-			addParameter(:Value)
+			addParameterFromSecondBuffer(:Value)
 			oTarget.GenerateExit(self)
 			clearTextBuffer()
 			return 1 
