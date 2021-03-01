@@ -193,23 +193,23 @@ class Generator
 		cExpr = lower(cExpr)
 		cType = "word"
 		if substr(cExpr,"=") {
-			if substr(cExpr,"new") {
+			if substr(cExpr,"new ") {
 				cType = "= new"
 				if substr(cExpr,"(") and substr(cExpr,")") {
 					cType = "= new init"
 				}
 			}
-			if substr(cExpr,"func") {
+			if substr(cExpr,"func ") {
 				cType = "= func"
 			}
 		else 
-			if substr(cExpr,"new") {
+			if substr(cExpr,"new ") {
 				cType = "new"
 				if substr(cExpr,"(") and substr(cExpr,")") {
 					cType = "new init"
 				}
 			}
-			if substr(cExpr,"func") {
+			if substr(cExpr,"func ") {
 				cType = "func"
 			}
 		}
