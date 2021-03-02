@@ -25,7 +25,7 @@ class ParserClass
 						/* Generate Code */
 					else
 						error(ERROR_PRENTCLASSNAME)
-						return 0 
+						return False 
 					}
 					RemoveOpenedBraceFromBuffer()
 					AddParameter(:ParentClassName)		
@@ -48,7 +48,7 @@ class ParserClass
 				return bracesandend(1,K_ENDCLASS) 
 			else
 				error(ERROR_CLASSNAME)
-				return 0 
+				return False 
 			}
 		}
 		/* Statement --> Func|Def Identifier [PARALIST] */
@@ -78,7 +78,7 @@ class ParserClass
 				return x 
 			else
 				error(ERROR_FUNCNAME)
-				return 0 
+				return False 
 			}
 		}
 		/* Statement --> Package Identifier { '.' Identifier } */
@@ -96,7 +96,7 @@ class ParserClass
 				/* Support using { } around the package code and using 'end' after the content */
 				return bracesandend(1,K_ENDPACKAGE) 
 			else
-				return 0 
+				return False 
 			}
 		}
 		/* Statement --> Private */
@@ -105,10 +105,10 @@ class ParserClass
 			nexttoken()
 			if nClassStart = 1 {
 				oTarget.GeneratePrivate(self)
-				return 1 
+				return True 
 			else
 				error(ERROR_NOCLASSDEFINED)
-				return 0 
+				return False 
 			}
 		}
 		return stmt() 
