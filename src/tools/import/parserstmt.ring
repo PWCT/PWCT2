@@ -501,7 +501,7 @@ class ParserStmt
 		}
 		return 0
 
-Func FixTheCurrentToken
+	func FixTheCurrentToken
 		if 	isKeyword(K_FUNC) or 
 			isKeyword(K_WHILE) or
 			isKeyword(K_IF) or		
@@ -511,8 +511,8 @@ Func FixTheCurrentToken
 			isKeyword(K_NEW) {
 			PrevToken()
 		}
-
-Func GenerateStatementIsExpression
+		
+	func GenerateStatementIsExpression
 		AddParameterFromSecondBuffer(:Expression)
 		oTarget.GenerateExpressionCommand(self)
 		clearTextBuffer()
