@@ -503,7 +503,6 @@ Func FixTheCurrentToken
 			isKeyword(K_FOR) or		
 			isKeyword(K_DO) or		
 			isKeyword(K_SWITCH) or		
-//			isKeyword(K_GIVE) or
 			isKeyword(K_NEW) {
 			PrevToken()
 		}
