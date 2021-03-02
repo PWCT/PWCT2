@@ -63,6 +63,11 @@ class ParserTokens
 			cTokenValue2 = cTokenValue
 			if nTokenType = C_LITERAL {
 				cTokenValue2 = ValueAsString(cTokenValue)
+			}
+			if nTokenType = C_OPERATOR {
+				if cTokenValue = "?" {
+					return
+				}
 			}			
 	 		cBuffer += cTokenValue2
 		}
