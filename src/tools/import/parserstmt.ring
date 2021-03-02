@@ -26,7 +26,7 @@ class ParserStmt
 				clearTextBuffer()
 				return x 
 			}
-			return 0 
+			return False 
 		}
 		/* Statement --> See|Put Expr */
 		if iskeyword(K_SEE) or iskeyword(K_PUT) {
@@ -66,16 +66,16 @@ class ParserStmt
 				nexttoken()
 				x = mixer()
 				if x = 0 {
-					return 0 
+					return False 
 				}
 				/* Generate Code */
 				AddParameter(:Identifier)
 				oTarget.GenerateGiveIdentifier(self)
 				clearTextBuffer()
-				return 1 
+				return True 
 			else
 				error(ERROR_VARNAME)
-				return 0 
+				return False 
 			}
 		}
 		/* Statement --> For Identifier = Expr to Expr {Statement} Next  |  For Identifier in Expr {Statemen */
@@ -112,7 +112,7 @@ class ParserStmt
 								/* Step <expr> */
 								x = parsestep()
 								if x = 0 {
-									return 0 
+									return False 
 								}
 								oTarget.GenerateForLoop(self)
 								oTarget.GenerateBlockStart(self)
@@ -126,7 +126,7 @@ class ParserStmt
 									/* Generate Code */
 									nexttoken()
 									clearTextBuffer()
-									return 1 
+									return True 
 								else
 									error(ERROR_NEXT)
 								}
@@ -148,7 +148,7 @@ class ParserStmt
 						/* Step <expr> */
 						x = parsestep()
 						if x = 0 {
-							return 0 
+							return False 
 						}
 						oTarget.GenerateForInLoop(self)
 						oTarget.GenerateBlockStart(self)
@@ -162,14 +162,14 @@ class ParserStmt
 							nexttoken()
 							/* Generate Code */
 							clearTextBuffer()
-							return 1 
+							return True 
 						else
 							error(ERROR_NEXT)
 						}
 					}
 				}
 			}
-			return 0 
+			return False 
 		}
 		/* Statement --> IF Expr Statements OK */
 		if iskeyword(K_IF) {
@@ -229,12 +229,12 @@ class ParserStmt
 					oTarget.GenerateBlockEnd(self)
 					nexttoken()
 					clearTextBuffer()
-					return 1 
+					return True 
 				else
 					error(ERROR_OK)
 				}
 			}
-			return 0 
+			return False 
 		}
 		/* Statement --> WHILE Expr Statements END */
 		if iskeyword(K_WHILE) {
@@ -263,12 +263,12 @@ class ParserStmt
 					/* Generate Code */
 					nexttoken()
 					clearTextBuffer()
-					return 1 
+					return True 
 				else
 					error(ERROR_END)
 				}
 			}
-			return 0 
+			return False 
 		}
 		/* Statement --> DO Statements AGAIN Expr */
 		if iskeyword(K_DO) {
@@ -299,12 +299,12 @@ class ParserStmt
 					/* Generate Code (Test Condition) */
 					nAssignmentFlag = 1 
 					clearTextBuffer()
-					return 1 
+					return True 
 				}
 			else
 				error(ERROR_AGAIN)
 			}
-			return 0 
+			return False 
 		}
 		/* Statement --> Return Expr */
 		if iskeyword(K_RETURN) {
@@ -365,7 +365,7 @@ class ParserStmt
 					nexttoken()
 					/* Generate Code */
 					clearTextBuffer()
-					return 1 
+					return True 
 				else
 					error(ERROR_NODONE)
 				}
@@ -380,7 +380,7 @@ class ParserStmt
 			/* Generate Code */
 			oTarget.GenerateBye(self)
 			clearTextBuffer()
-			return 1 
+			return True 
 		}
 		/* Statement --> Exit (Go to outside the loop) */
 		if iskeyword(K_EXIT) {
@@ -389,13 +389,13 @@ class ParserStmt
 			/* Check Number  (Exit from more than one loop) */
 			if isnumber() or isidentifier() {
 				if ! expr() {
-					return 0 
+					return False 
 				}
 			}
 			addParameterFromSecondBuffer(:Value)
 			oTarget.GenerateExit(self)
 			clearTextBuffer()
-			return 1 
+			return True 
 		}
 		/* Statement --> Loop (Continue) */
 		if iskeyword(K_LOOP) {
@@ -404,13 +404,13 @@ class ParserStmt
 			/* Check Number  (Continue from more than one loop) */
 			if isnumber() or isidentifier() {
 				if ! expr() {
-					return 0 
+					return False 
 				}
 			}
 			addParameterFromSecondBuffer(:Value)
 			oTarget.GenerateLoop(self)
 			clearTextBuffer()
-			return 1 
+			return True 
 		}
 		/* Statement --> Switch  Expr { ON|CASE Expr {Statement} } OFF */
 		if iskeyword(K_SWITCH) {
@@ -465,7 +465,7 @@ class ParserStmt
 				if iskeyword(K_OFF) or iskeyword(K_END) or csbraceend() {
 					nexttoken()
 					clearTextBuffer()
-					return 1 
+					return True 
 				else
 					error(ERROR_SWITCHOFF)
 				}
@@ -492,14 +492,14 @@ class ParserStmt
 			} 
 			GenerateStatementIsExpression()
 			FixTheCurrentToken()
-			return 1 
+			return True 
 
 		}
 		/* Statement --> epslion */
 		if epslion() {
-			return 1 
+			return True 
 		}
-		return 0
+		return False
 
 	func FixTheCurrentToken
 		if 	isKeyword(K_FUNC) or 
