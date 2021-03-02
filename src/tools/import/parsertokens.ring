@@ -56,7 +56,7 @@ class ParserTokens
 			}
 		return cChar + cValue + cChar
 
-	func AddToTextBuffer 
+	func ProcessToken
 		# We use cTokenValue2 to avoid updating cTokenValue 
 		# Because ValueAsString() could be called many times 
 		if Find([C_LITERAL,C_NUMBER,C_OPERATOR,C_IDENTIFIER],nTokenType) {
@@ -69,8 +69,12 @@ class ParserTokens
 					return
 				}
 			}			
-	 		cBuffer += cTokenValue2
+	 		return cTokenValue2
 		}
+
+
+	func AddToTextBuffer 
+		cBuffer += ProcessToken()
 
 	func ManualAddToTextBuffer cText
 		cBuffer += cText
@@ -79,18 +83,7 @@ class ParserTokens
 		cBuffer2 += cText
 
 	func AddToSecondTextBuffer 
-		if Find([C_LITERAL,C_NUMBER,C_OPERATOR,C_IDENTIFIER],nTokenType) {
-			cTokenValue2 = cTokenValue
-			if nTokenType = C_LITERAL {
-				cTokenValue2 = ValueAsString(cTokenValue)
-			}
-			if nTokenType = C_OPERATOR {
-				if cTokenValue = "?" {
-					return
-				}
-			}
-	 		cBuffer2 += cTokenValue2
-		}
+ 		cBuffer2 += ProcessToken()
 
 	func EnableBufferFlag
 		lBufferFlag = True
