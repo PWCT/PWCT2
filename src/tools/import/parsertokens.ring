@@ -159,22 +159,12 @@ class ParserTokens
 		}
 		return 0 
 
-	func IGNORENEWLINE
+	func IgnoreNewLine
 		DisableBufferFlag()
 		while epslion() {}
 		EnableBufferFlag()
 
-	func PASSNEWLINE 
-		while passepslion() {}
-
-	func Error cMsg 
-		? "PWCT 2.0 - Import Tool"
-		? "Compiler Error!"
-		? "Token Number: " + nActiveToken
-		? cMsg
-		ShutDown()
-
-	func epslion
+	func Epslion
 		if isendline() {
 			if nexttoken() {
 				return 1 
@@ -185,10 +175,10 @@ class ParserTokens
 		}
 		return 0 
 
-	func CURRENTTOKEN 
-		return nActiveToken
+	func PassNewLine
+		while passepslion() {}
 
-	func passepslion
+	func PassEpslion
 		/* used after factor - identifier to allow {  } in new line */
 		if isendline() {
 			nLineNumber = cTokenValue
@@ -197,6 +187,17 @@ class ParserTokens
 			}
 		}
 		return 0 
+
+	func CurrentToken
+		return nActiveToken
+
+	func Error cMsg 
+		? "PWCT 2.0 - Import Tool"
+		? "Compiler Error!"
+		? "Token Number: " + nActiveToken
+		? cMsg
+		ShutDown()
+
 
 	func Generate aCommand, lClear 
 		aParseTree + aCommand 
@@ -211,9 +212,9 @@ class ParserTokens
 	func CurrentInstruction
 		return len(aParseTree)
 
-	func Start 
+	func Start
 		do
-			IGNORENEWLINE() 
+			IGNORENEWLINE()  
 			mainclass()	
 		again NextToken()
 
