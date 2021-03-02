@@ -8,8 +8,8 @@
 ===========================================================================================================================
 Status
 	* Bugs Count : 48
-	* Fixed Bugs : 47
-	* UnFixed Bugs : 1
+	* Fixed Bugs : 48
+	* UnFixed Bugs : 0
 ===========================================================================================================================
 (1)  Fixed : We created over 6 thouands steps, then using the search window
 after selecting an item in the search result list we get the next error
@@ -1527,7 +1527,7 @@ This was a logical memory leak!
 
 ===========================================================================================================================
 
-(47) Ring2PWCT - problem in samples/QuickStart/ObjectOriented/OOP1.ring
+(47) Fixed - Ring2PWCT - problem in samples/QuickStart/ObjectOriented/OOP1.ring
 
 	Happens in this program 
 
@@ -1555,6 +1555,23 @@ This was a logical memory leak!
 		# ...
 
 	Workaround - Remove if isKeyword(K_FUNC) {
+
+	Solved using (if nActiveToken != nLastPrevToken)
+
+		if nActiveToken != nLastPrevToken {
+			nLastPrevToken = nActiveToken 
+			if 	isKeyword(K_FUNC) or 
+				isKeyword(K_WHILE) or
+				isKeyword(K_DO) or
+				isKeyword(K_IF) or
+				isKeyword(K_FOR) or
+				isKeyword(K_SWITCH) or
+				isKeyword(K_GIVE) or
+				isKeyword(K_NEW) {
+				PrevToken()
+			}
+		}
+			
 
 ===========================================================================================================================
 

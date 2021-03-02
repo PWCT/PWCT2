@@ -143,6 +143,7 @@ func testif  {
 } 
 func testgive  { 
 	? "Enter Name: "
+	"Enter Name: "
 	give name
 	? "Hello "+name
 } 

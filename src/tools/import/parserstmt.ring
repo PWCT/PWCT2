@@ -502,12 +502,20 @@ class ParserStmt
 		return False
 
 	func FixTheCurrentToken
-		if 	isKeyword(K_FUNC) or 
-			isKeyword(K_WHILE) or
-			isKeyword(K_NEW) {
-			PrevToken()
+		if nActiveToken != nLastPrevToken {
+			nLastPrevToken = nActiveToken 
+			if 	isKeyword(K_FUNC) or 
+				isKeyword(K_WHILE) or
+				isKeyword(K_DO) or
+				isKeyword(K_IF) or
+				isKeyword(K_FOR) or
+				isKeyword(K_SWITCH) or
+				isKeyword(K_GIVE) or
+				isKeyword(K_NEW) {
+				PrevToken()
+			}
 		}
-		
+			
 	func GenerateStatementIsExpression
 		AddParameterFromSecondBuffer(:Expression)
 		oTarget.GenerateExpressionCommand(self)
