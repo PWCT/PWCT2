@@ -4,7 +4,7 @@ try {
 	print("test"+x+"','"+"nice")
 catch 
 } 
-import System . GUI
+import System.GUI
 cName = "ring"
 one()
 two()three()
@@ -49,7 +49,7 @@ if x=1 {
 	else
 		? "other number"
 } 
-for x = 1 to 10 step 1 { 
+for x=1 to 10 step 1 { 
 	? x
 	if x=3 { 
 		loop 1
@@ -121,10 +121,10 @@ func two  {
 func three  { 
 	? "hello from three "
 } 
-func test x , y { 
+func test x,y { 
 	? "Hello from Test!"
 } 
-func sum a , b , c { 
+func sum a,b,c { 
 	return a+b+c
 } 
 func testif  { 
@@ -173,7 +173,7 @@ private
 	func private_method2  { 
 		? "private method 2"
 	} 
-package Application . Sales . Database
+package Application.Sales.Database
 class human
 	? "hello from human"
 	func humanname  { 
