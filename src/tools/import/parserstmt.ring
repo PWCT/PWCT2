@@ -480,10 +480,6 @@ class ParserStmt
 			clearTextBuffer()
 			return lOutput
 		}
-		/* Statement --> epslion */
-		if epslion() {
-			return 1 
-		}
 		/* Statement --> Expr */
 		if expr() {
 			if isOperator(")") {
@@ -494,6 +490,11 @@ class ParserStmt
 			return 1 
 
 		}
+		/* Statement --> epslion */
+		if epslion() {
+			return 1 
+		}
+
 		return 0
 
 Func FixTheCurrentToken
