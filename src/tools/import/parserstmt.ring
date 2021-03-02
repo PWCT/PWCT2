@@ -11,6 +11,7 @@ class ParserStmt
 		x = True
 		/* Statement --> Load Literal */
 		if iskeyword(K_LOAD) {
+			clearTextBuffer()
 			nexttoken()
 			/* Load Package Command */
 			if iskeyword(K_PACKAGE) {
@@ -57,6 +58,7 @@ class ParserStmt
 		}
 		/* Statement --> Give|Get Identifier */
 		if iskeyword(K_GIVE) or iskeyword(K_GET) {
+			clearTextBuffer()
 			nexttoken()
 			IGNORENEWLINE() 
 			if isidentifier() {
@@ -306,6 +308,7 @@ class ParserStmt
 		}
 		/* Statement --> Return Expr */
 		if iskeyword(K_RETURN) {
+			clearTextBuffer()
 			nexttoken()
 			x = 1 
 			if isendline() = 0 {
@@ -327,6 +330,7 @@ class ParserStmt
 		}
 		/* Statement --> Try {Statement} Catch {Statement} Done */
 		if iskeyword(K_TRY) {
+			clearTextBuffer()
 			nexttoken()
 			IGNORENEWLINE() 
 			if isoperator2(OP_BRACEOPEN) {
@@ -371,6 +375,7 @@ class ParserStmt
 		}
 		/* Statement --> Bye (Close the Program) */
 		if iskeyword(K_BYE) {
+			clearTextBuffer()
 			nexttoken()
 			/* Generate Code */
 			oTarget.GenerateBye(self)
@@ -494,7 +499,6 @@ class ParserStmt
 		if epslion() {
 			return 1 
 		}
-
 		return 0
 
 Func FixTheCurrentToken

@@ -101,6 +101,7 @@ class ParserClass
 		}
 		/* Statement --> Private */
 		if iskeyword(K_PRIVATE) {
+			clearTextBuffer()
 			nexttoken()
 			if nClassStart = 1 {
 				oTarget.GeneratePrivate(self)
