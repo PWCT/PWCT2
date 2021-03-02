@@ -75,15 +75,16 @@ class ParserTokens
 
 	func AddToSecondTextBuffer 
 		if Find([C_LITERAL,C_NUMBER,C_OPERATOR,C_IDENTIFIER],nTokenType) {
+			cTokenValue2 = cTokenValue
 			if nTokenType = C_LITERAL {
-				cTokenValue = ValueAsString(cTokenValue)
+				cTokenValue2 = ValueAsString(cTokenValue)
 			}
 			if nTokenType = C_OPERATOR {
 				if cTokenValue = "?" {
 					return
 				}
 			}
-	 		cBuffer2 += cTokenValue
+	 		cBuffer2 += cTokenValue2
 		}
 
 	func EnableBufferFlag
