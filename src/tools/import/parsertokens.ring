@@ -12,7 +12,7 @@ class ParserTokens
 		nActiveToken 	= 0
 		nTokensCount	= len(aTokens)
 
-	func LoadToken
+	func loadToken
 		aActiveToken	= aTokens[nActiveToken]
 		nTokenType 	= aActiveToken[C_TOKENTYPE]
 		cTokenValue 	= aActiveToken[C_TOKENVALUE]
@@ -21,31 +21,31 @@ class ParserTokens
 			AddToTextBuffer()
 		}
 
-	func ClearTextBuffer
+	func clearTextBuffer
 		cBuffer = ""
 		cBuffer2 = ""
 
-	func AddParameter cAttribute 
+	func addParameter cAttribute 
 		aInstructionParameters[cAttribute] = cBuffer
 		return cBuffer
 
-	func AddParameterFromSecondBuffer cAttribute 
+	func addParameterFromSecondBuffer cAttribute 
 		aInstructionParameters[cAttribute] = cBuffer2
 		return cBuffer2
 
-	func Parameter cAttribute
+	func parameter cAttribute
 		return aInstructionParameters[cAttribute]
 
-	func ClearInstructionParameters
+	func clearInstructionParameters
 		aInstructionParameters = []
 
-	func AddParameterToInstruction nIns,cAttribute
+	func addParameterToInstruction nIns,cAttribute
 		aParseTree[nIns][cAttribute] = cBuffer
 
-	func AddParameterToInstructionFromSecondBuffer nIns,cAttribute
+	func addParameterToInstructionFromSecondBuffer nIns,cAttribute
 		aParseTree[nIns][cAttribute] = cBuffer2
 
-	func ValueAsString cValue
+	func valueAsString cValue
 		# Add " " or ' ' or ` `
 			if substr(cValue,'"') = 0 {
 				cChar = '"'
@@ -56,7 +56,7 @@ class ParserTokens
 			}
 		return cChar + cValue + cChar
 
-	func ProcessToken
+	func processToken
 		# We use cTokenValue2 to avoid updating cTokenValue 
 		# Because ValueAsString() could be called many times 
 		if Find([C_LITERAL,C_NUMBER,C_OPERATOR,C_IDENTIFIER],nTokenType) {
@@ -72,26 +72,25 @@ class ParserTokens
 	 		return cTokenValue2
 		}
 
-
-	func AddToTextBuffer 
+	func addToTextBuffer 
 		cBuffer += ProcessToken()
 
-	func ManualAddToTextBuffer cText
+	func manualAddToTextBuffer cText
 		cBuffer += cText
 
-	func ManualAddToSecondTextBuffer cText
+	func manualAddToSecondTextBuffer cText
 		cBuffer2 += cText
 
-	func AddToSecondTextBuffer 
+	func addToSecondTextBuffer 
  		cBuffer2 += ProcessToken()
 
-	func EnableBufferFlag
+	func enableBufferFlag
 		lBufferFlag = True
 
-	func DisableBufferFlag
+	func disableBufferFlag
 		lBufferFlag = False
 
-	func NextToken
+	func nextToken
 		if nActiveToken < nTokensCount {
 			if lBufferFlag {
 				AddToSecondTextBuffer()
@@ -102,7 +101,7 @@ class ParserTokens
 		}
 		return False
 
-	func PrevToken
+	func prevToken
 		if nActiveToken > 0 {
 			nActiveToken--
 			aActiveToken	= aTokens[nActiveToken]
@@ -111,7 +110,7 @@ class ParserTokens
 			nTokenIndex 	= aActiveToken[C_TOKENINDEX]
 		}
 
-	func RemoveCurrentTokenFromBuffer
+	func removeCurrentTokenFromBuffer
 		if right(cBuffer,len(cTokenValue)) = cTokenValue {
 			cBuffer = left(cBuffer,len(cBuffer)-len(cTokenValue))
 		}
@@ -119,7 +118,7 @@ class ParserTokens
 			cBuffer2 = left(cBuffer2,len(cBuffer2)-len(cTokenValue))
 		}
 
-	func RemoveOpenedBraceFromBuffer
+	func removeOpenedBraceFromBuffer
 		if right(cBuffer,1) = "{"
 			cBuffer = left(cBuffer,len(cBuffer)-1)
 		ok
@@ -151,7 +150,7 @@ class ParserTokens
 		return nTokenType = C_OPERATOR and 
 		   nTokenIndex = nIndex 
 	
-	func SetToken x 
+	func setToken x 
 		if x >= 1 and x <= nTokensCount {
 			nActiveToken = x 
 			loadtoken()
@@ -159,12 +158,12 @@ class ParserTokens
 		}
 		return 0 
 
-	func IgnoreNewLine
+	func ignoreNewLine
 		DisableBufferFlag()
 		while epslion() {}
 		EnableBufferFlag()
 
-	func Epslion
+	func epslion
 		if isendline() {
 			if nexttoken() {
 				return 1 
@@ -175,10 +174,10 @@ class ParserTokens
 		}
 		return 0 
 
-	func PassNewLine
+	func passNewLine
 		while passepslion() {}
 
-	func PassEpslion
+	func passEpslion
 		/* used after factor - identifier to allow {  } in new line */
 		if isendline() {
 			nLineNumber = cTokenValue
@@ -188,10 +187,10 @@ class ParserTokens
 		}
 		return 0 
 
-	func CurrentToken
+	func currentToken
 		return nActiveToken
 
-	func Error cMsg 
+	func error cMsg 
 		? "PWCT 2.0 - Import Tool"
 		? "Compiler Error!"
 		? "Token Number: " + nActiveToken
@@ -199,26 +198,26 @@ class ParserTokens
 		ShutDown()
 
 
-	func Generate aCommand, lClear 
+	func generate aCommand, lClear 
 		aParseTree + aCommand 
 		if lClear {
 			clearTextBuffer()
 			clearInstructionParameters()
 		}
 
-	func GetParseTree 
+	func getParseTree 
 		return aParseTree
 
-	func CurrentInstruction
+	func currentInstruction
 		return len(aParseTree)
 
-	func Start
+	func start
 		do
-			IGNORENEWLINE()  
-			mainclass()	
-		again NextToken()
+			ignoreNewLine()  
+			mainClass()	
+		again nextToken()
 
-	func PrintParseTree
+	func printParseTree
 		? "Parse Tree..."
 		? List2Code(aParseTree)
 
