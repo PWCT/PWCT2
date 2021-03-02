@@ -7,6 +7,12 @@
 
 class ParserTokens
 
+	func start
+		do
+			ignoreNewLine()  
+			mainClass()	
+		again nextToken()
+
 	func setTokens aList
 		aTokens 	= aList 
 		nActiveToken 	= 0
@@ -165,14 +171,11 @@ class ParserTokens
 
 	func epslion
 		if isendline() {
-			if nexttoken() {
-				return 1 
-			}
-			if nTokensCount = 1 {
-				return 1 
+			if nexttoken() or nTokensCount = 1 {
+				return True 
 			}
 		}
-		return 0 
+		return False
 
 	func passNewLine
 		while passepslion() {}
@@ -182,10 +185,10 @@ class ParserTokens
 		if isendline() {
 			nLineNumber = cTokenValue
 			if nexttoken() {
-				return 1 
+				return True 
 			}
 		}
-		return 0 
+		return False
 
 	func currentToken
 		return nActiveToken
@@ -193,7 +196,8 @@ class ParserTokens
 	func error cMsg 
 		? "PWCT 2.0 - Import Tool"
 		? "Compiler Error!"
-		? "Token Number: " + nActiveToken
+		? "Token Number : " + nActiveToken
+		? "Line Number  : " + nLineNumber
 		? cMsg
 		ShutDown()
 
@@ -210,12 +214,6 @@ class ParserTokens
 
 	func currentInstruction
 		return len(aParseTree)
-
-	func start
-		do
-			ignoreNewLine()  
-			mainClass()	
-		again nextToken()
 
 	func printParseTree
 		? "Parse Tree..."
