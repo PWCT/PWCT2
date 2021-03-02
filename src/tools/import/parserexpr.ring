@@ -21,7 +21,7 @@ class ParserExpr
 					IGNORENEWLINE() 
 					x = logicnot()
 					if x = 0 {
-						return 0 
+						return False 
 					}
 				else
 					if iskeyword(K_OR) {
@@ -31,13 +31,13 @@ class ParserExpr
 					IGNORENEWLINE() 
 					x = logicnot()
 					if x = 0 {
-						return 0 
+						return False 
 					}
 				}
 			}
 			return x 
 		}
-		return 0 
+		return False 
 	
 	func logicnot
 		/* LogicNot --> Not EqualOrNot */
@@ -64,24 +64,24 @@ class ParserExpr
 						IGNORENEWLINE()
 						x = compare()
 						if x = 0 {
-							return 0 
+							return False 
 						}
 					else
 						error(ERROR_EXPROPERATOR)
-						return 0 
+						return False 
 					}
 				else 
 					nexttoken()
 					IGNORENEWLINE()
 					x = compare()
 					if x = 0 {
-						return 0 
+						return False 
 					}
 				}
 			}
 			return x 
 		}
-		return 0 
+		return False 
 
 	func compare
 		/* Compare --> BitORXOR { <|>|<=|>= BITORXOR } */
@@ -98,7 +98,7 @@ class ParserExpr
 					}
 					x = bitorxor()
 					if x = 0 {
-						return 0 
+						return False 
 					}
 					if nEqual = 0 {
 						/* Generate Code */
@@ -115,7 +115,7 @@ class ParserExpr
 					}
 					x = bitorxor()
 					if x = 0 {
-						return 0 
+						return False 
 					}
 					if nEqual = 0 {
 						/* Generate Code */
@@ -125,12 +125,12 @@ class ParserExpr
 				}
 				/* Check <> */
 				if x = 0 {
-					return 0 
+					return False 
 				}
 			}
 			return x 
 		}
-		return 0 
+		return False 
 
 	func bitorxor
 		/* BitOrXOR --> BitAnd { | | ^ BitAnd } */
@@ -142,7 +142,7 @@ class ParserExpr
 					IGNORENEWLINE()
 					x = bitand()
 					if x = 0 {
-						return 0 
+						return False 
 					}
 					/* Generate Code */
 				else
@@ -150,14 +150,14 @@ class ParserExpr
 					IGNORENEWLINE() 
 					x = bitand()
 					if x = 0 {
-						return 0
+						return False
 					}
 					/* Generate Code */
 				}
 			}
 			return x
 		}
-		return 0
+		return False
 
 	func bitand
 		/* BitAnd --> BitShift { & BitShift } */
@@ -168,13 +168,13 @@ class ParserExpr
 				IGNORENEWLINE()
 				x = bitshift()
 				if x = 0 {
-					return 0 
+					return False 
 				}
 				/* Generate Code */
 			}
 			return x
 		}
-		return 0
+		return False
 
 	func bitshift
 		/* BitShift --> Arith { << | >>  Arith } */
@@ -186,7 +186,7 @@ class ParserExpr
 					IGNORENEWLINE()
 					x = arithmetic()
 					if x = 0 {
-						return 0
+						return False
 					}
 					/* Generate Code */
 				else
@@ -194,14 +194,14 @@ class ParserExpr
 					IGNORENEWLINE()
 					x = arithmetic()
 					if x = 0 {
-						return 0
+						return False
 					}
 					/* Generate Code */
 				}
 			}
 			return x
 		}
-		return 0
+		return False
 
 	func arithmetic
 		/* Arithmetic --> Term { +|- Term } */
@@ -213,7 +213,7 @@ class ParserExpr
 					IGNORENEWLINE()
 					x = term()
 					if x = 0 {
-						return 0 
+						return False 
 					}
 					/* Generate Code */
 				else
@@ -221,14 +221,14 @@ class ParserExpr
 					IGNORENEWLINE()
 					x = term()
 					if x = 0 {
-						return 0 
+						return False 
 					}
 					/* Generate Code */
 				}
 			}
 			return x 
 		}
-		return 0 
+		return False 
 
 	func term
 		/* Term --> Range { *|/|% Range } */
@@ -240,7 +240,7 @@ class ParserExpr
 					IGNORENEWLINE()
 					x = range()
 					if x = 0 {
-						return 0 
+						return False 
 					}
 					/* Generate Code */
 				elseif isoperator2(OP_REM)
@@ -248,7 +248,7 @@ class ParserExpr
 					IGNORENEWLINE() 
 					x = range()
 					if x = 0 {
-						return 0 
+						return False 
 					}
 					/* Generate Code */
 				else
@@ -256,14 +256,14 @@ class ParserExpr
 					IGNORENEWLINE() 
 					x = range()
 					if x = 0 {
-						return 0 
+						return False 
 					}
 					/* Generate Code */
 				}
 			}
 			return x 
 		}
-		return 0 
+		return False 
 
 	func range
 		/* Range --> Factor : Factor */
@@ -274,13 +274,13 @@ class ParserExpr
 				IGNORENEWLINE()
 				x = factor()
 				if x = 0 {
-					return 0 
+					return False 
 				}
 				/* Generate Code */
 			}
 			return x
 		}
-		return 0 
+		return False 
 	
 	func factor 
 		/* Factor --> Identifier  {mixer} [ '=' Expr ] */
@@ -298,7 +298,7 @@ class ParserExpr
 			/* Array Index & Object Dot */
 			x = mixer()
 			if x = 0 {
-				return 0 
+				return False 
 			}
 			/*
 			**  [ [ = Expr  ] 
@@ -367,10 +367,10 @@ class ParserExpr
 			}
 			/* ++ & -- */
 			if ppmm() {
-				return 1 
+				return True 
 			}
 			/* Generate Code */
-			return 1
+			return True
 		}
 		/* Factor - Number */
 		if isnumber() {
@@ -382,14 +382,14 @@ class ParserExpr
 			}
 			/* ++ and -- */
 			if ppmm() {
-				return 1 
+				return True 
 			}
 			/* Check using '(' after number */
 			if isoperator2(OP_FOPEN) {
 				error(ERROR_USINGBRACTAFTERNUM)
-				return 0 
+				return False 
 			}
-			return 1 
+			return True 
 		}
 		/* Factor --> Literal */
 		if isliteral() {
@@ -402,9 +402,9 @@ class ParserExpr
 			/* Array Index & Object Dot */
 			x = mixer()
 			if x = 0 {
-				return 0 
+				return False 
 			}
-			return 1 
+			return True 
 		}
 		/* Factor --> Literal --> ':' Identifier */
 		if isoperator2(OP_RANGE) {
@@ -422,11 +422,11 @@ class ParserExpr
 					/* Generate Code */
 					if expr() {
 						/* Generate Code */
-						return 1 
+						return True 
 					}
-					return 0 
+					return False 
 				}
-				return 1 
+				return True 
 			}
 		}
 		/* Factor --> Negative (-) Factor */
@@ -446,7 +446,7 @@ class ParserExpr
 			nexttoken()
 			/* Generate Code */
 			if expr() {
-				return 1 
+				return True 
 			}
 		}
 		/* Factor --> ( Expr ) */
@@ -458,12 +458,12 @@ class ParserExpr
 				nAssignmentFlag = x 
 				if ( isoperator2(OP_FCLOSE) ) {
 					nexttoken()
-					return 1 
+					return True 
 				else
-					return 0 
+					return False 
 				}
 			}
-			return 0 
+			return False 
 		}
 		/* Factor --> List */
 		if isoperator2(OP_LOPEN) {
@@ -512,7 +512,7 @@ class ParserExpr
 				**  Generate Code 
 				**  PUSHV enable using braces to access the object 
 				*/
-				return 1 
+				return True 
 			}
 		}
 		/* Factor --> Anonymous Function */
@@ -525,13 +525,12 @@ class ParserExpr
 			*/
 			/* Get Function Parameters */
 			if isidentifier() or isoperator2(OP_FOPEN) {
-				if ! paralist() { return 0 }
+				if ! paralist() { return False }
 			}
 			/* Get Function Code */
 			if isoperator2(OP_BRACEOPEN) {
 				GenerateStatementIsExpression()
 				nexttoken()
-				//RemoveCurrentTokenFromBuffer()
 				clearTextBuffer()
 				oTarget.GenerateUsingBraces(self)
 				oTarget.GenerateBlockStart(self)
@@ -555,9 +554,8 @@ class ParserExpr
 				if isoperator2(OP_BRACECLOSE) {
 					nexttoken()
 					clearTextBuffer()
-					//RemoveCurrentTokenFromBuffer()
 					/* Generate Code */
-					return 1 
+					return True 
 				}
 			}
 		}
@@ -571,18 +569,18 @@ class ParserExpr
 				nexttoken()
 				/* Object Attributes */
 				if objattributes() = 0 {
-					return 0 
+					return False 
 				}
 				if isoperator2(OP_FOPEN) {
 					return mixer() 
 				else
-					return 0 
+					return False 
 				}
 			else
-				return 0 
+				return False 
 			}
 		}
-		return 0 
+		return False 
 
 	func mixer 
 		/*
@@ -590,7 +588,7 @@ class ParserExpr
 		**  Object Attributes 
 		*/
 		if objattributes() = 0 {
-			return 0 
+			return False 
 		}
 		/* [Index]  to access array element, Index = Expression */
 		if isoperator2(OP_LOPEN) {
@@ -602,14 +600,14 @@ class ParserExpr
 					nexttoken()
 					x = mixer()
 					if x = 0 {
-						return 0 
+						return False 
 					}
 				else
 					error(ERROR_MISSBRACKETS)
-					return 0 
+					return False 
 				}
 			else 
-				return 0 
+				return False 
 			}
 		}
 		/* |  [ ( [ Expr { , Expr } ] ) ]  ] */
@@ -641,17 +639,17 @@ class ParserExpr
 						return x 
 					else 
 						error(ERROR_MISSPARENTHESES)
-						return 0 
+						return False 
 					}
 				else
-					return 0 
+					return False 
 				}
 				IGNORENEWLINE() 
 			}
 		}
 		/* Function Call Only */
 		if nFuncCallOnly = 1 {
-			return 1 
+			return True 
 		}
 		/* '{' {Statement} '}' */
 		if isoperator2(OP_BRACEOPEN) and nControlStructureExpr = 0 {
@@ -677,7 +675,6 @@ class ParserExpr
 				**  Generate Code 
 				**  if ismethod(self,"braceend") braceend() ok 
 				*/
-				//RemoveCurrentTokenFromBuffer()
 				nexttoken()
 				clearTextBuffer()
 				x = mixer()
@@ -686,21 +683,21 @@ class ParserExpr
 				error(ERROR_BRACESNOTCLOSED)
 			}
 		}
-		/* This function return 1 because the mixer is optional and comes after identifier */
-		return 1 
+		/* This function return True because the mixer is optional and comes after identifier */
+		return True 
 	
 	func ppmm 
 		/* ++ & -- */
 		if isoperator("++") {
 			nexttoken()
 			/* Generate Code */
-			return 1 
+			return True 
 		elseif isoperator("--")
 			nexttoken()
 			/* Generate Code */
-			return 1 
+			return True 
 		}
-		return 0 
+		return False 
 
 	func objattributes
 		/* { . Identifier } */
@@ -712,13 +709,13 @@ class ParserExpr
 				/* Prevent Accessing the self reference from outside the object */
 				if cTokenValue = "self" {
 					error(ERROR_ACCESSSELFREF)
-					return 0 
+					return False 
 				}
 				/* Generate Code */
 				nexttoken()
 			else
-				return 0 
+				return False 
 			}
 		}
-		return 1 
+		return True 
 
