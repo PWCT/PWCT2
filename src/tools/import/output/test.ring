@@ -15,12 +15,12 @@ see "Welcome to the Ring programming language"
 see "Ring is a great language!"
 ? "The current Ring version is Ring 1.15"
 ? "Hello, World!"+(3*2)+cName
-if 3=1+2 { 
+if 3 = 1+2 { 
 	? "True"
 	? "Nice work!"
 	? "Now the import feature works fine"
 } 
-if 1+2=3 { 
+if 1+2 = 3 { 
 	? "True Answer"
 } 
 x = 10
@@ -33,28 +33,28 @@ while x>0 {
 	? "x = "+x
 	x--
 } 
-startScene = new StartScene
+startScene =  new StartScene
 while !WindowShouldClose() { 
 	? :good
 	exit 1
 } 
-if x=1 { 
+if x = 1 { 
 	? "one"
-	elseif x=2
+	elseif x = 2
 		? "two"
-	elseif x=3
+	elseif x = 3
 		? "three"
-	elseif x=4
+	elseif x = 4
 		? "four"
 	else
 		? "other number"
 } 
-for x=1 to 10 step 1 { 
+for x = 1 to 10 step 1 { 
 	? x
-	if x=3 { 
+	if x = 3 { 
 		loop 1
 	} 
-	if x=7 { 
+	if x = 7 { 
 		exit 1
 	} 
 } 
@@ -128,10 +128,10 @@ func sum a,b,c {
 	return a+b+c
 } 
 func testif  { 
-	if x=1 { 
-		if y=2 { 
-			if z=3 { 
-				if r=nice() { 
+	if x = 1 { 
+		if y = 2 { 
+			if z = 3 { 
+				if r = nice() { 
 					? "r test"
 				} 
 				? "z test"

@@ -341,10 +341,15 @@ class ParserExpr
 					nNewObject = 0 
 					x = expr()
 					cRS = AddParameterFromSecondBuffer(:RightSide)
+					# Avoid treating (New Object) commands as assignments 
+						if nNewObject { nNewObject=False return True }
 					if cRS != "" {
 						# Remove '=' operator  in the start 
 							if left(cRS,1) = "=" { 
 								cRS = trim(substr(cRS,2))
+								aInstructionParameters[:RightSide] = cRS
+							elseif left(cRS,3) = " = " 
+								cRS = trim(substr(cRS,4))
 								aInstructionParameters[:RightSide] = cRS
 							}
 						if trim(aInstructionParameters[:LeftSide]) != NULL {
@@ -486,14 +491,6 @@ class ParserExpr
 					nNewObject = 1 
 					return x 
 				elseif isoperator2(OP_FOPEN)
-
-
-					/*
-					**  Calling the init method using { } 
-					**  Generate Code (Start Brace) 
-					*/
-					/* Generate Code ( Call Function ) */
-					/* Generate Location for nPC of Getter */
 					/* Function Parameters */
 					nFuncCallOnly = 1 
 					mixer()
@@ -508,10 +505,6 @@ class ParserExpr
 					return x 
 				}
 				nNewObject = 1 
-				/*
-				**  Generate Code 
-				**  PUSHV enable using braces to access the object 
-				*/
 				return True 
 			}
 		}

@@ -73,6 +73,8 @@ class ParserTokens
 			if nTokenType = C_OPERATOR {
 				if cTokenValue = "?" {
 					return
+				elseif cTokenValue = "=" 
+					return " = "
 				}
 			}			
 	 		return cTokenValue2
