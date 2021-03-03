@@ -203,14 +203,20 @@ class Generator
 				cType = "= func"
 			}
 		else 
-			if substr(cExpr,"new ") {
-				cType = "new"
-				if substr(cExpr,"(") and substr(cExpr,")") {
-					cType = "new init"
+			nPos = substr(cExpr,"new ")			
+			if nPos {
+				if trim(left(cExpr,nPos-1)) = NULL {
+					cType = "new"
+					if substr(cExpr,"(") and substr(cExpr,")") {
+						cType = "new init"
+					}
 				}
 			}
-			if substr(cExpr,"func ") {
-				cType = "func"
+			nPos = substr(cExpr,"func ")
+			if nPos {
+				if trim(left(cExpr,nPos-1)) = NULL {
+					cType = "func"
+				}
 			}
 		}
 		return cType 
