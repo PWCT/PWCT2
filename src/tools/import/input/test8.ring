@@ -1,3 +1,6 @@
+Magnify = 2
+Side    = winHeight  if  WinWidth < winHeight  Side = winWidth  ok
+x = 10 if x = 3 ? :three ok
 x = 1
 y=1
 y = 2
@@ -51,3 +54,10 @@ x = new person("test")
 x= new person("test")
 
 x = new person 
+
+x = 10 if x = 3 ? :three ok
+
+daVinci   = new qpainter()
+{
+Side    = winHeight  if  WinWidth < winHeight  Side = winWidth  ok
+}

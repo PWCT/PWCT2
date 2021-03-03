@@ -485,6 +485,10 @@ class ParserStmt
 			clearTextBuffer()
 			return lOutput
 		}
+		/* Statement --> epslion */
+		if epslion() {
+			return True 
+		}
 		/* Statement --> Expr */
 		if expr() {
 			if isOperator(")") {
@@ -495,15 +499,11 @@ class ParserStmt
 			return True 
 
 		}
-		/* Statement --> epslion */
-		if epslion() {
-			return True 
-		}
 		return False
 
 	func FixTheCurrentToken
+		if nBraceFlag { return }
 		if nActiveToken != nLastPrevToken {
-			nLastPrevToken = nActiveToken 
 			if 	isKeyword(K_FUNC) or 
 				isKeyword(K_WHILE) or
 				isKeyword(K_DO) or
@@ -512,6 +512,7 @@ class ParserStmt
 				isKeyword(K_SWITCH) or
 				isKeyword(K_GIVE) or
 				isKeyword(K_NEW) {
+				nLastPrevToken = nActiveToken 
 				PrevToken()
 			}
 		}
