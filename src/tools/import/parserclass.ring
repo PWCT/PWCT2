@@ -61,6 +61,7 @@ class ParserClass
 			ClearTextBuffer()
 			if isidentifier() {
 				nexttoken()
+				ClearTextBuffer()
 				if isidentifier() or isoperator2(OP_FOPEN) {
 					x = paralist()
 				else
@@ -68,13 +69,14 @@ class ParserClass
 				}
 				oTarget.GenerateBlockEnd(self)
 				RemoveOpenedBraceFromBuffer()
-				AddParameter(:FunctionParameters)		
+				AddParameterFromSecondBuffer(:FunctionParameters)		
 				oTarget.GenerateFuncPara(self)
 				oTarget.GenerateBlockStart(self)
 				if x {
 					/* Support using { } around the function code and using 'end' after the content */
 					x = bracesandend(0,K_ENDFUNC) 
 				}
+				ClearTextBuffer()
 				return x 
 			else
 				error(ERROR_FUNCNAME)
