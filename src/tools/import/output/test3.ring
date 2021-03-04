@@ -1,5 +1,5 @@
 func main  { 
-	for x=1 to 2 step 1 { 
+	for x = 1 to 2 step 1 { 
 		if 1 { 
 			try { 
 				see 1/0

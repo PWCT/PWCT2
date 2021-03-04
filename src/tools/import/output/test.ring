@@ -7,7 +7,8 @@ catch
 import System.GUI
 cName = "ring"
 one()
-two()three()
+two()
+three()
 test(1,2)
 sum(1,2,3)
 see "Hello, World!"+(3*2)+cName
@@ -33,7 +34,7 @@ while x>0 {
 	? "x = "+x
 	x--
 } 
-startScene =  new StartScene
+startScene = new StartScene
 while !WindowShouldClose() { 
 	? :good
 	exit 1
@@ -143,7 +144,6 @@ func testif  {
 } 
 func testgive  { 
 	? "Enter Name: "
-	"Enter Name: "
 	give name
 	? "Hello "+name
 } 
