@@ -234,6 +234,9 @@ class Generator
 	func ExpressionType cExpr 
 		cExpr = lower(cExpr)
 		cType = "word"
+		if substr(cExpr,"= [") or substr(cExpr,",:") {
+			return cType 
+		}
 		if substr(cExpr,"=") {
 			if substr(cExpr,"new ") {
 				cType = "= new"
