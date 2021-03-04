@@ -351,7 +351,7 @@ class ParserExpr
 								aInstructionParameters[:RightSide] = cRS
 							}
 						if trim(aInstructionParameters[:LeftSide]) != NULL {
-								if left(trim(aInstructionParameters[:RightSide]),3) = "new" {
+								if left(trim(aInstructionParameters[:RightSide]),4) = "new " {
 									aInstructionParameters[:Expression] = " = " + cRS
 									oTarget.GenerateExpressionCommand(self)
 								else 
