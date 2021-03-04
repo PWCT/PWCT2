@@ -502,6 +502,7 @@ class ParserStmt
 		return False
 
 	func FixTheCurrentToken
+		return 
 		if nBraceFlag { return }
 		if nActiveToken != nLastPrevToken {
 			if 	isKeyword(K_FUNC) or 

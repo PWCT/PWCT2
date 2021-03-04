@@ -342,7 +342,7 @@ class ParserExpr
 					x = expr()
 					cRS = AddParameterFromSecondBuffer(:RightSide)
 					# Avoid treating (New Object) commands as assignments 
-						if nNewObject { nNewObject=False return True }
+						//if nNewObject { nNewObject=False return True }
 					if cRS != "" {
 						# Remove '=' operator  in the start 
 							if left(cRS,1) = "=" { 

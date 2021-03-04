@@ -7,16 +7,33 @@
 
 class ParserTokens
 
-	func start
-		do
-			ignoreNewLine()  
-			mainClass()	
-		again nextToken()
-
 	func setTokens aList
 		aTokens 	= aList 
 		nActiveToken 	= 0
 		nTokensCount	= len(aTokens)
+
+	func start
+		nextToken()
+		do
+			//ignoreNewLine()  
+			nResult = mainClass()	
+			if nResult = 0 {
+				error("Parsing Error!")
+			}
+		again (nActiveToken != nTokensCount)
+
+	func ignoreNewLine
+		DisableBufferFlag()
+		while epslion() {}
+		EnableBufferFlag()
+
+	func epslion
+		if isendline() {
+			if nexttoken() or nTokensCount = 1 {
+				return True 
+			}
+		}
+		return False
 
 	func loadToken
 		aActiveToken	= aTokens[nActiveToken]
@@ -165,19 +182,6 @@ class ParserTokens
 			return 1 
 		}
 		return 0 
-
-	func ignoreNewLine
-		DisableBufferFlag()
-		while epslion() {}
-		EnableBufferFlag()
-
-	func epslion
-		if isendline() {
-			if nexttoken() or nTokensCount = 1 {
-				return True 
-			}
-		}
-		return False
 
 	func passNewLine
 		while passepslion() {}
