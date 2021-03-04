@@ -39,7 +39,6 @@ class ParserStmt
 			AddParameterFromSecondBuffer(:Expression)
 			oTarget.GenerateSeeExpr(self)
 			clearTextBuffer()
-			FixTheCurrentToken()
 			return x 
 		}
 		/* Statement --> ? Expr */
@@ -53,7 +52,6 @@ class ParserStmt
 			AddParameterFromSecondBuffer(:Expression)
 			oTarget.GenerateQuestionMarkExpr(self)
 			clearTextBuffer()
-			FixTheCurrentToken()
 			return x 
 		}
 		/* Statement --> Give|Get Identifier */
@@ -495,29 +493,12 @@ class ParserStmt
 				NextToken()
 			} 
 			GenerateStatementIsExpression()
-			FixTheCurrentToken()
 			return True 
 
 		}
 		return False
 
-	func FixTheCurrentToken
-		return 
-		if nBraceFlag { return }
-		if nActiveToken != nLastPrevToken {
-			if 	isKeyword(K_FUNC) or 
-				isKeyword(K_WHILE) or
-				isKeyword(K_DO) or
-				isKeyword(K_IF) or
-				isKeyword(K_FOR) or
-				isKeyword(K_SWITCH) or
-				isKeyword(K_GIVE) or
-				isKeyword(K_NEW) {
-				nLastPrevToken = nActiveToken 
-				PrevToken()
-			}
-		}
-			
+		
 	func GenerateStatementIsExpression
 		AddParameterFromSecondBuffer(:Expression)
 		oTarget.GenerateExpressionCommand(self)

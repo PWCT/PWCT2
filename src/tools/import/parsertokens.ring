@@ -15,9 +15,7 @@ class ParserTokens
 	func start
 		nextToken()
 		do
-			//ignoreNewLine()  
-			nResult = mainClass()	
-			if nResult = 0 {
+			if ! mainClass() {
 				error("Parsing Error!")
 			}
 		again (nActiveToken != nTokensCount)
@@ -125,15 +123,6 @@ class ParserTokens
 			return True
 		}
 		return False
-
-	func prevToken
-		if nActiveToken > 0 {
-			nActiveToken--
-			aActiveToken	= aTokens[nActiveToken]
-			nTokenType 	= aActiveToken[C_TOKENTYPE]
-			cTokenValue 	= aActiveToken[C_TOKENVALUE]
-			nTokenIndex 	= aActiveToken[C_TOKENINDEX]
-		}
 
 	func removeCurrentTokenFromBuffer
 		if right(cBuffer,len(cTokenValue)) = cTokenValue {

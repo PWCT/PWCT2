@@ -59,6 +59,3 @@ class Parser
 
 	# Object provide methods determines what to generate (Instructions)	
 		oTarget = new Target 
-
-	# Previous Token Index
-		nLastPrevToken = 0
