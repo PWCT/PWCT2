@@ -16,7 +16,7 @@ load "generator.ring"
 load "guilib.ring"
 
 if isMainSourceFile() {
-	ImportFile("input/test8.ring","output/test8.pwct",C_PRINTOUTPUT)
+	ImportFile("input/test.ring","output/test.pwct",C_PRINTOUTPUT)
 }
 
 func ImportFile cInputFile,cOutputFile,lPrint
