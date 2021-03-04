@@ -55,6 +55,12 @@ x= new person("test")
 
 x = new person 
 
+new person 
+
+new point 
+
+new test 
+
 x = 10 if x = 3 ? :three ok
 
 daVinci   = new qpainter()
