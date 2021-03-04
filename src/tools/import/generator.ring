@@ -94,7 +94,7 @@ class Generator
 				case :NestedFunc
 					AddNestedFunc(aCommand[:Variable],aCommand[:Parameters])
 				case :NewObj 
-					AddNewObj(aCommand[:Variable],aCommand[:ClassName],aCommand[:cInitParameters],aCommand[:lInit],True)
+					AddNewObj(aCommand[:Variable],aCommand[:ClassName],aCommand[:cInitParameters],aCommand[:lInit],aCommand[:lBraces])
 				case :CallFunction 
 					AddCallFunction(aCommand[:function],aCommand[:Parameters])
 				case :CallMethod
@@ -146,6 +146,7 @@ class Generator
 								aParseTree[t-1][:Variable] = trim(cVariable)
 								aParseTree[t-1][:ClassName] = trim(cClassName)
 								aParseTree[t-1][:lInit] = False
+								aParseTree[t-1][:lBraces] = True
 								lDelete = True
 							case "= new init"
 								aParseTree[t-1][:Command] = :newobj	
@@ -162,6 +163,7 @@ class Generator
 								aParseTree[t-1][:ClassName] = trim(cClassName)
 								aParseTree[t-1][:lInit] = True
 								aParseTree[t-1][:cInitParameters] = cInit
+								aParseTree[t-1][:lBraces] = True
 								lDelete = True
 							case "new"
 								aParseTree[t-1][:Command] = :newobj	
@@ -170,6 +172,7 @@ class Generator
 								cClassName = substr(cExpr,nNewPos+3)
 								aParseTree[t-1][:ClassName] = trim(cClassName)
 								aParseTree[t-1][:lInit] = False
+								aParseTree[t-1][:lBraces] = True
 								lDelete = True
 						}
 						if lDelete {
@@ -184,6 +187,45 @@ class Generator
 				if aParseTree[t][:Command] = :Expression {
 					if ExpressionIsCallFunction(t) or ExpressionIsCallMethod(t) {
 						loop 
+					}
+					cType = ExpressionType(aParseTree[t][:Expression])
+					switch cType {
+						case "= new"
+							aParseTree[t][:Command] = :newobj	
+							cExpr = aParseTree[t][:Expression]
+							nEqualPos = substr(cExpr,"=")
+							cExpr2 = substr(cExpr,nEqualPos+1)
+							nNewPos = substr(lower(cExpr2),"new")
+							cVariable = left(cExpr,nEqualPos-1)
+							cClassName = substr(cExpr2,nNewPos+3)
+							aParseTree[t][:Variable] = trim(cVariable)
+							aParseTree[t][:ClassName] = trim(cClassName)
+							aParseTree[t][:lInit] = False
+							aParseTree[t][:lBraces] = False
+						case "= new init"
+							aParseTree[t][:Command] = :newobj	
+							cExpr = aParseTree[t][:Expression]
+							nEqualPos = substr(cExpr,"=")
+							cExpr2 = substr(cExpr,nEqualPos+1)
+							nNewPos = substr(lower(cExpr2),"new")
+							cVariable = left(cExpr,nEqualPos-1)
+							cClassName = substr(cExpr2,nNewPos+3)
+							cInit = SubStr(cClassName,substr(cClassName,"(")+1)
+							cInit = left(cInit,len(cInit)-1)
+							cClassName = left(cClassName,substr(cClassName,"(")-1)
+							aParseTree[t][:Variable] = trim(cVariable)
+							aParseTree[t][:ClassName] = trim(cClassName)
+							aParseTree[t][:lInit] = True
+							aParseTree[t][:cInitParameters] = cInit
+							aParseTree[t][:lBraces] = False
+						case "new"
+							aParseTree[t][:Command] = :newobj	
+							cExpr = aParseTree[t][:Expression]
+							nNewPos = substr(lower(cExpr),"new")
+							cClassName = substr(cExpr,nNewPos+3)
+							aParseTree[t][:ClassName] = trim(cClassName)
+							aParseTree[t][:lInit] = False
+							aParseTree[t][:lBraces] = False
 					}
 				}
 			}
