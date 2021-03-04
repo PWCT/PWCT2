@@ -7,8 +7,8 @@
 
 ===========================================================================================================================
 Status
-	* Bugs Count : 48
-	* Fixed Bugs : 48
+	* Bugs Count : 49
+	* Fixed Bugs : 49
 	* UnFixed Bugs : 0
 ===========================================================================================================================
 (1)  Fixed : We created over 6 thouands steps, then using the search window
@@ -1598,3 +1598,47 @@ This was a logical memory leak!
 
 ===========================================================================================================================
 
+(49) Fixed: Strange output in Ring2PWCT like merging functions 
+		two() three() 
+	And missing identification of some assignments like
+		theHour= 9
+	And problems in samples/AQuickStart/OOP
+
+	All of these issues are solved by canceling all of the WorkArounds
+	In this commit : https://github.com/MahmoudFayed/pwct2/commit/4934e4eb33fb89c60afa797dad5a7d296ee0b833
+
+	Paser - Start() method changed to 
+
+	func start
+		nextToken()
+		do
+			//ignoreNewLine()  
+			nResult = mainClass()	
+			if nResult = 0 {
+				error("Parsing Error!")
+			}
+		again (nActiveToken != nTokensCount)
+
+	To be identical to the Ring Parser - C Source code 
+	Where we start with nextToken() and don't use ignoreNewLine()
+	And the again condition is (nActiveToken != nTokensCount)
+	Instead of nextToken()
+
+	Also we disable the FixTheCurrentToken() function 
+
+	Also we cancel the next check in Assignemnt instruction 
+		# Avoid treating (New Object) commands as assignments 
+ 			//if nNewObject { nNewObject=False return True }
+
+	From this we learn that 
+		1 - If (State is the Evil) which is related to (Data)
+		    Then (Workaround are the second Evil) which is realted to (Code)
+		2 - Don't be happy with a simple fix that looks nice 
+			Like adding one line of code that solve a bug
+			if this is a WorkAround 
+			i.e. not related to the original design/solution
+		    	then this adds to the complexity & may introduce other bugs
+			Add many workarounds together and at some point 
+			you will not understand what's going on!
+
+===========================================================================================================================
