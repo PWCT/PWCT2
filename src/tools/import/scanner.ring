@@ -15,7 +15,7 @@ class Scanner
 
 	func Start 
 		pState = ring_state_new()
-		aTokens = ring_state_filetokens(pState,cFileName,False)
+		aTokens = ring_state_filetokens(pState,cFileName,False,True)
 		ring_state_delete(pState)
 	
 	func GetTokens
@@ -45,6 +45,9 @@ class Scanner
 				 aToken[C_TOKENVALUE]
 			case C_ENDLINE 
 				? "EndLine"	
+			case C_COMMENT 
+				? Width("Comment",C_WIDTH)  + ": " +
+				 aToken[C_TOKENVALUE]
 			}
 		}
 	

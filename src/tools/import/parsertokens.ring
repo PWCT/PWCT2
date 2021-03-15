@@ -156,6 +156,8 @@ class ParserTokens
 
 	func isEndLine return nTokenType = C_ENDLINE
 
+	func isComment return nTokenType = C_COMMENT
+
 	func isAnyKeyword return nTokenType = C_KEYWORD
 
 	func isAnyOperator return nTokenType = C_OPERATOR 
