@@ -285,7 +285,6 @@ class ParserExpr
 	func factor 
 		/* Factor --> Comment */
 		if isComment() {
-			removeCurrentTokenFromBuffer()
 			nexttoken()
 			return True
 		}
