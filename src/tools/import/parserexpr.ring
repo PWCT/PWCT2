@@ -283,11 +283,6 @@ class ParserExpr
 		return False 
 	
 	func factor 
-		/* Factor --> Comment */
-		if isComment() {
-			nexttoken()
-			return True
-		}
 		/* Factor --> Identifier  {mixer} [ '=' Expr ] */
 		if isidentifier() {
 			/* Generate Code */

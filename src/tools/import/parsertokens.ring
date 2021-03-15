@@ -31,6 +31,12 @@ class ParserTokens
 				return True 
 			}
 		}
+		if isComment() {
+			if nexttoken() {
+				return True
+			}
+		}
+
 		return False
 
 	func loadToken
