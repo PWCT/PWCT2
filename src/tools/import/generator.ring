@@ -102,7 +102,8 @@ class Generator
 				case :Comment 
 					aComments = str2list(aCommand[:Comment])
 					for cComment in aComments {
-						AddExpressionCommand(cComment)
+						//AddExpressionCommand(cComment)
+						AddStep(cComment)
 					}
 			}
 		}

@@ -66,6 +66,22 @@ class VSFGenerator
 		)
 		return nStepID
 
+	func AddStep cStepName 
+		cPlainStepName = cStepName
+ 		nStepID = oModel.AddStep(nParentID,[
+				:name = cStepName,
+				:active = True , 
+				:code = "" , 
+			 	:interactionid = oModel.oInteractionModel.AddUserInteraction() ,
+				:visible = True , 
+				:stepnumber = 1 ,
+				:steptype = C_STEPTYPE_COMMENT,
+				:plainname = cPlainStepName
+			]
+		)
+		return nStepID
+
+
 	func List2InteractionVariables aList 
 		cVariables = ""
 		for aItem in aList {
