@@ -251,3 +251,11 @@ class Target
 					:Command = :UsingBraces
 				], C_CLEARBUFFER )
 		}
+
+	func GenerateComment oParser 
+		oParser {
+			Generate( [
+					:Command = :Comment,
+					:Comment = oParser.cTokenValue
+				], C_KEEPBUFFER )
+		}

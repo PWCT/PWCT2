@@ -99,6 +99,11 @@ class Generator
 					AddCallFunction(aCommand[:function],aCommand[:Parameters])
 				case :CallMethod
 					AddCallMethod(aCommand[:Object],aCommand[:Method],aCommand[:Parameters])
+				case :Comment 
+					aComments = str2list(aCommand[:Comment])
+					for cComment in aComments {
+						AddExpressionCommand(cComment)
+					}
 			}
 		}
 

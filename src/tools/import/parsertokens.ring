@@ -32,6 +32,7 @@ class ParserTokens
 			}
 		}
 		if isComment() {
+			oTarget.GenerateComment(self)
 			if nexttoken() {
 				return True
 			}
