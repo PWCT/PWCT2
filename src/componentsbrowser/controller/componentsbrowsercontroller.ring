@@ -28,6 +28,9 @@ class ComponentsBrowserController from WindowsControllerParent
 		lInteractionPagesInGoalDesigner = True
 	}
 
+	# Search Result 
+		lSearchResult = False 
+
 	/*
 		Purpose : Key Press Action
 		Parameters : None
@@ -119,6 +122,7 @@ class ComponentsBrowserController from WindowsControllerParent
 			}
 			return
 		}
+		lSearchResult = False 
 		nMax = len(aTree) 
 		for x=2 to nMax {
 			item = aTree[x]
@@ -130,7 +134,8 @@ class ComponentsBrowserController from WindowsControllerParent
 				nID =  item[C_TREEMODEL_NODEID]
 				oItem = oView.oComponentsTree.GetObjByID(nID)
 				oView.oComponentsTree.SetCurrentItem(oItem,0)
-				oView.oComponentsTree.ScrollToItem(oItem,0)				
+				oView.oComponentsTree.ScrollToItem(oItem,0)	
+				lSearchResult = True
 				exit
 			}
 		}
@@ -142,6 +147,15 @@ class ComponentsBrowserController from WindowsControllerParent
 	*/
 
 	func SelectAction
+		if lSearchResult {
+			lSearchResult = False 
+			OpenSelected()
+			return 
+		}
+		cFind = oView.oTextSearch.Text()	
+		msginfo("Code",cFind)
+
+	func OpenSelected
 		oItem  = oView.oComponentsTree.currentItem()
 		nID = oView.oComponentsTree.GetIDByObj(oItem)
 		if nID = 1 {	# Avoid root node
