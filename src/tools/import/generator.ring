@@ -5,8 +5,6 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-load "../vsfgenerator/generator.ring"
-
 class Generator
 
 	aParseTree = []

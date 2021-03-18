@@ -42,5 +42,9 @@
 # Mobile functions 
 	load "mobile/mobilefunctions.ring"
 
+# Ring2PWCT 
+	load "tools/import/importfiles.ring"
+	load "tools/vsfgenerator/vsfgenerator.ring"
+
 # Run PWCT Environment (See environment/environment.ring)
 	StartEnvironment()	

@@ -5,62 +5,11 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-load "stdlibcore.ring"
-load "globals.ring"
-load "uilib.ring"
-load "scanner.ring"
-load "parser.ring"
-load "target.ring"
-load "generator.ring"
+load "importfiles.ring"
 
-load "guilib.ring"
+load "../vsfgenerator/generator.ring"
 
 if isMainSourceFile() {
 	ImportFile("input/test.ring","output/test.pwct",C_PRINTOUTPUT)
 }
 
-func ImportFile cInputFile,cOutputFile,lPrint
-
-	oScanner = new Scanner {
-		setCode(Read(cInputFile))
-		Start()
-		if lPrint {
-			PrintTokens()
-		}
-	}
-
-	oParser = new Parser {
-		setTokens(oScanner.GetTokens())
-		Start()
-		if lPrint {
-			PrintParseTree()
-		}
-	}
-
-	oGenerator = new Generator {
-		setFileName(cOutputFile)
-		setParseTree(oParser.GetParseTree())
-		Start()
-		WriteVisualSourceFile()
-	}
-
-func RingCode2PWCT cCode 
-	aOutput = []
-	oScanner = new Scanner {
-		setCode(cCode)
-		Start()
-	}
-	oParser = new Parser {
-		setTokens(oScanner.GetTokens())
-		Start()
-	}
-	oGenerator = new Generator {
-		setFileName(cOutputFile)
-		setParseTree(oParser.GetParseTree())
-		Start()
-		aOutput[:StepsTreeTable] = GetStepsTreeTable()
-		aOutput[:InteractionsTable] = GetInteractionsTable()
-		aOutput[:StepsID] = GetStepsID()
-		aOutput[:InteractionsID] = GetInteractionsID()		
-	}
-	return aOutput
