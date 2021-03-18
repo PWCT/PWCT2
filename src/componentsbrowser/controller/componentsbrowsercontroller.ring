@@ -213,6 +213,12 @@ class ComponentsBrowserController from WindowsControllerParent
 			}
 		parent().superSerialAdd(aStepsTree)
 		parent().UpdateTheTimeMachine()
+		# Clear the Search Textbox 
+			oView.oTextSearch.SetText("")
+		parent().oView.oStepsTree.setFocus(0)
+		# To Correctly draw items (Avoid a Qt bug in drawing)
+			parent().oView.FixDrawing()
+
 
 	func OpenSelected
 		oItem  = oView.oComponentsTree.currentItem()
