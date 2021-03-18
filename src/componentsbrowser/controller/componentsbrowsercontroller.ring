@@ -148,13 +148,14 @@ class ComponentsBrowserController from WindowsControllerParent
 
 	func SelectAction
 		# This function still under development
-		if lSearchResult or 1 {	
+		if lSearchResult{	
 			lSearchResult = False 
 			OpenSelected()
 			return 
 		}
-		// cFind = oView.oTextSearch.Text()	
+		cFind = oView.oTextSearch.Text()	
 		// msginfo("Code",cFind)
+		? RingCode2PWCT(cFind)
 
 	func OpenSelected
 		oItem  = oView.oComponentsTree.currentItem()
