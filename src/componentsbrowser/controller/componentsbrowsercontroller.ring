@@ -148,14 +148,29 @@ class ComponentsBrowserController from WindowsControllerParent
 
 	func SelectAction
 		# This function still under development
-		if lSearchResult{	
+		if lSearchResult {	
 			lSearchResult = False 
 			OpenSelected()
 			return 
 		}
 		cFind = oView.oTextSearch.Text()	
 		aLists = RingCode2PWCT(cFind)
-		parent().superSerialAdd(aLists[:StepsTreeTable])
+		aStepsTree = aLists[:StepsTreeTable]
+		aInteractions = aLists[:InteractionsTable]
+		# Update the Steps ID
+		# Update the Interactions ID
+		# Add Steps Tree to Goal Designer 
+			for t=2 to len(aStepsTree) {
+				parent().oModel.oStepsTreeModel.aList + aStepsTree[t]
+				parent().oModel.oStepsTreeModel.nID++
+			}
+		# Add Interactions to Goal Designer 
+			for t=1 to len(aInteractions) {
+				parent().oModel.oInteractionModel.aList + aInteractions[t]
+				parent().oModel.oInteractionModel.nID++
+			}
+		parent().superSerialAdd(aStepsTree)
+		parent().UpdateTheTimeMachine()
 
 	func OpenSelected
 		oItem  = oView.oComponentsTree.currentItem()
