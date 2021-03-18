@@ -41,4 +41,5 @@ func ImportFile cInputFile,cOutputFile,lPrint
 		setFileName(cOutputFile)
 		setParseTree(oParser.GetParseTree())
 		Start()
+		WriteVisualSourceFile()
 	}

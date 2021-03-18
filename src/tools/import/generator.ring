@@ -26,6 +26,8 @@ class Generator
 		for aCommand in aParseTree {
 			ProcessCommand(aCommand)
 		}
+
+	func WriteVisualSourceFile
 		oPWCT.WriteVisualSourceFile()
 
 	func ProcessCommand aCommand
