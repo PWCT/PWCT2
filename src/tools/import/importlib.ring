@@ -41,7 +41,6 @@ func RingCode2PWCT cCode
 		Start()
 	}
 	oGenerator = new Generator {
-		setFileName(cOutputFile)
 		setParseTree(oParser.GetParseTree())
 		Start()
 		aOutput[:StepsTreeTable] = GetStepsTreeTable()
