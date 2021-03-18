@@ -201,7 +201,7 @@ class ComponentsBrowserController from WindowsControllerParent
 			}
 		# Add Interactions to Goal Designer 
 			nMax = len(aInteractions)
-			for t=1 to nMax {
+			for t=2 to nMax {
 				parent().oModel.oInteractionModel.aList + aInteractions[t]
 			}
 		parent().superSerialAdd(aStepsTree)
