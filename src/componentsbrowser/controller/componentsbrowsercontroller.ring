@@ -154,8 +154,8 @@ class ComponentsBrowserController from WindowsControllerParent
 			return 
 		}
 		cFind = oView.oTextSearch.Text()	
-		// msginfo("Code",cFind)
-		? RingCode2PWCT(cFind)
+		aLists = RingCode2PWCT(cFind)
+		parent().superSerialAdd(aLists[:StepsTreeTable])
 
 	func OpenSelected
 		oItem  = oView.oComponentsTree.currentItem()
