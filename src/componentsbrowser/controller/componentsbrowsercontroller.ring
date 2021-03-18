@@ -153,24 +153,33 @@ class ComponentsBrowserController from WindowsControllerParent
 			OpenSelected()
 			return 
 		}
-		cFind = oView.oTextSearch.Text()	
-		aLists = RingCode2PWCT(cFind)
-		aStepsTree = aLists[:StepsTreeTable]
-		aInteractions = aLists[:InteractionsTable]
+		# Get the Search Value 
+			cFind = oView.oTextSearch.Text()	
+		# Convert Ring Code to PWCT (Steps & Interactions)
+			aLists = RingCode2PWCT(cFind)
+		# Get The Output of the Conversion
+			aStepsTree = aLists[:StepsTreeTable]
+			aInteractions = aLists[:InteractionsTable]
 		# Update the Interactions ID
 			# Map between the InteractionID and the new NodeID 
 				aInteractionIDsMap = []
 			# Update Each Node ID
-			for x=1 to len(aInteractions) { 	
-				aInteractionIDsMap + [aInteractions[x][C_INTERACTIONRECORD_ID],parent().oModel.oInteractionModel.nID]		
-				aInteractions[x][C_INTERACTIONRECORD_ID] = parent().oModel.oInteractionModel.nID
-				parent().oModel.oInteractionModel.nID++
-			}
+				nMax = len(aInteractions)
+				for x=1 to nMax { 	
+					aInteractionIDsMap + [  aInteractions[x][C_INTERACTIONRECORD_ID],
+								parent().oModel.oInteractionModel.nID ]		
+					aInteractions[x][C_INTERACTIONRECORD_ID] = parent().oModel.oInteractionModel.nID
+					parent().oModel.oInteractionModel.nID++
+				}
+		# Get the Parent Step 
+			oItem  = parent().oView.oStepsTree.currentItem()
+			nParentID = parent().oView.oStepsTree.GetIDByObj(oItem)
 		# Update the Steps ID
 			# Map between the NodeID and the new NodeID 
-				aIDsMap = []
+				aIDsMap = [[1,nParentID]]
 			# Update Each Node ID
-			for x=2 to len(aStepsTree) { 	
+			nMax = len(aStepsTree)
+			for x=1 to nMax { 	
 				aIDsMap + [aStepsTree[x][C_TREEMODEL_NODEID],parent().oModel.oStepsTreeModel.nID]		
 				aStepsTree[x][C_TREEMODEL_NODEID] = parent().oModel.oStepsTreeModel.nID
 				parent().oModel.oStepsTreeModel.nID++
@@ -186,14 +195,14 @@ class ComponentsBrowserController from WindowsControllerParent
 					}			
 			}
 		# Add Steps Tree to Goal Designer 
-			for t=2 to len(aStepsTree) {
+			nMax = len(aStepsTree)
+			for t=2 to nMax {
 				parent().oModel.oStepsTreeModel.aList + aStepsTree[t]
-				parent().oModel.oStepsTreeModel.nID++
 			}
 		# Add Interactions to Goal Designer 
-			for t=1 to len(aInteractions) {
+			nMax = len(aInteractions)
+			for t=1 to nMax {
 				parent().oModel.oInteractionModel.aList + aInteractions[t]
-				parent().oModel.oInteractionModel.nID++
 			}
 		parent().superSerialAdd(aStepsTree)
 		parent().UpdateTheTimeMachine()
