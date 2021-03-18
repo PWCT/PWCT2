@@ -147,7 +147,6 @@ class ComponentsBrowserController from WindowsControllerParent
 	*/
 
 	func SelectAction
-		# This function still under development
 		if lSearchResult {	
 			lSearchResult = False 
 			OpenSelected()
@@ -195,10 +194,18 @@ class ComponentsBrowserController from WindowsControllerParent
 					}			
 			}
 		# Add Steps Tree to Goal Designer 
-			nMax = len(aStepsTree)
-			for t=2 to nMax {
-				parent().oModel.oStepsTreeModel.aList + aStepsTree[t]
+		# We use insert to Keep the Order of the Steps 
+			aChildren = parent().oModel.oStepsTreeModel.Children(nParentID)
+			if len(aChildren) > 0 {
+				nPos = aChildren[len(aChildren)]
+			else
+				nPos = find(parent().oModel.oStepsTreeModel.aList,nParentID,C_TREEMODEL_NODEID)
 			}
+			for x = len(aStepsTree) to 2 step -1 {
+				node = aStepsTree[x] 
+				Insert(parent().oModel.oStepsTreeModel.aList,nPos,node)
+			}
+
 		# Add Interactions to Goal Designer 
 			nMax = len(aInteractions)
 			for t=2 to nMax {
