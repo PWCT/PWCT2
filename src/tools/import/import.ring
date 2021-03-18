@@ -43,3 +43,24 @@ func ImportFile cInputFile,cOutputFile,lPrint
 		Start()
 		WriteVisualSourceFile()
 	}
+
+func RingCode2PWCT cCode 
+	aOutput = []
+	oScanner = new Scanner {
+		setCode(cCode)
+		Start()
+	}
+	oParser = new Parser {
+		setTokens(oScanner.GetTokens())
+		Start()
+	}
+	oGenerator = new Generator {
+		setFileName(cOutputFile)
+		setParseTree(oParser.GetParseTree())
+		Start()
+		aOutput[:StepsTreeTable] = GetStepsTreeTable()
+		aOutput[:InteractionsTable] = GetInteractionsTable()
+		aOutput[:StepsID] = GetStepsID()
+		aOutput[:InteractionsID] = GetInteractionsID()		
+	}
+	return aOutput
