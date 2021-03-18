@@ -50,7 +50,19 @@ class VSFGenerator
 			oVisualSourceFile.CreateTables()
 			oVisualSourceFile.SaveTables()
 			oVisualSourceFile.Close()
-	
+
+	func GetStepsTreeTable
+		return oModel.oStepsTreeModel.GetData()
+
+	func GetInteractionsTable 
+		return oModel.oInteractionModel.GetData()
+
+	func GetStepsID
+		return oModel.oStepsTreeModel.GetID()
+
+	func GetInteractionsID
+		return oModel.oInteractionModel.GetID()
+		
 	func AddRootStep cStepName 
 		cPlainStepName = cStepName
  		nStepID = oModel.AddStep(1,[
