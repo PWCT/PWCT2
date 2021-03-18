@@ -7,15 +7,15 @@
 
 class Scanner 
 
-	cFileName
+	cCode
 	aTokens = []
 
-	func setFileName cFile 
-		cFileName = cFile
+	func setCode cStr
+		cCode = cStr
 
 	func Start 
 		pState = ring_state_new()
-		aTokens = ring_state_filetokens(pState,cFileName,False,True)
+		aTokens = ring_state_stringtokens(pState,cCode,False,True)
 		ring_state_delete(pState)
 	
 	func GetTokens

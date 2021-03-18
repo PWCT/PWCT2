@@ -22,7 +22,7 @@ if isMainSourceFile() {
 func ImportFile cInputFile,cOutputFile,lPrint
 
 	oScanner = new Scanner {
-		setFileName(cInputFile)
+		setCode(Read(cInputFile))
 		Start()
 		if lPrint {
 			PrintTokens()
