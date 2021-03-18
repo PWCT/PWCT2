@@ -30,6 +30,18 @@ class Generator
 	func WriteVisualSourceFile
 		oPWCT.WriteVisualSourceFile()
 
+	func GetStepsTreeTable
+		return oPWCT.GetStepsTreeTable()
+
+	func GetInteractionsTable 
+		return oPWCT.GetInteractionsTable()
+
+	func GetStepsID
+		return oPWCT.GetStepsID()
+
+	func GetInteractionsID
+		return oPWCT.GetInteractionsID()
+
 	func ProcessCommand aCommand
 		oPWCT {
 			switch aCommand[:Command] {
