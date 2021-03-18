@@ -174,10 +174,16 @@ class ComponentsBrowserController from WindowsControllerParent
 				aIDsMap + [aStepsTree[x][C_TREEMODEL_NODEID],parent().oModel.oStepsTreeModel.nID]		
 				aStepsTree[x][C_TREEMODEL_NODEID] = parent().oModel.oStepsTreeModel.nID
 				parent().oModel.oStepsTreeModel.nID++
-				nPos = find(aIDsMap,aStepsTree[x][C_TREEMODEL_PARENTID],1)
-				if nPos > 0 {
-					aStepsTree[x][C_TREEMODEL_PARENTID] = aIDsMap[nPos][2]
-				}
+				# Update the Parent ID
+					nPos = find(aIDsMap,aStepsTree[x][C_TREEMODEL_PARENTID],1)
+					if nPos > 0 {
+						aStepsTree[x][C_TREEMODEL_PARENTID] = aIDsMap[nPos][2]
+					}
+				# Update the Interaction ID 
+					nPos = find(aInteractionIDsMap,aStepsTree[x][C_TREEMODEL_CONTENT][:InteractionID],1)
+					if nPos > 0 {
+						aStepsTree[x][C_TREEMODEL_CONTENT][:InteractionID] = aInteractionIDsMap[nPos][2]
+					}			
 			}
 		# Add Steps Tree to Goal Designer 
 			for t=2 to len(aStepsTree) {
