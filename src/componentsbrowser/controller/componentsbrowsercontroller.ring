@@ -157,11 +157,20 @@ class ComponentsBrowserController from WindowsControllerParent
 		aLists = RingCode2PWCT(cFind)
 		aStepsTree = aLists[:StepsTreeTable]
 		aInteractions = aLists[:InteractionsTable]
+		# Update the Interactions ID
+			# Map between the InteractionID and the new NodeID 
+				aInteractionIDsMap = []
+			# Update Each Node ID
+			for x=1 to len(aInteractions) { 	
+				aInteractionIDsMap + [aInteractions[x][C_INTERACTIONRECORD_ID],parent().oModel.oInteractionModel.nID]		
+				aInteractions[x][C_INTERACTIONRECORD_ID] = parent().oModel.oInteractionModel.nID
+				parent().oModel.oInteractionModel.nID++
+			}
 		# Update the Steps ID
-			# Map between the NodeID in the buffer and the new NodeID 
+			# Map between the NodeID and the new NodeID 
 				aIDsMap = []
 			# Update Each Node ID
-			for x=1 to len(aStepsTree) { 	
+			for x=2 to len(aStepsTree) { 	
 				aIDsMap + [aStepsTree[x][C_TREEMODEL_NODEID],parent().oModel.oStepsTreeModel.nID]		
 				aStepsTree[x][C_TREEMODEL_NODEID] = parent().oModel.oStepsTreeModel.nID
 				parent().oModel.oStepsTreeModel.nID++
@@ -170,7 +179,6 @@ class ComponentsBrowserController from WindowsControllerParent
 					aStepsTree[x][C_TREEMODEL_PARENTID] = aIDsMap[nPos][2]
 				}
 			}
-		# Update the Interactions ID
 		# Add Steps Tree to Goal Designer 
 			for t=2 to len(aStepsTree) {
 				parent().oModel.oStepsTreeModel.aList + aStepsTree[t]
