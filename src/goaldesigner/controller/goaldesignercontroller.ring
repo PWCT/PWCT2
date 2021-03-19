@@ -909,7 +909,8 @@ class GoalDesignerController from WindowsControllerParent
 			oView.oStepsTree.delete()
 			oView.CreateStepsTree(self)
 		}
-		parent().goaldesignerFont()
+		// Using parent().goaldesignerFont() is slow 
+		// parent().goaldesignerFont()
 		nMax = len(aStepsTree) 
 		lSuperSerialAddExpandSteps = ! (nMax > nMaxStepsCountForExpandSteps)
 		if nMax > this.nMaxStepsCount and lUseMaxStepsCount {

@@ -205,20 +205,22 @@ class ComponentsBrowserController from WindowsControllerParent
 				node = aStepsTree[x] 
 				Insert(parent().oModel.oStepsTreeModel.aList,nPos,node)
 			}
-
 		# Add Interactions to Goal Designer 
 			nMax = len(aInteractions)
 			for t=2 to nMax {
 				parent().oModel.oInteractionModel.aList + aInteractions[t]
 			}
+		parent().oView.oStepsTree.setUpdatesEnabled(False)
+		parent().oView.oStepsTree.blockSignals(True)
 		parent().superSerialAdd(aStepsTree)
+		parent().oView.oStepsTree.setUpdatesEnabled(True)
+		parent().oView.oStepsTree.blockSignals(False)
 		parent().UpdateTheTimeMachine()
 		# Clear the Search Textbox 
 			oView.oTextSearch.SetText("")
 		parent().oView.oStepsTree.setFocus(0)
 		# To Correctly draw items (Avoid a Qt bug in drawing)
 			parent().oView.FixDrawing()
-
 
 	func OpenSelected
 		oItem  = oView.oComponentsTree.currentItem()
