@@ -83,7 +83,7 @@ class VSFGenerator
  		nStepID = oModel.AddStep(nParentID,[
 				:name = cStepName,
 				:active = True , 
-				:code = "" , 
+				:code = cStepName , 
 			 	:interactionid = oModel.oInteractionModel.AddUserInteraction() ,
 				:visible = True , 
 				:stepnumber = 1 ,

@@ -1,3 +1,9 @@
+/*
+**	Project : Programming Without Coding Technology (PWCT) Version 2.0
+**	File Purpose : Import Tool - Test File
+**	Date : 2020.02.15
+**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
+*/
 load "stdlib.ring"
 load "guilib.ring"
 try { 
