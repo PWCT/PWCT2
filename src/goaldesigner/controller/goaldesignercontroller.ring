@@ -75,6 +75,9 @@ class GoalDesignerController from WindowsControllerParent
 	# Font Dialog
 		oFontDialog 
 
+	# Don't display File Dialog when creating new files 
+		lNoFileDialogWhenCreatingNewFiles = True 
+
 	/*
 		Purpose : Show the Window
 		Parameters : None
@@ -706,7 +709,7 @@ class GoalDesignerController from WindowsControllerParent
 
 	func NewFileAction
 		# Set the file Name
-			if ! isWebAssembly() {
+			if (! isWebAssembly()) and  ! lNoFileDialogWhenCreatingNewFiles  {
 				new qfiledialog(oView.win) {
 					cFileName = getsavefilename(this.oView.win,"New File",currentdir(),T_GD_DM_FILETYPE)
 				}
