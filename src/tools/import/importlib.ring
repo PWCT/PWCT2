@@ -37,6 +37,8 @@ func RingCode2PWCT cCode
 		Start()
 	}
 	oParser = new Parser {
+		lOnErrorShutDown = False
+		lOnErrorPrintMsg = False
 		setTokens(oScanner.GetTokens())
 		Start()
 	}

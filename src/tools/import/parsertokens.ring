@@ -198,12 +198,16 @@ class ParserTokens
 		return nActiveToken
 
 	func error cMsg 
-		? "PWCT 2.0 - Import Tool"
-		? "Compiler Error!"
-		? "Token Number : " + nActiveToken
-		? "Line Number  : " + nLineNumber
-		? cMsg
-		ShutDown()
+		if lOnErrorPrintMsg {
+			? "PWCT 2.0 - Import Tool"
+			? "Compiler Error!"
+			? "Token Number : " + nActiveToken
+			? "Line Number  : " + nLineNumber
+			? cMsg
+		}
+		if lOnErrorShutDown {
+			ShutDown()
+		}
 
 
 	func generate aCommand, lClear 

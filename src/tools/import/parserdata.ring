@@ -59,3 +59,9 @@ class Parser
 
 	# Object provide methods determines what to generate (Instructions)	
 		oTarget = new Target 
+
+	# Shutdown when error happens ?
+		lOnErrorShutDown = True 
+
+	# Print error message 
+		lOnErrorPrintMsg = True 
