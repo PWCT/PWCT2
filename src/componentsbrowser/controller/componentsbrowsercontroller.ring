@@ -152,6 +152,11 @@ class ComponentsBrowserController from WindowsControllerParent
 			OpenSelected()
 			return 
 		}
+		if not parent().AllowInteractButton() {
+			# "Can't Add New Step in this location!"
+			ShowMessage(T_GD_BM_SORRY,T_GD_BM_CANTADD)
+			return
+		}
 		# Get the Search Value 
 			cFind = oView.oTextSearch.Text()	
 		# Convert Ring Code to PWCT (Steps & Interactions)
