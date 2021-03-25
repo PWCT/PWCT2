@@ -34,7 +34,9 @@ func RingCode2PWCT cCode
 	aOutput = []
 	oScanner = new Scanner {
 		setCode(cCode)
-		Start()
+		if ! Start() {
+			return aOutput
+		}
 	}
 	oParser = new Parser {
 		lOnErrorShutDown = False

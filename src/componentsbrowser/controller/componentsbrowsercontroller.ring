@@ -161,6 +161,7 @@ class ComponentsBrowserController from WindowsControllerParent
 			cFind = oView.oTextSearch.Text()	
 		# Convert Ring Code to PWCT (Steps & Interactions)
 			aLists = RingCode2PWCT(cFind)
+			if len(aLists) = 0 { return }
 		# Get The Output of the Conversion
 			aStepsTree = aLists[:StepsTreeTable]
 			aInteractions = aLists[:InteractionsTable]

@@ -14,9 +14,14 @@ class Scanner
 		cCode = cStr
 
 	func Start 
+		lOutput = True 
 		pState = ring_state_new()
 		aTokens = ring_state_stringtokens(pState,cCode,False,True)
+		if ring_state_scannererror(pState) {
+			lOutput = False
+		}
 		ring_state_delete(pState)
+		return lOutput	
 	
 	func GetTokens
 		return aTokens
