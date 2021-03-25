@@ -62,6 +62,10 @@
 		FILE *pLogFile;
 		/* Flag (Not Case Sensitive) */
 		unsigned int lNotCaseSensitive : 1  ;
+		/* Flag (Comments As Tokens From Scanner) */
+		unsigned int lCommentsAsTokens : 1  ;
+		/* Scanner Error Code */
+		unsigned int nScannerError  ;
 	} RingState ;
 	/* Constants */
 	#define RING_STATE_VERSION "1.15"
@@ -89,6 +93,8 @@
 	RING_API void ring_state_execute ( char *cFileName, int nISCGI,int nRun,int nPrintIC,int nPrintICFinal,int nTokens,int nRules,int nIns,int nGenObj,int nGenCObj,int nWarn,int argc,char *argv[] ) ;
 
 	RING_API int ring_state_runfile ( RingState *pRingState,char *cFileName ) ;
+
+	RING_API int ring_state_runstring ( RingState *pRingState,char *cString ) ;
 
 	RING_API void ring_state_runobjectfile ( RingState *pRingState,char *cFileName ) ;
 

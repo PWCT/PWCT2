@@ -73,6 +73,7 @@ void ring_scanner_readchar ( Scanner *pScanner,char c )
 							if ( strcmp(ring_list_getstring(pList,2),"/") == 0 ) {
 								ring_list_deleteitem_gc(pScanner->pRingState,pScanner->Tokens,ring_list_getsize(pScanner->Tokens));
 								pScanner->state = SCANNER_STATE_MLCOMMENT ;
+								ring_string_set_gc(pScanner->pRingState,pScanner->ActiveToken,"/*");
 								#if RING_SCANNEROUTPUT
 									printf( "\nMultiline comments start, ignore /* \n" ) ;
 								#endif
@@ -84,6 +85,7 @@ void ring_scanner_readchar ( Scanner *pScanner,char c )
 							if ( strcmp("/",ring_scanner_lasttokenvalue(pScanner)) ==  0 ) {
 								RING_SCANNER_DELETELASTTOKEN ;
 								pScanner->state = SCANNER_STATE_COMMENT ;
+								ring_string_set_gc(pScanner->pRingState,pScanner->ActiveToken,"//");
 								return ;
 							}
 						}
@@ -237,14 +239,22 @@ void ring_scanner_readchar ( Scanner *pScanner,char c )
 				#if RING_SCANNEROUTPUT
 					printf( "\n Not TOKEN (Comment) = %s  \n",ring_string_get(pScanner->ActiveToken) ) ;
 				#endif
+				if ( pScanner->pRingState->lCommentsAsTokens ) {
+					ring_scanner_addtoken(pScanner,SCANNER_TOKEN_COMMENT);
+				}
 				ring_string_set_gc(pScanner->pRingState,pScanner->ActiveToken,"");
 			}
 			else {
-				ring_string_add_gc(pScanner->pRingState,pScanner->ActiveToken,cStr);
+				if ( pScanner->pRingState->lCommentsAsTokens ) {
+					ring_string_add_gc(pScanner->pRingState,pScanner->ActiveToken,cStr);
+				}
 			}
 			break ;
 		case SCANNER_STATE_MLCOMMENT :
 			/* Check Multiline Comment */
+			if ( pScanner->pRingState->lCommentsAsTokens ) {
+				ring_string_add_gc(pScanner->pRingState,pScanner->ActiveToken,cStr);
+			}
 			switch ( pScanner->cMLComment ) {
 				case 0 :
 					if ( strcmp(cStr,"*") == 0 ) {
@@ -258,6 +268,9 @@ void ring_scanner_readchar ( Scanner *pScanner,char c )
 						#if RING_SCANNEROUTPUT
 							printf( "\nMultiline comments end \n" ) ;
 						#endif
+						if ( pScanner->pRingState->lCommentsAsTokens ) {
+							ring_scanner_addtoken(pScanner,SCANNER_TOKEN_COMMENT);
+						}
 						/* The next step is important to avoid storing * as identifier! */
 						ring_string_set_gc(pScanner->pRingState,pScanner->ActiveToken,"");
 					}
@@ -426,13 +439,17 @@ void ring_scanner_checktoken ( Scanner *pScanner )
 {
 	int nResult  ;
 	char cStr[5]  ;
+	char *cActiveStr  ;
 	/* This function determine if the TOKEN is a Keyword or Identifier or Number */
 	assert(pScanner != NULL);
 	/* Not Case Sensitive */
+	cActiveStr = ring_string_strdup(pScanner->pRingState,ring_string_get(pScanner->ActiveToken));
+	cActiveStr = ring_string_lower(cActiveStr);
 	if ( pScanner->pRingState->lNotCaseSensitive ) {
 		ring_string_tolower(pScanner->ActiveToken);
 	}
-	nResult = ring_hashtable_findnumber(ring_list_gethashtable(pScanner->Keywords),ring_string_get(pScanner->ActiveToken));
+	nResult = ring_hashtable_findnumber(ring_list_gethashtable(pScanner->Keywords),cActiveStr);
+	ring_state_free(pScanner->pRingState,cActiveStr);
 	if ( nResult > 0 ) {
 		#if RING_SCANNEROUTPUT
 			printf( "\nTOKEN (Keyword) = %s  \n",ring_string_get(pScanner->ActiveToken) ) ;
@@ -519,10 +536,17 @@ int ring_scanner_checklasttoken ( Scanner *pScanner )
 	assert(pScanner != NULL);
 	if ( ring_list_getsize(pScanner->Tokens) == 0 ) {
 		if ( pScanner->state == SCANNER_STATE_COMMENT ) {
+			if ( pScanner->pRingState->lCommentsAsTokens ) {
+				ring_scanner_addtoken(pScanner,SCANNER_TOKEN_COMMENT);
+			}
 			return 1 ;
 		}
 	}
 	if ( pScanner->state == SCANNER_STATE_LITERAL ) {
+		if ( pScanner->pRingState->nOnlyTokens ) {
+			pScanner->pRingState->nScannerError = 1 ;
+			return 0 ;
+		}
 		ring_state_cgiheader(pScanner->pRingState);
 		printf( "Error (S1) In file: %s \n",ring_list_getstring(pScanner->pRingState->pRingFilesList,ring_list_getsize(pScanner->pRingState->pRingFilesList)) ) ;
 		printf( "In Line (%d) Literal not closed \n",pScanner->nLiteralLine ) ;
@@ -533,6 +557,11 @@ int ring_scanner_checklasttoken ( Scanner *pScanner )
 	}
 	else if ( pScanner->state ==SCANNER_STATE_GENERAL ) {
 		ring_scanner_checktoken(pScanner);
+	}
+	else if ( (pScanner->state == SCANNER_STATE_COMMENT) || (pScanner->state ==SCANNER_STATE_MLCOMMENT) ) {
+		if ( pScanner->pRingState->lCommentsAsTokens ) {
+			ring_scanner_addtoken(pScanner,SCANNER_TOKEN_COMMENT);
+		}
 	}
 	return 1 ;
 }
