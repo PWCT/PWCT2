@@ -27,7 +27,7 @@ class ComponentsBrowserView from WindowsViewParent
 			}
 
 			oComponentsTree = new ComponentsTreeView(win) {
-				setdoubleClickedEvent(Method(:SelectAction))
+				setdoubleClickedEvent(Method(:SelectActionDoubleClick))
 			}
 
 			oBtnSelect = new qPushButton(win)
@@ -61,6 +61,11 @@ class ComponentsBrowserView from WindowsViewParent
 			oWinFilter = new qallevents(win)
 			oWinFilter.setKeyPressEvent(Method(:KeyPressAction))								
 			installeventfilter(oWinFilter)
+
+			if ! PWCTIsMobile(:ComponentsBrowserOkCancel) {
+				oBtnSelect.hide()
+				oBtnClose.hide()
+			}
 
 		}
 
