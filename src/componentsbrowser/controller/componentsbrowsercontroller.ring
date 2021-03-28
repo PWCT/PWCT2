@@ -42,8 +42,6 @@ class ComponentsBrowserController from WindowsControllerParent
 		switch nKeyCode {	
 		case Qt_Key_Escape
 			CloseAction()	
-		//case 87	# CTRL+W
-		//	CloseAction()	
 		}
 
 	/*
@@ -332,7 +330,3 @@ class ComponentsBrowserController from WindowsControllerParent
 				return item 
 			}
 		}
-
-
-	func SelectActionDoubleClick
-		OpenSelected()

@@ -27,7 +27,7 @@ class ComponentsBrowserView from WindowsViewParent
 			}
 
 			oComponentsTree = new ComponentsTreeView(win) {
-				setdoubleClickedEvent(Method(:SelectActionDoubleClick))
+				setdoubleClickedEvent(Method(:OpenSelected))
 			}
 
 			oBtnSelect = new qPushButton(win)
