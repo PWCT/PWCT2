@@ -1065,17 +1065,17 @@ class EnvironmentController from WindowsControllerParent
 			on C_ENV_MODE_GENERAL
 				ShowDockableWindows()
 				oView.win {
-					adddockwidget(Qt_LeftDockWidgetArea,this.oView.oDockFilesManager,1)
+					adddockwidget(Qt_LeftDockWidgetArea,this.oView.oDockComponentsBrowser,1)
 					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockGoalDesigner,2)
 					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockFormDesigner,1)
 					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockOutputWindow,1)
-					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockComponentsBrowser,1)
+					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockFilesManager,1)
 					tabifydockwidget(this.oView.oDockFormDesigner,this.oView.oDockGoalDesigner)
-					tabifydockwidget(this.oView.oDockOutputWindow,this.oView.oDockComponentsBrowser)
+					tabifydockwidget(this.oView.oDockOutputWindow,this.oView.oDockFilesManager)
 					if lUseArabic {
-						tabifydockwidget(this.oView.oDockFilesManager,this.oView.oDockOutputWindow)
+						tabifydockwidget(this.oView.oDockComponentsBrowser,this.oView.oDockOutputWindow)
 					else 
-						tabifydockwidget(this.oView.oDockFilesManager,this.oView.oDockComponentsBrowser)
+						tabifydockwidget(this.oView.oDockComponentsBrowser,this.oView.oDockFilesManager)
 					}
 				}
 				oView.oDockGoalDesigner.raise()
