@@ -172,7 +172,7 @@ class ComponentViewParent from WindowsViewParent
 				AddItem(Item)
 			}
 			setCurrentRow(0,3)
-			setminimumwidth(250)
+			setminimumwidth(200)
 			setminimumheight(100)			
 		}
 		oLayout = new qHBoxLayout() {

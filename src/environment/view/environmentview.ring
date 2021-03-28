@@ -956,7 +956,7 @@ class EnvironmentView from WindowsViewParent
 		}
 		oProcessWindow.setlayout(oProcessLayout2)			
 		oDockOutputWindow = new qDockWidget(win,0) {
-			nWidth = floor(this.oDesktop.Width()*0.2)
+			nWidth = floor(this.oDesktop.Width()*0.15)
 			nHeight = floor(this.oDesktop.Height()*0.1)
 			setMinimumWidth(nWidth)
 			setMinimumHeight(nHeight)
