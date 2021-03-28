@@ -978,7 +978,7 @@ class EnvironmentView from WindowsViewParent
 
 	func createComponentsBrowser win
 		oDockComponentsBrowser = new qDockWidget(win,0) {
-			nWidth = floor(this.oDesktop.Width()*0.2)
+			nWidth = floor(this.oDesktop.Width()*0.25)
 			setMinimumWidth(nWidth)
 			setLayoutDirection(C_TRANSLATION_ENGLISH)
 			setwindowtitle(T_ENV_DOCK_COMPONENTSBROWSER) 
