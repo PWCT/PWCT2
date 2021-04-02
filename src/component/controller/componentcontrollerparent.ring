@@ -278,10 +278,12 @@ Class ComponentControllerParent from WindowsControllerParent
 					if nInteractionMode = C_INTERACTIONMODE_MODIFY {
 						parent().DeleteExtraSteps(nIID,nStepNumber)
 					}
+				parent().autoRun()
 				CloseBtnAction()
 			}
 		else 
 			if lNoInteractionPage {
+				parent().autoRun()
 				closebtnAction()
 			}
 		}
@@ -313,6 +315,7 @@ Class ComponentControllerParent from WindowsControllerParent
 			oParent = NULL
 			nInteractionMode = noldInteractionMode
 			nStepNumber = 0
+			parent().autoRun()
 		}
 
 	/*
