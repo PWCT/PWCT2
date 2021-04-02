@@ -78,6 +78,9 @@ class GoalDesignerController from WindowsControllerParent
 	# Don't display File Dialog when creating new files 
 		lNoFileDialogWhenCreatingNewFiles = True 
 
+	# Auto Run the Program after any update 
+		lAutoRun = True 
+
 	/*
 		Purpose : Show the Window
 		Parameters : None
@@ -621,6 +624,7 @@ class GoalDesignerController from WindowsControllerParent
 		oView.win.setUpdatesEnabled(False)
 		oTMController.ChangeTimeMachinePoint(oView,oModel)
 		oView.win.setUpdatesEnabled(True)
+		AutoRun()
 
 	/*
 		Purpose : Tree Key Press
@@ -1709,4 +1713,9 @@ class GoalDesignerController from WindowsControllerParent
                 		}
 			}
 			SaveCurrentFileAction()
+		}
+
+	func AutoRun
+		if lAutoRun {
+			RunGUIAction()
 		}
