@@ -341,6 +341,7 @@ class GoalDesignerController from WindowsControllerParent
 		# Update the Time Machine
 			UpdateTheTimeMachine()
 		lSaveFlag = True
+		AutoRun()
 
 	/*
 		Purpose : Move Step Up Action
@@ -439,6 +440,7 @@ class GoalDesignerController from WindowsControllerParent
 		# Update the Time Machine
 			UpdateTheTimeMachine()
 		lSaveFlag = True
+		AutoRun()
 
 	/*
 		Purpose : Copy Steps Action
@@ -507,6 +509,8 @@ class GoalDesignerController from WindowsControllerParent
 				oItem.setexpanded(True)
 			}
 		lSaveFlag = True
+		AutoRun()
+
 
 	/*
 		Purpose : Increase Size Action
@@ -563,6 +567,7 @@ class GoalDesignerController from WindowsControllerParent
 		nIgnore = oModel.IgnoreStep(nStepID)
 		oView.oStepsTree.IgnoreStep(oItem,nIgnore)
 		lSaveFlag = True
+		AutoRun()
 
 	/*
 		Purpose : Step Changed Action

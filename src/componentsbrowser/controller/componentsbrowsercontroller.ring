@@ -225,6 +225,7 @@ class ComponentsBrowserController from WindowsControllerParent
 		parent().oView.oStepsTree.setFocus(0)
 		# To Correctly draw items (Avoid a Qt bug in drawing)
 			parent().oView.FixDrawing()
+		parent().AutoRun()
 
 	func OpenSelected
 		oItem  = oView.oComponentsTree.currentItem()
