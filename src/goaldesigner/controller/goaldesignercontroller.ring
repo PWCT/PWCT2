@@ -372,6 +372,7 @@ class GoalDesignerController from WindowsControllerParent
 			oView.oStepsTree.SetCurrentItem(oItem,0)	
 		}
 		lSaveFlag = True
+		AutoRun()
 
 	/*
 		Purpose : Move Step Down Action
@@ -403,6 +404,7 @@ class GoalDesignerController from WindowsControllerParent
 			oView.oStepsTree.SetCurrentItem(oItem,0)	
 		}
 		lSaveFlag = True
+		AutoRun()
 
 	/*
 		Purpose : Print Steps Action
