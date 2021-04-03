@@ -112,7 +112,7 @@ class ComponentsBrowserController from WindowsControllerParent
 	*/
 
 	func SearchAction
-		cFind = oView.oTextSearch.Text()	
+		cFind = trim(oView.oTextSearch.Text())
 		aTree = oModel.GetData()
 		if cFind = "" {
 			oView.oComponentsTree {
