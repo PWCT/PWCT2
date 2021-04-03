@@ -646,18 +646,18 @@ class GoalDesignerController from WindowsControllerParent
 			# Keys from 'a' to 'z' and Arabic Keys
 			if 	(( nKey >= 65   ) and (nKey <= 90   )) or  
  				(( nKey >= 1575 ) and (nKey <= 1610 ))	{ 
-				if InteractAction() {
-					ComponentsBrowserWindow().oView.oTextSearch.setText(Lower(cText))			
-					ComponentsBrowserWindow().SearchAction()
-				}
+				UpdateSearchField(cText)
 			}
 		elseif nKey = 63	# writing ? operator 
-				if InteractAction() {
-					ComponentsBrowserWindow().oView.oTextSearch.setText(cText)			
-					ComponentsBrowserWindow().SearchAction()
-				}
+				UpdateSearchField(cText)
 		}
 		oView.oTreeFilter.setEventOutput(False)
+
+	func UpdateSearchField cText 
+		if InteractAction() {
+			ComponentsBrowserWindow().oView.oTextSearch.setText(Lower(cText))			
+			ComponentsBrowserWindow().SearchAction()
+		}
 
 	/*
 		Purpose : Key Press Action
