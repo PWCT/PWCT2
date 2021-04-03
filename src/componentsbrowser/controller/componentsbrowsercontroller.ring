@@ -225,6 +225,15 @@ class ComponentsBrowserController from WindowsControllerParent
 		parent().oView.oStepsTree.setFocus(0)
 		# To Correctly draw items (Avoid a Qt bug in drawing)
 			parent().oView.FixDrawing()
+		# Select the First Generated Step That Allow New Interactions 
+			for aStep in aStepsTree {
+				if aStep[C_TREEMODEL_CONTENT][:steptype] = C_STEPTYPE_ALLOWINTERACTION {
+					oItem = parent().oView.oStepsTree.GetObjByID(aStep[C_TREEMODEL_NODEID])
+					parent().oView.oStepsTree.SetCurrentItem(oItem,0)	
+					exit
+				}				
+			}
+
 		parent().AutoRun()
 
 	func OpenSelected
