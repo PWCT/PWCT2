@@ -651,6 +651,11 @@ class GoalDesignerController from WindowsControllerParent
 					ComponentsBrowserWindow().SearchAction()
 				}
 			}
+		elseif nKey = 63	# writing ? operator 
+				if InteractAction() {
+					ComponentsBrowserWindow().oView.oTextSearch.setText(cText)			
+					ComponentsBrowserWindow().SearchAction()
+				}
 		}
 		oView.oTreeFilter.setEventOutput(False)
 
