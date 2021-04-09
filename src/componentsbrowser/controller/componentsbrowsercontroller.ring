@@ -48,7 +48,7 @@ class ComponentsBrowserController from WindowsControllerParent
 		switch nKeyCode {	
 		case Qt_Key_Escape
 			if lSpecialSearchWindow {
-				QuickMsg().oView.win.hide()
+				QuickMsg().hide()
 			}
 			if lEscapeKey {
 				CloseAction()	
@@ -129,6 +129,9 @@ class ComponentsBrowserController from WindowsControllerParent
 			oView.oComponentsTree {
 				SetCurrentItem(oFirstStep,0)
 			}
+			if lSpecialSearchWindow {
+				QuickMsg().hide()
+			}
 			return
 		}
 		lSearchResult = False 
@@ -146,14 +149,14 @@ class ComponentsBrowserController from WindowsControllerParent
 				oView.oComponentsTree.ScrollToItem(oItem,0)	
 				lSearchResult = True
 				if lSpecialSearchWindow {
-					QuickMsg().oView.win.hide()
+					QuickMsg().hide()
 				}
 				return 
 			}
 		}
 		if lSpecialSearchWindow {
 			QuickMsg().setText(cFind)
-			QuickMsg().oView.win.show()
+			QuickMsg().show()
 		}
 
 
@@ -165,7 +168,7 @@ class ComponentsBrowserController from WindowsControllerParent
 
 	func SelectAction
 		if lSpecialSearchWindow {
-			QuickMsg().oView.win.hide()
+			QuickMsg().hide()
 		}
 		if lSearchResult {	
 			lSearchResult = False 
@@ -330,7 +333,7 @@ class ComponentsBrowserController from WindowsControllerParent
 		if lSpecialSearchWindow {
 			if ! isMethod(self,:QuickMsg) {
 				open_windowandlink(:quickmsgController,self)
-				QuickMsg().oView.win.hide()
+				QuickMsg().hide()
 			}
 		}
 

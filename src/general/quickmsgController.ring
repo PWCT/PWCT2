@@ -19,12 +19,15 @@ class quickmsgController from windowsControllerParent
 	oView = new quickmsgView
 	cMessage = "Loading..."
 
+	nWindowWidth nWindowHeight
+
 	oDesktop = new qDesktopwidget() 
 	CenterTheWindow()
 
 	func setText cText 
 		cMessage = cText
-		oView.oMsg.setText(cMessage)		
+		oView.oMsg.setText(cMessage)	
+		oView.win.move((oDesktop.width()-nWindowWidth)/2,(oDesktop.height()-nWindowHeight)/2)
 
 	func Text 
 		return cMessage 
@@ -34,6 +37,18 @@ class quickmsgController from windowsControllerParent
 		nWindowHeight = oView.win.height()
 		oView.win.move((oDesktop.width()-nWindowWidth)/2,(oDesktop.height()-nWindowHeight)/2)
 
+	func RefreshSize 
+		oView.win.resize(nWindowWidth,nWindowHeight)
+
+	func Show 
+		RefreshSize()
+		oView.win.show()
+
+	func Hide 
+		oView.win.hide()
+		RefreshSize()
+
 	func CloseMsg
 		oView.win.close()
 	
+
