@@ -698,6 +698,8 @@ class GoalDesignerController from WindowsControllerParent
 				CopyStepsAction()
 			case 73		# CTRL+I
 				IgnoreStepAction()
+			case 76 
+				EditAllStepsAction()
 			case 86		# CTRL+V
 				PasteStepsAction()
 			case 88		# CTRL+X
@@ -1127,6 +1129,9 @@ class GoalDesignerController from WindowsControllerParent
 			if nStepID = 1 {
 				return
 			}
+			ModifyAction2(nStepID)
+
+	func ModifyAction2 nStepID
 		# Check Step Type
 			openComponent(nStepID)
 		# Display the Window 
@@ -1730,4 +1735,21 @@ class GoalDesignerController from WindowsControllerParent
 	func AutoRun
 		if lAutoRun {
 			RunGUIAction()
+		}
+
+
+	func EditAllStepsAction
+		oItem  = oView.oStepsTree.currentItem()
+		nStepID = oView.oStepsTree.GetIDByObj(oItem)
+		aChildren = oModel.oStepsTreeModel.ChildrenIDs(nStepID)
+		insert(aChildren,0, nStepID)
+		aSteps = []
+		for nStep in aChildren {
+			if oModel.GetStepType(nStep) = C_STEPTYPE_ROOT {
+				aSteps + nStep
+			}
+		}
+		aSteps = reverse(aSteps)
+		for nStep in aSteps {
+			ModifyAction2(nStep) 
 		}
