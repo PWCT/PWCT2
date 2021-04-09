@@ -32,7 +32,11 @@ class ComponentsBrowserController from WindowsControllerParent
 		lSearchResult = False 
 
 	# Special Search Window 
-		lSpecialSearchWindow = True 
+		if PWCTIsMobile(:SpecialSearchWindow) {
+			lSpecialSearchWindow = False 
+		else 
+			lSpecialSearchWindow = True 
+		}
 
 	# Escape Key (To close the window)
 		lEscapeKey = False
