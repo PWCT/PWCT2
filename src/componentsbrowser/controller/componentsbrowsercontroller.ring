@@ -31,6 +31,12 @@ class ComponentsBrowserController from WindowsControllerParent
 	# Search Result 
 		lSearchResult = False 
 
+	# Special Search Window 
+		lSpecialSearchWindow = True 
+
+	# Escape Key (To close the window)
+		lEscapeKey = False
+
 	/*
 		Purpose : Key Press Action
 		Parameters : None
@@ -41,7 +47,12 @@ class ComponentsBrowserController from WindowsControllerParent
 		nKeyCode = oView.oWinFilter.getKeyCode()
 		switch nKeyCode {	
 		case Qt_Key_Escape
-			CloseAction()	
+			if lSpecialSearchWindow {
+				QuickMsg().oView.win.hide()
+			}
+			if lEscapeKey {
+				CloseAction()	
+			}
 		}
 
 	/*
@@ -134,9 +145,17 @@ class ComponentsBrowserController from WindowsControllerParent
 				oView.oComponentsTree.SetCurrentItem(oItem,0)
 				oView.oComponentsTree.ScrollToItem(oItem,0)	
 				lSearchResult = True
-				exit
+				if lSpecialSearchWindow {
+					QuickMsg().oView.win.hide()
+				}
+				return 
 			}
 		}
+		if lSpecialSearchWindow {
+			QuickMsg().setText(cFind)
+			QuickMsg().oView.win.show()
+		}
+
 
 	/*
 		Purpose : Open the Selected component to use it
@@ -145,6 +164,9 @@ class ComponentsBrowserController from WindowsControllerParent
 	*/
 
 	func SelectAction
+		if lSpecialSearchWindow {
+			QuickMsg().oView.win.hide()
+		}
 		if lSearchResult {	
 			lSearchResult = False 
 			OpenSelected()
@@ -304,6 +326,15 @@ class ComponentsBrowserController from WindowsControllerParent
 				}
 			}
 		}
+
+		if lSpecialSearchWindow {
+			if ! isMethod(self,:QuickMsg) {
+				open_windowandlink(:quickmsgController,self)
+				QuickMsg().oView.win.hide()
+			}
+		}
+
+
 	/*
 		Purpose : Close the window
 		Parameters : None
