@@ -262,8 +262,12 @@ class ComponentsBrowserController from WindowsControllerParent
 					exit
 				}				
 			}
-
-		parent().AutoRun()
+		# Run the application and display the output (optional)
+			parent().AutoRun()
+		# When working on Mobile (Close the components browser window)
+			if PWCTIsMobile(:CloseCBAfterRingCode2PWCT) {
+				closeAction()
+			}
 
 	func OpenSelected
 		oItem  = oView.oComponentsTree.currentItem()
