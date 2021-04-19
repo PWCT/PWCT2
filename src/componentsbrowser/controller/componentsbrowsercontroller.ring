@@ -159,6 +159,8 @@ class ComponentsBrowserController from WindowsControllerParent
 			}
 		}
 		if lSpecialSearchWindow {
+			# Avoid lower(cFind) to support upper/lower letters
+				cFind = trim(oView.oTextSearch.Text())
 			QuickMsg().setText(cFind)
 			QuickMsg().show()
 			# The next code is a workaround in a bug in Qt for WebAssembly 
