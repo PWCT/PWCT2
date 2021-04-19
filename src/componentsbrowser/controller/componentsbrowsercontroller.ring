@@ -161,6 +161,12 @@ class ComponentsBrowserController from WindowsControllerParent
 		if lSpecialSearchWindow {
 			QuickMsg().setText(cFind)
 			QuickMsg().show()
+			# The next code is a workaround in a bug in Qt for WebAssembly 
+			# Because the LineEdit lost the focus for the QuickMsg window 
+			# And we want to keep it 
+			QuickMsg().oView.win.activatewindow()
+			oView.oTextSearch.activatewindow()
+			oView.oTextSearch.setFocus(7)
 		}
 
 
