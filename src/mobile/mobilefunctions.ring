@@ -67,6 +67,10 @@ func PWCTIsMobile cOption
 				return False
 			case :ComponentsButtonsSize
 				return False
+			case :CloseCBAfterRingCode2PWCT
+				return False
+			case :SpecialSearchWindow
+				return False
 		}
 	}
 	return isMobile() | isWebAssembly()
