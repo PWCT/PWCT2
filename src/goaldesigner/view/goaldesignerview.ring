@@ -48,32 +48,32 @@ class GoalDesignerView from WindowsViewParent
 			InsertTab(1,oPageCode,T_GD_STEPCODE)
 			setCurrentChangedEvent(Method(:StepChangedAction)) 			
 		}
-		btnAddStep = new qPushButton(win) {
+		btnAddStep = new QToolButton(win) {
 			setToolTip(T_GD_NEWSTEP)
 			setClickEvent(Method(:AddStepAction))
 			self.MobileButtonSize(btnAddStep)
 		}
 		setBtnImage(btnAddStep,AppFile("images/new.png"))
-		btnDeleteStep = new qPushButton(win) {
+		btnDeleteStep = new QToolButton(win) {
 			setToolTip(T_GD_DELETESTEP)
 			setClickEvent(Method(:DeleteStepAction))			
 			self.mobileButtonSize(btnDeleteStep)
 		}
 		setBtnImage(btnDeleteStep,AppFile("images/delete.png"))
-		btnMoveStepUp = new qPushButton(win) {
+		btnMoveStepUp = new QToolButton(win) {
 			setToolTip(T_GD_MOVEUP)
 			setClickEvent(Method(:MoveStepUpAction))	
 			self.mobileButtonSize(btnMoveStepUp)	
 		}
 		setBtnImage(btnMoveStepUp,AppFile("images/up.png"))
-		btnMoveStepDown = new qPushButton(win) {
+		btnMoveStepDown = new QToolButton(win) {
 			setToolTip(T_GD_MOVEDOWN)
 			setClickEvent(Method(:MoveStepDownAction))	
 			self.mobileButtonSize(btnMoveStepDown)		
 		}
 		setBtnImage(btnMoveStepDown,AppFile("images/down.png"))
 
-		btnIgnore = new qPushButton(win) {
+		btnIgnore = new QToolButton(win) {
 			setToolTip(T_GD_COMMENTUNCOMMENT)
 			setClickEvent(Method(:IgnoreStepAction))
 			self.mobileButtonSize(btnIgnore)	
@@ -82,13 +82,13 @@ class GoalDesignerView from WindowsViewParent
 		sliderTimeMachine = new TimeMachineView(win) {
 			setValueChangedEvent(Method(:ChangeTimeMachinePointAction))
 		}
-		btnInteract = new qPushButton(win) {
+		btnInteract = new QToolButton(win) {
 			setToolTip(T_GD_INTERACT) 	# "Interact"
 			setClickEvent(Method(:InteractAction))	
 			self.mobileButtonSize(btnInteract)
 		}
 		setBtnImage(btnInteract,AppFile("images/interact.png"))
-		btnModify = new qPushButton(win) {
+		btnModify = new QToolButton(win) {
 			setToolTip(T_GD_MODIFY) 	# "Modify"
 			setClickEvent(Method(:ModifyAction))	
 			self.mobileButtonSize(btnModify)
@@ -97,37 +97,37 @@ class GoalDesignerView from WindowsViewParent
 
 		if not PWCTIsMobile(:GoalDesignerButtons) {
 
-			btnCutSteps = new qPushButton(win) {
+			btnCutSteps = new QToolButton(win) {
 				setToolTip(T_GD_CUT)
 				setClickEvent(Method(:CutStepsAction))	
 				self.mobileButtonSize(btnCutSteps)		
 			}
 			setBtnImage(btnCutSteps,AppFile("images/cut.png"))
-			btnCopySteps = new qPushButton(win) {
+			btnCopySteps = new QToolButton(win) {
 				setToolTip(T_GD_COPY)
 				setClickEvent(Method(:CopyStepsAction))	
 				self.mobileButtonSize(btnCopySteps)		
 			}
 			setBtnImage(btnCopySteps,AppFile("images/copy.png"))
-			btnPasteSteps = new qPushButton(win) {
+			btnPasteSteps = new QToolButton(win) {
 				setToolTip(T_GD_PASTE)
 				setClickEvent(Method(:PasteStepsAction))	
 				self.mobileButtonSize(btnPasteSteps)		
 			}
 			setBtnImage(btnPasteSteps,AppFile("images/paste.png"))
-			btnIncreaseSize = new qPushButton(win) {
+			btnIncreaseSize = new QToolButton(win) {
 				setToolTip(T_GD_INCERASESIZE)
 				setClickEvent(Method(:IncreaseSizeAction))
 				self.mobileButtonSize(btnIncreaseSize)			
 			}
 			setBtnImage(btnIncreaseSize,AppFile("images/zoomin.png"))
-			btnDecreaseSize = new qPushButton(win) {
+			btnDecreaseSize = new QToolButton(win) {
 				setToolTip(T_GD_DECREASESIZE)
 				setClickEvent(Method(:DecreaseSizeAction))
 				self.mobileButtonSize(btnDecreaseSize)			
 			}
 			setBtnImage(btnDecreaseSize,AppFile("images/zoomout.png"))
-			btnSearch = new qPushButton(win) {
+			btnSearch = new QToolButton(win) {
 				setToolTip(T_GD_SEARCH)
 				setClickEvent(Method(:SearchAction))			
 				self.mobileButtonSize(btnSearch)
@@ -193,7 +193,7 @@ class GoalDesignerView from WindowsViewParent
 			//AddWidget(widgetVPages)
 			AddWidget(oVPagesScroll)
 		}		
-
+/*
 		layoutVBtns = new qVBoxLayout()
 		{	
 			if not PWCTIsMobile(:GoalDesignerButtons) {
@@ -219,11 +219,6 @@ class GoalDesignerView from WindowsViewParent
 				AddWidget(btnMoveStepDown)
 				AddWidget(btnIgnore)
 			}
-			/*
-			if not PWCTIsMobile(:DisplayPrintButton) {
-				AddWidget(btnPrintSteps)		
-			}
-			*/
 			insertStretch( -1, 1 )
 			setContentsMargins(0,0,0,0)
 		}
@@ -241,15 +236,47 @@ class GoalDesignerView from WindowsViewParent
 			setwidgetresizable(True)
 			setHorizontalScrollBarPolicy(Qt_ScrollBarAlwaysOff)
 		}
+*/
 
+		win {
+			tool1 = addtoolbar("gd")  {
+				if not PWCTIsMobile(:GoalDesignerButtons) {
+					AddWidget(btnAddStep)
+					AddWidget(btnInteract)		
+					AddWidget(btnModify)		
+					AddWidget(btnDeleteStep)
+					AddWidget(btnMoveStepUp)
+					AddWidget(btnMoveStepDown)
+					AddWidget(btnIncreaseSize)
+					AddWidget(btnDecreaseSize)
+					AddWidget(btnIgnore)
+					AddWidget(btnCutSteps)
+					AddWidget(btnCopySteps)
+					AddWidget(btnPasteSteps)
+					AddWidget(btnSearch)
+				else
+					AddWidget(btnAddStep)
+					AddWidget(btnInteract)		
+					AddWidget(btnModify)		
+					AddWidget(btnDeleteStep)
+					AddWidget(btnMoveStepUp)
+					AddWidget(btnMoveStepDown)
+					AddWidget(btnIgnore)
+				}
+			}
+		}
+
+/*
 		layoutRegion = new qHBoxLayout() {
 			AddWidget(oButtonsScroll)
 			AddWidget(oSplitter)
 		}
+*/
 		layout1 = new qVBoxLayout()
 		{	
 			AddLayout(layoutTimeMachine)
-			AddLayout(layoutRegion)
+			AddWidget(oSplitter)
+			//AddLayout(layoutRegion)
 		}
 		
 		oSubWindow = new QWidget() {
