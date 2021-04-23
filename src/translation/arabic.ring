@@ -37,7 +37,7 @@
 	T_ENV_MENU_COPY = "نسخ"
 	T_ENV_MENU_PASTE = "لسخ"
 	T_ENV_MENU_FONT = "الخط"
-	T_ENV_MENU_COLORS = "الألوان"
+	T_ENV_MENU_CUSTOMIZATION = "التخصيص"
 	T_ENV_MENU_FINDREPLACE = "بحث واستبدال"
 	T_ENV_MENU_PROJECTFILES = "ملفات المشروع"
 	T_ENV_MENU_GOALDESIGNER = "مصمم الهدف"
@@ -206,7 +206,7 @@
 
 # Steps Colors Window
 
-	T_SC_WINDOWTITLE = "نافذة ألوان الخطوات"
+	T_SC_WINDOWTITLE = "نافذة التخصيص"
 	T_SC_STEPTYPE = "نوع الخطوة"
 	T_SC_TEXTCOLOR = "لون النص"
 	T_SC_BACKCOLOR = "لون الخلفية"

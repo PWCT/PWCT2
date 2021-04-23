@@ -37,7 +37,7 @@
 	T_ENV_MENU_COPY = "Copy"
 	T_ENV_MENU_PASTE = "Paste"
 	T_ENV_MENU_FONT = "Font"
-	T_ENV_MENU_COLORS = "Colors"
+	T_ENV_MENU_CUSTOMIZATION = "Customization"
 	T_ENV_MENU_FINDREPLACE = "Find and Replace"
 	T_ENV_MENU_PROJECTFILES = "Project Files"
 	T_ENV_MENU_GOALDESIGNER = "Goal Designer"
@@ -207,7 +207,7 @@
 
 # Steps Colors Window
 
-	T_SC_WINDOWTITLE = "Steps Colors Window"
+	T_SC_WINDOWTITLE = "Customization Window"
 	T_SC_STEPTYPE = "Step Type"
 	T_SC_TEXTCOLOR = "Text Color"
 	T_SC_BACKCOLOR = "Back Color"

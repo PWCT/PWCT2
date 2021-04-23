@@ -198,18 +198,18 @@ class EnvironmentView from WindowsViewParent
 				addaction(oAction)
 				addseparator()
 				oAction = new qAction(win) {
-					setShortcut(new QKeySequence("Alt+c"))
-					setbtnimage(self,AppFile("images/colors.png"))
-					settext(T_ENV_MENU_COLORS) # "Colors"
-					setclickevent(Method(:ColorsAction))
-				}
-				addaction(oAction)
-				addseparator()
-				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Ctrl+f"))
 					setbtnimage(self,AppFile("images/search.png"))
 					settext(T_ENV_MENU_FINDREPLACE) # "Find and Replace"
 					setclickevent(Method(:FindAction))
+				}
+				addaction(oAction)
+				addseparator()
+				oAction = new qAction(win) {
+					setShortcut(new QKeySequence("Alt+c"))
+					setbtnimage(self,AppFile("images/colors.png"))
+					settext(T_ENV_MENU_CUSTOMIZATION) # "Customization"
+					setclickevent(Method(:ColorsAction))
 				}
 				addaction(oAction)
 			}				
