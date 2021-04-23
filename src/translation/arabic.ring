@@ -219,6 +219,7 @@
 	T_SC_STEPSTREEBACKCOLOR = "لون خلفية شجرة الخطوات"	
 	T_SC_INDENTATION = "المحاذاة"
 	T_SC_STEPSTREELINES = "إظهار خطوط شجرة الخطوات"
+	T_SC_AUTORUN = "تشغيل تلقائي"
 
 # Components Browser Window
 

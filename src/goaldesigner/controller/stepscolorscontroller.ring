@@ -83,3 +83,7 @@ class StepsColorsController from WindowsControllerParent
 		else 
 			oView.txtIndentation.setStyleSheet("background-color:red;")
 		}
+
+	func AutoRun 
+		C_STEPSTREE_AUTORUN = oView.checkAutoRun.checkState()
+		parent().lAutoRun = C_STEPSTREE_AUTORUN

@@ -79,7 +79,7 @@ class GoalDesignerController from WindowsControllerParent
 		lNoFileDialogWhenCreatingNewFiles = True 
 
 	# Auto Run the Program after any update 
-		lAutoRun = False  
+		lAutoRun = C_STEPSTREE_AUTORUN  
 
 	/*
 		Purpose : Show the Window

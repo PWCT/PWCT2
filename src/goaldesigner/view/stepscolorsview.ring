@@ -189,6 +189,13 @@ class StepsColorsView from WindowsViewParent
 			setStateChangedEvent(Method(:StepsTreeLines))
 		} 
 
+
+		checkAutoRun = new QCheckBox(win) {
+			setText(T_SC_AUTORUN) # "Auto Run"
+			setChecked(C_STEPSTREE_AUTORUN)
+			setStateChangedEvent(Method(:AutoRun))
+		} 
+
 		btnClose = new qpushbutton(win) {
 			setText(T_SC_CLOSE) # "Close"
 			setclickevent(Method(:closeAction))
@@ -208,6 +215,7 @@ class StepsColorsView from WindowsViewParent
 			Addlayout(layoutHLeaf)
 			Addlayout(layoutHData)
 			AddLayout(layoutGeneral)
+			AddWidget(checkAutoRun)
 			AddWidget(btnClose)
 			insertStretch( -1, 1 )
 		}

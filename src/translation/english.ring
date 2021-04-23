@@ -220,6 +220,7 @@
 	T_SC_STEPSTREEBACKCOLOR = "Steps Tree BackColor"	
 	T_SC_INDENTATION = "Indentation"
 	T_SC_STEPSTREELINES = "Show Steps Tree Lines"
+	T_SC_AUTORUN = "Auto Run"
 
 # Components Browser Window
 
