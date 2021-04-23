@@ -9,7 +9,7 @@ class GoalDesignerView from WindowsViewParent
 
 	# Create the window and the Controls
 
-	win = new qWidget() {
+	win = new QMainWindow() {
 		setLayoutDirection(T_LAYOUTDIRECTION)
 		setWindowTitle(T_GD_GOALDESIGNER)
 		oPageDesign = new qWidget() {
@@ -252,7 +252,11 @@ class GoalDesignerView from WindowsViewParent
 			AddLayout(layoutRegion)
 		}
 		
-		SetLayout(Layout1)
+		oSubWindow = new QWidget() {
+			SetLayout(Layout1)
+		}
+
+		setCentralwidget(oSubWindow)
 		/*
 			We set the focus on the steps tree to enable setting the current item
 			This is important after creating the Tabs
