@@ -33,7 +33,7 @@ class ComponentsBrowserView from WindowsViewParent
 			oBtnSelect = new qPushButton(win)
 			{
 				setText(T_CB_SELECT)
-				setclickevent(Method(:SelectAction))
+				setclickevent(Method(:OpenSelected))
 			}
 			oBtnClose = new qPushButton(win)
 			{
