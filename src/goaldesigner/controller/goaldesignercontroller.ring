@@ -81,6 +81,9 @@ class GoalDesignerController from WindowsControllerParent
 	# Auto Run the Program after any update 
 		lAutoRun = C_STEPSTREE_AUTORUN  
 
+	# Don't support Eval for loading new components 
+		lNoDynamicComponents = True 
+
 	/*
 		Purpose : Show the Window
 		Parameters : None
@@ -1103,6 +1106,9 @@ class GoalDesignerController from WindowsControllerParent
 		Output		: None
 	*/
 	func CheckLoadingComponent cFilePath
+		if lNoDynamicComponents {
+			return 
+		}
 		if fexists(cFilePath) {
 			if find(aComponentsFilesList,cFilePath) = 0 { 
 				aComponentsFilesList + cFilePath

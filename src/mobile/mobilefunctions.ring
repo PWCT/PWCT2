@@ -11,7 +11,7 @@ C_MOBILEVERSION = "PWCT 2.0 For Mobile - 2021.02.10"
 	The next function to Control if we need to use the Mobile Settings or Not
 */
 
-func PWCTIsMobile cOption	
+func PWCTIsMobile cOption
 	/*
 	 We can use cOption to have more control on settings
 	 cOption can be 
