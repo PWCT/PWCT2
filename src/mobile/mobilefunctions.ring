@@ -71,6 +71,8 @@ func PWCTIsMobile cOption
 				return False
 			case :SpecialSearchWindow
 				return False
+			case :ComponentsBrowserOkCancel
+				return False 
 		}
 	}
 	return isMobile() | isWebAssembly()
