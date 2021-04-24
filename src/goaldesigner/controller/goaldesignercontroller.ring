@@ -1758,4 +1758,5 @@ class GoalDesignerController from WindowsControllerParent
 		aSteps = reverse(aSteps)
 		for nStep in aSteps {
 			ModifyAction2(nStep) 
+			PWCT_APP.processevents()
 		}
