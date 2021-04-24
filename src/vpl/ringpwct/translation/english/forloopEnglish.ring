@@ -20,5 +20,5 @@
 		T_CT_FORLOOP_IP_START  = "Start : "
 		T_CT_FORLOOP_IP_TO = "To : "
 		T_CT_FORLOOP_IP_STEP = "Step : "
-		T_CT_FORLOOP_IP_STARTVALUE = "x = 1"
+		T_CT_FORLOOP_IP_STARTVALUE = "t = 1"
 
