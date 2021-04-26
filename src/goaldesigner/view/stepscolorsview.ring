@@ -201,6 +201,11 @@ class StepsColorsView from WindowsViewParent
 			setChecked(C_STEPSTREE_OPENFILESINNEWTABS)
 			setStateChangedEvent(Method(:OpenFilesInNewTabs))
 		} 
+		checkOpenInteractionsInNewWindows = new QCheckBox(win) {
+			setText(T_SC_OPENINTERACTIONSINNEWWINDOWS) # "Open interaction pages in new windows"
+			setChecked(C_STEPSTREE_OPENINTERACTIONSINNEWWINDOWS)
+			setStateChangedEvent(Method(:OpenInteractionsInNewWindows))
+		} 
 
 
 		btnClose = new qpushbutton(win) {
@@ -224,6 +229,7 @@ class StepsColorsView from WindowsViewParent
 			AddLayout(layoutGeneral)
 			AddWidget(checkAutoRun)
 			AddWidget(checkOpenFilesInNewTabs)
+			AddWidget(checkOpenInteractionsInNewWindows)
 			AddWidget(btnClose)
 			insertStretch( -1, 1 )
 		}

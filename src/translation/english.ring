@@ -222,6 +222,7 @@
 	T_SC_STEPSTREELINES = "Show Steps Tree Lines"
 	T_SC_AUTORUN = "Auto Run"
 	T_SC_OPENFILESINNEWTABS = "Open files in new tabs"
+	T_SC_OPENINTERACTIONSINNEWWINDOWS = "Open interaction pages in new windows"
 
 # Components Browser Window
 

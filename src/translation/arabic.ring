@@ -221,6 +221,7 @@
 	T_SC_STEPSTREELINES = "إظهار خطوط شجرة الخطوات"
 	T_SC_AUTORUN = "تشغيل تلقائي"
 	T_SC_OPENFILESINNEWTABS = "فتح الملفات فى حيز مستقل"
+	T_SC_OPENINTERACTIONSINNEWWINDOWS = "فتح الصفحات التفاعلية فى نوافذ مستقلة"
 
 # Components Browser Window
 

@@ -94,3 +94,7 @@ class StepsColorsController from WindowsControllerParent
 			lOpenFilesInNewTabs = C_STEPSTREE_OPENFILESINNEWTABS
 			CloseTabsExceptTheFirstOne()
 		}
+
+	func OpenInteractionsInNewWindows
+		C_STEPSTREE_OPENINTERACTIONSINNEWWINDOWS = oView.checkOpenInteractionsInNewWindows.checkState()
+		parent().lInteractionPagesInGoalDesigner = ! C_STEPSTREE_OPENINTERACTIONSINNEWWINDOWS
