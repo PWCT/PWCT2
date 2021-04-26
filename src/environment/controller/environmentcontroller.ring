@@ -384,6 +384,7 @@ class EnvironmentController from WindowsControllerParent
 			parent().oView.oStepsTree.setfocus(0)
 		# Set focus to the Files Manager Tree
 			oView.oFilesTree.setfocus(0)
+			oView.oDockFilesManager.raise()
 		lActiveGoalDesignerChanged = True
 		if lDisplayLoadingMessage and lUseLoadingMessage {
 			QuickMsg().CloseMsg()
