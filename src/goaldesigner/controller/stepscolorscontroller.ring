@@ -90,15 +90,7 @@ class StepsColorsController from WindowsControllerParent
 
 	func OpenFilesInNewTabs
 		C_STEPSTREE_OPENFILESINNEWTABS = oView.checkOpenFilesInNewTabs.checkState()
-		parent().parent().lOpenFilesInNewTabs = C_STEPSTREE_OPENFILESINNEWTABS
-		parent().parent() {
-			nMax = len(aActiveFiles)
-			if nMax < 2 {
-				return 
-			}
-			for t=2 to nMax {
-				aActiveFiles[2][1].close()
-				del(aActiveFiles,2)
-			}
-			setParentObject(aActiveFiles[1][4])
+		parent().parent() {	# GoalDesigner.Environment
+			lOpenFilesInNewTabs = C_STEPSTREE_OPENFILESINNEWTABS
+			CloseTabsExceptTheFirstOne()
 		}

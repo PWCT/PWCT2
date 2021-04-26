@@ -1299,4 +1299,13 @@ class EnvironmentController from WindowsControllerParent
 		oView.win.show()
 		PWCT_APP.processevents()
 
-
+	func CloseTabsExceptTheFirstOne
+		nMax = len(aActiveFiles)
+		if nMax < 2 {
+			return 
+		}
+		for t=2 to nMax {
+			aActiveFiles[2][1].close()
+			del(aActiveFiles,2)
+		}
+		setParentObject(aActiveFiles[1][4])
