@@ -87,3 +87,17 @@ class StepsColorsController from WindowsControllerParent
 	func AutoRun 
 		C_STEPSTREE_AUTORUN = oView.checkAutoRun.checkState()
 		parent().lAutoRun = C_STEPSTREE_AUTORUN
+
+	func OpenFilesInNewTabs
+		C_STEPSTREE_OPENFILESINNEWTABS = oView.checkOpenFilesInNewTabs.checkState()
+		parent().parent().lOpenFilesInNewTabs = C_STEPSTREE_OPENFILESINNEWTABS
+		parent().parent() {
+			nMax = len(aActiveFiles)
+			if nMax < 2 {
+				return 
+			}
+			for t=1 to nMax-1 {
+				aActiveFiles[1][1].close()
+				del(aActiveFiles,1)
+			}
+		}

@@ -33,7 +33,7 @@ class EnvironmentController from WindowsControllerParent
 	if PWCTIsMobile(:OpenFilesInNewTabs) {
 		lOpenFilesInNewTabs = False 
 	else 
-		lOpenFilesInNewTabs = False
+		lOpenFilesInNewTabs = C_STEPSTREE_OPENFILESINNEWTABS
 	}
 
 	lUseOpenFilesTimer = False

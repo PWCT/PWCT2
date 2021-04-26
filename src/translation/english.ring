@@ -221,6 +221,7 @@
 	T_SC_INDENTATION = "Indentation"
 	T_SC_STEPSTREELINES = "Show Steps Tree Lines"
 	T_SC_AUTORUN = "Auto Run"
+	T_SC_OPENFILESINNEWTABS = "Open files in new tabs"
 
 # Components Browser Window
 

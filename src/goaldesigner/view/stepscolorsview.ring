@@ -196,6 +196,13 @@ class StepsColorsView from WindowsViewParent
 			setStateChangedEvent(Method(:AutoRun))
 		} 
 
+		checkOpenFilesInNewTabs = new QCheckBox(win) {
+			setText(T_SC_OPENFILESINNEWTABS) # "Open Files In New Tabs"
+			setChecked(C_STEPSTREE_OPENFILESINNEWTABS)
+			setStateChangedEvent(Method(:OpenFilesInNewTabs))
+		} 
+
+
 		btnClose = new qpushbutton(win) {
 			setText(T_SC_CLOSE) # "Close"
 			setclickevent(Method(:closeAction))
@@ -216,6 +223,7 @@ class StepsColorsView from WindowsViewParent
 			Addlayout(layoutHData)
 			AddLayout(layoutGeneral)
 			AddWidget(checkAutoRun)
+			AddWidget(checkOpenFilesInNewTabs)
 			AddWidget(btnClose)
 			insertStretch( -1, 1 )
 		}
