@@ -96,8 +96,9 @@ class StepsColorsController from WindowsControllerParent
 			if nMax < 2 {
 				return 
 			}
-			for t=1 to nMax-1 {
-				aActiveFiles[1][1].close()
-				del(aActiveFiles,1)
+			for t=2 to nMax {
+				aActiveFiles[2][1].close()
+				del(aActiveFiles,2)
 			}
+			setParentObject(aActiveFiles[1][4])
 		}
