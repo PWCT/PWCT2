@@ -98,3 +98,4 @@ class StepsColorsController from WindowsControllerParent
 	func OpenInteractionsInNewWindows
 		C_STEPSTREE_OPENINTERACTIONSINNEWWINDOWS = oView.checkOpenInteractionsInNewWindows.checkState()
 		parent().lInteractionPagesInGoalDesigner = ! C_STEPSTREE_OPENINTERACTIONSINNEWWINDOWS
+		parent().ComponentsBrowserWindow().lInteractionPagesInGoalDesigner = ! C_STEPSTREE_OPENINTERACTIONSINNEWWINDOWS
