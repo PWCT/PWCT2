@@ -259,7 +259,6 @@ class ComponentsBrowserController from WindowsControllerParent
 		parent().UpdateTheTimeMachine()
 		# Clear the Search Textbox 
 			oView.oTextSearch.SetText("")
-		parent().oView.oStepsTree.setFocus(0)
 		# To Correctly draw items (Avoid a Qt bug in drawing)
 			parent().oView.FixDrawing()
 		# Select the First Generated Step That Allow New Interactions 
@@ -272,6 +271,9 @@ class ComponentsBrowserController from WindowsControllerParent
 			}
 		# Run the application and display the output (optional)
 			parent().AutoRun()
+		# The Focus 
+			parent().parent().oView.oDockGoalDesigner.raise()
+			parent().oView.oStepsTree.setFocus(0)
 		# When working on Mobile (Close the components browser window)
 			if PWCTIsMobile(:CloseCBAfterRingCode2PWCT) {
 				closeAction()
