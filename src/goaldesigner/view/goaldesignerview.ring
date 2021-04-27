@@ -95,6 +95,13 @@ class GoalDesignerView from WindowsViewParent
 		}		
 		setBtnImage(btnModify,AppFile("images/edit.png"))
 
+		btnMax = new qToolButton(win) {
+			setToolTip(T_GD_FULLSCREEN)
+			setClickEvent(Method(:FullScreen))
+			self.mobileButtonSize(btnMax)
+		}
+		setBtnImage(btnMax,AppFile("images/fullscreen.png"))
+
 		if not PWCTIsMobile(:GoalDesignerButtons) {
 
 			btnCutSteps = new QToolButton(win) {
@@ -133,13 +140,6 @@ class GoalDesignerView from WindowsViewParent
 				self.mobileButtonSize(btnSearch)
 			}
 			setBtnImage(btnSearch,AppFile("images/search.png"))
-			btnMax = new qToolButton(win) {
-				setToolTip(T_GD_FULLSCREEN)
-				setClickEvent(Method(:FullScreen))
-				self.mobileButtonSize(btnMax)
-			}
-			setBtnImage(btnMax,AppFile("images/fullscreen.png"))
-	
 
 		}
 
