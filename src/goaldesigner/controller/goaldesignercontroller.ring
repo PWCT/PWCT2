@@ -84,6 +84,9 @@ class GoalDesignerController from WindowsControllerParent
 	# Don't support Eval for loading new components 
 		lNoDynamicComponents = True 
 
+	# Don't display the step code 
+		lHideStepCodeTab = True
+
 	/*
 		Purpose : Show the Window
 		Parameters : None
@@ -91,7 +94,11 @@ class GoalDesignerController from WindowsControllerParent
 	*/
 
 	func Start
+		if lHideStepCodeTab {
+			oView.oTab.tabbar().hide()
+		}
 		oView.Show()
+
 
 
 	/*
