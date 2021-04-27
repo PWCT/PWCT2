@@ -133,6 +133,11 @@ class GoalDesignerView from WindowsViewParent
 				self.mobileButtonSize(btnSearch)
 			}
 			setBtnImage(btnSearch,AppFile("images/search.png"))
+			btnMax = new qToolButton(win) {
+				setToolTip(T_GD_FULLSCREEN)
+				setClickEvent(Method(:FullScreen))
+			}
+			setBtnImage(btnMax,AppFile("images/fullscreen.png"))
 	
 
 		}
@@ -159,13 +164,6 @@ class GoalDesignerView from WindowsViewParent
 			}
 			AddWidget(btnPlay)
 			AddWidget(sliderTimeMachine)
-			if PWCTIsMobile(:GoalDesignerFullScreen) {
-				btnMax = new qPushButton(win) {
-					setClickEvent(Method(:FullScreen))
-				}
-				setBtnImage(btnMax,AppFile("images/fullscreen.png"))
-				AddWidget(btnMax)
-			}
 		}
 		layoutVPages = new qVBoxLayout()
 		if C_PROPERTIES_REMOVEVERTICALSPACESBETWEENINTERACTIONPAGES {
@@ -190,53 +188,8 @@ class GoalDesignerView from WindowsViewParent
 		oSplitter = new qSplitter(win) {
 			AddWidget(oTab)
 			AddWidget(widgetCB)
-			//AddWidget(widgetVPages)
 			AddWidget(oVPagesScroll)
 		}		
-/*
-		layoutVBtns = new qVBoxLayout()
-		{	
-			if not PWCTIsMobile(:GoalDesignerButtons) {
-				AddWidget(btnAddStep)
-				AddWidget(btnInteract)		
-				AddWidget(btnModify)		
-				AddWidget(btnDeleteStep)
-				AddWidget(btnMoveStepUp)
-				AddWidget(btnMoveStepDown)
-				AddWidget(btnIncreaseSize)
-				AddWidget(btnDecreaseSize)
-				AddWidget(btnIgnore)
-				AddWidget(btnCutSteps)
-				AddWidget(btnCopySteps)
-				AddWidget(btnPasteSteps)
-				AddWidget(btnSearch)
-			else 
-				AddWidget(btnAddStep)
-				AddWidget(btnInteract)		
-				AddWidget(btnModify)		
-				AddWidget(btnDeleteStep)
-				AddWidget(btnMoveStepUp)
-				AddWidget(btnMoveStepDown)
-				AddWidget(btnIgnore)
-			}
-			insertStretch( -1, 1 )
-			setContentsMargins(0,0,0,0)
-		}
-		oButtonsScrollWidget = new qWidget() {
-			setLayout(layoutVBtns)
-		}
-		oButtonsScroll = new qScrollArea(null) {
-			setFrameShape(QFrame_NoFrame)
-			if PWCTIsMobile(:GoalDesignerButtonsSize) {
-				setMaximumwidth(145)
-			else
-				setMaximumwidth(40)
-			}
-			setWidget(oButtonsScrollWidget)
-			setwidgetresizable(True)
-			setHorizontalScrollBarPolicy(Qt_ScrollBarAlwaysOff)
-		}
-*/
 
 		win {
 			tool1 = addtoolbar("gd")  {
@@ -254,6 +207,7 @@ class GoalDesignerView from WindowsViewParent
 					AddWidget(btnCopySteps)
 					AddWidget(btnPasteSteps)
 					AddWidget(btnSearch)
+					AddWidget(btnMax)
 				else
 					AddWidget(btnAddStep)
 					AddWidget(btnInteract)		
@@ -262,6 +216,7 @@ class GoalDesignerView from WindowsViewParent
 					AddWidget(btnMoveStepUp)
 					AddWidget(btnMoveStepDown)
 					AddWidget(btnIgnore)
+					AddWidget(btnMax)
 				}
 			}
 		}

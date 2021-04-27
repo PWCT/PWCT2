@@ -128,6 +128,7 @@
 	T_GD_SEARCH = "Search"					# Button
 	T_GD_COMMENTUNCOMMENT = "Comment/UnComment"  # Button
 	T_GD_CLOSEFILE = "Close File"				# Button
+	T_GD_FULLSCREEN = "Full Screen"
 
 	# Steps Tree
 

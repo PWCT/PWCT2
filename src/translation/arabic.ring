@@ -127,6 +127,7 @@
 	T_GD_SEARCH = "بحث"					# Button
 	T_GD_COMMENTUNCOMMENT = "تعليق/الغاء التعليق" 	# Button
 	T_GD_CLOSEFILE = "اغلاق الملف"				# Button
+	T_GD_FULLSCREEN = "ملىء الشاشة"
 
 	# Steps Tree
 
