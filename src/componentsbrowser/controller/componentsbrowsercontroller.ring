@@ -273,6 +273,8 @@ class ComponentsBrowserController from WindowsControllerParent
 			parent().AutoRun()
 		# The Focus 
 			parent().parent().oView.oDockGoalDesigner.raise()
+			parent().oView.win.raise()
+			parent().oView.win.activatewindow()
 			parent().oView.oStepsTree.setFocus(0)
 		# When working on Mobile (Close the components browser window)
 			if PWCTIsMobile(:CloseCBAfterRingCode2PWCT) {
