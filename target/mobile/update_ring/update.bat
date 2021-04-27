@@ -7,8 +7,8 @@ copy b:\ring\language\include\*.h ..\qtproject\ring\include\
 copy ring_ext.h ..\qtproject\ring\include\
 cd ..\..\..\..\ring\extensions\ringqt\
 call gencodeandroid.bat
-copy cpp\src\*.cpp b:\pwct2\target\mobile\qtproject\ring\src\
-copy cpp\include\*.h b:\pwct2\target\mobile\qtproject\ring\include\
+copy cpp\src\*.cpp b:\pwct2\target\mobile\qtproject\ringqt\src\
+copy cpp\include\*.h b:\pwct2\target\mobile\qtproject\ringqt\include\
 call gencodeqt512_nobluetooth.bat
 cd \
 cd B:\pwct2\target\mobile\update_ring
