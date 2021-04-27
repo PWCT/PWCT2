@@ -1690,9 +1690,12 @@ class GoalDesignerController from WindowsControllerParent
 			lFullScreen = True 
 			oView.win.setparent(NULL)
 			oView.win.showFullScreen()
+			oDockGoalDesigner.hide()
 		else 
 			lFullScreen = False 
 			oDockGoalDesigner.setWidget(oView.win)
+			oDockGoalDesigner.show()
+			oDockGoalDesigner.raise()
 		}
 
 
