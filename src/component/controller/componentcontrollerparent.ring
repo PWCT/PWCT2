@@ -333,6 +333,12 @@ Class ComponentControllerParent from WindowsControllerParent
 		oView.win.activateWindow()
 		setTheFocusToTheFirstTextBox()
 
+	/*
+		Purpose : Activate the first textbox in the interaction page 
+		Parameters : None
+		Output : None
+	*/
+
 	func setTheFocusToTheFirstTextBox
 		if oView.lFirstTextBox = False {
 			oView.oFirstText.SetFocus(0)
