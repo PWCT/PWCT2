@@ -324,7 +324,11 @@ class ComponentsBrowserController from WindowsControllerParent
 		parent().oView.win.raise()
 		Last_Window().oView.win.raise()
 		Last_Window().oView.win.show()
-		Last_Window().setTheFocusToTheFirstTextBox()
+		# If we use components without interaction pages 
+		# Then we don't have setTheFocusToTheFirstTextBox() !
+			if isMethod(Last_Window(),:setTheFocusToTheFirstTextBox) {
+				Last_Window().setTheFocusToTheFirstTextBox()
+			}
 
 	/*
 		Purpose : Show the components browser window and activate search textBox
