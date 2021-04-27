@@ -1696,8 +1696,12 @@ class GoalDesignerController from WindowsControllerParent
 		if lFullScreen = False {
 			lFullScreen = True 
 			oView.win.setparent(NULL)
-			oView.win.showFullScreen()
-			oDockGoalDesigner.hide()
+			if ! PWCTIsMobile(:GDFullScreen) {
+				oView.win.showFullScreen()
+				oDockGoalDesigner.hide()
+			else 
+				oView.win.showMaximized()
+			}
 		else 
 			lFullScreen = False 
 			oDockGoalDesigner.setWidget(oView.win)

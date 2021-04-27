@@ -136,6 +136,7 @@ class GoalDesignerView from WindowsViewParent
 			btnMax = new qToolButton(win) {
 				setToolTip(T_GD_FULLSCREEN)
 				setClickEvent(Method(:FullScreen))
+				self.mobileButtonSize(btnMax)
 			}
 			setBtnImage(btnMax,AppFile("images/fullscreen.png"))
 	
