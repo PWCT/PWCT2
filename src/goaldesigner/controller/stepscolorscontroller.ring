@@ -99,3 +99,7 @@ class StepsColorsController from WindowsControllerParent
 		C_STEPSTREE_OPENINTERACTIONSINNEWWINDOWS = oView.checkOpenInteractionsInNewWindows.checkState()
 		parent().lInteractionPagesInGoalDesigner = ! C_STEPSTREE_OPENINTERACTIONSINNEWWINDOWS
 		parent().ComponentsBrowserWindow().lInteractionPagesInGoalDesigner = ! C_STEPSTREE_OPENINTERACTIONSINNEWWINDOWS
+
+	func ShowTimeMachine
+		C_STEPSTREE_SHOWTIMEMACHINE = oView.checkShowTimeMachine.checkState()
+		parent().showTimeMachine(C_STEPSTREE_SHOWTIMEMACHINE)

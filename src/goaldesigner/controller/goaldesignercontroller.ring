@@ -1770,3 +1770,18 @@ class GoalDesignerController from WindowsControllerParent
 			ModifyAction2(nStep) 
 			PWCT_APP.processevents()
 		}
+
+	func showTimeMachine nStatus 
+		if nStatus {
+			oView.sliderTimeMachine.show()
+			oView.btnPlay.show()
+			if not PWCTIsMobile(:TimeMachineLabel) {
+				oView.labelTM.show()
+			}
+		else 
+			oView.sliderTimeMachine.hide()
+			oView.btnPlay.hide()
+			if not PWCTIsMobile(:TimeMachineLabel) {
+				oView.labelTM.hide()
+			}
+		}

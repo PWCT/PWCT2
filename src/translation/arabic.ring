@@ -223,6 +223,7 @@
 	T_SC_AUTORUN = "تشغيل تلقائي"
 	T_SC_OPENFILESINNEWTABS = "فتح الملفات فى حيز مستقل"
 	T_SC_OPENINTERACTIONSINNEWWINDOWS = "فتح الصفحات التفاعلية فى نوافذ مستقلة"
+	T_SC_SHOWTIMEMACHINE = "عرض خيارات الة الزمن"
 
 # Components Browser Window
 

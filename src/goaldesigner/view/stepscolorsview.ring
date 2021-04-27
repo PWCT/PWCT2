@@ -195,7 +195,6 @@ class StepsColorsView from WindowsViewParent
 			setChecked(C_STEPSTREE_AUTORUN)
 			setStateChangedEvent(Method(:AutoRun))
 		} 
-
 		checkOpenFilesInNewTabs = new QCheckBox(win) {
 			setText(T_SC_OPENFILESINNEWTABS) # "Open Files In New Tabs"
 			setChecked(C_STEPSTREE_OPENFILESINNEWTABS)
@@ -206,6 +205,12 @@ class StepsColorsView from WindowsViewParent
 			setChecked(C_STEPSTREE_OPENINTERACTIONSINNEWWINDOWS)
 			setStateChangedEvent(Method(:OpenInteractionsInNewWindows))
 		} 
+		checkShowTimeMachine = new QCheckBox(win) {
+			setText(T_SC_SHOWTIMEMACHINE) # "Show The Time Machine Options"
+			setChecked(C_STEPSTREE_SHOWTIMEMACHINE)
+			setStateChangedEvent(Method(:ShowTimeMachine))
+		} 
+
 
 
 		btnClose = new qpushbutton(win) {
@@ -230,6 +235,7 @@ class StepsColorsView from WindowsViewParent
 			AddWidget(checkAutoRun)
 			AddWidget(checkOpenFilesInNewTabs)
 			AddWidget(checkOpenInteractionsInNewWindows)
+			AddWidget(checkShowTimeMachine)
 			AddWidget(btnClose)
 			insertStretch( -1, 1 )
 		}

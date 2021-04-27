@@ -224,6 +224,7 @@
 	T_SC_AUTORUN = "Auto Run"
 	T_SC_OPENFILESINNEWTABS = "Open files in new tabs"
 	T_SC_OPENINTERACTIONSINNEWWINDOWS = "Open interaction pages in new windows"
+	T_SC_SHOWTIMEMACHINE = "Show the Time Machine options"
 
 # Components Browser Window
 
