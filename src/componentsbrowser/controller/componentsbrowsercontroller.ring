@@ -278,6 +278,8 @@ class ComponentsBrowserController from WindowsControllerParent
 			}
 
 	func OpenSelected
+		# Clear the Search TextBox
+			oView.oTextSearch.SetText("")
 		oItem  = oView.oComponentsTree.currentItem()
 		nID = oView.oComponentsTree.GetIDByObj(oItem)
 		if nID = 1 {	# Avoid root node
@@ -289,7 +291,6 @@ class ComponentsBrowserController from WindowsControllerParent
 		cFilePath = cComponentsPath + cFile + ".ring"
 		Parent().CheckLoadingComponent(cFilePath)
 		# Start the Component
-
 			if lInteractionPagesInGoalDesigner {
 				Open_WindowNoShow(cFile+:ComponentController)
 				parent().oView.layoutVPages.InsertWidget(0,Last_Window().oView.win,0,0)
@@ -311,9 +312,6 @@ class ComponentsBrowserController from WindowsControllerParent
 			Last_Window().InternalAfterOpen()
 			Last_Window().AfterOpen()
 
-
-		# Clear the Search TextBox
-			oView.oTextSearch.SetText("")
 		if not Parent().lComponentsBrowserInGoalDesigner and not parent().isDockForComponentsBrowser() {
 			oView.win.hide()
 		}
@@ -321,6 +319,10 @@ class ComponentsBrowserController from WindowsControllerParent
 			C_ENV_DEFAULT_MODE = C_ENV_MODE_GD {
 			parent().parent().oView.oDockGoalDesigner.raise()
 		}
+		parent().oView.win.raise()
+		Last_Window().oView.win.raise()
+		Last_Window().oView.win.show()
+		Last_Window().setTheFocusToTheFirstTextBox()
 
 	/*
 		Purpose : Show the components browser window and activate search textBox

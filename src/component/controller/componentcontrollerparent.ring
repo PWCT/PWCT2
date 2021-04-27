@@ -331,6 +331,9 @@ Class ComponentControllerParent from WindowsControllerParent
 			Super.Start()
 		}
 		oView.win.activateWindow()
+		setTheFocusToTheFirstTextBox()
+
+	func setTheFocusToTheFirstTextBox
 		if oView.lFirstTextBox = False {
 			oView.oFirstText.SetFocus(0)
 		}
