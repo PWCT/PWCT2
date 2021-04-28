@@ -202,6 +202,22 @@ class ComponentsBrowserController from WindowsControllerParent
 		}
 		# Get the Search Value 
 			cFind = oView.oTextSearch.Text()	
+			TextualCodeToVisualCode(cFind)
+		# Clear the Search Textbox 
+			oView.oTextSearch.SetText("")
+		# Run the application and display the output (optional)
+			parent().AutoRun()
+		# The Focus 
+			parent().parent().oView.oDockGoalDesigner.raise()
+			parent().oView.win.raise()
+			parent().oView.win.activatewindow()
+			parent().oView.oStepsTree.setFocus(0)
+		# When working on Mobile (Close the components browser window)
+			if PWCTIsMobile(:CloseCBAfterRingCode2PWCT) {
+				closeAction()
+			}
+
+	func TextualCodeToVisualCode cFind 	
 		# Convert Ring Code to PWCT (Steps & Interactions)
 			aLists = RingCode2PWCT(cFind)
 			if len(aLists) = 0 { return }
@@ -265,8 +281,6 @@ class ComponentsBrowserController from WindowsControllerParent
 		parent().oView.oStepsTree.setUpdatesEnabled(True)
 		parent().oView.oStepsTree.blockSignals(False)
 		parent().UpdateTheTimeMachine()
-		# Clear the Search Textbox 
-			oView.oTextSearch.SetText("")
 		# To Correctly draw items (Avoid a Qt bug in drawing)
 			parent().oView.FixDrawing()
 		# Select the First Generated Step That Allow New Interactions 
@@ -276,17 +290,6 @@ class ComponentsBrowserController from WindowsControllerParent
 					parent().oView.oStepsTree.SetCurrentItem(oItem,0)	
 					exit
 				}				
-			}
-		# Run the application and display the output (optional)
-			parent().AutoRun()
-		# The Focus 
-			parent().parent().oView.oDockGoalDesigner.raise()
-			parent().oView.win.raise()
-			parent().oView.win.activatewindow()
-			parent().oView.oStepsTree.setFocus(0)
-		# When working on Mobile (Close the components browser window)
-			if PWCTIsMobile(:CloseCBAfterRingCode2PWCT) {
-				closeAction()
 			}
 
 	func OpenSelected
