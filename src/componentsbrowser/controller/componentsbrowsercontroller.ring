@@ -162,6 +162,7 @@ class ComponentsBrowserController from WindowsControllerParent
 			# Avoid lower(cFind) to support upper/lower letters
 				cFind = trim(oView.oTextSearch.Text())
 			QuickMsg().setText(cFind)
+			QuickMsg().centerTheWindow()
 			QuickMsg().show()
 			# The next code is a workaround in a bug in Qt for WebAssembly 
 			# Because the LineEdit lost the focus for the QuickMsg window 
