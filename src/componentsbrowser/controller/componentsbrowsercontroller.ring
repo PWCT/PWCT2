@@ -41,6 +41,9 @@ class ComponentsBrowserController from WindowsControllerParent
 	# Escape Key (To close the window)
 		lEscapeKey = False
 
+	# Always show the special search window 
+		lAlwaysShowSpecialWindow = True
+
 	/*
 		Purpose : Key Press Action
 		Parameters : None
@@ -152,10 +155,14 @@ class ComponentsBrowserController from WindowsControllerParent
 				oView.oComponentsTree.SetCurrentItem(oItem,0)
 				oView.oComponentsTree.ScrollToItem(oItem,0)	
 				lSearchResult = True
-				if lSpecialSearchWindow {
-					QuickMsg().hide()
+				if ! lAlwaysShowSpecialWindow {
+					if lSpecialSearchWindow {
+						QuickMsg().hide()
+					}
+					return 
+				else 
+					exit
 				}
-				return 
 			}
 		}
 		if lSpecialSearchWindow {
