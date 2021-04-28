@@ -668,9 +668,15 @@ class GoalDesignerController from WindowsControllerParent
 		oView.oTreeFilter.setEventOutput(False)
 
 	func UpdateSearchField cText 
-		if InteractAction() {
-			ComponentsBrowserWindow().oView.oTextSearch.setText(Lower(cText))			
-			ComponentsBrowserWindow().SearchAction()
+		if lFullScreen {
+			oView.oTextSearch.setText(Lower(cText))			
+			oView.oTextSearch.setfocus(0)
+			SpecialSearch()
+		else 
+			if InteractAction() {
+				ComponentsBrowserWindow().oView.oTextSearch.setText(Lower(cText))			
+				ComponentsBrowserWindow().SearchAction()
+			}
 		}
 
 	/*
@@ -1702,6 +1708,7 @@ class GoalDesignerController from WindowsControllerParent
 			oView.win.setparent(NULL)
 			oView.win.showFullScreen()
 			oDockGoalDesigner.hide()
+			oView.oStepsTree.setFocus(0)
 		else 
 			lFullScreen = False 
 			oDockGoalDesigner.setWidget(oView.win)
@@ -1788,4 +1795,25 @@ class GoalDesignerController from WindowsControllerParent
 			if not PWCTIsMobile(:TimeMachineLabel) {
 				oView.labelTM.hide()
 			}
+		}
+
+	func SpecialSearch
+		cFind = oView.oTextSearch.text()
+		ComponentsBrowserWindow().QuickMsg().setText(cFind)
+		ComponentsBrowserWindow().QuickMsg().centerTheWindow()
+		ComponentsBrowserWindow().QuickMsg().show()
+		# The next code is a workaround in a bug in Qt for WebAssembly 
+		# Because the LineEdit lost the focus for the QuickMsg window 
+		# And we want to keep it 
+		ComponentsBrowserWindow().QuickMsg().oView.win.activatewindow()
+		oView.oTextSearch.activatewindow()
+		oView.oTextSearch.setFocus(7)
+
+	func SpecialSearchEnterPressAction
+		oView.oTextFilter.setEventOutput(False)
+		if oView.oTextFilter.getKeyCode() = 16777220 {	
+			ComponentsBrowserWindow().QuickMsg().hide()
+			cFind = oView.oTextSearch.text()
+			ComponentsBrowserWindow().TextualCodeToVisualCode(cFind)
+			oView.oStepsTree.setFOcus(0)
 		}

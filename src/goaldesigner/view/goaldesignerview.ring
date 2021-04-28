@@ -258,6 +258,15 @@ class GoalDesignerView from WindowsViewParent
                         stop()
                 }
 
+		oTextSearch = new qLineEdit(win) {
+			setTextEditedEvent( Method( :SpecialSearch ) )
+			oTextFilter = new qallevents(oTextSearch)
+			oTextFilter.setKeyPressEvent(Method(:SpecialSearchEnterPressAction))								
+			installeventfilter(oTextFilter)
+			move(-100,-100)
+		}
+
+
 	}	
 
 	func StepsTreeStyle
