@@ -26,7 +26,7 @@ class GoalDesignerController from WindowsControllerParent
 	if PWCTIsMobile(:InteractionPagesInGoalDesigner) {
 		lInteractionPagesInGoalDesigner = False
 	else 
-		lInteractionPagesInGoalDesigner = True
+		lInteractionPagesInGoalDesigner = ! C_STEPSTREE_OPENINTERACTIONSINNEWWINDOWS
 	}
 
 
@@ -87,6 +87,9 @@ class GoalDesignerController from WindowsControllerParent
 	# Don't display the step code 
 		lHideStepCodeTab = True
 
+	# Show/Hide the Time Machine Options 
+		lShowTimeMachine = C_STEPSTREE_SHOWTIMEMACHINE
+
 	/*
 		Purpose : Show the Window
 		Parameters : None
@@ -97,6 +100,7 @@ class GoalDesignerController from WindowsControllerParent
 		if lHideStepCodeTab {
 			oView.oTab.tabbar().hide()
 		}
+		ShowTimeMachine(lShowTimeMachine)
 		oView.Show()
 
 

@@ -25,7 +25,7 @@ class ComponentsBrowserController from WindowsControllerParent
 	if PWCTIsMobile(:InteractionPagesInGoalDesigner) {
 		lInteractionPagesInGoalDesigner = False
 	else
-		lInteractionPagesInGoalDesigner = True
+		lInteractionPagesInGoalDesigner = ! C_STEPSTREE_OPENINTERACTIONSINNEWWINDOWS
 	}
 
 	# Search Result 
