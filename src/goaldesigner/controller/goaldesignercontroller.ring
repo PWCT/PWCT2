@@ -1802,6 +1802,11 @@ class GoalDesignerController from WindowsControllerParent
 
 	func SpecialSearch
 		cFind = oView.oTextSearch.text()
+		if trim(cFind) = "" {
+			ComponentsBrowserWindow().QuickMsg().hide()
+			oView.oStepsTree.setFocus(0)
+			return 
+		}
 		ComponentsBrowserWindow().QuickMsg().setText(cFind)
 		ComponentsBrowserWindow().QuickMsg().centerTheWindow()
 		ComponentsBrowserWindow().QuickMsg().show()
