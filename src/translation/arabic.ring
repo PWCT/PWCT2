@@ -224,6 +224,7 @@
 	T_SC_OPENFILESINNEWTABS = "فتح الملفات فى حيز مستقل"
 	T_SC_OPENINTERACTIONSINNEWWINDOWS = "فتح الصفحات التفاعلية فى نوافذ مستقلة"
 	T_SC_SHOWTIMEMACHINE = "عرض خيارات الة الزمن"
+	T_SC_AVOIDCOMPONENTSBROWSERS = "تجنب متصفح المكونات"
 
 # Components Browser Window
 

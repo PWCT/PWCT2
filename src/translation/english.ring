@@ -225,6 +225,7 @@
 	T_SC_OPENFILESINNEWTABS = "Open files in new tabs"
 	T_SC_OPENINTERACTIONSINNEWWINDOWS = "Open interaction pages in new windows"
 	T_SC_SHOWTIMEMACHINE = "Show the Time Machine options"
+	T_SC_AVOIDCOMPONENTSBROWSERS = "Avoid Components Browser"
 
 # Components Browser Window
 

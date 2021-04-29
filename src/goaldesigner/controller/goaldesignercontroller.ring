@@ -90,6 +90,9 @@ class GoalDesignerController from WindowsControllerParent
 	# Show/Hide the Time Machine Options 
 		lShowTimeMachine = C_STEPSTREE_SHOWTIMEMACHINE
 
+	# Avoid the Components Browser 
+		lAvoidComponentsBrowser	= False
+
 	/*
 		Purpose : Show the Window
 		Parameters : None
@@ -668,7 +671,7 @@ class GoalDesignerController from WindowsControllerParent
 		oView.oTreeFilter.setEventOutput(False)
 
 	func UpdateSearchField cText 
-		if lFullScreen {
+		if lFullScreen or lAvoidComponentsBrowser {
 			oView.oTextSearch.setText(Lower(cText))			
 			oView.oTextSearch.setfocus(0)
 			SpecialSearch()

@@ -103,3 +103,7 @@ class StepsColorsController from WindowsControllerParent
 	func ShowTimeMachine
 		C_STEPSTREE_SHOWTIMEMACHINE = oView.checkShowTimeMachine.checkState()
 		parent().showTimeMachine(C_STEPSTREE_SHOWTIMEMACHINE)
+
+	func AvoidComponentsBrowser
+		C_STEPSTREE_AVOIDCOMPONENTSBROWSER = oView.checkAvoidComponentsBrowser.checkState()
+		parent().lAvoidComponentsBrowser = C_STEPSTREE_AVOIDCOMPONENTSBROWSER

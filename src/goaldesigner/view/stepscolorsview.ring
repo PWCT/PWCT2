@@ -210,7 +210,11 @@ class StepsColorsView from WindowsViewParent
 			setChecked(C_STEPSTREE_SHOWTIMEMACHINE)
 			setStateChangedEvent(Method(:ShowTimeMachine))
 		} 
-
+		checkAvoidComponentsBrowser = new QCheckBox(win) {
+			setText(T_SC_AVOIDCOMPONENTSBROWSERS) # "Avoid Components Browser"
+			setChecked(C_STEPSTREE_AVOIDCOMPONENTSBROWSER)
+			setStateChangedEvent(Method(:AvoidComponentsBrowser))
+		} 
 
 
 		btnClose = new qpushbutton(win) {
@@ -236,6 +240,7 @@ class StepsColorsView from WindowsViewParent
 			AddWidget(checkOpenFilesInNewTabs)
 			AddWidget(checkOpenInteractionsInNewWindows)
 			AddWidget(checkShowTimeMachine)
+			AddWidget(checkAvoidComponentsBrowser)
 			AddWidget(btnClose)
 			insertStretch( -1, 1 )
 		}
