@@ -165,6 +165,9 @@ class ComponentsBrowserController from WindowsControllerParent
 				}
 			}
 		}
+		if lSearchResult = False {
+			oView.oComponentsTree { SetCurrentItem(oFirstStep,0) }
+		}
 		if lSpecialSearchWindow {
 			# Avoid lower(cFind) to support upper/lower letters
 				cFind = trim(oView.oTextSearch.Text())
