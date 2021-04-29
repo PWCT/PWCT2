@@ -91,7 +91,7 @@ class GoalDesignerController from WindowsControllerParent
 		lShowTimeMachine = C_STEPSTREE_SHOWTIMEMACHINE
 
 	# Avoid the Components Browser 
-		lAvoidComponentsBrowser	= False
+		lAvoidComponentsBrowser	= C_STEPSTREE_AVOIDCOMPONENTSBROWSER
 
 	/*
 		Purpose : Show the Window
