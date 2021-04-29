@@ -193,7 +193,8 @@ class GoalDesignerView from WindowsViewParent
 		}		
 
 		win {
-			tool1 = addtoolbar("gd")  {
+			gdtool = new qtoolbar(win)
+			tool1 = addtoolbar_2(Qt_LeftToolBarArea,gdtool)  {
 				if not PWCTIsMobile(:GoalDesignerButtons) {
 					AddWidget(btnAddStep)
 					AddWidget(btnInteract)		
