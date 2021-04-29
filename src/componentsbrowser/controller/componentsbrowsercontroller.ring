@@ -300,6 +300,9 @@ class ComponentsBrowserController from WindowsControllerParent
 			oView.oTextSearch.SetText("")
 		oItem  = oView.oComponentsTree.currentItem()
 		nID = oView.oComponentsTree.GetIDByObj(oItem)
+		OpenSelectedByID(nID)
+
+	func OpenSelectedByID nID
 		if nID = 1 {	# Avoid root node
 			return
 		}
@@ -414,3 +417,23 @@ class ComponentsBrowserController from WindowsControllerParent
 				return item 
 			}
 		}
+
+	func FindAndSelectComponent cFind
+		aTree = oModel.GetData()
+		if cFind = "" {
+			return False
+		}
+		nMax = len(aTree) 
+		for x=2 to nMax {
+			item = aTree[x]
+			aContent = item[C_TREEMODEL_CONTENT]
+			cStepName = aContent[:name]
+			cStepName = lower(cStepName)
+			cFind = lower(cFind)
+			if left(cStepName,len(cFind)) = cFind {			
+				nID =  item[C_TREEMODEL_NODEID]
+				OpenSelectedByID(nID)
+				return True 
+			}
+		}
+		return False

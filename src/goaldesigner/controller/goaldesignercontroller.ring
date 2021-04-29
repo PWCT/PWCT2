@@ -1822,6 +1822,8 @@ class GoalDesignerController from WindowsControllerParent
 		if oView.oTextFilter.getKeyCode() = 16777220 {	
 			ComponentsBrowserWindow().QuickMsg().hide()
 			cFind = oView.oTextSearch.text()
-			ComponentsBrowserWindow().TextualCodeToVisualCode(cFind)
-			oView.oStepsTree.setFOcus(0)
+			if ! ComponentsBrowserWindow().FindAndSelectComponent(cFind) {
+				ComponentsBrowserWindow().TextualCodeToVisualCode(cFind)
+				oView.oStepsTree.setFocus(0)
+			}
 		}
