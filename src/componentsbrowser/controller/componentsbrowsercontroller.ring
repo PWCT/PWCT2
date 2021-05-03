@@ -42,7 +42,7 @@ class ComponentsBrowserController from WindowsControllerParent
 		lEscapeKey = False
 
 	# Always show the special search window 
-		lAlwaysShowSpecialWindow = True
+		lAlwaysShowSpecialWindow = False
 
 	/*
 		Purpose : Key Press Action
