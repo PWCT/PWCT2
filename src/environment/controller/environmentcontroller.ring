@@ -1074,13 +1074,14 @@ class EnvironmentController from WindowsControllerParent
 					adddockwidget(Qt_LeftDockWidgetArea,this.oView.oDockComponentsBrowser,1)
 					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockGoalDesigner,2)
 					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockFormDesigner,1)
-					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockOutputWindow,1)
 					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockFilesManager,1)
 					tabifydockwidget(this.oView.oDockFormDesigner,this.oView.oDockGoalDesigner)
-					tabifydockwidget(this.oView.oDockOutputWindow,this.oView.oDockFilesManager)
 					if lUseArabic {
-						tabifydockwidget(this.oView.oDockComponentsBrowser,this.oView.oDockOutputWindow)
+						adddockwidget(Qt_LeftDockWidgetArea,this.oView.oDockOutputWindow,1)
+						tabifydockwidget(this.oView.oDockFilesManager,this.oView.oDockComponentsBrowser)
 					else 
+						adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockOutputWindow,1)
+						tabifydockwidget(this.oView.oDockOutputWindow,this.oView.oDockFilesManager)
 						tabifydockwidget(this.oView.oDockComponentsBrowser,this.oView.oDockFilesManager)
 					}
 				}
