@@ -1,0 +1,148 @@
+# Start Form Designer File
+aObjectsList = [
+	[ :name = "Window" , :id = 1 , :classname = "formdesigner_qwidget" , :data = [
+		 :x = 20 , : y = 20  , 
+		 :width =  547 , :height = 587 , 
+		 :title =  "ToDo Application" , 
+		 :backcolor =  "#c0ff6e" , 
+		 :windowflags =  "" , 
+		 :mainlayout =  "" ,
+		 :WindowIcon =  "" , 
+		 :Menubar =  ""  ,
+		 :IndexType =  0  
+
+		]
+	],
+	[ :name = "ListWidget1" , :id = 2 , :classname = "formdesigner_qlistwidget" , :data = [
+		 :x = 83 , : y = 30  , 
+		 :width =  366 , :height = 225 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "white" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :cItems =  "",
+		 :cCurrentRow =  "",
+		 :setcurrentItemChangedEvent =  "",
+		 :setcurrentRowChangedEvent =  "",
+		 :setcurrentTextChangedEvent =  "",
+		 :setitemActivatedEvent =  "",
+		 :setitemChangedEvent =  "",
+		 :setitemClickedEvent =  "",
+		 :setitemDoubleClickedEvent =  "",
+		 :setitemEnteredEvent =  "",
+		 :setitemPressedEvent =  "",
+		 :setitemSelectionChangedEvent =  ""
+		]
+	],
+	[ :name = "Label1" , :id = 3 , :classname = "formdesigner_qlabel" , :data = [
+		 :x = 15 , : y = 27  , 
+		 :width =  46 , :height = 37 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Tasks",
+		 :textalign =  0
+		]
+	],
+	[ :name = "Label2" , :id = 4 , :classname = "formdesigner_qlabel" , :data = [
+		 :x = 18 , : y = 263  , 
+		 :width =  46 , :height = 44 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Task",
+		 :textalign =  0
+		]
+	],
+	[ :name = "LineEdit1" , :id = 5 , :classname = "formdesigner_qlineedit" , :data = [
+		 :x = 81 , : y = 263  , 
+		 :width =  366 , :height = 44 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "white" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "",
+		 :setTextChangedEvent =  "",
+		 :setcursorPositionChangedEvent =  "",
+		 :seteditingFinishedEvent =  "",
+		 :setreturnPressedEvent =  "",
+		 :setselectionChangedEvent =  "",
+		 :settextEditedEvent =  ""
+		]
+	],
+	[ :name = "Button1" , :id = 6 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 458 , : y = 263  , 
+		 :width =  59 , :height = 44 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Add",
+		 :BtnImage =  "",
+		 :setClickEvent =  "AddTask"
+		]
+	],
+	[ :name = "Button6" , :id = 7 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 463 , : y = 33  , 
+		 :width =  59 , :height = 44 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Delete",
+		 :BtnImage =  "",
+		 :setClickEvent =  "DeleteTask"
+		]
+	],
+	[ :name = "Button3" , :id = 8 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 81 , : y = 319  , 
+		 :width =  366 , :height = 45 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Add Numbers",
+		 :BtnImage =  "",
+		 :setClickEvent =  "Test"
+		]
+	],
+	[ :name = "Button8" , :id = 9 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 81 , : y = 374  , 
+		 :width =  366 , :height = 45 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Print Message",
+		 :BtnImage =  "",
+		 :setClickEvent =  "Test2"
+		]
+	],
+	[ :name = "Button5" , :id = 10 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 81 , : y = 429  , 
+		 :width =  366 , :height = 54 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Change Color",
+		 :BtnImage =  "",
+		 :setClickEvent =  "Test3"
+		]
+	],
+	[ :name = "Button10" , :id = 11 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 81 , : y = 488  , 
+		 :width =  366 , :height = 54 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Maximize the Window",
+		 :BtnImage =  "",
+		 :setClickEvent =  "Test4"
+		]
+	]
+]
+# End Form Designer File
