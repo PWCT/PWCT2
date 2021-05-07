@@ -1090,12 +1090,17 @@ class EnvironmentController from WindowsControllerParent
 			on C_ENV_MODE_TESTING
 				ShowDockableWindows()
 				oView.win {
-					adddockwidget(Qt_LeftDockWidgetArea,this.oView.oDockComponentsBrowser,1)
 					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockGoalDesigner,2)
 					adddockwidget(Qt_BottomDockWidgetArea,this.oView.oDockOutputWindow,1)
 					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockFormDesigner,1)
-					adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockFilesManager,1)
 					tabifydockwidget(this.oView.oDockFormDesigner,this.oView.oDockGoalDesigner)
+					if lUseArabic {
+						adddockwidget(Qt_LeftDockWidgetArea,this.oView.oDockFilesManager,1)
+						adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockComponentsBrowser,1)
+					else 
+						adddockwidget(Qt_LeftDockWidgetArea,this.oView.oDockComponentsBrowser,1)
+						adddockwidget(Qt_RightDockWidgetArea,this.oView.oDockFilesManager,1)
+					}
 				}
 				oView.oDockGoalDesigner.raise()
 			on C_ENV_MODE_LEFT
