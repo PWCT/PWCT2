@@ -1,0 +1,333 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'English'
+nStepsID                 = 7		
+nInteractionsID          = 7
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aList</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"aList = []"
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"aList = []"
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aList[&quot;Egypt&quot;]</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;Cairo&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"aList["+char(34)+"Egypt"+char(34)+"] = "+char(34)+"Cairo"+char(34)+""
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"aList["+char(34)+"Egypt"+char(34)+"] = "+char(34)+"Cairo"+char(34)+""
+			]
+		]
+	],
+	[
+		4,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aList[&quot;KSA&quot;]</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;Riyadh&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"aList["+char(34)+"KSA"+char(34)+"] = "+char(34)+"Riyadh"+char(34)+""
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"aList["+char(34)+"KSA"+char(34)+"] = "+char(34)+"Riyadh"+char(34)+""
+			]
+		]
+	],
+	[
+		5,
+		1,
+		[
+			[
+				"name",
+				"# print Cairo"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# print Cairo"
+			],
+			[
+				"interactionid",
+				5
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"# print Cairo"
+			]
+		]
+	],
+	[
+		6,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aList[&quot;Egypt&quot;]+nl+aList[&quot;KSA&quot;]+nl</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"see aList["+char(34)+"Egypt"+char(34)+"]+nl+aList["+char(34)+"KSA"+char(34)+"]+nl"
+			],
+			[
+				"interactionid",
+				6
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print aList["+char(34)+"Egypt"+char(34)+"]+nl+aList["+char(34)+"KSA"+char(34)+"]+nl"
+			]
+		]
+	],
+	[
+		7,
+		1,
+		[
+			[
+				"name",
+				"# print Riyadh"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# print Riyadh"
+			],
+			[
+				"interactionid",
+				7
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"# print Riyadh"
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"21/03/2021",
+		"15:54:28",
+		""
+	],
+	[
+		2,
+		1,
+		"assignment",
+		"21/03/2021",
+		"15:54:28",
+		"leftside;;_RV_;;aList;;_RV_;;rightside;;_RV_;;[];;_RV_;;"
+	],
+	[
+		3,
+		1,
+		"assignment",
+		"21/03/2021",
+		"15:54:28",
+		"leftside;;_RV_;;aList["+char(34)+"Egypt"+char(34)+"];;_RV_;;rightside;;_RV_;;"+char(34)+"Cairo"+char(34)+";;_RV_;;"
+	],
+	[
+		4,
+		1,
+		"assignment",
+		"21/03/2021",
+		"15:54:28",
+		"leftside;;_RV_;;aList["+char(34)+"KSA"+char(34)+"];;_RV_;;rightside;;_RV_;;"+char(34)+"Riyadh"+char(34)+";;_RV_;;"
+	],
+	[
+		5,
+		1,
+		"",
+		"21/03/2021",
+		"15:54:28",
+		""
+	],
+	[
+		6,
+		1,
+		"print",
+		"21/03/2021",
+		"15:54:28",
+		"text;;_RV_;;aList["+char(34)+"Egypt"+char(34)+"]+nl+aList["+char(34)+"KSA"+char(34)+"]+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	],
+	[
+		7,
+		1,
+		"",
+		"21/03/2021",
+		"15:54:28",
+		""
+	]
+]
+
+# End of Visual Source File

@@ -1,0 +1,149 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'English'
+nStepsID                 = 3		
+nInteractionsID          = 3
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">copy(&quot;***hello***&quot;,3)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"see copy("+char(34)+"***hello***"+char(34)+",3)"
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print copy("+char(34)+"***hello***"+char(34)+",3)"
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"# print ***hello******hello******hello***"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# print ***hello******hello******hello***"
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"# print ***hello******hello******hello***"
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"21/03/2021",
+		"15:56:43",
+		""
+	],
+	[
+		2,
+		1,
+		"print",
+		"21/03/2021",
+		"15:56:43",
+		"text;;_RV_;;copy("+char(34)+"***hello***"+char(34)+",3);;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	],
+	[
+		3,
+		1,
+		"",
+		"21/03/2021",
+		"15:56:43",
+		""
+	]
+]
+
+# End of Visual Source File

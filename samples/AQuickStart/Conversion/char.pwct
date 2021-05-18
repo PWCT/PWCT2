@@ -1,0 +1,195 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'English'
+nStepsID                 = 4		
+nInteractionsID          = 4
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"# print m"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# print m"
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"# print m"
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">char(109)+nl+char(77)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"see char(109)+nl+char(77)"
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print char(109)+nl+char(77)"
+			]
+		]
+	],
+	[
+		4,
+		1,
+		[
+			[
+				"name",
+				"# print M"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# print M"
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"# print M"
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"21/03/2021",
+		"15:51:39",
+		""
+	],
+	[
+		2,
+		1,
+		"",
+		"21/03/2021",
+		"15:51:39",
+		""
+	],
+	[
+		3,
+		1,
+		"print",
+		"21/03/2021",
+		"15:51:39",
+		"text;;_RV_;;char(109)+nl+char(77);;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	],
+	[
+		4,
+		1,
+		"",
+		"21/03/2021",
+		"15:51:39",
+		""
+	]
+]
+
+# End of Visual Source File

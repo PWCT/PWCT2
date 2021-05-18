@@ -1,0 +1,149 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'English'
+nStepsID                 = 3		
+nInteractionsID          = 3
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;Day&nbsp;Name&nbsp;:&nbsp;&quot;+TimeList()[2]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"see "+char(34)+"Day Name : "+char(34)+"+TimeList()[2]"
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print "+char(34)+"Day Name : "+char(34)+"+TimeList()[2]"
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"# Sunday"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# Sunday"
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"# Sunday"
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"21/03/2021",
+		"15:51:55",
+		""
+	],
+	[
+		2,
+		1,
+		"print",
+		"21/03/2021",
+		"15:51:55",
+		"text;;_RV_;;"+char(34)+"Day Name : "+char(34)+"+TimeList()[2];;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	],
+	[
+		3,
+		1,
+		"",
+		"21/03/2021",
+		"15:51:55",
+		""
+	]
+]
+
+# End of Visual Source File

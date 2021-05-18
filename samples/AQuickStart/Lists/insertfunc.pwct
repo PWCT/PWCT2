@@ -1,0 +1,241 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'English'
+nStepsID                 = 5		
+nInteractionsID          = 5
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aList</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[1,2,4,5]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"aList = [1,2,4,5]"
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"aList = [1,2,4,5]"
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"insert(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aList,2,3</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"insert(aList,2,3)"
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"insert(aList,2,3)"
+			]
+		]
+	],
+	[
+		4,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aList</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"see aList"
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print aList"
+			]
+		]
+	],
+	[
+		5,
+		1,
+		[
+			[
+				"name",
+				"# print 1 2 3 4 5"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# print 1 2 3 4 5"
+			],
+			[
+				"interactionid",
+				5
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"# print 1 2 3 4 5"
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"21/03/2021",
+		"15:54:44",
+		""
+	],
+	[
+		2,
+		1,
+		"assignment",
+		"21/03/2021",
+		"15:54:44",
+		"leftside;;_RV_;;aList;;_RV_;;rightside;;_RV_;;[1,2,4,5];;_RV_;;"
+	],
+	[
+		3,
+		1,
+		"callfunc",
+		"21/03/2021",
+		"15:54:44",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;insert;;_RV_;;parameters;;_RV_;;aList,2,3;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		4,
+		1,
+		"print",
+		"21/03/2021",
+		"15:54:44",
+		"text;;_RV_;;aList;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	],
+	[
+		5,
+		1,
+		"",
+		"21/03/2021",
+		"15:54:44",
+		""
+	]
+]
+
+# End of Visual Source File

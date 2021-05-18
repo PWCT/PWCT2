@@ -1,0 +1,807 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'English'
+nStepsID                 = 18		
+nInteractionsID          = 14
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"# Project : Idiomatically determine all the lowercase and uppercase letters"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# Project : Idiomatically determine all the lowercase and uppercase letters"
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"# Project : Idiomatically determine all the lowercase and uppercase letters"
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"# Date    : 2017/09/20"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# Date    : 2017/09/20"
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"# Date    : 2017/09/20"
+			]
+		]
+	],
+	[
+		4,
+		1,
+		[
+			[
+				"name",
+				"# Author  : Gal Zsolt (~ CalmoSoft ~)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# Author  : Gal Zsolt (~ CalmoSoft ~)"
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"# Author  : Gal Zsolt (~ CalmoSoft ~)"
+			]
+		]
+	],
+	[
+		5,
+		1,
+		[
+			[
+				"name",
+				"# Email   : <calmosoft@gmail.com>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# Email   : <calmosoft@gmail.com>"
+			],
+			[
+				"interactionid",
+				5
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"# Email   : <calmosoft@gmail.com>"
+			]
+		]
+	],
+	[
+		6,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aList</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;a&quot;:&quot;z&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"aList = "+char(34)+"a"+char(34)+":"+char(34)+"z"+char(34)+""
+			],
+			[
+				"interactionid",
+				6
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"aList = "+char(34)+"a"+char(34)+":"+char(34)+"z"+char(34)+""
+			]
+		]
+	],
+	[
+		7,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Lower&nbsp;case&nbsp;:&nbsp;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"see "+char(34)+"Lower case : "+char(34)+""
+			],
+			[
+				"interactionid",
+				7
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print Lower case : "
+			]
+		]
+	],
+	[
+		8,
+		1,
+		[
+			[
+				"name",
+				"For <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">n&nbsp;=&nbsp;1</font></span> to <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">len(aList)</font></span> step <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"for n = 1 to len(aList) step 1 { "
+			],
+			[
+				"interactionid",
+				8
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"For n = 1 to len(aList) step 1"
+			]
+		]
+	],
+	[
+		9,
+		8,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				8
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		11,
+		9,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aList[n]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"see aList[n]"
+			],
+			[
+				"interactionid",
+				9
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print aList[n]"
+			]
+		]
+	],
+	[
+		10,
+		8,
+		[
+			[
+				"name",
+				"End of For Loop"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				8
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of For Loop"
+			]
+		]
+	],
+	[
+		12,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nl</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"see nl"
+			],
+			[
+				"interactionid",
+				10
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print nl"
+			]
+		]
+	],
+	[
+		13,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Lower&nbsp;case&nbsp;:&nbsp;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"see "+char(34)+"Lower case : "+char(34)+""
+			],
+			[
+				"interactionid",
+				11
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print Lower case : "
+			]
+		]
+	],
+	[
+		14,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aList</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;A&quot;:&quot;Z&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"aList = "+char(34)+"A"+char(34)+":"+char(34)+"Z"+char(34)+""
+			],
+			[
+				"interactionid",
+				12
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"aList = "+char(34)+"A"+char(34)+":"+char(34)+"Z"+char(34)+""
+			]
+		]
+	],
+	[
+		15,
+		1,
+		[
+			[
+				"name",
+				"For <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">n&nbsp;=&nbsp;1</font></span> to <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">len(aList)</font></span> step <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"for n = 1 to len(aList) step 1 { "
+			],
+			[
+				"interactionid",
+				13
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"For n = 1 to len(aList) step 1"
+			]
+		]
+	],
+	[
+		16,
+		15,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				13
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		18,
+		16,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aList[n]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"see aList[n]"
+			],
+			[
+				"interactionid",
+				14
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print aList[n]"
+			]
+		]
+	],
+	[
+		17,
+		15,
+		[
+			[
+				"name",
+				"End of For Loop"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				13
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of For Loop"
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"21/03/2021",
+		"15:59:02",
+		""
+	],
+	[
+		2,
+		1,
+		"",
+		"21/03/2021",
+		"15:59:02",
+		""
+	],
+	[
+		3,
+		1,
+		"",
+		"21/03/2021",
+		"15:59:02",
+		""
+	],
+	[
+		4,
+		1,
+		"",
+		"21/03/2021",
+		"15:59:02",
+		""
+	],
+	[
+		5,
+		1,
+		"",
+		"21/03/2021",
+		"15:59:02",
+		""
+	],
+	[
+		6,
+		1,
+		"assignment",
+		"21/03/2021",
+		"15:59:02",
+		"leftside;;_RV_;;aList;;_RV_;;rightside;;_RV_;;"+char(34)+"a"+char(34)+":"+char(34)+"z"+char(34)+";;_RV_;;"
+	],
+	[
+		7,
+		1,
+		"print",
+		"21/03/2021",
+		"15:59:02",
+		"text;;_RV_;;Lower case : ;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	],
+	[
+		8,
+		1,
+		"forloop",
+		"21/03/2021",
+		"15:59:02",
+		"start;;_RV_;;n = 1;;_RV_;;to;;_RV_;;len(aList);;_RV_;;step;;_RV_;;1;;_RV_;;"
+	],
+	[
+		9,
+		1,
+		"print",
+		"21/03/2021",
+		"15:59:02",
+		"text;;_RV_;;aList[n];;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	],
+	[
+		10,
+		1,
+		"print",
+		"21/03/2021",
+		"15:59:02",
+		"text;;_RV_;;nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	],
+	[
+		11,
+		1,
+		"print",
+		"21/03/2021",
+		"15:59:02",
+		"text;;_RV_;;Lower case : ;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	],
+	[
+		12,
+		1,
+		"assignment",
+		"21/03/2021",
+		"15:59:02",
+		"leftside;;_RV_;;aList;;_RV_;;rightside;;_RV_;;"+char(34)+"A"+char(34)+":"+char(34)+"Z"+char(34)+";;_RV_;;"
+	],
+	[
+		13,
+		1,
+		"forloop",
+		"21/03/2021",
+		"15:59:03",
+		"start;;_RV_;;n = 1;;_RV_;;to;;_RV_;;len(aList);;_RV_;;step;;_RV_;;1;;_RV_;;"
+	],
+	[
+		14,
+		1,
+		"print",
+		"21/03/2021",
+		"15:59:03",
+		"text;;_RV_;;aList[n];;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	]
+]
+
+# End of Visual Source File

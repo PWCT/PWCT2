@@ -1,0 +1,195 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'English'
+nStepsID                 = 4		
+nInteractionsID          = 4
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">x</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">10</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"x = 10"
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"x = 10"
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"assert(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">x&nbsp;=&nbsp;10</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"assert(x = 10)"
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"assert(x = 10)"
+			]
+		]
+	],
+	[
+		4,
+		1,
+		[
+			[
+				"name",
+				"assert(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">x&nbsp;=&nbsp;100</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"assert(x = 100)"
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"assert(x = 100)"
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"21/03/2021",
+		"15:52:02",
+		""
+	],
+	[
+		2,
+		1,
+		"assignment",
+		"21/03/2021",
+		"15:52:02",
+		"leftside;;_RV_;;x;;_RV_;;rightside;;_RV_;;10;;_RV_;;"
+	],
+	[
+		3,
+		1,
+		"callfunc",
+		"21/03/2021",
+		"15:52:02",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;assert;;_RV_;;parameters;;_RV_;;x = 10;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		4,
+		1,
+		"callfunc",
+		"21/03/2021",
+		"15:52:02",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;assert;;_RV_;;parameters;;_RV_;;x = 100;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	]
+]
+
+# End of Visual Source File

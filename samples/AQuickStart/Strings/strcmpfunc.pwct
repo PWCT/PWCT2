@@ -1,0 +1,103 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'English'
+nStepsID                 = 2		
+nInteractionsID          = 2
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">strcmp(&quot;hello&quot;,&quot;hello&quot;)+nl+strcmp(&quot;abc&quot;,&quot;bcd&quot;)+nl+strcmp(&quot;bcd&quot;,&quot;abc&quot;)+nl</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"see strcmp("+char(34)+"hello"+char(34)+","+char(34)+"hello"+char(34)+")+nl+strcmp("+char(34)+"abc"+char(34)+","+char(34)+"bcd"+char(34)+")+nl+strcmp("+char(34)+"bcd"+char(34)+","+char(34)+"abc"+char(34)+")+nl"
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print strcmp("+char(34)+"hello"+char(34)+","+char(34)+"hello"+char(34)+")+nl+strcmp("+char(34)+"abc"+char(34)+","+char(34)+"bcd"+char(34)+")+nl+strcmp("+char(34)+"bcd"+char(34)+","+char(34)+"abc"+char(34)+")+nl"
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"21/03/2021",
+		"15:56:51",
+		""
+	],
+	[
+		2,
+		1,
+		"print",
+		"21/03/2021",
+		"15:56:51",
+		"text;;_RV_;;strcmp("+char(34)+"hello"+char(34)+","+char(34)+"hello"+char(34)+")+nl+strcmp("+char(34)+"abc"+char(34)+","+char(34)+"bcd"+char(34)+")+nl+strcmp("+char(34)+"bcd"+char(34)+","+char(34)+"abc"+char(34)+")+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	]
+]
+
+# End of Visual Source File

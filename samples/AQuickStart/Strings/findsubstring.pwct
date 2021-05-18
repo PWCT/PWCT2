@@ -1,0 +1,195 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'English'
+nStepsID                 = 4		
+nInteractionsID          = 4
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cStr</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;Welcome&nbsp;to&nbsp;the&nbsp;Ring&nbsp;programming&nbsp;language&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cStr = "+char(34)+"Welcome to the Ring programming language"+char(34)+""
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cStr = "+char(34)+"Welcome to the Ring programming language"+char(34)+""
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">substr(cStr,&quot;Ring&quot;)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"see substr(cStr,"+char(34)+"Ring"+char(34)+")"
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print substr(cStr,"+char(34)+"Ring"+char(34)+")"
+			]
+		]
+	],
+	[
+		4,
+		1,
+		[
+			[
+				"name",
+				"# print 16"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# print 16"
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"# print 16"
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"21/03/2021",
+		"15:56:44",
+		""
+	],
+	[
+		2,
+		1,
+		"assignment",
+		"21/03/2021",
+		"15:56:44",
+		"leftside;;_RV_;;cStr;;_RV_;;rightside;;_RV_;;"+char(34)+"Welcome to the Ring programming language"+char(34)+";;_RV_;;"
+	],
+	[
+		3,
+		1,
+		"print",
+		"21/03/2021",
+		"15:56:44",
+		"text;;_RV_;;substr(cStr,"+char(34)+"Ring"+char(34)+");;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	],
+	[
+		4,
+		1,
+		"",
+		"21/03/2021",
+		"15:56:44",
+		""
+	]
+]
+
+# End of Visual Source File

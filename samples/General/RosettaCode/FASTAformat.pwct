@@ -1,0 +1,1033 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'English'
+nStepsID                 = 23		
+nInteractionsID          = 16
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"# Project : FAST format"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# Project : FAST format"
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"# Project : FAST format"
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"# Date    : 2017/09/14"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# Date    : 2017/09/14"
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"# Date    : 2017/09/14"
+			]
+		]
+	],
+	[
+		4,
+		1,
+		[
+			[
+				"name",
+				"# Author  : Gal Zsolt (~ CalmoSoft ~)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# Author  : Gal Zsolt (~ CalmoSoft ~)"
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"# Author  : Gal Zsolt (~ CalmoSoft ~)"
+			]
+		]
+	],
+	[
+		5,
+		1,
+		[
+			[
+				"name",
+				"# Email   : <calmosoft@gmail.com>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# Email   : <calmosoft@gmail.com>"
+			],
+			[
+				"interactionid",
+				5
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"# Email   : <calmosoft@gmail.com>"
+			]
+		]
+	],
+	[
+		6,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">a</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;&gt;Rosetta_Example_1
+THERECANBENOSPACE
+&gt;Rosetta_Example_2
+THERECANBESEVERAL
+LINESBUTTHEYALLMUST
+BECONCATENATED&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"a = "+char(34)+">Rosetta_Example_1
+THERECANBENOSPACE
+>Rosetta_Example_2
+THERECANBESEVERAL
+LINESBUTTHEYALLMUST
+BECONCATENATED"+char(34)+""
+			],
+			[
+				"interactionid",
+				6
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"a = "+char(34)+">Rosetta_Example_1
+THERECANBENOSPACE
+>Rosetta_Example_2
+THERECANBESEVERAL
+LINESBUTTHEYALLMUST
+BECONCATENATED"+char(34)+""
+			]
+		]
+	],
+	[
+		7,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">i</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"i = 1"
+			],
+			[
+				"interactionid",
+				7
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"i = 1"
+			]
+		]
+	],
+	[
+		8,
+		1,
+		[
+			[
+				"name",
+				"While <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">i&lt;&nbsp;=&nbsp;len(a)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"while i< = len(a) { "
+			],
+			[
+				"interactionid",
+				8
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"While i"
+			]
+		]
+	],
+	[
+		9,
+		8,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				8
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		11,
+		9,
+		[
+			[
+				"name",
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">substr(a,i,17)&nbsp;=&nbsp;&quot;&gt;Rosetta_Example_&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"if substr(a,i,17) = "+char(34)+">Rosetta_Example_"+char(34)+" { "
+			],
+			[
+				"interactionid",
+				9
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"If substr(a,i,17) = "+char(34)+">Rosetta_Example_"+char(34)+""
+			]
+		]
+	],
+	[
+		12,
+		11,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				9
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		14,
+		12,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nl</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"see nl"
+			],
+			[
+				"interactionid",
+				10
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print nl"
+			]
+		]
+	],
+	[
+		15,
+		12,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">substr(a,i,18)+&quot;:&nbsp;&quot;+nl</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"see substr(a,i,18)+"+char(34)+": "+char(34)+"+nl"
+			],
+			[
+				"interactionid",
+				11
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print substr(a,i,18)+"+char(34)+": "+char(34)+"+nl"
+			]
+		]
+	],
+	[
+		16,
+		12,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">i</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">i+17</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"i = i+17"
+			],
+			[
+				"interactionid",
+				12
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"i = i+17"
+			]
+		]
+	],
+	[
+		17,
+		12,
+		[
+			[
+				"name",
+				"Else"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"else"
+			],
+			[
+				"interactionid",
+				13
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Else"
+			]
+		]
+	],
+	[
+		18,
+		17,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				13
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		19,
+		18,
+		[
+			[
+				"name",
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">ascii(substr(a,i,1))&gt;20</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"if ascii(substr(a,i,1))>20 { "
+			],
+			[
+				"interactionid",
+				14
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"If ascii(substr(a,i,1))>20"
+			]
+		]
+	],
+	[
+		20,
+		19,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				14
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		22,
+		20,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">a[i]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"see a[i]"
+			],
+			[
+				"interactionid",
+				15
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print a[i]"
+			]
+		]
+	],
+	[
+		21,
+		19,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				14
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		13,
+		11,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				9
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		23,
+		9,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">i</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">i+1</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"i = i+1"
+			],
+			[
+				"interactionid",
+				16
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"i = i+1"
+			]
+		]
+	],
+	[
+		10,
+		8,
+		[
+			[
+				"name",
+				"End of While Loop"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				8
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of While Loop"
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"21/03/2021",
+		"15:58:50",
+		""
+	],
+	[
+		2,
+		1,
+		"",
+		"21/03/2021",
+		"15:58:50",
+		""
+	],
+	[
+		3,
+		1,
+		"",
+		"21/03/2021",
+		"15:58:50",
+		""
+	],
+	[
+		4,
+		1,
+		"",
+		"21/03/2021",
+		"15:58:50",
+		""
+	],
+	[
+		5,
+		1,
+		"",
+		"21/03/2021",
+		"15:58:50",
+		""
+	],
+	[
+		6,
+		1,
+		"assignment",
+		"21/03/2021",
+		"15:58:50",
+		"leftside;;_RV_;;a;;_RV_;;rightside;;_RV_;;"+char(34)+">Rosetta_Example_1
+THERECANBENOSPACE
+>Rosetta_Example_2
+THERECANBESEVERAL
+LINESBUTTHEYALLMUST
+BECONCATENATED"+char(34)+";;_RV_;;"
+	],
+	[
+		7,
+		1,
+		"assignment",
+		"21/03/2021",
+		"15:58:50",
+		"leftside;;_RV_;;i;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
+	],
+	[
+		8,
+		1,
+		"whileloop",
+		"21/03/2021",
+		"15:58:50",
+		"condition;;_RV_;;i< = len(a);;_RV_;;"
+	],
+	[
+		9,
+		1,
+		"ifstatement",
+		"21/03/2021",
+		"15:58:50",
+		"condition;;_RV_;;substr(a,i,17) = "+char(34)+">Rosetta_Example_"+char(34)+";;_RV_;;"
+	],
+	[
+		10,
+		1,
+		"print",
+		"21/03/2021",
+		"15:58:50",
+		"text;;_RV_;;nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	],
+	[
+		11,
+		1,
+		"print",
+		"21/03/2021",
+		"15:58:50",
+		"text;;_RV_;;substr(a,i,18)+"+char(34)+": "+char(34)+"+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	],
+	[
+		12,
+		1,
+		"assignment",
+		"21/03/2021",
+		"15:58:50",
+		"leftside;;_RV_;;i;;_RV_;;rightside;;_RV_;;i+17;;_RV_;;"
+	],
+	[
+		13,
+		1,
+		"else",
+		"21/03/2021",
+		"15:58:50",
+		""
+	],
+	[
+		14,
+		1,
+		"ifstatement",
+		"21/03/2021",
+		"15:58:50",
+		"condition;;_RV_;;ascii(substr(a,i,1))>20;;_RV_;;"
+	],
+	[
+		15,
+		1,
+		"print",
+		"21/03/2021",
+		"15:58:50",
+		"text;;_RV_;;a[i];;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	],
+	[
+		16,
+		1,
+		"assignment",
+		"21/03/2021",
+		"15:58:50",
+		"leftside;;_RV_;;i;;_RV_;;rightside;;_RV_;;i+1;;_RV_;;"
+	]
+]
+
+# End of Visual Source File

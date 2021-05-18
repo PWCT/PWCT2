@@ -1,0 +1,401 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'English'
+nStepsID                 = 9		
+nInteractionsID          = 6
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">sysargv[2]&nbsp;=&nbsp;filename()</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"if sysargv[2] = filename() { "
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"If sysargv[2] = filename()"
+			]
+		]
+	],
+	[
+		3,
+		2,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		5,
+		3,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;I&#039;m&nbsp;the&nbsp;main&nbsp;program&nbsp;file!&quot;+nl</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"see "+char(34)+"I'm the main program file!"+char(34)+"+nl"
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print "+char(34)+"I'm the main program file!"+char(34)+"+nl"
+			]
+		]
+	],
+	[
+		6,
+		3,
+		[
+			[
+				"name",
+				"# we can run tests here!"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# we can run tests here!"
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"# we can run tests here!"
+			]
+		]
+	],
+	[
+		7,
+		3,
+		[
+			[
+				"name",
+				"Else"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"else"
+			],
+			[
+				"interactionid",
+				5
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Else"
+			]
+		]
+	],
+	[
+		8,
+		7,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				5
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		9,
+		8,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;I&#039;m&nbsp;a&nbsp;sub&nbsp;file&nbsp;in&nbsp;a&nbsp;program&quot;+nl</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"see "+char(34)+"I'm a sub file in a program"+char(34)+"+nl"
+			],
+			[
+				"interactionid",
+				6
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print "+char(34)+"I'm a sub file in a program"+char(34)+"+nl"
+			]
+		]
+	],
+	[
+		4,
+		2,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"21/03/2021",
+		"15:55:51",
+		""
+	],
+	[
+		2,
+		1,
+		"ifstatement",
+		"21/03/2021",
+		"15:55:51",
+		"condition;;_RV_;;sysargv[2] = filename();;_RV_;;"
+	],
+	[
+		3,
+		1,
+		"print",
+		"21/03/2021",
+		"15:55:51",
+		"text;;_RV_;;"+char(34)+"I'm the main program file!"+char(34)+"+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	],
+	[
+		4,
+		1,
+		"",
+		"21/03/2021",
+		"15:55:51",
+		""
+	],
+	[
+		5,
+		1,
+		"else",
+		"21/03/2021",
+		"15:55:51",
+		""
+	],
+	[
+		6,
+		1,
+		"print",
+		"21/03/2021",
+		"15:55:51",
+		"text;;_RV_;;"+char(34)+"I'm a sub file in a program"+char(34)+"+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	]
+]
+
+# End of Visual Source File

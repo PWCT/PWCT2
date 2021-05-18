@@ -1,0 +1,195 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'English'
+nStepsID                 = 4		
+nInteractionsID          = 4
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">What&nbsp;is&nbsp;your&nbsp;name?&nbsp;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"see "+char(34)+"What is your name? "+char(34)+""
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print What is your name? "
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"Input <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cName</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"give cName"
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Input cName"
+			]
+		]
+	],
+	[
+		4,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;Hello&nbsp;&quot;+cName</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"see "+char(34)+"Hello "+char(34)+"+cName"
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print "+char(34)+"Hello "+char(34)+"+cName"
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"21/03/2021",
+		"15:54:14",
+		""
+	],
+	[
+		2,
+		1,
+		"print",
+		"21/03/2021",
+		"15:54:14",
+		"text;;_RV_;;What is your name? ;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	],
+	[
+		3,
+		1,
+		"getinput",
+		"21/03/2021",
+		"15:54:14",
+		"text;;_RV_;;cName;;_RV_;;"
+	],
+	[
+		4,
+		1,
+		"print",
+		"21/03/2021",
+		"15:54:14",
+		"text;;_RV_;;"+char(34)+"Hello "+char(34)+"+cName;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	]
+]
+
+# End of Visual Source File

@@ -1,0 +1,195 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'English'
+nStepsID                 = 4		
+nInteractionsID          = 4
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"# print 1"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# print 1"
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"# print 1"
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">isspace(&quot;&nbsp;&nbsp;&nbsp;&quot;)+nl+isspace(&quot;test&quot;)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"see isspace("+char(34)+"   "+char(34)+")+nl+isspace("+char(34)+"test"+char(34)+")"
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print isspace("+char(34)+"   "+char(34)+")+nl+isspace("+char(34)+"test"+char(34)+")"
+			]
+		]
+	],
+	[
+		4,
+		1,
+		[
+			[
+				"name",
+				"# print 0"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# print 0"
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"# print 0"
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"21/03/2021",
+		"15:51:05",
+		""
+	],
+	[
+		2,
+		1,
+		"",
+		"21/03/2021",
+		"15:51:05",
+		""
+	],
+	[
+		3,
+		1,
+		"print",
+		"21/03/2021",
+		"15:51:05",
+		"text;;_RV_;;isspace("+char(34)+"   "+char(34)+")+nl+isspace("+char(34)+"test"+char(34)+");;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	],
+	[
+		4,
+		1,
+		"",
+		"21/03/2021",
+		"15:51:05",
+		""
+	]
+]
+
+# End of Visual Source File

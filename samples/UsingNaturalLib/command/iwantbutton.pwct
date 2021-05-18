@@ -1,0 +1,363 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'English'
+nStepsID                 = 8		
+nInteractionsID          = 6
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"# The Ring Natural Library"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# The Ring Natural Library"
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"# The Ring Natural Library"
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"# 2017, Mahmoud Fayed <msfclipper@yahoo.com>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# 2017, Mahmoud Fayed <msfclipper@yahoo.com>"
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"# 2017, Mahmoud Fayed <msfclipper@yahoo.com>"
+			]
+		]
+	],
+	[
+		4,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">DefineNaturalCommand.SyntaxIsCommand([:package&nbsp;=&nbsp;&quot;MyLanguage.Natural&quot;,:Command&nbsp;=&nbsp;&quot;i&nbsp;want&nbsp;button&quot;,:Function&nbsp;=&nbsp;&nbsp;func&nbsp;</font></span> {"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"DefineNaturalCommand.SyntaxIsCommand([:package = "+char(34)+"MyLanguage.Natural"+char(34)+",:Command = "+char(34)+"i want button"+char(34)+",:Function =  func  {"
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"DefineNaturalCommand.SyntaxIsCommand([:package = "+char(34)+"MyLanguage.Natural"+char(34)+",:Command = "+char(34)+"i want button"+char(34)+",:Function =  func  {"
+			]
+		]
+	],
+	[
+		5,
+		4,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		7,
+		5,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;Command:&nbsp;I&nbsp;want&nbsp;button&quot;+nl</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"see "+char(34)+"Command: I want button"+char(34)+"+nl"
+			],
+			[
+				"interactionid",
+				5
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print "+char(34)+"Command: I want button"+char(34)+"+nl"
+			]
+		]
+	],
+	[
+		6,
+		4,
+		[
+			[
+				"name",
+				"}"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"}"
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"}"
+			]
+		]
+	],
+	[
+		8,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">])</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"])"
+			],
+			[
+				"interactionid",
+				6
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"])"
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"21/03/2021",
+		"15:50:20",
+		""
+	],
+	[
+		2,
+		1,
+		"",
+		"21/03/2021",
+		"15:50:20",
+		""
+	],
+	[
+		3,
+		1,
+		"",
+		"21/03/2021",
+		"15:50:20",
+		""
+	],
+	[
+		4,
+		1,
+		"accessobject",
+		"21/03/2021",
+		"15:50:20",
+		"value;;_RV_;;DefineNaturalCommand.SyntaxIsCommand([:package = "+char(34)+"MyLanguage.Natural"+char(34)+",:Command = "+char(34)+"i want button"+char(34)+",:Function =  func ;;_RV_;;"
+	],
+	[
+		5,
+		1,
+		"print",
+		"21/03/2021",
+		"15:50:20",
+		"text;;_RV_;;"+char(34)+"Command: I want button"+char(34)+"+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	],
+	[
+		6,
+		1,
+		"freetyping",
+		"21/03/2021",
+		"15:50:20",
+		"value;;_RV_;;]);;_RV_;;"
+	]
+]
+
+# End of Visual Source File

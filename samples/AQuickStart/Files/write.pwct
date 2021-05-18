@@ -1,0 +1,195 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'English'
+nStepsID                 = 4		
+nInteractionsID          = 4
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"# copy file"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# copy file"
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"# copy file"
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFile</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">read(&quot;ring.exe&quot;)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cFile = read("+char(34)+"ring.exe"+char(34)+")"
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cFile = read("+char(34)+"ring.exe"+char(34)+")"
+			]
+		]
+	],
+	[
+		4,
+		1,
+		[
+			[
+				"name",
+				"write(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;ring2.exe&quot;,cFile</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"write("+char(34)+"ring2.exe"+char(34)+",cFile)"
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"write("+char(34)+"ring2.exe"+char(34)+",cFile)"
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"21/03/2021",
+		"15:52:36",
+		""
+	],
+	[
+		2,
+		1,
+		"",
+		"21/03/2021",
+		"15:52:36",
+		""
+	],
+	[
+		3,
+		1,
+		"assignment",
+		"21/03/2021",
+		"15:52:36",
+		"leftside;;_RV_;;cFile;;_RV_;;rightside;;_RV_;;read("+char(34)+"ring.exe"+char(34)+");;_RV_;;"
+	],
+	[
+		4,
+		1,
+		"callfunc",
+		"21/03/2021",
+		"15:52:36",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;write;;_RV_;;parameters;;_RV_;;"+char(34)+"ring2.exe"+char(34)+",cFile;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	]
+]
+
+# End of Visual Source File

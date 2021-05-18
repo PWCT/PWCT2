@@ -1,0 +1,471 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'English'
+nStepsID                 = 10		
+nInteractionsID          = 10
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">x</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">10</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"x = 10"
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"x = 10"
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"# x is a number"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# x is a number"
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"# x is a number"
+			]
+		]
+	],
+	[
+		4,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">y</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;20&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"y = "+char(34)+"20"+char(34)+""
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"y = "+char(34)+"20"+char(34)+""
+			]
+		]
+	],
+	[
+		5,
+		1,
+		[
+			[
+				"name",
+				"# y is a string"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# y is a string"
+			],
+			[
+				"interactionid",
+				5
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"# y is a string"
+			]
+		]
+	],
+	[
+		6,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">sum</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">x+y</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"sum = x+y"
+			],
+			[
+				"interactionid",
+				6
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"sum = x+y"
+			]
+		]
+	],
+	[
+		7,
+		1,
+		[
+			[
+				"name",
+				"# sum is a number (y will be converted to a number)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# sum is a number (y will be converted to a number)"
+			],
+			[
+				"interactionid",
+				7
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"# sum is a number (y will be converted to a number)"
+			]
+		]
+	],
+	[
+		8,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Msg</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;Sum&nbsp;=&nbsp;&quot;+sum</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"Msg = "+char(34)+"Sum = "+char(34)+"+sum"
+			],
+			[
+				"interactionid",
+				8
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Msg = "+char(34)+"Sum = "+char(34)+"+sum"
+			]
+		]
+	],
+	[
+		9,
+		1,
+		[
+			[
+				"name",
+				"# Msg is a string (sum will be converted to a string)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# Msg is a string (sum will be converted to a string)"
+			],
+			[
+				"interactionid",
+				9
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"# Msg is a string (sum will be converted to a string)"
+			]
+		]
+	],
+	[
+		10,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Msg+nl</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"see Msg+nl"
+			],
+			[
+				"interactionid",
+				10
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print Msg+nl"
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"21/03/2021",
+		"15:54:25",
+		""
+	],
+	[
+		2,
+		1,
+		"assignment",
+		"21/03/2021",
+		"15:54:25",
+		"leftside;;_RV_;;x;;_RV_;;rightside;;_RV_;;10;;_RV_;;"
+	],
+	[
+		3,
+		1,
+		"",
+		"21/03/2021",
+		"15:54:25",
+		""
+	],
+	[
+		4,
+		1,
+		"assignment",
+		"21/03/2021",
+		"15:54:25",
+		"leftside;;_RV_;;y;;_RV_;;rightside;;_RV_;;"+char(34)+"20"+char(34)+";;_RV_;;"
+	],
+	[
+		5,
+		1,
+		"",
+		"21/03/2021",
+		"15:54:25",
+		""
+	],
+	[
+		6,
+		1,
+		"assignment",
+		"21/03/2021",
+		"15:54:25",
+		"leftside;;_RV_;;sum;;_RV_;;rightside;;_RV_;;x+y;;_RV_;;"
+	],
+	[
+		7,
+		1,
+		"",
+		"21/03/2021",
+		"15:54:25",
+		""
+	],
+	[
+		8,
+		1,
+		"assignment",
+		"21/03/2021",
+		"15:54:25",
+		"leftside;;_RV_;;Msg;;_RV_;;rightside;;_RV_;;"+char(34)+"Sum = "+char(34)+"+sum;;_RV_;;"
+	],
+	[
+		9,
+		1,
+		"",
+		"21/03/2021",
+		"15:54:25",
+		""
+	],
+	[
+		10,
+		1,
+		"print",
+		"21/03/2021",
+		"15:54:25",
+		"text;;_RV_;;Msg+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	]
+]
+
+# End of Visual Source File

@@ -1,0 +1,517 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'English'
+nStepsID                 = 11		
+nInteractionsID          = 11
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cDate1</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">date()</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cDate1 = date()"
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cDate1 = date()"
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cDate1+nl</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"see cDate1+nl"
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print cDate1+nl"
+			]
+		]
+	],
+	[
+		4,
+		1,
+		[
+			[
+				"name",
+				"# 24/05/2015"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# 24/05/2015"
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"# 24/05/2015"
+			]
+		]
+	],
+	[
+		5,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cDate2</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">adddays(cDate1,10)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cDate2 = adddays(cDate1,10)"
+			],
+			[
+				"interactionid",
+				5
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cDate2 = adddays(cDate1,10)"
+			]
+		]
+	],
+	[
+		6,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cDate2+nl</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"see cDate2+nl"
+			],
+			[
+				"interactionid",
+				6
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print cDate2+nl"
+			]
+		]
+	],
+	[
+		7,
+		1,
+		[
+			[
+				"name",
+				"# 03/06/2015"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# 03/06/2015"
+			],
+			[
+				"interactionid",
+				7
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"# 03/06/2015"
+			]
+		]
+	],
+	[
+		8,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;DiffDays&nbsp;=&nbsp;&quot;+diffdays(cDate1,cDate2)+nl</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"see "+char(34)+"DiffDays = "+char(34)+"+diffdays(cDate1,cDate2)+nl"
+			],
+			[
+				"interactionid",
+				8
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print "+char(34)+"DiffDays = "+char(34)+"+diffdays(cDate1,cDate2)+nl"
+			]
+		]
+	],
+	[
+		9,
+		1,
+		[
+			[
+				"name",
+				"# -10"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# -10"
+			],
+			[
+				"interactionid",
+				9
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"# -10"
+			]
+		]
+	],
+	[
+		10,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;DiffDays&nbsp;=&nbsp;&quot;+diffdays(cDate2,cDate1)+nl</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"see "+char(34)+"DiffDays = "+char(34)+"+diffdays(cDate2,cDate1)+nl"
+			],
+			[
+				"interactionid",
+				10
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print "+char(34)+"DiffDays = "+char(34)+"+diffdays(cDate2,cDate1)+nl"
+			]
+		]
+	],
+	[
+		11,
+		1,
+		[
+			[
+				"name",
+				"# 10"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# 10"
+			],
+			[
+				"interactionid",
+				11
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"# 10"
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"21/03/2021",
+		"15:51:57",
+		""
+	],
+	[
+		2,
+		1,
+		"assignment",
+		"21/03/2021",
+		"15:51:57",
+		"leftside;;_RV_;;cDate1;;_RV_;;rightside;;_RV_;;date();;_RV_;;"
+	],
+	[
+		3,
+		1,
+		"print",
+		"21/03/2021",
+		"15:51:57",
+		"text;;_RV_;;cDate1+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	],
+	[
+		4,
+		1,
+		"",
+		"21/03/2021",
+		"15:51:57",
+		""
+	],
+	[
+		5,
+		1,
+		"assignment",
+		"21/03/2021",
+		"15:51:57",
+		"leftside;;_RV_;;cDate2;;_RV_;;rightside;;_RV_;;adddays(cDate1,10);;_RV_;;"
+	],
+	[
+		6,
+		1,
+		"print",
+		"21/03/2021",
+		"15:51:57",
+		"text;;_RV_;;cDate2+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	],
+	[
+		7,
+		1,
+		"",
+		"21/03/2021",
+		"15:51:57",
+		""
+	],
+	[
+		8,
+		1,
+		"print",
+		"21/03/2021",
+		"15:51:57",
+		"text;;_RV_;;"+char(34)+"DiffDays = "+char(34)+"+diffdays(cDate1,cDate2)+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	],
+	[
+		9,
+		1,
+		"",
+		"21/03/2021",
+		"15:51:57",
+		""
+	],
+	[
+		10,
+		1,
+		"print",
+		"21/03/2021",
+		"15:51:57",
+		"text;;_RV_;;"+char(34)+"DiffDays = "+char(34)+"+diffdays(cDate2,cDate1)+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	],
+	[
+		11,
+		1,
+		"",
+		"21/03/2021",
+		"15:51:57",
+		""
+	]
+]
+
+# End of Visual Source File

@@ -1,0 +1,271 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'English'
+nStepsID                 = 6		
+nInteractionsID          = 4
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nMode</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">10</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"nMode = 10"
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"nMode = 10"
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nMode&lt;0&nbsp;OR&nbsp;nMode&gt;5</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"if nMode<0 OR nMode>5 { "
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"If nMode5"
+			]
+		]
+	],
+	[
+		4,
+		3,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		6,
+		4,
+		[
+			[
+				"name",
+				"raise(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;Error&nbsp;:&nbsp;nMode&nbsp;not&nbsp;in&nbsp;the&nbsp;range&nbsp;1:4&quot;</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"raise("+char(34)+"Error : nMode not in the range 1:4"+char(34)+")"
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"raise("+char(34)+"Error : nMode not in the range 1:4"+char(34)+")"
+			]
+		]
+	],
+	[
+		5,
+		3,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"21/03/2021",
+		"15:52:03",
+		""
+	],
+	[
+		2,
+		1,
+		"assignment",
+		"21/03/2021",
+		"15:52:03",
+		"leftside;;_RV_;;nMode;;_RV_;;rightside;;_RV_;;10;;_RV_;;"
+	],
+	[
+		3,
+		1,
+		"ifstatement",
+		"21/03/2021",
+		"15:52:03",
+		"condition;;_RV_;;nMode<0 OR nMode>5;;_RV_;;"
+	],
+	[
+		4,
+		1,
+		"callfunc",
+		"21/03/2021",
+		"15:52:03",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;raise;;_RV_;;parameters;;_RV_;;"+char(34)+"Error : nMode not in the range 1:4"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	]
+]
+
+# End of Visual Source File

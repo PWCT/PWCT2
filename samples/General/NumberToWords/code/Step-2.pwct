@@ -1,0 +1,1351 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'English'
+nStepsID                 = 30		
+nInteractionsID          = 25
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"// *** step 2"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"// *** step 2"
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"// *** step 2"
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"// number to words (tens)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"// number to words (tens)"
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"// number to words (tens)"
+			]
+		]
+	],
+	[
+		4,
+		1,
+		[
+			[
+				"name",
+				"Load <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">stdlib.ring</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"load "+char(34)+"stdlib.ring"+char(34)+""
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Load stdlib.ring"
+			]
+		]
+	],
+	[
+		5,
+		1,
+		[
+			[
+				"name",
+				"// need for string func."
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"// need for string func."
+			],
+			[
+				"interactionid",
+				5
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"// need for string func."
+			]
+		]
+	],
+	[
+		6,
+		1,
+		[
+			[
+				"name",
+				"// units:"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"// units:"
+			],
+			[
+				"interactionid",
+				6
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"// units:"
+			]
+		]
+	],
+	[
+		7,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">ones</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;one&quot;,&quot;two&quot;,&quot;three&quot;,&quot;four&quot;,&quot;five&quot;,&quot;six&quot;,&quot;seven&quot;,&quot;eight&quot;,&quot;nine&quot;,&quot;ten&quot;,&quot;eleven&quot;,&quot;twelve&quot;,&quot;thirteen&quot;,&quot;fourteen&quot;,&quot;fifteen&quot;,&quot;sixteen&quot;,&quot;seventeen&quot;,&quot;eighteen&quot;,&quot;nineteen&quot;]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"ones = ["+char(34)+"one"+char(34)+","+char(34)+"two"+char(34)+","+char(34)+"three"+char(34)+","+char(34)+"four"+char(34)+","+char(34)+"five"+char(34)+","+char(34)+"six"+char(34)+","+char(34)+"seven"+char(34)+","+char(34)+"eight"+char(34)+","+char(34)+"nine"+char(34)+","+char(34)+"ten"+char(34)+","+char(34)+"eleven"+char(34)+","+char(34)+"twelve"+char(34)+","+char(34)+"thirteen"+char(34)+","+char(34)+"fourteen"+char(34)+","+char(34)+"fifteen"+char(34)+","+char(34)+"sixteen"+char(34)+","+char(34)+"seventeen"+char(34)+","+char(34)+"eighteen"+char(34)+","+char(34)+"nineteen"+char(34)+"]"
+			],
+			[
+				"interactionid",
+				7
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"ones = ["+char(34)+"one"+char(34)+","+char(34)+"two"+char(34)+","+char(34)+"three"+char(34)+","+char(34)+"four"+char(34)+","+char(34)+"five"+char(34)+","+char(34)+"six"+char(34)+","+char(34)+"seven"+char(34)+","+char(34)+"eight"+char(34)+","+char(34)+"nine"+char(34)+","+char(34)+"ten"+char(34)+","+char(34)+"eleven"+char(34)+","+char(34)+"twelve"+char(34)+","+char(34)+"thirteen"+char(34)+","+char(34)+"fourteen"+char(34)+","+char(34)+"fifteen"+char(34)+","+char(34)+"sixteen"+char(34)+","+char(34)+"seventeen"+char(34)+","+char(34)+"eighteen"+char(34)+","+char(34)+"nineteen"+char(34)+"]"
+			]
+		]
+	],
+	[
+		8,
+		1,
+		[
+			[
+				"name",
+				"// tens: (whole numbers)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"// tens: (whole numbers)"
+			],
+			[
+				"interactionid",
+				8
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"// tens: (whole numbers)"
+			]
+		]
+	],
+	[
+		9,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">tens</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;&quot;,&quot;twenty&quot;,&quot;thirty&quot;,&quot;fourty&quot;,&quot;fifty&quot;,&quot;sixty&quot;,&quot;seventy&quot;,&quot;eighty&quot;,&quot;ninety&quot;]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"tens = ["+char(34)+""+char(34)+","+char(34)+"twenty"+char(34)+","+char(34)+"thirty"+char(34)+","+char(34)+"fourty"+char(34)+","+char(34)+"fifty"+char(34)+","+char(34)+"sixty"+char(34)+","+char(34)+"seventy"+char(34)+","+char(34)+"eighty"+char(34)+","+char(34)+"ninety"+char(34)+"]"
+			],
+			[
+				"interactionid",
+				9
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"tens = ["+char(34)+""+char(34)+","+char(34)+"twenty"+char(34)+","+char(34)+"thirty"+char(34)+","+char(34)+"fourty"+char(34)+","+char(34)+"fifty"+char(34)+","+char(34)+"sixty"+char(34)+","+char(34)+"seventy"+char(34)+","+char(34)+"eighty"+char(34)+","+char(34)+"ninety"+char(34)+"]"
+			]
+		]
+	],
+	[
+		10,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">n</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;29&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"n = "+char(34)+"29"+char(34)+""
+			],
+			[
+				"interactionid",
+				10
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"n = "+char(34)+"29"+char(34)+""
+			]
+		]
+	],
+	[
+		11,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;len(n):&nbsp;&quot;+len(n)</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? "+char(34)+"len(n): "+char(34)+"+len(n)"
+			],
+			[
+				"interactionid",
+				11
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print "+char(34)+"len(n): "+char(34)+"+len(n) (New Line) "
+			]
+		]
+	],
+	[
+		12,
+		1,
+		[
+			[
+				"name",
+				"// n: is string"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"// n: is string"
+			],
+			[
+				"interactionid",
+				12
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"// n: is string"
+			]
+		]
+	],
+	[
+		13,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;first&nbsp;digit:&nbsp;&quot;+n[1]</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? "+char(34)+"first digit: "+char(34)+"+n[1]"
+			],
+			[
+				"interactionid",
+				13
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print "+char(34)+"first digit: "+char(34)+"+n[1] (New Line) "
+			]
+		]
+	],
+	[
+		14,
+		1,
+		[
+			[
+				"name",
+				"// first digit"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"// first digit"
+			],
+			[
+				"interactionid",
+				14
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"// first digit"
+			]
+		]
+	],
+	[
+		15,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;second&nbsp;digit:&nbsp;&quot;+n[2]</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? "+char(34)+"second digit: "+char(34)+"+n[2]"
+			],
+			[
+				"interactionid",
+				15
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print "+char(34)+"second digit: "+char(34)+"+n[2] (New Line) "
+			]
+		]
+	],
+	[
+		16,
+		1,
+		[
+			[
+				"name",
+				"// second digit"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"// second digit"
+			],
+			[
+				"interactionid",
+				16
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"// second digit"
+			]
+		]
+	],
+	[
+		17,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;input:&nbsp;&quot;+n</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? "+char(34)+"input: "+char(34)+"+n"
+			],
+			[
+				"interactionid",
+				17
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print "+char(34)+"input: "+char(34)+"+n (New Line) "
+			]
+		]
+	],
+	[
+		18,
+		1,
+		[
+			[
+				"name",
+				"// test "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"// test "
+			],
+			[
+				"interactionid",
+				18
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"// test "
+			]
+		]
+	],
+	[
+		19,
+		1,
+		[
+			[
+				"name",
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">number(n)&gt;99</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"if number(n)>99 { "
+			],
+			[
+				"interactionid",
+				19
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"If number(n)>99"
+			]
+		]
+	],
+	[
+		20,
+		19,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				19
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		22,
+		20,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Incorrect&nbsp;input!</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? "+char(34)+"Incorrect input!"+char(34)+""
+			],
+			[
+				"interactionid",
+				20
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print Incorrect input! (New Line) "
+			]
+		]
+	],
+	[
+		23,
+		20,
+		[
+			[
+				"name",
+				"// message"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"// message"
+			],
+			[
+				"interactionid",
+				21
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"// message"
+			]
+		]
+	],
+	[
+		21,
+		19,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				19
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		24,
+		1,
+		[
+			[
+				"name",
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">number(n[1])&gt;1&nbsp;AND&nbsp;number(n[2])&gt;0</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"if number(n[1])>1 AND number(n[2])>0 { "
+			],
+			[
+				"interactionid",
+				22
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"If number(n[1])>1 AND number(n[2])>0"
+			]
+		]
+	],
+	[
+		25,
+		24,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				22
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		27,
+		25,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">tens[number(n[1])]+&quot;-&quot;+ones[number(n[2])]</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? tens[number(n[1])]+"+char(34)+"-"+char(34)+"+ones[number(n[2])]"
+			],
+			[
+				"interactionid",
+				23
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print tens[number(n[1])]+"+char(34)+"-"+char(34)+"+ones[number(n[2])] (New Line) "
+			]
+		]
+	],
+	[
+		28,
+		25,
+		[
+			[
+				"name",
+				"Else If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">number(n[2])&nbsp;=&nbsp;0</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"elseif number(n[2]) = 0"
+			],
+			[
+				"interactionid",
+				24
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Else If number(n[2]) = 0"
+			]
+		]
+	],
+	[
+		29,
+		28,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				24
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		30,
+		29,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">tens[number(n[1])]</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? tens[number(n[1])]"
+			],
+			[
+				"interactionid",
+				25
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print tens[number(n[1])] (New Line) "
+			]
+		]
+	],
+	[
+		26,
+		24,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				22
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"21/03/2021",
+		"15:58:17",
+		""
+	],
+	[
+		2,
+		1,
+		"",
+		"21/03/2021",
+		"15:58:17",
+		""
+	],
+	[
+		3,
+		1,
+		"",
+		"21/03/2021",
+		"15:58:17",
+		""
+	],
+	[
+		4,
+		1,
+		"load",
+		"21/03/2021",
+		"15:58:17",
+		"file;;_RV_;;stdlib.ring;;_RV_;;"
+	],
+	[
+		5,
+		1,
+		"",
+		"21/03/2021",
+		"15:58:17",
+		""
+	],
+	[
+		6,
+		1,
+		"",
+		"21/03/2021",
+		"15:58:17",
+		""
+	],
+	[
+		7,
+		1,
+		"assignment",
+		"21/03/2021",
+		"15:58:17",
+		"leftside;;_RV_;;ones;;_RV_;;rightside;;_RV_;;["+char(34)+"one"+char(34)+","+char(34)+"two"+char(34)+","+char(34)+"three"+char(34)+","+char(34)+"four"+char(34)+","+char(34)+"five"+char(34)+","+char(34)+"six"+char(34)+","+char(34)+"seven"+char(34)+","+char(34)+"eight"+char(34)+","+char(34)+"nine"+char(34)+","+char(34)+"ten"+char(34)+","+char(34)+"eleven"+char(34)+","+char(34)+"twelve"+char(34)+","+char(34)+"thirteen"+char(34)+","+char(34)+"fourteen"+char(34)+","+char(34)+"fifteen"+char(34)+","+char(34)+"sixteen"+char(34)+","+char(34)+"seventeen"+char(34)+","+char(34)+"eighteen"+char(34)+","+char(34)+"nineteen"+char(34)+"];;_RV_;;"
+	],
+	[
+		8,
+		1,
+		"",
+		"21/03/2021",
+		"15:58:17",
+		""
+	],
+	[
+		9,
+		1,
+		"assignment",
+		"21/03/2021",
+		"15:58:17",
+		"leftside;;_RV_;;tens;;_RV_;;rightside;;_RV_;;["+char(34)+""+char(34)+","+char(34)+"twenty"+char(34)+","+char(34)+"thirty"+char(34)+","+char(34)+"fourty"+char(34)+","+char(34)+"fifty"+char(34)+","+char(34)+"sixty"+char(34)+","+char(34)+"seventy"+char(34)+","+char(34)+"eighty"+char(34)+","+char(34)+"ninety"+char(34)+"];;_RV_;;"
+	],
+	[
+		10,
+		1,
+		"assignment",
+		"21/03/2021",
+		"15:58:17",
+		"leftside;;_RV_;;n;;_RV_;;rightside;;_RV_;;"+char(34)+"29"+char(34)+";;_RV_;;"
+	],
+	[
+		11,
+		1,
+		"print",
+		"21/03/2021",
+		"15:58:17",
+		"text;;_RV_;;"+char(34)+"len(n): "+char(34)+"+len(n);;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	],
+	[
+		12,
+		1,
+		"",
+		"21/03/2021",
+		"15:58:17",
+		""
+	],
+	[
+		13,
+		1,
+		"print",
+		"21/03/2021",
+		"15:58:17",
+		"text;;_RV_;;"+char(34)+"first digit: "+char(34)+"+n[1];;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	],
+	[
+		14,
+		1,
+		"",
+		"21/03/2021",
+		"15:58:17",
+		""
+	],
+	[
+		15,
+		1,
+		"print",
+		"21/03/2021",
+		"15:58:17",
+		"text;;_RV_;;"+char(34)+"second digit: "+char(34)+"+n[2];;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	],
+	[
+		16,
+		1,
+		"",
+		"21/03/2021",
+		"15:58:17",
+		""
+	],
+	[
+		17,
+		1,
+		"print",
+		"21/03/2021",
+		"15:58:17",
+		"text;;_RV_;;"+char(34)+"input: "+char(34)+"+n;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	],
+	[
+		18,
+		1,
+		"",
+		"21/03/2021",
+		"15:58:17",
+		""
+	],
+	[
+		19,
+		1,
+		"ifstatement",
+		"21/03/2021",
+		"15:58:17",
+		"condition;;_RV_;;number(n)>99;;_RV_;;"
+	],
+	[
+		20,
+		1,
+		"print",
+		"21/03/2021",
+		"15:58:17",
+		"text;;_RV_;;Incorrect input!;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	],
+	[
+		21,
+		1,
+		"",
+		"21/03/2021",
+		"15:58:17",
+		""
+	],
+	[
+		22,
+		1,
+		"ifstatement",
+		"21/03/2021",
+		"15:58:17",
+		"condition;;_RV_;;number(n[1])>1 AND number(n[2])>0;;_RV_;;"
+	],
+	[
+		23,
+		1,
+		"print",
+		"21/03/2021",
+		"15:58:17",
+		"text;;_RV_;;tens[number(n[1])]+"+char(34)+"-"+char(34)+"+ones[number(n[2])];;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	],
+	[
+		24,
+		1,
+		"elseif",
+		"21/03/2021",
+		"15:58:17",
+		"condition;;_RV_;;number(n[2]) = 0;;_RV_;;"
+	],
+	[
+		25,
+		1,
+		"print",
+		"21/03/2021",
+		"15:58:17",
+		"text;;_RV_;;tens[number(n[1])];;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	]
+]
+
+# End of Visual Source File

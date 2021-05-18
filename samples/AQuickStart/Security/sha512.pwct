@@ -1,0 +1,149 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'English'
+nStepsID                 = 3		
+nInteractionsID          = 3
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"Load <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">openssllib.ring</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"load "+char(34)+"openssllib.ring"+char(34)+""
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Load openssllib.ring"
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;sha512(&#039;hello&#039;)&nbsp;:&nbsp;&quot;+sha512(&quot;hello&quot;)+nl+&quot;sha512(&#039;apple&#039;)&nbsp;:&nbsp;&quot;+sha512(&quot;apple&quot;)+nl+&quot;sha512(&#039;hello&nbsp;world&#039;)&nbsp;:&nbsp;&quot;+sha512(&quot;hello&nbsp;world&quot;)+nl</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"see "+char(34)+"sha512('hello') : "+char(34)+"+sha512("+char(34)+"hello"+char(34)+")+nl+"+char(34)+"sha512('apple') : "+char(34)+"+sha512("+char(34)+"apple"+char(34)+")+nl+"+char(34)+"sha512('hello world') : "+char(34)+"+sha512("+char(34)+"hello world"+char(34)+")+nl"
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print "+char(34)+"sha512('hello') : "+char(34)+"+sha512("+char(34)+"hello"+char(34)+")+nl+"+char(34)+"sha512('apple') : "+char(34)+"+sha512("+char(34)+"apple"+char(34)+")+nl+"+char(34)+"sha512('hello world') : "+char(34)+"+sha512("+char(34)+"hello world"+char(34)+")+nl"
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"21/03/2021",
+		"15:56:40",
+		""
+	],
+	[
+		2,
+		1,
+		"load",
+		"21/03/2021",
+		"15:56:40",
+		"file;;_RV_;;openssllib.ring;;_RV_;;"
+	],
+	[
+		3,
+		1,
+		"print",
+		"21/03/2021",
+		"15:56:40",
+		"text;;_RV_;;"+char(34)+"sha512('hello') : "+char(34)+"+sha512("+char(34)+"hello"+char(34)+")+nl+"+char(34)+"sha512('apple') : "+char(34)+"+sha512("+char(34)+"apple"+char(34)+")+nl+"+char(34)+"sha512('hello world') : "+char(34)+"+sha512("+char(34)+"hello world"+char(34)+")+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	]
+]
+
+# End of Visual Source File

@@ -1,0 +1,615 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'English'
+nStepsID                 = 14		
+nInteractionsID          = 9
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"Load <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">gameengine.ring</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"load "+char(34)+"gameengine.ring"+char(34)+""
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Load gameengine.ring"
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"# Give control to the game engine"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# Give control to the game engine"
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"# Give control to the game engine"
+			]
+		]
+	],
+	[
+		4,
+		1,
+		[
+			[
+				"name",
+				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">main</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"func main  { "
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"function main "
+			]
+		]
+	],
+	[
+		5,
+		4,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		7,
+		5,
+		[
+			[
+				"name",
+				"# Called by the Game Engine"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# Called by the Game Engine"
+			],
+			[
+				"interactionid",
+				5
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"# Called by the Game Engine"
+			]
+		]
+	],
+	[
+		8,
+		5,
+		[
+			[
+				"name",
+				"# Create the Game Object"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# Create the Game Object"
+			],
+			[
+				"interactionid",
+				6
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"# Create the Game Object"
+			]
+		]
+	],
+	[
+		9,
+		5,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oGame</font></span> = New Object <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Game</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"oGame = new Game"
+			],
+			[
+				"interactionid",
+				7
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"oGame = New Object Game"
+			]
+		]
+	],
+	[
+		10,
+		9,
+		[
+			[
+				"name",
+				"{"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				" {"
+			],
+			[
+				"interactionid",
+				7
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"{"
+			]
+		]
+	],
+	[
+		11,
+		10,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				7
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		13,
+		11,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">title</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;My&nbsp;First&nbsp;Game&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"title = "+char(34)+"My First Game"+char(34)+""
+			],
+			[
+				"interactionid",
+				8
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"title = "+char(34)+"My First Game"+char(34)+""
+			]
+		]
+	],
+	[
+		12,
+		10,
+		[
+			[
+				"name",
+				"}"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"}"
+			],
+			[
+				"interactionid",
+				7
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				4
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"}"
+			]
+		]
+	],
+	[
+		14,
+		5,
+		[
+			[
+				"name",
+				"# Start the Events Loop	"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# Start the Events Loop	"
+			],
+			[
+				"interactionid",
+				9
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"# Start the Events Loop	"
+			]
+		]
+	],
+	[
+		6,
+		4,
+		[
+			[
+				"name",
+				"End of Function"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of Function"
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"21/03/2021",
+		"15:57:01",
+		""
+	],
+	[
+		2,
+		1,
+		"load",
+		"21/03/2021",
+		"15:57:01",
+		"file;;_RV_;;gameengine.ring;;_RV_;;"
+	],
+	[
+		3,
+		1,
+		"",
+		"21/03/2021",
+		"15:57:01",
+		""
+	],
+	[
+		4,
+		1,
+		"func",
+		"21/03/2021",
+		"15:57:01",
+		"name;;_RV_;;main;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+	],
+	[
+		5,
+		1,
+		"",
+		"21/03/2021",
+		"15:57:01",
+		""
+	],
+	[
+		6,
+		1,
+		"",
+		"21/03/2021",
+		"15:57:01",
+		""
+	],
+	[
+		7,
+		1,
+		"newobj",
+		"21/03/2021",
+		"15:57:01",
+		"value;;_RV_;;oGame;;_RV_;;value2;;_RV_;;Game;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
+	],
+	[
+		8,
+		1,
+		"assignment",
+		"21/03/2021",
+		"15:57:01",
+		"leftside;;_RV_;;title;;_RV_;;rightside;;_RV_;;"+char(34)+"My First Game"+char(34)+";;_RV_;;"
+	],
+	[
+		9,
+		1,
+		"",
+		"21/03/2021",
+		"15:57:01",
+		""
+	]
+]
+
+# End of Visual Source File

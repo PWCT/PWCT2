@@ -1,0 +1,425 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'English'
+nStepsID                 = 9		
+nInteractionsID          = 9
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;IsMSDOS()&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--&gt;&nbsp;&quot;+ismsdos()+nl</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"see "+char(34)+"IsMSDOS()     --> "+char(34)+"+ismsdos()+nl"
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print "+char(34)+"IsMSDOS()     --> "+char(34)+"+ismsdos()+nl"
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;IsWindows()&nbsp;&nbsp;&nbsp;--&gt;&nbsp;&quot;+iswindows()+nl</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"see "+char(34)+"IsWindows()   --> "+char(34)+"+iswindows()+nl"
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print "+char(34)+"IsWindows()   --> "+char(34)+"+iswindows()+nl"
+			]
+		]
+	],
+	[
+		4,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;IsWindows64()&nbsp;--&gt;&nbsp;&quot;+iswindows64()+nl</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"see "+char(34)+"IsWindows64() --> "+char(34)+"+iswindows64()+nl"
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print "+char(34)+"IsWindows64() --> "+char(34)+"+iswindows64()+nl"
+			]
+		]
+	],
+	[
+		5,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;IsUnix()&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--&gt;&nbsp;&quot;+isunix()+nl</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"see "+char(34)+"IsUnix()      --> "+char(34)+"+isunix()+nl"
+			],
+			[
+				"interactionid",
+				5
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print "+char(34)+"IsUnix()      --> "+char(34)+"+isunix()+nl"
+			]
+		]
+	],
+	[
+		6,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;IsMacOSX()&nbsp;&nbsp;&nbsp;&nbsp;--&gt;&nbsp;&quot;+ismacosx()+nl</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"see "+char(34)+"IsMacOSX()    --> "+char(34)+"+ismacosx()+nl"
+			],
+			[
+				"interactionid",
+				6
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print "+char(34)+"IsMacOSX()    --> "+char(34)+"+ismacosx()+nl"
+			]
+		]
+	],
+	[
+		7,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;IsLinux()&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--&gt;&nbsp;&quot;+islinux()+nl</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"see "+char(34)+"IsLinux()     --> "+char(34)+"+islinux()+nl"
+			],
+			[
+				"interactionid",
+				7
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print "+char(34)+"IsLinux()     --> "+char(34)+"+islinux()+nl"
+			]
+		]
+	],
+	[
+		8,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;IsFreeBSD()&nbsp;&nbsp;&nbsp;--&gt;&nbsp;&quot;+isfreebsd()+nl</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"see "+char(34)+"IsFreeBSD()   --> "+char(34)+"+isfreebsd()+nl"
+			],
+			[
+				"interactionid",
+				8
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print "+char(34)+"IsFreeBSD()   --> "+char(34)+"+isfreebsd()+nl"
+			]
+		]
+	],
+	[
+		9,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;IsAndroid()&nbsp;&nbsp;&nbsp;--&gt;&nbsp;&quot;+isandroid()+nl</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"see "+char(34)+"IsAndroid()   --> "+char(34)+"+isandroid()+nl"
+			],
+			[
+				"interactionid",
+				9
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print "+char(34)+"IsAndroid()   --> "+char(34)+"+isandroid()+nl"
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"21/03/2021",
+		"15:55:46",
+		""
+	],
+	[
+		2,
+		1,
+		"print",
+		"21/03/2021",
+		"15:55:46",
+		"text;;_RV_;;"+char(34)+"IsMSDOS()     --> "+char(34)+"+ismsdos()+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	],
+	[
+		3,
+		1,
+		"print",
+		"21/03/2021",
+		"15:55:46",
+		"text;;_RV_;;"+char(34)+"IsWindows()   --> "+char(34)+"+iswindows()+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	],
+	[
+		4,
+		1,
+		"print",
+		"21/03/2021",
+		"15:55:46",
+		"text;;_RV_;;"+char(34)+"IsWindows64() --> "+char(34)+"+iswindows64()+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	],
+	[
+		5,
+		1,
+		"print",
+		"21/03/2021",
+		"15:55:46",
+		"text;;_RV_;;"+char(34)+"IsUnix()      --> "+char(34)+"+isunix()+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	],
+	[
+		6,
+		1,
+		"print",
+		"21/03/2021",
+		"15:55:46",
+		"text;;_RV_;;"+char(34)+"IsMacOSX()    --> "+char(34)+"+ismacosx()+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	],
+	[
+		7,
+		1,
+		"print",
+		"21/03/2021",
+		"15:55:46",
+		"text;;_RV_;;"+char(34)+"IsLinux()     --> "+char(34)+"+islinux()+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	],
+	[
+		8,
+		1,
+		"print",
+		"21/03/2021",
+		"15:55:46",
+		"text;;_RV_;;"+char(34)+"IsFreeBSD()   --> "+char(34)+"+isfreebsd()+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	],
+	[
+		9,
+		1,
+		"print",
+		"21/03/2021",
+		"15:55:46",
+		"text;;_RV_;;"+char(34)+"IsAndroid()   --> "+char(34)+"+isandroid()+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	]
+]
+
+# End of Visual Source File
