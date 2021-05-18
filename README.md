@@ -48,7 +48,7 @@ a procedure of four simple steps
 The next diagram demonstrates something similar to what I wrote using a pen and paper to explain the idea to my
 friends (The diagram uses screen shots from PWCT 2.0 that doesn't exist at that time).
 
-![concept](https://raw.githubusercontent.com/mahmoudfayed/pwct2/docimages/Hello.png)
+![concept](https://raw.githubusercontent.com/mahmoudfayed/pwct2/blob/master/docimages/Hello.png)
 
 At that time, the advantages were very clear
 
@@ -100,11 +100,11 @@ Using the Time Dimension we can
 
 For example, the next program print numbers from 1 to 10 and print the Three message after the number 3.
 
-![tm1](https://raw.githubusercontent.com/mahmoudfayed/pwct2/docimages/tm1.png)
+![tm1](https://raw.githubusercontent.com/mahmoudfayed/pwct2/blob/master/docimages/tm1.png)
 
 Using the Time Machine slider, we can move to the past and run the program before adding the if statement that print the Three message.
 
-![tm2](https://raw.githubusercontent.com/mahmoudfayed/pwct2/docimages/tm2.png)
+![tm2](https://raw.githubusercontent.com/mahmoudfayed/pwct2/blob/master/docimages/tm2.png)
 
 The previous screen shots uses PWCT 2.0 but, the same idea is implemented in the first generation of PWCT from 2011 (PWCT 1.8)
 
@@ -181,35 +181,35 @@ In the Goal Designer we can type Ring code directly and PWCT will do the visuali
 
 The next Ring code create an object and a class in one line.
 
-![ft1](https://raw.githubusercontent.com/mahmoudfayed/pwct2/docimages/ft1.png)
+![ft1](https://raw.githubusercontent.com/mahmoudfayed/pwct2/blob/master/docimages/ft1.png)
 
 We get the visual output in the Steps Tree 
 
-![ft2](https://raw.githubusercontent.com/mahmoudfayed/pwct2/docimages/ft2.png)
+![ft2](https://raw.githubusercontent.com/mahmoudfayed/pwct2/blob/master/docimages/ft2.png)
 
 We can continue and write more code, for example using a (For Loop) and (If statement)
 
-![ft3](https://raw.githubusercontent.com/mahmoudfayed/pwct2/docimages/ft3.png)
+![ft3](https://raw.githubusercontent.com/mahmoudfayed/pwct2/blob/master/docimages/ft3.png)
 
 Again, we see the output in the steps tree 
 
-![ft4](https://raw.githubusercontent.com/mahmoudfayed/pwct2/docimages/ft4.png)
+![ft4](https://raw.githubusercontent.com/mahmoudfayed/pwct2/blob/master/docimages/ft4.png)
 
 We can define three functions (one, two & three)
 
-![ft5](https://raw.githubusercontent.com/mahmoudfayed/pwct2/docimages/ft5.png)
+![ft5](https://raw.githubusercontent.com/mahmoudfayed/pwct2/blob/master/docimages/ft5.png)
 
 The steps tree are updated 
 
-![ft6](https://raw.githubusercontent.com/mahmoudfayed/pwct2/docimages/ft6.png)
+![ft6](https://raw.githubusercontent.com/mahmoudfayed/pwct2/blob/master/docimages/ft6.png)
 
 We can call these functions 
 
-![ft7](https://raw.githubusercontent.com/mahmoudfayed/pwct2/docimages/ft7.png)
+![ft7](https://raw.githubusercontent.com/mahmoudfayed/pwct2/blob/master/docimages/ft7.png)
 
 So, if you are a Ring programmer and know how to write textual Code, You can reuse this knowledge and PWCT will not get in your way!
 
-![ft8](https://raw.githubusercontent.com/mahmoudfayed/pwct2/docimages/ft8.png)
+![ft8](https://raw.githubusercontent.com/mahmoudfayed/pwct2/blob/master/docimages/ft8.png)
 
 ### Import Textual Source Code Files
 
@@ -219,9 +219,9 @@ We imported all of the Ring applications and samples
 
 For example the next screen shots for the Flappy Bird 3000 game
 
-![flappybird1](https://raw.githubusercontent.com/mahmoudfayed/pwct2/docimages/flappybird1.png)
+![flappybird1](https://raw.githubusercontent.com/mahmoudfayed/pwct2/blob/master/docimages/flappybird1.png)
 
-![flappybird2](https://raw.githubusercontent.com/mahmoudfayed/pwct2/docimages/flappybird2.png)
+![flappybird2](https://raw.githubusercontent.com/mahmoudfayed/pwct2/blob/master/docimages/flappybird2.png)
 
 ## Improving the Implementation
 
@@ -231,7 +231,7 @@ In the second generation of PWCT, we worked on solving all of the reported probl
 
 PWCT 2.0 Support opening many visual source files at the same time
 
-![manyfiles](https://raw.githubusercontent.com/mahmoudfayed/pwct2/docimages/openmanyfiles.png)
+![manyfiles](https://raw.githubusercontent.com/mahmoudfayed/pwct2/blob/master/docimages/openmanyfiles.png)
 
 ### Web and Mobile versions
 
@@ -257,7 +257,7 @@ compared to using a large keyboard.
 
 Using foldable smartphones and Tablets provide better experience.
 
-![webandmobile](https://raw.githubusercontent.com/mahmoudfayed/pwct2/docimages/WebAndMobile.png)
+![webandmobile](https://raw.githubusercontent.com/mahmoudfayed/pwct2/blob/master/docimages/WebAndMobile.png)
 
 ### Translation (Arabic Version)
 
@@ -265,7 +265,7 @@ One of the advantages of using Visual Programming and GUI over textual code edit
 
 PWCT 2.0 will comes with an Arabic version, other languages could be added in the future.
 
-![arabicversion](https://raw.githubusercontent.com/mahmoudfayed/pwct2/docimages/Arabic.jpg)
+![arabicversion](https://raw.githubusercontent.com/mahmoudfayed/pwct2/blob/master/docimages/Arabic.jpg)
 
 ## The Release Date
 
