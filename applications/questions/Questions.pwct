@@ -1,0 +1,103 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'English'
+nStepsID                 = 2		
+nInteractionsID          = 2
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Questions</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[[&quot;5&nbsp;+&nbsp;5&nbsp;=&nbsp;?&quot;,[&quot;11&quot;,&quot;10&quot;,&quot;5&quot;,&quot;8&quot;],2],[&quot;What&nbsp;is&nbsp;the&nbsp;Capital&nbsp;of&nbsp;Egypt?&quot;,[&quot;Alex&quot;,&quot;Cairo&quot;,&quot;Riyadh&quot;,&quot;Jeddah&quot;],2],[&quot;Which&nbsp;is&nbsp;the&nbsp;smallest&nbsp;number?&quot;,[&quot;12&quot;,&quot;5&quot;,&quot;9&quot;,&quot;2&quot;],4],[&quot;Which&nbsp;is&nbsp;the&nbsp;odd&nbsp;number?&quot;,[&quot;28&quot;,&quot;7&quot;,&quot;12&quot;,&quot;4&quot;],2],[&quot;Which&nbsp;is&nbsp;the&nbsp;even&nbsp;number?&quot;,[&quot;16&quot;,&quot;23&quot;,&quot;37&quot;,&quot;45&quot;],1],[&quot;Which&nbsp;is&nbsp;the&nbsp;prime&nbsp;number?&quot;,[&quot;34&quot;,&quot;14&quot;,&quot;9&quot;,&quot;5&quot;],4]]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"Questions = [["+char(34)+"5 + 5 = ?"+char(34)+",["+char(34)+"11"+char(34)+","+char(34)+"10"+char(34)+","+char(34)+"5"+char(34)+","+char(34)+"8"+char(34)+"],2],["+char(34)+"What is the Capital of Egypt?"+char(34)+",["+char(34)+"Alex"+char(34)+","+char(34)+"Cairo"+char(34)+","+char(34)+"Riyadh"+char(34)+","+char(34)+"Jeddah"+char(34)+"],2],["+char(34)+"Which is the smallest number?"+char(34)+",["+char(34)+"12"+char(34)+","+char(34)+"5"+char(34)+","+char(34)+"9"+char(34)+","+char(34)+"2"+char(34)+"],4],["+char(34)+"Which is the odd number?"+char(34)+",["+char(34)+"28"+char(34)+","+char(34)+"7"+char(34)+","+char(34)+"12"+char(34)+","+char(34)+"4"+char(34)+"],2],["+char(34)+"Which is the even number?"+char(34)+",["+char(34)+"16"+char(34)+","+char(34)+"23"+char(34)+","+char(34)+"37"+char(34)+","+char(34)+"45"+char(34)+"],1],["+char(34)+"Which is the prime number?"+char(34)+",["+char(34)+"34"+char(34)+","+char(34)+"14"+char(34)+","+char(34)+"9"+char(34)+","+char(34)+"5"+char(34)+"],4]]"
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Questions = [["+char(34)+"5 + 5 = ?"+char(34)+",["+char(34)+"11"+char(34)+","+char(34)+"10"+char(34)+","+char(34)+"5"+char(34)+","+char(34)+"8"+char(34)+"],2],["+char(34)+"What is the Capital of Egypt?"+char(34)+",["+char(34)+"Alex"+char(34)+","+char(34)+"Cairo"+char(34)+","+char(34)+"Riyadh"+char(34)+","+char(34)+"Jeddah"+char(34)+"],2],["+char(34)+"Which is the smallest number?"+char(34)+",["+char(34)+"12"+char(34)+","+char(34)+"5"+char(34)+","+char(34)+"9"+char(34)+","+char(34)+"2"+char(34)+"],4],["+char(34)+"Which is the odd number?"+char(34)+",["+char(34)+"28"+char(34)+","+char(34)+"7"+char(34)+","+char(34)+"12"+char(34)+","+char(34)+"4"+char(34)+"],2],["+char(34)+"Which is the even number?"+char(34)+",["+char(34)+"16"+char(34)+","+char(34)+"23"+char(34)+","+char(34)+"37"+char(34)+","+char(34)+"45"+char(34)+"],1],["+char(34)+"Which is the prime number?"+char(34)+",["+char(34)+"34"+char(34)+","+char(34)+"14"+char(34)+","+char(34)+"9"+char(34)+","+char(34)+"5"+char(34)+"],4]]"
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"21/03/2021",
+		"15:42:22",
+		""
+	],
+	[
+		2,
+		1,
+		"assignment",
+		"21/03/2021",
+		"15:42:22",
+		"leftside;;_RV_;;Questions;;_RV_;;rightside;;_RV_;;[["+char(34)+"5 + 5 = ?"+char(34)+",["+char(34)+"11"+char(34)+","+char(34)+"10"+char(34)+","+char(34)+"5"+char(34)+","+char(34)+"8"+char(34)+"],2],["+char(34)+"What is the Capital of Egypt?"+char(34)+",["+char(34)+"Alex"+char(34)+","+char(34)+"Cairo"+char(34)+","+char(34)+"Riyadh"+char(34)+","+char(34)+"Jeddah"+char(34)+"],2],["+char(34)+"Which is the smallest number?"+char(34)+",["+char(34)+"12"+char(34)+","+char(34)+"5"+char(34)+","+char(34)+"9"+char(34)+","+char(34)+"2"+char(34)+"],4],["+char(34)+"Which is the odd number?"+char(34)+",["+char(34)+"28"+char(34)+","+char(34)+"7"+char(34)+","+char(34)+"12"+char(34)+","+char(34)+"4"+char(34)+"],2],["+char(34)+"Which is the even number?"+char(34)+",["+char(34)+"16"+char(34)+","+char(34)+"23"+char(34)+","+char(34)+"37"+char(34)+","+char(34)+"45"+char(34)+"],1],["+char(34)+"Which is the prime number?"+char(34)+",["+char(34)+"34"+char(34)+","+char(34)+"14"+char(34)+","+char(34)+"9"+char(34)+","+char(34)+"5"+char(34)+"],4]];;_RV_;;"
+	]
+]
+
+# End of Visual Source File

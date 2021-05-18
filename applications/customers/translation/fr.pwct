@@ -1,0 +1,241 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'English'
+nStepsID                 = 5		
+nInteractionsID          = 5
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_LANGUAGE</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;fr&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_LANGUAGE = "+char(34)+"fr"+char(34)+""
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_LANGUAGE = "+char(34)+"fr"+char(34)+""
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_LAYOUTDIRECTION</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">0</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_LAYOUTDIRECTION = 0"
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_LAYOUTDIRECTION = 0"
+			]
+		]
+	],
+	[
+		4,
+		1,
+		[
+			[
+				"name",
+				"# Left to Right"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# Left to Right"
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"# Left to Right"
+			]
+		]
+	],
+	[
+		5,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aLANGUAGE</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[:TITLE&nbsp;=&nbsp;&quot;Forme&nbsp;Clients&quot;,:LBL_REF_TEXT&nbsp;=&nbsp;&quot;Référence&nbsp;:&quot;,:LBL_NAME_TEXT&nbsp;=&nbsp;&quot;Nom:&quot;,:LBL_EMAIL_TEXT&nbsp;=&nbsp;&quot;Email:&quot;,:LBL_ADDRESS_TEXT&nbsp;=&nbsp;&quot;Adresse:&quot;,:LBL_DATE_TEXT&nbsp;=&nbsp;&quot;Date&nbsp;du&nbsp;jour&nbsp;&quot;,:LBL_TIME_TEXT&nbsp;=&nbsp;&quot;Il&nbsp;est&nbsp;&quot;,:BTN_ADD_NEW_TEXT&nbsp;=&nbsp;&quot;Nouveau&quot;,:BTN_SAVE_TEXT&nbsp;=&nbsp;&quot;Sauvegarder&quot;,:BTN_CANCEL_TEXT&nbsp;=&nbsp;&quot;Annuler&quot;,:BTN_EDIT_TEXT&nbsp;=&nbsp;&quot;Modifier&quot;,:CONFIRM&nbsp;=&nbsp;&quot;Confirmer&quot;,:BTN_DEL_TEXT&nbsp;=&nbsp;&quot;Supprimer&quot;,:BTN_ADD_IMAGE_TEXT&nbsp;=&nbsp;&quot;Ajouter&quot;,:FILTER&nbsp;=&nbsp;&quot;Filtre&quot;,:BTN_EXIT_TEXT&nbsp;=&nbsp;&quot;Quitter&quot;,:SEARCH_BY_REF&nbsp;=&nbsp;&quot;Chercher&nbsp;par&nbsp;référence&quot;,:SEACH_FIELD_EMPTY&nbsp;=&nbsp;&quot;Le&nbsp;champs&nbsp;recherche&nbsp;est&nbsp;vide!&quot;,:FILTER_BY&nbsp;=&nbsp;&quot;Filtrer&nbsp;par:&quot;,:BTN_EXIT_TOOLTIP&nbsp;=&nbsp;&quot;Quitter&nbsp;le&nbsp;programme&quot;,:AUTO_SEARCH&nbsp;=&nbsp;&quot;Auto&nbsp;Search&quot;,:BTN_SEARCH_TEXT&nbsp;=&nbsp;&quot;Chercher&quot;,:BTN_FILL_TEXT&nbsp;=&nbsp;&quot;Actualiser&quot;,:NEXTCUST&nbsp;=&nbsp;&quot;Suivant&quot;,:PREVIEWCUST&nbsp;=&nbsp;&quot;Précédent&quot;,:FIRSTCUST&nbsp;=&nbsp;&quot;Premier&quot;,:LASTCUST&nbsp;=&nbsp;&quot;Dérnier&quot;,:YOU_ARE_ON_THE_LASTLIGNE&nbsp;=&nbsp;&quot;Vous&nbsp;êtes&nbsp;sur&nbsp;la&nbsp;dernière&nbsp;ligne!&quot;,:YOU_ARE_ON_THE_FIRSTLIGNE&nbsp;=&nbsp;&quot;Vous&nbsp;êtes&nbsp;sur&nbsp;la&nbsp;première&nbsp;ligne!&quot;,:TOP&nbsp;=&nbsp;&quot;Haut&quot;,:DOWN&nbsp;=&nbsp;&quot;Bas&quot;,:SEARCH&nbsp;=&nbsp;&quot;Recherche&quot;,:SEACH_NOT_FOUND&nbsp;=&nbsp;&quot;Aucun&nbsp;enregistrement&nbsp;&nbsp;trouvé!&quot;,:ENTER_CUSTOMER_REF&nbsp;=&nbsp;&quot;Entrer&nbsp;la&nbsp;référence&nbsp;du&nbsp;client&quot;,:WARNING&nbsp;=&nbsp;&quot;Avertissement&quot;,:INFOS&nbsp;=&nbsp;&quot;Informations&quot;,:READY&nbsp;=&nbsp;&quot;Prêt&quot;,:RING_VERSION&nbsp;=&nbsp;&quot;Version&nbsp;Ring:&nbsp;&quot;,:RING_LANGUAGE_WEBSITE&nbsp;=&nbsp;&quot;Site&nbsp;Web&nbsp;language&nbsp;ring&quot;,:SURE_TO_ADD_CUST&nbsp;=&nbsp;&quot;Etes-vous&nbsp;sûr&nbsp;que&nbsp;vous&nbsp;voulez&nbsp;ajouter&nbsp;le&nbsp;nouveau&nbsp;client&nbsp;&quot;,:SURE_TO_MODIFI_CUST&nbsp;=&nbsp;&quot;Êtes-vous&nbsp;sûr&nbsp;de&nbsp;vouloir&nbsp;modifier&nbsp;le&nbsp;client&nbsp;&quot;,:SURE_TO_DELETE_CUST&nbsp;=&nbsp;&quot;Êtes-vous&nbsp;sûr&nbsp;de&nbsp;vouloir&nbsp;supprimer&nbsp;le&nbsp;client&nbsp;&quot;,:DELETE_DONE&nbsp;=&nbsp;&quot;La&nbsp;suppression&nbsp;a&nbsp;été&nbsp;gérée&nbsp;avec&nbsp;succès&quot;,:CUST&nbsp;=&nbsp;&quot;Le&nbsp;client&nbsp;&quot;,:CUSTOMER&nbsp;=&nbsp;&quot;&nbsp;client&quot;,:TOTAL&nbsp;=&nbsp;&quot;Totale:&quot;,:AVATAR_ADDED_TO_DB&nbsp;=&nbsp;&quot;L&#039;avatar&nbsp;a&nbsp;été&nbsp;ajouté&nbsp;à&nbsp;la&nbsp;base&nbsp;de&nbsp;donnée&quot;,:WAS_MODIFIED&nbsp;=&nbsp;&quot;&nbsp;a&nbsp;été&nbsp;modifié&nbsp;avec&nbsp;succès!&quot;,:RECORD_ADDED&nbsp;=&nbsp;&quot;L’enregistrement&nbsp;a&nbsp;été&nbsp;ajouté&nbsp;avec&nbsp;succès&quot;,:AVATAR_HAS_BEEN_MODIFIED&nbsp;=&nbsp;&quot;L&#039;avatar&nbsp;a&nbsp;été&nbsp;modifié&nbsp;avec&nbsp;succès!&quot;,:AVATAR_NOT_MODIFIED&nbsp;=&nbsp;&quot;L&#039;avatar&nbsp;n&#039;a&nbsp;pas&nbsp;pu&nbsp;être&nbsp;modifier&quot;,:WANT_ADD_AVATAR&nbsp;=&nbsp;&quot;ٍVoulez-vous&nbsp;ajouter&nbsp;l&#039;avatar?&quot;,:WANT_MODIFIE_AVATAR&nbsp;=&nbsp;&quot;Voulez-vous&nbsp;modifier&nbsp;l&#039;avatar?&quot;,:WANT_TO_QUIT&nbsp;=&nbsp;&quot;Voulez-vous&nbsp;quitter&nbsp;le&nbsp;programe&quot;,:COPY_TO_AVATARS_FOLDER&nbsp;=&nbsp;&quot;Copier&nbsp;ver&nbsp;dossier&quot;,:COPY_TO_DATA_BASE&nbsp;=&nbsp;&quot;Copier&nbsp;ver&nbsp;base&quot;,:CONFIRMATION&nbsp;=&nbsp;&quot;Confirmation&quot;,:REF_NOT_FOUND&nbsp;=&nbsp;&quot;Cette&nbsp;références&nbsp;n’est&nbsp;pas&nbsp;trouvée!&quot;,:NAME_IS_REQUIRED&nbsp;=&nbsp;&quot;Le&nbsp;champ&nbsp;nom&nbsp;est&nbsp;requis!&quot;,:EMAIL_IS_REQUIRED&nbsp;=&nbsp;&quot;Le&nbsp;champ&nbsp;émail&nbsp;est&nbsp;requis!&quot;,:ADDRESS_IS_REQUIRED&nbsp;=&nbsp;&quot;Le&nbsp;champs&nbsp;adresse&nbsp;est&nbsp;requis!&quot;,:REF_IS_REQUIRED&nbsp;=&nbsp;&quot;Références&nbsp;du&nbsp;client&nbsp;est&nbsp;requis!&quot;,:PATH_IS_REQUIRED&nbsp;=&nbsp;&quot;Un&nbsp;chemin&nbsp;pour&nbsp;le&nbsp;fichier&nbsp;est&nbsp;requis!&quot;,:NOT_CONNECTED&nbsp;=&nbsp;&quot;Non&nbsp;connecté!&quot;,:SQL_ERR_MSG&nbsp;=&nbsp;&quot;Vous&nbsp;avez&nbsp;oublié&nbsp;de&nbsp;vous&nbsp;connecter&nbsp;à&nbsp;la&nbsp;base&nbsp;de&nbsp;données!&quot;,:USE&nbsp;=&nbsp;&quot;Utilisez&quot;,:ERROR&nbsp;=&nbsp;&quot;Erreur:&nbsp;&quot;,:OBJECT_IS_REQUIRED&nbsp;=&nbsp;&quot;Un&nbsp;objet&nbsp;est&nbsp;nécessaire!&quot;,:USE_QTABLE&nbsp;=&nbsp;&quot;Utilisez&nbsp;un&nbsp;(qtablewidget)&nbsp;ou&nbsp;un&nbsp;(tablewidget)!&quot;,:OPEN_FILE&nbsp;=&nbsp;&quot;Ouvrir&nbsp;un&nbsp;fichier&quot;,:IMAGE_FILE&nbsp;=&nbsp;&quot;Fichier&nbsp;image&quot;,:ALL_FILE&nbsp;=&nbsp;&quot;Tous&nbsp;les&nbsp;fichiers&quot;]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"aLANGUAGE = [:TITLE = "+char(34)+"Forme Clients"+char(34)+",:LBL_REF_TEXT = "+char(34)+"Référence :"+char(34)+",:LBL_NAME_TEXT = "+char(34)+"Nom:"+char(34)+",:LBL_EMAIL_TEXT = "+char(34)+"Email:"+char(34)+",:LBL_ADDRESS_TEXT = "+char(34)+"Adresse:"+char(34)+",:LBL_DATE_TEXT = "+char(34)+"Date du jour "+char(34)+",:LBL_TIME_TEXT = "+char(34)+"Il est "+char(34)+",:BTN_ADD_NEW_TEXT = "+char(34)+"Nouveau"+char(34)+",:BTN_SAVE_TEXT = "+char(34)+"Sauvegarder"+char(34)+",:BTN_CANCEL_TEXT = "+char(34)+"Annuler"+char(34)+",:BTN_EDIT_TEXT = "+char(34)+"Modifier"+char(34)+",:CONFIRM = "+char(34)+"Confirmer"+char(34)+",:BTN_DEL_TEXT = "+char(34)+"Supprimer"+char(34)+",:BTN_ADD_IMAGE_TEXT = "+char(34)+"Ajouter"+char(34)+",:FILTER = "+char(34)+"Filtre"+char(34)+",:BTN_EXIT_TEXT = "+char(34)+"Quitter"+char(34)+",:SEARCH_BY_REF = "+char(34)+"Chercher par référence"+char(34)+",:SEACH_FIELD_EMPTY = "+char(34)+"Le champs recherche est vide!"+char(34)+",:FILTER_BY = "+char(34)+"Filtrer par:"+char(34)+",:BTN_EXIT_TOOLTIP = "+char(34)+"Quitter le programme"+char(34)+",:AUTO_SEARCH = "+char(34)+"Auto Search"+char(34)+",:BTN_SEARCH_TEXT = "+char(34)+"Chercher"+char(34)+",:BTN_FILL_TEXT = "+char(34)+"Actualiser"+char(34)+",:NEXTCUST = "+char(34)+"Suivant"+char(34)+",:PREVIEWCUST = "+char(34)+"Précédent"+char(34)+",:FIRSTCUST = "+char(34)+"Premier"+char(34)+",:LASTCUST = "+char(34)+"Dérnier"+char(34)+",:YOU_ARE_ON_THE_LASTLIGNE = "+char(34)+"Vous êtes sur la dernière ligne!"+char(34)+",:YOU_ARE_ON_THE_FIRSTLIGNE = "+char(34)+"Vous êtes sur la première ligne!"+char(34)+",:TOP = "+char(34)+"Haut"+char(34)+",:DOWN = "+char(34)+"Bas"+char(34)+",:SEARCH = "+char(34)+"Recherche"+char(34)+",:SEACH_NOT_FOUND = "+char(34)+"Aucun enregistrement  trouvé!"+char(34)+",:ENTER_CUSTOMER_REF = "+char(34)+"Entrer la référence du client"+char(34)+",:WARNING = "+char(34)+"Avertissement"+char(34)+",:INFOS = "+char(34)+"Informations"+char(34)+",:READY = "+char(34)+"Prêt"+char(34)+",:RING_VERSION = "+char(34)+"Version Ring: "+char(34)+",:RING_LANGUAGE_WEBSITE = "+char(34)+"Site Web language ring"+char(34)+",:SURE_TO_ADD_CUST = "+char(34)+"Etes-vous sûr que vous voulez ajouter le nouveau client "+char(34)+",:SURE_TO_MODIFI_CUST = "+char(34)+"Êtes-vous sûr de vouloir modifier le client "+char(34)+",:SURE_TO_DELETE_CUST = "+char(34)+"Êtes-vous sûr de vouloir supprimer le client "+char(34)+",:DELETE_DONE = "+char(34)+"La suppression a été gérée avec succès"+char(34)+",:CUST = "+char(34)+"Le client "+char(34)+",:CUSTOMER = "+char(34)+" client"+char(34)+",:TOTAL = "+char(34)+"Totale:"+char(34)+",:AVATAR_ADDED_TO_DB = "+char(34)+"L'avatar a été ajouté à la base de donnée"+char(34)+",:WAS_MODIFIED = "+char(34)+" a été modifié avec succès!"+char(34)+",:RECORD_ADDED = "+char(34)+"L’enregistrement a été ajouté avec succès"+char(34)+",:AVATAR_HAS_BEEN_MODIFIED = "+char(34)+"L'avatar a été modifié avec succès!"+char(34)+",:AVATAR_NOT_MODIFIED = "+char(34)+"L'avatar n'a pas pu être modifier"+char(34)+",:WANT_ADD_AVATAR = "+char(34)+"ٍVoulez-vous ajouter l'avatar?"+char(34)+",:WANT_MODIFIE_AVATAR = "+char(34)+"Voulez-vous modifier l'avatar?"+char(34)+",:WANT_TO_QUIT = "+char(34)+"Voulez-vous quitter le programe"+char(34)+",:COPY_TO_AVATARS_FOLDER = "+char(34)+"Copier ver dossier"+char(34)+",:COPY_TO_DATA_BASE = "+char(34)+"Copier ver base"+char(34)+",:CONFIRMATION = "+char(34)+"Confirmation"+char(34)+",:REF_NOT_FOUND = "+char(34)+"Cette références n’est pas trouvée!"+char(34)+",:NAME_IS_REQUIRED = "+char(34)+"Le champ nom est requis!"+char(34)+",:EMAIL_IS_REQUIRED = "+char(34)+"Le champ émail est requis!"+char(34)+",:ADDRESS_IS_REQUIRED = "+char(34)+"Le champs adresse est requis!"+char(34)+",:REF_IS_REQUIRED = "+char(34)+"Références du client est requis!"+char(34)+",:PATH_IS_REQUIRED = "+char(34)+"Un chemin pour le fichier est requis!"+char(34)+",:NOT_CONNECTED = "+char(34)+"Non connecté!"+char(34)+",:SQL_ERR_MSG = "+char(34)+"Vous avez oublié de vous connecter à la base de données!"+char(34)+",:USE = "+char(34)+"Utilisez"+char(34)+",:ERROR = "+char(34)+"Erreur: "+char(34)+",:OBJECT_IS_REQUIRED = "+char(34)+"Un objet est nécessaire!"+char(34)+",:USE_QTABLE = "+char(34)+"Utilisez un (qtablewidget) ou un (tablewidget)!"+char(34)+",:OPEN_FILE = "+char(34)+"Ouvrir un fichier"+char(34)+",:IMAGE_FILE = "+char(34)+"Fichier image"+char(34)+",:ALL_FILE = "+char(34)+"Tous les fichiers"+char(34)+"]"
+			],
+			[
+				"interactionid",
+				5
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"aLANGUAGE = [:TITLE = "+char(34)+"Forme Clients"+char(34)+",:LBL_REF_TEXT = "+char(34)+"Référence :"+char(34)+",:LBL_NAME_TEXT = "+char(34)+"Nom:"+char(34)+",:LBL_EMAIL_TEXT = "+char(34)+"Email:"+char(34)+",:LBL_ADDRESS_TEXT = "+char(34)+"Adresse:"+char(34)+",:LBL_DATE_TEXT = "+char(34)+"Date du jour "+char(34)+",:LBL_TIME_TEXT = "+char(34)+"Il est "+char(34)+",:BTN_ADD_NEW_TEXT = "+char(34)+"Nouveau"+char(34)+",:BTN_SAVE_TEXT = "+char(34)+"Sauvegarder"+char(34)+",:BTN_CANCEL_TEXT = "+char(34)+"Annuler"+char(34)+",:BTN_EDIT_TEXT = "+char(34)+"Modifier"+char(34)+",:CONFIRM = "+char(34)+"Confirmer"+char(34)+",:BTN_DEL_TEXT = "+char(34)+"Supprimer"+char(34)+",:BTN_ADD_IMAGE_TEXT = "+char(34)+"Ajouter"+char(34)+",:FILTER = "+char(34)+"Filtre"+char(34)+",:BTN_EXIT_TEXT = "+char(34)+"Quitter"+char(34)+",:SEARCH_BY_REF = "+char(34)+"Chercher par référence"+char(34)+",:SEACH_FIELD_EMPTY = "+char(34)+"Le champs recherche est vide!"+char(34)+",:FILTER_BY = "+char(34)+"Filtrer par:"+char(34)+",:BTN_EXIT_TOOLTIP = "+char(34)+"Quitter le programme"+char(34)+",:AUTO_SEARCH = "+char(34)+"Auto Search"+char(34)+",:BTN_SEARCH_TEXT = "+char(34)+"Chercher"+char(34)+",:BTN_FILL_TEXT = "+char(34)+"Actualiser"+char(34)+",:NEXTCUST = "+char(34)+"Suivant"+char(34)+",:PREVIEWCUST = "+char(34)+"Précédent"+char(34)+",:FIRSTCUST = "+char(34)+"Premier"+char(34)+",:LASTCUST = "+char(34)+"Dérnier"+char(34)+",:YOU_ARE_ON_THE_LASTLIGNE = "+char(34)+"Vous êtes sur la dernière ligne!"+char(34)+",:YOU_ARE_ON_THE_FIRSTLIGNE = "+char(34)+"Vous êtes sur la première ligne!"+char(34)+",:TOP = "+char(34)+"Haut"+char(34)+",:DOWN = "+char(34)+"Bas"+char(34)+",:SEARCH = "+char(34)+"Recherche"+char(34)+",:SEACH_NOT_FOUND = "+char(34)+"Aucun enregistrement  trouvé!"+char(34)+",:ENTER_CUSTOMER_REF = "+char(34)+"Entrer la référence du client"+char(34)+",:WARNING = "+char(34)+"Avertissement"+char(34)+",:INFOS = "+char(34)+"Informations"+char(34)+",:READY = "+char(34)+"Prêt"+char(34)+",:RING_VERSION = "+char(34)+"Version Ring: "+char(34)+",:RING_LANGUAGE_WEBSITE = "+char(34)+"Site Web language ring"+char(34)+",:SURE_TO_ADD_CUST = "+char(34)+"Etes-vous sûr que vous voulez ajouter le nouveau client "+char(34)+",:SURE_TO_MODIFI_CUST = "+char(34)+"Êtes-vous sûr de vouloir modifier le client "+char(34)+",:SURE_TO_DELETE_CUST = "+char(34)+"Êtes-vous sûr de vouloir supprimer le client "+char(34)+",:DELETE_DONE = "+char(34)+"La suppression a été gérée avec succès"+char(34)+",:CUST = "+char(34)+"Le client "+char(34)+",:CUSTOMER = "+char(34)+" client"+char(34)+",:TOTAL = "+char(34)+"Totale:"+char(34)+",:AVATAR_ADDED_TO_DB = "+char(34)+"L'avatar a été ajouté à la base de donnée"+char(34)+",:WAS_MODIFIED = "+char(34)+" a été modifié avec succès!"+char(34)+",:RECORD_ADDED = "+char(34)+"L’enregistrement a été ajouté avec succès"+char(34)+",:AVATAR_HAS_BEEN_MODIFIED = "+char(34)+"L'avatar a été modifié avec succès!"+char(34)+",:AVATAR_NOT_MODIFIED = "+char(34)+"L'avatar n'a pas pu être modifier"+char(34)+",:WANT_ADD_AVATAR = "+char(34)+"ٍVoulez-vous ajouter l'avatar?"+char(34)+",:WANT_MODIFIE_AVATAR = "+char(34)+"Voulez-vous modifier l'avatar?"+char(34)+",:WANT_TO_QUIT = "+char(34)+"Voulez-vous quitter le programe"+char(34)+",:COPY_TO_AVATARS_FOLDER = "+char(34)+"Copier ver dossier"+char(34)+",:COPY_TO_DATA_BASE = "+char(34)+"Copier ver base"+char(34)+",:CONFIRMATION = "+char(34)+"Confirmation"+char(34)+",:REF_NOT_FOUND = "+char(34)+"Cette références n’est pas trouvée!"+char(34)+",:NAME_IS_REQUIRED = "+char(34)+"Le champ nom est requis!"+char(34)+",:EMAIL_IS_REQUIRED = "+char(34)+"Le champ émail est requis!"+char(34)+",:ADDRESS_IS_REQUIRED = "+char(34)+"Le champs adresse est requis!"+char(34)+",:REF_IS_REQUIRED = "+char(34)+"Références du client est requis!"+char(34)+",:PATH_IS_REQUIRED = "+char(34)+"Un chemin pour le fichier est requis!"+char(34)+",:NOT_CONNECTED = "+char(34)+"Non connecté!"+char(34)+",:SQL_ERR_MSG = "+char(34)+"Vous avez oublié de vous connecter à la base de données!"+char(34)+",:USE = "+char(34)+"Utilisez"+char(34)+",:ERROR = "+char(34)+"Erreur: "+char(34)+",:OBJECT_IS_REQUIRED = "+char(34)+"Un objet est nécessaire!"+char(34)+",:USE_QTABLE = "+char(34)+"Utilisez un (qtablewidget) ou un (tablewidget)!"+char(34)+",:OPEN_FILE = "+char(34)+"Ouvrir un fichier"+char(34)+",:IMAGE_FILE = "+char(34)+"Fichier image"+char(34)+",:ALL_FILE = "+char(34)+"Tous les fichiers"+char(34)+"]"
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"21/03/2021",
+		"15:39:05",
+		""
+	],
+	[
+		2,
+		1,
+		"assignment",
+		"21/03/2021",
+		"15:39:05",
+		"leftside;;_RV_;;T_LANGUAGE;;_RV_;;rightside;;_RV_;;"+char(34)+"fr"+char(34)+";;_RV_;;"
+	],
+	[
+		3,
+		1,
+		"assignment",
+		"21/03/2021",
+		"15:39:05",
+		"leftside;;_RV_;;T_LAYOUTDIRECTION;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
+	],
+	[
+		4,
+		1,
+		"",
+		"21/03/2021",
+		"15:39:05",
+		""
+	],
+	[
+		5,
+		1,
+		"assignment",
+		"21/03/2021",
+		"15:39:05",
+		"leftside;;_RV_;;aLANGUAGE;;_RV_;;rightside;;_RV_;;[:TITLE = "+char(34)+"Forme Clients"+char(34)+",:LBL_REF_TEXT = "+char(34)+"Référence :"+char(34)+",:LBL_NAME_TEXT = "+char(34)+"Nom:"+char(34)+",:LBL_EMAIL_TEXT = "+char(34)+"Email:"+char(34)+",:LBL_ADDRESS_TEXT = "+char(34)+"Adresse:"+char(34)+",:LBL_DATE_TEXT = "+char(34)+"Date du jour "+char(34)+",:LBL_TIME_TEXT = "+char(34)+"Il est "+char(34)+",:BTN_ADD_NEW_TEXT = "+char(34)+"Nouveau"+char(34)+",:BTN_SAVE_TEXT = "+char(34)+"Sauvegarder"+char(34)+",:BTN_CANCEL_TEXT = "+char(34)+"Annuler"+char(34)+",:BTN_EDIT_TEXT = "+char(34)+"Modifier"+char(34)+",:CONFIRM = "+char(34)+"Confirmer"+char(34)+",:BTN_DEL_TEXT = "+char(34)+"Supprimer"+char(34)+",:BTN_ADD_IMAGE_TEXT = "+char(34)+"Ajouter"+char(34)+",:FILTER = "+char(34)+"Filtre"+char(34)+",:BTN_EXIT_TEXT = "+char(34)+"Quitter"+char(34)+",:SEARCH_BY_REF = "+char(34)+"Chercher par référence"+char(34)+",:SEACH_FIELD_EMPTY = "+char(34)+"Le champs recherche est vide!"+char(34)+",:FILTER_BY = "+char(34)+"Filtrer par:"+char(34)+",:BTN_EXIT_TOOLTIP = "+char(34)+"Quitter le programme"+char(34)+",:AUTO_SEARCH = "+char(34)+"Auto Search"+char(34)+",:BTN_SEARCH_TEXT = "+char(34)+"Chercher"+char(34)+",:BTN_FILL_TEXT = "+char(34)+"Actualiser"+char(34)+",:NEXTCUST = "+char(34)+"Suivant"+char(34)+",:PREVIEWCUST = "+char(34)+"Précédent"+char(34)+",:FIRSTCUST = "+char(34)+"Premier"+char(34)+",:LASTCUST = "+char(34)+"Dérnier"+char(34)+",:YOU_ARE_ON_THE_LASTLIGNE = "+char(34)+"Vous êtes sur la dernière ligne!"+char(34)+",:YOU_ARE_ON_THE_FIRSTLIGNE = "+char(34)+"Vous êtes sur la première ligne!"+char(34)+",:TOP = "+char(34)+"Haut"+char(34)+",:DOWN = "+char(34)+"Bas"+char(34)+",:SEARCH = "+char(34)+"Recherche"+char(34)+",:SEACH_NOT_FOUND = "+char(34)+"Aucun enregistrement  trouvé!"+char(34)+",:ENTER_CUSTOMER_REF = "+char(34)+"Entrer la référence du client"+char(34)+",:WARNING = "+char(34)+"Avertissement"+char(34)+",:INFOS = "+char(34)+"Informations"+char(34)+",:READY = "+char(34)+"Prêt"+char(34)+",:RING_VERSION = "+char(34)+"Version Ring: "+char(34)+",:RING_LANGUAGE_WEBSITE = "+char(34)+"Site Web language ring"+char(34)+",:SURE_TO_ADD_CUST = "+char(34)+"Etes-vous sûr que vous voulez ajouter le nouveau client "+char(34)+",:SURE_TO_MODIFI_CUST = "+char(34)+"Êtes-vous sûr de vouloir modifier le client "+char(34)+",:SURE_TO_DELETE_CUST = "+char(34)+"Êtes-vous sûr de vouloir supprimer le client "+char(34)+",:DELETE_DONE = "+char(34)+"La suppression a été gérée avec succès"+char(34)+",:CUST = "+char(34)+"Le client "+char(34)+",:CUSTOMER = "+char(34)+" client"+char(34)+",:TOTAL = "+char(34)+"Totale:"+char(34)+",:AVATAR_ADDED_TO_DB = "+char(34)+"L'avatar a été ajouté à la base de donnée"+char(34)+",:WAS_MODIFIED = "+char(34)+" a été modifié avec succès!"+char(34)+",:RECORD_ADDED = "+char(34)+"L’enregistrement a été ajouté avec succès"+char(34)+",:AVATAR_HAS_BEEN_MODIFIED = "+char(34)+"L'avatar a été modifié avec succès!"+char(34)+",:AVATAR_NOT_MODIFIED = "+char(34)+"L'avatar n'a pas pu être modifier"+char(34)+",:WANT_ADD_AVATAR = "+char(34)+"ٍVoulez-vous ajouter l'avatar?"+char(34)+",:WANT_MODIFIE_AVATAR = "+char(34)+"Voulez-vous modifier l'avatar?"+char(34)+",:WANT_TO_QUIT = "+char(34)+"Voulez-vous quitter le programe"+char(34)+",:COPY_TO_AVATARS_FOLDER = "+char(34)+"Copier ver dossier"+char(34)+",:COPY_TO_DATA_BASE = "+char(34)+"Copier ver base"+char(34)+",:CONFIRMATION = "+char(34)+"Confirmation"+char(34)+",:REF_NOT_FOUND = "+char(34)+"Cette références n’est pas trouvée!"+char(34)+",:NAME_IS_REQUIRED = "+char(34)+"Le champ nom est requis!"+char(34)+",:EMAIL_IS_REQUIRED = "+char(34)+"Le champ émail est requis!"+char(34)+",:ADDRESS_IS_REQUIRED = "+char(34)+"Le champs adresse est requis!"+char(34)+",:REF_IS_REQUIRED = "+char(34)+"Références du client est requis!"+char(34)+",:PATH_IS_REQUIRED = "+char(34)+"Un chemin pour le fichier est requis!"+char(34)+",:NOT_CONNECTED = "+char(34)+"Non connecté!"+char(34)+",:SQL_ERR_MSG = "+char(34)+"Vous avez oublié de vous connecter à la base de données!"+char(34)+",:USE = "+char(34)+"Utilisez"+char(34)+",:ERROR = "+char(34)+"Erreur: "+char(34)+",:OBJECT_IS_REQUIRED = "+char(34)+"Un objet est nécessaire!"+char(34)+",:USE_QTABLE = "+char(34)+"Utilisez un (qtablewidget) ou un (tablewidget)!"+char(34)+",:OPEN_FILE = "+char(34)+"Ouvrir un fichier"+char(34)+",:IMAGE_FILE = "+char(34)+"Fichier image"+char(34)+",:ALL_FILE = "+char(34)+"Tous les fichiers"+char(34)+"];;_RV_;;"
+	]
+]
+
+# End of Visual Source File

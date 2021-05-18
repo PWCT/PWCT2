@@ -1,0 +1,111 @@
+# Start Form Designer File
+aObjectsList = [
+	[ :name = "Window" , :id = 1 , :classname = "formdesigner_qwidget" , :data = [
+		 :x = -724 , : y = 61  , 
+		 :width =  1317 , :height = 586 , 
+		 :title =  "Chess Endgame Data Set" , 
+		 :backcolor =  "" , 
+		 :windowflags =  "" , 
+		 :mainlayout =  "" ,
+		 :WindowIcon =  "images/chessboard.png" , 
+		 :Menubar =  "aMenuData = [ :Text = 'The Menubar' , :Image = '' ,
+			         :Shortcut = '' , :Action = '' ,
+				:Children = [[ :Text = 'File' , :Image = '' ,
+			         :Shortcut = '' , :Action = '' ,
+				:Children = [[ :Text = 'Exit' , :Image = '' ,
+			         :Shortcut = '' , :Action = 'closeapp' ,
+				:Children = [] ]] ],[ :Text = 'Options' , :Image = '' ,
+			         :Shortcut = '' , :Action = '' ,
+				:Children = [[ :Text = 'Statistics' , :Image = '' ,
+			         :Shortcut = '' , :Action = 'openStats' ,
+				:Children = [] ],[ :Text = 'Prediction' , :Image = '' ,
+			         :Shortcut = '' , :Action = 'openPrediction' ,
+				:Children = [] ]] ]] ]"  ,
+		 :IndexType =  0  
+
+		]
+	],
+	[ :name = "ChessTableWidget" , :id = 2 , :classname = "formdesigner_qtablewidget" , :data = [
+		 :x = 27 , : y = 45  , 
+		 :width =  755 , :height = 529 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :RowCount =  "28056",
+		 :ColumnCount =  "7",
+		 :HorizontalHeaders =  "WhiteKingFile,WhiteKingRank,WhiteRookFile,WhiteRookRank,BlackKingFile,BlackKingRank,GameResult",
+		 :ColumnsWidth =  "",
+		 :HorizontalHeaderStyle =  "",
+		 :VerticalHeaderStyle =  "",
+		 :selectionbehavior =  1,
+		 :alternatingcolors =  0,
+		 :setcellActivatedEvent =  "",
+		 :setcellChangedEvent =  "",
+		 :setcellClickedEvent =  "",
+		 :setcellDoubleClickedEvent =  "",
+		 :setcellEnteredEvent =  "",
+		 :setcellPressedEvent =  "",
+		 :setcurrentCellChangedEvent =  "",
+		 :setcurrentItemChangedEvent =  "NewSelection",
+		 :setitemActivatedEvent =  "",
+		 :setitemChangedEvent =  "",
+		 :setitemClickedEvent =  "",
+		 :setitemDoubleClickedEvent =  "",
+		 :setitemEnteredEvent =  "",
+		 :setitemPressedEvent =  "",
+		 :setitemSelectionChangedEvent =  ""
+		]
+	],
+	[ :name = "Statusbar1" , :id = 3 , :classname = "formdesigner_qstatusbar" , :data = [
+		 :x = 244 , : y = 379  , 
+		 :width =  96 , :height = 12 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :Message =  "Ready!"
+		]
+	],
+	[ :name = "Board" , :id = 4 , :classname = "formdesigner_qimage" , :data = [
+		 :x = 859 , : y = 71  , 
+		 :width =  400 , :height = 400 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :imagefile =  "images/chessboard.png"
+		]
+	],
+	[ :name = "WK" , :id = 5 , :classname = "formdesigner_qimage" , :data = [
+		 :x = 883 , : y = 483  , 
+		 :width =  50 , :height = 50 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :imagefile =  "images/WK.png"
+		]
+	],
+	[ :name = "WR" , :id = 6 , :classname = "formdesigner_qimage" , :data = [
+		 :x = 1003 , : y = 483  , 
+		 :width =  50 , :height = 50 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :imagefile =  "images/WR.png"
+		]
+	],
+	[ :name = "BK" , :id = 7 , :classname = "formdesigner_qimage" , :data = [
+		 :x = 1126 , : y = 483  , 
+		 :width =  50 , :height = 50 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :imagefile =  "images/BK.png"
+		]
+	]
+]
+# End Form Designer File
