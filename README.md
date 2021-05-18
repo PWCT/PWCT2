@@ -24,6 +24,22 @@ This is just the basic idea and many other ideas are developed around
 this concept to get a practical general purpose visual programming 
 language for real world tasks. 
 
+# Contents:
+
+- [Introduction](#introduction)
+- [The First Generation](#the-first-generation)
+  - [The Concept of the First Generation](#the-concept-of-the-first-generation)
+  - [The Disadvantages of the First Generation](#the-disadvantages-of-the-first-generation)
+- [The Second Generation](#the-second-generation)
+  - [Improving the Concept](#improving-the-concept)
+    - [Interactive Visualizations](#interactive-visualizations)
+    - [Import Textual Source Code Files](#import-textual-source-code-files)
+  - [Improving the Implementation](#improving-the-implementation)
+    - [Open Many Files](#open-many-files)
+    - [Web and Mobile versions](#web-and-mobile-versions)
+    - [Translation (Arabic Version)](#translation-arabic-version)
+  - [The Release Date](#the-release-date)
+
 # The First Generation
 
 ## The Concept of The First Generation
