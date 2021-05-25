@@ -200,8 +200,8 @@ class ComponentsBrowserController from WindowsControllerParent
 		}
 		if not parent().AllowInteractButton() {
 			# "Can't Add New Step in this location!"
-			ShowMessage(T_GD_BM_SORRY,T_GD_BM_CANTADD)
-			return
+			// ShowMessage(T_GD_BM_SORRY,T_GD_BM_CANTADD)
+			// return
 		}
 		# Get the Search Value 
 			cFind = oView.oTextSearch.Text()	
@@ -241,6 +241,7 @@ class ComponentsBrowserController from WindowsControllerParent
 		# Get the Parent Step 
 			oItem  = parent().oView.oStepsTree.currentItem()
 			nParentID = parent().oView.oStepsTree.GetIDByObj(oItem)
+
 		# Update the Steps ID
 			# Map between the NodeID and the new NodeID 
 				aIDsMap = [[1,nParentID]]
@@ -271,6 +272,12 @@ class ComponentsBrowserController from WindowsControllerParent
 			}
 			for x = len(aStepsTree) to 2 step -1 {
 				node = aStepsTree[x] 
+				# When we add step in location that doesn't support children (Not Start Here)
+					if x = 2 { 
+						if not parent().AllowInteractButton() {
+							node[C_TREEMODEL_PARENTID] = parent().oModel.getStepParent(nParentID)
+						}
+					}
 				Insert(parent().oModel.oStepsTreeModel.aList,nPos,node)
 			}
 		# Add Interactions to Goal Designer 

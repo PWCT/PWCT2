@@ -978,6 +978,15 @@ class GoalDesignerController from WindowsControllerParent
 			cPlainText	= aStep[C_TREEMODEL_CONTENT][:plainname]
 			lIgnore		= not aStep[C_TREEMODEL_CONTENT][:active]
 			nStepType	= aStep[C_TREEMODEL_CONTENT][:steptype]
+			nInsertIndex = -1
+			# When we add step in location that doesn't support children (Not Start Here)
+				if x = 2 {
+					if not AllowInteractButton() {
+						oItem = oView.oStepsTree.GetObjByID(nParentID)
+						nInsertIndex = oItem.parent().indexofchild(oItem) + 1
+						nParentID = oModel.getStepParent(nParentID)
+					}
+				}
 			oView.oStepsTree {
 				if nMax <= this.nMaxStepsCount or not this.lUseMaxStepsCount {
 					SetStepColor(nStepType)
@@ -1007,14 +1016,22 @@ class GoalDesignerController from WindowsControllerParent
 							`"><font color="`+cColor+`">`+cText+
 							`</font></span>`)					
 					}
-					oParent.addchild(oItem)
+					if nInsertIndex = -1 {
+						oParent.addchild(oItem)
+					else 
+						oParent.insertchild(nInsertIndex,oItem)
+					}
 					setItemWidget(oItem,0,oLabel)
 				else 
 					if lIgnore {
 						cPlainText = "// " + cPlainText
 					}
 					oItem.setText(0,cPlainText)
-					oParent.addchild(oItem)
+					if nInsertIndex = -1 {
+						oParent.addchild(oItem)
+					else 
+						oParent.insertchild(nInsertIndex,oItem)
+					}
 				}
 				AddToTree(nID,oItem)
 				if this.lSuperSerialAddExpandSteps or x < this.nMinStepsToExpand {
@@ -1045,8 +1062,8 @@ class GoalDesignerController from WindowsControllerParent
 	func InteractAction
 		 if not AllowInteractButton() {
 			# "Can't start new Interaction from this step!"
-			ShowMessage(T_GD_BM_SORRY,T_GD_BM_CANTINTERACT)
-			return False
+			// ShowMessage(T_GD_BM_SORRY,T_GD_BM_CANTINTERACT)
+			// return False
 		}
 		if parent().IsDockForComponentsBrowser() and parent().lDockForComponentsBrowserIsVisible = True {
 			parent().oView.oDockComponentsBrowser.setWidget(ComponentsBrowserWindow().oView.win)
