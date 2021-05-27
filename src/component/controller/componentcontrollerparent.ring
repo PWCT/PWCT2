@@ -252,8 +252,8 @@ Class ComponentControllerParent from WindowsControllerParent
 
 	func CheckInteract
 		if not Parent().AllowInteractButton() {
-			ShowMessage(T_GD_BM_SORRY,T_GD_BM_CANTINTERACT)
-			return false
+			//ShowMessage(T_GD_BM_SORRY,T_GD_BM_CANTINTERACT)
+			//return false
 		}
 		return True
 

@@ -94,7 +94,7 @@ class StepsTreeView from TreeControl
 		return AddNode(nParentID,nID,cText)
 
 	func InsertStep nParentID,nID,cText,nIndex
-		InsertNode(nParentID,nID,cText,nIndex)
+		return InsertNode(nParentID,nID,cText,nIndex)
 
 	func EditStep oItem,cText,lIgnoreStatus
 		cText = PrepareNodeText(cText)

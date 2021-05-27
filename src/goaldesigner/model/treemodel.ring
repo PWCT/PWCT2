@@ -55,6 +55,13 @@ class TreeModel
 		insert(aList,nPos, [nID, nParent, Content])
 		return nID	# Return the Node ID
 
+	func AddNode2  nParent,Content,nParent2
+		nID++	# Increase the Automatic ID by 1
+		nPos = FindNewNodePosition(nParent2)
+		insert(aList,nPos, [nID, nParent, Content])
+		return nID	# Return the Node ID
+
+
 	/*
 		The next method get the position of the new node
 		We use the insert() function later to add new nodes

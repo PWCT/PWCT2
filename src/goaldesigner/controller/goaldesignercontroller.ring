@@ -155,6 +155,7 @@ class GoalDesignerController from WindowsControllerParent
 			]
 		)
 		SetStepColor(C_STEPTYPE_COMMENT)
+
 		oItem = oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)
 		UpdateTheTimeMachine()
 		return oItem
@@ -187,7 +188,19 @@ class GoalDesignerController from WindowsControllerParent
 		cPlainStepName = oHTMLFunctions.PlainText(cStepName)
 		oItem  = oView.oStepsTree.currentItem()
 		nParentID = oView.oStepsTree.GetIDByObj(oItem)
- 		nStepID = oModel.AddStep(nParentID,[
+
+		nParentID_2 = nParentID
+		nInsertIndex = -1
+		if nStepNumber = 1 {
+			if not AllowInteractButton() {
+				oItem = oView.oStepsTree.GetObjByID(nParentID)
+				nInsertIndex = oItem.parent().indexofchild(oItem) + 1
+				nParentID = oModel.getStepParent(nParentID)
+			}
+		}
+
+
+ 		nStepID = oModel.AddStep2(nParentID,[
 				:name = cStepName,
 				:active = True , 
 				:code = "" , 
@@ -196,10 +209,16 @@ class GoalDesignerController from WindowsControllerParent
 				:stepnumber = nStepNumber ,
 				:steptype = nStepType,
 				:plainname = cPlainStepName 
-			]
+			],
+			nParentID_2
 		)
 		SetStepColor(nStepType)
-		oItem = oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)
+
+		if nInsertIndex = -1 {
+			oItem = oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)
+		else 
+			oItem = oView.oStepsTree.InsertStep(nParentID,nStepID,cStepName,nInsertIndex)
+		}
 		UpdateTheTimeMachine()
 		return oItem
 
