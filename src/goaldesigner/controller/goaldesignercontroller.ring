@@ -989,6 +989,13 @@ class GoalDesignerController from WindowsControllerParent
 		}
 		oView.oStepsTree.preparetempfont()
 		oTempFont = oView.oStepsTree.oTempFont
+		# A flag to know if we are starting from a step (Not Start Here)
+			lUpdateParent = not AllowInteractButton()
+		# How many Root steps, for example using (x=10 y=20 z=30) 
+		# will lead to three roots 
+		# if we don't use (nRootsCount) we could get steps in wrong order 
+		# like (z=30 y=20 z=10) when we insert them 
+			nRootsCount = 0
 		for x = 2 to nMax {
 			aStep = aStepsTree[x]
 			nID		= aStep[C_TREEMODEL_NODEID]
@@ -999,12 +1006,11 @@ class GoalDesignerController from WindowsControllerParent
 			nStepType	= aStep[C_TREEMODEL_CONTENT][:steptype]
 			nInsertIndex = -1
 			# When we add step in location that doesn't support children (Not Start Here)
-				if x = 2 {
-					if not AllowInteractButton() {
-						oItem = oView.oStepsTree.GetObjByID(nParentID)
-						nInsertIndex = oItem.parent().indexofchild(oItem) + 1
-						nParentID = oModel.getStepParent(nParentID)
-					}
+				if lUpdateParent and aStep[C_TREEMODEL_PARENTID] = aStepsTree[2][C_TREEMODEL_PARENTID] {
+					oItem = oView.oStepsTree.GetObjByID(nParentID)
+					nInsertIndex = oItem.parent().indexofchild(oItem) + nRootsCount + 1
+					nParentID = oModel.getStepParent(nParentID)
+					nRootsCount++
 				}
 			oView.oStepsTree {
 				if nMax <= this.nMaxStepsCount or not this.lUseMaxStepsCount {
