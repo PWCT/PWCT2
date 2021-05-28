@@ -198,11 +198,6 @@ class ComponentsBrowserController from WindowsControllerParent
 			OpenSelected()
 			return 
 		}
-		if not parent().AllowInteractButton() {
-			# "Can't Add New Step in this location!"
-			// ShowMessage(T_GD_BM_SORRY,T_GD_BM_CANTADD)
-			// return
-		}
 		# Get the Search Value 
 			cFind = oView.oTextSearch.Text()	
 			TextualCodeToVisualCode(cFind)
@@ -273,8 +268,12 @@ class ComponentsBrowserController from WindowsControllerParent
 			for x = len(aStepsTree) to 2 step -1 {
 				node = aStepsTree[x] 
 				# When we add step in location that doesn't support children (Not Start Here)
+				# We check the First Generated Step (when x = 2)
 					if x = 2 { 
 						if not parent().AllowInteractButton() {
+							# Update the Generated Step Parent 
+							# To be the parent of the selected step (Not Start Here)
+							# That we used to start the Interaction 
 							node[C_TREEMODEL_PARENTID] = parent().oModel.getStepParent(nParentID)
 						}
 					}
