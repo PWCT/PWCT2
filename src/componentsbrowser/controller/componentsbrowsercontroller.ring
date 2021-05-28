@@ -198,6 +198,7 @@ class ComponentsBrowserController from WindowsControllerParent
 			OpenSelected()
 			return 
 		}
+
 		# Get the Search Value 
 			cFind = oView.oTextSearch.Text()	
 			TextualCodeToVisualCode(cFind)
@@ -265,17 +266,21 @@ class ComponentsBrowserController from WindowsControllerParent
 			else
 				nPos = find(parent().oModel.oStepsTreeModel.aList,nParentID,C_TREEMODEL_NODEID)
 			}
+
+			lUpdateParent = not parent().AllowInteractButton()
+				
 			for x = len(aStepsTree) to 2 step -1 {
 				node = aStepsTree[x] 
 				# When we add step in location that doesn't support children (Not Start Here)
-				# We check the First Generated Step (when x = 2)
-					if x = 2 { 
-						if not parent().AllowInteractButton() {
+				# We check the First Generated Step 
+				# We don't use (if x = 2) because we may have many parents 
+				# Like when we use (x=1 y=2 z=3) each one will be the first generated step 
+				# So we use (if node[C_TREEMODEL_PARENTID] = nParentID)
+					if lUpdateParent and node[C_TREEMODEL_PARENTID] = nParentID { 
 							# Update the Generated Step Parent 
 							# To be the parent of the selected step (Not Start Here)
 							# That we used to start the Interaction 
 							node[C_TREEMODEL_PARENTID] = parent().oModel.getStepParent(nParentID)
-						}
 					}
 				Insert(parent().oModel.oStepsTreeModel.aList,nPos,node)
 			}
