@@ -200,7 +200,7 @@ class GoalDesignerController from WindowsControllerParent
 		}
 
 
- 		nStepID = oModel.AddStep2(nParentID,[
+ 		nStepID = oModel.AddStepAfterStep(nParentID,[
 				:name = cStepName,
 				:active = True , 
 				:code = "" , 

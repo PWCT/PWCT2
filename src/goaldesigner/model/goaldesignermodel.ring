@@ -33,8 +33,8 @@ class GoalDesignerModel
 		nID =  oStepsTreeModel.AddNode(nParent,Content)
 		return nID
 
-	func AddStep2 nParent,Content,nParent2
-		nID =  oStepsTreeModel.AddNode2(nParent,Content,nParent2)
+	func AddStepAfterStep nParent,Content,nParent2
+		nID =  oStepsTreeModel.AddNodeAfterNode(nParent,Content,nParent2)
 		return nID
 
 
