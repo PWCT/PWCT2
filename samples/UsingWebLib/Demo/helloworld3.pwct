@@ -1,0 +1,363 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'English'
+nStepsID                 = 8		
+nInteractionsID          = 6
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"#!ring -cgi"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#!ring -cgi"
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"#!ring -cgi"
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"Load <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">weblib.ring</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"load "+char(34)+"weblib.ring"+char(34)+""
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Load weblib.ring"
+			]
+		]
+	],
+	[
+		4,
+		1,
+		[
+			[
+				"name",
+				"import package  <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">System.Web</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"import System.Web"
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"import package  System.Web"
+			]
+		]
+	],
+	[
+		5,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">WebPage()</font></span> {"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"WebPage() {"
+			],
+			[
+				"interactionid",
+				5
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"WebPage() {"
+			]
+		]
+	],
+	[
+		6,
+		5,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				5
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		8,
+		6,
+		[
+			[
+				"name",
+				"text(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;hello&nbsp;world&quot;</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"text("+char(34)+"hello world"+char(34)+")"
+			],
+			[
+				"interactionid",
+				6
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"text("+char(34)+"hello world"+char(34)+")"
+			]
+		]
+	],
+	[
+		7,
+		5,
+		[
+			[
+				"name",
+				"}"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"}"
+			],
+			[
+				"interactionid",
+				5
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"}"
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"30/05/2021",
+		"02:35:28",
+		""
+	],
+	[
+		2,
+		1,
+		"",
+		"30/05/2021",
+		"02:35:28",
+		""
+	],
+	[
+		3,
+		1,
+		"load",
+		"30/05/2021",
+		"02:35:28",
+		"file;;_RV_;;weblib.ring;;_RV_;;"
+	],
+	[
+		4,
+		1,
+		"import",
+		"30/05/2021",
+		"02:35:28",
+		"value;;_RV_;;System.Web;;_RV_;;"
+	],
+	[
+		5,
+		1,
+		"accessobject",
+		"30/05/2021",
+		"02:35:28",
+		"value;;_RV_;;WebPage();;_RV_;;"
+	],
+	[
+		6,
+		1,
+		"callfunc",
+		"30/05/2021",
+		"02:35:28",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;text;;_RV_;;parameters;;_RV_;;"+char(34)+"hello world"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	]
+]
+
+# End of Visual Source File
