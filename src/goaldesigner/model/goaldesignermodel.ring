@@ -331,8 +331,11 @@ class GoalDesignerModel
 	*/
 
 	func PasteStep nParentStepID
+		PasteStepAfterStep(nParentStepID,nParentStepID)
+
+	func PasteStepAfterStep nParentStepID,nParentStepID2
 		UpdateInteractionIDs()
-		oStepsTreeModel.PasteNode(nParentStepID)
+		oStepsTreeModel.PasteNodeAfterNode(nParentStepID,nParentStepID2)
 		# After the paste operation we update the oInteractionModelBuffer
 		# So we can paste many times, but get new interactions for each paste operation 
 			oInteractionModelBuffer = oInteractionModel
