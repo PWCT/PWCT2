@@ -333,7 +333,11 @@ class TreeModel
 		Parameters : The Parent Node ID
 		Output : None
 	*/
+
 	func PasteNode nParentNodeID
+		PasteNodeAfterNode(nParentNodeID,nParentNodeID)
+
+	func PasteNodeAfterNode nParentNodeID,nParentNodeID2
 		nID++
 		# Get the nodes Count in the Buffer
 			nMax = len(aBuffer)
@@ -352,11 +356,11 @@ class TreeModel
 		# Update the first node parent ID		
 			aBuffer[1][C_TREEMODEL_PARENTID] = nParentNodeID
 		# Copy the nodes
-			aChildren = Children(nParentNodeID)
+			aChildren = Children(nParentNodeID2)
 			if len(aChildren) > 0 {
 				nPos = aChildren[len(aChildren)]
 			else
-				nPos = find(aList,nParentNodeID,C_TREEMODEL_NODEID)
+				nPos = find(aList,nParentNodeID2,C_TREEMODEL_NODEID)
 			}
 			for x = len(aBuffer) to 1 step -1 {
 				node = aBuffer[x] 
