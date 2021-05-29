@@ -121,12 +121,20 @@ class StepsTreeView from TreeControl
 			SaveLabels(oItem)
 
 	func PasteStep oParentStep
+		return PasteStepAfterStep(oParentStep,-1)
+
+	func PasteStepAfterStep oParentStep,nIndex
 		oNewItems = oStepBuffer.Clone()
-		oParentStep.AddChild(oNewItems)
+		if nIndex = -1 { 
+			oParentStep.AddChild(oNewItems)	
+		else 
+			oParentStep.InsertChild(nIndex,oNewItems)
+		}
 		setCurrentItem(oNewItems,0)
 		# Add the Labels Controls
 			RestoreLabels(oNewItems,False)
 		return oNewItems
+
 
 	func SaveLabels oItem
 		# Save the Labels Controls
