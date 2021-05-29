@@ -143,7 +143,15 @@ class GoalDesignerController from WindowsControllerParent
 		cPlainStepName = oHTMLFunctions.PlainText(cStepName)
 		oItem  = oView.oStepsTree.currentItem()
 		nParentID = oView.oStepsTree.GetIDByObj(oItem)
- 		nStepID = oModel.AddStep(nParentID,[
+
+		nParentID_2 = nParentID
+		nInsertIndex = -1
+		if not AllowInteractButton() {
+			nInsertIndex = oItem.parent().indexofchild(oItem) + 1
+			nParentID = oModel.getStepParent(nParentID)
+		}
+
+ 		nStepID = oModel.AddStepAfterStep(nParentID,[
 				:name = cStepName,
 				:active = True , 
 				:code = "" , 
@@ -152,11 +160,16 @@ class GoalDesignerController from WindowsControllerParent
 				:stepnumber = 1 ,
 				:steptype = C_STEPTYPE_COMMENT,
 				:plainname = cPlainStepName
-			]
+			],
+			nParentID_2
 		)
 		SetStepColor(C_STEPTYPE_COMMENT)
 
-		oItem = oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)
+		if nInsertIndex = -1 {
+			oItem = oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)
+		else 
+			oItem = oView.oStepsTree.InsertStep(nParentID,nStepID,cStepName,nInsertIndex)
+		}
 		UpdateTheTimeMachine()
 		return oItem
 
@@ -279,11 +292,11 @@ class GoalDesignerController from WindowsControllerParent
 	*/
 
 	func AddStepAction
-		if not AllowInteractButton() {
+		//if not AllowInteractButton() {
 			# "Can't Add New Step in this location!"
-			ShowMessage(T_GD_BM_SORRY,T_GD_BM_CANTADD)
-			return
-		}
+		//	ShowMessage(T_GD_BM_SORRY,T_GD_BM_CANTADD)
+		//	return
+		//}
 		TimeMachineGotoPresent()
 		oInput = New QInputDialog(oView.win)
 		{
