@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'Arabic'
-nStepsID                 = 23		
-nInteractionsID          = 11
+nStepsID                 = 27		
+nInteractionsID          = 15
 
 aStepsTable = [
 	[
@@ -198,6 +198,82 @@ aStepsTable = [
 		]
 	],
 	[
+		24,
+		9,
+		[
+			[
+				"name",
+				"اطبع <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">ياهلا&nbsp;ومرحبا</font></span> (سطر جديد) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? "+char(34)+"ياهلا ومرحبا"+char(34)+""
+			],
+			[
+				"interactionid",
+				12
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"اطبع ياهلا ومرحبا (سطر جديد) "
+			]
+		]
+	],
+	[
+		26,
+		9,
+		[
+			[
+				"name",
+				"اطبع <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&nbsp;يا&nbsp;واد&nbsp;ياجامد&nbsp;</font></span> (سطر جديد) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? "+char(34)+" يا واد ياجامد "+char(34)+""
+			],
+			[
+				"interactionid",
+				14
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"اطبع  يا واد ياجامد "
+			]
+		]
+	],
+	[
 		14,
 		9,
 		[
@@ -346,6 +422,44 @@ aStepsTable = [
 			[
 				"plainname",
 				"نهاية حلقة من"
+			]
+		]
+	],
+	[
+		25,
+		9,
+		[
+			[
+				"name",
+				"اطبع <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">بعد&nbsp;الحلقة</font></span> (سطر جديد) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? "+char(34)+"بعد الحلقة"+char(34)+""
+			],
+			[
+				"interactionid",
+				13
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"اطبع بعد الحلقة (سطر جديد) "
 			]
 		]
 	],
@@ -681,6 +795,30 @@ aInteractionsTable = [
 		"19/02/2018",
 		"07:04:48",
 		"name;;_RV_;;تجربة;;_RV_;;lparameters;;_RV_;;0;;_RV_;;parameters;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;"
+	],
+	[
+		12,
+		1,
+		"print",
+		"29/05/2021",
+		"07:20:37",
+		"text;;_RV_;;ياهلا ومرحبا;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	],
+	[
+		13,
+		1,
+		"print",
+		"29/05/2021",
+		"07:20:52",
+		"text;;_RV_;;بعد الحلقة;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	],
+	[
+		14,
+		1,
+		"print",
+		"29/05/2021",
+		"07:22:39",
+		"text;;_RV_;; يا واد ياجامد ;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	]
 ]
 
