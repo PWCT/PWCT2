@@ -528,15 +528,18 @@ class GoalDesignerController from WindowsControllerParent
 		oParentItem  = oView.oStepsTree.currentItem()
 		nParentStepID = oView.oStepsTree.GetIDByObj(oParentItem)
 
-		nParentStepID_2 = nParentStepID
-		if not AllowInteractButton() {
-			//oItem = oView.oStepsTree.GetObjByID(nParentID)
-			//nInsertIndex = oItem.parent().indexofchild(oItem) + 1
-			nParentStepID = oModel.getStepParent(nParentStepID)
-		}
+		# When we paste in a location (Not Start Here)
+		# We paste after the selected step 
+			nParentStepID_2 = nParentStepID
+			nInsertIndex = -1
+			if not AllowInteractButton() {
+				nParentStepID = oModel.getStepParent(nParentStepID)
+				nInsertIndex = oParentItem.parent().indexofchild(oParentItem) + 1		
+				oParentItem = oView.oStepsTree.GetObjByID(nParentStepID)
+			}
 
 		oModel.PasteStepAfterStep(nParentStepID,nParentStepID_2)
-		oNewParentItem = oView.oStepsTree.PasteStep(oParentItem)
+		oNewParentItem = oView.oStepsTree.PasteStepAfterStep(oParentItem,nInsertIndex)
 		# Update the [Object,StepID] List
 			aStepsObjectsList = oView.oStepsTree.StepsList(oNewParentItem)
 			aStepsDataList = oModel.GetBuffer()
