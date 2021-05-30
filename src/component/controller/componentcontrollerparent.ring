@@ -27,6 +27,11 @@ Class ComponentControllerParent from WindowsControllerParent
 
 	nInsideGoalDesigner	= False
 
+	# Check if we are using an interaction page of an interaction in the future 
+	# I.e. We used the Time Machine to go to the past while the interaction page is opened 
+	# No need to do this check if the Time Machine slider close all Interaction Pages 
+		lCheckTimeProblem	= False 
+
 
 	/*
 		Purpose : Create a Step as parent to other steps
@@ -292,6 +297,9 @@ Class ComponentControllerParent from WindowsControllerParent
 		Check time problem - Modify the future while we are in the past!
 	*/
 	func CheckTimeProblem
+		if lCheckTimeProblem = False {
+			return False 
+		}
 		if (nInteractionMode = C_INTERACTIONMODE_MODIFY) and not (nIID <= parent().TimeMachineActiveInteractionID() ) {
 			msginfo(T_GD_BM_SORRY,T_GD_BM_CANTMODIFYFUTURE)
 			return True
