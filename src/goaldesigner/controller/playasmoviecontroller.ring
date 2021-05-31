@@ -89,7 +89,7 @@ class PlayAsMovieController
 									ComponentsBrowserWindow().oView.win.raise()
 								}
 								PWCT_APP.processevents()
-								sleep(1)
+								sleep(0.5)
 								this.GetScreenShot(ComponentsBrowserWindow().oView.win)
 								if ! parent().lDockForComponentsBrowserIsVisible {
 									ComponentsBrowserWindow().CloseAction()
@@ -98,23 +98,23 @@ class PlayAsMovieController
 								# Check Step Type
 									openComponent(nStepID)
 								# Display the Window 
-									if ! Last_Window().lNoInteractionPage {
-										if lInteractionPagesInGoalDesigner {
-											oView.layoutVPages.InsertWidget(0,Last_Window().oView.win,0,0)
-											Last_Window().Start()		# Show The Window
-											oView.widgetVPages.Show()	# Show the Splitter Widget
-											oView.oVPagesScroll.Show()
-										else
-											Last_Window().Start()		# Show The Window
-										}
+								if ! Last_Window().lNoInteractionPage {
+									if lInteractionPagesInGoalDesigner {
+										oView.layoutVPages.InsertWidget(0,Last_Window().oView.win,0,0)
+										Last_Window().Start()		# Show The Window
+										oView.widgetVPages.Show()	# Show the Splitter Widget
+										oView.oVPagesScroll.Show()
+									else
+										Last_Window().Start()		# Show The Window
 									}
 									nInteractionPagesToModifyCount++
 									Last_Window().AfterOpen()
-								Last_Window().oView.win.setfocus(0)
-								Last_Window().oView.win.raise()
-								PWCT_APP.processevents()
-								sleep(3)
-								this.GetScreenShot(Last_Window().oView.win)
+									Last_Window().oView.win.setfocus(0)
+									Last_Window().oView.win.raise()
+									PWCT_APP.processevents()
+									sleep(1.5)
+									this.GetScreenShot(Last_Window().oView.win)
+								}
 								Last_Window().CloseBtnAction()
 								ComponentsBrowserWindow().oView.oTextSearch.setText("")
 								oView.win.setfocus(0)
@@ -126,7 +126,7 @@ class PlayAsMovieController
 							# When the step type is a Comment
 								oView.sliderTimeMachine.setValue(nValue+1)
 								PWCT_APP.processevents()
-								sleep(0.5)
+								sleep(0.3)
 								this.GetScreenShot(oView.win)
 								PlayMovieTimer()
 								return 
