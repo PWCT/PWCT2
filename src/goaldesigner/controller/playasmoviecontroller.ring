@@ -98,13 +98,15 @@ class PlayAsMovieController
 								# Check Step Type
 									openComponent(nStepID)
 								# Display the Window 
-									if lInteractionPagesInGoalDesigner {
-										oView.layoutVPages.InsertWidget(0,Last_Window().oView.win,0,0)
-										Last_Window().Start()		# Show The Window
-										oView.widgetVPages.Show()	# Show the Splitter Widget
-										oView.oVPagesScroll.Show()
-									else
-										Last_Window().Start()		# Show The Window
+									if ! Last_Window().lNoInteractionPage {
+										if lInteractionPagesInGoalDesigner {
+											oView.layoutVPages.InsertWidget(0,Last_Window().oView.win,0,0)
+											Last_Window().Start()		# Show The Window
+											oView.widgetVPages.Show()	# Show the Splitter Widget
+											oView.oVPagesScroll.Show()
+										else
+											Last_Window().Start()		# Show The Window
+										}
 									}
 									nInteractionPagesToModifyCount++
 									Last_Window().AfterOpen()
