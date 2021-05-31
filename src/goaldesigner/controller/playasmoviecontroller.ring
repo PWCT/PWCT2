@@ -50,8 +50,9 @@ class PlayAsMovieController
 				# Get the Interaction Information 
 					nTMValue = oView.sliderTimeMachine.GetActiveInteraction()
 					nIID = oModel.oInteractionModel.GetInteractionID(nTMValue + 1)
+					nIID_End = oModel.oInteractionModel.GetInteractionID(nTMValue + 2)
 					lVisible = False
-					aList = oModel.GetStepsInTimeRange(nIID,nIID+1,lVisible)	
+					aList = oModel.GetStepsInTimeRange(nIID,nIID_End,lVisible)	
 					if len(aList) >= 1 {
 						item = aList[1]
 						nStepID = item[C_TREEMODEL_NODEID]
