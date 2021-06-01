@@ -63,6 +63,20 @@ class PlayAsMovieController
 							# Select the parent step
 								oItem = oView.oStepsTree.GetObjByID(nParentID)
 								oView.oStepsTree.SetCurrentItem(oItem,0)
+							# Be sure that the last child is visible 
+								aChildren = oModel.oStepsTreeModel.Children(nParentID)
+								if len(aChildren) > 0 {
+									for nMark = len(aChildren) to 1 step -1 { 
+										nPos = aChildren[nMark]
+										if oModel.oStepsTreeModel.aList[nPos][C_TREEMODEL_CONTENT][:visible] {
+											nParentID = oModel.oStepsTreeModel.aList[nPos][C_TREEMODEL_NODEID]
+											exit 
+										}
+									}
+								
+								}								
+								oItem = oView.oStepsTree.GetObjByID(nParentID)
+								oView.oStepsTree.scrolltoitem(oItem,0)
 								PWCT_APP.processevents()
 								sleep(0.5)
 								this.GetScreenShot(oView.win)
