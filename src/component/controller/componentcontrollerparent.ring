@@ -273,6 +273,13 @@ Class ComponentControllerParent from WindowsControllerParent
 	func BeforeAgainAction
 		return checkSyntax()
 
+	func ContainsSyntaxError cCode 
+		aRingCode = RingCode2PWCT(cCode)
+		if len(aRingCode[:StepsTreeTable]) = 1 { 
+			return True
+		}
+		return False
+
 	/*
 		Purpose : Execute the Ok button action
 		Parameters : None
