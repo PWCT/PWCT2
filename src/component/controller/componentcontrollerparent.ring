@@ -265,7 +265,10 @@ Class ComponentControllerParent from WindowsControllerParent
 		Output : None
 	*/
 
-	func OkAction	
+	func BeforeOkAction return True
+
+	func OkAction
+		if not BeforeOkAction() { return }	
 		parent().SetSaveFlag()
 		if lNoInteractionPage {
 			oView.win.hide()
@@ -308,7 +311,11 @@ Class ComponentControllerParent from WindowsControllerParent
 		Output : None
 	*/
 
+	func BeforeAgainAction return True 
+
 	func AgainAction	
+		if not BeforeAgainAction() { return }	
+
 		parent().SetSaveFlag()
 		if CheckTimeProblem() { return } 
 		if CheckInteract() and RulesAllow() {
