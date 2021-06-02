@@ -9,6 +9,23 @@ Class PrintComponentController from ComponentControllerParent
 
 	oView = new PrintComponentView
 
+
+	func BeforeOkAction 
+		return checkSyntax()
+
+	func BeforeAgainAction
+		return checkSyntax()
+
+	func CheckSyntax
+		if Variable(:type) != 1 {
+			aRingCode = RingCode2PWCT(Variable(:text))
+			if len(aRingCode[:StepsTreeTable]) = 1 { 
+				msginfo("Sorry","Syntax Error!")
+				return false
+			}
+		}
+		return true
+
 	func GenerateAction 
 
 		if Variable(:NewLine) {
