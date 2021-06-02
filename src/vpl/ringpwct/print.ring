@@ -10,12 +10,6 @@ Class PrintComponentController from ComponentControllerParent
 	oView = new PrintComponentView
 
 
-	func BeforeOkAction 
-		return checkSyntax()
-
-	func BeforeAgainAction
-		return checkSyntax()
-
 	func CheckSyntax
 		if Variable(:type) != 1 {
 			aRingCode = RingCode2PWCT(Variable(:text))

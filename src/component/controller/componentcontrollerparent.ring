@@ -259,13 +259,26 @@ Class ComponentControllerParent from WindowsControllerParent
 		}
 		return True
 
+
+	/*
+		Check Syntax before Ok/Again actions 
+	*/
+
+	func CheckSyntax
+		return True
+
+	func BeforeOkAction 
+		return checkSyntax()
+
+	func BeforeAgainAction
+		return checkSyntax()
+
 	/*
 		Purpose : Execute the Ok button action
 		Parameters : None
 		Output : None
 	*/
 
-	func BeforeOkAction return True
 
 	func OkAction
 		if not BeforeOkAction() { return }	
@@ -310,8 +323,6 @@ Class ComponentControllerParent from WindowsControllerParent
 		Parameters : None
 		Output : None
 	*/
-
-	func BeforeAgainAction return True 
 
 	func AgainAction	
 		if not BeforeAgainAction() { return }	
