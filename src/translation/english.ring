@@ -285,6 +285,7 @@
 
 	T_CT_SORRY = "Sorry"
 	T_CT_ENTERREQUIREDDATA = "Enter the Required Data!"
+	T_CT_SYNTAXERROR = "Syntax Error!"
 
 # Load the Form Designer Translation 
 	load "../formdesigner/translation/english.ring"

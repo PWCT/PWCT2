@@ -41,7 +41,7 @@ Class PrintComponentController from ComponentControllerParent
 	func CheckSyntax
 		if Variable(:type) = 2 {
 			if ContainsSyntaxError(Variable(:text)) { 
-				msginfo("Syntax Error!",Variable(:text))
+				msginfo(T_CT_SYNTAXERROR,Variable(:text))
 				return false
 			}
 		}

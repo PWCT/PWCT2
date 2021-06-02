@@ -288,6 +288,7 @@
 
 	T_CT_SORRY = "عفوا"
 	T_CT_ENTERREQUIREDDATA = "أدخل البيانات المطلوبة!"
+	T_CT_SYNTAXERROR = "خطأ نحوي!"
 
 # Load the Form Designer Translation 
 	load "../formdesigner/translation/arabic.ring"
