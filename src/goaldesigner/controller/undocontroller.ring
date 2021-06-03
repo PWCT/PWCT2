@@ -12,6 +12,7 @@ class UndoController
 	func AddToHistory oGDController 
 
 		# Add the current state to the history 
+
 			aHistory + [
 				oGDController.oModel.oStepsTreeModel.GetData(),
 				oGDController.oModel.oInteractionModel.GetData(),
@@ -20,6 +21,7 @@ class UndoController
 			]
 
 		# Remove very old history 
+
 			if len(aHistory) > 10 {
 				del(aHistory,1)
 			}
@@ -31,14 +33,37 @@ class UndoController
 	func Undo oGDController
 
 		# Check if we have slots in the history 
+
 			if len(aHistory) = 0 {
 				return 
 			}
+
 		# Update the View (Steps Tree)
 			# Delete Steps that no longer exist
 			# Add steps that doesn't exist  
+
 		# Update the Model (Data)
+
+			nMax = len(aHistory)
+
+			aStepsTree = aHistory[nMax][C_UNDO_STEPSTREE]
+			aInteractions = aHistory[nMax][C_UNDO_INTERACTIONS]
+			nStepsIDCounter = aHistory[nMax][C_UNDO_STEPSTREEID]
+			nInteractionsIDCounter = aHistory[nMax][C_UNDO_INTERACTIONSID]
+
+			oGDController {
+				SaveBuffer()
+				oModel.oStepsTreeModel = new TreeModel 
+				oModel.oInteractionModel = new InteractionModel
+				RestoreBuffer()
+				oModel.oStepsTreeModel.SetData(aStepsTree)
+				oModel.oInteractionModel.SetData(aInteractions)
+				oModel.oStepsTreeModel.SetID(nStepsIDCounter)
+				oModel.oInteractionModel.SetID(nInteractionsIDCounter)
+			}
+
 		# Remove the current slot from the history 
-			del(aHistory,len(aHistory))
+
+			del(aHistory,nMax)
 
  	
