@@ -1900,3 +1900,9 @@ class GoalDesignerController from WindowsControllerParent
 
 	func undo 
 		oUndo.undo(self)
+
+	/*
+		Goto Line
+	*/
+	func GotoLine 
+ ? :nice

@@ -40,6 +40,7 @@
 	T_ENV_MENU_FONT = "Font"
 	T_ENV_MENU_CUSTOMIZATION = "Customization"
 	T_ENV_MENU_FINDREPLACE = "Find and Replace"
+	T_ENV_MENU_GOTOLINE = "Go to line"
 	T_ENV_MENU_PROJECTFILES = "Project Files"
 	T_ENV_MENU_GOALDESIGNER = "Goal Designer"
 	T_ENV_MENU_OUTPUTWINDOW = "Output Window"

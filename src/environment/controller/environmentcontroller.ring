@@ -1329,3 +1329,7 @@ class EnvironmentController from WindowsControllerParent
 			del(aActiveFiles,2)
 		}
 		setParentObject(aActiveFiles[1][4])
+
+
+	func GotoLineAction
+		parent().GoToLine()

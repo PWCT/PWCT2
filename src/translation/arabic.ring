@@ -40,6 +40,7 @@
 	T_ENV_MENU_FONT = "الخط"
 	T_ENV_MENU_CUSTOMIZATION = "التخصيص"
 	T_ENV_MENU_FINDREPLACE = "بحث واستبدال"
+	T_ENV_MENU_GOTOLINE = "الذهاب الى سطر محدد"
 	T_ENV_MENU_PROJECTFILES = "ملفات المشروع"
 	T_ENV_MENU_GOALDESIGNER = "مصمم الهدف"
 	T_ENV_MENU_OUTPUTWINDOW = "نافذة النتائج"
