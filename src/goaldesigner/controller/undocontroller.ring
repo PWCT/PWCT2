@@ -10,8 +10,8 @@ class UndoController
 	aHistory = []
 
 	func AddToHistory oGDController 
-		# Add the current state to the history 
 
+		# Add the current state to the history 
 			aHistory + [
 				oGDController.oModel.oStepsTreeModel.GetData(),
 				oGDController.oModel.oInteractionModel.GetData(),
@@ -24,7 +24,12 @@ class UndoController
 				del(aHistory,1)
 			}
 
+	func ClearHistory 
+		
+		aHistory = []
+
 	func Undo oGDController
+
 		# Check if we have slots in the history 
 			if len(aHistory) = 0 {
 				return 
