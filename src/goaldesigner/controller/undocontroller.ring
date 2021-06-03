@@ -5,13 +5,20 @@
 **	Author 		: Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-
 class UndoController
 
 	aHistory = []
 
 	func AddToHistory oGDController 
 		# Add the current state to the history 
+
+			aHistory + [
+				oGDController.oModel.oStepsTreeModel.GetData(),
+				oGDController.oModel.oInteractionModel.GetData(),
+				oGDController.oModel.oStepsTreeModel.GetID(),
+				oGDController.oModel.oInteractionModel.GetID()
+			]
+
 		# Remove very old history 
 			if len(aHistory) > 10 {
 				del(aHistory,1)
