@@ -1890,3 +1890,13 @@ class GoalDesignerController from WindowsControllerParent
 				oView.oStepsTree.setFocus(0)
 			}
 		}
+
+	/*
+		Methods for the Undo operation 
+	*/
+
+	func saveHistory 
+		oUndo.AddToHistory(self)
+
+	func undo 
+		oUndo.undo(self)
