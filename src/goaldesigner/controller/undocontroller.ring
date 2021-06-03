@@ -38,11 +38,7 @@ class UndoController
 				return 
 			}
 
-		# Update the View (Steps Tree)
-			# Delete Steps that no longer exist
-			# Add steps that doesn't exist  
-
-		# Update the Model (Data)
+		# Get the last slot in the history 
 
 			nMax = len(aHistory)
 
@@ -50,6 +46,12 @@ class UndoController
 			aInteractions = aHistory[nMax][C_UNDO_INTERACTIONS]
 			nStepsIDCounter = aHistory[nMax][C_UNDO_STEPSTREEID]
 			nInteractionsIDCounter = aHistory[nMax][C_UNDO_INTERACTIONSID]
+
+		# Update the View (Steps Tree)
+			# Delete Steps that no longer exist
+			# Add steps that doesn't exist  
+
+		# Update the Model (Data)
 
 			oGDController {
 				SaveBuffer()
