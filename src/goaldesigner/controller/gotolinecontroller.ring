@@ -21,14 +21,12 @@ class GotoLineController from WindowsControllerParent
 		if nLine = 0 { return }
 		cCode = ""
 		aTree = Parent().oModel.oStepsTreeModel.GetData()
-? len(aTree)
 		for item in aTree {
 			aContent = item[C_TREEMODEL_CONTENT]
 			if trim(aContent[:code]) != "" {
 				if cCode != "" { cCode += nl }
 				cCode += aContent[:code]
 			}
-? cCode 
 			if lines(cCode) >= nLine {
 				oItem = parent().oView.oStepsTree.GetObjByID(item[C_TREEMODEL_NODEID])
 				parent().oView.oStepsTree.SetCurrentItem(oItem,0)	
