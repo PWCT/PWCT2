@@ -47,7 +47,7 @@ class UndoController
 			nStepsIDCounter = aHistory[nMax][C_UNDO_STEPSTREEID]
 			nInteractionsIDCounter = aHistory[nMax][C_UNDO_INTERACTIONSID]
 
-		# Update the View (Steps Tree)
+		# Plan (ToDo): Update the View (Steps Tree) - Smart Implementation (Fast)
 			# Delete Steps that no longer exist
 			# Add steps that doesn't exist  
 
@@ -63,6 +63,9 @@ class UndoController
 				oModel.oStepsTreeModel.SetID(nStepsIDCounter)
 				oModel.oInteractionModel.SetID(nInteractionsIDCounter)
 			}
+
+		# Update the View (Steps Tree) - Quick Implementation (Slow)
+			oGDController.RefreshStepsTree2(aStepsTree)
 
 		# Remove the current slot from the history 
 
