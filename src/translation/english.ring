@@ -36,6 +36,7 @@
 	T_ENV_MENU_CUT = "Cut"
 	T_ENV_MENU_COPY = "Copy"
 	T_ENV_MENU_PASTE = "Paste"
+	T_ENV_MENU_UNDO = "Undo"
 	T_ENV_MENU_FONT = "Font"
 	T_ENV_MENU_CUSTOMIZATION = "Customization"
 	T_ENV_MENU_FINDREPLACE = "Find and Replace"

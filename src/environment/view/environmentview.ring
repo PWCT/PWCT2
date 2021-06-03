@@ -190,6 +190,14 @@ class EnvironmentView from WindowsViewParent
 				addaction(oAction)
 				addseparator()
 				oAction = new qAction(win) {
+					setShortcut(new QKeySequence("Ctrl+z"))
+					setbtnimage(self,AppFile("images/undo.png"))
+					settext(T_ENV_MENU_UNDO) # "Undo"
+					setclickevent(Method(:undoAction))
+				}
+				addaction(oAction)
+				addseparator()
+				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Alt+f"))
 					setbtnimage(self,AppFile("images/font.png"))
 					settext(T_ENV_MENU_FONT) # "Font"

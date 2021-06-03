@@ -474,6 +474,16 @@ class EnvironmentController from WindowsControllerParent
 		parent().PasteStepsAction()
 
 	/*
+		Purpose : Undo Action
+		Parameters : None
+		Output : None
+	*/
+
+
+	func UndoAction 
+		parent().undo()
+
+	/*
 		Purpose :  Font Action
 		Parameters : None
 		Output : None
