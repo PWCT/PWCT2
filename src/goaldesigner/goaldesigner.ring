@@ -17,6 +17,7 @@
 	load "controller/playasmoviecontroller.ring"
 	load "controller/automaticdocumentation.ring"
 	load "controller/autocomplete.ring"
+	load "controller/undocontroller.ring"
 
 	load "view/goaldesignerview.ring"
 	load "view/stepcodeview.ring"
