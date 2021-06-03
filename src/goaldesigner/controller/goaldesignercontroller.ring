@@ -14,6 +14,7 @@ class GoalDesignerController from WindowsControllerParent
 	oProgramController = new ProgramController
 	oPlayAsMovie = new PlayAsMovieController
 	oAutoComplete = new AutoComplete
+	oUndo = new UndoController
 
 	cComponentsPath = "vpl/ringpwct/"
 	cFont = "MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0"
