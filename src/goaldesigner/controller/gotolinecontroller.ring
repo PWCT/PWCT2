@@ -27,7 +27,7 @@ class GotoLineController from WindowsControllerParent
 				if cCode != "" { cCode += nl }
 				cCode += aContent[:code]
 			}
-			if lines(cCode) >= nLine {
+			if lines(cCode) >= nLine and cCode != "" {
 				oItem = parent().oView.oStepsTree.GetObjByID(item[C_TREEMODEL_NODEID])
 				parent().oView.oStepsTree.SetCurrentItem(oItem,0)	
 				exit 
