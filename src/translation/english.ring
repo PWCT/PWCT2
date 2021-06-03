@@ -208,6 +208,14 @@
 	T_GD_FS_SORRY = "Sorry"				
 	T_GD_FD_CANTFINDTHEITEM  = "Can't find the step"
 
+# Goto Line Window
+
+	T_GD_GL_GOTOLINE   = "Go to line"			# The Window Title
+	T_GD_GL_LINENUMBER = "Line Number : "			# Label
+	T_GD_GL_GO = "Go"					# Button
+	T_GD_GL_CLOSE = "Close"					# Button
+
+
 # Steps Colors Window
 
 	T_SC_WINDOWTITLE = "Customization Window"

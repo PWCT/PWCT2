@@ -18,6 +18,7 @@
 	load "controller/automaticdocumentation.ring"
 	load "controller/autocomplete.ring"
 	load "controller/undocontroller.ring"
+	load "controller/gotolinecontroller.ring"
 
 	load "view/goaldesignerview.ring"
 	load "view/stepcodeview.ring"
@@ -28,6 +29,7 @@
 	load "view/printstepsview.ring"
 	load "view/timemachineview.ring"
 	load "view/stepscolorsview.ring"
+	load "view/gotolineview.ring"
 
 	load "model/goaldesignermodel.ring"
 	load "model/treemodel.ring"

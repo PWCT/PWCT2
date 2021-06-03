@@ -207,6 +207,14 @@
 	T_GD_FS_SORRY = "عفوا"				
 	T_GD_FD_CANTFINDTHEITEM  = "لايمكن ايجاد الخطوة"
 
+# Goto Line Window
+
+	T_GD_GL_GOTOLINE   = "الذهاب الى سطر محدد"		# The Window Title
+	T_GD_GL_LINENUMBER = "رقم السطر : "			# Label
+	T_GD_GL_GO = "اذهب"					# Button
+	T_GD_GL_CLOSE = "اغلاق"					# Button
+
+
 # Steps Colors Window
 
 	T_SC_WINDOWTITLE = "نافذة التخصيص"

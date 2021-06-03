@@ -1904,5 +1904,8 @@ class GoalDesignerController from WindowsControllerParent
 	/*
 		Goto Line
 	*/
+
 	func GotoLine 
- ? :nice
+		Open_Window(:GotoLineController)
+		Last_Window().setParentObject(self)
+
