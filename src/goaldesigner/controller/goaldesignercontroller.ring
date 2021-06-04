@@ -141,6 +141,8 @@ class GoalDesignerController from WindowsControllerParent
 	*/
 
 	func AddStep cStepName
+		# Save the History for undo operations 
+			saveHistory()
 		cPlainStepName = oHTMLFunctions.PlainText(cStepName)
 		oItem  = oView.oStepsTree.currentItem()
 		nParentID = oView.oStepsTree.GetIDByObj(oItem)
@@ -373,6 +375,8 @@ class GoalDesignerController from WindowsControllerParent
 	                		}
 			}
 		}
+		# Save the History for undo operations 
+			saveHistory()
 		oItem  = oView.oStepsTree.currentItem()
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
 		if nStepID = 1 {	# Delete All Steps
@@ -410,6 +414,8 @@ class GoalDesignerController from WindowsControllerParent
 		if nStepID = 1 {	# Avoid start point
 			return
 		}
+		# Save the History for undo operations 
+			saveHistory()
 		oParent = oItem.Parent()
 		nIndex = oParent.IndexofChild(oItem)
 		if nIndex > 0 {	# Not The First Item
@@ -442,6 +448,8 @@ class GoalDesignerController from WindowsControllerParent
 		if nStepID = 1 {	# Avoid start point
 			return
 		}
+		# Save the History for undo operations 
+			saveHistory()
 		oParent = oItem.Parent()
 		nIndex = oParent.IndexofChild(oItem)
 		if nIndex < oParent.ChildCount() - 1 { # Not the Last Item
@@ -484,6 +492,8 @@ class GoalDesignerController from WindowsControllerParent
 		if nStepID = 1 {	# Avoid start point
 			return
 		}
+		# Save the History for undo operations 
+			saveHistory()
 		oModel.CutStep(nStepID)
 		oView.oStepsTree.SaveStep(oItem)
 		oItem.parent().takechild(oItem.parent().indexofchild(oItem))
@@ -525,6 +535,8 @@ class GoalDesignerController from WindowsControllerParent
 		}
 		# Time Machine - Present
 			TimeMachineGotoPresent()
+		# Save the History for undo operations 
+			saveHistory()
 		# Check Rules before the Paste Operation 
 		# We commented this to avoid low performance problem
 		/*

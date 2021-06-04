@@ -220,6 +220,8 @@ class ComponentsBrowserController from WindowsControllerParent
 		# Convert Ring Code to PWCT (Steps & Interactions)
 			aLists = RingCode2PWCT(cFind)
 			if len(aLists) = 0 { return }
+		# Save the History for undo operations 
+			parent().saveHistory()
 		# Get The Output of the Conversion
 			aStepsTree = aLists[:StepsTreeTable]
 			aInteractions = aLists[:InteractionsTable]
