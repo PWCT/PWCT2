@@ -94,6 +94,9 @@ class GoalDesignerController from WindowsControllerParent
 	# Avoid the Components Browser 
 		lAvoidComponentsBrowser	= C_STEPSTREE_AVOIDCOMPONENTSBROWSER
 
+	# Enable/Disable saving History (For Undo operations)
+		lHistory = True
+
 	/*
 		Purpose : Show the Window
 		Parameters : None
@@ -1910,10 +1913,18 @@ class GoalDesignerController from WindowsControllerParent
 	*/
 
 	func saveHistory 
-		oUndo.AddToHistory(self)
+		if lHistory {
+			oUndo.AddToHistory(self)
+		}
 
 	func undo 
 		oUndo.undo(self)
+
+	func enableHistory 
+		lHistory = True
+
+	func disableHistory 
+		lHistory = False
 
 	/*
 		Goto Line

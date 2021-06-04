@@ -13,6 +13,8 @@ class FindStepController from WindowsControllerParent
 
 	aStepIDResult = [] # Array contains the IDs of the search result
 
+	lSaveHistory = True	# For the Undo Operation
+
 	/*
 		Purpose : Find Value Action
 		Parameters : None
@@ -95,6 +97,11 @@ class FindStepController from WindowsControllerParent
 		oItem = Parent().oView.oStepsTree.GetObjByID(nStepID)
 		cFind = oView.oSearchValue.Text()	
 		if cFind = "" { return }
+		# Save the History for undo operations 
+			if lSaveHistory {
+				parent().saveHistory()	
+			}
+		parent().disableHistory()
 		cReplace = oView.oReplaceValue.Text()	
 		parent().oModel {
 			cText = GetStepName(nStepID)
@@ -122,7 +129,7 @@ class FindStepController from WindowsControllerParent
 		# Referesh the component (Open Interaction window then click ok)
 			parent().openComponent(nStepID)	
 			last_Window().OkAction()
-
+		parent().enableHistory()
 
 	/*
 		Purpose :  Replace All Action
@@ -132,9 +139,13 @@ class FindStepController from WindowsControllerParent
 
 	func ReplaceAllAction
 		if len(aStepIDResult) = 0 { return }	
+		# Save the History for undo operations 
+			parent().saveHistory()	
+		lSaveHistory = False
 		for nStepID in aStepIDResult {
 			ReplaceStep(nStepID)
 		}
+		lSaveHistory = True
 
 	/*
 		Purpose : Search Key Press Action
