@@ -814,8 +814,10 @@ class GoalDesignerController from WindowsControllerParent
 				if cFileName = NULL { return }
 			else 
 				cFileName = "noname.pwct"
-			}
+			}			
 			oVisualSourceFile.cFileName = cFileName
+		# Clear the History 
+			clearHistory()
 		# Remove the current Steps From the Tree Control
 			oView.oStepsTree.clear()
 			oView.oStepsTree.aTree = []
@@ -898,7 +900,6 @@ class GoalDesignerController from WindowsControllerParent
 		# Set the docable widget title
 			oView.win.ParentWidget().setWindowTitle(cFileName)
 
-
 	/*
 		Purpose : Open File Action 2
 		Parameters : None
@@ -915,6 +916,8 @@ class GoalDesignerController from WindowsControllerParent
 
 	func OpenFileAction2
 		CloseAllInteractionPages()
+		# Clear the History 
+			clearHistory()
 		nClock = clock()
 		# Get Data From the Visual Source File
 			oSystemLog.addMessage("Start - Get data from visual source file")
@@ -1925,6 +1928,9 @@ class GoalDesignerController from WindowsControllerParent
 
 	func disableHistory 
 		lHistory = False
+
+	func clearHistory
+		oUndo.clearHistory()
 
 	/*
 		Goto Line
