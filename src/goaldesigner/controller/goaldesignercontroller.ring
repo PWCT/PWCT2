@@ -630,7 +630,9 @@ class GoalDesignerController from WindowsControllerParent
 			# "Can't Comment/Uncomment Sub Step!"
 			ShowMessage(T_GD_BM_SORRY,T_GD_BM_CANTCOMMENT)
 			return
-		}	
+		}
+		# Save the History for undo operations 
+			saveHistory()	
 		oItem  = oView.oStepsTree.currentItem()
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
 		nIgnore = oModel.IgnoreStep(nStepID)
