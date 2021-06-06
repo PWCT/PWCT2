@@ -23,7 +23,7 @@ class newqbuttongroupComponentController from ComponentControllerParent
 				cCode = ""
 				
 				if Variable(:value2) != NULL {
-					cCode += 'setStyleSheet("' + Variable(:value2) + '")' + nl
+					cCode += 'setStyleSheet(' + Variable(:value2) + ')' + nl
 				}
 				
 				
@@ -42,6 +42,6 @@ class newqbuttongroupComponentView from ComponentViewParent
 	 
 		Title( T_CT_NEWQBUTTONGROUP_IP_TITLE )	
 		TextBox( T_CT_NEWQBUTTONGROUP_IP_VALUE , :value)
-		TextBox( T_CT_NEWQBUTTONGROUP_IP_VALUE2 , :value2)
+		TextBoxValue( T_CT_NEWQBUTTONGROUP_IP_VALUE2 , :value2, C_INTERACTIONPAGE_EXPCONTAINSLITERAL)
 		TextBox( T_CT_NEWQBUTTONGROUP_IP_VALUE3 , :value3)
 		PageButtons()
