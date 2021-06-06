@@ -22,7 +22,7 @@ class newqtexteditComponentController from ComponentControllerParent
 				
 				cCode = ""
 				if Variable(:value2) != NULL {
-					cCode = 'setText("' + Variable(:value2) + '")' + nl
+					cCode = 'setText(' + Variable(:value2) + ')' + nl
 				}
 				if Variable(:value3) != NULL {
 					nTop = Variable(:value3)
@@ -47,7 +47,7 @@ class newqtexteditComponentController from ComponentControllerParent
 				}
 				cCode += "resize("+nWidth+","+nHeight+")"+nl
 				if Variable(:value7) != NULL {
-					cCode += 'setStyleSheet("' + Variable(:value7) + '")' + nl
+					cCode += 'setStyleSheet(' + Variable(:value7) + ')' + nl
 				}
 				
 				
@@ -66,11 +66,11 @@ class newqtexteditComponentView from ComponentViewParent
 	 
 		Title( T_CT_NEWQTEXTEDIT_IP_TITLE )	
 		TextBox( T_CT_NEWQTEXTEDIT_IP_VALUE , :value)
-		TextBox( T_CT_NEWQTEXTEDIT_IP_VALUE2 , :value2)
+		TextBoxValue( T_CT_NEWQTEXTEDIT_IP_VALUE2 , :value2, C_INTERACTIONPAGE_EXPCONTAINSLITERAL)
 		TextBox( T_CT_NEWQTEXTEDIT_IP_VALUE3 , :value3)
 		TextBox( T_CT_NEWQTEXTEDIT_IP_VALUE4 , :value4)
 		TextBox( T_CT_NEWQTEXTEDIT_IP_VALUE5 , :value5)
 		TextBox( T_CT_NEWQTEXTEDIT_IP_VALUE6 , :value6)
-		TextBox( T_CT_NEWQTEXTEDIT_IP_VALUE7 , :value7)
+		TextBoxValue( T_CT_NEWQTEXTEDIT_IP_VALUE7 , :value7, C_INTERACTIONPAGE_EXPCONTAINSLITERAL)
 		TextBox( T_CT_NEWQTEXTEDIT_IP_VALUE8 , :value8)
 		PageButtons()
