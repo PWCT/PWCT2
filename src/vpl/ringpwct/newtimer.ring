@@ -45,6 +45,6 @@ class newtimerComponentView from ComponentViewParent
 		TextBox( T_CT_NEWTIMER_IP_VALUE , :value)
 		TextBox( T_CT_NEWTIMER_IP_VALUE2 , :value2)
 		TextBox( T_CT_NEWTIMER_IP_VALUE3 , :value3)
-		TextBox( T_CT_NEWTIMER_IP_VALUE4 , :value4)
+		TextBoxValue( T_CT_NEWTIMER_IP_VALUE4 , :value4, C_INTERACTIONPAGE_EXPCONTAINSLITERAL)
 		CheckBox( T_CT_NEWTIMER_IP_VALUE5 , :value5)
 		PageButtons()
