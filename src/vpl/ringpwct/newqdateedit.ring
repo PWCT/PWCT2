@@ -43,7 +43,7 @@ class newqdateeditComponentController from ComponentControllerParent
 				}
 				cCode += "resize("+nWidth+","+nHeight+")"+nl
 				if Variable(:value6) != NULL {
-					cCode += 'setStyleSheet("' + Variable(:value6) + '")' + nl
+					cCode += 'setStyleSheet(' + Variable(:value6) + ')' + nl
 				}
 				
 				
@@ -66,6 +66,6 @@ class newqdateeditComponentView from ComponentViewParent
 		TextBox( T_CT_NEWQDATEEDIT_IP_VALUE3 , :value3)
 		TextBox( T_CT_NEWQDATEEDIT_IP_VALUE4 , :value4)
 		TextBox( T_CT_NEWQDATEEDIT_IP_VALUE5 , :value5)
-		TextBox( T_CT_NEWQDATEEDIT_IP_VALUE6 , :value6)
+		TextBoxValue( T_CT_NEWQDATEEDIT_IP_VALUE6 , :value6, C_INTERACTIONPAGE_EXPCONTAINSLITERAL)
 		TextBox( T_CT_NEWQDATEEDIT_IP_VALUE7 , :value7)
 		PageButtons()
