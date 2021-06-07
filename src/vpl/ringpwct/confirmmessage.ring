@@ -19,7 +19,7 @@ class confirmmessageComponentController from ComponentControllerParent
 class confirmmessageComponentView from ComponentViewParent
 	 
 		Title( T_CT_CONFIRMMESSAGE_IP_TITLE )	
-		TextBox( T_CT_CONFIRMMESSAGE_IP_VALUE , :value)
-		TextBox( T_CT_CONFIRMMESSAGE_IP_VALUE2 , :value2)
+		TextBoxValue( T_CT_CONFIRMMESSAGE_IP_VALUE , :value, C_INTERACTIONPAGE_EXPCONTAINSLITERAL)
+		TextBoxValue( T_CT_CONFIRMMESSAGE_IP_VALUE2 , :value2, C_INTERACTIONPAGE_EXPCONTAINSLITERAL)
 		TextBox( T_CT_CONFIRMMESSAGE_IP_VALUE3 , :value3)
 		PageButtons()

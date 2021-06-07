@@ -33,9 +33,9 @@ class inputboxComponentController from ComponentControllerParent
 class inputboxComponentView from ComponentViewParent
 	 
 		Title( T_CT_INPUTBOX_IP_TITLE )	
-		TextBox( T_CT_INPUTBOX_IP_VALUE , :value)
+		TextBoxValue( T_CT_INPUTBOX_IP_VALUE , :value, C_INTERACTIONPAGE_EXPCONTAINSLITERAL)
 		ListBox( T_CT_INPUTBOX_IP_VALUE2 , :value2, 
 				T_CT_INPUTBOX_IP_VALUE2LIST )
-		TextBox( T_CT_INPUTBOX_IP_VALUE3 , :value3)
+		TextBoxValue( T_CT_INPUTBOX_IP_VALUE3 , :value3, C_INTERACTIONPAGE_EXPCONTAINSLITERAL)
 		TextBox( T_CT_INPUTBOX_IP_VALUE4 , :value4)
 		PageButtons()
