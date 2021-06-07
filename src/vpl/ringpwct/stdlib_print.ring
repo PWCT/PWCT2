@@ -19,5 +19,5 @@ class stdlib_printComponentController from ComponentControllerParent
 class stdlib_printComponentView from ComponentViewParent
 	 
 		Title( T_CT_STDLIB_PRINT_IP_TITLE )	
-		TextBox( T_CT_STDLIB_PRINT_IP_VALUE , :value)
+		TextBoxValue( T_CT_STDLIB_PRINT_IP_VALUE , :value, C_INTERACTIONPAGE_EXPCONTAINSLITERAL)
 		PageButtons()

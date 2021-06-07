@@ -19,5 +19,5 @@ class stdlib_putsComponentController from ComponentControllerParent
 class stdlib_putsComponentView from ComponentViewParent
 	 
 		Title( T_CT_STDLIB_PUTS_IP_TITLE )	
-		TextBox( T_CT_STDLIB_PUTS_IP_VALUE , :value)
+		TextBoxValue( T_CT_STDLIB_PUTS_IP_VALUE , :value, C_INTERACTIONPAGE_EXPCONTAINSLITERAL)
 		PageButtons()
