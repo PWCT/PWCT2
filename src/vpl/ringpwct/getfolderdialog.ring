@@ -19,11 +19,11 @@ class getfolderdialogComponentController from ComponentControllerParent
 		return True 
 
 class getfolderdialogComponentView from ComponentViewParent
-	 
-		Title( T_CT_GETFOLDERDIALOG_IP_TITLE )	
-		TextBox( T_CT_GETFOLDERDIALOG_IP_VALUE , :value)
-		TextBox( T_CT_GETFOLDERDIALOG_IP_VALUE2 , :value2)
-		TextBox( T_CT_GETFOLDERDIALOG_IP_VALUE3 , :value3)
-		TextBox( T_CT_GETFOLDERDIALOG_IP_VALUE4 , :value4)
-		TextBox( T_CT_GETFOLDERDIALOG_IP_VALUE5 , :value5)
-		PageButtons()
+ 
+	Title( T_CT_GETFOLDERDIALOG_IP_TITLE )	
+	TextBox( T_CT_GETFOLDERDIALOG_IP_VALUE , :value)
+	TextBoxValue( T_CT_GETFOLDERDIALOG_IP_VALUE2 , :value2, C_INTERACTIONPAGE_EXPCONTAINSLITERAL)
+	TextBoxValue( T_CT_GETFOLDERDIALOG_IP_VALUE3 , :value3, C_INTERACTIONPAGE_EXPCONTAINSLITERAL)
+	TextBoxValue( T_CT_GETFOLDERDIALOG_IP_VALUE4 , :value4, C_INTERACTIONPAGE_EXPCONTAINSLITERAL)
+	TextBox( T_CT_GETFOLDERDIALOG_IP_VALUE5 , :value5)
+	PageButtons()
