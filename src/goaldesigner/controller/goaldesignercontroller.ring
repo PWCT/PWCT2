@@ -814,7 +814,9 @@ class GoalDesignerController from WindowsControllerParent
 				if cFileName = NULL { return }
 			else 
 				cFileName = "noname.pwct"
-			}			
+			}
+			# Remove the file from the Active Files List 
+				parent().RemoveFileFromActiveFilesList(lower(oVisualSourceFile.cFileName))
 			oVisualSourceFile.cFileName = cFileName
 		# Clear the History 
 			clearHistory()
@@ -830,6 +832,9 @@ class GoalDesignerController from WindowsControllerParent
 			SaveFileAction2()
 		# Update the Time Machine
 			UpdateTheTimeMachine()
+		# Set the docable widget title
+			oView.win.ParentWidget().setWindowTitle(cFileName)
+
 
 	/*
 		Purpose : Save Current File Action
