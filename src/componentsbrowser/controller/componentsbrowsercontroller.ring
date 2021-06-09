@@ -322,6 +322,11 @@ class ComponentsBrowserController from WindowsControllerParent
 		aContent = oModel.GetNodeContent(nID)
 		cFile = aContent[:Code]
 		if cFile = NULL { return }
+		# Check the Rules 
+			if ! parent().RulesAllow(cFile)  {
+				msginfo("Sorry","We can't use this component here!")
+				return 
+			}
 		cFilePath = cComponentsPath + cFile + ".ring"
 		Parent().CheckLoadingComponent(cFilePath)
 		# Start the Component

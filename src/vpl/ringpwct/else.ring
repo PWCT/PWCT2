@@ -23,6 +23,12 @@ Class ElseComponentController from ComponentControllerParent
 	func AfterOpen 
 		OkAction()
 
+	func CheckAllowParent cParentComponentName,nParentStepNumber
+		if cParentComponentName = "ifstatement" {
+			return True
+		}
+		return False
+
 class ElseComponentView from ComponentViewParent
 	 
 		Title(T_CT_ELSE_IP_TITLE)	# "Else Component"
