@@ -324,7 +324,7 @@ class ComponentsBrowserController from WindowsControllerParent
 		if cFile = NULL { return }
 		# Check the Rules 
 			if ! parent().RulesAllow(cFile)  {
-				msginfo("Sorry","We can't use this component here!")
+				msginfo(T_CB_SORRY,T_CB_CANTUSECOMPONENT)
 				return 
 			}
 		cFilePath = cComponentsPath + cFile + ".ring"

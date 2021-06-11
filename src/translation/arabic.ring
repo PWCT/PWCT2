@@ -244,6 +244,9 @@
 	T_CB_RINGPWCT = "رينج بدون كود"
 	T_CB_SELECT = "حسنا"
 	T_CB_CLOSE = "إغلاق"
+	T_CB_SORRY = "عفوا"
+	T_CB_CANTUSECOMPONENT = "لا يمكننا إستخدام هذا المكون"
+
 
 # Interaction Pages
 

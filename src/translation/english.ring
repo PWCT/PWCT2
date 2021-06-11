@@ -245,6 +245,8 @@
 	T_CB_RINGPWCT = "RingPWCT"
 	T_CB_SELECT = "Ok"
 	T_CB_CLOSE = "Close"
+	T_CB_SORRY = "Sorry"
+	T_CB_CANTUSECOMPONENT = "We can't use this component here!"
 
 # Interaction Pages
 
