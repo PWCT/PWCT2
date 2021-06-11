@@ -22,6 +22,13 @@ Class CaseComponentController from ComponentControllerParent
 
 		return True 
 
+	func CheckAllowParent cParentComponentName,nParentStepNumber
+		if cParentComponentName = "switch" {
+			return True
+		}
+		return False
+
+
 class CaseComponentView from ComponentViewParent
 	 
 		Title(T_CT_CASE_IP_TITLE)	# "Case Component"

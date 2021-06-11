@@ -22,6 +22,13 @@ Class ElseIfComponentController from ComponentControllerParent
 
 		return True 
 
+	func CheckAllowParent cParentComponentName,nParentStepNumber
+		if cParentComponentName = "ifstatement" {
+			return True
+		}
+		return False
+
+
 class ElseIFComponentView from ComponentViewParent
 	 
 		Title(T_CT_ELSEIF_IP_TITLE)	# "ElseIf Component"

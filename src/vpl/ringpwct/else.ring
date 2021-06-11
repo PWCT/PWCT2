@@ -24,7 +24,8 @@ Class ElseComponentController from ComponentControllerParent
 		OkAction()
 
 	func CheckAllowParent cParentComponentName,nParentStepNumber
-		if cParentComponentName = "ifstatement" {
+		if cParentComponentName = "ifstatement" or 
+		   cParentComponentName = "switch"{
 			return True
 		}
 		return False
