@@ -1630,6 +1630,28 @@ class GoalDesignerController from WindowsControllerParent
 		return [cFile,nStepNumber]
 
 	/*
+		Purpose : Get Parents List from the Current Step to the Start Point
+		Parameters : None
+		Output : List contains the component name of each parent
+	*/
+
+	func GetParentsList 
+		oItem  = oView.oStepsTree.currentItem()
+		nStepID = oView.oStepsTree.GetIDByObj(oItem)
+		if nStepID = 1 {	# start point
+			return ["SP"]
+		}
+		aParents = []
+		while nStepID != 1  {
+			nIID = oModel.GetInteractionID(nStepID)
+			cFile = oModel.GetInteractionComponent(nIID)
+			aParents + cFile
+			nStepID = oModel.getStepParent(nStepID)
+		}
+		aParents + "SP"
+		return aParents 
+
+	/*
 		Purpose : Get Parent Name  - Used for Rules
 		Parameters : None
 		Output : None
@@ -1676,11 +1698,13 @@ class GoalDesignerController from WindowsControllerParent
 			cFilePath = cComponentsPath + cParentComponentName + ".ring"
 		# Check that the current component support the parent component 
 			oChild = GetComponentObject(cChildComponentName)
+			oChild.setParentObject(self)
 			lCheck = oChild.CheckAllowParent(cParentComponentName,nStepNumber)
 			if not lCheck { return false } 
 		# Check that the parent component accept the current component 
 			if cParentComponentName = "SP" { return True }
 			oParent = GetComponentObject(cParentComponentName)
+			oParent.setParentObject(self)
 			return oParent.CheckAllowChild(cChildComponentName,nStepNumber)
 
 

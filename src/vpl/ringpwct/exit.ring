@@ -18,6 +18,14 @@ Class ExitComponentController from ComponentControllerParent
 
 		return True 
 
+	func CheckAllowParent cParentComponentName,nParentStepNumber
+		aList = GetParentsList()
+		if find(aList,"forloop") or find(aList,"forinloop") or 
+		   find(aList,"whileloop") or find(aList,"doagain") {
+			return True
+		}
+		return False
+
 class ExitComponentView from ComponentViewParent
 	 
 		Title(T_CT_EXIT_IP_TITLE)	

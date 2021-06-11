@@ -434,6 +434,9 @@ Class ComponentControllerParent from WindowsControllerParent
 	func CheckAllowParent cParentComponentName,nParentStepNumber
 		return True
 
+	func GetParentsList 
+		return Parent().GetParentsList()
+
 	/*
 		Purpose : CheckAllowChild (To be written in the component)
 		Parameters : Child Component Name, Parent Step Number
