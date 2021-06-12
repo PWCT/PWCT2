@@ -16,3 +16,4 @@
 	# Interaction Page
 		T_CT_DOAGAIN_IP_TITLE = "Do Again Component"
 		T_CT_DOAGAIN_IP_CONDITION = "Condition : "
+		T_CT_DOAGAIN_IP_STARTVALUE = "True"

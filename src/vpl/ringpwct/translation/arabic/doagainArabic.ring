@@ -16,3 +16,4 @@
 	# Interaction Page
 		T_CT_DOAGAIN_IP_TITLE = "مكون نفذ مرة أخرى لو"
 		T_CT_DOAGAIN_IP_CONDITION = "الشرط : "
+		T_CT_DOAGAIN_IP_STARTVALUE = ""

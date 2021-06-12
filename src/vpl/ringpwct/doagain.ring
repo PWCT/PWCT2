@@ -27,5 +27,5 @@ Class DoAgainComponentController from ComponentControllerParent
 class DoAgainComponentView from ComponentViewParent
 	 
 		Title(T_CT_DOAGAIN_IP_TITLE)	# "Do Again Component"
-		TextBox(T_CT_DOAGAIN_IP_CONDITION , :condition) # "Condition : "
+		TextBoxValue(T_CT_DOAGAIN_IP_CONDITION , :condition,T_CT_DOAGAIN_IP_STARTVALUE) # "Condition : "
 		PageButtons()
