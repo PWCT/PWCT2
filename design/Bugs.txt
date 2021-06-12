@@ -7,9 +7,9 @@
 
 ===========================================================================================================================
 Status
-	* Bugs Count : 49
+	* Bugs Count : 50
 	* Fixed Bugs : 49
-	* UnFixed Bugs : 0
+	* UnFixed Bugs : 1
 ===========================================================================================================================
 (1)  Fixed : We created over 6 thouands steps, then using the search window
 after selecting an item in the search result list we get the next error
@@ -1642,3 +1642,5 @@ This was a logical memory leak!
 			you will not understand what's going on!
 
 ===========================================================================================================================
+
+(50) Using (if t=3 ? :three ok else) in Ring2PWCT (Component Browser) - Lead to Crash
