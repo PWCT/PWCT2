@@ -157,6 +157,23 @@ class TreeModel
 		return aChildren
 
 	/*
+		The next method return a list of the node children (One Level)
+		The list contains each node index
+		Parameters : The Parent Node ID
+		Output : Children List
+	*/
+
+	func ChildrenOneLevel nNodeID
+		nSize = len(aList)
+		aChildren = []
+		for x = 1 to nSize {
+			if aList[x][C_TREEMODEL_PARENTID] = nNodeID {
+				aChildren + x
+			}
+		}
+		return aChildren
+
+	/*
 		The next method return a list of the node children
 		The list contains each node ID
 		Parameters : Node ID
