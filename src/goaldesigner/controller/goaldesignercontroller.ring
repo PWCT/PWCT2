@@ -1651,6 +1651,17 @@ class GoalDesignerController from WindowsControllerParent
 		aParents + "SP"
 		return aParents 
 
+	func GetChildrenOneLevel
+		oItem  = oView.oStepsTree.currentItem()
+		nStepID = oView.oStepsTree.GetIDByObj(oItem)
+		aList = oModel.oStepsTreeModel.ChildrenoneLevel(nStepID)
+		aComponents = []
+		for nStepID in aList { 
+			nIID = oModel.GetInteractionID(nStepID)
+			cFile = oModel.GetInteractionComponent(nIID)
+			aComponents + cFile
+		}
+		return aComponents 
 	/*
 		Purpose : Get Parent Name  - Used for Rules
 		Parameters : None

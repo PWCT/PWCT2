@@ -158,7 +158,7 @@ class TreeModel
 
 	/*
 		The next method return a list of the node children (One Level)
-		The list contains each node index
+		The list contains each node id
 		Parameters : The Parent Node ID
 		Output : Children List
 	*/
@@ -168,7 +168,7 @@ class TreeModel
 		aChildren = []
 		for x = 1 to nSize {
 			if aList[x][C_TREEMODEL_PARENTID] = nNodeID {
-				aChildren + x
+				aChildren + aList[x][C_TREEMODEL_NODEID]
 			}
 		}
 		return aChildren

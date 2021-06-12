@@ -24,8 +24,12 @@ Class ElseComponentController from ComponentControllerParent
 		OkAction()
 
 	func CheckAllowParent cParentComponentName,nParentStepNumber
-		if cParentComponentName = "ifstatement" or 
-		   cParentComponentName = "switch"{
+		aChild = GetChildrenOneLevel() 
+		if find(aChild,:else) {
+			return False
+		}
+		if (cParentComponentName = "ifstatement" and nParentStepNumber = 2)  or 
+		   cParentComponentName = "switch" {
 			return True
 		}
 		return False
