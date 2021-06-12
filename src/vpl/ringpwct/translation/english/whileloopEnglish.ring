@@ -16,3 +16,4 @@
 	# Interaction Page
 		T_CT_WHILELOOP_IP_TITLE = "While Loop Component"
 		T_CT_WHILELOOP_IP_CONDITION = "Condition : "
+		T_CT_WHILELOOP_IP_STARTVALUE = "True"

@@ -16,3 +16,4 @@
 	# Interaction Page
 		T_CT_WHILELOOP_IP_TITLE = "مكون حلقة طالما"
 		T_CT_WHILELOOP_IP_CONDITION = "الشرط : "
+		T_CT_WHILELOOP_IP_STARTVALUE = ""

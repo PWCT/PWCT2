@@ -27,5 +27,5 @@ Class WhileLoopComponentController from ComponentControllerParent
 class WhileLoopComponentView from ComponentViewParent
 	 
 		Title(T_CT_WHILELOOP_IP_TITLE)	# "WhileLoop Component"
-		TextBox(T_CT_WHILELOOP_IP_CONDITION , :condition) # "Condition : "
+		TextBoxValue(T_CT_WHILELOOP_IP_CONDITION , :condition,T_CT_WHILELOOP_IP_STARTVALUE) # "Condition : "
 		PageButtons()
