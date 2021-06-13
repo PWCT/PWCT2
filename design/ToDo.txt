@@ -244,16 +244,15 @@
 		SL Print Component 						DONE
 		SL Print To String Component 					DONE 
 * When creating new file (Set the window title to noname.pwct)			DONE
-* Prevent adding (else, else if, case, other, loop & exit) in wrong location
+* Prevent adding (else, else if, case, other, loop & exit) in wrong location	DONE
 	* Else Component - Check Parent (must be ifstatement or switch)		DONE
 	* Else If Component - Check Parent (must be ifstatement)		DONE
 	* Case Component - Check Parent (must bs switch)			DONE
 	* Exit Component - Check Parents List to be inside a loop		DONE
 	* Loop Component - Check Parents List to be inside a loop		DONE
 	* Allow only One Else Component (Not Many) in each if statement		DONE
+* Ring2PWCT - Check Parser Errors - If we have a parser try to pass it		DONE
 ===============================================================================
-* Quick tasks, think of components as commands
-* Add a command window to create visual programs using natural commands
 * Suggestions of commands based on controls in form designer and steps tree 
 * Better Auto-Complete 
 ===============================================================================
@@ -284,6 +283,9 @@
 * PWCT For Mobile - Form Designer - Color/Font Dialogs - Window Width
 * PWCT For Mobile - Fast Startup 
 * PWCT For Mobile - Use QML to (Browse Internet, Play Video, etc)
+===============================================================================
+* Quick tasks, think of components as commands
+* Add a command window to create visual programs using natural commands
 ===============================================================================
 * Support for other programming languages 
 * Visual Compiler
