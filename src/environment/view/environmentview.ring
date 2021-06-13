@@ -763,20 +763,18 @@ class EnvironmentView from WindowsViewParent
 		# Tested using 1440x2560 resolution
 		# Width(100) = 6.94%
 		# Height(95) = 3.71%
-		oDesktop = new QDesktopWidget()
-		oButton {
-			if PWCTIsMobile(:GoalDesignerButtonsSize) {
-				setMinimumwidth(oDesktop.width()*0.0694)	
-				setMinimumHeight(oDesktop.height()*0.0371)
-			}
+		if PWCTIsMobile(:GoalDesignerButtonsSize) {
+			oButton.setMinimumwidth(oDesktop.width()*0.0694)	
+			oButton.setMinimumHeight(oDesktop.height()*0.0371)
 		}
 
 	func MobileToolButtonSize oButton
-		oButton {
-			if PWCTIsMobile(:GoalDesignerButtonsSize) {
-				setMinimumwidth(200)	
-				setMinimumHeight(150)
-			}
+		# Tested using 1440x2560 resolution
+		# Width(200) = 13.88%
+		# Height(150) = 5.85%
+		if PWCTIsMobile(:GoalDesignerButtonsSize) {
+			oButton.setMinimumwidth(oDesktop.width()*0.1388)	
+			oButton.setMinimumHeight(oDesktop.height()*0.0585)
 		}
 
 
