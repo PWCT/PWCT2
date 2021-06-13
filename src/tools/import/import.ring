@@ -10,6 +10,6 @@ load "importfiles.ring"
 load "../vsfgenerator/generator.ring"
 
 if isMainSourceFile() {
-	ImportFile("input/test.ring","output/test.pwct",C_PRINTOUTPUT)
+	ImportFile("input/test11.ring","output/test11.pwct",C_PRINTOUTPUT)
 }
 

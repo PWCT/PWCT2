@@ -17,8 +17,10 @@ class ParserTokens
 		do
 			if ! mainClass() {
 				error("Parsing Error!")
+				return False
 			}
 		again (nActiveToken != nTokensCount)
+		return True
 
 	func ignoreNewLine
 		DisableBufferFlag()

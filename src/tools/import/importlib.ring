@@ -42,7 +42,9 @@ func RingCode2PWCT cCode
 		lOnErrorShutDown = False
 		lOnErrorPrintMsg = False
 		setTokens(oScanner.GetTokens())
-		Start()
+		if ! Start() {
+			return aOutput
+		}
 	}
 	oGenerator = new Generator {
 		setParseTree(oParser.GetParseTree())
