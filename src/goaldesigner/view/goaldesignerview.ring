@@ -355,10 +355,14 @@ class GoalDesignerView from WindowsViewParent
 		oStepsTree.SetFocus(0)
 
 	func MobileButtonSize oButton
+		# Tested using 1440x2560 resolution
+		# Width (150) = 10.41%
+		# Height (200) = 7.81%
+		oDesktop = new QDesktopWidget()
 		oButton {
 			if PWCTIsMobile(:GoalDesignerButtonsSize) {
-				setMinimumwidth(150)	
-				setMinimumHeight(200)
+				setMinimumwidth(oDesktop.width()*0.1041)	
+				setMinimumHeight(oDesktop.height()*0.0781)
 			}
 		}
 

@@ -760,10 +760,14 @@ class EnvironmentView from WindowsViewParent
 
 
 	func MobileButtonSize oButton
+		# Tested using 1440x2560 resolution
+		# Width(100) = 6.94%
+		# Height(95) = 3.71%
+		oDesktop = new QDesktopWidget()
 		oButton {
 			if PWCTIsMobile(:GoalDesignerButtonsSize) {
-				setMinimumwidth(100)	
-				setMinimumHeight(95)
+				setMinimumwidth(oDesktop.width()*0.0694)	
+				setMinimumHeight(oDesktop.height()*0.0371)
 			}
 		}
 
