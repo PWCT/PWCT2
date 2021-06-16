@@ -609,3 +609,20 @@ Class ComponentControllerParent from WindowsControllerParent
 			cText = substr(cText,'"',`"+char(34)+"`)
 		}
 		return cChar + cText + cChar
+
+	/*
+		Search in Listbox Control using Textbox 
+	*/
+	func SearchInListbox cVar 
+		oList = oView.GetVariableObject(cVar)
+		oLineEdit = oView.GetVariableExtraObject(cVar)
+		cText = trim(oLineEdit.text())
+		if len(cText) < 1 { return }
+		for t=0 to oList.Count() {
+			if len(oList.item(t).text()) >= len(cText) {
+				if left(oList.item(t).text(),len(cText)) = cText {
+					oList.setcurrentrow(t,QItemSelectionModel_Clear|QItemSelectionModel_Select)
+					exit 
+				}
+			}
+		}

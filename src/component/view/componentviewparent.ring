@@ -166,6 +166,12 @@ class ComponentViewParent from WindowsViewParent
 			setStyleSheet("font-size:"+this.nControlsFontSize+"pt;")
 			setText(cTitle)
 		}
+		lSearchTextbox = len(aItems) > 5
+		if lSearchTextbox {
+			oLineEdit = new qLineEdit(win) {
+				setTextChangedEvent(Method("searchinlistbox('"+cVariable+"')"))
+			}
+		}
 		oList = new qListWidget(win) {
 			setStyleSheet("font-size:"+this.nControlsFontSize+"pt;")
 			for item in aItems {		
@@ -175,11 +181,26 @@ class ComponentViewParent from WindowsViewParent
 			setminimumwidth(200)
 			setminimumheight(100)			
 		}
+		if lSearchTextbox {
+			oLayoutV = new qVBoxLayout() {
+				addWidget(oLineEdit)
+				addWidget(oList)
+			}			
+		}
 		oLayout = new qHBoxLayout() {
-			AddWidget(oLabel) AddWidget(oList)
+			AddWidget(oLabel) 
+			if lSearchTextbox {
+				addLayout(oLayoutV)
+			else 
+				addWidget(oList)
+			}
 		}
 		oLayoutAll.AddLayout(oLayout)
-		aVariables + [oList,cVariable,C_INTERACTION_CT_LISTBOX ]
+		if lSearchTextbox {
+			aVariables + [oList,cVariable,C_INTERACTION_CT_LISTBOX,oLineEdit ]
+		else 
+			aVariables + [oList,cVariable,C_INTERACTION_CT_LISTBOX ]
+		}
 		return oList
 
 	/*
@@ -303,3 +324,13 @@ class ComponentViewParent from WindowsViewParent
 		if nPos {
 			return aValues[nPos+1]
 		}
+
+	func GetVariableObject cVariable
+		nPos = find(aVariables,cVariable,C_INTERACTION_VL_NAME)
+		oObject = aVariables[nPos][C_INTERACTION_VL_OBJECT]
+		return oObject
+
+	func GetVariableExtraObject cVariable
+		nPos = find(aVariables,cVariable,C_INTERACTION_VL_NAME)
+		oObject = aVariables[nPos][C_INTERACTION_VL_EXTRAOBJECT]
+		return oObject
