@@ -15,6 +15,8 @@ class AutoComplete
 
 	AddDefaultItems()
 
+	nSize = oList.count()
+
 	oCompleter = new qCompleter3(oList,NULL)
 	oCompleter.setCaseSensitivity(Qt_CaseInsensitive)
 
@@ -66,10 +68,22 @@ class AutoComplete
 			oList.append(cItem)	
 		}
 
-	func supportControl oGUIControl
-		if lSupportAutoComplete {
+	func supportControl oGoalDesigner,oGUIControl
+		if not lSupportAutoComplete { return }
+		# Delete Extra (Dynamic) Items 
+			nMax = oList.count()
+			for t=nSize+1 to nMax {
+				oList.removelast()
+			}
+		# Add the Dynamic Items 
+			AddItems(["Test"])
+		# Update the Completer Object 
+			oCompleter.delete()
+			oCompleter = new qCompleter3(oList,NULL)
+			oCompleter.setCaseSensitivity(Qt_CaseInsensitive)
+		# Set the GUI Object completer 
 			oGUIControl.setCompleter(oCompleter)
-		}
+		
 
 	func AddFunctions
 		AddItems(cfunctions())

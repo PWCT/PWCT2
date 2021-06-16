@@ -511,7 +511,7 @@ Class ComponentControllerParent from WindowsControllerParent
 		for aItem in oView.aVariables {
 			if aItem[C_INTERACTION_VL_TYPE] = C_INTERACTION_CT_TEXTBOX {
 				oTextbox = aItem[C_INTERACTION_VL_OBJECT]
-				parent().oAutoComplete.supportControl(oTextbox)
+				parent().oAutoComplete.supportControl(parent(),oTextbox)
 			}
 		}
 
