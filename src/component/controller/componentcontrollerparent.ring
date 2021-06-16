@@ -618,7 +618,7 @@ Class ComponentControllerParent from WindowsControllerParent
 		oLineEdit = oView.GetVariableExtraObject(cVar)
 		cText = trim(oLineEdit.text())
 		if len(cText) < 1 { return }
-		for t=0 to oList.Count() {
+		for t=0 to oList.Count()-1 {
 			if len(oList.item(t).text()) >= len(cText) {
 				if left(oList.item(t).text(),len(cText)) = cText {
 					oList.setcurrentrow(t,QItemSelectionModel_Clear|QItemSelectionModel_Select)
