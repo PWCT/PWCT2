@@ -71,12 +71,15 @@ class AutoComplete
 			oList.removelast()
 		}
 
-	func supportControl oGoalDesigner,oGUIControl
-		if not lSupportAutoComplete { return }
+	func loadExtraItems oGoalDesigner
 		# Delete Extra (Dynamic) Items 
 			DeleteExtraItems()
 		# Add the Dynamic Items 
-			AddItems(["Test"])
+			AddItems(oGoalDesigner.getAutoCompleteItems())
+
+	func supportControl oGoalDesigner,oGUIControl
+		if not lSupportAutoComplete { return }
+		loadExtraItems(oGoalDesigner)
 		# Create the Completer Object 
 			oCompleter = new qCompleter3(oList,oGUIControl)
 			oCompleter.setCaseSensitivity(Qt_CaseInsensitive)

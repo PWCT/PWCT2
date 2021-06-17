@@ -1980,3 +1980,8 @@ class GoalDesignerController from WindowsControllerParent
 		Open_Window(:GotoLineController)
 		Last_Window().setParentObject(self)
 
+	/*
+		Get Autocomplete Items
+	*/
+	func getAutoCompleteItems 
+		return ["Test"]
