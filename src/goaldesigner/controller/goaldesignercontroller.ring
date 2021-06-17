@@ -1989,7 +1989,23 @@ class GoalDesignerController from WindowsControllerParent
 			aObjects = parent().formdesigner().oModel.getObjects()
 			for oObj in aObjects {
 				if oObj[1] = "Window" { loop }
-				aItems + oObj[1]
-				aItems + ("oView."+oObj[1])
+				if not find(aItems,oObj[1]) {
+					aItems + oObj[1]
+				}
+				if not find(aItems,"oView."+oObj[1]) {
+					aItems + ("oView."+oObj[1])
+				}
 			}
-		return aItems
+		# Add words from Steps Tree 
+			aTree = oModel.oStepsTreeModel.GetData()
+			for item in aTree {
+				aContent = item[C_TREEMODEL_CONTENT]
+				cStepCode = aContent[:code]
+				aWords = split(cStepCode," ")
+				for word in aWords {
+					if not find(aItems,word) {
+						aItems + word
+					}
+				}
+			}
+			return aItems
