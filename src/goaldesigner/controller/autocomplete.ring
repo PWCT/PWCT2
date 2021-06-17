@@ -17,9 +17,6 @@ class AutoComplete
 
 	nSize = oList.count()
 
-	oCompleter = new qCompleter3(oList,NULL)
-	oCompleter.setCaseSensitivity(Qt_CaseInsensitive)
-
 	lSupportAutoComplete = True 
 
 	if PWCTIsMobile(:AutoComplete) {
@@ -68,22 +65,23 @@ class AutoComplete
 			oList.append(cItem)	
 		}
 
+	func DeleteExtraItems
+		nMax = oList.count()
+		for t=nSize+1 to nMax {
+			oList.removelast()
+		}
+
 	func supportControl oGoalDesigner,oGUIControl
 		if not lSupportAutoComplete { return }
 		# Delete Extra (Dynamic) Items 
-			nMax = oList.count()
-			for t=nSize+1 to nMax {
-				oList.removelast()
-			}
+			DeleteExtraItems()
 		# Add the Dynamic Items 
 			AddItems(["Test"])
-		# Update the Completer Object 
-			oCompleter.delete()
-			oCompleter = new qCompleter3(oList,NULL)
+		# Create the Completer Object 
+			oCompleter = new qCompleter3(oList,oGUIControl)
 			oCompleter.setCaseSensitivity(Qt_CaseInsensitive)
-		# Set the GUI Object completer 
+		# Use the Completer Object 
 			oGUIControl.setCompleter(oCompleter)
-		
 
 	func AddFunctions
 		AddItems(cfunctions())
