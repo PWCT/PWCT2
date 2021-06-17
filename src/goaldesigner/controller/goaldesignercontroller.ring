@@ -1984,4 +1984,12 @@ class GoalDesignerController from WindowsControllerParent
 		Get Autocomplete Items
 	*/
 	func getAutoCompleteItems 
-		return ["Test"]
+		aItems = []
+		# Add objects from the Form Designer 
+			aObjects = parent().formdesigner().oModel.getObjects()
+			for oObj in aObjects {
+				if oObj[1] = "Window" { loop }
+				aItems + oObj[1]
+				aItems + ("oView."+oObj[1])
+			}
+		return aItems
