@@ -98,7 +98,8 @@ class GoalDesignerController from WindowsControllerParent
 		lHistory = True
 
 	# AutoComplete Cache 
-		nAutoCompleteCache = 0  # Steps Tree (Nodes Count)
+		nAutoCompleteStepsTreeCache   = 0  # Steps Tree (Nodes Count)
+		nAutoCompleteFormObjectsCache = 0  # Form Designer (Objects Count)
 
 	/*
 		Purpose : Show the Window
@@ -1990,6 +1991,7 @@ class GoalDesignerController from WindowsControllerParent
 		aItems = []
 		# Add objects from the Form Designer 
 			aObjects = parent().formdesigner().oModel.getObjects()
+			nAutoCompleteFormObjectsCache = len(aObjects)
 			for oObj in aObjects {
 				if oObj[1] = "Window" { loop }
 				if not find(aItems,oObj[1]) {
@@ -2001,7 +2003,7 @@ class GoalDesignerController from WindowsControllerParent
 			}
 		# Get Steps Tree Data
 			aTree = oModel.oStepsTreeModel.GetData()
-			nAutoCompleteCache = len(aTree)
+			nAutoCompleteStepsTreeCache = len(aTree)
 		# Add words from Steps Tree 
 			cCode = ""
 			for item in aTree {
@@ -2020,4 +2022,5 @@ class GoalDesignerController from WindowsControllerParent
 		return aItems
 
 	func CheckUsingAutoCompleteCache 
-		return (len(oModel.oStepsTreeModel.aList) = nAutoCompleteCache)
+		return (len(oModel.oStepsTreeModel.aList) = nAutoCompleteStepsTreeCache) and 
+			( len(parent().formdesigner().oModel.getObjects()) = nAutoCompleteFormObjectsCache)
