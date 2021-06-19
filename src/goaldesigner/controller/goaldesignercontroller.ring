@@ -1998,14 +1998,15 @@ class GoalDesignerController from WindowsControllerParent
 			}
 		# Add words from Steps Tree 
 			aTree = oModel.oStepsTreeModel.GetData()
+			cCode = ""
 			for item in aTree {
 				aContent = item[C_TREEMODEL_CONTENT]
-				cStepCode = aContent[:code]
-				aWords = split(cStepCode," ")
-				for word in aWords {
-					if not find(aItems,word) {
-						aItems + word
-					}
+				cCode += aContent[:code] + nl				
+			}
+			aWords = split(cCode," ")
+			for word in aWords {
+				if not find(aItems,word) {
+					aItems + word
 				}
 			}
 			return aItems
