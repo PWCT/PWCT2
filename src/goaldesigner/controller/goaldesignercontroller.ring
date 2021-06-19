@@ -97,6 +97,10 @@ class GoalDesignerController from WindowsControllerParent
 	# Enable/Disable saving History (For Undo operations)
 		lHistory = True
 
+	# AutoComplete Cache 
+		nAutoCompleteCache = 0  # Steps Tree (Nodes Count)
+		aAutoCompleteCache = [] # Autocomplete Items 
+
 	/*
 		Purpose : Show the Window
 		Parameters : None
@@ -1996,8 +2000,14 @@ class GoalDesignerController from WindowsControllerParent
 					aItems + ("oView."+oObj[1])
 				}
 			}
-		# Add words from Steps Tree 
+		# Get Steps Tree Data
 			aTree = oModel.oStepsTreeModel.GetData()
+		# Check the Cache 
+			if len(aTree) = nAutoCompleteCache {
+				return aAutoCompleteCache
+			}
+			nAutoCompleteCache = len(aTree)
+		# Add words from Steps Tree 
 			cCode = ""
 			for item in aTree {
 				aContent = item[C_TREEMODEL_CONTENT]
@@ -2012,4 +2022,6 @@ class GoalDesignerController from WindowsControllerParent
 					cLast = word
 				}
 			}
+		# Update the Cache 
+			aAutoCompleteCache = aItems 
 		return aItems
