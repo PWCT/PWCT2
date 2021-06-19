@@ -99,7 +99,6 @@ class GoalDesignerController from WindowsControllerParent
 
 	# AutoComplete Cache 
 		nAutoCompleteCache = 0  # Steps Tree (Nodes Count)
-		aAutoCompleteCache = [] # Autocomplete Items 
 
 	/*
 		Purpose : Show the Window
@@ -2002,10 +2001,6 @@ class GoalDesignerController from WindowsControllerParent
 			}
 		# Get Steps Tree Data
 			aTree = oModel.oStepsTreeModel.GetData()
-		# Check the Cache 
-			if len(aTree) = nAutoCompleteCache {
-				return aAutoCompleteCache
-			}
 			nAutoCompleteCache = len(aTree)
 		# Add words from Steps Tree 
 			cCode = ""
@@ -2022,6 +2017,7 @@ class GoalDesignerController from WindowsControllerParent
 					cLast = word
 				}
 			}
-		# Update the Cache 
-			aAutoCompleteCache = aItems 
 		return aItems
+
+	func CheckUsingAutoCompleteCache 
+		return (len(oModel.oStepsTreeModel.aList) = nAutoCompleteCache)

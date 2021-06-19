@@ -72,6 +72,9 @@ class AutoComplete
 		}
 
 	func loadExtraItems oGoalDesigner
+		if oGoalDesigner.CheckUsingAutoCompleteCache() {
+			return 
+		}
 		# Delete Extra (Dynamic) Items 
 			DeleteExtraItems()
 		# Add the Dynamic Items 
