@@ -2003,10 +2003,13 @@ class GoalDesignerController from WindowsControllerParent
 				aContent = item[C_TREEMODEL_CONTENT]
 				cCode += aContent[:code] + nl				
 			}
-			aWords = split(cCode," ")
+			aWords = sort(split(cCode," "))
+		# Remove Duplication
+			cLast = ""
 			for word in aWords {
-				if not find(aItems,word) {
+				if word != cLast {
 					aItems + word
+					cLast = word
 				}
 			}
-			return aItems
+		return aItems
