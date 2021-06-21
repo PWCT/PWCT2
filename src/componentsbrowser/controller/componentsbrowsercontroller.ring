@@ -44,6 +44,9 @@ class ComponentsBrowserController from WindowsControllerParent
 	# Always show the special search window 
 		lAlwaysShowSpecialWindow = False
 
+	# Auto-Complete 
+		lSupportAutoComplete = True
+
 	/*
 		Purpose : Key Press Action
 		Parameters : None
@@ -54,8 +57,8 @@ class ComponentsBrowserController from WindowsControllerParent
 		nKeyCode = oView.oWinFilter.getKeyCode()
 		switch nKeyCode {	
 		case Qt_Key_Escape
-			if lSpecialSearchWindow {
-				QuickMsg().hide()
+			if lSpecialSearchWindow {				
+				HideRingCode()
 			}
 			if lEscapeKey {
 				CloseAction()	
@@ -73,6 +76,7 @@ class ComponentsBrowserController from WindowsControllerParent
 		if oView.oTextFilter.getKeyCode() = 16777220 {	
 			SelectAction()	
 		}
+
 
 	/*
 		Purpose : Add Components to the List
@@ -137,7 +141,7 @@ class ComponentsBrowserController from WindowsControllerParent
 				SetCurrentItem(oFirstStep,0)
 			}
 			if lSpecialSearchWindow {
-				QuickMsg().hide()
+				HideRingCode()
 			}
 			return
 		}
@@ -157,7 +161,7 @@ class ComponentsBrowserController from WindowsControllerParent
 				lSearchResult = True
 				if ! lAlwaysShowSpecialWindow {
 					if lSpecialSearchWindow {
-						QuickMsg().hide()
+						HideRingCode()
 					}
 					return 
 				else 
@@ -173,7 +177,7 @@ class ComponentsBrowserController from WindowsControllerParent
 				cFind = trim(oView.oTextSearch.Text())
 			QuickMsg().setText(cFind)
 			QuickMsg().centerTheWindow()
-			QuickMsg().show()
+			ShowRingCode()
 			# The next code is a workaround in a bug in Qt for WebAssembly 
 			# Because the LineEdit lost the focus for the QuickMsg window 
 			# And we want to keep it 
@@ -191,7 +195,7 @@ class ComponentsBrowserController from WindowsControllerParent
 
 	func SelectAction
 		if lSpecialSearchWindow {
-			QuickMsg().hide()
+			HideRingCode()
 		}
 		if lSearchResult {	
 			lSearchResult = False 
@@ -394,10 +398,9 @@ class ComponentsBrowserController from WindowsControllerParent
 		if lSpecialSearchWindow {
 			if ! isMethod(self,:QuickMsg) {
 				open_windowandlink(:quickmsgController,self)
-				QuickMsg().hide()
+				HideRingCode()
 			}
 		}
-
 
 	/*
 		Purpose : Close the window
@@ -455,3 +458,15 @@ class ComponentsBrowserController from WindowsControllerParent
 			}
 		}
 		return False
+
+	func ShowRingCode
+		QuickMsg().show()
+		# Support Auto-Complete 
+			if lSupportAutoComplete {
+				parent().oAutoComplete.supportControl(parent(),oView.oTextSearch)
+			}
+
+
+	func HideRingCode
+		QuickMsg().hide()
+		oView.oTextSearch.setcompleter(NULL)
