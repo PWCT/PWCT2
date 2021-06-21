@@ -79,6 +79,8 @@ class AutoComplete
 			DeleteExtraItems()
 		# Add the Dynamic Items 
 			AddItems(oGoalDesigner.getAutoCompleteItems())
+		# Remove Duplication
+			oList.removeDuplicates()
 
 	func supportControl oGoalDesigner,oGUIControl
 		return supportControlImplementation(oGoalDesigner,oGUIControl,True)
