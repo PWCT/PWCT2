@@ -81,13 +81,25 @@ class AutoComplete
 			AddItems(oGoalDesigner.getAutoCompleteItems())
 
 	func supportControl oGoalDesigner,oGUIControl
+		return supportControlImplementation(oGoalDesigner,oGUIControl,True)
+
+	func supportControlWithoutSettingItAsParent oGoalDesigner,oGUIControl
+		return supportControlImplementation(oGoalDesigner,oGUIControl,False)
+
+	func supportControlImplementation oGoalDesigner,oGUIControl,lSetParent
 		if not lSupportAutoComplete { return }
 		loadExtraItems(oGoalDesigner)
 		# Create the Completer Object 
-			oCompleter = new qCompleter3(oList,oGUIControl)
+			if lSetParent {
+				oCompleter = new qCompleter3(oList,oGUIControl)
+			else 
+				oCompleter = new qCompleter3(oList,NULL)
+			}
 			oCompleter.setCaseSensitivity(Qt_CaseInsensitive)
 		# Use the Completer Object 
 			oGUIControl.setCompleter(oCompleter)
+
+
 
 	func AddFunctions
 		AddItems(cfunctions())

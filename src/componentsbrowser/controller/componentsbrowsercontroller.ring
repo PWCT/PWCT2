@@ -463,7 +463,7 @@ class ComponentsBrowserController from WindowsControllerParent
 		QuickMsg().show()
 		# Support Auto-Complete 
 			if lSupportAutoComplete {
-				parent().oAutoComplete.supportControl(parent(),oView.oTextSearch)
+				parent().oAutoComplete.supportControlWithoutSettingItAsParent(parent(),oView.oTextSearch)
 			}
 
 
