@@ -56,9 +56,7 @@ class AutoComplete
 
 	func AddGUIItems
 		AddItems([
-			"win",
-			"oView",
-			"oView.win"
+			"oView"
 			])
 	
 	func AddItems aList

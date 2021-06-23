@@ -1993,7 +1993,7 @@ class GoalDesignerController from WindowsControllerParent
 			aObjects = parent().formdesigner().oModel.getObjects()
 			nAutoCompleteFormObjectsCache = len(aObjects)
 			for oObj in aObjects {
-				if oObj[1] = "Window" { loop }
+				if oObj[1] = "Window" { oObj[1] = "win" }
 				if not find(aItems,oObj[1]) {
 					aItems + oObj[1]
 				}
@@ -2003,10 +2003,14 @@ class GoalDesignerController from WindowsControllerParent
 				cClass = classname(oObj[2])
 				switch cClass {
 					case "formdesigner_qpushbutton"
-						aItems + ("oView."+oObj[1]+".text")	
+						aItems + (oObj[1]+".text()")	
+						aItems + (oObj[1]+".settext")	
+						aItems + ("oView."+oObj[1]+".text()")	
 						aItems + ("oView."+oObj[1]+".settext")	
 					case "formdesigner_qlineedit"
-						aItems + ("oView."+oObj[1]+".text")	
+						aItems + (oObj[1]+".text()")	
+						aItems + (oObj[1]+".settext")	
+						aItems + ("oView."+oObj[1]+".text()")	
 						aItems + ("oView."+oObj[1]+".settext")	
 				}
 			}
