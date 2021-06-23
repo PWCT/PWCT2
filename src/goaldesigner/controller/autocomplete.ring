@@ -93,9 +93,9 @@ class AutoComplete
 		loadExtraItems(oGoalDesigner)
 		# Create the Completer Object 
 			if lSetParent {
-				oCompleter = new qCompleter3(oList,oGUIControl)
+				oCompleter = new qCompleter4(oList,oGUIControl)
 			else 
-				oCompleter = new qCompleter3(oList,NULL)
+				oCompleter = new qCompleter4(oList,NULL)
 			}
 			oCompleter.setCaseSensitivity(Qt_CaseInsensitive)
 		# Use the Completer Object 
