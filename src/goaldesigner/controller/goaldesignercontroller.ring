@@ -2000,6 +2000,15 @@ class GoalDesignerController from WindowsControllerParent
 				if not find(aItems,"oView."+oObj[1]) {
 					aItems + ("oView."+oObj[1])
 				}
+				cClass = classname(oObj[2])
+				switch cClass {
+					case "formdesigner_qpushbutton"
+						aItems + ("oView."+oObj[1]+".text")	
+						aItems + ("oView."+oObj[1]+".settext")	
+					case "formdesigner_qlineedit"
+						aItems + ("oView."+oObj[1]+".text")	
+						aItems + ("oView."+oObj[1]+".settext")	
+				}
 			}
 		# Get Steps Tree Data
 			aTree = oModel.oStepsTreeModel.GetData()
