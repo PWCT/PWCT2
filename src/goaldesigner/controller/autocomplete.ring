@@ -57,6 +57,7 @@ class AutoComplete
 	func AddGUIItems
 		AddItems([
 			"win",
+			"oView",
 			"oView.win"
 			])
 	
