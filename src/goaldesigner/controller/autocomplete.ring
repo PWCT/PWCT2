@@ -71,7 +71,7 @@ class AutoComplete
 		}
 
 	func loadExtraItems oGoalDesigner
-		if oGoalDesigner.CheckUsingAutoCompleteCache() {
+		if CheckUsingAutoCompleteCache(oGoalDesigner) {
 			return 
 		}
 		# Delete Extra (Dynamic) Items 
@@ -152,3 +152,7 @@ class AutoComplete
 				}
 			}
 		return aItems
+
+	func CheckUsingAutoCompleteCache oGoalDesigner
+		return (len(oGoalDesigner.oModel.oStepsTreeModel.aList) = oGoalDesigner.nAutoCompleteStepsTreeCache) and 
+			( len(oGoalDesigner.parent().formdesigner().oModel.getObjects()) = oGoalDesigner.nAutoCompleteFormObjectsCache)

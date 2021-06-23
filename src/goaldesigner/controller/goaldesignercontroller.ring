@@ -1983,7 +1983,3 @@ class GoalDesignerController from WindowsControllerParent
 	func GotoLine 
 		Open_Window(:GotoLineController)
 		Last_Window().setParentObject(self)
-
-	func CheckUsingAutoCompleteCache 
-		return (len(oModel.oStepsTreeModel.aList) = nAutoCompleteStepsTreeCache) and 
-			( len(parent().formdesigner().oModel.getObjects()) = nAutoCompleteFormObjectsCache)
