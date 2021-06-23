@@ -77,7 +77,7 @@ class AutoComplete
 		# Delete Extra (Dynamic) Items 
 			DeleteExtraItems()
 		# Add the Dynamic Items 
-			AddItems(oGoalDesigner.getAutoCompleteItems())
+			AddItems(getAutoCompleteItems(oGoalDesigner))
 		# Remove Duplication
 			oList.removeDuplicates()
 
@@ -100,7 +100,55 @@ class AutoComplete
 		# Use the Completer Object 
 			oGUIControl.setCompleter(oCompleter)
 
-
-
 	func AddFunctions
 		AddItems(cfunctions())
+
+	/*
+		Get Autocomplete Items
+	*/
+	func getAutoCompleteItems oGoalDesigner
+		aItems = []
+		# Add objects from the Form Designer 
+			aObjects = oGoalDesigner.parent().formdesigner().oModel.getObjects()
+			nAutoCompleteFormObjectsCache = len(aObjects)
+			for oObj in aObjects {
+				if oObj[1] = "Window" { oObj[1] = "win" }
+				if not find(aItems,oObj[1]) {
+					aItems + oObj[1]
+				}
+				if not find(aItems,"oView."+oObj[1]) {
+					aItems + ("oView."+oObj[1])
+				}
+				cClass = classname(oObj[2])
+				switch cClass {
+					case "formdesigner_qpushbutton"
+						aItems + (oObj[1]+".text()")	
+						aItems + (oObj[1]+".settext")	
+						aItems + ("oView."+oObj[1]+".text()")	
+						aItems + ("oView."+oObj[1]+".settext")	
+					case "formdesigner_qlineedit"
+						aItems + (oObj[1]+".text()")	
+						aItems + (oObj[1]+".settext")	
+						aItems + ("oView."+oObj[1]+".text()")	
+						aItems + ("oView."+oObj[1]+".settext")	
+				}
+			}
+		# Get Steps Tree Data
+			aTree = oGoalDesigner.oModel.oStepsTreeModel.GetData()
+			nAutoCompleteStepsTreeCache = len(aTree)
+		# Add words from Steps Tree 
+			cCode = ""
+			for item in aTree {
+				aContent = item[C_TREEMODEL_CONTENT]
+				cCode += aContent[:code] + nl				
+			}
+			aWords = sort(split(cCode," "))
+		# Remove Duplication
+			cLast = ""
+			for word in aWords {
+				if word != cLast {
+					aItems + word
+					cLast = word
+				}
+			}
+		return aItems
