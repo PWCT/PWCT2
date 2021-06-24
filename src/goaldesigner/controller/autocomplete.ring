@@ -124,10 +124,60 @@ class AutoComplete
 				switch cClass {
 					case "formdesigner_qwidget"
 						oMyObj = new qwidget 
+					case "formdesigner_qlabel"
+						oMyObj = new qlabel
 					case "formdesigner_qpushbutton"
 						oMyObj = new qpushbutton  
 					case "formdesigner_qlineedit"
 						oMyObj = new qlineedit 
+					case "formdesigner_qtextedit"
+						oMyObj = new qtextedit 
+					case "formdesigner_qlistwidget"
+						oMyObj = new qlistwidget 
+					case "formdesigner_qcheckbox"
+						oMyObj = new qcheckbox
+					case "formdesigner_qimage"
+						oMyObj = new qlabel
+					case "formdesigner_qslider"
+						oMyObj = new qslider
+					case "formdesigner_qprogressbar"
+						oMyObj = new qprogressbar
+					case "formdesigner_qspinbox"
+						oMyObj = new qspinbox
+					case "formdesigner_qcombobox"
+						oMyObj = new qcombobox
+					case "formdesigner_qdatetimeedit"
+						oMyObj = new qdatetimeedit
+					case "formdesigner_qtablewidget"
+						oMyObj = new qtablewidget
+					case "formdesigner_qtreewidget"
+						oMyObj = new qtreewidget
+					case "formdesigner_qradiobutton"
+						oMyObj = new qradiobutton
+					case "formdesigner_qwebview"
+						oMyObj = new qwebview
+					case "formdesigner_qdial"
+						oMyObj = new qdial
+					case "formdesigner_qvideowidget"
+						oMyObj = new qvideowidget
+					case "formdesigner_qframe"
+						oMyObj = new qframe
+					case "formdesigner_qlcdnumber"
+						oMyObj = new qlcdnumber
+					case "formdesigner_qhyperlink"
+						oMyObj = new qlabel
+					case "formdesigner_qtimer"
+						oMyObj = new qtimer
+					case "formdesigner_qallevents"
+						oMyObj = new qallevents
+					case "formdesigner_qlayout"
+						oMyObj = new qvboxlayout
+					case "formdesigner_qtabwidget"
+						oMyObj = new qtabwidget
+					case "formdesigner_qstatusbar"
+						oMyObj = new qstatusbar
+					case "formdesigner_qtoolbar"
+						oMyObj = new qtoolbar
 					other 
 						lKnown = False
 				}
