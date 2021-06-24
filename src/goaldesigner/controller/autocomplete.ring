@@ -120,17 +120,23 @@ class AutoComplete
 					aItems + ("oView."+oObj[1])
 				}
 				cClass = classname(oObj[2])
+				lKnown = True
 				switch cClass {
+					case "formdesigner_qwidget"
+						oMyObj = new qwidget 
 					case "formdesigner_qpushbutton"
-						aItems + (oObj[1]+".text()")	
-						aItems + (oObj[1]+".settext")	
-						aItems + ("oView."+oObj[1]+".text()")	
-						aItems + ("oView."+oObj[1]+".settext")	
+						oMyObj = new qpushbutton  
 					case "formdesigner_qlineedit"
-						aItems + (oObj[1]+".text()")	
-						aItems + (oObj[1]+".settext")	
-						aItems + ("oView."+oObj[1]+".text()")	
-						aItems + ("oView."+oObj[1]+".settext")	
+						oMyObj = new qlineedit 
+					other 
+						lKnown = False
+				}
+				if lKnown {
+					aMethodsList = methods(oMyObj)
+					for cMethod in aMethodsList {
+						aItems + (oObj[1]+"."+cMethod)	
+						aItems + ("oView."+oObj[1]+"."+cMethod)	
+					}
 				}
 			}
 		# Get Steps Tree Data
