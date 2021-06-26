@@ -8,7 +8,7 @@
 class AutoComplete
 
 	lAddCommonStrings	= True
-	lAddGUIItems 		= True
+	lAddLanguageItems	= True
 	lAddRingFunctions 	= True
 
 	oList = new qStringList()
@@ -30,8 +30,8 @@ class AutoComplete
 			}
 
 		# Add GUI Items
-			if lAddGUIItems {
-				AddGUIItems()
+			if lAddLanguageItems {
+				AddLanguageItems()
 			}
 
 		# Add Ring Functions 
@@ -53,9 +53,12 @@ class AutoComplete
 			"six","seven","eight","nine","ten"
 			])		
 
-	func AddGUIItems
+	func AddLanguageItems
 		AddItems([
-			"oView"
+			"oView",
+			"oView {}",
+			"self",
+			"this"
 			])
 	
 	func AddItems aList
@@ -183,8 +186,8 @@ class AutoComplete
 				if lKnown {
 					aMethodsList = methods(oMyObj)
 					for cMethod in aMethodsList {
-						aItems + (oObj[1]+"."+cMethod)	
-						aItems + ("oView."+oObj[1]+"."+cMethod)	
+						aItems + (oObj[1]+"."+cMethod+"()")	
+						aItems + ("oView."+oObj[1]+"."+cMethod+"()")	
 					}
 				}
 			}
