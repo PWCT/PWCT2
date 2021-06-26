@@ -41,17 +41,16 @@ class AutoComplete
 
 	func AddCommonStrings
 		AddItems([
-			"Hello, World!",
+			"Hello",
+			"World",
 			"Welcome",
 			"Enter",
 			"your",
 			"name",
 			"What",
 			"is",
-			"age",
 			"one","two","three","four","five",
-			"six","seven","eight","nine","ten",
-			"exit"
+			"six","seven","eight","nine","ten"
 			])		
 
 	func AddGUIItems
