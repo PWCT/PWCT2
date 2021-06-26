@@ -310,5 +310,3 @@ Once we have a fixed release date we will update this document.
 
 The more we are investing our time in the development of this product, the more we save
 your time when you use it.
-
-
