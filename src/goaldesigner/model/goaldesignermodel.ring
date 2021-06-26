@@ -187,13 +187,32 @@ class GoalDesignerModel
 					}
 				nTabs = Copy(Char(9),len(aParent)-nBackTabs) 
 			if x[C_TREEMODEL_CONTENT][:visible] and x[C_TREEMODEL_CONTENT][:active] {
-				if trim(x[C_TREEMODEL_CONTENT][:code]) != NULL {					
-					cCode += nTabs + substr(x[C_TREEMODEL_CONTENT][:code],nl,Windowsnl()+nTabs) + windowsnl()
+				if  x[C_TREEMODEL_CONTENT][:steptype] = C_STEPTYPE_COMMENT {
+					if x[C_TREEMODEL_NODEID] != 1 {	# Avoid the Start Point 
+						if trim(x[C_TREEMODEL_CONTENT][:plainname]) != NULL {					
+							cCode += nTabs + "# " + x[C_TREEMODEL_CONTENT][:plainname] + windowsnl()
+						else 
+							cCode += windowsnl()
+						}
+					}				
+				else 
+					if trim(x[C_TREEMODEL_CONTENT][:code]) != NULL {					
+						cCode += nTabs + substr(x[C_TREEMODEL_CONTENT][:code],nl,Windowsnl()+nTabs) + windowsnl()
+					}
 				}
+
 			}
 			if x[C_TREEMODEL_CONTENT][:visible] {
 				if x[C_TREEMODEL_NODEID] != 1 {		# Avoid the Start Point
-					cSteps += nTabs + x[C_TREEMODEL_CONTENT][:plainname] + nl
+					if  x[C_TREEMODEL_CONTENT][:steptype] = C_STEPTYPE_COMMENT {
+						if trim(x[C_TREEMODEL_CONTENT][:plainname]) != NULL {					
+							cSteps += nTabs + "# " + x[C_TREEMODEL_CONTENT][:plainname] + nl
+						else 
+							cSteps += nl
+						}
+					else 
+						cSteps += nTabs + x[C_TREEMODEL_CONTENT][:plainname] + nl
+					}
 				}
 			} 
 		}
