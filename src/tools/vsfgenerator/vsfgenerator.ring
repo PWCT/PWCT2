@@ -980,7 +980,7 @@ class VSFGenerator
 				nStepID = AddGeneratedStep(nStepID,
 					T_CT_BRACES_ST_BRACESTART,
 				nIID,nStepNumber,C_STEPTYPE_ROOT)
-				oModel.SaveStepCode(nStepID, " {" )
+				oModel.SaveStepCode(nStepID, "{" )
 				nStepNumber++
 				nStepID2 = AddGeneratedStep(nStepID,
 					T_CT_BRACES_ST_STARTHERE ,
