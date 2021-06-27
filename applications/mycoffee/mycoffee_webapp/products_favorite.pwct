@@ -47,7 +47,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"#!ring -cgi"
+				"#!ring -cgi"
 			],
 			[
 				"active",
@@ -55,7 +55,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"#!ring -cgi"
+				""
 			],
 			[
 				"interactionid",
@@ -75,7 +75,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"#!ring -cgi"
+				"#!ring -cgi"
 			]
 		]
 	],
@@ -207,7 +207,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				" {"
+				"{"
 			],
 			[
 				"interactionid",
@@ -731,7 +731,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"//cOutput += "+char(34)+""+char(34)+" + nl + nl+'<script>window.location=index.ring;</script>' + nl + nl"
+				"//cOutput += "+char(34)+""+char(34)+" + nl + nl+'<script>window.location=index.ring;</script>' + nl + nl"
 			],
 			[
 				"active",
@@ -739,7 +739,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"//cOutput += "+char(34)+""+char(34)+" + nl + nl+'<script>window.location=index.ring;</script>' + nl + nl"
+				""
 			],
 			[
 				"interactionid",
@@ -759,7 +759,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"//cOutput += "+char(34)+""+char(34)+" + nl + nl+'<script>window.location=index.ring;</script>' + nl + nl"
+				"//cOutput += "+char(34)+""+char(34)+" + nl + nl+'<script>window.location=index.ring;</script>' + nl + nl"
 			]
 		]
 	],
@@ -1005,7 +1005,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				" {"
+				"{"
 			],
 			[
 				"interactionid",
@@ -1492,160 +1492,160 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"21/03/2021",
-		"15:41:54",
+		"27/06/2021",
+		"19:24:03",
 		""
 	],
 	[
 		2,
 		1,
 		"",
-		"21/03/2021",
-		"15:41:54",
+		"27/06/2021",
+		"19:24:03",
 		""
 	],
 	[
 		3,
 		1,
 		"load",
-		"21/03/2021",
-		"15:41:54",
+		"27/06/2021",
+		"19:24:03",
 		"file;;_RV_;;hassounaweb.ring;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"import",
-		"21/03/2021",
-		"15:41:54",
+		"27/06/2021",
+		"19:24:03",
 		"value;;_RV_;;system.web;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"newobj",
-		"21/03/2021",
-		"15:41:54",
+		"27/06/2021",
+		"19:24:03",
 		"value;;_RV_;;;;_RV_;;value2;;_RV_;;my_site;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"callfunc",
-		"21/03/2021",
-		"15:41:54",
+		"27/06/2021",
+		"19:24:03",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;start;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"class",
-		"21/03/2021",
-		"15:41:54",
+		"27/06/2021",
+		"19:24:03",
 		"value;;_RV_;;my_site;;_RV_;;value2;;_RV_;;;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"21/03/2021",
-		"15:41:54",
+		"27/06/2021",
+		"19:24:03",
 		"leftside;;_RV_;;page;;_RV_;;rightside;;_RV_;;"+char(34)+"products_favorite"+char(34)+";;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"21/03/2021",
-		"15:41:54",
+		"27/06/2021",
+		"19:24:03",
 		"leftside;;_RV_;;title;;_RV_;;rightside;;_RV_;;"+char(34)+"Products Favorite"+char(34)+";;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"ifstatement",
-		"21/03/2021",
-		"15:41:54",
+		"27/06/2021",
+		"19:24:03",
 		"condition;;_RV_;;aPageVars["+char(34)+"is_login"+char(34)+"];;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"21/03/2021",
-		"15:41:54",
+		"27/06/2021",
+		"19:24:03",
 		"leftside;;_RV_;;products;;_RV_;;rightside;;_RV_;;get_products_favorite(aPageVars["+char(34)+"cookie_login_user"+char(34)+"]);;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"else",
-		"21/03/2021",
-		"15:41:54",
+		"27/06/2021",
+		"19:24:03",
 		""
 	],
 	[
 		13,
 		1,
 		"assignment",
-		"21/03/2021",
-		"15:41:54",
+		"27/06/2021",
+		"19:24:03",
 		"leftside;;_RV_;;products;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"",
-		"21/03/2021",
-		"15:41:54",
+		"27/06/2021",
+		"19:24:03",
 		""
 	],
 	[
 		15,
 		1,
 		"func",
-		"21/03/2021",
-		"15:41:54",
+		"27/06/2021",
+		"19:24:03",
 		"name;;_RV_;;start;;_RV_;;parameters;;_RV_;;();;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"assignment",
-		"21/03/2021",
-		"15:41:54",
+		"27/06/2021",
+		"19:24:03",
 		"leftside;;_RV_;;cTemp;;_RV_;;rightside;;_RV_;;getPage("+char(34)+"templates/products_favorite.html"+char(34)+",self);;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"newobj",
-		"21/03/2021",
-		"15:41:54",
+		"27/06/2021",
+		"19:24:03",
 		"value;;_RV_;;;;_RV_;;value2;;_RV_;;hassounaPage;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"callfunc",
-		"21/03/2021",
-		"15:41:54",
+		"27/06/2021",
+		"19:24:03",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;html;;_RV_;;parameters;;_RV_;;cTemp;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"ifstatement",
-		"21/03/2021",
-		"15:41:54",
+		"27/06/2021",
+		"19:24:03",
 		"condition;;_RV_;; NOT is_login();;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"callfunc",
-		"21/03/2021",
-		"15:41:54",
+		"27/06/2021",
+		"19:24:03",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;redirect;;_RV_;;parameters;;_RV_;;"+char(34)+"index.ring"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	]
 ]

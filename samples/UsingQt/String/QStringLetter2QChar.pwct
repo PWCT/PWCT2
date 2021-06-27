@@ -85,7 +85,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"# Create the String "
+				"# Create the String "
 			],
 			[
 				"active",
@@ -93,7 +93,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# Create the String "
+				""
 			],
 			[
 				"interactionid",
@@ -113,7 +113,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"# Create the String "
+				"# Create the String "
 			]
 		]
 	],
@@ -199,7 +199,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"# Get One Character "
+				"# Get One Character "
 			],
 			[
 				"active",
@@ -207,7 +207,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# Get One Character "
+				""
 			],
 			[
 				"interactionid",
@@ -227,7 +227,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"# Get One Character "
+				"# Get One Character "
 			]
 		]
 	],
@@ -313,7 +313,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"# Using normar Ring functions"
+				"# Using normar Ring functions"
 			],
 			[
 				"active",
@@ -321,7 +321,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# Using normar Ring functions"
+				""
 			],
 			[
 				"interactionid",
@@ -341,7 +341,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"# Using normar Ring functions"
+				"# Using normar Ring functions"
 			]
 		]
 	],
@@ -427,7 +427,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"# Using QChar class "
+				"# Using QChar class "
 			],
 			[
 				"active",
@@ -435,7 +435,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# Using QChar class "
+				""
 			],
 			[
 				"interactionid",
@@ -455,7 +455,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"# Using QChar class "
+				"# Using QChar class "
 			]
 		]
 	],
@@ -465,7 +465,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"# QChar get an integer value as input"
+				"# QChar get an integer value as input"
 			],
 			[
 				"active",
@@ -473,7 +473,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# QChar get an integer value as input"
+				""
 			],
 			[
 				"interactionid",
@@ -493,7 +493,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"# QChar get an integer value as input"
+				"# QChar get an integer value as input"
 			]
 		]
 	],
@@ -618,128 +618,128 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"21/03/2021",
-		"16:02:25",
+		"27/06/2021",
+		"19:44:34",
 		""
 	],
 	[
 		2,
 		1,
 		"load",
-		"21/03/2021",
-		"16:02:25",
+		"27/06/2021",
+		"19:44:34",
 		"file;;_RV_;;guilib.ring;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"",
-		"21/03/2021",
-		"16:02:25",
+		"27/06/2021",
+		"19:44:34",
 		""
 	],
 	[
 		4,
 		1,
 		"newobj",
-		"21/03/2021",
-		"16:02:25",
+		"27/06/2021",
+		"19:44:34",
 		"value;;_RV_;;mystring;;_RV_;;value2;;_RV_;;QString2;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"callmethod",
-		"21/03/2021",
-		"16:02:25",
+		"27/06/2021",
+		"19:44:34",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;mystring;;_RV_;;name;;_RV_;;append;;_RV_;;parameters;;_RV_;;"+char(34)+"Hello, World!"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"",
-		"21/03/2021",
-		"16:02:25",
+		"27/06/2021",
+		"19:44:34",
 		""
 	],
 	[
 		7,
 		1,
 		"assignment",
-		"21/03/2021",
-		"16:02:25",
+		"27/06/2021",
+		"19:44:34",
 		"leftside;;_RV_;;cValue;;_RV_;;rightside;;_RV_;;mystring.mid(4,1);;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"print",
-		"21/03/2021",
-		"16:02:25",
+		"27/06/2021",
+		"19:44:34",
 		"text;;_RV_;;"+char(34)+"Character: "+char(34)+"+cValue;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"",
-		"21/03/2021",
-		"16:02:25",
+		"27/06/2021",
+		"19:44:34",
 		""
 	],
 	[
 		10,
 		1,
 		"print",
-		"21/03/2021",
-		"16:02:25",
+		"27/06/2021",
+		"19:44:34",
 		"text;;_RV_;;isalpha(cValue);;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"print",
-		"21/03/2021",
-		"16:02:25",
+		"27/06/2021",
+		"19:44:34",
 		"text;;_RV_;;isdigit(cValue);;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"",
-		"21/03/2021",
-		"16:02:25",
+		"27/06/2021",
+		"19:44:34",
 		""
 	],
 	[
 		13,
 		1,
 		"",
-		"21/03/2021",
-		"16:02:25",
+		"27/06/2021",
+		"19:44:34",
 		""
 	],
 	[
 		14,
 		1,
 		"newobj",
-		"21/03/2021",
-		"16:02:25",
+		"27/06/2021",
+		"19:44:34",
 		"value;;_RV_;;oChar;;_RV_;;value2;;_RV_;;QChar;;_RV_;;value3;;_RV_;;ASCII(cValue);;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"print",
-		"21/03/2021",
-		"16:02:25",
+		"27/06/2021",
+		"19:44:34",
 		"text;;_RV_;;oChar.isDigit();;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"print",
-		"21/03/2021",
-		"16:02:25",
+		"27/06/2021",
+		"19:44:34",
 		"text;;_RV_;;oChar.isLetter();;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	]
 ]

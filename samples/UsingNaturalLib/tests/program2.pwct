@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'English'
-nStepsID                 = 22		
-nInteractionsID          = 19
+nStepsID                 = 16		
+nInteractionsID          = 14
 
 aStepsTable = [
 	[
@@ -199,7 +199,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"# The Ring Natural Library"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Talk</font></span>"
 			],
 			[
 				"active",
@@ -207,7 +207,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"Talk"
 			],
 			[
 				"interactionid",
@@ -223,11 +223,11 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				1
+				2
 			],
 			[
 				"plainname",
-				"# The Ring Natural Library"
+				"Talk"
 			]
 		]
 	],
@@ -237,7 +237,45 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"# 2017, Mahmoud Fayed <msfclipper@yahoo.com>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">MyLanguage</font></span> {"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"MyLanguage {"
+			],
+			[
+				"interactionid",
+				7
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"MyLanguage {"
+			]
+		]
+	],
+	[
+		8,
+		7,
+		[
+			[
+				"name",
+				"Start Here"
 			],
 			[
 				"active",
@@ -257,25 +295,25 @@ aStepsTable = [
 			],
 			[
 				"stepnumber",
-				1
+				2
 			],
 			[
 				"steptype",
-				1
+				3
 			],
 			[
 				"plainname",
-				"# 2017, Mahmoud Fayed <msfclipper@yahoo.com>"
+				"Start Here"
 			]
 		]
 	],
 	[
+		10,
 		8,
-		1,
 		[
 			[
 				"name",
-				"# The Ring Natural Library"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Hello</font></span>"
 			],
 			[
 				"active",
@@ -283,7 +321,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"Hello"
 			],
 			[
 				"interactionid",
@@ -299,21 +337,21 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				1
+				2
 			],
 			[
 				"plainname",
-				"# The Ring Natural Library"
+				"Hello"
 			]
 		]
 	],
 	[
-		9,
-		1,
+		11,
+		8,
 		[
 			[
 				"name",
-				"# 2017, Mahmoud Fayed <msfclipper@yahoo.com>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Count</font></span>"
 			],
 			[
 				"active",
@@ -321,7 +359,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"Count"
 			],
 			[
 				"interactionid",
@@ -337,21 +375,21 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				1
+				2
 			],
 			[
 				"plainname",
-				"# 2017, Mahmoud Fayed <msfclipper@yahoo.com>"
+				"Count"
 			]
 		]
 	],
 	[
-		10,
-		1,
+		12,
+		8,
 		[
 			[
 				"name",
-				"# Disable Keywords"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1</font></span>"
 			],
 			[
 				"active",
@@ -359,7 +397,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"1"
 			],
 			[
 				"interactionid",
@@ -375,21 +413,21 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				1
+				2
 			],
 			[
 				"plainname",
-				"# Disable Keywords"
+				"1"
 			]
 		]
 	],
 	[
-		11,
-		1,
+		13,
+		8,
 		[
 			[
 				"name",
-				"# Disable Operators"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">10</font></span>"
 			],
 			[
 				"active",
@@ -397,7 +435,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"10"
 			],
 			[
 				"interactionid",
@@ -413,97 +451,21 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"# Disable Operators"
-			]
-		]
-	],
-	[
-		12,
-		1,
-		[
-			[
-				"name",
-				"New Object <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">MyLanguage</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"new MyLanguage"
-			],
-			[
-				"interactionid",
-				12
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
 				2
 			],
 			[
 				"plainname",
-				"New Object MyLanguage"
-			]
-		]
-	],
-	[
-		13,
-		12,
-		[
-			[
-				"name",
-				"{"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				" {"
-			],
-			[
-				"interactionid",
-				12
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"{"
+				"10"
 			]
 		]
 	],
 	[
 		14,
-		13,
+		8,
 		[
 			[
 				"name",
-				"Start Here"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Count</font></span>"
 			],
 			[
 				"active",
@@ -511,7 +473,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"Count"
 			],
 			[
 				"interactionid",
@@ -523,25 +485,25 @@ aStepsTable = [
 			],
 			[
 				"stepnumber",
-				3
+				1
 			],
 			[
 				"steptype",
-				3
+				2
 			],
 			[
 				"plainname",
-				"Start Here"
+				"Count"
 			]
 		]
 	],
 	[
-		16,
-		14,
+		15,
+		8,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Hello</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">10</font></span>"
 			],
 			[
 				"active",
@@ -549,7 +511,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"Hello"
+				"10"
 			],
 			[
 				"interactionid",
@@ -569,17 +531,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Hello"
+				"10"
 			]
 		]
 	],
 	[
-		17,
-		14,
+		16,
+		8,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Count</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1</font></span>"
 			],
 			[
 				"active",
@@ -587,7 +549,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"Count"
+				"1"
 			],
 			[
 				"interactionid",
@@ -607,203 +569,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Count"
-			]
-		]
-	],
-	[
-		18,
-		14,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"1"
-			],
-			[
-				"interactionid",
-				15
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
 				"1"
 			]
 		]
 	],
 	[
-		19,
-		14,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">10</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"10"
-			],
-			[
-				"interactionid",
-				16
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"10"
-			]
-		]
-	],
-	[
-		20,
-		14,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Count</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"Count"
-			],
-			[
-				"interactionid",
-				17
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Count"
-			]
-		]
-	],
-	[
-		21,
-		14,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">10</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"10"
-			],
-			[
-				"interactionid",
-				18
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"10"
-			]
-		]
-	],
-	[
-		22,
-		14,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"1"
-			],
-			[
-				"interactionid",
-				19
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"1"
-			]
-		]
-	],
-	[
-		15,
-		13,
+		9,
+		7,
 		[
 			[
 				"name",
@@ -819,7 +591,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				12
+				7
 			],
 			[
 				"visible",
@@ -827,7 +599,7 @@ aStepsTable = [
 			],
 			[
 				"stepnumber",
-				4
+				3
 			],
 			[
 				"steptype",
@@ -846,152 +618,112 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"16/03/2021",
-		"22:18:18",
+		"27/06/2021",
+		"19:32:57",
 		""
 	],
 	[
 		2,
 		1,
 		"",
-		"16/03/2021",
-		"22:18:18",
+		"27/06/2021",
+		"19:32:57",
 		""
 	],
 	[
 		3,
 		1,
 		"",
-		"16/03/2021",
-		"22:18:18",
+		"27/06/2021",
+		"19:32:57",
 		""
 	],
 	[
 		4,
 		1,
 		"load",
-		"16/03/2021",
-		"22:18:18",
+		"27/06/2021",
+		"19:32:57",
 		"file;;_RV_;;naturallib.ring;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"load",
-		"16/03/2021",
-		"22:18:18",
+		"27/06/2021",
+		"19:32:57",
 		"file;;_RV_;;mylanguage.ring;;_RV_;;"
 	],
 	[
 		6,
 		1,
-		"",
-		"16/03/2021",
-		"22:18:18",
-		""
+		"freetyping",
+		"27/06/2021",
+		"19:32:57",
+		"value;;_RV_;;Talk;;_RV_;;"
 	],
 	[
 		7,
 		1,
-		"",
-		"16/03/2021",
-		"22:18:18",
-		""
+		"accessobject",
+		"27/06/2021",
+		"19:32:57",
+		"value;;_RV_;;MyLanguage;;_RV_;;"
 	],
 	[
 		8,
 		1,
-		"",
-		"16/03/2021",
-		"22:18:18",
-		""
+		"freetyping",
+		"27/06/2021",
+		"19:32:57",
+		"value;;_RV_;;Hello;;_RV_;;"
 	],
 	[
 		9,
 		1,
-		"",
-		"16/03/2021",
-		"22:18:18",
-		""
+		"freetyping",
+		"27/06/2021",
+		"19:32:57",
+		"value;;_RV_;;Count;;_RV_;;"
 	],
 	[
 		10,
 		1,
-		"",
-		"16/03/2021",
-		"22:18:18",
-		""
+		"freetyping",
+		"27/06/2021",
+		"19:32:57",
+		"value;;_RV_;;1;;_RV_;;"
 	],
 	[
 		11,
 		1,
-		"",
-		"16/03/2021",
-		"22:18:18",
-		""
+		"freetyping",
+		"27/06/2021",
+		"19:32:57",
+		"value;;_RV_;;10;;_RV_;;"
 	],
 	[
 		12,
 		1,
-		"newobj",
-		"16/03/2021",
-		"22:18:18",
-		"value;;_RV_;;;;_RV_;;value2;;_RV_;;MyLanguage;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"freetyping",
+		"27/06/2021",
+		"19:32:57",
+		"value;;_RV_;;Count;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"freetyping",
-		"16/03/2021",
-		"22:18:18",
-		"value;;_RV_;;Hello;;_RV_;;"
+		"27/06/2021",
+		"19:32:57",
+		"value;;_RV_;;10;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"freetyping",
-		"16/03/2021",
-		"22:18:18",
-		"value;;_RV_;;Count;;_RV_;;"
-	],
-	[
-		15,
-		1,
-		"freetyping",
-		"16/03/2021",
-		"22:18:18",
-		"value;;_RV_;;1;;_RV_;;"
-	],
-	[
-		16,
-		1,
-		"freetyping",
-		"16/03/2021",
-		"22:18:18",
-		"value;;_RV_;;10;;_RV_;;"
-	],
-	[
-		17,
-		1,
-		"freetyping",
-		"16/03/2021",
-		"22:18:18",
-		"value;;_RV_;;Count;;_RV_;;"
-	],
-	[
-		18,
-		1,
-		"freetyping",
-		"16/03/2021",
-		"22:18:18",
-		"value;;_RV_;;10;;_RV_;;"
-	],
-	[
-		19,
-		1,
-		"freetyping",
-		"16/03/2021",
-		"22:18:18",
+		"27/06/2021",
+		"19:32:57",
 		"value;;_RV_;;1;;_RV_;;"
 	]
 ]

@@ -47,7 +47,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"# This script is not longer needed!"
+				"# This script is not longer needed!"
 			],
 			[
 				"active",
@@ -55,7 +55,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# This script is not longer needed!"
+				""
 			],
 			[
 				"interactionid",
@@ -75,7 +75,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"# This script is not longer needed!"
+				"# This script is not longer needed!"
 			]
 		]
 	],
@@ -85,7 +85,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"# The file dbtables/db.sql already insert the products data"
+				"# The file dbtables/db.sql already insert the products data"
 			],
 			[
 				"active",
@@ -93,7 +93,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# The file dbtables/db.sql already insert the products data"
+				""
 			],
 			[
 				"interactionid",
@@ -113,7 +113,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"# The file dbtables/db.sql already insert the products data"
+				"# The file dbtables/db.sql already insert the products data"
 			]
 		]
 	],
@@ -123,7 +123,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"# We keep this file in the project as a little database example "
+				"# We keep this file in the project as a little database example "
 			],
 			[
 				"active",
@@ -131,7 +131,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# We keep this file in the project as a little database example "
+				""
 			],
 			[
 				"interactionid",
@@ -151,7 +151,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"# We keep this file in the project as a little database example "
+				"# We keep this file in the project as a little database example "
 			]
 		]
 	],
@@ -694,112 +694,112 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"21/03/2021",
-		"15:41:57",
+		"27/06/2021",
+		"19:24:06",
 		""
 	],
 	[
 		2,
 		1,
 		"",
-		"21/03/2021",
-		"15:41:57",
+		"27/06/2021",
+		"19:24:06",
 		""
 	],
 	[
 		3,
 		1,
 		"",
-		"21/03/2021",
-		"15:41:57",
+		"27/06/2021",
+		"19:24:06",
 		""
 	],
 	[
 		4,
 		1,
 		"",
-		"21/03/2021",
-		"15:41:57",
+		"27/06/2021",
+		"19:24:06",
 		""
 	],
 	[
 		5,
 		1,
 		"load",
-		"21/03/2021",
-		"15:41:57",
+		"27/06/2021",
+		"19:24:06",
 		"file;;_RV_;;db.ring;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"load",
-		"21/03/2021",
-		"15:41:57",
+		"27/06/2021",
+		"19:24:06",
 		"file;;_RV_;;stdlib.ring;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"assignment",
-		"21/03/2021",
-		"15:41:57",
+		"27/06/2021",
+		"19:24:06",
 		"leftside;;_RV_;;pg_password;;_RV_;;rightside;;_RV_;;"+char(34)+"sa"+char(34)+";;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"21/03/2021",
-		"15:41:57",
+		"27/06/2021",
+		"19:24:06",
 		"leftside;;_RV_;;pg_database;;_RV_;;rightside;;_RV_;;"+char(34)+"mycoffeedb_ring"+char(34)+";;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"21/03/2021",
-		"15:41:57",
+		"27/06/2021",
+		"19:24:06",
 		"leftside;;_RV_;;pg_port;;_RV_;;rightside;;_RV_;;"+char(34)+"5432"+char(34)+";;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"21/03/2021",
-		"15:41:57",
+		"27/06/2021",
+		"19:24:06",
 		"leftside;;_RV_;;file_text;;_RV_;;rightside;;_RV_;;Read("+char(34)+"products.txt"+char(34)+");;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"21/03/2021",
-		"15:41:57",
+		"27/06/2021",
+		"19:24:06",
 		"leftside;;_RV_;;stmt_s;;_RV_;;rightside;;_RV_;;split(file_text,"+char(34)+";"+char(34)+");;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"forinloop",
-		"21/03/2021",
-		"15:41:57",
+		"27/06/2021",
+		"19:24:06",
 		"variable;;_RV_;;x;;_RV_;;in;;_RV_;;stmt_s;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"ifstatement",
-		"21/03/2021",
-		"15:41:57",
+		"27/06/2021",
+		"19:24:06",
 		"condition;;_RV_;;trim(x)! = "+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"print",
-		"21/03/2021",
-		"15:41:57",
+		"27/06/2021",
+		"19:24:06",
 		"text;;_RV_;;run("+char(34)+"insert into product values("+char(34)+"+x+"+char(34)+")"+char(34)+");;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	]
 ]

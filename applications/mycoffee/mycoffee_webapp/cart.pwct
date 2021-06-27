@@ -47,7 +47,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"#!ring -cgi"
+				"#!ring -cgi"
 			],
 			[
 				"active",
@@ -55,7 +55,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"#!ring -cgi"
+				""
 			],
 			[
 				"interactionid",
@@ -75,7 +75,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"#!ring -cgi"
+				"#!ring -cgi"
 			]
 		]
 	],
@@ -207,7 +207,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				" {"
+				"{"
 			],
 			[
 				"interactionid",
@@ -1233,7 +1233,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				" {"
+				"{"
 			],
 			[
 				"interactionid",
@@ -2290,272 +2290,272 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"21/03/2021",
-		"15:41:38",
+		"27/06/2021",
+		"19:23:47",
 		""
 	],
 	[
 		2,
 		1,
 		"",
-		"21/03/2021",
-		"15:41:38",
+		"27/06/2021",
+		"19:23:47",
 		""
 	],
 	[
 		3,
 		1,
 		"load",
-		"21/03/2021",
-		"15:41:38",
+		"27/06/2021",
+		"19:23:47",
 		"file;;_RV_;;hassounaweb.ring;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"import",
-		"21/03/2021",
-		"15:41:38",
+		"27/06/2021",
+		"19:23:47",
 		"value;;_RV_;;system.web;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"newobj",
-		"21/03/2021",
-		"15:41:38",
+		"27/06/2021",
+		"19:23:47",
 		"value;;_RV_;;;;_RV_;;value2;;_RV_;;my_site;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"callfunc",
-		"21/03/2021",
-		"15:41:38",
+		"27/06/2021",
+		"19:23:47",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;start;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"class",
-		"21/03/2021",
-		"15:41:38",
+		"27/06/2021",
+		"19:23:47",
 		"value;;_RV_;;my_site;;_RV_;;value2;;_RV_;;;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"21/03/2021",
-		"15:41:38",
+		"27/06/2021",
+		"19:23:47",
 		"leftside;;_RV_;;page;;_RV_;;rightside;;_RV_;;"+char(34)+"cart"+char(34)+";;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"21/03/2021",
-		"15:41:38",
+		"27/06/2021",
+		"19:23:47",
 		"leftside;;_RV_;;title;;_RV_;;rightside;;_RV_;;"+char(34)+"Cart"+char(34)+";;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"21/03/2021",
-		"15:41:38",
+		"27/06/2021",
+		"19:23:47",
 		"leftside;;_RV_;;order_details;;_RV_;;rightside;;_RV_;;[];;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"21/03/2021",
-		"15:41:38",
+		"27/06/2021",
+		"19:23:47",
 		"leftside;;_RV_;;total;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"assignment",
-		"21/03/2021",
-		"15:41:38",
+		"27/06/2021",
+		"19:23:47",
 		"leftside;;_RV_;;full_name;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"ifstatement",
-		"21/03/2021",
-		"15:41:38",
+		"27/06/2021",
+		"19:23:47",
 		"condition;;_RV_;;aPageVars["+char(34)+"is_login"+char(34)+"];;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"assignment",
-		"21/03/2021",
-		"15:41:38",
+		"27/06/2021",
+		"19:23:47",
 		"leftside;;_RV_;;usr;;_RV_;;rightside;;_RV_;;get_user(aPageVars["+char(34)+"cookie_login_user"+char(34)+"]);;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"assignment",
-		"21/03/2021",
-		"15:41:38",
+		"27/06/2021",
+		"19:23:47",
 		"leftside;;_RV_;;full_name;;_RV_;;rightside;;_RV_;;usr["+char(34)+"first_name"+char(34)+"]+"+char(34)+" "+char(34)+"+usr["+char(34)+"last_name"+char(34)+"];;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"assignment",
-		"21/03/2021",
-		"15:41:38",
+		"27/06/2021",
+		"19:23:47",
 		"leftside;;_RV_;;ord_id;;_RV_;;rightside;;_RV_;;get_order_not_finished(aPageVars["+char(34)+"cookie_login_user"+char(34)+"]);;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"assignment",
-		"21/03/2021",
-		"15:41:38",
+		"27/06/2021",
+		"19:23:47",
 		"leftside;;_RV_;;order_details;;_RV_;;rightside;;_RV_;;get_order_details(ord_id);;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"forinloop",
-		"21/03/2021",
-		"15:41:38",
+		"27/06/2021",
+		"19:23:47",
 		"variable;;_RV_;;x;;_RV_;;in;;_RV_;;order_details;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"freetyping",
-		"21/03/2021",
-		"15:41:38",
+		"27/06/2021",
+		"19:23:47",
 		"value;;_RV_;;total+=Number(x["+char(34)+"subtotals"+char(34)+"]);;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"func",
-		"21/03/2021",
-		"15:41:38",
+		"27/06/2021",
+		"19:23:47",
 		"name;;_RV_;;start;;_RV_;;parameters;;_RV_;;();;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"assignment",
-		"21/03/2021",
-		"15:41:38",
+		"27/06/2021",
+		"19:23:47",
 		"leftside;;_RV_;;cTemp;;_RV_;;rightside;;_RV_;;getPage("+char(34)+"templates/cart.html"+char(34)+",self);;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"newobj",
-		"21/03/2021",
-		"15:41:38",
+		"27/06/2021",
+		"19:23:47",
 		"value;;_RV_;;;;_RV_;;value2;;_RV_;;hassounaPage;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"callfunc",
-		"21/03/2021",
-		"15:41:38",
+		"27/06/2021",
+		"19:23:47",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;html;;_RV_;;parameters;;_RV_;;cTemp;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"ifstatement",
-		"21/03/2021",
-		"15:41:38",
+		"27/06/2021",
+		"19:23:47",
 		"condition;;_RV_;; NOT is_login();;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"callfunc",
-		"21/03/2021",
-		"15:41:38",
+		"27/06/2021",
+		"19:23:47",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;redirect;;_RV_;;parameters;;_RV_;;"+char(34)+"index.ring"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"ifstatement",
-		"21/03/2021",
-		"15:41:38",
+		"27/06/2021",
+		"19:23:47",
 		"condition;;_RV_;;IsNameFound("+char(34)+"btnadd"+char(34)+");;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"callfunc",
-		"21/03/2021",
-		"15:41:38",
+		"27/06/2021",
+		"19:23:47",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;add_qty_order_details;;_RV_;;parameters;;_RV_;;this.ord_id,aPageVars["+char(34)+"btnadd"+char(34)+"];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"callfunc",
-		"21/03/2021",
-		"15:41:38",
+		"27/06/2021",
+		"19:23:47",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;redirect;;_RV_;;parameters;;_RV_;;"+char(34)+"cart.ring"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"ifstatement",
-		"21/03/2021",
-		"15:41:38",
+		"27/06/2021",
+		"19:23:47",
 		"condition;;_RV_;;IsNameFound("+char(34)+"btnsub"+char(34)+");;_RV_;;"
 	],
 	[
 		30,
 		1,
 		"callfunc",
-		"21/03/2021",
-		"15:41:38",
+		"27/06/2021",
+		"19:23:47",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;sub_qty_order_details;;_RV_;;parameters;;_RV_;;this.ord_id,aPageVars["+char(34)+"btnsub"+char(34)+"];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"callfunc",
-		"21/03/2021",
-		"15:41:38",
+		"27/06/2021",
+		"19:23:47",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;redirect;;_RV_;;parameters;;_RV_;;"+char(34)+"cart.ring"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		32,
 		1,
 		"ifstatement",
-		"21/03/2021",
-		"15:41:38",
+		"27/06/2021",
+		"19:23:47",
 		"condition;;_RV_;;IsNameFound("+char(34)+"btndel"+char(34)+");;_RV_;;"
 	],
 	[
 		33,
 		1,
 		"callfunc",
-		"21/03/2021",
-		"15:41:38",
+		"27/06/2021",
+		"19:23:47",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;remove_order_details;;_RV_;;parameters;;_RV_;;this.ord_id,aPageVars["+char(34)+"btndel"+char(34)+"];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		34,
 		1,
 		"callfunc",
-		"21/03/2021",
-		"15:41:38",
+		"27/06/2021",
+		"19:23:47",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;redirect;;_RV_;;parameters;;_RV_;;"+char(34)+"cart.ring"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	]
 ]
