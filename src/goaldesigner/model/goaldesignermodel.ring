@@ -158,6 +158,7 @@ class GoalDesignerModel
 	func StepsTreeProcess
 		aParent 	= [0]	# List contains temp. parent stack 
 		aParentType 	= [C_STEPTYPE_COMMENT]
+		aParentCode	= [""]
 		nLastParent 	= 0
 		cCode = ""
 		cSteps = ""
@@ -168,10 +169,12 @@ class GoalDesignerModel
 					if find(aParent,nLastParent) = 0 {
 						aParent + nLastParent
 						aParentType + x[C_TREEMODEL_CONTENT][:steptype]
+						aParentCode + x[C_TREEMODEL_CONTENT][:code]
 					else 
 						while len(aParent) > 0 {
 							del(aParent,len(aParent))
 							del(aParentType,len(aParentType))
+							del(aParentCode,len(aParentCode))
 							if aParent[len(aParent)] = nLastParent {
 								exit
 							}
@@ -185,6 +188,12 @@ class GoalDesignerModel
 							nBackTabs++
 						}
 					}
+					for stepcode in aParentCode {
+						if stepcode = "{" {
+							nBackTabs++
+						}
+					}
+
 				nTabs = Copy(Char(9),len(aParent)-nBackTabs) 
 			if x[C_TREEMODEL_CONTENT][:visible] and x[C_TREEMODEL_CONTENT][:active] {
 				if  x[C_TREEMODEL_CONTENT][:steptype] = C_STEPTYPE_COMMENT {
