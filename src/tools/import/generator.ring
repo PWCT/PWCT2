@@ -114,6 +114,12 @@ class Generator
 				case :Comment 
 					aComments = str2list(aCommand[:Comment])
 					for cComment in aComments {
+						if right(cComment,1) = char(10) {
+							cComment = left(cComment,len(cComment)-1)
+						}
+						if right(cComment,1) = char(13) {
+							cComment = left(cComment,len(cComment)-1)
+						}
 						//AddExpressionCommand(cComment)
 						AddStep(cComment)
 					}
