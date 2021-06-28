@@ -135,7 +135,8 @@ Class ComponentControllerParent from WindowsControllerParent
 			parent().SetStepColor(nStepType)
 		# Modify the step
 			parent().oView.oStepsTree.editstep(oItem,cStep,parent().oModel.GetStepIgnoreStatus(nStepID))
-			parent().oModel.EditStepName(nStepID,cStep)
+			cPlainStepName = Parent().oHTMLFunctions.PlainText(cStep)
+			parent().oModel.EditStepName(nStepID,cStep,cPlainStepName)
 
 	/*
 		Purpose : Save reference to the Root node in the goal designer
