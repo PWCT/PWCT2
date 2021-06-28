@@ -156,9 +156,7 @@ class GoalDesignerModel
 		Output : [Source Code, Steps Tree]
 	*/
 	func StepsTreeProcess
-		aParent 	= [0]	# List contains temp. parent stack 
-		aParentType 	= [C_STEPTYPE_COMMENT]
-		aParentCode	= [""]
+		aParent 	= [oStepsTreeModel.getdata()[1]]	# List contains temp. parent stack 
 		nLastParent 	= 0
 		cCode = ""
 		cSteps = ""
@@ -166,16 +164,12 @@ class GoalDesignerModel
 			# Calculate Tabs
 				if x[C_TREEMODEL_PARENTID] != nLastParent {
 					nLastParent = x[C_TREEMODEL_PARENTID]	
-					if find(aParent,nLastParent) = 0 {
-						aParent + nLastParent
-						aParentType + x[C_TREEMODEL_CONTENT][:steptype]
-						aParentCode + x[C_TREEMODEL_CONTENT][:code]
+					if findParent(aParent,nLastParent) = 0 {
+						aParent + x
 					else 
 						while len(aParent) > 0 {
 							del(aParent,len(aParent))
-							del(aParentType,len(aParentType))
-							del(aParentCode,len(aParentCode))
-							if aParent[len(aParent)] = nLastParent {
+							if aParent[len(aParent)][C_TREEMODEL_PARENTID] = nLastParent {
 								exit
 							}
 						}
@@ -183,12 +177,13 @@ class GoalDesignerModel
 				}
 				# Calculate Back Tabs based on steps like "Start Here"
 					nBackTabs = 2	# for "Start Point"
-					for steptype in aParentType {
+					for aStep in aParent {
+						steptype = aStep[C_TREEMODEL_CONTENT][:steptype]
 						if steptype = C_STEPTYPE_ALLOWINTERACTION {
 							nBackTabs++
+							loop
 						}
-					}
-					for stepcode in aParentCode {
+						stepCode = aStep[C_TREEMODEL_CONTENT][:code]
 						if stepcode = "{" {
 							nBackTabs++
 						}
@@ -231,6 +226,19 @@ class GoalDesignerModel
 			} 
 		}
 		return [:code = cCode,:steps = cSteps]
+
+	/*
+		Purpose : Check if the Parent Step ID exist in a list of Steps 
+		Parameters : The Steps list & the Parent ID
+		Output :  True/False
+	*/
+	func findParent aParent,nLastParent 
+		for aStep in aParent {
+			if aStep[C_TREEMODEL_PARENTID] = nLastParent {
+				return True 
+			}
+		}
+		return False 
 
 	/*
 		Purpose : Delete Step
