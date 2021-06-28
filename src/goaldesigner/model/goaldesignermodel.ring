@@ -179,12 +179,11 @@ class GoalDesignerModel
 					nBackTabs = 2	# for "Start Point"
 					for aStep in aParent {
 						steptype = aStep[C_TREEMODEL_CONTENT][:steptype]
-						if steptype = C_STEPTYPE_ALLOWINTERACTION {
-							nBackTabs++
-							loop
-						}
 						stepCode = aStep[C_TREEMODEL_CONTENT][:code]
-						if stepcode = "{" {
+						stepname = aStep[C_TREEMODEL_CONTENT][:name]
+						if steptype = C_STEPTYPE_ALLOWINTERACTION or 
+						   stepname = "The First Step" or 
+						   stepcode = "{" {
 							nBackTabs++
 						}
 					}
