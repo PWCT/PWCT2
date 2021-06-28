@@ -215,8 +215,12 @@ class GoalDesignerModel
 			if x[C_TREEMODEL_CONTENT][:visible] {
 				if x[C_TREEMODEL_NODEID] != 1 {		# Avoid the Start Point
 					if  x[C_TREEMODEL_CONTENT][:steptype] = C_STEPTYPE_COMMENT {
-						if trim(x[C_TREEMODEL_CONTENT][:plainname]) != NULL {					
-							cSteps += nTabs + "# " + x[C_TREEMODEL_CONTENT][:plainname] + nl
+						if trim(x[C_TREEMODEL_CONTENT][:plainname]) != NULL {		
+							cCommentStart = "# "
+							if left(trim(x[C_TREEMODEL_CONTENT][:plainname]),1) = "#" {
+								cCommentStart = ""
+							}					
+							cSteps += nTabs + cCommentStart + x[C_TREEMODEL_CONTENT][:plainname] + nl
 						else 
 							cSteps += nl
 						}
