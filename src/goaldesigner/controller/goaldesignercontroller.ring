@@ -348,10 +348,11 @@ class GoalDesignerController from WindowsControllerParent
 		}
 		if lCheck  {
 			cText = oInput.textvalue()
+			cPlainStepName = oHTMLFunctions.PlainText(cText)
 			nStepType = oModel.GetStepType(nStepID)
 			SetStepColor(nStepType)
 			oView.oStepsTree.editstep(oItem,cText,this.oModel.GetStepIgnoreStatus(nStepID))
-			oModel.EditStepName(nStepID,cText)
+			oModel.EditStepName(nStepID,cText,cPlainStepName)
 			lSaveFlag = True
 		}		
 

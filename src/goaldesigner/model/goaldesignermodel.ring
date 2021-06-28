@@ -44,8 +44,10 @@ class GoalDesignerModel
 		Output : None
 	*/
 
-	func EditStepName nStepID,cStepName
+	func EditStepName nStepID,cStepName,cPlainStepName
 		oStepsTreeModel.GetNodeContent(nStepID)[:name] = cStepName
+		oStepsTreeModel.GetNodeContent(nStepID)[:plainname] = cPlainStepName
+
 
 	/*
 		Purpose :  Get Step Name
