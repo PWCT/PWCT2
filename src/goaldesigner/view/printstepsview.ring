@@ -57,7 +57,7 @@ class PrintStepsView from WindowsViewParent
 			}			
 
 			SetLayout(Layout2)
-			resize(600,500)
+			resize(800,600)
 			setWindowTitle(T_GD_PS_PRINTSTEP)		
 			setwindowflags(Qt_CustomizeWindowHint | Qt_WindowTitleHint | Qt_WindowStaysOnTopHint) 
 
