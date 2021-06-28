@@ -182,7 +182,7 @@ class GoalDesignerModel
 						stepCode = aStep[C_TREEMODEL_CONTENT][:code]
 						stepname = aStep[C_TREEMODEL_CONTENT][:name]
 						if steptype = C_STEPTYPE_ALLOWINTERACTION or 
-						   stepname = "The First Step" or 
+						   stepname = T_GD_THEFIRSTSTEP or 
 						   stepcode = "{" {
 							nBackTabs++
 						}

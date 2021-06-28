@@ -136,6 +136,7 @@
 
 	T_GD_Firststep  = "Start Point"
 	T_GD_StepsTree = "Steps Tree"
+	T_GD_THEFIRSTSTEP = "The First Step"
 
 	# New Step
 

@@ -135,6 +135,7 @@
 
 	T_GD_Firststep  = "نقطة البداية"
 	T_GD_StepsTree = "شجرة الخطوات"
+	T_GD_THEFIRSTSTEP = "الخطوة الاولى"
 
 	# New Step
 
