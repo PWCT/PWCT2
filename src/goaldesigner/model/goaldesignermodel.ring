@@ -225,7 +225,7 @@ class GoalDesignerModel
 							cSteps += nl
 						}
 					else 
-						cSteps += nTabs + x[C_TREEMODEL_CONTENT][:plainname] + nl
+						cSteps += nTabs + substr(x[C_TREEMODEL_CONTENT][:plainname],nl,WindowsNL()+nTabs) + nl
 					}
 				}
 			} 
