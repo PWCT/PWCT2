@@ -19,5 +19,5 @@ class freetypingComponentController from ComponentControllerParent
 class freetypingComponentView from ComponentViewParent
 	 
 		Title( T_CT_FREETYPING_IP_TITLE )	
-		TextBox( T_CT_FREETYPING_IP_VALUE , :value)
+		EditBox( T_CT_FREETYPING_IP_VALUE , :value)
 		PageButtons()
