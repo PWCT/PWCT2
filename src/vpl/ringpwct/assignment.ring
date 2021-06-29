@@ -22,5 +22,5 @@ class AssignmentComponentView from ComponentViewParent
 			Title(T_CT_ASSIGNMENT_IP_TITLE)	
 		# "Text : "
 			TextBox(T_CT_PRINT_IP_LEFTSIDE , :leftside)
-			TextBox(T_CT_PRINT_IP_RIGHTSIDE , :rightside)
+			EditBox(T_CT_PRINT_IP_RIGHTSIDE , :rightside)
 		PageButtons()
