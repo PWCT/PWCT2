@@ -109,7 +109,8 @@ class ComponentViewParent from WindowsViewParent
 			setStyleSheet("font-size:"+this.nControlsFontSize+"pt;")
 		}
 		oText = new qTextEdit(win) {
-			setStyleSheet(this.cssText+"font-size:"+this.nControlsFontSize+"pt;")
+			setacceptrichtext(False)
+			setStyleSheet("font-size:"+this.nControlsFontSize+"pt;")
 			if this.lFirstTextBox {
 				this.lFirstTextBox = False
 				setFocus(0)
@@ -139,7 +140,7 @@ class ComponentViewParent from WindowsViewParent
 	func EditBoxValue cTitle,cVariable,cValue 
 		oText = Editbox(cTitle,cVariable) {
 			setStyleSheet(this.cssText+"font-size:"+this.nControlsFontSize+"pt;")
-			setplaintext(cValue)
+			setText(cValue)
 		}
 		return oText
 
@@ -360,13 +361,31 @@ class ComponentViewParent from WindowsViewParent
 		return cVariablesValues
 
 	/*
+		Split function that take in mind having many lines between seperators
+		We use this function because the original Split() in StdLib separate 
+		the Split() output to many items for each string that have many lines 
+		While customSplit() return one item for each multi-line string 
+	*/
+	
+	func customSplit cString,cSeparator
+		aList = []
+		nPos = substr(cString,cSeparator)
+		while nPos {
+			aList + left(cString,nPos-1)
+			cString = substr(cString,nPos+len(cSeparator))
+			nPos = substr(cString,cSeparator)
+		}
+		return aList
+
+
+	/*
 		Purpose : Set the Interaction Page Variables Values
 		Parameters : Variables Values as String
 		Output : None
 	*/
 
 	func SetVariablesValues cVariablesValues
-		aValues = Split(cVariablesValues,C_INTERACTIONVALUES_SEPARATOR)
+		aValues = customSplit(cVariablesValues,C_INTERACTIONVALUES_SEPARATOR)
 		for x = 1 to len( aVariables ) {
 			item = aVariables[x]
 			if len(aValues) = len(aVariables) {
@@ -384,7 +403,7 @@ class ComponentViewParent from WindowsViewParent
 			case C_INTERACTION_CT_LISTBOX 
 				oObject.setcurrentrow((0+cValue)-1,2 | dec("10"))
 			case C_INTERACTION_CT_EDITBOX 
-				oObject.setplaintext(cValue)
+				oObject.setText(cValue)
 			}
 		}
 
