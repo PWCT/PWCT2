@@ -206,8 +206,8 @@ class GoalDesignerModel
 						}
 					}				
 				else 
-					if trim(x[C_TREEMODEL_CONTENT][:code]) != NULL {					
-						cCode += nTabs + substr(x[C_TREEMODEL_CONTENT][:code],nl,Windowsnl()+nTabs) + windowsnl()
+					if trim(x[C_TREEMODEL_CONTENT][:code]) != NULL {	
+						cCode += AddTabsToCodeOfMultipleLines(x[C_TREEMODEL_CONTENT][:code],nTabs)
 					}
 				}
 
@@ -231,6 +231,38 @@ class GoalDesignerModel
 			} 
 		}
 		return [:code = cCode,:steps = cSteps]
+
+	/*
+		Input: Multi-lines String contains some code, Tabs Count before each line 
+		Output: Adding tab to each line, avoid adding tab for literals 
+		Example 
+		cString = "one 
+		two 
+		three
+		"
+		In this string we don't add tab before (two) and (three) 
+		To avoid updating the Literal content 
+	*/
+
+	func AddTabsToCodeOfMultipleLines cString,nTabs 
+		cCode  = ""
+		aLines = str2list(cString)	
+		for t=1 to len(aLines) {	
+			cLine = aLines[t]
+			cTabStart = ""
+			if t = 1 or  
+			   left(cLine,1) = '"' or 
+			   left(cLine,1) = "[" or 
+			   left(cLine,1) = "]" or
+			   left(cLine,1) = "'" or
+			   left(cLine,1) = '`' or 
+			   left(CLine,1) = ","
+				cTabStart = nTabs
+			ok 				
+			cCode += cTabStart + cLine + windowsnl()
+		}
+		return cCode  
+
 
 	/*
 		Purpose : Check if the Parent Step ID exist in a list of Steps 
