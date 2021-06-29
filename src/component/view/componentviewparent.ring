@@ -98,12 +98,48 @@ class ComponentViewParent from WindowsViewParent
 		return oText
 
 	/*
+		Purpose : Display Label+Editbox in the Interation page
+		Parameters : The Label Title and the Variable Name
+		Output : The Editbox Object
+	*/
+
+	func EditBox cTitle,cVariable
+		oLabel = new qLabel(win) {
+			setText(cTitle)
+			setStyleSheet("font-size:"+this.nControlsFontSize+"pt;")
+		}
+		oText = new qTextEdit(win) {
+			setStyleSheet(this.cssText+"font-size:"+this.nControlsFontSize+"pt;")
+			if this.lFirstTextBox {
+				this.lFirstTextBox = False
+				setFocus(0)
+				this.oFirstText = oText
+			}
+		}
+		oLayout = new qHBoxLayout() {
+			AddWidget(oLabel) AddWidget(oText)
+		}
+		oLayoutAll.AddLayout(oLayout)
+		aVariables + [oText,cVariable,C_INTERACTION_CT_EDITBOX ]
+		return oText
+
+	/*
 		Textbox with init. value 
 	*/
 	func TextBoxValue cTitle,cVariable,cValue 
 		oText = Textbox(cTitle,cVariable) {
 			setStyleSheet(this.cssText+"font-size:"+this.nControlsFontSize+"pt;")
 			setText(cValue)
+		}
+		return oText
+
+	/*
+		Editbox with init. value 
+	*/
+	func EditBoxValue cTitle,cVariable,cValue 
+		oText = Editbox(cTitle,cVariable) {
+			setStyleSheet(this.cssText+"font-size:"+this.nControlsFontSize+"pt;")
+			setplaintext(cValue)
 		}
 		return oText
 
@@ -154,6 +190,33 @@ class ComponentViewParent from WindowsViewParent
 		return [oCheck,oText]
 		
 
+	/*
+		Purpose : Display Checkbox and Editbox
+		Parameters : The Title and the Variable Name
+		Output : list [The Checkbox Object,The EditBox Object]
+	*/
+
+	func CheckBoxEditBox cText,cVariable
+		oCheck = new qCheckBox(win) {
+			setStyleSheet("font-size:"+this.nControlsFontSize+"pt;")
+			setText(cText)
+		}
+		oText = new qTextEdit(win) {
+			setStyleSheet(this.cssText+"font-size:"+this.nControlsFontSize+"pt;")
+			if this.lFirstTextBox {
+				this.lFirstTextBox = False
+				setFocus(0)
+				this.oFirstText = oText
+			}
+		}
+		oLayout = new qHBoxLayout() {
+			AddWidget(oCheck)
+			AddWidget(oText)
+		}
+		oLayoutAll.AddLayout(oLayout)
+		aVariables + [oCheck,"l"+cVariable,C_INTERACTION_CT_CHECKBOX ]
+		aVariables + [oText,cVariable,C_INTERACTION_CT_EDITBOX ]
+		return [oCheck,oText]
 
 	/*
 		Purpose : Add Label+ListBox in the interaction page
@@ -265,6 +328,8 @@ class ComponentViewParent from WindowsViewParent
 				cValue = oObject.checkstate()
 			case C_INTERACTION_CT_LISTBOX 
 				cValue = oObject.currentrow() + 1
+			case C_INTERACTION_CT_EDITBOX 
+				cValue = oObject.toplaintext()
 		}
 		return cValue
 
@@ -285,6 +350,8 @@ class ComponentViewParent from WindowsViewParent
 				cValue = "" + oObject.checkstate()
 			case C_INTERACTION_CT_LISTBOX 
 				cValue = "" + (oObject.currentrow() + 1)
+			case C_INTERACTION_CT_EDITBOX 
+				cValue = oObject.toplaintext()
 			}
 			cVariablesValues += 
 				item[C_INTERACTION_VL_NAME] + C_INTERACTIONVALUES_SEPARATOR +
@@ -316,6 +383,8 @@ class ComponentViewParent from WindowsViewParent
 				oObject.setcheckstate(0+cValue)
 			case C_INTERACTION_CT_LISTBOX 
 				oObject.setcurrentrow((0+cValue)-1,2 | dec("10"))
+			case C_INTERACTION_CT_EDITBOX 
+				oObject.setplaintext(cValue)
 			}
 		}
 
