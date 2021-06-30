@@ -38,6 +38,7 @@ language for real world tasks.
     - [64-bit version](#64-bit-version)
     - [Open Many Files](#open-many-files)
     - [Inserting Steps](#inserting-steps)
+    - [Auto-Complete](#auto-complete)
     - [Web and Mobile versions](#web-and-mobile-versions)
     - [Translation (Arabic Version)](#translation-arabic-version)
   - [The Release Date](#the-release-date)
@@ -262,6 +263,13 @@ PWCT 2.0 support starting new interactions at any location in the steps tree (No
 The new steps will be inserted in the right location
 
 This feature is supported while using components, Ring2PWCT and Paste operations
+
+### Auto-Complete
+
+In PWCT 2.0 Interaction Pages, we have better usability through default values, search in listboxes and better 
+auto-complete.
+
+![autocomplete](https://github.com/mahmoudfayed/pwct2/blob/master/docimages/autocomplete.png)
 
 ### Web and Mobile versions
 
