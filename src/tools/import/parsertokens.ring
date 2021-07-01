@@ -99,6 +99,14 @@ class ParserTokens
 					return
 				elseif cTokenValue = "=" 
 					return " = "
+				elseif cTokenValue = "+=" 
+					return " += "
+				elseif cTokenValue = "-=" 
+					return " -= "
+				elseif cTokenValue = "<" 
+					return " < "
+				elseif cTokenValue = ">" 
+					return " > "
 				}
 			}			
 	 		return cTokenValue2
