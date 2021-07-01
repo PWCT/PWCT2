@@ -2859,7 +2859,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(clock()-nKeyClock)&lt;clockspersecond()/nKeyboardSpeed</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(clock()-nKeyClock)&nbsp;&lt;&nbsp;clockspersecond()/nKeyboardSpeed</font></span>"
 			],
 			[
 				"active",
@@ -2867,7 +2867,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if (clock()-nKeyClock)<clockspersecond()/nKeyboardSpeed { "
+				"if (clock()-nKeyClock) < clockspersecond()/nKeyboardSpeed { "
 			],
 			[
 				"interactionid",
@@ -2887,7 +2887,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If (clock()-nKeyClock)"
+				"If (clock()-nKeyClock) "
 			]
 		]
 	],
@@ -3429,7 +3429,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aPlayer[:col]&lt;C_LEVEL_COLSCOUNT</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aPlayer[:col]&nbsp;&lt;&nbsp;C_LEVEL_COLSCOUNT</font></span>"
 			],
 			[
 				"active",
@@ -3437,7 +3437,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if aPlayer[:col]<C_LEVEL_COLSCOUNT { "
+				"if aPlayer[:col] < C_LEVEL_COLSCOUNT { "
 			],
 			[
 				"interactionid",
@@ -3457,7 +3457,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If aPlayer[:col]"
+				"If aPlayer[:col] "
 			]
 		]
 	],
@@ -3733,7 +3733,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aPlayer[:col]&gt;1</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aPlayer[:col]&nbsp;&gt;&nbsp;1</font></span>"
 			],
 			[
 				"active",
@@ -3741,7 +3741,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if aPlayer[:col]>1 { "
+				"if aPlayer[:col] > 1 { "
 			],
 			[
 				"interactionid",
@@ -3761,7 +3761,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If aPlayer[:col]>1"
+				"If aPlayer[:col] > 1"
 			]
 		]
 	],
@@ -4037,7 +4037,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aPlayer[:row]&gt;1</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aPlayer[:row]&nbsp;&gt;&nbsp;1</font></span>"
 			],
 			[
 				"active",
@@ -4045,7 +4045,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if aPlayer[:row]>1 { "
+				"if aPlayer[:row] > 1 { "
 			],
 			[
 				"interactionid",
@@ -4065,7 +4065,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If aPlayer[:row]>1"
+				"If aPlayer[:row] > 1"
 			]
 		]
 	],
@@ -4341,7 +4341,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aPlayer[:row]&lt;C_LEVEL_ROWSCOUNT</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aPlayer[:row]&nbsp;&lt;&nbsp;C_LEVEL_ROWSCOUNT</font></span>"
 			],
 			[
 				"active",
@@ -4349,7 +4349,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if aPlayer[:row]<C_LEVEL_ROWSCOUNT { "
+				"if aPlayer[:row] < C_LEVEL_ROWSCOUNT { "
 			],
 			[
 				"interactionid",
@@ -4369,7 +4369,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If aPlayer[:row]"
+				"If aPlayer[:row] "
 			]
 		]
 	],
@@ -4721,7 +4721,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">clock()-nMoveClock&gt;&nbsp;=&nbsp;clockspersecond()/nMovementSpeed</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">clock()-nMoveClock&nbsp;&gt;=&nbsp;clockspersecond()/nMovementSpeed</font></span>"
 			],
 			[
 				"active",
@@ -4729,7 +4729,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if clock()-nMoveClock> = clockspersecond()/nMovementSpeed { "
+				"if clock()-nMoveClock >= clockspersecond()/nMovementSpeed { "
 			],
 			[
 				"interactionid",
@@ -4749,7 +4749,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If clock()-nMoveClock> = clockspersecond()/nMovementSpeed"
+				"If clock()-nMoveClock >= clockspersecond()/nMovementSpeed"
 			]
 		]
 	],
@@ -4987,7 +4987,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nSnakeX&lt;newX</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nSnakeX&nbsp;&lt;&nbsp;newX</font></span>"
 			],
 			[
 				"active",
@@ -4995,7 +4995,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if nSnakeX<newX { "
+				"if nSnakeX < newX { "
 			],
 			[
 				"interactionid",
@@ -5015,7 +5015,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If nSnakeX"
+				"If nSnakeX "
 			]
 		]
 	],
@@ -5291,7 +5291,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Else If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nSnakeX&gt;newX</font></span>"
+				"Else If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nSnakeX&nbsp;&gt;&nbsp;newX</font></span>"
 			],
 			[
 				"active",
@@ -5299,7 +5299,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"elseif nSnakeX>newX"
+				"elseif nSnakeX > newX"
 			],
 			[
 				"interactionid",
@@ -5319,7 +5319,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Else If nSnakeX>newX"
+				"Else If nSnakeX > newX"
 			]
 		]
 	],
@@ -5595,7 +5595,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Else If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nSnakeY&gt;newY</font></span>"
+				"Else If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nSnakeY&nbsp;&gt;&nbsp;newY</font></span>"
 			],
 			[
 				"active",
@@ -5603,7 +5603,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"elseif nSnakeY>newY"
+				"elseif nSnakeY > newY"
 			],
 			[
 				"interactionid",
@@ -5623,7 +5623,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Else If nSnakeY>newY"
+				"Else If nSnakeY > newY"
 			]
 		]
 	],
@@ -5899,7 +5899,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Else If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nSnakeY&lt;newY</font></span>"
+				"Else If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nSnakeY&nbsp;&lt;&nbsp;newY</font></span>"
 			],
 			[
 				"active",
@@ -5907,7 +5907,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"elseif nSnakeY<newY"
+				"elseif nSnakeY < newY"
 			],
 			[
 				"interactionid",
@@ -5927,7 +5927,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Else If nSnakeY"
+				"Else If nSnakeY "
 			]
 		]
 	],
@@ -14031,7 +14031,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oSelf.y&gt;&nbsp;=&nbsp;800</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oSelf.y&nbsp;&gt;=&nbsp;800</font></span>"
 			],
 			[
 				"active",
@@ -14039,7 +14039,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if oSelf.y> = 800 { "
+				"if oSelf.y >= 800 { "
 			],
 			[
 				"interactionid",
@@ -14059,7 +14059,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If oSelf.y> = 800"
+				"If oSelf.y >= 800"
 			]
 		]
 	],
@@ -15171,7 +15171,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nScore+=10</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nScore&nbsp;+=&nbsp;10</font></span>"
 			],
 			[
 				"active",
@@ -15179,7 +15179,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"nScore+=10"
+				"nScore += 10"
 			],
 			[
 				"interactionid",
@@ -15199,7 +15199,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"nScore+=10"
+				"nScore += 10"
 			]
 		]
 	],
@@ -17527,7 +17527,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">MouseX&gt;&nbsp;=&nbsp;x&nbsp;AND&nbsp;MouseX&lt;&nbsp;=&nbsp;X+Width&nbsp;AND&nbsp;MouseY&gt;&nbsp;=&nbsp;y&nbsp;AND&nbsp;MouseY&lt;&nbsp;=&nbsp;Y+Height</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">MouseX&nbsp;&gt;=&nbsp;x&nbsp;AND&nbsp;MouseX&nbsp;&lt;=&nbsp;X+Width&nbsp;AND&nbsp;MouseY&nbsp;&gt;=&nbsp;y&nbsp;AND&nbsp;MouseY&nbsp;&lt;=&nbsp;Y+Height</font></span>"
 			],
 			[
 				"active",
@@ -17535,7 +17535,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if MouseX> = x AND MouseX< = X+Width AND MouseY> = y AND MouseY< = Y+Height { "
+				"if MouseX >= x AND MouseX <= X+Width AND MouseY >= y AND MouseY <= Y+Height { "
 			],
 			[
 				"interactionid",
@@ -17555,7 +17555,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If MouseX> = x AND MouseX = y AND MouseY"
+				"If MouseX >= x AND MouseX = y AND MouseY "
 			]
 		]
 	],
@@ -18440,2624 +18440,2624 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		""
 	],
 	[
 		2,
 		1,
 		"",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		""
 	],
 	[
 		3,
 		1,
 		"",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		""
 	],
 	[
 		4,
 		1,
 		"",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		""
 	],
 	[
 		5,
 		1,
 		"",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		""
 	],
 	[
 		6,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;C_LEVEL_ROWSCOUNT;;_RV_;;rightside;;_RV_;;15;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;C_LEVEL_COLSCOUNT;;_RV_;;rightside;;_RV_;;27;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		""
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;C_EMPTY;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;C_SNAKE;;_RV_;;rightside;;_RV_;;2;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;C_FOOD;;_RV_;;rightside;;_RV_;;3;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;C_PLAYER;;_RV_;;rightside;;_RV_;;4;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;C_DIE;;_RV_;;rightside;;_RV_;;5;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		""
 	],
 	[
 		15,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;aLevel;;_RV_;;rightside;;_RV_;;list(C_LEVEL_ROWSCOUNT);;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"start;;_RV_;;nRow = 1;;_RV_;;to;;_RV_;;C_LEVEL_ROWSCOUNT;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;aLevel[nRow];;_RV_;;rightside;;_RV_;;list(C_LEVEL_COLSCOUNT);;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"start;;_RV_;;nCol = 1;;_RV_;;to;;_RV_;;C_LEVEL_COLSCOUNT;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;aLevel[nRow][nCol];;_RV_;;rightside;;_RV_;;C_EMPTY;;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		""
 	],
 	[
 		21,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;aPlayer;;_RV_;;rightside;;_RV_;;[:Row = 13,:Col = 4];;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;aLevel[13][4];;_RV_;;rightside;;_RV_;;C_PLAYER;;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		""
 	],
 	[
 		24,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;aSnake;;_RV_;;rightside;;_RV_;;[[3,3],[3,4],[3,5]];;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;aLevel[3][3];;_RV_;;rightside;;_RV_;;C_SNAKE;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;aLevel[3][4];;_RV_;;rightside;;_RV_;;C_SNAKE;;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;aLevel[3][5];;_RV_;;rightside;;_RV_;;C_SNAKE;;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;cDirection;;_RV_;;rightside;;_RV_;;:Right;;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		""
 	],
 	[
 		30,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;aLevelCopy;;_RV_;;rightside;;_RV_;;aLevel;;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		""
 	],
 	[
 		32,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;oldY;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		33,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;oldX;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		34,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;newY;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		35,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;newX;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		36,
 		1,
 		"",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		""
 	],
 	[
 		37,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;NewFood;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		38,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;nKeyClock;;_RV_;;rightside;;_RV_;;clock();;_RV_;;"
 	],
 	[
 		39,
 		1,
 		"",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		""
 	],
 	[
 		40,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;nMoveClock;;_RV_;;rightside;;_RV_;;clock();;_RV_;;"
 	],
 	[
 		41,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;lGameOver;;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
 		42,
 		1,
 		"",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		""
 	],
 	[
 		43,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;nKeyboardSpeed;;_RV_;;rightside;;_RV_;;15;;_RV_;;"
 	],
 	[
 		44,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;nMovementSpeed;;_RV_;;rightside;;_RV_;;15;;_RV_;;"
 	],
 	[
 		45,
 		1,
 		"",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		""
 	],
 	[
 		46,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;nScore;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		47,
 		1,
 		"load",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"file;;_RV_;;gameengine.ring;;_RV_;;"
 	],
 	[
 		48,
 		1,
 		"func",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"name;;_RV_;;main;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		49,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;GE_SCREEN_W;;_RV_;;rightside;;_RV_;;800;;_RV_;;"
 	],
 	[
 		50,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;GE_SCREEN_H;;_RV_;;rightside;;_RV_;;600;;_RV_;;"
 	],
 	[
 		51,
 		1,
 		"newobj",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;oGame;;_RV_;;value2;;_RV_;;Game;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		52,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;title;;_RV_;;rightside;;_RV_;;"+char(34)+"Escape Game"+char(34)+";;_RV_;;"
 	],
 	[
 		53,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;icon;;_RV_;;rightside;;_RV_;;"+char(34)+"images/empty.jpg"+char(34)+";;_RV_;;"
 	],
 	[
 		54,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;Map;;_RV_;;"
 	],
 	[
 		55,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;name;;_RV_;;rightside;;_RV_;;:Map;;_RV_;;"
 	],
 	[
 		56,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;Y;;_RV_;;rightside;;_RV_;;30;;_RV_;;"
 	],
 	[
 		57,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;blockwidth;;_RV_;;rightside;;_RV_;;30;;_RV_;;"
 	],
 	[
 		58,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;blockheight;;_RV_;;rightside;;_RV_;;30;;_RV_;;"
 	],
 	[
 		59,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;aMap;;_RV_;;rightside;;_RV_;;aLevel;;_RV_;;"
 	],
 	[
 		60,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;aImages;;_RV_;;rightside;;_RV_;;["+char(34)+"images/empty.jpg"+char(34)+","+char(34)+"images/wall.jpg"+char(34)+","+char(34)+"images/door.jpg"+char(34)+","+char(34)+"images/player.jpg"+char(34)+","+char(34)+"images/die.jpg"+char(34)+"];;_RV_;;"
 	],
 	[
 		61,
 		1,
 		"nestedfunc",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;keypress;;_RV_;;value2;;_RV_;;oGame,oSelf,nkey;;_RV_;;"
 	],
 	[
 		62,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"condition;;_RV_;;lGameOver;;_RV_;;"
 	],
 	[
 		63,
 		1,
 		"return",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		64,
 		1,
 		"",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		""
 	],
 	[
 		65,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:21:41",
-		"condition;;_RV_;;(clock()-nKeyClock)<clockspersecond()/nKeyboardSpeed;;_RV_;;"
+		"01/07/2021",
+		"13:24:50",
+		"condition;;_RV_;;(clock()-nKeyClock) < clockspersecond()/nKeyboardSpeed;;_RV_;;"
 	],
 	[
 		66,
 		1,
 		"return",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		67,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;nKeyClock;;_RV_;;rightside;;_RV_;;Clock();;_RV_;;"
 	],
 	[
 		68,
 		1,
 		"switch",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"variable;;_RV_;;nkey;;_RV_;;"
 	],
 	[
 		69,
 		1,
 		"case",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;Key_Esc;;_RV_;;"
 	],
 	[
 		70,
 		1,
 		"callmethod",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oGame;;_RV_;;name;;_RV_;;Shutdown;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		71,
 		1,
 		"case",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;Key_Space;;_RV_;;"
 	],
 	[
 		72,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;Restart;;_RV_;;parameters;;_RV_;;oGame;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		73,
 		1,
 		"case",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;Key_Right;;_RV_;;"
 	],
 	[
 		74,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:21:41",
-		"condition;;_RV_;;aPlayer[:col]<C_LEVEL_COLSCOUNT;;_RV_;;"
+		"01/07/2021",
+		"13:24:50",
+		"condition;;_RV_;;aPlayer[:col] < C_LEVEL_COLSCOUNT;;_RV_;;"
 	],
 	[
 		75,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;nRowDiff;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		76,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;nColDiff;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		77,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;MovePlayer;;_RV_;;parameters;;_RV_;;oGame,aPlayer[:row],aPlayer[:col]+1;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		78,
 		1,
 		"case",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;Key_Left;;_RV_;;"
 	],
 	[
 		79,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:21:41",
-		"condition;;_RV_;;aPlayer[:col]>1;;_RV_;;"
+		"01/07/2021",
+		"13:24:50",
+		"condition;;_RV_;;aPlayer[:col] > 1;;_RV_;;"
 	],
 	[
 		80,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;nRowDiff;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		81,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;nColDiff;;_RV_;;rightside;;_RV_;;-1;;_RV_;;"
 	],
 	[
 		82,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;MovePlayer;;_RV_;;parameters;;_RV_;;oGame,aPlayer[:row],aPlayer[:col]-1;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		83,
 		1,
 		"case",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;Key_Up;;_RV_;;"
 	],
 	[
 		84,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:21:41",
-		"condition;;_RV_;;aPlayer[:row]>1;;_RV_;;"
+		"01/07/2021",
+		"13:24:50",
+		"condition;;_RV_;;aPlayer[:row] > 1;;_RV_;;"
 	],
 	[
 		85,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;nRowDiff;;_RV_;;rightside;;_RV_;;-1;;_RV_;;"
 	],
 	[
 		86,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;nColDiff;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		87,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;MovePlayer;;_RV_;;parameters;;_RV_;;oGame,aPlayer[:row]-1,aPlayer[:col];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		88,
 		1,
 		"case",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;Key_Down;;_RV_;;"
 	],
 	[
 		89,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:21:41",
-		"condition;;_RV_;;aPlayer[:row]<C_LEVEL_ROWSCOUNT;;_RV_;;"
+		"01/07/2021",
+		"13:24:50",
+		"condition;;_RV_;;aPlayer[:row] < C_LEVEL_ROWSCOUNT;;_RV_;;"
 	],
 	[
 		90,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;nRowDiff;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		91,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;nColDiff;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		92,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;MovePlayer;;_RV_;;parameters;;_RV_;;oGame,aPlayer[:row]+1,aPlayer[:col];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		93,
 		1,
 		"nestedfunc",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;state;;_RV_;;value2;;_RV_;;oGame,oSelf;;_RV_;;"
 	],
 	[
 		94,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:21:41",
-		"condition;;_RV_;;clock()-nMoveClock> = clockspersecond()/nMovementSpeed;;_RV_;;"
+		"01/07/2021",
+		"13:24:50",
+		"condition;;_RV_;;clock()-nMoveClock >= clockspersecond()/nMovementSpeed;;_RV_;;"
 	],
 	[
 		95,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;nMoveClock;;_RV_;;rightside;;_RV_;;clock();;_RV_;;"
 	],
 	[
 		96,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;MoveSnake;;_RV_;;parameters;;_RV_;;oGame,oSelf;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		97,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;nSnakeY;;_RV_;;rightside;;_RV_;;aSnake[len(aSnake)][1];;_RV_;;"
 	],
 	[
 		98,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;nSnakeX;;_RV_;;rightside;;_RV_;;aSnake[len(aSnake)][2];;_RV_;;"
 	],
 	[
 		99,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:21:41",
-		"condition;;_RV_;;nSnakeX<newX;;_RV_;;"
+		"01/07/2021",
+		"13:24:50",
+		"condition;;_RV_;;nSnakeX < newX;;_RV_;;"
 	],
 	[
 		100,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"condition;;_RV_;;cDirection = :Left;;_RV_;;"
 	],
 	[
 		101,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;cDirection;;_RV_;;rightside;;_RV_;;:Down;;_RV_;;"
 	],
 	[
 		102,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;MoveSnake;;_RV_;;parameters;;_RV_;;oGame,oSelf;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		103,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;cDirection;;_RV_;;rightside;;_RV_;;:Right;;_RV_;;"
 	],
 	[
 		104,
 		1,
 		"elseif",
-		"27/06/2021",
-		"19:21:41",
-		"condition;;_RV_;;nSnakeX>newX;;_RV_;;"
+		"01/07/2021",
+		"13:24:50",
+		"condition;;_RV_;;nSnakeX > newX;;_RV_;;"
 	],
 	[
 		105,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"condition;;_RV_;;cDirection = :Right;;_RV_;;"
 	],
 	[
 		106,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;cDirection;;_RV_;;rightside;;_RV_;;:Up;;_RV_;;"
 	],
 	[
 		107,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;MoveSnake;;_RV_;;parameters;;_RV_;;oGame,oSelf;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		108,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;cDirection;;_RV_;;rightside;;_RV_;;:Left;;_RV_;;"
 	],
 	[
 		109,
 		1,
 		"elseif",
-		"27/06/2021",
-		"19:21:41",
-		"condition;;_RV_;;nSnakeY>newY;;_RV_;;"
+		"01/07/2021",
+		"13:24:50",
+		"condition;;_RV_;;nSnakeY > newY;;_RV_;;"
 	],
 	[
 		110,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"condition;;_RV_;;cDirection = :Down;;_RV_;;"
 	],
 	[
 		111,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;cDirection;;_RV_;;rightside;;_RV_;;:Left;;_RV_;;"
 	],
 	[
 		112,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;MoveSnake;;_RV_;;parameters;;_RV_;;oGame,oSelf;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		113,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;cDirection;;_RV_;;rightside;;_RV_;;:UP;;_RV_;;"
 	],
 	[
 		114,
 		1,
 		"elseif",
-		"27/06/2021",
-		"19:21:41",
-		"condition;;_RV_;;nSnakeY<newY;;_RV_;;"
+		"01/07/2021",
+		"13:24:50",
+		"condition;;_RV_;;nSnakeY < newY;;_RV_;;"
 	],
 	[
 		115,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"condition;;_RV_;;cDirection = :Up;;_RV_;;"
 	],
 	[
 		116,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;cDirection;;_RV_;;rightside;;_RV_;;:Right;;_RV_;;"
 	],
 	[
 		117,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;MoveSnake;;_RV_;;parameters;;_RV_;;oGame,oSelf;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		118,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;cDirection;;_RV_;;rightside;;_RV_;;:Down;;_RV_;;"
 	],
 	[
 		119,
 		1,
 		"",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		""
 	],
 	[
 		120,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;text;;_RV_;;"
 	],
 	[
 		121,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;name;;_RV_;;rightside;;_RV_;;:Score;;_RV_;;"
 	],
 	[
 		122,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;size;;_RV_;;rightside;;_RV_;;16;;_RV_;;"
 	],
 	[
 		123,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;file;;_RV_;;rightside;;_RV_;;"+char(34)+"fonts/pirulen.ttf"+char(34)+";;_RV_;;"
 	],
 	[
 		124,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;x;;_RV_;;rightside;;_RV_;;150;;_RV_;;"
 	],
 	[
 		125,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;y;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		126,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;color;;_RV_;;rightside;;_RV_;;rgb(0,0,0);;_RV_;;"
 	],
 	[
 		127,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;animate;;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
 		128,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;text;;_RV_;;rightside;;_RV_;;"+char(34)+"Score : "+char(34)+"+nScore;;_RV_;;"
 	],
 	[
 		129,
 		1,
 		"",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		""
 	],
 	[
 		130,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;text;;_RV_;;"
 	],
 	[
 		131,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;name;;_RV_;;rightside;;_RV_;;:SnakeSize;;_RV_;;"
 	],
 	[
 		132,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;size;;_RV_;;rightside;;_RV_;;16;;_RV_;;"
 	],
 	[
 		133,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;file;;_RV_;;rightside;;_RV_;;"+char(34)+"fonts/pirulen.ttf"+char(34)+";;_RV_;;"
 	],
 	[
 		134,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;x;;_RV_;;rightside;;_RV_;;450;;_RV_;;"
 	],
 	[
 		135,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;y;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		136,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;color;;_RV_;;rightside;;_RV_;;rgb(0,0,0);;_RV_;;"
 	],
 	[
 		137,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;animate;;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
 		138,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;text;;_RV_;;rightside;;_RV_;;"+char(34)+"Snake Size : "+char(34)+"+len(aSnake);;_RV_;;"
 	],
 	[
 		139,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;NewButton(oGame,20,500,200,80,"+char(34)+"Left"+char(34)+", func oGame,oSelf;;_RV_;;"
 	],
 	[
 		140,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;function;;_RV_;;rightside;;_RV_;;oGame.find(:map).keypress;;_RV_;;"
 	],
 	[
 		141,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;call function(oGame,oGame.find(:map),KEY_LEFT);;_RV_;;"
 	],
 	[
 		142,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;);;_RV_;;"
 	],
 	[
 		143,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;NewButton(oGame,580,500,200,80,"+char(34)+"Right"+char(34)+", func oGame,oSelf;;_RV_;;"
 	],
 	[
 		144,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;function;;_RV_;;rightside;;_RV_;;oGame.find(:map).keypress;;_RV_;;"
 	],
 	[
 		145,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;call function(oGame,oGame.find(:map),KEY_RIGHT);;_RV_;;"
 	],
 	[
 		146,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;);;_RV_;;"
 	],
 	[
 		147,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;NewButton(oGame,300,485,200,50,"+char(34)+"Up"+char(34)+", func oGame,oSelf;;_RV_;;"
 	],
 	[
 		148,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;function;;_RV_;;rightside;;_RV_;;oGame.find(:map).keypress;;_RV_;;"
 	],
 	[
 		149,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;call function(oGame,oGame.find(:map),KEY_UP);;_RV_;;"
 	],
 	[
 		150,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;);;_RV_;;"
 	],
 	[
 		151,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;NewButton(oGame,300,545,200,50,"+char(34)+"Down"+char(34)+", func oGame,oSelf;;_RV_;;"
 	],
 	[
 		152,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;function;;_RV_;;rightside;;_RV_;;oGame.find(:map).keypress;;_RV_;;"
 	],
 	[
 		153,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;call function(oGame,oGame.find(:map),KEY_DOWN);;_RV_;;"
 	],
 	[
 		154,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;);;_RV_;;"
 	],
 	[
 		155,
 		1,
 		"func",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"name;;_RV_;;MoveSnake;;_RV_;;parameters;;_RV_;;oGame,oMap;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		156,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"condition;;_RV_;;lGameOver;;_RV_;;"
 	],
 	[
 		157,
 		1,
 		"return",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		158,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;aHead;;_RV_;;rightside;;_RV_;;aSnake[len(aSnake)];;_RV_;;"
 	],
 	[
 		159,
 		1,
 		"switch",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"variable;;_RV_;;cDirection;;_RV_;;"
 	],
 	[
 		160,
 		1,
 		"case",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;:right;;_RV_;;"
 	],
 	[
 		161,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"condition;;_RV_;;aHead[2] = C_LEVEL_COLSCOUNT;;_RV_;;"
 	],
 	[
 		162,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;cDirection;;_RV_;;rightside;;_RV_;;:Down;;_RV_;;"
 	],
 	[
 		163,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;MoveSnake;;_RV_;;parameters;;_RV_;;oGame,oMap;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		164,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;cDirection;;_RV_;;rightside;;_RV_;;:Left;;_RV_;;"
 	],
 	[
 		165,
 		1,
 		"return",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		166,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;aHead[2]++;;_RV_;;"
 	],
 	[
 		167,
 		1,
 		"case",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;:left;;_RV_;;"
 	],
 	[
 		168,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"condition;;_RV_;;aHead[2] = 1;;_RV_;;"
 	],
 	[
 		169,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;cDirection;;_RV_;;rightside;;_RV_;;:Down;;_RV_;;"
 	],
 	[
 		170,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;MoveSnake;;_RV_;;parameters;;_RV_;;oGame,oMap;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		171,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;cDirection;;_RV_;;rightside;;_RV_;;:Right;;_RV_;;"
 	],
 	[
 		172,
 		1,
 		"return",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		173,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;aHead[2]--;;_RV_;;"
 	],
 	[
 		174,
 		1,
 		"case",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;:up;;_RV_;;"
 	],
 	[
 		175,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"condition;;_RV_;;aHead[1] = 1;;_RV_;;"
 	],
 	[
 		176,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;cDirection;;_RV_;;rightside;;_RV_;;:Right;;_RV_;;"
 	],
 	[
 		177,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;MoveSnake;;_RV_;;parameters;;_RV_;;oGame,oMap;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		178,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;cDirection;;_RV_;;rightside;;_RV_;;:Down;;_RV_;;"
 	],
 	[
 		179,
 		1,
 		"return",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		180,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;aHead[1]--;;_RV_;;"
 	],
 	[
 		181,
 		1,
 		"case",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;:down;;_RV_;;"
 	],
 	[
 		182,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:21:41",
+		"01/07/2021",
+		"13:24:50",
 		"condition;;_RV_;;aHead[1] = C_LEVEL_ROWSCOUNT;;_RV_;;"
 	],
 	[
 		183,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;cDirection;;_RV_;;rightside;;_RV_;;:Left;;_RV_;;"
 	],
 	[
 		184,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;MoveSnake;;_RV_;;parameters;;_RV_;;oGame,oMap;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		185,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;cDirection;;_RV_;;rightside;;_RV_;;:Up;;_RV_;;"
 	],
 	[
 		186,
 		1,
 		"return",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		187,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;aHead[1]++;;_RV_;;"
 	],
 	[
 		188,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"condition;;_RV_;;aLevel[aHead[1]][aHead[2]] = C_EMPTY;;_RV_;;"
 	],
 	[
 		189,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"condition;;_RV_;;CheckAnotherCell() = False;;_RV_;;"
 	],
 	[
 		190,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;HideCell;;_RV_;;parameters;;_RV_;;aSnake[1];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		191,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;del;;_RV_;;parameters;;_RV_;;aSnake,1;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		192,
 		1,
 		"",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		""
 	],
 	[
 		193,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"condition;;_RV_;;aHead[1] = newY AND aHead[2] = newX;;_RV_;;"
 	],
 	[
 		194,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;newY;;_RV_;;rightside;;_RV_;;oldY;;_RV_;;"
 	],
 	[
 		195,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;newX;;_RV_;;rightside;;_RV_;;oldX;;_RV_;;"
 	],
 	[
 		196,
 		1,
 		"elseif",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"condition;;_RV_;;(aLevel[aHead[1]][aHead[2]] = C_FOOD);;_RV_;;"
 	],
 	[
 		197,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;NewFood;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		198,
 		1,
 		"elseif",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"condition;;_RV_;;aLevel[aHead[1]][aHead[2]] = C_SNAKE;;_RV_;;"
 	],
 	[
 		199,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"condition;;_RV_;;CheckAnotherCell() = False;;_RV_;;"
 	],
 	[
 		200,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;HideCell;;_RV_;;parameters;;_RV_;;aSnake[1];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		201,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;del;;_RV_;;parameters;;_RV_;;aSnake,1;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		202,
 		1,
 		"elseif",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"condition;;_RV_;;aLevel[aHead[1]][aHead[2]] = C_PLAYER;;_RV_;;"
 	],
 	[
 		203,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;aLevel[aPlayer[:row]][aPlayer[:col]];;_RV_;;rightside;;_RV_;;C_DIE;;_RV_;;"
 	],
 	[
 		204,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UpdateGameMap;;_RV_;;parameters;;_RV_;;oGame;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		205,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DisplayGameOver;;_RV_;;parameters;;_RV_;;oGame;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		206,
 		1,
 		"return",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		207,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;aSnake+aHead;;_RV_;;"
 	],
 	[
 		208,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;ShowCell;;_RV_;;parameters;;_RV_;;aHead;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		209,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UpdateGameMap;;_RV_;;parameters;;_RV_;;oGame;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		210,
 		1,
 		"",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		""
 	],
 	[
 		211,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;oGame.find(:SnakeSize).text;;_RV_;;rightside;;_RV_;;"+char(34)+"Snake Size : "+char(34)+"+len(aSnake);;_RV_;;"
 	],
 	[
 		212,
 		1,
 		"func",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"name;;_RV_;;CheckAnotherCell;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		213,
 		1,
 		"",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		""
 	],
 	[
 		214,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"start;;_RV_;;t = 2;;_RV_;;to;;_RV_;;len(aSnake);;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		215,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"condition;;_RV_;;aSnake[t][1] = aSnake[1][1] AND aSnake[t][2] = aSnake[1][2];;_RV_;;"
 	],
 	[
 		216,
 		1,
 		"return",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;True;;_RV_;;"
 	],
 	[
 		217,
 		1,
 		"return",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;False;;_RV_;;"
 	],
 	[
 		218,
 		1,
 		"func",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"name;;_RV_;;NewFood;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		219,
 		1,
 		"",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		""
 	],
 	[
 		220,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;lNewFood;;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
 		221,
 		1,
 		"whileloop",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"condition;;_RV_;;lNewFood = False;;_RV_;;"
 	],
 	[
 		222,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;newY;;_RV_;;rightside;;_RV_;;2+random(C_LEVEL_ROWSCOUNT-3);;_RV_;;"
 	],
 	[
 		223,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;newX;;_RV_;;rightside;;_RV_;;2+random(C_LEVEL_COLSCOUNT-3);;_RV_;;"
 	],
 	[
 		224,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"condition;;_RV_;;aLevel[newY][newX] = C_EMPTY;;_RV_;;"
 	],
 	[
 		225,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;aLevel[newY][newX];;_RV_;;rightside;;_RV_;;C_FOOD;;_RV_;;"
 	],
 	[
 		226,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;lNewFood;;_RV_;;rightside;;_RV_;;True;;_RV_;;"
 	],
 	[
 		227,
 		1,
 		"",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		""
 	],
 	[
 		228,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"condition;;_RV_;;len(aSnake)%2 = 0;;_RV_;;"
 	],
 	[
 		229,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;oldY;;_RV_;;rightside;;_RV_;;newY;;_RV_;;"
 	],
 	[
 		230,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;oldX;;_RV_;;rightside;;_RV_;;newX;;_RV_;;"
 	],
 	[
 		231,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;newY;;_RV_;;rightside;;_RV_;;aPlayer[:row];;_RV_;;"
 	],
 	[
 		232,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;newX;;_RV_;;rightside;;_RV_;;aPlayer[:col];;_RV_;;"
 	],
 	[
 		233,
 		1,
 		"func",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"name;;_RV_;;HideCell;;_RV_;;parameters;;_RV_;;aCell;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		234,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;aLevel[aCell[1]][aCell[2]];;_RV_;;rightside;;_RV_;;C_EMPTY;;_RV_;;"
 	],
 	[
 		235,
 		1,
 		"func",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"name;;_RV_;;ShowCell;;_RV_;;parameters;;_RV_;;aCell;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		236,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;aLevel[aCell[1]][aCell[2]];;_RV_;;rightside;;_RV_;;C_SNAKE;;_RV_;;"
 	],
 	[
 		237,
 		1,
 		"func",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"name;;_RV_;;UpdateGameMap;;_RV_;;parameters;;_RV_;;oGame;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		238,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;oGame.find(:Map).aMap;;_RV_;;rightside;;_RV_;;aLevel;;_RV_;;"
 	],
 	[
 		239,
 		1,
 		"func",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"name;;_RV_;;DisplayGameOver;;_RV_;;parameters;;_RV_;;oGame;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		240,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"condition;;_RV_;;lGameOver;;_RV_;;"
 	],
 	[
 		241,
 		1,
 		"return",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		242,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;lGameOver;;_RV_;;rightside;;_RV_;;True;;_RV_;;"
 	],
 	[
 		243,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;oGame;;_RV_;;"
 	],
 	[
 		244,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;text;;_RV_;;"
 	],
 	[
 		245,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;point;;_RV_;;rightside;;_RV_;;800;;_RV_;;"
 	],
 	[
 		246,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;size;;_RV_;;rightside;;_RV_;;30;;_RV_;;"
 	],
 	[
 		247,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;nStep;;_RV_;;rightside;;_RV_;;9;;_RV_;;"
 	],
 	[
 		248,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;file;;_RV_;;rightside;;_RV_;;"+char(34)+"fonts/pirulen.ttf"+char(34)+";;_RV_;;"
 	],
 	[
 		249,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;text;;_RV_;;rightside;;_RV_;;"+char(34)+"Game Over !!!"+char(34)+";;_RV_;;"
 	],
 	[
 		250,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;x;;_RV_;;rightside;;_RV_;;10;;_RV_;;"
 	],
 	[
 		251,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;y;;_RV_;;rightside;;_RV_;;10;;_RV_;;"
 	],
 	[
 		252,
 		1,
 		"nestedfunc",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;state;;_RV_;;value2;;_RV_;;oGame,oSelf;;_RV_;;"
 	],
 	[
 		253,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:21:42",
-		"condition;;_RV_;;oSelf.y> = 800;;_RV_;;"
+		"01/07/2021",
+		"13:24:50",
+		"condition;;_RV_;;oSelf.y >= 800;;_RV_;;"
 	],
 	[
 		254,
 		1,
 		"callmethod",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oGame;;_RV_;;name;;_RV_;;Remove;;_RV_;;parameters;;_RV_;;oSelf.nIndex;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		255,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;Restart;;_RV_;;parameters;;_RV_;;oGame;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		256,
 		1,
 		"func",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"name;;_RV_;;MovePlayer;;_RV_;;parameters;;_RV_;;oGame,nNewRow,nNewCol;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		257,
 		1,
 		"switch",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"variable;;_RV_;;aLevel[nNewRow][nNewCol];;_RV_;;"
 	],
 	[
 		258,
 		1,
 		"case",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;C_EMPTY;;_RV_;;"
 	],
 	[
 		259,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;aLevel[aPlayer[:row]][aPlayer[:col]];;_RV_;;rightside;;_RV_;;C_EMPTY;;_RV_;;"
 	],
 	[
 		260,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;aLevel[nNewRow][nNewCol];;_RV_;;rightside;;_RV_;;C_PLAYER;;_RV_;;"
 	],
 	[
 		261,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UpdateGameMap;;_RV_;;parameters;;_RV_;;oGame;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		262,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;aPlayer[:row];;_RV_;;rightside;;_RV_;;nNewRow;;_RV_;;"
 	],
 	[
 		263,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;aPlayer[:col];;_RV_;;rightside;;_RV_;;nNewCol;;_RV_;;"
 	],
 	[
 		264,
 		1,
 		"case",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;C_FOOD;;_RV_;;"
 	],
 	[
 		265,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;aLevel[aPlayer[:row]][aPlayer[:col]];;_RV_;;rightside;;_RV_;;C_EMPTY;;_RV_;;"
 	],
 	[
 		266,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;aLevel[nNewRow][nNewCol];;_RV_;;rightside;;_RV_;;C_PLAYER;;_RV_;;"
 	],
 	[
 		267,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UpdateGameMap;;_RV_;;parameters;;_RV_;;oGame;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		268,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;aPlayer[:row];;_RV_;;rightside;;_RV_;;nNewRow;;_RV_;;"
 	],
 	[
 		269,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;aPlayer[:col];;_RV_;;rightside;;_RV_;;nNewCol;;_RV_;;"
 	],
 	[
 		270,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;NewFood;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		271,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UpdateGameMap;;_RV_;;parameters;;_RV_;;oGame;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		272,
 		1,
 		"",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		""
 	],
 	[
 		273,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:21:42",
-		"value;;_RV_;;nScore+=10;;_RV_;;"
+		"01/07/2021",
+		"13:24:50",
+		"value;;_RV_;;nScore += 10;;_RV_;;"
 	],
 	[
 		274,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;oGame.find(:Score).text;;_RV_;;rightside;;_RV_;;"+char(34)+"Score : "+char(34)+"+nScore;;_RV_;;"
 	],
 	[
 		275,
 		1,
 		"case",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;C_SNAKE;;_RV_;;"
 	],
 	[
 		276,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;aLevel[aPlayer[:row]][aPlayer[:col]];;_RV_;;rightside;;_RV_;;C_DIE;;_RV_;;"
 	],
 	[
 		277,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UpdateGameMap;;_RV_;;parameters;;_RV_;;oGame;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		278,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DisplayGameOver;;_RV_;;parameters;;_RV_;;oGame;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		279,
 		1,
 		"return",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		280,
 		1,
 		"func",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"name;;_RV_;;Restart;;_RV_;;parameters;;_RV_;;oGame;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		281,
 		1,
 		"",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		""
 	],
 	[
 		282,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;lGameOver;;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
 		283,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;aLevel;;_RV_;;rightside;;_RV_;;aLevelCopy;;_RV_;;"
 	],
 	[
 		284,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;aSnake;;_RV_;;rightside;;_RV_;;[[3,3],[3,4],[3,5]];;_RV_;;"
 	],
 	[
 		285,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;cDirection;;_RV_;;rightside;;_RV_;;:Right;;_RV_;;"
 	],
 	[
 		286,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;aPlayer;;_RV_;;rightside;;_RV_;;[:Row = 13,:Col = 4];;_RV_;;"
 	],
 	[
 		287,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;aLevel[13][4];;_RV_;;rightside;;_RV_;;C_PLAYER;;_RV_;;"
 	],
 	[
 		288,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;newX;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		289,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;newY;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		290,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;NewFood;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		291,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UpdateGameMap;;_RV_;;parameters;;_RV_;;oGame;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		292,
 		1,
 		"",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		""
 	],
 	[
 		293,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;nScore;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		294,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;oGame.find(:Score).text;;_RV_;;rightside;;_RV_;;"+char(34)+"Score : "+char(34)+"+nScore;;_RV_;;"
 	],
 	[
 		295,
 		1,
 		"func",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"name;;_RV_;;NewButton;;_RV_;;parameters;;_RV_;;oGame,nX,nY,nWidth,nHeight,cText,cFunc;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		296,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;oGame;;_RV_;;"
 	],
 	[
 		297,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;Object;;_RV_;;"
 	],
 	[
 		298,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;x;;_RV_;;rightside;;_RV_;;nX;;_RV_;;"
 	],
 	[
 		299,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;y;;_RV_;;rightside;;_RV_;;nY;;_RV_;;"
 	],
 	[
 		300,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;width;;_RV_;;rightside;;_RV_;;nWidth;;_RV_;;"
 	],
 	[
 		301,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;height;;_RV_;;rightside;;_RV_;;nHeight;;_RV_;;"
 	],
 	[
 		302,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddAttribute;;_RV_;;parameters;;_RV_;;self,:Text;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		303,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddAttribute;;_RV_;;parameters;;_RV_;;self,:EventCode;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		304,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddAttribute;;_RV_;;parameters;;_RV_;;self,:oFont;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		305,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddAttribute;;_RV_;;parameters;;_RV_;;self,:lClick;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		306,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;lClick;;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
 		307,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;oFont;;_RV_;;rightside;;_RV_;;oResources.LoadFont("+char(34)+"fonts/pirulen.ttf"+char(34)+",20);;_RV_;;"
 	],
 	[
 		308,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;Text;;_RV_;;rightside;;_RV_;;cText;;_RV_;;"
 	],
 	[
 		309,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;EventCode;;_RV_;;rightside;;_RV_;;cFunc;;_RV_;;"
 	],
 	[
 		310,
 		1,
 		"nestedfunc",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;draw;;_RV_;;value2;;_RV_;;oGame,oSelf;;_RV_;;"
 	],
 	[
 		311,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;oSelf;;_RV_;;"
 	],
 	[
 		312,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;gl_draw_filled_rectangle;;_RV_;;parameters;;_RV_;;x,y,x+width,y+height,gl_map_rgb(0,100,255);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		313,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;gl_draw_rectangle;;_RV_;;parameters;;_RV_;;x,y,x+width,y+height,gl_map_rgb(0,0,0),2;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		314,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;gl_draw_text;;_RV_;;parameters;;_RV_;;oFont,gl_map_rgb(0,0,0),x+width/2,y+(height/2)-15,1,Text;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		315,
 		1,
 		"nestedfunc",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;mouse;;_RV_;;value2;;_RV_;;oGame,oSelf,nType,aMouseList;;_RV_;;"
 	],
 	[
 		316,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"condition;;_RV_;;nType = GE_MOUSE_DOWN;;_RV_;;"
 	],
 	[
 		317,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;MouseX;;_RV_;;rightside;;_RV_;;aMouseList[GE_MOUSE_X];;_RV_;;"
 	],
 	[
 		318,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;MouseY;;_RV_;;rightside;;_RV_;;aMouseList[GE_MOUSE_Y];;_RV_;;"
 	],
 	[
 		319,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;oSelf;;_RV_;;"
 	],
 	[
 		320,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:21:42",
-		"condition;;_RV_;;MouseX> = x AND MouseX< = X+Width AND MouseY> = y AND MouseY< = Y+Height;;_RV_;;"
+		"01/07/2021",
+		"13:24:50",
+		"condition;;_RV_;;MouseX >= x AND MouseX <= X+Width AND MouseY >= y AND MouseY <= Y+Height;;_RV_;;"
 	],
 	[
 		321,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;lClick;;_RV_;;rightside;;_RV_;;True;;_RV_;;"
 	],
 	[
 		322,
 		1,
 		"elseif",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"condition;;_RV_;;nType = GE_MOUSE_UP;;_RV_;;"
 	],
 	[
 		323,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"leftside;;_RV_;;oSelf.lClick;;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
 		324,
 		1,
 		"nestedfunc",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;state;;_RV_;;value2;;_RV_;;oGame,oSelf;;_RV_;;"
 	],
 	[
 		325,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;oSelf;;_RV_;;"
 	],
 	[
 		326,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"condition;;_RV_;;lClick;;_RV_;;"
 	],
 	[
 		327,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;call EventCode(oGame,oSelf);;_RV_;;"
 	],
 	[
 		328,
 		1,
 		"return",
-		"27/06/2021",
-		"19:21:42",
+		"01/07/2021",
+		"13:24:50",
 		"value;;_RV_;;len(oGame.aObjects);;_RV_;;"
 	]
 ]

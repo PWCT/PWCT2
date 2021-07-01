@@ -11295,7 +11295,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aArray[Row][Col]&nbsp;=&nbsp;0&nbsp;AND&nbsp;playArray[Row][Col]&gt;&nbsp;=&nbsp;1</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aArray[Row][Col]&nbsp;=&nbsp;0&nbsp;AND&nbsp;playArray[Row][Col]&nbsp;&gt;=&nbsp;1</font></span>"
 			],
 			[
 				"active",
@@ -11303,7 +11303,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if aArray[Row][Col] = 0 AND playArray[Row][Col]> = 1 { "
+				"if aArray[Row][Col] = 0 AND playArray[Row][Col] >= 1 { "
 			],
 			[
 				"interactionid",
@@ -11323,7 +11323,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If aArray[Row][Col] = 0 AND playArray[Row][Col]> = 1"
+				"If aArray[Row][Col] = 0 AND playArray[Row][Col] >= 1"
 			]
 		]
 	],
@@ -11903,7 +11903,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aArray[Row][Col]&nbsp;=&nbsp;0&nbsp;AND&nbsp;playArray[Row][Col]&gt;&nbsp;=&nbsp;1</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aArray[Row][Col]&nbsp;=&nbsp;0&nbsp;AND&nbsp;playArray[Row][Col]&nbsp;&gt;=&nbsp;1</font></span>"
 			],
 			[
 				"active",
@@ -11911,7 +11911,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if aArray[Row][Col] = 0 AND playArray[Row][Col]> = 1 { "
+				"if aArray[Row][Col] = 0 AND playArray[Row][Col] >= 1 { "
 			],
 			[
 				"interactionid",
@@ -11931,7 +11931,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If aArray[Row][Col] = 0 AND playArray[Row][Col]> = 1"
+				"If aArray[Row][Col] = 0 AND playArray[Row][Col] >= 1"
 			]
 		]
 	],
@@ -22505,7 +22505,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">playArray[h][v]&gt;&nbsp;=&nbsp;1</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">playArray[h][v]&nbsp;&gt;=&nbsp;1</font></span>"
 			],
 			[
 				"active",
@@ -22513,7 +22513,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if playArray[h][v]> = 1 { "
+				"if playArray[h][v] >= 1 { "
 			],
 			[
 				"interactionid",
@@ -22533,7 +22533,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If playArray[h][v]> = 1"
+				"If playArray[h][v] >= 1"
 			]
 		]
 	],
@@ -23873,7 +23873,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">dupArray[h][v]&gt;1</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">dupArray[h][v]&nbsp;&gt;&nbsp;1</font></span>"
 			],
 			[
 				"active",
@@ -23881,7 +23881,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if dupArray[h][v]>1 { "
+				"if dupArray[h][v] > 1 { "
 			],
 			[
 				"interactionid",
@@ -23901,7 +23901,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If dupArray[h][v]>1"
+				"If dupArray[h][v] > 1"
 			]
 		]
 	],
@@ -24861,7 +24861,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nbr&gt;0</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nbr&nbsp;&gt;&nbsp;0</font></span>"
 			],
 			[
 				"active",
@@ -24869,7 +24869,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if nbr>0 { "
+				"if nbr > 0 { "
 			],
 			[
 				"interactionid",
@@ -24889,7 +24889,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If nbr>0"
+				"If nbr > 0"
 			]
 		]
 	],
@@ -25165,7 +25165,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nbrCount[i]&gt;1</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nbrCount[i]&nbsp;&gt;&nbsp;1</font></span>"
 			],
 			[
 				"active",
@@ -25173,7 +25173,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if nbrCount[i]>1 { "
+				"if nbrCount[i] > 1 { "
 			],
 			[
 				"interactionid",
@@ -25193,7 +25193,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If nbrCount[i]>1"
+				"If nbrCount[i] > 1"
 			]
 		]
 	],
@@ -26229,7 +26229,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nbr&gt;0</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nbr&nbsp;&gt;&nbsp;0</font></span>"
 			],
 			[
 				"active",
@@ -26237,7 +26237,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if nbr>0 { "
+				"if nbr > 0 { "
 			],
 			[
 				"interactionid",
@@ -26257,7 +26257,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If nbr>0"
+				"If nbr > 0"
 			]
 		]
 	],
@@ -26533,7 +26533,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nbrCount[i]&gt;1</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nbrCount[i]&nbsp;&gt;&nbsp;1</font></span>"
 			],
 			[
 				"active",
@@ -26541,7 +26541,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if nbrCount[i]>1 { "
+				"if nbrCount[i] > 1 { "
 			],
 			[
 				"interactionid",
@@ -26561,7 +26561,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If nbrCount[i]>1"
+				"If nbrCount[i] > 1"
 			]
 		]
 	],
@@ -28053,7 +28053,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nbr&gt;0</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nbr&nbsp;&gt;&nbsp;0</font></span>"
 			],
 			[
 				"active",
@@ -28061,7 +28061,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if nbr>0 { "
+				"if nbr > 0 { "
 			],
 			[
 				"interactionid",
@@ -28081,7 +28081,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If nbr>0"
+				"If nbr > 0"
 			]
 		]
 	],
@@ -28623,7 +28623,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nbrCount[nbr]&gt;1&nbsp;AND&nbsp;playArray[h][v]&nbsp;=&nbsp;nbr</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nbrCount[nbr]&nbsp;&gt;&nbsp;1&nbsp;AND&nbsp;playArray[h][v]&nbsp;=&nbsp;nbr</font></span>"
 			],
 			[
 				"active",
@@ -28631,7 +28631,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if nbrCount[nbr]>1 AND playArray[h][v] = nbr { "
+				"if nbrCount[nbr] > 1 AND playArray[h][v] = nbr { "
 			],
 			[
 				"interactionid",
@@ -28651,7 +28651,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If nbrCount[nbr]>1 AND playArray[h][v] = nbr"
+				"If nbrCount[nbr] > 1 AND playArray[h][v] = nbr"
 			]
 		]
 	],
@@ -29953,7 +29953,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nbr&gt;0</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nbr&nbsp;&gt;&nbsp;0</font></span>"
 			],
 			[
 				"active",
@@ -29961,7 +29961,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if nbr>0 { "
+				"if nbr > 0 { "
 			],
 			[
 				"interactionid",
@@ -29981,7 +29981,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If nbr>0"
+				"If nbr > 0"
 			]
 		]
 	],
@@ -30371,7 +30371,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nbr&gt;0</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nbr&nbsp;&gt;&nbsp;0</font></span>"
 			],
 			[
 				"active",
@@ -30379,7 +30379,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if nbr>0 { "
+				"if nbr > 0 { "
 			],
 			[
 				"interactionid",
@@ -30399,7 +30399,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If nbr>0"
+				"If nbr > 0"
 			]
 		]
 	],
@@ -31131,7 +31131,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nbr&gt;0</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nbr&nbsp;&gt;&nbsp;0</font></span>"
 			],
 			[
 				"active",
@@ -31139,7 +31139,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if nbr>0 { "
+				"if nbr > 0 { "
 			],
 			[
 				"interactionid",
@@ -31159,7 +31159,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If nbr>0"
+				"If nbr > 0"
 			]
 		]
 	],
@@ -42607,7 +42607,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nbr&gt;0</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nbr&nbsp;&gt;&nbsp;0</font></span>"
 			],
 			[
 				"active",
@@ -42615,7 +42615,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if nbr>0 { "
+				"if nbr > 0 { "
 			],
 			[
 				"interactionid",
@@ -42635,7 +42635,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If nbr>0"
+				"If nbr > 0"
 			]
 		]
 	],
@@ -46597,7 +46597,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">FindNbr!&nbsp;=&nbsp;0&nbsp;OR&nbsp;FindNbr&gt;9</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">FindNbr!&nbsp;=&nbsp;0&nbsp;OR&nbsp;FindNbr&nbsp;&gt;&nbsp;9</font></span>"
 			],
 			[
 				"active",
@@ -46605,7 +46605,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if FindNbr! = 0 OR FindNbr>9 { "
+				"if FindNbr! = 0 OR FindNbr > 9 { "
 			],
 			[
 				"interactionid",
@@ -46625,7 +46625,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If FindNbr! = 0 OR FindNbr>9"
+				"If FindNbr! = 0 OR FindNbr > 9"
 			]
 		]
 	],
@@ -47547,7 +47547,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">FindNbr!&nbsp;=&nbsp;0&nbsp;OR&nbsp;FindNbr&gt;9</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">FindNbr!&nbsp;=&nbsp;0&nbsp;OR&nbsp;FindNbr&nbsp;&gt;&nbsp;9</font></span>"
 			],
 			[
 				"active",
@@ -47555,7 +47555,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if FindNbr! = 0 OR FindNbr>9 { "
+				"if FindNbr! = 0 OR FindNbr > 9 { "
 			],
 			[
 				"interactionid",
@@ -47575,7 +47575,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If FindNbr! = 0 OR FindNbr>9"
+				"If FindNbr! = 0 OR FindNbr > 9"
 			]
 		]
 	],
@@ -49447,7 +49447,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">FindNbr!&nbsp;=&nbsp;0&nbsp;OR&nbsp;FindNbr&gt;9</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">FindNbr!&nbsp;=&nbsp;0&nbsp;OR&nbsp;FindNbr&nbsp;&gt;&nbsp;9</font></span>"
 			],
 			[
 				"active",
@@ -49455,7 +49455,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if FindNbr! = 0 OR FindNbr>9 { "
+				"if FindNbr! = 0 OR FindNbr > 9 { "
 			],
 			[
 				"interactionid",
@@ -49475,7 +49475,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If FindNbr! = 0 OR FindNbr>9"
+				"If FindNbr! = 0 OR FindNbr > 9"
 			]
 		]
 	],
@@ -49941,7 +49941,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">FindNbr&gt;&nbsp;=&nbsp;11&nbsp;AND&nbsp;FindNbr&lt;&nbsp;=&nbsp;99</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">FindNbr&nbsp;&gt;=&nbsp;11&nbsp;AND&nbsp;FindNbr&nbsp;&lt;=&nbsp;99</font></span>"
 			],
 			[
 				"active",
@@ -49949,7 +49949,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if FindNbr> = 11 AND FindNbr< = 99 { "
+				"if FindNbr >= 11 AND FindNbr <= 99 { "
 			],
 			[
 				"interactionid",
@@ -49969,7 +49969,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If FindNbr> = 11 AND FindNbr"
+				"If FindNbr >= 11 AND FindNbr "
 			]
 		]
 	],
@@ -50131,7 +50131,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">!(Pos&nbsp;=&nbsp;j&nbsp;OR&nbsp;Pos&nbsp;=&nbsp;k)&nbsp;AND&nbsp;aRegion[Pos]&gt;9</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">!(Pos&nbsp;=&nbsp;j&nbsp;OR&nbsp;Pos&nbsp;=&nbsp;k)&nbsp;AND&nbsp;aRegion[Pos]&nbsp;&gt;&nbsp;9</font></span>"
 			],
 			[
 				"active",
@@ -50139,7 +50139,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if !(Pos = j OR Pos = k) AND aRegion[Pos]>9 { "
+				"if !(Pos = j OR Pos = k) AND aRegion[Pos] > 9 { "
 			],
 			[
 				"interactionid",
@@ -50159,7 +50159,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If !(Pos = j OR Pos = k) AND aRegion[Pos]>9"
+				"If !(Pos = j OR Pos = k) AND aRegion[Pos] > 9"
 			]
 		]
 	],
@@ -51195,7 +51195,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">regNbr&gt;9</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">regNbr&nbsp;&gt;&nbsp;9</font></span>"
 			],
 			[
 				"active",
@@ -51203,7 +51203,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if regNbr>9 { "
+				"if regNbr > 9 { "
 			],
 			[
 				"interactionid",
@@ -51223,7 +51223,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If regNbr>9"
+				"If regNbr > 9"
 			]
 		]
 	],
@@ -51347,7 +51347,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">regNbr&gt;0&nbsp;AND&nbsp;regNbr&lt;&nbsp;=&nbsp;9</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">regNbr&nbsp;&gt;&nbsp;0&nbsp;AND&nbsp;regNbr&nbsp;&lt;=&nbsp;9</font></span>"
 			],
 			[
 				"active",
@@ -51355,7 +51355,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if regNbr>0 AND regNbr< = 9 { "
+				"if regNbr > 0 AND regNbr <= 9 { "
 			],
 			[
 				"interactionid",
@@ -51375,7 +51375,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If regNbr>0 AND regNbr"
+				"If regNbr > 0 AND regNbr "
 			]
 		]
 	],
@@ -52487,7 +52487,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">FindNbr&gt;&nbsp;=&nbsp;11&nbsp;AND&nbsp;FindNbr&lt;&nbsp;=&nbsp;99</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">FindNbr&nbsp;&gt;=&nbsp;11&nbsp;AND&nbsp;FindNbr&nbsp;&lt;=&nbsp;99</font></span>"
 			],
 			[
 				"active",
@@ -52495,7 +52495,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if FindNbr> = 11 AND FindNbr< = 99 { "
+				"if FindNbr >= 11 AND FindNbr <= 99 { "
 			],
 			[
 				"interactionid",
@@ -52515,7 +52515,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If FindNbr> = 11 AND FindNbr"
+				"If FindNbr >= 11 AND FindNbr "
 			]
 		]
 	],
@@ -52715,7 +52715,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">!(Col&nbsp;=&nbsp;v&nbsp;OR&nbsp;Col&nbsp;=&nbsp;k)&nbsp;AND&nbsp;aHints[Row][Col]&gt;9</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">!(Col&nbsp;=&nbsp;v&nbsp;OR&nbsp;Col&nbsp;=&nbsp;k)&nbsp;AND&nbsp;aHints[Row][Col]&nbsp;&gt;&nbsp;9</font></span>"
 			],
 			[
 				"active",
@@ -52723,7 +52723,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if !(Col = v OR Col = k) AND aHints[Row][Col]>9 { "
+				"if !(Col = v OR Col = k) AND aHints[Row][Col] > 9 { "
 			],
 			[
 				"interactionid",
@@ -52743,7 +52743,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If !(Col = v OR Col = k) AND aHints[Row][Col]>9"
+				"If !(Col = v OR Col = k) AND aHints[Row][Col] > 9"
 			]
 		]
 	],
@@ -53019,7 +53019,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nHints&gt;9</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nHints&nbsp;&gt;&nbsp;9</font></span>"
 			],
 			[
 				"active",
@@ -53027,7 +53027,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if nHints>9 { "
+				"if nHints > 9 { "
 			],
 			[
 				"interactionid",
@@ -53047,7 +53047,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If nHints>9"
+				"If nHints > 9"
 			]
 		]
 	],
@@ -53171,7 +53171,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nHints&lt;&nbsp;=&nbsp;9</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nHints&nbsp;&lt;=&nbsp;9</font></span>"
 			],
 			[
 				"active",
@@ -53179,7 +53179,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if nHints< = 9 { "
+				"if nHints <= 9 { "
 			],
 			[
 				"interactionid",
@@ -53199,7 +53199,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If nHints"
+				"If nHints "
 			]
 		]
 	],
@@ -53703,7 +53703,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">FindNbr&gt;&nbsp;=&nbsp;11&nbsp;AND&nbsp;FindNbr&lt;&nbsp;=&nbsp;99</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">FindNbr&nbsp;&gt;=&nbsp;11&nbsp;AND&nbsp;FindNbr&nbsp;&lt;=&nbsp;99</font></span>"
 			],
 			[
 				"active",
@@ -53711,7 +53711,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if FindNbr> = 11 AND FindNbr< = 99 { "
+				"if FindNbr >= 11 AND FindNbr <= 99 { "
 			],
 			[
 				"interactionid",
@@ -53731,7 +53731,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If FindNbr> = 11 AND FindNbr"
+				"If FindNbr >= 11 AND FindNbr "
 			]
 		]
 	],
@@ -53931,7 +53931,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">!(Row&nbsp;=&nbsp;h&nbsp;OR&nbsp;Row&nbsp;=&nbsp;k)&nbsp;AND&nbsp;aHints[Row][Col]&gt;9</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">!(Row&nbsp;=&nbsp;h&nbsp;OR&nbsp;Row&nbsp;=&nbsp;k)&nbsp;AND&nbsp;aHints[Row][Col]&nbsp;&gt;&nbsp;9</font></span>"
 			],
 			[
 				"active",
@@ -53939,7 +53939,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if !(Row = h OR Row = k) AND aHints[Row][Col]>9 { "
+				"if !(Row = h OR Row = k) AND aHints[Row][Col] > 9 { "
 			],
 			[
 				"interactionid",
@@ -53959,7 +53959,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If !(Row = h OR Row = k) AND aHints[Row][Col]>9"
+				"If !(Row = h OR Row = k) AND aHints[Row][Col] > 9"
 			]
 		]
 	],
@@ -54235,7 +54235,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nHints&gt;9</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nHints&nbsp;&gt;&nbsp;9</font></span>"
 			],
 			[
 				"active",
@@ -54243,7 +54243,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if nHints>9 { "
+				"if nHints > 9 { "
 			],
 			[
 				"interactionid",
@@ -54263,7 +54263,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If nHints>9"
+				"If nHints > 9"
 			]
 		]
 	],
@@ -54387,7 +54387,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nHints&lt;&nbsp;=&nbsp;9</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nHints&nbsp;&lt;=&nbsp;9</font></span>"
 			],
 			[
 				"active",
@@ -54395,7 +54395,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if nHints< = 9 { "
+				"if nHints <= 9 { "
 			],
 			[
 				"interactionid",
@@ -54415,7 +54415,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If nHints"
+				"If nHints "
 			]
 		]
 	],
@@ -54919,7 +54919,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">FindNbr&gt;&nbsp;=&nbsp;11&nbsp;AND&nbsp;FindNbr&lt;&nbsp;=&nbsp;99</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">FindNbr&nbsp;&gt;=&nbsp;11&nbsp;AND&nbsp;FindNbr&nbsp;&lt;=&nbsp;99</font></span>"
 			],
 			[
 				"active",
@@ -54927,7 +54927,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if FindNbr> = 11 AND FindNbr< = 99 { "
+				"if FindNbr >= 11 AND FindNbr <= 99 { "
 			],
 			[
 				"interactionid",
@@ -54947,7 +54947,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If FindNbr> = 11 AND FindNbr"
+				"If FindNbr >= 11 AND FindNbr "
 			]
 		]
 	],
@@ -55147,7 +55147,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">!(Col&nbsp;=&nbsp;v&nbsp;OR&nbsp;Col&nbsp;=&nbsp;k)&nbsp;AND&nbsp;aHints[Row][Col]&gt;9</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">!(Col&nbsp;=&nbsp;v&nbsp;OR&nbsp;Col&nbsp;=&nbsp;k)&nbsp;AND&nbsp;aHints[Row][Col]&nbsp;&gt;&nbsp;9</font></span>"
 			],
 			[
 				"active",
@@ -55155,7 +55155,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if !(Col = v OR Col = k) AND aHints[Row][Col]>9 { "
+				"if !(Col = v OR Col = k) AND aHints[Row][Col] > 9 { "
 			],
 			[
 				"interactionid",
@@ -55175,7 +55175,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If !(Col = v OR Col = k) AND aHints[Row][Col]>9"
+				"If !(Col = v OR Col = k) AND aHints[Row][Col] > 9"
 			]
 		]
 	],
@@ -55451,7 +55451,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nHints&gt;9</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nHints&nbsp;&gt;&nbsp;9</font></span>"
 			],
 			[
 				"active",
@@ -55459,7 +55459,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if nHints>9 { "
+				"if nHints > 9 { "
 			],
 			[
 				"interactionid",
@@ -55479,7 +55479,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If nHints>9"
+				"If nHints > 9"
 			]
 		]
 	],
@@ -55603,7 +55603,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nHints&lt;&nbsp;=&nbsp;9</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nHints&nbsp;&lt;=&nbsp;9</font></span>"
 			],
 			[
 				"active",
@@ -55611,7 +55611,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if nHints< = 9 { "
+				"if nHints <= 9 { "
 			],
 			[
 				"interactionid",
@@ -55631,7 +55631,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If nHints"
+				"If nHints "
 			]
 		]
 	],
@@ -57732,8528 +57732,8528 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		2,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		3,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		4,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		5,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		6,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		7,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		8,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		9,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		10,
 		1,
 		"load",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"file;;_RV_;;stdlib.ring;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"load",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"file;;_RV_;;guilib.ring;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"load",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"file;;_RV_;;SudokuPuzzles.ring;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		14,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		15,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		16,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		17,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		18,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		19,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		20,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		21,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		22,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		23,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		24,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		25,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		26,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		27,
 		1,
 		"print",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"text;;_RV_;;"+char(34)+"Loading SudokuC Library: mylibSudoku.dll "+char(34)+"+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		29,
 		1,
 		"load",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"file;;_RV_;;mylibSudoku.ring;;_RV_;;"
 	],
 	[
 		30,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		31,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		32,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;moveX;;_RV_;;rightside;;_RV_;;200;;_RV_;;"
 	],
 	[
 		33,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;moveY;;_RV_;;rightside;;_RV_;;100;;_RV_;;"
 	],
 	[
 		34,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		35,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;sizeX;;_RV_;;rightside;;_RV_;;840;;_RV_;;"
 	],
 	[
 		36,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;sizeY;;_RV_;;rightside;;_RV_;;820;;_RV_;;"
 	],
 	[
 		37,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		38,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;hSize;;_RV_;;rightside;;_RV_;;9;;_RV_;;"
 	],
 	[
 		39,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		40,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;vSize;;_RV_;;rightside;;_RV_;;9;;_RV_;;"
 	],
 	[
 		41,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		42,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;hPos;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		43,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		44,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;vPos;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		45,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		46,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		47,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		48,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;aArray;;_RV_;;rightside;;_RV_;;null;;_RV_;;"
 	],
 	[
 		49,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;playArray;;_RV_;;rightside;;_RV_;;null;;_RV_;;"
 	],
 	[
 		50,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;aButton;;_RV_;;rightside;;_RV_;;null;;_RV_;;"
 	],
 	[
 		51,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;workWidget;;_RV_;;rightside;;_RV_;;null;;_RV_;;"
 	],
 	[
 		52,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;HintsInSquare;;_RV_;;rightside;;_RV_;;null;;_RV_;;"
 	],
 	[
 		53,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;TitletMoves;;_RV_;;rightside;;_RV_;;null;;_RV_;;"
 	],
 	[
 		54,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;TitletInvalidMove;;_RV_;;rightside;;_RV_;;null;;_RV_;;"
 	],
 	[
 		55,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;LayoutButtonRow;;_RV_;;rightside;;_RV_;;null;;_RV_;;"
 	],
 	[
 		56,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;comboPuzzleName;;_RV_;;rightside;;_RV_;;null;;_RV_;;"
 	],
 	[
 		57,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;puzzleName;;_RV_;;rightside;;_RV_;;"+char(34)+"EnterYourOwn"+char(34)+";;_RV_;;"
 	],
 	[
 		58,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		59,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;gfontSize;;_RV_;;rightside;;_RV_;;10;;_RV_;;"
 	],
 	[
 		60,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;gHintArray;;_RV_;;rightside;;_RV_;;[0,0,0,0,0,0,0,0,0,0,0];;_RV_;;"
 	],
 	[
 		61,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		62,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;OldRow;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		63,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;OldCol;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		64,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;nMoves;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		65,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;gNbrRightClick;;_RV_;;rightside;;_RV_;;99;;_RV_;;"
 	],
 	[
 		66,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		67,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;gcountIter;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		68,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		69,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;aSQColor;;_RV_;;rightside;;_RV_;;[[0,0,0,1,1,1,0,0,0],[0,0,0,1,1,1,0,0,0],[0,0,0,1,1,1,0,0,0],[1,1,1,0,0,0,1,1,1],[1,1,1,0,0,0,1,1,1],[1,1,1,0,0,0,1,1,1],[0,0,0,1,1,1,0,0,0],[0,0,0,1,1,1,0,0,0],[0,0,0,1,1,1,0,0,0]];;_RV_;;"
 	],
 	[
 		70,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;aArray;;_RV_;;rightside;;_RV_;;[[0,6,0,0,0,0,0,0,7],[1,0,7,0,2,9,0,0,0],[3,2,9,0,0,0,8,0,0],[0,0,0,1,0,0,2,4,0],[6,7,8,0,4,0,1,9,5],[0,1,2,0,0,6,0,0,0],[0,0,6,0,0,1,3,7,9],[0,0,0,6,8,0,4,0,2],[7,0,0,0,0,0,0,8,0]];;_RV_;;"
 	],
 	[
 		71,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;playArray;;_RV_;;rightside;;_RV_;;aArray;;_RV_;;"
 	],
 	[
 		72,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		73,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;aButton;;_RV_;;rightside;;_RV_;;[[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0]];;_RV_;;"
 	],
 	[
 		74,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;dupArray;;_RV_;;rightside;;_RV_;;[[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0]];;_RV_;;"
 	],
 	[
 		75,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;zeroArray;;_RV_;;rightside;;_RV_;;[[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0]];;_RV_;;"
 	],
 	[
 		76,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;regionArray;;_RV_;;rightside;;_RV_;;[[1,1,1,2,2,2,3,3,3],[1,1,1,2,2,2,3,3,3],[1,1,1,2,2,2,3,3,3],[4,4,4,5,5,5,6,6,6],[4,4,4,5,5,5,6,6,6],[4,4,4,5,5,5,6,6,6],[7,7,7,8,8,8,9,9,9],[7,7,7,8,8,8,9,9,9],[7,7,7,8,8,8,9,9,9]];;_RV_;;"
 	],
 	[
 		77,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;aHints;;_RV_;;rightside;;_RV_;;[[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0]];;_RV_;;"
 	],
 	[
 		78,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		79,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;C_Spacing;;_RV_;;rightside;;_RV_;;2;;_RV_;;"
 	],
 	[
 		80,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;C_ButtonFirstStyle;;_RV_;;rightside;;_RV_;;"+char(34)+"border-radius:1px; color:black; background-color: rgb(229,249,203) ;"+char(34)+";;_RV_;;"
 	],
 	[
 		81,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		82,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;C_ButtonSecondStyle;;_RV_;;rightside;;_RV_;;"+char(34)+"border-radius:1px; color:black; background-color: rgb(179,200,93); "+char(34)+";;_RV_;;"
 	],
 	[
 		83,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		84,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;C_ButtonFirstStyleBlue;;_RV_;;rightside;;_RV_;;"+char(34)+"border-radius:1px; color:blue; background-color: rgb(229,249,203) ;"+char(34)+";;_RV_;;"
 	],
 	[
 		85,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		86,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;C_ButtonSecondStyleBlue;;_RV_;;rightside;;_RV_;;"+char(34)+"border-radius:1px; color:blue; background-color: rgb(179,200,93); "+char(34)+";;_RV_;;"
 	],
 	[
 		87,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		88,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;C_ButtonFirstStyleCyan;;_RV_;;rightside;;_RV_;;"+char(34)+"border-radius:1px; color:darkgreen; background-color: rgb(229,249,203) ;"+char(34)+";;_RV_;;"
 	],
 	[
 		89,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		90,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;C_ButtonSecondStyleCyan;;_RV_;;rightside;;_RV_;;"+char(34)+"border-radius:1px; color:darkgreen; background-color: rgb(179,200,93); "+char(34)+";;_RV_;;"
 	],
 	[
 		91,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		92,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;C_ButtonFirstStyleRed;;_RV_;;rightside;;_RV_;;"+char(34)+"border-radius:1px; color:red; background-color: rgb(229,249,203) ;"+char(34)+";;_RV_;;"
 	],
 	[
 		93,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		94,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;C_ButtonSecondStyleRed;;_RV_;;rightside;;_RV_;;"+char(34)+"border-radius:1px; color:red; background-color: rgb(179,200,93); "+char(34)+";;_RV_;;"
 	],
 	[
 		95,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		96,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;C_ButtonPickStyle;;_RV_;;rightside;;_RV_;;"+char(34)+"border-radius:1px; color:black; background-color: rgb(255,255,93); "+char(34)+";;_RV_;;"
 	],
 	[
 		97,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		98,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;C_ButtonDestStyle;;_RV_;;rightside;;_RV_;;"+char(34)+"border-radius:1px; color:black; background-color: rgb(204,255,204); "+char(34)+";;_RV_;;"
 	],
 	[
 		99,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		100,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;C_ButtonPaleStyle;;_RV_;;rightside;;_RV_;;"+char(34)+"border-radius:1px; color:black; background-color:rgb(255,255,204); "+char(34)+";;_RV_;;"
 	],
 	[
 		101,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		102,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;C_ButtonDarkStyle;;_RV_;;rightside;;_RV_;;"+char(34)+"border-radius:1px; color:black; background-color:rgb(204,255,255); "+char(34)+";;_RV_;;"
 	],
 	[
 		103,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		104,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"leftside;;_RV_;;C_ButtonInvalidStyle;;_RV_;;rightside;;_RV_;;"+char(34)+"border-radius:1px; color:black; background-color: rgb(255,102,102); "+char(34)+";;_RV_;;"
 	],
 	[
 		105,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		106,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		107,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		108,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		109,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		110,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		111,
 		1,
 		"newobj",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"value;;_RV_;;app;;_RV_;;value2;;_RV_;;qApp;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		112,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		113,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawWidget;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		114,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		115,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;NewGameStart;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		116,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;exec;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		117,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		118,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		119,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		120,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		121,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		122,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		123,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		124,
 		1,
 		"func",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"name;;_RV_;;DrawWidget;;_RV_;;parameters;;_RV_;;();;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		125,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		""
 	],
 	[
 		126,
 		1,
 		"newobj",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"value;;_RV_;;workWidget;;_RV_;;value2;;_RV_;;qWidget;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		127,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setWindowTitle;;_RV_;;parameters;;_RV_;;"+char(34)+"Sudoku"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		128,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setStyleSheet;;_RV_;;parameters;;_RV_;;"+char(34)+"background-color:White"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		129,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"leftside;;_RV_;;workHeight;;_RV_;;rightside;;_RV_;;workWidget.height();;_RV_;;"
 	],
 	[
 		130,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"leftside;;_RV_;;gfontSize;;_RV_;;rightside;;_RV_;;10+(workHeight/100);;_RV_;;"
 	],
 	[
 		131,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;move;;_RV_;;parameters;;_RV_;;moveX,moveY;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		132,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;resize;;_RV_;;parameters;;_RV_;;sizeX,sizeY;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		133,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		134,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		135,
 		1,
 		"newobj",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;TitletMoves;;_RV_;;value2;;_RV_;;qLineEdit;;_RV_;;value3;;_RV_;;workWidget;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		136,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		137,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setFont;;_RV_;;parameters;;_RV_;; new qFont("+char(34)+"Calibri"+char(34)+",gfontSize,100,0);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		138,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setAlignment;;_RV_;;parameters;;_RV_;;Qt_AlignVCenter;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		139,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setAlignment;;_RV_;;parameters;;_RV_;;Qt_AlignVCenter;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		140,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+" Filled: "+char(34)+"+nMoves;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		141,
 		1,
 		"newobj",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;TitletInvalidMove;;_RV_;;value2;;_RV_;;qLineEdit;;_RV_;;value3;;_RV_;;workWidget;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		142,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		143,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setFont;;_RV_;;parameters;;_RV_;; new qFont("+char(34)+"Calibri"+char(34)+",gfontSize,100,0);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		144,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setAlignment;;_RV_;;parameters;;_RV_;;Qt_AlignVCenter;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		145,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setAlignment;;_RV_;;parameters;;_RV_;;Qt_AlignVCenter;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		146,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+" Msg "+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		147,
 		1,
 		"newobj",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;HintsInSquare;;_RV_;;value2;;_RV_;;qcheckbox;;_RV_;;value3;;_RV_;;workWidget;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		148,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setFont;;_RV_;;parameters;;_RV_;; new qFont("+char(34)+"Calibri"+char(34)+",gfontSize,100,0);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		149,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setStyleSheet;;_RV_;;parameters;;_RV_;;"+char(34)+"background-color:rgb(204,255,229)"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		150,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+" HintInSQ "+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		151,
 		1,
 		"newobj",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;SolveGame;;_RV_;;value2;;_RV_;;QPushButton;;_RV_;;value3;;_RV_;;workWidget;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		152,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setStyleSheet;;_RV_;;parameters;;_RV_;;C_ButtonDarkStyle;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		153,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setFont;;_RV_;;parameters;;_RV_;; new qFont("+char(34)+"Calibri"+char(34)+",gfontSize,100,0);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		154,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+" Solve "+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		155,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setClickEvent;;_RV_;;parameters;;_RV_;;"+char(34)+"Solve()"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		156,
 		1,
 		"newobj",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;SolveBrut;;_RV_;;value2;;_RV_;;QPushButton;;_RV_;;value3;;_RV_;;workWidget;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		157,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setStyleSheet;;_RV_;;parameters;;_RV_;;C_ButtonPaleStyle;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		158,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setFont;;_RV_;;parameters;;_RV_;; new qFont("+char(34)+"Calibri"+char(34)+",gfontSize,100,0);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		159,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+" BrutForce "+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		160,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setClickEvent;;_RV_;;parameters;;_RV_;;"+char(34)+"BrutForce()"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		161,
 		1,
 		"newobj",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;comboPuzzleName;;_RV_;;value2;;_RV_;;QComboBox;;_RV_;;value3;;_RV_;;workWidget;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		162,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setStyleSheet;;_RV_;;parameters;;_RV_;;"+char(34)+"background-color:White"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		163,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setFont;;_RV_;;parameters;;_RV_;; new qFont("+char(34)+"Calibri"+char(34)+",gfontSize,50,0);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		164,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		165,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"leftside;;_RV_;;aList;;_RV_;;rightside;;_RV_;;PuzzleList;;_RV_;;"
 	],
 	[
 		166,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		167,
 		1,
 		"forinloop",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"variable;;_RV_;;x;;_RV_;;in;;_RV_;;aList;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		168,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;additem;;_RV_;;parameters;;_RV_;;x,0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		169,
 		1,
 		"newobj",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;NewGame;;_RV_;;value2;;_RV_;;QPushButton;;_RV_;;value3;;_RV_;;workWidget;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		170,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setStyleSheet;;_RV_;;parameters;;_RV_;;"+char(34)+"background-color:rgb(255,204,229)"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		171,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setFont;;_RV_;;parameters;;_RV_;; new qFont("+char(34)+"Calibri"+char(34)+",gfontSize,100,0);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		172,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+" New Game "+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		173,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setClickEvent;;_RV_;;parameters;;_RV_;;"+char(34)+"NewGameStart()"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		174,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		175,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		176,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		177,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		178,
 		1,
 		"newobj",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;LayoutButtonMain;;_RV_;;value2;;_RV_;;QVBoxLayout;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		179,
 		1,
 		"callmethod",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;LayoutButtonMain;;_RV_;;name;;_RV_;;setSpacing;;_RV_;;parameters;;_RV_;;C_Spacing;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		180,
 		1,
 		"callmethod",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;LayoutButtonMain;;_RV_;;name;;_RV_;;setContentsMargins;;_RV_;;parameters;;_RV_;;5,5,5,5;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		181,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		182,
 		1,
 		"newobj",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;LayoutTitleRow;;_RV_;;value2;;_RV_;;QHBoxLayout;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		183,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setSpacing;;_RV_;;parameters;;_RV_;;C_Spacing;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		184,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setContentsMargins;;_RV_;;parameters;;_RV_;;0,0,0,0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		185,
 		1,
 		"callmethod",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;LayoutTitleRow;;_RV_;;name;;_RV_;;AddWidget;;_RV_;;parameters;;_RV_;;TitletMoves;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		186,
 		1,
 		"callmethod",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;LayoutTitleRow;;_RV_;;name;;_RV_;;AddWidget;;_RV_;;parameters;;_RV_;;TitletInvalidMove;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		187,
 		1,
 		"callmethod",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;LayoutTitleRow;;_RV_;;name;;_RV_;;AddWidget;;_RV_;;parameters;;_RV_;;HintsInSquare;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		188,
 		1,
 		"callmethod",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;LayoutTitleRow;;_RV_;;name;;_RV_;;AddWidget;;_RV_;;parameters;;_RV_;;SolveGame;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		189,
 		1,
 		"callmethod",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;LayoutTitleRow;;_RV_;;name;;_RV_;;AddWidget;;_RV_;;parameters;;_RV_;;SolveBrut;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		190,
 		1,
 		"callmethod",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;LayoutTitleRow;;_RV_;;name;;_RV_;;AddWidget;;_RV_;;parameters;;_RV_;;comboPuzzleName;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		191,
 		1,
 		"callmethod",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;LayoutTitleRow;;_RV_;;name;;_RV_;;AddWidget;;_RV_;;parameters;;_RV_;;NewGame;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		192,
 		1,
 		"callmethod",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;LayoutButtonMain;;_RV_;;name;;_RV_;;AddLayout;;_RV_;;parameters;;_RV_;;LayoutTitleRow;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		193,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		194,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		195,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"leftside;;_RV_;;LayoutButtonRow;;_RV_;;rightside;;_RV_;;list(hSize);;_RV_;;"
 	],
 	[
 		196,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		197,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		198,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"start;;_RV_;;Row = 1;;_RV_;;to;;_RV_;;hSize;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		199,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		200,
 		1,
 		"newobj",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;LayoutButtonRow[Row];;_RV_;;value2;;_RV_;;QHBoxLayout;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		201,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setSpacing;;_RV_;;parameters;;_RV_;;C_Spacing;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		202,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setContentsmargins;;_RV_;;parameters;;_RV_;;0,0,0,0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		203,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		204,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		205,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"start;;_RV_;;Col = 1;;_RV_;;to;;_RV_;;vSize;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		206,
 		1,
 		"newobj",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;aButton[Row][Col];;_RV_;;value2;;_RV_;;QPushButton;;_RV_;;value3;;_RV_;;workWidget;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		207,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"leftside;;_RV_;;value;;_RV_;;rightside;;_RV_;;aSQColor[Row][Col];;_RV_;;"
 	],
 	[
 		208,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"condition;;_RV_;;value = 1;;_RV_;;"
 	],
 	[
 		209,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setStyleSheet;;_RV_;;parameters;;_RV_;;C_ButtonFirstStyle;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		210,
 		1,
 		"elseif",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"condition;;_RV_;;value = 0;;_RV_;;"
 	],
 	[
 		211,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setStyleSheet;;_RV_;;parameters;;_RV_;;C_ButtonSecondStyle;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		212,
 		1,
 		"else",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		213,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setStyleSheet;;_RV_;;parameters;;_RV_;;C_ButtonInvalidStyle;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		214,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setFont;;_RV_;;parameters;;_RV_;; new qFont("+char(34)+"Calibri"+char(34)+",gfontSize+10,100,0);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		215,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setClickEvent;;_RV_;;parameters;;_RV_;;"+char(34)+"UserLeftClick("+char(34)+"+string(Row)+"+char(34)+","+char(34)+"+string(Col)+"+char(34)+")"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		216,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setSizePolicy;;_RV_;;parameters;;_RV_;;1,1;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		217,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		218,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		219,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		220,
 		1,
 		"newobj",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;myfilter;;_RV_;;value2;;_RV_;;qAllEvents;;_RV_;;value3;;_RV_;;workWidget;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		221,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setContextMenuEvent;;_RV_;;parameters;;_RV_;;"+char(34)+"RightClickMouse("+char(34)+"+string(Row)+"+char(34)+","+char(34)+"+string(Col)+"+char(34)+")"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		222,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		223,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;installeventfilter;;_RV_;;parameters;;_RV_;;myfilter;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		224,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		225,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;LayoutButtonRow[Row].AddWidget(aButton[Row][Col]);;_RV_;;"
 	],
 	[
 		226,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		227,
 		1,
 		"callmethod",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;LayoutButtonMain;;_RV_;;name;;_RV_;;AddLayout;;_RV_;;parameters;;_RV_;;LayoutButtonRow[Row];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		228,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		229,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setLayout;;_RV_;;parameters;;_RV_;;LayoutButtonMain;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		230,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;show;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		231,
 		1,
 		"return",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		232,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		233,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		234,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		235,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		236,
 		1,
 		"func",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"name;;_RV_;;RestoreSQColors;;_RV_;;parameters;;_RV_;;();;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		237,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"start;;_RV_;;Row = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		238,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"start;;_RV_;;Col = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		239,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"leftside;;_RV_;;value;;_RV_;;rightside;;_RV_;;aSQColor[Row][Col];;_RV_;;"
 	],
 	[
 		240,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"leftside;;_RV_;;value;;_RV_;;rightside;;_RV_;;aSQColor[Row][Col];;_RV_;;"
 	],
 	[
 		241,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"condition;;_RV_;;value = 1;;_RV_;;"
 	],
 	[
 		242,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		243,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:44",
-		"condition;;_RV_;;aArray[Row][Col] = 0 AND playArray[Row][Col]> = 1;;_RV_;;"
+		"01/07/2021",
+		"13:28:57",
+		"condition;;_RV_;;aArray[Row][Col] = 0 AND playArray[Row][Col] >= 1;;_RV_;;"
 	],
 	[
 		244,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;aButton[Row][Col];;_RV_;;"
 	],
 	[
 		245,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setStyleSheet;;_RV_;;parameters;;_RV_;;C_ButtonFirstStyleBlue;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		246,
 		1,
 		"else",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		247,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;aButton[Row][Col];;_RV_;;"
 	],
 	[
 		248,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setStyleSheet;;_RV_;;parameters;;_RV_;;C_ButtonFirstStyle;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		249,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		250,
 		1,
 		"elseif",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"condition;;_RV_;;value = 0;;_RV_;;"
 	],
 	[
 		251,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:44",
-		"condition;;_RV_;;aArray[Row][Col] = 0 AND playArray[Row][Col]> = 1;;_RV_;;"
+		"01/07/2021",
+		"13:28:57",
+		"condition;;_RV_;;aArray[Row][Col] = 0 AND playArray[Row][Col] >= 1;;_RV_;;"
 	],
 	[
 		252,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;aButton[Row][Col];;_RV_;;"
 	],
 	[
 		253,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setStyleSheet;;_RV_;;parameters;;_RV_;;C_ButtonSecondStyleBlue;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		254,
 		1,
 		"else",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		255,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;aButton[Row][Col];;_RV_;;"
 	],
 	[
 		256,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setStyleSheet;;_RV_;;parameters;;_RV_;;C_ButtonSecondStyle;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		257,
 		1,
 		"else",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		258,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;aButton[Row][Col];;_RV_;;"
 	],
 	[
 		259,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setStyleSheet;;_RV_;;parameters;;_RV_;;C_ButtonInvalidStyle;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		260,
 		1,
 		"return",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		261,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		262,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		263,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		264,
 		1,
 		"func",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"name;;_RV_;;NewGameStart;;_RV_;;parameters;;_RV_;;();;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		265,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		266,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		267,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"leftside;;_RV_;;puzzleName;;_RV_;;rightside;;_RV_;;comboPuzzleName.currentText();;_RV_;;"
 	],
 	[
 		268,
 		1,
 		"print",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"text;;_RV_;;"+char(34)+"NewGame: puzzleName: "+char(34)+"+puzzleName+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		269,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"leftside;;_RV_;;playArray;;_RV_;;rightside;;_RV_;;zeroArray;;_RV_;;"
 	],
 	[
 		270,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		271,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"leftside;;_RV_;;playArray;;_RV_;;rightside;;_RV_;;WhichPuzzle(puzzleName);;_RV_;;"
 	],
 	[
 		272,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		273,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"leftside;;_RV_;;aArray;;_RV_;;rightside;;_RV_;;playArray;;_RV_;;"
 	],
 	[
 		274,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"leftside;;_RV_;;aHints;;_RV_;;rightside;;_RV_;;zeroArray;;_RV_;;"
 	],
 	[
 		275,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		276,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		277,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"start;;_RV_;;Row = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		278,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"start;;_RV_;;Col = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		279,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"leftside;;_RV_;;shade;;_RV_;;rightside;;_RV_;;aSQColor[Row][Col];;_RV_;;"
 	],
 	[
 		280,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"condition;;_RV_;;shade = 1;;_RV_;;"
 	],
 	[
 		281,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;aButton[Row][Col];;_RV_;;"
 	],
 	[
 		282,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setStyleSheet;;_RV_;;parameters;;_RV_;;C_ButtonFirstStyle;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		283,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setFont;;_RV_;;parameters;;_RV_;; new qFont("+char(34)+"Calibri"+char(34)+",gfontSize+10,100,0);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		284,
 		1,
 		"else",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		285,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;aButton[Row][Col];;_RV_;;"
 	],
 	[
 		286,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setStyleSheet;;_RV_;;parameters;;_RV_;;C_ButtonSecondStyle;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		287,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setFont;;_RV_;;parameters;;_RV_;; new qFont("+char(34)+"Calibri"+char(34)+",gfontSize+10,100,0);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		288,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"start;;_RV_;;Row = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		289,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		290,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		291,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"start;;_RV_;;Col = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		292,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"leftside;;_RV_;;nbr;;_RV_;;rightside;;_RV_;;aArray[Row][Col];;_RV_;;"
 	],
 	[
 		293,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"condition;;_RV_;;nbr = 0;;_RV_;;"
 	],
 	[
 		294,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;aButton[Row][Col];;_RV_;;"
 	],
 	[
 		295,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		296,
 		1,
 		"else",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		297,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;aButton[Row][Col];;_RV_;;"
 	],
 	[
 		298,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+""+char(34)+"+nbr;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		299,
 		1,
 		"return",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		300,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		301,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		302,
 		1,
 		"func",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"name;;_RV_;;ShowArray;;_RV_;;parameters;;_RV_;;(alpha);;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		303,
 		1,
 		"print",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"text;;_RV_;;nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		304,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"start;;_RV_;;h = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		305,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"start;;_RV_;;v = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		306,
 		1,
 		"print",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"text;;_RV_;;"+char(34)+" "+char(34)+"+alpha[h][v];;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		307,
 		1,
 		"print",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"text;;_RV_;;nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		308,
 		1,
 		"print",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"text;;_RV_;;nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		309,
 		1,
 		"return",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		310,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		311,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		312,
 		1,
 		"func",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"name;;_RV_;;ShowArrayLine;;_RV_;;parameters;;_RV_;;(alpha);;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		313,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		314,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"start;;_RV_;;h = 1;;_RV_;;to;;_RV_;;len(alpha);;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		315,
 		1,
 		"print",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"text;;_RV_;;"+char(34)+" "+char(34)+"+alpha[h];;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		316,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		317,
 		1,
 		"return",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		318,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		319,
 		1,
 		"func",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"name;;_RV_;;UserLeftClick;;_RV_;;parameters;;_RV_;;(Row,Col);;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		320,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"leftside;;_RV_;;Row;;_RV_;;rightside;;_RV_;;0+Row;;_RV_;;"
 	],
 	[
 		321,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		322,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"leftside;;_RV_;;Col;;_RV_;;rightside;;_RV_;;0+Col;;_RV_;;"
 	],
 	[
 		323,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"leftside;;_RV_;;OldRow;;_RV_;;rightside;;_RV_;;Row;;_RV_;;"
 	],
 	[
 		324,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"leftside;;_RV_;;OldCol;;_RV_;;rightside;;_RV_;;Col;;_RV_;;"
 	],
 	[
 		325,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SolveForNumber;;_RV_;;parameters;;_RV_;;Row,Col;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		326,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		327,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;Hint;;_RV_;;parameters;;_RV_;;Row,Col;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		328,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		329,
 		1,
 		"return",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		330,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		331,
 		1,
 		"func",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"name;;_RV_;;RightClickMouse;;_RV_;;parameters;;_RV_;;(Row,Col);;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		332,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"leftside;;_RV_;;Row;;_RV_;;rightside;;_RV_;;0+Row;;_RV_;;"
 	],
 	[
 		333,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		334,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"leftside;;_RV_;;Col;;_RV_;;rightside;;_RV_;;0+Col;;_RV_;;"
 	],
 	[
 		335,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"leftside;;_RV_;;nbr;;_RV_;;rightside;;_RV_;;88;;_RV_;;"
 	],
 	[
 		336,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;; new qMenu(workWidget);;_RV_;;"
 	],
 	[
 		337,
 		1,
 		"braces",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		338,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setStyleSheet;;_RV_;;parameters;;_RV_;;"+char(34)+"selection-color:black; selection-background-color:cyan;"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		339,
 		1,
 		"newobj",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;oAction;;_RV_;;value2;;_RV_;;qAction;;_RV_;;value3;;_RV_;;workWidget;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		340,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+"1"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		341,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setClickEvent;;_RV_;;parameters;;_RV_;;"+char(34)+"click(1)"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		342,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;addAction;;_RV_;;parameters;;_RV_;;oAction;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		343,
 		1,
 		"newobj",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;oAction;;_RV_;;value2;;_RV_;;qAction;;_RV_;;value3;;_RV_;;workWidget;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		344,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+"2"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		345,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setClickEvent;;_RV_;;parameters;;_RV_;;"+char(34)+"click(2)"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		346,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;addAction;;_RV_;;parameters;;_RV_;;oAction;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		347,
 		1,
 		"newobj",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;oAction;;_RV_;;value2;;_RV_;;qAction;;_RV_;;value3;;_RV_;;workWidget;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		348,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+"3"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		349,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setClickEvent;;_RV_;;parameters;;_RV_;;"+char(34)+"click(3)"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		350,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;addAction;;_RV_;;parameters;;_RV_;;oAction;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		351,
 		1,
 		"newobj",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;oAction;;_RV_;;value2;;_RV_;;qAction;;_RV_;;value3;;_RV_;;workWidget;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		352,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+"4"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		353,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:44",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setClickEvent;;_RV_;;parameters;;_RV_;;"+char(34)+"click(4)"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		354,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;addAction;;_RV_;;parameters;;_RV_;;oAction;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		355,
 		1,
 		"newobj",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;oAction;;_RV_;;value2;;_RV_;;qAction;;_RV_;;value3;;_RV_;;workWidget;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		356,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+"5"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		357,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setClickEvent;;_RV_;;parameters;;_RV_;;"+char(34)+"click(5)"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		358,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;addAction;;_RV_;;parameters;;_RV_;;oAction;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		359,
 		1,
 		"newobj",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;oAction;;_RV_;;value2;;_RV_;;qAction;;_RV_;;value3;;_RV_;;workWidget;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		360,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+"6"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		361,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setClickEvent;;_RV_;;parameters;;_RV_;;"+char(34)+"click(6)"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		362,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;addAction;;_RV_;;parameters;;_RV_;;oAction;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		363,
 		1,
 		"newobj",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;oAction;;_RV_;;value2;;_RV_;;qAction;;_RV_;;value3;;_RV_;;workWidget;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		364,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+"7"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		365,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setClickEvent;;_RV_;;parameters;;_RV_;;"+char(34)+"click(7)"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		366,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;addAction;;_RV_;;parameters;;_RV_;;oAction;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		367,
 		1,
 		"newobj",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;oAction;;_RV_;;value2;;_RV_;;qAction;;_RV_;;value3;;_RV_;;workWidget;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		368,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+"8"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		369,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setClickEvent;;_RV_;;parameters;;_RV_;;"+char(34)+"click(8)"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		370,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;addAction;;_RV_;;parameters;;_RV_;;oAction;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		371,
 		1,
 		"newobj",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;oAction;;_RV_;;value2;;_RV_;;qAction;;_RV_;;value3;;_RV_;;workWidget;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		372,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+"9"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		373,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setClickEvent;;_RV_;;parameters;;_RV_;;"+char(34)+"click(9)"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		374,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;addAction;;_RV_;;parameters;;_RV_;;oAction;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		375,
 		1,
 		"newobj",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;oAction;;_RV_;;value2;;_RV_;;qAction;;_RV_;;value3;;_RV_;;workWidget;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		376,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+"0"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		377,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setClickEvent;;_RV_;;parameters;;_RV_;;"+char(34)+"click(0)"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		378,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;addAction;;_RV_;;parameters;;_RV_;;oAction;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		379,
 		1,
 		"newobj",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;oCursor;;_RV_;;value2;;_RV_;;qCursor;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		380,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;exec;;_RV_;;parameters;;_RV_;;oCursor.pos();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		381,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		382,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		383,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		384,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		385,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"leftside;;_RV_;;shade;;_RV_;;rightside;;_RV_;;aSQColor[Row][Col];;_RV_;;"
 	],
 	[
 		386,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"condition;;_RV_;;shade = 1;;_RV_;;"
 	],
 	[
 		387,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;aButton[Row][Col];;_RV_;;"
 	],
 	[
 		388,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setStyleSheet;;_RV_;;parameters;;_RV_;;C_ButtonFirstStyleBlue;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		389,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setFont;;_RV_;;parameters;;_RV_;; new qFont("+char(34)+"Calibri"+char(34)+",gfontSize+10,100,0);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		390,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+""+char(34)+"+gNbrRightClick;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		391,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"condition;;_RV_;;gNbrRightClick = 0;;_RV_;;"
 	],
 	[
 		392,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;aButton[Row][Col];;_RV_;;"
 	],
 	[
 		393,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setStyleSheet;;_RV_;;parameters;;_RV_;;C_ButtonFirstStyle;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		394,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setFont;;_RV_;;parameters;;_RV_;; new qFont("+char(34)+"Calibri"+char(34)+",gfontSize+10,100,0);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		395,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		396,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		397,
 		1,
 		"elseif",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"condition;;_RV_;;shade = 0;;_RV_;;"
 	],
 	[
 		398,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;aButton[Row][Col];;_RV_;;"
 	],
 	[
 		399,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setStyleSheet;;_RV_;;parameters;;_RV_;;C_ButtonSecondStyleBlue;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		400,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setFont;;_RV_;;parameters;;_RV_;; new qFont("+char(34)+"Calibri"+char(34)+",gfontSize+10,100,0);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		401,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+""+char(34)+"+gNbrRightClick;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		402,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"condition;;_RV_;;gNbrRightClick = 0;;_RV_;;"
 	],
 	[
 		403,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;aButton[Row][Col];;_RV_;;"
 	],
 	[
 		404,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setStyleSheet;;_RV_;;parameters;;_RV_;;C_ButtonSecondStyle;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		405,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setFont;;_RV_;;parameters;;_RV_;; new qFont("+char(34)+"Calibri"+char(34)+",gfontSize+10,100,0);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		406,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		407,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		408,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"leftside;;_RV_;;playArray[Row][Col];;_RV_;;rightside;;_RV_;;gNbrRightClick;;_RV_;;"
 	],
 	[
 		409,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		410,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;CheckDuplicates;;_RV_;;parameters;;_RV_;;Row,Col;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		411,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;CountSQFilled;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		412,
 		1,
 		"callmethod",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;TitletInvalidMove;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+" Msg:"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		413,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		414,
 		1,
 		"return",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		415,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		416,
 		1,
 		"func",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"name;;_RV_;;Click;;_RV_;;parameters;;_RV_;;(nbr);;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		417,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		418,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"leftside;;_RV_;;gNbrRightClick;;_RV_;;rightside;;_RV_;;nbr;;_RV_;;"
 	],
 	[
 		419,
 		1,
 		"return",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		420,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		421,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		""
 	],
 	[
 		422,
 		1,
 		"func",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"name;;_RV_;;CountSQFilled;;_RV_;;parameters;;_RV_;;();;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		423,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"leftside;;_RV_;;count;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		424,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"start;;_RV_;;h = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		425,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"start;;_RV_;;v = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		426,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:45",
-		"condition;;_RV_;;playArray[h][v]> = 1;;_RV_;;"
+		"01/07/2021",
+		"13:28:57",
+		"condition;;_RV_;;playArray[h][v] >= 1;;_RV_;;"
 	],
 	[
 		427,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"value;;_RV_;;count++;;_RV_;;"
 	],
 	[
 		428,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:57",
 		"leftside;;_RV_;;left;;_RV_;;rightside;;_RV_;;81-count;;_RV_;;"
 	],
 	[
 		429,
 		1,
 		"callmethod",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;TitletMoves;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+" Filled: "+char(34)+"+count+"+char(34)+" Left: "+char(34)+"+left;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		430,
 		1,
 		"return",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"value;;_RV_;;count;;_RV_;;"
 	],
 	[
 		431,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		432,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		433,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		434,
 		1,
 		"func",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"name;;_RV_;;CheckDuplicates;;_RV_;;parameters;;_RV_;;(Row,Col);;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		435,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		436,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;dupArray;;_RV_;;rightside;;_RV_;;zeroArray;;_RV_;;"
 	],
 	[
 		437,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		438,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		439,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;RestoreSQColors;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		440,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"start;;_RV_;;h = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		441,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;CheckDupRow;;_RV_;;parameters;;_RV_;;h;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		442,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"start;;_RV_;;v = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		443,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;CheckDupCol;;_RV_;;parameters;;_RV_;;v;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		444,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"start;;_RV_;;r = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		445,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;CheckDupRegion;;_RV_;;parameters;;_RV_;;r;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		446,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"start;;_RV_;;h = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		447,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"start;;_RV_;;v = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		448,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:45",
-		"condition;;_RV_;;dupArray[h][v]>1;;_RV_;;"
+		"01/07/2021",
+		"13:28:58",
+		"condition;;_RV_;;dupArray[h][v] > 1;;_RV_;;"
 	],
 	[
 		449,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"value;;_RV_;;aButton[h][v];;_RV_;;"
 	],
 	[
 		450,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setStyleSheet;;_RV_;;parameters;;_RV_;;C_ButtonInvalidStyle;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		451,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		452,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"value;;_RV_;;aButton[Row][Col];;_RV_;;"
 	],
 	[
 		453,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setStyleSheet;;_RV_;;parameters;;_RV_;;C_ButtonPickStyle;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		454,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		455,
 		1,
 		"return",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		456,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		457,
 		1,
 		"func",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"name;;_RV_;;CheckDupRow;;_RV_;;parameters;;_RV_;;(Row);;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		458,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;FlagDup;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		459,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;nbrCount;;_RV_;;rightside;;_RV_;;[0,0,0,0,0,0,0,0,0];;_RV_;;"
 	],
 	[
 		460,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		461,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"start;;_RV_;;i = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		462,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;nbr;;_RV_;;rightside;;_RV_;;playArray[Row][i];;_RV_;;"
 	],
 	[
 		463,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:45",
-		"condition;;_RV_;;nbr>0;;_RV_;;"
+		"01/07/2021",
+		"13:28:58",
+		"condition;;_RV_;;nbr > 0;;_RV_;;"
 	],
 	[
 		464,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;nbrCount[nbr];;_RV_;;rightside;;_RV_;;nbrCount[nbr]++;;_RV_;;"
 	],
 	[
 		465,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		466,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"start;;_RV_;;i = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		467,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:45",
-		"condition;;_RV_;;nbrCount[i]>1;;_RV_;;"
+		"01/07/2021",
+		"13:28:58",
+		"condition;;_RV_;;nbrCount[i] > 1;;_RV_;;"
 	],
 	[
 		468,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;FlagDup;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		469,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		470,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		471,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"start;;_RV_;;k = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		472,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"condition;;_RV_;;playArray[Row][k] = i;;_RV_;;"
 	],
 	[
 		473,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;dupArray[Row][k];;_RV_;;rightside;;_RV_;;nbrCount[i];;_RV_;;"
 	],
 	[
 		474,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		475,
 		1,
 		"return",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"value;;_RV_;;FlagDup;;_RV_;;"
 	],
 	[
 		476,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		477,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		478,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		479,
 		1,
 		"func",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"name;;_RV_;;CheckDupCol;;_RV_;;parameters;;_RV_;;(Col);;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		480,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;FlagDup;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		481,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;nbrCount;;_RV_;;rightside;;_RV_;;[0,0,0,0,0,0,0,0,0];;_RV_;;"
 	],
 	[
 		482,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		483,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"start;;_RV_;;i = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		484,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;nbr;;_RV_;;rightside;;_RV_;;playArray[i][Col];;_RV_;;"
 	],
 	[
 		485,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:45",
-		"condition;;_RV_;;nbr>0;;_RV_;;"
+		"01/07/2021",
+		"13:28:58",
+		"condition;;_RV_;;nbr > 0;;_RV_;;"
 	],
 	[
 		486,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;nbrCount[nbr];;_RV_;;rightside;;_RV_;;nbrCount[nbr]++;;_RV_;;"
 	],
 	[
 		487,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		488,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"start;;_RV_;;i = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		489,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:45",
-		"condition;;_RV_;;nbrCount[i]>1;;_RV_;;"
+		"01/07/2021",
+		"13:28:58",
+		"condition;;_RV_;;nbrCount[i] > 1;;_RV_;;"
 	],
 	[
 		490,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;FlagDup;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		491,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		492,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		493,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"start;;_RV_;;k = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		494,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"condition;;_RV_;;playArray[k][Col] = i;;_RV_;;"
 	],
 	[
 		495,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;dupArray[k][Col];;_RV_;;rightside;;_RV_;;nbrCount[i];;_RV_;;"
 	],
 	[
 		496,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		497,
 		1,
 		"return",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"value;;_RV_;;FlagDup;;_RV_;;"
 	],
 	[
 		498,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		499,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		500,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		501,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		502,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		503,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		504,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		505,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		506,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		507,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		508,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		509,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		510,
 		1,
 		"func",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"name;;_RV_;;CheckDupRegion;;_RV_;;parameters;;_RV_;;(Region);;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		511,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;FlagDup;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		512,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;nbrCount;;_RV_;;rightside;;_RV_;;[0,0,0,0,0,0,0,0,0];;_RV_;;"
 	],
 	[
 		513,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"start;;_RV_;;h = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		514,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"start;;_RV_;;v = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		515,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"condition;;_RV_;;regionArray[h][v] = Region;;_RV_;;"
 	],
 	[
 		516,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;nbr;;_RV_;;rightside;;_RV_;;playArray[h][v];;_RV_;;"
 	],
 	[
 		517,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:45",
-		"condition;;_RV_;;nbr>0;;_RV_;;"
+		"01/07/2021",
+		"13:28:58",
+		"condition;;_RV_;;nbr > 0;;_RV_;;"
 	],
 	[
 		518,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;nbrCount[nbr];;_RV_;;rightside;;_RV_;;nbrCount[nbr]++;;_RV_;;"
 	],
 	[
 		519,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"start;;_RV_;;h = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		520,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"start;;_RV_;;v = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		521,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"condition;;_RV_;;regionArray[h][v] = Region;;_RV_;;"
 	],
 	[
 		522,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"start;;_RV_;;nbr = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		523,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:45",
-		"condition;;_RV_;;nbrCount[nbr]>1 AND playArray[h][v] = nbr;;_RV_;;"
+		"01/07/2021",
+		"13:28:58",
+		"condition;;_RV_;;nbrCount[nbr] > 1 AND playArray[h][v] = nbr;;_RV_;;"
 	],
 	[
 		524,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;FlagDup;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		525,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;dupArray[h][v];;_RV_;;rightside;;_RV_;;nbrCount[nbr];;_RV_;;"
 	],
 	[
 		526,
 		1,
 		"return",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"value;;_RV_;;FlagDup;;_RV_;;"
 	],
 	[
 		527,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		528,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		529,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		530,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		531,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		532,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		533,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		534,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		535,
 		1,
 		"func",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"name;;_RV_;;Hint;;_RV_;;parameters;;_RV_;;(Row,Col);;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		536,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		537,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		538,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		539,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		540,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		541,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		542,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		543,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		544,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;nbrCount;;_RV_;;rightside;;_RV_;;[0,0,0,0,0,0,0,0,0,0,0];;_RV_;;"
 	],
 	[
 		545,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		546,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		547,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"start;;_RV_;;i = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		548,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;nbr;;_RV_;;rightside;;_RV_;;playArray[Row][i];;_RV_;;"
 	],
 	[
 		549,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:45",
-		"condition;;_RV_;;nbr>0;;_RV_;;"
+		"01/07/2021",
+		"13:28:58",
+		"condition;;_RV_;;nbr > 0;;_RV_;;"
 	],
 	[
 		550,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;nbrCount[nbr];;_RV_;;rightside;;_RV_;;nbrCount[nbr]++;;_RV_;;"
 	],
 	[
 		551,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		552,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		553,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		554,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"start;;_RV_;;i = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		555,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:45",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;nbr;;_RV_;;rightside;;_RV_;;playArray[i][Col];;_RV_;;"
 	],
 	[
 		556,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:45",
-		"condition;;_RV_;;nbr>0;;_RV_;;"
+		"01/07/2021",
+		"13:28:58",
+		"condition;;_RV_;;nbr > 0;;_RV_;;"
 	],
 	[
 		557,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;nbrCount[nbr];;_RV_;;rightside;;_RV_;;nbrCount[nbr]++;;_RV_;;"
 	],
 	[
 		558,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		559,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		560,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		561,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;RegionID;;_RV_;;rightside;;_RV_;;regionArray[Row][Col];;_RV_;;"
 	],
 	[
 		562,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		563,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		"start;;_RV_;;h = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		564,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		"start;;_RV_;;v = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		565,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;curRegion;;_RV_;;rightside;;_RV_;;regionArray[h][v];;_RV_;;"
 	],
 	[
 		566,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		567,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		568,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		"condition;;_RV_;;curRegion = RegionID;;_RV_;;"
 	],
 	[
 		569,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;nbr;;_RV_;;rightside;;_RV_;;playArray[h][v];;_RV_;;"
 	],
 	[
 		570,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:46",
-		"condition;;_RV_;;nbr>0;;_RV_;;"
+		"01/07/2021",
+		"13:28:58",
+		"condition;;_RV_;;nbr > 0;;_RV_;;"
 	],
 	[
 		571,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;nbrCount[nbr];;_RV_;;rightside;;_RV_;;nbrCount[nbr]++;;_RV_;;"
 	],
 	[
 		572,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		573,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		574,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		575,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		576,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		577,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;MsgHint;;_RV_;;rightside;;_RV_;;"+char(34)+"Hint:"+char(34)+";;_RV_;;"
 	],
 	[
 		578,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;HintNbrs;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		579,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;gHintArray;;_RV_;;rightside;;_RV_;;[0,0,0,0,0,0,0,0,0,0,0];;_RV_;;"
 	],
 	[
 		580,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		581,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;gHintArray[10];;_RV_;;rightside;;_RV_;;Row;;_RV_;;"
 	],
 	[
 		582,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;gHintArray[11];;_RV_;;rightside;;_RV_;;Col;;_RV_;;"
 	],
 	[
 		583,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;k;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		584,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		"start;;_RV_;;i = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		585,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		586,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		"condition;;_RV_;;nbrCount[i] = 0;;_RV_;;"
 	],
 	[
 		587,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;MsgHint;;_RV_;;rightside;;_RV_;;MsgHint+"+char(34)+" "+char(34)+"+i;;_RV_;;"
 	],
 	[
 		588,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;HintNbrs;;_RV_;;rightside;;_RV_;;HintNbrs+i;;_RV_;;"
 	],
 	[
 		589,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		590,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;gHintArray[i];;_RV_;;rightside;;_RV_;;i;;_RV_;;"
 	],
 	[
 		591,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		592,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		"value;;_RV_;;k++;;_RV_;;"
 	],
 	[
 		593,
 		1,
 		"callmethod",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;TitletInvalidMove;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;MsgHint;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		594,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;InsertNbrsSQ;;_RV_;;parameters;;_RV_;;Row,Col,HintNbrs;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		595,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		596,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		597,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		598,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		599,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		600,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;uniqNbr;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		601,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;k;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		602,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		603,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		"start;;_RV_;;i = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		604,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		605,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		"condition;;_RV_;;nbrCount[i] = 0;;_RV_;;"
 	],
 	[
 		606,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		"value;;_RV_;;k++;;_RV_;;"
 	],
 	[
 		607,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		608,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		"leftside;;_RV_;;uniqNbr;;_RV_;;rightside;;_RV_;;i;;_RV_;;"
 	],
 	[
 		609,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		610,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		"condition;;_RV_;;k = 1;;_RV_;;"
 	],
 	[
 		611,
 		1,
 		"return",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		"value;;_RV_;;uniqNbr;;_RV_;;"
 	],
 	[
 		612,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		613,
 		1,
 		"return",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		"value;;_RV_;;0;;_RV_;;"
 	],
 	[
 		614,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		615,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		616,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		617,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		618,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		619,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		620,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		621,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		622,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		623,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		624,
 		1,
 		"func",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		"name;;_RV_;;Solve;;_RV_;;parameters;;_RV_;;();;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		625,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		""
 	],
 	[
 		626,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:58",
 		"start;;_RV_;;repeat = 1;;_RV_;;to;;_RV_;;1;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		627,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"start;;_RV_;;h = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		628,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"start;;_RV_;;v = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		629,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		630,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"condition;;_RV_;;playArray[h][v] = 0;;_RV_;;"
 	],
 	[
 		631,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"leftside;;_RV_;;uniqNbr;;_RV_;;rightside;;_RV_;;Hint(h,v);;_RV_;;"
 	],
 	[
 		632,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		633,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		634,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"condition;;_RV_;;uniqNbr! = 0;;_RV_;;"
 	],
 	[
 		635,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;InsertUniqNbr;;_RV_;;parameters;;_RV_;;h,v,uniqNbr;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		636,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"leftside;;_RV_;;count;;_RV_;;rightside;;_RV_;;CountSQFilled();;_RV_;;"
 	],
 	[
 		637,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"condition;;_RV_;;count = 81;;_RV_;;"
 	],
 	[
 		638,
 		1,
 		"callmethod",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;TitletInvalidMove;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+" Msg: FINISHED "+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		639,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		640,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		641,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"start;;_RV_;;s = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;3;;_RV_;;"
 	],
 	[
 		642,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"start;;_RV_;;t = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;3;;_RV_;;"
 	],
 	[
 		643,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SolveForNumber;;_RV_;;parameters;;_RV_;;s,t;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		644,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		645,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		646,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		647,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SolveaHintsArray;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		648,
 		1,
 		"return",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		649,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		650,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		651,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		652,
 		1,
 		"func",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"name;;_RV_;;InsertUniqNbr;;_RV_;;parameters;;_RV_;;(h,v,uniqNbr);;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		653,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		654,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"leftside;;_RV_;;playArray[h][v];;_RV_;;rightside;;_RV_;;uniqNbr;;_RV_;;"
 	],
 	[
 		655,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"leftside;;_RV_;;Value;;_RV_;;rightside;;_RV_;;aSQColor[h][v];;_RV_;;"
 	],
 	[
 		656,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		657,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"condition;;_RV_;;Value = 1;;_RV_;;"
 	],
 	[
 		658,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"value;;_RV_;;aButton[h][v];;_RV_;;"
 	],
 	[
 		659,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setStyleSheet;;_RV_;;parameters;;_RV_;;C_ButtonFirstStyleBlue;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		660,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setFont;;_RV_;;parameters;;_RV_;; new qFont("+char(34)+"Calibri"+char(34)+",gfontSize+10,100,0);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		661,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+""+char(34)+"+uniqNbr;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		662,
 		1,
 		"elseif",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"condition;;_RV_;;Value = 0;;_RV_;;"
 	],
 	[
 		663,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"value;;_RV_;;aButton[h][v];;_RV_;;"
 	],
 	[
 		664,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setStyleSheet;;_RV_;;parameters;;_RV_;;C_ButtonSecondStyleBlue;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		665,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setFont;;_RV_;;parameters;;_RV_;; new qFont("+char(34)+"Calibri"+char(34)+",gfontSize+10,100,0);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		666,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+""+char(34)+"+uniqNbr;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		667,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		668,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;FillHintsArray;;_RV_;;parameters;;_RV_;;h,v,uniqNbr;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		669,
 		1,
 		"return",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		670,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		671,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		672,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		673,
 		1,
 		"func",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"name;;_RV_;;InsertUniqNbrRED;;_RV_;;parameters;;_RV_;;(h,v,uniqNbr);;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		674,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		675,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"leftside;;_RV_;;playArray[h][v];;_RV_;;rightside;;_RV_;;uniqNbr;;_RV_;;"
 	],
 	[
 		676,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"leftside;;_RV_;;Value;;_RV_;;rightside;;_RV_;;aSQColor[h][v];;_RV_;;"
 	],
 	[
 		677,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		678,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"condition;;_RV_;;Value = 1;;_RV_;;"
 	],
 	[
 		679,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"value;;_RV_;;aButton[h][v];;_RV_;;"
 	],
 	[
 		680,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setStyleSheet;;_RV_;;parameters;;_RV_;;C_ButtonFirstStyleRed;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		681,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setFont;;_RV_;;parameters;;_RV_;; new qFont("+char(34)+"Calibri"+char(34)+",gfontSize+10,100,0);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		682,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+""+char(34)+"+uniqNbr;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		683,
 		1,
 		"elseif",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"condition;;_RV_;;Value = 0;;_RV_;;"
 	],
 	[
 		684,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"value;;_RV_;;aButton[h][v];;_RV_;;"
 	],
 	[
 		685,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setStyleSheet;;_RV_;;parameters;;_RV_;;C_ButtonSecondStyleRed;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		686,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setFont;;_RV_;;parameters;;_RV_;; new qFont("+char(34)+"Calibri"+char(34)+",gfontSize+10,100,0);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		687,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+""+char(34)+"+uniqNbr;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		688,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		689,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;FillHintsArray;;_RV_;;parameters;;_RV_;;h,v,uniqNbr;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		690,
 		1,
 		"return",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		691,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		692,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		693,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		694,
 		1,
 		"func",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"name;;_RV_;;InsertNbrsSQ;;_RV_;;parameters;;_RV_;;(h,v,HintNbrs);;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		695,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		696,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		697,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"condition;;_RV_;;HintsInSquare.isChecked() = 1;;_RV_;;"
 	],
 	[
 		698,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"condition;;_RV_;;playArray[h][v]! = 0;;_RV_;;"
 	],
 	[
 		699,
 		1,
 		"return",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		700,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"leftside;;_RV_;;Value;;_RV_;;rightside;;_RV_;;aSQColor[h][v];;_RV_;;"
 	],
 	[
 		701,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		702,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"condition;;_RV_;;Value = 1;;_RV_;;"
 	],
 	[
 		703,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"value;;_RV_;;aButton[h][v];;_RV_;;"
 	],
 	[
 		704,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setStyleSheet;;_RV_;;parameters;;_RV_;;C_ButtonFirstStyleCyan;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		705,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setFont;;_RV_;;parameters;;_RV_;; new qFont("+char(34)+"Calibri"+char(34)+",gfontSize-2,100,0);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		706,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+""+char(34)+"+HintNbrs;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		707,
 		1,
 		"elseif",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"condition;;_RV_;;Value = 0;;_RV_;;"
 	],
 	[
 		708,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"value;;_RV_;;aButton[h][v];;_RV_;;"
 	],
 	[
 		709,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setStyleSheet;;_RV_;;parameters;;_RV_;;C_ButtonSecondStyleCyan;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		710,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setFont;;_RV_;;parameters;;_RV_;; new qFont("+char(34)+"Calibri"+char(34)+",gfontSize-2,100,0);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		711,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+""+char(34)+"+HintNbrs;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		712,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		713,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;FillHintsArray;;_RV_;;parameters;;_RV_;;h,v,HintNbrs;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		714,
 		1,
 		"else",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		715,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		716,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"leftside;;_RV_;;Value;;_RV_;;rightside;;_RV_;;aSQColor[h][v];;_RV_;;"
 	],
 	[
 		717,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		718,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"condition;;_RV_;;Value = 1;;_RV_;;"
 	],
 	[
 		719,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"value;;_RV_;;aButton[h][v];;_RV_;;"
 	],
 	[
 		720,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setStyleSheet;;_RV_;;parameters;;_RV_;;C_ButtonFirstStyleCyan;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		721,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		722,
 		1,
 		"elseif",
-		"27/06/2021",
-		"19:25:46",
+		"01/07/2021",
+		"13:28:59",
 		"condition;;_RV_;;Value = 0;;_RV_;;"
 	],
 	[
 		723,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		"value;;_RV_;;aButton[h][v];;_RV_;;"
 	],
 	[
 		724,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setStyleSheet;;_RV_;;parameters;;_RV_;;C_ButtonSecondStyleCyan;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		725,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		726,
 		1,
 		"return",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		727,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		728,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		729,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		730,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		731,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		732,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		733,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		734,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		735,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		736,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		737,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		738,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		739,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		740,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		741,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		742,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		743,
 		1,
 		"func",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		"name;;_RV_;;SolveForNumber;;_RV_;;parameters;;_RV_;;(Row,Col);;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		744,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		"leftside;;_RV_;;ThisRow;;_RV_;;rightside;;_RV_;;Row;;_RV_;;"
 	],
 	[
 		745,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		"leftside;;_RV_;;ThisCol;;_RV_;;rightside;;_RV_;;Col;;_RV_;;"
 	],
 	[
 		746,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		747,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		"leftside;;_RV_;;RegionForNbr;;_RV_;;rightside;;_RV_;;[[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0]];;_RV_;;"
 	],
 	[
 		748,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		749,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		750,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		"leftside;;_RV_;;nbrCount;;_RV_;;rightside;;_RV_;;[0,0,0,0,0,0,0,0,0,0,0];;_RV_;;"
 	],
 	[
 		751,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		752,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		753,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		754,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		"leftside;;_RV_;;RegionID;;_RV_;;rightside;;_RV_;;regionArray[ThisRow][ThisCol];;_RV_;;"
 	],
 	[
 		755,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		756,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		"leftside;;_RV_;;k;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		757,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		"start;;_RV_;;Row = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		758,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		759,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		760,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		761,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		762,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		763,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		764,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		765,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		766,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		"start;;_RV_;;Col = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		767,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		"leftside;;_RV_;;curRegion;;_RV_;;rightside;;_RV_;;regionArray[Row][Col];;_RV_;;"
 	],
 	[
 		768,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		769,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		770,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		"condition;;_RV_;;curRegion = RegionID AND playArray[Row][Col] = 0;;_RV_;;"
 	],
 	[
 		771,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		"leftside;;_RV_;;uniqNbr;;_RV_;;rightside;;_RV_;;Hint(Row,Col);;_RV_;;"
 	],
 	[
 		772,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		773,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		774,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		"condition;;_RV_;;uniqNbr! = 0;;_RV_;;"
 	],
 	[
 		775,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;InsertUniqNbr;;_RV_;;parameters;;_RV_;;Row,Col,uniqNbr;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		776,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		777,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		778,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		"leftside;;_RV_;;RegionForNbr[k];;_RV_;;rightside;;_RV_;;gHintArray;;_RV_;;"
 	],
 	[
 		779,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		"value;;_RV_;;k++;;_RV_;;"
 	],
 	[
 		780,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		781,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		782,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		783,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		784,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		""
 	],
 	[
 		785,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		"start;;_RV_;;h = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		786,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		"start;;_RV_;;v = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		787,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:28:59",
 		"leftside;;_RV_;;nbr;;_RV_;;rightside;;_RV_;;RegionForNbr[h][v];;_RV_;;"
 	],
 	[
 		788,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:47",
-		"condition;;_RV_;;nbr>0;;_RV_;;"
+		"01/07/2021",
+		"13:28:59",
+		"condition;;_RV_;;nbr > 0;;_RV_;;"
 	],
 	[
 		789,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		"leftside;;_RV_;;nbrCount[nbr];;_RV_;;rightside;;_RV_;;nbrCount[nbr]++;;_RV_;;"
 	],
 	[
 		790,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		791,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		792,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		793,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		794,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		795,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		796,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		797,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		798,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		799,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		800,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		801,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		802,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		803,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		804,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		805,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		806,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		807,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		808,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		809,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		"leftside;;_RV_;;PosNbr;;_RV_;;rightside;;_RV_;;88;;_RV_;;"
 	],
 	[
 		810,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		"start;;_RV_;;k = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		811,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		"condition;;_RV_;;nbrCount[k] = 1;;_RV_;;"
 	],
 	[
 		812,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		"leftside;;_RV_;;PosNbr;;_RV_;;rightside;;_RV_;;k;;_RV_;;"
 	],
 	[
 		813,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		814,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		815,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		"start;;_RV_;;h = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		816,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		"start;;_RV_;;v = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		817,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		"condition;;_RV_;;RegionForNbr[h][v] = PosNbr;;_RV_;;"
 	],
 	[
 		818,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		"leftside;;_RV_;;GetRow;;_RV_;;rightside;;_RV_;;RegionForNbr[h][10];;_RV_;;"
 	],
 	[
 		819,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		"leftside;;_RV_;;GetCol;;_RV_;;rightside;;_RV_;;RegionForNbr[h][11];;_RV_;;"
 	],
 	[
 		820,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;InsertUniqNbr;;_RV_;;parameters;;_RV_;;GetRow,GetCol,PosNbr;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		821,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		822,
 		1,
 		"exit",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		"value;;_RV_;;2;;_RV_;;"
 	],
 	[
 		823,
 		1,
 		"return",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		824,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		825,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		826,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		827,
 		1,
 		"func",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		"name;;_RV_;;FillHintsArray;;_RV_;;parameters;;_RV_;;(Row,Col,Value);;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		828,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		829,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		830,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		831,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		832,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		833,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		834,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		835,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		836,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		837,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		838,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		839,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		840,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		841,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		842,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		843,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		844,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		845,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		846,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		847,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		848,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		849,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		850,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		851,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		852,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		853,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		854,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		"leftside;;_RV_;;aHints[Row][Col];;_RV_;;rightside;;_RV_;;Value;;_RV_;;"
 	],
 	[
 		855,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		856,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		857,
 		1,
 		"return",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		858,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		859,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		860,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		861,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		862,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		863,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		864,
 		1,
 		"func",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		"name;;_RV_;;SolveaHintsArray;;_RV_;;parameters;;_RV_;;();;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		865,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		866,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		867,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		868,
 		1,
 		"print",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		"text;;_RV_;;nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		869,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		"start;;_RV_;;h = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		870,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		871,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		"start;;_RV_;;v = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		872,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		"leftside;;_RV_;;FindNbr;;_RV_;;rightside;;_RV_;;aHints[h][v];;_RV_;;"
 	],
 	[
 		873,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:47",
-		"condition;;_RV_;;FindNbr! = 0 OR FindNbr>9;;_RV_;;"
+		"01/07/2021",
+		"13:29:00",
+		"condition;;_RV_;;FindNbr! = 0 OR FindNbr > 9;;_RV_;;"
 	],
 	[
 		874,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		875,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		"start;;_RV_;;k = v+1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		876,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		877,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		878,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		"condition;;_RV_;;aHints[h][k] = FindNbr;;_RV_;;"
 	],
 	[
 		879,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;RemoveHintDigits;;_RV_;;parameters;;_RV_;;"+char(34)+"Horizontal"+char(34)+",h,v,k,FindNbr;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		880,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		881,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		882,
 		1,
 		"print",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		"text;;_RV_;;nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		883,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		884,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:47",
+		"01/07/2021",
+		"13:29:00",
 		"start;;_RV_;;v = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		885,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		886,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		"start;;_RV_;;h = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		887,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		"leftside;;_RV_;;FindNbr;;_RV_;;rightside;;_RV_;;aHints[h][v];;_RV_;;"
 	],
 	[
 		888,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:48",
-		"condition;;_RV_;;FindNbr! = 0 OR FindNbr>9;;_RV_;;"
+		"01/07/2021",
+		"13:29:00",
+		"condition;;_RV_;;FindNbr! = 0 OR FindNbr > 9;;_RV_;;"
 	],
 	[
 		889,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		890,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		"start;;_RV_;;k = h+1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		891,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		892,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		893,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		894,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		"condition;;_RV_;;aHints[k][v] = FindNbr;;_RV_;;"
 	],
 	[
 		895,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;RemoveHintDigits;;_RV_;;parameters;;_RV_;;"+char(34)+"Vertical"+char(34)+",h,v,k,FindNbr;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		896,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		897,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		898,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		899,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		900,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		901,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		902,
 		1,
 		"print",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		"text;;_RV_;;nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		903,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		"leftside;;_RV_;;curRegion;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		904,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		905,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		"start;;_RV_;;RegionID = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		906,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		"leftside;;_RV_;;aRegion;;_RV_;;rightside;;_RV_;;[0,0,0,0,0,0,0,0,0];;_RV_;;"
 	],
 	[
 		907,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		908,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		"leftside;;_RV_;;i;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		909,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		"start;;_RV_;;h = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		910,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		911,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		"start;;_RV_;;v = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		912,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		"leftside;;_RV_;;curRegion;;_RV_;;rightside;;_RV_;;regionArray[h][v];;_RV_;;"
 	],
 	[
 		913,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		914,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		"condition;;_RV_;;curRegion = RegionID;;_RV_;;"
 	],
 	[
 		915,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		"leftside;;_RV_;;aRegion[i];;_RV_;;rightside;;_RV_;;aHints[h][v];;_RV_;;"
 	],
 	[
 		916,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		917,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		"value;;_RV_;;i++;;_RV_;;"
 	],
 	[
 		918,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		919,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		920,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		"start;;_RV_;;j = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		921,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		"leftside;;_RV_;;FindNbr;;_RV_;;rightside;;_RV_;;aRegion[j];;_RV_;;"
 	],
 	[
 		922,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:48",
-		"condition;;_RV_;;FindNbr! = 0 OR FindNbr>9;;_RV_;;"
+		"01/07/2021",
+		"13:29:00",
+		"condition;;_RV_;;FindNbr! = 0 OR FindNbr > 9;;_RV_;;"
 	],
 	[
 		923,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		924,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		"start;;_RV_;;k = j+1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		925,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		926,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		927,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		928,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		929,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		930,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		"condition;;_RV_;;aRegion[k] = FindNbr;;_RV_;;"
 	],
 	[
 		931,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:00",
 		""
 	],
 	[
 		932,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:48",
-		"condition;;_RV_;;FindNbr> = 11 AND FindNbr< = 99;;_RV_;;"
+		"01/07/2021",
+		"13:29:00",
+		"condition;;_RV_;;FindNbr >= 11 AND FindNbr <= 99;;_RV_;;"
 	],
 	[
 		933,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		"start;;_RV_;;Pos = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		934,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		935,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:48",
-		"condition;;_RV_;;!(Pos = j OR Pos = k) AND aRegion[Pos]>9;;_RV_;;"
+		"01/07/2021",
+		"13:29:01",
+		"condition;;_RV_;;!(Pos = j OR Pos = k) AND aRegion[Pos] > 9;;_RV_;;"
 	],
 	[
 		936,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		"leftside;;_RV_;;sHints;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+"+aRegion[Pos];;_RV_;;"
 	],
 	[
 		937,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		"leftside;;_RV_;;sFindNbr;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+"+FindNbr;;_RV_;;"
 	],
 	[
 		938,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		"leftside;;_RV_;;sHints;;_RV_;;rightside;;_RV_;;substr(sHints,sFindNbr[1],"+char(34)+""+char(34)+");;_RV_;;"
 	],
 	[
 		939,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		940,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		"leftside;;_RV_;;sHints;;_RV_;;rightside;;_RV_;;substr(sHints,sFindNbr[2],"+char(34)+""+char(34)+");;_RV_;;"
 	],
 	[
 		941,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		"leftside;;_RV_;;nHints;;_RV_;;rightside;;_RV_;;number(sHints);;_RV_;;"
 	],
 	[
 		942,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		"leftside;;_RV_;;aRegion[Pos];;_RV_;;rightside;;_RV_;;nHints;;_RV_;;"
 	],
 	[
 		943,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		944,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		945,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		"leftside;;_RV_;;i;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		946,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		"start;;_RV_;;p = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		947,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		948,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		"start;;_RV_;;q = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		949,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		"leftside;;_RV_;;curRegion;;_RV_;;rightside;;_RV_;;regionArray[p][q];;_RV_;;"
 	],
 	[
 		950,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		951,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		952,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		"condition;;_RV_;;curRegion = RegionID;;_RV_;;"
 	],
 	[
 		953,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		"leftside;;_RV_;;regNbr;;_RV_;;rightside;;_RV_;;aRegion[i];;_RV_;;"
 	],
 	[
 		954,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		"leftside;;_RV_;;aHints[p][q];;_RV_;;rightside;;_RV_;;regNbr;;_RV_;;"
 	],
 	[
 		955,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		956,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		957,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:48",
-		"condition;;_RV_;;regNbr>9;;_RV_;;"
+		"01/07/2021",
+		"13:29:01",
+		"condition;;_RV_;;regNbr > 9;;_RV_;;"
 	],
 	[
 		958,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;InsertNbrsSQ;;_RV_;;parameters;;_RV_;;p,q,regNbr;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		959,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:48",
-		"condition;;_RV_;;regNbr>0 AND regNbr< = 9;;_RV_;;"
+		"01/07/2021",
+		"13:29:01",
+		"condition;;_RV_;;regNbr > 0 AND regNbr <= 9;;_RV_;;"
 	],
 	[
 		960,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;InsertUniqNbr;;_RV_;;parameters;;_RV_;;p,q,regNbr;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		961,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		"value;;_RV_;;i++;;_RV_;;"
 	],
 	[
 		962,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		963,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		964,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		965,
 		1,
 		"return",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		966,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		967,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		968,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		969,
 		1,
 		"func",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		"name;;_RV_;;RemoveHintDigits;;_RV_;;parameters;;_RV_;;(Type,h,v,k,FindNbr);;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		970,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		971,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		972,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		973,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		"condition;;_RV_;;Type = "+char(34)+"Horizontal"+char(34)+";;_RV_;;"
 	],
 	[
 		974,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		975,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:48",
-		"condition;;_RV_;;FindNbr> = 11 AND FindNbr< = 99;;_RV_;;"
+		"01/07/2021",
+		"13:29:01",
+		"condition;;_RV_;;FindNbr >= 11 AND FindNbr <= 99;;_RV_;;"
 	],
 	[
 		976,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		"leftside;;_RV_;;Row;;_RV_;;rightside;;_RV_;;h;;_RV_;;"
 	],
 	[
 		977,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		"start;;_RV_;;Col = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		978,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		979,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:48",
-		"condition;;_RV_;;!(Col = v OR Col = k) AND aHints[Row][Col]>9;;_RV_;;"
+		"01/07/2021",
+		"13:29:01",
+		"condition;;_RV_;;!(Col = v OR Col = k) AND aHints[Row][Col] > 9;;_RV_;;"
 	],
 	[
 		980,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		"leftside;;_RV_;;sHints;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+"+aHints[Row][Col];;_RV_;;"
 	],
 	[
 		981,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		"leftside;;_RV_;;sFindNbr;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+"+FindNbr;;_RV_;;"
 	],
 	[
 		982,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		"leftside;;_RV_;;sHints;;_RV_;;rightside;;_RV_;;substr(sHints,sFindNbr[1],"+char(34)+""+char(34)+");;_RV_;;"
 	],
 	[
 		983,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		"leftside;;_RV_;;sHints;;_RV_;;rightside;;_RV_;;substr(sHints,sFindNbr[2],"+char(34)+""+char(34)+");;_RV_;;"
 	],
 	[
 		984,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		"leftside;;_RV_;;nHints;;_RV_;;rightside;;_RV_;;number(sHints);;_RV_;;"
 	],
 	[
 		985,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		986,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:48",
-		"condition;;_RV_;;nHints>9;;_RV_;;"
+		"01/07/2021",
+		"13:29:01",
+		"condition;;_RV_;;nHints > 9;;_RV_;;"
 	],
 	[
 		987,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;InsertNbrsSQ;;_RV_;;parameters;;_RV_;;Row,Col,nHints;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		988,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:48",
-		"condition;;_RV_;;nHints< = 9;;_RV_;;"
+		"01/07/2021",
+		"13:29:01",
+		"condition;;_RV_;;nHints <= 9;;_RV_;;"
 	],
 	[
 		989,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;InsertUniqNbr;;_RV_;;parameters;;_RV_;;Row,Col,nHints;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		990,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		991,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		992,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		993,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		"condition;;_RV_;;Type = "+char(34)+"Vertical"+char(34)+";;_RV_;;"
 	],
 	[
 		994,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		995,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:48",
-		"condition;;_RV_;;FindNbr> = 11 AND FindNbr< = 99;;_RV_;;"
+		"01/07/2021",
+		"13:29:01",
+		"condition;;_RV_;;FindNbr >= 11 AND FindNbr <= 99;;_RV_;;"
 	],
 	[
 		996,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		"leftside;;_RV_;;Col;;_RV_;;rightside;;_RV_;;v;;_RV_;;"
 	],
 	[
 		997,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		"start;;_RV_;;Row = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		998,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:48",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		999,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:49",
-		"condition;;_RV_;;!(Row = h OR Row = k) AND aHints[Row][Col]>9;;_RV_;;"
+		"01/07/2021",
+		"13:29:01",
+		"condition;;_RV_;;!(Row = h OR Row = k) AND aHints[Row][Col] > 9;;_RV_;;"
 	],
 	[
 		1000,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:01",
 		"leftside;;_RV_;;sHints;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+"+aHints[Row][Col];;_RV_;;"
 	],
 	[
 		1001,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:01",
 		"leftside;;_RV_;;sFindNbr;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+"+FindNbr;;_RV_;;"
 	],
 	[
 		1002,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:01",
 		"leftside;;_RV_;;sHints;;_RV_;;rightside;;_RV_;;substr(sHints,sFindNbr[1],"+char(34)+""+char(34)+");;_RV_;;"
 	],
 	[
 		1003,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:01",
 		"leftside;;_RV_;;sHints;;_RV_;;rightside;;_RV_;;substr(sHints,sFindNbr[2],"+char(34)+""+char(34)+");;_RV_;;"
 	],
 	[
 		1004,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:01",
 		"leftside;;_RV_;;nHints;;_RV_;;rightside;;_RV_;;number(sHints);;_RV_;;"
 	],
 	[
 		1005,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		1006,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:49",
-		"condition;;_RV_;;nHints>9;;_RV_;;"
+		"01/07/2021",
+		"13:29:01",
+		"condition;;_RV_;;nHints > 9;;_RV_;;"
 	],
 	[
 		1007,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:01",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;InsertNbrsSQ;;_RV_;;parameters;;_RV_;;Row,Col,nHints;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		1008,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:49",
-		"condition;;_RV_;;nHints< = 9;;_RV_;;"
+		"01/07/2021",
+		"13:29:01",
+		"condition;;_RV_;;nHints <= 9;;_RV_;;"
 	],
 	[
 		1009,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:01",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;InsertUniqNbr;;_RV_;;parameters;;_RV_;;Row,Col,nHints;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		1010,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		1011,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		1012,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		1013,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:01",
 		"condition;;_RV_;;Type = "+char(34)+"X-Region"+char(34)+";;_RV_;;"
 	],
 	[
 		1014,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		1015,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:49",
-		"condition;;_RV_;;FindNbr> = 11 AND FindNbr< = 99;;_RV_;;"
+		"01/07/2021",
+		"13:29:01",
+		"condition;;_RV_;;FindNbr >= 11 AND FindNbr <= 99;;_RV_;;"
 	],
 	[
 		1016,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:01",
 		"leftside;;_RV_;;Row;;_RV_;;rightside;;_RV_;;h;;_RV_;;"
 	],
 	[
 		1017,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:01",
 		"start;;_RV_;;Col = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		1018,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		1019,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:49",
-		"condition;;_RV_;;!(Col = v OR Col = k) AND aHints[Row][Col]>9;;_RV_;;"
+		"01/07/2021",
+		"13:29:01",
+		"condition;;_RV_;;!(Col = v OR Col = k) AND aHints[Row][Col] > 9;;_RV_;;"
 	],
 	[
 		1020,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:01",
 		"leftside;;_RV_;;sHints;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+"+aHints[Row][Col];;_RV_;;"
 	],
 	[
 		1021,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:01",
 		"leftside;;_RV_;;sFindNbr;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+"+FindNbr;;_RV_;;"
 	],
 	[
 		1022,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:01",
 		"leftside;;_RV_;;sHints;;_RV_;;rightside;;_RV_;;substr(sHints,sFindNbr[1],"+char(34)+""+char(34)+");;_RV_;;"
 	],
 	[
 		1023,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:01",
 		"leftside;;_RV_;;sHints;;_RV_;;rightside;;_RV_;;substr(sHints,sFindNbr[2],"+char(34)+""+char(34)+");;_RV_;;"
 	],
 	[
 		1024,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:01",
 		"leftside;;_RV_;;nHints;;_RV_;;rightside;;_RV_;;number(sHints);;_RV_;;"
 	],
 	[
 		1025,
 		1,
 		"print",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:01",
 		"text;;_RV_;;"+char(34)+"HORZ aHints[Row][Col]: "+char(34)+"+Row+"+char(34)+"-"+char(34)+"+Col+"+char(34)+" "+char(34)+"+aHints[Row][Col]+"+char(34)+" "+char(34)+"+sFindNbr+"+char(34)+" ---> "+char(34)+"+nHints+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		1026,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:49",
-		"condition;;_RV_;;nHints>9;;_RV_;;"
+		"01/07/2021",
+		"13:29:01",
+		"condition;;_RV_;;nHints > 9;;_RV_;;"
 	],
 	[
 		1027,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:01",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;InsertNbrsSQ;;_RV_;;parameters;;_RV_;;Row,Col,nHints;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		1028,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:49",
-		"condition;;_RV_;;nHints< = 9;;_RV_;;"
+		"01/07/2021",
+		"13:29:01",
+		"condition;;_RV_;;nHints <= 9;;_RV_;;"
 	],
 	[
 		1029,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:01",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;InsertUniqNbr;;_RV_;;parameters;;_RV_;;Row,Col,nHints;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		1030,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		1031,
 		1,
 		"return",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:01",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		1032,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		1033,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		1034,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		1035,
 		1,
 		"func",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:01",
 		"name;;_RV_;;BrutForce;;_RV_;;parameters;;_RV_;;();;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		1036,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:01",
 		"leftside;;_RV_;;sudokuBrut;;_RV_;;rightside;;_RV_;;playArray;;_RV_;;"
 	],
 	[
 		1037,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		1038,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:01",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;solveBrut;;_RV_;;parameters;;_RV_;;sudokuBrut;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		1039,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:01",
 		""
 	],
 	[
 		1040,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:01",
 		"start;;_RV_;;h = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		1041,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:01",
 		"start;;_RV_;;v = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		1042,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:02",
 		"condition;;_RV_;;playArray[h][v] = 0;;_RV_;;"
 	],
 	[
 		1043,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:02",
 		"leftside;;_RV_;;uniqNbr;;_RV_;;rightside;;_RV_;;sudokuBrut[h][v];;_RV_;;"
 	],
 	[
 		1044,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:02",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;InsertUniqNbrRed;;_RV_;;parameters;;_RV_;;h,v,uniqNbr;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		1045,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:02",
 		""
 	],
 	[
 		1046,
 		1,
 		"return",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:02",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		1047,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:02",
 		""
 	],
 	[
 		1048,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:02",
 		""
 	],
 	[
 		1049,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:02",
 		""
 	],
 	[
 		1050,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:02",
 		""
 	],
 	[
 		1051,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:02",
 		""
 	],
 	[
 		1052,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:02",
 		""
 	],
 	[
 		1053,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:02",
 		""
 	],
 	[
 		1054,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:02",
 		""
 	],
 	[
 		1055,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:02",
 		""
 	],
 	[
 		1056,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:02",
 		""
 	],
 	[
 		1057,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:02",
 		""
 	],
 	[
 		1058,
 		1,
 		"func",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:02",
 		"name;;_RV_;;solveBrut;;_RV_;;parameters;;_RV_;;(sudoku);;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		1059,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:02",
 		""
 	],
 	[
 		1060,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:02",
 		""
 	],
 	[
 		1061,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:02",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;sudokuSolver;;_RV_;;parameters;;_RV_;;sudoku;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		1062,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:02",
 		""
 	],
 	[
 		1063,
 		1,
 		"return",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:02",
 		"value;;_RV_;;true;;_RV_;;"
 	],
 	[
 		1064,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:02",
 		""
 	],
 	[
 		1065,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:02",
 		""
 	],
 	[
 		1066,
 		1,
 		"",
-		"27/06/2021",
-		"19:25:49",
+		"01/07/2021",
+		"13:29:02",
 		""
 	]
 ]

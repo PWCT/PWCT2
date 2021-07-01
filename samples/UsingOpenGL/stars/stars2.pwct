@@ -4835,7 +4835,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">spin+=0.01</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">spin&nbsp;+=&nbsp;0.01</font></span>"
 			],
 			[
 				"active",
@@ -4843,7 +4843,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"spin+=0.01"
+				"spin += 0.01"
 			],
 			[
 				"interactionid",
@@ -4863,7 +4863,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"spin+=0.01"
+				"spin += 0.01"
 			]
 		]
 	],
@@ -4873,7 +4873,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">star[nloop][:angle]+=nloop/num</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">star[nloop][:angle]&nbsp;+=&nbsp;nloop/num</font></span>"
 			],
 			[
 				"active",
@@ -4881,7 +4881,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"star[nloop][:angle]+=nloop/num"
+				"star[nloop][:angle] += nloop/num"
 			],
 			[
 				"interactionid",
@@ -4901,7 +4901,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"star[nloop][:angle]+=nloop/num"
+				"star[nloop][:angle] += nloop/num"
 			]
 		]
 	],
@@ -4911,7 +4911,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">star[nloop][:dist]-=0.01</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">star[nloop][:dist]&nbsp;-=&nbsp;0.01</font></span>"
 			],
 			[
 				"active",
@@ -4919,7 +4919,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"star[nloop][:dist]-=0.01"
+				"star[nloop][:dist] -= 0.01"
 			],
 			[
 				"interactionid",
@@ -4939,7 +4939,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"star[nloop][:dist]-=0.01"
+				"star[nloop][:dist] -= 0.01"
 			]
 		]
 	],
@@ -4949,7 +4949,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">star[nloop][:dist]&lt;0</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">star[nloop][:dist]&nbsp;&lt;&nbsp;0</font></span>"
 			],
 			[
 				"active",
@@ -4957,7 +4957,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if star[nloop][:dist]<0 { "
+				"if star[nloop][:dist] < 0 { "
 			],
 			[
 				"interactionid",
@@ -4977,7 +4977,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If star[nloop][:dist]"
+				"If star[nloop][:dist] "
 			]
 		]
 	],
@@ -5025,7 +5025,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">star[nloop][:dist]+=5.0</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">star[nloop][:dist]&nbsp;+=&nbsp;5.0</font></span>"
 			],
 			[
 				"active",
@@ -5033,7 +5033,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"star[nloop][:dist]+=5.0"
+				"star[nloop][:dist] += 5.0"
 			],
 			[
 				"interactionid",
@@ -5053,7 +5053,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"star[nloop][:dist]+=5.0"
+				"star[nloop][:dist] += 5.0"
 			]
 		]
 	],
@@ -5405,7 +5405,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">clock()-t1&gt;clockspersecond()</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">clock()-t1&nbsp;&gt;&nbsp;clockspersecond()</font></span>"
 			],
 			[
 				"active",
@@ -5413,7 +5413,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if clock()-t1>clockspersecond() { "
+				"if clock()-t1 > clockspersecond() { "
 			],
 			[
 				"interactionid",
@@ -5433,7 +5433,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If clock()-t1>clockspersecond()"
+				"If clock()-t1 > clockspersecond()"
 			]
 		]
 	],
@@ -5672,1024 +5672,1024 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		""
 	],
 	[
 		2,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		""
 	],
 	[
 		3,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		""
 	],
 	[
 		4,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		""
 	],
 	[
 		5,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		""
 	],
 	[
 		6,
 		1,
 		"load",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"file;;_RV_;;gamelib.ring;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"load",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"file;;_RV_;;opengl21lib.ring;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_init;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_init_font_addon;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_init_ttf_addon;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_init_image_addon;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_set_new_display_flags;;_RV_;;parameters;;_RV_;;ALLEGRO_OPENGL;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"leftside;;_RV_;;display;;_RV_;;rightside;;_RV_;;al_create_display(800,600);;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_set_Window_title;;_RV_;;parameters;;_RV_;;display,"+char(34)+"Ring Cube"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_clear_to_color;;_RV_;;parameters;;_RV_;;al_map_rgb(0,0,255);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"leftside;;_RV_;;bitmap;;_RV_;;rightside;;_RV_;;al_load_bitmap("+char(34)+"star.bmp"+char(34)+");;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"leftside;;_RV_;;texture;;_RV_;;rightside;;_RV_;;al_get_opengl_texture(bitmap);;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"leftside;;_RV_;;xrot;;_RV_;;rightside;;_RV_;;0.0;;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"leftside;;_RV_;;yrot;;_RV_;;rightside;;_RV_;;0.0;;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"leftside;;_RV_;;zrot;;_RV_;;rightside;;_RV_;;0.0;;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"leftside;;_RV_;;num;;_RV_;;rightside;;_RV_;;50;;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"leftside;;_RV_;;zoom;;_RV_;;rightside;;_RV_;;-15.0;;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"leftside;;_RV_;;tilt;;_RV_;;rightside;;_RV_;;90.0;;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"leftside;;_RV_;;twinkle;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"leftside;;_RV_;;spin;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"leftside;;_RV_;;star;;_RV_;;rightside;;_RV_;;[];;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"start;;_RV_;;t = 1;;_RV_;;to;;_RV_;;num;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"value;;_RV_;;star+[:angle = 0,:dist = 0,:r = 0,:g = 0,:b = 0];;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"leftside;;_RV_;;w;;_RV_;;rightside;;_RV_;;800;;_RV_;;"
 	],
 	[
 		30,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"leftside;;_RV_;;h;;_RV_;;rightside;;_RV_;;600;;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"leftside;;_RV_;;ratio;;_RV_;;rightside;;_RV_;;w/h;;_RV_;;"
 	],
 	[
 		32,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glViewport;;_RV_;;parameters;;_RV_;;0,0,w,h;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		33,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glMatrixMode;;_RV_;;parameters;;_RV_;;GL_PROJECTION;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		34,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glLoadIdentity;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		35,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;gluPerspective;;_RV_;;parameters;;_RV_;;45,ratio,1,100;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		36,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glMatrixMode;;_RV_;;parameters;;_RV_;;GL_MODELVIEW;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		37,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glLoadIdentity;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		38,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glEnable;;_RV_;;parameters;;_RV_;;GL_TEXTURE_2D;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		39,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glShadeModel;;_RV_;;parameters;;_RV_;;GL_SMOOTH;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		40,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glClearColor;;_RV_;;parameters;;_RV_;;0.0,0.0,0.0,0.5;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		41,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glClearDepth;;_RV_;;parameters;;_RV_;;1.0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		42,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glEnable;;_RV_;;parameters;;_RV_;;GL_DEPTH_TEST;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		43,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glEnable;;_RV_;;parameters;;_RV_;;GL_CULL_FACE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		44,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glDepthFunc;;_RV_;;parameters;;_RV_;;GL_LEQUAL;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		45,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glHint;;_RV_;;parameters;;_RV_;;GL_PERSPECTIVE_CORRECTION_HINT,GL_NICEST;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		46,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glBlendFunc;;_RV_;;parameters;;_RV_;;GL_SRC_ALPHA,GL_ONE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		47,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		""
 	],
 	[
 		48,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glEnable;;_RV_;;parameters;;_RV_;;GL_BLEND;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		49,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"start;;_RV_;;nloop = 1;;_RV_;;to;;_RV_;;num;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		50,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"leftside;;_RV_;;star[nloop][:angle];;_RV_;;rightside;;_RV_;;0.0;;_RV_;;"
 	],
 	[
 		51,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"leftside;;_RV_;;star[nloop][:dist];;_RV_;;rightside;;_RV_;;(nloop/num)*5.0;;_RV_;;"
 	],
 	[
 		52,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"leftside;;_RV_;;star[nloop][:r];;_RV_;;rightside;;_RV_;;random(255);;_RV_;;"
 	],
 	[
 		53,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"leftside;;_RV_;;star[nloop][:g];;_RV_;;rightside;;_RV_;;random(255);;_RV_;;"
 	],
 	[
 		54,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"leftside;;_RV_;;star[nloop][:b];;_RV_;;rightside;;_RV_;;random(255);;_RV_;;"
 	],
 	[
 		55,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"leftside;;_RV_;;nFPS;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		56,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"leftside;;_RV_;;t1;;_RV_;;rightside;;_RV_;;clock();;_RV_;;"
 	],
 	[
 		57,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"leftside;;_RV_;;event_queue;;_RV_;;rightside;;_RV_;;al_create_event_queue();;_RV_;;"
 	],
 	[
 		58,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_register_event_source;;_RV_;;parameters;;_RV_;;event_queue,al_get_display_event_source(display);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		59,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"leftside;;_RV_;;ev;;_RV_;;rightside;;_RV_;;al_new_allegro_event();;_RV_;;"
 	],
 	[
 		60,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"leftside;;_RV_;;timeout;;_RV_;;rightside;;_RV_;;al_new_allegro_timeout();;_RV_;;"
 	],
 	[
 		61,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_init_timeout;;_RV_;;parameters;;_RV_;;timeout,0.01;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		62,
 		1,
 		"whileloop",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"condition;;_RV_;;true;;_RV_;;"
 	],
 	[
 		63,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_wait_for_event_until;;_RV_;;parameters;;_RV_;;event_queue,ev,timeout;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		64,
 		1,
 		"switch",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"variable;;_RV_;;al_get_allegro_event_type(ev);;_RV_;;"
 	],
 	[
 		65,
 		1,
 		"case",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"value;;_RV_;;ALLEGRO_EVENT_DISPLAY_CLOSE;;_RV_;;"
 	],
 	[
 		66,
 		1,
 		"exit",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"value;;_RV_;;1;;_RV_;;"
 	],
 	[
 		67,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawScene;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		68,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_flip_display;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		69,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;calcfps;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		70,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_destroy_display;;_RV_;;parameters;;_RV_;;display;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		71,
 		1,
 		"func",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"name;;_RV_;;DrawScene;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		72,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glClear;;_RV_;;parameters;;_RV_;;GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		73,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		""
 	],
 	[
 		74,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glBindTexture;;_RV_;;parameters;;_RV_;;GL_TEXTURE_2D,texture;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		75,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		""
 	],
 	[
 		76,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"start;;_RV_;;nloop = 1;;_RV_;;to;;_RV_;;num;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		77,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		""
 	],
 	[
 		78,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glLoadIdentity;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		79,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glTranslatef;;_RV_;;parameters;;_RV_;;0.0,0.0,zoom;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		80,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		""
 	],
 	[
 		81,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glRotatef;;_RV_;;parameters;;_RV_;;tilt,1.0,0.0,0.0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		82,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		""
 	],
 	[
 		83,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glRotatef;;_RV_;;parameters;;_RV_;;star[nloop][:angle],0.0,1.0,0.0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		84,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		""
 	],
 	[
 		85,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glTranslatef;;_RV_;;parameters;;_RV_;;star[nloop][:dist],0.0,0.0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		86,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		""
 	],
 	[
 		87,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glRotatef;;_RV_;;parameters;;_RV_;;-star[nloop][:angle],0.0,1.0,0.0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		88,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		""
 	],
 	[
 		89,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glRotatef;;_RV_;;parameters;;_RV_;;-tilt,1.0,0.0,0.0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		90,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		""
 	],
 	[
 		91,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"condition;;_RV_;;twinkle;;_RV_;;"
 	],
 	[
 		92,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glColor4ub;;_RV_;;parameters;;_RV_;;star[(num-nloop)-1][:r],star[(num-nloop)-1][:g],star[(num-nloop)-1][:b],255;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		93,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glBegin;;_RV_;;parameters;;_RV_;;GL_QUADS;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		94,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glTexCoord2f;;_RV_;;parameters;;_RV_;;0.0,0.0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		95,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glVertex3f;;_RV_;;parameters;;_RV_;;-1.0,-1.0,0.0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		96,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glTexCoord2f;;_RV_;;parameters;;_RV_;;1.0,0.0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		97,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glVertex3f;;_RV_;;parameters;;_RV_;;1.0,-1.0,0.0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		98,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glTexCoord2f;;_RV_;;parameters;;_RV_;;1.0,1.0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		99,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glVertex3f;;_RV_;;parameters;;_RV_;;1.0,1.0,0.0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		100,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glTexCoord2f;;_RV_;;parameters;;_RV_;;0.0,1.0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		101,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glVertex3f;;_RV_;;parameters;;_RV_;;-1.0,1.0,0.0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		102,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glEnd;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		103,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glRotatef;;_RV_;;parameters;;_RV_;;spin,0.0,0.0,1.0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		104,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glColor4ub;;_RV_;;parameters;;_RV_;;star[nloop][:r],star[nloop][:g],star[nloop][:b],255;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		105,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glBegin;;_RV_;;parameters;;_RV_;;GL_QUADS;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		106,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glTexCoord2f;;_RV_;;parameters;;_RV_;;0.0,0.0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		107,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glVertex3f;;_RV_;;parameters;;_RV_;;-1.0,-1.0,0.0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		108,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glTexCoord2f;;_RV_;;parameters;;_RV_;;1.0,0.0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		109,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glVertex3f;;_RV_;;parameters;;_RV_;;1.0,-1.0,0.0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		110,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glTexCoord2f;;_RV_;;parameters;;_RV_;;1.0,1.0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		111,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glVertex3f;;_RV_;;parameters;;_RV_;;1.0,1.0,0.0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		112,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glTexCoord2f;;_RV_;;parameters;;_RV_;;0.0,1.0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		113,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glVertex3f;;_RV_;;parameters;;_RV_;;-1.0,1.0,0.0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		114,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glEnd;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		115,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:31:58",
-		"value;;_RV_;;spin+=0.01;;_RV_;;"
+		"01/07/2021",
+		"13:35:56",
+		"value;;_RV_;;spin += 0.01;;_RV_;;"
 	],
 	[
 		116,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:31:58",
-		"value;;_RV_;;star[nloop][:angle]+=nloop/num;;_RV_;;"
+		"01/07/2021",
+		"13:35:56",
+		"value;;_RV_;;star[nloop][:angle] += nloop/num;;_RV_;;"
 	],
 	[
 		117,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:31:58",
-		"value;;_RV_;;star[nloop][:dist]-=0.01;;_RV_;;"
+		"01/07/2021",
+		"13:35:56",
+		"value;;_RV_;;star[nloop][:dist] -= 0.01;;_RV_;;"
 	],
 	[
 		118,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:31:58",
-		"condition;;_RV_;;star[nloop][:dist]<0;;_RV_;;"
+		"01/07/2021",
+		"13:35:56",
+		"condition;;_RV_;;star[nloop][:dist] < 0;;_RV_;;"
 	],
 	[
 		119,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:31:58",
-		"value;;_RV_;;star[nloop][:dist]+=5.0;;_RV_;;"
+		"01/07/2021",
+		"13:35:56",
+		"value;;_RV_;;star[nloop][:dist] += 5.0;;_RV_;;"
 	],
 	[
 		120,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"leftside;;_RV_;;star[nloop][:r];;_RV_;;rightside;;_RV_;;random(255);;_RV_;;"
 	],
 	[
 		121,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"leftside;;_RV_;;star[nloop][:g];;_RV_;;rightside;;_RV_;;random(255);;_RV_;;"
 	],
 	[
 		122,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"leftside;;_RV_;;star[nloop][:b];;_RV_;;rightside;;_RV_;;random(255);;_RV_;;"
 	],
 	[
 		123,
 		1,
 		"func",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"name;;_RV_;;calcfps;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		124,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"value;;_RV_;;nFPs++;;_RV_;;"
 	],
 	[
 		125,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:31:58",
-		"condition;;_RV_;;clock()-t1>clockspersecond();;_RV_;;"
+		"01/07/2021",
+		"13:35:56",
+		"condition;;_RV_;;clock()-t1 > clockspersecond();;_RV_;;"
 	],
 	[
 		126,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"leftside;;_RV_;;t1;;_RV_;;rightside;;_RV_;;clock();;_RV_;;"
 	],
 	[
 		127,
 		1,
 		"print",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"text;;_RV_;;"+char(34)+"FPS : "+char(34)+"+nFPS;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		128,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:58",
+		"01/07/2021",
+		"13:35:56",
 		"leftside;;_RV_;;nFPS;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	]
 ]

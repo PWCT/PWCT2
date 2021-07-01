@@ -1149,7 +1149,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"While <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">substr(cString,dString)&gt;0</font></span>"
+				"While <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">substr(cString,dString)&nbsp;&gt;&nbsp;0</font></span>"
 			],
 			[
 				"active",
@@ -1157,7 +1157,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"while substr(cString,dString)>0 { "
+				"while substr(cString,dString) > 0 { "
 			],
 			[
 				"interactionid",
@@ -1177,7 +1177,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"While substr(cString,dString)>0"
+				"While substr(cString,dString) > 0"
 			]
 		]
 	],
@@ -1681,7 +1681,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">alist[m+1][2]&nbsp;=&nbsp;alist[m][2]&nbsp;AND&nbsp;alist[m+1][1]&lt;alist[m][1]</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">alist[m+1][2]&nbsp;=&nbsp;alist[m][2]&nbsp;AND&nbsp;alist[m+1][1]&nbsp;&lt;&nbsp;alist[m][1]</font></span>"
 			],
 			[
 				"active",
@@ -1689,7 +1689,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if alist[m+1][2] = alist[m][2] AND alist[m+1][1]<alist[m][1] { "
+				"if alist[m+1][2] = alist[m][2] AND alist[m+1][1] < alist[m][1] { "
 			],
 			[
 				"interactionid",
@@ -1709,7 +1709,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If alist[m+1][2] = alist[m][2] AND alist[m+1][1]"
+				"If alist[m+1][2] = alist[m][2] AND alist[m+1][1] "
 			]
 		]
 	],
@@ -2404,376 +2404,376 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		""
 	],
 	[
 		2,
 		1,
 		"",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		""
 	],
 	[
 		3,
 		1,
 		"",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		""
 	],
 	[
 		4,
 		1,
 		"",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		""
 	],
 	[
 		5,
 		1,
 		"",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		""
 	],
 	[
 		6,
 		1,
 		"load",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		"file;;_RV_;;stdlib.ring;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		"leftside;;_RV_;;str1;;_RV_;;rightside;;_RV_;;"+char(34)+"LCLYTHIGRNIYYGSYLYSETWNTGIMLLLITMATAFMGYVLPWGQMSFWGATVITNLFSAIPYIGTNLV"+char(34)+";;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		"leftside;;_RV_;;str2;;_RV_;;rightside;;_RV_;;"+char(34)+"EWIWGGFSVDKATLNRFFAFHFILPFTMVALAGVHLTFLHETGSNNPLGLTSDSDKIPFHPYYTIKDFLG"+char(34)+";;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"print",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		"text;;_RV_;;"+char(34)+"Str1 = "+char(34)+"+str1+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"print",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		"text;;_RV_;;"+char(34)+"Str2 = "+char(34)+"+str2+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;MostFreqKHashing;;_RV_;;parameters;;_RV_;;str1,"+char(34)+"str1"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;MostFreqKHashing;;_RV_;;parameters;;_RV_;;str2,"+char(34)+"str2"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"func",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		"name;;_RV_;;MostFreqKHashing;;_RV_;;parameters;;_RV_;;(str3,strp);;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		"leftside;;_RV_;;chr;;_RV_;;rightside;;_RV_;;newlist(26,2);;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		"start;;_RV_;;n = 1;;_RV_;;to;;_RV_;;26;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		"leftside;;_RV_;;str;;_RV_;;rightside;;_RV_;;char(n+64);;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		"leftside;;_RV_;;cstr;;_RV_;;rightside;;_RV_;;count(str3,str);;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		"leftside;;_RV_;;chr[n][1];;_RV_;;rightside;;_RV_;;str;;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		"leftside;;_RV_;;chr[n][2];;_RV_;;rightside;;_RV_;;cstr;;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		"leftside;;_RV_;;chr;;_RV_;;rightside;;_RV_;;sortsecond(chr);;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		"leftside;;_RV_;;chr;;_RV_;;rightside;;_RV_;;reverse(chr);;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"print",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		"text;;_RV_;;"+char(34)+"MostFreqKHashing("+char(34)+"+strp+"+char(34)+",2) = "+char(34)+";;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"print",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		"text;;_RV_;;chr[1][1]+chr[1][2]+chr[2][1]+chr[2][2]+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"func",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		"name;;_RV_;;count;;_RV_;;parameters;;_RV_;;(cString,dString);;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		"leftside;;_RV_;;sum;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"whileloop",
-		"27/06/2021",
-		"19:41:11",
-		"condition;;_RV_;;substr(cString,dString)>0;;_RV_;;"
+		"01/07/2021",
+		"13:45:23",
+		"condition;;_RV_;;substr(cString,dString) > 0;;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		"value;;_RV_;;sum++;;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		"leftside;;_RV_;;cString;;_RV_;;rightside;;_RV_;;substr(cString,substr(cString,dString)+len(string(sum)));;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"return",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		"value;;_RV_;;sum;;_RV_;;"
 	],
 	[
 		30,
 		1,
 		"func",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		"name;;_RV_;;sortsecond;;_RV_;;parameters;;_RV_;;(alist);;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		"leftside;;_RV_;;aList;;_RV_;;rightside;;_RV_;;sort(alist,2);;_RV_;;"
 	],
 	[
 		32,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		"start;;_RV_;;n = 1;;_RV_;;to;;_RV_;;len(alist)-1;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		33,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		"start;;_RV_;;m = n;;_RV_;;to;;_RV_;;len(aList)-1;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		34,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:41:11",
-		"condition;;_RV_;;alist[m+1][2] = alist[m][2] AND alist[m+1][1]<alist[m][1];;_RV_;;"
+		"01/07/2021",
+		"13:45:23",
+		"condition;;_RV_;;alist[m+1][2] = alist[m][2] AND alist[m+1][1] < alist[m][1];;_RV_;;"
 	],
 	[
 		35,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		"leftside;;_RV_;;temp;;_RV_;;rightside;;_RV_;;alist[m+1];;_RV_;;"
 	],
 	[
 		36,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		"leftside;;_RV_;;alist[m+1];;_RV_;;rightside;;_RV_;;alist[m];;_RV_;;"
 	],
 	[
 		37,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		"leftside;;_RV_;;alist[m];;_RV_;;rightside;;_RV_;;temp;;_RV_;;"
 	],
 	[
 		38,
 		1,
 		"return",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		"value;;_RV_;;aLi;;_RV_;;"
 	],
 	[
 		39,
 		1,
 		"",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		""
 	],
 	[
 		40,
 		1,
 		"",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		""
 	],
 	[
 		41,
 		1,
 		"",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		""
 	],
 	[
 		42,
 		1,
 		"",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		""
 	],
 	[
 		43,
 		1,
 		"",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		""
 	],
 	[
 		44,
 		1,
 		"",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		""
 	],
 	[
 		45,
 		1,
 		"",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		""
 	],
 	[
 		46,
 		1,
 		"",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		""
 	],
 	[
 		47,
 		1,
 		"",
-		"27/06/2021",
-		"19:41:11",
+		"01/07/2021",
+		"13:45:23",
 		""
 	]
 ]

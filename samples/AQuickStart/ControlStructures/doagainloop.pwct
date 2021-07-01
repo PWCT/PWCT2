@@ -237,7 +237,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Again <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">x&lt;&nbsp;=&nbsp;10</font></span>"
+				"Again <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">x&nbsp;&lt;=&nbsp;10</font></span>"
 			],
 			[
 				"active",
@@ -245,7 +245,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"again x< = 10"
+				"again x <= 10"
 			],
 			[
 				"interactionid",
@@ -265,7 +265,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Again x"
+				"Again x "
 			]
 		]
 	]
@@ -276,40 +276,40 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"27/06/2021",
-		"19:33:35",
+		"01/07/2021",
+		"13:37:26",
 		""
 	],
 	[
 		2,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:33:35",
+		"01/07/2021",
+		"13:37:26",
 		"leftside;;_RV_;;x;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"doagain",
-		"27/06/2021",
-		"19:33:35",
-		"condition;;_RV_;;x< = 10;;_RV_;;"
+		"01/07/2021",
+		"13:37:26",
+		"condition;;_RV_;;x <= 10;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"print",
-		"27/06/2021",
-		"19:33:35",
+		"01/07/2021",
+		"13:37:26",
 		"text;;_RV_;;x+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:33:35",
+		"01/07/2021",
+		"13:37:26",
 		"value;;_RV_;;x++;;_RV_;;"
 	]
 ]

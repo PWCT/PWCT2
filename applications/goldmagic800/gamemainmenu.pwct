@@ -1111,7 +1111,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Mouse_Y&gt;&nbsp;=&nbsp;Position2D_Y(SCREEN_H_2D-850+(100*x))&nbsp;AND&nbsp;Mouse_Y&lt;&nbsp;=&nbsp;Position2D_Y(SCREEN_H_2D-850+(100*x)+100)&nbsp;AND&nbsp;Mouse_X&gt;&nbsp;=&nbsp;Position2D_X((SCREEN_W_2D/2)-250)&nbsp;AND&nbsp;Mouse_X&lt;&nbsp;=&nbsp;Position2D_X((SCREEN_W_2D/2)-250+600)</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Mouse_Y&nbsp;&gt;=&nbsp;Position2D_Y(SCREEN_H_2D-850+(100*x))&nbsp;AND&nbsp;Mouse_Y&nbsp;&lt;=&nbsp;Position2D_Y(SCREEN_H_2D-850+(100*x)+100)&nbsp;AND&nbsp;Mouse_X&nbsp;&gt;=&nbsp;Position2D_X((SCREEN_W_2D/2)-250)&nbsp;AND&nbsp;Mouse_X&nbsp;&lt;=&nbsp;Position2D_X((SCREEN_W_2D/2)-250+600)</font></span>"
 			],
 			[
 				"active",
@@ -1119,7 +1119,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if Mouse_Y> = Position2D_Y(SCREEN_H_2D-850+(100*x)) AND Mouse_Y< = Position2D_Y(SCREEN_H_2D-850+(100*x)+100) AND Mouse_X> = Position2D_X((SCREEN_W_2D/2)-250) AND Mouse_X< = Position2D_X((SCREEN_W_2D/2)-250+600) { "
+				"if Mouse_Y >= Position2D_Y(SCREEN_H_2D-850+(100*x)) AND Mouse_Y <= Position2D_Y(SCREEN_H_2D-850+(100*x)+100) AND Mouse_X >= Position2D_X((SCREEN_W_2D/2)-250) AND Mouse_X <= Position2D_X((SCREEN_W_2D/2)-250+600) { "
 			],
 			[
 				"interactionid",
@@ -1139,7 +1139,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If Mouse_Y> = Position2D_Y(SCREEN_H_2D-850+(100*x)) AND Mouse_Y = Position2D_X((SCREEN_W_2D/2)-250) AND Mouse_X"
+				"If Mouse_Y >= Position2D_Y(SCREEN_H_2D-850+(100*x)) AND Mouse_Y = Position2D_X((SCREEN_W_2D/2)-250) AND Mouse_X "
 			]
 		]
 	],
@@ -2631,7 +2631,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nActiveItem&lt;len(aMenu)</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nActiveItem&nbsp;&lt;&nbsp;len(aMenu)</font></span>"
 			],
 			[
 				"active",
@@ -2639,7 +2639,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if nActiveItem<len(aMenu) { "
+				"if nActiveItem < len(aMenu) { "
 			],
 			[
 				"interactionid",
@@ -2659,7 +2659,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If nActiveItem"
+				"If nActiveItem "
 			]
 		]
 	],
@@ -3315,7 +3315,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nActiveItem&gt;1</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nActiveItem&nbsp;&gt;&nbsp;1</font></span>"
 			],
 			[
 				"active",
@@ -3323,7 +3323,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if nActiveItem>1 { "
+				"if nActiveItem > 1 { "
 			],
 			[
 				"interactionid",
@@ -3343,7 +3343,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If nActiveItem>1"
+				"If nActiveItem > 1"
 			]
 		]
 	],
@@ -5786,728 +5786,728 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		""
 	],
 	[
 		2,
 		1,
 		"",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		""
 	],
 	[
 		3,
 		1,
 		"",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		""
 	],
 	[
 		4,
 		1,
 		"",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		""
 	],
 	[
 		5,
 		1,
 		"class",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"value;;_RV_;;GameMainMenu;;_RV_;;value2;;_RV_;;;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"func",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"name;;_RV_;;MainMenu;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"callmethod",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oGameSound;;_RV_;;name;;_RV_;;PlayBackGroundMusic;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;Start2DScreen;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawMainMenuBackGroundImage;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"condition;;_RV_;;lUseGameTitleImage;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawGameTitleImage;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"else",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		""
 	],
 	[
 		13,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawTitle;;_RV_;;parameters;;_RV_;;Title,80,350;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		""
 	],
 	[
 		15,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"condition;;_RV_;;lMouseMove;;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"leftside;;_RV_;;lMouseMove;;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"start;;_RV_;;x = 1;;_RV_;;to;;_RV_;;len(aMenu);;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"condition;;_RV_;;lGameStarted = False AND (x = 2 OR x = 3);;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"loop",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"value;;_RV_;;1;;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:22:49",
-		"condition;;_RV_;;Mouse_Y> = Position2D_Y(SCREEN_H_2D-850+(100*x)) AND Mouse_Y< = Position2D_Y(SCREEN_H_2D-850+(100*x)+100) AND Mouse_X> = Position2D_X((SCREEN_W_2D/2)-250) AND Mouse_X< = Position2D_X((SCREEN_W_2D/2)-250+600);;_RV_;;"
+		"01/07/2021",
+		"13:26:00",
+		"condition;;_RV_;;Mouse_Y >= Position2D_Y(SCREEN_H_2D-850+(100*x)) AND Mouse_Y <= Position2D_Y(SCREEN_H_2D-850+(100*x)+100) AND Mouse_X >= Position2D_X((SCREEN_W_2D/2)-250) AND Mouse_X <= Position2D_X((SCREEN_W_2D/2)-250+600);;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"condition;;_RV_;;nActiveItem! = X;;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"callmethod",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oGameSound;;_RV_;;name;;_RV_;;StopMenuChangeSound;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"callmethod",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oGameSound;;_RV_;;name;;_RV_;;PlayMenuChangeSound;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"leftside;;_RV_;;nActiveItem;;_RV_;;rightside;;_RV_;;X;;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"condition;;_RV_;;Mouse_Button_Down;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"leftside;;_RV_;;Mouse_Button_Down;;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"leftside;;_RV_;;Key[KEY_SPACE];;_RV_;;rightside;;_RV_;;True;;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"start;;_RV_;;x = 1;;_RV_;;to;;_RV_;;len(aMenu);;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"leftside;;_RV_;;cMenu;;_RV_;;rightside;;_RV_;;aMenu[x];;_RV_;;"
 	],
 	[
 		30,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"condition;;_RV_;;x = nActiveItem;;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawOption;;_RV_;;parameters;;_RV_;;cMenu,SCREEN_H_2D-850+(100*x),(SCREEN_W_2D/2)-250,True;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		32,
 		1,
 		"else",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		""
 	],
 	[
 		33,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"condition;;_RV_;;lGameStarted = False AND (x = 2 OR x = 3);;_RV_;;"
 	],
 	[
 		34,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawDisabledOption;;_RV_;;parameters;;_RV_;;cMenu,SCREEN_H_2D-850+(100*x),(SCREEN_W_2D/2)-250,False;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		35,
 		1,
 		"else",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		""
 	],
 	[
 		36,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawOption;;_RV_;;parameters;;_RV_;;cMenu,SCREEN_H_2D-850+(100*x),(SCREEN_W_2D/2)-250,False;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		37,
 		1,
 		"",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		""
 	],
 	[
 		38,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;End2DScreen;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		39,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"condition;;_RV_;;key[KEY_DOWN];;_RV_;;"
 	],
 	[
 		40,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"leftside;;_RV_;;key[KEY_DOWN];;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
 		41,
 		1,
 		"callmethod",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oGameSound;;_RV_;;name;;_RV_;;StopMenuChangeSound;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		42,
 		1,
 		"callmethod",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oGameSound;;_RV_;;name;;_RV_;;PlayMenuChangeSound;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		43,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:22:49",
-		"condition;;_RV_;;nActiveItem<len(aMenu);;_RV_;;"
+		"01/07/2021",
+		"13:26:00",
+		"condition;;_RV_;;nActiveItem < len(aMenu);;_RV_;;"
 	],
 	[
 		44,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"value;;_RV_;;nActiveItem++;;_RV_;;"
 	],
 	[
 		45,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"condition;;_RV_;;nActiveItem = 2 AND lGameStarted = False;;_RV_;;"
 	],
 	[
 		46,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"leftside;;_RV_;;nActiveItem;;_RV_;;rightside;;_RV_;;4;;_RV_;;"
 	],
 	[
 		47,
 		1,
 		"else",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		""
 	],
 	[
 		48,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"leftside;;_RV_;;nActiveItem;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		49,
 		1,
 		"return",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		50,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"condition;;_RV_;;key[KEY_UP];;_RV_;;"
 	],
 	[
 		51,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"leftside;;_RV_;;key[KEY_UP];;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
 		52,
 		1,
 		"callmethod",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oGameSound;;_RV_;;name;;_RV_;;StopMenuChangeSound;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		53,
 		1,
 		"callmethod",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oGameSound;;_RV_;;name;;_RV_;;PlayMenuChangeSound;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		54,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:22:49",
-		"condition;;_RV_;;nActiveItem>1;;_RV_;;"
+		"01/07/2021",
+		"13:26:00",
+		"condition;;_RV_;;nActiveItem > 1;;_RV_;;"
 	],
 	[
 		55,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"value;;_RV_;;nActiveItem--;;_RV_;;"
 	],
 	[
 		56,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"condition;;_RV_;;nActiveItem = 3 AND lGameStarted = False;;_RV_;;"
 	],
 	[
 		57,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"leftside;;_RV_;;nActiveItem;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		58,
 		1,
 		"else",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		""
 	],
 	[
 		59,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"leftside;;_RV_;;nActiveItem;;_RV_;;rightside;;_RV_;;len(aMenu);;_RV_;;"
 	],
 	[
 		60,
 		1,
 		"return",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		61,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"condition;;_RV_;;Key[KEY_SPACE] = True OR Key[KEY_ENTER] = True;;_RV_;;"
 	],
 	[
 		62,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"leftside;;_RV_;;Key[KEY_SPACE];;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
 		63,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"leftside;;_RV_;;key[KEY_ENTER];;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
 		64,
 		1,
 		"callmethod",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oGameSound;;_RV_;;name;;_RV_;;StopMenuClickSound;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		65,
 		1,
 		"callmethod",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oGameSound;;_RV_;;name;;_RV_;;PlayMenuClickSound;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		66,
 		1,
 		"switch",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"variable;;_RV_;;nActiveItem;;_RV_;;"
 	],
 	[
 		67,
 		1,
 		"case",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"value;;_RV_;;1;;_RV_;;"
 	],
 	[
 		68,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"leftside;;_RV_;;nActiveScreen;;_RV_;;rightside;;_RV_;;C_SCREEN_SELECTLEVEL;;_RV_;;"
 	],
 	[
 		69,
 		1,
 		"case",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"value;;_RV_;;2;;_RV_;;"
 	],
 	[
 		70,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"leftside;;_RV_;;nActiveScreen;;_RV_;;rightside;;_RV_;;C_SCREEN_GAMEPLAY;;_RV_;;"
 	],
 	[
 		71,
 		1,
 		"case",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"value;;_RV_;;3;;_RV_;;"
 	],
 	[
 		72,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"leftside;;_RV_;;nActiveScreen;;_RV_;;rightside;;_RV_;;C_SCREEN_GAMEPLAY;;_RV_;;"
 	],
 	[
 		73,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DefaultLevelData;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		74,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;loadLevel;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		75,
 		1,
 		"callmethod",
-		"27/06/2021",
-		"19:22:49",
+		"01/07/2021",
+		"13:26:00",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oGameCamera;;_RV_;;name;;_RV_;;DefaultCameraData;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		76,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:22:50",
+		"01/07/2021",
+		"13:26:00",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetCameraAtPlayerPosition;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		77,
 		1,
 		"case",
-		"27/06/2021",
-		"19:22:50",
+		"01/07/2021",
+		"13:26:00",
 		"value;;_RV_;;4;;_RV_;;"
 	],
 	[
 		78,
 		1,
 		"callmethod",
-		"27/06/2021",
-		"19:22:50",
+		"01/07/2021",
+		"13:26:00",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oGameSound;;_RV_;;name;;_RV_;;SoundOnOff;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		79,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:22:50",
+		"01/07/2021",
+		"13:26:00",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;ItemOnOff;;_RV_;;parameters;;_RV_;;aMenu,4;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		80,
 		1,
 		"case",
-		"27/06/2021",
-		"19:22:50",
+		"01/07/2021",
+		"13:26:00",
 		"value;;_RV_;;5;;_RV_;;"
 	],
 	[
 		81,
 		1,
 		"callmethod",
-		"27/06/2021",
-		"19:22:50",
+		"01/07/2021",
+		"13:26:00",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oGameSound;;_RV_;;name;;_RV_;;MusicOnOff;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		82,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:22:50",
+		"01/07/2021",
+		"13:26:00",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;ItemOnOff;;_RV_;;parameters;;_RV_;;aMenu,5;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		83,
 		1,
 		"case",
-		"27/06/2021",
-		"19:22:50",
+		"01/07/2021",
+		"13:26:00",
 		"value;;_RV_;;6;;_RV_;;"
 	],
 	[
 		84,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:22:50",
+		"01/07/2021",
+		"13:26:00",
 		"leftside;;_RV_;;nActiveScreen;;_RV_;;rightside;;_RV_;;C_SCREEN_HOWTOPLAY;;_RV_;;"
 	],
 	[
 		85,
 		1,
 		"case",
-		"27/06/2021",
-		"19:22:50",
+		"01/07/2021",
+		"13:26:00",
 		"value;;_RV_;;7;;_RV_;;"
 	],
 	[
 		86,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:22:50",
+		"01/07/2021",
+		"13:26:00",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;ExitFromMainLoop;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		87,
 		1,
 		"func",
-		"27/06/2021",
-		"19:22:50",
+		"01/07/2021",
+		"13:26:00",
 		"name;;_RV_;;ItemOnOff;;_RV_;;parameters;;_RV_;;aList,nIndex;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		88,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:22:50",
+		"01/07/2021",
+		"13:26:00",
 		"condition;;_RV_;;substr(aList[nIndex],"+char(34)+"ON"+char(34)+");;_RV_;;"
 	],
 	[
 		89,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:22:50",
+		"01/07/2021",
+		"13:26:00",
 		"leftside;;_RV_;;aList[nIndex];;_RV_;;rightside;;_RV_;;substr(aList[nIndex],"+char(34)+"ON"+char(34)+","+char(34)+"OFF"+char(34)+");;_RV_;;"
 	],
 	[
 		90,
 		1,
 		"else",
-		"27/06/2021",
-		"19:22:50",
+		"01/07/2021",
+		"13:26:00",
 		""
 	],
 	[
 		91,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:22:50",
+		"01/07/2021",
+		"13:26:00",
 		"leftside;;_RV_;;aList[nIndex];;_RV_;;rightside;;_RV_;;substr(aList[nIndex],"+char(34)+"OFF"+char(34)+","+char(34)+"ON"+char(34)+");;_RV_;;"
 	]
 ]

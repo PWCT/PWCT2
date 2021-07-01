@@ -1757,7 +1757,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">t&lt;&nbsp;=&nbsp;len(Para)</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">t&nbsp;&lt;=&nbsp;len(Para)</font></span>"
 			],
 			[
 				"active",
@@ -1765,7 +1765,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if t< = len(Para) { "
+				"if t <= len(Para) { "
 			],
 			[
 				"interactionid",
@@ -1785,7 +1785,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If t"
+				"If t "
 			]
 		]
 	],
@@ -2898,328 +2898,328 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		""
 	],
 	[
 		2,
 		1,
 		"func",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		"name;;_RV_;;main;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"newobj",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		"value;;_RV_;;a1;;_RV_;;value2;;_RV_;;Array;;_RV_;;value3;;_RV_;;[1,2,3];;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"print",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		"text;;_RV_;;Print a1;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"callmethod",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;a1;;_RV_;;name;;_RV_;;print;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		"leftside;;_RV_;;a2;;_RV_;;rightside;;_RV_;;a1+3;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"print",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		"text;;_RV_;;Print a2=a1+3;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"callmethod",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;a2;;_RV_;;name;;_RV_;;print;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		"leftside;;_RV_;;a3;;_RV_;;rightside;;_RV_;;a1+a2;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"print",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		"text;;_RV_;;Print a3=a1+a2;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"callmethod",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;a3;;_RV_;;name;;_RV_;;print;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"class",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		"value;;_RV_;;Array;;_RV_;;value2;;_RV_;;;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		"leftside;;_RV_;;aData;;_RV_;;rightside;;_RV_;;[];;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"func",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		"name;;_RV_;;init;;_RV_;;parameters;;_RV_;;aPara;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		"condition;;_RV_;;isList(aPara);;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		"leftside;;_RV_;;aData;;_RV_;;rightside;;_RV_;;aPara;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"else",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		""
 	],
 	[
 		18,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;raise;;_RV_;;parameters;;_RV_;;"+char(34)+"To create new array, pass a list as parameter!"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"func",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		"name;;_RV_;;operator;;_RV_;;parameters;;_RV_;;cOperator,Para;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		"leftside;;_RV_;;result;;_RV_;;rightside;;_RV_;;self;;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"switch",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		"variable;;_RV_;;cOperator;;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"case",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		"value;;_RV_;;"+char(34)+"+"+char(34)+";;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		"condition;;_RV_;;isnumber(para);;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		"start;;_RV_;;t = 1;;_RV_;;to;;_RV_;;len(aData);;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		"leftside;;_RV_;;result.aData[t];;_RV_;;rightside;;_RV_;;aData[t]+Para;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"elseif",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		"condition;;_RV_;;isobject(para);;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		"condition;;_RV_;;classname(para) = classname(self);;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		"start;;_RV_;;t = 1;;_RV_;;to;;_RV_;;len(aData);;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:42:15",
-		"condition;;_RV_;;t< = len(Para);;_RV_;;"
+		"01/07/2021",
+		"13:46:30",
+		"condition;;_RV_;;t <= len(Para);;_RV_;;"
 	],
 	[
 		30,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		"leftside;;_RV_;;result.aData[t];;_RV_;;rightside;;_RV_;;aData[t]+Para[t];;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"else",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		""
 	],
 	[
 		32,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;raise;;_RV_;;parameters;;_RV_;;"+char(34)+"Bad object type, we expect "+char(34)+"+classname(self);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		33,
 		1,
 		"else",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		""
 	],
 	[
 		34,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;raise;;_RV_;;parameters;;_RV_;;"+char(34)+"Bad object type"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		35,
 		1,
 		"case",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		"value;;_RV_;;"+char(34)+"len"+char(34)+";;_RV_;;"
 	],
 	[
 		36,
 		1,
 		"return",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		"value;;_RV_;;len(aData);;_RV_;;"
 	],
 	[
 		37,
 		1,
 		"case",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		"value;;_RV_;;"+char(34)+"[]"+char(34)+";;_RV_;;"
 	],
 	[
 		38,
 		1,
 		"return",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		"value;;_RV_;;&aData[para];;_RV_;;"
 	],
 	[
 		39,
 		1,
 		"return",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		"value;;_RV_;;result;;_RV_;;"
 	],
 	[
 		40,
 		1,
 		"func",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		"name;;_RV_;;print;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		41,
 		1,
 		"print",
-		"27/06/2021",
-		"19:42:15",
+		"01/07/2021",
+		"13:46:30",
 		"text;;_RV_;;aData;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	]
 ]

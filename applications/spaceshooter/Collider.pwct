@@ -427,7 +427,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">x&gt;&nbsp;=&nbsp;this.x&nbsp;AND&nbsp;x&lt;&nbsp;=&nbsp;(this.x+w)&nbsp;AND&nbsp;y&gt;&nbsp;=&nbsp;this.y&nbsp;AND&nbsp;y&lt;&nbsp;=&nbsp;(this.y+h)</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">x&nbsp;&gt;=&nbsp;this.x&nbsp;AND&nbsp;x&nbsp;&lt;=&nbsp;(this.x+w)&nbsp;AND&nbsp;y&nbsp;&gt;=&nbsp;this.y&nbsp;AND&nbsp;y&nbsp;&lt;=&nbsp;(this.y+h)</font></span>"
 			],
 			[
 				"active",
@@ -435,7 +435,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if x> = this.x AND x< = (this.x+w) AND y> = this.y AND y< = (this.y+h) { "
+				"if x >= this.x AND x <= (this.x+w) AND y >= this.y AND y <= (this.y+h) { "
 			],
 			[
 				"interactionid",
@@ -455,7 +455,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If x> = this.x AND x = this.y AND y"
+				"If x >= this.x AND x = this.y AND y "
 			]
 		]
 	],
@@ -808,88 +808,88 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"27/06/2021",
-		"19:24:53",
+		"01/07/2021",
+		"13:28:06",
 		""
 	],
 	[
 		2,
 		1,
 		"class",
-		"27/06/2021",
-		"19:24:53",
+		"01/07/2021",
+		"13:28:06",
 		"value;;_RV_;;Collider;;_RV_;;value2;;_RV_;;;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:24:53",
+		"01/07/2021",
+		"13:28:06",
 		"value;;_RV_;;x;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:24:53",
+		"01/07/2021",
+		"13:28:06",
 		"value;;_RV_;;y;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:24:53",
+		"01/07/2021",
+		"13:28:06",
 		"value;;_RV_;;w;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:24:53",
+		"01/07/2021",
+		"13:28:06",
 		"value;;_RV_;;h;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"",
-		"27/06/2021",
-		"19:24:53",
+		"01/07/2021",
+		"13:28:06",
 		""
 	],
 	[
 		8,
 		1,
 		"func",
-		"27/06/2021",
-		"19:24:53",
+		"01/07/2021",
+		"13:28:06",
 		"name;;_RV_;;intersectWithPoint;;_RV_;;parameters;;_RV_;;x,y;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:24:53",
-		"condition;;_RV_;;x> = this.x AND x< = (this.x+w) AND y> = this.y AND y< = (this.y+h);;_RV_;;"
+		"01/07/2021",
+		"13:28:06",
+		"condition;;_RV_;;x >= this.x AND x <= (this.x+w) AND y >= this.y AND y <= (this.y+h);;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"return",
-		"27/06/2021",
-		"19:24:53",
+		"01/07/2021",
+		"13:28:06",
 		"value;;_RV_;;True;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"return",
-		"27/06/2021",
-		"19:24:53",
+		"01/07/2021",
+		"13:28:06",
 		"value;;_RV_;;False;;_RV_;;"
 	]
 ]

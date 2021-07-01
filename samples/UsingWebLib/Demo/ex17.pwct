@@ -579,7 +579,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">len(aList)&gt;0</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">len(aList)&nbsp;&gt;&nbsp;0</font></span>"
 			],
 			[
 				"active",
@@ -587,7 +587,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if len(aList)>0 { "
+				"if len(aList) > 0 { "
 			],
 			[
 				"interactionid",
@@ -607,7 +607,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If len(aList)>0"
+				"If len(aList) > 0"
 			]
 		]
 	],
@@ -1226,192 +1226,192 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"27/06/2021",
-		"19:45:13",
+		"01/07/2021",
+		"13:49:33",
 		""
 	],
 	[
 		2,
 		1,
 		"",
-		"27/06/2021",
-		"19:45:13",
+		"01/07/2021",
+		"13:49:33",
 		""
 	],
 	[
 		3,
 		1,
 		"load",
-		"27/06/2021",
-		"19:45:13",
+		"01/07/2021",
+		"13:49:33",
 		"file;;_RV_;;weblib.ring;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"import",
-		"27/06/2021",
-		"19:45:13",
+		"01/07/2021",
+		"13:49:33",
 		"value;;_RV_;;System.Web;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:45:13",
+		"01/07/2021",
+		"13:49:33",
 		"leftside;;_RV_;;cUploadPath;;_RV_;;rightside;;_RV_;;exefolder()+"+char(34)+"../libraries/weblib/ringapp/upload/"+char(34)+";;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"newobj",
-		"27/06/2021",
-		"19:45:13",
+		"01/07/2021",
+		"13:49:33",
 		"value;;_RV_;;;;_RV_;;value2;;_RV_;;Page;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:45:13",
+		"01/07/2021",
+		"13:49:33",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;boxstart;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:45:13",
+		"01/07/2021",
+		"13:49:33",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;text;;_RV_;;parameters;;_RV_;;"+char(34)+"Random Test"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:45:13",
+		"01/07/2021",
+		"13:49:33",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;newline;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:45:13",
+		"01/07/2021",
+		"13:49:33",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;boxend;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:45:13",
+		"01/07/2021",
+		"13:49:33",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;divstart;;_RV_;;parameters;;_RV_;;[:style = styleFloatLeft()+styleWidth("+char(34)+"400px"+char(34)+")];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:45:13",
+		"01/07/2021",
+		"13:49:33",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;newline;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:45:13",
+		"01/07/2021",
+		"13:49:33",
 		"leftside;;_RV_;;aList;;_RV_;;rightside;;_RV_;;dir(cUploadPath);;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:45:13",
-		"condition;;_RV_;;len(aList)>0;;_RV_;;"
+		"01/07/2021",
+		"13:49:33",
+		"condition;;_RV_;;len(aList) > 0;;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:45:13",
+		"01/07/2021",
+		"13:49:33",
 		"leftside;;_RV_;;nIndex;;_RV_;;rightside;;_RV_;;random(len(aList));;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:45:13",
+		"01/07/2021",
+		"13:49:33",
 		"condition;;_RV_;;nindex = 0;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:45:13",
+		"01/07/2021",
+		"13:49:33",
 		"leftside;;_RV_;;nIndex;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:45:13",
+		"01/07/2021",
+		"13:49:33",
 		"leftside;;_RV_;;cItem;;_RV_;;rightside;;_RV_;;"+char(34)+"upload/"+char(34)+"+aList[nIndex][1];;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:45:13",
+		"01/07/2021",
+		"13:49:33",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;newline;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:45:13",
+		"01/07/2021",
+		"13:49:33",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;image;;_RV_;;parameters;;_RV_;;[:url = cItem,:alt = :image];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"else",
-		"27/06/2021",
-		"19:45:13",
+		"01/07/2021",
+		"13:49:33",
 		""
 	],
 	[
 		22,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:45:13",
+		"01/07/2021",
+		"13:49:33",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;text;;_RV_;;parameters;;_RV_;;"+char(34)+"No images!"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:45:13",
+		"01/07/2021",
+		"13:49:34",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;newline;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:45:13",
+		"01/07/2021",
+		"13:49:34",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;divend;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	]
 ]

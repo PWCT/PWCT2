@@ -11029,7 +11029,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">y&lt;StickVert[S]</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">y&nbsp;&lt;&nbsp;StickVert[S]</font></span>"
 			],
 			[
 				"active",
@@ -11037,7 +11037,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if y<StickVert[S] { "
+				"if y < StickVert[S] { "
 			],
 			[
 				"interactionid",
@@ -11057,7 +11057,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If y"
+				"If y "
 			]
 		]
 	],
@@ -11257,7 +11257,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">StickVert[S]-=DiskH</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">StickVert[S]&nbsp;-=&nbsp;DiskH</font></span>"
 			],
 			[
 				"active",
@@ -11265,7 +11265,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"StickVert[S]-=DiskH"
+				"StickVert[S] -= DiskH"
 			],
 			[
 				"interactionid",
@@ -11285,7 +11285,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"StickVert[S]-=DiskH"
+				"StickVert[S] -= DiskH"
 			]
 		]
 	],
@@ -11371,7 +11371,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">D&gt;1</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">D&nbsp;&gt;&nbsp;1</font></span>"
 			],
 			[
 				"active",
@@ -11379,7 +11379,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if D>1 { "
+				"if D > 1 { "
 			],
 			[
 				"interactionid",
@@ -11399,7 +11399,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If D>1"
+				"If D > 1"
 			]
 		]
 	],
@@ -12245,7 +12245,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Y&gt;HorzLine</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Y&nbsp;&gt;&nbsp;HorzLine</font></span>"
 			],
 			[
 				"active",
@@ -12253,7 +12253,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if Y>HorzLine { "
+				"if Y > HorzLine { "
 			],
 			[
 				"interactionid",
@@ -12273,7 +12273,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If Y>HorzLine"
+				"If Y > HorzLine"
 			]
 		]
 	],
@@ -12663,7 +12663,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Src&lt;Dest</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Src&nbsp;&lt;&nbsp;Dest</font></span>"
 			],
 			[
 				"active",
@@ -12671,7 +12671,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if Src<Dest { "
+				"if Src < Dest { "
 			],
 			[
 				"interactionid",
@@ -12691,7 +12691,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If Src"
+				"If Src "
 			]
 		]
 	],
@@ -12853,7 +12853,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Src&gt;Dest</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Src&nbsp;&gt;&nbsp;Dest</font></span>"
 			],
 			[
 				"active",
@@ -12861,7 +12861,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if Src>Dest { "
+				"if Src > Dest { "
 			],
 			[
 				"interactionid",
@@ -12881,7 +12881,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If Src>Dest"
+				"If Src > Dest"
 			]
 		]
 	],
@@ -13005,7 +13005,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">StickVert[StickS]+=DiskH</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">StickVert[StickS]&nbsp;+=&nbsp;DiskH</font></span>"
 			],
 			[
 				"active",
@@ -13013,7 +13013,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"StickVert[StickS]+=DiskH"
+				"StickVert[StickS] += DiskH"
 			],
 			[
 				"interactionid",
@@ -13033,7 +13033,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"StickVert[StickS]+=DiskH"
+				"StickVert[StickS] += DiskH"
 			]
 		]
 	],
@@ -13347,7 +13347,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">X&lt;Dest</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">X&nbsp;&lt;&nbsp;Dest</font></span>"
 			],
 			[
 				"active",
@@ -13355,7 +13355,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if X<Dest { "
+				"if X < Dest { "
 			],
 			[
 				"interactionid",
@@ -13375,7 +13375,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If X"
+				"If X "
 			]
 		]
 	],
@@ -13879,7 +13879,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">X&gt;Dest</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">X&nbsp;&gt;&nbsp;Dest</font></span>"
 			],
 			[
 				"active",
@@ -13887,7 +13887,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if X>Dest { "
+				"if X > Dest { "
 			],
 			[
 				"interactionid",
@@ -13907,7 +13907,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If X>Dest"
+				"If X > Dest"
 			]
 		]
 	],
@@ -14487,7 +14487,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Y&lt;StickVert[StickD]</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Y&nbsp;&lt;&nbsp;StickVert[StickD]</font></span>"
 			],
 			[
 				"active",
@@ -14495,7 +14495,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if Y<StickVert[StickD] { "
+				"if Y < StickVert[StickD] { "
 			],
 			[
 				"interactionid",
@@ -14515,7 +14515,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If Y"
+				"If Y "
 			]
 		]
 	],
@@ -14791,7 +14791,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">StickVert[StickD]-=DiskH</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">StickVert[StickD]&nbsp;-=&nbsp;DiskH</font></span>"
 			],
 			[
 				"active",
@@ -14799,7 +14799,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"StickVert[StickD]-=DiskH"
+				"StickVert[StickD] -= DiskH"
 			],
 			[
 				"interactionid",
@@ -14819,7 +14819,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"StickVert[StickD]-=DiskH"
+				"StickVert[StickD] -= DiskH"
 			]
 		]
 	],
@@ -14905,7 +14905,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">MoveNbr&lt;&nbsp;=&nbsp;len(MovePlay)</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">MoveNbr&nbsp;&lt;=&nbsp;len(MovePlay)</font></span>"
 			],
 			[
 				"active",
@@ -14913,7 +14913,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if MoveNbr< = len(MovePlay) { "
+				"if MoveNbr <= len(MovePlay) { "
 			],
 			[
 				"interactionid",
@@ -14933,7 +14933,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If MoveNbr"
+				"If MoveNbr "
 			]
 		]
 	],
@@ -16996,2760 +16996,2760 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		2,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		3,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		4,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		5,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		6,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		7,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;DropX;;_RV_;;rightside;;_RV_;;50;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;DropY;;_RV_;;rightside;;_RV_;;-100;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;DiskNbr;;_RV_;;rightside;;_RV_;;[0,0,0,0,1];;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		12,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;DiskMove;;_RV_;;rightside;;_RV_;;[0,0,0,0,1];;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		14,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;DiskH;;_RV_;;rightside;;_RV_;;45;;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;DiskDir;;_RV_;;rightside;;_RV_;;[0,0,0,0];;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		17,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;StickPos;;_RV_;;rightside;;_RV_;;[50,300,550];;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		19,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;StickBase;;_RV_;;rightside;;_RV_;;100;;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		21,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;StickVert;;_RV_;;rightside;;_RV_;;[480,480,480];;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		23,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;HorzLine;;_RV_;;rightside;;_RV_;;100;;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		25,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;GE_TYPE_1;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;GE_TYPE_2;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;GE_TYPE_3;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;GE_TYPE_4;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;GE_TYPE_5;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		30,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;GE_TYPE_A;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;GE_TYPE_B;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		32,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;GE_TYPE_C;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		33,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;Dir;;_RV_;;rightside;;_RV_;;"+char(34)+"U"+char(34)+";;_RV_;;"
 	],
 	[
 		34,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		35,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;Src;;_RV_;;rightside;;_RV_;;50;;_RV_;;"
 	],
 	[
 		36,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;Dest;;_RV_;;rightside;;_RV_;;550;;_RV_;;"
 	],
 	[
 		37,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;StickS;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		38,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;StickD;;_RV_;;rightside;;_RV_;;3;;_RV_;;"
 	],
 	[
 		39,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;MoveNbr;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		40,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;MoveDo;;_RV_;;rightside;;_RV_;;[0,"+char(34)+"S"+char(34)+","+char(34)+"D"+char(34)+"];;_RV_;;"
 	],
 	[
 		41,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		42,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;MovePlay;;_RV_;;rightside;;_RV_;;[[1,"+char(34)+"A"+char(34)+","+char(34)+"B"+char(34)+"],[2,"+char(34)+"A"+char(34)+","+char(34)+"C"+char(34)+"],[1,"+char(34)+"B"+char(34)+","+char(34)+"C"+char(34)+"],[3,"+char(34)+"A"+char(34)+","+char(34)+"B"+char(34)+"],[1,"+char(34)+"C"+char(34)+","+char(34)+"A"+char(34)+"],[2,"+char(34)+"C"+char(34)+","+char(34)+"B"+char(34)+"],[1,"+char(34)+"A"+char(34)+","+char(34)+"B"+char(34)+"],[4,"+char(34)+"A"+char(34)+","+char(34)+"C"+char(34)+"],[1,"+char(34)+"B"+char(34)+","+char(34)+"C"+char(34)+"],[2,"+char(34)+"B"+char(34)+","+char(34)+"A"+char(34)+"],[1,"+char(34)+"C"+char(34)+","+char(34)+"A"+char(34)+"],[3,"+char(34)+"B"+char(34)+","+char(34)+"C"+char(34)+"],[1,"+char(34)+"A"+char(34)+","+char(34)+"B"+char(34)+"],[2,"+char(34)+"A"+char(34)+","+char(34)+"C"+char(34)+"],[1,"+char(34)+"B"+char(34)+","+char(34)+"C"+char(34)+"],[5,"+char(34)+"A"+char(34)+","+char(34)+"B"+char(34)+"],[1,"+char(34)+"C"+char(34)+","+char(34)+"A"+char(34)+"],[2,"+char(34)+"C"+char(34)+","+char(34)+"B"+char(34)+"],[1,"+char(34)+"A"+char(34)+","+char(34)+"B"+char(34)+"],[3,"+char(34)+"C"+char(34)+","+char(34)+"A"+char(34)+"],[1,"+char(34)+"B"+char(34)+","+char(34)+"C"+char(34)+"],[2,"+char(34)+"B"+char(34)+","+char(34)+"A"+char(34)+"],[1,"+char(34)+"C"+char(34)+","+char(34)+"A"+char(34)+"],[4,"+char(34)+"C"+char(34)+","+char(34)+"B"+char(34)+"],[1,"+char(34)+"A"+char(34)+","+char(34)+"B"+char(34)+"],[2,"+char(34)+"A"+char(34)+","+char(34)+"C"+char(34)+"],[1,"+char(34)+"B"+char(34)+","+char(34)+"C"+char(34)+"],[3,"+char(34)+"A"+char(34)+","+char(34)+"B"+char(34)+"],[1,"+char(34)+"C"+char(34)+","+char(34)+"A"+char(34)+"],[2,"+char(34)+"C"+char(34)+","+char(34)+"B"+char(34)+"],[1,"+char(34)+"A"+char(34)+","+char(34)+"B"+char(34)+"]];;_RV_;;"
 	],
 	[
 		43,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		44,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		45,
 		1,
 		"load",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"file;;_RV_;;gameengine.ring;;_RV_;;"
 	],
 	[
 		46,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		47,
 		1,
 		"func",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"name;;_RV_;;Main;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		48,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		49,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;GE_SCREEN_W;;_RV_;;rightside;;_RV_;;850;;_RV_;;"
 	],
 	[
 		50,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;GE_SCREEN_H;;_RV_;;rightside;;_RV_;;600;;_RV_;;"
 	],
 	[
 		51,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		52,
 		1,
 		"newobj",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"value;;_RV_;;oGame;;_RV_;;value2;;_RV_;;Game;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		53,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;title;;_RV_;;rightside;;_RV_;;"+char(34)+"Towers of Hanoi"+char(34)+";;_RV_;;"
 	],
 	[
 		54,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;FixedFPS;;_RV_;;rightside;;_RV_;;240;;_RV_;;"
 	],
 	[
 		55,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		56,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;icon;;_RV_;;rightside;;_RV_;;"+char(34)+"images/TowersOfHanoi.jpg"+char(34)+";;_RV_;;"
 	],
 	[
 		57,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		58,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		59,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"value;;_RV_;;sprite;;_RV_;;"
 	],
 	[
 		60,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;type;;_RV_;;rightside;;_RV_;;GE_TYPE_BACKGROUND;;_RV_;;"
 	],
 	[
 		61,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;file;;_RV_;;rightside;;_RV_;;"+char(34)+"images/TowersOfHanoi.jpg"+char(34)+";;_RV_;;"
 	],
 	[
 		62,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;x;;_RV_;;rightside;;_RV_;;-100;;_RV_;;"
 	],
 	[
 		63,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		64,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;y;;_RV_;;rightside;;_RV_;;-100;;_RV_;;"
 	],
 	[
 		65,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;Animate;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		66,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		67,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		68,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"value;;_RV_;;sprite;;_RV_;;"
 	],
 	[
 		69,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;type;;_RV_;;rightside;;_RV_;;GE_TYPE_A;;_RV_;;"
 	],
 	[
 		70,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		71,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;X;;_RV_;;rightside;;_RV_;;StickPos[1];;_RV_;;"
 	],
 	[
 		72,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;Y;;_RV_;;rightside;;_RV_;;StickBase;;_RV_;;"
 	],
 	[
 		73,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		74,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;file;;_RV_;;rightside;;_RV_;;"+char(34)+"images/StickG.png"+char(34)+";;_RV_;;"
 	],
 	[
 		75,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;transparent;;_RV_;;rightside;;_RV_;;true;;_RV_;;"
 	],
 	[
 		76,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;Animate;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		77,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;Move;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		78,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;Scaled;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		79,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"value;;_RV_;;sprite;;_RV_;;"
 	],
 	[
 		80,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;type;;_RV_;;rightside;;_RV_;;GE_TYPE_B;;_RV_;;"
 	],
 	[
 		81,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		82,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;X;;_RV_;;rightside;;_RV_;;StickPos[2];;_RV_;;"
 	],
 	[
 		83,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;Y;;_RV_;;rightside;;_RV_;;StickBase;;_RV_;;"
 	],
 	[
 		84,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		85,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;file;;_RV_;;rightside;;_RV_;;"+char(34)+"images/StickB.png"+char(34)+";;_RV_;;"
 	],
 	[
 		86,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;transparent;;_RV_;;rightside;;_RV_;;true;;_RV_;;"
 	],
 	[
 		87,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;Animate;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		88,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;Move;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		89,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;Scaled;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		90,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"value;;_RV_;;sprite;;_RV_;;"
 	],
 	[
 		91,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;type;;_RV_;;rightside;;_RV_;;GE_TYPE_C;;_RV_;;"
 	],
 	[
 		92,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		93,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;X;;_RV_;;rightside;;_RV_;;StickPos[3];;_RV_;;"
 	],
 	[
 		94,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;Y;;_RV_;;rightside;;_RV_;;StickBase;;_RV_;;"
 	],
 	[
 		95,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		96,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;file;;_RV_;;rightside;;_RV_;;"+char(34)+"images/StickY.png"+char(34)+";;_RV_;;"
 	],
 	[
 		97,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;transparent;;_RV_;;rightside;;_RV_;;true;;_RV_;;"
 	],
 	[
 		98,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;Animate;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		99,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;Move;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		100,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;Scaled;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		101,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		102,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		103,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"value;;_RV_;;sprite;;_RV_;;"
 	],
 	[
 		104,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;type;;_RV_;;rightside;;_RV_;;GE_TYPE_1;;_RV_;;"
 	],
 	[
 		105,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		106,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;x;;_RV_;;rightside;;_RV_;;DropX;;_RV_;;"
 	],
 	[
 		107,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;y;;_RV_;;rightside;;_RV_;;DropY;;_RV_;;"
 	],
 	[
 		108,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		109,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;file;;_RV_;;rightside;;_RV_;;"+char(34)+"images/D1.png"+char(34)+";;_RV_;;"
 	],
 	[
 		110,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;transparent;;_RV_;;rightside;;_RV_;;true;;_RV_;;"
 	],
 	[
 		111,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;Animate;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		112,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;Move;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		113,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;Scaled;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		114,
 		1,
 		"nestedfunc",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"value;;_RV_;;state;;_RV_;;value2;;_RV_;;oGame,oSelf;;_RV_;;"
 	],
 	[
 		115,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"value;;_RV_;;oSelf;;_RV_;;"
 	],
 	[
 		116,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"condition;;_RV_;;DiskMove[1] = true;;_RV_;;"
 	],
 	[
 		117,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;y;;_RV_;;rightside;;_RV_;;Setup(1,1,y);;_RV_;;"
 	],
 	[
 		118,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		""
 	],
 	[
 		119,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"condition;;_RV_;;MoveDo[1] = 1;;_RV_;;"
 	],
 	[
 		120,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:54",
 		"leftside;;_RV_;;aHorzVert;;_RV_;;rightside;;_RV_;;MoveDisk(1,x,y);;_RV_;;"
 	],
 	[
 		121,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;x;;_RV_;;rightside;;_RV_;;aHorzVert[1];;_RV_;;"
 	],
 	[
 		122,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;y;;_RV_;;rightside;;_RV_;;aHorzVert[2];;_RV_;;"
 	],
 	[
 		123,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		124,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		125,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		126,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"value;;_RV_;;sprite;;_RV_;;"
 	],
 	[
 		127,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;type;;_RV_;;rightside;;_RV_;;GE_TYPE_2;;_RV_;;"
 	],
 	[
 		128,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		129,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;x;;_RV_;;rightside;;_RV_;;DropX;;_RV_;;"
 	],
 	[
 		130,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;y;;_RV_;;rightside;;_RV_;;DropY;;_RV_;;"
 	],
 	[
 		131,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		132,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;file;;_RV_;;rightside;;_RV_;;"+char(34)+"images/D2.png"+char(34)+";;_RV_;;"
 	],
 	[
 		133,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;transparent;;_RV_;;rightside;;_RV_;;true;;_RV_;;"
 	],
 	[
 		134,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;Animate;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		135,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;Move;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		136,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;Scaled;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		137,
 		1,
 		"nestedfunc",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"value;;_RV_;;state;;_RV_;;value2;;_RV_;;oGame,oSelf;;_RV_;;"
 	],
 	[
 		138,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"value;;_RV_;;oSelf;;_RV_;;"
 	],
 	[
 		139,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"condition;;_RV_;;DiskMove[2] = true;;_RV_;;"
 	],
 	[
 		140,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;y;;_RV_;;rightside;;_RV_;;Setup(2,1,y);;_RV_;;"
 	],
 	[
 		141,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		142,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"condition;;_RV_;;MoveDo[1] = 2;;_RV_;;"
 	],
 	[
 		143,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;aHorzVert;;_RV_;;rightside;;_RV_;;MoveDisk(2,x,y);;_RV_;;"
 	],
 	[
 		144,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;x;;_RV_;;rightside;;_RV_;;aHorzVert[1];;_RV_;;"
 	],
 	[
 		145,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;y;;_RV_;;rightside;;_RV_;;aHorzVert[2];;_RV_;;"
 	],
 	[
 		146,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		147,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		148,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		149,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"value;;_RV_;;sprite;;_RV_;;"
 	],
 	[
 		150,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;type;;_RV_;;rightside;;_RV_;;GE_TYPE_3;;_RV_;;"
 	],
 	[
 		151,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		152,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;x;;_RV_;;rightside;;_RV_;;DropX;;_RV_;;"
 	],
 	[
 		153,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;y;;_RV_;;rightside;;_RV_;;DropY;;_RV_;;"
 	],
 	[
 		154,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		155,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;file;;_RV_;;rightside;;_RV_;;"+char(34)+"images/D3.png"+char(34)+";;_RV_;;"
 	],
 	[
 		156,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;transparent;;_RV_;;rightside;;_RV_;;true;;_RV_;;"
 	],
 	[
 		157,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;Animate;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		158,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;Move;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		159,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;Scaled;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		160,
 		1,
 		"nestedfunc",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"value;;_RV_;;state;;_RV_;;value2;;_RV_;;oGame,oSelf;;_RV_;;"
 	],
 	[
 		161,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"value;;_RV_;;oSelf;;_RV_;;"
 	],
 	[
 		162,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"condition;;_RV_;;DiskMove[3] = true;;_RV_;;"
 	],
 	[
 		163,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;y;;_RV_;;rightside;;_RV_;;Setup(3,1,y);;_RV_;;"
 	],
 	[
 		164,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		165,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"condition;;_RV_;;MoveDo[1] = 3;;_RV_;;"
 	],
 	[
 		166,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;aHorzVert;;_RV_;;rightside;;_RV_;;MoveDisk(3,x,y);;_RV_;;"
 	],
 	[
 		167,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;x;;_RV_;;rightside;;_RV_;;aHorzVert[1];;_RV_;;"
 	],
 	[
 		168,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;y;;_RV_;;rightside;;_RV_;;aHorzVert[2];;_RV_;;"
 	],
 	[
 		169,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		170,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		171,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		172,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"value;;_RV_;;sprite;;_RV_;;"
 	],
 	[
 		173,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;type;;_RV_;;rightside;;_RV_;;GE_TYPE_4;;_RV_;;"
 	],
 	[
 		174,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		175,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;x;;_RV_;;rightside;;_RV_;;DropX;;_RV_;;"
 	],
 	[
 		176,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;y;;_RV_;;rightside;;_RV_;;DropY;;_RV_;;"
 	],
 	[
 		177,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		178,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;file;;_RV_;;rightside;;_RV_;;"+char(34)+"images/D4.png"+char(34)+";;_RV_;;"
 	],
 	[
 		179,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;transparent;;_RV_;;rightside;;_RV_;;true;;_RV_;;"
 	],
 	[
 		180,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;Animate;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		181,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;Move;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		182,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;Scaled;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		183,
 		1,
 		"nestedfunc",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"value;;_RV_;;state;;_RV_;;value2;;_RV_;;oGame,oSelf;;_RV_;;"
 	],
 	[
 		184,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"value;;_RV_;;oSelf;;_RV_;;"
 	],
 	[
 		185,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"condition;;_RV_;;DiskMove[4] = true;;_RV_;;"
 	],
 	[
 		186,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;y;;_RV_;;rightside;;_RV_;;Setup(4,1,y);;_RV_;;"
 	],
 	[
 		187,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		188,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"condition;;_RV_;;MoveDo[1] = 4;;_RV_;;"
 	],
 	[
 		189,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;aHorzVert;;_RV_;;rightside;;_RV_;;MoveDisk(4,x,y);;_RV_;;"
 	],
 	[
 		190,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;x;;_RV_;;rightside;;_RV_;;aHorzVert[1];;_RV_;;"
 	],
 	[
 		191,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;y;;_RV_;;rightside;;_RV_;;aHorzVert[2];;_RV_;;"
 	],
 	[
 		192,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		193,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		194,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		195,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"value;;_RV_;;sprite;;_RV_;;"
 	],
 	[
 		196,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;type;;_RV_;;rightside;;_RV_;;GE_TYPE_5;;_RV_;;"
 	],
 	[
 		197,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		198,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;x;;_RV_;;rightside;;_RV_;;DropX;;_RV_;;"
 	],
 	[
 		199,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;y;;_RV_;;rightside;;_RV_;;DropY;;_RV_;;"
 	],
 	[
 		200,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		201,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;file;;_RV_;;rightside;;_RV_;;"+char(34)+"images/D5.png"+char(34)+";;_RV_;;"
 	],
 	[
 		202,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;transparent;;_RV_;;rightside;;_RV_;;true;;_RV_;;"
 	],
 	[
 		203,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;Animate;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		204,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;Move;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		205,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;Scaled;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		206,
 		1,
 		"nestedfunc",
-		"27/06/2021",
-		"19:26:40",
+		"01/07/2021",
+		"13:29:55",
 		"value;;_RV_;;state;;_RV_;;value2;;_RV_;;oGame,oSelf;;_RV_;;"
 	],
 	[
 		207,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"value;;_RV_;;oSelf;;_RV_;;"
 	],
 	[
 		208,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"condition;;_RV_;;DiskMove[5] = true;;_RV_;;"
 	],
 	[
 		209,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;y;;_RV_;;rightside;;_RV_;;Setup(5,1,y);;_RV_;;"
 	],
 	[
 		210,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		211,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"condition;;_RV_;;MoveDo[1] = 5;;_RV_;;"
 	],
 	[
 		212,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;aHorzVert;;_RV_;;rightside;;_RV_;;MoveDisk(5,x,y);;_RV_;;"
 	],
 	[
 		213,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;x;;_RV_;;rightside;;_RV_;;aHorzVert[1];;_RV_;;"
 	],
 	[
 		214,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;y;;_RV_;;rightside;;_RV_;;aHorzVert[2];;_RV_;;"
 	],
 	[
 		215,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		216,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		217,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		218,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		219,
 		1,
 		"return",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		220,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		221,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		222,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		223,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		224,
 		1,
 		"func",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"name;;_RV_;;Setup;;_RV_;;parameters;;_RV_;;(D,S,y);;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		225,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"condition;;_RV_;;DiskMove[D] = true;;_RV_;;"
 	],
 	[
 		226,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:41",
-		"condition;;_RV_;;y<StickVert[S];;_RV_;;"
+		"01/07/2021",
+		"13:29:55",
+		"condition;;_RV_;;y < StickVert[S];;_RV_;;"
 	],
 	[
 		227,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"value;;_RV_;;y++;;_RV_;;"
 	],
 	[
 		228,
 		1,
 		"return",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"value;;_RV_;;y;;_RV_;;"
 	],
 	[
 		229,
 		1,
 		"else",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		230,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:26:41",
-		"value;;_RV_;;StickVert[S]-=DiskH;;_RV_;;"
+		"01/07/2021",
+		"13:29:55",
+		"value;;_RV_;;StickVert[S] -= DiskH;;_RV_;;"
 	],
 	[
 		231,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		232,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;DiskMove[D];;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		233,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:41",
-		"condition;;_RV_;;D>1;;_RV_;;"
+		"01/07/2021",
+		"13:29:55",
+		"condition;;_RV_;;D > 1;;_RV_;;"
 	],
 	[
 		234,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;DiskMove[D-1];;_RV_;;rightside;;_RV_;;true;;_RV_;;"
 	],
 	[
 		235,
 		1,
 		"else",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		236,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;MoveNbr;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		237,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;MoveDo;;_RV_;;rightside;;_RV_;;MovePlay[1];;_RV_;;"
 	],
 	[
 		238,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		239,
 		1,
 		"return",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"value;;_RV_;;y;;_RV_;;"
 	],
 	[
 		240,
 		1,
 		"return",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		241,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		242,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		243,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		244,
 		1,
 		"func",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"name;;_RV_;;MoveDisk;;_RV_;;parameters;;_RV_;;(D,X,Y);;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		245,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		246,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		247,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"condition;;_RV_;;Dir = "+char(34)+"U"+char(34)+";;_RV_;;"
 	],
 	[
 		248,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:41",
-		"condition;;_RV_;;Y>HorzLine;;_RV_;;"
+		"01/07/2021",
+		"13:29:55",
+		"condition;;_RV_;;Y > HorzLine;;_RV_;;"
 	],
 	[
 		249,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"value;;_RV_;;Y--;;_RV_;;"
 	],
 	[
 		250,
 		1,
 		"return",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"value;;_RV_;;[X,Y];;_RV_;;"
 	],
 	[
 		251,
 		1,
 		"else",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		252,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;StickS;;_RV_;;rightside;;_RV_;;dec(MoveDo[2])-9;;_RV_;;"
 	],
 	[
 		253,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		254,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;Src;;_RV_;;rightside;;_RV_;;StickPos[StickS];;_RV_;;"
 	],
 	[
 		255,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;StickD;;_RV_;;rightside;;_RV_;;dec(MoveDo[3])-9;;_RV_;;"
 	],
 	[
 		256,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;Dest;;_RV_;;rightside;;_RV_;;StickPos[StickD];;_RV_;;"
 	],
 	[
 		257,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:41",
-		"condition;;_RV_;;Src<Dest;;_RV_;;"
+		"01/07/2021",
+		"13:29:55",
+		"condition;;_RV_;;Src < Dest;;_RV_;;"
 	],
 	[
 		258,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;Dir;;_RV_;;rightside;;_RV_;;"+char(34)+"R"+char(34)+";;_RV_;;"
 	],
 	[
 		259,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		260,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:41",
-		"condition;;_RV_;;Src>Dest;;_RV_;;"
+		"01/07/2021",
+		"13:29:55",
+		"condition;;_RV_;;Src > Dest;;_RV_;;"
 	],
 	[
 		261,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;Dir;;_RV_;;rightside;;_RV_;;"+char(34)+"L"+char(34)+";;_RV_;;"
 	],
 	[
 		262,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:26:41",
-		"value;;_RV_;;StickVert[StickS]+=DiskH;;_RV_;;"
+		"01/07/2021",
+		"13:29:55",
+		"value;;_RV_;;StickVert[StickS] += DiskH;;_RV_;;"
 	],
 	[
 		263,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		264,
 		1,
 		"return",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"value;;_RV_;;[X,Y];;_RV_;;"
 	],
 	[
 		265,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		266,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		267,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"condition;;_RV_;;Dir = "+char(34)+"R"+char(34)+";;_RV_;;"
 	],
 	[
 		268,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:41",
-		"condition;;_RV_;;X<Dest;;_RV_;;"
+		"01/07/2021",
+		"13:29:55",
+		"condition;;_RV_;;X < Dest;;_RV_;;"
 	],
 	[
 		269,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"value;;_RV_;;X++;;_RV_;;"
 	],
 	[
 		270,
 		1,
 		"return",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"value;;_RV_;;[X,Y];;_RV_;;"
 	],
 	[
 		271,
 		1,
 		"else",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		272,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;Dir;;_RV_;;rightside;;_RV_;;"+char(34)+"D"+char(34)+";;_RV_;;"
 	],
 	[
 		273,
 		1,
 		"return",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"value;;_RV_;;[X,Y];;_RV_;;"
 	],
 	[
 		274,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		275,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		276,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"condition;;_RV_;;Dir = "+char(34)+"L"+char(34)+";;_RV_;;"
 	],
 	[
 		277,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:41",
-		"condition;;_RV_;;X>Dest;;_RV_;;"
+		"01/07/2021",
+		"13:29:55",
+		"condition;;_RV_;;X > Dest;;_RV_;;"
 	],
 	[
 		278,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"value;;_RV_;;X--;;_RV_;;"
 	],
 	[
 		279,
 		1,
 		"return",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"value;;_RV_;;[X,Y];;_RV_;;"
 	],
 	[
 		280,
 		1,
 		"else",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		281,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;Dir;;_RV_;;rightside;;_RV_;;"+char(34)+"D"+char(34)+";;_RV_;;"
 	],
 	[
 		282,
 		1,
 		"return",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"value;;_RV_;;[X,Y];;_RV_;;"
 	],
 	[
 		283,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		284,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		285,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"condition;;_RV_;;Dir = "+char(34)+"D"+char(34)+";;_RV_;;"
 	],
 	[
 		286,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;StickD;;_RV_;;rightside;;_RV_;;dec(MoveDo[3])-9;;_RV_;;"
 	],
 	[
 		287,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		288,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:41",
-		"condition;;_RV_;;Y<StickVert[StickD];;_RV_;;"
+		"01/07/2021",
+		"13:29:55",
+		"condition;;_RV_;;Y < StickVert[StickD];;_RV_;;"
 	],
 	[
 		289,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"value;;_RV_;;Y++;;_RV_;;"
 	],
 	[
 		290,
 		1,
 		"return",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"value;;_RV_;;[X,Y];;_RV_;;"
 	],
 	[
 		291,
 		1,
 		"else",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		292,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;Dir;;_RV_;;rightside;;_RV_;;"+char(34)+"U"+char(34)+";;_RV_;;"
 	],
 	[
 		293,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;StickD;;_RV_;;rightside;;_RV_;;dec(MoveDo[3])-9;;_RV_;;"
 	],
 	[
 		294,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:26:41",
-		"value;;_RV_;;StickVert[StickD]-=DiskH;;_RV_;;"
+		"01/07/2021",
+		"13:29:55",
+		"value;;_RV_;;StickVert[StickD] -= DiskH;;_RV_;;"
 	],
 	[
 		295,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		296,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"value;;_RV_;;MoveNbr++;;_RV_;;"
 	],
 	[
 		297,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:41",
-		"condition;;_RV_;;MoveNbr< = len(MovePlay);;_RV_;;"
+		"01/07/2021",
+		"13:29:55",
+		"condition;;_RV_;;MoveNbr <= len(MovePlay);;_RV_;;"
 	],
 	[
 		298,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;MoveDo;;_RV_;;rightside;;_RV_;;MovePlay[Movenbr];;_RV_;;"
 	],
 	[
 		299,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		300,
 		1,
 		"else",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		301,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"leftside;;_RV_;;MoveDo[1];;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		302,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		303,
 		1,
 		"print",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"text;;_RV_;;"+char(34)+"NextNbr: "+char(34)+"+MoveNbr+"+char(34)+" "+char(34)+"+MoveDo[1]+"+char(34)+" "+char(34)+"+MoveDo[2]+"+char(34)+" "+char(34)+"+MoveDo[3]+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		304,
 		1,
 		"return",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"value;;_RV_;;[X,Y];;_RV_;;"
 	],
 	[
 		305,
 		1,
 		"return",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		"value;;_RV_;;"+char(34)+"See oh oh"+char(34)+"+nl;;_RV_;;"
 	],
 	[
 		306,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		307,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		308,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		309,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		310,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		311,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		312,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		313,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		314,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		315,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		316,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		317,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		318,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		319,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		320,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		321,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		322,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		323,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		324,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		325,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		326,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		327,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		328,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		329,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		330,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		331,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		332,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		333,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		334,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		335,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		336,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		337,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		338,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		339,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		340,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		341,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		342,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		343,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		344,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	],
 	[
 		345,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:41",
+		"01/07/2021",
+		"13:29:55",
 		""
 	]
 ]

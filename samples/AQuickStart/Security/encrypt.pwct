@@ -313,7 +313,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cKey+=char(x)</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cKey&nbsp;+=&nbsp;char(x)</font></span>"
 			],
 			[
 				"active",
@@ -321,7 +321,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"cKey+=char(x)"
+				"cKey += char(x)"
 			],
 			[
 				"interactionid",
@@ -341,7 +341,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"cKey+=char(x)"
+				"cKey += char(x)"
 			]
 		]
 	],
@@ -541,7 +541,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cIV+=char(x)</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cIV&nbsp;+=&nbsp;char(x)</font></span>"
 			],
 			[
 				"active",
@@ -549,7 +549,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"cIV+=char(x)"
+				"cIV += char(x)"
 			],
 			[
 				"interactionid",
@@ -569,7 +569,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"cIV+=char(x)"
+				"cIV += char(x)"
 			]
 		]
 	],
@@ -694,112 +694,112 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"27/06/2021",
-		"19:38:34",
+		"01/07/2021",
+		"13:42:41",
 		""
 	],
 	[
 		2,
 		1,
 		"load",
-		"27/06/2021",
-		"19:38:34",
+		"01/07/2021",
+		"13:42:41",
 		"file;;_RV_;;openssllib.ring;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"print",
-		"27/06/2021",
-		"19:38:34",
+		"01/07/2021",
+		"13:42:41",
 		"text;;_RV_;;Enter a string : ;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"getinput",
-		"27/06/2021",
-		"19:38:34",
+		"01/07/2021",
+		"13:42:41",
 		"text;;_RV_;;cStr;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:38:34",
+		"01/07/2021",
+		"13:42:41",
 		"leftside;;_RV_;;list;;_RV_;;rightside;;_RV_;;0:15;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:38:34",
+		"01/07/2021",
+		"13:42:41",
 		"leftside;;_RV_;;cKey;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"forinloop",
-		"27/06/2021",
-		"19:38:34",
+		"01/07/2021",
+		"13:42:41",
 		"variable;;_RV_;;x;;_RV_;;in;;_RV_;;list;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:38:34",
-		"value;;_RV_;;cKey+=char(x);;_RV_;;"
+		"01/07/2021",
+		"13:42:41",
+		"value;;_RV_;;cKey += char(x);;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:38:34",
+		"01/07/2021",
+		"13:42:41",
 		"leftside;;_RV_;;list;;_RV_;;rightside;;_RV_;;1:8;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:38:34",
+		"01/07/2021",
+		"13:42:41",
 		"leftside;;_RV_;;cIV;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"forinloop",
-		"27/06/2021",
-		"19:38:34",
+		"01/07/2021",
+		"13:42:41",
 		"variable;;_RV_;;x;;_RV_;;in;;_RV_;;list;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:38:34",
-		"value;;_RV_;;cIV+=char(x);;_RV_;;"
+		"01/07/2021",
+		"13:42:41",
+		"value;;_RV_;;cIV += char(x);;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:38:34",
+		"01/07/2021",
+		"13:42:41",
 		"leftside;;_RV_;;cStr;;_RV_;;rightside;;_RV_;;Encrypt(cStr,cKey,cIV);;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"print",
-		"27/06/2021",
-		"19:38:34",
+		"01/07/2021",
+		"13:42:41",
 		"text;;_RV_;;"+char(34)+"Cipher Text    : "+char(34)+"+cStr+nl+"+char(34)+"Plain Text     : "+char(34)+"+Decrypt(cStr,cKey,cIV)+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	]
 ]

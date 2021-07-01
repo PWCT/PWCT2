@@ -1187,7 +1187,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">ballPosition.x+=ballSpeed.x</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">ballPosition.x&nbsp;+=&nbsp;ballSpeed.x</font></span>"
 			],
 			[
 				"active",
@@ -1195,7 +1195,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"ballPosition.x+=ballSpeed.x"
+				"ballPosition.x += ballSpeed.x"
 			],
 			[
 				"interactionid",
@@ -1215,7 +1215,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"ballPosition.x+=ballSpeed.x"
+				"ballPosition.x += ballSpeed.x"
 			]
 		]
 	],
@@ -1225,7 +1225,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">ballPosition.y+=ballSpeed.y</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">ballPosition.y&nbsp;+=&nbsp;ballSpeed.y</font></span>"
 			],
 			[
 				"active",
@@ -1233,7 +1233,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"ballPosition.y+=ballSpeed.y"
+				"ballPosition.y += ballSpeed.y"
 			],
 			[
 				"interactionid",
@@ -1253,7 +1253,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"ballPosition.y+=ballSpeed.y"
+				"ballPosition.y += ballSpeed.y"
 			]
 		]
 	],
@@ -1301,7 +1301,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(ballPosition.x&gt;&nbsp;=&nbsp;(GetScreenWidth()-ballRadius))&nbsp;OR&nbsp;(ballPosition.x&lt;&nbsp;=&nbsp;ballRadius)</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(ballPosition.x&nbsp;&gt;=&nbsp;(GetScreenWidth()-ballRadius))&nbsp;OR&nbsp;(ballPosition.x&nbsp;&lt;=&nbsp;ballRadius)</font></span>"
 			],
 			[
 				"active",
@@ -1309,7 +1309,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if (ballPosition.x> = (GetScreenWidth()-ballRadius)) OR (ballPosition.x< = ballRadius) { "
+				"if (ballPosition.x >= (GetScreenWidth()-ballRadius)) OR (ballPosition.x <= ballRadius) { "
 			],
 			[
 				"interactionid",
@@ -1329,7 +1329,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If (ballPosition.x> = (GetScreenWidth()-ballRadius)) OR (ballPosition.x"
+				"If (ballPosition.x >= (GetScreenWidth()-ballRadius)) OR (ballPosition.x "
 			]
 		]
 	],
@@ -1377,7 +1377,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">ballSpeed.x*=-1.0</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">ballSpeed.x&nbsp;*=&nbsp;-1.0</font></span>"
 			],
 			[
 				"active",
@@ -1385,7 +1385,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"ballSpeed.x*=-1.0"
+				"ballSpeed.x *= -1.0"
 			],
 			[
 				"interactionid",
@@ -1405,7 +1405,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"ballSpeed.x*=-1.0"
+				"ballSpeed.x *= -1.0"
 			]
 		]
 	],
@@ -1453,7 +1453,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(ballPosition.y&gt;&nbsp;=&nbsp;(GetScreenHeight()-ballRadius))&nbsp;OR&nbsp;(ballPosition.y&lt;&nbsp;=&nbsp;ballRadius)</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(ballPosition.y&nbsp;&gt;=&nbsp;(GetScreenHeight()-ballRadius))&nbsp;OR&nbsp;(ballPosition.y&nbsp;&lt;=&nbsp;ballRadius)</font></span>"
 			],
 			[
 				"active",
@@ -1461,7 +1461,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if (ballPosition.y> = (GetScreenHeight()-ballRadius)) OR (ballPosition.y< = ballRadius) { "
+				"if (ballPosition.y >= (GetScreenHeight()-ballRadius)) OR (ballPosition.y <= ballRadius) { "
 			],
 			[
 				"interactionid",
@@ -1481,7 +1481,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If (ballPosition.y> = (GetScreenHeight()-ballRadius)) OR (ballPosition.y"
+				"If (ballPosition.y >= (GetScreenHeight()-ballRadius)) OR (ballPosition.y "
 			]
 		]
 	],
@@ -1529,7 +1529,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">ballSpeed.y*=-1.0</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">ballSpeed.y&nbsp;*=&nbsp;-1.0</font></span>"
 			],
 			[
 				"active",
@@ -1537,7 +1537,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"ballSpeed.y*=-1.0"
+				"ballSpeed.y *= -1.0"
 			],
 			[
 				"interactionid",
@@ -1557,7 +1557,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"ballSpeed.y*=-1.0"
+				"ballSpeed.y *= -1.0"
 			]
 		]
 	],
@@ -2518,424 +2518,424 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		""
 	],
 	[
 		2,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		""
 	],
 	[
 		3,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		""
 	],
 	[
 		4,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		""
 	],
 	[
 		5,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		""
 	],
 	[
 		6,
 		1,
 		"load",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		"file;;_RV_;;raylib.ring;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		""
 	],
 	[
 		8,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		""
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		"leftside;;_RV_;;screenWidth;;_RV_;;rightside;;_RV_;;800;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		"leftside;;_RV_;;screenHeight;;_RV_;;rightside;;_RV_;;450;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;InitWindow;;_RV_;;parameters;;_RV_;;screenWidth,screenHeight,"+char(34)+"Bouncing Ball"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		"leftside;;_RV_;;ballPosition;;_RV_;;rightside;;_RV_;;Vector2(GetScreenWidth()/2,GetScreenHeight()/2);;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		"leftside;;_RV_;;ballSpeed;;_RV_;;rightside;;_RV_;;Vector2(5.0,4.0);;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		"leftside;;_RV_;;ballRadius;;_RV_;;rightside;;_RV_;;20;;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		"leftside;;_RV_;;pause;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		"leftside;;_RV_;;framesCounter;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetTargetFPS;;_RV_;;parameters;;_RV_;;60;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		""
 	],
 	[
 		19,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		""
 	],
 	[
 		20,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		""
 	],
 	[
 		21,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		""
 	],
 	[
 		22,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		""
 	],
 	[
 		23,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		""
 	],
 	[
 		24,
 		1,
 		"whileloop",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		"condition;;_RV_;;!WindowShouldClose();;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		"condition;;_RV_;;IsKeyPressed(KEY_SPACE);;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		"leftside;;_RV_;;pause;;_RV_;;rightside;;_RV_;;!pause;;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		"condition;;_RV_;;!pause;;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:31:20",
-		"value;;_RV_;;ballPosition.x+=ballSpeed.x;;_RV_;;"
+		"01/07/2021",
+		"13:35:11",
+		"value;;_RV_;;ballPosition.x += ballSpeed.x;;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:31:20",
-		"value;;_RV_;;ballPosition.y+=ballSpeed.y;;_RV_;;"
+		"01/07/2021",
+		"13:35:11",
+		"value;;_RV_;;ballPosition.y += ballSpeed.y;;_RV_;;"
 	],
 	[
 		30,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		""
 	],
 	[
 		31,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:31:20",
-		"condition;;_RV_;;(ballPosition.x> = (GetScreenWidth()-ballRadius)) OR (ballPosition.x< = ballRadius);;_RV_;;"
+		"01/07/2021",
+		"13:35:11",
+		"condition;;_RV_;;(ballPosition.x >= (GetScreenWidth()-ballRadius)) OR (ballPosition.x <= ballRadius);;_RV_;;"
 	],
 	[
 		32,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:31:20",
-		"value;;_RV_;;ballSpeed.x*=-1.0;;_RV_;;"
+		"01/07/2021",
+		"13:35:11",
+		"value;;_RV_;;ballSpeed.x *= -1.0;;_RV_;;"
 	],
 	[
 		33,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:31:20",
-		"condition;;_RV_;;(ballPosition.y> = (GetScreenHeight()-ballRadius)) OR (ballPosition.y< = ballRadius);;_RV_;;"
+		"01/07/2021",
+		"13:35:11",
+		"condition;;_RV_;;(ballPosition.y >= (GetScreenHeight()-ballRadius)) OR (ballPosition.y <= ballRadius);;_RV_;;"
 	],
 	[
 		34,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:31:20",
-		"value;;_RV_;;ballSpeed.y*=-1.0;;_RV_;;"
+		"01/07/2021",
+		"13:35:11",
+		"value;;_RV_;;ballSpeed.y *= -1.0;;_RV_;;"
 	],
 	[
 		35,
 		1,
 		"else",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		""
 	],
 	[
 		36,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		"value;;_RV_;;framesCounter++;;_RV_;;"
 	],
 	[
 		37,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		""
 	],
 	[
 		38,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		""
 	],
 	[
 		39,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		""
 	],
 	[
 		40,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		41,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;ClearBackground;;_RV_;;parameters;;_RV_;;RAYWHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		42,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawCircleV;;_RV_;;parameters;;_RV_;;ballPosition,ballRadius,MAROON;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		43,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"PRESS SPACE to PAUSE BALL MOVEMENT"+char(34)+",10,GetScreenHeight()-25,20,LIGHTGRAY;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		44,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		""
 	],
 	[
 		45,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		"condition;;_RV_;;pause&((framesCounter/30)%2);;_RV_;;"
 	],
 	[
 		46,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"PAUSED"+char(34)+",350,200,30,GRAY;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		47,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawFPS;;_RV_;;parameters;;_RV_;;10,10;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		48,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		""
 	],
 	[
 		49,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		50,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		""
 	],
 	[
 		51,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		""
 	],
 	[
 		52,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		""
 	],
 	[
 		53,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:20",
+		"01/07/2021",
+		"13:35:11",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;CloseWindow;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	]
 ]

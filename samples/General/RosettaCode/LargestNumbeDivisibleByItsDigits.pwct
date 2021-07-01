@@ -693,7 +693,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">number(str[m])&gt;0</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">number(str[m])&nbsp;&gt;&nbsp;0</font></span>"
 			],
 			[
 				"active",
@@ -701,7 +701,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if number(str[m])>0 { "
+				"if number(str[m]) > 0 { "
 			],
 			[
 				"interactionid",
@@ -721,7 +721,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If number(str[m])>0"
+				"If number(str[m]) > 0"
 			]
 		]
 	],
@@ -2024,232 +2024,232 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"27/06/2021",
-		"19:41:03",
+		"01/07/2021",
+		"13:45:15",
 		""
 	],
 	[
 		2,
 		1,
 		"",
-		"27/06/2021",
-		"19:41:03",
+		"01/07/2021",
+		"13:45:15",
 		""
 	],
 	[
 		3,
 		1,
 		"",
-		"27/06/2021",
-		"19:41:03",
+		"01/07/2021",
+		"13:45:15",
 		""
 	],
 	[
 		4,
 		1,
 		"",
-		"27/06/2021",
-		"19:41:03",
+		"01/07/2021",
+		"13:45:15",
 		""
 	],
 	[
 		5,
 		1,
 		"",
-		"27/06/2021",
-		"19:41:03",
+		"01/07/2021",
+		"13:45:15",
 		""
 	],
 	[
 		6,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:41:03",
+		"01/07/2021",
+		"13:45:15",
 		"start;;_RV_;;n = 9867000;;_RV_;;to;;_RV_;;9867400;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:41:03",
+		"01/07/2021",
+		"13:45:15",
 		"leftside;;_RV_;;numbers;;_RV_;;rightside;;_RV_;;list(9);;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:41:03",
+		"01/07/2021",
+		"13:45:15",
 		"start;;_RV_;;t = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:41:03",
+		"01/07/2021",
+		"13:45:15",
 		"leftside;;_RV_;;numbers[t];;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:41:03",
+		"01/07/2021",
+		"13:45:15",
 		"leftside;;_RV_;;flag;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:41:03",
+		"01/07/2021",
+		"13:45:15",
 		"leftside;;_RV_;;flag2;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:41:03",
+		"01/07/2021",
+		"13:45:15",
 		"leftside;;_RV_;;flag3;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:41:03",
+		"01/07/2021",
+		"13:45:15",
 		"leftside;;_RV_;;str;;_RV_;;rightside;;_RV_;;string(n);;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:41:03",
+		"01/07/2021",
+		"13:45:15",
 		"start;;_RV_;;m = 1;;_RV_;;to;;_RV_;;len(str);;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:41:03",
-		"condition;;_RV_;;number(str[m])>0;;_RV_;;"
+		"01/07/2021",
+		"13:45:15",
+		"condition;;_RV_;;number(str[m]) > 0;;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:41:03",
+		"01/07/2021",
+		"13:45:15",
 		"leftside;;_RV_;;numbers[number(str[m])];;_RV_;;rightside;;_RV_;;numbers[number(str[m])]+1;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"else",
-		"27/06/2021",
-		"19:41:03",
+		"01/07/2021",
+		"13:45:15",
 		""
 	],
 	[
 		18,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:41:03",
+		"01/07/2021",
+		"13:45:15",
 		"leftside;;_RV_;;flag2;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:41:03",
+		"01/07/2021",
+		"13:45:15",
 		"condition;;_RV_;;flag2 = 1;;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:41:03",
+		"01/07/2021",
+		"13:45:15",
 		"start;;_RV_;;p = 1;;_RV_;;to;;_RV_;;9;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:41:03",
+		"01/07/2021",
+		"13:45:15",
 		"condition;;_RV_;;numbers[p] = 0 OR numbers[p] = 1;;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"else",
-		"27/06/2021",
-		"19:41:03",
+		"01/07/2021",
+		"13:45:15",
 		""
 	],
 	[
 		23,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:41:03",
+		"01/07/2021",
+		"13:45:15",
 		"leftside;;_RV_;;flag;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:41:03",
+		"01/07/2021",
+		"13:45:15",
 		"condition;;_RV_;;flag = 1;;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:41:03",
+		"01/07/2021",
+		"13:45:15",
 		"start;;_RV_;;x = 1;;_RV_;;to;;_RV_;;len(str);;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:41:03",
+		"01/07/2021",
+		"13:45:15",
 		"condition;;_RV_;;n%(number(str[x]))! = 0;;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:41:03",
+		"01/07/2021",
+		"13:45:15",
 		"leftside;;_RV_;;flag3;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:41:03",
+		"01/07/2021",
+		"13:45:15",
 		"condition;;_RV_;;flag3 = 1;;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"print",
-		"27/06/2021",
-		"19:41:03",
+		"01/07/2021",
+		"13:45:15",
 		"text;;_RV_;;n+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	]
 ]

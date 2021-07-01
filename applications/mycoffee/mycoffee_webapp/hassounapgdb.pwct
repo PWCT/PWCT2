@@ -389,7 +389,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">conninfo+=&quot;&nbsp;password=&quot;+pg_password</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">conninfo&nbsp;+=&nbsp;&quot;&nbsp;password=&quot;+pg_password</font></span>"
 			],
 			[
 				"active",
@@ -397,7 +397,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"conninfo+="+char(34)+" password="+char(34)+"+pg_password"
+				"conninfo += "+char(34)+" password="+char(34)+"+pg_password"
 			],
 			[
 				"interactionid",
@@ -417,7 +417,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"conninfo+="+char(34)+" password="+char(34)+"+pg_password"
+				"conninfo += "+char(34)+" password="+char(34)+"+pg_password"
 			]
 		]
 	],
@@ -427,7 +427,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">conninfo+=&quot;&nbsp;dbname=&quot;+pg_database</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">conninfo&nbsp;+=&nbsp;&quot;&nbsp;dbname=&quot;+pg_database</font></span>"
 			],
 			[
 				"active",
@@ -435,7 +435,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"conninfo+="+char(34)+" dbname="+char(34)+"+pg_database"
+				"conninfo += "+char(34)+" dbname="+char(34)+"+pg_database"
 			],
 			[
 				"interactionid",
@@ -455,7 +455,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"conninfo+="+char(34)+" dbname="+char(34)+"+pg_database"
+				"conninfo += "+char(34)+" dbname="+char(34)+"+pg_database"
 			]
 		]
 	],
@@ -465,7 +465,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">conninfo+=&quot;&nbsp;port=&quot;+pg_port</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">conninfo&nbsp;+=&nbsp;&quot;&nbsp;port=&quot;+pg_port</font></span>"
 			],
 			[
 				"active",
@@ -473,7 +473,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"conninfo+="+char(34)+" port="+char(34)+"+pg_port"
+				"conninfo += "+char(34)+" port="+char(34)+"+pg_port"
 			],
 			[
 				"interactionid",
@@ -493,7 +493,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"conninfo+="+char(34)+" port="+char(34)+"+pg_port"
+				"conninfo += "+char(34)+" port="+char(34)+"+pg_port"
 			]
 		]
 	],
@@ -2821,7 +2821,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">type(tbl)&nbsp;=&nbsp;type([])&nbsp;AND&nbsp;len(tbl)&gt;0</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">type(tbl)&nbsp;=&nbsp;type([])&nbsp;AND&nbsp;len(tbl)&nbsp;&gt;&nbsp;0</font></span>"
 			],
 			[
 				"active",
@@ -2829,7 +2829,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if type(tbl) = type([]) AND len(tbl)>0 { "
+				"if type(tbl) = type([]) AND len(tbl) > 0 { "
 			],
 			[
 				"interactionid",
@@ -2849,7 +2849,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If type(tbl) = type([]) AND len(tbl)>0"
+				"If type(tbl) = type([]) AND len(tbl) > 0"
 			]
 		]
 	],
@@ -3354,456 +3354,456 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		""
 	],
 	[
 		2,
 		1,
 		"load",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"file;;_RV_;;postgresqllib.ring;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"leftside;;_RV_;;pg_username;;_RV_;;rightside;;_RV_;;"+char(34)+"postgres"+char(34)+";;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"leftside;;_RV_;;pg_password;;_RV_;;rightside;;_RV_;;"+char(34)+" "+char(34)+";;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"leftside;;_RV_;;pg_database;;_RV_;;rightside;;_RV_;;"+char(34)+" "+char(34)+";;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"leftside;;_RV_;;pg_port;;_RV_;;rightside;;_RV_;;"+char(34)+"5432"+char(34)+";;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"leftside;;_RV_;;pg_conn;;_RV_;;rightside;;_RV_;;NULL;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"func",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"name;;_RV_;;open;;_RV_;;parameters;;_RV_;;();;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"leftside;;_RV_;;conninfo;;_RV_;;rightside;;_RV_;;"+char(34)+" user="+char(34)+"+pg_username;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:23:53",
-		"value;;_RV_;;conninfo+="+char(34)+" password="+char(34)+"+pg_password;;_RV_;;"
+		"01/07/2021",
+		"13:27:04",
+		"value;;_RV_;;conninfo += "+char(34)+" password="+char(34)+"+pg_password;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:23:53",
-		"value;;_RV_;;conninfo+="+char(34)+" dbname="+char(34)+"+pg_database;;_RV_;;"
+		"01/07/2021",
+		"13:27:04",
+		"value;;_RV_;;conninfo += "+char(34)+" dbname="+char(34)+"+pg_database;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:23:53",
-		"value;;_RV_;;conninfo+="+char(34)+" port="+char(34)+"+pg_port;;_RV_;;"
+		"01/07/2021",
+		"13:27:04",
+		"value;;_RV_;;conninfo += "+char(34)+" port="+char(34)+"+pg_port;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"leftside;;_RV_;;pg_conn;;_RV_;;rightside;;_RV_;;PQconnectdb(conninfo);;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"func",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"name;;_RV_;;close;;_RV_;;parameters;;_RV_;;();;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;PQfinish;;_RV_;;parameters;;_RV_;;pg_conn;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"func",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"name;;_RV_;;run;;_RV_;;parameters;;_RV_;;(sql_statement);;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;open;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"leftside;;_RV_;;res;;_RV_;;rightside;;_RV_;;PQexec(pg_conn,sql_statement);;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"leftside;;_RV_;;err;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"condition;;_RV_;;PQresultStatus(res)! = PGRES_TUPLES_OK;;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"leftside;;_RV_;;err;;_RV_;;rightside;;_RV_;;PQerrorMessage(pg_conn);;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;PQclear;;_RV_;;parameters;;_RV_;;res;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;close;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"condition;;_RV_;;err = "+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"return",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"value;;_RV_;;True;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"else",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		""
 	],
 	[
 		27,
 		1,
 		"return",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"value;;_RV_;;False;;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"func",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"name;;_RV_;;get_data;;_RV_;;parameters;;_RV_;;(select_statement);;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;open;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		30,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"leftside;;_RV_;;res;;_RV_;;rightside;;_RV_;;PQexec(pg_conn,select_statement);;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"leftside;;_RV_;;err;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		32,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"leftside;;_RV_;;table;;_RV_;;rightside;;_RV_;;[];;_RV_;;"
 	],
 	[
 		33,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"condition;;_RV_;;PQresultStatus(res)! = PGRES_TUPLES_OK;;_RV_;;"
 	],
 	[
 		34,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"leftside;;_RV_;;err;;_RV_;;rightside;;_RV_;;PQerrorMessage(pg_conn);;_RV_;;"
 	],
 	[
 		35,
 		1,
 		"else",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		""
 	],
 	[
 		36,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"leftside;;_RV_;;nRows;;_RV_;;rightside;;_RV_;;PQntuples(res);;_RV_;;"
 	],
 	[
 		37,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"leftside;;_RV_;;nFields;;_RV_;;rightside;;_RV_;;PQnfields(res);;_RV_;;"
 	],
 	[
 		38,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"start;;_RV_;;i = 1;;_RV_;;to;;_RV_;;nRows;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		39,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"leftside;;_RV_;;row;;_RV_;;rightside;;_RV_;;[];;_RV_;;"
 	],
 	[
 		40,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"start;;_RV_;;j = 1;;_RV_;;to;;_RV_;;nFields;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		41,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"leftside;;_RV_;;row[PQfname(res,j-1)];;_RV_;;rightside;;_RV_;;PQgetvalue(res,i-1,j-1);;_RV_;;"
 	],
 	[
 		42,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;add;;_RV_;;parameters;;_RV_;;table,row;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		43,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;PQclear;;_RV_;;parameters;;_RV_;;res;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		44,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;close;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		45,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"condition;;_RV_;;err = "+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		46,
 		1,
 		"return",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"value;;_RV_;;table;;_RV_;;"
 	],
 	[
 		47,
 		1,
 		"else",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		""
 	],
 	[
 		48,
 		1,
 		"return",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"value;;_RV_;;err;;_RV_;;"
 	],
 	[
 		49,
 		1,
 		"func",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"name;;_RV_;;auto_num;;_RV_;;parameters;;_RV_;;(table,column);;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		50,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"leftside;;_RV_;;tbl;;_RV_;;rightside;;_RV_;;get_data("+char(34)+"select max("+char(34)+"+column+"+char(34)+")+1 as num from "+char(34)+"+table);;_RV_;;"
 	],
 	[
 		51,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:23:53",
-		"condition;;_RV_;;type(tbl) = type([]) AND len(tbl)>0;;_RV_;;"
+		"01/07/2021",
+		"13:27:04",
+		"condition;;_RV_;;type(tbl) = type([]) AND len(tbl) > 0;;_RV_;;"
 	],
 	[
 		52,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"condition;;_RV_;;tbl[1][:num]! = NULL;;_RV_;;"
 	],
 	[
 		53,
 		1,
 		"return",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"value;;_RV_;;tbl[1][:num];;_RV_;;"
 	],
 	[
 		54,
 		1,
 		"else",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		""
 	],
 	[
 		55,
 		1,
 		"return",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"value;;_RV_;;"+char(34)+"1"+char(34)+";;_RV_;;"
 	],
 	[
 		56,
 		1,
 		"else",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		""
 	],
 	[
 		57,
 		1,
 		"return",
-		"27/06/2021",
-		"19:23:53",
+		"01/07/2021",
+		"13:27:04",
 		"value;;_RV_;;"+char(34)+"0"+char(34)+";;_RV_;;"
 	]
 ]

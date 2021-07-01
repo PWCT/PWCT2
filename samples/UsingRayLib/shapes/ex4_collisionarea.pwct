@@ -1111,7 +1111,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">boxA.x+=boxASpeedX</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">boxA.x&nbsp;+=&nbsp;boxASpeedX</font></span>"
 			],
 			[
 				"active",
@@ -1119,7 +1119,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"boxA.x+=boxASpeedX"
+				"boxA.x += boxASpeedX"
 			],
 			[
 				"interactionid",
@@ -1139,7 +1139,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"boxA.x+=boxASpeedX"
+				"boxA.x += boxASpeedX"
 			]
 		]
 	],
@@ -1225,7 +1225,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(((boxA.x+boxA.width)&gt;&nbsp;=&nbsp;GetScreenWidth())&nbsp;OR&nbsp;(boxA.x&lt;&nbsp;=&nbsp;0))</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(((boxA.x+boxA.width)&nbsp;&gt;=&nbsp;GetScreenWidth())&nbsp;OR&nbsp;(boxA.x&nbsp;&lt;=&nbsp;0))</font></span>"
 			],
 			[
 				"active",
@@ -1233,7 +1233,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if (((boxA.x+boxA.width)> = GetScreenWidth()) OR (boxA.x< = 0)) { "
+				"if (((boxA.x+boxA.width) >= GetScreenWidth()) OR (boxA.x <= 0)) { "
 			],
 			[
 				"interactionid",
@@ -1253,7 +1253,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If (((boxA.x+boxA.width)> = GetScreenWidth()) OR (boxA.x"
+				"If (((boxA.x+boxA.width) >= GetScreenWidth()) OR (boxA.x "
 			]
 		]
 	],
@@ -1529,7 +1529,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">((boxB.x+boxB.width)&gt;&nbsp;=&nbsp;GetScreenWidth())</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">((boxB.x+boxB.width)&nbsp;&gt;=&nbsp;GetScreenWidth())</font></span>"
 			],
 			[
 				"active",
@@ -1537,7 +1537,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if ((boxB.x+boxB.width)> = GetScreenWidth()) { "
+				"if ((boxB.x+boxB.width) >= GetScreenWidth()) { "
 			],
 			[
 				"interactionid",
@@ -1557,7 +1557,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If ((boxB.x+boxB.width)> = GetScreenWidth())"
+				"If ((boxB.x+boxB.width) >= GetScreenWidth())"
 			]
 		]
 	],
@@ -1719,7 +1719,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(boxB.x&lt;&nbsp;=&nbsp;0)</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(boxB.x&nbsp;&lt;=&nbsp;0)</font></span>"
 			],
 			[
 				"active",
@@ -1727,7 +1727,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"(boxB.x< = 0)"
+				"(boxB.x <= 0)"
 			],
 			[
 				"interactionid",
@@ -1747,7 +1747,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"(boxB.x"
+				"(boxB.x "
 			]
 		]
 	],
@@ -1833,7 +1833,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">((boxB.y+boxB.height)&gt;&nbsp;=&nbsp;GetScreenHeight())</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">((boxB.y+boxB.height)&nbsp;&gt;=&nbsp;GetScreenHeight())</font></span>"
 			],
 			[
 				"active",
@@ -1841,7 +1841,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if ((boxB.y+boxB.height)> = GetScreenHeight()) { "
+				"if ((boxB.y+boxB.height) >= GetScreenHeight()) { "
 			],
 			[
 				"interactionid",
@@ -1861,7 +1861,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If ((boxB.y+boxB.height)> = GetScreenHeight())"
+				"If ((boxB.y+boxB.height) >= GetScreenHeight())"
 			]
 		]
 	],
@@ -2023,7 +2023,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(boxB.y&lt;&nbsp;=&nbsp;screenUpperLimit)</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(boxB.y&nbsp;&lt;=&nbsp;screenUpperLimit)</font></span>"
 			],
 			[
 				"active",
@@ -2031,7 +2031,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"(boxB.y< = screenUpperLimit)"
+				"(boxB.y <= screenUpperLimit)"
 			],
 			[
 				"interactionid",
@@ -2051,7 +2051,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"(boxB.y"
+				"(boxB.y "
 			]
 		]
 	],
@@ -3696,608 +3696,608 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		""
 	],
 	[
 		2,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		""
 	],
 	[
 		3,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		""
 	],
 	[
 		4,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		""
 	],
 	[
 		5,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		""
 	],
 	[
 		6,
 		1,
 		"load",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"file;;_RV_;;raylib.ring;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"leftside;;_RV_;;screenWidth;;_RV_;;rightside;;_RV_;;800;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"leftside;;_RV_;;screenHeight;;_RV_;;rightside;;_RV_;;450;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;InitWindow;;_RV_;;parameters;;_RV_;;screenWidth,screenHeight,"+char(34)+"raylib [shapes] example - collision area"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		""
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"leftside;;_RV_;;boxA;;_RV_;;rightside;;_RV_;;Rectangle(10,GetScreenHeight()/2-50,200,100);;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"leftside;;_RV_;;boxASpeedX;;_RV_;;rightside;;_RV_;;4;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		""
 	],
 	[
 		14,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"leftside;;_RV_;;boxB;;_RV_;;rightside;;_RV_;;Rectangle(GetScreenWidth()/2-30,GetScreenHeight()/2-30,60,60);;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"leftside;;_RV_;;boxCollision;;_RV_;;rightside;;_RV_;;GetCollisionRec(boxA,boxB);;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"leftside;;_RV_;;boxCollision;;_RV_;;rightside;;_RV_;;Rectangle(0,0,0,0);;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		""
 	],
 	[
 		18,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"leftside;;_RV_;;screenUpperLimit;;_RV_;;rightside;;_RV_;;40;;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		""
 	],
 	[
 		20,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"leftside;;_RV_;;pause;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		""
 	],
 	[
 		22,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"leftside;;_RV_;;collision;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		""
 	],
 	[
 		24,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetTargetFPS;;_RV_;;parameters;;_RV_;;60;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		""
 	],
 	[
 		26,
 		1,
 		"whileloop",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"condition;;_RV_;;!WindowShouldClose();;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"condition;;_RV_;;( NOT pause);;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:31:13",
-		"value;;_RV_;;boxA.x+=boxASpeedX;;_RV_;;"
+		"01/07/2021",
+		"13:35:03",
+		"value;;_RV_;;boxA.x += boxASpeedX;;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		""
 	],
 	[
 		30,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:31:13",
-		"condition;;_RV_;;(((boxA.x+boxA.width)> = GetScreenWidth()) OR (boxA.x< = 0));;_RV_;;"
+		"01/07/2021",
+		"13:35:03",
+		"condition;;_RV_;;(((boxA.x+boxA.width) >= GetScreenWidth()) OR (boxA.x <= 0));;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"leftside;;_RV_;;boxASpeedX;;_RV_;;rightside;;_RV_;;boxASpeedX*(-1);;_RV_;;"
 	],
 	[
 		32,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		""
 	],
 	[
 		33,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"leftside;;_RV_;;boxB.x;;_RV_;;rightside;;_RV_;;GetMouseX()-boxB.width/2;;_RV_;;"
 	],
 	[
 		34,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"leftside;;_RV_;;boxB.y;;_RV_;;rightside;;_RV_;;GetMouseY()-boxB.height/2;;_RV_;;"
 	],
 	[
 		35,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		""
 	],
 	[
 		36,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:31:13",
-		"condition;;_RV_;;((boxB.x+boxB.width)> = GetScreenWidth());;_RV_;;"
+		"01/07/2021",
+		"13:35:03",
+		"condition;;_RV_;;((boxB.x+boxB.width) >= GetScreenWidth());;_RV_;;"
 	],
 	[
 		37,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"leftside;;_RV_;;boxB.x;;_RV_;;rightside;;_RV_;;GetScreenWidth()-boxB.width;;_RV_;;"
 	],
 	[
 		38,
 		1,
 		"else",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		""
 	],
 	[
 		39,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:31:13",
-		"value;;_RV_;;(boxB.x< = 0);;_RV_;;"
+		"01/07/2021",
+		"13:35:03",
+		"value;;_RV_;;(boxB.x <= 0);;_RV_;;"
 	],
 	[
 		40,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"leftside;;_RV_;;boxB.x;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		41,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:31:13",
-		"condition;;_RV_;;((boxB.y+boxB.height)> = GetScreenHeight());;_RV_;;"
+		"01/07/2021",
+		"13:35:03",
+		"condition;;_RV_;;((boxB.y+boxB.height) >= GetScreenHeight());;_RV_;;"
 	],
 	[
 		42,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"leftside;;_RV_;;boxB.y;;_RV_;;rightside;;_RV_;;GetScreenHeight()-boxB.height;;_RV_;;"
 	],
 	[
 		43,
 		1,
 		"else",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		""
 	],
 	[
 		44,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:31:13",
-		"value;;_RV_;;(boxB.y< = screenUpperLimit);;_RV_;;"
+		"01/07/2021",
+		"13:35:03",
+		"value;;_RV_;;(boxB.y <= screenUpperLimit);;_RV_;;"
 	],
 	[
 		45,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"leftside;;_RV_;;boxB.y;;_RV_;;rightside;;_RV_;;screenUpperLimit;;_RV_;;"
 	],
 	[
 		46,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		""
 	],
 	[
 		47,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"leftside;;_RV_;;collision;;_RV_;;rightside;;_RV_;;CheckCollisionRecs(boxA,boxB);;_RV_;;"
 	],
 	[
 		48,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		""
 	],
 	[
 		49,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"condition;;_RV_;;(collision);;_RV_;;"
 	],
 	[
 		50,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"leftside;;_RV_;;boxCollision;;_RV_;;rightside;;_RV_;;GetCollisionRec(boxA,boxB);;_RV_;;"
 	],
 	[
 		51,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		""
 	],
 	[
 		52,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"condition;;_RV_;;(IsKeyPressed(KEY_SPACE));;_RV_;;"
 	],
 	[
 		53,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"leftside;;_RV_;;pause;;_RV_;;rightside;;_RV_;;NOT pause;;_RV_;;"
 	],
 	[
 		54,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		55,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;ClearBackground;;_RV_;;parameters;;_RV_;;RAYWHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		56,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"condition;;_RV_;;collision = true;;_RV_;;"
 	],
 	[
 		57,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"leftside;;_RV_;;color;;_RV_;;rightside;;_RV_;;RED;;_RV_;;"
 	],
 	[
 		58,
 		1,
 		"else",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		""
 	],
 	[
 		59,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"leftside;;_RV_;;color;;_RV_;;rightside;;_RV_;;BLACK;;_RV_;;"
 	],
 	[
 		60,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawRectangle;;_RV_;;parameters;;_RV_;;0,0,screenWidth,screenUpperLimit,color;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		61,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawRectangleRec;;_RV_;;parameters;;_RV_;;boxA,GOLD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		62,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"leftside;;_RV_;;boxB.x;;_RV_;;rightside;;_RV_;;GetMouseX()-boxB.width/2;;_RV_;;"
 	],
 	[
 		63,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"leftside;;_RV_;;boxB.y;;_RV_;;rightside;;_RV_;;GetMouseY()-boxB.height/2;;_RV_;;"
 	],
 	[
 		64,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"leftside;;_RV_;;collision;;_RV_;;rightside;;_RV_;;CheckCollisionRecs(boxA,boxB);;_RV_;;"
 	],
 	[
 		65,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawRectangleRec;;_RV_;;parameters;;_RV_;;boxB,BLUE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		66,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"leftside;;_RV_;;boxCollision;;_RV_;;rightside;;_RV_;;GetCollisionRec(boxA,boxB);;_RV_;;"
 	],
 	[
 		67,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		""
 	],
 	[
 		68,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"condition;;_RV_;;(collision) = true;;_RV_;;"
 	],
 	[
 		69,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawRectangleRec;;_RV_;;parameters;;_RV_;;boxCollision,LIME;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		70,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		""
 	],
 	[
 		71,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"COLLISION!"+char(34)+",GetScreenWidth()/2-MeasureText("+char(34)+"COLLISION!"+char(34)+",20)/2,screenUpperLimit/2-10,20,BLACK;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		72,
 		1,
 		"",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		""
 	],
 	[
 		73,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"Collision Area: "+char(34)+"+string(boxCollision.width*boxCollision.height),GetScreenWidth()/2-100,screenUpperLimit+10,20,BLACK;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		74,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawFPS;;_RV_;;parameters;;_RV_;;10,10;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		75,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		76,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:31:13",
+		"01/07/2021",
+		"13:35:03",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;CloseWindow;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	]
 ]

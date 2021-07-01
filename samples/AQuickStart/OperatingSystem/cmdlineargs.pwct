@@ -237,7 +237,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">len(sysargv)&lt;4</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">len(sysargv)&nbsp;&lt;&nbsp;4</font></span>"
 			],
 			[
 				"active",
@@ -245,7 +245,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if len(sysargv)<4 { "
+				"if len(sysargv) < 4 { "
 			],
 			[
 				"interactionid",
@@ -265,7 +265,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If len(sysargv)"
+				"If len(sysargv) "
 			]
 		]
 	],
@@ -618,96 +618,96 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"27/06/2021",
-		"19:37:50",
+		"01/07/2021",
+		"13:41:54",
 		""
 	],
 	[
 		2,
 		1,
 		"print",
-		"27/06/2021",
-		"19:37:50",
+		"01/07/2021",
+		"13:41:54",
 		"text;;_RV_;;copy("+char(34)+"="+char(34)+",30)+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"print",
-		"27/06/2021",
-		"19:37:50",
+		"01/07/2021",
+		"13:41:54",
 		"text;;_RV_;;"+char(34)+"Command Line Parameters"+char(34)+"+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"print",
-		"27/06/2021",
-		"19:37:50",
+		"01/07/2021",
+		"13:41:54",
 		"text;;_RV_;;"+char(34)+"Size : "+char(34)+"+len(sysargv)+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"print",
-		"27/06/2021",
-		"19:37:50",
+		"01/07/2021",
+		"13:41:54",
 		"text;;_RV_;;sysargv;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"print",
-		"27/06/2021",
-		"19:37:50",
+		"01/07/2021",
+		"13:41:54",
 		"text;;_RV_;;copy("+char(34)+"="+char(34)+",30)+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:37:50",
-		"condition;;_RV_;;len(sysargv)<4;;_RV_;;"
+		"01/07/2021",
+		"13:41:54",
+		"condition;;_RV_;;len(sysargv) < 4;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"return",
-		"27/06/2021",
-		"19:37:50",
+		"01/07/2021",
+		"13:41:54",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:37:50",
+		"01/07/2021",
+		"13:41:54",
 		"leftside;;_RV_;;nStart;;_RV_;;rightside;;_RV_;;sysargv[3];;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:37:50",
+		"01/07/2021",
+		"13:41:54",
 		"leftside;;_RV_;;nEnd;;_RV_;;rightside;;_RV_;;sysargv[4];;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:37:50",
+		"01/07/2021",
+		"13:41:54",
 		"start;;_RV_;;x = nStart;;_RV_;;to;;_RV_;;nEnd;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"print",
-		"27/06/2021",
-		"19:37:50",
+		"01/07/2021",
+		"13:41:54",
 		"text;;_RV_;;x+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	]
 ]

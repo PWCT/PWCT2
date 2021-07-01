@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'English'
-nStepsID                 = 117		
-nInteractionsID          = 78
+nStepsID                 = 132		
+nInteractionsID          = 89
 
 aStepsTable = [
 	[
@@ -47,7 +47,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"#=============================================#"
+				"#=============================================#"
 			],
 			[
 				"active",
@@ -55,7 +55,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"#=============================================#"
+				""
 			],
 			[
 				"interactionid",
@@ -75,7 +75,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"#=============================================#"
+				"#=============================================#"
 			]
 		]
 	],
@@ -85,7 +85,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"# Form/Window Controller - Source Code File"
+				"# Form/Window Controller - Source Code File"
 			],
 			[
 				"active",
@@ -93,7 +93,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# Form/Window Controller - Source Code File"
+				""
 			],
 			[
 				"interactionid",
@@ -113,7 +113,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"# Form/Window Controller - Source Code File"
+				"# Form/Window Controller - Source Code File"
 			]
 		]
 	],
@@ -123,7 +123,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"# 2021, Mahmoud Fayed <msfclipper@yahoo.com>"
+				"# 2021, Mahmoud Fayed <msfclipper@yahoo.com>"
 			],
 			[
 				"active",
@@ -131,7 +131,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# 2021, Mahmoud Fayed <msfclipper@yahoo.com>"
+				""
 			],
 			[
 				"interactionid",
@@ -151,7 +151,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"# 2021, Mahmoud Fayed <msfclipper@yahoo.com>"
+				"# 2021, Mahmoud Fayed <msfclipper@yahoo.com>"
 			]
 		]
 	],
@@ -161,7 +161,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"#=============================================#"
+				"#=============================================#"
 			],
 			[
 				"active",
@@ -169,7 +169,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"#=============================================#"
+				""
 			],
 			[
 				"interactionid",
@@ -189,7 +189,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"#=============================================#"
+				"#=============================================#"
 			]
 		]
 	],
@@ -313,6 +313,44 @@ aStepsTable = [
 		[
 			[
 				"name",
+				"Load <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">predictionController.ring</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"load "+char(34)+"predictionController.ring"+char(34)+""
+			],
+			[
+				"interactionid",
+				9
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Load predictionController.ring"
+			]
+		]
+	],
+	[
+		10,
+		1,
+		[
+			[
+				"name",
 				"import package  <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">System.GUI</font></span>"
 			],
 			[
@@ -325,7 +363,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				9
+				10
 			],
 			[
 				"visible",
@@ -346,7 +384,7 @@ aStepsTable = [
 		]
 	],
 	[
-		10,
+		11,
 		1,
 		[
 			[
@@ -363,7 +401,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				10
+				11
 			],
 			[
 				"visible",
@@ -384,8 +422,8 @@ aStepsTable = [
 		]
 	],
 	[
+		12,
 		11,
-		10,
 		[
 			[
 				"name",
@@ -401,7 +439,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				10
+				11
 			],
 			[
 				"visible",
@@ -422,8 +460,8 @@ aStepsTable = [
 		]
 	],
 	[
-		13,
-		11,
+		14,
+		12,
 		[
 			[
 				"name",
@@ -439,7 +477,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				11
+				12
 			],
 			[
 				"visible",
@@ -460,8 +498,8 @@ aStepsTable = [
 		]
 	],
 	[
+		15,
 		14,
-		13,
 		[
 			[
 				"name",
@@ -473,11 +511,11 @@ aStepsTable = [
 			],
 			[
 				"code",
-				" {"
+				"{"
 			],
 			[
 				"interactionid",
-				11
+				12
 			],
 			[
 				"visible",
@@ -498,8 +536,8 @@ aStepsTable = [
 		]
 	],
 	[
+		16,
 		15,
-		14,
 		[
 			[
 				"name",
@@ -515,7 +553,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				11
+				12
 			],
 			[
 				"visible",
@@ -536,8 +574,8 @@ aStepsTable = [
 		]
 	],
 	[
-		17,
-		15,
+		18,
+		16,
 		[
 			[
 				"name",
@@ -550,44 +588,6 @@ aStepsTable = [
 			[
 				"code",
 				"StyleFusion()"
-			],
-			[
-				"interactionid",
-				12
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"StyleFusion()"
-			]
-		]
-	],
-	[
-		18,
-		15,
-		[
-			[
-				"name",
-				"openWindow(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">:frmController</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"openWindow(:frmController)"
 			],
 			[
 				"interactionid",
@@ -607,13 +607,51 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"openWindow(:frmController)"
+				"StyleFusion()"
 			]
 		]
 	],
 	[
 		19,
-		15,
+		16,
+		[
+			[
+				"name",
+				"openWindow(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">:frmController</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"openWindow(:frmController)"
+			],
+			[
+				"interactionid",
+				14
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"openWindow(:frmController)"
+			]
+		]
+	],
+	[
+		20,
+		16,
 		[
 			[
 				"name",
@@ -629,7 +667,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				14
+				15
 			],
 			[
 				"visible",
@@ -650,8 +688,8 @@ aStepsTable = [
 		]
 	],
 	[
-		16,
-		14,
+		17,
+		15,
 		[
 			[
 				"name",
@@ -667,7 +705,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				11
+				12
 			],
 			[
 				"visible",
@@ -688,8 +726,8 @@ aStepsTable = [
 		]
 	],
 	[
-		12,
-		10,
+		13,
+		11,
 		[
 			[
 				"name",
@@ -705,7 +743,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				10
+				11
 			],
 			[
 				"visible",
@@ -726,7 +764,7 @@ aStepsTable = [
 		]
 	],
 	[
-		20,
+		21,
 		1,
 		[
 			[
@@ -743,7 +781,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				15
+				16
 			],
 			[
 				"visible",
@@ -764,8 +802,8 @@ aStepsTable = [
 		]
 	],
 	[
+		22,
 		21,
-		20,
 		[
 			[
 				"name",
@@ -781,7 +819,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				15
+				16
 			],
 			[
 				"visible",
@@ -802,12 +840,12 @@ aStepsTable = [
 		]
 	],
 	[
-		27,
-		21,
+		28,
+		22,
 		[
 			[
 				"name",
-				"# We need this to support closing the Application during data loading."
+				"# We need this to support closing the Application during data loading."
 			],
 			[
 				"active",
@@ -815,11 +853,11 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# We need this to support closing the Application during data loading."
+				""
 			],
 			[
 				"interactionid",
-				16
+				17
 			],
 			[
 				"visible",
@@ -835,13 +873,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"# We need this to support closing the Application during data loading."
+				"# We need this to support closing the Application during data loading."
 			]
 		]
 	],
 	[
-		28,
-		21,
+		29,
+		22,
 		[
 			[
 				"name",
@@ -857,7 +895,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				17
+				18
 			],
 			[
 				"visible",
@@ -878,8 +916,8 @@ aStepsTable = [
 		]
 	],
 	[
-		29,
-		21,
+		30,
+		22,
 		[
 			[
 				"name",
@@ -895,7 +933,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				18
+				19
 			],
 			[
 				"visible",
@@ -916,8 +954,8 @@ aStepsTable = [
 		]
 	],
 	[
-		30,
-		21,
+		31,
+		22,
 		[
 			[
 				"name",
@@ -933,7 +971,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				19
+				20
 			],
 			[
 				"visible",
@@ -954,8 +992,8 @@ aStepsTable = [
 		]
 	],
 	[
-		31,
-		21,
+		32,
+		22,
 		[
 			[
 				"name",
@@ -971,7 +1009,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				20
+				21
 			],
 			[
 				"visible",
@@ -992,12 +1030,12 @@ aStepsTable = [
 		]
 	],
 	[
-		32,
-		21,
+		33,
+		22,
 		[
 			[
 				"name",
-				"# Window Properties "
+				"# Window Properties "
 			],
 			[
 				"active",
@@ -1005,11 +1043,11 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# Window Properties "
+				""
 			],
 			[
 				"interactionid",
-				21
+				22
 			],
 			[
 				"visible",
@@ -1025,13 +1063,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"# Window Properties "
+				"# Window Properties "
 			]
 		]
 	],
 	[
-		33,
-		21,
+		34,
+		22,
 		[
 			[
 				"name",
@@ -1047,7 +1085,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				22
+				23
 			],
 			[
 				"visible",
@@ -1068,8 +1106,8 @@ aStepsTable = [
 		]
 	],
 	[
+		35,
 		34,
-		33,
 		[
 			[
 				"name",
@@ -1085,7 +1123,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				22
+				23
 			],
 			[
 				"visible",
@@ -1106,8 +1144,8 @@ aStepsTable = [
 		]
 	],
 	[
-		36,
-		34,
+		37,
+		35,
 		[
 			[
 				"name",
@@ -1120,44 +1158,6 @@ aStepsTable = [
 			[
 				"code",
 				"setEditTriggers(False)"
-			],
-			[
-				"interactionid",
-				23
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"setEditTriggers(False)"
-			]
-		]
-	],
-	[
-		37,
-		34,
-		[
-			[
-				"name",
-				"selectRow(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">0</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"selectRow(0)"
 			],
 			[
 				"interactionid",
@@ -1177,13 +1177,51 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"selectRow(0)"
+				"setEditTriggers(False)"
 			]
 		]
 	],
 	[
 		38,
-		34,
+		35,
+		[
+			[
+				"name",
+				"selectRow(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">0</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"selectRow(0)"
+			],
+			[
+				"interactionid",
+				25
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"selectRow(0)"
+			]
+		]
+	],
+	[
+		39,
+		35,
 		[
 			[
 				"name",
@@ -1199,7 +1237,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				25
+				26
 			],
 			[
 				"visible",
@@ -1220,8 +1258,8 @@ aStepsTable = [
 		]
 	],
 	[
-		35,
-		33,
+		36,
+		34,
 		[
 			[
 				"name",
@@ -1237,7 +1275,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				22
+				23
 			],
 			[
 				"visible",
@@ -1258,8 +1296,8 @@ aStepsTable = [
 		]
 	],
 	[
-		39,
-		21,
+		40,
+		22,
 		[
 			[
 				"name",
@@ -1275,7 +1313,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				26
+				27
 			],
 			[
 				"visible",
@@ -1296,50 +1334,12 @@ aStepsTable = [
 		]
 	],
 	[
-		40,
-		21,
-		[
-			[
-				"name",
-				"# Load the Data"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"# Load the Data"
-			],
-			[
-				"interactionid",
-				27
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"# Load the Data"
-			]
-		]
-	],
-	[
 		41,
-		21,
+		22,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oView.Win.showMaximized()</font></span>"
+				"# Load the Data"
 			],
 			[
 				"active",
@@ -1347,7 +1347,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"oView.Win.showMaximized()"
+				""
 			],
 			[
 				"interactionid",
@@ -1363,21 +1363,21 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				2
+				1
 			],
 			[
 				"plainname",
-				"oView.Win.showMaximized()"
+				"# Load the Data"
 			]
 		]
 	],
 	[
 		42,
-		21,
+		22,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oView.statusbar1.showmessage(&quot;Loading&nbsp;the&nbsp;data...&quot;,0)</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oView.Win.showMaximized()</font></span>"
 			],
 			[
 				"active",
@@ -1385,7 +1385,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"oView.statusbar1.showmessage("+char(34)+"Loading the data..."+char(34)+",0)"
+				"oView.Win.showMaximized()"
 			],
 			[
 				"interactionid",
@@ -1405,17 +1405,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"oView.statusbar1.showmessage("+char(34)+"Loading the data..."+char(34)+",0)"
+				"oView.Win.showMaximized()"
 			]
 		]
 	],
 	[
 		43,
-		21,
+		22,
 		[
 			[
 				"name",
-				"loadTheData(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oView.statusbar1.showmessage(&quot;Loading&nbsp;the&nbsp;data...&quot;,0)</font></span>"
 			],
 			[
 				"active",
@@ -1423,7 +1423,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"loadTheData()"
+				"oView.statusbar1.showmessage("+char(34)+"Loading the data..."+char(34)+",0)"
 			],
 			[
 				"interactionid",
@@ -1443,13 +1443,51 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"loadTheData()"
+				"oView.statusbar1.showmessage("+char(34)+"Loading the data..."+char(34)+",0)"
 			]
 		]
 	],
 	[
 		44,
-		21,
+		22,
+		[
+			[
+				"name",
+				"loadTheData(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"loadTheData()"
+			],
+			[
+				"interactionid",
+				31
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"loadTheData()"
+			]
+		]
+	],
+	[
+		45,
+		22,
 		[
 			[
 				"name",
@@ -1465,7 +1503,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				31
+				32
 			],
 			[
 				"visible",
@@ -1486,8 +1524,8 @@ aStepsTable = [
 		]
 	],
 	[
-		22,
-		20,
+		23,
+		21,
 		[
 			[
 				"name",
@@ -1503,7 +1541,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				15
+				16
 			],
 			[
 				"visible",
@@ -1524,8 +1562,8 @@ aStepsTable = [
 		]
 	],
 	[
-		45,
-		22,
+		46,
+		23,
 		[
 			[
 				"name",
@@ -1541,7 +1579,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				32
+				33
 			],
 			[
 				"visible",
@@ -1562,8 +1600,8 @@ aStepsTable = [
 		]
 	],
 	[
+		47,
 		46,
-		45,
 		[
 			[
 				"name",
@@ -1579,7 +1617,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				32
+				33
 			],
 			[
 				"visible",
@@ -1600,8 +1638,8 @@ aStepsTable = [
 		]
 	],
 	[
-		48,
-		46,
+		49,
+		47,
 		[
 			[
 				"name",
@@ -1614,44 +1652,6 @@ aStepsTable = [
 			[
 				"code",
 				"oView.WK.hide()"
-			],
-			[
-				"interactionid",
-				33
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"oView.WK.hide()"
-			]
-		]
-	],
-	[
-		49,
-		46,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oView.WR.hide()</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"oView.WR.hide()"
 			],
 			[
 				"interactionid",
@@ -1671,13 +1671,51 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"oView.WR.hide()"
+				"oView.WK.hide()"
 			]
 		]
 	],
 	[
 		50,
-		46,
+		47,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oView.WR.hide()</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"oView.WR.hide()"
+			],
+			[
+				"interactionid",
+				35
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"oView.WR.hide()"
+			]
+		]
+	],
+	[
+		51,
+		47,
 		[
 			[
 				"name",
@@ -1693,7 +1731,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				35
+				36
 			],
 			[
 				"visible",
@@ -1714,8 +1752,8 @@ aStepsTable = [
 		]
 	],
 	[
-		47,
-		45,
+		48,
+		46,
 		[
 			[
 				"name",
@@ -1731,7 +1769,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				32
+				33
 			],
 			[
 				"visible",
@@ -1752,8 +1790,8 @@ aStepsTable = [
 		]
 	],
 	[
-		51,
-		22,
+		52,
+		23,
 		[
 			[
 				"name",
@@ -1769,7 +1807,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				36
+				37
 			],
 			[
 				"visible",
@@ -1790,8 +1828,8 @@ aStepsTable = [
 		]
 	],
 	[
+		53,
 		52,
-		51,
 		[
 			[
 				"name",
@@ -1807,7 +1845,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				36
+				37
 			],
 			[
 				"visible",
@@ -1828,8 +1866,8 @@ aStepsTable = [
 		]
 	],
 	[
-		54,
-		52,
+		55,
+		53,
 		[
 			[
 				"name",
@@ -1845,7 +1883,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				37
+				38
 			],
 			[
 				"visible",
@@ -1866,8 +1904,8 @@ aStepsTable = [
 		]
 	],
 	[
-		55,
-		52,
+		56,
+		53,
 		[
 			[
 				"name",
@@ -1883,7 +1921,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				38
+				39
 			],
 			[
 				"visible",
@@ -1904,8 +1942,8 @@ aStepsTable = [
 		]
 	],
 	[
+		57,
 		56,
-		55,
 		[
 			[
 				"name",
@@ -1921,7 +1959,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				38
+				39
 			],
 			[
 				"visible",
@@ -1942,8 +1980,8 @@ aStepsTable = [
 		]
 	],
 	[
-		58,
-		56,
+		59,
+		57,
 		[
 			[
 				"name",
@@ -1959,7 +1997,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				39
+				40
 			],
 			[
 				"visible",
@@ -1980,8 +2018,8 @@ aStepsTable = [
 		]
 	],
 	[
+		60,
 		59,
-		58,
 		[
 			[
 				"name",
@@ -1997,7 +2035,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				39
+				40
 			],
 			[
 				"visible",
@@ -2018,8 +2056,8 @@ aStepsTable = [
 		]
 	],
 	[
-		61,
-		59,
+		62,
+		60,
 		[
 			[
 				"name",
@@ -2035,7 +2073,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				40
+				41
 			],
 			[
 				"visible",
@@ -2056,8 +2094,8 @@ aStepsTable = [
 		]
 	],
 	[
-		60,
-		58,
+		61,
+		59,
 		[
 			[
 				"name",
@@ -2073,7 +2111,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				39
+				40
 			],
 			[
 				"visible",
@@ -2094,8 +2132,8 @@ aStepsTable = [
 		]
 	],
 	[
-		62,
-		56,
+		63,
+		57,
 		[
 			[
 				"name",
@@ -2111,7 +2149,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				41
+				42
 			],
 			[
 				"visible",
@@ -2132,8 +2170,8 @@ aStepsTable = [
 		]
 	],
 	[
+		64,
 		63,
-		62,
 		[
 			[
 				"name",
@@ -2149,7 +2187,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				41
+				42
 			],
 			[
 				"visible",
@@ -2170,8 +2208,8 @@ aStepsTable = [
 		]
 	],
 	[
-		65,
-		63,
+		66,
+		64,
 		[
 			[
 				"name",
@@ -2187,7 +2225,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				42
+				43
 			],
 			[
 				"visible",
@@ -2208,8 +2246,8 @@ aStepsTable = [
 		]
 	],
 	[
-		64,
-		62,
+		65,
+		63,
 		[
 			[
 				"name",
@@ -2225,7 +2263,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				41
+				42
 			],
 			[
 				"visible",
@@ -2246,8 +2284,8 @@ aStepsTable = [
 		]
 	],
 	[
-		66,
-		56,
+		67,
+		57,
 		[
 			[
 				"name",
@@ -2263,7 +2301,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				43
+				44
 			],
 			[
 				"visible",
@@ -2284,8 +2322,8 @@ aStepsTable = [
 		]
 	],
 	[
+		68,
 		67,
-		66,
 		[
 			[
 				"name",
@@ -2301,7 +2339,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				43
+				44
 			],
 			[
 				"visible",
@@ -2322,8 +2360,8 @@ aStepsTable = [
 		]
 	],
 	[
-		69,
-		67,
+		70,
+		68,
 		[
 			[
 				"name",
@@ -2339,7 +2377,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				44
+				45
 			],
 			[
 				"visible",
@@ -2360,8 +2398,8 @@ aStepsTable = [
 		]
 	],
 	[
-		68,
-		66,
+		69,
+		67,
 		[
 			[
 				"name",
@@ -2377,7 +2415,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				43
+				44
 			],
 			[
 				"visible",
@@ -2398,8 +2436,8 @@ aStepsTable = [
 		]
 	],
 	[
-		57,
-		55,
+		58,
+		56,
 		[
 			[
 				"name",
@@ -2415,7 +2453,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				38
+				39
 			],
 			[
 				"visible",
@@ -2436,8 +2474,8 @@ aStepsTable = [
 		]
 	],
 	[
-		53,
-		51,
+		54,
+		52,
 		[
 			[
 				"name",
@@ -2453,7 +2491,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				36
+				37
 			],
 			[
 				"visible",
@@ -2474,8 +2512,8 @@ aStepsTable = [
 		]
 	],
 	[
-		70,
-		22,
+		71,
+		23,
 		[
 			[
 				"name",
@@ -2491,7 +2529,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				45
+				46
 			],
 			[
 				"visible",
@@ -2512,8 +2550,8 @@ aStepsTable = [
 		]
 	],
 	[
+		72,
 		71,
-		70,
 		[
 			[
 				"name",
@@ -2529,7 +2567,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				45
+				46
 			],
 			[
 				"visible",
@@ -2550,8 +2588,8 @@ aStepsTable = [
 		]
 	],
 	[
-		73,
-		71,
+		74,
+		72,
 		[
 			[
 				"name",
@@ -2564,44 +2602,6 @@ aStepsTable = [
 			[
 				"code",
 				"nIndex = oView.ChessTableWidget.currentrow()+1"
-			],
-			[
-				"interactionid",
-				46
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"nIndex = oView.ChessTableWidget.currentrow()+1"
-			]
-		]
-	],
-	[
-		74,
-		71,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aFile2Rank</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[:a&nbsp;=&nbsp;1,:b&nbsp;=&nbsp;2,:c&nbsp;=&nbsp;3,:d&nbsp;=&nbsp;4,:e&nbsp;=&nbsp;5,:f&nbsp;=&nbsp;6,:g&nbsp;=&nbsp;7,:h&nbsp;=&nbsp;8]</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"aFile2Rank = [:a = 1,:b = 2,:c = 3,:d = 4,:e = 5,:f = 6,:g = 7,:h = 8]"
 			],
 			[
 				"interactionid",
@@ -2621,17 +2621,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"aFile2Rank = [:a = 1,:b = 2,:c = 3,:d = 4,:e = 5,:f = 6,:g = 7,:h = 8]"
+				"nIndex = oView.ChessTableWidget.currentrow()+1"
 			]
 		]
 	],
 	[
 		75,
-		71,
+		72,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">WKFile</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aFile2Rank[aDataSet[nIndex][1]]</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aFile2Rank</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[:a&nbsp;=&nbsp;1,:b&nbsp;=&nbsp;2,:c&nbsp;=&nbsp;3,:d&nbsp;=&nbsp;4,:e&nbsp;=&nbsp;5,:f&nbsp;=&nbsp;6,:g&nbsp;=&nbsp;7,:h&nbsp;=&nbsp;8]</font></span>"
 			],
 			[
 				"active",
@@ -2639,7 +2639,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"WKFile = aFile2Rank[aDataSet[nIndex][1]]"
+				"aFile2Rank = [:a = 1,:b = 2,:c = 3,:d = 4,:e = 5,:f = 6,:g = 7,:h = 8]"
 			],
 			[
 				"interactionid",
@@ -2659,17 +2659,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"WKFile = aFile2Rank[aDataSet[nIndex][1]]"
+				"aFile2Rank = [:a = 1,:b = 2,:c = 3,:d = 4,:e = 5,:f = 6,:g = 7,:h = 8]"
 			]
 		]
 	],
 	[
 		76,
-		71,
+		72,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">WKRank</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aDataSet[nIndex][2]</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">WKFile</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aFile2Rank[aDataSet[nIndex][1]]</font></span>"
 			],
 			[
 				"active",
@@ -2677,7 +2677,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"WKRank = aDataSet[nIndex][2]"
+				"WKFile = aFile2Rank[aDataSet[nIndex][1]]"
 			],
 			[
 				"interactionid",
@@ -2697,17 +2697,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"WKRank = aDataSet[nIndex][2]"
+				"WKFile = aFile2Rank[aDataSet[nIndex][1]]"
 			]
 		]
 	],
 	[
 		77,
-		71,
+		72,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">WRFile</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aFile2Rank[aDataSet[nIndex][3]]</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">WKRank</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aDataSet[nIndex][2]</font></span>"
 			],
 			[
 				"active",
@@ -2715,7 +2715,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"WRFile = aFile2Rank[aDataSet[nIndex][3]]"
+				"WKRank = aDataSet[nIndex][2]"
 			],
 			[
 				"interactionid",
@@ -2735,17 +2735,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"WRFile = aFile2Rank[aDataSet[nIndex][3]]"
+				"WKRank = aDataSet[nIndex][2]"
 			]
 		]
 	],
 	[
 		78,
-		71,
+		72,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">WRRank</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aDataSet[nIndex][4]</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">WRFile</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aFile2Rank[aDataSet[nIndex][3]]</font></span>"
 			],
 			[
 				"active",
@@ -2753,7 +2753,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"WRRank = aDataSet[nIndex][4]"
+				"WRFile = aFile2Rank[aDataSet[nIndex][3]]"
 			],
 			[
 				"interactionid",
@@ -2773,17 +2773,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"WRRank = aDataSet[nIndex][4]"
+				"WRFile = aFile2Rank[aDataSet[nIndex][3]]"
 			]
 		]
 	],
 	[
 		79,
-		71,
+		72,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">BKFile</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aFile2Rank[aDataSet[nIndex][5]]</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">WRRank</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aDataSet[nIndex][4]</font></span>"
 			],
 			[
 				"active",
@@ -2791,7 +2791,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"BKFile = aFile2Rank[aDataSet[nIndex][5]]"
+				"WRRank = aDataSet[nIndex][4]"
 			],
 			[
 				"interactionid",
@@ -2811,17 +2811,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"BKFile = aFile2Rank[aDataSet[nIndex][5]]"
+				"WRRank = aDataSet[nIndex][4]"
 			]
 		]
 	],
 	[
 		80,
-		71,
+		72,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">BKRank</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aDataSet[nIndex][6]</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">BKFile</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aFile2Rank[aDataSet[nIndex][5]]</font></span>"
 			],
 			[
 				"active",
@@ -2829,7 +2829,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"BKRank = aDataSet[nIndex][6]"
+				"BKFile = aFile2Rank[aDataSet[nIndex][5]]"
 			],
 			[
 				"interactionid",
@@ -2849,13 +2849,51 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"BKRank = aDataSet[nIndex][6]"
+				"BKFile = aFile2Rank[aDataSet[nIndex][5]]"
 			]
 		]
 	],
 	[
 		81,
-		71,
+		72,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">BKRank</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aDataSet[nIndex][6]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"BKRank = aDataSet[nIndex][6]"
+			],
+			[
+				"interactionid",
+				54
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"BKRank = aDataSet[nIndex][6]"
+			]
+		]
+	],
+	[
+		82,
+		72,
 		[
 			[
 				"name",
@@ -2868,82 +2906,6 @@ aStepsTable = [
 			[
 				"code",
 				"oView.Board {"
-			],
-			[
-				"interactionid",
-				54
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"oView.Board {"
-			]
-		]
-	],
-	[
-		82,
-		81,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				54
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		84,
-		82,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nBoardX</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">x()</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"nBoardX = x()"
 			],
 			[
 				"interactionid",
@@ -2963,17 +2925,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"nBoardX = x()"
+				"oView.Board {"
 			]
 		]
 	],
 	[
-		85,
+		83,
 		82,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nBoardY</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">y()+height()</font></span>"
+				"Start Here"
 			],
 			[
 				"active",
@@ -2981,7 +2943,45 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"nBoardY = y()+height()"
+				""
+			],
+			[
+				"interactionid",
+				55
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		85,
+		83,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nBoardX</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">x()</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"nBoardX = x()"
 			],
 			[
 				"interactionid",
@@ -3001,13 +3001,51 @@ aStepsTable = [
 			],
 			[
 				"plainname",
+				"nBoardX = x()"
+			]
+		]
+	],
+	[
+		86,
+		83,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nBoardY</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">y()+height()</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"nBoardY = y()+height()"
+			],
+			[
+				"interactionid",
+				57
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
 				"nBoardY = y()+height()"
 			]
 		]
 	],
 	[
-		83,
-		81,
+		84,
+		82,
 		[
 			[
 				"name",
@@ -3023,7 +3061,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				54
+				55
 			],
 			[
 				"visible",
@@ -3044,88 +3082,12 @@ aStepsTable = [
 		]
 	],
 	[
-		86,
-		71,
-		[
-			[
-				"name",
-				"# Draw the White King"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"# Draw the White King"
-			],
-			[
-				"interactionid",
-				57
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"# Draw the White King"
-			]
-		]
-	],
-	[
 		87,
-		71,
+		72,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oView.WK</font></span> {"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"oView.WK {"
-			],
-			[
-				"interactionid",
-				58
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"oView.WK {"
-			]
-		]
-	],
-	[
-		88,
-		87,
-		[
-			[
-				"name",
-				"Start Here"
+				"# Draw the White King"
 			],
 			[
 				"active",
@@ -3145,25 +3107,25 @@ aStepsTable = [
 			],
 			[
 				"stepnumber",
-				2
+				1
 			],
 			[
 				"steptype",
-				3
+				1
 			],
 			[
 				"plainname",
-				"Start Here"
+				"# Draw the White King"
 			]
 		]
 	],
 	[
-		90,
 		88,
+		72,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">WKX</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nBoardX+((WKFile-1)*50)</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oView.WK</font></span> {"
 			],
 			[
 				"active",
@@ -3171,7 +3133,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"WKX = nBoardX+((WKFile-1)*50)"
+				"oView.WK {"
 			],
 			[
 				"interactionid",
@@ -3191,17 +3153,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"WKX = nBoardX+((WKFile-1)*50)"
+				"oView.WK {"
 			]
 		]
 	],
 	[
-		91,
+		89,
 		88,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">WKY</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nBoardY-(WKRank*50)</font></span>"
+				"Start Here"
 			],
 			[
 				"active",
@@ -3209,7 +3171,45 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"WKY = nBoardY-(WKRank*50)"
+				""
+			],
+			[
+				"interactionid",
+				59
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		91,
+		89,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">WKX</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nBoardX+((WKFile-1)*50)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"WKX = nBoardX+((WKFile-1)*50)"
 			],
 			[
 				"interactionid",
@@ -3229,17 +3229,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"WKY = nBoardY-(WKRank*50)"
+				"WKX = nBoardX+((WKFile-1)*50)"
 			]
 		]
 	],
 	[
 		92,
-		88,
+		89,
 		[
 			[
 				"name",
-				"move(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">WKX,WKY</font></span>)"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">WKY</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nBoardY-(WKRank*50)</font></span>"
 			],
 			[
 				"active",
@@ -3247,7 +3247,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"move(WKX,WKY)"
+				"WKY = nBoardY-(WKRank*50)"
 			],
 			[
 				"interactionid",
@@ -3267,17 +3267,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"move(WKX,WKY)"
+				"WKY = nBoardY-(WKRank*50)"
 			]
 		]
 	],
 	[
 		93,
-		88,
+		89,
 		[
 			[
 				"name",
-				"show(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+				"move(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">WKX,WKY</font></span>)"
 			],
 			[
 				"active",
@@ -3285,7 +3285,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"show()"
+				"move(WKX,WKY)"
 			],
 			[
 				"interactionid",
@@ -3305,13 +3305,51 @@ aStepsTable = [
 			],
 			[
 				"plainname",
+				"move(WKX,WKY)"
+			]
+		]
+	],
+	[
+		94,
+		89,
+		[
+			[
+				"name",
+				"show(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"show()"
+			],
+			[
+				"interactionid",
+				63
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
 				"show()"
 			]
 		]
 	],
 	[
-		89,
-		87,
+		90,
+		88,
 		[
 			[
 				"name",
@@ -3327,7 +3365,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				58
+				59
 			],
 			[
 				"visible",
@@ -3348,88 +3386,12 @@ aStepsTable = [
 		]
 	],
 	[
-		94,
-		71,
-		[
-			[
-				"name",
-				"# Draw the White Rook"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"# Draw the White Rook"
-			],
-			[
-				"interactionid",
-				63
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"# Draw the White Rook"
-			]
-		]
-	],
-	[
 		95,
-		71,
+		72,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oView.WR</font></span> {"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"oView.WR {"
-			],
-			[
-				"interactionid",
-				64
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"oView.WR {"
-			]
-		]
-	],
-	[
-		96,
-		95,
-		[
-			[
-				"name",
-				"Start Here"
+				"# Draw the White Rook"
 			],
 			[
 				"active",
@@ -3449,25 +3411,25 @@ aStepsTable = [
 			],
 			[
 				"stepnumber",
-				2
+				1
 			],
 			[
 				"steptype",
-				3
+				1
 			],
 			[
 				"plainname",
-				"Start Here"
+				"# Draw the White Rook"
 			]
 		]
 	],
 	[
-		98,
 		96,
+		72,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">WRX</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nBoardX+((WRFile-1)*50)</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oView.WR</font></span> {"
 			],
 			[
 				"active",
@@ -3475,7 +3437,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"WRX = nBoardX+((WRFile-1)*50)"
+				"oView.WR {"
 			],
 			[
 				"interactionid",
@@ -3495,17 +3457,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"WRX = nBoardX+((WRFile-1)*50)"
+				"oView.WR {"
 			]
 		]
 	],
 	[
-		99,
+		97,
 		96,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">WRY</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nBoardY-(WRRank*50)</font></span>"
+				"Start Here"
 			],
 			[
 				"active",
@@ -3513,7 +3475,45 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"WRY = nBoardY-(WRRank*50)"
+				""
+			],
+			[
+				"interactionid",
+				65
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		99,
+		97,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">WRX</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nBoardX+((WRFile-1)*50)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"WRX = nBoardX+((WRFile-1)*50)"
 			],
 			[
 				"interactionid",
@@ -3533,17 +3533,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"WRY = nBoardY-(WRRank*50)"
+				"WRX = nBoardX+((WRFile-1)*50)"
 			]
 		]
 	],
 	[
 		100,
-		96,
+		97,
 		[
 			[
 				"name",
-				"move(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">WRX,WRY</font></span>)"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">WRY</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nBoardY-(WRRank*50)</font></span>"
 			],
 			[
 				"active",
@@ -3551,7 +3551,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"move(WRX,WRY)"
+				"WRY = nBoardY-(WRRank*50)"
 			],
 			[
 				"interactionid",
@@ -3571,17 +3571,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"move(WRX,WRY)"
+				"WRY = nBoardY-(WRRank*50)"
 			]
 		]
 	],
 	[
 		101,
-		96,
+		97,
 		[
 			[
 				"name",
-				"show(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+				"move(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">WRX,WRY</font></span>)"
 			],
 			[
 				"active",
@@ -3589,7 +3589,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"show()"
+				"move(WRX,WRY)"
 			],
 			[
 				"interactionid",
@@ -3609,13 +3609,51 @@ aStepsTable = [
 			],
 			[
 				"plainname",
+				"move(WRX,WRY)"
+			]
+		]
+	],
+	[
+		102,
+		97,
+		[
+			[
+				"name",
+				"show(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"show()"
+			],
+			[
+				"interactionid",
+				69
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
 				"show()"
 			]
 		]
 	],
 	[
-		97,
-		95,
+		98,
+		96,
 		[
 			[
 				"name",
@@ -3631,7 +3669,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				64
+				65
 			],
 			[
 				"visible",
@@ -3652,88 +3690,12 @@ aStepsTable = [
 		]
 	],
 	[
-		102,
-		71,
-		[
-			[
-				"name",
-				"# Draw the Black King"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"# Draw the Black King"
-			],
-			[
-				"interactionid",
-				69
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"# Draw the Black King"
-			]
-		]
-	],
-	[
 		103,
-		71,
+		72,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oView.BK</font></span> {"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"oView.BK {"
-			],
-			[
-				"interactionid",
-				70
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"oView.BK {"
-			]
-		]
-	],
-	[
-		104,
-		103,
-		[
-			[
-				"name",
-				"Start Here"
+				"# Draw the Black King"
 			],
 			[
 				"active",
@@ -3753,25 +3715,25 @@ aStepsTable = [
 			],
 			[
 				"stepnumber",
-				2
+				1
 			],
 			[
 				"steptype",
-				3
+				1
 			],
 			[
 				"plainname",
-				"Start Here"
+				"# Draw the Black King"
 			]
 		]
 	],
 	[
-		106,
 		104,
+		72,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">BKX</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nBoardX+((BKFile-1)*50)</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oView.BK</font></span> {"
 			],
 			[
 				"active",
@@ -3779,7 +3741,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"BKX = nBoardX+((BKFile-1)*50)"
+				"oView.BK {"
 			],
 			[
 				"interactionid",
@@ -3799,17 +3761,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"BKX = nBoardX+((BKFile-1)*50)"
+				"oView.BK {"
 			]
 		]
 	],
 	[
-		107,
+		105,
 		104,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">BKY</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nBoardY-(BKRank*50)</font></span>"
+				"Start Here"
 			],
 			[
 				"active",
@@ -3817,7 +3779,45 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"BKY = nBoardY-(BKRank*50)"
+				""
+			],
+			[
+				"interactionid",
+				71
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		107,
+		105,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">BKX</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nBoardX+((BKFile-1)*50)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"BKX = nBoardX+((BKFile-1)*50)"
 			],
 			[
 				"interactionid",
@@ -3837,17 +3837,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"BKY = nBoardY-(BKRank*50)"
+				"BKX = nBoardX+((BKFile-1)*50)"
 			]
 		]
 	],
 	[
 		108,
-		104,
+		105,
 		[
 			[
 				"name",
-				"move(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">BKX,BKY</font></span>)"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">BKY</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nBoardY-(BKRank*50)</font></span>"
 			],
 			[
 				"active",
@@ -3855,7 +3855,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"move(BKX,BKY)"
+				"BKY = nBoardY-(BKRank*50)"
 			],
 			[
 				"interactionid",
@@ -3875,13 +3875,51 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"move(BKX,BKY)"
+				"BKY = nBoardY-(BKRank*50)"
 			]
 		]
 	],
 	[
 		109,
-		104,
+		105,
+		[
+			[
+				"name",
+				"move(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">BKX,BKY</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"move(BKX,BKY)"
+			],
+			[
+				"interactionid",
+				74
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"move(BKX,BKY)"
+			]
+		]
+	],
+	[
+		110,
+		105,
 		[
 			[
 				"name",
@@ -3897,7 +3935,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				74
+				75
 			],
 			[
 				"visible",
@@ -3918,8 +3956,8 @@ aStepsTable = [
 		]
 	],
 	[
-		105,
-		103,
+		106,
+		104,
 		[
 			[
 				"name",
@@ -3935,7 +3973,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				70
+				71
 			],
 			[
 				"visible",
@@ -3956,8 +3994,8 @@ aStepsTable = [
 		]
 	],
 	[
-		72,
-		70,
+		73,
+		71,
 		[
 			[
 				"name",
@@ -3973,7 +4011,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				45
+				46
 			],
 			[
 				"visible",
@@ -3994,8 +4032,8 @@ aStepsTable = [
 		]
 	],
 	[
-		110,
-		22,
+		111,
+		23,
 		[
 			[
 				"name",
@@ -4011,7 +4049,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				75
+				76
 			],
 			[
 				"visible",
@@ -4032,8 +4070,8 @@ aStepsTable = [
 		]
 	],
 	[
+		112,
 		111,
-		110,
 		[
 			[
 				"name",
@@ -4049,7 +4087,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				75
+				76
 			],
 			[
 				"visible",
@@ -4070,8 +4108,8 @@ aStepsTable = [
 		]
 	],
 	[
-		113,
-		111,
+		114,
+		112,
 		[
 			[
 				"name",
@@ -4087,7 +4125,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				76
+				77
 			],
 			[
 				"visible",
@@ -4108,8 +4146,8 @@ aStepsTable = [
 		]
 	],
 	[
-		112,
-		110,
+		113,
+		111,
 		[
 			[
 				"name",
@@ -4125,7 +4163,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				75
+				76
 			],
 			[
 				"visible",
@@ -4146,8 +4184,540 @@ aStepsTable = [
 		]
 	],
 	[
-		114,
-		22,
+		115,
+		23,
+		[
+			[
+				"name",
+				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">openPrediction</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"func openPrediction  { "
+			],
+			[
+				"interactionid",
+				78
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"function openPrediction "
+			]
+		]
+	],
+	[
+		116,
+		115,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				78
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		118,
+		116,
+		[
+			[
+				"name",
+				"openWindow(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">:predictionController</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"openWindow(:predictionController)"
+			],
+			[
+				"interactionid",
+				79
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"openWindow(:predictionController)"
+			]
+		]
+	],
+	[
+		119,
+		116,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nIndex</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oView.ChessTableWidget.currentrow()+1</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"nIndex = oView.ChessTableWidget.currentrow()+1"
+			],
+			[
+				"interactionid",
+				80
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"nIndex = oView.ChessTableWidget.currentrow()+1"
+			]
+		]
+	],
+	[
+		120,
+		116,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">lastWindow().oView</font></span> {"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"lastWindow().oView {"
+			],
+			[
+				"interactionid",
+				81
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"lastWindow().oView {"
+			]
+		]
+	],
+	[
+		121,
+		120,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				81
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		123,
+		121,
+		[
+			[
+				"name",
+				"txtWKF.setText( <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aDataSet[nIndex][1]</font></span> )"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"txtWKF.setText(aDataSet[nIndex][1])"
+			],
+			[
+				"interactionid",
+				82
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"txtWKF.setText( aDataSet[nIndex][1] )"
+			]
+		]
+	],
+	[
+		124,
+		121,
+		[
+			[
+				"name",
+				"txtWKR.setText( <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;&quot;+aDataSet[nIndex][2]</font></span> )"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"txtWKR.setText("+char(34)+""+char(34)+"+aDataSet[nIndex][2])"
+			],
+			[
+				"interactionid",
+				83
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"txtWKR.setText( "+char(34)+""+char(34)+"+aDataSet[nIndex][2] )"
+			]
+		]
+	],
+	[
+		125,
+		121,
+		[
+			[
+				"name",
+				"txtWRF.setText( <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aDataSet[nIndex][3]</font></span> )"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"txtWRF.setText(aDataSet[nIndex][3])"
+			],
+			[
+				"interactionid",
+				84
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"txtWRF.setText( aDataSet[nIndex][3] )"
+			]
+		]
+	],
+	[
+		126,
+		121,
+		[
+			[
+				"name",
+				"txtWRR.setText( <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;&quot;+aDataSet[nIndex][4]</font></span> )"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"txtWRR.setText("+char(34)+""+char(34)+"+aDataSet[nIndex][4])"
+			],
+			[
+				"interactionid",
+				85
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"txtWRR.setText( "+char(34)+""+char(34)+"+aDataSet[nIndex][4] )"
+			]
+		]
+	],
+	[
+		127,
+		121,
+		[
+			[
+				"name",
+				"txtBKF.setText( <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aDataSet[nIndex][5]</font></span> )"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"txtBKF.setText(aDataSet[nIndex][5])"
+			],
+			[
+				"interactionid",
+				86
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"txtBKF.setText( aDataSet[nIndex][5] )"
+			]
+		]
+	],
+	[
+		128,
+		121,
+		[
+			[
+				"name",
+				"txtBKR.setText( <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;&quot;+aDataSet[nIndex][6]</font></span> )"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"txtBKR.setText("+char(34)+""+char(34)+"+aDataSet[nIndex][6])"
+			],
+			[
+				"interactionid",
+				87
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"txtBKR.setText( "+char(34)+""+char(34)+"+aDataSet[nIndex][6] )"
+			]
+		]
+	],
+	[
+		122,
+		120,
+		[
+			[
+				"name",
+				"}"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"}"
+			],
+			[
+				"interactionid",
+				81
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"}"
+			]
+		]
+	],
+	[
+		117,
+		115,
+		[
+			[
+				"name",
+				"End of Function"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				78
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of Function"
+			]
+		]
+	],
+	[
+		129,
+		23,
 		[
 			[
 				"name",
@@ -4163,7 +4733,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				77
+				88
 			],
 			[
 				"visible",
@@ -4184,8 +4754,8 @@ aStepsTable = [
 		]
 	],
 	[
-		115,
-		114,
+		130,
+		129,
 		[
 			[
 				"name",
@@ -4201,7 +4771,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				77
+				88
 			],
 			[
 				"visible",
@@ -4222,8 +4792,8 @@ aStepsTable = [
 		]
 	],
 	[
-		117,
-		115,
+		132,
+		130,
 		[
 			[
 				"name",
@@ -4239,7 +4809,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				78
+				89
 			],
 			[
 				"visible",
@@ -4260,8 +4830,8 @@ aStepsTable = [
 		]
 	],
 	[
-		116,
-		114,
+		131,
+		129,
 		[
 			[
 				"name",
@@ -4277,7 +4847,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				77
+				88
 			],
 			[
 				"visible",
@@ -4298,8 +4868,8 @@ aStepsTable = [
 		]
 	],
 	[
-		23,
-		20,
+		24,
+		21,
 		[
 			[
 				"name",
@@ -4315,7 +4885,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				15
+				16
 			],
 			[
 				"visible",
@@ -4336,8 +4906,8 @@ aStepsTable = [
 		]
 	],
 	[
+		25,
 		24,
-		23,
 		[
 			[
 				"name",
@@ -4353,7 +4923,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				15
+				16
 			],
 			[
 				"visible",
@@ -4374,8 +4944,8 @@ aStepsTable = [
 		]
 	],
 	[
-		25,
-		23,
+		26,
+		24,
 		[
 			[
 				"name",
@@ -4391,7 +4961,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				15
+				16
 			],
 			[
 				"visible",
@@ -4412,8 +4982,8 @@ aStepsTable = [
 		]
 	],
 	[
-		26,
-		23,
+		27,
+		24,
 		[
 			[
 				"name",
@@ -4429,7 +4999,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				15
+				16
 			],
 			[
 				"visible",
@@ -4456,624 +5026,712 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"21/03/2021",
-		"15:38:42",
+		"01/07/2021",
+		"13:24:01",
 		""
 	],
 	[
 		2,
 		1,
 		"",
-		"21/03/2021",
-		"15:38:42",
+		"01/07/2021",
+		"13:24:01",
 		""
 	],
 	[
 		3,
 		1,
 		"",
-		"21/03/2021",
-		"15:38:42",
+		"01/07/2021",
+		"13:24:01",
 		""
 	],
 	[
 		4,
 		1,
 		"",
-		"21/03/2021",
-		"15:38:42",
+		"01/07/2021",
+		"13:24:01",
 		""
 	],
 	[
 		5,
 		1,
 		"",
-		"21/03/2021",
-		"15:38:42",
+		"01/07/2021",
+		"13:24:01",
 		""
 	],
 	[
 		6,
 		1,
 		"load",
-		"21/03/2021",
-		"15:38:42",
+		"01/07/2021",
+		"13:24:01",
 		"file;;_RV_;;frmView.ring;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"load",
-		"21/03/2021",
-		"15:38:42",
+		"01/07/2021",
+		"13:24:01",
 		"file;;_RV_;;data/dataset.ring;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"load",
-		"21/03/2021",
-		"15:38:42",
+		"01/07/2021",
+		"13:24:01",
 		"file;;_RV_;;statsController.ring;;_RV_;;"
 	],
 	[
 		9,
 		1,
-		"import",
-		"21/03/2021",
-		"15:38:42",
-		"value;;_RV_;;System.GUI;;_RV_;;"
+		"load",
+		"01/07/2021",
+		"13:24:01",
+		"file;;_RV_;;predictionController.ring;;_RV_;;"
 	],
 	[
 		10,
 		1,
-		"ifstatement",
-		"21/03/2021",
-		"15:38:42",
-		"condition;;_RV_;;IsMainSourceFile();;_RV_;;"
+		"import",
+		"01/07/2021",
+		"13:24:01",
+		"value;;_RV_;;System.GUI;;_RV_;;"
 	],
 	[
 		11,
 		1,
-		"newobj",
-		"21/03/2021",
-		"15:38:42",
-		"value;;_RV_;;oApp;;_RV_;;value2;;_RV_;;App;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"ifstatement",
+		"01/07/2021",
+		"13:24:01",
+		"condition;;_RV_;;IsMainSourceFile();;_RV_;;"
 	],
 	[
 		12,
 		1,
-		"callfunc",
-		"21/03/2021",
-		"15:38:42",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;StyleFusion;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"newobj",
+		"01/07/2021",
+		"13:24:01",
+		"value;;_RV_;;oApp;;_RV_;;value2;;_RV_;;App;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"callfunc",
-		"21/03/2021",
-		"15:38:42",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;openWindow;;_RV_;;parameters;;_RV_;;:frmController;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"01/07/2021",
+		"13:24:01",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;StyleFusion;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"callfunc",
-		"21/03/2021",
-		"15:38:42",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;exec;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"01/07/2021",
+		"13:24:01",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;openWindow;;_RV_;;parameters;;_RV_;;:frmController;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		15,
 		1,
-		"class",
-		"21/03/2021",
-		"15:38:42",
-		"value;;_RV_;;frmController;;_RV_;;value2;;_RV_;;windowsControllerParent;;_RV_;;"
+		"callfunc",
+		"01/07/2021",
+		"13:24:01",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;exec;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		16,
 		1,
-		"",
-		"21/03/2021",
-		"15:38:42",
-		""
+		"class",
+		"01/07/2021",
+		"13:24:01",
+		"value;;_RV_;;frmController;;_RV_;;value2;;_RV_;;windowsControllerParent;;_RV_;;"
 	],
 	[
 		17,
 		1,
-		"newobj",
-		"21/03/2021",
-		"15:38:42",
-		"value;;_RV_;;oView;;_RV_;;value2;;_RV_;;frmView;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"",
+		"01/07/2021",
+		"13:24:01",
+		""
 	],
 	[
 		18,
 		1,
 		"newobj",
-		"21/03/2021",
-		"15:38:42",
-		"value;;_RV_;;oFilter;;_RV_;;value2;;_RV_;;QAllEvents;;_RV_;;value3;;_RV_;;oView.win;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;2;;_RV_;;"
+		"01/07/2021",
+		"13:24:01",
+		"value;;_RV_;;oView;;_RV_;;value2;;_RV_;;frmView;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		19,
 		1,
-		"callmethod",
-		"21/03/2021",
-		"15:38:42",
-		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oFilter;;_RV_;;name;;_RV_;;setCloseevent;;_RV_;;parameters;;_RV_;;Method(:CloseApp);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"newobj",
+		"01/07/2021",
+		"13:24:01",
+		"value;;_RV_;;oFilter;;_RV_;;value2;;_RV_;;QAllEvents;;_RV_;;value3;;_RV_;;oView.win;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		20,
 		1,
-		"freetyping",
-		"21/03/2021",
-		"15:38:42",
-		"value;;_RV_;;oView.win.installeventfilter(oFilter);;_RV_;;"
+		"callmethod",
+		"01/07/2021",
+		"13:24:01",
+		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oFilter;;_RV_;;name;;_RV_;;setCloseevent;;_RV_;;parameters;;_RV_;;Method(:CloseApp);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		21,
 		1,
-		"",
-		"21/03/2021",
-		"15:38:42",
-		""
+		"freetyping",
+		"01/07/2021",
+		"13:24:01",
+		"value;;_RV_;;oView.win.installeventfilter(oFilter);;_RV_;;"
 	],
 	[
 		22,
 		1,
-		"accessobject",
-		"21/03/2021",
-		"15:38:42",
-		"value;;_RV_;;oView.chessTableWidget;;_RV_;;"
+		"",
+		"01/07/2021",
+		"13:24:01",
+		""
 	],
 	[
 		23,
 		1,
-		"callfunc",
-		"21/03/2021",
-		"15:38:42",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setEditTriggers;;_RV_;;parameters;;_RV_;;False;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"accessobject",
+		"01/07/2021",
+		"13:24:01",
+		"value;;_RV_;;oView.chessTableWidget;;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"callfunc",
-		"21/03/2021",
-		"15:38:42",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;selectRow;;_RV_;;parameters;;_RV_;;0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"01/07/2021",
+		"13:24:01",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setEditTriggers;;_RV_;;parameters;;_RV_;;False;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"callfunc",
-		"21/03/2021",
-		"15:38:42",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setSelectionMode;;_RV_;;parameters;;_RV_;;QAbstractItemView_SingleSelection;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"01/07/2021",
+		"13:24:01",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;selectRow;;_RV_;;parameters;;_RV_;;0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"callfunc",
-		"21/03/2021",
-		"15:38:42",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;hidePieces;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"01/07/2021",
+		"13:24:01",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setSelectionMode;;_RV_;;parameters;;_RV_;;QAbstractItemView_SingleSelection;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		27,
 		1,
-		"",
-		"21/03/2021",
-		"15:38:42",
-		""
+		"callfunc",
+		"01/07/2021",
+		"13:24:01",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;hidePieces;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		28,
 		1,
-		"freetyping",
-		"21/03/2021",
-		"15:38:42",
-		"value;;_RV_;;oView.Win.showMaximized();;_RV_;;"
+		"",
+		"01/07/2021",
+		"13:24:01",
+		""
 	],
 	[
 		29,
 		1,
 		"freetyping",
-		"21/03/2021",
-		"15:38:42",
-		"value;;_RV_;;oView.statusbar1.showmessage("+char(34)+"Loading the data..."+char(34)+",0);;_RV_;;"
+		"01/07/2021",
+		"13:24:01",
+		"value;;_RV_;;oView.Win.showMaximized();;_RV_;;"
 	],
 	[
 		30,
 		1,
-		"callfunc",
-		"21/03/2021",
-		"15:38:42",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;loadTheData;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"freetyping",
+		"01/07/2021",
+		"13:24:01",
+		"value;;_RV_;;oView.statusbar1.showmessage("+char(34)+"Loading the data..."+char(34)+",0);;_RV_;;"
 	],
 	[
 		31,
 		1,
-		"freetyping",
-		"21/03/2021",
-		"15:38:42",
-		"value;;_RV_;;oView.statusbar1.showmessage("+char(34)+"Records Count: "+char(34)+"+(len(aDataSet)-1),0);;_RV_;;"
+		"callfunc",
+		"01/07/2021",
+		"13:24:01",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;loadTheData;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		32,
 		1,
-		"func",
-		"21/03/2021",
-		"15:38:42",
-		"name;;_RV_;;hidePieces;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"freetyping",
+		"01/07/2021",
+		"13:24:01",
+		"value;;_RV_;;oView.statusbar1.showmessage("+char(34)+"Records Count: "+char(34)+"+(len(aDataSet)-1),0);;_RV_;;"
 	],
 	[
 		33,
 		1,
-		"freetyping",
-		"21/03/2021",
-		"15:38:42",
-		"value;;_RV_;;oView.WK.hide();;_RV_;;"
+		"func",
+		"01/07/2021",
+		"13:24:01",
+		"name;;_RV_;;hidePieces;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		34,
 		1,
 		"freetyping",
-		"21/03/2021",
-		"15:38:42",
-		"value;;_RV_;;oView.WR.hide();;_RV_;;"
+		"01/07/2021",
+		"13:24:01",
+		"value;;_RV_;;oView.WK.hide();;_RV_;;"
 	],
 	[
 		35,
 		1,
 		"freetyping",
-		"21/03/2021",
-		"15:38:42",
-		"value;;_RV_;;oView.BK.hide();;_RV_;;"
+		"01/07/2021",
+		"13:24:01",
+		"value;;_RV_;;oView.WR.hide();;_RV_;;"
 	],
 	[
 		36,
 		1,
-		"func",
-		"21/03/2021",
-		"15:38:42",
-		"name;;_RV_;;loadTheData;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"freetyping",
+		"01/07/2021",
+		"13:24:01",
+		"value;;_RV_;;oView.BK.hide();;_RV_;;"
 	],
 	[
 		37,
 		1,
-		"assignment",
-		"21/03/2021",
-		"15:38:42",
-		"leftside;;_RV_;;nMax;;_RV_;;rightside;;_RV_;;len(aDataSet);;_RV_;;"
+		"func",
+		"01/07/2021",
+		"13:24:01",
+		"name;;_RV_;;loadTheData;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		38,
 		1,
-		"forloop",
-		"21/03/2021",
-		"15:38:42",
-		"start;;_RV_;;t = 2;;_RV_;;to;;_RV_;;nMax;;_RV_;;step;;_RV_;;1;;_RV_;;"
+		"assignment",
+		"01/07/2021",
+		"13:24:01",
+		"leftside;;_RV_;;nMax;;_RV_;;rightside;;_RV_;;len(aDataSet);;_RV_;;"
 	],
 	[
 		39,
 		1,
 		"forloop",
-		"21/03/2021",
-		"15:38:42",
-		"start;;_RV_;;m = 1;;_RV_;;to;;_RV_;;7;;_RV_;;step;;_RV_;;1;;_RV_;;"
+		"01/07/2021",
+		"13:24:01",
+		"start;;_RV_;;t = 2;;_RV_;;to;;_RV_;;nMax;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		40,
 		1,
-		"freetyping",
-		"21/03/2021",
-		"15:38:42",
-		"value;;_RV_;;oView.ChessTableWidget.setItem(t-1,m,QTableWidgetItem_new("+char(34)+""+char(34)+"+aDataSet[t][m]));;_RV_;;"
+		"forloop",
+		"01/07/2021",
+		"13:24:01",
+		"start;;_RV_;;m = 1;;_RV_;;to;;_RV_;;7;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		41,
 		1,
-		"ifstatement",
-		"21/03/2021",
-		"15:38:42",
-		"condition;;_RV_;;t%100 = 0;;_RV_;;"
+		"freetyping",
+		"01/07/2021",
+		"13:24:01",
+		"value;;_RV_;;oView.ChessTableWidget.setItem(t-1,m,QTableWidgetItem_new("+char(34)+""+char(34)+"+aDataSet[t][m]));;_RV_;;"
 	],
 	[
 		42,
 		1,
-		"callmethod",
-		"21/03/2021",
-		"15:38:42",
-		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oApp;;_RV_;;name;;_RV_;;processevents;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"ifstatement",
+		"01/07/2021",
+		"13:24:01",
+		"condition;;_RV_;;t%100 = 0;;_RV_;;"
 	],
 	[
 		43,
 		1,
-		"ifstatement",
-		"21/03/2021",
-		"15:38:42",
-		"condition;;_RV_;;t = 2;;_RV_;;"
+		"callmethod",
+		"01/07/2021",
+		"13:24:01",
+		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oApp;;_RV_;;name;;_RV_;;processevents;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		44,
 		1,
-		"callfunc",
-		"21/03/2021",
-		"15:38:42",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;newSelection;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"ifstatement",
+		"01/07/2021",
+		"13:24:01",
+		"condition;;_RV_;;t = 2;;_RV_;;"
 	],
 	[
 		45,
 		1,
-		"func",
-		"21/03/2021",
-		"15:38:42",
-		"name;;_RV_;;newSelection;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"callfunc",
+		"01/07/2021",
+		"13:24:01",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;newSelection;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		46,
 		1,
-		"assignment",
-		"21/03/2021",
-		"15:38:42",
-		"leftside;;_RV_;;nIndex;;_RV_;;rightside;;_RV_;;oView.ChessTableWidget.currentrow()+1;;_RV_;;"
+		"func",
+		"01/07/2021",
+		"13:24:01",
+		"name;;_RV_;;newSelection;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		47,
 		1,
 		"assignment",
-		"21/03/2021",
-		"15:38:42",
-		"leftside;;_RV_;;aFile2Rank;;_RV_;;rightside;;_RV_;;[:a = 1,:b = 2,:c = 3,:d = 4,:e = 5,:f = 6,:g = 7,:h = 8];;_RV_;;"
+		"01/07/2021",
+		"13:24:01",
+		"leftside;;_RV_;;nIndex;;_RV_;;rightside;;_RV_;;oView.ChessTableWidget.currentrow()+1;;_RV_;;"
 	],
 	[
 		48,
 		1,
 		"assignment",
-		"21/03/2021",
-		"15:38:42",
-		"leftside;;_RV_;;WKFile;;_RV_;;rightside;;_RV_;;aFile2Rank[aDataSet[nIndex][1]];;_RV_;;"
+		"01/07/2021",
+		"13:24:01",
+		"leftside;;_RV_;;aFile2Rank;;_RV_;;rightside;;_RV_;;[:a = 1,:b = 2,:c = 3,:d = 4,:e = 5,:f = 6,:g = 7,:h = 8];;_RV_;;"
 	],
 	[
 		49,
 		1,
 		"assignment",
-		"21/03/2021",
-		"15:38:42",
-		"leftside;;_RV_;;WKRank;;_RV_;;rightside;;_RV_;;aDataSet[nIndex][2];;_RV_;;"
+		"01/07/2021",
+		"13:24:01",
+		"leftside;;_RV_;;WKFile;;_RV_;;rightside;;_RV_;;aFile2Rank[aDataSet[nIndex][1]];;_RV_;;"
 	],
 	[
 		50,
 		1,
 		"assignment",
-		"21/03/2021",
-		"15:38:42",
-		"leftside;;_RV_;;WRFile;;_RV_;;rightside;;_RV_;;aFile2Rank[aDataSet[nIndex][3]];;_RV_;;"
+		"01/07/2021",
+		"13:24:01",
+		"leftside;;_RV_;;WKRank;;_RV_;;rightside;;_RV_;;aDataSet[nIndex][2];;_RV_;;"
 	],
 	[
 		51,
 		1,
 		"assignment",
-		"21/03/2021",
-		"15:38:42",
-		"leftside;;_RV_;;WRRank;;_RV_;;rightside;;_RV_;;aDataSet[nIndex][4];;_RV_;;"
+		"01/07/2021",
+		"13:24:01",
+		"leftside;;_RV_;;WRFile;;_RV_;;rightside;;_RV_;;aFile2Rank[aDataSet[nIndex][3]];;_RV_;;"
 	],
 	[
 		52,
 		1,
 		"assignment",
-		"21/03/2021",
-		"15:38:42",
-		"leftside;;_RV_;;BKFile;;_RV_;;rightside;;_RV_;;aFile2Rank[aDataSet[nIndex][5]];;_RV_;;"
+		"01/07/2021",
+		"13:24:01",
+		"leftside;;_RV_;;WRRank;;_RV_;;rightside;;_RV_;;aDataSet[nIndex][4];;_RV_;;"
 	],
 	[
 		53,
 		1,
 		"assignment",
-		"21/03/2021",
-		"15:38:42",
-		"leftside;;_RV_;;BKRank;;_RV_;;rightside;;_RV_;;aDataSet[nIndex][6];;_RV_;;"
+		"01/07/2021",
+		"13:24:01",
+		"leftside;;_RV_;;BKFile;;_RV_;;rightside;;_RV_;;aFile2Rank[aDataSet[nIndex][5]];;_RV_;;"
 	],
 	[
 		54,
 		1,
-		"accessobject",
-		"21/03/2021",
-		"15:38:42",
-		"value;;_RV_;;oView.Board;;_RV_;;"
+		"assignment",
+		"01/07/2021",
+		"13:24:01",
+		"leftside;;_RV_;;BKRank;;_RV_;;rightside;;_RV_;;aDataSet[nIndex][6];;_RV_;;"
 	],
 	[
 		55,
 		1,
-		"assignment",
-		"21/03/2021",
-		"15:38:42",
-		"leftside;;_RV_;;nBoardX;;_RV_;;rightside;;_RV_;;x();;_RV_;;"
+		"accessobject",
+		"01/07/2021",
+		"13:24:01",
+		"value;;_RV_;;oView.Board;;_RV_;;"
 	],
 	[
 		56,
 		1,
 		"assignment",
-		"21/03/2021",
-		"15:38:42",
-		"leftside;;_RV_;;nBoardY;;_RV_;;rightside;;_RV_;;y()+height();;_RV_;;"
+		"01/07/2021",
+		"13:24:01",
+		"leftside;;_RV_;;nBoardX;;_RV_;;rightside;;_RV_;;x();;_RV_;;"
 	],
 	[
 		57,
 		1,
-		"",
-		"21/03/2021",
-		"15:38:42",
-		""
+		"assignment",
+		"01/07/2021",
+		"13:24:01",
+		"leftside;;_RV_;;nBoardY;;_RV_;;rightside;;_RV_;;y()+height();;_RV_;;"
 	],
 	[
 		58,
 		1,
-		"accessobject",
-		"21/03/2021",
-		"15:38:42",
-		"value;;_RV_;;oView.WK;;_RV_;;"
+		"",
+		"01/07/2021",
+		"13:24:01",
+		""
 	],
 	[
 		59,
 		1,
-		"assignment",
-		"21/03/2021",
-		"15:38:42",
-		"leftside;;_RV_;;WKX;;_RV_;;rightside;;_RV_;;nBoardX+((WKFile-1)*50);;_RV_;;"
+		"accessobject",
+		"01/07/2021",
+		"13:24:01",
+		"value;;_RV_;;oView.WK;;_RV_;;"
 	],
 	[
 		60,
 		1,
 		"assignment",
-		"21/03/2021",
-		"15:38:42",
-		"leftside;;_RV_;;WKY;;_RV_;;rightside;;_RV_;;nBoardY-(WKRank*50);;_RV_;;"
+		"01/07/2021",
+		"13:24:01",
+		"leftside;;_RV_;;WKX;;_RV_;;rightside;;_RV_;;nBoardX+((WKFile-1)*50);;_RV_;;"
 	],
 	[
 		61,
 		1,
-		"callfunc",
-		"21/03/2021",
-		"15:38:42",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;move;;_RV_;;parameters;;_RV_;;WKX,WKY;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"assignment",
+		"01/07/2021",
+		"13:24:01",
+		"leftside;;_RV_;;WKY;;_RV_;;rightside;;_RV_;;nBoardY-(WKRank*50);;_RV_;;"
 	],
 	[
 		62,
 		1,
 		"callfunc",
-		"21/03/2021",
-		"15:38:42",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;show;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"01/07/2021",
+		"13:24:01",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;move;;_RV_;;parameters;;_RV_;;WKX,WKY;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		63,
 		1,
-		"",
-		"21/03/2021",
-		"15:38:42",
-		""
+		"callfunc",
+		"01/07/2021",
+		"13:24:01",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;show;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		64,
 		1,
-		"accessobject",
-		"21/03/2021",
-		"15:38:42",
-		"value;;_RV_;;oView.WR;;_RV_;;"
+		"",
+		"01/07/2021",
+		"13:24:01",
+		""
 	],
 	[
 		65,
 		1,
-		"assignment",
-		"21/03/2021",
-		"15:38:42",
-		"leftside;;_RV_;;WRX;;_RV_;;rightside;;_RV_;;nBoardX+((WRFile-1)*50);;_RV_;;"
+		"accessobject",
+		"01/07/2021",
+		"13:24:01",
+		"value;;_RV_;;oView.WR;;_RV_;;"
 	],
 	[
 		66,
 		1,
 		"assignment",
-		"21/03/2021",
-		"15:38:42",
-		"leftside;;_RV_;;WRY;;_RV_;;rightside;;_RV_;;nBoardY-(WRRank*50);;_RV_;;"
+		"01/07/2021",
+		"13:24:01",
+		"leftside;;_RV_;;WRX;;_RV_;;rightside;;_RV_;;nBoardX+((WRFile-1)*50);;_RV_;;"
 	],
 	[
 		67,
 		1,
-		"callfunc",
-		"21/03/2021",
-		"15:38:42",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;move;;_RV_;;parameters;;_RV_;;WRX,WRY;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"assignment",
+		"01/07/2021",
+		"13:24:01",
+		"leftside;;_RV_;;WRY;;_RV_;;rightside;;_RV_;;nBoardY-(WRRank*50);;_RV_;;"
 	],
 	[
 		68,
 		1,
 		"callfunc",
-		"21/03/2021",
-		"15:38:42",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;show;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"01/07/2021",
+		"13:24:01",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;move;;_RV_;;parameters;;_RV_;;WRX,WRY;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		69,
 		1,
-		"",
-		"21/03/2021",
-		"15:38:42",
-		""
+		"callfunc",
+		"01/07/2021",
+		"13:24:01",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;show;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		70,
 		1,
-		"accessobject",
-		"21/03/2021",
-		"15:38:42",
-		"value;;_RV_;;oView.BK;;_RV_;;"
+		"",
+		"01/07/2021",
+		"13:24:01",
+		""
 	],
 	[
 		71,
 		1,
-		"assignment",
-		"21/03/2021",
-		"15:38:42",
-		"leftside;;_RV_;;BKX;;_RV_;;rightside;;_RV_;;nBoardX+((BKFile-1)*50);;_RV_;;"
+		"accessobject",
+		"01/07/2021",
+		"13:24:01",
+		"value;;_RV_;;oView.BK;;_RV_;;"
 	],
 	[
 		72,
 		1,
 		"assignment",
-		"21/03/2021",
-		"15:38:42",
-		"leftside;;_RV_;;BKY;;_RV_;;rightside;;_RV_;;nBoardY-(BKRank*50);;_RV_;;"
+		"01/07/2021",
+		"13:24:01",
+		"leftside;;_RV_;;BKX;;_RV_;;rightside;;_RV_;;nBoardX+((BKFile-1)*50);;_RV_;;"
 	],
 	[
 		73,
 		1,
-		"callfunc",
-		"21/03/2021",
-		"15:38:42",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;move;;_RV_;;parameters;;_RV_;;BKX,BKY;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"assignment",
+		"01/07/2021",
+		"13:24:01",
+		"leftside;;_RV_;;BKY;;_RV_;;rightside;;_RV_;;nBoardY-(BKRank*50);;_RV_;;"
 	],
 	[
 		74,
 		1,
 		"callfunc",
-		"21/03/2021",
-		"15:38:42",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;show;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"01/07/2021",
+		"13:24:01",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;move;;_RV_;;parameters;;_RV_;;BKX,BKY;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		75,
 		1,
-		"func",
-		"21/03/2021",
-		"15:38:42",
-		"name;;_RV_;;openStats;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"callfunc",
+		"01/07/2021",
+		"13:24:01",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;show;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		76,
 		1,
-		"callfunc",
-		"21/03/2021",
-		"15:38:42",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;openWindow;;_RV_;;parameters;;_RV_;;:statsController;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"func",
+		"01/07/2021",
+		"13:24:01",
+		"name;;_RV_;;openStats;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		77,
 		1,
-		"func",
-		"21/03/2021",
-		"15:38:42",
-		"name;;_RV_;;closeApp;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"callfunc",
+		"01/07/2021",
+		"13:24:01",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;openWindow;;_RV_;;parameters;;_RV_;;:statsController;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		78,
 		1,
+		"func",
+		"01/07/2021",
+		"13:24:01",
+		"name;;_RV_;;openPrediction;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+	],
+	[
+		79,
+		1,
+		"callfunc",
+		"01/07/2021",
+		"13:24:01",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;openWindow;;_RV_;;parameters;;_RV_;;:predictionController;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		80,
+		1,
+		"assignment",
+		"01/07/2021",
+		"13:24:01",
+		"leftside;;_RV_;;nIndex;;_RV_;;rightside;;_RV_;;oView.ChessTableWidget.currentrow()+1;;_RV_;;"
+	],
+	[
+		81,
+		1,
+		"accessobject",
+		"01/07/2021",
+		"13:24:01",
+		"value;;_RV_;;lastWindow().oView;;_RV_;;"
+	],
+	[
+		82,
+		1,
 		"callmethod",
-		"21/03/2021",
-		"15:38:42",
+		"01/07/2021",
+		"13:24:01",
+		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;txtWKF;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;aDataSet[nIndex][1];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		83,
+		1,
+		"callmethod",
+		"01/07/2021",
+		"13:24:01",
+		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;txtWKR;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+""+char(34)+"+aDataSet[nIndex][2];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		84,
+		1,
+		"callmethod",
+		"01/07/2021",
+		"13:24:01",
+		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;txtWRF;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;aDataSet[nIndex][3];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		85,
+		1,
+		"callmethod",
+		"01/07/2021",
+		"13:24:01",
+		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;txtWRR;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+""+char(34)+"+aDataSet[nIndex][4];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		86,
+		1,
+		"callmethod",
+		"01/07/2021",
+		"13:24:01",
+		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;txtBKF;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;aDataSet[nIndex][5];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		87,
+		1,
+		"callmethod",
+		"01/07/2021",
+		"13:24:01",
+		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;txtBKR;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+""+char(34)+"+aDataSet[nIndex][6];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		88,
+		1,
+		"func",
+		"01/07/2021",
+		"13:24:01",
+		"name;;_RV_;;closeApp;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+	],
+	[
+		89,
+		1,
+		"callmethod",
+		"01/07/2021",
+		"13:24:01",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oApp;;_RV_;;name;;_RV_;;Quit;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	]
 ]

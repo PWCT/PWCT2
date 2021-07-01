@@ -693,7 +693,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"While <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">clock()&lt;finish</font></span>"
+				"While <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">clock()&nbsp;&lt;&nbsp;finish</font></span>"
 			],
 			[
 				"active",
@@ -701,7 +701,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"while clock()<finish { "
+				"while clock() < finish { "
 			],
 			[
 				"interactionid",
@@ -721,7 +721,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"While clock()"
+				"While clock() "
 			]
 		]
 	],
@@ -807,7 +807,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">clock()&lt;finish</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">clock()&nbsp;&lt;&nbsp;finish</font></span>"
 			],
 			[
 				"active",
@@ -815,7 +815,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if clock()<finish { "
+				"if clock() < finish { "
 			],
 			[
 				"interactionid",
@@ -835,7 +835,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If clock()"
+				"If clock() "
 			]
 		]
 	],
@@ -1302,176 +1302,176 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"27/06/2021",
-		"19:41:17",
+		"01/07/2021",
+		"13:45:30",
 		""
 	],
 	[
 		2,
 		1,
 		"",
-		"27/06/2021",
-		"19:41:17",
+		"01/07/2021",
+		"13:45:30",
 		""
 	],
 	[
 		3,
 		1,
 		"",
-		"27/06/2021",
-		"19:41:17",
+		"01/07/2021",
+		"13:45:30",
 		""
 	],
 	[
 		4,
 		1,
 		"",
-		"27/06/2021",
-		"19:41:17",
+		"01/07/2021",
+		"13:45:30",
 		""
 	],
 	[
 		5,
 		1,
 		"",
-		"27/06/2021",
-		"19:41:17",
+		"01/07/2021",
+		"13:45:30",
 		""
 	],
 	[
 		6,
 		1,
 		"print",
-		"27/06/2021",
-		"19:41:17",
+		"01/07/2021",
+		"13:45:30",
 		"text;;_RV_;;"+char(34)+"method 1: calculate reciprocal of elapsed time:"+char(34)+"+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:41:17",
+		"01/07/2021",
+		"13:45:30",
 		"start;;_RV_;;trial = 1;;_RV_;;to;;_RV_;;3;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:41:17",
+		"01/07/2021",
+		"13:45:30",
 		"leftside;;_RV_;;start;;_RV_;;rightside;;_RV_;;clock();;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:41:17",
+		"01/07/2021",
+		"13:45:30",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;tasktomeasure;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:41:17",
+		"01/07/2021",
+		"13:45:30",
 		"leftside;;_RV_;;finish;;_RV_;;rightside;;_RV_;;clock();;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"print",
-		"27/06/2021",
-		"19:41:17",
+		"01/07/2021",
+		"13:45:30",
 		"text;;_RV_;;"+char(34)+"rate = "+char(34)+"+100/(finish-start)+"+char(34)+" per second"+char(34)+"+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"print",
-		"27/06/2021",
-		"19:41:17",
+		"01/07/2021",
+		"13:45:30",
 		"text;;_RV_;;"+char(34)+"method 2: count completed tasks in one second:"+char(34)+"+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:41:17",
+		"01/07/2021",
+		"13:45:30",
 		"start;;_RV_;;trial = 1;;_RV_;;to;;_RV_;;3;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:41:17",
+		"01/07/2021",
+		"13:45:30",
 		"leftside;;_RV_;;runs;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:41:17",
+		"01/07/2021",
+		"13:45:30",
 		"leftside;;_RV_;;finish;;_RV_;;rightside;;_RV_;;clock()+100;;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"whileloop",
-		"27/06/2021",
-		"19:41:17",
-		"condition;;_RV_;;clock()<finish;;_RV_;;"
+		"01/07/2021",
+		"13:45:30",
+		"condition;;_RV_;;clock() < finish;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:41:17",
+		"01/07/2021",
+		"13:45:30",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;tasktomeasure;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:41:17",
-		"condition;;_RV_;;clock()<finish;;_RV_;;"
+		"01/07/2021",
+		"13:45:30",
+		"condition;;_RV_;;clock() < finish;;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:41:17",
+		"01/07/2021",
+		"13:45:30",
 		"leftside;;_RV_;;runs;;_RV_;;rightside;;_RV_;;runs+1;;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"print",
-		"27/06/2021",
-		"19:41:17",
+		"01/07/2021",
+		"13:45:30",
 		"text;;_RV_;;"+char(34)+"rate = "+char(34)+"+runs+"+char(34)+" per second"+char(34)+"+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"func",
-		"27/06/2021",
-		"19:41:17",
+		"01/07/2021",
+		"13:45:30",
 		"name;;_RV_;;tasktomeasure;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:41:17",
+		"01/07/2021",
+		"13:45:30",
 		"start;;_RV_;;i = 1;;_RV_;;to;;_RV_;;100000;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	]
 ]

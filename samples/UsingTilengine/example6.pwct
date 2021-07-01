@@ -1833,7 +1833,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">angle-=2</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">angle&nbsp;-=&nbsp;2</font></span>"
 			],
 			[
 				"active",
@@ -1841,7 +1841,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"angle-=2"
+				"angle -= 2"
 			],
 			[
 				"interactionid",
@@ -1861,7 +1861,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"angle-=2"
+				"angle -= 2"
 			]
 		]
 	],
@@ -1947,7 +1947,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">angle+=2</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">angle&nbsp;+=&nbsp;2</font></span>"
 			],
 			[
 				"active",
@@ -1955,7 +1955,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"angle+=2"
+				"angle += 2"
 			],
 			[
 				"interactionid",
@@ -1975,7 +1975,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"angle+=2"
+				"angle += 2"
 			]
 		]
 	],
@@ -2099,7 +2099,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">s+=a</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">s&nbsp;+=&nbsp;a</font></span>"
 			],
 			[
 				"active",
@@ -2107,7 +2107,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"s+=a"
+				"s += a"
 			],
 			[
 				"interactionid",
@@ -2127,7 +2127,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"s+=a"
+				"s += a"
 			]
 		]
 	],
@@ -2137,7 +2137,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(s&gt;int2fix(2))</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(s&nbsp;&gt;&nbsp;int2fix(2))</font></span>"
 			],
 			[
 				"active",
@@ -2145,7 +2145,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if (s>int2fix(2)) { "
+				"if (s > int2fix(2)) { "
 			],
 			[
 				"interactionid",
@@ -2165,7 +2165,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If (s>int2fix(2))"
+				"If (s > int2fix(2))"
 			]
 		]
 	],
@@ -2289,7 +2289,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Else If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(s&gt;&nbsp;=&nbsp;a)</font></span>"
+				"Else If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(s&nbsp;&gt;=&nbsp;a)</font></span>"
 			],
 			[
 				"active",
@@ -2297,7 +2297,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"elseif (s> = a)"
+				"elseif (s >= a)"
 			],
 			[
 				"interactionid",
@@ -2317,7 +2317,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Else If (s> = a)"
+				"Else If (s >= a)"
 			]
 		]
 	],
@@ -2365,7 +2365,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">s-=a</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">s&nbsp;-=&nbsp;a</font></span>"
 			],
 			[
 				"active",
@@ -2373,7 +2373,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"s-=a"
+				"s -= a"
 			],
 			[
 				"interactionid",
@@ -2393,7 +2393,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"s-=a"
+				"s -= a"
 			]
 		]
 	],
@@ -2517,7 +2517,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">s-=a</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">s&nbsp;-=&nbsp;a</font></span>"
 			],
 			[
 				"active",
@@ -2525,7 +2525,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"s-=a"
+				"s -= a"
 			],
 			[
 				"interactionid",
@@ -2545,7 +2545,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"s-=a"
+				"s -= a"
 			]
 		]
 	],
@@ -2555,7 +2555,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(s&lt;-int2fix(2))</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(s&nbsp;&lt;&nbsp;-int2fix(2))</font></span>"
 			],
 			[
 				"active",
@@ -2563,7 +2563,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if (s<-int2fix(2)) { "
+				"if (s < -int2fix(2)) { "
 			],
 			[
 				"interactionid",
@@ -2583,7 +2583,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If (s"
+				"If (s "
 			]
 		]
 	],
@@ -2707,7 +2707,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Else If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(s&lt;&nbsp;=&nbsp;-a)</font></span>"
+				"Else If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(s&nbsp;&lt;=&nbsp;-a)</font></span>"
 			],
 			[
 				"active",
@@ -2715,7 +2715,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"elseif (s< = -a)"
+				"elseif (s <= -a)"
 			],
 			[
 				"interactionid",
@@ -2735,7 +2735,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Else If (s"
+				"Else If (s "
 			]
 		]
 	],
@@ -2783,7 +2783,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">s+=a</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">s&nbsp;+=&nbsp;a</font></span>"
 			],
 			[
 				"active",
@@ -2791,7 +2791,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"s+=a"
+				"s += a"
 			],
 			[
 				"interactionid",
@@ -2811,7 +2811,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"s+=a"
+				"s += a"
 			]
 		]
 	],
@@ -2973,7 +2973,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(angle&lt;0)</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(angle&nbsp;&lt;&nbsp;0)</font></span>"
 			],
 			[
 				"active",
@@ -2981,7 +2981,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if (angle<0) { "
+				"if (angle < 0) { "
 			],
 			[
 				"interactionid",
@@ -3001,7 +3001,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If (angle"
+				"If (angle "
 			]
 		]
 	],
@@ -3049,7 +3049,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">angle+=360</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">angle&nbsp;+=&nbsp;360</font></span>"
 			],
 			[
 				"active",
@@ -3057,7 +3057,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"angle+=360"
+				"angle += 360"
 			],
 			[
 				"interactionid",
@@ -3077,7 +3077,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"angle+=360"
+				"angle += 360"
 			]
 		]
 	],
@@ -3125,7 +3125,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">x+=CalcSin(angle,s)</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">x&nbsp;+=&nbsp;CalcSin(angle,s)</font></span>"
 			],
 			[
 				"active",
@@ -3133,7 +3133,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"x+=CalcSin(angle,s)"
+				"x += CalcSin(angle,s)"
 			],
 			[
 				"interactionid",
@@ -3153,7 +3153,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"x+=CalcSin(angle,s)"
+				"x += CalcSin(angle,s)"
 			]
 		]
 	],
@@ -3163,7 +3163,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">y-=CalcCos(angle,s)</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">y&nbsp;-=&nbsp;CalcCos(angle,s)</font></span>"
 			],
 			[
 				"active",
@@ -3171,7 +3171,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"y-=CalcCos(angle,s)"
+				"y -= CalcCos(angle,s)"
 			],
 			[
 				"interactionid",
@@ -3191,7 +3191,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"y-=CalcCos(angle,s)"
+				"y -= CalcCos(angle,s)"
 			]
 		]
 	],
@@ -3923,7 +3923,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Else If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(line&gt;&nbsp;=&nbsp;24)</font></span>"
+				"Else If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(line&nbsp;&gt;=&nbsp;24)</font></span>"
 			],
 			[
 				"active",
@@ -3931,7 +3931,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"elseif (line> = 24)"
+				"elseif (line >= 24)"
 			],
 			[
 				"interactionid",
@@ -3951,7 +3951,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Else If (line> = 24)"
+				"Else If (line >= 24)"
 			]
 		]
 	],
@@ -5026,768 +5026,768 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		""
 	],
 	[
 		2,
 		1,
 		"",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		""
 	],
 	[
 		3,
 		1,
 		"",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		""
 	],
 	[
 		4,
 		1,
 		"",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		""
 	],
 	[
 		5,
 		1,
 		"load",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"file;;_RV_;;tilengine.ring;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"load",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"file;;_RV_;;sin.ring;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"leftside;;_RV_;;WIDTH;;_RV_;;rightside;;_RV_;;400;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"leftside;;_RV_;;HEIGHT;;_RV_;;rightside;;_RV_;;240;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"leftside;;_RV_;;FIXED_BITS;;_RV_;;rightside;;_RV_;;16;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"leftside;;_RV_;;LAYER_FOREGROUND;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"leftside;;_RV_;;LAYER_BACKGROUND;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"leftside;;_RV_;;MAX_LAYER;;_RV_;;rightside;;_RV_;;2;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"leftside;;_RV_;;MAP_HORIZON;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"leftside;;_RV_;;MAP_TRACK;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"leftside;;_RV_;;MAX_MAP;;_RV_;;rightside;;_RV_;;2;;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"leftside;;_RV_;;road;;_RV_;;rightside;;_RV_;;NULL;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"leftside;;_RV_;;x;;_RV_;;rightside;;_RV_;;NULL;;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"leftside;;_RV_;;y;;_RV_;;rightside;;_RV_;;NULL;;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"leftside;;_RV_;;angle;;_RV_;;rightside;;_RV_;;NULL;;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"func",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"name;;_RV_;;main;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		""
 	],
 	[
 		22,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;TLN_Init;;_RV_;;parameters;;_RV_;;WIDTH,HEIGHT,MAX_LAYER,0,0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;TLN_SetRasterCallback;;_RV_;;parameters;;_RV_;;"+char(34)+"raster_callback()"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;TLN_SetBGColor;;_RV_;;parameters;;_RV_;;0,0,0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		""
 	],
 	[
 		26,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;TLN_SetLoadPath;;_RV_;;parameters;;_RV_;;"+char(34)+"assets/smk"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"leftside;;_RV_;;road;;_RV_;;rightside;;_RV_;;TLN_LoadTilemap("+char(34)+"track1.tmx"+char(34)+",NULL);;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"leftside;;_RV_;;horizon;;_RV_;;rightside;;_RV_;;TLN_LoadTilemap("+char(34)+"track1_bg.tmx"+char(34)+",NULL);;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		""
 	],
 	[
 		30,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;TLN_CreateWindow;;_RV_;;parameters;;_RV_;;NULL,0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"leftside;;_RV_;;x;;_RV_;;rightside;;_RV_;;int2fix(-136);;_RV_;;"
 	],
 	[
 		32,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"leftside;;_RV_;;y;;_RV_;;rightside;;_RV_;;int2fix(336);;_RV_;;"
 	],
 	[
 		33,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"leftside;;_RV_;;s;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		34,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"leftside;;_RV_;;a;;_RV_;;rightside;;_RV_;;float2fix(0.2);;_RV_;;"
 	],
 	[
 		35,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"leftside;;_RV_;;angle;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		36,
 		1,
 		"",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		""
 	],
 	[
 		37,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BuildSinTable;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		38,
 		1,
 		"whileloop",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"condition;;_RV_;;(TLN_ProcessWindow());;_RV_;;"
 	],
 	[
 		39,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;TLN_SetLayerTilemap;;_RV_;;parameters;;_RV_;;LAYER_FOREGROUND,horizon;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		40,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;TLN_SetLayerTilemap;;_RV_;;parameters;;_RV_;;LAYER_BACKGROUND,horizon;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		41,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;TLN_SetLayerPosition;;_RV_;;parameters;;_RV_;;LAYER_FOREGROUND,lerp(angle*2,0,360,0,256),24;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		42,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;TLN_SetLayerPosition;;_RV_;;parameters;;_RV_;;LAYER_BACKGROUND,lerp(angle,0,360,0,256),0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		43,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;TLN_ResetLayerMode;;_RV_;;parameters;;_RV_;;LAYER_BACKGROUND;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		44,
 		1,
 		"",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		""
 	],
 	[
 		45,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"condition;;_RV_;;(TLN_GetInput(INPUT_LEFT));;_RV_;;"
 	],
 	[
 		46,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:30:19",
-		"value;;_RV_;;angle-=2;;_RV_;;"
+		"01/07/2021",
+		"13:34:05",
+		"value;;_RV_;;angle -= 2;;_RV_;;"
 	],
 	[
 		47,
 		1,
 		"elseif",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"condition;;_RV_;;(TLN_GetInput(INPUT_RIGHT));;_RV_;;"
 	],
 	[
 		48,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:30:19",
-		"value;;_RV_;;angle+=2;;_RV_;;"
+		"01/07/2021",
+		"13:34:05",
+		"value;;_RV_;;angle += 2;;_RV_;;"
 	],
 	[
 		49,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"condition;;_RV_;;(TLN_GetInput(INPUT_UP));;_RV_;;"
 	],
 	[
 		50,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:30:19",
-		"value;;_RV_;;s+=a;;_RV_;;"
+		"01/07/2021",
+		"13:34:05",
+		"value;;_RV_;;s += a;;_RV_;;"
 	],
 	[
 		51,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:30:19",
-		"condition;;_RV_;;(s>int2fix(2));;_RV_;;"
+		"01/07/2021",
+		"13:34:05",
+		"condition;;_RV_;;(s > int2fix(2));;_RV_;;"
 	],
 	[
 		52,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"leftside;;_RV_;;s;;_RV_;;rightside;;_RV_;;int2fix(2);;_RV_;;"
 	],
 	[
 		53,
 		1,
 		"elseif",
-		"27/06/2021",
-		"19:30:19",
-		"condition;;_RV_;;(s> = a);;_RV_;;"
+		"01/07/2021",
+		"13:34:05",
+		"condition;;_RV_;;(s >= a);;_RV_;;"
 	],
 	[
 		54,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:30:19",
-		"value;;_RV_;;s-=a;;_RV_;;"
+		"01/07/2021",
+		"13:34:05",
+		"value;;_RV_;;s -= a;;_RV_;;"
 	],
 	[
 		55,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"condition;;_RV_;;(TLN_GetInput(INPUT_DOWN));;_RV_;;"
 	],
 	[
 		56,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:30:19",
-		"value;;_RV_;;s-=a;;_RV_;;"
+		"01/07/2021",
+		"13:34:05",
+		"value;;_RV_;;s -= a;;_RV_;;"
 	],
 	[
 		57,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:30:19",
-		"condition;;_RV_;;(s<-int2fix(2));;_RV_;;"
+		"01/07/2021",
+		"13:34:05",
+		"condition;;_RV_;;(s < -int2fix(2));;_RV_;;"
 	],
 	[
 		58,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"leftside;;_RV_;;s;;_RV_;;rightside;;_RV_;;-int2fix(2);;_RV_;;"
 	],
 	[
 		59,
 		1,
 		"elseif",
-		"27/06/2021",
-		"19:30:19",
-		"condition;;_RV_;;(s< = -a);;_RV_;;"
+		"01/07/2021",
+		"13:34:05",
+		"condition;;_RV_;;(s <= -a);;_RV_;;"
 	],
 	[
 		60,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:30:19",
-		"value;;_RV_;;s+=a;;_RV_;;"
+		"01/07/2021",
+		"13:34:05",
+		"value;;_RV_;;s += a;;_RV_;;"
 	],
 	[
 		61,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"condition;;_RV_;;(s! = 0);;_RV_;;"
 	],
 	[
 		62,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"leftside;;_RV_;;angle;;_RV_;;rightside;;_RV_;;angle%360;;_RV_;;"
 	],
 	[
 		63,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:30:19",
-		"condition;;_RV_;;(angle<0);;_RV_;;"
+		"01/07/2021",
+		"13:34:05",
+		"condition;;_RV_;;(angle < 0);;_RV_;;"
 	],
 	[
 		64,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:30:19",
-		"value;;_RV_;;angle+=360;;_RV_;;"
+		"01/07/2021",
+		"13:34:05",
+		"value;;_RV_;;angle += 360;;_RV_;;"
 	],
 	[
 		65,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:30:19",
-		"value;;_RV_;;x+=CalcSin(angle,s);;_RV_;;"
+		"01/07/2021",
+		"13:34:05",
+		"value;;_RV_;;x += CalcSin(angle,s);;_RV_;;"
 	],
 	[
 		66,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:30:19",
-		"value;;_RV_;;y-=CalcCos(angle,s);;_RV_;;"
+		"01/07/2021",
+		"13:34:05",
+		"value;;_RV_;;y -= CalcCos(angle,s);;_RV_;;"
 	],
 	[
 		67,
 		1,
 		"",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		""
 	],
 	[
 		68,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;TLN_DrawFrame;;_RV_;;parameters;;_RV_;;0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		69,
 		1,
 		"",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		""
 	],
 	[
 		70,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;TLN_DeleteTilemap;;_RV_;;parameters;;_RV_;;road;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		71,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;TLN_DeleteTilemap;;_RV_;;parameters;;_RV_;;horizon;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		72,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;TLN_DeleteWindow;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		73,
 		1,
 		"",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		""
 	],
 	[
 		74,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;TLN_Deinit;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		75,
 		1,
 		"func",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"name;;_RV_;;raster_callback;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		76,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"leftside;;_RV_;;line;;_RV_;;rightside;;_RV_;;TLN_GETSCANLINE();;_RV_;;"
 	],
 	[
 		77,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"condition;;_RV_;;(line = 24);;_RV_;;"
 	],
 	[
 		78,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;TLN_SetLayerTilemap;;_RV_;;parameters;;_RV_;;LAYER_BACKGROUND,road;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		79,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;TLN_SetLayerPosition;;_RV_;;parameters;;_RV_;;LAYER_BACKGROUND,fix2int(x),fix2int(y);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		80,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;TLN_DisableLayer;;_RV_;;parameters;;_RV_;;LAYER_FOREGROUND;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		81,
 		1,
 		"elseif",
-		"27/06/2021",
-		"19:30:19",
-		"condition;;_RV_;;(line> = 24);;_RV_;;"
+		"01/07/2021",
+		"13:34:05",
+		"condition;;_RV_;;(line >= 24);;_RV_;;"
 	],
 	[
 		82,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"leftside;;_RV_;;s0;;_RV_;;rightside;;_RV_;;float2fix(0.2);;_RV_;;"
 	],
 	[
 		83,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"leftside;;_RV_;;s1;;_RV_;;rightside;;_RV_;;float2fix(5.0);;_RV_;;"
 	],
 	[
 		84,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"leftside;;_RV_;;s;;_RV_;;rightside;;_RV_;;lerp(line,24,HEIGHT,s0,s1);;_RV_;;"
 	],
 	[
 		85,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"leftside;;_RV_;;scale;;_RV_;;rightside;;_RV_;;fix2float(s);;_RV_;;"
 	],
 	[
 		86,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;TLN_SetLayerTransform;;_RV_;;parameters;;_RV_;;LAYER_BACKGROUND,angle,WIDTH/2,HEIGHT,scale,scale;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		87,
 		1,
 		"func",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"name;;_RV_;;lerp;;_RV_;;parameters;;_RV_;;x,x0,x1,fx0,fx1;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		88,
 		1,
 		"return",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"value;;_RV_;;(fx0)+((fx1)-(fx0))*((x)-(x0))/((x1)-(x0));;_RV_;;"
 	],
 	[
 		89,
 		1,
 		"func",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"name;;_RV_;;float2fix;;_RV_;;parameters;;_RV_;;f;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		90,
 		1,
 		"return",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"value;;_RV_;;f*(1<<FIXED_BITS);;_RV_;;"
 	],
 	[
 		91,
 		1,
 		"func",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"name;;_RV_;;int2fix;;_RV_;;parameters;;_RV_;;i;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		92,
 		1,
 		"return",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"value;;_RV_;;i<<FIXED_BITS;;_RV_;;"
 	],
 	[
 		93,
 		1,
 		"func",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"name;;_RV_;;fix2int;;_RV_;;parameters;;_RV_;;f;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		94,
 		1,
 		"return",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"value;;_RV_;;f>>FIXED_BITS;;_RV_;;"
 	],
 	[
 		95,
 		1,
 		"func",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"name;;_RV_;;fix2float;;_RV_;;parameters;;_RV_;;f;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		96,
 		1,
 		"return",
-		"27/06/2021",
-		"19:30:19",
+		"01/07/2021",
+		"13:34:05",
 		"value;;_RV_;;f/(1<<FIXED_BITS);;_RV_;;"
 	]
 ]

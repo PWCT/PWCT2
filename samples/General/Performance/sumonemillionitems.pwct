@@ -351,7 +351,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nSum+=aList[x]</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nSum&nbsp;+=&nbsp;aList[x]</font></span>"
 			],
 			[
 				"active",
@@ -359,7 +359,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"nSum+=aList[x]"
+				"nSum += aList[x]"
 			],
 			[
 				"interactionid",
@@ -379,7 +379,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"nSum+=aList[x]"
+				"nSum += aList[x]"
 			]
 		]
 	],
@@ -580,104 +580,104 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"27/06/2021",
-		"19:40:32",
+		"01/07/2021",
+		"13:44:42",
 		""
 	],
 	[
 		2,
 		1,
 		"",
-		"27/06/2021",
-		"19:40:32",
+		"01/07/2021",
+		"13:44:42",
 		""
 	],
 	[
 		3,
 		1,
 		"",
-		"27/06/2021",
-		"19:40:32",
+		"01/07/2021",
+		"13:44:42",
 		""
 	],
 	[
 		4,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:40:32",
+		"01/07/2021",
+		"13:44:42",
 		"leftside;;_RV_;;t1;;_RV_;;rightside;;_RV_;;clock();;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:40:32",
+		"01/07/2021",
+		"13:44:42",
 		"leftside;;_RV_;;aList;;_RV_;;rightside;;_RV_;;list(1000000);;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:40:32",
+		"01/07/2021",
+		"13:44:42",
 		"leftside;;_RV_;;nSum;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:40:32",
+		"01/07/2021",
+		"13:44:42",
 		"leftside;;_RV_;;nMax;;_RV_;;rightside;;_RV_;;len(aList);;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:40:32",
+		"01/07/2021",
+		"13:44:42",
 		"start;;_RV_;;x = nMax;;_RV_;;to;;_RV_;;1;;_RV_;;step;;_RV_;;-1;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:40:32",
-		"value;;_RV_;;nSum+=aList[x];;_RV_;;"
+		"01/07/2021",
+		"13:44:42",
+		"value;;_RV_;;nSum += aList[x];;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:40:32",
+		"01/07/2021",
+		"13:44:42",
 		"leftside;;_RV_;;nTime;;_RV_;;rightside;;_RV_;;(clock()-t1)/clockspersecond();;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"print",
-		"27/06/2021",
-		"19:40:32",
+		"01/07/2021",
+		"13:44:42",
 		"text;;_RV_;;"+char(34)+"Size : "+char(34)+"+nMax;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"print",
-		"27/06/2021",
-		"19:40:32",
+		"01/07/2021",
+		"13:44:42",
 		"text;;_RV_;;"+char(34)+"Sum  : "+char(34)+"+nSum;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"print",
-		"27/06/2021",
-		"19:40:32",
+		"01/07/2021",
+		"13:44:42",
 		"text;;_RV_;;"+char(34)+"Time : "+char(34)+"+nTime;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	]
 ]

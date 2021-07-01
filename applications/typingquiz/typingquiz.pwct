@@ -1035,7 +1035,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">len(text)&gt;&nbsp;=&nbsp;30</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">len(text)&nbsp;&gt;=&nbsp;30</font></span>"
 			],
 			[
 				"active",
@@ -1043,7 +1043,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if len(text)> = 30 { "
+				"if len(text) >= 30 { "
 			],
 			[
 				"interactionid",
@@ -1063,7 +1063,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If len(text)> = 30"
+				"If len(text) >= 30"
 			]
 		]
 	],
@@ -1985,7 +1985,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">timer+=GetFrameTime()</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">timer&nbsp;+=&nbsp;GetFrameTime()</font></span>"
 			],
 			[
 				"active",
@@ -1993,7 +1993,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"timer+=GetFrameTime()"
+				"timer += GetFrameTime()"
 			],
 			[
 				"interactionid",
@@ -2013,7 +2013,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"timer+=GetFrameTime()"
+				"timer += GetFrameTime()"
 			]
 		]
 	],
@@ -2897,7 +2897,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">currentCharIndex&gt;1</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">currentCharIndex&nbsp;&gt;&nbsp;1</font></span>"
 			],
 			[
 				"active",
@@ -2905,7 +2905,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if currentCharIndex>1 { "
+				"if currentCharIndex > 1 { "
 			],
 			[
 				"interactionid",
@@ -2925,7 +2925,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If currentCharIndex>1"
+				"If currentCharIndex > 1"
 			]
 		]
 	],
@@ -3125,7 +3125,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">errorMap[i]&gt;len(letters)</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">errorMap[i]&nbsp;&gt;&nbsp;len(letters)</font></span>"
 			],
 			[
 				"active",
@@ -3133,7 +3133,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if errorMap[i]>len(letters) { "
+				"if errorMap[i] > len(letters) { "
 			],
 			[
 				"interactionid",
@@ -3153,7 +3153,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If errorMap[i]>len(letters)"
+				"If errorMap[i] > len(letters)"
 			]
 		]
 	],
@@ -4075,7 +4075,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">len(text)&gt;&nbsp;=&nbsp;30</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">len(text)&nbsp;&gt;=&nbsp;30</font></span>"
 			],
 			[
 				"active",
@@ -4083,7 +4083,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if len(text)> = 30 { "
+				"if len(text) >= 30 { "
 			],
 			[
 				"interactionid",
@@ -4103,7 +4103,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If len(text)> = 30"
+				"If len(text) >= 30"
 			]
 		]
 	],
@@ -4607,7 +4607,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">len(letters)&gt;0&nbsp;AND&nbsp;len(letters)&lt;&nbsp;=&nbsp;len(text)</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">len(letters)&nbsp;&gt;&nbsp;0&nbsp;AND&nbsp;len(letters)&nbsp;&lt;=&nbsp;len(text)</font></span>"
 			],
 			[
 				"active",
@@ -4615,7 +4615,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if len(letters)>0 AND len(letters)< = len(text) { "
+				"if len(letters) > 0 AND len(letters) <= len(text) { "
 			],
 			[
 				"interactionid",
@@ -4635,7 +4635,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If len(letters)>0 AND len(letters)"
+				"If len(letters) > 0 AND len(letters) "
 			]
 		]
 	],
@@ -5063,7 +5063,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">currentCharIndex&lt;&nbsp;=&nbsp;len(text)</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">currentCharIndex&nbsp;&lt;=&nbsp;len(text)</font></span>"
 			],
 			[
 				"active",
@@ -5071,7 +5071,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if currentCharIndex< = len(text) { "
+				"if currentCharIndex <= len(text) { "
 			],
 			[
 				"interactionid",
@@ -5091,7 +5091,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If currentCharIndex"
+				"If currentCharIndex "
 			]
 		]
 	],
@@ -5823,7 +5823,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">len(letters)&gt;&nbsp;=&nbsp;len(text)</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">len(letters)&nbsp;&gt;=&nbsp;len(text)</font></span>"
 			],
 			[
 				"active",
@@ -5831,7 +5831,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if len(letters)> = len(text) { "
+				"if len(letters) >= len(text) { "
 			],
 			[
 				"interactionid",
@@ -5851,7 +5851,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If len(letters)> = len(text)"
+				"If len(letters) >= len(text)"
 			]
 		]
 	],
@@ -6811,7 +6811,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">i&lt;length&nbsp;AND&nbsp;stringLength&lt;0</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">i&nbsp;&lt;&nbsp;length&nbsp;AND&nbsp;stringLength&nbsp;&lt;&nbsp;0</font></span>"
 			],
 			[
 				"active",
@@ -6819,7 +6819,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if i<length AND stringLength<0 { "
+				"if i < length AND stringLength < 0 { "
 			],
 			[
 				"interactionid",
@@ -6839,7 +6839,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If i"
+				"If i "
 			]
 		]
 	],
@@ -7116,1072 +7116,1072 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		""
 	],
 	[
 		2,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		""
 	],
 	[
 		3,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		""
 	],
 	[
 		4,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		""
 	],
 	[
 		5,
 		1,
 		"load",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"file;;_RV_;;stdlibcore.ring;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"load",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"file;;_RV_;;raylib.ring;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;screenWidth;;_RV_;;rightside;;_RV_;;800;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;screenHeight;;_RV_;;rightside;;_RV_;;400;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"func",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"name;;_RV_;;main;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;InitWindow;;_RV_;;parameters;;_RV_;;screenWidth,screenHeight,"+char(34)+"Typing Quiz"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetTargetFPS;;_RV_;;parameters;;_RV_;;60;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"condition;;_RV_;;iswindows();;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;system;;_RV_;;parameters;;_RV_;;"+char(34)+"cls"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		""
 	],
 	[
 		15,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;chars;;_RV_;;rightside;;_RV_;;[["+char(34)+"j"+char(34)+","+char(34)+"f"+char(34)+"],["+char(34)+"c"+char(34)+","+char(34)+"k"+char(34)+"],["+char(34)+"d"+char(34)+","+char(34)+"k"+char(34)+"],["+char(34)+"e"+char(34)+","+char(34)+"o"+char(34)+"]];;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		""
 	],
 	[
 		17,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;k;;_RV_;;rightside;;_RV_;;random(len(chars)-1)+1;;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;CHAR_ONE;;_RV_;;rightside;;_RV_;;chars[k][1];;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;CHAR_TWO;;_RV_;;rightside;;_RV_;;chars[k][2];;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;sentanceLength;;_RV_;;rightside;;_RV_;;random(20)+20;;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		""
 	],
 	[
 		22,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;text;;_RV_;;rightside;;_RV_;;generateString(sentanceLength,chars[k]);;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		""
 	],
 	[
 		24,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;textSize;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:43",
-		"condition;;_RV_;;len(text)> = 30;;_RV_;;"
+		"01/07/2021",
+		"13:29:57",
+		"condition;;_RV_;;len(text) >= 30;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;textSize;;_RV_;;rightside;;_RV_;;25;;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"else",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		""
 	],
 	[
 		28,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;textSize;;_RV_;;rightside;;_RV_;;35;;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;letters;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		30,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;started;;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;lastKey;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		32,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;error;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		33,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;errorMap;;_RV_;;rightside;;_RV_;;[];;_RV_;;"
 	],
 	[
 		34,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;currentCharIndex;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		35,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;timer;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		36,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;errorMap;;_RV_;;rightside;;_RV_;;[];;_RV_;;"
 	],
 	[
 		37,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;keys;;_RV_;;rightside;;_RV_;;[:j = KEY_J,:f = KEY_F,:c = KEY_C,:e = KEY_E,:o = KEY_O,:k = KEY_K,:d = KEY_D];;_RV_;;"
 	],
 	[
 		38,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;CHAR_ONE_KEY;;_RV_;;rightside;;_RV_;;keys[CHAR_ONE];;_RV_;;"
 	],
 	[
 		39,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;CHAR_TWO_KEY;;_RV_;;rightside;;_RV_;;keys[CHAR_TWO];;_RV_;;"
 	],
 	[
 		40,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		""
 	],
 	[
 		41,
 		1,
 		"whileloop",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"condition;;_RV_;;!WindowShouldClose();;_RV_;;"
 	],
 	[
 		42,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		""
 	],
 	[
 		43,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		44,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"condition;;_RV_;;started;;_RV_;;"
 	],
 	[
 		45,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:26:43",
-		"value;;_RV_;;timer+=GetFrameTime();;_RV_;;"
+		"01/07/2021",
+		"13:29:57",
+		"value;;_RV_;;timer += GetFrameTime();;_RV_;;"
 	],
 	[
 		46,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"Type this sentance with out looking at your keyboard"+char(34)+",10,10,26,RED;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		47,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"TIME: "+char(34)+"+timer,500,50,26,RED;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		48,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"SENTANCE:"+char(34)+",10,50,26,RED;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		49,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"ERRORS: "+char(34)+"+error,300,45,26,RED;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		50,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"Press R To Restart"+char(34)+",280,300,25,BLUE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		51,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;text,10,100,textSize,RED;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		52,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		""
 	],
 	[
 		53,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"condition;;_RV_;;IsKeyReleased(CHAR_ONE_KEY);;_RV_;;"
 	],
 	[
 		54,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;letters;;_RV_;;rightside;;_RV_;;letters+CHAR_ONE;;_RV_;;"
 	],
 	[
 		55,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;lastKey;;_RV_;;rightside;;_RV_;;CHAR_ONE_KEY;;_RV_;;"
 	],
 	[
 		56,
 		1,
 		"elseif",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"condition;;_RV_;;IsKeyReleased(CHAR_TWO_KEY);;_RV_;;"
 	],
 	[
 		57,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;letters;;_RV_;;rightside;;_RV_;;letters+CHAR_TWO;;_RV_;;"
 	],
 	[
 		58,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;lastKey;;_RV_;;rightside;;_RV_;;CHAR_TWO_KEY;;_RV_;;"
 	],
 	[
 		59,
 		1,
 		"elseif",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"condition;;_RV_;;IsKeyReleased(KEY_SPACE);;_RV_;;"
 	],
 	[
 		60,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;letters;;_RV_;;rightside;;_RV_;;letters+"+char(34)+" "+char(34)+";;_RV_;;"
 	],
 	[
 		61,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;lastKey;;_RV_;;rightside;;_RV_;;KEY_SPACE;;_RV_;;"
 	],
 	[
 		62,
 		1,
 		"elseif",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"condition;;_RV_;;IsKeyDown(KEY_BACKSPACE);;_RV_;;"
 	],
 	[
 		63,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;letters;;_RV_;;rightside;;_RV_;;left(letters,len(letters)-1);;_RV_;;"
 	],
 	[
 		64,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:43",
-		"condition;;_RV_;;currentCharIndex>1;;_RV_;;"
+		"01/07/2021",
+		"13:29:57",
+		"condition;;_RV_;;currentCharIndex > 1;;_RV_;;"
 	],
 	[
 		65,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"value;;_RV_;;currentCharIndex--;;_RV_;;"
 	],
 	[
 		66,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"start;;_RV_;;i = len(errorMap);;_RV_;;to;;_RV_;;1;;_RV_;;step;;_RV_;;-1;;_RV_;;"
 	],
 	[
 		67,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:43",
-		"condition;;_RV_;;errorMap[i]>len(letters);;_RV_;;"
+		"01/07/2021",
+		"13:29:57",
+		"condition;;_RV_;;errorMap[i] > len(letters);;_RV_;;"
 	],
 	[
 		68,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"value;;_RV_;;error--;;_RV_;;"
 	],
 	[
 		69,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;del;;_RV_;;parameters;;_RV_;;errorMap,i;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		70,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;sleep;;_RV_;;parameters;;_RV_;;0.1;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		71,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		""
 	],
 	[
 		72,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		""
 	],
 	[
 		73,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"condition;;_RV_;;IsKeyReleased(KEY_R);;_RV_;;"
 	],
 	[
 		74,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;k;;_RV_;;rightside;;_RV_;;random(len(chars)-1)+1;;_RV_;;"
 	],
 	[
 		75,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;CHAR_ONE;;_RV_;;rightside;;_RV_;;chars[k][1];;_RV_;;"
 	],
 	[
 		76,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;CHAR_TWO;;_RV_;;rightside;;_RV_;;chars[k][2];;_RV_;;"
 	],
 	[
 		77,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;CHAR_ONE_KEY;;_RV_;;rightside;;_RV_;;keys[CHAR_ONE];;_RV_;;"
 	],
 	[
 		78,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;CHAR_TWO_KEY;;_RV_;;rightside;;_RV_;;keys[CHAR_TWO];;_RV_;;"
 	],
 	[
 		79,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;sentanceLength;;_RV_;;rightside;;_RV_;;40;;_RV_;;"
 	],
 	[
 		80,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;text;;_RV_;;rightside;;_RV_;;generateString(sentanceLength,chars[K]);;_RV_;;"
 	],
 	[
 		81,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;letters;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		82,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;started;;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
 		83,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;lastKey;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		84,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;error;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		85,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;currentCharIndex;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		86,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;timer;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		87,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:43",
-		"condition;;_RV_;;len(text)> = 30;;_RV_;;"
+		"01/07/2021",
+		"13:29:57",
+		"condition;;_RV_;;len(text) >= 30;;_RV_;;"
 	],
 	[
 		88,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;textSize;;_RV_;;rightside;;_RV_;;25;;_RV_;;"
 	],
 	[
 		89,
 		1,
 		"else",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		""
 	],
 	[
 		90,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;textSize;;_RV_;;rightside;;_RV_;;35;;_RV_;;"
 	],
 	[
 		91,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		""
 	],
 	[
 		92,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"condition;;_RV_;;lastKey! = 0;;_RV_;;"
 	],
 	[
 		93,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;started;;_RV_;;rightside;;_RV_;;true;;_RV_;;"
 	],
 	[
 		94,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		""
 	],
 	[
 		95,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:43",
-		"condition;;_RV_;;len(letters)>0 AND len(letters)< = len(text);;_RV_;;"
+		"01/07/2021",
+		"13:29:57",
+		"condition;;_RV_;;len(letters) > 0 AND len(letters) <= len(text);;_RV_;;"
 	],
 	[
 		96,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"condition;;_RV_;;lastKey! = 0 AND lower(char(lastKey))! = nextChar;;_RV_;;"
 	],
 	[
 		97,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"value;;_RV_;;error++;;_RV_;;"
 	],
 	[
 		98,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"value;;_RV_;;errorMap+len(letters);;_RV_;;"
 	],
 	[
 		99,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"condition;;_RV_;;lastKey! = 0;;_RV_;;"
 	],
 	[
 		100,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"value;;_RV_;;currentCharIndex++;;_RV_;;"
 	],
 	[
 		101,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;lastKey;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		102,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:43",
-		"condition;;_RV_;;currentCharIndex< = len(text);;_RV_;;"
+		"01/07/2021",
+		"13:29:57",
+		"condition;;_RV_;;currentCharIndex <= len(text);;_RV_;;"
 	],
 	[
 		103,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;nextChar;;_RV_;;rightside;;_RV_;;text[currentCharIndex];;_RV_;;"
 	],
 	[
 		104,
 		1,
 		"else",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		""
 	],
 	[
 		105,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;nextChar;;_RV_;;rightside;;_RV_;;text[currentCharIndex-1];;_RV_;;"
 	],
 	[
 		106,
 		1,
 		"else",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		""
 	],
 	[
 		107,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;nextChar;;_RV_;;rightside;;_RV_;;text[1];;_RV_;;"
 	],
 	[
 		108,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		""
 	],
 	[
 		109,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"condition;;_RV_;;isnull(letters);;_RV_;;"
 	],
 	[
 		110,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"Start typing..."+char(34)+",10,140,35,GRAY;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		111,
 		1,
 		"else",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		""
 	],
 	[
 		112,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;letters,10,140,textSize,RED;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		113,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		""
 	],
 	[
 		114,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:43",
-		"condition;;_RV_;;len(letters)> = len(text);;_RV_;;"
+		"01/07/2021",
+		"13:29:57",
+		"condition;;_RV_;;len(letters) >= len(text);;_RV_;;"
 	],
 	[
 		115,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;started;;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
 		116,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"condition;;_RV_;;text = letters;;_RV_;;"
 	],
 	[
 		117,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"YOU WIN"+char(34)+",screenWidth/2-80,259,35,RED;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		118,
 		1,
 		"else",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		""
 	],
 	[
 		119,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"YOU LOSE"+char(34)+",screenWidth/2-80,259,35,RED;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		120,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;ClearBackground;;_RV_;;parameters;;_RV_;;RAYWHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		121,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		122,
 		1,
 		"",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		""
 	],
 	[
 		123,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;CloseWindow;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		124,
 		1,
 		"func",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"name;;_RV_;;generateString;;_RV_;;parameters;;_RV_;;length,letters;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		125,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;text;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		126,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;stringLength;;_RV_;;rightside;;_RV_;;random(4)+1;;_RV_;;"
 	],
 	[
 		127,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"start;;_RV_;;i = 1;;_RV_;;to;;_RV_;;length;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		128,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;rand;;_RV_;;rightside;;_RV_;;random(len(letters)-1)+1;;_RV_;;"
 	],
 	[
 		129,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;text;;_RV_;;rightside;;_RV_;;text+letters[rand];;_RV_;;"
 	],
 	[
 		130,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"value;;_RV_;;stringLength--;;_RV_;;"
 	],
 	[
 		131,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:26:43",
-		"condition;;_RV_;;i<length AND stringLength<0;;_RV_;;"
+		"01/07/2021",
+		"13:29:57",
+		"condition;;_RV_;;i < length AND stringLength < 0;;_RV_;;"
 	],
 	[
 		132,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;text;;_RV_;;rightside;;_RV_;;text+"+char(34)+" "+char(34)+";;_RV_;;"
 	],
 	[
 		133,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"leftside;;_RV_;;stringLength;;_RV_;;rightside;;_RV_;;random(4)+1;;_RV_;;"
 	],
 	[
 		134,
 		1,
 		"return",
-		"27/06/2021",
-		"19:26:43",
+		"01/07/2021",
+		"13:29:57",
 		"value;;_RV_;;text;;_RV_;;"
 	]
 ]

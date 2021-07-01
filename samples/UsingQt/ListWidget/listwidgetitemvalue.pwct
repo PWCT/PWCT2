@@ -1567,7 +1567,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">list1.currentrow()&gt;0</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">list1.currentrow()&nbsp;&gt;&nbsp;0</font></span>"
 			],
 			[
 				"active",
@@ -1575,7 +1575,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if list1.currentrow()>0 { "
+				"if list1.currentrow() > 0 { "
 			],
 			[
 				"interactionid",
@@ -1595,7 +1595,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If list1.currentrow()>0"
+				"If list1.currentrow() > 0"
 			]
 		]
 	],
@@ -2024,224 +2024,224 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"27/06/2021",
-		"19:44:00",
+		"01/07/2021",
+		"13:48:16",
 		""
 	],
 	[
 		2,
 		1,
 		"load",
-		"27/06/2021",
-		"19:44:00",
+		"01/07/2021",
+		"13:48:16",
 		"file;;_RV_;;guilib.ring;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"newobj",
-		"27/06/2021",
-		"19:44:00",
+		"01/07/2021",
+		"13:48:16",
 		"value;;_RV_;;;;_RV_;;value2;;_RV_;;qApp;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"newobj",
-		"27/06/2021",
-		"19:44:00",
+		"01/07/2021",
+		"13:48:16",
 		"value;;_RV_;;win1;;_RV_;;value2;;_RV_;;qWidget;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:44:00",
+		"01/07/2021",
+		"13:48:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setGeometry;;_RV_;;parameters;;_RV_;;100,100,400,400;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"newobj",
-		"27/06/2021",
-		"19:44:00",
+		"01/07/2021",
+		"13:48:16",
 		"value;;_RV_;;list1;;_RV_;;value2;;_RV_;;qlistwidget;;_RV_;;value3;;_RV_;;win1;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:44:00",
+		"01/07/2021",
+		"13:48:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setGeometry;;_RV_;;parameters;;_RV_;;150,100,200,200;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:44:00",
+		"01/07/2021",
+		"13:48:16",
 		"leftside;;_RV_;;alist;;_RV_;;rightside;;_RV_;;["+char(34)+"one"+char(34)+","+char(34)+"two"+char(34)+","+char(34)+"three"+char(34)+","+char(34)+"four"+char(34)+","+char(34)+"five"+char(34)+"];;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"forinloop",
-		"27/06/2021",
-		"19:44:00",
+		"01/07/2021",
+		"13:48:16",
 		"variable;;_RV_;;x;;_RV_;;in;;_RV_;;alist;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:44:00",
+		"01/07/2021",
+		"13:48:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;additem;;_RV_;;parameters;;_RV_;;x;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:44:00",
+		"01/07/2021",
+		"13:48:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setcurrentrow;;_RV_;;parameters;;_RV_;;3,2;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"callmethod",
-		"27/06/2021",
-		"19:44:00",
+		"01/07/2021",
+		"13:48:16",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;win1;;_RV_;;name;;_RV_;;setwindowtitle;;_RV_;;parameters;;_RV_;;"+char(34)+"Items Count : "+char(34)+"+count();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"newobj",
-		"27/06/2021",
-		"19:44:00",
+		"01/07/2021",
+		"13:48:16",
 		"value;;_RV_;;btn1;;_RV_;;value2;;_RV_;;qpushbutton;;_RV_;;value3;;_RV_;;win1;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:44:00",
+		"01/07/2021",
+		"13:48:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setGeometry;;_RV_;;parameters;;_RV_;;10,200,100,30;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:44:00",
+		"01/07/2021",
+		"13:48:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;settext;;_RV_;;parameters;;_RV_;;"+char(34)+"selected item"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:44:00",
+		"01/07/2021",
+		"13:48:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setclickevent;;_RV_;;parameters;;_RV_;;"+char(34)+"pWork()"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"newobj",
-		"27/06/2021",
-		"19:44:00",
+		"01/07/2021",
+		"13:48:16",
 		"value;;_RV_;;btn2;;_RV_;;value2;;_RV_;;qpushbutton;;_RV_;;value3;;_RV_;;win1;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:44:00",
+		"01/07/2021",
+		"13:48:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setGeometry;;_RV_;;parameters;;_RV_;;10,240,100,30;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:44:00",
+		"01/07/2021",
+		"13:48:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;settext;;_RV_;;parameters;;_RV_;;"+char(34)+"Delete item"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:44:00",
+		"01/07/2021",
+		"13:48:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setclickevent;;_RV_;;parameters;;_RV_;;"+char(34)+"pWork2()"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:44:00",
+		"01/07/2021",
+		"13:48:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;show;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:44:00",
+		"01/07/2021",
+		"13:48:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;exec;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"func",
-		"27/06/2021",
-		"19:44:00",
+		"01/07/2021",
+		"13:48:16",
 		"name;;_RV_;;pWork;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:44:00",
-		"condition;;_RV_;;list1.currentrow()>0;;_RV_;;"
+		"01/07/2021",
+		"13:48:16",
+		"condition;;_RV_;;list1.currentrow() > 0;;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"callmethod",
-		"27/06/2021",
-		"19:44:00",
+		"01/07/2021",
+		"13:48:16",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;btn1;;_RV_;;name;;_RV_;;settext;;_RV_;;parameters;;_RV_;;list1.item(list1.currentrow()).text();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"func",
-		"27/06/2021",
-		"19:44:00",
+		"01/07/2021",
+		"13:48:16",
 		"name;;_RV_;;pWork2;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"accessobject",
-		"27/06/2021",
-		"19:44:00",
+		"01/07/2021",
+		"13:48:16",
 		"value;;_RV_;;list1;;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:44:00",
+		"01/07/2021",
+		"13:48:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;takeitem;;_RV_;;parameters;;_RV_;;currentrow();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	]
 ]

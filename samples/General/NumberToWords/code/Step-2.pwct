@@ -693,7 +693,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">number(n)&gt;99</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">number(n)&nbsp;&gt;&nbsp;99</font></span>"
 			],
 			[
 				"active",
@@ -701,7 +701,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if number(n)>99 { "
+				"if number(n) > 99 { "
 			],
 			[
 				"interactionid",
@@ -721,7 +721,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If number(n)>99"
+				"If number(n) > 99"
 			]
 		]
 	],
@@ -883,7 +883,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">number(n[1])&gt;1&nbsp;AND&nbsp;number(n[2])&gt;0</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">number(n[1])&nbsp;&gt;&nbsp;1&nbsp;AND&nbsp;number(n[2])&nbsp;&gt;&nbsp;0</font></span>"
 			],
 			[
 				"active",
@@ -891,7 +891,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if number(n[1])>1 AND number(n[2])>0 { "
+				"if number(n[1]) > 1 AND number(n[2]) > 0 { "
 			],
 			[
 				"interactionid",
@@ -911,7 +911,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If number(n[1])>1 AND number(n[2])>0"
+				"If number(n[1]) > 1 AND number(n[2]) > 0"
 			]
 		]
 	],
@@ -1150,200 +1150,200 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"27/06/2021",
-		"19:40:23",
+		"01/07/2021",
+		"13:44:32",
 		""
 	],
 	[
 		2,
 		1,
 		"",
-		"27/06/2021",
-		"19:40:23",
+		"01/07/2021",
+		"13:44:32",
 		""
 	],
 	[
 		3,
 		1,
 		"",
-		"27/06/2021",
-		"19:40:23",
+		"01/07/2021",
+		"13:44:32",
 		""
 	],
 	[
 		4,
 		1,
 		"load",
-		"27/06/2021",
-		"19:40:23",
+		"01/07/2021",
+		"13:44:32",
 		"file;;_RV_;;stdlib.ring;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"",
-		"27/06/2021",
-		"19:40:23",
+		"01/07/2021",
+		"13:44:32",
 		""
 	],
 	[
 		6,
 		1,
 		"",
-		"27/06/2021",
-		"19:40:23",
+		"01/07/2021",
+		"13:44:32",
 		""
 	],
 	[
 		7,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:40:23",
+		"01/07/2021",
+		"13:44:32",
 		"leftside;;_RV_;;ones;;_RV_;;rightside;;_RV_;;["+char(34)+"one"+char(34)+","+char(34)+"two"+char(34)+","+char(34)+"three"+char(34)+","+char(34)+"four"+char(34)+","+char(34)+"five"+char(34)+","+char(34)+"six"+char(34)+","+char(34)+"seven"+char(34)+","+char(34)+"eight"+char(34)+","+char(34)+"nine"+char(34)+","+char(34)+"ten"+char(34)+","+char(34)+"eleven"+char(34)+","+char(34)+"twelve"+char(34)+","+char(34)+"thirteen"+char(34)+","+char(34)+"fourteen"+char(34)+","+char(34)+"fifteen"+char(34)+","+char(34)+"sixteen"+char(34)+","+char(34)+"seventeen"+char(34)+","+char(34)+"eighteen"+char(34)+","+char(34)+"nineteen"+char(34)+"];;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"",
-		"27/06/2021",
-		"19:40:23",
+		"01/07/2021",
+		"13:44:32",
 		""
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:40:23",
+		"01/07/2021",
+		"13:44:32",
 		"leftside;;_RV_;;tens;;_RV_;;rightside;;_RV_;;["+char(34)+""+char(34)+","+char(34)+"twenty"+char(34)+","+char(34)+"thirty"+char(34)+","+char(34)+"fourty"+char(34)+","+char(34)+"fifty"+char(34)+","+char(34)+"sixty"+char(34)+","+char(34)+"seventy"+char(34)+","+char(34)+"eighty"+char(34)+","+char(34)+"ninety"+char(34)+"];;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:40:23",
+		"01/07/2021",
+		"13:44:32",
 		"leftside;;_RV_;;n;;_RV_;;rightside;;_RV_;;"+char(34)+"29"+char(34)+";;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"print",
-		"27/06/2021",
-		"19:40:23",
+		"01/07/2021",
+		"13:44:32",
 		"text;;_RV_;;"+char(34)+"len(n): "+char(34)+"+len(n);;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"",
-		"27/06/2021",
-		"19:40:23",
+		"01/07/2021",
+		"13:44:32",
 		""
 	],
 	[
 		13,
 		1,
 		"print",
-		"27/06/2021",
-		"19:40:23",
+		"01/07/2021",
+		"13:44:32",
 		"text;;_RV_;;"+char(34)+"first digit: "+char(34)+"+n[1];;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"",
-		"27/06/2021",
-		"19:40:23",
+		"01/07/2021",
+		"13:44:32",
 		""
 	],
 	[
 		15,
 		1,
 		"print",
-		"27/06/2021",
-		"19:40:23",
+		"01/07/2021",
+		"13:44:32",
 		"text;;_RV_;;"+char(34)+"second digit: "+char(34)+"+n[2];;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"",
-		"27/06/2021",
-		"19:40:23",
+		"01/07/2021",
+		"13:44:32",
 		""
 	],
 	[
 		17,
 		1,
 		"print",
-		"27/06/2021",
-		"19:40:23",
+		"01/07/2021",
+		"13:44:32",
 		"text;;_RV_;;"+char(34)+"input: "+char(34)+"+n;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"",
-		"27/06/2021",
-		"19:40:23",
+		"01/07/2021",
+		"13:44:32",
 		""
 	],
 	[
 		19,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:40:23",
-		"condition;;_RV_;;number(n)>99;;_RV_;;"
+		"01/07/2021",
+		"13:44:32",
+		"condition;;_RV_;;number(n) > 99;;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"print",
-		"27/06/2021",
-		"19:40:23",
+		"01/07/2021",
+		"13:44:32",
 		"text;;_RV_;;Incorrect input!;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"",
-		"27/06/2021",
-		"19:40:23",
+		"01/07/2021",
+		"13:44:32",
 		""
 	],
 	[
 		22,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:40:23",
-		"condition;;_RV_;;number(n[1])>1 AND number(n[2])>0;;_RV_;;"
+		"01/07/2021",
+		"13:44:32",
+		"condition;;_RV_;;number(n[1]) > 1 AND number(n[2]) > 0;;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"print",
-		"27/06/2021",
-		"19:40:23",
+		"01/07/2021",
+		"13:44:32",
 		"text;;_RV_;;tens[number(n[1])]+"+char(34)+"-"+char(34)+"+ones[number(n[2])];;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"elseif",
-		"27/06/2021",
-		"19:40:23",
+		"01/07/2021",
+		"13:44:32",
 		"condition;;_RV_;;number(n[2]) = 0;;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"print",
-		"27/06/2021",
-		"19:40:23",
+		"01/07/2021",
+		"13:44:32",
 		"text;;_RV_;;tens[number(n[1])];;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	]
 ]
