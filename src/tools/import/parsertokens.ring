@@ -98,11 +98,21 @@ class ParserTokens
 				if cTokenValue = "?" {
 					return
 				elseif cTokenValue = "=" 
-					return " = "
+					if right(cBuffer,3) = " < " or 
+					   right(cBuffer,3) = " > " {
+						cBuffer = left(cBuffer,len(cBuffer)-1)+"= "
+						cBuffer2 = left(cBuffer2,len(cBuffer2)-1)+"= "
+						cTokenValue = ""
+						return 
+					else 
+						return " = "
+					}
 				elseif cTokenValue = "+=" 
 					return " += "
 				elseif cTokenValue = "-=" 
 					return " -= "
+				elseif cTokenValue = "*=" 
+					return " *= "
 				elseif cTokenValue = "<" 
 					return " < "
 				elseif cTokenValue = ">" 
