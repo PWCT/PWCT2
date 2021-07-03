@@ -20,7 +20,7 @@ class ComponentViewParent from WindowsViewParent
 	nButtonsFontSize	= 12
 
 	nWindowWidth		= 300
-	nWindowHeight		= 200
+	nWindowHeight		= 100
 
 	cssText    = "border:1px solid black;border-radius:7px;"
 
@@ -44,6 +44,8 @@ class ComponentViewParent from WindowsViewParent
 	*/
 	
 	func CenterTheWindow 
+		nWindowWidth		= win.width()
+		nWindowHeight		= win.height()
 		win.move((oDesktop.width()-nWindowWidth)/2,(oDesktop.height()-nWindowHeight)/2)
 		win.resize(nWindowWidth,nWindowHeight)
 
