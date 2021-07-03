@@ -16,6 +16,7 @@ if IsMainSourceFile() {
 
 class quickmsgController from windowsControllerParent
 
+
 	oView = new quickmsgView
 	cMessage = "Loading..."
 
@@ -27,7 +28,8 @@ class quickmsgController from windowsControllerParent
 	func setText cText 
 		cMessage = cText
 		oView.oMsg.setText(cMessage)	
-		oView.win.move((oDesktop.width()-nWindowWidth)/2,(oDesktop.height()-nWindowHeight)/2)
+		CenterTheWindow()
+		RefreshTheWindow()
 
 	func Text 
 		return cMessage 
@@ -36,6 +38,10 @@ class quickmsgController from windowsControllerParent
 		nWindowWidth  = oView.win.width()
 		nWindowHeight = oView.win.height()
 		oView.win.move((oDesktop.width()-nWindowWidth)/2,(oDesktop.height()-nWindowHeight)/2)
+
+	func RefreshTheWindow 
+		oView.win.show()
+		PWCT_APP.processevents()
 
 	func RefreshSize 
 		oView.win.resize(nWindowWidth,nWindowHeight)
