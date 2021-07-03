@@ -188,7 +188,7 @@ class ComponentsBrowserController from WindowsControllerParent
 			# Avoid lower(cFind) to support upper/lower letters
 				cFind = trim(oView.oTextSearch.Text())
 			if lSearchResult {
-				cFind += " - [ " + aContent[:name] + " ]"
+				cFind += " --> [ " + aContent[:name] + " ]"
 			}
 			QuickMsg().setText(cFind)
 			QuickMsg().centerTheWindow()
@@ -200,6 +200,24 @@ class ComponentsBrowserController from WindowsControllerParent
 			oView.oTextSearch.activatewindow()
 			oView.oTextSearch.setFocus(7)
 		}
+
+
+	func isSearchFindComponent cFind 
+		lSearchResult = False 
+		aTree = oModel.GetData()
+		nMax = len(aTree) 
+		for x=2 to nMax {
+			item = aTree[x]
+			aContent = item[C_TREEMODEL_CONTENT]
+			cStepName = aContent[:name]
+			cStepName = lower(cStepName)
+			cFind = lower(cFind)
+			if left(cStepName,len(cFind)) = cFind {			
+				lSearchResult = True
+				return [lSearchResult,cFind + " --> [ " + aContent[:name] + " ]"]
+			}
+		}
+		return [lSearchResult,cFind]
 
 
 	/*

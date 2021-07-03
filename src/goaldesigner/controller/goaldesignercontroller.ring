@@ -1935,6 +1935,7 @@ class GoalDesignerController from WindowsControllerParent
 			oView.oStepsTree.setFocus(0)
 			return 
 		}
+		cFind = ComponentsBrowserWindow().isSearchFindComponent(cFind)[2]
 		ComponentsBrowserWindow().QuickMsg().setText(cFind)
 		ComponentsBrowserWindow().QuickMsg().centerTheWindow()
 		ComponentsBrowserWindow().QuickMsg().show()
