@@ -51,8 +51,23 @@ class quickmsgController from windowsControllerParent
 		oView.win.show()
 
 	func Hide 
-		oView.win.hide()
-		RefreshSize()
+		/*
+			We tried the next code to do correct hide 
+			And restore the original dimension of the window 
+			And the label (After we display multi-lines/large message)
+			But this doesn't work! (Maybe a Qt bug! in Layout Code)
+				cMessage = ""
+				oView.oMsg.setText("")	
+				oView.oMsg.resize(10,10)
+				nWindowWidth  = 650
+				nWindowHeight = 48
+				oView.win.resize(nWindowWidth,nWindowHeight)
+				PWCT_APP.processevents()
+				oView.win.hide()
+			So we decided to close the window and create another object
+		*/
+		oView.win.close()
+		oView = new quickmsgView
 
 	func CloseMsg
 		oView.win.close()
