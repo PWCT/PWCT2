@@ -139,11 +139,12 @@ class ComponentsBrowserController from WindowsControllerParent
 		# Because using Backspace key (In the Keyboard) and deleting large code 
 		# Could lead to crash because of this event code & Completer Popup code 
 		# To Test this past large code (Many Lines) then use backspace to delete each letter 
-		if ! NoCompleter() {
-			if oView.oTextSearch.completer().popup().isvisible() {
-				return 
+
+			if ! NoCompleter() {
+				if oView.oTextSearch.completer().popup().isvisible() {
+					return 
+				}
 			}
-		}
 
 		cFind = trim(oView.oTextSearch.Text())
 		aTree = oModel.GetData()
@@ -186,6 +187,9 @@ class ComponentsBrowserController from WindowsControllerParent
 		if lSpecialSearchWindow {
 			# Avoid lower(cFind) to support upper/lower letters
 				cFind = trim(oView.oTextSearch.Text())
+			if lSearchResult {
+				cFind += " - [ " + aContent[:name] + " ]"
+			}
 			QuickMsg().setText(cFind)
 			QuickMsg().centerTheWindow()
 			ShowRingCode()
