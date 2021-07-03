@@ -134,6 +134,17 @@ class ComponentsBrowserController from WindowsControllerParent
 	*/
 
 	func SearchAction
+
+		# Avoid this event when we have Completer Popup (Listbox)
+		# Because using Backspace key (In the Keyboard) and deleting large code 
+		# Could lead to crash because of this event code & Completer Popup code 
+		# To Test this past large code (Many Lines) then use backspace to delete each letter 
+		if ! NoCompleter() {
+			if oView.oTextSearch.completer().popup().isvisible() {
+				return 
+			}
+		}
+
 		cFind = trim(oView.oTextSearch.Text())
 		aTree = oModel.GetData()
 		if cFind = "" {
@@ -461,11 +472,22 @@ class ComponentsBrowserController from WindowsControllerParent
 
 	func ShowRingCode
 		QuickMsg().show()
-		# Support Auto-Complete 
+		# Support Auto-Complete
 			if lSupportAutoComplete {
-				parent().oAutoComplete.supportControlWithoutSettingItAsParent(parent(),oView.oTextSearch)
+				if NoCompleter() {
+					parent().oAutoComplete.supportControlWithoutSettingItAsParent(parent(),oView.oTextSearch)
+				else 
+					if  parent().oAutoComplete.CheckUsingAutoCompleteCache(parent()) {
+						oCompleter = oView.oTextSearch.completer()
+						oView.oTextSearch.setcompleter(NULL)
+						parent().oAutoComplete.supportControlWithoutSettingItAsParent(parent(),oView.oTextSearch)
+						oCompleter.delete()
+					}
+				}
 			}
 
+	func NoCompleter 
+		return isNull(oView.oTextSearch.completer().pObject)
 
 	func HideRingCode
 		QuickMsg().hide()
