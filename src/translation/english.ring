@@ -237,6 +237,7 @@
 	T_SC_OPENINTERACTIONSINNEWWINDOWS = "Open interaction pages in new windows"
 	T_SC_SHOWTIMEMACHINE = "Show the Time Machine options"
 	T_SC_AVOIDCOMPONENTSBROWSERS = "Avoid Components Browser"
+	T_SC_AVOIDCOMPONENTSBROWSERSAUTOCOMPLETE = "Avoid Components Browser Auto-Complete"
 
 # Components Browser Window
 

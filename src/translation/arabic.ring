@@ -236,6 +236,7 @@
 	T_SC_OPENINTERACTIONSINNEWWINDOWS = "فتح الصفحات التفاعلية فى نوافذ مستقلة"
 	T_SC_SHOWTIMEMACHINE = "عرض خيارات الة الزمن"
 	T_SC_AVOIDCOMPONENTSBROWSERS = "تجنب متصفح المكونات"
+	T_SC_AVOIDCOMPONENTSBROWSERSAUTOCOMPLETE = "تجنب الإكمال التلقائي فى متصفح المكونات"
 
 # Components Browser Window
 

@@ -215,6 +215,11 @@ class StepsColorsView from WindowsViewParent
 			setChecked(C_STEPSTREE_AVOIDCOMPONENTSBROWSER)
 			setStateChangedEvent(Method(:AvoidComponentsBrowser))
 		} 
+		checkAvoidComponentsBrowserAutoComplete = new QCheckBox(win) {
+			setText(T_SC_AVOIDCOMPONENTSBROWSERSAUTOCOMPLETE) # "Avoid Components Browser Auto-Complete"
+			setChecked(C_STEPSTREE_AVOIDCOMPONENTSBROWSERAUTOCOMPLETE)
+			setStateChangedEvent(Method(:AvoidComponentsBrowserAC))
+		} 
 
 
 		btnClose = new qpushbutton(win) {
@@ -241,6 +246,7 @@ class StepsColorsView from WindowsViewParent
 			AddWidget(checkOpenInteractionsInNewWindows)
 			AddWidget(checkShowTimeMachine)
 			AddWidget(checkAvoidComponentsBrowser)
+			AddWidget(checkAvoidComponentsBrowserAutoComplete)
 			AddWidget(btnClose)
 			insertStretch( -1, 1 )
 		}

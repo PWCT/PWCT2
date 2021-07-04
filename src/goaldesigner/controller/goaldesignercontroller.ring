@@ -94,6 +94,9 @@ class GoalDesignerController from WindowsControllerParent
 	# Avoid the Components Browser 
 		lAvoidComponentsBrowser	= C_STEPSTREE_AVOIDCOMPONENTSBROWSER
 
+	# Avoid the Components Browser Auto Complete
+		lAvoidComponentsBrowserAutoComplete = C_STEPSTREE_AVOIDCOMPONENTSBROWSERAUTOCOMPLETE
+
 	# Enable/Disable saving History (For Undo operations)
 		lHistory = True
 

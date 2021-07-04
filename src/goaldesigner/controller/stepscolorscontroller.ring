@@ -107,3 +107,7 @@ class StepsColorsController from WindowsControllerParent
 	func AvoidComponentsBrowser
 		C_STEPSTREE_AVOIDCOMPONENTSBROWSER = oView.checkAvoidComponentsBrowser.checkState()
 		parent().lAvoidComponentsBrowser = C_STEPSTREE_AVOIDCOMPONENTSBROWSER
+
+	func AvoidComponentsBrowserAC
+		C_STEPSTREE_AVOIDCOMPONENTSBROWSERAUTOCOMPLETE = oView.checkAvoidComponentsBrowserAutoComplete.checkState()
+		parent().lAvoidComponentsBrowserAutoComplete = C_STEPSTREE_AVOIDCOMPONENTSBROWSERAUTOCOMPLETE
