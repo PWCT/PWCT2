@@ -501,7 +501,7 @@ class ComponentsBrowserController from WindowsControllerParent
 	func ShowRingCode
 		QuickMsg().show()
 		# Support Auto-Complete
-			if lSupportAutoComplete {
+			if lSupportAutoComplete and not parent().lAvoidComponentsBrowserAutoComplete{
 				if NoCompleter() {
 					parent().oAutoComplete.supportControlWithoutSettingItAsParent(parent(),oView.oTextSearch)
 				else 
@@ -512,6 +512,8 @@ class ComponentsBrowserController from WindowsControllerParent
 						oCompleter.delete()
 					}
 				}
+			else 
+				oView.oTextSearch.setcompleter(NULL)
 			}
 
 	func NoCompleter 
