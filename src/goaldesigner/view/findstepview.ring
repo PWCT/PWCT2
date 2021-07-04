@@ -104,6 +104,7 @@ class FindStepView from WindowsViewParent
 			}
 
 			setLayout(oLayout6)
+			resize(600,400)
 
 			setWindowTitle(T_GD_FS_FINDREPLACE)		
 			setwindowflags(Qt_CustomizeWindowHint | Qt_WindowTitleHint | Qt_WindowStaysOnTopHint) 
