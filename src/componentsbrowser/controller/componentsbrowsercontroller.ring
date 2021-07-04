@@ -173,7 +173,7 @@ class ComponentsBrowserController from WindowsControllerParent
 				oView.oComponentsTree.SetCurrentItem(oItem,0)
 				oView.oComponentsTree.ScrollToItem(oItem,0)	
 				lSearchResult = True
-				if ! lAlwaysShowSpecialWindow {
+				if (! lAlwaysShowSpecialWindow) and (! parent().lComponentsBrowserAlwaysShowSearchWindow) {
 					if lSpecialSearchWindow {
 						HideRingCode()
 					}

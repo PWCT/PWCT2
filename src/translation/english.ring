@@ -238,6 +238,7 @@
 	T_SC_SHOWTIMEMACHINE = "Show the Time Machine options"
 	T_SC_AVOIDCOMPONENTSBROWSERS = "Avoid Components Browser"
 	T_SC_AVOIDCOMPONENTSBROWSERSAUTOCOMPLETE = "Avoid Components Browser Auto-Complete"
+	T_SC_COMPONENTSBROWSERALWAYSSHOWSEARCHWINDOW = "Components Browser - Always Show Search Window"
 
 # Components Browser Window
 

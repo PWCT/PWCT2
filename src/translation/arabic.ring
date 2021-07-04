@@ -237,6 +237,7 @@
 	T_SC_SHOWTIMEMACHINE = "عرض خيارات الة الزمن"
 	T_SC_AVOIDCOMPONENTSBROWSERS = "تجنب متصفح المكونات"
 	T_SC_AVOIDCOMPONENTSBROWSERSAUTOCOMPLETE = "تجنب الإكمال التلقائي فى متصفح المكونات"
+	T_SC_COMPONENTSBROWSERALWAYSSHOWSEARCHWINDOW = "متصفح المكونات - دائما اظهر نافذة خاصة للبحث"
 
 # Components Browser Window
 

@@ -220,6 +220,11 @@ class StepsColorsView from WindowsViewParent
 			setChecked(C_STEPSTREE_AVOIDCOMPONENTSBROWSERAUTOCOMPLETE)
 			setStateChangedEvent(Method(:AvoidComponentsBrowserAC))
 		} 
+		checkComponentsBrowserAlwaysShowSearchWindow = new QCheckBox(win) {
+			setText(T_SC_COMPONENTSBROWSERALWAYSSHOWSEARCHWINDOW) # "Components Browser - Always Show Search Window"
+			setChecked(C_STEPSTREE_COMPONENTSBROWSERALWAYSSHOWSEARCHWINDOW)
+			setStateChangedEvent(Method(:ComponentsBrowserAShowSW))
+		} 
 
 
 		btnClose = new qpushbutton(win) {
@@ -247,6 +252,7 @@ class StepsColorsView from WindowsViewParent
 			AddWidget(checkShowTimeMachine)
 			AddWidget(checkAvoidComponentsBrowser)
 			AddWidget(checkAvoidComponentsBrowserAutoComplete)
+			AddWidget(checkComponentsBrowserAlwaysShowSearchWindow)
 			AddWidget(btnClose)
 			insertStretch( -1, 1 )
 		}
