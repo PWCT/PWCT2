@@ -278,7 +278,7 @@ class GoalDesignerView from WindowsViewParent
 				"; background-color: " + 
 				C_STEPSTREE_BACKCOLOR+
 				"; }" 
-		if C_STEPSTREE_SHOWLINES and (C_ENV_DEFAULT_STYLE <= C_ENV_STYLE_WHITEB) { 
+		if C_STEPSTREE_SHOWLINES { 
 			if PWCTIsMobile(:GoalDesignerStepsTreeLines) {
 				cStepsTreeStyle += "
 				QTreeWidget::branch:has-siblings:!adjoins-item {
@@ -324,6 +324,15 @@ class GoalDesignerView from WindowsViewParent
 				}
 				"
 			}
+
+			if  C_ENV_DEFAULT_STYLE = C_ENV_STYLE_BLACK {
+				cStepsTreeStyle = substr(cStepsTreeStyle,"stylesheet-branch-open","stylesheet-branch-open_v2")
+				cStepsTreeStyle = substr(cStepsTreeStyle,"stylesheet-branch-closed","stylesheet-branch-closed_v2")
+				cStepsTreeStyle = substr(cStepsTreeStyle,"stylesheet-branch-end","stylesheet-branch-end_v2")
+				cStepsTreeStyle = substr(cStepsTreeStyle,"stylesheet-branch-more","stylesheet-branch-more_v2")				
+				cStepsTreeStyle = substr(cStepsTreeStyle,"stylesheet-vline","stylesheet-vline_v2")				
+			}
+
 
 			if lUseArabic {
 				cStepsTreeStyle = substr(cStepsTreeStyle,"stylesheet-branch-closed","arstylesheet-branch-closed")
