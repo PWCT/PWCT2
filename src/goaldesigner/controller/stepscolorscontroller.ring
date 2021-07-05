@@ -115,3 +115,7 @@ class StepsColorsController from WindowsControllerParent
 	func ComponentsBrowserAShowSW
 		C_STEPSTREE_COMPONENTSBROWSERALWAYSSHOWSEARCHWINDOW = oView.checkComponentsBrowserAlwaysShowSearchWindow.checkState()
 		parent().lComponentsBrowserAlwaysShowSearchWindow = C_STEPSTREE_COMPONENTSBROWSERALWAYSSHOWSEARCHWINDOW
+
+	func LightTreeLines
+		C_STEPSTREE_LIGHTTREELINES = oView.checkLightTreeLines.checkState()
+		parent().refreshStepsTree()

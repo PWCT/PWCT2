@@ -225,7 +225,11 @@ class StepsColorsView from WindowsViewParent
 			setChecked(C_STEPSTREE_COMPONENTSBROWSERALWAYSSHOWSEARCHWINDOW)
 			setStateChangedEvent(Method(:ComponentsBrowserAShowSW))
 		} 
-
+		checkLightTreeLines = new QCheckBox(win) {
+			setText(T_SC_LIGHTTREELINES) # "Light Tree Lines"
+			setChecked(C_STEPSTREE_LIGHTTREELINES)
+			setStateChangedEvent(Method(:LightTreeLines))
+		} 
 
 		btnClose = new qpushbutton(win) {
 			setText(T_SC_CLOSE) # "Close"
@@ -253,6 +257,7 @@ class StepsColorsView from WindowsViewParent
 			AddWidget(checkAvoidComponentsBrowser)
 			AddWidget(checkAvoidComponentsBrowserAutoComplete)
 			AddWidget(checkComponentsBrowserAlwaysShowSearchWindow)
+			AddWidget(checkLightTreeLines)
 			AddWidget(btnClose)
 			insertStretch( -1, 1 )
 		}

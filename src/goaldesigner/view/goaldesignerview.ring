@@ -325,7 +325,7 @@ class GoalDesignerView from WindowsViewParent
 				"
 			}
 
-			if  C_ENV_DEFAULT_STYLE = C_ENV_STYLE_BLACK {
+			if  (C_ENV_DEFAULT_STYLE = C_ENV_STYLE_BLACK) or C_STEPSTREE_LIGHTTREELINES {
 				cStepsTreeStyle = substr(cStepsTreeStyle,"stylesheet-branch-open","stylesheet-branch-open_v2")
 				cStepsTreeStyle = substr(cStepsTreeStyle,"stylesheet-branch-closed","stylesheet-branch-closed_v2")
 				cStepsTreeStyle = substr(cStepsTreeStyle,"stylesheet-branch-end","stylesheet-branch-end_v2")
