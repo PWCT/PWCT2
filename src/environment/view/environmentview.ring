@@ -353,7 +353,14 @@ class EnvironmentView from WindowsViewParent
 						setclickEvent(Method("SetStyle(C_ENV_STYLE_BLACKB)"))
 						settext(T_ENV_MENU_STYLEFUSIONBLACKBLOCKS)  # "Fusion: Black Blocks"
 					}
-					addaction(oAction)						
+					addaction(oAction)
+					addseparator()
+					oAction = new qAction(win) {
+						setShortcut(new QKeySequence("Ctrl+shift+7"))
+						setclickEvent(Method("SetStyle(C_ENV_STYLE_BLUE)"))
+						settext(T_ENV_MENU_STYLEFUSIONBLUE)  # "Fusion: Blue"
+					}
+					addaction(oAction)							
 				}
 				if ! PWCTIsMobile(:SelectLanguage) {
 					addseparator()

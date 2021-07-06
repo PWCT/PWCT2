@@ -61,6 +61,7 @@
 	T_ENV_MENU_STYLEWINDOWSBLOCKS		= "ويندوز - أحجار"
 	T_ENV_MENU_STYLEFUSIONWHITEBLOCKS	= "عصر : أبيض - أحجار"
 	T_ENV_MENU_STYLEFUSIONBLACKBLOCKS 	= "عصري : أسود - أحجار"
+	T_ENV_MENU_STYLEFUSIONBLUE	= "عصري : أزرق"
 
 	T_ENV_MENU_LANGUAGE	= "اللغة"
 	T_ENV_MENU_LANG_ENGLISH	= "إنجليزي"

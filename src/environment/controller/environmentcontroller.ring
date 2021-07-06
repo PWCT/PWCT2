@@ -1226,8 +1226,11 @@ class EnvironmentController from WindowsControllerParent
 			on C_ENV_STYLE_BLACKB
 				StyleFusionBlack()
 				StyleColorBlocks()
-				C_COMPONENTSBROWSER_COLOR		= "white"
+				C_COMPONENTSBROWSER_COLOR = "white"
 				C_STEPSTREE_BACKCOLOR	= "white"
+			on C_ENV_STYLE_BLUE
+				StyleFusionBlue()
+				StyleColorBlue()
 		}
 		parent().ComponentsBrowserWindow().oView.oComponentsTree.TreeStyle()
 		parent().refreshStepsTree()
@@ -1281,6 +1284,44 @@ class EnvironmentController from WindowsControllerParent
 
 	func StyleFusionBlack
 		PWCT_APP.Stylefusionblack()
+		oView.oFilesTree.setStyleSheet("color:white;")
+
+	func StyleColorBlue
+		C_STEPCOLOR_COMMENT_TEXT = '#ffffff'
+		C_STEPCOLOR_COMMENT_BACKCOLOR = '#000084'
+		C_STEPCOLOR_ROOT_TEXT = '#ffffff'
+		C_STEPCOLOR_ROOT_BACKCOLOR = '#000084'
+		C_STEPCOLOR_ALLOWINTERACTION_TEXT = '#ffffff'
+		C_STEPCOLOR_ALLOWINTERACTION_BACKCOLOR = '#000084'
+		C_STEPCOLOR_INFO_TEXT = '#ffffff'
+		C_STEPCOLOR_INFO_BACKCOLOR = '#000084'
+		C_STEPCOLOR_DATA_TEXT = '#ffffff'
+		C_STEPCOLOR_DATA_BACKCOLOR = '#000084'
+		C_STEPSTREE_SELECTIONCOLOR = 'black'
+		C_STEPSTREE_SELECTIONBACKGROUND = 'cyan'
+		C_STEPSTREE_BACKCOLOR = '#000084'
+		C_STEPSTREE_SELECTIONCOLOR		= "white"
+		C_STEPSTREE_SELECTIONBACKGROUND		= "purple"
+		C_COMPONENTSBROWSER_COLOR		= "white"
+		C_INTERACTIONPAGE_TITLECOLOR		= "white"
+		C_INTERACTIONPAGE_TITLEBACKCOLOR	= "purple"
+	
+
+	func StyleFusionBlue 
+		PWCT_APP.StylefusionCustom(
+			new qColor() { setrgb(0,0,132,255) },
+			new qColor() { setrgb(255,255,255,255) },
+			new qColor() { setrgb(0,0,132,255) },
+			new qColor() { setrgb(0,0,132,255) },
+			new qColor() { setrgb(255,255,255,255) },
+			new qColor() { setrgb(255,255,255,255) },
+			new qColor() { setrgb(255,255,255,255) },
+			new qColor() { setrgb(0,0,132,255) },
+			new qColor() { setrgb(255,255,255,255) },
+			new qColor() { setrgb(255,0,0,255) },
+			new qColor() { setrgb(0,0,100,255) },
+			new qColor() { setrgb(255,255,255,255)}
+		)
 		oView.oFilesTree.setStyleSheet("color:white;")
 
 	func StyleColorBlack
