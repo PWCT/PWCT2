@@ -62,7 +62,7 @@ class StepsTreeView from TreeControl
 		oLabel = new qLabel(self) {
 			resize(100,30)
 			settext(this.oStyle.image(C_LABELIMAGE_NODEICON)+
-				 this.oStyle.text(this.cStartPointText,"green",""))
+				 this.oStyle.text(this.cStartPointText,C_STEPCOLOR_STARTPOINT,""))
 			this.SetLabelFont(oLabel)
 		}
 		setItemWidget(oFirstStep,0, oLabel)	

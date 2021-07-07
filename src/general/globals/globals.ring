@@ -70,6 +70,7 @@
 	C_STEPTYPE_INFO	 			= 4
 
 # Steps Colors 
+	C_STEPCOLOR_STARTPOINT			= "green"
 	C_STEPCOLOR_COMMENT_TEXT 		= "green"
 	C_STEPCOLOR_COMMENT_BACKCOLOR 		= ""
 	C_STEPCOLOR_ROOT_TEXT 			= "blue"
