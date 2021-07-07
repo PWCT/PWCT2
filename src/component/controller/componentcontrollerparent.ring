@@ -277,6 +277,15 @@ Class ComponentControllerParent from WindowsControllerParent
 	func ContainsSyntaxError cCode 
 		return ! CheckRingCodeSyntax(cCode)
 
+	func checkSyntaxInVariables aList 
+		for cVar in aList {
+			if ContainsSyntaxError(Variable(cVar)) { 
+				msginfo(T_CT_SYNTAXERROR,Variable(cVar))
+				return false
+			}
+		}
+		return True 
+
 
 	/*
 		Purpose : Execute the Ok button action
