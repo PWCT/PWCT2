@@ -1208,36 +1208,43 @@ class EnvironmentController from WindowsControllerParent
 				StyleColorWhite()		
 				C_STEPSTREE_BACKCOLOR	= "white"
 				C_STEPCOLOR_STARTPOINT  = "green"
+				C_STEPSTREE_LIGHTTREELINES = 0
 			on C_ENV_STYLE_WINDOWSB
 				StyleWindows()	
 				StyleColorBlocks()		
 				C_STEPSTREE_BACKCOLOR	= "white"
 				C_STEPCOLOR_STARTPOINT  = "green"
+				C_STEPSTREE_LIGHTTREELINES = 0
 			on C_ENV_STYLE_WHITE
 				StyleFusionWhite()
 				StyleColorWhite()
 				C_STEPSTREE_BACKCOLOR	= "white"
 				C_STEPCOLOR_STARTPOINT  = "green"
+				C_STEPSTREE_LIGHTTREELINES = 0
 			on C_ENV_STYLE_WHITEB
 				StyleFusionWhite()
 				StyleColorBlocks()
 				C_STEPSTREE_BACKCOLOR	= "white"
 				C_STEPCOLOR_STARTPOINT  = "green"
+				C_STEPSTREE_LIGHTTREELINES = 0
 			on C_ENV_STYLE_BLACK
 				StyleFusionBlack()
 				StyleColorBlack()
 				C_STEPSTREE_BACKCOLOR	= "black"
 				C_STEPCOLOR_STARTPOINT  = "white"
+				C_STEPSTREE_LIGHTTREELINES = 2
 			on C_ENV_STYLE_BLACKB
 				StyleFusionBlack()
 				StyleColorBlocks()
 				C_COMPONENTSBROWSER_COLOR = "white"
 				C_STEPSTREE_BACKCOLOR	= "white"
 				C_STEPCOLOR_STARTPOINT  = "green"
+				C_STEPSTREE_LIGHTTREELINES = 0
 			on C_ENV_STYLE_BLUE
 				StyleFusionBlue()
 				StyleColorBlue()
 				C_STEPCOLOR_STARTPOINT  = "white"
+				C_STEPSTREE_LIGHTTREELINES = 2
 		}
 		parent().ComponentsBrowserWindow().oView.oComponentsTree.TreeStyle()
 		parent().refreshStepsTree()
