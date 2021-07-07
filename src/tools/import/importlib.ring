@@ -53,3 +53,20 @@ func RingCode2PWCT cCode
 		aOutput[:InteractionsID] = GetInteractionsID()		
 	}
 	return aOutput
+
+
+func CheckRingCodeSyntax cCode 
+	aOutput = []
+	oScanner = new Scanner {
+		setCode(cCode)
+		if ! Start() {
+			return False
+		}
+	}
+	oParser = new Parser {
+		lOnErrorShutDown = False
+		lOnErrorPrintMsg = False
+		setTokens(oScanner.GetTokens())
+		lOutput = start()
+	}
+	return lOutput 
