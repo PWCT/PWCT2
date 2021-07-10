@@ -2013,6 +2013,18 @@ class GoalDesignerController from WindowsControllerParent
 			   substr(cFunctionName,"(") {
 				return 
 			}
+		# Select the Step (Methods) as parent 
+			aTree = oModel.oStepsTreeModel.GetData()
+			for item in aTree {
+				aContent = item[C_TREEMODEL_CONTENT]
+				cStepName = aContent[:name]
+				cStepName = trim(oModel.RemoveTags(cStepName))
+				if lower(cStepName) = "methods" {
+					oItem = oView.oStepsTree.GetObjByID(item[C_TREEMODEL_NODEID])
+					oView.oStepsTree.SetCurrentItem(oItem,0)				
+					exit
+				}
+			}	
 		# Create the Event Code
 			cStr = WindowsNL() + 
 				Tab + "func " + cFunctionName + WindowsNL() +
