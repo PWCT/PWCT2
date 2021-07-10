@@ -1991,3 +1991,6 @@ class GoalDesignerController from WindowsControllerParent
 	func GotoLine 
 		Open_Window(:GotoLineController)
 		Last_Window().setParentObject(self)
+
+
+	func NewEventName cFunctionName

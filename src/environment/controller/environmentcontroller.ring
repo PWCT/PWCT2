@@ -1414,3 +1414,6 @@ class EnvironmentController from WindowsControllerParent
 
 	func GotoLineAction
 		parent().GoToLine()
+
+	func NewEventName cFunctionName
+		parent().newEventName(cFunctionName)
