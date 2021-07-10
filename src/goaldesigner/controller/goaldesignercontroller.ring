@@ -1992,5 +1992,31 @@ class GoalDesignerController from WindowsControllerParent
 		Open_Window(:GotoLineController)
 		Last_Window().setParentObject(self)
 
+	/*
+		Create Event Methods Automatically 
+		After adding the event in the form designer 
+	*/
 
 	func NewEventName cFunctionName
+		cFunctionName = trim(cFunctionName)
+		# Be sure that we have saved form file 
+			if parent().FormDesigner().ActiveFileName() = "" { return }
+		# Be sure that the Controller class source code is opened
+			if oVisualSourceFile.cFileName != substr(parent().FormDesigner().ActiveFileName(),".rform","Controller.pwct") {
+				return 
+			}
+		# Be sure that the event code doesn't contains (, ', ", ` and spaces
+			if substr(cFunctionName," ") or 			
+			   substr(cFunctionName,"'") or 
+			   substr(cFunctionName,'"') or 
+			   substr(cFunctionName,"`") or 
+			   substr(cFunctionName,"(") {
+				return 
+			}
+		# Create the Event Code
+			cStr = WindowsNL() + 
+				Tab + "func " + cFunctionName + WindowsNL() +
+				Tab + Tab + "oView {" + WindowsNL() +
+				Tab + Tab + Tab + WindowsNL() + 
+					Tab + Tab + "}" + WindowsNL()
+		ComponentsBrowserWindow().TextualCodeToVisualCode(cStr)
