@@ -1993,6 +1993,22 @@ class GoalDesignerController from WindowsControllerParent
 		Last_Window().setParentObject(self)
 
 	/*
+		Select step using the Step Name
+	*/
+	func SelectStepByName cName
+		aTree = oModel.oStepsTreeModel.GetData()
+		for item in aTree {
+			aContent = item[C_TREEMODEL_CONTENT]
+			cStepName = aContent[:name]
+			cStepName = trim(oModel.RemoveTags(cStepName))
+			if cStepName = cName {
+				oItem = oView.oStepsTree.GetObjByID(item[C_TREEMODEL_NODEID])
+				oView.oStepsTree.SetCurrentItem(oItem,0)				
+				exit
+			}
+		}	
+
+	/*
 		Create Event Methods Automatically 
 		After adding the event in the form designer 
 	*/
@@ -2014,17 +2030,7 @@ class GoalDesignerController from WindowsControllerParent
 				return 
 			}
 		# Select the Step (Methods) as parent 
-			aTree = oModel.oStepsTreeModel.GetData()
-			for item in aTree {
-				aContent = item[C_TREEMODEL_CONTENT]
-				cStepName = aContent[:name]
-				cStepName = trim(oModel.RemoveTags(cStepName))
-				if lower(cStepName) = "methods" {
-					oItem = oView.oStepsTree.GetObjByID(item[C_TREEMODEL_NODEID])
-					oView.oStepsTree.SetCurrentItem(oItem,0)				
-					exit
-				}
-			}	
+			 SelectStepByName("Methods")
 		# Create the Event Code
 			cStr = WindowsNL() + 
 				Tab + "func " + cFunctionName + WindowsNL() +
