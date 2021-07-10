@@ -16,11 +16,14 @@
 		GetActiveFolder() 		
 		OpenFile(cControllerFile)	
 		ClearActiveFormFile() 	
-	see : formdesigner/codegenerator.ring 
+	See : formdesigner/codegenerator.ring 
 		GenerateControllerClass()
-	
+	See : formdesigner/mainwindow/formdesignerController.ring 
+		NewEventName(cFunctionName)	
+
 	The Parent Application can use the next methods in the Form Designer 
 		OpenFile(cFormFileName)
+		ActiveFileName() --> cFormFileName
 		SaveIfOnlyFileIsOpened()
 
 */
