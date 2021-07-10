@@ -1316,7 +1316,7 @@ class EnvironmentController from WindowsControllerParent
 		C_STEPSTREE_SELECTIONBACKGROUND		= "purple"
 		C_COMPONENTSBROWSER_COLOR		= "white"
 		C_INTERACTIONPAGE_TITLECOLOR		= "white"
-		C_INTERACTIONPAGE_TITLEBACKCOLOR	= "purple"
+		C_INTERACTIONPAGE_TITLEBACKCOLOR	= "#000064"
 	
 
 	func StyleFusionBlue 
