@@ -277,11 +277,18 @@ Class ComponentControllerParent from WindowsControllerParent
 		}
 		return True
 
+	func CheckEmptyValues
+		return True
+
 	func BeforeOkAction 
-		return checkSyntax()
+		if not checkSyntax() { return False }
+		if not checkEmptyValues() { return False }
+		return True 
 
 	func BeforeAgainAction
-		return checkSyntax()
+		if not checkSyntax() { return False }
+		if not checkEmptyValues() { return False }
+		return True
 
 	func ContainsSyntaxError cCode 
 		return ! CheckRingCodeSyntax(cCode)
