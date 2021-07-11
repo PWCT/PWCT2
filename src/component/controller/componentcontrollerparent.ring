@@ -278,6 +278,15 @@ Class ComponentControllerParent from WindowsControllerParent
 		return True
 
 	func CheckEmptyValues
+		for aItem in oView.aVariables {
+			if aItem[C_INTERACTION_VL_TYPE] = C_INTERACTION_CT_TEXTBOX {
+				cVar = aItem[C_INTERACTION_VL_NAME]
+				if NoValue(cVar) {
+					msginfo(T_CT_SORRY,T_CT_ENTERREQUIREDDATA)
+					return False
+				}
+			}
+		}		
 		return True
 
 	func BeforeOkAction 
