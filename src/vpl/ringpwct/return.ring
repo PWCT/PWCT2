@@ -9,6 +9,8 @@ Class ReturnComponentController from ComponentControllerParent
 
 	oView = new ReturnComponentView
 
+	aAllowEmptyValue = [:value]
+
 	func GenerateAction 
 								
 		NewParentStep(T_CT_RETURN_ST_RETURN + StyleData(Variable(:value) )  )  
