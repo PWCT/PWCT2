@@ -9,6 +9,8 @@ class classComponentController from ComponentControllerParent
 
 	oView = new classComponentView
 
+	aAllowEmptyValue = [:value2]
+
 	func GenerateAction 
 
 		if Variable(:value2) = NULL {
