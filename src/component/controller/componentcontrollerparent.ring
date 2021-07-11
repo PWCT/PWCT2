@@ -284,7 +284,8 @@ Class ComponentControllerParent from WindowsControllerParent
 
 	func CheckEmptyValues
 		for aItem in oView.aVariables {
-			if aItem[C_INTERACTION_VL_TYPE] = C_INTERACTION_CT_TEXTBOX {
+			if aItem[C_INTERACTION_VL_TYPE] = C_INTERACTION_CT_TEXTBOX or 
+			   aItem[C_INTERACTION_VL_TYPE] = C_INTERACTION_CT_EDITBOX {
 				cVar = aItem[C_INTERACTION_VL_NAME]
 				if NoValue(cVar) {
 					if not find(aAllowEmptyValue,cVar) {
