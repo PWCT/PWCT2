@@ -13,6 +13,12 @@ Class PrintComponentController from ComponentControllerParent
 
 	func GenerateAction 
 
+		if Variable(:type) = 2  {
+			if NoValueMsg(:Text) {
+				return False
+			}
+		}
+
 		if Variable(:NewLine) {
 			cCommand = "? "
 			cNewLineText = T_CT_PRINT_ST_NEWLINE 
