@@ -14,9 +14,15 @@ Class FuncComponentController from ComponentControllerParent
 	func GenerateAction 
 								
 		if NoValueMsg(:name) { return False }
-
 		if Variable(:lParameters) {
 			if NoValueMsg(:parameters) { return False }
+		}
+		if Variable(:lOutput) {
+			if NoValueMsg(:Output) { return False }
+		}
+
+		if Variable(:lParameters) {
+
 			NewParentStep(T_CT_FUNC_ST_FUNC + StepData(:name) + 
 						" " + StepData(:Parameters) )  
 			SetStepCode("func " +  Variable(:name) + 
@@ -31,7 +37,6 @@ Class FuncComponentController from ComponentControllerParent
 			oStep = GetActiveStep()
 
 		if Variable(:lOutput) {
-			if NoValueMsg(:Output) { return False }
 			NewStep(T_CT_FUNC_ST_ENDOFFUNC + " --> " + StepData(:Output) )
 			SetStepCode("return " +  Variable(:Output))
 		else 
