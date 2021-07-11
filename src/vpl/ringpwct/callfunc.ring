@@ -18,8 +18,10 @@ Class CallFuncComponentController from ComponentControllerParent
 		if Variable(:lParameters) {
 			if NoValueMsg(:parameters) { return False }
 			cParameters = Variable(:Parameters)
+			cParametersData = StepData(:Parameters)
 		else 
 			cParameters = ""
+			cParametersData = ""
 		}
 
 		if Variable(:lOutput) {
@@ -36,10 +38,10 @@ Class CallFuncComponentController from ComponentControllerParent
 		}
 
 		NewStep(T_CT_CALLFUNC_ST_CALLFUNC + cOutputEqual + Variable(:Name) + 
-				T_CT_CALLFUNC_ST_FUNCCALLSTART + StepData(:Parameters) + 
+				T_CT_CALLFUNC_ST_FUNCCALLSTART + cParametersData + 
 				T_CT_CALLFUNC_ST_FUNCCALLEND )
 		SetStepCode(cOutputEqual + Variable(:Name) + 
-				"(" + Variable(:Parameters) + ")")
+				"(" + cParameters + ")")
 
 		return True 
 
