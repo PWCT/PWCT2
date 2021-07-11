@@ -9,6 +9,8 @@ Class CallMethodComponentController from ComponentControllerParent
 
 	oView = new CallMethodComponentView
 
+	aAllowEmptyValue = [:parameters,:output]
+
 	func GenerateAction 
 
 		cObject = ""
@@ -16,17 +18,15 @@ Class CallMethodComponentController from ComponentControllerParent
 			cObject = variable(:object) + "."
 		}
 								
-		if NoValueMsg(:name) { return False }
-
 		if Variable(:lParameters) {
-			if NoValueMsg(:parameters) { return False }
 			cParameters = Variable(:Parameters)
+			cParametersData = StepData(:Parameters)
 		else 
 			cParameters = ""
+			cParametersData = ""
 		}
 
 		if Variable(:lOutput) {
-			if NoValueMsg(:Output) { return False }
 			cOutput = Variable(:Output)
 		else 
 			cOutput = ""
@@ -39,10 +39,10 @@ Class CallMethodComponentController from ComponentControllerParent
 		}
 
 		NewStep(T_CT_CALLMETHOD_ST_CALLMETHOD + cOutputEqual + cObject + Variable(:Name) + 
-				T_CT_CALLMETHOD_ST_CALLSTART + StepData(:Parameters) + 
+				T_CT_CALLMETHOD_ST_CALLSTART + cParametersData + 
 				T_CT_CALLMETHOD_ST_CALLEND )
 		SetStepCode(cOutputEqual + cObject + Variable(:Name) + 
-				"(" + Variable(:Parameters) + ")")
+				"(" + cParameters + ")")
 
 		return True 
 
