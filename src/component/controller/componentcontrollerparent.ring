@@ -271,7 +271,10 @@ Class ComponentControllerParent from WindowsControllerParent
 		for aItem in oView.aVariables {
 			if aItem[C_INTERACTION_VL_TYPE] = C_INTERACTION_CT_TEXTBOX {
 				cVar = aItem[C_INTERACTION_VL_NAME]
-				if ContainsSyntaxError(Variable(cVar)) { 
+				cValue = Variable(cVar)
+				# Replace comma (like x,y) with (x+y)
+					cValue = substr(cValue,',','+')
+				if ContainsSyntaxError(cValue) { 
 					msginfo(T_CT_SYNTAXERROR,Variable(cVar))
 					return false
 				}
