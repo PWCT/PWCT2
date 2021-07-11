@@ -9,6 +9,8 @@ Class PrintComponentController from ComponentControllerParent
 
 	oView = new PrintComponentView
 
+	aAllowEmptyValue = [:text]
+
 	func GenerateAction 
 
 		if Variable(:NewLine) {
