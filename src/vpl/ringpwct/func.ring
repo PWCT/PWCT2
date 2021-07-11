@@ -9,6 +9,8 @@ Class FuncComponentController from ComponentControllerParent
 
 	oView = new FuncComponentView
 
+	aAllowEmptyValue = [:Parameters,:Output]
+
 	func GenerateAction 
 								
 		if NoValueMsg(:name) { return False }
