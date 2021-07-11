@@ -30,6 +30,8 @@ Class ComponentControllerParent from WindowsControllerParent
 	lDisplayTimeProblem	= False 
 
 
+	aAllowEmptyValue	= []	# List of interaction page variables that could be empty 
+
 	/*
 		Purpose : Create a Step as parent to other steps
 		Parameters : The Step Name as string 
@@ -282,8 +284,10 @@ Class ComponentControllerParent from WindowsControllerParent
 			if aItem[C_INTERACTION_VL_TYPE] = C_INTERACTION_CT_TEXTBOX {
 				cVar = aItem[C_INTERACTION_VL_NAME]
 				if NoValue(cVar) {
-					msginfo(T_CT_SORRY,T_CT_ENTERREQUIREDDATA)
-					return False
+					if not find(aAllowEmptyValue,cVar) {
+						msginfo(T_CT_SORRY,T_CT_ENTERREQUIREDDATA)
+						return False
+					}
 				}
 			}
 		}		
