@@ -266,6 +266,15 @@ Class ComponentControllerParent from WindowsControllerParent
 	*/
 
 	func CheckSyntax
+		for aItem in oView.aVariables {
+			if aItem[C_INTERACTION_VL_TYPE] = C_INTERACTION_CT_TEXTBOX {
+				cVar = aItem[C_INTERACTION_VL_NAME]
+				if ContainsSyntaxError(Variable(cVar)) { 
+					msginfo(T_CT_SYNTAXERROR,Variable(cVar))
+					return false
+				}
+			}
+		}
 		return True
 
 	func BeforeOkAction 
