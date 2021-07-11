@@ -269,7 +269,8 @@ Class ComponentControllerParent from WindowsControllerParent
 
 	func CheckSyntax
 		for aItem in oView.aVariables {
-			if aItem[C_INTERACTION_VL_TYPE] = C_INTERACTION_CT_TEXTBOX {
+			if aItem[C_INTERACTION_VL_TYPE] = C_INTERACTION_CT_TEXTBOX or 
+			   aItem[C_INTERACTION_VL_TYPE] = C_INTERACTION_CT_EDITBOX {
 				cVar = aItem[C_INTERACTION_VL_NAME]
 				cValue = Variable(cVar)
 				# Replace comma (like x,y) with (x+y)
