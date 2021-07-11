@@ -9,6 +9,8 @@ class newobjComponentController from ComponentControllerParent
 
 	oView = new newobjComponentView
 
+	aAllowEmptyValue = [:value,:value3]
+
 	func GenerateAction 
 
 		cInit = ""
