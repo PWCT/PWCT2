@@ -9,6 +9,8 @@ class nestedfuncComponentController from ComponentControllerParent
 
 	oView = new nestedfuncComponentView
 
+	aAllowEmptyValue = [:value2]
+
 	func GenerateAction 
 
 		NewParentStep( StepData(:value) + " = " + T_CT_ANONFUNC_ST_FUNC + StepData(:value2)   )

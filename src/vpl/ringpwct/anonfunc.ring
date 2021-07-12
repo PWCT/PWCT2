@@ -9,6 +9,8 @@ class anonfuncComponentController from ComponentControllerParent
 
 	oView = new anonfuncComponentView
 
+	aAllowEmptyValue = [:value]
+
 	func GenerateAction 
 
 		NewParentStep( T_CT_ANONFUNC_ST_FUNC + StepData(:value)   )
