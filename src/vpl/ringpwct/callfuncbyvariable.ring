@@ -9,15 +9,17 @@ Class CallFuncByVariableComponentController from ComponentControllerParent
 
 	oView = new CallFuncByVariableComponentView
 
+	aAllowEmptyValue = [:Parameters,:Output]
+
 	func GenerateAction 
 								
-		if NoValueMsg(:name) { return False }
-
 		if Variable(:lParameters) {
 			if NoValueMsg(:parameters) { return False }
 			cParameters = Variable(:Parameters)
+			cParametersData = StepData(:Parameters)
 		else 
 			cParameters = ""
+			cParametersData = ""
 		}
 
 		if Variable(:lOutput) {
@@ -34,9 +36,9 @@ Class CallFuncByVariableComponentController from ComponentControllerParent
 		}
 
 		NewStep(cOutputEqual + T_CT_CALLFUNCBYVARIABLE_ST_CALL + Variable(:Name) + 
-				"(" + StepData(:Parameters) + ")" )
+				"(" + cParametersData + ")" )
 		SetStepCode(cOutputEqual + "call " + Variable(:Name) + 
-				"(" + Variable(:Parameters) + ")")
+				"(" + cParameters + ")")
 
 		return True 
 
