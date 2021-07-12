@@ -9,6 +9,8 @@ class sqliteclassComponentController from ComponentControllerParent
 
 	oView = new sqliteclassComponentView
 
+	aAllowEmptyValue = [:value3,:value4]
+
 	func GenerateAction 
 
 		 

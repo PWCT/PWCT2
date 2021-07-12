@@ -9,6 +9,8 @@ class qframeclassComponentController from ComponentControllerParent
 
 	oView = new qframeclassComponentView
 
+	aAllowEmptyValue = [:value3,:value4]
+
 	func GenerateAction 
 
 		 

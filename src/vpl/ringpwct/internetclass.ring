@@ -9,6 +9,8 @@ class internetclassComponentController from ComponentControllerParent
 
 	oView = new internetclassComponentView
 
+	aAllowEmptyValue = [:value3,:value4]
+
 	func GenerateAction 
 
 		 

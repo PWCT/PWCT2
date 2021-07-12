@@ -9,6 +9,8 @@ class qlineeditclassComponentController from ComponentControllerParent
 
 	oView = new qlineeditclassComponentView
 
+	aAllowEmptyValue = [:value3,:value4]
+
 	func GenerateAction 
 
 		

@@ -9,6 +9,8 @@ class refmeta_ispackageclassComponentController from ComponentControllerParent
 
 	oView = new refmeta_ispackageclassComponentView
 
+	aAllowEmptyValue = [:value3,:value4]
+
 	func GenerateAction 
 
 		NewStep( StepData(:Value3) + " = "  +  T_CT_REFMETA_ISPACKAGECLASS_ST_VALUE  + StepData(:Value ) +  T_CT_REFMETA_ISPACKAGECLASS_ST_VALUE2 + StepData(:Value2)  )

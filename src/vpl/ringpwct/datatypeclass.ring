@@ -9,6 +9,8 @@ class datatypeclassComponentController from ComponentControllerParent
 
 	oView = new datatypeclassComponentView
 
+	aAllowEmptyValue = [:value3,:value4]
+
 	func GenerateAction 
 
 		 

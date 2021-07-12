@@ -9,6 +9,8 @@ class qstatusbarclassComponentController from ComponentControllerParent
 
 	oView = new qstatusbarclassComponentView
 
+	aAllowEmptyValue = [:value3,:value4]
+
 	func GenerateAction 
 
 		 

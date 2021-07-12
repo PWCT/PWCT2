@@ -9,6 +9,8 @@ class qdialsliderclassComponentController from ComponentControllerParent
 
 	oView = new qdialsliderclassComponentView
 
+	aAllowEmptyValue = [:value3,:value4]
+
 	func GenerateAction 
 
 		

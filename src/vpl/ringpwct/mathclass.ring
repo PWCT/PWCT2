@@ -9,6 +9,8 @@ class mathclassComponentController from ComponentControllerParent
 
 	oView = new mathclassComponentView
 
+	aAllowEmptyValue = [:value3,:value4]
+
 	func GenerateAction 
 
 		 

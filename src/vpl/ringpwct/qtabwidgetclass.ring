@@ -9,6 +9,8 @@ class qtabwidgetclassComponentController from ComponentControllerParent
 
 	oView = new qtabwidgetclassComponentView
 
+	aAllowEmptyValue = [:value3,:value4]
+
 	func GenerateAction 
 
 		 

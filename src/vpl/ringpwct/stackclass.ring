@@ -9,6 +9,8 @@ class stackclassComponentController from ComponentControllerParent
 
 	oView = new stackclassComponentView
 
+	aAllowEmptyValue = [:value3,:value4]
+
 	func GenerateAction 
 
 		

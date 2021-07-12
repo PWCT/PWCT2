@@ -9,6 +9,8 @@ class qtreewidgetclassComponentController from ComponentControllerParent
 
 	oView = new qtreewidgetclassComponentView
 
+	aAllowEmptyValue = [:value3,:value4]
+
 	func GenerateAction 
 
 		

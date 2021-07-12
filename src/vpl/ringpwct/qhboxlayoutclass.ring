@@ -9,6 +9,8 @@ class qhboxlayoutClassComponentController from ComponentControllerParent
 
 	oView = new qhboxlayoutClassComponentView
 
+	aAllowEmptyValue = [:value3,:value4]
+
 	func GenerateAction 
 
 		

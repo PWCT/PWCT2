@@ -9,6 +9,8 @@ class hashtableclassComponentController from ComponentControllerParent
 
 	oView = new hashtableclassComponentView
 
+	aAllowEmptyValue = [:value3,:value4]
+
 	func GenerateAction 
 
 		 

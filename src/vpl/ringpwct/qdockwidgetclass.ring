@@ -9,6 +9,8 @@ class qdockwidgetclassComponentController from ComponentControllerParent
 
 	oView = new qdockwidgetclassComponentView
 
+	aAllowEmptyValue = [:value3,:value4]
+
 	func GenerateAction 
 
 		

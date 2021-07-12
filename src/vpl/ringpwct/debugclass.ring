@@ -9,6 +9,8 @@ class debugclassComponentController from ComponentControllerParent
 
 	oView = new debugclassComponentView
 
+	aAllowEmptyValue = [:value3,:value4]
+
 	func GenerateAction 
 
 		 

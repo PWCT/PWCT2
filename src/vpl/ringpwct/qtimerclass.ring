@@ -9,6 +9,8 @@ class qtimerclassComponentController from ComponentControllerParent
 
 	oView = new qtimerclassComponentView
 
+	aAllowEmptyValue = [:value3,:value4]
+
 	func GenerateAction 
 
 		

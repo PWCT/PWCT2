@@ -9,6 +9,8 @@ class qlistwidgetclassComponentController from ComponentControllerParent
 
 	oView = new qlistwidgetclassComponentView
 
+	aAllowEmptyValue = [:value3,:value4]
+
 	func GenerateAction 
 
 		

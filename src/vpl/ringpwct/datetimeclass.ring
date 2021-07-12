@@ -9,6 +9,8 @@ class datetimeclassComponentController from ComponentControllerParent
 
 	oView = new datetimeclassComponentView
 
+	aAllowEmptyValue = [:value3,:value4]
+
 	func GenerateAction 
 
 		 

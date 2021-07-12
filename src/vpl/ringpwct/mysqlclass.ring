@@ -9,6 +9,8 @@ class mysqlclassComponentController from ComponentControllerParent
 
 	oView = new mysqlclassComponentView
 
+	aAllowEmptyValue = [:value3,:value4]
+
 	func GenerateAction 
 
 		 

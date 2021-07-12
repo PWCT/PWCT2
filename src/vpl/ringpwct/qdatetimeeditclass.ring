@@ -9,6 +9,8 @@ class qdatetimeeditclassComponentController from ComponentControllerParent
 
 	oView = new qdatetimeeditclassComponentView
 
+	aAllowEmptyValue = [:value3,:value4]
+
 	func GenerateAction 
 
 		

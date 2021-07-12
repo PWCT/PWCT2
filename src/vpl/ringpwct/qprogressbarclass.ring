@@ -9,6 +9,8 @@ class qprogressbarclassComponentController from ComponentControllerParent
 
 	oView = new qprogressbarclassComponentView
 
+	aAllowEmptyValue = [:value3,:value4]
+
 	func GenerateAction 
 
 		

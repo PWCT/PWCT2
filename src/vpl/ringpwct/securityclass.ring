@@ -9,6 +9,8 @@ class securityclassComponentController from ComponentControllerParent
 
 	oView = new securityclassComponentView
 
+	aAllowEmptyValue = [:value3,:value4]
+
 	func GenerateAction 
 
 		 
