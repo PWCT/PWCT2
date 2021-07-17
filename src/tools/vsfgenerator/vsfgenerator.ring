@@ -441,7 +441,8 @@ class VSFGenerator
 		# Use the Interaction Page
 			nIID = UseComponent("class",[
 				:value 	= cClassName,
-				:value2 = cParentClassName
+				:value2 = cParentClassName,
+				:value3 = 2
 			])
 		# Generate the Step and the Code
 			nStepNumber = 1
