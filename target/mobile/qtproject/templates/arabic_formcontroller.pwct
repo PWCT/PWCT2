@@ -1,3 +1,10 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'English'
+nStepsID                 = 50		
+nInteractionsID          = 23
 
 aStepsTable = [
 	[
@@ -500,7 +507,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				" الفئة <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">filename_Controller</font></span> من <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">WindowsControllerParent</font></span>"
+				" Class <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">filename_Controller</font></span> from <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">WindowsControllerParent</font></span>"
 			],
 			[
 				"active",
@@ -528,7 +535,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				" Class sayHelloController from WindowsParentController"
+				" Class filename_Controller from WindowsControllerParent"
 			]
 		]
 	],
@@ -538,7 +545,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				" الخصائص "
+				" Attributes "
 			],
 			[
 				"active",
@@ -614,7 +621,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				" الدوال "
+				" Methods "
 			],
 			[
 				"active",
@@ -643,162 +650,11 @@ aStepsTable = [
 			[
 				"plainname",
 				" Methods "
-			]
-		]
-	],
-	[
-		17,
-		14,
-		[
-			[
-				"name",
-				" خاص "
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"private"
-			],
-			[
-				"interactionid",
-				9
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				4
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				" Private "
-			]
-		]
-	],
-	[
-		18,
-		17,
-		[
-			[
-				"name",
-				" الخصائص "
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				9
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				5
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				" Attributes "
-			]
-		]
-	],
-	[
-		19,
-		17,
-		[
-			[
-				"name",
-				" الدوال "
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				9
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				6
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				" Methods "
-			]
-		]
-	],
-	[
-		20,
-		14,
-		[
-			[
-				"name",
-				" نهاية الفئة "
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				9
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				7
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				" End of class "
 			]
 		]
 	]
 ]
+
 aInteractionsTable = [
 	[
 		1,
@@ -870,7 +726,7 @@ aInteractionsTable = [
 		"class",
 		"16/02/2018",
 		"12:39:13",
-		"value;;_RV_;;filename_Controller;;_RV_;;value2;;_RV_;;WindowsControllerParent;;_RV_;;"
+		"value;;_RV_;;filename_Controller;;_RV_;;value2;;_RV_;;WindowsControllerParent;;_RV_;;value3;;_RV_;;0;;_RV_;;"
 	],
 	[
 		10,
@@ -881,5 +737,5 @@ aInteractionsTable = [
 		"value;;_RV_;;oView;;_RV_;;value2;;_RV_;;filename_View;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	]
 ]
-nStepsID = 50		
-nInteractionsID = 23
+
+# End of Visual Source File
