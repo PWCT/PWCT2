@@ -28,15 +28,17 @@ class classComponentController from ComponentControllerParent
 			oStep = GetActiveStep()
 			AllowInteraction()
 			NewStep( T_CT_CLASS_ST_METHODS )
-			NewParentStep( T_CT_CLASS_ST_PRIVATE )
-			SetStepCode("private")
-			AllowInteraction()
-			NewStep( T_CT_CLASS_ST_ATTRIBUTES )
-			AllowInteraction()
-			NewStep( T_CT_CLASS_ST_METHODS )
-			SetActiveStep(oStepRoot)
-			NewStep( T_CT_CLASS_ST_END )
-				SetStepCode( "" )
+			if Variable(:value3) {
+				NewParentStep( T_CT_CLASS_ST_PRIVATE )
+				SetStepCode("private")
+				AllowInteraction()
+				NewStep( T_CT_CLASS_ST_ATTRIBUTES )
+				AllowInteraction()
+				NewStep( T_CT_CLASS_ST_METHODS )
+				SetActiveStep(oStepRoot)
+				NewStep( T_CT_CLASS_ST_END )
+					SetStepCode( "" )
+			}
 			SetActiveStep(oStep)
 
 		return True 
@@ -46,4 +48,5 @@ class classComponentView from ComponentViewParent
 		Title( T_CT_CLASS_IP_TITLE )	
 		TextBox( T_CT_CLASS_IP_VALUE , :value)
 		TextBox( T_CT_CLASS_IP_VALUE2 , :value2)
+		CheckBox( T_CT_CLASS_IP_VALUE3 , :value3)
 		PageButtons()
