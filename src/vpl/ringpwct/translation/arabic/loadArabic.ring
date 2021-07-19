@@ -8,12 +8,12 @@
 
 # Load Component
 
-	# Interaction Page
+	# Steps Tree
 		T_CT_LOAD_ST_LOAD = "إستدعاء الملف "
 		T_CT_LOAD_ST_PACKAGE = "حقيبة "
 		T_CT_LOAD_ST_AGAIN = "مرة اخري "
 
-	# Steps Tree
+	# Interaction Page
 		T_CT_LOAD_IP_TITLE = "مكون إستدعاء الملف"
 		T_CT_LOAD_IP_FILE = "إسم الملف : "
 		T_CT_LOAD_IP_FILE_VALUE = 'stdlib.ring'
