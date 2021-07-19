@@ -17,14 +17,28 @@ Class LoadComponentController from ComponentControllerParent
 		if not substr(cFile,".") {
 			cFile += ".ring"
 		}
-								
-		NewStep(T_CT_LOAD_ST_LOAD + StyleData(cFile)   )  
-			SetStepCode("load " + '"' + cFile + '"')
+		
+		# Type 
+		switch Variable(:type) {
+			case 1
+				cStart = ""
+				cStepStart = T_CT_LOAD_ST_LOAD
+			case 2
+				cStart = "package "
+				cStepStart = T_CT_LOAD_ST_LOAD + T_CT_LOAD_ST_PACKAGE
+			case 3
+				cStart = "again "
+				cStepStart = T_CT_LOAD_ST_LOAD + T_CT_LOAD_ST_AGAIN
+		}
+						
+		NewStep(cStepStart + StyleData(cFile)   )  
+			SetStepCode("load " + cStart + '"' + cFile + '"')
 
 		return True 
 
 class LoadComponentView from ComponentViewParent
 	 
 		Title(T_CT_LOAD_IP_TITLE)	
-		TextBox(T_CT_LOAD_IP_FILE , :file)
+		TextBoxValue(T_CT_LOAD_IP_FILE , :file, T_CT_LOAD_IP_FILE_VALUE)
+		ListBox(T_CT_LOAD_IP_TYPE, :type , T_CT_LOAD_IP_TYPELIST) 
 		PageButtons()
