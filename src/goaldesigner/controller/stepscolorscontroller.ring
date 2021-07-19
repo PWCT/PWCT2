@@ -17,7 +17,43 @@ class StepsColorsController from WindowsControllerParent
 
 	func colorAction nBtnNumber
 
+		switch nBtnNumber {
+			case 1
+				cColor = C_STEPCOLOR_COMMENT_TEXT 
+			case 2
+				cColor = C_STEPCOLOR_COMMENT_BACKCOLOR 
+			case 3
+				cColor = C_STEPCOLOR_ROOT_TEXT 
+			case 4
+				cColor = C_STEPCOLOR_ROOT_BACKCOLOR 
+			case 5
+				cColor = C_STEPCOLOR_ALLOWINTERACTION_TEXT 
+			case 6
+				cColor = C_STEPCOLOR_ALLOWINTERACTION_BACKCOLOR 
+			case 7
+				cColor = C_STEPCOLOR_INFO_TEXT
+			case 8
+				cColor = C_STEPCOLOR_INFO_BACKCOLOR 
+			case 9
+				cColor = C_STEPCOLOR_DATA_TEXT 
+			case 10
+				cColor = C_STEPCOLOR_DATA_BACKCOLOR 
+			case 11
+				cColor = C_STEPSTREE_BACKCOLOR
+		}
+
+		if len(cColor) != 7 {
+			cColor = "#000000"
+		}
+
+		oColor = new QColor() {
+			setred(dec(substr(cColor,2,2)))
+			setGreen(dec(substr(cColor,4,2)))
+			setBlue(dec(substr(cColor,6,2)))
+		}
+		
 		new qcolordialog() { 
+			setCurrentColor(oColor)
 			setwindowflags(Qt_WindowStaysOnTopHint) 
 			r = exec()		
 			if r = 0 return ok
