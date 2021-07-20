@@ -155,3 +155,6 @@ class StepsColorsController from WindowsControllerParent
 	func LightTreeLines
 		C_STEPSTREE_LIGHTTREELINES = oView.checkLightTreeLines.checkState()
 		parent().refreshStepsTree()
+
+	func AllowSyntaxErrors
+		C_STEPSTREE_ALLOWSYNTAXERRORS = oView.checkAllowSyntaxErrors.checkState()

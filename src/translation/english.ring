@@ -242,6 +242,7 @@
 	T_SC_AVOIDCOMPONENTSBROWSERSAUTOCOMPLETE = "Avoid Components Browser Auto-Complete"
 	T_SC_COMPONENTSBROWSERALWAYSSHOWSEARCHWINDOW = "Components Browser - Always Show Search Window"
 	T_SC_LIGHTTREELINES = "Light Tree Lines"
+	T_SC_ALLOWSYNTAXERRORS = "Allow Syntax Errors in Interaction Pages"
 
 # Components Browser Window
 

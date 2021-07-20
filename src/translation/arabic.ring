@@ -240,6 +240,7 @@
 	T_SC_AVOIDCOMPONENTSBROWSERSAUTOCOMPLETE = "تجنب الإكمال التلقائي فى متصفح المكونات"
 	T_SC_COMPONENTSBROWSERALWAYSSHOWSEARCHWINDOW = "متصفح المكونات - دائما اظهر نافذة خاصة للبحث"
 	T_SC_LIGHTTREELINES = "خطوط الشجرة بلون فاتح"
+	T_SC_ALLOWSYNTAXERRORS = "السماح بالأخطاء النحوية فى الصفحات التفاعلية"
 
 # Components Browser Window
 

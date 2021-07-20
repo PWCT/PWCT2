@@ -229,7 +229,12 @@ class StepsColorsView from WindowsViewParent
 			setText(T_SC_LIGHTTREELINES) # "Light Tree Lines"
 			setChecked(C_STEPSTREE_LIGHTTREELINES)
 			setStateChangedEvent(Method(:LightTreeLines))
-		} 
+		}
+		checkAllowSyntaxErrors = new QCheckBox(win) {
+			setText(T_SC_ALLOWSYNTAXERRORS) # "Allow Syntax Errors in Interaction Pages"
+			setChecked(C_STEPSTREE_ALLOWSYNTAXERRORS)
+			setStateChangedEvent(Method(:AllowSyntaxErrors))
+		}  
 
 		btnClose = new qpushbutton(win) {
 			setText(T_SC_CLOSE) # "Close"
@@ -258,6 +263,7 @@ class StepsColorsView from WindowsViewParent
 			AddWidget(checkAvoidComponentsBrowserAutoComplete)
 			AddWidget(checkComponentsBrowserAlwaysShowSearchWindow)
 			AddWidget(checkLightTreeLines)
+			AddWidget(checkAllowSyntaxErrors)
 			AddWidget(btnClose)
 			insertStretch( -1, 1 )
 		}

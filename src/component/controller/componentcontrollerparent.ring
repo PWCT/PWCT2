@@ -299,12 +299,16 @@ Class ComponentControllerParent from WindowsControllerParent
 		return True
 
 	func BeforeOkAction 
-		if not checkSyntax() { return False }
+		if not C_STEPSTREE_ALLOWSYNTAXERRORS {
+			if not checkSyntax() { return False }
+		}
 		if not checkEmptyValues() { return False }
 		return True 
 
 	func BeforeAgainAction
-		if not checkSyntax() { return False }
+		if not C_STEPSTREE_ALLOWSYNTAXERRORS {
+			if not checkSyntax() { return False }
+		}
 		if not checkEmptyValues() { return False }
 		return True
 
