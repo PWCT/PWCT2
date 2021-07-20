@@ -13,12 +13,16 @@ class ParserStmt
 		if iskeyword(K_LOAD) {
 			clearTextBuffer()
 			nexttoken()
+			nLoadType = 1
 			/* Load Package Command */
 			if iskeyword(K_PACKAGE) {
+				nLoadType = 2
 				nexttoken()
 			elseif iskeyword(K_AGAIN) 
+				nLoadType = 3
 				nexttoken()
 			}
+			AddParameterAndValue(:Type,nLoadType)
 			if isliteral() {
 				nexttoken()
 				AddParameter(:FileName)

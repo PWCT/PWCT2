@@ -56,7 +56,7 @@ class Generator
 				case :BlockEnd
 					popParent()
 				case :Load 
-					AddLoadLiteral(aCommand[:Expression])
+					AddLoadLiteral(aCommand[:Expression],aCommand[:Type])
 				case :Func 
 					AddFuncParameters(aCommand[:Function],aCommand[:Parameters])
 				case :Return

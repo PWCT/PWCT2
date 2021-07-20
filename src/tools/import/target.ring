@@ -49,7 +49,8 @@ class Target
 		oParser {
 			Generate( [
 					:Command = :load,
-					:Expression = Parameter(:FileName)
+					:Expression = Parameter(:FileName),
+					:Type = Parameter(:Type)
 				], C_CLEARBUFFER )
 		}
 

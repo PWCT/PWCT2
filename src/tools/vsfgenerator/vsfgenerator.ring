@@ -348,18 +348,31 @@ class VSFGenerator
 	/*
 		Load Component 
 	*/
-	func AddLoadLiteral cLiteral 
+	func AddLoadLiteral cLiteral,nType 
 		cLiteral = JustLiteralText(cLiteral)
 		# Use the Interaction Page
 			nIID = UseComponent("load",[
-				:file 		= cLiteral
+				:file 		= cLiteral,
+				:type		= nType
 			])
+		# Type 
+		switch nType {
+			case 1
+				cStart = ""
+				cStepStart = T_CT_LOAD_ST_LOAD
+			case 2
+				cStart = "package "
+				cStepStart = T_CT_LOAD_ST_LOAD + T_CT_LOAD_ST_PACKAGE
+			case 3
+				cStart = "again "
+				cStepStart = T_CT_LOAD_ST_LOAD + T_CT_LOAD_ST_AGAIN
+		}
 		# Generate the Step and the Code
 			nStepNumber = 1
 			nStepID = AddGeneratedStep(nParentID,
-			T_CT_LOAD_ST_LOAD + StyleData(cLiteral),
+			cStepStart + StyleData(cLiteral),
 			nIID,nStepNumber,C_STEPTYPE_ROOT)
-			oModel.SaveStepCode(nStepID, "load " + '"' + cLiteral + '"')
+			oModel.SaveStepCode(nStepID, "load " + cStart + '"' + cLiteral + '"')
 			return nStepID
 
 	/*
