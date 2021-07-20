@@ -1311,9 +1311,9 @@ class EnvironmentController from WindowsControllerParent
 		C_STEPCOLOR_INFO_BACKCOLOR = ''
 		C_STEPCOLOR_DATA_TEXT = '#ffffff'
 		C_STEPCOLOR_DATA_BACKCOLOR = ''
-		C_STEPSTREE_BACKCOLOR = '#000084'
+		C_STEPSTREE_BACKCOLOR = '#0000A7'
 		C_STEPSTREE_SELECTIONCOLOR		= "white"
-		C_STEPSTREE_SELECTIONBACKGROUND		= "purple"
+		C_STEPSTREE_SELECTIONBACKGROUND		= "#000064"
 		C_COMPONENTSBROWSER_COLOR		= "white"
 		C_INTERACTIONPAGE_TITLECOLOR		= "white"
 		C_INTERACTIONPAGE_TITLEBACKCOLOR	= "#000064"
@@ -1321,14 +1321,14 @@ class EnvironmentController from WindowsControllerParent
 
 	func StyleFusionBlue 
 		PWCT_APP.StylefusionCustom(
-			new qColor() { setrgb(0,0,132,255) },
+			new qColor() { setrgb(0,0,167,255) },
 			new qColor() { setrgb(255,255,255,255) },
-			new qColor() { setrgb(0,0,132,255) },
-			new qColor() { setrgb(0,0,132,255) },
+			new qColor() { setrgb(0,0,167,255) },
+			new qColor() { setrgb(0,0,167,255) },
 			new qColor() { setrgb(255,255,255,255) },
 			new qColor() { setrgb(255,255,255,255) },
 			new qColor() { setrgb(255,255,255,255) },
-			new qColor() { setrgb(0,0,132,255) },
+			new qColor() { setrgb(0,0,167,255) },
 			new qColor() { setrgb(255,255,255,255) },
 			new qColor() { setrgb(255,0,0,255) },
 			new qColor() { setrgb(0,0,100,255) },
