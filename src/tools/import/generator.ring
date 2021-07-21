@@ -127,7 +127,7 @@ class Generator
 
 	func Optimization
 		nMax = len(aParseTree)
-		# The First Pass
+		# The First Pass (We check ')' that exist alone & We check braces '{' after Expressions)
 		for t=2 to nMax {
 			aPrevCommand = aParseTree[t-1]
 			aCommand = aParseTree[t]
@@ -216,7 +216,7 @@ class Generator
 					}
 			}
 		}
-		# Second Pass 
+		# Second Pass (We check Expressions that Contains New Objects)
 		nMax = len(aParseTree)
 		for t=1 to nMax {
 			if aParseTree[t][:Command] = :Expression {
