@@ -135,8 +135,9 @@ class Generator
 				# merge ')' that exist alone with previous expression
 				case :Expression 
 					if aPrevCommand[:Command] = :Expression {
-						if trim(aCommand[:Expression]) = ")" {
-							aParseTree[t-1][:Expression] += ")"
+						if right(trim(aCommand[:Expression]),1) = ")" and 
+						   not substr(aCommand[:Expression],"(") {
+							aParseTree[t-1][:Expression] += aCommand[:Expression]
 							del(aParseTree,t) t-- nMax--
 							loop
 						}
