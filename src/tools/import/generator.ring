@@ -133,6 +133,7 @@ class Generator
 			aCommand = aParseTree[t]
 			switch aCommand[:Command] {
 				# merge ')' that exist alone with previous expression
+				# Also merge separated parameters like ',180)' with previous expression
 				case :Expression 
 					if aPrevCommand[:Command] = :Expression {
 						if right(trim(aCommand[:Expression]),1) = ")" and 
