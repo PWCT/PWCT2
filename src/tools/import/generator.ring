@@ -43,34 +43,30 @@ class Generator
 	func ProcessCommand aCommand
 		oPWCT {
 			switch aCommand[:Command] {
+				case :Load 
+					AddLoadLiteral(aCommand[:Expression],aCommand[:Type])
+				case :Import
+					AddImportValue(aCommand[:Value])
 				case :See 
 					AddPrintExpression(aCommand[:Expression],False)
 				case :QuestionMark 
 					AddPrintExpression(aCommand[:Expression],True)
+				case :Give 
+					AddGiveIdentifier(aCommand[:Identifier])
+				case :BlockEnd
+					popParent()
 				case :If
 					AddIfExpression(aCommand[:Expression])
 				case :But
 					AddButExpression(aCommand[:Expression])
 				case :Else
 					AddElse()
-				case :BlockEnd
-					popParent()
-				case :Load 
-					AddLoadLiteral(aCommand[:Expression],aCommand[:Type])
-				case :Func 
-					AddFuncParameters(aCommand[:Function],aCommand[:Parameters])
-				case :Return
-					AddReturnExpression(aCommand[:Expression])
-				case :Give 
-					AddGiveIdentifier(aCommand[:Identifier])
-				case :Class 
-					AddDefineClass(aCommand[:ClassName],aCommand[:ParentClassName])
-				case :Private 
-					AddPrivate()
-				case :Package 
-					AddPackage(aCommand[:PackageName])
-				case :Expression
-					AddExpressionCommand(aCommand[:Expression])
+				case :Switch
+					AddSwitchVariable(aCommand[:Variable])
+				case :SwitchCase
+					AddSwitchCaseValue(aCommand[:Value])
+				case :SwitchOther
+					AddSwitchOther()
 				case :While
 					AddWhileExpression(aCommand[:Expression])
 				case :For
@@ -85,18 +81,22 @@ class Generator
 					AddLoopValue(aCommand[:Value])
 				case :Bye
 					AddBye(aCommand[:Value])
-				case :Switch
-					AddSwitchVariable(aCommand[:Variable])
-				case :SwitchCase
-					AddSwitchCaseValue(aCommand[:Value])
-				case :SwitchOther
-					AddSwitchOther()
-				case :Import
-					AddImportValue(aCommand[:Value])
 				case :Try
 					AddTry()
 				case :Catch
 					AddCatch()
+				case :Func 
+					AddFuncParameters(aCommand[:Function],aCommand[:Parameters])
+				case :Return
+					AddReturnExpression(aCommand[:Expression])
+				case :Package 
+					AddPackage(aCommand[:PackageName])
+				case :Class 
+					AddDefineClass(aCommand[:ClassName],aCommand[:ParentClassName])
+				case :Private 
+					AddPrivate()
+				case :Expression
+					AddExpressionCommand(aCommand[:Expression])
 				case :Assignment
 					AddAssignment(aCommand[:LeftSide],aCommand[:RightSide])
 				case :UsingBraces
@@ -120,7 +120,6 @@ class Generator
 						if right(cComment,1) = char(13) {
 							cComment = left(cComment,len(cComment)-1)
 						}
-						//AddExpressionCommand(cComment)
 						AddStep(cComment)
 					}
 			}
