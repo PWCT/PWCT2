@@ -428,72 +428,72 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"20/07/2021",
-		"06:18:45",
+		"22/07/2021",
+		"01:54:30",
 		""
 	],
 	[
 		2,
 		1,
 		"load",
-		"20/07/2021",
-		"06:18:45",
+		"22/07/2021",
+		"01:54:30",
 		"file;;_RV_;;stdlib.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"print",
-		"20/07/2021",
-		"06:18:45",
+		"22/07/2021",
+		"01:54:30",
 		"text;;_RV_;;GetFileInfo("+char(34)+"test.ring"+char(34)+");;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"func",
-		"20/07/2021",
-		"06:18:45",
+		"22/07/2021",
+		"01:54:30",
 		"name;;_RV_;;GetFileInfo;;_RV_;;parameters;;_RV_;;cFile;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"assignment",
-		"20/07/2021",
-		"06:18:45",
+		"22/07/2021",
+		"01:54:30",
 		"leftside;;_RV_;;cOutput;;_RV_;;rightside;;_RV_;;systemcmd("+char(34)+"dir /T:W "+char(34)+"+cFile);;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"assignment",
-		"20/07/2021",
-		"06:18:45",
+		"22/07/2021",
+		"01:54:30",
 		"leftside;;_RV_;;aList;;_RV_;;rightside;;_RV_;;str2list(cOutput);;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"assignment",
-		"20/07/2021",
-		"06:18:45",
+		"22/07/2021",
+		"01:54:30",
 		"leftside;;_RV_;;cLine;;_RV_;;rightside;;_RV_;;aList[6];;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"20/07/2021",
-		"06:18:45",
+		"22/07/2021",
+		"01:54:30",
 		"leftside;;_RV_;;aInfo;;_RV_;;rightside;;_RV_;;split(cLine,"+char(34)+" "+char(34)+");;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"return",
-		"20/07/2021",
-		"06:18:45",
+		"22/07/2021",
+		"01:54:30",
 		"value;;_RV_;;aInfo;;_RV_;;"
 	]
 ]

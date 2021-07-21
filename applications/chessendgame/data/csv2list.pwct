@@ -769,7 +769,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">item+=&quot;,&quot;</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">item&nbsp;+=&nbsp;&quot;,&quot;</font></span>"
 			],
 			[
 				"active",
@@ -777,7 +777,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"item+="+char(34)+","+char(34)+""
+				"item += "+char(34)+","+char(34)+""
 			],
 			[
 				"interactionid",
@@ -797,7 +797,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"item+="+char(34)+","+char(34)+""
+				"item += "+char(34)+","+char(34)+""
 			]
 		]
 	],
@@ -1644,264 +1644,264 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"27/06/2021",
-		"19:11:08",
+		"22/07/2021",
+		"01:30:05",
 		""
 	],
 	[
 		2,
 		1,
 		"",
-		"27/06/2021",
-		"19:11:08",
+		"22/07/2021",
+		"01:30:05",
 		""
 	],
 	[
 		3,
 		1,
 		"",
-		"27/06/2021",
-		"19:11:08",
+		"22/07/2021",
+		"01:30:05",
 		""
 	],
 	[
 		4,
 		1,
 		"",
-		"27/06/2021",
-		"19:11:08",
+		"22/07/2021",
+		"01:30:05",
 		""
 	],
 	[
 		5,
 		1,
 		"",
-		"27/06/2021",
-		"19:11:08",
+		"22/07/2021",
+		"01:30:05",
 		""
 	],
 	[
 		6,
 		1,
 		"func",
-		"27/06/2021",
-		"19:11:08",
+		"22/07/2021",
+		"01:30:05",
 		"name;;_RV_;;main;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"",
-		"27/06/2021",
-		"19:11:08",
+		"22/07/2021",
+		"01:30:05",
 		""
 	],
 	[
 		8,
 		1,
 		"print",
-		"27/06/2021",
-		"19:11:08",
+		"22/07/2021",
+		"01:30:05",
 		"text;;_RV_;;Read the file (chess.csv);;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:11:08",
+		"22/07/2021",
+		"01:30:05",
 		"leftside;;_RV_;;cStr;;_RV_;;rightside;;_RV_;;read("+char(34)+"chess.csv"+char(34)+");;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"",
-		"27/06/2021",
-		"19:11:08",
+		"22/07/2021",
+		"01:30:05",
 		""
 	],
 	[
 		11,
 		1,
 		"print",
-		"27/06/2021",
-		"19:11:08",
+		"22/07/2021",
+		"01:30:05",
 		"text;;_RV_;;Process the data ...;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:11:08",
+		"22/07/2021",
+		"01:30:05",
 		"leftside;;_RV_;;aList;;_RV_;;rightside;;_RV_;;str2List(cStr);;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:11:08",
+		"22/07/2021",
+		"01:30:05",
 		"leftside;;_RV_;;nIndex;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:11:08",
+		"22/07/2021",
+		"01:30:05",
 		"leftside;;_RV_;;nMax;;_RV_;;rightside;;_RV_;;len(aList);;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"forinloop",
-		"27/06/2021",
-		"19:11:08",
+		"22/07/2021",
+		"01:30:05",
 		"variable;;_RV_;;item;;_RV_;;in;;_RV_;;aList;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:11:08",
+		"22/07/2021",
+		"01:30:05",
 		"leftside;;_RV_;;item;;_RV_;;rightside;;_RV_;;"+char(34)+"["+char(34)+"+item+"+char(34)+"]"+char(34)+";;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"ifstatement",
-		"27/06/2021",
-		"19:11:08",
+		"22/07/2021",
+		"01:30:05",
 		"condition;;_RV_;;nIndex! = nMax;;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:11:08",
-		"value;;_RV_;;item+="+char(34)+","+char(34)+";;_RV_;;"
+		"22/07/2021",
+		"01:30:05",
+		"value;;_RV_;;item += "+char(34)+","+char(34)+";;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"freetyping",
-		"27/06/2021",
-		"19:11:08",
+		"22/07/2021",
+		"01:30:05",
 		"value;;_RV_;;nIndex++;;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:11:08",
+		"22/07/2021",
+		"01:30:05",
 		"leftside;;_RV_;;cStr;;_RV_;;rightside;;_RV_;;list2Str(aList);;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:11:08",
+		"22/07/2021",
+		"01:30:06",
 		"leftside;;_RV_;;cStr;;_RV_;;rightside;;_RV_;;update(cStr);;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:11:08",
+		"22/07/2021",
+		"01:30:06",
 		"leftside;;_RV_;;cData;;_RV_;;rightside;;_RV_;;"+char(34)+"aDataSet = ["+char(34)+"+WindowsNL()+cStr+WindowsNL()+"+char(34)+"]"+char(34)+";;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"",
-		"27/06/2021",
-		"19:11:08",
+		"22/07/2021",
+		"01:30:06",
 		""
 	],
 	[
 		24,
 		1,
 		"print",
-		"27/06/2021",
-		"19:11:08",
+		"22/07/2021",
+		"01:30:06",
 		"text;;_RV_;;Write the Ring file (dataset.ring);;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"callfunc",
-		"27/06/2021",
-		"19:11:08",
+		"22/07/2021",
+		"01:30:06",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;write;;_RV_;;parameters;;_RV_;;"+char(34)+"dataset.ring"+char(34)+",cData;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"func",
-		"27/06/2021",
-		"19:11:08",
+		"22/07/2021",
+		"01:30:06",
 		"name;;_RV_;;update;;_RV_;;parameters;;_RV_;;cStr;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:11:08",
+		"22/07/2021",
+		"01:30:06",
 		"leftside;;_RV_;;aWords;;_RV_;;rightside;;_RV_;;[:a,:b,:c,:d,:e,:f,:g,:h,:draw,:zero,:one,:two,:three,:four,:five,:six,:seven,:eight,:nine,:ten,:eleven,:twelve,:thirteen,:fourteen,:fifteen,:sixteen,"+char(34)+"WhiteKingFile"+char(34)+","+char(34)+"WhiteKingRank"+char(34)+","+char(34)+"WhiteRookFile"+char(34)+","+char(34)+"WhiteRookRank"+char(34)+","+char(34)+"BlackKingFile"+char(34)+","+char(34)+"BlackKingRank"+char(34)+","+char(34)+"GameResult"+char(34)+"];;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:11:08",
+		"22/07/2021",
+		"01:30:06",
 		"leftside;;_RV_;;nMax;;_RV_;;rightside;;_RV_;;len(aWords);;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"forloop",
-		"27/06/2021",
-		"19:11:08",
+		"22/07/2021",
+		"01:30:06",
 		"start;;_RV_;;t = nMax;;_RV_;;to;;_RV_;;1;;_RV_;;step;;_RV_;;-1;;_RV_;;"
 	],
 	[
 		30,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:11:08",
+		"22/07/2021",
+		"01:30:06",
 		"leftside;;_RV_;;cStr;;_RV_;;rightside;;_RV_;;substr(cStr,"+char(34)+"["+char(34)+"+aWords[t]+"+char(34)+","+char(34)+","+char(34)+"["+char(34)+"+Char(34)+aWords[t]+Char(34)+"+char(34)+","+char(34)+");;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:11:08",
+		"22/07/2021",
+		"01:30:06",
 		"leftside;;_RV_;;cStr;;_RV_;;rightside;;_RV_;;substr(cStr,"+char(34)+","+char(34)+"+aWords[t]+"+char(34)+","+char(34)+","+char(34)+","+char(34)+"+Char(34)+aWords[t]+Char(34)+"+char(34)+","+char(34)+");;_RV_;;"
 	],
 	[
 		32,
 		1,
 		"assignment",
-		"27/06/2021",
-		"19:11:08",
+		"22/07/2021",
+		"01:30:06",
 		"leftside;;_RV_;;cStr;;_RV_;;rightside;;_RV_;;substr(cStr,"+char(34)+","+char(34)+"+aWords[t]+"+char(34)+"]"+char(34)+","+char(34)+","+char(34)+"+Char(34)+aWords[t]+Char(34)+"+char(34)+"]"+char(34)+");;_RV_;;"
 	],
 	[
 		33,
 		1,
 		"return",
-		"27/06/2021",
-		"19:11:08",
+		"22/07/2021",
+		"01:30:06",
 		"value;;_RV_;;cStr;;_RV_;;"
 	]
 ]
