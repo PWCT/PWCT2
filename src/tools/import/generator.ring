@@ -127,10 +127,12 @@ class Generator
 
 	func Optimization
 		nMax = len(aParseTree)
+		# The First Pass
 		for t=2 to nMax {
 			aPrevCommand = aParseTree[t-1]
 			aCommand = aParseTree[t]
 			switch aCommand[:Command] {
+				# merge ')' that exist alone with previous expression
 				case :Expression 
 					if aPrevCommand[:Command] = :Expression {
 						if trim(aCommand[:Expression]) = ")" {
@@ -139,15 +141,19 @@ class Generator
 							loop
 						}
 					}
+				# When we have braces '{' after expression - We will analysis the expression  
 				case :UsingBraces 
 					if aPrevCommand[:Command] = :Expression {
 						cType = ExpressionType(aPrevCommand[:Expression])
 						lDelete = False
 						switch cType {
+							#  We have something like : myobj { } 
 							case "word" 
 								aParseTree[t-1][:Command] = :AccessObject
 								lDelete = True
+							# We have something like : myfunc = func x,y
 							case "= func"
+								# Get the function name (variable) and the function parameters 
 								aParseTree[t-1][:Command] = :nestedfunc
 								cExpr = aParseTree[t-1][:Expression]
 								nEqualPos = substr(cExpr,"=")
@@ -158,7 +164,9 @@ class Generator
 								aParseTree[t-1][:Variable] = trim(cVariable)
 								aParseTree[t-1][:Parameters] = trim(cPara)
 								lDelete = True
+							# We have something like : myobj = new myclass
 							case "= new"
+								# Get the Object Name and the Class Name 
 								aParseTree[t-1][:Command] = :newobj	
 								cExpr = aParseTree[t-1][:Expression]
 								nEqualPos = substr(cExpr,"=")
@@ -171,7 +179,9 @@ class Generator
 								aParseTree[t-1][:lInit] = False
 								aParseTree[t-1][:lBraces] = True
 								lDelete = True
+							# We have something like : myobj = new myclass(value)
 							case "= new init"
+								# Get the Object Name, the Class Name and the Init() method parameters 
 								aParseTree[t-1][:Command] = :newobj	
 								cExpr = aParseTree[t-1][:Expression]
 								nEqualPos = substr(cExpr,"=")
@@ -188,7 +198,9 @@ class Generator
 								aParseTree[t-1][:cInitParameters] = cInit
 								aParseTree[t-1][:lBraces] = True
 								lDelete = True
+							# We have something like : new myclass 
 							case "new"
+								# Get the Class Name 
 								aParseTree[t-1][:Command] = :newobj	
 								cExpr = aParseTree[t-1][:Expression]
 								nNewPos = substr(lower(cExpr),"new")
@@ -205,53 +217,59 @@ class Generator
 			}
 		}
 		# Second Pass 
-			nMax = len(aParseTree)
-			for t=1 to nMax {
-				if aParseTree[t][:Command] = :Expression {
-					if ExpressionIsCallFunction(t) or ExpressionIsCallMethod(t) {
-						loop 
-					}
-					cType = ExpressionType(aParseTree[t][:Expression])
-					switch cType {
-						case "= new"
-							aParseTree[t][:Command] = :newobj	
-							cExpr = aParseTree[t][:Expression]
-							nEqualPos = substr(cExpr,"=")
-							cExpr2 = substr(cExpr,nEqualPos+1)
-							nNewPos = substr(lower(cExpr2),"new")
-							cVariable = left(cExpr,nEqualPos-1)
-							cClassName = substr(cExpr2,nNewPos+3)
-							aParseTree[t][:Variable] = trim(cVariable)
-							aParseTree[t][:ClassName] = trim(cClassName)
-							aParseTree[t][:lInit] = False
-							aParseTree[t][:lBraces] = False
-						case "= new init"
-							aParseTree[t][:Command] = :newobj	
-							cExpr = aParseTree[t][:Expression]
-							nEqualPos = substr(cExpr,"=")
-							cExpr2 = substr(cExpr,nEqualPos+1)
-							nNewPos = substr(lower(cExpr2),"new")
-							cVariable = left(cExpr,nEqualPos-1)
-							cClassName = substr(cExpr2,nNewPos+3)
-							cInit = SubStr(cClassName,substr(cClassName,"(")+1)
-							cInit = left(cInit,len(cInit)-1)
-							cClassName = left(cClassName,substr(cClassName,"(")-1)
-							aParseTree[t][:Variable] = trim(cVariable)
-							aParseTree[t][:ClassName] = trim(cClassName)
-							aParseTree[t][:lInit] = True
-							aParseTree[t][:cInitParameters] = cInit
-							aParseTree[t][:lBraces] = False
-						case "new"
-							aParseTree[t][:Command] = :newobj	
-							cExpr = aParseTree[t][:Expression]
-							nNewPos = substr(lower(cExpr),"new")
-							cClassName = substr(cExpr,nNewPos+3)
-							aParseTree[t][:ClassName] = trim(cClassName)
-							aParseTree[t][:lInit] = False
-							aParseTree[t][:lBraces] = False
-					}
+		nMax = len(aParseTree)
+		for t=1 to nMax {
+			if aParseTree[t][:Command] = :Expression {
+				if ExpressionIsCallFunction(t) or ExpressionIsCallMethod(t) {
+					loop 
+				}
+				cType = ExpressionType(aParseTree[t][:Expression])
+				switch cType {
+					# We have something like : myobj = new myclass
+					case "= new"
+						# Get the Object Name and the Class Name 
+						aParseTree[t][:Command] = :newobj	
+						cExpr = aParseTree[t][:Expression]
+						nEqualPos = substr(cExpr,"=")
+						cExpr2 = substr(cExpr,nEqualPos+1)
+						nNewPos = substr(lower(cExpr2),"new")
+						cVariable = left(cExpr,nEqualPos-1)
+						cClassName = substr(cExpr2,nNewPos+3)
+						aParseTree[t][:Variable] = trim(cVariable)
+						aParseTree[t][:ClassName] = trim(cClassName)
+						aParseTree[t][:lInit] = False
+						aParseTree[t][:lBraces] = False
+					# We have something like : myobj = new myclass(value)
+					case "= new init"
+						# Get the Object Name, the Class Name and the Init() method parameters 
+						aParseTree[t][:Command] = :newobj	
+						cExpr = aParseTree[t][:Expression]
+						nEqualPos = substr(cExpr,"=")
+						cExpr2 = substr(cExpr,nEqualPos+1)
+						nNewPos = substr(lower(cExpr2),"new")
+						cVariable = left(cExpr,nEqualPos-1)
+						cClassName = substr(cExpr2,nNewPos+3)
+						cInit = SubStr(cClassName,substr(cClassName,"(")+1)
+						cInit = left(cInit,len(cInit)-1)
+						cClassName = left(cClassName,substr(cClassName,"(")-1)
+						aParseTree[t][:Variable] = trim(cVariable)
+						aParseTree[t][:ClassName] = trim(cClassName)
+						aParseTree[t][:lInit] = True
+						aParseTree[t][:cInitParameters] = cInit
+						aParseTree[t][:lBraces] = False
+					# We have something like : new myclass 
+					case "new"
+						# Get the Class Name 
+						aParseTree[t][:Command] = :newobj	
+						cExpr = aParseTree[t][:Expression]
+						nNewPos = substr(lower(cExpr),"new")
+						cClassName = substr(cExpr,nNewPos+3)
+						aParseTree[t][:ClassName] = trim(cClassName)
+						aParseTree[t][:lInit] = False
+						aParseTree[t][:lBraces] = False
 				}
 			}
+		}
 			
 
 	func ExpressionType cExpr 
