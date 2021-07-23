@@ -49,6 +49,7 @@ C_VPL_NAME = 'RingPWCT'
 	load "exefilename.ring"
 	load "exefolder.ring"
 	load "exit.ring"
+	load "expression.ring"
 	load "fileclass.ring"
 	load "filename.ring"
 	load "file_clearerr.ring"
@@ -409,6 +410,7 @@ C_VPL_NAME = 'RingPWCT'
 	aComponentsFilesList + (cComponentsPath + "exefilename.ring")
 	aComponentsFilesList + (cComponentsPath + "exefolder.ring")
 	aComponentsFilesList + (cComponentsPath + "exit.ring")
+	aComponentsFilesList + (cComponentsPath + "expression.ring")
 	aComponentsFilesList + (cComponentsPath + "fileclass.ring")
 	aComponentsFilesList + (cComponentsPath + "filename.ring")
 	aComponentsFilesList + (cComponentsPath + "file_clearerr.ring")
