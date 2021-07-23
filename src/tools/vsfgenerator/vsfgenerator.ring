@@ -1064,3 +1064,33 @@ class VSFGenerator
 			oModel.SaveStepCode(nStepID, cObject+cMethod + "(" +
 				 cParameters + ")" )
 			return nStepID
+
+	/*
+		Open Expression - Call Function 
+	*/
+	func AddOpenExpressionCallFunction cValue
+		# Use the Interaction Page
+			nIID = UseComponent("expression",[
+				:value 		= cValue,
+				:value2 		= 1
+			])
+
+		# Generate the Step and the Code
+			nStepNumber = 1
+			nStepID = AddGeneratedStep(nParentID,
+				T_CT_EXPRESSION_ST_CALLFUNC + cValue + T_CT_EXPRESSION_ST_CALLFUNC ,
+			nIID,nStepNumber,C_STEPTYPE_ROOT)
+			oModel.SaveStepCode(nStepID, cValue + "(" )
+			nStepNumber++
+			nStepID2 = AddGeneratedStep(nStepID,
+				T_CT_EXPRESSION_ST_STARTHERE ,
+			nIID,nStepNumber,C_STEPTYPE_ALLOWINTERACTION)
+			nStepNumber++
+			nStepID3 = AddGeneratedStep(nStepID,
+				T_CT_EXPRESSION_ST_FUNCCALLEND ,
+			nIID,nStepNumber,C_STEPTYPE_INFO)
+			oModel.SaveStepCode(nStepID3, ")" )
+		# Set the Parent 
+			aParents + nStepID2
+			SetStepsParent()
+			return nStepID
