@@ -30,6 +30,20 @@ class expressionComponentController from ComponentControllerParent
 					SetActiveStep(oStep)
 
 				case 2 # New List 
+
+					NewParentStep( Variable(:Value) + 
+							" = [" )
+					SetStepCode(Variable(:Value) +  " = [" )
+
+					AllowInteraction()
+					NewStep(T_CT_EXPRESSION_ST_STARTHERE) 
+					oStep = GetActiveStep()
+		
+					NewStep("]")
+					SetStepCode("]")
+
+					SetActiveStep(oStep)
+
 			}
 
 		return True 
