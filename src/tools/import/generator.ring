@@ -122,6 +122,8 @@ class Generator
 						}
 						AddStep(cComment)
 					}
+				case :OpenExpressionCallFunction 
+					AddOpenExpressionCallFunction(aCommand[:Expression])
 			}
 		}
 
@@ -269,6 +271,28 @@ class Generator
 						aParseTree[t][:ClassName] = trim(cClassName)
 						aParseTree[t][:lInit] = False
 						aParseTree[t][:lBraces] = False
+				}
+			elseif aParseTree[t][:Command] = :AccessObject 
+				cExpr = aParseTree[t][:Expression]
+				nPos = substr(cExpr,"( new")
+				if nPos {
+					# Copy the Current Command 
+						Insert(aParseTree,t,aParseTree[t])
+					# Change the current command to Open Expression (Function Call)
+						aParseTree[t][:Command] = :OpenExpressionCallFunction
+						aParseTree[t][:Expression] = left(cExpr,nPos-1)
+					# Change the Next Command (Access Object)
+						aParseTree[t+1][:Expression] = substr(cExpr,nPos+2)
+					# Change the extra ')' to (Block End) command 
+						for t2=1 to nMax {
+							if aParseTree[t2][:Command] = :Expression {
+								if trim(aParseTree[t2][:Expression]) = ")" {
+									aParseTree[t2][:Command] = :BlockEnd
+									exit 
+								}
+							}
+						}
+
 				}
 			}
 		}
