@@ -9,14 +9,12 @@ class expressionComponentController from ComponentControllerParent
 
 	oView = new expressionComponentView
 
-	aAllowEmptyValue = [:value3,:value4]
-
 	func GenerateAction 
 
 			switch Variable(:Value2) {
 				case 1 # Call Function
 
-					NewParentStep(T_CT_EXPRESSION_ST_CALLFUNC + Variable(:Value) + 
+					NewParentStep(T_CT_EXPRESSION_ST_CALLFUNC + StyleData(Variable(:Value)) + 
 							T_CT_EXPRESSION_ST_FUNCCALLSTART )
 					SetStepCode(Variable(:Value) +  "(" )
 

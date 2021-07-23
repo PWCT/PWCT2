@@ -1078,7 +1078,7 @@ class VSFGenerator
 		# Generate the Step and the Code
 			nStepNumber = 1
 			nStepID = AddGeneratedStep(nParentID,
-				T_CT_EXPRESSION_ST_CALLFUNC + cValue + T_CT_EXPRESSION_ST_FUNCCALLSTART ,
+				T_CT_EXPRESSION_ST_CALLFUNC + StyleData(cValue) + T_CT_EXPRESSION_ST_FUNCCALLSTART ,
 			nIID,nStepNumber,C_STEPTYPE_ROOT)
 			oModel.SaveStepCode(nStepID, cValue + "(" )
 			nStepNumber++
