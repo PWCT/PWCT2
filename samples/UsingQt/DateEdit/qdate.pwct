@@ -3,7 +3,7 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'English'
-nStepsID                 = 24		
+nStepsID                 = 26		
 nInteractionsID          = 13
 
 aStepsTable = [
@@ -541,7 +541,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oDate.setDate(&nbsp;new&nbsp;qDate()</font></span> {"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oDate.setDate</font></span>("
 			],
 			[
 				"active",
@@ -549,7 +549,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"oDate.setDate( new qDate() {"
+				"oDate.setDate("
 			],
 			[
 				"interactionid",
@@ -569,7 +569,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"oDate.setDate( new qDate() {"
+				"oDate.setDate("
 			]
 		]
 	],
@@ -617,6 +617,82 @@ aStepsTable = [
 		[
 			[
 				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">new&nbsp;qDate()</font></span> {"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"new qDate() {"
+			],
+			[
+				"interactionid",
+				10
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"new qDate() {"
+			]
+		]
+	],
+	[
+		22,
+		21,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				10
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		24,
+		22,
+		[
+			[
+				"name",
 				"setdate(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">2015,5,10</font></span>)"
 			],
 			[
@@ -629,7 +705,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				10
+				11
 			],
 			[
 				"visible",
@@ -650,8 +726,8 @@ aStepsTable = [
 		]
 	],
 	[
-		20,
-		18,
+		23,
+		21,
 		[
 			[
 				"name",
@@ -667,7 +743,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				9
+				10
 			],
 			[
 				"visible",
@@ -688,12 +764,12 @@ aStepsTable = [
 		]
 	],
 	[
-		22,
-		15,
+		20,
+		18,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">)</font></span>"
+				")"
 			],
 			[
 				"active",
@@ -705,7 +781,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				11
+				9
 			],
 			[
 				"visible",
@@ -713,11 +789,11 @@ aStepsTable = [
 			],
 			[
 				"stepnumber",
-				1
+				3
 			],
 			[
 				"steptype",
-				2
+				4
 			],
 			[
 				"plainname",
@@ -764,7 +840,7 @@ aStepsTable = [
 		]
 	],
 	[
-		23,
+		25,
 		9,
 		[
 			[
@@ -840,7 +916,7 @@ aStepsTable = [
 		]
 	],
 	[
-		24,
+		26,
 		5,
 		[
 			[
@@ -922,104 +998,104 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"22/07/2021",
-		"01:57:55",
+		"23/07/2021",
+		"06:57:44",
 		""
 	],
 	[
 		2,
 		1,
 		"load",
-		"22/07/2021",
-		"01:57:55",
+		"23/07/2021",
+		"06:57:44",
 		"file;;_RV_;;guilib.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"newobj",
-		"22/07/2021",
-		"01:57:55",
+		"23/07/2021",
+		"06:57:44",
 		"value;;_RV_;;;;_RV_;;value2;;_RV_;;qApp;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"newobj",
-		"22/07/2021",
-		"01:57:55",
+		"23/07/2021",
+		"06:57:44",
 		"value;;_RV_;;win1;;_RV_;;value2;;_RV_;;qMainWindow;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"callfunc",
-		"22/07/2021",
-		"01:57:55",
+		"23/07/2021",
+		"06:57:44",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setwindowtitle;;_RV_;;parameters;;_RV_;;"+char(34)+"Using QDateEdit"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"callfunc",
-		"22/07/2021",
-		"01:57:55",
+		"23/07/2021",
+		"06:57:44",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setGeometry;;_RV_;;parameters;;_RV_;;100,100,250,100;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"newobj",
-		"22/07/2021",
-		"01:57:55",
+		"23/07/2021",
+		"06:57:44",
 		"value;;_RV_;;oDate;;_RV_;;value2;;_RV_;;qdateedit;;_RV_;;value3;;_RV_;;win1;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"callfunc",
-		"22/07/2021",
-		"01:57:55",
+		"23/07/2021",
+		"06:57:44",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setGeometry;;_RV_;;parameters;;_RV_;;20,40,220,30;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		9,
 		1,
-		"accessobject",
-		"22/07/2021",
-		"01:57:55",
-		"value;;_RV_;;oDate.setDate( new qDate();;_RV_;;"
+		"expression",
+		"23/07/2021",
+		"06:57:44",
+		"value;;_RV_;;oDate.setDate;;_RV_;;value2;;_RV_;;1;;_RV_;;"
 	],
 	[
 		10,
 		1,
-		"callfunc",
-		"22/07/2021",
-		"01:57:55",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setdate;;_RV_;;parameters;;_RV_;;2015,5,10;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"accessobject",
+		"23/07/2021",
+		"06:57:44",
+		"value;;_RV_;;new qDate();;_RV_;;"
 	],
 	[
 		11,
 		1,
-		"freetyping",
-		"22/07/2021",
-		"01:57:55",
-		"value;;_RV_;;);;_RV_;;"
+		"callfunc",
+		"23/07/2021",
+		"06:57:44",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setdate;;_RV_;;parameters;;_RV_;;2015,5,10;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"callfunc",
-		"22/07/2021",
-		"01:57:55",
+		"23/07/2021",
+		"06:57:44",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;show;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"callfunc",
-		"22/07/2021",
-		"01:57:55",
+		"23/07/2021",
+		"06:57:44",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;exec;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	]
 ]

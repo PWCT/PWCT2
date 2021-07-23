@@ -3,7 +3,7 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'English'
-nStepsID                 = 99		
+nStepsID                 = 101		
 nInteractionsID          = 76
 
 aStepsTable = [
@@ -807,7 +807,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oLight.setColor(&nbsp;new&nbsp;QColor()</font></span> {"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oLight.setColor</font></span>("
 			],
 			[
 				"active",
@@ -815,7 +815,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"oLight.setColor( new QColor() {"
+				"oLight.setColor("
 			],
 			[
 				"interactionid",
@@ -835,7 +835,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"oLight.setColor( new QColor() {"
+				"oLight.setColor("
 			]
 		]
 	],
@@ -883,6 +883,82 @@ aStepsTable = [
 		[
 			[
 				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">new&nbsp;QColor()</font></span> {"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"new QColor() {"
+			],
+			[
+				"interactionid",
+				21
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"new QColor() {"
+			]
+		]
+	],
+	[
+		27,
+		26,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				21
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		29,
+		27,
+		[
+			[
+				"name",
 				"setRGB(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">255,255,255,255</font></span>)"
 			],
 			[
@@ -895,7 +971,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				21
+				22
 			],
 			[
 				"visible",
@@ -916,8 +992,8 @@ aStepsTable = [
 		]
 	],
 	[
-		25,
-		23,
+		28,
+		26,
 		[
 			[
 				"name",
@@ -933,7 +1009,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				20
+				21
 			],
 			[
 				"visible",
@@ -954,12 +1030,12 @@ aStepsTable = [
 		]
 	],
 	[
-		27,
-		5,
+		25,
+		23,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">)</font></span>"
+				")"
 			],
 			[
 				"active",
@@ -971,7 +1047,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				22
+				20
 			],
 			[
 				"visible",
@@ -979,11 +1055,11 @@ aStepsTable = [
 			],
 			[
 				"stepnumber",
-				1
+				3
 			],
 			[
 				"steptype",
-				2
+				4
 			],
 			[
 				"plainname",
@@ -992,7 +1068,7 @@ aStepsTable = [
 		]
 	],
 	[
-		28,
+		30,
 		5,
 		[
 			[
@@ -1030,7 +1106,7 @@ aStepsTable = [
 		]
 	],
 	[
-		29,
+		31,
 		5,
 		[
 			[
@@ -1068,7 +1144,7 @@ aStepsTable = [
 		]
 	],
 	[
-		30,
+		32,
 		5,
 		[
 			[
@@ -1106,7 +1182,7 @@ aStepsTable = [
 		]
 	],
 	[
-		31,
+		33,
 		5,
 		[
 			[
@@ -1144,7 +1220,7 @@ aStepsTable = [
 		]
 	],
 	[
-		32,
+		34,
 		5,
 		[
 			[
@@ -1182,7 +1258,7 @@ aStepsTable = [
 		]
 	],
 	[
-		33,
+		35,
 		5,
 		[
 			[
@@ -1220,7 +1296,7 @@ aStepsTable = [
 		]
 	],
 	[
-		34,
+		36,
 		5,
 		[
 			[
@@ -1258,7 +1334,7 @@ aStepsTable = [
 		]
 	],
 	[
-		35,
+		37,
 		5,
 		[
 			[
@@ -1296,7 +1372,7 @@ aStepsTable = [
 		]
 	],
 	[
-		36,
+		38,
 		5,
 		[
 			[
@@ -1334,8 +1410,8 @@ aStepsTable = [
 		]
 	],
 	[
-		37,
-		36,
+		39,
+		38,
 		[
 			[
 				"name",
@@ -1372,8 +1448,8 @@ aStepsTable = [
 		]
 	],
 	[
-		38,
-		37,
+		40,
+		39,
 		[
 			[
 				"name",
@@ -1410,8 +1486,8 @@ aStepsTable = [
 		]
 	],
 	[
+		42,
 		40,
-		38,
 		[
 			[
 				"name",
@@ -1448,8 +1524,8 @@ aStepsTable = [
 		]
 	],
 	[
-		41,
-		38,
+		43,
+		40,
 		[
 			[
 				"name",
@@ -1486,8 +1562,8 @@ aStepsTable = [
 		]
 	],
 	[
-		42,
-		38,
+		44,
+		40,
 		[
 			[
 				"name",
@@ -1524,8 +1600,8 @@ aStepsTable = [
 		]
 	],
 	[
+		41,
 		39,
-		37,
 		[
 			[
 				"name",
@@ -1562,7 +1638,7 @@ aStepsTable = [
 		]
 	],
 	[
-		43,
+		45,
 		5,
 		[
 			[
@@ -1600,7 +1676,7 @@ aStepsTable = [
 		]
 	],
 	[
-		44,
+		46,
 		5,
 		[
 			[
@@ -1638,7 +1714,7 @@ aStepsTable = [
 		]
 	],
 	[
-		45,
+		47,
 		5,
 		[
 			[
@@ -1676,7 +1752,7 @@ aStepsTable = [
 		]
 	],
 	[
-		46,
+		48,
 		5,
 		[
 			[
@@ -1714,7 +1790,7 @@ aStepsTable = [
 		]
 	],
 	[
-		47,
+		49,
 		5,
 		[
 			[
@@ -1752,7 +1828,7 @@ aStepsTable = [
 		]
 	],
 	[
-		48,
+		50,
 		5,
 		[
 			[
@@ -1790,7 +1866,7 @@ aStepsTable = [
 		]
 	],
 	[
-		49,
+		51,
 		5,
 		[
 			[
@@ -1828,7 +1904,7 @@ aStepsTable = [
 		]
 	],
 	[
-		50,
+		52,
 		5,
 		[
 			[
@@ -1866,7 +1942,7 @@ aStepsTable = [
 		]
 	],
 	[
-		51,
+		53,
 		5,
 		[
 			[
@@ -1904,7 +1980,7 @@ aStepsTable = [
 		]
 	],
 	[
-		52,
+		54,
 		5,
 		[
 			[
@@ -1942,7 +2018,7 @@ aStepsTable = [
 		]
 	],
 	[
-		53,
+		55,
 		5,
 		[
 			[
@@ -1980,7 +2056,7 @@ aStepsTable = [
 		]
 	],
 	[
-		54,
+		56,
 		5,
 		[
 			[
@@ -2018,8 +2094,8 @@ aStepsTable = [
 		]
 	],
 	[
-		55,
-		54,
+		57,
+		56,
 		[
 			[
 				"name",
@@ -2056,8 +2132,8 @@ aStepsTable = [
 		]
 	],
 	[
-		56,
-		55,
+		58,
+		57,
 		[
 			[
 				"name",
@@ -2094,8 +2170,8 @@ aStepsTable = [
 		]
 	],
 	[
+		60,
 		58,
-		56,
 		[
 			[
 				"name",
@@ -2132,8 +2208,8 @@ aStepsTable = [
 		]
 	],
 	[
+		59,
 		57,
-		55,
 		[
 			[
 				"name",
@@ -2170,7 +2246,7 @@ aStepsTable = [
 		]
 	],
 	[
-		59,
+		61,
 		5,
 		[
 			[
@@ -2208,7 +2284,7 @@ aStepsTable = [
 		]
 	],
 	[
-		60,
+		62,
 		5,
 		[
 			[
@@ -2246,7 +2322,7 @@ aStepsTable = [
 		]
 	],
 	[
-		61,
+		63,
 		5,
 		[
 			[
@@ -2284,7 +2360,7 @@ aStepsTable = [
 		]
 	],
 	[
-		62,
+		64,
 		5,
 		[
 			[
@@ -2322,7 +2398,7 @@ aStepsTable = [
 		]
 	],
 	[
-		63,
+		65,
 		5,
 		[
 			[
@@ -2360,8 +2436,8 @@ aStepsTable = [
 		]
 	],
 	[
-		64,
-		63,
+		66,
+		65,
 		[
 			[
 				"name",
@@ -2398,8 +2474,8 @@ aStepsTable = [
 		]
 	],
 	[
+		68,
 		66,
-		64,
 		[
 			[
 				"name",
@@ -2436,8 +2512,8 @@ aStepsTable = [
 		]
 	],
 	[
-		67,
-		64,
+		69,
+		66,
 		[
 			[
 				"name",
@@ -2474,8 +2550,8 @@ aStepsTable = [
 		]
 	],
 	[
-		68,
-		64,
+		70,
+		66,
 		[
 			[
 				"name",
@@ -2512,8 +2588,8 @@ aStepsTable = [
 		]
 	],
 	[
-		69,
-		64,
+		71,
+		66,
 		[
 			[
 				"name",
@@ -2550,8 +2626,8 @@ aStepsTable = [
 		]
 	],
 	[
+		67,
 		65,
-		63,
 		[
 			[
 				"name",
@@ -2588,7 +2664,7 @@ aStepsTable = [
 		]
 	],
 	[
-		70,
+		72,
 		5,
 		[
 			[
@@ -2626,7 +2702,7 @@ aStepsTable = [
 		]
 	],
 	[
-		71,
+		73,
 		5,
 		[
 			[
@@ -2702,7 +2778,7 @@ aStepsTable = [
 		]
 	],
 	[
-		72,
+		74,
 		1,
 		[
 			[
@@ -2740,8 +2816,8 @@ aStepsTable = [
 		]
 	],
 	[
-		73,
-		72,
+		75,
+		74,
 		[
 			[
 				"name",
@@ -2778,8 +2854,8 @@ aStepsTable = [
 		]
 	],
 	[
+		77,
 		75,
-		73,
 		[
 			[
 				"name",
@@ -2816,8 +2892,8 @@ aStepsTable = [
 		]
 	],
 	[
-		76,
-		73,
+		78,
+		75,
 		[
 			[
 				"name",
@@ -2854,8 +2930,8 @@ aStepsTable = [
 		]
 	],
 	[
-		77,
-		73,
+		79,
+		75,
 		[
 			[
 				"name",
@@ -2892,8 +2968,8 @@ aStepsTable = [
 		]
 	],
 	[
-		78,
-		73,
+		80,
+		75,
 		[
 			[
 				"name",
@@ -2930,8 +3006,8 @@ aStepsTable = [
 		]
 	],
 	[
-		79,
-		73,
+		81,
+		75,
 		[
 			[
 				"name",
@@ -2968,8 +3044,8 @@ aStepsTable = [
 		]
 	],
 	[
-		80,
-		79,
+		82,
+		81,
 		[
 			[
 				"name",
@@ -3006,8 +3082,8 @@ aStepsTable = [
 		]
 	],
 	[
+		84,
 		82,
-		80,
 		[
 			[
 				"name",
@@ -3044,8 +3120,8 @@ aStepsTable = [
 		]
 	],
 	[
-		83,
-		82,
+		85,
+		84,
 		[
 			[
 				"name",
@@ -3082,8 +3158,8 @@ aStepsTable = [
 		]
 	],
 	[
-		84,
-		83,
+		86,
+		85,
 		[
 			[
 				"name",
@@ -3120,8 +3196,8 @@ aStepsTable = [
 		]
 	],
 	[
-		85,
-		80,
+		87,
+		82,
 		[
 			[
 				"name",
@@ -3158,8 +3234,8 @@ aStepsTable = [
 		]
 	],
 	[
-		86,
-		85,
+		88,
+		87,
 		[
 			[
 				"name",
@@ -3196,8 +3272,8 @@ aStepsTable = [
 		]
 	],
 	[
-		87,
-		86,
+		89,
+		88,
 		[
 			[
 				"name",
@@ -3234,8 +3310,8 @@ aStepsTable = [
 		]
 	],
 	[
-		88,
-		80,
+		90,
+		82,
 		[
 			[
 				"name",
@@ -3272,8 +3348,8 @@ aStepsTable = [
 		]
 	],
 	[
-		89,
-		88,
+		91,
+		90,
 		[
 			[
 				"name",
@@ -3310,8 +3386,8 @@ aStepsTable = [
 		]
 	],
 	[
-		90,
-		89,
+		92,
+		91,
 		[
 			[
 				"name",
@@ -3348,8 +3424,8 @@ aStepsTable = [
 		]
 	],
 	[
-		91,
-		80,
+		93,
+		82,
 		[
 			[
 				"name",
@@ -3386,8 +3462,8 @@ aStepsTable = [
 		]
 	],
 	[
-		92,
-		91,
+		94,
+		93,
 		[
 			[
 				"name",
@@ -3424,8 +3500,8 @@ aStepsTable = [
 		]
 	],
 	[
-		93,
-		92,
+		95,
+		94,
 		[
 			[
 				"name",
@@ -3462,8 +3538,8 @@ aStepsTable = [
 		]
 	],
 	[
+		83,
 		81,
-		79,
 		[
 			[
 				"name",
@@ -3500,8 +3576,8 @@ aStepsTable = [
 		]
 	],
 	[
-		94,
-		73,
+		96,
+		75,
 		[
 			[
 				"name",
@@ -3538,8 +3614,8 @@ aStepsTable = [
 		]
 	],
 	[
+		76,
 		74,
-		72,
 		[
 			[
 				"name",
@@ -3576,7 +3652,7 @@ aStepsTable = [
 		]
 	],
 	[
-		95,
+		97,
 		1,
 		[
 			[
@@ -3614,8 +3690,8 @@ aStepsTable = [
 		]
 	],
 	[
-		96,
-		95,
+		98,
+		97,
 		[
 			[
 				"name",
@@ -3652,8 +3728,8 @@ aStepsTable = [
 		]
 	],
 	[
+		100,
 		98,
-		96,
 		[
 			[
 				"name",
@@ -3690,12 +3766,12 @@ aStepsTable = [
 		]
 	],
 	[
-		99,
-		96,
+		101,
+		98,
 		[
 			[
 				"name",
-				"oContainer.setfocus( <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">0</font></span> )"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oContainer.setfocus(0)</font></span>"
 			],
 			[
 				"active",
@@ -3723,13 +3799,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"oContainer.setfocus( 0 )"
+				"oContainer.setfocus(0)"
 			]
 		]
 	],
 	[
+		99,
 		97,
-		95,
 		[
 			[
 				"name",
@@ -3772,609 +3848,609 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		""
 	],
 	[
 		2,
 		1,
 		"load",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"file;;_RV_;;guilib.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"newobj",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"value;;_RV_;;;;_RV_;;value2;;_RV_;;qApp;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"newobj",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"value;;_RV_;;oView;;_RV_;;value2;;_RV_;;Qt3dwindow;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"newobj",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"value;;_RV_;;oWidget;;_RV_;;value2;;_RV_;;QWidget;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"assignment",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"leftside;;_RV_;;oContainer;;_RV_;;rightside;;_RV_;;oWidget.createWindowContainer(oView,oWidget,0);;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"newobj",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"value;;_RV_;;oRootEntity;;_RV_;;value2;;_RV_;;QEntity;;_RV_;;value3;;_RV_;;oContainer;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"newobj",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"value;;_RV_;;oFilter;;_RV_;;value2;;_RV_;;qallevents;;_RV_;;value3;;_RV_;;oView;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"callmethod",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oFilter;;_RV_;;name;;_RV_;;setKeyPressEvent;;_RV_;;parameters;;_RV_;;"+char(34)+"pKeyPress()"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"callmethod",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oView;;_RV_;;name;;_RV_;;installeventfilter;;_RV_;;parameters;;_RV_;;oFilter;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"newobj",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"value;;_RV_;;oInput;;_RV_;;value2;;_RV_;;QInputAspect;;_RV_;;value3;;_RV_;;oRootEntity;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"callmethod",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oView;;_RV_;;name;;_RV_;;registerAspect;;_RV_;;parameters;;_RV_;;oInput;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"assignment",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"leftside;;_RV_;;oCameraEntity;;_RV_;;rightside;;_RV_;;oView.Camera();;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"callmethod",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oCameraEntity;;_RV_;;name;;_RV_;;lens;;_RV_;;parameters;;_RV_;;).setPerspectiveProjection(45.0,16.0/9.0,0.1,1000.0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"callmethod",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oCameraEntity;;_RV_;;name;;_RV_;;setPosition;;_RV_;;parameters;;_RV_;; new QVector3D(0,0,20.0);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"callmethod",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oCameraEntity;;_RV_;;name;;_RV_;;setUpVector;;_RV_;;parameters;;_RV_;; new QVector3D(0,1,0);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"callmethod",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oCameraEntity;;_RV_;;name;;_RV_;;setViewCenter;;_RV_;;parameters;;_RV_;; new QVector3D(0,0,0);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"newobj",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"value;;_RV_;;oLightEntity;;_RV_;;value2;;_RV_;;QEntity;;_RV_;;value3;;_RV_;;oRootEntity;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"newobj",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"value;;_RV_;;oLight;;_RV_;;value2;;_RV_;;QPointLight;;_RV_;;value3;;_RV_;;oLightEntity;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		20,
 		1,
-		"accessobject",
-		"22/07/2021",
-		"01:45:00",
-		"value;;_RV_;;oLight.setColor( new QColor();;_RV_;;"
+		"expression",
+		"23/07/2021",
+		"06:46:03",
+		"value;;_RV_;;oLight.setColor;;_RV_;;value2;;_RV_;;1;;_RV_;;"
 	],
 	[
 		21,
 		1,
-		"callfunc",
-		"22/07/2021",
-		"01:45:00",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setRGB;;_RV_;;parameters;;_RV_;;255,255,255,255;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"accessobject",
+		"23/07/2021",
+		"06:46:03",
+		"value;;_RV_;;new QColor();;_RV_;;"
 	],
 	[
 		22,
 		1,
-		"freetyping",
-		"22/07/2021",
-		"01:45:00",
-		"value;;_RV_;;);;_RV_;;"
+		"callfunc",
+		"23/07/2021",
+		"06:46:03",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setRGB;;_RV_;;parameters;;_RV_;;255,255,255,255;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"callmethod",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oLight;;_RV_;;name;;_RV_;;setIntensity;;_RV_;;parameters;;_RV_;;1;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"callmethod",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oLightEntity;;_RV_;;name;;_RV_;;addComponent;;_RV_;;parameters;;_RV_;;oLight;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"newobj",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"value;;_RV_;;oLightTransform;;_RV_;;value2;;_RV_;;QTransform;;_RV_;;value3;;_RV_;;oLightEntity;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"callmethod",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oLightTransform;;_RV_;;name;;_RV_;;setTranslation;;_RV_;;parameters;;_RV_;;oCameraEntity.position();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"callmethod",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oLightEntity;;_RV_;;name;;_RV_;;addComponent;;_RV_;;parameters;;_RV_;;oLightTransform;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"newobj",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"value;;_RV_;;oCamController;;_RV_;;value2;;_RV_;;QFirstPersonCameraController;;_RV_;;value3;;_RV_;;oRootEntity;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"callmethod",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oCamController;;_RV_;;name;;_RV_;;setCamera;;_RV_;;parameters;;_RV_;;oCameraEntity;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		30,
 		1,
 		"callmethod",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oCamController;;_RV_;;name;;_RV_;;setEnabled;;_RV_;;parameters;;_RV_;;False;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"newobj",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"value;;_RV_;;oCube;;_RV_;;value2;;_RV_;;QCuboidMesh;;_RV_;;value3;;_RV_;;oRootEntity;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		32,
 		1,
 		"callfunc",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setXextent;;_RV_;;parameters;;_RV_;;2;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		33,
 		1,
 		"callfunc",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setYextent;;_RV_;;parameters;;_RV_;;2;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		34,
 		1,
 		"callfunc",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setZextent;;_RV_;;parameters;;_RV_;;3;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		35,
 		1,
 		"newobj",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"value;;_RV_;;oCubeTransform;;_RV_;;value2;;_RV_;;QTransform;;_RV_;;value3;;_RV_;;oCube;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		36,
 		1,
 		"callmethod",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oCubeTransform;;_RV_;;name;;_RV_;;setScale;;_RV_;;parameters;;_RV_;;2;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		37,
 		1,
 		"callmethod",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oCubeTransform;;_RV_;;name;;_RV_;;setTranslation;;_RV_;;parameters;;_RV_;; new QVector3D(3,3,3);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		38,
 		1,
 		"newobj",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"value;;_RV_;;oTextureLoader;;_RV_;;value2;;_RV_;;QTextureLoader;;_RV_;;value3;;_RV_;;oCube;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		39,
 		1,
 		"callmethod",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oTextureLoader;;_RV_;;name;;_RV_;;setSource;;_RV_;;parameters;;_RV_;; new QUrl("+char(34)+"file:///"+char(34)+"+currentdir()+"+char(34)+"/assets/texture/gold.jpg"+char(34)+");;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		40,
 		1,
 		"newobj",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"value;;_RV_;;oCubeMaterial;;_RV_;;value2;;_RV_;;QTextureMaterial;;_RV_;;value3;;_RV_;;oCube;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		41,
 		1,
 		"callmethod",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oCubeMaterial;;_RV_;;name;;_RV_;;setTexture;;_RV_;;parameters;;_RV_;;oTextureLoader;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		42,
 		1,
 		"newobj",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"value;;_RV_;;oCubeEntity;;_RV_;;value2;;_RV_;;QEntity;;_RV_;;value3;;_RV_;;oRootEntity;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		43,
 		1,
 		"callmethod",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oCubeEntity;;_RV_;;name;;_RV_;;addComponent;;_RV_;;parameters;;_RV_;;oCube;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		44,
 		1,
 		"callmethod",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oCubeEntity;;_RV_;;name;;_RV_;;addComponent;;_RV_;;parameters;;_RV_;;oCubeMaterial;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		45,
 		1,
 		"callmethod",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oCubeEntity;;_RV_;;name;;_RV_;;addComponent;;_RV_;;parameters;;_RV_;;oCubeTransform;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		46,
 		1,
 		"newobj",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"value;;_RV_;;oPicker;;_RV_;;value2;;_RV_;;qObjectPicker;;_RV_;;value3;;_RV_;;oCube;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		47,
 		1,
 		"callfunc",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setclickedevent;;_RV_;;parameters;;_RV_;;"+char(34)+"pClick()"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		48,
 		1,
 		"callmethod",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oCubeEntity;;_RV_;;name;;_RV_;;addComponent;;_RV_;;parameters;;_RV_;;oPicker;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		49,
 		1,
 		"callmethod",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oView;;_RV_;;name;;_RV_;;setRootEntity;;_RV_;;parameters;;_RV_;;oRootEntity;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		50,
 		1,
 		"newobj",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"value;;_RV_;;oLayout;;_RV_;;value2;;_RV_;;QVBoxLayout;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		51,
 		1,
 		"callmethod",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oLayout;;_RV_;;name;;_RV_;;AddWidget;;_RV_;;parameters;;_RV_;;oContainer;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		52,
 		1,
 		"accessobject",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"value;;_RV_;;oWidget;;_RV_;;"
 	],
 	[
 		53,
 		1,
 		"callfunc",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setwindowtitle;;_RV_;;parameters;;_RV_;;"+char(34)+"Using Qt3D - Object Picker - Click on the Cube using the Mouse"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		54,
 		1,
 		"callfunc",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;resize;;_RV_;;parameters;;_RV_;;800,600;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		55,
 		1,
 		"callfunc",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:03",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setLayout;;_RV_;;parameters;;_RV_;;oLayout;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		56,
 		1,
 		"callfunc",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:04",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;showMaximized;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		57,
 		1,
 		"callmethod",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:04",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oContainer;;_RV_;;name;;_RV_;;setfocus;;_RV_;;parameters;;_RV_;;0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		58,
 		1,
 		"callfunc",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:04",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;exec;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		59,
 		1,
 		"func",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:04",
 		"name;;_RV_;;pKeyPress;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		60,
 		1,
 		"assignment",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:04",
 		"leftside;;_RV_;;nKey;;_RV_;;rightside;;_RV_;;oFilter.getkeycode();;_RV_;;"
 	],
 	[
 		61,
 		1,
 		"assignment",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:04",
 		"leftside;;_RV_;;oX;;_RV_;;rightside;;_RV_;;oCubeTransform.translation().x();;_RV_;;"
 	],
 	[
 		62,
 		1,
 		"assignment",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:04",
 		"leftside;;_RV_;;oY;;_RV_;;rightside;;_RV_;;oCubeTransform.translation().y();;_RV_;;"
 	],
 	[
 		63,
 		1,
 		"assignment",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:04",
 		"leftside;;_RV_;;oZ;;_RV_;;rightside;;_RV_;;oCubeTransform.translation().z();;_RV_;;"
 	],
 	[
 		64,
 		1,
 		"switch",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:04",
 		"variable;;_RV_;;nKey;;_RV_;;"
 	],
 	[
 		65,
 		1,
 		"case",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:04",
 		"value;;_RV_;;Qt_Key_Right;;_RV_;;"
 	],
 	[
 		66,
 		1,
 		"freetyping",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:04",
 		"value;;_RV_;;oX++;;_RV_;;"
 	],
 	[
 		67,
 		1,
 		"case",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:04",
 		"value;;_RV_;;Qt_Key_Left;;_RV_;;"
 	],
 	[
 		68,
 		1,
 		"freetyping",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:04",
 		"value;;_RV_;;oX--;;_RV_;;"
 	],
 	[
 		69,
 		1,
 		"case",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:04",
 		"value;;_RV_;;Qt_Key_Up;;_RV_;;"
 	],
 	[
 		70,
 		1,
 		"freetyping",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:04",
 		"value;;_RV_;;oY++;;_RV_;;"
 	],
 	[
 		71,
 		1,
 		"case",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:04",
 		"value;;_RV_;;Qt_Key_Down;;_RV_;;"
 	],
 	[
 		72,
 		1,
 		"freetyping",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:04",
 		"value;;_RV_;;oY--;;_RV_;;"
 	],
 	[
 		73,
 		1,
 		"callmethod",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:04",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oCubeTransform;;_RV_;;name;;_RV_;;setTranslation;;_RV_;;parameters;;_RV_;; new QVector3D(oX,oY,oZ);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		74,
 		1,
 		"func",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:04",
 		"name;;_RV_;;pClick;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		75,
 		1,
 		"callfunc",
-		"22/07/2021",
-		"01:45:00",
+		"23/07/2021",
+		"06:46:04",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;msginfo;;_RV_;;parameters;;_RV_;;"+char(34)+"Event"+char(34)+","+char(34)+"Click"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		76,
 		1,
-		"callmethod",
-		"22/07/2021",
-		"01:45:00",
-		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oContainer;;_RV_;;name;;_RV_;;setfocus;;_RV_;;parameters;;_RV_;;0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"freetyping",
+		"23/07/2021",
+		"06:46:04",
+		"value;;_RV_;;oContainer.setfocus(0);;_RV_;;"
 	]
 ]
 
