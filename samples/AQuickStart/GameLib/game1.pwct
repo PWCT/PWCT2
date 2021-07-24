@@ -6014,944 +6014,944 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		""
 	],
 	[
 		2,
 		1,
 		"load",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"file;;_RV_;;gamelib.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"callfunc",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_init;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"callfunc",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_init_image_addon;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;display;;_RV_;;rightside;;_RV_;;al_create_display(640,480);;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"callfunc",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_show_native_message_box;;_RV_;;parameters;;_RV_;;display,"+char(34)+"Hello"+char(34)+","+char(34)+"Welcome"+char(34)+","+char(34)+"Using Allegro from the Ring programming language"+char(34)+","+char(34)+""+char(34)+",0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"callfunc",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_clear_to_color;;_RV_;;parameters;;_RV_;;al_map_rgb(0,0,255);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;BOUNCER_SIZE;;_RV_;;rightside;;_RV_;;40;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;bouncer_x;;_RV_;;rightside;;_RV_;;10;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;bouncer_y;;_RV_;;rightside;;_RV_;;20;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;bouncer;;_RV_;;rightside;;_RV_;;al_create_bitmap(BOUNCER_SIZE,BOUNCER_SIZE);;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"callfunc",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_set_target_bitmap;;_RV_;;parameters;;_RV_;;bouncer;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"callfunc",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_clear_to_color;;_RV_;;parameters;;_RV_;;al_map_rgb(255,0,255);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"forloop",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"start;;_RV_;;x = 1;;_RV_;;to;;_RV_;;30;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"freetyping",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"value;;_RV_;;bouncer_x += x;;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"freetyping",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"value;;_RV_;;bouncer_y += x;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"callfunc",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_set_target_bitmap;;_RV_;;parameters;;_RV_;;al_get_backbuffer(display);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"callfunc",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_clear_to_color;;_RV_;;parameters;;_RV_;;al_map_rgb(0,0,0);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"callfunc",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_draw_bitmap;;_RV_;;parameters;;_RV_;;bouncer,bouncer_x,bouncer_y,0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"callfunc",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_draw_bitmap;;_RV_;;parameters;;_RV_;;bouncer,200+bouncer_x,200+bouncer_y,0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"callfunc",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_flip_display;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"callfunc",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_rest;;_RV_;;parameters;;_RV_;;0.1;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"callfunc",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_clear_to_color;;_RV_;;parameters;;_RV_;;al_map_rgb(255,255,255);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;image;;_RV_;;rightside;;_RV_;;al_load_bitmap("+char(34)+"man2.jpg"+char(34)+");;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"callfunc",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_draw_bitmap;;_RV_;;parameters;;_RV_;;image,200,200,0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"callfunc",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_flip_display;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"callfunc",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_rest;;_RV_;;parameters;;_RV_;;2;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;event_queue;;_RV_;;rightside;;_RV_;;al_create_event_queue();;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"callfunc",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_register_event_source;;_RV_;;parameters;;_RV_;;event_queue,al_get_display_event_source(display);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		30,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;ev;;_RV_;;rightside;;_RV_;;al_new_allegro_event();;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;timeout;;_RV_;;rightside;;_RV_;;al_new_allegro_timeout();;_RV_;;"
 	],
 	[
 		32,
 		1,
 		"callfunc",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_init_timeout;;_RV_;;parameters;;_RV_;;timeout,0.06;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		33,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;FPS;;_RV_;;rightside;;_RV_;;60;;_RV_;;"
 	],
 	[
 		34,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;timer;;_RV_;;rightside;;_RV_;;al_create_timer(1.0/FPS);;_RV_;;"
 	],
 	[
 		35,
 		1,
 		"callfunc",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_register_event_source;;_RV_;;parameters;;_RV_;;event_queue,al_get_timer_event_source(timer);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		36,
 		1,
 		"callfunc",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_start_timer;;_RV_;;parameters;;_RV_;;timer;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		37,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;redraw;;_RV_;;rightside;;_RV_;;true;;_RV_;;"
 	],
 	[
 		38,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;SCREEN_W;;_RV_;;rightside;;_RV_;;640;;_RV_;;"
 	],
 	[
 		39,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;SCREEN_H;;_RV_;;rightside;;_RV_;;480;;_RV_;;"
 	],
 	[
 		40,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;BOUNCER_SIZE;;_RV_;;rightside;;_RV_;;32;;_RV_;;"
 	],
 	[
 		41,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;bouncer_x;;_RV_;;rightside;;_RV_;;SCREEN_W/2.0-BOUNCER_SIZE/2.0;;_RV_;;"
 	],
 	[
 		42,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;bouncer_y;;_RV_;;rightside;;_RV_;;SCREEN_H/2.0-BOUNCER_SIZE/2.0;;_RV_;;"
 	],
 	[
 		43,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;bouncer_dx;;_RV_;;rightside;;_RV_;;-4.0;;_RV_;;"
 	],
 	[
 		44,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;bouncer_dy;;_RV_;;rightside;;_RV_;;4.0;;_RV_;;"
 	],
 	[
 		45,
 		1,
 		"callfunc",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_install_mouse;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		46,
 		1,
 		"callfunc",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_register_event_source;;_RV_;;parameters;;_RV_;;event_queue,al_get_mouse_event_source();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		47,
 		1,
 		"callfunc",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_install_keyboard;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		48,
 		1,
 		"callfunc",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_register_event_source;;_RV_;;parameters;;_RV_;;event_queue,al_get_keyboard_event_source();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		49,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;KEY_UP;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		50,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;KEY_DOWN;;_RV_;;rightside;;_RV_;;2;;_RV_;;"
 	],
 	[
 		51,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;KEY_LEFT;;_RV_;;rightside;;_RV_;;3;;_RV_;;"
 	],
 	[
 		52,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;KEY_RIGHT;;_RV_;;rightside;;_RV_;;4;;_RV_;;"
 	],
 	[
 		53,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;Key;;_RV_;;rightside;;_RV_;;[false,false,false,false];;_RV_;;"
 	],
 	[
 		54,
 		1,
 		"whileloop",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"condition;;_RV_;;true;;_RV_;;"
 	],
 	[
 		55,
 		1,
 		"callfunc",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_wait_for_event_until;;_RV_;;parameters;;_RV_;;event_queue,ev,timeout;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		56,
 		1,
 		"switch",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"variable;;_RV_;;al_get_allegro_event_type(ev);;_RV_;;"
 	],
 	[
 		57,
 		1,
 		"case",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"value;;_RV_;;ALLEGRO_EVENT_DISPLAY_CLOSE;;_RV_;;"
 	],
 	[
 		58,
 		1,
 		"exit",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"value;;_RV_;;1;;_RV_;;"
 	],
 	[
 		59,
 		1,
 		"case",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"value;;_RV_;;ALLEGRO_EVENT_TIMER;;_RV_;;"
 	],
 	[
 		60,
 		1,
 		"",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		""
 	],
 	[
 		61,
 		1,
 		"ifstatement",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"condition;;_RV_;;bouncer_x < 0 OR bouncer_x > SCREEN_W-BOUNCER_SIZE;;_RV_;;"
 	],
 	[
 		62,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:31",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;bouncer_dx;;_RV_;;rightside;;_RV_;;-bouncer_dx;;_RV_;;"
 	],
 	[
 		63,
 		1,
 		"ifstatement",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"condition;;_RV_;;bouncer_y < 0 OR bouncer_y > SCREEN_H-BOUNCER_SIZE;;_RV_;;"
 	],
 	[
 		64,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;bouncer_dy;;_RV_;;rightside;;_RV_;;-bouncer_dy;;_RV_;;"
 	],
 	[
 		65,
 		1,
 		"freetyping",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"value;;_RV_;;bouncer_x += bouncer_dx;;_RV_;;"
 	],
 	[
 		66,
 		1,
 		"freetyping",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"value;;_RV_;;bouncer_y += bouncer_dy;;_RV_;;"
 	],
 	[
 		67,
 		1,
 		"",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		""
 	],
 	[
 		68,
 		1,
 		"ifstatement",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"condition;;_RV_;;key[KEY_UP] AND bouncer_y >= 4.0;;_RV_;;"
 	],
 	[
 		69,
 		1,
 		"freetyping",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"value;;_RV_;;bouncer_y -= 4.0;;_RV_;;"
 	],
 	[
 		70,
 		1,
 		"ifstatement",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"condition;;_RV_;;key[KEY_DOWN] AND bouncer_y <= SCREEN_H-BOUNCER_SIZE-4.0;;_RV_;;"
 	],
 	[
 		71,
 		1,
 		"freetyping",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"value;;_RV_;;bouncer_y += 4.0;;_RV_;;"
 	],
 	[
 		72,
 		1,
 		"ifstatement",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"condition;;_RV_;;key[KEY_LEFT] AND bouncer_x >= 4.0;;_RV_;;"
 	],
 	[
 		73,
 		1,
 		"freetyping",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"value;;_RV_;;bouncer_x -= 4.0;;_RV_;;"
 	],
 	[
 		74,
 		1,
 		"ifstatement",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"condition;;_RV_;;key[KEY_RIGHT] AND bouncer_x <= SCREEN_W-BOUNCER_SIZE-4.0;;_RV_;;"
 	],
 	[
 		75,
 		1,
 		"freetyping",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"value;;_RV_;;bouncer_x += 4.0;;_RV_;;"
 	],
 	[
 		76,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;redraw;;_RV_;;rightside;;_RV_;;true;;_RV_;;"
 	],
 	[
 		77,
 		1,
 		"case",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"value;;_RV_;;ALLEGRO_EVENT_MOUSE_AXES;;_RV_;;"
 	],
 	[
 		78,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;bouncer_x;;_RV_;;rightside;;_RV_;;al_get_allegro_event_mouse_x(ev);;_RV_;;"
 	],
 	[
 		79,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;bouncer_y;;_RV_;;rightside;;_RV_;;al_get_allegro_event_mouse_y(ev);;_RV_;;"
 	],
 	[
 		80,
 		1,
 		"case",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"value;;_RV_;;ALLEGRO_EVENT_MOUSE_ENTER_DISPLAY;;_RV_;;"
 	],
 	[
 		81,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;bouncer_x;;_RV_;;rightside;;_RV_;;al_get_allegro_event_mouse_x(ev);;_RV_;;"
 	],
 	[
 		82,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;bouncer_y;;_RV_;;rightside;;_RV_;;al_get_allegro_event_mouse_y(ev);;_RV_;;"
 	],
 	[
 		83,
 		1,
 		"case",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"value;;_RV_;;ALLEGRO_EVENT_MOUSE_BUTTON_UP;;_RV_;;"
 	],
 	[
 		84,
 		1,
 		"exit",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"value;;_RV_;;1;;_RV_;;"
 	],
 	[
 		85,
 		1,
 		"case",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"value;;_RV_;;ALLEGRO_EVENT_KEY_DOWN;;_RV_;;"
 	],
 	[
 		86,
 		1,
 		"switch",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"variable;;_RV_;;al_get_allegro_event_keyboard_keycode(ev);;_RV_;;"
 	],
 	[
 		87,
 		1,
 		"case",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"value;;_RV_;;ALLEGRO_KEY_UP;;_RV_;;"
 	],
 	[
 		88,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;key[KEY_UP];;_RV_;;rightside;;_RV_;;true;;_RV_;;"
 	],
 	[
 		89,
 		1,
 		"case",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"value;;_RV_;;ALLEGRO_KEY_DOWN;;_RV_;;"
 	],
 	[
 		90,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;key[KEY_DOWN];;_RV_;;rightside;;_RV_;;true;;_RV_;;"
 	],
 	[
 		91,
 		1,
 		"case",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"value;;_RV_;;ALLEGRO_KEY_LEFT;;_RV_;;"
 	],
 	[
 		92,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;key[KEY_LEFT];;_RV_;;rightside;;_RV_;;true;;_RV_;;"
 	],
 	[
 		93,
 		1,
 		"case",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"value;;_RV_;;ALLEGRO_KEY_RIGHT;;_RV_;;"
 	],
 	[
 		94,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;key[KEY_RIGHT];;_RV_;;rightside;;_RV_;;true;;_RV_;;"
 	],
 	[
 		95,
 		1,
 		"case",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"value;;_RV_;;ALLEGRO_EVENT_KEY_UP;;_RV_;;"
 	],
 	[
 		96,
 		1,
 		"switch",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"variable;;_RV_;;al_get_allegro_event_keyboard_keycode(ev);;_RV_;;"
 	],
 	[
 		97,
 		1,
 		"case",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"value;;_RV_;;ALLEGRO_KEY_UP;;_RV_;;"
 	],
 	[
 		98,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;key[KEY_UP];;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		99,
 		1,
 		"case",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"value;;_RV_;;ALLEGRO_KEY_DOWN;;_RV_;;"
 	],
 	[
 		100,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;key[KEY_DOWN];;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		101,
 		1,
 		"case",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"value;;_RV_;;ALLEGRO_KEY_LEFT;;_RV_;;"
 	],
 	[
 		102,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;key[KEY_LEFT];;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		103,
 		1,
 		"case",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"value;;_RV_;;ALLEGRO_KEY_RIGHT;;_RV_;;"
 	],
 	[
 		104,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;key[KEY_RIGHT];;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		105,
 		1,
 		"case",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"value;;_RV_;;ALLEGRO_KEY_ESCAPE;;_RV_;;"
 	],
 	[
 		106,
 		1,
 		"exit",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"value;;_RV_;;1;;_RV_;;"
 	],
 	[
 		107,
 		1,
 		"ifstatement",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"condition;;_RV_;;redraw AND al_is_event_queue_empty(event_queue);;_RV_;;"
 	],
 	[
 		108,
 		1,
 		"assignment",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"leftside;;_RV_;;redraw;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		109,
 		1,
 		"callfunc",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_clear_to_color;;_RV_;;parameters;;_RV_;;al_map_rgb(0,0,0);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		110,
 		1,
 		"callfunc",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_draw_bitmap;;_RV_;;parameters;;_RV_;;bouncer,bouncer_x,bouncer_y,0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		111,
 		1,
 		"callfunc",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_flip_display;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		112,
 		1,
 		"callfunc",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_destroy_timer;;_RV_;;parameters;;_RV_;;timer;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		113,
 		1,
 		"callfunc",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_destroy_allegro_event;;_RV_;;parameters;;_RV_;;ev;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		114,
 		1,
 		"callfunc",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_destroy_allegro_timeout;;_RV_;;parameters;;_RV_;;timeout;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		115,
 		1,
 		"callfunc",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_destroy_event_queue;;_RV_;;parameters;;_RV_;;event_queue;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		116,
 		1,
 		"callfunc",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_destroy_bitmap;;_RV_;;parameters;;_RV_;;bouncer;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		117,
 		1,
 		"callfunc",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_destroy_bitmap;;_RV_;;parameters;;_RV_;;image;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		118,
 		1,
 		"callfunc",
-		"23/07/2021",
-		"06:48:32",
+		"24/07/2021",
+		"05:02:15",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;al_destroy_display;;_RV_;;parameters;;_RV_;;display;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	]
 ]
