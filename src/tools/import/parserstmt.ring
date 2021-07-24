@@ -313,7 +313,7 @@ class ParserStmt
 			clearTextBuffer()
 			nexttoken()
 			x = 1 
-			if isendline() = 0 {
+			if isendline() = 0 and isComment() = 0 {
 				/* Generate Code */
 				nAssignmentFlag = 0 
 				x = expr()
