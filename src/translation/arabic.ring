@@ -220,6 +220,8 @@
 # Steps Colors Window
 
 	T_SC_WINDOWTITLE = "نافذة التخصيص"
+	T_SC_COLORSTAB = "الألوان"
+	T_SC_OPTIONSTAB = "خيارات"
 	T_SC_STEPTYPE = "نوع الخطوة"
 	T_SC_TEXTCOLOR = "لون النص"
 	T_SC_BACKCOLOR = "لون الخلفية"

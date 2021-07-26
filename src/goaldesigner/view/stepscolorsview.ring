@@ -244,10 +244,9 @@ class StepsColorsView from WindowsViewParent
 			setclickevent(Method(:closeAction))
 		}
 
-		LayoutGeneral = new qHBoxlayout() {
+		LayoutGeneral = new qVBoxlayout() {
 			AddLayout(layoutStepsTreeBackColor)
 			AddLayout(LayoutIndentation)
-			AddWidget(checkStepsTreeLines)
 		}
 
 		LayoutAllColors = new qVBoxlayout() {
@@ -262,6 +261,7 @@ class StepsColorsView from WindowsViewParent
 		}
 
 		LayoutAllOptions = new qVBoxlayout() {
+			AddWidget(checkStepsTreeLines)
 			AddWidget(checkAutoRun)
 			AddWidget(checkOpenFilesInNewTabs)
 			AddWidget(checkOpenInteractionsInNewWindows)
@@ -278,8 +278,8 @@ class StepsColorsView from WindowsViewParent
 		pageOptions.setLayout(layoutAllOptions)
 
 		tab1 = new qtabwidget(win) {
-			inserttab(0,pageColors,"Colors")
-			inserttab(1,pageOptions,"Options")
+			inserttab(0,pageColors,T_SC_COLORSTAB)
+			inserttab(1,pageOptions,T_SC_OPTIONSTAB)
 		}
 
 		LayoutAll = new qVBoxlayout() {

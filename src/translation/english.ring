@@ -222,6 +222,8 @@
 # Steps Colors Window
 
 	T_SC_WINDOWTITLE = "Customization Window"
+	T_SC_COLORSTAB = "Colors"
+	T_SC_OPTIONSTAB = "Options"
 	T_SC_STEPTYPE = "Step Type"
 	T_SC_TEXTCOLOR = "Text Color"
 	T_SC_BACKCOLOR = "Back Color"
