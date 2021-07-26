@@ -18,18 +18,21 @@ class StepsColorsView from WindowsViewParent
 		setLayoutDirection(T_LAYOUTDIRECTION)
 		setWindowTitle(T_SC_WINDOWTITLE) # "Customization Window"
 
+		pageColors = new QWidget() 
+		pageOptions = new QWidget()
+
 		# Titles
 
-		labelType =  new qlabel(win) {
+		labelType =  new qlabel(pageColors) {
 			setText(T_SC_STEPTYPE) # "Step Type"
 			setminimumwidth(nMinimumWidth)
 		}
 
-		labelTextColor =  new qlabel(win) {
+		labelTextColor =  new qlabel(pageColors) {
 			setText(T_SC_TEXTCOLOR) # "Text Color"
 		}
 
-		labelBackColor =  new qlabel(win) {
+		labelBackColor =  new qlabel(pageColors) {
 			setText(T_SC_BACKCOLOR) # "Back Color"
 		}
 
@@ -41,16 +44,16 @@ class StepsColorsView from WindowsViewParent
 
 		# Step Type : Comment 
 
-		labelComment =  new qlabel(win) {
+		labelComment =  new qlabel(pageColors) {
 			setText(T_SC_TYPECOMMENT) # " This is a comment! "
 			setminimumwidth(nMinimumWidth)
 		}
-		btnCommentText = new qpushbutton(win) {
+		btnCommentText = new qpushbutton(pageColors) {
 			setText(" :: ")
 			setStyleSheet("background-color:" + C_STEPCOLOR_COMMENT_TEXT )
 			setClickevent(Method("ColorAction(1)"))
 		}
-		btnCommentbackcolor = new qpushbutton(win) {
+		btnCommentbackcolor = new qpushbutton(pageColors) {
 			setText(" :: ")
 			setStyleSheet("background-color:" + C_STEPCOLOR_COMMENT_BACKCOLOR )
 			setClickevent(Method("ColorAction(2)"))
@@ -64,16 +67,16 @@ class StepsColorsView from WindowsViewParent
 
 		# Step Type : Root 
 
-		labelRoot =  new qlabel(win) {
+		labelRoot =  new qlabel(pageColors) {
 			setText(T_SC_TYPEROOT) # " The first step generated from Interaction "
 			setminimumwidth(nMinimumWidth)
 		}
-		btnRootText = new qpushbutton(win) {
+		btnRootText = new qpushbutton(pageColors) {
 			setText(" :: ")
 			setStyleSheet("background-color:" + C_STEPCOLOR_ROOT_TEXT )
 			setClickevent(Method("ColorAction(3)"))
 		}
-		btnRootbackcolor = new qpushbutton(win) {
+		btnRootbackcolor = new qpushbutton(pageColors) {
 			setText(" :: ")
 			setStyleSheet("background-color:" + C_STEPCOLOR_ROOT_BACKCOLOR )
 			setClickevent(Method("ColorAction(4)"))
@@ -87,16 +90,16 @@ class StepsColorsView from WindowsViewParent
 
 		# Step Type : Allow Interaction
 
-		labelAllowInteraction =  new qlabel(win) {
+		labelAllowInteraction =  new qlabel(pageColors) {
 			setText(T_SC_TYPEALLOW) # "The generated step Allows Interaction"
 			setminimumwidth(nMinimumWidth)
 		}
-		btnAllowInteractionText = new qpushbutton(win) {
+		btnAllowInteractionText = new qpushbutton(pageColors) {
 			setText(" :: ")
 			setStyleSheet("background-color:" + C_STEPCOLOR_ALLOWINTERACTION_TEXT )
 			setClickevent(Method("ColorAction(5)"))
 		}
-		btnAllowInteractionbackcolor = new qpushbutton(win) {
+		btnAllowInteractionbackcolor = new qpushbutton(pageColors) {
 			setText(" :: ")
 			setStyleSheet("background-color:" + C_STEPCOLOR_ALLOWINTERACTION_BACKCOLOR )
 			setClickevent(Method("ColorAction(6)"))
@@ -110,16 +113,16 @@ class StepsColorsView from WindowsViewParent
 
 		# Step Type : GeneratedLeaf
 
-		labelLeaf =  new qlabel(win) {
+		labelLeaf =  new qlabel(pageColors) {
 			setText(T_SC_TYPELEAF) # "The generated step is Leaf"
 			setminimumwidth(nMinimumWidth)
 		}
-		btnLeafText = new qpushbutton(win) {
+		btnLeafText = new qpushbutton(pageColors) {
 			setText(" :: ")
 			setStyleSheet("background-color:" + C_STEPCOLOR_INFO_TEXT )
 			setClickevent(Method("ColorAction(7)"))
 		}
-		btnLeafbackcolor = new qpushbutton(win) {
+		btnLeafbackcolor = new qpushbutton(pageColors) {
 			setText(" :: ")
 			setStyleSheet("background-color:" + C_STEPCOLOR_INFO_BACKCOLOR )
 			setClickevent(Method("ColorAction(8)"))
@@ -133,16 +136,16 @@ class StepsColorsView from WindowsViewParent
 
 		# Step Type : Written Data
 
-		labelData =  new qlabel(win) {
+		labelData =  new qlabel(pageColors) {
 			setText(T_SC_TYPEDATA) # "Written Data In Interaction Pages"
 			setminimumwidth(nMinimumWidth)
 		}
-		btnDataText = new qpushbutton(win) {
+		btnDataText = new qpushbutton(pageColors) {
 			setText(" :: ")
 			setStyleSheet("background-color:" + C_STEPCOLOR_DATA_TEXT )
 			setClickevent(Method("ColorAction(9)"))
 		}
-		btnDatabackcolor = new qpushbutton(win) {
+		btnDatabackcolor = new qpushbutton(pageColors) {
 			setText(" :: ")
 			setStyleSheet("background-color:" + C_STEPCOLOR_DATA_BACKCOLOR )
 			setClickevent(Method("ColorAction(10)"))
@@ -154,11 +157,11 @@ class StepsColorsView from WindowsViewParent
 			Addwidget(btnDatabackcolor)			
 		}
 
-		lblStepsTreeBackColor = new QLabel(win) {
+		lblStepsTreeBackColor = new QLabel(pageColors) {
 			setText(T_SC_STEPSTREEBACKCOLOR) # "Steps Tree BackColor"
 		}
 
-		btnStepsTreeBackColor = new QPushButton(win) {
+		btnStepsTreeBackColor = new QPushButton(pageColors) {
 			setText(" :: ")
 			setStyleSheet("background-color:" + C_STEPSTREE_BACKCOLOR )
 			setClickevent(Method("ColorAction(11)"))
@@ -169,11 +172,11 @@ class StepsColorsView from WindowsViewParent
 			Addwidget(btnStepsTreeBackColor)			
 		}
 
-		lblIndentation = new QLabel(win) {
+		lblIndentation = new QLabel(pageColors) {
 			setText(T_SC_INDENTATION) # "Indentation"
 		}
 
-		txtIndentation = new QLineEdit(win) {
+		txtIndentation = new QLineEdit(pageColors) {
 			setText(string(C_STEPSTREE_INDENTATION))
 			setTextChangedEvent(Method(:SetIndentation))
 		}
@@ -183,60 +186,60 @@ class StepsColorsView from WindowsViewParent
 			Addwidget(txtIndentation)			
 		}
 
-		checkStepsTreeLines = new QCheckBox(win) {
+		checkStepsTreeLines = new QCheckBox(pageColors) {
 			setText(T_SC_STEPSTREELINES) # "Show Steps Tree Lines"
 			setChecked(C_STEPSTREE_SHOWLINES)
 			setStateChangedEvent(Method(:StepsTreeLines))
 		} 
 
 
-		checkAutoRun = new QCheckBox(win) {
+		checkAutoRun = new QCheckBox(pageOptions) {
 			setText(T_SC_AUTORUN) # "Auto Run"
 			setChecked(C_STEPSTREE_AUTORUN)
 			setStateChangedEvent(Method(:AutoRun))
 		} 
-		checkOpenFilesInNewTabs = new QCheckBox(win) {
+		checkOpenFilesInNewTabs = new QCheckBox(pageOptions) {
 			setText(T_SC_OPENFILESINNEWTABS) # "Open Files In New Tabs"
 			setChecked(C_STEPSTREE_OPENFILESINNEWTABS)
 			setStateChangedEvent(Method(:OpenFilesInNewTabs))
 		} 
-		checkOpenInteractionsInNewWindows = new QCheckBox(win) {
+		checkOpenInteractionsInNewWindows = new QCheckBox(pageOptions) {
 			setText(T_SC_OPENINTERACTIONSINNEWWINDOWS) # "Open interaction pages in new windows"
 			setChecked(C_STEPSTREE_OPENINTERACTIONSINNEWWINDOWS)
 			setStateChangedEvent(Method(:OpenInteractionsInNewWindows))
 		} 
-		checkShowTimeMachine = new QCheckBox(win) {
+		checkShowTimeMachine = new QCheckBox(pageOptions) {
 			setText(T_SC_SHOWTIMEMACHINE) # "Show The Time Machine Options"
 			setChecked(C_STEPSTREE_SHOWTIMEMACHINE)
 			setStateChangedEvent(Method(:ShowTimeMachine))
 		} 
-		checkAvoidComponentsBrowser = new QCheckBox(win) {
+		checkAvoidComponentsBrowser = new QCheckBox(pageOptions) {
 			setText(T_SC_AVOIDCOMPONENTSBROWSERS) # "Avoid Components Browser"
 			setChecked(C_STEPSTREE_AVOIDCOMPONENTSBROWSER)
 			setStateChangedEvent(Method(:AvoidComponentsBrowser))
 		} 
-		checkAvoidComponentsBrowserAutoComplete = new QCheckBox(win) {
+		checkAvoidComponentsBrowserAutoComplete = new QCheckBox(pageOptions) {
 			setText(T_SC_AVOIDCOMPONENTSBROWSERSAUTOCOMPLETE) # "Avoid Components Browser Auto-Complete"
 			setChecked(C_STEPSTREE_AVOIDCOMPONENTSBROWSERAUTOCOMPLETE)
 			setStateChangedEvent(Method(:AvoidComponentsBrowserAC))
 		} 
-		checkComponentsBrowserAlwaysShowSearchWindow = new QCheckBox(win) {
+		checkComponentsBrowserAlwaysShowSearchWindow = new QCheckBox(pageOptions) {
 			setText(T_SC_COMPONENTSBROWSERALWAYSSHOWSEARCHWINDOW) # "Components Browser - Always Show Search Window"
 			setChecked(C_STEPSTREE_COMPONENTSBROWSERALWAYSSHOWSEARCHWINDOW)
 			setStateChangedEvent(Method(:ComponentsBrowserAShowSW))
 		} 
-		checkLightTreeLines = new QCheckBox(win) {
+		checkLightTreeLines = new QCheckBox(pageOptions) {
 			setText(T_SC_LIGHTTREELINES) # "Light Tree Lines"
 			setChecked(C_STEPSTREE_LIGHTTREELINES)
 			setStateChangedEvent(Method(:LightTreeLines))
 		}
-		checkAllowSyntaxErrors = new QCheckBox(win) {
+		checkAllowSyntaxErrors = new QCheckBox(pageOptions) {
 			setText(T_SC_ALLOWSYNTAXERRORS) # "Allow Syntax Errors in Interaction Pages"
 			setChecked(C_STEPSTREE_ALLOWSYNTAXERRORS)
 			setStateChangedEvent(Method(:AllowSyntaxErrors))
 		}  
 
-		btnClose = new qpushbutton(win) {
+		btnClose = new qpushbutton(pageOptions) {
 			setText(T_SC_CLOSE) # "Close"
 			setclickevent(Method(:closeAction))
 		}
@@ -247,7 +250,7 @@ class StepsColorsView from WindowsViewParent
 			AddWidget(checkStepsTreeLines)
 		}
 
-		LayoutAll = new qVBoxlayout() {
+		LayoutAllColors = new qVBoxlayout() {
 			Addlayout(layouttitles)
 			Addlayout(layoutHComment)
 			Addlayout(layoutHRoot)
@@ -255,6 +258,10 @@ class StepsColorsView from WindowsViewParent
 			Addlayout(layoutHLeaf)
 			Addlayout(layoutHData)
 			AddLayout(layoutGeneral)
+			insertStretch( -1, 1 )
+		}
+
+		LayoutAllOptions = new qVBoxlayout() {
 			AddWidget(checkAutoRun)
 			AddWidget(checkOpenFilesInNewTabs)
 			AddWidget(checkOpenInteractionsInNewWindows)
@@ -264,11 +271,23 @@ class StepsColorsView from WindowsViewParent
 			AddWidget(checkComponentsBrowserAlwaysShowSearchWindow)
 			AddWidget(checkLightTreeLines)
 			AddWidget(checkAllowSyntaxErrors)
-			AddWidget(btnClose)
 			insertStretch( -1, 1 )
 		}
+
+		pageColors.setLayout(layoutAllColors)
+		pageOptions.setLayout(layoutAllOptions)
+
+		tab1 = new qtabwidget(win) {
+			inserttab(0,pageColors,"Colors")
+			inserttab(1,pageOptions,"Options")
+		}
+
+		LayoutAll = new qVBoxlayout() {
+			AddWidget(Tab1)
+			AddWidget(btnClose)
+		}
 		
-		setLayout(layoutAll)
+		setLayout(LayoutAll)
 
 		setwindowflags(Qt_CustomizeWindowHint | Qt_WindowTitleHint | Qt_WindowStaysOnTopHint) 
 	}
