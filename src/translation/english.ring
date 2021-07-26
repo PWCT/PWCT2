@@ -245,6 +245,7 @@
 	T_SC_COMPONENTSBROWSERALWAYSSHOWSEARCHWINDOW = "Components Browser - Always Show Search Window"
 	T_SC_LIGHTTREELINES = "Light Tree Lines"
 	T_SC_ALLOWSYNTAXERRORS = "Allow Syntax Errors in Interaction Pages"
+	T_SC_NODEICON = "Steps Tree - Show Nodes Icon"
 
 # Components Browser Window
 

@@ -243,6 +243,7 @@
 	T_SC_COMPONENTSBROWSERALWAYSSHOWSEARCHWINDOW = "متصفح المكونات - دائما اظهر نافذة خاصة للبحث"
 	T_SC_LIGHTTREELINES = "خطوط الشجرة بلون فاتح"
 	T_SC_ALLOWSYNTAXERRORS = "السماح بالأخطاء النحوية فى الصفحات التفاعلية"
+	T_SC_NODEICON = "شجرة الخطوات - عرض ايقونة لكل عنصر"
 
 # Components Browser Window
 

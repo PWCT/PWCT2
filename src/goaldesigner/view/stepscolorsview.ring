@@ -240,7 +240,11 @@ class StepsColorsView from WindowsViewParent
 			setChecked(C_STEPSTREE_ALLOWSYNTAXERRORS)
 			setStateChangedEvent(Method(:AllowSyntaxErrors))
 		}  
-
+		checkNodeIcon = new QCheckBox(pageOptions) {
+			setText(T_SC_NODEICON) # "Steps Tree - Show Nodes Icon"
+			setChecked(C_STEPSTREE_NODEICON)
+			setStateChangedEvent(Method(:NodeIcon))
+		}  
 		btnClose = new qpushbutton(pageOptions) {
 			setText(T_SC_CLOSE) # "Close"
 			setclickevent(Method(:closeAction))
@@ -268,6 +272,7 @@ class StepsColorsView from WindowsViewParent
 			AddWidget(checkShowTimeMachine)
 			AddWidget(checkStepsTreeLines)
 			AddWidget(checkLightTreeLines)
+			AddWidget(checkNodeIcon)
 			AddWidget(checkOpenInteractionsInNewWindows)
 			AddWidget(checkAllowSyntaxErrors)
 			AddWidget(checkAvoidComponentsBrowser)
