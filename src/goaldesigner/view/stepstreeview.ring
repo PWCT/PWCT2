@@ -103,10 +103,15 @@ class StepsTreeView from TreeControl
 		else
 			oLabel = GetItemLabel(oItem)
 			if lIgnoreStatus { 
-				oLabel.SetText(this.NodeImage(C_LABELIMAGE_IGNORESTEP)+
+				cImage = this.NodeImage(C_LABELIMAGE_IGNORESTEP)
+				if cImage = "" {
+					cImage = "// "
+				}
+				oLabel.SetText(cImage+
 				this.oStyle.text(cText,this.cColor,this.cBackColor))
 			else
-				oLabel.SetText(this.NodeImage(C_LABELIMAGE_NODEICON)+
+				cImage = this.NodeImage(C_LABELIMAGE_NODEICON)
+				oLabel.SetText(cImage+
 				this.oStyle.text(cText,this.cColor,this.cBackColor))
 			}
 		}
@@ -240,7 +245,11 @@ class StepsTreeView from TreeControl
 					oLabel = GetItemLabel(item)
 					cText = ItemLabelTextWithoutImages(oLabel)
 					cText = PrepareNodeText(cText)
-					oLabel.SetText(this.NodeImage(C_LABELIMAGE_IGNORESTEP)+cText)
+					cImage = this.NodeImage(C_LABELIMAGE_IGNORESTEP)
+					if cImage = "" {
+						cImage = "// "
+					}
+					oLabel.SetText(cImage+cText)
 				else 
 					cText = item.text(0)
 					if left(cText,3) != "// " {
@@ -254,7 +263,8 @@ class StepsTreeView from TreeControl
 					oLabel = GetItemLabel(item)
 					cText = ItemLabelTextWithoutImages(oLabel)
 					cText = PrepareNodeText(cText)
-					oLabel.SetText(this.NodeImage(C_LABELIMAGE_NODEICON)+cText)
+					cImage = this.NodeImage(C_LABELIMAGE_NODEICON)
+					oLabel.SetText(cImage+cText)
 				else 
 					cText = item.text(0)
 					if left(cText,3) = "// " {
@@ -267,8 +277,14 @@ class StepsTreeView from TreeControl
 
 	func ItemLabelTextWithoutImages oLabel
 		cText = oLabel.Text()
-		cText = substr(cText,this.NodeImage(C_LABELIMAGE_NODEICON),"")
-		cText = substr(cText,this.NodeImage(C_LABELIMAGE_IGNORESTEP),"")
+		if C_STEPSTREE_NODEICON {		
+			cText = substr(cText,this.NodeImage(C_LABELIMAGE_NODEICON),"")
+			cText = substr(cText,this.NodeImage(C_LABELIMAGE_IGNORESTEP),"")
+		else 
+			if left(cText,3) = "// " {
+				cText = substr(cText,4)
+			}
+		}
 		return cText
 
 	func SetStepColor nStepType

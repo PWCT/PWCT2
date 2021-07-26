@@ -1096,6 +1096,10 @@ class GoalDesignerController from WindowsControllerParent
 						cImageCode = ""
 						if C_STEPSTREE_NODEICON {
 							cImageCode = "<img src='"+cImage+"'> "
+						else 
+							if lIgnore {
+								cImageCode = "// "
+							}
 						}
 						oLabel.settext(cImageCode+
 							`<span style="background-color:`+cBackColor+
