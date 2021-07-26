@@ -158,3 +158,6 @@ class StepsColorsController from WindowsControllerParent
 
 	func AllowSyntaxErrors
 		C_STEPSTREE_ALLOWSYNTAXERRORS = oView.checkAllowSyntaxErrors.checkState()
+
+	func closeAction 
+		oView.win.close()

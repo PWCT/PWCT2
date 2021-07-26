@@ -15,6 +15,8 @@ class StepsColorsView from WindowsViewParent
 
 	win = new qWidget() {
 	
+		resize(648,350)
+
 		setLayoutDirection(T_LAYOUTDIRECTION)
 		setWindowTitle(T_SC_WINDOWTITLE) # "Customization Window"
 
