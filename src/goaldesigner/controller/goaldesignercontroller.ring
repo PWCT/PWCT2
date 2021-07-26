@@ -1098,7 +1098,7 @@ class GoalDesignerController from WindowsControllerParent
 							cImageCode = "<img src='"+cImage+"'> "
 						else 
 							if lIgnore {
-								cImageCode = "// "
+								cImageCode = C_COMMENTMARK
 							}
 						}
 						oLabel.settext(cImageCode+
@@ -1114,7 +1114,7 @@ class GoalDesignerController from WindowsControllerParent
 					setItemWidget(oItem,0,oLabel)
 				else 
 					if lIgnore {
-						cPlainText = "// " + cPlainText
+						cPlainText = C_COMMENTMARK + cPlainText
 					}
 					oItem.setText(0,cPlainText)
 					if nInsertIndex = -1 {

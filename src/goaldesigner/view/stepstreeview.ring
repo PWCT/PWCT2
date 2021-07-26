@@ -105,7 +105,7 @@ class StepsTreeView from TreeControl
 			if lIgnoreStatus { 
 				cImage = this.NodeImage(C_LABELIMAGE_IGNORESTEP)
 				if cImage = "" {
-					cImage = "// "
+					cImage = C_COMMENTMARK
 				}
 				oLabel.SetText(cImage+
 				this.oStyle.text(cText,this.cColor,this.cBackColor))
@@ -247,13 +247,13 @@ class StepsTreeView from TreeControl
 					cText = PrepareNodeText(cText)
 					cImage = this.NodeImage(C_LABELIMAGE_IGNORESTEP)
 					if cImage = "" {
-						cImage = "// "
+						cImage = C_COMMENTMARK
 					}
 					oLabel.SetText(cImage+cText)
 				else 
 					cText = item.text(0)
-					if left(cText,3) != "// " {
-						item.settext(0,"// " + item.text(0))
+					if left(cText,C_COMMENTMARKSIZE) != C_COMMENTMARK {
+						item.settext(0,C_COMMENTMARK + item.text(0))
 					}
 				}
 			}
@@ -267,7 +267,7 @@ class StepsTreeView from TreeControl
 					oLabel.SetText(cImage+cText)
 				else 
 					cText = item.text(0)
-					if left(cText,3) = "// " {
+					if left(cText,C_COMMENTMARKSIZE) = C_COMMENTMARK {
 						cText = substr(cText,4)
 					}
 					item.settext(0,cText)
@@ -281,8 +281,8 @@ class StepsTreeView from TreeControl
 			cText = substr(cText,this.NodeImage(C_LABELIMAGE_NODEICON),"")
 			cText = substr(cText,this.NodeImage(C_LABELIMAGE_IGNORESTEP),"")
 		else 
-			if left(cText,3) = "// " {
-				cText = substr(cText,4)
+			if left(cText,C_COMMENTMARKSIZE) = C_COMMENTMARK {
+				cText = substr(cText,C_COMMENTMARKSIZE+1)
 			}
 		}
 		return cText
