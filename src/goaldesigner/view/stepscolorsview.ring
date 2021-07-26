@@ -263,16 +263,16 @@ class StepsColorsView from WindowsViewParent
 		}
 
 		LayoutAllOptions = new qVBoxlayout() {
-			AddWidget(checkStepsTreeLines)
 			AddWidget(checkAutoRun)
 			AddWidget(checkOpenFilesInNewTabs)
-			AddWidget(checkOpenInteractionsInNewWindows)
 			AddWidget(checkShowTimeMachine)
+			AddWidget(checkStepsTreeLines)
+			AddWidget(checkLightTreeLines)
+			AddWidget(checkOpenInteractionsInNewWindows)
+			AddWidget(checkAllowSyntaxErrors)
 			AddWidget(checkAvoidComponentsBrowser)
 			AddWidget(checkAvoidComponentsBrowserAutoComplete)
 			AddWidget(checkComponentsBrowserAlwaysShowSearchWindow)
-			AddWidget(checkLightTreeLines)
-			AddWidget(checkAllowSyntaxErrors)
 			insertStretch( -1, 1 )
 		}
 
