@@ -71,12 +71,18 @@ class TreeControl from qTreeWidget
 		oLabel = new qLabel(self) 
 		oLabel.resize(100,30)
 		SetLabelFont2(oLabel)
-		oLabel.settext(oStyle.image(cImage)+
+		oLabel.settext(NodeImage(cImage)+
 					oStyle.text(cText,cColor,cBackColor))					
+
 		oParent.addchild(oItem)
 		setItemWidget(oItem,0,oLabel)
 		AddToTree(nID,oItem)
 		oItem.setExpanded(true)
+
+	func NodeImage cImage 
+		if C_STEPSTREE_NODEICON {
+			return oStyle.image(cImage)
+		}
 
 	/*
 		The next method is the same as SerialAdd
@@ -127,7 +133,7 @@ class TreeControl from qTreeWidget
 				# when we cut steps and paste
 				# we don't see the change in the font!			
 				this.SetLabelFont(oLabel)
-				settext(this.oStyle.image(C_LABELIMAGE_NODEICON)+
+				settext(this.NodeImage(C_LABELIMAGE_NODEICON)+
 						this.oStyle.text(cText,this.cColor,this.cBackColor))
 			}
 			setItemWidget(oItem,0,oLabel)

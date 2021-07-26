@@ -61,7 +61,7 @@ class StepsTreeView from TreeControl
 		setheaderlabel(cControlHeader)
 		oLabel = new qLabel(self) {
 			resize(100,30)
-			settext(this.oStyle.image(C_LABELIMAGE_NODEICON)+
+			settext(this.NodeImage(C_LABELIMAGE_NODEICON)+
 				 this.oStyle.text(this.cStartPointText,C_STEPCOLOR_STARTPOINT,""))
 			this.SetLabelFont(oLabel)
 		}
@@ -103,10 +103,10 @@ class StepsTreeView from TreeControl
 		else
 			oLabel = GetItemLabel(oItem)
 			if lIgnoreStatus { 
-				oLabel.SetText(this.oStyle.image(C_LABELIMAGE_IGNORESTEP)+
+				oLabel.SetText(this.NodeImage(C_LABELIMAGE_IGNORESTEP)+
 				this.oStyle.text(cText,this.cColor,this.cBackColor))
 			else
-				oLabel.SetText(this.oStyle.image(C_LABELIMAGE_NODEICON)+
+				oLabel.SetText(this.NodeImage(C_LABELIMAGE_NODEICON)+
 				this.oStyle.text(cText,this.cColor,this.cBackColor))
 			}
 		}
@@ -240,7 +240,7 @@ class StepsTreeView from TreeControl
 					oLabel = GetItemLabel(item)
 					cText = ItemLabelTextWithoutImages(oLabel)
 					cText = PrepareNodeText(cText)
-					oLabel.SetText(this.oStyle.image(C_LABELIMAGE_IGNORESTEP)+cText)
+					oLabel.SetText(this.NodeImage(C_LABELIMAGE_IGNORESTEP)+cText)
 				else 
 					cText = item.text(0)
 					if left(cText,3) != "// " {
@@ -254,7 +254,7 @@ class StepsTreeView from TreeControl
 					oLabel = GetItemLabel(item)
 					cText = ItemLabelTextWithoutImages(oLabel)
 					cText = PrepareNodeText(cText)
-					oLabel.SetText(this.oStyle.image(C_LABELIMAGE_NODEICON)+cText)
+					oLabel.SetText(this.NodeImage(C_LABELIMAGE_NODEICON)+cText)
 				else 
 					cText = item.text(0)
 					if left(cText,3) = "// " {
@@ -267,8 +267,8 @@ class StepsTreeView from TreeControl
 
 	func ItemLabelTextWithoutImages oLabel
 		cText = oLabel.Text()
-		cText = substr(cText,this.oStyle.image(C_LABELIMAGE_NODEICON),"")
-		cText = substr(cText,this.oStyle.image(C_LABELIMAGE_IGNORESTEP),"")
+		cText = substr(cText,this.NodeImage(C_LABELIMAGE_NODEICON),"")
+		cText = substr(cText,this.NodeImage(C_LABELIMAGE_IGNORESTEP),"")
 		return cText
 
 	func SetStepColor nStepType

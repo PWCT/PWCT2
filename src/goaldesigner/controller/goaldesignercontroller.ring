@@ -1093,7 +1093,11 @@ class GoalDesignerController from WindowsControllerParent
 					else 
 						cText = substr(substr(cText,"C_STEPCOLOR_DATA_TEXT",C_STEPCOLOR_DATA_TEXT),
 							"C_STEPCOLOR_DATA_BACKCOLOR",C_STEPCOLOR_DATA_BACKCOLOR)
-						oLabel.settext("<img src='"+cImage+"'> "+
+						cImageCode = ""
+						if C_STEPSTREE_NODEICON {
+							cImageCode = "<img src='"+cImage+"'> "
+						}
+						oLabel.settext(cImageCode+
 							`<span style="background-color:`+cBackColor+
 							`"><font color="`+cColor+`">`+cText+
 							`</font></span>`)					
