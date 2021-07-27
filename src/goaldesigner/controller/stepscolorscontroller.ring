@@ -162,6 +162,3 @@ class StepsColorsController from WindowsControllerParent
 	func NodeIcon
 		C_STEPSTREE_NODEICON = oView.checkNodeIcon.checkState()
 		parent().refreshStepsTree()
-
-	func closeAction 
-		oView.win.close()
