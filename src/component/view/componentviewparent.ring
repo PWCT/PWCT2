@@ -14,10 +14,10 @@ class ComponentViewParent from WindowsViewParent
 	lFirstTextBox = True 	# For Setting the focus
 	oFirstText		# First Textbox
 
-	nTitleFontSize 		= 18
-	nTitleFixedHeight 	= 40
+	nTitleFontSize 		= C_COMPONENT_CONTROLSFONTSIZE 
+	nTitleFixedHeight 	= C_COMPONENT_CONTROLSFONTSIZE * 2.5
 	nControlsFontSize	= C_COMPONENT_CONTROLSFONTSIZE
-	nButtonsFontSize	= 12
+	nButtonsFontSize	= max(C_COMPONENT_CONTROLSFONTSIZE - 2,9)
 
 	nWindowWidth		= 300
 	nWindowHeight		= 100

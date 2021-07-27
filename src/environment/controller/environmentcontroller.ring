@@ -819,15 +819,15 @@ class EnvironmentController from WindowsControllerParent
 
 	func ComponentsBrowserFont
 		if isDockForComponentsBrowser() {
-			parent().componentsBrowserWindow().UpdateFontSize(max(nFontSize-2,11))
+			parent().componentsBrowserWindow().UpdateFontSize(max(nFontSize-4,11))
 		}
 
 	func FilesTreeFont
-		oView.oFilesTree.nFontSize = max(nFontSize-2,11)			
+		oView.oFilesTree.nFontSize = max(nFontSize-4,11)			
 		oView.oFilesTree.UpdateFontSize()
 
 	func ComponentsFont
-		C_COMPONENT_CONTROLSFONTSIZE = nFontSize-2
+		C_COMPONENT_CONTROLSFONTSIZE = nFontSize-4
 
 	func IsDockForComponentsBrowser
 		return oView.lDockForComponentsBrowser
