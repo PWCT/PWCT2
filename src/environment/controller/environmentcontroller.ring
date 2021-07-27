@@ -1301,11 +1301,11 @@ class EnvironmentController from WindowsControllerParent
 		oView.oFilesTree.setStyleSheet("color:white;")
 
 	func StyleColorBlue
-		C_STEPCOLOR_COMMENT_TEXT = '#ffaaff'
+		C_STEPCOLOR_COMMENT_TEXT = '#ffffff' # '#ffaaff'
 		C_STEPCOLOR_COMMENT_BACKCOLOR = ''
 		C_STEPCOLOR_ROOT_TEXT = '#ffffff'
 		C_STEPCOLOR_ROOT_BACKCOLOR = ''
-		C_STEPCOLOR_ALLOWINTERACTION_TEXT = '#ffff7f'
+		C_STEPCOLOR_ALLOWINTERACTION_TEXT = '#ffffff' # '#ffff7f'
 		C_STEPCOLOR_ALLOWINTERACTION_BACKCOLOR = ''
 		C_STEPCOLOR_INFO_TEXT = '#ffffff'
 		C_STEPCOLOR_INFO_BACKCOLOR = ''
