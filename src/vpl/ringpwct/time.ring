@@ -19,5 +19,5 @@ class timeComponentController from ComponentControllerParent
 class timeComponentView from ComponentViewParent
 	 
 		Title( T_CT_TIME_IP_TITLE )	
-		TextBox( T_CT_TIME_IP_VALUE , :value)
+		TextBoxValue( T_CT_TIME_IP_VALUE , :value, T_CT_TIME_IP_VALUE_DEFAULT)
 		PageButtons()
