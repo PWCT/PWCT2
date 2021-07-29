@@ -33,5 +33,5 @@ class newqappComponentController from ComponentControllerParent
 class newqappComponentView from ComponentViewParent
 	 
 		Title( T_CT_NEWQAPP_IP_TITLE )	
-		TextBox( T_CT_NEWQAPP_IP_VALUE , :value)
+		TextBoxValue( T_CT_NEWQAPP_IP_VALUE , :value, T_CT_NEWQAPP_IP_VALUE_DEFAULT)
 		PageButtons()
