@@ -14,3 +14,4 @@
 	# Interaction Page
 		T_CT_GETINPUT_IP_TITLE = "مكون الحصول على المدخلات"
 		T_CT_GETINPUT_IP_VARIABLE = "المتغير : "
+		T_CT_GETINPUT_IP_VARIABLE_DEFAULT = "القيمة"

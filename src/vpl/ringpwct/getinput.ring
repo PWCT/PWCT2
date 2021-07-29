@@ -21,7 +21,7 @@ Class GetInputComponentController from ComponentControllerParent
 class GetInputComponentView from ComponentViewParent
 	 
 		Title(T_CT_GETINPUT_IP_TITLE)				# "Get Input Component"
-		TextBox(T_CT_GETINPUT_IP_VARIABLE , :text)  	# "Variable : "
+		TextBoxValue(T_CT_GETINPUT_IP_VARIABLE , :text,	T_CT_GETINPUT_IP_VARIABLE_DEFAULT)  	# "Variable : "
 		PageButtons()
 
 

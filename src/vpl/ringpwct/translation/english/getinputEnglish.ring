@@ -14,3 +14,4 @@
 	# Interaction Page
 		T_CT_GETINPUT_IP_TITLE = "Get Input Component"
 		T_CT_GETINPUT_IP_VARIABLE = "Variable : "
+		T_CT_GETINPUT_IP_VARIABLE_DEFAULT = "cInput"
