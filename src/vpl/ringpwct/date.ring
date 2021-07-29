@@ -19,5 +19,5 @@ class dateComponentController from ComponentControllerParent
 class dateComponentView from ComponentViewParent
 	 
 		Title( T_CT_DATE_IP_TITLE )	
-		TextBox( T_CT_DATE_IP_VALUE , :value)
+		TextBoxValue( T_CT_DATE_IP_VALUE , :value,T_CT_DATE_IP_VALUE_DEFAULT)
 		PageButtons()
