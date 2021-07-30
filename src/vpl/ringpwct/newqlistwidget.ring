@@ -22,7 +22,7 @@ class newqlistwidgetComponentController from ComponentControllerParent
 				cCode = ""
 				if Variable(:value2) != NULL {
 					cCode += 'aItemsList =' + Variable(:value2) + nl +
-		                          'for x in aItemsList additem(x) next' + nl
+		                          'for x in aItemsList additem(""+x) next' + nl
 				}
 				if Variable(:value3) != NULL {
 					nTop = Variable(:value3)
