@@ -42,9 +42,9 @@ class newtimerComponentController from ComponentControllerParent
 class newtimerComponentView from ComponentViewParent
 	 
 		Title( T_CT_NEWTIMER_IP_TITLE )	
-		TextBox( T_CT_NEWTIMER_IP_VALUE , :value)
-		TextBox( T_CT_NEWTIMER_IP_VALUE2 , :value2)
-		TextBox( T_CT_NEWTIMER_IP_VALUE3 , :value3)
+		TextBoxValue( T_CT_NEWTIMER_IP_VALUE , :value, T_CT_NEWTIMER_IP_VALUE_DEFAULT)
+		TextBoxValue( T_CT_NEWTIMER_IP_VALUE2 , :value2, T_CT_NEWTIMER_IP_VALUE2_DEFAULT)
+		TextBoxValue( T_CT_NEWTIMER_IP_VALUE3 , :value3, "1000")
 		TextBoxValue( T_CT_NEWTIMER_IP_VALUE4 , :value4, C_INTERACTIONPAGE_EXPCONTAINSLITERAL)
 		CheckBox( T_CT_NEWTIMER_IP_VALUE5 , :value5)
 		PageButtons()
