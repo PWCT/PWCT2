@@ -20,15 +20,8 @@ class newqbuttongroupComponentController from ComponentControllerParent
 					cOutCode = Variable(:value) + " = " 
 				}
 				
-				cCode = ""
-				
-				if Variable(:value2) != NULL {
-					cCode += 'setStyleSheet(' + Variable(:value2) + ')' + nl
-				}
-				
-				
 				NewParentStep(  cOutStep + T_CT_NEWQBUTTONGROUP_ST_NEWQBUTTONGROUP  )
-					SetStepCode( cOutCode + "new QButtonGroup("+Variable(:value3)+") { " + nl + cCode )
+					SetStepCode( cOutCode + "new QButtonGroup("+Variable(:value3)+") { " + nl )
 					AllowInteraction()
 					NewStep( T_CT_NEWQBUTTONGROUP_ST_STARTHERE )
 					oStep = GetActiveStep()
@@ -41,7 +34,6 @@ class newqbuttongroupComponentController from ComponentControllerParent
 class newqbuttongroupComponentView from ComponentViewParent
 	 
 		Title( T_CT_NEWQBUTTONGROUP_IP_TITLE )	
-		TextBox( T_CT_NEWQBUTTONGROUP_IP_VALUE , :value)
-		TextBoxValue( T_CT_NEWQBUTTONGROUP_IP_VALUE2 , :value2, C_INTERACTIONPAGE_EXPCONTAINSLITERAL)
-		TextBox( T_CT_NEWQBUTTONGROUP_IP_VALUE3 , :value3)
+		TextBoxValue( T_CT_NEWQBUTTONGROUP_IP_VALUE , :value, T_CT_NEWQBUTTONGROUP_IP_VALUE_DEFAULT)
+		TextBoxValue( T_CT_NEWQBUTTONGROUP_IP_VALUE2 , :value3, T_CT_NEWQBUTTONGROUP_IP_VALUE2_DEFAULT)
 		PageButtons()
