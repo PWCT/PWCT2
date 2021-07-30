@@ -22,7 +22,7 @@ class newqcomboboxComponentController from ComponentControllerParent
 						cCode = ""
 						if Variable(:value2) != NULL {
 							cCode += 'aItemsList =' + Variable(:value2) + nl +
-				                          'for x in aItemsList additem(x,0) next' + nl
+				                          'for x in aItemsList additem(""+x,0) next' + nl
 						}
 						if Variable(:value3) != NULL {
 							nTop = Variable(:value3)
@@ -65,12 +65,12 @@ class newqcomboboxComponentController from ComponentControllerParent
 class newqcomboboxComponentView from ComponentViewParent
 	 
 		Title( T_CT_NEWQCOMBOBOX_IP_TITLE )	
-		TextBox( T_CT_NEWQCOMBOBOX_IP_VALUE , :value)
-		TextBox( T_CT_NEWQCOMBOBOX_IP_VALUE2 , :value2)
-		TextBox( T_CT_NEWQCOMBOBOX_IP_VALUE3 , :value3)
-		TextBox( T_CT_NEWQCOMBOBOX_IP_VALUE4 , :value4)
-		TextBox( T_CT_NEWQCOMBOBOX_IP_VALUE5 , :value5)
-		TextBox( T_CT_NEWQCOMBOBOX_IP_VALUE6 , :value6)
+		TextBoxValue( T_CT_NEWQCOMBOBOX_IP_VALUE , :value, T_CT_NEWQCOMBOBOX_IP_VALUE_DEFAULT)
+		TextBoxValue( T_CT_NEWQCOMBOBOX_IP_VALUE2 , :value2, "[]")
+		TextBoxValue( T_CT_NEWQCOMBOBOX_IP_VALUE3 , :value3, "10")
+		TextBoxValue( T_CT_NEWQCOMBOBOX_IP_VALUE4 , :value4, "10")
+		TextBoxValue( T_CT_NEWQCOMBOBOX_IP_VALUE5 , :value5, "100")
+		TextBoxValue( T_CT_NEWQCOMBOBOX_IP_VALUE6 , :value6, "30")
 		TextBoxValue( T_CT_NEWQCOMBOBOX_IP_VALUE7 , :value7, C_INTERACTIONPAGE_EXPCONTAINSLITERAL)
-		TextBox( T_CT_NEWQCOMBOBOX_IP_VALUE8 , :value8)
+		TextBoxValue( T_CT_NEWQCOMBOBOX_IP_VALUE8 , :value8, T_CT_NEWQCOMBOBOX_IP_VALUE8_DEFAULT)
 		PageButtons()
