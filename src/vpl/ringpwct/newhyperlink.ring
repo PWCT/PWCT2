@@ -47,8 +47,8 @@ class newhyperlinkComponentController from ComponentControllerParent
 					cCode += 'setStyleSheet(' + Variable(:value6) + ')' + nl
 				}
 				cCode += "setopenexternallinks(true)" + nl +
-				"_WebsiteURL = " + Variable(:value8) + nl +
-				"_WebsiteTitle = " +  Variable(:value9) + nl +
+				"_WebsiteTitle = " +  Variable(:value8) + nl +
+				"_WebsiteURL = " + Variable(:value9) + nl +
 				`settext('<a href="' + _WebsiteURL + '">' + _WebsiteTitle +'</a>')` + nl
 				
 				NewParentStep(  cOutStep + T_CT_NEWHYPERLINK_ST_NEWHYPERLINK  + " " + StepData(:value8))
