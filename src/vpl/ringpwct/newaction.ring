@@ -20,7 +20,7 @@ class newactionComponentController from ComponentControllerParent
 		}
 		cCode = ""
 		if Variable(:value3) != NULL {
-			cCode += char(9)+"setText(" + '"' + Variable(:value3) + '"' + ")" + nl
+			cCode += char(9)+"setText(" +  Variable(:value3) + ")" + nl
 		}
 		if Variable(:value4) != NULL {
 			cCode += char(9)+"setClickEvent(" + Variable(:value4) + ")" + nl
@@ -39,8 +39,8 @@ class newactionComponentController from ComponentControllerParent
 class newactionComponentView from ComponentViewParent
 	 
 		Title( T_CT_NEWACTION_IP_TITLE )	
-		TextBox( T_CT_NEWACTION_IP_VALUE , :value)
-		TextBox( T_CT_NEWACTION_IP_VALUE2 , :value2)
-		TextBox( T_CT_NEWACTION_IP_VALUE3 , :value3)
-		TextBox( T_CT_NEWACTION_IP_VALUE4 , :value4)
+		TextBoxValue( T_CT_NEWACTION_IP_VALUE , :value, T_CT_NEWACTION_IP_VALUE_DEFAULT)
+		TextBoxValue( T_CT_NEWACTION_IP_VALUE2 , :value2, T_CT_NEWACTION_IP_VALUE2_DEFAULT )
+		TextBoxValue( T_CT_NEWACTION_IP_VALUE3 , :value3, C_INTERACTIONPAGE_EXPCONTAINSLITERAL)
+		TextBoxValue( T_CT_NEWACTION_IP_VALUE4 , :value4, C_INTERACTIONPAGE_EXPCONTAINSLITERAL)
 		PageButtons()
