@@ -19,7 +19,7 @@ class newmenuComponentController from ComponentControllerParent
 			cOutCode = Variable(:value) + " = " 
 		}
 		NewParentStep(  cOutStep + T_CT_NEWMENU_ST_NEWMENU  )
-		SetStepCode( cOutCode + "addMenu("+'"'+Variable(:value2)+'"'+")" + nl + Variable(:value) + " { " + nl  )
+		SetStepCode( cOutCode + "addMenu("+Variable(:value2)+")" + nl + Variable(:value) + " { " + nl  )
 			AllowInteraction()
 			NewStep( T_CT_NEWMENU_ST_STARTHERE )
 			oStep = GetActiveStep()
@@ -32,6 +32,6 @@ class newmenuComponentController from ComponentControllerParent
 class newmenuComponentView from ComponentViewParent
 	 
 		Title( T_CT_NEWMENU_IP_TITLE )	
-		TextBox( T_CT_NEWMENU_IP_VALUE , :value)
-		TextBox( T_CT_NEWMENU_IP_VALUE2 , :value2)
+		TextBoxValue( T_CT_NEWMENU_IP_VALUE , :value, T_CT_NEWMENU_IP_VALUE_DEFAULT)
+		TextBoxValue( T_CT_NEWMENU_IP_VALUE2 , :value2, C_INTERACTIONPAGE_EXPCONTAINSLITERAL)
 		PageButtons()
