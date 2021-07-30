@@ -32,6 +32,6 @@ class newmenubarComponentController from ComponentControllerParent
 class newmenubarComponentView from ComponentViewParent
 	 
 		Title( T_CT_NEWMENUBAR_IP_TITLE )	
-		TextBox( T_CT_NEWMENUBAR_IP_VALUE , :value)
-		TextBox( T_CT_NEWMENUBAR_IP_VALUE2 , :value2)
+		TextBoxValue( T_CT_NEWMENUBAR_IP_VALUE , :value, T_CT_NEWMENUBAR_IP_VALUE_DEFAULT)
+		TextBoxValue( T_CT_NEWMENUBAR_IP_VALUE2 , :value2, T_CT_NEWMENUBAR_IP_VALUE2_DEFAULT)
 		PageButtons()
