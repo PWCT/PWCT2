@@ -44,10 +44,12 @@ class newhyperlinkComponentController from ComponentControllerParent
 				}
 				cCode += "resize("+nWidth+","+nHeight+")"+nl
 				if Variable(:value6) != NULL {
-					cCode += 'setStyleSheet("' + Variable(:value6) + '")' + nl
+					cCode += 'setStyleSheet(' + Variable(:value6) + ')' + nl
 				}
-				cCode += "setopenexternallinks(true)" + nl + 
-				`settext('<a href="` + Variable(:value8) +`">`+ Variable(:value9) +`</a>')` + nl
+				cCode += "setopenexternallinks(true)" + nl +
+				"_WebsiteURL = " + Variable(:value8) + nl +
+				"_WebsiteTitle = " +  Variable(:value9) + nl +
+				`settext('<a href="' + _WebsiteURL + '">' + _WebsiteTitle +'</a>')` + nl
 				
 				NewParentStep(  cOutStep + T_CT_NEWHYPERLINK_ST_NEWHYPERLINK  + " " + StepData(:value8))
 					SetStepCode( cOutCode + "new QLabel("+Variable(:value7)+") { " + nl + cCode )
@@ -63,13 +65,13 @@ class newhyperlinkComponentController from ComponentControllerParent
 class newhyperlinkComponentView from ComponentViewParent
 	 
 		Title( T_CT_NEWHYPERLINK_IP_TITLE )	
-		TextBox( T_CT_NEWHYPERLINK_IP_VALUE , :value)
-		TextBox( T_CT_NEWHYPERLINK_IP_VALUE2 , :value2)
-		TextBox( T_CT_NEWHYPERLINK_IP_VALUE3 , :value3)
-		TextBox( T_CT_NEWHYPERLINK_IP_VALUE4 , :value4)
-		TextBox( T_CT_NEWHYPERLINK_IP_VALUE5 , :value5)
-		TextBox( T_CT_NEWHYPERLINK_IP_VALUE6 , :value6)
-		TextBox( T_CT_NEWHYPERLINK_IP_VALUE7 , :value7)
-		TextBox( T_CT_NEWHYPERLINK_IP_VALUE8 , :value8)
-		TextBox( T_CT_NEWHYPERLINK_IP_VALUE9 , :value9)
+		TextBoxValue( T_CT_NEWHYPERLINK_IP_VALUE , :value, T_CT_NEWHYPERLINK_IP_VALUE_DEFAULT)
+		TextBoxValue( T_CT_NEWHYPERLINK_IP_VALUE2 , :value2, "10")
+		TextBoxValue( T_CT_NEWHYPERLINK_IP_VALUE3 , :value3, "10")
+		TextBoxValue( T_CT_NEWHYPERLINK_IP_VALUE4 , :value4, "100")
+		TextBoxValue( T_CT_NEWHYPERLINK_IP_VALUE5 , :value5, "30")
+		TextBoxValue( T_CT_NEWHYPERLINK_IP_VALUE6 , :value6, C_INTERACTIONPAGE_EXPCONTAINSLITERAL)
+		TextBoxValue( T_CT_NEWHYPERLINK_IP_VALUE7 , :value7, T_CT_NEWHYPERLINK_IP_VALUE7_DEFAULT)
+		TextBoxValue( T_CT_NEWHYPERLINK_IP_VALUE8 , :value8, C_INTERACTIONPAGE_EXPCONTAINSLITERAL)
+		TextBoxValue( T_CT_NEWHYPERLINK_IP_VALUE9 , :value9, C_INTERACTIONPAGE_EXPCONTAINSLITERAL)
 		PageButtons()
