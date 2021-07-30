@@ -4,7 +4,8 @@
 **	Date : 2017.12.24
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
-
+
+
 T_CT_NEWQWEBVIEW_IP_TITLE = "مكون عنصر مستعرض ويب"
 T_CT_NEWQWEBVIEW_IP_VALUE = "اسم الكائن : "
 T_CT_NEWQWEBVIEW_IP_VALUE2 = "السطر :"
@@ -13,6 +14,9 @@ T_CT_NEWQWEBVIEW_IP_VALUE4 = "العرض :"
 T_CT_NEWQWEBVIEW_IP_VALUE5 = "الإرتفاع :"
 T_CT_NEWQWEBVIEW_IP_VALUE6 = "خيارات العرض : "
 T_CT_NEWQWEBVIEW_IP_VALUE7 = "الاب : "
+T_CT_NEWQWEBVIEW_IP_VALUE_DEFAULT  = "مستعرض_ويب"
+T_CT_NEWQWEBVIEW_IP_VALUE7_DEFAULT = "نافذة"
+
 T_CT_NEWQWEBVIEW_ST_NEWQWEBVIEW = "عنصر مستعرض ويب جديد"
 T_CT_NEWQWEBVIEW_ST_STARTHERE = "ابدأ هنا"
 T_CT_NEWQWEBVIEW_ST_END = "نهاية عنصر مستعرض ويب"
