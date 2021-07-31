@@ -4,10 +4,27 @@
 **	Date : 2018.03.16
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
-
+
+
 T_CT_ODBCCLASS_IP_TITLE = "ODBC Class Component"
 T_CT_ODBCCLASS_IP_VALUE = "Object"
 T_CT_ODBCCLASS_IP_VALUE2 = "Method"
-T_CT_ODBCCLASS_IP_VALUE2LIST = ["autocommit","close","colcount","columns","commit","connect","datasources","disconnect","drivers","execute","fetch","getdata","init","rollback","tables"]
+T_CT_ODBCCLASS_IP_VALUE2LIST = [
+	"autocommit(lStatus)",
+	"close()",
+	"colcount() --> Number",
+	"columns(cTableName) --> List",
+	"commit()",
+	"connect(cConString) --> lStatus",
+	"datasources() --> List",
+	"disconnect()",
+	"drivers() --> List",
+	"execute(cSQL) ",
+	"fetch()",
+	"getdata(nColumn) --> cValue",
+	"init()",
+	"rollback()",
+	"tables()"
+]
 T_CT_ODBCCLASS_IP_VALUE3 = "Parameters"
 T_CT_ODBCCLASS_IP_VALUE4 = "Output"
