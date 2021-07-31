@@ -10,7 +10,7 @@ T_CT_LISTCLASS_IP_TITLE = "List Class Component"
 T_CT_LISTCLASS_IP_VALUE = "Object"
 T_CT_LISTCLASS_IP_VALUE2 = "Method"
 T_CT_LISTCLASS_IP_VALUE2LIST = [
-	"add(value)",
+	"add(vValue)",
 	"delete(nIndex)",
 	"find(vValue) --> Number",
 	"findincolumn(nColumn,vValue) --> Number",
