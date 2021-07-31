@@ -9,6 +9,25 @@
 T_CT_LISTCLASS_IP_TITLE = "List Class Component"
 T_CT_LISTCLASS_IP_VALUE = "Object"
 T_CT_LISTCLASS_IP_VALUE2 = "Method"
-T_CT_LISTCLASS_IP_VALUE2LIST = ["add(value)","delete(nIndex)","find","findincolumn(nColumn,Value)","first","init(String|List)","insert(nIndex,Value)","item(nIndex)","last","operator","print","println","reverse","set(nIndex,Value)","size","sort","swap","value"]
+T_CT_LISTCLASS_IP_VALUE2LIST = [
+	"add(value)",
+	"delete(nIndex)",
+	"find(vValue) --> Number",
+	"findincolumn(nColumn,vValue) --> Number",
+	"first() --> vItem",
+	"init(String|List)",
+	"insert(nIndex,vValue)",
+	"item(nIndex) --> vItem",
+	"last() --> vItem",
+	"operator(cOperator,Para)",
+	"print()",
+	"println()",
+	"reverse() --> List (Object)",
+	"set(nIndex,Value)",
+	"size() --> Number",
+	"sort() --> List (Object)",
+	"swap(nItem1,nItem2)",
+	"value() --> List"
+]
 T_CT_LISTCLASS_IP_VALUE3 = "Parameters"
 T_CT_LISTCLASS_IP_VALUE4 = "Output"
