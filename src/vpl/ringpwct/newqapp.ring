@@ -25,7 +25,7 @@ class newqappComponentController from ComponentControllerParent
 			NewStep( T_CT_NEWQAPP_ST_STARTHERE )
 			oStep = GetActiveStep()
 			NewStep( T_CT_NEWQAPP_ST_END )
-				SetStepCode(  " exec() " + nl + "}" )
+				SetStepCode(  "exec() " + nl + "}" )
 			SetActiveStep(oStep)
 
 		return True 
