@@ -248,7 +248,7 @@ class GoalDesignerModel
 		cCode  = ""
 		aLines = str2list(cString)	
 		lAlwaysAddTabs = False
-		aChars = ['"',"[","]","'",'`',","]
+		aChars = ['"',"[","]","'",'`',",","{","}"]
 		for t=1 to len(aLines) {	
 			cLine = aLines[t]
 			cTabStart = ""
