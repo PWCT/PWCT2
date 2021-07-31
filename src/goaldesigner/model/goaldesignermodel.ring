@@ -247,17 +247,17 @@ class GoalDesignerModel
 	func AddTabsToCodeOfMultipleLines cString,nTabs 
 		cCode  = ""
 		aLines = str2list(cString)	
+		lAlwaysAddTabs = False
+		aChars = ['"',"[","]","'",'`',","]
 		for t=1 to len(aLines) {	
 			cLine = aLines[t]
 			cTabStart = ""
-			if t = 1 or  
-			   left(cLine,1) = '"' or 
-			   left(cLine,1) = "[" or 
-			   left(cLine,1) = "]" or
-			   left(cLine,1) = "'" or
-			   left(cLine,1) = '`' or 
-			   left(CLine,1) = ","
+			lFind = find(aChars,left(cLine,1)) 
+			if t = 1 or lFind or lAlwaysAddTabs
 				cTabStart = nTabs
+				if t = 1 and not lFind {
+					lAlwaysAddTabs = True 
+				}
 			ok 				
 			cCode += cTabStart + cLine + windowsnl()
 		}
