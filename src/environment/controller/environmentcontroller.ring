@@ -767,6 +767,7 @@ class EnvironmentController from WindowsControllerParent
 
 		if C_PROPERTIES_REFLECTCHANGEINFONTSIZE { 
 			ComponentsBrowserFont()
+			OutputWindowFont()
 			ComponentsFont()
 			FilesTreeFont()
 		}
@@ -821,6 +822,9 @@ class EnvironmentController from WindowsControllerParent
 		if isDockForComponentsBrowser() {
 			parent().componentsBrowserWindow().UpdateFontSize(max(nFontSize-4,11))
 		}
+
+	func OutputWindowFont
+		oView.oProcessEditbox.setStyleSheet("font-size:"+(nFontSize-4)+"pt;")
 
 	func FilesTreeFont
 		oView.oFilesTree.nFontSize = max(nFontSize-4,11)			
