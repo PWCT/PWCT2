@@ -86,7 +86,7 @@ class GoalDesignerController from WindowsControllerParent
 		lNoDynamicComponents = True 
 
 	# Don't display the step code 
-		lHideStepCodeTab = True
+		lHideStepCodeTab = C_STEPSTREE_HIDESTEPCODETAB
 
 	# Show/Hide the Time Machine Options 
 		lShowTimeMachine = C_STEPSTREE_SHOWTIMEMACHINE

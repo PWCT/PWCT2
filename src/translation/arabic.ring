@@ -244,6 +244,7 @@
 	T_SC_LIGHTTREELINES = "خطوط الشجرة بلون فاتح"
 	T_SC_ALLOWSYNTAXERRORS = "السماح بالأخطاء النحوية فى الصفحات التفاعلية"
 	T_SC_NODEICON = "شجرة الخطوات - عرض ايقونة لكل عنصر"
+	T_SC_HIDESTEPCODETAB = "شجرة الخطوات - إخفاء تعليمات الخطوة"
 
 # Components Browser Window
 

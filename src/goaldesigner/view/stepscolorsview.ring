@@ -244,7 +244,12 @@ class StepsColorsView from WindowsViewParent
 			setText(T_SC_NODEICON) # "Steps Tree - Show Nodes Icon"
 			setChecked(C_STEPSTREE_NODEICON)
 			setStateChangedEvent(Method(:NodeIcon))
-		}  
+		}
+		checkHideStepCodeTab = new QCheckBox(pageOptions) {
+			setText(T_SC_HIDESTEPCODETAB) # "Steps Tree - Hide Step Code Tab"
+			setChecked(C_STEPSTREE_HIDESTEPCODETAB)
+			setStateChangedEvent(Method(:HideStepCodeTab))
+		}   
 		btnClose = new qpushbutton(pageOptions) {
 			setText(T_SC_CLOSE) # "Close"
 			setclickevent(Method(:closeAction))
@@ -270,6 +275,7 @@ class StepsColorsView from WindowsViewParent
 			AddWidget(checkAutoRun)
 			AddWidget(checkOpenFilesInNewTabs)
 			AddWidget(checkShowTimeMachine)
+			AddWidget(checkHideStepCodeTab)
 			AddWidget(checkStepsTreeLines)
 			AddWidget(checkLightTreeLines)
 			AddWidget(checkNodeIcon)

@@ -162,3 +162,14 @@ class StepsColorsController from WindowsControllerParent
 	func NodeIcon
 		C_STEPSTREE_NODEICON = oView.checkNodeIcon.checkState()
 		parent().refreshStepsTree()
+
+	func HideStepCodeTab
+		C_STEPSTREE_HIDESTEPCODETAB = oView.checkHideStepCodeTab.checkState()
+		parent() {
+			lHideStepCodeTab = C_STEPSTREE_HIDESTEPCODETAB
+			if lHideStepCodeTab {
+				oView.oTab.tabbar().hide()
+			else 
+				oView.oTab.tabbar().show()
+			}
+		}

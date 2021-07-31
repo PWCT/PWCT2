@@ -246,6 +246,7 @@
 	T_SC_LIGHTTREELINES = "Light Tree Lines"
 	T_SC_ALLOWSYNTAXERRORS = "Allow Syntax Errors in Interaction Pages"
 	T_SC_NODEICON = "Steps Tree - Show Nodes Icon"
+	T_SC_HIDESTEPCODETAB = "Steps Tree - Hide Step Code Tab"
 
 # Components Browser Window
 
