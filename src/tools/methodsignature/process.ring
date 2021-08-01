@@ -1,7 +1,7 @@
 load "current.ring"
 
 cInput = read("input.txt")
-cInput += nl + "void delete(void)
+cInput += windowsnl() + "void delete(void)
 object init(parent)
 pointer objectpointer(void)"
 aList  = str2list(cInput)
