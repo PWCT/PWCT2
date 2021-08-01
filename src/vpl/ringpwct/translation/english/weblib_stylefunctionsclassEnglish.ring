@@ -36,7 +36,7 @@ T_CT_WEBLIB_STYLEFUNCTIONSCLASS_IP_VALUE2LIST = [
 	"styletextright() --> String",
 	"styletop(nTop) --> String",
 	"stylewidth(nWidth) --> String",
-	"stylezindex(nZIndex) --> String",
+	"stylezindex(nZIndex) --> String"
 ]
 T_CT_WEBLIB_STYLEFUNCTIONSCLASS_IP_VALUE3 = "Parameters"
 T_CT_WEBLIB_STYLEFUNCTIONSCLASS_IP_VALUE4 = "Output"

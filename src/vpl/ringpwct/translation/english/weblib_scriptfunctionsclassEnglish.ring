@@ -17,7 +17,7 @@ T_CT_WEBLIB_SCRIPTFUNCTIONSCLASS_IP_VALUE2LIST = [
 	"scriptfuncclean(cFuncName,cDiv) --> String",
 	"scriptfuncselect(cFuncName,aList,cDiv,cResult,cGridRow,cFuncClean,nTimeOut,cLink1,cLink2) --> String",
 	"scriptredirection(cDir) --> String",
-	"scriptscrollfixed(cDiv,nSize) --> String",
+	"scriptscrollfixed(cDiv,nSize) --> String"
 ]
 T_CT_WEBLIB_SCRIPTFUNCTIONSCLASS_IP_VALUE3 = "Parameters"
 T_CT_WEBLIB_SCRIPTFUNCTIONSCLASS_IP_VALUE4 = "Output"
