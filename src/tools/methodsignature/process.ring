@@ -1,6 +1,9 @@
 load "current.ring"
 
 cInput = read("input.txt")
+cInput += nl + "void delete(void)
+object init(parent)
+pointer objectpointer(void)"
 aList  = str2list(cInput)
 
 aProcess = []
@@ -33,23 +36,36 @@ func main
 	? " New List Size : " + len(aProcess)
 	? Copy("=",50)
 	x = 0
+	nCount = 0
 	for cLine in aProcess
 		x++
 		see aOldList[x] + " ---> " + cLine[2] + " : "
 		if trim(cLine[2]) = trim(aOldList[x])
 			see "TRUE" + nl
 		else 
+			nCount++
 			see "FALSE" + nl
 		ok
 	next
+	? Copy("=",50)
+	if (nCount = 0) and (len(aOldList) = len(aProcess))
+		? "Mapping is correct!"
+	ok
+
 	# Missing Methods
 	? Copy("=",50)
 	? "Missing Methods.."
+	nCount = 0
 	for cOld in aOldList
 		if not find(aProcess,cOld,2)
+			nCount++
 			? cOld
 		ok
 	next
+	if nCount = 0
+		? "All methods exist!"
+	ok
+	? Copy("=",50)
 
 func process cLine
 	# Get Output 
