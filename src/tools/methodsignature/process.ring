@@ -1,3 +1,5 @@
+load "current.ring"
+
 cInput = read("input.txt")
 aList  = str2list(cInput)
 
@@ -23,8 +25,31 @@ func main
 		ok
 	next
 	cStr += "]"
-	? "Count : " + len(aProcess)
 	write("output.txt",cStr)
+
+	# Check the Output
+	? Copy("=",50)
+	? " Old List Size : " + len(aOldList)
+	? " New List Size : " + len(aProcess)
+	? Copy("=",50)
+	x = 0
+	for cLine in aProcess
+		x++
+		see aOldList[x] + " ---> " + cLine[2] + " : "
+		if trim(cLine[2]) = trim(aOldList[x])
+			see "TRUE" + nl
+		else 
+			see "FALSE" + nl
+		ok
+	next
+	# Missing Methods
+	? Copy("=",50)
+	? "Missing Methods.."
+	for cOld in aOldList
+		if not find(aProcess,cOld,2)
+			? cOld
+		ok
+	next
 
 func process cLine
 	# Get Output 
