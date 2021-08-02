@@ -3,6 +3,7 @@ load "current.ring"
 cInput = read("input.txt")
 cInput = substr(cInput,"const char *","char *")
 cInput = substr(cInput,"* ","*")
+cInput = substr(cInput,"  "," ")
 cInput += windowsnl() + "void delete(void)
 object init(parent)
 pointer objectpointer(void)"
