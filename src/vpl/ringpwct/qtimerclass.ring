@@ -14,29 +14,30 @@ class qtimerclassComponentController from ComponentControllerParent
 	func GenerateAction 
 
 		
-				switch Variable(:Value2) {
+		switch Variable(:Value2) {
 					
-					case 1 cFunc = "delete"
-					case 2 cFunc = "gettimeoutevent"
-					case 3 cFunc = "init"
-					case 4 cFunc = "interval"
-					case 5 cFunc = "isactive"
-					case 6 cFunc = "issingleshot"
-					case 7 cFunc = "setinterval"
-					case 8 cFunc = "setsingleshot"
-					case 9 cFunc = "settimeoutevent"
-					case 10 cFunc = "start"
-					case 11 cFunc = "stop"
-					case 12 cFunc = "timerid"
+			case 1 cFunc = "delete"
+			case 2 cFunc = "gettimeoutevent"
+			case 3 cFunc = "init"
+			case 4 cFunc = "interval"
+			case 5 cFunc = "isactive"
+			case 6 cFunc = "issingleshot"
+			case 7 cFunc = "objectpointer"
+			case 8 cFunc = "setinterval"
+			case 9 cFunc = "setsingleshot"
+			case 10 cFunc = "settimeoutevent"
+			case 11 cFunc = "start"
+			case 12 cFunc = "stop"
+			case 13 cFunc = "timerid"
 		
 		
-				}
+		}
 		
-				# Get the function Name 
-					cFuncName = T_CT_QTIMERCLASS_IP_VALUE2LIST [Variable(:Value2)]
-		
-				# Generate Step and Code using common method 
-					common_callobjectmethod(cFunc,cFuncName)
+		# Get the function Name 
+			cFuncName = T_CT_QTIMERCLASS_IP_VALUE2LIST [Variable(:Value2)]
+	
+		# Generate Step and Code using common method 
+			common_callobjectmethod(cFunc,cFuncName)
 				
 
 		return True 

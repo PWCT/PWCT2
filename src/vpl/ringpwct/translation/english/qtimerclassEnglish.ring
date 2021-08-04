@@ -8,6 +8,20 @@
 T_CT_QTIMERCLASS_IP_TITLE = "Timer Class Component"
 T_CT_QTIMERCLASS_IP_VALUE = "Object"
 T_CT_QTIMERCLASS_IP_VALUE2 = "Method"
-T_CT_QTIMERCLASS_IP_VALUE2LIST = ["delete","gettimeoutevent","init","interval","isactive","issingleshot","setinterval","setsingleshot","settimeoutevent","start","stop","timerid"]
+T_CT_QTIMERCLASS_IP_VALUE2LIST = [
+	"delete(void) --> void",
+	"gettimeoutEvent(void) --> char",
+	"init(parent) --> object",
+	"interval(void) --> int",
+	"isActive(void) --> bool",
+	"isSingleShot(void) --> bool",
+	"objectpointer(void) --> pointer",
+	"setInterval(int msec) --> void",
+	"setSingleShot(bool singleShot) --> void",
+	"settimeoutEvent(char *) --> void",
+	"start(void) --> void",
+	"stop(void) --> void",
+	"timerId(void) --> int"
+]
 T_CT_QTIMERCLASS_IP_VALUE3 = "Parameters"
 T_CT_QTIMERCLASS_IP_VALUE4 = "Output"
