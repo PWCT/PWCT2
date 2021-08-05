@@ -157,4 +157,9 @@
 	C_UNDO_INTERACTIONS 	= 2
 	C_UNDO_STEPSTREEID 	= 3
 	C_UNDO_INTERACTIONSID 	= 4
-	
+
+# Visible Windows 	
+	lShowFilesManager = True
+	lShowGoalDesigner = True
+	lShowOutputWindow = True
+	lShowFormDesigner = True 

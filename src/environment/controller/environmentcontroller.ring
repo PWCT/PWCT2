@@ -21,10 +21,6 @@ class EnvironmentController from WindowsControllerParent
 		nFontSize = 12
 	}
 
-	lShowFilesManager = True
-	lShowGoalDesigner = True
-	lShowOutputWindow = True
-
 	lDockForComponentsBrowserIsVisible = False
 	nComponentsBrowserWindowID
 
@@ -744,6 +740,7 @@ class EnvironmentController from WindowsControllerParent
 			    "nFontSize = " + nFontSize  + nl + 
 			    "lShowFilesManager = " + oView.oDockFilesManager.isvisible() + nl +
 			    "lShowGoalDesigner = " + oView.oDockGoalDesigner.isvisible() + nl +
+			    "lShowFormDesigner = " + oView.oDockFormDesigner.isvisible() + nl +
 			    "lShowOutputWindow = " + oView.oDockOutputWindow.isvisible() + nl 
 		cSettings = substr(cSettings,nl,char(13)+char(10))
 		write(cSettingsFile,cSettings)
@@ -771,24 +768,6 @@ class EnvironmentController from WindowsControllerParent
 	*/
 
 	func RestoreSettings
-
- 		if lShowFilesManager {
-			oView.oDockFilesManager.show()
-		else
-			oView.oDockFilesManager.hide()
-		}
-
-		if lShowGoalDesigner {
-			oView.oDockGoalDesigner.show()
-		else
-			oView.oDockGoalDesigner.hide()
-		}
-
-		if lShowOutputWindow {
-			oView.oDockOutputWindow.show()
-		else
-			oView.oDockOutputWindow.hide()
-		}
 
 		GoalDesignerFont()
 
@@ -835,6 +814,30 @@ class EnvironmentController from WindowsControllerParent
 		if isWebAssembly() {
 			SetMode(C_ENV_MODE_GENERAL)
 			oView.oDockFilesManager.hide()
+		}
+
+ 		if lShowFilesManager {
+			oView.oDockFilesManager.show()
+		else
+			oView.oDockFilesManager.hide()
+		}
+
+		if lShowGoalDesigner {
+			oView.oDockGoalDesigner.show()
+		else
+			oView.oDockGoalDesigner.hide()
+		}
+
+		if lShowFormDesigner {
+			oView.oDockFormDesigner.show()
+		else
+			oView.oDockFormDesigner.hide()
+		}
+
+		if lShowOutputWindow {
+			oView.oDockOutputWindow.show()
+		else
+			oView.oDockOutputWindow.hide()
 		}
 
 

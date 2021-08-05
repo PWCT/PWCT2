@@ -270,6 +270,8 @@ class EnvironmentView from WindowsViewParent
 
 						if ! isWebAssembly() {
 							oAction = new qAction(win) {
+								setCheckable(True)
+								setChecked(lShowFilesManager)
 								setbtnimage(self,AppFile("images/project.png"))
 								settext(T_ENV_MENU_PROJECTFILES ) # "Project Files"
 								setclickevent(Method(:ProjectAction))
@@ -278,6 +280,8 @@ class EnvironmentView from WindowsViewParent
 							addseparator()	
 						}
 						oAction = new qAction(win) {
+							setCheckable(True)
+							setChecked(lShowGoalDesigner)
 							setbtnimage(self,AppFile("images/source.png"))
 							setclickevent(Method(:GoalDesignerAction))
 							settext(T_ENV_MENU_GOALDESIGNER) # "Goal Designer"
@@ -285,6 +289,8 @@ class EnvironmentView from WindowsViewParent
 						addaction(oAction)	
 						addseparator()	
 						oAction = new qAction(win) {
+							setCheckable(True)
+							setChecked(lShowOutputWindow)
 							setbtnimage(self,AppFile("images/source.png"))
 							setclickevent(Method(:OutputWindowAction))
 							settext(T_ENV_MENU_OUTPUTWINDOW) # "Output Window"
@@ -292,6 +298,8 @@ class EnvironmentView from WindowsViewParent
 						addaction(oAction)
 						addseparator()	
 						oAction = new qAction(win) {
+							setCheckable(True)
+							setChecked(lShowFormDesigner)
 							setbtnimage(self,AppFile("images/source.png"))
 							setclickevent(Method(:FormDesignerWindowAction))
 							settext(T_ENV_MENU_FORMDESIGNERWINDOW) # "Form Designer"
