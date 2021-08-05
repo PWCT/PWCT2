@@ -45,6 +45,7 @@
 	T_ENV_MENU_GOALDESIGNER = "مصمم الهدف"
 	T_ENV_MENU_OUTPUTWINDOW = "نافذة النتائج"
 	T_ENV_MENU_FORMDESIGNERWINDOW = "نافذة مصمم النماذج"
+	T_ENV_MENU_APPEARANCE = "ظهور النوافذ"
 
 	T_ENV_MENU_MODE 			= "نمط بيئة العمل"
 	T_ENV_MENU_MODE_GENERAL 		= "عام - كل النوافذ"

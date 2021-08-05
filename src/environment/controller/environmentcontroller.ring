@@ -511,6 +511,31 @@ class EnvironmentController from WindowsControllerParent
 		parent().SearchAction()
 
 	/*
+		Activating Windows 
+	*/
+
+	func ShowAndRaiseObject oObject
+		oObject.show()
+		oObject.raise()
+		oObject.setFocus(0)
+
+	func ProjectActivate
+		ShowAndRaiseObject(oView.oDockFilesManager)
+		oView.oFilesTree.setFocus(0)
+
+	func GoalDesignerActivate
+		ShowAndRaiseObject(oView.oDockGoalDesigner)
+		# Set Focus to Steps Tree
+			parent().SetFocusToStepsTree()
+
+	func OutputWindowActivate
+		ShowAndRaiseObject(oView.oDockOutputWindow)
+		oView.oProcessText.setFocus(0)
+
+	func FormDesignerWindowActivate
+		ShowAndRaiseObject(oView.oDockFormDesigner)
+
+	/*
 		Purpose : Project Action
 		Parameters : None
 		Output : None

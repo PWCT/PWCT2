@@ -235,7 +235,7 @@ class EnvironmentView from WindowsViewParent
 						setShortcut(new QKeySequence("Alt+p"))
 						setbtnimage(self,AppFile("images/project.png"))
 						settext(T_ENV_MENU_PROJECTFILES ) # "Project Files"
-						setclickevent(Method(:ProjectAction))
+						setclickevent(Method(:ProjectActivate))
 					}
 					addaction(oAction)			
 					addseparator()	
@@ -243,7 +243,7 @@ class EnvironmentView from WindowsViewParent
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Alt+g"))
 					setbtnimage(self,AppFile("images/source.png"))
-					setclickevent(Method(:GoalDesignerAction))
+					setclickevent(Method(:GoalDesignerActivate))
 					settext(T_ENV_MENU_GOALDESIGNER) # "Goal Designer"
 				}
 				addaction(oAction)	
@@ -251,7 +251,7 @@ class EnvironmentView from WindowsViewParent
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Alt+o"))
 					setbtnimage(self,AppFile("images/source.png"))
-					setclickevent(Method(:OutputWindowAction))
+					setclickevent(Method(:OutputWindowActivate))
 					settext(T_ENV_MENU_OUTPUTWINDOW) # "Output Window"
 				}
 				addaction(oAction)
@@ -259,10 +259,46 @@ class EnvironmentView from WindowsViewParent
 				oAction = new qAction(win) {
 					setShortcut(new QKeySequence("Alt+shift+d"))
 					setbtnimage(self,AppFile("images/source.png"))
-					setclickevent(Method(:FormDesignerWindowAction))
+					setclickevent(Method(:FormDesignerWindowActivate))
 					settext(T_ENV_MENU_FORMDESIGNERWINDOW) # "Form Designer"
 				}
 				addaction(oAction)
+
+				addseparator()
+				subApperance = addmenu(T_ENV_MENU_APPEARANCE) # "Appearance"
+				subApperance {
+
+						if ! isWebAssembly() {
+							oAction = new qAction(win) {
+								setbtnimage(self,AppFile("images/project.png"))
+								settext(T_ENV_MENU_PROJECTFILES ) # "Project Files"
+								setclickevent(Method(:ProjectAction))
+							}
+							addaction(oAction)			
+							addseparator()	
+						}
+						oAction = new qAction(win) {
+							setbtnimage(self,AppFile("images/source.png"))
+							setclickevent(Method(:GoalDesignerAction))
+							settext(T_ENV_MENU_GOALDESIGNER) # "Goal Designer"
+						}
+						addaction(oAction)	
+						addseparator()	
+						oAction = new qAction(win) {
+							setbtnimage(self,AppFile("images/source.png"))
+							setclickevent(Method(:OutputWindowAction))
+							settext(T_ENV_MENU_OUTPUTWINDOW) # "Output Window"
+						}
+						addaction(oAction)
+						addseparator()	
+						oAction = new qAction(win) {
+							setbtnimage(self,AppFile("images/source.png"))
+							setclickevent(Method(:FormDesignerWindowAction))
+							settext(T_ENV_MENU_FORMDESIGNERWINDOW) # "Form Designer"
+						}
+						addaction(oAction)
+
+				}
 
 				addseparator()
 				subStyle = addmenu(T_ENV_MENU_MODE) # "Mode"
