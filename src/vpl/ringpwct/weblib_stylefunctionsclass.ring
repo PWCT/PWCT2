@@ -9,6 +9,8 @@ class weblib_stylefunctionsclassComponentController from ComponentControllerPare
 
 	oView = new weblib_stylefunctionsclassComponentView
 
+	aAllowEmptyValue = [:value3,:value4]
+
 	func GenerateAction 
 
 		 

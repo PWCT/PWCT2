@@ -9,6 +9,8 @@ class weblib_bootstrappageComponentController from ComponentControllerParent
 
 	oView = new weblib_bootstrappageComponentView
 
+	aAllowEmptyValue = [:value3,:value4]
+
 	func GenerateAction 
 
 		 
