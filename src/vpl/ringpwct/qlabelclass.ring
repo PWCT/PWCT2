@@ -9,7 +9,7 @@ class qlabelclassComponentController from ComponentControllerParent
 
 	oView = new qlabelclassComponentView
 
-	aAllowEmptyValue = [:value3,:value4]
+	aAllowEmptyValue = [:value,:value3,:value4]
 
 	func GenerateAction 
 

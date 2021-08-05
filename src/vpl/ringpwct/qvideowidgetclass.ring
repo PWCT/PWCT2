@@ -9,7 +9,7 @@ class qvideowidgetclassComponentController from ComponentControllerParent
 
 	oView = new qvideowidgetclassComponentView
 
-	aAllowEmptyValue = [:value3,:value4]
+	aAllowEmptyValue = [:value,:value3,:value4]
 
 	func GenerateAction 
 

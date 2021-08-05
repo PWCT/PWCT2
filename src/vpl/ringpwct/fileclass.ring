@@ -9,7 +9,7 @@ class fileclassComponentController from ComponentControllerParent
 
 	oView = new fileclassComponentView
 
-	aAllowEmptyValue = [:value3,:value4]
+	aAllowEmptyValue = [:value,:value3,:value4]
 
 	func GenerateAction 
 

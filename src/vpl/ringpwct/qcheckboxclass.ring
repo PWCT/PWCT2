@@ -9,7 +9,7 @@ class qcheckboxclassComponentController from ComponentControllerParent
 
 	oView = new qcheckboxclassComponentView
 
-	aAllowEmptyValue = [:value3,:value4]
+	aAllowEmptyValue = [:value,:value3,:value4]
 
 	func GenerateAction 
 

@@ -9,7 +9,7 @@ class stdbaseclassComponentController from ComponentControllerParent
 
 	oView = new stdbaseclassComponentView
 
-	aAllowEmptyValue = [:value3,:value4]
+	aAllowEmptyValue = [:value,:value3,:value4]
 
 	func GenerateAction 
 

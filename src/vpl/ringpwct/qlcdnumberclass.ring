@@ -9,7 +9,7 @@ class qlcdnumberclassComponentController from ComponentControllerParent
 
 	oView = new qlcdnumberclassComponentView
 
-	aAllowEmptyValue = [:value3,:value4]
+	aAllowEmptyValue = [:value,:value3,:value4]
 
 	func GenerateAction 
 

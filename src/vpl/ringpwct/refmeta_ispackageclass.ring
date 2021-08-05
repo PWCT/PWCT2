@@ -9,7 +9,7 @@ class refmeta_ispackageclassComponentController from ComponentControllerParent
 
 	oView = new refmeta_ispackageclassComponentView
 
-	aAllowEmptyValue = [:value3,:value4]
+	aAllowEmptyValue = [:value,:value3,:value4]
 
 	func GenerateAction 
 

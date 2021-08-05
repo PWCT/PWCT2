@@ -9,7 +9,7 @@ class odbcclassComponentController from ComponentControllerParent
 
 	oView = new odbcclassComponentView
 
-	aAllowEmptyValue = [:value3,:value4]
+	aAllowEmptyValue = [:value,:value3,:value4]
 
 	func GenerateAction 
 

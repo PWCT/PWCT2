@@ -9,7 +9,7 @@ class queueclassComponentController from ComponentControllerParent
 
 	oView = new queueclassComponentView
 
-	aAllowEmptyValue = [:value3,:value4]
+	aAllowEmptyValue = [:value,:value3,:value4]
 
 	func GenerateAction 
 

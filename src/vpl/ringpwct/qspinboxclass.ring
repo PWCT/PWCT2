@@ -9,7 +9,7 @@ class qspinboxclassComponentController from ComponentControllerParent
 
 	oView = new qspinboxclassComponentView
 
-	aAllowEmptyValue = [:value3,:value4]
+	aAllowEmptyValue = [:value,:value3,:value4]
 
 	func GenerateAction 
 

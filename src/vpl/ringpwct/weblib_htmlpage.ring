@@ -9,7 +9,7 @@ class weblib_htmlpageComponentController from ComponentControllerParent
 
 	oView = new weblib_htmlpageComponentView
 
-	aAllowEmptyValue = [:value3,:value4]
+	aAllowEmptyValue = [:value,:value3,:value4]
 
 	func GenerateAction 
 

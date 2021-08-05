@@ -9,7 +9,7 @@ class qtoolbarclassComponentController from ComponentControllerParent
 
 	oView = new qtoolbarclassComponentView
 
-	aAllowEmptyValue = [:value3,:value4]
+	aAllowEmptyValue = [:value,:value3,:value4]
 
 	func GenerateAction 
 

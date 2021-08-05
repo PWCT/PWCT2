@@ -9,7 +9,7 @@ class qalleventsclassComponentController from ComponentControllerParent
 
 	oView = new qalleventsclassComponentView
 
-	aAllowEmptyValue = [:value3,:value4]
+	aAllowEmptyValue = [:value,:value3,:value4]
 
 	func GenerateAction 
 
