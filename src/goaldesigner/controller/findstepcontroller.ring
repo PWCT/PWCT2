@@ -31,8 +31,10 @@ class FindStepController from WindowsControllerParent
 			aContent = item[C_TREEMODEL_CONTENT]
 			if not aContent[:visible] { loop }
 			cStepName = aContent[:name]
+			if trim(cStepName) = NULL { loop }
 			cStepName = Parent().oModel.RemoveTags(cStepName)
 			cStepNamePure = cStepName
+			if trim(cStepNamePure) = NULL { loop }
 			if lState = False {	# Don't Match the case
 				cStepName = lower(cStepName)
 				cFind = lower(cFind)
