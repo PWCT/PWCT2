@@ -9,6 +9,8 @@ class treeclassComponentController from ComponentControllerParent
 
 	oView = new treeclassComponentView
 
+	aAllowEmptyValue = [:value3,:value4]
+
 	func GenerateAction 
 
 		 
