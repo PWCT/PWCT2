@@ -45,6 +45,7 @@ func UpdateTranslationFile cFileName,cClass
 		if nPos2 = 0
 			cFileContent = substr(cFileContent,1,nPos-1) + GetNewList(cClass) + substr(cFileContent,nPos)
 			? "Update File : " + cFileName
+			write(cFileName,cFileContent)
 		ok
 	ok
 
