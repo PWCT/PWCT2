@@ -28,7 +28,7 @@ aMethods = sort(aMethods)
 
 cCode = ""
 cCode2 = "[" 
-cCode3 = nl+"[" + nl
+cCode3 = nl+"T_CT_"+Upper(cClassName)+"CLASS_IP_VALUE2FUNC = [" + nl
 x = 1
 for cMethod in aMethods
 	cCode += copy(tab,3)+"case "+x+' cFunc = "' + cMethod + '"' + nl
@@ -44,12 +44,12 @@ for cMethod in aMethods
 	x++ 
 next 
 cCode2 += "]"
-cCode3 += "]" 
+cCode3 += "]" + nl
 
-? cCode 
-? cCode2 
 ? cCode3
-cFile = cCode+cCode2+cCode3
+? cCode2 
+? cCode 
+cFile = cCode3+cCode2+cCode
 cFile = substr(CFile,nl,windowsnl())
 write("output.txt",cFile)
 system("start notepad output.txt")
