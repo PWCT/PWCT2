@@ -27,6 +27,7 @@ for item in aList
 		ok
 	ok
 next
+aClasses + "tree"
 ? aClasses
 ? "Count : " + len(aClasses)
 
@@ -50,7 +51,6 @@ func UpdateCodeFile cFileName,cClass
 			Copy(Tab,5) + cLine  +
 			substr(cFileContent,nPos2+1)
 			write(cFileName,cFileContent)
-			? cFileContent
 		ok
 
 	ok
