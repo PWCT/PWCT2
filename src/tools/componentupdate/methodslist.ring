@@ -10,6 +10,9 @@
 
 load "stdlib.ring"
 load "guilib.ring"
+load "weblib.ring"
+
+import System.web
 
 aList = listAllFiles("..\..\vpl\ringpwct","ring")
 aClasses = []
@@ -28,6 +31,10 @@ for item in aList
 	ok
 next
 aClasses + "tree"
+aClasses + "weblib_application"
+aClasses + "weblib_page"
+aClasses + "weblib_scriptfunctions"
+aClasses + "weblib_stylefunctions"
 ? aClasses
 ? "Count : " + len(aClasses)
 
@@ -69,7 +76,7 @@ func UpdateTranslationFile cFileName,cClass
 
 func GetNewList cClassName
 
-	eval("oObject = new "+cClassName)
+	eval("oObject = new "+substr(cClassName,"weblib_",""))
 	aMethods = methods(oOBJECT)
 	aMethods = sort(aMethods)
 
