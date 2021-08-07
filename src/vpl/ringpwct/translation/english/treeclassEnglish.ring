@@ -9,6 +9,14 @@
 T_CT_TREECLASS_IP_TITLE = "Tree Class Component"
 T_CT_TREECLASS_IP_VALUE = "Object"
 T_CT_TREECLASS_IP_VALUE2 = "Method"
+
+T_CT_TREECLASS_IP_VALUE2FUNC = [
+	"add",
+	"parent",
+	"print",
+	"set",
+	"value"
+]
 T_CT_TREECLASS_IP_VALUE2LIST = [
 	"add(vValue) --> Tree (Object)",
 	"parent() --> Tree (Object)",

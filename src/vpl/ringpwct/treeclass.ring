@@ -14,15 +14,9 @@ class treeclassComponentController from ComponentControllerParent
 	func GenerateAction 
 
 		 
-				switch Variable(:Value2) {
-					
-					case 1 cFunc = "add"
-					case 2 cFunc = "parent"
-					case 3 cFunc = "print"
-					case 4 cFunc = "set"
-					case 5 cFunc = "value"
-		
-				}
+				
+				# Get the function name in the generated code
+					cFunc = T_CT_TREECLASS_IP_VALUE2FUNC[ Variable(:Value2) ]
 		
 				# Get the function Name 
 					cFuncName = T_CT_TREECLASS_IP_VALUE2LIST [Variable(:Value2)]
