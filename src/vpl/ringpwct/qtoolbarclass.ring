@@ -14,9 +14,8 @@ class qtoolbarclassComponentController from ComponentControllerParent
 	func GenerateAction 
 
 	 
-		
-				# Get the function name in the generated code
-					cFunc = T_CT_QTOOLBARCLASS_IP_VALUE2FUNC[ Variable(:Value2) ]
+		# Get the function name in the generated code
+			cFunc = T_CT_QTOOLBARCLASS_IP_VALUE2FUNC[ Variable(:Value2) ]
 		
 		# Get the function Name 
 			cFuncName = T_CT_QTOOLBARCLASS_IP_VALUE2LIST [Variable(:Value2)]
