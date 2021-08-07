@@ -9,6 +9,14 @@
 T_CT_SQLITECLASS_IP_TITLE = "SQLite Class Component"
 T_CT_SQLITECLASS_IP_VALUE = "Object"
 T_CT_SQLITECLASS_IP_VALUE2 = "Method"
+
+T_CT_SQLITECLASS_IP_VALUE2FUNC = [
+	"close",
+	"errormessage",
+	"execute",
+	"init",
+	"open"
+]
 T_CT_SQLITECLASS_IP_VALUE2LIST = [
 	"close()",
 	"errormessage() --> String",

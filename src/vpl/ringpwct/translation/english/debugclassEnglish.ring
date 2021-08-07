@@ -9,6 +9,12 @@
 T_CT_DEBUGCLASS_IP_TITLE = "Debug Class Component"
 T_CT_DEBUGCLASS_IP_VALUE = "Object"
 T_CT_DEBUGCLASS_IP_VALUE2 = "Method"
+
+T_CT_DEBUGCLASS_IP_VALUE2FUNC = [
+	"assert",
+	"eval",
+	"raise"
+]
 T_CT_DEBUGCLASS_IP_VALUE2LIST = [
 	"assert(cCondition) --> Boolean",
 	"eval(cCode) --> vOutput",

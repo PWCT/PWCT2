@@ -8,6 +8,36 @@
 T_CT_FILECLASS_IP_TITLE = "مكون فئة الملف"
 T_CT_FILECLASS_IP_VALUE = "اسم الكائن :"
 T_CT_FILECLASS_IP_VALUE2 = "الميثود : "
+
+T_CT_FILECLASS_IP_VALUE2FUNC = [
+	"clearerr",
+	"close",
+	"dir",
+	"eof",
+	"error",
+	"exists",
+	"flush",
+	"fread",
+	"fwrite",
+	"getc",
+	"getpos",
+	"gets",
+	"open",
+	"perror",
+	"putc",
+	"puts",
+	"read",
+	"remove",
+	"rename",
+	"reopen",
+	"rewind",
+	"seek",
+	"setpos",
+	"tell",
+	"tempfile",
+	"ungetc",
+	"write"
+]
 T_CT_FILECLASS_IP_VALUE2LIST = ["clearerr","close","dir","eof","error","exists","flush","fread","fwrite","getc","getpos","gets","open","perror","putc","puts","read","remove","rename","reopen","rewind","seek","setpos","tell","tempfile","ungetc","write"]
 T_CT_FILECLASS_IP_VALUE3 = "المعطيات :"
 T_CT_FILECLASS_IP_VALUE4 = "الناتج :"

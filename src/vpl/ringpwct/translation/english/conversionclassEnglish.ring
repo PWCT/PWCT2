@@ -9,6 +9,17 @@
 T_CT_CONVERSIONCLASS_IP_TITLE = "Conversion Class Component"
 T_CT_CONVERSIONCLASS_IP_VALUE = "Object"
 T_CT_CONVERSIONCLASS_IP_VALUE2 = "Method"
+
+T_CT_CONVERSIONCLASS_IP_VALUE2FUNC = [
+	"ascii",
+	"char",
+	"dec",
+	"hex",
+	"hex2str",
+	"number",
+	"str2hex",
+	"string"
+]
 T_CT_CONVERSIONCLASS_IP_VALUE2LIST = [
 	"ascii(cChar) --> Number",
 	"char(nASCII) --> cChar",

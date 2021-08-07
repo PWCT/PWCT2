@@ -9,6 +9,33 @@
 T_CT_STRINGCLASS_IP_TITLE = "مكون فئة العبارة الحرفية String"
 T_CT_STRINGCLASS_IP_VALUE = "اسم الكائن :"
 T_CT_STRINGCLASS_IP_VALUE2 = "الميثود : "
+
+T_CT_STRINGCLASS_IP_VALUE2FUNC = [
+	"copy",
+	"endswith",
+	"getfrom",
+	"init",
+	"left",
+	"lines",
+	"lower",
+	"mid",
+	"operator",
+	"pos",
+	"print",
+	"println",
+	"replace",
+	"right",
+	"set",
+	"size",
+	"split",
+	"startswith",
+	"strcmp",
+	"tofile",
+	"tolist",
+	"trim",
+	"upper",
+	"value"
+]
 T_CT_STRINGCLASS_IP_VALUE2LIST = ["نسخ(س)","تنتهى ب(عبارة)","احصل من(س)","تهيئة(حرف|رقم|قائمة)","من اليسار(س)","عدد الاسطر","حروف صغير","من المنتصف(س,ص)","معامل","مكان","طباعة","طباعة سطر","إستبدال(عبارة,عبارة اخري,حالة الاحرف)","من اليمن(س)","ضبط","الحجم","تقسيم","ابدا ب","مقارنة عبارة(العبارة)","الى ملف(اسم الملف)","الى قائمة","حذف المسافات","حروف كبيرة","القيمة"]
 T_CT_STRINGCLASS_IP_VALUE3 = "المعطيات :"
 T_CT_STRINGCLASS_IP_VALUE4 = "الناتج :"

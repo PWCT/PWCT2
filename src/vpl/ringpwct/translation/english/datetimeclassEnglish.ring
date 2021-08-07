@@ -9,6 +9,15 @@
 T_CT_DATETIMECLASS_IP_TITLE = "DateTime Class Component"
 T_CT_DATETIMECLASS_IP_VALUE = "Object"
 T_CT_DATETIMECLASS_IP_VALUE2 = "Method"
+
+T_CT_DATETIMECLASS_IP_VALUE2FUNC = [
+	"adddays",
+	"clock",
+	"date",
+	"diffdays",
+	"time",
+	"timelist"
+]
 T_CT_DATETIMECLASS_IP_VALUE2LIST = [
 	"adddays(cDate,nDays) --> String",
 	"clock() --> Number",

@@ -8,6 +8,22 @@
 T_CT_QTIMERCLASS_IP_TITLE = "مكون فئة المؤقت"
 T_CT_QTIMERCLASS_IP_VALUE = "اسم الكائن :"
 T_CT_QTIMERCLASS_IP_VALUE2 = "الميثود : "
+
+T_CT_QTIMERCLASS_IP_VALUE2FUNC = [
+	"delete",
+	"gettimeoutevent",
+	"init",
+	"interval",
+	"isactive",
+	"issingleshot",
+	"objectpointer",
+	"setinterval",
+	"setsingleshot",
+	"settimeoutevent",
+	"start",
+	"stop",
+	"timerid"
+]
 T_CT_QTIMERCLASS_IP_VALUE2LIST = [
 	"delete(void) --> void",
 	"gettimeoutEvent(void) --> char",

@@ -9,6 +9,25 @@
 T_CT_DATATYPECLASS_IP_TITLE = "DataType Class Component"
 T_CT_DATATYPECLASS_IP_VALUE = "Object"
 T_CT_DATATYPECLASS_IP_VALUE2 = "Method"
+
+T_CT_DATATYPECLASS_IP_VALUE2FUNC = [
+	"isalnum",
+	"isalpha",
+	"iscntrl",
+	"isdigit",
+	"isgraph",
+	"islist",
+	"islower",
+	"isnull",
+	"isnumber",
+	"isprint",
+	"ispunct",
+	"isspace",
+	"isstring",
+	"isupper",
+	"isxdigit",
+	"type"
+]
 T_CT_DATATYPECLASS_IP_VALUE2LIST = [
 	"isalnum(vValue) --> Boolean",
 	"isalpha(vValue) --> Boolean",

@@ -9,6 +9,30 @@
 T_CT_HASHTABLECLASS_IP_TITLE = "HashTable Class Component"
 T_CT_HASHTABLECLASS_IP_VALUE = "Object"
 T_CT_HASHTABLECLASS_IP_VALUE2 = "Method"
+
+T_CT_HASHTABLECLASS_IP_VALUE2FUNC = [
+	"add",
+	"contains",
+	"delete",
+	"find",
+	"findincolumn",
+	"first",
+	"getvalue",
+	"index",
+	"init",
+	"insert",
+	"item",
+	"last",
+	"operator",
+	"print",
+	"println",
+	"reverse",
+	"set",
+	"size",
+	"sort",
+	"swap",
+	"value"
+]
 T_CT_HASHTABLECLASS_IP_VALUE2LIST = [
 	"add(cKey,cValue)",
 	"contains(cKey) --> Boolean",

@@ -9,6 +9,15 @@
 T_CT_STDBASECLASS_IP_TITLE = "StdBase Class Component"
 T_CT_STDBASECLASS_IP_VALUE = "Object"
 T_CT_STDBASECLASS_IP_VALUE2 = "Method"
+
+T_CT_STDBASECLASS_IP_VALUE2FUNC = [
+	"init",
+	"print",
+	"println",
+	"set",
+	"size",
+	"value"
+]
 T_CT_STDBASECLASS_IP_VALUE2LIST = [
 	"init(x)",
 	"print()",

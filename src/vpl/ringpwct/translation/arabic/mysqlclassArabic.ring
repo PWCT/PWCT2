@@ -8,6 +8,24 @@
 T_CT_MYSQLCLASS_IP_TITLE = "مكون فئة الاتصال بال MySQL "
 T_CT_MYSQLCLASS_IP_VALUE = "اسم الكائن :"
 T_CT_MYSQLCLASS_IP_VALUE2 = "الميثود : "
+
+T_CT_MYSQLCLASS_IP_VALUE2FUNC = [
+	"autocommit",
+	"close",
+	"columns",
+	"commit",
+	"connect",
+	"error",
+	"escape_string",
+	"info",
+	"init",
+	"insert_id",
+	"next_result",
+	"query",
+	"result",
+	"result2",
+	"rollback"
+]
 T_CT_MYSQLCLASS_IP_VALUE2LIST = ["autocommit","close","columns","commit","connect","error","escape_string","info","init","insert_id","next_result","query","result","result2","rollback"]
 T_CT_MYSQLCLASS_IP_VALUE3 = "المعطيات :"
 T_CT_MYSQLCLASS_IP_VALUE4 = "الناتج :"

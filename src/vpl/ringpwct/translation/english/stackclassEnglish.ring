@@ -9,6 +9,29 @@
 T_CT_STACKCLASS_IP_TITLE = "Stack Class Component"
 T_CT_STACKCLASS_IP_VALUE = "Object"
 T_CT_STACKCLASS_IP_VALUE2 = "Method"
+
+T_CT_STACKCLASS_IP_VALUE2FUNC = [
+	"add",
+	"delete",
+	"find",
+	"findincolumn",
+	"first",
+	"init",
+	"insert",
+	"item",
+	"last",
+	"operator",
+	"pop",
+	"print",
+	"println",
+	"push",
+	"reverse",
+	"set",
+	"size",
+	"sort",
+	"swap",
+	"value"
+]
 T_CT_STACKCLASS_IP_VALUE2LIST = [
 	"add(vValue)",
 	"delete(nIndex)",

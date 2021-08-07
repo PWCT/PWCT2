@@ -9,6 +9,36 @@
 T_CT_FILECLASS_IP_TITLE = "File Class Component"
 T_CT_FILECLASS_IP_VALUE = "Object"
 T_CT_FILECLASS_IP_VALUE2 = "Method"
+
+T_CT_FILECLASS_IP_VALUE2FUNC = [
+	"clearerr",
+	"close",
+	"dir",
+	"eof",
+	"error",
+	"exists",
+	"flush",
+	"fread",
+	"fwrite",
+	"getc",
+	"getpos",
+	"gets",
+	"open",
+	"perror",
+	"putc",
+	"puts",
+	"read",
+	"remove",
+	"rename",
+	"reopen",
+	"rewind",
+	"seek",
+	"setpos",
+	"tell",
+	"tempfile",
+	"ungetc",
+	"write"
+]
 T_CT_FILECLASS_IP_VALUE2LIST = [
 	"clearerr()",
 	"close()",

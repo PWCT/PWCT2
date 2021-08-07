@@ -9,6 +9,24 @@
 T_CT_MYSQLCLASS_IP_TITLE = "MySQL Class Component"
 T_CT_MYSQLCLASS_IP_VALUE = "Object"
 T_CT_MYSQLCLASS_IP_VALUE2 = "Method"
+
+T_CT_MYSQLCLASS_IP_VALUE2FUNC = [
+	"autocommit",
+	"close",
+	"columns",
+	"commit",
+	"connect",
+	"error",
+	"escape_string",
+	"info",
+	"init",
+	"insert_id",
+	"next_result",
+	"query",
+	"result",
+	"result2",
+	"rollback"
+]
 T_CT_MYSQLCLASS_IP_VALUE2LIST = [
 	"autocommit(lStatus)",
 	"close()",

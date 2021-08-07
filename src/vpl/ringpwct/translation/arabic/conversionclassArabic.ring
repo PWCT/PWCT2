@@ -8,6 +8,17 @@
 T_CT_CONVERSIONCLASS_IP_TITLE = "مكون فئة التحويل"
 T_CT_CONVERSIONCLASS_IP_VALUE = "اسم الكائن :"
 T_CT_CONVERSIONCLASS_IP_VALUE2 = "الميثود : "
+
+T_CT_CONVERSIONCLASS_IP_VALUE2FUNC = [
+	"ascii",
+	"char",
+	"dec",
+	"hex",
+	"hex2str",
+	"number",
+	"str2hex",
+	"string"
+]
 T_CT_CONVERSIONCLASS_IP_VALUE2LIST = ["ascii","char","dec","hex","hex2str","number","str2hex","string"]
 T_CT_CONVERSIONCLASS_IP_VALUE3 = "المعطيات :"
 T_CT_CONVERSIONCLASS_IP_VALUE4 = "الناتج :"

@@ -8,6 +8,18 @@
 T_CT_SECURITYCLASS_IP_TITLE = "مكون فئة الأمان"
 T_CT_SECURITYCLASS_IP_VALUE = "اسم الكائن :"
 T_CT_SECURITYCLASS_IP_VALUE2 = "الميثود : "
+
+T_CT_SECURITYCLASS_IP_VALUE2FUNC = [
+	"decrypt",
+	"encrypt",
+	"md5",
+	"randbytes",
+	"sha1",
+	"sha224",
+	"sha256",
+	"sha384",
+	"sha512"
+]
 T_CT_SECURITYCLASS_IP_VALUE2LIST = ["decrypt","encrypt","md5","randbytes","sha1","sha224","sha256","sha384","sha512"]
 T_CT_SECURITYCLASS_IP_VALUE3 = "المعطيات :"
 T_CT_SECURITYCLASS_IP_VALUE4 = "الناتج :"

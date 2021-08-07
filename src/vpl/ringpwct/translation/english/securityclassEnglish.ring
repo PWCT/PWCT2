@@ -9,6 +9,18 @@
 T_CT_SECURITYCLASS_IP_TITLE = "Security Class Component"
 T_CT_SECURITYCLASS_IP_VALUE = "Object"
 T_CT_SECURITYCLASS_IP_VALUE2 = "Method"
+
+T_CT_SECURITYCLASS_IP_VALUE2FUNC = [
+	"decrypt",
+	"encrypt",
+	"md5",
+	"randbytes",
+	"sha1",
+	"sha224",
+	"sha256",
+	"sha384",
+	"sha512"
+]
 T_CT_SECURITYCLASS_IP_VALUE2LIST = [
 	"decrypt(cString,cKey,cIV) --> String",
 	"encrypt(cString,cKey,cIV) --> String",

@@ -8,6 +8,12 @@
 T_CT_DEBUGCLASS_IP_TITLE = "مكون فئة التنقيح"
 T_CT_DEBUGCLASS_IP_VALUE = "اسم الكائن :"
 T_CT_DEBUGCLASS_IP_VALUE2 = "الميثود : "
+
+T_CT_DEBUGCLASS_IP_VALUE2FUNC = [
+	"assert",
+	"eval",
+	"raise"
+]
 T_CT_DEBUGCLASS_IP_VALUE2LIST = ["assert","eval","raise"]
 T_CT_DEBUGCLASS_IP_VALUE3 = "المعطيات :"
 T_CT_DEBUGCLASS_IP_VALUE4 = "الناتج :"

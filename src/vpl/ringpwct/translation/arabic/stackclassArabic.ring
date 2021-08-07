@@ -8,6 +8,29 @@
 T_CT_STACKCLASS_IP_TITLE = "مكون فئة الكومة"
 T_CT_STACKCLASS_IP_VALUE = "اسم الكائن :"
 T_CT_STACKCLASS_IP_VALUE2 = "الميثود : "
+
+T_CT_STACKCLASS_IP_VALUE2FUNC = [
+	"add",
+	"delete",
+	"find",
+	"findincolumn",
+	"first",
+	"init",
+	"insert",
+	"item",
+	"last",
+	"operator",
+	"pop",
+	"print",
+	"println",
+	"push",
+	"reverse",
+	"set",
+	"size",
+	"sort",
+	"swap",
+	"value"
+]
 T_CT_STACKCLASS_IP_VALUE2LIST = ["add","delete","find","findincolumn","first","init","insert","item","last","operator","pop","print","println","push","reverse","set","size","sort","swap","value"]
 T_CT_STACKCLASS_IP_VALUE3 = "المعطيات :"
 T_CT_STACKCLASS_IP_VALUE4 = "الناتج :"

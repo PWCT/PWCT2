@@ -9,6 +9,30 @@
 T_CT_MATHCLASS_IP_TITLE = "Math Class Component"
 T_CT_MATHCLASS_IP_VALUE = "Object"
 T_CT_MATHCLASS_IP_VALUE2 = "Method"
+
+T_CT_MATHCLASS_IP_VALUE2FUNC = [
+	"acos",
+	"asin",
+	"atan",
+	"atan2",
+	"ceil",
+	"cos",
+	"cosh",
+	"decimals",
+	"exp",
+	"fabs",
+	"floor",
+	"log",
+	"log10",
+	"pow",
+	"random",
+	"sin",
+	"sinh",
+	"sqrt",
+	"tan",
+	"tanh",
+	"unsigned"
+]
 T_CT_MATHCLASS_IP_VALUE2LIST = [
 	"acos(nNumber) --> Number",
 	"asin(nNumber) --> Number",

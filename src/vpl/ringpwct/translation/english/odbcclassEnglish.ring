@@ -9,6 +9,24 @@
 T_CT_ODBCCLASS_IP_TITLE = "ODBC Class Component"
 T_CT_ODBCCLASS_IP_VALUE = "Object"
 T_CT_ODBCCLASS_IP_VALUE2 = "Method"
+
+T_CT_ODBCCLASS_IP_VALUE2FUNC = [
+	"autocommit",
+	"close",
+	"colcount",
+	"columns",
+	"commit",
+	"connect",
+	"datasources",
+	"disconnect",
+	"drivers",
+	"execute",
+	"fetch",
+	"getdata",
+	"init",
+	"rollback",
+	"tables"
+]
 T_CT_ODBCCLASS_IP_VALUE2LIST = [
 	"autocommit(lStatus)",
 	"close()",

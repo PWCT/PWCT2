@@ -9,6 +9,27 @@
 T_CT_LISTCLASS_IP_TITLE = "List Class Component"
 T_CT_LISTCLASS_IP_VALUE = "Object"
 T_CT_LISTCLASS_IP_VALUE2 = "Method"
+
+T_CT_LISTCLASS_IP_VALUE2FUNC = [
+	"add",
+	"delete",
+	"find",
+	"findincolumn",
+	"first",
+	"init",
+	"insert",
+	"item",
+	"last",
+	"operator",
+	"print",
+	"println",
+	"reverse",
+	"set",
+	"size",
+	"sort",
+	"swap",
+	"value"
+]
 T_CT_LISTCLASS_IP_VALUE2LIST = [
 	"add(vValue)",
 	"delete(nIndex)",

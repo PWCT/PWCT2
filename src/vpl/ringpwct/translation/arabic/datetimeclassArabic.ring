@@ -8,6 +8,15 @@
 T_CT_DATETIMECLASS_IP_TITLE = "مكون فئة الوقت والتاريخ"
 T_CT_DATETIMECLASS_IP_VALUE = "اسم الكائن :"
 T_CT_DATETIMECLASS_IP_VALUE2 = "الميثود : "
+
+T_CT_DATETIMECLASS_IP_VALUE2FUNC = [
+	"adddays",
+	"clock",
+	"date",
+	"diffdays",
+	"time",
+	"timelist"
+]
 T_CT_DATETIMECLASS_IP_VALUE2LIST = ["adddays","clock","date","diffdays","time","timelist"]
 T_CT_DATETIMECLASS_IP_VALUE3 = "المعطيات :"
 T_CT_DATETIMECLASS_IP_VALUE4 = "الناتج :"
