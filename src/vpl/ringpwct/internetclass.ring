@@ -14,13 +14,9 @@ class internetclassComponentController from ComponentControllerParent
 	func GenerateAction 
 
 		 
-				switch Variable(:Value2) {
-					
-					case 1 cFunc = "download"
-					case 2 cFunc = "sendemail"
-		
-		
-				}
+				
+				# Get the function name in the generated code
+					cFunc = T_CT_INTERNETCLASS_IP_VALUE2FUNC[ Variable(:Value2) ]
 		
 				# Get the function Name 
 					cFuncName = T_CT_INTERNETCLASS_IP_VALUE2LIST [Variable(:Value2)]

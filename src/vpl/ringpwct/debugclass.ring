@@ -14,14 +14,9 @@ class debugclassComponentController from ComponentControllerParent
 	func GenerateAction 
 
 		 
-				switch Variable(:Value2) {
-					
-					case 1 cFunc = "assert"
-					case 2 cFunc = "eval"
-					case 3 cFunc = "raise"
-		
-		
-				}
+				
+				# Get the function name in the generated code
+					cFunc = T_CT_DEBUGCLASS_IP_VALUE2FUNC[ Variable(:Value2) ]
 		
 				# Get the function Name 
 					cFuncName = T_CT_DEBUGCLASS_IP_VALUE2LIST [Variable(:Value2)]

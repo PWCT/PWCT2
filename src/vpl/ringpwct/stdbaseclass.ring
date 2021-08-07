@@ -13,14 +13,9 @@ class stdbaseclassComponentController from ComponentControllerParent
 
 	func GenerateAction 
 
-		switch Variable(:Value2) {			
-			case 1 cFunc = "Init" 
-			case 2 cFunc = "Print" 
-			case 3 cFunc = "PrintLn" 
-			case 4 cFunc = "Size" 
-			case 5 cFunc = "Value" 
-			case 6 cFunc = "Set" 
-		}
+		
+				# Get the function name in the generated code
+					cFunc = T_CT_STDBASECLASS_IP_VALUE2FUNC[ Variable(:Value2) ]
 
 		# Get the function Name 
 			cFuncName = T_CT_STDBASECLASS_IP_VALUE2LIST [Variable(:Value2)]

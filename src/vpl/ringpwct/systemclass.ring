@@ -14,24 +14,9 @@ class systemclassComponentController from ComponentControllerParent
 	func GenerateAction 
 
 		 
-				switch Variable(:Value2) {
-					
-					case 1 cFunc = "filename"
-					case 2 cFunc = "isandroid"
-					case 3 cFunc = "isfreebsd"
-					case 4 cFunc = "islinux"
-					case 5 cFunc = "ismacosx"
-					case 6 cFunc = "ismsdos"
-					case 7 cFunc = "isunix"
-					case 8 cFunc = "iswindows"
-					case 9 cFunc = "iswindows64"
-					case 10 cFunc = "sysargv"
-					case 11 cFunc = "sysget"
-					case 12 cFunc = "system"
-					case 13 cFunc = "windowsnl"
-		
-		
-				}
+				
+				# Get the function name in the generated code
+					cFunc = T_CT_SYSTEMCLASS_IP_VALUE2FUNC[ Variable(:Value2) ]
 		
 				# Get the function Name 
 					cFuncName = T_CT_SYSTEMCLASS_IP_VALUE2LIST [Variable(:Value2)]

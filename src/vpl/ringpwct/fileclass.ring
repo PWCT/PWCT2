@@ -14,38 +14,9 @@ class fileclassComponentController from ComponentControllerParent
 	func GenerateAction 
 
 		 
-				switch Variable(:Value2) {
-					
-					case 1 cFunc = "clearerr"
-					case 2 cFunc = "close"
-					case 3 cFunc = "dir"
-					case 4 cFunc = "eof"
-					case 5 cFunc = "error"
-					case 6 cFunc = "exists"
-					case 7 cFunc = "flush"
-					case 8 cFunc = "fread"
-					case 9 cFunc = "fwrite"
-					case 10 cFunc = "getc"
-					case 11 cFunc = "getpos"
-					case 12 cFunc = "gets"
-					case 13 cFunc = "open"
-					case 14 cFunc = "perror"
-					case 15 cFunc = "putc"
-					case 16 cFunc = "puts"
-					case 17 cFunc = "read"
-					case 18 cFunc = "remove"
-					case 19 cFunc = "rename"
-					case 20 cFunc = "reopen"
-					case 21 cFunc = "rewind"
-					case 22 cFunc = "seek"
-					case 23 cFunc = "setpos"
-					case 24 cFunc = "tell"
-					case 25 cFunc = "tempfile"
-					case 26 cFunc = "ungetc"
-					case 27 cFunc = "write"
-		
-		
-				}
+				
+				# Get the function name in the generated code
+					cFunc = T_CT_FILECLASS_IP_VALUE2FUNC[ Variable(:Value2) ]
 		
 				# Get the function Name 
 					cFuncName = T_CT_FILECLASS_IP_VALUE2LIST [Variable(:Value2)]

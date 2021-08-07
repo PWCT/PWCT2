@@ -14,20 +14,9 @@ class securityclassComponentController from ComponentControllerParent
 	func GenerateAction 
 
 		 
-				switch Variable(:Value2) {
-					
-					case 1 cFunc = "decrypt"
-					case 2 cFunc = "encrypt"
-					case 3 cFunc = "md5"
-					case 4 cFunc = "randbytes"
-					case 5 cFunc = "sha1"
-					case 6 cFunc = "sha224"
-					case 7 cFunc = "sha256"
-					case 8 cFunc = "sha384"
-					case 9 cFunc = "sha512"
-		
-		
-				}
+				
+				# Get the function name in the generated code
+					cFunc = T_CT_SECURITYCLASS_IP_VALUE2FUNC[ Variable(:Value2) ]
 		
 				# Get the function Name 
 					cFuncName = T_CT_SECURITYCLASS_IP_VALUE2LIST [Variable(:Value2)]

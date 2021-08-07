@@ -14,26 +14,9 @@ class mysqlclassComponentController from ComponentControllerParent
 	func GenerateAction 
 
 		 
-				switch Variable(:Value2) {
-					
-					case 1 cFunc = "autocommit"
-					case 2 cFunc = "close"
-					case 3 cFunc = "columns"
-					case 4 cFunc = "commit"
-					case 5 cFunc = "connect"
-					case 6 cFunc = "error"
-					case 7 cFunc = "escape_string"
-					case 8 cFunc = "info"
-					case 9 cFunc = "init"
-					case 10 cFunc = "insert_id"
-					case 11 cFunc = "next_result"
-					case 12 cFunc = "query"
-					case 13 cFunc = "result"
-					case 14 cFunc = "result2"
-					case 15 cFunc = "rollback"
-		
-		
-				}
+				
+				# Get the function name in the generated code
+					cFunc = T_CT_MYSQLCLASS_IP_VALUE2FUNC[ Variable(:Value2) ]
 		
 				# Get the function Name 
 					cFuncName = T_CT_MYSQLCLASS_IP_VALUE2LIST [Variable(:Value2)]

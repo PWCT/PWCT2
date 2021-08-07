@@ -14,26 +14,9 @@ class odbcclassComponentController from ComponentControllerParent
 	func GenerateAction 
 
 		 
-				switch Variable(:Value2) {
-					
-					case 1 cFunc = "autocommit"
-					case 2 cFunc = "close"
-					case 3 cFunc = "colcount"
-					case 4 cFunc = "columns"
-					case 5 cFunc = "commit"
-					case 6 cFunc = "connect"
-					case 7 cFunc = "datasources"
-					case 8 cFunc = "disconnect"
-					case 9 cFunc = "drivers"
-					case 10 cFunc = "execute"
-					case 11 cFunc = "fetch"
-					case 12 cFunc = "getdata"
-					case 13 cFunc = "init"
-					case 14 cFunc = "rollback"
-					case 15 cFunc = "tables"
-		
-		
-				}
+				
+				# Get the function name in the generated code
+					cFunc = T_CT_ODBCCLASS_IP_VALUE2FUNC[ Variable(:Value2) ]
 		
 				# Get the function Name 
 					cFuncName = T_CT_ODBCCLASS_IP_VALUE2LIST [Variable(:Value2)]

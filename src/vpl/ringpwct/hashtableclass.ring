@@ -14,31 +14,9 @@ class hashtableclassComponentController from ComponentControllerParent
 	func GenerateAction 
 
 		 
-				switch Variable(:Value2) {
-					
-					case 1 cFunc = "add"
-					case 2 cFunc = "contains"
-					case 3 cFunc = "delete"
-					case 4 cFunc = "find"
-					case 5 cFunc = "findincolumn"
-					case 6 cFunc = "first"
-					case 7 cFunc = "getvalue"
-					case 8 cFunc = "index"
-					case 9 cFunc = "init"
-					case 10 cFunc = "insert"
-					case 11 cFunc = "item"
-					case 12 cFunc = "last"
-					case 13 cFunc = "operator"
-					case 14 cFunc = "print"
-					case 15 cFunc = "println"
-					case 16 cFunc = "reverse"
-					case 17 cFunc = "set"
-					case 18 cFunc = "size"
-					case 19 cFunc = "sort"
-					case 20 cFunc = "swap"
-					case 21 cFunc = "value"
-		
-				}
+				
+				# Get the function name in the generated code
+					cFunc = T_CT_HASHTABLECLASS_IP_VALUE2FUNC[ Variable(:Value2) ]
 		
 				# Get the function Name 
 					cFuncName = T_CT_HASHTABLECLASS_IP_VALUE2LIST [Variable(:Value2)]

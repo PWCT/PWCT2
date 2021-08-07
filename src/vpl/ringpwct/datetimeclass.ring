@@ -14,17 +14,9 @@ class datetimeclassComponentController from ComponentControllerParent
 	func GenerateAction 
 
 		 
-				switch Variable(:Value2) {
-					
-					case 1 cFunc = "adddays"
-					case 2 cFunc = "clock"
-					case 3 cFunc = "date"
-					case 4 cFunc = "diffdays"
-					case 5 cFunc = "time"
-					case 6 cFunc = "timelist"
-		
-		
-				}
+				
+				# Get the function name in the generated code
+					cFunc = T_CT_DATETIMECLASS_IP_VALUE2FUNC[ Variable(:Value2) ]
 		
 				# Get the function Name 
 					cFuncName = T_CT_DATETIMECLASS_IP_VALUE2LIST [Variable(:Value2)]

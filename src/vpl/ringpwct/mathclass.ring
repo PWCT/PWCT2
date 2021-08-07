@@ -14,30 +14,9 @@ class mathclassComponentController from ComponentControllerParent
 	func GenerateAction 
 
 		 
-				switch Variable(:Value2) {
-					
-					case 1 cFunc = "acos"
-					case 2 cFunc = "asin"
-					case 3 cFunc = "atan"
-					case 4 cFunc = "atan2"
-					case 5 cFunc = "ceil"
-					case 6 cFunc = "cos"
-					case 7 cFunc = "cosh"
-					case 8 cFunc = "decimals"
-					case 9 cFunc = "exp"
-					case 10 cFunc = "fabs"
-					case 11 cFunc = "floor"
-					case 12 cFunc = "log"
-					case 13 cFunc = "log10"
-					case 14 cFunc = "pow"
-					case 15 cFunc = "random"
-					case 16 cFunc = "sin"
-					case 17 cFunc = "sinh"
-					case 18 cFunc = "sqrt"
-					case 19 cFunc = "tan"
-					case 20 cFunc = "tanh"
-					case 21 cFunc = "unsigned"
-				}
+				
+				# Get the function name in the generated code
+					cFunc = T_CT_MATHCLASS_IP_VALUE2FUNC[ Variable(:Value2) ]
 		
 				# Get the function Name 
 					cFuncName = T_CT_MATHCLASS_IP_VALUE2LIST [Variable(:Value2)]

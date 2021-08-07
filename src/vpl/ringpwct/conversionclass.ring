@@ -14,19 +14,9 @@ class conversionclassComponentController from ComponentControllerParent
 	func GenerateAction 
 
 		 
-				switch Variable(:Value2) {
-					
-					case 1 cFunc = "ascii"
-					case 2 cFunc = "char"
-					case 3 cFunc = "dec"
-					case 4 cFunc = "hex"
-					case 5 cFunc = "hex2str"
-					case 6 cFunc = "number"
-					case 7 cFunc = "str2hex"
-					case 8 cFunc = "string"
-		
-		
-				}
+				
+				# Get the function name in the generated code
+					cFunc = T_CT_CONVERSIONCLASS_IP_VALUE2FUNC[ Variable(:Value2) ]
 		
 				# Get the function Name 
 					cFuncName = T_CT_CONVERSIONCLASS_IP_VALUE2LIST [Variable(:Value2)]

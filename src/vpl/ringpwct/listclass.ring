@@ -14,28 +14,9 @@ class listclassComponentController from ComponentControllerParent
 	func GenerateAction 
 
 		
-				switch Variable(:Value2) {
-					
-					case 1 cFunc = "add"
-					case 2 cFunc = "delete"
-					case 3 cFunc = "find"
-					case 4 cFunc = "findincolumn"
-					case 5 cFunc = "first"
-					case 6 cFunc = "init"
-					case 7 cFunc = "insert"
-					case 8 cFunc = "item"
-					case 9 cFunc = "last"
-					case 10 cFunc = "operator"
-					case 11 cFunc = "print"
-					case 12 cFunc = "println"
-					case 13 cFunc = "reverse"
-					case 14 cFunc = "set"
-					case 15 cFunc = "size"
-					case 16 cFunc = "sort"
-					case 17 cFunc = "swap"
-					case 18 cFunc = "value"
-		
-				}
+				
+				# Get the function name in the generated code
+					cFunc = T_CT_LISTCLASS_IP_VALUE2FUNC[ Variable(:Value2) ]
 		
 				# Get the function Name 
 					cFuncName = T_CT_LISTCLASS_IP_VALUE2LIST [Variable(:Value2)]

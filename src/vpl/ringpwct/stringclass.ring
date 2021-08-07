@@ -14,32 +14,9 @@ class stringclassComponentController from ComponentControllerParent
 	func GenerateAction 
 
 		
-				switch Variable(:Value2) {
-					case 1 cFunc = "copy"
-					case 2 cFunc = "endswith"
-					case 3 cFunc = "getfrom"
-					case 4 cFunc = "init"
-					case 5 cFunc = "left"
-					case 6 cFunc = "lines"
-					case 7 cFunc = "lower"
-					case 8 cFunc = "mid"
-					case 9 cFunc = "operator"
-					case 10 cFunc = "pos"
-					case 11 cFunc = "print"
-					case 12 cFunc = "println"
-					case 13 cFunc = "replace"
-					case 14 cFunc = "right"
-					case 15 cFunc = "set"
-					case 16 cFunc = "size"
-					case 17 cFunc = "split"
-					case 18 cFunc = "startswith"
-					case 19 cFunc = "strcmp"
-					case 20 cFunc = "tofile"
-					case 21 cFunc = "tolist"
-					case 22 cFunc = "trim"
-					case 23 cFunc = "upper"
-					case 24 cFunc = "value"
-				}
+				
+				# Get the function name in the generated code
+					cFunc = T_CT_STRINGCLASS_IP_VALUE2FUNC[ Variable(:Value2) ]
 		
 				# Get the function Name 
 					cFuncName = T_CT_STRINGCLASS_IP_VALUE2LIST [Variable(:Value2)]
