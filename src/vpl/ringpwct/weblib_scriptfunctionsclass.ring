@@ -14,19 +14,9 @@ class weblib_scriptfunctionsclassComponentController from ComponentControllerPar
 	func GenerateAction 
 
 		 
-				switch Variable(:Value2) {
-					
-					case 1 cFunc = "script"
-					case 2 cFunc = "scriptfunc"
-					case 3 cFunc = "scriptfuncajax"
-					case 4 cFunc = "scriptfuncalert"
-					case 5 cFunc = "scriptfuncclean"
-					case 6 cFunc = "scriptfuncselect"
-					case 7 cFunc = "scriptredirection"
-					case 8 cFunc = "scriptscrollfixed"
-		
-		
-				}
+				
+				# Get the function name in the generated code
+					cFunc = T_CT_WEBLIB_SCRIPTFUNCTIONSCLASS_IP_VALUE2FUNC[ Variable(:Value2) ]
 		
 				# Get the function Name 
 					cFuncName = T_CT_WEBLIB_SCRIPTFUNCTIONSCLASS_IP_VALUE2LIST [Variable(:Value2)]

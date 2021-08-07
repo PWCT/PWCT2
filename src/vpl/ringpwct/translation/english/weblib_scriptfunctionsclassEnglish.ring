@@ -9,6 +9,17 @@
 T_CT_WEBLIB_SCRIPTFUNCTIONSCLASS_IP_TITLE = "ScriptFunctions Class Component"
 T_CT_WEBLIB_SCRIPTFUNCTIONSCLASS_IP_VALUE = "Object"
 T_CT_WEBLIB_SCRIPTFUNCTIONSCLASS_IP_VALUE2 = "Method"
+
+T_CT_WEBLIB_SCRIPTFUNCTIONSCLASS_IP_VALUE2FUNC = [
+	"script",
+	"scriptfunc",
+	"scriptfuncajax",
+	"scriptfuncalert",
+	"scriptfuncclean",
+	"scriptfuncselect",
+	"scriptredirection",
+	"scriptscrollfixed"
+]
 T_CT_WEBLIB_SCRIPTFUNCTIONSCLASS_IP_VALUE2LIST = [
 	"script(cCode) --> String",
 	"scriptfunc(cFuncName,cCode) --> String",

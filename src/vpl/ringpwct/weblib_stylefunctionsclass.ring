@@ -14,38 +14,9 @@ class weblib_stylefunctionsclassComponentController from ComponentControllerPare
 	func GenerateAction 
 
 		 
-				switch Variable(:Value2) {
-					
-					case 1 cFunc = "styleabsolute"
-					case 2 cFunc = "stylebackcolor"
-					case 3 cFunc = "stylecolor"
-					case 4 cFunc = "styledivcenter"
-					case 5 cFunc = "stylefixed"
-					case 6 cFunc = "stylefloatleft"
-					case 7 cFunc = "stylefloatright"
-					case 8 cFunc = "stylefontsize"
-					case 9 cFunc = "stylegradient"
-					case 10 cFunc = "styleheight"
-					case 11 cFunc = "stylehorizontalcenter"
-					case 12 cFunc = "styleleft"
-					case 13 cFunc = "stylemarginleft"
-					case 14 cFunc = "stylemarginright"
-					case 15 cFunc = "stylemargintop"
-					case 16 cFunc = "stylepos"
-					case 17 cFunc = "stylesize"
-					case 18 cFunc = "stylesizefull"
-					case 19 cFunc = "styletable"
-					case 20 cFunc = "styletablenoborder"
-					case 21 cFunc = "styletablerows"
-					case 22 cFunc = "styletextcenter"
-					case 23 cFunc = "styletextleft"
-					case 24 cFunc = "styletextright"
-					case 25 cFunc = "styletop"
-					case 26 cFunc = "stylewidth"
-					case 27 cFunc = "stylezindex"
-		
-		
-				}
+				
+				# Get the function name in the generated code
+					cFunc = T_CT_WEBLIB_STYLEFUNCTIONSCLASS_IP_VALUE2FUNC[ Variable(:Value2) ]
 		
 				# Get the function Name 
 					cFuncName = T_CT_WEBLIB_STYLEFUNCTIONSCLASS_IP_VALUE2LIST [Variable(:Value2)]
