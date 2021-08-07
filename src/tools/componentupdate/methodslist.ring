@@ -22,7 +22,7 @@ for item in aList
 		nPos = substr(Item,"/")
 		cClass = substr(Item,nPos+1)
 		cClass = left(cClass, len(cClass) - len(cValue) )
-		if find(["qdialslider","refmeta_is","refmeta_ispackage"],cClass)
+		if find(["refmeta_is","refmeta_ispackage"],cClass)
 			cClass = ""
 		ok
 		if trim(cClass) != NULL 
@@ -35,6 +35,11 @@ aClasses + "weblib_application"
 aClasses + "weblib_page"
 aClasses + "weblib_scriptfunctions"
 aClasses + "weblib_stylefunctions"
+aClasses + "weblib_webpage"
+aClasses + "weblib_htmlpage"
+aClasses + "weblib_bootstrappage"
+
+
 ? aClasses
 ? "Count : " + len(aClasses)
 
@@ -75,8 +80,11 @@ func UpdateTranslationFile cFileName,cClass
 	ok
 
 func GetNewList cClassName
-
-	eval("oObject = new "+substr(cClassName,"weblib_",""))
+	cClassName = substr(cClassName,"weblib_","")
+	if cClassName = "qdialslider"
+		cClassName = "qdial"
+	ok		
+	eval("oObject = new "+cClassName)
 	aMethods = methods(oOBJECT)
 	aMethods = sort(aMethods)
 
@@ -103,8 +111,12 @@ func GetNewList cClassName
 
 func GetClassFiles cClassName
 	cFolder = "..\..\vpl\ringpwct\"
+	cExtra  = "class"
+	if find(["weblib_webpage","weblib_htmlpage","weblib_bootstrappage"],cClassName)
+		cExtra = ""
+	ok
 	return [
-		cFolder + "translation\english\" + cClassName + "classEnglish.ring",
-		cFolder + "translation\arabic\" + cClassName + "classArabic.ring",
-		cFolder + cClassName + "class.ring"
+		cFolder + "translation\english\" + cClassName + cExtra + "English.ring",
+		cFolder + "translation\arabic\" + cClassName + cExtra + "Arabic.ring",
+		cFolder + cClassName + cExtra + ".ring"
 	]
