@@ -33,9 +33,27 @@ next
 for cClass in aClasses
 	UpdateTranslationFile(GetClassFiles(cClass)[1],cClass)
 	UpdateTranslationFile(GetClassFiles(cClass)[2],cClass)	
+	UpdateCodeFile(GetClassFiles(cClass)[3],cClass)	
 next
 
+func UpdateCodeFile cFileName,cClass
+	cFileContent = Read(cFileName)
+	nPos = substr(cFileContent,"switch")
+	nPos2 = substr(cFileContent,"}")
+	if nPos > 0 and nPos2 > 0 
+		cLine = "cFunc = T_CT_"+Upper(cClass)+"CLASS_IP_VALUE2FUNC[ Variable(:Value2) ]" 
+		nPos3 = substr(cFileContent,cLine)
+		if nPos3 = 0
+			? "Update File : " + cFileName
+			cFileContent = substr(cFileContent,1,nPos-1) + nl + 
+			Copy(Tab,4) + "# Get the function name in the generated code" + nl + 
+			Copy(Tab,5) + cLine  +
+			substr(cFileContent,nPos2+1)
+			write(cFileName,cFileContent)
+			? cFileContent
+		ok
 
+	ok
 
 func UpdateTranslationFile cFileName,cClass
 	cFileContent = Read(cFileName)
