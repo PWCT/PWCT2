@@ -1,46 +1,225 @@
-			case 1 cFunc = "cachekey"
-			case 2 cFunc = "convertfromimage"
-			case 3 cFunc = "copy"
-			case 4 cFunc = "copy_2"
-			case 5 cFunc = "createheuristicmask"
-			case 6 cFunc = "createmaskfromcolor"
-			case 7 cFunc = "defaultdepth"
-			case 8 cFunc = "delete"
-			case 9 cFunc = "depth"
-			case 10 cFunc = "detach"
-			case 11 cFunc = "devicepixelratio"
-			case 12 cFunc = "fill"
-			case 13 cFunc = "fromimage"
-			case 14 cFunc = "fromimage_2"
-			case 15 cFunc = "fromimagereader"
-			case 16 cFunc = "hasalpha"
-			case 17 cFunc = "hasalphachannel"
-			case 18 cFunc = "height"
-			case 19 cFunc = "init"
-			case 20 cFunc = "isnull"
-			case 21 cFunc = "isqbitmap"
-			case 22 cFunc = "loadfromdata"
-			case 23 cFunc = "loadfromdata_2"
-			case 24 cFunc = "loadpixmap"
-			case 25 cFunc = "mask"
-			case 26 cFunc = "objectpointer"
-			case 27 cFunc = "rect"
-			case 28 cFunc = "save"
-			case 29 cFunc = "save_2"
-			case 30 cFunc = "scaled"
-			case 31 cFunc = "scaled_2"
-			case 32 cFunc = "scaledtoheight"
-			case 33 cFunc = "scaledtowidth"
-			case 34 cFunc = "scroll"
-			case 35 cFunc = "scroll_2"
-			case 36 cFunc = "setdevicepixelratio"
-			case 37 cFunc = "setmask"
-			case 38 cFunc = "size"
-			case 39 cFunc = "swap"
-			case 40 cFunc = "toimage"
-			case 41 cFunc = "transformed"
-			case 42 cFunc = "transformed_2"
-			case 43 cFunc = "truematrix"
-			case 44 cFunc = "truematrix_2"
-			case 45 cFunc = "width"
-["cachekey","convertfromimage","copy","copy_2","createheuristicmask","createmaskfromcolor","defaultdepth","delete","depth","detach","devicepixelratio","fill","fromimage","fromimage_2","fromimagereader","hasalpha","hasalphachannel","height","init","isnull","isqbitmap","loadfromdata","loadfromdata_2","loadpixmap","mask","objectpointer","rect","save","save_2","scaled","scaled_2","scaledtoheight","scaledtowidth","scroll","scroll_2","setdevicepixelratio","setmask","size","swap","toimage","transformed","transformed_2","truematrix","truematrix_2","width"]
+
+T_CT_BOOTSTRAPPAGECLASS_IP_VALUE2FUNC = [
+	"addattributes",
+	"audio",
+	"boxend",
+	"boxstart",
+	"braceend",
+	"button",
+	"buttonlink",
+	"cellend",
+	"cellstart",
+	"checkbox",
+	"combobox",
+	"cookie",
+	"decode",
+	"decodestring",
+	"divend",
+	"divstart",
+	"editbox",
+	"formend",
+	"formpost",
+	"formstart",
+	"formupload",
+	"getcolor",
+	"getcookies",
+	"getfilename",
+	"gethtmlstart",
+	"gettabs",
+	"h1",
+	"h2",
+	"h3",
+	"h4",
+	"h5",
+	"h6",
+	"headerend",
+	"headerstart",
+	"hidden",
+	"html",
+	"image",
+	"liend",
+	"link",
+	"list2ul",
+	"listart",
+	"listbox",
+	"navend",
+	"navstart",
+	"newline",
+	"nooutput",
+	"output",
+	"p",
+	"print",
+	"radio",
+	"rowend",
+	"rowstart",
+	"script",
+	"scriptfunc",
+	"scriptfuncajax",
+	"scriptfuncalert",
+	"scriptfuncclean",
+	"scriptfuncselect",
+	"scriptlibs",
+	"scriptredirection",
+	"scriptscrollfixed",
+	"setcookie",
+	"slider",
+	"spanend",
+	"spanstart",
+	"spinner",
+	"starthtml",
+	"style",
+	"styleabsolute",
+	"stylebackcolor",
+	"stylecolor",
+	"styledivcenter",
+	"stylefixed",
+	"stylefloatleft",
+	"stylefloatright",
+	"stylefontsize",
+	"stylegradient",
+	"styleheight",
+	"stylehorizontalcenter",
+	"styleleft",
+	"stylemarginleft",
+	"stylemarginright",
+	"stylemargintop",
+	"stylepos",
+	"stylesize",
+	"stylesizefull",
+	"styletable",
+	"styletablenoborder",
+	"styletablerows",
+	"styletextcenter",
+	"styletextleft",
+	"styletextright",
+	"styletop",
+	"stylewidth",
+	"stylezindex",
+	"submit",
+	"tableend",
+	"tablestart",
+	"tabmlstring",
+	"tabpop",
+	"tabpush",
+	"tagend",
+	"tagstart",
+	"text",
+	"textbox",
+	"ulend",
+	"ulstart",
+	"uploadfile",
+	"urlencode",
+	"video",
+	"webprint"
+]
+["addattributes","audio","boxend","boxstart","braceend","button","buttonlink","cellend","cellstart","checkbox","combobox","cookie","decode","decodestring","divend","divstart","editbox","formend","formpost","formstart","formupload","getcolor","getcookies","getfilename","gethtmlstart","gettabs","h1","h2","h3","h4","h5","h6","headerend","headerstart","hidden","html","image","liend","link","list2ul","listart","listbox","navend","navstart","newline","nooutput","output","p","print","radio","rowend","rowstart","script","scriptfunc","scriptfuncajax","scriptfuncalert","scriptfuncclean","scriptfuncselect","scriptlibs","scriptredirection","scriptscrollfixed","setcookie","slider","spanend","spanstart","spinner","starthtml","style","styleabsolute","stylebackcolor","stylecolor","styledivcenter","stylefixed","stylefloatleft","stylefloatright","stylefontsize","stylegradient","styleheight","stylehorizontalcenter","styleleft","stylemarginleft","stylemarginright","stylemargintop","stylepos","stylesize","stylesizefull","styletable","styletablenoborder","styletablerows","styletextcenter","styletextleft","styletextright","styletop","stylewidth","stylezindex","submit","tableend","tablestart","tabmlstring","tabpop","tabpush","tagend","tagstart","text","textbox","ulend","ulstart","uploadfile","urlencode","video","webprint"]			case 1 cFunc = "addattributes"
+			case 2 cFunc = "audio"
+			case 3 cFunc = "boxend"
+			case 4 cFunc = "boxstart"
+			case 5 cFunc = "braceend"
+			case 6 cFunc = "button"
+			case 7 cFunc = "buttonlink"
+			case 8 cFunc = "cellend"
+			case 9 cFunc = "cellstart"
+			case 10 cFunc = "checkbox"
+			case 11 cFunc = "combobox"
+			case 12 cFunc = "cookie"
+			case 13 cFunc = "decode"
+			case 14 cFunc = "decodestring"
+			case 15 cFunc = "divend"
+			case 16 cFunc = "divstart"
+			case 17 cFunc = "editbox"
+			case 18 cFunc = "formend"
+			case 19 cFunc = "formpost"
+			case 20 cFunc = "formstart"
+			case 21 cFunc = "formupload"
+			case 22 cFunc = "getcolor"
+			case 23 cFunc = "getcookies"
+			case 24 cFunc = "getfilename"
+			case 25 cFunc = "gethtmlstart"
+			case 26 cFunc = "gettabs"
+			case 27 cFunc = "h1"
+			case 28 cFunc = "h2"
+			case 29 cFunc = "h3"
+			case 30 cFunc = "h4"
+			case 31 cFunc = "h5"
+			case 32 cFunc = "h6"
+			case 33 cFunc = "headerend"
+			case 34 cFunc = "headerstart"
+			case 35 cFunc = "hidden"
+			case 36 cFunc = "html"
+			case 37 cFunc = "image"
+			case 38 cFunc = "liend"
+			case 39 cFunc = "link"
+			case 40 cFunc = "list2ul"
+			case 41 cFunc = "listart"
+			case 42 cFunc = "listbox"
+			case 43 cFunc = "navend"
+			case 44 cFunc = "navstart"
+			case 45 cFunc = "newline"
+			case 46 cFunc = "nooutput"
+			case 47 cFunc = "output"
+			case 48 cFunc = "p"
+			case 49 cFunc = "print"
+			case 50 cFunc = "radio"
+			case 51 cFunc = "rowend"
+			case 52 cFunc = "rowstart"
+			case 53 cFunc = "script"
+			case 54 cFunc = "scriptfunc"
+			case 55 cFunc = "scriptfuncajax"
+			case 56 cFunc = "scriptfuncalert"
+			case 57 cFunc = "scriptfuncclean"
+			case 58 cFunc = "scriptfuncselect"
+			case 59 cFunc = "scriptlibs"
+			case 60 cFunc = "scriptredirection"
+			case 61 cFunc = "scriptscrollfixed"
+			case 62 cFunc = "setcookie"
+			case 63 cFunc = "slider"
+			case 64 cFunc = "spanend"
+			case 65 cFunc = "spanstart"
+			case 66 cFunc = "spinner"
+			case 67 cFunc = "starthtml"
+			case 68 cFunc = "style"
+			case 69 cFunc = "styleabsolute"
+			case 70 cFunc = "stylebackcolor"
+			case 71 cFunc = "stylecolor"
+			case 72 cFunc = "styledivcenter"
+			case 73 cFunc = "stylefixed"
+			case 74 cFunc = "stylefloatleft"
+			case 75 cFunc = "stylefloatright"
+			case 76 cFunc = "stylefontsize"
+			case 77 cFunc = "stylegradient"
+			case 78 cFunc = "styleheight"
+			case 79 cFunc = "stylehorizontalcenter"
+			case 80 cFunc = "styleleft"
+			case 81 cFunc = "stylemarginleft"
+			case 82 cFunc = "stylemarginright"
+			case 83 cFunc = "stylemargintop"
+			case 84 cFunc = "stylepos"
+			case 85 cFunc = "stylesize"
+			case 86 cFunc = "stylesizefull"
+			case 87 cFunc = "styletable"
+			case 88 cFunc = "styletablenoborder"
+			case 89 cFunc = "styletablerows"
+			case 90 cFunc = "styletextcenter"
+			case 91 cFunc = "styletextleft"
+			case 92 cFunc = "styletextright"
+			case 93 cFunc = "styletop"
+			case 94 cFunc = "stylewidth"
+			case 95 cFunc = "stylezindex"
+			case 96 cFunc = "submit"
+			case 97 cFunc = "tableend"
+			case 98 cFunc = "tablestart"
+			case 99 cFunc = "tabmlstring"
+			case 100 cFunc = "tabpop"
+			case 101 cFunc = "tabpush"
+			case 102 cFunc = "tagend"
+			case 103 cFunc = "tagstart"
+			case 104 cFunc = "text"
+			case 105 cFunc = "textbox"
+			case 106 cFunc = "ulend"
+			case 107 cFunc = "ulstart"
+			case 108 cFunc = "uploadfile"
+			case 109 cFunc = "urlencode"
+			case 110 cFunc = "video"
+			case 111 cFunc = "webprint"
