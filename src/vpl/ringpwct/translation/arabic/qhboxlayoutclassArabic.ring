@@ -80,7 +80,7 @@ T_CT_QHBOXLAYOUTCLASS_IP_VALUE2FUNC = [
 	"thread",
 	"update"
 ]
-T_CT_QHBOXLAYOUT_IP_VALUE2LIST = [
+T_CT_QHBOXLAYOUTCLASS_IP_VALUE2LIST = [
 	"activate(void) --> bool",
 	"addLayout(QLayout *) --> void",
 	"addSpacerItem(QSpacerItem *spacerItem) --> void",

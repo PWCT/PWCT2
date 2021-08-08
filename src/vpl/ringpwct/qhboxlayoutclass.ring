@@ -18,7 +18,7 @@ class qhboxlayoutClassComponentController from ComponentControllerParent
 			cFunc = T_CT_QHBOXLAYOUTCLASS_IP_VALUE2FUNC[ Variable(:Value2) ]
 		
 		# Get the function Name 
-			cFuncName = T_CT_QHBOXLAYOUT_IP_VALUE2LIST [Variable(:Value2)]
+			cFuncName = T_CT_QHBOXLAYOUTCLASS_IP_VALUE2LIST [Variable(:Value2)]
 		
 		# Generate Step and Code using common method 
 			common_callobjectmethod(cFunc,cFuncName)

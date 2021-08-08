@@ -122,7 +122,7 @@ T_CT_WEBLIB_BOOTSTRAPPAGECLASS_IP_VALUE2FUNC = [
 	"video",
 	"webprint"
 ]
-T_CT_WEBLIB_BOOTSTRAPPAGE_IP_VALUE2LIST = [
+T_CT_WEBLIB_BOOTSTRAPPAGECLASS_IP_VALUE2LIST = [
 	"addattributes(aPara)",
 	"audio(aPara)",
 	"boxend()",

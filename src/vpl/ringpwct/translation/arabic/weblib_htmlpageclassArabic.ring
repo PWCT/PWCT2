@@ -94,7 +94,7 @@ T_CT_WEBLIB_HTMLPAGECLASS_IP_VALUE2FUNC = [
 	"urlencode",
 	"webprint"
 ]
-T_CT_WEBLIB_HTMLPAGE_IP_VALUE2LIST = [
+T_CT_WEBLIB_HTMLPAGECLASS_IP_VALUE2LIST = [
 	"braceend()",
 	"cookie(cName,cValue)",
 	"decode(cInput) --> List",
