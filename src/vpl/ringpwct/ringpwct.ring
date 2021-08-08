@@ -351,8 +351,8 @@ C_VPL_NAME = 'RingPWCT'
 	load "upper.ring"
 	load "version.ring"
 	load "weblib_applicationclass.ring"
-	load "weblib_bootstrappage.ring"
-	load "weblib_htmlpage.ring"
+	load "weblib_bootstrappageclass.ring"
+	load "weblib_htmlpageclass.ring"
 	load "weblib_newpage.ring"
 	load "weblib_newwebobject.ring"
 	load "weblib_newwebpagesubobject.ring"
@@ -361,7 +361,7 @@ C_VPL_NAME = 'RingPWCT'
 	load "weblib_startwebapplication.ring"
 	load "weblib_stylefunctionsclass.ring"
 	load "weblib_template.ring"
-	load "weblib_webpage.ring"
+	load "weblib_webpageclass.ring"
 	load "whileloop.ring"
 	load "windowsnl.ring"
 
@@ -712,8 +712,8 @@ C_VPL_NAME = 'RingPWCT'
 	aComponentsFilesList + (cComponentsPath + "upper.ring")
 	aComponentsFilesList + (cComponentsPath + "version.ring")
 	aComponentsFilesList + (cComponentsPath + "weblib_applicationclass.ring")
-	aComponentsFilesList + (cComponentsPath + "weblib_bootstrappage.ring")
-	aComponentsFilesList + (cComponentsPath + "weblib_htmlpage.ring")
+	aComponentsFilesList + (cComponentsPath + "weblib_bootstrappageclass.ring")
+	aComponentsFilesList + (cComponentsPath + "weblib_htmlpageclass.ring")
 	aComponentsFilesList + (cComponentsPath + "weblib_newpage.ring")
 	aComponentsFilesList + (cComponentsPath + "weblib_newwebobject.ring")
 	aComponentsFilesList + (cComponentsPath + "weblib_newwebpagesubobject.ring")
@@ -722,6 +722,6 @@ C_VPL_NAME = 'RingPWCT'
 	aComponentsFilesList + (cComponentsPath + "weblib_startwebapplication.ring")
 	aComponentsFilesList + (cComponentsPath + "weblib_stylefunctionsclass.ring")
 	aComponentsFilesList + (cComponentsPath + "weblib_template.ring")
-	aComponentsFilesList + (cComponentsPath + "weblib_webpage.ring")
+	aComponentsFilesList + (cComponentsPath + "weblib_webpageclass.ring")
 	aComponentsFilesList + (cComponentsPath + "whileloop.ring")
 	aComponentsFilesList + (cComponentsPath + "windowsnl.ring")

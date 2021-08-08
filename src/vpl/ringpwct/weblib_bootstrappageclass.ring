@@ -5,9 +5,9 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-class weblib_bootstrappageComponentController from ComponentControllerParent 
+class weblib_bootstrappageclassComponentController from ComponentControllerParent 
 
-	oView = new weblib_bootstrappageComponentView
+	oView = new weblib_bootstrappageclassComponentView
 
 	aAllowEmptyValue = [:value,:value3,:value4]
 
@@ -27,7 +27,7 @@ class weblib_bootstrappageComponentController from ComponentControllerParent
 
 		return True 
 
-class weblib_bootstrappageComponentView from ComponentViewParent
+class weblib_bootstrappageclassComponentView from ComponentViewParent
 	 
 		Title( T_CT_WEBLIB_BOOTSTRAPPAGE_IP_TITLE )	
 		TextBox( T_CT_WEBLIB_BOOTSTRAPPAGE_IP_VALUE , :value)

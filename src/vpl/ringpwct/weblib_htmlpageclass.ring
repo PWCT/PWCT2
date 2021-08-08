@@ -5,9 +5,9 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-class weblib_htmlpageComponentController from ComponentControllerParent 
+class weblib_htmlpageclassComponentController from ComponentControllerParent 
 
-	oView = new weblib_htmlpageComponentView
+	oView = new weblib_htmlpageclassComponentView
 
 	aAllowEmptyValue = [:value,:value3,:value4]
 
@@ -27,7 +27,7 @@ class weblib_htmlpageComponentController from ComponentControllerParent
 
 		return True 
 
-class weblib_htmlpageComponentView from ComponentViewParent
+class weblib_htmlpageclassComponentView from ComponentViewParent
 	 
 		Title( T_CT_WEBLIB_HTMLPAGE_IP_TITLE )	
 		TextBox( T_CT_WEBLIB_HTMLPAGE_IP_VALUE , :value)
