@@ -22,9 +22,9 @@ T_CT_STDBASECLASS_IP_VALUE2LIST = [
 	"init(x)",
 	"print()",
 	"println()",
+	"set(vValue)",
 	"size() --> Number",
-	"value() --> vValue",
-	"set(vValue)"
+	"value() --> vValue"
 ]
 T_CT_STDBASECLASS_IP_VALUE3 = "Parameters"
 T_CT_STDBASECLASS_IP_VALUE4 = "Output"
