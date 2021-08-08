@@ -323,6 +323,8 @@ class #{f1}ComponentController from ComponentControllerParent
 
 	oView = new #{f1}ComponentView
 
+	aAllowEmptyValue = [:value,:value3,:value4]
+
 	func GenerateAction 
 
 #{f4}
