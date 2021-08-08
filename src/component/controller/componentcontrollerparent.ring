@@ -601,13 +601,6 @@ Class ComponentControllerParent from WindowsControllerParent
 
 	func common_callobjectmethod cFunc,cFuncName
 
-		# Process the Method|Function Name 
-			nPos = substr(cFuncName,"(")
-			# Remove (parameters) from the name
-				if nPos {	
-					cFuncName = left(cFuncName,nPos-1)
-				}
-	
 		# Set the Object Name if it was written
 		# Object Name is optional because we can use braces { }
 
