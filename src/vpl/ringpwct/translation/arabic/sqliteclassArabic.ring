@@ -16,6 +16,12 @@ T_CT_SQLITECLASS_IP_VALUE2FUNC = [
 	"init",
 	"open"
 ]
-T_CT_SQLITECLASS_IP_VALUE2LIST = ["close","errormessage","execute","init","open"]
+T_CT_SQLITECLASS_IP_VALUE2LIST = [
+	"close()",
+	"errormessage() --> String",
+	"execute(cSQL) --> List",
+	"init()",
+	"open(cDatabase) --> lStatus"
+]
 T_CT_SQLITECLASS_IP_VALUE3 = "المعطيات :"
 T_CT_SQLITECLASS_IP_VALUE4 = "الناتج :"

@@ -17,6 +17,13 @@ T_CT_DATETIMECLASS_IP_VALUE2FUNC = [
 	"time",
 	"timelist"
 ]
-T_CT_DATETIMECLASS_IP_VALUE2LIST = ["adddays","clock","date","diffdays","time","timelist"]
+T_CT_DATETIMECLASS_IP_VALUE2LIST = [
+	"adddays(cDate,nDays) --> String",
+	"clock() --> Number",
+	"date() --> String",
+	"diffdays(cDate1,cDate2) --> String",
+	"time() --> String",
+	"timelist() --> List"
+]
 T_CT_DATETIMECLASS_IP_VALUE3 = "المعطيات :"
 T_CT_DATETIMECLASS_IP_VALUE4 = "الناتج :"

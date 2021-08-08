@@ -19,6 +19,15 @@ T_CT_CONVERSIONCLASS_IP_VALUE2FUNC = [
 	"str2hex",
 	"string"
 ]
-T_CT_CONVERSIONCLASS_IP_VALUE2LIST = ["ascii","char","dec","hex","hex2str","number","str2hex","string"]
+T_CT_CONVERSIONCLASS_IP_VALUE2LIST = [
+	"ascii(cChar) --> Number",
+	"char(nASCII) --> cChar",
+	"dec(cHex) --> Number",
+	"hex(nDec) --> cHex",
+	"hex2str(cHex) --> String",
+	"number(String) --> Number",
+	"str2hex(String) --> String",
+	"string(Number) --> String"
+]
 T_CT_CONVERSIONCLASS_IP_VALUE3 = "المعطيات :"
 T_CT_CONVERSIONCLASS_IP_VALUE4 = "الناتج :"

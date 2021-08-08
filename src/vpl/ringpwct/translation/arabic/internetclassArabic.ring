@@ -13,6 +13,9 @@ T_CT_INTERNETCLASS_IP_VALUE2FUNC = [
 	"download",
 	"sendemail"
 ]
-T_CT_INTERNETCLASS_IP_VALUE2LIST = ["download","sendemail"]
+T_CT_INTERNETCLASS_IP_VALUE2LIST = [
+	"download(cURL) --> String",
+	"sendemail(cSMTPServer,cEmail,cPassword,cSender,cReceiver,cCC,cTitle,cContent)"
+]
 T_CT_INTERNETCLASS_IP_VALUE3 = "المعطيات :"
 T_CT_INTERNETCLASS_IP_VALUE4 = "الناتج :"

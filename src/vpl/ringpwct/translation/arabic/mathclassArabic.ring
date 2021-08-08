@@ -32,6 +32,28 @@ T_CT_MATHCLASS_IP_VALUE2FUNC = [
 	"tanh",
 	"unsigned"
 ]
-T_CT_MATHCLASS_IP_VALUE2LIST = ["acos","asin","atan","atan2","ceil","cos","cosh","decimals","exp","fabs","floor","log","log10","pow","random","sin","sinh","sqrt","tan","tanh","unsigned"]
+T_CT_MATHCLASS_IP_VALUE2LIST = [
+	"acos(nNumber) --> Number",
+	"asin(nNumber) --> Number",
+	"atan(nNumber) --> Number",
+	"atan2(nNumber1,nNumber2) --> Number",
+	"ceil(nNumber) --> Number",
+	"cos(nNumber) --> Number",
+	"cosh(nNumber) --> Number",
+	"decimals(nNumber) --> Number",
+	"exp(nNumber) --> Number",
+	"fabs(nNumber) --> Number",
+	"floor(nNumber) --> Number",
+	"log(nNumber) --> Number",
+	"log10(nNumber) --> Number",
+	"pow(nNumber1,nNumber2) --> Number",
+	"random(nNumber) --> Number",
+	"sin(nNumber) --> Number",
+	"sinh(nNumber) --> Number",
+	"sqrt(nNumber) --> Number",
+	"tan(nNumber) --> Number",
+	"tanh(nNumber) --> Number",
+	"unsigned(nNumber1,nNumber2,cOperator) --> Number"
+]
 T_CT_MATHCLASS_IP_VALUE3 = "المعطيات :"
 T_CT_MATHCLASS_IP_VALUE4 = "الناتج :"

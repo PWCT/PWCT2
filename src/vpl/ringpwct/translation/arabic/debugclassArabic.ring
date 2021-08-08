@@ -14,6 +14,10 @@ T_CT_DEBUGCLASS_IP_VALUE2FUNC = [
 	"eval",
 	"raise"
 ]
-T_CT_DEBUGCLASS_IP_VALUE2LIST = ["assert","eval","raise"]
+T_CT_DEBUGCLASS_IP_VALUE2LIST = [
+	"assert(cCondition) --> Boolean",
+	"eval(cCode) --> vOutput",
+	"raise(cError)"
+]
 T_CT_DEBUGCLASS_IP_VALUE3 = "المعطيات :"
 T_CT_DEBUGCLASS_IP_VALUE4 = "الناتج :"

@@ -36,6 +36,31 @@ T_CT_STRINGCLASS_IP_VALUE2FUNC = [
 	"upper",
 	"value"
 ]
-T_CT_STRINGCLASS_IP_VALUE2LIST = ["نسخ(س)","تنتهى ب(عبارة)","احصل من(س)","تهيئة(حرف|رقم|قائمة)","من اليسار(س)","عدد الاسطر","حروف صغير","من المنتصف(س,ص)","معامل","مكان","طباعة","طباعة سطر","إستبدال(عبارة,عبارة اخري,حالة الاحرف)","من اليمن(س)","ضبط","الحجم","تقسيم","ابدا ب","مقارنة عبارة(العبارة)","الى ملف(اسم الملف)","الى قائمة","حذف المسافات","حروف كبيرة","القيمة"]
+T_CT_STRINGCLASS_IP_VALUE2LIST = [
+	"copy(nCount) --> String (Object)",
+	"endswith(cSubString) --> Boolean",
+	"getfrom(nPos1)",
+	"init(string|number|list)",
+	"left(nCount) --> String (Object)",
+	"lines() --> Number",
+	"lower() --> String (Object)",
+	"mid(nPos1,nPos2) --> String (Object)",
+	"operator(cOperator,Para) --> String (Object)",
+	"pos(cSubString) --> Number",
+	"print()",
+	"println()",
+	"replace(cStr1,cStr2,lCase) --> String (Object)",
+	"right(nCount) --> String (Object)",
+	"set(x)",
+	"size() --> Number",
+	"split() --> List",
+	"startswith(cSubString) --> Boolean",
+	"strcmp(x) --> Number",
+	"tofile(cFileName)",
+	"tolist() --> List",
+	"trim() --> String (Object)",
+	"upper() --> String (Object)",
+	"value() --> String"
+]
 T_CT_STRINGCLASS_IP_VALUE3 = "المعطيات :"
 T_CT_STRINGCLASS_IP_VALUE4 = "الناتج :"

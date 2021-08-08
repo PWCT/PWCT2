@@ -26,6 +26,22 @@ T_CT_MYSQLCLASS_IP_VALUE2FUNC = [
 	"result2",
 	"rollback"
 ]
-T_CT_MYSQLCLASS_IP_VALUE2LIST = ["autocommit","close","columns","commit","connect","error","escape_string","info","init","insert_id","next_result","query","result","result2","rollback"]
+T_CT_MYSQLCLASS_IP_VALUE2LIST = [
+	"autocommit(lStatus)",
+	"close()",
+	"columns() --> List",
+	"commit()",
+	"connect(cServer,cUser,cPass,cDatabase) --> lStatus",
+	"error() --> cErrorMessage",
+	"escape_string(cString) --> String",
+	"info() --> String",
+	"init()",
+	"insert_id() --> nID",
+	"next_result()",
+	"query(cQuery)",
+	"result() --> List",
+	"result2() --> List",
+	"rollback()"
+]
 T_CT_MYSQLCLASS_IP_VALUE3 = "المعطيات :"
 T_CT_MYSQLCLASS_IP_VALUE4 = "الناتج :"

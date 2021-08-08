@@ -24,6 +24,20 @@ T_CT_SYSTEMCLASS_IP_VALUE2FUNC = [
 	"system",
 	"windowsnl"
 ]
-T_CT_SYSTEMCLASS_IP_VALUE2LIST = ["filename","isandroid","isfreebsd","islinux","ismacosx","ismsdos","isunix","iswindows","iswindows64","sysargv","sysget","system","windowsnl"]
+T_CT_SYSTEMCLASS_IP_VALUE2LIST = [
+	"filename() --> String",
+	"isandroid() --> Boolean",
+	"isfreebsd() --> Boolean",
+	"islinux() --> Boolean",
+	"ismacosx() --> Boolean",
+	"ismsdos() --> Boolean",
+	"isunix() --> Boolean",
+	"iswindows() --> Boolean",
+	"iswindows64() --> Boolean",
+	"sysargv() --> List",
+	"sysget(cVariable) --> String",
+	"system(cCommand)",
+	"windowsnl() --> String"
+]
 T_CT_SYSTEMCLASS_IP_VALUE3 = "المعطيات :"
 T_CT_SYSTEMCLASS_IP_VALUE4 = "الناتج :"

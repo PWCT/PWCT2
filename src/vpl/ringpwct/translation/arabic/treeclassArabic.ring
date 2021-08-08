@@ -16,6 +16,12 @@ T_CT_TREECLASS_IP_VALUE2FUNC = [
 	"set",
 	"value"
 ]
-T_CT_TREECLASS_IP_VALUE2LIST = ["add","parent","print","set","value"]
+T_CT_TREECLASS_IP_VALUE2LIST = [
+	"add(vValue) --> Tree (Object)",
+	"parent() --> Tree (Object)",
+	"print()",
+	"set(Tree)",
+	"value() --> Tree (Object)"
+]
 T_CT_TREECLASS_IP_VALUE3 = "المعطيات :"
 T_CT_TREECLASS_IP_VALUE4 = "الناتج :"

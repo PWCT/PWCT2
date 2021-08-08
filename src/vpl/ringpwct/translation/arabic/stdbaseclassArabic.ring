@@ -17,6 +17,13 @@ T_CT_STDBASECLASS_IP_VALUE2FUNC = [
 	"size",
 	"value"
 ]
-T_CT_STDBASECLASS_IP_VALUE2LIST = ["قيمة اساسية(س)","طباعة","طباعة سطر","الحجم","القيمة","ضبط القيمة(س)"]
+T_CT_STDBASECLASS_IP_VALUE2LIST = [
+	"init(x)",
+	"print()",
+	"println()",
+	"size() --> Number",
+	"value() --> vValue",
+	"set(vValue)"
+]
 T_CT_STDBASECLASS_IP_VALUE3 = "المعطيات :"
 T_CT_STDBASECLASS_IP_VALUE4 = "الناتج :"

@@ -30,6 +30,25 @@ T_CT_LISTCLASS_IP_VALUE2FUNC = [
 	"swap",
 	"value"
 ]
-T_CT_LISTCLASS_IP_VALUE2LIST = ["إضافة(قيمة)","حذف(س)","بحث(عمود,قيمة)","بحث فى عمود(رقم العمود,القيمة)","اول عنصر","تهيئة(قائمة|عبارة)","حشر(رقم العنصر,القيمة)","عنصر(س)","اخر عنصر","معامل","طباعة","طباعة سطر","عكس","ضبط(رقم العنصر,قيمة)","حجم","فرز","تبديل(س,ص)","قيمة"]
+T_CT_LISTCLASS_IP_VALUE2LIST = [
+	"add(vValue)",
+	"delete(nIndex)",
+	"find(vValue) --> Number",
+	"findincolumn(nColumn,vValue) --> Number",
+	"first() --> vItem",
+	"init(String|List)",
+	"insert(nIndex,vValue)",
+	"item(nIndex) --> vItem",
+	"last() --> vItem",
+	"operator(cOperator,Para)",
+	"print()",
+	"println()",
+	"reverse() --> List (Object)",
+	"set(nIndex,Value)",
+	"size() --> Number",
+	"sort() --> List (Object)",
+	"swap(nItem1,nItem2)",
+	"value() --> List"
+]
 T_CT_LISTCLASS_IP_VALUE3 = "المعطيات :"
 T_CT_LISTCLASS_IP_VALUE4 = "الناتج :"
