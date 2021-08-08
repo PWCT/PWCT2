@@ -363,3 +363,5 @@ load "english/libcurl_easycleanupEnglish.ring"
 load "english/libcurl_easyperformsilentEnglish.ring"
 load "english/libcurl_easysetoptEnglish.ring"
 load "english/expressionEnglish.ring"
+
+load "english/qpainterclassEnglish.ring"

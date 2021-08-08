@@ -364,3 +364,5 @@ load "arabic/libcurl_easycleanupArabic.ring"
 load "arabic/libcurl_easyperformsilentArabic.ring"
 load "arabic/libcurl_easysetoptArabic.ring"
 load "arabic/expressionArabic.ring"
+
+load "arabic/qpainterclassArabic.ring"

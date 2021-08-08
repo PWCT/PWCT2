@@ -1,4 +1,107 @@
-[
+/*
+**	Project : Programming Without Coding Technology (PWCT) Version 2.0
+**	File Purpose :  qpainterclass Component
+**	Date : 2021.08.09
+**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
+*/
+
+
+T_CT_QPAINTERCLASS_IP_TITLE = "مكون فئة ال QPainter"
+T_CT_QPAINTERCLASS_IP_VALUE = "اسم الكائن :"
+T_CT_QPAINTERCLASS_IP_VALUE2 = "الميثود : "
+T_CT_QPAINTERCLASS_IP_VALUE2FUNC = [
+	"background",
+	"backgroundmode",
+	"begin",
+	"beginnativepainting",
+	"boundingrect",
+	"brush",
+	"brushorigin",
+	"clipboundingrect",
+	"clippath",
+	"clipregion",
+	"combinedtransform",
+	"compositionmode",
+	"delete",
+	"device",
+	"devicetransform",
+	"drawarc",
+	"drawchord",
+	"drawconvexpolygon",
+	"drawellipse",
+	"drawglyphrun",
+	"drawimage",
+	"drawline",
+	"drawlines",
+	"drawpath",
+	"drawpicture",
+	"drawpie",
+	"drawpixmap",
+	"drawpoint",
+	"drawpoints",
+	"drawpolygon",
+	"drawpolyline",
+	"drawrect",
+	"drawrects",
+	"drawroundedrect",
+	"drawstatictext",
+	"drawtext",
+	"drawtiledpixmap",
+	"endnativepainting",
+	"endpaint",
+	"eraserect",
+	"fillpath",
+	"fillrect",
+	"font",
+	"fontinfo",
+	"hasclipping",
+	"init",
+	"initfrom",
+	"isactive",
+	"layoutdirection",
+	"objectpointer",
+	"opacity",
+	"paintengine",
+	"pen",
+	"renderhints",
+	"resettransform",
+	"restore",
+	"rotate",
+	"save",
+	"scale",
+	"setbackground",
+	"setbackgroundmode",
+	"setbrush",
+	"setbrushorigin",
+	"setclippath",
+	"setclipping",
+	"setcliprect",
+	"setclipregion",
+	"setcompositionmode",
+	"setfont",
+	"setlayoutdirection",
+	"setopacity",
+	"setpen",
+	"setrenderhint",
+	"settransform",
+	"setviewport",
+	"setviewtransformenabled",
+	"setwindow",
+	"setworldmatrixenabled",
+	"setworldtransform",
+	"shear",
+	"strokepath",
+	"testrenderhint",
+	"transform",
+	"translate",
+	"viewport",
+	"viewtransformenabled",
+	"window",
+	"worldmatrixenabled",
+	"worldtransform"
+]
+T_CT_QPAINTERCLASS_IP_VALUE2STEPFUNC = T_CT_QPAINTERCLASS_IP_VALUE2FUNC
+T_CT_QPAINTERCLASS_IP_VALUE2LIST = [
 	"background(void) --> QBrush",
 	"backgroundMode(void) --> int",
 	"begin(QPaintDevice *device) --> bool",
@@ -89,3 +192,5 @@
 	"worldMatrixEnabled(void) --> bool",
 	"worldTransform(void) --> QTransform"
 ]
+T_CT_QPAINTERCLASS_IP_VALUE3 = "المعطيات :"
+T_CT_QPAINTERCLASS_IP_VALUE4 = "الناتج :"

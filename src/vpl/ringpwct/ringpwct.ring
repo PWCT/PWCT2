@@ -207,6 +207,7 @@ C_VPL_NAME = 'RingPWCT'
 	load "qlcdnumberclass.ring"
 	load "qlineeditclass.ring"
 	load "qlistwidgetclass.ring"
+	load "qpainterclass.ring"
 	load "qpixmapclass.ring"
 	load "qprogressbarclass.ring"
 	load "qpushbuttonclass.ring"
@@ -568,6 +569,7 @@ C_VPL_NAME = 'RingPWCT'
 	aComponentsFilesList + (cComponentsPath + "qlcdnumberclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qlineeditclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qlistwidgetclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qpainterclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qpixmapclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qprogressbarclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qpushbuttonclass.ring")
