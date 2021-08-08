@@ -368,7 +368,6 @@ else
 
 	func ClassMethodsListbox
 		cComponent = UPPER(oView.textName.text())
-		nFuncCount = 1
 		cCode = `
 		# Get the function name in the generated code
 			cFunc = T_CT_#{f1}_IP_VALUE2FUNC [Variable(:Value2)]
@@ -384,7 +383,7 @@ else
 		cEnglishText = "Class Component
 Object
 Method
-[#{f1}]
+[]
 Parameters
 Output
 []
@@ -393,17 +392,10 @@ Output
 		cArabicText = "مكون فئة ال 
 اسم الكائن :
 الميثود : 
-[#{f1}]
+[]
 المعطيات :
 الناتج :
 []
 []"
-		cStr = ""
-		for x = 1 to nFuncCount {
-			if x != 1 { cStr += "," }
-			cStr += '""'
-		}
-		cEnglishText = substr(cEnglishText,"#{f1}",cStr)
-		cArabicText  = substr(cArabicText, "#{f1}",cStr)
 		oView.textEnglish.setplaintext(cEnglishText)
 		oView.textArabic.setplaintext(cArabicText)
