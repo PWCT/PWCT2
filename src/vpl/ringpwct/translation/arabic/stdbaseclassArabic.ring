@@ -21,9 +21,9 @@ T_CT_STDBASECLASS_IP_VALUE2LIST = [
 	"init(x)",
 	"print()",
 	"println()",
-	"size() --> Number",
-	"value() --> vValue",
 	"set(vValue)"
+	"size() --> Number",
+	"value() --> vValue"
 ]
 T_CT_STDBASECLASS_IP_VALUE3 = "المعطيات :"
 T_CT_STDBASECLASS_IP_VALUE4 = "الناتج :"
