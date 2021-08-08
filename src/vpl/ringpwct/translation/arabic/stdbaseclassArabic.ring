@@ -21,7 +21,7 @@ T_CT_STDBASECLASS_IP_VALUE2LIST = [
 	"init(x)",
 	"print()",
 	"println()",
-	"set(vValue)"
+	"set(vValue)",
 	"size() --> Number",
 	"value() --> vValue"
 ]
