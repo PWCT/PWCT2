@@ -39,6 +39,8 @@ T_CT_WEBLIB_STYLEFUNCTIONSCLASS_IP_VALUE2FUNC = [
 	"stylewidth",
 	"stylezindex"
 ]
+# Copy the list to support changing the generated method name in the Steps Tree
+T_CT_WEBLIB_STYLEFUNCTIONSCLASS_IP_VALUE2STEPFUNC = T_CT_WEBLIB_STYLEFUNCTIONSCLASS_IP_VALUE2FUNC
 T_CT_WEBLIB_STYLEFUNCTIONSCLASS_IP_VALUE2LIST = [
 	"styleabsolute() --> String",
 	"stylebackcolor(cColor) --> String",

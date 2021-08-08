@@ -56,6 +56,8 @@ T_CT_QPIXMAPCLASS_IP_VALUE2FUNC = [
 	"truematrix_2",
 	"width"
 ]
+# Copy the list to support changing the generated method name in the Steps Tree
+T_CT_QPIXMAPCLASS_IP_VALUE2STEPFUNC = T_CT_QPIXMAPCLASS_IP_VALUE2FUNC
 T_CT_QPIXMAPCLASS_IP_VALUE2LIST = [
 	"cacheKey(void) --> qint64",
 	"convertFromImage(QImage image, Qt::ImageConversionFlags flags) --> bool",

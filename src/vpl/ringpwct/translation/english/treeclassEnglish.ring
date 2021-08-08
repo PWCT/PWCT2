@@ -17,6 +17,8 @@ T_CT_TREECLASS_IP_VALUE2FUNC = [
 	"set",
 	"value"
 ]
+# Copy the list to support changing the generated method name in the Steps Tree
+T_CT_TREECLASS_IP_VALUE2STEPFUNC = T_CT_TREECLASS_IP_VALUE2FUNC
 T_CT_TREECLASS_IP_VALUE2LIST = [
 	"add(vValue) --> Tree (Object)",
 	"parent() --> Tree (Object)",

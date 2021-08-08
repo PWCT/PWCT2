@@ -33,6 +33,8 @@ T_CT_MATHCLASS_IP_VALUE2FUNC = [
 	"tanh",
 	"unsigned"
 ]
+# Copy the list to support changing the generated method name in the Steps Tree
+T_CT_MATHCLASS_IP_VALUE2STEPFUNC = T_CT_MATHCLASS_IP_VALUE2FUNC
 T_CT_MATHCLASS_IP_VALUE2LIST = [
 	"acos(nNumber) --> Number",
 	"asin(nNumber) --> Number",

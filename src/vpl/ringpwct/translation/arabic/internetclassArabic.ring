@@ -13,6 +13,8 @@ T_CT_INTERNETCLASS_IP_VALUE2FUNC = [
 	"download",
 	"sendemail"
 ]
+# Copy the list to support changing the generated method name in the Steps Tree
+T_CT_INTERNETCLASS_IP_VALUE2STEPFUNC = T_CT_INTERNETCLASS_IP_VALUE2FUNC
 T_CT_INTERNETCLASS_IP_VALUE2LIST = [
 	"download(cURL) --> String",
 	"sendemail(cSMTPServer,cEmail,cPassword,cSender,cReceiver,cCC,cTitle,cContent)"

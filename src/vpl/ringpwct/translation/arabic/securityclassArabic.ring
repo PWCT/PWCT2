@@ -20,6 +20,8 @@ T_CT_SECURITYCLASS_IP_VALUE2FUNC = [
 	"sha384",
 	"sha512"
 ]
+# Copy the list to support changing the generated method name in the Steps Tree
+T_CT_SECURITYCLASS_IP_VALUE2STEPFUNC = T_CT_SECURITYCLASS_IP_VALUE2FUNC
 T_CT_SECURITYCLASS_IP_VALUE2LIST = [
 	"decrypt(cString,cKey,cIV) --> String",
 	"encrypt(cString,cKey,cIV) --> String",

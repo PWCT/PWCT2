@@ -30,6 +30,8 @@ T_CT_WEBLIB_APPLICATIONCLASS_IP_VALUE2FUNC = [
 	"urlencode",
 	"webprint"
 ]
+# Copy the list to support changing the generated method name in the Steps Tree
+T_CT_WEBLIB_APPLICATIONCLASS_IP_VALUE2STEPFUNC = T_CT_WEBLIB_APPLICATIONCLASS_IP_VALUE2FUNC
 T_CT_WEBLIB_APPLICATIONCLASS_IP_VALUE2LIST = [
 	"cookie(cName,cValue)",
 	"decode(cInput) --> List",

@@ -24,6 +24,8 @@ T_CT_QTIMERCLASS_IP_VALUE2FUNC = [
 	"stop",
 	"timerid"
 ]
+# Copy the list to support changing the generated method name in the Steps Tree
+T_CT_QTIMERCLASS_IP_VALUE2STEPFUNC = T_CT_QTIMERCLASS_IP_VALUE2FUNC
 T_CT_QTIMERCLASS_IP_VALUE2LIST = [
 	"delete(void) --> void",
 	"gettimeoutEvent(void) --> char",

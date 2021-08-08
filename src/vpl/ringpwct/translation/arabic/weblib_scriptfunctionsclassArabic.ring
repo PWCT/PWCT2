@@ -19,6 +19,8 @@ T_CT_WEBLIB_SCRIPTFUNCTIONSCLASS_IP_VALUE2FUNC = [
 	"scriptredirection",
 	"scriptscrollfixed"
 ]
+# Copy the list to support changing the generated method name in the Steps Tree
+T_CT_WEBLIB_SCRIPTFUNCTIONSCLASS_IP_VALUE2STEPFUNC = T_CT_WEBLIB_SCRIPTFUNCTIONSCLASS_IP_VALUE2FUNC
 T_CT_WEBLIB_SCRIPTFUNCTIONSCLASS_IP_VALUE2LIST = [
 	"script(cCode) --> String",
 	"scriptfunc(cFuncName,cCode) --> String",
