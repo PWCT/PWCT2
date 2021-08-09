@@ -1,181 +1,27 @@
 
-T_CT_QPAINTERCLASS_IP_VALUE2FUNC = [
-	"background",
-	"backgroundmode",
-	"begin",
-	"beginnativepainting",
+T_CT_QPICTURECLASS_IP_VALUE2FUNC = [
 	"boundingrect",
-	"brush",
-	"brushorigin",
-	"clipboundingrect",
-	"clippath",
-	"clipregion",
-	"combinedtransform",
-	"compositionmode",
+	"data",
 	"delete",
-	"device",
-	"devicetransform",
-	"drawarc",
-	"drawchord",
-	"drawconvexpolygon",
-	"drawellipse",
-	"drawglyphrun",
-	"drawimage",
-	"drawline",
-	"drawlines",
-	"drawpath",
-	"drawpicture",
-	"drawpie",
-	"drawpixmap",
-	"drawpoint",
-	"drawpoints",
-	"drawpolygon",
-	"drawpolyline",
-	"drawrect",
-	"drawrects",
-	"drawroundedrect",
-	"drawstatictext",
-	"drawtext",
-	"drawtiledpixmap",
-	"endnativepainting",
-	"endpaint",
-	"eraserect",
-	"fillpath",
-	"fillrect",
-	"font",
-	"fontinfo",
-	"hasclipping",
 	"init",
-	"initfrom",
-	"isactive",
-	"layoutdirection",
+	"isnull",
+	"loadfile",
 	"objectpointer",
-	"opacity",
-	"paintengine",
-	"pen",
-	"renderhints",
-	"resettransform",
-	"restore",
-	"rotate",
+	"play",
 	"save",
-	"scale",
-	"setbackground",
-	"setbackgroundmode",
-	"setbrush",
-	"setbrushorigin",
-	"setclippath",
-	"setclipping",
-	"setcliprect",
-	"setclipregion",
-	"setcompositionmode",
-	"setfont",
-	"setlayoutdirection",
-	"setopacity",
-	"setpen",
-	"setrenderhint",
-	"settransform",
-	"setviewport",
-	"setviewtransformenabled",
-	"setwindow",
-	"setworldmatrixenabled",
-	"setworldtransform",
-	"shear",
-	"strokepath",
-	"testrenderhint",
-	"transform",
-	"translate",
-	"viewport",
-	"viewtransformenabled",
-	"window",
-	"worldmatrixenabled",
-	"worldtransform"
+	"setboundingrect",
+	"size",
+	"swap"
 ]
-["background","backgroundmode","begin","beginnativepainting","boundingrect","brush","brushorigin","clipboundingrect","clippath","clipregion","combinedtransform","compositionmode","delete","device","devicetransform","drawarc","drawchord","drawconvexpolygon","drawellipse","drawglyphrun","drawimage","drawline","drawlines","drawpath","drawpicture","drawpie","drawpixmap","drawpoint","drawpoints","drawpolygon","drawpolyline","drawrect","drawrects","drawroundedrect","drawstatictext","drawtext","drawtiledpixmap","endnativepainting","endpaint","eraserect","fillpath","fillrect","font","fontinfo","hasclipping","init","initfrom","isactive","layoutdirection","objectpointer","opacity","paintengine","pen","renderhints","resettransform","restore","rotate","save","scale","setbackground","setbackgroundmode","setbrush","setbrushorigin","setclippath","setclipping","setcliprect","setclipregion","setcompositionmode","setfont","setlayoutdirection","setopacity","setpen","setrenderhint","settransform","setviewport","setviewtransformenabled","setwindow","setworldmatrixenabled","setworldtransform","shear","strokepath","testrenderhint","transform","translate","viewport","viewtransformenabled","window","worldmatrixenabled","worldtransform"]			case 1 cFunc = "background"
-			case 2 cFunc = "backgroundmode"
-			case 3 cFunc = "begin"
-			case 4 cFunc = "beginnativepainting"
-			case 5 cFunc = "boundingrect"
-			case 6 cFunc = "brush"
-			case 7 cFunc = "brushorigin"
-			case 8 cFunc = "clipboundingrect"
-			case 9 cFunc = "clippath"
-			case 10 cFunc = "clipregion"
-			case 11 cFunc = "combinedtransform"
-			case 12 cFunc = "compositionmode"
-			case 13 cFunc = "delete"
-			case 14 cFunc = "device"
-			case 15 cFunc = "devicetransform"
-			case 16 cFunc = "drawarc"
-			case 17 cFunc = "drawchord"
-			case 18 cFunc = "drawconvexpolygon"
-			case 19 cFunc = "drawellipse"
-			case 20 cFunc = "drawglyphrun"
-			case 21 cFunc = "drawimage"
-			case 22 cFunc = "drawline"
-			case 23 cFunc = "drawlines"
-			case 24 cFunc = "drawpath"
-			case 25 cFunc = "drawpicture"
-			case 26 cFunc = "drawpie"
-			case 27 cFunc = "drawpixmap"
-			case 28 cFunc = "drawpoint"
-			case 29 cFunc = "drawpoints"
-			case 30 cFunc = "drawpolygon"
-			case 31 cFunc = "drawpolyline"
-			case 32 cFunc = "drawrect"
-			case 33 cFunc = "drawrects"
-			case 34 cFunc = "drawroundedrect"
-			case 35 cFunc = "drawstatictext"
-			case 36 cFunc = "drawtext"
-			case 37 cFunc = "drawtiledpixmap"
-			case 38 cFunc = "endnativepainting"
-			case 39 cFunc = "endpaint"
-			case 40 cFunc = "eraserect"
-			case 41 cFunc = "fillpath"
-			case 42 cFunc = "fillrect"
-			case 43 cFunc = "font"
-			case 44 cFunc = "fontinfo"
-			case 45 cFunc = "hasclipping"
-			case 46 cFunc = "init"
-			case 47 cFunc = "initfrom"
-			case 48 cFunc = "isactive"
-			case 49 cFunc = "layoutdirection"
-			case 50 cFunc = "objectpointer"
-			case 51 cFunc = "opacity"
-			case 52 cFunc = "paintengine"
-			case 53 cFunc = "pen"
-			case 54 cFunc = "renderhints"
-			case 55 cFunc = "resettransform"
-			case 56 cFunc = "restore"
-			case 57 cFunc = "rotate"
-			case 58 cFunc = "save"
-			case 59 cFunc = "scale"
-			case 60 cFunc = "setbackground"
-			case 61 cFunc = "setbackgroundmode"
-			case 62 cFunc = "setbrush"
-			case 63 cFunc = "setbrushorigin"
-			case 64 cFunc = "setclippath"
-			case 65 cFunc = "setclipping"
-			case 66 cFunc = "setcliprect"
-			case 67 cFunc = "setclipregion"
-			case 68 cFunc = "setcompositionmode"
-			case 69 cFunc = "setfont"
-			case 70 cFunc = "setlayoutdirection"
-			case 71 cFunc = "setopacity"
-			case 72 cFunc = "setpen"
-			case 73 cFunc = "setrenderhint"
-			case 74 cFunc = "settransform"
-			case 75 cFunc = "setviewport"
-			case 76 cFunc = "setviewtransformenabled"
-			case 77 cFunc = "setwindow"
-			case 78 cFunc = "setworldmatrixenabled"
-			case 79 cFunc = "setworldtransform"
-			case 80 cFunc = "shear"
-			case 81 cFunc = "strokepath"
-			case 82 cFunc = "testrenderhint"
-			case 83 cFunc = "transform"
-			case 84 cFunc = "translate"
-			case 85 cFunc = "viewport"
-			case 86 cFunc = "viewtransformenabled"
-			case 87 cFunc = "window"
-			case 88 cFunc = "worldmatrixenabled"
-			case 89 cFunc = "worldtransform"
+["boundingrect","data","delete","init","isnull","loadfile","objectpointer","play","save","setboundingrect","size","swap"]			case 1 cFunc = "boundingrect"
+			case 2 cFunc = "data"
+			case 3 cFunc = "delete"
+			case 4 cFunc = "init"
+			case 5 cFunc = "isnull"
+			case 6 cFunc = "loadfile"
+			case 7 cFunc = "objectpointer"
+			case 8 cFunc = "play"
+			case 9 cFunc = "save"
+			case 10 cFunc = "setboundingrect"
+			case 11 cFunc = "size"
+			case 12 cFunc = "swap"
