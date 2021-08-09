@@ -38,11 +38,11 @@ Class PrintComponentController from ComponentControllerParent
 		return True 
 
 	func TypeChangeAction
-		nRow = oView.myList.CurrentRow()
+		nRow = Variable(:type)
 		cText = oView.myText.text() 
-		if  nRow = 1 and cText  = "" {		
+		if  nRow = 2 and cText  = "" {		
 			oView.myText.setText('" "')
-		elseif  nRow = 0 and cText  = '" "'  
+		elseif  nRow = 1 and cText  = '" "'  
 			oView.myText.setText("")		
 		}
 
@@ -59,6 +59,7 @@ class PrintComponentView from ComponentViewParent
 		# "Text : "
 			myText = TextBox(T_CT_PRINT_IP_TEXT , :text)
 		# "Type :"	 ["Literal","Expression"]
+			DisableListBoxSort()
 			myList = ListBox(T_CT_PRINT_IP_TYPE, :type , T_CT_PRINT_IP_TYPELIST)  {
 				setCurrentItemChangedEvent( Method(:TypeChangeAction) )
 			}
