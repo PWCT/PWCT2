@@ -1,103 +1,487 @@
 
-T_CT_QPRINTERCLASS_IP_VALUE2FUNC = [
-	"abort",
-	"collatecopies",
-	"colormode",
-	"copycount",
-	"creator",
+T_CT_QPRINTPREVIEWDIALOGCLASS_IP_VALUE2FUNC = [
+	"accept",
+	"acceptdrops",
+	"accessibledescription",
+	"accessiblename",
+	"activatewindow",
+	"addaction",
+	"adjustsize",
+	"autofillbackground",
+	"backgroundrole",
+	"basesize",
+	"blocksignals",
+	"childat",
+	"children",
+	"childrenrect",
+	"childrenregion",
+	"clearfocus",
+	"clearmask",
+	"close",
+	"contentsmargins",
+	"contentsrect",
+	"contextmenupolicy",
+	"createwindowcontainer",
+	"cursor",
 	"delete",
-	"docname",
-	"duplex",
-	"fontembeddingenabled",
-	"frompage",
-	"fullpage",
+	"deletelater",
+	"donedialog",
+	"dumpobjectinfo",
+	"dumpobjecttree",
+	"effectivewinid",
+	"ensurepolished",
+	"exec",
+	"find",
+	"focuspolicy",
+	"focusproxy",
+	"focuswidget",
+	"font",
+	"fontinfo",
+	"foregroundrole",
+	"framegeometry",
+	"framesize",
+	"geometry",
+	"getcontentsmargins",
+	"getpaintrequestedevent",
+	"grab",
+	"grabgesture",
+	"grabkeyboard",
+	"grabmouse",
+	"grabshortcut",
+	"graphicseffect",
+	"graphicsproxywidget",
+	"hasfocus",
+	"hasmousetracking",
+	"height",
+	"heightforwidth",
+	"hide",
+	"inherits",
 	"init",
-	"isvalid",
-	"newpage",
+	"inputmethodhints",
+	"inputmethodquery",
+	"insertaction",
+	"installeventfilter",
+	"isactivewindow",
+	"isancestorof",
+	"isenabled",
+	"isenabledto",
+	"isfullscreen",
+	"ishidden",
+	"ismaximized",
+	"isminimized",
+	"ismodal",
+	"issizegripenabled",
+	"isvisible",
+	"isvisibleto",
+	"iswidgettype",
+	"iswindow",
+	"iswindowmodified",
+	"keyboardgrabber",
+	"killtimer",
+	"layout",
+	"layoutdirection",
+	"locale",
+	"lower",
+	"mapfrom",
+	"mapfromglobal",
+	"mapfromparent",
+	"mapto",
+	"maptoglobal",
+	"maptoparent",
+	"mask",
+	"maximumheight",
+	"maximumsize",
+	"maximumwidth",
+	"minimumheight",
+	"minimumsize",
+	"minimumwidth",
+	"mousegrabber",
+	"move",
+	"movetothread",
+	"nativeparentwidget",
+	"nextinfocuschain",
+	"normalgeometry",
+	"objectname",
 	"objectpointer",
-	"outputfilename",
-	"outputformat",
-	"pageorder",
-	"pagerect",
-	"paintengine",
-	"paperrect",
-	"papersource",
-	"printengine",
-	"printername",
-	"printerselectionoption",
-	"printerstate",
-	"printprogram",
-	"printrange",
-	"resolution",
-	"setcollatecopies",
-	"setcolormode",
-	"setcopycount",
-	"setcreator",
-	"setdocname",
-	"setduplex",
-	"setfontembeddingenabled",
-	"setfromto",
-	"setfullpage",
-	"setoutputfilename",
-	"setoutputformat",
-	"setpageorder",
-	"setpagesizemm",
-	"setpapersource",
-	"setprintername",
-	"setprinterselectionoption",
-	"setprintprogram",
-	"setprintrange",
-	"setresolution",
-	"supportsmultiplecopies",
-	"topage"
+	"open",
+	"overridewindowflags",
+	"palette",
+	"parent",
+	"parentwidget",
+	"pos",
+	"previousinfocuschain",
+	"printer",
+	"property",
+	"raise",
+	"rect",
+	"reject",
+	"releasekeyboard",
+	"releasemouse",
+	"releaseshortcut",
+	"removeaction",
+	"removeeventfilter",
+	"render",
+	"repaint",
+	"resize",
+	"restoregeometry",
+	"result",
+	"savegeometry",
+	"scroll",
+	"setacceptdrops",
+	"setaccessibledescription",
+	"setaccessiblename",
+	"setattribute",
+	"setautofillbackground",
+	"setbackgroundrole",
+	"setbasesize",
+	"setcontentsmargins",
+	"setcontextmenupolicy",
+	"setcursor",
+	"setdisabled",
+	"setenabled",
+	"setfixedheight",
+	"setfixedsize",
+	"setfixedwidth",
+	"setfocus",
+	"setfocuspolicy",
+	"setfocusproxy",
+	"setfont",
+	"setforegroundrole",
+	"setgeometry",
+	"setgraphicseffect",
+	"sethidden",
+	"setinputmethodhints",
+	"setlayout",
+	"setlayoutdirection",
+	"setlocale",
+	"setmask",
+	"setmaximumheight",
+	"setmaximumsize",
+	"setmaximumwidth",
+	"setminimumheight",
+	"setminimumsize",
+	"setminimumwidth",
+	"setmodal",
+	"setmousetracking",
+	"setobjectname",
+	"setpaintrequestedevent",
+	"setpalette",
+	"setparent",
+	"setproperty",
+	"setproperty_2",
+	"setproperty_3",
+	"setproperty_4",
+	"setproperty_5",
+	"setproperty_double",
+	"setproperty_float",
+	"setproperty_int",
+	"setproperty_string",
+	"setresult",
+	"setshortcutautorepeat",
+	"setshortcutenabled",
+	"setsizegripenabled",
+	"setsizeincrement",
+	"setsizepolicy",
+	"setstatustip",
+	"setstyle",
+	"setstylesheet",
+	"settaborder",
+	"settooltip",
+	"setupdatesenabled",
+	"setwhatsthis",
+	"setwindowfilepath",
+	"setwindowflags",
+	"setwindowicon",
+	"setwindowicontext",
+	"setwindowmodality",
+	"setwindowmodified",
+	"setwindowopacity",
+	"setwindowrole",
+	"setwindowstate",
+	"setwindowtitle",
+	"show",
+	"showfullscreen",
+	"showmaximized",
+	"showminimized",
+	"shownormal",
+	"signalsblocked",
+	"size",
+	"sizeincrement",
+	"sizepolicy",
+	"stackunder",
+	"starttimer",
+	"statustip",
+	"style",
+	"stylesheet",
+	"testattribute",
+	"thread",
+	"tooltip",
+	"undermouse",
+	"ungrabgesture",
+	"unsetcursor",
+	"unsetlayoutdirection",
+	"unsetlocale",
+	"update",
+	"updategeometry",
+	"updatesenabled",
+	"visibleregion",
+	"whatsthis",
+	"width",
+	"window",
+	"windowfilepath",
+	"windowflags",
+	"windowhandle",
+	"windowicon",
+	"windowicontext",
+	"windowmodality",
+	"windowopacity",
+	"windowrole",
+	"windowstate",
+	"windowtitle",
+	"windowtype",
+	"winid",
+	"x",
+	"y"
 ]
-["abort","collatecopies","colormode","copycount","creator","delete","docname","duplex","fontembeddingenabled","frompage","fullpage","init","isvalid","newpage","objectpointer","outputfilename","outputformat","pageorder","pagerect","paintengine","paperrect","papersource","printengine","printername","printerselectionoption","printerstate","printprogram","printrange","resolution","setcollatecopies","setcolormode","setcopycount","setcreator","setdocname","setduplex","setfontembeddingenabled","setfromto","setfullpage","setoutputfilename","setoutputformat","setpageorder","setpagesizemm","setpapersource","setprintername","setprinterselectionoption","setprintprogram","setprintrange","setresolution","supportsmultiplecopies","topage"]			case 1 cFunc = "abort"
-			case 2 cFunc = "collatecopies"
-			case 3 cFunc = "colormode"
-			case 4 cFunc = "copycount"
-			case 5 cFunc = "creator"
-			case 6 cFunc = "delete"
-			case 7 cFunc = "docname"
-			case 8 cFunc = "duplex"
-			case 9 cFunc = "fontembeddingenabled"
-			case 10 cFunc = "frompage"
-			case 11 cFunc = "fullpage"
-			case 12 cFunc = "init"
-			case 13 cFunc = "isvalid"
-			case 14 cFunc = "newpage"
-			case 15 cFunc = "objectpointer"
-			case 16 cFunc = "outputfilename"
-			case 17 cFunc = "outputformat"
-			case 18 cFunc = "pageorder"
-			case 19 cFunc = "pagerect"
-			case 20 cFunc = "paintengine"
-			case 21 cFunc = "paperrect"
-			case 22 cFunc = "papersource"
-			case 23 cFunc = "printengine"
-			case 24 cFunc = "printername"
-			case 25 cFunc = "printerselectionoption"
-			case 26 cFunc = "printerstate"
-			case 27 cFunc = "printprogram"
-			case 28 cFunc = "printrange"
-			case 29 cFunc = "resolution"
-			case 30 cFunc = "setcollatecopies"
-			case 31 cFunc = "setcolormode"
-			case 32 cFunc = "setcopycount"
-			case 33 cFunc = "setcreator"
-			case 34 cFunc = "setdocname"
-			case 35 cFunc = "setduplex"
-			case 36 cFunc = "setfontembeddingenabled"
-			case 37 cFunc = "setfromto"
-			case 38 cFunc = "setfullpage"
-			case 39 cFunc = "setoutputfilename"
-			case 40 cFunc = "setoutputformat"
-			case 41 cFunc = "setpageorder"
-			case 42 cFunc = "setpagesizemm"
-			case 43 cFunc = "setpapersource"
-			case 44 cFunc = "setprintername"
-			case 45 cFunc = "setprinterselectionoption"
-			case 46 cFunc = "setprintprogram"
-			case 47 cFunc = "setprintrange"
-			case 48 cFunc = "setresolution"
-			case 49 cFunc = "supportsmultiplecopies"
-			case 50 cFunc = "topage"
+["accept","acceptdrops","accessibledescription","accessiblename","activatewindow","addaction","adjustsize","autofillbackground","backgroundrole","basesize","blocksignals","childat","children","childrenrect","childrenregion","clearfocus","clearmask","close","contentsmargins","contentsrect","contextmenupolicy","createwindowcontainer","cursor","delete","deletelater","donedialog","dumpobjectinfo","dumpobjecttree","effectivewinid","ensurepolished","exec","find","focuspolicy","focusproxy","focuswidget","font","fontinfo","foregroundrole","framegeometry","framesize","geometry","getcontentsmargins","getpaintrequestedevent","grab","grabgesture","grabkeyboard","grabmouse","grabshortcut","graphicseffect","graphicsproxywidget","hasfocus","hasmousetracking","height","heightforwidth","hide","inherits","init","inputmethodhints","inputmethodquery","insertaction","installeventfilter","isactivewindow","isancestorof","isenabled","isenabledto","isfullscreen","ishidden","ismaximized","isminimized","ismodal","issizegripenabled","isvisible","isvisibleto","iswidgettype","iswindow","iswindowmodified","keyboardgrabber","killtimer","layout","layoutdirection","locale","lower","mapfrom","mapfromglobal","mapfromparent","mapto","maptoglobal","maptoparent","mask","maximumheight","maximumsize","maximumwidth","minimumheight","minimumsize","minimumwidth","mousegrabber","move","movetothread","nativeparentwidget","nextinfocuschain","normalgeometry","objectname","objectpointer","open","overridewindowflags","palette","parent","parentwidget","pos","previousinfocuschain","printer","property","raise","rect","reject","releasekeyboard","releasemouse","releaseshortcut","removeaction","removeeventfilter","render","repaint","resize","restoregeometry","result","savegeometry","scroll","setacceptdrops","setaccessibledescription","setaccessiblename","setattribute","setautofillbackground","setbackgroundrole","setbasesize","setcontentsmargins","setcontextmenupolicy","setcursor","setdisabled","setenabled","setfixedheight","setfixedsize","setfixedwidth","setfocus","setfocuspolicy","setfocusproxy","setfont","setforegroundrole","setgeometry","setgraphicseffect","sethidden","setinputmethodhints","setlayout","setlayoutdirection","setlocale","setmask","setmaximumheight","setmaximumsize","setmaximumwidth","setminimumheight","setminimumsize","setminimumwidth","setmodal","setmousetracking","setobjectname","setpaintrequestedevent","setpalette","setparent","setproperty","setproperty_2","setproperty_3","setproperty_4","setproperty_5","setproperty_double","setproperty_float","setproperty_int","setproperty_string","setresult","setshortcutautorepeat","setshortcutenabled","setsizegripenabled","setsizeincrement","setsizepolicy","setstatustip","setstyle","setstylesheet","settaborder","settooltip","setupdatesenabled","setwhatsthis","setwindowfilepath","setwindowflags","setwindowicon","setwindowicontext","setwindowmodality","setwindowmodified","setwindowopacity","setwindowrole","setwindowstate","setwindowtitle","show","showfullscreen","showmaximized","showminimized","shownormal","signalsblocked","size","sizeincrement","sizepolicy","stackunder","starttimer","statustip","style","stylesheet","testattribute","thread","tooltip","undermouse","ungrabgesture","unsetcursor","unsetlayoutdirection","unsetlocale","update","updategeometry","updatesenabled","visibleregion","whatsthis","width","window","windowfilepath","windowflags","windowhandle","windowicon","windowicontext","windowmodality","windowopacity","windowrole","windowstate","windowtitle","windowtype","winid","x","y"]			case 1 cFunc = "accept"
+			case 2 cFunc = "acceptdrops"
+			case 3 cFunc = "accessibledescription"
+			case 4 cFunc = "accessiblename"
+			case 5 cFunc = "activatewindow"
+			case 6 cFunc = "addaction"
+			case 7 cFunc = "adjustsize"
+			case 8 cFunc = "autofillbackground"
+			case 9 cFunc = "backgroundrole"
+			case 10 cFunc = "basesize"
+			case 11 cFunc = "blocksignals"
+			case 12 cFunc = "childat"
+			case 13 cFunc = "children"
+			case 14 cFunc = "childrenrect"
+			case 15 cFunc = "childrenregion"
+			case 16 cFunc = "clearfocus"
+			case 17 cFunc = "clearmask"
+			case 18 cFunc = "close"
+			case 19 cFunc = "contentsmargins"
+			case 20 cFunc = "contentsrect"
+			case 21 cFunc = "contextmenupolicy"
+			case 22 cFunc = "createwindowcontainer"
+			case 23 cFunc = "cursor"
+			case 24 cFunc = "delete"
+			case 25 cFunc = "deletelater"
+			case 26 cFunc = "donedialog"
+			case 27 cFunc = "dumpobjectinfo"
+			case 28 cFunc = "dumpobjecttree"
+			case 29 cFunc = "effectivewinid"
+			case 30 cFunc = "ensurepolished"
+			case 31 cFunc = "exec"
+			case 32 cFunc = "find"
+			case 33 cFunc = "focuspolicy"
+			case 34 cFunc = "focusproxy"
+			case 35 cFunc = "focuswidget"
+			case 36 cFunc = "font"
+			case 37 cFunc = "fontinfo"
+			case 38 cFunc = "foregroundrole"
+			case 39 cFunc = "framegeometry"
+			case 40 cFunc = "framesize"
+			case 41 cFunc = "geometry"
+			case 42 cFunc = "getcontentsmargins"
+			case 43 cFunc = "getpaintrequestedevent"
+			case 44 cFunc = "grab"
+			case 45 cFunc = "grabgesture"
+			case 46 cFunc = "grabkeyboard"
+			case 47 cFunc = "grabmouse"
+			case 48 cFunc = "grabshortcut"
+			case 49 cFunc = "graphicseffect"
+			case 50 cFunc = "graphicsproxywidget"
+			case 51 cFunc = "hasfocus"
+			case 52 cFunc = "hasmousetracking"
+			case 53 cFunc = "height"
+			case 54 cFunc = "heightforwidth"
+			case 55 cFunc = "hide"
+			case 56 cFunc = "inherits"
+			case 57 cFunc = "init"
+			case 58 cFunc = "inputmethodhints"
+			case 59 cFunc = "inputmethodquery"
+			case 60 cFunc = "insertaction"
+			case 61 cFunc = "installeventfilter"
+			case 62 cFunc = "isactivewindow"
+			case 63 cFunc = "isancestorof"
+			case 64 cFunc = "isenabled"
+			case 65 cFunc = "isenabledto"
+			case 66 cFunc = "isfullscreen"
+			case 67 cFunc = "ishidden"
+			case 68 cFunc = "ismaximized"
+			case 69 cFunc = "isminimized"
+			case 70 cFunc = "ismodal"
+			case 71 cFunc = "issizegripenabled"
+			case 72 cFunc = "isvisible"
+			case 73 cFunc = "isvisibleto"
+			case 74 cFunc = "iswidgettype"
+			case 75 cFunc = "iswindow"
+			case 76 cFunc = "iswindowmodified"
+			case 77 cFunc = "keyboardgrabber"
+			case 78 cFunc = "killtimer"
+			case 79 cFunc = "layout"
+			case 80 cFunc = "layoutdirection"
+			case 81 cFunc = "locale"
+			case 82 cFunc = "lower"
+			case 83 cFunc = "mapfrom"
+			case 84 cFunc = "mapfromglobal"
+			case 85 cFunc = "mapfromparent"
+			case 86 cFunc = "mapto"
+			case 87 cFunc = "maptoglobal"
+			case 88 cFunc = "maptoparent"
+			case 89 cFunc = "mask"
+			case 90 cFunc = "maximumheight"
+			case 91 cFunc = "maximumsize"
+			case 92 cFunc = "maximumwidth"
+			case 93 cFunc = "minimumheight"
+			case 94 cFunc = "minimumsize"
+			case 95 cFunc = "minimumwidth"
+			case 96 cFunc = "mousegrabber"
+			case 97 cFunc = "move"
+			case 98 cFunc = "movetothread"
+			case 99 cFunc = "nativeparentwidget"
+			case 100 cFunc = "nextinfocuschain"
+			case 101 cFunc = "normalgeometry"
+			case 102 cFunc = "objectname"
+			case 103 cFunc = "objectpointer"
+			case 104 cFunc = "open"
+			case 105 cFunc = "overridewindowflags"
+			case 106 cFunc = "palette"
+			case 107 cFunc = "parent"
+			case 108 cFunc = "parentwidget"
+			case 109 cFunc = "pos"
+			case 110 cFunc = "previousinfocuschain"
+			case 111 cFunc = "printer"
+			case 112 cFunc = "property"
+			case 113 cFunc = "raise"
+			case 114 cFunc = "rect"
+			case 115 cFunc = "reject"
+			case 116 cFunc = "releasekeyboard"
+			case 117 cFunc = "releasemouse"
+			case 118 cFunc = "releaseshortcut"
+			case 119 cFunc = "removeaction"
+			case 120 cFunc = "removeeventfilter"
+			case 121 cFunc = "render"
+			case 122 cFunc = "repaint"
+			case 123 cFunc = "resize"
+			case 124 cFunc = "restoregeometry"
+			case 125 cFunc = "result"
+			case 126 cFunc = "savegeometry"
+			case 127 cFunc = "scroll"
+			case 128 cFunc = "setacceptdrops"
+			case 129 cFunc = "setaccessibledescription"
+			case 130 cFunc = "setaccessiblename"
+			case 131 cFunc = "setattribute"
+			case 132 cFunc = "setautofillbackground"
+			case 133 cFunc = "setbackgroundrole"
+			case 134 cFunc = "setbasesize"
+			case 135 cFunc = "setcontentsmargins"
+			case 136 cFunc = "setcontextmenupolicy"
+			case 137 cFunc = "setcursor"
+			case 138 cFunc = "setdisabled"
+			case 139 cFunc = "setenabled"
+			case 140 cFunc = "setfixedheight"
+			case 141 cFunc = "setfixedsize"
+			case 142 cFunc = "setfixedwidth"
+			case 143 cFunc = "setfocus"
+			case 144 cFunc = "setfocuspolicy"
+			case 145 cFunc = "setfocusproxy"
+			case 146 cFunc = "setfont"
+			case 147 cFunc = "setforegroundrole"
+			case 148 cFunc = "setgeometry"
+			case 149 cFunc = "setgraphicseffect"
+			case 150 cFunc = "sethidden"
+			case 151 cFunc = "setinputmethodhints"
+			case 152 cFunc = "setlayout"
+			case 153 cFunc = "setlayoutdirection"
+			case 154 cFunc = "setlocale"
+			case 155 cFunc = "setmask"
+			case 156 cFunc = "setmaximumheight"
+			case 157 cFunc = "setmaximumsize"
+			case 158 cFunc = "setmaximumwidth"
+			case 159 cFunc = "setminimumheight"
+			case 160 cFunc = "setminimumsize"
+			case 161 cFunc = "setminimumwidth"
+			case 162 cFunc = "setmodal"
+			case 163 cFunc = "setmousetracking"
+			case 164 cFunc = "setobjectname"
+			case 165 cFunc = "setpaintrequestedevent"
+			case 166 cFunc = "setpalette"
+			case 167 cFunc = "setparent"
+			case 168 cFunc = "setproperty"
+			case 169 cFunc = "setproperty_2"
+			case 170 cFunc = "setproperty_3"
+			case 171 cFunc = "setproperty_4"
+			case 172 cFunc = "setproperty_5"
+			case 173 cFunc = "setproperty_double"
+			case 174 cFunc = "setproperty_float"
+			case 175 cFunc = "setproperty_int"
+			case 176 cFunc = "setproperty_string"
+			case 177 cFunc = "setresult"
+			case 178 cFunc = "setshortcutautorepeat"
+			case 179 cFunc = "setshortcutenabled"
+			case 180 cFunc = "setsizegripenabled"
+			case 181 cFunc = "setsizeincrement"
+			case 182 cFunc = "setsizepolicy"
+			case 183 cFunc = "setstatustip"
+			case 184 cFunc = "setstyle"
+			case 185 cFunc = "setstylesheet"
+			case 186 cFunc = "settaborder"
+			case 187 cFunc = "settooltip"
+			case 188 cFunc = "setupdatesenabled"
+			case 189 cFunc = "setwhatsthis"
+			case 190 cFunc = "setwindowfilepath"
+			case 191 cFunc = "setwindowflags"
+			case 192 cFunc = "setwindowicon"
+			case 193 cFunc = "setwindowicontext"
+			case 194 cFunc = "setwindowmodality"
+			case 195 cFunc = "setwindowmodified"
+			case 196 cFunc = "setwindowopacity"
+			case 197 cFunc = "setwindowrole"
+			case 198 cFunc = "setwindowstate"
+			case 199 cFunc = "setwindowtitle"
+			case 200 cFunc = "show"
+			case 201 cFunc = "showfullscreen"
+			case 202 cFunc = "showmaximized"
+			case 203 cFunc = "showminimized"
+			case 204 cFunc = "shownormal"
+			case 205 cFunc = "signalsblocked"
+			case 206 cFunc = "size"
+			case 207 cFunc = "sizeincrement"
+			case 208 cFunc = "sizepolicy"
+			case 209 cFunc = "stackunder"
+			case 210 cFunc = "starttimer"
+			case 211 cFunc = "statustip"
+			case 212 cFunc = "style"
+			case 213 cFunc = "stylesheet"
+			case 214 cFunc = "testattribute"
+			case 215 cFunc = "thread"
+			case 216 cFunc = "tooltip"
+			case 217 cFunc = "undermouse"
+			case 218 cFunc = "ungrabgesture"
+			case 219 cFunc = "unsetcursor"
+			case 220 cFunc = "unsetlayoutdirection"
+			case 221 cFunc = "unsetlocale"
+			case 222 cFunc = "update"
+			case 223 cFunc = "updategeometry"
+			case 224 cFunc = "updatesenabled"
+			case 225 cFunc = "visibleregion"
+			case 226 cFunc = "whatsthis"
+			case 227 cFunc = "width"
+			case 228 cFunc = "window"
+			case 229 cFunc = "windowfilepath"
+			case 230 cFunc = "windowflags"
+			case 231 cFunc = "windowhandle"
+			case 232 cFunc = "windowicon"
+			case 233 cFunc = "windowicontext"
+			case 234 cFunc = "windowmodality"
+			case 235 cFunc = "windowopacity"
+			case 236 cFunc = "windowrole"
+			case 237 cFunc = "windowstate"
+			case 238 cFunc = "windowtitle"
+			case 239 cFunc = "windowtype"
+			case 240 cFunc = "winid"
+			case 241 cFunc = "x"
+			case 242 cFunc = "y"
