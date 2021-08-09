@@ -196,27 +196,42 @@ C_VPL_NAME = 'RingPWCT'
 	load "qalleventsclass.ring"
 	load "qappclass.ring"
 	load "qcheckboxclass.ring"
+	load "qcolordialogclass.ring"
 	load "qcomboboxclass.ring"
 	load "qdatetimeeditclass.ring"
 	load "qdesktopwidgetclass.ring"
 	load "qdialsliderclass.ring"
 	load "qdockwidgetclass.ring"
+	load "qfiledialogclass.ring"
+	load "qfontdialogclass.ring"
 	load "qframeclass.ring"
 	load "qhboxlayoutclass.ring"
+	load "qinputdialogclass.ring"
 	load "qlabelclass.ring"
 	load "qlcdnumberclass.ring"
 	load "qlineeditclass.ring"
 	load "qlistwidgetclass.ring"
+	load "qmediaplayerclass.ring"
+	load "qmessageboxclass.ring"
 	load "qpainterclass.ring"
+	load "qpenclass.ring"
+	load "qpictureclass.ring"
 	load "qpixmapclass.ring"
+	load "qprinterclass.ring"
+	load "qprintpreviewdialogclass.ring"
 	load "qprogressbarclass.ring"
 	load "qpushbuttonclass.ring"
 	load "qradiobuttonclass.ring"
+	load "qregularexpressionclass.ring"
 	load "qsliderclass.ring"
 	load "qspinboxclass.ring"
+	load "qsqldatabaseclass.ring"
+	load "qsqlqueryclass.ring"
 	load "qstatusbarclass.ring"
 	load "qtablewidgetclass.ring"
 	load "qtabwidgetclass.ring"
+	load "qtcpserverclass.ring"
+	load "qtcpsocketclass.ring"
 	load "qtexteditclass.ring"
 	load "qtimerclass.ring"
 	load "qtoolbarclass.ring"
@@ -558,27 +573,42 @@ C_VPL_NAME = 'RingPWCT'
 	aComponentsFilesList + (cComponentsPath + "qalleventsclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qappclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qcheckboxclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qcolordialogclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qcomboboxclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qdatetimeeditclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qdesktopwidgetclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qdialsliderclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qdockwidgetclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qfiledialogclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qfontdialogclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qframeclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qhboxlayoutclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qinputdialogclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qlabelclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qlcdnumberclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qlineeditclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qlistwidgetclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qmediaplayerclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qmessageboxclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qpainterclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qpenclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qpictureclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qpixmapclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qprinterclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qprintpreviewdialogclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qprogressbarclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qpushbuttonclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qradiobuttonclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qregularexpressionclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qsliderclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qspinboxclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qsqldatabaseclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qsqlqueryclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qstatusbarclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qtablewidgetclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qtabwidgetclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qtcpserverclass.ring")
+	aComponentsFilesList + (cComponentsPath + "qtcpsocketclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qtexteditclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qtimerclass.ring")
 	aComponentsFilesList + (cComponentsPath + "qtoolbarclass.ring")
