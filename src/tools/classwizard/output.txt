@@ -1,53 +1,103 @@
 
-T_CT_QPENCLASS_IP_VALUE2FUNC = [
-	"brush",
-	"capstyle",
-	"color",
-	"dashoffset",
+T_CT_QPRINTERCLASS_IP_VALUE2FUNC = [
+	"abort",
+	"collatecopies",
+	"colormode",
+	"copycount",
+	"creator",
 	"delete",
+	"docname",
+	"duplex",
+	"fontembeddingenabled",
+	"frompage",
+	"fullpage",
 	"init",
-	"iscosmetic",
-	"issolid",
-	"joinstyle",
-	"miterlimit",
+	"isvalid",
+	"newpage",
 	"objectpointer",
-	"setbrush",
-	"setcapstyle",
-	"setcolor",
-	"setcosmetic",
-	"setdashoffset",
-	"setjoinstyle",
-	"setmiterlimit",
-	"setstyle",
-	"setwidth",
-	"setwidthf",
-	"style",
-	"swap",
-	"width",
-	"widthf"
+	"outputfilename",
+	"outputformat",
+	"pageorder",
+	"pagerect",
+	"paintengine",
+	"paperrect",
+	"papersource",
+	"printengine",
+	"printername",
+	"printerselectionoption",
+	"printerstate",
+	"printprogram",
+	"printrange",
+	"resolution",
+	"setcollatecopies",
+	"setcolormode",
+	"setcopycount",
+	"setcreator",
+	"setdocname",
+	"setduplex",
+	"setfontembeddingenabled",
+	"setfromto",
+	"setfullpage",
+	"setoutputfilename",
+	"setoutputformat",
+	"setpageorder",
+	"setpagesizemm",
+	"setpapersource",
+	"setprintername",
+	"setprinterselectionoption",
+	"setprintprogram",
+	"setprintrange",
+	"setresolution",
+	"supportsmultiplecopies",
+	"topage"
 ]
-["brush","capstyle","color","dashoffset","delete","init","iscosmetic","issolid","joinstyle","miterlimit","objectpointer","setbrush","setcapstyle","setcolor","setcosmetic","setdashoffset","setjoinstyle","setmiterlimit","setstyle","setwidth","setwidthf","style","swap","width","widthf"]			case 1 cFunc = "brush"
-			case 2 cFunc = "capstyle"
-			case 3 cFunc = "color"
-			case 4 cFunc = "dashoffset"
-			case 5 cFunc = "delete"
-			case 6 cFunc = "init"
-			case 7 cFunc = "iscosmetic"
-			case 8 cFunc = "issolid"
-			case 9 cFunc = "joinstyle"
-			case 10 cFunc = "miterlimit"
-			case 11 cFunc = "objectpointer"
-			case 12 cFunc = "setbrush"
-			case 13 cFunc = "setcapstyle"
-			case 14 cFunc = "setcolor"
-			case 15 cFunc = "setcosmetic"
-			case 16 cFunc = "setdashoffset"
-			case 17 cFunc = "setjoinstyle"
-			case 18 cFunc = "setmiterlimit"
-			case 19 cFunc = "setstyle"
-			case 20 cFunc = "setwidth"
-			case 21 cFunc = "setwidthf"
-			case 22 cFunc = "style"
-			case 23 cFunc = "swap"
-			case 24 cFunc = "width"
-			case 25 cFunc = "widthf"
+["abort","collatecopies","colormode","copycount","creator","delete","docname","duplex","fontembeddingenabled","frompage","fullpage","init","isvalid","newpage","objectpointer","outputfilename","outputformat","pageorder","pagerect","paintengine","paperrect","papersource","printengine","printername","printerselectionoption","printerstate","printprogram","printrange","resolution","setcollatecopies","setcolormode","setcopycount","setcreator","setdocname","setduplex","setfontembeddingenabled","setfromto","setfullpage","setoutputfilename","setoutputformat","setpageorder","setpagesizemm","setpapersource","setprintername","setprinterselectionoption","setprintprogram","setprintrange","setresolution","supportsmultiplecopies","topage"]			case 1 cFunc = "abort"
+			case 2 cFunc = "collatecopies"
+			case 3 cFunc = "colormode"
+			case 4 cFunc = "copycount"
+			case 5 cFunc = "creator"
+			case 6 cFunc = "delete"
+			case 7 cFunc = "docname"
+			case 8 cFunc = "duplex"
+			case 9 cFunc = "fontembeddingenabled"
+			case 10 cFunc = "frompage"
+			case 11 cFunc = "fullpage"
+			case 12 cFunc = "init"
+			case 13 cFunc = "isvalid"
+			case 14 cFunc = "newpage"
+			case 15 cFunc = "objectpointer"
+			case 16 cFunc = "outputfilename"
+			case 17 cFunc = "outputformat"
+			case 18 cFunc = "pageorder"
+			case 19 cFunc = "pagerect"
+			case 20 cFunc = "paintengine"
+			case 21 cFunc = "paperrect"
+			case 22 cFunc = "papersource"
+			case 23 cFunc = "printengine"
+			case 24 cFunc = "printername"
+			case 25 cFunc = "printerselectionoption"
+			case 26 cFunc = "printerstate"
+			case 27 cFunc = "printprogram"
+			case 28 cFunc = "printrange"
+			case 29 cFunc = "resolution"
+			case 30 cFunc = "setcollatecopies"
+			case 31 cFunc = "setcolormode"
+			case 32 cFunc = "setcopycount"
+			case 33 cFunc = "setcreator"
+			case 34 cFunc = "setdocname"
+			case 35 cFunc = "setduplex"
+			case 36 cFunc = "setfontembeddingenabled"
+			case 37 cFunc = "setfromto"
+			case 38 cFunc = "setfullpage"
+			case 39 cFunc = "setoutputfilename"
+			case 40 cFunc = "setoutputformat"
+			case 41 cFunc = "setpageorder"
+			case 42 cFunc = "setpagesizemm"
+			case 43 cFunc = "setpapersource"
+			case 44 cFunc = "setprintername"
+			case 45 cFunc = "setprinterselectionoption"
+			case 46 cFunc = "setprintprogram"
+			case 47 cFunc = "setprintrange"
+			case 48 cFunc = "setresolution"
+			case 49 cFunc = "supportsmultiplecopies"
+			case 50 cFunc = "topage"
