@@ -431,6 +431,13 @@
 * QTcpServer Class component							DONE
 * QSqlDatabase Class component							DONE
 * QSqlQuery Class component							DONE
+* Interaction Pages - Listbox - Support inserting new items to the list		DONE
+	When we update the component without having an effect on old programs	DONE
+	i.e. storing the item index is not enough				DONE
+	We store list items as [[id,item],...]					DONE
+	The IDs are generated automatically					DONE
+* Interaction Pages - Listbox - Sorting items (Automatically)			DONE
+* Interaction Pages - Listbox - Option to disable sorting items			DONE
 ===============================================================================
 * Templates (Do it using components that contains listbox and call Ring2PWCT)
 * Wizards (To quickly create data screen, etc)
@@ -475,10 +482,6 @@
 * Goal Designer - Do Operation on Many Steps (Instead of Goal Viewer)
 * Goal Designer - Adding Images/Video/Voice in the Steps Tree
 * Components - Support different Ring code styles in the generated code
-===============================================================================
-* Interaction Pages - Listbox - Support inserting new items to the list
-	When we update the component without having an effect on old programs
-	i.e. storing the item index is not enough
 ===============================================================================
 * Game of Programming (A game to learn programming using PWCT way!)
 ===============================================================================

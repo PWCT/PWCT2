@@ -14,6 +14,8 @@ class ComponentViewParent from WindowsViewParent
 	lFirstTextBox = True 	# For Setting the focus
 	oFirstText		# First Textbox
 
+	lEnableListBoxSort = True # Sort ListBox Items
+
 	nTitleFontSize 		= C_COMPONENT_CONTROLSFONTSIZE 
 	nTitleFixedHeight 	= C_COMPONENT_CONTROLSFONTSIZE * 2.5
 	nControlsFontSize	= C_COMPONENT_CONTROLSFONTSIZE
@@ -228,6 +230,23 @@ class ComponentViewParent from WindowsViewParent
 	*/
 
 	func ListBox cTitle,cVariable,aItems
+		# Process the List Items (We need each item to be [id,value])
+		if not isList(aItems[1]) {
+			# We get items as ["item1","item2",...,"itemN"] without IDs
+			aNewItems = []
+			nItemID = 0
+			for item in aItems {
+				nItemID++
+				aNewItems + [nItemID, item]
+			}
+			# Update the List 
+				aItems = aNewItems
+			# Sort the List according to the second column (Item Text)
+				if lEnableListBoxSort {
+					aItems = Sort(aItems,2)
+				}
+		}
+		
 		oLabel = new qLabel(win) {
 			setStyleSheet("font-size:"+this.nControlsFontSize+"pt;")
 			setText(cTitle)
@@ -241,7 +260,7 @@ class ComponentViewParent from WindowsViewParent
 		oList = new qListWidget(win) {
 			setStyleSheet("font-size:"+this.nControlsFontSize+"pt;")
 			for item in aItems {		
-				AddItem(Item)
+				AddItem(Item[2])
 			}
 			setCurrentRow(0,3)
 			setminimumwidth(200)
@@ -263,9 +282,9 @@ class ComponentViewParent from WindowsViewParent
 		}
 		oLayoutAll.AddLayout(oLayout)
 		if lSearchTextbox {
-			aVariables + [oList,cVariable,C_INTERACTION_CT_LISTBOX,oLineEdit ]
+			aVariables + [oList,cVariable,C_INTERACTION_CT_LISTBOX,oLineEdit, aItems ]
 		else 
-			aVariables + [oList,cVariable,C_INTERACTION_CT_LISTBOX ]
+			aVariables + [oList,cVariable,C_INTERACTION_CT_LISTBOX,NULL, aItems ]
 		}
 		return oList
 
@@ -330,7 +349,10 @@ class ComponentViewParent from WindowsViewParent
 			case C_INTERACTION_CT_CHECKBOX 
 				cValue = oObject.checkstate()
 			case C_INTERACTION_CT_LISTBOX 
-				cValue = oObject.currentrow() + 1
+				# Get the Index of the selected Item
+					cValue = oObject.currentrow() + 1
+				# Get the ID of the selected item
+					cValue = aVariables[nPos][C_INTERACTION_VL_LISTITEMS][cValue][1]
 			case C_INTERACTION_CT_EDITBOX 
 				cValue = oObject.toplaintext()
 		}
@@ -352,7 +374,11 @@ class ComponentViewParent from WindowsViewParent
 			case C_INTERACTION_CT_CHECKBOX 
 				cValue = "" + oObject.checkstate()
 			case C_INTERACTION_CT_LISTBOX 
-				cValue = "" + (oObject.currentrow() + 1)
+				# Get the Index 
+					cValue = oObject.currentrow() + 1
+				# Get the ID
+					cValue = item[C_INTERACTION_VL_LISTITEMS][cValue][1]
+				cValue = "" + cValue
 			case C_INTERACTION_CT_EDITBOX 
 				cValue = oObject.toplaintext()
 			}
@@ -403,6 +429,9 @@ class ComponentViewParent from WindowsViewParent
 			case C_INTERACTION_CT_CHECKBOX
 				oObject.setcheckstate(0+cValue)
 			case C_INTERACTION_CT_LISTBOX 
+				aListItems = item[C_INTERACTION_VL_LISTITEMS]
+				# Convert ID to Index 
+					cValue = find(aListItems,(0+cValue),1)
 				oObject.setcurrentrow((0+cValue)-1,2 | dec("10"))
 			case C_INTERACTION_CT_EDITBOX 
 				oObject.setText(cValue)
@@ -424,3 +453,9 @@ class ComponentViewParent from WindowsViewParent
 		nPos = find(aVariables,cVariable,C_INTERACTION_VL_NAME)
 		oObject = aVariables[nPos][C_INTERACTION_VL_EXTRAOBJECT]
 		return oObject
+
+	func EnableListBoxSort 
+		lEnableListBoxSort = True 
+
+	func DisableListBoxSort 
+		lEnableListBoxSort = False
