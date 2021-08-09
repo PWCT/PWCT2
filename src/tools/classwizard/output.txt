@@ -1,65 +1,517 @@
 
-T_CT_QMEDIAPLAYERCLASS_IP_VALUE2FUNC = [
-	"bufferstatus",
-	"currentmedia",
-	"currentnetworkconfiguration",
+T_CT_QCOLORDIALOGCLASS_IP_VALUE2FUNC = [
+	"accept",
+	"acceptdrops",
+	"accessibledescription",
+	"accessiblename",
+	"activatewindow",
+	"addaction",
+	"adjustsize",
+	"autofillbackground",
+	"backgroundrole",
+	"basesize",
+	"blocksignals",
+	"childat",
+	"children",
+	"childrenrect",
+	"childrenregion",
+	"clearfocus",
+	"clearmask",
+	"close",
+	"contentsmargins",
+	"contentsrect",
+	"contextmenupolicy",
+	"createwindowcontainer",
+	"currentcolor",
+	"cursor",
+	"customcolor",
+	"customcount",
 	"delete",
-	"duration",
-	"error",
-	"errorstring",
+	"deletelater",
+	"donedialog",
+	"dumpobjectinfo",
+	"dumpobjecttree",
+	"effectivewinid",
+	"ensurepolished",
+	"exec",
+	"find",
+	"focuspolicy",
+	"focusproxy",
+	"focuswidget",
+	"font",
+	"fontinfo",
+	"foregroundrole",
+	"framegeometry",
+	"framesize",
+	"geometry",
+	"getcolor",
+	"getcolor_2",
+	"getcolorselectedevent",
+	"getcontentsmargins",
+	"getcurrentcolorchangedevent",
+	"grab",
+	"grabgesture",
+	"grabkeyboard",
+	"grabmouse",
+	"grabshortcut",
+	"graphicseffect",
+	"graphicsproxywidget",
+	"hasfocus",
+	"hasmousetracking",
+	"height",
+	"heightforwidth",
+	"hide",
+	"inherits",
 	"init",
-	"isaudioavailable",
-	"ismuted",
-	"isseekable",
-	"isvideoavailable",
-	"media",
-	"mediastatus",
-	"mediastream",
+	"inputmethodhints",
+	"inputmethodquery",
+	"insertaction",
+	"installeventfilter",
+	"isactivewindow",
+	"isancestorof",
+	"isenabled",
+	"isenabledto",
+	"isfullscreen",
+	"ishidden",
+	"ismaximized",
+	"isminimized",
+	"ismodal",
+	"issizegripenabled",
+	"isvisible",
+	"isvisibleto",
+	"iswidgettype",
+	"iswindow",
+	"iswindowmodified",
+	"keyboardgrabber",
+	"killtimer",
+	"layout",
+	"layoutdirection",
+	"locale",
+	"lower",
+	"mapfrom",
+	"mapfromglobal",
+	"mapfromparent",
+	"mapto",
+	"maptoglobal",
+	"maptoparent",
+	"mask",
+	"maximumheight",
+	"maximumsize",
+	"maximumwidth",
+	"minimumheight",
+	"minimumsize",
+	"minimumwidth",
+	"mousegrabber",
+	"move",
+	"movetothread",
+	"nativeparentwidget",
+	"nextinfocuschain",
+	"normalgeometry",
+	"objectname",
 	"objectpointer",
-	"pause",
-	"play",
-	"playbackrate",
-	"playlist",
-	"position",
-	"setmedia",
-	"setmuted",
-	"setplaybackrate",
-	"setplaylist",
-	"setposition",
-	"setvideooutput",
-	"setvolume",
-	"state",
-	"stop",
-	"volume"
+	"open",
+	"options",
+	"overridewindowflags",
+	"palette",
+	"parent",
+	"parentwidget",
+	"pos",
+	"previousinfocuschain",
+	"property",
+	"raise",
+	"rect",
+	"reject",
+	"releasekeyboard",
+	"releasemouse",
+	"releaseshortcut",
+	"removeaction",
+	"removeeventfilter",
+	"render",
+	"repaint",
+	"resize",
+	"restoregeometry",
+	"result",
+	"savegeometry",
+	"scroll",
+	"selectedcolor",
+	"setacceptdrops",
+	"setaccessibledescription",
+	"setaccessiblename",
+	"setattribute",
+	"setautofillbackground",
+	"setbackgroundrole",
+	"setbasesize",
+	"setcolorselectedevent",
+	"setcontentsmargins",
+	"setcontextmenupolicy",
+	"setcurrentcolor",
+	"setcurrentcolorchangedevent",
+	"setcursor",
+	"setcustomcolor",
+	"setdisabled",
+	"setenabled",
+	"setfixedheight",
+	"setfixedsize",
+	"setfixedwidth",
+	"setfocus",
+	"setfocuspolicy",
+	"setfocusproxy",
+	"setfont",
+	"setforegroundrole",
+	"setgeometry",
+	"setgraphicseffect",
+	"sethidden",
+	"setinputmethodhints",
+	"setlayout",
+	"setlayoutdirection",
+	"setlocale",
+	"setmask",
+	"setmaximumheight",
+	"setmaximumsize",
+	"setmaximumwidth",
+	"setminimumheight",
+	"setminimumsize",
+	"setminimumwidth",
+	"setmodal",
+	"setmousetracking",
+	"setobjectname",
+	"setoption",
+	"setoptions",
+	"setpalette",
+	"setparent",
+	"setproperty",
+	"setproperty_2",
+	"setproperty_3",
+	"setproperty_4",
+	"setproperty_5",
+	"setproperty_double",
+	"setproperty_float",
+	"setproperty_int",
+	"setproperty_string",
+	"setresult",
+	"setshortcutautorepeat",
+	"setshortcutenabled",
+	"setsizegripenabled",
+	"setsizeincrement",
+	"setsizepolicy",
+	"setstandardcolor",
+	"setstatustip",
+	"setstyle",
+	"setstylesheet",
+	"settaborder",
+	"settooltip",
+	"setupdatesenabled",
+	"setwhatsthis",
+	"setwindowfilepath",
+	"setwindowflags",
+	"setwindowicon",
+	"setwindowicontext",
+	"setwindowmodality",
+	"setwindowmodified",
+	"setwindowopacity",
+	"setwindowrole",
+	"setwindowstate",
+	"setwindowtitle",
+	"show",
+	"showfullscreen",
+	"showmaximized",
+	"showminimized",
+	"shownormal",
+	"signalsblocked",
+	"size",
+	"sizeincrement",
+	"sizepolicy",
+	"stackunder",
+	"standardcolor",
+	"starttimer",
+	"statustip",
+	"style",
+	"stylesheet",
+	"testattribute",
+	"testoption",
+	"thread",
+	"tooltip",
+	"undermouse",
+	"ungrabgesture",
+	"unsetcursor",
+	"unsetlayoutdirection",
+	"unsetlocale",
+	"update",
+	"updategeometry",
+	"updatesenabled",
+	"visibleregion",
+	"whatsthis",
+	"width",
+	"window",
+	"windowfilepath",
+	"windowflags",
+	"windowhandle",
+	"windowicon",
+	"windowicontext",
+	"windowmodality",
+	"windowopacity",
+	"windowrole",
+	"windowstate",
+	"windowtitle",
+	"windowtype",
+	"winid",
+	"x",
+	"y"
 ]
-["bufferstatus","currentmedia","currentnetworkconfiguration","delete","duration","error","errorstring","init","isaudioavailable","ismuted","isseekable","isvideoavailable","media","mediastatus","mediastream","objectpointer","pause","play","playbackrate","playlist","position","setmedia","setmuted","setplaybackrate","setplaylist","setposition","setvideooutput","setvolume","state","stop","volume"]			case 1 cFunc = "bufferstatus"
-			case 2 cFunc = "currentmedia"
-			case 3 cFunc = "currentnetworkconfiguration"
-			case 4 cFunc = "delete"
-			case 5 cFunc = "duration"
-			case 6 cFunc = "error"
-			case 7 cFunc = "errorstring"
-			case 8 cFunc = "init"
-			case 9 cFunc = "isaudioavailable"
-			case 10 cFunc = "ismuted"
-			case 11 cFunc = "isseekable"
-			case 12 cFunc = "isvideoavailable"
-			case 13 cFunc = "media"
-			case 14 cFunc = "mediastatus"
-			case 15 cFunc = "mediastream"
-			case 16 cFunc = "objectpointer"
-			case 17 cFunc = "pause"
-			case 18 cFunc = "play"
-			case 19 cFunc = "playbackrate"
-			case 20 cFunc = "playlist"
-			case 21 cFunc = "position"
-			case 22 cFunc = "setmedia"
-			case 23 cFunc = "setmuted"
-			case 24 cFunc = "setplaybackrate"
-			case 25 cFunc = "setplaylist"
-			case 26 cFunc = "setposition"
-			case 27 cFunc = "setvideooutput"
-			case 28 cFunc = "setvolume"
-			case 29 cFunc = "state"
-			case 30 cFunc = "stop"
-			case 31 cFunc = "volume"
+["accept","acceptdrops","accessibledescription","accessiblename","activatewindow","addaction","adjustsize","autofillbackground","backgroundrole","basesize","blocksignals","childat","children","childrenrect","childrenregion","clearfocus","clearmask","close","contentsmargins","contentsrect","contextmenupolicy","createwindowcontainer","currentcolor","cursor","customcolor","customcount","delete","deletelater","donedialog","dumpobjectinfo","dumpobjecttree","effectivewinid","ensurepolished","exec","find","focuspolicy","focusproxy","focuswidget","font","fontinfo","foregroundrole","framegeometry","framesize","geometry","getcolor","getcolor_2","getcolorselectedevent","getcontentsmargins","getcurrentcolorchangedevent","grab","grabgesture","grabkeyboard","grabmouse","grabshortcut","graphicseffect","graphicsproxywidget","hasfocus","hasmousetracking","height","heightforwidth","hide","inherits","init","inputmethodhints","inputmethodquery","insertaction","installeventfilter","isactivewindow","isancestorof","isenabled","isenabledto","isfullscreen","ishidden","ismaximized","isminimized","ismodal","issizegripenabled","isvisible","isvisibleto","iswidgettype","iswindow","iswindowmodified","keyboardgrabber","killtimer","layout","layoutdirection","locale","lower","mapfrom","mapfromglobal","mapfromparent","mapto","maptoglobal","maptoparent","mask","maximumheight","maximumsize","maximumwidth","minimumheight","minimumsize","minimumwidth","mousegrabber","move","movetothread","nativeparentwidget","nextinfocuschain","normalgeometry","objectname","objectpointer","open","options","overridewindowflags","palette","parent","parentwidget","pos","previousinfocuschain","property","raise","rect","reject","releasekeyboard","releasemouse","releaseshortcut","removeaction","removeeventfilter","render","repaint","resize","restoregeometry","result","savegeometry","scroll","selectedcolor","setacceptdrops","setaccessibledescription","setaccessiblename","setattribute","setautofillbackground","setbackgroundrole","setbasesize","setcolorselectedevent","setcontentsmargins","setcontextmenupolicy","setcurrentcolor","setcurrentcolorchangedevent","setcursor","setcustomcolor","setdisabled","setenabled","setfixedheight","setfixedsize","setfixedwidth","setfocus","setfocuspolicy","setfocusproxy","setfont","setforegroundrole","setgeometry","setgraphicseffect","sethidden","setinputmethodhints","setlayout","setlayoutdirection","setlocale","setmask","setmaximumheight","setmaximumsize","setmaximumwidth","setminimumheight","setminimumsize","setminimumwidth","setmodal","setmousetracking","setobjectname","setoption","setoptions","setpalette","setparent","setproperty","setproperty_2","setproperty_3","setproperty_4","setproperty_5","setproperty_double","setproperty_float","setproperty_int","setproperty_string","setresult","setshortcutautorepeat","setshortcutenabled","setsizegripenabled","setsizeincrement","setsizepolicy","setstandardcolor","setstatustip","setstyle","setstylesheet","settaborder","settooltip","setupdatesenabled","setwhatsthis","setwindowfilepath","setwindowflags","setwindowicon","setwindowicontext","setwindowmodality","setwindowmodified","setwindowopacity","setwindowrole","setwindowstate","setwindowtitle","show","showfullscreen","showmaximized","showminimized","shownormal","signalsblocked","size","sizeincrement","sizepolicy","stackunder","standardcolor","starttimer","statustip","style","stylesheet","testattribute","testoption","thread","tooltip","undermouse","ungrabgesture","unsetcursor","unsetlayoutdirection","unsetlocale","update","updategeometry","updatesenabled","visibleregion","whatsthis","width","window","windowfilepath","windowflags","windowhandle","windowicon","windowicontext","windowmodality","windowopacity","windowrole","windowstate","windowtitle","windowtype","winid","x","y"]			case 1 cFunc = "accept"
+			case 2 cFunc = "acceptdrops"
+			case 3 cFunc = "accessibledescription"
+			case 4 cFunc = "accessiblename"
+			case 5 cFunc = "activatewindow"
+			case 6 cFunc = "addaction"
+			case 7 cFunc = "adjustsize"
+			case 8 cFunc = "autofillbackground"
+			case 9 cFunc = "backgroundrole"
+			case 10 cFunc = "basesize"
+			case 11 cFunc = "blocksignals"
+			case 12 cFunc = "childat"
+			case 13 cFunc = "children"
+			case 14 cFunc = "childrenrect"
+			case 15 cFunc = "childrenregion"
+			case 16 cFunc = "clearfocus"
+			case 17 cFunc = "clearmask"
+			case 18 cFunc = "close"
+			case 19 cFunc = "contentsmargins"
+			case 20 cFunc = "contentsrect"
+			case 21 cFunc = "contextmenupolicy"
+			case 22 cFunc = "createwindowcontainer"
+			case 23 cFunc = "currentcolor"
+			case 24 cFunc = "cursor"
+			case 25 cFunc = "customcolor"
+			case 26 cFunc = "customcount"
+			case 27 cFunc = "delete"
+			case 28 cFunc = "deletelater"
+			case 29 cFunc = "donedialog"
+			case 30 cFunc = "dumpobjectinfo"
+			case 31 cFunc = "dumpobjecttree"
+			case 32 cFunc = "effectivewinid"
+			case 33 cFunc = "ensurepolished"
+			case 34 cFunc = "exec"
+			case 35 cFunc = "find"
+			case 36 cFunc = "focuspolicy"
+			case 37 cFunc = "focusproxy"
+			case 38 cFunc = "focuswidget"
+			case 39 cFunc = "font"
+			case 40 cFunc = "fontinfo"
+			case 41 cFunc = "foregroundrole"
+			case 42 cFunc = "framegeometry"
+			case 43 cFunc = "framesize"
+			case 44 cFunc = "geometry"
+			case 45 cFunc = "getcolor"
+			case 46 cFunc = "getcolor_2"
+			case 47 cFunc = "getcolorselectedevent"
+			case 48 cFunc = "getcontentsmargins"
+			case 49 cFunc = "getcurrentcolorchangedevent"
+			case 50 cFunc = "grab"
+			case 51 cFunc = "grabgesture"
+			case 52 cFunc = "grabkeyboard"
+			case 53 cFunc = "grabmouse"
+			case 54 cFunc = "grabshortcut"
+			case 55 cFunc = "graphicseffect"
+			case 56 cFunc = "graphicsproxywidget"
+			case 57 cFunc = "hasfocus"
+			case 58 cFunc = "hasmousetracking"
+			case 59 cFunc = "height"
+			case 60 cFunc = "heightforwidth"
+			case 61 cFunc = "hide"
+			case 62 cFunc = "inherits"
+			case 63 cFunc = "init"
+			case 64 cFunc = "inputmethodhints"
+			case 65 cFunc = "inputmethodquery"
+			case 66 cFunc = "insertaction"
+			case 67 cFunc = "installeventfilter"
+			case 68 cFunc = "isactivewindow"
+			case 69 cFunc = "isancestorof"
+			case 70 cFunc = "isenabled"
+			case 71 cFunc = "isenabledto"
+			case 72 cFunc = "isfullscreen"
+			case 73 cFunc = "ishidden"
+			case 74 cFunc = "ismaximized"
+			case 75 cFunc = "isminimized"
+			case 76 cFunc = "ismodal"
+			case 77 cFunc = "issizegripenabled"
+			case 78 cFunc = "isvisible"
+			case 79 cFunc = "isvisibleto"
+			case 80 cFunc = "iswidgettype"
+			case 81 cFunc = "iswindow"
+			case 82 cFunc = "iswindowmodified"
+			case 83 cFunc = "keyboardgrabber"
+			case 84 cFunc = "killtimer"
+			case 85 cFunc = "layout"
+			case 86 cFunc = "layoutdirection"
+			case 87 cFunc = "locale"
+			case 88 cFunc = "lower"
+			case 89 cFunc = "mapfrom"
+			case 90 cFunc = "mapfromglobal"
+			case 91 cFunc = "mapfromparent"
+			case 92 cFunc = "mapto"
+			case 93 cFunc = "maptoglobal"
+			case 94 cFunc = "maptoparent"
+			case 95 cFunc = "mask"
+			case 96 cFunc = "maximumheight"
+			case 97 cFunc = "maximumsize"
+			case 98 cFunc = "maximumwidth"
+			case 99 cFunc = "minimumheight"
+			case 100 cFunc = "minimumsize"
+			case 101 cFunc = "minimumwidth"
+			case 102 cFunc = "mousegrabber"
+			case 103 cFunc = "move"
+			case 104 cFunc = "movetothread"
+			case 105 cFunc = "nativeparentwidget"
+			case 106 cFunc = "nextinfocuschain"
+			case 107 cFunc = "normalgeometry"
+			case 108 cFunc = "objectname"
+			case 109 cFunc = "objectpointer"
+			case 110 cFunc = "open"
+			case 111 cFunc = "options"
+			case 112 cFunc = "overridewindowflags"
+			case 113 cFunc = "palette"
+			case 114 cFunc = "parent"
+			case 115 cFunc = "parentwidget"
+			case 116 cFunc = "pos"
+			case 117 cFunc = "previousinfocuschain"
+			case 118 cFunc = "property"
+			case 119 cFunc = "raise"
+			case 120 cFunc = "rect"
+			case 121 cFunc = "reject"
+			case 122 cFunc = "releasekeyboard"
+			case 123 cFunc = "releasemouse"
+			case 124 cFunc = "releaseshortcut"
+			case 125 cFunc = "removeaction"
+			case 126 cFunc = "removeeventfilter"
+			case 127 cFunc = "render"
+			case 128 cFunc = "repaint"
+			case 129 cFunc = "resize"
+			case 130 cFunc = "restoregeometry"
+			case 131 cFunc = "result"
+			case 132 cFunc = "savegeometry"
+			case 133 cFunc = "scroll"
+			case 134 cFunc = "selectedcolor"
+			case 135 cFunc = "setacceptdrops"
+			case 136 cFunc = "setaccessibledescription"
+			case 137 cFunc = "setaccessiblename"
+			case 138 cFunc = "setattribute"
+			case 139 cFunc = "setautofillbackground"
+			case 140 cFunc = "setbackgroundrole"
+			case 141 cFunc = "setbasesize"
+			case 142 cFunc = "setcolorselectedevent"
+			case 143 cFunc = "setcontentsmargins"
+			case 144 cFunc = "setcontextmenupolicy"
+			case 145 cFunc = "setcurrentcolor"
+			case 146 cFunc = "setcurrentcolorchangedevent"
+			case 147 cFunc = "setcursor"
+			case 148 cFunc = "setcustomcolor"
+			case 149 cFunc = "setdisabled"
+			case 150 cFunc = "setenabled"
+			case 151 cFunc = "setfixedheight"
+			case 152 cFunc = "setfixedsize"
+			case 153 cFunc = "setfixedwidth"
+			case 154 cFunc = "setfocus"
+			case 155 cFunc = "setfocuspolicy"
+			case 156 cFunc = "setfocusproxy"
+			case 157 cFunc = "setfont"
+			case 158 cFunc = "setforegroundrole"
+			case 159 cFunc = "setgeometry"
+			case 160 cFunc = "setgraphicseffect"
+			case 161 cFunc = "sethidden"
+			case 162 cFunc = "setinputmethodhints"
+			case 163 cFunc = "setlayout"
+			case 164 cFunc = "setlayoutdirection"
+			case 165 cFunc = "setlocale"
+			case 166 cFunc = "setmask"
+			case 167 cFunc = "setmaximumheight"
+			case 168 cFunc = "setmaximumsize"
+			case 169 cFunc = "setmaximumwidth"
+			case 170 cFunc = "setminimumheight"
+			case 171 cFunc = "setminimumsize"
+			case 172 cFunc = "setminimumwidth"
+			case 173 cFunc = "setmodal"
+			case 174 cFunc = "setmousetracking"
+			case 175 cFunc = "setobjectname"
+			case 176 cFunc = "setoption"
+			case 177 cFunc = "setoptions"
+			case 178 cFunc = "setpalette"
+			case 179 cFunc = "setparent"
+			case 180 cFunc = "setproperty"
+			case 181 cFunc = "setproperty_2"
+			case 182 cFunc = "setproperty_3"
+			case 183 cFunc = "setproperty_4"
+			case 184 cFunc = "setproperty_5"
+			case 185 cFunc = "setproperty_double"
+			case 186 cFunc = "setproperty_float"
+			case 187 cFunc = "setproperty_int"
+			case 188 cFunc = "setproperty_string"
+			case 189 cFunc = "setresult"
+			case 190 cFunc = "setshortcutautorepeat"
+			case 191 cFunc = "setshortcutenabled"
+			case 192 cFunc = "setsizegripenabled"
+			case 193 cFunc = "setsizeincrement"
+			case 194 cFunc = "setsizepolicy"
+			case 195 cFunc = "setstandardcolor"
+			case 196 cFunc = "setstatustip"
+			case 197 cFunc = "setstyle"
+			case 198 cFunc = "setstylesheet"
+			case 199 cFunc = "settaborder"
+			case 200 cFunc = "settooltip"
+			case 201 cFunc = "setupdatesenabled"
+			case 202 cFunc = "setwhatsthis"
+			case 203 cFunc = "setwindowfilepath"
+			case 204 cFunc = "setwindowflags"
+			case 205 cFunc = "setwindowicon"
+			case 206 cFunc = "setwindowicontext"
+			case 207 cFunc = "setwindowmodality"
+			case 208 cFunc = "setwindowmodified"
+			case 209 cFunc = "setwindowopacity"
+			case 210 cFunc = "setwindowrole"
+			case 211 cFunc = "setwindowstate"
+			case 212 cFunc = "setwindowtitle"
+			case 213 cFunc = "show"
+			case 214 cFunc = "showfullscreen"
+			case 215 cFunc = "showmaximized"
+			case 216 cFunc = "showminimized"
+			case 217 cFunc = "shownormal"
+			case 218 cFunc = "signalsblocked"
+			case 219 cFunc = "size"
+			case 220 cFunc = "sizeincrement"
+			case 221 cFunc = "sizepolicy"
+			case 222 cFunc = "stackunder"
+			case 223 cFunc = "standardcolor"
+			case 224 cFunc = "starttimer"
+			case 225 cFunc = "statustip"
+			case 226 cFunc = "style"
+			case 227 cFunc = "stylesheet"
+			case 228 cFunc = "testattribute"
+			case 229 cFunc = "testoption"
+			case 230 cFunc = "thread"
+			case 231 cFunc = "tooltip"
+			case 232 cFunc = "undermouse"
+			case 233 cFunc = "ungrabgesture"
+			case 234 cFunc = "unsetcursor"
+			case 235 cFunc = "unsetlayoutdirection"
+			case 236 cFunc = "unsetlocale"
+			case 237 cFunc = "update"
+			case 238 cFunc = "updategeometry"
+			case 239 cFunc = "updatesenabled"
+			case 240 cFunc = "visibleregion"
+			case 241 cFunc = "whatsthis"
+			case 242 cFunc = "width"
+			case 243 cFunc = "window"
+			case 244 cFunc = "windowfilepath"
+			case 245 cFunc = "windowflags"
+			case 246 cFunc = "windowhandle"
+			case 247 cFunc = "windowicon"
+			case 248 cFunc = "windowicontext"
+			case 249 cFunc = "windowmodality"
+			case 250 cFunc = "windowopacity"
+			case 251 cFunc = "windowrole"
+			case 252 cFunc = "windowstate"
+			case 253 cFunc = "windowtitle"
+			case 254 cFunc = "windowtype"
+			case 255 cFunc = "winid"
+			case 256 cFunc = "x"
+			case 257 cFunc = "y"
