@@ -1,213 +1,53 @@
 
-T_CT_QTCPSOCKETCLASS_IP_VALUE2FUNC = [
-	"abort",
-	"atend",
-	"bind",
-	"blocksignals",
-	"bytesavailable",
-	"bytestowrite",
-	"canreadline",
-	"children",
+T_CT_QTCPSERVERCLASS_IP_VALUE2FUNC = [
 	"close",
-	"connecttohost",
 	"delete",
-	"deletelater",
-	"disconnectfromhost",
-	"dumpobjectinfo",
-	"dumpobjecttree",
-	"error",
 	"errorstring",
-	"flush",
-	"getabouttocloseevent",
-	"getbyteswrittenevent",
-	"getchar",
-	"getconnectedevent",
-	"getdisconnectedevent",
-	"geterrorevent",
-	"gethostfoundevent",
-	"getproxyauthenticationrequiredevent",
-	"getreadchannelfinishedevent",
-	"getreadyreadevent",
-	"getstatechangedevent",
-	"inherits",
+	"getaccepterrorevent",
+	"getnewconnectionevent",
+	"haspendingconnections",
 	"init",
-	"installeventfilter",
-	"isopen",
-	"isreadable",
-	"issequential",
-	"istextmodeenabled",
-	"isvalid",
-	"iswidgettype",
-	"iswritable",
-	"killtimer",
-	"localaddress",
-	"localport",
-	"movetothread",
-	"objectname",
+	"islistening",
+	"listen",
+	"maxpendingconnections",
+	"nextpendingconnection",
 	"objectpointer",
-	"open",
-	"openmode",
-	"parent",
-	"pausemode",
-	"peek",
-	"peeraddress",
-	"peername",
-	"peerport",
-	"pos",
-	"property",
+	"pauseaccepting",
 	"proxy",
-	"putchar",
-	"read",
-	"readall",
-	"readbuffersize",
-	"readline",
-	"removeeventfilter",
-	"resume",
-	"seek",
-	"setabouttocloseevent",
-	"setbyteswrittenevent",
-	"setconnectedevent",
-	"setdisconnectedevent",
-	"seterrorevent",
-	"sethostfoundevent",
-	"setobjectname",
-	"setparent",
-	"setpausemode",
-	"setproperty",
-	"setproperty_2",
-	"setproperty_3",
-	"setproperty_4",
-	"setproperty_5",
-	"setproperty_double",
-	"setproperty_float",
-	"setproperty_int",
-	"setproperty_string",
+	"resumeaccepting",
+	"serveraddress",
+	"servererror",
+	"serverport",
+	"setaccepterrorevent",
+	"setmaxpendingconnections",
+	"setnewconnectionevent",
 	"setproxy",
-	"setproxyauthenticationrequiredevent",
-	"setreadbuffersize",
-	"setreadchannelfinishedevent",
-	"setreadyreadevent",
 	"setsocketdescriptor",
-	"setsocketoption",
-	"setstatechangedevent",
-	"settextmodeenabled",
-	"signalsblocked",
-	"size",
 	"socketdescriptor",
-	"socketoption",
-	"sockettype",
-	"starttimer",
-	"state",
-	"thread",
-	"ungetchar",
-	"waitforbyteswritten",
-	"waitforconnected",
-	"waitfordisconnected",
-	"waitforreadyread",
-	"write"
+	"waitfornewconnection"
 ]
-["abort","atend","bind","blocksignals","bytesavailable","bytestowrite","canreadline","children","close","connecttohost","delete","deletelater","disconnectfromhost","dumpobjectinfo","dumpobjecttree","error","errorstring","flush","getabouttocloseevent","getbyteswrittenevent","getchar","getconnectedevent","getdisconnectedevent","geterrorevent","gethostfoundevent","getproxyauthenticationrequiredevent","getreadchannelfinishedevent","getreadyreadevent","getstatechangedevent","inherits","init","installeventfilter","isopen","isreadable","issequential","istextmodeenabled","isvalid","iswidgettype","iswritable","killtimer","localaddress","localport","movetothread","objectname","objectpointer","open","openmode","parent","pausemode","peek","peeraddress","peername","peerport","pos","property","proxy","putchar","read","readall","readbuffersize","readline","removeeventfilter","resume","seek","setabouttocloseevent","setbyteswrittenevent","setconnectedevent","setdisconnectedevent","seterrorevent","sethostfoundevent","setobjectname","setparent","setpausemode","setproperty","setproperty_2","setproperty_3","setproperty_4","setproperty_5","setproperty_double","setproperty_float","setproperty_int","setproperty_string","setproxy","setproxyauthenticationrequiredevent","setreadbuffersize","setreadchannelfinishedevent","setreadyreadevent","setsocketdescriptor","setsocketoption","setstatechangedevent","settextmodeenabled","signalsblocked","size","socketdescriptor","socketoption","sockettype","starttimer","state","thread","ungetchar","waitforbyteswritten","waitforconnected","waitfordisconnected","waitforreadyread","write"]			case 1 cFunc = "abort"
-			case 2 cFunc = "atend"
-			case 3 cFunc = "bind"
-			case 4 cFunc = "blocksignals"
-			case 5 cFunc = "bytesavailable"
-			case 6 cFunc = "bytestowrite"
-			case 7 cFunc = "canreadline"
-			case 8 cFunc = "children"
-			case 9 cFunc = "close"
-			case 10 cFunc = "connecttohost"
-			case 11 cFunc = "delete"
-			case 12 cFunc = "deletelater"
-			case 13 cFunc = "disconnectfromhost"
-			case 14 cFunc = "dumpobjectinfo"
-			case 15 cFunc = "dumpobjecttree"
-			case 16 cFunc = "error"
-			case 17 cFunc = "errorstring"
-			case 18 cFunc = "flush"
-			case 19 cFunc = "getabouttocloseevent"
-			case 20 cFunc = "getbyteswrittenevent"
-			case 21 cFunc = "getchar"
-			case 22 cFunc = "getconnectedevent"
-			case 23 cFunc = "getdisconnectedevent"
-			case 24 cFunc = "geterrorevent"
-			case 25 cFunc = "gethostfoundevent"
-			case 26 cFunc = "getproxyauthenticationrequiredevent"
-			case 27 cFunc = "getreadchannelfinishedevent"
-			case 28 cFunc = "getreadyreadevent"
-			case 29 cFunc = "getstatechangedevent"
-			case 30 cFunc = "inherits"
-			case 31 cFunc = "init"
-			case 32 cFunc = "installeventfilter"
-			case 33 cFunc = "isopen"
-			case 34 cFunc = "isreadable"
-			case 35 cFunc = "issequential"
-			case 36 cFunc = "istextmodeenabled"
-			case 37 cFunc = "isvalid"
-			case 38 cFunc = "iswidgettype"
-			case 39 cFunc = "iswritable"
-			case 40 cFunc = "killtimer"
-			case 41 cFunc = "localaddress"
-			case 42 cFunc = "localport"
-			case 43 cFunc = "movetothread"
-			case 44 cFunc = "objectname"
-			case 45 cFunc = "objectpointer"
-			case 46 cFunc = "open"
-			case 47 cFunc = "openmode"
-			case 48 cFunc = "parent"
-			case 49 cFunc = "pausemode"
-			case 50 cFunc = "peek"
-			case 51 cFunc = "peeraddress"
-			case 52 cFunc = "peername"
-			case 53 cFunc = "peerport"
-			case 54 cFunc = "pos"
-			case 55 cFunc = "property"
-			case 56 cFunc = "proxy"
-			case 57 cFunc = "putchar"
-			case 58 cFunc = "read"
-			case 59 cFunc = "readall"
-			case 60 cFunc = "readbuffersize"
-			case 61 cFunc = "readline"
-			case 62 cFunc = "removeeventfilter"
-			case 63 cFunc = "resume"
-			case 64 cFunc = "seek"
-			case 65 cFunc = "setabouttocloseevent"
-			case 66 cFunc = "setbyteswrittenevent"
-			case 67 cFunc = "setconnectedevent"
-			case 68 cFunc = "setdisconnectedevent"
-			case 69 cFunc = "seterrorevent"
-			case 70 cFunc = "sethostfoundevent"
-			case 71 cFunc = "setobjectname"
-			case 72 cFunc = "setparent"
-			case 73 cFunc = "setpausemode"
-			case 74 cFunc = "setproperty"
-			case 75 cFunc = "setproperty_2"
-			case 76 cFunc = "setproperty_3"
-			case 77 cFunc = "setproperty_4"
-			case 78 cFunc = "setproperty_5"
-			case 79 cFunc = "setproperty_double"
-			case 80 cFunc = "setproperty_float"
-			case 81 cFunc = "setproperty_int"
-			case 82 cFunc = "setproperty_string"
-			case 83 cFunc = "setproxy"
-			case 84 cFunc = "setproxyauthenticationrequiredevent"
-			case 85 cFunc = "setreadbuffersize"
-			case 86 cFunc = "setreadchannelfinishedevent"
-			case 87 cFunc = "setreadyreadevent"
-			case 88 cFunc = "setsocketdescriptor"
-			case 89 cFunc = "setsocketoption"
-			case 90 cFunc = "setstatechangedevent"
-			case 91 cFunc = "settextmodeenabled"
-			case 92 cFunc = "signalsblocked"
-			case 93 cFunc = "size"
-			case 94 cFunc = "socketdescriptor"
-			case 95 cFunc = "socketoption"
-			case 96 cFunc = "sockettype"
-			case 97 cFunc = "starttimer"
-			case 98 cFunc = "state"
-			case 99 cFunc = "thread"
-			case 100 cFunc = "ungetchar"
-			case 101 cFunc = "waitforbyteswritten"
-			case 102 cFunc = "waitforconnected"
-			case 103 cFunc = "waitfordisconnected"
-			case 104 cFunc = "waitforreadyread"
-			case 105 cFunc = "write"
+["close","delete","errorstring","getaccepterrorevent","getnewconnectionevent","haspendingconnections","init","islistening","listen","maxpendingconnections","nextpendingconnection","objectpointer","pauseaccepting","proxy","resumeaccepting","serveraddress","servererror","serverport","setaccepterrorevent","setmaxpendingconnections","setnewconnectionevent","setproxy","setsocketdescriptor","socketdescriptor","waitfornewconnection"]			case 1 cFunc = "close"
+			case 2 cFunc = "delete"
+			case 3 cFunc = "errorstring"
+			case 4 cFunc = "getaccepterrorevent"
+			case 5 cFunc = "getnewconnectionevent"
+			case 6 cFunc = "haspendingconnections"
+			case 7 cFunc = "init"
+			case 8 cFunc = "islistening"
+			case 9 cFunc = "listen"
+			case 10 cFunc = "maxpendingconnections"
+			case 11 cFunc = "nextpendingconnection"
+			case 12 cFunc = "objectpointer"
+			case 13 cFunc = "pauseaccepting"
+			case 14 cFunc = "proxy"
+			case 15 cFunc = "resumeaccepting"
+			case 16 cFunc = "serveraddress"
+			case 17 cFunc = "servererror"
+			case 18 cFunc = "serverport"
+			case 19 cFunc = "setaccepterrorevent"
+			case 20 cFunc = "setmaxpendingconnections"
+			case 21 cFunc = "setnewconnectionevent"
+			case 22 cFunc = "setproxy"
+			case 23 cFunc = "setsocketdescriptor"
+			case 24 cFunc = "socketdescriptor"
+			case 25 cFunc = "waitfornewconnection"
