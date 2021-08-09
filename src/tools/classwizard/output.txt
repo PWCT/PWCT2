@@ -1,53 +1,87 @@
 
-T_CT_QTCPSERVERCLASS_IP_VALUE2FUNC = [
+T_CT_QSQLDATABASECLASS_IP_VALUE2FUNC = [
+	"adddatabase",
+	"clonedatabase",
 	"close",
+	"commit",
+	"connectionname",
+	"connectionnames",
+	"connectoptions",
+	"contains",
+	"database",
+	"databasename",
 	"delete",
-	"errorstring",
-	"getaccepterrorevent",
-	"getnewconnectionevent",
-	"haspendingconnections",
+	"driver",
+	"drivername",
+	"drivers",
+	"exec",
+	"hostname",
 	"init",
-	"islistening",
-	"listen",
-	"maxpendingconnections",
-	"nextpendingconnection",
+	"isdriveravailable",
+	"isopen",
+	"isopenerror",
+	"isvalid",
+	"lasterror",
+	"numericalprecisionpolicy",
 	"objectpointer",
-	"pauseaccepting",
-	"proxy",
-	"resumeaccepting",
-	"serveraddress",
-	"servererror",
-	"serverport",
-	"setaccepterrorevent",
-	"setmaxpendingconnections",
-	"setnewconnectionevent",
-	"setproxy",
-	"setsocketdescriptor",
-	"socketdescriptor",
-	"waitfornewconnection"
+	"open",
+	"password",
+	"port",
+	"primaryindex",
+	"record",
+	"registersqldriver",
+	"removedatabase",
+	"rollback",
+	"setconnectoptions",
+	"setdatabasename",
+	"sethostname",
+	"setnumericalprecisionpolicy",
+	"setpassword",
+	"setport",
+	"setusername",
+	"tables",
+	"transaction",
+	"username"
 ]
-["close","delete","errorstring","getaccepterrorevent","getnewconnectionevent","haspendingconnections","init","islistening","listen","maxpendingconnections","nextpendingconnection","objectpointer","pauseaccepting","proxy","resumeaccepting","serveraddress","servererror","serverport","setaccepterrorevent","setmaxpendingconnections","setnewconnectionevent","setproxy","setsocketdescriptor","socketdescriptor","waitfornewconnection"]			case 1 cFunc = "close"
-			case 2 cFunc = "delete"
-			case 3 cFunc = "errorstring"
-			case 4 cFunc = "getaccepterrorevent"
-			case 5 cFunc = "getnewconnectionevent"
-			case 6 cFunc = "haspendingconnections"
-			case 7 cFunc = "init"
-			case 8 cFunc = "islistening"
-			case 9 cFunc = "listen"
-			case 10 cFunc = "maxpendingconnections"
-			case 11 cFunc = "nextpendingconnection"
-			case 12 cFunc = "objectpointer"
-			case 13 cFunc = "pauseaccepting"
-			case 14 cFunc = "proxy"
-			case 15 cFunc = "resumeaccepting"
-			case 16 cFunc = "serveraddress"
-			case 17 cFunc = "servererror"
-			case 18 cFunc = "serverport"
-			case 19 cFunc = "setaccepterrorevent"
-			case 20 cFunc = "setmaxpendingconnections"
-			case 21 cFunc = "setnewconnectionevent"
-			case 22 cFunc = "setproxy"
-			case 23 cFunc = "setsocketdescriptor"
-			case 24 cFunc = "socketdescriptor"
-			case 25 cFunc = "waitfornewconnection"
+["adddatabase","clonedatabase","close","commit","connectionname","connectionnames","connectoptions","contains","database","databasename","delete","driver","drivername","drivers","exec","hostname","init","isdriveravailable","isopen","isopenerror","isvalid","lasterror","numericalprecisionpolicy","objectpointer","open","password","port","primaryindex","record","registersqldriver","removedatabase","rollback","setconnectoptions","setdatabasename","sethostname","setnumericalprecisionpolicy","setpassword","setport","setusername","tables","transaction","username"]			case 1 cFunc = "adddatabase"
+			case 2 cFunc = "clonedatabase"
+			case 3 cFunc = "close"
+			case 4 cFunc = "commit"
+			case 5 cFunc = "connectionname"
+			case 6 cFunc = "connectionnames"
+			case 7 cFunc = "connectoptions"
+			case 8 cFunc = "contains"
+			case 9 cFunc = "database"
+			case 10 cFunc = "databasename"
+			case 11 cFunc = "delete"
+			case 12 cFunc = "driver"
+			case 13 cFunc = "drivername"
+			case 14 cFunc = "drivers"
+			case 15 cFunc = "exec"
+			case 16 cFunc = "hostname"
+			case 17 cFunc = "init"
+			case 18 cFunc = "isdriveravailable"
+			case 19 cFunc = "isopen"
+			case 20 cFunc = "isopenerror"
+			case 21 cFunc = "isvalid"
+			case 22 cFunc = "lasterror"
+			case 23 cFunc = "numericalprecisionpolicy"
+			case 24 cFunc = "objectpointer"
+			case 25 cFunc = "open"
+			case 26 cFunc = "password"
+			case 27 cFunc = "port"
+			case 28 cFunc = "primaryindex"
+			case 29 cFunc = "record"
+			case 30 cFunc = "registersqldriver"
+			case 31 cFunc = "removedatabase"
+			case 32 cFunc = "rollback"
+			case 33 cFunc = "setconnectoptions"
+			case 34 cFunc = "setdatabasename"
+			case 35 cFunc = "sethostname"
+			case 36 cFunc = "setnumericalprecisionpolicy"
+			case 37 cFunc = "setpassword"
+			case 38 cFunc = "setport"
+			case 39 cFunc = "setusername"
+			case 40 cFunc = "tables"
+			case 41 cFunc = "transaction"
+			case 42 cFunc = "username"
