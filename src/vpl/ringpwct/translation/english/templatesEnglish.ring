@@ -12,7 +12,13 @@ T_CT_TEMPLATES_IP_VALUELIST = [
 	"Console Application - Hello World",
 	"Console Application - Say Hello"
 ]
-T_CT_TEMPLATES_IP_VALUEFUNC = [
-	:ConsoleApplicationHelloWorld,
-	:ConsoleApplicationSayHello
+T_CT_TEMPLATES_IP_VALUECODE = [
+`
+	? "Hello, World!"
+`,
+`
+	? "Enter your name?" 
+	give cName 
+	? "Hello " + cName
+`
 ]

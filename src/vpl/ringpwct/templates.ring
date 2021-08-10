@@ -14,17 +14,11 @@ class templatesComponentController from ComponentControllerParent
 	func GenerateAction 
 
 		
-			# Get the function name in the generated code
-				cFunc = T_CT_TEMPLATES_IP_VALUEFUNC [Variable(:Value)]
+			# Get the template code
+				cTemplateCode = T_CT_TEMPLATES_IP_VALUECODE [Variable(:Value)]
 
-			switch (cFunc) {
-				case :ConsoleApplicationHelloWorld
-? :one
-				case :ConsoleApplicationSayHello
-? :two
-			}
-		
-				
+			# Convert the code to the Steps Tree 			
+				Ring2PWCT(cTemplateCode)			
 
 		return True 
 

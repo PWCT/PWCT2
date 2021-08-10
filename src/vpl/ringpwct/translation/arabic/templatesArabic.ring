@@ -12,7 +12,14 @@ T_CT_TEMPLATES_IP_VALUELIST = [
 	"واجهة خطية - مرحبا ياعالم",
 	"واجهة خطية - الترحيب بشخص"
 ]
-T_CT_TEMPLATES_IP_VALUEFUNC = [
-	:ConsoleApplicationHelloWorld,
-	:ConsoleApplicationSayHello
+T_CT_TEMPLATES_IP_VALUECODE = [
+`
+	? "مرحبا ياعالم"
+`,
+`
+	? "ادخل اسمك؟" 
+	give الاسم 
+	? "مرحبا يا " + الاسم
+`
 ]
+

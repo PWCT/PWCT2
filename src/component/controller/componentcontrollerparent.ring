@@ -664,3 +664,10 @@ Class ComponentControllerParent from WindowsControllerParent
 				}
 			}
 		}
+
+
+	/*
+		Using Ring2PWCT from components 
+	*/
+	func Ring2PWCT cCode 
+		parent().ComponentsBrowserWindow().TextualCodeToVisualCode(cCode)
