@@ -9,8 +9,9 @@
 T_CT_TEMPLATES_IP_TITLE = "Templates Component"
 T_CT_TEMPLATES_IP_VALUE = "Template"
 T_CT_TEMPLATES_IP_VALUELIST = [
-	"Console Application - Hello World",
-	"Console Application - Say Hello"
+	"Hello World (Console)",
+	"Say Hello (Console)",
+	"Loop and Condition (Console)"
 ]
 T_CT_TEMPLATES_IP_VALUECODE = [
 `
@@ -20,5 +21,13 @@ T_CT_TEMPLATES_IP_VALUECODE = [
 	? "Enter your name?" 
 	give cName 
 	? "Hello " + cName
+`,
+`
+	for t=1 to 10
+		? t
+		if t=3 
+			? "Three"
+		ok
+	next
 `
 ]
