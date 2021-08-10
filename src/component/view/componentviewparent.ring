@@ -11,10 +11,10 @@ class ComponentViewParent from WindowsViewParent
 
 	aVariables = []		# List contains the [ Control Object , variable Name , Type ]
 
-	lFirstTextBox = True 	# For Setting the focus
-	oFirstText		# First Textbox
+	lFirstTextBox		= True		# For Setting the focus
+	oFirstText				# First Textbox
 
-	lEnableListBoxSort = True # Sort ListBox Items
+	lEnableListBoxSort	= True 		# Sort ListBox Items
 
 	nTitleFontSize 		= C_COMPONENT_CONTROLSFONTSIZE 
 	nTitleFixedHeight 	= C_COMPONENT_CONTROLSFONTSIZE * 2.5
