@@ -24,7 +24,8 @@ class templatesComponentController from ComponentControllerParent
 
 class templatesComponentView from ComponentViewParent
 	 
-		Title( T_CT_TEMPLATES_IP_TITLE )	
+		Title( T_CT_TEMPLATES_IP_TITLE )
+		DisableListBoxSort()	
 		ListBox( T_CT_TEMPLATES_IP_VALUE , :value, 
 				T_CT_TEMPLATES_IP_VALUELIST )
 		PageButtons()
