@@ -360,6 +360,7 @@ C_VPL_NAME = 'RingPWCT'
 	load "sysget.ring"
 	load "system.ring"
 	load "systemclass.ring"
+	load "templates.ring"
 	load "time.ring"
 	load "timelist.ring"
 	load "treeclass.ring"
@@ -737,6 +738,7 @@ C_VPL_NAME = 'RingPWCT'
 	aComponentsFilesList + (cComponentsPath + "sysget.ring")
 	aComponentsFilesList + (cComponentsPath + "system.ring")
 	aComponentsFilesList + (cComponentsPath + "systemclass.ring")
+	aComponentsFilesList + (cComponentsPath + "templates.ring")
 	aComponentsFilesList + (cComponentsPath + "time.ring")
 	aComponentsFilesList + (cComponentsPath + "timelist.ring")
 	aComponentsFilesList + (cComponentsPath + "treeclass.ring")
