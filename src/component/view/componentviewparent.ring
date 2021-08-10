@@ -259,6 +259,11 @@ class ComponentViewParent from WindowsViewParent
 		}
 		oList = new qListWidget(win) {
 			setStyleSheet("font-size:"+this.nControlsFontSize+"pt;")
+			if this.lFirstTextBox {
+				this.lFirstTextBox = False
+				setFocus(0)
+				this.oFirstText = oList
+			}
 			for item in aItems {		
 				AddItem(Item[2])
 			}
