@@ -120,6 +120,12 @@ class Generator
 						if right(cComment,1) = char(13) {
 							cComment = left(cComment,len(cComment)-1)
 						}
+						cComment = Trim(cComment)
+						if left(cComment,1) = "#" {
+							cComment = substr(cComment,2)
+						elseif left(cComment,2) = "//" 
+							cComment = substr(cComment,3)
+						}
 						AddStep(cComment)
 					}
 				case :OpenExpressionCallFunction 
