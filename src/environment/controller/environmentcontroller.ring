@@ -855,7 +855,7 @@ class EnvironmentController from WindowsControllerParent
 		}
 
 	func OutputWindowFont
-		oView.oProcessEditbox.setStyleSheet("background-color:; font-size:"+(nFontSize-4)+"pt;")
+		oView.oProcessEditbox.setStyleSheet("font-size:"+(nFontSize-4)+"pt;background-color:;")
 
 	func FilesTreeFont
 		oView.oFilesTree.nFontSize = max(nFontSize-4,11)			
