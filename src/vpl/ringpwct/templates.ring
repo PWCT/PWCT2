@@ -13,9 +13,13 @@ class templatesComponentController from ComponentControllerParent
 
 	func GenerateAction 
 
-		
 			# Get the template code
-				cTemplateCode = T_CT_TEMPLATES_IP_VALUECODE [Variable(:Value)]
+				if Variable(:Value2) {
+					# Remove comments 
+					cTemplateCode = T_CT_TEMPLATES_IP_VALUECODENOCOMMENTS [Variable(:Value)]	
+				else 
+					cTemplateCode = T_CT_TEMPLATES_IP_VALUECODE [Variable(:Value)]	
+				}
 
 			# Convert the code to the Steps Tree 			
 				Ring2PWCT(cTemplateCode)			
@@ -28,4 +32,5 @@ class templatesComponentView from ComponentViewParent
 		DisableListBoxSort()	
 		ListBox( T_CT_TEMPLATES_IP_VALUE , :value, 
 				T_CT_TEMPLATES_IP_VALUELIST )
+		CheckBoxValue( T_CT_TEMPLATES_IP_VALUE2, :value2, False)
 		PageButtons()

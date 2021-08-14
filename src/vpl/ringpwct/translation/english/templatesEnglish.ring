@@ -8,11 +8,33 @@
 
 T_CT_TEMPLATES_IP_TITLE = "Templates Component"
 T_CT_TEMPLATES_IP_VALUE = "Template"
+T_CT_TEMPLATES_IP_VALUE2 = "No Comments"
 T_CT_TEMPLATES_IP_VALUELIST = [
 	"Hello World (Console)",
 	"Say Hello (Console)",
 	"Loop and Condition (Console)"
 ]
+
+T_CT_TEMPLATES_IP_VALUECODENOCOMMENTS = [
+`
+	? "Hello, World!"
+`,
+`
+	? "Enter your name?" 
+	give cName 
+	? "Hello " + cName
+`,
+`
+	for t=1 to 10
+		? t
+		if t=3 
+			? "Three"
+		ok
+	next
+`
+]
+
+
 T_CT_TEMPLATES_IP_VALUECODE = [
 `
 	//
