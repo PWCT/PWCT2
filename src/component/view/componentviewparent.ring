@@ -166,6 +166,11 @@ class ComponentViewParent from WindowsViewParent
 		aVariables + [oCheck,cVariable,C_INTERACTION_CT_CHECKBOX ]
 		return oCheck
 
+	func CheckBoxValue cText,cVariable,nValue
+		CheckBox(cText,cVariable) {
+			setCheckState(nValue)
+		}
+
 	/*
 		Purpose : Display Checkbox and Textbox
 		Parameters : The Title and the Variable Name
