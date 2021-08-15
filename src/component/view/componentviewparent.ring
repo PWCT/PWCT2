@@ -266,8 +266,13 @@ class ComponentViewParent from WindowsViewParent
 			setStyleSheet("font-size:"+this.nControlsFontSize+"pt;")
 			if this.lFirstTextBox {
 				this.lFirstTextBox = False
-				setFocus(0)
-				this.oFirstText = oList
+				if lSearchTextbox {
+					oLineEdit.setFocus(0)
+					this.oFirstText = oLineEdit
+				else
+					setFocus(0)
+					this.oFirstText = oList
+				}
 			}
 			for item in aItems {		
 				AddItem(Item[2])
