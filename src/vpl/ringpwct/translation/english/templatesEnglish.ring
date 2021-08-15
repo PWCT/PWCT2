@@ -21,7 +21,8 @@ T_CT_TEMPLATES_IP_VALUELIST = [
 	"Dynamic Loop",
 	"Modify lists using Loop",
 	"Exit from two loops",
-	"The Loop Command"
+	"The Loop Command",
+	"Short-circuit evaluation"
 ]
 
 T_CT_TEMPLATES_IP_VALUECODE = [
@@ -231,6 +232,19 @@ T_CT_TEMPLATES_IP_VALUECODE = [
 	        ok
 	        ? x
 	next
+
+`,
+`
+	#
+	# Short-circuit evaluation
+	#
+	x = 0 y = 10
+
+	if (x = 0 and nice()) and (y = 10 and nice())
+	        ? "great" 
+	ok
+
+	func nice  ? "nice" return 1
 
 `
 ]
