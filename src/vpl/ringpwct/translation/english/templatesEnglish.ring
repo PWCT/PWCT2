@@ -17,7 +17,8 @@ T_CT_TEMPLATES_IP_VALUELIST = [
 	"Implicit Conversion",
 	"Operators Precedence",
 	"Loop and Condition",
-	"Main Menu"
+	"Main Menu",
+	"Dynamic Loop"
 ]
 
 T_CT_TEMPLATES_IP_VALUECODE = [
@@ -165,5 +166,17 @@ T_CT_TEMPLATES_IP_VALUECODE = [
                 ? "bad option..."
         Off
 	End
+`,
+`
+	#
+	# Dynamic loop
+	#
+	See "Start : " give nStart
+	See "End   : " give nEnd
+	See "Step  : " give nStep
+	#
+	For x = nStart to nEnd Step nStep
+	        ? x
+	Next
 `
 ]
