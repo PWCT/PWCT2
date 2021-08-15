@@ -15,6 +15,7 @@ T_CT_TEMPLATES_IP_VALUELIST = [
 	"Variables",
 	"Deep Copy",
 	"Implicit Conversion",
+	"Operators Precedence",
 	"Loop and Condition"
 ]
 
@@ -60,6 +61,9 @@ T_CT_TEMPLATES_IP_VALUECODENOCOMMENTS = [
 	sum = x + y          
 	Msg = "Sum = " + sum    
 	? Msg 
+`,
+`
+	See 3+5*4       
 `,
 `
 	for t=1 to 10
@@ -170,6 +174,13 @@ T_CT_TEMPLATES_IP_VALUECODE = [
 	# Msg is a string (sum will be converted to a string)   
 	Msg = "Sum = " + sum    
 	? Msg 
+`,
+`
+	# 
+	# Example about operators precedence
+	#
+	# The output will be : 23
+	See 3+5*4       
 `,
 `
 	//
