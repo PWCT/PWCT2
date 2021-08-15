@@ -667,12 +667,13 @@ class EnvironmentController from WindowsControllerParent
 		oView {
 			if ISNULL(oProcess) { return }
 			if isWindows() {
-				cText = oProcessText.text() + windowsnl()
+				cSysNL = windowsnl()
 			else 
-				cText = oProcessText.text() + nl
+				cSysNL = nl
 			}
+			cText = oProcessText.text() + cSysNL
 			oProcess.write(cText ,len(cText))
-			oProcessEditbox.insertplaintext(cText)
+			oProcessEditbox.insertplaintext(">> " + cText)
 		}
 
 	/*
