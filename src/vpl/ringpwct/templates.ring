@@ -16,7 +16,7 @@ class templatesComponentController from ComponentControllerParent
 			# Get the template code
 				if Variable(:Value2) {
 					# Remove comments 
-					cTemplateCode = T_CT_TEMPLATES_IP_VALUECODENOCOMMENTS [Variable(:Value)]	
+					cTemplateCode = removeComments( T_CT_TEMPLATES_IP_VALUECODE [Variable(:Value)] )
 				else 
 					cTemplateCode = T_CT_TEMPLATES_IP_VALUECODE [Variable(:Value)]	
 				}
@@ -25,6 +25,22 @@ class templatesComponentController from ComponentControllerParent
 				Ring2PWCT(cTemplateCode)			
 
 		return True 
+
+	func removeComments cCode 
+		aCodeLines = str2List(cCode)
+		aCode = []
+		for cLine in aCodeLines {
+			if not isComment(cLine) {
+				aCode + cLine
+			}
+		}
+		return list2Str(aCode)
+
+	func isComment cLine
+		while left(cLine,1) = " " or left(cLine,1) = Tab {
+			cLine = substr(cLine,2)
+		}
+		return left(cLine,1) = "#" or left(cLine,2) = "//" 			
 
 class templatesComponentView from ComponentViewParent
 	 

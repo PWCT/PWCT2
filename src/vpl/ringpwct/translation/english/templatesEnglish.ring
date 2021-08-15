@@ -19,63 +19,6 @@ T_CT_TEMPLATES_IP_VALUELIST = [
 	"Loop and Condition"
 ]
 
-T_CT_TEMPLATES_IP_VALUECODENOCOMMENTS = [
-`
-	? "Hello, World!"
-`,
-`
-	? "Enter your name?" 
-	give cName 
-	? "Hello " + cName
-`,
-`
-	x = "Hello" 
-	? x 
-	x = 5                   
-	? x 
-	x = 1.2                 
-	? x 
-	x = [1,2,3,4]           
-	? x
-	x = date()              
-	? x 
-	x = time()              
-	? x 
-	x = true                
-	? x 
-	x = false               
-	? x 
-	
-`,
-`
-	list = [1,2,3,"four","five"]
-	list2 = list
-	list = []
-	? list        
-	? "********" 
-	? list2       
-`,
-`
-	x = 10                  
-	y = "20"       
-	sum = x + y          
-	Msg = "Sum = " + sum    
-	? Msg 
-`,
-`
-	See 3+5*4       
-`,
-`
-	for t=1 to 10
-		? t
-		if t=3 
-			? "Three"
-		ok
-	next
-`
-]
-
-
 T_CT_TEMPLATES_IP_VALUECODE = [
 `
 	//
