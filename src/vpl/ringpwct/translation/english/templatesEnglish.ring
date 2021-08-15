@@ -239,12 +239,23 @@ T_CT_TEMPLATES_IP_VALUECODE = [
 	# Short-circuit evaluation
 	#
 	x = 0 y = 10
-
+	#
+	? "Test 1"
 	if (x = 0 and nice()) and (y = 10 and nice())
-	        ? "great" 
+	        ? "Great" 
 	ok
-
-	func nice  ? "nice" return 1
+	#
+	? "Test 2"
+	if (x = 1 and nice()) and (y = 10 and nice())
+	        ? "Great" 
+	ok
+	#
+	? "Test 3"
+	if (x = 0 and nice()) or (y = 10 and nice())
+	        ? "Great" 
+	ok
+	#
+	func nice  ? "Nice" return 1
 
 `
 ]
