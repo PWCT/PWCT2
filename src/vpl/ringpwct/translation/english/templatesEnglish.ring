@@ -10,9 +10,10 @@ T_CT_TEMPLATES_IP_TITLE = "Templates Component"
 T_CT_TEMPLATES_IP_VALUE = "Template"
 T_CT_TEMPLATES_IP_VALUE2 = "No Comments"
 T_CT_TEMPLATES_IP_VALUELIST = [
-	"Hello World (Console)",
-	"Say Hello (Console)",
-	"Loop and Condition (Console)"
+	"Hello World",
+	"Say Hello",
+	"Variables",
+	"Loop and Condition"
 ]
 
 T_CT_TEMPLATES_IP_VALUECODENOCOMMENTS = [
@@ -23,6 +24,25 @@ T_CT_TEMPLATES_IP_VALUECODENOCOMMENTS = [
 	? "Enter your name?" 
 	give cName 
 	? "Hello " + cName
+`,
+`
+	x = "Hello" 
+	? x 
+	x = 5                   
+	? x 
+	x = 1.2                 
+	? x 
+	x = [1,2,3,4]           
+	? x
+	x = date()              
+	? x 
+	x = time()              
+	? x 
+	x = true                
+	? x 
+	x = false               
+	? x 
+	
 `,
 `
 	for t=1 to 10
@@ -58,6 +78,34 @@ T_CT_TEMPLATES_IP_VALUECODE = [
 	? "Enter your name?" 
 	give cName 
 	? "Hello " + cName
+`,
+`
+	# x is a string
+	x = "Hello" 
+	? x 
+	# x is a number (int)
+	x = 5                   
+	? x 
+	# x is a number (double)
+	x = 1.2                 
+	? x 
+    # x is a list
+	x = [1,2,3,4]           
+	# print list items
+	? x
+    # x is a string contains date                   
+	x = date()              
+	? x 
+    # x is a string contains time
+	x = time()              
+	? x 
+    # x is a number (logical value = 1)
+	x = true                
+	? x 
+    # x is a number (logical value = 0)
+	x = false               
+	? x 
+	
 `,
 `
 	//
