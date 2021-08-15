@@ -210,9 +210,9 @@ T_CT_TEMPLATES_IP_VALUECODE = [
 
 	for x = 1 to 10
 	        for y = 1 to 10
-	                see "x=" + x + " y=" + y + nl
+	                ? "x=" + x + " y=" + y 
 	                if x = 3 and y = 5
-				# exit from 2 loops
+				# Exit from 2 loops
 	                        exit 2     
 	                ok
 	        next
