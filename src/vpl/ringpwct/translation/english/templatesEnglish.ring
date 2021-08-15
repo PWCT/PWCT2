@@ -19,7 +19,8 @@ T_CT_TEMPLATES_IP_VALUELIST = [
 	"Loop and Condition",
 	"Main Menu",
 	"Dynamic Loop",
-	"Modify lists using Loop"
+	"Modify lists using Loop",
+	"Exit from two loops"
 ]
 
 T_CT_TEMPLATES_IP_VALUECODE = [
@@ -198,6 +199,24 @@ T_CT_TEMPLATES_IP_VALUECODE = [
 	#
 	# Print the list items
 	see aList       
+
+`,
+`
+	#
+	# In this example we will create two loops
+	# Then we will use the Exit command 
+	# To exit from these two loops together
+	#
+
+	for x = 1 to 10
+	        for y = 1 to 10
+	                see "x=" + x + " y=" + y + nl
+	                if x = 3 and y = 5
+				# exit from 2 loops
+	                        exit 2     
+	                ok
+	        next
+	next
 
 `
 ]
