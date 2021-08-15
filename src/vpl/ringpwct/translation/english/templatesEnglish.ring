@@ -18,7 +18,8 @@ T_CT_TEMPLATES_IP_VALUELIST = [
 	"Operators Precedence",
 	"Loop and Condition",
 	"Main Menu",
-	"Dynamic Loop"
+	"Dynamic Loop",
+	"Using For In Loop to modify lists"
 ]
 
 T_CT_TEMPLATES_IP_VALUECODE = [
@@ -178,5 +179,25 @@ T_CT_TEMPLATES_IP_VALUECODE = [
 	For x = nStart to nEnd Step nStep
 	        ? x
 	Next
+`,
+`
+	#
+	# create list contains numbers from 1 to 5
+	aList = 1:5
+	#
+	# replace list numbers with strings
+	for x in aList
+	        switch x
+        	on 1  x = "one"
+	        on 2  x = "two"
+        	on 3  x = "three"
+	        on 4  x = "four"
+        	on 5  x = "five"
+	        off
+	next
+	#
+	# print the list items
+	see aList       
+
 `
 ]
