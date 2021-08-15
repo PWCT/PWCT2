@@ -16,7 +16,8 @@ T_CT_TEMPLATES_IP_VALUELIST = [
 	"Deep Copy",
 	"Implicit Conversion",
 	"Operators Precedence",
-	"Loop and Condition"
+	"Loop and Condition",
+	"Main Menu"
 ]
 
 T_CT_TEMPLATES_IP_VALUECODE = [
@@ -137,5 +138,32 @@ T_CT_TEMPLATES_IP_VALUECODE = [
 			? "Three"
 		ok
 	next
+`,
+`
+	#
+	# We will learn how to create a Main Menu
+	# Using a While loop and a Switch statement
+	#
+	While True
+	? ""
+        ? "Main Menu"
+	? "--------------"
+	? "(1) Say Hello"
+	? "(2) About"
+	? "(3) Exit" 
+	? ""
+	Give nOption
+        Switch nOption
+        On 1
+                ? "Hello!"
+        On 2
+                ? "Just a simple program!" 
+        On 3
+		? "End of program!"
+                Bye
+        Other
+                ? "bad option..."
+        Off
+	End
 `
 ]
