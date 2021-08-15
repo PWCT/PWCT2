@@ -148,9 +148,9 @@ T_CT_TEMPLATES_IP_VALUECODE = [
 	#
 	# حلقة ديناميكية
 	#
-	See "البداية : " give البداية
-	See "النهاية   : " give النهاية
-	See "الخطوة  : " give الخطوة
+	see "البداية : " give البداية
+	see "النهاية   : " give النهاية
+	see "الخطوة  : " give الخطوة
 	#
 	For س = البداية to النهاية Step الخطوة
 	        ? س

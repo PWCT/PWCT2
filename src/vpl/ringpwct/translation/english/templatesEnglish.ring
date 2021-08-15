@@ -171,9 +171,9 @@ T_CT_TEMPLATES_IP_VALUECODE = [
 	#
 	# Dynamic loop
 	#
-	See "Start : " give nStart
-	See "End   : " give nEnd
-	See "Step  : " give nStep
+	see "Start : " give nStart
+	see "End   : " give nEnd
+	see "Step  : " give nStep
 	#
 	For x = nStart to nEnd Step nStep
 	        ? x
