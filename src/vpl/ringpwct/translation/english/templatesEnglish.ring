@@ -20,7 +20,8 @@ T_CT_TEMPLATES_IP_VALUELIST = [
 	"Main Menu",
 	"Dynamic Loop",
 	"Modify lists using Loop",
-	"Exit from two loops"
+	"Exit from two loops",
+	"The Loop Command"
 ]
 
 T_CT_TEMPLATES_IP_VALUECODE = [
@@ -216,6 +217,19 @@ T_CT_TEMPLATES_IP_VALUECODE = [
 	                        exit 2     
 	                ok
 	        next
+	next
+
+`,
+`
+	#
+	# Using the Loop command inside a For Loop
+	#
+	for x = 1 to 10
+	        if x = 3
+	                ? "Number Three" 
+	                loop
+	        ok
+	        ? x
 	next
 
 `
