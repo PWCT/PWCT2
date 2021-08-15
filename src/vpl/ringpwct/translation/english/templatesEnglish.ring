@@ -13,6 +13,7 @@ T_CT_TEMPLATES_IP_VALUELIST = [
 	"Hello World",
 	"Say Hello",
 	"Variables",
+	"Deep Copy",
 	"Loop and Condition"
 ]
 
@@ -43,6 +44,14 @@ T_CT_TEMPLATES_IP_VALUECODENOCOMMENTS = [
 	x = false               
 	? x 
 	
+`,
+`
+	list = [1,2,3,"four","five"]
+	list2 = list
+	list = []
+	? list        
+	? "********" 
+	? list2       
 `,
 `
 	for t=1 to 10
@@ -80,32 +89,58 @@ T_CT_TEMPLATES_IP_VALUECODE = [
 	? "Hello " + cName
 `,
 `
+
 	# x is a string
 	x = "Hello" 
 	? x 
+
 	# x is a number (int)
 	x = 5                   
 	? x 
 	# x is a number (double)
 	x = 1.2                 
 	? x 
-    # x is a list
+
+	# x is a list
 	x = [1,2,3,4]           
 	# print list items
 	? x
-    # x is a string contains date                   
+
+	# x is a string contains date                   
 	x = date()              
 	? x 
-    # x is a string contains time
+
+	# x is a string contains time
 	x = time()              
 	? x 
-    # x is a number (logical value = 1)
+	# x is a number (logical value = 1)
 	x = true                
 	? x 
-    # x is a number (logical value = 0)
+
+	# x is a number (logical value = 0)
 	x = false               
 	? x 
 	
+`,
+`
+
+	# We can use the assignment operator ‘=’ to copy variables.
+	# We can do that to copy values like strings & numbers. 
+	# Also, we can copy complete lists & objects. 
+	# The assignment operator will do a complete duplication for us. 
+	# This operation called Deep Copy
+
+	list = [1,2,3,"four","five"]
+	list2 = list
+	list = []
+	# print the first list - no items to print
+	? list        
+
+	? "********" 
+
+	# print the second list - contains 5 items
+	? list2       
+
 `,
 `
 	//
