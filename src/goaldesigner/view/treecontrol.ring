@@ -35,7 +35,7 @@ class TreeControl from qTreeWidget
 		super.init(win)
 		font = new qFont("arial",0,0,0)
 		font.setpixelsize(nFontSize)
-		setUniformRowHeights(True)
+		//setUniformRowHeights(True)
 		setAnimated(False)
 		return self
 
