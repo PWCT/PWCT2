@@ -22,7 +22,8 @@ T_CT_TEMPLATES_IP_VALUELIST = [
 	"Modify lists using Loop",
 	"Exit from two loops",
 	"The Loop Command",
-	"Short-circuit evaluation"
+	"Short-circuit evaluation",
+	"Using Functions"
 ]
 
 T_CT_TEMPLATES_IP_VALUECODE = [
@@ -257,5 +258,30 @@ T_CT_TEMPLATES_IP_VALUECODE = [
 	#
 	func nice  ? "Nice" return 1
 
+`,
+`
+	#
+	# In this example we learn about using functions
+	#
+	first()  second()
+
+	sum(3,5) sum(1000,2000)
+
+	? fact(5)     
+
+	if novalue() = NULL
+        	? "the NoValue() function doesn't return a value" 
+	ok
+
+	func first   ? "message from the first function" 
+
+	func second  ? "message from the second function" 
+
+	func sum x,y 
+		? x+y
+
+	func fact x if x = 0 return 1 else return x * fact(x-1) ok
+
+	func novalue
 `
 ]
