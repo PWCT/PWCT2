@@ -23,7 +23,8 @@ T_CT_TEMPLATES_IP_VALUELIST = [
 	"Exit from two loops",
 	"The Loop Command",
 	"Short-circuit evaluation",
-	"Using Functions"
+	"Using Functions",
+	"Variables Scope"
 ]
 
 T_CT_TEMPLATES_IP_VALUECODE = [
@@ -283,5 +284,24 @@ T_CT_TEMPLATES_IP_VALUECODE = [
 	func fact x if x = 0 return 1 else return x * fact(x-1) ok
 
 	func novalue
+`,
+`
+	#
+	# Variables Scope Example
+	#
+	# x is a Global variable.
+	x = 10                          
+
+	func main
+		# t is a Local variable
+	        for t = 1 to 10         
+        	        mycounter()     
+	        next
+
+	func mycounter
+		# Print the global variable value
+	        ? x 
+		# Decrement
+	        x--                     
 `
 ]
