@@ -6,7 +6,7 @@
 */
 
 
-T_CT_TEMPLATES_IP_TITLE = "Templates Component"
+T_CT_TEMPLATES_IP_TITLE = "Quick Start Component"
 T_CT_TEMPLATES_IP_VALUE = "Template"
 T_CT_TEMPLATES_IP_VALUE2 = "No Comments"
 T_CT_TEMPLATES_IP_VALUELIST = [

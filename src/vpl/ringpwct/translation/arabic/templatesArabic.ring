@@ -6,7 +6,7 @@
 */
 
 
-T_CT_TEMPLATES_IP_TITLE = "مكون القوالب"
+T_CT_TEMPLATES_IP_TITLE = "مكون بداية سريعة"
 T_CT_TEMPLATES_IP_VALUE = "القالب : "
 T_CT_TEMPLATES_IP_VALUE2 = "بدون تعليقات"
 T_CT_TEMPLATES_IP_VALUELIST = [
