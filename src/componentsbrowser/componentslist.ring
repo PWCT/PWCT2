@@ -20,6 +20,46 @@ $aComponentsStepsTree = [
 ]
 ]
 ],[
+511,1,[
+[
+"name","Templates"
+],[
+"active",1
+],[
+"code",""
+],[
+"interactionid",499
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+],[
+"plainname","Templates"
+]
+]
+],[
+512,511,[
+[
+"name","Quick Start"
+],[
+"active",1
+],[
+"code","templates"
+],[
+"interactionid",500
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+],[
+"plainname","Quick Start"
+]
+]
+],[
 488,1,[
 [
 "name","Console"
@@ -617,6 +657,26 @@ $aComponentsStepsTree = [
 "steptype",1
 ],[
 "plainname",""
+]
+]
+],[
+494,31,[
+[
+"name","Expression"
+],[
+"active",1
+],[
+"code","expression"
+],[
+"interactionid",482
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+],[
+"plainname","Expression"
 ]
 ]
 ],[
@@ -6066,7 +6126,7 @@ $aComponentsStepsTree = [
 ],[
 "active",1
 ],[
-"code","weblib_webpage"
+"code","weblib_webpageclass"
 ],[
 "interactionid",385
 ],[
@@ -6086,7 +6146,7 @@ $aComponentsStepsTree = [
 ],[
 "active",1
 ],[
-"code","weblib_htmlpage"
+"code","weblib_htmlpageclass"
 ],[
 "interactionid",386
 ],[
@@ -6106,7 +6166,7 @@ $aComponentsStepsTree = [
 ],[
 "active",1
 ],[
-"code","weblib_bootstrappage"
+"code","weblib_bootstrappageclass"
 ],[
 "interactionid",387
 ],[
@@ -7122,7 +7182,7 @@ $aComponentsStepsTree = [
 ],[
 453,446,[
 [
-"name","Textbox Class"
+"name","LineEdit Class"
 ],[
 "active",1
 ],[
@@ -7142,7 +7202,7 @@ $aComponentsStepsTree = [
 ],[
 454,446,[
 [
-"name","Editbox Class"
+"name","TextEdit Class"
 ],[
 "active",1
 ],[
@@ -7162,7 +7222,7 @@ $aComponentsStepsTree = [
 ],[
 455,446,[
 [
-"name","Listbox Class"
+"name","ListWidget Class"
 ],[
 "active",1
 ],[
@@ -7617,6 +7677,326 @@ $aComponentsStepsTree = [
 "steptype",1
 ],[
 "plainname","PixMap Class"
+]
+]
+],[
+495,446,[
+[
+"name","Painter Class"
+],[
+"active",1
+],[
+"code","qpainterclass"
+],[
+"interactionid",483
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+],[
+"plainname","Painter Class"
+]
+]
+],[
+496,446,[
+[
+"name","Picture Class"
+],[
+"active",1
+],[
+"code","qpictureclass"
+],[
+"interactionid",484
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+],[
+"plainname","Picture Class"
+]
+]
+],[
+497,446,[
+[
+"name","Pen Class"
+],[
+"active",1
+],[
+"code","qpenclass"
+],[
+"interactionid",485
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+],[
+"plainname","Pen Class"
+]
+]
+],[
+498,446,[
+[
+"name","Printer Class"
+],[
+"active",1
+],[
+"code","qprinterclass"
+],[
+"interactionid",486
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+],[
+"plainname","Printer Class"
+]
+]
+],[
+499,446,[
+[
+"name","PrintPreviewDialog Class"
+],[
+"active",1
+],[
+"code","qprintpreviewdialogclass"
+],[
+"interactionid",487
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+],[
+"plainname","PrintPreviewDialog Class"
+]
+]
+],[
+500,446,[
+[
+"name","MediaPlayer Class"
+],[
+"active",1
+],[
+"code","qmediaplayerclass"
+],[
+"interactionid",488
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+],[
+"plainname","MediaPlayer Class"
+]
+]
+],[
+501,446,[
+[
+"name","ColorDialog Class"
+],[
+"active",1
+],[
+"code","qcolordialogclass"
+],[
+"interactionid",489
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+],[
+"plainname","ColorDialog Class"
+]
+]
+],[
+502,446,[
+[
+"name","FontDialog Class"
+],[
+"active",1
+],[
+"code","qfontdialogclass"
+],[
+"interactionid",490
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+],[
+"plainname","FontDialog Class"
+]
+]
+],[
+503,446,[
+[
+"name","FileDialog Class"
+],[
+"active",1
+],[
+"code","qfiledialogclass"
+],[
+"interactionid",491
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+],[
+"plainname","FileDialog Class"
+]
+]
+],[
+504,446,[
+[
+"name","InputDialog Class"
+],[
+"active",1
+],[
+"code","qinputdialogclass"
+],[
+"interactionid",492
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+],[
+"plainname","InputDialog Class"
+]
+]
+],[
+505,446,[
+[
+"name","MessageBox Class"
+],[
+"active",1
+],[
+"code","qmessageboxclass"
+],[
+"interactionid",493
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+],[
+"plainname","MessageBox Class"
+]
+]
+],[
+506,446,[
+[
+"name","RegularExpression Class"
+],[
+"active",1
+],[
+"code","qregularexpressionclass"
+],[
+"interactionid",494
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+],[
+"plainname","RegularExpression Class"
+]
+]
+],[
+508,446,[
+[
+"name","TCPSocket Class"
+],[
+"active",1
+],[
+"code","qtcpsocketclass"
+],[
+"interactionid",496
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+],[
+"plainname","TCPSocket Class"
+]
+]
+],[
+507,446,[
+[
+"name","TCPServer Class"
+],[
+"active",1
+],[
+"code","qtcpserverclass"
+],[
+"interactionid",495
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+],[
+"plainname","TCPServer Class"
+]
+]
+],[
+509,446,[
+[
+"name","SQLDatabase Class"
+],[
+"active",1
+],[
+"code","qsqldatabaseclass"
+],[
+"interactionid",497
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+],[
+"plainname","SQLDatabase Class"
+]
+]
+],[
+510,446,[
+[
+"name","SQLQuery Class"
+],[
+"active",1
+],[
+"code","qsqlqueryclass"
+],[
+"interactionid",498
+],[
+"visible",1
+],[
+"stepnumber",1
+],[
+"steptype",1
+],[
+"plainname","SQLQuery Class"
 ]
 ]
 ],[

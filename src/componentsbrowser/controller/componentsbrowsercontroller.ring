@@ -106,7 +106,7 @@ class ComponentsBrowserController from WindowsControllerParent
 		if lWriteComponentsFile {
 			cCode = "$aComponentsStepsTree = " + List2RingCode(aStepsTree) + nl
 			cCode += "$nComponentsStepsID = " + oVisualSourceFile.GetStepsID() + nl
-			write("componentsbrowser/componentslist.ring",cCode)
+			write("src/componentsbrowser/componentslist.ring",cCode)
 		}
 		oModel.SetData(aStepsTree)
 		oModel.SetID(nStepsID)
