@@ -59,7 +59,7 @@ class PlayAsMovieController
 						nParentID = item[C_TREEMODEL_PARENTID]
 						nStepIID = item[C_TREEMODEL_CONTENT][:interactionid]
 						nStepType = item[C_TREEMODEL_CONTENT][:steptype]
-						if nStepType = C_STEPTYPE_ROOT {
+						if nStepType = C_STEPTYPE_ROOT or ! oGoalDesignerController.oView.lUseNewCommentButton {
 							# Select the parent step
 								oItem = oView.oStepsTree.GetObjByID(nParentID)
 								oView.oStepsTree.SetCurrentItem(oItem,0)
