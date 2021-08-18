@@ -18,6 +18,7 @@ Class ComponentControllerParent from WindowsControllerParent
 
 	nStepNumber 		= 0 		# Step Number
 	lAllowInteraction	= False		# The step allow sub steps
+	lStepIsAComment		= False		# The step is a comment
 
 	lNoInteractionPage 	= False		# No Interaction Page 
 
@@ -104,6 +105,10 @@ Class ComponentControllerParent from WindowsControllerParent
 			lAllowInteraction = False
 			nStepType = C_STEPTYPE_ALLOWINTERACTION
 		}
+		if lStepIsAComment {
+			lStepIsAComment = False
+			nStepType = C_STEPTYPE_COMMENT
+		}
 		oItem = parent().AddGeneratedStep(cStep,nIID,nStepNumber,nStepType)
 
 	/*
@@ -114,6 +119,9 @@ Class ComponentControllerParent from WindowsControllerParent
 
 	func AllowInteraction
 		lAllowInteraction = True
+
+	func StepIsAComment
+		lStepIsAComment = True
 
 	/*
 		Purpose : Select step in the Goal Designer
