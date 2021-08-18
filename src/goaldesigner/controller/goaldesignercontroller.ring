@@ -772,7 +772,9 @@ class GoalDesignerController from WindowsControllerParent
 			case 70		# CTRL+F
 				SearchAction()
 			case 78		# CTRL+N
-				AddStepAction()
+				if oView.lUseNewCommentButton {
+					AddStepAction()
+				}
 			case 80		# CTRL+P
 				PrintStepsAction()		
 			case 16777223  	# DEL
@@ -781,8 +783,9 @@ class GoalDesignerController from WindowsControllerParent
 				oItem  = oView.oStepsTree.currentItem()
 				nStepID = oView.oStepsTree.GetIDByObj(oItem)
 				nStepType = oModel.GetStepType(nStepID)
-				if nStepType = C_STEPTYPE_COMMENT {
-					EditStepAction()
+				if ( nStepType = C_STEPTYPE_COMMENT ) and 
+					oView.lUseNewCommentButton {
+						EditStepAction()
 				else	
 					ModifyAction()
 				}
