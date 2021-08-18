@@ -11,9 +11,13 @@ class comment_textComponentController from ComponentControllerParent
 
 	func GenerateAction 
 
-		NewComment( Variable(:Value) )
+		StepIsAComment()
+		NewStep( Variable(:Value) )
 
 		return True 
+
+	func CheckSyntax
+		return True
 
 class comment_textComponentView from ComponentViewParent
 	 
