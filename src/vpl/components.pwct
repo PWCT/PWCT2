@@ -2,9 +2,9 @@
 
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
-cNaturalLanguageName     = 'Arabic'
-nStepsID                 = 512		
-nInteractionsID          = 500
+cNaturalLanguageName     = 'English'
+nStepsID                 = 519		
+nInteractionsID          = 505
 
 aStepsTable = [
 	[
@@ -51,7 +51,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Templates"
+				"General"
 			],
 			[
 				"active",
@@ -79,13 +79,51 @@ aStepsTable = [
 			],
 			[
 				"plainname",
+				"General"
+			]
+		]
+	],
+	[
+		517,
+		511,
+		[
+			[
+				"name",
+				"Templates"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				504
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
 				"Templates"
 			]
 		]
 	],
 	[
-		512,
-		511,
+		518,
+		517,
 		[
 			[
 				"name",
@@ -101,7 +139,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				500
+				505
 			],
 			[
 				"visible",
@@ -118,6 +156,82 @@ aStepsTable = [
 			[
 				"plainname",
 				"Quick Start"
+			]
+		]
+	],
+	[
+		514,
+		511,
+		[
+			[
+				"name",
+				"Comments"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				502
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Comments"
+			]
+		]
+	],
+	[
+		515,
+		514,
+		[
+			[
+				"name",
+				"Add Comment"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"comment_text"
+			],
+			[
+				"interactionid",
+				503
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Add Comment"
 			]
 		]
 	],
@@ -18817,7 +18931,31 @@ aInteractionsTable = [
 		""
 	],
 	[
-		500,
+		502,
+		1,
+		"",
+		"18/08/2021",
+		"09:39:27",
+		""
+	],
+	[
+		503,
+		1,
+		"",
+		"18/08/2021",
+		"09:34:35",
+		""
+	],
+	[
+		504,
+		1,
+		"",
+		"18/08/2021",
+		"09:39:42",
+		""
+	],
+	[
+		505,
 		1,
 		"",
 		"10/08/2021",

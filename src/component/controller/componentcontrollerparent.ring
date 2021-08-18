@@ -33,6 +33,12 @@ Class ComponentControllerParent from WindowsControllerParent
 	aAllowEmptyValue	= []	# List of interaction page variables that could be empty 
 
 	/*
+		Add Comment
+	*/
+	func newComment cComment 
+		parent().addStep(cComment)		
+
+	/*
 		Purpose : Create a Step as parent to other steps
 		Parameters : The Step Name as string 
 		Output : None
