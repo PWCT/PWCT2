@@ -7,6 +7,10 @@
 
 class GoalDesignerView from WindowsViewParent
 
+	# Special button for adding comment 
+
+		lUseNewCommentButton = False
+
 	# Create the window and the Controls
 
 	win = new QMainWindow() {
@@ -48,12 +52,14 @@ class GoalDesignerView from WindowsViewParent
 			InsertTab(1,oPageCode,T_GD_STEPCODE)
 			setCurrentChangedEvent(Method(:StepChangedAction)) 			
 		}
-		btnAddStep = new QToolButton(win) {
-			setToolTip(T_GD_NEWSTEP)
-			setClickEvent(Method(:AddStepAction))
-			self.MobileButtonSize(btnAddStep)
+		if this.lUseNewCommentButton {
+			btnAddStep = new QToolButton(win) {
+				setToolTip(T_GD_NEWSTEP)
+				setClickEvent(Method(:AddStepAction))
+				self.MobileButtonSize(btnAddStep)
+			}
+			setBtnImage(btnAddStep,AppFile("images/new.png"))	
 		}
-		setBtnImage(btnAddStep,AppFile("images/new.png"))
 		btnDeleteStep = new QToolButton(win) {
 			setToolTip(T_GD_DELETESTEP)
 			setClickEvent(Method(:DeleteStepAction))			
@@ -195,8 +201,10 @@ class GoalDesignerView from WindowsViewParent
 		win {
 			gdtool = new qtoolbar(win)
 			tool1 = addtoolbar_2(Qt_LeftToolBarArea,gdtool)  {
-				if not PWCTIsMobile(:GoalDesignerButtons) {
+				if this.lUseNewCommentButton {
 					AddWidget(btnAddStep)
+				}
+				if not PWCTIsMobile(:GoalDesignerButtons) {
 					AddWidget(btnInteract)		
 					AddWidget(btnModify)		
 					AddWidget(btnDeleteStep)
@@ -211,7 +219,6 @@ class GoalDesignerView from WindowsViewParent
 					AddWidget(btnSearch)
 					AddWidget(btnMax)
 				else
-					AddWidget(btnAddStep)
 					AddWidget(btnInteract)		
 					AddWidget(btnModify)		
 					AddWidget(btnDeleteStep)
