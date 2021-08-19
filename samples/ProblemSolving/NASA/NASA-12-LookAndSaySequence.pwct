@@ -47,7 +47,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"# Project: Look and Say Sequence"
+				"Project: Look and Say Sequence"
 			],
 			[
 				"active",
@@ -75,7 +75,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"# Project: Look and Say Sequence"
+				"Project: Look and Say Sequence"
 			]
 		]
 	],
@@ -85,7 +85,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"# Date   : 2018/07/06"
+				"Date   : 2018/07/06"
 			],
 			[
 				"active",
@@ -113,7 +113,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"# Date   : 2018/07/06"
+				"Date   : 2018/07/06"
 			]
 		]
 	],
@@ -123,7 +123,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"# Author: Gal Zsolt [~ CalmoSoft ~]"
+				"Author: Gal Zsolt [~ CalmoSoft ~]"
 			],
 			[
 				"active",
@@ -151,7 +151,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"# Author: Gal Zsolt [~ CalmoSoft ~]"
+				"Author: Gal Zsolt [~ CalmoSoft ~]"
 			]
 		]
 	],
@@ -161,7 +161,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"# Email  : <calmosoft@gmail.com>"
+				"Email  : <calmosoft@gmail.com>"
 			],
 			[
 				"active",
@@ -189,7 +189,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"# Email  : <calmosoft@gmail.com>"
+				"Email  : "
 			]
 		]
 	],
@@ -1378,208 +1378,208 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"24/07/2021",
-		"05:10:42",
+		"19/08/2021",
+		"21:11:47",
 		""
 	],
 	[
 		2,
 		1,
-		"",
-		"24/07/2021",
-		"05:10:42",
-		""
+		"comment_text",
+		"19/08/2021",
+		"21:11:47",
+		"value;;_RV_;;Project: Look and Say Sequence;;_RV_;;"
 	],
 	[
 		3,
 		1,
-		"",
-		"24/07/2021",
-		"05:10:42",
-		""
+		"comment_text",
+		"19/08/2021",
+		"21:11:47",
+		"value;;_RV_;;Date   : 2018/07/06;;_RV_;;"
 	],
 	[
 		4,
 		1,
-		"",
-		"24/07/2021",
-		"05:10:42",
-		""
+		"comment_text",
+		"19/08/2021",
+		"21:11:47",
+		"value;;_RV_;;Author: Gal Zsolt [~ CalmoSoft ~];;_RV_;;"
 	],
 	[
 		5,
 		1,
-		"",
-		"24/07/2021",
-		"05:10:42",
-		""
+		"comment_text",
+		"19/08/2021",
+		"21:11:47",
+		"value;;_RV_;;Email  : <calmosoft@gmail.com>;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"assignment",
-		"24/07/2021",
-		"05:10:42",
+		"19/08/2021",
+		"21:11:47",
 		"leftside;;_RV_;;nr;;_RV_;;rightside;;_RV_;;[40,45,48];;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"forloop",
-		"24/07/2021",
-		"05:10:42",
+		"19/08/2021",
+		"21:11:47",
 		"start;;_RV_;;x = 1;;_RV_;;to;;_RV_;;len(nr);;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"24/07/2021",
-		"05:10:42",
+		"19/08/2021",
+		"21:11:47",
 		"leftside;;_RV_;;number;;_RV_;;rightside;;_RV_;;"+char(34)+"1223334444"+char(34)+";;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"24/07/2021",
-		"05:10:42",
+		"19/08/2021",
+		"21:11:47",
 		"leftside;;_RV_;;starttime;;_RV_;;rightside;;_RV_;;clock();;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"forloop",
-		"24/07/2021",
-		"05:10:42",
+		"19/08/2021",
+		"21:11:47",
 		"start;;_RV_;;n = 1;;_RV_;;to;;_RV_;;nr[x];;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"24/07/2021",
-		"05:10:42",
+		"19/08/2021",
+		"21:11:47",
 		"leftside;;_RV_;;number;;_RV_;;rightside;;_RV_;;looksay(number);;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"assignment",
-		"24/07/2021",
-		"05:10:42",
+		"19/08/2021",
+		"21:11:47",
 		"leftside;;_RV_;;endtime;;_RV_;;rightside;;_RV_;;clock();;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"assignment",
-		"24/07/2021",
-		"05:10:42",
+		"19/08/2021",
+		"21:11:47",
 		"leftside;;_RV_;;difftime;;_RV_;;rightside;;_RV_;;endtime-starttime;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"print",
-		"24/07/2021",
-		"05:10:42",
+		"19/08/2021",
+		"21:11:47",
 		"text;;_RV_;;"+char(34)+"Look and Say "+char(34)+"+(n-1)+"+char(34)+" Time-msec: "+char(34)+"+difftime+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"func",
-		"24/07/2021",
-		"05:10:42",
+		"19/08/2021",
+		"21:11:47",
 		"name;;_RV_;;looksay;;_RV_;;parameters;;_RV_;;(n);;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"assignment",
-		"24/07/2021",
-		"05:10:42",
+		"19/08/2021",
+		"21:11:47",
 		"leftside;;_RV_;;j;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"assignment",
-		"24/07/2021",
-		"05:10:42",
+		"19/08/2021",
+		"21:11:47",
 		"leftside;;_RV_;;c;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"assignment",
-		"24/07/2021",
-		"05:10:42",
+		"19/08/2021",
+		"21:11:47",
 		"leftside;;_RV_;;o;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"forloop",
-		"24/07/2021",
-		"05:10:42",
+		"19/08/2021",
+		"21:11:47",
 		"start;;_RV_;;i = 1;;_RV_;;to;;_RV_;;len(n);;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"assignment",
-		"24/07/2021",
-		"05:10:42",
+		"19/08/2021",
+		"21:11:47",
 		"leftside;;_RV_;;c;;_RV_;;rightside;;_RV_;;substr(n,i,1);;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"assignment",
-		"24/07/2021",
-		"05:10:42",
+		"19/08/2021",
+		"21:11:47",
 		"leftside;;_RV_;;j;;_RV_;;rightside;;_RV_;;i+1;;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"whileloop",
-		"24/07/2021",
-		"05:10:42",
+		"19/08/2021",
+		"21:11:47",
 		"condition;;_RV_;;substr(n,j,1) = c;;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"assignment",
-		"24/07/2021",
-		"05:10:42",
+		"19/08/2021",
+		"21:11:47",
 		"leftside;;_RV_;;j;;_RV_;;rightside;;_RV_;;j+1;;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"assignment",
-		"24/07/2021",
-		"05:10:42",
+		"19/08/2021",
+		"21:11:47",
 		"leftside;;_RV_;;o;;_RV_;;rightside;;_RV_;;o+string(j-i)+c;;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"assignment",
-		"24/07/2021",
-		"05:10:42",
+		"19/08/2021",
+		"21:11:47",
 		"leftside;;_RV_;;i;;_RV_;;rightside;;_RV_;;j;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"return",
-		"24/07/2021",
-		"05:10:42",
+		"19/08/2021",
+		"21:11:47",
 		"value;;_RV_;;o;;_RV_;;"
 	]
 ]

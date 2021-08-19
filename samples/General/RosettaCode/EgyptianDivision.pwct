@@ -1074,176 +1074,176 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"24/07/2021",
-		"05:08:52",
+		"19/08/2021",
+		"21:09:58",
 		""
 	],
 	[
 		2,
 		1,
 		"load",
-		"24/07/2021",
-		"05:08:52",
+		"19/08/2021",
+		"21:09:58",
 		"file;;_RV_;;stdlib.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"assignment",
-		"24/07/2021",
-		"05:08:52",
+		"19/08/2021",
+		"21:09:58",
 		"leftside;;_RV_;;table;;_RV_;;rightside;;_RV_;;newlist(32,2);;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"assignment",
-		"24/07/2021",
-		"05:08:52",
+		"19/08/2021",
+		"21:09:58",
 		"leftside;;_RV_;;dividend;;_RV_;;rightside;;_RV_;;580;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"assignment",
-		"24/07/2021",
-		"05:08:52",
+		"19/08/2021",
+		"21:09:58",
 		"leftside;;_RV_;;divisor;;_RV_;;rightside;;_RV_;;34;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"assignment",
-		"24/07/2021",
-		"05:08:52",
+		"19/08/2021",
+		"21:09:58",
 		"leftside;;_RV_;;i;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"assignment",
-		"24/07/2021",
-		"05:08:52",
+		"19/08/2021",
+		"21:09:58",
 		"leftside;;_RV_;;table[i][1];;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"24/07/2021",
-		"05:08:52",
+		"19/08/2021",
+		"21:09:58",
 		"leftside;;_RV_;;table[i][2];;_RV_;;rightside;;_RV_;;divisor;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"whileloop",
-		"24/07/2021",
-		"05:08:52",
+		"19/08/2021",
+		"21:09:58",
 		"condition;;_RV_;;table[i][2] < dividend;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"24/07/2021",
-		"05:08:52",
+		"19/08/2021",
+		"21:09:58",
 		"leftside;;_RV_;;i;;_RV_;;rightside;;_RV_;;i+1;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"24/07/2021",
-		"05:08:52",
+		"19/08/2021",
+		"21:09:58",
 		"leftside;;_RV_;;table[i][1];;_RV_;;rightside;;_RV_;;table[i-1][1]*2;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"assignment",
-		"24/07/2021",
-		"05:08:52",
+		"19/08/2021",
+		"21:09:58",
 		"leftside;;_RV_;;table[i][2];;_RV_;;rightside;;_RV_;;table[i-1][2]*2;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"assignment",
-		"24/07/2021",
-		"05:08:52",
+		"19/08/2021",
+		"21:09:58",
 		"leftside;;_RV_;;i;;_RV_;;rightside;;_RV_;;i-1;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"assignment",
-		"24/07/2021",
-		"05:08:52",
+		"19/08/2021",
+		"21:09:58",
 		"leftside;;_RV_;;answer;;_RV_;;rightside;;_RV_;;table[i][1];;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"assignment",
-		"24/07/2021",
-		"05:08:52",
+		"19/08/2021",
+		"21:09:58",
 		"leftside;;_RV_;;accumulator;;_RV_;;rightside;;_RV_;;table[i][2];;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"whileloop",
-		"24/07/2021",
-		"05:08:52",
+		"19/08/2021",
+		"21:09:58",
 		"condition;;_RV_;;i > 1;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"assignment",
-		"24/07/2021",
-		"05:08:52",
+		"19/08/2021",
+		"21:09:58",
 		"leftside;;_RV_;;i;;_RV_;;rightside;;_RV_;;i-1;;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"ifstatement",
-		"24/07/2021",
-		"05:08:52",
+		"19/08/2021",
+		"21:09:58",
 		"condition;;_RV_;;table[i][2]+accumulator <= dividend;;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"assignment",
-		"24/07/2021",
-		"05:08:52",
+		"19/08/2021",
+		"21:09:58",
 		"leftside;;_RV_;;answer;;_RV_;;rightside;;_RV_;;answer+table[i][1];;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"assignment",
-		"24/07/2021",
-		"05:08:52",
+		"19/08/2021",
+		"21:09:58",
 		"leftside;;_RV_;;accumulator;;_RV_;;rightside;;_RV_;;accumulator+table[i][2];;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"print",
-		"24/07/2021",
-		"05:08:52",
+		"19/08/2021",
+		"21:09:58",
 		"text;;_RV_;;string(dividend)+"+char(34)+" divided by "+char(34)+"+string(divisor)+"+char(34)+" using egyptian division"+char(34)+"+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"print",
-		"24/07/2021",
-		"05:08:52",
+		"19/08/2021",
+		"21:09:58",
 		"text;;_RV_;;"+char(34)+" returns "+char(34)+"+string(answer)+"+char(34)+" mod(ulus) "+char(34)+"+string(dividend-accumulator);;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	]
 ]

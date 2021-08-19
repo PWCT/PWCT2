@@ -123,7 +123,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"# Copy aList to aList2"
+				"Copy aList to aList2"
 			],
 			[
 				"active",
@@ -151,7 +151,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"# Copy aList to aList2"
+				"Copy aList to aList2"
 			]
 		]
 	],
@@ -199,7 +199,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"# modify item number five"
+				"modify item number five"
 			],
 			[
 				"active",
@@ -227,7 +227,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"# modify item number five"
+				"modify item number five"
 			]
 		]
 	],
@@ -275,7 +275,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"# print other"
+				"print other"
 			],
 			[
 				"active",
@@ -303,7 +303,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"# print other"
+				"print other"
 			]
 		]
 	],
@@ -351,7 +351,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"# print three four five 100 200 300"
+				"print three four five 100 200 300"
 			],
 			[
 				"active",
@@ -379,7 +379,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"# print three four five 100 200 300"
+				"print three four five 100 200 300"
 			]
 		]
 	]
@@ -390,81 +390,81 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"24/07/2021",
-		"05:03:58",
+		"19/08/2021",
+		"21:05:15",
 		""
 	],
 	[
 		2,
 		1,
 		"assignment",
-		"24/07/2021",
-		"05:03:58",
+		"19/08/2021",
+		"21:05:15",
 		"leftside;;_RV_;;aList;;_RV_;;rightside;;_RV_;;["+char(34)+"one"+char(34)+","+char(34)+"two"+char(34)+",[3,4],[20,30],["+char(34)+"three"+char(34)+","+char(34)+"four"+char(34)+","+char(34)+"five"+char(34)+",[100,200,300]]];;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"assignment",
-		"24/07/2021",
-		"05:03:58",
+		"19/08/2021",
+		"21:05:15",
 		"leftside;;_RV_;;aList2;;_RV_;;rightside;;_RV_;;aList;;_RV_;;"
 	],
 	[
 		4,
 		1,
-		"",
-		"24/07/2021",
-		"05:03:58",
-		""
+		"comment_text",
+		"19/08/2021",
+		"21:05:15",
+		"value;;_RV_;;Copy aList to aList2;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"assignment",
-		"24/07/2021",
-		"05:03:58",
+		"19/08/2021",
+		"21:05:15",
 		"leftside;;_RV_;;aList2[5];;_RV_;;rightside;;_RV_;;"+char(34)+"other"+char(34)+";;_RV_;;"
 	],
 	[
 		6,
 		1,
-		"",
-		"24/07/2021",
-		"05:03:58",
-		""
+		"comment_text",
+		"19/08/2021",
+		"21:05:15",
+		"value;;_RV_;;modify item number five;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"print",
-		"24/07/2021",
-		"05:03:58",
+		"19/08/2021",
+		"21:05:15",
 		"text;;_RV_;;aList2[5]+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
-		"",
-		"24/07/2021",
-		"05:03:58",
-		""
+		"comment_text",
+		"19/08/2021",
+		"21:05:15",
+		"value;;_RV_;;print other;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"print",
-		"24/07/2021",
-		"05:03:58",
+		"19/08/2021",
+		"21:05:15",
 		"text;;_RV_;;aList[5];;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		10,
 		1,
-		"",
-		"24/07/2021",
-		"05:03:58",
-		""
+		"comment_text",
+		"19/08/2021",
+		"21:05:15",
+		"value;;_RV_;;print three four five 100 200 300;;_RV_;;"
 	]
 ]
 
