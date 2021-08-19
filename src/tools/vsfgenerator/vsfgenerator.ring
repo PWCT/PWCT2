@@ -1094,3 +1094,24 @@ class VSFGenerator
 			aParents + nStepID2
 			SetStepsParent()
 			return nStepID
+
+
+	/*
+			Comments - Add Text Component 
+	*/
+
+	func AddCommentAddText cValue
+		cValue = Trim(cValue)
+		# Use the Interaction Page
+			nIID = UseComponent("comment_text",[
+				:value 		= cValue
+			])
+
+		# Generate the Step and the Code
+			nStepNumber = 1
+			nStepID = AddGeneratedStep(nParentID,
+				cValue ,
+			nIID,nStepNumber,C_STEPTYPE_COMMENT)
+			oModel.SaveStepCode(nStepID, "" )
+			return nStepID
+
