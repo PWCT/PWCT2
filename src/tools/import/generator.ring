@@ -126,7 +126,7 @@ class Generator
 						elseif left(cComment,2) = "//" 
 							cComment = substr(cComment,3)
 						}
-						AddStep(cComment)
+						AddCommentAddText(cComment)
 					}
 				case :OpenExpressionCallFunction 
 					AddOpenExpressionCallFunction(aCommand[:Expression])
