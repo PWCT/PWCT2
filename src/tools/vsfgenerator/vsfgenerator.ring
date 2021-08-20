@@ -1112,6 +1112,16 @@ class VSFGenerator
 			nStepID = AddGeneratedStep(nParentID,
 				cValue ,
 			nIID,nStepNumber,C_STEPTYPE_COMMENT)
-			oModel.SaveStepCode(nStepID, "" )
+
+			aLines = str2List(cValue)
+			cCode  = ""
+	
+			if len(aLines) > 0 {
+				for cLine in aLines {
+					cCode += "# " + cLine + WindowsNL()
+				}
+			}
+	
+			oModel.SaveStepCode(nStepID, cCode )
 			return nStepID
 
