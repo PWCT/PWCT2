@@ -55,7 +55,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# *** step 1
+"
 			],
 			[
 				"interactionid",
@@ -93,7 +94,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# number to words (units:)
+"
 			],
 			[
 				"interactionid",
@@ -207,7 +209,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# input as string (the number can be any length)
+"
 			],
 			[
 				"interactionid",
@@ -283,7 +286,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# for control only
+"
 			],
 			[
 				"interactionid",
@@ -321,7 +325,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# test input
+"
 			],
 			[
 				"interactionid",
@@ -473,7 +478,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# message
+"
 			],
 			[
 				"interactionid",
@@ -625,7 +631,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# ones-element nr: 12 output: twelve
+"
 			],
 			[
 				"interactionid",
@@ -694,120 +701,120 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"19/08/2021",
-		"21:09:23",
+		"20/08/2021",
+		"15:00:57",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:09:23",
+		"20/08/2021",
+		"15:00:57",
 		"value;;_RV_;;*** step 1;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:09:23",
+		"20/08/2021",
+		"15:00:57",
 		"value;;_RV_;;number to words (units:);;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:09:23",
+		"20/08/2021",
+		"15:00:57",
 		"leftside;;_RV_;;ones;;_RV_;;rightside;;_RV_;;["+char(34)+"one"+char(34)+","+char(34)+"two"+char(34)+","+char(34)+"three"+char(34)+","+char(34)+"four"+char(34)+","+char(34)+"five"+char(34)+","+char(34)+"six"+char(34)+","+char(34)+"seven"+char(34)+","+char(34)+"eight"+char(34)+","+char(34)+"nine"+char(34)+","+char(34)+"ten"+char(34)+","+char(34)+"eleven"+char(34)+","+char(34)+"twelve"+char(34)+","+char(34)+"thirteen"+char(34)+","+char(34)+"fourteen"+char(34)+","+char(34)+"fifteen"+char(34)+","+char(34)+"sixteen"+char(34)+","+char(34)+"seventeen"+char(34)+","+char(34)+"eighteen"+char(34)+","+char(34)+"nineteen"+char(34)+"];;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:09:23",
+		"20/08/2021",
+		"15:00:57",
 		"leftside;;_RV_;;n;;_RV_;;rightside;;_RV_;;"+char(34)+"12"+char(34)+";;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:09:23",
+		"20/08/2021",
+		"15:00:57",
 		"value;;_RV_;;input as string (the number can be any length);;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"print",
-		"19/08/2021",
-		"21:09:23",
+		"20/08/2021",
+		"15:00:57",
 		"text;;_RV_;;"+char(34)+"input: "+char(34)+"+n;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:09:23",
+		"20/08/2021",
+		"15:00:57",
 		"value;;_RV_;;for control only;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:09:23",
+		"20/08/2021",
+		"15:00:57",
 		"value;;_RV_;;test input;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"ifstatement",
-		"19/08/2021",
-		"21:09:23",
+		"20/08/2021",
+		"15:00:57",
 		"condition;;_RV_;;number(n) > 19;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"print",
-		"19/08/2021",
-		"21:09:23",
+		"20/08/2021",
+		"15:00:57",
 		"text;;_RV_;;Incorrect input!;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:09:23",
+		"20/08/2021",
+		"15:00:57",
 		"value;;_RV_;;message;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"else",
-		"19/08/2021",
-		"21:09:23",
+		"20/08/2021",
+		"15:00:57",
 		""
 	],
 	[
 		14,
 		1,
 		"print",
-		"19/08/2021",
-		"21:09:23",
+		"20/08/2021",
+		"15:00:57",
 		"text;;_RV_;;ones[number(n)];;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:09:23",
+		"20/08/2021",
+		"15:00:57",
 		"value;;_RV_;;ones-element nr: 12 output: twelve;;_RV_;;"
 	]
 ]

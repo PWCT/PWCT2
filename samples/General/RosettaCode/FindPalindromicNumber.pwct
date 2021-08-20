@@ -55,7 +55,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Project : Find palindromic number
+"
 			],
 			[
 				"interactionid",
@@ -93,7 +94,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Date    : 2017/09/14
+"
 			],
 			[
 				"interactionid",
@@ -131,7 +133,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Author  : Gal Zsolt (~ CalmoSoft ~)
+"
 			],
 			[
 				"interactionid",
@@ -169,7 +172,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Email   : <calmosoft@gmail.com>
+"
 			],
 			[
 				"interactionid",
@@ -2062,288 +2066,288 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"19/08/2021",
-		"21:10:04",
+		"20/08/2021",
+		"15:01:38",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:05",
+		"20/08/2021",
+		"15:01:38",
 		"value;;_RV_;;Project : Find palindromic number;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:05",
+		"20/08/2021",
+		"15:01:38",
 		"value;;_RV_;;Date    : 2017/09/14;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:05",
+		"20/08/2021",
+		"15:01:38",
 		"value;;_RV_;;Author  : Gal Zsolt (~ CalmoSoft ~);;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:05",
+		"20/08/2021",
+		"15:01:38",
 		"value;;_RV_;;Email   : <calmosoft@gmail.com>;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:10:05",
+		"20/08/2021",
+		"15:01:38",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;decimals;;_RV_;;parameters;;_RV_;;0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"forloop",
-		"19/08/2021",
-		"21:10:05",
+		"20/08/2021",
+		"15:01:38",
 		"start;;_RV_;;n = 1;;_RV_;;to;;_RV_;;7000;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:05",
+		"20/08/2021",
+		"15:01:38",
 		"leftside;;_RV_;;flag1;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:05",
+		"20/08/2021",
+		"15:01:38",
 		"leftside;;_RV_;;flag2;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:05",
+		"20/08/2021",
+		"15:01:38",
 		"leftside;;_RV_;;strbin;;_RV_;;rightside;;_RV_;;decimaltobase(n,2);;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"ifstatement",
-		"19/08/2021",
-		"21:10:05",
+		"20/08/2021",
+		"15:01:38",
 		"condition;;_RV_;;palindrome(strbin) = 1;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:05",
+		"20/08/2021",
+		"15:01:38",
 		"leftside;;_RV_;;flag1;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:05",
+		"20/08/2021",
+		"15:01:38",
 		"leftside;;_RV_;;strter;;_RV_;;rightside;;_RV_;;decimaltobase(n,3);;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"ifstatement",
-		"19/08/2021",
-		"21:10:05",
+		"20/08/2021",
+		"15:01:38",
 		"condition;;_RV_;;palindrome(strter) = 1;;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:05",
+		"20/08/2021",
+		"15:01:38",
 		"leftside;;_RV_;;flag2;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"ifstatement",
-		"19/08/2021",
-		"21:10:05",
+		"20/08/2021",
+		"15:01:38",
 		"condition;;_RV_;;flag1 = 1 AND flag2 = 1;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"print",
-		"19/08/2021",
-		"21:10:05",
+		"20/08/2021",
+		"15:01:38",
 		"text;;_RV_;;"+char(34)+"Decimal : "+char(34)+"+n+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"print",
-		"19/08/2021",
-		"21:10:05",
+		"20/08/2021",
+		"15:01:38",
 		"text;;_RV_;;"+char(34)+"Binary : "+char(34)+"+strbin+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"print",
-		"19/08/2021",
-		"21:10:05",
+		"20/08/2021",
+		"15:01:38",
 		"text;;_RV_;;"+char(34)+"Ternary : "+char(34)+"+strter+nl+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"print",
-		"19/08/2021",
-		"21:10:05",
+		"20/08/2021",
+		"15:01:38",
 		"text;;_RV_;;"+char(34)+"OK"+char(34)+"+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"func",
-		"19/08/2021",
-		"21:10:05",
+		"20/08/2021",
+		"15:01:38",
 		"name;;_RV_;;decimaltobase;;_RV_;;parameters;;_RV_;;(nr,base);;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:05",
+		"20/08/2021",
+		"15:01:38",
 		"leftside;;_RV_;;binary;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:05",
+		"20/08/2021",
+		"15:01:38",
 		"leftside;;_RV_;;i;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"whileloop",
-		"19/08/2021",
-		"21:10:05",
+		"20/08/2021",
+		"15:01:38",
 		"condition;;_RV_;;(nr! = 0);;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:05",
+		"20/08/2021",
+		"15:01:38",
 		"leftside;;_RV_;;remainder;;_RV_;;rightside;;_RV_;;nr%base;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:05",
+		"20/08/2021",
+		"15:01:38",
 		"leftside;;_RV_;;nr;;_RV_;;rightside;;_RV_;;floor(nr/base);;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:05",
+		"20/08/2021",
+		"15:01:38",
 		"leftside;;_RV_;;binary;;_RV_;;rightside;;_RV_;;binary+(remainder*i);;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:05",
+		"20/08/2021",
+		"15:01:38",
 		"leftside;;_RV_;;i;;_RV_;;rightside;;_RV_;;i*10;;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"return",
-		"19/08/2021",
-		"21:10:05",
+		"20/08/2021",
+		"15:01:38",
 		"value;;_RV_;;string(binary);;_RV_;;"
 	],
 	[
 		30,
 		1,
 		"func",
-		"19/08/2021",
-		"21:10:05",
+		"20/08/2021",
+		"15:01:38",
 		"name;;_RV_;;palindrome;;_RV_;;parameters;;_RV_;;aString;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:05",
+		"20/08/2021",
+		"15:01:38",
 		"leftside;;_RV_;;bString;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		32,
 		1,
 		"forloop",
-		"19/08/2021",
-		"21:10:05",
+		"20/08/2021",
+		"15:01:38",
 		"start;;_RV_;;i = len(aString);;_RV_;;to;;_RV_;;1;;_RV_;;step;;_RV_;;-1;;_RV_;;"
 	],
 	[
 		33,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:05",
+		"20/08/2021",
+		"15:01:38",
 		"leftside;;_RV_;;bString;;_RV_;;rightside;;_RV_;;bString+aString[i];;_RV_;;"
 	],
 	[
 		34,
 		1,
 		"ifstatement",
-		"19/08/2021",
-		"21:10:05",
+		"20/08/2021",
+		"15:01:38",
 		"condition;;_RV_;;aString = bString;;_RV_;;"
 	],
 	[
 		35,
 		1,
 		"return",
-		"19/08/2021",
-		"21:10:05",
+		"20/08/2021",
+		"15:01:38",
 		"value;;_RV_;;1;;_RV_;;"
 	],
 	[
 		36,
 		1,
 		"return",
-		"19/08/2021",
-		"21:10:05",
+		"20/08/2021",
+		"15:01:38",
 		"value;;_RV_;;0;;_RV_;;"
 	]
 ]

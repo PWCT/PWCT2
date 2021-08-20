@@ -55,7 +55,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Project : Map range
+"
 			],
 			[
 				"interactionid",
@@ -93,7 +94,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Date    : 2017/09/20
+"
 			],
 			[
 				"interactionid",
@@ -131,7 +133,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Author  : Gal Zsolt (~ CalmoSoft ~)
+"
 			],
 			[
 				"interactionid",
@@ -169,7 +172,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Email   : <calmosoft@gmail.com>
+"
 			],
 			[
 				"interactionid",
@@ -656,104 +660,104 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"19/08/2021",
-		"21:10:15",
+		"20/08/2021",
+		"15:01:49",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:15",
+		"20/08/2021",
+		"15:01:49",
 		"value;;_RV_;;Project : Map range;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:15",
+		"20/08/2021",
+		"15:01:49",
 		"value;;_RV_;;Date    : 2017/09/20;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:15",
+		"20/08/2021",
+		"15:01:49",
 		"value;;_RV_;;Author  : Gal Zsolt (~ CalmoSoft ~);;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:15",
+		"20/08/2021",
+		"15:01:49",
 		"value;;_RV_;;Email   : <calmosoft@gmail.com>;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:15",
+		"20/08/2021",
+		"15:01:49",
 		"leftside;;_RV_;;al;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:15",
+		"20/08/2021",
+		"15:01:49",
 		"leftside;;_RV_;;ah;;_RV_;;rightside;;_RV_;;10;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:15",
+		"20/08/2021",
+		"15:01:49",
 		"leftside;;_RV_;;bl;;_RV_;;rightside;;_RV_;;-1;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:15",
+		"20/08/2021",
+		"15:01:49",
 		"leftside;;_RV_;;bh;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"forloop",
-		"19/08/2021",
-		"21:10:15",
+		"20/08/2021",
+		"15:01:49",
 		"start;;_RV_;;n = 0;;_RV_;;to;;_RV_;;10;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"print",
-		"19/08/2021",
-		"21:10:15",
+		"20/08/2021",
+		"15:01:49",
 		"text;;_RV_;;"+char(34)+" maps to "+char(34)+"+maprange(al,bl,n)+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"func",
-		"19/08/2021",
-		"21:10:15",
+		"20/08/2021",
+		"15:01:49",
 		"name;;_RV_;;maprange;;_RV_;;parameters;;_RV_;;(al,bl,s);;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"return",
-		"19/08/2021",
-		"21:10:15",
+		"20/08/2021",
+		"15:01:49",
 		"value;;_RV_;;bl+(s-al)*(bh-bl)/(ah-al);;_RV_;;"
 	]
 ]

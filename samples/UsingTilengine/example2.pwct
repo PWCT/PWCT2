@@ -55,7 +55,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# ===============================================================#
+"
 			],
 			[
 				"interactionid",
@@ -93,7 +94,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Based on sample from : https://github.com/megamarc/Tilengine  #
+"
 			],
 			[
 				"interactionid",
@@ -131,7 +133,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# ===============================================================#
+"
 			],
 			[
 				"interactionid",
@@ -321,7 +324,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# /* setup engine */
+"
 			],
 			[
 				"interactionid",
@@ -397,7 +401,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# /* load layer */
+"
 			],
 			[
 				"interactionid",
@@ -473,7 +478,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# /* setup the layer */
+"
 			],
 			[
 				"interactionid",
@@ -587,7 +593,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# /* main loop */
+"
 			],
 			[
 				"interactionid",
@@ -663,7 +670,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# /* scroll the layer, one pixel per frame */
+"
 			],
 			[
 				"interactionid",
@@ -815,7 +823,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# /* render to the window */
+"
 			],
 			[
 				"interactionid",
@@ -967,7 +976,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# /* release resources */
+"
 			],
 			[
 				"interactionid",
@@ -1074,208 +1084,208 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"19/08/2021",
-		"20:58:20",
+		"20/08/2021",
+		"14:49:17",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"20:58:20",
+		"20/08/2021",
+		"14:49:17",
 		"value;;_RV_;;===============================================================#;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"20:58:20",
+		"20/08/2021",
+		"14:49:17",
 		"value;;_RV_;;Based on sample from : https://github.com/megamarc/Tilengine  #;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"20:58:20",
+		"20/08/2021",
+		"14:49:17",
 		"value;;_RV_;;===============================================================#;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"load",
-		"19/08/2021",
-		"20:58:20",
+		"20/08/2021",
+		"14:49:17",
 		"file;;_RV_;;tilengine.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"assignment",
-		"19/08/2021",
-		"20:58:20",
+		"20/08/2021",
+		"14:49:17",
 		"leftside;;_RV_;;WIDTH;;_RV_;;rightside;;_RV_;;400;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"assignment",
-		"19/08/2021",
-		"20:58:20",
+		"20/08/2021",
+		"14:49:17",
 		"leftside;;_RV_;;HEIGHT;;_RV_;;rightside;;_RV_;;240;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"19/08/2021",
-		"20:58:20",
+		"20/08/2021",
+		"14:49:17",
 		"leftside;;_RV_;;frame;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"20:58:20",
+		"20/08/2021",
+		"14:49:17",
 		"value;;_RV_;;/* setup engine */;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"20:58:20",
+		"20/08/2021",
+		"14:49:17",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;TLN_Init;;_RV_;;parameters;;_RV_;;WIDTH,HEIGHT,1,0,0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"20:58:20",
+		"20/08/2021",
+		"14:49:17",
 		"value;;_RV_;;/* load layer */;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"assignment",
-		"19/08/2021",
-		"20:58:20",
+		"20/08/2021",
+		"14:49:17",
 		"leftside;;_RV_;;tilemap;;_RV_;;rightside;;_RV_;;TLN_LoadTilemap("+char(34)+"assets/sonic/Sonic_md_fg1.tmx"+char(34)+",NULL);;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"20:58:20",
+		"20/08/2021",
+		"14:49:17",
 		"value;;_RV_;;/* setup the layer */;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"20:58:20",
+		"20/08/2021",
+		"14:49:17",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;TLN_SetLayer;;_RV_;;parameters;;_RV_;;0,NULL,tilemap;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"20:58:20",
+		"20/08/2021",
+		"14:49:17",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;TLN_SetBGColor;;_RV_;;parameters;;_RV_;;32,32,128;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"20:58:20",
+		"20/08/2021",
+		"14:49:17",
 		"value;;_RV_;;/* main loop */;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"20:58:20",
+		"20/08/2021",
+		"14:49:17",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;TLN_CreateWindow;;_RV_;;parameters;;_RV_;;NULL,0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"20:58:20",
+		"20/08/2021",
+		"14:49:17",
 		"value;;_RV_;;/* scroll the layer, one pixel per frame */;;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"whileloop",
-		"19/08/2021",
-		"20:58:20",
+		"20/08/2021",
+		"14:49:17",
 		"condition;;_RV_;;TLN_ProcessWindow();;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"20:58:20",
+		"20/08/2021",
+		"14:49:17",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;TLN_SetLayerPosition;;_RV_;;parameters;;_RV_;;0,frame,0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"20:58:20",
+		"20/08/2021",
+		"14:49:17",
 		"value;;_RV_;;/* render to the window */;;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"20:58:20",
+		"20/08/2021",
+		"14:49:17",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;TLN_DrawFrame;;_RV_;;parameters;;_RV_;;0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"freetyping",
-		"19/08/2021",
-		"20:58:20",
+		"20/08/2021",
+		"14:49:17",
 		"value;;_RV_;;frame++;;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"20:58:20",
+		"20/08/2021",
+		"14:49:17",
 		"value;;_RV_;;/* release resources */;;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"20:58:20",
+		"20/08/2021",
+		"14:49:17",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;TLN_DeleteTilemap;;_RV_;;parameters;;_RV_;;tilemap;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"20:58:20",
+		"20/08/2021",
+		"14:49:17",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;TLN_Deinit;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	]
 ]

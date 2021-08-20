@@ -55,7 +55,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Sample ported to Ring
+"
 			],
 			[
 				"interactionid",
@@ -93,7 +94,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Based on original sample from : https://github.com/andlabs/libui
+"
 			],
 			[
 				"interactionid",
@@ -1499,7 +1501,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# top right corner
+"
 			],
 			[
 				"interactionid",
@@ -1575,7 +1578,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# bottom right corner
+"
 			],
 			[
 				"interactionid",
@@ -1651,7 +1655,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# bottom left corner
+"
 			],
 			[
 				"interactionid",
@@ -1727,7 +1732,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# top left corner
+"
 			],
 			[
 				"interactionid",
@@ -2290,448 +2296,448 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"value;;_RV_;;Sample ported to Ring;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"value;;_RV_;;Based on original sample from : https://github.com/andlabs/libui;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"load",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"file;;_RV_;;libui.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"leftside;;_RV_;;oWindow;;_RV_;;rightside;;_RV_;;uiNewWindow("+char(34)+"Drawing Sample"+char(34)+",260,300,True);;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;uiWindowOnClosing;;_RV_;;parameters;;_RV_;;oWindow,"+char(34)+"closeApp()"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"leftside;;_RV_;;oAreaHandler;;_RV_;;rightside;;_RV_;;uiNewAreaHandler("+char(34)+"draw()"+char(34)+","+char(34)+""+char(34)+","+char(34)+""+char(34)+","+char(34)+""+char(34)+","+char(34)+""+char(34)+");;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"leftside;;_RV_;;area;;_RV_;;rightside;;_RV_;;uiNewArea(oAreaHandler);;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"leftside;;_RV_;;btnClose;;_RV_;;rightside;;_RV_;;uiNewButton("+char(34)+"Close Application"+char(34)+");;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;uiButtonOnClicked;;_RV_;;parameters;;_RV_;;btnClose,"+char(34)+"closeApp()"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"leftside;;_RV_;;hbox;;_RV_;;rightside;;_RV_;;uiNewVerticalBox();;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;uiBoxSetPadded;;_RV_;;parameters;;_RV_;;hbox,1;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;uiBoxAppend;;_RV_;;parameters;;_RV_;;hbox,btnClose,0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;uiBoxAppend;;_RV_;;parameters;;_RV_;;hbox,area,1;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;uiWindowSetChild;;_RV_;;parameters;;_RV_;;oWindow,hbox;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;uiControlShow;;_RV_;;parameters;;_RV_;;oWindow;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;uiMain;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"func",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"name;;_RV_;;draw;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"leftside;;_RV_;;nWidth;;_RV_;;rightside;;_RV_;;uiEventAreaWidth();;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"leftside;;_RV_;;nHeight;;_RV_;;rightside;;_RV_;;uiEventAreaHeight();;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"leftside;;_RV_;;source;;_RV_;;rightside;;_RV_;;new_uiDrawBrush();;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"leftside;;_RV_;;sp;;_RV_;;rightside;;_RV_;;new_uiDrawStrokeParams();;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"leftside;;_RV_;;x;;_RV_;;rightside;;_RV_;;25.6;;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"leftside;;_RV_;;y;;_RV_;;rightside;;_RV_;;25.6;;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"leftside;;_RV_;;width;;_RV_;;rightside;;_RV_;;204.8;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"leftside;;_RV_;;height;;_RV_;;rightside;;_RV_;;204.8;;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"leftside;;_RV_;;aspect;;_RV_;;rightside;;_RV_;;1.0;;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"leftside;;_RV_;;corner_radius;;_RV_;;rightside;;_RV_;;height;;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"leftside;;_RV_;;radius;;_RV_;;rightside;;_RV_;;corner_radius/aspect;;_RV_;;"
 	],
 	[
 		30,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"leftside;;_RV_;;degrees;;_RV_;;rightside;;_RV_;;uiPi/180.0;;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"leftside;;_RV_;;source;;_RV_;;rightside;;_RV_;;uiNewSolidBrush(colorBlue);;_RV_;;"
 	],
 	[
 		32,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;set_uiDrawStrokeParams_Cap;;_RV_;;parameters;;_RV_;;sp,uiDrawLineCapFlat;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		33,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;set_uiDrawStrokeParams_Join;;_RV_;;parameters;;_RV_;;sp,uiDrawLineJoinMiter;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		34,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;set_uiDrawStrokeParams_MiterLimit;;_RV_;;parameters;;_RV_;;sp,uiDrawDefaultMiterLimit;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		35,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;set_uiDrawStrokeParams_NumDashes;;_RV_;;parameters;;_RV_;;sp,0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		36,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;set_uiDrawStrokeParams_DashPhase;;_RV_;;parameters;;_RV_;;sp,0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		37,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;set_uiDrawStrokeParams_Thickness;;_RV_;;parameters;;_RV_;;sp,30;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		38,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"leftside;;_RV_;;path;;_RV_;;rightside;;_RV_;;uiDrawNewPath(uiDrawFillModeWinding);;_RV_;;"
 	],
 	[
 		39,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"value;;_RV_;;top right corner;;_RV_;;"
 	],
 	[
 		40,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;uiDrawPathNewFigureWithArc;;_RV_;;parameters;;_RV_;;path,x+width-radius,y+radius,radius,-90*degrees,uiPi/2,0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		41,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"value;;_RV_;;bottom right corner;;_RV_;;"
 	],
 	[
 		42,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;uiDrawPathArcTo;;_RV_;;parameters;;_RV_;;path,x+width-radius,y+height-radius,radius,0*degrees,uiPi/2,0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		43,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"value;;_RV_;;bottom left corner;;_RV_;;"
 	],
 	[
 		44,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;uiDrawPathArcTo;;_RV_;;parameters;;_RV_;;path,x+radius,y+height-radius,radius,90*degrees,uiPi/2,0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		45,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"value;;_RV_;;top left corner;;_RV_;;"
 	],
 	[
 		46,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;uiDrawPathArcTo;;_RV_;;parameters;;_RV_;;path,x+radius,y+radius,radius,180*degrees,uiPi/2,0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		47,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;uiDrawPathCloseFigure;;_RV_;;parameters;;_RV_;;path;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		48,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;uiDrawPathEnd;;_RV_;;parameters;;_RV_;;path;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		49,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;uiCrSourceRGBA;;_RV_;;parameters;;_RV_;;source,0.5,0.5,1,1;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		50,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;uiDrawFill;;_RV_;;parameters;;_RV_;;uiEventContext(),path,source;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		51,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:08:38",
+		"20/08/2021",
+		"15:00:14",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;uiCrSourceRGBA;;_RV_;;parameters;;_RV_;;source,0.5,0,0,0.5;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		52,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:08:39",
+		"20/08/2021",
+		"15:00:14",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;set_uiDrawStrokeParams_Thickness;;_RV_;;parameters;;_RV_;;sp,10;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		53,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:08:39",
+		"20/08/2021",
+		"15:00:14",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;uiDrawStroke;;_RV_;;parameters;;_RV_;;uiEventContext(),path,source,sp;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		54,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:08:39",
+		"20/08/2021",
+		"15:00:14",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;uiDrawFreePath;;_RV_;;parameters;;_RV_;;path;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		55,
 		1,
 		"func",
-		"19/08/2021",
-		"21:08:39",
+		"20/08/2021",
+		"15:00:14",
 		"name;;_RV_;;closeApp;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		56,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:08:39",
+		"20/08/2021",
+		"15:00:14",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;uiQuit;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	]
 ]

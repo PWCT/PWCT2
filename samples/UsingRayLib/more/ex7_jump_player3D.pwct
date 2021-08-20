@@ -55,7 +55,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# --------------------------------------------------------------
+"
 			],
 			[
 				"interactionid",
@@ -93,7 +94,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# jump_player_3D
+"
 			],
 			[
 				"interactionid",
@@ -131,7 +133,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# 	Author : Azzeddine Remmal
+"
 			],
 			[
 				"interactionid",
@@ -169,7 +172,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# 	Email : lemsantah.2013@gmail.com
+"
 			],
 			[
 				"interactionid",
@@ -207,7 +211,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# 02-03-2021
+"
 			],
 			[
 				"interactionid",
@@ -245,7 +250,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# --------------------------------------------------------------
+"
 			],
 			[
 				"interactionid",
@@ -1157,7 +1163,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Update
+"
 			],
 			[
 				"interactionid",
@@ -2411,7 +2418,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Draw
+"
 			],
 			[
 				"interactionid",
@@ -2829,7 +2837,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# De-Initialization
+"
 			],
 			[
 				"interactionid",
@@ -2981,7 +2990,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# our player struct
+"
 			],
 			[
 				"interactionid",
@@ -3506,568 +3516,568 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:16",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:16",
 		"value;;_RV_;;--------------------------------------------------------------;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:16",
 		"value;;_RV_;;jump_player_3D;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:16",
 		"value;;_RV_;;	Author : Azzeddine Remmal;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:16",
 		"value;;_RV_;;	Email : lemsantah.2013@gmail.com;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:16",
 		"value;;_RV_;;02-03-2021;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:16",
 		"value;;_RV_;;--------------------------------------------------------------;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"load",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:16",
 		"file;;_RV_;;raylib.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"func",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:16",
 		"name;;_RV_;;main;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:16",
 		"leftside;;_RV_;;screenWidth;;_RV_;;rightside;;_RV_;;800;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:16",
 		"leftside;;_RV_;;screenHeight;;_RV_;;rightside;;_RV_;;500;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;InitWindow;;_RV_;;parameters;;_RV_;;screenWidth,screenHeight,"+char(34)+"raylib jump_player_3D."+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"newobj",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:16",
 		"value;;_RV_;;myplayer;;_RV_;;value2;;_RV_;;player;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"assignment",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:16",
 		"leftside;;_RV_;;checked;;_RV_;;rightside;;_RV_;;GenImageChecked(2,2,1,1,green,GRAY);;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"assignment",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:16",
 		"leftside;;_RV_;;texture;;_RV_;;rightside;;_RV_;;LoadTextureFromImage(checked);;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadImage;;_RV_;;parameters;;_RV_;;checked;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"assignment",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:16",
 		"leftside;;_RV_;;model;;_RV_;;rightside;;_RV_;;LoadModelFromMesh(GenMeshCube(20.0,0.2,20.0));;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetModelMaterialTexture;;_RV_;;parameters;;_RV_;;model,0,MAP_DIFFUSE,texture;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"assignment",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:16",
 		"leftside;;_RV_;;myplayer.model;;_RV_;;rightside;;_RV_;;LoadModelFromMesh(GenMeshCube(1.0,1.0,1.0));;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetModelMaterialTexture;;_RV_;;parameters;;_RV_;;myplayer.model,0,MAP_DIFFUSE,texture;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"assignment",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:16",
 		"leftside;;_RV_;;myplayer.position;;_RV_;;rightside;;_RV_;;Vector3(5.0,1,5.0);;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"assignment",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:16",
 		"leftside;;_RV_;;myplayer.canjump;;_RV_;;rightside;;_RV_;;true;;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"assignment",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:16",
 		"leftside;;_RV_;;myplayer.size;;_RV_;;rightside;;_RV_;;Vector3(1.0,1.0,1.0);;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"assignment",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:16",
 		"leftside;;_RV_;;myplayer.jumpforce;;_RV_;;rightside;;_RV_;;0.0;;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"assignment",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:16",
 		"leftside;;_RV_;;position;;_RV_;;rightside;;_RV_;;Vector3(1.0,0.0,1.0);;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"assignment",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:16",
 		"leftside;;_RV_;;ground;;_RV_;;rightside;;_RV_;;Vector3(0,0.6,0);;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"assignment",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:16",
 		"leftside;;_RV_;;camera;;_RV_;;rightside;;_RV_;;Camera3D(0.0,5.0,30.0,20.0,6.0,0.0,0.0,1.0,0.0,50.0,CAMERA_PERSPECTIVE);;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetCameraMode;;_RV_;;parameters;;_RV_;;camera,CAMERA_THIRD_PERSON;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetTargetFPS;;_RV_;;parameters;;_RV_;;30;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		30,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:16",
 		"value;;_RV_;;Update;;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"whileloop",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:16",
 		"condition;;_RV_;;!WindowShouldClose();;_RV_;;"
 	],
 	[
 		32,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UpdateCamera;;_RV_;;parameters;;_RV_;;camera;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		33,
 		1,
 		"ifstatement",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"condition;;_RV_;;IsKeyDown(KEY_SPACE) AND myplayer.canjump;;_RV_;;"
 	],
 	[
 		34,
 		1,
 		"assignment",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"leftside;;_RV_;;myplayer.canjump;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		35,
 		1,
 		"assignment",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"leftside;;_RV_;;myplayer.jumpforce;;_RV_;;rightside;;_RV_;;2;;_RV_;;"
 	],
 	[
 		36,
 		1,
 		"ifstatement",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"condition;;_RV_;;myplayer.canjump = false;;_RV_;;"
 	],
 	[
 		37,
 		1,
 		"freetyping",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"value;;_RV_;;myplayer.position.y += myplayer.jumpforce;;_RV_;;"
 	],
 	[
 		38,
 		1,
 		"ifstatement",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"condition;;_RV_;;myplayer.position.y < ground.y;;_RV_;;"
 	],
 	[
 		39,
 		1,
 		"assignment",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"leftside;;_RV_;;myplayer.position.y;;_RV_;;rightside;;_RV_;;ground.y;;_RV_;;"
 	],
 	[
 		40,
 		1,
 		"assignment",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"leftside;;_RV_;;myplayer.canjump;;_RV_;;rightside;;_RV_;;true;;_RV_;;"
 	],
 	[
 		41,
 		1,
 		"freetyping",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"value;;_RV_;;myplayer.jumpforce -= 0.2;;_RV_;;"
 	],
 	[
 		42,
 		1,
 		"assignment",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"leftside;;_RV_;;speed;;_RV_;;rightside;;_RV_;;0.5;;_RV_;;"
 	],
 	[
 		43,
 		1,
 		"ifstatement",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"condition;;_RV_;;IsKeyDown(KEY_DOWN);;_RV_;;"
 	],
 	[
 		44,
 		1,
 		"freetyping",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"value;;_RV_;;myplayer.position.z += speed;;_RV_;;"
 	],
 	[
 		45,
 		1,
 		"elseif",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"condition;;_RV_;;IsKeyDown(KEY_UP);;_RV_;;"
 	],
 	[
 		46,
 		1,
 		"freetyping",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"value;;_RV_;;myplayer.position.z -= speed;;_RV_;;"
 	],
 	[
 		47,
 		1,
 		"elseif",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"condition;;_RV_;;IsKeyDown(KEY_RIGHT);;_RV_;;"
 	],
 	[
 		48,
 		1,
 		"freetyping",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"value;;_RV_;;myplayer.position.x += speed;;_RV_;;"
 	],
 	[
 		49,
 		1,
 		"elseif",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"condition;;_RV_;;IsKeyDown(KEY_LEFT);;_RV_;;"
 	],
 	[
 		50,
 		1,
 		"freetyping",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"value;;_RV_;;myplayer.position.x -= speed;;_RV_;;"
 	],
 	[
 		51,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"value;;_RV_;;Draw;;_RV_;;"
 	],
 	[
 		52,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		53,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;ClearBackground;;_RV_;;parameters;;_RV_;;RAYWHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		54,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginMode3D;;_RV_;;parameters;;_RV_;;camera;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		55,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawModel;;_RV_;;parameters;;_RV_;;model,position,1.0,WHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		56,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawModel;;_RV_;;parameters;;_RV_;;myplayer.model,myplayer.position,1.0,RED;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		57,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndMode3D;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		58,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"Press space to Jump."+char(34)+",200,20,40,BLUE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		59,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawFPS;;_RV_;;parameters;;_RV_;;10,10;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		60,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		61,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"value;;_RV_;;De-Initialization;;_RV_;;"
 	],
 	[
 		62,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;CloseWindow;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		63,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadModel;;_RV_;;parameters;;_RV_;;model;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		64,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadModel;;_RV_;;parameters;;_RV_;;myplayer.model;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		65,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"value;;_RV_;;our player struct;;_RV_;;"
 	],
 	[
 		66,
 		1,
 		"class",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"value;;_RV_;;player;;_RV_;;value2;;_RV_;;;;_RV_;;value3;;_RV_;;2;;_RV_;;"
 	],
 	[
 		67,
 		1,
 		"assignment",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"leftside;;_RV_;;position;;_RV_;;rightside;;_RV_;;Vector3(0.0,0.0,0.0);;_RV_;;"
 	],
 	[
 		68,
 		1,
 		"assignment",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"leftside;;_RV_;;size;;_RV_;;rightside;;_RV_;;Vector3(0.0,0.0,0.0);;_RV_;;"
 	],
 	[
 		69,
 		1,
 		"assignment",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"leftside;;_RV_;;jumpforce;;_RV_;;rightside;;_RV_;;0.0;;_RV_;;"
 	],
 	[
 		70,
 		1,
 		"assignment",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"leftside;;_RV_;;canjump;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		71,
 		1,
 		"freetyping",
-		"19/08/2021",
-		"20:59:20",
+		"20/08/2021",
+		"14:50:17",
 		"value;;_RV_;;model;;_RV_;;"
 	]
 ]

@@ -55,7 +55,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# ===================================================================#
+"
 			],
 			[
 				"interactionid",
@@ -93,7 +94,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# raylib [core] example - Basic window
+"
 			],
 			[
 				"interactionid",
@@ -131,7 +133,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Copyright (c) 2013-2020 Ramon Santamaria (@raysan5)
+"
 			],
 			[
 				"interactionid",
@@ -169,7 +172,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Ported to RingRayLib by Ring Team
+"
 			],
 			[
 				"interactionid",
@@ -207,7 +211,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# ===================================================================#
+"
 			],
 			[
 				"interactionid",
@@ -732,136 +737,136 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"19/08/2021",
-		"20:58:44",
+		"20/08/2021",
+		"14:49:40",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"20:58:44",
+		"20/08/2021",
+		"14:49:40",
 		"value;;_RV_;;===================================================================#;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"20:58:44",
+		"20/08/2021",
+		"14:49:40",
 		"value;;_RV_;;raylib [core] example - Basic window;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"20:58:44",
+		"20/08/2021",
+		"14:49:40",
 		"value;;_RV_;;Copyright (c) 2013-2020 Ramon Santamaria (@raysan5);;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"20:58:44",
+		"20/08/2021",
+		"14:49:40",
 		"value;;_RV_;;Ported to RingRayLib by Ring Team;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"20:58:44",
+		"20/08/2021",
+		"14:49:40",
 		"value;;_RV_;;===================================================================#;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"load",
-		"19/08/2021",
-		"20:58:44",
+		"20/08/2021",
+		"14:49:40",
 		"file;;_RV_;;raylib.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"19/08/2021",
-		"20:58:44",
+		"20/08/2021",
+		"14:49:40",
 		"leftside;;_RV_;;screenWidth;;_RV_;;rightside;;_RV_;;800;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"19/08/2021",
-		"20:58:44",
+		"20/08/2021",
+		"14:49:40",
 		"leftside;;_RV_;;screenHeight;;_RV_;;rightside;;_RV_;;450;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"20:58:44",
+		"20/08/2021",
+		"14:49:40",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;InitWindow;;_RV_;;parameters;;_RV_;;screenWidth,screenHeight,"+char(34)+"raylib [core] example - basic window"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"20:58:44",
+		"20/08/2021",
+		"14:49:40",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetTargetFPS;;_RV_;;parameters;;_RV_;;60;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"whileloop",
-		"19/08/2021",
-		"20:58:44",
+		"20/08/2021",
+		"14:49:40",
 		"condition;;_RV_;;!WindowShouldClose();;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"20:58:44",
+		"20/08/2021",
+		"14:49:40",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"20:58:44",
+		"20/08/2021",
+		"14:49:41",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;ClearBackground;;_RV_;;parameters;;_RV_;;RED;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"20:58:44",
+		"20/08/2021",
+		"14:49:41",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"Congrats! You created your first window!"+char(34)+",190,200,20,WHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"20:58:44",
+		"20/08/2021",
+		"14:49:41",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"20:58:44",
+		"20/08/2021",
+		"14:49:41",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;CloseWindow;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	]
 ]

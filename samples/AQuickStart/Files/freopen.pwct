@@ -283,7 +283,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# /*
+"
 			],
 			[
 				"interactionid",
@@ -321,7 +322,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# ** Read : https://en.wikipedia.org/wiki/Device_file#Device_files
+"
 			],
 			[
 				"interactionid",
@@ -359,7 +361,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# ** The next code is not portable, we can use iswindows() before
+"
 			],
 			[
 				"interactionid",
@@ -397,7 +400,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# ** using it and we can write special code for each operating system.
+"
 			],
 			[
 				"interactionid",
@@ -435,7 +439,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# */
+"
 			],
 			[
 				"interactionid",
@@ -511,7 +516,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# For Microsoft Windows
+"
 			],
 			[
 				"interactionid",
@@ -587,7 +593,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# print to stdout again
+"
 			],
 			[
 				"interactionid",
@@ -618,112 +625,112 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"19/08/2021",
-		"21:03:07",
+		"20/08/2021",
+		"14:54:18",
 		""
 	],
 	[
 		2,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:03:07",
+		"20/08/2021",
+		"14:54:18",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;freopen;;_RV_;;parameters;;_RV_;;"+char(34)+"myprogoutput.txt"+char(34)+","+char(34)+"w+"+char(34)+",stdout;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"print",
-		"19/08/2021",
-		"21:03:07",
+		"20/08/2021",
+		"14:54:18",
 		"text;;_RV_;;"+char(34)+"welcome"+char(34)+"+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"forloop",
-		"19/08/2021",
-		"21:03:07",
+		"20/08/2021",
+		"14:54:18",
 		"start;;_RV_;;x = 1;;_RV_;;to;;_RV_;;10;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"print",
-		"19/08/2021",
-		"21:03:07",
+		"20/08/2021",
+		"14:54:18",
 		"text;;_RV_;;x+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:03:07",
+		"20/08/2021",
+		"14:54:18",
 		"value;;_RV_;;/*;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:03:07",
+		"20/08/2021",
+		"14:54:18",
 		"value;;_RV_;;** Read : https://en.wikipedia.org/wiki/Device_file#Device_files;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:03:07",
+		"20/08/2021",
+		"14:54:18",
 		"value;;_RV_;;** The next code is not portable, we can use iswindows() before;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:03:07",
+		"20/08/2021",
+		"14:54:18",
 		"value;;_RV_;;** using it and we can write special code for each operating system.;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:03:07",
+		"20/08/2021",
+		"14:54:18",
 		"value;;_RV_;;*/;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:03:07",
+		"20/08/2021",
+		"14:54:18",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;freopen;;_RV_;;parameters;;_RV_;;"+char(34)+"CON"+char(34)+","+char(34)+"w"+char(34)+",stdout;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:03:07",
+		"20/08/2021",
+		"14:54:18",
 		"value;;_RV_;;For Microsoft Windows;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"print",
-		"19/08/2021",
-		"21:03:07",
+		"20/08/2021",
+		"14:54:18",
 		"text;;_RV_;;"+char(34)+"Done"+char(34)+"+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:03:07",
+		"20/08/2021",
+		"14:54:18",
 		"value;;_RV_;;print to stdout again;;_RV_;;"
 	]
 ]

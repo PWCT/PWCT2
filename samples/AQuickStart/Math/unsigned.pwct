@@ -93,7 +93,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Jenkins hash function - https://en.wikipedia.org/wiki/Jenkins_hash_function
+"
 			],
 			[
 				"interactionid",
@@ -694,112 +695,112 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"19/08/2021",
-		"21:05:42",
+		"20/08/2021",
+		"14:57:09",
 		""
 	],
 	[
 		2,
 		1,
 		"print",
-		"19/08/2021",
-		"21:05:42",
+		"20/08/2021",
+		"14:57:09",
 		"text;;_RV_;;oat_hash("+char(34)+"hello"+char(34)+")+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:05:42",
+		"20/08/2021",
+		"14:57:09",
 		"value;;_RV_;;Jenkins hash function - https://en.wikipedia.org/wiki/Jenkins_hash_function;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"func",
-		"19/08/2021",
-		"21:05:42",
+		"20/08/2021",
+		"14:57:09",
 		"name;;_RV_;;oat_hash;;_RV_;;parameters;;_RV_;;cKey;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:05:42",
+		"20/08/2021",
+		"14:57:09",
 		"leftside;;_RV_;;h;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"forinloop",
-		"19/08/2021",
-		"21:05:42",
+		"20/08/2021",
+		"14:57:09",
 		"variable;;_RV_;;x;;_RV_;;in;;_RV_;;cKey;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:05:42",
+		"20/08/2021",
+		"14:57:09",
 		"leftside;;_RV_;;h;;_RV_;;rightside;;_RV_;;unsigned(h,ascii(x),"+char(34)+"+"+char(34)+");;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:05:42",
+		"20/08/2021",
+		"14:57:09",
 		"leftside;;_RV_;;h;;_RV_;;rightside;;_RV_;;unsigned(h,unsigned(h,10,"+char(34)+"<<"+char(34)+"),"+char(34)+"+"+char(34)+");;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:05:42",
+		"20/08/2021",
+		"14:57:09",
 		"leftside;;_RV_;;r;;_RV_;;rightside;;_RV_;;unsigned(h,6,"+char(34)+">>"+char(34)+");;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:05:42",
+		"20/08/2021",
+		"14:57:09",
 		"leftside;;_RV_;;h;;_RV_;;rightside;;_RV_;;unsigned(h,r,"+char(34)+"^"+char(34)+");;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:05:42",
+		"20/08/2021",
+		"14:57:09",
 		"leftside;;_RV_;;h;;_RV_;;rightside;;_RV_;;unsigned(h,unsigned(h,3,"+char(34)+"<<"+char(34)+"),"+char(34)+"+"+char(34)+");;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:05:42",
+		"20/08/2021",
+		"14:57:09",
 		"leftside;;_RV_;;h;;_RV_;;rightside;;_RV_;;unsigned(h,unsigned(h,11,"+char(34)+">>"+char(34)+"),"+char(34)+"^"+char(34)+");;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:05:42",
+		"20/08/2021",
+		"14:57:09",
 		"leftside;;_RV_;;h;;_RV_;;rightside;;_RV_;;unsigned(h,unsigned(h,15,"+char(34)+"<<"+char(34)+"),"+char(34)+"+"+char(34)+");;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"return",
-		"19/08/2021",
-		"21:05:42",
+		"20/08/2021",
+		"14:57:09",
 		"value;;_RV_;;h;;_RV_;;"
 	]
 ]

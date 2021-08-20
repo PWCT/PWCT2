@@ -55,7 +55,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Project : Sierpinski triangle
+"
 			],
 			[
 				"interactionid",
@@ -93,7 +94,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Date    : 2017/09/20
+"
 			],
 			[
 				"interactionid",
@@ -131,7 +133,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Author  : Gal Zsolt (~ CalmoSoft ~)
+"
 			],
 			[
 				"interactionid",
@@ -169,7 +172,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Email   : <calmosoft@gmail.com>
+"
 			],
 			[
 				"interactionid",
@@ -1150,168 +1154,168 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"19/08/2021",
-		"21:10:26",
+		"20/08/2021",
+		"15:01:59",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:26",
+		"20/08/2021",
+		"15:01:59",
 		"value;;_RV_;;Project : Sierpinski triangle;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:26",
+		"20/08/2021",
+		"15:01:59",
 		"value;;_RV_;;Date    : 2017/09/20;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:26",
+		"20/08/2021",
+		"15:01:59",
 		"value;;_RV_;;Author  : Gal Zsolt (~ CalmoSoft ~);;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:26",
+		"20/08/2021",
+		"15:01:59",
 		"value;;_RV_;;Email   : <calmosoft@gmail.com>;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:26",
+		"20/08/2021",
+		"15:01:59",
 		"leftside;;_RV_;;norder;;_RV_;;rightside;;_RV_;;4;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:26",
+		"20/08/2021",
+		"15:01:59",
 		"leftside;;_RV_;;xy;;_RV_;;rightside;;_RV_;;list(40);;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"forloop",
-		"19/08/2021",
-		"21:10:26",
+		"20/08/2021",
+		"15:01:59",
 		"start;;_RV_;;i = 1;;_RV_;;to;;_RV_;;40;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:26",
+		"20/08/2021",
+		"15:01:59",
 		"leftside;;_RV_;;xy[i];;_RV_;;rightside;;_RV_;;"+char(34)+"                               "+char(34)+";;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:10:26",
+		"20/08/2021",
+		"15:01:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;triangle;;_RV_;;parameters;;_RV_;;1,1,norder;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"forloop",
-		"19/08/2021",
-		"21:10:26",
+		"20/08/2021",
+		"15:01:59",
 		"start;;_RV_;;i = 1;;_RV_;;to;;_RV_;;36;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"print",
-		"19/08/2021",
-		"21:10:26",
+		"20/08/2021",
+		"15:01:59",
 		"text;;_RV_;;xy[i]+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"func",
-		"19/08/2021",
-		"21:10:26",
+		"20/08/2021",
+		"15:01:59",
 		"name;;_RV_;;triangle;;_RV_;;parameters;;_RV_;;(x,y,n);;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"ifstatement",
-		"19/08/2021",
-		"21:10:26",
+		"20/08/2021",
+		"15:01:59",
 		"condition;;_RV_;;n = 0;;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:26",
+		"20/08/2021",
+		"15:01:59",
 		"leftside;;_RV_;;xy[y];;_RV_;;rightside;;_RV_;;left(xy[y],x-1)+"+char(34)+"*"+char(34)+"+substr(xy[y],x+1);;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"else",
-		"19/08/2021",
-		"21:10:26",
+		"20/08/2021",
+		"15:01:59",
 		""
 	],
 	[
 		17,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:26",
+		"20/08/2021",
+		"15:01:59",
 		"leftside;;_RV_;;n;;_RV_;;rightside;;_RV_;;n-1;;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:26",
+		"20/08/2021",
+		"15:01:59",
 		"leftside;;_RV_;;length;;_RV_;;rightside;;_RV_;;pow(2,n);;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:10:26",
+		"20/08/2021",
+		"15:01:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;triangle;;_RV_;;parameters;;_RV_;;x,y+length,n;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:10:26",
+		"20/08/2021",
+		"15:02:00",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;triangle;;_RV_;;parameters;;_RV_;;x+length,y,n;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:10:26",
+		"20/08/2021",
+		"15:02:00",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;triangle;;_RV_;;parameters;;_RV_;;x+length*2,y+length,n;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	]
 ]

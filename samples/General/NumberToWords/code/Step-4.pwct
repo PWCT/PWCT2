@@ -55,7 +55,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# *** step 4
+"
 			],
 			[
 				"interactionid",
@@ -93,7 +94,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# number to words (illions)
+"
 			],
 			[
 				"interactionid",
@@ -169,7 +171,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# n = "+char(34)+"1000067"+char(34)+"
+"
 			],
 			[
 				"interactionid",
@@ -397,7 +400,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# anzahl gruppen
+"
 			],
 			[
 				"interactionid",
@@ -435,7 +439,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# group names - the "+char(34)+"thousands"+char(34)+"
+"
 			],
 			[
 				"interactionid",
@@ -511,7 +516,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# eingabe abarbeiten
+"
 			],
 			[
 				"interactionid",
@@ -663,7 +669,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# gruppe ermittelln
+"
 			],
 			[
 				"interactionid",
@@ -739,7 +746,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# neue nr generieren
+"
 			],
 			[
 				"interactionid",
@@ -929,7 +937,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# wenn gr leer "+char(34)+"n"+char(34)+" nehmen
+"
 			],
 			[
 				"interactionid",
@@ -1043,7 +1052,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# end-for
+"
 			],
 			[
 				"interactionid",
@@ -1157,7 +1167,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Ausgabe
+"
 			],
 			[
 				"interactionid",
@@ -1233,7 +1244,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# end	doGruppen
+"
 			],
 			[
 				"interactionid",
@@ -1302,224 +1314,224 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"19/08/2021",
-		"21:09:27",
+		"20/08/2021",
+		"15:01:01",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:09:27",
+		"20/08/2021",
+		"15:01:01",
 		"value;;_RV_;;*** step 4;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:09:27",
+		"20/08/2021",
+		"15:01:01",
 		"value;;_RV_;;number to words (illions);;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:09:27",
+		"20/08/2021",
+		"15:01:01",
 		"leftside;;_RV_;;n;;_RV_;;rightside;;_RV_;;"+char(34)+"1234567898"+char(34)+";;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:09:27",
+		"20/08/2021",
+		"15:01:01",
 		"value;;_RV_;;n = "+char(34)+"1000067"+char(34)+";;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:09:27",
+		"20/08/2021",
+		"15:01:01",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;doGruppen;;_RV_;;parameters;;_RV_;;n;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"func",
-		"19/08/2021",
-		"21:09:27",
+		"20/08/2021",
+		"15:01:01",
 		"name;;_RV_;;doGruppen;;_RV_;;parameters;;_RV_;;(n);;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:09:27",
+		"20/08/2021",
+		"15:01:01",
 		"leftside;;_RV_;;rtn;;_RV_;;rightside;;_RV_;;"+char(34)+" "+char(34)+";;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:09:27",
+		"20/08/2021",
+		"15:01:01",
 		"leftside;;_RV_;;anz_gr;;_RV_;;rightside;;_RV_;;floor((len(n)+2)/3);;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:09:27",
+		"20/08/2021",
+		"15:01:01",
 		"value;;_RV_;;anzahl gruppen;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:09:27",
+		"20/08/2021",
+		"15:01:01",
 		"value;;_RV_;;group names - the "+char(34)+"thousands"+char(34)+";;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:09:27",
+		"20/08/2021",
+		"15:01:01",
 		"leftside;;_RV_;;tsds;;_RV_;;rightside;;_RV_;;["+char(34)+""+char(34)+","+char(34)+"thousand "+char(34)+","+char(34)+"million "+char(34)+","+char(34)+"billion "+char(34)+","+char(34)+"trillion "+char(34)+","+char(34)+"quadrillion "+char(34)+","+char(34)+"quintillion "+char(34)+","+char(34)+"sextillion"+char(34)+","+char(34)+"septillion"+char(34)+","+char(34)+"octillion"+char(34)+","+char(34)+"nonillion"+char(34)+","+char(34)+"decillion"+char(34)+","+char(34)+"undecillion"+char(34)+","+char(34)+"duodecillion"+char(34)+","+char(34)+"tredecillion"+char(34)+","+char(34)+"quattuordecillion"+char(34)+","+char(34)+"sexdecillion"+char(34)+","+char(34)+"septendecillion"+char(34)+","+char(34)+"octodecillion"+char(34)+","+char(34)+"novemdecillion"+char(34)+","+char(34)+"vigintillion "+char(34)+"];;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:09:27",
+		"20/08/2021",
+		"15:01:01",
 		"value;;_RV_;;eingabe abarbeiten;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"forloop",
-		"19/08/2021",
-		"21:09:27",
+		"20/08/2021",
+		"15:01:01",
 		"start;;_RV_;;x = 1;;_RV_;;to;;_RV_;;anz_gr-1;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:09:27",
+		"20/08/2021",
+		"15:01:01",
 		"leftside;;_RV_;;gr;;_RV_;;rightside;;_RV_;;right(n,3);;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:09:27",
+		"20/08/2021",
+		"15:01:01",
 		"value;;_RV_;;gruppe ermittelln;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:09:27",
+		"20/08/2021",
+		"15:01:01",
 		"leftside;;_RV_;;n;;_RV_;;rightside;;_RV_;;left(n,len(n)-3);;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:09:27",
+		"20/08/2021",
+		"15:01:01",
 		"value;;_RV_;;neue nr generieren;;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"ifstatement",
-		"19/08/2021",
-		"21:09:27",
+		"20/08/2021",
+		"15:01:01",
 		"condition;;_RV_;;gr = "+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:09:27",
+		"20/08/2021",
+		"15:01:01",
 		"leftside;;_RV_;;gr;;_RV_;;rightside;;_RV_;;n;;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:09:27",
+		"20/08/2021",
+		"15:01:01",
 		"value;;_RV_;;wenn gr leer "+char(34)+"n"+char(34)+" nehmen;;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:09:27",
+		"20/08/2021",
+		"15:01:01",
 		"leftside;;_RV_;;rtn;;_RV_;;rightside;;_RV_;;gr+"+char(34)+" "+char(34)+"+tsds[x]+rtn;;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:09:27",
+		"20/08/2021",
+		"15:01:01",
 		"value;;_RV_;;end-for;;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:09:27",
+		"20/08/2021",
+		"15:01:01",
 		"leftside;;_RV_;;rtn;;_RV_;;rightside;;_RV_;;n+"+char(34)+" "+char(34)+"+tsds[x]+rtn;;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"print",
-		"19/08/2021",
-		"21:09:27",
+		"20/08/2021",
+		"15:01:01",
 		"text;;_RV_;;"+char(34)+"In Words: "+char(34)+"+rtn;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:09:27",
+		"20/08/2021",
+		"15:01:01",
 		"value;;_RV_;;Ausgabe;;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"return",
-		"19/08/2021",
-		"21:09:27",
+		"20/08/2021",
+		"15:01:01",
 		"value;;_RV_;;rtn;;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:09:27",
+		"20/08/2021",
+		"15:01:01",
 		"value;;_RV_;;end	doGruppen;;_RV_;;"
 	]
 ]

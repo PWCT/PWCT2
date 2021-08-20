@@ -93,7 +93,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Create the String
+"
 			],
 			[
 				"interactionid",
@@ -207,7 +208,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Get One Character
+"
 			],
 			[
 				"interactionid",
@@ -321,7 +323,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Using normar Ring functions
+"
 			],
 			[
 				"interactionid",
@@ -435,7 +438,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Using QChar class
+"
 			],
 			[
 				"interactionid",
@@ -473,7 +477,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# QChar get an integer value as input
+"
 			],
 			[
 				"interactionid",
@@ -618,128 +623,128 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"19/08/2021",
-		"21:14:00",
+		"20/08/2021",
+		"15:05:30",
 		""
 	],
 	[
 		2,
 		1,
 		"load",
-		"19/08/2021",
-		"21:14:00",
+		"20/08/2021",
+		"15:05:30",
 		"file;;_RV_;;guilib.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:14:00",
+		"20/08/2021",
+		"15:05:30",
 		"value;;_RV_;;Create the String;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"newobj",
-		"19/08/2021",
-		"21:14:00",
+		"20/08/2021",
+		"15:05:30",
 		"value;;_RV_;;mystring;;_RV_;;value2;;_RV_;;QString2;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"callmethod",
-		"19/08/2021",
-		"21:14:00",
+		"20/08/2021",
+		"15:05:30",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;mystring;;_RV_;;name;;_RV_;;append;;_RV_;;parameters;;_RV_;;"+char(34)+"Hello, World!"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:14:00",
+		"20/08/2021",
+		"15:05:30",
 		"value;;_RV_;;Get One Character;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:14:00",
+		"20/08/2021",
+		"15:05:30",
 		"leftside;;_RV_;;cValue;;_RV_;;rightside;;_RV_;;mystring.mid(4,1);;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"print",
-		"19/08/2021",
-		"21:14:00",
+		"20/08/2021",
+		"15:05:30",
 		"text;;_RV_;;"+char(34)+"Character: "+char(34)+"+cValue;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:14:00",
+		"20/08/2021",
+		"15:05:30",
 		"value;;_RV_;;Using normar Ring functions;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"print",
-		"19/08/2021",
-		"21:14:00",
+		"20/08/2021",
+		"15:05:30",
 		"text;;_RV_;;isalpha(cValue);;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"print",
-		"19/08/2021",
-		"21:14:00",
+		"20/08/2021",
+		"15:05:30",
 		"text;;_RV_;;isdigit(cValue);;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:14:00",
+		"20/08/2021",
+		"15:05:30",
 		"value;;_RV_;;Using QChar class;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:14:00",
+		"20/08/2021",
+		"15:05:30",
 		"value;;_RV_;;QChar get an integer value as input;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"newobj",
-		"19/08/2021",
-		"21:14:00",
+		"20/08/2021",
+		"15:05:30",
 		"value;;_RV_;;oChar;;_RV_;;value2;;_RV_;;QChar;;_RV_;;value3;;_RV_;;ASCII(cValue);;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"print",
-		"19/08/2021",
-		"21:14:00",
+		"20/08/2021",
+		"15:05:30",
 		"text;;_RV_;;oChar.isDigit();;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"print",
-		"19/08/2021",
-		"21:14:00",
+		"20/08/2021",
+		"15:05:30",
 		"text;;_RV_;;oChar.isLetter();;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	]
 ]

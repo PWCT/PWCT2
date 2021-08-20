@@ -55,7 +55,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# https://www.tutlane.com/tutorial/sqlite/sqlite-transactions-begin-commit-rollback
+"
 			],
 			[
 				"interactionid",
@@ -93,7 +94,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Bert Mariani 2020-10-25 update
+"
 			],
 			[
 				"interactionid",
@@ -283,7 +285,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# ==================================================================
+"
 			],
 			[
 				"interactionid",
@@ -321,7 +324,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Remove existing file so we can start from scratch (delete record 4 Dog)
+"
 			],
 			[
 				"interactionid",
@@ -397,7 +401,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# --------------------------------------------------
+"
 			],
 			[
 				"interactionid",
@@ -435,7 +440,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# START SQLITE
+"
 			],
 			[
 				"interactionid",
@@ -473,7 +479,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# ------------------------------------------------------------------
+"
 			],
 			[
 				"interactionid",
@@ -511,7 +518,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# OPEN FILE for DB ( Will CREATE it if it does NOT EXIST)
+"
 			],
 			[
 				"interactionid",
@@ -625,7 +633,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# ------------------------------------------------------------------
+"
 			],
 			[
 				"interactionid",
@@ -663,7 +672,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# To use transaction commands first we need to CREATE TABLE called Emp_Master
+"
 			],
 			[
 				"interactionid",
@@ -701,7 +711,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# and INSERT INTO some data VALUES using following queries.
+"
 			],
 			[
 				"interactionid",
@@ -739,7 +750,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# CREATE A DB TABLE ( Can be combined with INSERT VALUES)
+"
 			],
 			[
 				"interactionid",
@@ -833,7 +845,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# EXECUTE SQLITE
+"
 			],
 			[
 				"interactionid",
@@ -909,7 +922,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# ------------------------------------------------------------------
+"
 			],
 			[
 				"interactionid",
@@ -947,7 +961,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# INSERT INTO some data VALUES using following queries.
+"
 			],
 			[
 				"interactionid",
@@ -985,7 +1000,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Note ID created in mixed order
+"
 			],
 			[
 				"interactionid",
@@ -1094,7 +1110,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# --------------------------
+"
 			],
 			[
 				"interactionid",
@@ -1132,7 +1149,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# EXECUTE SQLITE
+"
 			],
 			[
 				"interactionid",
@@ -1208,7 +1226,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# ==================================================================
+"
 			],
 			[
 				"interactionid",
@@ -1246,7 +1265,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# ------------------------------------------------------------------
+"
 			],
 			[
 				"interactionid",
@@ -1284,7 +1304,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# DISPLAY ALL Lines in DB
+"
 			],
 			[
 				"interactionid",
@@ -1398,7 +1419,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# -------------------------------------------------------------------
+"
 			],
 			[
 				"interactionid",
@@ -1436,7 +1458,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Now write the query like as shown following to Start a Transaction
+"
 			],
 			[
 				"interactionid",
@@ -1474,7 +1497,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# and Delete records from emp_master Table where dept_id = 3
+"
 			],
 			[
 				"interactionid",
@@ -1512,7 +1536,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# and we will use ROLLBACK command to undo all the changes.
+"
 			],
 			[
 				"interactionid",
@@ -1711,7 +1736,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# --------------------------------------------------------------------
+"
 			],
 			[
 				"interactionid",
@@ -1749,7 +1775,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Now, let's start another Transaction
+"
 			],
 			[
 				"interactionid",
@@ -1787,7 +1814,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# and DELETE records from the Emp_Master Table where emp_id = 1
+"
 			],
 			[
 				"interactionid",
@@ -1825,7 +1853,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# and we use COMMIT command to commit all the changes like as shown below.
+"
 			],
 			[
 				"interactionid",
@@ -2024,7 +2053,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# --------------------------------------------------------------------
+"
 			],
 			[
 				"interactionid",
@@ -2062,7 +2092,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Sort is ORDER BY with Column Position  DESC/ASC
+"
 			],
 			[
 				"interactionid",
@@ -2176,7 +2207,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# --------------------------------------------------------------------
+"
 			],
 			[
 				"interactionid",
@@ -2214,7 +2246,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Select WHERE  name = George
+"
 			],
 			[
 				"interactionid",
@@ -2328,7 +2361,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# --------------------------------------------------------------------
+"
 			],
 			[
 				"interactionid",
@@ -2366,7 +2400,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Select WHERE  name = Harry
+"
 			],
 			[
 				"interactionid",
@@ -2480,7 +2515,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# --------------------------------------------------------------------
+"
 			],
 			[
 				"interactionid",
@@ -2518,7 +2554,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Select WHERE  name = dept_id = 2
+"
 			],
 			[
 				"interactionid",
@@ -2632,7 +2669,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# --------------------------------------------------------------------
+"
 			],
 			[
 				"interactionid",
@@ -2670,7 +2708,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# INSERT INTO Emp_Master  VALUES  (4, 'Jack','Japan', 4567, 3),
+"
 			],
 			[
 				"interactionid",
@@ -2831,7 +2870,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# ==================================================================
+"
 			],
 			[
 				"interactionid",
@@ -2869,7 +2909,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# UPDATE Emp_Master SET first_name='Umberto' WHERE emp_id = 9
+"
 			],
 			[
 				"interactionid",
@@ -3059,7 +3100,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# ==================================================================
+"
 			],
 			[
 				"interactionid",
@@ -3097,7 +3139,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# ALTER TABLE -- ADD COLUMN color TEXT
+"
 			],
 			[
 				"interactionid",
@@ -3135,7 +3178,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# SET Column in Each Row to color value
+"
 			],
 			[
 				"interactionid",
@@ -3396,7 +3440,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# ==================================================================
+"
 			],
 			[
 				"interactionid",
@@ -3434,7 +3479,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# DISPLAY DB HEADERS -- Column names and types
+"
 			],
 			[
 				"interactionid",
@@ -3472,7 +3518,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# ==================================================================
+"
 			],
 			[
 				"interactionid",
@@ -3510,7 +3557,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# CLOSE SQLITE
+"
 			],
 			[
 				"interactionid",
@@ -3624,7 +3672,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# ==================================================================
+"
 			],
 			[
 				"interactionid",
@@ -3662,7 +3711,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# ==================================================================
+"
 			],
 			[
 				"interactionid",
@@ -3700,7 +3750,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# --------------------------------------------------------------------
+"
 			],
 			[
 				"interactionid",
@@ -3738,7 +3789,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# DISPLAY DB Lines
+"
 			],
 			[
 				"interactionid",
@@ -3776,7 +3828,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# aDBLines = Array Result of SQL Command
+"
 			],
 			[
 				"interactionid",
@@ -4270,7 +4323,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# ## after each line
+"
 			],
 			[
 				"interactionid",
@@ -4384,7 +4438,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# --------------------------------------------------------------------
+"
 			],
 			[
 				"interactionid",
@@ -4422,7 +4477,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Display DB Headers, Column names and types
+"
 			],
 			[
 				"interactionid",
@@ -4650,7 +4706,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# ----------------------------
+"
 			],
 			[
 				"interactionid",
@@ -4688,7 +4745,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# aDBheaders = sqlite_execute(oSQLite, "+char(34)+"SELECT *         FROM sqlite_master WHERE type='table' AND name = 'Emp_Master' "+char(34)+")
+"
 			],
 			[
 				"interactionid",
@@ -4726,7 +4784,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# aDBheaders = sqlite_execute(oSQLite, "+char(34)+"SELECT name, sql FROM sqlite_master WHERE type='table' AND name = 'Emp_Master' "+char(34)+")
+"
 			],
 			[
 				"interactionid",
@@ -5106,7 +5165,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# ## after each line
+"
 			],
 			[
 				"interactionid",
@@ -5258,7 +5318,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# -------------------------------
+"
 			],
 			[
 				"interactionid",
@@ -5296,7 +5357,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# /*
+"
 			],
 			[
 				"interactionid",
@@ -5334,7 +5396,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# aDBheaders:
+"
 			],
 			[
 				"interactionid",
@@ -5410,7 +5473,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# type
+"
 			],
 			[
 				"interactionid",
@@ -5448,7 +5512,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# table
+"
 			],
 			[
 				"interactionid",
@@ -5486,7 +5551,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# name
+"
 			],
 			[
 				"interactionid",
@@ -5524,7 +5590,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Emp_Master
+"
 			],
 			[
 				"interactionid",
@@ -5562,7 +5629,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# tbl_name
+"
 			],
 			[
 				"interactionid",
@@ -5600,7 +5668,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# Emp_Master
+"
 			],
 			[
 				"interactionid",
@@ -5638,7 +5707,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# rootpage
+"
 			],
 			[
 				"interactionid",
@@ -5676,7 +5746,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# 2
+"
 			],
 			[
 				"interactionid",
@@ -5714,7 +5785,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# sql
+"
 			],
 			[
 				"interactionid",
@@ -5752,7 +5824,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# CREATE TABLE Emp_Master
+"
 			],
 			[
 				"interactionid",
@@ -5790,7 +5863,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# ( emp_id INTEGER PRIMARY KEY AUTOINCREMENT,
+"
 			],
 			[
 				"interactionid",
@@ -5828,7 +5902,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# first_name TEXT,
+"
 			],
 			[
 				"interactionid",
@@ -5866,7 +5941,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# last_name  TEXT,
+"
 			],
 			[
 				"interactionid",
@@ -5904,7 +5980,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# salary     NUMERIC,
+"
 			],
 			[
 				"interactionid",
@@ -5942,7 +6019,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# dept_id    INTEGER  )
+"
 			],
 			[
 				"interactionid",
@@ -5980,7 +6058,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# */
+"
 			],
 			[
 				"interactionid",
@@ -6018,7 +6097,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"# --------------------------------------------------------------------
+"
 			],
 			[
 				"interactionid",
@@ -6087,168 +6167,168 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:26",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:26",
 		"value;;_RV_;;https://www.tutlane.com/tutorial/sqlite/sqlite-transactions-begin-commit-rollback;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:26",
 		"value;;_RV_;;Bert Mariani 2020-10-25 update;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"load",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:26",
 		"file;;_RV_;;sqlitelib.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:26",
 		"leftside;;_RV_;;MyDB;;_RV_;;rightside;;_RV_;;"+char(34)+"myDataBase.db"+char(34)+";;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:26",
 		"leftside;;_RV_;;oSQLite;;_RV_;;rightside;;_RV_;;null;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:26",
 		"leftside;;_RV_;;aDBLines;;_RV_;;rightside;;_RV_;;[];;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;==================================================================;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;Remove existing file so we can start from scratch (delete record 4 Dog);;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;Remove;;_RV_;;parameters;;_RV_;;MyDb;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;--------------------------------------------------;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;START SQLITE;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;------------------------------------------------------------------;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;OPEN FILE for DB ( Will CREATE it if it does NOT EXIST);;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"leftside;;_RV_;;oSQLite;;_RV_;;rightside;;_RV_;;sqlite_init();;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;sqlite_open;;_RV_;;parameters;;_RV_;;oSQLite,MyDB;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;------------------------------------------------------------------;;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;To use transaction commands first we need to CREATE TABLE called Emp_Master;;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;and INSERT INTO some data VALUES using following queries.;;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;CREATE A DB TABLE ( Can be combined with INSERT VALUES);;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"leftside;;_RV_;;sql;;_RV_;;rightside;;_RV_;;"+char(34)+" CREATE TABLE Emp_Master
             ( emp_id INTEGER PRIMARY KEY AUTOINCREMENT,
               first_name TEXT,
@@ -6261,48 +6341,48 @@ aInteractionsTable = [
 		22,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;EXECUTE SQLITE;;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;sqlite_execute;;_RV_;;parameters;;_RV_;;oSQLite,sql;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;------------------------------------------------------------------;;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;INSERT INTO some data VALUES using following queries.;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;Note ID created in mixed order;;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"leftside;;_RV_;;sql;;_RV_;;rightside;;_RV_;;"+char(34)+" INSERT INTO Emp_Master
             VALUES   
                      (3,'Charlie',  'Czeck',    7766,   3),
@@ -6320,104 +6400,104 @@ aInteractionsTable = [
 		28,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;--------------------------;;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;EXECUTE SQLITE;;_RV_;;"
 	],
 	[
 		30,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;sqlite_execute;;_RV_;;parameters;;_RV_;;oSQLite,sql;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;==================================================================;;_RV_;;"
 	],
 	[
 		32,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;------------------------------------------------------------------;;_RV_;;"
 	],
 	[
 		33,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;DISPLAY ALL Lines in DB;;_RV_;;"
 	],
 	[
 		34,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"leftside;;_RV_;;aDBLines;;_RV_;;rightside;;_RV_;;sqlite_execute(oSQLite,"+char(34)+"SELECT * FROM  Emp_Master"+char(34)+");;_RV_;;"
 	],
 	[
 		35,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DisplayDBLines;;_RV_;;parameters;;_RV_;;aDBLines,"+char(34)+"Display Create DB Table with Values --  Was mixed order "+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		36,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;-------------------------------------------------------------------;;_RV_;;"
 	],
 	[
 		37,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;Now write the query like as shown following to Start a Transaction;;_RV_;;"
 	],
 	[
 		38,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;and Delete records from emp_master Table where dept_id = 3;;_RV_;;"
 	],
 	[
 		39,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;and we will use ROLLBACK command to undo all the changes.;;_RV_;;"
 	],
 	[
 		40,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"leftside;;_RV_;;sql;;_RV_;;rightside;;_RV_;;"+char(34)+" BEGIN;
             DELETE FROM Emp_Master WHERE dept_id=3;
             ROLLBACK;
@@ -6427,64 +6507,64 @@ aInteractionsTable = [
 		41,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"leftside;;_RV_;;aDBLines;;_RV_;;rightside;;_RV_;;sqlite_execute(oSQLite,sql);;_RV_;;"
 	],
 	[
 		42,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"leftside;;_RV_;;aDBLines;;_RV_;;rightside;;_RV_;;sqlite_execute(oSQLite,"+char(34)+"SELECT * FROM  Emp_Master"+char(34)+");;_RV_;;"
 	],
 	[
 		43,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DisplayDBLines;;_RV_;;parameters;;_RV_;;aDBLines,"+char(34)+"Delete Record 3, then RollBack"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		44,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;--------------------------------------------------------------------;;_RV_;;"
 	],
 	[
 		45,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;Now, let's start another Transaction;;_RV_;;"
 	],
 	[
 		46,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;and DELETE records from the Emp_Master Table where emp_id = 1;;_RV_;;"
 	],
 	[
 		47,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;and we use COMMIT command to commit all the changes like as shown below.;;_RV_;;"
 	],
 	[
 		48,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"leftside;;_RV_;;sql;;_RV_;;rightside;;_RV_;;"+char(34)+" BEGIN;
             DELETE FROM emp_master WHERE emp_id=4;
             COMMIT;
@@ -6494,176 +6574,176 @@ aInteractionsTable = [
 		49,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;sqlite_execute;;_RV_;;parameters;;_RV_;;oSQLite,sql;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		50,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"leftside;;_RV_;;aDBLines;;_RV_;;rightside;;_RV_;;sqlite_execute(oSQLite,"+char(34)+"SELECT * FROM  Emp_Master"+char(34)+");;_RV_;;"
 	],
 	[
 		51,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DisplayDBLines;;_RV_;;parameters;;_RV_;;aDBLines,"+char(34)+"Delete Record 4, then Commit -- (4,'Dog','Denmark',5544,2)"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		52,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;--------------------------------------------------------------------;;_RV_;;"
 	],
 	[
 		53,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;Sort is ORDER BY with Column Position  DESC/ASC;;_RV_;;"
 	],
 	[
 		54,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"leftside;;_RV_;;aDBLines;;_RV_;;rightside;;_RV_;;sqlite_execute(oSQLite,"+char(34)+"SELECT * FROM  Emp_Master ORDER BY salary ASC"+char(34)+");;_RV_;;"
 	],
 	[
 		55,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DisplayDBLines;;_RV_;;parameters;;_RV_;;aDBLines,"+char(34)+"SORT = Order by salary ASC"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		56,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;--------------------------------------------------------------------;;_RV_;;"
 	],
 	[
 		57,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;Select WHERE  name = George;;_RV_;;"
 	],
 	[
 		58,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"leftside;;_RV_;;aDBLines;;_RV_;;rightside;;_RV_;;sqlite_execute(oSQLite,"+char(34)+"SELECT * FROM  Emp_Master WHERE first_name = 'George' "+char(34)+");;_RV_;;"
 	],
 	[
 		59,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DisplayDBLines;;_RV_;;parameters;;_RV_;;aDBLines,"+char(34)+"SEARCH = Where name = 'George' Show entire line"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		60,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;--------------------------------------------------------------------;;_RV_;;"
 	],
 	[
 		61,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;Select WHERE  name = Harry;;_RV_;;"
 	],
 	[
 		62,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"leftside;;_RV_;;aDBLines;;_RV_;;rightside;;_RV_;;sqlite_execute(oSQLite,"+char(34)+"SELECT first_name, last_name FROM  Emp_Master WHERE first_name = 'Harry' "+char(34)+");;_RV_;;"
 	],
 	[
 		63,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DisplayDBLines;;_RV_;;parameters;;_RV_;;aDBLines,"+char(34)+"SEARCH = Where name = 'Harry'  Show only first last name"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		64,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;--------------------------------------------------------------------;;_RV_;;"
 	],
 	[
 		65,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;Select WHERE  name = dept_id = 2;;_RV_;;"
 	],
 	[
 		66,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"leftside;;_RV_;;aDBLines;;_RV_;;rightside;;_RV_;;sqlite_execute(oSQLite,"+char(34)+"SELECT first_name, last_name FROM  Emp_Master WHERE dept_id = 2 "+char(34)+");;_RV_;;"
 	],
 	[
 		67,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DisplayDBLines;;_RV_;;parameters;;_RV_;;aDBLines,"+char(34)+"SEARCH = Where dept_id = 2"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		68,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;--------------------------------------------------------------------;;_RV_;;"
 	],
 	[
 		69,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;INSERT INTO Emp_Master  VALUES  (4, 'Jack','Japan', 4567, 3),;;_RV_;;"
 	],
 	[
 		70,
 		1,
 		"freetyping",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;sqlite_execute(oSQLite,"+char(34)+"INSERT INTO Emp_Master  
                                         VALUES  (4, 'Jack','Japan', 4567, 3), 
                                                 (10,'King','Kenya', 8765, 2); 
@@ -6673,96 +6753,96 @@ aInteractionsTable = [
 		71,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"leftside;;_RV_;;aDBLines;;_RV_;;rightside;;_RV_;;sqlite_execute(oSQLite,"+char(34)+"SELECT * FROM  Emp_Master"+char(34)+");;_RV_;;"
 	],
 	[
 		72,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DisplayDBLines;;_RV_;;parameters;;_RV_;;aDBLines,"+char(34)+"INSERT Line 4 Jack, 10 King"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		73,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;==================================================================;;_RV_;;"
 	],
 	[
 		74,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;UPDATE Emp_Master SET first_name='Umberto' WHERE emp_id = 9;;_RV_;;"
 	],
 	[
 		75,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"leftside;;_RV_;;sql;;_RV_;;rightside;;_RV_;;"+char(34)+"UPDATE Emp_Master SET first_name='Umberto', last_name='Mariani' WHERE emp_id=9; "+char(34)+";;_RV_;;"
 	],
 	[
 		76,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;sqlite_execute;;_RV_;;parameters;;_RV_;;oSQLite,sql;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		77,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"leftside;;_RV_;;aDBLines;;_RV_;;rightside;;_RV_;;sqlite_execute(oSQLite,"+char(34)+"SELECT * FROM  Emp_Master"+char(34)+");;_RV_;;"
 	],
 	[
 		78,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DisplayDBLines;;_RV_;;parameters;;_RV_;;aDBLines,"+char(34)+"UPDATE first_name = 'Umberto' WHERE empd_id = 9"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		79,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;==================================================================;;_RV_;;"
 	],
 	[
 		80,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;ALTER TABLE -- ADD COLUMN color TEXT;;_RV_;;"
 	],
 	[
 		81,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;SET Column in Each Row to color value;;_RV_;;"
 	],
 	[
 		82,
 		1,
 		"freetyping",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;sqlite_execute(oSQLite,"+char(34)+"ALTER TABLE Emp_Master
                              ADD COLUMN color TEXT;
                              COMMIT; "+char(34)+");;_RV_;;"
@@ -6771,8 +6851,8 @@ aInteractionsTable = [
 		83,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"leftside;;_RV_;;sql;;_RV_;;rightside;;_RV_;;"+char(34)+"UPDATE Emp_Master SET color='White'  WHERE emp_id=1;
            UPDATE Emp_Master SET color='Black'  WHERE emp_id=2; 
 			  UPDATE Emp_Master SET color='Red'    WHERE emp_id=3;
@@ -6788,496 +6868,496 @@ aInteractionsTable = [
 		84,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;sqlite_execute;;_RV_;;parameters;;_RV_;;oSQLite,sql;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		85,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"leftside;;_RV_;;aDBLines;;_RV_;;rightside;;_RV_;;sqlite_execute(oSQLite,"+char(34)+"SELECT * FROM  Emp_Master"+char(34)+");;_RV_;;"
 	],
 	[
 		86,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DisplayDBLines;;_RV_;;parameters;;_RV_;;aDBLines,"+char(34)+"Inserted Column = color"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		87,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;==================================================================;;_RV_;;"
 	],
 	[
 		88,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;DISPLAY DB HEADERS -- Column names and types;;_RV_;;"
 	],
 	[
 		89,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;==================================================================;;_RV_;;"
 	],
 	[
 		90,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;CLOSE SQLITE;;_RV_;;"
 	],
 	[
 		91,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DisplayDBHeaders;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		92,
 		1,
 		"callfunc",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;sqlite_close;;_RV_;;parameters;;_RV_;;oSQLite;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		93,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;==================================================================;;_RV_;;"
 	],
 	[
 		94,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;==================================================================;;_RV_;;"
 	],
 	[
 		95,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;--------------------------------------------------------------------;;_RV_;;"
 	],
 	[
 		96,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;DISPLAY DB Lines;;_RV_;;"
 	],
 	[
 		97,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;aDBLines = Array Result of SQL Command;;_RV_;;"
 	],
 	[
 		98,
 		1,
 		"func",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"name;;_RV_;;DisplayDBLines;;_RV_;;parameters;;_RV_;;(aDBLines,Msg);;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		99,
 		1,
 		"print",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"text;;_RV_;;nl+copy("+char(34)+"*"+char(34)+",50)+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		100,
 		1,
 		"print",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"text;;_RV_;;Msg+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		101,
 		1,
 		"print",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"text;;_RV_;;nl+"+char(34)+"emp_id"+char(34)+"+Tab+"+char(34)+"first"+char(34)+"+Tab+"+char(34)+"last"+char(34)+"+Tab+"+char(34)+"salary"+char(34)+"+Tab+"+char(34)+"dept_id"+char(34)+"+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		102,
 		1,
 		"forinloop",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"variable;;_RV_;;Line;;_RV_;;in;;_RV_;;aDBLines;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		103,
 		1,
 		"forinloop",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"variable;;_RV_;;Field;;_RV_;;in;;_RV_;;Line;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		104,
 		1,
 		"print",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"text;;_RV_;;Field[2]+Tab;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		105,
 		1,
 		"print",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"text;;_RV_;;nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		106,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;## after each line;;_RV_;;"
 	],
 	[
 		107,
 		1,
 		"return",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		108,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;--------------------------------------------------------------------;;_RV_;;"
 	],
 	[
 		109,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;Display DB Headers, Column names and types;;_RV_;;"
 	],
 	[
 		110,
 		1,
 		"func",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"name;;_RV_;;DisplayDBHeaders;;_RV_;;parameters;;_RV_;;();;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		111,
 		1,
 		"print",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"text;;_RV_;;nl+copy("+char(34)+"*"+char(34)+",50)+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		112,
 		1,
 		"print",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"text;;_RV_;;"+char(34)+"DISPLAY DB Headers, Column names and types: "+char(34)+"+nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		113,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;----------------------------;;_RV_;;"
 	],
 	[
 		114,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;aDBheaders = sqlite_execute(oSQLite, "+char(34)+"SELECT *         FROM sqlite_master WHERE type='table' AND name = 'Emp_Master' "+char(34)+");;_RV_;;"
 	],
 	[
 		115,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;aDBheaders = sqlite_execute(oSQLite, "+char(34)+"SELECT name, sql FROM sqlite_master WHERE type='table' AND name = 'Emp_Master' "+char(34)+");;_RV_;;"
 	],
 	[
 		116,
 		1,
 		"assignment",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"leftside;;_RV_;;aDBheaders;;_RV_;;rightside;;_RV_;;sqlite_execute(oSQLite,"+char(34)+"SELECT sql       FROM sqlite_master WHERE type='table' AND name = 'Emp_Master' "+char(34)+");;_RV_;;"
 	],
 	[
 		117,
 		1,
 		"print",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"text;;_RV_;;nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		118,
 		1,
 		"forinloop",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"variable;;_RV_;;Line;;_RV_;;in;;_RV_;;aDBheaders;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		119,
 		1,
 		"forinloop",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"variable;;_RV_;;Field;;_RV_;;in;;_RV_;;Line;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		120,
 		1,
 		"print",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"text;;_RV_;;Field[2]+Tab;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		121,
 		1,
 		"print",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"text;;_RV_;;nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		122,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;## after each line;;_RV_;;"
 	],
 	[
 		123,
 		1,
 		"print",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"text;;_RV_;;nl;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		124,
 		1,
 		"return",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		125,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;-------------------------------;;_RV_;;"
 	],
 	[
 		126,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;/*;;_RV_;;"
 	],
 	[
 		127,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;aDBheaders:;;_RV_;;"
 	],
 	[
 		128,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		129,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;type;;_RV_;;"
 	],
 	[
 		130,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;table;;_RV_;;"
 	],
 	[
 		131,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;name;;_RV_;;"
 	],
 	[
 		132,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;Emp_Master;;_RV_;;"
 	],
 	[
 		133,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;tbl_name;;_RV_;;"
 	],
 	[
 		134,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;Emp_Master;;_RV_;;"
 	],
 	[
 		135,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;rootpage;;_RV_;;"
 	],
 	[
 		136,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;2;;_RV_;;"
 	],
 	[
 		137,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;sql;;_RV_;;"
 	],
 	[
 		138,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;CREATE TABLE Emp_Master;;_RV_;;"
 	],
 	[
 		139,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;( emp_id INTEGER PRIMARY KEY AUTOINCREMENT,;;_RV_;;"
 	],
 	[
 		140,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;first_name TEXT,;;_RV_;;"
 	],
 	[
 		141,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;last_name  TEXT,;;_RV_;;"
 	],
 	[
 		142,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;salary     NUMERIC,;;_RV_;;"
 	],
 	[
 		143,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;dept_id    INTEGER  );;_RV_;;"
 	],
 	[
 		144,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;*/;;_RV_;;"
 	],
 	[
 		145,
 		1,
 		"comment_text",
-		"19/08/2021",
-		"21:10:53",
+		"20/08/2021",
+		"15:02:27",
 		"value;;_RV_;;--------------------------------------------------------------------;;_RV_;;"
 	]
 ]
