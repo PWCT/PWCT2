@@ -14,6 +14,9 @@ class GoalDesignerModel
 
 	oHTMLFunctions = new HTMLFunctions
 
+	# Generate Comments Based on the step type 
+		lGenerateComments = False
+
 	# Add the first step
 		AddStep(0,[:name = T_GD_FirstStep ,
 			      :active = True , 
@@ -192,7 +195,7 @@ class GoalDesignerModel
 
 				nTabs = Copy(Char(9),len(aParent)-nBackTabs) 
 			if x[C_TREEMODEL_CONTENT][:visible] and x[C_TREEMODEL_CONTENT][:active] {
-				if  x[C_TREEMODEL_CONTENT][:steptype] = C_STEPTYPE_COMMENT {
+				if  lGenerateComments and ( x[C_TREEMODEL_CONTENT][:steptype] = C_STEPTYPE_COMMENT ) {
 					if x[C_TREEMODEL_NODEID] != 1 {	# Avoid the Start Point 
 						if trim(x[C_TREEMODEL_CONTENT][:plainname]) != NULL {		
 							cCommentStart = "# "
@@ -215,12 +218,15 @@ class GoalDesignerModel
 			if x[C_TREEMODEL_CONTENT][:visible] {
 				if x[C_TREEMODEL_NODEID] != 1 {		# Avoid the Start Point
 					if  x[C_TREEMODEL_CONTENT][:steptype] = C_STEPTYPE_COMMENT {
-						if trim(x[C_TREEMODEL_CONTENT][:plainname]) != NULL {		
-							cCommentStart = "# "
-							if left(trim(x[C_TREEMODEL_CONTENT][:plainname]),1) = "#" {
-								cCommentStart = ""
-							}					
-							cSteps += nTabs + cCommentStart + x[C_TREEMODEL_CONTENT][:plainname] + nl
+						if trim(x[C_TREEMODEL_CONTENT][:plainname]) != NULL {	
+							aLines = str2list(trim(x[C_TREEMODEL_CONTENT][:plainname]))
+							for cLine in aLines {	
+								cCommentStart = "# "
+								if left(trim(cLine),1) = "#" {
+									cCommentStart = ""
+								}					
+								cSteps += nTabs + cCommentStart + cLine + nl
+							}
 						else 
 							cSteps += nl
 						}

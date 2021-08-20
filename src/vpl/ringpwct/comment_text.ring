@@ -11,8 +11,20 @@ class comment_textComponentController from ComponentControllerParent
 
 	func GenerateAction 
 
+
 		StepIsAComment()
-		NewStep( Variable(:Value) )
+		NewStep(substr(Variable(:Value),nl,nl+"<br>"))
+
+		aLines = str2List(Variable(:Value) )
+		cCode  = ""
+
+		if len(aLines) > 0 {
+			for cLine in aLines {
+				cCode += "# " + cLine + WindowsNL()
+			}
+		}
+
+		setStepCode(cCode)
 
 		return True 
 
