@@ -29,6 +29,7 @@ C_VPL_NAME = 'RingPWCT'
 	load "class.ring"
 	load "clock.ring"
 	load "clockspersecond.ring"
+	load "comment_header.ring"
 	load "comment_newline.ring"
 	load "comment_text.ring"
 	load "confirmmessage.ring"
@@ -409,6 +410,7 @@ C_VPL_NAME = 'RingPWCT'
 	aComponentsFilesList + (cComponentsPath + "class.ring")
 	aComponentsFilesList + (cComponentsPath + "clock.ring")
 	aComponentsFilesList + (cComponentsPath + "clockspersecond.ring")
+	aComponentsFilesList + (cComponentsPath + "comment_header.ring")
 	aComponentsFilesList + (cComponentsPath + "comment_newline.ring")
 	aComponentsFilesList + (cComponentsPath + "comment_text.ring")
 	aComponentsFilesList + (cComponentsPath + "confirmmessage.ring")
