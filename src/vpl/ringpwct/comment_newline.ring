@@ -17,8 +17,8 @@ class comment_newlineComponentController from ComponentControllerParent
 
 		return True 
 
-	func CheckSyntax
-		return True
+	func AfterOpen 
+		OkAction()
 
 class comment_newlineComponentView from ComponentViewParent
 	 
