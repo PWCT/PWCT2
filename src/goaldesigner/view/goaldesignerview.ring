@@ -206,17 +206,17 @@ class GoalDesignerView from WindowsViewParent
 				}
 				if not PWCTIsMobile(:GoalDesignerButtons) {
 					AddWidget(btnInteract)		
-					AddWidget(btnModify)		
+					AddWidget(btnModify)	
+					AddWidget(btnSearch)	
 					AddWidget(btnDeleteStep)
 					AddWidget(btnMoveStepUp)
 					AddWidget(btnMoveStepDown)
-					AddWidget(btnIncreaseSize)
-					AddWidget(btnDecreaseSize)
-					AddWidget(btnIgnore)
 					AddWidget(btnCutSteps)
 					AddWidget(btnCopySteps)
 					AddWidget(btnPasteSteps)
-					AddWidget(btnSearch)
+					AddWidget(btnIgnore)
+					AddWidget(btnIncreaseSize)
+					AddWidget(btnDecreaseSize)
 					AddWidget(btnMax)
 				else
 					AddWidget(btnInteract)		
