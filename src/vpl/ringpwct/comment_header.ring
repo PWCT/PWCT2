@@ -15,7 +15,11 @@ class comment_headerComponentController from ComponentControllerParent
 
 		StepIsAComment()
 
-		cHTML = "<h#{f2} style='color:#{f3}'> #{f1} </h#{f2}>"
+		if Variable(:Value4) {
+			cHTML = "<h#{f2} style='text-align:center ; color:#{f3} ;'> #{f1} </h#{f2}>"
+		else 
+			cHTML = "<h#{f2} style='color:#{f3}'> #{f1} </h#{f2}>"
+		}
 		cHTML = substr(cHTML,"#{f1}",Variable(:Value))
 		cHTML = substr(cHTML,"#{f2}",Variable(:Value2))
 		cHTML = substr(cHTML,"#{f3}",Variable(:Value3))
@@ -31,4 +35,5 @@ class comment_headerComponentView from ComponentViewParent
 		TextBox( T_CT_COMMENT_HEADER_IP_VALUE , :value)	
 		TextBoxValue( T_CT_COMMENT_HEADER_IP_VALUE2 , :value2, "1")	
 		TextBoxValue( T_CT_COMMENT_HEADER_IP_VALUE3 , :value3, T_CT_COMMENT_HEADER_IP_VALUE3_DEFAULT)	
+		CheckBoxValue( T_CT_COMMENT_HEADER_IP_VALUE4, :Value4, 2)
 		PageButtons()
