@@ -9,9 +9,14 @@ class comment_headerComponentController from ComponentControllerParent
 
 	oView = new comment_headerComponentView
 
+	oHTML = new HTMLFunctions
+
 	aAllowEmptyValue = [:value3]
 
 	func GenerateAction 
+
+		cValue = Variable(:Value)
+		cValue = oHTML.HTMLSpecialChars(cValue)
 
 		StepIsAComment()
 
@@ -20,12 +25,16 @@ class comment_headerComponentController from ComponentControllerParent
 		else 
 			cHTML = "<h#{f2} style='color:#{f3}'> #{f1} </h#{f2}>"
 		}
-		cHTML = substr(cHTML,"#{f1}",Variable(:Value))
+		cHTML = substr(cHTML,"#{f1}",cValue)
 		cHTML = substr(cHTML,"#{f2}",Variable(:Value2))
 		cHTML = substr(cHTML,"#{f3}",Variable(:Value3))
 
 		oNode = NewStep(cHTML)
 		setStepCode("# "+ Variable(:value))
+
+		# Workaround to correctly display the mult-lines comments
+		# After we edit a step and increase the number of lines 
+			oNode.setHidden(False)
 
 		return True 
 

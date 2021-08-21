@@ -86,11 +86,7 @@ Class ComponentControllerParent from WindowsControllerParent
 			SaveRoot()
 		}
 		nStepNumber++
-		oNode = AddStep(cStep,nIID,nStepNumber)
-		# Workaround to correctly display the mult-lines comments
-		# After we edit a step and increase the number of lines 
-			oNode.setHidden(False)
-		return oNode
+		return AddStep(cStep,nIID,nStepNumber)
 
 	/*
 		Purpose : Use the goal designer to add new step 

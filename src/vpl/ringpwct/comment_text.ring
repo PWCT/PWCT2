@@ -8,13 +8,17 @@
 class comment_textComponentController from ComponentControllerParent 
 
 	oView = new comment_textComponentView
+	oHTML = new HTMLFunctions
 
 	func GenerateAction 
 
-		StepIsAComment()
-		NewStep(substr(Variable(:Value),nl,nl+"<br>"))
+		cValue = Variable(:Value)
+		cValue = oHTML.HTMLSpecialChars(cValue)
 
-		aLines = str2List(Variable(:Value) )
+		StepIsAComment()
+		oNode = NewStep(substr(cValue,nl,nl+"<br>"))
+
+		aLines = str2List(Variable(:Value))
 		cCode  = ""
 
 		if len(aLines) > 0 {
@@ -23,6 +27,10 @@ class comment_textComponentController from ComponentControllerParent
 			}
 		}
 		setStepCode(cCode)
+
+		# Workaround to correctly display the mult-lines comments
+		# After we edit a step and increase the number of lines 
+			oNode.setHidden(False)	
 
 		return True 
 
