@@ -6,3 +6,6 @@
 */
 
 T_CT_COMMENT_NEWLINE_IP_TITLE = "تعليق - سطر جديد"
+
+T_CT_COMMENT_IP_TYPE		= 	"النوع: "
+T_CT_COMMENT_IP_TYPELIST	= 	["رسم خط","سطر فارغ"]
