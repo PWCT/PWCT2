@@ -42,7 +42,7 @@ Class ComponentControllerParent from WindowsControllerParent
 	/*
 		Purpose : Create a Step as parent to other steps
 		Parameters : The Step Name as string 
-		Output : None
+		Output : Node Object
 	*/
 
 	func NewParentStep cStep
@@ -50,8 +50,7 @@ Class ComponentControllerParent from WindowsControllerParent
 		if nInteractionMode = C_INTERACTIONMODE_MODIFY {
 			nStepID = SelectStep()
 			if nStepID != -1 {
-				EditStepName(cStepName,nStepID)
-				return
+				return EditStepName(cStepName,nStepID)
 			}
 			# In some cases nStepID will become NULL
 			# Like a component generate many steps 
@@ -65,13 +64,14 @@ Class ComponentControllerParent from WindowsControllerParent
 			SaveRoot()
 		}
 		nStepNumber++
-		AddStep(cStep,nIID,nStepNumber)
+		oNode = AddStep(cStep,nIID,nStepNumber)
 		parent().oView.oStepsTree.SetCurrentItem(oItem,0)
+		return oNode
 
 	/*
 		Purpose : Create new step (child) in the steps tree 
 		Parameters : The step name as string 
-		Output : None
+		Output : Node Object
 	*/
 
 	func NewStep cStep
@@ -79,20 +79,19 @@ Class ComponentControllerParent from WindowsControllerParent
 		if nInteractionMode = C_INTERACTIONMODE_MODIFY {
 			nStepID = SelectStep()
 			if nStepID != -1 {
-				EditStepName(cStepName,nStepID)
-				return
+				return EditStepName(cStepName,nStepID)		
 			}
 		}
 		if nInteractionMode != C_INTERACTIONMODE_MODIFY {
 			SaveRoot()
 		}
 		nStepNumber++
-		AddStep(cStep,nIID,nStepNumber)
+		return AddStep(cStep,nIID,nStepNumber)
 
 	/*
 		Purpose : Use the goal designer to add new step 
 		Parameters : Step Name, Step ID and the Step Number (Order)
-		Output : None
+		Output : Node Object
 	*/
 
 	func AddStep cStep,nIID,nStepNumber
@@ -110,6 +109,7 @@ Class ComponentControllerParent from WindowsControllerParent
 			nStepType = C_STEPTYPE_COMMENT
 		}
 		oItem = parent().AddGeneratedStep(cStep,nIID,nStepNumber,nStepType)
+		return oItem
 
 	/*
 		Purpose : Determine if the generated step will allows interaction or not
@@ -142,7 +142,7 @@ Class ComponentControllerParent from WindowsControllerParent
 	/*
 		Purpose : Edit step name 
 		Parameters : The step name and the Step ID
-		Output : None
+		Output : Node Object
 	*/
 
 	func EditStepName cStep,nStepID
@@ -153,6 +153,7 @@ Class ComponentControllerParent from WindowsControllerParent
 			parent().oView.oStepsTree.editstep(oItem,cStep,parent().oModel.GetStepIgnoreStatus(nStepID))
 			cPlainStepName = Parent().oHTMLFunctions.PlainText(cStep)
 			parent().oModel.EditStepName(nStepID,cStep,cPlainStepName)
+			return oItem
 
 	/*
 		Purpose : Save reference to the Root node in the goal designer

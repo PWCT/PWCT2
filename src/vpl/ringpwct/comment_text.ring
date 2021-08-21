@@ -11,9 +11,8 @@ class comment_textComponentController from ComponentControllerParent
 
 	func GenerateAction 
 
-
 		StepIsAComment()
-		NewStep(substr(Variable(:Value),nl,nl+"<br>"))
+		oNode = NewStep(substr(Variable(:Value),nl,nl+"<br>"))
 
 		aLines = str2List(Variable(:Value) )
 		cCode  = ""
@@ -23,8 +22,11 @@ class comment_textComponentController from ComponentControllerParent
 				cCode += "# " + cLine + WindowsNL()
 			}
 		}
-
 		setStepCode(cCode)
+
+		# Workaround to correctly display the mult-lines comments
+		# After we edit a step and increase the number of lines 
+			oNode.setHidden(False)
 
 		return True 
 
