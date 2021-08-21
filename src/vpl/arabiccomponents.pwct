@@ -2,9 +2,9 @@
 
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
-cNaturalLanguageName     = 'Arabic'
-nStepsID                 = 600		
-nInteractionsID          = 585
+cNaturalLanguageName     = 'English'
+nStepsID                 = 603		
+nInteractionsID          = 588
 
 aStepsTable = [
 	[
@@ -118,6 +118,121 @@ aStepsTable = [
 			[
 				"plainname",
 				"بداية سريعة"
+			]
+		]
+	],
+	[
+		601,
+		1,
+		[
+			[
+				"name",
+				"التعليقات"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"
+"
+			],
+			[
+				"interactionid",
+				586
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"التعليقات"
+			]
+		]
+	],
+	[
+		602,
+		601,
+		[
+			[
+				"name",
+				"اضافة تعليق"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"comment_text"
+			],
+			[
+				"interactionid",
+				587
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"اضافة تعليق"
+			]
+		]
+	],
+	[
+		603,
+		601,
+		[
+			[
+				"name",
+				"سطر جديد"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"comment_newline"
+			],
+			[
+				"interactionid",
+				588
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"سطر جديد"
 			]
 		]
 	],
@@ -18824,6 +18939,30 @@ aInteractionsTable = [
 		"10/08/2021",
 		"07:00:30",
 		""
+	],
+	[
+		586,
+		1,
+		"comment_text",
+		"21/08/2021",
+		"11:31:04",
+		"value;;_RV_;;التعليقات;;_RV_;;"
+	],
+	[
+		587,
+		1,
+		"comment_text",
+		"21/08/2021",
+		"11:31:29",
+		"value;;_RV_;;اضافة تعليق;;_RV_;;"
+	],
+	[
+		588,
+		1,
+		"comment_text",
+		"21/08/2021",
+		"11:31:39",
+		"value;;_RV_;;سطر جديد;;_RV_;;"
 	]
 ]
 

@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'English'
-nStepsID                 = 519		
-nInteractionsID          = 505
+nStepsID                 = 520		
+nInteractionsID          = 506
 
 aStepsTable = [
 	[
@@ -232,6 +232,45 @@ aStepsTable = [
 			[
 				"plainname",
 				"Add Comment"
+			]
+		]
+	],
+	[
+		520,
+		514,
+		[
+			[
+				"name",
+				"New Line"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"comment_newline
+"
+			],
+			[
+				"interactionid",
+				506
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"New Line"
 			]
 		]
 	],
@@ -18961,6 +19000,14 @@ aInteractionsTable = [
 		"10/08/2021",
 		"07:00:01",
 		""
+	],
+	[
+		506,
+		1,
+		"comment_text",
+		"21/08/2021",
+		"11:29:46",
+		"value;;_RV_;;New Line;;_RV_;;"
 	]
 ]
 
