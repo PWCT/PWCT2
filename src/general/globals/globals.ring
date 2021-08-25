@@ -161,6 +161,8 @@
 	C_UNDO_INTERACTIONSID 	= 4
 
 # Visible Windows 	
+	lShowFilesToolBar  = True 
+	lShowMainFileToolBar = True
 	lShowFilesManager = True
 	lShowGoalDesigner = True
 	lShowOutputWindow = True

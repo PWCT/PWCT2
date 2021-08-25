@@ -18,7 +18,8 @@ class EnvironmentView from WindowsViewParent
 	oDockFormDesigner
 
 	# Main File Toolbar 
-		tool2 oTxtMainFile
+		oToolBarFiles
+		oToolBarMainFile oTxtMainFile
 
 	nGoalDesignerWindowID
 
@@ -267,7 +268,21 @@ class EnvironmentView from WindowsViewParent
 				addseparator()
 				subApperance = addmenu(T_ENV_MENU_APPEARANCE) # "Appearance"
 				subApperance {
-
+						oAction = new qAction(win) {
+							setCheckable(True)
+							setChecked(lShowFilesToolBar)
+							setclickevent(Method(:FilesToolBarAction))
+							settext(T_ENV_MENU_FILESTOOLBAR) # "Files ToolBar"
+						}
+						addaction(oAction)	
+						oAction = new qAction(win) {
+							setCheckable(True)
+							setChecked(lShowMainFileToolBar)
+							setclickevent(Method(:MainFileToolBarAction))
+							settext(T_ENV_MENU_MAINFILETOOLBAR) # "Main File ToolBar"
+						}
+						addaction(oAction)	
+						addseparator()	
 						if ! isWebAssembly() {
 							oAction = new qAction(win) {
 								setCheckable(True)
@@ -802,7 +817,7 @@ class EnvironmentView from WindowsViewParent
 			}
 		}
 		win {
-			tool1 = addtoolbar("files")  {
+			this.oToolBarFiles = addtoolbar("files")  {
 	  			for x in aBtns { 
 					addwidget(x) addseparator()
 				}
@@ -836,7 +851,7 @@ class EnvironmentView from WindowsViewParent
 				addToolBarBreak(Qt_TopToolBarArea) 
 			}
 			# Main File Toolbar
-			tool2 = addtoolbar("mainfile")  {
+			this.oToolBarMainFile = addtoolbar("mainfile")  {
 				oLblMainFile = new qLabel(this.win) {
 					setText(T_ENV_TOOLBAR_MAINFILE) # "Main File : "
 				}

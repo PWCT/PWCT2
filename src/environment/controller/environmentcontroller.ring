@@ -567,6 +567,13 @@ class EnvironmentController from WindowsControllerParent
 	func FormDesignerWindowAction
 		ToggleVisible(oView.oDockFormDesigner)
 
+
+	func FilesToolBarAction
+		ToggleVisible(oView.oToolBarFiles)
+
+	func MainFileToolBarAction
+		ToggleVisible(oView.oToolBarMainFile)
+
 	/*
 		Purpose : ToggleVisible Action
 		Parameters : None
@@ -743,7 +750,9 @@ class EnvironmentController from WindowsControllerParent
 			    "lShowFilesManager = " + oView.oDockFilesManager.isvisible() + nl +
 			    "lShowGoalDesigner = " + oView.oDockGoalDesigner.isvisible() + nl +
 			    "lShowFormDesigner = " + oView.oDockFormDesigner.isvisible() + nl +
-			    "lShowOutputWindow = " + oView.oDockOutputWindow.isvisible() + nl 
+			    "lShowOutputWindow = " + oView.oDockOutputWindow.isvisible() + nl +
+			    "lShowFilesToolBar = " + oView.oToolBarFiles.isvisible() + nl +
+			    "lShowMainFileToolBar = " + oView.oToolBarMainFile.isvisible() + nl 
 		cSettings = substr(cSettings,nl,char(13)+char(10))
 		write(cSettingsFile,cSettings)
 
@@ -842,6 +851,17 @@ class EnvironmentController from WindowsControllerParent
 			oView.oDockOutputWindow.hide()
 		}
 
+		if lShowFilesToolBar {
+			oView.oToolBarFiles.show()
+		else
+			oView.oToolBarFiles.hide()
+		}
+
+		if lShowMainFileToolBar {
+			oView.oToolBarMainFile.show()
+		else
+			oView.oToolBarMainFile.hide()
+		}
 
 	func GoalDesignerFont
 		# Set The Goal Designer Font
