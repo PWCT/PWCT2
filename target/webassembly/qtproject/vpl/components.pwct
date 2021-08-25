@@ -2,9 +2,9 @@
 
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
-cNaturalLanguageName     = 'Arabic'
-nStepsID                 = 512		
-nInteractionsID          = 500
+cNaturalLanguageName     = 'English'
+nStepsID                 = 522		
+nInteractionsID          = 508
 
 aStepsTable = [
 	[
@@ -51,7 +51,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Templates"
+				"General"
 			],
 			[
 				"active",
@@ -79,13 +79,51 @@ aStepsTable = [
 			],
 			[
 				"plainname",
+				"General"
+			]
+		]
+	],
+	[
+		517,
+		511,
+		[
+			[
+				"name",
+				"Templates"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				504
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
 				"Templates"
 			]
 		]
 	],
 	[
-		512,
-		511,
+		518,
+		517,
 		[
 			[
 				"name",
@@ -101,7 +139,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				500
+				505
 			],
 			[
 				"visible",
@@ -118,6 +156,158 @@ aStepsTable = [
 			[
 				"plainname",
 				"Quick Start"
+			]
+		]
+	],
+	[
+		514,
+		511,
+		[
+			[
+				"name",
+				"Comments"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				502
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Comments"
+			]
+		]
+	],
+	[
+		521,
+		514,
+		[
+			[
+				"name",
+				"Header"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"comment_header"
+			],
+			[
+				"interactionid",
+				507
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Header"
+			]
+		]
+	],
+	[
+		520,
+		514,
+		[
+			[
+				"name",
+				"New Line"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"comment_newline"
+			],
+			[
+				"interactionid",
+				506
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"New Line"
+			]
+		]
+	],
+	[
+		522,
+		514,
+		[
+			[
+				"name",
+				"Comment"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"comment_text"
+			],
+			[
+				"interactionid",
+				508
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Comment"
 			]
 		]
 	],
@@ -18817,12 +19007,52 @@ aInteractionsTable = [
 		""
 	],
 	[
-		500,
+		502,
+		1,
+		"",
+		"18/08/2021",
+		"09:39:27",
+		""
+	],
+	[
+		504,
+		1,
+		"",
+		"18/08/2021",
+		"09:39:42",
+		""
+	],
+	[
+		505,
 		1,
 		"",
 		"10/08/2021",
 		"07:00:01",
 		""
+	],
+	[
+		506,
+		1,
+		"comment_text",
+		"21/08/2021",
+		"11:29:46",
+		"value;;_RV_;;New Line;;_RV_;;"
+	],
+	[
+		507,
+		1,
+		"comment_text",
+		"21/08/2021",
+		"13:19:08",
+		"value;;_RV_;;Header;;_RV_;;"
+	],
+	[
+		508,
+		1,
+		"comment_text",
+		"25/08/2021",
+		"20:37:19",
+		"value;;_RV_;;Comment;;_RV_;;"
 	]
 ]
 

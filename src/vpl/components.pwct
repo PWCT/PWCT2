@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'English'
-nStepsID                 = 521		
-nInteractionsID          = 507
+nStepsID                 = 522		
+nInteractionsID          = 508
 
 aStepsTable = [
 	[
@@ -198,12 +198,12 @@ aStepsTable = [
 		]
 	],
 	[
-		515,
+		521,
 		514,
 		[
 			[
 				"name",
-				"Add Comment"
+				"Header"
 			],
 			[
 				"active",
@@ -211,11 +211,11 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"comment_text"
+				"comment_header"
 			],
 			[
 				"interactionid",
-				503
+				507
 			],
 			[
 				"visible",
@@ -231,7 +231,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Add Comment"
+				"Header"
 			]
 		]
 	],
@@ -274,12 +274,12 @@ aStepsTable = [
 		]
 	],
 	[
-		521,
+		522,
 		514,
 		[
 			[
 				"name",
-				"Header"
+				"Comment"
 			],
 			[
 				"active",
@@ -287,11 +287,11 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"comment_header"
+				"comment_text"
 			],
 			[
 				"interactionid",
-				507
+				508
 			],
 			[
 				"visible",
@@ -307,7 +307,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Header"
+				"Comment"
 			]
 		]
 	],
@@ -19015,14 +19015,6 @@ aInteractionsTable = [
 		""
 	],
 	[
-		503,
-		1,
-		"",
-		"18/08/2021",
-		"09:34:35",
-		""
-	],
-	[
 		504,
 		1,
 		"",
@@ -19053,6 +19045,14 @@ aInteractionsTable = [
 		"21/08/2021",
 		"13:19:08",
 		"value;;_RV_;;Header;;_RV_;;"
+	],
+	[
+		508,
+		1,
+		"comment_text",
+		"25/08/2021",
+		"20:37:19",
+		"value;;_RV_;;Comment;;_RV_;;"
 	]
 ]
 

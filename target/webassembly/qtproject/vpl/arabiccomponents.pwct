@@ -2,9 +2,9 @@
 
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
-cNaturalLanguageName     = 'Arabic'
-nStepsID                 = 600		
-nInteractionsID          = 585
+cNaturalLanguageName     = 'English'
+nStepsID                 = 605		
+nInteractionsID          = 590
 
 aStepsTable = [
 	[
@@ -118,6 +118,159 @@ aStepsTable = [
 			[
 				"plainname",
 				"بداية سريعة"
+			]
+		]
+	],
+	[
+		601,
+		1,
+		[
+			[
+				"name",
+				"التعليقات"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"
+"
+			],
+			[
+				"interactionid",
+				586
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"التعليقات"
+			]
+		]
+	],
+	[
+		604,
+		601,
+		[
+			[
+				"name",
+				"عنوان"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"comment_header"
+			],
+			[
+				"interactionid",
+				589
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"عنوان"
+			]
+		]
+	],
+	[
+		603,
+		601,
+		[
+			[
+				"name",
+				"سطر جديد"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"comment_newline"
+			],
+			[
+				"interactionid",
+				588
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"سطر جديد"
+			]
+		]
+	],
+	[
+		605,
+		601,
+		[
+			[
+				"name",
+				"تعليق"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"comment_text"
+			],
+			[
+				"interactionid",
+				590
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"تعليق"
 			]
 		]
 	],
@@ -18824,6 +18977,38 @@ aInteractionsTable = [
 		"10/08/2021",
 		"07:00:30",
 		""
+	],
+	[
+		586,
+		1,
+		"comment_text",
+		"21/08/2021",
+		"11:31:04",
+		"value;;_RV_;;التعليقات;;_RV_;;"
+	],
+	[
+		588,
+		1,
+		"comment_text",
+		"21/08/2021",
+		"11:31:39",
+		"value;;_RV_;;سطر جديد;;_RV_;;"
+	],
+	[
+		589,
+		1,
+		"comment_text",
+		"21/08/2021",
+		"13:19:40",
+		"value;;_RV_;;عنوان;;_RV_;;"
+	],
+	[
+		590,
+		1,
+		"comment_text",
+		"25/08/2021",
+		"20:38:04",
+		"value;;_RV_;;تعليق;;_RV_;;"
 	]
 ]
 
