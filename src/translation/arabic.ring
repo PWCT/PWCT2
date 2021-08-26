@@ -46,6 +46,9 @@
 	T_ENV_MENU_OUTPUTWINDOW = "نافذة النتائج"
 	T_ENV_MENU_FORMDESIGNERWINDOW = "نافذة مصمم النماذج"
 	T_ENV_MENU_APPEARANCE = "ظهور النوافذ"
+	T_ENV_MENU_FILESTOOLBAR = "شريط أدوات الملفات"
+	T_ENV_MENU_MAINFILETOOLBAR = "شريط أدوات الملف الرئيسي"
+	T_ENV_MENU_STATUSBAR = "شريط حالة بيئة العمل"
 
 	T_ENV_MENU_MODE 			= "نمط بيئة العمل"
 	T_ENV_MENU_MODE_GENERAL 		= "عام - كل النوافذ"

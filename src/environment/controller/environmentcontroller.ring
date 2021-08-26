@@ -574,6 +574,9 @@ class EnvironmentController from WindowsControllerParent
 	func MainFileToolBarAction
 		ToggleVisible(oView.oToolBarMainFile)
 
+	func StatusBarAction
+		ToggleVisible(oView.oStatusBar)
+
 	/*
 		Purpose : ToggleVisible Action
 		Parameters : None
@@ -752,7 +755,8 @@ class EnvironmentController from WindowsControllerParent
 			    "lShowFormDesigner = " + oView.oDockFormDesigner.isvisible() + nl +
 			    "lShowOutputWindow = " + oView.oDockOutputWindow.isvisible() + nl +
 			    "lShowFilesToolBar = " + oView.oToolBarFiles.isvisible() + nl +
-			    "lShowMainFileToolBar = " + oView.oToolBarMainFile.isvisible() + nl 
+			    "lShowMainFileToolBar = " + oView.oToolBarMainFile.isvisible() + nl +
+				"lShowStatusBar = " + oView.oStatusBar.isvisible() + nl 
 		cSettings = substr(cSettings,nl,char(13)+char(10))
 		write(cSettingsFile,cSettings)
 
@@ -861,6 +865,12 @@ class EnvironmentController from WindowsControllerParent
 			oView.oToolBarMainFile.show()
 		else
 			oView.oToolBarMainFile.hide()
+		}
+
+		if lShowStatusBar {
+			oView.oStatusBar.show()
+		else
+			oView.oStatusBar.hide()
 		}
 
 	func GoalDesignerFont
@@ -1393,7 +1403,6 @@ class EnvironmentController from WindowsControllerParent
 		C_COMPONENTSBROWSER_COLOR		= '#ffffff'
 		C_INTERACTIONPAGE_TITLECOLOR		= '#ffffff'
 		C_INTERACTIONPAGE_TITLEBACKCOLOR	= "#000064"
-	
 
 	func StyleFusionBlue 
 		PWCT_APP.StylefusionCustom(

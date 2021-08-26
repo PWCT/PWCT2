@@ -47,6 +47,7 @@
 	T_ENV_MENU_FORMDESIGNERWINDOW = "Form Designer Window"
 	T_ENV_MENU_FILESTOOLBAR = "Files Toolbar"
 	T_ENV_MENU_MAINFILETOOLBAR = "Main File Toolbar"
+	T_ENV_MENU_STATUSBAR = "Environment Statusbar"
 
 	T_ENV_MENU_APPEARANCE = "Appearance"
 

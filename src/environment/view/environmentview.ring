@@ -282,6 +282,13 @@ class EnvironmentView from WindowsViewParent
 							settext(T_ENV_MENU_MAINFILETOOLBAR) # "Main File ToolBar"
 						}
 						addaction(oAction)	
+						oAction = new qAction(win) {
+							setCheckable(True)
+							setChecked(lShowStatusBar)
+							setclickevent(Method(:StatusBarAction))
+							settext(T_ENV_MENU_STATUSBAR) # "Status ToolBar"
+						}
+						addaction(oAction)	
 						addseparator()	
 						if ! isWebAssembly() {
 							oAction = new qAction(win) {

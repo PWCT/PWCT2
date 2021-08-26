@@ -163,6 +163,7 @@
 # Visible Windows 	
 	lShowFilesToolBar  = True 
 	lShowMainFileToolBar = True
+	lShowStatusBar = True
 	lShowFilesManager = True
 	lShowGoalDesigner = True
 	lShowOutputWindow = True
