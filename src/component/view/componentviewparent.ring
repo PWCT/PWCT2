@@ -174,7 +174,7 @@ class ComponentViewParent from WindowsViewParent
 	/*
 		Purpose : Display Checkbox and Textbox
 		Parameters : The Title and the Variable Name
-		Output : list [The Checkbox Object,The ListBox Object]
+		Output : list [The Checkbox Object,The Textbox Object]
 	*/
 
 	func CheckBoxTextBox cText,cVariable
@@ -279,7 +279,8 @@ class ComponentViewParent from WindowsViewParent
 			}
 			setCurrentRow(0,3)
 			setminimumwidth(200)
-			setminimumheight(100)			
+			setminimumheight(100)	
+			setitemdoubleclickedevent(Method(:OkAction))
 		}
 		if lSearchTextbox {
 			oLayoutV = new qVBoxLayout() {
