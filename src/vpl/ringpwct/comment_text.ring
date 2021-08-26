@@ -13,7 +13,9 @@ class comment_textComponentController from ComponentControllerParent
 	func GenerateAction 
 
 		cValue = Variable(:Value)
-		cValue = oHTML.HTMLSpecialChars(cValue)
+		if ! variable(:Value2) {
+			cValue = oHTML.HTMLSpecialChars(cValue)
+		}
 
 		StepIsAComment()
 		oNode = NewStep(substr(cValue,nl,nl+"<br>"))
@@ -41,4 +43,5 @@ class comment_textComponentView from ComponentViewParent
 	 
 		Title( T_CT_COMMENT_TEXT_IP_TITLE )	
 		EditBox( T_CT_COMMENT_TEXT_IP_VALUE , :value)
+		CheckBoxValue( T_CT_COMMENT_TEXT_IP_VALUE2 , :Value2, False)
 		PageButtons()

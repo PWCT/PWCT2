@@ -450,7 +450,7 @@ class ComponentViewParent from WindowsViewParent
 					cValue = find(aListItems,(0+cValue),1)
 				oObject.setcurrentrow((0+cValue)-1,2 | dec("10"))
 			case C_INTERACTION_CT_EDITBOX 
-				oObject.setText(cValue)
+				oObject.setPlainText(cValue)
 			}
 		}
 
