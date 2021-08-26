@@ -108,10 +108,10 @@
 	C_STEPSTREE_AVOIDCOMPONENTSBROWSER		= False
 	C_STEPSTREE_AVOIDCOMPONENTSBROWSERAUTOCOMPLETE	= False
 	C_STEPSTREE_COMPONENTSBROWSERALWAYSSHOWSEARCHWINDOW = False
-	C_STEPSTREE_LIGHTTREELINES = False 
-	C_STEPSTREE_ALLOWSYNTAXERRORS = False
-	C_STEPSTREE_NODEICON = True
-	C_STEPSTREE_HIDESTEPCODETAB = True
+	C_STEPSTREE_LIGHTTREELINES	= False 
+	C_STEPSTREE_ALLOWSYNTAXERRORS	= False
+	C_STEPSTREE_NODEICON		= True
+	C_STEPSTREE_HIDESTEPCODETAB	= True
 
 
 	C_COMMENTMARK = "// "
@@ -161,10 +161,10 @@
 	C_UNDO_INTERACTIONSID 	= 4
 
 # Visible Windows 	
-	lShowFilesToolBar  = True 
-	lShowMainFileToolBar = True
-	lShowStatusBar = True
-	lShowFilesManager = True
-	lShowGoalDesigner = True
-	lShowOutputWindow = True
-	lShowFormDesigner = True 
+	lShowFilesToolBar	= True 
+	lShowMainFileToolBar	= True
+	lShowStatusBar		= True
+	lShowFilesManager	= True
+	lShowGoalDesigner	= True
+	lShowOutputWindow	= True
+	lShowFormDesigner	= True 

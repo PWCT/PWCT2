@@ -717,7 +717,7 @@ class EnvironmentController from WindowsControllerParent
 		cFont = parent().cFont
 		nFontSize = parent().oView.oStepsTree.nFontSize
 		cSettings = "C_STEPCOLOR_COMMENT_TEXT = '" + C_STEPCOLOR_COMMENT_TEXT + "'" + nl + 
-				 "C_STEPCOLOR_COMMENT_BACKCOLOR = '" + C_STEPCOLOR_COMMENT_BACKCOLOR + "'" + nl + 
+				"C_STEPCOLOR_COMMENT_BACKCOLOR = '" + C_STEPCOLOR_COMMENT_BACKCOLOR + "'" + nl + 
 				"C_STEPCOLOR_ROOT_TEXT = '" + C_STEPCOLOR_ROOT_TEXT + "'" + nl + 
 				"C_STEPCOLOR_ROOT_BACKCOLOR = '" + C_STEPCOLOR_ROOT_BACKCOLOR + "'" + nl + 
 				"C_STEPCOLOR_ALLOWINTERACTION_TEXT = '" + C_STEPCOLOR_ALLOWINTERACTION_TEXT + "'" + nl + 
@@ -749,13 +749,13 @@ class EnvironmentController from WindowsControllerParent
 				"C_ENV_DEFAULT_MODE = " + C_ENV_DEFAULT_MODE + nl + 
 				"C_ENV_DEFAULT_LANG = " + C_ENV_DEFAULT_LANG + nl + 
 				"cFont = '" + cFont + "'" + nl + 
-			    "nFontSize = " + nFontSize  + nl + 
-			    "lShowFilesManager = " + oView.oDockFilesManager.isvisible() + nl +
-			    "lShowGoalDesigner = " + oView.oDockGoalDesigner.isvisible() + nl +
-			    "lShowFormDesigner = " + oView.oDockFormDesigner.isvisible() + nl +
-			    "lShowOutputWindow = " + oView.oDockOutputWindow.isvisible() + nl +
-			    "lShowFilesToolBar = " + oView.oToolBarFiles.isvisible() + nl +
-			    "lShowMainFileToolBar = " + oView.oToolBarMainFile.isvisible() + nl +
+				"nFontSize = " + nFontSize  + nl + 
+				"lShowFilesManager = " + oView.oDockFilesManager.isvisible() + nl +
+				"lShowGoalDesigner = " + oView.oDockGoalDesigner.isvisible() + nl +
+				"lShowFormDesigner = " + oView.oDockFormDesigner.isvisible() + nl +
+				"lShowOutputWindow = " + oView.oDockOutputWindow.isvisible() + nl +
+				"lShowFilesToolBar = " + oView.oToolBarFiles.isvisible() + nl +
+				"lShowMainFileToolBar = " + oView.oToolBarMainFile.isvisible() + nl +
 				"lShowStatusBar = " + oView.oStatusBar.isvisible() + nl 
 		cSettings = substr(cSettings,nl,char(13)+char(10))
 		write(cSettingsFile,cSettings)
