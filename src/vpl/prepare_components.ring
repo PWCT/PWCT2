@@ -1,5 +1,7 @@
 load "stdlib.ring"
 
+? "Started"
+
 aFiles = dir("ringpwct")
 aFiles2 = []
 
@@ -38,5 +40,8 @@ for cFile in aFiles2
 	cContent += (Char(9) + 'aComponentsFilesList + (cComponentsPath + "' + cFile + '")' + nl)
 next
 
+? "Writing ringpwct.ring"
 cContent = substr(cContent,nl,windowsnl())
 write("ringpwct\ringpwct.ring",cContent)
+
+? "Done"
