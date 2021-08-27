@@ -1104,7 +1104,8 @@ class VSFGenerator
 		cValue = Trim(cValue)
 		# Use the Interaction Page
 			nIID = UseComponent("comment_text",[
-				:value 		= cValue
+				:value 		= cValue,
+				:value2 	= False
 			])
 
 		# Generate the Step and the Code
