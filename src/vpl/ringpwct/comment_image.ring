@@ -13,7 +13,7 @@ class comment_imageComponentController from ComponentControllerParent
 
 		cValue = Variable(:Value)
 
-		cStep = `<img src="` + cValue + `">`
+		cStep = `<img src="#{PWCT_CURRENT_PATH}` + cValue + `">`
 		StepIsAComment()
 		oNode = NewStep(cStep)
 

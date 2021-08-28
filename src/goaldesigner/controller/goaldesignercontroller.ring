@@ -243,6 +243,8 @@ class GoalDesignerController from WindowsControllerParent
 		)
 		SetStepColor(nStepType)
 
+		cStepName = ProcessStepName(cStepName)
+
 		if nInsertIndex = -1 {
 			oItem = oView.oStepsTree.AddStep(nParentID,nStepID,cStepName)
 		else 
@@ -250,6 +252,10 @@ class GoalDesignerController from WindowsControllerParent
 		}
 		UpdateTheTimeMachine()
 		return oItem
+
+	func ProcessStepName cStepName 
+		cStepName = substr(cStepName,"#{PWCT_CURRENT_PATH}","")
+		return cStepName
 
 	/*
 		Purpose : Set Step Color
@@ -1066,6 +1072,8 @@ class GoalDesignerController from WindowsControllerParent
 			lIgnore		= not aStep[C_TREEMODEL_CONTENT][:active]
 			nStepType	= aStep[C_TREEMODEL_CONTENT][:steptype]
 			nInsertIndex = -1
+			# Process Step Name (To support displaying images)
+				cText = processStepName(cText)
 			# When we add step in location that doesn't support children (Not Start Here)
 				if lUpdateParent and aStep[C_TREEMODEL_PARENTID] = aStepsTree[2][C_TREEMODEL_PARENTID] {
 					oItem = oView.oStepsTree.GetObjByID(nParentID)

@@ -150,6 +150,7 @@ Class ComponentControllerParent from WindowsControllerParent
 			nStepType = parent().oModel.GetStepType(nStepID)
 			parent().SetStepColor(nStepType)
 		# Modify the step
+			cStep = parent().processStepName(cStep)
 			parent().oView.oStepsTree.editstep(oItem,cStep,parent().oModel.GetStepIgnoreStatus(nStepID))
 			cPlainStepName = Parent().oHTMLFunctions.PlainText(cStep)
 			parent().oModel.EditStepName(nStepID,cStep,cPlainStepName)
