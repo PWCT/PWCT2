@@ -254,7 +254,8 @@ class GoalDesignerController from WindowsControllerParent
 		return oItem
 
 	func ProcessStepName cStepName 
-		cStepName = substr(cStepName,"#{PWCT_CURRENT_PATH}","")
+		cCurrentFileDir = JustFilePath(oVisualSourceFile.cFileName)
+		cStepName = substr(cStepName,"#{PWCT_CURRENT_PATH}",cCurrentFileDir)
 		return cStepName
 
 	/*
