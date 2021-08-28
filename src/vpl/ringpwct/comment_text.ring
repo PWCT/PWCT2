@@ -15,10 +15,11 @@ class comment_textComponentController from ComponentControllerParent
 		cValue = Variable(:Value)
 		if ! variable(:Value2) {
 			cValue = oHTML.HTMLSpecialChars(cValue)
+			cValue = substr(cValue,nl,nl+"<br>")
 		}
 
 		StepIsAComment()
-		oNode = NewStep(substr(cValue,nl,nl+"<br>"))
+		oNode = NewStep(cValue)
 
 		aLines = str2List(Variable(:Value))
 		cCode  = ""
