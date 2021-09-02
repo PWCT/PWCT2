@@ -861,10 +861,14 @@ class EnvironmentController from WindowsControllerParent
 			oView.oToolBarFiles.hide()
 		}
 
-		if lShowMainFileToolBar {
-			oView.oToolBarMainFile.show()
-		else
-			oView.oToolBarMainFile.hide()
+		if ! PWCTIsMobile(:MainToolBar) {
+
+			if lShowMainFileToolBar {
+				oView.oToolBarMainFile.show()
+			else
+				oView.oToolBarMainFile.hide()
+			}
+	
 		}
 
 		if lShowStatusBar {
