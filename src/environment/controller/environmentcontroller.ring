@@ -742,6 +742,7 @@ class EnvironmentController from WindowsControllerParent
 				"C_STEPSTREE_ALLOWSYNTAXERRORS = " + C_STEPSTREE_ALLOWSYNTAXERRORS + nl + 
 				"C_STEPSTREE_NODEICON = " + C_STEPSTREE_NODEICON + nl + 
 				"C_STEPSTREE_HIDESTEPCODETAB = " + C_STEPSTREE_HIDESTEPCODETAB + nl + 
+				"C_PROPERTIES_REFLECTCHANGEINFONTSIZE = " + C_PROPERTIES_REFLECTCHANGEINFONTSIZE + nl + 
 				"C_COMPONENTSBROWSER_COLOR = '" + C_COMPONENTSBROWSER_COLOR + "'" + nl + 
 				"C_INTERACTIONPAGE_TITLECOLOR = '" + C_INTERACTIONPAGE_TITLECOLOR + "'" + nl + 
 				"C_INTERACTIONPAGE_TITLEBACKCOLOR = '" + C_INTERACTIONPAGE_TITLEBACKCOLOR + "'" + nl + 
@@ -1320,8 +1321,10 @@ class EnvironmentController from WindowsControllerParent
 		}
 		parent().ComponentsBrowserWindow().oView.oComponentsTree.TreeStyle()
 		parent().refreshStepsTree()
-		oView.oFilesTree.UpdateFontSize()
-		OutputWindowFont()
+		if C_PROPERTIES_REFLECTCHANGEINFONTSIZE { 
+			oView.oFilesTree.UpdateFontSize()
+			OutputWindowFont()
+		}
 
 	func StyleWindows
 		if isWindows() {

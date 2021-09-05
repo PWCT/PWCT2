@@ -249,7 +249,12 @@ class StepsColorsView from WindowsViewParent
 			setText(T_SC_HIDESTEPCODETAB) # "Steps Tree - Hide Step Code Tab"
 			setChecked(C_STEPSTREE_HIDESTEPCODETAB)
 			setStateChangedEvent(Method(:HideStepCodeTab))
-		}   
+		}
+		checkReflectChangesInFontSize = new QCheckBox(pageOptions) {
+			setText(T_SC_REFLECTCHANGESINFONTSIZE) # "Reflect changes in font size to other windows"
+			setChecked(C_PROPERTIES_REFLECTCHANGEINFONTSIZE)
+			setStateChangedEvent(Method(:ReflectChangesInFontSize))
+		}    
 		btnClose = new qpushbutton(pageOptions) {
 			setText(T_SC_CLOSE) # "Close"
 			setclickevent(Method(:closeAction))
@@ -284,6 +289,7 @@ class StepsColorsView from WindowsViewParent
 			AddWidget(checkAvoidComponentsBrowser)
 			AddWidget(checkAvoidComponentsBrowserAutoComplete)
 			AddWidget(checkComponentsBrowserAlwaysShowSearchWindow)
+			AddWidget(checkReflectChangesInFontSize)
 			insertStretch( -1, 1 )
 		}
 

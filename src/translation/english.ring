@@ -252,6 +252,7 @@
 	T_SC_ALLOWSYNTAXERRORS = "Allow Syntax Errors in Interaction Pages"
 	T_SC_NODEICON = "Steps Tree - Show Nodes Icon"
 	T_SC_HIDESTEPCODETAB = "Steps Tree - Hide Step Code Tab"
+	T_SC_REFLECTCHANGESINFONTSIZE = "Reflect changes in font size to other windows"
 
 # Components Browser Window
 

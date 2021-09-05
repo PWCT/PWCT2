@@ -173,3 +173,6 @@ class StepsColorsController from WindowsControllerParent
 				oView.oTab.tabbar().show()
 			}
 		}
+
+	func ReflectChangesInFontSize
+		C_PROPERTIES_REFLECTCHANGEINFONTSIZE =  oView.checkReflectChangesInFontSize.checkState()

@@ -249,6 +249,7 @@
 	T_SC_ALLOWSYNTAXERRORS = "السماح بالأخطاء النحوية فى الصفحات التفاعلية"
 	T_SC_NODEICON = "شجرة الخطوات - عرض ايقونة لكل عنصر"
 	T_SC_HIDESTEPCODETAB = "شجرة الخطوات - إخفاء تعليمات الخطوة"
+	T_SC_REFLECTCHANGESINFONTSIZE = "ضبط التغيرات فى حجم الخط فى مختلف النوافذ"
 
 # Components Browser Window
 

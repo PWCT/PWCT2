@@ -5,7 +5,7 @@
 **	Author 		: Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-C_COMPONENT_CONTROLSFONTSIZE = 16
+C_COMPONENT_CONTROLSFONTSIZE = 12
 
 class ComponentViewParent from WindowsViewParent
 
