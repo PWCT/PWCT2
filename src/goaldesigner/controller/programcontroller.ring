@@ -10,20 +10,20 @@ Class ProgramController
 	cFileName = C_FILENONAME 		# "noname.ring"
 	cSourceCode = ""
 	cCurrentDir = CurrentDir() + "/"	# The Goal Designer Folder
-	cDebugBatch = "run"
-	cRunBatch = "run2"
-	cRunGUIBatch = "run2"
+
+	if isWindows() {
+		cDebugBatch = CurrentDir() + "\batch\run.bat"
+		cRunBatch = CurrentDir() + "\batch\run2.bat"
+	else 
+		cDebugBatch = CurrentDir() + "/batch/run.sh"
+		cRunBatch = CurrentDir() + "/batch/run2.sh"
+	}
 
 	lSetFocusToInput = False
-
 	oState = NULL
-
 	cWebApplicationFolder = ""
-
 	lMainFile	= False
-
 	cOutputFileText = ""
-
 	lTestQML = False
 
 	/*
@@ -37,7 +37,7 @@ Class ProgramController
 		if PWCTIsMobile(:RunApplication) {
 			RunOnMobile(oGD)
 		else
-			RunBatch(cDebugBatch,"")
+			RunBatch(cDebugBatch)
 		}
 
 	/*
@@ -51,7 +51,7 @@ Class ProgramController
 		if PWCTIsMobile(:RunApplication) {
 			RunOnMobile(oGD)
 		else
-			RunBatch(cRunBatch,"")
+			RunBatch(cRunBatch)
 		}
 
 	/*
@@ -75,6 +75,7 @@ Class ProgramController
 	*/
 
 	func RunGUIDesktop oGD
+		cFile = FileNameEncoding(cFileName)
 		if oGD.lFullScreen = False {
 			oGD.parent().oView.oDockOutputWindow.raise()
 		}
@@ -83,8 +84,13 @@ Class ProgramController
 			oGD.parent().oView.oProcessText.setFocus(0)
 		}
 		cDir = currentdir()
-		chdir(JustFilePath(cFileName))
-		oGD.parent().oView.oProcess = RunProcess("ring",cFileName,oGD.parent().Method(:GetDataAction))
+		chdir(JustFilePath(cFile))
+		if isBatchFile(cFile) {
+			cCode = RunBatchFile(cFile)
+			oGD.parent().oView.oProcess = RunProcess(cCode,"",oGD.parent().Method(:GetDataAction))
+		else 
+			oGD.parent().oView.oProcess = RunProcess("ring",cFile,oGD.parent().Method(:GetDataAction))
+		}
 		chdir(cDir)
 
 	/*
@@ -96,6 +102,7 @@ Class ProgramController
 		RunWebApplication(oGD,cFileName)
 
 	func RunWebApplication oGD,cFile
+		cFile = FileNameEncoding(cFile)
 		if isWindows() 
 			if cWebApplicationFolder != JustFilePath(cFile)
 				cWebApplicationFolder = JustFilePath(cFile)
@@ -104,7 +111,7 @@ Class ProgramController
 					PrepareConfigurationFile() 
 					cServerExe = getserverExeFile()
 				}	
-				oGD.parent().oView.oProcess = RunProcess(cCurrentDir + "killwebserver.bat","",oGD.parent().Method(:GetDataAction))			
+				oGD.parent().oView.oProcess = RunProcess(cCurrentDir + "batch\killwebserver.bat","",oGD.parent().Method(:GetDataAction))			
 				oGD.parent().oView.oProcess.waitForFinished(3000)
 				oWebServerProcess = RunProcess(cServerEXE,"",oGD.parent().Method(:GetDataAction))			
 				sleep(3)
@@ -265,11 +272,36 @@ Class ProgramController
 			Output : None
 		*/
 
-		func RunBatch cFile,cPara
+		func RunBatch cFile
 			if iswindows() {
-				cCode = 'start '+cPara+ " " +
-					cCurrentDir+cFile+' "' + cFileName + '"' + nl
+				cCode = 'start ' +
+					cFile+' "' + cFileName + '"' + nl
 			else
 				cCode = 'cd $(dirname "'+cFileName+'") ; ' + ' ring "' + cFileName + '"'  + nl
 			}			
 			system(cCode)
+
+		func isBatchFile cFile 
+			if right(lower(trim(cFile)),4) = ".bat" or 
+				right(lower(trim(cFile)),3) = ".sh"
+				return True 
+			ok
+			return False 
+	
+		func RunBatchFile cFile
+			if iswindows()
+				chdir(JustFilePath(cFile))
+				cCode = cFile
+			else
+				cCode = 'cd $(dirname "'+cFile+'") ; ' + './' + cFile +  nl
+			ok
+			return cCode 
+
+
+		func FileNameEncoding cFileName
+			if isWindows()
+				oString = new qString2()
+				oString.Append(cFileName)
+				return oString.tolocal8bit().data()
+			ok
+			return cFileName
