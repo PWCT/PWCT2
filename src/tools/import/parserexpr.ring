@@ -417,7 +417,7 @@ class ParserExpr
 		/* Factor --> Literal --> ':' Identifier */
 		if isoperator2(OP_RANGE) {
 			nexttoken()
-			if isidentifier() or isanykeyword() {
+			if isidentifier() or isanykeyword() or isNumber() {
 				/* Generate Code */
 					if isAnyKeyword() {
 						cBuffer += lower(aKeywords[0+aActiveToken[C_TOKENVALUE]])
