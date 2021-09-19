@@ -1,4 +1,4 @@
-/* Copyright (c) 2013-2019 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2021 Mahmoud Fayed <msfclipper@yahoo.com> */
 #include "ring.h"
 /* Functions */
 
@@ -419,19 +419,19 @@ void ring_scanner_keywords ( Scanner *pScanner )
 	ring_list_genhashtable_gc(pScanner->pRingState,pScanner->Keywords);
 }
 
-void ring_scanner_addtoken ( Scanner *pScanner,int type )
+void ring_scanner_addtoken ( Scanner *pScanner,int nType )
 {
 	List *pList  ;
 	assert(pScanner != NULL);
 	pList = ring_list_newlist_gc(pScanner->pRingState,pScanner->Tokens);
 	/* Add Token Type */
-	ring_list_addint_gc(pScanner->pRingState,pList,type);
+	ring_list_addint_gc(pScanner->pRingState,pList,nType);
 	/* Add Token Text */
-	ring_list_addstring_gc(pScanner->pRingState,pList,ring_string_get(pScanner->ActiveToken));
+	ring_list_addstring_gc(pScanner->pRingState,pList,ring_scanner_processtoken(pScanner,nType));
 	/* Add Token Index */
 	ring_list_addint_gc(pScanner->pRingState,pList,pScanner->nTokenIndex);
 	pScanner->nTokenIndex = 0 ;
-	ring_scanner_floatmark(pScanner,type);
+	ring_scanner_floatmark(pScanner,nType);
 	ring_string_set_gc(pScanner->pRingState,pScanner->ActiveToken,"");
 }
 
@@ -498,11 +498,18 @@ int ring_scanner_isnumber ( char *cStr )
 	for ( x = 0 ; x < strlen(cStr) ; x++ ) {
 		/* Accept Hexadecimal values */
 		if ( (x == 0) && (strlen(cStr) > 2) ) {
-			/* Support 0x */
-			if ( (cStr[0] == '0') && ( (cStr[1] == 'x') || (cStr[1] == 'X') ) ) {
-				lHex = 1 ;
-				x++ ;
-				continue ;
+			if ( cStr[0] == '0' ) {
+				x2 = x ;
+				/* Support Many Zeros */
+				while ( (cStr[x2] == '0') && x2 < strlen(cStr) - 1 ) {
+					x2++ ;
+				}
+				/* Support 0x */
+				if ( (cStr[x2] == 'x') || (cStr[x2] == 'X') ) {
+					lHex = 1 ;
+					x = x2+1 ;
+					continue ;
+				}
 			}
 		}
 		if ( lHex ) {
@@ -634,19 +641,19 @@ const char * ring_scanner_lasttokenvalue ( Scanner *pScanner )
 	return "" ;
 }
 
-void ring_scanner_floatmark ( Scanner *pScanner,int type )
+void ring_scanner_floatmark ( Scanner *pScanner,int nType )
 {
 	List *pList  ;
 	String *pString  ;
 	assert(pScanner != NULL);
 	switch ( pScanner->FloatMark ) {
 		case 0 :
-			if ( type == SCANNER_TOKEN_NUMBER ) {
+			if ( nType == SCANNER_TOKEN_NUMBER ) {
 				pScanner->FloatMark = 1 ;
 			}
 			break ;
 		case 1 :
-			if ( (type == SCANNER_TOKEN_OPERATOR) && ( strcmp(ring_string_get(pScanner->ActiveToken) , "." ) == 0  ) ) {
+			if ( (nType == SCANNER_TOKEN_OPERATOR) && ( strcmp(ring_string_get(pScanner->ActiveToken) , "." ) == 0  ) ) {
 				pScanner->FloatMark = 2 ;
 			}
 			else {
@@ -654,7 +661,7 @@ void ring_scanner_floatmark ( Scanner *pScanner,int type )
 			}
 			break ;
 		case 2 :
-			if ( type == SCANNER_TOKEN_NUMBER ) {
+			if ( nType == SCANNER_TOKEN_NUMBER ) {
 				pList = ring_list_getlist(pScanner->Tokens,ring_list_getsize(pScanner->Tokens));
 				pString = ring_string_new_gc(pScanner->pRingState,ring_list_getstring(pList,2)) ;
 				ring_list_deleteitem_gc(pScanner->pRingState,pScanner->Tokens,ring_list_getsize(pScanner->Tokens));
@@ -935,4 +942,31 @@ void ring_scanner_readtwoparameters ( Scanner *pScanner,const char *cStr )
 			}
 		}
 	}
+}
+
+const char * ring_scanner_processtoken ( Scanner *pScanner,int nType )
+{
+	char *pStart, *pChar  ;
+	int t,nPos,nSize  ;
+	pStart = ring_string_get(pScanner->ActiveToken);
+	if ( nType == SCANNER_TOKEN_NUMBER ) {
+		/* Remove Many Zeros in the Start */
+		pChar = pStart ;
+		nSize = strlen(pChar) ;
+		nPos = 0 ;
+		if ( nSize > 0 ) {
+			if ( pChar[0] == '0' ) {
+				for ( t = 1 ; t < nSize ; t++ ) {
+					if ( ( pChar[t-1] == '0') && (pChar[t] == '0') ) {
+						nPos++ ;
+					}
+					if ( (pChar[t] == 'x' ) || (pChar[t] == 'X') ) {
+						break ;
+					}
+				}
+				pStart += nPos ;
+			}
+		}
+	}
+	return pStart ;
 }

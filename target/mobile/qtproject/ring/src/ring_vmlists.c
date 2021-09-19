@@ -84,15 +84,12 @@ void ring_vm_listitem ( VM *pVM )
 	Item *pItem  ;
 	pList = (List *) ring_list_getpointer(pVM->pNestedLists,ring_list_getsize(pVM->pNestedLists));
 	if ( RING_VM_STACK_ISSTRING ) {
-		cStr1 = ring_string_new_gc(pVM->pRingState,RING_VM_STACK_READC);
+		ring_list_addstring_gc(pVM->pRingState,pList, RING_VM_STACK_READC);
 		RING_VM_STACK_POP ;
-		ring_list_addstring_gc(pVM->pRingState,pList, ring_string_get(cStr1));
-		ring_string_delete_gc(pVM->pRingState,cStr1);
 	}
 	else if ( RING_VM_STACK_ISNUMBER ) {
-		nNum1 = RING_VM_STACK_READN ;
+		ring_list_adddouble_gc(pVM->pRingState,pList, RING_VM_STACK_READN);
 		RING_VM_STACK_POP ;
-		ring_list_adddouble_gc(pVM->pRingState,pList, nNum1);
 	}
 	else if ( RING_VM_STACK_ISPOINTER ) {
 		/* We use a Temp. list (pList4) to support adding the list to itself by value */
@@ -426,4 +423,30 @@ void ring_vm_cleansetpropertylist ( VM *pVM )
 	if ( ring_list_getsize(pVM->aSetProperty) > 0 ) {
 		ring_list_deleteitem_gc(pVM->pRingState,pVM->aSetProperty,ring_list_getsize(pVM->aSetProperty));
 	}
+}
+
+int ring_vm_isoperationaftersublist ( VM *pVM )
+{
+	int nOPCode  ;
+	List *pParent, *pSub, *pVar  ;
+	if ( pVM->nListStart > 0 ) {
+		nOPCode = (pVM->pByteCode + pVM->nPC - 3)->aData[0]->data.iNumber ;
+		if ( nOPCode == ICO_LISTEND ) {
+			/* Get the Parent List */
+			pParent = (List *) ring_list_getpointer(pVM->pNestedLists,ring_list_getsize(pVM->pNestedLists));
+			/* Get the Sub List */
+			pSub = ring_list_getlist(pParent,ring_list_getsize(pParent));
+			/* Create a Temp. variable for the sub list */
+			ring_vm_createtemplist(pVM);
+			pVar = (List *) RING_VM_STACK_READP ;
+			ring_list_setint_gc(pVM->pRingState,pVar, RING_VAR_TYPE ,RING_VM_LIST);
+			ring_list_setlist_gc(pVM->pRingState,pVar, RING_VAR_VALUE);
+			ring_list_deleteallitems_gc(pVM->pRingState,ring_list_getlist(pVar,RING_VAR_VALUE));
+			ring_vm_list_copy(pVM,ring_list_getlist(pVar,RING_VAR_VALUE),pSub);
+			/* Delete the sub list from the Parent List */
+			ring_list_deleteitem_gc(pVM->pRingState,pParent,ring_list_getsize(pParent));
+			return 1 ;
+		}
+	}
+	return 0 ;
 }

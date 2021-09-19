@@ -112,6 +112,7 @@
 		char lCheckOverFlow  ;
 		char lAddSubListsByMove  ;
 		char lAddSubListsByFastCopy  ;
+		char lExitFlag  ;
 	} VM ;
 	typedef struct VMState {
 		int aNumbers[RING_VM_STATE_NUMBERS_COUNT]  ;
@@ -269,10 +270,11 @@
 	#define RING_STATE_RETURN 3
 	/* Memory */
 	#define RING_MEMORY_GLOBALSCOPE 1
-	/* List as Hash */
+	/* Lists & List as Hash */
 	#define RING_LISTHASH_KEY 1
 	#define RING_LISTHASH_VALUE 2
 	#define RING_LISTHASH_SIZE 2
+	#define RING_LIST_CHECKOPERATIONONSUBLIST ( ring_vm_isoperationaftersublist(pVM) )
 	/* C Pointer List (inside Variable Value) */
 	#define RING_CPOINTER_POINTER 1
 	#define RING_CPOINTER_TYPE 2
@@ -531,6 +533,8 @@
 	int ring_vm_strcmpnotcasesensitive ( const char *cStr1,const char *cStr2 ) ;
 
 	void ring_vm_cleansetpropertylist ( VM *pVM ) ;
+
+	int ring_vm_isoperationaftersublist ( VM *pVM ) ;
 	/* Functions */
 
 	int ring_vm_loadfunc ( VM *pVM ) ;
