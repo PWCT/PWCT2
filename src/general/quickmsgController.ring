@@ -50,7 +50,7 @@ class quickmsgController from windowsControllerParent
 		RefreshSize()
 		if C_ENV_DEFAULT_STYLE <=4 {
 			oView.oMsg.setstylesheet("color:#00007f;background-color:#ffebdc;")
-		elseif C_ENV_DEFAULT_STYLE <= 6 
+		elseif C_ENV_DEFAULT_STYLE <= 8 
 			oView.oMsg.setstylesheet("color:#ffffff;background-color:#000000;")
 		else 
 			oView.oMsg.setstylesheet("color:#000000;background-color:#ffffff;")
