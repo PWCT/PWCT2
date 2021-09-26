@@ -1332,7 +1332,7 @@ class EnvironmentController from WindowsControllerParent
 		else 
 			PWCT_APP.StyleWindows()
 		}
-		oView.oFilesTree.setStyleSheet("color:black;")
+		oView.oFilesTree.setTreeColor("black")
 
 	func StyleColorBlocks()
 		C_STEPCOLOR_COMMENT_TEXT = '#006400'
@@ -1370,7 +1370,7 @@ class EnvironmentController from WindowsControllerParent
 
 	func StyleFusionWhite
 		PWCT_APP.Stylefusion()
-		oView.oFilesTree.setStyleSheet("color:black;")
+		oView.oFilesTree.setTreeColor("black")
 
 	func StyleColorWhite
 		C_STEPCOLOR_COMMENT_TEXT = '#00A100'
@@ -1391,7 +1391,7 @@ class EnvironmentController from WindowsControllerParent
 
 	func StyleFusionBlack
 		PWCT_APP.Stylefusionblack()
-		oView.oFilesTree.setStyleSheet("color:white;")
+		oView.oFilesTree.setTreeColor("white")
 
 	func StyleColorBlue
 		C_STEPCOLOR_COMMENT_TEXT = '#ffffff' # '#ffaaff'
@@ -1426,7 +1426,7 @@ class EnvironmentController from WindowsControllerParent
 			new qColor() { setrgb(0,0,100,255) },
 			new qColor() { setrgb(255,255,255,255)}
 		)
-		oView.oFilesTree.setStyleSheet("color:white;")
+		oView.oFilesTree.setTreeColor("white")
 
 	func StyleColorBlack
 		C_STEPCOLOR_COMMENT_TEXT = '#3e6677'

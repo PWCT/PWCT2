@@ -33,6 +33,10 @@ class TreeViewControl from qtreeview
 		UpdateFontSize()
 
 	func UpdateFontSize 
+		setStyleSheet('font-size: '+GetTheFontSize()+'pt;' )
+		show()
+
+	func GetTheFontSize
 		nRealFontSize = nFontSize
 		if PWCTISMobile(:TreeViewFont) {
 			nRealFontSize += 8
@@ -41,5 +45,8 @@ class TreeViewControl from qtreeview
 			font.setpixelsize(nRealFontSize)
 			SetFont(font)
 		}
-		setStyleSheet('font-size: '+nRealFontSize+'pt;' )
-		show()
+		return nRealFontSize
+
+	func setTreeColor cColor 
+		setStyleSheet('font-size: '+GetTheFontSize()+'pt; color:' + cColor + ';' )
+
