@@ -416,13 +416,27 @@ class EnvironmentView from WindowsViewParent
 					addseparator()
 					oAction = new qAction(win) {
 						setShortcut(new QKeySequence("Ctrl+shift+6"))
+						setclickEvent(Method("SetStyle(C_ENV_STYLE_SIMPLEBLACK)"))
+						settext(T_ENV_MENU_STYLEFUSIONSIMPLEBLACK)  # "Fusion: Simple Black"
+					}
+					addaction(oAction)
+					addseparator()
+					oAction = new qAction(win) {
+						setShortcut(new QKeySequence("Ctrl+shift+7"))
 						setclickEvent(Method("SetStyle(C_ENV_STYLE_BLACKB)"))
 						settext(T_ENV_MENU_STYLEFUSIONBLACKBLOCKS)  # "Fusion: Black Blocks"
 					}
 					addaction(oAction)
 					addseparator()
 					oAction = new qAction(win) {
-						setShortcut(new QKeySequence("Ctrl+shift+7"))
+						setShortcut(new QKeySequence("Ctrl+shift+8"))
+						setclickEvent(Method("SetStyle(C_ENV_STYLE_MODERNBLACK)"))
+						settext(T_ENV_MENU_STYLEFUSIONMODERNBLACK)  # "Fusion: Modern Black"
+					}
+					addaction(oAction)
+					addseparator()
+					oAction = new qAction(win) {
+						setShortcut(new QKeySequence("Ctrl+shift+9"))
 						setclickEvent(Method("SetStyle(C_ENV_STYLE_BLUE)"))
 						settext(T_ENV_MENU_STYLEFUSIONBLUE)  # "Fusion: Blue"
 					}
@@ -433,14 +447,14 @@ class EnvironmentView from WindowsViewParent
 					subLang = addmenu(T_ENV_MENU_LANGUAGE) # "Language"
 					subLang {
 						oAction = new qAction(win) {
-							setShortcut(new QKeySequence("Ctrl+shift+8"))
+							//setShortcut(new QKeySequence("Ctrl+shift+8"))
 							setclickEvent(Method("SetLang(C_TRANSLATION_ARABIC)"))
 							settext(T_ENV_MENU_LANG_ARABIC) # "Arabic"
 						}
 						addaction(oAction)
 						addseparator()
 						oAction = new qAction(win) {
-							setShortcut(new QKeySequence("Ctrl+Shift+9"))
+							//setShortcut(new QKeySequence("Ctrl+Shift+9"))
 							setclickEvent(Method("SetLang(C_TRANSLATION_ENGLISH)"))
 							settext(T_ENV_MENU_LANG_ENGLISH) # "English"
 						}
