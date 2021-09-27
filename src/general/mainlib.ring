@@ -42,3 +42,18 @@ func RemoveFirstTabs cString,nCount
 		ok
 	next
 	return list2str(aList)
+
+
+/*
+	Purpose : Set the Encoding 
+	Parameters : File Name 
+	Output : File Name after changing the Encoding to local8bit  
+*/
+
+func FileNameEncoding cFileName
+	if isWindows() {
+		oString = new qString2()
+		oString.Append(cFileName)
+		return oString.tolocal8bit().data()
+	}
+	return cFileName

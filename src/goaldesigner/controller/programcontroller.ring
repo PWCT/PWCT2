@@ -246,15 +246,6 @@ Class ProgramController
 		# Save the code to the file
 			SaveToFile()
 
-
-	func FileNameEncoding cFileName
-		if isWindows()
-			oString = new qString2()
-			oString.Append(cFileName)
-			return oString.tolocal8bit().data()
-		ok
-		return cFileName
-
 	private
 
 		/*

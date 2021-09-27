@@ -288,18 +288,3 @@ aInteractionsTable = #{f7}
 		if lUseSystemLog {
 			oSystemLog.addMessage(cMessage)
 		}
-
-
-	/*
-		Purpose : Set the Encoding 
-		Parameters : File Name 
-		Output : File Name after changing the Encoding to local8bit  
-	*/
-
-	func FileNameEncoding cFileName
-		if isWindows()
-			oString = new qString2()
-			oString.Append(cFileName)
-			return oString.tolocal8bit().data()
-		ok
-		return cFileName
