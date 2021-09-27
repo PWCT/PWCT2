@@ -75,7 +75,6 @@ Class ProgramController
 	*/
 
 	func RunGUIDesktop oGD
-		//cFile = FileNameEncoding(cFileName)
 		cFile = cFileName
 		if oGD.lFullScreen = False {
 			oGD.parent().oView.oDockOutputWindow.raise()
@@ -90,7 +89,7 @@ Class ProgramController
 			cCode = RunBatchFile(cFile)
 			oGD.parent().oView.oProcess = RunProcess(cCode,"",oGD.parent().Method(:GetDataAction))
 		else 
-			oGD.parent().oView.oProcess = RunProcess("ring",cFile,oGD.parent().Method(:GetDataAction))
+			oGD.parent().oView.oProcess = RunProcess(cRingEXE,cFile,oGD.parent().Method(:GetDataAction))
 		}
 		chdir(cDir)
 
@@ -274,7 +273,7 @@ Class ProgramController
 		*/
 
 		func SaveToFile
-			write(cFileName,cSourceCode)
+			write(FileNameEncoding(cFileName),cSourceCode)
 
 		/*
 			Purpose : Run Batch File
@@ -283,11 +282,12 @@ Class ProgramController
 		*/
 
 		func RunBatch cFile
+			cFileToRun = FileNameEncoding(cFileName)
 			if iswindows() {
 				cCode = 'start ' +
-					cFile+' "' + cFileName + '"' + nl
+					cFile+' "' + cFileToRun + '"' + nl
 			else
-				cCode = 'cd $(dirname "'+cFileName+'") ; ' + ' ring "' + cFileName + '"'  + nl
+				cCode = 'cd $(dirname "'+cFileToRun+'") ; ' + ' ring "' + cFileToRun + '"'  + nl
 			}			
 			system(cCode)
 

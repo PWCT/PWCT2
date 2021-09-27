@@ -5,6 +5,10 @@
 ** 	Author : Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
+# Ring 
+
+	cRingEXE 		= exefilename()
+
 # Application
 	PWCT_APP 				= NULL
 	PWCT_FOLDER				= CurrentDir()

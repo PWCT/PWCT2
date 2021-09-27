@@ -839,7 +839,7 @@ class GoalDesignerController from WindowsControllerParent
 			}
 			# Remove the file from the Active Files List 
 				parent().RemoveFileFromActiveFilesList(lower(oVisualSourceFile.cFileName))
-			oVisualSourceFile.cFileName = oProgramController.filenameEncoding(cFileName)
+			oVisualSourceFile.cFileName = cFileName
 		# Clear the History 
 			clearHistory()
 		# Remove the current Steps From the Tree Control
@@ -885,7 +885,7 @@ class GoalDesignerController from WindowsControllerParent
 			}
 			if cFileName = NULL { return }
 			
-			oVisualSourceFile.cFileName = oProgramController.filenameEncoding(cFileName)
+			oVisualSourceFile.cFileName = cFileName
 			SaveFileAction2()
 		# Set the docable widget title
 			oView.win.ParentWidget().setWindowTitle(cFileName)
@@ -923,7 +923,7 @@ class GoalDesignerController from WindowsControllerParent
 			
 			# Remove the file from the Active Files List 
 				parent().RemoveFileFromActiveFilesList(oVisualSourceFile.cFileName)
-			oVisualSourceFile.cFileName = oProgramController.filenameEncoding(cFileName)
+			oVisualSourceFile.cFileName = cFileName
 			OpenFileAction2()
 		oView.oStepsTree.EnableEvents()
 		# Set the docable widget title

@@ -169,7 +169,7 @@ class VisualSourceFile
 
 	func LoadTables
 		Log("Start load tables")
-		eval( read( cFileName ) )
+		eval( read( FileNameEncoding(cFileName) ) )
 		if lUseSystemLog {
 			oSystemLog.addMessage("End load tables")
 		}
@@ -203,7 +203,7 @@ aInteractionsTable = #{f7}
 		cContent = substr(cContent,"#{f5}",""+nInteractionsID)
 		cContent = substr(cContent,"#{f6}",List2Code(aStepsTable))
 		cContent = substr(cContent,"#{f7}",List2Code(aInteractionsTable))
-		write( cFileName, cContent )		
+		write( FileNameEncoding(cFileName), cContent )		
 		Log("End save tables")
 
 	/*
@@ -288,3 +288,18 @@ aInteractionsTable = #{f7}
 		if lUseSystemLog {
 			oSystemLog.addMessage(cMessage)
 		}
+
+
+	/*
+		Purpose : Set the Encoding 
+		Parameters : File Name 
+		Output : File Name after changing the Encoding to local8bit  
+	*/
+
+	func FileNameEncoding cFileName
+		if isWindows()
+			oString = new qString2()
+			oString.Append(cFileName)
+			return oString.tolocal8bit().data()
+		ok
+		return cFileName
