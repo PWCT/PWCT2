@@ -75,7 +75,8 @@ Class ProgramController
 	*/
 
 	func RunGUIDesktop oGD
-		cFile = FileNameEncoding(cFileName)
+		//cFile = FileNameEncoding(cFileName)
+		cFile = cFileName
 		if oGD.lFullScreen = False {
 			oGD.parent().oView.oDockOutputWindow.raise()
 		}
@@ -246,6 +247,15 @@ Class ProgramController
 		# Save the code to the file
 			SaveToFile()
 
+
+	func FileNameEncoding cFileName
+		if isWindows()
+			oString = new qString2()
+			oString.Append(cFileName)
+			return oString.tolocal8bit().data()
+		ok
+		return cFileName
+
 	private
 
 		/*
@@ -296,12 +306,3 @@ Class ProgramController
 				cCode = 'cd $(dirname "'+cFile+'") ; ' + './' + cFile +  nl
 			ok
 			return cCode 
-
-
-		func FileNameEncoding cFileName
-			if isWindows()
-				oString = new qString2()
-				oString.Append(cFileName)
-				return oString.tolocal8bit().data()
-			ok
-			return cFileName
