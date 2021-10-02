@@ -48,5 +48,5 @@ class templatesComponentView from ComponentViewParent
 		DisableListBoxSort()	
 		ListBox( T_CT_TEMPLATES_IP_VALUE , :value, 
 				T_CT_TEMPLATES_IP_VALUELIST )
-		CheckBoxValue( T_CT_TEMPLATES_IP_VALUE2, :value2, False)
+		CheckBoxValue( T_CT_TEMPLATES_IP_VALUE2, :value2, 2)
 		PageButtons()
