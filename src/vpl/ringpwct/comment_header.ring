@@ -51,8 +51,8 @@ class comment_headerComponentView from ComponentViewParent
 	 
 		Title( T_CT_COMMENT_HEADER_IP_TITLE )
 		TextBox( T_CT_COMMENT_HEADER_IP_VALUE , :value)	
-		TextBoxValue( T_CT_COMMENT_HEADER_IP_VALUE2 , :value2, "2")	
+		TextBoxValue( T_CT_COMMENT_HEADER_IP_VALUE2 , :value2, "3")	
 		TextBoxValue( T_CT_COMMENT_HEADER_IP_VALUE3 , :value3, T_CT_COMMENT_HEADER_IP_VALUE3_DEFAULT)	
 		TextBoxValue( T_CT_COMMENT_HEADER_IP_VALUE5 , :value5, T_CT_COMMENT_HEADER_IP_VALUE5_DEFAULT)	
-		CheckBoxValue( T_CT_COMMENT_HEADER_IP_VALUE4, :Value4, 0)
+		CheckBoxValue( T_CT_COMMENT_HEADER_IP_VALUE4, :Value4, 2)
 		PageButtons()
