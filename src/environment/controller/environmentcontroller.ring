@@ -1036,6 +1036,10 @@ class EnvironmentController from WindowsControllerParent
 				cPara += ",-dist,-allegro,-freeglut,-opengl,-gui"
 			case 7	# qt project
 				cPara += ",-dist,-allruntime,-gui,-mobileqt"
+			case 8	# qt project webassembly
+				cPara += ",-dist,-allruntime,-gui,-webassemblyqt"
+			case 9	# light guilib (QtCore, QtGui & QtWidgets)
+				cPara += ",-dist,-gui,-lightguilib"
 		}
 		oView.oDockOutputWindow { show() raise() }		
 		oView.oProcessEditbox.setplaintext("")

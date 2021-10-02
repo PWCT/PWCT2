@@ -615,10 +615,23 @@ class EnvironmentView from WindowsViewParent
 					addaction(oAction)
 					addseparator()
 					oAction = new qAction(win) {
+						settext(T_ENV_MENU_DIST_RING2EXE9) # "Ring2EXE (Distribute Light RingQt Application)"
+						setclickEvent(Method("Distribute(9)"))
+					}
+					addaction(oAction)
+					addseparator()
+					oAction = new qAction(win) {
 						settext(T_ENV_MENU_DIST_RING2EXE7) # "Ring2EXE (Prepare Qt Project - Distribute for Mobile Devices)"
 						setclickEvent(Method("Distribute(7)"))
 					}
 					addaction(oAction)
+					addseparator()
+					oAction = new qAction(win) {
+						settext(T_ENV_MENU_DIST_RING2EXE8) # "Ring2EXE (Prepare Qt Project - Distribute for Web using WebAssembly)"
+						setclickEvent(Method("Distribute(8)"))
+					}
+					addaction(oAction)
+
 				}
 			}
 			subHelp { 

@@ -97,6 +97,8 @@
 	T_ENV_MENU_DIST_RING2EXE5 = "Ring2EXE (Distribute RingQt Application)"
 	T_ENV_MENU_DIST_RING2EXE6 = "Ring2EXE (Distribute RingAllegro Game)"
 	T_ENV_MENU_DIST_RING2EXE7 = "Ring2EXE (Prepare Qt Project) - Distribute for Mobile Devices)"
+	T_ENV_MENU_DIST_RING2EXE8 = "Ring2EXE (Prepare Qt Project) - Distribute for Web Browsers using WebAssembly)"
+	T_ENV_MENU_DIST_RING2EXE9 = "Ring2EXE (Distribute Light RingQt Application - Using [QtCore, QtGui, QtWidgets] )"
 	T_ENV_MENU_LANGREF = "Language Reference"
 	T_ENV_MENU_CHM = "CHM File"
 	T_ENV_MENU_PDF = "PDF File"
