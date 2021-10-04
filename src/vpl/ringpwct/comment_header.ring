@@ -20,10 +20,13 @@ class comment_headerComponentController from ComponentControllerParent
 
 		StepIsAComment()
 
-		if Variable(:Value4) {
-			cHTML = "<h#{f2} style='text-align:center ; #{f3} ; #{f4} ;'> #{f1} </h#{f2}>"
-		else 
-			cHTML = "<h#{f2} style='#{f3} #{f4}'> #{f1} </h#{f2}>"
+		Switch Variable(:Value4) {
+			case 1
+				cHTML = "<h#{f2} style='#{f3} #{f4}'> #{f1} </h#{f2}>"
+			case 2 
+				cHTML = "<h#{f2} style='text-align:center ; #{f3} ; #{f4} ;'> #{f1} </h#{f2}>"
+			case 3
+				cHTML = "<h#{f2} style='text-align:right ; #{f3} ; #{f4} ;'> #{f1} </h#{f2}>"
 		}
 		cHTML = substr(cHTML,"#{f1}",cValue)
 		cHTML = substr(cHTML,"#{f2}",Variable(:Value2))
@@ -54,5 +57,6 @@ class comment_headerComponentView from ComponentViewParent
 		TextBoxValue( T_CT_COMMENT_HEADER_IP_VALUE2 , :value2, "3")	
 		TextBoxValue( T_CT_COMMENT_HEADER_IP_VALUE3 , :value3, T_CT_COMMENT_HEADER_IP_VALUE3_DEFAULT)	
 		TextBoxValue( T_CT_COMMENT_HEADER_IP_VALUE5 , :value5, T_CT_COMMENT_HEADER_IP_VALUE5_DEFAULT)	
-		CheckBoxValue( T_CT_COMMENT_HEADER_IP_VALUE4, :Value4, 2)
+		DisableListBoxSort()
+		Listbox(T_CT_COMMENT_HEADER_ALIGIN_IP_VALUE4 , :value4, T_CT_COMMENT_HEADER_ALIGIN_IP_VALUE4_LIST)
 		PageButtons()
