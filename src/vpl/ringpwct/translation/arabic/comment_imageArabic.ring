@@ -8,3 +8,7 @@
 
 T_CT_COMMENT_IMAGE_IP_TITLE = "مكون تعليق"
 T_CT_COMMENT_IMAGE_IP_VALUE = "ملف الصورة"
+T_CT_COMMENT_WIDTH_IP_VALUE2 = "العرض:"
+T_CT_COMMENT_HEIGHT_IP_VALUE3 = "الإرتفاع:"
+T_CT_COMMENT_ALIGIN_IP_VALUE4 = "المحاذاة:"
+T_CT_COMMENT_ALIGIN_IP_VALUE4_LIST = ["يسار","وسط","يمين"]
