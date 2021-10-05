@@ -36,6 +36,8 @@ class EnvironmentView from WindowsViewParent
 
 	lNoRunInConsole = True
 
+	lShowLanguageMenu = False
+
 	# Create the window and the Controls 
 		win = new qMainWindow()
 		{
@@ -442,7 +444,7 @@ class EnvironmentView from WindowsViewParent
 					}
 					addaction(oAction)							
 				}
-				if ! PWCTIsMobile(:SelectLanguage) {
+				if this.lShowLanguageMenu and ! PWCTIsMobile(:SelectLanguage) {
 					addseparator()
 					subLang = addmenu(T_ENV_MENU_LANGUAGE) # "Language"
 					subLang {
