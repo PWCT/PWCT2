@@ -522,3 +522,12 @@ class ComponentsBrowserController from WindowsControllerParent
 	func HideRingCode
 		QuickMsg().hide()
 		oView.oTextSearch.setcompleter(NULL)
+
+
+	func TreeKeyPress 
+		nKey = oView.oTreeFilter.getkeycode()
+		cText = oView.oTreeFilter.getkeytext()
+		if nKey = 16777220	{ # Enter
+			OpenSelected()
+		}
+		oView.oTreeFilter.setEventOutput(False)

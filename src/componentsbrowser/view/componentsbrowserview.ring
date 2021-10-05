@@ -28,6 +28,9 @@ class ComponentsBrowserView from WindowsViewParent
 
 			oComponentsTree = new ComponentsTreeView(win) {
 				setdoubleClickedEvent(Method(:OpenSelected))
+				oTreeFilter = new qAllEvents(oStepsTree)
+				oTreeFilter.setKeyPressEvent(Method(:TreeKeyPress))
+				installeventfilter(oTreeFilter)
 			}
 
 			oBtnSelect = new qPushButton(win)
