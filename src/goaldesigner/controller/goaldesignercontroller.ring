@@ -865,6 +865,7 @@ class GoalDesignerController from WindowsControllerParent
 	*/
 
 	func SaveCurrentFileAction
+		lSaveFlag = False
 		# Check file not saved before 
 		if oVisualSourceFile.cFileName = C_VSF_NOFILENAME {
 			SaveFileAction()

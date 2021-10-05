@@ -200,6 +200,7 @@ class EnvironmentController from WindowsControllerParent
 	*/
 
 	func BeforeRun
+		parent().lSaveFlag = False 
 		if isWebAssembly() {
 			return 
 		}
