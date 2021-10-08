@@ -58,5 +58,7 @@ class comment_headerComponentView from ComponentViewParent
 		TextBoxValue( T_CT_COMMENT_HEADER_IP_VALUE3 , :value3, T_CT_COMMENT_HEADER_IP_VALUE3_DEFAULT)	
 		TextBoxValue( T_CT_COMMENT_HEADER_IP_VALUE5 , :value5, T_CT_COMMENT_HEADER_IP_VALUE5_DEFAULT)	
 		DisableListBoxSort()
-		Listbox(T_CT_COMMENT_HEADER_ALIGIN_IP_VALUE4 , :value4, T_CT_COMMENT_HEADER_ALIGIN_IP_VALUE4_LIST)
+		Listbox(T_CT_COMMENT_HEADER_ALIGIN_IP_VALUE4 , :value4, T_CT_COMMENT_HEADER_ALIGIN_IP_VALUE4_LIST) {
+			setcurrentrow(1,3)
+		}
 		PageButtons()
