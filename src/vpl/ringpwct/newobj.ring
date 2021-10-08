@@ -62,6 +62,6 @@ class newobjComponentView from ComponentViewParent
 			}
 		# Init() Method
 			CheckBox(T_CT_NEWOBJ_IP_INIT,:init) {
-				setcheckstate(2)
+				setcheckstate(0)
 			}
 		PageButtons()
