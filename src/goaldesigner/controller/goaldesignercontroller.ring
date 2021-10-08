@@ -1314,6 +1314,15 @@ class GoalDesignerController from WindowsControllerParent
 		oView.oVPagesScroll.Hide()
 		nInteractionPagesToModifyCount = 0
 
+	func RefreshInteractionPagesColors
+		for nWindowID in aInteractionPagesWindows {
+			nPos = Get_Window_Pos(nWindowID)
+			if nPos != 0 {
+				GetObjectByID(nWindowID).oView.setTitleColors()
+			}
+		}
+
+
 	/*
 		Purpose : Open component without displaying the Interaction window 
 		Parameters : The Step ID

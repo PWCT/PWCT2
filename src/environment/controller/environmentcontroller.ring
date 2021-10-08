@@ -1349,6 +1349,7 @@ class EnvironmentController from WindowsControllerParent
 			oView.oFilesTree.UpdateFontSize()
 			OutputWindowFont()
 		}
+		parent().RefreshInteractionPagesColors()
 
 	func StyleWindows
 		if isWindows() {

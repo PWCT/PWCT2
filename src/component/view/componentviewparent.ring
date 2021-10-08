@@ -11,6 +11,8 @@ class ComponentViewParent from WindowsViewParent
 
 	aVariables = []		# List contains the [ Control Object , variable Name , Type ]
 
+	oTitleLabel
+
 	lFirstTextBox		= True		# For Setting the focus
 	oFirstText				# First Textbox
 
@@ -59,7 +61,7 @@ class ComponentViewParent from WindowsViewParent
 
 	func Title cTitle
 		
-		oLabel = new qLabel(win) {
+		oTitleLabel = new qLabel(win) {
 			setText(cTitle)
 			if PWCTisMobile(:IPTitle) {
 				setFixedHeight(this.nTitleFixedHeight*3)
@@ -71,9 +73,16 @@ class ComponentViewParent from WindowsViewParent
 				";background-color:"+C_INTERACTIONPAGE_TITLEBACKCOLOR+";")
 			setalignment(Qt_AlignHCenter |  Qt_AlignVCenter )
 		}
-		oLayoutAll.AddWidget(oLabel) 
+		oLayoutAll.AddWidget(oTitleLabel) 
 		win.setWindowTitle(cTitle)
-		return oLabel
+		return oTitleLabel
+
+	func setTitleColors
+		oTitleLabel {
+			setStyleSheet("font-size:"+this.nTitleFontSize+
+				"pt;color:"+C_INTERACTIONPAGE_TITLECOLOR+
+				";background-color:"+C_INTERACTIONPAGE_TITLEBACKCOLOR+";")
+		}
 
 	/*
 		Purpose : Display Label+Textbox in the Interation page
