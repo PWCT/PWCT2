@@ -1280,63 +1280,68 @@ class EnvironmentController from WindowsControllerParent
 
 	func SetStyle nStyle
 		C_ENV_DEFAULT_STYLE  = nStyle
-		Switch nStyle {
-			on C_ENV_STYLE_WINDOWS
-				StyleWindows()	
-				StyleColorWhite()		
-				C_STEPSTREE_BACKCOLOR	= '#ffffff'
-				C_STEPCOLOR_STARTPOINT  = '#006400'
-				C_STEPSTREE_LIGHTTREELINES = 0
-			on C_ENV_STYLE_WINDOWSB
-				StyleWindows()	
-				StyleColorBlocks()		
-				C_STEPSTREE_BACKCOLOR	= '#ffffff'
-				C_STEPCOLOR_STARTPOINT  = '#006400'
-				C_STEPSTREE_LIGHTTREELINES = 0
-			on C_ENV_STYLE_WHITE
-				StyleFusionWhite()
-				StyleColorWhite()
-				C_STEPSTREE_BACKCOLOR	= '#ffffff'
-				C_STEPCOLOR_STARTPOINT  = '#006400'
-				C_STEPSTREE_LIGHTTREELINES = 0
-			on C_ENV_STYLE_WHITEB
-				StyleFusionWhite()
-				StyleColorBlocks()
-				C_STEPSTREE_BACKCOLOR	= '#ffffff'
-				C_STEPCOLOR_STARTPOINT  = '#006400'
-				C_STEPSTREE_LIGHTTREELINES = 0
-			on C_ENV_STYLE_BLACK
-				StyleFusionBlack()
-				StyleColorBlack()
-				C_STEPSTREE_BACKCOLOR = '#212121'
-				C_STEPCOLOR_STARTPOINT  = '#ffffff'
-				C_STEPSTREE_LIGHTTREELINES = 2
-			on C_ENV_STYLE_BLACKB
-				StyleFusionBlack()
-				StyleColorBlackBlocks()
-				C_COMPONENTSBROWSER_COLOR = '#ffffff'
-				C_STEPSTREE_BACKCOLOR = '#212121'
-				C_STEPCOLOR_STARTPOINT  = '#ffffff'
-				C_STEPSTREE_LIGHTTREELINES = 2
-			on C_ENV_STYLE_MODERNBLACK
-				StyleFusionBlack()
-				StyleColorModernBlack()
-				C_COMPONENTSBROWSER_COLOR = '#ffffff'
-				C_STEPSTREE_BACKCOLOR = '#272822'
-				C_STEPCOLOR_STARTPOINT  = '#ffffff'
-				C_STEPSTREE_LIGHTTREELINES = 2
-			on C_ENV_STYLE_SIMPLEBLACK
-				StyleFusionBlack()
-				StyleColorSimpleBlack()
-				C_COMPONENTSBROWSER_COLOR = '#ffffff'
-				C_STEPSTREE_BACKCOLOR = '#212121'
-				C_STEPCOLOR_STARTPOINT  = '#ffffff'
-				C_STEPSTREE_LIGHTTREELINES = 2
-			on C_ENV_STYLE_BLUE
-				StyleFusionBlue()
-				StyleColorBlue()
-				C_STEPCOLOR_STARTPOINT  = '#ffffff'
-				C_STEPSTREE_LIGHTTREELINES = 2
+		# This strange loop that repeat the code two times 
+		# Is a workaround a bug in Qt when we change the style 
+		# While many interaction pages are opened 
+		for nTimes = 1 to 2 {
+			Switch nStyle {
+				on C_ENV_STYLE_WINDOWS
+					StyleWindows()	
+					StyleColorWhite()		
+					C_STEPSTREE_BACKCOLOR	= '#ffffff'
+					C_STEPCOLOR_STARTPOINT  = '#006400'
+					C_STEPSTREE_LIGHTTREELINES = 0
+				on C_ENV_STYLE_WINDOWSB
+					StyleWindows()	
+					StyleColorBlocks()		
+					C_STEPSTREE_BACKCOLOR	= '#ffffff'
+					C_STEPCOLOR_STARTPOINT  = '#006400'
+					C_STEPSTREE_LIGHTTREELINES = 0
+				on C_ENV_STYLE_WHITE
+					StyleFusionWhite()
+					StyleColorWhite()
+					C_STEPSTREE_BACKCOLOR	= '#ffffff'
+					C_STEPCOLOR_STARTPOINT  = '#006400'
+					C_STEPSTREE_LIGHTTREELINES = 0
+				on C_ENV_STYLE_WHITEB
+					StyleFusionWhite()
+					StyleColorBlocks()
+					C_STEPSTREE_BACKCOLOR	= '#ffffff'
+					C_STEPCOLOR_STARTPOINT  = '#006400'
+					C_STEPSTREE_LIGHTTREELINES = 0
+				on C_ENV_STYLE_BLACK
+					StyleFusionBlack()
+					StyleColorBlack()
+					C_STEPSTREE_BACKCOLOR = '#212121'
+					C_STEPCOLOR_STARTPOINT  = '#ffffff'
+					C_STEPSTREE_LIGHTTREELINES = 2
+				on C_ENV_STYLE_BLACKB
+					StyleFusionBlack()
+					StyleColorBlackBlocks()
+					C_COMPONENTSBROWSER_COLOR = '#ffffff'
+					C_STEPSTREE_BACKCOLOR = '#212121'
+					C_STEPCOLOR_STARTPOINT  = '#ffffff'
+					C_STEPSTREE_LIGHTTREELINES = 2
+				on C_ENV_STYLE_MODERNBLACK
+					StyleFusionBlack()
+					StyleColorModernBlack()
+					C_COMPONENTSBROWSER_COLOR = '#ffffff'
+					C_STEPSTREE_BACKCOLOR = '#272822'
+					C_STEPCOLOR_STARTPOINT  = '#ffffff'
+					C_STEPSTREE_LIGHTTREELINES = 2
+				on C_ENV_STYLE_SIMPLEBLACK
+					StyleFusionBlack()
+					StyleColorSimpleBlack()
+					C_COMPONENTSBROWSER_COLOR = '#ffffff'
+					C_STEPSTREE_BACKCOLOR = '#212121'
+					C_STEPCOLOR_STARTPOINT  = '#ffffff'
+					C_STEPSTREE_LIGHTTREELINES = 2
+				on C_ENV_STYLE_BLUE
+					StyleFusionBlue()
+					StyleColorBlue()
+					C_STEPCOLOR_STARTPOINT  = '#ffffff'
+					C_STEPSTREE_LIGHTTREELINES = 2
+			}
 		}
 		parent().ComponentsBrowserWindow().oView.oComponentsTree.TreeStyle()
 		parent().refreshStepsTree()
