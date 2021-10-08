@@ -6,7 +6,7 @@
 ** 	Author : Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-T_LANGUAGE = "Arabic"
+T_LANGUAGE = "arabic"
 T_LAYOUTDIRECTION = 1		# Right to Left
 
 T_FORMDESIGNER_FORMDESIGNER 		= "مصمم النماذج"
@@ -132,6 +132,10 @@ T_FORMDESIGNER_ATTRIBUTE_MENUBAR	= "شريط القوائم"
 T_FORMDESIGNER_ATTRIBUTE_INDEXTYPE	= "نوع العد"
 T_FORMDESIGNER_ATTRIBUTE_STARTFROM1	= "عد من واحد"
 T_FORMDESIGNER_ATTRIBUTE_STARTFROM0	= "عد من صفر"
+
+T_FORMDESIGNER_ATTRIBUTE_GUILIBRARY 	= "مكتبة الواجهة الرسومية"
+T_FORMDESIGNER_ATTRIBUTE_GUILIB 	= "المكتبة الأساسية"
+T_FORMDESIGNER_ATTRIBUTE_LIGHTGUILIB    = "المكتبة الأساسية - إصدار خفيف"
 
 T_FORMDESIGNER_ATTRIBUTE_TEXT	 	= "النص"
 T_FORMDESIGNER_ATTRIBUTE_TEXTALIGN	= "محاذاة النص"
