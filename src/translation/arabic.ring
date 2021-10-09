@@ -65,7 +65,8 @@
 	T_ENV_MENU_STYLEWINDOWSBLOCKS		= "ويندوز - أحجار"
 	T_ENV_MENU_STYLEFUSIONWHITEBLOCKS	= "عصري : أبيض - أحجار"
 	T_ENV_MENU_STYLEFUSIONBLACKBLOCKS 	= "عصري : أسود - أحجار لامعة"
-	T_ENV_MENU_STYLEFUSIONBLUE	= "عصري : أزرق"
+	T_ENV_MENU_STYLEFUSIONBLUE	= "عصري : أزرق - أحجار بسيطة"
+	T_ENV_MENU_STYLEFUSIONBLUE2	= "عصري : أزرق - أحجار لامعة"
 	T_ENV_MENU_STYLEFUSIONMODERNBLACK 	= "عصري : أسود - حديث"
 	T_ENV_MENU_STYLEFUSIONSIMPLEBLACK 	= "عصري : أسود -  أحجار بسيطة"
 

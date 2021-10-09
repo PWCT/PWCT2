@@ -443,6 +443,12 @@ class EnvironmentView from WindowsViewParent
 						settext(T_ENV_MENU_STYLEFUSIONBLUE)  # "Fusion: Blue"
 					}
 					addaction(oAction)							
+					addseparator()
+					oAction = new qAction(win) {
+						setclickEvent(Method("SetStyle(C_ENV_STYLE_BLUE2)"))
+						settext(T_ENV_MENU_STYLEFUSIONBLUE2)  # "Fusion: Blue 2"
+					}
+					addaction(oAction)							
 				}
 				if this.lShowLanguageMenu and ! PWCTIsMobile(:SelectLanguage) {
 					addseparator()

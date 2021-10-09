@@ -66,7 +66,8 @@
 	T_ENV_MENU_STYLEWINDOWSBLOCKS		= "Windows - Blocks"
 	T_ENV_MENU_STYLEFUSIONWHITEBLOCKS	= "Fusion: White - Blocks"
 	T_ENV_MENU_STYLEFUSIONBLACKBLOCKS 	= "Fusion: Black - Light Blocks"
-	T_ENV_MENU_STYLEFUSIONBLUE		= "Fusion: Blue"
+	T_ENV_MENU_STYLEFUSIONBLUE		= "Fusion: Blue - Simple Blocks"
+	T_ENV_MENU_STYLEFUSIONBLUE2		= "Fusion: Blue - Light Blocks"
 	T_ENV_MENU_STYLEFUSIONMODERNBLACK 	= "Fusion: Black - Modern"
 	T_ENV_MENU_STYLEFUSIONSIMPLEBLACK 	= "Fusion: Black - Simple Blocks"
 

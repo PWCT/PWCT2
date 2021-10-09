@@ -1341,6 +1341,11 @@ class EnvironmentController from WindowsControllerParent
 					StyleColorBlue()
 					C_STEPCOLOR_STARTPOINT  = '#ffffff'
 					C_STEPSTREE_LIGHTTREELINES = 2
+				on C_ENV_STYLE_BLUE2
+					StyleFusionBlue()
+					StyleColorBlue2()
+					C_STEPCOLOR_STARTPOINT  = '#ffffff'
+					C_STEPSTREE_LIGHTTREELINES = 2
 			}
 		}
 		parent().ComponentsBrowserWindow().oView.oComponentsTree.TreeStyle()
@@ -1419,6 +1424,24 @@ class EnvironmentController from WindowsControllerParent
 		oView.oFilesTree.setTreeColor("white")
 
 	func StyleColorBlue
+		C_STEPCOLOR_COMMENT_TEXT = '#55007f'
+		C_STEPCOLOR_COMMENT_BACKCOLOR = '#ffaaff'
+		C_STEPCOLOR_ROOT_TEXT = '#e3e3e3'
+		C_STEPCOLOR_ROOT_BACKCOLOR = '#55557f'
+		C_STEPCOLOR_ALLOWINTERACTION_TEXT = '#55007f'
+		C_STEPCOLOR_ALLOWINTERACTION_BACKCOLOR = '#d6d6d6'
+		C_STEPCOLOR_INFO_TEXT = '#808080'
+		C_STEPCOLOR_INFO_BACKCOLOR = '#213146'
+		C_STEPCOLOR_DATA_TEXT = '#00007f'
+		C_STEPCOLOR_DATA_BACKCOLOR = '#3cb6b6'
+		C_STEPSTREE_BACKCOLOR = '#0000A7'
+		C_STEPSTREE_SELECTIONCOLOR = '#ffffff'
+		C_STEPSTREE_SELECTIONBACKGROUND = "#000064"
+		C_COMPONENTSBROWSER_COLOR		= '#ffffff'
+		C_INTERACTIONPAGE_TITLECOLOR		= '#ffffff'
+		C_INTERACTIONPAGE_TITLEBACKCOLOR	= "#000064"
+
+	func StyleColorBlue2
 		C_STEPCOLOR_COMMENT_TEXT = '#55007f'
 		C_STEPCOLOR_COMMENT_BACKCOLOR = '#ffaaff'
 		C_STEPCOLOR_ROOT_TEXT = '#00007f'
