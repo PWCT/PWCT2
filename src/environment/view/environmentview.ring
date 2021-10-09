@@ -418,22 +418,22 @@ class EnvironmentView from WindowsViewParent
 					addseparator()
 					oAction = new qAction(win) {
 						setShortcut(new QKeySequence("Ctrl+shift+6"))
+						setclickEvent(Method("SetStyle(C_ENV_STYLE_MODERNBLACK)"))
+						settext(T_ENV_MENU_STYLEFUSIONMODERNBLACK)  # "Fusion: Modern Black"
+					}
+					addaction(oAction)
+					addseparator()
+					oAction = new qAction(win) {
+						setShortcut(new QKeySequence("Ctrl+shift+7"))
 						setclickEvent(Method("SetStyle(C_ENV_STYLE_SIMPLEBLACK)"))
 						settext(T_ENV_MENU_STYLEFUSIONSIMPLEBLACK)  # "Fusion: Simple Black"
 					}
 					addaction(oAction)
 					addseparator()
 					oAction = new qAction(win) {
-						setShortcut(new QKeySequence("Ctrl+shift+7"))
+						setShortcut(new QKeySequence("Ctrl+shift+8"))
 						setclickEvent(Method("SetStyle(C_ENV_STYLE_BLACKB)"))
 						settext(T_ENV_MENU_STYLEFUSIONBLACKBLOCKS)  # "Fusion: Black Blocks"
-					}
-					addaction(oAction)
-					addseparator()
-					oAction = new qAction(win) {
-						setShortcut(new QKeySequence("Ctrl+shift+8"))
-						setclickEvent(Method("SetStyle(C_ENV_STYLE_MODERNBLACK)"))
-						settext(T_ENV_MENU_STYLEFUSIONMODERNBLACK)  # "Fusion: Modern Black"
 					}
 					addaction(oAction)
 					addseparator()
