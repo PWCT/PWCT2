@@ -1,12 +1,14 @@
-﻿/*
+/*
 **	Project : Programming Without Coding Technology (PWCT) Version 2.0
 **	File Purpose :  qhboxlayout Component
 **	Date : 2017.12.14
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
-
+
+
 T_CT_QHBOXLAYOUT_IP_TITLE = "مكون فئة الترتيب الافقي "
 T_CT_QHBOXLAYOUT_IP_VALUE = "اسم الكائن :"
+T_CT_QHBOXLAYOUTCLASS_IP_VALUE_STARTVALUE = ""
 T_CT_QHBOXLAYOUT_IP_VALUE2 = "الميثود : "
 T_CT_QHBOXLAYOUTCLASS_IP_VALUE2FUNC = [
 	"activate",

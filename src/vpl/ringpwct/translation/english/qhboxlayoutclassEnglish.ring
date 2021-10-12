@@ -4,9 +4,11 @@
 **	Date : 2017.12.14
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
-
+
+
 T_CT_QHBOXLAYOUT_IP_TITLE = "Horizontal Layout Class Component"
 T_CT_QHBOXLAYOUT_IP_VALUE = "Object"
+T_CT_QHBOXLAYOUTCLASS_IP_VALUE_STARTVALUE = "Layout1"
 T_CT_QHBOXLAYOUT_IP_VALUE2 = "Method"
 T_CT_QHBOXLAYOUTCLASS_IP_VALUE2FUNC = [
 	"activate",

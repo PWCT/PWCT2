@@ -29,7 +29,7 @@ class qvboxlayoutclassComponentController from ComponentControllerParent
 class qvboxlayoutclassComponentView from ComponentViewParent
 	 
 		Title( T_CT_QVBOXLAYOUTCLASS_IP_TITLE )	
-		TextBoxValue( T_CT_QVBOXLAYOUTCLASS_IP_VALUE , :value, T_CT_VBOXLAYOUTCLASS_IP_VALUE_STARTVALUE)
+		TextBoxValue( T_CT_QVBOXLAYOUTCLASS_IP_VALUE , :value, T_CT_QVBOXLAYOUTCLASS_IP_VALUE_STARTVALUE)
 		ListBox( T_CT_QVBOXLAYOUTCLASS_IP_VALUE2 , :value2, 
 				T_CT_QVBOXLAYOUTCLASS_IP_VALUE2LIST )
 		TextBox( T_CT_QVBOXLAYOUTCLASS_IP_VALUE3 , :value3)
