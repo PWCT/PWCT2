@@ -4,9 +4,11 @@
 **	Date : 2017.12.14
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
-
+
+
 T_CT_QPUSHBUTTONCLASS_IP_TITLE = "Button Class Component"
 T_CT_QPUSHBUTTONCLASS_IP_VALUE = "Object"
+T_CT_QPUSHBUTTONCLASS_IP_VALUE_STARTVALUE = "Button1"
 T_CT_QPUSHBUTTONCLASS_IP_VALUE2 = "Method"
 
 T_CT_QPUSHBUTTONCLASS_IP_VALUE2FUNC = [
