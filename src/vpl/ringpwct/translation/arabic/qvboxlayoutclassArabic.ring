@@ -1,12 +1,14 @@
-﻿/*
+/*
 **	Project : Programming Without Coding Technology (PWCT) Version 2.0
 **	File Purpose :  qvboxlayoutclass Component
 **	Date : 2017.12.14
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
-
+
+
 T_CT_QVBOXLAYOUTCLASS_IP_TITLE = "مكون فئة الترتيب الراسي "
 T_CT_QVBOXLAYOUTCLASS_IP_VALUE = "اسم الكائن :"
+T_CT_VBOXLAYOUTCLASS_IP_VALUE_STARTVALUE = "" 
 T_CT_QVBOXLAYOUTCLASS_IP_VALUE2 = "الميثود : "
 
 T_CT_QVBOXLAYOUTCLASS_IP_VALUE2FUNC = [
