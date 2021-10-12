@@ -1,12 +1,14 @@
-﻿/*
+/*
 **	Project : Programming Without Coding Technology (PWCT) Version 2.0
 **	File Purpose :  qlabelclass Component
 **	Date : 2017.12.14
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
-
+
+
 T_CT_QLABELCLASS_IP_TITLE = "مكون فئة العنوان "
 T_CT_QLABELCLASS_IP_VALUE = "اسم الكائن :"
+T_CT_QLABELCLASS_IP_VALUE_STARTVALUE = ""
 T_CT_QLABELCLASS_IP_VALUE2 = "الميثود : "
 
 T_CT_QLABELCLASS_IP_VALUE2FUNC = [
