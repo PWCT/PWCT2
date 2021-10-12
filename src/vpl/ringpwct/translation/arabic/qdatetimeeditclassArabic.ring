@@ -4,9 +4,11 @@
 **	Date : 2018.03.14
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
-
+
+
 T_CT_QDATETIMEEDITCLASS_IP_TITLE = "مكون فئة تحرير الوقت والتاريخ"
 T_CT_QDATETIMEEDITCLASS_IP_VALUE = "اسم الكائن :"
+T_CT_QDATETIMEEDITCLASS_IP_VALUE_STARTVALUE = ""
 T_CT_QDATETIMEEDITCLASS_IP_VALUE2 = "الميثود : "
 
 T_CT_QDATETIMEEDITCLASS_IP_VALUE2FUNC = [
