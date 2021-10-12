@@ -4,9 +4,11 @@
 **	Date : 2018.03.14
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
-
+
+
 T_CT_QLISTWIDGETCLASS_IP_TITLE = "ListWidget Class Component"
 T_CT_QLISTWIDGETCLASS_IP_VALUE = "Object"
+T_CT_QLISTWIDGETCLASS_IP_VALUE_STARTVALUE = "ListWidget1"
 T_CT_QLISTWIDGETCLASS_IP_VALUE2 = "Method"
 
 T_CT_QLISTWIDGETCLASS_IP_VALUE2FUNC = [
