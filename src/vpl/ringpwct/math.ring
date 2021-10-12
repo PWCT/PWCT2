@@ -12,9 +12,9 @@ class mathComponentController from ComponentControllerParent
 	func GenerateAction 
 
 			cFunc = T_CT_MATH_IP_VALUE2FUNC[ Variable(:Value2) ] 
-				NewStep( StepData(:Value3) + " = "  +  T_CT_MATH_ST_VALUE  +
-					 StepData(:Value ) +  T_CT_MATH_ST_VALUE2 + 
-					StyleData(T_CT_MATH_IP_VALUE2STEPFUNC[Variable(:Value2)])  )
+				NewStep( StepData(:Value3) + " = " +					 
+					StyleData(T_CT_MATH_IP_VALUE2STEPFUNC[Variable(:Value2)]) + 
+					T_CT_MATH_ST_VALUE + StepData(:Value ) +  T_CT_MATH_ST_VALUE2 )
 				SetStepCode( Variable(:Value3) + " = "+cFunc+"("  + Variable(:Value ) + ")"  )
 				
 
