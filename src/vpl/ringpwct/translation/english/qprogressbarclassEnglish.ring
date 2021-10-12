@@ -4,9 +4,11 @@
 **	Date : 2018.03.14
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
-
+
+
 T_CT_QPROGRESSBARCLASS_IP_TITLE = "Progressbar Class Component"
 T_CT_QPROGRESSBARCLASS_IP_VALUE = "Object"
+T_CT_QPROGRESSBARCLASS_IP_VALUE_STARTVALUE = "Progressbar1"
 T_CT_QPROGRESSBARCLASS_IP_VALUE2 = "Method"
 
 T_CT_QPROGRESSBARCLASS_IP_VALUE2FUNC = [
