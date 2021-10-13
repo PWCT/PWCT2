@@ -9,10 +9,13 @@ T_CT_OBJECTSLIB_IP_TITLE = "ObjectsLib Component"
 T_CT_OBJECTSLIB_IP_VALUE = "Window "
 T_CT_OBJECTSLIB_IP_VALUE_DEFAULT = ":Controller"
 T_CT_OBJECTSLIB_IP_VALUE2 = "Function :"
-T_CT_OBJECTSLIB_IP_VALUE2LIST = ["openWindow","openWindowAndLink","openWindowNoShow"]
+T_CT_OBJECTSLIB_IP_VALUE2LIST = ["openWindow(cController)",
+"openWindowAndLink(cController,oParentController)",
+"openWindowNoShow(cController)","openWindowInPackages(cController,aPackagesList)"]
 
 T_CT_OBJECTSLIB_IP_VALUE2FUNC = [
-	"openWindow", "openWindowAndLink", "openWindowNoShow"
+	"openWindow", "openWindowAndLink", "openWindowNoShow",
+	"openWindowInPackages"
 ]
 
 # Copy the list to support changing the generated method name in the Steps Tree
