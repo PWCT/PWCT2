@@ -12,10 +12,10 @@ class objectslibComponentController from ComponentControllerParent
 	func GenerateAction 
 
 			cFunc = T_CT_OBJECTSLIB_IP_VALUE2FUNC[ Variable(:Value2) ] 
-				NewStep( StepData(:Value3) + " = " +					 
+				NewStep( 		 
 					StyleData(T_CT_OBJECTSLIB_IP_VALUE2STEPFUNC[Variable(:Value2)]) + 
 					T_CT_OBJECTSLIB_ST_VALUE + StepData(:Value ) +  T_CT_OBJECTSLIB_ST_VALUE2 )
-				SetStepCode( Variable(:Value3) + " = "+cFunc+"("  + Variable(:Value ) + ")"  )
+				SetStepCode( cFunc+"("  + Variable(:Value ) + ")"  )
 				
 
 		return True 
@@ -23,8 +23,7 @@ class objectslibComponentController from ComponentControllerParent
 class objectslibComponentView from ComponentViewParent
 	 
 		Title( T_CT_OBJECTSLIB_IP_TITLE )	
-		TextBox( T_CT_OBJECTSLIB_IP_VALUE , :value)
+		TextBoxValue( T_CT_OBJECTSLIB_IP_VALUE , :value, T_CT_OBJECTSLIB_IP_VALUE_DEFAULT)
 		ListBox( T_CT_OBJECTSLIB_IP_VALUE2 , :value2, 
 				T_CT_OBJECTSLIB_IP_VALUE2LIST )
-		TextBox( T_CT_OBJECTSLIB_IP_VALUE3 , :value3)
 		PageButtons()
