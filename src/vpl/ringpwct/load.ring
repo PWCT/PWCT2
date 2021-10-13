@@ -40,5 +40,7 @@ class LoadComponentView from ComponentViewParent
 	 
 		Title(T_CT_LOAD_IP_TITLE)	
 		TextBoxValue(T_CT_LOAD_IP_FILE , :file, T_CT_LOAD_IP_FILE_VALUE)
-		ListBox(T_CT_LOAD_IP_TYPE, :type , T_CT_LOAD_IP_TYPELIST) 
+		ListBox(T_CT_LOAD_IP_TYPE, :type , T_CT_LOAD_IP_TYPELIST) {
+			setcurrentrow(1,QItemSelectionModel_Clear | QItemSelectionModel_Select)
+		}	
 		PageButtons()
