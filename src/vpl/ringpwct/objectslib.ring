@@ -24,6 +24,7 @@ class objectslibComponentView from ComponentViewParent
 	 
 		Title( T_CT_OBJECTSLIB_IP_TITLE )	
 		TextBoxValue( T_CT_OBJECTSLIB_IP_VALUE , :value, T_CT_OBJECTSLIB_IP_VALUE_DEFAULT)
+		DisableListBoxSort()
 		ListBox( T_CT_OBJECTSLIB_IP_VALUE2 , :value2, 
 				T_CT_OBJECTSLIB_IP_VALUE2LIST )
 		PageButtons()

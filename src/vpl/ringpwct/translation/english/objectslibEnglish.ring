@@ -6,7 +6,7 @@
 */
 
 T_CT_OBJECTSLIB_IP_TITLE = "ObjectsLib Component"
-T_CT_OBJECTSLIB_IP_VALUE = "Window "
+T_CT_OBJECTSLIB_IP_VALUE = "Parameters "
 T_CT_OBJECTSLIB_IP_VALUE_DEFAULT = ":Controller"
 T_CT_OBJECTSLIB_IP_VALUE2 = "Function :"
 T_CT_OBJECTSLIB_IP_VALUE2LIST = ["openWindow(cController)",

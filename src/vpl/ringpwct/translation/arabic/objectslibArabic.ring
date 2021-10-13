@@ -6,7 +6,7 @@
 */
 
 T_CT_OBJECTSLIB_IP_TITLE = "مكون مكتبة الكائنات"
-T_CT_OBJECTSLIB_IP_VALUE = "النافذة "
+T_CT_OBJECTSLIB_IP_VALUE = "المعطيات "
 T_CT_OBJECTSLIB_IP_VALUE_DEFAULT = ""
 T_CT_OBJECTSLIB_IP_VALUE2 = "الدالة :"
 T_CT_OBJECTSLIB_IP_VALUE2LIST = ["Open_Window","Open_WindowAndLink","Open_WindowNoShow"]
