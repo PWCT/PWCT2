@@ -177,6 +177,7 @@ C_VPL_NAME = 'RingPWCT'
 	load "newtoolbar.ring"
 	load "newvideowidget.ring"
 	load "numbersandbytes.ring"
+	load "objectslib.ring"
 	load "odbcclass.ring"
 	load "odbc_autocommit.ring"
 	load "odbc_close.ring"
@@ -559,6 +560,7 @@ C_VPL_NAME = 'RingPWCT'
 	aComponentsFilesList + (cComponentsPath + "newtoolbar.ring")
 	aComponentsFilesList + (cComponentsPath + "newvideowidget.ring")
 	aComponentsFilesList + (cComponentsPath + "numbersandbytes.ring")
+	aComponentsFilesList + (cComponentsPath + "objectslib.ring")
 	aComponentsFilesList + (cComponentsPath + "odbcclass.ring")
 	aComponentsFilesList + (cComponentsPath + "odbc_autocommit.ring")
 	aComponentsFilesList + (cComponentsPath + "odbc_close.ring")
