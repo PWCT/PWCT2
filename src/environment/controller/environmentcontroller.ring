@@ -299,7 +299,7 @@ class EnvironmentController from WindowsControllerParent
 	func openVisualFile cFileName
 		parent().CheckSavingTheFile()
 		# Check the file size
-			if len(read(cFileName)) < 50*1024 {	# file size less than 50 KB
+			if len(read(FileNameEncoding(cFileName))) < 50*1024 {	# file size less than 50 KB
 				lDisplayLoadingMessage = False 
 			else 
 				lDisplayLoadingMessage = True
