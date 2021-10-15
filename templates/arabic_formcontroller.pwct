@@ -2,9 +2,9 @@
 
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
-cNaturalLanguageName     = 'English'
-nStepsID                 = 50		
-nInteractionsID          = 23
+cNaturalLanguageName     = 'arabic'
+nStepsID                 = 51		
+nInteractionsID          = 24
 
 aStepsTable = [
 	[
@@ -46,12 +46,12 @@ aStepsTable = [
 		]
 	],
 	[
-		2,
+		51,
 		1,
 		[
 			[
 				"name",
-				"Load <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">filename_View.ring</font></span>"
+				"إستدعاء الملف <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">filename_view.ring</font></span>"
 			],
 			[
 				"active",
@@ -59,11 +59,11 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"load "+char(34)+"filename_View.ring"+char(34)+""
+				"load "+char(34)+"filename_view.ring"+char(34)+""
 			],
 			[
 				"interactionid",
-				2
+				24
 			],
 			[
 				"visible",
@@ -79,7 +79,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Load sayhelloview.ring"
+				"إستدعاء الملف filename_view.ring"
 			]
 		]
 	],
@@ -507,7 +507,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				" Class <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">filename_Controller</font></span> from <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">WindowsControllerParent</font></span>"
+				" الفئة <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">filename_Controller</font></span> من <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">WindowsControllerParent</font></span>"
 			],
 			[
 				"active",
@@ -535,7 +535,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				" Class filename_Controller from WindowsControllerParent"
+				" الفئة filename_Controller من WindowsControllerParent"
 			]
 		]
 	],
@@ -545,7 +545,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				" Attributes "
+				" الخصائص "
 			],
 			[
 				"active",
@@ -573,7 +573,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				" Attributes "
+				" الخصائص "
 			]
 		]
 	],
@@ -621,7 +621,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				" Methods "
+				" الدوال "
 			],
 			[
 				"active",
@@ -649,7 +649,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				" Methods "
+				" الدوال "
 			]
 		]
 	]
@@ -663,14 +663,6 @@ aInteractionsTable = [
 		"16/02/2018",
 		"12:35:19",
 		""
-	],
-	[
-		2,
-		1,
-		"load",
-		"16/02/2018",
-		"12:37:12",
-		"file;;_RV_;;filename_View;;_RV_;;"
 	],
 	[
 		3,
@@ -735,6 +727,14 @@ aInteractionsTable = [
 		"16/02/2018",
 		"12:39:33",
 		"value;;_RV_;;oView;;_RV_;;value2;;_RV_;;filename_View;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
+	],
+	[
+		24,
+		1,
+		"load",
+		"15/10/2021",
+		"13:22:13",
+		"file;;_RV_;;filename_view.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	]
 ]
 
