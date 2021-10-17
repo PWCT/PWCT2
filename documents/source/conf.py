@@ -55,9 +55,9 @@ source_suffix = '.txt'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Ring'
-copyright = u'2016-2021, Ring Team'
-author = u'Ring Team'
+project = u'PWCT'
+copyright = u'2005-2021, PWCT Team'
+author = u'PWCT Team'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
