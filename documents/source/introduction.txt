@@ -10,6 +10,13 @@ Introduction
 
 Welcome to the PWCT visual programming language!
 
+PWCT is a visual programming language that focuses on Productivity and Ease-of-Use! 
+
+.. index:: 
+	pair: Introduction; Welcome
+
+Usage
+=====
 
 If you want to learn programming, create applications/systems or get some new ideas
 about visual programming in the practice then you are in the right place. The goal
@@ -33,14 +40,56 @@ This is just the basic idea and many other ideas are developed around
 this concept to get a practical general purpose visual programming 
 language for real world tasks. 
 
-In this chapter we are going to discuss the goals behind the language design and implementation.
+.. index:: 
+	pair: Introduction; Quotes about PWCT
+
+Quotes about PWCT
+=================
+
+|	**"Programming language masterpiece! I have to develop an educational software for my PhD Thesis and i haven't the time to learn a coding language now. Thumbs up for Mahmoud Samir Fayed and his research team. "**
+|		, jslafas (Sourceforge)
+
+|	**"This is great for making applications. I am a beginner who is still learning but with a few tutorial videos i'm sure i'll get the hang of it soon enough"**
+|		, jamesh101 (Sourceforge)
+
+|	**"This Project is best way to learn programming"**
+|		, eternel0422 (Sourceforge)
+
+|	**"This is a great tool for development and strives to remove many of the problems coding with text based languages. It aides you in putting your program logic together and does not force you to use one style of programming (OO, procedural, event and others). Instead it lets your focus your attention on solving the problem. It also standardizes errors for debugging your program. A lot of work went into this project. "**
+|		, c_horne (Sourceforge)
+
+|	**"Nice implementation and interface. And it seems that it has many possibilities!! "**
+|		, stavros68 (Sourceforge)
+
+|	**"Nice Concept Keep Developing it!!!"**
+|		, aryaputrasrj  (Sourceforge)
+
+|	**"Some years ago I tried to use programming tool also without coding(it used block-like structure), but I was dissapointed. But this tool is amazing!!! I can say that it is really alternative to coding! "**
+|		, bettinaf1986  (Sourceforge)
+
+|	**"I can agree with most of this reviews: this project is great! "**
+|		, davidshwinders   (Sourceforge)
+
+|	**"Very smooth and non intrusive interface. "**
+|		, revenajs1983 (Sourceforge)
+
+|	**"Really great project for newbies and noobs who doesn't know programming skills. "**
+|		, annhouge  (Sourceforge)
+
+|	**"Very, very light program, and fully featured. "**
+|		, congworlniros (Sourceforge)
+
+|	**"Version to evaluate , like supernova 1.3 , this tool could be the last word in human computer interaction , no more difference Java and Visual Basic , my word is equal to a computer command . The best idea I've seen . "**
+|		,  oid-3753088 (Sourceforge)
+
+|	**"Mahmoud Fayed, I have started used your Programming Without Coding Technology.Its just incredible to use your application and your programming language, I dont think anything is more worth to made this Programming Without Coding Technology . I dont think anything is more worth to made coding to beginners like me and to the common people. I dont think anything is more worth to made coding such faster ,easy and visualize. its just incredible and future of coding ............. so good luck for future to change the coding technology and hence change the world of coding ......hence entire universe............ the spreading or marketing can change whole education industry and coding technology.... thank you "**
+|		,  nikunjkavadia  (Sourceforge)
 
 .. index:: 
 	pair: Introduction ; History
 
 History
 =======
-
 
 PWCT 1.0 is released on October 18, 2008
 
@@ -81,297 +130,6 @@ The PWCT language comes with the next features
 * Many Samples and Applications
 * Complete Documentation.
 
-The First Generation
-====================
-
-The Concept of The First Generation
-===================================
-
-Fifteen years ago (In Dec. 2005) I started to think about developing PWCT.
-
-I started with many ideas and I tested each idea through practical development
-
-In 2007, The core idea was very simple (Goal Designer instead of Code Editor)
-
-We see this in the next screen shot, Instead of writing textual code directly, we follow
-a procedure of four simple steps
-
-1. Select a component 
-
-2. Enter the data required for this component 
-
-3. Interact with the steps tree (If you need this)
-
-4. Run the program
-
-The next diagram demonstrates something similar to what I wrote using a pen and paper to explain the idea to my
-friends (The diagram uses screen shots from PWCT 2.0 that doesn't exist at that time).
-
-.. image:: images/Hello.png
-	:alt: Hello
-
-At that time, the advantages were very clear
-
-* Selecting components means we can explore the programming system and start using it without previous knowledge.
-
-* Separating data from instructions through the data-entry forms provide the ability for quick reuse 
-
-* Using a GUI to program means easy support for translation (Arabic, English, French, etc.)
-
-* No Syntax Errors (Happy experience for beginners)
-
-* The generated steps tree (instead of source code) provides a chance for Maximum Readability
-
-* The generated steps could replace many lines of source code (Higher Abstraction)
-
-* The generated steps could be in many locations at the same time 
-
-* Interaction with a tree (Steps Tree) provide the ability to control many nodes (Parent & Children) together (Faster)
-
-* The same component could generate different steps based on the data that we enter through data-entry forms 
-
-This design was enough to attract a few thouands of developers until 2009
-
-from 2009 to 2013, We improved the system with the next features 
-
-1. Using Keyboard Shortcuts to improve the writability 
-
-2. Adding Colors & Customization to the Steps Tree 
-
-3. Improving a domain-specific language that are used for developing the components
-
-4. Supporting more programming languages in the code generation layer
-
-5. Show/Hide steps based on the context
-
-6. Two modes (Syntax Directed Editor OR Free Editor + VPL Compiler)
-
-7. Automatic Documentation (Generate HTML Files from Visual Programs)
-
-8. Optional automatic update of programs after components update 
-
-9. Adding the Time Dimension 
-
-Using the Time Dimension we can
-
-* Move to a point in the past during development and run the program
-
-* Play programs as movies to learn how to create a program step by step
-
-For example, the next program print numbers from 1 to 10 and print the Three message after the number 3.
-
-.. image:: images/tm1.png
-	:alt: Time Machine 1
-
-Using the Time Machine slider, we can move to the past and run the program before adding the if statement that print the Three message.
-
-.. image:: images/tm2.png
-	:alt: Time Machine 2
-
-The previous screen shots uses PWCT 2.0 but, the same idea is implemented in the first generation of PWCT from 2011 (PWCT 1.8)
-
-These updates were enough to attract hundered thousands of developers to download the product and try it!
-
-The Disadvantages of the First Generation
-=========================================
-
-It's all about the implementation and the missing features!
-
-The concept is very good, that attracted many developers with different background and they started asking about many things!
-
-And Yes! some developers asked about improving the concept itself! (More innovation is required)
-
-1. Some developers reported that using Code Editors is too much flexibile and faster in some situtations 
-
-2. Slow performance when using large visual source files 
-
-3. Visual Source Files are database files (not textual) which is not good for Version Control software
-
-4. Support importing the source code (Convert source code files to Visual Source Files)
-
-5. Opening many files and quick nagivation
-
-6. Multiplatform support (Windows, Linux & macOS)
-
-7. Support Web & Mobile development 
-
-8. Support more programming languages
-
-9. Translation & Unicode 
-
-10. Modern Form Designer
-
-11. Support powerful libraries and frameworks
-
-12. More educational resources!
-
-I started to think about all of these issues and feature requests and how I can implement them.
-
-I discovered that I need a new programming language (Ring) that could help me to do all of this in an efficient way
-
-The Second Generation
-=====================
-
-The second generation (PWCT 2.0) is under development using the Ring programming language
-
-Our goal is to provide a more powerful version of the software that satisfy two conditions
-
-(1) To be an easy tool to start learning about real programming concepts
-
-(2) To be a better replacement for Textual Code Editors 
-
-In the first generation we tried to achive the same goals but, we did a lot of mistakes, we 
-learned from them and developed new ideas then we implemented these ideas in PWCT 2.0
-
-I could be brave and say that after PWCT 2.0 development, I don't see any reason to use a Textual Code Editor
-when developing Ring applications. The same could be applied for other textual programming languages when we 
-support them.
-
-Improving the Concept
-=====================
-
-1- The Ring textual language is designed for high writability
-
-2- The PWCT visual language is designed for high readability 
-
-3- We can use them together at the same time using (Ring2PWCT) 
-
-3.1 - We can write Ring code directly and get the Visual Representation 
-
-3.2 - We can import textual source code files and complete projects written in Ring
-
-Interactive Visualizations
-==========================
-
-In the Goal Designer we can type Ring code directly and PWCT will do the visualization
-
-The next Ring code create an object and a class in one line.
-
-.. image:: images/ft1.png
-	:alt: Fast Typing 1
-
-We get the visual output in the Steps Tree 
-
-.. image:: images/ft2.png
-	:alt: Fast Typing 2
-
-We can continue and write more code, for example using a (For Loop) and (If statement)
-
-.. image:: images/ft3.png
-	:alt: Fast Typing 3
-
-Again, we see the output in the steps tree 
-
-.. image:: images/ft4.png
-	:alt: Fast Typing 4
-
-We can define three functions (one, two & three)
-
-.. image:: images/ft5.png
-	:alt: Fast Typing 5
-
-The steps tree are updated 
-
-.. image:: images/ft6.png
-	:alt: Fast Typing 6
-
-We can call these functions 
-
-.. image:: images/ft7.png
-	:alt: Fast Typing 7
-
-So, if you are a Ring programmer and know how to write textual Code, You can reuse this knowledge and PWCT will not get in your way!
-
-.. image:: images/ft8.png
-	:alt: Fast Typing 8
-
-Import Textual Source Code Files
-================================
-
-PWCT 2.0 comes with Ring2PWCT that can import any textual source code file.
-
-We imported all of the Ring applications and samples
-
-For example the next screen shots for the Flappy Bird 3000 game
-
-.. image:: images/flappybird1.png
-	:alt: Flappy Bird1
-
-.. image:: images/flappybird2.png
-	:alt: Flappy Bird2
-
-Improving the Implementation
-============================
-
-In the second generation of PWCT, we worked on solving all of the reported problems in the design and implementation of the first generation. Also we implemented most feature requests that are useful and improve the flexibility of the product.  
-
-64-bit version
-==============
-
-PWCT 2.0 will comes with 64-bit version (no longer limited to ~4gb of memory)
-
-### Open Many Files
-
-PWCT 2.0 Support opening many visual source files at the same time
-
-.. image:: images/openmanyfiles.png
-	:alt: Open Many Files
-
-Inserting Steps
-===============
-
-PWCT 2.0 support starting new interactions at any location in the steps tree (Not just Start Here steps)
-
-The new steps will be inserted in the right location
-
-This feature is supported while using components, Ring2PWCT and Paste operations
-
-Auto-Complete
-=============
-
-In PWCT 2.0 Interaction Pages, we have better usability through default values, search in listboxes and better 
-auto-complete.
-
-.. image:: images/autocomplete.png
-	:alt: Auto-Complete
-
-Web and Mobile versions
-=======================
-
-We can use PWCT on Desktop, Web & Mobile platforms.
-
-The next screen shot for the Mobile & Web versions
-
-The Web version uses (Qt For WebAssembly) and the Mobile version uses (Qt for Android)
-
-Most software developers uses the Desktop platforms and I belive that this is too much
-better and practical. but we added the support to these platforms for two reasons
-
-1- We can easily support them (Thanks to the powerful Ring language & Qt framework)
-
-2- At some situations, these platforms are very useful. 
-
-2.1 - Some Users don't have Desktop computers but have Mobile devices.
-
-2.2 - At some places we could have only our Mobile devices and some free time for programming.
-
-The Mobile screen is small, typing using the touch screen is slow
-compared to using a large keyboard.
-
-Using foldable smartphones and Tablets provide better experience.
-
-.. image:: images/WebAndMobile.png
-	:alt: Web And Mobile
-
-Translation (Arabic Version)
-============================
-
-One of the advantages of using Visual Programming and GUI over textual code editors is the easy translation of these User Interfaces to other natural languages.
-
-PWCT 2.0 will comes with an Arabic version, other languages could be added in the future.
-
-.. image:: images/Arabic.jpg
-	:alt: Arabic PWCT
 
 License
 =======
