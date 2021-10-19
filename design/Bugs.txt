@@ -7,8 +7,8 @@
 
 ===========================================================================================================================
 Status
-	* Bugs Count : 50
-	* Fixed Bugs : 50
+	* Bugs Count : 51
+	* Fixed Bugs : 51
 	* UnFixed Bugs : 0
 ===========================================================================================================================
 (1)  Fixed : We created over 6 thouands steps, then using the search window
@@ -1645,3 +1645,21 @@ This was a logical memory leak!
 
 (50) Fixed : Using (if t=3 ? :three ok else) in Ring2PWCT (Component Browser) - Lead to Crash
 
+
+===========================================================================================================================
+
+(51) Fixed: Form Designer - Automatic setting of events sometimes doesn't work!
+
+	Solved in this code by using Lower() function when comparing file names
+
+	func NewEventName cFunctionName
+		cFunctionName = trim(cFunctionName)
+		# Be sure that we have saved form file 
+			if parent().FormDesigner().ActiveFileName() = "" { return }
+		# Be sure that the Controller class source code is opened
+			cFileNameInFormDesigner = substr(parent().FormDesigner().ActiveFileName(),".rform","Controller.pwct")
+			if trim(lower(oVisualSourceFile.cFileName)) != trim(lower(cFileNameInFormDesigner)) {
+				return 
+			}
+
+===========================================================================================================================

@@ -2052,7 +2052,8 @@ class GoalDesignerController from WindowsControllerParent
 		# Be sure that we have saved form file 
 			if parent().FormDesigner().ActiveFileName() = "" { return }
 		# Be sure that the Controller class source code is opened
-			if oVisualSourceFile.cFileName != substr(parent().FormDesigner().ActiveFileName(),".rform","Controller.pwct") {
+			cFileNameInFormDesigner = substr(parent().FormDesigner().ActiveFileName(),".rform","Controller.pwct")
+			if trim(lower(oVisualSourceFile.cFileName)) != trim(lower(cFileNameInFormDesigner)) {
 				return 
 			}
 		# Be sure that the event code doesn't contains (, ', ", ` and spaces
