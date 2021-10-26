@@ -304,7 +304,13 @@ void ring_vm_equal ( VM *pVM )
 		else if ( RING_VM_STACK_ISNUMBER ) {
 			nNum1 = RING_VM_STACK_READN ;
 			if ( ring_vm_stringtonum(pVM,ring_string_get(cStr1)) == nNum1 ) {
-				RING_VM_STACK_TRUE ;
+				/* Check whether zero is result of non decimal or hexadecimal value */
+				if ( nNum1 == 0 && ring_string_get(cStr1)[0] != '\0' && sscanf(ring_string_get(cStr1),"%lf",&nNum2) != 1 ) {
+					RING_VM_STACK_FALSE ;
+				}
+				else {
+					RING_VM_STACK_TRUE ;
+				}
 			}
 			else {
 				RING_VM_STACK_FALSE ;
@@ -329,7 +335,13 @@ void ring_vm_equal ( VM *pVM )
 		}
 		else if ( RING_VM_STACK_ISSTRING ) {
 			if ( ring_vm_stringtonum(pVM,RING_VM_STACK_READC) == nNum1 ) {
-				RING_VM_STACK_TRUE ;
+				/* Check whether zero is result of non decimal or hexadecimal value */
+				if ( nNum1 == 0 && RING_VM_STACK_READC[0] != '\0' && sscanf(RING_VM_STACK_READC,"%lf",&nNum2) != 1 ) {
+					RING_VM_STACK_FALSE ;
+				}
+				else {
+					RING_VM_STACK_TRUE ;
+				}
 			}
 			else {
 				RING_VM_STACK_FALSE ;
@@ -565,7 +577,13 @@ void ring_vm_notequal ( VM *pVM )
 			nNum1 = ring_vm_stringtonum(pVM,ring_string_get(cStr1)) ;
 			/* Compare */
 			if ( nNum1 == nNum2 ) {
-				RING_VM_STACK_FALSE ;
+				/* Check whether zero is result of non decimal or hexadecimal value */
+				if ( nNum1 == 0 && ring_string_get(cStr1)[0] != '\0' && sscanf(ring_string_get(cStr1),"%lf",&nNum2) != 1 ) {
+					RING_VM_STACK_TRUE ;
+				}
+				else {
+					RING_VM_STACK_FALSE ;
+				}
 			}
 			else {
 				RING_VM_STACK_TRUE ;
@@ -593,7 +611,13 @@ void ring_vm_notequal ( VM *pVM )
 			cStr2 = RING_VM_STACK_GETSTRINGRAW ;
 			/* Compare */
 			if ( ring_vm_stringtonum(pVM,ring_string_get(cStr2)) == nNum1 ) {
-				RING_VM_STACK_FALSE ;
+				/* Check whether zero is result of non decimal or hexadecimal value */
+				if ( nNum1 == 0 && ring_string_get(cStr2)[0] != '\0' && sscanf(ring_string_get(cStr2),"%lf",&nNum2) != 1 ) {
+					RING_VM_STACK_TRUE ;
+				}
+				else {
+					RING_VM_STACK_FALSE ;
+				}
 			}
 			else {
 				RING_VM_STACK_TRUE ;
@@ -961,7 +985,7 @@ void ring_vm_bitnot ( VM *pVM )
 }
 /* Conversion */
 
-char * ring_vm_numtostring ( VM *pVM,double nNum1,char *cStr )
+RING_API char * ring_vm_numtostring ( VM *pVM,double nNum1,char *cStr )
 {
 	char cOptions[10]  ;
 	int nNum2  ;
@@ -986,7 +1010,7 @@ char * ring_vm_numtostring ( VM *pVM,double nNum1,char *cStr )
 	return cStr ;
 }
 
-double ring_vm_stringtonum ( VM *pVM,const char *cStr )
+RING_API double ring_vm_stringtonum ( VM *pVM,const char *cStr )
 {
 	double nResult  ;
 	char *cEndStr  ;

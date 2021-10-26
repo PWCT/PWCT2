@@ -189,8 +189,10 @@ RING_API void ring_state_main ( int argc, char *argv[] )
 				nSRC = 1 ;
 			}
 			else {
-				ring_general_printline();
-				printf( "WARNING: Unrecognized option: %s\n",argv[x] ) ;
+				if ( nSRC == 0 ) {
+					ring_general_printline();
+					printf( "WARNING: Unrecognized option: %s\n",argv[x] ) ;
+				}
 			}
 		}
 	}
@@ -271,6 +273,7 @@ RING_API int ring_state_runfile ( RingState *pRingState,char *cFileName )
 	char cStartup[30]  ;
 	int x,nSize  ;
 	char cFileName2[200]  ;
+	char cCurrentDir[RING_PATHSIZE]  ;
 	ring_state_log(pRingState,"function ring_state_runfile()");
 	/* Check file */
 	if ( pRingState->pRingFilesList == NULL ) {
@@ -300,10 +303,12 @@ RING_API int ring_state_runfile ( RingState *pRingState,char *cFileName )
 	}
 	/* Switch To File Folder */
 	strcpy(cFileName2,cFileName);
-	fp = RING_OPENFILE(cFileName , "r");
-	/* Avoid switching if it's the first file */
 	if ( nFreeFilesList == 0 ) {
+		fp = ring_custom_fopen(cFileName , "r");
 		ring_general_switchtofilefolder(cFileName2);
+	}
+	else {
+		fp = RING_OPENFILE(cFileName , "r");
 	}
 	/* Read File */
 	if ( fp==NULL ) {

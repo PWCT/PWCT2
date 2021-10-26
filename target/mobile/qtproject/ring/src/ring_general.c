@@ -3,6 +3,9 @@
 **  Include Files 
 */
 #include "ring.h"
+#ifdef _WIN32
+	#include <windows.h>
+#endif
 /* General Functions */
 
 int ring_general_fexists ( const char *cFileName )
@@ -37,6 +40,11 @@ int ring_general_exefilename ( char *cDirPath )
 	#elif __MACH__
 		/* Mac OS X */
 		_NSGetExecutablePath(cDirPath,&nSize);
+		char *cCorrectPath = realpath(cDirPath,NULL) ;
+		if ( cCorrectPath != NULL ) {
+			strncpy(cDirPath,cCorrectPath,nSize) ;
+			free(cCorrectPath) ;
+		}
 	#elif __linux__
 		/* readlink() doesn't null terminate */
 		memset(cDirPath,0,nSize);
@@ -168,4 +176,37 @@ void ring_general_showtime ( void )
 	myclock = clock();
 	printf( "Clock : %ld \n", myclock ) ;
 	ring_general_printline();
+}
+
+RING_FILE ring_custom_fopen ( const char*cFileName, const char*cMode )
+{
+	#ifdef _WIN32
+		/* Code For MS-Windows */
+		RING_FILE fp  ;
+		int nLen1,nLen2,nFileNameSize,nModeSize  ;
+		wchar_t cPath[MAX_PATH]  ;
+		wchar_t cWMode[MAX_PATH]  ;
+		/* Set Variables */
+		nLen1 = 0 ;
+		nLen2 = 0 ;
+		nFileNameSize = strlen(cFileName) ;
+		nModeSize = strlen(cMode) ;
+		if ( (nFileNameSize == 0) || (nModeSize==0) ) {
+			return NULL ;
+		}
+		nLen1 = MultiByteToWideChar(CP_UTF8, 0, cFileName, nFileNameSize, cPath, nFileNameSize) ;
+		if ( nLen1 >= MAX_PATH ) {
+			return NULL ;
+		}
+		cPath[nLen1] = L'\0' ;
+		nLen2 = MultiByteToWideChar(CP_UTF8, 0, cMode, nModeSize, cWMode, nModeSize) ;
+		if ( nLen2 >= MAX_PATH ) {
+			return NULL ;
+		}
+		cWMode[nLen2] = L'\0' ;
+		fp = _wfopen(cPath, cWMode);
+		return fp ;
+	#else
+		return RING_OPENFILE(cFileName, cMode) ;
+	#endif
 }

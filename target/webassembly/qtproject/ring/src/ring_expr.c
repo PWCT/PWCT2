@@ -1,7 +1,4 @@
-/*
-**  Copyright (c) 2013-2021 Mahmoud Fayed <msfclipper@yahoo.com> 
-**  The First Step  - Start Here 
-*/
+/* Copyright (c) 2013-2021 Mahmoud Fayed <msfclipper@yahoo.com> */
 #include "ring.h"
 /*
 **  Functions 
@@ -958,6 +955,7 @@ int ring_parser_factor ( Parser *pParser,int *nFlag )
 		ring_parser_nexttoken(pParser);
 		if ( ring_parser_isoperator2(pParser,OP_FCLOSE) ) {
 			ring_parser_nexttoken(pParser);
+			RING_PARSER_IGNORENEWLINE ;
 			#if RING_PARSERTRACE
 				RING_STATE_CHECKPRINTRULES 
 				
@@ -971,6 +969,7 @@ int ring_parser_factor ( Parser *pParser,int *nFlag )
 			pParser->nAssignmentFlag = x ;
 			if ( ring_parser_isoperator2(pParser,OP_FCLOSE) ) {
 				ring_parser_nexttoken(pParser);
+				RING_PARSER_IGNORENEWLINE ;
 				#if RING_PARSERTRACE
 					RING_STATE_CHECKPRINTRULES 
 					
@@ -1241,6 +1240,7 @@ int ring_parser_mixer ( Parser *pParser )
 					ring_parser_nexttoken(pParser);
 					/* Generate Code */
 					ring_parser_gencall(pParser,nCallMethod);
+					RING_PARSER_IGNORENEWLINE ;
 					x = ring_parser_mixer(pParser);
 					return x ;
 				}
@@ -1375,7 +1375,7 @@ int ring_parser_ppmm ( Parser *pParser )
 		case 1 :
 			/* Code Generation */
 			ring_parser_icg_newoperation(pParser,ICO_ASSIGNMENTPOINTER);
-			/* Duplicate the address two times, one for the assignment (x = x+1) and one to keep the value on the stack */
+			/* Duplicate the address two times, one for the assignment (x = x+1) and one to keep the value on the */
 			ring_parser_icg_newoperation(pParser,ICO_DUPLICATE);
 			ring_parser_icg_newoperation(pParser,ICO_DUPLICATE);
 			ring_parser_icg_newoperation(pParser,ICO_PUSHV);
@@ -1396,7 +1396,7 @@ int ring_parser_ppmm ( Parser *pParser )
 		case 2 :
 			/* Code Generation */
 			ring_parser_icg_newoperation(pParser,ICO_ASSIGNMENTPOINTER);
-			/* Duplicate the address two times, One for the assignment (x=x+1) and one to  keep the value on the Stack */
+			/* Duplicate the address two times, One for the assignment (x=x+1) and one to  keep the value on the */
 			ring_parser_icg_newoperation(pParser,ICO_DUPLICATE);
 			ring_parser_icg_newoperation(pParser,ICO_DUPLICATE);
 			ring_parser_icg_newoperation(pParser,ICO_PUSHV);
@@ -1497,4 +1497,3 @@ int ring_parser_objattributes ( Parser *pParser )
 	}
 	return 1 ;
 }
-

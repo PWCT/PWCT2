@@ -327,7 +327,7 @@
 	#define RING_VM_ERROR_FORSTEPDATATYPE "Error (R28) : Using bad data type as step value"
 	#define RING_VM_ERROR_FORLOOPDATATYPE "Error (R29) : Using bad data type in for loop"
 	#define RING_VM_ERROR_PARENTCLASSLIKESUBCLASS "Error (R30) : parent class name is identical to child class name "
-	#define RING_VM_ERROR_TRYINGTOMODIFYTHESELFPOINTER "Error (R31) : Trying to destory the object using the self reference "
+	#define RING_VM_ERROR_TRYINGTOMODIFYTHESELFPOINTER "Error (R31) : Trying to destroy the object using the self reference "
 	#define RING_VM_ERROR_BADCALLPARA "Error (R32) : The CALL command expect a variable contains string!"
 	#define RING_VM_ERROR_BADDECIMALNUMBER "Error (R33) : Bad decimals number (correct range >= 0 and <= 90)"
 	#define RING_VM_ERROR_ASSIGNNOTVARIABLE "Error (R34) : Variable is required for the assignment operation"
@@ -452,9 +452,9 @@
 
 	void ring_vm_neg ( VM *pVM ) ;
 
-	char * ring_vm_numtostring ( VM *pVM,double nNum1,char *cStr ) ;
+	RING_API char * ring_vm_numtostring ( VM *pVM,double nNum1,char *cStr ) ;
 
-	double ring_vm_stringtonum ( VM *pVM,const char *cStr ) ;
+	RING_API double ring_vm_stringtonum ( VM *pVM,const char *cStr ) ;
 
 	void ring_vm_expr_ppoo ( VM *pVM,const char *cStr ) ;
 
