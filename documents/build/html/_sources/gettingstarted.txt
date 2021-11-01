@@ -9,22 +9,82 @@ Getting Started
 In this chapter we are going to learn how to create our first application using PWCT
 
 .. index:: 
-	pair: Getting Started; Hello World Programg (Using the Mouse)
+	pair: Getting Started; The Main Window
 
-Hello World Programg (Using the Mouse)
-======================================
+The Main Window
+===============
+
+When we run PWCT, The Main Window present the next dockable windows
 
 .. image:: images/helloworld/p1.png
 	:alt: p1.png
 
+* Components Browser 
+
+1 - We can select a component to use 
+
+2 - The component provide an Interaction Page (Data-Entry Window) and lead the steps 
+generation process. Also the component generate the textual source code in the background.
+
+* Project Files :  We can open visual source files quickly
+
+* Form Designer : Designing the application forms (User Interface)
+
+* Output Window : When we run programs, this window could contains the output 
+
+* Goal Designer 
+
 .. image:: images/helloworld/p2.png
 	:alt: p2.png
+
+1 - Contains the Steps Tree that represent the logic behind our program
+
+2 - Contains buttons that we can use to control the steps tree
+
+3 - Contains the Time Machine
+
+3.1 - Support running the program in the past
+
+3.2 - Support playing the program as movie
+
+.. index:: 
+	pair: Getting Started; Hello World Program (Using the Mouse)
+
+Hello World Program (Using the Mouse)
+=====================================
+
+
+From the Components Browser, Select the (Print Text) component
+
+Then double click using the Mouse
 
 .. image:: images/helloworld/p3.png
 	:alt: p3.png
 
+After selecting the component, an interaction page will appears in the Goal Designer
+
+Using this Interaction Page we can determine the text that will be printed on the screen
+
+Type: Hello, World!
+
+Then click the (Ok) button
+
 .. image:: images/helloworld/p4.png
 	:alt: p4.png
 
+The previous step will generate the next step in the Goal Designer Window
+
 .. image:: images/helloworld/p5.png
 	:alt: p5.png
+
+Now we can run the program and see the program output
+
+To run the program click on the (Run) button from the Main Toolbar
+
+.. image:: images/helloworld/p6.png
+	:alt: p6.png
+
+The next output appears in the Output Window
+
+.. image:: images/helloworld/p7.png
+	:alt: p7.png
