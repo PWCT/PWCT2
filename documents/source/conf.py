@@ -122,7 +122,7 @@ todo_include_todos = True
 #html_theme = "classic"
 html_theme = "sphinx_rtd_theme"
 
-html_logo = "images/pwctdoclogo.jpg"
+html_logo = "images/logo/pwctdoclogo.jpg"
 
 html_theme_options = {
 	'logo_only': True,

@@ -1,1 +1,0 @@
-This folder for screen shot generated using Automatic Documentation of visual programs.
