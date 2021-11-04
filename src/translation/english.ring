@@ -78,7 +78,7 @@
 
 	T_ENV_MENU_DEBUG = "Debug (Run then wait!)"
 	T_ENV_MENU_RUN = "Run"
-	T_ENV_MENU_RUNNOCONSOLE = "Run GUI Application (No Console)"
+	T_ENV_MENU_RUNNOCONSOLE = "Run GUI Application (No Command Prompt/Terminal)"
 	T_ENV_MENU_RUNWEBAPPLICATION = "Run Web Application (Open In Browser)"
 	T_ENV_MENU_SETMAINFILE = "Set the Main File to be the current source file"
 	T_ENV_MENU_MAINFILEDEBUG = "Main File : Debug (Run then wait!)"
