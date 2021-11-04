@@ -591,6 +591,18 @@ class EnvironmentController from WindowsControllerParent
 			oObject.Show()
 		}
 
+
+	func PWCTCHMAction
+		new QDesktopServices {
+			OpenURL(new qURL("file:///"+substr(PWCT_FOLDER,"\","/")+"../documents/PWCT.chm") )
+		}
+
+	func PWCTPDFAction
+		new QDesktopServices {
+			OpenURL(new qURL("file:///"+substr(PWCT_FOLDER,"\","/")+"../documents/PWCT.pdf") )
+		}
+
+
 	/*
 		Purpose : Open Help - CHM File 
 		Parameters : None

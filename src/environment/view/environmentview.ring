@@ -644,7 +644,21 @@ class EnvironmentView from WindowsViewParent
 			}
 			subHelp { 
 				if ! PWCTIsMobile(:HelpMenu) {
-					subHelpLF = addmenu(T_ENV_MENU_LANGREF) # "Language Reference"
+					subHelpLF = addmenu(T_ENV_MENU_PWCTLANGREF) # "PWCT Language Reference"
+					subHelpLF { 
+						oAction = new qAction(win) {
+							settext(T_ENV_MENU_CHM) # "CHM File"
+							setclickevent(Method(:PWCTCHMAction))
+						}
+						addaction(oAction)
+						oAction = new qAction(win) {
+							settext(T_ENV_MENU_PDF)
+							setclickevent(Method(:PWCTPDFAction))
+						}
+						addaction(oAction)
+					}
+					addseparator()
+					subHelpLF = addmenu(T_ENV_MENU_LANGREF) # "Ring Language Reference"
 					subHelpLF { 
 						oAction = new qAction(win) {
 							settext(T_ENV_MENU_CHM) # "CHM File"
