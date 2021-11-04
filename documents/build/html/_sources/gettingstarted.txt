@@ -479,6 +479,16 @@ Run the program using Ctrl+F5 to see the output
 	:alt: again4.png
 
 .. index:: 
+	pair: Getting Started; Undo
+
+Undo
+----
+
+If we did something wrong in the Steps Tree (Like deleting a step) we can cancel this using Ctrl+Z
+
+Also we can select (Undo) from the (Edit) menu instead of pressing Ctrl+Z
+
+.. index:: 
 	pair: Getting Started; Visual Source Files
 
 Visual Source Files
@@ -590,3 +600,25 @@ Also we can print the textual source code
 	:alt: print2.png
 
 .. tip:: We can copy the text that represent the Steps Tree or the Source Code and paste it in our discussions in Online Forums
+
+
+.. index:: 
+	pair: Getting Started; Go to line
+
+Go to line
+----------
+
+Each visual source file (*.pwct) represent a textural source code file 
+
+Sometimes we want to select a step inside the Steps Tree that represent a specific line in the textual source code
+
+This is useful if we have a runtime error in a specific line of source code
+
+Using (Go to line) from the (Edit) menu, we can do that
+
+.. tip:: We can open the (Go to line) window using Ctrl+G
+
+.. note:: Each step in the Step Tree could repsent one or many of textural source code lines
+
+.. image:: images/helloworld/gotoline.png
+	:alt: gotoline.png

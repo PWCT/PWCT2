@@ -111,6 +111,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#deleting-steps">Deleting Steps</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#search-and-replace">Search and Replace</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#using-the-again-button">Using the Again Button</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#undo">Undo</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#visual-source-files">Visual Source Files</a><ul>
@@ -119,6 +120,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#starting-new-file">Starting new file</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#save-as">Save As</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#printing-the-file">Printing the file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#go-to-line">Go to line</a></li>
 </ul>
 </li>
 </ul>
@@ -432,9 +434,14 @@
 <p>Run the program using Ctrl+F5 to see the output</p>
 <img alt="again4.png" src="_images/again4.png" />
 </div>
+<div class="section" id="undo">
+<span id="index-14"></span><h3>Undo<a class="headerlink" href="#undo" title="Permalink to this headline">¶</a></h3>
+<p>If we did something wrong in the Steps Tree (Like deleting a step) we can cancel this using Ctrl+Z</p>
+<p>Also we can select (Undo) from the (Edit) menu instead of pressing Ctrl+Z</p>
+</div>
 </div>
 <div class="section" id="visual-source-files">
-<span id="index-14"></span><h2>Visual Source Files<a class="headerlink" href="#visual-source-files" title="Permalink to this headline">¶</a></h2>
+<span id="index-15"></span><h2>Visual Source Files<a class="headerlink" href="#visual-source-files" title="Permalink to this headline">¶</a></h2>
 <p>In this section we will learn about the Visual Source Files (<a href="#id3"><span class="problematic" id="id4">*</span></a>.pwct)</p>
 <p>Section contents:</p>
 <ul class="simple">
@@ -443,7 +450,7 @@
 <li><p>Starting new file</p></li>
 </ul>
 <div class="section" id="saving-the-file">
-<span id="index-15"></span><h3>Saving the file<a class="headerlink" href="#saving-the-file" title="Permalink to this headline">¶</a></h3>
+<span id="index-16"></span><h3>Saving the file<a class="headerlink" href="#saving-the-file" title="Permalink to this headline">¶</a></h3>
 <p>To save the file, Click on the (Save) button from the Main Toolbar or press Ctrl+S</p>
 <img alt="save1.png" src="_images/save1.png" />
 <p>Select the folder, or create a new folder</p>
@@ -455,7 +462,7 @@
 <img alt="save3.png" src="_images/save3.png" />
 </div>
 <div class="section" id="opening-the-file">
-<span id="index-16"></span><h3>Opening the file<a class="headerlink" href="#opening-the-file" title="Permalink to this headline">¶</a></h3>
+<span id="index-17"></span><h3>Opening the file<a class="headerlink" href="#opening-the-file" title="Permalink to this headline">¶</a></h3>
 <p>To open a file, click on the (Open) button from the Main Toolbar</p>
 <img alt="open1.png" src="_images/open1.png" />
 <p>Select the file, for example: program1.pwct</p>
@@ -465,7 +472,7 @@
 <img alt="open3.png" src="_images/open3.png" />
 </div>
 <div class="section" id="starting-new-file">
-<span id="index-17"></span><h3>Starting new file<a class="headerlink" href="#starting-new-file" title="Permalink to this headline">¶</a></h3>
+<span id="index-18"></span><h3>Starting new file<a class="headerlink" href="#starting-new-file" title="Permalink to this headline">¶</a></h3>
 <p>To start a new file, From the (File) menu, select (New) or press Ctrl+Alt+N</p>
 <p>Another way is to click on the (New) button from the Main toolbar</p>
 <img alt="newfile.png" src="_images/newfile.png" />
@@ -473,12 +480,12 @@
 <p>To change the file name click (Save)</p>
 </div>
 <div class="section" id="save-as">
-<span id="index-18"></span><h3>Save As<a class="headerlink" href="#save-as" title="Permalink to this headline">¶</a></h3>
+<span id="index-19"></span><h3>Save As<a class="headerlink" href="#save-as" title="Permalink to this headline">¶</a></h3>
 <p>Using (Save As) we can save the file using another name</p>
 <img alt="saveas.png" src="_images/saveas.png" />
 </div>
 <div class="section" id="printing-the-file">
-<span id="index-19"></span><h3>Printing the file<a class="headerlink" href="#printing-the-file" title="Permalink to this headline">¶</a></h3>
+<span id="index-20"></span><h3>Printing the file<a class="headerlink" href="#printing-the-file" title="Permalink to this headline">¶</a></h3>
 <p>To print the file press Ctrl+P or select (Print to PDF) from the file menu</p>
 <p>We can print the Steps Tree</p>
 <img alt="print1.png" src="_images/print1.png" />
@@ -488,6 +495,22 @@
 <p class="admonition-title">Tip</p>
 <p>We can copy the text that represent the Steps Tree or the Source Code and paste it in our discussions in Online Forums</p>
 </div>
+</div>
+<div class="section" id="go-to-line">
+<span id="index-21"></span><h3>Go to line<a class="headerlink" href="#go-to-line" title="Permalink to this headline">¶</a></h3>
+<p>Each visual source file (<a href="#id5"><span class="problematic" id="id6">*</span></a>.pwct) represent a textural source code file</p>
+<p>Sometimes we want to select a step inside the Steps Tree that represent a specific line in the textual source code</p>
+<p>This is useful if we have a runtime error in a specific line of source code</p>
+<p>Using (Go to line) from the (Edit) menu, we can do that</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>We can open the (Go to line) window using Ctrl+G</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Each step in the Step Tree could repsent one or many of textural source code lines</p>
+</div>
+<img alt="gotoline.png" src="_images/gotoline.png" />
 </div>
 </div>
 </div>
