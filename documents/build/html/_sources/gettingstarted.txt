@@ -434,7 +434,7 @@ We can replace the text with another text
 .. image:: images/helloworld/search3.png
 	:alt: search3.png
 
-For example replace (seven) with (** seven **) then click the (Replace) button
+For example replace (seven) with ( ** seven ** ) then click the (Replace) button
 
 .. image:: images/helloworld/search4.png
 	:alt: search4.png
@@ -494,7 +494,7 @@ Also we can select (Undo) from the (Edit) menu instead of pressing Ctrl+Z
 Visual Source Files
 ===================
 
-In this section we will learn about the Visual Source Files (*.pwct)
+In this section we will learn about the Visual Source Files ( *.pwct )
 
 Section contents:
 
@@ -608,7 +608,7 @@ Also we can print the textual source code
 Go to line
 ----------
 
-Each visual source file (*.pwct) represent a textural source code file 
+Each visual source file ( *.pwct ) represent a textural source code file 
 
 Sometimes we want to select a step inside the Steps Tree that represent a specific line in the textual source code
 
@@ -683,3 +683,63 @@ Also we have more options that control the behavior of the PWCT environment
 
 .. image:: images/helloworld/cust5.png
 	:alt: cust5.png
+
+
+.. index:: 
+	pair: Getting Started; Run Programs
+
+Run Programs
+============
+
+We can run programs using the Program menu or using the Toolbars
+
+Also we can use the Keyboard shortcuts
+
+.. index:: 
+	pair: Getting Started; Program Menu
+
+Program Menu
+------------
+
+From the Program menu, we can run the current opened file using different options
+
+Also we can run the Main file in the project
+
+.. image:: images/helloworld/programmenu1.png
+	:alt: programmenu1.png
+
+Selecting (Debug - Run then wait) will display the output in the command prompt window
+
+After running the program, the pause command will be executed so we can see the output
+
+.. image:: images/helloworld/programmenu2.png
+	:alt: programmenu2.png
+
+Also we have the (Run web application) option that we can use during web development
+
+Also we have this option in the Main toolbar 
+
+.. image:: images/helloworld/programmenu3.png
+	:alt: programmenu3.png
+
+For example, the next program display (Hello, World) in the web browser
+
+.. image:: images/helloworld/programmenu4.png
+	:alt: programmenu4.png
+
+Main File toolbar
+-----------------
+
+The program menu contains options for using the (Main File)
+
+When we have a project that contains many visual source files, we can select one of these files as the Main file that we can use to run the project
+
+For example we select (goldmagic800.pwct) as the main file, This file generate (goldmagic800.ring)
+
+.. image:: images/helloworld/programmenu5.png
+	:alt: programmenu5.png
+
+We can run the main file while opening other files in the project
+
+.. image:: images/helloworld/programmenu6.png
+	:alt: programmenu6.png
