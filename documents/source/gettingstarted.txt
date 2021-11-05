@@ -751,23 +751,43 @@ We can run the main file while opening other files in the project
 Tools Menu
 ==========
 
+From the tools menu we can run the Form Designer or the RingREPL (Read-Eval-Print-Loop)
+
+Also we can open the Command Prompt or the Files Explorer
+
 .. image:: images/helloworld/tools1.png
 	:alt: tools1.png
+
+When we open the Command Prompt, the current directory will be the folder of the opened visual source file
 
 .. image:: images/helloworld/tools2.png
 	:alt: tools2.png
 
+Also when we open the Files Explorer, the current directory will be the folder of the opened file
+
 .. image:: images/helloworld/tools3.png
 	:alt: tools3.png
+
+When we run RingREPL we can write and execute Ring code directly
 
 .. image:: images/helloworld/tools4.png
 	:alt: tools4.png
 
+For example, We can write and execute the next program that print a message on the screen
+
+.. code-block:: ring
+
+	? "Hello, World!"
+
 .. image:: images/helloworld/tools5.png
 	:alt: tools5.png
 
+We have also the GUI version of RingREPL
+
 .. image:: images/helloworld/tools6.png
 	:alt: tools6.png
+
+This version comes with the History option that contains the previous commands
 
 .. image:: images/helloworld/tools7.png
 	:alt: tools7.png
@@ -778,11 +798,17 @@ Tools Menu
 Distribute Menu
 ===============
 
+Using the Distribute menu we can distribute or applications and build executable files
+
 .. image:: images/helloworld/distribute1.png
 	:alt: distribute1.png
 
+For example, we can build (program1.exe) for our program
+
 .. image:: images/helloworld/distribute2.png
 	:alt: distribute2.png
+
+We can run (program1.exe) from the command prompt and see the output
 
 .. image:: images/helloworld/distribute3.png
 	:alt: distribute3.png
@@ -792,6 +818,10 @@ Distribute Menu
 
 Help Menu
 =========
+
+Using the Help menu we can open PWCT or Ring documentation
+
+The documentation comes in different formats like CHM & PDF
 
 .. image:: images/helloworld/helpmenu1.png
 	:alt: helpmenu1.png
