@@ -44,7 +44,7 @@ T_CT_TEMPLATES_IP_VALUECODE = [
 	// Then we print the "Hello" Message then the User Name
 	//
 	// Using the Components Browser
-	// To print messages we will use the (Print) component
+	// To print messages we will use the (Print Text) component
 	// To get input from the User we will use the (Get Input) component
 	//
 	? "Enter your name?" 
