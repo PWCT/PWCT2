@@ -79,7 +79,7 @@ class PlayAsMovieController
 								oView.oStepsTree.scrolltoitem(oItem,0)
 								PWCT_APP.processevents()
 								sleep(0.5)
-								this.GetScreenShot(oView.win)
+								this.GetScreenShot(oView.oTab)
 							# Select the Component in the Components Browser
 								cComponentFile 	=  oModel.oInteractionModel.GetInteractionComponent(nStepIID)
 								aComponent 	= ComponentsBrowserWindow().GetComponentByFileName(cComponentFile)
@@ -141,7 +141,7 @@ class PlayAsMovieController
 								oView.sliderTimeMachine.setValue(nValue+1)
 								PWCT_APP.processevents()
 								sleep(0.3)
-								this.GetScreenShot(oView.win)
+								this.GetScreenShot(oView.oTab)
 								PlayMovieTimer()
 								return 
 						}
@@ -153,7 +153,7 @@ class PlayAsMovieController
 				this.lPlayingStarted = False
 				this.lPlayingStatus  = :Stop
 				oView.PlayMovieIcon()
-				this.GetScreenShot(oView.win)
+				this.GetScreenShot(oView.oTab)
 			} 
 		}	
 
