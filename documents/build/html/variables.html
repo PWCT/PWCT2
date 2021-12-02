@@ -37,7 +37,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Release Notes: Version 2.0" href="concept.html" />
+    <link rel="next" title="Deep Copy" href="deepcopy.html" />
     <link rel="prev" title="Say Hello program" href="sayhelloprogram.html" /> 
 </head>
 
@@ -96,6 +96,18 @@
 <li class="toctree-l2"><a class="reference internal" href="#creating-the-program">Creating the Program</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="deepcopy.html">Deep Copy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="implicitconversion.html">Implicit Conversion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="operatorsprecedence.html">Operators Precedence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loopandcondition.html">Loop and Condition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mainmenu.html">Main Menu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamicloop.html">Dynamic Loop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modifylists.html">Modify Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exitfromtwoloops.html">Exit from two loops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="theloopcommand.html">The Loop Command</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shortcircuitevaluation.html">Short Circuit Evaluation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usingfunctions.html">Using Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variablesscope.html">Variables Scope</a></li>
 <li class="toctree-l1"><a class="reference internal" href="concept.html">Release Notes: Version 2.0</a></li>
 <li class="toctree-l1"><a class="reference internal" href="resources.html">Resources</a></li>
 </ul>
@@ -173,6 +185,7 @@
 </ul>
 <div class="section" id="introduction">
 <span id="index-1"></span><h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>We will create a simple program to learn how to use the Variables</p>
 <p>We can create this program quickly using the Quick Start component</p>
 <img alt="ib_quickstart_variables.png" src="_images/ib_quickstart_variables.png" />
 </div>
@@ -188,52 +201,84 @@
 <li><p>Assignment</p></li>
 <li><p>Print Text</p></li>
 </ul>
+<p>At first we will define a variable called X</p>
+<p>The Variable value will be “Hello” which is a String</p>
+<p>In the begining the Steps Tree is empty</p>
 <img alt="1.png" src="_images/110.png" />
+<p>Select the (Assignment) component</p>
 <img alt="2.png" src="_images/22.png" />
+<p>Enter the data in the Interaction Page</p>
+<p>Left Side: X</p>
+<p>Right Side: “Hello”</p>
 <img alt="3.png" src="_images/32.png" />
+<p>A new step will be added to the Steps Tree</p>
 <img alt="4.png" src="_images/42.png" />
+<p>Let’s print the variable using the (Print Text) component</p>
 <img alt="5.png" src="_images/52.png" />
+<p>Enter the data in the Interaction Page</p>
+<p>Text: X</p>
+<p>Type: Expression</p>
 <img alt="6.png" src="_images/62.png" />
+<p>The Steps Tree is updated!</p>
 <img alt="7.png" src="_images/72.png" />
+<p>Now we will set X to 5</p>
+<p>X type will be a Number (The type is based on the value)</p>
 <img alt="8.png" src="_images/82.png" />
+<p>Enter the data in the Interaction Page</p>
+<p>Left Side: X</p>
+<p>Right Side: 5</p>
 <img alt="9.png" src="_images/92.png" />
+<p>The Steps Tree is updated!</p>
 <img alt="10.png" src="_images/102.png" />
+<p>Let’s print the variable using the (Print Text) component</p>
 <img alt="11.png" src="_images/112.png" />
 <img alt="12.png" src="_images/122.png" />
 <img alt="13.png" src="_images/132.png" />
+<p>Set X to 1.2</p>
 <img alt="14.png" src="_images/142.png" />
 <img alt="15.png" src="_images/152.png" />
 <img alt="16.png" src="_images/162.png" />
+<p>We will print the X value</p>
 <img alt="17.png" src="_images/172.png" />
 <img alt="18.png" src="_images/182.png" />
 <img alt="19.png" src="_images/191.png" />
+<p>X will be a List of four items [1,2,3,4]</p>
 <img alt="20.png" src="_images/201.png" />
 <img alt="21.png" src="_images/211.png" />
 <img alt="22.png" src="_images/221.png" />
+<p>Print the X value</p>
 <img alt="23.png" src="_images/23.png" />
 <img alt="24.png" src="_images/24.png" />
 <img alt="25.png" src="_images/25.png" />
+<p>X will be a String that contains the Date</p>
 <img alt="26.png" src="_images/26.png" />
 <img alt="27.png" src="_images/27.png" />
 <img alt="28.png" src="_images/28.png" />
+<p>Print X value (The Date)</p>
 <img alt="29.png" src="_images/29.png" />
 <img alt="30.png" src="_images/30.png" />
 <img alt="31.png" src="_images/311.png" />
+<p>X will be a String contains the Time</p>
 <img alt="32.png" src="_images/321.png" />
 <img alt="33.png" src="_images/33.png" />
 <img alt="34.png" src="_images/34.png" />
+<p>Print X value (The Time)</p>
 <img alt="35.png" src="_images/35.png" />
 <img alt="36.png" src="_images/36.png" />
 <img alt="37.png" src="_images/37.png" />
+<p>X will be True (Number: 1)</p>
 <img alt="38.png" src="_images/38.png" />
 <img alt="39.png" src="_images/39.png" />
 <img alt="40.png" src="_images/40.png" />
+<p>Print X value (Will print 1)</p>
 <img alt="41.png" src="_images/411.png" />
 <img alt="42.png" src="_images/421.png" />
 <img alt="43.png" src="_images/43.png" />
+<p>X will be False (Number: 0)</p>
 <img alt="44.png" src="_images/44.png" />
 <img alt="45.png" src="_images/45.png" />
 <img alt="46.png" src="_images/46.png" />
+<p>Print X value (Will print 0)</p>
 <img alt="47.png" src="_images/47.png" />
 <img alt="48.png" src="_images/48.png" />
 <img alt="49.png" src="_images/49.png" />
@@ -248,7 +293,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="concept.html" class="btn btn-neutral float-right" title="Release Notes: Version 2.0" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="deepcopy.html" class="btn btn-neutral float-right" title="Deep Copy" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="sayhelloprogram.html" class="btn btn-neutral float-left" title="Say Hello program" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
