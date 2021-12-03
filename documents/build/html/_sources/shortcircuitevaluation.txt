@@ -29,6 +29,30 @@ After selecting the (Short Circuit Evaluation) template, we will get the next st
 .. image:: images/shortcircuitevaluation/gd_quickstart_shortcircuitevaluation.png
         :alt: gd_quickstart_shortcircuitevaluation.png
 
+The Steps Tree:
+
+.. code-block:: none
+
+	x = 0
+	y = 10
+	Print Test 1 (New Line) 
+	If (x = 0 AND nice()) AND (y = 10 AND nice())
+		Print Great (New Line) 
+	End of IF Statement
+	Print Test 2 (New Line) 
+	If (x = 1 AND nice()) AND (y = 10 AND nice())
+		Print Great (New Line) 
+	End of IF Statement
+	Print Test 3 (New Line) 
+	If (x = 0 AND nice()) OR (y = 10 AND nice())
+		Print Great (New Line) 
+	End of IF Statement
+	function nice 
+		Print Nice (New Line) 
+		Return 1
+	End of Function
+
+
 .. index:: 
 	pair: Short Circuit Evaluation; Creating the Program
 
@@ -43,8 +67,12 @@ To create this program we will use the next components
 * Define Function
 * Return
 
+In the begining the Steps Tree is empty
+
 .. image:: images/shortcircuitevaluation/1.png
 		:alt: 1.png
+
+Set x = 0 using the Assignment component
 
 .. image:: images/shortcircuitevaluation/2.png
 		:alt: 2.png
@@ -55,6 +83,8 @@ To create this program we will use the next components
 .. image:: images/shortcircuitevaluation/4.png
 		:alt: 4.png
 
+Set y = 10 using the Assignment component
+
 .. image:: images/shortcircuitevaluation/5.png
 		:alt: 5.png
 
@@ -63,6 +93,8 @@ To create this program we will use the next components
 
 .. image:: images/shortcircuitevaluation/7.png
 		:alt: 7.png
+
+Print (Test 1)
 
 .. image:: images/shortcircuitevaluation/8.png
 		:alt: 8.png
@@ -73,6 +105,8 @@ To create this program we will use the next components
 .. image:: images/shortcircuitevaluation/10.png
 		:alt: 10.png
 
+Test the condition: (x = 0 AND nice()) AND (y = 10 AND nice())
+
 .. image:: images/shortcircuitevaluation/11.png
 		:alt: 11.png
 
@@ -81,6 +115,8 @@ To create this program we will use the next components
 
 .. image:: images/shortcircuitevaluation/13.png
 		:alt: 13.png
+
+Print (Great)
 
 .. image:: images/shortcircuitevaluation/14.png
 		:alt: 14.png
@@ -91,6 +127,8 @@ To create this program we will use the next components
 .. image:: images/shortcircuitevaluation/16.png
 		:alt: 16.png
 
+Print (Test 2)
+
 .. image:: images/shortcircuitevaluation/17.png
 		:alt: 17.png
 
@@ -99,6 +137,8 @@ To create this program we will use the next components
 
 .. image:: images/shortcircuitevaluation/19.png
 		:alt: 19.png
+
+Check the condition: (x = 1 AND nice()) AND (y = 10 AND nice())
 
 .. image:: images/shortcircuitevaluation/20.png
 		:alt: 20.png
@@ -109,6 +149,8 @@ To create this program we will use the next components
 .. image:: images/shortcircuitevaluation/22.png
 		:alt: 22.png
 
+Print (Great)
+
 .. image:: images/shortcircuitevaluation/23.png
 		:alt: 23.png
 
@@ -117,6 +159,8 @@ To create this program we will use the next components
 
 .. image:: images/shortcircuitevaluation/25.png
 		:alt: 25.png
+
+Print (Test 3)
 
 .. image:: images/shortcircuitevaluation/26.png
 		:alt: 26.png
@@ -127,6 +171,8 @@ To create this program we will use the next components
 .. image:: images/shortcircuitevaluation/28.png
 		:alt: 28.png
 
+Check the condition: (x = 0 AND nice()) OR (y = 10 AND nice())
+
 .. image:: images/shortcircuitevaluation/29.png
 		:alt: 29.png
 
@@ -135,6 +181,8 @@ To create this program we will use the next components
 
 .. image:: images/shortcircuitevaluation/31.png
 		:alt: 31.png
+
+Print (Great)
 
 .. image:: images/shortcircuitevaluation/32.png
 		:alt: 32.png
@@ -145,6 +193,8 @@ To create this program we will use the next components
 .. image:: images/shortcircuitevaluation/34.png
 		:alt: 34.png
 
+Define the (Nice) function
+
 .. image:: images/shortcircuitevaluation/35.png
 		:alt: 35.png
 
@@ -153,6 +203,8 @@ To create this program we will use the next components
 
 .. image:: images/shortcircuitevaluation/37.png
 		:alt: 37.png
+
+Print (Nice)
 
 .. image:: images/shortcircuitevaluation/38.png
 		:alt: 38.png
@@ -163,11 +215,15 @@ To create this program we will use the next components
 .. image:: images/shortcircuitevaluation/40.png
 		:alt: 40.png
 
+Return (True) from the (Nice) function
+
 .. image:: images/shortcircuitevaluation/41.png
 		:alt: 41.png
 
 .. image:: images/shortcircuitevaluation/42.png
 		:alt: 42.png
+
+Now we have the final Steps Tree in our program
 
 .. image:: images/shortcircuitevaluation/43.png
 		:alt: 43.png

@@ -93,6 +93,7 @@
 <li class="toctree-l1"><a class="reference internal" href="variables.html">Variables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="deepcopy.html">Deep Copy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="implicitconversion.html">Implicit Conversion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="operators.html">Operators</a></li>
 <li class="toctree-l1"><a class="reference internal" href="operatorsprecedence.html">Operators Precedence</a></li>
 <li class="toctree-l1"><a class="reference internal" href="loopandcondition.html">Loop and Condition</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mainmenu.html">Main Menu</a></li>
@@ -185,6 +186,27 @@
 <span id="index-2"></span><h2>Program Steps<a class="headerlink" href="#program-steps" title="Permalink to this headline">¶</a></h2>
 <p>After selecting the (Short Circuit Evaluation) template, we will get the next steps in the Goal Designer</p>
 <img alt="gd_quickstart_shortcircuitevaluation.png" src="_images/gd_quickstart_shortcircuitevaluation.png" />
+<p>The Steps Tree:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>x = 0
+y = 10
+Print Test 1 (New Line)
+If (x = 0 AND nice()) AND (y = 10 AND nice())
+        Print Great (New Line)
+End of IF Statement
+Print Test 2 (New Line)
+If (x = 1 AND nice()) AND (y = 10 AND nice())
+        Print Great (New Line)
+End of IF Statement
+Print Test 3 (New Line)
+If (x = 0 AND nice()) OR (y = 10 AND nice())
+        Print Great (New Line)
+End of IF Statement
+function nice
+        Print Nice (New Line)
+        Return 1
+End of Function
+</pre></div>
+</div>
 </div>
 <div class="section" id="creating-the-program">
 <span id="index-3"></span><h2>Creating the Program<a class="headerlink" href="#creating-the-program" title="Permalink to this headline">¶</a></h2>
@@ -196,48 +218,64 @@
 <li><p>Define Function</p></li>
 <li><p>Return</p></li>
 </ul>
+<p>In the begining the Steps Tree is empty</p>
 <img alt="1.png" src="_images/150.png" />
+<p>Set x = 0 using the Assignment component</p>
 <img alt="2.png" src="_images/226.png" />
 <img alt="3.png" src="_images/325.png" />
 <img alt="4.png" src="_images/425.png" />
+<p>Set y = 10 using the Assignment component</p>
 <img alt="5.png" src="_images/514.png" />
 <img alt="6.png" src="_images/611.png" />
 <img alt="7.png" src="_images/711.png" />
+<p>Print (Test 1)</p>
 <img alt="8.png" src="_images/811.png" />
 <img alt="9.png" src="_images/911.png" />
 <img alt="10.png" src="_images/1011.png" />
+<p>Test the condition: (x = 0 AND nice()) AND (y = 10 AND nice())</p>
 <img alt="11.png" src="_images/1115.png" />
 <img alt="12.png" src="_images/1213.png" />
 <img alt="13.png" src="_images/1311.png" />
+<p>Print (Great)</p>
 <img alt="14.png" src="_images/1410.png" />
 <img alt="15.png" src="_images/1510.png" />
 <img alt="16.png" src="_images/1610.png" />
+<p>Print (Test 2)</p>
 <img alt="17.png" src="_images/177.png" />
 <img alt="18.png" src="_images/187.png" />
 <img alt="19.png" src="_images/196.png" />
+<p>Check the condition: (x = 1 AND nice()) AND (y = 10 AND nice())</p>
 <img alt="20.png" src="_images/205.png" />
 <img alt="21.png" src="_images/2111.png" />
 <img alt="22.png" src="_images/227.png" />
+<p>Print (Great)</p>
 <img alt="23.png" src="_images/234.png" />
 <img alt="24.png" src="_images/244.png" />
 <img alt="25.png" src="_images/254.png" />
+<p>Print (Test 3)</p>
 <img alt="26.png" src="_images/263.png" />
 <img alt="27.png" src="_images/273.png" />
 <img alt="28.png" src="_images/283.png" />
+<p>Check the condition: (x = 0 AND nice()) OR (y = 10 AND nice())</p>
 <img alt="29.png" src="_images/293.png" />
 <img alt="30.png" src="_images/303.png" />
 <img alt="31.png" src="_images/3110.png" />
+<p>Print (Great)</p>
 <img alt="32.png" src="_images/326.png" />
 <img alt="33.png" src="_images/333.png" />
 <img alt="34.png" src="_images/343.png" />
+<p>Define the (Nice) function</p>
 <img alt="35.png" src="_images/353.png" />
 <img alt="36.png" src="_images/363.png" />
 <img alt="37.png" src="_images/373.png" />
+<p>Print (Nice)</p>
 <img alt="38.png" src="_images/383.png" />
 <img alt="39.png" src="_images/393.png" />
 <img alt="40.png" src="_images/403.png" />
+<p>Return (True) from the (Nice) function</p>
 <img alt="41.png" src="_images/4110.png" />
 <img alt="42.png" src="_images/426.png" />
+<p>Now we have the final Steps Tree in our program</p>
 <img alt="43.png" src="_images/433.png" />
 </div>
 </div>
