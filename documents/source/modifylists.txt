@@ -29,6 +29,28 @@ After selecting the (Modify Lists) template, we will get the next steps in the G
 .. image:: images/modifylists/gd_quickstart_modifylists.png
         :alt: gd_quickstart_modifylists.png
 
+The Steps Tree:
+
+.. code-block:: none
+
+	aList = 1:5
+	For x in aList step 1
+		Switch x
+			Case 1
+				x = "one"
+			Case 2
+				x = "two"
+			Case 3
+				x = "three"
+			Case 4
+				x = "four"
+			Case 5
+				x = "five"
+		End of Switch
+	End of For Loop
+	Print aList
+
+
 .. index:: 
 	pair: Modify Lists; Creating the Program
 
@@ -43,35 +65,71 @@ To create this program we will use the next components
 * Case
 * Print Text
 
+In the begining the Steps Tree is empty
+
 .. image:: images/modifylists/1.png
 		:alt: 1.png
+
+Select the (Assignment) component
 
 .. image:: images/modifylists/2.png
 		:alt: 2.png
 
+Enter the data in the Interaction Page
+
+Left side: aList
+
+Right side: 1:5
+
+This will create a list contains the numbers from 1 to 5
+
+i.e. aList = [1,2,3,4,5]
+
 .. image:: images/modifylists/3.png
 		:alt: 3.png
+
+The Steps Tree will be updated
 
 .. image:: images/modifylists/4.png
 		:alt: 4.png
 
+Select the (For In) component
+
 .. image:: images/modifylists/5.png
 		:alt: 5.png
+
+Enter the data in the Interaction Page
+
+Variable: x
+
+In: aList
+
+Step: 1
 
 .. image:: images/modifylists/6.png
 		:alt: 6.png
 
+The Steps Tree will be updated
+
 .. image:: images/modifylists/7.png
 		:alt: 7.png
+
+Select the (Switch) component
 
 .. image:: images/modifylists/8.png
 		:alt: 8.png
 
+The variable will be (x)
+
 .. image:: images/modifylists/9.png
 		:alt: 9.png
 
+We will update each list item based on the item number
+
 .. image:: images/modifylists/10.png
 		:alt: 10.png
+
+if the item number is 1, set the item value to "one"
 
 .. image:: images/modifylists/11.png
 		:alt: 11.png
@@ -90,6 +148,8 @@ To create this program we will use the next components
 
 .. image:: images/modifylists/16.png
 		:alt: 16.png
+
+if the item number is 2, set the item value to "two"
 
 .. image:: images/modifylists/17.png
 		:alt: 17.png
@@ -112,6 +172,8 @@ To create this program we will use the next components
 .. image:: images/modifylists/23.png
 		:alt: 23.png
 
+if the item number is 3, set the item value to "three"
+
 .. image:: images/modifylists/24.png
 		:alt: 24.png
 
@@ -126,6 +188,8 @@ To create this program we will use the next components
 
 .. image:: images/modifylists/28.png
 		:alt: 28.png
+
+if the item number is 4, set the item value to "four"
 
 .. image:: images/modifylists/29.png
 		:alt: 29.png
@@ -144,6 +208,8 @@ To create this program we will use the next components
 
 .. image:: images/modifylists/34.png
 		:alt: 34.png
+
+if the item number is 5, set the item value to "five"
 
 .. image:: images/modifylists/35.png
 		:alt: 35.png
@@ -168,6 +234,8 @@ To create this program we will use the next components
 
 .. image:: images/modifylists/42.png
 		:alt: 42.png
+
+Now we have the final Steps Tree in our program
 
 .. image:: images/modifylists/43.png
 		:alt: 43.png

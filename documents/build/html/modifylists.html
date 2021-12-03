@@ -93,6 +93,7 @@
 <li class="toctree-l1"><a class="reference internal" href="variables.html">Variables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="deepcopy.html">Deep Copy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="implicitconversion.html">Implicit Conversion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="operators.html">Opeartors</a></li>
 <li class="toctree-l1"><a class="reference internal" href="operatorsprecedence.html">Operators Precedence</a></li>
 <li class="toctree-l1"><a class="reference internal" href="loopandcondition.html">Loop and Condition</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mainmenu.html">Main Menu</a></li>
@@ -185,6 +186,25 @@
 <span id="index-2"></span><h2>Program Steps<a class="headerlink" href="#program-steps" title="Permalink to this headline">¶</a></h2>
 <p>After selecting the (Modify Lists) template, we will get the next steps in the Goal Designer</p>
 <img alt="gd_quickstart_modifylists.png" src="_images/gd_quickstart_modifylists.png" />
+<p>The Steps Tree:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>aList = 1:5
+For x in aList step 1
+        Switch x
+                Case 1
+                        x = &quot;one&quot;
+                Case 2
+                        x = &quot;two&quot;
+                Case 3
+                        x = &quot;three&quot;
+                Case 4
+                        x = &quot;four&quot;
+                Case 5
+                        x = &quot;five&quot;
+        End of Switch
+End of For Loop
+Print aList
+</pre></div>
+</div>
 </div>
 <div class="section" id="creating-the-program">
 <span id="index-3"></span><h2>Creating the Program<a class="headerlink" href="#creating-the-program" title="Permalink to this headline">¶</a></h2>
@@ -196,22 +216,41 @@
 <li><p>Case</p></li>
 <li><p>Print Text</p></li>
 </ul>
+<p>In the begining the Steps Tree is empty</p>
 <img alt="1.png" src="_images/129.png" />
+<p>Select the (Assignment) component</p>
 <img alt="2.png" src="_images/219.png" />
+<p>Enter the data in the Interaction Page</p>
+<p>Left side: aList</p>
+<p>Right side: 1:5</p>
+<p>This will create a list contains the numbers from 1 to 5</p>
+<p>i.e. aList = [1,2,3,4,5]</p>
 <img alt="3.png" src="_images/318.png" />
+<p>The Steps Tree will be updated</p>
 <img alt="4.png" src="_images/418.png" />
+<p>Select the (For In) component</p>
 <img alt="5.png" src="_images/510.png" />
+<p>Enter the data in the Interaction Page</p>
+<p>Variable: x</p>
+<p>In: aList</p>
+<p>Step: 1</p>
 <img alt="6.png" src="_images/68.png" />
+<p>The Steps Tree will be updated</p>
 <img alt="7.png" src="_images/78.png" />
+<p>Select the (Switch) component</p>
 <img alt="8.png" src="_images/88.png" />
+<p>The variable will be (x)</p>
 <img alt="9.png" src="_images/97.png" />
+<p>We will update each list item based on the item number</p>
 <img alt="10.png" src="_images/108.png" />
+<p>if the item number is 1, set the item value to “one”</p>
 <img alt="11.png" src="_images/1112.png" />
 <img alt="12.png" src="_images/1210.png" />
 <img alt="13.png" src="_images/138.png" />
 <img alt="14.png" src="_images/147.png" />
 <img alt="15.png" src="_images/157.png" />
 <img alt="16.png" src="_images/167.png" />
+<p>if the item number is 2, set the item value to “two”</p>
 <img alt="17.png" src="_images/176.png" />
 <img alt="18.png" src="_images/186.png" />
 <img alt="19.png" src="_images/195.png" />
@@ -219,17 +258,20 @@
 <img alt="21.png" src="_images/2110.png" />
 <img alt="22.png" src="_images/224.png" />
 <img alt="23.png" src="_images/233.png" />
+<p>if the item number is 3, set the item value to “three”</p>
 <img alt="24.png" src="_images/243.png" />
 <img alt="25.png" src="_images/253.png" />
 <img alt="26.png" src="_images/262.png" />
 <img alt="27.png" src="_images/272.png" />
 <img alt="28.png" src="_images/282.png" />
+<p>if the item number is 4, set the item value to “four”</p>
 <img alt="29.png" src="_images/292.png" />
 <img alt="30.png" src="_images/302.png" />
 <img alt="31.png" src="_images/319.png" />
 <img alt="32.png" src="_images/323.png" />
 <img alt="33.png" src="_images/332.png" />
 <img alt="34.png" src="_images/342.png" />
+<p>if the item number is 5, set the item value to “five”</p>
 <img alt="35.png" src="_images/352.png" />
 <img alt="36.png" src="_images/362.png" />
 <img alt="37.png" src="_images/372.png" />
@@ -238,6 +280,7 @@
 <img alt="40.png" src="_images/402.png" />
 <img alt="41.png" src="_images/419.png" />
 <img alt="42.png" src="_images/423.png" />
+<p>Now we have the final Steps Tree in our program</p>
 <img alt="43.png" src="_images/432.png" />
 </div>
 </div>
