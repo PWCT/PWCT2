@@ -29,6 +29,32 @@ After selecting the (Main Menu) template, we will get the next steps in the Goal
 .. image:: images/mainmenu/gd_quickstart_mainmenu.png
         :alt: gd_quickstart_mainmenu.png
 
+The Steps Tree:
+
+.. code-block:: none
+
+	While True
+		Print  (New Line) 
+		Print Main Menu (New Line) 
+		Print -------------- (New Line) 
+		Print (1) Say Hello (New Line) 
+		Print (2) About (New Line) 
+		Print (3) Exit (New Line) 
+		Print  (New Line) 
+		Input nOption
+		Switch nOption
+			Case 1
+				Print Hello! (New Line) 
+			Case 2
+				Print Just a simple program! (New Line) 
+			Case 3
+				Print End of program! (New Line) 
+				Shutdown 0
+			Else
+				Print bad option... (New Line) 
+		End of Switch
+	End of While Loop
+
 .. index:: 
 	pair: Main Menu; Creating the Program
 
@@ -39,30 +65,50 @@ To create this program we will use the next components
 
 * While
 * Print Text
+* Get Input
 * Switch
 * Case
+* Shutdown
 * Else
+
+In the begining the Steps Tree is empty
 
 .. image:: images/mainmenu/1.png
 		:alt: 1.png
 
+Select the (While Loop) component
+
 .. image:: images/mainmenu/2.png
 		:alt: 2.png
+
+Enter the data in the Interaction Page
 
 .. image:: images/mainmenu/3.png
 		:alt: 3.png
 
+The Steps Tree will be updated
+
 .. image:: images/mainmenu/4.png
 		:alt: 4.png
+
+Select the (Print Text) component
 
 .. image:: images/mainmenu/5.png
 		:alt: 5.png
 
+In the Interaction Page, Just click OK
+
+We will print an empty line!
+
 .. image:: images/mainmenu/6.png
 		:alt: 6.png
 
+The Steps Tree will be updated
+
 .. image:: images/mainmenu/7.png
 		:alt: 7.png
+
+We will print the Menu Items
 
 .. image:: images/mainmenu/8.png
 		:alt: 8.png
@@ -118,14 +164,20 @@ To create this program we will use the next components
 .. image:: images/mainmenu/25.png
 		:alt: 25.png
 
+Select the (Get Input) component
+
 .. image:: images/mainmenu/26.png
 		:alt: 26.png
+
+We will use the (nOption) variable to get the input from the User!
 
 .. image:: images/mainmenu/27.png
 		:alt: 27.png
 
 .. image:: images/mainmenu/28.png
 		:alt: 28.png
+
+Using (Switch) we will determine what to do based on the selected option
 
 .. image:: images/mainmenu/29.png
 		:alt: 29.png
@@ -190,6 +242,10 @@ To create this program we will use the next components
 .. image:: images/mainmenu/49.png
 		:alt: 49.png
 
+Select the (Shutdown) component
+
+Using this component we can close our program!
+
 .. image:: images/mainmenu/50.png
 		:alt: 50.png
 
@@ -214,6 +270,7 @@ To create this program we will use the next components
 .. image:: images/mainmenu/57.png
 		:alt: 57.png
 
+Now we have the final Steps Tree in our program
+
 .. image:: images/mainmenu/58.png
 		:alt: 58.png
-

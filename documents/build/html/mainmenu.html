@@ -93,6 +93,7 @@
 <li class="toctree-l1"><a class="reference internal" href="variables.html">Variables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="deepcopy.html">Deep Copy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="implicitconversion.html">Implicit Conversion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="operators.html">Opeartors</a></li>
 <li class="toctree-l1"><a class="reference internal" href="operatorsprecedence.html">Operators Precedence</a></li>
 <li class="toctree-l1"><a class="reference internal" href="loopandcondition.html">Loop and Condition</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Main Menu</a><ul>
@@ -185,6 +186,30 @@
 <span id="index-2"></span><h2>Program Steps<a class="headerlink" href="#program-steps" title="Permalink to this headline">¶</a></h2>
 <p>After selecting the (Main Menu) template, we will get the next steps in the Goal Designer</p>
 <img alt="gd_quickstart_mainmenu.png" src="_images/gd_quickstart_mainmenu.png" />
+<p>The Steps Tree:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>While True
+        Print  (New Line)
+        Print Main Menu (New Line)
+        Print -------------- (New Line)
+        Print (1) Say Hello (New Line)
+        Print (2) About (New Line)
+        Print (3) Exit (New Line)
+        Print  (New Line)
+        Input nOption
+        Switch nOption
+                Case 1
+                        Print Hello! (New Line)
+                Case 2
+                        Print Just a simple program! (New Line)
+                Case 3
+                        Print End of program! (New Line)
+                        Shutdown 0
+                Else
+                        Print bad option... (New Line)
+        End of Switch
+End of While Loop
+</pre></div>
+</div>
 </div>
 <div class="section" id="creating-the-program">
 <span id="index-3"></span><h2>Creating the Program<a class="headerlink" href="#creating-the-program" title="Permalink to this headline">¶</a></h2>
@@ -192,17 +217,28 @@
 <ul class="simple">
 <li><p>While</p></li>
 <li><p>Print Text</p></li>
+<li><p>Get Input</p></li>
 <li><p>Switch</p></li>
 <li><p>Case</p></li>
+<li><p>Shutdown</p></li>
 <li><p>Else</p></li>
 </ul>
+<p>In the begining the Steps Tree is empty</p>
 <img alt="1.png" src="_images/120.png" />
+<p>Select the (While Loop) component</p>
 <img alt="2.png" src="_images/215.png" />
+<p>Enter the data in the Interaction Page</p>
 <img alt="3.png" src="_images/315.png" />
+<p>The Steps Tree will be updated</p>
 <img alt="4.png" src="_images/415.png" />
+<p>Select the (Print Text) component</p>
 <img alt="5.png" src="_images/56.png" />
+<p>In the Interaction Page, Just click OK</p>
+<p>We will print an empty line!</p>
 <img alt="6.png" src="_images/66.png" />
+<p>The Steps Tree will be updated</p>
 <img alt="7.png" src="_images/76.png" />
+<p>We will print the Menu Items</p>
 <img alt="8.png" src="_images/86.png" />
 <img alt="9.png" src="_images/95.png" />
 <img alt="10.png" src="_images/106.png" />
@@ -221,9 +257,12 @@
 <img alt="23.png" src="_images/231.png" />
 <img alt="24.png" src="_images/241.png" />
 <img alt="25.png" src="_images/251.png" />
+<p>Select the (Get Input) component</p>
 <img alt="26.png" src="_images/261.png" />
+<p>We will use the (nOption) variable to get the input from the User!</p>
 <img alt="27.png" src="_images/271.png" />
 <img alt="28.png" src="_images/281.png" />
+<p>Using (Switch) we will determine what to do based on the selected option</p>
 <img alt="29.png" src="_images/291.png" />
 <img alt="30.png" src="_images/301.png" />
 <img alt="31.png" src="_images/316.png" />
@@ -245,6 +284,8 @@
 <img alt="47.png" src="_images/471.png" />
 <img alt="48.png" src="_images/481.png" />
 <img alt="49.png" src="_images/491.png" />
+<p>Select the (Shutdown) component</p>
+<p>Using this component we can close our program!</p>
 <img alt="50.png" src="_images/50.png" />
 <img alt="51.png" src="_images/511.png" />
 <img alt="52.png" src="_images/521.png" />
@@ -253,6 +294,7 @@
 <img alt="55.png" src="_images/551.png" />
 <img alt="56.png" src="_images/561.png" />
 <img alt="57.png" src="_images/57.png" />
+<p>Now we have the final Steps Tree in our program</p>
 <img alt="58.png" src="_images/58.png" />
 </div>
 </div>
