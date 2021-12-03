@@ -178,6 +178,12 @@
 <p>In this chapter we are going to learn about the Implicit Conversion</p>
 <div class="section" id="introduction">
 <span id="index-1"></span><h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Rules:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>String + Number ---&gt; String     # Merge Strings (Number will be converted to a String)
+Number + String ---&gt; Number     # Sum Numbers (String will be converted to a Number)
+</pre></div>
+</div>
+<p>We will create a simple program to learn how to use the Implicit Conversion</p>
 <p>We can create this program quickly using the Quick Start component</p>
 <img alt="ib_quickstart_implicitconversion.png" src="_images/ib_quickstart_implicitconversion.png" />
 </div>
@@ -193,21 +199,39 @@
 <li><p>Assignment</p></li>
 <li><p>Print Text</p></li>
 </ul>
+<p>In the begining the Steps Tree is empty</p>
 <img alt="1.png" src="_images/115.png" />
+<p>Select the (Assignment) component</p>
 <img alt="2.png" src="_images/212.png" />
+<p>Enter the data in the Interaction Page</p>
+<p>Left side: x</p>
+<p>Right side: 10</p>
 <img alt="3.png" src="_images/312.png" />
+<p>The Steps Tree will be updated</p>
 <img alt="4.png" src="_images/412.png" />
+<p>Set y = “20”</p>
 <img alt="5.png" src="_images/54.png" />
 <img alt="6.png" src="_images/64.png" />
+<p>The Steps Tree will be updated</p>
 <img alt="7.png" src="_images/74.png" />
+<p>Set sum = x + y</p>
+<p>X is a Number</p>
+<p>Y is a String</p>
+<p>X + Y —&gt; Number + String —&gt; Number</p>
 <img alt="8.png" src="_images/84.png" />
 <img alt="9.png" src="_images/98.png" />
 <img alt="10.png" src="_images/104.png" />
+<p>Set msg = “Sum = ” + sum</p>
+<p>“Sum = ” is a String</p>
+<p>sum is a Number</p>
+<p>“Sum = ” + sum —&gt; String + Number —&gt; String</p>
 <img alt="11.png" src="_images/116.png" />
 <img alt="12.png" src="_images/124.png" />
 <img alt="13.png" src="_images/134.png" />
+<p>Print the Msg variable</p>
 <img alt="14.png" src="_images/144.png" />
 <img alt="15.png" src="_images/154.png" />
+<p>Now we have the final Steps Tree in our program</p>
 <img alt="16.png" src="_images/164.png" />
 </div>
 </div>

@@ -13,6 +13,15 @@ In this chapter we are going to learn about the Implicit Conversion
 Introduction
 ============
 
+Rules:
+
+.. code-block:: none
+
+	String + Number ---> String	# Merge Strings (Number will be converted to a String)
+	Number + String ---> Number  	# Sum Numbers (String will be converted to a Number)
+
+We will create a simple program to learn how to use the Implicit Conversion
+
 We can create this program quickly using the Quick Start component
 
 .. image:: images/implicitconversion/ib_quickstart_implicitconversion.png
@@ -40,17 +49,31 @@ To create this program we will use the next components
 * Assignment 
 * Print Text
 
+In the begining the Steps Tree is empty
+
 .. image:: images/implicitconversion/1.png
 		:alt: 1.png
+
+Select the (Assignment) component
 
 .. image:: images/implicitconversion/2.png
 		:alt: 2.png
 
+Enter the data in the Interaction Page
+
+Left side: x
+
+Right side: 10
+
 .. image:: images/implicitconversion/3.png
 		:alt: 3.png
 
+The Steps Tree will be updated
+
 .. image:: images/implicitconversion/4.png
 		:alt: 4.png
+
+Set y = "20" 
 
 .. image:: images/implicitconversion/5.png
 		:alt: 5.png
@@ -58,8 +81,18 @@ To create this program we will use the next components
 .. image:: images/implicitconversion/6.png
 		:alt: 6.png
 
+The Steps Tree will be updated
+
 .. image:: images/implicitconversion/7.png
 		:alt: 7.png
+
+Set sum = x + y
+
+X is a Number 
+
+Y is a String
+
+X + Y ---> Number + String ---> Number
 
 .. image:: images/implicitconversion/8.png
 		:alt: 8.png
@@ -70,6 +103,15 @@ To create this program we will use the next components
 .. image:: images/implicitconversion/10.png
 		:alt: 10.png
 
+
+Set msg = "Sum = " + sum
+
+"Sum = " is a String
+
+sum is a Number
+
+"Sum = " + sum ---> String + Number ---> String
+
 .. image:: images/implicitconversion/11.png
 		:alt: 11.png
 
@@ -79,11 +121,15 @@ To create this program we will use the next components
 .. image:: images/implicitconversion/13.png
 		:alt: 13.png
 
+Print the Msg variable
+
 .. image:: images/implicitconversion/14.png
 		:alt: 14.png
 
 .. image:: images/implicitconversion/15.png
 		:alt: 15.png
+
+Now we have the final Steps Tree in our program
 
 .. image:: images/implicitconversion/16.png
 		:alt: 16.png
