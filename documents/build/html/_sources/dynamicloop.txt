@@ -5,7 +5,7 @@
 Dynamic Loop
 =========
 
-In this chapter we are going to learn about the Dynamic Loop
+In this chapter we are going to create the Dynamic Loop sample
 
 .. index:: 
 	pair: Dynamic Loop; Introduction
@@ -41,26 +41,46 @@ To create this program we will use the next components
 * Get Input
 * For Loop
 
+In the begining the Steps Tree is empty
+
 .. image:: images/dynamicloop/1.png
 		:alt: 1.png
+
+Select the (Print Text) component
 
 .. image:: images/dynamicloop/2.png
 		:alt: 2.png
 
+Enter the data in the Interaction Page
+
+Text: Start :
+
+Type: Literal
+
 .. image:: images/dynamicloop/3.png
 		:alt: 3.png
+
+The Steps Tree will be updated
 
 .. image:: images/dynamicloop/4.png
 		:alt: 4.png
 
+Select the (Get Input) component
+
 .. image:: images/dynamicloop/5.png
 		:alt: 5.png
+
+The variable name will be (nStart)
 
 .. image:: images/dynamicloop/6.png
 		:alt: 6.png
 
+The Steps Tree will be updated
+
 .. image:: images/dynamicloop/7.png
 		:alt: 7.png
+
+Print (End : )
 
 .. image:: images/dynamicloop/8.png
 		:alt: 8.png
@@ -71,14 +91,22 @@ To create this program we will use the next components
 .. image:: images/dynamicloop/10.png
 		:alt: 10.png
 
+Use the (Get Input) component
+
 .. image:: images/dynamicloop/11.png
 		:alt: 11.png
+
+The variable name will be (nEnd)
 
 .. image:: images/dynamicloop/12.png
 		:alt: 12.png
 
+The Steps Tree will be updated
+
 .. image:: images/dynamicloop/13.png
 		:alt: 13.png
+
+Print (Step : )
 
 .. image:: images/dynamicloop/14.png
 		:alt: 14.png
@@ -89,8 +117,12 @@ To create this program we will use the next components
 .. image:: images/dynamicloop/16.png
 		:alt: 16.png
 
+Use the (Get Input) component
+
 .. image:: images/dynamicloop/17.png
 		:alt: 17.png
+
+The variable name will be (nStep)
 
 .. image:: images/dynamicloop/18.png
 		:alt: 18.png
@@ -98,8 +130,17 @@ To create this program we will use the next components
 .. image:: images/dynamicloop/19.png
 		:alt: 19.png
 
+Select the (For Loop) component
+
 .. image:: images/dynamicloop/20.png
 		:alt: 20.png
+
+Enter the data in the Interaction Page
+
+Start: x = nStart
+End: nEnd
+Step: nStep
+
 
 .. image:: images/dynamicloop/21.png
 		:alt: 21.png
@@ -110,8 +151,12 @@ To create this program we will use the next components
 .. image:: images/dynamicloop/23.png
 		:alt: 23.png
 
+Use the (Print Text) component to print the number
+
 .. image:: images/dynamicloop/24.png
 		:alt: 24.png
+
+Now we have the final Steps Tree in our program
 
 .. image:: images/dynamicloop/25.png
 		:alt: 25.png
