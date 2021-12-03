@@ -29,6 +29,46 @@ After selecting the (Using Functions) template, we will get the next steps in th
 .. image:: images/usingfunctions/gd_quickstart_usingfunctions.png
         :alt: gd_quickstart_usingfunctions.png
 
+The Steps Tree:
+
+.. code-block:: none
+
+	first()
+	second()
+
+	sum(3,5)
+	sum(1000,2000)
+
+	Print fact(5) (New Line) 
+
+	If novalue() = NULL
+		Print the NoValue() function doesn't return a value (New Line) 
+	End of IF Statement
+
+	function first 
+		Print message from the first function (New Line) 
+	End of Function
+
+	function second 
+		Print message from the second function (New Line) 
+	End of Function
+
+	function sum x,y
+		Print x+y (New Line) 
+	End of Function
+
+	function fact x
+		If x = 0
+			Return 1
+		Else
+			Return x*fact(x-1)
+		End of IF Statement
+	End of Function
+
+	function novalue 
+	End of Function
+
+
 .. index:: 
 	pair: Using Functions; Creating the Program
 
@@ -44,8 +84,12 @@ To create this program we will use the next components
 * Print Text
 * Return
 
+In the begining the Steps Tree is empty
+
 .. image:: images/usingfunctions/1.png
 		:alt: 1.png
+
+Call the first() function
 
 .. image:: images/usingfunctions/2.png
 		:alt: 2.png
@@ -56,6 +100,8 @@ To create this program we will use the next components
 .. image:: images/usingfunctions/4.png
 		:alt: 4.png
 
+Call the Second() function
+
 .. image:: images/usingfunctions/5.png
 		:alt: 5.png
 
@@ -64,6 +110,8 @@ To create this program we will use the next components
 
 .. image:: images/usingfunctions/7.png
 		:alt: 7.png
+
+Call the Sum() function - Send 3,5 as parameters
 
 .. image:: images/usingfunctions/8.png
 		:alt: 8.png
@@ -74,6 +122,8 @@ To create this program we will use the next components
 .. image:: images/usingfunctions/10.png
 		:alt: 10.png
 
+Call the Sum() function - Send 1000,2000 as parameters
+
 .. image:: images/usingfunctions/11.png
 		:alt: 11.png
 
@@ -82,6 +132,8 @@ To create this program we will use the next components
 
 .. image:: images/usingfunctions/13.png
 		:alt: 13.png
+
+Call the Fact() function - Send 5 as parameter
 
 .. image:: images/usingfunctions/14.png
 		:alt: 14.png
@@ -92,6 +144,8 @@ To create this program we will use the next components
 .. image:: images/usingfunctions/16.png
 		:alt: 16.png
 
+Check the output of the NoValue() function
+
 .. image:: images/usingfunctions/17.png
 		:alt: 17.png
 
@@ -100,6 +154,8 @@ To create this program we will use the next components
 
 .. image:: images/usingfunctions/19.png
 		:alt: 19.png
+
+Print a message using the (Print Text) component
 
 .. image:: images/usingfunctions/20.png
 		:alt: 20.png
@@ -110,6 +166,8 @@ To create this program we will use the next components
 .. image:: images/usingfunctions/22.png
 		:alt: 22.png
 
+Define the First() function
+
 .. image:: images/usingfunctions/23.png
 		:alt: 23.png
 
@@ -118,6 +176,8 @@ To create this program we will use the next components
 
 .. image:: images/usingfunctions/25.png
 		:alt: 25.png
+
+Print a message from the First() function
 
 .. image:: images/usingfunctions/26.png
 		:alt: 26.png
@@ -128,6 +188,8 @@ To create this program we will use the next components
 .. image:: images/usingfunctions/28.png
 		:alt: 28.png
 
+Define the Second() function
+
 .. image:: images/usingfunctions/29.png
 		:alt: 29.png
 
@@ -137,6 +199,8 @@ To create this program we will use the next components
 .. image:: images/usingfunctions/31.png
 		:alt: 31.png
 
+Print a message from the Second() function
+
 .. image:: images/usingfunctions/32.png
 		:alt: 32.png
 
@@ -145,6 +209,13 @@ To create this program we will use the next components
 
 .. image:: images/usingfunctions/34.png
 		:alt: 34.png
+
+Define the Sum() function
+
+This function takes x,y as parameters
+
+The function will print the sum of x and y
+
 
 .. image:: images/usingfunctions/35.png
 		:alt: 35.png
@@ -163,6 +234,8 @@ To create this program we will use the next components
 
 .. image:: images/usingfunctions/40.png
 		:alt: 40.png
+
+Define the Fact() function
 
 .. image:: images/usingfunctions/41.png
 		:alt: 41.png
@@ -209,11 +282,15 @@ To create this program we will use the next components
 .. image:: images/usingfunctions/55.png
 		:alt: 55.png
 
+Define the NoValue() function
+
 .. image:: images/usingfunctions/56.png
 		:alt: 56.png
 
 .. image:: images/usingfunctions/57.png
 		:alt: 57.png
+
+Now we have the final Steps Tree in our program
 
 .. image:: images/usingfunctions/58.png
 		:alt: 58.png
