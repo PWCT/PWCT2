@@ -39,14 +39,33 @@ To create this program we will use the next components
 
 * Print Text
 
+In the begining the Steps Tree is empty
+
 .. image:: images/operatorsprecedence/1.png
 		:alt: 1.png
+
+Select the (Print Text) component
 
 .. image:: images/operatorsprecedence/2.png
 		:alt: 2.png
 
+Enter the data in the Interaction Page
+
+Text: 3+5*4
+
+Type: Expression
+
+Order of exectuion
+
+.. code-block:: none
+
+	5*4  --> 20
+	3+20 --> 23
+
 .. image:: images/operatorsprecedence/3.png
 		:alt: 3.png
+
+Now we have the final Steps Tree in our program
 
 .. image:: images/operatorsprecedence/4.png
 		:alt: 4.png
