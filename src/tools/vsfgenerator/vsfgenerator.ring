@@ -437,7 +437,8 @@ class VSFGenerator
 	func AddGiveIdentifier cIdentifier
 		# Use the Interaction Page
 			nIID = UseComponent("getinput",[
-				:text 	= cIdentifier
+				:text 	= cIdentifier,
+				:number = 0
 			])
 		# Generate the Step and the Code
 			nStepNumber = 1
