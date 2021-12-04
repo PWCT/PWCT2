@@ -9,6 +9,8 @@ class PrintStepsController from WindowsControllerParent
 
 	oView = new PrintStepsView
 
+	lHideStartHere = True
+
 	/*
 		Purpose : Show the data 
 		Parameters : None
@@ -16,7 +18,22 @@ class PrintStepsController from WindowsControllerParent
 	*/
 
 	func ShowData
-		oView.oStepsTree.setText(Parent().oModel.StepsTreeText())
+		cSteps = Parent().oModel.StepsTreeText()
+		if lHideStartHere {
+			aList = str2List(cSteps)
+			nMax = len(aList)
+			for t=nMax to 1 step -1 {
+				cLine = aList[t]
+				cLine = substr(cLine,Tab,"")
+				cLine = substr(cLine,Char(13),"")
+				cLine = substr(cLine,Char(10),"")
+				if trim(lower(cLine)) = "start here" {
+					del(aList,t)
+				}
+			}
+			cSteps = List2Str(aList)
+		}
+		oView.oStepsTree.setText(cSteps)
 		oView.oStepsCode.setText(Parent().oModel.StepsTreeCode())
 		if isWebAssembly() {
 			printer1 = new qPrinter(0) {
