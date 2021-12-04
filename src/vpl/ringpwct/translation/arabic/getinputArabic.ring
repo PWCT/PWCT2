@@ -10,8 +10,10 @@
 
 	# Step Stree
 		T_CT_GETINPUT_ST_INPUT  = "ادخل "
+		T_CT_GETINPUT_ST_INPUT_NUMBER = "ادخل (رقم) "
 
 	# Interaction Page
 		T_CT_GETINPUT_IP_TITLE = "مكون الحصول على المدخلات"
 		T_CT_GETINPUT_IP_VARIABLE = "المتغير : "
 		T_CT_GETINPUT_IP_VARIABLE_DEFAULT = "القيمة"
+		T_CT_GETINPUT_IP_NUMBER = "التحويل إلى رقم"
