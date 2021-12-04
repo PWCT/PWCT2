@@ -7,6 +7,28 @@ Using Variables
 
 In this chapter we are going to learn how to use the Variables 
 
+To create a new variable, you just need to determine the variable name & value.
+The value will determine the variable type and you can change the value to
+switch between the types using the same variable name.
+
+Generated Step:
+
+.. code-block:: none
+	
+	<Variable Name> = <Value>
+
+.. tip:: 
+	
+	The operator '=' is used here as an Assignment operator and the same
+	operator can be used in conditions, but for testing equality of expressions.
+
+.. note:: 
+	
+	The Variable will contains the real value (not a reference).
+	This means that once you change the variable value, the old value will
+	be removed from memory (even if the variable contains a list or object).
+
+
 The variable type is based on the value, and this value could be
 
 * String (One Character, Many Characters, Many Lines, Binary Data)
