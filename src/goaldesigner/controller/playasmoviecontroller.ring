@@ -17,6 +17,7 @@ class PlayAsMovieController
 		Time Machine - Play As Movie 
 	*/
 	func PlayMovie oGoalDesignerController 
+		oAutoDoc.nShotID = 0
 		oGoalDesignerController  {
 			if this.lPlayingStarted = False {
 				this.lPlayingStarted = True
