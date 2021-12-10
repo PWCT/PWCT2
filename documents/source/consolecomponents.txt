@@ -38,6 +38,15 @@ Also we can print the result of an expression
 .. image:: images/consolecomponents/ib_console_printtext.png
         :alt: Print Text
 
+The Interaction Page contains the next properties
+
+============	==============	==============
+Property	Type		Default Value
+============	==============	==============
+Text		Textbox		none
+Type		Listbox		Literal
+New Line	Checkbox	True
+============	==============	==============
 
 .. index:: 
 	pair: Console Components; Get Input
@@ -54,6 +63,15 @@ We can access this text later using the Variable Name
 .. image:: images/consolecomponents/ib_console_getinput.png
         :alt: Get Input
 
+The Interaction Page contains the next properties
+
+=================	==============	==============
+Property		Type		Default Value
+=================	==============	==============
+Variable		Textbox		cInput
+Convert to Number	Checkbox	False
+=================	==============	==============
+
 .. index:: 
 	pair: Console Components; Get Character
 
@@ -69,6 +87,15 @@ We can access this character later using the Variable Name
 .. image:: images/consolecomponents/ib_console_getcharacter.png
         :alt: Get Character
 
+The Interaction Page contains the next properties
+
+=================	==============	==============
+Property		Type		Default Value
+=================	==============	==============
+Variable		Textbox		c
+=================	==============	==============
+
+
 .. index:: 
 	pair: Console Components; Input() Function
 
@@ -83,3 +110,12 @@ We can access these characters later using the Variable Name
 
 .. image:: images/consolecomponents/ib_console_inputfunction.png
         :alt: Input function
+
+The Interaction Page contains the next properties
+
+=================	==============	==============
+Property		Type		Default Value
+=================	==============	==============
+Characters Count	Textbox		30
+Output (Variable)	Textbox		cValue
+=================	==============	==============
