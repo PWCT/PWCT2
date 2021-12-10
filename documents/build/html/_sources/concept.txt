@@ -1,14 +1,16 @@
 .. index:: 
-	single: Release Notes: Version 2.0; Introduction
+	single: The Concept; Introduction
 
-==========================
-Release Notes: Version 2.0
-==========================
+===========
+The Concept
+===========
 
 In this chapter we are going to discuss the goals behind the language design and implementation.
 
 The First Generation
 ====================
+
+In this generation we did a lot of research to develop the main ideas behind the project
 
 The Concept of The First Generation
 -----------------------------------
@@ -138,7 +140,7 @@ I discovered that I need a new programming language (Ring) that could help me to
 The Second Generation
 =====================
 
-The second generation (PWCT 2.0) is under development using the Ring programming language
+The second generation (PWCT 2.0) is developed using the Ring programming language
 
 Our goal is to provide a more powerful version of the software that satisfy two conditions
 
@@ -231,11 +233,6 @@ Improving the Implementation
 
 In the second generation of PWCT, we worked on solving all of the reported problems in the design and implementation of the first generation. Also we implemented most feature requests that are useful and improve the flexibility of the product.  
 
-64-bit version
-^^^^^^^^^^^^^^
-
-PWCT 2.0 will comes with 64-bit version (no longer limited to ~4gb of memory)
-
 Open Many Files
 ^^^^^^^^^^^^^^^
 
@@ -265,38 +262,16 @@ auto-complete.
 Web and Mobile versions
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-We can use PWCT on Desktop, Web & Mobile platforms.
+We can have a Web version of PWCT using (Qt For WebAssembly) and a Mobile version using (Qt for Android)
 
-The next screen shot for the Mobile & Web versions
+64-bit version
+^^^^^^^^^^^^^^
 
-The Web version uses (Qt For WebAssembly) and the Mobile version uses (Qt for Android)
+We can have 64-bit version of the software (no longer limited to ~4gb of memory)
 
-Most software developers uses the Desktop platforms and I belive that this is too much
-better and practical. but we added the support to these platforms for two reasons
-
-1- We can easily support them (Thanks to the powerful Ring language & Qt framework)
-
-2- At some situations, these platforms are very useful. 
-
-2.1 - Some Users don't have Desktop computers but have Mobile devices.
-
-2.2 - At some places we could have only our Mobile devices and some free time for programming.
-
-The Mobile screen is small, typing using the touch screen is slow
-compared to using a large keyboard.
-
-Using foldable smartphones and Tablets provide better experience.
-
-.. image:: images/concept/WebAndMobile.png
-	:alt: Web And Mobile
-
-Translation (Arabic Version)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Translation
+^^^^^^^^^^^
 
 One of the advantages of using Visual Programming and GUI over textual code editors is the easy translation of these User Interfaces to other natural languages.
 
-PWCT 2.0 will comes with an Arabic version, other languages could be added in the future.
-
-.. image:: images/concept/Arabic.jpg
-	:alt: Arabic PWCT
-
+So other languages could be added in the future.
