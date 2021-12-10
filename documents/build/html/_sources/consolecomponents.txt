@@ -35,18 +35,6 @@ Using this component we can print text on the screen
 
 Also we can print the result of an expression
 
-The Interaction Page contains the next properties
-
-============	==============	==============
-Property	Type		Default Value
-============	==============	==============
-Text		Textbox		none
-Type		Listbox		Literal
-New Line	Checkbox	True
-============	==============	==============
-
-Screen Shot:
-
 .. image:: images/consolecomponents/ib_console_printtext.png
         :alt: Print Text
 
@@ -62,17 +50,6 @@ Using this component we can get input from the User using the Keyboard
 The entered text will be stored in memory
 
 We can access this text later using the Variable Name
-
-The Interaction Page contains the next properties
-
-=================	==============	==============
-Property		Type		Default Value
-=================	==============	==============
-Variable		Textbox		cInput
-Convert to Number	Checkbox	False
-=================	==============	==============
-
-Screen Shot:
 
 .. image:: images/consolecomponents/ib_console_getinput.png
         :alt: Get Input
@@ -90,16 +67,6 @@ The entered character will be stored in memory
 
 We can access this character later using the Variable Name
 
-The Interaction Page contains the next properties
-
-=================	==============	==============
-Property		Type		Default Value
-=================	==============	==============
-Variable		Textbox		c
-=================	==============	==============
-
-Screen Shot:
-
 .. image:: images/consolecomponents/ib_console_getcharacter.png
         :alt: Get Character
 
@@ -115,17 +82,6 @@ Using this component we can get some of characters from the User using the Keybo
 The entered characters will be stored in memory
 
 We can access these characters later using the Variable Name
-
-The Interaction Page contains the next properties
-
-=================	==============	==============
-Property		Type		Default Value
-=================	==============	==============
-Characters Count	Textbox		30
-Output (Variable)	Textbox		cValue
-=================	==============	==============
-
-Screen Shot:
 
 .. image:: images/consolecomponents/ib_console_inputfunction.png
         :alt: Input function
