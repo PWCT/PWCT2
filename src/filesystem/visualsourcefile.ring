@@ -23,6 +23,11 @@ class VisualSourceFile
 
 	lSaveToRingCode = True
 
+
+	func RingFileName	
+		return substr(cFileName,".pwct",".ring")
+
+
 	/*
 		Purpose : Check if a file is opened
 		Parameters : None
@@ -93,6 +98,7 @@ class VisualSourceFile
 
 	func GetFile
 		return cFileName
+
 
 	/*
 		Purpose : Set the Steps Tree data

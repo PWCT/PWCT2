@@ -237,14 +237,10 @@ Class ProgramController
 	*/
 
 	func Prepare oGD
-		# We don't do this when we run the main file 
-			if lMainFile {
-				return 
-			}
 		# Get the Source Code
 			GetCode(oGD)
 		# Save the code to the file
-			SaveToFile()
+			SaveToFile(oGD)
 
 	private
 
@@ -263,8 +259,9 @@ Class ProgramController
 			Output : None
 		*/
 
-		func SaveToFile
-			write(FileNameEncoding(cFileName),cSourceCode)
+		func SaveToFile oGD
+			cFile = oGD.oVisualSourceFile.RingFileName()
+			write(FileNameEncoding(cFile),cSourceCode)
 
 		/*
 			Purpose : Run Batch File

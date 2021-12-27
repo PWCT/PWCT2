@@ -20,6 +20,10 @@ class VisualSourceFile
 
 	lUseSystemLog = True
 
+	func RingFileName	
+		return substr(cFileName,".pwct",".ring")
+
+
 	/*
 		Purpose : Check if a file is opened
 		Parameters : None
