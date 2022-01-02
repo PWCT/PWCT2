@@ -280,7 +280,7 @@
 # About 
 
 	T_ABOUT_TITLE = "حول المشروع"
-	T_ABOUT_DEVELOPER = "2021, محمود سمير فايد <msfclipper@yahoo.com>"
+	T_ABOUT_DEVELOPER = "2022, محمود سمير فايد <msfclipper@yahoo.com>"
 
 # GUI Library 
 

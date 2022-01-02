@@ -281,7 +281,7 @@
 # About 
 
 	T_ABOUT_TITLE = "About"
-	T_ABOUT_DEVELOPER = "2021, Mahmoud Fayed <msfclipper@yahoo.com>"
+	T_ABOUT_DEVELOPER = "2022, Mahmoud Fayed <msfclipper@yahoo.com>"
 
 # GUI Library 
 
