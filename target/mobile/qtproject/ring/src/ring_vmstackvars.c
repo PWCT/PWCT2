@@ -1,4 +1,4 @@
-/* Copyright (c) 2013-2021 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
 #include "ring.h"
 /* Stack and Variables */
 
@@ -6,7 +6,11 @@ void ring_vm_pushv ( VM *pVM )
 {
 	List *pList  ;
 	if ( pVM->nSP <= pVM->nFuncSP ) {
-		/* Happens after using EVAL() in this case we avoid PUSHV */
+		/*
+		**  Happens after using EVAL() in this case we avoid PUSHV 
+		**  Add Output Value (if Eval() parameter (Code to be executed) miss the Return <Expr> command) 
+		*/
+		RING_VM_STACK_PUSHCVALUE("") ;
 		return ;
 	}
 	switch ( RING_VM_STACK_OBJTYPE ) {
@@ -596,7 +600,7 @@ void ring_vm_assignmentpointer ( VM *pVM )
 			return ;
 		}
 		if ( ring_vm_oop_isobject(pList)  && (ring_list_getsize(pVM->pObjState) > 0 ) ) {
-			/* We loop to prevent passing self to function that destory the self */
+			/* We loop to prevent passing self to function that destroy the self */
 			for ( x = 1 ; x <= ring_list_getsize(pVM->pObjState) ; x++ ) {
 				pList2 = ring_list_getlist(pVM->pObjState,x);
 				if ( ring_list_getpointer(pList,RING_OBJECT_OBJECTDATA) == ring_list_getpointer(pList2,RING_OBJSTATE_SCOPE) ) {

@@ -1,5 +1,5 @@
 /*
-**  Copyright (c) 2013-2021 Mahmoud Fayed <msfclipper@yahoo.com> 
+**  Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> 
 **  Include Files 
 */
 #include "ring.h"
@@ -691,7 +691,7 @@ void ring_objfile_writeCfile ( RingState *pRingState )
 	fprintf( fCode , "\tring_list_addstring_gc(pRingState,pRingState->pRingFilesStack,\"%so\");  \n",ring_list_getstring(pRingState->pRingFilesList,1)  ) ;
 	fprintf( fCode , "\tloadRingCode(pRingState);  \n"  ) ;
 	fprintf( fCode , "\tring_objfile_updateclassespointers(pRingState);  \n"  ) ;
-	fprintf( fCode , "\tring_scanner_runprogram(pRingState);  \n"  ) ;
+	fprintf( fCode , "\tring_state_runprogram(pRingState);  \n"  ) ;
 	fprintf( fCode , "\tring_state_delete(pRingState);  \n"  ) ;
 	fprintf( fCode , "\treturn 0;  \n"  ) ;
 	fprintf( fCode , "}\n\n"  ) ;
@@ -727,7 +727,7 @@ int ring_objfile_writelistcode ( List *pList,FILE *fCode,int nList,int lSeparate
 {
 	List *pList2  ;
 	int x,x2,x3,nMax  ;
-	char cList[7]  ;
+	char cList[20]  ;
 	char *cString  ;
 	char cFileName[400]  ;
 	sprintf( cList , "pList%d" , nList+1 ) ;

@@ -1,4 +1,4 @@
-/* Copyright (c) 2013-2021 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef ring_state_h
 	#define ring_state_h
 	/* Data */
@@ -68,7 +68,7 @@
 		unsigned int nScannerError  ;
 	} RingState ;
 	/* Constants */
-	#define RING_STATE_VERSION "1.16"
+	#define RING_STATE_VERSION "1.17"
 	/* MACRO */
 	#define RING_STATE_CHECKPRINTRULES if ( pParser->pRingState->nPrintRules )
 	/* General Options (Only for ring_state_main()) */

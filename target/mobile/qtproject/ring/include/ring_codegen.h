@@ -1,4 +1,4 @@
-/* Copyright (c) 2013-2021 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef ring_codegen_h
 	#define ring_codegen_h
 	/*
@@ -30,7 +30,7 @@
 		ICO_LOADSUBADDRESS ,
 		ICO_LOADINDEXADDRESS ,
 		ICO_LOADAPUSHV ,
-		/* Comparsion operators */
+		/* Comparison operators */
 		ICO_EQUAL ,
 		ICO_LESS ,
 		ICO_GREATER ,

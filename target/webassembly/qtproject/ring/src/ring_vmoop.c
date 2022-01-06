@@ -1,17 +1,17 @@
 /*
-**  Copyright (c) 2013-2021 Mahmoud Fayed <msfclipper@yahoo.com> 
+**  Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> 
 **  pClassesMap ( cClass Name ,  iPC , cParentClass, aMethodsList , nFlagIsParentClassInformation 
 **  pClassesMap ( cClass Name, Pointer to List that represent class inside a Package, Pointer to File 
 **  pFunctionsMap ( Name, PC, FileName, Private Flag ) 
 **  Packages List ( Package Name , Classes List ) 
 **  Object ( is a list of two items , (1) Class Pointer  (2) Object Data  ) 
 **  pVM->aScopeNewObj : (1) Previous scope (2) nListStart (3) pNestedLists (4) nSP 
-**  pVM->pObjState  (  [ Pointer to Scope, Pointer to Methods , Pointer to Classs, Optional True) 
+**  pVM->pObjState  (  [ Pointer to Scope, Pointer to Methods , Pointer to Class, Optional True) 
 **  The optional True used with LoadMethod so we can Know that we are inside class method during RT 
 **  We don't check the True value, we just check that the size of the list is 4 
 **  used in ring_vmfuncs , function ring_vm_loadfunc2() 
 **  used in ring_vmvars , function ring_vm_findvar2() 
-**  pBraceObject : The list that represent the object directly (not varaible/list item) 
+**  pBraceObject : The list that represent the object directly (not variable/list item) 
 **  aBraceObjects ( pBraceObject, nSP, nListStart, pNestedLists) 
 **  aSetProperty ( Object Pointer , Type (Variable/ListItem)  , Property Name, Property Variable , nBeforeEqual) 
 */
@@ -419,7 +419,7 @@ void ring_vm_oop_parentmethods ( VM *pVM,List *pList )
 			for ( x = 1 ; x <= ring_vm_oop_visibleclassescount(pVM) ; x++ ) {
 				pList4 = ring_vm_oop_visibleclassitem(pVM,x);
 				cClassName2 = ring_list_getstring(pList4,1) ;
-				/* Prev. Step must be before Next. step - We check the name include the pacakge */
+				/* Prev. Step must be before Next. step - We check the name include the package */
 				pList4 = ring_vm_oop_checkpointertoclassinpackage(pVM,pList4);
 				if ( pList4 == NULL ) {
 					continue ;
