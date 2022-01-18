@@ -9,6 +9,6 @@ cd ..\..\..\..\ring\extensions\ringqt\
 call gencodewebassemblylight.bat
 copy cpp\src\*.cpp b:\pwct2\target\webassembly\qtproject\ringqt\src\
 copy cpp\include\*.h b:\pwct2\target\webassembly\qtproject\ringqt\include\
-call gencodeqt512_nobluetooth.bat
+call gencodeqt515_nobluetooth.bat
 cd \
 cd pwct2\target\webassembly\update_ring
