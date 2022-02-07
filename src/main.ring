@@ -7,7 +7,7 @@
 
 # Load Ring Libraries
 	load "stdlibcore.ring"
-	load "guilib.ring"
+	load "lightguilib.ring"
 
 # Load General Libraries
 	load "general/general.ring"
