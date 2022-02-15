@@ -73,7 +73,7 @@ class TreeControl from qTreeWidget
 		SetLabelFont2(oLabel)
 		oLabel.settext(NodeImage(cImage)+
 					oStyle.text(cText,cColor,cBackColor))					
-
+		NewLabelStyle(oLabel)
 		oParent.addchild(oItem)
 		setItemWidget(oItem,0,oLabel)
 		AddToTree(nID,oItem)
@@ -136,9 +136,15 @@ class TreeControl from qTreeWidget
 				settext(this.NodeImage(C_LABELIMAGE_NODEICON)+
 						this.oStyle.text(cText,this.cColor,this.cBackColor))
 			}
+			NewLabelStyle(oLabel)
 			setItemWidget(oItem,0,oLabel)
 		}
 		return oItem
+
+	/*
+		Function that can be used to customize the new labels added to the Tree items
+	*/
+	func NewLabelStyle oLabel
 
 	/*
 		Purpose : Can be replaced in child classes with custom processing on node text 

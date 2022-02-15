@@ -26,6 +26,9 @@ class StepsTreeView from TreeControl
 		lShowScrollbars = False
 	}
 
+	lLabelStyle			= True
+	lLabelStyleGradient = True
+
 	func Init win
 		if lUseLabels = False {
 			init2(win)
@@ -114,6 +117,7 @@ class StepsTreeView from TreeControl
 				oLabel.SetText(cImage+
 				this.oStyle.text(cText,this.cColor,this.cBackColor))
 			}
+			UpdateLabelSize(oLabel)
 		}
 
 	func SaveStep oItem
@@ -139,7 +143,6 @@ class StepsTreeView from TreeControl
 		# Add the Labels Controls
 			RestoreLabels(oNewItems,False)
 		return oNewItems
-
 
 	func SaveLabels oItem
 		# Save the Labels Controls
@@ -179,6 +182,7 @@ class StepsTreeView from TreeControl
 					setStyleSheet(aLabel[C_NODELABEL_STYLESHEET])					
 				}
 				setLabelFont(oLabel2)
+				NewLabelStyle(oLabel2)
 				setItemWidget(oItem,0,oLabel2)
 			}
 			/*
@@ -321,3 +325,29 @@ class StepsTreeView from TreeControl
 		else 
 			return oHTMLFunctions.plainText(cStepName)
 		}
+
+	/*
+		Each node could contains a label 
+		Using this function we can set the style of new labels 
+	*/
+	func NewLabelStyle oLabel 
+		if ! lLabelStyle { return }
+		cStyle = oLabel.stylesheet()
+		if lLabelStyleGradient {
+			oLabel.setstylesheet(cStyle+"border: 2px solid gray; color: qlineargradient(spread:pad, x1:0 y1:0, x2:1 y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+			background: qlineargradient( x1:0 y1:0, x2:1 y2:0, stop:0 cyan, stop:1 blue);")
+		else 
+			oLabel.setstylesheet(cStyle+"border: 2px solid gray")
+		}
+		oLabel.adjustsize()
+		oLabel.setmaximumwidth(oLabel.width())
+
+	/*
+		When we edit the Step Text, We need UpdateLabelSize()
+		This is required if NewLabelStyle() is used
+	*/
+	func UpdateLabelSize oLabel 
+		if ! lLabelStyle { return }
+		oLabel.setmaximumwidth(10000)
+		oLabel.adjustsize()
+		oLabel.setmaximumwidth(oLabel.width())
