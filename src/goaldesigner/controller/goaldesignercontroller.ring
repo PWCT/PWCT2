@@ -998,6 +998,8 @@ class GoalDesignerController from WindowsControllerParent
 	func RefreshStepsTree2 aStepsTree
 		oView.oStepsTree.setUpdatesEnabled(False)
 		oView.oStepsTree.blockSignals(True)
+		# Borders around steps
+			oView.oStepsTree.lLabelStyle = C_PROPERTIES_BORDERSAROUNDSTEPS
 		# Indentation 
 			oView.oStepsTree.setIndentation(C_STEPSTREE_INDENTATION)
 		# Set the font

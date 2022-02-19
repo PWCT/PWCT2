@@ -259,6 +259,7 @@
 	T_SC_NODEICON = "Steps Tree - Show Nodes Icon"
 	T_SC_HIDESTEPCODETAB = "Steps Tree - Hide Step Code Tab"
 	T_SC_REFLECTCHANGESINFONTSIZE = "Reflect changes in font size to other windows"
+	T_SC_BORDERSAROUNDSTEPS = "Broders around steps (In supported styles)"
 
 # Components Browser Window
 

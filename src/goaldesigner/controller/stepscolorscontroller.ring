@@ -175,4 +175,8 @@ class StepsColorsController from WindowsControllerParent
 		}
 
 	func ReflectChangesInFontSize
-		C_PROPERTIES_REFLECTCHANGEINFONTSIZE =  oView.checkReflectChangesInFontSize.checkState()
+		C_PROPERTIES_REFLECTCHANGEINFONTSIZE = oView.checkReflectChangesInFontSize.checkState()
+
+	func BordersAroundSteps 
+		C_PROPERTIES_BORDERSAROUNDSTEPS = oView.checkBordersAroundSteps.checkState()
+		parent().refreshStepsTree()		

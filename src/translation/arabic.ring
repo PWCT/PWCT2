@@ -256,6 +256,7 @@
 	T_SC_NODEICON = "شجرة الخطوات - عرض ايقونة لكل عنصر"
 	T_SC_HIDESTEPCODETAB = "شجرة الخطوات - إخفاء تعليمات الخطوة"
 	T_SC_REFLECTCHANGESINFONTSIZE = "ضبط التغيرات فى حجم الخط فى مختلف النوافذ"
+	T_SC_BORDERSAROUNDSTEPS = "حواف حول الخطوات (فى الانماط المدعومة)"
 
 # Components Browser Window
 

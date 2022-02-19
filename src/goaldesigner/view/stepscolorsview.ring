@@ -255,6 +255,11 @@ class StepsColorsView from WindowsViewParent
 			setChecked(C_PROPERTIES_REFLECTCHANGEINFONTSIZE)
 			setStateChangedEvent(Method(:ReflectChangesInFontSize))
 		}    
+		checkBordersAroundSteps = new QCheckBox(pageOptions) {
+			setText(T_SC_BORDERSAROUNDSTEPS) # "Borders around steps"
+			setChecked(C_PROPERTIES_BORDERSAROUNDSTEPS)
+			setStateChangedEvent(Method(:BORDERSAROUNDSTEPS))
+		}    
 		btnClose = new qpushbutton(pageOptions) {
 			setText(T_SC_CLOSE) # "Close"
 			setclickevent(Method(:closeAction))
@@ -290,6 +295,7 @@ class StepsColorsView from WindowsViewParent
 			AddWidget(checkAvoidComponentsBrowserAutoComplete)
 			AddWidget(checkComponentsBrowserAlwaysShowSearchWindow)
 			AddWidget(checkReflectChangesInFontSize)
+			AddWidget(checkBordersAroundSteps)
 			insertStretch( -1, 1 )
 		}
 
