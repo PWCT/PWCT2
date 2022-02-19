@@ -9,5 +9,4 @@ rem copy *.h target\mobile\qtproject
 echo Delete temp. files
 rem del *.c
 rem del *.h
-del *.ringo
 echo Done!
