@@ -332,6 +332,9 @@ class StepsTreeView from TreeControl
 	*/
 	func NewLabelStyle oLabel 
 		if ! lLabelStyle { return }
+		if BlockStyleNotSupported() {
+			return 
+		}
 		cStyle = oLabel.stylesheet()
 		if lLabelStyleGradient {
 			oLabel.setstylesheet(cStyle+"border: 2px solid gray; color: qlineargradient(spread:pad, x1:0 y1:0, x2:1 y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
@@ -348,6 +351,20 @@ class StepsTreeView from TreeControl
 	*/
 	func UpdateLabelSize oLabel 
 		if ! lLabelStyle { return }
+		if BlockStyleNotSupported() {
+			return 
+		}
 		oLabel.setmaximumwidth(10000)
 		oLabel.adjustsize()
 		oLabel.setmaximumwidth(oLabel.width())
+
+	/*
+		Check if we could draw block according to the selected style
+	*/
+	func BlockStyleNotSupported
+		return not ( C_ENV_DEFAULT_STYLE = C_ENV_STYLE_WINDOWSB or
+			C_ENV_DEFAULT_STYLE = C_ENV_STYLE_WHITEB or
+			C_ENV_DEFAULT_STYLE = C_ENV_STYLE_BLACKB or
+			C_ENV_DEFAULT_STYLE = C_ENV_STYLE_SIMPLEBLACK or
+			C_ENV_DEFAULT_STYLE = C_ENV_STYLE_BLUE or
+			C_ENV_DEFAULT_STYLE = C_ENV_STYLE_BLUE2 )
