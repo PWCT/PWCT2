@@ -4,42 +4,43 @@
 
 void ring_vm_file_loadfunctions ( RingState *pRingState )
 {
-    ring_vm_funcregister("fopen",ring_vm_file_fopen);
-    ring_vm_funcregister("fclose",ring_vm_file_fclose);
-    ring_vm_funcregister("fflush",ring_vm_file_fflush);
-    ring_vm_funcregister("freopen",ring_vm_file_freopen);
-    ring_vm_funcregister("tempfile",ring_vm_file_tempfile);
-    ring_vm_funcregister("tempname",ring_vm_file_tempname);
-    ring_vm_funcregister("fseek",ring_vm_file_fseek);
-    ring_vm_funcregister("ftell",ring_vm_file_ftell);
-    ring_vm_funcregister("rewind",ring_vm_file_rewind);
-    ring_vm_funcregister("fgetpos",ring_vm_file_fgetpos);
-    ring_vm_funcregister("fsetpos",ring_vm_file_fsetpos);
-    ring_vm_funcregister("clearerr",ring_vm_file_clearerr);
-    ring_vm_funcregister("feof",ring_vm_file_feof);
-    ring_vm_funcregister("ferror",ring_vm_file_ferror);
-    ring_vm_funcregister("perror",ring_vm_file_perror);
-    ring_vm_funcregister("rename",ring_vm_file_rename);
-    ring_vm_funcregister("remove",ring_vm_file_remove);
-    ring_vm_funcregister("fgetc",ring_vm_file_fgetc);
-    ring_vm_funcregister("fgets",ring_vm_file_fgets);
-    ring_vm_funcregister("fputc",ring_vm_file_fputc);
-    ring_vm_funcregister("fputs",ring_vm_file_fputs);
-    ring_vm_funcregister("ungetc",ring_vm_file_ungetc);
-    ring_vm_funcregister("fread",ring_vm_file_fread);
-    ring_vm_funcregister("fwrite",ring_vm_file_fwrite);
-    ring_vm_funcregister("dir",ring_vm_file_dir);
-    ring_vm_funcregister("read",ring_vm_file_read);
-    ring_vm_funcregister("write",ring_vm_file_write);
-    ring_vm_funcregister("fexists",ring_vm_file_fexists);
-    ring_vm_funcregister("direxists",ring_vm_file_direxists);
-    ring_vm_funcregister("getpathtype",ring_vm_file_getpathtype);
-    ring_vm_funcregister("int2bytes",ring_vm_file_int2bytes);
-    ring_vm_funcregister("float2bytes",ring_vm_file_float2bytes);
-    ring_vm_funcregister("double2bytes",ring_vm_file_double2bytes);
-    ring_vm_funcregister("bytes2int",ring_vm_file_bytes2int);
-    ring_vm_funcregister("bytes2float",ring_vm_file_bytes2float);
-    ring_vm_funcregister("bytes2double",ring_vm_file_bytes2double);
+    RING_API_REGISTER("fopen",ring_vm_file_fopen);
+    RING_API_REGISTER("fclose",ring_vm_file_fclose);
+    RING_API_REGISTER("fflush",ring_vm_file_fflush);
+    RING_API_REGISTER("freopen",ring_vm_file_freopen);
+    RING_API_REGISTER("tempfile",ring_vm_file_tempfile);
+    RING_API_REGISTER("tempname",ring_vm_file_tempname);
+    RING_API_REGISTER("fseek",ring_vm_file_fseek);
+    RING_API_REGISTER("ftell",ring_vm_file_ftell);
+    RING_API_REGISTER("rewind",ring_vm_file_rewind);
+    RING_API_REGISTER("fgetpos",ring_vm_file_fgetpos);
+    RING_API_REGISTER("fsetpos",ring_vm_file_fsetpos);
+    RING_API_REGISTER("clearerr",ring_vm_file_clearerr);
+    RING_API_REGISTER("feof",ring_vm_file_feof);
+    RING_API_REGISTER("ferror",ring_vm_file_ferror);
+    RING_API_REGISTER("perror",ring_vm_file_perror);
+    RING_API_REGISTER("rename",ring_vm_file_rename);
+    RING_API_REGISTER("remove",ring_vm_file_remove);
+    RING_API_REGISTER("fgetc",ring_vm_file_fgetc);
+    RING_API_REGISTER("fgets",ring_vm_file_fgets);
+    RING_API_REGISTER("fputc",ring_vm_file_fputc);
+    RING_API_REGISTER("fputs",ring_vm_file_fputs);
+    RING_API_REGISTER("ungetc",ring_vm_file_ungetc);
+    RING_API_REGISTER("fread",ring_vm_file_fread);
+    RING_API_REGISTER("fwrite",ring_vm_file_fwrite);
+    RING_API_REGISTER("dir",ring_vm_file_dir);
+    RING_API_REGISTER("read",ring_vm_file_read);
+    RING_API_REGISTER("write",ring_vm_file_write);
+    RING_API_REGISTER("fexists",ring_vm_file_fexists);
+    RING_API_REGISTER("direxists",ring_vm_file_direxists);
+    RING_API_REGISTER("getpathtype",ring_vm_file_getpathtype);
+    RING_API_REGISTER("getfilesize",ring_vm_file_getfilesize);
+    RING_API_REGISTER("int2bytes",ring_vm_file_int2bytes);
+    RING_API_REGISTER("float2bytes",ring_vm_file_float2bytes);
+    RING_API_REGISTER("double2bytes",ring_vm_file_double2bytes);
+    RING_API_REGISTER("bytes2int",ring_vm_file_bytes2int);
+    RING_API_REGISTER("bytes2float",ring_vm_file_bytes2float);
+    RING_API_REGISTER("bytes2double",ring_vm_file_bytes2double);
 }
 /* Check File/Dir/Type */
 
@@ -102,6 +103,19 @@ int ring_getpathtype ( const char *cDirPath )
         return -1 ;
     }
     return 0 ;
+}
+
+RING_LONGLONG ring_getfilesize ( const char *cFilePath )
+{
+    struct stat sb  ;
+    if ( stat(cFilePath, &sb) == 0 ) {
+        if ( S_ISREG(sb.st_mode) ) {
+            /* Path exists and it is a regular file */
+            return (RING_LONGLONG) sb.st_size ;
+        }
+    }
+    /* Doesn't exist or not a file */
+    return (RING_LONGLONG) -1 ;
 }
 
 void ring_vm_file_fopen ( void *pPointer )
@@ -283,14 +297,10 @@ void ring_vm_file_fgetpos ( void *pPointer )
     if ( RING_API_ISPOINTER(1) ) {
         fp = (FILE *) RING_API_GETCPOINTER(1,RING_VM_POINTER_FILE) ;
         if ( fp != NULL ) {
-            pos = (fpos_t *) malloc(sizeof(fpos_t)) ;
-            if ( pos == NULL ) {
-                RING_API_ERROR(RING_OOM);
-                return ;
-            }
+            pos = (fpos_t *) RING_API_MALLOC(sizeof(fpos_t));
             nResult = fgetpos(fp,pos);
             if ( nResult == 0 ) {
-                RING_API_RETMANAGEDCPOINTER(pos,RING_VM_POINTER_FILEPOS,ring_state_free);
+                RING_API_RETMANAGEDCPOINTER(pos,RING_VM_POINTER_FILEPOS,RING_API_FREEFUNC);
             }
             else {
                 RING_API_RETNUMBER(nResult);
@@ -467,11 +477,7 @@ void ring_vm_file_fgets ( void *pPointer )
                 return ;
             }
             nSize++ ;
-            cStr = (char *) ring_state_malloc(((VM *) pPointer)->pRingState,nSize);
-            if ( cStr == NULL ) {
-                RING_API_ERROR(RING_OOM);
-                return ;
-            }
+            cStr = (char *) RING_API_MALLOC(nSize);
             cResult = fgets(cStr,nSize,fp);
             if ( cResult != NULL ) {
                 RING_API_RETSTRING(cStr);
@@ -479,7 +485,7 @@ void ring_vm_file_fgets ( void *pPointer )
             else {
                 RING_API_RETNUMBER(0);
             }
-            ring_state_free(((VM *) pPointer)->pRingState,cStr);
+            RING_API_FREE(cStr);
         }
     }
     else {
@@ -580,11 +586,7 @@ void ring_vm_file_fread ( void *pPointer )
                 RING_API_ERROR(RING_VM_FILE_BUFFERSIZE);
                 return ;
             }
-            cStr = (char *) ring_state_malloc(((VM *) pPointer)->pRingState,nSize);
-            if ( cStr == NULL ) {
-                RING_API_ERROR(RING_OOM);
-                return ;
-            }
+            cStr = (char *) RING_API_MALLOC(nSize);
             nResult = fread(cStr,1,nSize,fp);
             if ( nResult == 0 ) {
                 RING_API_RETNUMBER(nResult);
@@ -592,7 +594,7 @@ void ring_vm_file_fread ( void *pPointer )
             else {
                 RING_API_RETSTRING2(cStr,nResult);
             }
-            ring_state_free(((VM *) pPointer)->pRingState,cStr);
+            RING_API_FREE(cStr);
         }
     }
     else {
@@ -722,15 +724,11 @@ void ring_vm_file_read ( void *pPointer )
         fseek( fp , 0 , SEEK_END );
         nSize = ftell(fp);
         fseek( fp , 0 , SEEK_SET );
-        cBuffer = (char *) ring_state_malloc(((VM *) pPointer)->pRingState,nSize);
-        if ( cBuffer == NULL ) {
-            RING_API_ERROR(RING_OOM);
-            return ;
-        }
+        cBuffer = (char *) RING_API_MALLOC(nSize);
         fread( cBuffer , 1 , nSize , fp );
         fclose( fp ) ;
         RING_API_RETSTRING2(cBuffer,nSize);
-        ring_state_free(((VM *) pPointer)->pRingState,cBuffer);
+        RING_API_FREE(cBuffer);
     }
     else {
         RING_API_ERROR(RING_API_BADPARATYPE);
@@ -801,6 +799,20 @@ void ring_vm_file_getpathtype ( void *pPointer )
     }
     if ( RING_API_ISSTRING(1) ) {
         RING_API_RETNUMBER(ring_getpathtype(RING_API_GETSTRING(1)));
+    }
+    else {
+        RING_API_ERROR(RING_API_BADPARATYPE);
+    }
+}
+
+void ring_vm_file_getfilesize ( void *pPointer )
+{
+    if ( RING_API_PARACOUNT != 1 ) {
+        RING_API_ERROR(RING_API_MISS1PARA);
+        return ;
+    }
+    if ( RING_API_ISSTRING(1) ) {
+        RING_API_RETNUMBER(ring_getfilesize(RING_API_GETSTRING(1)));
     }
     else {
         RING_API_ERROR(RING_API_BADPARATYPE);
