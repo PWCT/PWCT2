@@ -258,6 +258,7 @@ class StepsTreeView from TreeControl
 						cImage = C_COMMENTMARK
 					}
 					oLabel.SetText(cImage+cText)
+					NewLabelStyle(oLabel)
 				else 
 					cText = item.text(0)
 					if left(cText,C_COMMENTMARKSIZE) != C_COMMENTMARK {
@@ -273,6 +274,7 @@ class StepsTreeView from TreeControl
 					cText = PrepareNodeText(cText)
 					cImage = this.NodeImage(C_LABELIMAGE_NODEICON)
 					oLabel.SetText(cImage+cText)
+					NewLabelStyle(oLabel)
 				else 
 					cText = item.text(0)
 					if left(cText,C_COMMENTMARKSIZE) = C_COMMENTMARK {
