@@ -236,9 +236,13 @@ class StepsTreeView from TreeControl
 			SetLabelFont(oLabel)
 		# Set the Font Size of the sub steps
 			aItems = stepsList(oFirstStep)
-			for item in aItems {
+			nMax = len(aItems)
+			for t=2 to nMax {
+				item = aItems[t]
 				oLabel = GetItemLabel(item)
 				SetLabelFont(oLabel)
+				# Set the style to support the Block style 
+					NewLabelStyle(oLabel)
 			}
 
 	func IgnoreStep oItem,nIgnore
@@ -335,6 +339,7 @@ class StepsTreeView from TreeControl
 		if BlockStyleNotSupported() {
 			return 
 		}
+		oLabel.setmaximumwidth(1000)
 		cStyle = oLabel.stylesheet()
 		if lLabelStyleGradient {
 			oLabel.setstylesheet(cStyle+"border: 2px solid gray; color: qlineargradient(spread:pad, x1:0 y1:0, x2:1 y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
