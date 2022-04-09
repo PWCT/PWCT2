@@ -188,12 +188,6 @@ class StepsColorsView from WindowsViewParent
 			Addwidget(txtIndentation)			
 		}
 
-		checkStepsTreeLines = new QCheckBox(pageColors) {
-			setText(T_SC_STEPSTREELINES) # "Show Steps Tree Lines"
-			setChecked(C_STEPSTREE_SHOWLINES)
-			setStateChangedEvent(Method(:StepsTreeLines))
-		} 
-
 
 		checkAutoRun = new QCheckBox(pageOptions) {
 			setText(T_SC_AUTORUN) # "Auto Run"
@@ -205,16 +199,41 @@ class StepsColorsView from WindowsViewParent
 			setChecked(C_STEPSTREE_OPENFILESINNEWTABS)
 			setStateChangedEvent(Method(:OpenFilesInNewTabs))
 		} 
-		checkOpenInteractionsInNewWindows = new QCheckBox(pageOptions) {
-			setText(T_SC_OPENINTERACTIONSINNEWWINDOWS) # "Open interaction pages in new windows"
-			setChecked(C_STEPSTREE_OPENINTERACTIONSINNEWWINDOWS)
-			setStateChangedEvent(Method(:OpenInteractionsInNewWindows))
-		} 
 		checkShowTimeMachine = new QCheckBox(pageOptions) {
 			setText(T_SC_SHOWTIMEMACHINE) # "Show The Time Machine Options"
 			setChecked(C_STEPSTREE_SHOWTIMEMACHINE)
 			setStateChangedEvent(Method(:ShowTimeMachine))
 		} 
+		checkHideStepCodeTab = new QCheckBox(pageOptions) {
+			setText(T_SC_HIDESTEPCODETAB) # "Steps Tree - Hide Step Code Tab"
+			setChecked(C_STEPSTREE_HIDESTEPCODETAB)
+			setStateChangedEvent(Method(:HideStepCodeTab))
+		}
+		checkStepsTreeLines = new QCheckBox(pageOptions) {
+			setText(T_SC_STEPSTREELINES) # "Show Steps Tree Lines"
+			setChecked(C_STEPSTREE_SHOWLINES)
+			setStateChangedEvent(Method(:StepsTreeLines))
+		} 
+		checkLightTreeLines = new QCheckBox(pageOptions) {
+			setText(T_SC_LIGHTTREELINES) # "Light Tree Lines"
+			setChecked(C_STEPSTREE_LIGHTTREELINES)
+			setStateChangedEvent(Method(:LightTreeLines))
+		}
+		checkNodeIcon = new QCheckBox(pageOptions) {
+			setText(T_SC_NODEICON) # "Steps Tree - Show Nodes Icon"
+			setChecked(C_STEPSTREE_NODEICON)
+			setStateChangedEvent(Method(:NodeIcon))
+		}
+		checkOpenInteractionsInNewWindows = new QCheckBox(pageOptions) {
+			setText(T_SC_OPENINTERACTIONSINNEWWINDOWS) # "Open interaction pages in new windows"
+			setChecked(C_STEPSTREE_OPENINTERACTIONSINNEWWINDOWS)
+			setStateChangedEvent(Method(:OpenInteractionsInNewWindows))
+		} 
+		checkAllowSyntaxErrors = new QCheckBox(pageOptions) {
+			setText(T_SC_ALLOWSYNTAXERRORS) # "Allow Syntax Errors in Interaction Pages"
+			setChecked(C_STEPSTREE_ALLOWSYNTAXERRORS)
+			setStateChangedEvent(Method(:AllowSyntaxErrors))
+		}  
 		checkAvoidComponentsBrowser = new QCheckBox(pageOptions) {
 			setText(T_SC_AVOIDCOMPONENTSBROWSERS) # "Avoid Components Browser"
 			setChecked(C_STEPSTREE_AVOIDCOMPONENTSBROWSER)
@@ -230,26 +249,6 @@ class StepsColorsView from WindowsViewParent
 			setChecked(C_STEPSTREE_COMPONENTSBROWSERALWAYSSHOWSEARCHWINDOW)
 			setStateChangedEvent(Method(:ComponentsBrowserAShowSW))
 		} 
-		checkLightTreeLines = new QCheckBox(pageOptions) {
-			setText(T_SC_LIGHTTREELINES) # "Light Tree Lines"
-			setChecked(C_STEPSTREE_LIGHTTREELINES)
-			setStateChangedEvent(Method(:LightTreeLines))
-		}
-		checkAllowSyntaxErrors = new QCheckBox(pageOptions) {
-			setText(T_SC_ALLOWSYNTAXERRORS) # "Allow Syntax Errors in Interaction Pages"
-			setChecked(C_STEPSTREE_ALLOWSYNTAXERRORS)
-			setStateChangedEvent(Method(:AllowSyntaxErrors))
-		}  
-		checkNodeIcon = new QCheckBox(pageOptions) {
-			setText(T_SC_NODEICON) # "Steps Tree - Show Nodes Icon"
-			setChecked(C_STEPSTREE_NODEICON)
-			setStateChangedEvent(Method(:NodeIcon))
-		}
-		checkHideStepCodeTab = new QCheckBox(pageOptions) {
-			setText(T_SC_HIDESTEPCODETAB) # "Steps Tree - Hide Step Code Tab"
-			setChecked(C_STEPSTREE_HIDESTEPCODETAB)
-			setStateChangedEvent(Method(:HideStepCodeTab))
-		}
 		checkReflectChangesInFontSize = new QCheckBox(pageOptions) {
 			setText(T_SC_REFLECTCHANGESINFONTSIZE) # "Reflect changes in font size to other windows"
 			setChecked(C_PROPERTIES_REFLECTCHANGEINFONTSIZE)
