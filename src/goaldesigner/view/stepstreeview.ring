@@ -337,7 +337,7 @@ class StepsTreeView from TreeControl
 		Using this function we can set the style of new labels 
 	*/
 	func NewLabelStyle oLabel 
-		if ! lLabelStyle { return }
+		if T_LAYOUTDIRECTION = 1 or	! lLabelStyle { return }
 		if BlockStyleNotSupported() {
 			return 
 		}

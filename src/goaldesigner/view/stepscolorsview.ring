@@ -294,7 +294,11 @@ class StepsColorsView from WindowsViewParent
 			AddWidget(checkAvoidComponentsBrowserAutoComplete)
 			AddWidget(checkComponentsBrowserAlwaysShowSearchWindow)
 			AddWidget(checkReflectChangesInFontSize)
+			if T_LAYOUTDIRECTION != 1 {
 			AddWidget(checkBordersAroundSteps)
+			else
+			checkBordersAroundSteps.hide()
+			}
 			insertStretch( -1, 1 )
 		}
 
