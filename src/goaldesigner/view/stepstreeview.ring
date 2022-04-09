@@ -182,7 +182,7 @@ class StepsTreeView from TreeControl
 					setStyleSheet(aLabel[C_NODELABEL_STYLESHEET])					
 				}
 				setLabelFont(oLabel2)
-				NewLabelStyle(oLabel2,[])
+				NewLabelStyle(oLabel2)
 				setItemWidget(oItem,0,oLabel2)
 			}
 			/*
@@ -242,7 +242,7 @@ class StepsTreeView from TreeControl
 				oLabel = GetItemLabel(item)
 				SetLabelFont(oLabel)
 				# Set the style to support the Block style 
-					NewLabelStyle(oLabel,[])
+					NewLabelStyle(oLabel)
 			}
 
 	func IgnoreStep oItem,nIgnore
@@ -258,7 +258,7 @@ class StepsTreeView from TreeControl
 						cImage = C_COMMENTMARK
 					}
 					oLabel.SetText(cImage+cText)
-					NewLabelStyle(oLabel,[])
+					NewLabelStyle(oLabel)
 				else 
 					cText = item.text(0)
 					if left(cText,C_COMMENTMARKSIZE) != C_COMMENTMARK {
@@ -274,7 +274,7 @@ class StepsTreeView from TreeControl
 					cText = PrepareNodeText(cText)
 					cImage = this.NodeImage(C_LABELIMAGE_NODEICON)
 					oLabel.SetText(cImage+cText)
-					NewLabelStyle(oLabel,[])
+					NewLabelStyle(oLabel)
 				else 
 					cText = item.text(0)
 					if left(cText,C_COMMENTMARKSIZE) = C_COMMENTMARK {
@@ -336,8 +336,8 @@ class StepsTreeView from TreeControl
 		Each node could contains a label 
 		Using this function we can set the style of new labels 
 	*/
-	func NewLabelStyle oLabel,aPara 
-		if T_LAYOUTDIRECTION = 1 or	! lLabelStyle or aPara[:StepType] = C_STEPTYPE_COMMENT { return }
+	func NewLabelStyle oLabel
+		if T_LAYOUTDIRECTION = 1 or	! lLabelStyle { return }
 		if BlockStyleNotSupported() {
 			return 
 		}

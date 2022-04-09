@@ -1123,7 +1123,7 @@ class GoalDesignerController from WindowsControllerParent
 							`<span style="background-color:`+cBackColor+
 							`"><font color="`+cColor+`">`+cText+
 							`</font></span>`)					
-						NewLabelStyle(oLabel,[:StepType=nStepType])
+						NewLabelStyle(oLabel)
 					}
 					if nInsertIndex = -1 {
 						oParent.addchild(oItem)
