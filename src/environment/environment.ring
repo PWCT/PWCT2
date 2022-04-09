@@ -18,6 +18,7 @@
 	Output : None
 */
 
+
 func StartEnvironment
 
 	# We have PWCT_APP as a global variable/object of the QApplication class
@@ -29,6 +30,9 @@ func StartEnvironment
 		# Execute the Application (Give control to the GUI Loop)
 			exec()
 	}
+
+func EnvironmentWindow
+	return GetWindowByID(nEnvironmentWindowID)
 
 /*
 	The next function display the Splash Screen

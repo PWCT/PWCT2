@@ -11,6 +11,7 @@
 
 # Application
 	PWCT_APP 				= NULL
+	nEnvironmentWindowID = 0
 	PWCT_FOLDER				= CurrentDir()
 	C_FILENONAME 				= "noname.ring"
 	remove( C_FILENONAME)

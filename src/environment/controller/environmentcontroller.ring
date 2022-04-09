@@ -65,6 +65,8 @@ class EnvironmentController from WindowsControllerParent
 		Output : None
 	*/
 	func Start
+		# Save the Window ID 
+			nEnvironmentWindowID = ObjectID()
 		oView.win.blocksignals(True)
 		oView.win.setupdatesenabled(False)
 		oView.win.showmaximized()
