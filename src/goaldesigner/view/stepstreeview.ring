@@ -102,7 +102,7 @@ class StepsTreeView from TreeControl
 	func InsertStep nParentID,nID,cText,nIndex
 		return InsertNode(nParentID,nID,cText,nIndex)
 
-	func EditStep oItem,cText,lIgnoreStatus
+	func EditStep nStepID,oItem,cText,lIgnoreStatus
 		cText = PrepareNodeText(cText)
 		if lUseLabels = false {
 			oItem.setText(0,cText)
@@ -120,7 +120,7 @@ class StepsTreeView from TreeControl
 				oLabel.SetText(cImage+
 				this.oStyle.text(cText,this.cColor,this.cBackColor))
 			}
-			UpdateLabelSize(oLabel)
+			UpdateLabelSize(nStepID,oLabel)
 		}
 
 	func SaveStep oItem
@@ -185,7 +185,7 @@ class StepsTreeView from TreeControl
 					setStyleSheet(aLabel[C_NODELABEL_STYLESHEET])					
 				}
 				setLabelFont(oLabel2)
-				NewLabelStyle(oLabel2)
+				NewLabelStyle(oLabel2,[])
 				setItemWidget(oItem,0,oLabel2)
 			}
 			/*
@@ -245,7 +245,7 @@ class StepsTreeView from TreeControl
 				oLabel = GetItemLabel(item)
 				SetLabelFont(oLabel)
 				# Set the style to support the Block style 
-					NewLabelStyle(oLabel)
+					NewLabelStyle(oLabel,[])
 			}
 
 	func IgnoreStep oItem,nIgnore
@@ -261,7 +261,7 @@ class StepsTreeView from TreeControl
 						cImage = C_COMMENTMARK
 					}
 					oLabel.SetText(cImage+cText)
-					NewLabelStyle(oLabel)
+					NewLabelStyle(oLabel,[])
 				else 
 					cText = item.text(0)
 					if left(cText,C_COMMENTMARKSIZE) != C_COMMENTMARK {
@@ -277,7 +277,7 @@ class StepsTreeView from TreeControl
 					cText = PrepareNodeText(cText)
 					cImage = this.NodeImage(C_LABELIMAGE_NODEICON)
 					oLabel.SetText(cImage+cText)
-					NewLabelStyle(oLabel)
+					NewLabelStyle(oLabel,[])
 				else 
 					cText = item.text(0)
 					if left(cText,C_COMMENTMARKSIZE) = C_COMMENTMARK {
@@ -339,11 +339,16 @@ class StepsTreeView from TreeControl
 		Each node could contains a label 
 		Using this function we can set the style of new labels 
 	*/
-	func NewLabelStyle oLabel
+	func NewLabelStyle oLabel,aPara
 		if T_LAYOUTDIRECTION = 1 or	! lLabelStyle { return }
 		if BlockStyleNotSupported() {
 			return 
 		}
+		if aPara[:id] != NULL {
+			if GoalDesigner().oModel.GetStepType(aPara[:id]) = C_STEPTYPE_COMMENT {
+				return
+			}
+		}		
 		oLabel.setmaximumwidth(10000)
 		cStyle = oLabel.stylesheet()
 		if lLabelStyleGradient {
@@ -355,15 +360,17 @@ class StepsTreeView from TreeControl
 		oLabel.adjustsize()
 		oLabel.setmaximumwidth(oLabel.width())
 
-
 	/*
 		When we edit the Step Text, We need UpdateLabelSize()
 		This is required if NewLabelStyle() is used
 	*/
-	func UpdateLabelSize oLabel 
+	func UpdateLabelSize nStepID,oLabel 
 		if ! lLabelStyle { return }
 		if BlockStyleNotSupported() {
 			return 
+		}
+		if GoalDesigner().oModel.GetStepType(nStepID) = C_STEPTYPE_COMMENT {
+			return
 		}
 		oLabel.setmaximumwidth(10000)
 		oLabel.adjustsize()

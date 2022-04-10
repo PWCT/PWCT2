@@ -365,7 +365,7 @@ class GoalDesignerController from WindowsControllerParent
 			cPlainStepName = oHTMLFunctions.PlainText(cText)
 			nStepType = oModel.GetStepType(nStepID)
 			SetStepColor(nStepType)
-			oView.oStepsTree.editstep(oItem,cText,this.oModel.GetStepIgnoreStatus(nStepID))
+			oView.oStepsTree.editstep(nStepID,oItem,cText,this.oModel.GetStepIgnoreStatus(nStepID))
 			oModel.EditStepName(nStepID,cText,cPlainStepName)
 			lSaveFlag = True
 		}		
@@ -1123,8 +1123,8 @@ class GoalDesignerController from WindowsControllerParent
 						oLabel.settext(cImageCode+
 							`<span style="background-color:`+cBackColor+
 							`"><font color="`+cColor+`">`+cText+
-							`</font></span>`)					
-						NewLabelStyle(oLabel)
+							`</font></span>`)				
+						NewLabelStyle(oLabel,[:id = nID])
 					}
 					if nInsertIndex = -1 {
 						oParent.addchild(oItem)

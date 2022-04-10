@@ -121,7 +121,7 @@ class FindStepController from WindowsControllerParent
 			cCode = substr(cCode,cFind,cReplace) 
 			cInteractionValues = substr(cInteractionValues,cFind,cReplace)
 		}
-		Parent().oView.oStepsTree.editstep(oItem,cText,Parent().oModel.GetStepIgnoreStatus(nStepID))
+		Parent().oView.oStepsTree.editstep(nStepID,oItem,cText,Parent().oModel.GetStepIgnoreStatus(nStepID))
 		cPlainStepName = Parent().oHTMLFunctions.PlainText(cText)
 		Parent().oModel.EditStepName(nStepID,cText,cPlainStepName)
 		Parent().oModel.EditStepCode(nStepID,cCode)
