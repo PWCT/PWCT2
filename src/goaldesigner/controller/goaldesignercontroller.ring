@@ -118,6 +118,7 @@ class GoalDesignerController from WindowsControllerParent
 			oView.oTab.tabbar().hide()
 		}
 		ShowTimeMachine(lShowTimeMachine)
+		oView.oStepsTree.nGoalDesignerWindowID = ObjectID()
 		oView.Show()
 
 

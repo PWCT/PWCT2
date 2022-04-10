@@ -29,6 +29,9 @@ class StepsTreeView from TreeControl
 	lLabelStyle			= True
 	lLabelStyleGradient = True
 
+
+	nGoalDesignerWindowID = 0
+
 	func Init win
 		if lUseLabels = False {
 			init2(win)
@@ -341,7 +344,7 @@ class StepsTreeView from TreeControl
 		if BlockStyleNotSupported() {
 			return 
 		}
-		oLabel.setmaximumwidth(1000)
+		oLabel.setmaximumwidth(10000)
 		cStyle = oLabel.stylesheet()
 		if lLabelStyleGradient {
 			oLabel.setstylesheet(cStyle+"border: 2px solid gray; color: qlineargradient(spread:pad, x1:0 y1:0, x2:1 y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
@@ -351,6 +354,7 @@ class StepsTreeView from TreeControl
 		}
 		oLabel.adjustsize()
 		oLabel.setmaximumwidth(oLabel.width())
+
 
 	/*
 		When we edit the Step Text, We need UpdateLabelSize()
@@ -375,3 +379,7 @@ class StepsTreeView from TreeControl
 			C_ENV_DEFAULT_STYLE = C_ENV_STYLE_SIMPLEBLACK or
 			C_ENV_DEFAULT_STYLE = C_ENV_STYLE_BLUE or
 			C_ENV_DEFAULT_STYLE = C_ENV_STYLE_BLUE2 )
+
+
+	func GoalDesigner
+		return GetWindowByID(nGoalDesignerWindowID)
