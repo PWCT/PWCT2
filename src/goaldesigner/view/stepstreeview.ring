@@ -164,7 +164,8 @@ class StepsTreeView from TreeControl
 				aLabels + []
 				for item in aItems {
 					oLabel = GetItemLabel(item)
-					aLabels[len(aLabels)] + [oLabel.text(),oLabel.StyleSheet()]
+					nStepID = GetIDByObj(item)
+					aLabels[len(aLabels)] + [oLabel.text(),oLabel.StyleSheet(),nStepID]
 				}
 			}
 
