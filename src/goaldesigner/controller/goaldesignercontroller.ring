@@ -651,7 +651,7 @@ class GoalDesignerController from WindowsControllerParent
 	*/
 
 	func IgnoreStepAction	
-		if not IsCommentOrRoot() {
+		if not IsRoot() {
 			# "Can't Comment/Uncomment Sub Step!"
 			ShowMessage(T_GD_BM_SORRY,T_GD_BM_CANTCOMMENT)
 			return
@@ -1385,6 +1385,23 @@ class GoalDesignerController from WindowsControllerParent
 			return True
 		}
 		return False
+
+	/*
+		Purpose : Check if the Step Type is Root
+		Parameters : None
+		Output : True/False
+	*/
+
+	func IsRoot
+		oItem  = oView.oStepsTree.currentItem()
+		nStepID = oView.oStepsTree.GetIDByObj(oItem)
+		nStepType = oModel.GetStepType(nStepID)
+		if nStepType = C_STEPTYPE_ROOT 	{
+			return True
+		}
+		return False
+
+
 
 	/*
 		Purpose : Check is comment or root
