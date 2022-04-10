@@ -165,7 +165,8 @@ class StepsTreeView from TreeControl
 				for item in aItems {
 					oLabel = GetItemLabel(item)
 					nStepID = GetIDByObj(item)
-					aLabels[len(aLabels)] + [oLabel.text(),oLabel.StyleSheet(),nStepID]
+					nStepType = GoalDesigner().oModel.GetStepType(nStepID)
+					aLabels[len(aLabels)] + [oLabel.text(),oLabel.StyleSheet(),nStepType]
 				}
 			}
 
@@ -186,7 +187,7 @@ class StepsTreeView from TreeControl
 					setStyleSheet(aLabel[C_NODELABEL_STYLESHEET])					
 				}
 				setLabelFont(oLabel2)
-				NewLabelStyle(oLabel2,[])
+				NewLabelStyle(oLabel2,[:StepType = aLabel[C_NODELABEL_STEPTYPE]])
 				setItemWidget(oItem,0,oLabel2)
 			}
 			/*
@@ -246,7 +247,7 @@ class StepsTreeView from TreeControl
 				oLabel = GetItemLabel(item)
 				SetLabelFont(oLabel)
 				# Set the style to support the Block style 
-					NewLabelStyle(oLabel,[])
+					NewLabelStyle(oLabel,[:id = GetIDByObj(item)])
 			}
 
 	func IgnoreStep oItem,nIgnore
@@ -262,7 +263,7 @@ class StepsTreeView from TreeControl
 						cImage = C_COMMENTMARK
 					}
 					oLabel.SetText(cImage+cText)
-					NewLabelStyle(oLabel,[])
+					NewLabelStyle(oLabel,[:id = GetIDByObj(item)])
 				else 
 					cText = item.text(0)
 					if left(cText,C_COMMENTMARKSIZE) != C_COMMENTMARK {
@@ -278,7 +279,7 @@ class StepsTreeView from TreeControl
 					cText = PrepareNodeText(cText)
 					cImage = this.NodeImage(C_LABELIMAGE_NODEICON)
 					oLabel.SetText(cImage+cText)
-					NewLabelStyle(oLabel,[])
+					NewLabelStyle(oLabel,[:id = GetIDByObj(item)])
 				else 
 					cText = item.text(0)
 					if left(cText,C_COMMENTMARKSIZE) = C_COMMENTMARK {
@@ -346,10 +347,13 @@ class StepsTreeView from TreeControl
 			return 
 		}
 		if aPara[:id] != NULL {
-			if GoalDesigner().oModel.GetStepType(aPara[:id]) = C_STEPTYPE_COMMENT {
+			aPara[:StepType] = GoalDesigner().oModel.GetStepType(aPara[:id])
+		}
+		if  aPara[:StepType] != NULL {		
+			if  aPara[:StepType] = C_STEPTYPE_COMMENT {
 				return
 			}
-		}		
+		}
 		oLabel.setmaximumwidth(10000)
 		cStyle = oLabel.stylesheet()
 		if lLabelStyleGradient {

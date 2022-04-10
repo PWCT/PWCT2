@@ -516,9 +516,11 @@ class GoalDesignerController from WindowsControllerParent
 		}
 		# Save the History for undo operations 
 			saveHistory()
-		oModel.CutStep(nStepID)
 		oView.oStepsTree.SaveStep(oItem)
 		oItem.parent().takechild(oItem.parent().indexofchild(oItem))
+		# We update the Model *after* the StepsTree View 
+		# Because SaveStep need the StepType from the Model   
+			oModel.CutStep(nStepID)
 		# Update the Time Machine
 			UpdateTheTimeMachine()
 		lSaveFlag = True
@@ -1124,7 +1126,7 @@ class GoalDesignerController from WindowsControllerParent
 							`<span style="background-color:`+cBackColor+
 							`"><font color="`+cColor+`">`+cText+
 							`</font></span>`)				
-						NewLabelStyle(oLabel,[:id = nID])
+						NewLabelStyle(oLabel,[:StepType = nStepType])
 					}
 					if nInsertIndex = -1 {
 						oParent.addchild(oItem)

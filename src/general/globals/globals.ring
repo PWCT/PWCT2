@@ -29,6 +29,7 @@
 # Label Control Data
 	C_NODELABEL_TEXT 			= 1
 	C_NODELABEL_STYLESHEET 			= 2
+	C_NODELABEL_STEPTYPE		= 3
 
 # Node Label Image
 	C_LABELIMAGE_NODEICON			= AppFile("images/nodeicon.png")
