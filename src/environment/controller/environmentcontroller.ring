@@ -665,12 +665,12 @@ class EnvironmentController from WindowsControllerParent
 				show()
 			}
 		else 
-			ShowMessage(cTitle,cMessage)
+			MsgInfo(cTitle,cMessage)
 		}
 
 	func AboutAction
 		MsgBox(T_ABOUT_TITLE,	# "About"
-		T_ABOUT_DEVELOPER)	# "2021, Mahmoud Fayed <msfclipper@yahoo.com>" 
+		T_ABOUT_DEVELOPER)	# "2022, PWCT Software
 
 
 	/*
@@ -1098,7 +1098,7 @@ class EnvironmentController from WindowsControllerParent
 		}
 
 	func OpenFormDesigner	
-		cFormFileName = PWCT_FOLDER + "/src/formdesigner/formdesigner.ring"
+		cFormFileName = exefolder() + "../tools/formdesigner/formdesigner.ring"
 		RunTool(cFormFileName)
 
 	func RunTool cFileName
@@ -1118,11 +1118,11 @@ class EnvironmentController from WindowsControllerParent
 		ok
 
 	func REPLConsole
-		cAppFileName = PWCT_FOLDER + "/ringrepl/repl.ring"
+		cAppFileName = exefolder() + "../tools/ringrepl/ringrepl.ring"
 		RunToolConsole(cAppFileName)
 
 	func REPLGUI
-		cAppFileName = PWCT_FOLDER + "/ringrepl/replw.ring"
+		cAppFileName = exefolder() + "../tools/ringrepl/ringreplw.ring"
 		# RunTool will split parameters using "," as separator 
 		cAppFileName += ",1"	# Style Fusion White
 		RunTool(cAppFileName)
