@@ -282,7 +282,9 @@
 # About 
 
 	T_ABOUT_TITLE = "About"
-	T_ABOUT_DEVELOPER = "2022, Mahmoud Fayed <msfclipper@yahoo.com>"
+	T_ABOUT_DEVELOPER = "Programming Without Coding Technology (PWCT)" + nl +
+						"Version: 2.0" + nl +
+						"2022, PWCT Software"
 
 # GUI Library 
 
