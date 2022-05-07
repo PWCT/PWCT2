@@ -56,7 +56,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'PWCT'
-copyright = u'2022, Mahmoud Samir Fayed'
+copyright = u'2022, PWCT Software'
 author = u'PWCT Team'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -119,8 +119,8 @@ todo_include_todos = True
 # a list of builtin themes.
 # html_theme = 'classic' 
 
-#html_theme = "classic"
-html_theme = "sphinx_rtd_theme"
+html_theme = "classic"
+#html_theme = "sphinx_rtd_theme"
 
 html_logo = "images/logo/pwctdoclogo.jpg"
 
@@ -249,7 +249,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
   (master_doc, 'PWCT.tex', u'PWCT Documentation',
-   u'Mahmoud Samir Fayed', 'manual'),
+   u'PWCT Software', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
