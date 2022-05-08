@@ -38,6 +38,10 @@ class EnvironmentView from WindowsViewParent
 
 	lShowLanguageMenu = False
 
+	lShowDistributeMenu = False
+	lShowWebOptions = False
+
+
 	# Create the window and the Controls 
 		win = new qMainWindow()
 		{
@@ -116,7 +120,9 @@ class EnvironmentView from WindowsViewParent
 			subProgram 	= addmenu(T_ENV_MENU_PROGRAM) 		# "Program"
 			if not PWCTIsMobile(:ToolsDistributeMenu) {
 				subTools 	= addmenu(T_ENV_MENU_TOOLS)		# "Tools"
-				subDistribute   = addmenu(T_ENV_MENU_DISTRIBUTE) 	# "Distribute"
+				if this.lShowDistributeMenu {
+					subDistribute   = addmenu(T_ENV_MENU_DISTRIBUTE) 	# "Distribute"
+				}
 			}
 			subHelp 	= addmenu(T_ENV_MENU_HELP) # "Help"
 			subFile { 
@@ -504,6 +510,7 @@ class EnvironmentView from WindowsViewParent
 						setclickevent(Method(:RunGUIAction))
 					}
 					addaction(oAction)	
+					if this.lShowWebOptions {
 					oAction = new qAction(win) {
 						setShortcut(new QKeySequence("Ctrl+F6"))
 						setbtnimage(self,AppFile("images/web.png"))
@@ -511,6 +518,7 @@ class EnvironmentView from WindowsViewParent
 						setclickEvent(Method(:RunInBrowser))
 					}
 					addaction(oAction)
+					}
 					addseparator()
 					oAction = new qAction(win) {
 						setShortcut(new QKeySequence("Ctrl+Shift+M"))
@@ -540,6 +548,7 @@ class EnvironmentView from WindowsViewParent
 						setclickEvent(Method(:RunGUIMainFile))
 					}
 					addaction(oAction)
+					if this.lShowWebOptions {
 					oAction = new qAction(win) {
 						setShortcut(new QKeySequence("Ctrl+Shift+F6"))
 						setbtnimage(self,AppFile("images/web.png"))
@@ -547,6 +556,7 @@ class EnvironmentView from WindowsViewParent
 						setclickEvent(Method(:RunInBrowserMainFile))
 					}
 					addaction(oAction)
+					}
 
 				}
 			}
@@ -588,6 +598,7 @@ class EnvironmentView from WindowsViewParent
 						addaction(oAction)
 					}
 				}
+				if this.lShowDistributeMenu {
 				subDistribute {
 					oAction = new qAction(win) {
 						settext(T_ENV_MENU_DIST_RING2EXE1) # "Generate Ring Object File (*.ringo)"
@@ -639,7 +650,7 @@ class EnvironmentView from WindowsViewParent
 						setclickEvent(Method("Distribute(8)"))
 					}
 					addaction(oAction)
-
+				}
 				}
 			}
 			subHelp { 
@@ -811,11 +822,11 @@ class EnvironmentView from WindowsViewParent
 						setclickevent(Method(:RunGUIAction))
 						settooltip(T_ENV_MENU_RUNNOCONSOLE) # "Run GUI Application (No Console)"
 					} ,
-					new qtoolbutton(win) {
-						setbtnimage(self,AppFile("images/web.png"))
-						setclickEvent(Method(:RunInBrowser))
-						settooltip("Run Web Application - Open In Browser (Ctrl+F6)")
-					} ,
+					//new qtoolbutton(win) {
+					//	setbtnimage(self,AppFile("images/web.png"))
+					//	setclickEvent(Method(:RunInBrowser))
+					//	settooltip("Run Web Application - Open In Browser (Ctrl+F6)")
+					//} ,
 					new qToolbutton(win) { 
 						setbtnimage(self,AppFile("images/close.png"))
 						setclickevent(Method(:CloseAction))
@@ -859,11 +870,11 @@ class EnvironmentView from WindowsViewParent
 						setclickevent(Method(:RunGUIAction))
 						settooltip(T_ENV_MENU_RUNNOCONSOLE) # "Run GUI Application (No Console)"
 					} ,
-					new qtoolbutton(win) {
-						setbtnimage(self,AppFile("images/web.png"))
-						setclickEvent(Method(:RunInBrowser))
-						settooltip("Run Web Application - Open In Browser (Ctrl+F6)")
-					} ,
+					//new qtoolbutton(win) {
+					//	setbtnimage(self,AppFile("images/web.png"))
+					//	setclickEvent(Method(:RunInBrowser))
+					//	settooltip("Run Web Application - Open In Browser (Ctrl+F6)")
+					//} ,
 					new qToolbutton(win) { 
 						setbtnimage(self,AppFile("images/close.png"))
 						setclickevent(Method(:CloseAction))
@@ -945,13 +956,13 @@ class EnvironmentView from WindowsViewParent
 						AddWidget(oBtnDebugMainFile)
 						AddWidget(oBtnRunMainFile)
 					}
-					oBtnRunWebMainFile = new qtoolbutton(this.win) {
-							setbtnimage(self,AppFile("images/web.png"))
-							setclickEvent(Method(:RunInBrowserMainFile))
-							settooltip(T_ENV_MENU_MAINFILERUNWEB) # "Main File : Run Web Application - Open In Browser (Ctrl+Shift+F6)"
-					} 
+					//oBtnRunWebMainFile = new qtoolbutton(this.win) {
+					//		setbtnimage(self,AppFile("images/web.png"))
+					//		setclickEvent(Method(:RunInBrowserMainFile))
+					//		settooltip(T_ENV_MENU_MAINFILERUNWEB) # "Main File : Run Web Application - Open In Browser (Ctrl+Shift+F6)"
+					//} 
 					AddWidget(oBtnRunGUIMainFile)
-					AddWidget(oBtnRunWebMainFile)
+					//AddWidget(oBtnRunWebMainFile)
 				else 
 					AddWidget(oBtnRunGUIMainFile)
 				}
