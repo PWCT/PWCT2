@@ -979,7 +979,7 @@ class EnvironmentView from WindowsViewParent
 			setactivatedevent(Method(:ChangeFileClickAction))
 			oDir = new QDir()					
 			this.ofile = new QFileSystemModel() {
-				setrootpath(oDir.currentpath())				
+				setrootpath(oDir.currentpath())		
 				myfiles = new qstringlist()
 				myfiles.append("*.pwct")
 				myfiles.append("*.rform")
@@ -997,6 +997,10 @@ class EnvironmentView from WindowsViewParent
 				setrootindex(myindex2)
 			}
 			setexpanded(myindex,true)
+			if isWindows() {
+				myindex2 = this.ofile.index(oDir.currentpath()+"/applications",0)
+				setrootindex(myindex2)
+			}
 			header().hide()			
 		}
 		
