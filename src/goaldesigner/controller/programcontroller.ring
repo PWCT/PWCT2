@@ -13,7 +13,7 @@ Class ProgramController
 
 	if isWindows() {
 		cDebugBatch = CurrentDir() + "\batch\run.bat"
-		cRunBatch = CurrentDir() + "\batch\run2.bat"
+		cRunBatch = CurrentDir() + "\batch\run2.bat" 
 	else 
 		cDebugBatch = CurrentDir() + "/batch/run.sh"
 		cRunBatch = CurrentDir() + "/batch/run2.sh"
@@ -272,12 +272,19 @@ Class ProgramController
 		func RunBatch cFile
 			cFileToRun = FileNameEncoding(cFileName)
 			if iswindows() {
-				cCode = 'start ' +
-					cFile+' "' + cFileToRun + '"' + nl
+				cDir = currentdir()
+				chdir(exefolder())
+				if ! fexists(cFileToRun) {
+					cFileToRun = cDir+"\"+cFileToRun
+				}
+				cCode = 'call "' +
+					cFile + '" "' + cFileToRun + '"' + nl
+				system(cCode)
+				chdir(cDir)
 			else
 				cCode = 'cd $(dirname "'+cFileToRun+'") ; ' + ' ring "' + cFileToRun + '"'  + nl
+				system(cCode)
 			}			
-			system(cCode)
 
 		func isBatchFile cFile 
 			if right(lower(trim(cFile)),4) = ".bat" or 
