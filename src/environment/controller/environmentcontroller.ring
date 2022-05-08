@@ -1111,7 +1111,7 @@ class EnvironmentController from WindowsControllerParent
 
 	func RunToolConsole cFileName
 		if iswindows()
-			System('start '+exefolder()+'ring "' + cFileName + '"' + nl)
+			System('call "'+exefolder()+'ring" "' + cFileName + '"' + nl)
 		else
 			cCode = 'cd $(dirname "'+cFileName+'") ; ' + ' ring "' + cFileName + '"' + nl
 			system(cCode)
