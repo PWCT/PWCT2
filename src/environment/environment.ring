@@ -44,12 +44,12 @@ func EnvironmentWindow
 func DisplaySplashScreen oApp
 		if ! PWCTIsMobile(:SplashScreen) {
 			# Load the Image File
-				oPixMap = new qPixMap(AppFile("images/pwctlogo.jpg"))
+				oPixMap = new qPixMap(AppFile("images/oldpwctlogo.jpg"))
 			# Create the Splash Screen Object
 				oSplash = new qSplashScreen(oPixMap)
 				oSplash.Show()
-			# Wait for one second
-				sleep(1)
+			# Wait for some time
+				sleep(1.5)
 			# Close the Splash Screen
 				oSplash.Close()
 				oPixMap.delete()		

@@ -6,7 +6,7 @@
 */
 
 load "guilib.ring"
-load "stdlib.ring"
+load "stdlibcore.ring"
 
 oSystemLog = new SystemLog 
 

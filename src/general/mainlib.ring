@@ -5,7 +5,7 @@
 ** 	Author : Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-load "stdlib.ring"
+load "stdlibcore.ring"
 
 if isMainSourceFile() {
 	mylist = [ 1,2,3,"four","five",[ :six = 6 , :seven = 7],8,:nine,:ten]

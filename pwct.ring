@@ -6,4 +6,5 @@
 */
 
 # Load the Main Source Code File from the Source Folder
+	load "lightguilib.ring"
 	load "src/main.ring"
