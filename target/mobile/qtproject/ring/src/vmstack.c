@@ -81,21 +81,14 @@ void ring_vm_loadaddress ( VM *pVM )
     if ( pVM->nVarScope == RING_VARSCOPE_GLOBAL ) {
         /* Replace LoadAddress with PUSHP for better performance */
         RING_VM_IR_OPCODE = ICO_PUSHP ;
-        ring_item_setpointer_gc(pVM->pRingState,RING_VM_IR_ITEM(1),RING_VM_STACK_READP);
+        RING_VM_IR_SETREG1TOPOINTERFROMSTACK ;
     }
     else if ( pVM->nVarScope == RING_VARSCOPE_LOCAL ) {
         if ( pVM->lUsePushPLocal ) {
             /* Replace LoadAddress with PUSHPLOCAL for better performance */
             RING_VM_IR_OPCODE = ICO_PUSHPLOCAL ;
-            ring_vm_newbytecodeitem(pVM,3);
-            ring_vm_newbytecodeitem(pVM,4);
-            ring_item_setpointer_gc(pVM->pRingState,RING_VM_IR_ITEM(3),RING_VM_STACK_READP);
-            ring_item_setint_gc(pVM->pRingState,RING_VM_IR_ITEM(4),ring_list_getint(pVM->aScopeID,ring_list_getsize(pVM->aScopeID)));
-            #if RING_SHOWICFINAL
-                RING_VM_IR_PARACOUNT = RING_VM_IR_PARACOUNT + 2 ;
-                ring_list_addpointer_gc(pVM->pRingState,RING_VM_IR_LIST,RING_VM_STACK_READP);
-                ring_list_addint_gc(pVM->pRingState,RING_VM_IR_LIST,ring_list_getint(pVM->aScopeID,ring_list_getsize(pVM->aScopeID)));
-            #endif
+            RING_VM_IR_ITEMSETPOINTER(RING_VM_IR_ITEMATINS(RING_VM_PC_PREVINS,1),RING_VM_STACK_READP);
+            RING_VM_IR_ITEMSETINT(RING_VM_IR_ITEMATINS(RING_VM_PC_PREVINS,2),ring_list_getint(pVM->aScopeID,ring_list_getsize(pVM->aScopeID)));
         }
     }
     /* Save Scope in nLoadAddressScope */
@@ -224,7 +217,7 @@ void ring_vm_inc ( VM *pVM )
     if ( ( ring_list_getsize(pVM->pMem) == 1 )  && (pVM->pActiveMem == ring_vm_getglobalscope(pVM)) ) {
         /* Replace ICO_INC with IncP for better performance */
         RING_VM_IR_OPCODE = ICO_INCP ;
-        ring_item_setpointer_gc(pVM->pRingState,RING_VM_IR_ITEM(1),RING_VM_STACK_READP);
+        RING_VM_IR_SETREG1TOPOINTERFROMSTACK ;
     }
     pVar = (List *) RING_VM_STACK_READP ;
     RING_VM_STACK_POP ;
@@ -239,14 +232,14 @@ void ring_vm_loadapushv ( VM *pVM )
     if ( pVM->nVarScope == RING_VARSCOPE_GLOBAL ) {
         /* Replace LoadAPushV with PUSHPV for better performance */
         RING_VM_IR_OPCODE = ICO_PUSHPV ;
-        ring_item_setpointer_gc(pVM->pRingState,RING_VM_IR_ITEM(1),RING_VM_STACK_READP);
+        RING_VM_IR_SETREG1TOPOINTERFROMSTACK ;
     }
     ring_vm_varpushv(pVM);
 }
 
 void ring_vm_newline ( VM *pVM )
 {
-    pVM->nLineNumber = RING_VM_IR_READI ;
+    RING_VM_IR_SETLINENUMBER(RING_VM_IR_READI);
     ring_vm_traceevent(pVM,RING_VM_TRACEEVENT_NEWLINE);
 }
 
@@ -618,4 +611,43 @@ void ring_vm_freeloadaddressscope ( VM *pVM )
 {
     /* Clear Load Address Scope Information */
     pVM->nLoadAddressScope = RING_VARSCOPE_NOTHING ;
+}
+
+void ring_vm_loadaddressfirst ( VM *pVM )
+{
+    pVM->nFirstAddress = 1 ;
+    ring_vm_loadaddress(pVM);
+    pVM->nFirstAddress = 0 ;
+}
+
+void ring_vm_printstack ( VM *pVM )
+{
+    int x,nSP  ;
+    printf( "\n*****************************************\n" ) ;
+    printf( "Stack Size %u \n",pVM->nSP ) ;
+    nSP = pVM->nSP ;
+    if ( nSP > 0 ) {
+        for ( x = 1 ; x <= nSP ; x++ ) {
+            /* Print Values */
+            if ( RING_VM_STACK_ISSTRING ) {
+                printf( "(String) : %s  \n",RING_VM_STACK_READC ) ;
+            }
+            else if ( RING_VM_STACK_ISNUMBER ) {
+                printf( "(Number) : %f  \n",RING_VM_STACK_READN ) ;
+            }
+            else if ( RING_VM_STACK_ISPOINTER ) {
+                printf( "(Pointer) : %p  \n",RING_VM_STACK_READP ) ;
+                if ( RING_VM_STACK_OBJTYPE == RING_OBJTYPE_VARIABLE ) {
+                    printf( "(Pointer Type) : Variable \n" ) ;
+                    ring_list_print2((List *) RING_VM_STACK_READP,pVM->nDecimals);
+                }
+                else if ( RING_VM_STACK_OBJTYPE ==RING_OBJTYPE_LISTITEM ) {
+                    printf( "(Pointer Type) : ListItem \n" ) ;
+                    ring_item_print((Item *) RING_VM_STACK_READP);
+                }
+            }
+            RING_VM_STACK_POP ;
+            printf( "\n*****************************************\n" ) ;
+        }
+    }
 }

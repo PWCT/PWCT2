@@ -13,7 +13,8 @@ void ring_objfile_writefile ( RingState *pRingState )
     sprintf( cFileName , "%so" , ring_list_getstring(pRingState->pRingFilesList,1) ) ;
     fObj = fopen(cFileName , "w+b" );
     fprintf( fObj , "# Ring Object File\n"  ) ;
-    fprintf( fObj , "# Version 1.1\n"  ) ;
+    fprintf( fObj , RING_OBJFILE_VERSION  ) ;
+    fprintf( fObj , "\n"  ) ;
     /* Write Functions Lists */
     fprintf( fObj , "# Functions List\n"  ) ;
     ring_objfile_writelist(pRingState->pRingFunctionsMap,fObj);
@@ -183,9 +184,9 @@ int ring_objfile_processfile ( RingState *pRingState,char *cFileName,List *pList
         return 0 ;
     }
     c = getc(fObj);
-    fread( cFileType , 1 , 13 , fObj );
-    cFileType[13] = '\0' ;
-    if ( strcmp(cFileType,"# Version 1.1") != 0 ) {
+    fread( cFileType , 1 , RING_OBJFILE_VERSIONSTRINGSIZE , fObj );
+    cFileType[RING_OBJFILE_VERSIONSTRINGSIZE] = '\0' ;
+    if ( strcmp(cFileType,RING_OBJFILE_VERSION) != 0 ) {
         printf( RING_OBJFILEWRONGVERSION ) ;
         return 0 ;
     }
@@ -359,9 +360,9 @@ int ring_objfile_processstring ( RingState *pRingState,char *cContent,List *pLis
         return 0 ;
     }
     c = ring_objfile_getc(pRingState,&cData);
-    ring_objfile_readc(pRingState,&cData,cFileType,13);
-    cFileType[13] = '\0' ;
-    if ( strcmp(cFileType,"# Version 1.1") != 0 ) {
+    ring_objfile_readc(pRingState,&cData,cFileType,RING_OBJFILE_VERSIONSTRINGSIZE);
+    cFileType[RING_OBJFILE_VERSIONSTRINGSIZE] = '\0' ;
+    if ( strcmp(cFileType,RING_OBJFILE_VERSION) != 0 ) {
         printf( RING_OBJFILEWRONGVERSION ) ;
         return 0 ;
     }

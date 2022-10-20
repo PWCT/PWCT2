@@ -132,7 +132,9 @@
         ICO_ENDGLOBALSCOPE ,
         ICO_SETGLOBALSCOPE ,
         /* Temp Lists */
-        ICO_FREETEMPLISTS 
+        ICO_FREETEMPLISTS ,
+        /* Extra Para */
+        ICO_EXTRAPARA 
     } IC_OPERATIONS ;
     /* Operations Text (Array) */
     static const char * RING_IC_OP[] = {"NewLine","FileName","Print","Class","Func","Dup","New","Give","Private","NewLabel", 
@@ -153,7 +155,9 @@
     
     "BITAND","BITOR","BITNOT","BITXOR","BITSHL","BITSHR","StepNumber","POPStep","LoadAFirst", 
     
-    "INCPJUMPSTEP1","JUMPVARPLENUMSTEP1","ANONYMOUS","CallClassInit","NewGlobalScope","EndGlobalScope","SetGlobalScope","FreeTempLists"} ;
+    "INCPJUMPSTEP1","JUMPVARPLENUMSTEP1","ANONYMOUS","CallClassInit", 
+    
+    "NewGlobalScope","EndGlobalScope","SetGlobalScope","FreeTempLists","ExtraPara"} ;
     /* Macro */
     #define RING_PARSER_ICG_GOTOLASTOP pParser->ActiveGenCodeList = ring_list_getlist(pParser->GenCode,ring_list_getsize(pParser->GenCode))
     #define ring_parser_icg_newlabel(x) ( ring_list_getsize(x->GenCode) + 1 )
@@ -164,6 +168,10 @@
     #define RING_PARSER_ICG_OPERATIONCODE 1
     #define ring_parser_icg_getoperationbeforelastoperation(pParser) ring_list_getint(ring_parser_icg_getoperationlist(pParser,ring_parser_icg_instructionscount(pParser)-1),RING_PARSER_ICG_OPERATIONCODE)
     #define ring_parser_icg_getoperationatpos(pParser,x) ring_list_getint(ring_parser_icg_getoperationlist(pParser,x),RING_PARSER_ICG_OPERATIONCODE)
+    #define ring_parser_icg_getoperandint(pParser,x) ring_list_getint(pParser->ActiveGenCodeList,x)
+    #define ring_parser_icg_getoperanddouble(pParser,x) ring_list_getdouble(pParser->ActiveGenCodeList,x)
+    #define RING_PARSER_ICG_PARENTCLASSPOS 4
+    #define RING_PARSER_ICG_INSTRUCTIONSLISTTYPE List
     /*
     **  Functions 
     **  Generate Intermediate Code 
@@ -172,6 +180,8 @@
     void ring_parser_icg_newoperation ( Parser *pParser , IC_OPERATIONS opcode ) ;
 
     void ring_parser_icg_newoperand ( Parser *pParser , const char *cStr ) ;
+
+    void ring_parser_icg_addtooperand ( Parser *pParser , const char *cStr ) ;
 
     void ring_parser_icg_newoperandint ( Parser *pParser , int nValue ) ;
 
@@ -189,8 +199,6 @@
 
     void ring_parser_icg_showoutput ( List *pListGenCode,int nStatus ) ;
 
-    Items * ring_parser_icg_getoperationpos ( Parser *pParser ) ;
-
     void ring_parser_icg_deletelastoperation ( Parser *pParser ) ;
 
     void ring_parser_icg_duplicate ( Parser *pParser,int nStart,int nEnd ) ;
@@ -198,4 +206,25 @@
     int ring_parser_icg_newlabel2 ( Parser *pParser ) ;
 
     void ring_parser_icg_insertoperation ( Parser *pParser , int nPos , IC_OPERATIONS opcode ) ;
+
+    void ring_parser_icg_setopcode ( Parser *pParser ,List *pList , int nValue ) ;
+
+    void ring_parser_icg_deleteoperand ( Parser *pParser , int nPos ) ;
+    /* Specific Instructions */
+
+    void ring_parser_icg_loadfunction ( Parser *pParser,const char *cFunctionName ) ;
+
+    void ring_parser_icg_loadaddress ( Parser *pParser,const char *cVariableName ) ;
+
+    void ring_parser_icg_loadaddressassignmentpos ( Parser *pParser,List *pLoadAPos,int nPos ) ;
+
+    void ring_parser_icg_loadaddresstoloadfunction ( Parser *pParser ) ;
+
+    void ring_parser_icg_freestack ( Parser *pParser ) ;
+
+    void ring_parser_icg_newline ( Parser *pParser,int nLine ) ;
+
+    char * ring_parser_icg_parentclassname ( Parser *pParser ) ;
+
+    char * ring_parser_icg_newpackagename ( Parser *pParser,List *pPos ) ;
 #endif

@@ -24,8 +24,8 @@ RING_API List * ring_list_new2_gc ( void *pState,List *pList,int nSize )
         for ( x = 2 ; x <= nSize ; x++ ) {
             pItems = ring_items_new_gc(pState);
             if ( pItems == NULL ) {
-                printf( "OUT OF MEMORY \n  " ) ;
-                exit(0);
+                printf( RING_OOM ) ;
+                exit(1);
             }
             pItemsLast->pNext = pItems ;
             pItems->pPrev = pItemsLast ;
@@ -445,6 +445,19 @@ RING_API void ring_list_addpointer_gc ( void *pState,List *pList,void *pValue )
     assert(pList != NULL);
     ring_list_newitem_gc(pState,pList);
     ring_list_setpointer_gc(pState,pList,ring_list_getsize(pList),pValue);
+}
+
+RING_API void ring_list_addringpointer_gc ( void *pState,List *pList,void *pValue )
+{
+    List *pPointerList  ;
+    Item *pItem  ;
+    assert(pList != NULL);
+    pPointerList = ring_list_newlist_gc(pState,pList);
+    ring_list_addpointer_gc(pState,pPointerList,pValue);
+    ring_list_addstring_gc(pState,pPointerList,"RingPointer");
+    ring_list_addint_gc(pState,pPointerList,RING_CPOINTERSTATUS_NOTASSIGNED);
+    pItem = ring_list_getitem(pPointerList,RING_CPOINTER_POINTER);
+    ring_vm_gc_setfreefunc(pItem,ring_state_free);
 }
 /* double */
 
@@ -1154,6 +1167,11 @@ RING_API void ring_list_setpointer ( List *pList, int index ,void *pValue )
 RING_API void ring_list_addpointer ( List *pList,void *pValue )
 {
     ring_list_addpointer_gc(NULL,pList,pValue);
+}
+
+RING_API void ring_list_addringpointer ( List *pList,void *pValue )
+{
+    ring_list_addringpointer_gc(NULL,pList,pValue);
 }
 /* Function Pointers */
 
