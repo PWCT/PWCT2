@@ -844,6 +844,7 @@ class EnvironmentController from WindowsControllerParent
 		}
 
 		if isWebAssembly() {
+			setStyle(C_ENV_STYLE_WHITEB)
 			oView.oDockFilesManager.hide()
 		}
 
