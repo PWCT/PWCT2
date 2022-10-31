@@ -9,12 +9,10 @@ VM * ring_vm_new ( RingState *pRingState )
 {
     VM *pVM  ;
     int x  ;
-    ring_state_log(pRingState,"function: ring_vm_new - start");
     pVM = (VM *) ring_state_malloc(pRingState,sizeof(VM));
     /* Ring State */
     pVM->pRingState = pRingState ;
     pRingState->pVM = pVM ;
-    ring_state_log(pRingState,"function: ring_vm_new - after malloc()");
     pVM->nPC = 1 ;
     pVM->pCode = NULL ;
     pVM->pFunctionsMap = NULL ;
@@ -27,7 +25,6 @@ VM * ring_vm_new ( RingState *pRingState )
     /* Information to test the lifetime of the local scope */
     pVM->nScopeID = 0 ;
     pVM->aScopeID = ring_list_new_gc(pVM->pRingState,0);
-    ring_state_log(pRingState,"function: ring_vm_new - after setting aScopeID");
     ring_vm_newscope(pVM);
     for ( x = 0 ; x < RING_VM_STACK_SIZE ; x++ ) {
         pVM->aStack[x].nType = ITEMTYPE_NOTHING ;
@@ -39,14 +36,11 @@ VM * ring_vm_new ( RingState *pRingState )
     **  Class Region (After the Class Name) 
     */
     pVM->nInClassRegion = 0 ;
-    ring_state_log(pRingState,"function: ring_vm_new - after class region flag");
     /* Add Variables */
     ring_vm_addglobalvariables(pVM);
-    ring_state_log(pRingState,"function: ring_vm_new - after global variables");
     /* Lists */
     pVM->nListStart = 0 ;
     pVM->pNestedLists = ring_list_new_gc(pVM->pRingState,0);
-    ring_state_log(pRingState,"function: ring_vm_new - after nested lists");
     /* Support for nested Load Instructions */
     pVM->nBlockFlag = 0 ;
     pVM->aPCBlockFlag = ring_list_new_gc(pVM->pRingState,0);
@@ -62,7 +56,6 @@ VM * ring_vm_new ( RingState *pRingState )
     /* Support for Exit/Loop Commands inside For/While loops. */
     pVM->pExitMark = ring_list_new_gc(pVM->pRingState,0);
     pVM->pLoopMark = ring_list_new_gc(pVM->pRingState,0);
-    ring_state_log(pRingState,"function: ring_vm_new - after exit/loop marks");
     /* Try-Catch-Done */
     pVM->pTry = ring_list_new_gc(pVM->pRingState,0);
     /* Saving scope when creating new objects and calling class init method */
@@ -84,7 +77,6 @@ VM * ring_vm_new ( RingState *pRingState )
     /* Set the main File Name */
     pVM->cFileName = ring_list_getstring(pVM->pRingState->pRingFilesList,1) ;
     pVM->cPrevFileName = ring_list_getstring(pVM->pRingState->pRingFilesList,1) ;
-    ring_state_log(pRingState,"function: ring_vm_new - after setting the main file");
     /* We keep information about active package to access its classes directly with new/from */
     pVM->aActivePackage = ring_list_new_gc(pVM->pRingState,0);
     /* Scope of class attribute ( 0 = public 1 = private ) */
@@ -180,7 +172,6 @@ VM * ring_vm_new ( RingState *pRingState )
     pVM->lTraceActive = 0 ;
     pVM->nTraceEvent = 0 ;
     pVM->pTraceData = ring_list_new_gc(pVM->pRingState,0) ;
-    ring_state_log(pRingState,"function: ring_vm_new - after trace attributes");
     /* Eval In Scope function is Active : ringvm_evalinscope() */
     pVM->nEvalInScope = 0 ;
     /* Pass error in ring_vm_error() from ringvm_passerror() */
@@ -209,7 +200,6 @@ VM * ring_vm_new ( RingState *pRingState )
     pVM->lAddSubListsByFastCopy = 0 ;
     /* A Flag that the Exit command is used to terminate the (For-In) Loop */
     pVM->lExitFlag = 0 ;
-    ring_state_log(pRingState,"function: ring_vm_new - end");
     return pVM ;
 }
 
@@ -270,15 +260,12 @@ void ring_vm_start ( RingState *pRingState,VM *pVM )
     pVM->pFunctionsMap = pRingState->pRingFunctionsMap ;
     pVM->pClassesMap = pRingState->pRingClassesMap ;
     pVM->pPackagesMap = pRingState->pRingPackagesMap ;
-    ring_state_log(pRingState,"function: ring_vm_start");
+    ring_vm_defragmentation(pRingState,pVM);
     ring_vm_loadcode(pVM);
-    ring_state_log(pRingState,"function: ring_vm_start - after loading code");
     ring_vm_loadcfunctions(pRingState);
-    ring_state_log(pRingState,"function: ring_vm_start - after loading c functions");
     /* Generate Items Array &  Hash Table */
     ring_list_genarray(pRingState->pRingCFunctions);
     ring_list_genhashtable2(pRingState->pRingCFunctions);
-    ring_state_log(pRingState,"function: ring_vm_start - after generating hash tables");
     if ( RING_VM_INSTRUCTIONSCOUNT > 0 ) {
         pVM->nPC = 1 ;
         ring_vm_mainloop(pVM);
@@ -319,13 +306,41 @@ void ring_vm_init ( RingState *pRingState )
     }
     return ;
 }
+
+void ring_vm_defragmentation ( RingState *pRingState,VM *pVM )
+{
+    List *pRingFilesList  ;
+    /* Create Lists */
+    pVM->pFunctionsMap = ring_list_new(0) ;
+    pVM->pClassesMap = ring_list_new(0) ;
+    pVM->pPackagesMap = ring_list_new(0) ;
+    pRingFilesList = ring_list_new(0) ;
+    /* Copy Lists */
+    ring_list_copy(pVM->pFunctionsMap,pRingState->pRingFunctionsMap);
+    ring_list_copy(pVM->pClassesMap,pRingState->pRingClassesMap);
+    ring_list_copy(pVM->pPackagesMap,pRingState->pRingPackagesMap);
+    ring_list_copy(pRingFilesList,pRingState->pRingFilesList);
+    ring_list_delete_gc(pRingState,pRingState->pRingFunctionsMap);
+    ring_list_delete_gc(pRingState,pRingState->pRingClassesMap);
+    ring_list_delete_gc(pRingState,pRingState->pRingPackagesMap);
+    ring_list_delete_gc(pRingState,pRingState->pRingFilesList);
+    pRingState->pRingFunctionsMap = pVM->pFunctionsMap ;
+    pRingState->pRingClassesMap = pVM->pClassesMap ;
+    pRingState->pRingPackagesMap = pVM->pPackagesMap ;
+    pRingState->pRingFilesList = pRingFilesList ;
+    /* Update Pointers */
+    ring_objfile_updateclassespointers(pRingState);
+    /* Set the main File Name */
+    pVM->cFileName = ring_list_getstring(pVM->pRingState->pRingFilesList,1) ;
+    pVM->cPrevFileName = ring_list_getstring(pVM->pRingState->pRingFilesList,1) ;
+}
 /* ByteCode Functions */
 
 RING_API void ring_vm_loadcode ( VM *pVM )
 {
     int x,nSize  ;
     /*
-    **  We may allocation double of the size that we need to avoid reallocation when we use eval() 
+    **  We may allocate larger than the size that we need to avoid reallocation when we use eval() 
     **  eval() will check if there is a need to reallocation or not 
     **  This optimization increase the performance of applications that uses eval() 
     */
@@ -519,23 +534,17 @@ void ring_vm_showbytecode ( VM *pVM )
 void ring_vm_mainloop ( VM *pVM )
 {
     pVM->pRingState->lStartPoolManager = 1 ;
-    #if RING_VMSHOWOPCODE
-        /* Preprocessor Allows showing the OPCODE */
-        if ( pVM->pRingState->nPrintInstruction ) {
-            do {
-                ring_vm_fetch2(pVM);
-            } while (pVM->nPC <= RING_VM_INSTRUCTIONSCOUNT)  ;
-        }
-        else {
-            do {
-                ring_vm_fetch(pVM);
-            } while (pVM->nPC <= RING_VM_INSTRUCTIONSCOUNT)  ;
-        }
-    #else
+    /* Allows showing the OPCODE */
+    if ( pVM->pRingState->nPrintInstruction ) {
+        do {
+            ring_vm_fetch2(pVM);
+        } while (pVM->nPC <= RING_VM_INSTRUCTIONSCOUNT)  ;
+    }
+    else {
         do {
             ring_vm_fetch(pVM);
         } while (pVM->nPC <= RING_VM_INSTRUCTIONSCOUNT)  ;
-    #endif
+    }
 }
 
 void ring_vm_fetch ( VM *pVM )
@@ -553,28 +562,24 @@ void ring_vm_fetch2 ( VM *pVM )
 {
     pVM->pByteCodeIR = pVM->pByteCode + pVM->nPC - 1 ;
     pVM->nOPCode = RING_VM_IR_OPCODE ;
-    #if RING_VMSHOWOPCODE
-        if ( pVM->pRingState->nPrintInstruction ) {
-            ring_general_printline();
-            printf( "VM Pointer    : %p  " , (void *) pVM ) ;
-            printf( "\nVM IR Pointer : %p  " , (void *) pVM->pByteCodeIR ) ;
-            printf( "\nOperation     : %s  " , RING_IC_OP[pVM->nOPCode] ) ;
-            printf( "\nPC            : %d  " ,pVM->nPC ) ;
-            printf( "\nScopes Count  : %d  " ,ring_list_getsize(pVM->pMem) ) ;
-            printf( "\nScope Pointer : %p  " ,pVM->pActiveMem ) ;
-            printf( "\nFile Name     : %s \nLine Number   : %d\n" ,pVM->cFileName,RING_VM_IR_GETLINENUMBER ) ;
-            if ( (pVM->nOPCode == ICO_PUSHC) || (pVM->nOPCode == ICO_LOADADDRESS) || (pVM->nOPCode == ICO_LOADFUNC) ) {
-                printf( "Data          : %s \n",RING_VM_IR_READC ) ;
-            }
+    if ( pVM->pRingState->nPrintInstruction ) {
+        ring_general_printline();
+        printf( "VM Pointer    : %p  " , (void *) pVM ) ;
+        printf( "\nVM IR Pointer : %p  " , (void *) pVM->pByteCodeIR ) ;
+        printf( "\nOperation     : %s  " , RING_IC_OP[pVM->nOPCode] ) ;
+        printf( "\nPC            : %d  " ,pVM->nPC ) ;
+        printf( "\nScopes Count  : %d  " ,ring_list_getsize(pVM->pMem) ) ;
+        printf( "\nScope Pointer : %p  " ,pVM->pActiveMem ) ;
+        printf( "\nFile Name     : %s \nLine Number   : %d\n" ,pVM->cFileName,RING_VM_IR_GETLINENUMBER ) ;
+        if ( (pVM->nOPCode == ICO_PUSHC) || (pVM->nOPCode == ICO_LOADADDRESS) || (pVM->nOPCode == ICO_LOADFUNC) ) {
+            printf( "Data          : %s \n",RING_VM_IR_READC ) ;
         }
-    #endif
+    }
     pVM->nPC++ ;
     ring_vm_execute(pVM);
-    #if RING_VMSHOWOPCODE
-        if ( pVM->pRingState->nPrintInstruction ) {
-            printf( "\nSP (After)    : %d  \nFuncSP        : %d \nLineNumber    : %d \n" , (int) pVM->nSP,pVM->nFuncSP,RING_VM_IR_GETLINENUMBER ) ;
-        }
-    #endif
+    if ( pVM->pRingState->nPrintInstruction ) {
+        printf( "\nSP (After)    : %d  \nFuncSP        : %d \nLineNumber    : %d \n" , (int) pVM->nSP,pVM->nFuncSP,RING_VM_IR_GETLINENUMBER ) ;
+    }
     if ( pVM->nSP > RING_VM_STACK_CHECKOVERFLOW ) {
         ring_vm_error(pVM,RING_VM_ERROR_STACKOVERFLOW);
     }
@@ -679,6 +684,9 @@ void ring_vm_execute ( VM *pVM )
             break ;
         case ICO_MINUSMINUS :
             ring_vm_minusminus(pVM);
+            break ;
+        case ICO_POW :
+            ring_vm_pow(pVM);
             break ;
         /* Logic */
         case ICO_AND :

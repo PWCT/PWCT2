@@ -1,7 +1,7 @@
 /*
 **  Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> 
-**  pClassesMap ( cClass Name ,  iPC , cParentClass, aMethodsList , nFlagIsParentClassInformation 
-**  pClassesMap ( cClass Name, Pointer to List that represent class inside a Package, Pointer to File 
+**  pClassesMap ( cClass Name ,  iPC , cParentClass, aMethodsList , nFlagIsParentClassInformation, PointerToPackage ) 
+**  pClassesMap ( cClass Name, Pointer to List that represent class inside a Package, Pointer to File ) 
 **  pFunctionsMap ( Name, PC, FileName, Private Flag ) 
 **  Packages List ( Package Name , Classes List ) 
 **  Object ( is a list of two items , (1) Class Pointer  (2) Object Data  ) 
@@ -241,19 +241,7 @@ void ring_vm_oop_setscope ( VM *pVM )
 
 int ring_vm_oop_isobject ( List *pList )
 {
-    if ( pList == NULL ) {
-        return 0 ;
-    }
-    if ( ring_list_getsize(pList) != 2 ) {
-        return 0 ;
-    }
-    if ( ring_list_ispointer(pList,1) == 0 ) {
-        return 0 ;
-    }
-    if ( ring_list_islist(pList,2) == 0 ) {
-        return 0 ;
-    }
-    return 1 ;
+    return ring_list_isobject(pList) ;
 }
 
 List * ring_vm_oop_getobj ( VM *pVM )
@@ -458,35 +446,7 @@ void ring_vm_oop_aftercallmethod ( VM *pVM )
 
 void ring_vm_oop_printobj ( VM *pVM,List *pList )
 {
-    List *pList2,*pList3  ;
-    int x  ;
-    char cStr[100]  ;
-    pList = ring_list_getlist(pList,2);
-    for ( x = 3 ; x <= ring_list_getsize(pList) ; x++ ) {
-        pList2 = ring_list_getlist(pList,x);
-        printf( "%s: " , ring_list_getstring(pList2,1) ) ;
-        if ( ring_list_isstring(pList2,3) ) {
-            printf( "%s\n" , ring_list_getstring(pList2,3) ) ;
-        }
-        else if ( ring_list_isnumber(pList2,3) ) {
-            if ( pVM != NULL ) {
-                ring_vm_numtostring(pVM,ring_list_getdouble(pList2,3),cStr);
-                printf( "%s\n" ,cStr ) ;
-            }
-            else {
-                printf( "%f\n" , ring_list_getdouble(pList2,3) ) ;
-            }
-        }
-        else if ( ring_list_islist(pList2,3) ) {
-            pList3 = ring_list_getlist(pList2,3) ;
-            if ( ring_vm_oop_isobject(pList3) ) {
-                printf( "Object...\n" ) ;
-            }
-            else {
-                printf( "[This Attribute Contains A List]\n" ) ;
-            }
-        }
-    }
+    ring_list_printobj(pList,pVM->nDecimals);
 }
 
 void ring_vm_oop_setbraceobj ( VM *pVM,List *pList )
