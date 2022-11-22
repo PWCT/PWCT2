@@ -316,10 +316,14 @@ void ring_vm_call2 ( VM *pVM )
             }
         }
         /*
-        **  We don't need to move the list to the previous scope 
-        **  Because RING_API_RETLIST() will do this for us 
-        **  Return (Delete Scope, Restore ActiveMem) 
+        **  We move the list to the previous scope 
+        **  Because we may have nested functions calls like refcount( list(nSize) ) 
+        **  Move returned List to the previous scope 
         */
+        if ( RING_VM_STACK_ISPOINTER ) {
+            ring_vm_movetoprevscope(pVM);
+        }
+        /* Return (Delete Scope, Restore ActiveMem) */
         ring_list_deleteitem_gc(pVM->pRingState,pVM->pFuncCallList,ring_list_getsize(pVM->pFuncCallList));
         ring_vm_deletescope(pVM);
         /* Restore ActiveMem */
@@ -565,10 +569,20 @@ void ring_vm_movetoprevscope ( VM *pVM )
     ring_list_setlist_gc(pVM->pRingState,pList3,RING_VAR_VALUE);
     pList2 = ring_list_getlist(pList3,RING_VAR_VALUE);
     /* Copy the list */
-    ring_vm_list_copy(pVM,pList2,pList);
-    /* Update self object pointer */
-    if ( ring_vm_oop_isobject(pList2) ) {
-        ring_vm_oop_updateselfpointer(pVM,pList2,RING_OBJTYPE_VARIABLE,pList3);
+    if ( ring_list_isreference(pList) ) {
+        ring_list_setlistbyref_gc(pVM->pRingState,pList3,RING_VAR_VALUE,pList);
+    }
+    else {
+        if ( pList->lCopyByRef ) {
+            ring_list_swaptwolists(pList2,pList);
+        }
+        else {
+            ring_vm_list_copy(pVM,pList2,pList);
+            /* Update self object pointer */
+            if ( ring_vm_oop_isobject(pList2) ) {
+                ring_vm_oop_updateselfpointer(pVM,pList2,RING_OBJTYPE_VARIABLE,pList3);
+            }
+        }
     }
     RING_VM_STACK_SETPVALUE(pList3);
     RING_VM_STACK_OBJTYPE = RING_OBJTYPE_VARIABLE ;
@@ -578,20 +592,13 @@ void ring_vm_createtemplist ( VM *pVM )
 {
     List *pList, *pList2  ;
     int x,lFound  ;
-    /* Get the Parent List */
-    if ( ring_list_getsize(pVM->pFuncCallList) > 0 ) {
-        /*
-        **  Create the list in the TempMem related to the function 
-        **  The advantage of TempMem over Scope is that TempMem out of search domain (Var Name is not important) 
-        **  Variable name in TemMem is not important, we use it for storage (no search) 
-        */
-        pList = ring_list_getlist(pVM->pFuncCallList,ring_list_getsize(pVM->pFuncCallList));
-        pList = ring_list_getlist(pList,RING_FUNCCL_TEMPMEM);
-    }
-    else {
-        /* We will create the list in the General Temp. Memory */
-        pList = pVM->pTempMem ;
-    }
+    /*
+    **  Get the Parent List 
+    **  Create the list in the TempMem related to the function 
+    **  The advantage of TempMem over Scope is that TempMem out of search domain (Var Name is not important) 
+    **  Variable name in TemMem is not important, we use it for storage (no search) 
+    */
+    pList = ring_vm_prevtempmem(pVM) ;
     /*
     **  Don't allow more than one temp. list per VM instruction 
     **  This avoid a memory leak when using code like this:  while true if [] ok end 
@@ -682,8 +689,9 @@ List * ring_vm_prevtempmem ( VM *pVM )
 void ring_vm_freetemplists ( VM *pVM )
 {
     List *pTempMem  ;
-    int x,nStart  ;
+    int x,nStart,lMutex  ;
     nStart = 1 ;
+    lMutex = 0 ;
     /* Check that we are not in the class region */
     if ( pVM->nInClassRegion ) {
         /*
@@ -697,14 +705,19 @@ void ring_vm_freetemplists ( VM *pVM )
     if ( ring_list_getsize(pVM->pFuncCallList) > 0 ) {
         pTempMem = ring_list_getlist(pVM->pFuncCallList,ring_list_getsize(pVM->pFuncCallList)) ;
         pTempMem = ring_list_getlist(pTempMem,RING_FUNCCL_TEMPMEM) ;
-        if ( (RING_VM_IR_READI == 0) || (RING_VM_IR_READIVALUE(2) !=pVM->nActiveScopeID) ) {
-            RING_VM_IR_READI = ring_list_getsize(pTempMem) + 1 ;
-            RING_VM_IR_READIVALUE(2) = pVM->nActiveScopeID ;
-        }
-        nStart = RING_VM_IR_READI ;
     }
     else {
-        return ;
+        lMutex = 1 ;
+        pTempMem = pVM->pTempMem ;
+    }
+    if ( (RING_VM_IR_READI == 0) || (RING_VM_IR_READIVALUE(2) !=pVM->nActiveScopeID) ) {
+        RING_VM_IR_READI = ring_list_getsize(pTempMem) + 1 ;
+        RING_VM_IR_READIVALUE(2) = pVM->nActiveScopeID ;
+    }
+    nStart = RING_VM_IR_READI ;
+    /* Lock (Important for Threads Support) */
+    if ( lMutex ) {
+        ring_vm_mutexlock(pVM);
     }
     /* Delete Temp. Lists created during the function call */
     if ( nStart == 1 ) {
@@ -721,6 +734,10 @@ void ring_vm_freetemplists ( VM *pVM )
         for ( x = nStart ; x <= ring_list_getsize(pTempMem) ; x++ ) {
             ring_list_deleteitem_gc(pVM->pRingState,pTempMem,nStart);
         }
+    }
+    /* Unlock (If we are using Threads) */
+    if ( lMutex ) {
+        ring_vm_mutexunlock(pVM);
     }
 }
 

@@ -48,7 +48,7 @@
 
     RING_API void ring_vm_api_retcpointer2 ( void *pPointer,void *pGeneral,const char *cType, void (* pFreeFunc)(void *,void *) ) ;
 
-    RING_API void ring_vm_api_retlist2 ( void *pPointer,List *pList,int lRef ) ;
+    RING_API void ring_vm_api_retlist2 ( void *pPointer,List *pList,int nRef ) ;
 
     RING_API void ring_vm_api_intvalue ( void *pPointer,const char  *cStr ) ;
 
@@ -95,6 +95,7 @@
     #define RING_API_GETCPOINTER2POINTER(x,y) (ring_vm_api_getcpointer2pointer((VM *) pPointer,x,y))
     #define RING_API_RETMANAGEDCPOINTER(x,y,z) (ring_vm_api_retcpointer2((VM *) pPointer,(void *) x,y,z))
     #define RING_API_RETLISTBYREF(x) ring_vm_api_retlist2((VM *) pPointer,x,1)
+    #define RING_API_RETNEWREF(x) ring_vm_api_retlist2((VM *) pPointer,x,2)
     #define ring_vm_funcregister(x,y) ring_vm_funcregister2(pRingState,x,y)
     #define RING_API_REGISTER(x,y) ring_vm_funcregister2(pRingState,x,y)
     #define RING_API_MALLOC(x) ring_state_malloc(((VM *) pPointer)->pRingState,x)

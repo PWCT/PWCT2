@@ -102,16 +102,42 @@ void ring_vm_listitem ( VM *pVM )
             RING_VM_STACK_POP ;
             pList2 = ring_list_getlist(pList2,RING_VAR_VALUE);
             pList3 = ring_list_newlist_gc(pVM->pRingState,pList);
-            ring_vm_list_copy(pVM,pList4,pList2);
-            ring_list_swaptwolists(pList3,pList4);
+            if ( ring_list_isreference(pList2) ) {
+                /* Copy by ref (pList2 to pList3) */
+                if ( pList2->lNewRef ) {
+                    pList2->lNewRef = 0 ;
+                    ring_list_acceptlistbyref_gc(pVM->pRingState,pList,ring_list_getsize(pList),pList2);
+                }
+                else {
+                    ring_list_setlistbyref_gc(pVM->pRingState,pList,ring_list_getsize(pList),pList2);
+                }
+            }
+            else {
+                ring_vm_list_copy(pVM,pList4,pList2);
+                ring_list_swaptwolists(pList3,pList4);
+            }
         }
         else if ( RING_VM_STACK_OBJTYPE == RING_OBJTYPE_LISTITEM ) {
             pItem = (Item *) RING_VM_STACK_READP ;
             RING_VM_STACK_POP ;
             pList2 = ring_item_getlist(pItem);
             pList3 = ring_list_newlist_gc(pVM->pRingState,pList);
-            ring_vm_list_copy(pVM,pList4,pList2);
-            ring_list_swaptwolists(pList3,pList4);
+            if ( ring_list_isreference(pList2) ) {
+                /* Copy by ref (pList2 to pList3) */
+                pItem = ring_list_getitem(pList,ring_list_getsize(pList));
+                ring_state_free(pVM->pRingState,pList3);
+                pItem->data.pList = pList2 ;
+                if ( pList2->lNewRef ) {
+                    pList2->lNewRef = 0 ;
+                }
+                else {
+                    ring_list_updaterefcount_gc(pVM->pRingState,pList2,RING_LISTREF_INC);
+                }
+            }
+            else {
+                ring_vm_list_copy(pVM,pList4,pList2);
+                ring_list_swaptwolists(pList3,pList4);
+            }
         }
         ring_list_delete_gc(pVM->pRingState,pList4);
     }
@@ -377,19 +403,31 @@ void ring_vm_listassignment ( VM *pVM )
         ring_item_settype_gc(pVM->pRingState,pItem,ITEMTYPE_LIST);
         pList = ring_item_getlist(pItem);
         ring_list_deleteallitems_gc(pVM->pRingState,pList);
-        if ( pVar->lCopyByRef ) {
-            pVar->lCopyByRef = 0 ;
-            ring_list_swaptwolists(pList,pVar);
+        if ( ring_list_isreference(pVar) ) {
+            ring_state_free(pVM->pRingState,pList);
+            pItem->data.pList = pVar ;
+            if ( pVar->lNewRef ) {
+                pVar->lNewRef = 0 ;
+            }
+            else {
+                ring_list_updaterefcount_gc(pVM->pRingState,pVar,RING_LISTREF_INC);
+            }
         }
         else {
-            pTempList = ring_list_new_gc(pVM->pRingState,0);
-            ring_vm_list_copy(pVM,pTempList,pVar);
-            ring_list_swaptwolists(pList,pTempList);
+            if ( pVar->lCopyByRef ) {
+                pVar->lCopyByRef = 0 ;
+                ring_list_swaptwolists(pList,pVar);
+            }
+            else {
+                pTempList = ring_list_new_gc(pVM->pRingState,0);
+                ring_vm_list_copy(pVM,pTempList,pVar);
+                ring_list_swaptwolists(pList,pTempList);
+                ring_list_delete_gc(pVM->pRingState,pTempList);
+            }
             /* Update self object Pointer */
             if ( ring_vm_oop_isobject(pList) ) {
                 ring_vm_oop_updateselfpointer(pVM,pList,RING_OBJTYPE_LISTITEM,pItem);
             }
-            ring_list_delete_gc(pVM->pRingState,pTempList);
         }
     }
     else {

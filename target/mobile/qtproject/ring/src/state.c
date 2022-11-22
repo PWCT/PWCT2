@@ -188,8 +188,14 @@ RING_API void ring_state_main ( int argc, char *argv[] )
             }
             else {
                 if ( nSRC == 0 ) {
-                    ring_general_printline();
-                    printf( "WARNING: Unrecognized option: %s\n",argv[x] ) ;
+                    if ( ring_general_fexists(argv[x]) ) {
+                        cStr = argv[x] ;
+                        nSRC = 1 ;
+                    }
+                    else {
+                        ring_general_printline();
+                        printf( "WARNING: Unrecognized option: %s\n",argv[x] ) ;
+                    }
                 }
             }
         }
@@ -253,11 +259,11 @@ RING_API void ring_state_execute ( char *cFileName, int nISCGI,int nRun,int nPri
     pRingState->nWarning = nWarn ;
     pRingState->argc = argc ;
     pRingState->argv = argv ;
-    if ( ring_general_issourcefile(cFileName) ) {
-        ring_state_runfile(pRingState,cFileName);
+    if ( ring_general_isobjectfile(cFileName) ) {
+        ring_state_runobjectfile(pRingState,cFileName);
     }
     else {
-        ring_state_runobjectfile(pRingState,cFileName);
+        ring_state_runfile(pRingState,cFileName);
     }
     ring_state_delete(pRingState);
 }
@@ -270,7 +276,7 @@ RING_API int ring_state_runfile ( RingState *pRingState,char *cFileName )
     Scanner *pScanner  ;
     VM *pVM  ;
     int nCont,nRunVM,nFreeFilesList = 0 ;
-    char cStartup[30]  ;
+    char cStartup[32]  ;
     int x,nSize  ;
     char cFileName2[200]  ;
     char cCurrentDir[RING_PATHSIZE]  ;
@@ -322,17 +328,24 @@ RING_API int ring_state_runfile ( RingState *pRingState,char *cFileName )
         pScanner->pRingState->lStartup = 1 ;
         strcpy(cStartup,"Load 'startup.ring'");
         /* Load "startup.ring" */
-        for ( x = 0 ; x < 19 ; x++ ) {
+        for ( x = 0 ; x < strlen(cStartup) ; x++ ) {
             ring_scanner_readchar(pScanner,cStartup[x]);
         }
-        /*
-        **  Add new line 
-        **  We add this here instead of using \n in load 'startup.ring' 
-        **  To avoid increasing the line number of the code 
-        **  so the first line in the source code file still the first line (not second line) 
-        */
-        ring_string_setfromint_gc(pRingState,pScanner->ActiveToken,0);
+        /* Set the line number */
+        ring_string_setfromint_gc(pRingState,pScanner->ActiveToken,1);
         ring_scanner_addtoken(pScanner,SCANNER_TOKEN_ENDLINE);
+        pScanner->LinesCount = 1 ;
+    }
+    /* Check Syntax File */
+    if ( ring_general_fexists("ringsyntax.ring") ) {
+        strcpy(cStartup,"LOADSYNTAX \"ringsyntax.ring\" \n");
+        /* Load "ringsyntax.ring" */
+        for ( x = 0 ; x < strlen(cStartup) ; x++ ) {
+            ring_scanner_readchar(pScanner,cStartup[x]);
+        }
+        ring_string_setfromint_gc(pRingState,pScanner->ActiveToken,1);
+        ring_scanner_addtoken(pScanner,SCANNER_TOKEN_ENDLINE);
+        pScanner->LinesCount = 1 ;
     }
     nSize = 1 ;
     while ( (c != EOF) && (nSize != 0) ) {

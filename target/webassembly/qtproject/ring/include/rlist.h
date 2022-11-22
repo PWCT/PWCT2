@@ -12,11 +12,18 @@
         struct HashTable *pHashTable  ;
         struct Item *pItemBlock  ;
         struct Items *pItemsBlock  ;
-        unsigned char lCopyByRef  ;
+        void *pContainer  ;
+        short int nReferenceCount  ;
+        unsigned int lDeleteContainerVariable: 1  ;
+        unsigned int lDontDelete: 1  ;
+        unsigned int lNewRef: 1  ;
+        unsigned int lCopyByRef: 1  ;
     } List ;
     /* Constants */
     #define RING_LISTOFOBJS_FINDSTRING 1
     #define RING_LISTOFOBJS_FINDNUMBER 0
+    #define RING_LISTREF_INC 1
+    #define RING_LISTREF_DEC -1
     /* Macro */
     #define ring_list_isdouble(pList,index) ( ring_list_getitem(pList,index)->NumberFlag == ITEM_NUMBERFLAG_DOUBLE)
     #define ring_list_isint(pList,index) ( ring_list_getitem(pList,index)->NumberFlag == ITEM_NUMBERFLAG_INT )
@@ -257,4 +264,13 @@
     RING_API int ring_list_iscpointerlist ( List *pList ) ;
 
     RING_API int ring_list_cpointercmp ( List *pList,List *pList2 ) ;
+    /* References */
+
+    RING_API void ring_list_acceptlistbyref_gc ( void *pState,List *pList, int index,List *pRef ) ;
+
+    RING_API void ring_list_setlistbyref_gc ( void *pState,List *pList, int index,List *pRef ) ;
+
+    RING_API void ring_list_updaterefcount_gc ( void *pState,List *pList, int nChange ) ;
+
+    RING_API int ring_list_isreference ( List *pList ) ;
 #endif
