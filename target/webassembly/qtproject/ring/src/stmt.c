@@ -1,4 +1,4 @@
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2023 Mahmoud Fayed <msfclipper@yahoo.com> */
 #include "ring.h"
 /* Grammar */
 
@@ -599,7 +599,6 @@ int ring_parser_stmt ( Parser *pParser )
                 nMark1 = ring_parser_icg_newlabel(pParser);
                 ring_parser_icg_newoperation(pParser,ICO_LOADAPUSHV);
                 ring_parser_icg_newoperand(pParser,cStr);
-                ring_parser_icg_loadfunction(pParser,"len");
                 nStart = ring_parser_icg_instructionslistsize(pParser) + 1 ;
                 ring_parser_nexttoken(pParser);
                 RING_PARSER_IGNORENEWLINE ;
@@ -620,7 +619,7 @@ int ring_parser_stmt ( Parser *pParser )
                             }
                             break ;
                     }
-                    ring_parser_icg_newoperation(pParser,ICO_CALL);
+                    ring_parser_icg_newoperation(pParser,ICO_LEN);
                     /* Generate 0 For Operator OverLoading */
                     ring_parser_icg_newoperandint(pParser,0);
                     ring_parser_icg_newoperation(pParser,ICO_JUMPFOR);
@@ -935,14 +934,24 @@ int ring_parser_stmt ( Parser *pParser )
                 ring_parser_icg_newoperation(pParser,ICO_RETURN);
             }
             else {
-                ring_parser_icg_newoperation(pParser,ICO_RETNULL);
+                /*
+                **  Generate Code 
+                **  Note: We don't use ICO_RETNULL in explicit return commands 
+                **  Because Ring VM - Eval() Replace ICO_RETURN with ICO_RETFROMEVAL 
+                **  Return NULL 
+                */
+                ring_parser_icg_newoperation(pParser,ICO_PUSHC);
+                ring_parser_icg_newoperand(pParser,"");
+                ring_parser_icg_newoperation(pParser,ICO_RETURN);
             }
         } else {
             /*
             **  Generate Code 
             **  Return NULL 
             */
-            ring_parser_icg_newoperation(pParser,ICO_RETNULL);
+            ring_parser_icg_newoperation(pParser,ICO_PUSHC);
+            ring_parser_icg_newoperand(pParser,"");
+            ring_parser_icg_newoperation(pParser,ICO_RETURN);
         }
         if ( x == 1 ) {
             RING_STATE_CHECKPRINTRULES 

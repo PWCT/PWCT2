@@ -1,5 +1,5 @@
 /*
-**  Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> 
+**  Copyright (c) 2013-2023 Mahmoud Fayed <msfclipper@yahoo.com> 
 **  Remember, When we read from the stack LIFO 
 **  If we have two parameters, we read the second parameter first 
 */
@@ -172,10 +172,6 @@ void ring_vm_div ( VM *pVM )
     if ( RING_VM_STACK_ISNUMBER ) {
         nNum1 = RING_VM_STACK_READN ;
         RING_VM_STACK_POP ;
-        if ( nNum1 == 0 ) {
-            ring_vm_error(pVM,RING_VM_ERROR_DIVIDEBYZERO);
-            return ;
-        }
         if ( RING_VM_STACK_ISNUMBER ) {
             nNum2 = RING_VM_STACK_READN ;
         }
@@ -206,6 +202,11 @@ void ring_vm_div ( VM *pVM )
     }
     else if ( RING_VM_STACK_ISPOINTER ) {
         ring_vm_expr_ppoo(pVM,"/");
+        return ;
+    }
+    /* Check Divide by Zero */
+    if ( nNum1 == 0 ) {
+        ring_vm_error(pVM,RING_VM_ERROR_DIVIDEBYZERO);
         return ;
     }
     /* Check Overflow */
@@ -1079,7 +1080,7 @@ void ring_vm_expr_ppoo ( VM *pVM,const char *cStr )
     List *pList,*pList2  ;
     Item *pItem  ;
     void *pPointer  ;
-    int nType  ;
+    int nType, lCompare  ;
     if ( RING_VM_STACK_OBJTYPE == RING_OBJTYPE_VARIABLE ) {
         pList = (List *) RING_VM_STACK_READP ;
         pList = ring_list_getlist(pList,RING_VAR_VALUE);
@@ -1115,14 +1116,50 @@ void ring_vm_expr_ppoo ( VM *pVM,const char *cStr )
                 return ;
             }
         }
-        else if ( strcmp(cStr,"=") == 0 ) {
+        else if ( ( strcmp(cStr,"=") == 0 ) || (strcmp(cStr,"!=") == 0) ) {
             if ( ring_vm_api_iscpointerlist(pList) && ring_vm_api_iscpointerlist(pList2) ) {
                 RING_VM_STACK_POP ;
                 if ( ring_vm_api_cpointercmp(pList,pList2) ) {
-                    RING_VM_STACK_PUSHNVALUE(1.0) ;
+                    if ( strcmp(cStr,"=") == 0 ) {
+                        RING_VM_STACK_PUSHNVALUE(1.0) ;
+                    }
+                    else {
+                        RING_VM_STACK_PUSHNVALUE(0) ;
+                    }
                 }
                 else {
-                    RING_VM_STACK_PUSHNVALUE(0) ;
+                    if ( strcmp(cStr,"=") == 0 ) {
+                        RING_VM_STACK_PUSHNVALUE(0) ;
+                    }
+                    else {
+                        RING_VM_STACK_PUSHNVALUE(1.0) ;
+                    }
+                }
+                return ;
+            }
+            lCompare = 1 ;
+            if ( ring_vm_oop_isobject(pList2) == 1 ) {
+                if ( ring_vm_oop_ismethod(pVM,pList2,"operator") ) {
+                    lCompare = 0 ;
+                }
+            }
+            if ( lCompare ) {
+                RING_VM_STACK_POP ;
+                if ( pList == pList2 ) {
+                    if ( strcmp(cStr,"=") == 0 ) {
+                        RING_VM_STACK_PUSHNVALUE(1.0) ;
+                    }
+                    else {
+                        RING_VM_STACK_PUSHNVALUE(0) ;
+                    }
+                }
+                else {
+                    if ( strcmp(cStr,"=") == 0 ) {
+                        RING_VM_STACK_PUSHNVALUE(0) ;
+                    }
+                    else {
+                        RING_VM_STACK_PUSHNVALUE(1.0) ;
+                    }
                 }
                 return ;
             }
@@ -1250,6 +1287,7 @@ void ring_vm_addlisttolist ( VM *pVM,List *pList,List *pList2 )
 {
     List *pList3, *pList4  ;
     List TempList  ;
+    Item *pItem  ;
     /* Check Optimization Flags */
     if ( pVM->lAddSubListsByMove ) {
         pList3 = ring_list_newlist_gc(pVM->pRingState,pList2);
@@ -1265,7 +1303,14 @@ void ring_vm_addlisttolist ( VM *pVM,List *pList,List *pList2 )
     **  Here we are going to copy the list pList to the list pList2 
     **  We will copy to a temp list first (pList4) 
     **  So we can add the Self object for example to an attribute in this object 
+    **  Check if we have a Reference 
     */
+    if ( ring_list_isref(pList) ) {
+        ring_list_insertlist(pList2,ring_list_getsize(pList2));
+        pItem = ring_list_getitem(pList2,ring_list_getsize(pList2)) ;
+        ring_list_assignreftoitem_gc(pVM->pRingState,pList,pItem);
+        return ;
+    }
     pList4 = ring_list_new_gc(pVM->pRingState,0);
     ring_vm_list_copy(pVM,pList4,pList);
     pList3 = ring_list_newlist_gc(pVM->pRingState,pList2);

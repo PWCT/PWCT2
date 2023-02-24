@@ -1,4 +1,4 @@
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2023 Mahmoud Fayed <msfclipper@yahoo.com> */
 #include "ring.h"
 /* Save/Restore State - Used by Try/Catch/Done & Loop/Exit */
 
@@ -58,11 +58,14 @@ void ring_vm_savestate ( VM *pVM,List *pList )
 
 void ring_vm_restorestate ( VM *pVM,List *pList,int nPos,int nFlag )
 {
-    List *pThis  ;
-    VMState *pVMState  ;
+    List *pThis,*pFuncList,*pNewObj  ;
+    VMState *pVMState, *pVMStateForFunc, *pVMStateForObj  ;
+    int x  ;
+    List *aListsToDelete, *pListPointer  ;
     pList = ring_list_getlist(pList,nPos);
     /* Using VMState */
     pVMState = (VMState *) ring_list_getpointer(pList,1);
+    aListsToDelete = ring_list_new_gc(pVM->pRingState,0);
     /*
     **  Set Scope 
     **  Delete Scopes using the correct function 
@@ -70,6 +73,7 @@ void ring_vm_restorestate ( VM *pVM,List *pList,int nPos,int nFlag )
     **  We also avoid doing this in the Class Region (After class name) 
     **  Because in the class region we don't use pVM->pMEM 
     */
+    pVM->nInClassRegion = pVMState->aNumbers[21] ;
     if ( ! pVM->nInClassRegion ) {
         /*
         **  In the loop condition we use pVMState->aPointers[2] instead of pVM->pActiveMem 
@@ -80,8 +84,6 @@ void ring_vm_restorestate ( VM *pVM,List *pList,int nPos,int nFlag )
         }
     }
     pVM->pActiveMem = (List *) pVMState->aPointers[2] ;
-    /* We also return to the function call list */
-    ring_vm_backstate(pVM,pVMState->aNumbers[1],pVM->pFuncCallList);
     /* Stack & Executing Functions */
     pVM->nFuncExecute = pVMState->aNumbers[2] ;
     pVM->nSP = pVMState->aNumbers[3] ;
@@ -94,15 +96,82 @@ void ring_vm_restorestate ( VM *pVM,List *pList,int nPos,int nFlag )
     pVM->cFileName = (char *) pVMState->aPointers[1] ;
     /* aPCBlockFlag, aScopeNewObj , aActivePackage & aScopeID */
     if ( ((List *) pVMState->aPointers[4]) != pVM->aPCBlockFlag ) {
-        pVM->aPCBlockFlag = ring_list_delete_gc(pVM->pRingState,pVM->aPCBlockFlag);
+        pListPointer = pVM->aPCBlockFlag ;
+        if ( ! ring_list_findpointer(aListsToDelete,pListPointer) ) {
+            ring_list_addpointer_gc(pVM->pRingState,aListsToDelete,pListPointer);
+        }
         pVM->aPCBlockFlag = (List *) pVMState->aPointers[4] ;
     }
     ring_vm_backstate(pVM,pVMState->aNumbers[7],pVM->aPCBlockFlag);
     pVM->nBlockFlag = pVMState->aNumbers[8] ;
-    ring_vm_backstate(pVM,pVMState->aNumbers[9],pVM->aScopeNewObj);
     ring_vm_backstate(pVM,pVMState->aNumbers[10],pVM->aActivePackage);
     ring_vm_backstate(pVM,pVMState->aNumbers[11],pVM->aScopeID);
     pVM->nActiveScopeID = pVMState->aNumbers[12] ;
+    /* We also return to the function call list */
+    if ( nFlag == RING_STATE_TRYCATCH ) {
+        /*
+        **  Since Try/Catch can terminate many function when error happens 
+        **  We need to clean memory and remove pNestedLists, aPCBlockFlag & aSetProperty 
+        **  Clean memory used for function calls 
+        */
+        for ( x = pVMState->aNumbers[1]+1 ; x <= ring_list_getsize(pVM->pFuncCallList) ; x++ ) {
+            pFuncList = ring_list_getlist(pVM->pFuncCallList,x) ;
+            /* Delete pNestedLists */
+            pListPointer = (List *) ring_list_getpointer(pFuncList,RING_FUNCCL_NESTEDLISTS) ;
+            if ( ! ring_list_findpointer(aListsToDelete,pListPointer) ) {
+                /* Remove protection from opened lists */
+                ring_vm_removelistprotection(pVM,pListPointer);
+                ring_list_addpointer_gc(pVM->pRingState,aListsToDelete,pListPointer);
+            }
+            if ( ring_list_getsize(pFuncList) >= RING_FUNCCL_STATE ) {
+                pFuncList = ring_list_getlist(pFuncList,RING_FUNCCL_STATE);
+                pVMStateForFunc = (VMState *) ring_list_getpointer(pFuncList,1);
+                /* Delete aPCBlockFlag */
+                pListPointer = (List *) pVMStateForFunc->aPointers[2] ;
+                if ( pListPointer != pVM->aPCBlockFlag ) {
+                    if ( ! ring_list_findpointer(aListsToDelete,pListPointer) ) {
+                        ring_list_addpointer_gc(pVM->pRingState,aListsToDelete,pListPointer);
+                    }
+                }
+                /* Delete aSetProperty */
+                pListPointer = (List *) pVMStateForFunc->aPointers[6] ;
+                if ( ! ring_list_findpointer(aListsToDelete,pListPointer) ) {
+                    ring_list_addpointer_gc(pVM->pRingState,aListsToDelete,pListPointer);
+                }
+            }
+        }
+        /*
+        **  Clean memory used for new objects (class region) 
+        **  If we have error in the class region while try catch is used outside it 
+        **  Then we clean the memory used by the new object 
+        **  Like pNestedLists, aPCBlocFlag & aSetProperty 
+        */
+        for ( x = pVMState->aNumbers[9]+1 ; x <= ring_list_getsize(pVM->aScopeNewObj) ; x++ ) {
+            pNewObj = ring_list_getlist(pVM->aScopeNewObj,x) ;
+            pVMStateForObj = (VMState *) ring_list_getpointer(pNewObj,1);
+            /* Delete pNestedLists */
+            pListPointer = (List *) pVMStateForObj->aPointers[1] ;
+            if ( ! ring_list_findpointer(aListsToDelete,pListPointer) ) {
+                /* Remove protection from opened lists */
+                ring_vm_removelistprotection(pVM,pListPointer);
+                ring_list_addpointer_gc(pVM->pRingState,aListsToDelete,pListPointer);
+            }
+            /* Delete aPCBlockFlag */
+            pListPointer = (List *) pVMStateForObj->aPointers[7] ;
+            if ( pListPointer != pVM->aPCBlockFlag ) {
+                if ( ! ring_list_findpointer(aListsToDelete,pListPointer) ) {
+                    ring_list_addpointer_gc(pVM->pRingState,aListsToDelete,pListPointer);
+                }
+            }
+            /* Delete aSetProperty */
+            pListPointer = (List *) pVMStateForObj->aPointers[8] ;
+            if ( ! ring_list_findpointer(aListsToDelete,pListPointer) ) {
+                ring_list_addpointer_gc(pVM->pRingState,aListsToDelete,pListPointer);
+            }
+        }
+    }
+    ring_vm_backstate(pVM,pVMState->aNumbers[9],pVM->aScopeNewObj);
+    ring_vm_backstate(pVM,pVMState->aNumbers[1],pVM->pFuncCallList);
     /* Loop/Exit Mark */
     if ( nFlag != RING_STATE_EXIT ) {
         ring_vm_backstate(pVM,pVMState->aNumbers[13],pVM->pExitMark);
@@ -116,14 +185,16 @@ void ring_vm_restorestate ( VM *pVM,List *pList,int nPos,int nFlag )
     }
     /* List Status */
     pVM->nListStart = pVMState->aNumbers[16] ;
-    if ( pVMState->aPointers[3] != pVM->pNestedLists ) {
-        pVM->pNestedLists = ring_list_delete_gc(pVM->pRingState,pVM->pNestedLists);
-        pVM->pNestedLists = (List *) pVMState->aPointers[3] ;
+    pListPointer = pVM->pNestedLists ;
+    if ( ! ring_list_findpointer(aListsToDelete,pListPointer) ) {
+        /* Remove protection from opened lists */
+        ring_vm_removelistprotection(pVM,pListPointer);
+        ring_list_addpointer_gc(pVM->pRingState,aListsToDelete,pListPointer);
     }
+    pVM->pNestedLists = ring_list_new_gc(pVM->pRingState,0);
     pVM->nInsideBraceFlag = pVMState->aNumbers[17] ;
     ring_vm_backstate(pVM,pVMState->aNumbers[19],pVM->aBeforeObjState);
     RING_VM_IR_SETLINENUMBER(pVMState->aNumbers[20]);
-    pVM->nInClassRegion = pVMState->aNumbers[21] ;
     pVM->nPrivateFlag = pVMState->aNumbers[22] ;
     pVM->nGetSetProperty = pVMState->aNumbers[23] ;
     pVM->pGetSetObject = (void *) pVMState->aPointers[5] ;
@@ -141,10 +212,16 @@ void ring_vm_restorestate ( VM *pVM,List *pList,int nPos,int nFlag )
     ring_list_setpointer_gc(pVM->pRingState,pThis,RING_VAR_VALUE,pVMState->aPointers[7]);
     ring_list_setint_gc(pVM->pRingState,pThis,RING_VAR_PVALUETYPE,pVMState->aNumbers[30]);
     ring_vm_backstate(pVM,pVMState->aNumbers[29],pVM->aAddressScope);
+    /* Process aListsToDelete */
+    for ( x = 1 ; x <= ring_list_getsize(aListsToDelete) ; x++ ) {
+        pListPointer = (List *) ring_list_getpointer(aListsToDelete, x);
+        ring_list_delete_gc(pVM->pRingState,pListPointer);
+    }
+    ring_list_delete_gc(pVM->pRingState,aListsToDelete);
 }
 /* Save/Restore State 2 - Used by Function Call & Return */
 
-void ring_vm_savestate2 ( VM *pVM,List *pList )
+void ring_vm_savestateforfunctions ( VM *pVM,List *pList )
 {
     List *pThis  ;
     VMState *pVMState  ;
@@ -186,6 +263,8 @@ void ring_vm_savestate2 ( VM *pVM,List *pList )
     pVMState->aPointers[3] = pVM->pAssignment ;
     pVMState->aPointers[4] = pVM->pGetSetObject ;
     pVMState->aPointers[5] = ring_list_getpointer(pThis,RING_VAR_VALUE) ;
+    pVMState->aPointers[6] = pVM->aSetProperty ;
+    pVM->aSetProperty = ring_list_new_gc(pVM->pRingState,0);
     /* Save State */
     pVM->nInsideBraceFlag = 0 ;
     /* Save BlockFlag */
@@ -208,7 +287,7 @@ void ring_vm_savestate2 ( VM *pVM,List *pList )
     pVM->lNoSetterMethod = 0 ;
 }
 
-void ring_vm_restorestate2 ( VM *pVM,List *pList,int x )
+void ring_vm_restorestateforfunctions ( VM *pVM,List *pList,int x )
 {
     List *pThis  ;
     VMState *pVMState  ;
@@ -254,10 +333,13 @@ void ring_vm_restorestate2 ( VM *pVM,List *pList,int x )
     ring_list_setpointer_gc(pVM->pRingState,pThis,RING_VAR_VALUE,pVMState->aPointers[5]);
     ring_list_setint_gc(pVM->pRingState,pThis,RING_VAR_PVALUETYPE,pVMState->aNumbers[22]);
     ring_vm_backstate(pVM,pVMState->aNumbers[21],pVM->aAddressScope);
+    /* Restore aSetProperty */
+    pVM->aSetProperty = ring_list_delete_gc(pVM->pRingState,pVM->aSetProperty);
+    pVM->aSetProperty = (List *)  pVMState->aPointers[6] ;
 }
 /* Save/Restore State 3 - Used by (ICO_NEWOBJ) and (ICO_SETSCOPE) */
 
-void ring_vm_savestate3 ( VM *pVM )
+void ring_vm_savestatefornewobjects ( VM *pVM )
 {
     List *pList, *pThis  ;
     VMState *pVMState  ;
@@ -321,10 +403,7 @@ void ring_vm_savestate3 ( VM *pVM )
     pVMState->aNumbers[15] = ring_list_getsize(pVM->pTry) ;
     /* Save aBraceObjects */
     pVMState->aNumbers[16] = ring_list_getsize(pVM->aBraceObjects) ;
-    /*
-    **  Note: We don't save pObjState 
-    **  Save aForStep 
-    */
+    /* Save aForStep */
     pVMState->aNumbers[17] = ring_list_getsize(pVM->aForStep) ;
     /* Save nActiveScopeID */
     pVMState->aNumbers[18] = pVM->nActiveScopeID ;
@@ -359,9 +438,14 @@ void ring_vm_savestate3 ( VM *pVM )
     pVMState->aNumbers[27] = ring_list_getsize(pVM->aBeforeObjState) ;
     /* Save pFuncClassList */
     pVMState->aNumbers[28] = ring_list_getsize(pVM->pFuncCallList) ;
+    /* Save aSetProperty */
+    pVMState->aPointers[8] = pVM->aSetProperty ;
+    pVM->aSetProperty = ring_list_new_gc(pVM->pRingState,0);
+    /* Save pObjState */
+    pVMState->aNumbers[29] = ring_list_getsize(pVM->pObjState) ;
 }
 
-void ring_vm_restorestate3 ( VM *pVM )
+void ring_vm_restorestatefornewobjects ( VM *pVM )
 {
     List *pList, *pThis  ;
     VMState *pVMState  ;
@@ -373,12 +457,16 @@ void ring_vm_restorestate3 ( VM *pVM )
     **  Restore the scope (before creating the object using new) 
     */
     pVM->pActiveMem = (List *) pVMState->aPointers[0] ;
-    /* Restore List Status */
+    /*
+    **  Restore List Status 
+    **  Remove protection from opened lists 
+    */
+    ring_vm_removelistprotection(pVM,pVM->pNestedLists);
     pVM->nListStart = pVMState->aNumbers[0] ;
-    if ( pVM->pNestedLists != pVMState->aPointers[1] ) {
-        pVM->pNestedLists = ring_list_delete_gc(pVM->pRingState,pVM->pNestedLists);
-        pVM->pNestedLists = (List *) pVMState->aPointers[1] ;
-    }
+    pVM->pNestedLists = ring_list_delete_gc(pVM->pRingState,pVM->pNestedLists);
+    pVM->pNestedLists = (List *) pVMState->aPointers[1] ;
+    /* Remove protection from opened lists */
+    ring_vm_removelistprotection(pVM,pVM->pNestedLists);
     /* Restore Stack Information */
     pVM->nSP = pVMState->aNumbers[1] ;
     /* Restore FuncExecute */
@@ -417,10 +505,7 @@ void ring_vm_restorestate3 ( VM *pVM )
     ring_vm_backstate(pVM,pVMState->aNumbers[15],pVM->pTry);
     /* Restore aBraceObjects */
     ring_vm_backstate(pVM,pVMState->aNumbers[16],pVM->aBraceObjects);
-    /*
-    **  Note: We don't restore pObjState 
-    **  Restore aForStep 
-    */
+    /* Restore aForStep */
     ring_vm_backstate(pVM,pVMState->aNumbers[17],pVM->aForStep);
     /* Restore nActiveScopeID */
     pVM->nActiveScopeID = pVMState->aNumbers[18] ;
@@ -448,6 +533,11 @@ void ring_vm_restorestate3 ( VM *pVM )
     ring_vm_backstate(pVM,pVMState->aNumbers[27],pVM->aBeforeObjState);
     /* Restore pFuncCallList */
     ring_vm_backstate(pVM,pVMState->aNumbers[28],pVM->pFuncCallList);
+    /* Restore aSetProperty */
+    pVM->aSetProperty = ring_list_delete_gc(pVM->pRingState,pVM->aSetProperty);
+    pVM->aSetProperty = (List *)  pVMState->aPointers[8] ;
+    /* Restore pObjState */
+    ring_vm_backstate(pVM,pVMState->aNumbers[29],pVM->pObjState);
     ring_list_deleteitem_gc(pVM->pRingState,pVM->aScopeNewObj,ring_list_getsize(pVM->aScopeNewObj));
 }
 
@@ -458,6 +548,68 @@ int ring_vm_newobjectstackpointer ( VM *pVM )
     pList = ring_list_getlist(pVM->aScopeNewObj,ring_list_getsize(pVM->aScopeNewObj));
     pVMState = (VMState *) ring_list_getpointer(pList,1);
     return pVMState->aNumbers[RING_ASCOPENEWOBJ_SP] ;
+}
+/* Save/Restore State 4 - Used by BraceStart & BraceEnd */
+
+void ring_vm_savestateforbraces ( VM *pVM,List *pObjState )
+{
+    List *pList, *pClass,*aSetProperty  ;
+    /*
+    **  Prepare to Access Object State 
+    **  Store Pointer to Object State 
+    */
+    ring_list_addpointer_gc(pVM->pRingState,pObjState,ring_list_getlist(pVM->pBraceObject,2));
+    /* Store Object Class Methods */
+    pClass = (List *) ring_list_getpointer(pVM->pBraceObject,1) ;
+    ring_list_addpointer_gc(pVM->pRingState,pObjState,ring_list_getlist(pClass,4));
+    /* Store Class Pointer */
+    ring_list_addpointer_gc(pVM->pRingState,pObjState,pClass);
+    /* Add Brace Object & Stack Pointer to List */
+    pList = ring_list_newlist_gc(pVM->pRingState,pVM->aBraceObjects);
+    ring_list_addpointer_gc(pVM->pRingState,pList,pVM->pBraceObject);
+    ring_list_addint_gc(pVM->pRingState,pList,pVM->nSP);
+    /* Store List information to allow using braces from list item and creating lists from that brace */
+    ring_list_addint_gc(pVM->pRingState,pList,pVM->nListStart);
+    ring_list_addpointer_gc(pVM->pRingState,pList,pVM->pNestedLists);
+    pVM->nListStart = 0 ;
+    pVM->pNestedLists = ring_list_new_gc(pVM->pRingState,0);
+    /* Enable function for memory management */
+    ring_vm_gc_listpointerismine(pList,RING_ABRACEOBJECTS_PNESTEDLISTS);
+    /* Store nFuncExec */
+    ring_list_addint_gc(pVM->pRingState,pList,pVM->nFuncExecute);
+    pVM->nFuncExecute = 0 ;
+    /* Store GetSet Object */
+    aSetProperty = ring_list_newlist_gc(pVM->pRingState,pList);
+    ring_list_copy_gc(pVM->pRingState,aSetProperty,pVM->aSetProperty);
+    ring_list_deleteallitems_gc(pVM->pRingState,pVM->aSetProperty);
+    pVM->pBraceObject = NULL ;
+    pVM->nInsideBraceFlag = 1 ;
+}
+
+void ring_vm_restorestateforbraces ( VM *pVM,List *pList )
+{
+    /*
+    **  Restore List Status 
+    **  Remove protection from opened lists 
+    */
+    ring_vm_removelistprotection(pVM,pVM->pNestedLists);
+    pVM->nListStart = ring_list_getint(pList,RING_ABRACEOBJECTS_NLISTSTART) ;
+    pVM->pNestedLists = ring_list_delete_gc(pVM->pRingState,pVM->pNestedLists);
+    pVM->pNestedLists = (List *) ring_list_getpointer(pList,RING_ABRACEOBJECTS_PNESTEDLISTS) ;
+    /* Remove protection from opened lists */
+    ring_vm_removelistprotection(pVM,pVM->pNestedLists);
+    /* Disable function for memory management */
+    ring_vm_gc_listpointerisnotmine(pList,RING_ABRACEOBJECTS_PNESTEDLISTS);
+    /* Restore nFuncExec */
+    pVM->nFuncExecute = ring_list_getint(pList,RING_ABRACEOBJECTS_NFUNCEXEC ) ;
+    /* Restore Stack Status */
+    pVM->nSP = ring_list_getint(pList,RING_ABRACEOBJECTS_NSP) ;
+    /* Restore GetSet Object */
+    ring_list_deleteallitems_gc(pVM->pRingState,pVM->aSetProperty);
+    ring_list_copy_gc(pVM->pRingState,pVM->aSetProperty,(List *) ring_list_getpointer(pList,RING_ABRACEOBJECTS_ASETPROPERTY ));
+    ring_list_deleteitem_gc(pVM->pRingState,pVM->aBraceObjects,ring_list_getsize(pVM->aBraceObjects));
+    ring_list_deleteitem_gc(pVM->pRingState,pVM->pObjState,ring_list_getsize(pVM->pObjState));
+    pVM->nInsideBraceFlag = ( ring_list_getsize(pVM->aBraceObjects) > 0 ) ;
 }
 /* Return to a Specific position in the array, delete all items after that position */
 
@@ -502,10 +654,10 @@ void ring_vm_restorestack ( VM *pVM,List *pList )
 {
     int x  ;
     List *pList2  ;
-    pVM->nSP = 0 ;
     if ( ring_list_getsize(pList) == 0 ) {
         return ;
     }
+    pVM->nSP = 0 ;
     for ( x = ring_list_getsize(pList) ; x >= 1 ; x-- ) {
         if ( ring_list_isstring(pList,x) ) {
             RING_VM_STACK_PUSHCVALUE2(ring_list_getstring(pList,x),ring_list_getstringsize(pList,x));

@@ -1,5 +1,5 @@
 /*
-**  Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> 
+**  Copyright (c) 2013-2023 Mahmoud Fayed <msfclipper@yahoo.com> 
 **  Include Files 
 */
 #include "ring.h"
@@ -30,6 +30,7 @@ void ring_vm_listfuncs_loadfunctions ( RingState *pRingState )
 void ring_vm_listfuncs_add ( void *pPointer )
 {
     List *pList,*pList2  ;
+    Item *pItem  ;
     VM *pVM  ;
     pVM = (VM *) pPointer ;
     if ( RING_API_PARACOUNT != 2 ) {
@@ -38,6 +39,11 @@ void ring_vm_listfuncs_add ( void *pPointer )
     }
     if ( RING_API_ISLIST(1) ) {
         pList = RING_API_GETLIST(1) ;
+        /* Check the Range */
+        if ( ring_list_getsize(pList) == UINT_MAX ) {
+            RING_API_ERROR(RING_API_RANGEEXCEEDED);
+            return ;
+        }
         if ( RING_API_ISSTRING(2) ) {
             ring_list_addstring2_gc(pVM->pRingState,pList,RING_API_GETSTRING(2),RING_API_GETSTRINGSIZE(2));
             RING_API_RETSTRING2(RING_API_GETSTRING(2),RING_API_GETSTRINGSIZE(2));
@@ -48,7 +54,14 @@ void ring_vm_listfuncs_add ( void *pPointer )
         }
         else if ( RING_API_ISLIST(2) ) {
             pList2 = RING_API_GETLIST(2) ;
-            ring_vm_addlisttolist(pVM,pList2,pList);
+            if ( ring_list_isref(pList2) ) {
+                ring_list_insertlist(pList,ring_list_getsize(pList));
+                pItem = ring_list_getitem(pList,ring_list_getsize(pList));
+                ring_list_assignreftoitem_gc(pVM->pRingState,pList2,pItem);
+            }
+            else {
+                ring_vm_addlisttolist(pVM,pList2,pList);
+            }
         }
     }
     else {
@@ -87,7 +100,8 @@ void ring_vm_listfuncs_del ( void *pPointer )
 void ring_vm_listfuncs_swap ( void *pPointer )
 {
     List *pList  ;
-    int nNum1,nNum2,nSize  ;
+    double nNum1,nNum2  ;
+    unsigned int nSize  ;
     if ( RING_API_PARACOUNT != 3 ) {
         RING_API_ERROR(RING_API_MISS3PARA);
         return ;
@@ -95,11 +109,11 @@ void ring_vm_listfuncs_swap ( void *pPointer )
     if ( RING_API_ISLIST(1) ) {
         pList = RING_API_GETLIST(1) ;
         if ( RING_API_ISNUMBER(2)  && RING_API_ISNUMBER(3) ) {
-            nNum1 = (int) RING_API_GETNUMBER(2) ;
-            nNum2 = (int) RING_API_GETNUMBER(3) ;
+            nNum1 = RING_API_GETNUMBER(2) ;
+            nNum2 = RING_API_GETNUMBER(3) ;
             nSize = ring_list_getsize(pList);
             if ( (nNum1 > 0) && (nNum2 > 0) && (nNum1!= nNum2) && (nNum1<= nSize) && (nNum2 <= nSize) ) {
-                ring_list_swap(pList,nNum1, nNum2);
+                ring_list_swap(pList,(unsigned int) nNum1, (unsigned int) nNum2);
             }
             else {
                 RING_API_ERROR(RING_API_BADPARARANGE);
@@ -234,7 +248,7 @@ void ring_vm_listfuncs_list ( void *pPointer )
 
 void ring_vm_listfuncs_find ( void *pPointer )
 {
-    int nNum1,nColumn  ;
+    unsigned int nNum1, nColumn  ;
     List *pList  ;
     if ( ! ( (RING_API_PARACOUNT >= 2) && (RING_API_PARACOUNT <= 4) ) ) {
         RING_API_ERROR(RING_API_BADPARACOUNT);
@@ -301,7 +315,7 @@ void ring_vm_listfuncs_min ( void *pPointer )
 {
     double nNum1  ;
     List *pList  ;
-    int x  ;
+    unsigned int x  ;
     if ( RING_API_PARACOUNT == 1 ) {
         if ( RING_API_ISLIST(1) ) {
             pList = RING_API_GETLIST(1) ;
@@ -359,7 +373,7 @@ void ring_vm_listfuncs_max ( void *pPointer )
 {
     double nNum1  ;
     List *pList  ;
-    int x  ;
+    unsigned int x  ;
     if ( RING_API_PARACOUNT == 1 ) {
         if ( RING_API_ISLIST(1) ) {
             pList = RING_API_GETLIST(1) ;
@@ -416,18 +430,28 @@ void ring_vm_listfuncs_max ( void *pPointer )
 void ring_vm_listfuncs_insert ( void *pPointer )
 {
     List *pList, *pList2  ;
-    int nPos  ;
+    unsigned int nPos  ;
+    double x  ;
+    Item *pItem  ;
+    VM *pVM  ;
+    pVM = (VM *) pPointer ;
     if ( RING_API_PARACOUNT != 3 ) {
         RING_API_ERROR(RING_API_BADPARACOUNT);
         return ;
     }
     if ( RING_API_ISLIST(1) && RING_API_ISNUMBER(2) ) {
         pList = RING_API_GETLIST(1) ;
-        nPos = (int) RING_API_GETNUMBER(2) ;
-        if ( (nPos < 0) || (nPos > ring_list_getsize(pList) ) ) {
+        /* Check the Range */
+        if ( ring_list_getsize(pList) == UINT_MAX ) {
+            RING_API_ERROR(RING_API_RANGEEXCEEDED);
+            return ;
+        }
+        x = RING_API_GETNUMBER(2) ;
+        if ( (x < 0) || (x > ring_list_getsize(pList) ) ) {
             RING_API_ERROR(RING_VM_ERROR_INDEXOUTOFRANGE);
             return ;
         }
+        nPos = (unsigned int) x ;
         if ( RING_API_ISSTRING(3) ) {
             ring_list_insertstring2(pList,nPos,RING_API_GETSTRING(3),RING_API_GETSTRINGSIZE(3));
         }
@@ -436,7 +460,13 @@ void ring_vm_listfuncs_insert ( void *pPointer )
         }
         else if ( RING_API_ISLIST(3) ) {
             pList2 = ring_list_insertlist(pList,nPos);
-            ring_vm_list_copy((VM *) pPointer,pList2,RING_API_GETLIST(3));
+            if ( ring_list_isref(RING_API_GETLIST(3)) ) {
+                pItem = ring_list_getitem(pList,nPos+1);
+                ring_list_assignreftoitem_gc(pVM->pRingState,RING_API_GETLIST(3),pItem);
+            }
+            else {
+                ring_vm_list_copy(pVM,pList2,RING_API_GETLIST(3));
+            }
         }
         else {
             RING_API_ERROR(RING_API_BADPARATYPE);
@@ -451,7 +481,8 @@ void ring_vm_listfuncs_insert ( void *pPointer )
 void ring_vm_listfuncs_sort ( void *pPointer )
 {
     List *pList, *pList2, *pList3  ;
-    int x,nParaCount,nColumn,nPos  ;
+    int nParaCount  ;
+    unsigned int x, nPos, nColumn  ;
     char *cAttribute  ;
     nParaCount = RING_API_PARACOUNT ;
     if ( ! ( (nParaCount >= 1) && (nParaCount <= 3) ) ) {
@@ -564,7 +595,8 @@ void ring_vm_listfuncs_sort ( void *pPointer )
 void ring_vm_listfuncs_binarysearch ( void *pPointer )
 {
     List *pList, *pList2  ;
-    int x,nParaCount,nColumn  ;
+    int nParaCount  ;
+    unsigned int x, nColumn  ;
     nParaCount = RING_API_PARACOUNT ;
     if ( (nParaCount != 2) && (nParaCount != 3) ) {
         RING_API_ERROR(RING_API_BADPARACOUNT);
@@ -637,7 +669,7 @@ void ring_vm_listfuncs_binarysearch ( void *pPointer )
 void ring_vm_listfuncs_reverse ( void *pPointer )
 {
     List *pList,*pList2,*pList3  ;
-    int x  ;
+    unsigned int x  ;
     if ( RING_API_PARACOUNT != 1 ) {
         RING_API_ERROR(RING_API_MISS1PARA);
         return ;
@@ -686,7 +718,7 @@ void ring_vm_listfuncs_refcount ( void *pPointer )
     if ( RING_API_PARACOUNT == 1 ) {
         if ( RING_API_ISLIST(1) ) {
             pList = RING_API_GETLIST(1) ;
-            RING_API_RETNUMBER(pList->nReferenceCount + 1);
+            RING_API_RETNUMBER(ring_list_getrefcount(pList));
         }
         else {
             RING_API_RETNUMBER(1);

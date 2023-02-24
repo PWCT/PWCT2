@@ -1,4 +1,4 @@
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2023 Mahmoud Fayed <msfclipper@yahoo.com> */
 #include "ring.h"
 /*
 **  Functions 
@@ -187,7 +187,7 @@ VM * ring_vm_new ( RingState *pRingState )
     /* Control Performance Instructions */
     pVM->lUsePushPLocal = 0 ;
     /* To know if we are inside eval() or not */
-    pVM->lInsideEval = 0 ;
+    pVM->nInsideEval = 0 ;
     /* Dynamic Libraries */
     pVM->pCLibraries = ring_list_new_gc(pVM->pRingState,0);
     /* No Setter Method (used by ring_vm_oop_setget() function) */
@@ -200,6 +200,8 @@ VM * ring_vm_new ( RingState *pRingState )
     pVM->lAddSubListsByFastCopy = 0 ;
     /* A Flag that the Exit command is used to terminate the (For-In) Loop */
     pVM->lExitFlag = 0 ;
+    /* A flag to enable/disable BraceError() Method usage for the current Error */
+    pVM->lCheckBraceError = 1 ;
     return pVM ;
 }
 
@@ -227,7 +229,7 @@ VM * ring_vm_delete ( VM *pVM )
     pVM->aBeforeObjState = ring_list_delete_gc(pVM->pRingState,pVM->aBeforeObjState);
     /* Free Stack */
     for ( x = 0 ; x < RING_VM_STACK_SIZE ; x++ ) {
-        ring_item_content_delete(&(pVM->aStack[x]));
+        ring_item_deletecontent(&(pVM->aStack[x]));
     }
     /* Delete the bytecode */
     for ( x = 1 ; x <= RING_VM_INSTRUCTIONSCOUNT ; x++ ) {
@@ -739,6 +741,9 @@ void ring_vm_execute ( VM *pVM )
         case ICO_JUMPONE2 :
             ring_vm_jumpone2(pVM);
             break ;
+        case ICO_PUSHNULLTHENJUMP :
+            RING_VM_PUSHNULLTHENJUMP ;
+            break ;
         /* Compare */
         case ICO_LESSEQUAL :
             ring_vm_lessequal(pVM);
@@ -1015,6 +1020,10 @@ void ring_vm_execute ( VM *pVM )
         /* Temp Lists */
         case ICO_FREETEMPLISTS :
             ring_vm_freetemplists(pVM);
+            break ;
+        /* Fast Functions */
+        case ICO_LEN :
+            ring_vm_len(pVM);
             break ;
     }
 }

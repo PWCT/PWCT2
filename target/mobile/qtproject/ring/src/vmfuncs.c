@@ -1,14 +1,14 @@
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2023 Mahmoud Fayed <msfclipper@yahoo.com> */
 #include "ring.h"
 /* Functions */
 
 int ring_vm_loadfunc ( VM *pVM )
 {
     /*
-    **  When pVM->lInsideEval == 1 In this case we are using eval("somefunction()") 
+    **  When pVM->nInsideEval == 1 In this case we are using eval("somefunction()") 
     **  We don't use optimization, it's not required because the code will not be executed again 
     */
-    return ring_vm_loadfunc2(pVM,RING_VM_IR_READC, ! pVM->lInsideEval ) ;
+    return ring_vm_loadfunc2(pVM,RING_VM_IR_READC, ! pVM->nInsideEval ) ;
 }
 
 int ring_vm_loadfunc2 ( VM *pVM,const char *cStr,int nPerformance )
@@ -241,7 +241,7 @@ void ring_vm_call2 ( VM *pVM )
         pVM->pNestedLists = ring_list_new_gc(pVM->pRingState,0);
         pVM->nPC = ring_list_getint(pList,RING_FUNCCL_PC) ;
         /* Save State */
-        ring_vm_savestate2(pVM,pList);
+        ring_vm_savestateforfunctions(pVM,pList);
         /* Avoid accessing object data or methods */
         if ( ring_list_getint(pList,RING_FUNCCL_METHODORFUNC) == 0 ) {
             pList = ring_list_newlist_gc(pVM->pRingState,pVM->pObjState);
@@ -321,7 +321,7 @@ void ring_vm_call2 ( VM *pVM )
         **  Move returned List to the previous scope 
         */
         if ( RING_VM_STACK_ISPOINTER ) {
-            ring_vm_movetoprevscope(pVM);
+            ring_vm_movetoprevscope(pVM,RING_FUNCTYPE_C);
         }
         /* Return (Delete Scope, Restore ActiveMem) */
         ring_list_deleteitem_gc(pVM->pRingState,pVM->pFuncCallList,ring_list_getsize(pVM->pFuncCallList));
@@ -395,12 +395,12 @@ void ring_vm_return ( VM *pVM )
             **  So when we return an object we can access it directly using { } 
             */
             if ( ring_vm_isstackpointertoobjstate(pVM) == 0 ) {
-                ring_vm_movetoprevscope(pVM);
+                ring_vm_movetoprevscope(pVM,RING_FUNCTYPE_SCRIPT);
             }
         }
         ring_vm_deletescope(pVM);
         /* Restore State */
-        ring_vm_restorestate2(pVM,pList,RING_FUNCCL_STATE);
+        ring_vm_restorestateforfunctions(pVM,pList,RING_FUNCCL_STATE);
         ring_list_deleteitem_gc(pVM->pRingState,pVM->pFuncCallList,ring_list_getsize(pVM->pFuncCallList));
         /* Restore nFuncSP value */
         if ( ring_list_getsize(pVM->pFuncCallList) > 0 ) {
@@ -438,11 +438,10 @@ void ring_vm_returnnull ( VM *pVM )
 void ring_vm_newfunc ( VM *pVM )
 {
     int x,nSP,nMax  ;
-    List *pList  ;
+    List *pList, *aParameters  ;
     String *pParameter  ;
     char *cParameters  ;
     char cStr[2]  ;
-    List *aParameters  ;
     assert(pVM != NULL);
     ring_vm_newscope(pVM);
     /* Set the SP then Check Parameters */
@@ -478,7 +477,9 @@ void ring_vm_newfunc ( VM *pVM )
                     ring_vm_addnewnumbervar(pVM,ring_list_getstring(aParameters,x),RING_VM_STACK_READN);
                 }
                 else if ( RING_VM_STACK_ISPOINTER ) {
-                    ring_vm_addnewpointervar(pVM,ring_list_getstring(aParameters,x),RING_VM_STACK_READP,RING_VM_STACK_OBJTYPE);
+                    if ( ! ring_list_isrefparameter(pVM,ring_list_getstring(aParameters,x)) ) {
+                        ring_vm_addnewpointervar(pVM,ring_list_getstring(aParameters,x),RING_VM_STACK_READP,RING_VM_STACK_OBJTYPE);
+                    }
                 }
                 RING_VM_STACK_POP ;
             }
@@ -536,10 +537,10 @@ void ring_vm_removeblockflag ( VM *pVM )
     ring_list_deleteitem_gc(pVM->pRingState,pVM->aPCBlockFlag,ring_list_getsize(pVM->aPCBlockFlag));
 }
 
-void ring_vm_movetoprevscope ( VM *pVM )
+void ring_vm_movetoprevscope ( VM *pVM,int nFuncType )
 {
     Item *pItem  ;
-    List *pList,*pList2,*pList3  ;
+    List *pList,*pList2,*pList3,*pRef  ;
     /*
     **  When the function return a value of type List or nested List 
     **  We copy the list to the previous scope, change the pointer 
@@ -550,6 +551,17 @@ void ring_vm_movetoprevscope ( VM *pVM )
     /* Get The Source List */
     if ( RING_VM_STACK_OBJTYPE == RING_OBJTYPE_VARIABLE ) {
         pList = (List *) RING_VM_STACK_READP ;
+        if ( ring_list_isrefcontainer(pList) ) {
+            /*
+            **  This is a container variable that will not be deleted 
+            **  So we don't need to move it to the previous scope 
+            **  Also, This is important to keep the Reference Count correct 
+            */
+            pRef = ring_list_getlist(pList,RING_VAR_VALUE);
+            if ( ! ( (nFuncType == RING_FUNCTYPE_SCRIPT) && ring_list_isnewref(pRef) && (ring_list_getrefcount(pRef) > 1) ) ) {
+                return ;
+            }
+        }
         if ( ring_list_islist(pList,RING_VAR_VALUE) ) {
             pList = ring_list_getlist(pList,RING_VAR_VALUE);
         }
@@ -569,11 +581,11 @@ void ring_vm_movetoprevscope ( VM *pVM )
     ring_list_setlist_gc(pVM->pRingState,pList3,RING_VAR_VALUE);
     pList2 = ring_list_getlist(pList3,RING_VAR_VALUE);
     /* Copy the list */
-    if ( ring_list_isreference(pList) ) {
+    if ( ring_list_isref(pList) ) {
         ring_list_setlistbyref_gc(pVM->pRingState,pList3,RING_VAR_VALUE,pList);
     }
     else {
-        if ( pList->lCopyByRef ) {
+        if ( ring_list_iscopybyref(pList) ) {
             ring_list_swaptwolists(pList2,pList);
         }
         else {
@@ -582,6 +594,7 @@ void ring_vm_movetoprevscope ( VM *pVM )
             if ( ring_vm_oop_isobject(pList2) ) {
                 ring_vm_oop_updateselfpointer(pVM,pList2,RING_OBJTYPE_VARIABLE,pList3);
             }
+            ring_list_enabledontref(pList2);
         }
     }
     RING_VM_STACK_SETPVALUE(pList3);

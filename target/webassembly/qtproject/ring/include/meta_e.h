@@ -1,4 +1,4 @@
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2023 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef ring_refmeta_extension_h
     #define ring_refmeta_extension_h
     /* Functions */
@@ -101,4 +101,8 @@
     void ring_vm_refmeta_ringvmgenarray ( void *pPointer ) ;
 
     void ring_vm_refmeta_ringvmcodelist ( void *pPointer ) ;
+
+    void ring_vm_refmeta_ringvmismempool ( void *pPointer ) ;
+
+    void ring_vm_refmeta_ringvmruncode ( void *pPointer ) ;
 #endif

@@ -1,4 +1,4 @@
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2023 Mahmoud Fayed <msfclipper@yahoo.com> */
 #include "ring.h"
 /*
 **  Functions 
@@ -992,11 +992,6 @@ int ring_parser_factor ( Parser *pParser,int *nFlag )
                 return x ;
             }
             pParser->nNewObject = 1 ;
-            /*
-            **  Generate Code 
-            **  PUSHV enable using braces to access the object 
-            */
-            ring_parser_icg_newoperation(pParser,ICO_PUSHV);
             return 1 ;
         }
     }
@@ -1101,7 +1096,7 @@ int ring_parser_mixer ( Parser *pParser )
             ring_parser_icg_newoperandint(pParser,0);
             if ( ring_parser_isoperator2(pParser,OP_LCLOSE) ) {
                 ring_parser_nexttoken(pParser);
-                RING_PARSER_PASSNEWLINE ;
+                RING_PARSER_IGNORENEWLINE ;
                 RING_STATE_CHECKPRINTRULES 
                 
                 puts("Rule : Mixer -> '[' Expr ']' ");

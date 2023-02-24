@@ -1,4 +1,4 @@
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2023 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef ring_api_h
     #define ring_api_h
     /*
@@ -53,6 +53,26 @@
     RING_API void ring_vm_api_intvalue ( void *pPointer,const char  *cStr ) ;
 
     RING_API void ring_vm_api_floatvalue ( void *pPointer,const char  *cStr ) ;
+
+    RING_API int ring_vm_api_islistornull ( void *pPointer,int x ) ;
+    /* Constants/MACRO */
+    #define RING_API_MISS1PARA "Bad parameters count, the function expect one parameter"
+    #define RING_API_MISS2PARA "Bad parameters count, the function expect two parameters"
+    #define RING_API_MISS3PARA "Bad parameters count, the function expect three parameters"
+    #define RING_API_MISS4PARA "Bad parameters count, the function expect four parameters"
+    #define RING_API_BADPARATYPE "Bad parameter type!"
+    #define RING_API_BADPARACOUNT "Bad parameters count!"
+    #define RING_API_BADPARARANGE "Bad parameters value, error in range!"
+    #define RING_API_BADPARALENGTH "Bad parameters value, error in length!"
+    #define RING_API_BADPARAVALUE "Bad parameter value!"
+    #define RING_API_NOTPOINTER "Error in parameter, not pointer!"
+    #define RING_API_NULLPOINTER "Error in parameter, NULL pointer!"
+    #define RING_API_EMPTYLIST "Bad parameter, empty list!"
+    #define RING_API_INTERNALFAILURE "Internal function call failed!"
+    #define RING_API_RANGEEXCEEDED "Range Exceeded!"
+    #define RING_OUTPUT_RETLIST 0
+    #define RING_OUTPUT_RETLISTBYREF 1
+    #define RING_OUTPUT_RETNEWREF 2
     /* API For C Functions */
     #define RING_API_PARALIST (((VM *) pPointer)->pActiveMem)
     #define RING_API_PARACOUNT (((VM *) pPointer)->nCFuncParaCount)
@@ -94,8 +114,8 @@
     #define RING_API_ISOBJECT(x) ring_vm_api_isobject(pPointer,x)
     #define RING_API_GETCPOINTER2POINTER(x,y) (ring_vm_api_getcpointer2pointer((VM *) pPointer,x,y))
     #define RING_API_RETMANAGEDCPOINTER(x,y,z) (ring_vm_api_retcpointer2((VM *) pPointer,(void *) x,y,z))
-    #define RING_API_RETLISTBYREF(x) ring_vm_api_retlist2((VM *) pPointer,x,1)
-    #define RING_API_RETNEWREF(x) ring_vm_api_retlist2((VM *) pPointer,x,2)
+    #define RING_API_RETLISTBYREF(x) ring_vm_api_retlist2((VM *) pPointer,x,RING_OUTPUT_RETLISTBYREF)
+    #define RING_API_RETNEWREF(x) ring_vm_api_retlist2((VM *) pPointer,x,RING_OUTPUT_RETNEWREF)
     #define ring_vm_funcregister(x,y) ring_vm_funcregister2(pRingState,x,y)
     #define RING_API_REGISTER(x,y) ring_vm_funcregister2(pRingState,x,y)
     #define RING_API_MALLOC(x) ring_state_malloc(((VM *) pPointer)->pRingState,x)
@@ -106,20 +126,7 @@
     #define RING_FUNC(x) void x(void *pPointer)
     #define RING_LIBINIT RING_API void ringlib_init(RingState *pRingState)
     #define RING_API_GETCHARPOINTER(x) RING_API_VARPOINTER(RING_API_GETSTRING(x),"char")
-    /* Constants/MACRO */
-    #define RING_API_MISS1PARA "Bad parameters count, the function expect one parameter"
-    #define RING_API_MISS2PARA "Bad parameters count, the function expect two parameters"
-    #define RING_API_MISS3PARA "Bad parameters count, the function expect three parameters"
-    #define RING_API_MISS4PARA "Bad parameters count, the function expect four parameters"
-    #define RING_API_BADPARATYPE "Bad parameter type!"
-    #define RING_API_BADPARACOUNT "Bad parameters count!"
-    #define RING_API_BADPARARANGE "Bad parameters value, error in range!"
-    #define RING_API_BADPARALENGTH "Bad parameters value, error in length!"
-    #define RING_API_BADPARAVALUE "Bad parameter value!"
-    #define RING_API_NOTPOINTER "Error in parameter, not pointer!"
-    #define RING_API_NULLPOINTER "Error in parameter, NULL pointer!"
-    #define RING_API_EMPTYLIST "Bad parameter, empty list!"
-    #define RING_API_INTERNALFAILURE "Internal function call failed!"
+    #define RING_API_ISLISTORNULL(x) (ring_vm_api_islistornull((VM *) pPointer,x))
     /*
     **  Note : The C Function Get Lists as pointers because of (List Pass by Reference) 
     **  The List Maybe a Variable/ListItem or may represent Object or C Pointer inside a List 

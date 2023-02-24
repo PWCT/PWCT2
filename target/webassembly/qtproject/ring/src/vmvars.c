@@ -1,4 +1,4 @@
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2023 Mahmoud Fayed <msfclipper@yahoo.com> */
 #include "ring.h"
 /* Global Variables */
 
@@ -243,6 +243,8 @@ int ring_vm_findvar2 ( VM *pVM,int x,List *pList2,const char *cStr )
                 ring_vm_oop_setget(pVM,pList2);
             }
         }
+        /* Check lNewRef Flag */
+        ring_list_resetlnewref(pList2);
     }
     return 1 ;
 }

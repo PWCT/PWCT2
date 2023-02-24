@@ -1,4 +1,4 @@
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2023 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef ring_codegen_h
     #define ring_codegen_h
     /*
@@ -24,6 +24,7 @@
         ICO_JUMPFOR ,
         ICO_JUMPZERO2 ,
         ICO_JUMPONE2 ,
+        ICO_PUSHNULLTHENJUMP ,
         /* Variables */
         ICO_LOADADDRESS ,
         ICO_ASSIGNMENT ,
@@ -135,12 +136,14 @@
         /* Temp Lists */
         ICO_FREETEMPLISTS ,
         /* Extra Para */
-        ICO_EXTRAPARA 
+        ICO_EXTRAPARA ,
+        /* Fast Functions */
+        ICO_LEN 
     } IC_OPERATIONS ;
     /* Operations Text (Array) */
     static const char * RING_IC_OP[] = {"NewLine","FileName","Print","Class","Func","Dup","New","Give","Private","NewLabel", 
     
-    "Jump","JumpZ","Jump1","JumpFOR","JZ2","J12","LoadA","Assignment","LoadSA","LoadIA","LoadAPushV","==","<",">","!=","<=",">=", 
+    "Jump","JumpZ","Jump1","JumpFOR","JZ2","J12","PUSHNULLTHENJUMP","LoadA","Assignment","LoadSA","LoadIA","LoadAPushV","==","<",">","!=","<=",">=", 
     
     "PushC","PushN","PushV","PushP","PushPV","PushPLocal", "SUM","SUB","MUL","DIV","MOD","Negative","Inc","IncP","POW", 
     
@@ -158,7 +161,7 @@
     
     "INCPJUMPSTEP1","JUMPVARPLENUMSTEP1","ANONYMOUS","CallClassInit", 
     
-    "NewGlobalScope","EndGlobalScope","SetGlobalScope","FreeTempLists","ExtraPara"} ;
+    "NewGlobalScope","EndGlobalScope","SetGlobalScope","FreeTempLists","ExtraPara","Len"} ;
     /* Macro */
     #define RING_PARSER_ICG_GOTOLASTOP pParser->ActiveGenCodeList = ring_list_getlist(pParser->GenCode,ring_list_getsize(pParser->GenCode))
     #define ring_parser_icg_newlabel(x) ( ring_list_getsize(x->GenCode) + 1 + pParser->pRingState->nInstructionsCount)

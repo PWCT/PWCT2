@@ -1,4 +1,4 @@
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2023 Mahmoud Fayed <msfclipper@yahoo.com> */
 #include "ring.h"
 /* Support for C Functions */
 
@@ -23,7 +23,11 @@ RING_API void ring_vm_loadcfunctions ( RingState *pRingState )
 int ring_vm_api_islist ( void *pPointer,int x )
 {
     int nType  ;
-    if ( RING_API_ISPOINTER(x) ) {
+    List *pList  ;
+    VM *pVM  ;
+    pVM = (VM *) pPointer ;
+    pList = ring_list_getlist(RING_API_PARALIST,x) ;
+    if ( ring_list_ispointer(pList,RING_VAR_VALUE) ) {
         nType = RING_API_GETPOINTERTYPE(x);
         if ( nType == RING_OBJTYPE_VARIABLE || nType == RING_OBJTYPE_LISTITEM ) {
             return 1 ;
@@ -53,7 +57,7 @@ RING_API List * ring_vm_api_getlist ( void *pPointer,int x )
 
 RING_API void ring_vm_api_retlist ( void *pPointer,List *pList )
 {
-    ring_vm_api_retlist2(pPointer,pList,0);
+    ring_vm_api_retlist2(pPointer,pList,RING_OUTPUT_RETLIST);
 }
 
 RING_API List * ring_vm_api_newlist ( VM *pVM )
@@ -86,7 +90,7 @@ RING_API void ring_vm_api_retcpointer2 ( void *pPointer,void *pGeneral,const cha
 RING_API void * ring_vm_api_getcpointer ( void *pPointer,int x,const char *cType )
 {
     List *pList  ;
-    if ( RING_API_ISLIST(x) ) {
+    if ( RING_API_ISLISTORNULL(x) ) {
         pList = RING_API_GETLIST(x) ;
         if ( ring_list_ispointer(pList,1) ) {
             if ( ring_list_getpointer(pList,1) != NULL ) {
@@ -230,7 +234,7 @@ RING_API int ring_vm_api_iscpointerlist ( List *pList )
 
 RING_API int ring_vm_api_iscpointer ( void *pPointer,int x )
 {
-    if ( RING_API_ISLIST(x) ) {
+    if ( RING_API_ISLISTORNULL(x) ) {
         return ring_vm_api_iscpointerlist(RING_API_GETLIST(x)) ;
     }
     return 0 ;
@@ -238,7 +242,7 @@ RING_API int ring_vm_api_iscpointer ( void *pPointer,int x )
 
 RING_API int ring_vm_api_isobject ( void *pPointer,int x )
 {
-    if ( RING_API_ISLIST(x) ) {
+    if ( RING_API_ISLISTORNULL(x) ) {
         return ring_vm_oop_isobject(RING_API_GETLIST(x)) ;
     }
     return 0 ;
@@ -286,7 +290,7 @@ RING_API void * ring_vm_api_getcpointer2pointer ( void *pPointer,int x,const cha
 {
     List *pList  ;
     Item *pItem  ;
-    if ( RING_API_ISLIST(x) ) {
+    if ( RING_API_ISLISTORNULL(x) ) {
         pList = RING_API_GETLIST(x) ;
         if ( ring_list_ispointer(pList,1) ) {
             if ( ring_list_getpointer(pList,1) != NULL ) {
@@ -342,54 +346,41 @@ RING_API void ring_vm_api_retlist2 ( void *pPointer,List *pList,int nRef )
     List *pRealList,*pTempMem,*pVariableList, *pObjectVariable  ;
     VM *pVM  ;
     pVM = (VM *) pPointer ;
-    pTempMem = ring_vm_prevtempmem(pVM);
+    /* Check Output Mode */
+    if ( nRef == RING_OUTPUT_RETNEWREF ) {
+        /* Check if we are creating a Reference before assignment, i.e. Ref(List(nSize)) */
+        if ( ring_list_iscopybyref(pList) ) {
+            nRef = RING_OUTPUT_RETLISTBYREF ;
+        }
+        /* Check lDontRef Flag */
+        if ( ring_list_isdontref(pList) ) {
+            nRef = RING_OUTPUT_RETLIST ;
+        }
+    }
+    if ( nRef == RING_OUTPUT_RETNEWREF ) {
+        pTempMem = NULL ;
+    }
+    else {
+        pTempMem = ring_vm_prevtempmem(pVM);
+    }
+    /* Create the container variable */
     pVariableList = ring_vm_newvar2(pVM,RING_TEMP_VARIABLE,pTempMem);
     ring_list_setint_gc(((VM *) pPointer)->pRingState,pVariableList,RING_VAR_TYPE,RING_VM_LIST);
     ring_list_setlist_gc(((VM *) pPointer)->pRingState,pVariableList,RING_VAR_VALUE);
     pRealList = ring_list_getlist(pVariableList,RING_VAR_VALUE);
-    /* Check if we are creating a Reference before assignment, i.e. Ref(List(nSize)) */
-    if ( pList->lCopyByRef && (nRef == 2) ) {
-        nRef = 1 ;
-    }
     /* Copy the list */
-    if ( nRef == 0 ) {
+    if ( nRef == RING_OUTPUT_RETLIST ) {
         /* Used by RING_API_RETLIST */
         ring_vm_list_copy((VM *) pPointer,pRealList,pList);
     }
-    else if ( nRef == 1 ) {
+    else if ( nRef == RING_OUTPUT_RETLISTBYREF ) {
         /* Used by RING_API_RETLISTBYREF  (i.e. List() function implementation) */
-        pList->lCopyByRef = 1 ;
+        ring_list_enablecopybyref(pList);
         ring_list_swaptwolists(pRealList,pList);
     }
     else {
         /* Used by RING_API_RETNEWREF (i.e. Ref()/Reference() function implementation) */
-        ring_list_setlistbyref_gc(((VM *) pPointer)->pRingState,pVariableList,RING_VAR_VALUE,pList);
-        if ( pList->lNewRef == 0 ) {
-            pList->lNewRef = 1 ;
-        }
-        else {
-            /* Avoid increasing the counter when writing Ref(Ref(Ref(....Ref(aList)....))) */
-            ring_list_updaterefcount_gc(pVM->pRingState,pList,RING_LISTREF_DEC);
-        }
-        /* Note: The list may already have a container variable (Previous Reference) */
-        if ( pList->pContainer == NULL ) {
-            /* If we have a reference to an object, the Self attribute will stay pointing to the Container Variable */
-            if ( ring_vm_oop_isobject(pList) ) {
-                ring_vm_oop_updateselfpointer(pVM,pList,RING_OBJTYPE_VARIABLE,pVariableList);
-            }
-            /* We increase the Counter to avoid deleting the container variable */
-            pVariableList->lDontDelete = 1 ;
-            /* When deleting the list (No other references exist) - It will delete the container variable */
-            pList->lDeleteContainerVariable = 1 ;
-            pList->pContainer = pVariableList ;
-        }
-        else {
-            /*
-            **  The container will be deleted after the end of the function call (i.e. not by pList) 
-            **  So to be sure to keep our pList alive -  we increment the counter 
-            */
-            ring_list_updaterefcount_gc(pVM->pRingState,pList,RING_LISTREF_INC);
-        }
+        pVariableList = ring_list_newref_gc(((VM *) pPointer)->pRingState,pVariableList,pList);
     }
     RING_API_PUSHPVALUE(pVariableList);
     RING_API_OBJTYPE = RING_OBJTYPE_VARIABLE ;
@@ -403,4 +394,16 @@ RING_API void ring_vm_api_intvalue ( void *pPointer,const char  *cStr )
 RING_API void ring_vm_api_floatvalue ( void *pPointer,const char  *cStr )
 {
     ring_vm_api_varvalue(pPointer,cStr,2);
+}
+
+int ring_vm_api_islistornull ( void *pPointer,int x )
+{
+    int nType  ;
+    if ( RING_API_ISPOINTER(x) ) {
+        nType = RING_API_GETPOINTERTYPE(x);
+        if ( nType == RING_OBJTYPE_VARIABLE || nType == RING_OBJTYPE_LISTITEM ) {
+            return 1 ;
+        }
+    }
+    return 0 ;
 }

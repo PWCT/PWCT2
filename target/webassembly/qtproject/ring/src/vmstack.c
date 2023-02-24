@@ -1,4 +1,4 @@
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2023 Mahmoud Fayed <msfclipper@yahoo.com> */
 #include "ring.h"
 /* Stack and Variables */
 
@@ -15,7 +15,7 @@ void ring_vm_pushv ( VM *pVM )
     }
     switch ( RING_VM_STACK_OBJTYPE ) {
         case RING_OBJTYPE_VARIABLE :
-            if ( ! ring_vm_checknull(pVM) ) {
+            if ( ! ring_vm_checknull(pVM,RING_CHECKNULL_SHOWERROR) ) {
                 ring_vm_varpushv(pVM);
             }
             break ;
@@ -28,18 +28,32 @@ void ring_vm_pushv ( VM *pVM )
     }
 }
 
-int ring_vm_checknull ( VM *pVM )
+int ring_vm_checknull ( VM *pVM,int lShowError )
 {
     List *pVar  ;
+    String *pString  ;
     pVar = (List *) RING_VM_STACK_READP ;
     /* Check NULL Value */
     if ( (pVM->nInClassRegion == 0) && (ring_list_getint(pVar,RING_VAR_TYPE) == RING_VM_NULL) && ( ring_list_isstring(pVar,RING_VAR_VALUE) ) ) {
         if ( strcmp(ring_list_getstring(pVar,RING_VAR_VALUE),"NULL") == 0 ) {
-            ring_vm_error2(pVM,RING_VM_ERROR_USINGNULLVARIABLE,ring_list_getstring(pVar,RING_VAR_NAME));
-            if ( ring_list_getlist(pVM->pActiveMem,ring_list_getsize(pVM->pActiveMem)) == pVar ) {
-                /* Delete the Item from the HashTable */
-                ring_hashtable_deleteitem_gc(pVM->pRingState,pVM->pActiveMem->pHashTable,ring_list_getstring(pVar,RING_VAR_NAME));
-                ring_list_deletelastitem_gc(pVM->pRingState,pVM->pActiveMem);
+            if ( lShowError ) {
+                /*
+                **  We create pString because ring_vm_error2() could interact with Try/Catch and change the State 
+                **  So we check pVM->pActiveMem before calling ring_vm_error2() function 
+                */
+                pString = ring_string_new2_gc(pVM->pRingState,ring_list_getstring(pVar,RING_VAR_NAME),ring_list_getstringsize(pVar,RING_VAR_NAME));
+                if ( ring_list_getlist(pVM->pActiveMem,ring_list_getsize(pVM->pActiveMem)) == pVar ) {
+                    /* Delete the Item from the HashTable */
+                    ring_hashtable_deleteitem_gc(pVM->pRingState,pVM->pActiveMem->pHashTable,ring_list_getstring(pVar,RING_VAR_NAME));
+                    /* Delete the variable from the active scope */
+                    ring_list_deletelastitem_gc(pVM->pRingState,pVM->pActiveMem);
+                    /* We deleted the variable, so we remove it from the Stack to avoid usage after delete */
+                    RING_VM_STACK_POP ;
+                    /* We replace it with NULL */
+                    RING_VM_STACK_PUSHCVALUE("");
+                }
+                ring_vm_error2(pVM,RING_VM_ERROR_USINGNULLVARIABLE,ring_string_get(pString));
+                ring_string_delete_gc(pVM->pRingState,pString);
             }
             return 1 ;
         }
@@ -69,13 +83,15 @@ void ring_vm_varpushv ( VM *pVM )
 
 void ring_vm_loadaddress ( VM *pVM )
 {
-    if ( ring_vm_findvar(pVM, RING_VM_IR_READC  ) == 0 ) {
+    int lFound  ;
+    lFound = ring_vm_findvar(pVM, RING_VM_IR_READC ) ;
+    if ( lFound == 0 ) {
         ring_vm_newvar(pVM, RING_VM_IR_READC);
         /* Support for private attributes */
         ring_list_setint_gc(pVM->pRingState,(List *) RING_VM_STACK_READP,RING_VAR_PRIVATEFLAG,pVM->nPrivateFlag);
     }
     /* Don't change instruction if it's LoadAFirst */
-    if ( pVM->nFirstAddress == 1 ) {
+    if ( (pVM->nFirstAddress == 1) || (lFound == 0) ) {
         return ;
     }
     if ( pVM->nVarScope == RING_VARSCOPE_GLOBAL ) {
@@ -120,6 +136,10 @@ void ring_vm_assignment ( VM *pVM )
             RING_VM_STACK_POP ;
             pVar = (List *) RING_VM_STACK_READP ;
             RING_VM_STACK_POP ;
+            /* Check Before Assignment */
+            if ( ring_vm_checkbeforeassignment(pVM,pVar) ) {
+                return ;
+            }
             if ( pVM->nBeforeEqual == 0 ) {
                 ring_list_setint_gc(pVM->pRingState,pVar, RING_VAR_TYPE ,RING_VM_STRING);
                 ring_list_setstring2_gc(pVM->pRingState,pVar, RING_VAR_VALUE , ring_string_get(cStr1),ring_string_size(cStr1));
@@ -144,6 +164,10 @@ void ring_vm_assignment ( VM *pVM )
             RING_VM_STACK_POP ;
             pVar = (List *) RING_VM_STACK_READP ;
             RING_VM_STACK_POP ;
+            /* Check Before Assignment */
+            if ( ring_vm_checkbeforeassignment(pVM,pVar) ) {
+                return ;
+            }
             if ( pVM->nBeforeEqual == 0 ) {
                 ring_list_setint_gc(pVM->pRingState,pVar, RING_VAR_TYPE ,RING_VM_NUMBER);
                 ring_list_setdouble_gc(pVM->pRingState,pVar, RING_VAR_VALUE , nNum1);
@@ -167,7 +191,7 @@ void ring_vm_assignment ( VM *pVM )
                     pItem = (Item *) RING_VM_STACK_READP ;
                     pVar = ring_item_getlist(pItem);
                 }
-                if ( ring_list_isreference(pVar) || pVar->lCopyByRef ) {
+                if ( ring_list_isref(pVar) || ring_list_iscopybyref(pVar) ) {
                     pList = pVar ;
                 }
                 else {
@@ -178,22 +202,19 @@ void ring_vm_assignment ( VM *pVM )
                 RING_VM_STACK_POP ;
                 pVar = (List *) RING_VM_STACK_READP ;
                 RING_VM_STACK_POP ;
+                /* Check Before Assignment */
+                if ( ring_vm_checkbeforeassignment(pVM,pVar) ) {
+                    return ;
+                }
                 ring_list_setint_gc(pVM->pRingState,pVar, RING_VAR_TYPE ,RING_VM_LIST);
                 /* Copy The List */
-                if ( ring_list_isreference(pList) ) {
-                    if ( ! ( ring_list_getlist(pVar,RING_VAR_VALUE) == pList ) ) {
-                        ring_list_setlist_gc(pVM->pRingState,pVar,RING_VAR_VALUE);
-                        ring_list_setlistbyref_gc(pVM->pRingState,pVar,RING_VAR_VALUE,pList);
-                    }
-                    if ( pList->lNewRef ) {
-                        pList->lNewRef = 0 ;
-                        ring_list_updaterefcount_gc(pVM->pRingState,pList,RING_LISTREF_DEC);
-                    }
+                if ( ring_list_isref(pList) ) {
+                    ring_list_assignreftovar_gc(pVM->pRingState,pList,pVar,RING_VAR_VALUE);
                 }
                 else {
                     ring_list_setlist_gc(pVM->pRingState,pVar,RING_VAR_VALUE);
-                    if ( pList->lCopyByRef ) {
-                        pList->lCopyByRef = 0 ;
+                    if ( ring_list_iscopybyref(pList) ) {
+                        ring_list_disablecopybyref(pList);
                         ring_list_swaptwolists(ring_list_getlist(pVar,RING_VAR_VALUE),pList);
                     }
                     else {
@@ -333,6 +354,12 @@ void ring_vm_list_copy ( VM *pVM,List *pNewList, List *pList )
     Item *pItem  ;
     assert(pList != NULL);
     /* Copy Items */
+    if ( ring_list_isref(pList) ) {
+        pNewList = pList ;
+        ring_list_updaterefcount_gc(pVM->pRingState,pList,RING_LISTREF_INC);
+        pList->gc.lNewRef = 0 ;
+        return ;
+    }
     nMax = ring_list_getsize(pList) ;
     if ( nMax == 0 ) {
         return ;
@@ -356,7 +383,7 @@ void ring_vm_list_copy ( VM *pVM,List *pNewList, List *pList )
         else if ( ring_list_islist(pList,x) ) {
             pNewList2 = ring_list_newlist_gc(pVM->pRingState,pNewList);
             pSourceList = ring_list_getlist(pList,x) ;
-            if ( ring_list_isreference(pSourceList) ) {
+            if ( ring_list_isref(pSourceList) ) {
                 /* Copy By Reference */
                 ring_list_setlistbyref_gc(pVM->pRingState,pNewList, ring_list_getsize(pNewList),pSourceList);
             }
@@ -436,7 +463,6 @@ void ring_vm_beforeequallist ( VM *pVM,List *pVar,double nNum1 )
             ring_list_setdouble_gc(pVM->pRingState,pVar, RING_VAR_VALUE , (int) ring_list_getdouble(pVar,RING_VAR_VALUE) & (int) nNum1);
         }
         else if ( pVM->nBeforeEqual == 7 ) {
-            ring_list_setdouble_gc(pVM->pRingState,pVar, RING_VAR_VALUE , (int) ring_list_getdouble(pVar,RING_VAR_VALUE) | (int) nNum1);
             ring_list_setdouble_gc(pVM->pRingState,pVar, RING_VAR_VALUE , (int) ring_list_getdouble(pVar,RING_VAR_VALUE) | (int) nNum1);
         }
         else if ( pVM->nBeforeEqual == 8 ) {
@@ -667,6 +693,63 @@ void ring_vm_printstack ( VM *pVM )
             }
             RING_VM_STACK_POP ;
             printf( "\n*****************************************\n" ) ;
+        }
+    }
+}
+
+void ring_vm_len ( VM *pVM )
+{
+    int nSize  ;
+    List *pVar, *pList  ;
+    Item *pItem  ;
+    String *pString  ;
+    if ( RING_VM_STACK_ISSTRING ) {
+        nSize = RING_VM_STACK_STRINGSIZE ;
+        RING_VM_STACK_POP ;
+        RING_VM_STACK_PUSHNVALUE(nSize);
+    }
+    else if ( RING_VM_STACK_ISNUMBER ) {
+        RING_VM_STACK_POP ;
+        RING_VM_STACK_PUSHNVALUE(0.0);
+    }
+    else if ( RING_VM_STACK_ISPOINTER ) {
+        if ( RING_VM_STACK_OBJTYPE == RING_OBJTYPE_VARIABLE ) {
+            pVar = (List *) RING_VM_STACK_READP ;
+            pList = ring_list_getlist(pVar,RING_VAR_VALUE) ;
+            if ( ring_vm_oop_isobject(pList) == 0 ) {
+                RING_VM_STACK_POP ;
+                RING_VM_STACK_PUSHNVALUE(ring_list_getsize(pList));
+            }
+            else {
+                ring_vm_expr_npoo(pVM,"len",0);
+                pVM->nIgnoreNULL = 1 ;
+            }
+        }
+        else if ( RING_VM_STACK_OBJTYPE == RING_OBJTYPE_LISTITEM ) {
+            pItem = (Item *) RING_VM_STACK_READP ;
+            switch ( pItem->nType ) {
+                case ITEMTYPE_STRING :
+                    pString = ring_item_getstring(pItem) ;
+                    RING_VM_STACK_POP ;
+                    RING_VM_STACK_PUSHNVALUE(ring_string_size(pString));
+                    break ;
+                case ITEMTYPE_LIST :
+                    pList = ring_item_getlist(pItem) ;
+                    if ( ring_vm_oop_isobject(pList) == 0 ) {
+                        RING_VM_STACK_POP ;
+                        RING_VM_STACK_PUSHNVALUE(ring_list_getsize(pList));
+                    }
+                    else {
+                        ring_vm_expr_npoo(pVM,"len",0);
+                        pVM->nIgnoreNULL = 1 ;
+                    }
+                    break ;
+                default :
+                    ring_vm_error(pVM,RING_VM_ERROR_FORLOOPDATATYPE);
+            }
+        }
+        else {
+            ring_vm_error(pVM,RING_VM_ERROR_FORLOOPDATATYPE);
         }
     }
 }

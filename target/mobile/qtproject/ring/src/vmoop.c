@@ -1,5 +1,5 @@
 /*
-**  Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> 
+**  Copyright (c) 2013-2023 Mahmoud Fayed <msfclipper@yahoo.com> 
 **  pClassesMap ( cClass Name ,  iPC , cParentClass, aMethodsList , nFlagIsParentClassInformation, PointerToPackage ) 
 **  pClassesMap ( cClass Name, Pointer to List that represent class inside a Package, Pointer to File ) 
 **  pFunctionsMap ( Name, PC, FileName, Private Flag ) 
@@ -47,6 +47,12 @@ void ring_vm_oop_newobj ( VM *pVM )
                         /* Clear the Assignment Pointer */
                         pVM->pAssignment = NULL ;
                         ring_vm_cleansetpropertylist(pVM);
+                        /* Check using Ref(aList) at the Left-Side */
+                        if ( RING_VM_STACK_OBJTYPE == RING_OBJTYPE_VARIABLE ) {
+                            if ( ring_list_checkrefvarinleftside(pVM->pRingState,(List *) RING_VM_STACK_READP) ) {
+                                nCont = 1 ;
+                            }
+                        }
                     }
                 }
                 if ( pVM->nFuncExecute > 0 ) {
@@ -66,12 +72,20 @@ void ring_vm_oop_newobj ( VM *pVM )
                     /* Prepare Object List */
                     if ( RING_VM_STACK_OBJTYPE == RING_OBJTYPE_VARIABLE ) {
                         pVar = (List *) RING_VM_STACK_READP ;
+                        /* Check before assignment */
+                        if ( ring_vm_checkbeforeassignment(pVM,pVar) ) {
+                            return ;
+                        }
                         ring_list_setint_gc(pVM->pRingState,pVar,RING_VAR_TYPE,RING_VM_LIST);
                         ring_list_setlist_gc(pVM->pRingState,pVar,RING_VAR_VALUE);
                         pList2 = ring_list_getlist(pVar,RING_VAR_VALUE);
                     }
                     else if ( RING_VM_STACK_OBJTYPE == RING_OBJTYPE_LISTITEM ) {
                         pItem = (Item *) RING_VM_STACK_READP ;
+                        /* Check before assignment */
+                        if ( ring_vm_checkitemerroronassignment(pVM,pItem) ) {
+                            return ;
+                        }
                         ring_item_settype_gc(pVM->pRingState,pItem,ITEMTYPE_LIST);
                         pVar = ring_item_getlist(pItem);
                         pList2 = pVar ;
@@ -96,7 +110,7 @@ void ring_vm_oop_newobj ( VM *pVM )
                 }
                 ring_list_setint_gc(pVM->pRingState,pSelf,RING_VAR_PVALUETYPE ,nType);
                 /* Save the State */
-                ring_vm_savestate3(pVM);
+                ring_vm_savestatefornewobjects(pVM);
                 /* Jump to Class INIT Method */
                 ring_vm_blockflag2(pVM,pVM->nPC);
                 /* Execute Parent Classes Init first */
@@ -118,8 +132,6 @@ void ring_vm_oop_newobj ( VM *pVM )
                 ring_vm_oop_newsuperobj(pVM,pList3,pList);
                 /* Enable NULL variables (To be class attributes) */
                 pVM->nInClassRegion++ ;
-                /* Support using Braces to access the object state */
-                pVM->pBraceObject = pList2 ;
                 return ;
             }
         }
@@ -230,13 +242,13 @@ void ring_vm_oop_setscope ( VM *pVM )
 {
     /*
     **  This function called after creating new object and executing class init 
-    **  Restore State 
+    **  After init methods 
     */
-    ring_vm_restorestate3(pVM);
-    /* After init methods */
     ring_vm_oop_aftercallmethod(pVM);
     /* POP Class Package */
     ring_vm_oop_popclasspackage(pVM);
+    /* Restore State */
+    ring_vm_restorestatefornewobjects(pVM);
 }
 
 int ring_vm_oop_isobject ( List *pList )
@@ -459,61 +471,30 @@ void ring_vm_oop_setbraceobj ( VM *pVM,List *pList )
 
 void ring_vm_oop_bracestart ( VM *pVM )
 {
-    List *pList,*pClass  ;
+    List *pList  ;
     /* Check Error */
-    if ( pVM->pBraceObject == NULL ) {
+    if ( (pVM->pBraceObject == NULL) || (! RING_VM_STACK_ISPOINTER) ) {
+        /* Disable handling this error using BraceError() Method */
+        pVM->lCheckBraceError = 0 ;
         ring_vm_error(pVM,RING_VM_ERROR_BRACEWITHOUTOBJECT);
         return ;
     }
-    /* Prepare to Access Object State */
     pList = ring_list_newlist_gc(pVM->pRingState,pVM->pObjState);
-    /* Store Pointer to Object State */
-    ring_list_addpointer_gc(pVM->pRingState,pList,ring_list_getlist(pVM->pBraceObject,2));
-    /* Store Object Class Methods */
-    pClass = (List *) ring_list_getpointer(pVM->pBraceObject,1) ;
-    ring_list_addpointer_gc(pVM->pRingState,pList,ring_list_getlist(pClass,4));
-    /* Store Class Pointer */
-    ring_list_addpointer_gc(pVM->pRingState,pList,pClass);
-    /* Add Brace Object & Stack Pointer to List */
-    pList = ring_list_newlist_gc(pVM->pRingState,pVM->aBraceObjects);
-    ring_list_addpointer_gc(pVM->pRingState,pList,pVM->pBraceObject);
-    ring_list_addint_gc(pVM->pRingState,pList,pVM->nSP);
-    /* Store List information to allow using braces from list item and creating lists from that brace */
-    ring_list_addint_gc(pVM->pRingState,pList,pVM->nListStart);
-    ring_list_addpointer_gc(pVM->pRingState,pList,pVM->pNestedLists);
-    pVM->nListStart = 0 ;
-    pVM->pNestedLists = ring_list_new_gc(pVM->pRingState,0);
-    pVM->pBraceObject = NULL ;
-    pVM->nInsideBraceFlag = 1 ;
+    ring_vm_savestateforbraces(pVM,pList);
 }
 
 void ring_vm_oop_braceend ( VM *pVM )
 {
     List *pList  ;
-    /* Restore List Status */
     pList = ring_list_getlist(pVM->aBraceObjects,ring_list_getsize(pVM->aBraceObjects)) ;
-    pVM->nListStart = ring_list_getint(pList,3) ;
-    if ( pVM->pNestedLists != ring_list_getpointer(pList,4) ) {
-        pVM->pNestedLists = ring_list_delete_gc(pVM->pRingState,pVM->pNestedLists);
-        pVM->pNestedLists = (List *) ring_list_getpointer(pList,4) ;
-    }
-    /* Restore Stack Status */
-    pVM->nSP = ring_list_getint(pList,2) ;
-    ring_list_deleteitem_gc(pVM->pRingState,pVM->aBraceObjects,ring_list_getsize(pVM->aBraceObjects));
-    ring_list_deleteitem_gc(pVM->pRingState,pVM->pObjState,ring_list_getsize(pVM->pObjState));
-    if ( ring_list_getsize(pVM->aBraceObjects) > 0 ) {
-        pVM->pBraceObject = ring_list_getlist(pVM->aBraceObjects,ring_list_getsize(pVM->aBraceObjects)) ;
-        pVM->pBraceObject = (List *) ring_list_getpointer(pVM->pBraceObject,1) ;
-        pVM->nInsideBraceFlag = 1 ;
-    }
-    else {
-        pVM->nInsideBraceFlag = 0 ;
-    }
+    ring_vm_restorestateforbraces(pVM,pList);
 }
 
 void ring_vm_oop_bracestack ( VM *pVM )
 {
-    pVM->nSP = ring_list_getint(ring_list_getlist(pVM->aBraceObjects,ring_list_getsize(pVM->aBraceObjects)),2) ;
+    List *pList  ;
+    pList = ring_list_getlist(pVM->aBraceObjects,ring_list_getsize(pVM->aBraceObjects)) ;
+    pVM->nSP = ring_list_getint(pList,RING_ABRACEOBJECTS_NSP) ;
     if ( pVM->nFuncSP > pVM->nSP ) {
         /*
         **  This fixes a problem when we use oObject {  eval(code) } return cString 
@@ -824,7 +805,7 @@ void ring_vm_oop_setget ( VM *pVM,List *pVar )
         if ( RING_VM_IR_READIVALUE(2)  == 0 ) {
             nIns = pVM->nPC - 2 ;
             pVM->nEvalCalledFromRingCode = 0 ;
-            if ( pVM->lInsideEval ) {
+            if ( pVM->nInsideEval ) {
                 pVM->nRetEvalDontDelete = 1 ;
             }
             ring_vm_eval(pVM,ring_string_get(pString));
@@ -943,7 +924,7 @@ void ring_vm_oop_setproperty ( VM *pVM )
             */
             nIns2 = pVM->nPC - 1 ;
             pVM->nEvalCalledFromRingCode = 0 ;
-            if ( pVM->lInsideEval ) {
+            if ( pVM->nInsideEval ) {
                 pVM->nRetEvalDontDelete = 1 ;
             }
             ring_vm_eval(pVM,ring_string_get(pString));
@@ -1079,7 +1060,7 @@ void ring_vm_oop_operatoroverloading ( VM *pVM,List *pObj,const char *cStr1,int 
         /* Eval the string */
         nIns = pVM->nPC - 2 ;
         pVM->nEvalCalledFromRingCode = 0 ;
-        if ( pVM->lInsideEval ) {
+        if ( pVM->nInsideEval ) {
             pVM->nRetEvalDontDelete = 1 ;
         }
         ring_vm_eval(pVM,ring_string_get(pString));

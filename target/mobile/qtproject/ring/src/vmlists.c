@@ -1,14 +1,15 @@
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2023 Mahmoud Fayed <msfclipper@yahoo.com> */
 #include "ring.h"
 /* Lists */
 
 void ring_vm_liststart ( VM *pVM )
 {
-    List *pVar,*pList  ;
+    List *pVar,*pList,*pNewList  ;
     int nType  ;
     Item *pItem  ;
     int nCont  ;
     pVar = NULL ;
+    pNewList = NULL ;
     pItem = NULL ;
     pVM->nListStart++ ;
     if ( pVM->nListStart == 1 ) {
@@ -31,6 +32,12 @@ void ring_vm_liststart ( VM *pVM )
                         nCont = 1 ;
                     }
                     ring_vm_cleansetpropertylist(pVM);
+                }
+                /* Check using Ref(aList) at the Left-Side */
+                if ( RING_VM_STACK_OBJTYPE == RING_OBJTYPE_VARIABLE ) {
+                    if ( ring_list_checkrefvarinleftside(pVM->pRingState,(List *) RING_VM_STACK_READP) ) {
+                        nCont = 1 ;
+                    }
                 }
             }
         }
@@ -61,22 +68,37 @@ void ring_vm_liststart ( VM *pVM )
             RING_VM_STACK_POP ;
         }
         if ( nType == RING_OBJTYPE_VARIABLE ) {
+            /* Check error on assignment */
+            if ( ring_vm_checkvarerroronassignment(pVM,pVar) ) {
+                return ;
+            }
             ring_list_setint_gc(pVM->pRingState,pVar, RING_VAR_TYPE ,RING_VM_LIST);
             ring_list_setlist_gc(pVM->pRingState,pVar, RING_VAR_VALUE);
-            ring_list_deleteallitems_gc(pVM->pRingState,ring_list_getlist(pVar,RING_VAR_VALUE));
-            ring_list_addpointer_gc(pVM->pRingState,pVM->pNestedLists,ring_list_getlist(pVar,RING_VAR_VALUE));
+            pNewList = ring_list_getlist(pVar,RING_VAR_VALUE) ;
+            ring_list_deleteallitems_gc(pVM->pRingState,pNewList);
+            ring_list_addpointer_gc(pVM->pRingState,pVM->pNestedLists,pNewList);
         }
         else if ( (nType == RING_OBJTYPE_LISTITEM) && (pItem != NULL) ) {
+            /* Check error on assignment */
+            if ( ring_vm_checkitemerroronassignment(pVM,pItem) ) {
+                return ;
+            }
             ring_item_settype_gc(pVM->pRingState,pItem,ITEMTYPE_LIST);
-            pVar = ring_item_getlist(pItem);
-            ring_list_deleteallitems_gc(pVM->pRingState,pVar);
-            ring_list_addpointer_gc(pVM->pRingState,pVM->pNestedLists,pVar);
+            pNewList = ring_item_getlist(pItem);
+            ring_list_deleteallitems_gc(pVM->pRingState,pNewList);
+            ring_list_addpointer_gc(pVM->pRingState,pVM->pNestedLists,pNewList);
+        }
+        if ( nCont ) {
+            ring_list_enablecopybyref(pNewList);
         }
     }
     else {
         pList = (List *) ring_list_getpointer(pVM->pNestedLists,ring_list_getsize(pVM->pNestedLists));
         ring_list_addpointer_gc(pVM->pRingState,pVM->pNestedLists,ring_list_newlist_gc(pVM->pRingState,pList));
     }
+    /* Enable Error on Assignment */
+    pList = (List *) ring_list_getpointer(pVM->pNestedLists,ring_list_getsize(pVM->pNestedLists));
+    pList->gc.lErrorOnAssignment = 1 ;
 }
 
 void ring_vm_listitem ( VM *pVM )
@@ -102,15 +124,9 @@ void ring_vm_listitem ( VM *pVM )
             RING_VM_STACK_POP ;
             pList2 = ring_list_getlist(pList2,RING_VAR_VALUE);
             pList3 = ring_list_newlist_gc(pVM->pRingState,pList);
-            if ( ring_list_isreference(pList2) ) {
+            if ( ring_list_isref(pList2) ) {
                 /* Copy by ref (pList2 to pList3) */
-                if ( pList2->lNewRef ) {
-                    pList2->lNewRef = 0 ;
-                    ring_list_acceptlistbyref_gc(pVM->pRingState,pList,ring_list_getsize(pList),pList2);
-                }
-                else {
-                    ring_list_setlistbyref_gc(pVM->pRingState,pList,ring_list_getsize(pList),pList2);
-                }
+                ring_list_assignreftovar_gc(pVM->pRingState,pList2,pList,ring_list_getsize(pList));
             }
             else {
                 ring_vm_list_copy(pVM,pList4,pList2);
@@ -122,17 +138,10 @@ void ring_vm_listitem ( VM *pVM )
             RING_VM_STACK_POP ;
             pList2 = ring_item_getlist(pItem);
             pList3 = ring_list_newlist_gc(pVM->pRingState,pList);
-            if ( ring_list_isreference(pList2) ) {
+            if ( ring_list_isref(pList2) ) {
                 /* Copy by ref (pList2 to pList3) */
-                pItem = ring_list_getitem(pList,ring_list_getsize(pList));
-                ring_state_free(pVM->pRingState,pList3);
-                pItem->data.pList = pList2 ;
-                if ( pList2->lNewRef ) {
-                    pList2->lNewRef = 0 ;
-                }
-                else {
-                    ring_list_updaterefcount_gc(pVM->pRingState,pList2,RING_LISTREF_INC);
-                }
+                pItem = ring_list_getitem(pList,ring_list_getsize(pList)) ;
+                ring_list_assignreftoitem_gc(pVM->pRingState,pList2,pItem);
             }
             else {
                 ring_vm_list_copy(pVM,pList4,pList2);
@@ -145,6 +154,7 @@ void ring_vm_listitem ( VM *pVM )
 
 void ring_vm_listend ( VM *pVM )
 {
+    ring_vm_removelistprotectionat(pVM,pVM->pNestedLists,ring_list_getsize(pVM->pNestedLists));
     pVM->nListStart-- ;
     ring_list_deleteitem_gc(pVM->pRingState,pVM->pNestedLists,ring_list_getsize(pVM->pNestedLists));
 }
@@ -361,6 +371,10 @@ void ring_vm_listassignment ( VM *pVM )
         pItem = (Item *) RING_VM_STACK_READP ;
         assert(pItem != NULL);
         RING_VM_STACK_POP ;
+        /* Check error on assignment */
+        if ( ring_vm_checkitemerroronassignment(pVM,pItem) ) {
+            return ;
+        }
         if ( pVM->nBeforeEqual == 0 ) {
             ring_item_setstring2_gc(pVM->pRingState,pItem, ring_string_get(cStr1),ring_string_size(cStr1));
         }
@@ -380,6 +394,10 @@ void ring_vm_listassignment ( VM *pVM )
         pItem = (Item *) RING_VM_STACK_READP ;
         assert(pItem != NULL);
         RING_VM_STACK_POP ;
+        /* Check error on assignment */
+        if ( ring_vm_checkitemerroronassignment(pVM,pItem) ) {
+            return ;
+        }
         if ( pVM->nBeforeEqual == 0 ) {
             ring_item_setdouble_gc(pVM->pRingState,pItem , nNum1);
         }
@@ -400,22 +418,22 @@ void ring_vm_listassignment ( VM *pVM )
         RING_VM_STACK_POP ;
         pItem = (Item *) RING_VM_STACK_READP ;
         RING_VM_STACK_POP ;
-        ring_item_settype_gc(pVM->pRingState,pItem,ITEMTYPE_LIST);
+        /* Check error on assignment */
+        if ( ring_vm_checkitemerroronassignment(pVM,pItem) ) {
+            return ;
+        }
+        if ( ring_item_gettype(pItem) != ITEMTYPE_LIST ) {
+            /* We check the type to avoid deleting the current list if it's a reference */
+            ring_item_settype_gc(pVM->pRingState,pItem,ITEMTYPE_LIST);
+        }
         pList = ring_item_getlist(pItem);
-        ring_list_deleteallitems_gc(pVM->pRingState,pList);
-        if ( ring_list_isreference(pVar) ) {
-            ring_state_free(pVM->pRingState,pList);
-            pItem->data.pList = pVar ;
-            if ( pVar->lNewRef ) {
-                pVar->lNewRef = 0 ;
-            }
-            else {
-                ring_list_updaterefcount_gc(pVM->pRingState,pVar,RING_LISTREF_INC);
-            }
+        if ( ring_list_isref(pVar) ) {
+            ring_list_assignreftoitem_gc(pVM->pRingState,pVar,pItem);
         }
         else {
-            if ( pVar->lCopyByRef ) {
-                pVar->lCopyByRef = 0 ;
+            ring_list_deleteallitems_gc(pVM->pRingState,pList);
+            if ( ring_list_iscopybyref(pVar) ) {
+                ring_list_disablecopybyref(pVar);
                 ring_list_swaptwolists(pList,pVar);
             }
             else {
