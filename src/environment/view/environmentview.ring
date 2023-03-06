@@ -5,9 +5,17 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
+class mydesktop
+
+	func width 
+		return 800
+	func height 
+		return 600
+
 class EnvironmentView from WindowsViewParent
 
 	oDesktop = new qDesktopWidget()	
+	oDesktop = new mydesktop
 
 	# Attributes
 	TreeTimer oFilesTree   oFile  oDockFilesManager oDockGoalDesigner
@@ -46,8 +54,10 @@ class EnvironmentView from WindowsViewParent
 		win = new qMainWindow()
 		{
 			if not PWCTIsMobile(:WindowDimensions) {
-				move(-10,0)
-				resize(1000,1000)
+				//move(-10,0)
+				//resize(1000,1000)
+				move(10,10)
+				resize(this.oDesktop.width(),this.oDesktop.height())
 			}
 			setLayoutDirection(T_LAYOUTDIRECTION)
 			setWindowTitle(T_ENV_TITLE) # "Programming Without Coding Technology"
@@ -1036,7 +1046,8 @@ class EnvironmentView from WindowsViewParent
 		nGoalDesignerWindowID = Last_WindowID()
 		oDock = new qdockwidget(win,0) {
 			if not PWCTIsMobile(:GoalDesignerSize) {
-				nWidth = floor(this.oDesktop.Width()*0.5)
+				//nWidth = floor(this.oDesktop.Width()*0.5)
+				nWidth = floor(this.oDesktop.Width()*1)
 				nHeight = floor(this.oDesktop.Height()*0.6)
 				setMinimumwidth(nWidth)
 				setMinimumHeight(nHeight)
@@ -1133,7 +1144,8 @@ class EnvironmentView from WindowsViewParent
 
 	func createComponentsBrowser win
 		oDockComponentsBrowser = new qDockWidget(win,0) {
-			nWidth = floor(this.oDesktop.Width()*0.20)
+			//nWidth = floor(this.oDesktop.Width()*0.20)
+			nWidth = floor(this.oDesktop.Width()*0.35)
 			setMinimumWidth(nWidth)
 			setLayoutDirection(C_TRANSLATION_ENGLISH)
 			setwindowtitle(T_ENV_DOCK_COMPONENTSBROWSER) 

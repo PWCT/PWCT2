@@ -69,7 +69,8 @@ class EnvironmentController from WindowsControllerParent
 			nEnvironmentWindowID = ObjectID()
 		oView.win.blocksignals(True)
 		oView.win.setupdatesenabled(False)
-		oView.win.showmaximized()
+		//oView.win.show()
+		//oView.win.showmaximized()
 		super.Start()
 		LoadSettings()	
 		# Add the Default file (NoName) to the Active Files List
@@ -133,6 +134,9 @@ class EnvironmentController from WindowsControllerParent
 			oView.win.setWindowFlags(Qt_Window | Qt_CustomizeWindowHint)
 			oView.win.showmaximized()
 		}
+
+
+		oView.win.showmaximized()
 
 	/*
 		Purpose : Set the Parent Object for Environment and goal designer

@@ -1770,6 +1770,7 @@ class GoalDesignerController from WindowsControllerParent
 	*/
 
 	func RulesAllow cChildComponentName
+return true
 		# Prepare Variables 
 			cParentComponentName = getparentComponentName()
 			nStepNumber = getparentStepNumber()
