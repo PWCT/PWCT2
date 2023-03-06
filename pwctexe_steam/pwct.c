@@ -1,8 +1,10 @@
 /* Copyright (c) 2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+
 #include "windows.h"
 #include "stdio.h"
 #include "stdlib.h"
 #include "conio.h"
+#define WIN32_LEAN_AND_MEAN
 int WINAPI WinMain ( HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nShowCmd )
 {
 	SetCurrentDirectory("PWCT");
