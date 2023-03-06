@@ -1,180 +1,47 @@
 
-
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
-<head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Deep Copy &mdash; PWCT 2.0 documentation</title>
-  
 
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
-
-  
-  
-  
-  
-
-  
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Copy &#8212; PWCT 2.0 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/custom.css" />
     
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Implicit Conversion" href="implicitconversion.html" />
     <link rel="prev" title="Using Variables" href="variables.html" /> 
-</head>
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="implicitconversion.html" title="Implicit Conversion"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="variables.html" title="Using Variables"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">PWCT 2.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Deep Copy</a></li> 
+      </ul>
+    </div>  
 
-<body class="wy-body-for-nav">
-
-   
-  <div class="wy-grid-for-nav">
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-          
-
-          
-            <a href="index.html">
-          
-
-          
-            
-            <img src="_static/pwctdoclogo.jpg" class="logo" alt="Logo"/>
-          
-          </a>
-
-          
-
-          
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="concept.html">The Concept</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="richcomments.html">Rich Comments</a></li>
-<li class="toctree-l1"><a class="reference internal" href="basicprogramcomponent.html">Basic Program component</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quickstartcomponent.html">Quick Start component</a></li>
-<li class="toctree-l1"><a class="reference internal" href="sayhelloprogram.html">Say Hello Program</a></li>
-<li class="toctree-l1"><a class="reference internal" href="variables.html">Variables</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Deep Copy</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#program-steps">Program Steps</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#creating-the-program">Creating the Program</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="implicitconversion.html">Implicit Conversion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="operators.html">Operators</a></li>
-<li class="toctree-l1"><a class="reference internal" href="operatorsprecedence.html">Operators Precedence</a></li>
-<li class="toctree-l1"><a class="reference internal" href="loopandcondition.html">Loop and Condition</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mainmenu.html">Main Menu</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dynamicloop.html">Dynamic Loop</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modifylists.html">Modify Lists</a></li>
-<li class="toctree-l1"><a class="reference internal" href="exitfromtwoloops.html">Exit from two loops</a></li>
-<li class="toctree-l1"><a class="reference internal" href="theloopcommand.html">The Loop Command</a></li>
-<li class="toctree-l1"><a class="reference internal" href="shortcircuitevaluation.html">Short Circuit Evaluation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="usingfunctions.html">Using Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="variablesscope.html">Variables Scope</a></li>
-<li class="toctree-l1"><a class="reference internal" href="consolecomponents.html">Console Components</a></li>
-<li class="toctree-l1"><a class="reference internal" href="controlstructurescomponents.html">Control Structures Components</a></li>
-<li class="toctree-l1"><a class="reference internal" href="resources.html">Resources</a></li>
-</ul>
-
-            
-          
-        </div>
-        
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">PWCT</a>
-        
-      </nav>
-
-
-      <div class="wy-nav-content">
-        
-        <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
-  <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-        
-      <li>Deep Copy</li>
-    
-    
-      <li class="wy-breadcrumbs-aside">
-        
-            
-        
-      </li>
-    
-  </ul>
-
-  
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
             
   <div class="section" id="deep-copy">
 <span id="index-0"></span><h1>Deep Copy<a class="headerlink" href="#deep-copy" title="Permalink to this headline">¶</a></h1>
@@ -246,59 +113,64 @@
 </div>
 
 
-           </div>
-           
+            <div class="clearer"></div>
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="implicitconversion.html" class="btn btn-neutral float-right" title="Implicit Conversion" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="variables.html" class="btn btn-neutral float-left" title="Using Variables" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>
-        
-        &copy; Copyright 2022, PWCT Software
-
-    </p>
-  </div>
-    
-    
-    
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
-    
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
-
-</footer>
-
         </div>
       </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/pwctdoclogo.jpg" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Deep Copy</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#program-steps">Program Steps</a></li>
+<li><a class="reference internal" href="#creating-the-program">Creating the Program</a></li>
+</ul>
+</li>
+</ul>
 
-    </section>
-
-  </div>
-  
-
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(false);
-      });
-  </script>
-
-  
-  
-    
-   
-
-</body>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="variables.html"
+                        title="previous chapter">Using Variables</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="implicitconversion.html"
+                        title="next chapter">Implicit Conversion</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="implicitconversion.html" title="Implicit Conversion"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="variables.html" title="Using Variables"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">PWCT 2.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Deep Copy</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2023, PWCT Software.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.1.1.
+    </div>
+  </body>
 </html>
