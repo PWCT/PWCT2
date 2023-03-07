@@ -283,7 +283,7 @@
 
 	T_ABOUT_TITLE = "About"
 	T_ABOUT_DEVELOPER = "Programming Without Coding Technology (PWCT)" + nl +
-						"Version: 2.0 Rev. 2023.03.06" + nl +
+						"Version: 2.0 Rev. 2023.03.07" + nl +
 						"2023, PWCT Software"
 
 # GUI Library 

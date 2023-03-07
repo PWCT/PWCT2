@@ -244,6 +244,7 @@ class FormDesigner_QWidget from QWidget
 		# Start drawing from the center of the Mouse Cursor
 			nX = oDesigner.oView.oFilter.getglobalx() + nFixX
 			ny = oDesigner.oView.oFilter.getglobaly() + nFixY
+
 		oDesigner.oView.oLabelSelect.raise()
 		oDesigner.oView.oLabelSelect.move(nX,nY)
 		oDesigner.oView.oLabelSelect.resize(1,1)
@@ -289,7 +290,14 @@ class FormDesigner_QWidget from QWidget
 			if oDesigner.HasParent() {
 				top -= oDesigner.oView.win.parentwidget().y()
 				left -= oDesigner.oView.win.parentwidget().x()
+
+				# Fixed this bug: https://steamcommunity.com/app/1953110/discussions/0/3784750917888477960/
+				# Where we move PWCT main window down then draw button
+				top -= oDesigner.oView.win.parentwidget().parentwidget().y()
+				left -= oDesigner.oView.win.parentwidget().parentwidget().x()
+
 			}
+
 		width = max(nX,nX2) - min(nX,nX2)
 		height = max(nY,nY2) - min(nY,nY2)
 		return [left,top,width,height]
