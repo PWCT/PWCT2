@@ -1,7 +1,3 @@
-# Gold Magic 800 3D Game
-# 2018, Etqan Company
-# 2018, Mahmoud Fayed <msfclipper@yahoo.com>
-
 load "gameerror.ring"
 load "gamebase.ring"
 load "gamedata.ring"
@@ -19,21 +15,6 @@ load "gamehowtoplay.ring"
 load "gamemainmenu.ring"
 load "gameselectlevel.ring"
 load "gameengine.ring"
-
-
-for cClass in [
-	:GameResources,
-	:GameDraw,
-	:GameMouse,
-	:GameLevel,
-	:GamePlayer,
-	:GameScreen,
-	:GameLogo,
-	:GameStory,
-	:GameHowToPlay,
-	:GameMainMenu,
-	:GameSelectLevel
-]
+for cClass in [:GameResources,:GameDraw,:GameMouse,:GameLevel,:GamePlayer,:GameScreen,:GameLogo,:GameStory,:GameHowToPlay,:GameMainMenu,:GameSelectLevel] step 1 { 
 	mergemethods(:GameEngine,cClass)
-next
-
+} 

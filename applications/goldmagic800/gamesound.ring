@@ -1,39 +1,31 @@
-# Gold Magic 800 3D Game
-# 2018, Etqan Company
-# 2018, Mahmoud Fayed <msfclipper@yahoo.com>
-
 class GameSound
-
-	lUseSound = True 
-	lUseMusic = True 
-
+	lUseSound = True
+	lUseMusic = True
 	lSoundFilesLoaded = False
-
-	BackGroundMusic BackGoundSampleID
-	lMusic = False 
-
-	PointSound  PointSampleID
+	BackGroundMusic
+	BackGoundSampleID
+	lMusic = False
+	PointSound
+	PointSampleID
 	lPlayPointSound = False
-
-	HitSound  HitSampleID
+	HitSound
+	HitSampleID
 	lPlayHitSound = True
-
-	StorySound  StorySampleID
+	StorySound
+	StorySampleID
 	lPlayStorySound = True
-
-	MenuChangeSound  MenuChangeSampleID
+	MenuChangeSound
+	MenuChangeSampleID
 	lPlayMenuChangeSound = True
-
-	MenuClickSound  MenuClickSampleID
+	MenuClickSound
+	MenuClickSampleID
 	lPlayMenuClickSound = True
-
-	lPlayLevelSound = True 
-
-	func LoadSound
-
-		if lSoundFilesLoaded return ok
-	 	lSoundFilesLoaded = True
-
+	lPlayLevelSound = True
+	func LoadSound  { 
+		if lSoundFilesLoaded { 
+			return 
+		} 
+		lSoundFilesLoaded = True
 		BackGroundMusic = al_load_sample("sound/music3.wav")
 		CheckFatalError(BackGroundMusic,"Can't load the sound file sound/music3.wav")
 		PointSound = al_load_sample("sound/sfx_point.wav")
@@ -46,126 +38,130 @@ class GameSound
 		CheckFatalError(MenuChangeSound,"Can't load the sound file sound/menuchange2.wav")
 		MenuClickSound = al_load_sample("sound/menuclick2.wav")
 		CheckFatalError(MenuClickSound,"Can't load the sound file sound/menuclick2.wav")
-
-
-	func SoundOnOff
-
-		lUseSound = ! lUseSound
-		lPlayHitSound = ! lPlayHitSound 
-		lPlayLevelSound = ! lPlayLevelSound
-		lPlayMenuChangeSound = ! lPlayMenuChangeSound
-		lPlayMenuClickSound = ! lPlayMenuClickSound		
-
-	func MusicOnOff
-
-		lUseMusic = ! lUseMusic 
-		if lUseMusic 
+	} 
+	func SoundOnOff  { 
+		lUseSound = !lUseSound
+		lPlayHitSound = !lPlayHitSound
+		lPlayLevelSound = !lPlayLevelSound
+		lPlayMenuChangeSound = !lPlayMenuChangeSound
+		lPlayMenuClickSound = !lPlayMenuClickSound
+	} 
+	func MusicOnOff  { 
+		lUseMusic = !lUseMusic
+		if lUseMusic { 
 			PlayBackGroundMusic()
-			lMusic = False 
-		else 
-			al_stop_sample(BackGoundSampleID)
-		ok
-
-
-	func PlayBackGroundMusic
-
-		if lMusic = False 
+			lMusic = False
+			else
+				al_stop_sample(BackGoundSampleID)
+		} 
+	} 
+	func PlayBackGroundMusic  { 
+		if lMusic = False { 
 			BackGoundSampleID = al_new_allegro_sample_id()
-			al_play_sample(BackGroundMusic, 1.0, 0.0,1.0,ALLEGRO_PLAYMODE_LOOP,BackGoundSampleID)
-			lMusic = True 
-		ok
-
-	func PlayPointSound
-
-		if lPlayPointSound = False return ok
-		if IsNULL(PointSampleID)
+			al_play_sample(BackGroundMusic,1.0,0.0,1.0,ALLEGRO_PLAYMODE_LOOP,BackGoundSampleID)
+			lMusic = True
+		} 
+	} 
+	func PlayPointSound  { 
+		if lPlayPointSound = False { 
+			return 
+		} 
+		if IsNULL(PointSampleID) { 
 			PointSampleID = al_new_allegro_sample_id()
-			al_play_sample(PointSound, 1.0, 0.0,1.0,ALLEGRO_PLAYMODE_ONCE,PointSampleID)
-		ok
-
-	func StopPointSound
-
-		if lPlayPointSound = False return ok
-		if not ISNULL(PointSampleID)
+			al_play_sample(PointSound,1.0,0.0,1.0,ALLEGRO_PLAYMODE_ONCE,PointSampleID)
+		} 
+	} 
+	func StopPointSound  { 
+		if lPlayPointSound = False { 
+			return 
+		} 
+		if  NOT ISNULL(PointSampleID) { 
 			al_stop_sample(PointSampleID)
 			PointSampleID = NULL
-		ok
-
-	func PlayHitSound
-
-		if lPlayHitSound = False return ok
-		if IsNULL(HitSampleID)
+		} 
+	} 
+	func PlayHitSound  { 
+		if lPlayHitSound = False { 
+			return 
+		} 
+		if IsNULL(HitSampleID) { 
 			HitSampleID = al_new_allegro_sample_id()
-			al_play_sample(HitSound, 1.0, 0.0,1.0,ALLEGRO_PLAYMODE_ONCE,HitSampleID)
-		ok
-
-	func StopHitSound
-
-		if lPlayHitSound = False return ok
-		if not ISNULL(HitSampleID)
+			al_play_sample(HitSound,1.0,0.0,1.0,ALLEGRO_PLAYMODE_ONCE,HitSampleID)
+		} 
+	} 
+	func StopHitSound  { 
+		if lPlayHitSound = False { 
+			return 
+		} 
+		if  NOT ISNULL(HitSampleID) { 
 			al_stop_sample(HitSampleID)
 			HitSampleID = NULL
-		ok
-
-	func PlayMenuChangeSound
-
-		if lPlayMenuChangeSound = False return ok
-		if IsNULL(MenuChangeSampleID)
+		} 
+	} 
+	func PlayMenuChangeSound  { 
+		if lPlayMenuChangeSound = False { 
+			return 
+		} 
+		if IsNULL(MenuChangeSampleID) { 
 			MenuChangeSampleID = al_new_allegro_sample_id()
-			al_play_sample(MenuChangeSound, 1.0, 0.0,1.0,ALLEGRO_PLAYMODE_ONCE,MenuChangeSampleID)
-		ok
-
-	func StopMenuChangeSound
-
-		if lPlayMenuChangeSound = False return ok
-		if not ISNULL(MenuChangeSampleID)
+			al_play_sample(MenuChangeSound,1.0,0.0,1.0,ALLEGRO_PLAYMODE_ONCE,MenuChangeSampleID)
+		} 
+	} 
+	func StopMenuChangeSound  { 
+		if lPlayMenuChangeSound = False { 
+			return 
+		} 
+		if  NOT ISNULL(MenuChangeSampleID) { 
 			al_stop_sample(MenuChangeSampleID)
 			MenuChangeSampleID = NULL
-		ok
-
-	func PlayMenuClickSound
-
-		if lPlayMenuClickSound = False return ok
-		if IsNULL(MenuClickSampleID)
+		} 
+	} 
+	func PlayMenuClickSound  { 
+		if lPlayMenuClickSound = False { 
+			return 
+		} 
+		if IsNULL(MenuClickSampleID) { 
 			MenuClickSampleID = al_new_allegro_sample_id()
-			al_play_sample(MenuClickSound, 1.0, 0.0,1.0,ALLEGRO_PLAYMODE_ONCE,MenuClickSampleID)
-		ok
-
-	func StopMenuClickSound
-
-		if lPlayMenuClickSound = False return ok
-		if not ISNULL(MenuClickSampleID)
+			al_play_sample(MenuClickSound,1.0,0.0,1.0,ALLEGRO_PLAYMODE_ONCE,MenuClickSampleID)
+		} 
+	} 
+	func StopMenuClickSound  { 
+		if lPlayMenuClickSound = False { 
+			return 
+		} 
+		if  NOT ISNULL(MenuClickSampleID) { 
 			al_stop_sample(MenuClickSampleID)
 			MenuClickSampleID = NULL
-		ok
-
-
-	func PlayStorySound
-
-		if lPlayStorySound = False return ok
-		if IsNULL(StorySampleID)
+		} 
+	} 
+	func PlayStorySound  { 
+		if lPlayStorySound = False { 
+			return 
+		} 
+		if IsNULL(StorySampleID) { 
 			StorySampleID = al_new_allegro_sample_id()
-			al_play_sample(StorySound, 1.0, 0.0,1.0,ALLEGRO_PLAYMODE_LOOP,StorySampleID)
-		ok
-
-	func StopStorySound
-
-		if lPlayStorySound = False return ok
-		if not ISNULL(StorySampleID)
+			al_play_sample(StorySound,1.0,0.0,1.0,ALLEGRO_PLAYMODE_LOOP,StorySampleID)
+		} 
+	} 
+	func StopStorySound  { 
+		if lPlayStorySound = False { 
+			return 
+		} 
+		if  NOT ISNULL(StorySampleID) { 
 			al_stop_sample(StorySampleID)
 			StorySampleID = NULL
-		ok
-
-	func PlayLevelSound
-
-		if lPlayLevelSound
+		} 
+	} 
+	func PlayLevelSound  { 
+		if lPlayLevelSound { 
 			LevelSampleID = al_new_allegro_sample_id()
-			al_play_sample(PointSound, 1.0, 0.0,1.0,ALLEGRO_PLAYMODE_ONCE,LevelSampleID)
-		ok
-
-	func Destroy 
-
+			al_play_sample(PointSound,1.0,0.0,1.0,ALLEGRO_PLAYMODE_ONCE,LevelSampleID)
+		} 
+	} 
+	func Destroy  { 
 		al_destroy_sample(StorySound)
 		al_destroy_sample(BackGroundMusic)
 		al_destroy_sample(PointSound)
 		al_destroy_sample(HitSound)
+	} 
+private
