@@ -109,6 +109,8 @@
 	T_ENV_MENU_GUILIB = "GUI Library"
 	T_ENV_MENU_LOG =  "System Log"
 	T_ENV_MENU_ABOUT =  "About"
+	T_ENV_MENU_FAQ = "FAQ"
+	T_ENV_MENU_CHANGELOG = "Change Log"
 	T_ENV_LOADING = "Loading the Visual Source File..."
 
 	T_ENV_TOOLBAR_MAINFILE = "Main File : "
@@ -283,7 +285,7 @@
 
 	T_ABOUT_TITLE = "About"
 	T_ABOUT_DEVELOPER = "Programming Without Coding Technology (PWCT)" + nl +
-						"Version: 2.0 Rev. 2023.03.09" + nl +
+						"Version: 2.0 Rev. 2023.03.12" + nl +
 						"2023, PWCT Software"
 
 # GUI Library 

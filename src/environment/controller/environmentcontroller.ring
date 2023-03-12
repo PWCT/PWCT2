@@ -686,6 +686,13 @@ class EnvironmentController from WindowsControllerParent
 	func SystemLogAction
 		oSystemLog.show()
 
+
+	func FAQ
+		oFAQ.show()
+
+	func ChangeLog
+		oChangeLog.show()
+
 	/*
 		Purpose : Send Process Data
 		Parameters : None

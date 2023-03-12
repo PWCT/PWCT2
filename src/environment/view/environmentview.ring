@@ -665,6 +665,13 @@ class EnvironmentView from WindowsViewParent
 			}
 			subHelp { 
 				if ! PWCTIsMobile(:HelpMenu) {
+				addseparator()
+					oAction = new qAction(win) {
+						settext(T_ENV_MENU_FAQ) # "FAQ"
+						setclickevent(Method(:FAQ))
+					}
+					addaction(oAction)
+					addseparator()
 					subHelpLF = addmenu(T_ENV_MENU_PWCTLANGREF) # "PWCT Language Reference"
 					subHelpLF { 
 						oAction = new qAction(win) {
@@ -710,10 +717,16 @@ class EnvironmentView from WindowsViewParent
 				}
 				addseparator()
 					oAction = new qAction(win) {
+						settext(T_ENV_MENU_CHANGELOG) # "Change Log"
+						setclickevent(Method(:CHANGELOG))
+					}
+					addaction(oAction)
+				addseparator()
+					oAction = new qAction(win) {
 						settext(T_ENV_MENU_LOG) # "System Log"
 						setclickevent(Method(:SystemLogAction))
 					}
-					addaction(oAction)			
+					addaction(oAction)		
 
 				addseparator()
 					oAction = new qAction(win) {

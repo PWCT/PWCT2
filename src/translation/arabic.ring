@@ -107,6 +107,8 @@
 	T_ENV_MENU_GUILIB = "المكتبة الرسومية"
 	T_ENV_MENU_LOG =  "سجل النظام"
 	T_ENV_MENU_ABOUT =  "حول"
+	T_ENV_MENU_FAQ = "الاسئلة الشائعة"
+	T_ENV_MENU_CHANGELOG = "سجل التغيرات"
 	T_ENV_LOADING = "...تحميل ملف المصدر المرئي"
 
 	T_ENV_TOOLBAR_MAINFILE = "الملف الأساسي ..."

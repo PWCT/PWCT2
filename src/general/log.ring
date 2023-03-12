@@ -9,6 +9,8 @@ load "guilib.ring"
 load "stdlibcore.ring"
 
 oSystemLog = new SystemLog 
+oFAQ = new FAQ
+oChangeLog = new ChangeLog
 
 if isMainSourceFile() {
 	oSystemLog.addMessage("Message 1")
@@ -53,7 +55,10 @@ class systemlog
 			resize(1000,600)
 			setWindowTitle(T_SYSLOG_TITLE) # "System Log"
 			setWindowFlags(Qt_Window | Qt_WindowTitleHint  | Qt_CustomizeWindowHint)
-			textlog = new qTextEdit(win)
+			textlog = new qTextEdit(win) {
+				setfontfamily("Consolas")
+				setReadOnly(True)
+			}
 			btnclose = new qPushbutton(win) {
 				setText(T_SYSLOG_CLOSE) # "Close"
 				setClickEvent("oSystemlog.win.close()")
@@ -66,3 +71,64 @@ class systemlog
 			show()
 		}
 		textlog.setText(list2str(aLog))
+
+class FAQ
+
+	win
+
+	func show
+		win = new qWidget() {
+			win = this.win
+			resize(1000,600)
+			setWindowTitle("FAQ") 
+			setWindowFlags(Qt_Window | Qt_WindowTitleHint  | Qt_CustomizeWindowHint)
+			textlog = new qTextEdit(win) {
+				setfontfamily("Consolas")
+				setReadOnly(True)
+			}
+			btnclose = new qPushbutton(win) {
+				setText(T_SYSLOG_CLOSE) 
+				setClickEvent("oFAQ.win.close()")
+			}
+			layout1 = new qVBoxLayout() {
+				addwidget(textlog)
+				addwidget(btnclose)
+			}
+			setLayout(layout1)
+			show()
+		}
+		cTextFile = PWCT_FOLDER+"/info/FAQ.txt"
+		if fexists(cTextFile)
+			textlog.setText(read(cTextFile))
+		ok
+
+class ChangeLog
+
+	win
+
+	func show
+		win = new qWidget() {
+			win = this.win
+			resize(1000,600)
+			setWindowTitle("ChangeLog") 
+			setWindowFlags(Qt_Window | Qt_WindowTitleHint  | Qt_CustomizeWindowHint)
+			textlog = new qTextEdit(win) {
+				setfontfamily("Consolas")
+				setReadOnly(True)
+			}
+			btnclose = new qPushbutton(win) {
+				setText(T_SYSLOG_CLOSE) 
+				setClickEvent("oChangeLog.win.close()")
+			}
+			layout1 = new qVBoxLayout() {
+				addwidget(textlog)
+				addwidget(btnclose)
+			}
+			setLayout(layout1)
+			show()
+		}
+		cTextFile = PWCT_FOLDER+"/info/ChangeLog.txt"
+		if fexists(cTextFile)
+			textlog.setText(read(cTextFile))
+		ok
+
