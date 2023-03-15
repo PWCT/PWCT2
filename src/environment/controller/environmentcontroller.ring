@@ -54,6 +54,8 @@ class EnvironmentController from WindowsControllerParent
 
 	cFormFile = ""
 
+	lNoMoreOutputData = False 
+
 	oView = new EnvironmentView
 
 	SetParents()
@@ -710,6 +712,21 @@ class EnvironmentController from WindowsControllerParent
 			cText = oProcessText.text() + cSysNL
 			oProcess.write(cText ,len(cText))
 			oProcessEditbox.insertplaintext(">> " + cText)
+		}
+
+	/*
+		Purpose : Kill the current Process OR Clear the Data
+		Parameters : None
+		Output : None
+	*/
+
+	func KillAppAction
+		oView {
+			oProcessEditbox.clear()
+			if ISNULL(oProcess) { return }
+			oProcess.setreadyreadstandardoutputevent("")
+			oProcess.kill()
+			oProcessEditbox.clear()
 		}
 
 	/*

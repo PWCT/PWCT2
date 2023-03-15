@@ -79,7 +79,7 @@ class FAQ
 	func show
 		win = new qWidget() {
 			win = this.win
-			resize(1000,600)
+			resize(550,600)
 			setWindowTitle("FAQ") 
 			setWindowFlags(Qt_Window | Qt_WindowTitleHint  | Qt_CustomizeWindowHint)
 			textlog = new qTextEdit(win) {
@@ -109,7 +109,7 @@ class ChangeLog
 	func show
 		win = new qWidget() {
 			win = this.win
-			resize(1000,600)
+			resize(550,600)
 			setWindowTitle("ChangeLog") 
 			setWindowFlags(Qt_Window | Qt_WindowTitleHint  | Qt_CustomizeWindowHint)
 			textlog = new qTextEdit(win) {

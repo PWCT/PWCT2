@@ -122,6 +122,7 @@
 
 	T_ENV_OW_TITLE = "Output Window"
 	T_ENV_OW_SEND = "Send"
+	T_ENV_OW_KILL = "Clear/Stop"
 	T_ENV_OW_INPUT = "Input :"
 
 
@@ -285,7 +286,7 @@
 
 	T_ABOUT_TITLE = "About"
 	T_ABOUT_DEVELOPER = "Programming Without Coding Technology (PWCT)" + nl +
-						"Version: 2.0 Rev. 2023.03.12" + nl +
+						"Version: 2.0 Rev. 2023.03.15" + nl +
 						"2023, PWCT Software"
 
 # GUI Library 

@@ -120,6 +120,7 @@
 
 	T_ENV_OW_TITLE = "نافذة النتائج"
 	T_ENV_OW_SEND = "ارسال"
+	T_ENV_OW_KILL = "محو النتائج/إيقاف البرنامج"
 	T_ENV_OW_INPUT = "ادخل :"
 
 # Goal Designer Window

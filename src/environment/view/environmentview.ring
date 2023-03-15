@@ -1120,10 +1120,18 @@ class EnvironmentView from WindowsViewParent
 				setText(T_ENV_OW_SEND)	# "Send"
 				setClickevent(Method(:SendDataAction))
 			}
+			oProcessbtnKill = new qpushbutton(oProcessWindow) {
+				//setText(T_ENV_OW_KILL)	# "C"
+				settooltip(T_ENV_OW_KILL)
+				setbtnimage(self,AppFile("images/pause.png"))
+				setmaximumwidth(100)
+				setClickevent(Method(:KillAppAction))
+			}
 			oProcessLayout1 = new qhboxlayout() {
 				AddWidget(oProcessLabel)
 				AddWidget(this.oProcessText)
 				Addwidget(oProcessbtnSend)
+				Addwidget(oProcessbtnKill)
 			}
 		}
 		oProcessEditbox = new qPlaintextedit(oProcessWindow) 
