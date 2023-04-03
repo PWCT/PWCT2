@@ -9,6 +9,8 @@ class sortlistComponentController from ComponentControllerParent
 
 	oView = new sortlistComponentView
 
+	aAllowEmptyValue = [:value2,:value3]
+
 	func GenerateAction 
 
 		if Variable(:value2) = NULL {

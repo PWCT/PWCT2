@@ -1121,7 +1121,6 @@ class EnvironmentView from WindowsViewParent
 				setClickevent(Method(:SendDataAction))
 			}
 			oProcessbtnKill = new qpushbutton(oProcessWindow) {
-				//setText(T_ENV_OW_KILL)	# "C"
 				settooltip(T_ENV_OW_KILL)
 				setbtnimage(self,AppFile("images/pause.png"))
 				setmaximumwidth(100)

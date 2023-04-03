@@ -9,6 +9,8 @@ class binarysearchComponentController from ComponentControllerParent
 
 	oView = new binarysearchComponentView
 
+	aAllowEmptyValue = [:value3]
+
 	func GenerateAction 
 
 		if Variable(:value3) = NULL {

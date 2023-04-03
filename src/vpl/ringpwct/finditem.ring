@@ -9,6 +9,8 @@ class finditemComponentController from ComponentControllerParent
 
 	oView = new finditemComponentView
 
+	aAllowEmptyValue = [:value3, :value4]
+
 	func GenerateAction 
 
 		if Variable(:value3) = NULL {
