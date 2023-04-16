@@ -672,6 +672,53 @@ class EnvironmentView from WindowsViewParent
 					}
 					addaction(oAction)
 					addseparator()
+
+					subHelpVideos = addmenu("PWCT Videos (Introduction to Programming)")
+					aVideoTitles = [
+					"1 - Print Text component",
+					"2 - Goal Designer features",
+					"3 - Get Input component",
+					"4 - Rich Comments (Adding Images)",
+					"5 - Get Character/Characters",
+					"6 - Quick Start component",
+					"7 - Arithmetic and Logical operators",
+					"8 - Relational operators",
+					"9 - Increment/Decrement and Logical NOT",
+					"10- ElseIf/Switch/While Loop/Shutdown",
+					"11- While Loop/For Loop/Loop/Exit",
+					"12- Nested For Loops",
+					"13- For In/Range Operator",
+					"14- Using Do/Again",
+					"15- Using Try/Catch",
+					"16- Using cCatchError",
+					"17- Using Functions",
+					"18- Return value from functions",
+					"19- Global/Local variables",
+					"20- Recursion",
+					"21- Short Circuit Evaluation",
+					"22- Conditions/Len/Min/Max",
+					"23- Multiplication Table",
+					"24- Using many files in the project",
+					"25- Using lists/Add/Delete/Find/Reverse/Sort",
+					"26- Multi-Dimensional Lists/2D Lists",
+					"27- Using lists as HashTable"
+					]
+					aVideosSeparator = [4,9,16,20,24]
+					subHelpVideos { 
+						for nVideoIndex=1 to len(aVideoTitles) {
+							oAction = new qAction(win) {
+								settext(aVideoTitles[nVideoIndex]) 
+								setclickevent(Method("PWCTOpenVideo("+nVideoIndex+")"))
+							}
+							addaction(oAction)
+							if Std_find(aVideosSeparator,nVideoIndex) {
+								addseparator()
+							}
+						}
+						
+					}
+					addseparator()
+
 					subHelpLF = addmenu(T_ENV_MENU_PWCTLANGREF) # "PWCT Language Reference"
 					subHelpLF { 
 						oAction = new qAction(win) {

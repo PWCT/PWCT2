@@ -610,6 +610,41 @@ class EnvironmentController from WindowsControllerParent
 			OpenURL(new qURL("file:///"+substr(PWCT_FOLDER,"\","/")+"../documents/PWCT.pdf") )
 		}
 
+	func PWCTOpenVideo nVideo
+		aVideos = [
+			"https://www.youtube.com/watch?v=zd2jUEIlr8Y&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7",
+			"https://www.youtube.com/watch?v=f9fbPKSiP4k&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=2",
+			"https://www.youtube.com/watch?v=GMlbc9bVIc0&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=3",
+			"https://www.youtube.com/watch?v=3yd72YrXxF0&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=4",
+			"https://www.youtube.com/watch?v=4KgNXz-DxcY&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=5",
+			"https://www.youtube.com/watch?v=OfzMfK_NukA&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=6",
+			"https://www.youtube.com/watch?v=gtL8m_-0F5o&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=7",
+			"https://www.youtube.com/watch?v=EVPwn6lgsDM&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=8",
+			"https://www.youtube.com/watch?v=rTJubpy7TiA&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=9",
+			"https://www.youtube.com/watch?v=8Q75DgY-m1s&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=10",
+			"https://www.youtube.com/watch?v=TtuWCah2FfY&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=11",
+			"https://www.youtube.com/watch?v=qLqIOlP90EY&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=12",
+			"https://www.youtube.com/watch?v=sLTrBXMYurw&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=13",
+			"https://www.youtube.com/watch?v=3hOFTkd0Ul8&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=14",
+			"https://www.youtube.com/watch?v=CPlyA9wo8RQ&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=15",
+			"https://www.youtube.com/watch?v=nnFKa4MShoE&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=16",
+			"https://www.youtube.com/watch?v=Bzd1Gkass5E&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=17",
+			"https://www.youtube.com/watch?v=kJXGIUoczXQ&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=18",
+			"https://www.youtube.com/watch?v=9KctZM6zmuA&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=19",
+			"https://www.youtube.com/watch?v=A9w4bOvQLBc&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=20",
+			"https://www.youtube.com/watch?v=LQdKeQRW2CM&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=21",
+			"https://www.youtube.com/watch?v=o88THX8766o&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=22",
+			"https://www.youtube.com/watch?v=zFhWc_k3MoI&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=23",
+			"https://www.youtube.com/watch?v=T6cXrW3Ob8M&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=24",
+			"https://www.youtube.com/watch?v=fceWa4_DvyQ&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=25",
+			"https://www.youtube.com/watch?v=cOdgpprb3_U&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=26",
+			"https://www.youtube.com/watch?v=kR5LCPPm89c&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=27"
+		]
+		new QDesktopServices {
+			OpenURL(new qURL(aVideos[nVideo]) )
+		}
+	
+
 
 	/*
 		Purpose : Open Help - CHM File 
