@@ -638,12 +638,32 @@ class EnvironmentController from WindowsControllerParent
 			"https://www.youtube.com/watch?v=T6cXrW3Ob8M&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=24",
 			"https://www.youtube.com/watch?v=fceWa4_DvyQ&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=25",
 			"https://www.youtube.com/watch?v=cOdgpprb3_U&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=26",
-			"https://www.youtube.com/watch?v=kR5LCPPm89c&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=27"
+			"https://www.youtube.com/watch?v=kR5LCPPm89c&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=27",
+			"https://www.youtube.com/watch?v=ZC99W16KEJM&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=28"
 		]
 		new QDesktopServices {
 			OpenURL(new qURL(aVideos[nVideo]) )
 		}
 	
+
+	func PWCTOpenGame nGame
+		aGamesFiles = [
+			"applications/StarsFighter/starsfighter.ring",
+			"applications/FlappyBird3000/flappybird3000.ring",
+			"applications/SuperMan2016/superman.ring",
+			"applications/Snake/snake.ring",
+			"applications/Escape/EscapeGame.ring",
+			"applications/Tetris/tetris.ring",
+			"applications/Maze/maze.ring",
+			"applications/Sokoban/sokoban.ring",
+			"applications/GoldMagic800/goldmagic800.ring",
+			"applications/Pairs/PairsGame.ring",
+			"applications/Cards/cards.ring",
+			"applications/MoneyBoxes/moneyController.ring"
+		]
+		cGameFile = aGamesFiles[nGame]
+		cGameFileName = exefolder() + "../../PWCT/" + cGameFile
+		RunTool(cGameFileName)
 
 
 	/*

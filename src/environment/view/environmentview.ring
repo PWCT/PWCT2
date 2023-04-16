@@ -134,6 +134,7 @@ class EnvironmentView from WindowsViewParent
 					subDistribute   = addmenu(T_ENV_MENU_DISTRIBUTE) 	# "Distribute"
 				}
 			}
+			subGames 	= addmenu("Games")
 			subHelp 	= addmenu(T_ENV_MENU_HELP) # "Help"
 			subFile { 
 				oAction = new qAction(win) {
@@ -663,6 +664,38 @@ class EnvironmentView from WindowsViewParent
 				}
 				}
 			}
+			subGames {
+					aGamesTitles = [
+					"Stars Fighter",
+					"Flappy Bird 3000",
+					"Super Man 2016",
+					"Snake",
+					"Escape",
+					"Tetris",
+					"Maze",
+					"Sokoban",
+					"Gold Magic 800",
+					"Pairs",
+					"Cards",
+					"Money Boxes"
+					]
+					aGamesSeparator = [3,8,9]
+					subGames { 
+						for nGameIndex=1 to len(aGamesTitles) {
+							oAction = new qAction(win) {
+								settext(aGamesTitles[nGameIndex]) 
+								setclickevent(Method("PWCTOpenGame("+nGameIndex+")"))
+							}
+							addaction(oAction)
+							if Std_find(aGamesSeparator,nGameIndex) {
+								addseparator()
+							}
+						}
+						
+					}
+					addseparator()
+
+			}
 			subHelp { 
 				if ! PWCTIsMobile(:HelpMenu) {
 				addseparator()
@@ -701,9 +734,10 @@ class EnvironmentView from WindowsViewParent
 					"24- Using many files in the project",
 					"25- Using lists/Add/Delete/Find/Reverse/Sort",
 					"26- Multi-Dimensional Lists/2D Lists",
-					"27- Using lists as HashTable"
+					"27- Using lists as HashTable",
+					"28- Using strings"
 					]
-					aVideosSeparator = [4,9,16,20,24]
+					aVideosSeparator = [4,9,16,20,24,27]
 					subHelpVideos { 
 						for nVideoIndex=1 to len(aVideoTitles) {
 							oAction = new qAction(win) {
