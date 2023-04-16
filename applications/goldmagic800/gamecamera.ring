@@ -26,7 +26,7 @@ class GameCamera
 	# Play 2D
 	lPlay2D = False
 	DefaultCameraData()
-	func DefaultCameraData () { 
+	func DefaultCameraData
 		# View Type
 		nViewType = 0
 		# Angle of rotation for the camera direction
@@ -43,7 +43,6 @@ class GameCamera
 		# Slow Motion
 		nToMoveUp = 0
 		nToMoveDown = 0
-	} 
 	func GameLevelCameraView  { 
 		nViewType = C_VIEWTYPE_CAMERA
 		w = SCREEN_W

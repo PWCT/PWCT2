@@ -1,6 +1,3 @@
-# Gold Magic 800 3D Game
-# 2018, Etqan Company
-# 2018, Mahmoud Fayed <msfclipper@yahoo.com>
 class GameDraw
 	func DrawFullScreenImage oBitmap,nWidth,nHeight { 
 		al_draw_scaled_bitmap(oBitmap,0,0,al_get_bitmap_width(oBitmap),al_get_bitmap_height(oBitmap),0,0,nWidth,nHeight,1)
