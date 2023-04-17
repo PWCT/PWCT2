@@ -676,6 +676,7 @@ class EnvironmentView from WindowsViewParent
 					"Sokoban",
 					"Gold Magic 800",
 					"Pairs",
+					"2048",
 					"Cards",
 					"Money Boxes"
 					]

@@ -658,6 +658,7 @@ class EnvironmentController from WindowsControllerParent
 			"applications/Sokoban/sokoban.ring",
 			"applications/GoldMagic800/goldmagic800.ring",
 			"applications/Pairs/PairsGame.ring",
+			"applications/Game2048/game2048.ring",
 			"applications/Cards/cards.ring",
 			"applications/MoneyBoxes/moneyController.ring"
 		]
