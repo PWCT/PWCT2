@@ -678,7 +678,8 @@ class EnvironmentView from WindowsViewParent
 					"Pairs",
 					"2048",
 					"Cards",
-					"Money Boxes"
+					"Money Boxes",
+					"Knight Tour"
 					]
 					aGamesSeparator = [3,8,9]
 					subGames { 

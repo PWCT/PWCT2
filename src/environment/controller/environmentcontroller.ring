@@ -661,7 +661,8 @@ class EnvironmentController from WindowsControllerParent
 			"applications/Pairs/PairsGame.ring",
 			"applications/Game2048/game2048.ring",
 			"applications/Cards/cards.ring",
-			"applications/MoneyBoxes/moneyController.ring"
+			"applications/MoneyBoxes/moneyController.ring",
+			"applications/KnightTour/knighttour.ring"
 		]
 		cGameFile = aGamesFiles[nGame]
 		cGameFileName = exefolder() + "../../PWCT/" + cGameFile
