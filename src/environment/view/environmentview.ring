@@ -733,10 +733,11 @@ class EnvironmentView from WindowsViewParent
 					"22- Conditions/Len/Min/Max",
 					"23- Multiplication Table",
 					"24- Using many files in the project",
-					"25- Using lists/Add/Delete/Find/Reverse/Sort",
+					"25- Using Lists/Add/Delete/Find/Reverse/Sort",
 					"26- Multi-Dimensional Lists/2D Lists",
-					"27- Using lists as HashTable",
-					"28- Using strings"
+					"27- Using Lists as HashTable",
+					"28- Using Strings",
+					"29- Using Date/Time"
 					]
 					aVideosSeparator = [4,9,16,20,24,27]
 					subHelpVideos { 
