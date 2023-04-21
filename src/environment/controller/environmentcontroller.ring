@@ -666,7 +666,7 @@ class EnvironmentController from WindowsControllerParent
 			"applications/Tessera/tessera.ring"
 		]
 		cGameFile = aGamesFiles[nGame]
-		cGameFileName = exefolder() + "../../PWCT/" + cGameFile
+		cGameFileName = PWCT_FOLDER + "/" + cGameFile
 		RunTool(cGameFileName)
 
 

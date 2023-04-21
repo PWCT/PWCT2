@@ -1124,20 +1124,26 @@ class EnvironmentView from WindowsViewParent
 		}
 
 		oFilesTreeWidget = new QWidget() {
-			hide()	# Wordaround on a Bug in Qt (Avoid drawing strange line)
+
+			hide()	# Work-around on a Bug in Qt (Avoid drawing strange line)
+					# Maybe related also to mobileButtonSize()
+
 			oFTExplorer = new QPushButton(oFilesTreeWidget) {
-				setText(T_PROJECTFILES_EXPLORER) # "Explorer"
-				setbtnimage(self,AppFile("images/folder.png"))
+				setTooltip(T_PROJECTFILES_EXPLORER) # "Explorer"
 				setclickEvent(Method(:OSFilesManager))
+				//this.mobileButtonSize(self)
 			}
+			setbtnimage(oFTExplorer,AppFile("images/folder.png"))
 			oFTTerminal = new QPushButton(oFilesTreeWidget) {
-				setText(T_PROJECTFILES_TERMINAL) # "Terminal"
-				setbtnimage(self,AppFile("images/terminal.png"))
+				setTooltip(T_PROJECTFILES_TERMINAL) # "Terminal"
 				setclickEvent(Method(:OSTerminal))
+				//this.mobileButtonSize(self)
 			}
-			oFTHLayout = new QHboxLayout() {
+			setbtnimage(oFTTerminal,AppFile("images/terminal.png"))
+			oFTHLayout = new QHBoxLayout() {
 				addWidget(oFTExplorer)
 				addWidget(oFTTerminal)
+				addstretch(0)
 			}
 			oFTVLayout = new QVBoxLayout() {
 				addLayout(oFTHLayout)
