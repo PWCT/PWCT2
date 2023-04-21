@@ -309,6 +309,10 @@
 	T_PWCTFILE_WRONGFILEFORMAT = "خطأ فى محتوي الملف"
 
 
+# Project Files 
+	T_PROJECTFILES_EXPLORER = "المتصفح"
+	T_PROJECTFILES_TERMINAL = "سطر الاوامر"
+
 #==================================================
 
 	if isWebAssembly() {

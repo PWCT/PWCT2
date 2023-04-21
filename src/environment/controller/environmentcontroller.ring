@@ -1160,10 +1160,11 @@ class EnvironmentController from WindowsControllerParent
 
 	func UpdateCurrentDirectory
 		cActiveFileName = parent().GetActiveSourceFile()
-		if cActiveFileName != Null {
+		if (cActiveFileName != Null) and (cActiveFileName != "noname.ring") {
 			this.cCurrentDir = justfilepath(cActiveFileName)
+		else 
+			this.cCurrentDir = PWCT_FOLDER + "/applications"
 		}
-
 
 	func OSTerminal
 		UpdateCurrentDirectory()

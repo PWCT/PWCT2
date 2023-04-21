@@ -1122,13 +1122,36 @@ class EnvironmentView from WindowsViewParent
 			}
 			header().hide()			
 		}
-		
+
+		oFilesTreeWidget = new QWidget() {
+			hide()	# Wordaround on a Bug in Qt (Avoid drawing strange line)
+			oFTExplorer = new QPushButton(oFilesTreeWidget) {
+				setText(T_PROJECTFILES_EXPLORER) # "Explorer"
+				setbtnimage(self,AppFile("images/folder.png"))
+				setclickEvent(Method(:OSFilesManager))
+			}
+			oFTTerminal = new QPushButton(oFilesTreeWidget) {
+				setText(T_PROJECTFILES_TERMINAL) # "Terminal"
+				setbtnimage(self,AppFile("images/terminal.png"))
+				setclickEvent(Method(:OSTerminal))
+			}
+			oFTHLayout = new QHboxLayout() {
+				addWidget(oFTExplorer)
+				addWidget(oFTTerminal)
+			}
+			oFTVLayout = new QVBoxLayout() {
+				addLayout(oFTHLayout)
+				addWidget(this.oFilesTree)
+			}
+			setLayout(oFTVLayout)
+		}
+
 		oDockFilesManager = new qdockwidget(win,0) {
 			nWidth = floor(this.oDesktop.Width()*0.17)
 			setMinimumwidth(nWidth)
 			setLayoutDirection(C_TRANSLATION_ENGLISH)
 			setGeometry(00,00,nWidth,200)
-			setwidget(this.oFilesTree)
+			setwidget(oFilesTreeWidget)
 			setwindowtitle(T_ENV_DOCK_PROJECTFILES) # "Project Files"
 		}
 		win.adddockwidget(1,oDockFilesManager,1)

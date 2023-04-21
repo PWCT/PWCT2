@@ -286,7 +286,7 @@
 
 	T_ABOUT_TITLE = "About"
 	T_ABOUT_DEVELOPER = "Programming Without Coding Technology (PWCT)" + nl +
-						"Version: 2.0 Rev. 2023.04.19" + nl +
+						"Version: 2.0 Rev. 2023.04.21" + nl +
 						"2023, PWCT Software"
 
 # GUI Library 
@@ -308,6 +308,10 @@
 
 	T_PWCTFILE_ERROR = "Error"
 	T_PWCTFILE_WRONGFILEFORMAT = "Wrong File Format!"
+
+# Project Files 
+	T_PROJECTFILES_EXPLORER = " Files Manager"
+	T_PROJECTFILES_TERMINAL = " Command Prompt"
 
 #==================================================
 
