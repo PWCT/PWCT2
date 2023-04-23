@@ -54,8 +54,6 @@ class EnvironmentView from WindowsViewParent
 		win = new qMainWindow()
 		{
 			if not PWCTIsMobile(:WindowDimensions) {
-				//move(-10,0)
-				//resize(1000,1000)
 				move(10,10)
 				resize(this.oDesktop.width(),this.oDesktop.height())
 			}

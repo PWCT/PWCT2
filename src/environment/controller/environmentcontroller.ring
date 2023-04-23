@@ -173,6 +173,7 @@ class EnvironmentController from WindowsControllerParent
 			UploadAction()
 			return 
 		}
+		UpdateCurrentDirectory()
 		parent().OpenFileAction()
 
 	/*
@@ -186,6 +187,7 @@ class EnvironmentController from WindowsControllerParent
 			DownloadAction()
 			return 
 		}
+		UpdateCurrentDirectory()
 		parent().SaveCurrentFileAction()
 
 	/*
@@ -199,6 +201,7 @@ class EnvironmentController from WindowsControllerParent
 			DownloadAction()
 			return 
 		ok
+		UpdateCurrentDirectory()
 		parent().SaveFileAction()
 
 	/*
