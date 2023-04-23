@@ -21,9 +21,8 @@ class checkdatatypeComponentController from ComponentControllerParent
 
 		NewStep( StepData(:Value3) + " = "  +  T_CT_CHECKDATATYPE_ST_VALUE  +
 			 StepData(:Value ) +  T_CT_CHECKDATATYPE_ST_VALUE2 + 
-			StyleData(T_CT_CHECKDATATYPE_IP_VALUE2LIST[Variable(:Value2)])  )
+			StyleData(T_CT_CHECKDATATYPE_IP_VALUE2LIST[Variable(:Value2)]) )
 		SetStepCode( Variable(:Value3) + " = "+cFunc+"("  + Variable(:Value ) + ")"  )
-
 		return True 
 
 class checkdatatypeComponentView from ComponentViewParent

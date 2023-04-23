@@ -243,7 +243,8 @@ class ComponentViewParent from WindowsViewParent
 		Output : the listbox object
 	*/
 
-	func ListBox cTitle,cVariable,aItems
+	func ListBox cTitle,cVariable,aItemsDontEdit
+		aItems = aItemsDontEdit
 		# Process the List Items (We need each item to be [id,value])
 		if not isList(aItems[1]) {
 			# We get items as ["item1","item2",...,"itemN"] without IDs
