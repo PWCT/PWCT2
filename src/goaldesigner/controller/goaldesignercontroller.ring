@@ -574,6 +574,8 @@ class GoalDesignerController from WindowsControllerParent
 		oParentItem  = oView.oStepsTree.currentItem()
 		nParentStepID = oView.oStepsTree.GetIDByObj(oParentItem)
 
+		oParentItemAtStart = oParentItem
+
 		# When we paste in a location (Not Start Here)
 		# We paste after the selected step 
 			nParentStepID_2 = nParentStepID
@@ -597,12 +599,19 @@ class GoalDesignerController from WindowsControllerParent
 		# Fix Drawing 
 			oView.fixDrawing()
 		# Expand Items 
+			/*
 			aSteps = oView.oStepsTree.StepsList(oParentItem)
 			for oItem in aSteps {
-				oItem.setexpanded(True)
+				oItem.setexpanded(false)
 			}
+			*/
+
+		# Select the original parent 
+			oView.oStepsTree.SetCurrentItem(oParentItemAtStart,0)	
+
 		lSaveFlag = True
 		AutoRun()
+
 
 
 	/*
