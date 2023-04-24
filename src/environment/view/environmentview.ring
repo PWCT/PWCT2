@@ -738,7 +738,8 @@ class EnvironmentView from WindowsViewParent
 					"26- Multi-Dimensional Lists/2D Lists",
 					"27- Using Lists as HashTable",
 					"28- Using Strings",
-					"29- Using Date/Time"
+					"29- Using Date/Time",
+					"30- Check Data Type and Conversion"
 					]
 					aVideosSeparator = [4,9,16,20,24,27]
 					subHelpVideos { 
