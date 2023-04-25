@@ -910,6 +910,8 @@ class GoalDesignerController from WindowsControllerParent
 	*/
 
 	func SaveFileAction2
+		showmessageInStatusBar(T_ENVMSG_SAVE) # "Save the visual source file..."
+		PWCT_APP.processevents()
 		oVisualSourceFile.RemoveFile()
 		oVisualSourceFile.Open()
 		oVisualSourceFile.SetStepsTreeTable(oModel.oStepsTreeModel.GetData())
@@ -919,6 +921,11 @@ class GoalDesignerController from WindowsControllerParent
 		oVisualSourceFile.CreateTables()
 		oVisualSourceFile.SaveTables()
 		oVisualSourceFile.Close()
+		showmessageInStatusBar(T_ENVMSG_GENERATE) # "Generate the source code..."
+		PWCT_APP.processevents()
+		oProgramController.prepare(self)
+		showmessageInStatusBar(T_ENVMSG_SAVEGENDONE) # "File Saved and the source code is generated!")
+		PWCT_APP.processevents()
 
 	/*
 		Purpose : Open File Action

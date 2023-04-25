@@ -313,6 +313,11 @@
 	T_PROJECTFILES_EXPLORER = " Files Manager"
 	T_PROJECTFILES_TERMINAL = " Command Prompt"
 
+# Environment Messages in Statusbar
+	T_ENVMSG_SAVE = "Save the visual source file..."
+	T_ENVMSG_GENERATE = "Generate the source code..."
+	T_ENVMSG_SAVEGENDONE = "File Saved and the source code is generated!"
+
 #==================================================
 
 	if isWebAssembly() {

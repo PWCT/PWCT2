@@ -313,6 +313,12 @@
 	T_PROJECTFILES_EXPLORER = "المتصفح"
 	T_PROJECTFILES_TERMINAL = "سطر الاوامر"
 
+# Environment Messages in Statusbar
+	T_ENVMSG_SAVE = "حفظ الملف"
+	T_ENVMSG_GENERATE = "توليد الكود النصي"
+	T_ENVMSG_SAVEGENDONE = "تم حفظ الملف وانتاج ملف الكود"
+
+
 #==================================================
 
 	if isWebAssembly() {
