@@ -1,5 +1,5 @@
 # SquaresPuzzle Game (Using Allegro game programming library)
-# Author : Majdi Sobain <majdisobain@gmail.com>
+# Author: Majdi Sobain
 	load "gamelib.ring"
 	# Constants and Global Variables
 		BoardDim = 398

@@ -672,6 +672,7 @@ class EnvironmentView from WindowsViewParent
 					"Tetris",
 					"Maze",
 					"Sokoban",
+					"Squares Puzzle",
 					"Gold Magic 800",
 					"Pairs",
 					"2048",
@@ -681,7 +682,7 @@ class EnvironmentView from WindowsViewParent
 					"Tessera",
 					"Matching"
 					]
-					aGamesSeparator = [3,8,9]
+					aGamesSeparator = [3,8,10]
 					subGames { 
 						for nGameIndex=1 to len(aGamesTitles) {
 							oAction = new qAction(win) {

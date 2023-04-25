@@ -661,6 +661,7 @@ class EnvironmentController from WindowsControllerParent
 			"applications/Tetris/tetris.ring",
 			"applications/Maze/maze.ring",
 			"applications/Sokoban/sokoban.ring",
+			"applications/SquaresPuzzle/squarespuzzle.ring",
 			"applications/GoldMagic800/goldmagic800.ring",
 			"applications/Pairs/PairsGame.ring",
 			"applications/Game2048/game2048.ring",
