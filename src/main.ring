@@ -46,5 +46,10 @@
 	load "tools/import/importfiles.ring"
 	load "tools/vsfgenerator/vsfgenerator.ring"
 
+# RightToLeft() function
+	if isWindows() and T_LAYOUTDIRECTION	
+		load "winlib.ring"
+	ok
+
 # Run PWCT Environment (See environment/environment.ring)
 	StartEnvironment()	

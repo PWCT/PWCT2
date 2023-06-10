@@ -57,7 +57,12 @@ class EnvironmentView from WindowsViewParent
 				move(10,10)
 				resize(this.oDesktop.width(),this.oDesktop.height())
 			}
+
 			setLayoutDirection(T_LAYOUTDIRECTION)
+			if T_LAYOUTDIRECTION and isWindows()
+				RightToLeft( winID() )
+			ok
+
 			setWindowTitle(T_ENV_TITLE) # "Programming Without Coding Technology"
 			oSystemLog.addMessage("Create Menubar")
 			self.CreateMenuBar(win)
