@@ -182,7 +182,7 @@ class EnvironmentView from WindowsViewParent
 				addaction(oAction)
 				addseparator()
 				oAction = new qaction(win) {
-					setShortcut(new QKeySequence("Ctrl+q"))
+					setShortcut(new QKeySequence("Alt+F4"))
 					setbtnimage(self,AppFile("images/close.png"))
 					settext(T_ENV_MENU_EXIT) # "Exit"
 					setclickevent(Method(:CloseAction))
