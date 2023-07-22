@@ -277,7 +277,7 @@ Class ProgramController
 				if ! fexists(cFileToRun) {
 					cFileToRun = cDir+"\"+cFileToRun
 				}
-				cCode = 'call "' +
+				cCode = 'start call "' +
 					cFile + '" "' + cFileToRun + '"' + nl
 				system(cCode)
 				chdir(cDir)
