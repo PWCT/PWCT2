@@ -385,7 +385,7 @@ class ParserStmt
 			return True 
 		}
 		/* Statement --> Exit (Go to outside the loop) */
-		if iskeyword(K_EXIT) {
+		if iskeyword(K_EXIT) || iskeyword(K_BREAK) {
 			clearTextBuffer()
 			nexttoken()
 			/* Check Number  (Exit from more than one loop) */
@@ -400,7 +400,7 @@ class ParserStmt
 			return True 
 		}
 		/* Statement --> Loop (Continue) */
-		if iskeyword(K_LOOP) {
+		if iskeyword(K_LOOP) || iskeyword(K_CONTINUE) {
 			clearTextBuffer()
 			nexttoken()
 			/* Check Number  (Continue from more than one loop) */
