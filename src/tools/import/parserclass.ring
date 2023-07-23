@@ -52,7 +52,7 @@ class ParserClass
 			}
 		}
 		/* Statement --> Func|Def Identifier [PARALIST] */
-		if iskeyword(K_FUNC) or iskeyword(K_DEF) {
+		if iskeyword(K_FUNC) or iskeyword(K_DEF) or iskeyword(K_FUNCTION) {
 			ClearTextBuffer()
 			nexttoken()
 			RemoveOpenedBraceFromBuffer()

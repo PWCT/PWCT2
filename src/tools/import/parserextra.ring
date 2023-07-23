@@ -186,7 +186,8 @@ class ParserExtra
 				exit
 			}
 		}
-		if iskeyword(K_END) or iskeyword(nKeyword) {
+		if iskeyword(K_END) or iskeyword(nKeyword) or
+			 ( (nKeyword = K_ENDFUNC) and iskeyword(K_ENDFUNCTION) ) {
 			nexttoken()
 		}
 		return 1 

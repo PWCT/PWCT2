@@ -512,7 +512,7 @@ class ParserExpr
 			}
 		}
 		/* Factor --> Anonymous Function */
-		if iskeyword(K_FUNC) or iskeyword(K_DEF) {
+		if iskeyword(K_FUNC) or iskeyword(K_DEF) or iskeyword(K_FUNCTION) {
 			manualAddToSecondTextBuffer(" func ")
 			nexttoken()
 			/*

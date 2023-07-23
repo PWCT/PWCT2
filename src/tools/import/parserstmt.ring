@@ -124,7 +124,7 @@ class ParserStmt
 									}
 								}
 								oTarget.GenerateBlockEnd(self)
-								if iskeyword(K_NEXT) or iskeyword(K_END) or csbraceend() {
+								if iskeyword(K_NEXT) or iskeyword(K_END) or iskeyword(K_ENDFOR) or csbraceend() {
 									/* Generate Code */
 									nexttoken()
 									clearTextBuffer()
@@ -160,7 +160,7 @@ class ParserStmt
 							}
 						}
 						oTarget.GenerateBlockEnd(self)
-						if iskeyword(K_NEXT) or iskeyword(K_END) or csbraceend() {
+						if iskeyword(K_NEXT) or iskeyword(K_END) or iskeyword(K_ENDFOR) or csbraceend() {
 							nexttoken()
 							/* Generate Code */
 							clearTextBuffer()
@@ -226,7 +226,7 @@ class ParserStmt
 					}
 					oTarget.GenerateBlockEnd(self)
 				}
-				if iskeyword(K_OK) or iskeyword(K_END) or csbraceend() {
+				if iskeyword(K_OK) or iskeyword(K_END) or iskeyword(K_ENDIF) or csbraceend() {
 					/* Generate Code */
 					oTarget.GenerateBlockEnd(self)
 					nexttoken()
@@ -261,7 +261,7 @@ class ParserStmt
 					}
 				}
 				oTarget.GenerateBlockEnd(self)
-				if iskeyword(K_END) or csbraceend() {
+				if iskeyword(K_END) or iskeyword(K_ENDWHILE) or csbraceend() {
 					/* Generate Code */
 					nexttoken()
 					clearTextBuffer()
@@ -363,7 +363,7 @@ class ParserStmt
 					}
 				}
 				oTarget.GenerateBlockEnd(self)
-				if iskeyword(K_DONE) or iskeyword(K_END) or csbraceend() {
+				if iskeyword(K_DONE) or iskeyword(K_END) or iskeyword(K_ENDTRY) or csbraceend() {
 					nexttoken()
 					/* Generate Code */
 					clearTextBuffer()
@@ -464,7 +464,7 @@ class ParserStmt
 				}
 				oTarget.GenerateBlockEnd(self)
 				/* OFF */
-				if iskeyword(K_OFF) or iskeyword(K_END) or csbraceend() {
+				if iskeyword(K_OFF) or iskeyword(K_END) or iskeyword(K_ENDSWITCH) or csbraceend() {
 					nexttoken()
 					clearTextBuffer()
 					return True 
