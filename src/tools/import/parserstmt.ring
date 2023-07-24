@@ -524,7 +524,7 @@ class ParserStmt
 		x = expr()
 		nTokensEnd  = nActiveToken - 1
 		cTokensText = ""
-		if nTokensEnd > nTokensStart {
+		if nTokensEnd >= nTokensStart {
 			cTokensText = TokensText(nTokensStart,nTokensend)
 		}
 		aParseTree = aParseTreeCopy
