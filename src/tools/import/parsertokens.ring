@@ -260,16 +260,26 @@ class ParserTokens
 			case C_KEYWORD 
 				cTokensText += lower(aKeywords[0+aToken[C_TOKENVALUE]]) + " "
 			case C_OPERATOR 
+				if (len(cTokensText) > 1) and (right(cTokensText,1) != " ") {
+					if aToken[C_TOKENVALUE] = ")" or aToken[C_TOKENVALUE] = "}" {
+						if right(cTokensText,1) != "(" or right(cTokensText,1) = "{" {
+							cTokensText += " "
+						}
+					}
+				}
 				cTokensText += aToken[C_TOKENVALUE]
 				if aToken[C_TOKENVALUE] = ")" or aToken[C_TOKENVALUE] = "{" {
 					cTokensText += " "
 				}
 			case C_LITERAL 
-				cTokensText += aToken[C_TOKENVALUE]
+				cTokensText += aToken[C_TOKENVALUE] + " "
 			case C_NUMBER 
-				cTokensText += "" + aToken[C_TOKENVALUE]
-			case C_IDENTIFIER 
-				cTokensText += "" + aToken[C_TOKENVALUE]
+				cTokensText += "" + aToken[C_TOKENVALUE] + " "
+			case C_IDENTIFIER
+				if (len(cTokensText) > 1) and (right(cTokensText,1) != " ") {
+					cTokensText += " "
+				}  
+				cTokensText += "" + aToken[C_TOKENVALUE] 
 			case C_ENDLINE 
 			case C_COMMENT 
 			}

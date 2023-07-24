@@ -47,7 +47,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">new&nbsp;qDate()&nbsp;{&nbsp;setDate(y,m,d)&nbsp;}</font></span>"
+				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">new&nbsp;qDate()&nbsp;{&nbsp;setDate(&nbsp;y,&nbsp;m,&nbsp;d&nbsp;)&nbsp;}</font></span>"
 			],
 			[
 				"active",
@@ -55,7 +55,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"return new qDate() { setDate(y,m,d) }"
+				"return new qDate() { setDate( y, m, d ) }"
 			],
 			[
 				"interactionid",
@@ -75,7 +75,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Return new qDate() { setDate(y,m,d) }"
+				"Return new qDate() { setDate( y, m, d ) }"
 			]
 		]
 	]
@@ -87,7 +87,7 @@ aInteractionsTable = [
 		1,
 		"",
 		"24/07/2023",
-		"17:19:22",
+		"17:37:25",
 		""
 	],
 	[
@@ -95,8 +95,8 @@ aInteractionsTable = [
 		1,
 		"return",
 		"24/07/2023",
-		"17:19:22",
-		"value;;_RV_;;new qDate() { setDate(y,m,d) };;_RV_;;"
+		"17:37:25",
+		"value;;_RV_;;new qDate() { setDate( y, m, d ) };;_RV_;;"
 	]
 ]
 
