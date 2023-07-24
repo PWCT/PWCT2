@@ -2,9 +2,9 @@
 
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
-cNaturalLanguageName     = 'English'
-nStepsID                 = 3		
-nInteractionsID          = 3
+cNaturalLanguageName     = 'english'
+nStepsID                 = 4		
+nInteractionsID          = 4
 
 aStepsTable = [
 	[
@@ -116,6 +116,45 @@ aStepsTable = [
 				"Input aDisks"
 			]
 		]
+	],
+	[
+		4,
+		1,
+		[
+			[
+				"name",
+				"Ask User"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# Ask User
+"
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Ask User"
+			]
+		]
 	]
 ]
 
@@ -124,25 +163,33 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"04/03/2021",
-		"09:06:23",
+		"24/07/2023",
+		"17:18:20",
 		""
 	],
 	[
 		2,
 		1,
 		"print",
-		"04/03/2021",
-		"09:06:23",
+		"24/07/2023",
+		"17:18:20",
 		"text;;_RV_;;How many Disks (5) : ;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"getinput",
-		"04/03/2021",
-		"09:06:23",
-		"text;;_RV_;;aDisks;;_RV_;;"
+		"24/07/2023",
+		"17:18:20",
+		"text;;_RV_;;aDisks;;_RV_;;number;;_RV_;;0;;_RV_;;"
+	],
+	[
+		4,
+		1,
+		"comment_text",
+		"24/07/2023",
+		"17:18:20",
+		"value;;_RV_;;Ask User;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	]
 ]
 
