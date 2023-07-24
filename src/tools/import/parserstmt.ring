@@ -38,9 +38,8 @@ class ParserStmt
 			nexttoken()
 			IGNORENEWLINE() 
 			nAssignmentFlag = 0 				
-			x = expr()
+			x = GetExprAsString()
 			nAssignmentFlag = 1 
-			AddParameterFromSecondBuffer(:Expression)
 			oTarget.GenerateSeeExpr(self)
 			clearTextBuffer()
 			return x 
@@ -51,9 +50,8 @@ class ParserStmt
 			nexttoken()
 			IGNORENEWLINE() 
 			nAssignmentFlag = 0 
-			x = expr()
+			x = GetExprAsString()
 			nAssignmentFlag = 1 
-			AddParameterFromSecondBuffer(:Expression)
 			oTarget.GenerateQuestionMarkExpr(self)
 			clearTextBuffer()
 			return x 
