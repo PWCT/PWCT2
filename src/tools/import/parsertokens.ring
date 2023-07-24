@@ -251,3 +251,27 @@ class ParserTokens
 		? "Parse Tree..."
 		? List2Code(aParseTree)
 
+
+	func TokensText nFrom, nTo 
+		cTokensText = ""	
+		for t=nFrom to nTo {
+			aToken = aTokens[t] 
+			switch aToken[C_TOKENTYPE] {
+			case C_KEYWORD 
+				cTokensText += lower(aKeywords[0+aToken[C_TOKENVALUE]]) + " "
+			case C_OPERATOR 
+				cTokensText += aToken[C_TOKENVALUE]
+				if aToken[C_TOKENVALUE] = ")" or aToken[C_TOKENVALUE] = "{" {
+					cTokensText += " "
+				}
+			case C_LITERAL 
+				cTokensText += aToken[C_TOKENVALUE]
+			case C_NUMBER 
+				cTokensText += "" + aToken[C_TOKENVALUE]
+			case C_IDENTIFIER 
+				cTokensText += "" + aToken[C_TOKENVALUE]
+			case C_ENDLINE 
+			case C_COMMENT 
+			}
+		} 		
+		return cTokensText	

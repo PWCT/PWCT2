@@ -314,17 +314,9 @@ class ParserStmt
 			nexttoken()
 			x = 1 
 			if isendline() = 0 and isComment() = 0 {
-				/* Generate Code */
-				nAssignmentFlag = 0 
-				x = expr()
+				nAssignmentFlag = 0
+				x = GetExprAsString()
 				nAssignmentFlag = 1 
-				/* Generate Code */
-				AddParameterFromSecondBuffer(:Expression)
-			else 
-				/*
-				**  Generate Code 
-				**  Return NULL 
-				*/
 			}
 			oTarget.GenerateReturn(self)
 			clearTextBuffer()
@@ -507,3 +499,34 @@ class ParserStmt
 		AddParameterFromSecondBuffer(:Expression)
 		oTarget.GenerateExpressionCommand(self)
 		clearTextBuffer()
+
+	func GetExprAsString 
+
+		/*
+			When we have a code like 
+				Return new qDate() { setDate(y,m,d) }
+			Ring Compiler while produce instructions for 
+				new qDate() { setDate(y,m,d) }
+			Then it will produce the Return instruction 
+			To return the expression on the Stack 
+			This is OK for Ring Compiler 
+			But for Ring2PWCT we want a different behavior 
+			We want to generate the Return instruction 
+			While generating new qDate() { setDate(y,m,d) } as expression 
+			So using GetExprAsString() we can achive this by
+				1 - calling expr()
+				2 - Ignore all of the generated instruction (added to aParseTree)
+				3 - Get tokens text parsed by expr() 
+		*/
+
+		aParseTreeCopy = aParseTree  
+		nTokensStart = nActiveToken
+		x = expr()
+		nTokensEnd  = nActiveToken - 1
+		cTokensText = ""
+		if nTokensEnd > nTokensStart {
+			cTokensText = TokensText(nTokensStart,nTokensend)
+		}
+		aParseTree = aParseTreeCopy
+		addParameterAndValue(:Expression,cTokensText)
+		return x 

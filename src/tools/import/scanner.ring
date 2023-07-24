@@ -55,6 +55,5 @@ class Scanner
 				 aToken[C_TOKENVALUE]
 			}
 		}
-	
-	
-	
+
+
