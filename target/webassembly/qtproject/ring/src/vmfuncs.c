@@ -438,7 +438,7 @@ void ring_vm_returnnull ( VM *pVM )
 void ring_vm_newfunc ( VM *pVM )
 {
     int x,nSP,nMax  ;
-    List *pList, *aParameters  ;
+    List *pList, *aParameters,*aRefList,*pVar,*pRef  ;
     String *pParameter  ;
     char *cParameters  ;
     char cStr[2]  ;
@@ -468,6 +468,7 @@ void ring_vm_newfunc ( VM *pVM )
         }
         ring_string_delete_gc(pVM->pRingState,pParameter);
         /* Set Parameters Value */
+        aRefList = ring_list_new_gc(pVM->pRingState,0);
         for ( x = ring_list_getsize(aParameters) ; x >= 1 ; x-- ) {
             if ( nSP < pVM->nSP ) {
                 if ( RING_VM_STACK_ISSTRING ) {
@@ -479,6 +480,18 @@ void ring_vm_newfunc ( VM *pVM )
                 else if ( RING_VM_STACK_ISPOINTER ) {
                     if ( ! ring_list_isrefparameter(pVM,ring_list_getstring(aParameters,x)) ) {
                         ring_vm_addnewpointervar(pVM,ring_list_getstring(aParameters,x),RING_VM_STACK_READP,RING_VM_STACK_OBJTYPE);
+                        if ( RING_VM_STACK_OBJTYPE == RING_OBJTYPE_VARIABLE ) {
+                            pVar = (List *) RING_VM_STACK_READP ;
+                            if ( ring_list_islist(pVar,RING_VAR_VALUE) ) {
+                                pRef = ring_list_getlist(pVar,RING_VAR_VALUE);
+                                ring_list_disablecopybyref(pRef);
+                            }
+                        }
+                    }
+                    else {
+                        pVar = (List *) RING_VM_STACK_READP ;
+                        pRef = ring_list_getlist(pVar,RING_VAR_VALUE);
+                        ring_list_addpointer_gc(pVM->pRingState,aRefList,pRef);
                     }
                 }
                 RING_VM_STACK_POP ;
@@ -491,6 +504,13 @@ void ring_vm_newfunc ( VM *pVM )
                 return ;
             }
         }
+        /* Set lNewRef for aRefList members */
+        for ( x = 1 ; x <= ring_list_getsize(aRefList) ; x++ ) {
+            pRef = (List *) ring_list_getpointer(aRefList,x) ;
+            ring_list_disablelnewref(pRef);
+        }
+        /* Clean Memory */
+        ring_list_delete_gc(pVM->pRingState,aRefList);
         ring_list_delete_gc(pVM->pRingState,aParameters);
     }
     if ( nSP < pVM->nSP ) {
@@ -540,7 +560,7 @@ void ring_vm_removeblockflag ( VM *pVM )
 void ring_vm_movetoprevscope ( VM *pVM,int nFuncType )
 {
     Item *pItem  ;
-    List *pList,*pList2,*pList3,*pRef  ;
+    List *pList,*pList2,*pList3  ;
     /*
     **  When the function return a value of type List or nested List 
     **  We copy the list to the previous scope, change the pointer 
@@ -548,20 +568,14 @@ void ring_vm_movetoprevscope ( VM *pVM,int nFuncType )
     if ( ring_list_getsize(pVM->pMem) < 2 ) {
         return ;
     }
+    /* Check Flag */
+    if ( pVM->lDontMoveToPrevScope ) {
+        pVM->lDontMoveToPrevScope = 0 ;
+        return ;
+    }
     /* Get The Source List */
     if ( RING_VM_STACK_OBJTYPE == RING_OBJTYPE_VARIABLE ) {
         pList = (List *) RING_VM_STACK_READP ;
-        if ( ring_list_isrefcontainer(pList) ) {
-            /*
-            **  This is a container variable that will not be deleted 
-            **  So we don't need to move it to the previous scope 
-            **  Also, This is important to keep the Reference Count correct 
-            */
-            pRef = ring_list_getlist(pList,RING_VAR_VALUE);
-            if ( ! ( (nFuncType == RING_FUNCTYPE_SCRIPT) && ring_list_isnewref(pRef) && (ring_list_getrefcount(pRef) > 1) ) ) {
-                return ;
-            }
-        }
         if ( ring_list_islist(pList,RING_VAR_VALUE) ) {
             pList = ring_list_getlist(pList,RING_VAR_VALUE);
         }
@@ -576,10 +590,24 @@ void ring_vm_movetoprevscope ( VM *pVM,int nFuncType )
     else {
         return ;
     }
-    pList3 = ring_vm_newvar2(pVM,RING_TEMP_VARIABLE,ring_vm_prevtempmem(pVM));
+    /* Create the Temp. Variable */
+    ring_vm_createtemplist(pVM);
+    pList3 = (List *) RING_VM_STACK_READP ;
+    RING_VM_STACK_POP ;
     ring_list_setint_gc(pVM->pRingState,pList3,RING_VAR_TYPE,RING_VM_LIST);
     ring_list_setlist_gc(pVM->pRingState,pList3,RING_VAR_VALUE);
     pList2 = ring_list_getlist(pList3,RING_VAR_VALUE);
+    /* Check Dont Ref flag to avoid reusage in wrong scope */
+    if ( ring_list_isdontref(pList) ) {
+        /*
+        **  We don't care about this flag here 
+        **  It's important when we pass (new obj) to ref() function 
+        **  In Ring functions, We just disable it 
+        **  Ref() In this case will not lead us here because it uses lMoveToPrevScope 
+        **  Which is checked in the start of this function 
+        */
+        ring_list_disabledontref(pList);
+    }
     /* Copy the list */
     if ( ring_list_isref(pList) ) {
         ring_list_setlistbyref_gc(pVM->pRingState,pList3,RING_VAR_VALUE,pList);
@@ -589,12 +617,22 @@ void ring_vm_movetoprevscope ( VM *pVM,int nFuncType )
             ring_list_swaptwolists(pList2,pList);
         }
         else {
-            ring_vm_list_copy(pVM,pList2,pList);
-            /* Update self object pointer */
-            if ( ring_vm_oop_isobject(pList2) ) {
-                ring_vm_oop_updateselfpointer(pVM,pList2,RING_OBJTYPE_VARIABLE,pList3);
+            /* When we return a local object - Swap Container Lists (Don't copy object list) */
+            if ( ring_vm_oop_isobject(pList) ) {
+                if ( ring_vm_oop_objtypefromobjlist(pList) == RING_OBJTYPE_VARIABLE ) {
+                    ring_list_swaptwolists(pList3,ring_vm_oop_objvarfromobjlist(pList));
+                    ring_vm_oop_updateselfpointer(pVM,pList,RING_OBJTYPE_VARIABLE,pList3);
+                    RING_VM_STACK_SETPVALUE(pList3);
+                    RING_VM_STACK_OBJTYPE = RING_OBJTYPE_VARIABLE ;
+                    return ;
+                }
             }
+            ring_vm_list_copy(pVM,pList2,pList);
             ring_list_enabledontref(pList2);
+        }
+        /* Update self object pointer */
+        if ( ring_vm_oop_isobject(pList2) ) {
+            ring_vm_oop_updateselfpointer(pVM,pList2,RING_OBJTYPE_VARIABLE,pList3);
         }
     }
     RING_VM_STACK_SETPVALUE(pList3);
@@ -699,12 +737,34 @@ List * ring_vm_prevtempmem ( VM *pVM )
     return pList ;
 }
 
-void ring_vm_freetemplists ( VM *pVM )
+void ring_vm_freetemplistsins ( VM *pVM )
 {
-    List *pTempMem  ;
-    int x,nStart,lMutex  ;
+    ring_vm_freetemplists(pVM, & RING_VM_IR_READI, & RING_VM_IR_READIVALUE(2));
+}
+
+void ring_vm_freetemplists ( VM *pVM, int *nTempCount, int *nScopeID )
+{
+    List *pTempMem, *pList, *pList2  ;
+    int x,x2,lFound,nStart,lMutex  ;
     nStart = 1 ;
     lMutex = 0 ;
+    /* Clear lists inside aDeleteLater */
+    for ( x = ring_list_getsize(pVM->aDeleteLater) ; x >= 1 ; x-- ) {
+        pList = (List *) ring_list_getpointer(pVM->aDeleteLater,x) ;
+        lFound = 0 ;
+        /* Be sure that the list doesn't exist in opened objects */
+        for ( x2 = 1 ; x2 <= ring_list_getsize(pVM->aBraceObjects) ; x2++ ) {
+            pList2 = ring_list_getlist(pVM->aBraceObjects,x2);
+            if ( ring_list_getpointer(pList2,RING_ABRACEOBJECTS_BRACEOBJECT) == pList ) {
+                lFound = 1 ;
+                break ;
+            }
+        }
+        if ( lFound == 0 ) {
+            ring_list_delete_gc(pVM->pRingState,pList);
+            ring_list_deleteitem_gc(pVM->pRingState,pVM->aDeleteLater,x);
+        }
+    }
     /* Check that we are not in the class region */
     if ( pVM->nInClassRegion ) {
         /*
@@ -723,11 +783,11 @@ void ring_vm_freetemplists ( VM *pVM )
         lMutex = 1 ;
         pTempMem = pVM->pTempMem ;
     }
-    if ( (RING_VM_IR_READI == 0) || (RING_VM_IR_READIVALUE(2) !=pVM->nActiveScopeID) ) {
-        RING_VM_IR_READI = ring_list_getsize(pTempMem) + 1 ;
-        RING_VM_IR_READIVALUE(2) = pVM->nActiveScopeID ;
+    if ( ( *nTempCount == 0) || (*nScopeID !=pVM->nActiveScopeID) ) {
+        *nTempCount = ring_list_getsize(pTempMem) + 1 ;
+        *nScopeID = pVM->nActiveScopeID ;
     }
-    nStart = RING_VM_IR_READI ;
+    nStart = *nTempCount ;
     /* Lock (Important for Threads Support) */
     if ( lMutex ) {
         ring_vm_mutexlock(pVM);

@@ -15,7 +15,7 @@ void ring_vm_liststart ( VM *pVM )
     if ( pVM->nListStart == 1 ) {
         /* Check if we need to create temp list when we call function, pass list by value */
         nCont = 0 ;
-        if ( RING_VM_STACK_ISPOINTER ) {
+        if ( (pVM->nSP > pVM->nFuncSP) && RING_VM_STACK_ISPOINTER ) {
             if ( pVM->pAssignment != RING_VM_STACK_READP ) {
                 nCont = 1 ;
             }
@@ -43,6 +43,10 @@ void ring_vm_liststart ( VM *pVM )
         }
         else {
             nCont = 1 ;
+        }
+        /* If we use self.attribute = List and we don't have a setter method then access the list directly */
+        if ( pVM->lNoSetterMethod == 2 ) {
+            nCont = 0 ;
         }
         if ( (pVM->nFuncExecute > 0)  || ( nCont == 1 ) ) {
             /* Create the Temp list */
@@ -99,6 +103,10 @@ void ring_vm_liststart ( VM *pVM )
     /* Enable Error on Assignment */
     pList = (List *) ring_list_getpointer(pVM->pNestedLists,ring_list_getsize(pVM->pNestedLists));
     pList->gc.lErrorOnAssignment = 1 ;
+    /* When using something like Ref([1,2,3]) - Don't create new reference */
+    if ( (pNewList != NULL) && (pVM->nFuncExecute > 0) ) {
+        ring_list_enabledontref(pNewList);
+    }
 }
 
 void ring_vm_listitem ( VM *pVM )
@@ -131,6 +139,11 @@ void ring_vm_listitem ( VM *pVM )
             else {
                 ring_vm_list_copy(pVM,pList4,pList2);
                 ring_list_swaptwolists(pList3,pList4);
+                /* Update self object Pointer */
+                if ( ring_vm_oop_isobject(pList3) ) {
+                    pItem = ring_list_getitem(pList,ring_list_getsize(pList));
+                    ring_vm_oop_updateselfpointer(pVM,pList3,RING_OBJTYPE_LISTITEM,pItem);
+                }
             }
         }
         else if ( RING_VM_STACK_OBJTYPE == RING_OBJTYPE_LISTITEM ) {
@@ -146,6 +159,11 @@ void ring_vm_listitem ( VM *pVM )
             else {
                 ring_vm_list_copy(pVM,pList4,pList2);
                 ring_list_swaptwolists(pList3,pList4);
+                /* Update self object Pointer */
+                if ( ring_vm_oop_isobject(pList3) ) {
+                    pItem = ring_list_getitem(pList,ring_list_getsize(pList));
+                    ring_vm_oop_updateselfpointer(pVM,pList3,RING_OBJTYPE_LISTITEM,pItem);
+                }
             }
         }
         ring_list_delete_gc(pVM->pRingState,pList4);
@@ -266,7 +284,7 @@ void ring_vm_loadindexaddress ( VM *pVM )
                     pVar = ring_list_getlist(pVar,RING_VAR_VALUE);
                     /* Check that it's list not object */
                     if ( ring_vm_oop_isobject(pVar) == 1 ) {
-                        pVM->nSP++ ;
+                        RING_VM_SP_INC ;
                         ring_vm_expr_spoo(pVM,"[]",ring_string_get(pString),ring_string_size(pString));
                     }
                     else {
@@ -284,7 +302,7 @@ void ring_vm_loadindexaddress ( VM *pVM )
                     pVar = ring_item_getlist(pItem);
                     /* Check that it's list not object */
                     if ( ring_vm_oop_isobject(pVar) == 1 ) {
-                        pVM->nSP++ ;
+                        RING_VM_SP_INC ;
                         ring_vm_expr_spoo(pVM,"[]",ring_string_get(pString),ring_string_size(pString));
                     }
                     else {
@@ -324,7 +342,7 @@ void ring_vm_listpushv ( VM *pVM )
             pVM->nRetItemRef-- ;
             return ;
         }
-        pVM->nSP++ ;
+        RING_VM_SP_INC ;
         RING_VM_STACK_SETCVALUE2(ring_string_get(ring_item_getstring(pItem)),ring_string_size(ring_item_getstring(pItem)));
     }
     else if ( ring_item_gettype(pItem) == ITEMTYPE_NUMBER ) {
@@ -351,7 +369,7 @@ void ring_vm_listpushv ( VM *pVM )
             pVM->nRetItemRef-- ;
             return ;
         }
-        pVM->nSP++ ;
+        RING_VM_SP_INC ;
         sprintf( cPointer , "%p" , ring_item_getpointer(pItem) ) ;
         RING_VM_STACK_SETCVALUE2(cPointer,strlen(cPointer));
     }

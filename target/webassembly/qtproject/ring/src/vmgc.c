@@ -311,9 +311,12 @@ RING_API int ring_list_isref ( List *pList )
 RING_API void ring_list_assignreftovar_gc ( void *pState,List *pRef,List *pVar,unsigned int nPos )
 {
     pRef->gc.lNewRef = 0 ;
-    if ( ! ( ring_list_getlist(pVar,nPos) == pRef ) ) {
-        ring_list_setlistbyref_gc(pState,pVar,nPos,pRef);
+    if ( ring_list_islist(pVar,nPos) ) {
+        if ( ring_list_getlist(pVar,nPos) == pRef ) {
+            return ;
+        }
     }
+    ring_list_setlistbyref_gc(pState,pVar,nPos,pRef);
 }
 
 RING_API void ring_list_assignreftoitem_gc ( void *pState,List *pRef,Item *pItem )
@@ -344,6 +347,7 @@ RING_API void ring_list_clearrefdata ( List *pList )
     pList->gc.lDontRef = 0 ;
     pList->gc.lErrorOnAssignment = 0 ;
     pList->gc.lDeletedByParent = 0 ;
+    pList->gc.lDontRefAgain = 0 ;
 }
 
 RING_API List * ring_list_deleteref_gc ( void *pState,List *pList )
@@ -371,6 +375,9 @@ RING_API List * ring_list_deleteref_gc ( void *pState,List *pList )
         if ( ring_list_getrefcount(pList) > 1 ) {
             ring_list_updaterefcount_gc(pState,pList,RING_LISTREF_DEC);
             pList = ring_list_collectcycles_gc(pState,pList);
+        }
+        else {
+            ring_list_addpointer_gc(pState,((RingState *) pState)->pVM->aDeleteLater,pList);
         }
         return pList ;
     }
@@ -465,12 +472,14 @@ RING_API List * ring_list_collectcycles_gc ( void *pState,List *pList )
     }
     /* Check if we can delete the Cycle */
     if ( (pList->gc.nReferenceCount <= pList->gc.nTempRC ) && (lDelete==1) ) {
-        /* Delete the Cycle */
-        /* Delete all items in aProcess except the Root */
+        /*
+        **  Delete the Cycle 
+        **  Delete all items in aProcess except the Root 
+        */
         while ( ring_list_getsize(aProcess) > 1 ) {
             ring_list_deleteitem_gc(pState,aProcess,ring_list_getsize(aProcess));
         }
-        /* Convert the item that contains circular reference from List to Number (To be able to delete it) */
+        /* Convert the item that contains circular reference from List to Empty String (To be able to delete it) */
         for ( x = 1 ; x <= ring_list_getsize(aProcess) ; x++ ) {
             pActiveList = (List *) ring_list_getpointer(aProcess,x);
             for ( y = 1 ; y <= ring_list_getsize(pActiveList) ; y++ ) {
@@ -481,7 +490,8 @@ RING_API List * ring_list_collectcycles_gc ( void *pState,List *pList )
                     }
                     if ( pSubList == pList ) {
                         pItem = ring_list_getitem(pActiveList,y);
-                        pItem->nType = ITEMTYPE_NUMBER ;
+                        pItem->nType = ITEMTYPE_STRING ;
+                        pItem->data.pString = ring_string_new_gc(pState,"") ;
                     }
                 }
             }
@@ -591,18 +601,38 @@ RING_API void ring_list_disabledontref ( List *pList )
     pList->gc.lDontRef = 0 ;
 }
 
+RING_API void ring_list_disablelnewref ( List *pRef )
+{
+    pRef->gc.lNewRef = 0 ;
+}
+
 RING_API void ring_list_resetlnewref ( List *pVar )
 {
     List *pList  ;
     if ( ring_list_getint(pVar,RING_VAR_TYPE) == RING_VM_LIST ) {
         pList = ring_list_getlist(pVar,RING_VAR_VALUE) ;
-        pList->gc.lNewRef = 0 ;
+        ring_list_disablelnewref(pList);
     }
 }
 
 RING_API int ring_list_isnewref ( List *pList )
 {
     return pList->gc.lNewRef ;
+}
+
+RING_API int ring_list_isdontrefagain ( List *pList )
+{
+    return pList->gc.lDontRefAgain ;
+}
+
+RING_API void ring_list_enabledontrefagain ( List *pList )
+{
+    pList->gc.lDontRefAgain = 1 ;
+}
+
+RING_API void ring_list_disabledontrefagain ( List *pList )
+{
+    pList->gc.lDontRefAgain = 0 ;
 }
 /* Protecting lists */
 

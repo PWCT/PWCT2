@@ -343,18 +343,26 @@ RING_API void ring_vm_api_retcpointer ( void *pPointer,void *pGeneral,const char
 
 RING_API void ring_vm_api_retlist2 ( void *pPointer,List *pList,int nRef )
 {
+    int nType  ;
     List *pRealList,*pTempMem,*pVariableList, *pObjectVariable  ;
     VM *pVM  ;
     pVM = (VM *) pPointer ;
     /* Check Output Mode */
     if ( nRef == RING_OUTPUT_RETNEWREF ) {
         /* Check if we are creating a Reference before assignment, i.e. Ref(List(nSize)) */
-        if ( ring_list_iscopybyref(pList) ) {
+        if ( ring_list_iscopybyref(pList) || ring_list_isdontrefagain(pList) ) {
             nRef = RING_OUTPUT_RETLISTBYREF ;
         }
         /* Check lDontRef Flag */
         if ( ring_list_isdontref(pList) ) {
-            nRef = RING_OUTPUT_RETLIST ;
+            /* Reset the DontRef Flag to avoid reusage in wrong scope */
+            ring_list_disabledontref(pList);
+            /* Take in mind ref(ref(ref(new obj))) */
+            ring_list_enabledontrefagain(pList);
+            pVM->lDontMoveToPrevScope = ring_vm_oop_isobject(pList) ;
+            /* Keep the same object (Ref() parameter) on the Stack (i.e. Return para. as output) */
+            RING_VM_SP_INC ;
+            return ;
         }
     }
     if ( nRef == RING_OUTPUT_RETNEWREF ) {
@@ -381,6 +389,13 @@ RING_API void ring_vm_api_retlist2 ( void *pPointer,List *pList,int nRef )
     else {
         /* Used by RING_API_RETNEWREF (i.e. Ref()/Reference() function implementation) */
         pVariableList = ring_list_newref_gc(((VM *) pPointer)->pRingState,pVariableList,pList);
+        pVM->lDontMoveToPrevScope = 1 ;
+    }
+    if ( (nRef == RING_OUTPUT_RETLIST) || (nRef == RING_OUTPUT_RETLISTBYREF) ) {
+        /* Update self object pointer */
+        if ( ring_vm_oop_isobject(pRealList) ) {
+            ring_vm_oop_updateselfpointer(pVM,pRealList,RING_OBJTYPE_VARIABLE,pVariableList);
+        }
     }
     RING_API_PUSHPVALUE(pVariableList);
     RING_API_OBJTYPE = RING_OBJTYPE_VARIABLE ;

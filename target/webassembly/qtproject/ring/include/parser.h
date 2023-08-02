@@ -43,6 +43,7 @@
         unsigned int nControlStructureBrace  ;
         /* Using Self or This with LoadAddress */
         unsigned char nThisOrSelfLoadA  ;
+        unsigned char nThisLoadA  ;
         /*
         **  required in loops (for|while) for loop and exit commands 
         **  To Know if the commands (Loop or Exit) are used 
@@ -86,6 +87,7 @@
     #define RING_PARSER_ERROR_CLASSREDEFINE "Error (C26) : Class redefinition, class is already defined!"
     #define RING_PARSER_ERROR_SYNTAXERROR "Error (C27) : Syntax Error!"
     #define RING_PARSER_ERROR_EXPRESSIONISEXPECTED "Error (C28) : Expression is expected!"
+    #define RING_PARSER_ERROR_BRACEISMISSINGTOSTARTANONFUNC "Error (C29) : Braces are missing to define anonymous function!"
     #define RING_PARSER_WARNING_EXITOUTSIDELOOP "Warning (W6) : Using the EXIT command outside loop!"
     #define RING_PARSER_WARNING_LOOPOUTSIDELOOP "Warning (W7) : Using the LOOP command outside loop"
     /* Constants */

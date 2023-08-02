@@ -354,12 +354,6 @@ void ring_vm_list_copy ( VM *pVM,List *pNewList, List *pList )
     Item *pItem  ;
     assert(pList != NULL);
     /* Copy Items */
-    if ( ring_list_isref(pList) ) {
-        pNewList = pList ;
-        ring_list_updaterefcount_gc(pVM->pRingState,pList,RING_LISTREF_INC);
-        pList->gc.lNewRef = 0 ;
-        return ;
-    }
     nMax = ring_list_getsize(pList) ;
     if ( nMax == 0 ) {
         return ;
@@ -641,8 +635,11 @@ void ring_vm_assignmentpointer ( VM *pVM )
             for ( x = 1 ; x <= ring_list_getsize(pVM->pObjState) ; x++ ) {
                 pList2 = ring_list_getlist(pVM->pObjState,x);
                 if ( ring_list_getpointer(pList,RING_OBJECT_OBJECTDATA) == ring_list_getpointer(pList2,RING_OBJSTATE_SCOPE) ) {
-                    ring_vm_error(pVM,RING_VM_ERROR_TRYINGTOMODIFYTHESELFPOINTER);
-                    return ;
+                    if ( (ring_list_getrefcount(pList) == 1) || pVM->lSelfLoadA ) {
+                        pVM->lSelfLoadA = 0 ;
+                        ring_vm_error(pVM,RING_VM_ERROR_TRYINGTOMODIFYTHESELFPOINTER);
+                        return ;
+                    }
                 }
             }
         }
@@ -709,8 +706,7 @@ void ring_vm_len ( VM *pVM )
         RING_VM_STACK_PUSHNVALUE(nSize);
     }
     else if ( RING_VM_STACK_ISNUMBER ) {
-        RING_VM_STACK_POP ;
-        RING_VM_STACK_PUSHNVALUE(0.0);
+        ring_vm_error(pVM,RING_VM_ERROR_FORLOOPDATATYPE);
     }
     else if ( RING_VM_STACK_ISPOINTER ) {
         if ( RING_VM_STACK_OBJTYPE == RING_OBJTYPE_VARIABLE ) {

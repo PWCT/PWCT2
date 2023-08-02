@@ -546,6 +546,11 @@ int ring_scanner_checklasttoken ( Scanner *pScanner )
             ring_scanner_addtoken(pScanner,SCANNER_TOKEN_COMMENT);
         }
     }
+    else if ( pScanner->state ==SCANNER_STATE_LOADSYNTAX ) {
+        pScanner->state = SCANNER_STATE_GENERAL ;
+        ring_scanner_loadsyntax(pScanner);
+        ring_string_set_gc(pScanner->pRingState,pScanner->ActiveToken,"");
+    }
     return 1 ;
 }
 
@@ -830,7 +835,7 @@ void ring_scanner_loadsyntax ( Scanner *pScanner )
     RING_FILE fp  ;
     /* Must be signed char to work fine on Android, because it uses -1 as NULL instead of Zero */
     signed char c  ;
-    int nSize  ;
+    int nSize,nLine  ;
     char cFileName2[RING_PATHSIZE]  ;
     unsigned int x  ;
     cFileName = ring_string_get(pScanner->ActiveToken) ;
@@ -859,6 +864,10 @@ void ring_scanner_loadsyntax ( Scanner *pScanner )
             }
         }
     }
+    if ( ring_general_fexists(cFileName2) == 0 ) {
+        printf( "\nFile: %s doesn't exist!\n",cFileName ) ;
+        return ;
+    }
     fp = RING_OPENFILE(cFileName2 , "r");
     if ( fp==NULL ) {
         printf( "\nCan't open file %s \n",cFileName ) ;
@@ -866,6 +875,9 @@ void ring_scanner_loadsyntax ( Scanner *pScanner )
     }
     nSize = 1 ;
     ring_string_set_gc(pScanner->pRingState,pScanner->ActiveToken,"");
+    nLine = pScanner->LinesCount ;
+    /* Set the Line Number (To be 1) */
+    ring_scanner_setandgenendofline(pScanner,1);
     RING_READCHAR(fp,c,nSize);
     while ( (c != EOF) && (nSize != 0) ) {
         ring_scanner_readchar(pScanner,c);
@@ -873,6 +885,15 @@ void ring_scanner_loadsyntax ( Scanner *pScanner )
     }
     RING_CLOSEFILE(fp);
     ring_scanner_readchar(pScanner,'\n');
+    /* Restore the Line Number (After loading the file) */
+    ring_scanner_setandgenendofline(pScanner,nLine);
+}
+
+void ring_scanner_setandgenendofline ( Scanner *pScanner,int nLine )
+{
+    pScanner->LinesCount = nLine ;
+    ring_string_setfromint_gc(pScanner->pRingState,pScanner->ActiveToken,pScanner->LinesCount);
+    ring_scanner_addtoken(pScanner,SCANNER_TOKEN_ENDLINE);
 }
 
 void ring_scanner_readtwoparameters ( Scanner *pScanner,const char *cStr )

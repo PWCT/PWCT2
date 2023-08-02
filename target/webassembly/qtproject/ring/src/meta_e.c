@@ -37,6 +37,7 @@ void ring_vm_refmeta_loadfunctions ( RingState *pRingState )
     RING_API_REGISTER("setattribute",ring_vm_refmeta_setattribute);
     RING_API_REGISTER("mergemethods",ring_vm_refmeta_mergemethods);
     RING_API_REGISTER("packagename",ring_vm_refmeta_packagename);
+    RING_API_REGISTER("importpackage",ring_vm_refmeta_importpackage);
     /* VM */
     RING_API_REGISTER("ringvm_fileslist",ring_vm_refmeta_ringvmfileslist);
     RING_API_REGISTER("ringvm_calllist",ring_vm_refmeta_ringvmcalllist);
@@ -860,6 +861,22 @@ void ring_vm_refmeta_packagename ( void *pPointer )
     }
     RING_API_RETSTRING(ring_string_get(pVM->pPackageName));
 }
+
+void ring_vm_refmeta_importpackage ( void *pPointer )
+{
+    VM *pVM  ;
+    pVM = (VM *) pPointer ;
+    if ( RING_API_PARACOUNT != 1 ) {
+        RING_API_ERROR(RING_API_BADPARACOUNT);
+        return ;
+    }
+    if ( RING_API_ISSTRING(1) ) {
+        ring_vm_oop_import2(pVM,RING_API_GETSTRING(1));
+    }
+    else {
+        RING_API_ERROR(RING_API_BADPARATYPE);
+    }
+}
 /* VM */
 
 void ring_vm_refmeta_ringvmfileslist ( void *pPointer )
@@ -1190,13 +1207,18 @@ void ring_vm_refmeta_ringvmcodelist ( void *pPointer )
 void ring_vm_refmeta_ringvmismempool ( void *pPointer )
 {
     VM *pVM  ;
+    List *pList  ;
     pVM = (VM *) pPointer ;
+    /* Try creating a list contains 10000 items */
+    pList = ring_list_new_gc(pVM->pRingState,10000);
     if ( pVM->pRingState->vPoolManager.pCurrentItem != NULL ) {
         RING_API_RETNUMBER(1);
     }
     else {
         RING_API_RETNUMBER(0);
     }
+    /* Delete the List */
+    ring_list_delete_gc(pVM->pRingState,pList);
 }
 
 void ring_vm_refmeta_ringvmruncode ( void *pPointer )
