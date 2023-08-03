@@ -2,9 +2,9 @@
 
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
-cNaturalLanguageName     = 'English'
-nStepsID                 = 92		
-nInteractionsID          = 73
+cNaturalLanguageName     = 'english'
+nStepsID                 = 103		
+nInteractionsID          = 76
 
 aStepsTable = [
 	[
@@ -85,7 +85,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"New Object <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">qApp</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oApp</font></span> = New Object <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">QApp</font></span>"
 			],
 			[
 				"active",
@@ -93,7 +93,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"new qApp"
+				"oApp = new QApp"
 			],
 			[
 				"interactionid",
@@ -113,7 +113,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"New Object qApp"
+				"oApp = New Object QApp"
 			]
 		]
 	],
@@ -237,7 +237,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oWidget</font></span> = New Object <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">QWidget</font></span>(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oWidget</font></span> = New Object <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">QWidget</font></span>"
 			],
 			[
 				"active",
@@ -265,7 +265,387 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"oWidget = New Object QWidget()"
+				"oWidget = New Object QWidget"
+			]
+		]
+	],
+	[
+		93,
+		8,
+		[
+			[
+				"name",
+				"{"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"{"
+			],
+			[
+				"interactionid",
+				5
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"{"
+			]
+		]
+	],
+	[
+		94,
+		93,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				5
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				5
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		96,
+		94,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">installEventFilter</font></span>("
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"installEventFilter("
+			],
+			[
+				"interactionid",
+				74
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"installEventFilter("
+			]
+		]
+	],
+	[
+		97,
+		96,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				74
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		98,
+		97,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">new&nbsp;QAllEvents(oWidget)</font></span> {"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"new QAllEvents(oWidget) {"
+			],
+			[
+				"interactionid",
+				75
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"new QAllEvents(oWidget) {"
+			]
+		]
+	],
+	[
+		99,
+		98,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				75
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		100,
+		99,
+		[
+			[
+				"name",
+				"setCloseEvent(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;oApp.Quit()&quot;</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"setCloseEvent("+char(34)+"oApp.Quit()"+char(34)+")"
+			],
+			[
+				"interactionid",
+				76
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"setCloseEvent("+char(34)+"oApp.Quit()"+char(34)+")"
+			]
+		]
+	],
+	[
+		101,
+		98,
+		[
+			[
+				"name",
+				"}"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"}"
+			],
+			[
+				"interactionid",
+				75
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"}"
+			]
+		]
+	],
+	[
+		102,
+		96,
+		[
+			[
+				"name",
+				")"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				")"
+			],
+			[
+				"interactionid",
+				74
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				")"
+			]
+		]
+	],
+	[
+		95,
+		93,
+		[
+			[
+				"name",
+				"}"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"}"
+			],
+			[
+				"interactionid",
+				5
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				7
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"}"
 			]
 		]
 	],
@@ -3524,7 +3904,7 @@ aInteractionsTable = [
 		"newobj",
 		"27/08/2021",
 		"08:51:03",
-		"value;;_RV_;;;;_RV_;;value2;;_RV_;;qApp;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"value;;_RV_;;oApp;;_RV_;;value2;;_RV_;;QApp;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
@@ -3540,7 +3920,7 @@ aInteractionsTable = [
 		"newobj",
 		"27/08/2021",
 		"08:51:03",
-		"value;;_RV_;;oWidget;;_RV_;;value2;;_RV_;;QWidget;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;2;;_RV_;;"
+		"value;;_RV_;;oWidget;;_RV_;;value2;;_RV_;;QWidget;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		6,
@@ -4085,6 +4465,30 @@ aInteractionsTable = [
 		"27/08/2021",
 		"08:51:03",
 		"value;;_RV_;;exec();;_RV_;;"
+	],
+	[
+		74,
+		1,
+		"expression",
+		"03/08/2023",
+		"21:48:55",
+		"value;;_RV_;;installEventFilter;;_RV_;;value2;;_RV_;;1;;_RV_;;"
+	],
+	[
+		75,
+		1,
+		"accessobject",
+		"03/08/2023",
+		"21:48:55",
+		"value;;_RV_;;new QAllEvents(oWidget);;_RV_;;"
+	],
+	[
+		76,
+		1,
+		"callfunc",
+		"03/08/2023",
+		"21:48:55",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setCloseEvent;;_RV_;;parameters;;_RV_;;"+char(34)+"oApp.Quit()"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	]
 ]
 

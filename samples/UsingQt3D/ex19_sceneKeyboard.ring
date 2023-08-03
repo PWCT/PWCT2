@@ -1,5 +1,13 @@
 load "guilib.ring"
-oApp = new QApp
+aKey = list(4)
+cX = 0
+cY = 0
+cZ = 0
+cVCx = 0
+cVCy = 0
+cVCz = 0
+nRotation = 0
+oApp = new qApp
 {
 	oWidget = new QWidget()
 	{
@@ -26,7 +34,6 @@ oApp = new QApp
 	oCameraEntity.setViewCenter( new QVector3D(-13.34,17.05,15.42))
 	oCameraController = new QFirstPersonCameraController(oRootEntity)
 	oCameraController.setCamera(oCameraEntity)
-	oCameraController.setEnabled(False)
 	oLongRoomEntity = new QEntity(oRootEntity)
 	oLongRoomModel = new QMesh(oLongRoomEntity)
 	oLongRoomModel.setSource( new qURL("file:///"+CurrentDir()+"/assets/model/Long_Room.obj"))
@@ -84,7 +91,7 @@ oApp = new QApp
 		)
 		aCats[n][:oCatModelTransform] = new QTransform(aCats[n][:oCatModelEntity])
 		aCats[n][:oCatModelTransform].setScale(0.01)
-		aCats[n][:oCatModelTransform].setTranslation( new QVector3D(-5*(v+v),1,15.2))
+		aCats[n][:oCatModelTransform].setTranslation( new QVector3D(-5*(v+v),3,17.2))
 		oQ = new QQuaternion(0,0,0,0)
 		aCats[n][:oCatModelTransform].setRotation(oQ.fromAxisAndAngle( new QVector3D(0,1,1),180))
 		aCats[n][:oCatModelEntity].addComponent(aCats[n][:oCatModel])
@@ -123,6 +130,10 @@ oApp = new QApp
 	oRobotEntity.addComponent(oRobotModel)
 	oRobotEntity.addComponent(oRobotTransform)
 	oRobotEntity.addComponent(oRobotMaterial)
+	oFrameAction = new qFrameAction(oRootEntity)
+	{
+		settriggeredevent("pEvent()")
+	}
 	oView.setRootEntity(oRootEntity)
 	oWidget {
 		setwindowtitle("Using Qt3D - Scene")
@@ -131,12 +142,54 @@ oApp = new QApp
 	oContainer.resize(oWidget.width(),oWidget.height())
 	oFilter = new QAllEvents(oView)
 	oFilter.setKeyPressEvent("pKeyPress()")
+	oFilter.setkeyreleaseevent("pKeyRelease()")
 	oView.installeventfilter(oFilter)
 	oContainer.setfocus(0)
 	exec()
 }
 func pKeyPress  { 
 	nKey = oFilter.getKeyCode()
+	switch nKey { 
+		case Qt_Key_Right
+			aKey[1] = True
+			aKey[2] = False
+		case Qt_Key_Left
+			aKey[2] = True
+			aKey[1] = False
+		case Qt_Key_Down
+			aKey[3] = True
+			aKey[4] = False
+		case Qt_Key_Up
+			aKey[4] = True
+			aKey[3] = False
+		case Qt_Key_Escape
+			oWidget.close()
+			oApp.Quit()
+	} 
+	oFilter.Accept()
+} 
+func pKeyRelease  { 
+	nKey = oFilter.getKeyCode()
+	switch nKey { 
+		case Qt_Key_Right
+			aKey[1] = False
+		case Qt_Key_Left
+			aKey[2] = False
+		case Qt_Key_Down
+			aKey[3] = False
+		case Qt_Key_Up
+			aKey[4] = False
+	} 
+	oFilter.Accept()
+} 
+func pEvent  { 
+	nRotation++
+	if nRotation = 360 { 
+		nRotation = 0
+	} 
+	for n = 1 to 5 step 1 { 
+		aCats[n][:oCatModelTransform].setRotation(oQ.fromAxisAndAngle( new QVector3D(1,0,0),nRotation))
+	} 
 	nSpeed = 0.1
 	cX = oCameraEntity.position().x()
 	CY = oCameraEntity.position().y()
@@ -144,35 +197,33 @@ func pKeyPress  {
 	cVCx = oCameraEntity.viewCenter().x()
 	cVCy = oCameraEntity.viewCenter().y()
 	cVCz = oCameraEntity.viewCenter().z()
-	switch nKey { 
-		case Qt_Key_Right
-			if cX < 4.8 { 
-				robotX += nSpeed
-				oCameraEntity.setPosition( new QVector3D(cX+0.1,cY,cZ))
-				oCameraEntity.setViewCenter( new QVector3D(cVCx+nSpeed,cVCy,cVCz))
-				oRobotTransform.setRotation(oQ.fromAxisAndAngle( new QVector3D(0,1,1),170))
-			} 
-		case Qt_Key_Left
-			if cX > -13.8 { 
-				robotX -= nSpeed
-				oCameraEntity.setPosition( new QVector3D(cX-0.1,cY,cZ))
-				oCameraEntity.setViewCenter( new QVector3D(cVCx-nSpeed,cVCy,cVCz))
-				oRobotTransform.setRotation(oQ.fromAxisAndAngle( new QVector3D(0,1,1),160))
-			} 
-		case Qt_Key_Down
-			if robotY > -3.5 { 
-				robotY -= nSpeed
-				oCameraEntity.setPosition( new QVector3D(cX,cY,cZ))
-				oRobotTransform.setRotation(oQ.fromAxisAndAngle( new QVector3D(0,1,1),190))
-			} 
-		case Qt_Key_Up
-			if robotY < 2 { 
-				robotY += nSpeed
-				oCameraEntity.setPosition( new QVector3D(cX,cY,cZ))
-				oRobotTransform.setRotation(oQ.fromAxisAndAngle( new QVector3D(0,1,1),180))
-			} 
-		case Qt_Key_Escape
-			oWidget.close()
+	if aKey[1] { 
+		oCameraEntity.setPosition( new QVector3D(cX+0.1,cY,cZ))
+		oCameraEntity.setViewCenter( new QVector3D(cVCx+nSpeed,cVCy,cVCz))
+		updateLocation()
+	} 
+	if aKey[2] { 
+		oCameraEntity.setPosition( new QVector3D(cX-0.1,cY,cZ))
+		oCameraEntity.setViewCenter( new QVector3D(cVCx-nSpeed,cVCy,cVCz))
+		updateLocation()
+	} 
+	if aKey[3] { 
+		oCameraEntity.setPosition( new QVector3D(cX,cY,cZ))
+		oCameraEntity.setViewCenter( new QVector3D(cVCx,cVCy+nSpeed,cVCz))
+		updateLocation()
+	} 
+	if aKey[4] { 
+		oCameraEntity.setPosition( new QVector3D(cX,cY,cZ))
+		oCameraEntity.setViewCenter( new QVector3D(cVCx,cVCy-nSpeed,cVCz))
+		updateLocation()
 	} 
 	oRobotTransform.setTranslation( new QVector3D(robotX,robotY,robotZ))
+} 
+func updateLocation  { 
+	cX = oCameraEntity.position().x()
+	cY = oCameraEntity.position().y()
+	cZ = oCameraEntity.position().z()
+	cVCx = oCameraEntity.viewCenter().x()
+	cVCy = oCameraEntity.viewCenter().y()
+	cVCz = oCameraEntity.viewCenter().z()
 } 
