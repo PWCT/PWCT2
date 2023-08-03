@@ -645,7 +645,8 @@ class EnvironmentController from WindowsControllerParent
 			"https://www.youtube.com/watch?v=ZC99W16KEJM&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=28",
 			"https://www.youtube.com/watch?v=d8GhoeTm1WE&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=29",
 			"https://www.youtube.com/watch?v=w2S48C2QXvw&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=30",
-			"https://www.youtube.com/watch?v=p3OP676l_W4&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=31"
+			"https://www.youtube.com/watch?v=p3OP676l_W4&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=31",
+			"https://www.youtube.com/watch?v=0M1I2llBLrc&list=PLpQiqjcu7CuFFulJW0IdG8xmAXaDC2oC7&index=32"
 		]
 		new QDesktopServices {
 			OpenURL(new qURL(aVideos[nVideo]) )

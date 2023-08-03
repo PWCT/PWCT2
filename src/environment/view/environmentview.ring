@@ -747,7 +747,8 @@ class EnvironmentView from WindowsViewParent
 					"28- Using Strings",
 					"29- Using Date/Time",
 					"30- Check Data Type and Conversion",
-					"31- Math Functions"
+					"31- Math Functions",
+					"32- Using Files"
 					]
 					aVideosSeparator = [4,9,16,20,24,27]
 					subHelpVideos { 
