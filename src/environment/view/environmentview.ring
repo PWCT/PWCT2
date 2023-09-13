@@ -14,7 +14,6 @@ class mydesktop
 
 class EnvironmentView from WindowsViewParent
 
-	oDesktop = new qDesktopWidget()	
 	oDesktop = new mydesktop
 
 	# Attributes
@@ -1231,7 +1230,7 @@ class EnvironmentView from WindowsViewParent
 	*/
 
 	func createOutputWindow win
-		oProcessWindow = new qWidget()
+		oProcessWindow = new qWidget() 
 		if ! PWCTIsMobile(:SendDataToApplication) {
 			oProcessLabel = new qLabel(oProcessWindow) {
 				setText(T_ENV_OW_INPUT) # "Input :"
@@ -1287,7 +1286,6 @@ class EnvironmentView from WindowsViewParent
 
 	func createComponentsBrowser win
 		oDockComponentsBrowser = new qDockWidget(win,0) {
-			//nWidth = floor(this.oDesktop.Width()*0.20)
 			nWidth = floor(this.oDesktop.Width()*0.35)
 			setMinimumWidth(nWidth)
 			setLayoutDirection(C_TRANSLATION_ENGLISH)
