@@ -244,7 +244,7 @@ Class ComponentControllerParent from WindowsControllerParent
 	*/
 
 	func KeyPressAction
-		? "Key Code : " see oView.oWinFilter.getKeyCode()
+		// ? "Key Code : " see oView.oWinFilter.getKeyCode()
 		switch oView.oWinFilter.getKeyCode() {
 			case Qt_Key_Escape 
 				CloseBtnAction()		

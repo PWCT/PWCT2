@@ -41,7 +41,7 @@ class EnvironmentController from WindowsControllerParent
 	}
 	lDisplayLoadingMessage 	= True
 
-	lUseSetModeWorkAround   = False
+	lUseSetModeWorkAround   = True
 
 	/* 
 		[Dockable Window Object, 
@@ -71,8 +71,6 @@ class EnvironmentController from WindowsControllerParent
 			nEnvironmentWindowID = ObjectID()
 		oView.win.blocksignals(True)
 		oView.win.setupdatesenabled(False)
-		//oView.win.show()
-		//oView.win.showmaximized()
 		super.Start()
 		LoadSettings()	
 		# Add the Default file (NoName) to the Active Files List
@@ -120,6 +118,8 @@ class EnvironmentController from WindowsControllerParent
 		oView.win.blocksignals(False)
 		oView.win.setupdatesenabled(True)
 
+		oView.win.showmaximized()
+
 		# WorkAround : We call this again to get the expected look
 			if lUseSetModeWorkAround {
 				if ! PWCTIsMobile(:DefaultMode) {
@@ -136,9 +136,6 @@ class EnvironmentController from WindowsControllerParent
 			oView.win.setWindowFlags(Qt_Window | Qt_CustomizeWindowHint)
 			oView.win.showmaximized()
 		}
-
-
-		oView.win.showmaximized()
 
 	/*
 		Purpose : Set the Parent Object for Environment and goal designer

@@ -5,16 +5,9 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-class mydesktop
-
-	func width 
-		return 800
-	func height 
-		return 600
-
 class EnvironmentView from WindowsViewParent
 
-	oDesktop = new mydesktop
+	oDesktop = new PWCTDesktop
 
 	# Attributes
 	TreeTimer oFilesTree   oFile  oDockFilesManager oDockGoalDesigner
@@ -53,8 +46,8 @@ class EnvironmentView from WindowsViewParent
 		win = new qMainWindow()
 		{
 			if not PWCTIsMobile(:WindowDimensions) {
-				move(10,10)
-				resize(this.oDesktop.width(),this.oDesktop.height())
+				move(0,0)
+				resize(800,600)
 			}
 
 			setLayoutDirection(T_LAYOUTDIRECTION)

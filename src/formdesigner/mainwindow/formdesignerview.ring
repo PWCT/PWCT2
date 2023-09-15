@@ -10,7 +10,7 @@ package formdesigner
 class myfddesktop
 
 	func width 
-		return 1400
+		return 1500
 	func height 
 		return 600
 

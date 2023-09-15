@@ -9,6 +9,7 @@
 	load "controller/environmentcontroller.ring"
 	load "view/environmentview.ring"
 	load "view/treeviewcontrol.ring"
+	load "view/pwctdesktop.ring"
 
 /*
 	The next function run the PWCT Environment
