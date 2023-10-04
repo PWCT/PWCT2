@@ -123,7 +123,9 @@ class EnvironmentController from WindowsControllerParent
 		# WorkAround : We call this again to get the expected look
 			if lUseSetModeWorkAround {
 				if ! PWCTIsMobile(:DefaultMode) {
-					SetMode(C_ENV_DEFAULT_MODE)			
+					oView.win.Hide()
+					SetMode(C_ENV_DEFAULT_MODE)	
+					oView.win.showmaximized()		
 				}
 			}
 
