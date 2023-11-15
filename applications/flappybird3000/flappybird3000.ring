@@ -61,7 +61,7 @@ func main  {
 				animate = false
 				size = 16
 				file = "fonts/pirulen.ttf"
-				text = "(C) 2016, RingLang Team"
+				text = "(C) 2016, RINGLANG TEAM"
 				x = 245
 				y = 140
 			}

@@ -63,7 +63,7 @@ func main  {
 				animate = false
 				size = 16
 				file = "fonts/pirulen.ttf"
-				text = "(C) 2016, RingLang Team"
+				text = "(C) 2016, RINGLANG TEAM"
 				x = 20
 				y = 120
 			}
@@ -134,8 +134,8 @@ func main  {
 } 
 func playstart oGame { 
 	oGame {
-		FPS = 15
-		FixedFPS = 15
+		FPS = 30
+		FixedFPS = 30
 		nTimeOut = 0
 		Title = "Super Man 2016"
 		Sprite {
@@ -189,7 +189,7 @@ func playstart oGame {
 									y -= 5
 									width += 10
 									height += 10
-									if x = -300 { 
+									if x = -100 { 
 										ogame.shutdown = true
 									} 
 								}
@@ -253,7 +253,7 @@ func playstart oGame {
 							elseif nKey = key_right AND checkwall(oGame,oSelf,10,0)
 								file = "images/supermanright.png"
 								dotransparent()
-								x += 10
+								x += 7
 								if x >= 440 { 
 									if oGame.aObjects[2].x > -4500 { 
 										oGame.aObjects[2].x -= 50
@@ -275,7 +275,7 @@ func playstart oGame {
 							elseif nKey = key_left AND checkwall(oGame,oSelf,-10,0)
 								file = "images/supermanleft.png"
 								dotransparent()
-								x -= 10
+								x -= 7
 								if x <= 0 { 
 									x += 10
 									if oGame.aObjects[2].x! = 0 { 
@@ -358,11 +358,11 @@ func inlist nValue,aList {
 } 
 func checkwall oGame,oself,diffx,diffy { 
 	alist = [1,2,3]
-	return checkwall2(oGame,oself,diffx,diffy,aList)
+	return checkwall2( oGame, oself, diffx, diffy, aList ) 
 } 
 func checkpoint oGame,xPos,yPos,aList { 
 	nValue = oGame.aObjects[2].getvalue(xPos,yPos)
-	return inlist(nValue,aList)
+	return inlist( nValue, aList ) 
 } 
 func checkwall2 oGame,oself,diffx,diffy,aList { 
 	xPos = oSelf.x+diffx

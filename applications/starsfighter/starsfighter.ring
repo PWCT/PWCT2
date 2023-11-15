@@ -1,3 +1,6 @@
+# The Ring Standard Library
+# Game Engine for 2D Games
+# Stars Fighter Game
 oGameState = NULL
 load "gameengine.ring"
 func main  { 
@@ -50,7 +53,7 @@ func main  {
 				animate = false
 				size = 16
 				file = "fonts/pirulen.ttf"
-				text = "(C) 2016, RingLang Team"
+				text = "(C) 2016, RINGLANG TEAM"
 				x = 45
 				y = 140
 			}
