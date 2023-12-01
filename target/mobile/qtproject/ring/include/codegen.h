@@ -41,6 +41,9 @@
         /* Data */
         ICO_PUSHC ,
         ICO_PUSHN ,
+        ICO_PUSH2N ,
+        ICO_PUSH3N ,
+        ICO_PUSH4N ,
         ICO_PUSHV ,
         ICO_PUSHP ,
         ICO_PUSHPV ,
@@ -81,8 +84,6 @@
         ICO_EXIT ,
         ICO_INCJUMP ,
         ICO_INCPJUMP ,
-        ICO_JUMPVARLENUM ,
-        ICO_JUMPVARPLENUM ,
         ICO_TRY ,
         ICO_DONE ,
         ICO_RANGE ,
@@ -97,7 +98,6 @@
         ICO_LOOP ,
         /* Loop optimization in functions (local scope) */
         ICO_INCLPJUMP ,
-        ICO_JUMPVARLPLENUM ,
         /* Packages */
         ICO_PACKAGE ,
         ICO_IMPORT ,
@@ -124,7 +124,7 @@
         ICO_POPSTEP ,
         ICO_LOADAFIRST ,
         ICO_INCPJUMPSTEP1 ,
-        ICO_JUMPVARPLENUMSTEP1 ,
+        ICO_INCLPJUMPSTEP1 ,
         /* Anonymous Functions */
         ICO_ANONYMOUS ,
         /* Class Init */
@@ -135,33 +135,32 @@
         ICO_SETGLOBALSCOPE ,
         /* Temp Lists */
         ICO_FREETEMPLISTS ,
-        /* Extra Para */
-        ICO_EXTRAPARA ,
-        /* Fast Functions */
-        ICO_LEN 
+        /* Better Performance */
+        ICO_LEN ,
+        ICO_SETOPCODE 
     } IC_OPERATIONS ;
     /* Operations Text (Array) */
     static const char * RING_IC_OP[] = {"NewLine","FileName","Print","Class","Func","Dup","New","Give","Private","NewLabel", 
     
     "Jump","JumpZ","Jump1","JumpFOR","JZ2","J12","PUSHNULLTHENJUMP","LoadA","Assignment","LoadSA","LoadIA","LoadAPushV","==","<",">","!=","<=",">=", 
     
-    "PushC","PushN","PushV","PushP","PushPV","PushPLocal", "SUM","SUB","MUL","DIV","MOD","Negative","Inc","IncP","POW", 
+    "PushC","PushN","Push2N","Push3N","Push4N","PushV","PushP","PushPV","PushPLocal", "SUM","SUB","MUL","DIV","MOD","Negative","Inc","IncP","POW", 
     
     "LoadFunc","Call", "Return","ReturnNull","RetFromEval","RetItemRef","ListStart","ListItem","ListEnd","And","Or","Not","FreeStack", 
     
     "BlockFlag","FuncExE","EndFuncExe","Bye","ExitMark","POPExitMark","Exit","IncJump","IncPJump", 
     
-    "JumpVarLENum","JumpVarPLENum","Try","Done","Range","LoadMethod","SetScope","AfterCallMethod", 
+    "Try","Done","Range","LoadMethod","SetScope","AfterCallMethod", 
     
-    "BraceStart","BraceEnd","LoadFuncP","FreeLoadAScope","Loop","IncLPJump","JumpVarLPLENum","Package","Import", 
+    "BraceStart","BraceEnd","LoadFuncP","FreeLoadAScope","Loop","IncLPJump","Package","Import", 
     
     "SetProperty","NoOperation","AfterCallMethod2","SetReference","KillReference","AssignmentPointer","BeforeEqual","++","--", 
     
     "BITAND","BITOR","BITNOT","BITXOR","BITSHL","BITSHR","StepNumber","POPStep","LoadAFirst", 
     
-    "INCPJUMPSTEP1","JUMPVARPLENUMSTEP1","ANONYMOUS","CallClassInit", 
+    "INCPJUMPSTEP1","INCLPJUMPSTEP1","ANONYMOUS","CallClassInit", 
     
-    "NewGlobalScope","EndGlobalScope","SetGlobalScope","FreeTempLists","ExtraPara","Len"} ;
+    "NewGlobalScope","EndGlobalScope","SetGlobalScope","FreeTempLists","Len","SetOPCode"} ;
     /* Macro */
     #define RING_PARSER_ICG_GOTOLASTOP pParser->ActiveGenCodeList = ring_list_getlist(pParser->GenCode,ring_list_getsize(pParser->GenCode))
     #define ring_parser_icg_newlabel(x) ( ring_list_getsize(x->GenCode) + 1 + pParser->pRingState->nInstructionsCount)
@@ -230,6 +229,10 @@
     char * ring_parser_icg_parentclassname ( Parser *pParser ) ;
 
     char * ring_parser_icg_newpackagename ( Parser *pParser,List *pPos ) ;
+
+    void ring_parser_icg_pushn ( Parser *pParser,double nValue ) ;
+
+    void ring_parser_icg_beforeequal ( Parser *pParser,int nBeforeEqual ) ;
     /* Show the Intermediate Code */
 
     void ring_parser_icg_showoutput ( List *pListGenCode ) ;

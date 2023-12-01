@@ -11,8 +11,12 @@
         #define RING_USEPOOLMANAGER 1
     #endif
     #define RING_TRACKALLOCATIONS 0
-    #define RING_POOLMANAGER_ITEMSINBLOCK 2000000
-    #define RING_POOLMANAGER_ITEMSTRINGSIZE 40
+    #define RING_POOLMANAGER_ITEMSINBLOCK 1000000
+    #define RING_POOLMANAGER_ITEMSTRINGSIZE 80
+    #define RING_POOLMANAGER_ITEMSTRINGSIZEL2 192
+    #define RING_POOLMANAGER_ITEMSINBLOCKL2 2048
+    #define RING_VM_STATE_NUMBERS_COUNT 30
+    #define RING_VM_STATE_POINTERS_COUNT 9
     /* Data */
     typedef struct PoolData {
         union PoolDataTypes {
@@ -26,16 +30,31 @@
         } PoolDataTypes ;
         struct PoolData *pNext  ;
     } PoolData ;
+    typedef struct VMState {
+        int aNumbers[RING_VM_STATE_NUMBERS_COUNT]  ;
+        void *aPointers[RING_VM_STATE_POINTERS_COUNT]  ;
+    } VMState ;
+    typedef struct PoolDataL2 {
+        union PoolDataL2Types {
+            VMState vVMState  ;
+            char cChar[RING_POOLMANAGER_ITEMSTRINGSIZEL2]  ;
+        } PoolDataL2Types ;
+        struct PoolDataL2 *pNext  ;
+    } PoolDataL2 ;
     typedef struct PoolManager {
         PoolData *pCurrentItem  ;
         void *pBlockStart  ;
         void *pBlockEnd  ;
+        PoolDataL2 *pCurrentItemL2  ;
+        void *pBlockStartL2  ;
+        void *pBlockEndL2  ;
+        List *aBlocks  ;
         unsigned int nAllocCount  ;
         unsigned int nFreeCount  ;
         unsigned int nSmallAllocCount  ;
         unsigned int nSmallFreeCount  ;
         unsigned int nItemsInBlock  ;
-        List *aBlocks  ;
+        unsigned int nItemsInBlockL2  ;
         unsigned int lDeleteMemory  ;
     } PoolManager ;
 #endif

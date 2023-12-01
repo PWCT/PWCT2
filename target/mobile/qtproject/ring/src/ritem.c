@@ -11,11 +11,9 @@ RING_API Item * ring_item_new_gc ( void *pState,unsigned int ItemType )
     /* Set Type */
     pItem->nType = ITEMTYPE_NOTHING ;
     /* Delete pointer information */
-    pItem->data.pPointer = NULL ;
     pItem->nObjectType = 0 ;
     /* Delete number information */
     pItem->data.dNumber = 0 ;
-    pItem->data.iNumber = 0 ;
     pItem->NumberFlag = ITEM_NUMBERFLAG_NOTHING ;
     /* Reference Count */
     ring_vm_gc_cleardata(pItem);
@@ -25,7 +23,6 @@ RING_API Item * ring_item_new_gc ( void *pState,unsigned int ItemType )
 
 RING_API Item * ring_item_delete_gc ( void *pState,Item *pItem )
 {
-    assert(pItem != NULL);
     ring_vm_gc_deleteitem_gc(pState,pItem);
     return NULL ;
 }
@@ -33,7 +30,6 @@ RING_API Item * ring_item_delete_gc ( void *pState,Item *pItem )
 RING_API void ring_item_print ( Item *pItem )
 {
     unsigned int ItemType  ;
-    assert(pItem != NULL);
     ItemType = pItem->nType ;
     switch ( ItemType ) {
         case ITEMTYPE_NOTHING :
@@ -63,15 +59,19 @@ RING_API void ring_item_print ( Item *pItem )
     }
 }
 
-RING_API void ring_item_deletecontent_gc ( void *pState,Item *pItem )
+RING_API void ring_item_init ( Item *pItem )
 {
-    int nType  ;
-    assert(pItem != NULL);
-    nType = pItem->nType ;
-    /* Set Type */
     pItem->nType = ITEMTYPE_NOTHING ;
     pItem->NumberFlag = ITEM_NUMBERFLAG_NOTHING ;
     pItem->nObjectType = ITEM_OBJTYPE_NOTHING ;
+}
+
+RING_API void ring_item_deletecontent_gc ( void *pState,Item *pItem )
+{
+    int nType  ;
+    nType = pItem->nType ;
+    /* Set Type */
+    ring_item_init(pItem);
     switch ( nType ) {
         case ITEMTYPE_STRING :
             /* Work */
@@ -82,20 +82,13 @@ RING_API void ring_item_deletecontent_gc ( void *pState,Item *pItem )
             pItem->data.pList = ring_list_delete_gc(pState,pItem->data.pList);
             break ;
     }
-    /*
-    **  Clear Data 
-    **  Delete pointer information 
-    */
-    pItem->data.pPointer = NULL ;
-    /* Delete number information */
+    /* Clear Data */
     pItem->data.dNumber = 0 ;
-    pItem->data.iNumber = 0 ;
 }
 
 RING_API void ring_item_settype_gc ( void *pState,Item *pItem,unsigned int ItemType )
 {
-    assert(pItem != NULL);
-    if ( (ItemType == ITEMTYPE_STRING) && (pItem->nType == ITEMTYPE_STRING) ) {
+    if ( (ItemType == pItem->nType) && ( (ItemType == ITEMTYPE_STRING) || (ItemType == ITEMTYPE_NUMBER)  ) ) {
         /*
         **  If the current item type is a String and the new type is also a String - We do nothing 
         **  In this case the item will contains the old data 
@@ -119,7 +112,6 @@ RING_API void ring_item_settype_gc ( void *pState,Item *pItem,unsigned int ItemT
         case ITEMTYPE_NUMBER :
             pItem->nType = ITEMTYPE_NUMBER ;
             pItem->data.dNumber = 0 ;
-            pItem->data.iNumber = 0 ;
             break ;
         case ITEMTYPE_POINTER :
             pItem->nType = ITEMTYPE_POINTER ;

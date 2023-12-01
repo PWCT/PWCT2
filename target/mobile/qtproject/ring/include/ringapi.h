@@ -12,7 +12,25 @@
 
     RING_API List * ring_vm_api_getlist ( void *pPointer,int x ) ;
 
+    RING_API int ring_vm_api_isstring ( void *pPointer,int x ) ;
+
+    RING_API int ring_vm_api_isnumber ( void *pPointer,int x ) ;
+
     RING_API int ring_vm_api_islist ( void *pPointer,int x ) ;
+
+    RING_API int ring_vm_api_islistornull ( void *pPointer,int x ) ;
+
+    RING_API int ring_vm_api_ispointer ( void *pPointer,int x ) ;
+
+    RING_API char * ring_vm_api_getstring ( void *pPointer,int x ) ;
+
+    RING_API int ring_vm_api_getstringsize ( void *pPointer,int x ) ;
+
+    RING_API double ring_vm_api_getnumber ( void *pPointer,int x ) ;
+
+    RING_API void * ring_vm_api_getpointer ( void *pPointer,int x ) ;
+
+    RING_API int ring_vm_api_getpointertype ( void *pPointer,int x ) ;
 
     RING_API void ring_vm_api_retlist ( void *pPointer,List *pList ) ;
 
@@ -40,8 +58,6 @@
 
     RING_API int ring_vm_api_cpointercmp ( List *pList,List *pList2 ) ;
 
-    RING_API int ring_vm_api_ispointer ( void *pPointer,int x ) ;
-
     RING_API void * ring_vm_api_getcpointer2pointer ( void *pPointer,int x,const char *cType ) ;
 
     RING_API void ring_list_addcpointer_gc ( void *pState,List *pList,void *pGeneral,const char *cType ) ;
@@ -54,7 +70,7 @@
 
     RING_API void ring_vm_api_floatvalue ( void *pPointer,const char  *cStr ) ;
 
-    RING_API int ring_vm_api_islistornull ( void *pPointer,int x ) ;
+    RING_API List * ring_vm_api_newlistusingblocks ( VM *pVM, int nSize, int nSize2 ) ;
     /* Constants/MACRO */
     #define RING_API_MISS1PARA "Bad parameters count, the function expect one parameter"
     #define RING_API_MISS2PARA "Bad parameters count, the function expect two parameters"
@@ -74,15 +90,16 @@
     #define RING_OUTPUT_RETLISTBYREF 1
     #define RING_OUTPUT_RETNEWREF 2
     /* API For C Functions */
+    #define RING_API_STATE (((VM *) pPointer)->pRingState)
     #define RING_API_PARALIST (((VM *) pPointer)->pActiveMem)
     #define RING_API_PARACOUNT (((VM *) pPointer)->nCFuncParaCount)
-    #define RING_API_GETSTRING(x) (ring_list_getstring(ring_list_getlist(RING_API_PARALIST,x),3))
-    #define RING_API_GETNUMBER(x) (ring_list_getdouble(ring_list_getlist(RING_API_PARALIST,x),3))
-    #define RING_API_GETPOINTER(x) (ring_list_getpointer(ring_list_getlist(RING_API_PARALIST,x),3))
-    #define RING_API_ISSTRING(x) (ring_list_isstring(ring_list_getlist(RING_API_PARALIST,x),3))
-    #define RING_API_ISNUMBER(x) (ring_list_isnumber(ring_list_getlist(RING_API_PARALIST,x),3))
+    #define RING_API_GETSTRING(x) (ring_vm_api_getstring((VM *) pPointer,x))
+    #define RING_API_GETNUMBER(x) (ring_vm_api_getnumber((VM *) pPointer,x))
+    #define RING_API_GETPOINTER(x) (ring_vm_api_getpointer((VM *) pPointer,x))
+    #define RING_API_ISSTRING(x) (ring_vm_api_isstring((VM *) pPointer,x))
+    #define RING_API_ISNUMBER(x) (ring_vm_api_isnumber((VM *) pPointer,x))
     #define RING_API_ISPOINTER(x) (ring_vm_api_ispointer((VM *) pPointer,x))
-    #define RING_API_GETPOINTERTYPE(x) (ring_list_getint(ring_list_getlist(RING_API_PARALIST,x),4))
+    #define RING_API_GETPOINTERTYPE(x) (ring_vm_api_getpointertype((VM *) pPointer,x))
     #define RING_API_ERROR(x) (ring_vm_error((VM *) pPointer,x))
     #define RING_API_ISLIST(x) (ring_vm_api_islist((VM *) pPointer,x))
     #define RING_API_GETLIST(x) (ring_vm_api_getlist((VM *) pPointer,x))
@@ -97,7 +114,7 @@
     #define RING_API_PUSHPVALUE(x) ((VM *) pPointer)->nSP++ ; ring_itemarray_setpointer(((VM *) pPointer)->aStack, ((VM *) pPointer)->nSP , x )
     #define RING_API_OBJTYPE ((VM *) pPointer)->aStack[((VM *) pPointer)->nSP].nObjectType
     #define RING_API_GETSTRINGRAW ring_itemarray_getstringraw(((VM *) pPointer)->aStack,((VM *) pPointer)->nSP)
-    #define RING_API_GETSTRINGSIZE(x) (ring_list_getstringsize(ring_list_getlist(RING_API_PARALIST,x),3))
+    #define RING_API_GETSTRINGSIZE(x) (ring_vm_api_getstringsize((VM *) pPointer,x))
     #define RING_API_SETNULLPOINTER(x) (ring_vm_api_setcpointernull((VM *) pPointer,x))
     #define RING_API_GETCPOINTERSTATUS(x) ring_list_getint(RING_API_GETLIST(x),RING_CPOINTER_STATUS)
     #define RING_API_ISCPOINTERNOTASSIGNED(x) (RING_API_GETCPOINTERSTATUS(x) == RING_CPOINTERSTATUS_NOTASSIGNED)
@@ -127,6 +144,8 @@
     #define RING_LIBINIT RING_API void ringlib_init(RingState *pRingState)
     #define RING_API_GETCHARPOINTER(x) RING_API_VARPOINTER(RING_API_GETSTRING(x),"char")
     #define RING_API_ISLISTORNULL(x) (ring_vm_api_islistornull((VM *) pPointer,x))
+    #define RING_API_NEWLISTUSINGBLOCKS1D(x) ring_vm_api_newlistusingblocks((VM *) pPointer,x,-1)
+    #define RING_API_NEWLISTUSINGBLOCKS2D(x,y) ring_vm_api_newlistusingblocks((VM *) pPointer,x,y)
     /*
     **  Note : The C Function Get Lists as pointers because of (List Pass by Reference) 
     **  The List Maybe a Variable/ListItem or may represent Object or C Pointer inside a List 
