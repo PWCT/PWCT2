@@ -27,6 +27,8 @@ RING_API void ring_vm_generallib_loadfunctions ( RingState *pRingState )
     RING_API_REGISTER("clockspersecond",ring_vm_generallib_clockspersecond);
     RING_API_REGISTER("prevfilename",ring_vm_generallib_prevfilename);
     RING_API_REGISTER("srandom",ring_vm_generallib_srandom);
+    RING_API_REGISTER("nothing",ring_vm_generallib_nothing);
+    RING_API_REGISTER("optionalfunc",ring_vm_generallib_optionalfunc);
     /* Check Data Type */
     RING_API_REGISTER("isstring",ring_vm_generallib_isstring);
     RING_API_REGISTER("isnumber",ring_vm_generallib_isnumber);
@@ -266,7 +268,7 @@ void ring_vm_generallib_time ( void *pPointer )
 void ring_vm_generallib_filename ( void *pPointer )
 {
     VM *pVM  ;
-    List *pList  ;
+    FuncCall *pFuncCall  ;
     int lFunctionCall,x  ;
     const char *cOldFile  ;
     const char *cFile  ;
@@ -276,16 +278,16 @@ void ring_vm_generallib_filename ( void *pPointer )
     cFile = NULL ;
     lFunctionCall = 0 ;
     for ( x = ring_list_getsize(pVM->pFuncCallList) ; x >= 1 ; x-- ) {
-        pList = ring_list_getlist(pVM->pFuncCallList,x);
+        pFuncCall = RING_VM_LASTFUNCCALL ;
         /*
         **  If we have ICO_LoadFunc but not ICO_CALL then we need to pass 
         **  ICO_LOADFUNC is executed, but still ICO_CALL is not executed! 
         */
-        if ( ring_list_getsize(pList) < RING_FUNCCL_CALLERPC ) {
-            cOldFile = (const char *) ring_list_getpointer(pList,RING_FUNCCL_FILENAME) ;
+        if ( pFuncCall->nCallerPC != 0 ) {
+            cOldFile = pFuncCall->cFileName ;
             continue ;
         }
-        if ( ring_list_getint(pList,RING_FUNCCL_TYPE) == RING_FUNCTYPE_SCRIPT ) {
+        if ( pFuncCall->nType == RING_FUNCTYPE_SCRIPT ) {
             lFunctionCall = 1 ;
         }
     }
@@ -606,6 +608,39 @@ void ring_vm_generallib_srandom ( void *pPointer )
         RING_API_ERROR(RING_API_BADPARACOUNT);
     }
 }
+
+void ring_vm_generallib_nothing ( void *pPointer )
+{
+    /*
+    **  This function does nothig, could be used in performance measurements. 
+    **  Also, It doesn't check the number of parameters 
+    */
+    RING_API_RETNUMBER(0.0);
+}
+
+void ring_vm_generallib_optionalfunc ( void *pPointer )
+{
+    RingState *pRingState  ;
+    VM *pVM  ;
+    const char *cFunc  ;
+    pVM = (VM *) pPointer ;
+    pRingState = pVM->pRingState ;
+    if ( RING_API_PARACOUNT != 1 ) {
+        RING_API_ERROR(RING_API_BADPARACOUNT);
+        return ;
+    }
+    if ( RING_API_ISSTRING(1) ) {
+        cFunc = RING_API_GETSTRING(1) ;
+        ring_list_deletearray_gc(pRingState,pRingState->pRingCFunctions);
+        RING_API_REGISTER(cFunc,ring_vm_generallib_nothing);
+        /* Refresh the HashTable */
+        ring_list_genarray(pRingState->pRingCFunctions);
+        ring_list_genhashtable2(pRingState->pRingCFunctions);
+    }
+    else {
+        RING_API_ERROR(RING_API_BADPARATYPE);
+    }
+}
 /* Check Data Type */
 
 void ring_vm_generallib_isstring ( void *pPointer )
@@ -786,6 +821,10 @@ void ring_vm_generallib_number ( void *pPointer )
         RING_API_ERROR(RING_API_MISS1PARA);
         return ;
     }
+    if ( RING_API_ISNUMBER(1) ) {
+        RING_API_RETNUMBER(RING_API_GETNUMBER(1));
+        return ;
+    }
     if ( RING_API_ISSTRING(1) ) {
         x = ring_vm_stringtonum((VM *) pPointer,RING_API_GETSTRING(1));
         RING_API_RETNUMBER(x);
@@ -801,6 +840,10 @@ void ring_vm_generallib_string ( void *pPointer )
     char cStr[100]  ;
     if ( RING_API_PARACOUNT != 1 ) {
         RING_API_ERROR(RING_API_MISS1PARA);
+        return ;
+    }
+    if ( RING_API_ISSTRING(1) ) {
+        RING_API_RETSTRING(RING_API_GETSTRING(1));
         return ;
     }
     if ( RING_API_ISNUMBER(1) ) {

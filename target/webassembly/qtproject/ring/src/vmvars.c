@@ -26,9 +26,7 @@ void ring_vm_addglobalvariables ( VM *pVM )
     ring_vm_addnewstringvar(pVM,"tab","\t");
     ring_vm_addnewstringvar(pVM,"cr","\r");
     /* Add Command Line Parameters */
-    pList = ring_vm_newvar2(pVM,"sysargv",pVM->pActiveMem);
-    ring_list_setint_gc(pVM->pRingState,pList,RING_VAR_TYPE,RING_VM_LIST);
-    ring_list_setlist_gc(pVM->pRingState,pList,RING_VAR_VALUE);
+    pList = ring_vm_addnewlistvar(pVM,"sysargv");
     pList = ring_list_getlist(pList,RING_VAR_VALUE);
     for ( x = 0 ; x < pVM->pRingState->argc ; x++ ) {
         ring_list_addstring_gc(pVM->pRingState,pList,pVM->pRingState->argv[x]);
@@ -38,7 +36,7 @@ void ring_vm_addglobalvariables ( VM *pVM )
 /*
 **  Variables 
 **  Memory is a List and each item inside the list is another List (Represent Scope) 
-**  The Variable is a List contains ( Name , Type , Value , [Pointer Type] ) 
+**  The Variable is a List contains ( Name , Type , Value , [Pointer Type] , [Private Flag] ) 
 **  When we find variable or create new variable we push variable pointer to the stack 
 */
 
@@ -50,17 +48,12 @@ void ring_vm_newscope ( VM *pVM )
         exit(1);
     }
     pVM->pActiveMem = ring_list_newlist_gc(pVM->pRingState,pVM->pMem);
-    /* Save Local Scope Information */
-    pVM->nScopeID++ ;
-    ring_list_addint_gc(pVM->pRingState,pVM->aScopeID,pVM->nScopeID);
-    pVM->nActiveScopeID = pVM->nScopeID ;
 }
 
 int ring_vm_findvar ( VM *pVM,const char *cStr )
 {
     int x,nPos,nMax1  ;
     List *pList,*pList2  ;
-    assert(pVM->pMem != NULL);
     pVM->lSelfLoadA = 0 ;
     nMax1 = ring_list_getsize(pVM->pMem);
     /* The scope of the search result */
@@ -121,7 +114,7 @@ int ring_vm_findvar ( VM *pVM,const char *cStr )
             else {
                 /* Search Using the HashTable */
                 if ( pList->pHashTable == NULL ) {
-                    ring_list_genhashtable2(pList);
+                    ring_list_genhashtable2_gc(pVM->pRingState,pList);
                 }
                 pList2 = (List *) ring_hashtable_findpointer(pList->pHashTable,cStr);
                 if ( pList2 != NULL ) {
@@ -173,7 +166,7 @@ int ring_vm_findvar2 ( VM *pVM,int x,List *pList2,const char *cStr )
     }
     else {
         /* Check Private Attributes */
-        if ( ring_list_getint(pList2,RING_VAR_PRIVATEFLAG) == 1 ) {
+        if ( ring_vm_var_getprivateflag(pVM,pList2) == 1 ) {
             /* We check that we are not in the class region too (defining the private attribute then reusing it) */
             if ( ! ( (pVM->nVarScope == RING_VARSCOPE_NEWOBJSTATE) &&  (pVM->nInClassRegion == 1) ) ) {
                 if ( ring_vm_oop_callmethodinsideclass(pVM) == 0 ) {
@@ -256,7 +249,6 @@ int ring_vm_findvar2 ( VM *pVM,int x,List *pList2,const char *cStr )
 void ring_vm_newvar ( VM *pVM,const char *cStr )
 {
     List *pList  ;
-    assert(pVM->pActiveMem != NULL);
     pList = ring_vm_newvar2(pVM,cStr,pVM->pActiveMem);
     RING_VM_SP_INC ;
     RING_VM_STACK_SETPVALUE(pList);
@@ -301,8 +293,6 @@ List * ring_vm_newvar2 ( VM *pVM,const char *cStr,List *pParent )
     ring_list_addstring_gc(pVM->pRingState,pList,"NULL");
     /* Pointer Type */
     ring_list_addint_gc(pVM->pRingState,pList,0);
-    /* Private Flag */
-    ring_list_addint_gc(pVM->pRingState,pList,0);
     /* HashTable & Array */
     if ( pParent != NULL ) {
         /* Add Pointer to the HashTable */
@@ -310,8 +300,6 @@ List * ring_vm_newvar2 ( VM *pVM,const char *cStr,List *pParent )
             pParent->pHashTable = ring_hashtable_new_gc(pVM->pRingState);
         }
         ring_hashtable_newpointer_gc(pVM->pRingState,pParent->pHashTable,cStr,pList);
-        /* Generate the Array */
-        ring_list_genarray(pList);
     }
     return pList ;
 }
@@ -348,7 +336,16 @@ void ring_vm_addnewpointervar ( VM *pVM,const char *cStr,void *x,int y )
     ring_list_setpointer_gc(pVM->pRingState,pList,RING_VAR_VALUE,x);
     ring_list_setint_gc(pVM->pRingState,pList,RING_VAR_PVALUETYPE,y);
     /* Reference Counting */
-    ring_vm_gc_checknewreference(x,y);
+    ring_vm_gc_checknewreference(x,y,pList,RING_VAR_VALUE);
+}
+
+List * ring_vm_addnewlistvar ( VM *pVM,const char *cStr )
+{
+    List *pList  ;
+    pList = ring_vm_newvar2(pVM,cStr,pVM->pActiveMem);
+    ring_list_setint_gc(pVM->pRingState,pList,RING_VAR_TYPE,RING_VM_LIST);
+    ring_list_setlist_gc(pVM->pRingState,pList,RING_VAR_VALUE);
+    return pList ;
 }
 
 void ring_vm_newtempvar ( VM *pVM,const char *cStr, List *TempList )
@@ -381,13 +378,94 @@ void ring_vm_deletescope ( VM *pVM )
         printf( RING_NOSCOPE ) ;
         exit(1);
     }
-    /* Check References */
-    ring_vm_gc_checkreferences(pVM);
     ring_list_deleteitem_gc(pVM->pRingState,pVM->pMem,ring_list_getsize(pVM->pMem));
     pVM->pActiveMem = ring_list_getlist(pVM->pMem,ring_list_getsize(pVM->pMem));
-    /* Delete Local Scope information */
-    ring_list_deleteitem_gc(pVM->pRingState,pVM->aScopeID,ring_list_getsize(pVM->aScopeID));
-    pVM->nActiveScopeID = ring_list_getint(pVM->aScopeID,ring_list_getsize(pVM->aScopeID)) ;
+}
+
+void ring_vm_var_setprivateflag ( VM *pVM,List *pVar,int nFlag )
+{
+    if ( ring_list_getsize(pVar) == RING_VAR_PRIVATEFLAG - 1 ) {
+        ring_list_addint_gc(pVM->pRingState,pVar,nFlag);
+    }
+    else if ( ring_list_getsize(pVar) == RING_VAR_PRIVATEFLAG ) {
+        ring_list_setint_gc(pVM->pRingState,pVar,RING_VAR_PRIVATEFLAG,nFlag);
+    }
+}
+
+int ring_vm_var_getprivateflag ( VM *pVM,List *pVar )
+{
+    if ( ring_list_getsize(pVar) >= RING_VAR_PRIVATEFLAG ) {
+        return ring_list_getint(pVar,RING_VAR_PRIVATEFLAG) ;
+    }
+    return 0 ;
+}
+/* Arguments */
+
+List * ring_vm_addstringarg ( VM *pVM,const char *cVar,const char  *cStr,int nStrSize )
+{
+    List *pList, *pParent  ;
+    pParent = pVM->pActiveMem ;
+    pList = ring_list_newlist_gc(pVM->pRingState,pParent);
+    ring_list_addstring_gc(pVM->pRingState,pList,cVar);
+    ring_list_addint_gc(pVM->pRingState,pList,RING_VM_STRING);
+    ring_list_addstring2_gc(pVM->pRingState,pList,cStr,nStrSize);
+    /* Add Pointer to the HashTable */
+    if ( pParent->pHashTable == NULL ) {
+        pParent->pHashTable = ring_hashtable_new_gc(pVM->pRingState);
+    }
+    ring_hashtable_newpointer_gc(pVM->pRingState,pParent->pHashTable,cVar,pList);
+    return pList ;
+}
+
+List * ring_vm_addnumberarg ( VM *pVM,const char *cVar,double nNumber )
+{
+    List *pList, *pParent  ;
+    pParent = pVM->pActiveMem ;
+    pList = ring_list_newlist_gc(pVM->pRingState,pParent);
+    ring_list_addstring_gc(pVM->pRingState,pList,cVar);
+    ring_list_addint_gc(pVM->pRingState,pList,RING_VM_NUMBER);
+    ring_list_adddouble_gc(pVM->pRingState,pList,nNumber);
+    /* Add Pointer to the HashTable */
+    if ( pParent->pHashTable == NULL ) {
+        pParent->pHashTable = ring_hashtable_new_gc(pVM->pRingState);
+    }
+    ring_hashtable_newpointer_gc(pVM->pRingState,pParent->pHashTable,cVar,pList);
+    return pList ;
+}
+
+List * ring_vm_addpointerarg ( VM *pVM,const char *cVar,void *pPointer,int nType )
+{
+    List *pList, *pParent  ;
+    pParent = pVM->pActiveMem ;
+    pList = ring_list_newlist_gc(pVM->pRingState,pParent);
+    ring_list_addstring_gc(pVM->pRingState,pList,cVar);
+    ring_list_addint_gc(pVM->pRingState,pList,RING_VM_POINTER);
+    ring_list_addpointer_gc(pVM->pRingState,pList,pPointer);
+    ring_list_addint_gc(pVM->pRingState,pList,nType);
+    /* Reference Counting */
+    ring_vm_gc_checknewreference(pPointer,nType,pList,RING_VAR_VALUE);
+    /* Add Pointer to the HashTable */
+    if ( pParent->pHashTable == NULL ) {
+        pParent->pHashTable = ring_hashtable_new_gc(pVM->pRingState);
+    }
+    ring_hashtable_newpointer_gc(pVM->pRingState,pParent->pHashTable,cVar,pList);
+    return pList ;
+}
+
+List * ring_vm_addlistarg ( VM *pVM,const char *cVar )
+{
+    List *pList, *pParent  ;
+    pParent = pVM->pActiveMem ;
+    pList = ring_list_newlist_gc(pVM->pRingState,pParent);
+    ring_list_addstring_gc(pVM->pRingState,pList,cVar);
+    ring_list_addint_gc(pVM->pRingState,pList,RING_VM_LIST);
+    ring_list_newlist_gc(pVM->pRingState,pList);
+    /* Add Pointer to the HashTable */
+    if ( pParent->pHashTable == NULL ) {
+        pParent->pHashTable = ring_hashtable_new_gc(pVM->pRingState);
+    }
+    ring_hashtable_newpointer_gc(pVM->pRingState,pParent->pHashTable,cVar,pList);
+    return pList ;
 }
 /* Custom Global Scope */
 

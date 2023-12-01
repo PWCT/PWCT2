@@ -13,11 +13,9 @@ int ring_vm_loadfunc ( VM *pVM )
 
 int ring_vm_loadfunc2 ( VM *pVM,const char *cStr,int nPerformance )
 {
-    List *pList,*pList2,*pList3  ;
+    List *pList,*pList2  ;
     int y  ;
-    /* nFuncExecute is used also by See command while nFuncExecute2 is not */
-    pVM->nFuncExecute++ ;
-    pVM->nFuncExecute2++ ;
+    FuncCall *pFuncCall  ;
     /* Search */
     for ( y = 2 ; y >= 1 ; y-- ) {
         /* For OOP Support - Search in the Class Methods */
@@ -54,45 +52,33 @@ int ring_vm_loadfunc2 ( VM *pVM,const char *cStr,int nPerformance )
                     return 0 ;
                 }
             }
-            pList3 = ring_list_newlist_gc(pVM->pRingState,pVM->pFuncCallList);
-            ring_list_addint_gc(pVM->pRingState,pList3,RING_FUNCTYPE_SCRIPT);
-            /* Add the function name */
-            ring_list_addstring_gc(pVM->pRingState,pList3,cStr);
-            ring_list_addint_gc(pVM->pRingState,pList3,ring_list_getint(pList2,RING_FUNCMAP_PC));
-            ring_list_addint_gc(pVM->pRingState,pList3,pVM->nSP);
+            /* Add FuncCall Structure */
+            pFuncCall = ring_vmfunccall_new(pVM);
+            pFuncCall->nType = RING_FUNCTYPE_SCRIPT ;
+            pFuncCall->cName = cStr ;
+            pFuncCall->nPC = ring_list_getint(pList2,RING_FUNCMAP_PC) ;
+            pFuncCall->nSP = pVM->nSP ;
+            pFuncCall->pFunc = NULL ;
             /* Create Temp Memory */
-            ring_list_newlist_gc(pVM->pRingState,pList3);
+            pFuncCall->pTempMem = ring_list_new_gc(pVM->pRingState,0) ;
             /* File Name */
-            ring_list_addpointer_gc(pVM->pRingState,pList3,pVM->cFileName);
+            pFuncCall->cFileName = pVM->cFileName ;
             pVM->cPrevFileName = pVM->cFileName ;
             pVM->cFileName = ring_list_getstring(pList2,RING_FUNCMAP_FILENAME) ;
-            ring_list_addpointer_gc(pVM->pRingState,pList3,pVM->cFileName);
+            pFuncCall->cNewFileName = pVM->cFileName ;
             /* Method or Function */
-            if ( (y == 1) && (pVM->nCallMethod != 1) ) {
-                ring_list_addint_gc(pVM->pRingState,pList3,0);
-            }
-            else {
-                ring_list_addint_gc(pVM->pRingState,pList3,1);
-            }
+            pFuncCall->nMethodOrFunc = ! ( (y == 1) && (pVM->nCallMethod != 1) ) ;
             /* Line Number */
-            ring_list_addint_gc(pVM->pRingState,pList3,RING_VM_IR_GETLINENUMBER);
+            pFuncCall->nLineNumber = RING_VM_IR_GETLINENUMBER ;
             /* Store List information */
-            ring_list_addint_gc(pVM->pRingState,pList3,pVM->nListStart);
-            ring_list_addpointer_gc(pVM->pRingState,pList3,pVM->pNestedLists);
+            pFuncCall->nListStart = pVM->nListStart ;
+            pFuncCall->pNestedLists = pVM->pNestedLists ;
             pVM->nListStart = 0 ;
             pVM->pNestedLists = ring_list_new_gc(pVM->pRingState,0);
             if ( (strcmp(cStr,"main") != 0 ) && (pVM->nCallMethod != 1) && (y != 2) ) {
                 /* We check that we will convert Functions only, not methods */
                 if ( pVM->nInsideBraceFlag == 0 ) {
-                    if ( nPerformance == 1 ) {
-                        /* Replace Instruction with ICO_LOADFUNCP for better performance */
-                        RING_VM_IR_OPCODE = ICO_LOADFUNCP ;
-                        /* Leave the first parameter (contains the function name as wanted) */
-                        RING_VM_IR_ITEMSETINT(RING_VM_IR_ITEM(2),ring_list_getint(pList2,RING_FUNCMAP_PC));
-                        RING_VM_IR_ITEMSETPOINTER(RING_VM_IR_ITEMATINS(RING_VM_PC_PREVINS,1),ring_list_getstring(pList2,RING_FUNCMAP_FILENAME));
-                        RING_VM_IR_ITEMSETINT(RING_VM_IR_ITEMATINS(RING_VM_PC_PREVINS,2),ring_list_getint(pList3,RING_FUNCCL_METHODORFUNC));
-                        RING_VM_IR_ITEMSETINT(RING_VM_IR_ITEMATINS(RING_VM_PC_PREVINS,3),ring_list_getint(pList3,RING_FUNCCL_LINENUMBER));
-                    }
+                    ring_vmfunccall_useloadfuncp(pVM,pFuncCall,nPerformance);
                 }
                 else {
                     /*
@@ -114,8 +100,11 @@ int ring_vm_loadfunc2 ( VM *pVM,const char *cStr,int nPerformance )
                     }
                 }
             }
-            /* Add nLoadAddressScope to aAddressScope */
-            ring_vm_saveloadaddressscope(pVM);
+            /* Add nLoadAddressScope to pFuncCall */
+            pFuncCall->nLoadAddressScope = pVM->nLoadAddressScope ;
+            pVM->nLoadAddressScope = RING_VARSCOPE_NOTHING ;
+            /* Increment nFuncExecute */
+            pVM->nFuncExecute++ ;
             return 1 ;
         }
     }
@@ -123,40 +112,42 @@ int ring_vm_loadfunc2 ( VM *pVM,const char *cStr,int nPerformance )
     if ( pVM->nCallMethod == 1 ) {
         /* Pass The Call Instruction and the AfterCallMethod Instruction */
         pVM->nPC += 2 ;
-        /* Decrement FuncExecute Counter */
-        pVM->nFuncExecute-- ;
-        pVM->nFuncExecute2-- ;
         ring_vm_error2(pVM,RING_VM_ERROR_METHODNOTFOUND,cStr);
         return 0 ;
     }
     /* Find Function in C Functions List */
     pList = (List *) ring_hashtable_findpointer(ring_list_gethashtable(pVM->pCFunctionsList),cStr);
     if ( pList != NULL ) {
-        pList2 = ring_list_newlist_gc(pVM->pRingState,pVM->pFuncCallList);
-        ring_list_addint_gc(pVM->pRingState,pList2,RING_FUNCTYPE_C);
-        ring_list_addstring_gc(pVM->pRingState,pList2,cStr);
-        ring_list_addfuncpointer_gc(pVM->pRingState,pList2,ring_list_getfuncpointer(pList,RING_FUNCMAP_PC));
-        ring_list_addint_gc(pVM->pRingState,pList2,pVM->nSP);
+        /* Add FuncCall Structure */
+        pFuncCall = ring_vmfunccall_new(pVM);
+        pFuncCall->nType = RING_FUNCTYPE_C ;
+        pFuncCall->cName = cStr ;
+        pFuncCall->pFunc = ring_list_getfuncpointer(pList,RING_FUNCMAP_PC) ;
+        pFuncCall->nSP = pVM->nSP ;
         /* Create Temp Memory */
-        ring_list_newlist_gc(pVM->pRingState,pList2);
+        pFuncCall->pTempMem = ring_list_new_gc(pVM->pRingState,0) ;
         /*
         **  File Name 
         **  The old source file name 
         */
-        ring_list_addpointer_gc(pVM->pRingState,pList2,pVM->cFileName);
+        pFuncCall->cFileName = pVM->cFileName ;
         /* The new source file name */
-        ring_list_addpointer_gc(pVM->pRingState,pList2,pVM->cFileName);
+        pFuncCall->cNewFileName = pVM->cFileName ;
         /* Method or Function */
-        ring_list_addint_gc(pVM->pRingState,pList2,0);
+        pFuncCall->nMethodOrFunc = 0 ;
         /* Line Number */
-        ring_list_addint_gc(pVM->pRingState,pList2,RING_VM_IR_GETLINENUMBER);
+        pFuncCall->nLineNumber = RING_VM_IR_GETLINENUMBER ;
         /* Store List information */
-        ring_list_addint_gc(pVM->pRingState,pList2,pVM->nListStart);
-        ring_list_addpointer_gc(pVM->pRingState,pList2,pVM->pNestedLists);
+        pFuncCall->nListStart = pVM->nListStart ;
+        pFuncCall->pNestedLists = pVM->pNestedLists ;
         pVM->nListStart = 0 ;
         pVM->pNestedLists = ring_list_new_gc(pVM->pRingState,0);
-        /* Add nLoadAddressScope to aAddressScope */
-        ring_vm_saveloadaddressscope(pVM);
+        /* Add nLoadAddressScope to pFuncCall */
+        pFuncCall->nLoadAddressScope = pVM->nLoadAddressScope ;
+        pVM->nLoadAddressScope = RING_VARSCOPE_NOTHING ;
+        ring_vmfunccall_useloadfuncp(pVM,pFuncCall,nPerformance);
+        /* Increment nFuncExecute */
+        pVM->nFuncExecute++ ;
         return 1 ;
     }
     /* Avoid Error if it is automatic call to the main function */
@@ -172,12 +163,7 @@ int ring_vm_loadfunc2 ( VM *pVM,const char *cStr,int nPerformance )
     **  So it's correct to use pVM->nPC++ 
     */
     pVM->nPC++ ;
-    /*
-    **  Display Error Message 
-    **  Decrement FuncExecute Counter 
-    */
-    pVM->nFuncExecute-- ;
-    pVM->nFuncExecute2-- ;
+    /* Display Error Message */
     ring_vm_error2(pVM,RING_VM_ERROR_FUNCNOTFOUND,cStr);
     return 0 ;
 }
@@ -195,7 +181,7 @@ void ring_vm_call ( VM *pVM )
             */
             if ( ring_list_getsize(pVM->aBeforeObjState) > 0 ) {
                 pList = ring_list_newlist_gc(pVM->pRingState,pVM->pObjState);
-                ring_list_copy_gc(pVM->pRingState,pList,ring_list_getlist(pVM->aBeforeObjState,ring_list_getsize(pVM->aBeforeObjState)));
+                ring_list_swaptwolists(pList,ring_list_getlist(pVM->aBeforeObjState,ring_list_getsize(pVM->aBeforeObjState)));
                 ring_list_deleteitem_gc(pVM->pRingState,pVM->aBeforeObjState,ring_list_getsize(pVM->aBeforeObjState));
             }
         }
@@ -206,53 +192,58 @@ void ring_vm_call ( VM *pVM )
 void ring_vm_call2 ( VM *pVM )
 {
     List *pList, *pActiveMem  ;
-    int x,nSP,nMax1,nFuncEx  ;
+    int x,nSP,nMax1  ;
+    FuncCall *pFuncCall  ;
     /* Decrement FuncExecute Counter */
     if ( pVM->nFuncExecute > 0 ) {
         pVM->nFuncExecute-- ;
-        pVM->nFuncExecute2-- ;
     }
-    /* Restore nLoadAddressScope from aAddressScope */
-    ring_vm_restoreloadaddressscope(pVM);
-    pList = ring_list_getlist(pVM->pFuncCallList,ring_list_getsize(pVM->pFuncCallList));
+    pFuncCall = RING_VM_LASTFUNCCALL ;
+    pFuncCall->nStatus = RING_FUNCSTATUS_CALL ;
+    /* Restore nLoadAddressScope from pFuncCall */
+    pVM->nLoadAddressScope = pFuncCall->nLoadAddressScope ;
     /* Restore List Status */
-    pVM->nListStart = ring_list_getint(pList,RING_FUNCCL_LISTSTART) ;
-    if ( pVM->pNestedLists != ring_list_getpointer(pList,RING_FUNCCL_NESTEDLISTS) ) {
+    pVM->nListStart = pFuncCall->nListStart ;
+    if ( pVM->pNestedLists != pFuncCall->pNestedLists ) {
         pVM->pNestedLists = ring_list_delete_gc(pVM->pRingState,pVM->pNestedLists);
-        pVM->pNestedLists = (List *) ring_list_getpointer(pList,RING_FUNCCL_NESTEDLISTS) ;
+        pVM->pNestedLists = (List *) pFuncCall->pNestedLists ;
     }
     /* Calling Method from brace */
-    if ( ring_list_getsize(pList) >= RING_FUNCCL_METHODORFUNC ) {
+    if ( (pFuncCall->nType == RING_FUNCTYPE_SCRIPT) && (pFuncCall->nMethodOrFunc == 1) ) {
         /* The first test to be sure it's not a C Function Call */
-        if ( ring_list_getint(pList,RING_FUNCCL_METHODORFUNC) == 1 ) {
-            ring_vm_oop_callmethodfrombrace(pVM);
-        }
+        ring_vm_oop_callmethodfrombrace(pVM);
     }
     /* Store the Caller Position */
-    ring_list_addint_gc(pVM->pRingState,pList,pVM->nPC);
+    pFuncCall->nCallerPC = pVM->nPC ;
     /* Store FuncExe Counter Value */
-    ring_list_addint_gc(pVM->pRingState,pList,pVM->nFuncExecute);
-    nFuncEx = pVM->nFuncExecute ;
+    pFuncCall->nFuncExec = pVM->nFuncExecute ;
     pVM->nFuncExecute = 0 ;
     /* Call Function */
-    if ( ring_list_getint(pList,RING_FUNCCL_TYPE) == RING_FUNCTYPE_SCRIPT ) {
+    if ( pFuncCall->nType == RING_FUNCTYPE_SCRIPT ) {
         /* Clear List/Nested Lists State */
         pVM->nListStart = 0 ;
         pVM->pNestedLists = ring_list_new_gc(pVM->pRingState,0);
-        pVM->nPC = ring_list_getint(pList,RING_FUNCCL_PC) ;
+        pVM->nPC = pFuncCall->nPC ;
         /* Save State */
-        ring_vm_savestateforfunctions(pVM,pList);
+        pFuncCall->pVMState = ring_vm_savestateforfunctions(pVM);
+        /* Clear nLoadAddressScope */
+        pVM->nLoadAddressScope = RING_VARSCOPE_NOTHING ;
         /* Avoid accessing object data or methods */
-        if ( ring_list_getint(pList,RING_FUNCCL_METHODORFUNC) == 0 ) {
+        if ( pFuncCall->nMethodOrFunc == 0 ) {
+            /* Check if we need this */
+            if ( ring_list_getsize(pVM->pObjState) == 0 ) {
+                return ;
+            }
+            if ( RING_VM_LASTOBJSTATE == NULL ) {
+                return ;
+            }
             pList = ring_list_newlist_gc(pVM->pRingState,pVM->pObjState);
             ring_list_addpointer_gc(pVM->pRingState,pList,NULL);
             ring_list_addpointer_gc(pVM->pRingState,pList,NULL);
             ring_list_addpointer_gc(pVM->pRingState,pList,NULL);
         }
-        /* Clear nLoadAddressScope */
-        pVM->nLoadAddressScope = RING_VARSCOPE_NOTHING ;
     }
-    else if ( ring_list_getint(pList,RING_FUNCCL_TYPE) == RING_FUNCTYPE_C ) {
+    else if ( pFuncCall->nType == RING_FUNCTYPE_C ) {
         /* Trace */
         ring_vm_traceevent(pVM,RING_VM_TRACEEVENT_BEFORECFUNC);
         /*
@@ -265,23 +256,22 @@ void ring_vm_call2 ( VM *pVM )
         /* Create New Scope */
         ring_vm_newscope(pVM);
         /* Get Parameters */
-        pVM->nCFuncParaCount = 0 ;
-        nSP = ring_list_getint(pList,RING_FUNCCL_SP) ;
+        nSP = pFuncCall->nSP ;
+        pVM->nCFuncParaCount = pVM->nSP - nSP ;
         /* Use Order (First In - First Out) As Queue , the first parameter comes first */
         if ( nSP < pVM->nSP ) {
             nMax1 = pVM->nSP ;
             for ( x = nSP+1 ; x <= nMax1 ; x++ ) {
                 pVM->nSP = x ;
                 if ( RING_VM_STACK_ISSTRING ) {
-                    ring_vm_addnewstringvar2(pVM,"",RING_VM_STACK_READC,RING_VM_STACK_STRINGSIZE);
+                    ring_list_addstring2_gc(pVM->pRingState,pVM->pActiveMem,RING_VM_STACK_READC,RING_VM_STACK_STRINGSIZE);
                 }
                 else if ( RING_VM_STACK_ISNUMBER ) {
-                    ring_vm_addnewnumbervar(pVM,"",RING_VM_STACK_READN);
+                    ring_list_adddouble_gc(pVM->pRingState,pVM->pActiveMem,RING_VM_STACK_READN);
                 }
                 else if ( RING_VM_STACK_ISPOINTER ) {
-                    ring_vm_addnewpointervar(pVM,"",RING_VM_STACK_READP,RING_VM_STACK_OBJTYPE);
+                    ring_list_addpointerandtype_gc(pVM->pRingState,pVM->pActiveMem,RING_VM_STACK_READP,RING_VM_STACK_OBJTYPE);
                 }
-                pVM->nCFuncParaCount++ ;
             }
             pVM->nSP = nSP ;
         }
@@ -290,11 +280,11 @@ void ring_vm_call2 ( VM *pVM )
         /* Enable C Pointer Type Check */
         pVM->nIgnoreCPointerTypeCheck = 0 ;
         /* Call Function */
-        ring_list_callfuncpointer(pList,RING_FUNCCL_PC,pVM);
+        pFuncCall->pFunc(pVM) ;
         /* Trace */
         ring_vm_traceevent(pVM,RING_VM_TRACEEVENT_AFTERCFUNC);
         /* Restore nFuncEx state */
-        pVM->nFuncExecute = nFuncEx ;
+        pVM->nFuncExecute = pFuncCall->nFuncExec ;
         /* Check for function termination by try/catch */
         if ( pVM->nActiveCatch == 1 ) {
             /*
@@ -330,8 +320,8 @@ void ring_vm_call2 ( VM *pVM )
         pVM->pActiveMem = pActiveMem ;
         /* Restore nFuncSP value */
         if ( ring_list_getsize(pVM->pFuncCallList) > 0 ) {
-            pList = ring_list_getlist(pVM->pFuncCallList,ring_list_getsize(pVM->pFuncCallList));
-            pVM->nFuncSP = ring_list_getint(pList,RING_FUNCCL_SP) ;
+            pFuncCall = RING_VM_LASTFUNCCALL ;
+            pVM->nFuncSP = pFuncCall->nSP ;
         }
         else {
             pVM->nFuncSP = 0 ;
@@ -354,6 +344,7 @@ void ring_vm_return ( VM *pVM )
 {
     List *pList  ;
     Item oTempItem  ;
+    FuncCall *pFuncCall  ;
     /* Support for nested "Load" instructions */
     if ( pVM->nBlockFlag >= 1 ) {
         ring_vm_removeblockflag(pVM);
@@ -363,18 +354,18 @@ void ring_vm_return ( VM *pVM )
         }
     }
     if ( ring_list_getsize(pVM->pFuncCallList) > 0 ) {
-        pList = ring_list_getlist(pVM->pFuncCallList,ring_list_getsize(pVM->pFuncCallList));
-        pVM->nPC = ring_list_getint(pList,RING_FUNCCL_CALLERPC) ;
-        pVM->nFuncExecute = ring_list_getint(pList,RING_FUNCCL_FUNCEXE) ;
+        pFuncCall = RING_VM_LASTFUNCCALL ;
+        pVM->nPC = pFuncCall->nCallerPC ;
+        pVM->nFuncExecute = pFuncCall->nFuncExec ;
         /* Restore List Status */
-        pVM->nListStart = ring_list_getint(pList,RING_FUNCCL_LISTSTART) ;
-        if ( pVM->pNestedLists != ring_list_getpointer(pList,RING_FUNCCL_NESTEDLISTS) ) {
+        pVM->nListStart = pFuncCall->nListStart ;
+        if ( pVM->pNestedLists != pFuncCall->pNestedLists ) {
             pVM->pNestedLists = ring_list_delete_gc(pVM->pRingState,pVM->pNestedLists);
-            pVM->pNestedLists = (List *) ring_list_getpointer(pList,RING_FUNCCL_NESTEDLISTS) ;
+            pVM->pNestedLists = pFuncCall->pNestedLists ;
         }
         /* Restore File Name */
         pVM->cPrevFileName = pVM->cFileName ;
-        pVM->cFileName = (char *) ring_list_getpointer(pList,RING_FUNCCL_FILENAME) ;
+        pVM->cFileName = (char *) pFuncCall->cFileName ;
         /* Avoid wrong Stack Pointer Value */
         if ( pVM->nSP > pVM->nFuncSP+1 ) {
             /*
@@ -400,12 +391,12 @@ void ring_vm_return ( VM *pVM )
         }
         ring_vm_deletescope(pVM);
         /* Restore State */
-        ring_vm_restorestateforfunctions(pVM,pList,RING_FUNCCL_STATE);
+        ring_vm_restorestateforfunctions(pVM,pFuncCall->pVMState);
         ring_list_deleteitem_gc(pVM->pRingState,pVM->pFuncCallList,ring_list_getsize(pVM->pFuncCallList));
         /* Restore nFuncSP value */
         if ( ring_list_getsize(pVM->pFuncCallList) > 0 ) {
-            pList = ring_list_getlist(pVM->pFuncCallList,ring_list_getsize(pVM->pFuncCallList));
-            pVM->nFuncSP = ring_list_getint(pList,RING_FUNCCL_SP) ;
+            pFuncCall = RING_VM_LASTFUNCCALL ;
+            pVM->nFuncSP = pFuncCall->nSP ;
         }
         else {
             pVM->nFuncSP = 0 ;
@@ -437,49 +428,45 @@ void ring_vm_returnnull ( VM *pVM )
 
 void ring_vm_newfunc ( VM *pVM )
 {
-    int x,nSP,nMax  ;
-    List *pList, *aParameters,*aRefList,*pVar,*pRef  ;
-    String *pParameter  ;
+    int x,nSP,nMax,lFreeParameter  ;
+    List *pList,*aRefList,*pVar,*pRef  ;
+    char *pParameter  ;
     char *cParameters  ;
-    char cStr[2]  ;
-    assert(pVM != NULL);
+    char cPara[RING_FUNCPARA_EXPECTEDSIZE]  ;
+    FuncCall *pFuncCall  ;
     ring_vm_newscope(pVM);
+    /* Set the Local Scope ID */
+    pVM->nActiveScopeID = ++ pVM->nScopeID ;
     /* Set the SP then Check Parameters */
-    pList = ring_list_getlist(pVM->pFuncCallList,ring_list_getsize(pVM->pFuncCallList));
-    assert(pList != NULL);
-    nSP = ring_list_getint(pList,RING_FUNCCL_SP) ;
+    pFuncCall = RING_VM_LASTFUNCCALL ;
+    pFuncCall->nStatus = RING_FUNCSTATUS_STARTED ;
+    nSP = pFuncCall->nSP ;
     pVM->nFuncSP = nSP ;
     if ( RING_VM_IR_PARACOUNT > 2 ) {
         /* Read Parameters (Separated by Space) */
-        pParameter = ring_string_new_gc(pVM->pRingState,"");
         cParameters = RING_VM_IR_READCVALUE(2) ;
-        nMax = strlen(cParameters) ;
-        cStr[1] = '\0' ;
-        aParameters = ring_list_new_gc(pVM->pRingState,0);
-        for ( x = 0 ; x < nMax ; x++ ) {
-            if ( cParameters[x] != ' ' ) {
-                cStr[0] = cParameters[x] ;
-                ring_string_add_gc(pVM->pRingState,pParameter,cStr);
-            }
-            if ( (cParameters[x] == ' ') || (x == nMax-1) ) {
-                ring_list_addstring_gc(pVM->pRingState,aParameters,ring_string_get(pParameter));
-                ring_string_set_gc(pVM->pRingState,pParameter,"");
-            }
+        nMax = RING_VM_IR_READCVALUESIZE(2) ;
+        lFreeParameter = nMax > RING_FUNCPARA_EXPECTEDSIZE - 1 ;
+        if ( lFreeParameter ) {
+            pParameter = (char *) ring_state_malloc(pVM->pRingState,nMax+1);
         }
-        ring_string_delete_gc(pVM->pRingState,pParameter);
+        else {
+            pParameter = (char *) cPara ;
+        }
         /* Set Parameters Value */
         aRefList = ring_list_new_gc(pVM->pRingState,0);
-        for ( x = ring_list_getsize(aParameters) ; x >= 1 ; x-- ) {
+        for ( x = RING_VM_IR_READIVALUE(3) ; x >= 1 ; x-- ) {
             if ( nSP < pVM->nSP ) {
+                ring_string_word(cParameters,x,pParameter);
                 if ( RING_VM_STACK_ISSTRING ) {
-                    ring_vm_addnewstringvar2(pVM,ring_list_getstring(aParameters,x),RING_VM_STACK_READC,RING_VM_STACK_STRINGSIZE);
+                    ring_vm_addstringarg(pVM,pParameter,RING_VM_STACK_READC,RING_VM_STACK_STRINGSIZE);
                 }
                 else if ( RING_VM_STACK_ISNUMBER ) {
-                    ring_vm_addnewnumbervar(pVM,ring_list_getstring(aParameters,x),RING_VM_STACK_READN);
+                    ring_vm_addnumberarg(pVM,pParameter,RING_VM_STACK_READN);
                 }
                 else if ( RING_VM_STACK_ISPOINTER ) {
-                    if ( ! ring_list_isrefparameter(pVM,ring_list_getstring(aParameters,x)) ) {
-                        ring_vm_addnewpointervar(pVM,ring_list_getstring(aParameters,x),RING_VM_STACK_READP,RING_VM_STACK_OBJTYPE);
+                    if ( ! ring_list_isrefparameter(pVM,pParameter) ) {
+                        ring_vm_addpointerarg(pVM,pParameter,RING_VM_STACK_READP,RING_VM_STACK_OBJTYPE);
                         if ( RING_VM_STACK_OBJTYPE == RING_OBJTYPE_VARIABLE ) {
                             pVar = (List *) RING_VM_STACK_READP ;
                             if ( ring_list_islist(pVar,RING_VAR_VALUE) ) {
@@ -499,7 +486,9 @@ void ring_vm_newfunc ( VM *pVM )
             else {
                 pVM->cFileName = pVM->cPrevFileName ;
                 ring_list_deleteitem_gc(pVM->pRingState,pVM->pFuncCallList,ring_list_getsize(pVM->pFuncCallList));
-                ring_list_delete_gc(pVM->pRingState,aParameters);
+                if ( lFreeParameter ) {
+                    ring_state_free(pVM->pRingState,pParameter);
+                }
                 ring_vm_error(pVM,RING_VM_ERROR_LESSPARAMETERSCOUNT);
                 return ;
             }
@@ -511,7 +500,9 @@ void ring_vm_newfunc ( VM *pVM )
         }
         /* Clean Memory */
         ring_list_delete_gc(pVM->pRingState,aRefList);
-        ring_list_delete_gc(pVM->pRingState,aParameters);
+        if ( lFreeParameter ) {
+            ring_state_free(pVM->pRingState,pParameter);
+        }
     }
     if ( nSP < pVM->nSP ) {
         pVM->cFileName = pVM->cPrevFileName ;
@@ -520,7 +511,7 @@ void ring_vm_newfunc ( VM *pVM )
         return ;
     }
     /* Set the Temp. Memory size at start */
-    ring_list_addint_gc(pVM->pRingState,pList,ring_list_getsize(ring_list_getlist(pList,RING_FUNCCL_TEMPMEM)));
+    pFuncCall->nTempMemSizeAtStart = ring_list_getsize(pFuncCall->pTempMem) ;
     /* Support this in the method */
     ring_vm_oop_setthethisvariable(pVM);
     /* Trace */
@@ -675,23 +666,11 @@ void ring_vm_createtemplist ( VM *pVM )
         pList = ring_list_newlist_gc(pVM->pRingState,pList2);
     }
     /* Create the variable */
-    ring_vm_newtempvar(pVM,RING_TEMP_VARIABLE,pList);
+    ring_vm_newtempvar(pVM,RING_TEMP_VAR,pList);
     /* Set the Address scope as local */
     if ( pVM->nLoadAddressScope == RING_VARSCOPE_NOTHING ) {
         pVM->nLoadAddressScope = RING_VARSCOPE_LOCAL ;
     }
-}
-
-void ring_vm_saveloadaddressscope ( VM *pVM )
-{
-    ring_list_addint_gc(pVM->pRingState,pVM->aAddressScope,pVM->nLoadAddressScope);
-    pVM->nLoadAddressScope = RING_VARSCOPE_NOTHING ;
-}
-
-void ring_vm_restoreloadaddressscope ( VM *pVM )
-{
-    pVM->nLoadAddressScope = ring_list_getint(pVM->aAddressScope,ring_list_getsize(pVM->aAddressScope));
-    ring_list_deleteitem_gc(pVM->pRingState,pVM->aAddressScope,ring_list_getsize(pVM->aAddressScope));
 }
 
 void ring_vm_anonymous ( VM *pVM )
@@ -710,42 +689,40 @@ void ring_vm_anonymous ( VM *pVM )
 
 int ring_vm_isstackpointertoobjstate ( VM *pVM )
 {
-    /* if the variable belong to the object state, return 1 */
-    if ( pVM->nLoadAddressScope != RING_VARSCOPE_NOTHING ) {
-        if ( (pVM->nLoadAddressScope == RING_VARSCOPE_OBJSTATE) || (pVM->nLoadAddressScope ==RING_VARSCOPE_GLOBAL) ) {
-            return 1 ;
-        }
-    }
-    return 0 ;
+    return (pVM->nLoadAddressScope == RING_VARSCOPE_OBJSTATE) || (pVM->nLoadAddressScope ==RING_VARSCOPE_GLOBAL) ;
 }
 
 List * ring_vm_prevtempmem ( VM *pVM )
 {
-    List *pList  ;
+    List *pList, *pTemp  ;
+    FuncCall *pFuncCall  ;
     int x  ;
     /* We use the general temp. memory as the default parent */
-    pList = pVM->pTempMem ;
+    pTemp = pVM->pTempMem ;
     /* Get Temp Memory of the previous function */
     for ( x = ring_list_getsize(pVM->pFuncCallList)-1 ; x >= 1 ; x-- ) {
-        pList = ring_list_getlist(pVM->pFuncCallList,x);
-        if ( ring_list_getsize(pList) >= RING_FUNCCL_TEMPMEM ) {
+        pFuncCall = (FuncCall *) ring_list_getpointer(pVM->pFuncCallList,x) ;
+        if ( pFuncCall->nCallerPC != 0 ) {
             /* Get Temp Mem */
-            pList = ring_list_getlist(pList,RING_FUNCCL_TEMPMEM);
+            pTemp = pFuncCall->pTempMem ;
             break ;
         }
     }
-    return pList ;
+    return pTemp ;
 }
 
 void ring_vm_freetemplistsins ( VM *pVM )
 {
-    ring_vm_freetemplists(pVM, & RING_VM_IR_READI, & RING_VM_IR_READIVALUE(2));
+    if ( ring_vm_timetofreetemplists(pVM) ) {
+        ring_vm_freetemplists(pVM, & RING_VM_IR_READI, & RING_VM_IR_READIVALUE(2));
+    }
 }
 
 void ring_vm_freetemplists ( VM *pVM, int *nTempCount, int *nScopeID )
 {
     List *pTempMem, *pList, *pList2  ;
     int x,x2,lFound,nStart,lMutex  ;
+    FuncCall *pFuncCall  ;
     nStart = 1 ;
     lMutex = 0 ;
     /* Clear lists inside aDeleteLater */
@@ -776,8 +753,8 @@ void ring_vm_freetemplists ( VM *pVM, int *nTempCount, int *nScopeID )
     }
     /* Get the current temp. list */
     if ( ring_list_getsize(pVM->pFuncCallList) > 0 ) {
-        pTempMem = ring_list_getlist(pVM->pFuncCallList,ring_list_getsize(pVM->pFuncCallList)) ;
-        pTempMem = ring_list_getlist(pTempMem,RING_FUNCCL_TEMPMEM) ;
+        pFuncCall = RING_VM_LASTFUNCCALL ;
+        pTempMem = pFuncCall->pTempMem ;
     }
     else {
         lMutex = 1 ;
@@ -824,6 +801,7 @@ void ring_vm_endfuncexec ( VM *pVM )
 void ring_vm_retitemref ( VM *pVM )
 {
     List *pList  ;
+    FuncCall *pFuncCall  ;
     pVM->nRetItemRef++ ;
     /* We free the stack to avoid effects on nLoadAddressScope which is used by isstackpointertoobjstate */
     ring_vm_freestack(pVM);
@@ -835,9 +813,63 @@ void ring_vm_retitemref ( VM *pVM )
     **  This to avoid using & two times like  &  & 
     */
     if ( ring_list_getsize(pVM->pFuncCallList) > 0 ) {
-        pList = ring_list_getlist(pVM->pFuncCallList,ring_list_getsize(pVM->pFuncCallList));
-        if ( strcmp(ring_list_getstring(pList,RING_FUNCCL_NAME),"operator") == 0 ) {
+        pFuncCall = RING_VM_LASTFUNCCALL ;
+        if ( strcmp(pFuncCall->cName,"operator") == 0 ) {
             pVM->nRetItemRef++ ;
         }
+    }
+}
+
+int ring_vm_timetofreetemplists ( VM *pVM )
+{
+    /* We must start by executing the instruction for the first time (So we use decrement) */
+    if ( RING_VM_IR_GETINTREG == 0 ) {
+        RING_VM_IR_SETINTREG(RING_VM_TEMPLISTSCOUNTERMAX);
+        return 1 ;
+    }
+    RING_VM_IR_SETINTREG(RING_VM_IR_GETINTREG -1);
+    return 0 ;
+}
+
+FuncCall * ring_vmfunccall_new ( VM *pVM )
+{
+    FuncCall *pFuncCall  ;
+    pFuncCall = (FuncCall *) ring_vmstate_new(pVM->pRingState) ;
+    pFuncCall->pTempMem = NULL ;
+    pFuncCall->nCallerPC = 0 ;
+    pFuncCall->nStatus = RING_FUNCSTATUS_LOAD ;
+    pFuncCall->pVMState = NULL ;
+    ring_list_addcustomringpointer_gc(pVM->pRingState,pVM->pFuncCallList,pFuncCall,ring_vmfunccall_delete);
+    return pFuncCall ;
+}
+
+void ring_vmfunccall_delete ( void *pState,void *pMemory )
+{
+    FuncCall *pFuncCall  ;
+    pFuncCall = (FuncCall *) pMemory ;
+    if ( pFuncCall->pTempMem != NULL ) {
+        ring_list_delete_gc(pState,pFuncCall->pTempMem);
+    }
+    if ( pFuncCall->pVMState != NULL ) {
+        ring_vmstate_delete(pState,pFuncCall->pVMState);
+    }
+    ring_vmstate_delete(pState,pMemory);
+}
+
+void ring_vmfunccall_useloadfuncp ( VM *pVM,FuncCall *pFuncCall,int nPerformance )
+{
+    if ( nPerformance == 1 ) {
+        /* Replace Instruction with ICO_LOADFUNCP for better performance */
+        RING_VM_IR_OPCODE = ICO_LOADFUNCP ;
+        /* Leave the first parameter (contains the function name as wanted) */
+        RING_VM_IR_ITEMSETLOWINT(RING_VM_IR_ITEM(2),pFuncCall->nPC);
+        RING_VM_IR_ITEMSETHIGHINT(RING_VM_IR_ITEM(2),ring_list_getsize(pVM->pFunctionsMap));
+        RING_VM_IR_ITEMSETPOINTER(RING_VM_IR_ITEM(3),(void *) pFuncCall->pFunc);
+        RING_VM_IR_ITEMSETPOINTER(RING_VM_IR_ITEM(4),(void *) pFuncCall->cNewFileName);
+        RING_VM_IR_SETINTREG(pFuncCall->nMethodOrFunc);
+        RING_VM_IR_SETFLAGREG(pFuncCall->nType);
+        RING_VM_IR_SETREG3TYPE(RING_VM_REGTYPE_POINTER);
+        RING_VM_IR_SETREG4TYPE(RING_VM_REGTYPE_POINTER);
+        RING_VM_IR_PARACOUNT = 5 ;
     }
 }

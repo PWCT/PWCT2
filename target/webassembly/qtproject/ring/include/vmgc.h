@@ -5,12 +5,9 @@
     **  Functions 
     **  Item GC Functions 
     */
+    #define ring_vm_gc_cleardata(pItem) pItem->gc.nReferenceCount = 0; pItem->gc.pFreeFunc = NULL
 
-    void ring_vm_gc_cleardata ( Item *pItem ) ;
-
-    void ring_vm_gc_checkreferences ( VM *pVM ) ;
-
-    void ring_vm_gc_checknewreference ( void *pPointer,int nType ) ;
+    void ring_vm_gc_checknewreference ( void *pPointer,int nType,List *pContainer, int nIndex ) ;
 
     void ring_vm_gc_checkupdatereference ( VM *pVM,List *pList ) ;
 
@@ -19,8 +16,7 @@
     void ring_vm_gc_killreference ( VM *pVM ) ;
 
     void ring_vm_gc_deletetemplists ( VM *pVM ) ;
-
-    void ring_vm_gc_newitemreference ( Item *pItem ) ;
+    #define ring_vm_gc_newitemreference(pItem) pItem->gc.nReferenceCount++
 
     void ring_vm_gc_freefunc ( RingState *pState,Item *pItem ) ;
 
@@ -139,4 +135,9 @@
     void ring_poolmanager_newblockfromsubthread ( RingState *pSubRingState,int nCount,RingState *pMainRingState ) ;
 
     void ring_poolmanager_deleteblockfromsubthread ( RingState *pSubRingState,RingState *pMainRingState ) ;
+    /* VMState Memory Functions */
+
+    VMState * ring_vmstate_new ( RingState *pRingState ) ;
+
+    void ring_vmstate_delete ( void *pState,void *pMemory ) ;
 #endif

@@ -549,6 +549,8 @@ void ring_vm_refmeta_isprivateattribute ( void *pPointer )
     List *pList  ;
     int x  ;
     char *cStr  ;
+    VM *pVM  ;
+    pVM = (VM *) pPointer ;
     if ( RING_API_PARACOUNT != 2 ) {
         RING_API_ERROR(RING_API_BADPARACOUNT);
         return ;
@@ -560,7 +562,7 @@ void ring_vm_refmeta_isprivateattribute ( void *pPointer )
             pList = ring_list_getlist(pList,RING_OBJECT_OBJECTDATA);
             for ( x = 3 ; x <= ring_list_getsize(pList) ; x++ ) {
                 if ( strcmp(cStr,ring_list_getstring(ring_list_getlist(pList,x),RING_VAR_NAME))==0 ) {
-                    if ( ring_list_getint(ring_list_getlist(pList,x),RING_VAR_PRIVATEFLAG) == 1 ) {
+                    if ( ring_vm_var_getprivateflag(pVM,ring_list_getlist(pList,x)) == 1 ) {
                         RING_API_RETNUMBER(1);
                     }
                     else {
@@ -893,10 +895,22 @@ void ring_vm_refmeta_ringvmfileslist ( void *pPointer )
 void ring_vm_refmeta_ringvmcalllist ( void *pPointer )
 {
     VM *pVM  ;
-    List *pList  ;
+    List *pList, *pList2  ;
+    int x  ;
+    FuncCall *pFuncCall  ;
     pVM = (VM *) pPointer ;
     pList = ring_list_new_gc(pVM->pRingState,0);
-    ring_list_copy_gc(pVM->pRingState,pList,pVM->pFuncCallList);
+    /* Copy Important Information */
+    for ( x = 1 ; x <= ring_list_getsize(pVM->pFuncCallList ) ; x++ ) {
+        pFuncCall = (FuncCall *) ring_list_getpointer(pVM->pFuncCallList,x) ;
+        pList2 = ring_list_newlist_gc(pVM->pRingState,pList);
+        ring_list_addint_gc(pVM->pRingState,pList2,pFuncCall->nType);
+        ring_list_addstring_gc(pVM->pRingState,pList2,pFuncCall->cName);
+        ring_list_addint_gc(pVM->pRingState,pList2,pFuncCall->nPC);
+        ring_list_addint_gc(pVM->pRingState,pList2,pFuncCall->nSP);
+        ring_list_addint_gc(pVM->pRingState,pList2,pFuncCall->nMethodOrFunc);
+        ring_list_addint_gc(pVM->pRingState,pList2,pFuncCall->nCallerPC);
+    }
     RING_API_RETLIST(pList);
     ring_list_delete_gc(pVM->pRingState,pList);
 }
@@ -1019,11 +1033,12 @@ void ring_vm_refmeta_ringvmscopescount ( void *pPointer )
 void ring_vm_refmeta_ringvmevalinscope ( void *pPointer )
 {
     VM *pVM  ;
-    List *pActiveMem,*pState  ;
+    List *pActiveMem  ;
     const char *cStr  ;
     int nScope,nSize  ;
     Items *pLastItem  ;
     Items *pNextItem  ;
+    VMState *pVMState  ;
     pVM = (VM *) pPointer ;
     pNextItem = NULL ;
     pLastItem = NULL ;
@@ -1052,15 +1067,13 @@ void ring_vm_refmeta_ringvmevalinscope ( void *pPointer )
             pVM->pMem->pLast = pVM->pMem->pLastItemLastAccess ;
             pVM->pMem->pLast->pNext = NULL ;
         }
-        ring_list_adddouble_gc(pVM->pRingState,pVM->aScopeID,pVM->nActiveScopeID);
         pVM->nEvalInScope++ ;
         /* Save State */
-        pState = ring_list_new_gc(((VM *) pPointer)->pRingState,0);
-        ring_vm_savestateforfunctions(pVM,pState);
+        pVMState = ring_vm_savestateforfunctions(pVM);
         ring_vm_runcode(pVM,cStr);
         /* Restore State */
-        ring_vm_restorestateforfunctions(pVM,pState,1);
-        ring_list_delete_gc(((VM *) pPointer)->pRingState,pState);
+        ring_vm_restorestateforfunctions(pVM,pVMState);
+        ring_vmstate_delete(pVM->pRingState,pVMState);
         pVM->nEvalInScope-- ;
         /* Restore the current scope */
         pVM->pMem->nSize = nSize ;
@@ -1124,13 +1137,12 @@ void ring_vm_refmeta_ringvminfo ( void *pPointer )
     pList = ring_list_new_gc(pVM->pRingState,0);
     /*
     **  Add the list items 
-    **  Lists Size (14 Items) 
+    **  Lists Size (12 Items) 
     */
     ring_list_adddouble_gc(pVM->pRingState, pList, (double) ring_list_getsize(pVM->pRingState->pRingFilesList));
     ring_list_adddouble_gc(pVM->pRingState, pList, (double) ring_list_getsize(pVM->pRingState->pRingFilesStack));
     ring_list_adddouble_gc(pVM->pRingState, pList, (double) RING_VM_INSTRUCTIONSCOUNT);
     ring_list_adddouble_gc(pVM->pRingState, pList, (double) ring_list_getsize(pVM->pMem));
-    ring_list_adddouble_gc(pVM->pRingState, pList, (double) ring_list_getsize(pVM->aScopeID));
     ring_list_adddouble_gc(pVM->pRingState, pList, (double) ring_list_getsize(pVM->pTempMem));
     ring_list_adddouble_gc(pVM->pRingState, pList, (double) ring_list_getsize(pVM->aPCBlockFlag));
     ring_list_adddouble_gc(pVM->pRingState, pList, pVM->nLoadAddressScope);

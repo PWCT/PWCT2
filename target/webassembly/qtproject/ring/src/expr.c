@@ -566,7 +566,7 @@ int ring_parser_range ( Parser *pParser )
 
 int ring_parser_factor ( Parser *pParser,int *nFlag )
 {
-    int x,x2,x3,nLastOperation,nCount,nNOOP,nToken,nMark,nFlag2,nThisOrSelfLoadA,nThisLoadA,lNewFrom  ;
+    int x,x2,x3,nLastOperation,nCount,nNOOP,nToken,nMark,nFlag2,nThisOrSelfLoadA,nThisLoadA,lNewFrom,lAfterListEnd  ;
     List *pLoadAPos, *pLoadAMark,*pList, *pMark,*pAssignmentPointerPos  ;
     char lSetProperty,lequal,nBeforeEqual  ;
     char cFuncName[100]  ;
@@ -693,14 +693,16 @@ int ring_parser_factor ( Parser *pParser,int *nFlag )
                 **  We do this when we are not inside Brace 
                 */
                 nNOOP = 0 ;
-                if ( (ring_parser_icg_getlastoperation(pParser) == ICO_LISTEND) && (pParser->nBraceFlag == 0) ) {
+                lAfterListEnd = (ring_parser_icg_getlastoperation(pParser) == ICO_NEWLINE) && ring_parser_icg_getoperationbeforelastoperation(pParser) == ICO_LISTEND ;
+                lAfterListEnd = lAfterListEnd || (ring_parser_icg_getlastoperation(pParser) == ICO_LISTEND) ;
+                if ( lAfterListEnd && (pParser->nBraceFlag == 0) ) {
                     if ( (lSetProperty == 0) || pParser->nThisOrSelfLoadA ) {
                         return x ;
                     }
                     /* Disable Assignment Pointer */
                     ring_parser_icg_addoperandint(pParser,pAssignmentPointerPos,0);
                 }
-                else if ( (ring_parser_icg_getlastoperation(pParser) == ICO_LISTEND) && (pParser->nBraceFlag >= 1) ) {
+                else if ( lAfterListEnd && (pParser->nBraceFlag >= 1) ) {
                     nNOOP = 1 ;
                     /*
                     **  No Assignment is required but we add ICO_NOOP instead 
@@ -715,8 +717,7 @@ int ring_parser_factor ( Parser *pParser,int *nFlag )
                 **  Before Equal 
                 **  Generate Code 
                 */
-                ring_parser_icg_newoperation(pParser,ICO_BEFOREEQUAL);
-                ring_parser_icg_newoperandint(pParser,nBeforeEqual);
+                ring_parser_icg_beforeequal(pParser,nBeforeEqual);
                 if ( lSetProperty == 0 ) {
                     if ( nNOOP == 0 ) {
                         ring_parser_icg_newoperation(pParser,ICO_ASSIGNMENT);
@@ -746,8 +747,7 @@ int ring_parser_factor ( Parser *pParser,int *nFlag )
                 **  Before Equal 
                 **  Generate Code 
                 */
-                ring_parser_icg_newoperation(pParser,ICO_BEFOREEQUAL);
-                ring_parser_icg_newoperandint(pParser,nBeforeEqual);
+                ring_parser_icg_beforeequal(pParser,nBeforeEqual);
                 if ( lSetProperty == 0 ) {
                     ring_parser_icg_newoperation(pParser,ICO_NOOP);
                 }
@@ -783,8 +783,7 @@ int ring_parser_factor ( Parser *pParser,int *nFlag )
     if ( ring_parser_isnumber(pParser) ) {
         /* Generate Code */
         if ( strlen(pParser->TokenText) <= RING_PARSER_NUMBERLENGTH ) {
-            ring_parser_icg_newoperation(pParser,ICO_PUSHN);
-            ring_parser_icg_newoperanddouble(pParser,atof(pParser->TokenText));
+            ring_parser_icg_pushn(pParser,atof(pParser->TokenText));
         }
         else {
             ring_parser_error(pParser,RING_PARSER_ERROR_NUMERICOVERFLOW);
@@ -1315,12 +1314,10 @@ int ring_parser_ppmm ( Parser *pParser )
             ring_parser_icg_newoperation(pParser,ICO_DUPLICATE);
             ring_parser_icg_newoperation(pParser,ICO_DUPLICATE);
             ring_parser_icg_newoperation(pParser,ICO_PUSHV);
-            ring_parser_icg_newoperation(pParser,ICO_PUSHN);
-            ring_parser_icg_newoperanddouble(pParser,nValue);
+            ring_parser_icg_pushn(pParser,nValue);
             ring_parser_icg_newoperation(pParser,ICO_SUM);
             ring_parser_icg_newoperandint(pParser,0);
-            ring_parser_icg_newoperation(pParser,ICO_BEFOREEQUAL);
-            ring_parser_icg_newoperandint(pParser,0);
+            ring_parser_icg_beforeequal(pParser,0);
             nMark = ring_parser_icg_newlabel(pParser);
             ring_parser_icg_newoperation(pParser,ICO_ASSIGNMENT);
             ring_parser_icg_newoperandint(pParser,0);
@@ -1336,12 +1333,10 @@ int ring_parser_ppmm ( Parser *pParser )
             ring_parser_icg_newoperation(pParser,ICO_DUPLICATE);
             ring_parser_icg_newoperation(pParser,ICO_DUPLICATE);
             ring_parser_icg_newoperation(pParser,ICO_PUSHV);
-            ring_parser_icg_newoperation(pParser,ICO_PUSHN);
-            ring_parser_icg_newoperanddouble(pParser,nValue);
+            ring_parser_icg_pushn(pParser,nValue);
             ring_parser_icg_newoperation(pParser,ICO_SUM);
             ring_parser_icg_newoperandint(pParser,0);
-            ring_parser_icg_newoperation(pParser,ICO_BEFOREEQUAL);
-            ring_parser_icg_newoperandint(pParser,0);
+            ring_parser_icg_beforeequal(pParser,0);
             ring_parser_icg_newoperation(pParser,ICO_SETPROPERTY);
             ring_parser_icg_newoperandint(pParser,0);
             ring_parser_icg_newoperandint(pParser,0);
