@@ -26839,7 +26839,7 @@ void ring_QPainter_drawList(void *pPointer,int nType) {
 	QColor oColor;
 	QPen oPen;
 	List *pList,*pList2;
-	int x,nSize,nXStart,nYStart;
+	int x,y,nSize,nXStart,nYStart;
 	nXStart = 0;
 	nYStart = 0;
 	RING_API_IGNORECPOINTERTYPE ;
@@ -26860,34 +26860,43 @@ void ring_QPainter_drawList(void *pPointer,int nType) {
 			nXStart = (int) RING_API_GETNUMBER(3);
 		}
 	}
-	if (RING_API_PARACOUNT == 4) {
+	if (RING_API_PARACOUNT >= 4) {
 		if (RING_API_ISNUMBER(4) ) {
 			nYStart = (int) RING_API_GETNUMBER(4);
 		}
 	}
+
 	pObject = (QPainter *) RING_API_GETCPOINTER(1,"QPainter");
 	pList = (List *) RING_API_GETLIST(2);
 	nSize = ring_list_getsize(pList);
-	for (x=1 ; x <= nSize ; x++) {
-		pList2 = ring_list_getlist(pList,x);
-		switch (nType) {
-			case 1:
-				oColor.setHsvF((float) ring_list_getdouble(pList2,3),
-				(float) ring_list_getdouble(pList2,4),
-				(float) ring_list_getdouble(pList2,5),
-				(float) ring_list_getdouble(pList2,6));
-				break;
-			case 2:
-				oColor.setRgbF((float) ring_list_getdouble(pList2,3),
-				(float) ring_list_getdouble(pList2,4),
-				(float) ring_list_getdouble(pList2,5),
-				(float) ring_list_getdouble(pList2,6));
-				break;
+
+	if ( nSize < 1) return;
+	if ( ! ring_list_islist(pList,1) ) return ;
+
+	pList2 = ring_list_getlist(pList,1);
+
+	if ( ring_list_getsize(pList2) == 6) {
+		for (x=1 ; x <= nSize ; x++) {
+			pList2 = ring_list_getlist(pList,x);
+			switch (nType) {
+				case 1:
+					oColor.setHsvF((float) ring_list_getdouble(pList2,3),
+					(float) ring_list_getdouble(pList2,4),
+					(float) ring_list_getdouble(pList2,5),
+					(float) ring_list_getdouble(pList2,6));
+					break;
+				case 2:
+					oColor.setRgbF((float) ring_list_getdouble(pList2,3),
+					(float) ring_list_getdouble(pList2,4),
+					(float) ring_list_getdouble(pList2,5),
+					(float) ring_list_getdouble(pList2,6));
+					break;
+			}
+			oPen.setColor(oColor);
+			pObject->setPen(oPen);
+			pObject->drawPoint( nXStart + ring_list_getdouble(pList2,1),
+				    nYStart + ring_list_getdouble(pList2,2));	
 		}
-		oPen.setColor(oColor);
-		pObject->setPen(oPen);
-		pObject->drawPoint( nXStart + ring_list_getdouble(pList2,1),
-			    nYStart + ring_list_getdouble(pList2,2));	
 	}
 }
 
@@ -26916,7 +26925,6 @@ RING_FUNC(ring_QPainter_drawBytes)
 	QPainter *pObject;
 int nChannel, nFormat, nWidth, nHeight;
 	unsigned char *cData;
-	QPixmap pixmap;
 
 	if ( RING_API_PARACOUNT != 7 ) {
 		RING_API_ERROR(RING_API_BADPARACOUNT);
@@ -26941,29 +26949,31 @@ int nChannel, nFormat, nWidth, nHeight;
 	// In Qt5, Using nWidth*nChannel is optional
 	// But if we don't use it, we will get wrong results
 	// where image drawing starts after many x positions
+	
+	QImage *temp;
 	if (nChannel == 3) {
-		pixmap = QPixmap::fromImage (
-			QImage(
+		temp = new QImage(
 				cData,
 				nWidth,
 				nHeight,
 				nWidth*nChannel,
 				QImage::Format_RGB888
-			)
-		);
+			);
 	} else {
-		pixmap = QPixmap::fromImage (
-			QImage(
+		temp = new QImage(
 				cData,
 				nWidth,
 				nHeight,
 				nWidth*nChannel,
 				QImage::Format_RGBA8888
-			)
-		);
+			);
 	}
-
-	pObject->drawPixmap((int) RING_API_GETNUMBER(2),(int) RING_API_GETNUMBER(3),pixmap);
+	if ( temp == NULL ) {
+		RING_API_ERROR(RING_OOM);
+		return;
+	}
+	pObject->drawPixmap((int) RING_API_GETNUMBER(2),(int) RING_API_GETNUMBER(3),QPixmap::fromImage (*temp));
+	delete temp;
 }
 
 

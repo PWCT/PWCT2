@@ -5,7 +5,7 @@
     **  Functions 
     **  Item GC Functions 
     */
-    #define ring_vm_gc_cleardata(pItem) pItem->gc.nReferenceCount = 0; pItem->gc.pFreeFunc = NULL
+    #define ring_vm_gc_cleardata(pItem) pItem->gcnReferenceCount = 0; pItem->gcpFreeFunc = NULL
 
     void ring_vm_gc_checknewreference ( void *pPointer,int nType,List *pContainer, int nIndex ) ;
 
@@ -16,7 +16,7 @@
     void ring_vm_gc_killreference ( VM *pVM ) ;
 
     void ring_vm_gc_deletetemplists ( VM *pVM ) ;
-    #define ring_vm_gc_newitemreference(pItem) pItem->gc.nReferenceCount++
+    #define ring_vm_gc_newitemreference(pItem) pItem->gcnReferenceCount++
 
     void ring_vm_gc_freefunc ( RingState *pState,Item *pItem ) ;
 
@@ -92,6 +92,13 @@
     RING_API void ring_list_enabledontrefagain ( List *pList ) ;
 
     RING_API void ring_list_disabledontrefagain ( List *pList ) ;
+    /* Error on assignment */
+
+    RING_API void ring_list_enableerroronassignment ( List *pList ) ;
+
+    RING_API void ring_list_disableerroronassignment ( List *pList ) ;
+
+    RING_API int ring_list_iserroronassignment ( List *pList ) ;
     /* Memory Functions (General) */
 
     RING_API void * ring_malloc ( size_t size ) ;

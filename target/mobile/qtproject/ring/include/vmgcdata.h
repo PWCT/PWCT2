@@ -1,14 +1,11 @@
 /* Copyright (c) 2013-2023 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef ring_vmgcdata
     #define ring_vmgcdata
-    typedef struct ItemGCData {
-        unsigned int nReferenceCount  ;
-        void (*pFreeFunc)(void *,void *) ;
-    } ItemGCData ;
+    #define RING_VM_BITSFORREFCOUNT 24
     typedef struct ListGCData {
         void *pContainer  ;
-        int nReferenceCount  ;
-        int nTempRC  ;
+        int nReferenceCount: RING_VM_BITSFORREFCOUNT  ;
+        int nTempRC: RING_VM_BITSFORREFCOUNT  ;
         unsigned int lCopyByRef: 1  ;
         unsigned int lNewRef: 1  ;
         unsigned int lDontDelete: 1  ;
