@@ -284,7 +284,7 @@
 # About 
 
 	T_ABOUT_TITLE = "حول المشروع"
-	T_ABOUT_DEVELOPER = "2023, مشروع تقنية البرمجة بدون كود"
+	T_ABOUT_DEVELOPER = "2023-2024, مشروع تقنية البرمجة بدون كود"
 
 # GUI Library 
 
