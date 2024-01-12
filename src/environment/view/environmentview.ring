@@ -569,6 +569,12 @@ class EnvironmentView from WindowsViewParent
 			if not PWCTIsMobile(:ToolsDistributeMenu) {
 				subTools {
 					oAction = new qAction(win) {
+						settext(T_ENV_MENU_TOOLS_RINGNOTEPAD)  # "Ring Notepad"
+						setclickEvent(Method(:OpenRingNotepad))
+					}
+					addaction(oAction)
+					addseparator()
+					oAction = new qAction(win) {
 						settext(T_ENV_MENU_TOOLS_FORMDESIGNER)  # "Form Designer"
 						setclickEvent(Method(:OpenFormDesigner))
 					}
@@ -587,6 +593,9 @@ class EnvironmentView from WindowsViewParent
 					}
 					addaction(oAction)
 					addseparator()
+
+
+
 					subOSTools = addmenu(T_ENV_MENU_TOOLS_OSTOOLS) # "Operating System Tools"
 					subOSTools {
 						oAction = new qAction(win) {

@@ -83,6 +83,7 @@
 	T_ENV_MENU_MAINFILERUN = "الملف الأساسي - تشغيل"
 	T_ENV_MENU_MAINFILERUNGUI = "الملف الأساسي - تشغيل تطبيق رسومي"
 	T_ENV_MENU_MAINFILERUNWEB = "الملف الأساسي - تشغيل تطبيق ويب - افتح فى المتصفح"
+	T_ENV_MENU_TOOLS_RINGNOTEPAD = "محرر رينج"
 	T_ENV_MENU_TOOLS_FORMDESIGNER = "مصمم النماذج"
 	T_ENV_MENU_TOOLS_RINGREPLCONSOLE = "تنفيذ اوامر الرينج - واجهة خطية"
 	T_ENV_MENU_TOOLS_RINGREPLGUI = "تنفيذ اوامر الرينج - واجهة رسومية"

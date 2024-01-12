@@ -1197,6 +1197,17 @@ class EnvironmentController from WindowsControllerParent
 		cFormFileName = exefolder() + "../tools/formdesigner/formdesigner.ring"
 		RunTool(cFormFileName)
 
+	func OpenRingNotepad	
+		cAppPath = PWCT_FOLDER + "/../ring/ringnotepad.exe"
+		RunEXE(cAppPath)
+
+	func RunEXE cFileName 
+		oView.oProcessEditbox.setplaintext("")
+		oView.oProcessText.setFocus(0)
+		chdir(JustFilePath(cFileName))
+		oView.oProcess = parent().oProgramController.RunProcess(cFileName,"",Method(:GetDataAction))
+		chdir(PWCT_FOLDER)
+
 	func RunTool cFileName
 		oView.oProcessEditbox.setplaintext("")
 		oView.oProcessText.setFocus(0)

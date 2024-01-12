@@ -85,6 +85,7 @@
 	T_ENV_MENU_MAINFILERUN = "Main File : Run"
 	T_ENV_MENU_MAINFILERUNGUI = "Main File : Run GUI Application (No Console)"
 	T_ENV_MENU_MAINFILERUNWEB = "Main File : Run Web Application (Open In Browser)"
+	T_ENV_MENU_TOOLS_RINGNOTEPAD = "Ring Notepad"
 	T_ENV_MENU_TOOLS_FORMDESIGNER = "Form Designer"
 	T_ENV_MENU_TOOLS_RINGREPLCONSOLE = "RingREPL - Console"
 	T_ENV_MENU_TOOLS_RINGREPLGUI = "RingREPL - GUI"
@@ -286,7 +287,7 @@
 
 	T_ABOUT_TITLE = "About"
 	T_ABOUT_DEVELOPER = "Programming Without Coding Technology (PWCT)" + nl +
-						"Version: 2.0 Rev. 2024.01.01" + nl +
+						"Version: 2.0 Rev. 2024.01.12" + nl +
 						"2023-2024, PWCT Software"
 
 # GUI Library 
