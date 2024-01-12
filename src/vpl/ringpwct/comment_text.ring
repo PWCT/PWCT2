@@ -26,7 +26,7 @@ class comment_textComponentController from ComponentControllerParent
 
 		if len(aLines) > 0 {
 			for cLine in aLines {
-				cCode += "# " + cLine + WindowsNL()
+				cCode += "#" + cLine + WindowsNL()
 			}
 		}
 		setStepCode(cCode)

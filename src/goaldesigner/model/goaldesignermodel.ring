@@ -198,7 +198,7 @@ class GoalDesignerModel
 				if  lGenerateComments and ( x[C_TREEMODEL_CONTENT][:steptype] = C_STEPTYPE_COMMENT ) {
 					if x[C_TREEMODEL_NODEID] != 1 {	# Avoid the Start Point 
 						if trim(x[C_TREEMODEL_CONTENT][:plainname]) != NULL {		
-							cCommentStart = "# "
+							cCommentStart = "#"
 							if left(trim(x[C_TREEMODEL_CONTENT][:plainname]),1) = "#" {
 								cCommentStart = ""
 							}		
@@ -221,7 +221,7 @@ class GoalDesignerModel
 						if trim(x[C_TREEMODEL_CONTENT][:plainname]) != NULL {	
 							aLines = str2list(trim(x[C_TREEMODEL_CONTENT][:plainname]))
 							for cLine in aLines {	
-								cCommentStart = "# "
+								cCommentStart = "#"
 								if left(trim(cLine),1) = "#" {
 									cCommentStart = ""
 								}					
