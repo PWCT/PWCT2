@@ -38,8 +38,8 @@ class EnvironmentView from WindowsViewParent
 
 	lShowLanguageMenu = False
 
-	lShowDistributeMenu = False
-	lShowWebOptions = False
+	lShowDistributeMenu = True
+	lShowWebOptions = True
 
 
 	# Create the window and the Controls 
@@ -940,11 +940,11 @@ class EnvironmentView from WindowsViewParent
 						setclickevent(Method(:RunGUIAction))
 						settooltip(T_ENV_MENU_RUNNOCONSOLE) # "Run GUI Application (No Console)"
 					} ,
-					//new qtoolbutton(win) {
-					//	setbtnimage(self,AppFile("images/web.png"))
-					//	setclickEvent(Method(:RunInBrowser))
-					//	settooltip("Run Web Application - Open In Browser (Ctrl+F6)")
-					//} ,
+					new qtoolbutton(win) {
+						setbtnimage(self,AppFile("images/web.png"))
+						setclickEvent(Method(:RunInBrowser))
+						settooltip("Run Web Application - Open In Browser (Ctrl+F6)")
+					} ,
 					new qToolbutton(win) { 
 						setbtnimage(self,AppFile("images/close.png"))
 						setclickevent(Method(:CloseAction))
@@ -988,11 +988,11 @@ class EnvironmentView from WindowsViewParent
 						setclickevent(Method(:RunGUIAction))
 						settooltip(T_ENV_MENU_RUNNOCONSOLE) # "Run GUI Application (No Console)"
 					} ,
-					//new qtoolbutton(win) {
-					//	setbtnimage(self,AppFile("images/web.png"))
-					//	setclickEvent(Method(:RunInBrowser))
-					//	settooltip("Run Web Application - Open In Browser (Ctrl+F6)")
-					//} ,
+					new qtoolbutton(win) {
+						setbtnimage(self,AppFile("images/web.png"))
+						setclickEvent(Method(:RunInBrowser))
+						settooltip("Run Web Application - Open In Browser (Ctrl+F6)")
+					} ,
 					new qToolbutton(win) { 
 						setbtnimage(self,AppFile("images/close.png"))
 						setclickevent(Method(:CloseAction))
@@ -1074,13 +1074,13 @@ class EnvironmentView from WindowsViewParent
 						AddWidget(oBtnDebugMainFile)
 						AddWidget(oBtnRunMainFile)
 					}
-					//oBtnRunWebMainFile = new qtoolbutton(this.win) {
-					//		setbtnimage(self,AppFile("images/web.png"))
-					//		setclickEvent(Method(:RunInBrowserMainFile))
-					//		settooltip(T_ENV_MENU_MAINFILERUNWEB) # "Main File : Run Web Application - Open In Browser (Ctrl+Shift+F6)"
-					//} 
+					oBtnRunWebMainFile = new qtoolbutton(this.win) {
+							setbtnimage(self,AppFile("images/web.png"))
+							setclickEvent(Method(:RunInBrowserMainFile))
+							settooltip(T_ENV_MENU_MAINFILERUNWEB) # "Main File : Run Web Application - Open In Browser (Ctrl+Shift+F6)"
+					} 
 					AddWidget(oBtnRunGUIMainFile)
-					//AddWidget(oBtnRunWebMainFile)
+					AddWidget(oBtnRunWebMainFile)
 				else 
 					AddWidget(oBtnRunGUIMainFile)
 				}
