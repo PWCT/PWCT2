@@ -14,5 +14,3 @@ Wikipedia Page : https://en.wikipedia.org/wiki/Maze
 	ESC : Close the Game
 	
 	SPACE : Restart the level
-
-![Maze](https://github.com/ring-lang/ring/blob/master/applications/maze/maze.png)

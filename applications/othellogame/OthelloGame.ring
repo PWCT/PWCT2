@@ -1,6 +1,6 @@
 # Author: Gal Zsolt, Bert Mariani
 	load "stdlibcore.ring"
-	load "guilib.ring"
+	load "lightguilib.ring"
 	# Constants and Global Variables
 		Size = 8
 		Score = 0

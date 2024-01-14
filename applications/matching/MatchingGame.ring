@@ -1,6 +1,6 @@
 # Author: Gal Zsolt
-	load "stdlib.ring"
-	load "guilib.ring"
+	load "stdlibcore.ring"
+	load "lightguilib.ring"
 	load "MatchingList.ring"
 	# Constants and Global Variables
 		limit = 3

@@ -1,6 +1,6 @@
 # Author : Gal Zsolt
-	load "stdlib.ring"
-	load "guilib.ring"
+	load "stdlibcore.ring"
+	load "lightguilib.ring"
 	# Global variables and constants
 		size = 7
 		player1 = 0

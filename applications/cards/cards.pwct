@@ -2,7 +2,7 @@
 
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
-cNaturalLanguageName     = 'English'
+cNaturalLanguageName     = 'english'
 nStepsID                 = 458		
 nInteractionsID          = 306
 
@@ -120,45 +120,6 @@ aStepsTable = [
 		]
 	],
 	[
-		4,
-		1,
-		[
-			[
-				"name",
-				"** Author       : Mahmoud Fayed <msfclipper@yahoo.com>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"# ** Author       : Mahmoud Fayed <msfclipper@yahoo.com>
-"
-			],
-			[
-				"interactionid",
-				4
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"** Author       : Mahmoud Fayed "
-			]
-		]
-	],
-	[
 		5,
 		1,
 		[
@@ -203,7 +164,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Load <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">guilib.ring</font></span>"
+				"Load <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">lightguilib.ring</font></span>"
 			],
 			[
 				"active",
@@ -211,7 +172,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"load "+char(34)+"guilib.ring"+char(34)+""
+				"load "+char(34)+"lightguilib.ring"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -231,7 +192,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Load guilib.ring"
+				"Load lightguilib.ring"
 			]
 		]
 	],
@@ -17499,14 +17460,6 @@ aInteractionsTable = [
 		"value;;_RV_;;** Application  : Cards Game;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
-		4,
-		1,
-		"comment_text",
-		"27/08/2021",
-		"08:37:31",
-		"value;;_RV_;;** Author       : Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
-	],
-	[
 		5,
 		1,
 		"comment_text",
@@ -17520,7 +17473,7 @@ aInteractionsTable = [
 		"load",
 		"27/08/2021",
 		"08:37:31",
-		"file;;_RV_;;guilib.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"file;;_RV_;;lightguilib.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		7,

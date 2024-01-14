@@ -1,60 +1,54 @@
-# Form/Window Controller - Source Code File
-
-# StopWatch Application
-# 2018, Mahmoud Fayed <msfclipper@yahoo.com>
-
 load "stopwatchView.ring"
-
 import System.GUI
-
-if IsMainSourceFile() {
-	new App {
+if IsMainSourceFile() { 
+	new App
+	{
 		StyleFusion()
 		open_window(:stopwatchController)
 		exec()
 	}
-}
-
+} 
 class stopwatchController from windowsControllerParent
-
-	oView = new stopwatchView {
+	oView = new stopwatchView
+	{
 		WatchTimer.stop()
 		ButtonPause.setEnabled(False)
 	}
-
 	lStart = False
-	lStop  = False 
-
-	func StartWatch
+	lStop = False
+	func StartWatch  { 
 		oView {
-			if ! this.lStart
-				this.lStart = True 
+			if !this.lStart { 
+				this.lStart = True
 				WatchTimer.start()
 				ButtonStart.setText("Restart")
 				ButtonPause.setEnabled(True)
-			else
-				WatchTimer.stop()
-				watch.display(0)
-				WatchTimer.start()
-			ok
+				else
+					WatchTimer.stop()
+					watch.display(0)
+					WatchTimer.start()
+			} 
 		}
-	
-	func PauseWatch
+	} 
+	func PauseWatch  { 
 		oView {
-			if ! this.lStop 
-				this.lStop = True 
+			if !this.lStop { 
+				this.lStop = True
 				watchTimer.stop()
 				ButtonPause.SetText("Continue")
-			else 
-				this.lStop = False 
-				watchTimer.Start()
-				ButtonPause.SetText("Pause")
-
-			ok
+				else
+					this.lStop = False
+					watchTimer.Start()
+					ButtonPause.SetText("Pause")
+			} 
 		}
-
-	func ExitWatch
+	} 
+	func ExitWatch  { 
 		oView.win.close()
-	
-	func WatchTimerEvent
-		oView.watch { display( value() + 1 ) }
+	} 
+	func WatchTimerEvent  { 
+		oView.watch {
+			display(value()+1)
+		}
+	} 
+private

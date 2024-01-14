@@ -21,14 +21,3 @@ Using Ring Game Engine for 2D Games
 
 (4) The game is designed to work forever without user interaction (After Game Over, the Game restarts automatically)
 
-# Using RingPM
-
-To quickly install and run the game using the Ring Package Manager
-
-	ringpm install escape from ringpackages
-	ringpm run escape
-
-# Screen Shot
-
-![Escape](https://github.com/ring-lang/ring/blob/master/applications/escape/images/escapegame.png)
-

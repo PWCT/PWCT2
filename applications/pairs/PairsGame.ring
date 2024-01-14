@@ -1,7 +1,7 @@
 # Author: Gal Zsolt & Bert Mariani (Ring Team)
 #==================================================
 	load "stdlibcore.ring"
-	load "guilib.ring"
+	load "lightguilib.ring"
 	# Create Global Variables
 		size1 = 6
 		size2 = 6

@@ -1,6 +1,6 @@
 # ## Author:	 Bert Mariani, Nestor Kuka
-	load "stdlib.ring"
-	load "guilib.ring"
+	load "stdlibcore.ring"
+	load "lightguilib.ring"
 	# Constants & Global Variables
 		lTrackMoves = False
 		sizeX = 800

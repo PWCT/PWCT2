@@ -7,7 +7,7 @@ class GameBase
 	redraw = true
 	lFlipDisplay = True
 	lExitFromMainLoop = False
-	nFPS = 10
+	nFPS = 15
 	nRuntimeFPS = nFPS
 	lCalculateRunTimeFPS = False
 	lUseFixedResolution = False
