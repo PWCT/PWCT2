@@ -97,13 +97,21 @@ Class ProgramController
 		Run web application 
 	*/
 
+	func checkWebApplication cFileName
+		if left(read(cFileName),2) != "#!"
+			msginfo("Sorry","This is not CGI web application!")
+			return false 
+		ok
+		return true 
+
 	func RunInBrowser oGD
 		Prepare(oGD)	# Save the source code to the file
 		RunWebApplication(oGD,cFileName)
 
 	func RunWebApplication oGD,cFile
 		cFile = FileNameEncoding(cFile)
-		if isWindows() 
+		if ! checkWebApplication(cFile) { return }
+		if isWindows() {
 			if cWebApplicationFolder != JustFilePath(cFile)
 				cWebApplicationFolder = JustFilePath(cFile)
 				new ServerPrepare { 
@@ -127,7 +135,7 @@ Class ProgramController
 			new QDesktopServices {
 				OpenURL(new qURL("http://localhost/"+cWebURL))
 			}
-		ok
+		}
 
 	/*
 		Purpose : Run Process
