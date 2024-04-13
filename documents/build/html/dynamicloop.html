@@ -1,20 +1,21 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>Dynamic Loop &#8212; PWCT 2.0 documentation</title>
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css" />
     <link rel="stylesheet" type="text/css" href="_static/css/custom.css" />
     
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -43,77 +44,98 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="dynamic-loop">
-<span id="index-0"></span><h1>Dynamic Loop<a class="headerlink" href="#dynamic-loop" title="Permalink to this headline">¶</a></h1>
+  <section id="dynamic-loop">
+<span id="index-0"></span><h1>Dynamic Loop<a class="headerlink" href="#dynamic-loop" title="Permalink to this heading"></a></h1>
 <p>In this chapter we are going to create the Dynamic Loop sample</p>
-<div class="section" id="introduction">
-<span id="index-1"></span><h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<section id="introduction">
+<span id="index-1"></span><h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
 <p>We can create this program quickly using the Quick Start component</p>
 <img alt="ib_quickstart_dynamicloop.png" src="_images/ib_quickstart_dynamicloop.png" />
-</div>
-<div class="section" id="program-steps">
-<span id="index-2"></span><h2>Program Steps<a class="headerlink" href="#program-steps" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="program-steps">
+<span id="index-2"></span><h2>Program Steps<a class="headerlink" href="#program-steps" title="Permalink to this heading"></a></h2>
 <p>After selecting the (Dynamic Loop) template, we will get the next steps in the Goal Designer</p>
 <img alt="gd_quickstart_dynamicloop.png" src="_images/gd_quickstart_dynamicloop.png" />
-</div>
-<div class="section" id="creating-the-program">
-<span id="index-3"></span><h2>Creating the Program<a class="headerlink" href="#creating-the-program" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="creating-the-program">
+<span id="index-3"></span><h2>Creating the Program<a class="headerlink" href="#creating-the-program" title="Permalink to this heading"></a></h2>
 <p>To create this program we will use the next components</p>
 <ul class="simple">
 <li><p>Print Text</p></li>
 <li><p>Get Input</p></li>
+<li><p>Assignment</p></li>
 <li><p>For Loop</p></li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This example uses the Assignment component to convert Strings to Numbers, but we can just let the Get Input component do the conversion for us.</p>
+</div>
 <p>In the begining the Steps Tree is empty</p>
-<img alt="1.png" src="_images/110.png" />
+<img alt="1.png" src="_images/112.png" />
 <p>Select the (Print Text) component</p>
-<img alt="2.png" src="_images/21.png" />
+<img alt="2.png" src="_images/26.png" />
 <p>Enter the data in the Interaction Page</p>
 <p>Text: Start :</p>
 <p>Type: Literal</p>
-<img alt="3.png" src="_images/31.png" />
+<img alt="3.png" src="_images/32.png" />
 <p>The Steps Tree will be updated</p>
-<img alt="4.png" src="_images/41.png" />
+<img alt="4.png" src="_images/42.png" />
 <p>Select the (Get Input) component</p>
-<img alt="5.png" src="_images/51.png" />
+<img alt="5.png" src="_images/52.png" />
 <p>The variable name will be (nStart)</p>
-<img alt="6.png" src="_images/61.png" />
+<img alt="6.png" src="_images/62.png" />
 <p>The Steps Tree will be updated</p>
-<img alt="7.png" src="_images/71.png" />
+<img alt="7.png" src="_images/72.png" />
 <p>Print (End : )</p>
-<img alt="8.png" src="_images/81.png" />
-<img alt="9.png" src="_images/91.png" />
-<img alt="10.png" src="_images/101.png" />
+<img alt="8.png" src="_images/82.png" />
+<img alt="9.png" src="_images/92.png" />
+<img alt="10.png" src="_images/102.png" />
 <p>Use the (Get Input) component</p>
-<img alt="11.png" src="_images/111.png" />
+<img alt="11.png" src="_images/113.png" />
 <p>The variable name will be (nEnd)</p>
-<img alt="12.png" src="_images/121.png" />
+<img alt="12.png" src="_images/122.png" />
 <p>The Steps Tree will be updated</p>
-<img alt="13.png" src="_images/131.png" />
+<img alt="13.png" src="_images/132.png" />
 <p>Print (Step : )</p>
-<img alt="14.png" src="_images/141.png" />
-<img alt="15.png" src="_images/151.png" />
-<img alt="16.png" src="_images/161.png" />
+<img alt="14.png" src="_images/142.png" />
+<img alt="15.png" src="_images/152.png" />
+<img alt="16.png" src="_images/162.png" />
 <p>Use the (Get Input) component</p>
-<img alt="17.png" src="_images/171.png" />
+<img alt="17.png" src="_images/172.png" />
 <p>The variable name will be (nStep)</p>
-<img alt="18.png" src="_images/181.png" />
-<img alt="19.png" src="_images/191.png" />
+<img alt="18.png" src="_images/182.png" />
+<img alt="19.png" src="_images/192.png" />
+<p>Convert the variables (nStart, nEnd and nStep) from String to Number</p>
+<p>Use the (Assignment) component</p>
+<img alt="20.png" src="_images/201.png" />
+<p>Convert the variable (nStart) from String to Number</p>
+<img alt="21.png" src="_images/211.png" />
+<img alt="22.png" src="_images/221.png" />
+<p>Use the (Assignment) component</p>
+<img alt="23.png" src="_images/231.png" />
+<p>Convert the variable (nEnd) from String to Number</p>
+<img alt="24.png" src="_images/241.png" />
+<img alt="25.png" src="_images/251.png" />
+<p>Use the (Assignment) component</p>
+<img alt="26.png" src="_images/261.png" />
+<p>Convert the variable (nStep) from String to Number</p>
+<img alt="27.png" src="_images/27.png" />
+<img alt="28.png" src="_images/28.png" />
 <p>Select the (For Loop) component</p>
-<img alt="20.png" src="_images/20.png" />
+<img alt="29.png" src="_images/29.png" />
 <p>Enter the data in the Interaction Page</p>
 <p>Start: x = nStart
 End: nEnd
 Step: nStep</p>
-<img alt="21.png" src="_images/211.png" />
-<img alt="22.png" src="_images/22.png" />
-<img alt="23.png" src="_images/23.png" />
+<img alt="30.png" src="_images/30.png" />
+<img alt="31.png" src="_images/311.png" />
 <p>Use the (Print Text) component to print the number</p>
-<img alt="24.png" src="_images/24.png" />
+<img alt="32.png" src="_images/321.png" />
+<img alt="33.png" src="_images/33.png" />
 <p>Now we have the final Steps Tree in our program</p>
-<img alt="25.png" src="_images/25.png" />
-</div>
-</div>
+<img alt="34.png" src="_images/34.png" />
+</section>
+</section>
 
 
             <div class="clearer"></div>
@@ -125,8 +147,9 @@ Step: nStep</p>
             <p class="logo"><a href="index.html">
               <img class="logo" src="_static/pwctdoclogo.jpg" alt="Logo"/>
             </a></p>
-  <h3><a href="index.html">Table of Contents</a></h3>
-  <ul>
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
 <li><a class="reference internal" href="#">Dynamic Loop</a><ul>
 <li><a class="reference internal" href="#introduction">Introduction</a></li>
 <li><a class="reference internal" href="#program-steps">Program Steps</a></li>
@@ -135,22 +158,27 @@ Step: nStep</p>
 </li>
 </ul>
 
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="mainmenu.html"
-                        title="previous chapter">Main Menu</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="modifylists.html"
-                        title="next chapter">Modify Lists</a></p>
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="mainmenu.html"
+                          title="previous chapter">Main Menu</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="modifylists.html"
+                          title="next chapter">Modify Lists</a></p>
+  </div>
 <div id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
       <input type="submit" value="Go" />
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -173,7 +201,7 @@ Step: nStep</p>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2023, PWCT Software.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.1.1.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.2.1.
     </div>
   </body>
 </html>
