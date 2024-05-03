@@ -9,7 +9,7 @@
 	load "stdlib.ring"
 
 # Load General Libraries
-	load "../../general/globals/globals.ring"
+	load "../../general/globals.ring"
 	load "../../general/mainlib.ring"
 	load "../../general/log.ring"
 	

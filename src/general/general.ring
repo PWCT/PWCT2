@@ -5,7 +5,7 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-	load "globals/globals.ring"
+	load "globals.ring"
 	load "mainlib.ring"
 	load "log.ring"
 	load "quickmsgController.ring"
