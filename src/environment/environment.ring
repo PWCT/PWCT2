@@ -6,10 +6,10 @@
 */
 
 # Load the Environment Files
-	load "controller/environmentcontroller.ring"
-	load "view/environmentview.ring"
-	load "view/treeviewcontrol.ring"
-	load "view/pwctdesktop.ring"
+	load "environmentcontroller.ring"
+	load "environmentview.ring"
+	load "treeviewcontrol.ring"
+	load "pwctdesktop.ring"
 
 /*
 	The next function run the PWCT Environment

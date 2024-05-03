@@ -1657,9 +1657,9 @@ class EnvironmentController from WindowsControllerParent
 		# Change the language
 			switch nLanguage {
 				case C_TRANSLATION_ENGLISH
-					load again "../../translation/english.ring"
+					load again "../translation/english.ring"
 				case C_TRANSLATION_ARABIC 
-					load again "../../translation/arabic.ring"
+					load again "../translation/arabic.ring"
 			}
 		# Save Settings 
 			saveSettings()
