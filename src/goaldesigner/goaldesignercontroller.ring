@@ -2127,6 +2127,10 @@ return true
 			if oDroppedItem.pObject = NULL return ok
 		# Check if the source is the same as the destination 
 			if oItem.pObject = oDroppedItem.pObject return ok  
+		# Check if the destination is one of the source children 
+			aIDs = oModel.oStepsTreeModel.ChildrenIDs(nStepID)
+			nDestStepID = oView.oStepsTree.GetIDByObj(oDroppedItem)
+			if std_find(aIDs, nDestStepID) return ok
 		# Cut & Paste 
 			if cutStepsAction()
 				oView.oStepsTree.SetCurrentItem(oDroppedItem,0)
