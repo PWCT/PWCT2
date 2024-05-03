@@ -507,12 +507,12 @@ class GoalDesignerController from WindowsControllerParent
 		if not IsCommentOrRoot() {
 			# "Can't Cut Sub Step!"
 			ShowMessage(T_GD_BM_SORRY,T_GD_BM_CANTCUT)
-			return
+			return False
 		}
 		oItem  = oView.oStepsTree.currentItem()
 		nStepID = oView.oStepsTree.GetIDByObj(oItem)
 		if nStepID = 1 {	# Avoid start point
-			return
+			return False
 		}
 		# Save the History for undo operations 
 			saveHistory()
@@ -525,6 +525,7 @@ class GoalDesignerController from WindowsControllerParent
 			UpdateTheTimeMachine()
 		lSaveFlag = True
 		AutoRun()
+		return True 
 
 	/*
 		Purpose : Copy Steps Action
@@ -2113,3 +2114,21 @@ return true
 				Tab + Tab + Tab + WindowsNL() + 
 					Tab + Tab + "}" + WindowsNL()
 		ComponentsBrowserWindow().TextualCodeToVisualCode(cStr)
+
+	func DropEvent
+		# Source (Dragged Step)
+			oItem  = oView.oStepsTree.currentItem()
+			nStepID = oView.oStepsTree.GetIDByObj(oItem)
+		# Destination (Step)
+			pos = oView.oTreeFilter2.getDropEventObject().pos()
+			droppedIndex = oView.oStepsTree.indexAt(pos)
+			if ! droppedIndex.isValid() return ok
+			oDroppedItem = oView.oStepsTree.itemAt(pos.x(),pos.y())
+			if oDroppedItem.pObject = NULL return ok
+		# Check if the source is the same as the destination 
+			if oItem.pObject = oDroppedItem.pObject return ok  
+		# Cut & Paste 
+			if cutStepsAction()
+				oView.oStepsTree.SetCurrentItem(oDroppedItem,0)
+				pasteStepsAction()
+			ok

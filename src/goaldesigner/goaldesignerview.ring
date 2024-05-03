@@ -22,16 +22,21 @@ class GoalDesignerView from WindowsViewParent
 				setDoubleClickedEvent(Method(:ModifyAction))
 				//setCurrentItemChangedEvent(Method(:TreeNodeChangedAction))
 				setFocusPolicy(2)	# Support Keyboard keys like 'a' and 'z'
-				oTreeFilter = new qAllEvents(oStepsTree)
+				oTreeFilter = new QAllEvents(oStepsTree)
 				oTreeFilter.setKeyPressEvent(Method(:TreeKeyPress))
 				# We are adding this here (not in the window win)
 				# Because In window while inside dockable windows, doesn't work
 				oTreeFilter.setFocusInEvent(Method(:ActivateWindowAction))
-				installeventfilter(oTreeFilter)
-				setstylesheet(this.StepsTreeStyle())
+				installEventFilter(oTreeFilter)
+				setStyleSheet(this.StepsTreeStyle())
 				if not PWCTIsMobile(:StepsTreeIndentation) {
-					setindentation(C_STEPSTREE_INDENTATION)
+					setIndentation(C_STEPSTREE_INDENTATION)
 				}
+				enableDragAndDrop()
+				oTreeFilter2 = new QAllEvents(oStepsTree)
+				oTreeFilter2.setDropEvent(Method(:DropEvent))
+				viewport().installEventFilter(oTreeFilter2)
+
 			}
 			oPageDesignLayout = new qVBoxLayout() {
 				AddWidget(oStepsTree)
