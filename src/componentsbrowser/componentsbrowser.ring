@@ -7,8 +7,8 @@
 
 
 # Load the Components Browser Files
-	load "controller/componentsbrowsercontroller.ring"
-	load "view/componentsbrowserview.ring"
-	load "view/componentstreeview.ring"
+	load "componentsbrowsercontroller.ring"
+	load "componentsbrowserview.ring"
+	load "componentstreeview.ring"
 	load "componentslist.ring"
 	
