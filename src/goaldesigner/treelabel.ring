@@ -7,10 +7,7 @@
 
 class TreeLabel from QLabel 
 
-	oStepsTree 
-
 	func init oParent
 		super.init(oParent)
-		oStepsTree = oParent
 		setenabled(false)
 		return self
