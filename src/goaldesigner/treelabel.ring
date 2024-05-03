@@ -7,3 +7,6 @@
 
 class TreeLabel from QLabel 
 
+	func init oParent
+		super.init(oParent)
+		return self
