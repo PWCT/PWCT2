@@ -29,6 +29,7 @@ class StepsTreeView from TreeControl
 	lLabelStyle			= True
 	lLabelStyleGradient = True
 
+	lEnableDragAndDrop = False
 
 	nGoalDesignerWindowID = 0
 
@@ -47,6 +48,15 @@ class StepsTreeView from TreeControl
 			setverticalscrollbarpolicy(Qt_ScrollBarAlwaysOn)
 			setcolumnwidth(0,2000)
 		}
+
+		# Support Drag and Drop
+		if lEnableDragAndDrop {
+			setDragenabled(True)
+			setDropIndicatorShown(True)
+			viewport().setAcceptDrops(True)
+			setDragDropMode(1)
+		}
+
 		return self
 
 	/*

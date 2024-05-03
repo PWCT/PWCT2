@@ -13,5 +13,4 @@ class TreeLabel from QLabel
 		super.init(oParent)
 		oStepsTree = oParent
 		setenabled(false)
-
 		return self
