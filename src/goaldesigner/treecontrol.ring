@@ -11,7 +11,7 @@ class TreeControl from qTreeWidget
 
 	font  nFontSize = 12	# The font object and the font size
 
-	lUseLabels = False	# Use QLabel for each Tree Item
+	lUseLabels = False	# Use TreeLabel for each Tree Item
 
 	cColor = "green"	# Node Color
 	cBackColor = ""		# Node Background Color
@@ -68,7 +68,7 @@ class TreeControl from qTreeWidget
 			cImage = C_LABELIMAGE_NODEICON
 		}
 		oItem = new qtreewidgetitem() 
-		oLabel = new qLabel(self) 
+		oLabel = new TreeLabel(self) 
 		oLabel.resize(100,30)
 		SetLabelFont2(oLabel)
 		oLabel.settext(NodeImage(cImage)+
@@ -86,7 +86,7 @@ class TreeControl from qTreeWidget
 
 	/*
 		The next method is the same as SerialAdd
-		But doesn't create new QLabel object for each item 
+		But doesn't create new TreeLabel object for each item 
 		It uses the default item object.
 	*/
 
@@ -127,7 +127,7 @@ class TreeControl from qTreeWidget
 			setCurrentItem(oParent,0)	# Focus on Parent Step
 		}
 		if lUseLabels = True {
-			oLabel = new qLabel(self) {
+			oLabel = new TreeLabel(self) {
 				resize(100,30)
 				# if we used setlabelfont2() here
 				# when we cut steps and paste

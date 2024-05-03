@@ -11,7 +11,7 @@ class StepsTreeView from TreeControl
 
 	oStepBuffer = NULL 	# Used for Cut,Copy & Paste operations
 
-	lUseLabels = True	# Use QLabel for each Tree Item
+	lUseLabels = True	# Use TreeLabel for each Tree Item
 
 	aLabels = []		# List of Labels controls	
 
@@ -52,7 +52,7 @@ class StepsTreeView from TreeControl
 	/*
 		The next method is the same as Init 
 		but uses AddStartPoint2() to create the item without 
-		creating new qLabel object for it.
+		creating new TreeLabel object for it.
 	*/
 	func Init2 win
 		super.init(win)
@@ -65,7 +65,7 @@ class StepsTreeView from TreeControl
 		addtoplevelitem(oFirststep)
 		AddToTree(1,oFirstStep)
 		setheaderlabel(cControlHeader)
-		oLabel = new qLabel(self) {
+		oLabel = new TreeLabel(self) {
 			resize(100,30)
 			settext(this.NodeImage(C_LABELIMAGE_NODEICON)+
 				 this.oStyle.text(this.cStartPointText,C_STEPCOLOR_STARTPOINT,""))
@@ -77,7 +77,7 @@ class StepsTreeView from TreeControl
 
 	/*
 		The next method is the same as AddStartPoint but doesn't
-		create new qLabel object for the item.
+		create new TreeLabel object for the item.
 	*/
 	func AddStartPoint2
 		setcolumncount(1)
@@ -92,7 +92,7 @@ class StepsTreeView from TreeControl
 		setCurrentItem(oFirstStep,0)
 
 	func GetItemLabel oItem
-		oLabel = new qLabel
+		oLabel = new TreeLabel
 		oLabel.pObject =  itemwidget(oItem,0).pObject
 		return oLabel
 
@@ -181,7 +181,7 @@ class StepsTreeView from TreeControl
 			for x=1 to len(aItems) {
 				oItem = aItems[x]
 				aLabel = aTempLabels[x]
-				oLabel2 = new qLabel(Self) {
+				oLabel2 = new TreeLabel(Self) {
 					resize(100,30)
 					setText(this.prepareNodeText(aLabel[C_NODELABEL_TEXT]))
 					setStyleSheet(aLabel[C_NODELABEL_STYLESHEET])					

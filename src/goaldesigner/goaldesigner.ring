@@ -24,6 +24,7 @@
 	load "stepcodeview.ring"
 	load "htmlstyles.ring"
 	load "stepstreeview.ring"
+	load "treelabel.ring"
 	load "treecontrol.ring"
 	load "findstepview.ring"
 	load "printstepsview.ring"
