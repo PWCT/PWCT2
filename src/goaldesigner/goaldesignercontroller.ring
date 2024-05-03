@@ -556,7 +556,7 @@ class GoalDesignerController from WindowsControllerParent
 	func PasteStepsAction
 
 		if oView.oStepsTree.isbuffernotempty() = false {
-			return
+			return False 
 		}
 		# Time Machine - Present
 			TimeMachineGotoPresent()
@@ -599,20 +599,12 @@ class GoalDesignerController from WindowsControllerParent
 			oView.oStepsTree.SetCurrentItem(oParentItem,0)
 		# Fix Drawing 
 			oView.fixDrawing()
-		# Expand Items 
-			/*
-			aSteps = oView.oStepsTree.StepsList(oParentItem)
-			for oItem in aSteps {
-				oItem.setexpanded(false)
-			}
-			*/
-
 		# Select the original parent 
 			oView.oStepsTree.SetCurrentItem(oParentItemAtStart,0)	
 
 		lSaveFlag = True
 		AutoRun()
-
+		return True 
 
 
 	/*
@@ -2134,5 +2126,14 @@ return true
 		# Cut & Paste 
 			if cutStepsAction()
 				oView.oStepsTree.SetCurrentItem(oDroppedItem,0)
-				pasteStepsAction()
+				if pasteStepsAction()
+					expandItems(oView.oStepsTree.currentItem())
+				ok
 			ok
+
+	func expandItems oParentItem 
+
+		aSteps = oView.oStepsTree.StepsList(oParentItem)
+		for oItem in aSteps {
+			oItem.setexpanded(True)
+		}
