@@ -5,5 +5,5 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-load "controller/componentcontrollerparent.ring"
-load "view/componentviewparent.ring"
+load "componentcontrollerparent.ring"
+load "componentviewparent.ring"
