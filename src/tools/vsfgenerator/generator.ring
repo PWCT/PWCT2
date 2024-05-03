@@ -27,13 +27,13 @@
 	load "../../mobile/mobilefunctions.ring"
 
 # Goal Designer Model Files
-	load "../../goaldesigner/model/goaldesignermodel.ring"
-	load "../../goaldesigner/model/treemodel.ring"
-	load "../../goaldesigner/model/interactionmodel.ring"
+	load "../../goaldesigner/goaldesignermodel.ring"
+	load "../../goaldesigner/treemodel.ring"
+	load "../../goaldesigner/interactionmodel.ring"
 
 # HTML Styles - Used by Goal Designer Model
-	load "../../goaldesigner/controller/htmlfunctions.ring"
-	load "../../goaldesigner/view/htmlstyles.ring"
+	load "../../goaldesigner/htmlfunctions.ring"
+	load "../../goaldesigner/htmlstyles.ring"
 
 # Load PWCT Translation 
 	load "../../translation/english.ring"
