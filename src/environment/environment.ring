@@ -34,6 +34,7 @@ func StartEnvironment
 	}
 
 func EnvironmentWindow
+
 	return GetWindowByID(nEnvironmentWindowID)
 
 /*
@@ -44,6 +45,7 @@ func EnvironmentWindow
 */
 
 func DisplaySplashScreen oApp
+
 		if ! PWCTIsMobile(:SplashScreen) {
 			# Load the Image File
 				oPixMap = new qPixMap(AppFile("images/oldpwctlogo.jpg"))
@@ -69,15 +71,8 @@ func DisplaySplashScreen oApp
 
 func ShowMessage cTitle,cMessage
 
-	# Create the Messagebox Window
-		win = new qmessagebox(NULL)
-		{
-			setwindowtitle(cTitle)
-			settext(cMessage)
-			setstandardbuttons(QMessageBox_Ok)
-			setwindowflags(Qt_WindowStaysOnTopHint)
-			setwinicon(win,AppFile("images/pwct.png"))
-			result = exec()
-		}
+	msginfo(cTitle,cMessage) 
+
+
 
 
