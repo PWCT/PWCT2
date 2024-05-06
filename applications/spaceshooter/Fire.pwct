@@ -2,9 +2,9 @@
 
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
-cNaturalLanguageName     = 'English'
-nStepsID                 = 72		
-nInteractionsID          = 44
+cNaturalLanguageName     = 'english'
+nStepsID                 = 71		
+nInteractionsID          = 43
 
 aStepsTable = [
 	[
@@ -617,7 +617,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">fireImage</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">LoadImage(file)</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">fireImage</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">resources.image(file)</font></span>"
 			],
 			[
 				"active",
@@ -625,7 +625,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"fireImage = LoadImage(file)"
+				"fireImage = resources.image(file)"
 			],
 			[
 				"interactionid",
@@ -645,7 +645,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"fireImage = LoadImage(file)"
+				"fireImage = resources.image(file)"
 			]
 		]
 	],
@@ -655,7 +655,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">fireTex</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">LoadTextureFromImage(fireImage)</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">fireTex</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">resources.texture(fireImage)</font></span>"
 			],
 			[
 				"active",
@@ -663,7 +663,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"fireTex = LoadTextureFromImage(fireImage)"
+				"fireTex = resources.texture(fireImage)"
 			],
 			[
 				"interactionid",
@@ -683,7 +683,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"fireTex = LoadTextureFromImage(fireImage)"
+				"fireTex = resources.texture(fireImage)"
 			]
 		]
 	],
@@ -731,7 +731,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"UnloadImage(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">fireImage</font></span>)"
+				"playFireSound(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">sound</font></span>)"
 			],
 			[
 				"active",
@@ -739,7 +739,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"UnloadImage(fireImage)"
+				"playFireSound(sound)"
 			],
 			[
 				"interactionid",
@@ -759,50 +759,12 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"UnloadImage(fireImage)"
+				"playFireSound(sound)"
 			]
 		]
 	],
 	[
 		26,
-		17,
-		[
-			[
-				"name",
-				"playFireSound(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">sound</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"playFireSound(sound)"
-			],
-			[
-				"interactionid",
-				18
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"playFireSound(sound)"
-			]
-		]
-	],
-	[
-		27,
 		17,
 		[
 			[
@@ -819,7 +781,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				19
+				18
 			],
 			[
 				"visible",
@@ -878,7 +840,7 @@ aStepsTable = [
 		]
 	],
 	[
-		28,
+		27,
 		4,
 		[
 			[
@@ -895,7 +857,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				20
+				19
 			],
 			[
 				"visible",
@@ -916,8 +878,8 @@ aStepsTable = [
 		]
 	],
 	[
-		29,
 		28,
+		27,
 		[
 			[
 				"name",
@@ -933,7 +895,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				20
+				19
 			],
 			[
 				"visible",
@@ -954,8 +916,8 @@ aStepsTable = [
 		]
 	],
 	[
-		31,
-		29,
+		30,
+		28,
 		[
 			[
 				"name",
@@ -968,6 +930,44 @@ aStepsTable = [
 			[
 				"code",
 				"deathTimer -= getFrameTime()"
+			],
+			[
+				"interactionid",
+				20
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"deathTimer -= getFrameTime()"
+			]
+		]
+	],
+	[
+		31,
+		28,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">position.y&nbsp;-=&nbsp;speed</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"position.y -= speed"
 			],
 			[
 				"interactionid",
@@ -987,51 +987,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"deathTimer -= getFrameTime()"
+				"position.y -= speed"
 			]
 		]
 	],
 	[
 		32,
-		29,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">position.y&nbsp;-=&nbsp;speed</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"position.y -= speed"
-			],
-			[
-				"interactionid",
-				22
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"position.y -= speed"
-			]
-		]
-	],
-	[
-		33,
-		29,
+		28,
 		[
 			[
 				"name",
@@ -1047,7 +1009,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				23
+				22
 			],
 			[
 				"visible",
@@ -1068,8 +1030,8 @@ aStepsTable = [
 		]
 	],
 	[
-		34,
 		33,
+		32,
 		[
 			[
 				"name",
@@ -1085,7 +1047,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				23
+				22
 			],
 			[
 				"visible",
@@ -1106,8 +1068,8 @@ aStepsTable = [
 		]
 	],
 	[
-		36,
-		34,
+		35,
+		33,
 		[
 			[
 				"name",
@@ -1120,6 +1082,82 @@ aStepsTable = [
 			[
 				"code",
 				"deathTimer = 0"
+			],
+			[
+				"interactionid",
+				23
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"deathTimer = 0"
+			]
+		]
+	],
+	[
+		34,
+		32,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				22
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		36,
+		28,
+		[
+			[
+				"name",
+				"DrawTextureEx(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">fireTex,position,rotation,1,WHITE</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"DrawTextureEx(fireTex,position,rotation,1,WHITE)"
 			],
 			[
 				"interactionid",
@@ -1139,17 +1177,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"deathTimer = 0"
+				"DrawTextureEx(fireTex,position,rotation,1,WHITE)"
 			]
 		]
 	],
 	[
-		35,
-		33,
+		29,
+		27,
 		[
 			[
 				"name",
-				"End of IF Statement"
+				"End of Function"
 			],
 			[
 				"active",
@@ -1161,7 +1199,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				23
+				19
 			],
 			[
 				"visible",
@@ -1177,88 +1215,12 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"End of IF Statement"
+				"End of Function"
 			]
 		]
 	],
 	[
 		37,
-		29,
-		[
-			[
-				"name",
-				"DrawTextureEx(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">fireTex,position,rotation,1,WHITE</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"DrawTextureEx(fireTex,position,rotation,1,WHITE)"
-			],
-			[
-				"interactionid",
-				25
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"DrawTextureEx(fireTex,position,rotation,1,WHITE)"
-			]
-		]
-	],
-	[
-		30,
-		28,
-		[
-			[
-				"name",
-				"End of Function"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				20
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of Function"
-			]
-		]
-	],
-	[
-		38,
 		4,
 		[
 			[
@@ -1275,7 +1237,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				26
+				25
 			],
 			[
 				"visible",
@@ -1296,8 +1258,8 @@ aStepsTable = [
 		]
 	],
 	[
-		39,
 		38,
+		37,
 		[
 			[
 				"name",
@@ -1313,7 +1275,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				26
+				25
 			],
 			[
 				"visible",
@@ -1334,8 +1296,8 @@ aStepsTable = [
 		]
 	],
 	[
-		41,
-		39,
+		40,
+		38,
 		[
 			[
 				"name",
@@ -1351,7 +1313,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				27
+				26
 			],
 			[
 				"visible",
@@ -1372,8 +1334,8 @@ aStepsTable = [
 		]
 	],
 	[
-		42,
 		41,
+		40,
 		[
 			[
 				"name",
@@ -1389,7 +1351,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				27
+				26
 			],
 			[
 				"visible",
@@ -1410,8 +1372,8 @@ aStepsTable = [
 		]
 	],
 	[
-		44,
-		42,
+		43,
+		41,
 		[
 			[
 				"name",
@@ -1427,7 +1389,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				28
+				27
 			],
 			[
 				"visible",
@@ -1448,88 +1410,12 @@ aStepsTable = [
 		]
 	],
 	[
-		43,
-		41,
-		[
-			[
-				"name",
-				"End of IF Statement"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				27
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of IF Statement"
-			]
-		]
-	],
-	[
-		45,
-		39,
-		[
-			[
-				"name",
-				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">False</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"return False"
-			],
-			[
-				"interactionid",
-				29
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Return False"
-			]
-		]
-	],
-	[
+		42,
 		40,
-		38,
 		[
 			[
 				"name",
-				"End of Function"
+				"End of IF Statement"
 			],
 			[
 				"active",
@@ -1557,12 +1443,88 @@ aStepsTable = [
 			],
 			[
 				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		44,
+		38,
+		[
+			[
+				"name",
+				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">False</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"return False"
+			],
+			[
+				"interactionid",
+				28
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Return False"
+			]
+		]
+	],
+	[
+		39,
+		37,
+		[
+			[
+				"name",
+				"End of Function"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				25
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
 				"End of Function"
 			]
 		]
 	],
 	[
-		46,
+		45,
 		4,
 		[
 			[
@@ -1579,7 +1541,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				30
+				29
 			],
 			[
 				"visible",
@@ -1600,8 +1562,8 @@ aStepsTable = [
 		]
 	],
 	[
-		47,
 		46,
+		45,
 		[
 			[
 				"name",
@@ -1617,7 +1579,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				30
+				29
 			],
 			[
 				"visible",
@@ -1638,8 +1600,8 @@ aStepsTable = [
 		]
 	],
 	[
-		49,
-		47,
+		48,
+		46,
 		[
 			[
 				"name",
@@ -1655,7 +1617,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				31
+				30
 			],
 			[
 				"visible",
@@ -1676,8 +1638,8 @@ aStepsTable = [
 		]
 	],
 	[
-		50,
-		47,
+		49,
+		46,
 		[
 			[
 				"name",
@@ -1689,12 +1651,12 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# Function to set ship damage amount using ship type
+				"#Function to set ship damage amount using ship type
 "
 			],
 			[
 				"interactionid",
-				32
+				31
 			],
 			[
 				"visible",
@@ -1715,8 +1677,8 @@ aStepsTable = [
 		]
 	],
 	[
-		48,
-		46,
+		47,
+		45,
 		[
 			[
 				"name",
@@ -1732,7 +1694,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				30
+				29
 			],
 			[
 				"visible",
@@ -1753,7 +1715,7 @@ aStepsTable = [
 		]
 	],
 	[
-		51,
+		50,
 		4,
 		[
 			[
@@ -1770,7 +1732,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				33
+				32
 			],
 			[
 				"visible",
@@ -1791,8 +1753,8 @@ aStepsTable = [
 		]
 	],
 	[
-		52,
 		51,
+		50,
 		[
 			[
 				"name",
@@ -1808,7 +1770,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				33
+				32
 			],
 			[
 				"visible",
@@ -1829,8 +1791,8 @@ aStepsTable = [
 		]
 	],
 	[
-		54,
-		52,
+		53,
+		51,
 		[
 			[
 				"name",
@@ -1846,7 +1808,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				34
+				33
 			],
 			[
 				"visible",
@@ -1867,8 +1829,8 @@ aStepsTable = [
 		]
 	],
 	[
-		55,
 		54,
+		53,
 		[
 			[
 				"name",
@@ -1884,7 +1846,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				34
+				33
 			],
 			[
 				"visible",
@@ -1905,8 +1867,8 @@ aStepsTable = [
 		]
 	],
 	[
-		57,
-		55,
+		56,
+		54,
 		[
 			[
 				"name",
@@ -1922,7 +1884,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				35
+				34
 			],
 			[
 				"visible",
@@ -1943,8 +1905,8 @@ aStepsTable = [
 		]
 	],
 	[
-		56,
-		54,
+		55,
+		53,
 		[
 			[
 				"name",
@@ -1960,7 +1922,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				34
+				33
 			],
 			[
 				"visible",
@@ -1981,8 +1943,8 @@ aStepsTable = [
 		]
 	],
 	[
-		58,
-		52,
+		57,
+		51,
 		[
 			[
 				"name",
@@ -1998,7 +1960,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				36
+				35
 			],
 			[
 				"visible",
@@ -2019,8 +1981,8 @@ aStepsTable = [
 		]
 	],
 	[
-		59,
 		58,
+		57,
 		[
 			[
 				"name",
@@ -2036,7 +1998,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				36
+				35
 			],
 			[
 				"visible",
@@ -2057,8 +2019,8 @@ aStepsTable = [
 		]
 	],
 	[
-		61,
-		59,
+		60,
+		58,
 		[
 			[
 				"name",
@@ -2074,7 +2036,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				37
+				36
 			],
 			[
 				"visible",
@@ -2095,8 +2057,8 @@ aStepsTable = [
 		]
 	],
 	[
-		62,
 		61,
+		60,
 		[
 			[
 				"name",
@@ -2112,7 +2074,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				37
+				36
 			],
 			[
 				"visible",
@@ -2133,8 +2095,8 @@ aStepsTable = [
 		]
 	],
 	[
-		63,
 		62,
+		61,
 		[
 			[
 				"name",
@@ -2150,7 +2112,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				38
+				37
 			],
 			[
 				"visible",
@@ -2171,8 +2133,8 @@ aStepsTable = [
 		]
 	],
 	[
-		64,
-		59,
+		63,
+		58,
 		[
 			[
 				"name",
@@ -2188,7 +2150,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				39
+				38
 			],
 			[
 				"visible",
@@ -2209,8 +2171,8 @@ aStepsTable = [
 		]
 	],
 	[
-		65,
 		64,
+		63,
 		[
 			[
 				"name",
@@ -2226,7 +2188,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				39
+				38
 			],
 			[
 				"visible",
@@ -2247,8 +2209,8 @@ aStepsTable = [
 		]
 	],
 	[
-		66,
 		65,
+		64,
 		[
 			[
 				"name",
@@ -2264,7 +2226,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				40
+				39
 			],
 			[
 				"visible",
@@ -2285,8 +2247,8 @@ aStepsTable = [
 		]
 	],
 	[
-		67,
-		59,
+		66,
+		58,
 		[
 			[
 				"name",
@@ -2302,7 +2264,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				41
+				40
 			],
 			[
 				"visible",
@@ -2323,8 +2285,8 @@ aStepsTable = [
 		]
 	],
 	[
-		68,
 		67,
+		66,
 		[
 			[
 				"name",
@@ -2340,7 +2302,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				41
+				40
 			],
 			[
 				"visible",
@@ -2361,8 +2323,8 @@ aStepsTable = [
 		]
 	],
 	[
-		69,
 		68,
+		67,
 		[
 			[
 				"name",
@@ -2378,7 +2340,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				42
+				41
 			],
 			[
 				"visible",
@@ -2399,8 +2361,8 @@ aStepsTable = [
 		]
 	],
 	[
-		70,
-		59,
+		69,
+		58,
 		[
 			[
 				"name",
@@ -2416,7 +2378,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				43
+				42
 			],
 			[
 				"visible",
@@ -2437,8 +2399,8 @@ aStepsTable = [
 		]
 	],
 	[
-		71,
 		70,
+		69,
 		[
 			[
 				"name",
@@ -2454,7 +2416,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				43
+				42
 			],
 			[
 				"visible",
@@ -2475,8 +2437,8 @@ aStepsTable = [
 		]
 	],
 	[
-		72,
 		71,
+		70,
 		[
 			[
 				"name",
@@ -2492,7 +2454,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				44
+				43
 			],
 			[
 				"visible",
@@ -2513,8 +2475,8 @@ aStepsTable = [
 		]
 	],
 	[
-		60,
-		58,
+		59,
+		57,
 		[
 			[
 				"name",
@@ -2530,7 +2492,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				36
+				35
 			],
 			[
 				"visible",
@@ -2551,8 +2513,8 @@ aStepsTable = [
 		]
 	],
 	[
-		53,
-		51,
+		52,
+		50,
 		[
 			[
 				"name",
@@ -2568,7 +2530,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				33
+				32
 			],
 			[
 				"visible",
@@ -2747,352 +2709,344 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"27/08/2021",
-		"08:42:57",
+		"06/05/2024",
+		"12:01:32",
 		""
 	],
 	[
 		2,
 		1,
 		"class",
-		"27/08/2021",
-		"08:42:57",
+		"06/05/2024",
+		"12:01:32",
 		"value;;_RV_;;Fire;;_RV_;;value2;;_RV_;;;;_RV_;;value3;;_RV_;;2;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"freetyping",
-		"27/08/2021",
-		"08:42:57",
+		"06/05/2024",
+		"12:01:32",
 		"value;;_RV_;;position;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"freetyping",
-		"27/08/2021",
-		"08:42:57",
+		"06/05/2024",
+		"12:01:32",
 		"value;;_RV_;;fireTex;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:42:57",
+		"06/05/2024",
+		"12:01:32",
 		"leftside;;_RV_;;speed;;_RV_;;rightside;;_RV_;;12;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:42:57",
+		"06/05/2024",
+		"12:01:32",
 		"leftside;;_RV_;;deathTimer;;_RV_;;rightside;;_RV_;;2;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:42:57",
+		"06/05/2024",
+		"12:01:32",
 		"leftside;;_RV_;;rotation;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:42:57",
+		"06/05/2024",
+		"12:01:32",
 		"leftside;;_RV_;;damageAmount;;_RV_;;rightside;;_RV_;;30;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"freetyping",
-		"27/08/2021",
-		"08:42:57",
+		"06/05/2024",
+		"12:01:32",
 		"value;;_RV_;;h;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"func",
-		"27/08/2021",
-		"08:42:57",
+		"06/05/2024",
+		"12:01:32",
 		"name;;_RV_;;init;;_RV_;;parameters;;_RV_;;pos,file,sound,enemyType,damageAmount;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:42:57",
+		"06/05/2024",
+		"12:01:32",
 		"leftside;;_RV_;;position;;_RV_;;rightside;;_RV_;;pos;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:42:57",
+		"06/05/2024",
+		"12:01:32",
 		"leftside;;_RV_;;this.damageAmount;;_RV_;;rightside;;_RV_;;damageAmount;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:42:57",
+		"06/05/2024",
+		"12:01:32",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setFireAmount;;_RV_;;parameters;;_RV_;;enemyType;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:42:57",
-		"leftside;;_RV_;;fireImage;;_RV_;;rightside;;_RV_;;LoadImage(file);;_RV_;;"
+		"06/05/2024",
+		"12:01:32",
+		"leftside;;_RV_;;fireImage;;_RV_;;rightside;;_RV_;;resources.image(file);;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:42:57",
-		"leftside;;_RV_;;fireTex;;_RV_;;rightside;;_RV_;;LoadTextureFromImage(fireImage);;_RV_;;"
+		"06/05/2024",
+		"12:01:32",
+		"leftside;;_RV_;;fireTex;;_RV_;;rightside;;_RV_;;resources.texture(fireImage);;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:42:57",
+		"06/05/2024",
+		"12:01:32",
 		"leftside;;_RV_;;h;;_RV_;;rightside;;_RV_;;fireimage.height;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:42:57",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadImage;;_RV_;;parameters;;_RV_;;fireImage;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"06/05/2024",
+		"12:01:32",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;playFireSound;;_RV_;;parameters;;_RV_;;sound;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		18,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:42:57",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;playFireSound;;_RV_;;parameters;;_RV_;;sound;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"return",
+		"06/05/2024",
+		"12:01:32",
+		"value;;_RV_;;self;;_RV_;;"
 	],
 	[
 		19,
 		1,
-		"return",
-		"27/08/2021",
-		"08:42:57",
-		"value;;_RV_;;self;;_RV_;;"
+		"func",
+		"06/05/2024",
+		"12:01:32",
+		"name;;_RV_;;draw;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		20,
 		1,
-		"func",
-		"27/08/2021",
-		"08:42:57",
-		"name;;_RV_;;draw;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"freetyping",
+		"06/05/2024",
+		"12:01:32",
+		"value;;_RV_;;deathTimer -= getFrameTime();;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"freetyping",
-		"27/08/2021",
-		"08:42:57",
-		"value;;_RV_;;deathTimer -= getFrameTime();;_RV_;;"
+		"06/05/2024",
+		"12:01:32",
+		"value;;_RV_;;position.y -= speed;;_RV_;;"
 	],
 	[
 		22,
 		1,
-		"freetyping",
-		"27/08/2021",
-		"08:42:57",
-		"value;;_RV_;;position.y -= speed;;_RV_;;"
+		"ifstatement",
+		"06/05/2024",
+		"12:01:32",
+		"condition;;_RV_;;position.y+h/2 <= 0;;_RV_;;"
 	],
 	[
 		23,
 		1,
-		"ifstatement",
-		"27/08/2021",
-		"08:42:57",
-		"condition;;_RV_;;position.y+h/2 <= 0;;_RV_;;"
+		"assignment",
+		"06/05/2024",
+		"12:01:32",
+		"leftside;;_RV_;;deathTimer;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		24,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:42:57",
-		"leftside;;_RV_;;deathTimer;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
+		"callfunc",
+		"06/05/2024",
+		"12:01:32",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawTextureEx;;_RV_;;parameters;;_RV_;;fireTex,position,rotation,1,WHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		25,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:42:57",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawTextureEx;;_RV_;;parameters;;_RV_;;fireTex,position,rotation,1,WHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"func",
+		"06/05/2024",
+		"12:01:32",
+		"name;;_RV_;;tryToDestroy;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		26,
 		1,
-		"func",
-		"27/08/2021",
-		"08:42:57",
-		"name;;_RV_;;tryToDestroy;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"ifstatement",
+		"06/05/2024",
+		"12:01:32",
+		"condition;;_RV_;;deathTimer <= 0;;_RV_;;"
 	],
 	[
 		27,
 		1,
-		"ifstatement",
-		"27/08/2021",
-		"08:42:57",
-		"condition;;_RV_;;deathTimer <= 0;;_RV_;;"
+		"return",
+		"06/05/2024",
+		"12:01:32",
+		"value;;_RV_;;True;;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"return",
-		"27/08/2021",
-		"08:42:57",
-		"value;;_RV_;;True;;_RV_;;"
+		"06/05/2024",
+		"12:01:32",
+		"value;;_RV_;;False;;_RV_;;"
 	],
 	[
 		29,
 		1,
-		"return",
-		"27/08/2021",
-		"08:42:57",
-		"value;;_RV_;;False;;_RV_;;"
+		"func",
+		"06/05/2024",
+		"12:01:32",
+		"name;;_RV_;;playFireSound;;_RV_;;parameters;;_RV_;;sound;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		30,
 		1,
-		"func",
-		"27/08/2021",
-		"08:42:57",
-		"name;;_RV_;;playFireSound;;_RV_;;parameters;;_RV_;;sound;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"callfunc",
+		"06/05/2024",
+		"12:01:32",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;playSound;;_RV_;;parameters;;_RV_;;sound;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		31,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:42:57",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;playSound;;_RV_;;parameters;;_RV_;;sound;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"comment_text",
+		"06/05/2024",
+		"12:01:32",
+		"value;;_RV_;;Function to set ship damage amount using ship type;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		32,
 		1,
-		"comment_text",
-		"27/08/2021",
-		"08:42:57",
-		"value;;_RV_;;Function to set ship damage amount using ship type;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"func",
+		"06/05/2024",
+		"12:01:32",
+		"name;;_RV_;;setFireAmount;;_RV_;;parameters;;_RV_;;enemyType;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		33,
 		1,
-		"func",
-		"27/08/2021",
-		"08:42:57",
-		"name;;_RV_;;setFireAmount;;_RV_;;parameters;;_RV_;;enemyType;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"ifstatement",
+		"06/05/2024",
+		"12:01:32",
+		"condition;;_RV_;;enemyType <= 0;;_RV_;;"
 	],
 	[
 		34,
 		1,
-		"ifstatement",
-		"27/08/2021",
-		"08:42:57",
-		"condition;;_RV_;;enemyType <= 0;;_RV_;;"
+		"return",
+		"06/05/2024",
+		"12:01:32",
+		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		35,
 		1,
-		"return",
-		"27/08/2021",
-		"08:42:57",
-		"value;;_RV_;;;;_RV_;;"
+		"switch",
+		"06/05/2024",
+		"12:01:32",
+		"variable;;_RV_;;enemyType;;_RV_;;"
 	],
 	[
 		36,
 		1,
-		"switch",
-		"27/08/2021",
-		"08:42:57",
-		"variable;;_RV_;;enemyType;;_RV_;;"
+		"case",
+		"06/05/2024",
+		"12:01:32",
+		"value;;_RV_;;1;;_RV_;;"
 	],
 	[
 		37,
 		1,
-		"case",
-		"27/08/2021",
-		"08:42:57",
-		"value;;_RV_;;1;;_RV_;;"
+		"assignment",
+		"06/05/2024",
+		"12:01:32",
+		"leftside;;_RV_;;damageAmount;;_RV_;;rightside;;_RV_;;2;;_RV_;;"
 	],
 	[
 		38,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:42:57",
-		"leftside;;_RV_;;damageAmount;;_RV_;;rightside;;_RV_;;2;;_RV_;;"
+		"case",
+		"06/05/2024",
+		"12:01:32",
+		"value;;_RV_;;2;;_RV_;;"
 	],
 	[
 		39,
 		1,
-		"case",
-		"27/08/2021",
-		"08:42:57",
-		"value;;_RV_;;2;;_RV_;;"
+		"assignment",
+		"06/05/2024",
+		"12:01:32",
+		"leftside;;_RV_;;damageAmount;;_RV_;;rightside;;_RV_;;2;;_RV_;;"
 	],
 	[
 		40,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:42:57",
-		"leftside;;_RV_;;damageAmount;;_RV_;;rightside;;_RV_;;2;;_RV_;;"
+		"case",
+		"06/05/2024",
+		"12:01:32",
+		"value;;_RV_;;3;;_RV_;;"
 	],
 	[
 		41,
 		1,
-		"case",
-		"27/08/2021",
-		"08:42:57",
-		"value;;_RV_;;3;;_RV_;;"
+		"assignment",
+		"06/05/2024",
+		"12:01:32",
+		"leftside;;_RV_;;damageAmount;;_RV_;;rightside;;_RV_;;3;;_RV_;;"
 	],
 	[
 		42,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:42:57",
-		"leftside;;_RV_;;damageAmount;;_RV_;;rightside;;_RV_;;3;;_RV_;;"
+		"case",
+		"06/05/2024",
+		"12:01:32",
+		"value;;_RV_;;4;;_RV_;;"
 	],
 	[
 		43,
 		1,
-		"case",
-		"27/08/2021",
-		"08:42:57",
-		"value;;_RV_;;4;;_RV_;;"
-	],
-	[
-		44,
-		1,
 		"assignment",
-		"27/08/2021",
-		"08:42:57",
+		"06/05/2024",
+		"12:01:32",
 		"leftside;;_RV_;;damageAmount;;_RV_;;rightside;;_RV_;;3;;_RV_;;"
 	]
 ]

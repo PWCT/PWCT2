@@ -2,7 +2,7 @@
 
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
-cNaturalLanguageName     = 'English'
+cNaturalLanguageName     = 'english'
 nStepsID                 = 61		
 nInteractionsID          = 35
 
@@ -232,6 +232,44 @@ aStepsTable = [
 		]
 	],
 	[
+		12,
+		4,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">lCloseGame</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">False</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"lCloseGame = False"
+			],
+			[
+				"interactionid",
+				6
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"lCloseGame = False"
+			]
+		]
+	],
+	[
 		5,
 		3,
 		[
@@ -270,7 +308,7 @@ aStepsTable = [
 		]
 	],
 	[
-		12,
+		13,
 		5,
 		[
 			[
@@ -287,7 +325,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				6
+				7
 			],
 			[
 				"visible",
@@ -308,8 +346,8 @@ aStepsTable = [
 		]
 	],
 	[
+		14,
 		13,
-		12,
 		[
 			[
 				"name",
@@ -325,7 +363,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				6
+				7
 			],
 			[
 				"visible",
@@ -346,8 +384,8 @@ aStepsTable = [
 		]
 	],
 	[
-		15,
-		13,
+		16,
+		14,
 		[
 			[
 				"name",
@@ -359,12 +397,12 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# Start button in the scene
+				"#Start button in the scene
 "
 			],
 			[
 				"interactionid",
-				7
+				8
 			],
 			[
 				"visible",
@@ -385,8 +423,8 @@ aStepsTable = [
 		]
 	],
 	[
-		16,
-		13,
+		17,
+		14,
 		[
 			[
 				"name",
@@ -402,7 +440,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				8
+				9
 			],
 			[
 				"visible",
@@ -423,8 +461,8 @@ aStepsTable = [
 		]
 	],
 	[
+		18,
 		17,
-		16,
 		[
 			[
 				"name",
@@ -440,7 +478,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				8
+				9
 			],
 			[
 				"visible",
@@ -461,8 +499,8 @@ aStepsTable = [
 		]
 	],
 	[
+		19,
 		18,
-		17,
 		[
 			[
 				"name",
@@ -478,7 +516,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				8
+				9
 			],
 			[
 				"visible",
@@ -499,8 +537,8 @@ aStepsTable = [
 		]
 	],
 	[
-		20,
-		18,
+		21,
+		19,
 		[
 			[
 				"name",
@@ -516,7 +554,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				9
+				10
 			],
 			[
 				"visible",
@@ -537,8 +575,8 @@ aStepsTable = [
 		]
 	],
 	[
-		21,
-		18,
+		22,
+		19,
 		[
 			[
 				"name",
@@ -554,7 +592,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				10
+				11
 			],
 			[
 				"visible",
@@ -575,8 +613,8 @@ aStepsTable = [
 		]
 	],
 	[
+		23,
 		22,
-		21,
 		[
 			[
 				"name",
@@ -592,7 +630,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				10
+				11
 			],
 			[
 				"visible",
@@ -613,8 +651,8 @@ aStepsTable = [
 		]
 	],
 	[
+		24,
 		23,
-		22,
 		[
 			[
 				"name",
@@ -630,7 +668,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				10
+				11
 			],
 			[
 				"visible",
@@ -651,8 +689,8 @@ aStepsTable = [
 		]
 	],
 	[
-		25,
-		23,
+		26,
+		24,
 		[
 			[
 				"name",
@@ -665,44 +703,6 @@ aStepsTable = [
 			[
 				"code",
 				"x = screenWidth/2"
-			],
-			[
-				"interactionid",
-				11
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"x = screenWidth/2"
-			]
-		]
-	],
-	[
-		26,
-		23,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">y</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">screenHeight*0.4</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"y = screenHeight*0.4"
 			],
 			[
 				"interactionid",
@@ -722,55 +722,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"y = screenHeight*0.4"
-			]
-		]
-	],
-	[
-		24,
-		22,
-		[
-			[
-				"name",
-				"}"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"}"
-			],
-			[
-				"interactionid",
-				10
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				4
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"}"
+				"x = screenWidth/2"
 			]
 		]
 	],
 	[
 		27,
-		18,
+		24,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">position.x&nbsp;-=&nbsp;w/2</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">y</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">screenHeight*0.4</font></span>"
 			],
 			[
 				"active",
@@ -778,7 +740,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"position.x -= w/2"
+				"y = screenHeight*0.4"
 			],
 			[
 				"interactionid",
@@ -798,17 +760,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"position.x -= w/2"
+				"y = screenHeight*0.4"
 			]
 		]
 	],
 	[
-		28,
-		18,
+		25,
+		23,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">function</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">:startGame</font></span>"
+				"}"
 			],
 			[
 				"active",
@@ -816,7 +778,45 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"function = :startGame"
+				"}"
+			],
+			[
+				"interactionid",
+				11
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				4
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"}"
+			]
+		]
+	],
+	[
+		28,
+		19,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">position.x&nbsp;-=&nbsp;w/2</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"position.x -= w/2"
 			],
 			[
 				"interactionid",
@@ -836,17 +836,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"function = :startGame"
+				"position.x -= w/2"
 			]
 		]
 	],
 	[
 		29,
-		18,
+		19,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">parentScene</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">object2pointer(this)</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFunction</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">:startGame</font></span>"
 			],
 			[
 				"active",
@@ -854,7 +854,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"parentScene = object2pointer(this)"
+				"cFunction = :startGame"
 			],
 			[
 				"interactionid",
@@ -874,13 +874,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"parentScene = object2pointer(this)"
+				"cFunction = :startGame"
 			]
 		]
 	],
 	[
-		19,
-		17,
+		20,
+		18,
 		[
 			[
 				"name",
@@ -896,7 +896,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				8
+				9
 			],
 			[
 				"visible",
@@ -918,7 +918,7 @@ aStepsTable = [
 	],
 	[
 		30,
-		13,
+		14,
 		[
 			[
 				"name",
@@ -930,7 +930,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# Exit button in the scene
+				"#Exit button in the scene
 "
 			],
 			[
@@ -957,7 +957,7 @@ aStepsTable = [
 	],
 	[
 		31,
-		13,
+		14,
 		[
 			[
 				"name",
@@ -1379,7 +1379,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">function</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">:exitTheGame</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFunction</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">:exitTheGame</font></span>"
 			],
 			[
 				"active",
@@ -1387,7 +1387,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"function = :exitTheGame"
+				"cFunction = :exitTheGame"
 			],
 			[
 				"interactionid",
@@ -1407,45 +1407,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"function = :exitTheGame"
-			]
-		]
-	],
-	[
-		44,
-		33,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">parentScene</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">object2pointer(this)</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"parentScene = object2pointer(this)"
-			],
-			[
-				"interactionid",
-				24
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"parentScene = object2pointer(this)"
+				"cFunction = :exitTheGame"
 			]
 		]
 	],
@@ -1488,8 +1450,8 @@ aStepsTable = [
 		]
 	],
 	[
-		45,
-		13,
+		44,
+		14,
 		[
 			[
 				"name",
@@ -1505,7 +1467,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				25
+				24
 			],
 			[
 				"visible",
@@ -1526,8 +1488,8 @@ aStepsTable = [
 		]
 	],
 	[
-		14,
-		12,
+		15,
+		13,
 		[
 			[
 				"name",
@@ -1543,7 +1505,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				6
+				7
 			],
 			[
 				"visible",
@@ -1564,7 +1526,7 @@ aStepsTable = [
 		]
 	],
 	[
-		46,
+		45,
 		5,
 		[
 			[
@@ -1581,7 +1543,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				26
+				25
 			],
 			[
 				"visible",
@@ -1602,8 +1564,8 @@ aStepsTable = [
 		]
 	],
 	[
-		47,
 		46,
+		45,
 		[
 			[
 				"name",
@@ -1619,7 +1581,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				26
+				25
 			],
 			[
 				"visible",
@@ -1640,8 +1602,8 @@ aStepsTable = [
 		]
 	],
 	[
-		49,
-		47,
+		48,
+		46,
 		[
 			[
 				"name",
@@ -1654,6 +1616,44 @@ aStepsTable = [
 			[
 				"code",
 				"DrawText(name,screenWidth/2-200,screenHeight*0.1,46,White)"
+			],
+			[
+				"interactionid",
+				26
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"DrawText(name,screenWidth/2-200,screenHeight*0.1,46,White)"
+			]
+		]
+	],
+	[
+		49,
+		46,
+		[
+			[
+				"name",
+				"DrawText(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;Controls:&nbsp;Space&nbsp;And&nbsp;Arrow&nbsp;keys&quot;,screenWidth/2-300,screenHeight*0.25,36,White</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"DrawText("+char(34)+"Controls: Space And Arrow keys"+char(34)+",screenWidth/2-300,screenHeight*0.25,36,White)"
 			],
 			[
 				"interactionid",
@@ -1673,51 +1673,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"DrawText(name,screenWidth/2-200,screenHeight*0.1,46,White)"
+				"DrawText("+char(34)+"Controls: Space And Arrow keys"+char(34)+",screenWidth/2-300,screenHeight*0.25,36,White)"
 			]
 		]
 	],
 	[
 		50,
-		47,
-		[
-			[
-				"name",
-				"DrawText(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;Controls:&nbsp;Space&nbsp;And&nbsp;Arrow&nbsp;keys&quot;,screenWidth/2-300,screenHeight*0.25,36,White</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"DrawText("+char(34)+"Controls: Space And Arrow keys"+char(34)+",screenWidth/2-300,screenHeight*0.25,36,White)"
-			],
-			[
-				"interactionid",
-				28
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"DrawText("+char(34)+"Controls: Space And Arrow keys"+char(34)+",screenWidth/2-300,screenHeight*0.25,36,White)"
-			]
-		]
-	],
-	[
-		51,
-		47,
+		46,
 		[
 			[
 				"name",
@@ -1733,7 +1695,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				29
+				28
 			],
 			[
 				"visible",
@@ -1754,8 +1716,8 @@ aStepsTable = [
 		]
 	],
 	[
-		52,
-		47,
+		51,
+		46,
 		[
 			[
 				"name",
@@ -1771,7 +1733,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				30
+				29
 			],
 			[
 				"visible",
@@ -1792,8 +1754,8 @@ aStepsTable = [
 		]
 	],
 	[
-		53,
-		47,
+		52,
+		46,
 		[
 			[
 				"name",
@@ -1809,7 +1771,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				31
+				30
 			],
 			[
 				"visible",
@@ -1830,8 +1792,8 @@ aStepsTable = [
 		]
 	],
 	[
-		48,
-		46,
+		47,
+		45,
 		[
 			[
 				"name",
@@ -1847,7 +1809,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				26
+				25
 			],
 			[
 				"visible",
@@ -1868,7 +1830,7 @@ aStepsTable = [
 		]
 	],
 	[
-		54,
+		53,
 		5,
 		[
 			[
@@ -1885,7 +1847,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				32
+				31
 			],
 			[
 				"visible",
@@ -1906,8 +1868,8 @@ aStepsTable = [
 		]
 	],
 	[
-		55,
 		54,
+		53,
 		[
 			[
 				"name",
@@ -1923,7 +1885,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				32
+				31
 			],
 			[
 				"visible",
@@ -1944,8 +1906,8 @@ aStepsTable = [
 		]
 	],
 	[
-		57,
-		55,
+		56,
+		54,
 		[
 			[
 				"name",
@@ -1961,7 +1923,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				33
+				32
 			],
 			[
 				"visible",
@@ -1982,8 +1944,8 @@ aStepsTable = [
 		]
 	],
 	[
-		56,
-		54,
+		55,
+		53,
 		[
 			[
 				"name",
@@ -1999,7 +1961,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				32
+				31
 			],
 			[
 				"visible",
@@ -2020,7 +1982,7 @@ aStepsTable = [
 		]
 	],
 	[
-		58,
+		57,
 		5,
 		[
 			[
@@ -2037,7 +1999,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				34
+				33
 			],
 			[
 				"visible",
@@ -2058,8 +2020,8 @@ aStepsTable = [
 		]
 	],
 	[
-		59,
 		58,
+		57,
 		[
 			[
 				"name",
@@ -2075,7 +2037,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				34
+				33
 			],
 			[
 				"visible",
@@ -2096,12 +2058,12 @@ aStepsTable = [
 		]
 	],
 	[
-		61,
-		59,
+		60,
+		58,
 		[
 			[
 				"name",
-				"Exit <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">isDone</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">True</font></span>"
 			],
 			[
 				"active",
@@ -2109,7 +2071,45 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"exit 1"
+				"isDone = True"
+			],
+			[
+				"interactionid",
+				34
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"isDone = True"
+			]
+		]
+	],
+	[
+		61,
+		58,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">lCloseGame</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">True</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"lCloseGame = True"
 			],
 			[
 				"interactionid",
@@ -2129,13 +2129,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Exit 1"
+				"lCloseGame = True"
 			]
 		]
 	],
 	[
-		60,
-		58,
+		59,
+		57,
 		[
 			[
 				"name",
@@ -2151,7 +2151,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				34
+				33
 			],
 			[
 				"visible",
@@ -2330,281 +2330,281 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"27/08/2021",
-		"08:42:59",
+		"06/05/2024",
+		"12:01:51",
 		""
 	],
 	[
 		2,
 		1,
 		"load",
-		"27/08/2021",
-		"08:42:59",
+		"06/05/2024",
+		"12:01:51",
 		"file;;_RV_;;Button.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"class",
-		"27/08/2021",
-		"08:42:59",
+		"06/05/2024",
+		"12:01:51",
 		"value;;_RV_;;MainMenuScene;;_RV_;;value2;;_RV_;;Scene;;_RV_;;value3;;_RV_;;2;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"freetyping",
-		"27/08/2021",
-		"08:42:59",
+		"06/05/2024",
+		"12:01:51",
 		"value;;_RV_;;startButton;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"freetyping",
-		"27/08/2021",
-		"08:42:59",
+		"06/05/2024",
+		"12:01:51",
 		"value;;_RV_;;exitButton;;_RV_;;"
 	],
 	[
 		6,
 		1,
-		"func",
-		"27/08/2021",
-		"08:42:59",
-		"name;;_RV_;;init;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"06/05/2024",
+		"12:01:51",
+		"leftside;;_RV_;;lCloseGame;;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
 		7,
 		1,
-		"comment_text",
-		"27/08/2021",
-		"08:42:59",
-		"value;;_RV_;;Start button in the scene;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"func",
+		"06/05/2024",
+		"12:01:51",
+		"name;;_RV_;;init;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
-		"newobj",
-		"27/08/2021",
-		"08:42:59",
-		"value;;_RV_;;startButton;;_RV_;;value2;;_RV_;;Button;;_RV_;;value3;;_RV_;;"+char(34)+"Assets/buttonRed.png"+char(34)+","+char(34)+"Assets/buttonBlue.png"+char(34)+";;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
+		"comment_text",
+		"06/05/2024",
+		"12:01:51",
+		"value;;_RV_;;Start button in the scene;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		9,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:42:59",
-		"leftside;;_RV_;;text;;_RV_;;rightside;;_RV_;;"+char(34)+"Start"+char(34)+";;_RV_;;"
+		"newobj",
+		"06/05/2024",
+		"12:01:51",
+		"value;;_RV_;;startButton;;_RV_;;value2;;_RV_;;Button;;_RV_;;value3;;_RV_;;"+char(34)+"Assets/buttonRed.png"+char(34)+","+char(34)+"Assets/buttonBlue.png"+char(34)+";;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		10,
 		1,
-		"newobj",
-		"27/08/2021",
-		"08:42:59",
-		"value;;_RV_;;position;;_RV_;;value2;;_RV_;;Vector2;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"06/05/2024",
+		"12:01:51",
+		"leftside;;_RV_;;text;;_RV_;;rightside;;_RV_;;"+char(34)+"Start"+char(34)+";;_RV_;;"
 	],
 	[
 		11,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:42:59",
-		"leftside;;_RV_;;x;;_RV_;;rightside;;_RV_;;screenWidth/2;;_RV_;;"
+		"newobj",
+		"06/05/2024",
+		"12:01:51",
+		"value;;_RV_;;position;;_RV_;;value2;;_RV_;;Vector2;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:42:59",
-		"leftside;;_RV_;;y;;_RV_;;rightside;;_RV_;;screenHeight*0.4;;_RV_;;"
+		"06/05/2024",
+		"12:01:51",
+		"leftside;;_RV_;;x;;_RV_;;rightside;;_RV_;;screenWidth/2;;_RV_;;"
 	],
 	[
 		13,
 		1,
-		"freetyping",
-		"27/08/2021",
-		"08:42:59",
-		"value;;_RV_;;position.x -= w/2;;_RV_;;"
+		"assignment",
+		"06/05/2024",
+		"12:01:51",
+		"leftside;;_RV_;;y;;_RV_;;rightside;;_RV_;;screenHeight*0.4;;_RV_;;"
 	],
 	[
 		14,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:42:59",
-		"leftside;;_RV_;;function;;_RV_;;rightside;;_RV_;;:startGame;;_RV_;;"
+		"freetyping",
+		"06/05/2024",
+		"12:01:51",
+		"value;;_RV_;;position.x -= w/2;;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:42:59",
-		"leftside;;_RV_;;parentScene;;_RV_;;rightside;;_RV_;;object2pointer(this);;_RV_;;"
+		"06/05/2024",
+		"12:01:51",
+		"leftside;;_RV_;;cFunction;;_RV_;;rightside;;_RV_;;:startGame;;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:42:59",
+		"06/05/2024",
+		"12:01:51",
 		"value;;_RV_;;Exit button in the scene;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"newobj",
-		"27/08/2021",
-		"08:42:59",
+		"06/05/2024",
+		"12:01:51",
 		"value;;_RV_;;exitButton;;_RV_;;value2;;_RV_;;Button;;_RV_;;value3;;_RV_;;"+char(34)+"Assets/buttonRed.png"+char(34)+","+char(34)+"Assets/buttonBlue.png"+char(34)+";;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:42:59",
+		"06/05/2024",
+		"12:01:51",
 		"leftside;;_RV_;;text;;_RV_;;rightside;;_RV_;;"+char(34)+"Exit"+char(34)+";;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"newobj",
-		"27/08/2021",
-		"08:42:59",
+		"06/05/2024",
+		"12:01:51",
 		"value;;_RV_;;position;;_RV_;;value2;;_RV_;;Vector2;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:42:59",
+		"06/05/2024",
+		"12:01:51",
 		"leftside;;_RV_;;x;;_RV_;;rightside;;_RV_;;screenWidth/2;;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:42:59",
+		"06/05/2024",
+		"12:01:51",
 		"leftside;;_RV_;;y;;_RV_;;rightside;;_RV_;;screenHeight*0.6;;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"freetyping",
-		"27/08/2021",
-		"08:42:59",
+		"06/05/2024",
+		"12:01:51",
 		"value;;_RV_;;position.x -= w/2;;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:42:59",
-		"leftside;;_RV_;;function;;_RV_;;rightside;;_RV_;;:exitTheGame;;_RV_;;"
+		"06/05/2024",
+		"12:01:51",
+		"leftside;;_RV_;;cFunction;;_RV_;;rightside;;_RV_;;:exitTheGame;;_RV_;;"
 	],
 	[
 		24,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:42:59",
-		"leftside;;_RV_;;parentScene;;_RV_;;rightside;;_RV_;;object2pointer(this);;_RV_;;"
+		"return",
+		"06/05/2024",
+		"12:01:51",
+		"value;;_RV_;;self;;_RV_;;"
 	],
 	[
 		25,
 		1,
-		"return",
-		"27/08/2021",
-		"08:42:59",
-		"value;;_RV_;;self;;_RV_;;"
+		"func",
+		"06/05/2024",
+		"12:01:51",
+		"name;;_RV_;;draw;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		26,
 		1,
-		"func",
-		"27/08/2021",
-		"08:42:59",
-		"name;;_RV_;;draw;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"callfunc",
+		"06/05/2024",
+		"12:01:51",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;name,screenWidth/2-200,screenHeight*0.1,46,White;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:42:59",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;name,screenWidth/2-200,screenHeight*0.1,46,White;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"06/05/2024",
+		"12:01:51",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"Controls: Space And Arrow keys"+char(34)+",screenWidth/2-300,screenHeight*0.25,36,White;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		28,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:42:59",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"Controls: Space And Arrow keys"+char(34)+",screenWidth/2-300,screenHeight*0.25,36,White;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"callmethod",
+		"06/05/2024",
+		"12:01:51",
+		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;startButton;;_RV_;;name;;_RV_;;draw;;_RV_;;parameters;;_RV_;;this;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"callmethod",
-		"27/08/2021",
-		"08:42:59",
-		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;startButton;;_RV_;;name;;_RV_;;draw;;_RV_;;parameters;;_RV_;;this;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"06/05/2024",
+		"12:01:51",
+		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;exitButton;;_RV_;;name;;_RV_;;draw;;_RV_;;parameters;;_RV_;;this;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		30,
 		1,
-		"callmethod",
-		"27/08/2021",
-		"08:42:59",
-		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;exitButton;;_RV_;;name;;_RV_;;draw;;_RV_;;parameters;;_RV_;;this;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"callfunc",
+		"06/05/2024",
+		"12:01:51",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"GAME ASSETS ARE FROM kenney.nl"+char(34)+",screenWidth/2-180,screenHeight*0.9,20,GRAY;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		31,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:42:59",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"GAME ASSETS ARE FROM kenney.nl"+char(34)+",screenWidth/2-180,screenHeight*0.9,20,GRAY;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"func",
+		"06/05/2024",
+		"12:01:51",
+		"name;;_RV_;;startGame;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		32,
 		1,
-		"func",
-		"27/08/2021",
-		"08:42:59",
-		"name;;_RV_;;startGame;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"06/05/2024",
+		"12:01:51",
+		"leftside;;_RV_;;isDone;;_RV_;;rightside;;_RV_;;True;;_RV_;;"
 	],
 	[
 		33,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:42:59",
-		"leftside;;_RV_;;isDone;;_RV_;;rightside;;_RV_;;True;;_RV_;;"
+		"func",
+		"06/05/2024",
+		"12:01:51",
+		"name;;_RV_;;exitTheGame;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		34,
 		1,
-		"func",
-		"27/08/2021",
-		"08:42:59",
-		"name;;_RV_;;exitTheGame;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"06/05/2024",
+		"12:01:51",
+		"leftside;;_RV_;;isDone;;_RV_;;rightside;;_RV_;;True;;_RV_;;"
 	],
 	[
 		35,
 		1,
-		"exit",
-		"27/08/2021",
-		"08:42:59",
-		"value;;_RV_;;1;;_RV_;;"
+		"assignment",
+		"06/05/2024",
+		"12:01:51",
+		"leftside;;_RV_;;lCloseGame;;_RV_;;rightside;;_RV_;;True;;_RV_;;"
 	]
 ]
 
