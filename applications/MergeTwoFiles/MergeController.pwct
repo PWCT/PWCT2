@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'english'
-nStepsID                 = 179		
-nInteractionsID          = 91
+nStepsID                 = 109		
+nInteractionsID          = 56
 
 aStepsTable = [
 	[
@@ -38,15 +38,11 @@ aStepsTable = [
 			[
 				"steptype",
 				1
-			],
-			[
-				"plainname",
-				""
 			]
 		]
 	],
 	[
-		178,
+		2,
 		1,
 		[
 			[
@@ -63,7 +59,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				90
+				2
 			],
 			[
 				"visible",
@@ -84,7 +80,7 @@ aStepsTable = [
 		]
 	],
 	[
-		2,
+		3,
 		1,
 		[
 			[
@@ -101,7 +97,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				2
+				3
 			],
 			[
 				"visible",
@@ -117,12 +113,12 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Load sayhelloview.ring"
+				"Load MergeView.ring"
 			]
 		]
 	],
 	[
-		6,
+		4,
 		1,
 		[
 			[
@@ -160,7 +156,7 @@ aStepsTable = [
 		]
 	],
 	[
-		3,
+		5,
 		1,
 		[
 			[
@@ -177,7 +173,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				3
+				5
 			],
 			[
 				"visible",
@@ -193,13 +189,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If isMainSourceFile"
+				"If isMainSourceFile()"
 			]
 		]
 	],
 	[
-		4,
-		3,
+		6,
+		5,
 		[
 			[
 				"name",
@@ -215,7 +211,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				3
+				5
 			],
 			[
 				"visible",
@@ -236,8 +232,8 @@ aStepsTable = [
 		]
 	],
 	[
-		7,
-		4,
+		8,
+		6,
 		[
 			[
 				"name",
@@ -250,120 +246,6 @@ aStepsTable = [
 			[
 				"code",
 				"new App"
-			],
-			[
-				"interactionid",
-				5
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"App = New Object "
-			]
-		]
-	],
-	[
-		8,
-		7,
-		[
-			[
-				"name",
-				"{"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"{"
-			],
-			[
-				"interactionid",
-				5
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"{"
-			]
-		]
-	],
-	[
-		9,
-		8,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				5
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		11,
-		9,
-		[
-			[
-				"name",
-				"StyleFusion()"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"StyleFusion()"
 			],
 			[
 				"interactionid",
@@ -383,17 +265,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"StyleFusion()"
+				"New Object App"
 			]
 		]
 	],
 	[
-		12,
 		9,
+		8,
 		[
 			[
 				"name",
-				"open_window(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">:MergeController</font></span>)"
+				"{"
 			],
 			[
 				"active",
@@ -401,7 +283,83 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"open_window(:MergeController)"
+				"{"
+			],
+			[
+				"interactionid",
+				6
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"{"
+			]
+		]
+	],
+	[
+		10,
+		9,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				6
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		12,
+		10,
+		[
+			[
+				"name",
+				"StyleFusion(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"StyleFusion()"
 			],
 			[
 				"interactionid",
@@ -421,13 +379,51 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"open_window(:SayHelloController)"
+				"StyleFusion()"
 			]
 		]
 	],
 	[
 		13,
-		9,
+		10,
+		[
+			[
+				"name",
+				"openWindow(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">:MergeController</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"openWindow(:MergeController)"
+			],
+			[
+				"interactionid",
+				8
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"openWindow(:MergeController)"
+			]
+		]
+	],
+	[
+		14,
+		10,
 		[
 			[
 				"name",
@@ -443,7 +439,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				8
+				9
 			],
 			[
 				"visible",
@@ -464,8 +460,8 @@ aStepsTable = [
 		]
 	],
 	[
-		10,
-		8,
+		11,
+		9,
 		[
 			[
 				"name",
@@ -478,6 +474,44 @@ aStepsTable = [
 			[
 				"code",
 				"}"
+			],
+			[
+				"interactionid",
+				6
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				4
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"}"
+			]
+		]
+	],
+	[
+		7,
+		5,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
 			],
 			[
 				"interactionid",
@@ -489,44 +523,6 @@ aStepsTable = [
 			],
 			[
 				"stepnumber",
-				4
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"}"
-			]
-		]
-	],
-	[
-		5,
-		3,
-		[
-			[
-				"name",
-				"End of IF Statement"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"}"
-			],
-			[
-				"interactionid",
-				3
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
 				3
 			],
 			[
@@ -540,7 +536,7 @@ aStepsTable = [
 		]
 	],
 	[
-		14,
+		15,
 		1,
 		[
 			[
@@ -557,7 +553,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				9
+				10
 			],
 			[
 				"visible",
@@ -578,8 +574,8 @@ aStepsTable = [
 		]
 	],
 	[
+		16,
 		15,
-		14,
 		[
 			[
 				"name",
@@ -595,7 +591,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				9
+				10
 			],
 			[
 				"visible",
@@ -616,8 +612,8 @@ aStepsTable = [
 		]
 	],
 	[
-		21,
-		15,
+		22,
+		16,
 		[
 			[
 				"name",
@@ -633,7 +629,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				10
+				11
 			],
 			[
 				"visible",
@@ -649,13 +645,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"oView = New Object SayHelloView"
+				"oView = New Object MergeView"
 			]
 		]
 	],
 	[
-		67,
-		15,
+		23,
+		16,
 		[
 			[
 				"name",
@@ -671,7 +667,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				30
+				12
 			],
 			[
 				"visible",
@@ -692,8 +688,8 @@ aStepsTable = [
 		]
 	],
 	[
-		68,
-		67,
+		24,
+		23,
 		[
 			[
 				"name",
@@ -709,7 +705,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				30
+				12
 			],
 			[
 				"visible",
@@ -730,12 +726,12 @@ aStepsTable = [
 		]
 	],
 	[
-		71,
-		68,
+		26,
+		24,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">txtFile1</font></span>.<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">setenabled</font></span>(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">False</font></span>)"
+				"txtFile1.setenabled( <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">False</font></span> )"
 			],
 			[
 				"active",
@@ -747,7 +743,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				32
+				13
 			],
 			[
 				"visible",
@@ -763,17 +759,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"txtFile1.setenabled(False)"
+				"txtFile1.setenabled( False )"
 			]
 		]
 	],
 	[
-		72,
-		68,
+		27,
+		24,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">txtFile2</font></span>.<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">setenabled</font></span>(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">False</font></span>)"
+				"txtFile2.setenabled( <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">False</font></span> )"
 			],
 			[
 				"active",
@@ -785,7 +781,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				33
+				14
 			],
 			[
 				"visible",
@@ -801,13 +797,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"txtFile2.setenabled(False)"
+				"txtFile2.setenabled( False )"
 			]
 		]
 	],
 	[
-		69,
-		67,
+		25,
+		23,
 		[
 			[
 				"name",
@@ -823,7 +819,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				30
+				12
 			],
 			[
 				"visible",
@@ -844,8 +840,8 @@ aStepsTable = [
 		]
 	],
 	[
-		16,
-		14,
+		17,
+		15,
 		[
 			[
 				"name",
@@ -861,7 +857,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				9
+				10
 			],
 			[
 				"visible",
@@ -882,8 +878,8 @@ aStepsTable = [
 		]
 	],
 	[
-		53,
-		16,
+		28,
+		17,
 		[
 			[
 				"name",
@@ -899,7 +895,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				24
+				15
 			],
 			[
 				"visible",
@@ -920,8 +916,8 @@ aStepsTable = [
 		]
 	],
 	[
-		54,
-		53,
+		29,
+		28,
 		[
 			[
 				"name",
@@ -937,7 +933,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				24
+				15
 			],
 			[
 				"visible",
@@ -958,12 +954,12 @@ aStepsTable = [
 		]
 	],
 	[
-		84,
-		54,
+		31,
+		29,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFile</font></span> = Open File Dialog"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&nbsp;new&nbsp;QFileDialog(this.oView.win)</font></span>"
 			],
 			[
 				"active",
@@ -971,13 +967,11 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"new qfiledialog(this.oView.win) {
-cFile = getopenfilename(this.oView.win,"+char(34)+"Select the First File"+char(34)+","+char(34)+" "+char(34)+","+char(34)+"*.txt"+char(34)+")
-}"
+				" new QFileDialog(this.oView.win)"
 			],
 			[
 				"interactionid",
-				40
+				16
 			],
 			[
 				"visible",
@@ -993,13 +987,165 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the First File"+char(3
 			],
 			[
 				"plainname",
-				"cFile = Open File Dialog"
+				" new QFileDialog(this.oView.win)"
 			]
 		]
 	],
 	[
-		114,
-		54,
+		32,
+		29,
+		[
+			[
+				"name",
+				"{"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"{"
+			],
+			[
+				"interactionid",
+				17
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"{"
+			]
+		]
+	],
+	[
+		33,
+		32,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				17
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		35,
+		33,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFile</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">getOpenFileName(this.oView.win,&quot;Select&nbsp;the&nbsp;First&nbsp;File&quot;,&quot;&nbsp;&quot;,&quot;*.txt&quot;)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cFile = getOpenFileName(this.oView.win,"+char(34)+"Select the First File"+char(34)+","+char(34)+" "+char(34)+","+char(34)+"*.txt"+char(34)+")"
+			],
+			[
+				"interactionid",
+				18
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cFile = getOpenFileName(this.oView.win,"+char(34)+"Select the First File"+char(34)+","+char(34)+" "+char(34)+","+char(34)+"*.txt"+char(34)+")"
+			]
+		]
+	],
+	[
+		34,
+		32,
+		[
+			[
+				"name",
+				"}"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"}"
+			],
+			[
+				"interactionid",
+				17
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"}"
+			]
+		]
+	],
+	[
+		36,
+		29,
 		[
 			[
 				"name",
@@ -1015,7 +1161,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the First File"+char(3
 			],
 			[
 				"interactionid",
-				55
+				19
 			],
 			[
 				"visible",
@@ -1036,8 +1182,8 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the First File"+char(3
 		]
 	],
 	[
-		115,
-		114,
+		37,
+		36,
 		[
 			[
 				"name",
@@ -1053,7 +1199,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the First File"+char(3
 			],
 			[
 				"interactionid",
-				55
+				19
 			],
 			[
 				"visible",
@@ -1074,12 +1220,12 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the First File"+char(3
 		]
 	],
 	[
-		116,
-		115,
+		41,
+		37,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cString</font></span> = Read File <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFile</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cString</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">read(cFile)</font></span>"
 			],
 			[
 				"active",
@@ -1091,7 +1237,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the First File"+char(3
 			],
 			[
 				"interactionid",
-				56
+				20
 			],
 			[
 				"visible",
@@ -1107,13 +1253,13 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the First File"+char(3
 			],
 			[
 				"plainname",
-				"cString = Read File cFile"
+				"cString = read(cFile)"
 			]
 		]
 	],
 	[
-		132,
-		115,
+		42,
+		37,
 		[
 			[
 				"name",
@@ -1129,7 +1275,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the First File"+char(3
 			],
 			[
 				"interactionid",
-				62
+				21
 			],
 			[
 				"visible",
@@ -1150,8 +1296,8 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the First File"+char(3
 		]
 	],
 	[
-		133,
-		132,
+		43,
+		42,
 		[
 			[
 				"name",
@@ -1167,7 +1313,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the First File"+char(3
 			],
 			[
 				"interactionid",
-				62
+				21
 			],
 			[
 				"visible",
@@ -1188,12 +1334,12 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the First File"+char(3
 		]
 	],
 	[
-		138,
-		133,
+		45,
+		43,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">txtFile1</font></span>.<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">settext</font></span>(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFile</font></span>)"
+				"txtFile1.setText( <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFile</font></span> )"
 			],
 			[
 				"active",
@@ -1201,11 +1347,11 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the First File"+char(3
 			],
 			[
 				"code",
-				"txtFile1.settext(cFile)"
+				"txtFile1.setText(cFile)"
 			],
 			[
 				"interactionid",
-				65
+				22
 			],
 			[
 				"visible",
@@ -1221,17 +1367,17 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the First File"+char(3
 			],
 			[
 				"plainname",
-				"txtFile1.settext(cFile)"
+				"txtFile1.setText( cFile )"
 			]
 		]
 	],
 	[
-		136,
-		133,
+		46,
+		43,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">txtFile1Content</font></span>.<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">settext</font></span>(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cString&nbsp;</font></span>)"
+				"txtFile1Content.setText( <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cString</font></span> )"
 			],
 			[
 				"active",
@@ -1239,11 +1385,11 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the First File"+char(3
 			],
 			[
 				"code",
-				"txtFile1Content.settext(cString )"
+				"txtFile1Content.setText(cString)"
 			],
 			[
 				"interactionid",
-				64
+				23
 			],
 			[
 				"visible",
@@ -1259,13 +1405,13 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the First File"+char(3
 			],
 			[
 				"plainname",
-				"txtFile1Content.settext(cString )"
+				"txtFile1Content.setText( cString )"
 			]
 		]
 	],
 	[
-		134,
-		132,
+		44,
+		42,
 		[
 			[
 				"name",
@@ -1281,7 +1427,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the First File"+char(3
 			],
 			[
 				"interactionid",
-				62
+				21
 			],
 			[
 				"visible",
@@ -1302,8 +1448,8 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the First File"+char(3
 		]
 	],
 	[
-		118,
-		114,
+		38,
+		36,
 		[
 			[
 				"name",
@@ -1315,11 +1461,11 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the First File"+char(3
 			],
 			[
 				"code",
-				"Catch "
+				"catch "
 			],
 			[
 				"interactionid",
-				55
+				19
 			],
 			[
 				"visible",
@@ -1331,7 +1477,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the First File"+char(3
 			],
 			[
 				"steptype",
-				4
+				2
 			],
 			[
 				"plainname",
@@ -1340,8 +1486,8 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the First File"+char(3
 		]
 	],
 	[
-		119,
-		118,
+		39,
+		38,
 		[
 			[
 				"name",
@@ -1357,7 +1503,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the First File"+char(3
 			],
 			[
 				"interactionid",
-				55
+				19
 			],
 			[
 				"visible",
@@ -1378,8 +1524,8 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the First File"+char(3
 		]
 	],
 	[
-		120,
-		118,
+		40,
+		36,
 		[
 			[
 				"name",
@@ -1395,7 +1541,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the First File"+char(3
 			],
 			[
 				"interactionid",
-				55
+				19
 			],
 			[
 				"visible",
@@ -1416,8 +1562,8 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the First File"+char(3
 		]
 	],
 	[
-		58,
-		53,
+		30,
+		28,
 		[
 			[
 				"name",
@@ -1433,7 +1579,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the First File"+char(3
 			],
 			[
 				"interactionid",
-				24
+				15
 			],
 			[
 				"visible",
@@ -1454,8 +1600,8 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the First File"+char(3
 		]
 	],
 	[
-		60,
-		16,
+		47,
+		17,
 		[
 			[
 				"name",
@@ -1471,7 +1617,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the First File"+char(3
 			],
 			[
 				"interactionid",
-				27
+				24
 			],
 			[
 				"visible",
@@ -1492,8 +1638,8 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the First File"+char(3
 		]
 	],
 	[
-		61,
-		60,
+		48,
+		47,
 		[
 			[
 				"name",
@@ -1509,7 +1655,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the First File"+char(3
 			],
 			[
 				"interactionid",
-				27
+				24
 			],
 			[
 				"visible",
@@ -1530,12 +1676,12 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the First File"+char(3
 		]
 	],
 	[
-		122,
-		61,
+		50,
+		48,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFile</font></span> = Open File Dialog"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&nbsp;new&nbsp;QFileDialog(this.oView.win)</font></span>"
 			],
 			[
 				"active",
@@ -1543,13 +1689,11 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the First File"+char(3
 			],
 			[
 				"code",
-				"new qfiledialog(this.oView.win) {
-cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(34)+","+char(34)+" "+char(34)+","+char(34)+"*.txt"+char(34)+")
-}"
+				" new QFileDialog(this.oView.win)"
 			],
 			[
 				"interactionid",
-				58
+				25
 			],
 			[
 				"visible",
@@ -1565,13 +1709,165 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"plainname",
-				"cFile = Open File Dialog"
+				" new QFileDialog(this.oView.win)"
 			]
 		]
 	],
 	[
-		124,
-		61,
+		51,
+		48,
+		[
+			[
+				"name",
+				"{"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"{"
+			],
+			[
+				"interactionid",
+				26
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"{"
+			]
+		]
+	],
+	[
+		52,
+		51,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				26
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		54,
+		52,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFile</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">getOpenFileName(this.oView.win,&quot;Select&nbsp;the&nbsp;Second&nbsp;File&quot;,&quot;&nbsp;&quot;,&quot;*.txt&quot;)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cFile = getOpenFileName(this.oView.win,"+char(34)+"Select the Second File"+char(34)+","+char(34)+" "+char(34)+","+char(34)+"*.txt"+char(34)+")"
+			],
+			[
+				"interactionid",
+				27
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cFile = getOpenFileName(this.oView.win,"+char(34)+"Select the Second File"+char(34)+","+char(34)+" "+char(34)+","+char(34)+"*.txt"+char(34)+")"
+			]
+		]
+	],
+	[
+		53,
+		51,
+		[
+			[
+				"name",
+				"}"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"}"
+			],
+			[
+				"interactionid",
+				26
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"}"
+			]
+		]
+	],
+	[
+		55,
+		48,
 		[
 			[
 				"name",
@@ -1587,7 +1883,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"interactionid",
-				59
+				28
 			],
 			[
 				"visible",
@@ -1608,8 +1904,8 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 		]
 	],
 	[
-		125,
-		124,
+		56,
+		55,
 		[
 			[
 				"name",
@@ -1625,7 +1921,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"interactionid",
-				59
+				28
 			],
 			[
 				"visible",
@@ -1646,12 +1942,12 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 		]
 	],
 	[
-		126,
-		125,
+		60,
+		56,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cString</font></span> = Read File <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFile</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cString</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">read(cFile)</font></span>"
 			],
 			[
 				"active",
@@ -1663,7 +1959,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"interactionid",
-				60
+				29
 			],
 			[
 				"visible",
@@ -1679,13 +1975,13 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"plainname",
-				"cString = Read File cFile"
+				"cString = read(cFile)"
 			]
 		]
 	],
 	[
-		139,
-		125,
+		61,
+		56,
 		[
 			[
 				"name",
@@ -1701,7 +1997,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"interactionid",
-				66
+				30
 			],
 			[
 				"visible",
@@ -1722,8 +2018,8 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 		]
 	],
 	[
-		140,
-		139,
+		62,
+		61,
 		[
 			[
 				"name",
@@ -1739,7 +2035,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"interactionid",
-				66
+				30
 			],
 			[
 				"visible",
@@ -1760,12 +2056,12 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 		]
 	],
 	[
-		141,
-		140,
+		64,
+		62,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">txtFile2</font></span>.<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">settext</font></span>(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFile</font></span>)"
+				"txtFile2.setText( <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFile</font></span> )"
 			],
 			[
 				"active",
@@ -1773,11 +2069,11 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"code",
-				"txtFile2.settext(cFile)"
+				"txtFile2.setText(cFile)"
 			],
 			[
 				"interactionid",
-				67
+				31
 			],
 			[
 				"visible",
@@ -1793,17 +2089,17 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"plainname",
-				"txtFile2.settext(cFile)"
+				"txtFile2.setText( cFile )"
 			]
 		]
 	],
 	[
-		142,
-		140,
+		65,
+		62,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">txtFile2Content</font></span>.<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">settext</font></span>(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cString&nbsp;</font></span>)"
+				"txtFile2Content.setText( <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cString</font></span> )"
 			],
 			[
 				"active",
@@ -1811,11 +2107,11 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"code",
-				"txtFile2Content.settext(cString )"
+				"txtFile2Content.setText(cString)"
 			],
 			[
 				"interactionid",
-				68
+				32
 			],
 			[
 				"visible",
@@ -1831,13 +2127,13 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"plainname",
-				"txtFile2Content.settext(cString )"
+				"txtFile2Content.setText( cString )"
 			]
 		]
 	],
 	[
-		143,
-		139,
+		63,
+		61,
 		[
 			[
 				"name",
@@ -1853,7 +2149,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"interactionid",
-				66
+				30
 			],
 			[
 				"visible",
@@ -1874,8 +2170,8 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 		]
 	],
 	[
-		128,
-		124,
+		57,
+		55,
 		[
 			[
 				"name",
@@ -1887,11 +2183,11 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"code",
-				"Catch "
+				"catch "
 			],
 			[
 				"interactionid",
-				59
+				28
 			],
 			[
 				"visible",
@@ -1903,7 +2199,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"steptype",
-				4
+				2
 			],
 			[
 				"plainname",
@@ -1912,8 +2208,8 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 		]
 	],
 	[
-		129,
-		128,
+		58,
+		57,
 		[
 			[
 				"name",
@@ -1929,7 +2225,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"interactionid",
-				59
+				28
 			],
 			[
 				"visible",
@@ -1950,8 +2246,8 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 		]
 	],
 	[
-		130,
-		128,
+		59,
+		55,
 		[
 			[
 				"name",
@@ -1967,7 +2263,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"interactionid",
-				59
+				28
 			],
 			[
 				"visible",
@@ -1988,8 +2284,8 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 		]
 	],
 	[
-		65,
-		60,
+		49,
+		47,
 		[
 			[
 				"name",
@@ -2005,7 +2301,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"interactionid",
-				27
+				24
 			],
 			[
 				"visible",
@@ -2026,8 +2322,8 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 		]
 	],
 	[
-		46,
-		16,
+		66,
+		17,
 		[
 			[
 				"name",
@@ -2043,7 +2339,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"interactionid",
-				21
+				33
 			],
 			[
 				"visible",
@@ -2064,8 +2360,8 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 		]
 	],
 	[
-		47,
-		46,
+		67,
+		66,
 		[
 			[
 				"name",
@@ -2081,7 +2377,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"interactionid",
-				21
+				33
 			],
 			[
 				"visible",
@@ -2102,8 +2398,8 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 		]
 	],
 	[
-		48,
-		47,
+		69,
+		67,
 		[
 			[
 				"name",
@@ -2119,7 +2415,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"interactionid",
-				22
+				34
 			],
 			[
 				"visible",
@@ -2140,8 +2436,8 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 		]
 	],
 	[
-		49,
-		48,
+		70,
+		69,
 		[
 			[
 				"name",
@@ -2157,7 +2453,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"interactionid",
-				22
+				34
 			],
 			[
 				"visible",
@@ -2178,8 +2474,8 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 		]
 	],
 	[
-		152,
-		49,
+		72,
+		70,
 		[
 			[
 				"name",
@@ -2195,7 +2491,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"interactionid",
-				74
+				35
 			],
 			[
 				"visible",
@@ -2216,12 +2512,12 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 		]
 	],
 	[
-		145,
-		49,
+		73,
+		70,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFile1</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">txtFile1Content</font></span>.<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">toplaintext</font></span>(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFile1</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">txtFile1Content.toPlainText()</font></span>"
 			],
 			[
 				"active",
@@ -2229,11 +2525,11 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"code",
-				"cFile1 = txtFile1Content.toplaintext()"
+				"cFile1 = txtFile1Content.toPlainText()"
 			],
 			[
 				"interactionid",
-				69
+				36
 			],
 			[
 				"visible",
@@ -2249,17 +2545,17 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"plainname",
-				"cFile1 = txtFile1Content.toplaintext()"
+				"cFile1 = txtFile1Content.toPlainText()"
 			]
 		]
 	],
 	[
-		146,
-		49,
+		74,
+		70,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFile2</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">txtFile2Content</font></span>.<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">toplaintext</font></span>(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFile2</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">txtFile2Content.toPlainText()</font></span>"
 			],
 			[
 				"active",
@@ -2267,11 +2563,11 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"code",
-				"cFile2 = txtFile2Content.toplaintext()"
+				"cFile2 = txtFile2Content.toPlainText()"
 			],
 			[
 				"interactionid",
-				70
+				37
 			],
 			[
 				"visible",
@@ -2287,17 +2583,17 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"plainname",
-				"cFile2 = txtFile2Content.toplaintext()"
+				"cFile2 = txtFile2Content.toPlainText()"
 			]
 		]
 	],
 	[
-		147,
-		49,
+		75,
+		70,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aFile1</font></span> = Convert String to List, String : <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFile1</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aFile1</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">str2list(cFile1)</font></span>"
 			],
 			[
 				"active",
@@ -2309,7 +2605,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"interactionid",
-				71
+				38
 			],
 			[
 				"visible",
@@ -2325,17 +2621,17 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"plainname",
-				"aFile1 = Convert String to List, String : cFile1"
+				"aFile1 = str2list(cFile1)"
 			]
 		]
 	],
 	[
-		148,
-		49,
+		76,
+		70,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aFile2</font></span> = Convert String to List, String : <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFile2</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aFile2</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">str2list(cFile2)</font></span>"
 			],
 			[
 				"active",
@@ -2347,7 +2643,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"interactionid",
-				72
+				39
 			],
 			[
 				"visible",
@@ -2363,13 +2659,13 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"plainname",
-				"aFile2 = Convert String to List, String : cFile2"
+				"aFile2 = str2list(cFile2)"
 			]
 		]
 	],
 	[
-		149,
-		49,
+		77,
+		70,
 		[
 			[
 				"name",
@@ -2385,7 +2681,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"interactionid",
-				73
+				40
 			],
 			[
 				"visible",
@@ -2406,8 +2702,8 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 		]
 	],
 	[
-		150,
-		149,
+		78,
+		77,
 		[
 			[
 				"name",
@@ -2423,7 +2719,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"interactionid",
-				73
+				40
 			],
 			[
 				"visible",
@@ -2444,8 +2740,8 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 		]
 	],
 	[
-		154,
-		150,
+		80,
+		78,
 		[
 			[
 				"name",
@@ -2461,7 +2757,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"interactionid",
-				76
+				41
 			],
 			[
 				"visible",
@@ -2482,8 +2778,8 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 		]
 	],
 	[
-		156,
-		150,
+		81,
+		78,
 		[
 			[
 				"name",
@@ -2499,7 +2795,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"interactionid",
-				78
+				42
 			],
 			[
 				"visible",
@@ -2520,8 +2816,8 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 		]
 	],
 	[
-		157,
-		156,
+		82,
+		81,
 		[
 			[
 				"name",
@@ -2537,7 +2833,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"interactionid",
-				78
+				42
 			],
 			[
 				"visible",
@@ -2558,8 +2854,8 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 		]
 	],
 	[
-		159,
-		157,
+		84,
+		82,
 		[
 			[
 				"name",
@@ -2575,7 +2871,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"interactionid",
-				79
+				43
 			],
 			[
 				"visible",
@@ -2596,8 +2892,8 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 		]
 	],
 	[
-		158,
-		156,
+		83,
+		81,
 		[
 			[
 				"name",
@@ -2609,11 +2905,11 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"code",
-				"}"
+				"} "
 			],
 			[
 				"interactionid",
-				78
+				42
 			],
 			[
 				"visible",
@@ -2634,8 +2930,8 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 		]
 	],
 	[
-		151,
-		149,
+		79,
+		77,
 		[
 			[
 				"name",
@@ -2647,11 +2943,11 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"code",
-				"}"
+				"} "
 			],
 			[
 				"interactionid",
-				73
+				40
 			],
 			[
 				"visible",
@@ -2672,12 +2968,12 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 		]
 	],
 	[
-		161,
-		49,
+		85,
+		70,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">txtMerge</font></span>.<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">settext</font></span>(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cOutput</font></span>)"
+				"txtMerge.setText( <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cOutput</font></span> )"
 			],
 			[
 				"active",
@@ -2685,11 +2981,11 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"code",
-				"txtMerge.settext(cOutput)"
+				"txtMerge.setText(cOutput)"
 			],
 			[
 				"interactionid",
-				80
+				44
 			],
 			[
 				"visible",
@@ -2705,13 +3001,13 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"plainname",
-				"txtMerge.settext(cOutput)"
+				"txtMerge.setText( cOutput )"
 			]
 		]
 	],
 	[
-		50,
-		48,
+		71,
+		69,
 		[
 			[
 				"name",
@@ -2727,7 +3023,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"interactionid",
-				22
+				34
 			],
 			[
 				"visible",
@@ -2748,8 +3044,8 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 		]
 	],
 	[
-		51,
-		46,
+		68,
+		66,
 		[
 			[
 				"name",
@@ -2765,7 +3061,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"interactionid",
-				21
+				33
 			],
 			[
 				"visible",
@@ -2786,8 +3082,8 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 		]
 	],
 	[
-		162,
-		16,
+		86,
+		17,
 		[
 			[
 				"name",
@@ -2803,7 +3099,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"interactionid",
-				81
+				45
 			],
 			[
 				"visible",
@@ -2824,8 +3120,8 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 		]
 	],
 	[
-		163,
-		162,
+		87,
+		86,
 		[
 			[
 				"name",
@@ -2841,7 +3137,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"interactionid",
-				81
+				45
 			],
 			[
 				"visible",
@@ -2862,8 +3158,8 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 		]
 	],
 	[
-		164,
-		163,
+		89,
+		87,
 		[
 			[
 				"name",
@@ -2879,7 +3175,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"interactionid",
-				82
+				46
 			],
 			[
 				"visible",
@@ -2900,8 +3196,8 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 		]
 	],
 	[
-		165,
-		164,
+		90,
+		89,
 		[
 			[
 				"name",
@@ -2917,7 +3213,7 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"interactionid",
-				82
+				46
 			],
 			[
 				"visible",
@@ -2938,12 +3234,12 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 		]
 	],
 	[
-		169,
-		165,
+		92,
+		90,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cOutput</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">txtMerge</font></span>.<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">toplaintext</font></span>(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cOutput</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">txtMerge.toPlainText()</font></span>"
 			],
 			[
 				"active",
@@ -2951,11 +3247,11 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"code",
-				"cOutput = txtMerge.toplaintext()"
+				"cOutput = txtMerge.toPlainText()"
 			],
 			[
 				"interactionid",
-				84
+				47
 			],
 			[
 				"visible",
@@ -2971,17 +3267,17 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"plainname",
-				"cOutput = txtMerge.toplaintext()"
+				"cOutput = txtMerge.toPlainText()"
 			]
 		]
 	],
 	[
-		172,
-		165,
+		93,
+		90,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFileName</font></span> = Get Folder Dialog"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&nbsp;new&nbsp;QFileDialog(this.oView.win)</font></span>"
 			],
 			[
 				"active",
@@ -2989,13 +3285,11 @@ cFile = getopenfilename(this.oView.win,"+char(34)+"Select the Second File"+char(
 			],
 			[
 				"code",
-				"new qfiledialog(this.oView.win) {
-cFileName = getsavefilename(this.oView.win,"+char(34)+"Save File"+char(34)+","+char(34)+" "+char(34)+","+char(34)+"*.txt"+char(34)+")
-}"
+				" new QFileDialog(this.oView.win)"
 			],
 			[
 				"interactionid",
-				86
+				48
 			],
 			[
 				"visible",
@@ -3011,17 +3305,17 @@ cFileName = getsavefilename(this.oView.win,"+char(34)+"Save File"+char(34)+","+c
 			],
 			[
 				"plainname",
-				"cFileName = Get Folder Dialog"
+				" new QFileDialog(this.oView.win)"
 			]
 		]
 	],
 	[
-		173,
-		165,
+		94,
+		90,
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">trim(cFileName)&nbsp;!=&nbsp;NULL</font></span>"
+				"{"
 			],
 			[
 				"active",
@@ -3029,11 +3323,11 @@ cFileName = getsavefilename(this.oView.win,"+char(34)+"Save File"+char(34)+","+c
 			],
 			[
 				"code",
-				"if trim(cFileName) != NULL { "
+				"{"
 			],
 			[
 				"interactionid",
-				87
+				49
 			],
 			[
 				"visible",
@@ -3049,13 +3343,13 @@ cFileName = getsavefilename(this.oView.win,"+char(34)+"Save File"+char(34)+","+c
 			],
 			[
 				"plainname",
-				"If trim(cFileName) != NULL"
+				"{"
 			]
 		]
 	],
 	[
-		174,
-		173,
+		95,
+		94,
 		[
 			[
 				"name",
@@ -3071,7 +3365,7 @@ cFileName = getsavefilename(this.oView.win,"+char(34)+"Save File"+char(34)+","+c
 			],
 			[
 				"interactionid",
-				87
+				49
 			],
 			[
 				"visible",
@@ -3092,12 +3386,164 @@ cFileName = getsavefilename(this.oView.win,"+char(34)+"Save File"+char(34)+","+c
 		]
 	],
 	[
-		176,
-		174,
+		97,
+		95,
 		[
 			[
 				"name",
-				"Write File <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFileName</font></span> From String <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cOutput</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFileName</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">getSaveFileName(this.oView.win,&quot;Save&nbsp;File&quot;,&quot;&nbsp;&quot;,&quot;*.txt&quot;)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cFileName = getSaveFileName(this.oView.win,"+char(34)+"Save File"+char(34)+","+char(34)+" "+char(34)+","+char(34)+"*.txt"+char(34)+")"
+			],
+			[
+				"interactionid",
+				50
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cFileName = getSaveFileName(this.oView.win,"+char(34)+"Save File"+char(34)+","+char(34)+" "+char(34)+","+char(34)+"*.txt"+char(34)+")"
+			]
+		]
+	],
+	[
+		96,
+		94,
+		[
+			[
+				"name",
+				"}"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"}"
+			],
+			[
+				"interactionid",
+				49
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"}"
+			]
+		]
+	],
+	[
+		98,
+		90,
+		[
+			[
+				"name",
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">trim(cFileName)!&nbsp;=&nbsp;NULL</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"if trim(cFileName)! = NULL { "
+			],
+			[
+				"interactionid",
+				51
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"If trim(cFileName)! = NULL"
+			]
+		]
+	],
+	[
+		99,
+		98,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				51
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		101,
+		99,
+		[
+			[
+				"name",
+				"write(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFileName,cOutput</font></span>)"
 			],
 			[
 				"active",
@@ -3109,7 +3555,7 @@ cFileName = getsavefilename(this.oView.win,"+char(34)+"Save File"+char(34)+","+c
 			],
 			[
 				"interactionid",
-				88
+				52
 			],
 			[
 				"visible",
@@ -3125,17 +3571,17 @@ cFileName = getsavefilename(this.oView.win,"+char(34)+"Save File"+char(34)+","+c
 			],
 			[
 				"plainname",
-				"Write File cFileName From String cOutput"
+				"write(cFileName,cOutput)"
 			]
 		]
 	],
 	[
-		177,
-		174,
+		102,
+		99,
 		[
 			[
 				"name",
-				"Show Message - Title <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;Great&quot;</font></span> Message <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;Operation&nbsp;done!&quot;</font></span>"
+				"msginfo(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;Great&quot;,&quot;Operation&nbsp;done!&quot;</font></span>)"
 			],
 			[
 				"active",
@@ -3147,7 +3593,7 @@ cFileName = getsavefilename(this.oView.win,"+char(34)+"Save File"+char(34)+","+c
 			],
 			[
 				"interactionid",
-				89
+				53
 			],
 			[
 				"visible",
@@ -3163,13 +3609,13 @@ cFileName = getsavefilename(this.oView.win,"+char(34)+"Save File"+char(34)+","+c
 			],
 			[
 				"plainname",
-				"Show Message - Title "+char(34)+"Great"+char(34)+" Message "+char(34)+"Operation done!"+char(34)+""
+				"msginfo("+char(34)+"Great"+char(34)+","+char(34)+"Operation done!"+char(34)+")"
 			]
 		]
 	],
 	[
-		175,
-		173,
+		100,
+		98,
 		[
 			[
 				"name",
@@ -3181,11 +3627,11 @@ cFileName = getsavefilename(this.oView.win,"+char(34)+"Save File"+char(34)+","+c
 			],
 			[
 				"code",
-				"}"
+				"} "
 			],
 			[
 				"interactionid",
-				87
+				51
 			],
 			[
 				"visible",
@@ -3206,8 +3652,8 @@ cFileName = getsavefilename(this.oView.win,"+char(34)+"Save File"+char(34)+","+c
 		]
 	],
 	[
-		166,
-		164,
+		91,
+		89,
 		[
 			[
 				"name",
@@ -3223,7 +3669,7 @@ cFileName = getsavefilename(this.oView.win,"+char(34)+"Save File"+char(34)+","+c
 			],
 			[
 				"interactionid",
-				82
+				46
 			],
 			[
 				"visible",
@@ -3244,8 +3690,8 @@ cFileName = getsavefilename(this.oView.win,"+char(34)+"Save File"+char(34)+","+c
 		]
 	],
 	[
-		167,
-		162,
+		88,
+		86,
 		[
 			[
 				"name",
@@ -3261,7 +3707,7 @@ cFileName = getsavefilename(this.oView.win,"+char(34)+"Save File"+char(34)+","+c
 			],
 			[
 				"interactionid",
-				81
+				45
 			],
 			[
 				"visible",
@@ -3282,8 +3728,8 @@ cFileName = getsavefilename(this.oView.win,"+char(34)+"Save File"+char(34)+","+c
 		]
 	],
 	[
-		73,
-		16,
+		103,
+		17,
 		[
 			[
 				"name",
@@ -3299,7 +3745,7 @@ cFileName = getsavefilename(this.oView.win,"+char(34)+"Save File"+char(34)+","+c
 			],
 			[
 				"interactionid",
-				34
+				54
 			],
 			[
 				"visible",
@@ -3320,8 +3766,8 @@ cFileName = getsavefilename(this.oView.win,"+char(34)+"Save File"+char(34)+","+c
 		]
 	],
 	[
-		74,
-		73,
+		104,
+		103,
 		[
 			[
 				"name",
@@ -3337,7 +3783,7 @@ cFileName = getsavefilename(this.oView.win,"+char(34)+"Save File"+char(34)+","+c
 			],
 			[
 				"interactionid",
-				34
+				54
 			],
 			[
 				"visible",
@@ -3358,8 +3804,8 @@ cFileName = getsavefilename(this.oView.win,"+char(34)+"Save File"+char(34)+","+c
 		]
 	],
 	[
-		75,
-		74,
+		106,
+		104,
 		[
 			[
 				"name",
@@ -3375,7 +3821,7 @@ cFileName = getsavefilename(this.oView.win,"+char(34)+"Save File"+char(34)+","+c
 			],
 			[
 				"interactionid",
-				35
+				55
 			],
 			[
 				"visible",
@@ -3396,8 +3842,8 @@ cFileName = getsavefilename(this.oView.win,"+char(34)+"Save File"+char(34)+","+c
 		]
 	],
 	[
-		76,
-		75,
+		107,
+		106,
 		[
 			[
 				"name",
@@ -3413,7 +3859,7 @@ cFileName = getsavefilename(this.oView.win,"+char(34)+"Save File"+char(34)+","+c
 			],
 			[
 				"interactionid",
-				35
+				55
 			],
 			[
 				"visible",
@@ -3434,12 +3880,12 @@ cFileName = getsavefilename(this.oView.win,"+char(34)+"Save File"+char(34)+","+c
 		]
 	],
 	[
-		80,
-		76,
+		109,
+		107,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">win</font></span>.<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">close</font></span>(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+				"win.close( <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span> )"
 			],
 			[
 				"active",
@@ -3451,7 +3897,7 @@ cFileName = getsavefilename(this.oView.win,"+char(34)+"Save File"+char(34)+","+c
 			],
 			[
 				"interactionid",
-				37
+				56
 			],
 			[
 				"visible",
@@ -3467,13 +3913,13 @@ cFileName = getsavefilename(this.oView.win,"+char(34)+"Save File"+char(34)+","+c
 			],
 			[
 				"plainname",
-				"win.close()"
+				"win.close(  )"
 			]
 		]
 	],
 	[
-		77,
-		75,
+		108,
+		106,
 		[
 			[
 				"name",
@@ -3489,7 +3935,7 @@ cFileName = getsavefilename(this.oView.win,"+char(34)+"Save File"+char(34)+","+c
 			],
 			[
 				"interactionid",
-				35
+				55
 			],
 			[
 				"visible",
@@ -3510,8 +3956,8 @@ cFileName = getsavefilename(this.oView.win,"+char(34)+"Save File"+char(34)+","+c
 		]
 	],
 	[
-		78,
-		73,
+		105,
+		103,
 		[
 			[
 				"name",
@@ -3527,7 +3973,7 @@ cFileName = getsavefilename(this.oView.win,"+char(34)+"Save File"+char(34)+","+c
 			],
 			[
 				"interactionid",
-				34
+				54
 			],
 			[
 				"visible",
@@ -3546,6 +3992,158 @@ cFileName = getsavefilename(this.oView.win,"+char(34)+"Save File"+char(34)+","+c
 				"End of Function"
 			]
 		]
+	],
+	[
+		18,
+		15,
+		[
+			[
+				"name",
+				" Private "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"private"
+			],
+			[
+				"interactionid",
+				10
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				4
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				" Private "
+			]
+		]
+	],
+	[
+		19,
+		18,
+		[
+			[
+				"name",
+				" Attributes "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				10
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				5
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				" Attributes "
+			]
+		]
+	],
+	[
+		20,
+		18,
+		[
+			[
+				"name",
+				" Methods "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				10
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				6
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				" Methods "
+			]
+		]
+	],
+	[
+		21,
+		18,
+		[
+			[
+				"name",
+				" End of class "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				10
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				7
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				" End of class "
+			]
+		]
 	]
 ]
 
@@ -3554,401 +4152,449 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"16/02/2018",
-		"12:35:19",
+		"10/05/2024",
+		"23:35:28",
 		""
 	],
 	[
 		2,
 		1,
 		"load",
-		"16/02/2018",
-		"12:37:12",
-		"file;;_RV_;;MergeView;;_RV_;;"
+		"10/05/2024",
+		"23:35:28",
+		"file;;_RV_;;lightguilib.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		3,
 		1,
-		"ifstatement",
-		"16/02/2018",
-		"12:37:36",
-		"condition;;_RV_;;isMainSourceFile();;_RV_;;"
+		"load",
+		"10/05/2024",
+		"23:35:28",
+		"file;;_RV_;;MergeView.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"import",
-		"16/02/2018",
-		"12:37:52",
+		"10/05/2024",
+		"23:35:28",
 		"value;;_RV_;;System.GUI;;_RV_;;"
 	],
 	[
 		5,
 		1,
-		"newobj",
-		"16/02/2018",
-		"12:38:15",
-		"value;;_RV_;;;;_RV_;;value2;;_RV_;;App;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"ifstatement",
+		"10/05/2024",
+		"23:35:28",
+		"condition;;_RV_;;isMainSourceFile();;_RV_;;"
 	],
 	[
 		6,
 		1,
-		"callfunc",
-		"16/02/2018",
-		"12:38:26",
-		"name;;_RV_;;StyleFusion;;_RV_;;lparameters;;_RV_;;0;;_RV_;;parameters;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;"
+		"newobj",
+		"10/05/2024",
+		"23:35:28",
+		"value;;_RV_;;;;_RV_;;value2;;_RV_;;App;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"callfunc",
-		"16/02/2018",
-		"12:38:44",
-		"name;;_RV_;;open_window;;_RV_;;lparameters;;_RV_;;2;;_RV_;;parameters;;_RV_;;:MergeController;;_RV_;;loutput;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;"
+		"10/05/2024",
+		"23:35:28",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;StyleFusion;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"callfunc",
-		"16/02/2018",
-		"12:38:51",
-		"name;;_RV_;;exec;;_RV_;;lparameters;;_RV_;;0;;_RV_;;parameters;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;"
+		"10/05/2024",
+		"23:35:28",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;openWindow;;_RV_;;parameters;;_RV_;;:MergeController;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		9,
 		1,
-		"class",
-		"16/02/2018",
-		"12:39:13",
-		"value;;_RV_;;MergeController;;_RV_;;value2;;_RV_;;WindowsControllerParent;;_RV_;;value3;;_RV_;;0;;_RV_;;"
+		"callfunc",
+		"10/05/2024",
+		"23:35:28",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;exec;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		10,
 		1,
+		"class",
+		"10/05/2024",
+		"23:35:28",
+		"value;;_RV_;;MergeController;;_RV_;;value2;;_RV_;;WindowsControllerParent;;_RV_;;value3;;_RV_;;2;;_RV_;;"
+	],
+	[
+		11,
+		1,
 		"newobj",
-		"16/02/2018",
-		"12:39:33",
+		"10/05/2024",
+		"23:35:28",
 		"value;;_RV_;;oView;;_RV_;;value2;;_RV_;;MergeView;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
+	],
+	[
+		12,
+		1,
+		"accessobject",
+		"10/05/2024",
+		"23:35:28",
+		"value;;_RV_;;oView;;_RV_;;"
+	],
+	[
+		13,
+		1,
+		"callmethod",
+		"10/05/2024",
+		"23:35:28",
+		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;txtFile1;;_RV_;;name;;_RV_;;setenabled;;_RV_;;parameters;;_RV_;;False;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		14,
+		1,
+		"callmethod",
+		"10/05/2024",
+		"23:35:28",
+		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;txtFile2;;_RV_;;name;;_RV_;;setenabled;;_RV_;;parameters;;_RV_;;False;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		15,
+		1,
+		"func",
+		"10/05/2024",
+		"23:35:28",
+		"name;;_RV_;;SelectFirst;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+	],
+	[
+		16,
+		1,
+		"freetyping",
+		"10/05/2024",
+		"23:35:28",
+		"value;;_RV_;; new QFileDialog(this.oView.win);;_RV_;;"
+	],
+	[
+		17,
+		1,
+		"braces",
+		"10/05/2024",
+		"23:35:28",
+		""
+	],
+	[
+		18,
+		1,
+		"assignment",
+		"10/05/2024",
+		"23:35:28",
+		"leftside;;_RV_;;cFile;;_RV_;;rightside;;_RV_;;getOpenFileName(this.oView.win,"+char(34)+"Select the First File"+char(34)+","+char(34)+" "+char(34)+","+char(34)+"*.txt"+char(34)+");;_RV_;;"
+	],
+	[
+		19,
+		1,
+		"trycatch",
+		"10/05/2024",
+		"23:35:28",
+		""
+	],
+	[
+		20,
+		1,
+		"assignment",
+		"10/05/2024",
+		"23:35:28",
+		"leftside;;_RV_;;cString;;_RV_;;rightside;;_RV_;;read(cFile);;_RV_;;"
 	],
 	[
 		21,
 		1,
-		"func",
-		"07/01/2022",
-		"17:48:39",
-		"name;;_RV_;;Merge;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"accessobject",
+		"10/05/2024",
+		"23:35:28",
+		"value;;_RV_;;oView;;_RV_;;"
 	],
 	[
 		22,
 		1,
-		"accessobject",
-		"07/01/2022",
-		"17:48:39",
-		"value;;_RV_;;oView;;_RV_;;"
+		"callmethod",
+		"10/05/2024",
+		"23:35:28",
+		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;txtFile1;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;cFile;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		23,
+		1,
+		"callmethod",
+		"10/05/2024",
+		"23:35:28",
+		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;txtFile1Content;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;cString;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"func",
-		"07/01/2022",
-		"17:49:39",
-		"name;;_RV_;;SelectFirst;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"10/05/2024",
+		"23:35:28",
+		"name;;_RV_;;SelectSecond;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+	],
+	[
+		25,
+		1,
+		"freetyping",
+		"10/05/2024",
+		"23:35:28",
+		"value;;_RV_;; new QFileDialog(this.oView.win);;_RV_;;"
+	],
+	[
+		26,
+		1,
+		"braces",
+		"10/05/2024",
+		"23:35:28",
+		""
 	],
 	[
 		27,
 		1,
-		"func",
-		"07/01/2022",
-		"17:49:45",
-		"name;;_RV_;;SelectSecond;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"10/05/2024",
+		"23:35:28",
+		"leftside;;_RV_;;cFile;;_RV_;;rightside;;_RV_;;getOpenFileName(this.oView.win,"+char(34)+"Select the Second File"+char(34)+","+char(34)+" "+char(34)+","+char(34)+"*.txt"+char(34)+");;_RV_;;"
+	],
+	[
+		28,
+		1,
+		"trycatch",
+		"10/05/2024",
+		"23:35:28",
+		""
+	],
+	[
+		29,
+		1,
+		"assignment",
+		"10/05/2024",
+		"23:35:28",
+		"leftside;;_RV_;;cString;;_RV_;;rightside;;_RV_;;read(cFile);;_RV_;;"
 	],
 	[
 		30,
 		1,
 		"accessobject",
-		"07/01/2022",
-		"17:51:33",
+		"10/05/2024",
+		"23:35:28",
 		"value;;_RV_;;oView;;_RV_;;"
+	],
+	[
+		31,
+		1,
+		"callmethod",
+		"10/05/2024",
+		"23:35:28",
+		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;txtFile2;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;cFile;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		32,
 		1,
-		"qlineeditclass",
-		"07/01/2022",
-		"17:51:56",
-		"value;;_RV_;;txtFile1;;_RV_;;value2;;_RV_;;182;;_RV_;;value3;;_RV_;;False;;_RV_;;value4;;_RV_;;;;_RV_;;"
+		"callmethod",
+		"10/05/2024",
+		"23:35:28",
+		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;txtFile2Content;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;cString;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		33,
 		1,
-		"qlineeditclass",
-		"07/01/2022",
-		"17:52:10",
-		"value;;_RV_;;txtFile2;;_RV_;;value2;;_RV_;;182;;_RV_;;value3;;_RV_;;False;;_RV_;;value4;;_RV_;;;;_RV_;;"
+		"func",
+		"10/05/2024",
+		"23:35:28",
+		"name;;_RV_;;Merge;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		34,
 		1,
-		"func",
-		"07/01/2022",
-		"17:53:07",
-		"name;;_RV_;;CloseApp;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"accessobject",
+		"10/05/2024",
+		"23:35:28",
+		"value;;_RV_;;oView;;_RV_;;"
 	],
 	[
 		35,
 		1,
-		"accessobject",
-		"07/01/2022",
-		"17:53:07",
-		"value;;_RV_;;oView;;_RV_;;"
+		"assignment",
+		"10/05/2024",
+		"23:35:28",
+		"leftside;;_RV_;;cOutput;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
+	],
+	[
+		36,
+		1,
+		"assignment",
+		"10/05/2024",
+		"23:35:28",
+		"leftside;;_RV_;;cFile1;;_RV_;;rightside;;_RV_;;txtFile1Content.toPlainText();;_RV_;;"
 	],
 	[
 		37,
 		1,
-		"qwidgetclass",
-		"07/01/2022",
-		"17:53:22",
-		"value;;_RV_;;win;;_RV_;;value2;;_RV_;;17;;_RV_;;value3;;_RV_;;;;_RV_;;value4;;_RV_;;;;_RV_;;"
+		"assignment",
+		"10/05/2024",
+		"23:35:28",
+		"leftside;;_RV_;;cFile2;;_RV_;;rightside;;_RV_;;txtFile2Content.toPlainText();;_RV_;;"
+	],
+	[
+		38,
+		1,
+		"assignment",
+		"10/05/2024",
+		"23:35:28",
+		"leftside;;_RV_;;aFile1;;_RV_;;rightside;;_RV_;;str2list(cFile1);;_RV_;;"
+	],
+	[
+		39,
+		1,
+		"assignment",
+		"10/05/2024",
+		"23:35:28",
+		"leftside;;_RV_;;aFile2;;_RV_;;rightside;;_RV_;;str2list(cFile2);;_RV_;;"
 	],
 	[
 		40,
 		1,
-		"openfiledialog",
-		"07/01/2022",
-		"17:56:52",
-		"value;;_RV_;;this.oView.win;;_RV_;;value2;;_RV_;;"+char(34)+"Select the First File"+char(34)+";;_RV_;;value3;;_RV_;;"+char(34)+" "+char(34)+";;_RV_;;value4;;_RV_;;"+char(34)+"*.txt"+char(34)+";;_RV_;;value5;;_RV_;;cFile;;_RV_;;"
+		"forloop",
+		"10/05/2024",
+		"23:35:28",
+		"start;;_RV_;;t = 1;;_RV_;;to;;_RV_;;len(aFile1);;_RV_;;step;;_RV_;;1;;_RV_;;"
+	],
+	[
+		41,
+		1,
+		"freetyping",
+		"10/05/2024",
+		"23:35:28",
+		"value;;_RV_;;cOutput += aFile1[t]+WindowsNL();;_RV_;;"
+	],
+	[
+		42,
+		1,
+		"ifstatement",
+		"10/05/2024",
+		"23:35:28",
+		"condition;;_RV_;;t < len(aFile2);;_RV_;;"
+	],
+	[
+		43,
+		1,
+		"freetyping",
+		"10/05/2024",
+		"23:35:28",
+		"value;;_RV_;;cOutput += aFile2[t]+WindowsNL();;_RV_;;"
+	],
+	[
+		44,
+		1,
+		"callmethod",
+		"10/05/2024",
+		"23:35:28",
+		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;txtMerge;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;cOutput;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		45,
+		1,
+		"func",
+		"10/05/2024",
+		"23:35:28",
+		"name;;_RV_;;savethefile;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+	],
+	[
+		46,
+		1,
+		"accessobject",
+		"10/05/2024",
+		"23:35:28",
+		"value;;_RV_;;oView;;_RV_;;"
+	],
+	[
+		47,
+		1,
+		"assignment",
+		"10/05/2024",
+		"23:35:28",
+		"leftside;;_RV_;;cOutput;;_RV_;;rightside;;_RV_;;txtMerge.toPlainText();;_RV_;;"
+	],
+	[
+		48,
+		1,
+		"freetyping",
+		"10/05/2024",
+		"23:35:28",
+		"value;;_RV_;; new QFileDialog(this.oView.win);;_RV_;;"
+	],
+	[
+		49,
+		1,
+		"braces",
+		"10/05/2024",
+		"23:35:28",
+		""
+	],
+	[
+		50,
+		1,
+		"assignment",
+		"10/05/2024",
+		"23:35:28",
+		"leftside;;_RV_;;cFileName;;_RV_;;rightside;;_RV_;;getSaveFileName(this.oView.win,"+char(34)+"Save File"+char(34)+","+char(34)+" "+char(34)+","+char(34)+"*.txt"+char(34)+");;_RV_;;"
+	],
+	[
+		51,
+		1,
+		"ifstatement",
+		"10/05/2024",
+		"23:35:28",
+		"condition;;_RV_;;trim(cFileName)! = NULL;;_RV_;;"
+	],
+	[
+		52,
+		1,
+		"callfunc",
+		"10/05/2024",
+		"23:35:28",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;write;;_RV_;;parameters;;_RV_;;cFileName,cOutput;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		53,
+		1,
+		"callfunc",
+		"10/05/2024",
+		"23:35:28",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;msginfo;;_RV_;;parameters;;_RV_;;"+char(34)+"Great"+char(34)+","+char(34)+"Operation done!"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		54,
+		1,
+		"func",
+		"10/05/2024",
+		"23:35:28",
+		"name;;_RV_;;CloseApp;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		55,
 		1,
-		"trycatch",
-		"07/01/2022",
-		"18:02:46",
-		""
+		"accessobject",
+		"10/05/2024",
+		"23:35:28",
+		"value;;_RV_;;oView;;_RV_;;"
 	],
 	[
 		56,
 		1,
-		"file_read",
-		"07/01/2022",
-		"18:00:09",
-		"value;;_RV_;;cFile;;_RV_;;value2;;_RV_;;cString;;_RV_;;"
-	],
-	[
-		58,
-		1,
-		"openfiledialog",
-		"07/01/2022",
-		"17:56:52",
-		"value;;_RV_;;this.oView.win;;_RV_;;value2;;_RV_;;"+char(34)+"Select the Second File"+char(34)+";;_RV_;;value3;;_RV_;;"+char(34)+" "+char(34)+";;_RV_;;value4;;_RV_;;"+char(34)+"*.txt"+char(34)+";;_RV_;;value5;;_RV_;;cFile;;_RV_;;"
-	],
-	[
-		59,
-		1,
-		"trycatch",
-		"07/01/2022",
-		"18:02:46",
-		""
-	],
-	[
-		60,
-		1,
-		"file_read",
-		"07/01/2022",
-		"18:00:09",
-		"value;;_RV_;;cFile;;_RV_;;value2;;_RV_;;cString;;_RV_;;"
-	],
-	[
-		62,
-		1,
-		"accessobject",
-		"07/01/2022",
-		"18:04:37",
-		"value;;_RV_;;oView;;_RV_;;"
-	],
-	[
-		64,
-		1,
-		"qtexteditclass",
-		"07/01/2022",
-		"18:00:25",
-		"value;;_RV_;;txtFile1Content;;_RV_;;value2;;_RV_;;265;;_RV_;;value3;;_RV_;;cString ;;_RV_;;value4;;_RV_;;;;_RV_;;"
-	],
-	[
-		65,
-		1,
-		"qlineeditclass",
-		"07/01/2022",
-		"18:04:58",
-		"value;;_RV_;;txtFile1;;_RV_;;value2;;_RV_;;235;;_RV_;;value3;;_RV_;;cFile;;_RV_;;value4;;_RV_;;;;_RV_;;"
-	],
-	[
-		66,
-		1,
-		"accessobject",
-		"07/01/2022",
-		"18:04:37",
-		"value;;_RV_;;oView;;_RV_;;"
-	],
-	[
-		67,
-		1,
-		"qlineeditclass",
-		"07/01/2022",
-		"18:04:58",
-		"value;;_RV_;;txtFile2;;_RV_;;value2;;_RV_;;235;;_RV_;;value3;;_RV_;;cFile;;_RV_;;value4;;_RV_;;;;_RV_;;"
-	],
-	[
-		68,
-		1,
-		"qtexteditclass",
-		"07/01/2022",
-		"18:00:25",
-		"value;;_RV_;;txtFile2Content;;_RV_;;value2;;_RV_;;265;;_RV_;;value3;;_RV_;;cString ;;_RV_;;value4;;_RV_;;;;_RV_;;"
-	],
-	[
-		69,
-		1,
-		"qtexteditclass",
-		"07/01/2022",
-		"18:12:25",
-		"value;;_RV_;;txtFile1Content;;_RV_;;value2;;_RV_;;315;;_RV_;;value3;;_RV_;;;;_RV_;;value4;;_RV_;;cFile1;;_RV_;;"
-	],
-	[
-		70,
-		1,
-		"qtexteditclass",
-		"07/01/2022",
-		"18:12:32",
-		"value;;_RV_;;txtFile2Content;;_RV_;;value2;;_RV_;;315;;_RV_;;value3;;_RV_;;;;_RV_;;value4;;_RV_;;cFile2;;_RV_;;"
-	],
-	[
-		71,
-		1,
-		"string2list",
-		"07/01/2022",
-		"18:12:56",
-		"value;;_RV_;;cFile1;;_RV_;;value2;;_RV_;;aFile1;;_RV_;;"
-	],
-	[
-		72,
-		1,
-		"string2list",
-		"07/01/2022",
-		"18:13:01",
-		"value;;_RV_;;cFile2;;_RV_;;value2;;_RV_;;aFile2;;_RV_;;"
-	],
-	[
-		73,
-		1,
-		"forloop",
-		"07/01/2022",
-		"18:13:13",
-		"start;;_RV_;;t = 1;;_RV_;;to;;_RV_;;len(aFile1);;_RV_;;step;;_RV_;;1;;_RV_;;"
-	],
-	[
-		74,
-		1,
-		"assignment",
-		"07/01/2022",
-		"18:13:25",
-		"leftside;;_RV_;;cOutput;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
-	],
-	[
-		76,
-		1,
-		"freetyping",
-		"07/01/2022",
-		"18:13:48",
-		"value;;_RV_;;cOutput += aFile1[t]+WindowsNL();;_RV_;;"
-	],
-	[
-		78,
-		1,
-		"ifstatement",
-		"07/01/2022",
-		"18:14:00",
-		"condition;;_RV_;;t < len(aFile2);;_RV_;;"
-	],
-	[
-		79,
-		1,
-		"freetyping",
-		"07/01/2022",
-		"18:13:48",
-		"value;;_RV_;;cOutput += aFile2[t]+WindowsNL();;_RV_;;"
-	],
-	[
-		80,
-		1,
-		"qtexteditclass",
-		"07/01/2022",
-		"18:14:31",
-		"value;;_RV_;;txtMerge;;_RV_;;value2;;_RV_;;265;;_RV_;;value3;;_RV_;;cOutput;;_RV_;;value4;;_RV_;;;;_RV_;;"
-	],
-	[
-		81,
-		1,
-		"func",
-		"07/01/2022",
-		"18:17:02",
-		"name;;_RV_;;savethefile;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
-	],
-	[
-		82,
-		1,
-		"accessobject",
-		"07/01/2022",
-		"18:17:02",
-		"value;;_RV_;;oView;;_RV_;;"
-	],
-	[
-		84,
-		1,
-		"qtexteditclass",
-		"07/01/2022",
-		"18:17:46",
-		"value;;_RV_;;txtMerge;;_RV_;;value2;;_RV_;;315;;_RV_;;value3;;_RV_;;;;_RV_;;value4;;_RV_;;cOutput;;_RV_;;"
-	],
-	[
-		86,
-		1,
-		"savefiledialog",
-		"07/01/2022",
-		"18:18:27",
-		"value;;_RV_;;this.oView.win;;_RV_;;value2;;_RV_;;"+char(34)+"Save File"+char(34)+";;_RV_;;value3;;_RV_;;"+char(34)+" "+char(34)+";;_RV_;;value4;;_RV_;;"+char(34)+"*.txt"+char(34)+";;_RV_;;value5;;_RV_;;cFileName;;_RV_;;"
-	],
-	[
-		87,
-		1,
-		"ifstatement",
-		"07/01/2022",
-		"18:18:42",
-		"condition;;_RV_;;trim(cFileName) != NULL;;_RV_;;"
-	],
-	[
-		88,
-		1,
-		"file_write",
-		"07/01/2022",
-		"18:18:59",
-		"value;;_RV_;;cFileName;;_RV_;;value2;;_RV_;;cOutput;;_RV_;;"
-	],
-	[
-		89,
-		1,
-		"showmessage",
-		"07/01/2022",
-		"18:20:27",
-		"value;;_RV_;;"+char(34)+"Great"+char(34)+";;_RV_;;value2;;_RV_;;"+char(34)+"Operation done!"+char(34)+";;_RV_;;"
-	],
-	[
-		90,
-		1,
-		"load",
-		"07/01/2022",
-		"18:21:20",
-		"file;;_RV_;;lightguilib.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"callmethod",
+		"10/05/2024",
+		"23:35:28",
+		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;win;;_RV_;;name;;_RV_;;close;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	]
 ]
 
