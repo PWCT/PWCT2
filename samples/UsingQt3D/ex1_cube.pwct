@@ -693,7 +693,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oRootEntity</font></span> = New Object <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">QEntity</font></span>(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oContainer</font></span>)"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oRootEntity</font></span> = New Object <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">QEntity</font></span>(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">NULL</font></span>)"
 			],
 			[
 				"active",
@@ -701,7 +701,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"oRootEntity = new QEntity(oContainer)"
+				"oRootEntity = new QEntity(NULL)"
 			],
 			[
 				"interactionid",
@@ -721,7 +721,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"oRootEntity = New Object QEntity(oContainer)"
+				"oRootEntity = New Object QEntity(NULL)"
 			]
 		]
 	],
@@ -2948,7 +2948,7 @@ aInteractionsTable = [
 		"newobj",
 		"27/08/2021",
 		"08:51:09",
-		"value;;_RV_;;oRootEntity;;_RV_;;value2;;_RV_;;QEntity;;_RV_;;value3;;_RV_;;oContainer;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;2;;_RV_;;"
+		"value;;_RV_;;oRootEntity;;_RV_;;value2;;_RV_;;QEntity;;_RV_;;value3;;_RV_;;NULL;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		8,

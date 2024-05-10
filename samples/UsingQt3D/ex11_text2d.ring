@@ -11,7 +11,7 @@ oApp = new QApp
 		)
 	}
 	oContainer = oWidget.createWindowContainer(oView,oWidget,0)
-	oRootEntity = new QEntity(oContainer)
+	oRootEntity = new QEntity(NULL)
 	oView.defaultframegraph().setclearcolor(
 		new QColor() {
 			setRGB(100,250,150,255)
