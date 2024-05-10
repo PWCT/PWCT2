@@ -2123,6 +2123,15 @@ return true
 			aIDs = oModel.oStepsTreeModel.ChildrenIDs(nStepID)
 			nDestStepID = oView.oStepsTree.GetIDByObj(oDroppedItem)
 			if std_find(aIDs, nDestStepID) return ok
+		# Check if they have the same parent and dest. is above source directly 
+			if oModel.getStepParent(nStepID) = oModel.getStepParent(nDestStepID)
+				nParentID = oModel.getStepParent(nStepID)
+				aChildren = oModel.oStepsTreeModel.ChildrenOneLevel(nParentID)
+				if find(aChildren,nDestStepID) = find(aChildren,nStepID) - 1
+					oView.oStepsTree.SetCurrentItem(oDroppedItem,0)
+					oDroppedItem = oItem 
+				ok
+			ok
 		# Cut & Paste 
 			if cutStepsAction()
 				oView.oStepsTree.SetCurrentItem(oDroppedItem,0)
