@@ -17,7 +17,7 @@ class GotoLineController from WindowsControllerParent
 
 	func GotoLineAction
 		cFind = oView.oSearchValue.Text()	
-		nLine = 0 + cFind 
+		nLine = NumOrZero(cFind) 
 		if nLine = 0 { return }
 		cCode = ""
 		aTree = Parent().oModel.oStepsTreeModel.GetData()
