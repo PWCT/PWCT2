@@ -109,13 +109,13 @@ class FormDesigner_QWidget from QWidget
 		if nCol = 1 {
 			switch nRow {
 				case 0 	# x
-					oSubWindow.move(0+cValue,oSubWindow.y())
+					oSubWindow.move(NumOrZero(cValue),oSubWindow.y())
 				case 1 	# y
-					oSubWindow.move(oSubWindow.x(),0+cValue)
+					oSubWindow.move(oSubWindow.x(),NumOrZero(cValue))
 				case 2	# width
-					oSubWindow.resize(0+cValue,oSubWindow.height())
+					oSubWindow.resize(NumOrZero(cValue),oSubWindow.height())
 				case 3 	# height
-					oSubWindow.resize(oSubWindow.width(),0+cValue)
+					oSubWindow.resize(oSubWindow.width(),NumOrZero(cValue))
 				case 4  	# Title
 					setWindowTitle(cValue)
 					oDesigner.oView.oSub {
@@ -244,7 +244,6 @@ class FormDesigner_QWidget from QWidget
 		# Start drawing from the center of the Mouse Cursor
 			nX = oDesigner.oView.oFilter.getglobalx() + nFixX
 			ny = oDesigner.oView.oFilter.getglobaly() + nFixY
-
 		oDesigner.oView.oLabelSelect.raise()
 		oDesigner.oView.oLabelSelect.move(nX,nY)
 		oDesigner.oView.oLabelSelect.resize(1,1)
@@ -290,14 +289,10 @@ class FormDesigner_QWidget from QWidget
 			if oDesigner.HasParent() {
 				top -= oDesigner.oView.win.parentwidget().y()
 				left -= oDesigner.oView.win.parentwidget().x()
-
-				# Fixed this bug: https://steamcommunity.com/app/1953110/discussions/0/3784750917888477960/
-				# Where we move PWCT main window down then draw button
+				# Where we move RNOTE main window down then draw button
 				top -= oDesigner.oView.win.parentwidget().parentwidget().y()
 				left -= oDesigner.oView.win.parentwidget().parentwidget().x()
-
 			}
-
 		width = max(nX,nX2) - min(nX,nX2)
 		height = max(nY,nY2) - min(nY,nY2)
 		return [left,top,width,height]

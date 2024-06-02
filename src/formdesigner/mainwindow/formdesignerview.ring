@@ -7,13 +7,13 @@
 
 package formdesigner
 
-class myfddesktop
+class FDDesktop
 
 	func width 
-		return 1500
+		return 1400
+
 	func height 
 		return 600
-
 
 
 Class FormDesignerView from WindowsViewParent
@@ -33,8 +33,7 @@ Class FormDesignerView from WindowsViewParent
 
 	oDesignDock
 
-	//oDesktop = new QDesktopWidget()
-oDesktop = new myfddesktop
+	oDesktop = new FDDesktop
 
 	lUseWebAssemblyMEMFS = ! isWebAssembly()
 
@@ -697,11 +696,7 @@ oDesktop = new myfddesktop
 		oScroll = new qScrollArea(null) {
 			setWidget(oToolBox)
 			if not isMobile() {
-				if T_LAYOUTDIRECTION {
-					setMiniMumWidth(this.oDesktop.Width()*0.12)
-				else 
-					setMiniMumWidth(this.oDesktop.Width()*0.11)
-				}
+				setMiniMumWidth(this.oDesktop.Width()*0.12)
 			}
 			setwidgetresizable(True)
 		}
