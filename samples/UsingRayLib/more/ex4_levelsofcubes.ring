@@ -1,4 +1,4 @@
-#1 Sample : Top-Down View - Many Levels of Cubes
+# Sample : Top-Down View - Many Levels of Cubes
 # 2018, Mahmoud Fayed <msfclipper@yahoo.com>
 # 2020, port to RayLib, Ilir Liburn <iliribur@gmail.com>  
 
@@ -9,19 +9,16 @@ load "opengl21lib.ring"	# RingOpenGL  Library
 
 TITLE = "Sample : Top-Down View - Many Levels of Cubes"
 
-GPU_FAST = true  // acceleration
+GPU_FAST = TRUE  // acceleration
 FPS = 60
 
 screenWidth = 1280
 screenHeight = 650
 
-SetTraceLogLevel(LOG_NONE)
-
-#SetConfigFlags(FLAG_FULLSCREEN_MODE) // | FLAG_VSYNC_HINT)
 InitWindow(screenWidth, screenHeight, TITLE)
 
 font = LoadFont("resources/pirulen.ttf")
-background = LoadTexture("resources/back.jpg")
+background = LoadTexture("resources/back.png")
 
 if GPU_FAST
 	image    = LoadImage("resources/cubicmap.png")        
@@ -30,8 +27,8 @@ if GPU_FAST
 	model    = LoadModelFromMesh(mesh)
 	setmodelmaterialtexture(model,0,MAP_DIFFUSE,texture)
 else
-	texture = LoadTexture("resources/n1.jpg")
-	mesh = GenMeshCube(1, 1, 1)
+	texture = LoadTexture("resources/n1.png")
+	mesh = GenMeshCube_2(1, 1, 1)
 	cube = LoadModelFromMesh(mesh)
 	setModelmaterialtexture(cube, 0, 0, texture)
 ok
@@ -54,13 +51,11 @@ camera = Camera3D(
 	0, 1.0, 0,
 	88, CAMERA_PERSPECTIVE)
 
-SetCameraMode(camera, CAMERA_CUSTOM) 
-
-SetTargetFPS(60)
+SetTargetFPS(FPS)
 
 while !WindowShouldClose()
 
-	UpdateCamera(camera)
+	UpdateCamera(camera,CAMERA_ORBITAL)
 
 	BeginDrawing()
 
@@ -79,7 +74,7 @@ if GPU_FAST
 		for i = 1 to 5
 			DrawModel(model, cubePosition, 1.0, WHITE)
 			cubePosition.y += 1
-			cubePosition.z - = 8
+			cubePosition.z -= 8
 		next
 else
 		cubePosition.y = 5.5

@@ -2,7 +2,7 @@
 
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
-cNaturalLanguageName     = 'English'
+cNaturalLanguageName     = 'english'
 nStepsID                 = 33		
 nInteractionsID          = 27
 
@@ -55,7 +55,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# ===================================================================#
+				"#===================================================================#
 "
 			],
 			[
@@ -94,7 +94,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# Based on Original Sample from RayLib (https://www.raylib.com/)
+				"#Based on Original Sample from RayLib (https://www.raylib.com/)
 "
 			],
 			[
@@ -133,7 +133,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# Ported to RingRayLib by Ring Team
+				"#Ported to RingRayLib by Ring Team
 "
 			],
 			[
@@ -172,7 +172,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# ===================================================================#
+				"#===================================================================#
 "
 			],
 			[
@@ -1268,216 +1268,216 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"27/08/2021",
-		"08:50:10",
+		"10/09/2024",
+		"16:14:43",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:50:10",
+		"10/09/2024",
+		"16:14:43",
 		"value;;_RV_;;===================================================================#;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:50:10",
+		"10/09/2024",
+		"16:14:43",
 		"value;;_RV_;;Based on Original Sample from RayLib (https://www.raylib.com/);;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:50:10",
+		"10/09/2024",
+		"16:14:43",
 		"value;;_RV_;;Ported to RingRayLib by Ring Team;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:50:10",
+		"10/09/2024",
+		"16:14:43",
 		"value;;_RV_;;===================================================================#;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"load",
-		"27/08/2021",
-		"08:50:10",
+		"10/09/2024",
+		"16:14:43",
 		"file;;_RV_;;raylib.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:50:10",
+		"10/09/2024",
+		"16:14:43",
 		"leftside;;_RV_;;screenWidth;;_RV_;;rightside;;_RV_;;800;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:50:10",
+		"10/09/2024",
+		"16:14:43",
 		"leftside;;_RV_;;screenHeight;;_RV_;;rightside;;_RV_;;450;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:50:10",
+		"10/09/2024",
+		"16:14:43",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;InitWindow;;_RV_;;parameters;;_RV_;;screenWidth,screenHeight,"+char(34)+"raylib [audio] example - sound loading and playing"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:50:10",
+		"10/09/2024",
+		"16:14:43",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;InitAudioDevice;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:50:10",
+		"10/09/2024",
+		"16:14:43",
 		"leftside;;_RV_;;fxWav;;_RV_;;rightside;;_RV_;;LoadSound("+char(34)+"sound.wav"+char(34)+");;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:50:10",
+		"10/09/2024",
+		"16:14:43",
 		"leftside;;_RV_;;fxOgg;;_RV_;;rightside;;_RV_;;LoadSound("+char(34)+"tanatana.ogg"+char(34)+");;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:50:10",
+		"10/09/2024",
+		"16:14:43",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetTargetFPS;;_RV_;;parameters;;_RV_;;60;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"whileloop",
-		"27/08/2021",
-		"08:50:10",
+		"10/09/2024",
+		"16:14:43",
 		"condition;;_RV_;;!WindowShouldClose();;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"ifstatement",
-		"27/08/2021",
-		"08:50:10",
+		"10/09/2024",
+		"16:14:43",
 		"condition;;_RV_;;IsKeyPressed(KEY_SPACE);;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:50:10",
+		"10/09/2024",
+		"16:14:43",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;PlaySound;;_RV_;;parameters;;_RV_;;fxWav;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"ifstatement",
-		"27/08/2021",
-		"08:50:10",
+		"10/09/2024",
+		"16:14:43",
 		"condition;;_RV_;;IsKeyPressed(KEY_ENTER);;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:50:10",
+		"10/09/2024",
+		"16:14:43",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;PlaySound;;_RV_;;parameters;;_RV_;;fxOgg;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:50:10",
+		"10/09/2024",
+		"16:14:43",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:50:10",
+		"10/09/2024",
+		"16:14:43",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;ClearBackground;;_RV_;;parameters;;_RV_;;RAYWHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:50:10",
+		"10/09/2024",
+		"16:14:43",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"Press SPACE to PLAY the WAV sound!"+char(34)+",200,180,20,LIGHTGRAY;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:50:10",
+		"10/09/2024",
+		"16:14:43",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"Press ENTER to PLAY the OGG sound!"+char(34)+",200,220,20,LIGHTGRAY;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:50:10",
+		"10/09/2024",
+		"16:14:43",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:50:10",
+		"10/09/2024",
+		"16:14:43",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadSound;;_RV_;;parameters;;_RV_;;fxWav;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:50:10",
+		"10/09/2024",
+		"16:14:43",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadSound;;_RV_;;parameters;;_RV_;;fxOgg;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:50:10",
+		"10/09/2024",
+		"16:14:43",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;CloseAudioDevice;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:50:10",
+		"10/09/2024",
+		"16:14:43",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;CloseWindow;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	]
 ]

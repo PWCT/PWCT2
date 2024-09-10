@@ -19,6 +19,7 @@ texPlane      = LoadTexture("plane.png")
 framebuffer   = LoadRenderTexture(192, 192)
 
 // Model loading
+
 model = LoadModel("plane.obj")     // Load OBJ model
 
 texture   = LoadTexture("plane_diffuse.png")                         // Set map diffuse texture
@@ -29,7 +30,7 @@ GenTextureMipmaps(texture)
 camera = Camera3D(	0, 60, -120,
 			0, 12,    0,
 			0,  1,    0, 
-			30,  0 )
+			30,  CAMERA_PERSPECTIVE )
 
 pitch = 0.0
 roll  = 0.0
@@ -118,12 +119,12 @@ while (!WindowShouldClose())    // Detect window close button or ESC key
 	//----------------------------------------------------------------------------------
 	// Draw
 	//----------------------------------------------------------------------------------
-	
+
 	BeginDrawing()
 
 	ClearBackground(RAYWHITE)
 
-	// Draw framebuffer texture (Ahrs Display)
+	// Draw framebuffer texture (AHRS Display)
 
 	centerX = framebuffer.texture.width  /2
 	centerY = framebuffer.texture.height /2
@@ -151,7 +152,7 @@ while (!WindowShouldClose())    // Detect window close button or ESC key
 	EndTextureMode()
 
 
-	// Draw 3D model (recomended to draw 3D always before 2D)
+	// Draw 3D model (recommended to draw 3D always before 2D)
 	BeginMode3D(camera)
 
 	DrawModel(model, Vector3( 0, 6.0, 0 ), 1.0, WHITE)   // Draw 3d model with texture

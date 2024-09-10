@@ -32,13 +32,11 @@ for i = 1 to  MAX_COLUMNS
 	colors[i] = RAYLibColor(GetRandomValue(20, 255), GetRandomValue(10, 55), 30, 255 )
 next
 
-SetCameraMode(camera, CAMERA_FIRST_PERSON)
-
 SetTargetFPS(60)                     
 
 while !WindowShouldClose()
 
-	UpdateCamera(camera)
+	UpdateCamera(camera,CAMERA_FIRST_PERSON)
 	BeginDrawing()
 
 	ClearBackground(RAYWHITE)

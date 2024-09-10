@@ -6,10 +6,6 @@
 #--------------------------------------------------------------
 load "raylib.ring"
 
-
-
-
-
 func main
     #---------------------------------------------------------------------------------
     # Initialization
@@ -72,11 +68,8 @@ func main
           EndDrawing()
         
     end
-
-   
   
     CloseWindow()        # Close window and OpenGL context
-  
    
 class player
      position=Vector2(0,0)

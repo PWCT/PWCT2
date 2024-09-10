@@ -2,9 +2,9 @@
 
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
-cNaturalLanguageName     = 'English'
-nStepsID                 = 39		
-nInteractionsID          = 37
+cNaturalLanguageName     = 'english'
+nStepsID                 = 38		
+nInteractionsID          = 36
 
 aStepsTable = [
 	[
@@ -55,7 +55,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# ===================================================================#
+				"#===================================================================#
 "
 			],
 			[
@@ -94,7 +94,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# Copyright (c) 2015 Ramon Santamaria (@raysan5)
+				"#Copyright (c) 2015 Ramon Santamaria (@raysan5)
 "
 			],
 			[
@@ -133,7 +133,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# Ported to RingRayLib by Ring Team
+				"#Ported to RingRayLib by Ring Team
 "
 			],
 			[
@@ -172,7 +172,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# ===================================================================#
+				"#===================================================================#
 "
 			],
 			[
@@ -355,7 +355,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Camera3D(16.0,14.0,16.0,0.0,0.0,0.0,0.0,1.0,0.0,45.0,0)</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Camera3D(16.0,14.0,16.0,0.0,0.0,0.0,0.0,1.0,0.0,45.0,CAMERA_PERSPECTIVE)</font></span>"
 			],
 			[
 				"active",
@@ -363,7 +363,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"camera = Camera3D(16.0,14.0,16.0,0.0,0.0,0.0,0.0,1.0,0.0,45.0,0)"
+				"camera = Camera3D(16.0,14.0,16.0,0.0,0.0,0.0,0.0,1.0,0.0,45.0,CAMERA_PERSPECTIVE)"
 			],
 			[
 				"interactionid",
@@ -383,7 +383,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"camera = Camera3D(16.0,14.0,16.0,0.0,0.0,0.0,0.0,1.0,0.0,45.0,0)"
+				"camera = Camera3D(16.0,14.0,16.0,0.0,0.0,0.0,0.0,1.0,0.0,45.0,CAMERA_PERSPECTIVE)"
 			]
 		]
 	],
@@ -697,7 +697,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"SetCameraMode(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera,CAMERA_ORBITAL</font></span>)"
+				"SetTargetFPS(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">60</font></span>)"
 			],
 			[
 				"active",
@@ -705,7 +705,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"SetCameraMode(camera,CAMERA_ORBITAL)"
+				"SetTargetFPS(60)"
 			],
 			[
 				"interactionid",
@@ -725,50 +725,12 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"SetCameraMode(camera,CAMERA_ORBITAL)"
+				"SetTargetFPS(60)"
 			]
 		]
 	],
 	[
 		20,
-		1,
-		[
-			[
-				"name",
-				"SetTargetFPS(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">60</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"SetTargetFPS(60)"
-			],
-			[
-				"interactionid",
-				20
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"SetTargetFPS(60)"
-			]
-		]
-	],
-	[
-		21,
 		1,
 		[
 			[
@@ -785,7 +747,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				21
+				20
 			],
 			[
 				"visible",
@@ -806,8 +768,8 @@ aStepsTable = [
 		]
 	],
 	[
-		22,
 		21,
+		20,
 		[
 			[
 				"name",
@@ -823,7 +785,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				21
+				20
 			],
 			[
 				"visible",
@@ -844,12 +806,12 @@ aStepsTable = [
 		]
 	],
 	[
-		24,
-		22,
+		23,
+		21,
 		[
 			[
 				"name",
-				"UpdateCamera(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera</font></span>)"
+				"UpdateCamera(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera,CAMERA_ORBITAL</font></span>)"
 			],
 			[
 				"active",
@@ -857,7 +819,45 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"UpdateCamera(camera)"
+				"UpdateCamera(camera,CAMERA_ORBITAL)"
+			],
+			[
+				"interactionid",
+				21
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"UpdateCamera(camera,CAMERA_ORBITAL)"
+			]
+		]
+	],
+	[
+		24,
+		21,
+		[
+			[
+				"name",
+				"BeginDrawing(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"BeginDrawing()"
 			],
 			[
 				"interactionid",
@@ -877,17 +877,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"UpdateCamera(camera)"
+				"BeginDrawing()"
 			]
 		]
 	],
 	[
 		25,
-		22,
+		21,
 		[
 			[
 				"name",
-				"BeginDrawing(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+				"ClearBackground(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">RAYWHITE</font></span>)"
 			],
 			[
 				"active",
@@ -895,7 +895,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"BeginDrawing()"
+				"ClearBackground(RAYWHITE)"
 			],
 			[
 				"interactionid",
@@ -915,17 +915,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"BeginDrawing()"
+				"ClearBackground(RAYWHITE)"
 			]
 		]
 	],
 	[
 		26,
-		22,
+		21,
 		[
 			[
 				"name",
-				"ClearBackground(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">RAYWHITE</font></span>)"
+				"BeginMode3D(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera</font></span>)"
 			],
 			[
 				"active",
@@ -933,7 +933,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"ClearBackground(RAYWHITE)"
+				"BeginMode3D(camera)"
 			],
 			[
 				"interactionid",
@@ -953,17 +953,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"ClearBackground(RAYWHITE)"
+				"BeginMode3D(camera)"
 			]
 		]
 	],
 	[
 		27,
-		22,
+		21,
 		[
 			[
 				"name",
-				"BeginMode3D(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera</font></span>)"
+				"DrawModel(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">model,mapPosition,1.0,WHITE</font></span>)"
 			],
 			[
 				"active",
@@ -971,7 +971,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"BeginMode3D(camera)"
+				"DrawModel(model,mapPosition,1.0,WHITE)"
 			],
 			[
 				"interactionid",
@@ -991,17 +991,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"BeginMode3D(camera)"
+				"DrawModel(model,mapPosition,1.0,WHITE)"
 			]
 		]
 	],
 	[
 		28,
-		22,
+		21,
 		[
 			[
 				"name",
-				"DrawModel(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">model,mapPosition,1.0,WHITE</font></span>)"
+				"EndMode3D(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
 			],
 			[
 				"active",
@@ -1009,7 +1009,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"DrawModel(model,mapPosition,1.0,WHITE)"
+				"EndMode3D()"
 			],
 			[
 				"interactionid",
@@ -1029,17 +1029,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"DrawModel(model,mapPosition,1.0,WHITE)"
+				"EndMode3D()"
 			]
 		]
 	],
 	[
 		29,
-		22,
+		21,
 		[
 			[
 				"name",
-				"EndMode3D(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+				"DrawTextureEx(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cubicmap,Vector2(screenWidth-cubicmap.width*4-20,20),0.0,4.0,WHITE</font></span>)"
 			],
 			[
 				"active",
@@ -1047,7 +1047,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"EndMode3D()"
+				"DrawTextureEx(cubicmap,Vector2(screenWidth-cubicmap.width*4-20,20),0.0,4.0,WHITE)"
 			],
 			[
 				"interactionid",
@@ -1067,17 +1067,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"EndMode3D()"
+				"DrawTextureEx(cubicmap,Vector2(screenWidth-cubicmap.width*4-20,20),0.0,4.0,WHITE)"
 			]
 		]
 	],
 	[
 		30,
-		22,
+		21,
 		[
 			[
 				"name",
-				"DrawTextureEx(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cubicmap,Vector2(screenWidth-cubicmap.width*4-20,20),0.0,4.0,WHITE</font></span>)"
+				"DrawRectangleLines(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">screenWidth-cubicmap.width*4-20,20,cubicmap.width*4,cubicmap.height*4,GREEN</font></span>)"
 			],
 			[
 				"active",
@@ -1085,7 +1085,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"DrawTextureEx(cubicmap,Vector2(screenWidth-cubicmap.width*4-20,20),0.0,4.0,WHITE)"
+				"DrawRectangleLines(screenWidth-cubicmap.width*4-20,20,cubicmap.width*4,cubicmap.height*4,GREEN)"
 			],
 			[
 				"interactionid",
@@ -1105,17 +1105,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"DrawTextureEx(cubicmap,Vector2(screenWidth-cubicmap.width*4-20,20),0.0,4.0,WHITE)"
+				"DrawRectangleLines(screenWidth-cubicmap.width*4-20,20,cubicmap.width*4,cubicmap.height*4,GREEN)"
 			]
 		]
 	],
 	[
 		31,
-		22,
+		21,
 		[
 			[
 				"name",
-				"DrawRectangleLines(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">screenWidth-cubicmap.width*4-20,20,cubicmap.width*4,cubicmap.height*4,GREEN</font></span>)"
+				"DrawText(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;cubicmap&nbsp;image&nbsp;used&nbsp;to&quot;,658,90,10,GRAY</font></span>)"
 			],
 			[
 				"active",
@@ -1123,7 +1123,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"DrawRectangleLines(screenWidth-cubicmap.width*4-20,20,cubicmap.width*4,cubicmap.height*4,GREEN)"
+				"DrawText("+char(34)+"cubicmap image used to"+char(34)+",658,90,10,GRAY)"
 			],
 			[
 				"interactionid",
@@ -1143,17 +1143,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"DrawRectangleLines(screenWidth-cubicmap.width*4-20,20,cubicmap.width*4,cubicmap.height*4,GREEN)"
+				"DrawText("+char(34)+"cubicmap image used to"+char(34)+",658,90,10,GRAY)"
 			]
 		]
 	],
 	[
 		32,
-		22,
+		21,
 		[
 			[
 				"name",
-				"DrawText(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;cubicmap&nbsp;image&nbsp;used&nbsp;to&quot;,658,90,10,GRAY</font></span>)"
+				"DrawText(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;generate&nbsp;map&nbsp;3d&nbsp;model&quot;,658,104,10,GRAY</font></span>)"
 			],
 			[
 				"active",
@@ -1161,7 +1161,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"DrawText("+char(34)+"cubicmap image used to"+char(34)+",658,90,10,GRAY)"
+				"DrawText("+char(34)+"generate map 3d model"+char(34)+",658,104,10,GRAY)"
 			],
 			[
 				"interactionid",
@@ -1181,17 +1181,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"DrawText("+char(34)+"cubicmap image used to"+char(34)+",658,90,10,GRAY)"
+				"DrawText("+char(34)+"generate map 3d model"+char(34)+",658,104,10,GRAY)"
 			]
 		]
 	],
 	[
 		33,
-		22,
+		21,
 		[
 			[
 				"name",
-				"DrawText(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;generate&nbsp;map&nbsp;3d&nbsp;model&quot;,658,104,10,GRAY</font></span>)"
+				"DrawFPS(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">10,10</font></span>)"
 			],
 			[
 				"active",
@@ -1199,7 +1199,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"DrawText("+char(34)+"generate map 3d model"+char(34)+",658,104,10,GRAY)"
+				"DrawFPS(10,10)"
 			],
 			[
 				"interactionid",
@@ -1219,17 +1219,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"DrawText("+char(34)+"generate map 3d model"+char(34)+",658,104,10,GRAY)"
+				"DrawFPS(10,10)"
 			]
 		]
 	],
 	[
 		34,
-		22,
+		21,
 		[
 			[
 				"name",
-				"DrawFPS(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">10,10</font></span>)"
+				"EndDrawing(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
 			],
 			[
 				"active",
@@ -1237,7 +1237,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"DrawFPS(10,10)"
+				"EndDrawing()"
 			],
 			[
 				"interactionid",
@@ -1257,51 +1257,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"DrawFPS(10,10)"
+				"EndDrawing()"
 			]
 		]
 	],
 	[
-		35,
 		22,
-		[
-			[
-				"name",
-				"EndDrawing(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"EndDrawing()"
-			],
-			[
-				"interactionid",
-				33
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"EndDrawing()"
-			]
-		]
-	],
-	[
-		23,
-		21,
+		20,
 		[
 			[
 				"name",
@@ -1317,7 +1279,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				21
+				20
 			],
 			[
 				"visible",
@@ -1338,7 +1300,7 @@ aStepsTable = [
 		]
 	],
 	[
-		36,
+		35,
 		1,
 		[
 			[
@@ -1352,6 +1314,44 @@ aStepsTable = [
 			[
 				"code",
 				"UnloadTexture(cubicmap)"
+			],
+			[
+				"interactionid",
+				33
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"UnloadTexture(cubicmap)"
+			]
+		]
+	],
+	[
+		36,
+		1,
+		[
+			[
+				"name",
+				"UnloadTexture(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">texture</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"UnloadTexture(texture)"
 			],
 			[
 				"interactionid",
@@ -1371,7 +1371,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"UnloadTexture(cubicmap)"
+				"UnloadTexture(texture)"
 			]
 		]
 	],
@@ -1381,7 +1381,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"UnloadTexture(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">texture</font></span>)"
+				"UnloadModel(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">model</font></span>)"
 			],
 			[
 				"active",
@@ -1389,7 +1389,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"UnloadTexture(texture)"
+				"UnloadModel(model)"
 			],
 			[
 				"interactionid",
@@ -1409,50 +1409,12 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"UnloadTexture(texture)"
+				"UnloadModel(model)"
 			]
 		]
 	],
 	[
 		38,
-		1,
-		[
-			[
-				"name",
-				"UnloadModel(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">model</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"UnloadModel(model)"
-			],
-			[
-				"interactionid",
-				36
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"UnloadModel(model)"
-			]
-		]
-	],
-	[
-		39,
 		1,
 		[
 			[
@@ -1469,7 +1431,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				37
+				36
 			],
 			[
 				"visible",
@@ -1496,296 +1458,288 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"27/08/2021",
-		"08:49:23",
+		"10/09/2024",
+		"16:10:24",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:49:23",
+		"10/09/2024",
+		"16:10:24",
 		"value;;_RV_;;===================================================================#;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:49:23",
+		"10/09/2024",
+		"16:10:24",
 		"value;;_RV_;;Copyright (c) 2015 Ramon Santamaria (@raysan5);;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:49:23",
+		"10/09/2024",
+		"16:10:24",
 		"value;;_RV_;;Ported to RingRayLib by Ring Team;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:49:23",
+		"10/09/2024",
+		"16:10:24",
 		"value;;_RV_;;===================================================================#;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"load",
-		"27/08/2021",
-		"08:49:23",
+		"10/09/2024",
+		"16:10:24",
 		"file;;_RV_;;raylib.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:23",
+		"10/09/2024",
+		"16:10:24",
 		"leftside;;_RV_;;screenWidth;;_RV_;;rightside;;_RV_;;800;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:23",
+		"10/09/2024",
+		"16:10:24",
 		"leftside;;_RV_;;screenHeight;;_RV_;;rightside;;_RV_;;450;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:23",
+		"10/09/2024",
+		"16:10:24",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;InitWindow;;_RV_;;parameters;;_RV_;;screenWidth,screenHeight,"+char(34)+"raylib [models] example - cubesmap loading and drawing"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:23",
-		"leftside;;_RV_;;camera;;_RV_;;rightside;;_RV_;;Camera3D(16.0,14.0,16.0,0.0,0.0,0.0,0.0,1.0,0.0,45.0,0);;_RV_;;"
+		"10/09/2024",
+		"16:10:24",
+		"leftside;;_RV_;;camera;;_RV_;;rightside;;_RV_;;Camera3D(16.0,14.0,16.0,0.0,0.0,0.0,0.0,1.0,0.0,45.0,CAMERA_PERSPECTIVE);;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:23",
+		"10/09/2024",
+		"16:10:24",
 		"leftside;;_RV_;;image;;_RV_;;rightside;;_RV_;;LoadImage("+char(34)+"cubicmap.png"+char(34)+");;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:23",
+		"10/09/2024",
+		"16:10:24",
 		"leftside;;_RV_;;cubicmap;;_RV_;;rightside;;_RV_;;LoadTextureFromImage(image);;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:23",
+		"10/09/2024",
+		"16:10:24",
 		"leftside;;_RV_;;mesh;;_RV_;;rightside;;_RV_;;GenMeshCubicmap(image,Vector3(1.0,1.0,1.0));;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:23",
+		"10/09/2024",
+		"16:10:24",
 		"leftside;;_RV_;;model;;_RV_;;rightside;;_RV_;;LoadModelFromMesh(mesh);;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:23",
+		"10/09/2024",
+		"16:10:24",
 		"leftside;;_RV_;;texture;;_RV_;;rightside;;_RV_;;LoadTexture("+char(34)+"cubicmap_atlas.png"+char(34)+");;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:23",
+		"10/09/2024",
+		"16:10:24",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setmodelmaterialtexture;;_RV_;;parameters;;_RV_;;model,0,MAP_DIFFUSE,texture;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:23",
+		"10/09/2024",
+		"16:10:24",
 		"leftside;;_RV_;;mapPosition;;_RV_;;rightside;;_RV_;;Vector3(-16.0,0.0,-8.0);;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:23",
+		"10/09/2024",
+		"16:10:24",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadImage;;_RV_;;parameters;;_RV_;;image;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:23",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetCameraMode;;_RV_;;parameters;;_RV_;;camera,CAMERA_ORBITAL;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:10:24",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetTargetFPS;;_RV_;;parameters;;_RV_;;60;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		20,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:23",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetTargetFPS;;_RV_;;parameters;;_RV_;;60;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"whileloop",
+		"10/09/2024",
+		"16:10:24",
+		"condition;;_RV_;;!WindowShouldClose();;_RV_;;"
 	],
 	[
 		21,
 		1,
-		"whileloop",
-		"27/08/2021",
-		"08:49:23",
-		"condition;;_RV_;;!WindowShouldClose();;_RV_;;"
+		"callfunc",
+		"10/09/2024",
+		"16:10:24",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UpdateCamera;;_RV_;;parameters;;_RV_;;camera,CAMERA_ORBITAL;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:23",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UpdateCamera;;_RV_;;parameters;;_RV_;;camera;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:10:24",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:23",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"10/09/2024",
+		"16:10:24",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;ClearBackground;;_RV_;;parameters;;_RV_;;RAYWHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:23",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;ClearBackground;;_RV_;;parameters;;_RV_;;RAYWHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:10:24",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginMode3D;;_RV_;;parameters;;_RV_;;camera;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:23",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginMode3D;;_RV_;;parameters;;_RV_;;camera;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:10:24",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawModel;;_RV_;;parameters;;_RV_;;model,mapPosition,1.0,WHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:23",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawModel;;_RV_;;parameters;;_RV_;;model,mapPosition,1.0,WHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:10:24",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndMode3D;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:23",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndMode3D;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"10/09/2024",
+		"16:10:24",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawTextureEx;;_RV_;;parameters;;_RV_;;cubicmap,Vector2(screenWidth-cubicmap.width*4-20,20),0.0,4.0,WHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:23",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawTextureEx;;_RV_;;parameters;;_RV_;;cubicmap,Vector2(screenWidth-cubicmap.width*4-20,20),0.0,4.0,WHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:10:24",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawRectangleLines;;_RV_;;parameters;;_RV_;;screenWidth-cubicmap.width*4-20,20,cubicmap.width*4,cubicmap.height*4,GREEN;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:23",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawRectangleLines;;_RV_;;parameters;;_RV_;;screenWidth-cubicmap.width*4-20,20,cubicmap.width*4,cubicmap.height*4,GREEN;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:10:24",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"cubicmap image used to"+char(34)+",658,90,10,GRAY;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		30,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:23",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"cubicmap image used to"+char(34)+",658,90,10,GRAY;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:10:24",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"generate map 3d model"+char(34)+",658,104,10,GRAY;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:23",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"generate map 3d model"+char(34)+",658,104,10,GRAY;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:10:24",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawFPS;;_RV_;;parameters;;_RV_;;10,10;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		32,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:23",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawFPS;;_RV_;;parameters;;_RV_;;10,10;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:10:24",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		33,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:23",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"10/09/2024",
+		"16:10:24",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadTexture;;_RV_;;parameters;;_RV_;;cubicmap;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		34,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:23",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadTexture;;_RV_;;parameters;;_RV_;;cubicmap;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:10:24",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadTexture;;_RV_;;parameters;;_RV_;;texture;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		35,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:23",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadTexture;;_RV_;;parameters;;_RV_;;texture;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:10:24",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadModel;;_RV_;;parameters;;_RV_;;model;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		36,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:23",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadModel;;_RV_;;parameters;;_RV_;;model;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
-	],
-	[
-		37,
-		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:23",
+		"10/09/2024",
+		"16:10:24",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;CloseWindow;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	]
 ]

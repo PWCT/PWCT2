@@ -9,8 +9,6 @@ load "stdlibcore.ring"
 
 func main
 
-	SetTraceLogLevel(LOG_NONE)
-
 	screenWidth  = 800
 	screenHeight = 600
 
@@ -18,9 +16,9 @@ func main
 
 	// Define the camera to look into our 3d world
 	camera = Camera3D(	0.2, 0.4, 0.2,
-				0.0, 0.0, 0.0,
+				18.5, 4.0, 0.0,
 				0.0, 1.0, 0.0, 
-				45.0,  0 )   
+				45.0, CAMERA_PERSPECTIVE )   
     
 	imMap     = LoadImage("cubicmap.png")         // Load cubicmap image (RAM)
 	cubicmap  = LoadTextureFromImage(imMap)       // Convert image to texture to display (VRAM)
@@ -33,17 +31,16 @@ func main
 	SetModelMaterialTexture(model,0,MAP_DIFFUSE,texture)
 
 	// Get map image data to be used for collision detection
-	mapPixels = GetImageData(imMap)    // Color *mapPixels 
+	mapPixels = LoadImageColors(imMap)    // Color *mapPixels 
     
 	UnloadImage(imMap)                 // Unload image from RAM
 
 	mapPosition    = Vector3( -16.0, 0.0, -8.0 )    // Set model position
 	playerPosition = camera.position       // Set player position
-	SetCameraMode(camera, CAMERA_FIRST_PERSON)      // Set camera mode
 
 	SetTargetFPS(60)               // Set our game to run at 60 frames-per-second
 
-	aList = newlist(cubicmap.height, cubicmap.width)
+	aList = list(cubicmap.height, cubicmap.width)
 
 	for y = 0 to cubicmap.height-1
 		for x = 0 to cubicmap.width-1
@@ -57,11 +54,11 @@ func main
 
 		oldCamPos =  camera.position    // Store old camera position
 
-		UpdateCamera(camera)      // Update &camera
+		UpdateCamera(camera,CAMERA_FIRST_PERSON)      // Update &camera
 
 		// Check player collision (we simplify to 2D collision detection)
 		playerPos = Vector2( camera.position.x, camera.position.z )
-		playerRadius = 0.1	// Collision radius (player is modelled as a cilinder for collision)
+		playerRadius = 0.1	// Collision radius (player is modelled as a cylinder for collision)
 		playerCellX = (playerPos.x - mapPosition.x + 0.5)
 		playerCellY = (playerPos.y - mapPosition.z + 0.5)
 

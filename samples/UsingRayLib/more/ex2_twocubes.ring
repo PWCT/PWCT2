@@ -21,30 +21,28 @@ ray = Ray(0,0,0,0,0,0)
 collision1 = false
 collision2 = false
 
-SetCameraMode(camera, CAMERA_FREE) 
-
 SetTargetFPS(60)
 
 while !WindowShouldClose()
-
-        UpdateCamera(camera)
 
         if IsMouseButtonPressed(MOUSE_LEFT_BUTTON)
             if !collision1
                 ray = GetMouseRay(GetMousePosition(), camera)
 
-                collision1 = CheckCollisionRayBox(ray,
+                collision1 = GetRayCollisionBox(ray,
  		BoundingBox( cubePosition1.x - cubeSize.x/2, cubePosition1.y - cubeSize.y/2, cubePosition1.z - cubeSize.z/2,
     		cubePosition1.x + cubeSize.x/2, cubePosition1.y + cubeSize.y/2, cubePosition1.z + cubeSize.z/2 ) )
+		collision1 = collision1.hit
             else 
                 collision1 = false
             ok
             if  !collision2
                 ray = GetMouseRay(GetMousePosition(), camera)
 
-                collision2 = CheckCollisionRayBox(ray,
+                collision2 = GetRayCollisionBox(ray,
  		BoundingBox( cubePosition2.x - cubeSize.x/2, cubePosition2.y - cubeSize.y/2, cubePosition2.z - cubeSize.z/2,
     		cubePosition2.x + cubeSize.x/2, cubePosition2.y + cubeSize.y/2, cubePosition2.z + cubeSize.z/2 ) )
+		collision2 = collision2.hit
             else 
                 collision2 = false
  	    ok

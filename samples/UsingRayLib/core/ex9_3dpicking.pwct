@@ -2,9 +2,9 @@
 
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
-cNaturalLanguageName     = 'English'
-nStepsID                 = 55		
-nInteractionsID          = 43
+cNaturalLanguageName     = 'english'
+nStepsID                 = 54		
+nInteractionsID          = 42
 
 aStepsTable = [
 	[
@@ -55,7 +55,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# ===================================================================#
+				"#===================================================================#
 "
 			],
 			[
@@ -94,7 +94,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# Copyright (c) 2015 Ramon Santamaria (@raysan5)
+				"#Copyright (c) 2015 Ramon Santamaria (@raysan5)
 "
 			],
 			[
@@ -133,7 +133,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# Ported to RingRayLib by Ring Team
+				"#Ported to RingRayLib by Ring Team
 "
 			],
 			[
@@ -172,7 +172,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# ===================================================================#
+				"#===================================================================#
 "
 			],
 			[
@@ -545,7 +545,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"SetCameraMode(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera,CAMERA_FREE</font></span>)"
+				"SetTargetFPS(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">60</font></span>)"
 			],
 			[
 				"active",
@@ -553,7 +553,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"SetCameraMode(camera,CAMERA_FREE)"
+				"SetTargetFPS(60)"
 			],
 			[
 				"interactionid",
@@ -573,50 +573,12 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"SetCameraMode(camera,CAMERA_FREE)"
+				"SetTargetFPS(60)"
 			]
 		]
 	],
 	[
 		16,
-		1,
-		[
-			[
-				"name",
-				"SetTargetFPS(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">60</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"SetTargetFPS(60)"
-			],
-			[
-				"interactionid",
-				16
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"SetTargetFPS(60)"
-			]
-		]
-	],
-	[
-		17,
 		1,
 		[
 			[
@@ -633,7 +595,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				17
+				16
 			],
 			[
 				"visible",
@@ -654,8 +616,8 @@ aStepsTable = [
 		]
 	],
 	[
-		18,
 		17,
+		16,
 		[
 			[
 				"name",
@@ -671,7 +633,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				17
+				16
 			],
 			[
 				"visible",
@@ -692,46 +654,8 @@ aStepsTable = [
 		]
 	],
 	[
-		20,
-		18,
-		[
-			[
-				"name",
-				"UpdateCamera(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"UpdateCamera(camera)"
-			],
-			[
-				"interactionid",
-				18
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"UpdateCamera(camera)"
-			]
-		]
-	],
-	[
-		21,
-		18,
+		19,
+		17,
 		[
 			[
 				"name",
@@ -747,7 +671,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				19
+				17
 			],
 			[
 				"visible",
@@ -768,8 +692,8 @@ aStepsTable = [
 		]
 	],
 	[
-		22,
-		21,
+		20,
+		19,
 		[
 			[
 				"name",
@@ -785,7 +709,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				19
+				17
 			],
 			[
 				"visible",
@@ -806,8 +730,8 @@ aStepsTable = [
 		]
 	],
 	[
-		24,
 		22,
+		20,
 		[
 			[
 				"name",
@@ -823,7 +747,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				20
+				18
 			],
 			[
 				"visible",
@@ -844,8 +768,8 @@ aStepsTable = [
 		]
 	],
 	[
-		25,
-		24,
+		23,
+		22,
 		[
 			[
 				"name",
@@ -861,7 +785,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				20
+				18
 			],
 			[
 				"visible",
@@ -882,8 +806,8 @@ aStepsTable = [
 		]
 	],
 	[
-		27,
 		25,
+		23,
 		[
 			[
 				"name",
@@ -896,6 +820,82 @@ aStepsTable = [
 			[
 				"code",
 				"ray = GetMouseRay(GetMousePosition(),camera)"
+			],
+			[
+				"interactionid",
+				19
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"ray = GetMouseRay(GetMousePosition(),camera)"
+			]
+		]
+	],
+	[
+		26,
+		23,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">collision</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">GetRayCollisionBox(ray,BoundingBox(cubePosition.x-cubeSize.x/2,cubePosition.y-cubeSize.y/2,cubePosition.z-cubeSize.z/2,cubePosition.x+cubeSize.x/2,cubePosition.y+cubeSize.y/2,cubePosition.z+cubeSize.z/2))</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"collision = GetRayCollisionBox(ray,BoundingBox(cubePosition.x-cubeSize.x/2,cubePosition.y-cubeSize.y/2,cubePosition.z-cubeSize.z/2,cubePosition.x+cubeSize.x/2,cubePosition.y+cubeSize.y/2,cubePosition.z+cubeSize.z/2))"
+			],
+			[
+				"interactionid",
+				20
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"collision = GetRayCollisionBox(ray,BoundingBox(cubePosition.x-cubeSize.x/2,cubePosition.y-cubeSize.y/2,cubePosition.z-cubeSize.z/2,cubePosition.x+cubeSize.x/2,cubePosition.y+cubeSize.y/2,cubePosition.z+cubeSize.z/2))"
+			]
+		]
+	],
+	[
+		27,
+		23,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">collision</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">collision.hit</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"collision = collision.hit"
 			],
 			[
 				"interactionid",
@@ -915,17 +915,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"ray = GetMouseRay(GetMousePosition(),camera)"
+				"collision = collision.hit"
 			]
 		]
 	],
 	[
 		28,
-		25,
+		23,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">collision</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">CheckCollisionRayBox(ray,BoundingBox(cubePosition.x-cubeSize.x/2,cubePosition.y-cubeSize.y/2,cubePosition.z-cubeSize.z/2,cubePosition.x+cubeSize.x/2,cubePosition.y+cubeSize.y/2,cubePosition.z+cubeSize.z/2))</font></span>"
+				"Else"
 			],
 			[
 				"active",
@@ -933,7 +933,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"collision = CheckCollisionRayBox(ray,BoundingBox(cubePosition.x-cubeSize.x/2,cubePosition.y-cubeSize.y/2,cubePosition.z-cubeSize.z/2,cubePosition.x+cubeSize.x/2,cubePosition.y+cubeSize.y/2,cubePosition.z+cubeSize.z/2))"
+				"else"
 			],
 			[
 				"interactionid",
@@ -953,51 +953,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"collision = CheckCollisionRayBox(ray,BoundingBox(cubePosition.x-cubeSize.x/2,cubePosition.y-cubeSize.y/2,cubePosition.z-cubeSize.z/2,cubePosition.x+cubeSize.x/2,cubePosition.y+cubeSize.y/2,cubePosition.z+cubeSize.z/2))"
-			]
-		]
-	],
-	[
-		29,
-		25,
-		[
-			[
-				"name",
-				"Else"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"else"
-			],
-			[
-				"interactionid",
-				23
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
 				"Else"
 			]
 		]
 	],
 	[
-		30,
 		29,
+		28,
 		[
 			[
 				"name",
@@ -1013,7 +975,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				23
+				22
 			],
 			[
 				"visible",
@@ -1034,8 +996,8 @@ aStepsTable = [
 		]
 	],
 	[
-		31,
 		30,
+		29,
 		[
 			[
 				"name",
@@ -1051,7 +1013,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				24
+				23
 			],
 			[
 				"visible",
@@ -1072,8 +1034,8 @@ aStepsTable = [
 		]
 	],
 	[
-		26,
 		24,
+		22,
 		[
 			[
 				"name",
@@ -1089,7 +1051,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				20
+				18
 			],
 			[
 				"visible",
@@ -1110,924 +1072,12 @@ aStepsTable = [
 		]
 	],
 	[
-		23,
 		21,
-		[
-			[
-				"name",
-				"End of IF Statement"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				19
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of IF Statement"
-			]
-		]
-	],
-	[
-		32,
-		18,
-		[
-			[
-				"name",
-				"BeginDrawing(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"BeginDrawing()"
-			],
-			[
-				"interactionid",
-				25
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"BeginDrawing()"
-			]
-		]
-	],
-	[
-		33,
-		18,
-		[
-			[
-				"name",
-				"ClearBackground(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">RAYWHITE</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"ClearBackground(RAYWHITE)"
-			],
-			[
-				"interactionid",
-				26
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"ClearBackground(RAYWHITE)"
-			]
-		]
-	],
-	[
-		34,
-		18,
-		[
-			[
-				"name",
-				"BeginMode3D(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"BeginMode3D(camera)"
-			],
-			[
-				"interactionid",
-				27
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"BeginMode3D(camera)"
-			]
-		]
-	],
-	[
-		35,
-		18,
-		[
-			[
-				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">collision</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"if collision { "
-			],
-			[
-				"interactionid",
-				28
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"If collision"
-			]
-		]
-	],
-	[
-		36,
-		35,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				28
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		38,
-		36,
-		[
-			[
-				"name",
-				"DrawCube(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cubePosition,cubeSize.x,cubeSize.y,cubeSize.z,RED</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"DrawCube(cubePosition,cubeSize.x,cubeSize.y,cubeSize.z,RED)"
-			],
-			[
-				"interactionid",
-				29
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"DrawCube(cubePosition,cubeSize.x,cubeSize.y,cubeSize.z,RED)"
-			]
-		]
-	],
-	[
-		39,
-		36,
-		[
-			[
-				"name",
-				"DrawCubeWires(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cubePosition,cubeSize.x,cubeSize.y,cubeSize.z,MAROON</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"DrawCubeWires(cubePosition,cubeSize.x,cubeSize.y,cubeSize.z,MAROON)"
-			],
-			[
-				"interactionid",
-				30
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"DrawCubeWires(cubePosition,cubeSize.x,cubeSize.y,cubeSize.z,MAROON)"
-			]
-		]
-	],
-	[
-		40,
-		36,
-		[
-			[
-				"name",
-				"DrawCubeWires(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cubePosition,cubeSize.x+0.2,cubeSize.y+0.2,cubeSize.z+0.2,GREEN</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"DrawCubeWires(cubePosition,cubeSize.x+0.2,cubeSize.y+0.2,cubeSize.z+0.2,GREEN)"
-			],
-			[
-				"interactionid",
-				31
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"DrawCubeWires(cubePosition,cubeSize.x+0.2,cubeSize.y+0.2,cubeSize.z+0.2,GREEN)"
-			]
-		]
-	],
-	[
-		41,
-		36,
-		[
-			[
-				"name",
-				"Else"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"else"
-			],
-			[
-				"interactionid",
-				32
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Else"
-			]
-		]
-	],
-	[
-		42,
-		41,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				32
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		43,
-		42,
-		[
-			[
-				"name",
-				"DrawCube(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cubePosition,cubeSize.x,cubeSize.y,cubeSize.z,GRAY</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"DrawCube(cubePosition,cubeSize.x,cubeSize.y,cubeSize.z,GRAY)"
-			],
-			[
-				"interactionid",
-				33
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"DrawCube(cubePosition,cubeSize.x,cubeSize.y,cubeSize.z,GRAY)"
-			]
-		]
-	],
-	[
-		44,
-		42,
-		[
-			[
-				"name",
-				"DrawCubeWires(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cubePosition,cubeSize.x,cubeSize.y,cubeSize.z,DARKGRAY</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"DrawCubeWires(cubePosition,cubeSize.x,cubeSize.y,cubeSize.z,DARKGRAY)"
-			],
-			[
-				"interactionid",
-				34
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"DrawCubeWires(cubePosition,cubeSize.x,cubeSize.y,cubeSize.z,DARKGRAY)"
-			]
-		]
-	],
-	[
-		37,
-		35,
-		[
-			[
-				"name",
-				"End of IF Statement"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				28
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of IF Statement"
-			]
-		]
-	],
-	[
-		45,
-		18,
-		[
-			[
-				"name",
-				"DrawRay(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">ray,MAROON</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"DrawRay(ray,MAROON)"
-			],
-			[
-				"interactionid",
-				35
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"DrawRay(ray,MAROON)"
-			]
-		]
-	],
-	[
-		46,
-		18,
-		[
-			[
-				"name",
-				"DrawGrid(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">10,1</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"DrawGrid(10,1)"
-			],
-			[
-				"interactionid",
-				36
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"DrawGrid(10,1)"
-			]
-		]
-	],
-	[
-		47,
-		18,
-		[
-			[
-				"name",
-				"EndMode3D(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"EndMode3D()"
-			],
-			[
-				"interactionid",
-				37
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"EndMode3D()"
-			]
-		]
-	],
-	[
-		48,
-		18,
-		[
-			[
-				"name",
-				"DrawText(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;Try&nbsp;selecting&nbsp;the&nbsp;box&nbsp;with&nbsp;mouse!&quot;,240,10,20,DARKGRAY</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"DrawText("+char(34)+"Try selecting the box with mouse!"+char(34)+",240,10,20,DARKGRAY)"
-			],
-			[
-				"interactionid",
-				38
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"DrawText("+char(34)+"Try selecting the box with mouse!"+char(34)+",240,10,20,DARKGRAY)"
-			]
-		]
-	],
-	[
-		49,
-		18,
-		[
-			[
-				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">collision</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"if collision { "
-			],
-			[
-				"interactionid",
-				39
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"If collision"
-			]
-		]
-	],
-	[
-		50,
-		49,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				39
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		52,
-		50,
-		[
-			[
-				"name",
-				"DrawText(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;BOX&nbsp;SELECTED&quot;,(screenWidth-MeasureText(&quot;BOX&nbsp;SELECTED&quot;,30))/2,screenHeight*0.1,30,GREEN</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"DrawText("+char(34)+"BOX SELECTED"+char(34)+",(screenWidth-MeasureText("+char(34)+"BOX SELECTED"+char(34)+",30))/2,screenHeight*0.1,30,GREEN)"
-			],
-			[
-				"interactionid",
-				40
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"DrawText("+char(34)+"BOX SELECTED"+char(34)+",(screenWidth-MeasureText("+char(34)+"BOX SELECTED"+char(34)+",30))/2,screenHeight*0.1,30,GREEN)"
-			]
-		]
-	],
-	[
-		51,
-		49,
-		[
-			[
-				"name",
-				"End of IF Statement"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				39
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of IF Statement"
-			]
-		]
-	],
-	[
-		53,
-		18,
-		[
-			[
-				"name",
-				"DrawFPS(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">10,10</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"DrawFPS(10,10)"
-			],
-			[
-				"interactionid",
-				41
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"DrawFPS(10,10)"
-			]
-		]
-	],
-	[
-		54,
-		18,
-		[
-			[
-				"name",
-				"EndDrawing(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"EndDrawing()"
-			],
-			[
-				"interactionid",
-				42
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"EndDrawing()"
-			]
-		]
-	],
-	[
 		19,
-		17,
 		[
 			[
 				"name",
-				"End of While Loop"
+				"End of IF Statement"
 			],
 			[
 				"active",
@@ -2055,12 +1105,924 @@ aStepsTable = [
 			],
 			[
 				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		31,
+		17,
+		[
+			[
+				"name",
+				"BeginDrawing(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"BeginDrawing()"
+			],
+			[
+				"interactionid",
+				24
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"BeginDrawing()"
+			]
+		]
+	],
+	[
+		32,
+		17,
+		[
+			[
+				"name",
+				"ClearBackground(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">RAYWHITE</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"ClearBackground(RAYWHITE)"
+			],
+			[
+				"interactionid",
+				25
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"ClearBackground(RAYWHITE)"
+			]
+		]
+	],
+	[
+		33,
+		17,
+		[
+			[
+				"name",
+				"BeginMode3D(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"BeginMode3D(camera)"
+			],
+			[
+				"interactionid",
+				26
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"BeginMode3D(camera)"
+			]
+		]
+	],
+	[
+		34,
+		17,
+		[
+			[
+				"name",
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">collision</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"if collision { "
+			],
+			[
+				"interactionid",
+				27
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"If collision"
+			]
+		]
+	],
+	[
+		35,
+		34,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				27
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		37,
+		35,
+		[
+			[
+				"name",
+				"DrawCube(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cubePosition,cubeSize.x,cubeSize.y,cubeSize.z,RED</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"DrawCube(cubePosition,cubeSize.x,cubeSize.y,cubeSize.z,RED)"
+			],
+			[
+				"interactionid",
+				28
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"DrawCube(cubePosition,cubeSize.x,cubeSize.y,cubeSize.z,RED)"
+			]
+		]
+	],
+	[
+		38,
+		35,
+		[
+			[
+				"name",
+				"DrawCubeWires(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cubePosition,cubeSize.x,cubeSize.y,cubeSize.z,MAROON</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"DrawCubeWires(cubePosition,cubeSize.x,cubeSize.y,cubeSize.z,MAROON)"
+			],
+			[
+				"interactionid",
+				29
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"DrawCubeWires(cubePosition,cubeSize.x,cubeSize.y,cubeSize.z,MAROON)"
+			]
+		]
+	],
+	[
+		39,
+		35,
+		[
+			[
+				"name",
+				"DrawCubeWires(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cubePosition,cubeSize.x+0.2,cubeSize.y+0.2,cubeSize.z+0.2,GREEN</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"DrawCubeWires(cubePosition,cubeSize.x+0.2,cubeSize.y+0.2,cubeSize.z+0.2,GREEN)"
+			],
+			[
+				"interactionid",
+				30
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"DrawCubeWires(cubePosition,cubeSize.x+0.2,cubeSize.y+0.2,cubeSize.z+0.2,GREEN)"
+			]
+		]
+	],
+	[
+		40,
+		35,
+		[
+			[
+				"name",
+				"Else"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"else"
+			],
+			[
+				"interactionid",
+				31
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Else"
+			]
+		]
+	],
+	[
+		41,
+		40,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				31
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		42,
+		41,
+		[
+			[
+				"name",
+				"DrawCube(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cubePosition,cubeSize.x,cubeSize.y,cubeSize.z,GRAY</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"DrawCube(cubePosition,cubeSize.x,cubeSize.y,cubeSize.z,GRAY)"
+			],
+			[
+				"interactionid",
+				32
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"DrawCube(cubePosition,cubeSize.x,cubeSize.y,cubeSize.z,GRAY)"
+			]
+		]
+	],
+	[
+		43,
+		41,
+		[
+			[
+				"name",
+				"DrawCubeWires(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cubePosition,cubeSize.x,cubeSize.y,cubeSize.z,DARKGRAY</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"DrawCubeWires(cubePosition,cubeSize.x,cubeSize.y,cubeSize.z,DARKGRAY)"
+			],
+			[
+				"interactionid",
+				33
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"DrawCubeWires(cubePosition,cubeSize.x,cubeSize.y,cubeSize.z,DARKGRAY)"
+			]
+		]
+	],
+	[
+		36,
+		34,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				27
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		44,
+		17,
+		[
+			[
+				"name",
+				"DrawRay(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">ray,MAROON</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"DrawRay(ray,MAROON)"
+			],
+			[
+				"interactionid",
+				34
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"DrawRay(ray,MAROON)"
+			]
+		]
+	],
+	[
+		45,
+		17,
+		[
+			[
+				"name",
+				"DrawGrid(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">10,1</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"DrawGrid(10,1)"
+			],
+			[
+				"interactionid",
+				35
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"DrawGrid(10,1)"
+			]
+		]
+	],
+	[
+		46,
+		17,
+		[
+			[
+				"name",
+				"EndMode3D(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"EndMode3D()"
+			],
+			[
+				"interactionid",
+				36
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"EndMode3D()"
+			]
+		]
+	],
+	[
+		47,
+		17,
+		[
+			[
+				"name",
+				"DrawText(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;Try&nbsp;selecting&nbsp;the&nbsp;box&nbsp;with&nbsp;mouse!&quot;,240,10,20,DARKGRAY</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"DrawText("+char(34)+"Try selecting the box with mouse!"+char(34)+",240,10,20,DARKGRAY)"
+			],
+			[
+				"interactionid",
+				37
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"DrawText("+char(34)+"Try selecting the box with mouse!"+char(34)+",240,10,20,DARKGRAY)"
+			]
+		]
+	],
+	[
+		48,
+		17,
+		[
+			[
+				"name",
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">collision</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"if collision { "
+			],
+			[
+				"interactionid",
+				38
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"If collision"
+			]
+		]
+	],
+	[
+		49,
+		48,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				38
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		51,
+		49,
+		[
+			[
+				"name",
+				"DrawText(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;BOX&nbsp;SELECTED&quot;,(screenWidth-MeasureText(&quot;BOX&nbsp;SELECTED&quot;,30))/2,screenHeight*0.1,30,GREEN</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"DrawText("+char(34)+"BOX SELECTED"+char(34)+",(screenWidth-MeasureText("+char(34)+"BOX SELECTED"+char(34)+",30))/2,screenHeight*0.1,30,GREEN)"
+			],
+			[
+				"interactionid",
+				39
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"DrawText("+char(34)+"BOX SELECTED"+char(34)+",(screenWidth-MeasureText("+char(34)+"BOX SELECTED"+char(34)+",30))/2,screenHeight*0.1,30,GREEN)"
+			]
+		]
+	],
+	[
+		50,
+		48,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				38
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		52,
+		17,
+		[
+			[
+				"name",
+				"DrawFPS(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">10,10</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"DrawFPS(10,10)"
+			],
+			[
+				"interactionid",
+				40
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"DrawFPS(10,10)"
+			]
+		]
+	],
+	[
+		53,
+		17,
+		[
+			[
+				"name",
+				"EndDrawing(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"EndDrawing()"
+			],
+			[
+				"interactionid",
+				41
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"EndDrawing()"
+			]
+		]
+	],
+	[
+		18,
+		16,
+		[
+			[
+				"name",
+				"End of While Loop"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				16
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
 				"End of While Loop"
 			]
 		]
 	],
 	[
-		55,
+		54,
 		1,
 		[
 			[
@@ -2077,7 +2039,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				43
+				42
 			],
 			[
 				"visible",
@@ -2104,344 +2066,336 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"27/08/2021",
-		"08:49:21",
+		"10/09/2024",
+		"15:53:26",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:49:21",
+		"10/09/2024",
+		"15:53:26",
 		"value;;_RV_;;===================================================================#;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:49:21",
+		"10/09/2024",
+		"15:53:26",
 		"value;;_RV_;;Copyright (c) 2015 Ramon Santamaria (@raysan5);;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:49:21",
+		"10/09/2024",
+		"15:53:26",
 		"value;;_RV_;;Ported to RingRayLib by Ring Team;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:49:21",
+		"10/09/2024",
+		"15:53:26",
 		"value;;_RV_;;===================================================================#;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"load",
-		"27/08/2021",
-		"08:49:21",
+		"10/09/2024",
+		"15:53:26",
 		"file;;_RV_;;raylib.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:21",
+		"10/09/2024",
+		"15:53:26",
 		"leftside;;_RV_;;screenWidth;;_RV_;;rightside;;_RV_;;800;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:21",
+		"10/09/2024",
+		"15:53:26",
 		"leftside;;_RV_;;screenHeight;;_RV_;;rightside;;_RV_;;450;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:21",
+		"10/09/2024",
+		"15:53:26",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;InitWindow;;_RV_;;parameters;;_RV_;;screenWidth,screenHeight,"+char(34)+"raylib [core] example - 3d picking"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:21",
+		"10/09/2024",
+		"15:53:26",
 		"leftside;;_RV_;;camera;;_RV_;;rightside;;_RV_;;Camera3D(10,10,10,0,0,0,0,1,0,45,CAMERA_PERSPECTIVE);;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:21",
+		"10/09/2024",
+		"15:53:26",
 		"leftside;;_RV_;;cubePosition;;_RV_;;rightside;;_RV_;;Vector3(0,1,0);;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:21",
+		"10/09/2024",
+		"15:53:26",
 		"leftside;;_RV_;;cubeSize;;_RV_;;rightside;;_RV_;;Vector3(2,2,2);;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:21",
+		"10/09/2024",
+		"15:53:26",
 		"leftside;;_RV_;;ray;;_RV_;;rightside;;_RV_;;Ray(0,0,0,0,0,0);;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:21",
+		"10/09/2024",
+		"15:53:26",
 		"leftside;;_RV_;;collision;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetCameraMode;;_RV_;;parameters;;_RV_;;camera,CAMERA_FREE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"15:53:26",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetTargetFPS;;_RV_;;parameters;;_RV_;;60;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		16,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetTargetFPS;;_RV_;;parameters;;_RV_;;60;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"whileloop",
+		"10/09/2024",
+		"15:53:26",
+		"condition;;_RV_;;!WindowShouldClose();;_RV_;;"
 	],
 	[
 		17,
 		1,
-		"whileloop",
-		"27/08/2021",
-		"08:49:21",
-		"condition;;_RV_;;!WindowShouldClose();;_RV_;;"
+		"ifstatement",
+		"10/09/2024",
+		"15:53:26",
+		"condition;;_RV_;;IsMouseButtonPressed(MOUSE_LEFT_BUTTON);;_RV_;;"
 	],
 	[
 		18,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UpdateCamera;;_RV_;;parameters;;_RV_;;camera;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"ifstatement",
+		"10/09/2024",
+		"15:53:26",
+		"condition;;_RV_;;!collision;;_RV_;;"
 	],
 	[
 		19,
 		1,
-		"ifstatement",
-		"27/08/2021",
-		"08:49:21",
-		"condition;;_RV_;;IsMouseButtonPressed(MOUSE_LEFT_BUTTON);;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"15:53:26",
+		"leftside;;_RV_;;ray;;_RV_;;rightside;;_RV_;;GetMouseRay(GetMousePosition(),camera);;_RV_;;"
 	],
 	[
 		20,
 		1,
-		"ifstatement",
-		"27/08/2021",
-		"08:49:21",
-		"condition;;_RV_;;!collision;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"15:53:26",
+		"leftside;;_RV_;;collision;;_RV_;;rightside;;_RV_;;GetRayCollisionBox(ray,BoundingBox(cubePosition.x-cubeSize.x/2,cubePosition.y-cubeSize.y/2,cubePosition.z-cubeSize.z/2,cubePosition.x+cubeSize.x/2,cubePosition.y+cubeSize.y/2,cubePosition.z+cubeSize.z/2));;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:21",
-		"leftside;;_RV_;;ray;;_RV_;;rightside;;_RV_;;GetMouseRay(GetMousePosition(),camera);;_RV_;;"
+		"10/09/2024",
+		"15:53:26",
+		"leftside;;_RV_;;collision;;_RV_;;rightside;;_RV_;;collision.hit;;_RV_;;"
 	],
 	[
 		22,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:21",
-		"leftside;;_RV_;;collision;;_RV_;;rightside;;_RV_;;CheckCollisionRayBox(ray,BoundingBox(cubePosition.x-cubeSize.x/2,cubePosition.y-cubeSize.y/2,cubePosition.z-cubeSize.z/2,cubePosition.x+cubeSize.x/2,cubePosition.y+cubeSize.y/2,cubePosition.z+cubeSize.z/2));;_RV_;;"
+		"else",
+		"10/09/2024",
+		"15:53:26",
+		""
 	],
 	[
 		23,
 		1,
-		"else",
-		"27/08/2021",
-		"08:49:21",
-		""
+		"assignment",
+		"10/09/2024",
+		"15:53:26",
+		"leftside;;_RV_;;collision;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		24,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:21",
-		"leftside;;_RV_;;collision;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
+		"callfunc",
+		"10/09/2024",
+		"15:53:26",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"10/09/2024",
+		"15:53:26",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;ClearBackground;;_RV_;;parameters;;_RV_;;RAYWHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;ClearBackground;;_RV_;;parameters;;_RV_;;RAYWHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"15:53:26",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginMode3D;;_RV_;;parameters;;_RV_;;camera;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		27,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginMode3D;;_RV_;;parameters;;_RV_;;camera;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"ifstatement",
+		"10/09/2024",
+		"15:53:26",
+		"condition;;_RV_;;collision;;_RV_;;"
 	],
 	[
 		28,
 		1,
-		"ifstatement",
-		"27/08/2021",
-		"08:49:21",
-		"condition;;_RV_;;collision;;_RV_;;"
+		"callfunc",
+		"10/09/2024",
+		"15:53:26",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawCube;;_RV_;;parameters;;_RV_;;cubePosition,cubeSize.x,cubeSize.y,cubeSize.z,RED;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawCube;;_RV_;;parameters;;_RV_;;cubePosition,cubeSize.x,cubeSize.y,cubeSize.z,RED;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"15:53:26",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawCubeWires;;_RV_;;parameters;;_RV_;;cubePosition,cubeSize.x,cubeSize.y,cubeSize.z,MAROON;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		30,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawCubeWires;;_RV_;;parameters;;_RV_;;cubePosition,cubeSize.x,cubeSize.y,cubeSize.z,MAROON;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"15:53:26",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawCubeWires;;_RV_;;parameters;;_RV_;;cubePosition,cubeSize.x+0.2,cubeSize.y+0.2,cubeSize.z+0.2,GREEN;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		31,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawCubeWires;;_RV_;;parameters;;_RV_;;cubePosition,cubeSize.x+0.2,cubeSize.y+0.2,cubeSize.z+0.2,GREEN;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"else",
+		"10/09/2024",
+		"15:53:26",
+		""
 	],
 	[
 		32,
 		1,
-		"else",
-		"27/08/2021",
-		"08:49:21",
-		""
+		"callfunc",
+		"10/09/2024",
+		"15:53:26",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawCube;;_RV_;;parameters;;_RV_;;cubePosition,cubeSize.x,cubeSize.y,cubeSize.z,GRAY;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		33,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawCube;;_RV_;;parameters;;_RV_;;cubePosition,cubeSize.x,cubeSize.y,cubeSize.z,GRAY;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"15:53:26",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawCubeWires;;_RV_;;parameters;;_RV_;;cubePosition,cubeSize.x,cubeSize.y,cubeSize.z,DARKGRAY;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		34,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawCubeWires;;_RV_;;parameters;;_RV_;;cubePosition,cubeSize.x,cubeSize.y,cubeSize.z,DARKGRAY;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"15:53:26",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawRay;;_RV_;;parameters;;_RV_;;ray,MAROON;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		35,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawRay;;_RV_;;parameters;;_RV_;;ray,MAROON;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"15:53:26",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawGrid;;_RV_;;parameters;;_RV_;;10,1;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		36,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawGrid;;_RV_;;parameters;;_RV_;;10,1;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"15:53:26",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndMode3D;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		37,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndMode3D;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"10/09/2024",
+		"15:53:26",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"Try selecting the box with mouse!"+char(34)+",240,10,20,DARKGRAY;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		38,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"Try selecting the box with mouse!"+char(34)+",240,10,20,DARKGRAY;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"ifstatement",
+		"10/09/2024",
+		"15:53:26",
+		"condition;;_RV_;;collision;;_RV_;;"
 	],
 	[
 		39,
 		1,
-		"ifstatement",
-		"27/08/2021",
-		"08:49:21",
-		"condition;;_RV_;;collision;;_RV_;;"
+		"callfunc",
+		"10/09/2024",
+		"15:53:26",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"BOX SELECTED"+char(34)+",(screenWidth-MeasureText("+char(34)+"BOX SELECTED"+char(34)+",30))/2,screenHeight*0.1,30,GREEN;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		40,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"BOX SELECTED"+char(34)+",(screenWidth-MeasureText("+char(34)+"BOX SELECTED"+char(34)+",30))/2,screenHeight*0.1,30,GREEN;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"15:53:26",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawFPS;;_RV_;;parameters;;_RV_;;10,10;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		41,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawFPS;;_RV_;;parameters;;_RV_;;10,10;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"15:53:26",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		42,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
-	],
-	[
-		43,
-		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:21",
+		"10/09/2024",
+		"15:53:26",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;CloseWindow;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	]
 ]

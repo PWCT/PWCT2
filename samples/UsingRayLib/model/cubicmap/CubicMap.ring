@@ -13,7 +13,7 @@ InitWindow(screenWidth, screenHeight, "raylib [models] example - cubesmap loadin
 camera = Camera3D( 16.0, 14.0, 16.0,
 				 0.0, 0.0, 0.0,
 				 0.0, 1.0, 0.0, 
-				 45.0, 0 )
+				 45.0, CAMERA_PERSPECTIVE )
 
 image    = LoadImage("cubicmap.png")        
 cubicmap = LoadTextureFromImage(image)      
@@ -28,12 +28,11 @@ setmodelmaterialtexture(model,0,MAP_DIFFUSE,texture)
 mapPosition = Vector3( -16.0, 0.0, -8.0 )   
 
 UnloadImage(image)                     
-SetCameraMode(camera, CAMERA_ORBITAL)  
 SetTargetFPS(60)                       
 
 while !WindowShouldClose()
 
-	UpdateCamera(camera)
+	UpdateCamera(camera,CAMERA_ORBITAL)
 	
 	BeginDrawing()
 

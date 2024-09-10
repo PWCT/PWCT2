@@ -2,9 +2,9 @@
 
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
-cNaturalLanguageName     = 'English'
-nStepsID                 = 166		
-nInteractionsID          = 140
+cNaturalLanguageName     = 'english'
+nStepsID                 = 164		
+nInteractionsID          = 138
 
 aStepsTable = [
 	[
@@ -47,7 +47,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"================================#"
+				"=====================================================#"
 			],
 			[
 				"active",
@@ -55,7 +55,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# ================================#
+				"#=====================================================#
 "
 			],
 			[
@@ -76,7 +76,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"================================#"
+				"=====================================================#"
 			]
 		]
 	],
@@ -86,7 +86,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Aiming at 3d moving targets"
+				"Copyright (c) 2020  Ramon Santamaria (@raysan5)"
 			],
 			[
 				"active",
@@ -94,7 +94,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# Aiming at 3d moving targets
+				"#Copyright (c) 2020  Ramon Santamaria (@raysan5)
 "
 			],
 			[
@@ -115,7 +115,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Aiming at 3d moving targets"
+				"Copyright (c) 2020  Ramon Santamaria (@raysan5)"
 			]
 		]
 	],
@@ -125,7 +125,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"================================#"
+				"Ported to RingRayLib by (Azzeddine Remmal)"
 			],
 			[
 				"active",
@@ -133,7 +133,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# ================================#
+				"#Ported to RingRayLib by (Azzeddine Remmal)
 "
 			],
 			[
@@ -154,7 +154,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"================================#"
+				"Ported to RingRayLib by (Azzeddine Remmal)"
 			]
 		]
 	],
@@ -164,7 +164,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"--------- 08-02-2021"
+				"=====================================================#"
 			],
 			[
 				"active",
@@ -172,7 +172,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# --------- 08-02-2021
+				"#=====================================================#
 "
 			],
 			[
@@ -193,90 +193,12 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"--------- 08-02-2021"
+				"=====================================================#"
 			]
 		]
 	],
 	[
 		6,
-		1,
-		[
-			[
-				"name",
-				"Author : Azzeddine Remmal"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"# Author : Azzeddine Remmal
-"
-			],
-			[
-				"interactionid",
-				6
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"Author : Azzeddine Remmal"
-			]
-		]
-	],
-	[
-		7,
-		1,
-		[
-			[
-				"name",
-				"================================#"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"# ================================#
-"
-			],
-			[
-				"interactionid",
-				7
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"================================#"
-			]
-		]
-	],
-	[
-		8,
 		1,
 		[
 			[
@@ -293,7 +215,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				8
+				6
 			],
 			[
 				"visible",
@@ -314,7 +236,7 @@ aStepsTable = [
 		]
 	],
 	[
-		9,
+		7,
 		1,
 		[
 			[
@@ -331,7 +253,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				9
+				7
 			],
 			[
 				"visible",
@@ -352,7 +274,7 @@ aStepsTable = [
 		]
 	],
 	[
-		10,
+		8,
 		1,
 		[
 			[
@@ -366,6 +288,83 @@ aStepsTable = [
 			[
 				"code",
 				"screenHeight = 360"
+			],
+			[
+				"interactionid",
+				8
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"screenHeight = 360"
+			]
+		]
+	],
+	[
+		9,
+		1,
+		[
+			[
+				"name",
+				"can't query this so track it."
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#can't query this so track it.
+"
+			],
+			[
+				"interactionid",
+				9
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"can't query this so track it."
+			]
+		]
+	],
+	[
+		10,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">fullScreen</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">false</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"fullScreen = false"
 			],
 			[
 				"interactionid",
@@ -385,7 +384,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"screenHeight = 360"
+				"fullScreen = false"
 			]
 		]
 	],
@@ -395,7 +394,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"can't query this so track it."
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">path</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[Vector3(-20,2,20),Vector3(20,12,15),Vector3(20,2,-15),Vector3(-20,8,-14)]</font></span>"
 			],
 			[
 				"active",
@@ -403,8 +402,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# can't query this so track it.
-"
+				"path = [Vector3(-20,2,20),Vector3(20,12,15),Vector3(20,2,-15),Vector3(-20,8,-14)]"
 			],
 			[
 				"interactionid",
@@ -420,11 +418,11 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				1
+				2
 			],
 			[
 				"plainname",
-				"can't query this so track it."
+				"path = [Vector3(-20,2,20),Vector3(20,12,15),Vector3(20,2,-15),Vector3(-20,8,-14)]"
 			]
 		]
 	],
@@ -434,7 +432,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">fullScreen</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">false</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">start</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector3(0.0,0.0,0.0)</font></span>"
 			],
 			[
 				"active",
@@ -442,7 +440,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"fullScreen = false"
+				"start = Vector3(0.0,0.0,0.0)"
 			],
 			[
 				"interactionid",
@@ -462,7 +460,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"fullScreen = false"
+				"start = Vector3(0.0,0.0,0.0)"
 			]
 		]
 	],
@@ -472,7 +470,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">path</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[Vector3(-20,2,20),Vector3(20,12,15),Vector3(20,2,-15),Vector3(-20,8,-14)]</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">ond</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector3(0.0,0.0,0.0)</font></span>"
 			],
 			[
 				"active",
@@ -480,7 +478,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"path = [Vector3(-20,2,20),Vector3(20,12,15),Vector3(20,2,-15),Vector3(-20,8,-14)]"
+				"ond = Vector3(0.0,0.0,0.0)"
 			],
 			[
 				"interactionid",
@@ -500,7 +498,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"path = [Vector3(-20,2,20),Vector3(20,12,15),Vector3(20,2,-15),Vector3(-20,8,-14)]"
+				"ond = Vector3(0.0,0.0,0.0)"
 			]
 		]
 	],
@@ -510,7 +508,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">start</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector3(0.0,0.0,0.0)</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">velocity</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">0</font></span>"
 			],
 			[
 				"active",
@@ -518,7 +516,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"start = Vector3(0.0,0.0,0.0)"
+				"velocity = 0"
 			],
 			[
 				"interactionid",
@@ -538,7 +536,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"start = Vector3(0.0,0.0,0.0)"
+				"velocity = 0"
 			]
 		]
 	],
@@ -548,7 +546,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">ond</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector3(0.0,0.0,0.0)</font></span>"
+				"given a start and end point calculate frame increment"
 			],
 			[
 				"active",
@@ -556,7 +554,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"ond = Vector3(0.0,0.0,0.0)"
+				"#given a start and end point calculate frame increment
+"
 			],
 			[
 				"interactionid",
@@ -572,11 +571,11 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				2
+				1
 			],
 			[
 				"plainname",
-				"ond = Vector3(0.0,0.0,0.0)"
+				"given a start and end point calculate frame increment"
 			]
 		]
 	],
@@ -586,7 +585,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">velocity</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">0</font></span>"
+				"to move between the points at the given velocity"
 			],
 			[
 				"active",
@@ -594,7 +593,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"velocity = 0"
+				"#to move between the points at the given velocity
+"
 			],
 			[
 				"interactionid",
@@ -610,11 +610,11 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				2
+				1
 			],
 			[
 				"plainname",
-				"velocity = 0"
+				"to move between the points at the given velocity"
 			]
 		]
 	],
@@ -624,7 +624,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"given a start and end point calculate frame increment"
+				"i.e. create a velocity vector"
 			],
 			[
 				"active",
@@ -632,7 +632,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# given a start and end point calculate frame increment
+				"#i.e. create a velocity vector
 "
 			],
 			[
@@ -653,90 +653,12 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"given a start and end point calculate frame increment"
+				"i.e. create a velocity vector"
 			]
 		]
 	],
 	[
 		18,
-		1,
-		[
-			[
-				"name",
-				"to move between the points at the given velocity"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"# to move between the points at the given velocity
-"
-			],
-			[
-				"interactionid",
-				18
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"to move between the points at the given velocity"
-			]
-		]
-	],
-	[
-		19,
-		1,
-		[
-			[
-				"name",
-				"i.e. create a velocity vector"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"# i.e. create a velocity vector
-"
-			],
-			[
-				"interactionid",
-				19
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"i.e. create a velocity vector"
-			]
-		]
-	],
-	[
-		20,
 		1,
 		[
 			[
@@ -753,7 +675,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				20
+				18
 			],
 			[
 				"visible",
@@ -774,8 +696,8 @@ aStepsTable = [
 		]
 	],
 	[
-		21,
-		20,
+		19,
+		18,
 		[
 			[
 				"name",
@@ -791,7 +713,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				20
+				18
 			],
 			[
 				"visible",
@@ -812,8 +734,8 @@ aStepsTable = [
 		]
 	],
 	[
-		23,
 		21,
+		19,
 		[
 			[
 				"name",
@@ -826,6 +748,82 @@ aStepsTable = [
 			[
 				"code",
 				"v = Vector3Subtract(ond,start)"
+			],
+			[
+				"interactionid",
+				19
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"v = Vector3Subtract(ond,start)"
+			]
+		]
+	],
+	[
+		22,
+		19,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">v</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector3Normalize(v)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"v = Vector3Normalize(v)"
+			],
+			[
+				"interactionid",
+				20
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"v = Vector3Normalize(v)"
+			]
+		]
+	],
+	[
+		23,
+		19,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">v</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector3Scale(v,velocity)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"v = Vector3Scale(v,velocity)"
 			],
 			[
 				"interactionid",
@@ -845,89 +843,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"v = Vector3Subtract(ond,start)"
+				"v = Vector3Scale(v,velocity)"
 			]
 		]
 	],
 	[
 		24,
-		21,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">v</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector3Normalize(v)</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"v = Vector3Normalize(v)"
-			],
-			[
-				"interactionid",
-				22
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"v = Vector3Normalize(v)"
-			]
-		]
-	],
-	[
-		25,
-		21,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">v</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector3Scale(v,velocity)</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"v = Vector3Scale(v,velocity)"
-			],
-			[
-				"interactionid",
-				23
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"v = Vector3Scale(v,velocity)"
-			]
-		]
-	],
-	[
-		26,
-		21,
+		19,
 		[
 			[
 				"name",
@@ -943,7 +865,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				24
+				22
 			],
 			[
 				"visible",
@@ -964,8 +886,8 @@ aStepsTable = [
 		]
 	],
 	[
-		22,
 		20,
+		18,
 		[
 			[
 				"name",
@@ -981,7 +903,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				20
+				18
 			],
 			[
 				"visible",
@@ -1002,7 +924,7 @@ aStepsTable = [
 		]
 	],
 	[
-		27,
+		25,
 		1,
 		[
 			[
@@ -1019,7 +941,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				25
+				23
 			],
 			[
 				"visible",
@@ -1040,8 +962,8 @@ aStepsTable = [
 		]
 	],
 	[
-		28,
-		27,
+		26,
+		25,
 		[
 			[
 				"name",
@@ -1057,7 +979,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				25
+				23
 			],
 			[
 				"visible",
@@ -1078,8 +1000,8 @@ aStepsTable = [
 		]
 	],
 	[
-		30,
 		28,
+		26,
 		[
 			[
 				"name",
@@ -1091,12 +1013,12 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# Initialization
+				"#Initialization
 "
 			],
 			[
 				"interactionid",
-				26
+				24
 			],
 			[
 				"visible",
@@ -1117,8 +1039,8 @@ aStepsTable = [
 		]
 	],
 	[
-		31,
-		28,
+		29,
+		26,
 		[
 			[
 				"name",
@@ -1130,7 +1052,84 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# --------------------------------------------------------------------------------------
+				"#--------------------------------------------------------------------------------------
+"
+			],
+			[
+				"interactionid",
+				25
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"--------------------------------------------------------------------------------------"
+			]
+		]
+	],
+	[
+		30,
+		26,
+		[
+			[
+				"name",
+				"InitWindow(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">screenWidth,screenHeight,&quot;raylib&nbsp;-&nbsp;Aiming&nbsp;at&nbsp;3d&nbsp;moving&nbsp;targets&quot;</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"InitWindow(screenWidth,screenHeight,"+char(34)+"raylib - Aiming at 3d moving targets"+char(34)+")"
+			],
+			[
+				"interactionid",
+				26
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"InitWindow(screenWidth,screenHeight,"+char(34)+"raylib - Aiming at 3d moving targets"+char(34)+")"
+			]
+		]
+	],
+	[
+		31,
+		26,
+		[
+			[
+				"name",
+				"Define the camera to look into our 3d world"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Define the camera to look into our 3d world
 "
 			],
 			[
@@ -1151,17 +1150,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"--------------------------------------------------------------------------------------"
+				"Define the camera to look into our 3d world"
 			]
 		]
 	],
 	[
 		32,
-		28,
+		26,
 		[
 			[
 				"name",
-				"InitWindow(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">screenWidth,screenHeight,&quot;raylib&nbsp;-&nbsp;Aiming&nbsp;at&nbsp;3d&nbsp;moving&nbsp;targets&quot;</font></span>)"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Camera3D(0.0,20.0,-40.0,0.0,0.0,0.0,0.0,1.0,0.0,45.0,CAMERA_PERSPECTIVE)</font></span>"
 			],
 			[
 				"active",
@@ -1169,7 +1168,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"InitWindow(screenWidth,screenHeight,"+char(34)+"raylib - Aiming at 3d moving targets"+char(34)+")"
+				"camera = Camera3D(0.0,20.0,-40.0,0.0,0.0,0.0,0.0,1.0,0.0,45.0,CAMERA_PERSPECTIVE)"
 			],
 			[
 				"interactionid",
@@ -1189,17 +1188,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"InitWindow(screenWidth,screenHeight,"+char(34)+"raylib - Aiming at 3d moving targets"+char(34)+")"
+				"camera = Camera3D(0.0,20.0,-40.0,0.0,0.0,0.0,0.0,1.0,0.0,45.0,CAMERA_PERSPECTIVE)"
 			]
 		]
 	],
 	[
 		33,
-		28,
+		26,
 		[
 			[
 				"name",
-				"Define the camera to look into our 3d world"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">frame</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">0</font></span>"
 			],
 			[
 				"active",
@@ -1207,8 +1206,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# Define the camera to look into our 3d world
-"
+				"frame = 0"
 			],
 			[
 				"interactionid",
@@ -1224,21 +1222,21 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				1
+				2
 			],
 			[
 				"plainname",
-				"Define the camera to look into our 3d world"
+				"frame = 0"
 			]
 		]
 	],
 	[
 		34,
-		28,
+		26,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Camera3D(0.0,20.0,-40.0,0.0,0.0,0.0,0.0,1.0,0.0,45.0,CAMERA_PERSPECTIVE)</font></span>"
+				"frame counter"
 			],
 			[
 				"active",
@@ -1246,7 +1244,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"camera = Camera3D(0.0,20.0,-40.0,0.0,0.0,0.0,0.0,1.0,0.0,45.0,CAMERA_PERSPECTIVE)"
+				"#frame counter
+"
 			],
 			[
 				"interactionid",
@@ -1262,21 +1261,21 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				2
+				1
 			],
 			[
 				"plainname",
-				"camera = Camera3D(0.0,20.0,-40.0,0.0,0.0,0.0,0.0,1.0,0.0,45.0,CAMERA_PERSPECTIVE)"
+				"frame counter"
 			]
 		]
 	],
 	[
 		35,
-		28,
+		26,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">frame</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">0</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">ang</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">0</font></span>"
 			],
 			[
 				"active",
@@ -1284,7 +1283,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"frame = 0"
+				"ang = 0"
 			],
 			[
 				"interactionid",
@@ -1304,17 +1303,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"frame = 0"
+				"ang = 0"
 			]
 		]
 	],
 	[
 		36,
-		28,
+		26,
 		[
 			[
 				"name",
-				"frame counter"
+				"camera rotation"
 			],
 			[
 				"active",
@@ -1322,7 +1321,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# frame counter
+				"#camera rotation
 "
 			],
 			[
@@ -1343,17 +1342,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"frame counter"
+				"camera rotation"
 			]
 		]
 	],
 	[
 		37,
-		28,
+		26,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">ang</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">0</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">targetSpeed</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">0.2</font></span>"
 			],
 			[
 				"active",
@@ -1361,7 +1360,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"ang = 0"
+				"targetSpeed = 0.2"
 			],
 			[
 				"interactionid",
@@ -1381,17 +1380,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"ang = 0"
+				"targetSpeed = 0.2"
 			]
 		]
 	],
 	[
 		38,
-		28,
+		26,
 		[
 			[
 				"name",
-				"camera rotation"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">shotSpeed</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">0.6</font></span>"
 			],
 			[
 				"active",
@@ -1399,8 +1398,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# camera rotation
-"
+				"shotSpeed = 0.6"
 			],
 			[
 				"interactionid",
@@ -1416,21 +1414,21 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				1
+				2
 			],
 			[
 				"plainname",
-				"camera rotation"
+				"shotSpeed = 0.6"
 			]
 		]
 	],
 	[
 		39,
-		28,
+		26,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">targetSpeed</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">0.2</font></span>"
+				"could build these vectors into a struct..."
 			],
 			[
 				"active",
@@ -1438,7 +1436,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"targetSpeed = 0.2"
+				"#could build these vectors into a struct...
+"
 			],
 			[
 				"interactionid",
@@ -1454,21 +1453,21 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				2
+				1
 			],
 			[
 				"plainname",
-				"targetSpeed = 0.2"
+				"could build these vectors into a struct..."
 			]
 		]
 	],
 	[
 		40,
-		28,
+		26,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">shotSpeed</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">0.6</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">targetPos</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">path[1]</font></span>"
 			],
 			[
 				"active",
@@ -1476,7 +1475,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"shotSpeed = 0.6"
+				"targetPos = path[1]"
 			],
 			[
 				"interactionid",
@@ -1496,17 +1495,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"shotSpeed = 0.6"
+				"targetPos = path[1]"
 			]
 		]
 	],
 	[
 		41,
-		28,
+		26,
 		[
 			[
 				"name",
-				"could build these vectors into a struct..."
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">targetDest</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">path[2]</font></span>"
 			],
 			[
 				"active",
@@ -1514,8 +1513,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# could build these vectors into a struct...
-"
+				"targetDest = path[2]"
 			],
 			[
 				"interactionid",
@@ -1531,21 +1529,21 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				1
+				2
 			],
 			[
 				"plainname",
-				"could build these vectors into a struct..."
+				"targetDest = path[2]"
 			]
 		]
 	],
 	[
 		42,
-		28,
+		26,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">targetPos</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">path[1]</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">targetInc</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">calcInc(targetPos,targetDest,targetSpeed)</font></span>"
 			],
 			[
 				"active",
@@ -1553,7 +1551,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"targetPos = path[1]"
+				"targetInc = calcInc(targetPos,targetDest,targetSpeed)"
 			],
 			[
 				"interactionid",
@@ -1573,17 +1571,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"targetPos = path[1]"
+				"targetInc = calcInc(targetPos,targetDest,targetSpeed)"
 			]
 		]
 	],
 	[
 		43,
-		28,
+		26,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">targetDest</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">path[2]</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">lastTarget</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector3(0.0,0.0,0.0)</font></span>"
 			],
 			[
 				"active",
@@ -1591,7 +1589,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"targetDest = path[2]"
+				"lastTarget = Vector3(0.0,0.0,0.0)"
 			],
 			[
 				"interactionid",
@@ -1611,17 +1609,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"targetDest = path[2]"
+				"lastTarget = Vector3(0.0,0.0,0.0)"
 			]
 		]
 	],
 	[
 		44,
-		28,
+		26,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">targetInc</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">calcInc(targetPos,targetDest,targetSpeed)</font></span>"
+				"so velocity vector can be calculated"
 			],
 			[
 				"active",
@@ -1629,7 +1627,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"targetInc = calcInc(targetPos,targetDest,targetSpeed)"
+				"#so velocity vector can be calculated
+"
 			],
 			[
 				"interactionid",
@@ -1645,21 +1644,21 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				2
+				1
 			],
 			[
 				"plainname",
-				"targetInc = calcInc(targetPos,targetDest,targetSpeed)"
+				"so velocity vector can be calculated"
 			]
 		]
 	],
 	[
 		45,
-		28,
+		26,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">lastTarget</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector3(0.0,0.0,0.0)</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">targetPathPos</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1</font></span>"
 			],
 			[
 				"active",
@@ -1667,7 +1666,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"lastTarget = Vector3(0.0,0.0,0.0)"
+				"targetPathPos = 1"
 			],
 			[
 				"interactionid",
@@ -1687,17 +1686,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"lastTarget = Vector3(0.0,0.0,0.0)"
+				"targetPathPos = 1"
 			]
 		]
 	],
 	[
 		46,
-		28,
+		26,
 		[
 			[
 				"name",
-				"so velocity vector can be calculated"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">shootWait</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">10</font></span>"
 			],
 			[
 				"active",
@@ -1705,8 +1704,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# so velocity vector can be calculated
-"
+				"shootWait = 10"
 			],
 			[
 				"interactionid",
@@ -1722,21 +1720,21 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				1
+				2
 			],
 			[
 				"plainname",
-				"so velocity vector can be calculated"
+				"shootWait = 10"
 			]
 		]
 	],
 	[
 		47,
-		28,
+		26,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">targetPathPos</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">shotActive</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">false</font></span>"
 			],
 			[
 				"active",
@@ -1744,7 +1742,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"targetPathPos = 1"
+				"shotActive = false"
 			],
 			[
 				"interactionid",
@@ -1764,17 +1762,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"targetPathPos = 1"
+				"shotActive = false"
 			]
 		]
 	],
 	[
 		48,
-		28,
+		26,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">shootWait</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">10</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">shotStart</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector3(0.0,0.0,0.0)</font></span>"
 			],
 			[
 				"active",
@@ -1782,7 +1780,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"shootWait = 10"
+				"shotStart = Vector3(0.0,0.0,0.0)"
 			],
 			[
 				"interactionid",
@@ -1802,17 +1800,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"shootWait = 10"
+				"shotStart = Vector3(0.0,0.0,0.0)"
 			]
 		]
 	],
 	[
 		49,
-		28,
+		26,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">shotActive</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">false</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">shotPos</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector3(0.0,0.0,0.0)</font></span>"
 			],
 			[
 				"active",
@@ -1820,7 +1818,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"shotActive = false"
+				"shotPos = Vector3(0.0,0.0,0.0)"
 			],
 			[
 				"interactionid",
@@ -1840,17 +1838,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"shotActive = false"
+				"shotPos = Vector3(0.0,0.0,0.0)"
 			]
 		]
 	],
 	[
 		50,
-		28,
+		26,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">shotStart</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector3(0.0,0.0,0.0)</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">shotDest</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector3(0.0,0.0,0.0)</font></span>"
 			],
 			[
 				"active",
@@ -1858,7 +1856,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"shotStart = Vector3(0.0,0.0,0.0)"
+				"shotDest = Vector3(0.0,0.0,0.0)"
 			],
 			[
 				"interactionid",
@@ -1878,17 +1876,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"shotStart = Vector3(0.0,0.0,0.0)"
+				"shotDest = Vector3(0.0,0.0,0.0)"
 			]
 		]
 	],
 	[
 		51,
-		28,
+		26,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">shotPos</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector3(0.0,0.0,0.0)</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">shotInc</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector3(0.0,0.0,0.0)</font></span>"
 			],
 			[
 				"active",
@@ -1896,7 +1894,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"shotPos = Vector3(0.0,0.0,0.0)"
+				"shotInc = Vector3(0.0,0.0,0.0)"
 			],
 			[
 				"interactionid",
@@ -1916,17 +1914,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"shotPos = Vector3(0.0,0.0,0.0)"
+				"shotInc = Vector3(0.0,0.0,0.0)"
 			]
 		]
 	],
 	[
 		52,
-		28,
+		26,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">shotDest</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector3(0.0,0.0,0.0)</font></span>"
+				"SetTargetFPS(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">60</font></span>)"
 			],
 			[
 				"active",
@@ -1934,7 +1932,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"shotDest = Vector3(0.0,0.0,0.0)"
+				"SetTargetFPS(60)"
 			],
 			[
 				"interactionid",
@@ -1954,17 +1952,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"shotDest = Vector3(0.0,0.0,0.0)"
+				"SetTargetFPS(60)"
 			]
 		]
 	],
 	[
 		53,
-		28,
+		26,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">shotInc</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector3(0.0,0.0,0.0)</font></span>"
+				"Set  to run at 60 frames-per-second"
 			],
 			[
 				"active",
@@ -1972,7 +1970,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"shotInc = Vector3(0.0,0.0,0.0)"
+				"#Set  to run at 60 frames-per-second
+"
 			],
 			[
 				"interactionid",
@@ -1988,21 +1987,21 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				2
+				1
 			],
 			[
 				"plainname",
-				"shotInc = Vector3(0.0,0.0,0.0)"
+				"Set  to run at 60 frames-per-second"
 			]
 		]
 	],
 	[
 		54,
-		28,
+		26,
 		[
 			[
 				"name",
-				"SetTargetFPS(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">60</font></span>)"
+				"--------------------------------------------------------------------------------------"
 			],
 			[
 				"active",
@@ -2010,7 +2009,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"SetTargetFPS(60)"
+				"#--------------------------------------------------------------------------------------
+"
 			],
 			[
 				"interactionid",
@@ -2026,21 +2026,21 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				2
+				1
 			],
 			[
 				"plainname",
-				"SetTargetFPS(60)"
+				"--------------------------------------------------------------------------------------"
 			]
 		]
 	],
 	[
 		55,
-		28,
+		26,
 		[
 			[
 				"name",
-				"Set  to run at 60 frames-per-second"
+				"Main game loop"
 			],
 			[
 				"active",
@@ -2048,7 +2048,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# Set  to run at 60 frames-per-second
+				"#Main game loop
 "
 			],
 			[
@@ -2069,17 +2069,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Set  to run at 60 frames-per-second"
+				"Main game loop"
 			]
 		]
 	],
 	[
 		56,
-		28,
+		26,
 		[
 			[
 				"name",
-				"--------------------------------------------------------------------------------------"
+				"Detect window close button or ESC key"
 			],
 			[
 				"active",
@@ -2087,7 +2087,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# --------------------------------------------------------------------------------------
+				"#Detect window close button or ESC key
 "
 			],
 			[
@@ -2108,17 +2108,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"--------------------------------------------------------------------------------------"
+				"Detect window close button or ESC key"
 			]
 		]
 	],
 	[
 		57,
-		28,
+		26,
 		[
 			[
 				"name",
-				"Main game loop"
+				"Update"
 			],
 			[
 				"active",
@@ -2126,7 +2126,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# Main game loop
+				"#Update
 "
 			],
 			[
@@ -2147,17 +2147,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Main game loop"
+				"Update"
 			]
 		]
 	],
 	[
 		58,
-		28,
+		26,
 		[
 			[
 				"name",
-				"Detect window close button or ESC key"
+				"----------------------------------------------------------------------------------"
 			],
 			[
 				"active",
@@ -2165,7 +2165,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# Detect window close button or ESC key
+				"#----------------------------------------------------------------------------------
 "
 			],
 			[
@@ -2186,91 +2186,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Detect window close button or ESC key"
+				"----------------------------------------------------------------------------------"
 			]
 		]
 	],
 	[
 		59,
-		28,
-		[
-			[
-				"name",
-				"Update"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"# Update
-"
-			],
-			[
-				"interactionid",
-				55
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"Update"
-			]
-		]
-	],
-	[
-		60,
-		28,
-		[
-			[
-				"name",
-				"----------------------------------------------------------------------------------"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"# ----------------------------------------------------------------------------------
-"
-			],
-			[
-				"interactionid",
-				56
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"----------------------------------------------------------------------------------"
-			]
-		]
-	],
-	[
-		61,
-		28,
+		26,
 		[
 			[
 				"name",
@@ -2286,7 +2208,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				57
+				55
 			],
 			[
 				"visible",
@@ -2307,8 +2229,8 @@ aStepsTable = [
 		]
 	],
 	[
-		62,
-		61,
+		60,
+		59,
 		[
 			[
 				"name",
@@ -2324,7 +2246,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				57
+				55
 			],
 			[
 				"visible",
@@ -2345,8 +2267,8 @@ aStepsTable = [
 		]
 	],
 	[
-		64,
 		62,
+		60,
 		[
 			[
 				"name",
@@ -2359,6 +2281,82 @@ aStepsTable = [
 			[
 				"code",
 				"frame++"
+			],
+			[
+				"interactionid",
+				56
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"frame++"
+			]
+		]
+	],
+	[
+		63,
+		60,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">ang&nbsp;+=&nbsp;0.0025</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"ang += 0.0025"
+			],
+			[
+				"interactionid",
+				57
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"ang += 0.0025"
+			]
+		]
+	],
+	[
+		64,
+		60,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera.position.x</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cos(ang)*50.0</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"camera.position.x = cos(ang)*50.0"
 			],
 			[
 				"interactionid",
@@ -2378,17 +2376,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"frame++"
+				"camera.position.x = cos(ang)*50.0"
 			]
 		]
 	],
 	[
 		65,
-		62,
+		60,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">ang&nbsp;+=&nbsp;0.0025</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera.position.z</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">sin(ang)*50.0</font></span>"
 			],
 			[
 				"active",
@@ -2396,7 +2394,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"ang += 0.0025"
+				"camera.position.z = sin(ang)*50.0"
 			],
 			[
 				"interactionid",
@@ -2416,17 +2414,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"ang += 0.0025"
+				"camera.position.z = sin(ang)*50.0"
 			]
 		]
 	],
 	[
 		66,
-		62,
+		60,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera.position.x</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cos(ang)*50.0</font></span>"
+				"UpdateCamera(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera,CAMERA_FIRST_PERSON</font></span>)"
 			],
 			[
 				"active",
@@ -2434,7 +2432,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"camera.position.x = cos(ang)*50.0"
+				"UpdateCamera(camera,CAMERA_FIRST_PERSON)"
 			],
 			[
 				"interactionid",
@@ -2454,89 +2452,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"camera.position.x = cos(ang)*50.0"
+				"UpdateCamera(camera,CAMERA_FIRST_PERSON)"
 			]
 		]
 	],
 	[
 		67,
-		62,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera.position.z</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">sin(ang)*50.0</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"camera.position.z = sin(ang)*50.0"
-			],
-			[
-				"interactionid",
-				61
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"camera.position.z = sin(ang)*50.0"
-			]
-		]
-	],
-	[
-		68,
-		62,
-		[
-			[
-				"name",
-				"UpdateCamera(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"UpdateCamera(camera)"
-			],
-			[
-				"interactionid",
-				62
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"UpdateCamera(camera)"
-			]
-		]
-	],
-	[
-		69,
-		62,
+		60,
 		[
 			[
 				"name",
@@ -2552,7 +2474,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				63
+				61
 			],
 			[
 				"visible",
@@ -2573,8 +2495,8 @@ aStepsTable = [
 		]
 	],
 	[
-		70,
-		69,
+		68,
+		67,
 		[
 			[
 				"name",
@@ -2590,7 +2512,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				63
+				61
 			],
 			[
 				"visible",
@@ -2611,8 +2533,8 @@ aStepsTable = [
 		]
 	],
 	[
-		72,
 		70,
+		68,
 		[
 			[
 				"name",
@@ -2628,7 +2550,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				64
+				62
 			],
 			[
 				"visible",
@@ -2649,8 +2571,8 @@ aStepsTable = [
 		]
 	],
 	[
-		73,
-		70,
+		71,
+		68,
 		[
 			[
 				"name",
@@ -2666,7 +2588,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				65
+				63
 			],
 			[
 				"visible",
@@ -2687,8 +2609,8 @@ aStepsTable = [
 		]
 	],
 	[
-		74,
-		70,
+		72,
+		68,
 		[
 			[
 				"name",
@@ -2704,7 +2626,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				66
+				64
 			],
 			[
 				"visible",
@@ -2725,8 +2647,8 @@ aStepsTable = [
 		]
 	],
 	[
-		75,
-		74,
+		73,
+		72,
 		[
 			[
 				"name",
@@ -2742,7 +2664,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				66
+				64
 			],
 			[
 				"visible",
@@ -2763,8 +2685,8 @@ aStepsTable = [
 		]
 	],
 	[
-		77,
 		75,
+		73,
 		[
 			[
 				"name",
@@ -2777,6 +2699,82 @@ aStepsTable = [
 			[
 				"code",
 				"screenWidth = 1920"
+			],
+			[
+				"interactionid",
+				65
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"screenWidth = 1920"
+			]
+		]
+	],
+	[
+		76,
+		73,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">screenHeight</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1080</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"screenHeight = 1080"
+			],
+			[
+				"interactionid",
+				66
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"screenHeight = 1080"
+			]
+		]
+	],
+	[
+		77,
+		73,
+		[
+			[
+				"name",
+				"SetWindowSize(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">screenWidth,screenHeight</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"SetWindowSize(screenWidth,screenHeight)"
 			],
 			[
 				"interactionid",
@@ -2796,17 +2794,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"screenWidth = 1920"
+				"SetWindowSize(screenWidth,screenHeight)"
 			]
 		]
 	],
 	[
 		78,
-		75,
+		73,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">screenHeight</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1080</font></span>"
+				"Else"
 			],
 			[
 				"active",
@@ -2814,7 +2812,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"screenHeight = 1080"
+				"else"
 			],
 			[
 				"interactionid",
@@ -2834,17 +2832,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"screenHeight = 1080"
+				"Else"
 			]
 		]
 	],
 	[
 		79,
-		75,
+		78,
 		[
 			[
 				"name",
-				"SetWindowSize(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">screenWidth,screenHeight</font></span>)"
+				"Start Here"
 			],
 			[
 				"active",
@@ -2852,7 +2850,45 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"SetWindowSize(screenWidth,screenHeight)"
+				""
+			],
+			[
+				"interactionid",
+				68
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		80,
+		79,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">screenWidth</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1920/3</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"screenWidth = 1920/3"
 			],
 			[
 				"interactionid",
@@ -2872,55 +2908,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"SetWindowSize(screenWidth,screenHeight)"
-			]
-		]
-	],
-	[
-		80,
-		75,
-		[
-			[
-				"name",
-				"Else"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"else"
-			],
-			[
-				"interactionid",
-				70
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Else"
+				"screenWidth = 1920/3"
 			]
 		]
 	],
 	[
 		81,
-		80,
+		79,
 		[
 			[
 				"name",
-				"Start Here"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">screenHeight</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1080/3</font></span>"
 			],
 			[
 				"active",
@@ -2928,7 +2926,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"screenHeight = 1080/3"
 			],
 			[
 				"interactionid",
@@ -2940,25 +2938,25 @@ aStepsTable = [
 			],
 			[
 				"stepnumber",
-				2
+				1
 			],
 			[
 				"steptype",
-				3
+				2
 			],
 			[
 				"plainname",
-				"Start Here"
+				"screenHeight = 1080/3"
 			]
 		]
 	],
 	[
 		82,
-		81,
+		79,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">screenWidth</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1920/3</font></span>"
+				"SetWindowSize(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">screenWidth,screenHeight</font></span>)"
 			],
 			[
 				"active",
@@ -2966,7 +2964,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"screenWidth = 1920/3"
+				"SetWindowSize(screenWidth,screenHeight)"
 			],
 			[
 				"interactionid",
@@ -2986,17 +2984,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"screenWidth = 1920/3"
+				"SetWindowSize(screenWidth,screenHeight)"
 			]
 		]
 	],
 	[
-		83,
-		81,
+		74,
+		72,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">screenHeight</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1080/3</font></span>"
+				"End of IF Statement"
 			],
 			[
 				"active",
@@ -3004,7 +3002,84 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"screenHeight = 1080/3"
+				"} "
+			],
+			[
+				"interactionid",
+				64
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		69,
+		67,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				61
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		83,
+		60,
+		[
+			[
+				"name",
+				"update target position"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#update target position
+"
 			],
 			[
 				"interactionid",
@@ -3020,21 +3095,21 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				2
+				1
 			],
 			[
 				"plainname",
-				"screenHeight = 1080/3"
+				"update target position"
 			]
 		]
 	],
 	[
 		84,
-		81,
+		60,
 		[
 			[
 				"name",
-				"SetWindowSize(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">screenWidth,screenHeight</font></span>)"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">lastTarget</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">targetPos</font></span>"
 			],
 			[
 				"active",
@@ -3042,7 +3117,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"SetWindowSize(screenWidth,screenHeight)"
+				"lastTarget = targetPos"
 			],
 			[
 				"interactionid",
@@ -3062,166 +3137,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"SetWindowSize(screenWidth,screenHeight)"
-			]
-		]
-	],
-	[
-		76,
-		74,
-		[
-			[
-				"name",
-				"End of IF Statement"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				66
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of IF Statement"
-			]
-		]
-	],
-	[
-		71,
-		69,
-		[
-			[
-				"name",
-				"End of IF Statement"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				63
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of IF Statement"
+				"lastTarget = targetPos"
 			]
 		]
 	],
 	[
 		85,
-		62,
-		[
-			[
-				"name",
-				"update target position"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"# update target position
-"
-			],
-			[
-				"interactionid",
-				74
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"update target position"
-			]
-		]
-	],
-	[
-		86,
-		62,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">lastTarget</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">targetPos</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"lastTarget = targetPos"
-			],
-			[
-				"interactionid",
-				75
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"lastTarget = targetPos"
-			]
-		]
-	],
-	[
-		87,
-		62,
+		60,
 		[
 			[
 				"name",
@@ -3237,7 +3159,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				76
+				74
 			],
 			[
 				"visible",
@@ -3258,8 +3180,8 @@ aStepsTable = [
 		]
 	],
 	[
-		88,
-		62,
+		86,
+		60,
 		[
 			[
 				"name",
@@ -3271,12 +3193,12 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# get new path destination
+				"#get new path destination
 "
 			],
 			[
 				"interactionid",
-				77
+				75
 			],
 			[
 				"visible",
@@ -3297,8 +3219,8 @@ aStepsTable = [
 		]
 	],
 	[
-		89,
-		62,
+		87,
+		60,
 		[
 			[
 				"name",
@@ -3314,7 +3236,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				78
+				76
 			],
 			[
 				"visible",
@@ -3335,8 +3257,8 @@ aStepsTable = [
 		]
 	],
 	[
-		90,
-		89,
+		88,
+		87,
 		[
 			[
 				"name",
@@ -3352,7 +3274,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				78
+				76
 			],
 			[
 				"visible",
@@ -3373,8 +3295,8 @@ aStepsTable = [
 		]
 	],
 	[
-		92,
 		90,
+		88,
 		[
 			[
 				"name",
@@ -3390,7 +3312,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				79
+				77
 			],
 			[
 				"visible",
@@ -3411,8 +3333,8 @@ aStepsTable = [
 		]
 	],
 	[
-		93,
-		90,
+		91,
+		88,
 		[
 			[
 				"name",
@@ -3428,7 +3350,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				80
+				78
 			],
 			[
 				"visible",
@@ -3449,8 +3371,8 @@ aStepsTable = [
 		]
 	],
 	[
-		94,
-		93,
+		92,
+		91,
 		[
 			[
 				"name",
@@ -3466,7 +3388,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				80
+				78
 			],
 			[
 				"visible",
@@ -3487,8 +3409,8 @@ aStepsTable = [
 		]
 	],
 	[
-		96,
 		94,
+		92,
 		[
 			[
 				"name",
@@ -3504,7 +3426,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				81
+				79
 			],
 			[
 				"visible",
@@ -3525,160 +3447,8 @@ aStepsTable = [
 		]
 	],
 	[
-		95,
 		93,
-		[
-			[
-				"name",
-				"End of IF Statement"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				80
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of IF Statement"
-			]
-		]
-	],
-	[
-		97,
-		90,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">targetPos</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">targetDest</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"targetPos = targetDest"
-			],
-			[
-				"interactionid",
-				82
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"targetPos = targetDest"
-			]
-		]
-	],
-	[
-		98,
-		90,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">targetDest</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">path[targetPathPos]</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"targetDest = path[targetPathPos]"
-			],
-			[
-				"interactionid",
-				83
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"targetDest = path[targetPathPos]"
-			]
-		]
-	],
-	[
-		99,
-		90,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">targetInc</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">calcInc(targetPos,targetDest,targetSpeed)</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"targetInc = calcInc(targetPos,targetDest,targetSpeed)"
-			],
-			[
-				"interactionid",
-				84
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"targetInc = calcInc(targetPos,targetDest,targetSpeed)"
-			]
-		]
-	],
-	[
 		91,
-		89,
 		[
 			[
 				"name",
@@ -3715,8 +3485,160 @@ aStepsTable = [
 		]
 	],
 	[
-		100,
-		62,
+		95,
+		88,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">targetPos</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">targetDest</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"targetPos = targetDest"
+			],
+			[
+				"interactionid",
+				80
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"targetPos = targetDest"
+			]
+		]
+	],
+	[
+		96,
+		88,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">targetDest</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">path[targetPathPos]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"targetDest = path[targetPathPos]"
+			],
+			[
+				"interactionid",
+				81
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"targetDest = path[targetPathPos]"
+			]
+		]
+	],
+	[
+		97,
+		88,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">targetInc</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">calcInc(targetPos,targetDest,targetSpeed)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"targetInc = calcInc(targetPos,targetDest,targetSpeed)"
+			],
+			[
+				"interactionid",
+				82
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"targetInc = calcInc(targetPos,targetDest,targetSpeed)"
+			]
+		]
+	],
+	[
+		89,
+		87,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				76
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		98,
+		60,
 		[
 			[
 				"name",
@@ -3728,7 +3650,85 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# update shot
+				"#update shot
+"
+			],
+			[
+				"interactionid",
+				83
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"update shot"
+			]
+		]
+	],
+	[
+		99,
+		60,
+		[
+			[
+				"name",
+				"if the shot has reached its destination"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#if the shot has reached its destination
+"
+			],
+			[
+				"interactionid",
+				84
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"if the shot has reached its destination"
+			]
+		]
+	],
+	[
+		100,
+		60,
+		[
+			[
+				"name",
+				"deactivate it and wait for a random interval"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#deactivate it and wait for a random interval
 "
 			],
 			[
@@ -3749,17 +3749,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"update shot"
+				"deactivate it and wait for a random interval"
 			]
 		]
 	],
 	[
 		101,
-		62,
+		60,
 		[
 			[
 				"name",
-				"if the shot has reached its destination"
+				"before shooting again"
 			],
 			[
 				"active",
@@ -3767,7 +3767,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# if the shot has reached its destination
+				"#before shooting again
 "
 			],
 			[
@@ -3788,91 +3788,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"if the shot has reached its destination"
+				"before shooting again"
 			]
 		]
 	],
 	[
 		102,
-		62,
-		[
-			[
-				"name",
-				"deactivate it and wait for a random interval"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"# deactivate it and wait for a random interval
-"
-			],
-			[
-				"interactionid",
-				87
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"deactivate it and wait for a random interval"
-			]
-		]
-	],
-	[
-		103,
-		62,
-		[
-			[
-				"name",
-				"before shooting again"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"# before shooting again
-"
-			],
-			[
-				"interactionid",
-				88
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"before shooting again"
-			]
-		]
-	],
-	[
-		104,
-		62,
+		60,
 		[
 			[
 				"name",
@@ -3888,7 +3810,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				89
+				87
 			],
 			[
 				"visible",
@@ -3909,8 +3831,8 @@ aStepsTable = [
 		]
 	],
 	[
-		105,
-		104,
+		103,
+		102,
 		[
 			[
 				"name",
@@ -3926,7 +3848,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				89
+				87
 			],
 			[
 				"visible",
@@ -3947,8 +3869,8 @@ aStepsTable = [
 		]
 	],
 	[
-		107,
 		105,
+		103,
 		[
 			[
 				"name",
@@ -3964,7 +3886,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				90
+				88
 			],
 			[
 				"visible",
@@ -3985,8 +3907,8 @@ aStepsTable = [
 		]
 	],
 	[
-		108,
-		107,
+		106,
+		105,
 		[
 			[
 				"name",
@@ -4002,7 +3924,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				90
+				88
 			],
 			[
 				"visible",
@@ -4023,8 +3945,8 @@ aStepsTable = [
 		]
 	],
 	[
-		110,
 		108,
+		106,
 		[
 			[
 				"name",
@@ -4040,7 +3962,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				91
+				89
 			],
 			[
 				"visible",
@@ -4061,8 +3983,8 @@ aStepsTable = [
 		]
 	],
 	[
-		111,
-		108,
+		109,
+		106,
 		[
 			[
 				"name",
@@ -4075,6 +3997,121 @@ aStepsTable = [
 			[
 				"code",
 				"shootWait = GetRandomValue(30,120)"
+			],
+			[
+				"interactionid",
+				90
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"shootWait = GetRandomValue(30,120)"
+			]
+		]
+	],
+	[
+		107,
+		105,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				88
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		110,
+		103,
+		[
+			[
+				"name",
+				"update shot position"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#update shot position
+"
+			],
+			[
+				"interactionid",
+				91
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"update shot position"
+			]
+		]
+	],
+	[
+		111,
+		103,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">shotPos</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector3Add(shotPos,shotInc)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"shotPos = Vector3Add(shotPos,shotInc)"
 			],
 			[
 				"interactionid",
@@ -4094,13 +4131,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"shootWait = GetRandomValue(30,120)"
+				"shotPos = Vector3Add(shotPos,shotInc)"
 			]
 		]
 	],
 	[
-		109,
-		107,
+		104,
+		102,
 		[
 			[
 				"name",
@@ -4116,7 +4153,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				90
+				87
 			],
 			[
 				"visible",
@@ -4138,122 +4175,7 @@ aStepsTable = [
 	],
 	[
 		112,
-		105,
-		[
-			[
-				"name",
-				"update shot position"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"# update shot position
-"
-			],
-			[
-				"interactionid",
-				93
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"update shot position"
-			]
-		]
-	],
-	[
-		113,
-		105,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">shotPos</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector3Add(shotPos,shotInc)</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"shotPos = Vector3Add(shotPos,shotInc)"
-			],
-			[
-				"interactionid",
-				94
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"shotPos = Vector3Add(shotPos,shotInc)"
-			]
-		]
-	],
-	[
-		106,
-		104,
-		[
-			[
-				"name",
-				"End of IF Statement"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				89
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of IF Statement"
-			]
-		]
-	],
-	[
-		114,
-		62,
+		60,
 		[
 			[
 				"name",
@@ -4269,7 +4191,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				95
+				93
 			],
 			[
 				"visible",
@@ -4290,8 +4212,8 @@ aStepsTable = [
 		]
 	],
 	[
-		115,
-		114,
+		113,
+		112,
 		[
 			[
 				"name",
@@ -4307,7 +4229,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				95
+				93
 			],
 			[
 				"visible",
@@ -4328,8 +4250,8 @@ aStepsTable = [
 		]
 	],
 	[
-		117,
 		115,
+		113,
 		[
 			[
 				"name",
@@ -4345,7 +4267,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				96
+				94
 			],
 			[
 				"visible",
@@ -4366,8 +4288,122 @@ aStepsTable = [
 		]
 	],
 	[
+		116,
+		115,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				94
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
 		118,
-		117,
+		116,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">shootWait--</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"shootWait--"
+			],
+			[
+				"interactionid",
+				95
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"shootWait--"
+			]
+		]
+	],
+	[
+		119,
+		116,
+		[
+			[
+				"name",
+				"Else"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"else"
+			],
+			[
+				"interactionid",
+				96
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Else"
+			]
+		]
+	],
+	[
+		120,
+		119,
 		[
 			[
 				"name",
@@ -4404,12 +4440,12 @@ aStepsTable = [
 		]
 	],
 	[
+		121,
 		120,
-		118,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">shootWait--</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">shotActive</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">true</font></span>"
 			],
 			[
 				"active",
@@ -4417,7 +4453,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"shootWait--"
+				"shotActive = true"
 			],
 			[
 				"interactionid",
@@ -4437,55 +4473,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"shootWait--"
-			]
-		]
-	],
-	[
-		121,
-		118,
-		[
-			[
-				"name",
-				"Else"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"else"
-			],
-			[
-				"interactionid",
-				98
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Else"
+				"shotActive = true"
 			]
 		]
 	],
 	[
 		122,
-		121,
+		120,
 		[
 			[
 				"name",
-				"Start Here"
+				"random start point"
 			],
 			[
 				"active",
@@ -4493,7 +4491,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
+				"#random start point
+"
 			],
 			[
 				"interactionid",
@@ -4505,25 +4504,25 @@ aStepsTable = [
 			],
 			[
 				"stepnumber",
-				2
+				1
 			],
 			[
 				"steptype",
-				3
+				1
 			],
 			[
 				"plainname",
-				"Start Here"
+				"random start point"
 			]
 		]
 	],
 	[
 		123,
-		122,
+		120,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">shotActive</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">true</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">shotStart</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector3(GetRandomValue(-40,40)/10.0,0,GetRandomValue(-40,40)/10.0)</font></span>"
 			],
 			[
 				"active",
@@ -4531,7 +4530,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"shotActive = true"
+				"shotStart = Vector3(GetRandomValue(-40,40)/10.0,0,GetRandomValue(-40,40)/10.0)"
 			],
 			[
 				"interactionid",
@@ -4551,17 +4550,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"shotActive = true"
+				"shotStart = Vector3(GetRandomValue(-40,40)/10.0,0,GetRandomValue(-40,40)/10.0)"
 			]
 		]
 	],
 	[
 		124,
-		122,
+		120,
 		[
 			[
 				"name",
-				"random start point"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">shotPos</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">shotStart</font></span>"
 			],
 			[
 				"active",
@@ -4569,8 +4568,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# random start point
-"
+				"shotPos = shotStart"
 			],
 			[
 				"interactionid",
@@ -4586,21 +4584,21 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				1
+				2
 			],
 			[
 				"plainname",
-				"random start point"
+				"shotPos = shotStart"
 			]
 		]
 	],
 	[
 		125,
-		122,
+		120,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">shotStart</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector3(GetRandomValue(-40,40)/10.0,0,GetRandomValue(-40,40)/10.0)</font></span>"
+				"vector to target and targets velocity vector"
 			],
 			[
 				"active",
@@ -4608,7 +4606,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"shotStart = Vector3(GetRandomValue(-40,40)/10.0,0,GetRandomValue(-40,40)/10.0)"
+				"#vector to target and targets velocity vector
+"
 			],
 			[
 				"interactionid",
@@ -4624,21 +4623,21 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				2
+				1
 			],
 			[
 				"plainname",
-				"shotStart = Vector3(GetRandomValue(-40,40)/10.0,0,GetRandomValue(-40,40)/10.0)"
+				"vector to target and targets velocity vector"
 			]
 		]
 	],
 	[
 		126,
-		122,
+		120,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">shotPos</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">shotStart</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">totarget</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector3Subtract(targetPos,shotPos)</font></span>"
 			],
 			[
 				"active",
@@ -4646,7 +4645,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"shotPos = shotStart"
+				"totarget = Vector3Subtract(targetPos,shotPos)"
 			],
 			[
 				"interactionid",
@@ -4666,17 +4665,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"shotPos = shotStart"
+				"totarget = Vector3Subtract(targetPos,shotPos)"
 			]
 		]
 	],
 	[
 		127,
-		122,
+		120,
 		[
 			[
 				"name",
-				"vector to target and targets velocity vector"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">targVel</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector3Subtract(targetPos,lastTarget)</font></span>"
 			],
 			[
 				"active",
@@ -4684,8 +4683,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# vector to target and targets velocity vector
-"
+				"targVel = Vector3Subtract(targetPos,lastTarget)"
 			],
 			[
 				"interactionid",
@@ -4701,21 +4699,21 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				1
+				2
 			],
 			[
 				"plainname",
-				"vector to target and targets velocity vector"
+				"targVel = Vector3Subtract(targetPos,lastTarget)"
 			]
 		]
 	],
 	[
 		128,
-		122,
+		120,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">totarget</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector3Subtract(targetPos,shotPos)</font></span>"
+				"quadratic terms"
 			],
 			[
 				"active",
@@ -4723,7 +4721,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"totarget = Vector3Subtract(targetPos,shotPos)"
+				"#quadratic terms
+"
 			],
 			[
 				"interactionid",
@@ -4739,21 +4738,21 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				2
+				1
 			],
 			[
 				"plainname",
-				"totarget = Vector3Subtract(targetPos,shotPos)"
+				"quadratic terms"
 			]
 		]
 	],
 	[
 		129,
-		122,
+		120,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">targVel</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector3Subtract(targetPos,lastTarget)</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">a</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector3DotProduct(targVel,targVel)-(shotSpeed*shotSpeed)</font></span>"
 			],
 			[
 				"active",
@@ -4761,7 +4760,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"targVel = Vector3Subtract(targetPos,lastTarget)"
+				"a = Vector3DotProduct(targVel,targVel)-(shotSpeed*shotSpeed)"
 			],
 			[
 				"interactionid",
@@ -4781,17 +4780,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"targVel = Vector3Subtract(targetPos,lastTarget)"
+				"a = Vector3DotProduct(targVel,targVel)-(shotSpeed*shotSpeed)"
 			]
 		]
 	],
 	[
 		130,
-		122,
+		120,
 		[
 			[
 				"name",
-				"quadratic terms"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">b</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">2.0*Vector3DotProduct(targVel,totarget)</font></span>"
 			],
 			[
 				"active",
@@ -4799,8 +4798,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# quadratic terms
-"
+				"b = 2.0*Vector3DotProduct(targVel,totarget)"
 			],
 			[
 				"interactionid",
@@ -4816,21 +4814,21 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				1
+				2
 			],
 			[
 				"plainname",
-				"quadratic terms"
+				"b = 2.0*Vector3DotProduct(targVel,totarget)"
 			]
 		]
 	],
 	[
 		131,
-		122,
+		120,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">a</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector3DotProduct(targVel,targVel)-(shotSpeed*shotSpeed)</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">c</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector3DotProduct(totarget,totarget)</font></span>"
 			],
 			[
 				"active",
@@ -4838,7 +4836,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"a = Vector3DotProduct(targVel,targVel)-(shotSpeed*shotSpeed)"
+				"c = Vector3DotProduct(totarget,totarget)"
 			],
 			[
 				"interactionid",
@@ -4858,17 +4856,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"a = Vector3DotProduct(targVel,targVel)-(shotSpeed*shotSpeed)"
+				"c = Vector3DotProduct(totarget,totarget)"
 			]
 		]
 	],
 	[
 		132,
-		122,
+		120,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">b</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">2.0*Vector3DotProduct(targVel,totarget)</font></span>"
+				"quadratic formula simplified down to this..."
 			],
 			[
 				"active",
@@ -4876,7 +4874,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"b = 2.0*Vector3DotProduct(targVel,totarget)"
+				"#quadratic formula simplified down to this...
+"
 			],
 			[
 				"interactionid",
@@ -4892,21 +4891,21 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				2
+				1
 			],
 			[
 				"plainname",
-				"b = 2.0*Vector3DotProduct(targVel,totarget)"
+				"quadratic formula simplified down to this..."
 			]
 		]
 	],
 	[
 		133,
-		122,
+		120,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">c</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector3DotProduct(totarget,totarget)</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">p</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">-b/(2.0*a)</font></span>"
 			],
 			[
 				"active",
@@ -4914,7 +4913,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"c = Vector3DotProduct(totarget,totarget)"
+				"p = -b/(2.0*a)"
 			],
 			[
 				"interactionid",
@@ -4934,17 +4933,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"c = Vector3DotProduct(totarget,totarget)"
+				"p = -b/(2.0*a)"
 			]
 		]
 	],
 	[
 		134,
-		122,
+		120,
 		[
 			[
 				"name",
-				"quadratic formular simplfied down to this..."
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">q</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">sqrt((b*b)-4.0*a*c)/(2.0*a)</font></span>"
 			],
 			[
 				"active",
@@ -4952,8 +4951,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# quadratic formular simplfied down to this...
-"
+				"q = sqrt((b*b)-4.0*a*c)/(2.0*a)"
 			],
 			[
 				"interactionid",
@@ -4969,21 +4967,21 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				1
+				2
 			],
 			[
 				"plainname",
-				"quadratic formular simplfied down to this..."
+				"q = sqrt((b*b)-4.0*a*c)/(2.0*a)"
 			]
 		]
 	],
 	[
 		135,
-		122,
+		120,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">p</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">-b/(2.0*a)</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">t</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">p-q</font></span>"
 			],
 			[
 				"active",
@@ -4991,7 +4989,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"p = -b/(2.0*a)"
+				"t = p-q"
 			],
 			[
 				"interactionid",
@@ -5011,17 +5009,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"p = -b/(2.0*a)"
+				"t = p-q"
 			]
 		]
 	],
 	[
 		136,
-		122,
+		120,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">q</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">sqrt((b*b)-4.0*a*c)/(2.0*a)</font></span>"
+				"target velocity  t + target pos = aim point (t = time or steps till hit)"
 			],
 			[
 				"active",
@@ -5029,7 +5027,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"q = sqrt((b*b)-4.0*a*c)/(2.0*a)"
+				"#target velocity  t + target pos = aim point (t = time or steps till hit)
+"
 			],
 			[
 				"interactionid",
@@ -5045,21 +5044,21 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				2
+				1
 			],
 			[
 				"plainname",
-				"q = sqrt((b*b)-4.0*a*c)/(2.0*a)"
+				"target velocity  t + target pos = aim point (t = time or steps till hit)"
 			]
 		]
 	],
 	[
 		137,
-		122,
+		120,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">t</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">p-q</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">targVel</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector3Scale(targVel,t)</font></span>"
 			],
 			[
 				"active",
@@ -5067,7 +5066,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"t = p-q"
+				"targVel = Vector3Scale(targVel,t)"
 			],
 			[
 				"interactionid",
@@ -5087,17 +5086,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"t = p-q"
+				"targVel = Vector3Scale(targVel,t)"
 			]
 		]
 	],
 	[
 		138,
-		122,
+		120,
 		[
 			[
 				"name",
-				"target velocity  t + target pos = aim point (t = time or steps till hit)"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">shotDest</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector3Add(targetPos,targVel)</font></span>"
 			],
 			[
 				"active",
@@ -5105,8 +5104,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# target velocity  t + target pos = aim point (t = time or steps till hit)
-"
+				"shotDest = Vector3Add(targetPos,targVel)"
 			],
 			[
 				"interactionid",
@@ -5122,21 +5120,21 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				1
+				2
 			],
 			[
 				"plainname",
-				"target velocity  t + target pos = aim point (t = time or steps till hit)"
+				"shotDest = Vector3Add(targetPos,targVel)"
 			]
 		]
 	],
 	[
 		139,
-		122,
+		120,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">targVel</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector3Scale(targVel,t)</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">shotInc</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">calcInc(shotPos,shotDest,shotSpeed)</font></span>"
 			],
 			[
 				"active",
@@ -5144,7 +5142,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"targVel = Vector3Scale(targVel,t)"
+				"shotInc = calcInc(shotPos,shotDest,shotSpeed)"
 			],
 			[
 				"interactionid",
@@ -5164,17 +5162,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"targVel = Vector3Scale(targVel,t)"
+				"shotInc = calcInc(shotPos,shotDest,shotSpeed)"
 			]
 		]
 	],
 	[
-		140,
-		122,
+		117,
+		115,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">shotDest</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector3Add(targetPos,targVel)</font></span>"
+				"End of IF Statement"
 			],
 			[
 				"active",
@@ -5182,7 +5180,84 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"shotDest = Vector3Add(targetPos,targVel)"
+				"} "
+			],
+			[
+				"interactionid",
+				94
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		114,
+		112,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				93
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		140,
+		60,
+		[
+			[
+				"name",
+				"Draw"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Draw
+"
 			],
 			[
 				"interactionid",
@@ -5198,21 +5273,21 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				2
+				1
 			],
 			[
 				"plainname",
-				"shotDest = Vector3Add(targetPos,targVel)"
+				"Draw"
 			]
 		]
 	],
 	[
 		141,
-		122,
+		60,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">shotInc</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">calcInc(shotPos,shotDest,shotSpeed)</font></span>"
+				"BeginDrawing(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
 			],
 			[
 				"active",
@@ -5220,7 +5295,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"shotInc = calcInc(shotPos,shotDest,shotSpeed)"
+				"BeginDrawing()"
 			],
 			[
 				"interactionid",
@@ -5240,93 +5315,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"shotInc = calcInc(shotPos,shotDest,shotSpeed)"
-			]
-		]
-	],
-	[
-		119,
-		117,
-		[
-			[
-				"name",
-				"End of IF Statement"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				96
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of IF Statement"
-			]
-		]
-	],
-	[
-		116,
-		114,
-		[
-			[
-				"name",
-				"End of IF Statement"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				95
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of IF Statement"
+				"BeginDrawing()"
 			]
 		]
 	],
 	[
 		142,
-		62,
+		60,
 		[
 			[
 				"name",
-				"Draw"
+				"ClearBackground(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">BLACK</font></span>)"
 			],
 			[
 				"active",
@@ -5334,8 +5333,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# Draw
-"
+				"ClearBackground(BLACK)"
 			],
 			[
 				"interactionid",
@@ -5351,21 +5349,21 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				1
+				2
 			],
 			[
 				"plainname",
-				"Draw"
+				"ClearBackground(BLACK)"
 			]
 		]
 	],
 	[
 		143,
-		62,
+		60,
 		[
 			[
 				"name",
-				"BeginDrawing(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+				"BeginMode3D(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera</font></span>)"
 			],
 			[
 				"active",
@@ -5373,7 +5371,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"BeginDrawing()"
+				"BeginMode3D(camera)"
 			],
 			[
 				"interactionid",
@@ -5393,17 +5391,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"BeginDrawing()"
+				"BeginMode3D(camera)"
 			]
 		]
 	],
 	[
 		144,
-		62,
+		60,
 		[
 			[
 				"name",
-				"ClearBackground(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">BLACK</font></span>)"
+				"DrawGrid(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">10,10.0</font></span>)"
 			],
 			[
 				"active",
@@ -5411,7 +5409,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"ClearBackground(BLACK)"
+				"DrawGrid(10,10.0)"
 			],
 			[
 				"interactionid",
@@ -5431,17 +5429,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"ClearBackground(BLACK)"
+				"DrawGrid(10,10.0)"
 			]
 		]
 	],
 	[
 		145,
-		62,
+		60,
 		[
 			[
 				"name",
-				"BeginMode3D(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera</font></span>)"
+				"Draw a grid"
 			],
 			[
 				"active",
@@ -5449,7 +5447,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"BeginMode3D(camera)"
+				"#Draw a grid
+"
 			],
 			[
 				"interactionid",
@@ -5465,21 +5464,21 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				2
+				1
 			],
 			[
 				"plainname",
-				"BeginMode3D(camera)"
+				"Draw a grid"
 			]
 		]
 	],
 	[
 		146,
-		62,
+		60,
 		[
 			[
 				"name",
-				"DrawGrid(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">10,10.0</font></span>)"
+				"DrawLine3D(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">path[1],path[2],RED</font></span>)"
 			],
 			[
 				"active",
@@ -5487,7 +5486,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"DrawGrid(10,10.0)"
+				"DrawLine3D(path[1],path[2],RED)"
 			],
 			[
 				"interactionid",
@@ -5507,17 +5506,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"DrawGrid(10,10.0)"
+				"DrawLine3D(path[1],path[2],RED)"
 			]
 		]
 	],
 	[
 		147,
-		62,
+		60,
 		[
 			[
 				"name",
-				"Draw a grid"
+				"DrawLine3D(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">path[2],path[3],RED</font></span>)"
 			],
 			[
 				"active",
@@ -5525,8 +5524,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# Draw a grid
-"
+				"DrawLine3D(path[2],path[3],RED)"
 			],
 			[
 				"interactionid",
@@ -5542,21 +5540,21 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				1
+				2
 			],
 			[
 				"plainname",
-				"Draw a grid"
+				"DrawLine3D(path[2],path[3],RED)"
 			]
 		]
 	],
 	[
 		148,
-		62,
+		60,
 		[
 			[
 				"name",
-				"DrawLine3D(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">path[1],path[2],RED</font></span>)"
+				"DrawLine3D(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">path[3],path[4],RED</font></span>)"
 			],
 			[
 				"active",
@@ -5564,7 +5562,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"DrawLine3D(path[1],path[2],RED)"
+				"DrawLine3D(path[3],path[4],RED)"
 			],
 			[
 				"interactionid",
@@ -5584,17 +5582,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"DrawLine3D(path[1],path[2],RED)"
+				"DrawLine3D(path[3],path[4],RED)"
 			]
 		]
 	],
 	[
 		149,
-		62,
+		60,
 		[
 			[
 				"name",
-				"DrawLine3D(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">path[2],path[3],RED</font></span>)"
+				"DrawLine3D(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">path[4],path[1],RED</font></span>)"
 			],
 			[
 				"active",
@@ -5602,7 +5600,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"DrawLine3D(path[2],path[3],RED)"
+				"DrawLine3D(path[4],path[1],RED)"
 			],
 			[
 				"interactionid",
@@ -5622,17 +5620,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"DrawLine3D(path[2],path[3],RED)"
+				"DrawLine3D(path[4],path[1],RED)"
 			]
 		]
 	],
 	[
 		150,
-		62,
+		60,
 		[
 			[
 				"name",
-				"DrawLine3D(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">path[3],path[4],RED</font></span>)"
+				"DrawSphere(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">targetPos,0.8,WHITE</font></span>)"
 			],
 			[
 				"active",
@@ -5640,7 +5638,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"DrawLine3D(path[3],path[4],RED)"
+				"DrawSphere(targetPos,0.8,WHITE)"
 			],
 			[
 				"interactionid",
@@ -5660,89 +5658,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"DrawLine3D(path[3],path[4],RED)"
+				"DrawSphere(targetPos,0.8,WHITE)"
 			]
 		]
 	],
 	[
 		151,
-		62,
-		[
-			[
-				"name",
-				"DrawLine3D(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">path[4],path[1],RED</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"DrawLine3D(path[4],path[1],RED)"
-			],
-			[
-				"interactionid",
-				127
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"DrawLine3D(path[4],path[1],RED)"
-			]
-		]
-	],
-	[
-		152,
-		62,
-		[
-			[
-				"name",
-				"DrawSphere(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">targetPos,0.8,WHITE</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"DrawSphere(targetPos,0.8,WHITE)"
-			],
-			[
-				"interactionid",
-				128
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"DrawSphere(targetPos,0.8,WHITE)"
-			]
-		]
-	],
-	[
-		153,
-		62,
+		60,
 		[
 			[
 				"name",
@@ -5758,7 +5680,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				129
+				127
 			],
 			[
 				"visible",
@@ -5779,8 +5701,8 @@ aStepsTable = [
 		]
 	],
 	[
-		154,
-		153,
+		152,
+		151,
 		[
 			[
 				"name",
@@ -5796,7 +5718,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				129
+				127
 			],
 			[
 				"visible",
@@ -5817,8 +5739,8 @@ aStepsTable = [
 		]
 	],
 	[
-		156,
 		154,
+		152,
 		[
 			[
 				"name",
@@ -5831,6 +5753,82 @@ aStepsTable = [
 			[
 				"code",
 				"DrawSphere(shotPos,0.6,RED)"
+			],
+			[
+				"interactionid",
+				128
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"DrawSphere(shotPos,0.6,RED)"
+			]
+		]
+	],
+	[
+		155,
+		152,
+		[
+			[
+				"name",
+				"DrawSphere(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">shotDest,0.6,GREEN</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"DrawSphere(shotDest,0.6,GREEN)"
+			],
+			[
+				"interactionid",
+				129
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"DrawSphere(shotDest,0.6,GREEN)"
+			]
+		]
+	],
+	[
+		156,
+		152,
+		[
+			[
+				"name",
+				"DrawLine3D(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">shotStart,shotDest,BLUE</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"DrawLine3D(shotStart,shotDest,BLUE)"
 			],
 			[
 				"interactionid",
@@ -5850,17 +5848,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"DrawSphere(shotPos,0.6,RED)"
+				"DrawLine3D(shotStart,shotDest,BLUE)"
 			]
 		]
 	],
 	[
-		157,
-		154,
+		153,
+		151,
 		[
 			[
 				"name",
-				"DrawSphere(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">shotDest,0.6,GREEN</font></span>)"
+				"End of IF Statement"
 			],
 			[
 				"active",
@@ -5868,7 +5866,45 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"DrawSphere(shotDest,0.6,GREEN)"
+				"} "
+			],
+			[
+				"interactionid",
+				127
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		157,
+		60,
+		[
+			[
+				"name",
+				"EndMode3D(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"EndMode3D()"
 			],
 			[
 				"interactionid",
@@ -5888,17 +5924,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"DrawSphere(shotDest,0.6,GREEN)"
+				"EndMode3D()"
 			]
 		]
 	],
 	[
 		158,
-		154,
+		60,
 		[
 			[
 				"name",
-				"DrawLine3D(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">shotStart,shotDest,BLUE</font></span>)"
+				"DrawFPS(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">10,10</font></span>)"
 			],
 			[
 				"active",
@@ -5906,7 +5942,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"DrawLine3D(shotStart,shotDest,BLUE)"
+				"DrawFPS(10,10)"
 			],
 			[
 				"interactionid",
@@ -5926,55 +5962,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"DrawLine3D(shotStart,shotDest,BLUE)"
-			]
-		]
-	],
-	[
-		155,
-		153,
-		[
-			[
-				"name",
-				"End of IF Statement"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				129
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of IF Statement"
+				"DrawFPS(10,10)"
 			]
 		]
 	],
 	[
 		159,
-		62,
+		60,
 		[
 			[
 				"name",
-				"EndMode3D(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+				"DrawText(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;Frame&nbsp;%i&quot;+frame,8,screenHeight-24,20,WHITE</font></span>)"
 			],
 			[
 				"active",
@@ -5982,7 +5980,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"EndMode3D()"
+				"DrawText("+char(34)+"Frame %i"+char(34)+"+frame,8,screenHeight-24,20,WHITE)"
 			],
 			[
 				"interactionid",
@@ -6002,17 +6000,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"EndMode3D()"
+				"DrawText("+char(34)+"Frame %i"+char(34)+"+frame,8,screenHeight-24,20,WHITE)"
 			]
 		]
 	],
 	[
 		160,
-		62,
+		60,
 		[
 			[
 				"name",
-				"DrawFPS(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">10,10</font></span>)"
+				"DrawText(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;Press&nbsp;f&nbsp;to&nbsp;toggle&nbsp;fullscreen&quot;,200,screenHeight-24,20,WHITE</font></span>)"
 			],
 			[
 				"active",
@@ -6020,7 +6018,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"DrawFPS(10,10)"
+				"DrawText("+char(34)+"Press f to toggle fullscreen"+char(34)+",200,screenHeight-24,20,WHITE)"
 			],
 			[
 				"interactionid",
@@ -6040,17 +6038,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"DrawFPS(10,10)"
+				"DrawText("+char(34)+"Press f to toggle fullscreen"+char(34)+",200,screenHeight-24,20,WHITE)"
 			]
 		]
 	],
 	[
 		161,
-		62,
+		60,
 		[
 			[
 				"name",
-				"DrawText(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;Frame&nbsp;%i&quot;+frame,8,screenHeight-24,20,WHITE</font></span>)"
+				"EndDrawing(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
 			],
 			[
 				"active",
@@ -6058,7 +6056,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"DrawText("+char(34)+"Frame %i"+char(34)+"+frame,8,screenHeight-24,20,WHITE)"
+				"EndDrawing()"
 			],
 			[
 				"interactionid",
@@ -6078,89 +6076,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"DrawText("+char(34)+"Frame %i"+char(34)+"+frame,8,screenHeight-24,20,WHITE)"
-			]
-		]
-	],
-	[
-		162,
-		62,
-		[
-			[
-				"name",
-				"DrawText(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;Press&nbsp;f&nbsp;to&nbsp;toggle&nbsp;fullscreen&quot;,200,screenHeight-24,20,WHITE</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"DrawText("+char(34)+"Press f to toggle fullscreen"+char(34)+",200,screenHeight-24,20,WHITE)"
-			],
-			[
-				"interactionid",
-				136
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"DrawText("+char(34)+"Press f to toggle fullscreen"+char(34)+",200,screenHeight-24,20,WHITE)"
-			]
-		]
-	],
-	[
-		163,
-		62,
-		[
-			[
-				"name",
-				"EndDrawing(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"EndDrawing()"
-			],
-			[
-				"interactionid",
-				137
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
 				"EndDrawing()"
 			]
 		]
 	],
 	[
-		63,
 		61,
+		59,
 		[
 			[
 				"name",
@@ -6176,7 +6098,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				57
+				55
 			],
 			[
 				"visible",
@@ -6197,86 +6119,86 @@ aStepsTable = [
 		]
 	],
 	[
+		162,
+		26,
+		[
+			[
+				"name",
+				"De-Initialization"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#De-Initialization
+"
+			],
+			[
+				"interactionid",
+				136
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"De-Initialization"
+			]
+		]
+	],
+	[
+		163,
+		26,
+		[
+			[
+				"name",
+				"Close window and OpenGL context"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Close window and OpenGL context
+"
+			],
+			[
+				"interactionid",
+				137
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Close window and OpenGL context"
+			]
+		]
+	],
+	[
 		164,
-		28,
-		[
-			[
-				"name",
-				"De-Initialization"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"# De-Initialization
-"
-			],
-			[
-				"interactionid",
-				138
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"De-Initialization"
-			]
-		]
-	],
-	[
-		165,
-		28,
-		[
-			[
-				"name",
-				"Close window and OpenGL context"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"# Close window and OpenGL context
-"
-			],
-			[
-				"interactionid",
-				139
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"Close window and OpenGL context"
-			]
-		]
-	],
-	[
-		166,
-		28,
+		26,
 		[
 			[
 				"name",
@@ -6292,7 +6214,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				140
+				138
 			],
 			[
 				"visible",
@@ -6313,8 +6235,8 @@ aStepsTable = [
 		]
 	],
 	[
-		29,
 		27,
+		25,
 		[
 			[
 				"name",
@@ -6330,7 +6252,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				25
+				23
 			],
 			[
 				"visible",
@@ -6357,1120 +6279,1104 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"27/08/2021",
-		"08:49:45",
+		"10/09/2024",
+		"16:12:07",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;================================#;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;=====================================================#;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;Aiming at 3d moving targets;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;Copyright (c) 2020  Ramon Santamaria (@raysan5);;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;================================#;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;Ported to RingRayLib by (Azzeddine Remmal);;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;--------- 08-02-2021;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;=====================================================#;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
-		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;Author : Azzeddine Remmal;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"load",
+		"10/09/2024",
+		"16:12:07",
+		"file;;_RV_;;raylib.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		7,
 		1,
-		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;================================#;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;screenWidth;;_RV_;;rightside;;_RV_;;640;;_RV_;;"
 	],
 	[
 		8,
 		1,
-		"load",
-		"27/08/2021",
-		"08:49:45",
-		"file;;_RV_;;raylib.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;screenHeight;;_RV_;;rightside;;_RV_;;360;;_RV_;;"
 	],
 	[
 		9,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;screenWidth;;_RV_;;rightside;;_RV_;;640;;_RV_;;"
+		"comment_text",
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;can't query this so track it.;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;screenHeight;;_RV_;;rightside;;_RV_;;360;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;fullScreen;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		11,
 		1,
-		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;can't query this so track it.;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;path;;_RV_;;rightside;;_RV_;;[Vector3(-20,2,20),Vector3(20,12,15),Vector3(20,2,-15),Vector3(-20,8,-14)];;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;fullScreen;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;start;;_RV_;;rightside;;_RV_;;Vector3(0.0,0.0,0.0);;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;path;;_RV_;;rightside;;_RV_;;[Vector3(-20,2,20),Vector3(20,12,15),Vector3(20,2,-15),Vector3(-20,8,-14)];;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;ond;;_RV_;;rightside;;_RV_;;Vector3(0.0,0.0,0.0);;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;start;;_RV_;;rightside;;_RV_;;Vector3(0.0,0.0,0.0);;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;velocity;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		15,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;ond;;_RV_;;rightside;;_RV_;;Vector3(0.0,0.0,0.0);;_RV_;;"
+		"comment_text",
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;given a start and end point calculate frame increment;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		16,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;velocity;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
+		"comment_text",
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;to move between the points at the given velocity;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;given a start and end point calculate frame increment;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;i.e. create a velocity vector;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		18,
 		1,
-		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;to move between the points at the given velocity;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"func",
+		"10/09/2024",
+		"16:12:07",
+		"name;;_RV_;;calcInc;;_RV_;;parameters;;_RV_;;start,ond,velocity;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		19,
 		1,
-		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;i.e. create a velocity vector;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;v;;_RV_;;rightside;;_RV_;;Vector3Subtract(ond,start);;_RV_;;"
 	],
 	[
 		20,
 		1,
-		"func",
-		"27/08/2021",
-		"08:49:45",
-		"name;;_RV_;;calcInc;;_RV_;;parameters;;_RV_;;start,ond,velocity;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;v;;_RV_;;rightside;;_RV_;;Vector3Normalize(v);;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;v;;_RV_;;rightside;;_RV_;;Vector3Subtract(ond,start);;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;v;;_RV_;;rightside;;_RV_;;Vector3Scale(v,velocity);;_RV_;;"
 	],
 	[
 		22,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;v;;_RV_;;rightside;;_RV_;;Vector3Normalize(v);;_RV_;;"
+		"return",
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;v;;_RV_;;"
 	],
 	[
 		23,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;v;;_RV_;;rightside;;_RV_;;Vector3Scale(v,velocity);;_RV_;;"
+		"func",
+		"10/09/2024",
+		"16:12:07",
+		"name;;_RV_;;main;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		24,
 		1,
-		"return",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;v;;_RV_;;"
+		"comment_text",
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;Initialization;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		25,
 		1,
-		"func",
-		"27/08/2021",
-		"08:49:45",
-		"name;;_RV_;;main;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"comment_text",
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;--------------------------------------------------------------------------------------;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		26,
 		1,
-		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;Initialization;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"callfunc",
+		"10/09/2024",
+		"16:12:07",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;InitWindow;;_RV_;;parameters;;_RV_;;screenWidth,screenHeight,"+char(34)+"raylib - Aiming at 3d moving targets"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;--------------------------------------------------------------------------------------;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;Define the camera to look into our 3d world;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		28,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:45",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;InitWindow;;_RV_;;parameters;;_RV_;;screenWidth,screenHeight,"+char(34)+"raylib - Aiming at 3d moving targets"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;camera;;_RV_;;rightside;;_RV_;;Camera3D(0.0,20.0,-40.0,0.0,0.0,0.0,0.0,1.0,0.0,45.0,CAMERA_PERSPECTIVE);;_RV_;;"
 	],
 	[
 		29,
 		1,
-		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;Define the camera to look into our 3d world;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;frame;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		30,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;camera;;_RV_;;rightside;;_RV_;;Camera3D(0.0,20.0,-40.0,0.0,0.0,0.0,0.0,1.0,0.0,45.0,CAMERA_PERSPECTIVE);;_RV_;;"
+		"comment_text",
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;frame counter;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;frame;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;ang;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		32,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;frame counter;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;camera rotation;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		33,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;ang;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;targetSpeed;;_RV_;;rightside;;_RV_;;0.2;;_RV_;;"
 	],
 	[
 		34,
 		1,
-		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;camera rotation;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;shotSpeed;;_RV_;;rightside;;_RV_;;0.6;;_RV_;;"
 	],
 	[
 		35,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;targetSpeed;;_RV_;;rightside;;_RV_;;0.2;;_RV_;;"
+		"comment_text",
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;could build these vectors into a struct...;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		36,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;shotSpeed;;_RV_;;rightside;;_RV_;;0.6;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;targetPos;;_RV_;;rightside;;_RV_;;path[1];;_RV_;;"
 	],
 	[
 		37,
 		1,
-		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;could build these vectors into a struct...;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;targetDest;;_RV_;;rightside;;_RV_;;path[2];;_RV_;;"
 	],
 	[
 		38,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;targetPos;;_RV_;;rightside;;_RV_;;path[1];;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;targetInc;;_RV_;;rightside;;_RV_;;calcInc(targetPos,targetDest,targetSpeed);;_RV_;;"
 	],
 	[
 		39,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;targetDest;;_RV_;;rightside;;_RV_;;path[2];;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;lastTarget;;_RV_;;rightside;;_RV_;;Vector3(0.0,0.0,0.0);;_RV_;;"
 	],
 	[
 		40,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;targetInc;;_RV_;;rightside;;_RV_;;calcInc(targetPos,targetDest,targetSpeed);;_RV_;;"
+		"comment_text",
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;so velocity vector can be calculated;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		41,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;lastTarget;;_RV_;;rightside;;_RV_;;Vector3(0.0,0.0,0.0);;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;targetPathPos;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		42,
 		1,
-		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;so velocity vector can be calculated;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;shootWait;;_RV_;;rightside;;_RV_;;10;;_RV_;;"
 	],
 	[
 		43,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;targetPathPos;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;shotActive;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		44,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;shootWait;;_RV_;;rightside;;_RV_;;10;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;shotStart;;_RV_;;rightside;;_RV_;;Vector3(0.0,0.0,0.0);;_RV_;;"
 	],
 	[
 		45,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;shotActive;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;shotPos;;_RV_;;rightside;;_RV_;;Vector3(0.0,0.0,0.0);;_RV_;;"
 	],
 	[
 		46,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;shotStart;;_RV_;;rightside;;_RV_;;Vector3(0.0,0.0,0.0);;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;shotDest;;_RV_;;rightside;;_RV_;;Vector3(0.0,0.0,0.0);;_RV_;;"
 	],
 	[
 		47,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;shotPos;;_RV_;;rightside;;_RV_;;Vector3(0.0,0.0,0.0);;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;shotInc;;_RV_;;rightside;;_RV_;;Vector3(0.0,0.0,0.0);;_RV_;;"
 	],
 	[
 		48,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;shotDest;;_RV_;;rightside;;_RV_;;Vector3(0.0,0.0,0.0);;_RV_;;"
+		"callfunc",
+		"10/09/2024",
+		"16:12:07",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetTargetFPS;;_RV_;;parameters;;_RV_;;60;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		49,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;shotInc;;_RV_;;rightside;;_RV_;;Vector3(0.0,0.0,0.0);;_RV_;;"
+		"comment_text",
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;Set  to run at 60 frames-per-second;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		50,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:45",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetTargetFPS;;_RV_;;parameters;;_RV_;;60;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"comment_text",
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;--------------------------------------------------------------------------------------;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		51,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;Set  to run at 60 frames-per-second;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;Main game loop;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		52,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;--------------------------------------------------------------------------------------;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;Detect window close button or ESC key;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		53,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;Main game loop;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;Update;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		54,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;Detect window close button or ESC key;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;----------------------------------------------------------------------------------;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		55,
 		1,
-		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;Update;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"whileloop",
+		"10/09/2024",
+		"16:12:07",
+		"condition;;_RV_;;!WindowShouldClose();;_RV_;;"
 	],
 	[
 		56,
 		1,
-		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;----------------------------------------------------------------------------------;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"freetyping",
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;frame++;;_RV_;;"
 	],
 	[
 		57,
 		1,
-		"whileloop",
-		"27/08/2021",
-		"08:49:45",
-		"condition;;_RV_;;!WindowShouldClose();;_RV_;;"
+		"freetyping",
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;ang += 0.0025;;_RV_;;"
 	],
 	[
 		58,
 		1,
-		"freetyping",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;frame++;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;camera.position.x;;_RV_;;rightside;;_RV_;;cos(ang)*50.0;;_RV_;;"
 	],
 	[
 		59,
 		1,
-		"freetyping",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;ang += 0.0025;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;camera.position.z;;_RV_;;rightside;;_RV_;;sin(ang)*50.0;;_RV_;;"
 	],
 	[
 		60,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;camera.position.x;;_RV_;;rightside;;_RV_;;cos(ang)*50.0;;_RV_;;"
+		"callfunc",
+		"10/09/2024",
+		"16:12:07",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UpdateCamera;;_RV_;;parameters;;_RV_;;camera,CAMERA_FIRST_PERSON;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		61,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;camera.position.z;;_RV_;;rightside;;_RV_;;sin(ang)*50.0;;_RV_;;"
+		"ifstatement",
+		"10/09/2024",
+		"16:12:07",
+		"condition;;_RV_;;IsKeyPressed(KEY_F);;_RV_;;"
 	],
 	[
 		62,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:45",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UpdateCamera;;_RV_;;parameters;;_RV_;;camera;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;ToggleFullscreen;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		63,
 		1,
-		"ifstatement",
-		"27/08/2021",
-		"08:49:45",
-		"condition;;_RV_;;IsKeyPressed(KEY_F);;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;fullScreen;;_RV_;;rightside;;_RV_;;!fullScreen;;_RV_;;"
 	],
 	[
 		64,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:45",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;ToggleFullscreen;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"ifstatement",
+		"10/09/2024",
+		"16:12:07",
+		"condition;;_RV_;;fullScreen;;_RV_;;"
 	],
 	[
 		65,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;fullScreen;;_RV_;;rightside;;_RV_;;!fullScreen;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;screenWidth;;_RV_;;rightside;;_RV_;;1920;;_RV_;;"
 	],
 	[
 		66,
 		1,
-		"ifstatement",
-		"27/08/2021",
-		"08:49:45",
-		"condition;;_RV_;;fullScreen;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;screenHeight;;_RV_;;rightside;;_RV_;;1080;;_RV_;;"
 	],
 	[
 		67,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;screenWidth;;_RV_;;rightside;;_RV_;;1920;;_RV_;;"
+		"callfunc",
+		"10/09/2024",
+		"16:12:07",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetWindowSize;;_RV_;;parameters;;_RV_;;screenWidth,screenHeight;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		68,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;screenHeight;;_RV_;;rightside;;_RV_;;1080;;_RV_;;"
+		"else",
+		"10/09/2024",
+		"16:12:07",
+		""
 	],
 	[
 		69,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:45",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetWindowSize;;_RV_;;parameters;;_RV_;;screenWidth,screenHeight;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;screenWidth;;_RV_;;rightside;;_RV_;;1920/3;;_RV_;;"
 	],
 	[
 		70,
 		1,
-		"else",
-		"27/08/2021",
-		"08:49:45",
-		""
+		"assignment",
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;screenHeight;;_RV_;;rightside;;_RV_;;1080/3;;_RV_;;"
 	],
 	[
 		71,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;screenWidth;;_RV_;;rightside;;_RV_;;1920/3;;_RV_;;"
+		"callfunc",
+		"10/09/2024",
+		"16:12:07",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetWindowSize;;_RV_;;parameters;;_RV_;;screenWidth,screenHeight;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		72,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;screenHeight;;_RV_;;rightside;;_RV_;;1080/3;;_RV_;;"
+		"comment_text",
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;update target position;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		73,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:45",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetWindowSize;;_RV_;;parameters;;_RV_;;screenWidth,screenHeight;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;lastTarget;;_RV_;;rightside;;_RV_;;targetPos;;_RV_;;"
 	],
 	[
 		74,
 		1,
-		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;update target position;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;targetPos;;_RV_;;rightside;;_RV_;;Vector3Add(targetPos,targetInc);;_RV_;;"
 	],
 	[
 		75,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;lastTarget;;_RV_;;rightside;;_RV_;;targetPos;;_RV_;;"
+		"comment_text",
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;get new path destination;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		76,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;targetPos;;_RV_;;rightside;;_RV_;;Vector3Add(targetPos,targetInc);;_RV_;;"
+		"ifstatement",
+		"10/09/2024",
+		"16:12:07",
+		"condition;;_RV_;;Vector3Distance(targetPos,targetDest) < targetSpeed;;_RV_;;"
 	],
 	[
 		77,
 		1,
-		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;get new path destination;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"freetyping",
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;targetPathPos++;;_RV_;;"
 	],
 	[
 		78,
 		1,
 		"ifstatement",
-		"27/08/2021",
-		"08:49:45",
-		"condition;;_RV_;;Vector3Distance(targetPos,targetDest) < targetSpeed;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"condition;;_RV_;;targetPathPos = 4;;_RV_;;"
 	],
 	[
 		79,
 		1,
-		"freetyping",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;targetPathPos++;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;targetPathPos;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		80,
 		1,
-		"ifstatement",
-		"27/08/2021",
-		"08:49:45",
-		"condition;;_RV_;;targetPathPos = 4;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;targetPos;;_RV_;;rightside;;_RV_;;targetDest;;_RV_;;"
 	],
 	[
 		81,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;targetPathPos;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;targetDest;;_RV_;;rightside;;_RV_;;path[targetPathPos];;_RV_;;"
 	],
 	[
 		82,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;targetPos;;_RV_;;rightside;;_RV_;;targetDest;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;targetInc;;_RV_;;rightside;;_RV_;;calcInc(targetPos,targetDest,targetSpeed);;_RV_;;"
 	],
 	[
 		83,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;targetDest;;_RV_;;rightside;;_RV_;;path[targetPathPos];;_RV_;;"
+		"comment_text",
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;update shot;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		84,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;targetInc;;_RV_;;rightside;;_RV_;;calcInc(targetPos,targetDest,targetSpeed);;_RV_;;"
+		"comment_text",
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;if the shot has reached its destination;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		85,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;update shot;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;deactivate it and wait for a random interval;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		86,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;if the shot has reached its destination;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;before shooting again;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		87,
 		1,
-		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;deactivate it and wait for a random interval;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"ifstatement",
+		"10/09/2024",
+		"16:12:07",
+		"condition;;_RV_;;shotActive;;_RV_;;"
 	],
 	[
 		88,
 		1,
-		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;before shooting again;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"ifstatement",
+		"10/09/2024",
+		"16:12:07",
+		"condition;;_RV_;;Vector3Distance(shotPos,shotDest) < shotSpeed;;_RV_;;"
 	],
 	[
 		89,
 		1,
-		"ifstatement",
-		"27/08/2021",
-		"08:49:45",
-		"condition;;_RV_;;shotActive;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;shotActive;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		90,
 		1,
-		"ifstatement",
-		"27/08/2021",
-		"08:49:45",
-		"condition;;_RV_;;Vector3Distance(shotPos,shotDest) < shotSpeed;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;shootWait;;_RV_;;rightside;;_RV_;;GetRandomValue(30,120);;_RV_;;"
 	],
 	[
 		91,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;shotActive;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
+		"comment_text",
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;update shot position;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		92,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;shootWait;;_RV_;;rightside;;_RV_;;GetRandomValue(30,120);;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;shotPos;;_RV_;;rightside;;_RV_;;Vector3Add(shotPos,shotInc);;_RV_;;"
 	],
 	[
 		93,
 		1,
-		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;update shot position;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"ifstatement",
+		"10/09/2024",
+		"16:12:07",
+		"condition;;_RV_;;!shotActive;;_RV_;;"
 	],
 	[
 		94,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;shotPos;;_RV_;;rightside;;_RV_;;Vector3Add(shotPos,shotInc);;_RV_;;"
+		"ifstatement",
+		"10/09/2024",
+		"16:12:07",
+		"condition;;_RV_;;shootWait > 0;;_RV_;;"
 	],
 	[
 		95,
 		1,
-		"ifstatement",
-		"27/08/2021",
-		"08:49:45",
-		"condition;;_RV_;;!shotActive;;_RV_;;"
+		"freetyping",
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;shootWait--;;_RV_;;"
 	],
 	[
 		96,
 		1,
-		"ifstatement",
-		"27/08/2021",
-		"08:49:45",
-		"condition;;_RV_;;shootWait > 0;;_RV_;;"
+		"else",
+		"10/09/2024",
+		"16:12:07",
+		""
 	],
 	[
 		97,
 		1,
-		"freetyping",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;shootWait--;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;shotActive;;_RV_;;rightside;;_RV_;;true;;_RV_;;"
 	],
 	[
 		98,
 		1,
-		"else",
-		"27/08/2021",
-		"08:49:45",
-		""
+		"comment_text",
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;random start point;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		99,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;shotActive;;_RV_;;rightside;;_RV_;;true;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;shotStart;;_RV_;;rightside;;_RV_;;Vector3(GetRandomValue(-40,40)/10.0,0,GetRandomValue(-40,40)/10.0);;_RV_;;"
 	],
 	[
 		100,
 		1,
-		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;random start point;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;shotPos;;_RV_;;rightside;;_RV_;;shotStart;;_RV_;;"
 	],
 	[
 		101,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;shotStart;;_RV_;;rightside;;_RV_;;Vector3(GetRandomValue(-40,40)/10.0,0,GetRandomValue(-40,40)/10.0);;_RV_;;"
+		"comment_text",
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;vector to target and targets velocity vector;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		102,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;shotPos;;_RV_;;rightside;;_RV_;;shotStart;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;totarget;;_RV_;;rightside;;_RV_;;Vector3Subtract(targetPos,shotPos);;_RV_;;"
 	],
 	[
 		103,
 		1,
-		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;vector to target and targets velocity vector;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;targVel;;_RV_;;rightside;;_RV_;;Vector3Subtract(targetPos,lastTarget);;_RV_;;"
 	],
 	[
 		104,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;totarget;;_RV_;;rightside;;_RV_;;Vector3Subtract(targetPos,shotPos);;_RV_;;"
+		"comment_text",
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;quadratic terms;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		105,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;targVel;;_RV_;;rightside;;_RV_;;Vector3Subtract(targetPos,lastTarget);;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;a;;_RV_;;rightside;;_RV_;;Vector3DotProduct(targVel,targVel)-(shotSpeed*shotSpeed);;_RV_;;"
 	],
 	[
 		106,
 		1,
-		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;quadratic terms;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;b;;_RV_;;rightside;;_RV_;;2.0*Vector3DotProduct(targVel,totarget);;_RV_;;"
 	],
 	[
 		107,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;a;;_RV_;;rightside;;_RV_;;Vector3DotProduct(targVel,targVel)-(shotSpeed*shotSpeed);;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;c;;_RV_;;rightside;;_RV_;;Vector3DotProduct(totarget,totarget);;_RV_;;"
 	],
 	[
 		108,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;b;;_RV_;;rightside;;_RV_;;2.0*Vector3DotProduct(targVel,totarget);;_RV_;;"
+		"comment_text",
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;quadratic formula simplified down to this...;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		109,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;c;;_RV_;;rightside;;_RV_;;Vector3DotProduct(totarget,totarget);;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;p;;_RV_;;rightside;;_RV_;;-b/(2.0*a);;_RV_;;"
 	],
 	[
 		110,
 		1,
-		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;quadratic formular simplfied down to this...;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;q;;_RV_;;rightside;;_RV_;;sqrt((b*b)-4.0*a*c)/(2.0*a);;_RV_;;"
 	],
 	[
 		111,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;p;;_RV_;;rightside;;_RV_;;-b/(2.0*a);;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;t;;_RV_;;rightside;;_RV_;;p-q;;_RV_;;"
 	],
 	[
 		112,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;q;;_RV_;;rightside;;_RV_;;sqrt((b*b)-4.0*a*c)/(2.0*a);;_RV_;;"
+		"comment_text",
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;target velocity  t + target pos = aim point (t = time or steps till hit);;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		113,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;t;;_RV_;;rightside;;_RV_;;p-q;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;targVel;;_RV_;;rightside;;_RV_;;Vector3Scale(targVel,t);;_RV_;;"
 	],
 	[
 		114,
 		1,
-		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;target velocity  t + target pos = aim point (t = time or steps till hit);;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;shotDest;;_RV_;;rightside;;_RV_;;Vector3Add(targetPos,targVel);;_RV_;;"
 	],
 	[
 		115,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;targVel;;_RV_;;rightside;;_RV_;;Vector3Scale(targVel,t);;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"leftside;;_RV_;;shotInc;;_RV_;;rightside;;_RV_;;calcInc(shotPos,shotDest,shotSpeed);;_RV_;;"
 	],
 	[
 		116,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;shotDest;;_RV_;;rightside;;_RV_;;Vector3Add(targetPos,targVel);;_RV_;;"
+		"comment_text",
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;Draw;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		117,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:45",
-		"leftside;;_RV_;;shotInc;;_RV_;;rightside;;_RV_;;calcInc(shotPos,shotDest,shotSpeed);;_RV_;;"
+		"callfunc",
+		"10/09/2024",
+		"16:12:07",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		118,
 		1,
-		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;Draw;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"callfunc",
+		"10/09/2024",
+		"16:12:07",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;ClearBackground;;_RV_;;parameters;;_RV_;;BLACK;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		119,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:45",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginMode3D;;_RV_;;parameters;;_RV_;;camera;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		120,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:45",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;ClearBackground;;_RV_;;parameters;;_RV_;;BLACK;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawGrid;;_RV_;;parameters;;_RV_;;10,10.0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		121,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:45",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginMode3D;;_RV_;;parameters;;_RV_;;camera;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"comment_text",
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;Draw a grid;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		122,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:45",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawGrid;;_RV_;;parameters;;_RV_;;10,10.0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawLine3D;;_RV_;;parameters;;_RV_;;path[1],path[2],RED;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		123,
 		1,
-		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;Draw a grid;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"callfunc",
+		"10/09/2024",
+		"16:12:07",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawLine3D;;_RV_;;parameters;;_RV_;;path[2],path[3],RED;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		124,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:45",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawLine3D;;_RV_;;parameters;;_RV_;;path[1],path[2],RED;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawLine3D;;_RV_;;parameters;;_RV_;;path[3],path[4],RED;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		125,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:45",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawLine3D;;_RV_;;parameters;;_RV_;;path[2],path[3],RED;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawLine3D;;_RV_;;parameters;;_RV_;;path[4],path[1],RED;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		126,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:45",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawLine3D;;_RV_;;parameters;;_RV_;;path[3],path[4],RED;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawSphere;;_RV_;;parameters;;_RV_;;targetPos,0.8,WHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		127,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:45",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawLine3D;;_RV_;;parameters;;_RV_;;path[4],path[1],RED;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"ifstatement",
+		"10/09/2024",
+		"16:12:07",
+		"condition;;_RV_;;shotActive;;_RV_;;"
 	],
 	[
 		128,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:45",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawSphere;;_RV_;;parameters;;_RV_;;targetPos,0.8,WHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawSphere;;_RV_;;parameters;;_RV_;;shotPos,0.6,RED;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		129,
 		1,
-		"ifstatement",
-		"27/08/2021",
-		"08:49:45",
-		"condition;;_RV_;;shotActive;;_RV_;;"
+		"callfunc",
+		"10/09/2024",
+		"16:12:07",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawSphere;;_RV_;;parameters;;_RV_;;shotDest,0.6,GREEN;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		130,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:45",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawSphere;;_RV_;;parameters;;_RV_;;shotPos,0.6,RED;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawLine3D;;_RV_;;parameters;;_RV_;;shotStart,shotDest,BLUE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		131,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:45",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawSphere;;_RV_;;parameters;;_RV_;;shotDest,0.6,GREEN;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndMode3D;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		132,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:45",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawLine3D;;_RV_;;parameters;;_RV_;;shotStart,shotDest,BLUE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawFPS;;_RV_;;parameters;;_RV_;;10,10;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		133,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:45",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndMode3D;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"Frame %i"+char(34)+"+frame,8,screenHeight-24,20,WHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		134,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:45",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawFPS;;_RV_;;parameters;;_RV_;;10,10;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"Press f to toggle fullscreen"+char(34)+",200,screenHeight-24,20,WHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		135,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:45",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"Frame %i"+char(34)+"+frame,8,screenHeight-24,20,WHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:12:07",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		136,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:45",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"Press f to toggle fullscreen"+char(34)+",200,screenHeight-24,20,WHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"comment_text",
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;De-Initialization;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		137,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:45",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"comment_text",
+		"10/09/2024",
+		"16:12:07",
+		"value;;_RV_;;Close window and OpenGL context;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		138,
 		1,
-		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;De-Initialization;;_RV_;;value2;;_RV_;;0;;_RV_;;"
-	],
-	[
-		139,
-		1,
-		"comment_text",
-		"27/08/2021",
-		"08:49:45",
-		"value;;_RV_;;Close window and OpenGL context;;_RV_;;value2;;_RV_;;0;;_RV_;;"
-	],
-	[
-		140,
-		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:45",
+		"10/09/2024",
+		"16:12:07",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;CloseWindow;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	]
 ]

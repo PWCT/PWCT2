@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'english'
-nStepsID                 = 130		
-nInteractionsID          = 118
+nStepsID                 = 127		
+nInteractionsID          = 115
 
 aStepsTable = [
 	[
@@ -55,7 +55,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# Copyright (c) 2015 Ramon Santamaria (@raysan5)
+				"#Copyright (c) 2015 Ramon Santamaria (@raysan5)
 "
 			],
 			[
@@ -94,7 +94,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# Ported to RingRayLib by Ring Team
+				"#Ported to RingRayLib by Ring Team
 "
 			],
 			[
@@ -880,6 +880,45 @@ aStepsTable = [
 		]
 	],
 	[
+		25,
+		20,
+		[
+			[
+				"name",
+				"Enable Multi Sampling Anti Aliasing 4x (if available)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Enable Multi Sampling Anti Aliasing 4x (if available)
+"
+			],
+			[
+				"interactionid",
+				23
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Enable Multi Sampling Anti Aliasing 4x (if available)"
+			]
+		]
+	],
+	[
 		26,
 		20,
 		[
@@ -914,6 +953,45 @@ aStepsTable = [
 			[
 				"plainname",
 				"InitWindow(screenWidth,screenHeight,"+char(34)+"raylib [shaders] example - postprocessing shader"+char(34)+")"
+			]
+		]
+	],
+	[
+		27,
+		20,
+		[
+			[
+				"name",
+				"Define the camera to look into our 3d world"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Define the camera to look into our 3d world
+"
+			],
+			[
+				"interactionid",
+				25
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Define the camera to look into our 3d world"
 			]
 		]
 	],
@@ -994,6 +1072,45 @@ aStepsTable = [
 		]
 	],
 	[
+		30,
+		20,
+		[
+			[
+				"name",
+				"Load OBJ model"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Load OBJ model
+"
+			],
+			[
+				"interactionid",
+				28
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Load OBJ model"
+			]
+		]
+	],
+	[
 		31,
 		20,
 		[
@@ -1028,6 +1145,45 @@ aStepsTable = [
 			[
 				"plainname",
 				"texture = LoadTexture("+char(34)+"models/church_diffuse.png"+char(34)+")"
+			]
+		]
+	],
+	[
+		32,
+		20,
+		[
+			[
+				"name",
+				"Load model texture (diffuse map)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Load model texture (diffuse map)
+"
+			],
+			[
+				"interactionid",
+				30
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Load model texture (diffuse map)"
 			]
 		]
 	],
@@ -1108,6 +1264,162 @@ aStepsTable = [
 		]
 	],
 	[
+		35,
+		20,
+		[
+			[
+				"name",
+				"Set model position"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Set model position
+"
+			],
+			[
+				"interactionid",
+				33
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Set model position"
+			]
+		]
+	],
+	[
+		36,
+		20,
+		[
+			[
+				"name",
+				"Load all postpro shaders"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Load all postpro shaders
+"
+			],
+			[
+				"interactionid",
+				34
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Load all postpro shaders"
+			]
+		]
+	],
+	[
+		37,
+		20,
+		[
+			[
+				"name",
+				"NOTE 1: All postpro shader use the base vertex shader (DEFAULT_VERTEX_SHADER)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#NOTE 1: All postpro shader use the base vertex shader (DEFAULT_VERTEX_SHADER)
+"
+			],
+			[
+				"interactionid",
+				35
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"NOTE 1: All postpro shader use the base vertex shader (DEFAULT_VERTEX_SHADER)"
+			]
+		]
+	],
+	[
+		38,
+		20,
+		[
+			[
+				"name",
+				"NOTE 2: We load the correct shader depending on GLSL version"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#NOTE 2: We load the correct shader depending on GLSL version
+"
+			],
+			[
+				"interactionid",
+				36
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"NOTE 2: We load the correct shader depending on GLSL version"
+			]
+		]
+	],
+	[
 		39,
 		20,
 		[
@@ -1142,6 +1454,45 @@ aStepsTable = [
 			[
 				"plainname",
 				"shaders = list(MAX_POSTPRO_SHADERS)"
+			]
+		]
+	],
+	[
+		40,
+		20,
+		[
+			[
+				"name",
+				"NOTE: Defining 0 (NULL) for vertex shader forces usage of internal default vertex shader"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#NOTE: Defining 0 (NULL) for vertex shader forces usage of internal default vertex shader
+"
+			],
+			[
+				"interactionid",
+				38
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"NOTE: Defining 0 (NULL) for vertex shader forces usage of internal default vertex shader"
 			]
 		]
 	],
@@ -1640,6 +1991,45 @@ aStepsTable = [
 		]
 	],
 	[
+		54,
+		20,
+		[
+			[
+				"name",
+				"Create a RenderTexture2D to be used for render to texture"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Create a RenderTexture2D to be used for render to texture
+"
+			],
+			[
+				"interactionid",
+				52
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Create a RenderTexture2D to be used for render to texture"
+			]
+		]
+	],
+	[
 		55,
 		20,
 		[
@@ -1678,45 +2068,7 @@ aStepsTable = [
 		]
 	],
 	[
-		57,
-		20,
-		[
-			[
-				"name",
-				"SetCameraMode(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera,CAMERA_ORBITAL</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"SetCameraMode(camera,CAMERA_ORBITAL)"
-			],
-			[
-				"interactionid",
-				55
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"SetCameraMode(camera,CAMERA_ORBITAL)"
-			]
-		]
-	],
-	[
-		59,
+		56,
 		20,
 		[
 			[
@@ -1733,7 +2085,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				57
+				54
 			],
 			[
 				"visible",
@@ -1754,7 +2106,163 @@ aStepsTable = [
 		]
 	],
 	[
-		64,
+		57,
+		20,
+		[
+			[
+				"name",
+				"Set our game to run at 60 frames-per-second"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Set our game to run at 60 frames-per-second
+"
+			],
+			[
+				"interactionid",
+				55
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Set our game to run at 60 frames-per-second"
+			]
+		]
+	],
+	[
+		58,
+		20,
+		[
+			[
+				"name",
+				"--------------------------------------------------------------------------------------"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#--------------------------------------------------------------------------------------
+"
+			],
+			[
+				"interactionid",
+				56
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"--------------------------------------------------------------------------------------"
+			]
+		]
+	],
+	[
+		59,
+		20,
+		[
+			[
+				"name",
+				"Main game loop"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Main game loop
+"
+			],
+			[
+				"interactionid",
+				57
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Main game loop"
+			]
+		]
+	],
+	[
+		60,
+		20,
+		[
+			[
+				"name",
+				"Detect window close button or ESC key"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Detect window close button or ESC key
+"
+			],
+			[
+				"interactionid",
+				58
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Detect window close button or ESC key"
+			]
+		]
+	],
+	[
+		61,
 		20,
 		[
 			[
@@ -1771,7 +2279,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				62
+				59
 			],
 			[
 				"visible",
@@ -1792,8 +2300,161 @@ aStepsTable = [
 		]
 	],
 	[
-		65,
+		62,
+		61,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				59
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
 		64,
+		62,
+		[
+			[
+				"name",
+				"UpdateCamera(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera,CAMERA_ORBITAL</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"UpdateCamera(camera,CAMERA_ORBITAL)"
+			],
+			[
+				"interactionid",
+				60
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"UpdateCamera(camera,CAMERA_ORBITAL)"
+			]
+		]
+	],
+	[
+		65,
+		62,
+		[
+			[
+				"name",
+				"Update camera"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Update camera
+"
+			],
+			[
+				"interactionid",
+				61
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Update camera"
+			]
+		]
+	],
+	[
+		66,
+		62,
+		[
+			[
+				"name",
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(IsKeyPressed(KEY_RIGHT))</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"if (IsKeyPressed(KEY_RIGHT)) { "
+			],
+			[
+				"interactionid",
+				62
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"If (IsKeyPressed(KEY_RIGHT))"
+			]
+		]
+	],
+	[
+		67,
+		66,
 		[
 			[
 				"name",
@@ -1830,12 +2491,12 @@ aStepsTable = [
 		]
 	],
 	[
+		69,
 		67,
-		65,
 		[
 			[
 				"name",
-				"UpdateCamera(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera</font></span>)"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">currentShader++</font></span>"
 			],
 			[
 				"active",
@@ -1843,7 +2504,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"UpdateCamera(camera)"
+				"currentShader++"
 			],
 			[
 				"interactionid",
@@ -1863,17 +2524,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"UpdateCamera(camera)"
+				"currentShader++"
 			]
 		]
 	],
 	[
-		69,
-		65,
+		70,
+		67,
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(IsKeyPressed(KEY_RIGHT))</font></span>"
+				"Else If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(IsKeyPressed(KEY_LEFT))</font></span>"
 			],
 			[
 				"active",
@@ -1881,11 +2542,11 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if (IsKeyPressed(KEY_RIGHT)) { "
+				"elseif (IsKeyPressed(KEY_LEFT))"
 			],
 			[
 				"interactionid",
-				65
+				64
 			],
 			[
 				"visible",
@@ -1901,13 +2562,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If (IsKeyPressed(KEY_RIGHT))"
+				"Else If (IsKeyPressed(KEY_LEFT))"
 			]
 		]
 	],
 	[
+		71,
 		70,
-		69,
 		[
 			[
 				"name",
@@ -1923,7 +2584,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				65
+				64
 			],
 			[
 				"visible",
@@ -1945,121 +2606,7 @@ aStepsTable = [
 	],
 	[
 		72,
-		70,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">currentShader++</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"currentShader++"
-			],
-			[
-				"interactionid",
-				66
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"currentShader++"
-			]
-		]
-	],
-	[
-		73,
-		70,
-		[
-			[
-				"name",
-				"Else If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(IsKeyPressed(KEY_LEFT))</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"elseif (IsKeyPressed(KEY_LEFT))"
-			],
-			[
-				"interactionid",
-				67
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Else If (IsKeyPressed(KEY_LEFT))"
-			]
-		]
-	],
-	[
-		74,
-		73,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				67
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		75,
-		74,
+		71,
 		[
 			[
 				"name",
@@ -2075,7 +2622,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				68
+				65
 			],
 			[
 				"visible",
@@ -2096,8 +2643,8 @@ aStepsTable = [
 		]
 	],
 	[
-		71,
-		69,
+		68,
+		66,
 		[
 			[
 				"name",
@@ -2113,7 +2660,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				65
+				62
 			],
 			[
 				"visible",
@@ -2134,8 +2681,8 @@ aStepsTable = [
 		]
 	],
 	[
-		76,
-		65,
+		73,
+		62,
 		[
 			[
 				"name",
@@ -2151,7 +2698,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				69
+				66
 			],
 			[
 				"visible",
@@ -2172,8 +2719,8 @@ aStepsTable = [
 		]
 	],
 	[
-		77,
-		76,
+		74,
+		73,
 		[
 			[
 				"name",
@@ -2189,7 +2736,121 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				69
+				66
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		76,
+		74,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">currentShader</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"currentShader = 1"
+			],
+			[
+				"interactionid",
+				67
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"currentShader = 1"
+			]
+		]
+	],
+	[
+		77,
+		74,
+		[
+			[
+				"name",
+				"Else If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(currentShader&nbsp;&lt;&nbsp;1)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"elseif (currentShader < 1)"
+			],
+			[
+				"interactionid",
+				68
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Else If (currentShader "
+			]
+		]
+	],
+	[
+		78,
+		77,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				68
 			],
 			[
 				"visible",
@@ -2211,121 +2872,7 @@ aStepsTable = [
 	],
 	[
 		79,
-		77,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">currentShader</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"currentShader = 1"
-			],
-			[
-				"interactionid",
-				70
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"currentShader = 1"
-			]
-		]
-	],
-	[
-		80,
-		77,
-		[
-			[
-				"name",
-				"Else If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(currentShader&nbsp;&lt;&nbsp;1)</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"elseif (currentShader < 1)"
-			],
-			[
-				"interactionid",
-				71
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Else If (currentShader "
-			]
-		]
-	],
-	[
-		81,
-		80,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				71
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		82,
-		81,
+		78,
 		[
 			[
 				"name",
@@ -2341,7 +2888,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				72
+				69
 			],
 			[
 				"visible",
@@ -2362,8 +2909,8 @@ aStepsTable = [
 		]
 	],
 	[
-		78,
-		76,
+		75,
+		73,
 		[
 			[
 				"name",
@@ -2379,7 +2926,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				69
+				66
 			],
 			[
 				"visible",
@@ -2400,8 +2947,125 @@ aStepsTable = [
 		]
 	],
 	[
-		86,
-		65,
+		80,
+		62,
+		[
+			[
+				"name",
+				"----------------------------------------------------------------------------------"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#----------------------------------------------------------------------------------
+"
+			],
+			[
+				"interactionid",
+				70
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"----------------------------------------------------------------------------------"
+			]
+		]
+	],
+	[
+		81,
+		62,
+		[
+			[
+				"name",
+				"Draw"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Draw
+"
+			],
+			[
+				"interactionid",
+				71
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Draw"
+			]
+		]
+	],
+	[
+		82,
+		62,
+		[
+			[
+				"name",
+				"----------------------------------------------------------------------------------"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#----------------------------------------------------------------------------------
+"
+			],
+			[
+				"interactionid",
+				72
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"----------------------------------------------------------------------------------"
+			]
+		]
+	],
+	[
+		83,
+		62,
 		[
 			[
 				"name",
@@ -2417,7 +3081,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				76
+				73
 			],
 			[
 				"visible",
@@ -2438,8 +3102,123 @@ aStepsTable = [
 		]
 	],
 	[
+		84,
+		62,
+		[
+			[
+				"name",
+				"ClearBackground(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">RAYWHITE</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"ClearBackground(RAYWHITE)"
+			],
+			[
+				"interactionid",
+				74
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"ClearBackground(RAYWHITE)"
+			]
+		]
+	],
+	[
+		85,
+		62,
+		[
+			[
+				"name",
+				"BeginTextureMode(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">target</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"BeginTextureMode(target)"
+			],
+			[
+				"interactionid",
+				75
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"BeginTextureMode(target)"
+			]
+		]
+	],
+	[
+		86,
+		62,
+		[
+			[
+				"name",
+				"Enable drawing to texture"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Enable drawing to texture
+"
+			],
+			[
+				"interactionid",
+				76
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Enable drawing to texture"
+			]
+		]
+	],
+	[
 		87,
-		65,
+		62,
 		[
 			[
 				"name",
@@ -2477,11 +3256,11 @@ aStepsTable = [
 	],
 	[
 		88,
-		65,
+		62,
 		[
 			[
 				"name",
-				"BeginTextureMode(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">target</font></span>)"
+				"Clear texture background"
 			],
 			[
 				"active",
@@ -2489,7 +3268,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"BeginTextureMode(target)"
+				"#Clear texture background
+"
 			],
 			[
 				"interactionid",
@@ -2505,55 +3285,17 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				2
+				1
 			],
 			[
 				"plainname",
-				"BeginTextureMode(target)"
+				"Clear texture background"
 			]
 		]
 	],
 	[
-		90,
-		65,
-		[
-			[
-				"name",
-				"ClearBackground(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">RAYWHITE</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"ClearBackground(RAYWHITE)"
-			],
-			[
-				"interactionid",
-				80
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"ClearBackground(RAYWHITE)"
-			]
-		]
-	],
-	[
-		92,
-		65,
+		89,
+		62,
 		[
 			[
 				"name",
@@ -2569,7 +3311,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				82
+				79
 			],
 			[
 				"visible",
@@ -2590,8 +3332,47 @@ aStepsTable = [
 		]
 	],
 	[
-		94,
-		65,
+		90,
+		62,
+		[
+			[
+				"name",
+				"Begin 3d mode drawing"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Begin 3d mode drawing
+"
+			],
+			[
+				"interactionid",
+				80
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Begin 3d mode drawing"
+			]
+		]
+	],
+	[
+		91,
+		62,
 		[
 			[
 				"name",
@@ -2607,7 +3388,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				84
+				81
 			],
 			[
 				"visible",
@@ -2628,8 +3409,47 @@ aStepsTable = [
 		]
 	],
 	[
-		96,
-		65,
+		92,
+		62,
+		[
+			[
+				"name",
+				"Draw 3d model with texture"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Draw 3d model with texture
+"
+			],
+			[
+				"interactionid",
+				82
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Draw 3d model with texture"
+			]
+		]
+	],
+	[
+		93,
+		62,
 		[
 			[
 				"name",
@@ -2642,6 +3462,122 @@ aStepsTable = [
 			[
 				"code",
 				"DrawGrid(10,1.0)"
+			],
+			[
+				"interactionid",
+				83
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"DrawGrid(10,1.0)"
+			]
+		]
+	],
+	[
+		94,
+		62,
+		[
+			[
+				"name",
+				"Draw a grid"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Draw a grid
+"
+			],
+			[
+				"interactionid",
+				84
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Draw a grid"
+			]
+		]
+	],
+	[
+		95,
+		62,
+		[
+			[
+				"name",
+				"End 3d mode drawing, returns to orthographic 2d mode"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#End 3d mode drawing, returns to orthographic 2d mode
+"
+			],
+			[
+				"interactionid",
+				85
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"End 3d mode drawing, returns to orthographic 2d mode"
+			]
+		]
+	],
+	[
+		96,
+		62,
+		[
+			[
+				"name",
+				"EndMode3D(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"EndMode3D()"
 			],
 			[
 				"interactionid",
@@ -2661,17 +3597,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"DrawGrid(10,1.0)"
+				"EndMode3D()"
 			]
 		]
 	],
 	[
-		99,
-		65,
+		97,
+		62,
 		[
 			[
 				"name",
-				"EndMode3D(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+				"End drawing to texture (now we have a texture available for next passes)"
 			],
 			[
 				"active",
@@ -2679,7 +3615,85 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"EndMode3D()"
+				"#End drawing to texture (now we have a texture available for next passes)
+"
+			],
+			[
+				"interactionid",
+				87
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"End drawing to texture (now we have a texture available for next passes)"
+			]
+		]
+	],
+	[
+		98,
+		62,
+		[
+			[
+				"name",
+				"Render previously generated texture using selected postpro shader"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Render previously generated texture using selected postpro shader
+"
+			],
+			[
+				"interactionid",
+				88
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Render previously generated texture using selected postpro shader"
+			]
+		]
+	],
+	[
+		99,
+		62,
+		[
+			[
+				"name",
+				"EndTextureMode(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"EndTextureMode()"
 			],
 			[
 				"interactionid",
@@ -2699,17 +3713,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"EndMode3D()"
+				"EndTextureMode()"
 			]
 		]
 	],
 	[
-		102,
-		65,
+		100,
+		62,
 		[
 			[
 				"name",
-				"EndTextureMode(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+				"BeginShaderMode(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">shaders[currentShader]</font></span>)"
 			],
 			[
 				"active",
@@ -2717,7 +3731,84 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"EndTextureMode()"
+				"BeginShaderMode(shaders[currentShader])"
+			],
+			[
+				"interactionid",
+				90
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"BeginShaderMode(shaders[currentShader])"
+			]
+		]
+	],
+	[
+		101,
+		62,
+		[
+			[
+				"name",
+				"NOTE: Render texture must be y-flipped due to default OpenGL coordinates (left-bottom)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#NOTE: Render texture must be y-flipped due to default OpenGL coordinates (left-bottom)
+"
+			],
+			[
+				"interactionid",
+				91
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"NOTE: Render texture must be y-flipped due to default OpenGL coordinates (left-bottom)"
+			]
+		]
+	],
+	[
+		102,
+		62,
+		[
+			[
+				"name",
+				"DrawTextureRec(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">target.texture,Rectangle(0,0,target.texture.width,-target.texture.height),Vector2(0,0),WHITE</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"DrawTextureRec(target.texture,Rectangle(0,0,target.texture.width,-target.texture.height),Vector2(0,0),WHITE)"
 			],
 			[
 				"interactionid",
@@ -2737,17 +3828,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"EndTextureMode()"
+				"DrawTextureRec(target.texture,Rectangle(0,0,target.texture.width,-target.texture.height),Vector2(0,0),WHITE)"
 			]
 		]
 	],
 	[
 		103,
-		65,
+		62,
 		[
 			[
 				"name",
-				"BeginShaderMode(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">shaders[currentShader]</font></span>)"
+				"Draw 2d shapes and text over drawn texture"
 			],
 			[
 				"active",
@@ -2755,7 +3846,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"BeginShaderMode(shaders[currentShader])"
+				"#Draw 2d shapes and text over drawn texture
+"
 			],
 			[
 				"interactionid",
@@ -2771,21 +3863,21 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				2
+				1
 			],
 			[
 				"plainname",
-				"BeginShaderMode(shaders[currentShader])"
+				"Draw 2d shapes and text over drawn texture"
 			]
 		]
 	],
 	[
-		105,
-		65,
+		104,
+		62,
 		[
 			[
 				"name",
-				"DrawTextureRec(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">target.texture,Rectangle(0,0,target.texture.width,-target.texture.height),Vector2(0,0),WHITE</font></span>)"
+				"EndShaderMode(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
 			],
 			[
 				"active",
@@ -2793,7 +3885,45 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"DrawTextureRec(target.texture,Rectangle(0,0,target.texture.width,-target.texture.height),Vector2(0,0),WHITE)"
+				"EndShaderMode()"
+			],
+			[
+				"interactionid",
+				94
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"EndShaderMode()"
+			]
+		]
+	],
+	[
+		105,
+		62,
+		[
+			[
+				"name",
+				"DrawRectangle(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">0,9,580,30,Fade(LIGHTGRAY,0.7)</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"DrawRectangle(0,9,580,30,Fade(LIGHTGRAY,0.7))"
 			],
 			[
 				"interactionid",
@@ -2813,17 +3943,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"DrawTextureRec(target.texture,Rectangle(0,0,target.texture.width,-target.texture.height),Vector2(0,0),WHITE)"
+				"DrawRectangle(0,9,580,30,Fade(LIGHTGRAY,0.7))"
 			]
 		]
 	],
 	[
-		107,
-		65,
+		106,
+		62,
 		[
 			[
 				"name",
-				"EndShaderMode(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+				"DrawText(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;(c)&nbsp;Church&nbsp;3D&nbsp;model&nbsp;by&nbsp;Alberto&nbsp;Cano&quot;,screenWidth-200,screenHeight-20,10,GRAY</font></span>)"
 			],
 			[
 				"active",
@@ -2831,7 +3961,45 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"EndShaderMode()"
+				"DrawText("+char(34)+"(c) Church 3D model by Alberto Cano"+char(34)+",screenWidth-200,screenHeight-20,10,GRAY)"
+			],
+			[
+				"interactionid",
+				96
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"DrawText("+char(34)+"(c) Church 3D model by Alberto Cano"+char(34)+",screenWidth-200,screenHeight-20,10,GRAY)"
+			]
+		]
+	],
+	[
+		107,
+		62,
+		[
+			[
+				"name",
+				"DrawText(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;CURRENT&nbsp;POSTPRO&nbsp;SHADER:&quot;,10,15,20,BLACK</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"DrawText("+char(34)+"CURRENT POSTPRO SHADER:"+char(34)+",10,15,20,BLACK)"
 			],
 			[
 				"interactionid",
@@ -2851,17 +4019,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"EndShaderMode()"
+				"DrawText("+char(34)+"CURRENT POSTPRO SHADER:"+char(34)+",10,15,20,BLACK)"
 			]
 		]
 	],
 	[
 		108,
-		65,
+		62,
 		[
 			[
 				"name",
-				"DrawRectangle(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">0,9,580,30,Fade(LIGHTGRAY,0.7)</font></span>)"
+				"DrawText(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">postproShaderText[currentShader],330,15,20,RED</font></span>)"
 			],
 			[
 				"active",
@@ -2869,7 +4037,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"DrawRectangle(0,9,580,30,Fade(LIGHTGRAY,0.7))"
+				"DrawText(postproShaderText[currentShader],330,15,20,RED)"
 			],
 			[
 				"interactionid",
@@ -2889,127 +4057,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"DrawRectangle(0,9,580,30,Fade(LIGHTGRAY,0.7))"
+				"DrawText(postproShaderText[currentShader],330,15,20,RED)"
 			]
 		]
 	],
 	[
 		109,
-		65,
-		[
-			[
-				"name",
-				"DrawText(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;(c)&nbsp;Church&nbsp;3D&nbsp;model&nbsp;by&nbsp;Alberto&nbsp;Cano&quot;,screenWidth-200,screenHeight-20,10,GRAY</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"DrawText("+char(34)+"(c) Church 3D model by Alberto Cano"+char(34)+",screenWidth-200,screenHeight-20,10,GRAY)"
-			],
-			[
-				"interactionid",
-				99
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"DrawText("+char(34)+"(c) Church 3D model by Alberto Cano"+char(34)+",screenWidth-200,screenHeight-20,10,GRAY)"
-			]
-		]
-	],
-	[
-		110,
-		65,
-		[
-			[
-				"name",
-				"DrawText(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;CURRENT&nbsp;POSTPRO&nbsp;SHADER:&quot;,10,15,20,BLACK</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"DrawText("+char(34)+"CURRENT POSTPRO SHADER:"+char(34)+",10,15,20,BLACK)"
-			],
-			[
-				"interactionid",
-				100
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"DrawText("+char(34)+"CURRENT POSTPRO SHADER:"+char(34)+",10,15,20,BLACK)"
-			]
-		]
-	],
-	[
-		111,
-		65,
-		[
-			[
-				"name",
-				"DrawText(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">postproShaderText[currentShader],330,15,20,RED</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"DrawText(postproShaderText[currentShader],330,15,20,RED)"
-			],
-			[
-				"interactionid",
-				101
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"DrawText(postproShaderText[currentShader],330,15,20,RED)"
-			]
-		]
-	],
-	[
-		112,
-		65,
+		62,
 		[
 			[
 				"name",
@@ -3025,7 +4079,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				102
+				99
 			],
 			[
 				"visible",
@@ -3046,8 +4100,8 @@ aStepsTable = [
 		]
 	],
 	[
-		113,
-		65,
+		110,
+		62,
 		[
 			[
 				"name",
@@ -3063,7 +4117,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				103
+				100
 			],
 			[
 				"visible",
@@ -3084,8 +4138,47 @@ aStepsTable = [
 		]
 	],
 	[
-		115,
-		65,
+		111,
+		62,
+		[
+			[
+				"name",
+				"----------------------------------------------------------------------------------"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#----------------------------------------------------------------------------------
+"
+			],
+			[
+				"interactionid",
+				101
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"----------------------------------------------------------------------------------"
+			]
+		]
+	],
+	[
+		112,
+		62,
 		[
 			[
 				"name",
@@ -3101,7 +4194,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				105
+				102
 			],
 			[
 				"visible",
@@ -3122,8 +4215,8 @@ aStepsTable = [
 		]
 	],
 	[
-		66,
-		64,
+		63,
+		61,
 		[
 			[
 				"name",
@@ -3139,7 +4232,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				62
+				59
 			],
 			[
 				"visible",
@@ -3160,7 +4253,124 @@ aStepsTable = [
 		]
 	],
 	[
-		119,
+		113,
+		20,
+		[
+			[
+				"name",
+				"De-Initialization"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#De-Initialization
+"
+			],
+			[
+				"interactionid",
+				103
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"De-Initialization"
+			]
+		]
+	],
+	[
+		114,
+		20,
+		[
+			[
+				"name",
+				"--------------------------------------------------------------------------------------"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#--------------------------------------------------------------------------------------
+"
+			],
+			[
+				"interactionid",
+				104
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"--------------------------------------------------------------------------------------"
+			]
+		]
+	],
+	[
+		115,
+		20,
+		[
+			[
+				"name",
+				"Unload all postpro shaders"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Unload all postpro shaders
+"
+			],
+			[
+				"interactionid",
+				105
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Unload all postpro shaders"
+			]
+		]
+	],
+	[
+		116,
 		20,
 		[
 			[
@@ -3177,7 +4387,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				109
+				106
 			],
 			[
 				"visible",
@@ -3198,8 +4408,8 @@ aStepsTable = [
 		]
 	],
 	[
-		120,
-		119,
+		117,
+		116,
 		[
 			[
 				"name",
@@ -3215,7 +4425,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				109
+				106
 			],
 			[
 				"visible",
@@ -3236,8 +4446,8 @@ aStepsTable = [
 		]
 	],
 	[
-		122,
-		120,
+		119,
+		117,
 		[
 			[
 				"name",
@@ -3253,7 +4463,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				110
+				107
 			],
 			[
 				"visible",
@@ -3274,8 +4484,8 @@ aStepsTable = [
 		]
 	],
 	[
-		121,
-		119,
+		118,
+		116,
 		[
 			[
 				"name",
@@ -3291,7 +4501,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				109
+				106
 			],
 			[
 				"visible",
@@ -3312,7 +4522,7 @@ aStepsTable = [
 		]
 	],
 	[
-		123,
+		120,
 		20,
 		[
 			[
@@ -3329,7 +4539,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				111
+				108
 			],
 			[
 				"visible",
@@ -3350,7 +4560,46 @@ aStepsTable = [
 		]
 	],
 	[
-		125,
+		121,
+		20,
+		[
+			[
+				"name",
+				"Unload texture"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Unload texture
+"
+			],
+			[
+				"interactionid",
+				109
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Unload texture"
+			]
+		]
+	],
+	[
+		122,
 		20,
 		[
 			[
@@ -3367,7 +4616,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				113
+				110
 			],
 			[
 				"visible",
@@ -3388,7 +4637,46 @@ aStepsTable = [
 		]
 	],
 	[
-		127,
+		123,
+		20,
+		[
+			[
+				"name",
+				"Unload model"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Unload model
+"
+			],
+			[
+				"interactionid",
+				111
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Unload model"
+			]
+		]
+	],
+	[
+		124,
 		20,
 		[
 			[
@@ -3405,7 +4693,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				115
+				112
 			],
 			[
 				"visible",
@@ -3426,7 +4714,85 @@ aStepsTable = [
 		]
 	],
 	[
-		130,
+		125,
+		20,
+		[
+			[
+				"name",
+				"Unload render texture"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Unload render texture
+"
+			],
+			[
+				"interactionid",
+				113
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Unload render texture"
+			]
+		]
+	],
+	[
+		126,
+		20,
+		[
+			[
+				"name",
+				"Close window and OpenGL context"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Close window and OpenGL context
+"
+			],
+			[
+				"interactionid",
+				114
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Close window and OpenGL context"
+			]
+		]
+	],
+	[
+		127,
 		20,
 		[
 			[
@@ -3443,7 +4809,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				118
+				115
 			],
 			[
 				"visible",
@@ -3508,640 +4874,920 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"value;;_RV_;;Copyright (c) 2015 Ramon Santamaria (@raysan5);;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"value;;_RV_;;Ported to RingRayLib by Ring Team;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"load",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"file;;_RV_;;raylib.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"leftside;;_RV_;;MAX_POSTPRO_SHADERS;;_RV_;;rightside;;_RV_;;12;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"leftside;;_RV_;;FX_GRAYSCALE;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"leftside;;_RV_;;FX_POSTERIZATION;;_RV_;;rightside;;_RV_;;2;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"leftside;;_RV_;;FX_DREAM_VISION;;_RV_;;rightside;;_RV_;;3;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"leftside;;_RV_;;FX_PIXELIZER;;_RV_;;rightside;;_RV_;;4;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"leftside;;_RV_;;FX_CROSS_HATCHING;;_RV_;;rightside;;_RV_;;5;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"leftside;;_RV_;;FX_CROSS_STITCHING;;_RV_;;rightside;;_RV_;;6;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"leftside;;_RV_;;FX_PREDATOR_VIEW;;_RV_;;rightside;;_RV_;;7;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"leftside;;_RV_;;FX_SCANLINES;;_RV_;;rightside;;_RV_;;8;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"leftside;;_RV_;;FX_FISHEYE;;_RV_;;rightside;;_RV_;;9;;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"leftside;;_RV_;;FX_SOBEL;;_RV_;;rightside;;_RV_;;10;;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"leftside;;_RV_;;FX_BLOOM;;_RV_;;rightside;;_RV_;;11;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"leftside;;_RV_;;FX_BLUR;;_RV_;;rightside;;_RV_;;12;;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"leftside;;_RV_;;postproShaderText;;_RV_;;rightside;;_RV_;;["+char(34)+"GRAYSCALE"+char(34)+","+char(34)+"POSTERIZATION"+char(34)+","+char(34)+"DREAM_VISION"+char(34)+","+char(34)+"PIXELIZER"+char(34)+","+char(34)+"CROSS_HATCHING"+char(34)+","+char(34)+"CROSS_STITCHING"+char(34)+","+char(34)+"PREDATOR_VIEW"+char(34)+","+char(34)+"SCANLINES"+char(34)+","+char(34)+"FISHEYE"+char(34)+","+char(34)+"SOBEL"+char(34)+","+char(34)+"BLOOM"+char(34)+","+char(34)+"BLUR"+char(34)+"];;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"func",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"name;;_RV_;;main;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"leftside;;_RV_;;screenWidth;;_RV_;;rightside;;_RV_;;800;;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"leftside;;_RV_;;screenHeight;;_RV_;;rightside;;_RV_;;450;;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetConfigFlags;;_RV_;;parameters;;_RV_;;FLAG_MSAA_4X_HINT;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		23,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;Enable Multi Sampling Anti Aliasing 4x (if available);;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;InitWindow;;_RV_;;parameters;;_RV_;;screenWidth,screenHeight,"+char(34)+"raylib [shaders] example - postprocessing shader"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		25,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;Define the camera to look into our 3d world;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"leftside;;_RV_;;camera;;_RV_;;rightside;;_RV_;;Camera3D(2.0,3.0,2.0,0.0,1.0,0.0,0.0,1.0,0.0,45.0,0);;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"leftside;;_RV_;;model;;_RV_;;rightside;;_RV_;;LoadModel("+char(34)+"models/church.obj"+char(34)+");;_RV_;;"
+	],
+	[
+		28,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;Load OBJ model;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"leftside;;_RV_;;texture;;_RV_;;rightside;;_RV_;;LoadTexture("+char(34)+"models/church_diffuse.png"+char(34)+");;_RV_;;"
+	],
+	[
+		30,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;Load model texture (diffuse map);;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setmodelmaterialtexture;;_RV_;;parameters;;_RV_;;model,0,MAP_DIFFUSE,texture;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		32,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"leftside;;_RV_;;position;;_RV_;;rightside;;_RV_;;Vector3(0.0,0.0,0.0);;_RV_;;"
+	],
+	[
+		33,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;Set model position;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		34,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;Load all postpro shaders;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		35,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;NOTE 1: All postpro shader use the base vertex shader (DEFAULT_VERTEX_SHADER);;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		36,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;NOTE 2: We load the correct shader depending on GLSL version;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		37,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"leftside;;_RV_;;shaders;;_RV_;;rightside;;_RV_;;list(MAX_POSTPRO_SHADERS);;_RV_;;"
+	],
+	[
+		38,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;NOTE: Defining 0 (NULL) for vertex shader forces usage of internal default vertex shader;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		39,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"leftside;;_RV_;;shaders[FX_GRAYSCALE];;_RV_;;rightside;;_RV_;;LoadShader("+char(34)+""+char(34)+","+char(34)+"shaders/grayscale.fs"+char(34)+");;_RV_;;"
 	],
 	[
 		40,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"leftside;;_RV_;;shaders[FX_POSTERIZATION];;_RV_;;rightside;;_RV_;;LoadShader("+char(34)+""+char(34)+","+char(34)+"shaders/posterization.fs"+char(34)+");;_RV_;;"
 	],
 	[
 		41,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"leftside;;_RV_;;shaders[FX_DREAM_VISION];;_RV_;;rightside;;_RV_;;LoadShader("+char(34)+""+char(34)+","+char(34)+"shaders/dream_vision.fs"+char(34)+");;_RV_;;"
 	],
 	[
 		42,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"leftside;;_RV_;;shaders[FX_PIXELIZER];;_RV_;;rightside;;_RV_;;LoadShader("+char(34)+""+char(34)+","+char(34)+"shaders/pixelizer.fs"+char(34)+");;_RV_;;"
 	],
 	[
 		43,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"leftside;;_RV_;;shaders[FX_CROSS_HATCHING];;_RV_;;rightside;;_RV_;;LoadShader("+char(34)+""+char(34)+","+char(34)+"shaders/cross_hatching.fs"+char(34)+");;_RV_;;"
 	],
 	[
 		44,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"leftside;;_RV_;;shaders[FX_CROSS_STITCHING];;_RV_;;rightside;;_RV_;;LoadShader("+char(34)+""+char(34)+","+char(34)+"shaders/cross_stitching.fs"+char(34)+");;_RV_;;"
 	],
 	[
 		45,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"leftside;;_RV_;;shaders[FX_PREDATOR_VIEW];;_RV_;;rightside;;_RV_;;LoadShader("+char(34)+""+char(34)+","+char(34)+"shaders/predator.fs"+char(34)+");;_RV_;;"
 	],
 	[
 		46,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"leftside;;_RV_;;shaders[FX_SCANLINES];;_RV_;;rightside;;_RV_;;LoadShader("+char(34)+""+char(34)+","+char(34)+"shaders/scanlines.fs"+char(34)+");;_RV_;;"
 	],
 	[
 		47,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"leftside;;_RV_;;shaders[FX_FISHEYE];;_RV_;;rightside;;_RV_;;LoadShader("+char(34)+""+char(34)+","+char(34)+"shaders/fisheye.fs"+char(34)+");;_RV_;;"
 	],
 	[
 		48,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"leftside;;_RV_;;shaders[FX_SOBEL];;_RV_;;rightside;;_RV_;;LoadShader("+char(34)+""+char(34)+","+char(34)+"shaders/sobel.fs"+char(34)+");;_RV_;;"
 	],
 	[
 		49,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"leftside;;_RV_;;shaders[FX_BLOOM];;_RV_;;rightside;;_RV_;;LoadShader("+char(34)+""+char(34)+","+char(34)+"shaders/bloom.fs"+char(34)+");;_RV_;;"
 	],
 	[
 		50,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"leftside;;_RV_;;shaders[FX_BLUR];;_RV_;;rightside;;_RV_;;LoadShader("+char(34)+""+char(34)+","+char(34)+"shaders/blur.fs"+char(34)+");;_RV_;;"
 	],
 	[
 		51,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"leftside;;_RV_;;currentShader;;_RV_;;rightside;;_RV_;;FX_GRAYSCALE;;_RV_;;"
+	],
+	[
+		52,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;Create a RenderTexture2D to be used for render to texture;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		53,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"leftside;;_RV_;;target;;_RV_;;rightside;;_RV_;;LoadRenderTexture(screenWidth,screenHeight);;_RV_;;"
+	],
+	[
+		54,
+		1,
+		"callfunc",
+		"10/09/2024",
+		"16:12:43",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetTargetFPS;;_RV_;;parameters;;_RV_;;60;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		55,
 		1,
-		"callfunc",
-		"06/05/2023",
-		"14:24:09",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetCameraMode;;_RV_;;parameters;;_RV_;;camera,CAMERA_ORBITAL;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"comment_text",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;Set our game to run at 60 frames-per-second;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		56,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;--------------------------------------------------------------------------------------;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		57,
 		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;Main game loop;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		58,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;Detect window close button or ESC key;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		59,
+		1,
+		"whileloop",
+		"10/09/2024",
+		"16:12:43",
+		"condition;;_RV_;;!WindowShouldClose();;_RV_;;"
+	],
+	[
+		60,
+		1,
 		"callfunc",
-		"06/05/2023",
-		"14:24:09",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetTargetFPS;;_RV_;;parameters;;_RV_;;60;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:12:43",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UpdateCamera;;_RV_;;parameters;;_RV_;;camera,CAMERA_ORBITAL;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		61,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;Update camera;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		62,
 		1,
-		"whileloop",
-		"06/05/2023",
-		"14:24:09",
-		"condition;;_RV_;;!WindowShouldClose();;_RV_;;"
+		"ifstatement",
+		"10/09/2024",
+		"16:12:43",
+		"condition;;_RV_;;(IsKeyPressed(KEY_RIGHT));;_RV_;;"
 	],
 	[
 		63,
 		1,
-		"callfunc",
-		"06/05/2023",
-		"14:24:09",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UpdateCamera;;_RV_;;parameters;;_RV_;;camera;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"freetyping",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;currentShader++;;_RV_;;"
+	],
+	[
+		64,
+		1,
+		"elseif",
+		"10/09/2024",
+		"16:12:43",
+		"condition;;_RV_;;(IsKeyPressed(KEY_LEFT));;_RV_;;"
 	],
 	[
 		65,
 		1,
-		"ifstatement",
-		"06/05/2023",
-		"14:24:09",
-		"condition;;_RV_;;(IsKeyPressed(KEY_RIGHT));;_RV_;;"
+		"freetyping",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;currentShader--;;_RV_;;"
 	],
 	[
 		66,
 		1,
-		"freetyping",
-		"06/05/2023",
-		"14:24:09",
-		"value;;_RV_;;currentShader++;;_RV_;;"
+		"ifstatement",
+		"10/09/2024",
+		"16:12:43",
+		"condition;;_RV_;;(currentShader >= MAX_POSTPRO_SHADERS);;_RV_;;"
 	],
 	[
 		67,
 		1,
-		"elseif",
-		"06/05/2023",
-		"14:24:09",
-		"condition;;_RV_;;(IsKeyPressed(KEY_LEFT));;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:12:43",
+		"leftside;;_RV_;;currentShader;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		68,
 		1,
-		"freetyping",
-		"06/05/2023",
-		"14:24:09",
-		"value;;_RV_;;currentShader--;;_RV_;;"
+		"elseif",
+		"10/09/2024",
+		"16:12:43",
+		"condition;;_RV_;;(currentShader < 1);;_RV_;;"
 	],
 	[
 		69,
 		1,
-		"ifstatement",
-		"06/05/2023",
-		"14:24:09",
-		"condition;;_RV_;;(currentShader >= MAX_POSTPRO_SHADERS);;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:12:43",
+		"leftside;;_RV_;;currentShader;;_RV_;;rightside;;_RV_;;MAX_POSTPRO_SHADERS-1;;_RV_;;"
 	],
 	[
 		70,
 		1,
-		"assignment",
-		"06/05/2023",
-		"14:24:09",
-		"leftside;;_RV_;;currentShader;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
+		"comment_text",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;----------------------------------------------------------------------------------;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		71,
 		1,
-		"elseif",
-		"06/05/2023",
-		"14:24:09",
-		"condition;;_RV_;;(currentShader < 1);;_RV_;;"
+		"comment_text",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;Draw;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		72,
 		1,
-		"assignment",
-		"06/05/2023",
-		"14:24:09",
-		"leftside;;_RV_;;currentShader;;_RV_;;rightside;;_RV_;;MAX_POSTPRO_SHADERS-1;;_RV_;;"
+		"comment_text",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;----------------------------------------------------------------------------------;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		73,
+		1,
+		"callfunc",
+		"10/09/2024",
+		"16:12:43",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+	],
+	[
+		74,
+		1,
+		"callfunc",
+		"10/09/2024",
+		"16:12:43",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;ClearBackground;;_RV_;;parameters;;_RV_;;RAYWHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		75,
+		1,
+		"callfunc",
+		"10/09/2024",
+		"16:12:43",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginTextureMode;;_RV_;;parameters;;_RV_;;target;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		76,
 		1,
-		"callfunc",
-		"06/05/2023",
-		"14:24:09",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"comment_text",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;Enable drawing to texture;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		77,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;ClearBackground;;_RV_;;parameters;;_RV_;;RAYWHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		78,
 		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;Clear texture background;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		79,
+		1,
 		"callfunc",
-		"06/05/2023",
-		"14:24:09",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginTextureMode;;_RV_;;parameters;;_RV_;;target;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:12:43",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginMode3D;;_RV_;;parameters;;_RV_;;camera;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		80,
 		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;Begin 3d mode drawing;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		81,
+		1,
 		"callfunc",
-		"06/05/2023",
-		"14:24:09",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;ClearBackground;;_RV_;;parameters;;_RV_;;RAYWHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:12:43",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawModel;;_RV_;;parameters;;_RV_;;model,position,0.1,WHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		82,
 		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;Draw 3d model with texture;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		83,
+		1,
 		"callfunc",
-		"06/05/2023",
-		"14:24:09",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginMode3D;;_RV_;;parameters;;_RV_;;camera;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:12:43",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawGrid;;_RV_;;parameters;;_RV_;;10,1.0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		84,
 		1,
-		"callfunc",
-		"06/05/2023",
-		"14:24:09",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawModel;;_RV_;;parameters;;_RV_;;model,position,0.1,WHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"comment_text",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;Draw a grid;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		85,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;End 3d mode drawing, returns to orthographic 2d mode;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		86,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:24:09",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawGrid;;_RV_;;parameters;;_RV_;;10,1.0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:12:43",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndMode3D;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+	],
+	[
+		87,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;End drawing to texture (now we have a texture available for next passes);;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		88,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;Render previously generated texture using selected postpro shader;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		89,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:24:09",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndMode3D;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"10/09/2024",
+		"16:12:43",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndTextureMode;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+	],
+	[
+		90,
+		1,
+		"callfunc",
+		"10/09/2024",
+		"16:12:43",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginShaderMode;;_RV_;;parameters;;_RV_;;shaders[currentShader];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		91,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;NOTE: Render texture must be y-flipped due to default OpenGL coordinates (left-bottom);;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		92,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:24:09",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndTextureMode;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"10/09/2024",
+		"16:12:43",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawTextureRec;;_RV_;;parameters;;_RV_;;target.texture,Rectangle(0,0,target.texture.width,-target.texture.height),Vector2(0,0),WHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		93,
 		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;Draw 2d shapes and text over drawn texture;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		94,
+		1,
 		"callfunc",
-		"06/05/2023",
-		"14:24:09",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginShaderMode;;_RV_;;parameters;;_RV_;;shaders[currentShader];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:12:43",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndShaderMode;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		95,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:24:09",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawTextureRec;;_RV_;;parameters;;_RV_;;target.texture,Rectangle(0,0,target.texture.width,-target.texture.height),Vector2(0,0),WHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:12:43",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawRectangle;;_RV_;;parameters;;_RV_;;0,9,580,30,Fade(LIGHTGRAY,0.7);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		96,
+		1,
+		"callfunc",
+		"10/09/2024",
+		"16:12:43",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"(c) Church 3D model by Alberto Cano"+char(34)+",screenWidth-200,screenHeight-20,10,GRAY;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		97,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:24:09",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndShaderMode;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"10/09/2024",
+		"16:12:43",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"CURRENT POSTPRO SHADER:"+char(34)+",10,15,20,BLACK;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		98,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:24:09",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawRectangle;;_RV_;;parameters;;_RV_;;0,9,580,30,Fade(LIGHTGRAY,0.7);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:12:43",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;postproShaderText[currentShader],330,15,20,RED;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		99,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:24:09",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"(c) Church 3D model by Alberto Cano"+char(34)+",screenWidth-200,screenHeight-20,10,GRAY;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:12:43",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"< >"+char(34)+",540,10,30,DARKBLUE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		100,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:24:09",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"CURRENT POSTPRO SHADER:"+char(34)+",10,15,20,BLACK;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:12:43",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawFPS;;_RV_;;parameters;;_RV_;;700,15;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		101,
 		1,
-		"callfunc",
-		"06/05/2023",
-		"14:24:09",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;postproShaderText[currentShader],330,15,20,RED;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"comment_text",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;----------------------------------------------------------------------------------;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		102,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:24:09",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"< >"+char(34)+",540,10,30,DARKBLUE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:12:43",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		103,
 		1,
-		"callfunc",
-		"06/05/2023",
-		"14:24:09",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawFPS;;_RV_;;parameters;;_RV_;;700,15;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"comment_text",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;De-Initialization;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		104,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;--------------------------------------------------------------------------------------;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		105,
 		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;Unload all postpro shaders;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		106,
+		1,
+		"forloop",
+		"10/09/2024",
+		"16:12:43",
+		"start;;_RV_;;i = 1;;_RV_;;to;;_RV_;;MAX_POSTPRO_SHADERS;;_RV_;;step;;_RV_;;1;;_RV_;;"
+	],
+	[
+		107,
+		1,
 		"callfunc",
-		"06/05/2023",
-		"14:24:09",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"10/09/2024",
+		"16:12:43",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadShader;;_RV_;;parameters;;_RV_;;shaders[i];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		108,
+		1,
+		"callfunc",
+		"10/09/2024",
+		"16:12:43",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadTexture;;_RV_;;parameters;;_RV_;;texture;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		109,
 		1,
-		"forloop",
-		"06/05/2023",
-		"14:24:09",
-		"start;;_RV_;;i = 1;;_RV_;;to;;_RV_;;MAX_POSTPRO_SHADERS;;_RV_;;step;;_RV_;;1;;_RV_;;"
+		"comment_text",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;Unload texture;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		110,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:24:09",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadShader;;_RV_;;parameters;;_RV_;;shaders[i];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:12:43",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadModel;;_RV_;;parameters;;_RV_;;model;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		111,
 		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;Unload model;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		112,
+		1,
 		"callfunc",
-		"06/05/2023",
-		"14:24:09",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadTexture;;_RV_;;parameters;;_RV_;;texture;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:12:43",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadRenderTexture;;_RV_;;parameters;;_RV_;;target;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		113,
 		1,
-		"callfunc",
-		"06/05/2023",
-		"14:24:09",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadModel;;_RV_;;parameters;;_RV_;;model;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"comment_text",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;Unload render texture;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		114,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:43",
+		"value;;_RV_;;Close window and OpenGL context;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		115,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:24:09",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadRenderTexture;;_RV_;;parameters;;_RV_;;target;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
-	],
-	[
-		118,
-		1,
-		"callfunc",
-		"06/05/2023",
-		"14:24:09",
+		"10/09/2024",
+		"16:12:43",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;CloseWindow;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	]
 ]

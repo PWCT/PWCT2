@@ -19,13 +19,11 @@ camera = Camera3D(
 
 cubePosition = Vector3(0, 0, 0)
 
-SetCameraMode(camera, CAMERA_FREE) 		// Set a free camera mode
-
 SetTargetFPS(60)                   
 
 while !WindowShouldClose()
 
-        UpdateCamera(camera)
+        UpdateCamera(camera,CAMERA_FREE)
 
         if IsKeyDown("Z") camera.target = Vector3( 0, 0, 0) ok
 

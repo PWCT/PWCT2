@@ -6,9 +6,6 @@
 #--------------------------------------------------------------
 load "raylib.ring"
 
-
-
-
 func main
     
          screenWidth = 800
@@ -23,9 +20,9 @@ func main
 	     texture = LoadTextureFromImage(checked)
 	    UnloadImage(checked)
 		    
-	    model = LoadModelFromMesh(GenMeshCube(20.0, 0.2, 20.0))
+	    model = LoadModelFromMesh(GenMeshCube_2(20.0, 0.2, 20.0))
 	    SetModelMaterialTexture(model,0,MAP_DIFFUSE,texture)
-	    myplayer.model = LoadModelFromMesh(GenMeshCube(1.0, 1.0, 1.0))
+	    myplayer.model = LoadModelFromMesh(GenMeshCube_2(1.0, 1.0, 1.0))
 	    SetModelMaterialTexture(myplayer.model,0,MAP_DIFFUSE,texture)
 	
 	     myplayer.position = Vector3(5.0,1,5.0)
@@ -37,23 +34,14 @@ func main
 
 	
 	    camera = Camera3D(0.0, 5.0, 30.0,
-				          20.0, 6.0, 0.0,
+				          5.0, 6.0, 0.0,
 				          0.0, 1.0, 0.0, 
 				          50.0, CAMERA_PERSPECTIVE )  
 	
-	    SetCameraMode(camera, CAMERA_THIRD_PERSON)    
-	
-	
-
     SetTargetFPS(30)              
   
     while !WindowShouldClose()  
         
-        # Update
-       
-                UpdateCamera(camera)    
-
-     
         if IsKeyDown(KEY_SPACE) and  myplayer.canjump
 
             myplayer.canjump = false 

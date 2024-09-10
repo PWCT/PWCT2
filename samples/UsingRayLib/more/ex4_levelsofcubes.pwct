@@ -2,9 +2,9 @@
 
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
-cNaturalLanguageName     = 'English'
-nStepsID                 = 141		
-nInteractionsID          = 114
+cNaturalLanguageName     = 'english'
+nStepsID                 = 138		
+nInteractionsID          = 111
 
 aStepsTable = [
 	[
@@ -47,7 +47,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"1 Sample : Top-Down View - Many Levels of Cubes"
+				"Sample : Top-Down View - Many Levels of Cubes"
 			],
 			[
 				"active",
@@ -55,7 +55,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# 1 Sample : Top-Down View - Many Levels of Cubes
+				"#Sample : Top-Down View - Many Levels of Cubes
 "
 			],
 			[
@@ -76,7 +76,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"1 Sample : Top-Down View - Many Levels of Cubes"
+				"Sample : Top-Down View - Many Levels of Cubes"
 			]
 		]
 	],
@@ -94,7 +94,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# 2018, Mahmoud Fayed <msfclipper@yahoo.com>
+				"#2018, Mahmoud Fayed <msfclipper@yahoo.com>
 "
 			],
 			[
@@ -133,7 +133,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# 2020, port to RayLib, Ilir Liburn <iliribur@gmail.com>
+				"#2020, port to RayLib, Ilir Liburn <iliribur@gmail.com>
 "
 			],
 			[
@@ -172,7 +172,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# Load Libraries
+				"#Load Libraries
 "
 			],
 			[
@@ -249,7 +249,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# RingRayLib  Library
+				"#RingRayLib  Library
 "
 			],
 			[
@@ -326,7 +326,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# RingOpenGL  Library
+				"#RingOpenGL  Library
 "
 			],
 			[
@@ -395,7 +395,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">GPU_FAST</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">true</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">GPU_FAST</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">TRUE</font></span>"
 			],
 			[
 				"active",
@@ -403,7 +403,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"GPU_FAST = true"
+				"GPU_FAST = TRUE"
 			],
 			[
 				"interactionid",
@@ -423,7 +423,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"GPU_FAST = true"
+				"GPU_FAST = TRUE"
 			]
 		]
 	],
@@ -441,7 +441,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# acceleration
+				"#acceleration
 "
 			],
 			[
@@ -586,7 +586,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"SetTraceLogLevel(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">LOG_NONE</font></span>)"
+				"InitWindow(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">screenWidth,screenHeight,TITLE</font></span>)"
 			],
 			[
 				"active",
@@ -594,7 +594,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"SetTraceLogLevel(LOG_NONE)"
+				"InitWindow(screenWidth,screenHeight,TITLE)"
 			],
 			[
 				"interactionid",
@@ -614,7 +614,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"SetTraceLogLevel(LOG_NONE)"
+				"InitWindow(screenWidth,screenHeight,TITLE)"
 			]
 		]
 	],
@@ -624,7 +624,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"SetConfigFlags(FLAG_FULLSCREEN_MODE) // | FLAG_VSYNC_HINT)"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">font</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">LoadFont(&quot;resources/pirulen.ttf&quot;)</font></span>"
 			],
 			[
 				"active",
@@ -632,8 +632,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# SetConfigFlags(FLAG_FULLSCREEN_MODE) // | FLAG_VSYNC_HINT)
-"
+				"font = LoadFont("+char(34)+"resources/pirulen.ttf"+char(34)+")"
 			],
 			[
 				"interactionid",
@@ -649,11 +648,11 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				1
+				2
 			],
 			[
 				"plainname",
-				"SetConfigFlags(FLAG_FULLSCREEN_MODE) // | FLAG_VSYNC_HINT)"
+				"font = LoadFont("+char(34)+"resources/pirulen.ttf"+char(34)+")"
 			]
 		]
 	],
@@ -663,7 +662,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"InitWindow(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">screenWidth,screenHeight,TITLE</font></span>)"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">background</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">LoadTexture(&quot;resources/back.png&quot;)</font></span>"
 			],
 			[
 				"active",
@@ -671,7 +670,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"InitWindow(screenWidth,screenHeight,TITLE)"
+				"background = LoadTexture("+char(34)+"resources/back.png"+char(34)+")"
 			],
 			[
 				"interactionid",
@@ -691,88 +690,12 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"InitWindow(screenWidth,screenHeight,TITLE)"
+				"background = LoadTexture("+char(34)+"resources/back.png"+char(34)+")"
 			]
 		]
 	],
 	[
 		19,
-		1,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">font</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">LoadFont(&quot;resources/pirulen.ttf&quot;)</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"font = LoadFont("+char(34)+"resources/pirulen.ttf"+char(34)+")"
-			],
-			[
-				"interactionid",
-				19
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"font = LoadFont("+char(34)+"resources/pirulen.ttf"+char(34)+")"
-			]
-		]
-	],
-	[
-		20,
-		1,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">background</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">LoadTexture(&quot;resources/back.jpg&quot;)</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"background = LoadTexture("+char(34)+"resources/back.jpg"+char(34)+")"
-			],
-			[
-				"interactionid",
-				20
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"background = LoadTexture("+char(34)+"resources/back.jpg"+char(34)+")"
-			]
-		]
-	],
-	[
-		21,
 		1,
 		[
 			[
@@ -789,7 +712,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				21
+				19
 			],
 			[
 				"visible",
@@ -810,8 +733,8 @@ aStepsTable = [
 		]
 	],
 	[
-		22,
-		21,
+		20,
+		19,
 		[
 			[
 				"name",
@@ -827,7 +750,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				21
+				19
 			],
 			[
 				"visible",
@@ -848,8 +771,8 @@ aStepsTable = [
 		]
 	],
 	[
-		24,
 		22,
+		20,
 		[
 			[
 				"name",
@@ -862,6 +785,82 @@ aStepsTable = [
 			[
 				"code",
 				"image = LoadImage("+char(34)+"resources/cubicmap.png"+char(34)+")"
+			],
+			[
+				"interactionid",
+				20
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"image = LoadImage("+char(34)+"resources/cubicmap.png"+char(34)+")"
+			]
+		]
+	],
+	[
+		23,
+		20,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">texture</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">LoadTexture(&quot;resources/cubicmap_atlas.png&quot;)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"texture = LoadTexture("+char(34)+"resources/cubicmap_atlas.png"+char(34)+")"
+			],
+			[
+				"interactionid",
+				21
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"texture = LoadTexture("+char(34)+"resources/cubicmap_atlas.png"+char(34)+")"
+			]
+		]
+	],
+	[
+		24,
+		20,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">mesh</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">GenMeshCubicmap(image,Vector3(1.0,1.0,1.0))</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"mesh = GenMeshCubicmap(image,Vector3(1.0,1.0,1.0))"
 			],
 			[
 				"interactionid",
@@ -881,17 +880,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"image = LoadImage("+char(34)+"resources/cubicmap.png"+char(34)+")"
+				"mesh = GenMeshCubicmap(image,Vector3(1.0,1.0,1.0))"
 			]
 		]
 	],
 	[
 		25,
-		22,
+		20,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">texture</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">LoadTexture(&quot;resources/cubicmap_atlas.png&quot;)</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">model</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">LoadModelFromMesh(mesh)</font></span>"
 			],
 			[
 				"active",
@@ -899,7 +898,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"texture = LoadTexture("+char(34)+"resources/cubicmap_atlas.png"+char(34)+")"
+				"model = LoadModelFromMesh(mesh)"
 			],
 			[
 				"interactionid",
@@ -919,17 +918,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"texture = LoadTexture("+char(34)+"resources/cubicmap_atlas.png"+char(34)+")"
+				"model = LoadModelFromMesh(mesh)"
 			]
 		]
 	],
 	[
 		26,
-		22,
+		20,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">mesh</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">GenMeshCubicmap(image,Vector3(1.0,1.0,1.0))</font></span>"
+				"setmodelmaterialtexture(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">model,0,MAP_DIFFUSE,texture</font></span>)"
 			],
 			[
 				"active",
@@ -937,7 +936,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"mesh = GenMeshCubicmap(image,Vector3(1.0,1.0,1.0))"
+				"setmodelmaterialtexture(model,0,MAP_DIFFUSE,texture)"
 			],
 			[
 				"interactionid",
@@ -957,17 +956,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"mesh = GenMeshCubicmap(image,Vector3(1.0,1.0,1.0))"
+				"setmodelmaterialtexture(model,0,MAP_DIFFUSE,texture)"
 			]
 		]
 	],
 	[
 		27,
-		22,
+		20,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">model</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">LoadModelFromMesh(mesh)</font></span>"
+				"Else"
 			],
 			[
 				"active",
@@ -975,7 +974,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"model = LoadModelFromMesh(mesh)"
+				"else"
 			],
 			[
 				"interactionid",
@@ -995,89 +994,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"model = LoadModelFromMesh(mesh)"
+				"Else"
 			]
 		]
 	],
 	[
 		28,
-		22,
-		[
-			[
-				"name",
-				"setmodelmaterialtexture(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">model,0,MAP_DIFFUSE,texture</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"setmodelmaterialtexture(model,0,MAP_DIFFUSE,texture)"
-			],
-			[
-				"interactionid",
-				26
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"setmodelmaterialtexture(model,0,MAP_DIFFUSE,texture)"
-			]
-		]
-	],
-	[
-		29,
-		22,
-		[
-			[
-				"name",
-				"Else"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"else"
-			],
-			[
-				"interactionid",
-				27
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Else"
-			]
-		]
-	],
-	[
-		30,
-		29,
+		27,
 		[
 			[
 				"name",
@@ -1093,7 +1016,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				27
+				25
 			],
 			[
 				"visible",
@@ -1114,12 +1037,12 @@ aStepsTable = [
 		]
 	],
 	[
-		31,
-		30,
+		29,
+		28,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">texture</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">LoadTexture(&quot;resources/n1.jpg&quot;)</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">texture</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">LoadTexture(&quot;resources/n1.png&quot;)</font></span>"
 			],
 			[
 				"active",
@@ -1127,7 +1050,83 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"texture = LoadTexture("+char(34)+"resources/n1.jpg"+char(34)+")"
+				"texture = LoadTexture("+char(34)+"resources/n1.png"+char(34)+")"
+			],
+			[
+				"interactionid",
+				26
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"texture = LoadTexture("+char(34)+"resources/n1.png"+char(34)+")"
+			]
+		]
+	],
+	[
+		30,
+		28,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">mesh</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">GenMeshCube_2(1,1,1)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"mesh = GenMeshCube_2(1,1,1)"
+			],
+			[
+				"interactionid",
+				27
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"mesh = GenMeshCube_2(1,1,1)"
+			]
+		]
+	],
+	[
+		31,
+		28,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cube</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">LoadModelFromMesh(mesh)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cube = LoadModelFromMesh(mesh)"
 			],
 			[
 				"interactionid",
@@ -1147,17 +1146,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"texture = LoadTexture("+char(34)+"resources/n1.jpg"+char(34)+")"
+				"cube = LoadModelFromMesh(mesh)"
 			]
 		]
 	],
 	[
 		32,
-		30,
+		28,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">mesh</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">GenMeshCube(1,1,1)</font></span>"
+				"setModelmaterialtexture(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cube,0,0,texture</font></span>)"
 			],
 			[
 				"active",
@@ -1165,7 +1164,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"mesh = GenMeshCube(1,1,1)"
+				"setModelmaterialtexture(cube,0,0,texture)"
 			],
 			[
 				"interactionid",
@@ -1185,89 +1184,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"mesh = GenMeshCube(1,1,1)"
-			]
-		]
-	],
-	[
-		33,
-		30,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cube</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">LoadModelFromMesh(mesh)</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"cube = LoadModelFromMesh(mesh)"
-			],
-			[
-				"interactionid",
-				30
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"cube = LoadModelFromMesh(mesh)"
-			]
-		]
-	],
-	[
-		34,
-		30,
-		[
-			[
-				"name",
-				"setModelmaterialtexture(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cube,0,0,texture</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"setModelmaterialtexture(cube,0,0,texture)"
-			],
-			[
-				"interactionid",
-				31
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
 				"setModelmaterialtexture(cube,0,0,texture)"
 			]
 		]
 	],
 	[
-		23,
 		21,
+		19,
 		[
 			[
 				"name",
@@ -1283,7 +1206,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				21
+				19
 			],
 			[
 				"visible",
@@ -1304,7 +1227,7 @@ aStepsTable = [
 		]
 	],
 	[
-		35,
+		33,
 		1,
 		[
 			[
@@ -1317,7 +1240,84 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# angle of rotation for the camera direction
+				"#angle of rotation for the camera direction
+"
+			],
+			[
+				"interactionid",
+				30
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"angle of rotation for the camera direction"
+			]
+		]
+	],
+	[
+		34,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">angle</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">0.0</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"angle = 0.0"
+			],
+			[
+				"interactionid",
+				31
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"angle = 0.0"
+			]
+		]
+	],
+	[
+		35,
+		1,
+		[
+			[
+				"name",
+				"XZ position of the camera"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#XZ position of the camera
 "
 			],
 			[
@@ -1338,7 +1338,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"angle of rotation for the camera direction"
+				"XZ position of the camera"
 			]
 		]
 	],
@@ -1348,7 +1348,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">angle</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">0.0</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cx</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">0.0</font></span>"
 			],
 			[
 				"active",
@@ -1356,7 +1356,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"angle = 0.0"
+				"cx = 0.0"
 			],
 			[
 				"interactionid",
@@ -1376,7 +1376,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"angle = 0.0"
+				"cx = 0.0"
 			]
 		]
 	],
@@ -1386,7 +1386,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"XZ position of the camera"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">lx</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">0.0</font></span>"
 			],
 			[
 				"active",
@@ -1394,8 +1394,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# XZ position of the camera
-"
+				"lx = 0.0"
 			],
 			[
 				"interactionid",
@@ -1411,11 +1410,11 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				1
+				2
 			],
 			[
 				"plainname",
-				"XZ position of the camera"
+				"lx = 0.0"
 			]
 		]
 	],
@@ -1425,7 +1424,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cx</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">0.0</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cz</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">5.0</font></span>"
 			],
 			[
 				"active",
@@ -1433,7 +1432,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"cx = 0.0"
+				"cz = 5.0"
 			],
 			[
 				"interactionid",
@@ -1453,7 +1452,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"cx = 0.0"
+				"cz = 5.0"
 			]
 		]
 	],
@@ -1463,7 +1462,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">lx</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">0.0</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">lz</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">-1.0</font></span>"
 			],
 			[
 				"active",
@@ -1471,7 +1470,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"lx = 0.0"
+				"lz = -1.0"
 			],
 			[
 				"interactionid",
@@ -1491,7 +1490,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"lx = 0.0"
+				"lz = -1.0"
 			]
 		]
 	],
@@ -1501,7 +1500,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cz</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">5.0</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">fraction</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">0.01</font></span>"
 			],
 			[
 				"active",
@@ -1509,7 +1508,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"cz = 5.0"
+				"fraction = 0.01"
 			],
 			[
 				"interactionid",
@@ -1529,7 +1528,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"cz = 5.0"
+				"fraction = 0.01"
 			]
 		]
 	],
@@ -1539,7 +1538,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">lz</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">-1.0</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">textPosition</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector2(400,400)</font></span>"
 			],
 			[
 				"active",
@@ -1547,7 +1546,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"lz = -1.0"
+				"textPosition = Vector2(400,400)"
 			],
 			[
 				"interactionid",
@@ -1567,7 +1566,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"lz = -1.0"
+				"textPosition = Vector2(400,400)"
 			]
 		]
 	],
@@ -1577,7 +1576,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">fraction</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">0.01</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cubePosition</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector3(0,0,0)</font></span>"
 			],
 			[
 				"active",
@@ -1585,7 +1584,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"fraction = 0.01"
+				"cubePosition = Vector3(0,0,0)"
 			],
 			[
 				"interactionid",
@@ -1605,7 +1604,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"fraction = 0.01"
+				"cubePosition = Vector3(0,0,0)"
 			]
 		]
 	],
@@ -1615,7 +1614,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">textPosition</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector2(400,400)</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Camera3D(cx,10,cz+5,cx,3.0,cz+lz,0,1.0,0,88,CAMERA_PERSPECTIVE)</font></span>"
 			],
 			[
 				"active",
@@ -1623,7 +1622,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"textPosition = Vector2(400,400)"
+				"camera = Camera3D(cx,10,cz+5,cx,3.0,cz+lz,0,1.0,0,88,CAMERA_PERSPECTIVE)"
 			],
 			[
 				"interactionid",
@@ -1643,7 +1642,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"textPosition = Vector2(400,400)"
+				"camera = Camera3D(cx,10,cz+5,cx,3.0,cz+lz,0,1.0,0,88,CAMERA_PERSPECTIVE)"
 			]
 		]
 	],
@@ -1653,7 +1652,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cubePosition</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Vector3(0,0,0)</font></span>"
+				"SetTargetFPS(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">FPS</font></span>)"
 			],
 			[
 				"active",
@@ -1661,7 +1660,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"cubePosition = Vector3(0,0,0)"
+				"SetTargetFPS(FPS)"
 			],
 			[
 				"interactionid",
@@ -1681,126 +1680,12 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"cubePosition = Vector3(0,0,0)"
+				"SetTargetFPS(FPS)"
 			]
 		]
 	],
 	[
 		45,
-		1,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Camera3D(cx,10,cz+5,cx,3.0,cz+lz,0,1.0,0,88,CAMERA_PERSPECTIVE)</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"camera = Camera3D(cx,10,cz+5,cx,3.0,cz+lz,0,1.0,0,88,CAMERA_PERSPECTIVE)"
-			],
-			[
-				"interactionid",
-				42
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"camera = Camera3D(cx,10,cz+5,cx,3.0,cz+lz,0,1.0,0,88,CAMERA_PERSPECTIVE)"
-			]
-		]
-	],
-	[
-		46,
-		1,
-		[
-			[
-				"name",
-				"SetCameraMode(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera,CAMERA_CUSTOM</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"SetCameraMode(camera,CAMERA_CUSTOM)"
-			],
-			[
-				"interactionid",
-				43
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"SetCameraMode(camera,CAMERA_CUSTOM)"
-			]
-		]
-	],
-	[
-		47,
-		1,
-		[
-			[
-				"name",
-				"SetTargetFPS(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">60</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"SetTargetFPS(60)"
-			],
-			[
-				"interactionid",
-				44
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"SetTargetFPS(60)"
-			]
-		]
-	],
-	[
-		48,
 		1,
 		[
 			[
@@ -1817,7 +1702,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				45
+				42
 			],
 			[
 				"visible",
@@ -1838,8 +1723,8 @@ aStepsTable = [
 		]
 	],
 	[
-		49,
-		48,
+		46,
+		45,
 		[
 			[
 				"name",
@@ -1855,7 +1740,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				45
+				42
 			],
 			[
 				"visible",
@@ -1876,12 +1761,12 @@ aStepsTable = [
 		]
 	],
 	[
-		51,
-		49,
+		48,
+		46,
 		[
 			[
 				"name",
-				"UpdateCamera(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera</font></span>)"
+				"UpdateCamera(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera,CAMERA_ORBITAL</font></span>)"
 			],
 			[
 				"active",
@@ -1889,7 +1774,121 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"UpdateCamera(camera)"
+				"UpdateCamera(camera,CAMERA_ORBITAL)"
+			],
+			[
+				"interactionid",
+				43
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"UpdateCamera(camera,CAMERA_ORBITAL)"
+			]
+		]
+	],
+	[
+		49,
+		46,
+		[
+			[
+				"name",
+				"BeginDrawing(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"BeginDrawing()"
+			],
+			[
+				"interactionid",
+				44
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"BeginDrawing()"
+			]
+		]
+	],
+	[
+		50,
+		46,
+		[
+			[
+				"name",
+				"DrawTexture(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">background,0,0,WHITE</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"DrawTexture(background,0,0,WHITE)"
+			],
+			[
+				"interactionid",
+				45
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"DrawTexture(background,0,0,WHITE)"
+			]
+		]
+	],
+	[
+		51,
+		46,
+		[
+			[
+				"name",
+				"BeginMode3D(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"BeginMode3D(camera)"
 			],
 			[
 				"interactionid",
@@ -1909,17 +1908,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"UpdateCamera(camera)"
+				"BeginMode3D(camera)"
 			]
 		]
 	],
 	[
 		52,
-		49,
+		46,
 		[
 			[
 				"name",
-				"BeginDrawing(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+				"glClear(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">GL_DEPTH_BUFFER_BIT</font></span>)"
 			],
 			[
 				"active",
@@ -1927,7 +1926,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"BeginDrawing()"
+				"glClear(GL_DEPTH_BUFFER_BIT)"
 			],
 			[
 				"interactionid",
@@ -1947,127 +1946,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"BeginDrawing()"
+				"glClear(GL_DEPTH_BUFFER_BIT)"
 			]
 		]
 	],
 	[
 		53,
-		49,
-		[
-			[
-				"name",
-				"DrawTexture(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">background,0,0,WHITE</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"DrawTexture(background,0,0,WHITE)"
-			],
-			[
-				"interactionid",
-				48
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"DrawTexture(background,0,0,WHITE)"
-			]
-		]
-	],
-	[
-		54,
-		49,
-		[
-			[
-				"name",
-				"BeginMode3D(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"BeginMode3D(camera)"
-			],
-			[
-				"interactionid",
-				49
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"BeginMode3D(camera)"
-			]
-		]
-	],
-	[
-		55,
-		49,
-		[
-			[
-				"name",
-				"glClear(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">GL_DEPTH_BUFFER_BIT</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"glClear(GL_DEPTH_BUFFER_BIT)"
-			],
-			[
-				"interactionid",
-				50
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"glClear(GL_DEPTH_BUFFER_BIT)"
-			]
-		]
-	],
-	[
-		56,
-		49,
+		46,
 		[
 			[
 				"name",
@@ -2083,7 +1968,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				51
+				48
 			],
 			[
 				"visible",
@@ -2104,8 +1989,8 @@ aStepsTable = [
 		]
 	],
 	[
-		57,
-		56,
+		54,
+		53,
 		[
 			[
 				"name",
@@ -2121,7 +2006,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				51
+				48
 			],
 			[
 				"visible",
@@ -2142,8 +2027,8 @@ aStepsTable = [
 		]
 	],
 	[
-		59,
-		57,
+		56,
+		54,
 		[
 			[
 				"name",
@@ -2159,7 +2044,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				52
+				49
 			],
 			[
 				"visible",
@@ -2180,8 +2065,8 @@ aStepsTable = [
 		]
 	],
 	[
-		60,
 		57,
+		54,
 		[
 			[
 				"name",
@@ -2197,7 +2082,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				53
+				50
 			],
 			[
 				"visible",
@@ -2218,8 +2103,8 @@ aStepsTable = [
 		]
 	],
 	[
-		61,
-		57,
+		58,
+		54,
 		[
 			[
 				"name",
@@ -2235,7 +2120,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				54
+				51
 			],
 			[
 				"visible",
@@ -2256,8 +2141,8 @@ aStepsTable = [
 		]
 	],
 	[
-		62,
-		57,
+		59,
+		54,
 		[
 			[
 				"name",
@@ -2273,7 +2158,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				55
+				52
 			],
 			[
 				"visible",
@@ -2294,8 +2179,8 @@ aStepsTable = [
 		]
 	],
 	[
-		63,
-		62,
+		60,
+		59,
 		[
 			[
 				"name",
@@ -2311,7 +2196,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				55
+				52
 			],
 			[
 				"visible",
@@ -2332,8 +2217,8 @@ aStepsTable = [
 		]
 	],
 	[
-		65,
-		63,
+		62,
+		60,
 		[
 			[
 				"name",
@@ -2349,7 +2234,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				56
+				53
 			],
 			[
 				"visible",
@@ -2370,8 +2255,8 @@ aStepsTable = [
 		]
 	],
 	[
-		66,
 		63,
+		60,
 		[
 			[
 				"name",
@@ -2387,7 +2272,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				57
+				54
 			],
 			[
 				"visible",
@@ -2408,8 +2293,8 @@ aStepsTable = [
 		]
 	],
 	[
-		67,
-		63,
+		64,
+		60,
 		[
 			[
 				"name",
@@ -2425,7 +2310,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				58
+				55
 			],
 			[
 				"visible",
@@ -2446,8 +2331,8 @@ aStepsTable = [
 		]
 	],
 	[
-		64,
-		62,
+		61,
+		59,
 		[
 			[
 				"name",
@@ -2463,7 +2348,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				55
+				52
 			],
 			[
 				"visible",
@@ -2484,8 +2369,8 @@ aStepsTable = [
 		]
 	],
 	[
-		68,
-		57,
+		65,
+		54,
 		[
 			[
 				"name",
@@ -2501,7 +2386,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				59
+				56
 			],
 			[
 				"visible",
@@ -2522,8 +2407,8 @@ aStepsTable = [
 		]
 	],
 	[
-		69,
-		68,
+		66,
+		65,
 		[
 			[
 				"name",
@@ -2539,7 +2424,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				59
+				56
 			],
 			[
 				"visible",
@@ -2560,8 +2445,8 @@ aStepsTable = [
 		]
 	],
 	[
-		70,
-		69,
+		67,
+		66,
 		[
 			[
 				"name",
@@ -2577,7 +2462,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				60
+				57
 			],
 			[
 				"visible",
@@ -2598,8 +2483,8 @@ aStepsTable = [
 		]
 	],
 	[
-		71,
-		69,
+		68,
+		66,
 		[
 			[
 				"name",
@@ -2615,7 +2500,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				61
+				58
 			],
 			[
 				"visible",
@@ -2636,8 +2521,8 @@ aStepsTable = [
 		]
 	],
 	[
-		72,
-		71,
+		69,
+		68,
 		[
 			[
 				"name",
@@ -2653,7 +2538,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				61
+				58
 			],
 			[
 				"visible",
@@ -2674,8 +2559,8 @@ aStepsTable = [
 		]
 	],
 	[
-		74,
-		72,
+		71,
+		69,
 		[
 			[
 				"name",
@@ -2691,7 +2576,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				62
+				59
 			],
 			[
 				"visible",
@@ -2712,8 +2597,8 @@ aStepsTable = [
 		]
 	],
 	[
-		75,
-		74,
+		72,
+		71,
 		[
 			[
 				"name",
@@ -2729,7 +2614,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				62
+				59
 			],
 			[
 				"visible",
@@ -2750,8 +2635,8 @@ aStepsTable = [
 		]
 	],
 	[
-		77,
-		75,
+		74,
+		72,
 		[
 			[
 				"name",
@@ -2767,7 +2652,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				63
+				60
 			],
 			[
 				"visible",
@@ -2788,8 +2673,8 @@ aStepsTable = [
 		]
 	],
 	[
-		78,
-		77,
+		75,
+		74,
 		[
 			[
 				"name",
@@ -2805,7 +2690,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				63
+				60
 			],
 			[
 				"visible",
@@ -2826,8 +2711,8 @@ aStepsTable = [
 		]
 	],
 	[
-		80,
-		78,
+		77,
+		75,
 		[
 			[
 				"name",
@@ -2840,6 +2725,120 @@ aStepsTable = [
 			[
 				"code",
 				"cubePosition.x = i"
+			],
+			[
+				"interactionid",
+				61
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cubePosition.x = i"
+			]
+		]
+	],
+	[
+		78,
+		75,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cubePosition.z</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">j</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cubePosition.z = j"
+			],
+			[
+				"interactionid",
+				62
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cubePosition.z = j"
+			]
+		]
+	],
+	[
+		79,
+		75,
+		[
+			[
+				"name",
+				"DrawModel(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cube,cubePosition,1,WHITE</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"DrawModel(cube,cubePosition,1,WHITE)"
+			],
+			[
+				"interactionid",
+				63
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"DrawModel(cube,cubePosition,1,WHITE)"
+			]
+		]
+	],
+	[
+		80,
+		75,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cubePosition.z--</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cubePosition.z--"
 			],
 			[
 				"interactionid",
@@ -2859,17 +2858,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"cubePosition.x = i"
+				"cubePosition.z--"
 			]
 		]
 	],
 	[
 		81,
-		78,
+		75,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cubePosition.z</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">j</font></span>"
+				"DrawModel(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cube,cubePosition,1,WHITE</font></span>)"
 			],
 			[
 				"active",
@@ -2877,7 +2876,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"cubePosition.z = j"
+				"DrawModel(cube,cubePosition,1,WHITE)"
 			],
 			[
 				"interactionid",
@@ -2897,17 +2896,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"cubePosition.z = j"
+				"DrawModel(cube,cubePosition,1,WHITE)"
 			]
 		]
 	],
 	[
 		82,
-		78,
+		75,
 		[
 			[
 				"name",
-				"DrawModel(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cube,cubePosition,1,WHITE</font></span>)"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cubePosition.z--</font></span>"
 			],
 			[
 				"active",
@@ -2915,7 +2914,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"DrawModel(cube,cubePosition,1,WHITE)"
+				"cubePosition.z--"
 			],
 			[
 				"interactionid",
@@ -2935,17 +2934,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"DrawModel(cube,cubePosition,1,WHITE)"
+				"cubePosition.z--"
 			]
 		]
 	],
 	[
 		83,
-		78,
+		75,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cubePosition.z--</font></span>"
+				"DrawModel(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cube,cubePosition,1,WHITE</font></span>)"
 			],
 			[
 				"active",
@@ -2953,7 +2952,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"cubePosition.z--"
+				"DrawModel(cube,cubePosition,1,WHITE)"
 			],
 			[
 				"interactionid",
@@ -2973,17 +2972,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"cubePosition.z--"
+				"DrawModel(cube,cubePosition,1,WHITE)"
 			]
 		]
 	],
 	[
 		84,
-		78,
+		75,
 		[
 			[
 				"name",
-				"DrawModel(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cube,cubePosition,1,WHITE</font></span>)"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cubePosition.z--</font></span>"
 			],
 			[
 				"active",
@@ -2991,7 +2990,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"DrawModel(cube,cubePosition,1,WHITE)"
+				"cubePosition.z--"
 			],
 			[
 				"interactionid",
@@ -3011,17 +3010,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"DrawModel(cube,cubePosition,1,WHITE)"
+				"cubePosition.z--"
 			]
 		]
 	],
 	[
 		85,
-		78,
+		75,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cubePosition.z--</font></span>"
+				"DrawModel(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cube,cubePosition,1,WHITE</font></span>)"
 			],
 			[
 				"active",
@@ -3029,7 +3028,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"cubePosition.z--"
+				"DrawModel(cube,cubePosition,1,WHITE)"
 			],
 			[
 				"interactionid",
@@ -3049,17 +3048,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"cubePosition.z--"
+				"DrawModel(cube,cubePosition,1,WHITE)"
 			]
 		]
 	],
 	[
 		86,
-		78,
+		75,
 		[
 			[
 				"name",
-				"DrawModel(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cube,cubePosition,1,WHITE</font></span>)"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cubePosition.z--</font></span>"
 			],
 			[
 				"active",
@@ -3067,7 +3066,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"DrawModel(cube,cubePosition,1,WHITE)"
+				"cubePosition.z--"
 			],
 			[
 				"interactionid",
@@ -3087,17 +3086,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"DrawModel(cube,cubePosition,1,WHITE)"
+				"cubePosition.z--"
 			]
 		]
 	],
 	[
 		87,
-		78,
+		75,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cubePosition.z--</font></span>"
+				"DrawModel(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cube,cubePosition,1,WHITE</font></span>)"
 			],
 			[
 				"active",
@@ -3105,7 +3104,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"cubePosition.z--"
+				"DrawModel(cube,cubePosition,1,WHITE)"
 			],
 			[
 				"interactionid",
@@ -3125,159 +3124,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"cubePosition.z--"
-			]
-		]
-	],
-	[
-		88,
-		78,
-		[
-			[
-				"name",
-				"DrawModel(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cube,cubePosition,1,WHITE</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
 				"DrawModel(cube,cubePosition,1,WHITE)"
-			],
-			[
-				"interactionid",
-				72
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"DrawModel(cube,cubePosition,1,WHITE)"
-			]
-		]
-	],
-	[
-		89,
-		78,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cubePosition.z--</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"cubePosition.z--"
-			],
-			[
-				"interactionid",
-				73
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"cubePosition.z--"
-			]
-		]
-	],
-	[
-		90,
-		78,
-		[
-			[
-				"name",
-				"DrawModel(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cube,cubePosition,1,WHITE</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"DrawModel(cube,cubePosition,1,WHITE)"
-			],
-			[
-				"interactionid",
-				74
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"DrawModel(cube,cubePosition,1,WHITE)"
-			]
-		]
-	],
-	[
-		79,
-		77,
-		[
-			[
-				"name",
-				"End of For Loop"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				63
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of For Loop"
 			]
 		]
 	],
@@ -3299,7 +3146,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				62
+				60
 			],
 			[
 				"visible",
@@ -3316,44 +3163,6 @@ aStepsTable = [
 			[
 				"plainname",
 				"End of For Loop"
-			]
-		]
-	],
-	[
-		91,
-		72,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cubePosition.y&nbsp;+=&nbsp;1</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"cubePosition.y += 1"
-			],
-			[
-				"interactionid",
-				75
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"cubePosition.y += 1"
 			]
 		]
 	],
@@ -3375,7 +3184,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				61
+				59
 			],
 			[
 				"visible",
@@ -3396,8 +3205,84 @@ aStepsTable = [
 		]
 	],
 	[
-		58,
-		56,
+		88,
+		69,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cubePosition.y&nbsp;+=&nbsp;1</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cubePosition.y += 1"
+			],
+			[
+				"interactionid",
+				72
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cubePosition.y += 1"
+			]
+		]
+	],
+	[
+		70,
+		68,
+		[
+			[
+				"name",
+				"End of For Loop"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				58
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of For Loop"
+			]
+		]
+	],
+	[
+		55,
+		53,
 		[
 			[
 				"name",
@@ -3413,7 +3298,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				51
+				48
 			],
 			[
 				"visible",
@@ -3434,8 +3319,8 @@ aStepsTable = [
 		]
 	],
 	[
-		92,
-		49,
+		89,
+		46,
 		[
 			[
 				"name",
@@ -3448,6 +3333,120 @@ aStepsTable = [
 			[
 				"code",
 				"EndMode3D()"
+			],
+			[
+				"interactionid",
+				73
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"EndMode3D()"
+			]
+		]
+	],
+	[
+		90,
+		46,
+		[
+			[
+				"name",
+				"DrawTextEx(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">font,&quot;Ring&nbsp;is&nbsp;fun!&quot;,textPosition,60,1,GREEN</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"DrawTextEx(font,"+char(34)+"Ring is fun!"+char(34)+",textPosition,60,1,GREEN)"
+			],
+			[
+				"interactionid",
+				74
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"DrawTextEx(font,"+char(34)+"Ring is fun!"+char(34)+",textPosition,60,1,GREEN)"
+			]
+		]
+	],
+	[
+		91,
+		46,
+		[
+			[
+				"name",
+				"DrawFPS(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">10,10</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"DrawFPS(10,10)"
+			],
+			[
+				"interactionid",
+				75
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"DrawFPS(10,10)"
+			]
+		]
+	],
+	[
+		92,
+		46,
+		[
+			[
+				"name",
+				"EndDrawing(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"EndDrawing()"
 			],
 			[
 				"interactionid",
@@ -3467,17 +3466,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"EndMode3D()"
+				"EndDrawing()"
 			]
 		]
 	],
 	[
 		93,
-		49,
+		46,
 		[
 			[
 				"name",
-				"DrawTextEx(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">font,&quot;Ring&nbsp;is&nbsp;fun!&quot;,textPosition,60,1,GREEN</font></span>)"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">speed</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(FPS-GetFPS())/10</font></span>"
 			],
 			[
 				"active",
@@ -3485,7 +3484,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"DrawTextEx(font,"+char(34)+"Ring is fun!"+char(34)+",textPosition,60,1,GREEN)"
+				"speed = (FPS-GetFPS())/10"
 			],
 			[
 				"interactionid",
@@ -3505,127 +3504,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"DrawTextEx(font,"+char(34)+"Ring is fun!"+char(34)+",textPosition,60,1,GREEN)"
+				"speed = (FPS-GetFPS())/10"
 			]
 		]
 	],
 	[
 		94,
-		49,
-		[
-			[
-				"name",
-				"DrawFPS(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">10,10</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"DrawFPS(10,10)"
-			],
-			[
-				"interactionid",
-				78
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"DrawFPS(10,10)"
-			]
-		]
-	],
-	[
-		95,
-		49,
-		[
-			[
-				"name",
-				"EndDrawing(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"EndDrawing()"
-			],
-			[
-				"interactionid",
-				79
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"EndDrawing()"
-			]
-		]
-	],
-	[
-		96,
-		49,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">speed</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(FPS-GetFPS())/10</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"speed = (FPS-GetFPS())/10"
-			],
-			[
-				"interactionid",
-				80
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"speed = (FPS-GetFPS())/10"
-			]
-		]
-	],
-	[
-		97,
-		49,
+		46,
 		[
 			[
 				"name",
@@ -3641,7 +3526,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				81
+				78
 			],
 			[
 				"visible",
@@ -3662,8 +3547,8 @@ aStepsTable = [
 		]
 	],
 	[
-		98,
-		97,
+		95,
+		94,
 		[
 			[
 				"name",
@@ -3679,7 +3564,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				81
+				78
 			],
 			[
 				"visible",
@@ -3700,8 +3585,8 @@ aStepsTable = [
 		]
 	],
 	[
-		100,
-		98,
+		97,
+		95,
 		[
 			[
 				"name",
@@ -3717,7 +3602,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				82
+				79
 			],
 			[
 				"visible",
@@ -3738,8 +3623,8 @@ aStepsTable = [
 		]
 	],
 	[
-		99,
-		97,
+		96,
+		94,
 		[
 			[
 				"name",
@@ -3755,7 +3640,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				81
+				78
 			],
 			[
 				"visible",
@@ -3776,8 +3661,8 @@ aStepsTable = [
 		]
 	],
 	[
-		101,
-		49,
+		98,
+		46,
 		[
 			[
 				"name",
@@ -3793,7 +3678,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				83
+				80
 			],
 			[
 				"visible",
@@ -3814,8 +3699,8 @@ aStepsTable = [
 		]
 	],
 	[
-		102,
-		101,
+		99,
+		98,
 		[
 			[
 				"name",
@@ -3831,7 +3716,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				83
+				80
 			],
 			[
 				"visible",
@@ -3852,8 +3737,8 @@ aStepsTable = [
 		]
 	],
 	[
-		104,
-		102,
+		101,
+		99,
 		[
 			[
 				"name",
@@ -3869,7 +3754,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				84
+				81
 			],
 			[
 				"visible",
@@ -3890,8 +3775,8 @@ aStepsTable = [
 		]
 	],
 	[
-		105,
 		102,
+		99,
 		[
 			[
 				"name",
@@ -3907,7 +3792,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				85
+				82
 			],
 			[
 				"visible",
@@ -3928,8 +3813,8 @@ aStepsTable = [
 		]
 	],
 	[
-		106,
-		102,
+		103,
+		99,
 		[
 			[
 				"name",
@@ -3945,7 +3830,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				86
+				83
 			],
 			[
 				"visible",
@@ -3966,8 +3851,8 @@ aStepsTable = [
 		]
 	],
 	[
-		107,
-		102,
+		104,
+		99,
 		[
 			[
 				"name",
@@ -3983,7 +3868,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				87
+				84
 			],
 			[
 				"visible",
@@ -4004,8 +3889,8 @@ aStepsTable = [
 		]
 	],
 	[
-		108,
-		107,
+		105,
+		104,
 		[
 			[
 				"name",
@@ -4021,7 +3906,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				87
+				84
 			],
 			[
 				"visible",
@@ -4042,8 +3927,8 @@ aStepsTable = [
 		]
 	],
 	[
-		109,
-		108,
+		106,
+		105,
 		[
 			[
 				"name",
@@ -4059,7 +3944,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				88
+				85
 			],
 			[
 				"visible",
@@ -4080,8 +3965,8 @@ aStepsTable = [
 		]
 	],
 	[
-		110,
-		108,
+		107,
+		105,
 		[
 			[
 				"name",
@@ -4097,7 +3982,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				89
+				86
 			],
 			[
 				"visible",
@@ -4118,8 +4003,8 @@ aStepsTable = [
 		]
 	],
 	[
-		111,
 		108,
+		105,
 		[
 			[
 				"name",
@@ -4135,7 +4020,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				90
+				87
 			],
 			[
 				"visible",
@@ -4156,8 +4041,8 @@ aStepsTable = [
 		]
 	],
 	[
-		103,
-		101,
+		100,
+		98,
 		[
 			[
 				"name",
@@ -4173,7 +4058,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				83
+				80
 			],
 			[
 				"visible",
@@ -4194,8 +4079,8 @@ aStepsTable = [
 		]
 	],
 	[
-		112,
-		49,
+		109,
+		46,
 		[
 			[
 				"name",
@@ -4211,7 +4096,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				91
+				88
 			],
 			[
 				"visible",
@@ -4232,8 +4117,8 @@ aStepsTable = [
 		]
 	],
 	[
-		113,
-		112,
+		110,
+		109,
 		[
 			[
 				"name",
@@ -4249,7 +4134,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				91
+				88
 			],
 			[
 				"visible",
@@ -4270,8 +4155,8 @@ aStepsTable = [
 		]
 	],
 	[
-		115,
-		113,
+		112,
+		110,
 		[
 			[
 				"name",
@@ -4284,6 +4169,120 @@ aStepsTable = [
 			[
 				"code",
 				"cx -= lx*speed/10"
+			],
+			[
+				"interactionid",
+				89
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cx -= lx*speed/10"
+			]
+		]
+	],
+	[
+		113,
+		110,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cz&nbsp;-=&nbsp;fraction*20*speed</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cz -= fraction*20*speed"
+			],
+			[
+				"interactionid",
+				90
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cz -= fraction*20*speed"
+			]
+		]
+	],
+	[
+		114,
+		110,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera.position.y&nbsp;+=&nbsp;fraction*speed</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"camera.position.y += fraction*speed"
+			],
+			[
+				"interactionid",
+				91
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"camera.position.y += fraction*speed"
+			]
+		]
+	],
+	[
+		115,
+		110,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera.target.y&nbsp;-=&nbsp;fraction*speed</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"camera.target.y -= fraction*speed"
 			],
 			[
 				"interactionid",
@@ -4303,127 +4302,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"cx -= lx*speed/10"
+				"camera.target.y -= fraction*speed"
 			]
 		]
 	],
 	[
 		116,
-		113,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cz&nbsp;-=&nbsp;fraction*20*speed</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"cz -= fraction*20*speed"
-			],
-			[
-				"interactionid",
-				93
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"cz -= fraction*20*speed"
-			]
-		]
-	],
-	[
-		117,
-		113,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera.position.y&nbsp;+=&nbsp;fraction*speed</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"camera.position.y += fraction*speed"
-			],
-			[
-				"interactionid",
-				94
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"camera.position.y += fraction*speed"
-			]
-		]
-	],
-	[
-		118,
-		113,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera.target.y&nbsp;-=&nbsp;fraction*speed</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"camera.target.y -= fraction*speed"
-			],
-			[
-				"interactionid",
-				95
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"camera.target.y -= fraction*speed"
-			]
-		]
-	],
-	[
-		119,
-		113,
+		110,
 		[
 			[
 				"name",
@@ -4439,7 +4324,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				96
+				93
 			],
 			[
 				"visible",
@@ -4460,8 +4345,8 @@ aStepsTable = [
 		]
 	],
 	[
-		120,
-		119,
+		117,
+		116,
 		[
 			[
 				"name",
@@ -4477,7 +4362,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				96
+				93
 			],
 			[
 				"visible",
@@ -4498,8 +4383,8 @@ aStepsTable = [
 		]
 	],
 	[
-		121,
-		120,
+		118,
+		117,
 		[
 			[
 				"name",
@@ -4512,6 +4397,120 @@ aStepsTable = [
 			[
 				"code",
 				"cx += lx*speed/10"
+			],
+			[
+				"interactionid",
+				94
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cx += lx*speed/10"
+			]
+		]
+	],
+	[
+		119,
+		117,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cz&nbsp;+=&nbsp;fraction*20*speed</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cz += fraction*20*speed"
+			],
+			[
+				"interactionid",
+				95
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cz += fraction*20*speed"
+			]
+		]
+	],
+	[
+		120,
+		117,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera.position.y&nbsp;-=&nbsp;fraction*speed</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"camera.position.y -= fraction*speed"
+			],
+			[
+				"interactionid",
+				96
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"camera.position.y -= fraction*speed"
+			]
+		]
+	],
+	[
+		121,
+		117,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera.target.y&nbsp;+=&nbsp;fraction*speed</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"camera.target.y += fraction*speed"
 			],
 			[
 				"interactionid",
@@ -4531,17 +4530,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"cx += lx*speed/10"
+				"camera.target.y += fraction*speed"
 			]
 		]
 	],
 	[
-		122,
-		120,
+		111,
+		109,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cz&nbsp;+=&nbsp;fraction*20*speed</font></span>"
+				"End of IF Statement"
 			],
 			[
 				"active",
@@ -4549,7 +4548,45 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"cz += fraction*20*speed"
+				"} "
+			],
+			[
+				"interactionid",
+				88
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		122,
+		46,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera.position.x</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cx</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"camera.position.x = cx"
 			],
 			[
 				"interactionid",
@@ -4569,17 +4606,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"cz += fraction*20*speed"
+				"camera.position.x = cx"
 			]
 		]
 	],
 	[
 		123,
-		120,
+		46,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera.position.y&nbsp;-=&nbsp;fraction*speed</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera.position.z</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cz+5</font></span>"
 			],
 			[
 				"active",
@@ -4587,7 +4624,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"camera.position.y -= fraction*speed"
+				"camera.position.z = cz+5"
 			],
 			[
 				"interactionid",
@@ -4607,17 +4644,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"camera.position.y -= fraction*speed"
+				"camera.position.z = cz+5"
 			]
 		]
 	],
 	[
 		124,
-		120,
+		46,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera.target.y&nbsp;+=&nbsp;fraction*speed</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera.target.x</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cx+lx</font></span>"
 			],
 			[
 				"active",
@@ -4625,7 +4662,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"camera.target.y += fraction*speed"
+				"camera.target.x = cx+lx"
 			],
 			[
 				"interactionid",
@@ -4645,55 +4682,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"camera.target.y += fraction*speed"
-			]
-		]
-	],
-	[
-		114,
-		112,
-		[
-			[
-				"name",
-				"End of IF Statement"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				91
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of IF Statement"
+				"camera.target.x = cx+lx"
 			]
 		]
 	],
 	[
 		125,
-		49,
+		46,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera.position.x</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cx</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera.target.z</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cz+lz</font></span>"
 			],
 			[
 				"active",
@@ -4701,7 +4700,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"camera.position.x = cx"
+				"camera.target.z = cz+lz"
 			],
 			[
 				"interactionid",
@@ -4721,127 +4720,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"camera.position.x = cx"
-			]
-		]
-	],
-	[
-		126,
-		49,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera.position.z</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cz+5</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"camera.position.z = cz+5"
-			],
-			[
-				"interactionid",
-				102
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"camera.position.z = cz+5"
-			]
-		]
-	],
-	[
-		127,
-		49,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera.target.x</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cx+lx</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"camera.target.x = cx+lx"
-			],
-			[
-				"interactionid",
-				103
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"camera.target.x = cx+lx"
-			]
-		]
-	],
-	[
-		128,
-		49,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera.target.z</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cz+lz</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"camera.target.z = cz+lz"
-			],
-			[
-				"interactionid",
-				104
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
 				"camera.target.z = cz+lz"
 			]
 		]
 	],
 	[
-		50,
-		48,
+		47,
+		45,
 		[
 			[
 				"name",
@@ -4857,7 +4742,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				45
+				42
 			],
 			[
 				"visible",
@@ -4878,7 +4763,7 @@ aStepsTable = [
 		]
 	],
 	[
-		129,
+		126,
 		1,
 		[
 			[
@@ -4895,7 +4780,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				105
+				102
 			],
 			[
 				"visible",
@@ -4916,8 +4801,8 @@ aStepsTable = [
 		]
 	],
 	[
-		130,
-		129,
+		127,
+		126,
 		[
 			[
 				"name",
@@ -4933,7 +4818,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				105
+				102
 			],
 			[
 				"visible",
@@ -4954,8 +4839,8 @@ aStepsTable = [
 		]
 	],
 	[
-		132,
-		130,
+		129,
+		127,
 		[
 			[
 				"name",
@@ -4971,7 +4856,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				106
+				103
 			],
 			[
 				"visible",
@@ -4992,8 +4877,8 @@ aStepsTable = [
 		]
 	],
 	[
-		133,
 		130,
+		127,
 		[
 			[
 				"name",
@@ -5009,197 +4894,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				107
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"UnloadTexture(texture)"
-			]
-		]
-	],
-	[
-		134,
-		130,
-		[
-			[
-				"name",
-				"UnloadImage(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">image</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"UnloadImage(image)"
-			],
-			[
-				"interactionid",
-				108
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"UnloadImage(image)"
-			]
-		]
-	],
-	[
-		135,
-		130,
-		[
-			[
-				"name",
-				"Else"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"else"
-			],
-			[
-				"interactionid",
-				109
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Else"
-			]
-		]
-	],
-	[
-		136,
-		135,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				109
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		137,
-		136,
-		[
-			[
-				"name",
-				"UnloadModel(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cube</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"UnloadModel(cube)"
-			],
-			[
-				"interactionid",
-				110
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"UnloadModel(cube)"
-			]
-		]
-	],
-	[
-		138,
-		136,
-		[
-			[
-				"name",
-				"UnloadTexture(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">texture</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"UnloadTexture(texture)"
-			],
-			[
-				"interactionid",
-				111
+				104
 			],
 			[
 				"visible",
@@ -5221,7 +4916,197 @@ aStepsTable = [
 	],
 	[
 		131,
-		129,
+		127,
+		[
+			[
+				"name",
+				"UnloadImage(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">image</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"UnloadImage(image)"
+			],
+			[
+				"interactionid",
+				105
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"UnloadImage(image)"
+			]
+		]
+	],
+	[
+		132,
+		127,
+		[
+			[
+				"name",
+				"Else"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"else"
+			],
+			[
+				"interactionid",
+				106
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Else"
+			]
+		]
+	],
+	[
+		133,
+		132,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				106
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		134,
+		133,
+		[
+			[
+				"name",
+				"UnloadModel(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cube</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"UnloadModel(cube)"
+			],
+			[
+				"interactionid",
+				107
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"UnloadModel(cube)"
+			]
+		]
+	],
+	[
+		135,
+		133,
+		[
+			[
+				"name",
+				"UnloadTexture(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">texture</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"UnloadTexture(texture)"
+			],
+			[
+				"interactionid",
+				108
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"UnloadTexture(texture)"
+			]
+		]
+	],
+	[
+		128,
+		126,
 		[
 			[
 				"name",
@@ -5237,7 +5122,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				105
+				102
 			],
 			[
 				"visible",
@@ -5258,7 +5143,7 @@ aStepsTable = [
 		]
 	],
 	[
-		139,
+		136,
 		1,
 		[
 			[
@@ -5275,7 +5160,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				112
+				109
 			],
 			[
 				"visible",
@@ -5296,7 +5181,7 @@ aStepsTable = [
 		]
 	],
 	[
-		140,
+		137,
 		1,
 		[
 			[
@@ -5313,7 +5198,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				113
+				110
 			],
 			[
 				"visible",
@@ -5334,7 +5219,7 @@ aStepsTable = [
 		]
 	],
 	[
-		141,
+		138,
 		1,
 		[
 			[
@@ -5351,7 +5236,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				114
+				111
 			],
 			[
 				"visible",
@@ -5378,912 +5263,888 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"27/08/2021",
-		"08:49:38",
+		"10/09/2024",
+		"16:11:32",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:49:38",
-		"value;;_RV_;;1 Sample : Top-Down View - Many Levels of Cubes;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"10/09/2024",
+		"16:11:32",
+		"value;;_RV_;;Sample : Top-Down View - Many Levels of Cubes;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:49:38",
+		"10/09/2024",
+		"16:11:32",
 		"value;;_RV_;;2018, Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:49:38",
+		"10/09/2024",
+		"16:11:32",
 		"value;;_RV_;;2020, port to RayLib, Ilir Liburn <iliribur@gmail.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:49:38",
+		"10/09/2024",
+		"16:11:32",
 		"value;;_RV_;;Load Libraries;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"load",
-		"27/08/2021",
-		"08:49:38",
+		"10/09/2024",
+		"16:11:32",
 		"file;;_RV_;;raylib.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:49:38",
+		"10/09/2024",
+		"16:11:32",
 		"value;;_RV_;;RingRayLib  Library;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"load",
-		"27/08/2021",
-		"08:49:38",
+		"10/09/2024",
+		"16:11:32",
 		"file;;_RV_;;opengl21lib.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:49:38",
+		"10/09/2024",
+		"16:11:32",
 		"value;;_RV_;;RingOpenGL  Library;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:38",
+		"10/09/2024",
+		"16:11:32",
 		"leftside;;_RV_;;TITLE;;_RV_;;rightside;;_RV_;;"+char(34)+"Sample : Top-Down View - Many Levels of Cubes"+char(34)+";;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:38",
-		"leftside;;_RV_;;GPU_FAST;;_RV_;;rightside;;_RV_;;true;;_RV_;;"
+		"10/09/2024",
+		"16:11:32",
+		"leftside;;_RV_;;GPU_FAST;;_RV_;;rightside;;_RV_;;TRUE;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:49:38",
+		"10/09/2024",
+		"16:11:32",
 		"value;;_RV_;;acceleration;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:38",
+		"10/09/2024",
+		"16:11:32",
 		"leftside;;_RV_;;FPS;;_RV_;;rightside;;_RV_;;60;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:38",
+		"10/09/2024",
+		"16:11:32",
 		"leftside;;_RV_;;screenWidth;;_RV_;;rightside;;_RV_;;1280;;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:38",
+		"10/09/2024",
+		"16:11:32",
 		"leftside;;_RV_;;screenHeight;;_RV_;;rightside;;_RV_;;650;;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:38",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetTraceLogLevel;;_RV_;;parameters;;_RV_;;LOG_NONE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:11:32",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;InitWindow;;_RV_;;parameters;;_RV_;;screenWidth,screenHeight,TITLE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		17,
 		1,
-		"comment_text",
-		"27/08/2021",
-		"08:49:38",
-		"value;;_RV_;;SetConfigFlags(FLAG_FULLSCREEN_MODE) // | FLAG_VSYNC_HINT);;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:11:32",
+		"leftside;;_RV_;;font;;_RV_;;rightside;;_RV_;;LoadFont("+char(34)+"resources/pirulen.ttf"+char(34)+");;_RV_;;"
 	],
 	[
 		18,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:38",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;InitWindow;;_RV_;;parameters;;_RV_;;screenWidth,screenHeight,TITLE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:11:32",
+		"leftside;;_RV_;;background;;_RV_;;rightside;;_RV_;;LoadTexture("+char(34)+"resources/back.png"+char(34)+");;_RV_;;"
 	],
 	[
 		19,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:38",
-		"leftside;;_RV_;;font;;_RV_;;rightside;;_RV_;;LoadFont("+char(34)+"resources/pirulen.ttf"+char(34)+");;_RV_;;"
+		"ifstatement",
+		"10/09/2024",
+		"16:11:32",
+		"condition;;_RV_;;GPU_FAST;;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:38",
-		"leftside;;_RV_;;background;;_RV_;;rightside;;_RV_;;LoadTexture("+char(34)+"resources/back.jpg"+char(34)+");;_RV_;;"
+		"10/09/2024",
+		"16:11:32",
+		"leftside;;_RV_;;image;;_RV_;;rightside;;_RV_;;LoadImage("+char(34)+"resources/cubicmap.png"+char(34)+");;_RV_;;"
 	],
 	[
 		21,
 		1,
-		"ifstatement",
-		"27/08/2021",
-		"08:49:38",
-		"condition;;_RV_;;GPU_FAST;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:11:32",
+		"leftside;;_RV_;;texture;;_RV_;;rightside;;_RV_;;LoadTexture("+char(34)+"resources/cubicmap_atlas.png"+char(34)+");;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:38",
-		"leftside;;_RV_;;image;;_RV_;;rightside;;_RV_;;LoadImage("+char(34)+"resources/cubicmap.png"+char(34)+");;_RV_;;"
+		"10/09/2024",
+		"16:11:32",
+		"leftside;;_RV_;;mesh;;_RV_;;rightside;;_RV_;;GenMeshCubicmap(image,Vector3(1.0,1.0,1.0));;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:38",
-		"leftside;;_RV_;;texture;;_RV_;;rightside;;_RV_;;LoadTexture("+char(34)+"resources/cubicmap_atlas.png"+char(34)+");;_RV_;;"
+		"10/09/2024",
+		"16:11:32",
+		"leftside;;_RV_;;model;;_RV_;;rightside;;_RV_;;LoadModelFromMesh(mesh);;_RV_;;"
 	],
 	[
 		24,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:38",
-		"leftside;;_RV_;;mesh;;_RV_;;rightside;;_RV_;;GenMeshCubicmap(image,Vector3(1.0,1.0,1.0));;_RV_;;"
+		"callfunc",
+		"10/09/2024",
+		"16:11:32",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setmodelmaterialtexture;;_RV_;;parameters;;_RV_;;model,0,MAP_DIFFUSE,texture;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		25,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:38",
-		"leftside;;_RV_;;model;;_RV_;;rightside;;_RV_;;LoadModelFromMesh(mesh);;_RV_;;"
+		"else",
+		"10/09/2024",
+		"16:11:32",
+		""
 	],
 	[
 		26,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:38",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setmodelmaterialtexture;;_RV_;;parameters;;_RV_;;model,0,MAP_DIFFUSE,texture;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:11:32",
+		"leftside;;_RV_;;texture;;_RV_;;rightside;;_RV_;;LoadTexture("+char(34)+"resources/n1.png"+char(34)+");;_RV_;;"
 	],
 	[
 		27,
 		1,
-		"else",
-		"27/08/2021",
-		"08:49:38",
-		""
+		"assignment",
+		"10/09/2024",
+		"16:11:32",
+		"leftside;;_RV_;;mesh;;_RV_;;rightside;;_RV_;;GenMeshCube_2(1,1,1);;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:38",
-		"leftside;;_RV_;;texture;;_RV_;;rightside;;_RV_;;LoadTexture("+char(34)+"resources/n1.jpg"+char(34)+");;_RV_;;"
+		"10/09/2024",
+		"16:11:32",
+		"leftside;;_RV_;;cube;;_RV_;;rightside;;_RV_;;LoadModelFromMesh(mesh);;_RV_;;"
 	],
 	[
 		29,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:38",
-		"leftside;;_RV_;;mesh;;_RV_;;rightside;;_RV_;;GenMeshCube(1,1,1);;_RV_;;"
+		"callfunc",
+		"10/09/2024",
+		"16:11:32",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setModelmaterialtexture;;_RV_;;parameters;;_RV_;;cube,0,0,texture;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		30,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:38",
-		"leftside;;_RV_;;cube;;_RV_;;rightside;;_RV_;;LoadModelFromMesh(mesh);;_RV_;;"
+		"comment_text",
+		"10/09/2024",
+		"16:11:32",
+		"value;;_RV_;;angle of rotation for the camera direction;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		31,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:38",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setModelmaterialtexture;;_RV_;;parameters;;_RV_;;cube,0,0,texture;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:11:32",
+		"leftside;;_RV_;;angle;;_RV_;;rightside;;_RV_;;0.0;;_RV_;;"
 	],
 	[
 		32,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:49:38",
-		"value;;_RV_;;angle of rotation for the camera direction;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"10/09/2024",
+		"16:11:32",
+		"value;;_RV_;;XZ position of the camera;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		33,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:38",
-		"leftside;;_RV_;;angle;;_RV_;;rightside;;_RV_;;0.0;;_RV_;;"
+		"10/09/2024",
+		"16:11:32",
+		"leftside;;_RV_;;cx;;_RV_;;rightside;;_RV_;;0.0;;_RV_;;"
 	],
 	[
 		34,
 		1,
-		"comment_text",
-		"27/08/2021",
-		"08:49:38",
-		"value;;_RV_;;XZ position of the camera;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:11:32",
+		"leftside;;_RV_;;lx;;_RV_;;rightside;;_RV_;;0.0;;_RV_;;"
 	],
 	[
 		35,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:38",
-		"leftside;;_RV_;;cx;;_RV_;;rightside;;_RV_;;0.0;;_RV_;;"
+		"10/09/2024",
+		"16:11:32",
+		"leftside;;_RV_;;cz;;_RV_;;rightside;;_RV_;;5.0;;_RV_;;"
 	],
 	[
 		36,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:38",
-		"leftside;;_RV_;;lx;;_RV_;;rightside;;_RV_;;0.0;;_RV_;;"
+		"10/09/2024",
+		"16:11:32",
+		"leftside;;_RV_;;lz;;_RV_;;rightside;;_RV_;;-1.0;;_RV_;;"
 	],
 	[
 		37,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:38",
-		"leftside;;_RV_;;cz;;_RV_;;rightside;;_RV_;;5.0;;_RV_;;"
+		"10/09/2024",
+		"16:11:32",
+		"leftside;;_RV_;;fraction;;_RV_;;rightside;;_RV_;;0.01;;_RV_;;"
 	],
 	[
 		38,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:38",
-		"leftside;;_RV_;;lz;;_RV_;;rightside;;_RV_;;-1.0;;_RV_;;"
+		"10/09/2024",
+		"16:11:32",
+		"leftside;;_RV_;;textPosition;;_RV_;;rightside;;_RV_;;Vector2(400,400);;_RV_;;"
 	],
 	[
 		39,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:38",
-		"leftside;;_RV_;;fraction;;_RV_;;rightside;;_RV_;;0.01;;_RV_;;"
+		"10/09/2024",
+		"16:11:32",
+		"leftside;;_RV_;;cubePosition;;_RV_;;rightside;;_RV_;;Vector3(0,0,0);;_RV_;;"
 	],
 	[
 		40,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:38",
-		"leftside;;_RV_;;textPosition;;_RV_;;rightside;;_RV_;;Vector2(400,400);;_RV_;;"
+		"10/09/2024",
+		"16:11:32",
+		"leftside;;_RV_;;camera;;_RV_;;rightside;;_RV_;;Camera3D(cx,10,cz+5,cx,3.0,cz+lz,0,1.0,0,88,CAMERA_PERSPECTIVE);;_RV_;;"
 	],
 	[
 		41,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:38",
-		"leftside;;_RV_;;cubePosition;;_RV_;;rightside;;_RV_;;Vector3(0,0,0);;_RV_;;"
+		"callfunc",
+		"10/09/2024",
+		"16:11:32",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetTargetFPS;;_RV_;;parameters;;_RV_;;FPS;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		42,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:38",
-		"leftside;;_RV_;;camera;;_RV_;;rightside;;_RV_;;Camera3D(cx,10,cz+5,cx,3.0,cz+lz,0,1.0,0,88,CAMERA_PERSPECTIVE);;_RV_;;"
+		"whileloop",
+		"10/09/2024",
+		"16:11:32",
+		"condition;;_RV_;;!WindowShouldClose();;_RV_;;"
 	],
 	[
 		43,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:38",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetCameraMode;;_RV_;;parameters;;_RV_;;camera,CAMERA_CUSTOM;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:11:32",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UpdateCamera;;_RV_;;parameters;;_RV_;;camera,CAMERA_ORBITAL;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		44,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:38",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetTargetFPS;;_RV_;;parameters;;_RV_;;60;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:11:32",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		45,
 		1,
-		"whileloop",
-		"27/08/2021",
-		"08:49:38",
-		"condition;;_RV_;;!WindowShouldClose();;_RV_;;"
+		"callfunc",
+		"10/09/2024",
+		"16:11:32",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawTexture;;_RV_;;parameters;;_RV_;;background,0,0,WHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		46,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:38",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UpdateCamera;;_RV_;;parameters;;_RV_;;camera;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:11:32",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginMode3D;;_RV_;;parameters;;_RV_;;camera;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		47,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:38",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"10/09/2024",
+		"16:11:32",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glClear;;_RV_;;parameters;;_RV_;;GL_DEPTH_BUFFER_BIT;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		48,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:38",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawTexture;;_RV_;;parameters;;_RV_;;background,0,0,WHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"ifstatement",
+		"10/09/2024",
+		"16:11:32",
+		"condition;;_RV_;;GPU_FAST;;_RV_;;"
 	],
 	[
 		49,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:38",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginMode3D;;_RV_;;parameters;;_RV_;;camera;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:11:32",
+		"leftside;;_RV_;;cubePosition.x;;_RV_;;rightside;;_RV_;;-10;;_RV_;;"
 	],
 	[
 		50,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:38",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;glClear;;_RV_;;parameters;;_RV_;;GL_DEPTH_BUFFER_BIT;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:11:32",
+		"leftside;;_RV_;;cubePosition.y;;_RV_;;rightside;;_RV_;;5;;_RV_;;"
 	],
 	[
 		51,
 		1,
-		"ifstatement",
-		"27/08/2021",
-		"08:49:38",
-		"condition;;_RV_;;GPU_FAST;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:11:32",
+		"leftside;;_RV_;;cubePosition.z;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		52,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:38",
-		"leftside;;_RV_;;cubePosition.x;;_RV_;;rightside;;_RV_;;-10;;_RV_;;"
+		"forloop",
+		"10/09/2024",
+		"16:11:32",
+		"start;;_RV_;;i = 1;;_RV_;;to;;_RV_;;5;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		53,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:38",
-		"leftside;;_RV_;;cubePosition.y;;_RV_;;rightside;;_RV_;;5;;_RV_;;"
+		"callfunc",
+		"10/09/2024",
+		"16:11:32",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawModel;;_RV_;;parameters;;_RV_;;model,cubePosition,1.0,WHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		54,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:38",
-		"leftside;;_RV_;;cubePosition.z;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
+		"freetyping",
+		"10/09/2024",
+		"16:11:32",
+		"value;;_RV_;;cubePosition.y += 1;;_RV_;;"
 	],
 	[
 		55,
 		1,
-		"forloop",
-		"27/08/2021",
-		"08:49:38",
-		"start;;_RV_;;i = 1;;_RV_;;to;;_RV_;;5;;_RV_;;step;;_RV_;;1;;_RV_;;"
+		"freetyping",
+		"10/09/2024",
+		"16:11:32",
+		"value;;_RV_;;cubePosition.z -= 8;;_RV_;;"
 	],
 	[
 		56,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:38",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawModel;;_RV_;;parameters;;_RV_;;model,cubePosition,1.0,WHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"else",
+		"10/09/2024",
+		"16:11:32",
+		""
 	],
 	[
 		57,
 		1,
-		"freetyping",
-		"27/08/2021",
-		"08:49:38",
-		"value;;_RV_;;cubePosition.y += 1;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:11:32",
+		"leftside;;_RV_;;cubePosition.y;;_RV_;;rightside;;_RV_;;5.5;;_RV_;;"
 	],
 	[
 		58,
 		1,
-		"freetyping",
-		"27/08/2021",
-		"08:49:38",
-		"value;;_RV_;;cubePosition.z -= 8;;_RV_;;"
+		"forloop",
+		"10/09/2024",
+		"16:11:32",
+		"start;;_RV_;;j = 4;;_RV_;;to;;_RV_;;-28;;_RV_;;step;;_RV_;;-8;;_RV_;;"
 	],
 	[
 		59,
 		1,
-		"else",
-		"27/08/2021",
-		"08:49:38",
-		""
+		"forinloop",
+		"10/09/2024",
+		"16:11:32",
+		"variable;;_RV_;;k;;_RV_;;in;;_RV_;;[1,-1,0];;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		60,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:38",
-		"leftside;;_RV_;;cubePosition.y;;_RV_;;rightside;;_RV_;;5.5;;_RV_;;"
+		"forloop",
+		"10/09/2024",
+		"16:11:32",
+		"start;;_RV_;;i = k*10;;_RV_;;to;;_RV_;;k;;_RV_;;step;;_RV_;;-k|1;;_RV_;;"
 	],
 	[
 		61,
 		1,
-		"forloop",
-		"27/08/2021",
-		"08:49:38",
-		"start;;_RV_;;j = 4;;_RV_;;to;;_RV_;;-28;;_RV_;;step;;_RV_;;-8;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:11:32",
+		"leftside;;_RV_;;cubePosition.x;;_RV_;;rightside;;_RV_;;i;;_RV_;;"
 	],
 	[
 		62,
 		1,
-		"forinloop",
-		"27/08/2021",
-		"08:49:38",
-		"variable;;_RV_;;k;;_RV_;;in;;_RV_;;[1,-1,0];;_RV_;;step;;_RV_;;1;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:11:32",
+		"leftside;;_RV_;;cubePosition.z;;_RV_;;rightside;;_RV_;;j;;_RV_;;"
 	],
 	[
 		63,
 		1,
-		"forloop",
-		"27/08/2021",
-		"08:49:38",
-		"start;;_RV_;;i = k*10;;_RV_;;to;;_RV_;;k;;_RV_;;step;;_RV_;;-k|1;;_RV_;;"
+		"callfunc",
+		"10/09/2024",
+		"16:11:32",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawModel;;_RV_;;parameters;;_RV_;;cube,cubePosition,1,WHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		64,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:38",
-		"leftside;;_RV_;;cubePosition.x;;_RV_;;rightside;;_RV_;;i;;_RV_;;"
+		"freetyping",
+		"10/09/2024",
+		"16:11:32",
+		"value;;_RV_;;cubePosition.z--;;_RV_;;"
 	],
 	[
 		65,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:38",
-		"leftside;;_RV_;;cubePosition.z;;_RV_;;rightside;;_RV_;;j;;_RV_;;"
+		"callfunc",
+		"10/09/2024",
+		"16:11:32",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawModel;;_RV_;;parameters;;_RV_;;cube,cubePosition,1,WHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		66,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:38",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawModel;;_RV_;;parameters;;_RV_;;cube,cubePosition,1,WHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"freetyping",
+		"10/09/2024",
+		"16:11:32",
+		"value;;_RV_;;cubePosition.z--;;_RV_;;"
 	],
 	[
 		67,
 		1,
-		"freetyping",
-		"27/08/2021",
-		"08:49:38",
-		"value;;_RV_;;cubePosition.z--;;_RV_;;"
+		"callfunc",
+		"10/09/2024",
+		"16:11:32",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawModel;;_RV_;;parameters;;_RV_;;cube,cubePosition,1,WHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		68,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:38",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawModel;;_RV_;;parameters;;_RV_;;cube,cubePosition,1,WHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"freetyping",
+		"10/09/2024",
+		"16:11:32",
+		"value;;_RV_;;cubePosition.z--;;_RV_;;"
 	],
 	[
 		69,
 		1,
-		"freetyping",
-		"27/08/2021",
-		"08:49:38",
-		"value;;_RV_;;cubePosition.z--;;_RV_;;"
+		"callfunc",
+		"10/09/2024",
+		"16:11:32",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawModel;;_RV_;;parameters;;_RV_;;cube,cubePosition,1,WHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		70,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:38",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawModel;;_RV_;;parameters;;_RV_;;cube,cubePosition,1,WHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"freetyping",
+		"10/09/2024",
+		"16:11:32",
+		"value;;_RV_;;cubePosition.z--;;_RV_;;"
 	],
 	[
 		71,
 		1,
-		"freetyping",
-		"27/08/2021",
-		"08:49:38",
-		"value;;_RV_;;cubePosition.z--;;_RV_;;"
+		"callfunc",
+		"10/09/2024",
+		"16:11:32",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawModel;;_RV_;;parameters;;_RV_;;cube,cubePosition,1,WHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		72,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:38",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawModel;;_RV_;;parameters;;_RV_;;cube,cubePosition,1,WHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"freetyping",
+		"10/09/2024",
+		"16:11:32",
+		"value;;_RV_;;cubePosition.y += 1;;_RV_;;"
 	],
 	[
 		73,
 		1,
-		"freetyping",
-		"27/08/2021",
-		"08:49:38",
-		"value;;_RV_;;cubePosition.z--;;_RV_;;"
+		"callfunc",
+		"10/09/2024",
+		"16:11:32",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndMode3D;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		74,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:38",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawModel;;_RV_;;parameters;;_RV_;;cube,cubePosition,1,WHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:11:32",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawTextEx;;_RV_;;parameters;;_RV_;;font,"+char(34)+"Ring is fun!"+char(34)+",textPosition,60,1,GREEN;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		75,
 		1,
-		"freetyping",
-		"27/08/2021",
-		"08:49:38",
-		"value;;_RV_;;cubePosition.y += 1;;_RV_;;"
+		"callfunc",
+		"10/09/2024",
+		"16:11:32",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawFPS;;_RV_;;parameters;;_RV_;;10,10;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		76,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:38",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndMode3D;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"10/09/2024",
+		"16:11:32",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		77,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:38",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawTextEx;;_RV_;;parameters;;_RV_;;font,"+char(34)+"Ring is fun!"+char(34)+",textPosition,60,1,GREEN;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:11:32",
+		"leftside;;_RV_;;speed;;_RV_;;rightside;;_RV_;;(FPS-GetFPS())/10;;_RV_;;"
 	],
 	[
 		78,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:38",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawFPS;;_RV_;;parameters;;_RV_;;10,10;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"ifstatement",
+		"10/09/2024",
+		"16:11:32",
+		"condition;;_RV_;;speed < 1;;_RV_;;"
 	],
 	[
 		79,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:38",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:11:32",
+		"leftside;;_RV_;;speed;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		80,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:38",
-		"leftside;;_RV_;;speed;;_RV_;;rightside;;_RV_;;(FPS-GetFPS())/10;;_RV_;;"
+		"ifstatement",
+		"10/09/2024",
+		"16:11:32",
+		"condition;;_RV_;;IsKeyDown(KEY_LEFT);;_RV_;;"
 	],
 	[
 		81,
 		1,
-		"ifstatement",
-		"27/08/2021",
-		"08:49:38",
-		"condition;;_RV_;;speed < 1;;_RV_;;"
+		"freetyping",
+		"10/09/2024",
+		"16:11:32",
+		"value;;_RV_;;angle -= fraction*4*speed;;_RV_;;"
 	],
 	[
 		82,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:38",
-		"leftside;;_RV_;;speed;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
+		"10/09/2024",
+		"16:11:32",
+		"leftside;;_RV_;;lx;;_RV_;;rightside;;_RV_;;sin(angle);;_RV_;;"
 	],
 	[
 		83,
 		1,
-		"ifstatement",
-		"27/08/2021",
-		"08:49:38",
-		"condition;;_RV_;;IsKeyDown(KEY_LEFT);;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:11:32",
+		"leftside;;_RV_;;lz;;_RV_;;rightside;;_RV_;;-cos(angle);;_RV_;;"
 	],
 	[
 		84,
 		1,
-		"freetyping",
-		"27/08/2021",
-		"08:49:38",
-		"value;;_RV_;;angle -= fraction*4*speed;;_RV_;;"
+		"elseif",
+		"10/09/2024",
+		"16:11:32",
+		"condition;;_RV_;;IsKeyDown(KEY_RIGHT);;_RV_;;"
 	],
 	[
 		85,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:38",
-		"leftside;;_RV_;;lx;;_RV_;;rightside;;_RV_;;sin(angle);;_RV_;;"
+		"freetyping",
+		"10/09/2024",
+		"16:11:32",
+		"value;;_RV_;;angle += fraction*4*speed;;_RV_;;"
 	],
 	[
 		86,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:38",
-		"leftside;;_RV_;;lz;;_RV_;;rightside;;_RV_;;-cos(angle);;_RV_;;"
+		"10/09/2024",
+		"16:11:32",
+		"leftside;;_RV_;;lx;;_RV_;;rightside;;_RV_;;sin(angle);;_RV_;;"
 	],
 	[
 		87,
 		1,
-		"elseif",
-		"27/08/2021",
-		"08:49:38",
-		"condition;;_RV_;;IsKeyDown(KEY_RIGHT);;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:11:32",
+		"leftside;;_RV_;;lz;;_RV_;;rightside;;_RV_;;-cos(angle);;_RV_;;"
 	],
 	[
 		88,
 		1,
-		"freetyping",
-		"27/08/2021",
-		"08:49:38",
-		"value;;_RV_;;angle += fraction*4*speed;;_RV_;;"
+		"ifstatement",
+		"10/09/2024",
+		"16:11:32",
+		"condition;;_RV_;;IsKeyDown(KEY_UP);;_RV_;;"
 	],
 	[
 		89,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:38",
-		"leftside;;_RV_;;lx;;_RV_;;rightside;;_RV_;;sin(angle);;_RV_;;"
+		"freetyping",
+		"10/09/2024",
+		"16:11:32",
+		"value;;_RV_;;cx -= lx*speed/10;;_RV_;;"
 	],
 	[
 		90,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:38",
-		"leftside;;_RV_;;lz;;_RV_;;rightside;;_RV_;;-cos(angle);;_RV_;;"
+		"freetyping",
+		"10/09/2024",
+		"16:11:32",
+		"value;;_RV_;;cz -= fraction*20*speed;;_RV_;;"
 	],
 	[
 		91,
 		1,
-		"ifstatement",
-		"27/08/2021",
-		"08:49:38",
-		"condition;;_RV_;;IsKeyDown(KEY_UP);;_RV_;;"
+		"freetyping",
+		"10/09/2024",
+		"16:11:32",
+		"value;;_RV_;;camera.position.y += fraction*speed;;_RV_;;"
 	],
 	[
 		92,
 		1,
 		"freetyping",
-		"27/08/2021",
-		"08:49:38",
-		"value;;_RV_;;cx -= lx*speed/10;;_RV_;;"
+		"10/09/2024",
+		"16:11:32",
+		"value;;_RV_;;camera.target.y -= fraction*speed;;_RV_;;"
 	],
 	[
 		93,
 		1,
-		"freetyping",
-		"27/08/2021",
-		"08:49:38",
-		"value;;_RV_;;cz -= fraction*20*speed;;_RV_;;"
+		"elseif",
+		"10/09/2024",
+		"16:11:32",
+		"condition;;_RV_;;IsKeyDown(KEY_DOWN);;_RV_;;"
 	],
 	[
 		94,
 		1,
 		"freetyping",
-		"27/08/2021",
-		"08:49:38",
-		"value;;_RV_;;camera.position.y += fraction*speed;;_RV_;;"
+		"10/09/2024",
+		"16:11:32",
+		"value;;_RV_;;cx += lx*speed/10;;_RV_;;"
 	],
 	[
 		95,
 		1,
 		"freetyping",
-		"27/08/2021",
-		"08:49:38",
-		"value;;_RV_;;camera.target.y -= fraction*speed;;_RV_;;"
+		"10/09/2024",
+		"16:11:32",
+		"value;;_RV_;;cz += fraction*20*speed;;_RV_;;"
 	],
 	[
 		96,
 		1,
-		"elseif",
-		"27/08/2021",
-		"08:49:38",
-		"condition;;_RV_;;IsKeyDown(KEY_DOWN);;_RV_;;"
+		"freetyping",
+		"10/09/2024",
+		"16:11:32",
+		"value;;_RV_;;camera.position.y -= fraction*speed;;_RV_;;"
 	],
 	[
 		97,
 		1,
 		"freetyping",
-		"27/08/2021",
-		"08:49:38",
-		"value;;_RV_;;cx += lx*speed/10;;_RV_;;"
+		"10/09/2024",
+		"16:11:32",
+		"value;;_RV_;;camera.target.y += fraction*speed;;_RV_;;"
 	],
 	[
 		98,
 		1,
-		"freetyping",
-		"27/08/2021",
-		"08:49:38",
-		"value;;_RV_;;cz += fraction*20*speed;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:11:32",
+		"leftside;;_RV_;;camera.position.x;;_RV_;;rightside;;_RV_;;cx;;_RV_;;"
 	],
 	[
 		99,
 		1,
-		"freetyping",
-		"27/08/2021",
-		"08:49:38",
-		"value;;_RV_;;camera.position.y -= fraction*speed;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:11:32",
+		"leftside;;_RV_;;camera.position.z;;_RV_;;rightside;;_RV_;;cz+5;;_RV_;;"
 	],
 	[
 		100,
 		1,
-		"freetyping",
-		"27/08/2021",
-		"08:49:38",
-		"value;;_RV_;;camera.target.y += fraction*speed;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:11:32",
+		"leftside;;_RV_;;camera.target.x;;_RV_;;rightside;;_RV_;;cx+lx;;_RV_;;"
 	],
 	[
 		101,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:38",
-		"leftside;;_RV_;;camera.position.x;;_RV_;;rightside;;_RV_;;cx;;_RV_;;"
+		"10/09/2024",
+		"16:11:32",
+		"leftside;;_RV_;;camera.target.z;;_RV_;;rightside;;_RV_;;cz+lz;;_RV_;;"
 	],
 	[
 		102,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:38",
-		"leftside;;_RV_;;camera.position.z;;_RV_;;rightside;;_RV_;;cz+5;;_RV_;;"
+		"ifstatement",
+		"10/09/2024",
+		"16:11:32",
+		"condition;;_RV_;;GPU_FAST;;_RV_;;"
 	],
 	[
 		103,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:38",
-		"leftside;;_RV_;;camera.target.x;;_RV_;;rightside;;_RV_;;cx+lx;;_RV_;;"
+		"callfunc",
+		"10/09/2024",
+		"16:11:32",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadModel;;_RV_;;parameters;;_RV_;;model;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		104,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:38",
-		"leftside;;_RV_;;camera.target.z;;_RV_;;rightside;;_RV_;;cz+lz;;_RV_;;"
+		"callfunc",
+		"10/09/2024",
+		"16:11:32",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadTexture;;_RV_;;parameters;;_RV_;;texture;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		105,
 		1,
-		"ifstatement",
-		"27/08/2021",
-		"08:49:38",
-		"condition;;_RV_;;GPU_FAST;;_RV_;;"
+		"callfunc",
+		"10/09/2024",
+		"16:11:32",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadImage;;_RV_;;parameters;;_RV_;;image;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		106,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:38",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadModel;;_RV_;;parameters;;_RV_;;model;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"else",
+		"10/09/2024",
+		"16:11:32",
+		""
 	],
 	[
 		107,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:38",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadTexture;;_RV_;;parameters;;_RV_;;texture;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:11:32",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadModel;;_RV_;;parameters;;_RV_;;cube;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		108,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:38",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadImage;;_RV_;;parameters;;_RV_;;image;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:11:32",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadTexture;;_RV_;;parameters;;_RV_;;texture;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		109,
 		1,
-		"else",
-		"27/08/2021",
-		"08:49:38",
-		""
+		"callfunc",
+		"10/09/2024",
+		"16:11:32",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadTexture;;_RV_;;parameters;;_RV_;;background;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		110,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:38",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadModel;;_RV_;;parameters;;_RV_;;cube;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:11:32",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadFont;;_RV_;;parameters;;_RV_;;font;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		111,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:38",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadTexture;;_RV_;;parameters;;_RV_;;texture;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
-	],
-	[
-		112,
-		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:38",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadTexture;;_RV_;;parameters;;_RV_;;background;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
-	],
-	[
-		113,
-		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:38",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadFont;;_RV_;;parameters;;_RV_;;font;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
-	],
-	[
-		114,
-		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:38",
+		"10/09/2024",
+		"16:11:32",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;CloseWindow;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	]
 ]

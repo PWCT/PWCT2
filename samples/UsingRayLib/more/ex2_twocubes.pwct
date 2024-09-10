@@ -2,7 +2,7 @@
 
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
-cNaturalLanguageName     = 'English'
+cNaturalLanguageName     = 'english'
 nStepsID                 = 75		
 nInteractionsID          = 57
 
@@ -465,7 +465,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"SetCameraMode(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera,CAMERA_FREE</font></span>)"
+				"SetTargetFPS(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">60</font></span>)"
 			],
 			[
 				"active",
@@ -473,7 +473,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"SetCameraMode(camera,CAMERA_FREE)"
+				"SetTargetFPS(60)"
 			],
 			[
 				"interactionid",
@@ -493,50 +493,12 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"SetCameraMode(camera,CAMERA_FREE)"
+				"SetTargetFPS(60)"
 			]
 		]
 	],
 	[
 		14,
-		1,
-		[
-			[
-				"name",
-				"SetTargetFPS(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">60</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"SetTargetFPS(60)"
-			],
-			[
-				"interactionid",
-				14
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"SetTargetFPS(60)"
-			]
-		]
-	],
-	[
-		15,
 		1,
 		[
 			[
@@ -553,7 +515,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				15
+				14
 			],
 			[
 				"visible",
@@ -574,8 +536,84 @@ aStepsTable = [
 		]
 	],
 	[
-		16,
 		15,
+		14,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				14
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		17,
+		15,
+		[
+			[
+				"name",
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">IsMouseButtonPressed(MOUSE_LEFT_BUTTON)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"if IsMouseButtonPressed(MOUSE_LEFT_BUTTON) { "
+			],
+			[
+				"interactionid",
+				15
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"If IsMouseButtonPressed(MOUSE_LEFT_BUTTON)"
+			]
+		]
+	],
+	[
+		18,
+		17,
 		[
 			[
 				"name",
@@ -612,122 +650,8 @@ aStepsTable = [
 		]
 	],
 	[
+		20,
 		18,
-		16,
-		[
-			[
-				"name",
-				"UpdateCamera(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">camera</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"UpdateCamera(camera)"
-			],
-			[
-				"interactionid",
-				16
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"UpdateCamera(camera)"
-			]
-		]
-	],
-	[
-		19,
-		16,
-		[
-			[
-				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">IsMouseButtonPressed(MOUSE_LEFT_BUTTON)</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"if IsMouseButtonPressed(MOUSE_LEFT_BUTTON) { "
-			],
-			[
-				"interactionid",
-				17
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"If IsMouseButtonPressed(MOUSE_LEFT_BUTTON)"
-			]
-		]
-	],
-	[
-		20,
-		19,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				17
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		22,
-		20,
 		[
 			[
 				"name",
@@ -743,7 +667,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				18
+				16
 			],
 			[
 				"visible",
@@ -764,8 +688,8 @@ aStepsTable = [
 		]
 	],
 	[
-		23,
-		22,
+		21,
+		20,
 		[
 			[
 				"name",
@@ -781,7 +705,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				18
+				16
 			],
 			[
 				"visible",
@@ -802,8 +726,8 @@ aStepsTable = [
 		]
 	],
 	[
-		25,
 		23,
+		21,
 		[
 			[
 				"name",
@@ -816,6 +740,82 @@ aStepsTable = [
 			[
 				"code",
 				"ray = GetMouseRay(GetMousePosition(),camera)"
+			],
+			[
+				"interactionid",
+				17
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"ray = GetMouseRay(GetMousePosition(),camera)"
+			]
+		]
+	],
+	[
+		24,
+		21,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">collision1</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">GetRayCollisionBox(ray,BoundingBox(cubePosition1.x-cubeSize.x/2,cubePosition1.y-cubeSize.y/2,cubePosition1.z-cubeSize.z/2,cubePosition1.x+cubeSize.x/2,cubePosition1.y+cubeSize.y/2,cubePosition1.z+cubeSize.z/2))</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"collision1 = GetRayCollisionBox(ray,BoundingBox(cubePosition1.x-cubeSize.x/2,cubePosition1.y-cubeSize.y/2,cubePosition1.z-cubeSize.z/2,cubePosition1.x+cubeSize.x/2,cubePosition1.y+cubeSize.y/2,cubePosition1.z+cubeSize.z/2))"
+			],
+			[
+				"interactionid",
+				18
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"collision1 = GetRayCollisionBox(ray,BoundingBox(cubePosition1.x-cubeSize.x/2,cubePosition1.y-cubeSize.y/2,cubePosition1.z-cubeSize.z/2,cubePosition1.x+cubeSize.x/2,cubePosition1.y+cubeSize.y/2,cubePosition1.z+cubeSize.z/2))"
+			]
+		]
+	],
+	[
+		25,
+		21,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">collision1</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">collision1.hit</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"collision1 = collision1.hit"
 			],
 			[
 				"interactionid",
@@ -835,17 +835,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"ray = GetMouseRay(GetMousePosition(),camera)"
+				"collision1 = collision1.hit"
 			]
 		]
 	],
 	[
 		26,
-		23,
+		21,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">collision1</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">CheckCollisionRayBox(ray,BoundingBox(cubePosition1.x-cubeSize.x/2,cubePosition1.y-cubeSize.y/2,cubePosition1.z-cubeSize.z/2,cubePosition1.x+cubeSize.x/2,cubePosition1.y+cubeSize.y/2,cubePosition1.z+cubeSize.z/2))</font></span>"
+				"Else"
 			],
 			[
 				"active",
@@ -853,7 +853,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"collision1 = CheckCollisionRayBox(ray,BoundingBox(cubePosition1.x-cubeSize.x/2,cubePosition1.y-cubeSize.y/2,cubePosition1.z-cubeSize.z/2,cubePosition1.x+cubeSize.x/2,cubePosition1.y+cubeSize.y/2,cubePosition1.z+cubeSize.z/2))"
+				"else"
 			],
 			[
 				"interactionid",
@@ -873,51 +873,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"collision1 = CheckCollisionRayBox(ray,BoundingBox(cubePosition1.x-cubeSize.x/2,cubePosition1.y-cubeSize.y/2,cubePosition1.z-cubeSize.z/2,cubePosition1.x+cubeSize.x/2,cubePosition1.y+cubeSize.y/2,cubePosition1.z+cubeSize.z/2))"
-			]
-		]
-	],
-	[
-		27,
-		23,
-		[
-			[
-				"name",
-				"Else"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"else"
-			],
-			[
-				"interactionid",
-				21
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
 				"Else"
 			]
 		]
 	],
 	[
-		28,
 		27,
+		26,
 		[
 			[
 				"name",
@@ -933,7 +895,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				21
+				20
 			],
 			[
 				"visible",
@@ -954,8 +916,8 @@ aStepsTable = [
 		]
 	],
 	[
-		29,
 		28,
+		27,
 		[
 			[
 				"name",
@@ -971,7 +933,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				22
+				21
 			],
 			[
 				"visible",
@@ -992,8 +954,8 @@ aStepsTable = [
 		]
 	],
 	[
-		24,
 		22,
+		20,
 		[
 			[
 				"name",
@@ -1009,7 +971,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				18
+				16
 			],
 			[
 				"visible",
@@ -1030,8 +992,8 @@ aStepsTable = [
 		]
 	],
 	[
-		30,
-		20,
+		29,
+		18,
 		[
 			[
 				"name",
@@ -1047,7 +1009,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				23
+				22
 			],
 			[
 				"visible",
@@ -1068,8 +1030,8 @@ aStepsTable = [
 		]
 	],
 	[
-		31,
 		30,
+		29,
 		[
 			[
 				"name",
@@ -1085,7 +1047,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				23
+				22
 			],
 			[
 				"visible",
@@ -1106,8 +1068,8 @@ aStepsTable = [
 		]
 	],
 	[
-		33,
-		31,
+		32,
+		30,
 		[
 			[
 				"name",
@@ -1120,6 +1082,44 @@ aStepsTable = [
 			[
 				"code",
 				"ray = GetMouseRay(GetMousePosition(),camera)"
+			],
+			[
+				"interactionid",
+				23
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"ray = GetMouseRay(GetMousePosition(),camera)"
+			]
+		]
+	],
+	[
+		33,
+		30,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">collision2</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">GetRayCollisionBox(ray,BoundingBox(cubePosition2.x-cubeSize.x/2,cubePosition2.y-cubeSize.y/2,cubePosition2.z-cubeSize.z/2,cubePosition2.x+cubeSize.x/2,cubePosition2.y+cubeSize.y/2,cubePosition2.z+cubeSize.z/2))</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"collision2 = GetRayCollisionBox(ray,BoundingBox(cubePosition2.x-cubeSize.x/2,cubePosition2.y-cubeSize.y/2,cubePosition2.z-cubeSize.z/2,cubePosition2.x+cubeSize.x/2,cubePosition2.y+cubeSize.y/2,cubePosition2.z+cubeSize.z/2))"
 			],
 			[
 				"interactionid",
@@ -1139,17 +1139,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"ray = GetMouseRay(GetMousePosition(),camera)"
+				"collision2 = GetRayCollisionBox(ray,BoundingBox(cubePosition2.x-cubeSize.x/2,cubePosition2.y-cubeSize.y/2,cubePosition2.z-cubeSize.z/2,cubePosition2.x+cubeSize.x/2,cubePosition2.y+cubeSize.y/2,cubePosition2.z+cubeSize.z/2))"
 			]
 		]
 	],
 	[
 		34,
-		31,
+		30,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">collision2</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">CheckCollisionRayBox(ray,BoundingBox(cubePosition2.x-cubeSize.x/2,cubePosition2.y-cubeSize.y/2,cubePosition2.z-cubeSize.z/2,cubePosition2.x+cubeSize.x/2,cubePosition2.y+cubeSize.y/2,cubePosition2.z+cubeSize.z/2))</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">collision2</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">collision2.hit</font></span>"
 			],
 			[
 				"active",
@@ -1157,7 +1157,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"collision2 = CheckCollisionRayBox(ray,BoundingBox(cubePosition2.x-cubeSize.x/2,cubePosition2.y-cubeSize.y/2,cubePosition2.z-cubeSize.z/2,cubePosition2.x+cubeSize.x/2,cubePosition2.y+cubeSize.y/2,cubePosition2.z+cubeSize.z/2))"
+				"collision2 = collision2.hit"
 			],
 			[
 				"interactionid",
@@ -1177,13 +1177,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"collision2 = CheckCollisionRayBox(ray,BoundingBox(cubePosition2.x-cubeSize.x/2,cubePosition2.y-cubeSize.y/2,cubePosition2.z-cubeSize.z/2,cubePosition2.x+cubeSize.x/2,cubePosition2.y+cubeSize.y/2,cubePosition2.z+cubeSize.z/2))"
+				"collision2 = collision2.hit"
 			]
 		]
 	],
 	[
 		35,
-		31,
+		30,
 		[
 			[
 				"name",
@@ -1296,8 +1296,8 @@ aStepsTable = [
 		]
 	],
 	[
-		32,
-		30,
+		31,
+		29,
 		[
 			[
 				"name",
@@ -1313,7 +1313,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				23
+				22
 			],
 			[
 				"visible",
@@ -1334,8 +1334,8 @@ aStepsTable = [
 		]
 	],
 	[
-		21,
 		19,
+		17,
 		[
 			[
 				"name",
@@ -1351,7 +1351,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				17
+				15
 			],
 			[
 				"visible",
@@ -1373,7 +1373,7 @@ aStepsTable = [
 	],
 	[
 		38,
-		16,
+		15,
 		[
 			[
 				"name",
@@ -1411,7 +1411,7 @@ aStepsTable = [
 	],
 	[
 		39,
-		16,
+		15,
 		[
 			[
 				"name",
@@ -1449,7 +1449,7 @@ aStepsTable = [
 	],
 	[
 		40,
-		16,
+		15,
 		[
 			[
 				"name",
@@ -1487,7 +1487,7 @@ aStepsTable = [
 	],
 	[
 		41,
-		16,
+		15,
 		[
 			[
 				"name",
@@ -1943,7 +1943,7 @@ aStepsTable = [
 	],
 	[
 		53,
-		16,
+		15,
 		[
 			[
 				"name",
@@ -2399,7 +2399,7 @@ aStepsTable = [
 	],
 	[
 		65,
-		16,
+		15,
 		[
 			[
 				"name",
@@ -2437,7 +2437,7 @@ aStepsTable = [
 	],
 	[
 		66,
-		16,
+		15,
 		[
 			[
 				"name",
@@ -2475,7 +2475,7 @@ aStepsTable = [
 	],
 	[
 		67,
-		16,
+		15,
 		[
 			[
 				"name",
@@ -2513,7 +2513,7 @@ aStepsTable = [
 	],
 	[
 		68,
-		16,
+		15,
 		[
 			[
 				"name",
@@ -2551,7 +2551,7 @@ aStepsTable = [
 	],
 	[
 		69,
-		16,
+		15,
 		[
 			[
 				"name",
@@ -2703,7 +2703,7 @@ aStepsTable = [
 	],
 	[
 		73,
-		16,
+		15,
 		[
 			[
 				"name",
@@ -2741,7 +2741,7 @@ aStepsTable = [
 	],
 	[
 		74,
-		16,
+		15,
 		[
 			[
 				"name",
@@ -2778,8 +2778,8 @@ aStepsTable = [
 		]
 	],
 	[
-		17,
-		15,
+		16,
+		14,
 		[
 			[
 				"name",
@@ -2795,7 +2795,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				15
+				14
 			],
 			[
 				"visible",
@@ -2860,456 +2860,456 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		""
 	],
 	[
 		2,
 		1,
 		"load",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"file;;_RV_;;raylib.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"leftside;;_RV_;;screenWidth;;_RV_;;rightside;;_RV_;;800;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"leftside;;_RV_;;screenHeight;;_RV_;;rightside;;_RV_;;450;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;InitWindow;;_RV_;;parameters;;_RV_;;screenWidth,screenHeight,"+char(34)+"raylib [core] example - Two Cubes"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"leftside;;_RV_;;camera;;_RV_;;rightside;;_RV_;;Camera3D(10,10,10,0,0,0,0,1,0,45,CAMERA_PERSPECTIVE);;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"leftside;;_RV_;;cubePosition1;;_RV_;;rightside;;_RV_;;Vector3(0,1,4);;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"leftside;;_RV_;;cubePosition2;;_RV_;;rightside;;_RV_;;Vector3(0,1,-4);;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"leftside;;_RV_;;cubeSize;;_RV_;;rightside;;_RV_;;Vector3(2,2,2);;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"leftside;;_RV_;;ray;;_RV_;;rightside;;_RV_;;Ray(0,0,0,0,0,0);;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"leftside;;_RV_;;collision1;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"leftside;;_RV_;;collision2;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:34",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetCameraMode;;_RV_;;parameters;;_RV_;;camera,CAMERA_FREE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"10/09/2024",
+		"16:11:20",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetTargetFPS;;_RV_;;parameters;;_RV_;;60;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		14,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:34",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetTargetFPS;;_RV_;;parameters;;_RV_;;60;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"whileloop",
+		"10/09/2024",
+		"16:11:20",
+		"condition;;_RV_;;!WindowShouldClose();;_RV_;;"
 	],
 	[
 		15,
 		1,
-		"whileloop",
-		"27/08/2021",
-		"08:49:34",
-		"condition;;_RV_;;!WindowShouldClose();;_RV_;;"
+		"ifstatement",
+		"10/09/2024",
+		"16:11:20",
+		"condition;;_RV_;;IsMouseButtonPressed(MOUSE_LEFT_BUTTON);;_RV_;;"
 	],
 	[
 		16,
 		1,
-		"callfunc",
-		"27/08/2021",
-		"08:49:34",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UpdateCamera;;_RV_;;parameters;;_RV_;;camera;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"ifstatement",
+		"10/09/2024",
+		"16:11:20",
+		"condition;;_RV_;;!collision1;;_RV_;;"
 	],
 	[
 		17,
 		1,
-		"ifstatement",
-		"27/08/2021",
-		"08:49:34",
-		"condition;;_RV_;;IsMouseButtonPressed(MOUSE_LEFT_BUTTON);;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:11:20",
+		"leftside;;_RV_;;ray;;_RV_;;rightside;;_RV_;;GetMouseRay(GetMousePosition(),camera);;_RV_;;"
 	],
 	[
 		18,
 		1,
-		"ifstatement",
-		"27/08/2021",
-		"08:49:34",
-		"condition;;_RV_;;!collision1;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:11:20",
+		"leftside;;_RV_;;collision1;;_RV_;;rightside;;_RV_;;GetRayCollisionBox(ray,BoundingBox(cubePosition1.x-cubeSize.x/2,cubePosition1.y-cubeSize.y/2,cubePosition1.z-cubeSize.z/2,cubePosition1.x+cubeSize.x/2,cubePosition1.y+cubeSize.y/2,cubePosition1.z+cubeSize.z/2));;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:34",
-		"leftside;;_RV_;;ray;;_RV_;;rightside;;_RV_;;GetMouseRay(GetMousePosition(),camera);;_RV_;;"
+		"10/09/2024",
+		"16:11:20",
+		"leftside;;_RV_;;collision1;;_RV_;;rightside;;_RV_;;collision1.hit;;_RV_;;"
 	],
 	[
 		20,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:34",
-		"leftside;;_RV_;;collision1;;_RV_;;rightside;;_RV_;;CheckCollisionRayBox(ray,BoundingBox(cubePosition1.x-cubeSize.x/2,cubePosition1.y-cubeSize.y/2,cubePosition1.z-cubeSize.z/2,cubePosition1.x+cubeSize.x/2,cubePosition1.y+cubeSize.y/2,cubePosition1.z+cubeSize.z/2));;_RV_;;"
+		"else",
+		"10/09/2024",
+		"16:11:20",
+		""
 	],
 	[
 		21,
 		1,
-		"else",
-		"27/08/2021",
-		"08:49:34",
-		""
+		"assignment",
+		"10/09/2024",
+		"16:11:20",
+		"leftside;;_RV_;;collision1;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		22,
 		1,
-		"assignment",
-		"27/08/2021",
-		"08:49:34",
-		"leftside;;_RV_;;collision1;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
+		"ifstatement",
+		"10/09/2024",
+		"16:11:20",
+		"condition;;_RV_;;!collision2;;_RV_;;"
 	],
 	[
 		23,
 		1,
-		"ifstatement",
-		"27/08/2021",
-		"08:49:34",
-		"condition;;_RV_;;!collision2;;_RV_;;"
+		"assignment",
+		"10/09/2024",
+		"16:11:20",
+		"leftside;;_RV_;;ray;;_RV_;;rightside;;_RV_;;GetMouseRay(GetMousePosition(),camera);;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:34",
-		"leftside;;_RV_;;ray;;_RV_;;rightside;;_RV_;;GetMouseRay(GetMousePosition(),camera);;_RV_;;"
+		"10/09/2024",
+		"16:11:20",
+		"leftside;;_RV_;;collision2;;_RV_;;rightside;;_RV_;;GetRayCollisionBox(ray,BoundingBox(cubePosition2.x-cubeSize.x/2,cubePosition2.y-cubeSize.y/2,cubePosition2.z-cubeSize.z/2,cubePosition2.x+cubeSize.x/2,cubePosition2.y+cubeSize.y/2,cubePosition2.z+cubeSize.z/2));;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:34",
-		"leftside;;_RV_;;collision2;;_RV_;;rightside;;_RV_;;CheckCollisionRayBox(ray,BoundingBox(cubePosition2.x-cubeSize.x/2,cubePosition2.y-cubeSize.y/2,cubePosition2.z-cubeSize.z/2,cubePosition2.x+cubeSize.x/2,cubePosition2.y+cubeSize.y/2,cubePosition2.z+cubeSize.z/2));;_RV_;;"
+		"10/09/2024",
+		"16:11:20",
+		"leftside;;_RV_;;collision2;;_RV_;;rightside;;_RV_;;collision2.hit;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"else",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		""
 	],
 	[
 		27,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"leftside;;_RV_;;collision2;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;ClearBackground;;_RV_;;parameters;;_RV_;;RAYWHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		30,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginMode3D;;_RV_;;parameters;;_RV_;;camera;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"ifstatement",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"condition;;_RV_;;collision1;;_RV_;;"
 	],
 	[
 		32,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawCube;;_RV_;;parameters;;_RV_;;cubePosition1,cubeSize.x,cubeSize.y,cubeSize.z,RED;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		33,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawCubeWires;;_RV_;;parameters;;_RV_;;cubePosition1,cubeSize.x,cubeSize.y,cubeSize.z,MAROON;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		34,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawCubeWires;;_RV_;;parameters;;_RV_;;cubePosition1,cubeSize.x+0.2,cubeSize.y+0.2,cubeSize.z+0.2,GREEN;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		35,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"leftside;;_RV_;;collision1;;_RV_;;rightside;;_RV_;;true;;_RV_;;"
 	],
 	[
 		36,
 		1,
 		"else",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		""
 	],
 	[
 		37,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawCube;;_RV_;;parameters;;_RV_;;cubePosition1,cubeSize.x,cubeSize.y,cubeSize.z,GRAY;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		38,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawCubeWires;;_RV_;;parameters;;_RV_;;cubePosition1,cubeSize.x,cubeSize.y,cubeSize.z,DARKGRAY;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		39,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"leftside;;_RV_;;collision1;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		40,
 		1,
 		"ifstatement",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"condition;;_RV_;;collision2;;_RV_;;"
 	],
 	[
 		41,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawCube;;_RV_;;parameters;;_RV_;;cubePosition2,cubeSize.x,cubeSize.y,cubeSize.z,RED;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		42,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawCubeWires;;_RV_;;parameters;;_RV_;;cubePosition2,cubeSize.x,cubeSize.y,cubeSize.z,MAROON;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		43,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawCubeWires;;_RV_;;parameters;;_RV_;;cubePosition2,cubeSize.x+0.2,cubeSize.y+0.2,cubeSize.z+0.2,GREEN;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		44,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"leftside;;_RV_;;collision2;;_RV_;;rightside;;_RV_;;true;;_RV_;;"
 	],
 	[
 		45,
 		1,
 		"else",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		""
 	],
 	[
 		46,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawCube;;_RV_;;parameters;;_RV_;;cubePosition2,cubeSize.x,cubeSize.y,cubeSize.z,GRAY;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		47,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawCubeWires;;_RV_;;parameters;;_RV_;;cubePosition2,cubeSize.x,cubeSize.y,cubeSize.z,DARKGRAY;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		48,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"leftside;;_RV_;;collision2;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
 	],
 	[
 		49,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawRay;;_RV_;;parameters;;_RV_;;ray,MAROON;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		50,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawGrid;;_RV_;;parameters;;_RV_;;10,1;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		51,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndMode3D;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		52,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"Try selecting the box with mouse!"+char(34)+",240,10,20,DARKGRAY;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		53,
 		1,
 		"ifstatement",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"condition;;_RV_;;collision1 OR collision2;;_RV_;;"
 	],
 	[
 		54,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"BOX SELECTED"+char(34)+",(screenWidth-MeasureText("+char(34)+"BOX SELECTED"+char(34)+",30))/2,screenHeight*0.1,30,GREEN;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		55,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawFPS;;_RV_;;parameters;;_RV_;;10,10;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		56,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		57,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:34",
+		"10/09/2024",
+		"16:11:20",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;CloseWindow;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	]
 ]

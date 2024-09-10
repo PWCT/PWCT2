@@ -55,7 +55,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# Copyright (c) 2019 eggmund (@eggmund) and Ramon Santamaria (@raysan5)
+				"#Copyright (c) 2019 eggmund (@eggmund) and Ramon Santamaria (@raysan5)
 "
 			],
 			[
@@ -94,7 +94,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# Ported to RingRayLib by Ring Team
+				"#Ported to RingRayLib by Ring Team
 "
 			],
 			[
@@ -386,6 +386,84 @@ aStepsTable = [
 		]
 	],
 	[
+		12,
+		7,
+		[
+			[
+				"name",
+				"Load julia set shader"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Load julia set shader
+"
+			],
+			[
+				"interactionid",
+				10
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Load julia set shader"
+			]
+		]
+	],
+	[
+		13,
+		7,
+		[
+			[
+				"name",
+				"NOTE: Defining 0 (NULL) for vertex shader forces usage of internal default vertex shader"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#NOTE: Defining 0 (NULL) for vertex shader forces usage of internal default vertex shader
+"
+			],
+			[
+				"interactionid",
+				11
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"NOTE: Defining 0 (NULL) for vertex shader forces usage of internal default vertex shader"
+			]
+		]
+	],
+	[
 		14,
 		7,
 		[
@@ -424,6 +502,45 @@ aStepsTable = [
 		]
 	],
 	[
+		15,
+		7,
+		[
+			[
+				"name",
+				"c constant to use in z^2 + c"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#c constant to use in z^2 + c
+"
+			],
+			[
+				"interactionid",
+				13
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"c constant to use in z^2 + c"
+			]
+		]
+	],
+	[
 		16,
 		7,
 		[
@@ -458,6 +575,45 @@ aStepsTable = [
 			[
 				"plainname",
 				"c = [POINTS_OF_INTEREST[1][1],POINTS_OF_INTEREST[1][2]]"
+			]
+		]
+	],
+	[
+		17,
+		7,
+		[
+			[
+				"name",
+				"Offset and zoom to draw the julia set at. (centered on screen and default size)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Offset and zoom to draw the julia set at. (centered on screen and default size)
+"
+			],
+			[
+				"interactionid",
+				15
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Offset and zoom to draw the julia set at. (centered on screen and default size)"
 			]
 		]
 	],
@@ -576,6 +732,84 @@ aStepsTable = [
 		]
 	],
 	[
+		21,
+		7,
+		[
+			[
+				"name",
+				"Get variable (uniform) locations on the shader to connect with the program"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Get variable (uniform) locations on the shader to connect with the program
+"
+			],
+			[
+				"interactionid",
+				19
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Get variable (uniform) locations on the shader to connect with the program"
+			]
+		]
+	],
+	[
+		22,
+		7,
+		[
+			[
+				"name",
+				"NOTE: If uniform variable could not be found in the shader, function returns -1"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#NOTE: If uniform variable could not be found in the shader, function returns -1
+"
+			],
+			[
+				"interactionid",
+				20
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"NOTE: If uniform variable could not be found in the shader, function returns -1"
+			]
+		]
+	],
+	[
 		23,
 		7,
 		[
@@ -686,6 +920,45 @@ aStepsTable = [
 			[
 				"plainname",
 				"offsetLoc = GetShaderLocation(shader,"+char(34)+"offset"+char(34)+")"
+			]
+		]
+	],
+	[
+		26,
+		7,
+		[
+			[
+				"name",
+				"Tell the shader what the screen dimensions, zoom, offset and c are"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Tell the shader what the screen dimensions, zoom, offset and c are
+"
+			],
+			[
+				"interactionid",
+				24
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Tell the shader what the screen dimensions, zoom, offset and c are"
 			]
 		]
 	],
@@ -880,6 +1153,45 @@ aStepsTable = [
 		]
 	],
 	[
+		32,
+		7,
+		[
+			[
+				"name",
+				"Create a RenderTexture2D to be used for render to texture"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Create a RenderTexture2D to be used for render to texture
+"
+			],
+			[
+				"interactionid",
+				30
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Create a RenderTexture2D to be used for render to texture"
+			]
+		]
+	],
+	[
 		33,
 		7,
 		[
@@ -956,6 +1268,45 @@ aStepsTable = [
 		]
 	],
 	[
+		35,
+		7,
+		[
+			[
+				"name",
+				"Multiplier of speed to change c value"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Multiplier of speed to change c value
+"
+			],
+			[
+				"interactionid",
+				33
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Multiplier of speed to change c value"
+			]
+		]
+	],
+	[
 		36,
 		7,
 		[
@@ -990,6 +1341,45 @@ aStepsTable = [
 			[
 				"plainname",
 				"showControls = true"
+			]
+		]
+	],
+	[
+		37,
+		7,
+		[
+			[
+				"name",
+				"Show controls"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Show controls
+"
+			],
+			[
+				"interactionid",
+				35
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Show controls"
 			]
 		]
 	],
@@ -1032,6 +1422,45 @@ aStepsTable = [
 		]
 	],
 	[
+		39,
+		7,
+		[
+			[
+				"name",
+				"Pause animation"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Pause animation
+"
+			],
+			[
+				"interactionid",
+				37
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Pause animation"
+			]
+		]
+	],
+	[
 		40,
 		7,
 		[
@@ -1066,6 +1495,201 @@ aStepsTable = [
 			[
 				"plainname",
 				"SetTargetFPS(60)"
+			]
+		]
+	],
+	[
+		41,
+		7,
+		[
+			[
+				"name",
+				"Set our game to run at 60 frames-per-second"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Set our game to run at 60 frames-per-second
+"
+			],
+			[
+				"interactionid",
+				39
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Set our game to run at 60 frames-per-second"
+			]
+		]
+	],
+	[
+		42,
+		7,
+		[
+			[
+				"name",
+				"--------------------------------------------------------------------------------------"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#--------------------------------------------------------------------------------------
+"
+			],
+			[
+				"interactionid",
+				40
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"--------------------------------------------------------------------------------------"
+			]
+		]
+	],
+	[
+		43,
+		7,
+		[
+			[
+				"name",
+				"Main game loop"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Main game loop
+"
+			],
+			[
+				"interactionid",
+				41
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Main game loop"
+			]
+		]
+	],
+	[
+		44,
+		7,
+		[
+			[
+				"name",
+				"Detect window close button or ESC key"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Detect window close button or ESC key
+"
+			],
+			[
+				"interactionid",
+				42
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Detect window close button or ESC key"
+			]
+		]
+	],
+	[
+		45,
+		7,
+		[
+			[
+				"name",
+				"Press [1 - 6] to reset c to a point of interest"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Press [1 - 6] to reset c to a point of interest
+"
+			],
+			[
+				"interactionid",
+				43
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Press [1 - 6] to reset c to a point of interest"
 			]
 		]
 	],
@@ -2362,6 +2986,45 @@ aStepsTable = [
 		]
 	],
 	[
+		82,
+		79,
+		[
+			[
+				"name",
+				"Pause animation (c change)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Pause animation (c change)
+"
+			],
+			[
+				"interactionid",
+				67
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Pause animation (c change)"
+			]
+		]
+	],
+	[
 		80,
 		78,
 		[
@@ -2510,6 +3173,45 @@ aStepsTable = [
 			[
 				"plainname",
 				"showControls = !showControls"
+			]
+		]
+	],
+	[
+		87,
+		84,
+		[
+			[
+				"name",
+				"Toggle whether or not to show controls"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Toggle whether or not to show controls
+"
+			],
+			[
+				"interactionid",
+				70
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Toggle whether or not to show controls"
 			]
 		]
 	],
@@ -2890,6 +3592,84 @@ aStepsTable = [
 			[
 				"plainname",
 				"End of IF Statement"
+			]
+		]
+	],
+	[
+		98,
+		89,
+		[
+			[
+				"name",
+				"TODO: The idea is to zoom and move around with mouse"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#TODO: The idea is to zoom and move around with mouse
+"
+			],
+			[
+				"interactionid",
+				76
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"TODO: The idea is to zoom and move around with mouse"
+			]
+		]
+	],
+	[
+		99,
+		89,
+		[
+			[
+				"name",
+				"Probably offset movement should be proportional to zoom level"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Probably offset movement should be proportional to zoom level
+"
+			],
+			[
+				"interactionid",
+				77
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Probably offset movement should be proportional to zoom level"
 			]
 		]
 	],
@@ -3388,6 +4168,45 @@ aStepsTable = [
 		]
 	],
 	[
+		114,
+		101,
+		[
+			[
+				"name",
+				"Slowly move camera to targetOffset"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Slowly move camera to targetOffset
+"
+			],
+			[
+				"interactionid",
+				86
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Slowly move camera to targetOffset"
+			]
+		]
+	],
+	[
 		115,
 		101,
 		[
@@ -3692,6 +4511,45 @@ aStepsTable = [
 		]
 	],
 	[
+		122,
+		89,
+		[
+			[
+				"name",
+				"Increment c value with time"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Increment c value with time
+"
+			],
+			[
+				"interactionid",
+				93
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Increment c value with time"
+			]
+		]
+	],
+	[
 		123,
 		89,
 		[
@@ -3882,6 +4740,123 @@ aStepsTable = [
 		]
 	],
 	[
+		127,
+		47,
+		[
+			[
+				"name",
+				"----------------------------------------------------------------------------------"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#----------------------------------------------------------------------------------
+"
+			],
+			[
+				"interactionid",
+				98
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"----------------------------------------------------------------------------------"
+			]
+		]
+	],
+	[
+		128,
+		47,
+		[
+			[
+				"name",
+				"Draw"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Draw
+"
+			],
+			[
+				"interactionid",
+				99
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Draw"
+			]
+		]
+	],
+	[
+		129,
+		47,
+		[
+			[
+				"name",
+				"----------------------------------------------------------------------------------"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#----------------------------------------------------------------------------------
+"
+			],
+			[
+				"interactionid",
+				100
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"----------------------------------------------------------------------------------"
+			]
+		]
+	],
+	[
 		130,
 		47,
 		[
@@ -3958,6 +4933,84 @@ aStepsTable = [
 		]
 	],
 	[
+		132,
+		47,
+		[
+			[
+				"name",
+				"Clear the screen of the previous frame."
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Clear the screen of the previous frame.
+"
+			],
+			[
+				"interactionid",
+				103
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Clear the screen of the previous frame."
+			]
+		]
+	],
+	[
+		133,
+		47,
+		[
+			[
+				"name",
+				"Using a render texture to draw Julia set"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Using a render texture to draw Julia set
+"
+			],
+			[
+				"interactionid",
+				104
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Using a render texture to draw Julia set"
+			]
+		]
+	],
+	[
 		134,
 		47,
 		[
@@ -3992,6 +5045,45 @@ aStepsTable = [
 			[
 				"plainname",
 				"BeginTextureMode(target)"
+			]
+		]
+	],
+	[
+		135,
+		47,
+		[
+			[
+				"name",
+				"Enable drawing to texture"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Enable drawing to texture
+"
+			],
+			[
+				"interactionid",
+				106
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Enable drawing to texture"
 			]
 		]
 	],
@@ -4034,6 +5126,201 @@ aStepsTable = [
 		]
 	],
 	[
+		137,
+		47,
+		[
+			[
+				"name",
+				"Clear the render texture"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Clear the render texture
+"
+			],
+			[
+				"interactionid",
+				108
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Clear the render texture"
+			]
+		]
+	],
+	[
+		138,
+		47,
+		[
+			[
+				"name",
+				"Draw a rectangle in shader mode to be used as shader canvas"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Draw a rectangle in shader mode to be used as shader canvas
+"
+			],
+			[
+				"interactionid",
+				109
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Draw a rectangle in shader mode to be used as shader canvas"
+			]
+		]
+	],
+	[
+		139,
+		47,
+		[
+			[
+				"name",
+				"NOTE: Rectangle uses font white character texture coordinates,"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#NOTE: Rectangle uses font white character texture coordinates,
+"
+			],
+			[
+				"interactionid",
+				110
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"NOTE: Rectangle uses font white character texture coordinates,"
+			]
+		]
+	],
+	[
+		140,
+		47,
+		[
+			[
+				"name",
+				"so shader can not be applied here directly because input vertexTexCoord"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#so shader can not be applied here directly because input vertexTexCoord
+"
+			],
+			[
+				"interactionid",
+				111
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"so shader can not be applied here directly because input vertexTexCoord"
+			]
+		]
+	],
+	[
+		141,
+		47,
+		[
+			[
+				"name",
+				"do not represent full screen coordinates (space where want to apply shader)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#do not represent full screen coordinates (space where want to apply shader)
+"
+			],
+			[
+				"interactionid",
+				112
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"do not represent full screen coordinates (space where want to apply shader)"
+			]
+		]
+	],
+	[
 		142,
 		47,
 		[
@@ -4068,6 +5355,84 @@ aStepsTable = [
 			[
 				"plainname",
 				"DrawRectangle(0,0,GetScreenWidth(),GetScreenHeight(),BLACK)"
+			]
+		]
+	],
+	[
+		143,
+		47,
+		[
+			[
+				"name",
+				"Draw the saved texture and rendered julia set with shader"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Draw the saved texture and rendered julia set with shader
+"
+			],
+			[
+				"interactionid",
+				114
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Draw the saved texture and rendered julia set with shader"
+			]
+		]
+	],
+	[
+		144,
+		47,
+		[
+			[
+				"name",
+				"NOTE: We do not invert texture on Y, already considered inside shader"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#NOTE: We do not invert texture on Y, already considered inside shader
+"
+			],
+			[
+				"interactionid",
+				115
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"NOTE: We do not invert texture on Y, already considered inside shader"
 			]
 		]
 	],
@@ -4528,6 +5893,45 @@ aStepsTable = [
 		]
 	],
 	[
+		157,
+		47,
+		[
+			[
+				"name",
+				"----------------------------------------------------------------------------------"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#----------------------------------------------------------------------------------
+"
+			],
+			[
+				"interactionid",
+				126
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"----------------------------------------------------------------------------------"
+			]
+		]
+	],
+	[
 		158,
 		47,
 		[
@@ -4604,6 +6008,84 @@ aStepsTable = [
 		]
 	],
 	[
+		159,
+		7,
+		[
+			[
+				"name",
+				"De-Initialization"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#De-Initialization
+"
+			],
+			[
+				"interactionid",
+				128
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"De-Initialization"
+			]
+		]
+	],
+	[
+		160,
+		7,
+		[
+			[
+				"name",
+				"--------------------------------------------------------------------------------------"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#--------------------------------------------------------------------------------------
+"
+			],
+			[
+				"interactionid",
+				129
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"--------------------------------------------------------------------------------------"
+			]
+		]
+	],
+	[
 		161,
 		7,
 		[
@@ -4642,6 +6124,45 @@ aStepsTable = [
 		]
 	],
 	[
+		162,
+		7,
+		[
+			[
+				"name",
+				"Unload shader"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Unload shader
+"
+			],
+			[
+				"interactionid",
+				131
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Unload shader"
+			]
+		]
+	],
+	[
 		163,
 		7,
 		[
@@ -4676,6 +6197,84 @@ aStepsTable = [
 			[
 				"plainname",
 				"UnloadRenderTexture(target)"
+			]
+		]
+	],
+	[
+		164,
+		7,
+		[
+			[
+				"name",
+				"Unload render texture"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Unload render texture
+"
+			],
+			[
+				"interactionid",
+				133
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Unload render texture"
+			]
+		]
+	],
+	[
+		165,
+		7,
+		[
+			[
+				"name",
+				"Close window and OpenGL context"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Close window and OpenGL context
+"
+			],
+			[
+				"interactionid",
+				134
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Close window and OpenGL context"
 			]
 		]
 	],
@@ -4762,752 +6361,1080 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:34",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:34",
 		"value;;_RV_;;Copyright (c) 2019 eggmund (@eggmund) and Ramon Santamaria (@raysan5);;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:34",
 		"value;;_RV_;;Ported to RingRayLib by Ring Team;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"load",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:34",
 		"file;;_RV_;;raylib.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:34",
 		"leftside;;_RV_;;POINTS_OF_INTEREST;;_RV_;;rightside;;_RV_;;[[-0.348827,0.607167],[-0.786268,0.169728],[-0.8,0.156],[0.285,0.0],[-0.835,-0.2321],[-0.70176,-0.3842]];;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"func",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:34",
 		"name;;_RV_;;main;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:34",
 		"leftside;;_RV_;;screenWidth;;_RV_;;rightside;;_RV_;;800;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:34",
 		"leftside;;_RV_;;screenHeight;;_RV_;;rightside;;_RV_;;450;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:34",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;InitWindow;;_RV_;;parameters;;_RV_;;screenWidth,screenHeight,"+char(34)+"raylib [shaders] example - julia sets"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		10,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:34",
+		"value;;_RV_;;Load julia set shader;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		11,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:34",
+		"value;;_RV_;;NOTE: Defining 0 (NULL) for vertex shader forces usage of internal default vertex shader;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:34",
 		"leftside;;_RV_;;shader;;_RV_;;rightside;;_RV_;;LoadShader(NULL,"+char(34)+"shaders/julia_set.fs"+char(34)+");;_RV_;;"
+	],
+	[
+		13,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:34",
+		"value;;_RV_;;c constant to use in z^2 + c;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:34",
 		"leftside;;_RV_;;c;;_RV_;;rightside;;_RV_;;[POINTS_OF_INTEREST[1][1],POINTS_OF_INTEREST[1][2]];;_RV_;;"
+	],
+	[
+		15,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:34",
+		"value;;_RV_;;Offset and zoom to draw the julia set at. (centered on screen and default size);;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:34",
 		"leftside;;_RV_;;offset;;_RV_;;rightside;;_RV_;;[-screenWidth/2,-screenHeight/2];;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:34",
 		"leftside;;_RV_;;zoom;;_RV_;;rightside;;_RV_;;1.0;;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:34",
 		"leftside;;_RV_;;offsetSpeed;;_RV_;;rightside;;_RV_;;Vector2(0.0,0.0);;_RV_;;"
+	],
+	[
+		19,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:34",
+		"value;;_RV_;;Get variable (uniform) locations on the shader to connect with the program;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		20,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:34",
+		"value;;_RV_;;NOTE: If uniform variable could not be found in the shader, function returns -1;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:34",
 		"leftside;;_RV_;;cLoc;;_RV_;;rightside;;_RV_;;GetShaderLocation(shader,"+char(34)+"c"+char(34)+");;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:34",
 		"leftside;;_RV_;;zoomLoc;;_RV_;;rightside;;_RV_;;GetShaderLocation(shader,"+char(34)+"zoom"+char(34)+");;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:34",
 		"leftside;;_RV_;;offsetLoc;;_RV_;;rightside;;_RV_;;GetShaderLocation(shader,"+char(34)+"offset"+char(34)+");;_RV_;;"
+	],
+	[
+		24,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:34",
+		"value;;_RV_;;Tell the shader what the screen dimensions, zoom, offset and c are;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:34",
 		"leftside;;_RV_;;screenDims;;_RV_;;rightside;;_RV_;;[screenWidth,screenHeight];;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:34",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetShaderVec2;;_RV_;;parameters;;_RV_;;shader,GetShaderLocation(shader,"+char(34)+"screenDims"+char(34)+"),screenDims;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:34",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetShaderVec2;;_RV_;;parameters;;_RV_;;shader,cLoc,c;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:34",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetShaderFloat;;_RV_;;parameters;;_RV_;;shader,zoomLoc,zoom;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:34",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetShaderVec2;;_RV_;;parameters;;_RV_;;shader,offsetLoc,offset;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		30,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:34",
+		"value;;_RV_;;Create a RenderTexture2D to be used for render to texture;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:34",
 		"leftside;;_RV_;;target;;_RV_;;rightside;;_RV_;;LoadRenderTexture(screenWidth,screenHeight);;_RV_;;"
 	],
 	[
 		32,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:34",
 		"leftside;;_RV_;;incrementSpeed;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
+	],
+	[
+		33,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:34",
+		"value;;_RV_;;Multiplier of speed to change c value;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		34,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:34",
 		"leftside;;_RV_;;showControls;;_RV_;;rightside;;_RV_;;true;;_RV_;;"
+	],
+	[
+		35,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:34",
+		"value;;_RV_;;Show controls;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		36,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:34",
 		"leftside;;_RV_;;pause;;_RV_;;rightside;;_RV_;;false;;_RV_;;"
+	],
+	[
+		37,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:34",
+		"value;;_RV_;;Pause animation;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		38,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:34",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetTargetFPS;;_RV_;;parameters;;_RV_;;60;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		39,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:34",
+		"value;;_RV_;;Set our game to run at 60 frames-per-second;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		40,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:34",
+		"value;;_RV_;;--------------------------------------------------------------------------------------;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		41,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:34",
+		"value;;_RV_;;Main game loop;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		42,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:34",
+		"value;;_RV_;;Detect window close button or ESC key;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		43,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:34",
+		"value;;_RV_;;Press [1 - 6] to reset c to a point of interest;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		44,
 		1,
 		"whileloop",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:34",
 		"condition;;_RV_;;!WindowShouldClose();;_RV_;;"
 	],
 	[
 		45,
 		1,
 		"ifstatement",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:34",
 		"condition;;_RV_;;IsKeyPressed(KEY_ONE)||IsKeyPressed(KEY_TWO)||IsKeyPressed(KEY_THREE)||IsKeyPressed(KEY_FOUR)||IsKeyPressed(KEY_FIVE)||IsKeyPressed(KEY_SIX);;_RV_;;"
 	],
 	[
 		46,
 		1,
 		"ifstatement",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:34",
 		"condition;;_RV_;;IsKeyPressed(KEY_ONE);;_RV_;;"
 	],
 	[
 		47,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:34",
 		"leftside;;_RV_;;c[1];;_RV_;;rightside;;_RV_;;POINTS_OF_INTEREST[1][1];;_RV_;;"
 	],
 	[
 		48,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"leftside;;_RV_;;c[2];;_RV_;;rightside;;_RV_;;POINTS_OF_INTEREST[1][2];;_RV_;;"
 	],
 	[
 		49,
 		1,
 		"elseif",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"condition;;_RV_;;IsKeyPressed(KEY_TWO);;_RV_;;"
 	],
 	[
 		50,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"leftside;;_RV_;;c[1];;_RV_;;rightside;;_RV_;;POINTS_OF_INTEREST[2][1];;_RV_;;"
 	],
 	[
 		51,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"leftside;;_RV_;;c[2];;_RV_;;rightside;;_RV_;;POINTS_OF_INTEREST[2][2];;_RV_;;"
 	],
 	[
 		52,
 		1,
 		"elseif",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"condition;;_RV_;;IsKeyPressed(KEY_THREE);;_RV_;;"
 	],
 	[
 		53,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"leftside;;_RV_;;c[1];;_RV_;;rightside;;_RV_;;POINTS_OF_INTEREST[3][1];;_RV_;;"
 	],
 	[
 		54,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"leftside;;_RV_;;c[2];;_RV_;;rightside;;_RV_;;POINTS_OF_INTEREST[3][2];;_RV_;;"
 	],
 	[
 		55,
 		1,
 		"elseif",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"condition;;_RV_;;IsKeyPressed(KEY_FOUR);;_RV_;;"
 	],
 	[
 		56,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"leftside;;_RV_;;c[1];;_RV_;;rightside;;_RV_;;POINTS_OF_INTEREST[4][1];;_RV_;;"
 	],
 	[
 		57,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"leftside;;_RV_;;c[2];;_RV_;;rightside;;_RV_;;POINTS_OF_INTEREST[4][2];;_RV_;;"
 	],
 	[
 		58,
 		1,
 		"elseif",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"condition;;_RV_;;IsKeyPressed(KEY_FIVE);;_RV_;;"
 	],
 	[
 		59,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"leftside;;_RV_;;c[1];;_RV_;;rightside;;_RV_;;POINTS_OF_INTEREST[5][1];;_RV_;;"
 	],
 	[
 		60,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"leftside;;_RV_;;c[2];;_RV_;;rightside;;_RV_;;POINTS_OF_INTEREST[5][2];;_RV_;;"
 	],
 	[
 		61,
 		1,
 		"elseif",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"condition;;_RV_;;IsKeyPressed(KEY_SIX);;_RV_;;"
 	],
 	[
 		62,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"leftside;;_RV_;;c[1];;_RV_;;rightside;;_RV_;;POINTS_OF_INTEREST[6][1];;_RV_;;"
 	],
 	[
 		63,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"leftside;;_RV_;;c[2];;_RV_;;rightside;;_RV_;;POINTS_OF_INTEREST[6][2];;_RV_;;"
 	],
 	[
 		64,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetShaderVec2;;_RV_;;parameters;;_RV_;;shader,cLoc,c;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		65,
 		1,
 		"ifstatement",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"condition;;_RV_;;IsKeyPressed(KEY_SPACE);;_RV_;;"
 	],
 	[
 		66,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"leftside;;_RV_;;pause;;_RV_;;rightside;;_RV_;;!pause;;_RV_;;"
+	],
+	[
+		67,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:35",
+		"value;;_RV_;;Pause animation (c change);;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		68,
 		1,
 		"ifstatement",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"condition;;_RV_;;IsKeyPressed(KEY_F1);;_RV_;;"
 	],
 	[
 		69,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"leftside;;_RV_;;showControls;;_RV_;;rightside;;_RV_;;!showControls;;_RV_;;"
+	],
+	[
+		70,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:35",
+		"value;;_RV_;;Toggle whether or not to show controls;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		71,
 		1,
 		"ifstatement",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"condition;;_RV_;;!pause;;_RV_;;"
 	],
 	[
 		72,
 		1,
 		"ifstatement",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"condition;;_RV_;;IsKeyPressed(KEY_RIGHT);;_RV_;;"
 	],
 	[
 		73,
 		1,
 		"freetyping",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"value;;_RV_;;incrementSpeed++;;_RV_;;"
 	],
 	[
 		74,
 		1,
 		"elseif",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"condition;;_RV_;;IsKeyPressed(KEY_LEFT);;_RV_;;"
 	],
 	[
 		75,
 		1,
 		"freetyping",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"value;;_RV_;;incrementSpeed--;;_RV_;;"
+	],
+	[
+		76,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:35",
+		"value;;_RV_;;TODO: The idea is to zoom and move around with mouse;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		77,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:35",
+		"value;;_RV_;;Probably offset movement should be proportional to zoom level;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		78,
 		1,
 		"ifstatement",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"condition;;_RV_;;IsMouseButtonDown(MOUSE_LEFT_BUTTON)||IsMouseButtonDown(MOUSE_RIGHT_BUTTON);;_RV_;;"
 	],
 	[
 		79,
 		1,
 		"ifstatement",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"condition;;_RV_;;IsMouseButtonDown(MOUSE_LEFT_BUTTON);;_RV_;;"
 	],
 	[
 		80,
 		1,
 		"freetyping",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"value;;_RV_;;zoom += zoom*0.003;;_RV_;;"
 	],
 	[
 		81,
 		1,
 		"ifstatement",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"condition;;_RV_;;IsMouseButtonDown(MOUSE_RIGHT_BUTTON);;_RV_;;"
 	],
 	[
 		82,
 		1,
 		"freetyping",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"value;;_RV_;;zoom -= zoom*0.003;;_RV_;;"
 	],
 	[
 		83,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"leftside;;_RV_;;mousePos;;_RV_;;rightside;;_RV_;;GetMousePosition();;_RV_;;"
 	],
 	[
 		84,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"leftside;;_RV_;;offsetSpeed.x;;_RV_;;rightside;;_RV_;;mousePos.x-screenWidth/2;;_RV_;;"
 	],
 	[
 		85,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"leftside;;_RV_;;offsetSpeed.y;;_RV_;;rightside;;_RV_;;mousePos.y-screenHeight/2;;_RV_;;"
+	],
+	[
+		86,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:35",
+		"value;;_RV_;;Slowly move camera to targetOffset;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		87,
 		1,
 		"freetyping",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"value;;_RV_;;offset[1] += GetFrameTime()*offsetSpeed.x*0.8;;_RV_;;"
 	],
 	[
 		88,
 		1,
 		"freetyping",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"value;;_RV_;;offset[2] += GetFrameTime()*offsetSpeed.y*0.8;;_RV_;;"
 	],
 	[
 		89,
 		1,
 		"else",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		""
 	],
 	[
 		90,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"leftside;;_RV_;;offsetSpeed;;_RV_;;rightside;;_RV_;;Vector2(0.0,0.0);;_RV_;;"
 	],
 	[
 		91,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetShaderFloat;;_RV_;;parameters;;_RV_;;shader,zoomLoc,zoom;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		92,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetShaderVec2;;_RV_;;parameters;;_RV_;;shader,offsetLoc,offset;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		93,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:35",
+		"value;;_RV_;;Increment c value with time;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		94,
 		1,
 		"assignment",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"leftside;;_RV_;;amount;;_RV_;;rightside;;_RV_;;GetFrameTime()*incrementSpeed*0.0005;;_RV_;;"
 	],
 	[
 		95,
 		1,
 		"freetyping",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"value;;_RV_;;c[1] += amount;;_RV_;;"
 	],
 	[
 		96,
 		1,
 		"freetyping",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"value;;_RV_;;c[2] += amount;;_RV_;;"
 	],
 	[
 		97,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetShaderVec2;;_RV_;;parameters;;_RV_;;shader,cLoc,c;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		98,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:35",
+		"value;;_RV_;;----------------------------------------------------------------------------------;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		99,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:35",
+		"value;;_RV_;;Draw;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		100,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:35",
+		"value;;_RV_;;----------------------------------------------------------------------------------;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		101,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		102,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;ClearBackground;;_RV_;;parameters;;_RV_;;BLACK;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		103,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:35",
+		"value;;_RV_;;Clear the screen of the previous frame.;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		104,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:35",
+		"value;;_RV_;;Using a render texture to draw Julia set;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		105,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginTextureMode;;_RV_;;parameters;;_RV_;;target;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		106,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:35",
+		"value;;_RV_;;Enable drawing to texture;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		107,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;ClearBackground;;_RV_;;parameters;;_RV_;;BLACK;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		108,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:35",
+		"value;;_RV_;;Clear the render texture;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		109,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:35",
+		"value;;_RV_;;Draw a rectangle in shader mode to be used as shader canvas;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		110,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:35",
+		"value;;_RV_;;NOTE: Rectangle uses font white character texture coordinates,;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		111,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:35",
+		"value;;_RV_;;so shader can not be applied here directly because input vertexTexCoord;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		112,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:35",
+		"value;;_RV_;;do not represent full screen coordinates (space where want to apply shader);;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		113,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawRectangle;;_RV_;;parameters;;_RV_;;0,0,GetScreenWidth(),GetScreenHeight(),BLACK;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		114,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:35",
+		"value;;_RV_;;Draw the saved texture and rendered julia set with shader;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		115,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:35",
+		"value;;_RV_;;NOTE: We do not invert texture on Y, already considered inside shader;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		116,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndTextureMode;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		117,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginShaderMode;;_RV_;;parameters;;_RV_;;shader;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		118,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawTexture;;_RV_;;parameters;;_RV_;;target.texture,0,0,WHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		119,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndShaderMode;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		120,
 		1,
 		"ifstatement",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"condition;;_RV_;;showControls;;_RV_;;"
 	],
 	[
 		121,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"Press Mouse buttons right/left to zoom in/out and move"+char(34)+",10,15,10,RAYWHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		122,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"Press KEY_F1 to toggle these controls"+char(34)+",10,30,10,RAYWHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		123,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"Press KEYS [1 - 6] to change point of interest"+char(34)+",10,45,10,RAYWHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		124,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"Press KEY_LEFT | KEY_RIGHT to change speed"+char(34)+",10,60,10,RAYWHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		125,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"Press KEY_SPACE to pause movement animation"+char(34)+",10,75,10,RAYWHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		126,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:35",
+		"value;;_RV_;;----------------------------------------------------------------------------------;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		127,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+	],
+	[
+		128,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:35",
+		"value;;_RV_;;De-Initialization;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		129,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:35",
+		"value;;_RV_;;--------------------------------------------------------------------------------------;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		130,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadShader;;_RV_;;parameters;;_RV_;;shader;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		131,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:35",
+		"value;;_RV_;;Unload shader;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		132,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;UnloadRenderTexture;;_RV_;;parameters;;_RV_;;target;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		133,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:35",
+		"value;;_RV_;;Unload render texture;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		134,
+		1,
+		"comment_text",
+		"10/09/2024",
+		"16:12:35",
+		"value;;_RV_;;Close window and OpenGL context;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		135,
 		1,
 		"callfunc",
-		"06/05/2023",
-		"14:23:52",
+		"10/09/2024",
+		"16:12:35",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;CloseWindow;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	]
 ]

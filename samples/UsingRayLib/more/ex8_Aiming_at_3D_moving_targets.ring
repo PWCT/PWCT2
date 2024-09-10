@@ -1,9 +1,7 @@
-#================================#
-# Aiming at 3d moving targets                    
-#================================#
-#--------- 08-02-2021
-# Author : Azzeddine Remmal    
-#================================#
+#=====================================================#
+# Copyright (c) 2020  Ramon Santamaria (@raysan5)
+# Ported to RingRayLib by (Azzeddine Remmal) 
+#=====================================================#
 
 load "raylib.ring"
 
@@ -75,7 +73,7 @@ Func main
 		camera.position.x = cos(ang) * 50.0
 		camera.position.z = sin(ang) * 50.0
 
-		UpdateCamera(camera)
+		UpdateCamera(camera,CAMERA_FIRST_PERSON)
         
                if IsKeyPressed(KEY_F)
 			ToggleFullscreen()
@@ -137,7 +135,7 @@ Func main
 				b = 2.0 * Vector3DotProduct(targVel, totarget)
 				c = Vector3DotProduct(totarget, totarget)
 
-				// quadratic formular simplfied down to this...
+				// quadratic formula simplified down to this...
 				p = -b / (2.0 * a)
 				q = sqrt((b * b) - 4.0 * a * c) / (2.0 * a)				
 				

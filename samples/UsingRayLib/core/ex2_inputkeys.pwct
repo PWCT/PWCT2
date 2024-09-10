@@ -2,7 +2,7 @@
 
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
-cNaturalLanguageName     = 'English'
+cNaturalLanguageName     = 'english'
 nStepsID                 = 36		
 nInteractionsID          = 26
 
@@ -55,7 +55,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# ===================================================================#
+				"#===================================================================#
 "
 			],
 			[
@@ -94,7 +94,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# Copyright (c) 2014 Ramon Santamaria (@raysan5)
+				"#Copyright (c) 2014 Ramon Santamaria (@raysan5)
 "
 			],
 			[
@@ -133,7 +133,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# Ported to RingRayLib by Ring Team
+				"#Ported to RingRayLib by Ring Team
 "
 			],
 			[
@@ -172,7 +172,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"# ===================================================================#
+				"#===================================================================#
 "
 			],
 			[
@@ -1382,208 +1382,208 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"27/08/2021",
-		"08:49:09",
+		"10/09/2024",
+		"15:52:40",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:49:09",
+		"10/09/2024",
+		"15:52:40",
 		"value;;_RV_;;===================================================================#;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:49:09",
+		"10/09/2024",
+		"15:52:40",
 		"value;;_RV_;;Copyright (c) 2014 Ramon Santamaria (@raysan5);;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:49:09",
+		"10/09/2024",
+		"15:52:40",
 		"value;;_RV_;;Ported to RingRayLib by Ring Team;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"27/08/2021",
-		"08:49:09",
+		"10/09/2024",
+		"15:52:40",
 		"value;;_RV_;;===================================================================#;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"load",
-		"27/08/2021",
-		"08:49:09",
+		"10/09/2024",
+		"15:52:40",
 		"file;;_RV_;;raylib.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:09",
+		"10/09/2024",
+		"15:52:40",
 		"leftside;;_RV_;;screenWidth;;_RV_;;rightside;;_RV_;;800;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:09",
+		"10/09/2024",
+		"15:52:40",
 		"leftside;;_RV_;;screenHeight;;_RV_;;rightside;;_RV_;;450;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:09",
+		"10/09/2024",
+		"15:52:40",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;InitWindow;;_RV_;;parameters;;_RV_;;screenWidth,screenHeight,"+char(34)+"raylib [core] example - keyboard input"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"27/08/2021",
-		"08:49:09",
+		"10/09/2024",
+		"15:52:40",
 		"leftside;;_RV_;;ballPosition;;_RV_;;rightside;;_RV_;;Vector2(screenWidth/2,screenHeight/2);;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:09",
+		"10/09/2024",
+		"15:52:40",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetTargetFPS;;_RV_;;parameters;;_RV_;;60;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"whileloop",
-		"27/08/2021",
-		"08:49:09",
+		"10/09/2024",
+		"15:52:40",
 		"condition;;_RV_;;!WindowShouldClose();;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"ifstatement",
-		"27/08/2021",
-		"08:49:09",
+		"10/09/2024",
+		"15:52:40",
 		"condition;;_RV_;;IsKeyDown(KEY_RIGHT);;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"freetyping",
-		"27/08/2021",
-		"08:49:09",
+		"10/09/2024",
+		"15:52:40",
 		"value;;_RV_;;ballPosition.x += 2;;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"ifstatement",
-		"27/08/2021",
-		"08:49:09",
+		"10/09/2024",
+		"15:52:40",
 		"condition;;_RV_;;IsKeyDown(KEY_LEFT);;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"freetyping",
-		"27/08/2021",
-		"08:49:09",
+		"10/09/2024",
+		"15:52:40",
 		"value;;_RV_;;ballPosition.x -= 2;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"ifstatement",
-		"27/08/2021",
-		"08:49:09",
+		"10/09/2024",
+		"15:52:40",
 		"condition;;_RV_;;IsKeyDown(KEY_UP);;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"freetyping",
-		"27/08/2021",
-		"08:49:09",
+		"10/09/2024",
+		"15:52:40",
 		"value;;_RV_;;ballPosition.y -= 2;;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"ifstatement",
-		"27/08/2021",
-		"08:49:09",
+		"10/09/2024",
+		"15:52:40",
 		"condition;;_RV_;;IsKeyDown(KEY_DOWN);;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"freetyping",
-		"27/08/2021",
-		"08:49:09",
+		"10/09/2024",
+		"15:52:40",
 		"value;;_RV_;;ballPosition.y += 2;;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:09",
+		"10/09/2024",
+		"15:52:40",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;BeginDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:09",
+		"10/09/2024",
+		"15:52:40",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;ClearBackground;;_RV_;;parameters;;_RV_;;RAYWHITE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:09",
+		"10/09/2024",
+		"15:52:40",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawText;;_RV_;;parameters;;_RV_;;"+char(34)+"move the ball with arrow keys"+char(34)+",10,10,20,DARKGRAY;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:09",
+		"10/09/2024",
+		"15:52:40",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DrawCircleV;;_RV_;;parameters;;_RV_;;ballPosition,50,MAROON;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:09",
+		"10/09/2024",
+		"15:52:40",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EndDrawing;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"callfunc",
-		"27/08/2021",
-		"08:49:09",
+		"10/09/2024",
+		"15:52:40",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;CloseWindow;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	]
 ]

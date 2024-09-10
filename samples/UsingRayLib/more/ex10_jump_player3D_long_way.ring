@@ -30,11 +30,11 @@ func main
 	UnloadImage(checked)
 	
 	myground.size = Vector3(20.0,0.5,20.0)    
-	myground.model = LoadModelFromMesh(GenMeshCube(myground.size.x, myground.size.y, myground.size.z))
+	myground.model = LoadModelFromMesh(GenMeshCube_2(myground.size.x, myground.size.y, myground.size.z))
 	SetModelMaterialTexture(myground.model,0,MAP_DIFFUSE,texture)
 
 	myplayer.size = Vector3(1.0,1.0,1.0)
-	myplayer.model = LoadModelFromMesh(GenMeshCube(myplayer.size.x, myplayer.size.y, myplayer.size.z))
+	myplayer.model = LoadModelFromMesh(GenMeshCube_2(myplayer.size.x, myplayer.size.y, myplayer.size.z))
 	SetModelMaterialTexture(myplayer.model,0,MAP_DIFFUSE,texture)
 
 	grounditems = list(MAX_ITEM)
@@ -43,7 +43,7 @@ func main
 		item =  new ground 
 		item.size = Vector3(20.0,0.3,20.0) 	
 		item.position.x = 1
-		item.model = LoadModelFromMesh(GenMeshCube(item.size.x, item.size.y, item.size.z))
+		item.model = LoadModelFromMesh(GenMeshCube_2(item.size.x, item.size.y, item.size.z))
 	        SetModelMaterialTexture(item.model,0,MAP_DIFFUSE,texturez)
 	next
        
@@ -73,15 +73,13 @@ func main
 		          0.0, 1.0, 0.0, 
 		          50.0, 0)  
 
-	SetCameraMode(camera, CAMERA_THIRD_PERSON)    	
-
 	SetTargetFPS(60)              
   
 	while !WindowShouldClose()  
         
 	# Update
        
-                UpdateCamera(camera)    
+                UpdateCamera(camera,CAMERA_THIRD_PERSON)    
 
      		DT = GetFrameTime()
 		camera.target = Vector3( myplayer.Position.x, myplayer.Position.y+2,myplayer.Position.z-5)
