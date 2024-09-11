@@ -83,7 +83,7 @@ class ParserStmt
 			}
 		}
 		/* Statement --> For Identifier = Expr to Expr {Statement} Next  |  For Identifier in Expr {Statemen */
-		if iskeyword(K_FOR) {
+		if iskeyword(K_FOR) or isKeyword(K_FOREACH) {
 			clearTextBuffer()
 			nexttoken()
 			IGNORENEWLINE() 
