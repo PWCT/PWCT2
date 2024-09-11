@@ -1713,3 +1713,18 @@ class EnvironmentController from WindowsControllerParent
 
 	func NewEventName cFunctionName
 		parent().newEventName(cFunctionName)
+
+	func AppsCheckbox 
+
+		nState = oView.oFTAppsCheckbox.checkstate()
+
+		if nState {
+				myindex2 = oView.ofile.index(oView.oDir.currentpath()+"/applications",0)	
+				oView.oFilesTree.setrootindex(myindex2)
+		else 
+				myindex2 = oView.ofile.index("",0)
+				oView.oFilesTree.setrootindex(myindex2)
+				myindex2 = oView.ofile.index(oView.oDir.currentpath()+"/applications",0)
+				oView.oFilesTree.setExpanded(myindex2,true)		
+				oView.oFilesTree.setCurrentIndex(myindex2)	
+		}		

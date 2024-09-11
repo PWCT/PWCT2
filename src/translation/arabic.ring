@@ -313,6 +313,7 @@
 # Project Files 
 	T_PROJECTFILES_EXPLORER = "المتصفح"
 	T_PROJECTFILES_TERMINAL = "سطر الاوامر"
+	T_PROJECTFILES_APPLICATIONSFOLDER = "تصفية (مجلد التطبيقات)"
 
 # Environment Messages in Statusbar
 	T_ENVMSG_SAVE = "حفظ الملف"

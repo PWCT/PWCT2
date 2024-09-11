@@ -287,7 +287,7 @@
 
 	T_ABOUT_TITLE = "About"
 	T_ABOUT_DEVELOPER = "Programming Without Coding Technology (PWCT)" + nl +
-						"Version: 2.0 Rev. 2024.09.10" + nl +
+						"Version: 2.0 Rev. 2024.09.11" + nl +
 						"2023-2024, PWCT Software"
 
 # GUI Library 
@@ -313,6 +313,7 @@
 # Project Files 
 	T_PROJECTFILES_EXPLORER = " Files Manager"
 	T_PROJECTFILES_TERMINAL = " Command Prompt"
+	T_PROJECTFILES_APPLICATIONSFOLDER = "Filter (Applications Folder)"
 
 # Environment Messages in Statusbar
 	T_ENVMSG_SAVE = "Save the visual source file..."

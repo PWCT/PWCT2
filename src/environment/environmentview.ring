@@ -10,9 +10,10 @@ class EnvironmentView from WindowsViewParent
 	oDesktop = new PWCTDesktop
 
 	# Attributes
-	TreeTimer oFilesTree   oFile  oDockFilesManager oDockGoalDesigner
+	TreeTimer oFilesTree oDir   oFile  oDockFilesManager oDockGoalDesigner
 	oDockComponentsBrowser  oStatusbar
-
+	oFTAppsCheckbox
+	
 	# Process Window
 	oDockOutputWindow	oProcess oProcessText   oProcessEditbox
 	oDockFormDesigner
@@ -1106,9 +1107,9 @@ class EnvironmentView from WindowsViewParent
 			setclickedevent(Method(:ChangeFileClickAction))
 			setdoubleclickedevent(Method(:ChangeFileDoubleClickAction))
 			setactivatedevent(Method(:ChangeFileClickAction))
-			oDir = new QDir()					
+			this.oDir = new QDir()					
 			this.ofile = new QFileSystemModel() {
-				setrootpath(oDir.currentpath())		
+				setrootpath(this.oDir.currentpath())		
 				myfiles = new qstringlist()
 				myfiles.append("*.pwct")
 				myfiles.append("*.rform")
@@ -1116,18 +1117,18 @@ class EnvironmentView from WindowsViewParent
 				setNameFilterDisables(false)
 			}
 			setmodel(this.ofile)
-			myindex = this.ofile.index(oDir.currentpath(),0)
+			myindex = this.ofile.index(this.oDir.currentpath(),0)
 			for x = 1 to this.ofile.columncount() {
 				hidecolumn(x)
 			}
 			setcurrentindex(myindex)
 			if PWCTIsMobile(:OnlyPWCTFilesFolder) {
-				myindex2 = this.ofile.index(oDir.currentpath()+"/PWCTFiles",0)
+				myindex2 = this.ofile.index(this.oDir.currentpath()+"/PWCTFiles",0)
 				setrootindex(myindex2)
 			}
 			setexpanded(myindex,true)
 			if isWindows() {
-				myindex2 = this.ofile.index(oDir.currentpath()+"/applications",0)
+				myindex2 = this.ofile.index(this.oDir.currentpath()+"/applications",0)		
 				setrootindex(myindex2)
 			}
 			header().hide()			
@@ -1149,10 +1150,16 @@ class EnvironmentView from WindowsViewParent
 				setclickEvent(Method(:OSTerminal))
 				//this.mobileButtonSize(self)
 			}
+			this.oFTAppsCheckbox = new QCheckBox(oFilesTreeWidget) {
+				setText(T_PROJECTFILES_APPLICATIONSFOLDER)
+				setCheckState(2)
+				setStateChangedEvent(Method(:AppsCheckbox))
+			}
 			setbtnimage(oFTTerminal,AppFile("images/terminal.png"))
 			oFTHLayout = new QHBoxLayout() {
 				addWidget(oFTExplorer)
 				addWidget(oFTTerminal)
+				addWidget(this.oFTAppsCheckbox)
 				addstretch(0)
 			}
 			oFTVLayout = new QVBoxLayout() {
