@@ -179,3 +179,13 @@
 	lShowGoalDesigner	= True
 	lShowOutputWindow	= True
 	lShowFormDesigner	= True 
+
+# Dock Dimensions
+	nOutputWindowWidth 			= NULL
+	nOutputWindowHeight 		= NULL
+	nFilesManagerWidth  		= NULL
+	nFilesManagerHeight 		= NULL
+	nComponentsBrowserWidth 	= NULL 
+	nComponentsBrowserHeight	= NULL 
+	nGoalDesignerWidth			= NULL 
+	nGoalDesignerHeight			= NULL

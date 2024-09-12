@@ -87,6 +87,7 @@ class EnvironmentController from WindowsControllerParent
 				oView.win.tabifydockwidget(oView.oDockOutputWindow,oView.oDockFilesManager)
 			}
 		}
+
 		if lTabifyOutputAndFiles {
 			if T_LAYOUTDIRECTION = 0 {
 				oView.win.tabifydockwidget(oView.oDockOutputWindow,oView.oDockFilesManager)
@@ -132,12 +133,41 @@ class EnvironmentController from WindowsControllerParent
 		# We must update the font size here when the tree is visible 
 			oView.oFilesTree.UpdateFontSize()
 
-
 		if isWebAssembly() {
 			oView.win.Hide()
 			oView.win.setWindowFlags(Qt_Window | Qt_CustomizeWindowHint)
 			oView.win.showmaximized()
 		}
+
+		prepareDockSize()
+
+	func prepareDockSize
+
+		aDocksData = [
+			[oView.oDockOutputWindow,nOutputWindowWidth,nOutputWindowHeight],
+			[oView.oDockGoalDesigner,nGoalDesignerWidth,nGoalDesignerHeight],
+			[oView.oDockFilesManager,nFilesManagerWidth,nFilesManagerHeight],
+			[oView.oDockComponentsBrowser,nComponentsBrowserWidth,nComponentsBrowserHeight]
+		]
+
+		aDocksData = sort(aDocksData,2)
+		for oDockItem in aDocksData {
+			if oDockItem[1].isVisible() {
+				if oDockItem[2]  {
+					setDockWidth(oDockItem[1],oDockItem[2])
+				}
+			}
+		}
+
+		aDocksData = sort(aDocksData,3)
+		for oDockItem in aDocksData {
+			if oDockItem[1].isVisible() {
+				if oDockItem[3] {
+					setDockHeight(oDockItem[1],oDockItem[3])
+				}
+			}
+		}
+
 
 	/*
 		Purpose : Set the Parent Object for Environment and goal designer
@@ -868,7 +898,16 @@ class EnvironmentController from WindowsControllerParent
 				"lShowOutputWindow = " + oView.oDockOutputWindow.isvisible() + nl +
 				"lShowFilesToolBar = " + oView.oToolBarFiles.isvisible() + nl +
 				"lShowMainFileToolBar = " + oView.oToolBarMainFile.isvisible() + nl +
-				"lShowStatusBar = " + oView.oStatusBar.isvisible() + nl 
+				"lShowStatusBar = " + oView.oStatusBar.isvisible() + nl +
+				"nOutputWindowWidth = " + oView.oDockOutputWindow.width() + nl +
+				"nOutputWindowHeight = " + oView.oDockOutputWindow.height() + nl +
+				"nFilesManagerWidth = " + oView.oDockFilesManager.width() + nl +
+				"nFilesManagerHeight = " + oView.oDockFilesManager.height() + nl +
+				"nComponentsBrowserWidth = " + oView.oDockComponentsBrowser.width() + nl +
+				"nComponentsBrowserHeight = " + oView.oDockComponentsBrowser.height() + nl +
+				"nGoalDesignerWidth = " + oView.oDockgoalDesigner.width() + nl +
+				"nGoalDesignerHeight = " + oView.oDockgoalDesigner.height() + nl 
+
 		cSettings = substr(cSettings,nl,char(13)+char(10))
 		write(cSettingsFile,cSettings)
 
@@ -1728,3 +1767,38 @@ class EnvironmentController from WindowsControllerParent
 				oView.oFilesTree.setExpanded(myindex2,true)		
 				oView.oFilesTree.setCurrentIndex(myindex2)	
 		}		
+
+	func setDockWidth oDock,nWidth 
+
+		nWidthMin = oDock.minimumWidth()
+		nWidthMax = oDock.maximumWidth()
+
+		oDock.setMinimumWidth(nWidth)
+		oDock.setMaximumWidth(nWidth)
+
+		PWCT_App.processevents()
+
+		if nWidthMin < nWidth {
+			oDock.setMinimumWidth(nWidthMin)
+		}
+		if nWidthMax > nWidth {
+			oDock.setMaximumWidth(nWidthMax)
+		}
+
+
+	func setDockHeight oDock,nHeight 
+
+		nHeightMin = oDock.minimumHeight()
+		nHeightMax = oDock.maximumHeight()
+
+		oDock.setMinimumHeight(nHeight)
+		oDock.setMaximumHeight(nHeight)
+
+		PWCT_App.processevents()
+
+		if nHeightMin < nHeight {
+			oDock.setMinimumHeight(nHeightMin)
+		}
+		if nHeightMax > nHeight {
+			oDock.setMaximumHeight(nHeightMax)
+		}
