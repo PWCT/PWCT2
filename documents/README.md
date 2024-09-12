@@ -15,6 +15,14 @@ The documentation is created using Sphinx (A popular tool written in Python)
 
 (5) To generate CHM file, Use Microsoft Help Workshop (from WayBack Machine): https://web.archive.org/web/20200918004813/http://download.microsoft.com/download/0/A/9/0A939EF6-E31C-430F-A3DF-DFAE7960D564/htmlhelp.exe
 
-(6) To generate PDF file, Use Lyx (https://www.lyx.org/Download) and MiKTEX (https://miktex.org/download)
+(6) To generate PDF file, Install MiKTeX (https://miktex.org/download) - Tested using MiKTeX 23.4
 
-(7) To generate ePub file (optional), running make.bat epub
+	buildlatex.bat
+
+	cd build/latex
+
+	pdflatex PWCT.tex
+
+	makeindex PWCT -s python.ist
+
+	pdflatex PWCT.tex
