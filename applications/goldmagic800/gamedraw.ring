@@ -3,7 +3,15 @@ class GameDraw
 		al_draw_scaled_bitmap(oBitmap,0,0,al_get_bitmap_width(oBitmap),al_get_bitmap_height(oBitmap),0,0,nWidth,nHeight,1)
 	} 
 	func DrawBackGroundImage  { 
-		DrawFullScreenImage(bitmap,SCREEN_W,SCREEN_H)
+		if true { 
+			if nLevel%2 { 
+				DrawFullScreenImage(bitmapStoryBackground2,SCREEN_W,SCREEN_H)
+				else
+					DrawFullScreenImage(bitmapSoGoodBack,SCREEN_W,SCREEN_H)
+			} 
+			else
+				DrawFullScreenImage(bitmap,SCREEN_W,SCREEN_H)
+		} 
 	} 
 	func DrawWinBackGroundImage  { 
 		DrawFullScreenImage(bitmapWinBackGround,SCREEN_W_2D,SCREEN_H_2D)
@@ -78,16 +86,16 @@ class GameDraw
 		DrawTitle("You Win!!!",(SCREEN_H_2D/2)-100,570)
 	} 
 	func DrawGameName  { 
-		# Name
+		#Name
 		al_draw_text(fontArial26,COLOR_WHITE,10,10,ALLEGRO_ALIGN_LEFT,Title)
-		# Level
+		#Level
 		al_draw_text(fontArial26,COLOR_WHITE,250,10,ALLEGRO_ALIGN_LEFT,"Level : ")
 		al_draw_text(fontArial26,COLOR_WHITE,330,10,ALLEGRO_ALIGN_LEFT,""+nLevel)
-		# Check end of level
+		#Check end of level
 		if nActiveScreen = C_SCREEN_LEVELCOMPLETE { 
 			return 
 		} 
-		# Door
+		#Door
 		if nActiveDoor = 0 { 
 			cDoorToOpen = 1
 			else
@@ -95,8 +103,8 @@ class GameDraw
 		} 
 		cDoorToOpen = "Next Door : "+cDoorToOpen
 		al_draw_text(fontArial26,COLOR_WHITE,380,10,ALLEGRO_ALIGN_LEFT,""+cDoorToOpen)
-		# Score
-		# Score Status
+		#Score
+		#Score Status
 		if nScore < C_MAX_REQUIRED_SCORE_FOR_GOLD { 
 			cScoreText = ""+nScore+" (Low) "
 			elseif nScore = C_MAX_REQUIRED_SCORE_FOR_GOLD
@@ -114,7 +122,7 @@ class GameDraw
 	} 
 	func drawcube nSize { 
 		glBegin(GL_QUADS)
-		# Front Face
+		#Front Face
 		glTexCoord2f(0.0,0.0)
 		glVertex3f(-nSize,-nSize,nSize)
 		glTexCoord2f(nSize,0.0)
@@ -123,7 +131,7 @@ class GameDraw
 		glVertex3f(nSize,nSize,nSize)
 		glTexCoord2f(0.0,nSize)
 		glVertex3f(-nSize,nSize,nSize)
-		# Back Face
+		#Back Face
 		glTexCoord2f(nSize,0.0)
 		glVertex3f(-nSize,-nSize,-nSize)
 		glTexCoord2f(nSize,nSize)
@@ -132,7 +140,7 @@ class GameDraw
 		glVertex3f(nSize,nSize,-nSize)
 		glTexCoord2f(0.0,0.0)
 		glVertex3f(nSize,-nSize,-nSize)
-		# Top Face
+		#Top Face
 		glTexCoord2f(0.0,nSize)
 		glVertex3f(-nSize,nSize,-nSize)
 		glTexCoord2f(0.0,0.0)
@@ -141,7 +149,7 @@ class GameDraw
 		glVertex3f(nSize,nSize,nSize)
 		glTexCoord2f(nSize,nSize)
 		glVertex3f(nSize,nSize,-nSize)
-		# Bottom Face
+		#Bottom Face
 		glTexCoord2f(nSize,nSize)
 		glVertex3f(-nSize,-nSize,-nSize)
 		glTexCoord2f(0.0,nSize)
@@ -150,7 +158,7 @@ class GameDraw
 		glVertex3f(nSize,-nSize,nSize)
 		glTexCoord2f(nSize,0.0)
 		glVertex3f(-nSize,-nSize,nSize)
-		# Right face
+		#Right face
 		glTexCoord2f(nSize,0.0)
 		glVertex3f(nSize,-nSize,-nSize)
 		glTexCoord2f(nSize,nSize)
@@ -159,7 +167,7 @@ class GameDraw
 		glVertex3f(nSize,nSize,nSize)
 		glTexCoord2f(0.0,0.0)
 		glVertex3f(nSize,-nSize,nSize)
-		# Left Face
+		#Left Face
 		glTexCoord2f(0.0,0.0)
 		glVertex3f(-nSize,-nSize,-nSize)
 		glTexCoord2f(nSize,0.0)
@@ -172,7 +180,7 @@ class GameDraw
 	} 
 	func DrawCubeNoBottom nSize { 
 		glBegin(GL_QUADS)
-		# Front Face
+		#Front Face
 		glTexCoord2f(0.0,0.0)
 		glVertex3f(-nSize,-nSize,nSize)
 		glTexCoord2f(nSize,0.0)
@@ -181,7 +189,7 @@ class GameDraw
 		glVertex3f(nSize,nSize,nSize)
 		glTexCoord2f(0.0,nSize)
 		glVertex3f(-nSize,nSize,nSize)
-		# Back Face
+		#Back Face
 		glTexCoord2f(nSize,0.0)
 		glVertex3f(-nSize,-nSize,-nSize)
 		glTexCoord2f(nSize,nSize)
@@ -190,7 +198,7 @@ class GameDraw
 		glVertex3f(nSize,nSize,-nSize)
 		glTexCoord2f(0.0,0.0)
 		glVertex3f(nSize,-nSize,-nSize)
-		# Top Face
+		#Top Face
 		glTexCoord2f(0.0,nSize)
 		glVertex3f(-nSize,nSize,-nSize)
 		glTexCoord2f(0.0,0.0)
@@ -199,7 +207,7 @@ class GameDraw
 		glVertex3f(nSize,nSize,nSize)
 		glTexCoord2f(nSize,nSize)
 		glVertex3f(nSize,nSize,-nSize)
-		# Right face
+		#Right face
 		glTexCoord2f(nSize,0.0)
 		glVertex3f(nSize,-nSize,-nSize)
 		glTexCoord2f(nSize,nSize)
@@ -208,7 +216,7 @@ class GameDraw
 		glVertex3f(nSize,nSize,nSize)
 		glTexCoord2f(0.0,0.0)
 		glVertex3f(nSize,-nSize,nSize)
-		# Left Face
+		#Left Face
 		glTexCoord2f(0.0,0.0)
 		glVertex3f(-nSize,-nSize,-nSize)
 		glTexCoord2f(nSize,0.0)

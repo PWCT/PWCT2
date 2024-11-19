@@ -1,11 +1,11 @@
 class GameData from GameBase
 	TITLE = "Gold Magic 800"
-	# General Game Settings 	
+	#General Game Settings 	
 	C_SHOW_ACTIVE_REGION_ONLY_AFTER_LEVEL = 118
 	C_SHOW_MAP_UP_TO_LEVEL = 118
 	C_ACTIVE_REGION_SIZE = 7
 	C_MAX_REQUIRED_SCORE_FOR_GOLD = 800
-	# Screens
+	#Screens
 	C_SCREEN_MAINMENU = 1
 	C_SCREEN_GAMEPLAY = 2
 	C_SCREEN_LEVELCOMPLETE = 3
@@ -14,13 +14,13 @@ class GameData from GameBase
 	C_SCREEN_LOGO = 6
 	C_SCREEN_STORY = 7
 	C_SCREEN_HOWTOPLAY = 8
-	# Screens
+	#Screens
 	nActiveScreen = C_SCREEN_LOGO
-	# Main Menu
+	#Main Menu
 	aMenu = ["Start New Game","Continue","Restart Level","Sound (ON)","Music (ON)","How to Play?","Exit From Game"]
 	nActiveItem = 1
 	lGameStarted = False
-	# Map Objects
+	#Map Objects
 	C_PLAYER = 1
 	C_GROUND = 2
 	C_WALL = 3
@@ -44,7 +44,7 @@ class GameData from GameBase
 	C_DOOR16 = 21
 	C_GOLDMARK = 22
 	C_PATHMARK = 23
-	# Game Resources (Images, Textures, Fonts, etc)
+	#Game Resources (Images, Textures, Fonts, etc)
 	fontArial26
 	fontArial172
 	fontArial72
@@ -111,6 +111,7 @@ class GameData from GameBase
 	bitmapStoryBackGround
 	bitmapStoryBackGround2
 	bitmapStoryBackGround3
+	bitmapsoGoodBack
 	bitmapManyGold
 	bitmapTheBox
 	bitmapGameEnv
@@ -118,7 +119,7 @@ class GameData from GameBase
 	lUseGameTitleImage = True
 	bitmapGameTitle
 	bitmapHowToPlay
-	# Current Level Style
+	#Current Level Style
 	GroundTexture
 	WallTexture
 	PlayerTexture
@@ -139,10 +140,10 @@ class GameData from GameBase
 	Door14Texture
 	Door15Texture
 	Door16Texture
-	# Level Map
+	#Level Map
 	nRows = 20
 	nCols = 20
-	aLevel = newlist(20,20)
+	aLevel = list(20,20)
 	for t1 = 1 to nRows step 1 { 
 		for t2 = 1 to nCols step 1 { 
 			aLevel[t1][t2] = C_GROUND
@@ -150,46 +151,46 @@ class GameData from GameBase
 	} 
 	aLevel[1][20] = C_DOOR
 	aLevel[20][1] = C_PLAYER
-	# General Settings
-	# Player Information
+	#General Settings
+	#Player Information
 	nPlayerX = 1
 	nPlayerY = 20
-	# Door Information	
+	#Door Information	
 	nDoorX = 20
 	nDoorY = 1
-	# Level Data 	
+	#Level Data 	
 	nLevel = 1
 	nLevelsCount = Len(ListAllFiles("levels","level"))
 	nSelectedLevel = 1
-	# Environment Data
+	#Environment Data
 	lShowActiveRegionOnly = True
 	lShow2DMap = True
 	lIs2DMapVisible = False
 	cDrawingMode = :GamePlay
 	lWallSizeIsSmall = True
-	# Game Actions
+	#Game Actions
 	lIsPoint = False
 	nScore = 0
 	nActiveDoor = 0
 	nDoorsCount = 2
-	# Camera Settings
+	#Camera Settings
 	oGameCamera = new GameCamera
 	oGameCamera.SCREEN_W = SCREEN_W
 	oGameCamera.SCREEN_H = SCREEN_H
 	oGameCamera.SCREEN_W_2D = SCREEN_W_2D
 	oGameCamera.SCREEN_H_2D = SCREEN_H_2D
-	# Sound
-	# Logo
+	#Sound
+	#Logo
 	oGameSound = new GameSound
-	# Play using the Mouse
+	#Play using the Mouse
 	oGameLogo = new GameLogo
 	lPlayUsingMouse = False
 	lShowHideMouse = True
 	lMoveByMouse = False
-	# Play using 2D Map
-	# Playing using the 2D Map is Not Fun and Reduce the Playing time.
+	#Play using 2D Map
+	#Playing using the 2D Map is Not Fun and Reduce the Playing time.
 	lNoPlayInLarge2D = False
-	# Game Story Data
+	#Game Story Data
 	nStoryPage = 1
 	nStoryLine = 1
 	nStoryCharacter = 0

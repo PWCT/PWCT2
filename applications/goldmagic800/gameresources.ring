@@ -23,6 +23,8 @@ class GameResources
 		CheckFatalError(bitmapStoryBackGround2,"Can't load the image file images/storyback2.jpg")
 		bitmapStoryBackGround3 = al_load_bitmap("images/storyback3.jpg")
 		CheckFatalError(bitmapStoryBackGround3,"Can't load the image file images/storyback3.jpg")
+		bitmapSoGoodBack = al_load_bitmap("images/sogoodback.jpg")
+		CheckFatalError(bitmapSoGoodBack,"Can't load the image file images/sogoodback.jpg")
 		bitmapManyGold = al_load_bitmap("images/manygold.jpg")
 		CheckFatalError(bitmapManyGold,"Can't load the image file images/manygold.jpg")
 		bitmapTheBox = al_load_bitmap("images/thebox.jpg")
