@@ -1122,7 +1122,6 @@ class FormDesignerController from WindowsControllerParent
 	func ApplyMSTextColor cColor 
 		aObjects = oModel.GetSelectedObjects()
 		for item in aObjects {
-			oObject = item[2]
 			oModel.GetObjectByID(item[3]).setTextColor(cColor)
 		}
 
@@ -1133,7 +1132,6 @@ class FormDesignerController from WindowsControllerParent
 	func ApplyMSBackColor cColor 
 		aObjects = oModel.GetSelectedObjects()
 		for item in aObjects {
-			oObject = item[2]
 			oModel.GetObjectByID(item[3]).setBackColor(cColor)
 		}
 
@@ -1144,7 +1142,6 @@ class FormDesignerController from WindowsControllerParent
 	func ApplyMSFont cFont
 		aObjects = oModel.GetSelectedObjects()
 		for item in aObjects {
-			oObject = item[2]
 			oModel.GetObjectByID(item[3]).setFontProperty(cFont)
 		}
 
@@ -1262,6 +1259,10 @@ class FormDesignerController from WindowsControllerParent
 							}
 						}
 						item[:name] = substr(item[:name]," ","")
+					# Avoid name duplication 
+						while find(oModel.aObjectsList,item[:name]+(oModel.ObjectsCount()+nIndex-1),1) {
+							nIndex++						
+						}
 					# Add New number to the name
 						# -1 to avoid counting the window object
 							item[:name] += "" + (oModel.ObjectsCount()+nIndex-1)
