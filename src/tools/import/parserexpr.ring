@@ -438,7 +438,7 @@ class ParserExpr
 			}
 		}
 		/* Factor --> Negative (-) Factor */
-		if isoperator2(OP_MINUS) {
+		if isoperator2(OP_MINUS) or isOperator2(OP_PLUS) {
 			nexttoken()
 			x = factor()
 			/* Generate Code */

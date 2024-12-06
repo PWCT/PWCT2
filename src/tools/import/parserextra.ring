@@ -81,6 +81,10 @@ class ParserExtra
 						error(ERROR_LISTITEM)
 						return 0 
 					}
+				elseif isoperator2(OP_LCLOSE)
+					nexttoken()
+					/* Generate Code */
+					return 1 
 				else
 					error(ERROR_LISTITEM)
 					return 0 
