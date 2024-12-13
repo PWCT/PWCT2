@@ -31,7 +31,11 @@ class PrintStepsController from WindowsControllerParent
 					del(aList,t)
 				}
 			}
-			cSteps = List2Str(aList)
+			if aList {
+				cSteps = List2Str(aList)
+			else
+				cSteps = ""
+			}
 		}
 		oView.oStepsTree.setText(cSteps)
 		oView.oStepsCode.setText(Parent().oModel.StepsTreeCode())
