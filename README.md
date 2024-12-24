@@ -305,16 +305,10 @@ PWCT 2.0 will comes with an Arabic version, other languages could be added in th
 
 ![arabicversion](https://github.com/mahmoudfayed/pwct2/blob/master/docimages/Arabic.jpg)
 
-## The Release Date
+## Get PWCT2
 
-Since we already have the first generation of the product (PWCT 1.9) we decided that in
-the second generation we will focus on the quality and accept the high costs (Development Time).
+PWCT 2.0 was released on 1 March 2023
 
-Until now the product is usable and a lot of useful ideas are implemented and we are happy with
-the product, It's too much better than the first generation but, we are going to invest 
-more time to provide many useful resources around the software.
+The current release is PWCT 2.0 Rev. 2024.12.06
 
-Once we have a fixed release date we will update this document.
-
-The more we are investing our time in the development of this product, the more we save
-your time when you use it.
+URL: https://store.steampowered.com/app/1953110/Programming_Without_Coding_Technology_20/
