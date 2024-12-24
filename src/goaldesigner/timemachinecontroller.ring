@@ -16,6 +16,11 @@ class TimeMachineController
 	
 		lUseSetHidden = True	
 
+	/*
+		Flag to control adding information about Time Machine performance to the Log
+	*/
+
+		lPerformanceLog = False
 
 	/*
 		Purpose : Time Machine Goto Present
@@ -44,6 +49,10 @@ class TimeMachineController
 	*/
 
 	func ChangeTimeMachinePoint oView,oModel
+		if lPerformanceLog {
+			nTimeMachineChangeStart = clock()
+			oSystemLog.addMessage("Start using Time Machine to change position")
+		}
 		nOldTMValue = oView.sliderTimeMachine.GetActiveInteraction()
 		nTMValue = oView.sliderTimeMachine.value()
 		# Check that we have change in the Time 
@@ -119,7 +128,11 @@ class TimeMachineController
 		oView.oStepsTree.lactivateParent = True
 		# To Correctly draw items (Avoid a Qt bug in drawing)
 			oView.FixDrawing()
-
+		if lPerformanceLog {
+			oSystemLog.addMessage("End of using Time Machine to change position")
+			oSystemLog.addMessage("Position Change Time (Clocks)  : " + (clock()-nTimeMachineChangeStart))
+			oSystemLog.addMessage("Position Change Time (Seconds) : " + ((clock()-nTimeMachineChangeStart))/clockspersecond())
+		}
 
 	/*
 		The next method will
