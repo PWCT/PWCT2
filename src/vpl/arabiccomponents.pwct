@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'english'
-nStepsID                 = 620		
-nInteractionsID          = 602
+nStepsID                 = 632		
+nInteractionsID          = 608
 
 aStepsTable = [
 	[
@@ -1486,6 +1486,234 @@ aStepsTable = [
 			[
 				"plainname",
 				"نقصان"
+			]
+		]
+	],
+	[
+		621,
+		12,
+		[
+			[
+				"name",
+				"هل&nbsp;يساوي"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"equal"
+			],
+			[
+				"interactionid",
+				603
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"هل يساوي"
+			]
+		]
+	],
+	[
+		623,
+		12,
+		[
+			[
+				"name",
+				"هل&nbsp;لايساوي"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"notequal"
+			],
+			[
+				"interactionid",
+				604
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"هل لايساوي"
+			]
+		]
+	],
+	[
+		625,
+		12,
+		[
+			[
+				"name",
+				"اكبر&nbsp;من"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"greaterthan"
+			],
+			[
+				"interactionid",
+				605
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"اكبر من"
+			]
+		]
+	],
+	[
+		627,
+		12,
+		[
+			[
+				"name",
+				"اكبر&nbsp;من&nbsp;او&nbsp;يساوي"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"greaterthanorequal"
+			],
+			[
+				"interactionid",
+				606
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"اكبر من او يساوي"
+			]
+		]
+	],
+	[
+		629,
+		12,
+		[
+			[
+				"name",
+				"اصغر&nbsp;من"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"lessthan"
+			],
+			[
+				"interactionid",
+				607
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"اصغر من"
+			]
+		]
+	],
+	[
+		631,
+		12,
+		[
+			[
+				"name",
+				"اصغر&nbsp;من&nbsp;او&nbsp;يساوي"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"lessthanorequal"
+			],
+			[
+				"interactionid",
+				608
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"اصغر من او يساوي"
 			]
 		]
 	],
@@ -19468,6 +19696,54 @@ aInteractionsTable = [
 		"24/12/2024",
 		"14:17:54",
 		"value;;_RV_;;نقصان;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		603,
+		1,
+		"comment_text",
+		"24/12/2024",
+		"14:17:54",
+		"value;;_RV_;;هل يساوي;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		604,
+		1,
+		"comment_text",
+		"24/12/2024",
+		"14:17:54",
+		"value;;_RV_;;هل لايساوي;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		605,
+		1,
+		"comment_text",
+		"24/12/2024",
+		"14:17:54",
+		"value;;_RV_;;اكبر من;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		606,
+		1,
+		"comment_text",
+		"24/12/2024",
+		"14:17:54",
+		"value;;_RV_;;اكبر من او يساوي;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		607,
+		1,
+		"comment_text",
+		"24/12/2024",
+		"14:17:54",
+		"value;;_RV_;;اصغر من;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		608,
+		1,
+		"comment_text",
+		"24/12/2024",
+		"14:17:54",
+		"value;;_RV_;;اصغر من او يساوي;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	]
 ]
 
