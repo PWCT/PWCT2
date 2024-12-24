@@ -41,9 +41,11 @@ C_VPL_NAME = 'RingPWCT'
 	load "date.ring"
 	load "datetimeclass.ring"
 	load "debugclass.ring"
+	load "decrement.ring"
 	load "decrypt.ring"
 	load "deleteitem.ring"
 	load "diffdays.ring"
+	load "division.ring"
 	load "doagain.ring"
 	load "download.ring"
 	load "else.ring"
@@ -105,6 +107,7 @@ C_VPL_NAME = 'RingPWCT'
 	load "hashtableclass.ring"
 	load "ifstatement.ring"
 	load "import.ring"
+	load "increment.ring"
 	load "input.ring"
 	load "inputbox.ring"
 	load "insertitem.ring"
@@ -122,6 +125,8 @@ C_VPL_NAME = 'RingPWCT'
 	load "math.ring"
 	load "mathclass.ring"
 	load "md5.ring"
+	load "modulus.ring"
+	load "multiplication.ring"
 	load "mysqlclass.ring"
 	load "mysql_autocommit.ring"
 	load "mysql_close.ring"
@@ -360,6 +365,8 @@ C_VPL_NAME = 'RingPWCT'
 	load "stringright.ring"
 	load "stringtrim.ring"
 	load "substringtransform.ring"
+	load "subtract.ring"
+	load "sum.ring"
 	load "swapitems.ring"
 	load "switch.ring"
 	load "sysget.ring"
@@ -424,9 +431,11 @@ C_VPL_NAME = 'RingPWCT'
 	aComponentsFilesList + (cComponentsPath + "date.ring")
 	aComponentsFilesList + (cComponentsPath + "datetimeclass.ring")
 	aComponentsFilesList + (cComponentsPath + "debugclass.ring")
+	aComponentsFilesList + (cComponentsPath + "decrement.ring")
 	aComponentsFilesList + (cComponentsPath + "decrypt.ring")
 	aComponentsFilesList + (cComponentsPath + "deleteitem.ring")
 	aComponentsFilesList + (cComponentsPath + "diffdays.ring")
+	aComponentsFilesList + (cComponentsPath + "division.ring")
 	aComponentsFilesList + (cComponentsPath + "doagain.ring")
 	aComponentsFilesList + (cComponentsPath + "download.ring")
 	aComponentsFilesList + (cComponentsPath + "else.ring")
@@ -488,6 +497,7 @@ C_VPL_NAME = 'RingPWCT'
 	aComponentsFilesList + (cComponentsPath + "hashtableclass.ring")
 	aComponentsFilesList + (cComponentsPath + "ifstatement.ring")
 	aComponentsFilesList + (cComponentsPath + "import.ring")
+	aComponentsFilesList + (cComponentsPath + "increment.ring")
 	aComponentsFilesList + (cComponentsPath + "input.ring")
 	aComponentsFilesList + (cComponentsPath + "inputbox.ring")
 	aComponentsFilesList + (cComponentsPath + "insertitem.ring")
@@ -505,6 +515,8 @@ C_VPL_NAME = 'RingPWCT'
 	aComponentsFilesList + (cComponentsPath + "math.ring")
 	aComponentsFilesList + (cComponentsPath + "mathclass.ring")
 	aComponentsFilesList + (cComponentsPath + "md5.ring")
+	aComponentsFilesList + (cComponentsPath + "modulus.ring")
+	aComponentsFilesList + (cComponentsPath + "multiplication.ring")
 	aComponentsFilesList + (cComponentsPath + "mysqlclass.ring")
 	aComponentsFilesList + (cComponentsPath + "mysql_autocommit.ring")
 	aComponentsFilesList + (cComponentsPath + "mysql_close.ring")
@@ -743,6 +755,8 @@ C_VPL_NAME = 'RingPWCT'
 	aComponentsFilesList + (cComponentsPath + "stringright.ring")
 	aComponentsFilesList + (cComponentsPath + "stringtrim.ring")
 	aComponentsFilesList + (cComponentsPath + "substringtransform.ring")
+	aComponentsFilesList + (cComponentsPath + "subtract.ring")
+	aComponentsFilesList + (cComponentsPath + "sum.ring")
 	aComponentsFilesList + (cComponentsPath + "swapitems.ring")
 	aComponentsFilesList + (cComponentsPath + "switch.ring")
 	aComponentsFilesList + (cComponentsPath + "sysget.ring")
