@@ -245,10 +245,15 @@ Class ProgramController
 	*/
 
 	func Prepare oGD
+		nCodeGenTime = clock()
+		oSystemLog.addMessage("Start of code generation")
 		# Get the Source Code
 			GetCode(oGD)
 		# Save the code to the file
 			SaveToFile(oGD)
+		oSystemLog.addMessage("End of code generation")
+		oSystemLog.addMessage("Code generation time (Clocks) : " + (clock()-nCodeGenTime))
+		oSystemLog.addMessage("Code generation time (Seconds): " + ((clock()-nCodeGenTime)/clocksPerSecond()))
 
 	private
 
