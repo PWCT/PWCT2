@@ -12,6 +12,7 @@ C_VPL_NAME = 'RingPWCT'
 	load "accessobject.ring"
 	load "adddays.ring"
 	load "additem.ring"
+	load "and.ring"
 	load "anonfunc.ring"
 	load "assert.ring"
 	load "assignment.ring"
@@ -186,6 +187,7 @@ C_VPL_NAME = 'RingPWCT'
 	load "newtimer.ring"
 	load "newtoolbar.ring"
 	load "newvideowidget.ring"
+	load "not.ring"
 	load "notequal.ring"
 	load "numbersandbytes.ring"
 	load "objectslib.ring"
@@ -206,6 +208,7 @@ C_VPL_NAME = 'RingPWCT'
 	load "odbc_rollback.ring"
 	load "odbc_tables.ring"
 	load "openfiledialog.ring"
+	load "or.ring"
 	load "package.ring"
 	load "prevfilename.ring"
 	load "print.ring"
@@ -408,6 +411,7 @@ C_VPL_NAME = 'RingPWCT'
 	aComponentsFilesList + (cComponentsPath + "accessobject.ring")
 	aComponentsFilesList + (cComponentsPath + "adddays.ring")
 	aComponentsFilesList + (cComponentsPath + "additem.ring")
+	aComponentsFilesList + (cComponentsPath + "and.ring")
 	aComponentsFilesList + (cComponentsPath + "anonfunc.ring")
 	aComponentsFilesList + (cComponentsPath + "assert.ring")
 	aComponentsFilesList + (cComponentsPath + "assignment.ring")
@@ -582,6 +586,7 @@ C_VPL_NAME = 'RingPWCT'
 	aComponentsFilesList + (cComponentsPath + "newtimer.ring")
 	aComponentsFilesList + (cComponentsPath + "newtoolbar.ring")
 	aComponentsFilesList + (cComponentsPath + "newvideowidget.ring")
+	aComponentsFilesList + (cComponentsPath + "not.ring")
 	aComponentsFilesList + (cComponentsPath + "notequal.ring")
 	aComponentsFilesList + (cComponentsPath + "numbersandbytes.ring")
 	aComponentsFilesList + (cComponentsPath + "objectslib.ring")
@@ -602,6 +607,7 @@ C_VPL_NAME = 'RingPWCT'
 	aComponentsFilesList + (cComponentsPath + "odbc_rollback.ring")
 	aComponentsFilesList + (cComponentsPath + "odbc_tables.ring")
 	aComponentsFilesList + (cComponentsPath + "openfiledialog.ring")
+	aComponentsFilesList + (cComponentsPath + "or.ring")
 	aComponentsFilesList + (cComponentsPath + "package.ring")
 	aComponentsFilesList + (cComponentsPath + "prevfilename.ring")
 	aComponentsFilesList + (cComponentsPath + "print.ring")
