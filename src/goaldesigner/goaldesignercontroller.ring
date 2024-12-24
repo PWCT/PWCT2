@@ -972,6 +972,8 @@ class GoalDesignerController from WindowsControllerParent
 			nInteractionsIDCounter = oVisualSourceFile.GetInteractionsID()
 			oVisualSourceFile.Close()
 			oSystemLog.addMessage("End - Get data from visual source file")
+			oSystemLog.addMessage("Steps Count: " + len(aStepsTree))
+			oSystemLog.addMessage("Interactions Count: " + len(aInteractions))	
 		# Update Objects
 			oSystemLog.addMessage("Start - Update Objects")
 			SaveBuffer()
