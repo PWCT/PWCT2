@@ -13,9 +13,9 @@ class ComponentsBrowserController from WindowsControllerParent
 
 	lHideOnlyDontClose 	= True
 
-	# Write Ring source code (list) instead of using SQLite
+	# Write Ring source code (list) instead of using Visual Source File
 		lWriteComponentsFile	= False
-	# Use Ring source code instead of using SQLite
+	# Use Ring source code instead of using Visual Source File
 		if PWCTIsMobile(:UseComponentsFile) {
 			lUseComponentsFile	= False 
 		else 
