@@ -1060,6 +1060,7 @@ class GoalDesignerController from WindowsControllerParent
 		// Using parent().goaldesignerFont() is slow 
 		// parent().goaldesignerFont()
 		nMax = len(aStepsTree) 
+		nLoadTimeStart = clock()
 		lSuperSerialAddExpandSteps = ! (nMax > nMaxStepsCountForExpandSteps)
 		if nMax > this.nMaxStepsCount and lUseMaxStepsCount {
 			oView.oStepsTree {
@@ -1173,6 +1174,9 @@ class GoalDesignerController from WindowsControllerParent
 			}
 		}
 		oSystemLog.addMessage("End - super serial add for tree nodes")
+		oSystemLog.addMessage("Steps Count: " + nMax)
+		oSystemLog.addMessage("Loading Time (clocks) : " + (clock()-nLoadTimeStart)  )
+		oSystemLog.addMessage("Loading Time (seconds): " + ( (clock()-nLoadTimeStart)/ClocksPerSecond()) + " seconds." )
 
 	/*
 		Purpose : Start New Interaction
