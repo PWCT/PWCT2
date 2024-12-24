@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'english'
-nStepsID                 = 539		
-nInteractionsID          = 522
+nStepsID                 = 551		
+nInteractionsID          = 528
 
 aStepsTable = [
 	[
@@ -1490,7 +1490,7 @@ aStepsTable = [
 		]
 	],
 	[
-		539,
+		550,
 		12,
 		[
 			[
@@ -1504,6 +1504,44 @@ aStepsTable = [
 			[
 				"code",
 				"decrement"
+			],
+			[
+				"interactionid",
+				528
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Decrement"
+			]
+		]
+	],
+	[
+		539,
+		12,
+		[
+			[
+				"name",
+				"Equal&nbsp;(Compare)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"equal"
 			],
 			[
 				"interactionid",
@@ -1523,7 +1561,197 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Decrement"
+				"Equal (Compare)"
+			]
+		]
+	],
+	[
+		540,
+		12,
+		[
+			[
+				"name",
+				"Not&nbsp;Equal&nbsp;(Compare)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"notequal"
+			],
+			[
+				"interactionid",
+				523
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Not Equal (Compare)"
+			]
+		]
+	],
+	[
+		542,
+		12,
+		[
+			[
+				"name",
+				"Greater&nbsp;Than"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"greaterthan"
+			],
+			[
+				"interactionid",
+				524
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Greater Than"
+			]
+		]
+	],
+	[
+		544,
+		12,
+		[
+			[
+				"name",
+				"Greater&nbsp;Than&nbsp;or&nbsp;Equal"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"greaterthanorequal"
+			],
+			[
+				"interactionid",
+				525
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Greater Than or Equal"
+			]
+		]
+	],
+	[
+		546,
+		12,
+		[
+			[
+				"name",
+				"Less&nbsp;Than"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"lessthan"
+			],
+			[
+				"interactionid",
+				526
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Less Than"
+			]
+		]
+	],
+	[
+		548,
+		12,
+		[
+			[
+				"name",
+				"Less&nbsp;Than&nbsp;or&nbsp;Equal"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"lessthanorequal"
+			],
+			[
+				"interactionid",
+				527
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Less Than or Equal"
 			]
 		]
 	],
@@ -19508,6 +19736,54 @@ aInteractionsTable = [
 	],
 	[
 		522,
+		1,
+		"comment_text",
+		"24/12/2024",
+		"13:10:23",
+		"value;;_RV_;;Equal (Compare);;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		523,
+		1,
+		"comment_text",
+		"24/12/2024",
+		"13:10:23",
+		"value;;_RV_;;Not Equal (Compare);;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		524,
+		1,
+		"comment_text",
+		"24/12/2024",
+		"13:10:23",
+		"value;;_RV_;;Greater Than;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		525,
+		1,
+		"comment_text",
+		"24/12/2024",
+		"13:10:23",
+		"value;;_RV_;;Greater Than or Equal;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		526,
+		1,
+		"comment_text",
+		"24/12/2024",
+		"13:10:23",
+		"value;;_RV_;;Less Than;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		527,
+		1,
+		"comment_text",
+		"24/12/2024",
+		"13:10:23",
+		"value;;_RV_;;Less Than or Equal;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		528,
 		1,
 		"comment_text",
 		"24/12/2024",

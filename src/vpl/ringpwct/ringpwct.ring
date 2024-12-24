@@ -51,6 +51,7 @@ C_VPL_NAME = 'RingPWCT'
 	load "else.ring"
 	load "elseif.ring"
 	load "encrypt.ring"
+	load "equal.ring"
 	load "eval.ring"
 	load "exefilename.ring"
 	load "exefolder.ring"
@@ -104,6 +105,8 @@ C_VPL_NAME = 'RingPWCT'
 	load "getstringindex.ring"
 	load "getstringlength.ring"
 	load "getsubstring.ring"
+	load "greaterthan.ring"
+	load "greaterthanorequal.ring"
 	load "hashtableclass.ring"
 	load "ifstatement.ring"
 	load "import.ring"
@@ -112,6 +115,8 @@ C_VPL_NAME = 'RingPWCT'
 	load "inputbox.ring"
 	load "insertitem.ring"
 	load "internetclass.ring"
+	load "lessthan.ring"
+	load "lessthanorequal.ring"
 	load "libcurl_easycleanup.ring"
 	load "libcurl_easyinit.ring"
 	load "libcurl_easyperform.ring"
@@ -181,6 +186,7 @@ C_VPL_NAME = 'RingPWCT'
 	load "newtimer.ring"
 	load "newtoolbar.ring"
 	load "newvideowidget.ring"
+	load "notequal.ring"
 	load "numbersandbytes.ring"
 	load "objectslib.ring"
 	load "odbcclass.ring"
@@ -441,6 +447,7 @@ C_VPL_NAME = 'RingPWCT'
 	aComponentsFilesList + (cComponentsPath + "else.ring")
 	aComponentsFilesList + (cComponentsPath + "elseif.ring")
 	aComponentsFilesList + (cComponentsPath + "encrypt.ring")
+	aComponentsFilesList + (cComponentsPath + "equal.ring")
 	aComponentsFilesList + (cComponentsPath + "eval.ring")
 	aComponentsFilesList + (cComponentsPath + "exefilename.ring")
 	aComponentsFilesList + (cComponentsPath + "exefolder.ring")
@@ -494,6 +501,8 @@ C_VPL_NAME = 'RingPWCT'
 	aComponentsFilesList + (cComponentsPath + "getstringindex.ring")
 	aComponentsFilesList + (cComponentsPath + "getstringlength.ring")
 	aComponentsFilesList + (cComponentsPath + "getsubstring.ring")
+	aComponentsFilesList + (cComponentsPath + "greaterthan.ring")
+	aComponentsFilesList + (cComponentsPath + "greaterthanorequal.ring")
 	aComponentsFilesList + (cComponentsPath + "hashtableclass.ring")
 	aComponentsFilesList + (cComponentsPath + "ifstatement.ring")
 	aComponentsFilesList + (cComponentsPath + "import.ring")
@@ -502,6 +511,8 @@ C_VPL_NAME = 'RingPWCT'
 	aComponentsFilesList + (cComponentsPath + "inputbox.ring")
 	aComponentsFilesList + (cComponentsPath + "insertitem.ring")
 	aComponentsFilesList + (cComponentsPath + "internetclass.ring")
+	aComponentsFilesList + (cComponentsPath + "lessthan.ring")
+	aComponentsFilesList + (cComponentsPath + "lessthanorequal.ring")
 	aComponentsFilesList + (cComponentsPath + "libcurl_easycleanup.ring")
 	aComponentsFilesList + (cComponentsPath + "libcurl_easyinit.ring")
 	aComponentsFilesList + (cComponentsPath + "libcurl_easyperform.ring")
@@ -571,6 +582,7 @@ C_VPL_NAME = 'RingPWCT'
 	aComponentsFilesList + (cComponentsPath + "newtimer.ring")
 	aComponentsFilesList + (cComponentsPath + "newtoolbar.ring")
 	aComponentsFilesList + (cComponentsPath + "newvideowidget.ring")
+	aComponentsFilesList + (cComponentsPath + "notequal.ring")
 	aComponentsFilesList + (cComponentsPath + "numbersandbytes.ring")
 	aComponentsFilesList + (cComponentsPath + "objectslib.ring")
 	aComponentsFilesList + (cComponentsPath + "odbcclass.ring")
