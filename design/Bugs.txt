@@ -5,14 +5,11 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-52) Changing Image width/height in (Comments) 
-	many times leads to hiding the image
-
 ===========================================================================================================================
 Status
 	* Bugs Count : 52
-	* Fixed Bugs : 51
-	* UnFixed Bugs : 1
+	* Fixed Bugs : 52
+	* UnFixed Bugs : 0
 ===========================================================================================================================
 (1)  Fixed : We created over 6 thouands steps, then using the search window
 after selecting an item in the search result list we get the next error
@@ -1664,5 +1661,12 @@ This was a logical memory leak!
 			if trim(lower(oVisualSourceFile.cFileName)) != trim(lower(cFileNameInFormDesigner)) {
 				return 
 			}
+
+===========================================================================================================================
+
+52) Fixed: Changing Image width/height in (Comments) 
+	many times leads to hiding the image
+
+	Looks like it's solved automatically while updating Ring/Qt versions
 
 ===========================================================================================================================
