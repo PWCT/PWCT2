@@ -72,7 +72,7 @@ class EnvironmentController from WindowsControllerParent
 		oView.win.blocksignals(True)
 		oView.win.setupdatesenabled(False)
 		super.Start()
-		LoadSettings()	
+		LoadSettings()
 		# Add the Default file (NoName) to the Active Files List
 			aActiveFiles + [oView.oDockGoalDesigner,parent().oVisualSourceFile.cFileName]
 			aActiveFiles[len(aActiveFiles)] + parent().oView.oStepsTree
@@ -87,7 +87,6 @@ class EnvironmentController from WindowsControllerParent
 				oView.win.tabifydockwidget(oView.oDockOutputWindow,oView.oDockFilesManager)
 			}
 		}
-
 		if lTabifyOutputAndFiles {
 			if T_LAYOUTDIRECTION = 0 {
 				oView.win.tabifydockwidget(oView.oDockOutputWindow,oView.oDockFilesManager)
@@ -96,13 +95,11 @@ class EnvironmentController from WindowsControllerParent
 			}
 			oView.oDockOutputWindow.raise()
 		}
-
 		if PWCTIsMobile(:Tabify) {
 			oView.win.tabifydockwidget(oView.oDockOutputWindow,oView.oDockFilesManager)
 			oView.win.tabifydockwidget(oView.oDockOutputWindow,oView.oDockGoalDesigner)
 			oView.oDockGoalDesigner.raise()
 		}
-
 		if IsDockForFormDesigner() {
 			FormDesignerDock()
 			if PWCTIsMobile(:Tabify) {
@@ -112,13 +109,11 @@ class EnvironmentController from WindowsControllerParent
 			}
 			oView.oDockGoalDesigner.raise()
 		}
-
 		# Set Focus to Steps Tree
 			parent().SetFocusToStepsTree()
 
 		oView.win.blocksignals(False)
 		oView.win.setupdatesenabled(True)
-
 		oView.win.showmaximized()
 
 		# WorkAround : We call this again to get the expected look
@@ -129,7 +124,6 @@ class EnvironmentController from WindowsControllerParent
 					oView.win.showmaximized()		
 				}
 			}
-
 		# We must update the font size here when the tree is visible 
 			oView.oFilesTree.UpdateFontSize()
 
@@ -139,7 +133,9 @@ class EnvironmentController from WindowsControllerParent
 			oView.win.showmaximized()
 		}
 
-		prepareDockSize()
+		if ! PWCTIsMobile(:DockSize) {
+			prepareDockSize()
+		}
 
 	func prepareDockSize
 

@@ -99,11 +99,13 @@ func CreateMobileFiles
 	oPath = new QStandardPaths
 	cPath = oPath.writableLocation(QStandardPaths_GenericDataLocation)
 	C_VERSIONFILE = cPath+"/PWCTApp/runtime/version.txt"
+
 	if fexists(C_VERSIONFILE) {
 		if read(C_VERSIONFILE) = C_MOBILEVERSION {
 			return 
 		}
 	}
+
 	oDir = new qDir() {
 		setCurrent(cPath)
 		MkDir("PWCTFiles")
@@ -122,6 +124,8 @@ func CreateMobileFiles
 	oFile.copy_2(":/vpl/components.pwct",cPath+"/PWCTApp/components.pwct")
 
 	write(C_VERSIONFILE,C_MOBILEVERSION)
+
 	//chdir(cPath)
 	//remove("pwct.ringo")
+
 	chdir(cDir)
