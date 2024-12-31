@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GBLUETOOTHDEVICEDISCOVERYAGENT_H
 #define GBLUETOOTHDEVICEDISCOVERYAGENT_H
 #include "ringqt.h"
 #include <QBluetoothDeviceDiscoveryAgent>
+
 extern "C" {
 #include "ring.h"
 }
@@ -49,6 +50,8 @@ class GBluetoothDeviceDiscoveryAgent : public QBluetoothDeviceDiscoveryAgent
     void deviceDiscoveredSlot();
     void errorSlot();
     void finishedSlot();
+
+
 
 };
 

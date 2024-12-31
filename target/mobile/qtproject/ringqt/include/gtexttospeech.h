@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GTEXTTOSPEECH_H
 #define GTEXTTOSPEECH_H
 #include "ringqt.h"
 #include <QTextToSpeech>
+
 extern "C" {
 #include "ring.h"
 }
@@ -57,6 +58,8 @@ class GTextToSpeech : public QTextToSpeech
     void stateChangedSlot();
     void voiceChangedSlot();
     void volumeChangedSlot();
+
+
 
 };
 

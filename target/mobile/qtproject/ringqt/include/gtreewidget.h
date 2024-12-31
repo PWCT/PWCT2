@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GTREEWIDGET_H
 #define GTREEWIDGET_H
 #include "ringqt.h"
 #include <QTreeWidget>
+#include <QDrag>
 extern "C" {
 #include "ring.h"
 }
@@ -105,6 +106,53 @@ class GTreeWidget : public QTreeWidget
     void itemExpandedSlot();
     void itemPressedSlot();
     void itemSelectionChangedSlot();
+
+
+
+
+protected:
+
+    void startDrag(Qt::DropActions supportedActions) override
+    {
+
+	QModelIndexList indexes = selectedIndexes();
+	QList<QPersistentModelIndex> persistentIndexes;
+ 
+	if (indexes.count() > 0) {
+
+        	QMimeData *data = model()->mimeData(indexes);
+
+      		if (!data)
+            		return;
+
+		for (int i = 0; i<indexes.count(); i++) {
+    			QModelIndex idx = indexes.at(i);
+    			persistentIndexes.append(QPersistentModelIndex(idx));
+    		}
+ 
+		QPixmap pixmap = indexes.first().data(Qt::DecorationRole).value<QPixmap>();
+		QDrag *drag = new QDrag(this);
+		drag->setPixmap(pixmap);
+		drag->setMimeData(data);
+		drag->setHotSpot(QPoint(pixmap.width()/2, pixmap.height()/2));
+ 
+		Qt::DropAction defaultDropAction = Qt::IgnoreAction;
+		if (supportedActions & Qt::MoveAction && dragDropMode() != QAbstractItemView::InternalMove)
+			defaultDropAction = Qt::MoveAction;
+ 
+		if ( drag->exec(supportedActions, defaultDropAction) == Qt::MoveAction ) {
+			for (int i = 0; i<indexes.count(); i++) {
+				QPersistentModelIndex idx = persistentIndexes.at(i);
+				if (idx.isValid()) 
+					model()->removeRow(idx.row(), idx.parent());
+				else
+					model()->removeRow(idx.row(), QModelIndex());
+			}
+		}
+	}
+
+    }
+
 
 };
 

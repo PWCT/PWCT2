@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GGUIAPPLICATION_H
 #define GGUIAPPLICATION_H
 #include "ringqt.h"
 #include <QGuiApplication>
+
 extern "C" {
 #include "ring.h"
 }
@@ -85,6 +86,8 @@ class GGuiApplication : public QGuiApplication
     void saveStateRequestSlot();
     void screenAddedSlot();
     void screenRemovedSlot();
+
+
 
 };
 

@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GACTION_H
 #define GACTION_H
 #include "ringqt.h"
 #include <QAction>
+
 extern "C" {
 #include "ring.h"
 }
@@ -22,7 +23,7 @@ class GAction : public QAction
     char cClickEvent[RINGQT_EVENT_SIZE];
 
 
-    GAction(QWidget *parent,VM *pVM );
+    GAction(QObject *parent,VM *pVM );
 
     ~GAction();
 
@@ -37,6 +38,8 @@ class GAction : public QAction
   public slots:
 
     void clickedSlot();
+
+
 
 };
 

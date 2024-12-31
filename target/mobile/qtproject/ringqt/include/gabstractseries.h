@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GABSTRACTSERIES_H
 #define GABSTRACTSERIES_H
 #include "ringqt.h"
 #include <QtCharts/QAbstractSeries>
+
 extern "C" {
 #include "ring.h"
 }
@@ -49,6 +50,8 @@ class GAbstractSeries : public QtCharts::QAbstractSeries
     void opacityChangedSlot();
     void useOpenGLChangedSlot();
     void visibleChangedSlot();
+
+
 
 };
 

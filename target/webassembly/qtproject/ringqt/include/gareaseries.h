@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GAREASERIES_H
 #define GAREASERIES_H
 #include "ringqt.h"
 #include <QtCharts/QAreaSeries>
+
 extern "C" {
 #include "ring.h"
 }
@@ -81,6 +82,8 @@ class GAreaSeries : public QtCharts::QAreaSeries
     void pointLabelsVisibilityChangedSlot();
     void pressedSlot();
     void releasedSlot();
+
+
 
 };
 

@@ -2,57 +2,13 @@
 
 #ifndef ring_generallib_extension_h
 	#define ring_generallib_extension_h
-	#ifndef _WIN32
-		#if RING_MSDOS
-		#else
-			#include <stdint.h>
-		#endif
-	#endif
 	/* Constants */
 	#define C_EXPRCODESIZE 200
 
 	RING_API void ring_vm_generallib_loadfunctions ( RingState *pRingState ) ;
 	/* General */
 
-	void ring_vm_generallib_len ( void *pPointer ) ;
-
-	void ring_vm_generallib_clock ( void *pPointer ) ;
-
-	void ring_vm_generallib_lower ( void *pPointer ) ;
-
-	void ring_vm_generallib_upper ( void *pPointer ) ;
-
-	void ring_vm_generallib_input ( void *pPointer ) ;
-
-	void ring_vm_generallib_ascii ( void *pPointer ) ;
-
-	void ring_vm_generallib_char ( void *pPointer ) ;
-
-	void ring_vm_generallib_date ( void *pPointer ) ;
-
-	void ring_vm_generallib_time ( void *pPointer ) ;
-
-	void ring_vm_generallib_filename ( void *pPointer ) ;
-
-	void ring_vm_generallib_getchar ( void *pPointer ) ;
-
-	void ring_vm_generallib_random ( void *pPointer ) ;
-
-	void ring_vm_generallib_timelist ( void *pPointer ) ;
-
-	void ring_vm_generallib_adddays ( void *pPointer ) ;
-
-	void ring_vm_generallib_diffdays ( void *pPointer ) ;
-
 	void ring_vm_generallib_version ( void *pPointer ) ;
-
-	void ring_vm_generallib_clockspersecond ( void *pPointer ) ;
-
-	void ring_vm_generallib_prevfilename ( void *pPointer ) ;
-
-	int ring_vm_generallib_adddays_isleapyear ( int nYear ) ;
-
-	void ring_vm_generallib_srandom ( void *pPointer ) ;
 
 	void ring_vm_generallib_nothing ( void *pPointer ) ;
 
@@ -91,6 +47,10 @@
 	void ring_vm_generallib_list2str ( void *pPointer ) ;
 
 	void ring_vm_generallib_str2hexcstyle ( void *pPointer ) ;
+
+	void ring_vm_generallib_ascii ( void *pPointer ) ;
+
+	void ring_vm_generallib_char ( void *pPointer ) ;
 	/* String */
 
 	void ring_vm_generallib_left ( void *pPointer ) ;
@@ -103,10 +63,16 @@
 
 	void ring_vm_generallib_substr ( void *pPointer ) ;
 
+	void ring_vm_generallib_lower ( void *pPointer ) ;
+
+	void ring_vm_generallib_upper ( void *pPointer ) ;
+
 	void ring_vm_generallib_lines ( void *pPointer ) ;
 
 	void ring_vm_generallib_strcmp ( void *pPointer ) ;
-	/* Functional */
+
+	void ring_vm_generallib_len ( void *pPointer ) ;
+	/* Eval */
 
 	void ring_vm_generallib_eval ( void *pPointer ) ;
 	/* Error Handling */
@@ -114,6 +80,10 @@
 	void ring_vm_generallib_raise ( void *pPointer ) ;
 
 	void ring_vm_generallib_assert ( void *pPointer ) ;
+
+	void ring_vm_generallib_filename ( void *pPointer ) ;
+
+	void ring_vm_generallib_prevfilename ( void *pPointer ) ;
 	/* Check Characters */
 
 	void ring_vm_generallib_isfunc ( void *pPointer,int (*pFunc)(int) ) ;
@@ -139,7 +109,7 @@
 	void ring_vm_generallib_isupper ( void *pPointer ) ;
 
 	void ring_vm_generallib_isxdigit ( void *pPointer ) ;
-	/* Garbage Collector & Variable Pointer */
+	/* Low Level */
 
 	void ring_vm_generallib_callgc ( void *pPointer ) ;
 
@@ -193,7 +163,11 @@
 	void ring_vm_generallib_state_stringtokens ( void *pPointer ) ;
 
 	void ring_vm_generallib_state_scannererror ( void *pPointer ) ;
-	/* Ring See and Give */
+
+	void ring_vm_generallib_state_runcodeatins ( void *pPointer ) ;
+
+	void ring_vm_generallib_state_resume ( void *pPointer ) ;
+	/* Ring Input/Output */
 
 	void ring_vm_generallib_see ( void *pPointer ) ;
 
@@ -208,7 +182,25 @@
 	void ring_vm_generallib_getnumber ( void *pPointer ) ;
 
 	void ring_vm_generallib_customprint ( void *pPointer,const char *cCommand ) ;
-	/* Performance */
 
-	void ring_vm_generallib_checkoverflow ( void *pPointer ) ;
+	void ring_vm_generallib_input ( void *pPointer ) ;
+
+	void ring_vm_generallib_getchar ( void *pPointer ) ;
+	/* Date and Time */
+
+	void ring_vm_generallib_clock ( void *pPointer ) ;
+
+	void ring_vm_generallib_clockspersecond ( void *pPointer ) ;
+
+	void ring_vm_generallib_time ( void *pPointer ) ;
+
+	void ring_vm_generallib_timelist ( void *pPointer ) ;
+
+	void ring_vm_generallib_date ( void *pPointer ) ;
+
+	void ring_vm_generallib_adddays ( void *pPointer ) ;
+
+	void ring_vm_generallib_diffdays ( void *pPointer ) ;
+
+	int ring_vm_generallib_adddays_isleapyear ( int nYear ) ;
 #endif

@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GABSTRACTSOCKET_H
 #define GABSTRACTSOCKET_H
 #include "ringqt.h"
 #include <QAbstractSocket>
+
 extern "C" {
 #include "ring.h"
 }
@@ -57,6 +58,8 @@ class GAbstractSocket : public QAbstractSocket
     void hostFoundSlot();
     void proxyAuthenticationRequiredSlot();
     void stateChangedSlot();
+
+
 
 };
 

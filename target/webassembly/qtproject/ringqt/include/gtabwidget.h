@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GTABWIDGET_H
 #define GTABWIDGET_H
 #include "ringqt.h"
 #include <QTabWidget>
+
 extern "C" {
 #include "ring.h"
 }
@@ -41,6 +42,8 @@ class GTabWidget : public QTabWidget
 
     void currentChangedSlot();
     void tabCloseRequestedSlot(int p1);
+
+
 
 };
 

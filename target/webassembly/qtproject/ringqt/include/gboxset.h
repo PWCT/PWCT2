@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GBOXSET_H
 #define GBOXSET_H
 #include "ringqt.h"
 #include <QtCharts>
+
 extern "C" {
 #include "ring.h"
 }
@@ -73,6 +74,8 @@ class GBoxSet : public QtCharts::QBoxSet
     void releasedSlot();
     void valueChangedSlot();
     void valuesChangedSlot();
+
+
 
 };
 

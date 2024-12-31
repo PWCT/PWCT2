@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GTCPSERVER_H
 #define GTCPSERVER_H
 #include "ringqt.h"
 #include <QTcpServer>
+
 extern "C" {
 #include "ring.h"
 }
@@ -41,6 +42,8 @@ class GTcpServer : public QTcpServer
 
     void acceptErrorSlot();
     void newConnectionSlot();
+
+
 
 };
 

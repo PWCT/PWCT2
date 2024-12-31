@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GTEXTBROWSER_H
 #define GTEXTBROWSER_H
 #include "ringqt.h"
 #include <QTextBrowser>
+
 extern "C" {
 #include "ring.h"
 }
@@ -57,6 +58,8 @@ class GTextBrowser : public QTextBrowser
     void highlightedSlot();
     void historyChangedSlot();
     void sourceChangedSlot();
+
+
 
 };
 

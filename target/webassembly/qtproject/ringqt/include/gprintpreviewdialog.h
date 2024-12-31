@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GPRINTPREVIEWDIALOG_H
 #define GPRINTPREVIEWDIALOG_H
 #include "ringqt.h"
 #include <QPrintPreviewDialog>
+
 extern "C" {
 #include "ring.h"
 }
@@ -37,6 +38,8 @@ class GPrintPreviewDialog : public QPrintPreviewDialog
   public slots:
 
     void paintRequestedSlot();
+
+
 
 };
 

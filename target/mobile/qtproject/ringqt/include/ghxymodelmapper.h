@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GHXYMODELMAPPER_H
 #define GHXYMODELMAPPER_H
 #include "ringqt.h"
 #include <QtCharts>
+
 extern "C" {
 #include "ring.h"
 }
@@ -57,6 +58,8 @@ class GHXYModelMapper : public QtCharts::QHXYModelMapper
     void seriesReplacedSlot();
     void xRowChangedSlot();
     void yRowChangedSlot();
+
+
 
 };
 

@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GTABBAR_H
 #define GTABBAR_H
 #include "ringqt.h"
 #include <QTabBar>
+
 extern "C" {
 #include "ring.h"
 }
@@ -45,6 +46,8 @@ class GTabBar : public QTabBar
     void currentChangedSlot();
     void tabCloseRequestedSlot();
     void tabMovedSlot();
+
+
 
 };
 

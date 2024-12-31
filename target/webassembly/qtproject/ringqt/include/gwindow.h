@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GWINDOW_H
 #define GWINDOW_H
 #include "ringqt.h"
 #include <QWindow>
+
 extern "C" {
 #include "ring.h"
 }
@@ -105,6 +106,8 @@ class GWindow : public QWindow
     void windowTitleChangedSlot();
     void xChangedSlot();
     void yChangedSlot();
+
+
 
 };
 

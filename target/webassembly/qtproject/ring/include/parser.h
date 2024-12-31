@@ -72,7 +72,7 @@
 	#define RING_PARSER_ERROR_NEXT "Error (C5) : Unclosed control structure, next is missing"
 	#define RING_PARSER_ERROR_FUNCNAME "Error (C6) : Error in function name"
 	#define RING_PARSER_ERROR_LISTITEM "Error (C7) : Error in list items"
-	#define RING_PARSER_ERROR_MISSPARENTHESES "Error (C8) : Parentheses ')' is missing "
+	#define RING_PARSER_ERROR_MISSPARENTHESES "Error (C8) : Parentheses ')' is missing"
 	#define RING_PARSER_ERROR_MISSBRACKETS "Error (C9) : Brackets ']' is missing "
 	#define RING_PARSER_ERROR_PRENTCLASSNAME "Error (C10) : Error in parent class name"
 	#define RING_PARSER_ERROR_EXPROPERATOR "Error (C11) : Error in expression operator"
@@ -94,6 +94,8 @@
 	#define RING_PARSER_ERROR_SYNTAXERROR "Error (C27) : Syntax Error!"
 	#define RING_PARSER_ERROR_EXPRESSIONISEXPECTED "Error (C28) : Expression is expected!"
 	#define RING_PARSER_ERROR_BRACEISMISSINGTOSTARTANONFUNC "Error (C29) : Braces are missing to define anonymous function!"
+	#define RING_PARSER_ERROR_ARGREDEFINE "Error (C30) : Argument redefinition, argument is already defined!"
+	#define RING_PARSER_ERROR_EXPECTPARENTHESES "Error (C31) : Parentheses '(' is expected"
 	/* Constants */
 	#define RING_PARSER_NUMBERLENGTH 97
 	/* Packages List */
@@ -143,6 +145,7 @@
 	#define RING_RULE_PARALISTEPSILON "Rule : ParaList --> Epsilon"
 	#define RING_RULE_PARALISTIDENTIFIER "Rule : ParaList --> Identifier {',' Identifier}"
 	#define RING_RULE_LIST "Rule : List --> '[' Expr { ',' Expr } ']'"
+	#define RING_RULE_EXPRISLOGICAND "Rule : Expr --> LogicAND"
 	#define RING_RULE_EXPRISLOGICNOT "Rule : Expr --> LogicNot"
 	#define RING_RULE_EXPRANDEXPR "Rule : Expr --> Expr 'And' Expr"
 	#define RING_RULE_EXPROREXPR "Rule : Expr --> Expr 'Or' Expr"
@@ -219,6 +222,8 @@
 	int ring_parser_paralist ( Parser *pParser ) ;
 
 	int ring_parser_expr ( Parser *pParser ) ;
+
+	int ring_parser_logicand ( Parser *pParser ) ;
 
 	int ring_parser_logicnot ( Parser *pParser ) ;
 

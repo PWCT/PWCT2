@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GTREEVIEW_H
 #define GTREEVIEW_H
 #include "ringqt.h"
 #include <QTreeView>
+
 extern "C" {
 #include "ring.h"
 }
@@ -65,6 +66,8 @@ class GTreeView : public QTreeView
     void enteredSlot();
     void pressedSlot();
     void viewportEnteredSlot();
+
+
 
 };
 

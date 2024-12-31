@@ -36,8 +36,7 @@
 	void ring_vm_os_system ( void *pPointer ) ;
 
 	void ring_vm_os_shutdown ( void *pPointer ) ;
-	#if RING_MSDOS
-	#else
+	#if RING_EXTRAOSFUNCTIONS
 		/* Environment Variables */
 
 		void ring_vm_os_sysget ( void *pPointer ) ;
@@ -51,11 +50,12 @@
 		void ring_vm_os_uptime ( void *pPointer ) ;
 
 		void ring_vm_os_randomize ( void *pPointer ) ;
+
+		void ring_vm_os_syssleep ( void *pPointer ) ;
 	#endif
 	#define RING_VM_POINTER_LIBNAME "os"
 	#define RING_VM_UNSUPPORTEDFUNCTION "Warning: This function is not supported in this build!"
 	#ifdef _WIN32
-		#include "windows.h"
 		typedef int (WINAPI *LPFN_ISWOW64PROCESS) (HANDLE, PBOOL); ;
 		static LPFN_ISWOW64PROCESS fnCheckWindows64  ;
 		#define ring_vm_os_gettime clock_gettime
@@ -67,6 +67,7 @@
 			/* Mac OS X */
 			#include <mach-o/dyld.h>
 			#include <mach/mach_time.h>
+			#include <unistd.h>
 		#else
 			#define ring_vm_os_gettime clock_gettime
 		#endif
@@ -77,6 +78,10 @@
 				#define CLOCK_MONOTONIC_RAW 0
 			#endif
 			#define CLOCK_UPTIME CLOCK_MONOTONIC_RAW
+		#endif
+		/* For nanosleep */
+		#if _POSIX_C_SOURCE >= 199309L
+			#include <time.h>
 		#endif
 	#endif
 #endif

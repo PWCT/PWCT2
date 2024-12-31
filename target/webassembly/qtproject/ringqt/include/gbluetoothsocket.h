@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GBLUETOOTHSOCKET_H
 #define GBLUETOOTHSOCKET_H
 #include "ringqt.h"
 #include <QBluetoothSocket>
+
 extern "C" {
 #include "ring.h"
 }
@@ -49,6 +50,8 @@ class GBluetoothSocket : public QBluetoothSocket
     void disconnectedSlot();
     void errorSlot();
     void stateChangedSlot();
+
+
 
 };
 

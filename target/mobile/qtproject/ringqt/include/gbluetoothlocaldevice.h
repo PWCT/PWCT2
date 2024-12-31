@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GBLUETOOTHLOCALDEVICE_H
 #define GBLUETOOTHLOCALDEVICE_H
 #include "ringqt.h"
 #include <QBluetoothLocalDevice>
+
 extern "C" {
 #include "ring.h"
 }
@@ -61,6 +62,8 @@ class GBluetoothLocalDevice : public QBluetoothLocalDevice
     void pairingDisplayConfirmationSlot();
     void pairingDisplayPinCodeSlot();
     void pairingFinishedSlot();
+
+
 
 };
 

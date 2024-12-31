@@ -7,10 +7,10 @@
 	#define RING_OBJFILE_READFROMFILE 1
 	#define RING_OBJFILE_READFROMSTRING 2
 	/* Embedded Object */
-	#define RING_OBJFILE_ITEMSPERFUNCTION 1000
-	#define RING_OBJFILE_ITEMSPERFUNCTION2 100
+	#define RING_OBJFILE_ITEMSPERFUNCTION 100000
+	#define RING_OBJFILE_ITEMSPERFUNCTION2 100000
 	/* Version */
-	#define RING_OBJFILE_VERSION "# OBJECT 1.20"
+	#define RING_OBJFILE_VERSION "# OBJECT 1.21"
 	#define RING_OBJFILE_VERSIONSTRINGSIZE 13
 	/* Key */
 	#define RING_OBJFILE_KEYSIZE 10
@@ -46,4 +46,6 @@
 	void ring_objfile_writeCfile ( RingState *pRingState ) ;
 
 	int ring_objfile_writelistcode ( List *pList,FILE *fCode,int nList,int lSeparate,int nFunction,int nItemsPerFunction ) ;
+
+	void ring_objfile_writebytecode ( List *pList,FILE *fCode ) ;
 #endif

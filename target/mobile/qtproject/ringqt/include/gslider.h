@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GSLIDER_H
 #define GSLIDER_H
 #include "ringqt.h"
 #include <QSlider>
+
 extern "C" {
 #include "ring.h"
 }
@@ -57,6 +58,8 @@ class GSlider : public QSlider
     void sliderPressedSlot();
     void sliderReleasedSlot();
     void valueChangedSlot();
+
+
 
 };
 

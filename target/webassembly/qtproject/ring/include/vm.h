@@ -6,52 +6,86 @@
 	**  Data 
 	**  Stack Size 
 	*/
-	#if RING_MSDOS
-		#define RING_VM_STACK_SIZE 256
-		#define RING_VM_STACK_CHECKOVERFLOW 253
+	#if RING_LOWMEM
+		#define RING_VM_STACK_SIZE 32
+		#define RING_VM_STACK_CHECKOVERFLOW 30
+		#define RING_VM_FREE_STACK_IN_CLASS_REGION_AFTER 24
 	#else
 		#define RING_VM_STACK_SIZE 1004
 		#define RING_VM_STACK_CHECKOVERFLOW 1000
+		#define RING_VM_FREE_STACK_IN_CLASS_REGION_AFTER 100
 	#endif
-	#define RING_VM_FREE_STACK_IN_CLASS_REGION_AFTER 100
-	#define RING_VM_BC_ITEMS_COUNT 4
+	#define RING_VM_ARGCACHE_SIZE RING_VM_STACK_SIZE
+	#define RING_VM_BC_ITEMS_COUNT 2
 	#define RING_VM_MAXDIGITSINNUMBER 15
+	/* Check if we can use double in the byte code */
+	#if RING_USEDOUBLEINBYTECODE
+		#define RING_BYTECODEDOUBLE double
+	#else
+		#define RING_BYTECODEDOUBLE float
+	#endif
 	/* Register Type */
-	#define RING_VM_REGTYPE_NOTHING 0
-	#define RING_VM_REGTYPE_INT 1
-	#define RING_VM_REGTYPE_DOUBLE 2
-	#define RING_VM_REGTYPE_STRING 3
-	#define RING_VM_REGTYPE_POINTER 4
+	#define RING_VM_REGTYPE_INT 0
+	#define RING_VM_REGTYPE_DOUBLE 1
+	#define RING_VM_REGTYPE_STRING 2
+	#define RING_VM_REGTYPE_POINTER 3
+	#define RING_VM_REGTYPE_DEFAULT RING_VM_REGTYPE_INT
 	typedef union Register {
-		int aNumber[2]  ;
 		int iNumber  ;
-		String *pString  ;
-		double dNumber  ;
 		void *pPointer  ;
+		const char *pString  ;
+		RING_BYTECODEDOUBLE dNumber  ;
 	} Register ;
 	typedef struct ByteCode {
-		unsigned char nOPCode  ;
-		unsigned char nFlagReg  ;
-		unsigned int nIntReg  ;
-		unsigned int nInsSize:4  ;
-		unsigned int nReg1Type:3  ;
-		unsigned int nReg2Type:3  ;
-		unsigned int nReg3Type:3  ;
-		unsigned int nReg4Type:3  ;
+		unsigned int nOPCode: 8  ;
+		unsigned int lFlagReg: 1  ;
+		unsigned int lFlagReg2: 1  ;
+		unsigned int lLiteral: 1  ;
+		unsigned int lUnused: 1  ;
+		unsigned int nReg1Type: 2  ;
+		unsigned int nReg2Type: 2  ;
+		unsigned int nSmallIntReg: 16  ;
+		unsigned int nIntReg: 32  ;
 		Register aReg[RING_VM_BC_ITEMS_COUNT]  ;
 	} ByteCode ;
+	typedef struct CFunction {
+		const char *cName  ;
+		void (*pFunc)(void *) ;
+		struct CFunction *pNext  ;
+	} CFunction ;
+	typedef struct FuncCall {
+		const char *cName  ;
+		const char *cFileName  ;
+		const char *cNewFileName  ;
+		List *pTempMem  ;
+		void (*pFunc)(void *) ;
+		VMState *pVMState  ;
+		unsigned int nPC  ;
+		unsigned int nSP  ;
+		unsigned int nLineNumber  ;
+		unsigned int nCallerPC  ;
+		unsigned int nListStart  ;
+		unsigned int nForStep  ;
+		unsigned int nExitMark  ;
+		unsigned int nLoopMark  ;
+		unsigned int nCurrentGlobalScope  ;
+		unsigned int nActiveScopeID  ;
+		unsigned int nNestedLists  ;
+		unsigned int nParaCount  ;
+		char nType  ;
+		char nStatus  ;
+		char nLoadAddressScope  ;
+		char lMethod  ;
+	} FuncCall ;
 	typedef struct VM {
 		RingState *pRingState  ;
 		List *pCode  ;
 		List *pFunctionsMap  ;
 		List *pClassesMap  ;
-		List *pMem  ;
 		List *pPackagesMap  ;
 		List *pTempMem  ;
 		List *pNestedLists  ;
 		List *pPCBlockFlag  ;
-		List *pFuncCallList  ;
-		List *pCFunctionsList  ;
 		List *pExitMark  ;
 		List *pLoopMark  ;
 		List *pTry  ;
@@ -69,19 +103,23 @@
 		List *pGlobalScopes  ;
 		List *pActiveGlobalScopes  ;
 		List *pDeleteLater  ;
+		List *pDefinedGlobals  ;
+		List *pTrackedVariables  ;
 		String *pPackageName  ;
 		String *pTrace  ;
 		ByteCode *pByteCode  ;
 		ByteCode *pByteCodeIR  ;
-		char *cFileName  ;
-		char *cPrevFileName  ;
-		char *cFileNameInClassRegion  ;
+		const char *cFileName  ;
+		const char *cPrevFileName  ;
+		const char *cFileNameInClassRegion  ;
 		void *pGetSetObject  ;
 		void *pAssignment  ;
+		void *(*pFuncMutexCreate)(void) ;
 		void (*pFuncMutexDestroy)(void *) ;
 		void (*pFuncMutexLock)(void *) ;
 		void (*pFuncMutexUnlock)(void *) ;
 		void *pMutex  ;
+		CFunction *pCFunction  ;
 		unsigned int nCurrentGlobalScope  ;
 		unsigned int nOPCode  ;
 		unsigned int nSP  ;
@@ -89,16 +127,19 @@
 		unsigned int nListStart  ;
 		unsigned int nBlockCounter  ;
 		unsigned int nFuncSP  ;
-		unsigned int nFuncExecute  ;
+		unsigned int nCurrentFuncCall  ;
+		unsigned int nCurrentScope  ;
 		unsigned int nVarScope  ;
 		unsigned int nScopeID  ;
 		unsigned int nActiveScopeID  ;
-		unsigned int nActiveCatch  ;
 		unsigned int nLoadAddressScope  ;
 		unsigned int nEvalReallocationSize  ;
 		unsigned int nCFuncParaCount  ;
+		unsigned int nCFuncSP  ;
 		unsigned int nEvalReturnPC  ;
 		unsigned int nPC  ;
+		unsigned int nPausePC  ;
+		unsigned int nArgCacheCount  ;
 		unsigned char nInsideEval  ;
 		unsigned char nInClassRegion  ;
 		unsigned char nGetSetObjType  ;
@@ -110,12 +151,11 @@
 		unsigned char nTraceEvent  ;
 		unsigned char nEvalInScope  ;
 		unsigned char nNoSetterMethod  ;
+		unsigned int lActiveCatch: 1  ;
 		unsigned int lCallMainFunction: 1  ;
-		unsigned int lUsePushPLocal: 1  ;
 		unsigned int lCheckOverFlow: 1  ;
 		unsigned int lExitFlag: 1  ;
 		unsigned int lCheckBraceError: 1  ;
-		unsigned int lDontMoveToPrevScope: 1  ;
 		unsigned int lSelfLoadA: 1  ;
 		unsigned int lCallMethod: 1  ;
 		unsigned int lInsideBraceFlag: 1  ;
@@ -134,28 +174,13 @@
 		unsigned int lPassError: 1  ;
 		unsigned int lHideErrorMsg: 1  ;
 		unsigned int lFullStringToNum: 1  ;
+		unsigned int lSubStringToNumError: 1  ;
+		unsigned int lOptionalLoop: 1  ;
 		Item aStack[RING_VM_STACK_SIZE]  ;
+		FuncCall aFuncCall[RING_VM_STACK_SIZE]  ;
+		List aScopes[RING_VM_STACK_SIZE]  ;
+		List *pArgCache[RING_VM_ARGCACHE_SIZE]  ;
 	} VM ;
-	typedef struct FuncCall {
-		const char *cName  ;
-		char *cFileName  ;
-		char *cNewFileName  ;
-		List *pTempMem  ;
-		List *pNestedLists  ;
-		void (*pFunc)(void *) ;
-		VMState *pVMState  ;
-		unsigned int nPC  ;
-		unsigned int nSP  ;
-		unsigned int nLineNumber  ;
-		unsigned int nCallerPC  ;
-		unsigned int nFuncExec  ;
-		unsigned int nTempMemSizeAtStart  ;
-		unsigned int nListStart  ;
-		char nType  ;
-		char nStatus  ;
-		char nLoadAddressScope  ;
-		char lMethod  ;
-	} FuncCall ;
 	/*
 	**  Macro & Constants 
 	**  Stack 
@@ -164,23 +189,25 @@
 	#define RING_VM_SP_INC pVM->nSP++ ;
 	#define RING_VM_SP_VALUE pVM->nSP
 	/* Add */
-	#define RING_VM_STACK_PUSHC RING_VM_SP_INC ; ring_itemarray_setstring2(pVM->aStack, pVM->nSP, ring_string_get(pVM->pByteCodeIR->aReg[0].pString), ring_string_size(pVM->pByteCodeIR->aReg[0].pString)  )
-	#define RING_VM_STACK_PUSHN RING_VM_SP_INC ; ring_itemarray_setdouble(pVM->aStack, pVM->nSP , pVM->pByteCodeIR->aReg[0].dNumber)
-	#define RING_VM_STACK_PUSHP RING_VM_SP_INC ; ring_itemarray_setpointer(pVM->aStack, pVM->nSP , pVM->pByteCodeIR->aReg[0].pPointer )
+	#define RING_VM_STACK_PUSHC RING_VM_SP_INC ; ring_itemarray_setstring_gc(pVM->pRingState,pVM->aStack, pVM->nSP, pVM->pByteCodeIR->aReg[0].pString)
+	#define RING_VM_STACK_PUSHNL RING_VM_SP_INC ; ring_itemarray_setstring_gc(pVM->pRingState,pVM->aStack, pVM->nSP, "\n")
+	#define RING_VM_STACK_PUSHN RING_VM_SP_INC ; ring_itemarray_setdouble_gc(pVM->pRingState,pVM->aStack, pVM->nSP , pVM->pByteCodeIR->aReg[0].dNumber)
+	#define RING_VM_STACK_PUSHP RING_VM_SP_INC ; ring_itemarray_setpointer_gc(pVM->pRingState,pVM->aStack, pVM->nSP , pVM->pByteCodeIR->aReg[0].pPointer )
 	/* Note, use RING_VM_STACK_OBJTYPE to read/write the pointer type */
-	#define RING_VM_STACK_TRUE ring_itemarray_setdouble(pVM->aStack,pVM->nSP, 1)
-	#define RING_VM_STACK_FALSE ring_itemarray_setdouble(pVM->aStack,pVM->nSP, 0)
-	#define RING_VM_STACK_PUSHCVAR ring_itemarray_setstring2(pVM->aStack,pVM->nSP,ring_list_getstring(pVar,RING_VAR_VALUE),ring_list_getstringsize(pVar,RING_VAR_VALUE))
-	#define RING_VM_STACK_PUSHNVAR ring_itemarray_setdouble(pVM->aStack,pVM->nSP,ring_list_getdouble(pVar,RING_VAR_VALUE))
-	#define RING_VM_STACK_PUSHPVALUE(pPointer) RING_VM_SP_INC ; ring_itemarray_setpointer(pVM->aStack, pVM->nSP, pPointer)
-	#define RING_VM_STACK_PUSHCVALUE(cString) RING_VM_SP_INC ; ring_itemarray_setstring(pVM->aStack, pVM->nSP, cString)
-	#define RING_VM_STACK_PUSHNVALUE(nNumber) RING_VM_SP_INC ; ring_itemarray_setdouble(pVM->aStack, pVM->nSP, nNumber)
-	#define RING_VM_STACK_SETCVALUE(cString) ring_itemarray_setstring(pVM->aStack, pVM->nSP, cString)
-	#define RING_VM_STACK_SETNVALUE(nNumber) ring_itemarray_setdouble(pVM->aStack, pVM->nSP, nNumber)
-	#define RING_VM_STACK_SETPVALUE(pPointer) ring_itemarray_setpointer(pVM->aStack, pVM->nSP, pPointer)
-	#define RING_VM_STACK_SETCVALUE2(cString,nSize) ring_itemarray_setstring2(pVM->aStack, pVM->nSP, cString,nSize)
-	#define RING_VM_STACK_SETCSIZE(nSize) ring_itemarray_setstring2(pVM->aStack, pVM->nSP, NULL,nSize)
-	#define RING_VM_STACK_PUSHCVALUE2(cString,nSize) RING_VM_SP_INC ; ring_itemarray_setstring2(pVM->aStack, pVM->nSP,cString,nSize)
+	#define RING_VM_STACK_TRUE ring_itemarray_setdouble_gc(pVM->pRingState,pVM->aStack,pVM->nSP, 1)
+	#define RING_VM_STACK_FALSE ring_itemarray_setdouble_gc(pVM->pRingState,pVM->aStack,pVM->nSP, 0)
+	#define RING_VM_STACK_PUSHCVAR ring_itemarray_setstring2_gc(pVM->pRingState,pVM->aStack,pVM->nSP,ring_list_getstring(pVar,RING_VAR_VALUE),ring_list_getstringsize(pVar,RING_VAR_VALUE))
+	#define RING_VM_STACK_PUSHNVAR ring_itemarray_setdouble_gc(pVM->pRingState,pVM->aStack,pVM->nSP,ring_list_getdouble(pVar,RING_VAR_VALUE))
+	#define RING_VM_STACK_PUSHPVALUE(pPointer) RING_VM_SP_INC ; ring_itemarray_setpointer_gc(pVM->pRingState,pVM->aStack, pVM->nSP, pPointer)
+	#define RING_VM_STACK_PUSHCVALUE(cString) RING_VM_SP_INC ; ring_itemarray_setstring_gc(pVM->pRingState,pVM->aStack, pVM->nSP, cString)
+	#define RING_VM_STACK_PUSHNVALUE(nNumber) RING_VM_SP_INC ; ring_itemarray_setdouble_gc(pVM->pRingState,pVM->aStack, pVM->nSP, nNumber)
+	#define RING_VM_STACK_SETCVALUE(cString) ring_itemarray_setstring_gc(pVM->pRingState,pVM->aStack, pVM->nSP, cString)
+	#define RING_VM_STACK_SETNVALUE(nNumber) ring_itemarray_setdouble_gc(pVM->pRingState,pVM->aStack, pVM->nSP, nNumber)
+	#define RING_VM_STACK_SETPVALUE(pPointer) ring_itemarray_setpointer_gc(pVM->pRingState,pVM->aStack, pVM->nSP, pPointer)
+	#define RING_VM_STACK_SETCVALUE2(cString,nSize) ring_itemarray_setstring2_gc(pVM->pRingState,pVM->aStack, pVM->nSP, cString,nSize)
+	#define RING_VM_STACK_SETCSIZE(nSize) ring_itemarray_setstring2_gc(pVM->pRingState,pVM->aStack, pVM->nSP, NULL,nSize)
+	#define RING_VM_STACK_PUSHCVALUE2(cString,nSize) RING_VM_SP_INC ; ring_itemarray_setstring2_gc(pVM->pRingState,pVM->aStack, pVM->nSP,cString,nSize)
+	#define RING_VM_STACK_SETPVALUEAT(nIndex,pPointer) ring_itemarray_setpointer_gc(pVM->pRingState,pVM->aStack, nIndex, pPointer)
 	/* Check */
 	#define RING_VM_STACK_ISSTRING ring_itemarray_isstring(pVM->aStack,pVM->nSP)
 	#define RING_VM_STACK_ISNUMBER ring_itemarray_isnumber(pVM->aStack,pVM->nSP)
@@ -196,12 +223,14 @@
 	#define RING_VM_STACK_READN ring_itemarray_getdouble(pVM->aStack,pVM->nSP)
 	#define RING_VM_STACK_READP ring_itemarray_getpointer(pVM->aStack,pVM->nSP)
 	#define RING_VM_STACK_OBJTYPE pVM->aStack[pVM->nSP].nObjectType
+	#define RING_VM_STACK_ASSIGNMENTFLAG pVM->aStack[pVM->nSP].lAssignment
 	#define RING_VM_STACK_PREVOBJTYPE pVM->aStack[pVM->nSP-1].nObjectType
 	#define RING_VM_STACK_READCVALUE(nIndex) ring_itemarray_getstring(pVM->aStack,nIndex)
 	#define RING_VM_STACK_STRINGSIZEVALUE(nIndex) ring_itemarray_getstringsize(pVM->aStack,nIndex)
 	#define RING_VM_STACK_READNVALUE(nIndex) ring_itemarray_getdouble(pVM->aStack,nIndex)
 	#define RING_VM_STACK_READPVALUE(nIndex) ring_itemarray_getpointer(pVM->aStack,nIndex)
 	#define RING_VM_STACK_OBJTYPEVALUE(nIndex) pVM->aStack[nIndex].nObjectType
+	#define RING_VM_STACK_ISASSIGNMENTDEST ( (pVM->pAssignment == RING_VM_STACK_READP) && RING_VM_STACK_ASSIGNMENTFLAG )
 	/* Delete */
 	#define RING_VM_STACK_POP pVM->nSP--
 	/* Objects/Pointer  - Type */
@@ -209,9 +238,6 @@
 	#define RING_OBJTYPE_VARIABLE 1
 	#define RING_OBJTYPE_LISTITEM 2
 	#define RING_OBJTYPE_SUBSTRING 3
-	/* Stack List */
-	#define RING_STACKLIST_POINTER 1
-	#define RING_STACKLIST_OBJTYPE 2
 	/* Variable Structure */
 	#define RING_VAR_LISTSIZE 5
 	#define RING_VAR_NAME 1
@@ -219,14 +245,11 @@
 	#define RING_VAR_VALUE 3
 	#define RING_VAR_PVALUETYPE 4
 	#define RING_VAR_PRIVATEFLAG 5
-	/* Number of global variables defined by the VM like True, False, cErrorMsg */
-	#define RING_VM_INTERNALGLOBALSCOUNT 15
 	/* Global variable position */
 	#define RING_GLOBALVARPOS_GETTEMPVAR 5
 	#define RING_GLOBALVARPOS_ERRORMSG 6
 	#define RING_GLOBALVARPOS_SETTEMPVAR 7
-	#define RING_GLOBALVARPOS_TEMPFALG 8
-	#define RING_GLOBALVARPOS_THIS 12
+	#define RING_GLOBALVARPOS_THIS 11
 	/* Variable Type */
 	#define RING_VM_NULL 0
 	#define RING_VM_STRING 1
@@ -239,16 +262,14 @@
 	#define RING_VM_DELETELASTINSTRUCTION ring_vm_deletebytecode(pVM,RING_VM_INSTRUCTIONSCOUNT); pVM->pRingState->nInstructionsCount--
 	/* IR (Instruction Register) */
 	#define RING_VM_JUMP pVM->nPC = pVM->pByteCodeIR->aReg[0].iNumber
-	#define RING_VM_IR_READC ring_string_get(pVM->pByteCodeIR->aReg[0].pString)
-	#define RING_VM_IR_READCVALUE(nReg) ring_string_get(pVM->pByteCodeIR->aReg[nReg].pString)
-	#define RING_VM_IR_READCVALUESIZE(nReg) ring_string_size(pVM->pByteCodeIR->aReg[nReg].pString)
+	#define RING_VM_IR_READC pVM->pByteCodeIR->aReg[0].pString
+	#define RING_VM_IR_READCVALUE(nReg) pVM->pByteCodeIR->aReg[nReg].pString
 	#define RING_VM_IR_READP pVM->pByteCodeIR->aReg[0].pPointer
 	#define RING_VM_IR_READPVALUE(nReg) pVM->pByteCodeIR->aReg[nReg].pPointer
 	#define RING_VM_IR_READI pVM->pByteCodeIR->aReg[0].iNumber
 	#define RING_VM_IR_READIVALUE(nReg) pVM->pByteCodeIR->aReg[nReg].iNumber
 	#define RING_VM_IR_READD pVM->pByteCodeIR->aReg[0].dNumber
 	#define RING_VM_IR_READDVALUE(nReg) pVM->pByteCodeIR->aReg[nReg].dNumber
-	#define RING_VM_IR_PARACOUNT pVM->pByteCodeIR->nInsSize
 	#define RING_VM_IR_OPCODE pVM->pByteCodeIR->nOPCode
 	#define RING_VM_IR_OPCODEVALUE(nIns) (pVM->pByteCode + nIns)->nOPCode
 	#define RING_VM_IR_ITEM(nReg) & (pVM->pByteCodeIR->aReg[nReg])
@@ -263,28 +284,27 @@
 	#define RING_VM_PC_CURRENTINS pVM->nPC - 2
 	#define RING_VM_PC_PREVINS pVM->nPC - 3
 	#define RING_VM_IR_CLEARREG1STRING ring_vm_clearregisterstring(pVM,RING_VM_IR_REG1)
-	#define RING_VM_PUSHNULLTHENJUMP RING_VM_STACK_PUSHCVALUE(""); RING_VM_JUMP
+	#define RING_VM_PUSHNULLTHENJUMP RING_VM_STACK_PUSHCVALUE(RING_CSTR_EMPTY); RING_VM_JUMP
 	#define RING_VM_IR_SETINTREG(nValue) pVM->pByteCodeIR->nIntReg = nValue
 	#define RING_VM_IR_GETINTREG pVM->pByteCodeIR->nIntReg
-	#define RING_VM_IR_SETFLAGREG(nValue) pVM->pByteCodeIR->nFlagReg = nValue
-	#define RING_VM_IR_GETFLAGREG pVM->pByteCodeIR->nFlagReg
+	#define RING_VM_IR_SETFLAGREG(nValue) pVM->pByteCodeIR->lFlagReg = nValue
+	#define RING_VM_IR_GETFLAGREG pVM->pByteCodeIR->lFlagReg
 	#define RING_VM_IR_SETREG1TOPOINTERFROMSTACK ring_vm_setreg1topointerfromstack(pVM)
 	#define RING_VM_IR_SETREG1TYPE(nType) pVM->pByteCodeIR->nReg1Type = nType
 	#define RING_VM_IR_SETREG2TYPE(nType) pVM->pByteCodeIR->nReg2Type = nType
-	#define RING_VM_IR_SETREG3TYPE(nType) pVM->pByteCodeIR->nReg3Type = nType
-	#define RING_VM_IR_SETREG4TYPE(nType) pVM->pByteCodeIR->nReg4Type = nType
-	#define RING_VM_IR_READLOWIVALUE(nReg) pVM->pByteCodeIR->aReg[nReg].aNumber[0]
-	#define RING_VM_IR_READHIGHIVALUE(nReg) pVM->pByteCodeIR->aReg[nReg].aNumber[1]
-	#define RING_VM_IR_ITEMSETLOWINT(pItem,nValue) (* pItem).aNumber[0]  = nValue
-	#define RING_VM_IR_ITEMSETHIGHINT(pItem,nValue) (* pItem).aNumber[1]  = nValue
 	#define RING_VM_IR_REG1 0
 	#define RING_VM_IR_REG2 1
-	#define RING_VM_IR_REG3 2
-	#define RING_VM_IR_REG4 3
+	#define RING_VM_IR_SETFLAGREG2(nValue) pVM->pByteCodeIR->lFlagReg2 = nValue
+	#define RING_VM_IR_GETFLAGREG2 pVM->pByteCodeIR->lFlagReg2
+	#define RING_VM_IR_SETSMALLINTREG(nValue) pVM->pByteCodeIR->nSmallIntReg = nValue
+	#define RING_VM_IR_GETSMALLINTREG pVM->pByteCodeIR->nSmallIntReg
+	#define RING_VM_IR_SETINTREGATINS(nIns,nValue) (pVM->pByteCode + nIns)->nIntReg = nValue
+	#define RING_VM_IR_INTATINS(nIns) (pVM->pByteCode + nIns)->nIntReg
+	#define RING_VM_PUSHNTHENJUMP RING_VM_STACK_PUSHN; pVM->nPC = pVM->pByteCodeIR->aReg[1].iNumber
 	/*
 	**  Calling Functions 
 	**  Note : When you insert items check performance functions for update too! 
-	**  pFuncCallList ( Type, Func Name , Position(PC) , Stack Pointer , TempMem, ... 
+	**  Function Call List ( Type, Func Name , Position(PC) , Stack Pointer , TempMem, ... 
 	**  Types 
 	*/
 	#define RING_FUNCTYPE_SCRIPT 0
@@ -294,8 +314,12 @@
 	#define RING_FUNCSTATUS_CALL 1
 	#define RING_FUNCSTATUS_STARTED 2
 	/* Util */
-	#define RING_VM_LASTFUNCCALL (FuncCall *) (pVM->pFuncCallList->pLast->pValue->data.pPointer)
 	#define RING_VM_LASTOBJSTATE pVM->pObjState->pLast->pValue->data.pList->pFirst->pValue->data.pPointer
+	#define RING_VM_LASTFUNCCALL & (pVM->aFuncCall[pVM->nCurrentFuncCall])
+	#define RING_VM_GETFUNCCALL(x) & (pVM->aFuncCall[x])
+	#define RING_VM_FUNCCALLSCOUNT pVM->nCurrentFuncCall
+	#define RING_VM_DELETELASTFUNCCALL ring_vm_funccall_delete(pVM->pRingState,RING_VM_LASTFUNCCALL) ; pVM->nCurrentFuncCall--
+	#define RING_VM_BACKTOFUNCCALL(x) while (RING_VM_FUNCCALLSCOUNT > x) { RING_VM_DELETELASTFUNCCALL ; }
 	/* Parameters */
 	#define RING_FUNCPARA_EXPECTEDSIZE 32
 	/* pFunctionsMap ( Func Name , Position , File Name, Private Flag) */
@@ -309,8 +333,23 @@
 	#define RING_VARSCOPE_NOTHING 0
 	#define RING_VARSCOPE_LOCAL 1
 	#define RING_VARSCOPE_OBJSTATE 2
-	#define RING_VARSCOPE_GLOBAL 3
-	#define RING_VARSCOPE_NEWOBJSTATE 4
+	#define RING_VARSCOPE_DEFINEDGLOBALS 3
+	#define RING_VARSCOPE_GLOBAL 4
+	#define RING_VARSCOPE_NEWOBJSTATE 5
+	#define RING_VARSCOPE_SIZETOUSEHASHTABLE 6
+	/* Util */
+	#define RING_VM_SCOPESCOUNT pVM->nCurrentScope
+	#define RING_VM_GETLASTSCOPE & (pVM->aScopes[pVM->nCurrentScope])
+	#define RING_VM_GETSCOPE(x) & (pVM->aScopes[x])
+	#define RING_VM_NEWSCOPE RING_VM_GETSCOPE( ++(pVM->nCurrentScope) )
+	#define RING_VM_DELETELASTSCOPE ring_list_deleteallitems_gc(pVM->pRingState,RING_VM_GETLASTSCOPE); pVM->nCurrentScope--
+	#define RING_VM_BACKTOSCOPELIST(x) while(RING_VM_GETLASTSCOPE != x) ring_vm_deletescope(pVM) ;
+	#define RING_VM_COPYSCOPESTOLIST(x) ring_vm_copyscopestolist(pVM,x)
+	#define RING_SHAREDSCOPETYPE List *
+	#define RING_VM_SAVEGLOBALSCOPE(x) & (x->aScopes[1])
+	#define RING_VM_RESTOREGLOBALSCOPE(x,y) x->aScopes[1] = * y
+	#define RING_VM_SHAREGLOBALSCOPE(dest,src) dest->aScopes[1] = src->aScopes[1]
+	#define RING_VM_SETCURRENTSCOPE(x) pVM->nCurrentScope = x ;
 	/*
 	**  OOP 
 	**  pClassesMap 
@@ -329,6 +368,7 @@
 	#define RING_OBJECT_CLASSPOINTER 1
 	#define RING_OBJECT_OBJECTDATA 2
 	#define RING_OBJECT_SELFATTRIBUTE 1
+	#define RING_OBJECT_ISATTRIBUTESEARCHSTART 3
 	/* pObjState */
 	#define RING_OBJSTATE_SCOPE 1
 	#define RING_OBJSTATE_METHODS 2
@@ -341,15 +381,14 @@
 	#define RING_BRACEOBJECTS_BRACEOBJECT 1
 	#define RING_BRACEOBJECTS_NSP 2
 	#define RING_BRACEOBJECTS_NLISTSTART 3
-	#define RING_BRACEOBJECTS_PNESTEDLISTS 4
-	#define RING_BRACEOBJECTS_NFUNCEXEC 5
-	#define RING_BRACEOBJECTS_SETPROPERTY 6
-	#define RING_BRACEOBJECTS_NLOADASCOPE 7
-	#define RING_BRACEOBJECTS_NNOSETTERMETHOD 8
-	#define RING_BRACEOBJECTS_ISDONTREF 9
-	#define RING_BRACEOBJECTS_ISDONTREFAGAIN 10
+	#define RING_BRACEOBJECTS_NNESTEDLISTS 4
+	#define RING_BRACEOBJECTS_SETPROPERTY 5
+	#define RING_BRACEOBJECTS_NLOADASCOPE 6
+	#define RING_BRACEOBJECTS_NNOSETTERMETHOD 7
+	#define RING_BRACEOBJECTS_ISDONTREF 8
+	#define RING_BRACEOBJECTS_ISDONTREFAGAIN 9
 	/* pScopeNewObj */
-	#define RING_SCOPENEWOBJ_SP 1
+	#define RING_SCOPENEWOBJ_SP 2
 	/* pSetProperty */
 	#define RING_SETPROPERTY_OBJPTR 1
 	#define RING_SETPROPERTY_OBJTYPE 2
@@ -396,6 +435,7 @@
 	#define RING_VM_TRACEEVENT_ERROR 4
 	#define RING_VM_TRACEEVENT_BEFORECFUNC 5
 	#define RING_VM_TRACEEVENT_AFTERCFUNC 6
+	#define RING_VM_TRACEEVENT(cEvent) if (pVM->lTrace) ring_vm_traceevent(pVM,cEvent) ;
 	/* Loops */
 	#define RING_COMMANDTYPE_EXIT 1
 	#define RING_COMMANDTYPE_LOOP 2
@@ -408,7 +448,7 @@
 	#define RING_EVALOUTPUT_STRING 2
 	#define RING_EVALOUTPUT_POINTER 3
 	/* Temp Lists */
-	#define RING_VM_TEMPLISTSCOUNTERMAX 100
+	#define RING_VM_TEMPLISTSCOUNTERMAX 4
 	#define RING_TEMPLIST_SIZE 2
 	#define RING_TEMPLIST_PC 1
 	#define RING_TEMPLIST_LIST 2
@@ -424,6 +464,7 @@
 	#define RING_TRY_PC 1
 	#define RING_TRY_INSIDEEVAL 2
 	#define RING_TRY_STATE 3
+	#define RING_VM_RETURNIFACTIVECATCH if (pVM->lActiveCatch) return ;
 	/* ExitMark/LoopMark */
 	#define RING_MARKLIST_PC 1
 	#define RING_MARKLIST_STATE 2
@@ -432,6 +473,14 @@
 	#define RING_CSTR_EVAL "eval"
 	/* Decimals */
 	#define RING_DECIMALS_COUNT 2
+	#define RING_VM_CHECKOVERFLOW(nNum1,nNum2) if ( pVM->lCheckOverFlow && ring_vm_checkoverflow(pVM,nNum1,nNum2) ) return ;
+	/* Extra Byte Code Generation */
+	#define RING_VM_BYTECODE_START List *pByteCodeIns;
+	#define RING_VM_BYTECODE_END ring_vm_useextrabytecode(pVM);
+	#define RING_VM_BYTECODE_INS(x) pByteCodeIns = ring_list_newlist_gc(pVM->pRingState,pVM->pCode); ring_list_addint_gc(pVM->pRingState,pByteCodeIns,x) ;
+	#define RING_VM_BYTECODE_INSINT(x,y) RING_VM_BYTECODE_INS(x) ;  ring_list_addint_gc(pVM->pRingState,pByteCodeIns,y) ;
+	#define RING_VM_BYTECODE_INSINTINT(x,y,z) RING_VM_BYTECODE_INSINT(x,y) ;  ring_list_addint_gc(pVM->pRingState,pByteCodeIns,z) ;
+	#define RING_VM_BYTECODE_INSSTR(x,y) RING_VM_BYTECODE_INS(x) ;  ring_list_addstring_gc(pVM->pRingState,pByteCodeIns,y) ;
 	/* Runtime Error Messages */
 	#define RING_VM_ERROR_DIVIDEBYZERO "Error (R1) : Can't divide by zero"
 	#define RING_VM_ERROR_INDEXOUTOFRANGE "Error (R2) : Array Access (Index out of range)"
@@ -481,9 +530,14 @@
 	#define RING_VM_ERROR_NORINGLIBINIT "Error (R46) : The dynamic library doesn't contain the ringlib_init() function!"
 	#define RING_VM_ERROR_FUNCNOTSUPPORTED "Error (R47) : The function is not supported in this platform"
 	#define RING_VM_ERROR_ASSERTIONFAILED "Error (R48) : Assertion Failed!"
+	#define RING_VM_ERROR_VMISNOTREADY "Error (R49) : The Ring VM is not created/ready"
+	#define RING_VM_ERROR_NOOPERATORMETHOD "Error (R50) : Object does not support operator overloading"
+	#define RING_VM_ERROR_VALUEERROR "Error (R51) : Value Error"
+	#define RING_VM_ERROR_RETURNINPARA "Error (R52) : Using Return inside function parameters is not allowed"
+	#define RING_VM_ERROR_FUNCREDEFINE "Error (R53) : Function redefinition, function is already defined!"
+	#define RING_VM_ERROR_ATTRREDEFINE "Error (R54) : Object attribute redefinition, attribute is already defined!"
 	/* Extra Size (for eval) */
-	#define RING_VM_EXTRASIZE 1000
-	#define RING_VM_MINVMINSTRUCTIONS 100000
+	#define RING_VM_EXTRASIZE (1024*128)
 	#define RING_MAX(a,b) (((a)>(b))?(a):(b))
 	#define RING_VM_MAXNESTEDEVAL 255
 	/*
@@ -498,6 +552,8 @@
 	RING_API void ring_vm_loadcode ( VM *pVM ) ;
 
 	void ring_vm_start ( RingState *pRingState,VM *pVM ) ;
+
+	void ring_vm_towardsmainloop ( RingState *pRingState ) ;
 
 	void ring_vm_fetch ( VM *pVM ) ;
 
@@ -533,11 +589,15 @@
 
 	void ring_vm_setreg1topointerfromstack ( VM *pVM ) ;
 
-	void ring_vm_showbytecode ( VM *pVM ) ;
+	RING_API void ring_vm_showbytecode ( VM *pVM ) ;
 
 	void ring_vm_defragmentation ( RingState *pRingState,VM *pVM ) ;
 
 	void ring_vm_updateclassespointers ( RingState *pRingState ) ;
+
+	void ring_vm_bytecode2list ( VM *pVM, List *pOutput ) ;
+
+	void ring_vm_useextrabytecode ( VM *pVM ) ;
 	/* Stack and Variables */
 
 	void ring_vm_pushv ( VM *pVM ) ;
@@ -558,11 +618,9 @@
 
 	void ring_vm_list_copy ( VM *pVM,List *pNewList, List *pList ) ;
 
-	void ring_vm_list_simpointercopy ( VM *pVM,List *pList ) ;
+	void ring_vm_beforeequallist ( VM *pVM,List *pVar,double nNum1,int nBeforeEqual ) ;
 
-	void ring_vm_beforeequallist ( VM *pVM,List *pVar,double nNum1 ) ;
-
-	void ring_vm_beforeequalitem ( VM *pVM,Item *pItem,double nNum1 ) ;
+	void ring_vm_beforeequalitem ( VM *pVM,Item *pItem,double nNum1,int nBeforeEqual ) ;
 
 	void ring_vm_assignmentpointer ( VM *pVM ) ;
 
@@ -572,11 +630,13 @@
 
 	void ring_vm_loadaddressfirst ( VM *pVM ) ;
 
-	void ring_vm_endfuncexec ( VM *pVM ) ;
-
 	void ring_vm_varpushv ( VM *pVM ) ;
 
 	int ring_vm_checknull ( VM *pVM,int lShowError ) ;
+
+	void ring_vm_pushvfreestack ( VM *pVM ) ;
+
+	void ring_vm_stackswap ( VM *pVM,int nSP1,int nSP2 ) ;
 	/* Compare */
 
 	void ring_vm_equal ( VM *pVM ) ;
@@ -604,10 +664,6 @@
 
 	void ring_vm_neg ( VM *pVM ) ;
 
-	RING_API char * ring_vm_numtostring ( VM *pVM,double nNum1,char *cStr ) ;
-
-	RING_API double ring_vm_stringtonum ( VM *pVM,const char *cStr ) ;
-
 	void ring_vm_expr_ppoo ( VM *pVM,const char *cStr ) ;
 
 	void ring_vm_expr_npoo ( VM *pVM,const char *cStr,double nNum1 ) ;
@@ -623,6 +679,10 @@
 	void ring_vm_addlisttolist ( VM *pVM,List *pList,List *pList2 ) ;
 
 	int ring_vm_checkoverflow ( VM *pVM,double nNum1,double nNum2 ) ;
+
+	RING_API char * ring_vm_numtostring ( VM *pVM,double nNum1,char *cStr ) ;
+
+	RING_API double ring_vm_stringtonum ( VM *pVM,const char *cStr ) ;
 	/* Logic */
 
 	void ring_vm_and ( VM *pVM ) ;
@@ -630,6 +690,10 @@
 	void ring_vm_or ( VM *pVM ) ;
 
 	void ring_vm_not ( VM *pVM ) ;
+
+	int ring_vm_stringtologicvalue ( VM *pVM,const char *cStr ) ;
+
+	int ring_vm_listtologicvalue ( VM *pVM,List *pList ) ;
 	/* Variables */
 
 	void ring_vm_newscope ( VM *pVM ) ;
@@ -661,7 +725,13 @@
 	void ring_vm_var_setprivateflag ( VM *pVM,List *pVar,int nFlag ) ;
 
 	int ring_vm_var_getprivateflag ( VM *pVM,List *pVar ) ;
+
+	void ring_vm_copyscopestolist ( VM *pVM,List *pList ) ;
 	/* Parameters */
+
+	void ring_vm_newargcache ( VM *pVM ) ;
+
+	void ring_vm_deleteargcache ( VM *pVM ) ;
 
 	List * ring_vm_addstringarg ( VM *pVM,const char *cVar,const char *cStr,int nStrSize ) ;
 
@@ -683,9 +753,17 @@
 	void ring_vm_jumpone2 ( VM *pVM ) ;
 	/* Lists */
 
+	void ring_vm_newnestedlists ( VM *pVM ) ;
+
+	void ring_vm_restorenestedlists ( VM *pVM,int nListStart,int nNestedLists ) ;
+
 	void ring_vm_liststart ( VM *pVM ) ;
 
 	void ring_vm_listitem ( VM *pVM ) ;
+
+	void ring_vm_listitemn ( VM *pVM ) ;
+
+	void ring_vm_listitemc ( VM *pVM ) ;
 
 	void ring_vm_listend ( VM *pVM ) ;
 
@@ -693,7 +771,7 @@
 
 	void ring_vm_listpushv ( VM *pVM ) ;
 
-	void ring_vm_listassignment ( VM *pVM ) ;
+	void ring_vm_listassignment ( VM *pVM,int nBeforeEqual ) ;
 
 	void ring_vm_listgetvalue ( VM *pVM,List *pVar,const char *cStr ) ;
 
@@ -702,6 +780,8 @@
 	void ring_vm_cleansetpropertylist ( VM *pVM ) ;
 
 	int ring_vm_isoperationaftersublist ( VM *pVM ) ;
+
+	int ring_vm_notusingvarduringdef ( VM *pVM ) ;
 	/* Functions */
 
 	int ring_vm_loadfunc ( VM *pVM ) ;
@@ -712,9 +792,13 @@
 
 	void ring_vm_call2 ( VM *pVM ) ;
 
+	void ring_vm_preparecallmethod ( VM *pVM ) ;
+
 	void ring_vm_return ( VM *pVM ) ;
 
 	void ring_vm_returnnull ( VM *pVM ) ;
+
+	void ring_vm_returnn ( VM *pVM ) ;
 
 	void ring_vm_returneval ( VM *pVM ) ;
 
@@ -740,16 +824,15 @@
 
 	void ring_vm_cleanevalcode ( VM *pVM,int nCodeSize ) ;
 
-	FuncCall * ring_vmfunccall_new ( VM *pVM ) ;
+	FuncCall * ring_vm_funccall_new ( VM *pVM ) ;
 
-	void ring_vmfunccall_delete ( void *pState,void *pMemory ) ;
+	void ring_vm_funccall_delete ( void *pState,void *pMemory ) ;
 
-	void ring_vmfunccall_useloadfuncp ( VM *pVM,FuncCall *pFuncCall,int nPerformance ) ;
-	/* User Interface */
+	void ring_vm_funccall_useloadfuncp ( VM *pVM,FuncCall *pFuncCall,int nPerformance ) ;
 
-	void ring_vm_see ( VM *pVM ) ;
+	int ring_vm_funccall_beforecall ( VM *pVM ) ;
 
-	void ring_vm_give ( VM *pVM ) ;
+	int ring_vm_funccall_paracount ( VM *pVM ) ;
 	/* String As Array */
 
 	void ring_vm_string_pushv ( VM *pVM ) ;
@@ -766,7 +849,7 @@
 	void ring_vm_done ( VM *pVM ) ;
 	/* Duplicate and Range */
 
-	void ring_vm_dup ( VM *pVM ) ;
+	void ring_vm_stack_dup ( VM *pVM ) ;
 
 	void ring_vm_range ( VM *pVM ) ;
 
@@ -782,6 +865,8 @@
 	List * ring_vm_oop_getobj ( VM *pVM ) ;
 
 	void ring_vm_oop_loadmethod ( VM *pVM ) ;
+
+	void ring_vm_oop_loadmethod2 ( VM *pVM, const char *cMethod ) ;
 
 	void ring_vm_oop_aftercallmethod ( VM *pVM ) ;
 
@@ -823,8 +908,6 @@
 
 	void ring_vm_oop_pushclasspackage ( VM *pVM,List *pList ) ;
 
-	void ring_vm_oop_popclasspackage ( VM *pVM ) ;
-
 	void ring_vm_oop_deletepackagesafter ( VM *pVM,int nIndex ) ;
 
 	int ring_vm_oop_callmethodinsideclass ( VM *pVM ) ;
@@ -858,6 +941,12 @@
 	void ring_vm_oop_callclassinit ( VM *pVM ) ;
 
 	void ring_vm_oop_checkbracemethod ( VM *pVM ) ;
+
+	void ring_vm_oop_preparecallmethodfrombrace ( VM *pVM ) ;
+
+	int ring_vm_oop_isattribute ( VM *pVM,List *pList,const char *cStr ) ;
+
+	int ring_vm_oop_addattribute ( VM *pVM,List *pList,char *cStr ) ;
 	/* Faster instructions */
 
 	void ring_vm_pushp ( VM *pVM ) ;
@@ -874,11 +963,15 @@
 
 	void ring_vm_pushplocal ( VM *pVM ) ;
 
+	void ring_vm_pusharg ( VM *pVM ) ;
+
 	void ring_vm_inclpjump ( VM *pVM ) ;
 
 	void ring_vm_incpjumpstep1 ( VM *pVM ) ;
 
 	void ring_vm_inclpjumpstep1 ( VM *pVM ) ;
+
+	void ring_vm_updatescopeinfo ( VM *pVM, int nScope ) ;
 	/* End Program / Exit from Loop / Loop (Continue) */
 
 	void ring_vm_bye ( VM *pVM ) ;
@@ -888,6 +981,8 @@
 	void ring_vm_popexitmark ( VM *pVM ) ;
 
 	void ring_vm_exit ( VM *pVM,int nType ) ;
+
+	void ring_vm_optionalloop ( VM *pVM ) ;
 	/* State */
 
 	void ring_vm_savestate ( VM *pVM,List *pList ) ;
@@ -896,9 +991,9 @@
 
 	void ring_vm_backstate ( VM *pVM,List *pList,int nToSize ) ;
 
-	VMState * ring_vm_savestateforfunctions ( VM *pVM ) ;
+	VMState * ring_vm_savestateformethods ( VM *pVM ) ;
 
-	void ring_vm_restorestateforfunctions ( VM *pVM,VMState *pVMState ) ;
+	void ring_vm_restorestateformethods ( VM *pVM,VMState *pVMState ) ;
 
 	void ring_vm_savestatefornewobjects ( VM *pVM ) ;
 
@@ -926,20 +1021,32 @@
 	void ring_vm_bitshl ( VM *pVM ) ;
 
 	void ring_vm_bitshr ( VM *pVM ) ;
+
+	void ring_vm_bitshift ( VM *pVM, const char *cOperator ) ;
 	/* Step Number */
 
 	void ring_vm_stepnumber ( VM *pVM ) ;
 
+	void ring_vm_stepfromreg ( VM *pVM ) ;
+
 	void ring_vm_popstep ( VM *pVM ) ;
 	/* Threads */
 
-	RING_API void ring_vm_mutexfunctions ( VM *pVM,void *(*pFunc)(void),void (*pFuncLock)(void *),void (*pFuncUnlock)(void *),void (*pFuncDestroy)(void *) ) ;
+	RING_API void ring_vm_mutexfunctions ( VM *pVM,void *(*pFuncCreate)(void),void (*pFuncLock)(void *),void (*pFuncUnlock)(void *),void (*pFuncDestroy)(void *) ) ;
 
 	RING_API void ring_vm_mutexlock ( VM *pVM ) ;
 
 	RING_API void ring_vm_mutexunlock ( VM *pVM ) ;
 
 	RING_API void ring_vm_mutexdestroy ( VM *pVM ) ;
+
+	RING_API void * ring_vm_custmutexcreate ( VM *pVM ) ;
+
+	RING_API void ring_vm_custmutexlock ( VM *pVM, void *pMutex ) ;
+
+	RING_API void ring_vm_custmutexunlock ( VM *pVM, void *pMutex ) ;
+
+	RING_API void ring_vm_custmutexdestroy ( VM *pVM, void *pMutex ) ;
 
 	RING_API void ring_vm_runcodefromthread ( VM *pVM,const char *cStr ) ;
 
@@ -950,6 +1057,9 @@
 	/* Fast Function Call for Extensions (Without Eval) */
 
 	RING_API void ring_vm_callfunction ( VM *pVM,char *cFuncName ) ;
+	/* Fast Function Call for Ring VM (Without Eval) */
+
+	RING_API void ring_vm_callfuncwithouteval ( VM *pVM, const char *cFunc, int lMethod ) ;
 	/* Custom Global Scope */
 
 	void ring_vm_newglobalscope ( VM *pVM ) ;
@@ -963,7 +1073,7 @@
 
 	void ring_vm_freetemplistsins ( VM *pVM ) ;
 
-	void ring_vm_freetemplists ( VM *pVM,int *nTempCount, int *nScopeID ) ;
+	void ring_vm_freetemplists ( VM *pVM ) ;
 
 	int ring_vm_timetofreetemplists ( VM *pVM ) ;
 	/* Better Performance */
@@ -971,6 +1081,20 @@
 	void ring_vm_len ( VM *pVM ) ;
 
 	void ring_vm_setopcode ( VM *pVM ) ;
+
+	int ring_vm_isinsideloop ( VM *pVM ) ;
+
+	void ring_vm_sumn ( VM *pVM ) ;
+
+	void ring_vm_subn ( VM *pVM ) ;
+
+	void ring_vm_muln ( VM *pVM ) ;
+
+	void ring_vm_divn ( VM *pVM ) ;
+
+	void ring_vm_modn ( VM *pVM ) ;
+
+	void ring_vm_pown ( VM *pVM ) ;
 	/* Protecting Lists */
 
 	int ring_vm_checkvarerroronassignment ( VM *pVM,List *pVar ) ;
@@ -979,7 +1103,7 @@
 
 	int ring_vm_checkbeforeassignment ( VM *pVM,List *pVar ) ;
 
-	void ring_vm_removelistprotection ( VM *pVM,List *pNestedLists ) ;
+	void ring_vm_removelistprotection ( VM *pVM,List *pNestedLists,int nStart ) ;
 
 	void ring_vm_removelistprotectionat ( VM *pVM,List *pNestedLists,int nPos ) ;
 #endif

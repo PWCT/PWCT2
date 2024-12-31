@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GGEOPOSITIONINFOSOURCE_H
 #define GGEOPOSITIONINFOSOURCE_H
 #include "ringqt.h"
 #include <QGeoPositionInfoSource>
+
 extern "C" {
 #include "ring.h"
 }
@@ -45,6 +46,8 @@ class GGeoPositionInfoSource : public QGeoPositionInfoSource
     void errorSlot();
     void positionUpdatedSlot();
     void updateTimeoutSlot();
+
+
 
 };
 

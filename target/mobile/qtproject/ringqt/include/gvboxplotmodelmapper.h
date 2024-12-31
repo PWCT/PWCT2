@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GVBOXPLOTMODELMAPPER_H
 #define GVBOXPLOTMODELMAPPER_H
 #include "ringqt.h"
 #include <QtCharts>
+
 extern "C" {
 #include "ring.h"
 }
@@ -57,6 +58,8 @@ class GVBoxPlotModelMapper : public QtCharts::QVBoxPlotModelMapper
     void modelReplacedSlot();
     void rowCountChangedSlot();
     void seriesReplacedSlot();
+
+
 
 };
 

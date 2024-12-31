@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GLISTWIDGET_H
 #define GLISTWIDGET_H
 #include "ringqt.h"
 #include <QListWidget>
+
 extern "C" {
 #include "ring.h"
 }
@@ -73,6 +74,8 @@ class GListWidget : public QListWidget
     void itemEnteredSlot();
     void itemPressedSlot();
     void itemSelectionChangedSlot();
+
+
 
 };
 

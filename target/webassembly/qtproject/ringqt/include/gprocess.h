@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GPROCESS_H
 #define GPROCESS_H
 #include "ringqt.h"
 #include <QProcess>
+
 extern "C" {
 #include "ring.h"
 }
@@ -41,6 +42,8 @@ class GProcess : public QProcess
 
     void readyReadStandardErrorSlot();
     void readyReadStandardOutputSlot();
+
+
 
 };
 

@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GOBJECTPICKER_H
 #define GOBJECTPICKER_H
 #include "ringqt.h"
 #include <Qt3DRender/QObjectPicker>
+
 extern "C" {
 #include "ring.h"
 }
@@ -73,6 +74,8 @@ class GObjectPicker : public Qt3DRender::QObjectPicker
     void pressedSlot();
     void pressedChangedSlot();
     void releasedSlot();
+
+
 
 };
 

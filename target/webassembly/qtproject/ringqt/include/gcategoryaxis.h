@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GCATEGORYAXIS_H
 #define GCATEGORYAXIS_H
 #include "ringqt.h"
 #include <QtCharts>
+
 extern "C" {
 #include "ring.h"
 }
@@ -41,6 +42,8 @@ class GCategoryAxis : public QtCharts::QCategoryAxis
 
     void categoriesChangedSlot();
     void labelsPositionChangedSlot();
+
+
 
 };
 

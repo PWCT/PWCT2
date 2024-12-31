@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GRADIOBUTTON_H
 #define GRADIOBUTTON_H
 #include "ringqt.h"
 #include <QRadioButton>
+
 extern "C" {
 #include "ring.h"
 }
@@ -49,6 +50,8 @@ class GRadioButton : public QRadioButton
     void pressedSlot();
     void releasedSlot();
     void toggledSlot();
+
+
 
 };
 

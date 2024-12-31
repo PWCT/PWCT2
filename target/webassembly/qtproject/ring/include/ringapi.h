@@ -22,10 +22,10 @@
 	#define RING_OUTPUT_RETNEWREF 2
 	#define RING_VARVALUE_INT 1
 	#define RING_VARVALUE_FLOAT 2
+	#define RING_API_MINLISTSIZEFORUSINGBLOCKS 30
 	/* API For C Functions */
 	#define RING_API_STATE (((VM *) pPointer)->pRingState)
-	#define RING_API_PARALIST (((VM *) pPointer)->pActiveMem)
-	#define RING_API_PARACOUNT (((VM *) pPointer)->nCFuncParaCount)
+	#define RING_API_PARACOUNT (ring_vm_api_paracount((VM *) pPointer))
 	#define RING_API_GETSTRING(nPara) (ring_vm_api_getstring((VM *) pPointer,nPara))
 	#define RING_API_GETNUMBER(nPara) (ring_vm_api_getnumber((VM *) pPointer,nPara))
 	#define RING_API_GETPOINTER(nPara) (ring_vm_api_getpointer((VM *) pPointer,nPara))
@@ -36,17 +36,15 @@
 	#define RING_API_ERROR(cError) (ring_vm_error((VM *) pPointer,cError))
 	#define RING_API_ISLIST(nPara) (ring_vm_api_islist((VM *) pPointer,nPara))
 	#define RING_API_GETLIST(nPara) (ring_vm_api_getlist((VM *) pPointer,nPara))
-	#define RING_API_RETNUMBER(nNumber) ((VM *) pPointer)->nSP++ ; ring_itemarray_setdouble(((VM *) pPointer)->aStack, ((VM *) pPointer)->nSP , nNumber)
-	#define RING_API_RETSTRING(cStr) ((VM *) pPointer)->nSP++ ; ring_itemarray_setstring(((VM *) pPointer)->aStack, ((VM *) pPointer)->nSP, cStr)
-	#define RING_API_RETSTRING2(cStr,nSize) ((VM *) pPointer)->nSP++ ; ring_itemarray_setstring2(((VM *) pPointer)->aStack, ((VM *) pPointer)->nSP,cStr,nSize)
-	#define RING_API_RETSTRINGSIZE(nSize) ((VM *) pPointer)->nSP++ ; ring_itemarray_setstring2(((VM *) pPointer)->aStack, ((VM *) pPointer)->nSP, NULL,nSize)
+	#define RING_API_RETNUMBER(nNumber) ring_vm_api_retnumber((VM *) pPointer,nNumber)
+	#define RING_API_RETSTRING(cStr) ring_vm_api_retstring((VM *) pPointer,cStr)
+	#define RING_API_RETSTRING2(cStr,nSize) ring_vm_api_retstring2((VM *) pPointer,cStr,nSize)
+	#define RING_API_RETSTRINGSIZE(nSize) ring_vm_api_retstringsize((VM *) pPointer,nSize)
 	#define RING_API_RETLIST(pList) ring_vm_api_retlist((VM *) pPointer,pList)
 	#define RING_API_NEWLIST ring_vm_api_newlist((VM *) pPointer)
 	#define RING_API_RETCPOINTER(pPtr,cType) (ring_vm_api_retcpointer((VM *) pPointer,(void *) pPtr,cType))
 	#define RING_API_GETCPOINTER(nPara,cType) (ring_vm_api_getcpointer((VM *) pPointer,nPara,cType))
-	#define RING_API_PUSHPVALUE(pPtr) ((VM *) pPointer)->nSP++ ; ring_itemarray_setpointer(((VM *) pPointer)->aStack, ((VM *) pPointer)->nSP,pPtr)
-	#define RING_API_OBJTYPE ((VM *) pPointer)->aStack[((VM *) pPointer)->nSP].nObjectType
-	#define RING_API_GETSTRINGRAW ring_itemarray_getstringraw(((VM *) pPointer)->aStack,((VM *) pPointer)->nSP)
+	#define RING_API_GETSTRINGRAW ring_vm_api_getstringraw((VM *) pPointer)
 	#define RING_API_GETSTRINGSIZE(nPara) (ring_vm_api_getstringsize((VM *) pPointer,nPara))
 	#define RING_API_SETNULLPOINTER(nPara) (ring_vm_api_setcpointernull((VM *) pPointer,nPara))
 	#define RING_API_GETCPOINTERSTATUS(nPara) ring_list_getint(RING_API_GETLIST(nPara),RING_CPOINTER_STATUS)
@@ -59,7 +57,7 @@
 	#define RING_API_GETDOUBLEPOINTER(nPara) RING_API_VARPOINTER(RING_API_GETSTRING(nPara),"double")
 	#define RING_API_ACCEPTINTVALUE(nPara) RING_API_INTVALUE(RING_API_GETSTRING(nPara))
 	#define RING_API_ACCEPTFLOATVALUE(nPara) RING_API_FLOATVALUE(RING_API_GETSTRING(nPara))
-	#define RING_API_IGNORECPOINTERTYPE ((VM *) pPointer)->lIgnoreCPointerTypeCheck = 1
+	#define RING_API_IGNORECPOINTERTYPE ring_vm_api_ignorecpointertypecheck((VM *) pPointer)
 	#define RING_API_ISCPOINTER(nPara) ring_vm_api_iscpointer(pPointer,nPara)
 	#define RING_API_ISOBJECT(nPara) ring_vm_api_isobject(pPointer,nPara)
 	#define RING_API_GETCPOINTER2POINTER(nPara,cType) (ring_vm_api_getcpointer2pointer((VM *) pPointer,nPara,cType))
@@ -79,6 +77,8 @@
 	#define RING_API_ISLISTORNULL(nPara) (ring_vm_api_islistornull((VM *) pPointer,nPara))
 	#define RING_API_NEWLISTUSINGBLOCKS1D(nSize) ring_vm_api_newlistusingblocks((VM *) pPointer,nSize,-1)
 	#define RING_API_NEWLISTUSINGBLOCKS2D(nRows,nCols) ring_vm_api_newlistusingblocks((VM *) pPointer,nRows,nCols)
+	#define RING_API_CALLERSCOPE ring_vm_api_callerscope((VM *) pPointer)
+	#define RING_API_SCOPESCOUNT ring_vm_api_scopescount((VM *) pPointer)
 	/*
 	**  Note : The C Function Get Lists as pointers because of (List Pass by Reference) 
 	**  The List Maybe a Variable/ListItem or may represent Object or C Pointer inside a List 
@@ -96,11 +96,9 @@
 
 	RING_API int ring_vm_api_isnumber ( void *pPointer,int nPara ) ;
 
-	RING_API int ring_vm_api_islist ( void *pPointer,int nPara ) ;
+	RING_API int ring_vm_api_isptr ( void *pPointer,int nPara ) ;
 
-	RING_API int ring_vm_api_islistornull ( void *pPointer,int nPara ) ;
-
-	RING_API int ring_vm_api_ispointer ( void *pPointer,int nPara ) ;
+	RING_API void ring_vm_api_setptr ( void *pPointer,int nPara,void *pPtr,int nType ) ;
 
 	RING_API char * ring_vm_api_getstring ( void *pPointer,int nPara ) ;
 
@@ -112,9 +110,13 @@
 
 	RING_API int ring_vm_api_getpointertype ( void *pPointer,int nPara ) ;
 
-	RING_API void ring_vm_api_retlist ( void *pPointer,List *pList ) ;
+	RING_API int ring_vm_api_islist ( void *pPointer,int nPara ) ;
 
-	RING_API List * ring_vm_api_newlist ( VM *pVM ) ;
+	RING_API int ring_vm_api_islistornull ( void *pPointer,int nPara ) ;
+
+	RING_API int ring_vm_api_ispointer ( void *pPointer,int nPara ) ;
+
+	RING_API void ring_vm_api_retlist ( void *pPointer,List *pList ) ;
 
 	RING_API void ring_vm_api_retcpointer ( void *pPointer,void *pGeneral,const char *cType ) ;
 
@@ -150,5 +152,25 @@
 
 	RING_API void ring_vm_api_floatvalue ( void *pPointer,const char  *cStr ) ;
 
+	RING_API List * ring_vm_api_newlist ( VM *pVM ) ;
+
 	RING_API List * ring_vm_api_newlistusingblocks ( VM *pVM, int nSize, int nSize2 ) ;
+
+	RING_API List * ring_vm_api_callerscope ( VM *pVM ) ;
+
+	RING_API int ring_vm_api_scopescount ( VM *pVM ) ;
+
+	RING_API int ring_vm_api_paracount ( VM *pVM ) ;
+
+	RING_API void ring_vm_api_ignorecpointertypecheck ( VM *pVM ) ;
+
+	RING_API void ring_vm_api_retnumber ( VM *pVM,double nNumber ) ;
+
+	RING_API void ring_vm_api_retstring ( VM *pVM,const char *cStr ) ;
+
+	RING_API void ring_vm_api_retstring2 ( VM *pVM,const char *cStr,int nSize ) ;
+
+	RING_API void ring_vm_api_retstringsize ( VM *pVM,int nSize ) ;
+
+	RING_API String * ring_vm_api_getstringraw ( VM *pVM ) ;
 #endif

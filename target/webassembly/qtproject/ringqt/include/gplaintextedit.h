@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GPLAINTEXTEDIT_H
 #define GPLAINTEXTEDIT_H
 #include "ringqt.h"
 #include <QPlainTextEdit>
+
 extern "C" {
 #include "ring.h"
 }
@@ -69,6 +70,8 @@ class GPlainTextEdit : public QPlainTextEdit
     void textChangedSlot();
     void undoAvailableSlot();
     void updateRequestSlot();
+
+
 
 };
 

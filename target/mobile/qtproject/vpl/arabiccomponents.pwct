@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'english'
-nStepsID                 = 613		
-nInteractionsID          = 595
+nStepsID                 = 635		
+nInteractionsID          = 610
 
 aStepsTable = [
 	[
@@ -1220,6 +1220,500 @@ aStepsTable = [
 			[
 				"plainname",
 				""
+			]
+		]
+	],
+	[
+		614,
+		12,
+		[
+			[
+				"name",
+				"جمع"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"sum"
+			],
+			[
+				"interactionid",
+				596
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"جمع"
+			]
+		]
+	],
+	[
+		615,
+		12,
+		[
+			[
+				"name",
+				"طرح"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"subtract"
+			],
+			[
+				"interactionid",
+				597
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"طرح"
+			]
+		]
+	],
+	[
+		616,
+		12,
+		[
+			[
+				"name",
+				"ضرب"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"multiplication"
+			],
+			[
+				"interactionid",
+				598
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"ضرب"
+			]
+		]
+	],
+	[
+		617,
+		12,
+		[
+			[
+				"name",
+				"قسمة"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"division"
+			],
+			[
+				"interactionid",
+				599
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"قسمة"
+			]
+		]
+	],
+	[
+		618,
+		12,
+		[
+			[
+				"name",
+				"باقي&nbsp;القسمة"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"modulus"
+			],
+			[
+				"interactionid",
+				600
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"باقي القسمة"
+			]
+		]
+	],
+	[
+		619,
+		12,
+		[
+			[
+				"name",
+				"زيادة"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"increment"
+			],
+			[
+				"interactionid",
+				601
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"زيادة"
+			]
+		]
+	],
+	[
+		620,
+		12,
+		[
+			[
+				"name",
+				"نقصان"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"decrement"
+			],
+			[
+				"interactionid",
+				602
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"نقصان"
+			]
+		]
+	],
+	[
+		621,
+		12,
+		[
+			[
+				"name",
+				"هل&nbsp;يساوي"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"equal"
+			],
+			[
+				"interactionid",
+				603
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"هل يساوي"
+			]
+		]
+	],
+	[
+		623,
+		12,
+		[
+			[
+				"name",
+				"هل&nbsp;لايساوي"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"notequal"
+			],
+			[
+				"interactionid",
+				604
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"هل لايساوي"
+			]
+		]
+	],
+	[
+		625,
+		12,
+		[
+			[
+				"name",
+				"اكبر&nbsp;من"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"greaterthan"
+			],
+			[
+				"interactionid",
+				605
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"اكبر من"
+			]
+		]
+	],
+	[
+		627,
+		12,
+		[
+			[
+				"name",
+				"اكبر&nbsp;من&nbsp;او&nbsp;يساوي"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"greaterthanorequal"
+			],
+			[
+				"interactionid",
+				606
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"اكبر من او يساوي"
+			]
+		]
+	],
+	[
+		629,
+		12,
+		[
+			[
+				"name",
+				"اصغر&nbsp;من"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"lessthan"
+			],
+			[
+				"interactionid",
+				607
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"اصغر من"
+			]
+		]
+	],
+	[
+		631,
+		12,
+		[
+			[
+				"name",
+				"اصغر&nbsp;من&nbsp;او&nbsp;يساوي"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"lessthanorequal"
+			],
+			[
+				"interactionid",
+				608
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"اصغر من او يساوي"
 			]
 		]
 	],
@@ -15741,8 +16235,8 @@ aStepsTable = [
 		]
 	],
 	[
-		611,
-		1,
+		633,
+		505,
 		[
 			[
 				"name",
@@ -15758,7 +16252,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				594
+				609
 			],
 			[
 				"visible",
@@ -15779,8 +16273,8 @@ aStepsTable = [
 		]
 	],
 	[
-		612,
-		611,
+		634,
+		633,
 		[
 			[
 				"name",
@@ -15796,7 +16290,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				595
+				610
 			],
 			[
 				"visible",
@@ -19132,7 +19626,111 @@ aInteractionsTable = [
 		"value;;_RV_;;الهيكل العام;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
-		594,
+		596,
+		1,
+		"comment_text",
+		"24/12/2024",
+		"14:17:27",
+		"value;;_RV_;;جمع;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		597,
+		1,
+		"comment_text",
+		"24/12/2024",
+		"14:17:33",
+		"value;;_RV_;;طرح;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		598,
+		1,
+		"comment_text",
+		"24/12/2024",
+		"14:17:36",
+		"value;;_RV_;;ضرب;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		599,
+		1,
+		"comment_text",
+		"24/12/2024",
+		"14:17:40",
+		"value;;_RV_;;قسمة;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		600,
+		1,
+		"comment_text",
+		"24/12/2024",
+		"14:17:45",
+		"value;;_RV_;;باقي القسمة;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		601,
+		1,
+		"comment_text",
+		"24/12/2024",
+		"14:17:50",
+		"value;;_RV_;;زيادة;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		602,
+		1,
+		"comment_text",
+		"24/12/2024",
+		"14:17:54",
+		"value;;_RV_;;نقصان;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		603,
+		1,
+		"comment_text",
+		"24/12/2024",
+		"14:17:54",
+		"value;;_RV_;;هل يساوي;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		604,
+		1,
+		"comment_text",
+		"24/12/2024",
+		"14:17:54",
+		"value;;_RV_;;هل لايساوي;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		605,
+		1,
+		"comment_text",
+		"24/12/2024",
+		"14:17:54",
+		"value;;_RV_;;اكبر من;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		606,
+		1,
+		"comment_text",
+		"24/12/2024",
+		"14:17:54",
+		"value;;_RV_;;اكبر من او يساوي;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		607,
+		1,
+		"comment_text",
+		"24/12/2024",
+		"14:17:54",
+		"value;;_RV_;;اصغر من;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		608,
+		1,
+		"comment_text",
+		"24/12/2024",
+		"14:17:54",
+		"value;;_RV_;;اصغر من او يساوي;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		609,
 		1,
 		"comment_text",
 		"13/10/2021",
@@ -19140,7 +19738,7 @@ aInteractionsTable = [
 		"value;;_RV_;;المزيد;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
-		595,
+		610,
 		1,
 		"comment_text",
 		"13/10/2021",

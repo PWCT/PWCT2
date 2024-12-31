@@ -1,11 +1,11 @@
 
-/* Copyright (c) 2013-2020 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 extern "C" {
 #include "ring.h"
 }
 #include "gaction.h"
 
-GAction::GAction(QWidget *parent,VM *pVM)  : QAction(parent)
+GAction::GAction(QObject *parent,VM *pVM)  : QAction(parent)
 {
 	this->pVM = pVM;
 	this->pParaList = ring_list_new(0);

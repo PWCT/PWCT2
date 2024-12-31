@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GBLUETOOTHTRANSFERREPLY_H
 #define GBLUETOOTHTRANSFERREPLY_H
 #include "ringqt.h"
 #include <QBluetoothTransferReply>
+
 extern "C" {
 #include "ring.h"
 }
@@ -45,6 +46,8 @@ class GBluetoothTransferReply : public QBluetoothTransferReply
     void errorSlot();
     void finishedSlot();
     void transferProgressSlot();
+
+
 
 };
 

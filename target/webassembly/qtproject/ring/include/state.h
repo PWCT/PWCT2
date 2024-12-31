@@ -21,8 +21,6 @@
 		List *pRingPackagesMap  ;
 		/* Custom global scope list */
 		List *pCustomGlobalScopeStack  ;
-		/* First use by ring_vm_new */
-		List *pRingCFunctions  ;
 		/* Command line parameters count */
 		int nArgc  ;
 		/* Scanner Error Code */
@@ -74,11 +72,11 @@
 		unsigned int lStartPoolManager : 1  ;
 		unsigned int lDisablePoolManager : 1  ;
 		unsigned int lCreateListsUsingBlocks : 1  ;
-		unsigned int lDontCheckStateBlocks : 1  ;
 		/* Pool Manager */
 		PoolManager vPoolManager  ;
 	} RingState ;
-	#define RING_STATE_VERSION "1.20"
+	#define RING_STATE_VERSION "1.22"
+	#define RING_STATE_VERSIONANDPATCH (RING_STATE_VERSION ".0")
 	#define RING_WARNING_UNKNOWNOPTION "Warning (W1): Unrecognized option: "
 	#define RING_WARNING_DUPLICATIONINFILENAME "Warning (W2) : Duplication in file name : "
 	#define RING_WARNING_CHANGEKEYWORDPARA "Warning (W3) : The Compiler command  ChangeRingKeyword requires two words as parameters"
@@ -129,6 +127,10 @@
 	RING_API void ring_state_runobjectstring ( RingState *pRingState,char *cString,const char *cFileName ) ;
 
 	RING_API void ring_state_runprogram ( RingState *pRingState ) ;
+
+	RING_API void ring_state_newbytecode ( RingState *pRingState,int nSize,int lLiteral ) ;
+
+	RING_API void ring_state_runbytecode ( RingState *pRingState ) ;
 
 	RING_API void ring_state_log ( RingState *pRingState,const char *cStr ) ;
 

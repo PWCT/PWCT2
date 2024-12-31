@@ -8,7 +8,7 @@
 	*/
 	#define ring_vm_gc_cleardata(pItem) pItem->nGCReferenceCount = 0; pItem->pGCFreeFunc = NULL
 
-	void ring_vm_gc_checknewreference ( void *pPointer,int nType,List *pContainer, int nIndex ) ;
+	void ring_vm_gc_checknewreference ( VM *pVM,void *pPointer,int nType,List *pContainer, int nIndex ) ;
 
 	void ring_vm_gc_checkupdatereference ( VM *pVM,List *pList ) ;
 
@@ -28,6 +28,8 @@
 	void ring_vm_gc_listpointerismine ( List *pList,int nIndex ) ;
 
 	void ring_vm_gc_listpointerisnotmine ( List *pList,int nIndex ) ;
+
+	void ring_vm_gc_removetrack ( RingState *pState,List *pList ) ;
 	/*
 	**  List GC Functions 
 	**  Copy list by Reference 
@@ -107,6 +109,20 @@
 	RING_API void ring_list_disableerroronassignment2 ( List *pList ) ;
 
 	RING_API int ring_list_iserroronassignment2 ( List *pList ) ;
+	/* Argument Type */
+
+	void ring_list_setlisttype ( List *pList,int nType ) ;
+
+	int ring_list_getlisttype ( List *pList ) ;
+
+	int ring_list_isargcache ( List *pList ) ;
+
+	void ring_list_enableargcache ( List *pList ) ;
+	/* Don't Delete */
+
+	RING_API void ring_list_enabledontdelete ( List *pList ) ;
+
+	RING_API void ring_list_disabledontdelete ( List *pList ) ;
 	/* Memory Functions (General) */
 
 	RING_API void * ring_malloc ( size_t nSize ) ;
@@ -131,8 +147,8 @@
 	RING_API void ring_state_registerblock ( void *pState,void *pStart, void *pEnd ) ;
 
 	RING_API void ring_state_unregisterblock ( void *pState,void *pStart ) ;
-	/* Macro */
-	#define GCLog 0
+
+	RING_API void ring_state_willunregisterblock ( void *pState,void *pStart ) ;
 	/* Pool Manager Functions */
 
 	void ring_poolmanager_newblock ( RingState *pRingState ) ;

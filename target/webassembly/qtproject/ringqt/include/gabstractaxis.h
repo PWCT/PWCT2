@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GABSTRACTAXIS_H
 #define GABSTRACTAXIS_H
 #include "ringqt.h"
 #include <QtCharts/QAbstractAxis>
+
 extern "C" {
 #include "ring.h"
 }
@@ -137,6 +138,8 @@ class GAbstractAxis : public QtCharts::QAbstractAxis
     void titleTextChangedSlot();
     void titleVisibleChangedSlot();
     void visibleChangedSlot();
+
+
 
 };
 

@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GFRAMEACTION_H
 #define GFRAMEACTION_H
 #include "ringqt.h"
 #include <Qt3DLogic/QFrameAction>
+
 extern "C" {
 #include "ring.h"
 }
@@ -37,6 +38,8 @@ class GFrameAction : public Qt3DLogic::QFrameAction
   public slots:
 
     void triggeredSlot();
+
+
 
 };
 

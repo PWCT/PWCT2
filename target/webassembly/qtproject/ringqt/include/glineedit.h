@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GLINEEDIT_H
 #define GLINEEDIT_H
 #include "ringqt.h"
 #include <QLineEdit>
+
 extern "C" {
 #include "ring.h"
 }
@@ -57,6 +58,8 @@ class GLineEdit : public QLineEdit
     void returnPressedSlot();
     void selectionChangedSlot();
     void textEditedSlot();
+
+
 
 };
 

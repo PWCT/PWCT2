@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GCANDLESTICKMODELMAPPER_H
 #define GCANDLESTICKMODELMAPPER_H
 #include "ringqt.h"
 #include <QtCharts>
+
 extern "C" {
 #include "ring.h"
 }
@@ -41,6 +42,8 @@ class GCandlestickModelMapper : public QtCharts::QCandlestickModelMapper
 
     void modelReplacedSlot();
     void seriesReplacedSlot();
+
+
 
 };
 

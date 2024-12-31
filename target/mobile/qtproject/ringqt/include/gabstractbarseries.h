@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GABSTRACTBARSERIES_H
 #define GABSTRACTBARSERIES_H
 #include "ringqt.h"
 #include <QtCharts/QAbstractBarSeries>
+
 extern "C" {
 #include "ring.h"
 }
@@ -85,6 +86,8 @@ class GAbstractBarSeries : public QtCharts::QAbstractBarSeries
     void labelsVisibleChangedSlot();
     void pressedSlot();
     void releasedSlot();
+
+
 
 };
 

@@ -5,12 +5,16 @@
 RING_API void ring_vm_funcregister2 ( RingState *pRingState,const char *cStr, void (*pFunc)(void *) )
 {
 	List *pList  ;
-	if ( pRingState->pRingCFunctions == NULL ) {
-		pRingState->pRingCFunctions = ring_list_new_gc(pRingState,RING_ZERO);
-	}
-	pList = ring_list_newlist_gc(pRingState,pRingState->pRingCFunctions);
-	ring_list_addstring_gc(pRingState,pList,cStr);
-	ring_list_addfuncpointer_gc(pRingState,pList,pFunc);
+	CFunction *pCFunc  ;
+	#if RING_LOWMEM
+		pCFunc = (CFunction *) ring_state_malloc(NULL,sizeof(CFunction));
+	#else
+		pCFunc = (CFunction *) ring_state_malloc(pRingState,sizeof(CFunction));
+	#endif
+	pCFunc->cName = cStr ;
+	pCFunc->pFunc = pFunc ;
+	pCFunc->pNext = pRingState->pVM->pCFunction ;
+	pRingState->pVM->pCFunction = pCFunc ;
 }
 
 RING_API void ring_vm_loadcfunctions ( RingState *pRingState )
@@ -22,12 +26,66 @@ RING_API void ring_vm_loadcfunctions ( RingState *pRingState )
 
 RING_API int ring_vm_api_isstring ( void *pPointer,int nPara )
 {
-	return ring_list_isstring(RING_API_PARALIST,nPara) ;
+	VM *pVM  ;
+	pVM = (VM *) pPointer ;
+	return RING_VM_STACK_ISSTRINGVALUE(pVM->nCFuncSP + nPara) ;
 }
 
 RING_API int ring_vm_api_isnumber ( void *pPointer,int nPara )
 {
-	return ring_list_isdouble(RING_API_PARALIST,nPara) ;
+	VM *pVM  ;
+	pVM = (VM *) pPointer ;
+	return RING_VM_STACK_ISNUMBERVALUE(pVM->nCFuncSP + nPara) ;
+}
+
+RING_API int ring_vm_api_isptr ( void *pPointer,int nPara )
+{
+	VM *pVM  ;
+	pVM = (VM *) pPointer ;
+	return RING_VM_STACK_ISPOINTERVALUE(pVM->nCFuncSP + nPara) ;
+}
+
+RING_API void ring_vm_api_setptr ( void *pPointer,int nPara,void *pPtr,int nType )
+{
+	VM *pVM  ;
+	pVM = (VM *) pPointer ;
+	RING_VM_STACK_SETPVALUEAT(pVM->nCFuncSP + nPara,pPtr);
+	RING_VM_STACK_OBJTYPEVALUE(pVM->nCFuncSP + nPara) = nType ;
+}
+
+RING_API char * ring_vm_api_getstring ( void *pPointer,int nPara )
+{
+	VM *pVM  ;
+	pVM = (VM *) pPointer ;
+	return RING_VM_STACK_READCVALUE(pVM->nCFuncSP + nPara) ;
+}
+
+RING_API int ring_vm_api_getstringsize ( void *pPointer,int nPara )
+{
+	VM *pVM  ;
+	pVM = (VM *) pPointer ;
+	return RING_VM_STACK_STRINGSIZEVALUE(pVM->nCFuncSP + nPara) ;
+}
+
+RING_API double ring_vm_api_getnumber ( void *pPointer,int nPara )
+{
+	VM *pVM  ;
+	pVM = (VM *) pPointer ;
+	return RING_VM_STACK_READNVALUE(pVM->nCFuncSP + nPara) ;
+}
+
+RING_API void * ring_vm_api_getpointer ( void *pPointer,int nPara )
+{
+	VM *pVM  ;
+	pVM = (VM *) pPointer ;
+	return RING_VM_STACK_READPVALUE(pVM->nCFuncSP + nPara) ;
+}
+
+RING_API int ring_vm_api_getpointertype ( void *pPointer,int nPara )
+{
+	VM *pVM  ;
+	pVM = (VM *) pPointer ;
+	return RING_VM_STACK_OBJTYPEVALUE(pVM->nCFuncSP + nPara) ;
 }
 
 RING_API int ring_vm_api_islist ( void *pPointer,int nPara )
@@ -35,7 +93,7 @@ RING_API int ring_vm_api_islist ( void *pPointer,int nPara )
 	int nType  ;
 	VM *pVM  ;
 	pVM = (VM *) pPointer ;
-	if ( ring_list_ispointer(RING_API_PARALIST,nPara) ) {
+	if ( ring_vm_api_isptr(pPointer,nPara) ) {
 		nType = RING_API_GETPOINTERTYPE(nPara);
 		if ( nType == RING_OBJTYPE_VARIABLE || nType == RING_OBJTYPE_LISTITEM ) {
 			return 1 ;
@@ -60,18 +118,21 @@ RING_API int ring_vm_api_ispointer ( void *pPointer,int nPara )
 {
 	List *pList, *pList2  ;
 	VM *pVM  ;
-	Item *pItem  ;
 	pVM = (VM *) pPointer ;
-	if ( ring_list_ispointer(RING_API_PARALIST,nPara) ) {
+	if ( ring_vm_api_isptr(pPointer,nPara) ) {
 		return 1 ;
 	}
 	if ( RING_API_ISSTRING(nPara) ) {
 		/* Treat NULL Strings as NULL Pointers - so we can use NULL instead of NULLPOINTER() */
-		if ( (strcmp(RING_API_GETSTRING(nPara),"") == 0) || (strcmp(RING_API_GETSTRING(nPara),"NULL") == 0) ) {
+		if ( (strcmp(RING_API_GETSTRING(nPara),RING_CSTR_EMPTY) == 0) || (strcmp(RING_API_GETSTRING(nPara),RING_CSTR_NULL) == 0) ) {
 			/* Create the list for the NULL Pointer */
 			pList2 = RING_API_NEWLIST ;
-			pItem = ring_list_getitem(pVM->pActiveMem,ring_list_getsize(pVM->pActiveMem));
-			ring_list_setpointerandtype_gc(pVM->pRingState,RING_API_PARALIST,nPara,pItem,RING_OBJTYPE_LISTITEM);
+			/* Create the variable */
+			pList = ring_vm_newvar2(pVM,RING_TEMP_VAR,pList2);
+			ring_list_setint_gc(pVM->pRingState,pList,RING_VAR_TYPE,RING_VM_LIST);
+			ring_list_setlist_gc(pVM->pRingState,pList,RING_VAR_VALUE);
+			pList2 = ring_list_getlist(pList,RING_VAR_VALUE);
+			ring_vm_api_setptr(pPointer,nPara,pList,RING_OBJTYPE_VARIABLE);
 			/* The variable value will be a list contains the pointer */
 			ring_list_addpointer_gc(pVM->pRingState,pList2,NULL);
 			/* Add the pointer type */
@@ -82,31 +143,6 @@ RING_API int ring_vm_api_ispointer ( void *pPointer,int nPara )
 		}
 	}
 	return 0 ;
-}
-
-RING_API char * ring_vm_api_getstring ( void *pPointer,int nPara )
-{
-	return ring_list_getstring(RING_API_PARALIST,nPara) ;
-}
-
-RING_API int ring_vm_api_getstringsize ( void *pPointer,int nPara )
-{
-	return ring_list_getstringsize(RING_API_PARALIST,nPara) ;
-}
-
-RING_API double ring_vm_api_getnumber ( void *pPointer,int nPara )
-{
-	return ring_list_getdouble(RING_API_PARALIST,nPara) ;
-}
-
-RING_API void * ring_vm_api_getpointer ( void *pPointer,int nPara )
-{
-	return ring_list_getpointer(RING_API_PARALIST,nPara) ;
-}
-
-RING_API int ring_vm_api_getpointertype ( void *pPointer,int nPara )
-{
-	return ring_list_getpointertype(RING_API_PARALIST,nPara) ;
 }
 
 RING_API List * ring_vm_api_getlist ( void *pPointer,int nPara )
@@ -131,13 +167,6 @@ RING_API List * ring_vm_api_getlist ( void *pPointer,int nPara )
 RING_API void ring_vm_api_retlist ( void *pPointer,List *pList )
 {
 	ring_vm_api_retlist2(pPointer,pList,RING_OUTPUT_RETLIST);
-}
-
-RING_API List * ring_vm_api_newlist ( VM *pVM )
-{
-	List *pList  ;
-	pList = ring_list_newlist_gc(pVM->pRingState,pVM->pActiveMem);
-	return pList ;
 }
 
 RING_API void ring_vm_api_retcpointer2 ( void *pPointer,void *pGeneral,const char *cType, void (* pFreeFunc)(void *,void *) )
@@ -219,7 +248,7 @@ RING_API void * ring_vm_api_varptr ( void *pPointer,const char  *cStr,const char
 	pVM = (VM *) pPointer ;
 	/* Set the Active Scope */
 	pActiveMem = pVM->pActiveMem ;
-	pVM->pActiveMem = ring_list_getlist(pVM->pMem,ring_list_getsize(pVM->pMem)-1);
+	pVM->pActiveMem = RING_API_CALLERSCOPE ;
 	if ( ring_vm_findvar(pVM, cStr ) == 0 ) {
 		/* Restore the Active Scope */
 		pVM->pActiveMem = pActiveMem ;
@@ -265,7 +294,7 @@ RING_API void ring_vm_api_varvalue ( void *pPointer,const char  *cStr,int nType 
 	pVM = (VM *) pPointer ;
 	/* Set the Active Scope */
 	pActiveMem = pVM->pActiveMem ;
-	pVM->pActiveMem = ring_list_getlist(pVM->pMem,ring_list_getsize(pVM->pMem)-1);
+	pVM->pActiveMem = RING_API_CALLERSCOPE ;
 	if ( ring_vm_findvar(pVM, cStr ) == 0 ) {
 		/* Restore the Active Scope */
 		pVM->pActiveMem = pActiveMem ;
@@ -399,9 +428,8 @@ RING_API void ring_vm_api_retlist2 ( void *pPointer,List *pList,int nRef )
 			ring_list_disabledontref(pList);
 			/* Take in mind ref(ref(ref(new obj))) */
 			ring_list_enabledontrefagain(pList);
-			pVM->lDontMoveToPrevScope = ring_vm_oop_isobject(pList) ;
 			/* Keep the same object (Ref() parameter) on the Stack (i.e. Return para. as output) */
-			RING_VM_SP_INC ;
+			ring_vm_stack_dup(pVM);
 			return ;
 		}
 	}
@@ -429,7 +457,6 @@ RING_API void ring_vm_api_retlist2 ( void *pPointer,List *pList,int nRef )
 	else {
 		/* Used by RING_API_RETNEWREF (i.e. Ref()/Reference() function implementation) */
 		pVariableList = ring_list_newref_gc(((VM *) pPointer)->pRingState,pVariableList,pList);
-		pVM->lDontMoveToPrevScope = 1 ;
 	}
 	if ( (nRef == RING_OUTPUT_RETLIST) || (nRef == RING_OUTPUT_RETLISTBYREF) ) {
 		/* Update self object pointer */
@@ -437,8 +464,8 @@ RING_API void ring_vm_api_retlist2 ( void *pPointer,List *pList,int nRef )
 			ring_vm_oop_updateselfpointer(pVM,pRealList,RING_OBJTYPE_VARIABLE,pVariableList);
 		}
 	}
-	RING_API_PUSHPVALUE(pVariableList);
-	RING_API_OBJTYPE = RING_OBJTYPE_VARIABLE ;
+	RING_VM_STACK_PUSHPVALUE(pVariableList);
+	RING_VM_STACK_OBJTYPE = RING_OBJTYPE_VARIABLE ;
 }
 
 RING_API void ring_vm_api_intvalue ( void *pPointer,const char  *cStr )
@@ -451,16 +478,31 @@ RING_API void ring_vm_api_floatvalue ( void *pPointer,const char  *cStr )
 	ring_vm_api_varvalue(pPointer,cStr,RING_VARVALUE_FLOAT);
 }
 
+RING_API List * ring_vm_api_newlist ( VM *pVM )
+{
+	List *pList  ;
+	FuncCall *pFuncCall  ;
+	pFuncCall = RING_VM_LASTFUNCCALL ;
+	pList = ring_list_newlist_gc(pVM->pRingState,ring_vm_prevtempmem(pVM));
+	return pList ;
+}
+
 RING_API List * ring_vm_api_newlistusingblocks ( VM *pVM, int nSize, int nSize2 )
 {
 	List *pList, *pList2, *pList3, *pSubLists  ;
-	int x,y  ;
+	int x, y, lUseBlocks  ;
 	Items *pItems  ;
 	Item *pItem  ;
 	pList = ring_vm_api_newlist(pVM) ;
 	#if RING_USEPOOLMANAGER
-		/* Check if we can use blocks */
-		if ( pVM->pRingState->lCreateListsUsingBlocks ) {
+		/*
+		**  Check if we can use blocks 
+		**  Prepare the condition 
+		*/
+		lUseBlocks = pVM->pRingState->lCreateListsUsingBlocks &&
+		( ! ( (nSize < RING_API_MINLISTSIZEFORUSINGBLOCKS) && (nSize2 == -1) )   ||
+		! ( (nSize * nSize2) < RING_API_MINLISTSIZEFORUSINGBLOCKS ) ) ;
+		if ( lUseBlocks ) {
 			if ( (nSize > 0) && (nSize2 == -1) ) {
 				/*
 				**  Allocate Memory 
@@ -496,7 +538,6 @@ RING_API List * ring_vm_api_newlistusingblocks ( VM *pVM, int nSize, int nSize2 
 					pItem->data.dNumber = 0 ;
 					pItem->nNumberFlag = ITEM_NUMBERFLAG_DOUBLE ;
 				}
-				/* Set the List Data */
 				pList->nSize = nSize ;
 			}
 			else if ( (nSize > 0) && (nSize2 > 0) ) {
@@ -537,7 +578,6 @@ RING_API List * ring_vm_api_newlistusingblocks ( VM *pVM, int nSize, int nSize2 
 					pItem->data.pList = pSubLists ;
 					ring_list_new2_gc(pVM->pRingState,pItem->data.pList,RING_ZERO);
 				}
-				/* Set the List Data */
 				pList->nSize = nSize ;
 				/* Allocate Memory */
 				pItems = (Items *) ring_calloc((nSize*nSize2)+1,sizeof(Items));
@@ -571,13 +611,15 @@ RING_API List * ring_vm_api_newlistusingblocks ( VM *pVM, int nSize, int nSize2 
 						pItem->data.dNumber = 0 ;
 						pItem->nNumberFlag = ITEM_NUMBERFLAG_DOUBLE ;
 					}
-					/* Set the Sub List Data */
 					pList2->nSize = nSize2 ;
+					/* Set the Sub List Cache */
+					ring_list_clearcache(pVM->pRingState,pList2);
+					ring_list_genarray(pList2);
 				}
-				/* Set the List Data */
-				pList->nNextItemAfterLastAccess = 0 ;
-				pList->pLastItemLastAccess = NULL ;
 			}
+			/* Set the List Cache */
+			ring_list_clearcache(pVM->pRingState,pList);
+			ring_list_genarray(pList);
 			return pList ;
 		}
 	#endif
@@ -594,8 +636,54 @@ RING_API List * ring_vm_api_newlistusingblocks ( VM *pVM, int nSize, int nSize2 
 			ring_list_delete_gc(pVM->pRingState,pList3);
 		}
 	}
-	/* Set the List Data */
-	pList->nNextItemAfterLastAccess = 0 ;
-	pList->pLastItemLastAccess = NULL ;
+	/* Set the List Cache */
+	ring_list_clearcache(pVM->pRingState,pList);
+	ring_list_genarray(pList);
 	return pList ;
+}
+
+RING_API List * ring_vm_api_callerscope ( VM *pVM )
+{
+	return RING_VM_GETLASTSCOPE ;
+}
+
+RING_API int ring_vm_api_scopescount ( VM *pVM )
+{
+	return RING_VM_SCOPESCOUNT ;
+}
+
+RING_API int ring_vm_api_paracount ( VM *pVM )
+{
+	return pVM->nCFuncParaCount ;
+}
+
+RING_API void ring_vm_api_ignorecpointertypecheck ( VM *pVM )
+{
+	pVM->lIgnoreCPointerTypeCheck = 1 ;
+}
+
+RING_API void ring_vm_api_retnumber ( VM *pVM,double nNumber )
+{
+	RING_VM_STACK_PUSHNVALUE(nNumber);
+}
+
+RING_API void ring_vm_api_retstring ( VM *pVM,const char *cStr )
+{
+	RING_VM_STACK_PUSHCVALUE(cStr) ;
+}
+
+RING_API void ring_vm_api_retstring2 ( VM *pVM,const char *cStr,int nSize )
+{
+	RING_VM_STACK_PUSHCVALUE2(cStr,nSize) ;
+}
+
+RING_API void ring_vm_api_retstringsize ( VM *pVM,int nSize )
+{
+	RING_VM_SP_INC ;
+	ring_itemarray_setstring2_gc(pVM->pRingState,pVM->aStack,pVM->nSP,NULL,nSize);
+}
+
+RING_API String * ring_vm_api_getstringraw ( VM *pVM )
+{
+	return ring_itemarray_getstringraw(pVM->aStack,pVM->nSP) ;
 }

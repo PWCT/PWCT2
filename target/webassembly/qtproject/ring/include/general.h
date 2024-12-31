@@ -5,6 +5,9 @@
 	/* Windows only */
 	#include <direct.h>
 	#define GetCurrentDir _getcwd
+	#ifndef RING_EXTENSION
+		#include <windows.h>
+	#endif
 #else
 	#if RING_MSDOS
 	#else
@@ -48,3 +51,5 @@ void ring_general_addosfileseparator ( char *cFileName ) ;
 int ring_general_folderexistinfilename ( const char *cFolderName,const char *cFileName ) ;
 
 RING_API char * ring_general_numtostring ( double nNum1,char *cStr,int nDecimals ) ;
+
+void ring_general_readline ( char *cLine, unsigned int nSize ) ;

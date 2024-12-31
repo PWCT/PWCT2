@@ -12,8 +12,8 @@
 		struct Items *pFirst  ;
 		struct Items *pLast  ;
 		unsigned int nSize  ;
-		unsigned int nNextItemAfterLastAccess  ;
-		struct Items *pLastItemLastAccess  ;
+		unsigned int nNextItem  ;
+		struct Items *pLastItem  ;
 		struct Item **pItemsArray  ;
 		struct HashTable *pHashTable  ;
 		struct ListBlocks *pBlocks  ;
@@ -30,8 +30,8 @@
 	#define RING_LISTBLOCKTYPE_LIST 3
 	#define RING_LIST_KEYINDEX 1
 	/* Macro */
-	#define ring_list_isdouble(pList,nIndex) ( ring_list_getitem(pList,nIndex)->nNumberFlag == ITEM_NUMBERFLAG_DOUBLE)
-	#define ring_list_isint(pList,nIndex) ( ring_list_getitem(pList,nIndex)->nNumberFlag == ITEM_NUMBERFLAG_INT )
+	#define ring_list_isdouble(pList,nIndex) (ring_list_gettype(pList,nIndex) == ITEMTYPE_NUMBER) && ( ring_list_getitem(pList,nIndex)->nNumberFlag == ITEM_NUMBERFLAG_DOUBLE)
+	#define ring_list_isint(pList,nIndex) (ring_list_gettype(pList,nIndex) == ITEMTYPE_NUMBER) && ( ring_list_getitem(pList,nIndex)->nNumberFlag == ITEM_NUMBERFLAG_INT )
 	#define ring_list_deletelastitem(pList) ring_list_deleteitem(pList,ring_list_getsize(pList))
 	#define ring_list_gethashtable(pList) (pList->pHashTable)
 	#define ring_list_getint(pList,nIndex) ( ring_list_getitem(pList,nIndex)->data.iNumber )
@@ -57,6 +57,8 @@
 
 	RING_API Item * ring_list_newitem_gc ( void *pState,List *pList ) ;
 
+	RING_API void ring_list_newitembyitemsptr_gc ( void *pState,List *pList,Items *pItems ) ;
+
 	RING_API Item * ring_list_getitem ( List *pList,unsigned int nIndex ) ;
 
 	RING_API List * ring_list_delete_gc ( void *pState,List *pList ) ;
@@ -67,9 +69,13 @@
 
 	RING_API int ring_list_gettype ( List *pList, unsigned int nIndex ) ;
 
-	RING_API void ring_list_clear ( List *pList ) ;
-
 	RING_API void ring_list_addblock_gc ( void *pState,List *pList,void *pMemory,int nType ) ;
+
+	RING_API void ring_list_clearcache ( void *pState,List *pList ) ;
+
+	RING_API void ring_list_setcache ( void *pState,List *pList, struct Items *pItems, unsigned int nNextItem ) ;
+
+	RING_API Items * ring_list_getitemcontainer ( List *pList,unsigned int nIndex ) ;
 	/* int */
 
 	RING_API void ring_list_setint_gc ( void *pState,List *pList, unsigned int nIndex ,int nNumber ) ;
@@ -113,6 +119,8 @@
 
 	RING_API List * ring_list_getlist ( List *pList, unsigned int nIndex ) ;
 
+	RING_API List * ring_list_newlistbyptr_gc ( void *pState,List *pList,List *pNewList ) ;
+
 	RING_API void ring_list_copy_gc ( void *pState,List *pNewList, List *pList ) ;
 
 	RING_API int ring_list_isnumber ( List *pList, unsigned int nIndex ) ;
@@ -124,6 +132,8 @@
 	RING_API int ring_list_ispointer ( List *pList, unsigned int nIndex ) ;
 
 	RING_API void ring_list_deleteallitems_gc ( void *pState,List *pList ) ;
+
+	RING_API void ring_list_finishdelete_gc ( void *pState,List *pList ) ;
 	/* Insert Items */
 
 	RING_API void ring_list_insertitem_gc ( void *pState,List *pList,unsigned int x ) ;

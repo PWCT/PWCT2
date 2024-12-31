@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GSCATTERSERIES_H
 #define GSCATTERSERIES_H
 #include "ringqt.h"
 #include <QtCharts>
+
 extern "C" {
 #include "ring.h"
 }
@@ -49,6 +50,8 @@ class GScatterSeries : public QtCharts::QScatterSeries
     void colorChangedSlot();
     void markerShapeChangedSlot();
     void markerSizeChangedSlot();
+
+
 
 };
 

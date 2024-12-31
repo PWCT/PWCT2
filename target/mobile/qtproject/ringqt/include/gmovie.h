@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GMOVIE_H
 #define GMOVIE_H
 #include "ringqt.h"
 #include <QtGui>
+
 extern "C" {
 #include "ring.h"
 }
@@ -61,6 +62,8 @@ class GMovie : public QMovie
     void startedSlot();
     void stateChangedSlot();
     void updatedSlot();
+
+
 
 };
 

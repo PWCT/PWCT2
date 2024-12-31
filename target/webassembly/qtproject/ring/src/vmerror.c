@@ -20,8 +20,8 @@ RING_API void ring_vm_error ( VM *pVM,const char *cStr )
 				if ( ring_vm_oop_isobject(pList) ) {
 					if ( ring_vm_oop_ismethod(pVM, pList,RING_CSTR_BRACEERROR) ) {
 						pVM->lActiveError = 0 ;
-						ring_list_setstring_gc(pVM->pRingState,ring_list_getlist(ring_vm_getglobalscope(pVM),RING_GLOBALVARPOS_ERRORMSG),RING_VAR_VALUE,cStr);
-						ring_vm_eval(pVM,RING_CSTR_RETBRACEERROR);
+						ring_list_setstring_gc(pVM->pRingState,ring_list_getlist(pVM->pDefinedGlobals,RING_GLOBALVARPOS_ERRORMSG),RING_VAR_VALUE,cStr);
+						ring_vm_callfuncwithouteval(pVM, RING_CSTR_BRACEERROR, RING_TRUE);
 						return ;
 					}
 				}
@@ -35,14 +35,14 @@ RING_API void ring_vm_error ( VM *pVM,const char *cStr )
 		}
 		/* Trace */
 		pVM->lActiveError = 0 ;
-		ring_vm_traceevent(pVM,RING_VM_TRACEEVENT_ERROR);
+		RING_VM_TRACEEVENT(RING_VM_TRACEEVENT_ERROR);
 		if ( pVM->lPassError  == 1 ) {
 			pVM->lPassError = 0 ;
 			return ;
 		}
 		pVM->lActiveError = 1 ;
 		if ( pVM->pRingState->nRingInsideRing == 0 ) {
-			exit(RING_EXIT_OK);
+			exit(RING_EXIT_FAIL);
 		}
 		else {
 			ring_vm_bye(pVM);
@@ -90,8 +90,8 @@ RING_API void ring_vm_showerrormessage ( VM *pVM,const char *cStr )
 	cOldFile = NULL ;
 	lFunctionCall = 0 ;
 	nRecursion = 0 ;
-	for ( x = ring_list_getsize(pVM->pFuncCallList) ; x >= 1 ; x-- ) {
-		pFuncCall = (FuncCall *) ring_list_getpointer(pVM->pFuncCallList,x) ;
+	for ( x = RING_VM_FUNCCALLSCOUNT ; x >= 1 ; x-- ) {
+		pFuncCall = RING_VM_GETFUNCCALL(x) ;
 		/*
 		**  If we have ICO_LOADFUNC but not ICO_CALL then we need to pass 
 		**  ICO_LOADFUNC is executed, but still ICO_CALL is not executed! 
@@ -102,17 +102,17 @@ RING_API void ring_vm_showerrormessage ( VM *pVM,const char *cStr )
 		}
 		if ( pFuncCall->nType == RING_FUNCTYPE_SCRIPT ) {
 			cStr2 = (char *) pFuncCall->cName ;
-			if ( strcmp("",cStr2) == 0 ) {
+			if ( strcmp(cStr2,RING_CSTR_EMPTY) == 0 ) {
 				break ;
 			}
 			/* Don't repeat messages in case of recursion */
 			if ( x != 1 ) {
 				nPos = x-1 ;
-				pFuncCall2 = (FuncCall *) ring_list_getpointer(pVM->pFuncCallList,x-1) ;
+				pFuncCall2 = RING_VM_GETFUNCCALL(x-1) ;
 				while ( pFuncCall2->nType != RING_FUNCTYPE_SCRIPT ) {
 					nPos-- ;
 					if ( nPos > 0 ) {
-						pFuncCall2 = (FuncCall *) ring_list_getpointer(pVM->pFuncCallList,nPos) ;
+						pFuncCall2 = RING_VM_GETFUNCCALL(nPos) ;
 					}
 					else {
 						break ;
@@ -145,20 +145,15 @@ RING_API void ring_vm_showerrormessage ( VM *pVM,const char *cStr )
 			/* Adding () */
 			printf( "() in file " ) ;
 			/* File Name */
-			if ( lFunctionCall == 1 ) {
-				cFile = (const char *) pFuncCall->cNewFileName ;
+			if ( pVM->nInClassRegion ) {
+				cFile = pVM->cFileNameInClassRegion ;
 			}
 			else {
-				if ( pVM->nInClassRegion ) {
-					cFile = pVM->cFileNameInClassRegion ;
-				}
-				else {
-					cFile = pVM->cFileName ;
-				}
+				cFile = (const char *) pFuncCall->cNewFileName ;
 			}
 			printf( "%s",cFile ) ;
 			/* Called From */
-			printf( "\ncalled from line %d  ",pFuncCall->nLineNumber ) ;
+			printf( "\n\nCalled from line %d ",pFuncCall->nLineNumber ) ;
 		}
 		else {
 			printf( "In %s() ",pFuncCall->cName ) ;
@@ -215,14 +210,14 @@ void ring_vm_traceevent ( VM *pVM,char nEvent )
 		/* Add File Name */
 		ring_list_addstring_gc(pVM->pRingState,pVM->pTraceData,pVM->cFileName);
 		/* Add Function/Method Name */
-		if ( ring_list_getsize(pVM->pFuncCallList) > 0 ) {
+		if ( RING_VM_FUNCCALLSCOUNT > 0 ) {
 			pFuncCall = RING_VM_LASTFUNCCALL ;
 			ring_list_addstring_gc(pVM->pRingState,pVM->pTraceData,pFuncCall->cName);
 			/* Method or Function */
 			ring_list_adddouble_gc(pVM->pRingState,pVM->pTraceData,pFuncCall->lMethod);
 		}
 		else {
-			ring_list_addstring_gc(pVM->pRingState,pVM->pTraceData,"");
+			ring_list_addstring_gc(pVM->pRingState,pVM->pTraceData,RING_CSTR_EMPTY);
 			/* Method or Function */
 			ring_list_adddouble_gc(pVM->pRingState,pVM->pTraceData,RING_NOVALUE);
 		}

@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GDATETIMEAXIS_H
 #define GDATETIMEAXIS_H
 #include "ringqt.h"
 #include <QtCharts>
+
 extern "C" {
 #include "ring.h"
 }
@@ -53,6 +54,8 @@ class GDateTimeAxis : public QtCharts::QDateTimeAxis
     void minChangedSlot();
     void rangeChangedSlot();
     void tickCountChangedSlot();
+
+
 
 };
 

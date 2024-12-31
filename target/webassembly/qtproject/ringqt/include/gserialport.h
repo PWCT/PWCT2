@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GSERIALPORT_H
 #define GSERIALPORT_H
 #include "ringqt.h"
 #include <QSerialPort>
+
 extern "C" {
 #include "ring.h"
 }
@@ -69,6 +70,8 @@ class GSerialPort : public QSerialPort
     void parityChangedSlot();
     void requestToSendChangedSlot();
     void stopBitsChangedSlot();
+
+
 
 };
 

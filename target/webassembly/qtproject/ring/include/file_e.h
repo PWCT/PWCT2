@@ -23,7 +23,6 @@
 	#include <sys/stat.h>
 	#ifdef _WIN32
 		/* Windows Only */
-		#include <windows.h>
 		#ifdef _MSC_VER
 			#if !defined(S_ISREG) && defined(_S_IFMT) && defined(_S_IFREG)
 				#define S_ISREG(m) (((m) & _S_IFMT) == _S_IFREG)
@@ -34,8 +33,7 @@
 			#define stat _stat
 		#endif
 	#else
-		#if RING_MSDOS
-		#else
+		#if RING_EXTRAFILEFUNCTIONS
 			#include <dirent.h>
 			#include <unistd.h>
 		#endif
@@ -107,8 +105,7 @@
 	void ring_vm_file_bytes2double ( void *pPointer ) ;
 
 	void ring_vm_file_freefunc ( void *pRingState,void *pPointer ) ;
-	#if RING_MSDOS
-	#else
+	#if RING_EXTRAFILEFUNCTIONS
 		/* Check File/Dir/Type */
 
 		void ring_vm_file_fexists ( void *pPointer ) ;

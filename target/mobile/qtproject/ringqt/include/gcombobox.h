@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GCOMBOBOX_H
 #define GCOMBOBOX_H
 #include "ringqt.h"
 #include <QComboBox>
+
 extern "C" {
 #include "ring.h"
 }
@@ -49,6 +50,8 @@ class GComboBox : public QComboBox
     void currentIndexChangedSlot();
     void editTextChangedSlot();
     void highlightedSlot();
+
+
 
 };
 

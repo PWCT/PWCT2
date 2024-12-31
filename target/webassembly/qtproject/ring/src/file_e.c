@@ -35,8 +35,7 @@ void ring_vm_file_loadfunctions ( RingState *pRingState )
 	RING_API_REGISTER("bytes2int",ring_vm_file_bytes2int);
 	RING_API_REGISTER("bytes2float",ring_vm_file_bytes2float);
 	RING_API_REGISTER("bytes2double",ring_vm_file_bytes2double);
-	#if RING_MSDOS
-	#else
+	#if RING_EXTRAFILEFUNCTIONS
 		/* Check File/Dir/Type */
 		RING_API_REGISTER("fexists",ring_vm_file_fexists);
 		RING_API_REGISTER("direxists",ring_vm_file_direxists);
@@ -695,8 +694,7 @@ void ring_vm_file_freefunc ( void *pRingState,void *pPointer )
 	pFile = (FILE *) pPointer ;
 	fclose( pFile ) ;
 }
-#if RING_MSDOS
-#else
+#if RING_EXTRAFILEFUNCTIONS
 	/* Check File/Dir/Type */
 
 	int ring_fexists_general ( const char *cFileName )
@@ -937,7 +935,14 @@ void ring_vm_file_freefunc ( void *pRingState,void *pPointer )
 			/* Linux */
 		#else
 			char _tmpfile[RING_SMALLBUF] = "/tmp/ringtempXXXXXX" ;
-			RING_API_RETSTRING(mkdtemp(_tmpfile));
+			int fd  ;
+			fd = mkstemp(_tmpfile) ;
+			if ( fd == -1 ) {
+				RING_API_ERROR(RING_VM_ERROR_TEMPFILENAME);
+				return ;
+			}
+			close(fd);
+			RING_API_RETSTRING(_tmpfile);
 		#endif
 	}
 #endif

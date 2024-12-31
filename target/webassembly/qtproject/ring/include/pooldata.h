@@ -6,30 +6,32 @@
 	**  Macro 
 	**  Memory pool is thread safe because ring_vm_runcodefromthread() create new state 
 	*/
-	#if RING_MSDOS
-		#define RING_USEPOOLMANAGER 0
+	#define RING_USEPOOLMANAGER 1
+	#if RING_LOWMEM
+		#define RING_POOLMANAGER_ITEMSINBLOCK 128
+		#define RING_POOLMANAGER_ITEMSINBLOCKL2 8
+		#define RING_POOLMANAGER_ITEMSINBLOCKL3 4
+		#define RING_POOLMANAGER_ITEMSINBLOCKStateLevel 8
 	#else
-		#define RING_USEPOOLMANAGER 1
+		#define RING_POOLMANAGER_ITEMSINBLOCK 100000
+		#define RING_POOLMANAGER_ITEMSINBLOCKL2 4096
+		#define RING_POOLMANAGER_ITEMSINBLOCKL3 2048
+		#define RING_POOLMANAGER_ITEMSINBLOCKStateLevel 2048
 	#endif
-	#define RING_TRACKALLOCATIONS 0
 	#define RING_POOLMANAGER_NOTFOUND 0
 	/* Level 1 */
-	#define RING_POOLMANAGER_ITEMSTRINGSIZE 44
-	#define RING_POOLMANAGER_ITEMSINBLOCK 1000000
+	#define RING_POOLMANAGER_ITEMSTRINGSIZE 48
 	#define RING_POOLMANAGER_LEVEL1 1
 	/* Level 2 */
 	#define RING_POOLMANAGER_ITEMSTRINGSIZEL2 256
-	#define RING_POOLMANAGER_ITEMSINBLOCKL2 4096
 	#define RING_POOLMANAGER_LEVEL2 2
 	/* Level 3 */
 	#define RING_POOLMANAGER_ITEMSTRINGSIZEL3 512
-	#define RING_POOLMANAGER_ITEMSINBLOCKL3 2048
 	#define RING_POOLMANAGER_LEVEL3 3
 	/* State Level */
 	#define RING_POOLMANAGER_ITEMSTRINGSIZEStateLevel 192
-	#define RING_POOLMANAGER_ITEMSINBLOCKStateLevel 2048
 	/* State */
-	#define RING_VM_STATE_NUMBERS_COUNT 30
+	#define RING_VM_STATE_NUMBERS_COUNT 32
 	#define RING_VM_STATE_POINTERS_COUNT 9
 	/* Blocks List */
 	#define RING_VM_BLOCKSTART 1
@@ -84,10 +86,7 @@
 		void *pBlockStartStateLevel  ;
 		void *pBlockEndStateLevel  ;
 		List *pBlocks  ;
-		unsigned int nAllocCount  ;
-		unsigned int nFreeCount  ;
-		unsigned int nSmallAllocCount  ;
-		unsigned int nSmallFreeCount  ;
+		void *pMutex  ;
 		unsigned int nItemsInBlock  ;
 		unsigned int nItemsInBlockL2  ;
 		unsigned int nItemsInBlockL3  ;

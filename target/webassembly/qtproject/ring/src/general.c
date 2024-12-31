@@ -1,9 +1,6 @@
 /* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 
 #include "ring.h"
-#ifdef _WIN32
-	#include <windows.h>
-#endif
 
 int ring_general_fexists ( const char *cFileName )
 {
@@ -20,9 +17,11 @@ int ring_general_currentdir ( char *cDirPath )
 {
 	int nSize  ;
 	nSize = RING_PATHSIZE ;
-	if ( !GetCurrentDir(cDirPath, nSize) ) {
-		return errno ;
-	}
+	#if RING_CURRENTDIRFUNCTIONS
+		if ( !GetCurrentDir(cDirPath, nSize) ) {
+			return errno ;
+		}
+	#endif
 	cDirPath[nSize-1] = '\0' ;
 	return 0 ;
 }
@@ -54,17 +53,22 @@ int ring_general_exefilename ( char *cDirPath )
 
 int ring_general_chdir ( const char *cDir )
 {
-	#ifdef _WIN32
-		/* Windows only */
-		#ifdef __BORLANDC__
-			/* Borland C/C++ */
-			return chdir(cDir) ;
+	#if RING_CURRENTDIRFUNCTIONS
+		/* Check OS */
+		#ifdef _WIN32
+			/* Windows only */
+			#ifdef __BORLANDC__
+				/* Borland C/C++ */
+				return chdir(cDir) ;
+			#else
+				/* Modern Compilers Like Visual C/C++ */
+				return _chdir(cDir) ;
+			#endif
 		#else
-			/* Modern Compilers Like Visual C/C++ */
-			return _chdir(cDir) ;
+			return chdir(cDir) ;
 		#endif
 	#else
-		return chdir(cDir) ;
+		return RING_ZERO ;
 	#endif
 }
 
@@ -75,7 +79,7 @@ void ring_general_exefolder ( char *cDirPath )
 	int x,x2,nSize  ;
 	ring_general_exefilename(cDir);
 	nSize = strlen( cDir ) ;
-	strcpy(cDir2,"");
+	strcpy(cDir2,RING_CSTR_EMPTY);
 	for ( x = nSize-1 ; x >= 0 ; x-- ) {
 		if ( (cDir[x] == '\\') || (cDir[x] == '/') ) {
 			for ( x2 = x ; x2 >= 0 ; x2-- ) {
@@ -250,7 +254,7 @@ RING_API char * ring_general_numtostring ( double nNum1,char *cStr,int nDecimals
 	}
 	else {
 		sprintf( cOptions , "%s%df" , "%.",nDecimals ) ;
-		#if RING_MSDOS
+		#if RING_NOSNPRINTF
 			sprintf(cStr, cOptions, nNum1);
 		#else
 			/* Avoid buffer overrun by using snprint() function */
@@ -266,4 +270,17 @@ RING_API char * ring_general_numtostring ( double nNum1,char *cStr,int nDecimals
 		#endif
 	}
 	return cStr ;
+}
+
+void ring_general_readline ( char *cLine, unsigned int nSize )
+{
+	int x  ;
+	fgets(cLine,nSize,stdin);
+	/* Remove New Line */
+	for ( x = 0 ; x < nSize ; x++ ) {
+		if ( cLine[x] == '\n' ) {
+			cLine[x] = '\0' ;
+			break ;
+		}
+	}
 }

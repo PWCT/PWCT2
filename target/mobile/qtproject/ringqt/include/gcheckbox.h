@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GCHECKBOX_H
 #define GCHECKBOX_H
 #include "ringqt.h"
 #include <QCheckBox>
+
 extern "C" {
 #include "ring.h"
 }
@@ -53,6 +54,8 @@ class GCheckBox : public QCheckBox
     void pressedSlot();
     void releasedSlot();
     void toggledSlot();
+
+
 
 };
 

@@ -1,9 +1,10 @@
 
-/* Copyright (c) 2013-2022 Mahmoud Fayed <msfclipper@yahoo.com> */
+/* Copyright (c) 2013-2024 Mahmoud Fayed <msfclipper@yahoo.com> */
 #ifndef GTOOLBUTTON_H
 #define GTOOLBUTTON_H
 #include "ringqt.h"
 #include <QToolButton>
+
 extern "C" {
 #include "ring.h"
 }
@@ -41,6 +42,8 @@ class GToolButton : public QToolButton
 
     void triggeredSlot();
     void clickedSlot();
+
+
 
 };
 
