@@ -31,7 +31,7 @@ class qhboxlayoutClassComponentView from ComponentViewParent
 		Title( T_CT_QHBOXLAYOUT_IP_TITLE )	
 		TextBoxValue( T_CT_QHBOXLAYOUT_IP_VALUE , :value, T_CT_QHBOXLAYOUTCLASS_IP_VALUE_STARTVALUE)
 		ListBox( T_CT_QHBOXLAYOUT_IP_VALUE2 , :value2, 
-				T_CT_QHBOXLAYOUT_IP_VALUE2LIST )
+				T_CT_QHBOXLAYOUTCLASS_IP_VALUE2LIST )
 		TextBox( T_CT_QHBOXLAYOUT_IP_VALUE3 , :value3)
 		TextBox( T_CT_QHBOXLAYOUT_IP_VALUE4 , :value4)
 		PageButtons()
