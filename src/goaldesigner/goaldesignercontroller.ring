@@ -1296,6 +1296,7 @@ class GoalDesignerController from WindowsControllerParent
 		# Get the Selected Step
 			oItem  = oView.oStepsTree.currentItem()
 			nStepID = oView.oStepsTree.GetIDByObj(oItem)
+			// PWCT_App.clipboard().setText(this.oModel.getStepName(nStepID),0)
 		# Avoid the Start Point 
 			if nStepID = 1 {
 				return
