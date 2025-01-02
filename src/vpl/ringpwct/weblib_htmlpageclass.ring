@@ -32,7 +32,7 @@ class weblib_htmlpageclassComponentView from ComponentViewParent
 		Title( T_CT_WEBLIB_HTMLPAGE_IP_TITLE )	
 		TextBox( T_CT_WEBLIB_HTMLPAGE_IP_VALUE , :value)
 		ListBox( T_CT_WEBLIB_HTMLPAGE_IP_VALUE2 , :value2, 
-				T_CT_WEBLIB_HTMLPAGE_IP_VALUE2LIST )
+				T_CT_WEBLIB_HTMLPAGECLASS_IP_VALUE2LIST )
 		TextBox( T_CT_WEBLIB_HTMLPAGE_IP_VALUE3 , :value3)
 		TextBox( T_CT_WEBLIB_HTMLPAGE_IP_VALUE4 , :value4)
 		PageButtons()
