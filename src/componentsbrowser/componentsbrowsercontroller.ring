@@ -365,11 +365,11 @@ class ComponentsBrowserController from WindowsControllerParent
 		if cFile = NULL { return }
 		# Check the Rules 
 			if ! parent().RulesAllow(cFile)  {
-				msginfo(T_CB_SORRY,T_CB_CANTUSECOMPONENT)
-				return 
+				msginfo(T_CB_SORRY,T_CB_CANTUSECOMPONENT)  return 
 			}
 		cFilePath = cComponentsPath + cFile + ".ring"
-		Parent().CheckLoadingComponent(cFilePath)
+		Parent().CheckLoadingComponent(cFilePath) 
+		if ! isClass(cFile+:ComponentController) { return }
 		# Start the Component
 			if lInteractionPagesInGoalDesigner {
 				Open_WindowNoShow(cFile+:ComponentController)
