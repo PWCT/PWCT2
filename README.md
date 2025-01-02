@@ -13,7 +13,7 @@ A replacement for the Ring Code Editor.
 
 ### Install the Ring programming language from https://ring-lang.github.io
 
-### Get a copy from this repository
+### Get a copy from the source code
 
 
 	git clone https://github.com/pwct/pwct2
