@@ -13,7 +13,7 @@ A replacement for the Ring Code Editor.
 
 PWCT 2.0 was released on 1 March 2023
 
-The current release is PWCT 2.0 Rev. 2024.12.24
+The current release is PWCT 2.0 Rev. 2025.01.01
 
 URL: https://store.steampowered.com/app/1953110/Programming_Without_Coding_Technology_20/
 
