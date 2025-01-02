@@ -1,3 +1,0 @@
-ring pwct.ring -go -norun
-copy pwct.ringo "B:\pwct2\UploadingPWCTonSteam\steamworks_sdk_153a\sdk\tools\ContentBuilder\content\PWCT\pwct.ringo"
-copy info\*.txt "B:\pwct2\UploadingPWCTonSteam\steamworks_sdk_153a\sdk\tools\ContentBuilder\content\PWCT\info" /y
