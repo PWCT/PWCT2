@@ -11,13 +11,15 @@ A replacement for the Ring Code Editor.
 
 ## Run PWCT 2.0 from Source Code (Windows/Linux/macOS)
 
-1. Install the Ring programming language from http://ring-lang.github.io
+1. Install the Ring programming language from https://ring-lang.github.io
 
 2. Get a copy from this repository
+
 
 	git clone https://github.com/PWCT/PWCT2
 
 3. Run the main source file
+
 
 	cd PWCT2
 	ring pwct.ring 
