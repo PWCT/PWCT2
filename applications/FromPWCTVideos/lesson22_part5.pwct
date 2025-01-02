@@ -1,0 +1,287 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'english'
+nStepsID                 = 6		
+nInteractionsID          = 6
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aList</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[4,5,22,10,3]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"aList = [4,5,22,10,3]"
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"aList = [4,5,22,10,3]"
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aList</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? aList"
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print aList (New Line) "
+			]
+		]
+	],
+	[
+		6,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">******</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? "+char(34)+"******"+char(34)+""
+			],
+			[
+				"interactionid",
+				6
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print ****** (New Line) "
+			]
+		]
+	],
+	[
+		4,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">max(aList)</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? max(aList)"
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print max(aList) (New Line) "
+			]
+		]
+	],
+	[
+		5,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">min(aList)</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? min(aList)"
+			],
+			[
+				"interactionid",
+				5
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print min(aList) (New Line) "
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"24/03/2023",
+		"21:43:23",
+		""
+	],
+	[
+		2,
+		1,
+		"assignment",
+		"24/03/2023",
+		"21:43:46",
+		"leftside;;_RV_;;aList;;_RV_;;rightside;;_RV_;;[4,5,22,10,3];;_RV_;;"
+	],
+	[
+		3,
+		1,
+		"print",
+		"24/03/2023",
+		"21:43:50",
+		"text;;_RV_;;aList;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	],
+	[
+		4,
+		1,
+		"print",
+		"24/03/2023",
+		"21:44:11",
+		"text;;_RV_;;max(aList);;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	],
+	[
+		5,
+		1,
+		"print",
+		"24/03/2023",
+		"21:44:14",
+		"text;;_RV_;;min(aList);;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	],
+	[
+		6,
+		1,
+		"print",
+		"24/03/2023",
+		"21:44:22",
+		"text;;_RV_;;******;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	]
+]
+
+# End of Visual Source File

@@ -1,0 +1,272 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'english'
+nStepsID                 = 8		
+nInteractionsID          = 6
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		8,
+		1,
+		[
+			[
+				"name",
+				"We&nbsp;can&nbsp;stop&nbsp;this&nbsp;program&nbsp;using&nbsp;the&nbsp;Stop&nbsp;button&nbsp;in&nbsp;the&nbsp;output&nbsp;window"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# We can stop this program using the Stop button in the output window
+"
+			],
+			[
+				"interactionid",
+				6
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"We can stop this program using the Stop button in the output window"
+			]
+		]
+	],
+	[
+		4,
+		1,
+		[
+			[
+				"name",
+				"While <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">True</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"while True { "
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"While True"
+			]
+		]
+	],
+	[
+		5,
+		4,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		7,
+		5,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">I&nbsp;Love&nbsp;Programming!</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? "+char(34)+"I Love Programming!"+char(34)+""
+			],
+			[
+				"interactionid",
+				5
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print I Love Programming! (New Line) "
+			]
+		]
+	],
+	[
+		6,
+		4,
+		[
+			[
+				"name",
+				"End of While Loop"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"}"
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of While Loop"
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"24/03/2023",
+		"21:23:35",
+		""
+	],
+	[
+		4,
+		1,
+		"whileloop",
+		"24/03/2023",
+		"21:38:15",
+		"condition;;_RV_;;True;;_RV_;;"
+	],
+	[
+		5,
+		1,
+		"print",
+		"24/03/2023",
+		"21:38:23",
+		"text;;_RV_;;I Love Programming!;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	],
+	[
+		6,
+		1,
+		"comment_text",
+		"24/03/2023",
+		"21:39:09",
+		"value;;_RV_;;We can stop this program using the Stop button in the output window;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	]
+]
+
+# End of Visual Source File

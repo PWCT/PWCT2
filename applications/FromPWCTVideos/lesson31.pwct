@@ -1,0 +1,287 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'english'
+nStepsID                 = 7		
+nInteractionsID          = 7
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nNum1</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">pow</font></span>(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">2,3</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"nNum1 = pow(2,3)"
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"nNum1 = pow(2,3)"
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nNum2</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">pow</font></span>(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">2,4</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"nNum2 = pow(2,4)"
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"nNum2 = pow(2,4)"
+			]
+		]
+	],
+	[
+		4,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nNum1</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? nNum1"
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print nNum1 (New Line) "
+			]
+		]
+	],
+	[
+		5,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nNum2</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? nNum2"
+			],
+			[
+				"interactionid",
+				5
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print nNum2 (New Line) "
+			]
+		]
+	],
+	[
+		6,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">pow(2,5)</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? pow(2,5)"
+			],
+			[
+				"interactionid",
+				6
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print pow(2,5) (New Line) "
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"05/05/2023",
+		"19:24:31",
+		""
+	],
+	[
+		2,
+		1,
+		"math",
+		"05/05/2023",
+		"19:25:29",
+		"value;;_RV_;;2,3;;_RV_;;value2;;_RV_;;17;;_RV_;;value3;;_RV_;;nNum1;;_RV_;;"
+	],
+	[
+		3,
+		1,
+		"math",
+		"05/05/2023",
+		"19:25:37",
+		"value;;_RV_;;2,4;;_RV_;;value2;;_RV_;;17;;_RV_;;value3;;_RV_;;nNum2;;_RV_;;"
+	],
+	[
+		4,
+		1,
+		"print",
+		"05/05/2023",
+		"19:25:46",
+		"text;;_RV_;;nNum1;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	],
+	[
+		5,
+		1,
+		"print",
+		"05/05/2023",
+		"19:25:50",
+		"text;;_RV_;;nNum2;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	],
+	[
+		6,
+		1,
+		"print",
+		"05/05/2023",
+		"19:26:31",
+		"text;;_RV_;;pow(2,5);;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	]
+]
+
+# End of Visual Source File

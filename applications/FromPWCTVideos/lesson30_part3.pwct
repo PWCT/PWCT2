@@ -1,0 +1,287 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'english'
+nStepsID                 = 14		
+nInteractionsID          = 12
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cStr</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;Hello&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cStr = "+char(34)+"Hello"+char(34)+""
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cStr = "+char(34)+"Hello"+char(34)+""
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cHex</font></span> =  Convert Value <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cStr</font></span> Using Function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">String&nbsp;to&nbsp;Hex</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cHex = str2hex(cStr)"
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cHex =  Convert Value cStr Using Function String to Hex"
+			]
+		]
+	],
+	[
+		4,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cHex</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? cHex"
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print cHex (New Line) "
+			]
+		]
+	],
+	[
+		5,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">mystr</font></span> =  Convert Value <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cHex</font></span> Using Function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Hex&nbsp;to&nbsp;String</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"mystr = hex2str(cHex)"
+			],
+			[
+				"interactionid",
+				5
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"mystr =  Convert Value cHex Using Function Hex to String"
+			]
+		]
+	],
+	[
+		6,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">mystr</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? mystr"
+			],
+			[
+				"interactionid",
+				6
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print mystr (New Line) "
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"23/04/2023",
+		"18:37:45",
+		""
+	],
+	[
+		2,
+		1,
+		"assignment",
+		"23/04/2023",
+		"20:02:46",
+		"leftside;;_RV_;;cStr;;_RV_;;rightside;;_RV_;;"+char(34)+"Hello"+char(34)+";;_RV_;;"
+	],
+	[
+		3,
+		1,
+		"conversion",
+		"23/04/2023",
+		"20:02:59",
+		"value;;_RV_;;cStr;;_RV_;;value2;;_RV_;;7;;_RV_;;value3;;_RV_;;cHex;;_RV_;;"
+	],
+	[
+		4,
+		1,
+		"print",
+		"23/04/2023",
+		"20:03:06",
+		"text;;_RV_;;cHex;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	],
+	[
+		5,
+		1,
+		"conversion",
+		"23/04/2023",
+		"20:03:30",
+		"value;;_RV_;;cHex;;_RV_;;value2;;_RV_;;8;;_RV_;;value3;;_RV_;;mystr;;_RV_;;"
+	],
+	[
+		6,
+		1,
+		"print",
+		"23/04/2023",
+		"20:03:36",
+		"text;;_RV_;;mystr;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	]
+]
+
+# End of Visual Source File

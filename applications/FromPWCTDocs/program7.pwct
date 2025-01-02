@@ -1,0 +1,333 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'english'
+nStepsID                 = 8		
+nInteractionsID          = 8
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">list</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[1,2,3,&quot;four&quot;,&quot;five&quot;]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"list = [1,2,3,"+char(34)+"four"+char(34)+","+char(34)+"five"+char(34)+"]"
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"list = [1,2,3,"+char(34)+"four"+char(34)+","+char(34)+"five"+char(34)+"]"
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">list2</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">list</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"list2 = list"
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"list2 = list"
+			]
+		]
+	],
+	[
+		4,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">list</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"list = []"
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"list = []"
+			]
+		]
+	],
+	[
+		5,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">list</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? list"
+			],
+			[
+				"interactionid",
+				5
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print list (New Line) "
+			]
+		]
+	],
+	[
+		6,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">********</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? "+char(34)+"********"+char(34)+""
+			],
+			[
+				"interactionid",
+				6
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print ******** (New Line) "
+			]
+		]
+	],
+	[
+		7,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">list2</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? list2"
+			],
+			[
+				"interactionid",
+				7
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print list2 (New Line) "
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"01/12/2021",
+		"10:49:00",
+		""
+	],
+	[
+		2,
+		1,
+		"assignment",
+		"01/12/2021",
+		"10:49:43",
+		"leftside;;_RV_;;list;;_RV_;;rightside;;_RV_;;[1,2,3,"+char(34)+"four"+char(34)+","+char(34)+"five"+char(34)+"];;_RV_;;"
+	],
+	[
+		3,
+		1,
+		"assignment",
+		"01/12/2021",
+		"10:49:43",
+		"leftside;;_RV_;;list2;;_RV_;;rightside;;_RV_;;list;;_RV_;;"
+	],
+	[
+		4,
+		1,
+		"assignment",
+		"01/12/2021",
+		"10:49:43",
+		"leftside;;_RV_;;list;;_RV_;;rightside;;_RV_;;[];;_RV_;;"
+	],
+	[
+		5,
+		1,
+		"print",
+		"01/12/2021",
+		"10:49:43",
+		"text;;_RV_;;list;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	],
+	[
+		6,
+		1,
+		"print",
+		"01/12/2021",
+		"10:49:43",
+		"text;;_RV_;;********;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	],
+	[
+		7,
+		1,
+		"print",
+		"01/12/2021",
+		"10:49:43",
+		"text;;_RV_;;list2;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	]
+]
+
+# End of Visual Source File

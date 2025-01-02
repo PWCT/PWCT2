@@ -1,0 +1,807 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'english'
+nStepsID                 = 20		
+nInteractionsID          = 13
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aList</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[
+[&quot;Koko&quot;,&quot;Male&quot;,4634643],
+[&quot;Nono&quot;,&quot;Female&quot;,3523632],
+[&quot;Toto&quot;,&quot;Female&quot;,3463463]
+]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"aList = [
+["+char(34)+"Koko"+char(34)+","+char(34)+"Male"+char(34)+",4634643],
+["+char(34)+"Nono"+char(34)+","+char(34)+"Female"+char(34)+",3523632],
+["+char(34)+"Toto"+char(34)+","+char(34)+"Female"+char(34)+",3463463]
+]"
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"aList = [
+["+char(34)+"Koko"+char(34)+","+char(34)+"Male"+char(34)+",4634643],
+["+char(34)+"Nono"+char(34)+","+char(34)+"Female"+char(34)+",3523632],
+["+char(34)+"Toto"+char(34)+","+char(34)+"Female"+char(34)+",3463463]
+]"
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aList</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? aList"
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print aList (New Line) "
+			]
+		]
+	],
+	[
+		4,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nSize</font></span> =  Get List Size <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aList</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"nSize = len(aList)"
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"nSize =  Get List Size aList"
+			]
+		]
+	],
+	[
+		5,
+		1,
+		[
+			[
+				"name",
+				"For <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">t&nbsp;=&nbsp;1</font></span> to <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nSize</font></span> step <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"for t = 1 to nSize step 1 { "
+			],
+			[
+				"interactionid",
+				5
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"For t = 1 to nSize step 1"
+			]
+		]
+	],
+	[
+		6,
+		5,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				5
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		9,
+		6,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nSize2</font></span> =  Get List Size <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aList[t]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"nSize2 = len(aList[t])"
+			],
+			[
+				"interactionid",
+				7
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"nSize2 =  Get List Size aList[t]"
+			]
+		]
+	],
+	[
+		20,
+		6,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"See "+char(34)+"["+char(34)+""
+			],
+			[
+				"interactionid",
+				13
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print ["
+			]
+		]
+	],
+	[
+		11,
+		6,
+		[
+			[
+				"name",
+				"For <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">t2&nbsp;=&nbsp;1</font></span> to <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nSize2</font></span> step <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"for t2 = 1 to nSize2 step 1 { "
+			],
+			[
+				"interactionid",
+				8
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"For t2 = 1 to nSize2 step 1"
+			]
+		]
+	],
+	[
+		12,
+		11,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				8
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		14,
+		12,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aList[t][t2]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"See aList[t][t2]"
+			],
+			[
+				"interactionid",
+				9
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print aList[t][t2]"
+			]
+		]
+	],
+	[
+		16,
+		12,
+		[
+			[
+				"name",
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">t2&nbsp;!=&nbsp;nSize</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"if t2 != nSize { "
+			],
+			[
+				"interactionid",
+				11
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"If t2 != nSize"
+			]
+		]
+	],
+	[
+		17,
+		16,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				11
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		19,
+		17,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">,&nbsp;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"See "+char(34)+", "+char(34)+""
+			],
+			[
+				"interactionid",
+				12
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print , "
+			]
+		]
+	],
+	[
+		18,
+		16,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"}"
+			],
+			[
+				"interactionid",
+				11
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		13,
+		11,
+		[
+			[
+				"name",
+				"End of For Loop"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"}"
+			],
+			[
+				"interactionid",
+				8
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of For Loop"
+			]
+		]
+	],
+	[
+		15,
+		6,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">]</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? "+char(34)+"]"+char(34)+""
+			],
+			[
+				"interactionid",
+				10
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print ] (New Line) "
+			]
+		]
+	],
+	[
+		7,
+		5,
+		[
+			[
+				"name",
+				"End of For Loop"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"}"
+			],
+			[
+				"interactionid",
+				5
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of For Loop"
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"05/04/2023",
+		"12:19:12",
+		""
+	],
+	[
+		2,
+		1,
+		"assignment",
+		"05/04/2023",
+		"12:24:29",
+		"leftside;;_RV_;;aList;;_RV_;;rightside;;_RV_;;[
+["+char(34)+"Koko"+char(34)+","+char(34)+"Male"+char(34)+",4634643],
+["+char(34)+"Nono"+char(34)+","+char(34)+"Female"+char(34)+",3523632],
+["+char(34)+"Toto"+char(34)+","+char(34)+"Female"+char(34)+",3463463]
+];;_RV_;;"
+	],
+	[
+		3,
+		1,
+		"print",
+		"05/04/2023",
+		"12:24:35",
+		"text;;_RV_;;aList;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	],
+	[
+		4,
+		1,
+		"getlistsize",
+		"05/04/2023",
+		"12:25:16",
+		"value;;_RV_;;aList;;_RV_;;value2;;_RV_;;nSize;;_RV_;;"
+	],
+	[
+		5,
+		1,
+		"forloop",
+		"05/04/2023",
+		"12:25:25",
+		"start;;_RV_;;t = 1;;_RV_;;to;;_RV_;;nSize;;_RV_;;step;;_RV_;;1;;_RV_;;"
+	],
+	[
+		7,
+		1,
+		"getlistsize",
+		"05/04/2023",
+		"12:25:50",
+		"value;;_RV_;;aList[t];;_RV_;;value2;;_RV_;;nSize2;;_RV_;;"
+	],
+	[
+		8,
+		1,
+		"forloop",
+		"05/04/2023",
+		"12:26:05",
+		"start;;_RV_;;t2 = 1;;_RV_;;to;;_RV_;;nSize2;;_RV_;;step;;_RV_;;1;;_RV_;;"
+	],
+	[
+		9,
+		1,
+		"print",
+		"05/04/2023",
+		"12:26:19",
+		"text;;_RV_;;aList[t][t2];;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	],
+	[
+		10,
+		1,
+		"print",
+		"05/04/2023",
+		"12:26:39",
+		"text;;_RV_;;];;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	],
+	[
+		11,
+		1,
+		"ifstatement",
+		"05/04/2023",
+		"12:27:04",
+		"condition;;_RV_;;t2 != nSize;;_RV_;;"
+	],
+	[
+		12,
+		1,
+		"print",
+		"05/04/2023",
+		"12:27:16",
+		"text;;_RV_;;, ;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	],
+	[
+		13,
+		1,
+		"print",
+		"05/04/2023",
+		"12:27:34",
+		"text;;_RV_;;[;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	]
+]
+
+# End of Visual Source File

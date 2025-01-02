@@ -1,0 +1,241 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'english'
+nStepsID                 = 6		
+nInteractionsID          = 6
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">msg</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;one&quot;&nbsp;+&nbsp;nl&nbsp;+&nbsp;&quot;two&quot;&nbsp;+&nbsp;nl&nbsp;+&nbsp;&quot;three&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"msg = "+char(34)+"one"+char(34)+" + nl + "+char(34)+"two"+char(34)+" + nl + "+char(34)+"three"+char(34)+""
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"msg = "+char(34)+"one"+char(34)+" + nl + "+char(34)+"two"+char(34)+" + nl + "+char(34)+"three"+char(34)+""
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">msg</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? msg"
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print msg (New Line) "
+			]
+		]
+	],
+	[
+		5,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nLine</font></span> = Count of String Lines <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">msg</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"nLine = lines(msg)"
+			],
+			[
+				"interactionid",
+				5
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"nLine = Count of String Lines msg"
+			]
+		]
+	],
+	[
+		6,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nLine</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? nLine"
+			],
+			[
+				"interactionid",
+				6
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print nLine (New Line) "
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"16/04/2023",
+		"14:09:06",
+		""
+	],
+	[
+		2,
+		1,
+		"assignment",
+		"16/04/2023",
+		"14:20:35",
+		"leftside;;_RV_;;msg;;_RV_;;rightside;;_RV_;;"+char(34)+"one"+char(34)+" + nl + "+char(34)+"two"+char(34)+" + nl + "+char(34)+"three"+char(34)+";;_RV_;;"
+	],
+	[
+		3,
+		1,
+		"print",
+		"16/04/2023",
+		"14:20:40",
+		"text;;_RV_;;msg;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	],
+	[
+		5,
+		1,
+		"stringlines",
+		"16/04/2023",
+		"14:21:16",
+		"value;;_RV_;;msg;;_RV_;;value2;;_RV_;;nLine;;_RV_;;"
+	],
+	[
+		6,
+		1,
+		"print",
+		"16/04/2023",
+		"14:21:37",
+		"text;;_RV_;;nLine;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	]
+]
+
+# End of Visual Source File

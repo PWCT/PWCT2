@@ -1,0 +1,288 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'english'
+nStepsID                 = 9		
+nInteractionsID          = 9
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"<h3 style='text-align:center ; color:purple; ;  ;'> Welcome&nbsp;to&nbsp;Programming!&nbsp; </h3>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# Welcome to Programming! "
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				" Welcome to Programming!  "
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"<hr/>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#=================================================="
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				""
+			]
+		]
+	],
+	[
+		4,
+		1,
+		[
+			[
+				"name",
+				"My&nbsp;first&nbsp;program&nbsp;using&nbsp;PWCT!"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# My first program using PWCT!
+"
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"My first program using PWCT!"
+			]
+		]
+	],
+	[
+		8,
+		1,
+		[
+			[
+				"name",
+				"<img src="+char(34)+"B:/pwct2/UploadingPWCTonSteam/steamworks_sdk_153a/sdk/tools/ContentBuilder/content/PWCT/applications/FromPWCTDocs/images/pwctlogo.jpg"+char(34)+" width=300 height=200 align='left'>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				8
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				""
+			]
+		]
+	],
+	[
+		9,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">I&nbsp;Love&nbsp;Programming!</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? "+char(34)+"I Love Programming!"+char(34)+""
+			],
+			[
+				"interactionid",
+				9
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print I Love Programming! (New Line) "
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"06/11/2021",
+		"23:02:00",
+		""
+	],
+	[
+		2,
+		1,
+		"comment_header",
+		"06/11/2021",
+		"23:02:22",
+		"value;;_RV_;;Welcome to Programming! ;;_RV_;;value2;;_RV_;;3;;_RV_;;value3;;_RV_;;purple;;_RV_;;value5;;_RV_;;;;_RV_;;value4;;_RV_;;2;;_RV_;;"
+	],
+	[
+		3,
+		1,
+		"comment_newline",
+		"06/11/2021",
+		"23:02:25",
+		"type;;_RV_;;1;;_RV_;;"
+	],
+	[
+		4,
+		1,
+		"comment_text",
+		"06/11/2021",
+		"23:02:54",
+		"value;;_RV_;;My first program using PWCT!;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		8,
+		1,
+		"comment_image",
+		"06/11/2021",
+		"23:07:05",
+		"value;;_RV_;;images/pwctlogo.jpg;;_RV_;;lvalue2;;_RV_;;2;;_RV_;;value2;;_RV_;;300;;_RV_;;lvalue3;;_RV_;;2;;_RV_;;value3;;_RV_;;200;;_RV_;;value4;;_RV_;;1;;_RV_;;"
+	],
+	[
+		9,
+		1,
+		"print",
+		"06/11/2021",
+		"23:07:13",
+		"text;;_RV_;;I Love Programming!;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	]
+]
+
+# End of Visual Source File

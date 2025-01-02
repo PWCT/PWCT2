@@ -1,0 +1,847 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'english'
+nStepsID                 = 18		
+nInteractionsID          = 14
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aList</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[
+:name&nbsp;=&nbsp;&quot;Ring&quot;,
+:type&nbsp;=&nbsp;&quot;Dynamic&quot;,
+:year&nbsp;=&nbsp;2016,
+:license&nbsp;=&nbsp;&quot;MIT&quot;
+]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"aList = [
+:name = "+char(34)+"Ring"+char(34)+",
+:type = "+char(34)+"Dynamic"+char(34)+",
+:year = 2016,
+:license = "+char(34)+"MIT"+char(34)+"
+]"
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"aList = [
+:name = "+char(34)+"Ring"+char(34)+",
+:type = "+char(34)+"Dynamic"+char(34)+",
+:year = 2016,
+:license = "+char(34)+"MIT"+char(34)+"
+]"
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aList2</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[
+[&quot;name&quot;,&nbsp;&quot;Ring&quot;],
+[&quot;type&quot;,&nbsp;&quot;Dynamic&quot;],
+[&quot;year&quot;,2016],
+[&quot;license&quot;,&quot;MIT&quot;]
+]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"aList2 = [
+["+char(34)+"name"+char(34)+", "+char(34)+"Ring"+char(34)+"],
+["+char(34)+"type"+char(34)+", "+char(34)+"Dynamic"+char(34)+"],
+["+char(34)+"year"+char(34)+",2016],
+["+char(34)+"license"+char(34)+","+char(34)+"MIT"+char(34)+"]
+]"
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"aList2 = [
+["+char(34)+"name"+char(34)+", "+char(34)+"Ring"+char(34)+"],
+["+char(34)+"type"+char(34)+", "+char(34)+"Dynamic"+char(34)+"],
+["+char(34)+"year"+char(34)+",2016],
+["+char(34)+"license"+char(34)+","+char(34)+"MIT"+char(34)+"]
+]"
+			]
+		]
+	],
+	[
+		4,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aList</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? aList"
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print aList (New Line) "
+			]
+		]
+	],
+	[
+		5,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aList2</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? aList2"
+			],
+			[
+				"interactionid",
+				5
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print aList2 (New Line) "
+			]
+		]
+	],
+	[
+		6,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nSize</font></span> =  Get List Size <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aList</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"nSize = len(aList)"
+			],
+			[
+				"interactionid",
+				6
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"nSize =  Get List Size aList"
+			]
+		]
+	],
+	[
+		7,
+		1,
+		[
+			[
+				"name",
+				"For <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">t&nbsp;=&nbsp;1</font></span> to <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nSize</font></span> step <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"for t = 1 to nSize step 1 { "
+			],
+			[
+				"interactionid",
+				7
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"For t = 1 to nSize step 1"
+			]
+		]
+	],
+	[
+		8,
+		7,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				7
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		10,
+		8,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aList[t][2]</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? aList[t][2]"
+			],
+			[
+				"interactionid",
+				8
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print aList[t][2] (New Line) "
+			]
+		]
+	],
+	[
+		9,
+		7,
+		[
+			[
+				"name",
+				"End of For Loop"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"}"
+			],
+			[
+				"interactionid",
+				7
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of For Loop"
+			]
+		]
+	],
+	[
+		11,
+		1,
+		[
+			[
+				"name",
+				"For <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">t</font></span> in <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aList</font></span> step <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"for t in aList step 1 { "
+			],
+			[
+				"interactionid",
+				9
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"For t in aList step 1"
+			]
+		]
+	],
+	[
+		12,
+		11,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				9
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		14,
+		12,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">t[1]</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? t[1]"
+			],
+			[
+				"interactionid",
+				10
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print t[1] (New Line) "
+			]
+		]
+	],
+	[
+		13,
+		11,
+		[
+			[
+				"name",
+				"End of For Loop"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"}"
+			],
+			[
+				"interactionid",
+				9
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of For Loop"
+			]
+		]
+	],
+	[
+		15,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aList[:name]</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? aList[:name]"
+			],
+			[
+				"interactionid",
+				11
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print aList[:name] (New Line) "
+			]
+		]
+	],
+	[
+		16,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aList[:license]</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? aList[:license]"
+			],
+			[
+				"interactionid",
+				12
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print aList[:license] (New Line) "
+			]
+		]
+	],
+	[
+		17,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aList[&quot;type&quot;]</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? aList["+char(34)+"type"+char(34)+"]"
+			],
+			[
+				"interactionid",
+				13
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print aList["+char(34)+"type"+char(34)+"] (New Line) "
+			]
+		]
+	],
+	[
+		18,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aList[:type]</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? aList[:type]"
+			],
+			[
+				"interactionid",
+				14
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print aList[:type] (New Line) "
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"12/04/2023",
+		"15:28:48",
+		""
+	],
+	[
+		2,
+		1,
+		"assignment",
+		"12/04/2023",
+		"15:40:13",
+		"leftside;;_RV_;;aList;;_RV_;;rightside;;_RV_;;[
+:name = "+char(34)+"Ring"+char(34)+",
+:type = "+char(34)+"Dynamic"+char(34)+",
+:year = 2016,
+:license = "+char(34)+"MIT"+char(34)+"
+];;_RV_;;"
+	],
+	[
+		3,
+		1,
+		"assignment",
+		"12/04/2023",
+		"15:40:54",
+		"leftside;;_RV_;;aList2;;_RV_;;rightside;;_RV_;;[
+["+char(34)+"name"+char(34)+", "+char(34)+"Ring"+char(34)+"],
+["+char(34)+"type"+char(34)+", "+char(34)+"Dynamic"+char(34)+"],
+["+char(34)+"year"+char(34)+",2016],
+["+char(34)+"license"+char(34)+","+char(34)+"MIT"+char(34)+"]
+];;_RV_;;"
+	],
+	[
+		4,
+		1,
+		"print",
+		"12/04/2023",
+		"15:41:00",
+		"text;;_RV_;;aList;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	],
+	[
+		5,
+		1,
+		"print",
+		"12/04/2023",
+		"15:41:05",
+		"text;;_RV_;;aList2;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	],
+	[
+		6,
+		1,
+		"getlistsize",
+		"12/04/2023",
+		"15:41:51",
+		"value;;_RV_;;aList;;_RV_;;value2;;_RV_;;nSize;;_RV_;;"
+	],
+	[
+		7,
+		1,
+		"forloop",
+		"12/04/2023",
+		"15:41:58",
+		"start;;_RV_;;t = 1;;_RV_;;to;;_RV_;;nSize;;_RV_;;step;;_RV_;;1;;_RV_;;"
+	],
+	[
+		8,
+		1,
+		"print",
+		"12/04/2023",
+		"15:42:27",
+		"text;;_RV_;;aList[t][2];;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	],
+	[
+		9,
+		1,
+		"forinloop",
+		"12/04/2023",
+		"15:42:50",
+		"variable;;_RV_;;t;;_RV_;;in;;_RV_;;aList;;_RV_;;step;;_RV_;;1;;_RV_;;"
+	],
+	[
+		10,
+		1,
+		"print",
+		"12/04/2023",
+		"15:43:02",
+		"text;;_RV_;;t[1];;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	],
+	[
+		11,
+		1,
+		"print",
+		"12/04/2023",
+		"15:43:52",
+		"text;;_RV_;;aList[:name];;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	],
+	[
+		12,
+		1,
+		"print",
+		"12/04/2023",
+		"15:44:05",
+		"text;;_RV_;;aList[:license];;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	],
+	[
+		13,
+		1,
+		"print",
+		"12/04/2023",
+		"15:44:29",
+		"text;;_RV_;;aList["+char(34)+"type"+char(34)+"];;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	],
+	[
+		14,
+		1,
+		"print",
+		"12/04/2023",
+		"15:44:37",
+		"text;;_RV_;;aList[:type];;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	]
+]
+
+# End of Visual Source File
