@@ -16,12 +16,12 @@ A replacement for the Ring Code Editor.
 ### Get a copy from this repository
 
 
-	git clone https://github.com/PWCT/PWCT2
+	git clone https://github.com/pwct/pwct2
 
 ### Run the main source file
 
 
-	cd PWCT2
+	cd pwct2
 	ring pwct.ring 
 
 ## Get PWCT 2.0 from Steam
