@@ -9,7 +9,7 @@ PWCT2 is a programming tool to enjoy visual programming & interactive visualizat
 
 A replacement for the Ring Code Editor.
 
-## Run PWCT 2.0 from Source Code (Windows/Linux/macOS)
+## Running PWCT 2.0 from Source Code (Windows/Linux/macOS)
 
 ### Install the Ring programming language from https://ring-lang.github.io
 
