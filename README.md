@@ -24,11 +24,7 @@ A replacement for the Ring Code Editor.
 	cd pwct2
 	ring pwct.ring 
 
-## Get PWCT 2.0 from Steam
-
-PWCT 2.0 was released on 1 March 2023
-
-The current release is PWCT 2.0 Rev. 2025.01.01
+## Get PWCT 2.0 from Steam (Windows)
 
 URL: https://store.steampowered.com/app/1953110/Programming_Without_Coding_Technology_20/
 
