@@ -1,1 +1,0 @@
-see read("myapp.exe")
