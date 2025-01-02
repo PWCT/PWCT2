@@ -9,7 +9,20 @@ PWCT2 is a programming tool to enjoy visual programming & interactive visualizat
 
 A replacement for the Ring Code Editor.
 
-## Get PWCT 2.0
+## Run PWCT 2.0 from Source Code (Windows/Linux/macOS)
+
+1. Install the Ring programming language from http://ring-lang.github.io
+
+2. Get a copy from this repository
+
+	git clone https://github.com/PWCT/PWCT2
+
+3. Run the main source file
+
+	cd PWCT2
+	ring pwct.ring 
+
+## Get PWCT 2.0 from Steam
 
 PWCT 2.0 was released on 1 March 2023
 
