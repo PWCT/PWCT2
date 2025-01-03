@@ -32,6 +32,13 @@ Check the Documents folder for HTML/CHM/PDF files.
 
 Online version: https://doublesvsoop.sourceforge.net/pwct2
 
+## Screen Shots
+
+![gamedev](https://raw.githubusercontent.com/PWCT/PWCT2/master/documents/source/images/demo/demoshot1.png)
+
+![guidev](https://raw.githubusercontent.com/PWCT/PWCT2/master/documents/source/images/demo/demoshot2.png)
+
+
 ## Videos
 
 The next videos demonstrates some of the PWCT 2.0 features:
