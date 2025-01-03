@@ -28,6 +28,10 @@ A replacement for the Ring Code Editor.
 
 URL: https://store.steampowered.com/app/1953110/Programming_Without_Coding_Technology_20/
 
+## Documentation
+
+Check the Documents folder for HTML/CHM/PDF files.
+
 ## Videos
 
 The next videos demonstrates some of the PWCT 2.0 features:
