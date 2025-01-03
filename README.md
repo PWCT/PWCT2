@@ -32,6 +32,8 @@ URL: https://store.steampowered.com/app/1953110/Programming_Without_Coding_Techn
 
 Check the Documents folder for HTML/CHM/PDF files.
 
+Online version: https://doublesvsoop.sourceforge.net/pwct2
+
 ## Videos
 
 The next videos demonstrates some of the PWCT 2.0 features:
