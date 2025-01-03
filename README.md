@@ -3,11 +3,9 @@ Programming Without Coding Technology (PWCT) 2.0
 
 ## Introduction
 
-Apply programming concepts and develop applications and 2D games using the Ring programming language. 
+PWCT2 is a visual programming language designed for enjoying visual programming and interactive visualization. 
 
-PWCT2 is a programming tool to enjoy visual programming & interactive visualization. 
-
-A replacement for the Ring Code Editor.
+It is written in the Ring programming language and supports importing and exporting Ring code.
 
 ## Running PWCT 2.0 from Source Code (Windows/Linux/macOS)
 
