@@ -3,6 +3,8 @@ Programming Without Coding Technology (PWCT) 2.0
 
 ## Introduction
 
+Apply programming concepts and develop applications and 2D games.
+
 PWCT2 is a visual programming language designed for enjoying visual programming and interactive visualization. 
 
 It is written in the Ring programming language and supports importing and exporting Ring code.
@@ -41,7 +43,6 @@ Online version: https://doublesvsoop.sourceforge.net/pwct2
 ![3ddev](https://raw.githubusercontent.com/PWCT/PWCT2/master/documents/source/images/demo/demo3.png)
 
 ![richcomments](https://raw.githubusercontent.com/PWCT/PWCT2/master/documents/source/images/demo/demo4.png)
-
 
 ## Videos
 
@@ -107,6 +108,20 @@ More videos
 PWCT introduces innovative concepts to the realm of visual programming languages (VPLs), such as the Graphical Code Replacement (GCR) method, which replaces the traditional Drag-and-Drop approach. 
 Additionally, PWCT integrates the Time Dimension at the program design level and includes a feature to play programs as a movie, enabling step-by-step implementation visualization. 
 However, the design of PWCT is influenced by projects such as Lava, Forms/3, Limnor, Scratch, and Envision.
+
+## Features
+
+It supports various modes:
+
+* Visual Programming with Mouse: This mode is useful for browsing components and exploring the system's offerings.
+
+* Visual Programming with Keyboard Shortcuts: If you know the component name, you can avoid using the mouse and accomplish everything with the keyboard.
+
+* Textual Programming: You can type Ring code directly at any location in the Steps Tree, and the environment will convert it to a visual representation. This approach combines the writability of textual programming with the readability of visual programming.
+
+* Reading/Modifying Programs through Visual Components and Time Machine: You can read and modify programs using visual components and the Time Machine. Additionally, playing programs as movies is a convenient way to enjoy reading programs without using the mouse or keyboard; just click play and watch.
+
+These different modes are designed to accommodate various programming preferences. If you prefer textual programming, simply write code. If you prefer visual programming through the mouse or keyboard, those options are available as well.
 
 # License 
 
