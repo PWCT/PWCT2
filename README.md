@@ -44,7 +44,7 @@ Online version: https://doublesvsoop.sourceforge.net/pwct2
 
 ![richcomments](https://raw.githubusercontent.com/PWCT/PWCT2/master/documents/source/images/demo/demo4.png)
 
-## 📚The concept and related projects
+## ⚡The concept and related projects
 
 PWCT introduces innovative concepts to the realm of visual programming languages (VPLs), such as the Graphical Code Replacement (GCR) method, which replaces the traditional Drag-and-Drop approach. 
 Additionally, PWCT integrates the Time Dimension at the program design level and includes a feature to play programs as a movie, enabling step-by-step implementation visualization. 
