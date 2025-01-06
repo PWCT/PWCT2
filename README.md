@@ -113,13 +113,13 @@ However, the design of PWCT is influenced by projects such as Lava, Forms/3, Lim
 
 It supports various modes:
 
-* Visual Programming with Mouse: This mode is useful for browsing components and exploring the system's offerings.
+* **Visual Programming with Mouse:** This mode is useful for browsing components and exploring the system's offerings.
 
-* Visual Programming with Keyboard Shortcuts: If you know the component name, you can avoid using the mouse and accomplish everything with the keyboard.
+* **Visual Programming with Keyboard Shortcuts:** If you know the component name, you can avoid using the mouse and accomplish everything with the keyboard.
 
-* Textual Programming: You can type Ring code directly at any location in the Steps Tree, and the environment will convert it to a visual representation. This approach combines the writability of textual programming with the readability of visual programming.
+* **Reading/Modifying Programs through Visual Components and Time Machine:** You can read and modify programs using visual components and the Time Machine. Additionally, playing programs as movies is a convenient way to enjoy reading programs without using the mouse or keyboard; just click play and watch.
 
-* Reading/Modifying Programs through Visual Components and Time Machine: You can read and modify programs using visual components and the Time Machine. Additionally, playing programs as movies is a convenient way to enjoy reading programs without using the mouse or keyboard; just click play and watch.
+* **Textual Programming:** You can type Ring code directly at any location in the Steps Tree, and the environment will convert it to a visual representation. This approach combines the writability of textual programming with the readability of visual programming.
 
 These different modes are designed to accommodate various programming preferences. If you prefer textual programming, simply write code. If you prefer visual programming through the mouse or keyboard, those options are available as well.
 
