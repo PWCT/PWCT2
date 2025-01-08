@@ -120,6 +120,7 @@ class StepsTreeView from TreeControl
 				oLabel.SetText(cImage+
 				this.oStyle.text(cText,this.cColor,this.cBackColor))
 			}
+			NewLabelStyle(oLabel,[:id = GetIDByObj(oItem)])
 			UpdateLabelSize(nStepID,oLabel)
 		}
 
@@ -256,6 +257,7 @@ class StepsTreeView from TreeControl
 			for item in aItems {
 				if lUseLabels = true {		
 					oLabel = GetItemLabel(item)
+					oLabel.setText(oLabel.removeIcon(oLabel.text()))
 					cText = ItemLabelTextWithoutImages(oLabel)
 					cText = PrepareNodeText(cText)
 					cImage = this.NodeImage(C_LABELIMAGE_IGNORESTEP)
@@ -275,6 +277,7 @@ class StepsTreeView from TreeControl
 			for item in aItems {
 				if lUseLabels = true {		
 					oLabel = GetItemLabel(item)
+					oLabel.setText(oLabel.removeIcon(oLabel.text()))
 					cText = ItemLabelTextWithoutImages(oLabel)
 					cText = PrepareNodeText(cText)
 					cImage = this.NodeImage(C_LABELIMAGE_NODEICON)
@@ -355,6 +358,8 @@ class StepsTreeView from TreeControl
 				return
 			}
 		}
+		# Add Unicode Icon to the Step Text
+			oLabel.setText(oLabel.addIcon(oLabel.text()))
 		oLabel.setmaximumwidth(10000)
 		cStyle = oLabel.stylesheet()
 		if lLabelStyleGradient {
