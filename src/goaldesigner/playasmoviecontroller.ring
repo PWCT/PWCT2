@@ -84,7 +84,7 @@ class PlayAsMovieController
 							# Select the Component in the Components Browser
 								cComponentFile 	=  oModel.oInteractionModel.GetInteractionComponent(nStepIID)
 								aComponent 	= ComponentsBrowserWindow().GetComponentByFileName(cComponentFile)
-								cComponentName	= aComponent[C_TREEMODEL_CONTENT][:name]
+								cComponentName	= aComponent[C_TREEMODEL_CONTENT][:plainname]
 								if parent().lDockForComponentsBrowserIsVisible {
 									Parent().oView.oDockComponentsBrowser.raise()
 								else 

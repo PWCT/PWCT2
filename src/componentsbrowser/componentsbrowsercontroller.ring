@@ -117,7 +117,7 @@ class ComponentsBrowserController from WindowsControllerParent
 			for x = 2 to nMax {
 				nStepID      	= aStepsTree[x][1]
 				nParentID   	= aStepsTree[x][2]
-				cStepName  	= aStepsTree[x][3][:name]
+				cStepName  	= aStepsTree[x][3][:plainname]
 				SerialAdd2(nParentID,nStepID,cStepName)								
 			}
 			setupdatesenabled(True)
@@ -162,7 +162,7 @@ class ComponentsBrowserController from WindowsControllerParent
 		for x=2 to nMax {
 			item = aTree[x]
 			aContent = item[C_TREEMODEL_CONTENT]
-			cStepName = aContent[:name]
+			cStepName = aContent[:plainname]
 			cStepCode = aContent[:code]
 			cStepName = lower(cStepName)
 			cFind = lower(cFind)
@@ -190,7 +190,7 @@ class ComponentsBrowserController from WindowsControllerParent
 			# Avoid lower(cFind) to support upper/lower letters
 				cFind = trim(oView.oTextSearch.Text())
 			if lSearchResult {
-				cFind += " --> [ " + aContent[:name] + " ]"
+				cFind += " --> [ " + aContent[:plainname] + " ]"
 			}
 			QuickMsg().setText(cFind)
 			QuickMsg().centerTheWindow()
@@ -211,14 +211,14 @@ class ComponentsBrowserController from WindowsControllerParent
 		for x=2 to nMax {
 			item = aTree[x]
 			aContent = item[C_TREEMODEL_CONTENT]
-			cStepName = aContent[:name]
+			cStepName = aContent[:plainname]
 			cStepCode = aContent[:code]
 			cStepName = lower(cStepName)
 			cFind = lower(cFind)
 			if left(cStepName,len(cFind)) = cFind and 
 				trim(cStepCode) != NULL {			
 				lSearchResult = True
-				return [lSearchResult,cFind + " --> [ " + aContent[:name] + " ]"]
+				return [lSearchResult,cFind + " --> [ " + aContent[:plainname] + " ]"]
 			}
 		}
 		return [lSearchResult,cFind]
@@ -485,7 +485,7 @@ class ComponentsBrowserController from WindowsControllerParent
 		for x=2 to nMax {
 			item = aTree[x]
 			aContent = item[C_TREEMODEL_CONTENT]
-			cStepName = aContent[:name]
+			cStepName = aContent[:plainname]
 			cStepCode = aContent[:code]
 			cStepName = lower(cStepName)
 			cFind = lower(cFind)
