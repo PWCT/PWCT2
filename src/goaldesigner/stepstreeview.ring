@@ -351,6 +351,7 @@ class StepsTreeView from TreeControl
 		}
 		if  aPara[:StepType] != NULL {		
 			if  aPara[:StepType] = C_STEPTYPE_COMMENT {
+				oLabel.setText(ItemLabelTextWithoutImages(oLabel))
 				return
 			}
 		}
