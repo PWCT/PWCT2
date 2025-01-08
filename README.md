@@ -4,7 +4,7 @@ Programming Without Coding Technology (PWCT) 2.0
 # 📖Contents:
 
 - [📘Introduction](#introduction)
-- [🚀Running PWCT 2.0 from Source Code (Windows/Linux/macOS)](#running-pwct-20-from-source-code-windowslinuxmacos)
+- [🚀Running PWCT 2.0 from Source Code (Windows/Linux/macOS)](#-running-pwct-20-from-source-code-windowslinuxmacos)
 - [🎮Get PWCT 2.0 from Steam (Windows)](#get-pwct-20-from-steam-windows)
 - [📄Documentation](#documentation)
 - [🖼️Screen Shots](#%EF%B8%8Fscreen-shots)
