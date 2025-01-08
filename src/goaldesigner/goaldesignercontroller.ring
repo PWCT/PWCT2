@@ -1057,7 +1057,7 @@ class GoalDesignerController from WindowsControllerParent
 		if lCreateNewStepsTree {
 			oView.oStepsTree.close()
 			oView.oStepsTree.delete()
-			oView.CreateStepsTree(self)
+			oView.createStepsTree(self)
 		}
 		// Using parent().goaldesignerFont() is slow 
 		// parent().goaldesignerFont()
@@ -1067,18 +1067,18 @@ class GoalDesignerController from WindowsControllerParent
 		if nMax > this.nMaxStepsCount and lUseMaxStepsCount {
 			oView.oStepsTree {
 				lUseLabels = False
-				setStyleSheet(this.oView.StepsTreeWhiteAndBlackStyle(nFontSize))
+				setStyleSheet(this.oView.stepsTreeWhiteAndBlackStyle(nFontSize))
 			}
 		else 
 			oView.oStepsTree {
 				lUseLabels = True
-				setstylesheet(this.oView.StepsTreeStyle())
+				setStyleSheet(this.oView.stepsTreeStyle())
 			}
 		}
-		oView.oStepsTree.preparetempfont()
+		oView.oStepsTree.prepareTempFont()
 		oTempFont = oView.oStepsTree.oTempFont
 		# A flag to know if we are starting from a step (Not Start Here)
-			lUpdateParent = not AllowInteractButton()
+			lUpdateParent = not allowInteractButton()
 		# How many Root steps, for example using (x=10 y=20 z=30) 
 		# will lead to three roots 
 		# if we don't use (nRootsCount) we could get steps in wrong order 
@@ -1098,22 +1098,22 @@ class GoalDesignerController from WindowsControllerParent
 			# When we add step in location that doesn't support children (Not Start Here)
 				if lUpdateParent and aStep[C_TREEMODEL_PARENTID] = aStepsTree[2][C_TREEMODEL_PARENTID] {
 					oItem = oView.oStepsTree.GetObjByID(nParentID)
-					nInsertIndex = oItem.parent().indexofchild(oItem) + nRootsCount + 1
+					nInsertIndex = oItem.parent().indexOfChild(oItem) + nRootsCount + 1
 					nParentID = oModel.getStepParent(nParentID)
 					nRootsCount++
 				}
 			oView.oStepsTree {
 				if nMax <= this.nMaxStepsCount or not this.lUseMaxStepsCount {
-					SetStepColor(nStepType)
+					setStepColor(nStepType)
 				}
 				# GetObjByID() consumes 0.08 second per 100 steps 
-					oParent = GetObjByID(nParentID)
+					oParent = getObjByID(nParentID)
 				if lIgnore {
 					cImage = C_LABELIMAGE_IGNORESTEP
 				else
 					cImage = C_LABELIMAGE_NODEICON
 				}
-				oItem = new qtreewidgetitem() 
+				oItem = new QTreeWidgetItem() 
 				if nMax < this.nMaxStepsCount or not this.lUseMaxStepsCount {
 					oLabel = new TreeLabel(self) 
 					# Changing label Size have a notable effect on performance!
@@ -1128,22 +1128,22 @@ class GoalDesignerController from WindowsControllerParent
 							"C_STEPCOLOR_DATA_BACKCOLOR",C_STEPCOLOR_DATA_BACKCOLOR)
 						cImageCode = ""
 						if C_STEPSTREE_NODEICON {
-							cImageCode = "<img src='"+cImage+"'> "
+							cImageCode = nodeImage(cImage)
 						else 
 							if lIgnore {
 								cImageCode = C_COMMENTMARK
 							}
 						}
-						oLabel.settext(cImageCode+
+						oLabel.setText(cImageCode+
 							`<span style="background-color:`+cBackColor+
 							`"><font color="`+cColor+`">`+cText+
 							`</font></span>`)				
-						NewLabelStyle(oLabel,[:StepType = nStepType])
+						newLabelStyle(oLabel,[:StepType = nStepType])
 					}
 					if nInsertIndex = -1 {
-						oParent.addchild(oItem)
+						oParent.addChild(oItem)
 					else 
-						oParent.insertchild(nInsertIndex,oItem)
+						oParent.insertChild(nInsertIndex,oItem)
 					}
 					setItemWidget(oItem,0,oLabel)
 				else 
@@ -1152,12 +1152,12 @@ class GoalDesignerController from WindowsControllerParent
 					}
 					oItem.setText(0,cPlainText)
 					if nInsertIndex = -1 {
-						oParent.addchild(oItem)
+						oParent.addChild(oItem)
 					else 
-						oParent.insertchild(nInsertIndex,oItem)
+						oParent.insertChild(nInsertIndex,oItem)
 					}
 				}
-				AddToTree(nID,oItem)
+				addToTree(nID,oItem)
 				if this.lSuperSerialAddExpandSteps or x < this.nMinStepsToExpand {
 					oItem.setExpanded(True)
 				else 
@@ -1166,10 +1166,10 @@ class GoalDesignerController from WindowsControllerParent
 			}
 			if lShowLoadingProgress {
 				if x % 100 = 0 {
-					showmessageInStatusBar("Loading : " + floor((x/nMax)*100) + "%")
+					showMessageInStatusBar("Loading : " + floor((x/nMax)*100) + "%")
 					oView.oStepsTree.setUpdatesEnabled(True)
 					oView.oStepsTree.blockSignals(False)
-					PWCT_APP.processevents()
+					PWCT_APP.processEvents()
 					oView.oStepsTree.setUpdatesEnabled(False)
 					oView.oStepsTree.blockSignals(True)
 				}
