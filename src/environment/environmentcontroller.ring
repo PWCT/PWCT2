@@ -1260,11 +1260,11 @@ class EnvironmentController from WindowsControllerParent
 		ok
 
 	func REPLConsole
-		cAppFileName = exefolder() + "../tools/ringrepl/ringrepl.ring"
+		cAppFileName = exefolder() + "/../tools/ringrepl/ringrepl.ring"
 		RunToolConsole(cAppFileName)
 
 	func REPLGUI
-		cAppFileName = exefolder() + "../tools/ringrepl/ringreplw.ring"
+		cAppFileName = exefolder() + "/../tools/ringrepl/ringreplw.ring"
 		# RunTool will split parameters using "," as separator 
 		cAppFileName += ",1"	# Style Fusion White
 		RunTool(cAppFileName)
