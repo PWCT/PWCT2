@@ -1256,7 +1256,7 @@ class EnvironmentController from WindowsControllerParent
 			System('start call "'+exefolder()+'ring" "' + cFileName + '"' + nl)
 		elseif isLinux()
 			cCode = 'cd $(dirname "'+cFileName+'") ; x-terminal-emulator -e ' +
-			 "'" + 'ring "' + cFileName + '";' + "'" + nl
+			 "'" + 'ring "' + cFileName + '";' + "' &" + nl
 			system(cCode)
 		else
 			cCode = 'cd $(dirname "'+cFileName+'") ; ' + ' ring "' + cFileName + '"' + nl
