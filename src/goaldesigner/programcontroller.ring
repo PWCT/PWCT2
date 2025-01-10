@@ -296,7 +296,7 @@ Class ProgramController
 				chdir(cDir)
 			elseif isLinux()
 				cCode = 'cd $(dirname "'+cFileToRun+'") ; x-terminal-emulator -e ' +
-				 "'" + 'ring "' + cFileToRun + '" ; read -p "============" key;' + "'" + nl
+				 "'" + 'ring "' + cFileToRun + '" ; read -p "" key;' + "'" + nl
 				system(cCode)
 			else
 				cCode = 'cd $(dirname "'+cFileToRun+'") ; ' + ' ring "' + cFileToRun + '"'  + nl
