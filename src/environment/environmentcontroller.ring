@@ -694,7 +694,7 @@ class EnvironmentController from WindowsControllerParent
 			"applications/Game2048/game2048.ring",
 			"applications/Cards/cards.ring",
 			"applications/MoneyBoxes/moneyController.ring",
-			"applications/KnightTour/KnighTtour.ring",
+			"applications/KnightTour/KnightTour.ring",
 			"applications/Tessera/tessera.ring",
 			"applications/Matching/MatchingGame.ring",
 			"applications/OthelloGame/OthelloGame.ring"
