@@ -109,7 +109,7 @@ class ChangeLog
 	func show
 		win = new qWidget() {
 			win = this.win
-			resize(550,600)
+			resize(800,600)
 			setWindowTitle("ChangeLog") 
 			setWindowFlags(Qt_Window | Qt_WindowTitleHint  | Qt_CustomizeWindowHint)
 			textlog = new qTextEdit(win) {
