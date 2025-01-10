@@ -1252,12 +1252,16 @@ class EnvironmentController from WindowsControllerParent
 		chdir(PWCT_FOLDER)
 
 	func RunToolConsole cFileName
-		if iswindows()
+		if isWindows() {
 			System('start call "'+exefolder()+'ring" "' + cFileName + '"' + nl)
+		elseif isLinux()
+			cCode = 'cd $(dirname "'+cFileName+'") ; x-terminal-emulator -e ' +
+			 "'" + 'ring "' + cFileName + '" ; read -p "============" key;' + "'" + nl
+			system(cCode)
 		else
 			cCode = 'cd $(dirname "'+cFileName+'") ; ' + ' ring "' + cFileName + '"' + nl
 			system(cCode)
-		ok
+		}
 
 	func REPLConsole
 		cAppFileName = exefolder() + "/../tools/ringrepl/ringrepl.ring"
