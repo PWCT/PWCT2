@@ -284,7 +284,7 @@ Class ProgramController
 
 		func RunBatch cFile
 			cFileToRun = FileNameEncoding(cFileName)
-			if iswindows() {
+			if isWindows() {
 				cDir = currentdir()
 				chdir(exefolder())
 				if ! fexists(cFileToRun) {
@@ -294,6 +294,10 @@ Class ProgramController
 					cFile + '" "' + cFileToRun + '"' + nl
 				system(cCode)
 				chdir(cDir)
+			elseif isLinux()
+				cCode = 'cd $(dirname "'+cFileToRun+'") ; x-terminal-emulator -e ' +
+				 "'" + 'ring "' + cFileToRun + '" ; read -p "============" key;' + "'" + nl
+				system(cCode)
 			else
 				cCode = 'cd $(dirname "'+cFileToRun+'") ; ' + ' ring "' + cFileToRun + '"'  + nl
 				system(cCode)
