@@ -1258,6 +1258,10 @@ class EnvironmentController from WindowsControllerParent
 			cCode = 'cd $(dirname "'+cFileName+'") ; x-terminal-emulator -e ' +
 			 "'" + 'ring "' + cFileName + '";' + "' &" + nl
 			system(cCode)
+		elseif isMacosx()
+			cCode = 'cd $(dirname "'+cFileName+'") ; osascript -e ' +
+			 `'tell application "Terminal" to do script "ring \"`+cFileName+`\" "'`
+			system(cCode)
 		else
 			cCode = 'cd $(dirname "'+cFileName+'") ; ' + ' ring "' + cFileName + '"' + nl
 			system(cCode)
