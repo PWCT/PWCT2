@@ -630,12 +630,12 @@ class EnvironmentController from WindowsControllerParent
 
 	func PWCTCHMAction
 		new QDesktopServices {
-			OpenURL(new qURL("file:///"+substr(PWCT_FOLDER,"\","/")+"../documents/PWCT.chm") )
+			OpenURL(new qURL("file:///"+substr(PWCT_FOLDER,"\","/")+"/documents/PWCT.chm") )
 		}
 
 	func PWCTPDFAction
 		new QDesktopServices {
-			OpenURL(new qURL("file:///"+substr(PWCT_FOLDER,"\","/")+"../documents/PWCT.pdf") )
+			OpenURL(new qURL("file:///"+substr(PWCT_FOLDER,"\","/")+"/documents/PWCT.pdf") )
 		}
 
 	func PWCTOpenVideo nVideo
@@ -1229,12 +1229,12 @@ class EnvironmentController from WindowsControllerParent
 		}
 
 	func OpenFormDesigner	
-		cFormFileName = exefolder() + "../tools/formdesigner/formdesigner.ring"
+		cFormFileName = exefolder() + "/../tools/formdesigner/formdesigner.ring"
 		RunTool(cFormFileName)
 
 	func OpenRingNotepad	
-		cAppPath = PWCT_FOLDER + "/../ring/ringnotepad.exe"
-		RunEXE(cAppPath)
+		cAppPath = exefolder() + "/../tools/ringnotepad/rnote.ring"
+		RunTool(cAppPath)
 
 	func RunEXE cFileName 
 		oView.oProcessEditbox.setplaintext("")
