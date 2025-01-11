@@ -345,7 +345,7 @@ class StepsTreeView from TreeControl
 		Using this function we can set the style of new labels 
 	*/
 	func NewLabelStyle oLabel,aPara
-		if T_LAYOUTDIRECTION = 1 or	! lLabelStyle { return }
+		if isLabelBlockStyleDisabled() { return }
 		if BlockStyleNotSupported() {
 			return 
 		}
@@ -376,7 +376,7 @@ class StepsTreeView from TreeControl
 		This is required if NewLabelStyle() is used
 	*/
 	func UpdateLabelSize nStepID,oLabel 
-		if ! lLabelStyle { return }
+		if isLabelBlockStyleDisabled() { return }
 		if BlockStyleNotSupported() {
 			return 
 		}
@@ -386,6 +386,13 @@ class StepsTreeView from TreeControl
 		oLabel.setmaximumwidth(10000)
 		oLabel.adjustsize()
 		oLabel.setmaximumwidth(oLabel.width())
+
+	/*
+		In the Steps Tree each TreeWidgetItem is a custom label 
+		This function tell us if we can use the Block Style for labels inside the Steps Tree
+	*/
+	func isLabelBlockStyleDisabled
+		return T_LAYOUTDIRECTION = 1 or	! lLabelStyle
 
 	/*
 		Check if we could draw block according to the selected style
