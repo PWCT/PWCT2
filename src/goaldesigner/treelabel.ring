@@ -10,32 +10,7 @@ class TreeLabel from QLabel
 	
 	oDoc = new QTextDocument()
 	
-	aIcons = [ 
-				["💾","Load "],
-				["🖥️","Print "],
-				["🚀","Start Here"],
-				["📝"," = "],
-				["⚖️","If "],
-				["⚖️","Case "],
-				["🔀","Switch "],
-				["🔚","End "],
-				["🔄","For "],
-				["🔄","While "],
-				["🔄","Do "],
-				["🔁","Again "],
-				["🌿","Class "],
-				["🏷️","Attributes "],
-				["🔒","Private "],
-				["📝","Methods "],
-				["🔧","function "],
-				["📋","Statements"],
-				["🔧","Functions"],
-				["🌿","Classes"],
-				["🎭","("],
-				["🔜","{"],
-				["🔚","}"],
-				["⚙️","_DEFAULT_ICON_"]
-			 ]
+	aIcons = T_GD_STEPSTREEICONS
 
 	func init oParent
 		super.init(oParent)

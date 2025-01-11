@@ -352,3 +352,32 @@
 	else 
 		T_TEMPLATES_FORMCONTROLLER		= "/templates/formcontroller.pwct"
 	}
+
+# Steps Tree Icons 
+
+ 	T_GD_STEPSTREEICONS = [ 
+				["💾","Load "],
+				["🖥️","Print "],
+				["🚀","Start Here"],
+				["📝"," = "],
+				["⚖️","If "],
+				["⚖️","Case "],
+				["🔀","Switch "],
+				["🔚","End "],
+				["🔄","For "],
+				["🔄","While "],
+				["🔄","Do "],
+				["🔁","Again "],
+				["🌿","Class "],
+				["🏷️","Attributes "],
+				["🔒","Private "],
+				["📝","Methods "],
+				["🔧","function "],
+				["📋","Statements"],
+				["🔧","Functions"],
+				["🌿","Classes"],
+				["🎭","("],
+				["🔜","{"],
+				["🔚","}"],
+				["⚙️","_DEFAULT_ICON_"]
+			 ]
