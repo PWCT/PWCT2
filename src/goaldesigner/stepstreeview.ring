@@ -93,8 +93,8 @@ class StepsTreeView from TreeControl
 
 	func GetItemLabel oItem
 		temp_pObject = itemwidget(oItem,0).pObject
-		nPos = std_find2(aTreeObjects,temp_pObject,2)
-		return aTreeObjects[nPos][1]
+		nPos = std_find2(aTreeObjects,temp_pObject,C_TREEOBJECT_OBJECTPOINTER)
+		return aTreeObjects[nPos][C_TREEOBJECT_OBJECT]
 
 	func AddStep nParentID,nID,cText
 		return AddNode(nParentID,nID,cText)

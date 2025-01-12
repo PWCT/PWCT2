@@ -96,10 +96,10 @@ class TreeControl from qTreeWidget
 	*/
 
 	func createTreeLabel
-		aTreeObjects + [new TreeLabel(self),0]
+		aTreeObjects + [new TreeLabel(self),NULL]
 		nSize = len(aTreeObjects)
-		aTreeObjects[nSize][2] =	aTreeObjects[nSize][1].pObject
-		return aTreeObjects[nSize][1]
+		aTreeObjects[nSize][C_TREEOBJECT_OBJECTPOINTER] =	aTreeObjects[nSize][C_TREEOBJECT_OBJECT].pObject
+		return aTreeObjects[nSize][C_TREEOBJECT_OBJECT]
 
 	/*
 		The next method is the same as SerialAdd
