@@ -98,7 +98,7 @@ class TreeControl from qTreeWidget
 	func createTreeLabel
 		aTreeObjects + [new TreeLabel(self),NULL]
 		nSize = len(aTreeObjects)
-		aTreeObjects[nSize][C_TREEOBJECT_OBJECTPOINTER] =	aTreeObjects[nSize][C_TREEOBJECT_OBJECT].pObject
+		aTreeObjects[nSize][C_TREEOBJECT_OBJECTPOINTER] = aTreeObjects[nSize][C_TREEOBJECT_OBJECT].pObject
 		return aTreeObjects[nSize][C_TREEOBJECT_OBJECT]
 
 	/*
