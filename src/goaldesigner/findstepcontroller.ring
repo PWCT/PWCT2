@@ -131,6 +131,7 @@ class FindStepController from WindowsControllerParent
 		oView.oListResult.Item(find(aStepIDResult,nStepID)-1).SetText(cText)
 		# Referesh the component (Open Interaction window then click ok)
 			parent().openComponent(nStepID)	
+			parent().nInteractionPagesToModifyCount++
 			last_Window().OkAction()
 		parent().enableHistory()
 
