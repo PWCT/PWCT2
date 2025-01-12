@@ -7,15 +7,15 @@
 
 class TreeControl from qTreeWidget	
 
-	aTree = []		# Node ID , Node Object , Node Object.pObject
-	aTreeLabels = []	# QWidget (Parent),QWidget (Parent).pObject
+	aTree = []				# Node ID , Node Object , Node Object.pObject
+	aTreeObjects = []		# QWidget (Parent),QWidget (Parent).pObject
 
 	font  nFontSize = 12	# The font object and the font size
 
-	lUseLabels = False	# Use TreeLabel for each Tree Item
+	lUseLabels = False		# Use TreeLabel for each Tree Item
 
-	cColor = "green"	# Node Color
-	cBackColor = ""		# Node Background Color
+	cColor = "green"		# Node Color
+	cBackColor = ""			# Node Background Color
 
 	cEventString
 
@@ -96,10 +96,10 @@ class TreeControl from qTreeWidget
 	*/
 
 	func createTreeLabel
-		aTreeLabels + [new TreeLabel(self),0]
-		nSize = len(aTreeLabels)
-		aTreeLabels[nSize][2] =	aTreeLabels[nSize][1].pObject
-		return aTreeLabels[nSize][1]
+		aTreeObjects + [new TreeLabel(self),0]
+		nSize = len(aTreeObjects)
+		aTreeObjects[nSize][2] =	aTreeObjects[nSize][1].pObject
+		return aTreeObjects[nSize][1]
 
 	/*
 		The next method is the same as SerialAdd
