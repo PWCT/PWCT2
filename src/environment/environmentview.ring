@@ -130,7 +130,9 @@ class EnvironmentView from WindowsViewParent
 					subDistribute   = addmenu(T_ENV_MENU_DISTRIBUTE) 	# "Distribute"
 				}
 			}
-			subGames 	= addmenu("Games")
+			if ! T_LAYOUTDIRECTION {
+				subGames 	= addmenu("Games")
+			}
 			subHelp 	= addmenu(T_ENV_MENU_HELP) # "Help"
 			subFile { 
 				oAction = new qAction(win) {
@@ -669,43 +671,44 @@ class EnvironmentView from WindowsViewParent
 				}
 				}
 			}
-			subGames {
-					aGamesTitles = [
-					"Stars Fighter",
-					"Flappy Bird 3000",
-					"Super Man 2016",
-					"Snake",
-					"Escape",
-					"Tetris",
-					"Maze",
-					"Sokoban",
-					"Squares Puzzle",
-					"Gold Magic 800",
-					"Pairs",
-					"2048",
-					"Cards",
-					"Money Boxes",
-					"Knight Tour",
-					"Tessera",
-					"Matching",
-					"Othello"
-					]
-					aGamesSeparator = [3,8,10]
-					subGames { 
-						for nGameIndex=1 to len(aGamesTitles) {
-							oAction = new qAction(win) {
-								settext(aGamesTitles[nGameIndex]) 
-								setclickevent(Method("PWCTOpenGame("+nGameIndex+")"))
+			if ! T_LAYOUTDIRECTION {
+				subGames {
+						aGamesTitles = [
+						"Stars Fighter",
+						"Flappy Bird 3000",
+						"Super Man 2016",
+						"Snake",
+						"Escape",
+						"Tetris",
+						"Maze",
+						"Sokoban",
+						"Squares Puzzle",
+						"Gold Magic 800",
+						"Pairs",
+						"2048",
+						"Cards",
+						"Money Boxes",
+						"Knight Tour",
+						"Tessera",
+						"Matching",
+						"Othello"
+						]
+						aGamesSeparator = [3,8,10]
+						subGames { 
+							for nGameIndex=1 to len(aGamesTitles) {
+								oAction = new qAction(win) {
+									settext(aGamesTitles[nGameIndex]) 
+									setclickevent(Method("PWCTOpenGame("+nGameIndex+")"))
+								}
+								addaction(oAction)
+								if Std_find(aGamesSeparator,nGameIndex) {
+									addseparator()
+								}
 							}
-							addaction(oAction)
-							if Std_find(aGamesSeparator,nGameIndex) {
-								addseparator()
-							}
+							
 						}
-						
-					}
-					addseparator()
-
+						addseparator()
+				}
 			}
 			subHelp { 
 				if ! PWCTIsMobile(:HelpMenu) {
@@ -716,57 +719,58 @@ class EnvironmentView from WindowsViewParent
 					}
 					addaction(oAction)
 					addseparator()
-
-					subHelpVideos = addmenu("PWCT Videos (Introduction to Programming)")
-					aVideoTitles = [
-					"1 - Print Text component",
-					"2 - Goal Designer features",
-					"3 - Get Input component",
-					"4 - Rich Comments (Adding Images)",
-					"5 - Get Character/Characters",
-					"6 - Quick Start component",
-					"7 - Arithmetic and Logical operators",
-					"8 - Relational operators",
-					"9 - Increment/Decrement and Logical NOT",
-					"10- ElseIf/Switch/While Loop/Shutdown",
-					"11- While Loop/For Loop/Loop/Exit",
-					"12- Nested For Loops",
-					"13- For In/Range Operator",
-					"14- Using Do/Again",
-					"15- Using Try/Catch",
-					"16- Using cCatchError",
-					"17- Using Functions",
-					"18- Return value from functions",
-					"19- Global/Local variables",
-					"20- Recursion",
-					"21- Short Circuit Evaluation",
-					"22- Conditions/Len/Min/Max",
-					"23- Multiplication Table",
-					"24- Using many files in the project",
-					"25- Using Lists/Add/Delete/Find/Reverse/Sort",
-					"26- Multi-Dimensional Lists/2D Lists",
-					"27- Using Lists as HashTable",
-					"28- Using Strings",
-					"29- Using Date/Time",
-					"30- Check Data Type and Conversion",
-					"31- Math Functions",
-					"32- Using Files"
-					]
-					aVideosSeparator = [4,9,16,20,24,27]
-					subHelpVideos { 
-						for nVideoIndex=1 to len(aVideoTitles) {
-							oAction = new qAction(win) {
-								settext(aVideoTitles[nVideoIndex]) 
-								setclickevent(Method("PWCTOpenVideo("+nVideoIndex+")"))
+					if ! T_LAYOUTDIRECTION {
+						subHelpVideos = addmenu("PWCT Videos (Introduction to Programming)")
+						aVideoTitles = [
+						"1 - Print Text component",
+						"2 - Goal Designer features",
+						"3 - Get Input component",
+						"4 - Rich Comments (Adding Images)",
+						"5 - Get Character/Characters",
+						"6 - Quick Start component",
+						"7 - Arithmetic and Logical operators",
+						"8 - Relational operators",
+						"9 - Increment/Decrement and Logical NOT",
+						"10- ElseIf/Switch/While Loop/Shutdown",
+						"11- While Loop/For Loop/Loop/Exit",
+						"12- Nested For Loops",
+						"13- For In/Range Operator",
+						"14- Using Do/Again",
+						"15- Using Try/Catch",
+						"16- Using cCatchError",
+						"17- Using Functions",
+						"18- Return value from functions",
+						"19- Global/Local variables",
+						"20- Recursion",
+						"21- Short Circuit Evaluation",
+						"22- Conditions/Len/Min/Max",
+						"23- Multiplication Table",
+						"24- Using many files in the project",
+						"25- Using Lists/Add/Delete/Find/Reverse/Sort",
+						"26- Multi-Dimensional Lists/2D Lists",
+						"27- Using Lists as HashTable",
+						"28- Using Strings",
+						"29- Using Date/Time",
+						"30- Check Data Type and Conversion",
+						"31- Math Functions",
+						"32- Using Files"
+						]
+						aVideosSeparator = [4,9,16,20,24,27]
+						subHelpVideos { 
+							for nVideoIndex=1 to len(aVideoTitles) {
+								oAction = new qAction(win) {
+									settext(aVideoTitles[nVideoIndex]) 
+									setclickevent(Method("PWCTOpenVideo("+nVideoIndex+")"))
+								}
+								addaction(oAction)
+								if Std_find(aVideosSeparator,nVideoIndex) {
+									addseparator()
+								}
 							}
-							addaction(oAction)
-							if Std_find(aVideosSeparator,nVideoIndex) {
-								addseparator()
-							}
+							
 						}
-						
+						addseparator()
 					}
-					addseparator()
 
 					subHelpLF = addmenu(T_ENV_MENU_PWCTLANGREF) # "PWCT Language Reference"
 					subHelpLF { 
