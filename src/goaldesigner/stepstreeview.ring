@@ -65,11 +65,11 @@ class StepsTreeView from TreeControl
 		addtoplevelitem(oFirststep)
 		AddToTree(1,oFirstStep)
 		setheaderlabel(cControlHeader)
-		oLabel = new TreeLabel(self) {
+		oLabel = createTreeLabel() {
 			resize(100,30)
 			settext(this.NodeImage(C_LABELIMAGE_NODEICON)+
 				 this.oStyle.text(this.cStartPointText,C_STEPCOLOR_STARTPOINT,""))
-			this.SetLabelFont(oLabel)
+			this.SetLabelFont(self)
 		}
 		setItemWidget(oFirstStep,0, oLabel)	
 		setCurrentItem(oFirstStep,0)
@@ -182,7 +182,7 @@ class StepsTreeView from TreeControl
 			for x=1 to len(aItems) {
 				oItem = aItems[x]
 				aLabel = aTempLabels[x]
-				oLabel2 = new TreeLabel(Self) {
+				oLabel2 = createTreeLabel() {
 					resize(100,30)
 					setText(this.prepareNodeText(aLabel[C_NODELABEL_TEXT]))
 					setStyleSheet(aLabel[C_NODELABEL_STYLESHEET])					

@@ -68,7 +68,7 @@ class TreeControl from qTreeWidget
 			cImage = C_LABELIMAGE_NODEICON
 		}
 		oItem = new qtreewidgetitem() 
-		oLabel = new TreeLabel(self) 
+		oLabel = createTreeLabel()
 		oLabel.resize(100,30)
 		SetLabelFont2(oLabel)
 		oLabel.settext(NodeImage(cImage)+
@@ -79,10 +79,23 @@ class TreeControl from qTreeWidget
 		AddToTree(nID,oItem)
 		oItem.setExpanded(true)
 
+	/*
+		This function add an icon to the step 
+	*/
+
 	func NodeImage cImage 
 		if C_STEPSTREE_NODEICON {
 			return oStyle.image(cImage)
 		}
+
+	/*
+		In our steps tree each node is a TreeWidgetItem that contains a custom object
+		This object could be any QWidget like QLabel (for example) 
+		We use the next function to create this object for customization 
+	*/
+
+	func createTreeLabel
+		return new TreeLabel(self)
 
 	/*
 		The next method is the same as SerialAdd
@@ -127,12 +140,12 @@ class TreeControl from qTreeWidget
 			setCurrentItem(oParent,0)	# Focus on Parent Step
 		}
 		if lUseLabels = True {
-			oLabel = new TreeLabel(self) {
+			oLabel = createTreeLabel() {
 				resize(100,30)
 				# if we used setlabelfont2() here
 				# when we cut steps and paste
 				# we don't see the change in the font!			
-				this.SetLabelFont(oLabel)
+				this.SetLabelFont(self)
 				settext(this.NodeImage(C_LABELIMAGE_NODEICON)+
 						this.oStyle.text(cText,this.cColor,this.cBackColor))
 			}

@@ -1115,7 +1115,7 @@ class GoalDesignerController from WindowsControllerParent
 				}
 				oItem = new QTreeWidgetItem() 
 				if nMax < this.nMaxStepsCount or not this.lUseMaxStepsCount {
-					oLabel = new TreeLabel(self) 
+					oLabel = createTreeLabel() 
 					# Changing label Size have a notable effect on performance!
 						oLabel.resize(0,0)
 					oLabel.setFont(oTempFont)
