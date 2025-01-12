@@ -92,9 +92,9 @@ class StepsTreeView from TreeControl
 		setCurrentItem(oFirstStep,0)
 
 	func GetItemLabel oItem
-		oLabel = new TreeLabel
-		oLabel.pObject =  itemwidget(oItem,0).pObject
-		return oLabel
+		temp_pObject = itemwidget(oItem,0).pObject
+		nPos = std_find2(aTreeLabels,temp_pObject,2)
+		return aTreeLabels[nPos][1]
 
 	func AddStep nParentID,nID,cText
 		return AddNode(nParentID,nID,cText)
@@ -392,7 +392,7 @@ class StepsTreeView from TreeControl
 		This function tell us if we can use the Block Style for labels inside the Steps Tree
 	*/
 	func isLabelBlockStyleDisabled
-		return T_LAYOUTDIRECTION = 1 or	! lLabelStyle
+		return ! lLabelStyle
 
 	/*
 		Check if we could draw block according to the selected style

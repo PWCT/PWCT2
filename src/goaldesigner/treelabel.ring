@@ -5,17 +5,61 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-class TreeLabel from QLabel 
+class TreeLabel from Qwidget 
 
-	
 	oDoc = new QTextDocument()
 	
 	aIcons = T_GD_STEPSTREEICONS
 
+	oPad    = new QLabel(self)
+	oLabel  = new QLabel(self)
+
+	oLayout = new QHBoxLayout()
+	oLayout.addwidget(oLabel)
+	oLayout.addWidget(oPad)
+	oLayout.setSpacing(0)
+	oLayout.setContentsmargins(0,0,0,0)
+	
 	func init oParent
-		super.init(oParent)
+		super.init()
 		setenabled(false)
+		oPad.setText("")
+		setLayout(oLayout)
 		return self
+
+	func setStyleSheet cStyle 
+ 		oLabel.setStyleSheet(cStyle)
+
+	func styleSheet 
+		return oLabel.stylesheet()
+
+	func setText cText 
+		oLabel.setText(cText)
+		setWindowTitle(oLabel.pObject[1])
+
+	func text 
+		return oLabel.text()
+
+	func setFont cFont 
+		oLabel.setFont(cFont)
+
+	func font 
+		return oLabel.font()
+
+	func setWidth nWidth 
+		oLabel.setWidth(nWidth)
+
+	func width 
+		return oLabel.width() 
+
+	func resize w,h
+		oLabel.resize(w,h)
+
+	func adjustsize 
+		return oLabel.adjustsize()
+
+	func setMaximumWidth nWidth 
+		oLabel.setMaximumWidth(nWidth)
 
 	func wrapIcon cText 
 		return `<span style="background-color:rgb(235,235,235)">`+ cText +`</span> `
@@ -51,5 +95,3 @@ class TreeLabel from QLabel
 		}
 		return cText
 
-	func setText cText
-		super.setText(cText)
