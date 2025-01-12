@@ -8,7 +8,7 @@
 class TreeControl from qTreeWidget	
 
 	aTree = []		# Node ID , Node Object , Node Object.pObject
-	aTreeLabels = []	# QWidget (Parent),QWidget (Parent).pObject, QLabel Object, QLabel Object.pObject
+	aTreeLabels = []	# QWidget (Parent),QWidget (Parent).pObject
 
 	font  nFontSize = 12	# The font object and the font size
 
@@ -96,11 +96,9 @@ class TreeControl from qTreeWidget
 	*/
 
 	func createTreeLabel
-		aTreeLabels + [new TreeLabel(self),0,0,0]
+		aTreeLabels + [new TreeLabel(self),0]
 		nSize = len(aTreeLabels)
 		aTreeLabels[nSize][2] =	aTreeLabels[nSize][1].pObject
-		aTreeLabels[nSize][3] = aTreeLabels[nSize][1].oLabel 
-		aTreeLabels[nSize][4] = aTreeLabels[nSize][1].oLabel.pObject
 		return aTreeLabels[nSize][1]
 
 	/*
