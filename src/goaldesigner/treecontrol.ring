@@ -384,3 +384,12 @@ class TreeControl from qTreeWidget
 
 	func SetFontObject oFont
 		font = oFont
+
+	/*
+		The next method clear the lists
+	*/
+
+	func clearData
+
+		aTree = []
+		aTreeObjects = []
