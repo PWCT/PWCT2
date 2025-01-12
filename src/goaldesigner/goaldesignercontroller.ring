@@ -563,15 +563,13 @@ class GoalDesignerController from WindowsControllerParent
 		# Save the History for undo operations 
 			saveHistory()
 		# Check Rules before the Paste Operation 
-		# We commented this to avoid low performance problem
-		/*
-			aPasteRoots = oModel.getpasteTopComponents()
-			for cComponent in aPasteRoots {
-				if not RulesAllow(cComponent) {
-					return
-				}
+		aPasteRoots = oModel.getpasteTopComponents()
+		for cComponent in aPasteRoots {
+			if not RulesAllow(cComponent) {
+				msginfo(T_CB_SORRY,T_CB_CANTUSECOMPONENT) 
+				return
 			}
-		*/
+		}
 		oParentItem  = oView.oStepsTree.currentItem()
 		nParentStepID = oView.oStepsTree.GetIDByObj(oParentItem)
 
