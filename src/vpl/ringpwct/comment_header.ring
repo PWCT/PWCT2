@@ -50,6 +50,9 @@ class comment_headerComponentController from ComponentControllerParent
 
 		return True 
 
+	func CheckSyntax
+		return True
+
 class comment_headerComponentView from ComponentViewParent
 	 
 		Title( T_CT_COMMENT_HEADER_IP_TITLE )
