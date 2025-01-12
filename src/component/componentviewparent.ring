@@ -144,6 +144,11 @@ class ComponentViewParent from WindowsViewParent
 		oText = Textbox(cTitle,cVariable) {
 			setStyleSheet(this.cssText+"font-size:"+this.nControlsFontSize+"pt;")
 			setText(cValue)
+			if T_LAYOUTDIRECTION and isDigit(cValue) {
+				setAlignment(Qt_AlignRight)
+			else 
+				setAlignment(Qt_AlignLeft)
+			}
 		}
 		return oText
 
