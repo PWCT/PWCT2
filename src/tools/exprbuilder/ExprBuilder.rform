@@ -1,0 +1,260 @@
+# Start Form Designer File
+aObjectsList = [
+	[ :name = "Window" , :id = 1 , :classname = "formdesigner_qwidget" , :data = [
+		 :x = 0 , : y = 19  , 
+		 :width =  917 , :height = 698 , 
+		 :title =  "Expression Builder" , 
+		 :backcolor =  "" , 
+		 :windowflags =  "Qt_Window | Qt_WindowTitleHint | Qt_CustomizeWindowHint" , 
+		 :mainlayout =  "" ,
+		 :WindowIcon =  "" , 
+		 :Menubar =  "aMenuData = [ :Text = 'The Menubar' , :Image = '' ,
+			         :Shortcut = '' , :Action = '' ,
+				:Children = [] ]"  ,
+		 :IndexType =  0  ,
+		 :GUILibrary =  0  
+
+		]
+	],
+	[ :name = "lblOperand1" , :id = 2 , :classname = "formdesigner_qlabel" , :data = [
+		 :x = 9 , : y = 10  , 
+		 :width =  93 , :height = 44 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Operand (1)",
+		 :textalign =  2
+		]
+	],
+	[ :name = "txtOperand1" , :id = 3 , :classname = "formdesigner_qlineedit" , :data = [
+		 :x = 124 , : y = 14  , 
+		 :width =  624 , :height = 41 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "white" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "",
+		 :setTextChangedEvent =  "",
+		 :setcursorPositionChangedEvent =  "",
+		 :seteditingFinishedEvent =  "",
+		 :setreturnPressedEvent =  "",
+		 :setselectionChangedEvent =  "",
+		 :settextEditedEvent =  ""
+		]
+	],
+	[ :name = "comboOperand1Type" , :id = 4 , :classname = "formdesigner_qcombobox" , :data = [
+		 :x = 750 , : y = 14  , 
+		 :width =  138 , :height = 41 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :cItems =  "Number,Literal,Variable",
+		 :cCurrentIndex =  "3",
+		 :setactivatedEvent =  "",
+		 :setcurrentIndexChangedEvent =  "",
+		 :seteditTextChangedEvent =  "",
+		 :sethighlightedEvent =  ""
+		]
+	],
+	[ :name = "lblOperator" , :id = 5 , :classname = "formdesigner_qlabel" , :data = [
+		 :x = 9 , : y = 164  , 
+		 :width =  93 , :height = 63 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Operator",
+		 :textalign =  2
+		]
+	],
+	[ :name = "lstOperator" , :id = 6 , :classname = "formdesigner_qlistwidget" , :data = [
+		 :x = 124 , : y = 64  , 
+		 :width =  764 , :height = 274 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "white" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :cItems =  "No Operator,Sum (+),Subtract (-),Multiplication (*),Division (/),Modulus (%),Greater Than (>),Less Than (<),Greater Than or Equal (>=),Less Than or Equal (<=),Equal (=),Not Equal (!=),Logical And (&&),Logical Or (||),Not (!)",
+		 :cCurrentRow =  "1",
+		 :setcurrentItemChangedEvent =  "",
+		 :setcurrentRowChangedEvent =  "",
+		 :setcurrentTextChangedEvent =  "",
+		 :setitemActivatedEvent =  "",
+		 :setitemChangedEvent =  "",
+		 :setitemClickedEvent =  "",
+		 :setitemDoubleClickedEvent =  "",
+		 :setitemEnteredEvent =  "",
+		 :setitemPressedEvent =  "",
+		 :setitemSelectionChangedEvent =  ""
+		]
+	],
+	[ :name = "lblOperand2" , :id = 7 , :classname = "formdesigner_qlabel" , :data = [
+		 :x = 9 , : y = 355  , 
+		 :width =  93 , :height = 22 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Operand (2)",
+		 :textalign =  2
+		]
+	],
+	[ :name = "txtOperand2" , :id = 8 , :classname = "formdesigner_qlineedit" , :data = [
+		 :x = 124 , : y = 346  , 
+		 :width =  624 , :height = 41 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "white" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "",
+		 :setTextChangedEvent =  "",
+		 :setcursorPositionChangedEvent =  "",
+		 :seteditingFinishedEvent =  "",
+		 :setreturnPressedEvent =  "",
+		 :setselectionChangedEvent =  "",
+		 :settextEditedEvent =  ""
+		]
+	],
+	[ :name = "comboOperand2Type" , :id = 9 , :classname = "formdesigner_qcombobox" , :data = [
+		 :x = 750 , : y = 346  , 
+		 :width =  138 , :height = 41 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :cItems =  "Number,Literal,Variable",
+		 :cCurrentIndex =  "3",
+		 :setactivatedEvent =  "",
+		 :setcurrentIndexChangedEvent =  "",
+		 :seteditTextChangedEvent =  "",
+		 :sethighlightedEvent =  ""
+		]
+	],
+	[ :name = "btnAdd" , :id = 10 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 750 , : y = 398  , 
+		 :width =  139 , :height = 41 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Add",
+		 :BtnImage =  "",
+		 :setClickEvent =  "addEvent"
+		]
+	],
+	[ :name = "btnClearOperands" , :id = 11 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 750 , : y = 439  , 
+		 :width =  139 , :height = 41 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Clear Operands",
+		 :BtnImage =  "",
+		 :setClickEvent =  "clearOperands"
+		]
+	],
+	[ :name = "lblExpression" , :id = 12 , :classname = "formdesigner_qlabel" , :data = [
+		 :x = 9 , : y = 472  , 
+		 :width =  93 , :height = 64 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Expression:",
+		 :textalign =  2
+		]
+	],
+	[ :name = "editExpression" , :id = 13 , :classname = "formdesigner_qtextedit" , :data = [
+		 :x = 124 , : y = 398  , 
+		 :width =  624 , :height = 202 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "white" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "",
+		 :setcopyAvailableEvent =  "",
+		 :setcurrentCharFormatChangedEvent =  "",
+		 :setcursorPositionChangedEvent =  "",
+		 :setredoAvailableEvent =  "",
+		 :setselectionChangedEvent =  "",
+		 :settextChangedEvent =  "",
+		 :setundoAvailableEvent =  ""
+		]
+	],
+	[ :name = "btnBrackets" , :id = 14 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 750 , : y = 521  , 
+		 :width =  139 , :height = 39 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "( Expression )",
+		 :BtnImage =  "",
+		 :setClickEvent =  "brackets"
+		]
+	],
+	[ :name = "btnBracketsAtEnd" , :id = 15 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 750 , : y = 560  , 
+		 :width =  139 , :height = 39 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Expression ( )",
+		 :BtnImage =  "",
+		 :setClickEvent =  "bracketsAtEnd"
+		]
+	],
+	[ :name = "btnClear" , :id = 16 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 124 , : y = 612  , 
+		 :width =  141 , :height = 41 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Clear Expression",
+		 :BtnImage =  "",
+		 :setClickEvent =  "ClearExpression"
+		]
+	],
+	[ :name = "btnOk" , :id = 17 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 610 , : y = 612  , 
+		 :width =  138 , :height = 41 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "✅ Ok",
+		 :BtnImage =  "",
+		 :setClickEvent =  "okEvent"
+		]
+	],
+	[ :name = "btnCancel" , :id = 18 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 750 , : y = 612  , 
+		 :width =  138 , :height = 41 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "❌ Cancel",
+		 :BtnImage =  "",
+		 :setClickEvent =  "cancelEvent"
+		]
+	],
+	[ :name = "btnUndo" , :id = 19 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 750 , : y = 480  , 
+		 :width =  139 , :height = 41 , 
+		 :textcolor =  "" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Undo",
+		 :BtnImage =  "",
+		 :setClickEvent =  "Undo"
+		]
+	]
+]
+# End Form Designer File
