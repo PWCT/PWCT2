@@ -687,3 +687,14 @@ Class ComponentControllerParent from WindowsControllerParent
 	*/
 	func Ring2PWCT cCode 
 		parent().ComponentsBrowserWindow().TextualCodeToVisualCode(cCode)
+
+	/*
+		Using Expression Builder
+	*/
+
+	func textDblClick cVariable
+		openWindowNoShow(:ExprBuilderController)
+		lastWindow().setParentObject(self)
+		lastWindow().cVariableName = cVariable 
+		lastWindow().oView.editExpression.setText(Variable(cVariable))
+		lastWindow().oView.win.show()

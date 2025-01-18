@@ -46,6 +46,9 @@
 	load "tools/import/importfiles.ring"
 	load "tools/vsfgenerator/vsfgenerator.ring"
 
+# Load the Expression Builder
+	load "tools/exprbuilder/ExprBuilderController.ring"
+
 # RightToLeft() function
 	if isWindows() and T_LAYOUTDIRECTION	
 		load "winlib.ring"

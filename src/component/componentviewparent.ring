@@ -102,6 +102,9 @@ class ComponentViewParent from WindowsViewParent
 				setFocus(0)
 				this.oFirstText = oText
 			}
+			oTextFilter = new QAllEvents(oText)
+			oTextFilter.setMouseButtonDblClickEvent(Method("textdblclick('"+cVariable+"')"))								
+			installEventFilter(oTextFilter)
 		}
 		oLayout = new qHBoxLayout() {
 			AddWidget(oLabel) AddWidget(oText)
@@ -458,12 +461,16 @@ class ComponentViewParent from WindowsViewParent
 			case C_INTERACTION_CT_TEXTBOX 
 				oObject.settext(cValue)
 			case C_INTERACTION_CT_CHECKBOX
-				oObject.setcheckstate(0+cValue)
+				Try {
+					oObject.setcheckstate(0+cValue)
+				catch }
 			case C_INTERACTION_CT_LISTBOX 
 				aListItems = item[C_INTERACTION_VL_LISTITEMS]
+				Try {
 				# Convert ID to Index 
 					cValue = find(aListItems,(0+cValue),1)
-				oObject.setcurrentrow((0+cValue)-1,2 | dec("10"))
+					oObject.setcurrentrow((0+cValue)-1,2 | dec("10"))
+				catch }
 			case C_INTERACTION_CT_EDITBOX 
 				oObject.setPlainText(cValue)
 			}
