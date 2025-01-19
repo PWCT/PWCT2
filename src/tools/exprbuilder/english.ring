@@ -29,3 +29,19 @@ T_EXPRBUILDER_CLEAREXPRESSION = "Clear Expression"
 T_EXPRBUILDER_OK = "✅ Ok"
 T_EXPRBUILDER_CANCEL = "❌ Cancel"
 T_EXPRBUILDER_UNDO = "Undo"
+T_EXPRBUILDER_OPERATORS = ["No Operator",
+"Sum (+)",
+"Subtract (-)",
+"Multiplication (*)",
+"Division (/)",
+"Modulus (%)",
+"Greater Than (>)",
+"Less Than (<)",
+"Greater Than or Equal (>=)",
+"Less Than or Equal (<=)",
+"Equal (=)",
+"Not Equal (!=)",
+"Logical And (&&)",
+"Logical Or (||)",
+"Not (!)"]
+T_EXPRBUILDER_OPERANDTYPE = ["Number","Literal","Variable"]

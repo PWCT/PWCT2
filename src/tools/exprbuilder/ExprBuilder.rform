@@ -1,15 +1,15 @@
 # Start Form Designer File
 aObjectsList = [
 	[ :name = "Window" , :id = 1 , :classname = "formdesigner_qwidget" , :data = [
-		 :x = 0 , : y = 19  , 
+		 :x = -141 , : y = 19  , 
 		 :width =  1037 , :height = 698 , 
 		 :title =  "Expression Builder" , 
 		 :backcolor =  "" , 
 		 :windowflags =  "Qt_Window | Qt_WindowTitleHint | Qt_CustomizeWindowHint" , 
 		 :mainlayout =  "LayoutMain" ,
 		 :WindowIcon =  "" , 
-		 :Menubar =  "aMenuData = [ :Text = 'The Menubar' , :Image = '' ,
-			         :Shortcut = '' , :Action = '' ,
+		 :Menubar =  "aMenuData = [ :Text = 'The Menubar' , :Image = '' ,
+			         :Shortcut = '' , :Action = '' ,
 				:Children = [] ]"  ,
 		 :IndexType =  0  ,
 		 :GUILibrary =  0  
@@ -156,7 +156,7 @@ aObjectsList = [
 		 :setClickEvent =  "clearOperands"
 		]
 	],
-	[ :name = "btnUndo" , :id = 19 , :classname = "formdesigner_qpushbutton" , :data = [
+	[ :name = "btnUndo" , :id = 12 , :classname = "formdesigner_qpushbutton" , :data = [
 		 :x = 750 , : y = 480  , 
 		 :width =  139 , :height = 41 , 
 		 :textcolor =  "" , 
@@ -168,7 +168,7 @@ aObjectsList = [
 		 :setClickEvent =  "Undo"
 		]
 	],
-	[ :name = "btnBrackets" , :id = 14 , :classname = "formdesigner_qpushbutton" , :data = [
+	[ :name = "btnBrackets" , :id = 13 , :classname = "formdesigner_qpushbutton" , :data = [
 		 :x = 750 , : y = 521  , 
 		 :width =  139 , :height = 39 , 
 		 :textcolor =  "" , 
@@ -180,7 +180,7 @@ aObjectsList = [
 		 :setClickEvent =  "brackets"
 		]
 	],
-	[ :name = "btnBracketsAtEnd" , :id = 15 , :classname = "formdesigner_qpushbutton" , :data = [
+	[ :name = "btnBracketsAtEnd" , :id = 14 , :classname = "formdesigner_qpushbutton" , :data = [
 		 :x = 750 , : y = 560  , 
 		 :width =  139 , :height = 39 , 
 		 :textcolor =  "" , 
@@ -192,7 +192,7 @@ aObjectsList = [
 		 :setClickEvent =  "bracketsAtEnd"
 		]
 	],
-	[ :name = "lblExpression" , :id = 12 , :classname = "formdesigner_qlabel" , :data = [
+	[ :name = "lblExpression" , :id = 15 , :classname = "formdesigner_qlabel" , :data = [
 		 :x = 9 , : y = 472  , 
 		 :width =  93 , :height = 64 , 
 		 :textcolor =  "" , 
@@ -203,7 +203,7 @@ aObjectsList = [
 		 :textalign =  2
 		]
 	],
-	[ :name = "editExpression" , :id = 13 , :classname = "formdesigner_qtextedit" , :data = [
+	[ :name = "editExpression" , :id = 16 , :classname = "formdesigner_qtextedit" , :data = [
 		 :x = 124 , : y = 398  , 
 		 :width =  624 , :height = 202 , 
 		 :textcolor =  "" , 
@@ -220,7 +220,7 @@ aObjectsList = [
 		 :setundoAvailableEvent =  ""
 		]
 	],
-	[ :name = "btnClear" , :id = 16 , :classname = "formdesigner_qpushbutton" , :data = [
+	[ :name = "btnClear" , :id = 17 , :classname = "formdesigner_qpushbutton" , :data = [
 		 :x = 124 , : y = 611  , 
 		 :width =  141 , :height = 41 , 
 		 :textcolor =  "" , 
@@ -232,7 +232,7 @@ aObjectsList = [
 		 :setClickEvent =  "ClearExpression"
 		]
 	],
-	[ :name = "btnOk" , :id = 17 , :classname = "formdesigner_qpushbutton" , :data = [
+	[ :name = "btnOk" , :id = 18 , :classname = "formdesigner_qpushbutton" , :data = [
 		 :x = 610 , : y = 612  , 
 		 :width =  138 , :height = 41 , 
 		 :textcolor =  "" , 
@@ -244,7 +244,7 @@ aObjectsList = [
 		 :setClickEvent =  "okEvent"
 		]
 	],
-	[ :name = "btnCancel" , :id = 18 , :classname = "formdesigner_qpushbutton" , :data = [
+	[ :name = "btnCancel" , :id = 19 , :classname = "formdesigner_qpushbutton" , :data = [
 		 :x = 750 , : y = 612  , 
 		 :width =  138 , :height = 41 , 
 		 :textcolor =  "" , 

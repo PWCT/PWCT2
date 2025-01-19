@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'english'
-nStepsID                 = 35		
-nInteractionsID          = 35
+nStepsID                 = 39		
+nInteractionsID          = 37
 
 aStepsTable = [
 	[
@@ -1218,6 +1218,118 @@ aStepsTable = [
 				"T_EXPRBUILDER_UNDO = "+char(34)+"تراجع"+char(34)+""
 			]
 		]
+	],
+	[
+		36,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_EXPRBUILDER_OPERATORS</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;لايوجد&quot;,
+&quot;جمع&nbsp;(+)&quot;,
+&quot;طرح&nbsp;(-)&quot;,
+&quot;ضرب&nbsp;(*)&quot;,
+&quot;قسمة&nbsp;(/)&quot;,
+&quot;باقي&nbsp;القسمة&nbsp;(%)&quot;,
+&quot;أكبر&nbsp;من&nbsp;(&gt;)&quot;,
+&quot;اصغر&nbsp;من&nbsp;(&lt;)&quot;,
+&quot;أكبر&nbsp;من&nbsp;او&nbsp;يساوي&nbsp;(&gt;=)&quot;,
+&quot;اصغر&nbsp;من&nbsp;او&nbsp;يساوي&nbsp;(&lt;=)&quot;,
+&quot;يساوي&nbsp;(=)&quot;,
+&quot;لا&nbsp;يساويl&nbsp;(!=)&quot;,
+&quot;و&nbsp;المنطقية&nbsp;(&amp;&amp;)&quot;,
+&quot;أو&nbsp;المنطقية&nbsp;(||)&quot;,
+&quot;نفي&nbsp;(!)&quot;]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_EXPRBUILDER_OPERATORS = ["+char(34)+"لايوجد"+char(34)+",
+"+char(34)+"جمع (+)"+char(34)+",
+"+char(34)+"طرح (-)"+char(34)+",
+"+char(34)+"ضرب (*)"+char(34)+",
+"+char(34)+"قسمة (/)"+char(34)+",
+"+char(34)+"باقي القسمة (%)"+char(34)+",
+"+char(34)+"أكبر من (>)"+char(34)+",
+"+char(34)+"اصغر من (<)"+char(34)+",
+"+char(34)+"أكبر من او يساوي (>=)"+char(34)+",
+"+char(34)+"اصغر من او يساوي (<=)"+char(34)+",
+"+char(34)+"يساوي (=)"+char(34)+",
+"+char(34)+"لا يساويl (!=)"+char(34)+",
+"+char(34)+"و المنطقية (&&)"+char(34)+",
+"+char(34)+"أو المنطقية (||)"+char(34)+",
+"+char(34)+"نفي (!)"+char(34)+"]"
+			],
+			[
+				"interactionid",
+				36
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_EXPRBUILDER_OPERATORS = ["+char(34)+"لايوجد"+char(34)+",
+"+char(34)+"جمع (+)"+char(34)+",
+"+char(34)+"طرح (-)"+char(34)+",
+"+char(34)+"ضرب (*)"+char(34)+",
+"+char(34)+"قسمة (/)"+char(34)+",
+"+char(34)+"باقي القسمة (%)"+char(34)+",
+"+char(34)+"أكبر من (>)"+char(34)+",
+"+char(34)+"اصغر من (=)"+char(34)+",
+"+char(34)+"اصغر من او يساوي ("
+			]
+		]
+	],
+	[
+		38,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_EXPRBUILDER_OPERANDTYPE</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;رقم&quot;,&quot;عبارة&nbsp;حرفية&quot;,&quot;متغير&quot;]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_EXPRBUILDER_OPERANDTYPE = ["+char(34)+"رقم"+char(34)+","+char(34)+"عبارة حرفية"+char(34)+","+char(34)+"متغير"+char(34)+"]"
+			],
+			[
+				"interactionid",
+				37
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_EXPRBUILDER_OPERANDTYPE = ["+char(34)+"رقم"+char(34)+","+char(34)+"عبارة حرفية"+char(34)+","+char(34)+"متغير"+char(34)+"]"
+			]
+		]
 	]
 ]
 
@@ -1477,6 +1589,36 @@ aInteractionsTable = [
 		"19/01/2025",
 		"16:48:31",
 		"leftside;;_RV_;;T_EXPRBUILDER_LESSTHAN ;;_RV_;;rightside;;_RV_;;"+char(34)+"اقل من (<)"+char(34)+";;_RV_;;"
+	],
+	[
+		36,
+		1,
+		"assignment",
+		"19/01/2025",
+		"22:49:36",
+		"leftside;;_RV_;;T_EXPRBUILDER_OPERATORS;;_RV_;;rightside;;_RV_;;["+char(34)+"لايوجد"+char(34)+",
+"+char(34)+"جمع (+)"+char(34)+",
+"+char(34)+"طرح (-)"+char(34)+",
+"+char(34)+"ضرب (*)"+char(34)+",
+"+char(34)+"قسمة (/)"+char(34)+",
+"+char(34)+"باقي القسمة (%)"+char(34)+",
+"+char(34)+"أكبر من (>)"+char(34)+",
+"+char(34)+"اصغر من (<)"+char(34)+",
+"+char(34)+"أكبر من او يساوي (>=)"+char(34)+",
+"+char(34)+"اصغر من او يساوي (<=)"+char(34)+",
+"+char(34)+"يساوي (=)"+char(34)+",
+"+char(34)+"لا يساويl (!=)"+char(34)+",
+"+char(34)+"و المنطقية (&&)"+char(34)+",
+"+char(34)+"أو المنطقية (||)"+char(34)+",
+"+char(34)+"نفي (!)"+char(34)+"];;_RV_;;"
+	],
+	[
+		37,
+		1,
+		"assignment",
+		"19/01/2025",
+		"22:50:38",
+		"leftside;;_RV_;;T_EXPRBUILDER_OPERANDTYPE;;_RV_;;rightside;;_RV_;;["+char(34)+"رقم"+char(34)+","+char(34)+"عبارة حرفية"+char(34)+","+char(34)+"متغير"+char(34)+"];;_RV_;;"
 	]
 ]
 

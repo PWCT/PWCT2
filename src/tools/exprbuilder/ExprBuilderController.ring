@@ -167,4 +167,15 @@ class ExprBuilderController from WindowsControllerParent
 			btnOk.settext(T_EXPRBUILDER_OK)
 			btnCancel.settext(T_EXPRBUILDER_CANCEL)
 			btnClear.settext(T_EXPRBUILDER_CLEAREXPRESSION)
+			lstOperator.clear()
+			lstOperator.addList(T_EXPRBUILDER_OPERATORS)
+			comboOperand1Type.clear()
+			comboOperand2Type.clear()
+			for t in T_EXPRBUILDER_OPERANDTYPE step 1 { 
+				comboOperand1Type.additem(t,0)
+				comboOperand2Type.additem(t,0)
+			}
+			comboOperand1Type.setcurrentindex(3)
+			comboOperand2Type.setcurrentindex(3)
+			lstOperator.setcurrentrow(2,2)
 		}

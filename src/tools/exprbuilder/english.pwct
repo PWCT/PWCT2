@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'english'
-nStepsID                 = 35		
-nInteractionsID          = 35
+nStepsID                 = 37		
+nInteractionsID          = 37
 
 aStepsTable = [
 	[
@@ -1218,6 +1218,118 @@ aStepsTable = [
 				"T_EXPRBUILDER_UNDO = "+char(34)+"Undo"+char(34)+""
 			]
 		]
+	],
+	[
+		36,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_EXPRBUILDER_OPERATORS</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;No&nbsp;Operator&quot;,
+&quot;Sum&nbsp;(+)&quot;,
+&quot;Subtract&nbsp;(-)&quot;,
+&quot;Multiplication&nbsp;(*)&quot;,
+&quot;Division&nbsp;(/)&quot;,
+&quot;Modulus&nbsp;(%)&quot;,
+&quot;Greater&nbsp;Than&nbsp;(&gt;)&quot;,
+&quot;Less&nbsp;Than&nbsp;(&lt;)&quot;,
+&quot;Greater&nbsp;Than&nbsp;or&nbsp;Equal&nbsp;(&gt;=)&quot;,
+&quot;Less&nbsp;Than&nbsp;or&nbsp;Equal&nbsp;(&lt;=)&quot;,
+&quot;Equal&nbsp;(=)&quot;,
+&quot;Not&nbsp;Equal&nbsp;(!=)&quot;,
+&quot;Logical&nbsp;And&nbsp;(&amp;&amp;)&quot;,
+&quot;Logical&nbsp;Or&nbsp;(||)&quot;,
+&quot;Not&nbsp;(!)&quot;]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_EXPRBUILDER_OPERATORS = ["+char(34)+"No Operator"+char(34)+",
+"+char(34)+"Sum (+)"+char(34)+",
+"+char(34)+"Subtract (-)"+char(34)+",
+"+char(34)+"Multiplication (*)"+char(34)+",
+"+char(34)+"Division (/)"+char(34)+",
+"+char(34)+"Modulus (%)"+char(34)+",
+"+char(34)+"Greater Than (>)"+char(34)+",
+"+char(34)+"Less Than (<)"+char(34)+",
+"+char(34)+"Greater Than or Equal (>=)"+char(34)+",
+"+char(34)+"Less Than or Equal (<=)"+char(34)+",
+"+char(34)+"Equal (=)"+char(34)+",
+"+char(34)+"Not Equal (!=)"+char(34)+",
+"+char(34)+"Logical And (&&)"+char(34)+",
+"+char(34)+"Logical Or (||)"+char(34)+",
+"+char(34)+"Not (!)"+char(34)+"]"
+			],
+			[
+				"interactionid",
+				36
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_EXPRBUILDER_OPERATORS = ["+char(34)+"No Operator"+char(34)+",
+"+char(34)+"Sum (+)"+char(34)+",
+"+char(34)+"Subtract (-)"+char(34)+",
+"+char(34)+"Multiplication (*)"+char(34)+",
+"+char(34)+"Division (/)"+char(34)+",
+"+char(34)+"Modulus (%)"+char(34)+",
+"+char(34)+"Greater Than (>)"+char(34)+",
+"+char(34)+"Less Than (=)"+char(34)+",
+"+char(34)+"Less Than or Equal ("
+			]
+		]
+	],
+	[
+		37,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_EXPRBUILDER_OPERANDTYPE</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;Number&quot;,&quot;Literal&quot;,&quot;Variable&quot;]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_EXPRBUILDER_OPERANDTYPE = ["+char(34)+"Number"+char(34)+","+char(34)+"Literal"+char(34)+","+char(34)+"Variable"+char(34)+"]"
+			],
+			[
+				"interactionid",
+				37
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_EXPRBUILDER_OPERANDTYPE = ["+char(34)+"Number"+char(34)+","+char(34)+"Literal"+char(34)+","+char(34)+"Variable"+char(34)+"]"
+			]
+		]
 	]
 ]
 
@@ -1477,6 +1589,36 @@ aInteractionsTable = [
 		"19/01/2025",
 		"16:48:31",
 		"leftside;;_RV_;;T_EXPRBUILDER_LESSTHAN ;;_RV_;;rightside;;_RV_;;"+char(34)+"Less Than (<)"+char(34)+";;_RV_;;"
+	],
+	[
+		36,
+		1,
+		"assignment",
+		"19/01/2025",
+		"22:49:36",
+		"leftside;;_RV_;;T_EXPRBUILDER_OPERATORS;;_RV_;;rightside;;_RV_;;["+char(34)+"No Operator"+char(34)+",
+"+char(34)+"Sum (+)"+char(34)+",
+"+char(34)+"Subtract (-)"+char(34)+",
+"+char(34)+"Multiplication (*)"+char(34)+",
+"+char(34)+"Division (/)"+char(34)+",
+"+char(34)+"Modulus (%)"+char(34)+",
+"+char(34)+"Greater Than (>)"+char(34)+",
+"+char(34)+"Less Than (<)"+char(34)+",
+"+char(34)+"Greater Than or Equal (>=)"+char(34)+",
+"+char(34)+"Less Than or Equal (<=)"+char(34)+",
+"+char(34)+"Equal (=)"+char(34)+",
+"+char(34)+"Not Equal (!=)"+char(34)+",
+"+char(34)+"Logical And (&&)"+char(34)+",
+"+char(34)+"Logical Or (||)"+char(34)+",
+"+char(34)+"Not (!)"+char(34)+"];;_RV_;;"
+	],
+	[
+		37,
+		1,
+		"assignment",
+		"19/01/2025",
+		"22:50:38",
+		"leftside;;_RV_;;T_EXPRBUILDER_OPERANDTYPE;;_RV_;;rightside;;_RV_;;["+char(34)+"Number"+char(34)+","+char(34)+"Literal"+char(34)+","+char(34)+"Variable"+char(34)+"];;_RV_;;"
 	]
 ]
 
