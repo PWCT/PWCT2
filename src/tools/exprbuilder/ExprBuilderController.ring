@@ -18,8 +18,6 @@ class ExprBuilderController from WindowsControllerParent
 	oView = new ExprBuilderView
 	aOperators = ["","+","-","*","/","%",">","<",">=","<=","=","!=","&&","||","!"]
 	lError = False
-	oView.win.setfixedwidth(oView.win.width())
-	oView.win.setfixedheight(oView.win.height())
 	cVariableName = ""
 	oView.win.setwindowmodality(2)
 	func processOperand cOperand,nType 
