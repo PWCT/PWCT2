@@ -105,8 +105,8 @@ class ExprBuilderController from WindowsControllerParent
 			txtOperand1.settext("")
 			txtOperand2.settext("")
 			lstOperator.setcurrentrow(1,3)
-			comboOperand1Type.setcurrentindex(1)
-			comboOperand2Type.setcurrentindex(1)
+			comboOperand1Type.setcurrentindex(3)
+			comboOperand2Type.setcurrentindex(3)
 		}
 	} 
 	func toQString cStr
