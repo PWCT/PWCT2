@@ -1,8 +1,5 @@
 T_EXPRBUILDER_EXPRESSIONBUILDER = "Expression Builder"
 T_EXPRBUILDER_OPERAND1 = "Operand (1)"
-T_EXPRBUILDER_NUMBER = "Number"
-T_EXPRBUILDER_LITERAL = "Literal"
-T_EXPRBUILDER_VARIABLE = "Variable"
 T_EXPRBUILDER_OPERATOR = "Operator"
 T_EXPRBUILDER_NOOPERATOR = "No Operator"
 T_EXPRBUILDER_SUM = "Sum (+)"
@@ -44,4 +41,4 @@ T_EXPRBUILDER_OPERATORS = ["No Operator",
 "Logical And (&&)",
 "Logical Or (||)",
 "Not (!)"]
-T_EXPRBUILDER_OPERANDTYPE = ["Number","Literal","Variable"]
+T_EXPRBUILDER_OPERANDTYPE = ["Number","Literal","Expression"]

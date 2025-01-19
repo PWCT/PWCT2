@@ -1,8 +1,5 @@
 T_EXPRBUILDER_EXPRESSIONBUILDER = "بناء التعبيرات"
 T_EXPRBUILDER_OPERAND1 = "الطرف (1)"
-T_EXPRBUILDER_NUMBER = "رقم"
-T_EXPRBUILDER_LITERAL = "عبارة حرفية"
-T_EXPRBUILDER_VARIABLE = "متغير"
 T_EXPRBUILDER_OPERATOR = "المعامل"
 T_EXPRBUILDER_NOOPERATOR = "بدون معامل"
 T_EXPRBUILDER_SUM = "جمع (+)"
@@ -44,4 +41,4 @@ T_EXPRBUILDER_OPERATORS = ["لايوجد",
 "و المنطقية (&&)",
 "أو المنطقية (||)",
 "نفي (!)"]
-T_EXPRBUILDER_OPERANDTYPE = ["رقم","عبارة حرفية","متغير"]
+T_EXPRBUILDER_OPERANDTYPE = ["رقم","عبارة حرفية","تعبير"]
