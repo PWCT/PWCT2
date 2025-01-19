@@ -94,6 +94,9 @@ class ComponentViewParent from WindowsViewParent
 			oTextFilter = new QAllEvents(oText)
 			oTextFilter.setMouseButtonDblClickEvent(Method("textdblclick('"+cVariable+"')"))								
 			oText.installEventFilter(oTextFilter)
+			if classname(oText) = :QTextEdit {
+				oText.viewport().installeventfilter(oTextFilter)
+			}
 
 	/*
 		Purpose : Display Label+Textbox in the Interation page
@@ -141,6 +144,7 @@ class ComponentViewParent from WindowsViewParent
 				setFocus(0)
 				this.oFirstText = oText
 			}
+			this.supportExprBuilder(oText,cVariable)
 		}
 		oLayout = new qHBoxLayout() {
 			AddWidget(oLabel) AddWidget(oText)
@@ -245,6 +249,7 @@ class ComponentViewParent from WindowsViewParent
 				setFocus(0)
 				this.oFirstText = oText
 			}
+			this.supportExprBuilder(oText,cVariable)
 		}
 		oLayout = new qHBoxLayout() {
 			AddWidget(oCheck)
