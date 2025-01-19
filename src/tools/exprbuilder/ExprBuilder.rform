@@ -1,15 +1,15 @@
 # Start Form Designer File
 aObjectsList = [
 	[ :name = "Window" , :id = 1 , :classname = "formdesigner_qwidget" , :data = [
-		 :x = -141 , : y = 19  , 
-		 :width =  1037 , :height = 698 , 
+		 :x = 10 , : y = 10  , 
+		 :width =  1037 , :height = 723 , 
 		 :title =  "Expression Builder" , 
 		 :backcolor =  "" , 
 		 :windowflags =  "Qt_Window | Qt_WindowTitleHint | Qt_CustomizeWindowHint" , 
 		 :mainlayout =  "LayoutMain" ,
 		 :WindowIcon =  "" , 
-		 :Menubar =  "aMenuData = [ :Text = 'The Menubar' , :Image = '' ,
-			         :Shortcut = '' , :Action = '' ,
+		 :Menubar =  "aMenuData = [ :Text = 'The Menubar' , :Image = '' ,
+			         :Shortcut = '' , :Action = '' ,
 				:Children = [] ]"  ,
 		 :IndexType =  0  ,
 		 :GUILibrary =  0  
@@ -200,7 +200,7 @@ aObjectsList = [
 		 :font =  "Arial" , 
 		 :parent =  "win"  ,
 		 :text =  "Expression:",
-		 :textalign =  2
+		 :textalign =  1
 		]
 	],
 	[ :name = "editExpression" , :id = 16 , :classname = "formdesigner_qtextedit" , :data = [
@@ -308,7 +308,7 @@ aObjectsList = [
 		 :font =  "Arial" , 
 		 :parent =  "win"  ,
 		 :LayoutType =  1,
-		 :LayoutObjects =  "lblExpression,editExpression,LayoutExprButtons"
+		 :LayoutObjects =  "LayoutExprButtons,editExpression"
 		]
 	],
 	[ :name = "LayoutDecisionButtons" , :id = 25 , :classname = "formdesigner_qlayout" , :data = [
@@ -330,7 +330,7 @@ aObjectsList = [
 		 :font =  "Arial" , 
 		 :parent =  "win"  ,
 		 :LayoutType =  0,
-		 :LayoutObjects =  "LayoutOperand1,LayoutOperator,LayoutOperand2,LayoutExpression,LayoutDecisionButtons"
+		 :LayoutObjects =  "LayoutOperand1,LayoutOperator,LayoutOperand2,lblExpression,LayoutExpression,LayoutDecisionButtons"
 		]
 	]
 ]
