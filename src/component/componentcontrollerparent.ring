@@ -697,4 +697,6 @@ Class ComponentControllerParent from WindowsControllerParent
 		lastWindow().setParentObject(self)
 		lastWindow().cVariableName = cVariable 
 		lastWindow().oView.editExpression.setText(Variable(cVariable))
+		parent().oAutoComplete.supportControl(parent(),lastWindow().oView.txtOperand1)
+		parent().oAutoComplete.supportControl(parent(),lastWindow().oView.txtOperand2)
 		lastWindow().oView.win.show()
