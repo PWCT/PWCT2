@@ -705,4 +705,5 @@ Class ComponentControllerParent from WindowsControllerParent
 			RightToLeft(lastWindow().oView.win.winID())
 		}
 		lastWindow().oView.win.setStyleSheet("font-size:"+this.oView.nControlsFontSize+"pt;")
+		lastWindow().oView.win.resize(800,900)
 		lastWindow().oView.win.show()
