@@ -85,6 +85,17 @@ class ComponentViewParent from WindowsViewParent
 		}
 
 	/*
+		Purpose : Add double click event to textbox controls to open Expression Builder
+		Parameters : Textbox control & Variable Name
+		Output : None
+	*/
+	
+	func supportExprBuilder oText,cVariable 
+			oTextFilter = new QAllEvents(oText)
+			oTextFilter.setMouseButtonDblClickEvent(Method("textdblclick('"+cVariable+"')"))								
+			oText.installEventFilter(oTextFilter)
+
+	/*
 		Purpose : Display Label+Textbox in the Interation page
 		Parameters : The Label Title and the Variable Name
 		Output : The Textbox Object
@@ -102,9 +113,7 @@ class ComponentViewParent from WindowsViewParent
 				setFocus(0)
 				this.oFirstText = oText
 			}
-			oTextFilter = new QAllEvents(oText)
-			oTextFilter.setMouseButtonDblClickEvent(Method("textdblclick('"+cVariable+"')"))								
-			installEventFilter(oTextFilter)
+			this.supportExprBuilder(oText,cVariable)
 		}
 		oLayout = new qHBoxLayout() {
 			AddWidget(oLabel) AddWidget(oText)
@@ -206,6 +215,7 @@ class ComponentViewParent from WindowsViewParent
 				setFocus(0)
 				this.oFirstText = oText
 			}
+			this.supportExprBuilder(oText,cVariable)
 		}
 		oLayout = new qHBoxLayout() {
 			AddWidget(oCheck)
