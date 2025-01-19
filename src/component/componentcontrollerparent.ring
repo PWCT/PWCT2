@@ -699,4 +699,9 @@ Class ComponentControllerParent from WindowsControllerParent
 		lastWindow().oView.editExpression.setText(Variable(cVariable))
 		parent().oAutoComplete.supportControl(parent(),lastWindow().oView.txtOperand1)
 		parent().oAutoComplete.supportControl(parent(),lastWindow().oView.txtOperand2)
+		lastWindow().translateUI()
+		if T_LAYOUTDIRECTION {
+			lastWindow().oView.win.setLayoutDirection(T_LAYOUTDIRECTION)
+			RightToLeft(lastWindow().oView.win.winID())
+		}
 		lastWindow().oView.win.show()

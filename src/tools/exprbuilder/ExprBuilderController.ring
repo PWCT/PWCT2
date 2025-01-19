@@ -7,6 +7,12 @@ if isMainSourceFile() {
 		open_window(:ExprBuilderController)
 		exec()
 	}
+	else 
+		if T_LAYOUTDIRECTION { 
+			load "arabic.ring"
+			else 
+				load "english.ring"
+		}
 }
 class ExprBuilderController from WindowsControllerParent
 	oView = new ExprBuilderView
@@ -147,4 +153,20 @@ class ExprBuilderController from WindowsControllerParent
 	func undo
 		oView {
 			editExpression.undo()
+		}
+	func translateUI
+		oView {
+			win.setwindowtitle(T_EXPRBUILDER_EXPRESSIONBUILDER)
+			lblOperand1.settext(T_EXPRBUILDER_OPERAND1)
+			lblOperator.settext(T_EXPRBUILDER_OPERATOR)
+			lblOperand2.settext(T_EXPRBUILDER_OPERAND2)
+			lblExpression.settext(T_EXPRBUILDER_EXPRESSION)
+			btnAdd.settext(T_EXPRBUILDER_ADD)
+			btnClearOperands.settext(T_EXPRBUILDER_CLEAROPERANDS)
+			btnBrackets.settext(T_EXPRBUILDER_BRACKETSAROUNDEXPRESSION)
+			btnBracketsAtEnd.settext(T_EXPRBUILDER_EXPRESSIONBRACKETS)
+			btnUndo.settext(T_EXPRBUILDER_UNDO)
+			btnOk.settext(T_EXPRBUILDER_OK)
+			btnCancel.settext(T_EXPRBUILDER_CANCEL)
+			btnClear.settext(T_EXPRBUILDER_CLEAREXPRESSION)
 		}
