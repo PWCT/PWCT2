@@ -52,8 +52,11 @@ class AutoComplete
 			"name",
 			"What",
 			"is",
+			"zero",
 			"one","two","three","four","five",
-			"six","seven","eight","nine","ten"
+			"six","seven","eight","nine","ten",
+			"True","False",
+			"nX","nY","nZ","cName"
 			])		
 
 	func AddLanguageItems
