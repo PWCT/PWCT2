@@ -287,7 +287,7 @@
 
 	T_ABOUT_TITLE = "About"
 	T_ABOUT_DEVELOPER = "Programming Without Coding Technology (PWCT)" + nl +
-						"Version: 2.0 Rev. 2025.01.12" + nl +
+						"Version: 2.0 Rev. 2025.01.20" + nl +
 						"2023-2025, Mahmoud Fayed"
 
 # GUI Library 
