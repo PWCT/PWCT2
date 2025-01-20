@@ -120,9 +120,7 @@ class ExprBuilderController from WindowsControllerParent
 		cancelEvent()
 	} 
 	func cancelEvent  { 
-		oView {
-			win.close()
-		}
+		closeAction()
 	} 
 	func UTF8Size cStr { 
 		oString = ToQString(cStr)

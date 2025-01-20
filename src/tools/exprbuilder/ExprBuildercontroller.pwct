@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'english'
-nStepsID                 = 424		
-nInteractionsID          = 247
+nStepsID                 = 428		
+nInteractionsID          = 250
 
 aStepsTable = [
 	[
@@ -6278,12 +6278,12 @@ aStepsTable = [
 		]
 	],
 	[
-		69,
+		428,
 		68,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oView</font></span> {"
+				"closeAction()"
 			],
 			[
 				"active",
@@ -6291,11 +6291,11 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"oView {"
+				"closeAction()"
 			],
 			[
 				"interactionid",
-				31
+				250
 			],
 			[
 				"visible",
@@ -6311,121 +6311,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"oView {"
-			]
-		]
-	],
-	[
-		70,
-		69,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				31
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		74,
-		70,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">win</font></span>.<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">close</font></span>(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"win.close()"
-			],
-			[
-				"interactionid",
-				33
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"win.close()"
-			]
-		]
-	],
-	[
-		71,
-		69,
-		[
-			[
-				"name",
-				"}"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"}"
-			],
-			[
-				"interactionid",
-				31
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"}"
+				"closeAction()"
 			]
 		]
 	],
@@ -9172,22 +9058,6 @@ aInteractionsTable = [
 		"name;;_RV_;;cancelEvent;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
-		31,
-		1,
-		"accessobject",
-		"16/01/2025",
-		"11:45:44",
-		"value;;_RV_;;oView;;_RV_;;"
-	],
-	[
-		33,
-		1,
-		"qwidgetclass",
-		"16/01/2025",
-		"11:46:16",
-		"value;;_RV_;;win;;_RV_;;value2;;_RV_;;17;;_RV_;;value3;;_RV_;;;;_RV_;;value4;;_RV_;;;;_RV_;;"
-	],
-	[
 		34,
 		1,
 		"assignment",
@@ -10258,6 +10128,14 @@ aInteractionsTable = [
 		"19/01/2025",
 		"22:56:04",
 		"value;;_RV_;;lstOperator;;_RV_;;value2;;_RV_;;212;;_RV_;;value3;;_RV_;;2,2;;_RV_;;value4;;_RV_;;;;_RV_;;"
+	],
+	[
+		250,
+		1,
+		"callfunc",
+		"20/01/2025",
+		"11:46:52",
+		"name;;_RV_;;closeAction;;_RV_;;lparameters;;_RV_;;0;;_RV_;;parameters;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;"
 	]
 ]
 
