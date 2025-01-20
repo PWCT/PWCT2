@@ -11,6 +11,8 @@ Class PrintComponentController from ComponentControllerParent
 
 	aAllowEmptyValue = [:text]
 
+	lAddCotation = False
+
 	func GenerateAction 
 
 		if Variable(:type) = 2  {
@@ -38,6 +40,7 @@ Class PrintComponentController from ComponentControllerParent
 		return True 
 
 	func TypeChangeAction
+		if ! lAddCotation { return }
 		nRow = Variable(:type)
 		cText = oView.myText.text() 
 		if  nRow = 2 and cText  = "" {		
