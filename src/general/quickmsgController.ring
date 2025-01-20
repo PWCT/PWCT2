@@ -77,6 +77,5 @@ class quickmsgController from windowsControllerParent
 		oView = new quickmsgView
 
 	func CloseMsg
-		oView.win.close()
-	
+		closeAction()
 
