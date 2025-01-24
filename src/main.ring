@@ -50,9 +50,14 @@
 	load "tools/exprbuilder/ExprBuilderController.ring"
 
 # RightToLeft() function
-	if isWindows() and T_LAYOUTDIRECTION	
+	if isWindows() and T_LAYOUTDIRECTION {
 		load "winlib.ring"
-	ok
+	}
+
+# Ring2PWCT Arabic Syntax
+	if T_LANGUAGE = "Arabic" {
+		load "tools/import/arabicsyntax.ring"
+	}
 
 # Run PWCT Environment (See environment/environment.ring)
 	StartEnvironment()	
