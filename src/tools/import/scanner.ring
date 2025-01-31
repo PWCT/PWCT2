@@ -16,7 +16,9 @@ class Scanner
 	func Start 
 		lOutput = True 
 		pState = ring_state_new()
-		cCode = T_RING2PWCT_BEFORESCANNER + windowsnl() + cCode
+		if T_RING2PWCT_USEBEFORESCANNER {
+			cCode = T_RING2PWCT_BEFORESCANNER + nl + cCode
+		}
 		aTokens = ring_state_stringtokens(pState,cCode,False,True)
 		if ring_state_scannererror(pState) {
 			lOutput = False

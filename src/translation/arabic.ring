@@ -385,4 +385,6 @@
 			 ]
 
 
-load "../tools/import/arabicsyntax.ring"
+# Ring2PWCT Syntax
+	T_RING2PWCT_USEBEFORESCANNER = True
+	load "../tools/import/arabicsyntax.ring"
