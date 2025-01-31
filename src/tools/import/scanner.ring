@@ -5,8 +5,6 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-T_RING2PWCT_BEFORESCANNER = ""
-
 class Scanner 
 
 	cCode
@@ -18,7 +16,7 @@ class Scanner
 	func Start 
 		lOutput = True 
 		pState = ring_state_new()
-		cCode = T_RING2PWCT_BEFORESCANNER + nl + cCode
+		cCode = T_RING2PWCT_BEFORESCANNER + windowsnl() + cCode
 		aTokens = ring_state_stringtokens(pState,cCode,False,True)
 		if ring_state_scannererror(pState) {
 			lOutput = False

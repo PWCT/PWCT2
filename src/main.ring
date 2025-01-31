@@ -54,10 +54,6 @@
 		load "winlib.ring"
 	}
 
-# Ring2PWCT Arabic Syntax
-	if T_LANGUAGE = "Arabic" {
-		load "tools/import/arabicsyntax.ring"
-	}
 
 # Run PWCT Environment (See environment/environment.ring)
 	StartEnvironment()	

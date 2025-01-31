@@ -381,3 +381,6 @@
 				["🔚","}"],
 				["⚙️","_DEFAULT_ICON_"]
 			 ]
+
+# Ring2PWCT Syntax
+	T_RING2PWCT_BEFORESCANNER = ""
