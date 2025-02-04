@@ -272,7 +272,7 @@ class ParserTokens
 					cTokensText += " "
 				}
 			case C_LITERAL 
-				cTokensText += aToken[C_TOKENVALUE] + " "
+				cTokensText += '"' + aToken[C_TOKENVALUE] + '" '
 			case C_NUMBER 
 				cTokensText += "" + aToken[C_TOKENVALUE] + " "
 			case C_IDENTIFIER
