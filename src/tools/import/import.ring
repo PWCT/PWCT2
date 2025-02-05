@@ -13,7 +13,7 @@ lTestFiles = True
 
 if isMainSourceFile() {
 	if lTestFiles { 
-		ImportFile("input/test16.ring","output/test16.pwct",C_PRINTOUTPUT)
+		ImportFile("input/test17.ring","output/test17.pwct",C_PRINTOUTPUT)
 	else 
 		? RingCode2PWCT("if x = 3 ? :Three ok")
 	}
