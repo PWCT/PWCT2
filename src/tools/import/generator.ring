@@ -351,7 +351,9 @@ class Generator
 			aParseTree[nIndex][:Command] = :CallFunction
 			aParseTree[nIndex][:Function] = cFunc
 			aParseTree[nIndex][:Parameters] = cPara
+			return True
 		}
+		return False
 
 	func ExpressionIsCallMethod nIndex
 		cExp = aParseTree[nIndex][:Expression]
@@ -367,5 +369,6 @@ class Generator
 			aParseTree[nIndex][:Object] = cObject
 			aParseTree[nIndex][:Method] = cMethod
 			aParseTree[nIndex][:Parameters] = cParameters
+			return True 
 		}
-
+		return False
