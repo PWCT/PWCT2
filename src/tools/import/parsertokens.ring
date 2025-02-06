@@ -258,6 +258,7 @@ class ParserTokens
 			aToken = aTokens[t] 
 			switch aToken[C_TOKENTYPE] {
 			case C_KEYWORD 
+				if cTokensText { cTokensText += " " }
 				cTokensText += lower(aKeywords[0+aToken[C_TOKENVALUE]]) + " "
 			case C_OPERATOR 
 				if (len(cTokensText) > 1) and (right(cTokensText,1) != " ") {

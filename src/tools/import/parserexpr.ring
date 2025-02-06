@@ -420,7 +420,9 @@ class ParserExpr
 			if isidentifier() or isanykeyword() or isNumber() {
 				/* Generate Code */
 					if isAnyKeyword() {
+						if cBuffer { cBuffer += " " }
 						cBuffer += lower(aKeywords[0+aActiveToken[C_TOKENVALUE]])
+						if cBuffer2 { cBuffer2 += " " }
 						cBuffer2 += lower(aKeywords[0+aActiveToken[C_TOKENVALUE]])
 					}
 				nexttoken()
