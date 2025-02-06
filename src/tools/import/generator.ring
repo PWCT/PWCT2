@@ -337,6 +337,14 @@ class Generator
 				}
 			}
 		}
+		# Check if the NEW is used inside a literal 
+		if cType = "= new" or cType = "= new init" {
+			nPos = substr(cExpr,"new ")
+			cSub = left(cExpr, nPos)
+			if substr(cSub,'"') or substr(cSub,"'") or substr(cSub,"`") {
+				cType = "word"
+			}
+		}
 		return cType 
 
 	func ExpressionIsCallFunction nIndex
