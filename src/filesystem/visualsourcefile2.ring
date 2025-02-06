@@ -194,19 +194,22 @@ cNaturalLanguageName     = '#{f3}'
 nStepsID                 = #{f4}		
 nInteractionsID          = #{f5}
 
-aStepsTable = #{f6}
-
-aInteractionsTable = #{f7}
-
-# End of Visual Source File"
-
+"
 		cContent = substr(cContent,"#{f1}",C_VSF_VERSION)
 		cContent = substr(cContent,"#{f2}",C_VPL_NAME)
 		cContent = substr(cContent,"#{f3}",T_LANGUAGE)
 		cContent = substr(cContent,"#{f4}",""+nStepsID)
 		cContent = substr(cContent,"#{f5}",""+nInteractionsID)
-		cContent = substr(cContent,"#{f6}",List2Code(aStepsTable))
-		cContent = substr(cContent,"#{f7}",List2Code(aInteractionsTable))
+
+		# We don't use subStr() to add aStepsTable/aInteractionsTable content 
+		# Because the added content may contains things like #{f6} and #{f7}
+		# Which could lead to wrong replacement to the aStepsTable/aInteractionsTable content 
+		# instead of doing the replacement to cContent template 
+
+		cContent += "aStepsTable = " + List2Code(aStepsTable) + nl + nl
+		cContent += "aInteractionsTable = " + List2Code(aInteractionsTable) + nl + nl
+		cContent += "# End of Visual Source File"
+
 		write( FileNameEncoding(cFileName), cContent )		
 		Log("End save tables")
 
