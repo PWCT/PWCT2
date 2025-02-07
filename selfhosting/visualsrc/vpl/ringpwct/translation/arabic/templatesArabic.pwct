@@ -1,0 +1,1533 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'english'
+nStepsID                 = 12		
+nInteractionsID          = 12
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"/*"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#/*
+"
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"/*"
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"**	Project : Programming Without Coding Technology (PWCT) Version 2.0"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#**	Project : Programming Without Coding Technology (PWCT) Version 2.0
+"
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"**	Project : Programming Without Coding Technology (PWCT) Version 2.0"
+			]
+		]
+	],
+	[
+		4,
+		1,
+		[
+			[
+				"name",
+				"**	File Purpose :  templates Component"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#**	File Purpose :  templates Component
+"
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"**	File Purpose :  templates Component"
+			]
+		]
+	],
+	[
+		5,
+		1,
+		[
+			[
+				"name",
+				"**	Date : 2021.08.10"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#**	Date : 2021.08.10
+"
+			],
+			[
+				"interactionid",
+				5
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"**	Date : 2021.08.10"
+			]
+		]
+	],
+	[
+		6,
+		1,
+		[
+			[
+				"name",
+				"**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
+"
+			],
+			[
+				"interactionid",
+				6
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"**	Author :  Mahmoud Fayed "
+			]
+		]
+	],
+	[
+		7,
+		1,
+		[
+			[
+				"name",
+				"*/"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#*/
+"
+			],
+			[
+				"interactionid",
+				7
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"*/"
+			]
+		]
+	],
+	[
+		8,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_TEMPLATES_IP_TITLE</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;مكون&nbsp;بداية&nbsp;سريعة&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_CT_TEMPLATES_IP_TITLE = "+char(34)+"مكون بداية سريعة"+char(34)+""
+			],
+			[
+				"interactionid",
+				8
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_CT_TEMPLATES_IP_TITLE = "+char(34)+"مكون بداية سريعة"+char(34)+""
+			]
+		]
+	],
+	[
+		9,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_TEMPLATES_IP_VALUE</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;القالب&nbsp;:&nbsp;&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_CT_TEMPLATES_IP_VALUE = "+char(34)+"القالب : "+char(34)+""
+			],
+			[
+				"interactionid",
+				9
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_CT_TEMPLATES_IP_VALUE = "+char(34)+"القالب : "+char(34)+""
+			]
+		]
+	],
+	[
+		10,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_TEMPLATES_IP_VALUE2</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;بدون&nbsp;تعليقات&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_CT_TEMPLATES_IP_VALUE2 = "+char(34)+"بدون تعليقات"+char(34)+""
+			],
+			[
+				"interactionid",
+				10
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_CT_TEMPLATES_IP_VALUE2 = "+char(34)+"بدون تعليقات"+char(34)+""
+			]
+		]
+	],
+	[
+		11,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_TEMPLATES_IP_VALUELIST</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;مرحبا&nbsp;ياعالم&quot;,&quot;الترحيب&nbsp;بشخص&quot;,&quot;المتغيرات&quot;,&quot;النسخ&nbsp;العميق&quot;,&quot;التحويل&nbsp;الضمنى&quot;,&quot;ترتيب&nbsp;المعاملات&quot;,&quot;حلقة&nbsp;وشرط&quot;,&quot;قائمة&nbsp;رئيسية&quot;,&quot;حلقة&nbsp;ديناميكية&quot;,&quot;حلقة&nbsp;للتعديل&nbsp;على&nbsp;قائمة&quot;,&quot;الخروج&nbsp;من&nbsp;حلقتين&nbsp;معا&quot;,&quot;امر&nbsp;القفز&nbsp;&nbsp;داخل&nbsp;الحلقات&quot;,&quot;اختصار&nbsp;اختبار&nbsp;الشروط&quot;,&quot;إستخدام&nbsp;الدوال&quot;,&quot;نطاق&nbsp;ظهور&nbsp;المتغيرات&quot;]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_CT_TEMPLATES_IP_VALUELIST = ["+char(34)+"مرحبا ياعالم"+char(34)+","+char(34)+"الترحيب بشخص"+char(34)+","+char(34)+"المتغيرات"+char(34)+","+char(34)+"النسخ العميق"+char(34)+","+char(34)+"التحويل الضمنى"+char(34)+","+char(34)+"ترتيب المعاملات"+char(34)+","+char(34)+"حلقة وشرط"+char(34)+","+char(34)+"قائمة رئيسية"+char(34)+","+char(34)+"حلقة ديناميكية"+char(34)+","+char(34)+"حلقة للتعديل على قائمة"+char(34)+","+char(34)+"الخروج من حلقتين معا"+char(34)+","+char(34)+"امر القفز  داخل الحلقات"+char(34)+","+char(34)+"اختصار اختبار الشروط"+char(34)+","+char(34)+"إستخدام الدوال"+char(34)+","+char(34)+"نطاق ظهور المتغيرات"+char(34)+"]"
+			],
+			[
+				"interactionid",
+				11
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_CT_TEMPLATES_IP_VALUELIST = ["+char(34)+"مرحبا ياعالم"+char(34)+","+char(34)+"الترحيب بشخص"+char(34)+","+char(34)+"المتغيرات"+char(34)+","+char(34)+"النسخ العميق"+char(34)+","+char(34)+"التحويل الضمنى"+char(34)+","+char(34)+"ترتيب المعاملات"+char(34)+","+char(34)+"حلقة وشرط"+char(34)+","+char(34)+"قائمة رئيسية"+char(34)+","+char(34)+"حلقة ديناميكية"+char(34)+","+char(34)+"حلقة للتعديل على قائمة"+char(34)+","+char(34)+"الخروج من حلقتين معا"+char(34)+","+char(34)+"امر القفز  داخل الحلقات"+char(34)+","+char(34)+"اختصار اختبار الشروط"+char(34)+","+char(34)+"إستخدام الدوال"+char(34)+","+char(34)+"نطاق ظهور المتغيرات"+char(34)+"]"
+			]
+		]
+	],
+	[
+		12,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_TEMPLATES_IP_VALUECODE</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&#039;
+	#&nbsp;
+	#&nbsp;اهلا&nbsp;بك&nbsp;فى&nbsp;عالم&nbsp;البرمجة
+	#&nbsp;هنا&nbsp;نقوم&nbsp;بعمل&nbsp;اول&nbsp;تطبيق&nbsp;لنا
+	#&nbsp;والذى&nbsp;يقوم&nbsp;بعرض&nbsp;رسالة&nbsp;على&nbsp;الشاشة
+	#
+	?&nbsp;&quot;مرحبا&nbsp;ياعالم&quot;
+&#039;,&#039;
+	#
+	#&nbsp;فى&nbsp;هذا&nbsp;التطبيق&nbsp;نطلب&nbsp;من&nbsp;المستخدم&nbsp;إدخال&nbsp;اسمه
+	#&nbsp;ثم&nbsp;بعد&nbsp;ذلك&nbsp;نقوم&nbsp;بعرض&nbsp;رسالة&nbsp;ترحيب
+	#&nbsp;ثم&nbsp;اسم&nbsp;المستخدم
+	#
+	?&nbsp;&quot;ادخل&nbsp;اسمك؟&quot;&nbsp;
+	give&nbsp;الاسم&nbsp;
+	?&nbsp;&quot;مرحبا&nbsp;يا&nbsp;&quot;&nbsp;+&nbsp;الاسم
+&#039;,&#039;
+	#
+	#&nbsp;مثال&nbsp;للتعامل&nbsp;مع&nbsp;المتغيرات&nbsp;واسناد&nbsp;قيم&nbsp;مختلفة&nbsp;لها
+	#
+	#&nbsp;متغير&nbsp;حرفي
+	س&nbsp;=&nbsp;&quot;مرحبا&quot;&nbsp;
+	?&nbsp;س&nbsp;
+	#
+	#&nbsp;متغير&nbsp;رقمي
+	س&nbsp;=&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	?&nbsp;س&nbsp;
+	س&nbsp;=&nbsp;1.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	?&nbsp;س&nbsp;
+	#
+	#&nbsp;متغير&nbsp;يحتوي&nbsp;على&nbsp;قائمة
+	س&nbsp;=&nbsp;[1,2,3,4]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	?&nbsp;س
+&#039;,&#039;
+	#
+	#&nbsp;عندما&nbsp;يتم&nbsp;نسخ&nbsp;القوائم&nbsp;يتم&nbsp;توفير
+	#&nbsp;نسخة&nbsp;جديدة&nbsp;بشكل&nbsp;كامل&nbsp;من&nbsp;جميع&nbsp;عناصرها
+	#
+	ق1&nbsp;=&nbsp;[1,2,3,&quot;اربعة&quot;,&quot;خمسة&quot;]
+	ق2&nbsp;=&nbsp;ق1
+	ق1&nbsp;=&nbsp;[]
+	#&nbsp;عرض&nbsp;عناصر&nbsp;القائمة&nbsp;الأولى
+	?&nbsp;ق1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	#
+	?&nbsp;&quot;********&quot;&nbsp;
+	#
+	#&nbsp;عرض&nbsp;عناصر&nbsp;القائمة&nbsp;الثانية
+	?&nbsp;ق2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+&#039;,&#039;
+	#
+	#&nbsp;اللغة&nbsp;تقوم&nbsp;بالتحويل&nbsp;تلقائيا&nbsp;بين&nbsp;الارقام&nbsp;والحروف
+	#
+	#&nbsp;رقم&nbsp;+&nbsp;عبارة&nbsp;حرفية&nbsp;يؤدي&nbsp;الى&nbsp;رقم
+	#&nbsp;عبارة&nbsp;حرفية&nbsp;+&nbsp;رقم&nbsp;يؤدي&nbsp;الى&nbsp;عبارة&nbsp;حرفية
+	#
+	#&nbsp;نفس&nbsp;علامة&nbsp;الجمع&nbsp;&quot;+&quot;&nbsp;تستخدم&nbsp;للجمع&nbsp;الرقم&nbsp;او&nbsp;دمج&nbsp;العبارات&nbsp;الحرفية
+&nbsp;	#
+	#&nbsp;س&nbsp;عبارة&nbsp;عن&nbsp;رقم
+	س&nbsp;=&nbsp;10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	#
+	#&nbsp;ص&nbsp;عبارة&nbsp;عن&nbsp;حروف
+	ص&nbsp;=&nbsp;&quot;20&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	#
+	#&nbsp;المجموع&nbsp;عبارة&nbsp;عن&nbsp;رقم&nbsp;ويتم&nbsp;تحويل&nbsp;ص&nbsp;من&nbsp;حروف&nbsp;الى&nbsp;رقم&nbsp;ثم&nbsp;الجمع
+	المجموع&nbsp;=&nbsp;س&nbsp;+&nbsp;ص&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	#
+	#&nbsp;الرسالة&nbsp;عبارة&nbsp;عن&nbsp;عبارة&nbsp;حرفية&nbsp;ويتم&nbsp;تحويل&nbsp;المجموع&nbsp;من&nbsp;رقم&nbsp;الى&nbsp;نص
+	الرسالة&nbsp;=&nbsp;&quot;المجموع&nbsp;=&nbsp;&quot;&nbsp;+&nbsp;المجموع&nbsp;&nbsp;&nbsp;&nbsp;
+	?&nbsp;الرسالة&nbsp;
+&#039;,&quot;
+	#
+	#&nbsp;مثال&nbsp;على&nbsp;ترتيب&nbsp;تنفيذ&nbsp;المعاملات
+	#
+	#&nbsp;سيتم&nbsp;عرض&nbsp;الرقم&nbsp;23
+	See&nbsp;3+5*4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&quot;,&#039;
+	#
+	#&nbsp;فى&nbsp;هذا&nbsp;التطبيق&nbsp;نستخدم&nbsp;حلقة&nbsp;التكرار&nbsp;
+	#&nbsp;لعرض&nbsp;الارقام&nbsp;من&nbsp;واحد&nbsp;الى&nbsp;عشرة&nbsp;
+	#&nbsp;وعندما&nbsp;نجد&nbsp;الرقم&nbsp;ثلاثة&nbsp;نعرض&nbsp;رسالة&nbsp;تبين&nbsp;ذلك
+	#
+	for&nbsp;ع=1&nbsp;to&nbsp;10
+		?&nbsp;ع
+		if&nbsp;ع=3&nbsp;
+			?&nbsp;&quot;رقم&nbsp;ثلاثة&quot;
+		ok
+	next
+&#039;,&#039;
+	#
+	#&nbsp;فى&nbsp;هذا&nbsp;المثال&nbsp;نتعلم&nbsp;كيفية&nbsp;عمل&nbsp;قائمة&nbsp;رئيسية&nbsp;
+	#&nbsp;تقدم&nbsp;مجموعة&nbsp;من&nbsp;الإختيارات&nbsp;للمستخدم
+	#&nbsp;
+	While&nbsp;1
+	?&nbsp;&quot;&quot;
+	?&nbsp;&quot;قائمة&nbsp;رئيسية&quot;
+	?&nbsp;&quot;----------------&quot;
+	?&nbsp;&quot;(1)&nbsp;قل&nbsp;مرحبا&quot;
+	?&nbsp;&quot;(2)&nbsp;حول&nbsp;البرنامج&quot;
+	?&nbsp;&quot;(3)&nbsp;خروج&quot;
+	?&nbsp;&quot;&quot;
+	Give&nbsp;رقم_الإختيار
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Switch&nbsp;رقم_الإختيار
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;On&nbsp;1
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&nbsp;&quot;مرحبا&quot;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;On&nbsp;2
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&nbsp;&quot;مجرد&nbsp;برنامج&nbsp;بسيط&quot;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;On&nbsp;3
+		?&nbsp;&quot;نهاية&nbsp;البرنامج&quot;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bye
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Other
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&nbsp;&quot;إختيار&nbsp;خاطىء&quot;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Off
+	End
+&#039;,&#039;
+	#
+	#&nbsp;حلقة&nbsp;ديناميكية
+	#
+	see&nbsp;&quot;البداية&nbsp;:&nbsp;&quot;&nbsp;give&nbsp;البداية
+	see&nbsp;&quot;النهاية&nbsp;&nbsp;&nbsp;:&nbsp;&quot;&nbsp;give&nbsp;النهاية
+	see&nbsp;&quot;الخطوة&nbsp;&nbsp;:&nbsp;&quot;&nbsp;give&nbsp;الخطوة
+	#
+	البداية&nbsp;=&nbsp;0+البداية
+	النهاية&nbsp;&nbsp;&nbsp;=&nbsp;0+النهاية
+	الخطوة&nbsp;&nbsp;=&nbsp;0+الخطوة
+	For&nbsp;س&nbsp;=&nbsp;البداية&nbsp;to&nbsp;النهاية&nbsp;Step&nbsp;الخطوة
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&nbsp;س
+	Next
+&#039;,&#039;
+	#
+	#&nbsp;إنشاء&nbsp;قائمة&nbsp;تحتوي&nbsp;الارقام&nbsp;من&nbsp;واحد&nbsp;الى&nbsp;خمسة
+	قائمة&nbsp;=&nbsp;1:5
+	#
+	#&nbsp;استبدال&nbsp;كل&nbsp;رقم&nbsp;بنص&nbsp;يعبر&nbsp;عنه
+	for&nbsp;س&nbsp;in&nbsp;قائمة
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch&nbsp;س
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	on&nbsp;1&nbsp;&nbsp;س&nbsp;=&nbsp;&quot;واحد&quot;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;on&nbsp;2&nbsp;&nbsp;س&nbsp;=&nbsp;&quot;اثنين&quot;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	on&nbsp;3&nbsp;&nbsp;س&nbsp;=&nbsp;&quot;ثلاثة&quot;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;on&nbsp;4&nbsp;&nbsp;س&nbsp;=&nbsp;&quot;أربعة&quot;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	on&nbsp;5&nbsp;&nbsp;س&nbsp;=&nbsp;&quot;خمسة&quot;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;off
+	next
+	#
+	#&nbsp;عرض&nbsp;عناصر&nbsp;القائمة
+	see&nbsp;قائمة&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+&#039;,&#039;
+	#
+	#&nbsp;فى&nbsp;هذا&nbsp;المثال&nbsp;سنقوم&nbsp;بإنشاء&nbsp;حلقتين&nbsp;
+	#&nbsp;ثم&nbsp;سنخرج&nbsp;منهما&nbsp;معا
+	#
+
+	for&nbsp;س&nbsp;=&nbsp;1&nbsp;to&nbsp;10
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;ص&nbsp;=&nbsp;1&nbsp;to&nbsp;10
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&nbsp;&quot;س=&quot;&nbsp;+&nbsp;س&nbsp;+&nbsp;&quot;&nbsp;ص=&quot;&nbsp;+&nbsp;ص&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;س&nbsp;=&nbsp;3&nbsp;and&nbsp;ص&nbsp;=&nbsp;5
+				#&nbsp;الخروج&nbsp;من&nbsp;الحلقتين
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exit&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ok
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;next
+	next
+
+&#039;,&#039;
+	#
+	#&nbsp;استخدام&nbsp;امر&nbsp;القفز&nbsp;داخل&nbsp;الحلقات
+	#
+	for&nbsp;س&nbsp;=&nbsp;1&nbsp;to&nbsp;10
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;س&nbsp;=&nbsp;3
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&nbsp;&quot;رقم&nbsp;ثلاثة&quot;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loop
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ok
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&nbsp;س
+	next
+
+&#039;,&#039;
+	#
+	#&nbsp;اختصار&nbsp;اختبار&nbsp;نتيجة&nbsp;الشروط
+	#
+	س&nbsp;=&nbsp;0&nbsp;ص&nbsp;=&nbsp;10
+	#
+	?&nbsp;&quot;إختبار&nbsp;1&quot;
+	if&nbsp;(س&nbsp;=&nbsp;0&nbsp;and&nbsp;جميل())&nbsp;and&nbsp;(ص&nbsp;=&nbsp;10&nbsp;and&nbsp;جميل())
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&nbsp;&quot;عظيم&quot;&nbsp;
+	ok
+	#
+	?&nbsp;&quot;إختبار&nbsp;2&quot;
+	if&nbsp;(س&nbsp;=&nbsp;1&nbsp;and&nbsp;جميل())&nbsp;and&nbsp;(ص&nbsp;=&nbsp;10&nbsp;and&nbsp;جميل())
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&nbsp;&quot;عظيم&quot;&nbsp;
+	ok
+	#
+	?&nbsp;&quot;إختبار&nbsp;3&quot;
+	if&nbsp;(س&nbsp;=&nbsp;0&nbsp;and&nbsp;جميل())&nbsp;or&nbsp;(ص&nbsp;=&nbsp;10&nbsp;and&nbsp;جميل())
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&nbsp;&quot;عظيم&quot;&nbsp;
+	ok
+	#
+	func&nbsp;جميل&nbsp;&nbsp;?&nbsp;&quot;جميل&quot;&nbsp;return&nbsp;1
+
+&#039;,&#039;
+	#
+	#&nbsp;فى&nbsp;هذا&nbsp;المثال&nbsp;نتعلم&nbsp;استخدام&nbsp;الدوال
+	#
+	الاولى()&nbsp;&nbsp;الثانية()
+
+	اجمع(3,5)&nbsp;اجمع(1000,2000)
+
+	?&nbsp;مضروب(5)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+	if&nbsp;لانتيجة()&nbsp;=&nbsp;&quot;&quot;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	?&nbsp;&quot;الدالة&nbsp;التى&nbsp;تسمع&nbsp;لانتيجة&nbsp;لا&nbsp;ترجع&nbsp;قيمة&quot;&nbsp;
+	ok
+
+	func&nbsp;الاولى&nbsp;&nbsp;&nbsp;?&nbsp;&quot;رسالة&nbsp;من&nbsp;الدالة&nbsp;الاولى&quot;&nbsp;
+
+	func&nbsp;الثانية&nbsp;&nbsp;?&nbsp;&quot;رسالة&nbsp;من&nbsp;الدالة&nbsp;الثانية&quot;&nbsp;
+
+	func&nbsp;اجمع&nbsp;س,ص&nbsp;
+		?&nbsp;س+ص
+
+	func&nbsp;مضروب&nbsp;س&nbsp;if&nbsp;س&nbsp;=&nbsp;0&nbsp;return&nbsp;1&nbsp;else&nbsp;return&nbsp;س&nbsp;*&nbsp;مضروب(س-1)&nbsp;ok
+
+	func&nbsp;لانتيجة
+&#039;,&quot;
+	#
+	#&nbsp;مثال&nbsp;على&nbsp;نطاق&nbsp;ظهور&nbsp;المتغيرات
+	#
+	#&nbsp;س&nbsp;عبارة&nbsp;عن&nbsp;متغير&nbsp;عام
+	س&nbsp;=&nbsp;10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+	ابدا()
+	func&nbsp;ابدا
+		#&nbsp;ع&nbsp;عبارة&nbsp;عن&nbsp;متغير&nbsp;محلى
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;ع&nbsp;=&nbsp;1&nbsp;to&nbsp;10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;العداد()&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;next
+
+	func&nbsp;العداد
+		#&nbsp;عرض&nbsp;قيمة&nbsp;المتغير&nbsp;العام
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&nbsp;س
+		#&nbsp;انقاص&nbsp;القيمة&nbsp;بواحد
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;س--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&quot;]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_CT_TEMPLATES_IP_VALUECODE = ['
+	# 
+	# اهلا بك فى عالم البرمجة
+	# هنا نقوم بعمل اول تطبيق لنا
+	# والذى يقوم بعرض رسالة على الشاشة
+	#
+	? "+char(34)+"مرحبا ياعالم"+char(34)+"
+','
+	#
+	# فى هذا التطبيق نطلب من المستخدم إدخال اسمه
+	# ثم بعد ذلك نقوم بعرض رسالة ترحيب
+	# ثم اسم المستخدم
+	#
+	? "+char(34)+"ادخل اسمك؟"+char(34)+" 
+	give الاسم 
+	? "+char(34)+"مرحبا يا "+char(34)+" + الاسم
+','
+	#
+	# مثال للتعامل مع المتغيرات واسناد قيم مختلفة لها
+	#
+	# متغير حرفي
+	س = "+char(34)+"مرحبا"+char(34)+" 
+	? س 
+	#
+	# متغير رقمي
+	س = 5                   
+	? س 
+	س = 1.2                 
+	? س 
+	#
+	# متغير يحتوي على قائمة
+	س = [1,2,3,4]           
+	? س
+','
+	#
+	# عندما يتم نسخ القوائم يتم توفير
+	# نسخة جديدة بشكل كامل من جميع عناصرها
+	#
+	ق1 = [1,2,3,"+char(34)+"اربعة"+char(34)+","+char(34)+"خمسة"+char(34)+"]
+	ق2 = ق1
+	ق1 = []
+	# عرض عناصر القائمة الأولى
+	? ق1        
+	#
+	? "+char(34)+"********"+char(34)+" 
+	#
+	# عرض عناصر القائمة الثانية
+	? ق2       
+
+','
+	#
+	# اللغة تقوم بالتحويل تلقائيا بين الارقام والحروف
+	#
+	# رقم + عبارة حرفية يؤدي الى رقم
+	# عبارة حرفية + رقم يؤدي الى عبارة حرفية
+	#
+	# نفس علامة الجمع "+char(34)+"+"+char(34)+" تستخدم للجمع الرقم او دمج العبارات الحرفية
+ 	#
+	# س عبارة عن رقم
+	س = 10                  
+	#
+	# ص عبارة عن حروف
+	ص = "+char(34)+"20"+char(34)+"       
+	#
+	# المجموع عبارة عن رقم ويتم تحويل ص من حروف الى رقم ثم الجمع
+	المجموع = س + ص          
+	#
+	# الرسالة عبارة عن عبارة حرفية ويتم تحويل المجموع من رقم الى نص
+	الرسالة = "+char(34)+"المجموع = "+char(34)+" + المجموع    
+	? الرسالة 
+',"+char(34)+"
+	#
+	# مثال على ترتيب تنفيذ المعاملات
+	#
+	# سيتم عرض الرقم 23
+	See 3+5*4       
+"+char(34)+",'
+	#
+	# فى هذا التطبيق نستخدم حلقة التكرار 
+	# لعرض الارقام من واحد الى عشرة 
+	# وعندما نجد الرقم ثلاثة نعرض رسالة تبين ذلك
+	#
+	for ع=1 to 10
+		? ع
+		if ع=3 
+			? "+char(34)+"رقم ثلاثة"+char(34)+"
+		ok
+	next
+','
+	#
+	# فى هذا المثال نتعلم كيفية عمل قائمة رئيسية 
+	# تقدم مجموعة من الإختيارات للمستخدم
+	# 
+	While 1
+	? "+char(34)+""+char(34)+"
+	? "+char(34)+"قائمة رئيسية"+char(34)+"
+	? "+char(34)+"----------------"+char(34)+"
+	? "+char(34)+"(1) قل مرحبا"+char(34)+"
+	? "+char(34)+"(2) حول البرنامج"+char(34)+"
+	? "+char(34)+"(3) خروج"+char(34)+"
+	? "+char(34)+""+char(34)+"
+	Give رقم_الإختيار
+        Switch رقم_الإختيار
+        On 1
+                ? "+char(34)+"مرحبا"+char(34)+"
+        On 2
+                ? "+char(34)+"مجرد برنامج بسيط"+char(34)+" 
+        On 3
+		? "+char(34)+"نهاية البرنامج"+char(34)+"
+                Bye
+        Other
+                ? "+char(34)+"إختيار خاطىء"+char(34)+"
+        Off
+	End
+','
+	#
+	# حلقة ديناميكية
+	#
+	see "+char(34)+"البداية : "+char(34)+" give البداية
+	see "+char(34)+"النهاية   : "+char(34)+" give النهاية
+	see "+char(34)+"الخطوة  : "+char(34)+" give الخطوة
+	#
+	البداية = 0+البداية
+	النهاية   = 0+النهاية
+	الخطوة  = 0+الخطوة
+	For س = البداية to النهاية Step الخطوة
+	        ? س
+	Next
+','
+	#
+	# إنشاء قائمة تحتوي الارقام من واحد الى خمسة
+	قائمة = 1:5
+	#
+	# استبدال كل رقم بنص يعبر عنه
+	for س in قائمة
+	        switch س
+        	on 1  س = "+char(34)+"واحد"+char(34)+"
+	        on 2  س = "+char(34)+"اثنين"+char(34)+"
+        	on 3  س = "+char(34)+"ثلاثة"+char(34)+"
+	        on 4  س = "+char(34)+"أربعة"+char(34)+"
+        	on 5  س = "+char(34)+"خمسة"+char(34)+"
+	        off
+	next
+	#
+	# عرض عناصر القائمة
+	see قائمة     
+
+','
+	#
+	# فى هذا المثال سنقوم بإنشاء حلقتين 
+	# ثم سنخرج منهما معا
+	#
+
+	for س = 1 to 10
+	        for ص = 1 to 10
+	                ? "+char(34)+"س="+char(34)+" + س + "+char(34)+" ص="+char(34)+" + ص 
+	                if س = 3 and ص = 5
+				# الخروج من الحلقتين
+	                        exit 2     
+	                ok
+	        next
+	next
+
+','
+	#
+	# استخدام امر القفز داخل الحلقات
+	#
+	for س = 1 to 10
+	        if س = 3
+	                ? "+char(34)+"رقم ثلاثة"+char(34)+" 
+	                loop
+	        ok
+	        ? س
+	next
+
+','
+	#
+	# اختصار اختبار نتيجة الشروط
+	#
+	س = 0 ص = 10
+	#
+	? "+char(34)+"إختبار 1"+char(34)+"
+	if (س = 0 and جميل()) and (ص = 10 and جميل())
+	        ? "+char(34)+"عظيم"+char(34)+" 
+	ok
+	#
+	? "+char(34)+"إختبار 2"+char(34)+"
+	if (س = 1 and جميل()) and (ص = 10 and جميل())
+	        ? "+char(34)+"عظيم"+char(34)+" 
+	ok
+	#
+	? "+char(34)+"إختبار 3"+char(34)+"
+	if (س = 0 and جميل()) or (ص = 10 and جميل())
+	        ? "+char(34)+"عظيم"+char(34)+" 
+	ok
+	#
+	func جميل  ? "+char(34)+"جميل"+char(34)+" return 1
+
+','
+	#
+	# فى هذا المثال نتعلم استخدام الدوال
+	#
+	الاولى()  الثانية()
+
+	اجمع(3,5) اجمع(1000,2000)
+
+	? مضروب(5)     
+
+	if لانتيجة() = "+char(34)+""+char(34)+"
+        	? "+char(34)+"الدالة التى تسمع لانتيجة لا ترجع قيمة"+char(34)+" 
+	ok
+
+	func الاولى   ? "+char(34)+"رسالة من الدالة الاولى"+char(34)+" 
+
+	func الثانية  ? "+char(34)+"رسالة من الدالة الثانية"+char(34)+" 
+
+	func اجمع س,ص 
+		? س+ص
+
+	func مضروب س if س = 0 return 1 else return س * مضروب(س-1) ok
+
+	func لانتيجة
+',"+char(34)+"
+	#
+	# مثال على نطاق ظهور المتغيرات
+	#
+	# س عبارة عن متغير عام
+	س = 10                          
+
+	ابدا()
+	func ابدا
+		# ع عبارة عن متغير محلى
+	        for ع = 1 to 10         
+        	        العداد()     
+	        next
+
+	func العداد
+		# عرض قيمة المتغير العام
+	        ? س
+		# انقاص القيمة بواحد
+	        س--                     
+"+char(34)+"]"
+			],
+			[
+				"interactionid",
+				12
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_CT_TEMPLATES_IP_VALUECODE = ['
+	# 
+	# اهلا بك فى عالم البرمجة
+	# هنا نقوم بعمل اول تطبيق لنا
+	# والذى يقوم بعرض رسالة على الشاشة
+	#
+	? "+char(34)+"مرحبا ياعالم"+char(34)+"
+','
+	#
+	# فى هذا التطبيق نطلب من المستخدم إدخال اسمه
+	# ثم بعد ذلك نقوم بعرض رسالة ترحيب
+	# ثم اسم المستخدم
+	#
+	? "+char(34)+"ادخل اسمك؟"+char(34)+" 
+	give الاسم 
+	? "+char(34)+"مرحبا يا "+char(34)+" + الاسم
+','
+	#
+	# مثال للتعامل مع المتغيرات واسناد قيم مختلفة لها
+	#
+	# متغير حرفي
+	س = "+char(34)+"مرحبا"+char(34)+" 
+	? س 
+	#
+	# متغير رقمي
+	س = 5                   
+	? س 
+	س = 1.2                 
+	? س 
+	#
+	# متغير يحتوي على قائمة
+	س = [1,2,3,4]           
+	? س
+','
+	#
+	# عندما يتم نسخ القوائم يتم توفير
+	# نسخة جديدة بشكل كامل من جميع عناصرها
+	#
+	ق1 = [1,2,3,"+char(34)+"اربعة"+char(34)+","+char(34)+"خمسة"+char(34)+"]
+	ق2 = ق1
+	ق1 = []
+	# عرض عناصر القائمة الأولى
+	? ق1        
+	#
+	? "+char(34)+"********"+char(34)+" 
+	#
+	# عرض عناصر القائمة الثانية
+	? ق2       
+
+','
+	#
+	# اللغة تقوم بالتحويل تلقائيا بين الارقام والحروف
+	#
+	# رقم + عبارة حرفية يؤدي الى رقم
+	# عبارة حرفية + رقم يؤدي الى عبارة حرفية
+	#
+	# نفس علامة الجمع "+char(34)+"+"+char(34)+" تستخدم للجمع الرقم او دمج العبارات الحرفية
+ 	#
+	# س عبارة عن رقم
+	س = 10                  
+	#
+	# ص عبارة عن حروف
+	ص = "+char(34)+"20"+char(34)+"       
+	#
+	# المجموع عبارة عن رقم ويتم تحويل ص من حروف الى رقم ثم الجمع
+	المجموع = س + ص          
+	#
+	# الرسالة عبارة عن عبارة حرفية ويتم تحويل المجموع من رقم الى نص
+	الرسالة = "+char(34)+"المجموع = "+char(34)+" + المجموع    
+	? الرسالة 
+',"+char(34)+"
+	#
+	# مثال على ترتيب تنفيذ المعاملات
+	#
+	# سيتم عرض الرقم 23
+	See 3+5*4       
+"+char(34)+",'
+	#
+	# فى هذا التطبيق نستخدم حلقة التكرار 
+	# لعرض الارقام من واحد الى عشرة 
+	# وعندما نجد الرقم ثلاثة نعرض رسالة تبين ذلك
+	#
+	for ع=1 to 10
+		? ع
+		if ع=3 
+			? "+char(34)+"رقم ثلاثة"+char(34)+"
+		ok
+	next
+','
+	#
+	# فى هذا المثال نتعلم كيفية عمل قائمة رئيسية 
+	# تقدم مجموعة من الإختيارات للمستخدم
+	# 
+	While 1
+	? "+char(34)+""+char(34)+"
+	? "+char(34)+"قائمة رئيسية"+char(34)+"
+	? "+char(34)+"----------------"+char(34)+"
+	? "+char(34)+"(1) قل مرحبا"+char(34)+"
+	? "+char(34)+"(2) حول البرنامج"+char(34)+"
+	? "+char(34)+"(3) خروج"+char(34)+"
+	? "+char(34)+""+char(34)+"
+	Give رقم_الإختيار
+        Switch رقم_الإختيار
+        On 1
+                ? "+char(34)+"مرحبا"+char(34)+"
+        On 2
+                ? "+char(34)+"مجرد برنامج بسيط"+char(34)+" 
+        On 3
+		? "+char(34)+"نهاية البرنامج"+char(34)+"
+                Bye
+        Other
+                ? "+char(34)+"إختيار خاطىء"+char(34)+"
+        Off
+	End
+','
+	#
+	# حلقة ديناميكية
+	#
+	see "+char(34)+"البداية : "+char(34)+" give البداية
+	see "+char(34)+"النهاية   : "+char(34)+" give النهاية
+	see "+char(34)+"الخطوة  : "+char(34)+" give الخطوة
+	#
+	البداية = 0+البداية
+	النهاية   = 0+النهاية
+	الخطوة  = 0+الخطوة
+	For س = البداية to النهاية Step الخطوة
+	        ? س
+	Next
+','
+	#
+	# إنشاء قائمة تحتوي الارقام من واحد الى خمسة
+	قائمة = 1:5
+	#
+	# استبدال كل رقم بنص يعبر عنه
+	for س in قائمة
+	        switch س
+        	on 1  س = "+char(34)+"واحد"+char(34)+"
+	        on 2  س = "+char(34)+"اثنين"+char(34)+"
+        	on 3  س = "+char(34)+"ثلاثة"+char(34)+"
+	        on 4  س = "+char(34)+"أربعة"+char(34)+"
+        	on 5  س = "+char(34)+"خمسة"+char(34)+"
+	        off
+	next
+	#
+	# عرض عناصر القائمة
+	see قائمة     
+
+','
+	#
+	# فى هذا المثال سنقوم بإنشاء حلقتين 
+	# ثم سنخرج منهما معا
+	#
+
+	for س = 1 to 10
+	        for ص = 1 to 10
+	                ? "+char(34)+"س="+char(34)+" + س + "+char(34)+" ص="+char(34)+" + ص 
+	                if س = 3 and ص = 5
+				# الخروج من الحلقتين
+	                        exit 2     
+	                ok
+	        next
+	next
+
+','
+	#
+	# استخدام امر القفز داخل الحلقات
+	#
+	for س = 1 to 10
+	        if س = 3
+	                ? "+char(34)+"رقم ثلاثة"+char(34)+" 
+	                loop
+	        ok
+	        ? س
+	next
+
+','
+	#
+	# اختصار اختبار نتيجة الشروط
+	#
+	س = 0 ص = 10
+	#
+	? "+char(34)+"إختبار 1"+char(34)+"
+	if (س = 0 and جميل()) and (ص = 10 and جميل())
+	        ? "+char(34)+"عظيم"+char(34)+" 
+	ok
+	#
+	? "+char(34)+"إختبار 2"+char(34)+"
+	if (س = 1 and جميل()) and (ص = 10 and جميل())
+	        ? "+char(34)+"عظيم"+char(34)+" 
+	ok
+	#
+	? "+char(34)+"إختبار 3"+char(34)+"
+	if (س = 0 and جميل()) or (ص = 10 and جميل())
+	        ? "+char(34)+"عظيم"+char(34)+" 
+	ok
+	#
+	func جميل  ? "+char(34)+"جميل"+char(34)+" return 1
+
+','
+	#
+	# فى هذا المثال نتعلم استخدام الدوال
+	#
+	الاولى()  الثانية()
+
+	اجمع(3,5) اجمع(1000,2000)
+
+	? مضروب(5)     
+
+	if لانتيجة() = "+char(34)+""+char(34)+"
+        	? "+char(34)+"الدالة التى تسمع لانتيجة لا ترجع قيمة"+char(34)+" 
+	ok
+
+	func الاولى   ? "+char(34)+"رسالة من الدالة الاولى"+char(34)+" 
+
+	func الثانية  ? "+char(34)+"رسالة من الدالة الثانية"+char(34)+" 
+
+	func اجمع س,ص 
+		? س+ص
+
+	func مضروب س if س = 0 return 1 else return س * مضروب(س-1) ok
+
+	func لانتيجة
+',"+char(34)+"
+	#
+	# مثال على نطاق ظهور المتغيرات
+	#
+	# س عبارة عن متغير عام
+	س = 10                          
+
+	ابدا()
+	func ابدا
+		# ع عبارة عن متغير محلى
+	        for ع = 1 to 10         
+        	        العداد()     
+	        next
+
+	func العداد
+		# عرض قيمة المتغير العام
+	        ? س
+		# انقاص القيمة بواحد
+	        س--                     
+"+char(34)+"]"
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"07/02/2025",
+		"16:47:45",
+		""
+	],
+	[
+		2,
+		1,
+		"comment_text",
+		"07/02/2025",
+		"16:47:45",
+		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		3,
+		1,
+		"comment_text",
+		"07/02/2025",
+		"16:47:45",
+		"value;;_RV_;;**	Project : Programming Without Coding Technology (PWCT) Version 2.0;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		4,
+		1,
+		"comment_text",
+		"07/02/2025",
+		"16:47:45",
+		"value;;_RV_;;**	File Purpose :  templates Component;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		5,
+		1,
+		"comment_text",
+		"07/02/2025",
+		"16:47:45",
+		"value;;_RV_;;**	Date : 2021.08.10;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		6,
+		1,
+		"comment_text",
+		"07/02/2025",
+		"16:47:45",
+		"value;;_RV_;;**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		7,
+		1,
+		"comment_text",
+		"07/02/2025",
+		"16:47:45",
+		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		8,
+		1,
+		"assignment",
+		"07/02/2025",
+		"16:47:45",
+		"leftside;;_RV_;;T_CT_TEMPLATES_IP_TITLE;;_RV_;;rightside;;_RV_;;"+char(34)+"مكون بداية سريعة"+char(34)+";;_RV_;;"
+	],
+	[
+		9,
+		1,
+		"assignment",
+		"07/02/2025",
+		"16:47:45",
+		"leftside;;_RV_;;T_CT_TEMPLATES_IP_VALUE;;_RV_;;rightside;;_RV_;;"+char(34)+"القالب : "+char(34)+";;_RV_;;"
+	],
+	[
+		10,
+		1,
+		"assignment",
+		"07/02/2025",
+		"16:47:45",
+		"leftside;;_RV_;;T_CT_TEMPLATES_IP_VALUE2;;_RV_;;rightside;;_RV_;;"+char(34)+"بدون تعليقات"+char(34)+";;_RV_;;"
+	],
+	[
+		11,
+		1,
+		"assignment",
+		"07/02/2025",
+		"16:47:45",
+		"leftside;;_RV_;;T_CT_TEMPLATES_IP_VALUELIST;;_RV_;;rightside;;_RV_;;["+char(34)+"مرحبا ياعالم"+char(34)+","+char(34)+"الترحيب بشخص"+char(34)+","+char(34)+"المتغيرات"+char(34)+","+char(34)+"النسخ العميق"+char(34)+","+char(34)+"التحويل الضمنى"+char(34)+","+char(34)+"ترتيب المعاملات"+char(34)+","+char(34)+"حلقة وشرط"+char(34)+","+char(34)+"قائمة رئيسية"+char(34)+","+char(34)+"حلقة ديناميكية"+char(34)+","+char(34)+"حلقة للتعديل على قائمة"+char(34)+","+char(34)+"الخروج من حلقتين معا"+char(34)+","+char(34)+"امر القفز  داخل الحلقات"+char(34)+","+char(34)+"اختصار اختبار الشروط"+char(34)+","+char(34)+"إستخدام الدوال"+char(34)+","+char(34)+"نطاق ظهور المتغيرات"+char(34)+"];;_RV_;;"
+	],
+	[
+		12,
+		1,
+		"assignment",
+		"07/02/2025",
+		"16:47:45",
+		"leftside;;_RV_;;T_CT_TEMPLATES_IP_VALUECODE;;_RV_;;rightside;;_RV_;;['
+	# 
+	# اهلا بك فى عالم البرمجة
+	# هنا نقوم بعمل اول تطبيق لنا
+	# والذى يقوم بعرض رسالة على الشاشة
+	#
+	? "+char(34)+"مرحبا ياعالم"+char(34)+"
+','
+	#
+	# فى هذا التطبيق نطلب من المستخدم إدخال اسمه
+	# ثم بعد ذلك نقوم بعرض رسالة ترحيب
+	# ثم اسم المستخدم
+	#
+	? "+char(34)+"ادخل اسمك؟"+char(34)+" 
+	give الاسم 
+	? "+char(34)+"مرحبا يا "+char(34)+" + الاسم
+','
+	#
+	# مثال للتعامل مع المتغيرات واسناد قيم مختلفة لها
+	#
+	# متغير حرفي
+	س = "+char(34)+"مرحبا"+char(34)+" 
+	? س 
+	#
+	# متغير رقمي
+	س = 5                   
+	? س 
+	س = 1.2                 
+	? س 
+	#
+	# متغير يحتوي على قائمة
+	س = [1,2,3,4]           
+	? س
+','
+	#
+	# عندما يتم نسخ القوائم يتم توفير
+	# نسخة جديدة بشكل كامل من جميع عناصرها
+	#
+	ق1 = [1,2,3,"+char(34)+"اربعة"+char(34)+","+char(34)+"خمسة"+char(34)+"]
+	ق2 = ق1
+	ق1 = []
+	# عرض عناصر القائمة الأولى
+	? ق1        
+	#
+	? "+char(34)+"********"+char(34)+" 
+	#
+	# عرض عناصر القائمة الثانية
+	? ق2       
+
+','
+	#
+	# اللغة تقوم بالتحويل تلقائيا بين الارقام والحروف
+	#
+	# رقم + عبارة حرفية يؤدي الى رقم
+	# عبارة حرفية + رقم يؤدي الى عبارة حرفية
+	#
+	# نفس علامة الجمع "+char(34)+"+"+char(34)+" تستخدم للجمع الرقم او دمج العبارات الحرفية
+ 	#
+	# س عبارة عن رقم
+	س = 10                  
+	#
+	# ص عبارة عن حروف
+	ص = "+char(34)+"20"+char(34)+"       
+	#
+	# المجموع عبارة عن رقم ويتم تحويل ص من حروف الى رقم ثم الجمع
+	المجموع = س + ص          
+	#
+	# الرسالة عبارة عن عبارة حرفية ويتم تحويل المجموع من رقم الى نص
+	الرسالة = "+char(34)+"المجموع = "+char(34)+" + المجموع    
+	? الرسالة 
+',"+char(34)+"
+	#
+	# مثال على ترتيب تنفيذ المعاملات
+	#
+	# سيتم عرض الرقم 23
+	See 3+5*4       
+"+char(34)+",'
+	#
+	# فى هذا التطبيق نستخدم حلقة التكرار 
+	# لعرض الارقام من واحد الى عشرة 
+	# وعندما نجد الرقم ثلاثة نعرض رسالة تبين ذلك
+	#
+	for ع=1 to 10
+		? ع
+		if ع=3 
+			? "+char(34)+"رقم ثلاثة"+char(34)+"
+		ok
+	next
+','
+	#
+	# فى هذا المثال نتعلم كيفية عمل قائمة رئيسية 
+	# تقدم مجموعة من الإختيارات للمستخدم
+	# 
+	While 1
+	? "+char(34)+""+char(34)+"
+	? "+char(34)+"قائمة رئيسية"+char(34)+"
+	? "+char(34)+"----------------"+char(34)+"
+	? "+char(34)+"(1) قل مرحبا"+char(34)+"
+	? "+char(34)+"(2) حول البرنامج"+char(34)+"
+	? "+char(34)+"(3) خروج"+char(34)+"
+	? "+char(34)+""+char(34)+"
+	Give رقم_الإختيار
+        Switch رقم_الإختيار
+        On 1
+                ? "+char(34)+"مرحبا"+char(34)+"
+        On 2
+                ? "+char(34)+"مجرد برنامج بسيط"+char(34)+" 
+        On 3
+		? "+char(34)+"نهاية البرنامج"+char(34)+"
+                Bye
+        Other
+                ? "+char(34)+"إختيار خاطىء"+char(34)+"
+        Off
+	End
+','
+	#
+	# حلقة ديناميكية
+	#
+	see "+char(34)+"البداية : "+char(34)+" give البداية
+	see "+char(34)+"النهاية   : "+char(34)+" give النهاية
+	see "+char(34)+"الخطوة  : "+char(34)+" give الخطوة
+	#
+	البداية = 0+البداية
+	النهاية   = 0+النهاية
+	الخطوة  = 0+الخطوة
+	For س = البداية to النهاية Step الخطوة
+	        ? س
+	Next
+','
+	#
+	# إنشاء قائمة تحتوي الارقام من واحد الى خمسة
+	قائمة = 1:5
+	#
+	# استبدال كل رقم بنص يعبر عنه
+	for س in قائمة
+	        switch س
+        	on 1  س = "+char(34)+"واحد"+char(34)+"
+	        on 2  س = "+char(34)+"اثنين"+char(34)+"
+        	on 3  س = "+char(34)+"ثلاثة"+char(34)+"
+	        on 4  س = "+char(34)+"أربعة"+char(34)+"
+        	on 5  س = "+char(34)+"خمسة"+char(34)+"
+	        off
+	next
+	#
+	# عرض عناصر القائمة
+	see قائمة     
+
+','
+	#
+	# فى هذا المثال سنقوم بإنشاء حلقتين 
+	# ثم سنخرج منهما معا
+	#
+
+	for س = 1 to 10
+	        for ص = 1 to 10
+	                ? "+char(34)+"س="+char(34)+" + س + "+char(34)+" ص="+char(34)+" + ص 
+	                if س = 3 and ص = 5
+				# الخروج من الحلقتين
+	                        exit 2     
+	                ok
+	        next
+	next
+
+','
+	#
+	# استخدام امر القفز داخل الحلقات
+	#
+	for س = 1 to 10
+	        if س = 3
+	                ? "+char(34)+"رقم ثلاثة"+char(34)+" 
+	                loop
+	        ok
+	        ? س
+	next
+
+','
+	#
+	# اختصار اختبار نتيجة الشروط
+	#
+	س = 0 ص = 10
+	#
+	? "+char(34)+"إختبار 1"+char(34)+"
+	if (س = 0 and جميل()) and (ص = 10 and جميل())
+	        ? "+char(34)+"عظيم"+char(34)+" 
+	ok
+	#
+	? "+char(34)+"إختبار 2"+char(34)+"
+	if (س = 1 and جميل()) and (ص = 10 and جميل())
+	        ? "+char(34)+"عظيم"+char(34)+" 
+	ok
+	#
+	? "+char(34)+"إختبار 3"+char(34)+"
+	if (س = 0 and جميل()) or (ص = 10 and جميل())
+	        ? "+char(34)+"عظيم"+char(34)+" 
+	ok
+	#
+	func جميل  ? "+char(34)+"جميل"+char(34)+" return 1
+
+','
+	#
+	# فى هذا المثال نتعلم استخدام الدوال
+	#
+	الاولى()  الثانية()
+
+	اجمع(3,5) اجمع(1000,2000)
+
+	? مضروب(5)     
+
+	if لانتيجة() = "+char(34)+""+char(34)+"
+        	? "+char(34)+"الدالة التى تسمع لانتيجة لا ترجع قيمة"+char(34)+" 
+	ok
+
+	func الاولى   ? "+char(34)+"رسالة من الدالة الاولى"+char(34)+" 
+
+	func الثانية  ? "+char(34)+"رسالة من الدالة الثانية"+char(34)+" 
+
+	func اجمع س,ص 
+		? س+ص
+
+	func مضروب س if س = 0 return 1 else return س * مضروب(س-1) ok
+
+	func لانتيجة
+',"+char(34)+"
+	#
+	# مثال على نطاق ظهور المتغيرات
+	#
+	# س عبارة عن متغير عام
+	س = 10                          
+
+	ابدا()
+	func ابدا
+		# ع عبارة عن متغير محلى
+	        for ع = 1 to 10         
+        	        العداد()     
+	        next
+
+	func العداد
+		# عرض قيمة المتغير العام
+	        ? س
+		# انقاص القيمة بواحد
+	        س--                     
+"+char(34)+"];;_RV_;;"
+	]
+]
+
+# End of Visual Source File

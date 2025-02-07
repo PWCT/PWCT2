@@ -1,0 +1,103 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'english'
+nStepsID                 = 2		
+nInteractionsID          = 2
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"eval(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;oObject&nbsp;=&nbsp;new&nbsp;&quot;+cComponentName+:ComponentController</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"eval("+char(34)+"oObject = new "+char(34)+"+cComponentName+:ComponentController)"
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"eval("+char(34)+"oObject = new "+char(34)+"+cComponentName+:ComponentController)"
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"07/02/2025",
+		"16:27:11",
+		""
+	],
+	[
+		2,
+		1,
+		"callfunc",
+		"07/02/2025",
+		"16:27:11",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;eval;;_RV_;;parameters;;_RV_;;"+char(34)+"oObject = new "+char(34)+"+cComponentName+:ComponentController;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	]
+]
+
+# End of Visual Source File

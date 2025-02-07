@@ -1,0 +1,103 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'english'
+nStepsID                 = 2		
+nInteractionsID          = 2
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aOldList</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;addbindvalue&quot;,&quot;at&quot;,&quot;bindvalue&quot;,&quot;boundvalue&quot;,&quot;clear&quot;,&quot;delete&quot;,&quot;driver&quot;,&quot;exec&quot;,&quot;exec_2&quot;,&quot;execbatch&quot;,&quot;executedquery&quot;,&quot;finish&quot;,&quot;first&quot;,&quot;init&quot;,&quot;isactive&quot;,&quot;isforwardonly&quot;,&quot;isnull&quot;,&quot;isselect&quot;,&quot;isvalid&quot;,&quot;last&quot;,&quot;lasterror&quot;,&quot;lastinsertid&quot;,&quot;lastquery&quot;,&quot;movenext&quot;,&quot;nextresult&quot;,&quot;numericalprecisionpolicy&quot;,&quot;numrowsaffected&quot;,&quot;objectpointer&quot;,&quot;prepare&quot;,&quot;previous&quot;,&quot;record&quot;,&quot;result&quot;,&quot;seek&quot;,&quot;setforwardonly&quot;,&quot;setnumericalprecisionpolicy&quot;,&quot;size&quot;,&quot;value&quot;]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"aOldList = ["+char(34)+"addbindvalue"+char(34)+","+char(34)+"at"+char(34)+","+char(34)+"bindvalue"+char(34)+","+char(34)+"boundvalue"+char(34)+","+char(34)+"clear"+char(34)+","+char(34)+"delete"+char(34)+","+char(34)+"driver"+char(34)+","+char(34)+"exec"+char(34)+","+char(34)+"exec_2"+char(34)+","+char(34)+"execbatch"+char(34)+","+char(34)+"executedquery"+char(34)+","+char(34)+"finish"+char(34)+","+char(34)+"first"+char(34)+","+char(34)+"init"+char(34)+","+char(34)+"isactive"+char(34)+","+char(34)+"isforwardonly"+char(34)+","+char(34)+"isnull"+char(34)+","+char(34)+"isselect"+char(34)+","+char(34)+"isvalid"+char(34)+","+char(34)+"last"+char(34)+","+char(34)+"lasterror"+char(34)+","+char(34)+"lastinsertid"+char(34)+","+char(34)+"lastquery"+char(34)+","+char(34)+"movenext"+char(34)+","+char(34)+"nextresult"+char(34)+","+char(34)+"numericalprecisionpolicy"+char(34)+","+char(34)+"numrowsaffected"+char(34)+","+char(34)+"objectpointer"+char(34)+","+char(34)+"prepare"+char(34)+","+char(34)+"previous"+char(34)+","+char(34)+"record"+char(34)+","+char(34)+"result"+char(34)+","+char(34)+"seek"+char(34)+","+char(34)+"setforwardonly"+char(34)+","+char(34)+"setnumericalprecisionpolicy"+char(34)+","+char(34)+"size"+char(34)+","+char(34)+"value"+char(34)+"]"
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"aOldList = ["+char(34)+"addbindvalue"+char(34)+","+char(34)+"at"+char(34)+","+char(34)+"bindvalue"+char(34)+","+char(34)+"boundvalue"+char(34)+","+char(34)+"clear"+char(34)+","+char(34)+"delete"+char(34)+","+char(34)+"driver"+char(34)+","+char(34)+"exec"+char(34)+","+char(34)+"exec_2"+char(34)+","+char(34)+"execbatch"+char(34)+","+char(34)+"executedquery"+char(34)+","+char(34)+"finish"+char(34)+","+char(34)+"first"+char(34)+","+char(34)+"init"+char(34)+","+char(34)+"isactive"+char(34)+","+char(34)+"isforwardonly"+char(34)+","+char(34)+"isnull"+char(34)+","+char(34)+"isselect"+char(34)+","+char(34)+"isvalid"+char(34)+","+char(34)+"last"+char(34)+","+char(34)+"lasterror"+char(34)+","+char(34)+"lastinsertid"+char(34)+","+char(34)+"lastquery"+char(34)+","+char(34)+"movenext"+char(34)+","+char(34)+"nextresult"+char(34)+","+char(34)+"numericalprecisionpolicy"+char(34)+","+char(34)+"numrowsaffected"+char(34)+","+char(34)+"objectpointer"+char(34)+","+char(34)+"prepare"+char(34)+","+char(34)+"previous"+char(34)+","+char(34)+"record"+char(34)+","+char(34)+"result"+char(34)+","+char(34)+"seek"+char(34)+","+char(34)+"setforwardonly"+char(34)+","+char(34)+"setnumericalprecisionpolicy"+char(34)+","+char(34)+"size"+char(34)+","+char(34)+"value"+char(34)+"]"
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"07/02/2025",
+		"16:28:05",
+		""
+	],
+	[
+		2,
+		1,
+		"assignment",
+		"07/02/2025",
+		"16:28:05",
+		"leftside;;_RV_;;aOldList;;_RV_;;rightside;;_RV_;;["+char(34)+"addbindvalue"+char(34)+","+char(34)+"at"+char(34)+","+char(34)+"bindvalue"+char(34)+","+char(34)+"boundvalue"+char(34)+","+char(34)+"clear"+char(34)+","+char(34)+"delete"+char(34)+","+char(34)+"driver"+char(34)+","+char(34)+"exec"+char(34)+","+char(34)+"exec_2"+char(34)+","+char(34)+"execbatch"+char(34)+","+char(34)+"executedquery"+char(34)+","+char(34)+"finish"+char(34)+","+char(34)+"first"+char(34)+","+char(34)+"init"+char(34)+","+char(34)+"isactive"+char(34)+","+char(34)+"isforwardonly"+char(34)+","+char(34)+"isnull"+char(34)+","+char(34)+"isselect"+char(34)+","+char(34)+"isvalid"+char(34)+","+char(34)+"last"+char(34)+","+char(34)+"lasterror"+char(34)+","+char(34)+"lastinsertid"+char(34)+","+char(34)+"lastquery"+char(34)+","+char(34)+"movenext"+char(34)+","+char(34)+"nextresult"+char(34)+","+char(34)+"numericalprecisionpolicy"+char(34)+","+char(34)+"numrowsaffected"+char(34)+","+char(34)+"objectpointer"+char(34)+","+char(34)+"prepare"+char(34)+","+char(34)+"previous"+char(34)+","+char(34)+"record"+char(34)+","+char(34)+"result"+char(34)+","+char(34)+"seek"+char(34)+","+char(34)+"setforwardonly"+char(34)+","+char(34)+"setnumericalprecisionpolicy"+char(34)+","+char(34)+"size"+char(34)+","+char(34)+"value"+char(34)+"];;_RV_;;"
+	]
+]
+
+# End of Visual Source File

@@ -1,0 +1,12 @@
+#/*
+#**	Project : Programming Without Coding Technology (PWCT) Version 2.0
+#**	File Purpose :  stdlib_lcm Component
+#**	Date : 2017.10.16
+#**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
+#*/
+T_CT_STDLIB_LCM_IP_TITLE = "Least Common Multiple Component"
+T_CT_STDLIB_LCM_IP_VALUE = "Number 1 : "
+T_CT_STDLIB_LCM_IP_VALUE2 = "Number 2 :"
+T_CT_STDLIB_LCM_IP_VALUE3 = "Output : "
+T_CT_STDLIB_LCM_ST_VALUE = "Least Common Multiple "
+T_CT_STDLIB_LCM_ST_VALUE2 = " , "

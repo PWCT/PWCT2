@@ -1,0 +1,10 @@
+#/*
+#**	Project : Programming Without Coding Technology (PWCT) Version 2.0
+#**	File Purpose :  stdlib_sign Component
+#**	Date : 2017.10.16
+#**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
+#*/
+T_CT_STDLIB_SIGN_IP_TITLE = "Sign Component"
+T_CT_STDLIB_SIGN_IP_VALUE = "Input : "
+T_CT_STDLIB_SIGN_IP_VALUE2 = "Output : "
+T_CT_STDLIB_SIGN_ST_VALUE = "Sign "

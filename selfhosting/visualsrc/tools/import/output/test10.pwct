@@ -1,0 +1,287 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'english'
+nStepsID                 = 6		
+nInteractionsID          = 6
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">positions&nbsp;=&nbsp;[:tileW&nbsp;=&nbsp;&nbsp;new&nbsp;Vector2(screenWidth*0.15,screenHeight/2+MARGIN)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"positions = [:tileW =  new Vector2(screenWidth*0.15,screenHeight/2+MARGIN)"
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"positions = [:tileW =  new Vector2(screenWidth*0.15,screenHeight/2+MARGIN)"
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">,:tileS&nbsp;=&nbsp;&nbsp;new&nbsp;Vector2(screenWidth*0.15+68,screenHeight/2+MARGIN)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				",:tileS =  new Vector2(screenWidth*0.15+68,screenHeight/2+MARGIN)"
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				",:tileS =  new Vector2(screenWidth*0.15+68,screenHeight/2+MARGIN)"
+			]
+		]
+	],
+	[
+		4,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">,:tileUp&nbsp;=&nbsp;&nbsp;new&nbsp;Vector2(screenWidth*0.75,screenHeight/2+MARGIN)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				",:tileUp =  new Vector2(screenWidth*0.75,screenHeight/2+MARGIN)"
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				",:tileUp =  new Vector2(screenWidth*0.75,screenHeight/2+MARGIN)"
+			]
+		]
+	],
+	[
+		5,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">,:tileDown&nbsp;=&nbsp;&nbsp;new&nbsp;Vector2(screenWidth*0.75+68,screenHeight/2+MARGIN)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				",:tileDown =  new Vector2(screenWidth*0.75+68,screenHeight/2+MARGIN)"
+			],
+			[
+				"interactionid",
+				5
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				",:tileDown =  new Vector2(screenWidth*0.75+68,screenHeight/2+MARGIN)"
+			]
+		]
+	],
+	[
+		6,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"]"
+			],
+			[
+				"interactionid",
+				6
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"]"
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"07/02/2025",
+		"16:27:26",
+		""
+	],
+	[
+		2,
+		1,
+		"freetyping",
+		"07/02/2025",
+		"16:27:26",
+		"value;;_RV_;;positions = [:tileW =  new Vector2(screenWidth*0.15,screenHeight/2+MARGIN);;_RV_;;"
+	],
+	[
+		3,
+		1,
+		"freetyping",
+		"07/02/2025",
+		"16:27:26",
+		"value;;_RV_;;,:tileS =  new Vector2(screenWidth*0.15+68,screenHeight/2+MARGIN);;_RV_;;"
+	],
+	[
+		4,
+		1,
+		"freetyping",
+		"07/02/2025",
+		"16:27:26",
+		"value;;_RV_;;,:tileUp =  new Vector2(screenWidth*0.75,screenHeight/2+MARGIN);;_RV_;;"
+	],
+	[
+		5,
+		1,
+		"freetyping",
+		"07/02/2025",
+		"16:27:26",
+		"value;;_RV_;;,:tileDown =  new Vector2(screenWidth*0.75+68,screenHeight/2+MARGIN);;_RV_;;"
+	],
+	[
+		6,
+		1,
+		"freetyping",
+		"07/02/2025",
+		"16:27:26",
+		"value;;_RV_;;];;_RV_;;"
+	]
+]
+
+# End of Visual Source File

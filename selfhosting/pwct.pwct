@@ -1,0 +1,525 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'english'
+nStepsID                 = 13		
+nInteractionsID          = 12
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"/*"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#/*
+"
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"/*"
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"**	Project : Programming Without Coding Technology (PWCT) Version 2.0"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#**	Project : Programming Without Coding Technology (PWCT) Version 2.0
+"
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"**	Project : Programming Without Coding Technology (PWCT) Version 2.0"
+			]
+		]
+	],
+	[
+		4,
+		1,
+		[
+			[
+				"name",
+				"**	File Purpose :  PWCT Loader File"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#**	File Purpose :  PWCT Loader File
+"
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"**	File Purpose :  PWCT Loader File"
+			]
+		]
+	],
+	[
+		5,
+		1,
+		[
+			[
+				"name",
+				"**	Date&nbsp;:&nbsp;2025.02.07"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#**	Date : 2025.02.07
+"
+			],
+			[
+				"interactionid",
+				5
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"**	Date : 2025.02.07"
+			]
+		]
+	],
+	[
+		6,
+		1,
+		[
+			[
+				"name",
+				"**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
+"
+			],
+			[
+				"interactionid",
+				6
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"**	Author :  Mahmoud Fayed "
+			]
+		]
+	],
+	[
+		7,
+		1,
+		[
+			[
+				"name",
+				"*/"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#*/
+"
+			],
+			[
+				"interactionid",
+				7
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"*/"
+			]
+		]
+	],
+	[
+		13,
+		1,
+		[
+			[
+				"name",
+				"Set&nbsp;the&nbsp;default&nbsp;directory&nbsp;"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Set the default directory 
+"
+			],
+			[
+				"interactionid",
+				12
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Set the default directory "
+			]
+		]
+	],
+	[
+		10,
+		1,
+		[
+			[
+				"name",
+				"chdir(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;../&quot;</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"chdir("+char(34)+"../"+char(34)+")"
+			],
+			[
+				"interactionid",
+				10
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"chdir("+char(34)+"../"+char(34)+")"
+			]
+		]
+	],
+	[
+		8,
+		1,
+		[
+			[
+				"name",
+				"Load the Main Source Code File from the Source Folder"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Load the Main Source Code File from the Source Folder
+"
+			],
+			[
+				"interactionid",
+				8
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Load the Main Source Code File from the Source Folder"
+			]
+		]
+	],
+	[
+		9,
+		1,
+		[
+			[
+				"name",
+				"Load <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">visualsrc/main.ring</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"load "+char(34)+"visualsrc/main.ring"+char(34)+""
+			],
+			[
+				"interactionid",
+				9
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Load visualsrc/main.ring"
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"04/02/2025",
+		"20:21:21",
+		""
+	],
+	[
+		2,
+		1,
+		"comment_text",
+		"04/02/2025",
+		"20:21:21",
+		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		3,
+		1,
+		"comment_text",
+		"04/02/2025",
+		"20:21:21",
+		"value;;_RV_;;**	Project : Programming Without Coding Technology (PWCT) Version 2.0;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		4,
+		1,
+		"comment_text",
+		"04/02/2025",
+		"20:21:21",
+		"value;;_RV_;;**	File Purpose :  PWCT Loader File;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		5,
+		1,
+		"comment_text",
+		"04/02/2025",
+		"20:21:21",
+		"value;;_RV_;;**	Date : 2025.02.07;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		6,
+		1,
+		"comment_text",
+		"04/02/2025",
+		"20:21:21",
+		"value;;_RV_;;**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		7,
+		1,
+		"comment_text",
+		"04/02/2025",
+		"20:21:21",
+		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		8,
+		1,
+		"comment_text",
+		"04/02/2025",
+		"20:21:21",
+		"value;;_RV_;;Load the Main Source Code File from the Source Folder;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		9,
+		1,
+		"load",
+		"04/02/2025",
+		"20:21:21",
+		"file;;_RV_;;visualsrc/main.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+	],
+	[
+		10,
+		1,
+		"callfunc",
+		"05/02/2025",
+		"13:41:42",
+		"name;;_RV_;;chdir;;_RV_;;lparameters;;_RV_;;2;;_RV_;;parameters;;_RV_;;"+char(34)+"../"+char(34)+";;_RV_;;loutput;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;"
+	],
+	[
+		12,
+		1,
+		"comment_text",
+		"05/02/2025",
+		"13:45:26",
+		"value;;_RV_;;Set the default directory ;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	]
+]
+
+# End of Visual Source File

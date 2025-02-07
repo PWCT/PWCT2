@@ -1,0 +1,1211 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'english'
+nStepsID                 = 26		
+nInteractionsID          = 18
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"Load <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">stdlib.ring</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"load "+char(34)+"stdlib.ring"+char(34)+""
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Load stdlib.ring"
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Started</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? "+char(34)+"Started"+char(34)+""
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print Started (New Line) "
+			]
+		]
+	],
+	[
+		4,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aFiles</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">dir(&quot;ringpwct&quot;)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"aFiles = dir("+char(34)+"ringpwct"+char(34)+")"
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"aFiles = dir("+char(34)+"ringpwct"+char(34)+")"
+			]
+		]
+	],
+	[
+		5,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aFiles2</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"aFiles2 = []"
+			],
+			[
+				"interactionid",
+				5
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"aFiles2 = []"
+			]
+		]
+	],
+	[
+		6,
+		1,
+		[
+			[
+				"name",
+				"For <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">item</font></span> in <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aFiles</font></span> step <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"for item in aFiles step 1 { "
+			],
+			[
+				"interactionid",
+				6
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"For item in aFiles step 1"
+			]
+		]
+	],
+	[
+		7,
+		6,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				6
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		9,
+		7,
+		[
+			[
+				"name",
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(item[1]!&nbsp;=&nbsp;&quot;ringpwct.ring&quot;)&nbsp;AND&nbsp;substr(item[1],&quot;.ring&quot;)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"if (item[1]! = "+char(34)+"ringpwct.ring"+char(34)+") AND substr(item[1],"+char(34)+".ring"+char(34)+") { "
+			],
+			[
+				"interactionid",
+				7
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"If (item[1]! = "+char(34)+"ringpwct.ring"+char(34)+") AND substr(item[1],"+char(34)+".ring"+char(34)+")"
+			]
+		]
+	],
+	[
+		10,
+		9,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				7
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		12,
+		10,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aFiles2+item[1]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"aFiles2+item[1]"
+			],
+			[
+				"interactionid",
+				8
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"aFiles2+item[1]"
+			]
+		]
+	],
+	[
+		11,
+		9,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				7
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		8,
+		6,
+		[
+			[
+				"name",
+				"End of For Loop"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				6
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of For Loop"
+			]
+		]
+	],
+	[
+		13,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cContent</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;/*
+**	Project&nbsp;	:&nbsp;Programming&nbsp;Without&nbsp;Coding&nbsp;Technology&nbsp;(PWCT)&nbsp;Version&nbsp;2.0
+**	File&nbsp;Purpose&nbsp;	:&nbsp;Load&nbsp;RingPWCT&nbsp;Components&nbsp;
+**	Date&nbsp;		:&nbsp;2017.10.02
+**	Author&nbsp;		:&nbsp;Mahmoud&nbsp;Fayed&nbsp;&lt;msfclipper@yahoo.com&gt;
+*/
+
+C_VPL_NAME&nbsp;=&nbsp;&#039;RingPWCT&#039;
+
+#&nbsp;Load&nbsp;RingPWCT&nbsp;Components&nbsp;
+
+&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cContent = "+char(34)+"/*
+**	Project 	: Programming Without Coding Technology (PWCT) Version 2.0
+**	File Purpose 	: Load RingPWCT Components 
+**	Date 		: 2017.10.02
+**	Author 		: Mahmoud Fayed <msfclipper@yahoo.com>
+*/
+
+C_VPL_NAME = 'RingPWCT'
+
+# Load RingPWCT Components 
+
+"+char(34)+""
+			],
+			[
+				"interactionid",
+				9
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cContent = "+char(34)+"/*
+**	Project 	: Programming Without Coding Technology (PWCT) Version 2.0
+**	File Purpose 	: Load RingPWCT Components 
+**	Date 		: 2017.10.02
+**	Author 		: Mahmoud Fayed 
+*/
+
+C_VPL_NAME = 'RingPWCT'
+
+# Load RingPWCT Components 
+
+"+char(34)+""
+			]
+		]
+	],
+	[
+		14,
+		1,
+		[
+			[
+				"name",
+				"For <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFile</font></span> in <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aFiles2</font></span> step <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"for cFile in aFiles2 step 1 { "
+			],
+			[
+				"interactionid",
+				10
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"For cFile in aFiles2 step 1"
+			]
+		]
+	],
+	[
+		15,
+		14,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				10
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		17,
+		15,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cContent&nbsp;+=&nbsp;(Char(9)+&#039;load&nbsp;&quot;&#039;+cFile+&#039;&quot;&#039;+nl)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cContent += (Char(9)+'load "+char(34)+"'+cFile+'"+char(34)+"'+nl)"
+			],
+			[
+				"interactionid",
+				11
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cContent += (Char(9)+'load "+char(34)+"'+cFile+'"+char(34)+"'+nl)"
+			]
+		]
+	],
+	[
+		16,
+		14,
+		[
+			[
+				"name",
+				"End of For Loop"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				10
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of For Loop"
+			]
+		]
+	],
+	[
+		18,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cContent&nbsp;+=&nbsp;&quot;
+	
+#&nbsp;Add&nbsp;components&nbsp;to&nbsp;the&nbsp;Components&nbsp;list&nbsp;
+
+	cComponentsPath&nbsp;=&nbsp;C_CB_COMPONENTSPATH
+
+&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cContent += "+char(34)+"
+	
+# Add components to the Components list 
+
+	cComponentsPath = C_CB_COMPONENTSPATH
+
+"+char(34)+""
+			],
+			[
+				"interactionid",
+				12
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cContent += "+char(34)+"
+	
+# Add components to the Components list 
+
+	cComponentsPath = C_CB_COMPONENTSPATH
+
+"+char(34)+""
+			]
+		]
+	],
+	[
+		19,
+		1,
+		[
+			[
+				"name",
+				"For <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFile</font></span> in <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aFiles2</font></span> step <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"for cFile in aFiles2 step 1 { "
+			],
+			[
+				"interactionid",
+				13
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"For cFile in aFiles2 step 1"
+			]
+		]
+	],
+	[
+		20,
+		19,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				13
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		22,
+		20,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cContent&nbsp;+=&nbsp;(Char(9)+&#039;aComponentsFilesList&nbsp;+&nbsp;(cComponentsPath&nbsp;+&nbsp;&quot;&#039;+cFile+&#039;&quot;)&#039;+nl)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cContent += (Char(9)+'aComponentsFilesList + (cComponentsPath + "+char(34)+"'+cFile+'"+char(34)+")'+nl)"
+			],
+			[
+				"interactionid",
+				14
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cContent += (Char(9)+'aComponentsFilesList + (cComponentsPath + "+char(34)+"'+cFile+'"+char(34)+")'+nl)"
+			]
+		]
+	],
+	[
+		21,
+		19,
+		[
+			[
+				"name",
+				"End of For Loop"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				13
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of For Loop"
+			]
+		]
+	],
+	[
+		23,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Writing&nbsp;ringpwct.ring</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? "+char(34)+"Writing ringpwct.ring"+char(34)+""
+			],
+			[
+				"interactionid",
+				15
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print Writing ringpwct.ring (New Line) "
+			]
+		]
+	],
+	[
+		24,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cContent</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">substr(cContent,nl,windowsnl())</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cContent = substr(cContent,nl,windowsnl())"
+			],
+			[
+				"interactionid",
+				16
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cContent = substr(cContent,nl,windowsnl())"
+			]
+		]
+	],
+	[
+		25,
+		1,
+		[
+			[
+				"name",
+				"write(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;ringpwct\ringpwct.ring&quot;,cContent</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"write("+char(34)+"ringpwct\ringpwct.ring"+char(34)+",cContent)"
+			],
+			[
+				"interactionid",
+				17
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"write("+char(34)+"ringpwct\ringpwct.ring"+char(34)+",cContent)"
+			]
+		]
+	],
+	[
+		26,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Done</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? "+char(34)+"Done"+char(34)+""
+			],
+			[
+				"interactionid",
+				18
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print Done (New Line) "
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"07/02/2025",
+		"16:28:25",
+		""
+	],
+	[
+		2,
+		1,
+		"load",
+		"07/02/2025",
+		"16:28:25",
+		"file;;_RV_;;stdlib.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+	],
+	[
+		3,
+		1,
+		"print",
+		"07/02/2025",
+		"16:28:25",
+		"text;;_RV_;;Started;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	],
+	[
+		4,
+		1,
+		"assignment",
+		"07/02/2025",
+		"16:28:25",
+		"leftside;;_RV_;;aFiles;;_RV_;;rightside;;_RV_;;dir("+char(34)+"ringpwct"+char(34)+");;_RV_;;"
+	],
+	[
+		5,
+		1,
+		"assignment",
+		"07/02/2025",
+		"16:28:25",
+		"leftside;;_RV_;;aFiles2;;_RV_;;rightside;;_RV_;;[];;_RV_;;"
+	],
+	[
+		6,
+		1,
+		"forinloop",
+		"07/02/2025",
+		"16:28:25",
+		"variable;;_RV_;;item;;_RV_;;in;;_RV_;;aFiles;;_RV_;;step;;_RV_;;1;;_RV_;;"
+	],
+	[
+		7,
+		1,
+		"ifstatement",
+		"07/02/2025",
+		"16:28:25",
+		"condition;;_RV_;;(item[1]! = "+char(34)+"ringpwct.ring"+char(34)+") AND substr(item[1],"+char(34)+".ring"+char(34)+");;_RV_;;"
+	],
+	[
+		8,
+		1,
+		"freetyping",
+		"07/02/2025",
+		"16:28:25",
+		"value;;_RV_;;aFiles2+item[1];;_RV_;;"
+	],
+	[
+		9,
+		1,
+		"assignment",
+		"07/02/2025",
+		"16:28:25",
+		"leftside;;_RV_;;cContent;;_RV_;;rightside;;_RV_;;"+char(34)+"/*
+**	Project 	: Programming Without Coding Technology (PWCT) Version 2.0
+**	File Purpose 	: Load RingPWCT Components 
+**	Date 		: 2017.10.02
+**	Author 		: Mahmoud Fayed <msfclipper@yahoo.com>
+*/
+
+C_VPL_NAME = 'RingPWCT'
+
+# Load RingPWCT Components 
+
+"+char(34)+";;_RV_;;"
+	],
+	[
+		10,
+		1,
+		"forinloop",
+		"07/02/2025",
+		"16:28:25",
+		"variable;;_RV_;;cFile;;_RV_;;in;;_RV_;;aFiles2;;_RV_;;step;;_RV_;;1;;_RV_;;"
+	],
+	[
+		11,
+		1,
+		"freetyping",
+		"07/02/2025",
+		"16:28:25",
+		"value;;_RV_;;cContent += (Char(9)+'load "+char(34)+"'+cFile+'"+char(34)+"'+nl);;_RV_;;"
+	],
+	[
+		12,
+		1,
+		"freetyping",
+		"07/02/2025",
+		"16:28:25",
+		"value;;_RV_;;cContent += "+char(34)+"
+	
+# Add components to the Components list 
+
+	cComponentsPath = C_CB_COMPONENTSPATH
+
+"+char(34)+";;_RV_;;"
+	],
+	[
+		13,
+		1,
+		"forinloop",
+		"07/02/2025",
+		"16:28:25",
+		"variable;;_RV_;;cFile;;_RV_;;in;;_RV_;;aFiles2;;_RV_;;step;;_RV_;;1;;_RV_;;"
+	],
+	[
+		14,
+		1,
+		"freetyping",
+		"07/02/2025",
+		"16:28:25",
+		"value;;_RV_;;cContent += (Char(9)+'aComponentsFilesList + (cComponentsPath + "+char(34)+"'+cFile+'"+char(34)+")'+nl);;_RV_;;"
+	],
+	[
+		15,
+		1,
+		"print",
+		"07/02/2025",
+		"16:28:25",
+		"text;;_RV_;;Writing ringpwct.ring;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	],
+	[
+		16,
+		1,
+		"assignment",
+		"07/02/2025",
+		"16:28:25",
+		"leftside;;_RV_;;cContent;;_RV_;;rightside;;_RV_;;substr(cContent,nl,windowsnl());;_RV_;;"
+	],
+	[
+		17,
+		1,
+		"callfunc",
+		"07/02/2025",
+		"16:28:25",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;write;;_RV_;;parameters;;_RV_;;"+char(34)+"ringpwct\ringpwct.ring"+char(34)+",cContent;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		18,
+		1,
+		"print",
+		"07/02/2025",
+		"16:28:25",
+		"text;;_RV_;;Done;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+	]
+]
+
+# End of Visual Source File

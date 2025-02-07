@@ -1,0 +1,103 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'english'
+nStepsID                 = 2		
+nInteractionsID          = 2
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">new&nbsp;qDate()&nbsp;{&nbsp;setDate(&nbsp;y,&nbsp;m,&nbsp;d&nbsp;)&nbsp;}</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"return new qDate() { setDate( y, m, d ) }"
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Return new qDate() { setDate( y, m, d ) }"
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"07/02/2025",
+		"16:27:08",
+		""
+	],
+	[
+		2,
+		1,
+		"return",
+		"07/02/2025",
+		"16:27:08",
+		"value;;_RV_;;new qDate() { setDate( y, m, d ) };;_RV_;;"
+	]
+]
+
+# End of Visual Source File

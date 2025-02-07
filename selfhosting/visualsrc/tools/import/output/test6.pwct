@@ -1,0 +1,196 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'english'
+nStepsID                 = 4		
+nInteractionsID          = 4
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">How&nbsp;many&nbsp;Disks&nbsp;(5)&nbsp;:&nbsp;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"see "+char(34)+"How many Disks (5) : "+char(34)+""
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print How many Disks (5) : "
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"Input <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aDisks</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"give aDisks"
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Input aDisks"
+			]
+		]
+	],
+	[
+		4,
+		1,
+		[
+			[
+				"name",
+				"Ask User"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"# Ask User
+"
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Ask User"
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"24/07/2023",
+		"17:18:20",
+		""
+	],
+	[
+		2,
+		1,
+		"print",
+		"24/07/2023",
+		"17:18:20",
+		"text;;_RV_;;How many Disks (5) : ;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;0;;_RV_;;"
+	],
+	[
+		3,
+		1,
+		"getinput",
+		"24/07/2023",
+		"17:18:20",
+		"text;;_RV_;;aDisks;;_RV_;;number;;_RV_;;0;;_RV_;;"
+	],
+	[
+		4,
+		1,
+		"comment_text",
+		"24/07/2023",
+		"17:18:20",
+		"value;;_RV_;;Ask User;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	]
+]
+
+# End of Visual Source File

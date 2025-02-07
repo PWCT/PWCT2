@@ -1,0 +1,40 @@
+# Start Form Designer File
+aObjectsList = [
+	[ :name = "Window" , :id = 1 , :classname = "formdesigner_qwidget" , :data = [
+		 :x = 0 , : y = 158  , 
+		 :width =  650 , :height = 48 , 
+		 :title =  "Form1" , 
+		 :backcolor =  "#2f5e5b" , 
+		 :windowflags =  "Qt_ToolTip | Qt_WindowStaysOnTopHint | Qt_CustomizeWindowHint" , 
+		 :mainlayout =  "Layout1" ,
+		 :WindowIcon =  "" , 
+		 :Menubar =  ""  ,
+		 :IndexType =  1  
+
+		]
+	],
+	[ :name = "oMsg" , :id = 2 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 0 , : y = 0  , 
+		 :width =  650 , :height = 48 , 
+		 :textcolor =  "#00007f" , 
+		 :backcolor =  "#ffebdc" , 
+		 :font =  "MS Shell Dlg 2,16,-1,5,50,0,0,0,0,0" , 
+		 :parent =  "win"  ,
+		 :text =  "Loading...",
+		 :BtnImage =  "",
+		 :setClickEvent =  ""
+		]
+	],
+	[ :name = "Layout1" , :id = 3 , :classname = "formdesigner_qlayout" , :data = [
+		 :x = 62 , : y = 0  , 
+		 :width =  61 , :height = 12 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :LayoutType =  0,
+		 :LayoutObjects =  "oMsg"
+		]
+	]
+]
+# End Form Designer File

@@ -1,0 +1,1625 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'english'
+nStepsID                 = 12		
+nInteractionsID          = 12
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"/*"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#/*
+"
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"/*"
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"**	Project : Programming Without Coding Technology (PWCT) Version 2.0"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#**	Project : Programming Without Coding Technology (PWCT) Version 2.0
+"
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"**	Project : Programming Without Coding Technology (PWCT) Version 2.0"
+			]
+		]
+	],
+	[
+		4,
+		1,
+		[
+			[
+				"name",
+				"**	File Purpose :  templates Component"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#**	File Purpose :  templates Component
+"
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"**	File Purpose :  templates Component"
+			]
+		]
+	],
+	[
+		5,
+		1,
+		[
+			[
+				"name",
+				"**	Date : 2021.08.10"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#**	Date : 2021.08.10
+"
+			],
+			[
+				"interactionid",
+				5
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"**	Date : 2021.08.10"
+			]
+		]
+	],
+	[
+		6,
+		1,
+		[
+			[
+				"name",
+				"**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
+"
+			],
+			[
+				"interactionid",
+				6
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"**	Author :  Mahmoud Fayed "
+			]
+		]
+	],
+	[
+		7,
+		1,
+		[
+			[
+				"name",
+				"*/"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#*/
+"
+			],
+			[
+				"interactionid",
+				7
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"*/"
+			]
+		]
+	],
+	[
+		8,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_TEMPLATES_IP_TITLE</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;Quick&nbsp;Start&nbsp;Component&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_CT_TEMPLATES_IP_TITLE = "+char(34)+"Quick Start Component"+char(34)+""
+			],
+			[
+				"interactionid",
+				8
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_CT_TEMPLATES_IP_TITLE = "+char(34)+"Quick Start Component"+char(34)+""
+			]
+		]
+	],
+	[
+		9,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_TEMPLATES_IP_VALUE</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;Template&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_CT_TEMPLATES_IP_VALUE = "+char(34)+"Template"+char(34)+""
+			],
+			[
+				"interactionid",
+				9
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_CT_TEMPLATES_IP_VALUE = "+char(34)+"Template"+char(34)+""
+			]
+		]
+	],
+	[
+		10,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_TEMPLATES_IP_VALUE2</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;No&nbsp;Comments&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_CT_TEMPLATES_IP_VALUE2 = "+char(34)+"No Comments"+char(34)+""
+			],
+			[
+				"interactionid",
+				10
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_CT_TEMPLATES_IP_VALUE2 = "+char(34)+"No Comments"+char(34)+""
+			]
+		]
+	],
+	[
+		11,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_TEMPLATES_IP_VALUELIST</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;Hello&nbsp;World&quot;,&quot;Say&nbsp;Hello&quot;,&quot;Variables&quot;,&quot;Deep&nbsp;Copy&quot;,&quot;Implicit&nbsp;Conversion&quot;,&quot;Operators&nbsp;Precedence&quot;,&quot;Loop&nbsp;and&nbsp;Condition&quot;,&quot;Main&nbsp;Menu&quot;,&quot;Dynamic&nbsp;Loop&quot;,&quot;Modify&nbsp;lists&nbsp;using&nbsp;Loop&quot;,&quot;Exit&nbsp;from&nbsp;two&nbsp;loops&quot;,&quot;The&nbsp;Loop&nbsp;Command&quot;,&quot;Short-circuit&nbsp;evaluation&quot;,&quot;Using&nbsp;Functions&quot;,&quot;Variables&nbsp;Scope&quot;]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_CT_TEMPLATES_IP_VALUELIST = ["+char(34)+"Hello World"+char(34)+","+char(34)+"Say Hello"+char(34)+","+char(34)+"Variables"+char(34)+","+char(34)+"Deep Copy"+char(34)+","+char(34)+"Implicit Conversion"+char(34)+","+char(34)+"Operators Precedence"+char(34)+","+char(34)+"Loop and Condition"+char(34)+","+char(34)+"Main Menu"+char(34)+","+char(34)+"Dynamic Loop"+char(34)+","+char(34)+"Modify lists using Loop"+char(34)+","+char(34)+"Exit from two loops"+char(34)+","+char(34)+"The Loop Command"+char(34)+","+char(34)+"Short-circuit evaluation"+char(34)+","+char(34)+"Using Functions"+char(34)+","+char(34)+"Variables Scope"+char(34)+"]"
+			],
+			[
+				"interactionid",
+				11
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_CT_TEMPLATES_IP_VALUELIST = ["+char(34)+"Hello World"+char(34)+","+char(34)+"Say Hello"+char(34)+","+char(34)+"Variables"+char(34)+","+char(34)+"Deep Copy"+char(34)+","+char(34)+"Implicit Conversion"+char(34)+","+char(34)+"Operators Precedence"+char(34)+","+char(34)+"Loop and Condition"+char(34)+","+char(34)+"Main Menu"+char(34)+","+char(34)+"Dynamic Loop"+char(34)+","+char(34)+"Modify lists using Loop"+char(34)+","+char(34)+"Exit from two loops"+char(34)+","+char(34)+"The Loop Command"+char(34)+","+char(34)+"Short-circuit evaluation"+char(34)+","+char(34)+"Using Functions"+char(34)+","+char(34)+"Variables Scope"+char(34)+"]"
+			]
+		]
+	],
+	[
+		12,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_TEMPLATES_IP_VALUECODE</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&#039;
+	//
+	//&nbsp;Hello
+	//&nbsp;Welcome&nbsp;to&nbsp;the&nbsp;Programming&nbsp;World!
+	//&nbsp;In&nbsp;this&nbsp;lesson&nbsp;we&nbsp;will&nbsp;create&nbsp;our&nbsp;first&nbsp;program
+	//&nbsp;From&nbsp;the&nbsp;Components&nbsp;Browser&nbsp;and&nbsp;using&nbsp;the&nbsp;(Print&nbsp;Text)&nbsp;Component&nbsp;
+	//&nbsp;We&nbsp;will&nbsp;print&nbsp;a&nbsp;&quot;Hello,&nbsp;World!&quot;&nbsp;message&nbsp;on&nbsp;the&nbsp;Screen
+	//
+	?&nbsp;&quot;Hello,&nbsp;World!&quot;
+&#039;,&#039;
+	//
+	//&nbsp;In&nbsp;the&nbsp;next&nbsp;steps&nbsp;we&nbsp;asks&nbsp;the&nbsp;User&nbsp;to&nbsp;enter&nbsp;his/her&nbsp;name
+	//&nbsp;Then&nbsp;we&nbsp;print&nbsp;the&nbsp;&quot;Hello&quot;&nbsp;Message&nbsp;then&nbsp;the&nbsp;User&nbsp;Name
+	//
+	//&nbsp;Using&nbsp;the&nbsp;Components&nbsp;Browser
+	//&nbsp;To&nbsp;print&nbsp;messages&nbsp;we&nbsp;will&nbsp;use&nbsp;the&nbsp;(Print&nbsp;Text)&nbsp;component
+	//&nbsp;To&nbsp;get&nbsp;input&nbsp;from&nbsp;the&nbsp;User&nbsp;we&nbsp;will&nbsp;use&nbsp;the&nbsp;(Get&nbsp;Input)&nbsp;component
+	//
+	?&nbsp;&quot;Enter&nbsp;your&nbsp;name?&quot;&nbsp;
+	give&nbsp;cName&nbsp;
+	?&nbsp;&quot;Hello&nbsp;&quot;&nbsp;+&nbsp;cName
+&#039;,&#039;
+	#
+	#&nbsp;x&nbsp;is&nbsp;a&nbsp;string
+	x&nbsp;=&nbsp;&quot;Hello&quot;&nbsp;
+	?&nbsp;x&nbsp;
+	#
+	#&nbsp;x&nbsp;is&nbsp;a&nbsp;number&nbsp;(int)
+	x&nbsp;=&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	?&nbsp;x&nbsp;
+	#&nbsp;x&nbsp;is&nbsp;a&nbsp;number&nbsp;(double)
+	x&nbsp;=&nbsp;1.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	?&nbsp;x&nbsp;
+	#
+	#&nbsp;x&nbsp;is&nbsp;a&nbsp;list
+	x&nbsp;=&nbsp;[1,2,3,4]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	#&nbsp;print&nbsp;list&nbsp;items
+	?&nbsp;x
+	#
+	#&nbsp;x&nbsp;is&nbsp;a&nbsp;string&nbsp;contains&nbsp;date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	x&nbsp;=&nbsp;date()&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	?&nbsp;x&nbsp;
+	#
+	#&nbsp;x&nbsp;is&nbsp;a&nbsp;string&nbsp;contains&nbsp;time
+	x&nbsp;=&nbsp;time()&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	?&nbsp;x&nbsp;
+	#&nbsp;x&nbsp;is&nbsp;a&nbsp;number&nbsp;(logical&nbsp;value&nbsp;=&nbsp;1)
+	x&nbsp;=&nbsp;true&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	?&nbsp;x&nbsp;
+	#
+	#&nbsp;x&nbsp;is&nbsp;a&nbsp;number&nbsp;(logical&nbsp;value&nbsp;=&nbsp;0)
+	x&nbsp;=&nbsp;false&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	?&nbsp;x&nbsp;
+&#039;,&#039;
+	#
+	#&nbsp;We&nbsp;can&nbsp;use&nbsp;the&nbsp;assignment&nbsp;operator&nbsp;‘=’&nbsp;to&nbsp;copy&nbsp;variables.
+	#&nbsp;We&nbsp;can&nbsp;do&nbsp;that&nbsp;to&nbsp;copy&nbsp;values&nbsp;like&nbsp;strings&nbsp;&amp;&nbsp;numbers.&nbsp;
+	#&nbsp;Also,&nbsp;we&nbsp;can&nbsp;copy&nbsp;complete&nbsp;lists&nbsp;&amp;&nbsp;objects.&nbsp;
+	#&nbsp;The&nbsp;assignment&nbsp;operator&nbsp;will&nbsp;do&nbsp;a&nbsp;complete&nbsp;duplication&nbsp;for&nbsp;us.&nbsp;
+	#&nbsp;This&nbsp;operation&nbsp;called&nbsp;Deep&nbsp;Copy
+	#
+	list&nbsp;=&nbsp;[1,2,3,&quot;four&quot;,&quot;five&quot;]
+	list2&nbsp;=&nbsp;list
+	list&nbsp;=&nbsp;[]
+	#&nbsp;print&nbsp;the&nbsp;first&nbsp;list&nbsp;-&nbsp;no&nbsp;items&nbsp;to&nbsp;print
+	?&nbsp;list&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	#
+	?&nbsp;&quot;********&quot;&nbsp;
+	#
+	#&nbsp;print&nbsp;the&nbsp;second&nbsp;list&nbsp;-&nbsp;contains&nbsp;5&nbsp;items
+	?&nbsp;list2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&#039;,&#039;
+	#
+	#&nbsp;The&nbsp;language&nbsp;can&nbsp;automatically&nbsp;convert&nbsp;between&nbsp;numbers&nbsp;and&nbsp;strings.
+	#
+	#&nbsp;NUMBER&nbsp;+&nbsp;STRING&nbsp;is&nbsp;NUMBER
+	#&nbsp;STRING&nbsp;+&nbsp;NUMBER&nbsp;is&nbsp;STRING
+	#
+	#&nbsp;The&nbsp;same&nbsp;operator&nbsp;&quot;+&quot;&nbsp;can&nbsp;be&nbsp;used&nbsp;as&nbsp;an&nbsp;arithmetic&nbsp;operator&nbsp;
+	#&nbsp;Or&nbsp;for&nbsp;string&nbsp;concatenation.
+&nbsp;	#
+	#&nbsp;x&nbsp;is&nbsp;a&nbsp;number
+	x&nbsp;=&nbsp;10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	#
+	#&nbsp;y&nbsp;is&nbsp;a&nbsp;string
+	y&nbsp;=&nbsp;&quot;20&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	#
+	#&nbsp;sum&nbsp;is&nbsp;a&nbsp;number&nbsp;(y&nbsp;will&nbsp;be&nbsp;converted&nbsp;to&nbsp;a&nbsp;number)&nbsp;
+	sum&nbsp;=&nbsp;x&nbsp;+&nbsp;y&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	#
+	#&nbsp;Msg&nbsp;is&nbsp;a&nbsp;string&nbsp;(sum&nbsp;will&nbsp;be&nbsp;converted&nbsp;to&nbsp;a&nbsp;string)&nbsp;&nbsp;&nbsp;
+	Msg&nbsp;=&nbsp;&quot;Sum&nbsp;=&nbsp;&quot;&nbsp;+&nbsp;sum&nbsp;&nbsp;&nbsp;&nbsp;
+	?&nbsp;Msg&nbsp;
+&#039;,&quot;
+	#&nbsp;
+	#&nbsp;Example&nbsp;about&nbsp;operators&nbsp;precedence
+	#
+	#&nbsp;The&nbsp;output&nbsp;will&nbsp;be&nbsp;:&nbsp;23
+	See&nbsp;3+5*4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&quot;,&#039;
+	//
+	//&nbsp;In&nbsp;the&nbsp;next&nbsp;steps&nbsp;we&nbsp;create&nbsp;a&nbsp;loop&nbsp;that&nbsp;count&nbsp;from&nbsp;one&nbsp;to&nbsp;ten
+	//&nbsp;We&nbsp;print&nbsp;each&nbsp;number&nbsp;on&nbsp;the&nbsp;Screen&nbsp;
+	//&nbsp;Also&nbsp;we&nbsp;print&nbsp;a&nbsp;special&nbsp;message&nbsp;when&nbsp;we&nbsp;reach&nbsp;number&nbsp;Three
+	//
+	for&nbsp;t=1&nbsp;to&nbsp;10
+		?&nbsp;t
+		if&nbsp;t=3&nbsp;
+			?&nbsp;&quot;Three&quot;
+		ok
+	next
+&#039;,&#039;
+	#
+	#&nbsp;We&nbsp;will&nbsp;learn&nbsp;how&nbsp;to&nbsp;create&nbsp;a&nbsp;Main&nbsp;Menu
+	#&nbsp;Using&nbsp;a&nbsp;While&nbsp;loop&nbsp;and&nbsp;a&nbsp;Switch&nbsp;statement
+	#
+	While&nbsp;True
+	?&nbsp;&quot;&quot;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&nbsp;&quot;Main&nbsp;Menu&quot;
+	?&nbsp;&quot;--------------&quot;
+	?&nbsp;&quot;(1)&nbsp;Say&nbsp;Hello&quot;
+	?&nbsp;&quot;(2)&nbsp;About&quot;
+	?&nbsp;&quot;(3)&nbsp;Exit&quot;&nbsp;
+	?&nbsp;&quot;&quot;
+	Give&nbsp;nOption
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Switch&nbsp;nOption
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;On&nbsp;1
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&nbsp;&quot;Hello!&quot;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;On&nbsp;2
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&nbsp;&quot;Just&nbsp;a&nbsp;simple&nbsp;program!&quot;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;On&nbsp;3
+		?&nbsp;&quot;End&nbsp;of&nbsp;program!&quot;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bye
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Other
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&nbsp;&quot;bad&nbsp;option...&quot;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Off
+	End
+&#039;,&#039;
+	#
+	#&nbsp;Dynamic&nbsp;loop
+	#
+	see&nbsp;&quot;Start&nbsp;:&nbsp;&quot;&nbsp;give&nbsp;nStart&nbsp;&nbsp;
+	see&nbsp;&quot;End&nbsp;&nbsp;&nbsp;:&nbsp;&quot;&nbsp;give&nbsp;nEnd&nbsp;&nbsp;&nbsp;&nbsp;
+	see&nbsp;&quot;Step&nbsp;&nbsp;:&nbsp;&quot;&nbsp;give&nbsp;nStep&nbsp;&nbsp;&nbsp;
+	#
+	nStart&nbsp;=&nbsp;0+nStart
+	nEnd&nbsp;&nbsp;&nbsp;=&nbsp;0+nEnd
+	nStep&nbsp;&nbsp;=&nbsp;0+nStep
+	For&nbsp;x&nbsp;=&nbsp;nStart&nbsp;to&nbsp;nEnd&nbsp;Step&nbsp;nStep
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&nbsp;x
+	Next
+&#039;,&#039;
+	#
+	#&nbsp;Create&nbsp;list&nbsp;contains&nbsp;numbers&nbsp;from&nbsp;1&nbsp;to&nbsp;5
+	aList&nbsp;=&nbsp;1:5
+	#
+	#&nbsp;Replace&nbsp;list&nbsp;numbers&nbsp;with&nbsp;strings
+	for&nbsp;x&nbsp;in&nbsp;aList
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch&nbsp;x
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	on&nbsp;1&nbsp;&nbsp;x&nbsp;=&nbsp;&quot;one&quot;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;on&nbsp;2&nbsp;&nbsp;x&nbsp;=&nbsp;&quot;two&quot;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	on&nbsp;3&nbsp;&nbsp;x&nbsp;=&nbsp;&quot;three&quot;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;on&nbsp;4&nbsp;&nbsp;x&nbsp;=&nbsp;&quot;four&quot;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	on&nbsp;5&nbsp;&nbsp;x&nbsp;=&nbsp;&quot;five&quot;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;off
+	next
+	#
+	#&nbsp;Print&nbsp;the&nbsp;list&nbsp;items
+	see&nbsp;aList&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+&#039;,&#039;
+	#
+	#&nbsp;In&nbsp;this&nbsp;example&nbsp;we&nbsp;will&nbsp;create&nbsp;two&nbsp;loops
+	#&nbsp;Then&nbsp;we&nbsp;will&nbsp;use&nbsp;the&nbsp;Exit&nbsp;command&nbsp;
+	#&nbsp;To&nbsp;exit&nbsp;from&nbsp;these&nbsp;two&nbsp;loops&nbsp;together
+	#
+
+	for&nbsp;x&nbsp;=&nbsp;1&nbsp;to&nbsp;10
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;y&nbsp;=&nbsp;1&nbsp;to&nbsp;10
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&nbsp;&quot;x=&quot;&nbsp;+&nbsp;x&nbsp;+&nbsp;&quot;&nbsp;y=&quot;&nbsp;+&nbsp;y&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;x&nbsp;=&nbsp;3&nbsp;and&nbsp;y&nbsp;=&nbsp;5
+				#&nbsp;Exit&nbsp;from&nbsp;2&nbsp;loops
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exit&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ok
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;next
+	next
+
+&#039;,&#039;
+	#
+	#&nbsp;Using&nbsp;the&nbsp;Loop&nbsp;command&nbsp;inside&nbsp;a&nbsp;For&nbsp;Loop
+	#
+	for&nbsp;x&nbsp;=&nbsp;1&nbsp;to&nbsp;10
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;x&nbsp;=&nbsp;3
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&nbsp;&quot;Number&nbsp;Three&quot;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loop
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ok
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&nbsp;x
+	next
+
+&#039;,&#039;
+	#
+	#&nbsp;Short-circuit&nbsp;evaluation
+	#
+	x&nbsp;=&nbsp;0&nbsp;y&nbsp;=&nbsp;10
+	#
+	?&nbsp;&quot;Test&nbsp;1&quot;
+	if&nbsp;(x&nbsp;=&nbsp;0&nbsp;and&nbsp;nice())&nbsp;and&nbsp;(y&nbsp;=&nbsp;10&nbsp;and&nbsp;nice())
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&nbsp;&quot;Great&quot;&nbsp;
+	ok
+	#
+	?&nbsp;&quot;Test&nbsp;2&quot;
+	if&nbsp;(x&nbsp;=&nbsp;1&nbsp;and&nbsp;nice())&nbsp;and&nbsp;(y&nbsp;=&nbsp;10&nbsp;and&nbsp;nice())
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&nbsp;&quot;Great&quot;&nbsp;
+	ok
+	#
+	?&nbsp;&quot;Test&nbsp;3&quot;
+	if&nbsp;(x&nbsp;=&nbsp;0&nbsp;and&nbsp;nice())&nbsp;or&nbsp;(y&nbsp;=&nbsp;10&nbsp;and&nbsp;nice())
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&nbsp;&quot;Great&quot;&nbsp;
+	ok
+	#
+	func&nbsp;nice&nbsp;&nbsp;?&nbsp;&quot;Nice&quot;&nbsp;return&nbsp;1
+
+&#039;,`
+	#
+	#&nbsp;In&nbsp;this&nbsp;example&nbsp;we&nbsp;learn&nbsp;about&nbsp;using&nbsp;functions
+	#
+	first()&nbsp;&nbsp;second()
+
+	sum(3,5)&nbsp;sum(1000,2000)
+
+	?&nbsp;fact(5)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+	if&nbsp;novalue()&nbsp;=&nbsp;NULL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	?&nbsp;&quot;the&nbsp;NoValue()&nbsp;function&nbsp;doesn&#039;t&nbsp;return&nbsp;a&nbsp;value&quot;&nbsp;
+	ok
+
+	func&nbsp;first&nbsp;&nbsp;&nbsp;?&nbsp;&quot;message&nbsp;from&nbsp;the&nbsp;first&nbsp;function&quot;&nbsp;
+
+	func&nbsp;second&nbsp;&nbsp;?&nbsp;&quot;message&nbsp;from&nbsp;the&nbsp;second&nbsp;function&quot;&nbsp;
+
+	func&nbsp;sum&nbsp;x,y&nbsp;
+		?&nbsp;x+y
+
+	func&nbsp;fact&nbsp;x&nbsp;if&nbsp;x&nbsp;=&nbsp;0&nbsp;return&nbsp;1&nbsp;else&nbsp;return&nbsp;x&nbsp;*&nbsp;fact(x-1)&nbsp;ok
+
+	func&nbsp;novalue
+`,&quot;
+	#
+	#&nbsp;Variables&nbsp;Scope&nbsp;Example
+	#
+	#&nbsp;x&nbsp;is&nbsp;a&nbsp;Global&nbsp;variable.
+	x&nbsp;=&nbsp;10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+	func&nbsp;main
+		#&nbsp;t&nbsp;is&nbsp;a&nbsp;Local&nbsp;variable
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;t&nbsp;=&nbsp;1&nbsp;to&nbsp;10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mycounter()&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;next
+
+	func&nbsp;mycounter
+		#&nbsp;Print&nbsp;the&nbsp;global&nbsp;variable&nbsp;value
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&nbsp;x&nbsp;
+		#&nbsp;Decrement
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&quot;]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_CT_TEMPLATES_IP_VALUECODE = ['
+	//
+	// Hello
+	// Welcome to the Programming World!
+	// In this lesson we will create our first program
+	// From the Components Browser and using the (Print Text) Component 
+	// We will print a "+char(34)+"Hello, World!"+char(34)+" message on the Screen
+	//
+	? "+char(34)+"Hello, World!"+char(34)+"
+','
+	//
+	// In the next steps we asks the User to enter his/her name
+	// Then we print the "+char(34)+"Hello"+char(34)+" Message then the User Name
+	//
+	// Using the Components Browser
+	// To print messages we will use the (Print Text) component
+	// To get input from the User we will use the (Get Input) component
+	//
+	? "+char(34)+"Enter your name?"+char(34)+" 
+	give cName 
+	? "+char(34)+"Hello "+char(34)+" + cName
+','
+	#
+	# x is a string
+	x = "+char(34)+"Hello"+char(34)+" 
+	? x 
+	#
+	# x is a number (int)
+	x = 5                   
+	? x 
+	# x is a number (double)
+	x = 1.2                 
+	? x 
+	#
+	# x is a list
+	x = [1,2,3,4]           
+	# print list items
+	? x
+	#
+	# x is a string contains date                   
+	x = date()              
+	? x 
+	#
+	# x is a string contains time
+	x = time()              
+	? x 
+	# x is a number (logical value = 1)
+	x = true                
+	? x 
+	#
+	# x is a number (logical value = 0)
+	x = false               
+	? x 
+','
+	#
+	# We can use the assignment operator ‘=’ to copy variables.
+	# We can do that to copy values like strings & numbers. 
+	# Also, we can copy complete lists & objects. 
+	# The assignment operator will do a complete duplication for us. 
+	# This operation called Deep Copy
+	#
+	list = [1,2,3,"+char(34)+"four"+char(34)+","+char(34)+"five"+char(34)+"]
+	list2 = list
+	list = []
+	# print the first list - no items to print
+	? list        
+	#
+	? "+char(34)+"********"+char(34)+" 
+	#
+	# print the second list - contains 5 items
+	? list2       
+','
+	#
+	# The language can automatically convert between numbers and strings.
+	#
+	# NUMBER + STRING is NUMBER
+	# STRING + NUMBER is STRING
+	#
+	# The same operator "+char(34)+"+"+char(34)+" can be used as an arithmetic operator 
+	# Or for string concatenation.
+ 	#
+	# x is a number
+	x = 10                  
+	#
+	# y is a string
+	y = "+char(34)+"20"+char(34)+"       
+	#
+	# sum is a number (y will be converted to a number) 
+	sum = x + y          
+	#
+	# Msg is a string (sum will be converted to a string)   
+	Msg = "+char(34)+"Sum = "+char(34)+" + sum    
+	? Msg 
+',"+char(34)+"
+	# 
+	# Example about operators precedence
+	#
+	# The output will be : 23
+	See 3+5*4       
+"+char(34)+",'
+	//
+	// In the next steps we create a loop that count from one to ten
+	// We print each number on the Screen 
+	// Also we print a special message when we reach number Three
+	//
+	for t=1 to 10
+		? t
+		if t=3 
+			? "+char(34)+"Three"+char(34)+"
+		ok
+	next
+','
+	#
+	# We will learn how to create a Main Menu
+	# Using a While loop and a Switch statement
+	#
+	While True
+	? "+char(34)+""+char(34)+"
+        ? "+char(34)+"Main Menu"+char(34)+"
+	? "+char(34)+"--------------"+char(34)+"
+	? "+char(34)+"(1) Say Hello"+char(34)+"
+	? "+char(34)+"(2) About"+char(34)+"
+	? "+char(34)+"(3) Exit"+char(34)+" 
+	? "+char(34)+""+char(34)+"
+	Give nOption
+        Switch nOption
+        On 1
+                ? "+char(34)+"Hello!"+char(34)+"
+        On 2
+                ? "+char(34)+"Just a simple program!"+char(34)+" 
+        On 3
+		? "+char(34)+"End of program!"+char(34)+"
+                Bye
+        Other
+                ? "+char(34)+"bad option..."+char(34)+"
+        Off
+	End
+','
+	#
+	# Dynamic loop
+	#
+	see "+char(34)+"Start : "+char(34)+" give nStart  
+	see "+char(34)+"End   : "+char(34)+" give nEnd    
+	see "+char(34)+"Step  : "+char(34)+" give nStep   
+	#
+	nStart = 0+nStart
+	nEnd   = 0+nEnd
+	nStep  = 0+nStep
+	For x = nStart to nEnd Step nStep
+	        ? x
+	Next
+','
+	#
+	# Create list contains numbers from 1 to 5
+	aList = 1:5
+	#
+	# Replace list numbers with strings
+	for x in aList
+	        switch x
+        	on 1  x = "+char(34)+"one"+char(34)+"
+	        on 2  x = "+char(34)+"two"+char(34)+"
+        	on 3  x = "+char(34)+"three"+char(34)+"
+	        on 4  x = "+char(34)+"four"+char(34)+"
+        	on 5  x = "+char(34)+"five"+char(34)+"
+	        off
+	next
+	#
+	# Print the list items
+	see aList       
+
+','
+	#
+	# In this example we will create two loops
+	# Then we will use the Exit command 
+	# To exit from these two loops together
+	#
+
+	for x = 1 to 10
+	        for y = 1 to 10
+	                ? "+char(34)+"x="+char(34)+" + x + "+char(34)+" y="+char(34)+" + y 
+	                if x = 3 and y = 5
+				# Exit from 2 loops
+	                        exit 2     
+	                ok
+	        next
+	next
+
+','
+	#
+	# Using the Loop command inside a For Loop
+	#
+	for x = 1 to 10
+	        if x = 3
+	                ? "+char(34)+"Number Three"+char(34)+" 
+	                loop
+	        ok
+	        ? x
+	next
+
+','
+	#
+	# Short-circuit evaluation
+	#
+	x = 0 y = 10
+	#
+	? "+char(34)+"Test 1"+char(34)+"
+	if (x = 0 and nice()) and (y = 10 and nice())
+	        ? "+char(34)+"Great"+char(34)+" 
+	ok
+	#
+	? "+char(34)+"Test 2"+char(34)+"
+	if (x = 1 and nice()) and (y = 10 and nice())
+	        ? "+char(34)+"Great"+char(34)+" 
+	ok
+	#
+	? "+char(34)+"Test 3"+char(34)+"
+	if (x = 0 and nice()) or (y = 10 and nice())
+	        ? "+char(34)+"Great"+char(34)+" 
+	ok
+	#
+	func nice  ? "+char(34)+"Nice"+char(34)+" return 1
+
+',`
+	#
+	# In this example we learn about using functions
+	#
+	first()  second()
+
+	sum(3,5) sum(1000,2000)
+
+	? fact(5)     
+
+	if novalue() = NULL
+        	? "+char(34)+"the NoValue() function doesn't return a value"+char(34)+" 
+	ok
+
+	func first   ? "+char(34)+"message from the first function"+char(34)+" 
+
+	func second  ? "+char(34)+"message from the second function"+char(34)+" 
+
+	func sum x,y 
+		? x+y
+
+	func fact x if x = 0 return 1 else return x * fact(x-1) ok
+
+	func novalue
+`,"+char(34)+"
+	#
+	# Variables Scope Example
+	#
+	# x is a Global variable.
+	x = 10                          
+
+	func main
+		# t is a Local variable
+	        for t = 1 to 10         
+        	        mycounter()     
+	        next
+
+	func mycounter
+		# Print the global variable value
+	        ? x 
+		# Decrement
+	        x--                     
+"+char(34)+"]"
+			],
+			[
+				"interactionid",
+				12
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_CT_TEMPLATES_IP_VALUECODE = ['
+	//
+	// Hello
+	// Welcome to the Programming World!
+	// In this lesson we will create our first program
+	// From the Components Browser and using the (Print Text) Component 
+	// We will print a "+char(34)+"Hello, World!"+char(34)+" message on the Screen
+	//
+	? "+char(34)+"Hello, World!"+char(34)+"
+','
+	//
+	// In the next steps we asks the User to enter his/her name
+	// Then we print the "+char(34)+"Hello"+char(34)+" Message then the User Name
+	//
+	// Using the Components Browser
+	// To print messages we will use the (Print Text) component
+	// To get input from the User we will use the (Get Input) component
+	//
+	? "+char(34)+"Enter your name?"+char(34)+" 
+	give cName 
+	? "+char(34)+"Hello "+char(34)+" + cName
+','
+	#
+	# x is a string
+	x = "+char(34)+"Hello"+char(34)+" 
+	? x 
+	#
+	# x is a number (int)
+	x = 5                   
+	? x 
+	# x is a number (double)
+	x = 1.2                 
+	? x 
+	#
+	# x is a list
+	x = [1,2,3,4]           
+	# print list items
+	? x
+	#
+	# x is a string contains date                   
+	x = date()              
+	? x 
+	#
+	# x is a string contains time
+	x = time()              
+	? x 
+	# x is a number (logical value = 1)
+	x = true                
+	? x 
+	#
+	# x is a number (logical value = 0)
+	x = false               
+	? x 
+','
+	#
+	# We can use the assignment operator ‘=’ to copy variables.
+	# We can do that to copy values like strings & numbers. 
+	# Also, we can copy complete lists & objects. 
+	# The assignment operator will do a complete duplication for us. 
+	# This operation called Deep Copy
+	#
+	list = [1,2,3,"+char(34)+"four"+char(34)+","+char(34)+"five"+char(34)+"]
+	list2 = list
+	list = []
+	# print the first list - no items to print
+	? list        
+	#
+	? "+char(34)+"********"+char(34)+" 
+	#
+	# print the second list - contains 5 items
+	? list2       
+','
+	#
+	# The language can automatically convert between numbers and strings.
+	#
+	# NUMBER + STRING is NUMBER
+	# STRING + NUMBER is STRING
+	#
+	# The same operator "+char(34)+"+"+char(34)+" can be used as an arithmetic operator 
+	# Or for string concatenation.
+ 	#
+	# x is a number
+	x = 10                  
+	#
+	# y is a string
+	y = "+char(34)+"20"+char(34)+"       
+	#
+	# sum is a number (y will be converted to a number) 
+	sum = x + y          
+	#
+	# Msg is a string (sum will be converted to a string)   
+	Msg = "+char(34)+"Sum = "+char(34)+" + sum    
+	? Msg 
+',"+char(34)+"
+	# 
+	# Example about operators precedence
+	#
+	# The output will be : 23
+	See 3+5*4       
+"+char(34)+",'
+	//
+	// In the next steps we create a loop that count from one to ten
+	// We print each number on the Screen 
+	// Also we print a special message when we reach number Three
+	//
+	for t=1 to 10
+		? t
+		if t=3 
+			? "+char(34)+"Three"+char(34)+"
+		ok
+	next
+','
+	#
+	# We will learn how to create a Main Menu
+	# Using a While loop and a Switch statement
+	#
+	While True
+	? "+char(34)+""+char(34)+"
+        ? "+char(34)+"Main Menu"+char(34)+"
+	? "+char(34)+"--------------"+char(34)+"
+	? "+char(34)+"(1) Say Hello"+char(34)+"
+	? "+char(34)+"(2) About"+char(34)+"
+	? "+char(34)+"(3) Exit"+char(34)+" 
+	? "+char(34)+""+char(34)+"
+	Give nOption
+        Switch nOption
+        On 1
+                ? "+char(34)+"Hello!"+char(34)+"
+        On 2
+                ? "+char(34)+"Just a simple program!"+char(34)+" 
+        On 3
+		? "+char(34)+"End of program!"+char(34)+"
+                Bye
+        Other
+                ? "+char(34)+"bad option..."+char(34)+"
+        Off
+	End
+','
+	#
+	# Dynamic loop
+	#
+	see "+char(34)+"Start : "+char(34)+" give nStart  
+	see "+char(34)+"End   : "+char(34)+" give nEnd    
+	see "+char(34)+"Step  : "+char(34)+" give nStep   
+	#
+	nStart = 0+nStart
+	nEnd   = 0+nEnd
+	nStep  = 0+nStep
+	For x = nStart to nEnd Step nStep
+	        ? x
+	Next
+','
+	#
+	# Create list contains numbers from 1 to 5
+	aList = 1:5
+	#
+	# Replace list numbers with strings
+	for x in aList
+	        switch x
+        	on 1  x = "+char(34)+"one"+char(34)+"
+	        on 2  x = "+char(34)+"two"+char(34)+"
+        	on 3  x = "+char(34)+"three"+char(34)+"
+	        on 4  x = "+char(34)+"four"+char(34)+"
+        	on 5  x = "+char(34)+"five"+char(34)+"
+	        off
+	next
+	#
+	# Print the list items
+	see aList       
+
+','
+	#
+	# In this example we will create two loops
+	# Then we will use the Exit command 
+	# To exit from these two loops together
+	#
+
+	for x = 1 to 10
+	        for y = 1 to 10
+	                ? "+char(34)+"x="+char(34)+" + x + "+char(34)+" y="+char(34)+" + y 
+	                if x = 3 and y = 5
+				# Exit from 2 loops
+	                        exit 2     
+	                ok
+	        next
+	next
+
+','
+	#
+	# Using the Loop command inside a For Loop
+	#
+	for x = 1 to 10
+	        if x = 3
+	                ? "+char(34)+"Number Three"+char(34)+" 
+	                loop
+	        ok
+	        ? x
+	next
+
+','
+	#
+	# Short-circuit evaluation
+	#
+	x = 0 y = 10
+	#
+	? "+char(34)+"Test 1"+char(34)+"
+	if (x = 0 and nice()) and (y = 10 and nice())
+	        ? "+char(34)+"Great"+char(34)+" 
+	ok
+	#
+	? "+char(34)+"Test 2"+char(34)+"
+	if (x = 1 and nice()) and (y = 10 and nice())
+	        ? "+char(34)+"Great"+char(34)+" 
+	ok
+	#
+	? "+char(34)+"Test 3"+char(34)+"
+	if (x = 0 and nice()) or (y = 10 and nice())
+	        ? "+char(34)+"Great"+char(34)+" 
+	ok
+	#
+	func nice  ? "+char(34)+"Nice"+char(34)+" return 1
+
+',`
+	#
+	# In this example we learn about using functions
+	#
+	first()  second()
+
+	sum(3,5) sum(1000,2000)
+
+	? fact(5)     
+
+	if novalue() = NULL
+        	? "+char(34)+"the NoValue() function doesn't return a value"+char(34)+" 
+	ok
+
+	func first   ? "+char(34)+"message from the first function"+char(34)+" 
+
+	func second  ? "+char(34)+"message from the second function"+char(34)+" 
+
+	func sum x,y 
+		? x+y
+
+	func fact x if x = 0 return 1 else return x * fact(x-1) ok
+
+	func novalue
+`,"+char(34)+"
+	#
+	# Variables Scope Example
+	#
+	# x is a Global variable.
+	x = 10                          
+
+	func main
+		# t is a Local variable
+	        for t = 1 to 10         
+        	        mycounter()     
+	        next
+
+	func mycounter
+		# Print the global variable value
+	        ? x 
+		# Decrement
+	        x--                     
+"+char(34)+"]"
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"07/02/2025",
+		"16:57:53",
+		""
+	],
+	[
+		2,
+		1,
+		"comment_text",
+		"07/02/2025",
+		"16:57:53",
+		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		3,
+		1,
+		"comment_text",
+		"07/02/2025",
+		"16:57:53",
+		"value;;_RV_;;**	Project : Programming Without Coding Technology (PWCT) Version 2.0;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		4,
+		1,
+		"comment_text",
+		"07/02/2025",
+		"16:57:53",
+		"value;;_RV_;;**	File Purpose :  templates Component;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		5,
+		1,
+		"comment_text",
+		"07/02/2025",
+		"16:57:53",
+		"value;;_RV_;;**	Date : 2021.08.10;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		6,
+		1,
+		"comment_text",
+		"07/02/2025",
+		"16:57:53",
+		"value;;_RV_;;**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		7,
+		1,
+		"comment_text",
+		"07/02/2025",
+		"16:57:53",
+		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		8,
+		1,
+		"assignment",
+		"07/02/2025",
+		"16:57:53",
+		"leftside;;_RV_;;T_CT_TEMPLATES_IP_TITLE;;_RV_;;rightside;;_RV_;;"+char(34)+"Quick Start Component"+char(34)+";;_RV_;;"
+	],
+	[
+		9,
+		1,
+		"assignment",
+		"07/02/2025",
+		"16:57:53",
+		"leftside;;_RV_;;T_CT_TEMPLATES_IP_VALUE;;_RV_;;rightside;;_RV_;;"+char(34)+"Template"+char(34)+";;_RV_;;"
+	],
+	[
+		10,
+		1,
+		"assignment",
+		"07/02/2025",
+		"16:57:53",
+		"leftside;;_RV_;;T_CT_TEMPLATES_IP_VALUE2;;_RV_;;rightside;;_RV_;;"+char(34)+"No Comments"+char(34)+";;_RV_;;"
+	],
+	[
+		11,
+		1,
+		"assignment",
+		"07/02/2025",
+		"16:57:53",
+		"leftside;;_RV_;;T_CT_TEMPLATES_IP_VALUELIST;;_RV_;;rightside;;_RV_;;["+char(34)+"Hello World"+char(34)+","+char(34)+"Say Hello"+char(34)+","+char(34)+"Variables"+char(34)+","+char(34)+"Deep Copy"+char(34)+","+char(34)+"Implicit Conversion"+char(34)+","+char(34)+"Operators Precedence"+char(34)+","+char(34)+"Loop and Condition"+char(34)+","+char(34)+"Main Menu"+char(34)+","+char(34)+"Dynamic Loop"+char(34)+","+char(34)+"Modify lists using Loop"+char(34)+","+char(34)+"Exit from two loops"+char(34)+","+char(34)+"The Loop Command"+char(34)+","+char(34)+"Short-circuit evaluation"+char(34)+","+char(34)+"Using Functions"+char(34)+","+char(34)+"Variables Scope"+char(34)+"];;_RV_;;"
+	],
+	[
+		12,
+		1,
+		"assignment",
+		"07/02/2025",
+		"16:57:53",
+		"leftside;;_RV_;;T_CT_TEMPLATES_IP_VALUECODE;;_RV_;;rightside;;_RV_;;['
+	//
+	// Hello
+	// Welcome to the Programming World!
+	// In this lesson we will create our first program
+	// From the Components Browser and using the (Print Text) Component 
+	// We will print a "+char(34)+"Hello, World!"+char(34)+" message on the Screen
+	//
+	? "+char(34)+"Hello, World!"+char(34)+"
+','
+	//
+	// In the next steps we asks the User to enter his/her name
+	// Then we print the "+char(34)+"Hello"+char(34)+" Message then the User Name
+	//
+	// Using the Components Browser
+	// To print messages we will use the (Print Text) component
+	// To get input from the User we will use the (Get Input) component
+	//
+	? "+char(34)+"Enter your name?"+char(34)+" 
+	give cName 
+	? "+char(34)+"Hello "+char(34)+" + cName
+','
+	#
+	# x is a string
+	x = "+char(34)+"Hello"+char(34)+" 
+	? x 
+	#
+	# x is a number (int)
+	x = 5                   
+	? x 
+	# x is a number (double)
+	x = 1.2                 
+	? x 
+	#
+	# x is a list
+	x = [1,2,3,4]           
+	# print list items
+	? x
+	#
+	# x is a string contains date                   
+	x = date()              
+	? x 
+	#
+	# x is a string contains time
+	x = time()              
+	? x 
+	# x is a number (logical value = 1)
+	x = true                
+	? x 
+	#
+	# x is a number (logical value = 0)
+	x = false               
+	? x 
+','
+	#
+	# We can use the assignment operator ‘=’ to copy variables.
+	# We can do that to copy values like strings & numbers. 
+	# Also, we can copy complete lists & objects. 
+	# The assignment operator will do a complete duplication for us. 
+	# This operation called Deep Copy
+	#
+	list = [1,2,3,"+char(34)+"four"+char(34)+","+char(34)+"five"+char(34)+"]
+	list2 = list
+	list = []
+	# print the first list - no items to print
+	? list        
+	#
+	? "+char(34)+"********"+char(34)+" 
+	#
+	# print the second list - contains 5 items
+	? list2       
+','
+	#
+	# The language can automatically convert between numbers and strings.
+	#
+	# NUMBER + STRING is NUMBER
+	# STRING + NUMBER is STRING
+	#
+	# The same operator "+char(34)+"+"+char(34)+" can be used as an arithmetic operator 
+	# Or for string concatenation.
+ 	#
+	# x is a number
+	x = 10                  
+	#
+	# y is a string
+	y = "+char(34)+"20"+char(34)+"       
+	#
+	# sum is a number (y will be converted to a number) 
+	sum = x + y          
+	#
+	# Msg is a string (sum will be converted to a string)   
+	Msg = "+char(34)+"Sum = "+char(34)+" + sum    
+	? Msg 
+',"+char(34)+"
+	# 
+	# Example about operators precedence
+	#
+	# The output will be : 23
+	See 3+5*4       
+"+char(34)+",'
+	//
+	// In the next steps we create a loop that count from one to ten
+	// We print each number on the Screen 
+	// Also we print a special message when we reach number Three
+	//
+	for t=1 to 10
+		? t
+		if t=3 
+			? "+char(34)+"Three"+char(34)+"
+		ok
+	next
+','
+	#
+	# We will learn how to create a Main Menu
+	# Using a While loop and a Switch statement
+	#
+	While True
+	? "+char(34)+""+char(34)+"
+        ? "+char(34)+"Main Menu"+char(34)+"
+	? "+char(34)+"--------------"+char(34)+"
+	? "+char(34)+"(1) Say Hello"+char(34)+"
+	? "+char(34)+"(2) About"+char(34)+"
+	? "+char(34)+"(3) Exit"+char(34)+" 
+	? "+char(34)+""+char(34)+"
+	Give nOption
+        Switch nOption
+        On 1
+                ? "+char(34)+"Hello!"+char(34)+"
+        On 2
+                ? "+char(34)+"Just a simple program!"+char(34)+" 
+        On 3
+		? "+char(34)+"End of program!"+char(34)+"
+                Bye
+        Other
+                ? "+char(34)+"bad option..."+char(34)+"
+        Off
+	End
+','
+	#
+	# Dynamic loop
+	#
+	see "+char(34)+"Start : "+char(34)+" give nStart  
+	see "+char(34)+"End   : "+char(34)+" give nEnd    
+	see "+char(34)+"Step  : "+char(34)+" give nStep   
+	#
+	nStart = 0+nStart
+	nEnd   = 0+nEnd
+	nStep  = 0+nStep
+	For x = nStart to nEnd Step nStep
+	        ? x
+	Next
+','
+	#
+	# Create list contains numbers from 1 to 5
+	aList = 1:5
+	#
+	# Replace list numbers with strings
+	for x in aList
+	        switch x
+        	on 1  x = "+char(34)+"one"+char(34)+"
+	        on 2  x = "+char(34)+"two"+char(34)+"
+        	on 3  x = "+char(34)+"three"+char(34)+"
+	        on 4  x = "+char(34)+"four"+char(34)+"
+        	on 5  x = "+char(34)+"five"+char(34)+"
+	        off
+	next
+	#
+	# Print the list items
+	see aList       
+
+','
+	#
+	# In this example we will create two loops
+	# Then we will use the Exit command 
+	# To exit from these two loops together
+	#
+
+	for x = 1 to 10
+	        for y = 1 to 10
+	                ? "+char(34)+"x="+char(34)+" + x + "+char(34)+" y="+char(34)+" + y 
+	                if x = 3 and y = 5
+				# Exit from 2 loops
+	                        exit 2     
+	                ok
+	        next
+	next
+
+','
+	#
+	# Using the Loop command inside a For Loop
+	#
+	for x = 1 to 10
+	        if x = 3
+	                ? "+char(34)+"Number Three"+char(34)+" 
+	                loop
+	        ok
+	        ? x
+	next
+
+','
+	#
+	# Short-circuit evaluation
+	#
+	x = 0 y = 10
+	#
+	? "+char(34)+"Test 1"+char(34)+"
+	if (x = 0 and nice()) and (y = 10 and nice())
+	        ? "+char(34)+"Great"+char(34)+" 
+	ok
+	#
+	? "+char(34)+"Test 2"+char(34)+"
+	if (x = 1 and nice()) and (y = 10 and nice())
+	        ? "+char(34)+"Great"+char(34)+" 
+	ok
+	#
+	? "+char(34)+"Test 3"+char(34)+"
+	if (x = 0 and nice()) or (y = 10 and nice())
+	        ? "+char(34)+"Great"+char(34)+" 
+	ok
+	#
+	func nice  ? "+char(34)+"Nice"+char(34)+" return 1
+
+',`
+	#
+	# In this example we learn about using functions
+	#
+	first()  second()
+
+	sum(3,5) sum(1000,2000)
+
+	? fact(5)     
+
+	if novalue() = NULL
+        	? "+char(34)+"the NoValue() function doesn't return a value"+char(34)+" 
+	ok
+
+	func first   ? "+char(34)+"message from the first function"+char(34)+" 
+
+	func second  ? "+char(34)+"message from the second function"+char(34)+" 
+
+	func sum x,y 
+		? x+y
+
+	func fact x if x = 0 return 1 else return x * fact(x-1) ok
+
+	func novalue
+`,"+char(34)+"
+	#
+	# Variables Scope Example
+	#
+	# x is a Global variable.
+	x = 10                          
+
+	func main
+		# t is a Local variable
+	        for t = 1 to 10         
+        	        mycounter()     
+	        next
+
+	func mycounter
+		# Print the global variable value
+	        ? x 
+		# Decrement
+	        x--                     
+"+char(34)+"];;_RV_;;"
+	]
+]
+
+# End of Visual Source File

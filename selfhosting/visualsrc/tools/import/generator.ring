@@ -1,0 +1,397 @@
+#/*
+#**	Project : Programming Without Coding Technology (PWCT) Version 2.0
+#**	File Purpose :  Generator
+#**	Date : 2020.02.15
+#**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
+#*/
+class Generator
+	aParseTree = []
+	oPWCT = new VSFGenerator
+	{
+		cFileName = "output/app.pwct"
+	}
+	func setFileName cFile { 
+		oPWCT.cFileName = cFile
+	} 
+	func SetParseTree aTree { 
+		aParseTree = aTree
+	} 
+	func Start  { 
+		Optimization()
+		for aCommand in aParseTree step 1 { 
+			ProcessCommand(aCommand)
+		} 
+	} 
+	func WriteVisualSourceFile  { 
+		oPWCT.WriteVisualSourceFile()
+	} 
+	func GetStepsTreeTable  { 
+		return oPWCT. GetStepsTreeTable() 
+	} 
+	func GetInteractionsTable  { 
+		return oPWCT. GetInteractionsTable() 
+	} 
+	func GetStepsID  { 
+		return oPWCT. GetStepsID() 
+	} 
+	func GetInteractionsID  { 
+		return oPWCT. GetInteractionsID() 
+	} 
+	func ProcessCommand aCommand { 
+		oPWCT {
+			switch aCommand[:Command] { 
+				case : load
+					AddLoadLiteral(aCommand[:Expression],aCommand[:Type])
+				case : import
+					AddImportValue(aCommand[:Value])
+				case : see
+					AddPrintExpression(aCommand[:Expression],False)
+				case :QuestionMark
+					AddPrintExpression(aCommand[:Expression],True)
+				case : give
+					AddGiveIdentifier(aCommand[:Identifier])
+				case :BlockEnd
+					popParent()
+				case : if
+					AddIfExpression(aCommand[:Expression])
+				case : but
+					AddButExpression(aCommand[:Expression])
+				case : else
+					AddElse()
+				case : switch
+					AddSwitchVariable(aCommand[:Variable])
+				case :SwitchCase
+					AddSwitchCaseValue(aCommand[:Value])
+				case :SwitchOther
+					AddSwitchOther()
+				case : while
+					AddWhileExpression(aCommand[:Expression])
+				case : for
+					AddForLoop(aCommand[:Start],aCommand[: to],aCommand[: step])
+				case :ForIn
+					AddForInLoop(aCommand[:Variable],aCommand[: in],aCommand[: step])
+				case :DoAgain
+					AddDoAgainExpression(aCommand[:Expression])
+				case : exit
+					AddExitValue(aCommand[:Value])
+				case : loop
+					AddLoopValue(aCommand[:Value])
+				case : bye
+					AddBye(aCommand[:Value])
+				case : try
+					AddTry()
+				case : catch
+					AddCatch()
+				case : func
+					AddFuncParameters(aCommand[: function],aCommand[:Parameters])
+				case : return
+					AddReturnExpression(aCommand[:Expression])
+				case : package
+					AddPackage(aCommand[:PackageName])
+				case : class
+					AddDefineClass(aCommand[:ClassName],aCommand[:ParentClassName])
+				case : private
+					AddPrivate()
+				case :Expression
+					AddExpressionCommand(aCommand[:Expression])
+				case :Assignment
+					AddAssignment(aCommand[:LeftSide],aCommand[:RightSide])
+				case :UsingBraces
+					AddUsingBraces()
+				case :AccessObject
+					AddAccessObject(aCommand[:Expression])
+				case :NestedFunc
+					AddNestedFunc(aCommand[:Variable],aCommand[:Parameters])
+				case :NewObj
+					AddNewObj(aCommand[:Variable],aCommand[:ClassName],aCommand[:cInitParameters],aCommand[:lInit],aCommand[:lBraces])
+				case :CallFunction
+					AddCallFunction(aCommand[: function],aCommand[:Parameters])
+				case :CallMethod
+					AddCallMethod(aCommand[:Object],aCommand[:Method],aCommand[:Parameters])
+				case :Comment
+					aComments = str2list(aCommand[:Comment])
+					for cComment in aComments step 1 { 
+						if right(cComment,1) = char(10) { 
+							cComment = left(cComment,len(cComment)-1)
+						} 
+						if right(cComment,1) = char(13) { 
+							cComment = left(cComment,len(cComment)-1)
+						} 
+						cComment = Trim(cComment)
+						if left(cComment,1) = "#" { 
+							cComment = substr(cComment,2)
+							elseif left(cComment,2) = "//"
+								cComment = substr(cComment,3)
+						} 
+						AddCommentAddText(cComment)
+					} 
+				case :OpenExpressionCallFunction
+					AddOpenExpressionCallFunction(aCommand[:Expression])
+			} 
+		}
+	} 
+	func Optimization  { 
+		nMax = len(aParseTree)
+		#The First Pass (We check ')' that exist alone & We check braces '{' after Expressions)
+		for t = 2 to nMax step 1 { 
+			aPrevCommand = aParseTree[t-1]
+			aCommand = aParseTree[t]
+			#merge ')' that exist alone with previous expression
+			#Also merge separated parameters like ',180)' with previous expression
+			switch aCommand[:Command] { 
+				case :Expression
+					if aPrevCommand[:Command] = :Expression { 
+						if right(trim(aCommand[:Expression]),1) = ")" AND  NOT substr(aCommand[:Expression],"(") { 
+							aParseTree[t-1][:Expression] += aCommand[:Expression]
+							del(aParseTree,t)
+							t--
+							nMax--
+							loop 1
+						} 
+					} 
+					#When we have braces '{' after expression - We will analysis the expression
+				case :UsingBraces
+					if aPrevCommand[:Command] = :Expression { 
+						cType = ExpressionType(aPrevCommand[:Expression])
+						lDelete = False
+						#We have something like : myobj { }
+						switch cType { 
+							case "word"
+								aParseTree[t-1][:Command] = :AccessObject
+								lDelete = True
+								#We have something like : myfunc = func x,y
+							case "= func"
+								#Get the function name (variable) and the function parameters
+								aParseTree[t-1][:Command] = :nestedfunc
+								cExpr = aParseTree[t-1][:Expression]
+								nEqualPos = substr(cExpr,"=")
+								cExpr2 = substr(cExpr,nEqualPos+1)
+								nFuncPos = substr(lower(cExpr2),"func")
+								cVariable = left(cExpr,nEqualPos-1)
+								cPara = substr(cExpr2,nFuncPos+4)
+								aParseTree[t-1][:Variable] = trim(cVariable)
+								aParseTree[t-1][:Parameters] = trim(cPara)
+								lDelete = True
+								#We have something like : myobj = new myclass
+							case "= new"
+								#Get the Object Name and the Class Name
+								aParseTree[t-1][:Command] = :newobj
+								cExpr = aParseTree[t-1][:Expression]
+								nEqualPos = substr(cExpr,"=")
+								cExpr2 = substr(cExpr,nEqualPos+1)
+								nNewPos = substr(lower(cExpr2),"new")
+								cVariable = left(cExpr,nEqualPos-1)
+								cClassName = substr(cExpr2,nNewPos+3)
+								aParseTree[t-1][:Variable] = trim(cVariable)
+								aParseTree[t-1][:ClassName] = trim(cClassName)
+								aParseTree[t-1][:lInit] = False
+								aParseTree[t-1][:lBraces] = True
+								lDelete = True
+								#We have something like : myobj = new myclass(value)
+							case "= new init"
+								#Get the Object Name, the Class Name and the Init() method parameters
+								aParseTree[t-1][:Command] = :newobj
+								cExpr = aParseTree[t-1][:Expression]
+								nEqualPos = substr(cExpr,"=")
+								cExpr2 = substr(cExpr,nEqualPos+1)
+								nNewPos = substr(lower(cExpr2),"new")
+								cVariable = left(cExpr,nEqualPos-1)
+								cClassName = substr(cExpr2,nNewPos+3)
+								cInit = SubStr(cClassName,substr(cClassName,"(")+1)
+								cInit = left(cInit,len(cInit)-1)
+								cClassName = left(cClassName,substr(cClassName,"(")-1)
+								aParseTree[t-1][:Variable] = trim(cVariable)
+								aParseTree[t-1][:ClassName] = trim(cClassName)
+								aParseTree[t-1][:lInit] = True
+								aParseTree[t-1][:cInitParameters] = cInit
+								aParseTree[t-1][:lBraces] = True
+								lDelete = True
+								#We have something like : new myclass
+							case "new"
+								#Get the Class Name
+								aParseTree[t-1][:Command] = :newobj
+								cExpr = aParseTree[t-1][:Expression]
+								nNewPos = substr(lower(cExpr),"new")
+								cClassName = substr(cExpr,nNewPos+3)
+								aParseTree[t-1][:ClassName] = trim(cClassName)
+								aParseTree[t-1][:lInit] = False
+								aParseTree[t-1][:lBraces] = True
+								lDelete = True
+						} 
+						if lDelete { 
+							del(aParseTree,t)
+							t--
+							nMax--
+						} 
+					} 
+			} 
+		} 
+		#Second Pass (We check Expressions that Contains New Objects)
+		nMax = len(aParseTree)
+		for t = 1 to nMax step 1 { 
+			if aParseTree[t][:Command] = :Expression { 
+				if ExpressionIsCallFunction(t) OR ExpressionIsCallMethod(t) { 
+					loop 1
+				} 
+				cType = ExpressionType(aParseTree[t][:Expression])
+				#We have something like : myobj = new myclass
+				switch cType { 
+					case "= new"
+						#Get the Object Name and the Class Name
+						aParseTree[t][:Command] = :newobj
+						cExpr = aParseTree[t][:Expression]
+						nEqualPos = substr(cExpr,"=")
+						cExpr2 = substr(cExpr,nEqualPos+1)
+						nNewPos = substr(lower(cExpr2),"new")
+						cVariable = left(cExpr,nEqualPos-1)
+						cClassName = substr(cExpr2,nNewPos+3)
+						aParseTree[t][:Variable] = trim(cVariable)
+						aParseTree[t][:ClassName] = trim(cClassName)
+						aParseTree[t][:lInit] = False
+						aParseTree[t][:lBraces] = False
+						#We have something like : myobj = new myclass(value)
+					case "= new init"
+						#Get the Object Name, the Class Name and the Init() method parameters
+						aParseTree[t][:Command] = :newobj
+						cExpr = aParseTree[t][:Expression]
+						nEqualPos = substr(cExpr,"=")
+						cExpr2 = substr(cExpr,nEqualPos+1)
+						nNewPos = substr(lower(cExpr2),"new")
+						cVariable = left(cExpr,nEqualPos-1)
+						cClassName = substr(cExpr2,nNewPos+3)
+						cInit = SubStr(cClassName,substr(cClassName,"(")+1)
+						cInit = left(cInit,len(cInit)-1)
+						cClassName = left(cClassName,substr(cClassName,"(")-1)
+						aParseTree[t][:Variable] = trim(cVariable)
+						aParseTree[t][:ClassName] = trim(cClassName)
+						aParseTree[t][:lInit] = True
+						aParseTree[t][:cInitParameters] = cInit
+						aParseTree[t][:lBraces] = False
+						#We have something like : new myclass
+					case "new"
+						#Get the Class Name
+						aParseTree[t][:Command] = :newobj
+						cExpr = aParseTree[t][:Expression]
+						nNewPos = substr(lower(cExpr),"new")
+						cClassName = substr(cExpr,nNewPos+3)
+						aParseTree[t][:ClassName] = trim(cClassName)
+						aParseTree[t][:lInit] = False
+						aParseTree[t][:lBraces] = False
+				} 
+				elseif aParseTree[t][:Command] = :AccessObject
+					cExpr = aParseTree[t][:Expression]
+					nPos = substr(cExpr,"( new")
+					if nPos { 
+						#Copy the Current Command
+						Insert(aParseTree,t,aParseTree[t])
+						#Change the current command to Open Expression (Function Call)
+						aParseTree[t][:Command] = :OpenExpressionCallFunction
+						aParseTree[t][:Expression] = left(cExpr,nPos-1)
+						#Change the Next Command (Access Object)
+						aParseTree[t+1][:Expression] = substr(cExpr,nPos+2)
+						#Change the extra ')' to (Block End) command
+						for t2 = 1 to nMax step 1 { 
+							if aParseTree[t2][:Command] = :Expression { 
+								if trim(aParseTree[t2][:Expression]) = ")" { 
+									aParseTree[t2][:Command] = :BlockEnd
+									exit 1
+								} 
+							} 
+						} 
+					} 
+			} 
+		} 
+	} 
+	func ExpressionType cExpr { 
+		cExpr = lower(cExpr)
+		cType = "word"
+		if substr(cExpr,"= [") OR substr(cExpr,",:") { 
+			return cType
+		} 
+		if substr(cExpr,"=") { 
+			if substr(cExpr,"new ") { 
+				cType = "= new"
+				if substr(cExpr,"(") AND substr(cExpr,")") { 
+					cType = "= new init"
+				} 
+			} 
+			if substr(cExpr,"func ") { 
+				cType = "= func"
+			} 
+			else
+				nPos = substr(cExpr,"new ")
+				if nPos { 
+					if trim(left(cExpr,nPos-1)) = NULL { 
+						cType = "new"
+						if substr(cExpr,"(") AND substr(cExpr,")") { 
+							cType = "new init"
+						} 
+					} 
+				} 
+				nPos = substr(cExpr,"func ")
+				if nPos { 
+					if trim(left(cExpr,nPos-1)) = NULL { 
+						cType = "func"
+					} 
+				} 
+		} 
+		#Check if the NEW is used inside a literal
+		if cType = "= new" OR cType = "= new init" { 
+			nPos = substr(cExpr,"new ")
+			cSub = left(cExpr,nPos)
+			if substr(cSub,'"') OR substr(cSub,"'") OR substr(cSub,"`") { 
+				cType = "word"
+			} 
+		} 
+		return cType
+	} 
+	func ExpressionIsCallFunction nIndex { 
+		cExp = aParseTree[nIndex][:Expression]
+		exp = new qregularexpression()
+		{
+			setPattern("^(\w+)\((.*)\)$")
+			match = match(cExp,0,0,0)
+		}
+		if match.hasmatch() { 
+			cFunc = match.captured(1)
+			cPara = match.captured(2)
+			if endFuncCallAtStart(cPara) { 
+				return 
+			} 
+			aParseTree[nIndex][:Command] = :CallFunction
+			aParseTree[nIndex][: function] = cFunc
+			aParseTree[nIndex][:Parameters] = cPara
+			return True
+		} 
+		return False
+	} 
+	func ExpressionIsCallMethod nIndex { 
+		cExp = aParseTree[nIndex][:Expression]
+		exp = new qregularexpression()
+		{
+			setPattern("^(\w+)\.(\w+)\((.*)\)$")
+			match = match(cExp,0,0,0)
+		}
+		if match.hasmatch() { 
+			cObject = match.captured(1)
+			cMethod = match.captured(2)
+			cPara = match.captured(3)
+			if endFuncCallAtStart(cPara) { 
+				return 
+			} 
+			aParseTree[nIndex][:Command] = :CallMethod
+			aParseTree[nIndex][:Object] = cObject
+			aParseTree[nIndex][:Method] = cMethod
+			aParseTree[nIndex][:Parameters] = cPara
+			return True
+		} 
+		return False
+	} 
+	func endFuncCallAtStart cPara { 
+		#This is not a real function call
+		#This happens in cases like parent().test()
+		#where cPara will be ).test(
+		cPara = trim(cPara)
+		return len( cPara ) >1  and left( cPara,1 ) =")" 
+	} 
+private

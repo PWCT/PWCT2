@@ -1,0 +1,331 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'english'
+nStepsID                 = 2		
+nInteractionsID          = 2
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_RING2PWCT_BEFORESCANNER</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;
+ChangeRingKeyword&nbsp;again		كرر	
+ChangeRingKeyword&nbsp;and		و
+ChangeRingKeyword&nbsp;but		لكن
+ChangeRingKeyword&nbsp;bye		سلام
+ChangeRingKeyword&nbsp;call		استدعاء
+ChangeRingKeyword&nbsp;case		في_حالة
+ChangeRingKeyword&nbsp;catch		امسك
+ChangeRingKeyword&nbsp;class		فئة
+ChangeRingKeyword&nbsp;def		عرف
+ChangeRingKeyword&nbsp;do		نفذ
+ChangeRingKeyword&nbsp;done		نهاية_جرب
+ChangeRingKeyword&nbsp;else		عدا_ذلك
+ChangeRingKeyword&nbsp;elseif	في_حالة
+ChangeRingKeyword&nbsp;end		انتهي
+ChangeRingKeyword&nbsp;exit		خروج
+ChangeRingKeyword&nbsp;for		من
+ChangeRingKeyword&nbsp;foreach	لكل_من
+ChangeRingKeyword&nbsp;from		يرث
+ChangeRingKeyword&nbsp;func		دالة
+ChangeRingKeyword&nbsp;get		احصل_علي
+ChangeRingKeyword&nbsp;give		ادخال
+ChangeRingKeyword&nbsp;if		اذا
+ChangeRingKeyword&nbsp;import	تحميل_حقيبة
+ChangeRingKeyword&nbsp;in		في
+ChangeRingKeyword&nbsp;load		حمل
+ChangeRingKeyword&nbsp;loop		لف
+ChangeRingKeyword&nbsp;new		كائن
+ChangeRingKeyword&nbsp;next		تالي
+ChangeRingKeyword&nbsp;not		نفي
+ChangeRingKeyword&nbsp;off		نهاية
+ChangeRingKeyword&nbsp;ok		حسنا
+ChangeRingKeyword&nbsp;on		عندما
+ChangeRingKeyword&nbsp;or		او
+ChangeRingKeyword&nbsp;other		عدا_ذلك
+ChangeRingKeyword&nbsp;package	حقيبة
+ChangeRingKeyword&nbsp;private	خاص
+ChangeRingKeyword&nbsp;put		ضع
+ChangeRingKeyword&nbsp;return	رجع
+ChangeRingKeyword&nbsp;see		اطبع
+ChangeRingKeyword&nbsp;step		خطوة
+ChangeRingKeyword&nbsp;switch	مفتاح
+ChangeRingKeyword&nbsp;to		الي
+ChangeRingKeyword&nbsp;try		جرب
+ChangeRingKeyword&nbsp;while		طالما
+ChangeRingKeyword&nbsp;endfunc	نهاية_دالة
+ChangeRingKeyword&nbsp;endclass	نهاية_فئة
+ChangeRingKeyword&nbsp;endpackage	نهاية_حقيبة
+ChangeRingKeyword&nbsp;endif		نهاية_لو
+ChangeRingKeyword&nbsp;endfor	نهاية_من
+ChangeRingKeyword&nbsp;endwhile	نهاية_طالما
+ChangeRingKeyword&nbsp;endswitch	نهاية_مفتاح
+ChangeRingKeyword&nbsp;endtry	نهاية_جرب
+ChangeRingKeyword&nbsp;function	دالة
+ChangeRingKeyword&nbsp;endfunction	نهاية_دالة
+ChangeRingKeyword&nbsp;break		خروج
+ChangeRingKeyword&nbsp;continue	استمر
+&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_RING2PWCT_BEFORESCANNER = "+char(34)+"
+ChangeRingKeyword again		كرر	
+ChangeRingKeyword and		و
+ChangeRingKeyword but		لكن
+ChangeRingKeyword bye		سلام
+ChangeRingKeyword call		استدعاء
+ChangeRingKeyword case		في_حالة
+ChangeRingKeyword catch		امسك
+ChangeRingKeyword class		فئة
+ChangeRingKeyword def		عرف
+ChangeRingKeyword do		نفذ
+ChangeRingKeyword done		نهاية_جرب
+ChangeRingKeyword else		عدا_ذلك
+ChangeRingKeyword elseif	في_حالة
+ChangeRingKeyword end		انتهي
+ChangeRingKeyword exit		خروج
+ChangeRingKeyword for		من
+ChangeRingKeyword foreach	لكل_من
+ChangeRingKeyword from		يرث
+ChangeRingKeyword func		دالة
+ChangeRingKeyword get		احصل_علي
+ChangeRingKeyword give		ادخال
+ChangeRingKeyword if		اذا
+ChangeRingKeyword import	تحميل_حقيبة
+ChangeRingKeyword in		في
+ChangeRingKeyword load		حمل
+ChangeRingKeyword loop		لف
+ChangeRingKeyword new		كائن
+ChangeRingKeyword next		تالي
+ChangeRingKeyword not		نفي
+ChangeRingKeyword off		نهاية
+ChangeRingKeyword ok		حسنا
+ChangeRingKeyword on		عندما
+ChangeRingKeyword or		او
+ChangeRingKeyword other		عدا_ذلك
+ChangeRingKeyword package	حقيبة
+ChangeRingKeyword private	خاص
+ChangeRingKeyword put		ضع
+ChangeRingKeyword return	رجع
+ChangeRingKeyword see		اطبع
+ChangeRingKeyword step		خطوة
+ChangeRingKeyword switch	مفتاح
+ChangeRingKeyword to		الي
+ChangeRingKeyword try		جرب
+ChangeRingKeyword while		طالما
+ChangeRingKeyword endfunc	نهاية_دالة
+ChangeRingKeyword endclass	نهاية_فئة
+ChangeRingKeyword endpackage	نهاية_حقيبة
+ChangeRingKeyword endif		نهاية_لو
+ChangeRingKeyword endfor	نهاية_من
+ChangeRingKeyword endwhile	نهاية_طالما
+ChangeRingKeyword endswitch	نهاية_مفتاح
+ChangeRingKeyword endtry	نهاية_جرب
+ChangeRingKeyword function	دالة
+ChangeRingKeyword endfunction	نهاية_دالة
+ChangeRingKeyword break		خروج
+ChangeRingKeyword continue	استمر
+"+char(34)+""
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_RING2PWCT_BEFORESCANNER = "+char(34)+"
+ChangeRingKeyword again		كرر	
+ChangeRingKeyword and		و
+ChangeRingKeyword but		لكن
+ChangeRingKeyword bye		سلام
+ChangeRingKeyword call		استدعاء
+ChangeRingKeyword case		في_حالة
+ChangeRingKeyword catch		امسك
+ChangeRingKeyword class		فئة
+ChangeRingKeyword def		عرف
+ChangeRingKeyword do		نفذ
+ChangeRingKeyword done		نهاية_جرب
+ChangeRingKeyword else		عدا_ذلك
+ChangeRingKeyword elseif	في_حالة
+ChangeRingKeyword end		انتهي
+ChangeRingKeyword exit		خروج
+ChangeRingKeyword for		من
+ChangeRingKeyword foreach	لكل_من
+ChangeRingKeyword from		يرث
+ChangeRingKeyword func		دالة
+ChangeRingKeyword get		احصل_علي
+ChangeRingKeyword give		ادخال
+ChangeRingKeyword if		اذا
+ChangeRingKeyword import	تحميل_حقيبة
+ChangeRingKeyword in		في
+ChangeRingKeyword load		حمل
+ChangeRingKeyword loop		لف
+ChangeRingKeyword new		كائن
+ChangeRingKeyword next		تالي
+ChangeRingKeyword not		نفي
+ChangeRingKeyword off		نهاية
+ChangeRingKeyword ok		حسنا
+ChangeRingKeyword on		عندما
+ChangeRingKeyword or		او
+ChangeRingKeyword other		عدا_ذلك
+ChangeRingKeyword package	حقيبة
+ChangeRingKeyword private	خاص
+ChangeRingKeyword put		ضع
+ChangeRingKeyword return	رجع
+ChangeRingKeyword see		اطبع
+ChangeRingKeyword step		خطوة
+ChangeRingKeyword switch	مفتاح
+ChangeRingKeyword to		الي
+ChangeRingKeyword try		جرب
+ChangeRingKeyword while		طالما
+ChangeRingKeyword endfunc	نهاية_دالة
+ChangeRingKeyword endclass	نهاية_فئة
+ChangeRingKeyword endpackage	نهاية_حقيبة
+ChangeRingKeyword endif		نهاية_لو
+ChangeRingKeyword endfor	نهاية_من
+ChangeRingKeyword endwhile	نهاية_طالما
+ChangeRingKeyword endswitch	نهاية_مفتاح
+ChangeRingKeyword endtry	نهاية_جرب
+ChangeRingKeyword function	دالة
+ChangeRingKeyword endfunction	نهاية_دالة
+ChangeRingKeyword break		خروج
+ChangeRingKeyword continue	استمر
+"+char(34)+""
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"07/02/2025",
+		"16:26:48",
+		""
+	],
+	[
+		2,
+		1,
+		"assignment",
+		"07/02/2025",
+		"16:26:48",
+		"leftside;;_RV_;;T_RING2PWCT_BEFORESCANNER;;_RV_;;rightside;;_RV_;;"+char(34)+"
+ChangeRingKeyword again		كرر	
+ChangeRingKeyword and		و
+ChangeRingKeyword but		لكن
+ChangeRingKeyword bye		سلام
+ChangeRingKeyword call		استدعاء
+ChangeRingKeyword case		في_حالة
+ChangeRingKeyword catch		امسك
+ChangeRingKeyword class		فئة
+ChangeRingKeyword def		عرف
+ChangeRingKeyword do		نفذ
+ChangeRingKeyword done		نهاية_جرب
+ChangeRingKeyword else		عدا_ذلك
+ChangeRingKeyword elseif	في_حالة
+ChangeRingKeyword end		انتهي
+ChangeRingKeyword exit		خروج
+ChangeRingKeyword for		من
+ChangeRingKeyword foreach	لكل_من
+ChangeRingKeyword from		يرث
+ChangeRingKeyword func		دالة
+ChangeRingKeyword get		احصل_علي
+ChangeRingKeyword give		ادخال
+ChangeRingKeyword if		اذا
+ChangeRingKeyword import	تحميل_حقيبة
+ChangeRingKeyword in		في
+ChangeRingKeyword load		حمل
+ChangeRingKeyword loop		لف
+ChangeRingKeyword new		كائن
+ChangeRingKeyword next		تالي
+ChangeRingKeyword not		نفي
+ChangeRingKeyword off		نهاية
+ChangeRingKeyword ok		حسنا
+ChangeRingKeyword on		عندما
+ChangeRingKeyword or		او
+ChangeRingKeyword other		عدا_ذلك
+ChangeRingKeyword package	حقيبة
+ChangeRingKeyword private	خاص
+ChangeRingKeyword put		ضع
+ChangeRingKeyword return	رجع
+ChangeRingKeyword see		اطبع
+ChangeRingKeyword step		خطوة
+ChangeRingKeyword switch	مفتاح
+ChangeRingKeyword to		الي
+ChangeRingKeyword try		جرب
+ChangeRingKeyword while		طالما
+ChangeRingKeyword endfunc	نهاية_دالة
+ChangeRingKeyword endclass	نهاية_فئة
+ChangeRingKeyword endpackage	نهاية_حقيبة
+ChangeRingKeyword endif		نهاية_لو
+ChangeRingKeyword endfor	نهاية_من
+ChangeRingKeyword endwhile	نهاية_طالما
+ChangeRingKeyword endswitch	نهاية_مفتاح
+ChangeRingKeyword endtry	نهاية_جرب
+ChangeRingKeyword function	دالة
+ChangeRingKeyword endfunction	نهاية_دالة
+ChangeRingKeyword break		خروج
+ChangeRingKeyword continue	استمر
+"+char(34)+";;_RV_;;"
+	]
+]
+
+# End of Visual Source File

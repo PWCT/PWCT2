@@ -1,0 +1,498 @@
+# Start Form Designer File
+aObjectsList = [
+	[ :name = "Window" , :id = 1 , :classname = "formdesigner_qwidget" , :data = [
+		 :x = -58 , : y = 0  , 
+		 :width =  1348 , :height = 695 , 
+		 :title =  "Component Wizard" , 
+		 :backcolor =  "" , 
+		 :windowflags =  "Qt_Window | Qt_WindowTitleHint | Qt_WindowSystemMenuHint | Qt_WindowMinimizeButtonHint | Qt_WindowCloseButtonHint | Qt_CustomizeWindowHint" , 
+		 :mainlayout =  "" ,
+		 :WindowIcon =  "" , 
+		 :Menubar =  ""  ,
+		 :IndexType =  0  
+
+		]
+	],
+	[ :name = "Label1" , :id = 2 , :classname = "formdesigner_qlabel" , :data = [
+		 :x = 8 , : y = 22  , 
+		 :width =  78 , :height = 26 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "File Name :",
+		 :textalign =  0
+		]
+	],
+	[ :name = "textName" , :id = 3 , :classname = "formdesigner_qlineedit" , :data = [
+		 :x = 106 , : y = 22  , 
+		 :width =  212 , :height = 33 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "",
+		 :setTextChangedEvent =  "",
+		 :setcursorPositionChangedEvent =  "",
+		 :seteditingFinishedEvent =  "",
+		 :setreturnPressedEvent =  "",
+		 :setselectionChangedEvent =  "",
+		 :settextEditedEvent =  ""
+		]
+	],
+	[ :name = "Label2" , :id = 4 , :classname = "formdesigner_qlabel" , :data = [
+		 :x = 34 , : y = 73  , 
+		 :width =  61 , :height = 38 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Folder : ",
+		 :textalign =  0
+		]
+	],
+	[ :name = "textFolder" , :id = 5 , :classname = "formdesigner_qlineedit" , :data = [
+		 :x = 106 , : y = 75  , 
+		 :width =  212 , :height = 33 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "b:/pwct2/src/vpl/ringpwct/",
+		 :setTextChangedEvent =  "",
+		 :setcursorPositionChangedEvent =  "",
+		 :seteditingFinishedEvent =  "",
+		 :setreturnPressedEvent =  "",
+		 :setselectionChangedEvent =  "",
+		 :settextEditedEvent =  ""
+		]
+	],
+	[ :name = "Button1" , :id = 6 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 1239 , : y = 15  , 
+		 :width =  91 , :height = 32 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Generate",
+		 :BtnImage =  "",
+		 :setClickEvent =  "GenerateCode"
+		]
+	],
+	[ :name = "Button6" , :id = 7 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 1239 , : y = 123  , 
+		 :width =  91 , :height = 32 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Close",
+		 :BtnImage =  "",
+		 :setClickEvent =  "CloseApp"
+		]
+	],
+	[ :name = "Label3" , :id = 8 , :classname = "formdesigner_qlabel" , :data = [
+		 :x = 333 , : y = 22  , 
+		 :width =  69 , :height = 24 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Template :",
+		 :textalign =  0
+		]
+	],
+	[ :name = "ListTemplate" , :id = 9 , :classname = "formdesigner_qlistwidget" , :data = [
+		 :x = 418 , : y = 21  , 
+		 :width =  320 , :height = 142 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :cItems =  "Empty File,Empty Page,One Textbox,Two Textboxes,Three Textboxes,Four Textboxes,Five Textboxes,Textbox-Listbox-Textbox,Textbox-Listbox-Textbox-Textbox,Six Textboxes,Seven Textboxes,Eight Textboxes,Nine Textboxes,One Listbox",
+		 :cCurrentRow =  "4",
+		 :setcurrentItemChangedEvent =  "",
+		 :setcurrentRowChangedEvent =  "ChangeTemplate",
+		 :setcurrentTextChangedEvent =  "",
+		 :setitemActivatedEvent =  "",
+		 :setitemChangedEvent =  "",
+		 :setitemClickedEvent =  "",
+		 :setitemDoubleClickedEvent =  "",
+		 :setitemEnteredEvent =  "",
+		 :setitemPressedEvent =  "",
+		 :setitemSelectionChangedEvent =  ""
+		]
+	],
+	[ :name = "Label4" , :id = 10 , :classname = "formdesigner_qlabel" , :data = [
+		 :x = 774 , : y = 167  , 
+		 :width =  38 , :height = 27 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Data :",
+		 :textalign =  0
+		]
+	],
+	[ :name = "Tab1" , :id = 11 , :classname = "formdesigner_qtabwidget" , :data = [
+		 :x = 818 , : y = 173  , 
+		 :width =  418 , :height = 238 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :PagesCount =  "2",
+		 :PagesTitles =  "English,Arabic"
+		]
+	],
+	[ :name = "TextEnglish" , :id = 12 , :classname = "formdesigner_qtextedit" , :data = [
+		 :x = 7 , : y = 7  , 
+		 :width =  404 , :height = 195 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "MS Shell Dlg 2,18,-1,5,50,0,0,0,0,0" , 
+		 :parent =  "Tab1Page1"  ,
+		 :text =  " Component",
+		 :setcopyAvailableEvent =  "",
+		 :setcurrentCharFormatChangedEvent =  "",
+		 :setcursorPositionChangedEvent =  "",
+		 :setredoAvailableEvent =  "",
+		 :setselectionChangedEvent =  "",
+		 :settextChangedEvent =  "",
+		 :setundoAvailableEvent =  ""
+		]
+	],
+	[ :name = "TextArabic" , :id = 13 , :classname = "formdesigner_qtextedit" , :data = [
+		 :x = 4 , : y = 5  , 
+		 :width =  404 , :height = 193 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "MS Shell Dlg 2,18,-1,5,50,0,0,0,0,0" , 
+		 :parent =  "Tab1Page2"  ,
+		 :text =  "مكون ",
+		 :setcopyAvailableEvent =  "",
+		 :setcurrentCharFormatChangedEvent =  "",
+		 :setcursorPositionChangedEvent =  "",
+		 :setredoAvailableEvent =  "",
+		 :setselectionChangedEvent =  "",
+		 :settextChangedEvent =  "",
+		 :setundoAvailableEvent =  ""
+		]
+	],
+	[ :name = "Label13" , :id = 14 , :classname = "formdesigner_qlabel" , :data = [
+		 :x = 784 , : y = 15  , 
+		 :width =  29 , :height = 27 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Info : ",
+		 :textalign =  0
+		]
+	],
+	[ :name = "TextInfo" , :id = 15 , :classname = "formdesigner_qtextedit" , :data = [
+		 :x = 818 , : y = 15  , 
+		 :width =  418 , :height = 141 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "",
+		 :setcopyAvailableEvent =  "",
+		 :setcurrentCharFormatChangedEvent =  "",
+		 :setcursorPositionChangedEvent =  "",
+		 :setredoAvailableEvent =  "",
+		 :setselectionChangedEvent =  "",
+		 :settextChangedEvent =  "",
+		 :setundoAvailableEvent =  ""
+		]
+	],
+	[ :name = "Label6" , :id = 16 , :classname = "formdesigner_qlabel" , :data = [
+		 :x = 7 , : y = 461  , 
+		 :width =  77 , :height = 27 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Steps Tree",
+		 :textalign =  0
+		]
+	],
+	[ :name = "TextStepsTree" , :id = 17 , :classname = "formdesigner_qtextedit" , :data = [
+		 :x = 102 , : y = 512  , 
+		 :width =  1126 , :height = 155 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "MS Shell Dlg 2,18,-1,5,50,0,0,0,0,0" , 
+		 :parent =  "win"  ,
+		 :text =  "",
+		 :setcopyAvailableEvent =  "",
+		 :setcurrentCharFormatChangedEvent =  "",
+		 :setcursorPositionChangedEvent =  "",
+		 :setredoAvailableEvent =  "",
+		 :setselectionChangedEvent =  "",
+		 :settextChangedEvent =  "",
+		 :setundoAvailableEvent =  ""
+		]
+	],
+	[ :name = "Label7" , :id = 18 , :classname = "formdesigner_qlabel" , :data = [
+		 :x = 109 , : y = 172  , 
+		 :width =  97 , :height = 24 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Quick Scripts",
+		 :textalign =  0
+		]
+	],
+	[ :name = "ComboQuickScript" , :id = 19 , :classname = "formdesigner_qcombobox" , :data = [
+		 :x = 216 , : y = 172  , 
+		 :width =  396 , :height = 31 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :cItems =  "One Step,Two Steps,Three Steps,Optional Parameter,Optional 2 Parameters",
+		 :cCurrentIndex =  "",
+		 :setactivatedEvent =  "",
+		 :setcurrentIndexChangedEvent =  "quickscripts",
+		 :seteditTextChangedEvent =  "",
+		 :sethighlightedEvent =  ""
+		]
+	],
+	[ :name = "TextQuickScript" , :id = 20 , :classname = "formdesigner_qtextedit" , :data = [
+		 :x = 104 , : y = 208  , 
+		 :width =  639 , :height = 211 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "MS Shell Dlg 2,18,-1,5,50,0,0,0,0,0" , 
+		 :parent =  "win"  ,
+		 :text =  "",
+		 :setcopyAvailableEvent =  "",
+		 :setcurrentCharFormatChangedEvent =  "",
+		 :setcursorPositionChangedEvent =  "",
+		 :setredoAvailableEvent =  "",
+		 :setselectionChangedEvent =  "",
+		 :settextChangedEvent =  "",
+		 :setundoAvailableEvent =  ""
+		]
+	],
+	[ :name = "Button3" , :id = 21 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 108 , : y = 429  , 
+		 :width =  88 , :height = 26 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Step",
+		 :BtnImage =  "",
+		 :setClickEvent =  "ststep"
+		]
+	],
+	[ :name = "Button21" , :id = 22 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 196 , : y = 429  , 
+		 :width =  88 , :height = 26 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Parent Step",
+		 :BtnImage =  "",
+		 :setClickEvent =  "stparentstep"
+		]
+	],
+	[ :name = "Button22" , :id = 23 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 293 , : y = 429  , 
+		 :width =  88 , :height = 26 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Step Code",
+		 :BtnImage =  "",
+		 :setClickEvent =  "ststepcode"
+		]
+	],
+	[ :name = "Button23" , :id = 24 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 381 , : y = 429  , 
+		 :width =  88 , :height = 26 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Step Data",
+		 :BtnImage =  "",
+		 :setClickEvent =  "ststepdata"
+		]
+	],
+	[ :name = "Button24" , :id = 25 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 469 , : y = 429  , 
+		 :width =  88 , :height = 26 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Variable",
+		 :BtnImage =  "",
+		 :setClickEvent =  "stvariable"
+		]
+	],
+	[ :name = "Button25" , :id = 26 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 567 , : y = 429  , 
+		 :width =  88 , :height = 26 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Constant",
+		 :BtnImage =  "",
+		 :setClickEvent =  "stconstant"
+		]
+	],
+	[ :name = "Button26" , :id = 27 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 665 , : y = 429  , 
+		 :width =  88 , :height = 26 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "GA",
+		 :BtnImage =  "",
+		 :setClickEvent =  "stga"
+		]
+	],
+	[ :name = "Button27" , :id = 28 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 760 , : y = 429  , 
+		 :width =  88 , :height = 26 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "SA",
+		 :BtnImage =  "",
+		 :setClickEvent =  "stsa"
+		]
+	],
+	[ :name = "Button28" , :id = 29 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 858 , : y = 429  , 
+		 :width =  88 , :height = 26 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "AI",
+		 :BtnImage =  "",
+		 :setClickEvent =  "stai"
+		]
+	],
+	[ :name = "Button29" , :id = 30 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 116 , : y = 469  , 
+		 :width =  88 , :height = 26 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Check",
+		 :BtnImage =  "",
+		 :setClickEvent =  "stcheck"
+		]
+	],
+	[ :name = "Button13" , :id = 31 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 626 , : y = 172  , 
+		 :width =  114 , :height = 30 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Use",
+		 :BtnImage =  "",
+		 :setClickEvent =  "UseScript"
+		]
+	],
+	[ :name = "Button14" , :id = 32 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 224 , : y = 469  , 
+		 :width =  80 , :height = 26 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "StepData(1)",
+		 :BtnImage =  "",
+		 :setClickEvent =  "stepdata1"
+		]
+	],
+	[ :name = "Button15" , :id = 33 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 312 , : y = 469  , 
+		 :width =  117 , :height = 26 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "VariableValue(1)",
+		 :BtnImage =  "",
+		 :setClickEvent =  "Variablevalue1"
+		]
+	],
+	[ :name = "Button33" , :id = 34 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 441 , : y = 469  , 
+		 :width =  107 , :height = 26 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Function Call",
+		 :BtnImage =  "",
+		 :setClickEvent =  "FunctionCall"
+		]
+	],
+	[ :name = "Button34" , :id = 35 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 558 , : y = 469  , 
+		 :width =  97 , :height = 26 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Functions List",
+		 :BtnImage =  "",
+		 :setClickEvent =  "FunctionsListbox"
+		]
+	],
+	[ :name = "Button35" , :id = 36 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 1239 , : y = 69  , 
+		 :width =  91 , :height = 32 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Clear",
+		 :BtnImage =  "",
+		 :setClickEvent =  "ClearData"
+		]
+	],
+	[ :name = "Button36" , :id = 37 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 665 , : y = 469  , 
+		 :width =  168 , :height = 26 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Function Call (No Output)",
+		 :BtnImage =  "",
+		 :setClickEvent =  "FunctionCallNoOutput"
+		]
+	],
+	[ :name = "Button37" , :id = 38 , :classname = "formdesigner_qpushbutton" , :data = [
+		 :x = 846 , : y = 469  , 
+		 :width =  107 , :height = 26 , 
+		 :textcolor =  "black" , 
+		 :backcolor =  "" , 
+		 :font =  "Arial" , 
+		 :parent =  "win"  ,
+		 :text =  "Class Methods",
+		 :BtnImage =  "",
+		 :setClickEvent =  "ClassMethodsListbox"
+		]
+	]
+]
+# End Form Designer File

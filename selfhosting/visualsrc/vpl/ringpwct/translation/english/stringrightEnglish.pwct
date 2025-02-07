@@ -1,0 +1,615 @@
+# Visual Source File 
+
+cVisualSourceFileVersion = '1.0.0'
+cVisualLanguageName      = 'RingPWCT'
+cNaturalLanguageName     = 'english'
+nStepsID                 = 13		
+nInteractionsID          = 13
+
+aStepsTable = [
+	[
+		1,
+		0,
+		[
+			[
+				"name",
+				"Start Point"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				1
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			]
+		]
+	],
+	[
+		2,
+		1,
+		[
+			[
+				"name",
+				"/*"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#/*
+"
+			],
+			[
+				"interactionid",
+				2
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"/*"
+			]
+		]
+	],
+	[
+		3,
+		1,
+		[
+			[
+				"name",
+				"**	Project : Programming Without Coding Technology (PWCT) Version 2.0"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#**	Project : Programming Without Coding Technology (PWCT) Version 2.0
+"
+			],
+			[
+				"interactionid",
+				3
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"**	Project : Programming Without Coding Technology (PWCT) Version 2.0"
+			]
+		]
+	],
+	[
+		4,
+		1,
+		[
+			[
+				"name",
+				"**	File Purpose :  stringright Component"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#**	File Purpose :  stringright Component
+"
+			],
+			[
+				"interactionid",
+				4
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"**	File Purpose :  stringright Component"
+			]
+		]
+	],
+	[
+		5,
+		1,
+		[
+			[
+				"name",
+				"**	Date : 2017.07.23"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#**	Date : 2017.07.23
+"
+			],
+			[
+				"interactionid",
+				5
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"**	Date : 2017.07.23"
+			]
+		]
+	],
+	[
+		6,
+		1,
+		[
+			[
+				"name",
+				"**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
+"
+			],
+			[
+				"interactionid",
+				6
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"**	Author :  Mahmoud Fayed "
+			]
+		]
+	],
+	[
+		7,
+		1,
+		[
+			[
+				"name",
+				"*/"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#*/
+"
+			],
+			[
+				"interactionid",
+				7
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"*/"
+			]
+		]
+	],
+	[
+		8,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_STRINGRIGHT_IP_TITLE</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;Get&nbsp;Characters&nbsp;from&nbsp;Right&nbsp;Component&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_CT_STRINGRIGHT_IP_TITLE = "+char(34)+"Get Characters from Right Component"+char(34)+""
+			],
+			[
+				"interactionid",
+				8
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_CT_STRINGRIGHT_IP_TITLE = "+char(34)+"Get Characters from Right Component"+char(34)+""
+			]
+		]
+	],
+	[
+		9,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_STRINGRIGHT_IP_VALUE</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;String&nbsp;:&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_CT_STRINGRIGHT_IP_VALUE = "+char(34)+"String :"+char(34)+""
+			],
+			[
+				"interactionid",
+				9
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_CT_STRINGRIGHT_IP_VALUE = "+char(34)+"String :"+char(34)+""
+			]
+		]
+	],
+	[
+		10,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_STRINGRIGHT_IP_VALUE2</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;Count&nbsp;:&nbsp;&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_CT_STRINGRIGHT_IP_VALUE2 = "+char(34)+"Count : "+char(34)+""
+			],
+			[
+				"interactionid",
+				10
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_CT_STRINGRIGHT_IP_VALUE2 = "+char(34)+"Count : "+char(34)+""
+			]
+		]
+	],
+	[
+		11,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_STRINGRIGHT_IP_VALUE3</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;Output&nbsp;:&nbsp;&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_CT_STRINGRIGHT_IP_VALUE3 = "+char(34)+"Output : "+char(34)+""
+			],
+			[
+				"interactionid",
+				11
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_CT_STRINGRIGHT_IP_VALUE3 = "+char(34)+"Output : "+char(34)+""
+			]
+		]
+	],
+	[
+		12,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_STRINGRIGHT_ST_RIGHT</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;Get&nbsp;Character&nbsp;from&nbsp;right&nbsp;in&nbsp;String&nbsp;&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_CT_STRINGRIGHT_ST_RIGHT = "+char(34)+"Get Character from right in String "+char(34)+""
+			],
+			[
+				"interactionid",
+				12
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_CT_STRINGRIGHT_ST_RIGHT = "+char(34)+"Get Character from right in String "+char(34)+""
+			]
+		]
+	],
+	[
+		13,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_STRINGRIGHT_ST_COUNT</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;&nbsp;Count&nbsp;&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_CT_STRINGRIGHT_ST_COUNT = "+char(34)+" Count "+char(34)+""
+			],
+			[
+				"interactionid",
+				13
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_CT_STRINGRIGHT_ST_COUNT = "+char(34)+" Count "+char(34)+""
+			]
+		]
+	]
+]
+
+aInteractionsTable = [
+	[
+		1,
+		1,
+		"",
+		"07/02/2025",
+		"16:57:38",
+		""
+	],
+	[
+		2,
+		1,
+		"comment_text",
+		"07/02/2025",
+		"16:57:38",
+		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		3,
+		1,
+		"comment_text",
+		"07/02/2025",
+		"16:57:38",
+		"value;;_RV_;;**	Project : Programming Without Coding Technology (PWCT) Version 2.0;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		4,
+		1,
+		"comment_text",
+		"07/02/2025",
+		"16:57:38",
+		"value;;_RV_;;**	File Purpose :  stringright Component;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		5,
+		1,
+		"comment_text",
+		"07/02/2025",
+		"16:57:38",
+		"value;;_RV_;;**	Date : 2017.07.23;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		6,
+		1,
+		"comment_text",
+		"07/02/2025",
+		"16:57:38",
+		"value;;_RV_;;**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		7,
+		1,
+		"comment_text",
+		"07/02/2025",
+		"16:57:38",
+		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		8,
+		1,
+		"assignment",
+		"07/02/2025",
+		"16:57:38",
+		"leftside;;_RV_;;T_CT_STRINGRIGHT_IP_TITLE;;_RV_;;rightside;;_RV_;;"+char(34)+"Get Characters from Right Component"+char(34)+";;_RV_;;"
+	],
+	[
+		9,
+		1,
+		"assignment",
+		"07/02/2025",
+		"16:57:38",
+		"leftside;;_RV_;;T_CT_STRINGRIGHT_IP_VALUE;;_RV_;;rightside;;_RV_;;"+char(34)+"String :"+char(34)+";;_RV_;;"
+	],
+	[
+		10,
+		1,
+		"assignment",
+		"07/02/2025",
+		"16:57:38",
+		"leftside;;_RV_;;T_CT_STRINGRIGHT_IP_VALUE2;;_RV_;;rightside;;_RV_;;"+char(34)+"Count : "+char(34)+";;_RV_;;"
+	],
+	[
+		11,
+		1,
+		"assignment",
+		"07/02/2025",
+		"16:57:38",
+		"leftside;;_RV_;;T_CT_STRINGRIGHT_IP_VALUE3;;_RV_;;rightside;;_RV_;;"+char(34)+"Output : "+char(34)+";;_RV_;;"
+	],
+	[
+		12,
+		1,
+		"assignment",
+		"07/02/2025",
+		"16:57:38",
+		"leftside;;_RV_;;T_CT_STRINGRIGHT_ST_RIGHT;;_RV_;;rightside;;_RV_;;"+char(34)+"Get Character from right in String "+char(34)+";;_RV_;;"
+	],
+	[
+		13,
+		1,
+		"assignment",
+		"07/02/2025",
+		"16:57:38",
+		"leftside;;_RV_;;T_CT_STRINGRIGHT_ST_COUNT;;_RV_;;rightside;;_RV_;;"+char(34)+" Count "+char(34)+";;_RV_;;"
+	]
+]
+
+# End of Visual Source File
