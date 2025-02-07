@@ -356,6 +356,7 @@ class Generator
 		if match.hasmatch() {
 			cFunc = match.captured(1)
 			cPara = match.captured(2)
+			if endFuncCallAtStart(cPara) { return }
 			aParseTree[nIndex][:Command] = :CallFunction
 			aParseTree[nIndex][:Function] = cFunc
 			aParseTree[nIndex][:Parameters] = cPara
@@ -372,11 +373,19 @@ class Generator
 		if match.hasmatch() {
 			cObject = match.captured(1)
 			cMethod = match.captured(2)
-			cParameters = match.captured(3)
+			cPara   = match.captured(3)
+			if endFuncCallAtStart(cPara) { return }
 			aParseTree[nIndex][:Command] = :CallMethod
 			aParseTree[nIndex][:Object] = cObject
 			aParseTree[nIndex][:Method] = cMethod
-			aParseTree[nIndex][:Parameters] = cParameters
+			aParseTree[nIndex][:Parameters] = cPara
 			return True 
 		}
 		return False
+
+	func endFuncCallAtStart cPara
+		# This is not a real function call
+		# This happens in cases like parent().test()
+		# where cPara will be ).test(  
+		cPara = trim(cPara)
+		return len(cPara) > 1 and left(cPara,1)=")"
