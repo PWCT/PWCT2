@@ -392,6 +392,13 @@ class Generator
 		#This happens in cases like parent().test()
 		#where cPara will be ).test(
 		cPara = trim(cPara)
-		return len( cPara ) >1  and left( cPara,1 ) =")" 
+		if len(cPara) > 1 AND left(cPara,1) = ")" { 
+			return True
+		} 
+		nPos = subStr(cPara,"(")
+		if nPos AND nPos > subStr(cPara,")") { 
+			return True
+		} 
+		return False
 	} 
 private

@@ -1383,7 +1383,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"oWin.grab( <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oRect).toImage().save(GetNewFileName(),&quot;PNG&quot;,100</font></span> )"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oWin.grab(oRect).toImage().save(GetNewFileName(),&quot;PNG&quot;,100)</font></span>"
 			],
 			[
 				"active",
@@ -1411,7 +1411,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"oWin.grab( oRect).toImage().save(GetNewFileName(),"+char(34)+"PNG"+char(34)+",100 )"
+				"oWin.grab(oRect).toImage().save(GetNewFileName(),"+char(34)+"PNG"+char(34)+",100)"
 			]
 		]
 	],
@@ -1613,7 +1613,7 @@ aInteractionsTable = [
 		1,
 		"",
 		"07/02/2025",
-		"16:25:17",
+		"18:18:29",
 		""
 	],
 	[
@@ -1621,7 +1621,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:25:17",
+		"18:18:29",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -1629,7 +1629,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:25:17",
+		"18:18:29",
 		"value;;_RV_;;**	Project : Programming Without Coding Technology (PWCT) Version 2.0;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -1637,7 +1637,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:25:17",
+		"18:18:29",
 		"value;;_RV_;;**	File Purpose :  Automatic Documentation;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -1645,7 +1645,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:25:17",
+		"18:18:29",
 		"value;;_RV_;;**	Date : 2019.10.17;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -1653,7 +1653,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:25:17",
+		"18:18:29",
 		"value;;_RV_;;**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -1661,7 +1661,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:25:17",
+		"18:18:29",
 		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -1669,7 +1669,7 @@ aInteractionsTable = [
 		1,
 		"class",
 		"07/02/2025",
-		"16:25:17",
+		"18:18:29",
 		"value;;_RV_;;AutomaticDocumentation;;_RV_;;value2;;_RV_;;;;_RV_;;value3;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -1677,7 +1677,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:25:17",
+		"18:18:29",
 		"leftside;;_RV_;;cOutputFolder;;_RV_;;rightside;;_RV_;;PWCT_FOLDER+"+char(34)+"/shots"+char(34)+";;_RV_;;"
 	],
 	[
@@ -1685,7 +1685,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:25:17",
+		"18:18:29",
 		"leftside;;_RV_;;nShotID;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -1693,7 +1693,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:25:17",
+		"18:18:29",
 		"leftside;;_RV_;;lShortName;;_RV_;;rightside;;_RV_;;True;;_RV_;;"
 	],
 	[
@@ -1701,7 +1701,7 @@ aInteractionsTable = [
 		1,
 		"func",
 		"07/02/2025",
-		"16:25:17",
+		"18:18:29",
 		"name;;_RV_;;GetNewFileName;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -1709,7 +1709,7 @@ aInteractionsTable = [
 		1,
 		"freetyping",
 		"07/02/2025",
-		"16:25:17",
+		"18:18:29",
 		"value;;_RV_;;nShotID++;;_RV_;;"
 	],
 	[
@@ -1717,7 +1717,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"07/02/2025",
-		"16:25:17",
+		"18:18:29",
 		"condition;;_RV_;;lShortName;;_RV_;;"
 	],
 	[
@@ -1725,7 +1725,7 @@ aInteractionsTable = [
 		1,
 		"return",
 		"07/02/2025",
-		"16:25:17",
+		"18:18:29",
 		"value;;_RV_;;cOutputFolder+"+char(34)+"/"+char(34)+" + nShotID+"+char(34)+".png"+char(34)+" ;;_RV_;;"
 	],
 	[
@@ -1733,7 +1733,7 @@ aInteractionsTable = [
 		1,
 		"return",
 		"07/02/2025",
-		"16:25:17",
+		"18:18:29",
 		"value;;_RV_;;cOutputFolder+"+char(34)+"/screenshot_"+char(34)+" + nShotID+"+char(34)+"_"+char(34)+" + substr( date() ,"+char(34)+"/"+char(34)+" ,"+char(34)+"_"+char(34)+" ) +"+char(34)+"_"+char(34)+" + substr( time() ,"+char(34)+":"+char(34)+" ,"+char(34)+"_"+char(34)+" ) +"+char(34)+".png"+char(34)+" ;;_RV_;;"
 	],
 	[
@@ -1741,7 +1741,7 @@ aInteractionsTable = [
 		1,
 		"func",
 		"07/02/2025",
-		"16:25:17",
+		"18:18:29",
 		"name;;_RV_;;GetScreenShot;;_RV_;;parameters;;_RV_;;oWin;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -1749,7 +1749,7 @@ aInteractionsTable = [
 		1,
 		"accessobject",
 		"07/02/2025",
-		"16:25:17",
+		"18:18:29",
 		"value;;_RV_;;oWin;;_RV_;;"
 	],
 	[
@@ -1757,7 +1757,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:25:17",
+		"18:18:29",
 		"leftside;;_RV_;;screen;;_RV_;;rightside;;_RV_;;windowhandle().screen();;_RV_;;"
 	],
 	[
@@ -1765,7 +1765,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:25:17",
+		"18:18:29",
 		"leftside;;_RV_;;pixmap;;_RV_;;rightside;;_RV_;;screen.grabwindow(0,0,0,-1,-1);;_RV_;;"
 	],
 	[
@@ -1773,7 +1773,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:25:17",
+		"18:18:29",
 		"leftside;;_RV_;;image;;_RV_;;rightside;;_RV_;;pixmap.toimage();;_RV_;;"
 	],
 	[
@@ -1781,7 +1781,7 @@ aInteractionsTable = [
 		1,
 		"callmethod",
 		"07/02/2025",
-		"16:25:17",
+		"18:18:29",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;image;;_RV_;;name;;_RV_;;save;;_RV_;;parameters;;_RV_;;GetNewFileName(),"+char(34)+"png"+char(34)+",100;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -1789,7 +1789,7 @@ aInteractionsTable = [
 		1,
 		"func",
 		"07/02/2025",
-		"16:25:17",
+		"18:18:29",
 		"name;;_RV_;;GetWindowShot;;_RV_;;parameters;;_RV_;;oWin;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -1797,7 +1797,7 @@ aInteractionsTable = [
 		1,
 		"newobj",
 		"07/02/2025",
-		"16:25:17",
+		"18:18:29",
 		"value;;_RV_;;oRect;;_RV_;;value2;;_RV_;;QRect;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -1805,16 +1805,16 @@ aInteractionsTable = [
 		1,
 		"callmethod",
 		"07/02/2025",
-		"16:25:17",
+		"18:18:29",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oRect;;_RV_;;name;;_RV_;;Adjust;;_RV_;;parameters;;_RV_;;0,0,oWin.width(),oWin.height();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		26,
 		1,
-		"callmethod",
+		"freetyping",
 		"07/02/2025",
-		"16:25:17",
-		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oWin;;_RV_;;name;;_RV_;;grab;;_RV_;;parameters;;_RV_;;oRect).toImage().save(GetNewFileName(),"+char(34)+"PNG"+char(34)+",100;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"18:18:29",
+		"value;;_RV_;;oWin.grab(oRect).toImage().save(GetNewFileName(),"+char(34)+"PNG"+char(34)+",100);;_RV_;;"
 	]
 ]
 

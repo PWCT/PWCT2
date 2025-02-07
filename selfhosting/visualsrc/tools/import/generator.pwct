@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'english'
-nStepsID                 = 507		
-nInteractionsID          = 339
+nStepsID                 = 516		
+nInteractionsID          = 344
 
 aStepsTable = [
 	[
@@ -19081,7 +19081,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">len(&nbsp;cPara&nbsp;)&nbsp;&gt;1&nbsp;&nbsp;and&nbsp;left(&nbsp;cPara,1&nbsp;)&nbsp;=&quot;)&quot;&nbsp;</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">len(cPara)&nbsp;&gt;&nbsp;1&nbsp;AND&nbsp;left(cPara,1)&nbsp;=&nbsp;&quot;)&quot;</font></span>"
 			],
 			[
 				"active",
@@ -19089,7 +19089,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"return len( cPara ) >1  and left( cPara,1 ) ="+char(34)+")"+char(34)+" "
+				"if len(cPara) > 1 AND left(cPara,1) = "+char(34)+")"+char(34)+" { "
 			],
 			[
 				"interactionid",
@@ -19109,7 +19109,349 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Return len( cPara ) >1  and left( cPara,1 ) ="+char(34)+")"+char(34)+" "
+				"If len(cPara) > 1 AND left(cPara,1) = "+char(34)+")"+char(34)+""
+			]
+		]
+	],
+	[
+		508,
+		507,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				339
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		510,
+		508,
+		[
+			[
+				"name",
+				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">True</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"return True"
+			],
+			[
+				"interactionid",
+				340
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Return True"
+			]
+		]
+	],
+	[
+		509,
+		507,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				339
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		511,
+		501,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nPos</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">subStr(cPara,&quot;(&quot;)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"nPos = subStr(cPara,"+char(34)+"("+char(34)+")"
+			],
+			[
+				"interactionid",
+				341
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"nPos = subStr(cPara,"+char(34)+"("+char(34)+")"
+			]
+		]
+	],
+	[
+		512,
+		501,
+		[
+			[
+				"name",
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nPos&nbsp;AND&nbsp;nPos&nbsp;&gt;&nbsp;subStr(cPara,&quot;)&quot;)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"if nPos AND nPos > subStr(cPara,"+char(34)+")"+char(34)+") { "
+			],
+			[
+				"interactionid",
+				342
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"If nPos AND nPos > subStr(cPara,"+char(34)+")"+char(34)+")"
+			]
+		]
+	],
+	[
+		513,
+		512,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				342
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		515,
+		513,
+		[
+			[
+				"name",
+				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">True</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"return True"
+			],
+			[
+				"interactionid",
+				343
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Return True"
+			]
+		]
+	],
+	[
+		514,
+		512,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				342
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		516,
+		501,
+		[
+			[
+				"name",
+				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">False</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"return False"
+			],
+			[
+				"interactionid",
+				344
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Return False"
 			]
 		]
 	],
@@ -19311,7 +19653,7 @@ aInteractionsTable = [
 		1,
 		"",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		""
 	],
 	[
@@ -19319,7 +19661,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -19327,7 +19669,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;**	Project : Programming Without Coding Technology (PWCT) Version 2.0;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -19335,7 +19677,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;**	File Purpose :  Generator;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -19343,7 +19685,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;**	Date : 2020.02.15;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -19351,7 +19693,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -19359,7 +19701,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -19367,7 +19709,7 @@ aInteractionsTable = [
 		1,
 		"class",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;Generator;;_RV_;;value2;;_RV_;;;;_RV_;;value3;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -19375,7 +19717,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree;;_RV_;;rightside;;_RV_;;[];;_RV_;;"
 	],
 	[
@@ -19383,7 +19725,7 @@ aInteractionsTable = [
 		1,
 		"newobj",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;oPWCT;;_RV_;;value2;;_RV_;;VSFGenerator;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -19391,7 +19733,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cFileName;;_RV_;;rightside;;_RV_;;"+char(34)+"output/app.pwct"+char(34)+";;_RV_;;"
 	],
 	[
@@ -19399,7 +19741,7 @@ aInteractionsTable = [
 		1,
 		"func",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"name;;_RV_;;setFileName;;_RV_;;parameters;;_RV_;;cFile;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -19407,7 +19749,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;oPWCT.cFileName;;_RV_;;rightside;;_RV_;;cFile;;_RV_;;"
 	],
 	[
@@ -19415,7 +19757,7 @@ aInteractionsTable = [
 		1,
 		"func",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"name;;_RV_;;SetParseTree;;_RV_;;parameters;;_RV_;;aTree;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -19423,7 +19765,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree;;_RV_;;rightside;;_RV_;;aTree;;_RV_;;"
 	],
 	[
@@ -19431,7 +19773,7 @@ aInteractionsTable = [
 		1,
 		"func",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"name;;_RV_;;Start;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -19439,7 +19781,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;Optimization;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -19447,7 +19789,7 @@ aInteractionsTable = [
 		1,
 		"forinloop",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"variable;;_RV_;;aCommand;;_RV_;;in;;_RV_;;aParseTree;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
@@ -19455,7 +19797,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;ProcessCommand;;_RV_;;parameters;;_RV_;;aCommand;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -19463,7 +19805,7 @@ aInteractionsTable = [
 		1,
 		"func",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"name;;_RV_;;WriteVisualSourceFile;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -19471,7 +19813,7 @@ aInteractionsTable = [
 		1,
 		"callmethod",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oPWCT;;_RV_;;name;;_RV_;;WriteVisualSourceFile;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -19479,7 +19821,7 @@ aInteractionsTable = [
 		1,
 		"func",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"name;;_RV_;;GetStepsTreeTable;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -19487,7 +19829,7 @@ aInteractionsTable = [
 		1,
 		"return",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;oPWCT. GetStepsTreeTable() ;;_RV_;;"
 	],
 	[
@@ -19495,7 +19837,7 @@ aInteractionsTable = [
 		1,
 		"func",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"name;;_RV_;;GetInteractionsTable;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -19503,7 +19845,7 @@ aInteractionsTable = [
 		1,
 		"return",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;oPWCT. GetInteractionsTable() ;;_RV_;;"
 	],
 	[
@@ -19511,7 +19853,7 @@ aInteractionsTable = [
 		1,
 		"func",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"name;;_RV_;;GetStepsID;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -19519,7 +19861,7 @@ aInteractionsTable = [
 		1,
 		"return",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;oPWCT. GetStepsID() ;;_RV_;;"
 	],
 	[
@@ -19527,7 +19869,7 @@ aInteractionsTable = [
 		1,
 		"func",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"name;;_RV_;;GetInteractionsID;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -19535,7 +19877,7 @@ aInteractionsTable = [
 		1,
 		"return",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;oPWCT. GetInteractionsID() ;;_RV_;;"
 	],
 	[
@@ -19543,7 +19885,7 @@ aInteractionsTable = [
 		1,
 		"func",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"name;;_RV_;;ProcessCommand;;_RV_;;parameters;;_RV_;;aCommand;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -19551,7 +19893,7 @@ aInteractionsTable = [
 		1,
 		"accessobject",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;oPWCT;;_RV_;;"
 	],
 	[
@@ -19559,7 +19901,7 @@ aInteractionsTable = [
 		1,
 		"switch",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"variable;;_RV_;;aCommand[:Command];;_RV_;;"
 	],
 	[
@@ -19567,7 +19909,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;: load;;_RV_;;"
 	],
 	[
@@ -19575,7 +19917,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddLoadLiteral;;_RV_;;parameters;;_RV_;;aCommand[:Expression],aCommand[:Type];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -19583,7 +19925,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;: import;;_RV_;;"
 	],
 	[
@@ -19591,7 +19933,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddImportValue;;_RV_;;parameters;;_RV_;;aCommand[:Value];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -19599,7 +19941,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;: see;;_RV_;;"
 	],
 	[
@@ -19607,7 +19949,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddPrintExpression;;_RV_;;parameters;;_RV_;;aCommand[:Expression],False;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -19615,7 +19957,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;:QuestionMark;;_RV_;;"
 	],
 	[
@@ -19623,7 +19965,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddPrintExpression;;_RV_;;parameters;;_RV_;;aCommand[:Expression],True;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -19631,7 +19973,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;: give;;_RV_;;"
 	],
 	[
@@ -19639,7 +19981,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddGiveIdentifier;;_RV_;;parameters;;_RV_;;aCommand[:Identifier];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -19647,7 +19989,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;:BlockEnd;;_RV_;;"
 	],
 	[
@@ -19655,7 +19997,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;popParent;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -19663,7 +20005,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;: if;;_RV_;;"
 	],
 	[
@@ -19671,7 +20013,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddIfExpression;;_RV_;;parameters;;_RV_;;aCommand[:Expression];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -19679,7 +20021,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;: but;;_RV_;;"
 	],
 	[
@@ -19687,7 +20029,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddButExpression;;_RV_;;parameters;;_RV_;;aCommand[:Expression];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -19695,7 +20037,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;: else;;_RV_;;"
 	],
 	[
@@ -19703,7 +20045,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddElse;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -19711,7 +20053,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;: switch;;_RV_;;"
 	],
 	[
@@ -19719,7 +20061,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddSwitchVariable;;_RV_;;parameters;;_RV_;;aCommand[:Variable];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -19727,7 +20069,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;:SwitchCase;;_RV_;;"
 	],
 	[
@@ -19735,7 +20077,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddSwitchCaseValue;;_RV_;;parameters;;_RV_;;aCommand[:Value];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -19743,7 +20085,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;:SwitchOther;;_RV_;;"
 	],
 	[
@@ -19751,7 +20093,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddSwitchOther;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -19759,7 +20101,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;: while;;_RV_;;"
 	],
 	[
@@ -19767,7 +20109,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddWhileExpression;;_RV_;;parameters;;_RV_;;aCommand[:Expression];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -19775,7 +20117,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;: for;;_RV_;;"
 	],
 	[
@@ -19783,7 +20125,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddForLoop;;_RV_;;parameters;;_RV_;;aCommand[:Start],aCommand[: to],aCommand[: step];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -19791,7 +20133,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;:ForIn;;_RV_;;"
 	],
 	[
@@ -19799,7 +20141,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddForInLoop;;_RV_;;parameters;;_RV_;;aCommand[:Variable],aCommand[: in],aCommand[: step];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -19807,7 +20149,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;:DoAgain;;_RV_;;"
 	],
 	[
@@ -19815,7 +20157,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddDoAgainExpression;;_RV_;;parameters;;_RV_;;aCommand[:Expression];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -19823,7 +20165,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;: exit;;_RV_;;"
 	],
 	[
@@ -19831,7 +20173,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddExitValue;;_RV_;;parameters;;_RV_;;aCommand[:Value];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -19839,7 +20181,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;: loop;;_RV_;;"
 	],
 	[
@@ -19847,7 +20189,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddLoopValue;;_RV_;;parameters;;_RV_;;aCommand[:Value];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -19855,7 +20197,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;: bye;;_RV_;;"
 	],
 	[
@@ -19863,7 +20205,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddBye;;_RV_;;parameters;;_RV_;;aCommand[:Value];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -19871,7 +20213,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;: try;;_RV_;;"
 	],
 	[
@@ -19879,7 +20221,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddTry;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -19887,7 +20229,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;: catch;;_RV_;;"
 	],
 	[
@@ -19895,7 +20237,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddCatch;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -19903,7 +20245,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;: func;;_RV_;;"
 	],
 	[
@@ -19911,7 +20253,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddFuncParameters;;_RV_;;parameters;;_RV_;;aCommand[: function],aCommand[:Parameters];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -19919,7 +20261,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;: return;;_RV_;;"
 	],
 	[
@@ -19927,7 +20269,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddReturnExpression;;_RV_;;parameters;;_RV_;;aCommand[:Expression];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -19935,7 +20277,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;: package;;_RV_;;"
 	],
 	[
@@ -19943,7 +20285,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddPackage;;_RV_;;parameters;;_RV_;;aCommand[:PackageName];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -19951,7 +20293,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;: class;;_RV_;;"
 	],
 	[
@@ -19959,7 +20301,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddDefineClass;;_RV_;;parameters;;_RV_;;aCommand[:ClassName],aCommand[:ParentClassName];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -19967,7 +20309,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;: private;;_RV_;;"
 	],
 	[
@@ -19975,7 +20317,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddPrivate;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -19983,7 +20325,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;:Expression;;_RV_;;"
 	],
 	[
@@ -19991,7 +20333,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddExpressionCommand;;_RV_;;parameters;;_RV_;;aCommand[:Expression];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -19999,7 +20341,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;:Assignment;;_RV_;;"
 	],
 	[
@@ -20007,7 +20349,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddAssignment;;_RV_;;parameters;;_RV_;;aCommand[:LeftSide],aCommand[:RightSide];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -20015,7 +20357,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;:UsingBraces;;_RV_;;"
 	],
 	[
@@ -20023,7 +20365,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddUsingBraces;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -20031,7 +20373,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;:AccessObject;;_RV_;;"
 	],
 	[
@@ -20039,7 +20381,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddAccessObject;;_RV_;;parameters;;_RV_;;aCommand[:Expression];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -20047,7 +20389,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;:NestedFunc;;_RV_;;"
 	],
 	[
@@ -20055,7 +20397,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddNestedFunc;;_RV_;;parameters;;_RV_;;aCommand[:Variable],aCommand[:Parameters];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -20063,7 +20405,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;:NewObj;;_RV_;;"
 	],
 	[
@@ -20071,7 +20413,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddNewObj;;_RV_;;parameters;;_RV_;;aCommand[:Variable],aCommand[:ClassName],aCommand[:cInitParameters],aCommand[:lInit],aCommand[:lBraces];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -20079,7 +20421,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;:CallFunction;;_RV_;;"
 	],
 	[
@@ -20087,7 +20429,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddCallFunction;;_RV_;;parameters;;_RV_;;aCommand[: function],aCommand[:Parameters];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -20095,7 +20437,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;:CallMethod;;_RV_;;"
 	],
 	[
@@ -20103,7 +20445,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddCallMethod;;_RV_;;parameters;;_RV_;;aCommand[:Object],aCommand[:Method],aCommand[:Parameters];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -20111,7 +20453,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;:Comment;;_RV_;;"
 	],
 	[
@@ -20119,7 +20461,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aComments;;_RV_;;rightside;;_RV_;;str2list(aCommand[:Comment]);;_RV_;;"
 	],
 	[
@@ -20127,7 +20469,7 @@ aInteractionsTable = [
 		1,
 		"forinloop",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"variable;;_RV_;;cComment;;_RV_;;in;;_RV_;;aComments;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
@@ -20135,7 +20477,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"condition;;_RV_;;right(cComment,1) = char(10);;_RV_;;"
 	],
 	[
@@ -20143,7 +20485,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cComment;;_RV_;;rightside;;_RV_;;left(cComment,len(cComment)-1);;_RV_;;"
 	],
 	[
@@ -20151,7 +20493,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"condition;;_RV_;;right(cComment,1) = char(13);;_RV_;;"
 	],
 	[
@@ -20159,7 +20501,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cComment;;_RV_;;rightside;;_RV_;;left(cComment,len(cComment)-1);;_RV_;;"
 	],
 	[
@@ -20167,7 +20509,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cComment;;_RV_;;rightside;;_RV_;;Trim(cComment);;_RV_;;"
 	],
 	[
@@ -20175,7 +20517,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"condition;;_RV_;;left(cComment,1) = "+char(34)+"#"+char(34)+";;_RV_;;"
 	],
 	[
@@ -20183,7 +20525,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cComment;;_RV_;;rightside;;_RV_;;substr(cComment,2);;_RV_;;"
 	],
 	[
@@ -20191,7 +20533,7 @@ aInteractionsTable = [
 		1,
 		"elseif",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"condition;;_RV_;;left(cComment,2) = "+char(34)+"//"+char(34)+";;_RV_;;"
 	],
 	[
@@ -20199,7 +20541,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cComment;;_RV_;;rightside;;_RV_;;substr(cComment,3);;_RV_;;"
 	],
 	[
@@ -20207,7 +20549,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddCommentAddText;;_RV_;;parameters;;_RV_;;cComment;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -20215,7 +20557,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;:OpenExpressionCallFunction;;_RV_;;"
 	],
 	[
@@ -20223,7 +20565,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddOpenExpressionCallFunction;;_RV_;;parameters;;_RV_;;aCommand[:Expression];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -20231,7 +20573,7 @@ aInteractionsTable = [
 		1,
 		"func",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"name;;_RV_;;Optimization;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -20239,7 +20581,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;nMax;;_RV_;;rightside;;_RV_;;len(aParseTree);;_RV_;;"
 	],
 	[
@@ -20247,7 +20589,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;The First Pass (We check ')' that exist alone & We check braces '{' after Expressions);;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -20255,7 +20597,7 @@ aInteractionsTable = [
 		1,
 		"forloop",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"start;;_RV_;;t = 2;;_RV_;;to;;_RV_;;nMax;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
@@ -20263,7 +20605,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aPrevCommand;;_RV_;;rightside;;_RV_;;aParseTree[t-1];;_RV_;;"
 	],
 	[
@@ -20271,7 +20613,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aCommand;;_RV_;;rightside;;_RV_;;aParseTree[t];;_RV_;;"
 	],
 	[
@@ -20279,7 +20621,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;merge ')' that exist alone with previous expression;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -20287,7 +20629,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;Also merge separated parameters like ',180)' with previous expression;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -20295,7 +20637,7 @@ aInteractionsTable = [
 		1,
 		"switch",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"variable;;_RV_;;aCommand[:Command];;_RV_;;"
 	],
 	[
@@ -20303,7 +20645,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;:Expression;;_RV_;;"
 	],
 	[
@@ -20311,7 +20653,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"condition;;_RV_;;aPrevCommand[:Command] = :Expression;;_RV_;;"
 	],
 	[
@@ -20319,7 +20661,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"condition;;_RV_;;right(trim(aCommand[:Expression]),1) = "+char(34)+")"+char(34)+" AND  NOT substr(aCommand[:Expression],"+char(34)+"("+char(34)+");;_RV_;;"
 	],
 	[
@@ -20327,7 +20669,7 @@ aInteractionsTable = [
 		1,
 		"freetyping",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;aParseTree[t-1][:Expression] += aCommand[:Expression];;_RV_;;"
 	],
 	[
@@ -20335,7 +20677,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;del;;_RV_;;parameters;;_RV_;;aParseTree,t;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -20343,7 +20685,7 @@ aInteractionsTable = [
 		1,
 		"freetyping",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;t--;;_RV_;;"
 	],
 	[
@@ -20351,7 +20693,7 @@ aInteractionsTable = [
 		1,
 		"freetyping",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;nMax--;;_RV_;;"
 	],
 	[
@@ -20359,7 +20701,7 @@ aInteractionsTable = [
 		1,
 		"loop",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;1;;_RV_;;"
 	],
 	[
@@ -20367,7 +20709,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;When we have braces '{' after expression - We will analysis the expression;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -20375,7 +20717,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;:UsingBraces;;_RV_;;"
 	],
 	[
@@ -20383,7 +20725,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"condition;;_RV_;;aPrevCommand[:Command] = :Expression;;_RV_;;"
 	],
 	[
@@ -20391,7 +20733,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cType;;_RV_;;rightside;;_RV_;;ExpressionType(aPrevCommand[:Expression]);;_RV_;;"
 	],
 	[
@@ -20399,7 +20741,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;lDelete;;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
@@ -20407,7 +20749,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;We have something like : myobj { };;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -20415,7 +20757,7 @@ aInteractionsTable = [
 		1,
 		"switch",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"variable;;_RV_;;cType;;_RV_;;"
 	],
 	[
@@ -20423,7 +20765,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;"+char(34)+"word"+char(34)+";;_RV_;;"
 	],
 	[
@@ -20431,7 +20773,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t-1][:Command];;_RV_;;rightside;;_RV_;;:AccessObject;;_RV_;;"
 	],
 	[
@@ -20439,7 +20781,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;lDelete;;_RV_;;rightside;;_RV_;;True;;_RV_;;"
 	],
 	[
@@ -20447,7 +20789,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;We have something like : myfunc = func x,y;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -20455,7 +20797,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;"+char(34)+"= func"+char(34)+";;_RV_;;"
 	],
 	[
@@ -20463,7 +20805,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;Get the function name (variable) and the function parameters;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -20471,7 +20813,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t-1][:Command];;_RV_;;rightside;;_RV_;;:nestedfunc;;_RV_;;"
 	],
 	[
@@ -20479,7 +20821,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cExpr;;_RV_;;rightside;;_RV_;;aParseTree[t-1][:Expression];;_RV_;;"
 	],
 	[
@@ -20487,7 +20829,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;nEqualPos;;_RV_;;rightside;;_RV_;;substr(cExpr,"+char(34)+"="+char(34)+");;_RV_;;"
 	],
 	[
@@ -20495,7 +20837,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cExpr2;;_RV_;;rightside;;_RV_;;substr(cExpr,nEqualPos+1);;_RV_;;"
 	],
 	[
@@ -20503,7 +20845,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;nFuncPos;;_RV_;;rightside;;_RV_;;substr(lower(cExpr2),"+char(34)+"func"+char(34)+");;_RV_;;"
 	],
 	[
@@ -20511,7 +20853,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cVariable;;_RV_;;rightside;;_RV_;;left(cExpr,nEqualPos-1);;_RV_;;"
 	],
 	[
@@ -20519,7 +20861,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cPara;;_RV_;;rightside;;_RV_;;substr(cExpr2,nFuncPos+4);;_RV_;;"
 	],
 	[
@@ -20527,7 +20869,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t-1][:Variable];;_RV_;;rightside;;_RV_;;trim(cVariable);;_RV_;;"
 	],
 	[
@@ -20535,7 +20877,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t-1][:Parameters];;_RV_;;rightside;;_RV_;;trim(cPara);;_RV_;;"
 	],
 	[
@@ -20543,7 +20885,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;lDelete;;_RV_;;rightside;;_RV_;;True;;_RV_;;"
 	],
 	[
@@ -20551,7 +20893,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;We have something like : myobj = new myclass;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -20559,7 +20901,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;"+char(34)+"= new"+char(34)+";;_RV_;;"
 	],
 	[
@@ -20567,7 +20909,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;Get the Object Name and the Class Name;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -20575,7 +20917,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t-1][:Command];;_RV_;;rightside;;_RV_;;:newobj;;_RV_;;"
 	],
 	[
@@ -20583,7 +20925,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cExpr;;_RV_;;rightside;;_RV_;;aParseTree[t-1][:Expression];;_RV_;;"
 	],
 	[
@@ -20591,7 +20933,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;nEqualPos;;_RV_;;rightside;;_RV_;;substr(cExpr,"+char(34)+"="+char(34)+");;_RV_;;"
 	],
 	[
@@ -20599,7 +20941,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cExpr2;;_RV_;;rightside;;_RV_;;substr(cExpr,nEqualPos+1);;_RV_;;"
 	],
 	[
@@ -20607,7 +20949,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;nNewPos;;_RV_;;rightside;;_RV_;;substr(lower(cExpr2),"+char(34)+"new"+char(34)+");;_RV_;;"
 	],
 	[
@@ -20615,7 +20957,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cVariable;;_RV_;;rightside;;_RV_;;left(cExpr,nEqualPos-1);;_RV_;;"
 	],
 	[
@@ -20623,7 +20965,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cClassName;;_RV_;;rightside;;_RV_;;substr(cExpr2,nNewPos+3);;_RV_;;"
 	],
 	[
@@ -20631,7 +20973,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t-1][:Variable];;_RV_;;rightside;;_RV_;;trim(cVariable);;_RV_;;"
 	],
 	[
@@ -20639,7 +20981,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t-1][:ClassName];;_RV_;;rightside;;_RV_;;trim(cClassName);;_RV_;;"
 	],
 	[
@@ -20647,7 +20989,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t-1][:lInit];;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
@@ -20655,7 +20997,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t-1][:lBraces];;_RV_;;rightside;;_RV_;;True;;_RV_;;"
 	],
 	[
@@ -20663,7 +21005,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;lDelete;;_RV_;;rightside;;_RV_;;True;;_RV_;;"
 	],
 	[
@@ -20671,7 +21013,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;We have something like : myobj = new myclass(value);;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -20679,7 +21021,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;"+char(34)+"= new init"+char(34)+";;_RV_;;"
 	],
 	[
@@ -20687,7 +21029,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;Get the Object Name, the Class Name and the Init() method parameters;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -20695,7 +21037,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t-1][:Command];;_RV_;;rightside;;_RV_;;:newobj;;_RV_;;"
 	],
 	[
@@ -20703,7 +21045,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cExpr;;_RV_;;rightside;;_RV_;;aParseTree[t-1][:Expression];;_RV_;;"
 	],
 	[
@@ -20711,7 +21053,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;nEqualPos;;_RV_;;rightside;;_RV_;;substr(cExpr,"+char(34)+"="+char(34)+");;_RV_;;"
 	],
 	[
@@ -20719,7 +21061,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cExpr2;;_RV_;;rightside;;_RV_;;substr(cExpr,nEqualPos+1);;_RV_;;"
 	],
 	[
@@ -20727,7 +21069,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;nNewPos;;_RV_;;rightside;;_RV_;;substr(lower(cExpr2),"+char(34)+"new"+char(34)+");;_RV_;;"
 	],
 	[
@@ -20735,7 +21077,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cVariable;;_RV_;;rightside;;_RV_;;left(cExpr,nEqualPos-1);;_RV_;;"
 	],
 	[
@@ -20743,7 +21085,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cClassName;;_RV_;;rightside;;_RV_;;substr(cExpr2,nNewPos+3);;_RV_;;"
 	],
 	[
@@ -20751,7 +21093,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cInit;;_RV_;;rightside;;_RV_;;SubStr(cClassName,substr(cClassName,"+char(34)+"("+char(34)+")+1);;_RV_;;"
 	],
 	[
@@ -20759,7 +21101,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cInit;;_RV_;;rightside;;_RV_;;left(cInit,len(cInit)-1);;_RV_;;"
 	],
 	[
@@ -20767,7 +21109,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cClassName;;_RV_;;rightside;;_RV_;;left(cClassName,substr(cClassName,"+char(34)+"("+char(34)+")-1);;_RV_;;"
 	],
 	[
@@ -20775,7 +21117,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t-1][:Variable];;_RV_;;rightside;;_RV_;;trim(cVariable);;_RV_;;"
 	],
 	[
@@ -20783,7 +21125,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t-1][:ClassName];;_RV_;;rightside;;_RV_;;trim(cClassName);;_RV_;;"
 	],
 	[
@@ -20791,7 +21133,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t-1][:lInit];;_RV_;;rightside;;_RV_;;True;;_RV_;;"
 	],
 	[
@@ -20799,7 +21141,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t-1][:cInitParameters];;_RV_;;rightside;;_RV_;;cInit;;_RV_;;"
 	],
 	[
@@ -20807,7 +21149,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t-1][:lBraces];;_RV_;;rightside;;_RV_;;True;;_RV_;;"
 	],
 	[
@@ -20815,7 +21157,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;lDelete;;_RV_;;rightside;;_RV_;;True;;_RV_;;"
 	],
 	[
@@ -20823,7 +21165,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;We have something like : new myclass;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -20831,7 +21173,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;"+char(34)+"new"+char(34)+";;_RV_;;"
 	],
 	[
@@ -20839,7 +21181,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;Get the Class Name;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -20847,7 +21189,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t-1][:Command];;_RV_;;rightside;;_RV_;;:newobj;;_RV_;;"
 	],
 	[
@@ -20855,7 +21197,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cExpr;;_RV_;;rightside;;_RV_;;aParseTree[t-1][:Expression];;_RV_;;"
 	],
 	[
@@ -20863,7 +21205,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;nNewPos;;_RV_;;rightside;;_RV_;;substr(lower(cExpr),"+char(34)+"new"+char(34)+");;_RV_;;"
 	],
 	[
@@ -20871,7 +21213,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cClassName;;_RV_;;rightside;;_RV_;;substr(cExpr,nNewPos+3);;_RV_;;"
 	],
 	[
@@ -20879,7 +21221,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t-1][:ClassName];;_RV_;;rightside;;_RV_;;trim(cClassName);;_RV_;;"
 	],
 	[
@@ -20887,7 +21229,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t-1][:lInit];;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
@@ -20895,7 +21237,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t-1][:lBraces];;_RV_;;rightside;;_RV_;;True;;_RV_;;"
 	],
 	[
@@ -20903,7 +21245,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;lDelete;;_RV_;;rightside;;_RV_;;True;;_RV_;;"
 	],
 	[
@@ -20911,7 +21253,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"condition;;_RV_;;lDelete;;_RV_;;"
 	],
 	[
@@ -20919,7 +21261,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;del;;_RV_;;parameters;;_RV_;;aParseTree,t;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -20927,7 +21269,7 @@ aInteractionsTable = [
 		1,
 		"freetyping",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;t--;;_RV_;;"
 	],
 	[
@@ -20935,7 +21277,7 @@ aInteractionsTable = [
 		1,
 		"freetyping",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;nMax--;;_RV_;;"
 	],
 	[
@@ -20943,7 +21285,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;Second Pass (We check Expressions that Contains New Objects);;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -20951,7 +21293,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;nMax;;_RV_;;rightside;;_RV_;;len(aParseTree);;_RV_;;"
 	],
 	[
@@ -20959,7 +21301,7 @@ aInteractionsTable = [
 		1,
 		"forloop",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"start;;_RV_;;t = 1;;_RV_;;to;;_RV_;;nMax;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
@@ -20967,7 +21309,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"condition;;_RV_;;aParseTree[t][:Command] = :Expression;;_RV_;;"
 	],
 	[
@@ -20975,7 +21317,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"condition;;_RV_;;ExpressionIsCallFunction(t) OR ExpressionIsCallMethod(t);;_RV_;;"
 	],
 	[
@@ -20983,7 +21325,7 @@ aInteractionsTable = [
 		1,
 		"loop",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;1;;_RV_;;"
 	],
 	[
@@ -20991,7 +21333,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cType;;_RV_;;rightside;;_RV_;;ExpressionType(aParseTree[t][:Expression]);;_RV_;;"
 	],
 	[
@@ -20999,7 +21341,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;We have something like : myobj = new myclass;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -21007,7 +21349,7 @@ aInteractionsTable = [
 		1,
 		"switch",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"variable;;_RV_;;cType;;_RV_;;"
 	],
 	[
@@ -21015,7 +21357,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;"+char(34)+"= new"+char(34)+";;_RV_;;"
 	],
 	[
@@ -21023,7 +21365,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;Get the Object Name and the Class Name;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -21031,7 +21373,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t][:Command];;_RV_;;rightside;;_RV_;;:newobj;;_RV_;;"
 	],
 	[
@@ -21039,7 +21381,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cExpr;;_RV_;;rightside;;_RV_;;aParseTree[t][:Expression];;_RV_;;"
 	],
 	[
@@ -21047,7 +21389,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;nEqualPos;;_RV_;;rightside;;_RV_;;substr(cExpr,"+char(34)+"="+char(34)+");;_RV_;;"
 	],
 	[
@@ -21055,7 +21397,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cExpr2;;_RV_;;rightside;;_RV_;;substr(cExpr,nEqualPos+1);;_RV_;;"
 	],
 	[
@@ -21063,7 +21405,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;nNewPos;;_RV_;;rightside;;_RV_;;substr(lower(cExpr2),"+char(34)+"new"+char(34)+");;_RV_;;"
 	],
 	[
@@ -21071,7 +21413,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cVariable;;_RV_;;rightside;;_RV_;;left(cExpr,nEqualPos-1);;_RV_;;"
 	],
 	[
@@ -21079,7 +21421,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cClassName;;_RV_;;rightside;;_RV_;;substr(cExpr2,nNewPos+3);;_RV_;;"
 	],
 	[
@@ -21087,7 +21429,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t][:Variable];;_RV_;;rightside;;_RV_;;trim(cVariable);;_RV_;;"
 	],
 	[
@@ -21095,7 +21437,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t][:ClassName];;_RV_;;rightside;;_RV_;;trim(cClassName);;_RV_;;"
 	],
 	[
@@ -21103,7 +21445,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t][:lInit];;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
@@ -21111,7 +21453,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t][:lBraces];;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
@@ -21119,7 +21461,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;We have something like : myobj = new myclass(value);;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -21127,7 +21469,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;"+char(34)+"= new init"+char(34)+";;_RV_;;"
 	],
 	[
@@ -21135,7 +21477,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;Get the Object Name, the Class Name and the Init() method parameters;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -21143,7 +21485,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t][:Command];;_RV_;;rightside;;_RV_;;:newobj;;_RV_;;"
 	],
 	[
@@ -21151,7 +21493,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cExpr;;_RV_;;rightside;;_RV_;;aParseTree[t][:Expression];;_RV_;;"
 	],
 	[
@@ -21159,7 +21501,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;nEqualPos;;_RV_;;rightside;;_RV_;;substr(cExpr,"+char(34)+"="+char(34)+");;_RV_;;"
 	],
 	[
@@ -21167,7 +21509,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cExpr2;;_RV_;;rightside;;_RV_;;substr(cExpr,nEqualPos+1);;_RV_;;"
 	],
 	[
@@ -21175,7 +21517,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;nNewPos;;_RV_;;rightside;;_RV_;;substr(lower(cExpr2),"+char(34)+"new"+char(34)+");;_RV_;;"
 	],
 	[
@@ -21183,7 +21525,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cVariable;;_RV_;;rightside;;_RV_;;left(cExpr,nEqualPos-1);;_RV_;;"
 	],
 	[
@@ -21191,7 +21533,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cClassName;;_RV_;;rightside;;_RV_;;substr(cExpr2,nNewPos+3);;_RV_;;"
 	],
 	[
@@ -21199,7 +21541,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cInit;;_RV_;;rightside;;_RV_;;SubStr(cClassName,substr(cClassName,"+char(34)+"("+char(34)+")+1);;_RV_;;"
 	],
 	[
@@ -21207,7 +21549,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cInit;;_RV_;;rightside;;_RV_;;left(cInit,len(cInit)-1);;_RV_;;"
 	],
 	[
@@ -21215,7 +21557,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cClassName;;_RV_;;rightside;;_RV_;;left(cClassName,substr(cClassName,"+char(34)+"("+char(34)+")-1);;_RV_;;"
 	],
 	[
@@ -21223,7 +21565,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t][:Variable];;_RV_;;rightside;;_RV_;;trim(cVariable);;_RV_;;"
 	],
 	[
@@ -21231,7 +21573,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t][:ClassName];;_RV_;;rightside;;_RV_;;trim(cClassName);;_RV_;;"
 	],
 	[
@@ -21239,7 +21581,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t][:lInit];;_RV_;;rightside;;_RV_;;True;;_RV_;;"
 	],
 	[
@@ -21247,7 +21589,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t][:cInitParameters];;_RV_;;rightside;;_RV_;;cInit;;_RV_;;"
 	],
 	[
@@ -21255,7 +21597,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t][:lBraces];;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
@@ -21263,7 +21605,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;We have something like : new myclass;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -21271,7 +21613,7 @@ aInteractionsTable = [
 		1,
 		"case",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;"+char(34)+"new"+char(34)+";;_RV_;;"
 	],
 	[
@@ -21279,7 +21621,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;Get the Class Name;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -21287,7 +21629,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t][:Command];;_RV_;;rightside;;_RV_;;:newobj;;_RV_;;"
 	],
 	[
@@ -21295,7 +21637,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cExpr;;_RV_;;rightside;;_RV_;;aParseTree[t][:Expression];;_RV_;;"
 	],
 	[
@@ -21303,7 +21645,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;nNewPos;;_RV_;;rightside;;_RV_;;substr(lower(cExpr),"+char(34)+"new"+char(34)+");;_RV_;;"
 	],
 	[
@@ -21311,7 +21653,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cClassName;;_RV_;;rightside;;_RV_;;substr(cExpr,nNewPos+3);;_RV_;;"
 	],
 	[
@@ -21319,7 +21661,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t][:ClassName];;_RV_;;rightside;;_RV_;;trim(cClassName);;_RV_;;"
 	],
 	[
@@ -21327,7 +21669,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t][:lInit];;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
@@ -21335,7 +21677,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t][:lBraces];;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
@@ -21343,7 +21685,7 @@ aInteractionsTable = [
 		1,
 		"elseif",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"condition;;_RV_;;aParseTree[t][:Command] = :AccessObject;;_RV_;;"
 	],
 	[
@@ -21351,7 +21693,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cExpr;;_RV_;;rightside;;_RV_;;aParseTree[t][:Expression];;_RV_;;"
 	],
 	[
@@ -21359,7 +21701,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;nPos;;_RV_;;rightside;;_RV_;;substr(cExpr,"+char(34)+"( new"+char(34)+");;_RV_;;"
 	],
 	[
@@ -21367,7 +21709,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"condition;;_RV_;;nPos;;_RV_;;"
 	],
 	[
@@ -21375,7 +21717,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;Copy the Current Command;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -21383,7 +21725,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;Insert;;_RV_;;parameters;;_RV_;;aParseTree,t,aParseTree[t];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -21391,7 +21733,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;Change the current command to Open Expression (Function Call);;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -21399,7 +21741,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t][:Command];;_RV_;;rightside;;_RV_;;:OpenExpressionCallFunction;;_RV_;;"
 	],
 	[
@@ -21407,7 +21749,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t][:Expression];;_RV_;;rightside;;_RV_;;left(cExpr,nPos-1);;_RV_;;"
 	],
 	[
@@ -21415,7 +21757,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;Change the Next Command (Access Object);;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -21423,7 +21765,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t+1][:Expression];;_RV_;;rightside;;_RV_;;substr(cExpr,nPos+2);;_RV_;;"
 	],
 	[
@@ -21431,7 +21773,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;Change the extra ')' to (Block End) command;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -21439,7 +21781,7 @@ aInteractionsTable = [
 		1,
 		"forloop",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"start;;_RV_;;t2 = 1;;_RV_;;to;;_RV_;;nMax;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
@@ -21447,7 +21789,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"condition;;_RV_;;aParseTree[t2][:Command] = :Expression;;_RV_;;"
 	],
 	[
@@ -21455,7 +21797,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"condition;;_RV_;;trim(aParseTree[t2][:Expression]) = "+char(34)+")"+char(34)+";;_RV_;;"
 	],
 	[
@@ -21463,7 +21805,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[t2][:Command];;_RV_;;rightside;;_RV_;;:BlockEnd;;_RV_;;"
 	],
 	[
@@ -21471,7 +21813,7 @@ aInteractionsTable = [
 		1,
 		"exit",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;1;;_RV_;;"
 	],
 	[
@@ -21479,7 +21821,7 @@ aInteractionsTable = [
 		1,
 		"func",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"name;;_RV_;;ExpressionType;;_RV_;;parameters;;_RV_;;cExpr;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -21487,7 +21829,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cExpr;;_RV_;;rightside;;_RV_;;lower(cExpr);;_RV_;;"
 	],
 	[
@@ -21495,7 +21837,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cType;;_RV_;;rightside;;_RV_;;"+char(34)+"word"+char(34)+";;_RV_;;"
 	],
 	[
@@ -21503,7 +21845,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"condition;;_RV_;;substr(cExpr,"+char(34)+"= ["+char(34)+") OR substr(cExpr,"+char(34)+",:"+char(34)+");;_RV_;;"
 	],
 	[
@@ -21511,7 +21853,7 @@ aInteractionsTable = [
 		1,
 		"return",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;cType;;_RV_;;"
 	],
 	[
@@ -21519,7 +21861,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"condition;;_RV_;;substr(cExpr,"+char(34)+"="+char(34)+");;_RV_;;"
 	],
 	[
@@ -21527,7 +21869,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"condition;;_RV_;;substr(cExpr,"+char(34)+"new "+char(34)+");;_RV_;;"
 	],
 	[
@@ -21535,7 +21877,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cType;;_RV_;;rightside;;_RV_;;"+char(34)+"= new"+char(34)+";;_RV_;;"
 	],
 	[
@@ -21543,7 +21885,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"condition;;_RV_;;substr(cExpr,"+char(34)+"("+char(34)+") AND substr(cExpr,"+char(34)+")"+char(34)+");;_RV_;;"
 	],
 	[
@@ -21551,7 +21893,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cType;;_RV_;;rightside;;_RV_;;"+char(34)+"= new init"+char(34)+";;_RV_;;"
 	],
 	[
@@ -21559,7 +21901,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"condition;;_RV_;;substr(cExpr,"+char(34)+"func "+char(34)+");;_RV_;;"
 	],
 	[
@@ -21567,7 +21909,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cType;;_RV_;;rightside;;_RV_;;"+char(34)+"= func"+char(34)+";;_RV_;;"
 	],
 	[
@@ -21575,7 +21917,7 @@ aInteractionsTable = [
 		1,
 		"else",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		""
 	],
 	[
@@ -21583,7 +21925,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;nPos;;_RV_;;rightside;;_RV_;;substr(cExpr,"+char(34)+"new "+char(34)+");;_RV_;;"
 	],
 	[
@@ -21591,7 +21933,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"condition;;_RV_;;nPos;;_RV_;;"
 	],
 	[
@@ -21599,7 +21941,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"condition;;_RV_;;trim(left(cExpr,nPos-1)) = NULL;;_RV_;;"
 	],
 	[
@@ -21607,7 +21949,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cType;;_RV_;;rightside;;_RV_;;"+char(34)+"new"+char(34)+";;_RV_;;"
 	],
 	[
@@ -21615,7 +21957,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"condition;;_RV_;;substr(cExpr,"+char(34)+"("+char(34)+") AND substr(cExpr,"+char(34)+")"+char(34)+");;_RV_;;"
 	],
 	[
@@ -21623,7 +21965,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cType;;_RV_;;rightside;;_RV_;;"+char(34)+"new init"+char(34)+";;_RV_;;"
 	],
 	[
@@ -21631,7 +21973,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;nPos;;_RV_;;rightside;;_RV_;;substr(cExpr,"+char(34)+"func "+char(34)+");;_RV_;;"
 	],
 	[
@@ -21639,7 +21981,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"condition;;_RV_;;nPos;;_RV_;;"
 	],
 	[
@@ -21647,7 +21989,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"condition;;_RV_;;trim(left(cExpr,nPos-1)) = NULL;;_RV_;;"
 	],
 	[
@@ -21655,7 +21997,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cType;;_RV_;;rightside;;_RV_;;"+char(34)+"func"+char(34)+";;_RV_;;"
 	],
 	[
@@ -21663,7 +22005,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;Check if the NEW is used inside a literal;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -21671,7 +22013,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"condition;;_RV_;;cType = "+char(34)+"= new"+char(34)+" OR cType = "+char(34)+"= new init"+char(34)+";;_RV_;;"
 	],
 	[
@@ -21679,7 +22021,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;nPos;;_RV_;;rightside;;_RV_;;substr(cExpr,"+char(34)+"new "+char(34)+");;_RV_;;"
 	],
 	[
@@ -21687,7 +22029,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cSub;;_RV_;;rightside;;_RV_;;left(cExpr,nPos);;_RV_;;"
 	],
 	[
@@ -21695,7 +22037,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"condition;;_RV_;;substr(cSub,'"+char(34)+"') OR substr(cSub,"+char(34)+"'"+char(34)+") OR substr(cSub,"+char(34)+"`"+char(34)+");;_RV_;;"
 	],
 	[
@@ -21703,7 +22045,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cType;;_RV_;;rightside;;_RV_;;"+char(34)+"word"+char(34)+";;_RV_;;"
 	],
 	[
@@ -21711,7 +22053,7 @@ aInteractionsTable = [
 		1,
 		"return",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;cType;;_RV_;;"
 	],
 	[
@@ -21719,7 +22061,7 @@ aInteractionsTable = [
 		1,
 		"func",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"name;;_RV_;;ExpressionIsCallFunction;;_RV_;;parameters;;_RV_;;nIndex;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -21727,7 +22069,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cExp;;_RV_;;rightside;;_RV_;;aParseTree[nIndex][:Expression];;_RV_;;"
 	],
 	[
@@ -21735,7 +22077,7 @@ aInteractionsTable = [
 		1,
 		"newobj",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;exp;;_RV_;;value2;;_RV_;;qregularexpression;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -21743,7 +22085,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setPattern;;_RV_;;parameters;;_RV_;;"+char(34)+"^(\w+)\((.*)\)$"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -21751,7 +22093,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;match;;_RV_;;rightside;;_RV_;;match(cExp,0,0,0);;_RV_;;"
 	],
 	[
@@ -21759,7 +22101,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"condition;;_RV_;;match.hasmatch();;_RV_;;"
 	],
 	[
@@ -21767,7 +22109,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cFunc;;_RV_;;rightside;;_RV_;;match.captured(1);;_RV_;;"
 	],
 	[
@@ -21775,7 +22117,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cPara;;_RV_;;rightside;;_RV_;;match.captured(2);;_RV_;;"
 	],
 	[
@@ -21783,7 +22125,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"condition;;_RV_;;endFuncCallAtStart(cPara);;_RV_;;"
 	],
 	[
@@ -21791,7 +22133,7 @@ aInteractionsTable = [
 		1,
 		"return",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
@@ -21799,7 +22141,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[nIndex][:Command];;_RV_;;rightside;;_RV_;;:CallFunction;;_RV_;;"
 	],
 	[
@@ -21807,7 +22149,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[nIndex][: function];;_RV_;;rightside;;_RV_;;cFunc;;_RV_;;"
 	],
 	[
@@ -21815,7 +22157,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[nIndex][:Parameters];;_RV_;;rightside;;_RV_;;cPara;;_RV_;;"
 	],
 	[
@@ -21823,7 +22165,7 @@ aInteractionsTable = [
 		1,
 		"return",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;True;;_RV_;;"
 	],
 	[
@@ -21831,7 +22173,7 @@ aInteractionsTable = [
 		1,
 		"return",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;False;;_RV_;;"
 	],
 	[
@@ -21839,7 +22181,7 @@ aInteractionsTable = [
 		1,
 		"func",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"name;;_RV_;;ExpressionIsCallMethod;;_RV_;;parameters;;_RV_;;nIndex;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -21847,7 +22189,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cExp;;_RV_;;rightside;;_RV_;;aParseTree[nIndex][:Expression];;_RV_;;"
 	],
 	[
@@ -21855,7 +22197,7 @@ aInteractionsTable = [
 		1,
 		"newobj",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;exp;;_RV_;;value2;;_RV_;;qregularexpression;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -21863,7 +22205,7 @@ aInteractionsTable = [
 		1,
 		"callfunc",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setPattern;;_RV_;;parameters;;_RV_;;"+char(34)+"^(\w+)\.(\w+)\((.*)\)$"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
@@ -21871,7 +22213,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;match;;_RV_;;rightside;;_RV_;;match(cExp,0,0,0);;_RV_;;"
 	],
 	[
@@ -21879,7 +22221,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"condition;;_RV_;;match.hasmatch();;_RV_;;"
 	],
 	[
@@ -21887,7 +22229,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cObject;;_RV_;;rightside;;_RV_;;match.captured(1);;_RV_;;"
 	],
 	[
@@ -21895,7 +22237,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cMethod;;_RV_;;rightside;;_RV_;;match.captured(2);;_RV_;;"
 	],
 	[
@@ -21903,7 +22245,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cPara;;_RV_;;rightside;;_RV_;;match.captured(3);;_RV_;;"
 	],
 	[
@@ -21911,7 +22253,7 @@ aInteractionsTable = [
 		1,
 		"ifstatement",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"condition;;_RV_;;endFuncCallAtStart(cPara);;_RV_;;"
 	],
 	[
@@ -21919,7 +22261,7 @@ aInteractionsTable = [
 		1,
 		"return",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
@@ -21927,7 +22269,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[nIndex][:Command];;_RV_;;rightside;;_RV_;;:CallMethod;;_RV_;;"
 	],
 	[
@@ -21935,7 +22277,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[nIndex][:Object];;_RV_;;rightside;;_RV_;;cObject;;_RV_;;"
 	],
 	[
@@ -21943,7 +22285,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[nIndex][:Method];;_RV_;;rightside;;_RV_;;cMethod;;_RV_;;"
 	],
 	[
@@ -21951,7 +22293,7 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;aParseTree[nIndex][:Parameters];;_RV_;;rightside;;_RV_;;cPara;;_RV_;;"
 	],
 	[
@@ -21959,7 +22301,7 @@ aInteractionsTable = [
 		1,
 		"return",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;True;;_RV_;;"
 	],
 	[
@@ -21967,7 +22309,7 @@ aInteractionsTable = [
 		1,
 		"return",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;False;;_RV_;;"
 	],
 	[
@@ -21975,7 +22317,7 @@ aInteractionsTable = [
 		1,
 		"func",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"name;;_RV_;;endFuncCallAtStart;;_RV_;;parameters;;_RV_;;cPara;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -21983,7 +22325,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;This is not a real function call;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -21991,7 +22333,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;This happens in cases like parent().test();;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -21999,7 +22341,7 @@ aInteractionsTable = [
 		1,
 		"comment_text",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"value;;_RV_;;where cPara will be ).test(;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
@@ -22007,16 +22349,56 @@ aInteractionsTable = [
 		1,
 		"assignment",
 		"07/02/2025",
-		"16:26:50",
+		"18:19:59",
 		"leftside;;_RV_;;cPara;;_RV_;;rightside;;_RV_;;trim(cPara);;_RV_;;"
 	],
 	[
 		339,
 		1,
+		"ifstatement",
+		"07/02/2025",
+		"18:19:59",
+		"condition;;_RV_;;len(cPara) > 1 AND left(cPara,1) = "+char(34)+")"+char(34)+";;_RV_;;"
+	],
+	[
+		340,
+		1,
 		"return",
 		"07/02/2025",
-		"16:26:50",
-		"value;;_RV_;;len( cPara ) >1  and left( cPara,1 ) ="+char(34)+")"+char(34)+" ;;_RV_;;"
+		"18:19:59",
+		"value;;_RV_;;True;;_RV_;;"
+	],
+	[
+		341,
+		1,
+		"assignment",
+		"07/02/2025",
+		"18:19:59",
+		"leftside;;_RV_;;nPos;;_RV_;;rightside;;_RV_;;subStr(cPara,"+char(34)+"("+char(34)+");;_RV_;;"
+	],
+	[
+		342,
+		1,
+		"ifstatement",
+		"07/02/2025",
+		"18:19:59",
+		"condition;;_RV_;;nPos AND nPos > subStr(cPara,"+char(34)+")"+char(34)+");;_RV_;;"
+	],
+	[
+		343,
+		1,
+		"return",
+		"07/02/2025",
+		"18:19:59",
+		"value;;_RV_;;True;;_RV_;;"
+	],
+	[
+		344,
+		1,
+		"return",
+		"07/02/2025",
+		"18:19:59",
+		"value;;_RV_;;False;;_RV_;;"
 	]
 ]
 
