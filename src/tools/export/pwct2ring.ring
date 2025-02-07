@@ -33,10 +33,11 @@
 	load "../../translation/english.ring"
 
 func main 
-	drawline()
-	? "PWCT2Ring Converter"
-	? "2025, Mahmoud Fayed"
-	drawline()
+
+	? "========================================================"
+	? "PWCT2Ring - 2025, Mahmoud Fayed <msfclipper@yahoo.com>"
+	? "Usage: pwct2ring <inputfile.pwct>"
+	? "========================================================"
 	
 	aAppArgs = AppArguments()
 
@@ -49,9 +50,6 @@ func main
 			process(cInputFile,cOutputFile)
 		}
 	}
-
-func drawline 
-	? Copy("=",60)
 
 func process cInputFile,cOutputFile
 
