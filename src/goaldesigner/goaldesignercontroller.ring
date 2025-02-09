@@ -2110,7 +2110,7 @@ class GoalDesignerController from WindowsControllerParent
 				Tab + Tab + "oView {" + WindowsNL() +
 				Tab + Tab + Tab + WindowsNL() + 
 					Tab + Tab + "}" + WindowsNL()
-		ComponentsBrowserWindow().TextualCodeToVisualCode(cStr)
+		ComponentsBrowserWindow().EnglishTextualCodeToVisualCode(cStr)
 
 	func DropEvent
 		# Source (Dragged Step)
