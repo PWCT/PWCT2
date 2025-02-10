@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'arabic'
-nStepsID                 = 51		
-nInteractionsID          = 24
+nStepsID                 = 54		
+nInteractionsID          = 27
 
 aStepsTable = [
 	[
@@ -312,12 +312,12 @@ aStepsTable = [
 		]
 	],
 	[
-		11,
+		52,
 		9,
 		[
 			[
 				"name",
-				"إستدعاء الدالة StyleFusion <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span> "
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">نمط_اندماج</font></span>(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
 			],
 			[
 				"active",
@@ -325,11 +325,11 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"StyleFusion()"
+				"stylefusion()"
 			],
 			[
 				"interactionid",
-				6
+				25
 			],
 			[
 				"visible",
@@ -345,17 +345,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"StyleFusion()"
+				"نمط_اندماج()"
 			]
 		]
 	],
 	[
-		12,
+		54,
 		9,
 		[
 			[
 				"name",
-				"إستدعاء الدالة open_window <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">:filename_Controller</font></span> "
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">افتح&nbsp;النافذة</font></span>(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">:filename_Controller</font></span>)"
 			],
 			[
 				"active",
@@ -363,11 +363,11 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"open_window(:filename_Controller)"
+				"Open_Window(:filename_Controller)"
 			],
 			[
 				"interactionid",
-				7
+				27
 			],
 			[
 				"visible",
@@ -383,17 +383,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"open_window(:SayHelloController)"
+				"افتح النافذة(:filename_Controller)"
 			]
 		]
 	],
 	[
-		13,
+		53,
 		9,
 		[
 			[
 				"name",
-				"إستدعاء الدالة exec <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span> "
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">تنفيذ</font></span>(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
 			],
 			[
 				"active",
@@ -405,7 +405,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				8
+				26
 			],
 			[
 				"visible",
@@ -421,7 +421,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"exec()"
+				"تنفيذ()"
 			]
 		]
 	],
@@ -689,30 +689,6 @@ aInteractionsTable = [
 		"value;;_RV_;;;;_RV_;;value2;;_RV_;;App;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
-		6,
-		1,
-		"callfunc",
-		"16/02/2018",
-		"12:38:26",
-		"name;;_RV_;;StyleFusion;;_RV_;;lparameters;;_RV_;;0;;_RV_;;parameters;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;"
-	],
-	[
-		7,
-		1,
-		"callfunc",
-		"16/02/2018",
-		"12:38:44",
-		"name;;_RV_;;open_window;;_RV_;;lparameters;;_RV_;;2;;_RV_;;parameters;;_RV_;;:filename_Controller;;_RV_;;loutput;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;"
-	],
-	[
-		8,
-		1,
-		"callfunc",
-		"16/02/2018",
-		"12:38:51",
-		"name;;_RV_;;exec;;_RV_;;lparameters;;_RV_;;0;;_RV_;;parameters;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;"
-	],
-	[
 		9,
 		1,
 		"class",
@@ -735,6 +711,30 @@ aInteractionsTable = [
 		"15/10/2021",
 		"13:22:13",
 		"file;;_RV_;;filename_view.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+	],
+	[
+		25,
+		1,
+		"qappclass",
+		"10/02/2025",
+		"17:07:43",
+		"value;;_RV_;;;;_RV_;;value2;;_RV_;;132;;_RV_;;value3;;_RV_;;;;_RV_;;value4;;_RV_;;;;_RV_;;"
+	],
+	[
+		26,
+		1,
+		"qappclass",
+		"10/02/2025",
+		"17:08:23",
+		"value;;_RV_;;;;_RV_;;value2;;_RV_;;24;;_RV_;;value3;;_RV_;;;;_RV_;;value4;;_RV_;;;;_RV_;;"
+	],
+	[
+		27,
+		1,
+		"objectslib",
+		"10/02/2025",
+		"17:08:56",
+		"value;;_RV_;;:filename_Controller;;_RV_;;value2;;_RV_;;1;;_RV_;;"
 	]
 ]
 
