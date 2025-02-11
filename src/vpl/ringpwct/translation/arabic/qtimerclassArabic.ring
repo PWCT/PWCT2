@@ -27,7 +27,23 @@ T_CT_QTIMERCLASS_IP_VALUE2FUNC = [
 	"timerid"
 ]
 # Copy the list to support changing the generated method name in the Steps Tree
-T_CT_QTIMERCLASS_IP_VALUE2STEPFUNC = T_CT_QTIMERCLASS_IP_VALUE2FUNC
+T_CT_QTIMERCLASS_IP_VALUE2STEPFUNC = [
+    "حذف",
+    "الحصول على حدث المهلة",
+    "تهيئة",
+    "الفاصل الزمني",
+    "نشط",
+    "لقطة واحدة",
+    "مؤشر الكائن",
+    "تعيين الفاصل الزمني",
+    "تعيين لقطة واحدة",
+    "تعيين حدث المهلة",
+    "بدء",
+    "إيقاف",
+    "معرف المؤقت"
+]
+
+/*
 T_CT_QTIMERCLASS_IP_VALUE2LIST = [
 	"delete(void) --> void",
 	"gettimeoutEvent(void) --> char",
@@ -43,5 +59,23 @@ T_CT_QTIMERCLASS_IP_VALUE2LIST = [
 	"stop(void) --> void",
 	"timerId(void) --> int"
 ]
+*/
+
+T_CT_QTIMERCLASS_IP_VALUE2LIST = [
+    "حذف(لاشىء) --> لاشىء",
+    "الحصول على حدث المهلة(لاشىء) --> حرف",
+    "تهيئة(الأصل) --> كائن",
+    "الفاصل الزمني(لاشىء) --> عدد صحيح",
+    "نشط(لاشىء) --> منطقية",
+    "لقطة واحدة(لاشىء) --> منطقية",
+    "مؤشر الكائن(لاشىء) --> مؤشر",
+    "تعيين الفاصل الزمني(عدد صحيح ميلي ثانية) --> لاشىء",
+    "تعيين لقطة واحدة(منطقية لقطة واحدة) --> لاشىء",
+    "تعيين حدث المهلة(حرف *) --> لاشىء",
+    "بدء(لاشىء) --> لاشىء",
+    "إيقاف(لاشىء) --> لاشىء",
+    "معرف المؤقت(لاشىء) --> عدد صحيح"
+]
+
 T_CT_QTIMERCLASS_IP_VALUE3 = "المعطيات :"
 T_CT_QTIMERCLASS_IP_VALUE4 = "الناتج :"
