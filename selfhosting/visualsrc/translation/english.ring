@@ -325,3 +325,5 @@ T_GD_STEPSTREEICONS = [["💾","Load "],["🖥️","Print "],["🚀","Start Here
 #Ring2PWCT Syntax
 T_RING2PWCT_USEBEFORESCANNER = False
 T_RING2PWCT_BEFORESCANNER = ""
+#Form Events
+T_FORMEVENTS_PARENTSTEP = "Methods"

@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'english'
-nStepsID                 = 16		
-nInteractionsID          = 16
+nStepsID                 = 41		
+nInteractionsID          = 41
 
 aStepsTable = [
 	[
@@ -472,7 +472,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_MATHCLASS_IP_VALUE2STEPFUNC</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_MATHCLASS_IP_VALUE2FUNC</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_MATHCLASS_IP_VALUE2STEPFUNC</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;جيبا_مقلوب&quot;,&quot;جيبا&quot;,&quot;ظل_مقلوب&quot;,&quot;ظل_مقلوب_اثنين&quot;,&quot;سقف&quot;,&quot;جيب&quot;,&quot;جيب_تمام_زائد&quot;,&quot;الفواصل_العشرية&quot;,&quot;أس&quot;,&quot;قيمة_مطلقة&quot;,&quot;أرضية&quot;,&quot;لوغاريتم&quot;,&quot;لوغاريتم_10&quot;,&quot;قوة&quot;,&quot;عشوائي&quot;,&quot;جيب_تمام&quot;,&quot;جيب_تمام_زائد_اثنين&quot;,&quot;جذر_تربيعي&quot;,&quot;ظل&quot;,&quot;ظل_زائد&quot;,&quot;غير_موقع&quot;]</font></span>"
 			],
 			[
 				"active",
@@ -480,7 +480,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_MATHCLASS_IP_VALUE2STEPFUNC = T_CT_MATHCLASS_IP_VALUE2FUNC"
+				"T_CT_MATHCLASS_IP_VALUE2STEPFUNC = ["+char(34)+"جيبا_مقلوب"+char(34)+","+char(34)+"جيبا"+char(34)+","+char(34)+"ظل_مقلوب"+char(34)+","+char(34)+"ظل_مقلوب_اثنين"+char(34)+","+char(34)+"سقف"+char(34)+","+char(34)+"جيب"+char(34)+","+char(34)+"جيب_تمام_زائد"+char(34)+","+char(34)+"الفواصل_العشرية"+char(34)+","+char(34)+"أس"+char(34)+","+char(34)+"قيمة_مطلقة"+char(34)+","+char(34)+"أرضية"+char(34)+","+char(34)+"لوغاريتم"+char(34)+","+char(34)+"لوغاريتم_10"+char(34)+","+char(34)+"قوة"+char(34)+","+char(34)+"عشوائي"+char(34)+","+char(34)+"جيب_تمام"+char(34)+","+char(34)+"جيب_تمام_زائد_اثنين"+char(34)+","+char(34)+"جذر_تربيعي"+char(34)+","+char(34)+"ظل"+char(34)+","+char(34)+"ظل_زائد"+char(34)+","+char(34)+"غير_موقع"+char(34)+"]"
 			],
 			[
 				"interactionid",
@@ -500,7 +500,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"T_CT_MATHCLASS_IP_VALUE2STEPFUNC = T_CT_MATHCLASS_IP_VALUE2FUNC"
+				"T_CT_MATHCLASS_IP_VALUE2STEPFUNC = ["+char(34)+"جيبا_مقلوب"+char(34)+","+char(34)+"جيبا"+char(34)+","+char(34)+"ظل_مقلوب"+char(34)+","+char(34)+"ظل_مقلوب_اثنين"+char(34)+","+char(34)+"سقف"+char(34)+","+char(34)+"جيب"+char(34)+","+char(34)+"جيب_تمام_زائد"+char(34)+","+char(34)+"الفواصل_العشرية"+char(34)+","+char(34)+"أس"+char(34)+","+char(34)+"قيمة_مطلقة"+char(34)+","+char(34)+"أرضية"+char(34)+","+char(34)+"لوغاريتم"+char(34)+","+char(34)+"لوغاريتم_10"+char(34)+","+char(34)+"قوة"+char(34)+","+char(34)+"عشوائي"+char(34)+","+char(34)+"جيب_تمام"+char(34)+","+char(34)+"جيب_تمام_زائد_اثنين"+char(34)+","+char(34)+"جذر_تربيعي"+char(34)+","+char(34)+"ظل"+char(34)+","+char(34)+"ظل_زائد"+char(34)+","+char(34)+"غير_موقع"+char(34)+"]"
 			]
 		]
 	],
@@ -510,7 +510,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_MATHCLASS_IP_VALUE2LIST</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;acos(nNumber)&nbsp;--&gt;&nbsp;Number&quot;,&quot;asin(nNumber)&nbsp;--&gt;&nbsp;Number&quot;,&quot;atan(nNumber)&nbsp;--&gt;&nbsp;Number&quot;,&quot;atan2(nNumber1,nNumber2)&nbsp;--&gt;&nbsp;Number&quot;,&quot;ceil(nNumber)&nbsp;--&gt;&nbsp;Number&quot;,&quot;cos(nNumber)&nbsp;--&gt;&nbsp;Number&quot;,&quot;cosh(nNumber)&nbsp;--&gt;&nbsp;Number&quot;,&quot;decimals(nNumber)&nbsp;--&gt;&nbsp;Number&quot;,&quot;exp(nNumber)&nbsp;--&gt;&nbsp;Number&quot;,&quot;fabs(nNumber)&nbsp;--&gt;&nbsp;Number&quot;,&quot;floor(nNumber)&nbsp;--&gt;&nbsp;Number&quot;,&quot;log(nNumber)&nbsp;--&gt;&nbsp;Number&quot;,&quot;log10(nNumber)&nbsp;--&gt;&nbsp;Number&quot;,&quot;pow(nNumber1,nNumber2)&nbsp;--&gt;&nbsp;Number&quot;,&quot;random(nNumber)&nbsp;--&gt;&nbsp;Number&quot;,&quot;sin(nNumber)&nbsp;--&gt;&nbsp;Number&quot;,&quot;sinh(nNumber)&nbsp;--&gt;&nbsp;Number&quot;,&quot;sqrt(nNumber)&nbsp;--&gt;&nbsp;Number&quot;,&quot;tan(nNumber)&nbsp;--&gt;&nbsp;Number&quot;,&quot;tanh(nNumber)&nbsp;--&gt;&nbsp;Number&quot;,&quot;unsigned(nNumber1,nNumber2,cOperator)&nbsp;--&gt;&nbsp;Number&quot;]</font></span>"
+				"/*"
 			],
 			[
 				"active",
@@ -518,7 +518,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_MATHCLASS_IP_VALUE2LIST = ["+char(34)+"acos(nNumber) --> Number"+char(34)+","+char(34)+"asin(nNumber) --> Number"+char(34)+","+char(34)+"atan(nNumber) --> Number"+char(34)+","+char(34)+"atan2(nNumber1,nNumber2) --> Number"+char(34)+","+char(34)+"ceil(nNumber) --> Number"+char(34)+","+char(34)+"cos(nNumber) --> Number"+char(34)+","+char(34)+"cosh(nNumber) --> Number"+char(34)+","+char(34)+"decimals(nNumber) --> Number"+char(34)+","+char(34)+"exp(nNumber) --> Number"+char(34)+","+char(34)+"fabs(nNumber) --> Number"+char(34)+","+char(34)+"floor(nNumber) --> Number"+char(34)+","+char(34)+"log(nNumber) --> Number"+char(34)+","+char(34)+"log10(nNumber) --> Number"+char(34)+","+char(34)+"pow(nNumber1,nNumber2) --> Number"+char(34)+","+char(34)+"random(nNumber) --> Number"+char(34)+","+char(34)+"sin(nNumber) --> Number"+char(34)+","+char(34)+"sinh(nNumber) --> Number"+char(34)+","+char(34)+"sqrt(nNumber) --> Number"+char(34)+","+char(34)+"tan(nNumber) --> Number"+char(34)+","+char(34)+"tanh(nNumber) --> Number"+char(34)+","+char(34)+"unsigned(nNumber1,nNumber2,cOperator) --> Number"+char(34)+"]"
+				"#/*
+"
 			],
 			[
 				"interactionid",
@@ -534,16 +535,990 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				2
+				1
 			],
 			[
 				"plainname",
-				"T_CT_MATHCLASS_IP_VALUE2LIST = ["+char(34)+"acos(nNumber) --> Number"+char(34)+","+char(34)+"asin(nNumber) --> Number"+char(34)+","+char(34)+"atan(nNumber) --> Number"+char(34)+","+char(34)+"atan2(nNumber1,nNumber2) --> Number"+char(34)+","+char(34)+"ceil(nNumber) --> Number"+char(34)+","+char(34)+"cos(nNumber) --> Number"+char(34)+","+char(34)+"cosh(nNumber) --> Number"+char(34)+","+char(34)+"decimals(nNumber) --> Number"+char(34)+","+char(34)+"exp(nNumber) --> Number"+char(34)+","+char(34)+"fabs(nNumber) --> Number"+char(34)+","+char(34)+"floor(nNumber) --> Number"+char(34)+","+char(34)+"log(nNumber) --> Number"+char(34)+","+char(34)+"log10(nNumber) --> Number"+char(34)+","+char(34)+"pow(nNumber1,nNumber2) --> Number"+char(34)+","+char(34)+"random(nNumber) --> Number"+char(34)+","+char(34)+"sin(nNumber) --> Number"+char(34)+","+char(34)+"sinh(nNumber) --> Number"+char(34)+","+char(34)+"sqrt(nNumber) --> Number"+char(34)+","+char(34)+"tan(nNumber) --> Number"+char(34)+","+char(34)+"tanh(nNumber) --> Number"+char(34)+","+char(34)+"unsigned(nNumber1,nNumber2,cOperator) --> Number"+char(34)+"]"
+				"/*"
 			]
 		]
 	],
 	[
 		15,
+		1,
+		[
+			[
+				"name",
+				"T_CT_MATHCLASS_IP_VALUE2LIST = ["
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#T_CT_MATHCLASS_IP_VALUE2LIST = [
+"
+			],
+			[
+				"interactionid",
+				15
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"T_CT_MATHCLASS_IP_VALUE2LIST = ["
+			]
+		]
+	],
+	[
+		16,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"acos(nNumber) --> Number"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"acos(nNumber) --> Number"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				16
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"acos(nNumber) --> Number"+char(34)+","
+			]
+		]
+	],
+	[
+		17,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"asin(nNumber) --> Number"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"asin(nNumber) --> Number"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				17
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"asin(nNumber) --> Number"+char(34)+","
+			]
+		]
+	],
+	[
+		18,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"atan(nNumber) --> Number"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"atan(nNumber) --> Number"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				18
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"atan(nNumber) --> Number"+char(34)+","
+			]
+		]
+	],
+	[
+		19,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"atan2(nNumber1,nNumber2) --> Number"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"atan2(nNumber1,nNumber2) --> Number"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				19
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"atan2(nNumber1,nNumber2) --> Number"+char(34)+","
+			]
+		]
+	],
+	[
+		20,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"ceil(nNumber) --> Number"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"ceil(nNumber) --> Number"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				20
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"ceil(nNumber) --> Number"+char(34)+","
+			]
+		]
+	],
+	[
+		21,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"cos(nNumber) --> Number"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"cos(nNumber) --> Number"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				21
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"cos(nNumber) --> Number"+char(34)+","
+			]
+		]
+	],
+	[
+		22,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"cosh(nNumber) --> Number"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"cosh(nNumber) --> Number"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				22
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"cosh(nNumber) --> Number"+char(34)+","
+			]
+		]
+	],
+	[
+		23,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"decimals(nNumber) --> Number"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"decimals(nNumber) --> Number"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				23
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"decimals(nNumber) --> Number"+char(34)+","
+			]
+		]
+	],
+	[
+		24,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"exp(nNumber) --> Number"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"exp(nNumber) --> Number"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				24
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"exp(nNumber) --> Number"+char(34)+","
+			]
+		]
+	],
+	[
+		25,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"fabs(nNumber) --> Number"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"fabs(nNumber) --> Number"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				25
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"fabs(nNumber) --> Number"+char(34)+","
+			]
+		]
+	],
+	[
+		26,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"floor(nNumber) --> Number"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"floor(nNumber) --> Number"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				26
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"floor(nNumber) --> Number"+char(34)+","
+			]
+		]
+	],
+	[
+		27,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"log(nNumber) --> Number"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"log(nNumber) --> Number"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				27
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"log(nNumber) --> Number"+char(34)+","
+			]
+		]
+	],
+	[
+		28,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"log10(nNumber) --> Number"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"log10(nNumber) --> Number"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				28
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"log10(nNumber) --> Number"+char(34)+","
+			]
+		]
+	],
+	[
+		29,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"pow(nNumber1,nNumber2) --> Number"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"pow(nNumber1,nNumber2) --> Number"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				29
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"pow(nNumber1,nNumber2) --> Number"+char(34)+","
+			]
+		]
+	],
+	[
+		30,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"random(nNumber) --> Number"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"random(nNumber) --> Number"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				30
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"random(nNumber) --> Number"+char(34)+","
+			]
+		]
+	],
+	[
+		31,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"sin(nNumber) --> Number"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"sin(nNumber) --> Number"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				31
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"sin(nNumber) --> Number"+char(34)+","
+			]
+		]
+	],
+	[
+		32,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"sinh(nNumber) --> Number"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"sinh(nNumber) --> Number"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				32
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"sinh(nNumber) --> Number"+char(34)+","
+			]
+		]
+	],
+	[
+		33,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"sqrt(nNumber) --> Number"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"sqrt(nNumber) --> Number"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				33
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"sqrt(nNumber) --> Number"+char(34)+","
+			]
+		]
+	],
+	[
+		34,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"tan(nNumber) --> Number"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"tan(nNumber) --> Number"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				34
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"tan(nNumber) --> Number"+char(34)+","
+			]
+		]
+	],
+	[
+		35,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"tanh(nNumber) --> Number"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"tanh(nNumber) --> Number"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				35
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"tanh(nNumber) --> Number"+char(34)+","
+			]
+		]
+	],
+	[
+		36,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"unsigned(nNumber1,nNumber2,cOperator) --> Number"+char(34)+""
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"unsigned(nNumber1,nNumber2,cOperator) --> Number"+char(34)+"
+"
+			],
+			[
+				"interactionid",
+				36
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"unsigned(nNumber1,nNumber2,cOperator) --> Number"+char(34)+""
+			]
+		]
+	],
+	[
+		37,
+		1,
+		[
+			[
+				"name",
+				"]"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#]
+"
+			],
+			[
+				"interactionid",
+				37
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"]"
+			]
+		]
+	],
+	[
+		38,
+		1,
+		[
+			[
+				"name",
+				"*/"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#*/
+"
+			],
+			[
+				"interactionid",
+				38
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"*/"
+			]
+		]
+	],
+	[
+		39,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_MATHCLASS_IP_VALUE2LIST</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;جيبا_مقلوب(عدد)&nbsp;--&gt;&nbsp;رقم&quot;,&quot;جيبا(عدد)&nbsp;--&gt;&nbsp;رقم&quot;,&quot;ظل_مقلوب(عدد)&nbsp;--&gt;&nbsp;رقم&quot;,&quot;ظل_مقلوب_اثنين(عدد1,عدد2)&nbsp;--&gt;&nbsp;رقم&quot;,&quot;سقف(عدد)&nbsp;--&gt;&nbsp;رقم&quot;,&quot;جيب(عدد)&nbsp;--&gt;&nbsp;رقم&quot;,&quot;جيب_تمام_زائد(عدد)&nbsp;--&gt;&nbsp;رقم&quot;,&quot;الفواصل_العشرية(عدد)&nbsp;--&gt;&nbsp;رقم&quot;,&quot;أس(عدد)&nbsp;--&gt;&nbsp;رقم&quot;,&quot;قيمة_مطلقة(عدد)&nbsp;--&gt;&nbsp;رقم&quot;,&quot;أرضية(عدد)&nbsp;--&gt;&nbsp;رقم&quot;,&quot;لوغاريتم(عدد)&nbsp;--&gt;&nbsp;رقم&quot;,&quot;لوغاريتم_10(عدد)&nbsp;--&gt;&nbsp;رقم&quot;,&quot;قوة(عدد1,عدد2)&nbsp;--&gt;&nbsp;رقم&quot;,&quot;عشوائي(عدد)&nbsp;--&gt;&nbsp;رقم&quot;,&quot;جيب_تمام(عدد)&nbsp;--&gt;&nbsp;رقم&quot;,&quot;جيب_تمام_زائد_اثنين(عدد)&nbsp;--&gt;&nbsp;رقم&quot;,&quot;جذر_تربيعي(عدد)&nbsp;--&gt;&nbsp;رقم&quot;,&quot;ظل(عدد)&nbsp;--&gt;&nbsp;رقم&quot;,&quot;ظل_زائد(عدد)&nbsp;--&gt;&nbsp;رقم&quot;,&quot;غير_موقع(عدد1,عدد2,معامل)&nbsp;--&gt;&nbsp;رقم&quot;]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_CT_MATHCLASS_IP_VALUE2LIST = ["+char(34)+"جيبا_مقلوب(عدد) --> رقم"+char(34)+","+char(34)+"جيبا(عدد) --> رقم"+char(34)+","+char(34)+"ظل_مقلوب(عدد) --> رقم"+char(34)+","+char(34)+"ظل_مقلوب_اثنين(عدد1,عدد2) --> رقم"+char(34)+","+char(34)+"سقف(عدد) --> رقم"+char(34)+","+char(34)+"جيب(عدد) --> رقم"+char(34)+","+char(34)+"جيب_تمام_زائد(عدد) --> رقم"+char(34)+","+char(34)+"الفواصل_العشرية(عدد) --> رقم"+char(34)+","+char(34)+"أس(عدد) --> رقم"+char(34)+","+char(34)+"قيمة_مطلقة(عدد) --> رقم"+char(34)+","+char(34)+"أرضية(عدد) --> رقم"+char(34)+","+char(34)+"لوغاريتم(عدد) --> رقم"+char(34)+","+char(34)+"لوغاريتم_10(عدد) --> رقم"+char(34)+","+char(34)+"قوة(عدد1,عدد2) --> رقم"+char(34)+","+char(34)+"عشوائي(عدد) --> رقم"+char(34)+","+char(34)+"جيب_تمام(عدد) --> رقم"+char(34)+","+char(34)+"جيب_تمام_زائد_اثنين(عدد) --> رقم"+char(34)+","+char(34)+"جذر_تربيعي(عدد) --> رقم"+char(34)+","+char(34)+"ظل(عدد) --> رقم"+char(34)+","+char(34)+"ظل_زائد(عدد) --> رقم"+char(34)+","+char(34)+"غير_موقع(عدد1,عدد2,معامل) --> رقم"+char(34)+"]"
+			],
+			[
+				"interactionid",
+				39
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_CT_MATHCLASS_IP_VALUE2LIST = ["+char(34)+"جيبا_مقلوب(عدد) --> رقم"+char(34)+","+char(34)+"جيبا(عدد) --> رقم"+char(34)+","+char(34)+"ظل_مقلوب(عدد) --> رقم"+char(34)+","+char(34)+"ظل_مقلوب_اثنين(عدد1,عدد2) --> رقم"+char(34)+","+char(34)+"سقف(عدد) --> رقم"+char(34)+","+char(34)+"جيب(عدد) --> رقم"+char(34)+","+char(34)+"جيب_تمام_زائد(عدد) --> رقم"+char(34)+","+char(34)+"الفواصل_العشرية(عدد) --> رقم"+char(34)+","+char(34)+"أس(عدد) --> رقم"+char(34)+","+char(34)+"قيمة_مطلقة(عدد) --> رقم"+char(34)+","+char(34)+"أرضية(عدد) --> رقم"+char(34)+","+char(34)+"لوغاريتم(عدد) --> رقم"+char(34)+","+char(34)+"لوغاريتم_10(عدد) --> رقم"+char(34)+","+char(34)+"قوة(عدد1,عدد2) --> رقم"+char(34)+","+char(34)+"عشوائي(عدد) --> رقم"+char(34)+","+char(34)+"جيب_تمام(عدد) --> رقم"+char(34)+","+char(34)+"جيب_تمام_زائد_اثنين(عدد) --> رقم"+char(34)+","+char(34)+"جذر_تربيعي(عدد) --> رقم"+char(34)+","+char(34)+"ظل(عدد) --> رقم"+char(34)+","+char(34)+"ظل_زائد(عدد) --> رقم"+char(34)+","+char(34)+"غير_موقع(عدد1,عدد2,معامل) --> رقم"+char(34)+"]"
+			]
+		]
+	],
+	[
+		40,
 		1,
 		[
 			[
@@ -560,7 +1535,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				15
+				40
 			],
 			[
 				"visible",
@@ -581,7 +1556,7 @@ aStepsTable = [
 		]
 	],
 	[
-		16,
+		41,
 		1,
 		[
 			[
@@ -598,7 +1573,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				16
+				41
 			],
 			[
 				"visible",
@@ -625,128 +1600,328 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"07/02/2025",
-		"18:35:01",
+		"20/02/2025",
+		"22:59:13",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:35:01",
+		"20/02/2025",
+		"22:59:13",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:35:01",
+		"20/02/2025",
+		"22:59:13",
 		"value;;_RV_;;**	Project : Programming Without Coding Technology (PWCT) Version 2.0;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:35:01",
+		"20/02/2025",
+		"22:59:13",
 		"value;;_RV_;;**	File Purpose :  mathclass Component;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:35:01",
+		"20/02/2025",
+		"22:59:13",
 		"value;;_RV_;;**	Date : 2018.03.16;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:35:01",
+		"20/02/2025",
+		"22:59:13",
 		"value;;_RV_;;**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:35:01",
+		"20/02/2025",
+		"22:59:13",
 		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:35:01",
+		"20/02/2025",
+		"22:59:13",
 		"leftside;;_RV_;;T_CT_MATHCLASS_IP_TITLE;;_RV_;;rightside;;_RV_;;"+char(34)+"مكون فئة الرياضيات"+char(34)+";;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:35:01",
+		"20/02/2025",
+		"22:59:13",
 		"leftside;;_RV_;;T_CT_MATHCLASS_IP_VALUE;;_RV_;;rightside;;_RV_;;"+char(34)+"اسم الكائن :"+char(34)+";;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:35:01",
+		"20/02/2025",
+		"22:59:13",
 		"leftside;;_RV_;;T_CT_MATHCLASS_IP_VALUE2;;_RV_;;rightside;;_RV_;;"+char(34)+"الميثود : "+char(34)+";;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:35:01",
+		"20/02/2025",
+		"22:59:13",
 		"leftside;;_RV_;;T_CT_MATHCLASS_IP_VALUE2FUNC;;_RV_;;rightside;;_RV_;;["+char(34)+"acos"+char(34)+","+char(34)+"asin"+char(34)+","+char(34)+"atan"+char(34)+","+char(34)+"atan2"+char(34)+","+char(34)+"ceil"+char(34)+","+char(34)+"cos"+char(34)+","+char(34)+"cosh"+char(34)+","+char(34)+"decimals"+char(34)+","+char(34)+"exp"+char(34)+","+char(34)+"fabs"+char(34)+","+char(34)+"floor"+char(34)+","+char(34)+"log"+char(34)+","+char(34)+"log10"+char(34)+","+char(34)+"pow"+char(34)+","+char(34)+"random"+char(34)+","+char(34)+"sin"+char(34)+","+char(34)+"sinh"+char(34)+","+char(34)+"sqrt"+char(34)+","+char(34)+"tan"+char(34)+","+char(34)+"tanh"+char(34)+","+char(34)+"unsigned"+char(34)+"];;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:35:01",
+		"20/02/2025",
+		"22:59:13",
 		"value;;_RV_;;Copy the list to support changing the generated method name in the Steps Tree;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:35:01",
-		"leftside;;_RV_;;T_CT_MATHCLASS_IP_VALUE2STEPFUNC;;_RV_;;rightside;;_RV_;;T_CT_MATHCLASS_IP_VALUE2FUNC;;_RV_;;"
+		"20/02/2025",
+		"22:59:13",
+		"leftside;;_RV_;;T_CT_MATHCLASS_IP_VALUE2STEPFUNC;;_RV_;;rightside;;_RV_;;["+char(34)+"جيبا_مقلوب"+char(34)+","+char(34)+"جيبا"+char(34)+","+char(34)+"ظل_مقلوب"+char(34)+","+char(34)+"ظل_مقلوب_اثنين"+char(34)+","+char(34)+"سقف"+char(34)+","+char(34)+"جيب"+char(34)+","+char(34)+"جيب_تمام_زائد"+char(34)+","+char(34)+"الفواصل_العشرية"+char(34)+","+char(34)+"أس"+char(34)+","+char(34)+"قيمة_مطلقة"+char(34)+","+char(34)+"أرضية"+char(34)+","+char(34)+"لوغاريتم"+char(34)+","+char(34)+"لوغاريتم_10"+char(34)+","+char(34)+"قوة"+char(34)+","+char(34)+"عشوائي"+char(34)+","+char(34)+"جيب_تمام"+char(34)+","+char(34)+"جيب_تمام_زائد_اثنين"+char(34)+","+char(34)+"جذر_تربيعي"+char(34)+","+char(34)+"ظل"+char(34)+","+char(34)+"ظل_زائد"+char(34)+","+char(34)+"غير_موقع"+char(34)+"];;_RV_;;"
 	],
 	[
 		14,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:35:01",
-		"leftside;;_RV_;;T_CT_MATHCLASS_IP_VALUE2LIST;;_RV_;;rightside;;_RV_;;["+char(34)+"acos(nNumber) --> Number"+char(34)+","+char(34)+"asin(nNumber) --> Number"+char(34)+","+char(34)+"atan(nNumber) --> Number"+char(34)+","+char(34)+"atan2(nNumber1,nNumber2) --> Number"+char(34)+","+char(34)+"ceil(nNumber) --> Number"+char(34)+","+char(34)+"cos(nNumber) --> Number"+char(34)+","+char(34)+"cosh(nNumber) --> Number"+char(34)+","+char(34)+"decimals(nNumber) --> Number"+char(34)+","+char(34)+"exp(nNumber) --> Number"+char(34)+","+char(34)+"fabs(nNumber) --> Number"+char(34)+","+char(34)+"floor(nNumber) --> Number"+char(34)+","+char(34)+"log(nNumber) --> Number"+char(34)+","+char(34)+"log10(nNumber) --> Number"+char(34)+","+char(34)+"pow(nNumber1,nNumber2) --> Number"+char(34)+","+char(34)+"random(nNumber) --> Number"+char(34)+","+char(34)+"sin(nNumber) --> Number"+char(34)+","+char(34)+"sinh(nNumber) --> Number"+char(34)+","+char(34)+"sqrt(nNumber) --> Number"+char(34)+","+char(34)+"tan(nNumber) --> Number"+char(34)+","+char(34)+"tanh(nNumber) --> Number"+char(34)+","+char(34)+"unsigned(nNumber1,nNumber2,cOperator) --> Number"+char(34)+"];;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"22:59:13",
+		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		15,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:35:01",
-		"leftside;;_RV_;;T_CT_MATHCLASS_IP_VALUE3;;_RV_;;rightside;;_RV_;;"+char(34)+"المعطيات :"+char(34)+";;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"22:59:13",
+		"value;;_RV_;;T_CT_MATHCLASS_IP_VALUE2LIST = [;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		16,
 		1,
+		"comment_text",
+		"20/02/2025",
+		"22:59:13",
+		"value;;_RV_;;	"+char(34)+"acos(nNumber) --> Number"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		17,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:59:13",
+		"value;;_RV_;;	"+char(34)+"asin(nNumber) --> Number"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		18,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:59:13",
+		"value;;_RV_;;	"+char(34)+"atan(nNumber) --> Number"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		19,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:59:13",
+		"value;;_RV_;;	"+char(34)+"atan2(nNumber1,nNumber2) --> Number"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		20,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:59:13",
+		"value;;_RV_;;	"+char(34)+"ceil(nNumber) --> Number"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		21,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:59:13",
+		"value;;_RV_;;	"+char(34)+"cos(nNumber) --> Number"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		22,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:59:13",
+		"value;;_RV_;;	"+char(34)+"cosh(nNumber) --> Number"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		23,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:59:13",
+		"value;;_RV_;;	"+char(34)+"decimals(nNumber) --> Number"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		24,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:59:13",
+		"value;;_RV_;;	"+char(34)+"exp(nNumber) --> Number"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		25,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:59:13",
+		"value;;_RV_;;	"+char(34)+"fabs(nNumber) --> Number"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		26,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:59:13",
+		"value;;_RV_;;	"+char(34)+"floor(nNumber) --> Number"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		27,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:59:13",
+		"value;;_RV_;;	"+char(34)+"log(nNumber) --> Number"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		28,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:59:13",
+		"value;;_RV_;;	"+char(34)+"log10(nNumber) --> Number"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		29,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:59:13",
+		"value;;_RV_;;	"+char(34)+"pow(nNumber1,nNumber2) --> Number"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		30,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:59:13",
+		"value;;_RV_;;	"+char(34)+"random(nNumber) --> Number"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		31,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:59:13",
+		"value;;_RV_;;	"+char(34)+"sin(nNumber) --> Number"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		32,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:59:13",
+		"value;;_RV_;;	"+char(34)+"sinh(nNumber) --> Number"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		33,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:59:13",
+		"value;;_RV_;;	"+char(34)+"sqrt(nNumber) --> Number"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		34,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:59:13",
+		"value;;_RV_;;	"+char(34)+"tan(nNumber) --> Number"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		35,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:59:13",
+		"value;;_RV_;;	"+char(34)+"tanh(nNumber) --> Number"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		36,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:59:13",
+		"value;;_RV_;;	"+char(34)+"unsigned(nNumber1,nNumber2,cOperator) --> Number"+char(34)+";;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		37,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:59:13",
+		"value;;_RV_;;];;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		38,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:59:13",
+		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		39,
+		1,
 		"assignment",
-		"07/02/2025",
-		"18:35:01",
+		"20/02/2025",
+		"22:59:13",
+		"leftside;;_RV_;;T_CT_MATHCLASS_IP_VALUE2LIST;;_RV_;;rightside;;_RV_;;["+char(34)+"جيبا_مقلوب(عدد) --> رقم"+char(34)+","+char(34)+"جيبا(عدد) --> رقم"+char(34)+","+char(34)+"ظل_مقلوب(عدد) --> رقم"+char(34)+","+char(34)+"ظل_مقلوب_اثنين(عدد1,عدد2) --> رقم"+char(34)+","+char(34)+"سقف(عدد) --> رقم"+char(34)+","+char(34)+"جيب(عدد) --> رقم"+char(34)+","+char(34)+"جيب_تمام_زائد(عدد) --> رقم"+char(34)+","+char(34)+"الفواصل_العشرية(عدد) --> رقم"+char(34)+","+char(34)+"أس(عدد) --> رقم"+char(34)+","+char(34)+"قيمة_مطلقة(عدد) --> رقم"+char(34)+","+char(34)+"أرضية(عدد) --> رقم"+char(34)+","+char(34)+"لوغاريتم(عدد) --> رقم"+char(34)+","+char(34)+"لوغاريتم_10(عدد) --> رقم"+char(34)+","+char(34)+"قوة(عدد1,عدد2) --> رقم"+char(34)+","+char(34)+"عشوائي(عدد) --> رقم"+char(34)+","+char(34)+"جيب_تمام(عدد) --> رقم"+char(34)+","+char(34)+"جيب_تمام_زائد_اثنين(عدد) --> رقم"+char(34)+","+char(34)+"جذر_تربيعي(عدد) --> رقم"+char(34)+","+char(34)+"ظل(عدد) --> رقم"+char(34)+","+char(34)+"ظل_زائد(عدد) --> رقم"+char(34)+","+char(34)+"غير_موقع(عدد1,عدد2,معامل) --> رقم"+char(34)+"];;_RV_;;"
+	],
+	[
+		40,
+		1,
+		"assignment",
+		"20/02/2025",
+		"22:59:13",
+		"leftside;;_RV_;;T_CT_MATHCLASS_IP_VALUE3;;_RV_;;rightside;;_RV_;;"+char(34)+"المعطيات :"+char(34)+";;_RV_;;"
+	],
+	[
+		41,
+		1,
+		"assignment",
+		"20/02/2025",
+		"22:59:13",
 		"leftside;;_RV_;;T_CT_MATHCLASS_IP_VALUE4;;_RV_;;rightside;;_RV_;;"+char(34)+"الناتج :"+char(34)+";;_RV_;;"
 	]
 ]

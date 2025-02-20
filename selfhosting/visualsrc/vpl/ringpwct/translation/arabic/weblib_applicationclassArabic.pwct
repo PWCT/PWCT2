@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'english'
-nStepsID                 = 16		
-nInteractionsID          = 16
+nStepsID                 = 39		
+nInteractionsID          = 39
 
 aStepsTable = [
 	[
@@ -472,7 +472,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_WEBLIB_APPLICATIONCLASS_IP_VALUE2STEPFUNC</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_WEBLIB_APPLICATIONCLASS_IP_VALUE2FUNC</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_WEBLIB_APPLICATIONCLASS_IP_VALUE2STEPFUNC</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;ملف_كوكيز&quot;,&quot;فك_الترميز&quot;,&quot;فك_ترميز_النص&quot;,&quot;احصل_على_ملفات_كوكيز&quot;,&quot;احصل_على_اسم_الملف&quot;,&quot;احصل_على_بداية_HTML&quot;,&quot;احصل_على_العلامات&quot;,&quot;بدون_إخراج&quot;,&quot;إخراج&quot;,&quot;طباعة&quot;,&quot;مكتبات_البرمجة_البرمجية&quot;,&quot;ضبط_ملف_كوكيز&quot;,&quot;بداية_HTML&quot;,&quot;نمط&quot;,&quot;علامة_تبويب_ML&quot;,&quot;خروج_علامة_تبويب&quot;,&quot;دخول_علامة_تبويب&quot;,&quot;ترميز_العنوان&quot;,&quot;طباعة_الويب&quot;]</font></span>"
 			],
 			[
 				"active",
@@ -480,7 +480,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_WEBLIB_APPLICATIONCLASS_IP_VALUE2STEPFUNC = T_CT_WEBLIB_APPLICATIONCLASS_IP_VALUE2FUNC"
+				"T_CT_WEBLIB_APPLICATIONCLASS_IP_VALUE2STEPFUNC = ["+char(34)+"ملف_كوكيز"+char(34)+","+char(34)+"فك_الترميز"+char(34)+","+char(34)+"فك_ترميز_النص"+char(34)+","+char(34)+"احصل_على_ملفات_كوكيز"+char(34)+","+char(34)+"احصل_على_اسم_الملف"+char(34)+","+char(34)+"احصل_على_بداية_HTML"+char(34)+","+char(34)+"احصل_على_العلامات"+char(34)+","+char(34)+"بدون_إخراج"+char(34)+","+char(34)+"إخراج"+char(34)+","+char(34)+"طباعة"+char(34)+","+char(34)+"مكتبات_البرمجة_البرمجية"+char(34)+","+char(34)+"ضبط_ملف_كوكيز"+char(34)+","+char(34)+"بداية_HTML"+char(34)+","+char(34)+"نمط"+char(34)+","+char(34)+"علامة_تبويب_ML"+char(34)+","+char(34)+"خروج_علامة_تبويب"+char(34)+","+char(34)+"دخول_علامة_تبويب"+char(34)+","+char(34)+"ترميز_العنوان"+char(34)+","+char(34)+"طباعة_الويب"+char(34)+"]"
 			],
 			[
 				"interactionid",
@@ -500,7 +500,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"T_CT_WEBLIB_APPLICATIONCLASS_IP_VALUE2STEPFUNC = T_CT_WEBLIB_APPLICATIONCLASS_IP_VALUE2FUNC"
+				"T_CT_WEBLIB_APPLICATIONCLASS_IP_VALUE2STEPFUNC = ["+char(34)+"ملف_كوكيز"+char(34)+","+char(34)+"فك_الترميز"+char(34)+","+char(34)+"فك_ترميز_النص"+char(34)+","+char(34)+"احصل_على_ملفات_كوكيز"+char(34)+","+char(34)+"احصل_على_اسم_الملف"+char(34)+","+char(34)+"احصل_على_بداية_HTML"+char(34)+","+char(34)+"احصل_على_العلامات"+char(34)+","+char(34)+"بدون_إخراج"+char(34)+","+char(34)+"إخراج"+char(34)+","+char(34)+"طباعة"+char(34)+","+char(34)+"مكتبات_البرمجة_البرمجية"+char(34)+","+char(34)+"ضبط_ملف_كوكيز"+char(34)+","+char(34)+"بداية_HTML"+char(34)+","+char(34)+"نمط"+char(34)+","+char(34)+"علامة_تبويب_ML"+char(34)+","+char(34)+"خروج_علامة_تبويب"+char(34)+","+char(34)+"دخول_علامة_تبويب"+char(34)+","+char(34)+"ترميز_العنوان"+char(34)+","+char(34)+"طباعة_الويب"+char(34)+"]"
 			]
 		]
 	],
@@ -510,7 +510,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_WEBLIB_APPLICATIONCLASS_IP_VALUE2LIST</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;cookie(cName,cValue)&quot;,&quot;decode(cInput)&nbsp;--&gt;&nbsp;List&quot;,&quot;decodestring(cString)&nbsp;--&gt;&nbsp;List&quot;,&quot;getcookies()&nbsp;--&gt;&nbsp;List&quot;,&quot;getfilename(aArray,cVar)&nbsp;--&gt;&nbsp;String&quot;,&quot;gethtmlstart()&nbsp;--&gt;&nbsp;String&quot;,&quot;gettabs()&nbsp;--&gt;&nbsp;cTabsString&quot;,&quot;nooutput()&quot;,&quot;output()&nbsp;--&gt;&nbsp;String&quot;,&quot;print()&quot;,&quot;scriptlibs()&nbsp;--&gt;&nbsp;String&quot;,&quot;setcookie(cName,cValue,cExpires,cPath,cDomain,cSecure)&quot;,&quot;starthtml()&quot;,&quot;style(cStyle)&quot;,&quot;tabmlstring(cString)&nbsp;--&gt;&nbsp;String&quot;,&quot;tabpop()&quot;,&quot;tabpush()&quot;,&quot;urlencode(cString)&nbsp;--&gt;&nbsp;String&quot;,&quot;webprint(cString)&quot;]</font></span>"
+				"/*"
 			],
 			[
 				"active",
@@ -518,7 +518,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_WEBLIB_APPLICATIONCLASS_IP_VALUE2LIST = ["+char(34)+"cookie(cName,cValue)"+char(34)+","+char(34)+"decode(cInput) --> List"+char(34)+","+char(34)+"decodestring(cString) --> List"+char(34)+","+char(34)+"getcookies() --> List"+char(34)+","+char(34)+"getfilename(aArray,cVar) --> String"+char(34)+","+char(34)+"gethtmlstart() --> String"+char(34)+","+char(34)+"gettabs() --> cTabsString"+char(34)+","+char(34)+"nooutput()"+char(34)+","+char(34)+"output() --> String"+char(34)+","+char(34)+"print()"+char(34)+","+char(34)+"scriptlibs() --> String"+char(34)+","+char(34)+"setcookie(cName,cValue,cExpires,cPath,cDomain,cSecure)"+char(34)+","+char(34)+"starthtml()"+char(34)+","+char(34)+"style(cStyle)"+char(34)+","+char(34)+"tabmlstring(cString) --> String"+char(34)+","+char(34)+"tabpop()"+char(34)+","+char(34)+"tabpush()"+char(34)+","+char(34)+"urlencode(cString) --> String"+char(34)+","+char(34)+"webprint(cString)"+char(34)+"]"
+				"#/*
+"
 			],
 			[
 				"interactionid",
@@ -534,16 +535,912 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				2
+				1
 			],
 			[
 				"plainname",
-				"T_CT_WEBLIB_APPLICATIONCLASS_IP_VALUE2LIST = ["+char(34)+"cookie(cName,cValue)"+char(34)+","+char(34)+"decode(cInput) --> List"+char(34)+","+char(34)+"decodestring(cString) --> List"+char(34)+","+char(34)+"getcookies() --> List"+char(34)+","+char(34)+"getfilename(aArray,cVar) --> String"+char(34)+","+char(34)+"gethtmlstart() --> String"+char(34)+","+char(34)+"gettabs() --> cTabsString"+char(34)+","+char(34)+"nooutput()"+char(34)+","+char(34)+"output() --> String"+char(34)+","+char(34)+"print()"+char(34)+","+char(34)+"scriptlibs() --> String"+char(34)+","+char(34)+"setcookie(cName,cValue,cExpires,cPath,cDomain,cSecure)"+char(34)+","+char(34)+"starthtml()"+char(34)+","+char(34)+"style(cStyle)"+char(34)+","+char(34)+"tabmlstring(cString) --> String"+char(34)+","+char(34)+"tabpop()"+char(34)+","+char(34)+"tabpush()"+char(34)+","+char(34)+"urlencode(cString) --> String"+char(34)+","+char(34)+"webprint(cString)"+char(34)+"]"
+				"/*"
 			]
 		]
 	],
 	[
 		15,
+		1,
+		[
+			[
+				"name",
+				"T_CT_WEBLIB_APPLICATIONCLASS_IP_VALUE2LIST = ["
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#T_CT_WEBLIB_APPLICATIONCLASS_IP_VALUE2LIST = [
+"
+			],
+			[
+				"interactionid",
+				15
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"T_CT_WEBLIB_APPLICATIONCLASS_IP_VALUE2LIST = ["
+			]
+		]
+	],
+	[
+		16,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"cookie(cName,cValue)"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"cookie(cName,cValue)"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				16
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"cookie(cName,cValue)"+char(34)+","
+			]
+		]
+	],
+	[
+		17,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"decode(cInput) --> List"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"decode(cInput) --> List"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				17
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"decode(cInput) --> List"+char(34)+","
+			]
+		]
+	],
+	[
+		18,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"decodestring(cString) --> List"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"decodestring(cString) --> List"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				18
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"decodestring(cString) --> List"+char(34)+","
+			]
+		]
+	],
+	[
+		19,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"getcookies() --> List"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"getcookies() --> List"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				19
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"getcookies() --> List"+char(34)+","
+			]
+		]
+	],
+	[
+		20,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"getfilename(aArray,cVar) --> String"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"getfilename(aArray,cVar) --> String"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				20
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"getfilename(aArray,cVar) --> String"+char(34)+","
+			]
+		]
+	],
+	[
+		21,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"gethtmlstart() --> String"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"gethtmlstart() --> String"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				21
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"gethtmlstart() --> String"+char(34)+","
+			]
+		]
+	],
+	[
+		22,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"gettabs() --> cTabsString"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"gettabs() --> cTabsString"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				22
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"gettabs() --> cTabsString"+char(34)+","
+			]
+		]
+	],
+	[
+		23,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"nooutput()"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"nooutput()"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				23
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"nooutput()"+char(34)+","
+			]
+		]
+	],
+	[
+		24,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"output() --> String"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"output() --> String"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				24
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"output() --> String"+char(34)+","
+			]
+		]
+	],
+	[
+		25,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"print()"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"print()"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				25
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"print()"+char(34)+","
+			]
+		]
+	],
+	[
+		26,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"scriptlibs() --> String"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"scriptlibs() --> String"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				26
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"scriptlibs() --> String"+char(34)+","
+			]
+		]
+	],
+	[
+		27,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setcookie(cName,cValue,cExpires,cPath,cDomain,cSecure)"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setcookie(cName,cValue,cExpires,cPath,cDomain,cSecure)"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				27
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setcookie(cName,cValue,cExpires,cPath,cDomain,cSecure)"+char(34)+","
+			]
+		]
+	],
+	[
+		28,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"starthtml()"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"starthtml()"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				28
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"starthtml()"+char(34)+","
+			]
+		]
+	],
+	[
+		29,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"style(cStyle)"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"style(cStyle)"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				29
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"style(cStyle)"+char(34)+","
+			]
+		]
+	],
+	[
+		30,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"tabmlstring(cString) --> String"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"tabmlstring(cString) --> String"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				30
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"tabmlstring(cString) --> String"+char(34)+","
+			]
+		]
+	],
+	[
+		31,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"tabpop()"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"tabpop()"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				31
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"tabpop()"+char(34)+","
+			]
+		]
+	],
+	[
+		32,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"tabpush()"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"tabpush()"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				32
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"tabpush()"+char(34)+","
+			]
+		]
+	],
+	[
+		33,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"urlencode(cString) --> String"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"urlencode(cString) --> String"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				33
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"urlencode(cString) --> String"+char(34)+","
+			]
+		]
+	],
+	[
+		34,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"webprint(cString)"+char(34)+""
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"webprint(cString)"+char(34)+"
+"
+			],
+			[
+				"interactionid",
+				34
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"webprint(cString)"+char(34)+""
+			]
+		]
+	],
+	[
+		35,
+		1,
+		[
+			[
+				"name",
+				"]"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#]
+"
+			],
+			[
+				"interactionid",
+				35
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"]"
+			]
+		]
+	],
+	[
+		36,
+		1,
+		[
+			[
+				"name",
+				"*/"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#*/
+"
+			],
+			[
+				"interactionid",
+				36
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"*/"
+			]
+		]
+	],
+	[
+		37,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_WEBLIB_APPLICATIONCLASS_IP_VALUE2LIST</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;ملف_كوكيز(اسم,قيمة)&quot;,&quot;فك_الترميز(مدخل)&nbsp;--&gt;&nbsp;قائمة&quot;,&quot;فك_ترميز_النص(سلسلة)&nbsp;--&gt;&nbsp;قائمة&quot;,&quot;احصل_على_ملفات_كوكيز()&nbsp;--&gt;&nbsp;قائمة&quot;,&quot;احصل_على_اسم_الملف(مجموعة,متغير)&nbsp;--&gt;&nbsp;سلسلة&quot;,&quot;احصل_على_بداية_HTML()&nbsp;--&gt;&nbsp;سلسلة&quot;,&quot;احصل_على_العلامات()&nbsp;--&gt;&nbsp;سلسلة_علامات&quot;,&quot;بدون_إخراج()&quot;,&quot;إخراج()&nbsp;--&gt;&nbsp;سلسلة&quot;,&quot;طباعة()&quot;,&quot;مكتبات_البرمجة_البرمجية()&nbsp;--&gt;&nbsp;سلسلة&quot;,&quot;ضبط_ملف_كوكيز(اسم,قيمة,انتهاء,مسار,نطاق,آمن)&quot;,&quot;بداية_HTML()&quot;,&quot;نمط(نمط)&quot;,&quot;علامة_تبويب_ML(سلسلة)&nbsp;--&gt;&nbsp;سلسلة&quot;,&quot;خروج_علامة_تبويب()&quot;,&quot;دخول_علامة_تبويب()&quot;,&quot;ترميز_العنوان(سلسلة)&nbsp;--&gt;&nbsp;سلسلة&quot;,&quot;طباعة_الويب(سلسلة)&quot;]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_CT_WEBLIB_APPLICATIONCLASS_IP_VALUE2LIST = ["+char(34)+"ملف_كوكيز(اسم,قيمة)"+char(34)+","+char(34)+"فك_الترميز(مدخل) --> قائمة"+char(34)+","+char(34)+"فك_ترميز_النص(سلسلة) --> قائمة"+char(34)+","+char(34)+"احصل_على_ملفات_كوكيز() --> قائمة"+char(34)+","+char(34)+"احصل_على_اسم_الملف(مجموعة,متغير) --> سلسلة"+char(34)+","+char(34)+"احصل_على_بداية_HTML() --> سلسلة"+char(34)+","+char(34)+"احصل_على_العلامات() --> سلسلة_علامات"+char(34)+","+char(34)+"بدون_إخراج()"+char(34)+","+char(34)+"إخراج() --> سلسلة"+char(34)+","+char(34)+"طباعة()"+char(34)+","+char(34)+"مكتبات_البرمجة_البرمجية() --> سلسلة"+char(34)+","+char(34)+"ضبط_ملف_كوكيز(اسم,قيمة,انتهاء,مسار,نطاق,آمن)"+char(34)+","+char(34)+"بداية_HTML()"+char(34)+","+char(34)+"نمط(نمط)"+char(34)+","+char(34)+"علامة_تبويب_ML(سلسلة) --> سلسلة"+char(34)+","+char(34)+"خروج_علامة_تبويب()"+char(34)+","+char(34)+"دخول_علامة_تبويب()"+char(34)+","+char(34)+"ترميز_العنوان(سلسلة) --> سلسلة"+char(34)+","+char(34)+"طباعة_الويب(سلسلة)"+char(34)+"]"
+			],
+			[
+				"interactionid",
+				37
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_CT_WEBLIB_APPLICATIONCLASS_IP_VALUE2LIST = ["+char(34)+"ملف_كوكيز(اسم,قيمة)"+char(34)+","+char(34)+"فك_الترميز(مدخل) --> قائمة"+char(34)+","+char(34)+"فك_ترميز_النص(سلسلة) --> قائمة"+char(34)+","+char(34)+"احصل_على_ملفات_كوكيز() --> قائمة"+char(34)+","+char(34)+"احصل_على_اسم_الملف(مجموعة,متغير) --> سلسلة"+char(34)+","+char(34)+"احصل_على_بداية_HTML() --> سلسلة"+char(34)+","+char(34)+"احصل_على_العلامات() --> سلسلة_علامات"+char(34)+","+char(34)+"بدون_إخراج()"+char(34)+","+char(34)+"إخراج() --> سلسلة"+char(34)+","+char(34)+"طباعة()"+char(34)+","+char(34)+"مكتبات_البرمجة_البرمجية() --> سلسلة"+char(34)+","+char(34)+"ضبط_ملف_كوكيز(اسم,قيمة,انتهاء,مسار,نطاق,آمن)"+char(34)+","+char(34)+"بداية_HTML()"+char(34)+","+char(34)+"نمط(نمط)"+char(34)+","+char(34)+"علامة_تبويب_ML(سلسلة) --> سلسلة"+char(34)+","+char(34)+"خروج_علامة_تبويب()"+char(34)+","+char(34)+"دخول_علامة_تبويب()"+char(34)+","+char(34)+"ترميز_العنوان(سلسلة) --> سلسلة"+char(34)+","+char(34)+"طباعة_الويب(سلسلة)"+char(34)+"]"
+			]
+		]
+	],
+	[
+		38,
 		1,
 		[
 			[
@@ -560,7 +1457,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				15
+				38
 			],
 			[
 				"visible",
@@ -581,7 +1478,7 @@ aStepsTable = [
 		]
 	],
 	[
-		16,
+		39,
 		1,
 		[
 			[
@@ -598,7 +1495,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				16
+				39
 			],
 			[
 				"visible",
@@ -625,128 +1522,312 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"07/02/2025",
-		"18:41:47",
+		"20/02/2025",
+		"23:03:27",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:41:47",
+		"20/02/2025",
+		"23:03:27",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:41:47",
+		"20/02/2025",
+		"23:03:27",
 		"value;;_RV_;;**	Project : Programming Without Coding Technology (PWCT) Version 2.0;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:41:47",
+		"20/02/2025",
+		"23:03:27",
 		"value;;_RV_;;**	File Purpose :  weblib_applicationclass Component;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:41:47",
+		"20/02/2025",
+		"23:03:27",
 		"value;;_RV_;;**	Date : 2018.03.21;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:41:47",
+		"20/02/2025",
+		"23:03:27",
 		"value;;_RV_;;**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:41:47",
+		"20/02/2025",
+		"23:03:27",
 		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:41:47",
+		"20/02/2025",
+		"23:03:27",
 		"leftside;;_RV_;;T_CT_WEBLIB_APPLICATIONCLASS_IP_TITLE;;_RV_;;rightside;;_RV_;;"+char(34)+"مكون فئة التطبيق"+char(34)+";;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:41:47",
+		"20/02/2025",
+		"23:03:27",
 		"leftside;;_RV_;;T_CT_WEBLIB_APPLICATIONCLASS_IP_VALUE;;_RV_;;rightside;;_RV_;;"+char(34)+"اسم الكائن :"+char(34)+";;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:41:47",
+		"20/02/2025",
+		"23:03:27",
 		"leftside;;_RV_;;T_CT_WEBLIB_APPLICATIONCLASS_IP_VALUE2;;_RV_;;rightside;;_RV_;;"+char(34)+"الميثود : "+char(34)+";;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:41:47",
+		"20/02/2025",
+		"23:03:27",
 		"leftside;;_RV_;;T_CT_WEBLIB_APPLICATIONCLASS_IP_VALUE2FUNC;;_RV_;;rightside;;_RV_;;["+char(34)+"cookie"+char(34)+","+char(34)+"decode"+char(34)+","+char(34)+"decodestring"+char(34)+","+char(34)+"getcookies"+char(34)+","+char(34)+"getfilename"+char(34)+","+char(34)+"gethtmlstart"+char(34)+","+char(34)+"gettabs"+char(34)+","+char(34)+"nooutput"+char(34)+","+char(34)+"output"+char(34)+","+char(34)+"print"+char(34)+","+char(34)+"scriptlibs"+char(34)+","+char(34)+"setcookie"+char(34)+","+char(34)+"starthtml"+char(34)+","+char(34)+"style"+char(34)+","+char(34)+"tabmlstring"+char(34)+","+char(34)+"tabpop"+char(34)+","+char(34)+"tabpush"+char(34)+","+char(34)+"urlencode"+char(34)+","+char(34)+"webprint"+char(34)+"];;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:41:47",
+		"20/02/2025",
+		"23:03:27",
 		"value;;_RV_;;Copy the list to support changing the generated method name in the Steps Tree;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:41:47",
-		"leftside;;_RV_;;T_CT_WEBLIB_APPLICATIONCLASS_IP_VALUE2STEPFUNC;;_RV_;;rightside;;_RV_;;T_CT_WEBLIB_APPLICATIONCLASS_IP_VALUE2FUNC;;_RV_;;"
+		"20/02/2025",
+		"23:03:27",
+		"leftside;;_RV_;;T_CT_WEBLIB_APPLICATIONCLASS_IP_VALUE2STEPFUNC;;_RV_;;rightside;;_RV_;;["+char(34)+"ملف_كوكيز"+char(34)+","+char(34)+"فك_الترميز"+char(34)+","+char(34)+"فك_ترميز_النص"+char(34)+","+char(34)+"احصل_على_ملفات_كوكيز"+char(34)+","+char(34)+"احصل_على_اسم_الملف"+char(34)+","+char(34)+"احصل_على_بداية_HTML"+char(34)+","+char(34)+"احصل_على_العلامات"+char(34)+","+char(34)+"بدون_إخراج"+char(34)+","+char(34)+"إخراج"+char(34)+","+char(34)+"طباعة"+char(34)+","+char(34)+"مكتبات_البرمجة_البرمجية"+char(34)+","+char(34)+"ضبط_ملف_كوكيز"+char(34)+","+char(34)+"بداية_HTML"+char(34)+","+char(34)+"نمط"+char(34)+","+char(34)+"علامة_تبويب_ML"+char(34)+","+char(34)+"خروج_علامة_تبويب"+char(34)+","+char(34)+"دخول_علامة_تبويب"+char(34)+","+char(34)+"ترميز_العنوان"+char(34)+","+char(34)+"طباعة_الويب"+char(34)+"];;_RV_;;"
 	],
 	[
 		14,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:41:47",
-		"leftside;;_RV_;;T_CT_WEBLIB_APPLICATIONCLASS_IP_VALUE2LIST;;_RV_;;rightside;;_RV_;;["+char(34)+"cookie(cName,cValue)"+char(34)+","+char(34)+"decode(cInput) --> List"+char(34)+","+char(34)+"decodestring(cString) --> List"+char(34)+","+char(34)+"getcookies() --> List"+char(34)+","+char(34)+"getfilename(aArray,cVar) --> String"+char(34)+","+char(34)+"gethtmlstart() --> String"+char(34)+","+char(34)+"gettabs() --> cTabsString"+char(34)+","+char(34)+"nooutput()"+char(34)+","+char(34)+"output() --> String"+char(34)+","+char(34)+"print()"+char(34)+","+char(34)+"scriptlibs() --> String"+char(34)+","+char(34)+"setcookie(cName,cValue,cExpires,cPath,cDomain,cSecure)"+char(34)+","+char(34)+"starthtml()"+char(34)+","+char(34)+"style(cStyle)"+char(34)+","+char(34)+"tabmlstring(cString) --> String"+char(34)+","+char(34)+"tabpop()"+char(34)+","+char(34)+"tabpush()"+char(34)+","+char(34)+"urlencode(cString) --> String"+char(34)+","+char(34)+"webprint(cString)"+char(34)+"];;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"23:03:27",
+		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		15,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:41:47",
-		"leftside;;_RV_;;T_CT_WEBLIB_APPLICATIONCLASS_IP_VALUE3;;_RV_;;rightside;;_RV_;;"+char(34)+"المعطيات :"+char(34)+";;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"23:03:27",
+		"value;;_RV_;;T_CT_WEBLIB_APPLICATIONCLASS_IP_VALUE2LIST = [;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		16,
 		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:27",
+		"value;;_RV_;;	"+char(34)+"cookie(cName,cValue)"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		17,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:27",
+		"value;;_RV_;;	"+char(34)+"decode(cInput) --> List"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		18,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:27",
+		"value;;_RV_;;	"+char(34)+"decodestring(cString) --> List"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		19,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:27",
+		"value;;_RV_;;	"+char(34)+"getcookies() --> List"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		20,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:27",
+		"value;;_RV_;;	"+char(34)+"getfilename(aArray,cVar) --> String"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		21,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:27",
+		"value;;_RV_;;	"+char(34)+"gethtmlstart() --> String"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		22,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:27",
+		"value;;_RV_;;	"+char(34)+"gettabs() --> cTabsString"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		23,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:27",
+		"value;;_RV_;;	"+char(34)+"nooutput()"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		24,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:27",
+		"value;;_RV_;;	"+char(34)+"output() --> String"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		25,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:27",
+		"value;;_RV_;;	"+char(34)+"print()"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		26,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:27",
+		"value;;_RV_;;	"+char(34)+"scriptlibs() --> String"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		27,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:27",
+		"value;;_RV_;;	"+char(34)+"setcookie(cName,cValue,cExpires,cPath,cDomain,cSecure)"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		28,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:27",
+		"value;;_RV_;;	"+char(34)+"starthtml()"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		29,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:27",
+		"value;;_RV_;;	"+char(34)+"style(cStyle)"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		30,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:27",
+		"value;;_RV_;;	"+char(34)+"tabmlstring(cString) --> String"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		31,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:27",
+		"value;;_RV_;;	"+char(34)+"tabpop()"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		32,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:27",
+		"value;;_RV_;;	"+char(34)+"tabpush()"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		33,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:27",
+		"value;;_RV_;;	"+char(34)+"urlencode(cString) --> String"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		34,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:27",
+		"value;;_RV_;;	"+char(34)+"webprint(cString)"+char(34)+";;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		35,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:27",
+		"value;;_RV_;;];;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		36,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:27",
+		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		37,
+		1,
 		"assignment",
-		"07/02/2025",
-		"18:41:47",
+		"20/02/2025",
+		"23:03:27",
+		"leftside;;_RV_;;T_CT_WEBLIB_APPLICATIONCLASS_IP_VALUE2LIST;;_RV_;;rightside;;_RV_;;["+char(34)+"ملف_كوكيز(اسم,قيمة)"+char(34)+","+char(34)+"فك_الترميز(مدخل) --> قائمة"+char(34)+","+char(34)+"فك_ترميز_النص(سلسلة) --> قائمة"+char(34)+","+char(34)+"احصل_على_ملفات_كوكيز() --> قائمة"+char(34)+","+char(34)+"احصل_على_اسم_الملف(مجموعة,متغير) --> سلسلة"+char(34)+","+char(34)+"احصل_على_بداية_HTML() --> سلسلة"+char(34)+","+char(34)+"احصل_على_العلامات() --> سلسلة_علامات"+char(34)+","+char(34)+"بدون_إخراج()"+char(34)+","+char(34)+"إخراج() --> سلسلة"+char(34)+","+char(34)+"طباعة()"+char(34)+","+char(34)+"مكتبات_البرمجة_البرمجية() --> سلسلة"+char(34)+","+char(34)+"ضبط_ملف_كوكيز(اسم,قيمة,انتهاء,مسار,نطاق,آمن)"+char(34)+","+char(34)+"بداية_HTML()"+char(34)+","+char(34)+"نمط(نمط)"+char(34)+","+char(34)+"علامة_تبويب_ML(سلسلة) --> سلسلة"+char(34)+","+char(34)+"خروج_علامة_تبويب()"+char(34)+","+char(34)+"دخول_علامة_تبويب()"+char(34)+","+char(34)+"ترميز_العنوان(سلسلة) --> سلسلة"+char(34)+","+char(34)+"طباعة_الويب(سلسلة)"+char(34)+"];;_RV_;;"
+	],
+	[
+		38,
+		1,
+		"assignment",
+		"20/02/2025",
+		"23:03:27",
+		"leftside;;_RV_;;T_CT_WEBLIB_APPLICATIONCLASS_IP_VALUE3;;_RV_;;rightside;;_RV_;;"+char(34)+"المعطيات :"+char(34)+";;_RV_;;"
+	],
+	[
+		39,
+		1,
+		"assignment",
+		"20/02/2025",
+		"23:03:27",
 		"leftside;;_RV_;;T_CT_WEBLIB_APPLICATIONCLASS_IP_VALUE4;;_RV_;;rightside;;_RV_;;"+char(34)+"الناتج :"+char(34)+";;_RV_;;"
 	]
 ]

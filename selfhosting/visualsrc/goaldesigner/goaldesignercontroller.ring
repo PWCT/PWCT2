@@ -1969,10 +1969,10 @@ class GoalDesignerController from WindowsControllerParent
 			return 
 		} 
 		#Select the Step (Methods) as parent
-		SelectStepByName("Methods")
+		SelectStepByName(T_FORMEVENTS_PARENTSTEP)
 		#Create the Event Code
 		cStr = WindowsNL()+Tab+"func "+cFunctionName+WindowsNL()+Tab+Tab+"oView {"+WindowsNL()+Tab+Tab+Tab+WindowsNL()+Tab+Tab+"}"+WindowsNL()
-		ComponentsBrowserWindow().TextualCodeToVisualCode(cStr)
+		ComponentsBrowserWindow().EnglishTextualCodeToVisualCode(cStr)
 	} 
 	func DropEvent  { 
 		#Source (Dragged Step)

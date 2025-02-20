@@ -6,7 +6,7 @@
 #*/
 T_CT_WEBLIB_NEWWEBOBJECT_IP_TITLE = "مكون كائن ويب جديد"
 T_CT_WEBLIB_NEWWEBOBJECT_IP_VALUE = "اسم الكائن :"
-T_CT_WEBLIB_NEWWEBOBJECT_IP_VALUE2LIST = ["Page","PageBuffer","HTML2PDF","BootStrapPage","WebPage"]
+T_CT_WEBLIB_NEWWEBOBJECT_IP_VALUE2LIST = ["صفحة","مخزن الصفحة","انتاج ملف للطباعة من صفحة الويب","صفحة التمهيد","صفحة ويب"]
 T_CT_WEBLIB_NEWWEBOBJECT_ST_NEWOBJ = "انشاء كائن"
 T_CT_WEBLIB_NEWWEBOBJECT_ST_STARTHERE = "ابدأ هنا"
 T_CT_WEBLIB_NEWWEBOBJECT_ST_END = "نهاية الاستخدام"

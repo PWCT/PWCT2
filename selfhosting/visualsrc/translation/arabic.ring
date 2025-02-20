@@ -325,3 +325,5 @@ T_GD_STEPSTREEICONS = [["💾","إستدعاء "],["💾","تحميل "],["🖥�
 #Ring2PWCT Syntax
 T_RING2PWCT_USEBEFORESCANNER = True
 load "../tools/import/arabicsyntax.ring"
+#Form Events
+T_FORMEVENTS_PARENTSTEP = "الدوال"

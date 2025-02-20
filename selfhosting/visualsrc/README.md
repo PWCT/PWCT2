@@ -1,4 +1,4 @@
-visualsrc Folder
-================
+src Folder
+==========
 
-In this folder, we store the visual source files (PWCT2 implementation).
+In this folder, we store the Ring source code files.

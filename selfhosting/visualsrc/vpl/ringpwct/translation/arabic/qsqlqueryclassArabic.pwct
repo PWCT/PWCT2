@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'english'
-nStepsID                 = 15		
-nInteractionsID          = 15
+nStepsID                 = 56		
+nInteractionsID          = 56
 
 aStepsTable = [
 	[
@@ -395,7 +395,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QSQLQUERYCLASS_IP_VALUE2LIST</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;addBindValue(QVariant,&nbsp;QSql::ParamType&nbsp;paramType)&nbsp;--&gt;&nbsp;void&quot;,&quot;at(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;bindValue(QString,&nbsp;QVariant,&nbsp;QSql::ParamType&nbsp;paramType)&nbsp;--&gt;&nbsp;void&quot;,&quot;boundValue(QString)&nbsp;--&gt;&nbsp;QVariant&quot;,&quot;clear(void)&nbsp;--&gt;&nbsp;void&quot;,&quot;delete(void)&nbsp;--&gt;&nbsp;void&quot;,&quot;driver(void)&nbsp;--&gt;&nbsp;QSqlDriver&quot;,&quot;exec(QString)&nbsp;--&gt;&nbsp;bool&quot;,&quot;exec_2(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;execBatch(QSqlQuery::BatchExecutionMode&nbsp;mode)&nbsp;--&gt;&nbsp;bool&quot;,&quot;executedQuery(void)&nbsp;--&gt;&nbsp;QString&quot;,&quot;finish(void)&nbsp;--&gt;&nbsp;void&quot;,&quot;first(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;init(parent)&nbsp;--&gt;&nbsp;object&quot;,&quot;isActive(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;isForwardOnly(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;isNull(int&nbsp;field)&nbsp;--&gt;&nbsp;bool&quot;,&quot;isSelect(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;isValid(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;last(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;lastError(void)&nbsp;--&gt;&nbsp;QSqlError&quot;,&quot;lastInsertId(void)&nbsp;--&gt;&nbsp;QVariant&quot;,&quot;lastQuery(void)&nbsp;--&gt;&nbsp;QString&quot;,&quot;movenext(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;nextResult(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;numericalPrecisionPolicy(void)&nbsp;--&gt;&nbsp;QSql::NumericalPrecisionPolicy&quot;,&quot;numRowsAffected(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;objectpointer(void)&nbsp;--&gt;&nbsp;pointer&quot;,&quot;prepare(QString)&nbsp;--&gt;&nbsp;bool&quot;,&quot;previous(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;record(void)&nbsp;--&gt;&nbsp;QSqlRecord&quot;,&quot;result(void)&nbsp;--&gt;&nbsp;QSqlResult&quot;,&quot;seek(int&nbsp;index,&nbsp;bool&nbsp;relative)&nbsp;--&gt;&nbsp;bool&quot;,&quot;setForwardOnly(bool&nbsp;forward)&nbsp;--&gt;&nbsp;void&quot;,&quot;setNumericalPrecisionPolicy(QSql::NumericalPrecisionPolicy&nbsp;precisionPolicy)&nbsp;--&gt;&nbsp;void&quot;,&quot;size(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;value(int&nbsp;index)&nbsp;--&gt;&nbsp;QVariant&quot;]</font></span>"
+				"/*"
 			],
 			[
 				"active",
@@ -403,7 +403,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_QSQLQUERYCLASS_IP_VALUE2LIST = ["+char(34)+"addBindValue(QVariant, QSql::ParamType paramType) --> void"+char(34)+","+char(34)+"at(void) --> int"+char(34)+","+char(34)+"bindValue(QString, QVariant, QSql::ParamType paramType) --> void"+char(34)+","+char(34)+"boundValue(QString) --> QVariant"+char(34)+","+char(34)+"clear(void) --> void"+char(34)+","+char(34)+"delete(void) --> void"+char(34)+","+char(34)+"driver(void) --> QSqlDriver"+char(34)+","+char(34)+"exec(QString) --> bool"+char(34)+","+char(34)+"exec_2(void) --> bool"+char(34)+","+char(34)+"execBatch(QSqlQuery::BatchExecutionMode mode) --> bool"+char(34)+","+char(34)+"executedQuery(void) --> QString"+char(34)+","+char(34)+"finish(void) --> void"+char(34)+","+char(34)+"first(void) --> bool"+char(34)+","+char(34)+"init(parent) --> object"+char(34)+","+char(34)+"isActive(void) --> bool"+char(34)+","+char(34)+"isForwardOnly(void) --> bool"+char(34)+","+char(34)+"isNull(int field) --> bool"+char(34)+","+char(34)+"isSelect(void) --> bool"+char(34)+","+char(34)+"isValid(void) --> bool"+char(34)+","+char(34)+"last(void) --> bool"+char(34)+","+char(34)+"lastError(void) --> QSqlError"+char(34)+","+char(34)+"lastInsertId(void) --> QVariant"+char(34)+","+char(34)+"lastQuery(void) --> QString"+char(34)+","+char(34)+"movenext(void) --> bool"+char(34)+","+char(34)+"nextResult(void) --> bool"+char(34)+","+char(34)+"numericalPrecisionPolicy(void) --> QSql::NumericalPrecisionPolicy"+char(34)+","+char(34)+"numRowsAffected(void) --> int"+char(34)+","+char(34)+"objectpointer(void) --> pointer"+char(34)+","+char(34)+"prepare(QString) --> bool"+char(34)+","+char(34)+"previous(void) --> bool"+char(34)+","+char(34)+"record(void) --> QSqlRecord"+char(34)+","+char(34)+"result(void) --> QSqlResult"+char(34)+","+char(34)+"seek(int index, bool relative) --> bool"+char(34)+","+char(34)+"setForwardOnly(bool forward) --> void"+char(34)+","+char(34)+"setNumericalPrecisionPolicy(QSql::NumericalPrecisionPolicy precisionPolicy) --> void"+char(34)+","+char(34)+"size(void) --> int"+char(34)+","+char(34)+"value(int index) --> QVariant"+char(34)+"]"
+				"#/*
+"
 			],
 			[
 				"interactionid",
@@ -419,16 +420,1614 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				2
+				1
 			],
 			[
 				"plainname",
-				"T_CT_QSQLQUERYCLASS_IP_VALUE2LIST = ["+char(34)+"addBindValue(QVariant, QSql::ParamType paramType) --> void"+char(34)+","+char(34)+"at(void) --> int"+char(34)+","+char(34)+"bindValue(QString, QVariant, QSql::ParamType paramType) --> void"+char(34)+","+char(34)+"boundValue(QString) --> QVariant"+char(34)+","+char(34)+"clear(void) --> void"+char(34)+","+char(34)+"delete(void) --> void"+char(34)+","+char(34)+"driver(void) --> QSqlDriver"+char(34)+","+char(34)+"exec(QString) --> bool"+char(34)+","+char(34)+"exec_2(void) --> bool"+char(34)+","+char(34)+"execBatch(QSqlQuery::BatchExecutionMode mode) --> bool"+char(34)+","+char(34)+"executedQuery(void) --> QString"+char(34)+","+char(34)+"finish(void) --> void"+char(34)+","+char(34)+"first(void) --> bool"+char(34)+","+char(34)+"init(parent) --> object"+char(34)+","+char(34)+"isActive(void) --> bool"+char(34)+","+char(34)+"isForwardOnly(void) --> bool"+char(34)+","+char(34)+"isNull(int field) --> bool"+char(34)+","+char(34)+"isSelect(void) --> bool"+char(34)+","+char(34)+"isValid(void) --> bool"+char(34)+","+char(34)+"last(void) --> bool"+char(34)+","+char(34)+"lastError(void) --> QSqlError"+char(34)+","+char(34)+"lastInsertId(void) --> QVariant"+char(34)+","+char(34)+"lastQuery(void) --> QString"+char(34)+","+char(34)+"movenext(void) --> bool"+char(34)+","+char(34)+"nextResult(void) --> bool"+char(34)+","+char(34)+"numericalPrecisionPolicy(void) --> QSql::NumericalPrecisionPolicy"+char(34)+","+char(34)+"numRowsAffected(void) --> int"+char(34)+","+char(34)+"objectpointer(void) --> pointer"+char(34)+","+char(34)+"prepare(QString) --> bool"+char(34)+","+char(34)+"previous(void) --> bool"+char(34)+","+char(34)+"record(void) --> QSqlRecord"+char(34)+","+char(34)+"result(void) --> QSqlResult"+char(34)+","+char(34)+"seek(int index, bool relative) --> bool"+char(34)+","+char(34)+"setForwardOnly(bool forward) --> void"+char(34)+","+char(34)+"setNumericalPrecisionPolicy(QSql::NumericalPrecisionPolicy precisionPolicy) --> void"+char(34)+","+char(34)+"size(void) --> int"+char(34)+","+char(34)+"value(int index) --> QVariant"+char(34)+"]"
+				"/*"
 			]
 		]
 	],
 	[
 		12,
+		1,
+		[
+			[
+				"name",
+				"T_CT_QSQLQUERYCLASS_IP_VALUE2LIST = ["
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#T_CT_QSQLQUERYCLASS_IP_VALUE2LIST = [
+"
+			],
+			[
+				"interactionid",
+				12
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"T_CT_QSQLQUERYCLASS_IP_VALUE2LIST = ["
+			]
+		]
+	],
+	[
+		13,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"addBindValue(QVariant, QSql::ParamType paramType) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"addBindValue(QVariant, QSql::ParamType paramType) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				13
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"addBindValue(QVariant, QSql::ParamType paramType) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		14,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"at(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"at(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				14
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"at(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		15,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"bindValue(QString, QVariant, QSql::ParamType paramType) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"bindValue(QString, QVariant, QSql::ParamType paramType) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				15
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"bindValue(QString, QVariant, QSql::ParamType paramType) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		16,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"boundValue(QString) --> QVariant"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"boundValue(QString) --> QVariant"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				16
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"boundValue(QString) --> QVariant"+char(34)+","
+			]
+		]
+	],
+	[
+		17,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"clear(void) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"clear(void) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				17
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"clear(void) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		18,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"delete(void) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"delete(void) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				18
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"delete(void) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		19,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"driver(void) --> QSqlDriver"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"driver(void) --> QSqlDriver"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				19
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"driver(void) --> QSqlDriver"+char(34)+","
+			]
+		]
+	],
+	[
+		20,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"exec(QString) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"exec(QString) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				20
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"exec(QString) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		21,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"exec_2(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"exec_2(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				21
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"exec_2(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		22,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"execBatch(QSqlQuery::BatchExecutionMode mode) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"execBatch(QSqlQuery::BatchExecutionMode mode) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				22
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"execBatch(QSqlQuery::BatchExecutionMode mode) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		23,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"executedQuery(void) --> QString"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"executedQuery(void) --> QString"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				23
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"executedQuery(void) --> QString"+char(34)+","
+			]
+		]
+	],
+	[
+		24,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"finish(void) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"finish(void) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				24
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"finish(void) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		25,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"first(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"first(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				25
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"first(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		26,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"init(parent) --> object"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"init(parent) --> object"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				26
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"init(parent) --> object"+char(34)+","
+			]
+		]
+	],
+	[
+		27,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"isActive(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"isActive(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				27
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"isActive(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		28,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"isForwardOnly(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"isForwardOnly(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				28
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"isForwardOnly(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		29,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"isNull(int field) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"isNull(int field) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				29
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"isNull(int field) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		30,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"isSelect(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"isSelect(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				30
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"isSelect(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		31,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"isValid(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"isValid(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				31
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"isValid(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		32,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"last(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"last(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				32
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"last(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		33,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"lastError(void) --> QSqlError"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"lastError(void) --> QSqlError"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				33
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"lastError(void) --> QSqlError"+char(34)+","
+			]
+		]
+	],
+	[
+		34,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"lastInsertId(void) --> QVariant"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"lastInsertId(void) --> QVariant"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				34
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"lastInsertId(void) --> QVariant"+char(34)+","
+			]
+		]
+	],
+	[
+		35,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"lastQuery(void) --> QString"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"lastQuery(void) --> QString"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				35
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"lastQuery(void) --> QString"+char(34)+","
+			]
+		]
+	],
+	[
+		36,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"movenext(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"movenext(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				36
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"movenext(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		37,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"nextResult(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"nextResult(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				37
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"nextResult(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		38,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"numericalPrecisionPolicy(void) --> QSql::NumericalPrecisionPolicy"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"numericalPrecisionPolicy(void) --> QSql::NumericalPrecisionPolicy"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				38
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"numericalPrecisionPolicy(void) --> QSql::NumericalPrecisionPolicy"+char(34)+","
+			]
+		]
+	],
+	[
+		39,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"numRowsAffected(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"numRowsAffected(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				39
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"numRowsAffected(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		40,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"objectpointer(void) --> pointer"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"objectpointer(void) --> pointer"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				40
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"objectpointer(void) --> pointer"+char(34)+","
+			]
+		]
+	],
+	[
+		41,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"prepare(QString) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"prepare(QString) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				41
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"prepare(QString) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		42,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"previous(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"previous(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				42
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"previous(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		43,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"record(void) --> QSqlRecord"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"record(void) --> QSqlRecord"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				43
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"record(void) --> QSqlRecord"+char(34)+","
+			]
+		]
+	],
+	[
+		44,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"result(void) --> QSqlResult"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"result(void) --> QSqlResult"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				44
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"result(void) --> QSqlResult"+char(34)+","
+			]
+		]
+	],
+	[
+		45,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"seek(int index, bool relative) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"seek(int index, bool relative) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				45
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"seek(int index, bool relative) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		46,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setForwardOnly(bool forward) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setForwardOnly(bool forward) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				46
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setForwardOnly(bool forward) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		47,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setNumericalPrecisionPolicy(QSql::NumericalPrecisionPolicy precisionPolicy) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setNumericalPrecisionPolicy(QSql::NumericalPrecisionPolicy precisionPolicy) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				47
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setNumericalPrecisionPolicy(QSql::NumericalPrecisionPolicy precisionPolicy) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		48,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"size(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"size(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				48
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"size(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		49,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"value(int index) --> QVariant"+char(34)+""
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"value(int index) --> QVariant"+char(34)+"
+"
+			],
+			[
+				"interactionid",
+				49
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"value(int index) --> QVariant"+char(34)+""
+			]
+		]
+	],
+	[
+		50,
+		1,
+		[
+			[
+				"name",
+				"]"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#]
+"
+			],
+			[
+				"interactionid",
+				50
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"]"
+			]
+		]
+	],
+	[
+		51,
+		1,
+		[
+			[
+				"name",
+				"*/"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#*/
+"
+			],
+			[
+				"interactionid",
+				51
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"*/"
+			]
+		]
+	],
+	[
+		52,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QSQLQUERYCLASS_IP_VALUE2LIST</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;إضافة&nbsp;قيمة&nbsp;الربط(نوع&nbsp;متغير،&nbsp;نوع&nbsp;المعلمة)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;في(لاشىء)&nbsp;--&gt;&nbsp;عدد&nbsp;صحيح&quot;,&quot;قيمة&nbsp;الربط(نص،&nbsp;نوع&nbsp;متغير،&nbsp;نوع&nbsp;المعلمة)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;القيمة&nbsp;المرتبطة(نص)&nbsp;--&gt;&nbsp;نوع&nbsp;متغير&quot;,&quot;مسح(لاشىء)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;حذف(لاشىء)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;برنامج&nbsp;التشغيل(لاشىء)&nbsp;--&gt;&nbsp;برنامج&nbsp;تشغيل&nbsp;قاعدة&nbsp;بيانات&quot;,&quot;تنفيذ(نص)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;تنفيذ_2(لاشىء)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;تنفيذ&nbsp;الدفعة(وضع&nbsp;تنفيذ&nbsp;الدفعة)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;تنفيذ&nbsp;الاستعلام(لاشىء)&nbsp;--&gt;&nbsp;نص&quot;,&quot;إنهاء(لاشىء)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;أول(لاشىء)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;تهيئة(الأصل)&nbsp;--&gt;&nbsp;كائن&quot;,&quot;نشط(لاشىء)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;للأمام&nbsp;فقط(لاشىء)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;قيمة&nbsp;عدمية(عدد&nbsp;صحيح&nbsp;الحقل)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;تحديد(لاشىء)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;صالح(لاشىء)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;آخر(لاشىء)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;آخر&nbsp;خطأ(لاشىء)&nbsp;--&gt;&nbsp;خطأ&nbsp;قاعدة&nbsp;بيانات&quot;,&quot;آخر&nbsp;معرف&nbsp;تم&nbsp;إدخاله(لاشىء)&nbsp;--&gt;&nbsp;نوع&nbsp;متغير&quot;,&quot;آخر&nbsp;استعلام(لاشىء)&nbsp;--&gt;&nbsp;نص&quot;,&quot;تحريك&nbsp;التالي(لاشىء)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;النتيجة&nbsp;التالية(لاشىء)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;سياسة&nbsp;الدقة&nbsp;التعددية(لاشىء)&nbsp;--&gt;&nbsp;سياسة&nbsp;الدقة&nbsp;التعددية&quot;,&quot;عدد&nbsp;الصفوف&nbsp;المتأثرة(لاشىء)&nbsp;--&gt;&nbsp;عدد&nbsp;صحيح&quot;,&quot;مؤشر&nbsp;الكائن(لاشىء)&nbsp;--&gt;&nbsp;مؤشر&quot;,&quot;تحضير(نص)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;سابق(لاشىء)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;سجل(لاشىء)&nbsp;--&gt;&nbsp;سجل&nbsp;قاعدة&nbsp;بيانات&quot;,&quot;نتيجة(لاشىء)&nbsp;--&gt;&nbsp;نتيجة&nbsp;قاعدة&nbsp;بيانات&quot;,&quot;بحث(عدد&nbsp;صحيح&nbsp;الفهرس،&nbsp;منطقية&nbsp;نسبي)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;تعيين&nbsp;للأمام&nbsp;فقط(منطقية&nbsp;للأمام)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;تعيين&nbsp;سياسة&nbsp;الدقة&nbsp;التعددية(سياسة&nbsp;الدقة&nbsp;التعددية)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;حجم(لاشىء)&nbsp;--&gt;&nbsp;عدد&nbsp;صحيح&quot;,&quot;قيمة(عدد&nbsp;صحيح&nbsp;الفهرس)&nbsp;--&gt;&nbsp;نوع&nbsp;متغير&quot;]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_CT_QSQLQUERYCLASS_IP_VALUE2LIST = ["+char(34)+"إضافة قيمة الربط(نوع متغير، نوع المعلمة) --> لاشىء"+char(34)+","+char(34)+"في(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"قيمة الربط(نص، نوع متغير، نوع المعلمة) --> لاشىء"+char(34)+","+char(34)+"القيمة المرتبطة(نص) --> نوع متغير"+char(34)+","+char(34)+"مسح(لاشىء) --> لاشىء"+char(34)+","+char(34)+"حذف(لاشىء) --> لاشىء"+char(34)+","+char(34)+"برنامج التشغيل(لاشىء) --> برنامج تشغيل قاعدة بيانات"+char(34)+","+char(34)+"تنفيذ(نص) --> منطقية"+char(34)+","+char(34)+"تنفيذ_2(لاشىء) --> منطقية"+char(34)+","+char(34)+"تنفيذ الدفعة(وضع تنفيذ الدفعة) --> منطقية"+char(34)+","+char(34)+"تنفيذ الاستعلام(لاشىء) --> نص"+char(34)+","+char(34)+"إنهاء(لاشىء) --> لاشىء"+char(34)+","+char(34)+"أول(لاشىء) --> منطقية"+char(34)+","+char(34)+"تهيئة(الأصل) --> كائن"+char(34)+","+char(34)+"نشط(لاشىء) --> منطقية"+char(34)+","+char(34)+"للأمام فقط(لاشىء) --> منطقية"+char(34)+","+char(34)+"قيمة عدمية(عدد صحيح الحقل) --> منطقية"+char(34)+","+char(34)+"تحديد(لاشىء) --> منطقية"+char(34)+","+char(34)+"صالح(لاشىء) --> منطقية"+char(34)+","+char(34)+"آخر(لاشىء) --> منطقية"+char(34)+","+char(34)+"آخر خطأ(لاشىء) --> خطأ قاعدة بيانات"+char(34)+","+char(34)+"آخر معرف تم إدخاله(لاشىء) --> نوع متغير"+char(34)+","+char(34)+"آخر استعلام(لاشىء) --> نص"+char(34)+","+char(34)+"تحريك التالي(لاشىء) --> منطقية"+char(34)+","+char(34)+"النتيجة التالية(لاشىء) --> منطقية"+char(34)+","+char(34)+"سياسة الدقة التعددية(لاشىء) --> سياسة الدقة التعددية"+char(34)+","+char(34)+"عدد الصفوف المتأثرة(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"مؤشر الكائن(لاشىء) --> مؤشر"+char(34)+","+char(34)+"تحضير(نص) --> منطقية"+char(34)+","+char(34)+"سابق(لاشىء) --> منطقية"+char(34)+","+char(34)+"سجل(لاشىء) --> سجل قاعدة بيانات"+char(34)+","+char(34)+"نتيجة(لاشىء) --> نتيجة قاعدة بيانات"+char(34)+","+char(34)+"بحث(عدد صحيح الفهرس، منطقية نسبي) --> منطقية"+char(34)+","+char(34)+"تعيين للأمام فقط(منطقية للأمام) --> لاشىء"+char(34)+","+char(34)+"تعيين سياسة الدقة التعددية(سياسة الدقة التعددية) --> لاشىء"+char(34)+","+char(34)+"حجم(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"قيمة(عدد صحيح الفهرس) --> نوع متغير"+char(34)+"]"
+			],
+			[
+				"interactionid",
+				52
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_CT_QSQLQUERYCLASS_IP_VALUE2LIST = ["+char(34)+"إضافة قيمة الربط(نوع متغير، نوع المعلمة) --> لاشىء"+char(34)+","+char(34)+"في(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"قيمة الربط(نص، نوع متغير، نوع المعلمة) --> لاشىء"+char(34)+","+char(34)+"القيمة المرتبطة(نص) --> نوع متغير"+char(34)+","+char(34)+"مسح(لاشىء) --> لاشىء"+char(34)+","+char(34)+"حذف(لاشىء) --> لاشىء"+char(34)+","+char(34)+"برنامج التشغيل(لاشىء) --> برنامج تشغيل قاعدة بيانات"+char(34)+","+char(34)+"تنفيذ(نص) --> منطقية"+char(34)+","+char(34)+"تنفيذ_2(لاشىء) --> منطقية"+char(34)+","+char(34)+"تنفيذ الدفعة(وضع تنفيذ الدفعة) --> منطقية"+char(34)+","+char(34)+"تنفيذ الاستعلام(لاشىء) --> نص"+char(34)+","+char(34)+"إنهاء(لاشىء) --> لاشىء"+char(34)+","+char(34)+"أول(لاشىء) --> منطقية"+char(34)+","+char(34)+"تهيئة(الأصل) --> كائن"+char(34)+","+char(34)+"نشط(لاشىء) --> منطقية"+char(34)+","+char(34)+"للأمام فقط(لاشىء) --> منطقية"+char(34)+","+char(34)+"قيمة عدمية(عدد صحيح الحقل) --> منطقية"+char(34)+","+char(34)+"تحديد(لاشىء) --> منطقية"+char(34)+","+char(34)+"صالح(لاشىء) --> منطقية"+char(34)+","+char(34)+"آخر(لاشىء) --> منطقية"+char(34)+","+char(34)+"آخر خطأ(لاشىء) --> خطأ قاعدة بيانات"+char(34)+","+char(34)+"آخر معرف تم إدخاله(لاشىء) --> نوع متغير"+char(34)+","+char(34)+"آخر استعلام(لاشىء) --> نص"+char(34)+","+char(34)+"تحريك التالي(لاشىء) --> منطقية"+char(34)+","+char(34)+"النتيجة التالية(لاشىء) --> منطقية"+char(34)+","+char(34)+"سياسة الدقة التعددية(لاشىء) --> سياسة الدقة التعددية"+char(34)+","+char(34)+"عدد الصفوف المتأثرة(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"مؤشر الكائن(لاشىء) --> مؤشر"+char(34)+","+char(34)+"تحضير(نص) --> منطقية"+char(34)+","+char(34)+"سابق(لاشىء) --> منطقية"+char(34)+","+char(34)+"سجل(لاشىء) --> سجل قاعدة بيانات"+char(34)+","+char(34)+"نتيجة(لاشىء) --> نتيجة قاعدة بيانات"+char(34)+","+char(34)+"بحث(عدد صحيح الفهرس، منطقية نسبي) --> منطقية"+char(34)+","+char(34)+"تعيين للأمام فقط(منطقية للأمام) --> لاشىء"+char(34)+","+char(34)+"تعيين سياسة الدقة التعددية(سياسة الدقة التعددية) --> لاشىء"+char(34)+","+char(34)+"حجم(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"قيمة(عدد صحيح الفهرس) --> نوع متغير"+char(34)+"]"
+			]
+		]
+	],
+	[
+		53,
 		1,
 		[
 			[
@@ -445,7 +2044,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				12
+				53
 			],
 			[
 				"visible",
@@ -466,7 +2065,7 @@ aStepsTable = [
 		]
 	],
 	[
-		13,
+		54,
 		1,
 		[
 			[
@@ -483,7 +2082,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				13
+				54
 			],
 			[
 				"visible",
@@ -504,7 +2103,7 @@ aStepsTable = [
 		]
 	],
 	[
-		14,
+		55,
 		1,
 		[
 			[
@@ -521,7 +2120,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				14
+				55
 			],
 			[
 				"visible",
@@ -542,12 +2141,12 @@ aStepsTable = [
 		]
 	],
 	[
-		15,
+		56,
 		1,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QSQLQUERYCLASS_IP_VALUE2STEPFUNC</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QSQLQUERYCLASS_IP_VALUE2FUNC</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QSQLQUERYCLASS_IP_VALUE2STEPFUNC</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;إضافة&nbsp;قيمة&nbsp;الربط&quot;,&quot;في&quot;,&quot;قيمة&nbsp;الربط&quot;,&quot;القيمة&nbsp;المرتبطة&quot;,&quot;مسح&quot;,&quot;حذف&quot;,&quot;برنامج&nbsp;التشغيل&quot;,&quot;تنفيذ&quot;,&quot;تنفيذ_2&quot;,&quot;تنفيذ&nbsp;الدفعة&quot;,&quot;تنفيذ&nbsp;الاستعلام&quot;,&quot;إنهاء&quot;,&quot;أول&quot;,&quot;تهيئة&quot;,&quot;نشط&quot;,&quot;للأمام&nbsp;فقط&quot;,&quot;null&quot;,&quot;تحديد&quot;,&quot;صالح&quot;,&quot;آخر&quot;,&quot;آخر&nbsp;خطأ&quot;,&quot;آخر&nbsp;معرف&nbsp;تم&nbsp;إدخاله&quot;,&quot;آخر&nbsp;استعلام&quot;,&quot;تحريك&nbsp;التالي&quot;,&quot;النتيجة&nbsp;التالية&quot;,&quot;سياسة&nbsp;الدقة&nbsp;التعددية&quot;,&quot;عدد&nbsp;الصفوف&nbsp;المتأثرة&quot;,&quot;مؤشر&nbsp;الكائن&quot;,&quot;تحضير&quot;,&quot;سابق&quot;,&quot;سجل&quot;,&quot;نتيجة&quot;,&quot;بحث&quot;,&quot;تعيين&nbsp;للأمام&nbsp;فقط&quot;,&quot;تعيين&nbsp;سياسة&nbsp;الدقة&nbsp;التعددية&quot;,&quot;حجم&quot;,&quot;قيمة&quot;]</font></span>"
 			],
 			[
 				"active",
@@ -555,11 +2154,11 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_QSQLQUERYCLASS_IP_VALUE2STEPFUNC = T_CT_QSQLQUERYCLASS_IP_VALUE2FUNC"
+				"T_CT_QSQLQUERYCLASS_IP_VALUE2STEPFUNC = ["+char(34)+"إضافة قيمة الربط"+char(34)+","+char(34)+"في"+char(34)+","+char(34)+"قيمة الربط"+char(34)+","+char(34)+"القيمة المرتبطة"+char(34)+","+char(34)+"مسح"+char(34)+","+char(34)+"حذف"+char(34)+","+char(34)+"برنامج التشغيل"+char(34)+","+char(34)+"تنفيذ"+char(34)+","+char(34)+"تنفيذ_2"+char(34)+","+char(34)+"تنفيذ الدفعة"+char(34)+","+char(34)+"تنفيذ الاستعلام"+char(34)+","+char(34)+"إنهاء"+char(34)+","+char(34)+"أول"+char(34)+","+char(34)+"تهيئة"+char(34)+","+char(34)+"نشط"+char(34)+","+char(34)+"للأمام فقط"+char(34)+","+char(34)+"null"+char(34)+","+char(34)+"تحديد"+char(34)+","+char(34)+"صالح"+char(34)+","+char(34)+"آخر"+char(34)+","+char(34)+"آخر خطأ"+char(34)+","+char(34)+"آخر معرف تم إدخاله"+char(34)+","+char(34)+"آخر استعلام"+char(34)+","+char(34)+"تحريك التالي"+char(34)+","+char(34)+"النتيجة التالية"+char(34)+","+char(34)+"سياسة الدقة التعددية"+char(34)+","+char(34)+"عدد الصفوف المتأثرة"+char(34)+","+char(34)+"مؤشر الكائن"+char(34)+","+char(34)+"تحضير"+char(34)+","+char(34)+"سابق"+char(34)+","+char(34)+"سجل"+char(34)+","+char(34)+"نتيجة"+char(34)+","+char(34)+"بحث"+char(34)+","+char(34)+"تعيين للأمام فقط"+char(34)+","+char(34)+"تعيين سياسة الدقة التعددية"+char(34)+","+char(34)+"حجم"+char(34)+","+char(34)+"قيمة"+char(34)+"]"
 			],
 			[
 				"interactionid",
-				15
+				56
 			],
 			[
 				"visible",
@@ -575,7 +2174,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"T_CT_QSQLQUERYCLASS_IP_VALUE2STEPFUNC = T_CT_QSQLQUERYCLASS_IP_VALUE2FUNC"
+				"T_CT_QSQLQUERYCLASS_IP_VALUE2STEPFUNC = ["+char(34)+"إضافة قيمة الربط"+char(34)+","+char(34)+"في"+char(34)+","+char(34)+"قيمة الربط"+char(34)+","+char(34)+"القيمة المرتبطة"+char(34)+","+char(34)+"مسح"+char(34)+","+char(34)+"حذف"+char(34)+","+char(34)+"برنامج التشغيل"+char(34)+","+char(34)+"تنفيذ"+char(34)+","+char(34)+"تنفيذ_2"+char(34)+","+char(34)+"تنفيذ الدفعة"+char(34)+","+char(34)+"تنفيذ الاستعلام"+char(34)+","+char(34)+"إنهاء"+char(34)+","+char(34)+"أول"+char(34)+","+char(34)+"تهيئة"+char(34)+","+char(34)+"نشط"+char(34)+","+char(34)+"للأمام فقط"+char(34)+","+char(34)+"null"+char(34)+","+char(34)+"تحديد"+char(34)+","+char(34)+"صالح"+char(34)+","+char(34)+"آخر"+char(34)+","+char(34)+"آخر خطأ"+char(34)+","+char(34)+"آخر معرف تم إدخاله"+char(34)+","+char(34)+"آخر استعلام"+char(34)+","+char(34)+"تحريك التالي"+char(34)+","+char(34)+"النتيجة التالية"+char(34)+","+char(34)+"سياسة الدقة التعددية"+char(34)+","+char(34)+"عدد الصفوف المتأثرة"+char(34)+","+char(34)+"مؤشر الكائن"+char(34)+","+char(34)+"تحضير"+char(34)+","+char(34)+"سابق"+char(34)+","+char(34)+"سجل"+char(34)+","+char(34)+"نتيجة"+char(34)+","+char(34)+"بحث"+char(34)+","+char(34)+"تعيين للأمام فقط"+char(34)+","+char(34)+"تعيين سياسة الدقة التعددية"+char(34)+","+char(34)+"حجم"+char(34)+","+char(34)+"قيمة"+char(34)+"]"
 			]
 		]
 	]
@@ -586,121 +2185,449 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"07/02/2025",
-		"18:38:07",
+		"20/02/2025",
+		"23:01:09",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:38:07",
+		"20/02/2025",
+		"23:01:09",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:38:07",
+		"20/02/2025",
+		"23:01:09",
 		"value;;_RV_;;**	Project : Programming Without Coding Technology (PWCT) Version 2.0;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:38:07",
+		"20/02/2025",
+		"23:01:09",
 		"value;;_RV_;;**	File Purpose :  qsqlqueryclass Component;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:38:07",
+		"20/02/2025",
+		"23:01:09",
 		"value;;_RV_;;**	Date : 2021.08.09;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:38:07",
+		"20/02/2025",
+		"23:01:09",
 		"value;;_RV_;;**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:38:07",
+		"20/02/2025",
+		"23:01:09",
 		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:38:07",
+		"20/02/2025",
+		"23:01:09",
 		"leftside;;_RV_;;T_CT_QSQLQUERYCLASS_IP_TITLE;;_RV_;;rightside;;_RV_;;"+char(34)+"مكون فئة ال QSqlQuery "+char(34)+";;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:38:07",
+		"20/02/2025",
+		"23:01:09",
 		"leftside;;_RV_;;T_CT_QSQLQUERYCLASS_IP_VALUE;;_RV_;;rightside;;_RV_;;"+char(34)+"اسم الكائن :"+char(34)+";;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:38:07",
+		"20/02/2025",
+		"23:01:09",
 		"leftside;;_RV_;;T_CT_QSQLQUERYCLASS_IP_VALUE2;;_RV_;;rightside;;_RV_;;"+char(34)+"الميثود : "+char(34)+";;_RV_;;"
 	],
 	[
 		11,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:38:07",
-		"leftside;;_RV_;;T_CT_QSQLQUERYCLASS_IP_VALUE2LIST;;_RV_;;rightside;;_RV_;;["+char(34)+"addBindValue(QVariant, QSql::ParamType paramType) --> void"+char(34)+","+char(34)+"at(void) --> int"+char(34)+","+char(34)+"bindValue(QString, QVariant, QSql::ParamType paramType) --> void"+char(34)+","+char(34)+"boundValue(QString) --> QVariant"+char(34)+","+char(34)+"clear(void) --> void"+char(34)+","+char(34)+"delete(void) --> void"+char(34)+","+char(34)+"driver(void) --> QSqlDriver"+char(34)+","+char(34)+"exec(QString) --> bool"+char(34)+","+char(34)+"exec_2(void) --> bool"+char(34)+","+char(34)+"execBatch(QSqlQuery::BatchExecutionMode mode) --> bool"+char(34)+","+char(34)+"executedQuery(void) --> QString"+char(34)+","+char(34)+"finish(void) --> void"+char(34)+","+char(34)+"first(void) --> bool"+char(34)+","+char(34)+"init(parent) --> object"+char(34)+","+char(34)+"isActive(void) --> bool"+char(34)+","+char(34)+"isForwardOnly(void) --> bool"+char(34)+","+char(34)+"isNull(int field) --> bool"+char(34)+","+char(34)+"isSelect(void) --> bool"+char(34)+","+char(34)+"isValid(void) --> bool"+char(34)+","+char(34)+"last(void) --> bool"+char(34)+","+char(34)+"lastError(void) --> QSqlError"+char(34)+","+char(34)+"lastInsertId(void) --> QVariant"+char(34)+","+char(34)+"lastQuery(void) --> QString"+char(34)+","+char(34)+"movenext(void) --> bool"+char(34)+","+char(34)+"nextResult(void) --> bool"+char(34)+","+char(34)+"numericalPrecisionPolicy(void) --> QSql::NumericalPrecisionPolicy"+char(34)+","+char(34)+"numRowsAffected(void) --> int"+char(34)+","+char(34)+"objectpointer(void) --> pointer"+char(34)+","+char(34)+"prepare(QString) --> bool"+char(34)+","+char(34)+"previous(void) --> bool"+char(34)+","+char(34)+"record(void) --> QSqlRecord"+char(34)+","+char(34)+"result(void) --> QSqlResult"+char(34)+","+char(34)+"seek(int index, bool relative) --> bool"+char(34)+","+char(34)+"setForwardOnly(bool forward) --> void"+char(34)+","+char(34)+"setNumericalPrecisionPolicy(QSql::NumericalPrecisionPolicy precisionPolicy) --> void"+char(34)+","+char(34)+"size(void) --> int"+char(34)+","+char(34)+"value(int index) --> QVariant"+char(34)+"];;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		12,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:38:07",
-		"leftside;;_RV_;;T_CT_QSQLQUERYCLASS_IP_VALUE3;;_RV_;;rightside;;_RV_;;"+char(34)+"المعطيات :"+char(34)+";;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;T_CT_QSQLQUERYCLASS_IP_VALUE2LIST = [;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		13,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:38:07",
-		"leftside;;_RV_;;T_CT_QSQLQUERYCLASS_IP_VALUE4;;_RV_;;rightside;;_RV_;;"+char(34)+"الناتج :"+char(34)+";;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"addBindValue(QVariant, QSql::ParamType paramType) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		14,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:38:07",
-		"leftside;;_RV_;;T_CT_QSQLQUERYCLASS_IP_VALUE2FUNC;;_RV_;;rightside;;_RV_;;["+char(34)+"addbindvalue"+char(34)+","+char(34)+"at"+char(34)+","+char(34)+"bindvalue"+char(34)+","+char(34)+"boundvalue"+char(34)+","+char(34)+"clear"+char(34)+","+char(34)+"delete"+char(34)+","+char(34)+"driver"+char(34)+","+char(34)+"exec"+char(34)+","+char(34)+"exec_2"+char(34)+","+char(34)+"execbatch"+char(34)+","+char(34)+"executedquery"+char(34)+","+char(34)+"finish"+char(34)+","+char(34)+"first"+char(34)+","+char(34)+"init"+char(34)+","+char(34)+"isactive"+char(34)+","+char(34)+"isforwardonly"+char(34)+","+char(34)+"isnull"+char(34)+","+char(34)+"isselect"+char(34)+","+char(34)+"isvalid"+char(34)+","+char(34)+"last"+char(34)+","+char(34)+"lasterror"+char(34)+","+char(34)+"lastinsertid"+char(34)+","+char(34)+"lastquery"+char(34)+","+char(34)+"movenext"+char(34)+","+char(34)+"nextresult"+char(34)+","+char(34)+"numericalprecisionpolicy"+char(34)+","+char(34)+"numrowsaffected"+char(34)+","+char(34)+"objectpointer"+char(34)+","+char(34)+"prepare"+char(34)+","+char(34)+"previous"+char(34)+","+char(34)+"record"+char(34)+","+char(34)+"result"+char(34)+","+char(34)+"seek"+char(34)+","+char(34)+"setforwardonly"+char(34)+","+char(34)+"setnumericalprecisionpolicy"+char(34)+","+char(34)+"size"+char(34)+","+char(34)+"value"+char(34)+"];;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"at(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		15,
 		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"bindValue(QString, QVariant, QSql::ParamType paramType) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		16,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"boundValue(QString) --> QVariant"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		17,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"clear(void) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		18,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"delete(void) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		19,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"driver(void) --> QSqlDriver"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		20,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"exec(QString) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		21,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"exec_2(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		22,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"execBatch(QSqlQuery::BatchExecutionMode mode) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		23,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"executedQuery(void) --> QString"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		24,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"finish(void) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		25,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"first(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		26,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"init(parent) --> object"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		27,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"isActive(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		28,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"isForwardOnly(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		29,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"isNull(int field) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		30,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"isSelect(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		31,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"isValid(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		32,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"last(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		33,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"lastError(void) --> QSqlError"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		34,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"lastInsertId(void) --> QVariant"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		35,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"lastQuery(void) --> QString"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		36,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"movenext(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		37,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"nextResult(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		38,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"numericalPrecisionPolicy(void) --> QSql::NumericalPrecisionPolicy"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		39,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"numRowsAffected(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		40,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"objectpointer(void) --> pointer"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		41,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"prepare(QString) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		42,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"previous(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		43,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"record(void) --> QSqlRecord"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		44,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"result(void) --> QSqlResult"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		45,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"seek(int index, bool relative) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		46,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"setForwardOnly(bool forward) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		47,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"setNumericalPrecisionPolicy(QSql::NumericalPrecisionPolicy precisionPolicy) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		48,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"size(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		49,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;	"+char(34)+"value(int index) --> QVariant"+char(34)+";;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		50,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;];;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		51,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:09",
+		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		52,
+		1,
 		"assignment",
-		"07/02/2025",
-		"18:38:07",
-		"leftside;;_RV_;;T_CT_QSQLQUERYCLASS_IP_VALUE2STEPFUNC;;_RV_;;rightside;;_RV_;;T_CT_QSQLQUERYCLASS_IP_VALUE2FUNC;;_RV_;;"
+		"20/02/2025",
+		"23:01:09",
+		"leftside;;_RV_;;T_CT_QSQLQUERYCLASS_IP_VALUE2LIST;;_RV_;;rightside;;_RV_;;["+char(34)+"إضافة قيمة الربط(نوع متغير، نوع المعلمة) --> لاشىء"+char(34)+","+char(34)+"في(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"قيمة الربط(نص، نوع متغير، نوع المعلمة) --> لاشىء"+char(34)+","+char(34)+"القيمة المرتبطة(نص) --> نوع متغير"+char(34)+","+char(34)+"مسح(لاشىء) --> لاشىء"+char(34)+","+char(34)+"حذف(لاشىء) --> لاشىء"+char(34)+","+char(34)+"برنامج التشغيل(لاشىء) --> برنامج تشغيل قاعدة بيانات"+char(34)+","+char(34)+"تنفيذ(نص) --> منطقية"+char(34)+","+char(34)+"تنفيذ_2(لاشىء) --> منطقية"+char(34)+","+char(34)+"تنفيذ الدفعة(وضع تنفيذ الدفعة) --> منطقية"+char(34)+","+char(34)+"تنفيذ الاستعلام(لاشىء) --> نص"+char(34)+","+char(34)+"إنهاء(لاشىء) --> لاشىء"+char(34)+","+char(34)+"أول(لاشىء) --> منطقية"+char(34)+","+char(34)+"تهيئة(الأصل) --> كائن"+char(34)+","+char(34)+"نشط(لاشىء) --> منطقية"+char(34)+","+char(34)+"للأمام فقط(لاشىء) --> منطقية"+char(34)+","+char(34)+"قيمة عدمية(عدد صحيح الحقل) --> منطقية"+char(34)+","+char(34)+"تحديد(لاشىء) --> منطقية"+char(34)+","+char(34)+"صالح(لاشىء) --> منطقية"+char(34)+","+char(34)+"آخر(لاشىء) --> منطقية"+char(34)+","+char(34)+"آخر خطأ(لاشىء) --> خطأ قاعدة بيانات"+char(34)+","+char(34)+"آخر معرف تم إدخاله(لاشىء) --> نوع متغير"+char(34)+","+char(34)+"آخر استعلام(لاشىء) --> نص"+char(34)+","+char(34)+"تحريك التالي(لاشىء) --> منطقية"+char(34)+","+char(34)+"النتيجة التالية(لاشىء) --> منطقية"+char(34)+","+char(34)+"سياسة الدقة التعددية(لاشىء) --> سياسة الدقة التعددية"+char(34)+","+char(34)+"عدد الصفوف المتأثرة(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"مؤشر الكائن(لاشىء) --> مؤشر"+char(34)+","+char(34)+"تحضير(نص) --> منطقية"+char(34)+","+char(34)+"سابق(لاشىء) --> منطقية"+char(34)+","+char(34)+"سجل(لاشىء) --> سجل قاعدة بيانات"+char(34)+","+char(34)+"نتيجة(لاشىء) --> نتيجة قاعدة بيانات"+char(34)+","+char(34)+"بحث(عدد صحيح الفهرس، منطقية نسبي) --> منطقية"+char(34)+","+char(34)+"تعيين للأمام فقط(منطقية للأمام) --> لاشىء"+char(34)+","+char(34)+"تعيين سياسة الدقة التعددية(سياسة الدقة التعددية) --> لاشىء"+char(34)+","+char(34)+"حجم(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"قيمة(عدد صحيح الفهرس) --> نوع متغير"+char(34)+"];;_RV_;;"
+	],
+	[
+		53,
+		1,
+		"assignment",
+		"20/02/2025",
+		"23:01:09",
+		"leftside;;_RV_;;T_CT_QSQLQUERYCLASS_IP_VALUE3;;_RV_;;rightside;;_RV_;;"+char(34)+"المعطيات :"+char(34)+";;_RV_;;"
+	],
+	[
+		54,
+		1,
+		"assignment",
+		"20/02/2025",
+		"23:01:09",
+		"leftside;;_RV_;;T_CT_QSQLQUERYCLASS_IP_VALUE4;;_RV_;;rightside;;_RV_;;"+char(34)+"الناتج :"+char(34)+";;_RV_;;"
+	],
+	[
+		55,
+		1,
+		"assignment",
+		"20/02/2025",
+		"23:01:09",
+		"leftside;;_RV_;;T_CT_QSQLQUERYCLASS_IP_VALUE2FUNC;;_RV_;;rightside;;_RV_;;["+char(34)+"addbindvalue"+char(34)+","+char(34)+"at"+char(34)+","+char(34)+"bindvalue"+char(34)+","+char(34)+"boundvalue"+char(34)+","+char(34)+"clear"+char(34)+","+char(34)+"delete"+char(34)+","+char(34)+"driver"+char(34)+","+char(34)+"exec"+char(34)+","+char(34)+"exec_2"+char(34)+","+char(34)+"execbatch"+char(34)+","+char(34)+"executedquery"+char(34)+","+char(34)+"finish"+char(34)+","+char(34)+"first"+char(34)+","+char(34)+"init"+char(34)+","+char(34)+"isactive"+char(34)+","+char(34)+"isforwardonly"+char(34)+","+char(34)+"isnull"+char(34)+","+char(34)+"isselect"+char(34)+","+char(34)+"isvalid"+char(34)+","+char(34)+"last"+char(34)+","+char(34)+"lasterror"+char(34)+","+char(34)+"lastinsertid"+char(34)+","+char(34)+"lastquery"+char(34)+","+char(34)+"movenext"+char(34)+","+char(34)+"nextresult"+char(34)+","+char(34)+"numericalprecisionpolicy"+char(34)+","+char(34)+"numrowsaffected"+char(34)+","+char(34)+"objectpointer"+char(34)+","+char(34)+"prepare"+char(34)+","+char(34)+"previous"+char(34)+","+char(34)+"record"+char(34)+","+char(34)+"result"+char(34)+","+char(34)+"seek"+char(34)+","+char(34)+"setforwardonly"+char(34)+","+char(34)+"setnumericalprecisionpolicy"+char(34)+","+char(34)+"size"+char(34)+","+char(34)+"value"+char(34)+"];;_RV_;;"
+	],
+	[
+		56,
+		1,
+		"assignment",
+		"20/02/2025",
+		"23:01:09",
+		"leftside;;_RV_;;T_CT_QSQLQUERYCLASS_IP_VALUE2STEPFUNC;;_RV_;;rightside;;_RV_;;["+char(34)+"إضافة قيمة الربط"+char(34)+","+char(34)+"في"+char(34)+","+char(34)+"قيمة الربط"+char(34)+","+char(34)+"القيمة المرتبطة"+char(34)+","+char(34)+"مسح"+char(34)+","+char(34)+"حذف"+char(34)+","+char(34)+"برنامج التشغيل"+char(34)+","+char(34)+"تنفيذ"+char(34)+","+char(34)+"تنفيذ_2"+char(34)+","+char(34)+"تنفيذ الدفعة"+char(34)+","+char(34)+"تنفيذ الاستعلام"+char(34)+","+char(34)+"إنهاء"+char(34)+","+char(34)+"أول"+char(34)+","+char(34)+"تهيئة"+char(34)+","+char(34)+"نشط"+char(34)+","+char(34)+"للأمام فقط"+char(34)+","+char(34)+"null"+char(34)+","+char(34)+"تحديد"+char(34)+","+char(34)+"صالح"+char(34)+","+char(34)+"آخر"+char(34)+","+char(34)+"آخر خطأ"+char(34)+","+char(34)+"آخر معرف تم إدخاله"+char(34)+","+char(34)+"آخر استعلام"+char(34)+","+char(34)+"تحريك التالي"+char(34)+","+char(34)+"النتيجة التالية"+char(34)+","+char(34)+"سياسة الدقة التعددية"+char(34)+","+char(34)+"عدد الصفوف المتأثرة"+char(34)+","+char(34)+"مؤشر الكائن"+char(34)+","+char(34)+"تحضير"+char(34)+","+char(34)+"سابق"+char(34)+","+char(34)+"سجل"+char(34)+","+char(34)+"نتيجة"+char(34)+","+char(34)+"بحث"+char(34)+","+char(34)+"تعيين للأمام فقط"+char(34)+","+char(34)+"تعيين سياسة الدقة التعددية"+char(34)+","+char(34)+"حجم"+char(34)+","+char(34)+"قيمة"+char(34)+"];;_RV_;;"
 	]
 ]
 

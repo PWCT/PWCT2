@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'english'
-nStepsID                 = 15		
-nInteractionsID          = 15
+nStepsID                 = 124		
+nInteractionsID          = 124
 
 aStepsTable = [
 	[
@@ -395,7 +395,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QTCPSOCKETCLASS_IP_VALUE2LIST</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;abort(void)&nbsp;--&gt;&nbsp;void&quot;,&quot;atEnd(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;bind(QHostAddress&nbsp;address,&nbsp;int&nbsp;port,&nbsp;QAbstractSocket::BindFlag&nbsp;mode)&nbsp;--&gt;&nbsp;bool&quot;,&quot;blockSignals(bool&nbsp;block)&nbsp;--&gt;&nbsp;bool&quot;,&quot;bytesAvailable(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;bytesToWrite(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;canReadLine(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;children(void)&nbsp;--&gt;&nbsp;QObjectList&quot;,&quot;close(void)&nbsp;--&gt;&nbsp;void&quot;,&quot;connectToHost(QString&nbsp;hostName,&nbsp;int&nbsp;port,&nbsp;QIODevice::OpenModeFlag&nbsp;openMode,&nbsp;QAbstractSocket::NetworkLayerProtocol&nbsp;protocol)&nbsp;--&gt;&nbsp;void&quot;,&quot;delete(void)&nbsp;--&gt;&nbsp;void&quot;,&quot;deleteLater(void)&nbsp;--&gt;&nbsp;void&quot;,&quot;disconnectFromHost(void)&nbsp;--&gt;&nbsp;void&quot;,&quot;dumpObjectInfo(void)&nbsp;--&gt;&nbsp;void&quot;,&quot;dumpObjectTree(void)&nbsp;--&gt;&nbsp;void&quot;,&quot;error(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;errorString(void)&nbsp;--&gt;&nbsp;QString&quot;,&quot;flush(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;getaboutToCloseEvent(void)&nbsp;--&gt;&nbsp;char&quot;,&quot;getbytesWrittenEvent(void)&nbsp;--&gt;&nbsp;char&quot;,&quot;getChar(char&nbsp;*c)&nbsp;--&gt;&nbsp;bool&quot;,&quot;getconnectedEvent(void)&nbsp;--&gt;&nbsp;char&quot;,&quot;getdisconnectedEvent(void)&nbsp;--&gt;&nbsp;char&quot;,&quot;geterrorEvent(void)&nbsp;--&gt;&nbsp;char&quot;,&quot;gethostFoundEvent(void)&nbsp;--&gt;&nbsp;char&quot;,&quot;getproxyAuthenticationRequiredEvent(void)&nbsp;--&gt;&nbsp;char&quot;,&quot;getreadChannelFinishedEvent(void)&nbsp;--&gt;&nbsp;char&quot;,&quot;getreadyReadEvent(void)&nbsp;--&gt;&nbsp;char&quot;,&quot;getstateChangedEvent(void)&nbsp;--&gt;&nbsp;char&quot;,&quot;inherits(char&nbsp;*className)&nbsp;--&gt;&nbsp;bool&quot;,&quot;init(parent)&nbsp;--&gt;&nbsp;object&quot;,&quot;installEventFilter(QObject&nbsp;*filterObj)&nbsp;--&gt;&nbsp;void&quot;,&quot;isOpen(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;isReadable(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;isSequential(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;isTextModeEnabled(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;isValid(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;isWidgetType(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;isWritable(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;killTimer(int&nbsp;id)&nbsp;--&gt;&nbsp;void&quot;,&quot;localAddress(void)&nbsp;--&gt;&nbsp;QHostAddress&quot;,&quot;localPort(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;moveToThread(QThread&nbsp;*targetThread)&nbsp;--&gt;&nbsp;void&quot;,&quot;objectName(void)&nbsp;--&gt;&nbsp;QString&quot;,&quot;objectpointer(void)&nbsp;--&gt;&nbsp;pointer&quot;,&quot;open(QIODevice::OpenMode&nbsp;flags)&nbsp;--&gt;&nbsp;bool&quot;,&quot;openMode(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;parent(void)&nbsp;--&gt;&nbsp;QObject&quot;,&quot;pauseMode(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;peek(char&nbsp;*data,&nbsp;int&nbsp;maxSize)&nbsp;--&gt;&nbsp;int&quot;,&quot;peerAddress(void)&nbsp;--&gt;&nbsp;QHostAddress&quot;,&quot;peerName(void)&nbsp;--&gt;&nbsp;QString&quot;,&quot;peerPort(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;pos(void)&nbsp;--&gt;&nbsp;qint64&quot;,&quot;property(char&nbsp;*name)&nbsp;--&gt;&nbsp;QVariant&quot;,&quot;proxy(void)&nbsp;--&gt;&nbsp;QNetworkProxy&quot;,&quot;putChar(char&nbsp;c)&nbsp;--&gt;&nbsp;bool&quot;,&quot;read(char&nbsp;*data,&nbsp;int&nbsp;maxSize)&nbsp;--&gt;&nbsp;int&quot;,&quot;readAll(void)&nbsp;--&gt;&nbsp;QByteArray&quot;,&quot;readBufferSize(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;readLine(char&nbsp;*data,&nbsp;int&nbsp;maxSize)&nbsp;--&gt;&nbsp;int&quot;,&quot;removeEventFilter(QObject&nbsp;*obj)&nbsp;--&gt;&nbsp;void&quot;,&quot;resume(void)&nbsp;--&gt;&nbsp;void&quot;,&quot;seek(qint64&nbsp;pos)&nbsp;--&gt;&nbsp;bool&quot;,&quot;setaboutToCloseEvent(char&nbsp;*)&nbsp;--&gt;&nbsp;void&quot;,&quot;setbytesWrittenEvent(char&nbsp;*)&nbsp;--&gt;&nbsp;void&quot;,&quot;setconnectedEvent(char&nbsp;*)&nbsp;--&gt;&nbsp;void&quot;,&quot;setdisconnectedEvent(char&nbsp;*)&nbsp;--&gt;&nbsp;void&quot;,&quot;seterrorEvent(char&nbsp;*)&nbsp;--&gt;&nbsp;void&quot;,&quot;sethostFoundEvent(char&nbsp;*)&nbsp;--&gt;&nbsp;void&quot;,&quot;setObjectName(QString)&nbsp;--&gt;&nbsp;void&quot;,&quot;setParent(QObject&nbsp;*parent)&nbsp;--&gt;&nbsp;void&quot;,&quot;setPauseMode(QAbstractSocket::PauseMode&nbsp;pauseMode)&nbsp;--&gt;&nbsp;void&quot;,&quot;setProperty(char&nbsp;*name,&nbsp;QVariant)&nbsp;--&gt;&nbsp;bool&quot;,&quot;setProperty_2(char&nbsp;*name,&nbsp;int)&nbsp;--&gt;&nbsp;bool&quot;,&quot;setProperty_3(char&nbsp;*name,&nbsp;float)&nbsp;--&gt;&nbsp;bool&quot;,&quot;setProperty_4(char&nbsp;*name,&nbsp;double)&nbsp;--&gt;&nbsp;bool&quot;,&quot;setProperty_5(char&nbsp;*name,&nbsp;QString)&nbsp;--&gt;&nbsp;bool&quot;,&quot;setProperty_double(char&nbsp;*name,&nbsp;double)&nbsp;--&gt;&nbsp;bool&quot;,&quot;setProperty_float(char&nbsp;*name,&nbsp;float)&nbsp;--&gt;&nbsp;bool&quot;,&quot;setProperty_int(char&nbsp;*name,&nbsp;int)&nbsp;--&gt;&nbsp;bool&quot;,&quot;setProperty_string(char&nbsp;*name,&nbsp;QString)&nbsp;--&gt;&nbsp;bool&quot;,&quot;setProxy(QNetworkProxy&nbsp;networkProxy)&nbsp;--&gt;&nbsp;void&quot;,&quot;setproxyAuthenticationRequiredEvent(char&nbsp;*)&nbsp;--&gt;&nbsp;void&quot;,&quot;setReadBufferSize(int&nbsp;size)&nbsp;--&gt;&nbsp;void&quot;,&quot;setreadChannelFinishedEvent(char&nbsp;*)&nbsp;--&gt;&nbsp;void&quot;,&quot;setreadyReadEvent(char&nbsp;*)&nbsp;--&gt;&nbsp;void&quot;,&quot;setSocketDescriptor(qintptr&nbsp;socketDescriptor,&nbsp;QAbstractSocket::SocketState&nbsp;socketState,&nbsp;QIODevice::OpenModeFlag&nbsp;openMode)&nbsp;--&gt;&nbsp;bool&quot;,&quot;setSocketOption(QAbstractSocket::SocketOption&nbsp;option,&nbsp;QVariant&nbsp;value)&nbsp;--&gt;&nbsp;void&quot;,&quot;setstateChangedEvent(char&nbsp;*)&nbsp;--&gt;&nbsp;void&quot;,&quot;setTextModeEnabled(bool&nbsp;enabled)&nbsp;--&gt;&nbsp;void&quot;,&quot;signalsBlocked(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;size(void)&nbsp;--&gt;&nbsp;qint64&quot;,&quot;socketDescriptor(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;socketOption(QAbstractSocket::SocketOption&nbsp;option)&nbsp;--&gt;&nbsp;QVariant&quot;,&quot;socketType(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;startTimer(int&nbsp;interval)&nbsp;--&gt;&nbsp;int&quot;,&quot;state(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;thread(void)&nbsp;--&gt;&nbsp;QThread&quot;,&quot;ungetChar(char&nbsp;c)&nbsp;--&gt;&nbsp;void&quot;,&quot;waitForBytesWritten(int&nbsp;msecs)&nbsp;--&gt;&nbsp;bool&quot;,&quot;waitForConnected(int&nbsp;msecs)&nbsp;--&gt;&nbsp;bool&quot;,&quot;waitForDisconnected(int&nbsp;msecs)&nbsp;--&gt;&nbsp;bool&quot;,&quot;waitForReadyRead(int&nbsp;msecs)&nbsp;--&gt;&nbsp;bool&quot;,&quot;write(char&nbsp;*data,&nbsp;int&nbsp;maxSize)&nbsp;--&gt;&nbsp;int&quot;]</font></span>"
+				"/*"
 			],
 			[
 				"active",
@@ -403,7 +403,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_QTCPSOCKETCLASS_IP_VALUE2LIST = ["+char(34)+"abort(void) --> void"+char(34)+","+char(34)+"atEnd(void) --> bool"+char(34)+","+char(34)+"bind(QHostAddress address, int port, QAbstractSocket::BindFlag mode) --> bool"+char(34)+","+char(34)+"blockSignals(bool block) --> bool"+char(34)+","+char(34)+"bytesAvailable(void) --> int"+char(34)+","+char(34)+"bytesToWrite(void) --> int"+char(34)+","+char(34)+"canReadLine(void) --> bool"+char(34)+","+char(34)+"children(void) --> QObjectList"+char(34)+","+char(34)+"close(void) --> void"+char(34)+","+char(34)+"connectToHost(QString hostName, int port, QIODevice::OpenModeFlag openMode, QAbstractSocket::NetworkLayerProtocol protocol) --> void"+char(34)+","+char(34)+"delete(void) --> void"+char(34)+","+char(34)+"deleteLater(void) --> void"+char(34)+","+char(34)+"disconnectFromHost(void) --> void"+char(34)+","+char(34)+"dumpObjectInfo(void) --> void"+char(34)+","+char(34)+"dumpObjectTree(void) --> void"+char(34)+","+char(34)+"error(void) --> int"+char(34)+","+char(34)+"errorString(void) --> QString"+char(34)+","+char(34)+"flush(void) --> bool"+char(34)+","+char(34)+"getaboutToCloseEvent(void) --> char"+char(34)+","+char(34)+"getbytesWrittenEvent(void) --> char"+char(34)+","+char(34)+"getChar(char *c) --> bool"+char(34)+","+char(34)+"getconnectedEvent(void) --> char"+char(34)+","+char(34)+"getdisconnectedEvent(void) --> char"+char(34)+","+char(34)+"geterrorEvent(void) --> char"+char(34)+","+char(34)+"gethostFoundEvent(void) --> char"+char(34)+","+char(34)+"getproxyAuthenticationRequiredEvent(void) --> char"+char(34)+","+char(34)+"getreadChannelFinishedEvent(void) --> char"+char(34)+","+char(34)+"getreadyReadEvent(void) --> char"+char(34)+","+char(34)+"getstateChangedEvent(void) --> char"+char(34)+","+char(34)+"inherits(char *className) --> bool"+char(34)+","+char(34)+"init(parent) --> object"+char(34)+","+char(34)+"installEventFilter(QObject *filterObj) --> void"+char(34)+","+char(34)+"isOpen(void) --> bool"+char(34)+","+char(34)+"isReadable(void) --> bool"+char(34)+","+char(34)+"isSequential(void) --> bool"+char(34)+","+char(34)+"isTextModeEnabled(void) --> bool"+char(34)+","+char(34)+"isValid(void) --> bool"+char(34)+","+char(34)+"isWidgetType(void) --> bool"+char(34)+","+char(34)+"isWritable(void) --> bool"+char(34)+","+char(34)+"killTimer(int id) --> void"+char(34)+","+char(34)+"localAddress(void) --> QHostAddress"+char(34)+","+char(34)+"localPort(void) --> int"+char(34)+","+char(34)+"moveToThread(QThread *targetThread) --> void"+char(34)+","+char(34)+"objectName(void) --> QString"+char(34)+","+char(34)+"objectpointer(void) --> pointer"+char(34)+","+char(34)+"open(QIODevice::OpenMode flags) --> bool"+char(34)+","+char(34)+"openMode(void) --> int"+char(34)+","+char(34)+"parent(void) --> QObject"+char(34)+","+char(34)+"pauseMode(void) --> int"+char(34)+","+char(34)+"peek(char *data, int maxSize) --> int"+char(34)+","+char(34)+"peerAddress(void) --> QHostAddress"+char(34)+","+char(34)+"peerName(void) --> QString"+char(34)+","+char(34)+"peerPort(void) --> int"+char(34)+","+char(34)+"pos(void) --> qint64"+char(34)+","+char(34)+"property(char *name) --> QVariant"+char(34)+","+char(34)+"proxy(void) --> QNetworkProxy"+char(34)+","+char(34)+"putChar(char c) --> bool"+char(34)+","+char(34)+"read(char *data, int maxSize) --> int"+char(34)+","+char(34)+"readAll(void) --> QByteArray"+char(34)+","+char(34)+"readBufferSize(void) --> int"+char(34)+","+char(34)+"readLine(char *data, int maxSize) --> int"+char(34)+","+char(34)+"removeEventFilter(QObject *obj) --> void"+char(34)+","+char(34)+"resume(void) --> void"+char(34)+","+char(34)+"seek(qint64 pos) --> bool"+char(34)+","+char(34)+"setaboutToCloseEvent(char *) --> void"+char(34)+","+char(34)+"setbytesWrittenEvent(char *) --> void"+char(34)+","+char(34)+"setconnectedEvent(char *) --> void"+char(34)+","+char(34)+"setdisconnectedEvent(char *) --> void"+char(34)+","+char(34)+"seterrorEvent(char *) --> void"+char(34)+","+char(34)+"sethostFoundEvent(char *) --> void"+char(34)+","+char(34)+"setObjectName(QString) --> void"+char(34)+","+char(34)+"setParent(QObject *parent) --> void"+char(34)+","+char(34)+"setPauseMode(QAbstractSocket::PauseMode pauseMode) --> void"+char(34)+","+char(34)+"setProperty(char *name, QVariant) --> bool"+char(34)+","+char(34)+"setProperty_2(char *name, int) --> bool"+char(34)+","+char(34)+"setProperty_3(char *name, float) --> bool"+char(34)+","+char(34)+"setProperty_4(char *name, double) --> bool"+char(34)+","+char(34)+"setProperty_5(char *name, QString) --> bool"+char(34)+","+char(34)+"setProperty_double(char *name, double) --> bool"+char(34)+","+char(34)+"setProperty_float(char *name, float) --> bool"+char(34)+","+char(34)+"setProperty_int(char *name, int) --> bool"+char(34)+","+char(34)+"setProperty_string(char *name, QString) --> bool"+char(34)+","+char(34)+"setProxy(QNetworkProxy networkProxy) --> void"+char(34)+","+char(34)+"setproxyAuthenticationRequiredEvent(char *) --> void"+char(34)+","+char(34)+"setReadBufferSize(int size) --> void"+char(34)+","+char(34)+"setreadChannelFinishedEvent(char *) --> void"+char(34)+","+char(34)+"setreadyReadEvent(char *) --> void"+char(34)+","+char(34)+"setSocketDescriptor(qintptr socketDescriptor, QAbstractSocket::SocketState socketState, QIODevice::OpenModeFlag openMode) --> bool"+char(34)+","+char(34)+"setSocketOption(QAbstractSocket::SocketOption option, QVariant value) --> void"+char(34)+","+char(34)+"setstateChangedEvent(char *) --> void"+char(34)+","+char(34)+"setTextModeEnabled(bool enabled) --> void"+char(34)+","+char(34)+"signalsBlocked(void) --> bool"+char(34)+","+char(34)+"size(void) --> qint64"+char(34)+","+char(34)+"socketDescriptor(void) --> int"+char(34)+","+char(34)+"socketOption(QAbstractSocket::SocketOption option) --> QVariant"+char(34)+","+char(34)+"socketType(void) --> int"+char(34)+","+char(34)+"startTimer(int interval) --> int"+char(34)+","+char(34)+"state(void) --> int"+char(34)+","+char(34)+"thread(void) --> QThread"+char(34)+","+char(34)+"ungetChar(char c) --> void"+char(34)+","+char(34)+"waitForBytesWritten(int msecs) --> bool"+char(34)+","+char(34)+"waitForConnected(int msecs) --> bool"+char(34)+","+char(34)+"waitForDisconnected(int msecs) --> bool"+char(34)+","+char(34)+"waitForReadyRead(int msecs) --> bool"+char(34)+","+char(34)+"write(char *data, int maxSize) --> int"+char(34)+"]"
+				"#/*
+"
 			],
 			[
 				"interactionid",
@@ -419,16 +420,4266 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				2
+				1
 			],
 			[
 				"plainname",
-				"T_CT_QTCPSOCKETCLASS_IP_VALUE2LIST = ["+char(34)+"abort(void) --> void"+char(34)+","+char(34)+"atEnd(void) --> bool"+char(34)+","+char(34)+"bind(QHostAddress address, int port, QAbstractSocket::BindFlag mode) --> bool"+char(34)+","+char(34)+"blockSignals(bool block) --> bool"+char(34)+","+char(34)+"bytesAvailable(void) --> int"+char(34)+","+char(34)+"bytesToWrite(void) --> int"+char(34)+","+char(34)+"canReadLine(void) --> bool"+char(34)+","+char(34)+"children(void) --> QObjectList"+char(34)+","+char(34)+"close(void) --> void"+char(34)+","+char(34)+"connectToHost(QString hostName, int port, QIODevice::OpenModeFlag openMode, QAbstractSocket::NetworkLayerProtocol protocol) --> void"+char(34)+","+char(34)+"delete(void) --> void"+char(34)+","+char(34)+"deleteLater(void) --> void"+char(34)+","+char(34)+"disconnectFromHost(void) --> void"+char(34)+","+char(34)+"dumpObjectInfo(void) --> void"+char(34)+","+char(34)+"dumpObjectTree(void) --> void"+char(34)+","+char(34)+"error(void) --> int"+char(34)+","+char(34)+"errorString(void) --> QString"+char(34)+","+char(34)+"flush(void) --> bool"+char(34)+","+char(34)+"getaboutToCloseEvent(void) --> char"+char(34)+","+char(34)+"getbytesWrittenEvent(void) --> char"+char(34)+","+char(34)+"getChar(char *c) --> bool"+char(34)+","+char(34)+"getconnectedEvent(void) --> char"+char(34)+","+char(34)+"getdisconnectedEvent(void) --> char"+char(34)+","+char(34)+"geterrorEvent(void) --> char"+char(34)+","+char(34)+"gethostFoundEvent(void) --> char"+char(34)+","+char(34)+"getproxyAuthenticationRequiredEvent(void) --> char"+char(34)+","+char(34)+"getreadChannelFinishedEvent(void) --> char"+char(34)+","+char(34)+"getreadyReadEvent(void) --> char"+char(34)+","+char(34)+"getstateChangedEvent(void) --> char"+char(34)+","+char(34)+"inherits(char *className) --> bool"+char(34)+","+char(34)+"init(parent) --> object"+char(34)+","+char(34)+"installEventFilter(QObject *filterObj) --> void"+char(34)+","+char(34)+"isOpen(void) --> bool"+char(34)+","+char(34)+"isReadable(void) --> bool"+char(34)+","+char(34)+"isSequential(void) --> bool"+char(34)+","+char(34)+"isTextModeEnabled(void) --> bool"+char(34)+","+char(34)+"isValid(void) --> bool"+char(34)+","+char(34)+"isWidgetType(void) --> bool"+char(34)+","+char(34)+"isWritable(void) --> bool"+char(34)+","+char(34)+"killTimer(int id) --> void"+char(34)+","+char(34)+"localAddress(void) --> QHostAddress"+char(34)+","+char(34)+"localPort(void) --> int"+char(34)+","+char(34)+"moveToThread(QThread *targetThread) --> void"+char(34)+","+char(34)+"objectName(void) --> QString"+char(34)+","+char(34)+"objectpointer(void) --> pointer"+char(34)+","+char(34)+"open(QIODevice::OpenMode flags) --> bool"+char(34)+","+char(34)+"openMode(void) --> int"+char(34)+","+char(34)+"parent(void) --> QObject"+char(34)+","+char(34)+"pauseMode(void) --> int"+char(34)+","+char(34)+"peek(char *data, int maxSize) --> int"+char(34)+","+char(34)+"peerAddress(void) --> QHostAddress"+char(34)+","+char(34)+"peerName(void) --> QString"+char(34)+","+char(34)+"peerPort(void) --> int"+char(34)+","+char(34)+"pos(void) --> qint64"+char(34)+","+char(34)+"property(char *name) --> QVariant"+char(34)+","+char(34)+"proxy(void) --> QNetworkProxy"+char(34)+","+char(34)+"putChar(char c) --> bool"+char(34)+","+char(34)+"read(char *data, int maxSize) --> int"+char(34)+","+char(34)+"readAll(void) --> QByteArray"+char(34)+","+char(34)+"readBufferSize(void) --> int"+char(34)+","+char(34)+"readLine(char *data, int maxSize) --> int"+char(34)+","+char(34)+"removeEventFilter(QObject *obj) --> void"+char(34)+","+char(34)+"resume(void) --> void"+char(34)+","+char(34)+"seek(qint64 pos) --> bool"+char(34)+","+char(34)+"setaboutToCloseEvent(char *) --> void"+char(34)+","+char(34)+"setbytesWrittenEvent(char *) --> void"+char(34)+","+char(34)+"setconnectedEvent(char *) --> void"+char(34)+","+char(34)+"setdisconnectedEvent(char *) --> void"+char(34)+","+char(34)+"seterrorEvent(char *) --> void"+char(34)+","+char(34)+"sethostFoundEvent(char *) --> void"+char(34)+","+char(34)+"setObjectName(QString) --> void"+char(34)+","+char(34)+"setParent(QObject *parent) --> void"+char(34)+","+char(34)+"setPauseMode(QAbstractSocket::PauseMode pauseMode) --> void"+char(34)+","+char(34)+"setProperty(char *name, QVariant) --> bool"+char(34)+","+char(34)+"setProperty_2(char *name, int) --> bool"+char(34)+","+char(34)+"setProperty_3(char *name, float) --> bool"+char(34)+","+char(34)+"setProperty_4(char *name, double) --> bool"+char(34)+","+char(34)+"setProperty_5(char *name, QString) --> bool"+char(34)+","+char(34)+"setProperty_double(char *name, double) --> bool"+char(34)+","+char(34)+"setProperty_float(char *name, float) --> bool"+char(34)+","+char(34)+"setProperty_int(char *name, int) --> bool"+char(34)+","+char(34)+"setProperty_string(char *name, QString) --> bool"+char(34)+","+char(34)+"setProxy(QNetworkProxy networkProxy) --> void"+char(34)+","+char(34)+"setproxyAuthenticationRequiredEvent(char *) --> void"+char(34)+","+char(34)+"setReadBufferSize(int size) --> void"+char(34)+","+char(34)+"setreadChannelFinishedEvent(char *) --> void"+char(34)+","+char(34)+"setreadyReadEvent(char *) --> void"+char(34)+","+char(34)+"setSocketDescriptor(qintptr socketDescriptor, QAbstractSocket::SocketState socketState, QIODevice::OpenModeFlag openMode) --> bool"+char(34)+","+char(34)+"setSocketOption(QAbstractSocket::SocketOption option, QVariant value) --> void"+char(34)+","+char(34)+"setstateChangedEvent(char *) --> void"+char(34)+","+char(34)+"setTextModeEnabled(bool enabled) --> void"+char(34)+","+char(34)+"signalsBlocked(void) --> bool"+char(34)+","+char(34)+"size(void) --> qint64"+char(34)+","+char(34)+"socketDescriptor(void) --> int"+char(34)+","+char(34)+"socketOption(QAbstractSocket::SocketOption option) --> QVariant"+char(34)+","+char(34)+"socketType(void) --> int"+char(34)+","+char(34)+"startTimer(int interval) --> int"+char(34)+","+char(34)+"state(void) --> int"+char(34)+","+char(34)+"thread(void) --> QThread"+char(34)+","+char(34)+"ungetChar(char c) --> void"+char(34)+","+char(34)+"waitForBytesWritten(int msecs) --> bool"+char(34)+","+char(34)+"waitForConnected(int msecs) --> bool"+char(34)+","+char(34)+"waitForDisconnected(int msecs) --> bool"+char(34)+","+char(34)+"waitForReadyRead(int msecs) --> bool"+char(34)+","+char(34)+"write(char *data, int maxSize) --> int"+char(34)+"]"
+				"/*"
 			]
 		]
 	],
 	[
 		12,
+		1,
+		[
+			[
+				"name",
+				"T_CT_QTCPSOCKETCLASS_IP_VALUE2LIST = ["
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#T_CT_QTCPSOCKETCLASS_IP_VALUE2LIST = [
+"
+			],
+			[
+				"interactionid",
+				12
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"T_CT_QTCPSOCKETCLASS_IP_VALUE2LIST = ["
+			]
+		]
+	],
+	[
+		13,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"abort(void) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"abort(void) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				13
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"abort(void) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		14,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"atEnd(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"atEnd(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				14
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"atEnd(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		15,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"bind(QHostAddress address, int port, QAbstractSocket::BindFlag mode) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"bind(QHostAddress address, int port, QAbstractSocket::BindFlag mode) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				15
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"bind(QHostAddress address, int port, QAbstractSocket::BindFlag mode) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		16,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"blockSignals(bool block) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"blockSignals(bool block) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				16
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"blockSignals(bool block) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		17,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"bytesAvailable(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"bytesAvailable(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				17
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"bytesAvailable(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		18,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"bytesToWrite(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"bytesToWrite(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				18
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"bytesToWrite(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		19,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"canReadLine(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"canReadLine(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				19
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"canReadLine(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		20,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"children(void) --> QObjectList"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"children(void) --> QObjectList"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				20
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"children(void) --> QObjectList"+char(34)+","
+			]
+		]
+	],
+	[
+		21,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"close(void) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"close(void) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				21
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"close(void) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		22,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"connectToHost(QString hostName, int port, QIODevice::OpenModeFlag openMode, QAbstractSocket::NetworkLayerProtocol protocol) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"connectToHost(QString hostName, int port, QIODevice::OpenModeFlag openMode, QAbstractSocket::NetworkLayerProtocol protocol) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				22
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"connectToHost(QString hostName, int port, QIODevice::OpenModeFlag openMode, QAbstractSocket::NetworkLayerProtocol protocol) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		23,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"delete(void) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"delete(void) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				23
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"delete(void) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		24,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"deleteLater(void) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"deleteLater(void) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				24
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"deleteLater(void) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		25,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"disconnectFromHost(void) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"disconnectFromHost(void) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				25
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"disconnectFromHost(void) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		26,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"dumpObjectInfo(void) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"dumpObjectInfo(void) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				26
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"dumpObjectInfo(void) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		27,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"dumpObjectTree(void) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"dumpObjectTree(void) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				27
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"dumpObjectTree(void) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		28,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"error(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"error(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				28
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"error(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		29,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"errorString(void) --> QString"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"errorString(void) --> QString"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				29
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"errorString(void) --> QString"+char(34)+","
+			]
+		]
+	],
+	[
+		30,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"flush(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"flush(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				30
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"flush(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		31,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"getaboutToCloseEvent(void) --> char"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"getaboutToCloseEvent(void) --> char"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				31
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"getaboutToCloseEvent(void) --> char"+char(34)+","
+			]
+		]
+	],
+	[
+		32,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"getbytesWrittenEvent(void) --> char"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"getbytesWrittenEvent(void) --> char"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				32
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"getbytesWrittenEvent(void) --> char"+char(34)+","
+			]
+		]
+	],
+	[
+		33,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"getChar(char *c) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"getChar(char *c) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				33
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"getChar(char *c) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		34,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"getconnectedEvent(void) --> char"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"getconnectedEvent(void) --> char"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				34
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"getconnectedEvent(void) --> char"+char(34)+","
+			]
+		]
+	],
+	[
+		35,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"getdisconnectedEvent(void) --> char"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"getdisconnectedEvent(void) --> char"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				35
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"getdisconnectedEvent(void) --> char"+char(34)+","
+			]
+		]
+	],
+	[
+		36,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"geterrorEvent(void) --> char"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"geterrorEvent(void) --> char"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				36
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"geterrorEvent(void) --> char"+char(34)+","
+			]
+		]
+	],
+	[
+		37,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"gethostFoundEvent(void) --> char"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"gethostFoundEvent(void) --> char"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				37
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"gethostFoundEvent(void) --> char"+char(34)+","
+			]
+		]
+	],
+	[
+		38,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"getproxyAuthenticationRequiredEvent(void) --> char"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"getproxyAuthenticationRequiredEvent(void) --> char"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				38
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"getproxyAuthenticationRequiredEvent(void) --> char"+char(34)+","
+			]
+		]
+	],
+	[
+		39,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"getreadChannelFinishedEvent(void) --> char"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"getreadChannelFinishedEvent(void) --> char"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				39
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"getreadChannelFinishedEvent(void) --> char"+char(34)+","
+			]
+		]
+	],
+	[
+		40,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"getreadyReadEvent(void) --> char"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"getreadyReadEvent(void) --> char"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				40
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"getreadyReadEvent(void) --> char"+char(34)+","
+			]
+		]
+	],
+	[
+		41,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"getstateChangedEvent(void) --> char"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"getstateChangedEvent(void) --> char"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				41
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"getstateChangedEvent(void) --> char"+char(34)+","
+			]
+		]
+	],
+	[
+		42,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"inherits(char *className) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"inherits(char *className) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				42
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"inherits(char *className) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		43,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"init(parent) --> object"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"init(parent) --> object"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				43
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"init(parent) --> object"+char(34)+","
+			]
+		]
+	],
+	[
+		44,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"installEventFilter(QObject *filterObj) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"installEventFilter(QObject *filterObj) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				44
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"installEventFilter(QObject *filterObj) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		45,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"isOpen(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"isOpen(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				45
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"isOpen(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		46,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"isReadable(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"isReadable(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				46
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"isReadable(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		47,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"isSequential(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"isSequential(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				47
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"isSequential(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		48,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"isTextModeEnabled(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"isTextModeEnabled(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				48
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"isTextModeEnabled(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		49,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"isValid(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"isValid(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				49
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"isValid(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		50,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"isWidgetType(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"isWidgetType(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				50
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"isWidgetType(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		51,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"isWritable(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"isWritable(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				51
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"isWritable(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		52,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"killTimer(int id) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"killTimer(int id) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				52
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"killTimer(int id) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		53,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"localAddress(void) --> QHostAddress"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"localAddress(void) --> QHostAddress"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				53
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"localAddress(void) --> QHostAddress"+char(34)+","
+			]
+		]
+	],
+	[
+		54,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"localPort(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"localPort(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				54
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"localPort(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		55,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"moveToThread(QThread *targetThread) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"moveToThread(QThread *targetThread) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				55
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"moveToThread(QThread *targetThread) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		56,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"objectName(void) --> QString"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"objectName(void) --> QString"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				56
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"objectName(void) --> QString"+char(34)+","
+			]
+		]
+	],
+	[
+		57,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"objectpointer(void) --> pointer"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"objectpointer(void) --> pointer"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				57
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"objectpointer(void) --> pointer"+char(34)+","
+			]
+		]
+	],
+	[
+		58,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"open(QIODevice::OpenMode flags) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"open(QIODevice::OpenMode flags) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				58
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"open(QIODevice::OpenMode flags) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		59,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"openMode(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"openMode(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				59
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"openMode(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		60,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"parent(void) --> QObject"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"parent(void) --> QObject"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				60
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"parent(void) --> QObject"+char(34)+","
+			]
+		]
+	],
+	[
+		61,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"pauseMode(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"pauseMode(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				61
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"pauseMode(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		62,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"peek(char *data, int maxSize) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"peek(char *data, int maxSize) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				62
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"peek(char *data, int maxSize) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		63,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"peerAddress(void) --> QHostAddress"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"peerAddress(void) --> QHostAddress"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				63
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"peerAddress(void) --> QHostAddress"+char(34)+","
+			]
+		]
+	],
+	[
+		64,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"peerName(void) --> QString"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"peerName(void) --> QString"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				64
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"peerName(void) --> QString"+char(34)+","
+			]
+		]
+	],
+	[
+		65,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"peerPort(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"peerPort(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				65
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"peerPort(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		66,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"pos(void) --> qint64"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"pos(void) --> qint64"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				66
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"pos(void) --> qint64"+char(34)+","
+			]
+		]
+	],
+	[
+		67,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"property(char *name) --> QVariant"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"property(char *name) --> QVariant"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				67
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"property(char *name) --> QVariant"+char(34)+","
+			]
+		]
+	],
+	[
+		68,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"proxy(void) --> QNetworkProxy"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"proxy(void) --> QNetworkProxy"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				68
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"proxy(void) --> QNetworkProxy"+char(34)+","
+			]
+		]
+	],
+	[
+		69,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"putChar(char c) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"putChar(char c) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				69
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"putChar(char c) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		70,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"read(char *data, int maxSize) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"read(char *data, int maxSize) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				70
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"read(char *data, int maxSize) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		71,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"readAll(void) --> QByteArray"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"readAll(void) --> QByteArray"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				71
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"readAll(void) --> QByteArray"+char(34)+","
+			]
+		]
+	],
+	[
+		72,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"readBufferSize(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"readBufferSize(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				72
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"readBufferSize(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		73,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"readLine(char *data, int maxSize) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"readLine(char *data, int maxSize) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				73
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"readLine(char *data, int maxSize) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		74,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"removeEventFilter(QObject *obj) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"removeEventFilter(QObject *obj) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				74
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"removeEventFilter(QObject *obj) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		75,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"resume(void) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"resume(void) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				75
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"resume(void) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		76,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"seek(qint64 pos) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"seek(qint64 pos) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				76
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"seek(qint64 pos) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		77,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setaboutToCloseEvent(char *) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setaboutToCloseEvent(char *) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				77
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setaboutToCloseEvent(char *) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		78,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setbytesWrittenEvent(char *) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setbytesWrittenEvent(char *) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				78
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setbytesWrittenEvent(char *) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		79,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setconnectedEvent(char *) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setconnectedEvent(char *) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				79
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setconnectedEvent(char *) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		80,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setdisconnectedEvent(char *) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setdisconnectedEvent(char *) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				80
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setdisconnectedEvent(char *) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		81,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"seterrorEvent(char *) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"seterrorEvent(char *) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				81
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"seterrorEvent(char *) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		82,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"sethostFoundEvent(char *) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"sethostFoundEvent(char *) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				82
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"sethostFoundEvent(char *) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		83,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setObjectName(QString) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setObjectName(QString) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				83
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setObjectName(QString) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		84,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setParent(QObject *parent) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setParent(QObject *parent) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				84
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setParent(QObject *parent) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		85,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setPauseMode(QAbstractSocket::PauseMode pauseMode) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setPauseMode(QAbstractSocket::PauseMode pauseMode) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				85
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setPauseMode(QAbstractSocket::PauseMode pauseMode) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		86,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setProperty(char *name, QVariant) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setProperty(char *name, QVariant) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				86
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setProperty(char *name, QVariant) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		87,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setProperty_2(char *name, int) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setProperty_2(char *name, int) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				87
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setProperty_2(char *name, int) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		88,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setProperty_3(char *name, float) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setProperty_3(char *name, float) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				88
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setProperty_3(char *name, float) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		89,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setProperty_4(char *name, double) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setProperty_4(char *name, double) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				89
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setProperty_4(char *name, double) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		90,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setProperty_5(char *name, QString) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setProperty_5(char *name, QString) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				90
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setProperty_5(char *name, QString) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		91,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setProperty_double(char *name, double) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setProperty_double(char *name, double) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				91
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setProperty_double(char *name, double) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		92,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setProperty_float(char *name, float) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setProperty_float(char *name, float) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				92
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setProperty_float(char *name, float) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		93,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setProperty_int(char *name, int) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setProperty_int(char *name, int) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				93
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setProperty_int(char *name, int) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		94,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setProperty_string(char *name, QString) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setProperty_string(char *name, QString) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				94
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setProperty_string(char *name, QString) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		95,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setProxy(QNetworkProxy networkProxy) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setProxy(QNetworkProxy networkProxy) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				95
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setProxy(QNetworkProxy networkProxy) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		96,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setproxyAuthenticationRequiredEvent(char *) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setproxyAuthenticationRequiredEvent(char *) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				96
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setproxyAuthenticationRequiredEvent(char *) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		97,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setReadBufferSize(int size) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setReadBufferSize(int size) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				97
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setReadBufferSize(int size) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		98,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setreadChannelFinishedEvent(char *) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setreadChannelFinishedEvent(char *) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				98
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setreadChannelFinishedEvent(char *) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		99,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setreadyReadEvent(char *) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setreadyReadEvent(char *) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				99
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setreadyReadEvent(char *) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		100,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setSocketDescriptor(qintptr socketDescriptor, QAbstractSocket::SocketState socketState, QIODevice::OpenModeFlag openMode) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setSocketDescriptor(qintptr socketDescriptor, QAbstractSocket::SocketState socketState, QIODevice::OpenModeFlag openMode) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				100
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setSocketDescriptor(qintptr socketDescriptor, QAbstractSocket::SocketState socketState, QIODevice::OpenModeFlag openMode) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		101,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setSocketOption(QAbstractSocket::SocketOption option, QVariant value) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setSocketOption(QAbstractSocket::SocketOption option, QVariant value) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				101
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setSocketOption(QAbstractSocket::SocketOption option, QVariant value) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		102,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setstateChangedEvent(char *) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setstateChangedEvent(char *) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				102
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setstateChangedEvent(char *) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		103,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setTextModeEnabled(bool enabled) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setTextModeEnabled(bool enabled) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				103
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setTextModeEnabled(bool enabled) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		104,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"signalsBlocked(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"signalsBlocked(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				104
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"signalsBlocked(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		105,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"size(void) --> qint64"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"size(void) --> qint64"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				105
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"size(void) --> qint64"+char(34)+","
+			]
+		]
+	],
+	[
+		106,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"socketDescriptor(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"socketDescriptor(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				106
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"socketDescriptor(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		107,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"socketOption(QAbstractSocket::SocketOption option) --> QVariant"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"socketOption(QAbstractSocket::SocketOption option) --> QVariant"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				107
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"socketOption(QAbstractSocket::SocketOption option) --> QVariant"+char(34)+","
+			]
+		]
+	],
+	[
+		108,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"socketType(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"socketType(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				108
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"socketType(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		109,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"startTimer(int interval) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"startTimer(int interval) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				109
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"startTimer(int interval) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		110,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"state(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"state(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				110
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"state(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		111,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"thread(void) --> QThread"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"thread(void) --> QThread"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				111
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"thread(void) --> QThread"+char(34)+","
+			]
+		]
+	],
+	[
+		112,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"ungetChar(char c) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"ungetChar(char c) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				112
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"ungetChar(char c) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		113,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"waitForBytesWritten(int msecs) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"waitForBytesWritten(int msecs) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				113
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"waitForBytesWritten(int msecs) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		114,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"waitForConnected(int msecs) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"waitForConnected(int msecs) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				114
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"waitForConnected(int msecs) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		115,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"waitForDisconnected(int msecs) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"waitForDisconnected(int msecs) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				115
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"waitForDisconnected(int msecs) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		116,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"waitForReadyRead(int msecs) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"waitForReadyRead(int msecs) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				116
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"waitForReadyRead(int msecs) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		117,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"write(char *data, int maxSize) --> int"+char(34)+""
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"write(char *data, int maxSize) --> int"+char(34)+"
+"
+			],
+			[
+				"interactionid",
+				117
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"write(char *data, int maxSize) --> int"+char(34)+""
+			]
+		]
+	],
+	[
+		118,
+		1,
+		[
+			[
+				"name",
+				"]"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#]
+"
+			],
+			[
+				"interactionid",
+				118
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"]"
+			]
+		]
+	],
+	[
+		119,
+		1,
+		[
+			[
+				"name",
+				"*/"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#*/
+"
+			],
+			[
+				"interactionid",
+				119
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"*/"
+			]
+		]
+	],
+	[
+		120,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QTCPSOCKETCLASS_IP_VALUE2LIST</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;إلغاء(لاشىء)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;فيالنهاية(لاشىء)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;ربط(عنوان&nbsp;المضيف،&nbsp;عدد&nbsp;صحيح&nbsp;منفذ،&nbsp;علم&nbsp;الربط)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;حجبالإشارات(منطقية&nbsp;حجب)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;بايتاتمتاحة(لاشىء)&nbsp;--&gt;&nbsp;عدد&nbsp;صحيح&quot;,&quot;بايتاتللكتابة(لاشىء)&nbsp;--&gt;&nbsp;عدد&nbsp;صحيح&quot;,&quot;يمكنقراءةالسطر(لاشىء)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;أطفال(لاشىء)&nbsp;--&gt;&nbsp;قائمةالكائنات&quot;,&quot;إغلاق(لاشىء)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;الاتصالبالمضيف(اسم&nbsp;المضيف،&nbsp;عدد&nbsp;صحيح&nbsp;منفذ،&nbsp;علم&nbsp;فتح&nbsp;الوضع،&nbsp;بروتوكول&nbsp;الطبقة&nbsp;الشبكية)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;حذف(لاشىء)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;احذفلاحقاً(لاشىء)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;قطعالاتصالبالمضيف(لاشىء)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;تفريغمعلوماتالكائن(لاشىء)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;تفريغشجرةالكائن(لاشىء)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;خطأ(لاشىء)&nbsp;--&gt;&nbsp;عدد&nbsp;صحيح&quot;,&quot;نصالخطأ(لاشىء)&nbsp;--&gt;&nbsp;نص&quot;,&quot;تفريغ(لاشىء)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;الحصولعلىحدثالإغلاقالمتوقع(لاشىء)&nbsp;--&gt;&nbsp;حرف&quot;,&quot;الحصولعلىحدثالبايتاتالمكتوبة(لاشىء)&nbsp;--&gt;&nbsp;حرف&quot;,&quot;الحصولعلىمحرف(حرف&nbsp;*محرف)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;الحصولعلىحدثالاتصال(لاشىء)&nbsp;--&gt;&nbsp;حرف&quot;,&quot;الحصولعلىحدثالفصل(لاشىء)&nbsp;--&gt;&nbsp;حرف&quot;,&quot;الحصولعلىحدثالخطأ(لاشىء)&nbsp;--&gt;&nbsp;حرف&quot;,&quot;الحصولعلىحدثالعثورعلىالمضيف(لاشىء)&nbsp;--&gt;&nbsp;حرف&quot;,&quot;الحصولعلىحدثطلبمصادقةالوكيل(لاشىء)&nbsp;--&gt;&nbsp;حرف&quot;,&quot;الحصولعلىحدثانتهاءقناةالقراءة(لاشىء)&nbsp;--&gt;&nbsp;حرف&quot;,&quot;الحصولعلىحدثالقراءةجاهزة(لاشىء)&nbsp;--&gt;&nbsp;حرف&quot;,&quot;الحصولعلىحدثتغييرالحالة(لاشىء)&nbsp;--&gt;&nbsp;حرف&quot;,&quot;يرث(حرف&nbsp;*اسمالفئة)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;تهيئة(الأصل)&nbsp;--&gt;&nbsp;كائن&quot;,&quot;تثبيتالمرشحالحدث(كائن&nbsp;*مرشحالحدث)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;مفتوح(لاشىء)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;قابلللقراءة(لاشىء)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;تتابعي(لاشىء)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;تمكينوضعالنص(لاشىء)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;صالح(لاشىء)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;نوعالأداة(لاشىء)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;قابلللكتابة(لاشىء)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;إيقافالعداد(عدد&nbsp;صحيح&nbsp;معرف)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;العنوانالمحلي(لاشىء)&nbsp;--&gt;&nbsp;عنوانالمضيف&quot;,&quot;المنفذالمحلي(لاشىء)&nbsp;--&gt;&nbsp;عدد&nbsp;صحيح&quot;,&quot;نقلالىالخيط(خيط&nbsp;*خيطالمستهدف)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;اسمالكائن(لاشىء)&nbsp;--&gt;&nbsp;نص&quot;,&quot;مؤشرالكائن(لاشىء)&nbsp;--&gt;&nbsp;مؤشر&quot;,&quot;فتح(وضعالفتح)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;وضعالفتح(لاشىء)&nbsp;--&gt;&nbsp;عدد&nbsp;صحيح&quot;,&quot;الأصل(لاشىء)&nbsp;--&gt;&nbsp;كائن&quot;,&quot;وضعالتوقف(لاشىء)&nbsp;--&gt;&nbsp;عدد&nbsp;صحيح&quot;,&quot;إطلالة(حرف&nbsp;*بيانات،&nbsp;عدد&nbsp;صحيح&nbsp;أقصىحجم)&nbsp;--&gt;&nbsp;عدد&nbsp;صحيح&quot;,&quot;عنوانالنظير(لاشىء)&nbsp;--&gt;&nbsp;عنوانالمضيف&quot;,&quot;اسمالنظير(لاشىء)&nbsp;--&gt;&nbsp;نص&quot;,&quot;منفذالنظير(لاشىء)&nbsp;--&gt;&nbsp;عدد&nbsp;صحيح&quot;,&quot;الموضع(لاشىء)&nbsp;--&gt;&nbsp;عددمضاعف64&quot;,&quot;خاصية(حرف&nbsp;*اسم)&nbsp;--&gt;&nbsp;نوعمتغير&quot;,&quot;الوكيل(لاشىء)&nbsp;--&gt;&nbsp;وكيلشبكة&quot;,&quot;إدخالمحرف(حرف&nbsp;محرف)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;قراءة(حرف&nbsp;*بيانات،&nbsp;عدد&nbsp;صحيح&nbsp;أقصىحجم)&nbsp;--&gt;&nbsp;عدد&nbsp;صحيح&quot;,&quot;قراءةالكل(لاشىء)&nbsp;--&gt;&nbsp;مصفوفةبايتات&quot;,&quot;حجمذاكرةالقراءة(لاشىء)&nbsp;--&gt;&nbsp;عدد&nbsp;صحيح&quot;,&quot;قراءةالسطر(حرف&nbsp;*بيانات،&nbsp;عدد&nbsp;صحيح&nbsp;أقصىحجم)&nbsp;--&gt;&nbsp;عدد&nbsp;صحيح&quot;,&quot;إزالةالمرشحالحدث(كائن&nbsp;*كائن)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;استئناف(لاشىء)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;بحث(عددمضاعف64&nbsp;الموضع)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;تعيينحدثالإغلاقالمتوقع(حرف&nbsp;*)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;تعيينحدثالبايتاتالمكتوبة(حرف&nbsp;*)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;تعيينحدثالاتصال(حرف&nbsp;*)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;تعيينحدثالفصل(حرف&nbsp;*)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;تعيينحدثالخطأ(حرف&nbsp;*)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;تعيينحدثالعثورعلىالمضيف(حرف&nbsp;*)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;تعييناسمالكائن(نص)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;تعيينالأصل(كائن&nbsp;*الأصل)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;تعيينوضعتوقف(وضعالتوقف)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;تعيينخاصية(حرف&nbsp;*اسم،&nbsp;نوعمتغير)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;تعيينخاصية_2(حرف&nbsp;*اسم،&nbsp;عدد&nbsp;صحيح)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;تعيينخاصية_3(حرف&nbsp;*اسم،&nbsp;عائم)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;تعيينخاصية_4(حرف&nbsp;*اسم،&nbsp;مزدوج)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;تعيينخاصية_5(حرف&nbsp;*اسم،&nbsp;نص)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;تعيينخاصية_مزدوج(حرف&nbsp;*اسم،&nbsp;مزدوج)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;تعيينخاصية_عائم(حرف&nbsp;*اسم،&nbsp;عائم)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;تعيينخاصية_عددصحيح(حرف&nbsp;*اسم،&nbsp;عدد&nbsp;صحيح)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;تعيينخاصية_نص(حرف&nbsp;*اسم،&nbsp;نص)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;تعيينوكيل(وكيلشبكة)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;تعيينحدثطلبمصادقةالوكيل(حرف&nbsp;*)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;تعيينحجمذاكرةالقراءة(عدد&nbsp;صحيح&nbsp;الحجم)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;تعيينحدثانتهاءقناةالقراءة(حرف&nbsp;*)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;تعيينحدثالقراءةجاهزة(حرف&nbsp;*)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;تعيينمعرفالمقبس(عددمضاعفsocketDescriptor،&nbsp;حالةالمقبس،&nbsp;علمفتحالوضع)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;تعيينخيارالمقبس(خيارالمقبس،&nbsp;نوعمتغير&nbsp;القيمة)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;تعيينحدثتغييرالحالة(حرف&nbsp;*)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;تمكينوضعالنص(منطقية&nbsp;ممكن)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;حجبالإشارات(لاشىء)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;الحجم(لاشىء)&nbsp;--&gt;&nbsp;عددمضاعف64&quot;,&quot;معرفالمقبس(لاشىء)&nbsp;--&gt;&nbsp;عدد&nbsp;صحيح&quot;,&quot;خيارالمقبس(خيارالمقبس)&nbsp;--&gt;&nbsp;نوعمتغير&quot;,&quot;نوعالمقبس(لاشىء)&nbsp;--&gt;&nbsp;عدد&nbsp;صحيح&quot;,&quot;تشغيلالمؤقت(عدد&nbsp;صحيح&nbsp;الفاصل)&nbsp;--&gt;&nbsp;عدد&nbsp;صحيح&quot;,&quot;الحالة(لاشىء)&nbsp;--&gt;&nbsp;عدد&nbsp;صحيح&quot;,&quot;خيط(لاشىء)&nbsp;--&gt;&nbsp;خيط&quot;,&quot;إعادةمحرف(حرف&nbsp;محرف)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;انتظارالكتابة(عدد&nbsp;صحيح&nbsp;ميليثانية)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;انتظارالاتصال(عدد&nbsp;صحيح&nbsp;ميليثانية)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;انتظارالفصل(عدد&nbsp;صحيح&nbsp;ميليثانية)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;انتظارالقراءة(عدد&nbsp;صحيح&nbsp;ميليثانية)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;كتابة(حرف&nbsp;*بيانات،&nbsp;عدد&nbsp;صحيح&nbsp;أقصىحجم)&nbsp;--&gt;&nbsp;عدد&nbsp;صحيح&quot;]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_CT_QTCPSOCKETCLASS_IP_VALUE2LIST = ["+char(34)+"إلغاء(لاشىء) --> لاشىء"+char(34)+","+char(34)+"فيالنهاية(لاشىء) --> منطقية"+char(34)+","+char(34)+"ربط(عنوان المضيف، عدد صحيح منفذ، علم الربط) --> منطقية"+char(34)+","+char(34)+"حجبالإشارات(منطقية حجب) --> منطقية"+char(34)+","+char(34)+"بايتاتمتاحة(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"بايتاتللكتابة(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"يمكنقراءةالسطر(لاشىء) --> منطقية"+char(34)+","+char(34)+"أطفال(لاشىء) --> قائمةالكائنات"+char(34)+","+char(34)+"إغلاق(لاشىء) --> لاشىء"+char(34)+","+char(34)+"الاتصالبالمضيف(اسم المضيف، عدد صحيح منفذ، علم فتح الوضع، بروتوكول الطبقة الشبكية) --> لاشىء"+char(34)+","+char(34)+"حذف(لاشىء) --> لاشىء"+char(34)+","+char(34)+"احذفلاحقاً(لاشىء) --> لاشىء"+char(34)+","+char(34)+"قطعالاتصالبالمضيف(لاشىء) --> لاشىء"+char(34)+","+char(34)+"تفريغمعلوماتالكائن(لاشىء) --> لاشىء"+char(34)+","+char(34)+"تفريغشجرةالكائن(لاشىء) --> لاشىء"+char(34)+","+char(34)+"خطأ(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"نصالخطأ(لاشىء) --> نص"+char(34)+","+char(34)+"تفريغ(لاشىء) --> منطقية"+char(34)+","+char(34)+"الحصولعلىحدثالإغلاقالمتوقع(لاشىء) --> حرف"+char(34)+","+char(34)+"الحصولعلىحدثالبايتاتالمكتوبة(لاشىء) --> حرف"+char(34)+","+char(34)+"الحصولعلىمحرف(حرف *محرف) --> منطقية"+char(34)+","+char(34)+"الحصولعلىحدثالاتصال(لاشىء) --> حرف"+char(34)+","+char(34)+"الحصولعلىحدثالفصل(لاشىء) --> حرف"+char(34)+","+char(34)+"الحصولعلىحدثالخطأ(لاشىء) --> حرف"+char(34)+","+char(34)+"الحصولعلىحدثالعثورعلىالمضيف(لاشىء) --> حرف"+char(34)+","+char(34)+"الحصولعلىحدثطلبمصادقةالوكيل(لاشىء) --> حرف"+char(34)+","+char(34)+"الحصولعلىحدثانتهاءقناةالقراءة(لاشىء) --> حرف"+char(34)+","+char(34)+"الحصولعلىحدثالقراءةجاهزة(لاشىء) --> حرف"+char(34)+","+char(34)+"الحصولعلىحدثتغييرالحالة(لاشىء) --> حرف"+char(34)+","+char(34)+"يرث(حرف *اسمالفئة) --> منطقية"+char(34)+","+char(34)+"تهيئة(الأصل) --> كائن"+char(34)+","+char(34)+"تثبيتالمرشحالحدث(كائن *مرشحالحدث) --> لاشىء"+char(34)+","+char(34)+"مفتوح(لاشىء) --> منطقية"+char(34)+","+char(34)+"قابلللقراءة(لاشىء) --> منطقية"+char(34)+","+char(34)+"تتابعي(لاشىء) --> منطقية"+char(34)+","+char(34)+"تمكينوضعالنص(لاشىء) --> منطقية"+char(34)+","+char(34)+"صالح(لاشىء) --> منطقية"+char(34)+","+char(34)+"نوعالأداة(لاشىء) --> منطقية"+char(34)+","+char(34)+"قابلللكتابة(لاشىء) --> منطقية"+char(34)+","+char(34)+"إيقافالعداد(عدد صحيح معرف) --> لاشىء"+char(34)+","+char(34)+"العنوانالمحلي(لاشىء) --> عنوانالمضيف"+char(34)+","+char(34)+"المنفذالمحلي(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"نقلالىالخيط(خيط *خيطالمستهدف) --> لاشىء"+char(34)+","+char(34)+"اسمالكائن(لاشىء) --> نص"+char(34)+","+char(34)+"مؤشرالكائن(لاشىء) --> مؤشر"+char(34)+","+char(34)+"فتح(وضعالفتح) --> منطقية"+char(34)+","+char(34)+"وضعالفتح(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"الأصل(لاشىء) --> كائن"+char(34)+","+char(34)+"وضعالتوقف(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"إطلالة(حرف *بيانات، عدد صحيح أقصىحجم) --> عدد صحيح"+char(34)+","+char(34)+"عنوانالنظير(لاشىء) --> عنوانالمضيف"+char(34)+","+char(34)+"اسمالنظير(لاشىء) --> نص"+char(34)+","+char(34)+"منفذالنظير(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"الموضع(لاشىء) --> عددمضاعف64"+char(34)+","+char(34)+"خاصية(حرف *اسم) --> نوعمتغير"+char(34)+","+char(34)+"الوكيل(لاشىء) --> وكيلشبكة"+char(34)+","+char(34)+"إدخالمحرف(حرف محرف) --> منطقية"+char(34)+","+char(34)+"قراءة(حرف *بيانات، عدد صحيح أقصىحجم) --> عدد صحيح"+char(34)+","+char(34)+"قراءةالكل(لاشىء) --> مصفوفةبايتات"+char(34)+","+char(34)+"حجمذاكرةالقراءة(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"قراءةالسطر(حرف *بيانات، عدد صحيح أقصىحجم) --> عدد صحيح"+char(34)+","+char(34)+"إزالةالمرشحالحدث(كائن *كائن) --> لاشىء"+char(34)+","+char(34)+"استئناف(لاشىء) --> لاشىء"+char(34)+","+char(34)+"بحث(عددمضاعف64 الموضع) --> منطقية"+char(34)+","+char(34)+"تعيينحدثالإغلاقالمتوقع(حرف *) --> لاشىء"+char(34)+","+char(34)+"تعيينحدثالبايتاتالمكتوبة(حرف *) --> لاشىء"+char(34)+","+char(34)+"تعيينحدثالاتصال(حرف *) --> لاشىء"+char(34)+","+char(34)+"تعيينحدثالفصل(حرف *) --> لاشىء"+char(34)+","+char(34)+"تعيينحدثالخطأ(حرف *) --> لاشىء"+char(34)+","+char(34)+"تعيينحدثالعثورعلىالمضيف(حرف *) --> لاشىء"+char(34)+","+char(34)+"تعييناسمالكائن(نص) --> لاشىء"+char(34)+","+char(34)+"تعيينالأصل(كائن *الأصل) --> لاشىء"+char(34)+","+char(34)+"تعيينوضعتوقف(وضعالتوقف) --> لاشىء"+char(34)+","+char(34)+"تعيينخاصية(حرف *اسم، نوعمتغير) --> منطقية"+char(34)+","+char(34)+"تعيينخاصية_2(حرف *اسم، عدد صحيح) --> منطقية"+char(34)+","+char(34)+"تعيينخاصية_3(حرف *اسم، عائم) --> منطقية"+char(34)+","+char(34)+"تعيينخاصية_4(حرف *اسم، مزدوج) --> منطقية"+char(34)+","+char(34)+"تعيينخاصية_5(حرف *اسم، نص) --> منطقية"+char(34)+","+char(34)+"تعيينخاصية_مزدوج(حرف *اسم، مزدوج) --> منطقية"+char(34)+","+char(34)+"تعيينخاصية_عائم(حرف *اسم، عائم) --> منطقية"+char(34)+","+char(34)+"تعيينخاصية_عددصحيح(حرف *اسم، عدد صحيح) --> منطقية"+char(34)+","+char(34)+"تعيينخاصية_نص(حرف *اسم، نص) --> منطقية"+char(34)+","+char(34)+"تعيينوكيل(وكيلشبكة) --> لاشىء"+char(34)+","+char(34)+"تعيينحدثطلبمصادقةالوكيل(حرف *) --> لاشىء"+char(34)+","+char(34)+"تعيينحجمذاكرةالقراءة(عدد صحيح الحجم) --> لاشىء"+char(34)+","+char(34)+"تعيينحدثانتهاءقناةالقراءة(حرف *) --> لاشىء"+char(34)+","+char(34)+"تعيينحدثالقراءةجاهزة(حرف *) --> لاشىء"+char(34)+","+char(34)+"تعيينمعرفالمقبس(عددمضاعفsocketDescriptor، حالةالمقبس، علمفتحالوضع) --> منطقية"+char(34)+","+char(34)+"تعيينخيارالمقبس(خيارالمقبس، نوعمتغير القيمة) --> لاشىء"+char(34)+","+char(34)+"تعيينحدثتغييرالحالة(حرف *) --> لاشىء"+char(34)+","+char(34)+"تمكينوضعالنص(منطقية ممكن) --> لاشىء"+char(34)+","+char(34)+"حجبالإشارات(لاشىء) --> منطقية"+char(34)+","+char(34)+"الحجم(لاشىء) --> عددمضاعف64"+char(34)+","+char(34)+"معرفالمقبس(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"خيارالمقبس(خيارالمقبس) --> نوعمتغير"+char(34)+","+char(34)+"نوعالمقبس(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"تشغيلالمؤقت(عدد صحيح الفاصل) --> عدد صحيح"+char(34)+","+char(34)+"الحالة(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"خيط(لاشىء) --> خيط"+char(34)+","+char(34)+"إعادةمحرف(حرف محرف) --> لاشىء"+char(34)+","+char(34)+"انتظارالكتابة(عدد صحيح ميليثانية) --> منطقية"+char(34)+","+char(34)+"انتظارالاتصال(عدد صحيح ميليثانية) --> منطقية"+char(34)+","+char(34)+"انتظارالفصل(عدد صحيح ميليثانية) --> منطقية"+char(34)+","+char(34)+"انتظارالقراءة(عدد صحيح ميليثانية) --> منطقية"+char(34)+","+char(34)+"كتابة(حرف *بيانات، عدد صحيح أقصىحجم) --> عدد صحيح"+char(34)+"]"
+			],
+			[
+				"interactionid",
+				120
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_CT_QTCPSOCKETCLASS_IP_VALUE2LIST = ["+char(34)+"إلغاء(لاشىء) --> لاشىء"+char(34)+","+char(34)+"فيالنهاية(لاشىء) --> منطقية"+char(34)+","+char(34)+"ربط(عنوان المضيف، عدد صحيح منفذ، علم الربط) --> منطقية"+char(34)+","+char(34)+"حجبالإشارات(منطقية حجب) --> منطقية"+char(34)+","+char(34)+"بايتاتمتاحة(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"بايتاتللكتابة(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"يمكنقراءةالسطر(لاشىء) --> منطقية"+char(34)+","+char(34)+"أطفال(لاشىء) --> قائمةالكائنات"+char(34)+","+char(34)+"إغلاق(لاشىء) --> لاشىء"+char(34)+","+char(34)+"الاتصالبالمضيف(اسم المضيف، عدد صحيح منفذ، علم فتح الوضع، بروتوكول الطبقة الشبكية) --> لاشىء"+char(34)+","+char(34)+"حذف(لاشىء) --> لاشىء"+char(34)+","+char(34)+"احذفلاحقاً(لاشىء) --> لاشىء"+char(34)+","+char(34)+"قطعالاتصالبالمضيف(لاشىء) --> لاشىء"+char(34)+","+char(34)+"تفريغمعلوماتالكائن(لاشىء) --> لاشىء"+char(34)+","+char(34)+"تفريغشجرةالكائن(لاشىء) --> لاشىء"+char(34)+","+char(34)+"خطأ(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"نصالخطأ(لاشىء) --> نص"+char(34)+","+char(34)+"تفريغ(لاشىء) --> منطقية"+char(34)+","+char(34)+"الحصولعلىحدثالإغلاقالمتوقع(لاشىء) --> حرف"+char(34)+","+char(34)+"الحصولعلىحدثالبايتاتالمكتوبة(لاشىء) --> حرف"+char(34)+","+char(34)+"الحصولعلىمحرف(حرف *محرف) --> منطقية"+char(34)+","+char(34)+"الحصولعلىحدثالاتصال(لاشىء) --> حرف"+char(34)+","+char(34)+"الحصولعلىحدثالفصل(لاشىء) --> حرف"+char(34)+","+char(34)+"الحصولعلىحدثالخطأ(لاشىء) --> حرف"+char(34)+","+char(34)+"الحصولعلىحدثالعثورعلىالمضيف(لاشىء) --> حرف"+char(34)+","+char(34)+"الحصولعلىحدثطلبمصادقةالوكيل(لاشىء) --> حرف"+char(34)+","+char(34)+"الحصولعلىحدثانتهاءقناةالقراءة(لاشىء) --> حرف"+char(34)+","+char(34)+"الحصولعلىحدثالقراءةجاهزة(لاشىء) --> حرف"+char(34)+","+char(34)+"الحصولعلىحدثتغييرالحالة(لاشىء) --> حرف"+char(34)+","+char(34)+"يرث(حرف *اسمالفئة) --> منطقية"+char(34)+","+char(34)+"تهيئة(الأصل) --> كائن"+char(34)+","+char(34)+"تثبيتالمرشحالحدث(كائن *مرشحالحدث) --> لاشىء"+char(34)+","+char(34)+"مفتوح(لاشىء) --> منطقية"+char(34)+","+char(34)+"قابلللقراءة(لاشىء) --> منطقية"+char(34)+","+char(34)+"تتابعي(لاشىء) --> منطقية"+char(34)+","+char(34)+"تمكينوضعالنص(لاشىء) --> منطقية"+char(34)+","+char(34)+"صالح(لاشىء) --> منطقية"+char(34)+","+char(34)+"نوعالأداة(لاشىء) --> منطقية"+char(34)+","+char(34)+"قابلللكتابة(لاشىء) --> منطقية"+char(34)+","+char(34)+"إيقافالعداد(عدد صحيح معرف) --> لاشىء"+char(34)+","+char(34)+"العنوانالمحلي(لاشىء) --> عنوانالمضيف"+char(34)+","+char(34)+"المنفذالمحلي(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"نقلالىالخيط(خيط *خيطالمستهدف) --> لاشىء"+char(34)+","+char(34)+"اسمالكائن(لاشىء) --> نص"+char(34)+","+char(34)+"مؤشرالكائن(لاشىء) --> مؤشر"+char(34)+","+char(34)+"فتح(وضعالفتح) --> منطقية"+char(34)+","+char(34)+"وضعالفتح(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"الأصل(لاشىء) --> كائن"+char(34)+","+char(34)+"وضعالتوقف(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"إطلالة(حرف *بيانات، عدد صحيح أقصىحجم) --> عدد صحيح"+char(34)+","+char(34)+"عنوانالنظير(لاشىء) --> عنوانالمضيف"+char(34)+","+char(34)+"اسمالنظير(لاشىء) --> نص"+char(34)+","+char(34)+"منفذالنظير(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"الموضع(لاشىء) --> عددمضاعف64"+char(34)+","+char(34)+"خاصية(حرف *اسم) --> نوعمتغير"+char(34)+","+char(34)+"الوكيل(لاشىء) --> وكيلشبكة"+char(34)+","+char(34)+"إدخالمحرف(حرف محرف) --> منطقية"+char(34)+","+char(34)+"قراءة(حرف *بيانات، عدد صحيح أقصىحجم) --> عدد صحيح"+char(34)+","+char(34)+"قراءةالكل(لاشىء) --> مصفوفةبايتات"+char(34)+","+char(34)+"حجمذاكرةالقراءة(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"قراءةالسطر(حرف *بيانات، عدد صحيح أقصىحجم) --> عدد صحيح"+char(34)+","+char(34)+"إزالةالمرشحالحدث(كائن *كائن) --> لاشىء"+char(34)+","+char(34)+"استئناف(لاشىء) --> لاشىء"+char(34)+","+char(34)+"بحث(عددمضاعف64 الموضع) --> منطقية"+char(34)+","+char(34)+"تعيينحدثالإغلاقالمتوقع(حرف *) --> لاشىء"+char(34)+","+char(34)+"تعيينحدثالبايتاتالمكتوبة(حرف *) --> لاشىء"+char(34)+","+char(34)+"تعيينحدثالاتصال(حرف *) --> لاشىء"+char(34)+","+char(34)+"تعيينحدثالفصل(حرف *) --> لاشىء"+char(34)+","+char(34)+"تعيينحدثالخطأ(حرف *) --> لاشىء"+char(34)+","+char(34)+"تعيينحدثالعثورعلىالمضيف(حرف *) --> لاشىء"+char(34)+","+char(34)+"تعييناسمالكائن(نص) --> لاشىء"+char(34)+","+char(34)+"تعيينالأصل(كائن *الأصل) --> لاشىء"+char(34)+","+char(34)+"تعيينوضعتوقف(وضعالتوقف) --> لاشىء"+char(34)+","+char(34)+"تعيينخاصية(حرف *اسم، نوعمتغير) --> منطقية"+char(34)+","+char(34)+"تعيينخاصية_2(حرف *اسم، عدد صحيح) --> منطقية"+char(34)+","+char(34)+"تعيينخاصية_3(حرف *اسم، عائم) --> منطقية"+char(34)+","+char(34)+"تعيينخاصية_4(حرف *اسم، مزدوج) --> منطقية"+char(34)+","+char(34)+"تعيينخاصية_5(حرف *اسم، نص) --> منطقية"+char(34)+","+char(34)+"تعيينخاصية_مزدوج(حرف *اسم، مزدوج) --> منطقية"+char(34)+","+char(34)+"تعيينخاصية_عائم(حرف *اسم، عائم) --> منطقية"+char(34)+","+char(34)+"تعيينخاصية_عددصحيح(حرف *اسم، عدد صحيح) --> منطقية"+char(34)+","+char(34)+"تعيينخاصية_نص(حرف *اسم، نص) --> منطقية"+char(34)+","+char(34)+"تعيينوكيل(وكيلشبكة) --> لاشىء"+char(34)+","+char(34)+"تعيينحدثطلبمصادقةالوكيل(حرف *) --> لاشىء"+char(34)+","+char(34)+"تعيينحجمذاكرةالقراءة(عدد صحيح الحجم) --> لاشىء"+char(34)+","+char(34)+"تعيينحدثانتهاءقناةالقراءة(حرف *) --> لاشىء"+char(34)+","+char(34)+"تعيينحدثالقراءةجاهزة(حرف *) --> لاشىء"+char(34)+","+char(34)+"تعيينمعرفالمقبس(عددمضاعفsocketDescriptor، حالةالمقبس، علمفتحالوضع) --> منطقية"+char(34)+","+char(34)+"تعيينخيارالمقبس(خيارالمقبس، نوعمتغير القيمة) --> لاشىء"+char(34)+","+char(34)+"تعيينحدثتغييرالحالة(حرف *) --> لاشىء"+char(34)+","+char(34)+"تمكينوضعالنص(منطقية ممكن) --> لاشىء"+char(34)+","+char(34)+"حجبالإشارات(لاشىء) --> منطقية"+char(34)+","+char(34)+"الحجم(لاشىء) --> عددمضاعف64"+char(34)+","+char(34)+"معرفالمقبس(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"خيارالمقبس(خيارالمقبس) --> نوعمتغير"+char(34)+","+char(34)+"نوعالمقبس(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"تشغيلالمؤقت(عدد صحيح الفاصل) --> عدد صحيح"+char(34)+","+char(34)+"الحالة(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"خيط(لاشىء) --> خيط"+char(34)+","+char(34)+"إعادةمحرف(حرف محرف) --> لاشىء"+char(34)+","+char(34)+"انتظارالكتابة(عدد صحيح ميليثانية) --> منطقية"+char(34)+","+char(34)+"انتظارالاتصال(عدد صحيح ميليثانية) --> منطقية"+char(34)+","+char(34)+"انتظارالفصل(عدد صحيح ميليثانية) --> منطقية"+char(34)+","+char(34)+"انتظارالقراءة(عدد صحيح ميليثانية) --> منطقية"+char(34)+","+char(34)+"كتابة(حرف *بيانات، عدد صحيح أقصىحجم) --> عدد صحيح"+char(34)+"]"
+			]
+		]
+	],
+	[
+		121,
 		1,
 		[
 			[
@@ -445,7 +4696,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				12
+				121
 			],
 			[
 				"visible",
@@ -466,7 +4717,7 @@ aStepsTable = [
 		]
 	],
 	[
-		13,
+		122,
 		1,
 		[
 			[
@@ -483,7 +4734,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				13
+				122
 			],
 			[
 				"visible",
@@ -504,7 +4755,7 @@ aStepsTable = [
 		]
 	],
 	[
-		14,
+		123,
 		1,
 		[
 			[
@@ -521,7 +4772,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				14
+				123
 			],
 			[
 				"visible",
@@ -542,12 +4793,12 @@ aStepsTable = [
 		]
 	],
 	[
-		15,
+		124,
 		1,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QTCPSOCKETCLASS_IP_VALUE2STEPFUNC</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QTCPSOCKETCLASS_IP_VALUE2FUNC</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QTCPSOCKETCLASS_IP_VALUE2STEPFUNC</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;إلغاء&quot;,&quot;فيالنهاية&quot;,&quot;ربط&quot;,&quot;حجبالإشارات&quot;,&quot;بايتاتمتاحة&quot;,&quot;بايتاتللكتابة&quot;,&quot;يمكنقراءةالسطر&quot;,&quot;أطفال&quot;,&quot;إغلاق&quot;,&quot;الاتصالبالمضيف&quot;,&quot;حذف&quot;,&quot;احذفلاحقاً&quot;,&quot;قطعالاتصالبالمضيف&quot;,&quot;تفريغمعلوماتالكائن&quot;,&quot;تفريغشجرةالكائن&quot;,&quot;خطأ&quot;,&quot;نصالخطأ&quot;,&quot;تفريغ&quot;,&quot;الحصولعلىحدثالإغلاقالمتوقع&quot;,&quot;الحصولعلىحدثالبايتاتالمكتوبة&quot;,&quot;الحصولعلىمحرف&quot;,&quot;الحصولعلىحدثالاتصال&quot;,&quot;الحصولعلىحدثالفصل&quot;,&quot;الحصولعلىحدثالخطأ&quot;,&quot;الحصولعلىحدثالعثورعلىالمضيف&quot;,&quot;الحصولعلىحدثطلبمصادقةالوكيل&quot;,&quot;الحصولعلىحدثانتهاءقناةالقراءة&quot;,&quot;الحصولعلىحدثالقراءةجاهزة&quot;,&quot;الحصولعلىحدثتغييرالحالة&quot;,&quot;يرث&quot;,&quot;تهيئة&quot;,&quot;تثبيتالمرشحالحدث&quot;,&quot;مفتوح&quot;,&quot;قابلللقراءة&quot;,&quot;تتابعي&quot;,&quot;تمكينوضعالنص&quot;,&quot;صالح&quot;,&quot;نوعالأداة&quot;,&quot;قابلللكتابة&quot;,&quot;إيقافالعداد&quot;,&quot;العنوانالمحلي&quot;,&quot;المنفذالمحلي&quot;,&quot;نقلالىالخيط&quot;,&quot;اسمالكائن&quot;,&quot;مؤشرالكائن&quot;,&quot;فتح&quot;,&quot;وضعالفتح&quot;,&quot;الأصل&quot;,&quot;وضعالتوقف&quot;,&quot;إطلالة&quot;,&quot;عنوانالنظير&quot;,&quot;اسمالنظير&quot;,&quot;منفذالنظير&quot;,&quot;الموضع&quot;,&quot;خاصية&quot;,&quot;الوكيل&quot;,&quot;إدخالمحرف&quot;,&quot;قراءة&quot;,&quot;قراءةالكل&quot;,&quot;حجمذاكرةالقراءة&quot;,&quot;قراءةالسطر&quot;,&quot;إزالةالمرشحالحدث&quot;,&quot;استئناف&quot;,&quot;بحث&quot;,&quot;تعيينحدثالإغلاقالمتوقع&quot;,&quot;تعيينحدثالبايتاتالمكتوبة&quot;,&quot;تعيينحدثالاتصال&quot;,&quot;تعيينحدثالفصل&quot;,&quot;تعيينحدثالخطأ&quot;,&quot;تعيينحدثالعثورعلىالمضيف&quot;,&quot;تعييناسمالكائن&quot;,&quot;تعيينالأصل&quot;,&quot;تعيينوضعتوقف&quot;,&quot;تعيينخاصية&quot;,&quot;تعيينخاصية_2&quot;,&quot;تعيينخاصية_3&quot;,&quot;تعيينخاصية_4&quot;,&quot;تعيينخاصية_5&quot;,&quot;تعيينخاصية_مزدوج&quot;,&quot;تعيينخاصية_عائم&quot;,&quot;تعيينخاصية_عددصحيح&quot;,&quot;تعيينخاصية_نص&quot;,&quot;تعيينوكيل&quot;,&quot;تعيينحدثطلبمصادقةالوكيل&quot;,&quot;تعيينحجمذاكرةالقراءة&quot;,&quot;تعيينحدثانتهاءقناةالقراءة&quot;,&quot;تعيينحدثالقراءةجاهزة&quot;,&quot;تعيينمعرفالمقبس&quot;,&quot;تعيينخيارالمقبس&quot;,&quot;تعيينحدثتغييرالحالة&quot;,&quot;تمكينوضعلنص&quot;,&quot;حجبالإشارات&quot;,&quot;الحجم&quot;,&quot;معرفالمقبس&quot;,&quot;خيارالمقبس&quot;,&quot;نوعالمقبس&quot;,&quot;تشغيلالمؤقت&quot;,&quot;الحالة&quot;,&quot;خيط&quot;,&quot;إعادةمحرف&quot;,&quot;انتظارالكتابة&quot;,&quot;انتظارالاتصال&quot;,&quot;انتظارالفصل&quot;,&quot;انتظارالقراءة&quot;,&quot;كتابة&quot;]</font></span>"
 			],
 			[
 				"active",
@@ -555,11 +4806,11 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_QTCPSOCKETCLASS_IP_VALUE2STEPFUNC = T_CT_QTCPSOCKETCLASS_IP_VALUE2FUNC"
+				"T_CT_QTCPSOCKETCLASS_IP_VALUE2STEPFUNC = ["+char(34)+"إلغاء"+char(34)+","+char(34)+"فيالنهاية"+char(34)+","+char(34)+"ربط"+char(34)+","+char(34)+"حجبالإشارات"+char(34)+","+char(34)+"بايتاتمتاحة"+char(34)+","+char(34)+"بايتاتللكتابة"+char(34)+","+char(34)+"يمكنقراءةالسطر"+char(34)+","+char(34)+"أطفال"+char(34)+","+char(34)+"إغلاق"+char(34)+","+char(34)+"الاتصالبالمضيف"+char(34)+","+char(34)+"حذف"+char(34)+","+char(34)+"احذفلاحقاً"+char(34)+","+char(34)+"قطعالاتصالبالمضيف"+char(34)+","+char(34)+"تفريغمعلوماتالكائن"+char(34)+","+char(34)+"تفريغشجرةالكائن"+char(34)+","+char(34)+"خطأ"+char(34)+","+char(34)+"نصالخطأ"+char(34)+","+char(34)+"تفريغ"+char(34)+","+char(34)+"الحصولعلىحدثالإغلاقالمتوقع"+char(34)+","+char(34)+"الحصولعلىحدثالبايتاتالمكتوبة"+char(34)+","+char(34)+"الحصولعلىمحرف"+char(34)+","+char(34)+"الحصولعلىحدثالاتصال"+char(34)+","+char(34)+"الحصولعلىحدثالفصل"+char(34)+","+char(34)+"الحصولعلىحدثالخطأ"+char(34)+","+char(34)+"الحصولعلىحدثالعثورعلىالمضيف"+char(34)+","+char(34)+"الحصولعلىحدثطلبمصادقةالوكيل"+char(34)+","+char(34)+"الحصولعلىحدثانتهاءقناةالقراءة"+char(34)+","+char(34)+"الحصولعلىحدثالقراءةجاهزة"+char(34)+","+char(34)+"الحصولعلىحدثتغييرالحالة"+char(34)+","+char(34)+"يرث"+char(34)+","+char(34)+"تهيئة"+char(34)+","+char(34)+"تثبيتالمرشحالحدث"+char(34)+","+char(34)+"مفتوح"+char(34)+","+char(34)+"قابلللقراءة"+char(34)+","+char(34)+"تتابعي"+char(34)+","+char(34)+"تمكينوضعالنص"+char(34)+","+char(34)+"صالح"+char(34)+","+char(34)+"نوعالأداة"+char(34)+","+char(34)+"قابلللكتابة"+char(34)+","+char(34)+"إيقافالعداد"+char(34)+","+char(34)+"العنوانالمحلي"+char(34)+","+char(34)+"المنفذالمحلي"+char(34)+","+char(34)+"نقلالىالخيط"+char(34)+","+char(34)+"اسمالكائن"+char(34)+","+char(34)+"مؤشرالكائن"+char(34)+","+char(34)+"فتح"+char(34)+","+char(34)+"وضعالفتح"+char(34)+","+char(34)+"الأصل"+char(34)+","+char(34)+"وضعالتوقف"+char(34)+","+char(34)+"إطلالة"+char(34)+","+char(34)+"عنوانالنظير"+char(34)+","+char(34)+"اسمالنظير"+char(34)+","+char(34)+"منفذالنظير"+char(34)+","+char(34)+"الموضع"+char(34)+","+char(34)+"خاصية"+char(34)+","+char(34)+"الوكيل"+char(34)+","+char(34)+"إدخالمحرف"+char(34)+","+char(34)+"قراءة"+char(34)+","+char(34)+"قراءةالكل"+char(34)+","+char(34)+"حجمذاكرةالقراءة"+char(34)+","+char(34)+"قراءةالسطر"+char(34)+","+char(34)+"إزالةالمرشحالحدث"+char(34)+","+char(34)+"استئناف"+char(34)+","+char(34)+"بحث"+char(34)+","+char(34)+"تعيينحدثالإغلاقالمتوقع"+char(34)+","+char(34)+"تعيينحدثالبايتاتالمكتوبة"+char(34)+","+char(34)+"تعيينحدثالاتصال"+char(34)+","+char(34)+"تعيينحدثالفصل"+char(34)+","+char(34)+"تعيينحدثالخطأ"+char(34)+","+char(34)+"تعيينحدثالعثورعلىالمضيف"+char(34)+","+char(34)+"تعييناسمالكائن"+char(34)+","+char(34)+"تعيينالأصل"+char(34)+","+char(34)+"تعيينوضعتوقف"+char(34)+","+char(34)+"تعيينخاصية"+char(34)+","+char(34)+"تعيينخاصية_2"+char(34)+","+char(34)+"تعيينخاصية_3"+char(34)+","+char(34)+"تعيينخاصية_4"+char(34)+","+char(34)+"تعيينخاصية_5"+char(34)+","+char(34)+"تعيينخاصية_مزدوج"+char(34)+","+char(34)+"تعيينخاصية_عائم"+char(34)+","+char(34)+"تعيينخاصية_عددصحيح"+char(34)+","+char(34)+"تعيينخاصية_نص"+char(34)+","+char(34)+"تعيينوكيل"+char(34)+","+char(34)+"تعيينحدثطلبمصادقةالوكيل"+char(34)+","+char(34)+"تعيينحجمذاكرةالقراءة"+char(34)+","+char(34)+"تعيينحدثانتهاءقناةالقراءة"+char(34)+","+char(34)+"تعيينحدثالقراءةجاهزة"+char(34)+","+char(34)+"تعيينمعرفالمقبس"+char(34)+","+char(34)+"تعيينخيارالمقبس"+char(34)+","+char(34)+"تعيينحدثتغييرالحالة"+char(34)+","+char(34)+"تمكينوضعلنص"+char(34)+","+char(34)+"حجبالإشارات"+char(34)+","+char(34)+"الحجم"+char(34)+","+char(34)+"معرفالمقبس"+char(34)+","+char(34)+"خيارالمقبس"+char(34)+","+char(34)+"نوعالمقبس"+char(34)+","+char(34)+"تشغيلالمؤقت"+char(34)+","+char(34)+"الحالة"+char(34)+","+char(34)+"خيط"+char(34)+","+char(34)+"إعادةمحرف"+char(34)+","+char(34)+"انتظارالكتابة"+char(34)+","+char(34)+"انتظارالاتصال"+char(34)+","+char(34)+"انتظارالفصل"+char(34)+","+char(34)+"انتظارالقراءة"+char(34)+","+char(34)+"كتابة"+char(34)+"]"
 			],
 			[
 				"interactionid",
-				15
+				124
 			],
 			[
 				"visible",
@@ -575,7 +4826,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"T_CT_QTCPSOCKETCLASS_IP_VALUE2STEPFUNC = T_CT_QTCPSOCKETCLASS_IP_VALUE2FUNC"
+				"T_CT_QTCPSOCKETCLASS_IP_VALUE2STEPFUNC = ["+char(34)+"إلغاء"+char(34)+","+char(34)+"فيالنهاية"+char(34)+","+char(34)+"ربط"+char(34)+","+char(34)+"حجبالإشارات"+char(34)+","+char(34)+"بايتاتمتاحة"+char(34)+","+char(34)+"بايتاتللكتابة"+char(34)+","+char(34)+"يمكنقراءةالسطر"+char(34)+","+char(34)+"أطفال"+char(34)+","+char(34)+"إغلاق"+char(34)+","+char(34)+"الاتصالبالمضيف"+char(34)+","+char(34)+"حذف"+char(34)+","+char(34)+"احذفلاحقاً"+char(34)+","+char(34)+"قطعالاتصالبالمضيف"+char(34)+","+char(34)+"تفريغمعلوماتالكائن"+char(34)+","+char(34)+"تفريغشجرةالكائن"+char(34)+","+char(34)+"خطأ"+char(34)+","+char(34)+"نصالخطأ"+char(34)+","+char(34)+"تفريغ"+char(34)+","+char(34)+"الحصولعلىحدثالإغلاقالمتوقع"+char(34)+","+char(34)+"الحصولعلىحدثالبايتاتالمكتوبة"+char(34)+","+char(34)+"الحصولعلىمحرف"+char(34)+","+char(34)+"الحصولعلىحدثالاتصال"+char(34)+","+char(34)+"الحصولعلىحدثالفصل"+char(34)+","+char(34)+"الحصولعلىحدثالخطأ"+char(34)+","+char(34)+"الحصولعلىحدثالعثورعلىالمضيف"+char(34)+","+char(34)+"الحصولعلىحدثطلبمصادقةالوكيل"+char(34)+","+char(34)+"الحصولعلىحدثانتهاءقناةالقراءة"+char(34)+","+char(34)+"الحصولعلىحدثالقراءةجاهزة"+char(34)+","+char(34)+"الحصولعلىحدثتغييرالحالة"+char(34)+","+char(34)+"يرث"+char(34)+","+char(34)+"تهيئة"+char(34)+","+char(34)+"تثبيتالمرشحالحدث"+char(34)+","+char(34)+"مفتوح"+char(34)+","+char(34)+"قابلللقراءة"+char(34)+","+char(34)+"تتابعي"+char(34)+","+char(34)+"تمكينوضعالنص"+char(34)+","+char(34)+"صالح"+char(34)+","+char(34)+"نوعالأداة"+char(34)+","+char(34)+"قابلللكتابة"+char(34)+","+char(34)+"إيقافالعداد"+char(34)+","+char(34)+"العنوانالمحلي"+char(34)+","+char(34)+"المنفذالمحلي"+char(34)+","+char(34)+"نقلالىالخيط"+char(34)+","+char(34)+"اسمالكائن"+char(34)+","+char(34)+"مؤشرالكائن"+char(34)+","+char(34)+"فتح"+char(34)+","+char(34)+"وضعالفتح"+char(34)+","+char(34)+"الأصل"+char(34)+","+char(34)+"وضعالتوقف"+char(34)+","+char(34)+"إطلالة"+char(34)+","+char(34)+"عنوانالنظير"+char(34)+","+char(34)+"اسمالنظير"+char(34)+","+char(34)+"منفذالنظير"+char(34)+","+char(34)+"الموضع"+char(34)+","+char(34)+"خاصية"+char(34)+","+char(34)+"الوكيل"+char(34)+","+char(34)+"إدخالمحرف"+char(34)+","+char(34)+"قراءة"+char(34)+","+char(34)+"قراءةالكل"+char(34)+","+char(34)+"حجمذاكرةالقراءة"+char(34)+","+char(34)+"قراءةالسطر"+char(34)+","+char(34)+"إزالةالمرشحالحدث"+char(34)+","+char(34)+"استئناف"+char(34)+","+char(34)+"بحث"+char(34)+","+char(34)+"تعيينحدثالإغلاقالمتوقع"+char(34)+","+char(34)+"تعيينحدثالبايتاتالمكتوبة"+char(34)+","+char(34)+"تعيينحدثالاتصال"+char(34)+","+char(34)+"تعيينحدثالفصل"+char(34)+","+char(34)+"تعيينحدثالخطأ"+char(34)+","+char(34)+"تعيينحدثالعثورعلىالمضيف"+char(34)+","+char(34)+"تعييناسمالكائن"+char(34)+","+char(34)+"تعيينالأصل"+char(34)+","+char(34)+"تعيينوضعتوقف"+char(34)+","+char(34)+"تعيينخاصية"+char(34)+","+char(34)+"تعيينخاصية_2"+char(34)+","+char(34)+"تعيينخاصية_3"+char(34)+","+char(34)+"تعيينخاصية_4"+char(34)+","+char(34)+"تعيينخاصية_5"+char(34)+","+char(34)+"تعيينخاصية_مزدوج"+char(34)+","+char(34)+"تعيينخاصية_عائم"+char(34)+","+char(34)+"تعيينخاصية_عددصحيح"+char(34)+","+char(34)+"تعيينخاصية_نص"+char(34)+","+char(34)+"تعيينوكيل"+char(34)+","+char(34)+"تعيينحدثطلبمصادقةالوكيل"+char(34)+","+char(34)+"تعيينحجمذاكرةالقراءة"+char(34)+","+char(34)+"تعيينحدثانتهاءقناةالقراءة"+char(34)+","+char(34)+"تعيينحدثالقراءةجاهزة"+char(34)+","+char(34)+"تعيينمعرفالمقبس"+char(34)+","+char(34)+"تعيينخيارالمقبس"+char(34)+","+char(34)+"تعيينحدثتغييرالحالة"+char(34)+","+char(34)+"تمكينوضعلنص"+char(34)+","+char(34)+"حجبالإشارات"+char(34)+","+char(34)+"الحجم"+char(34)+","+char(34)+"معرفالمقبس"+char(34)+","+char(34)+"خيارالمقبس"+char(34)+","+char(34)+"نوعالمقبس"+char(34)+","+char(34)+"تشغيلالمؤقت"+char(34)+","+char(34)+"الحالة"+char(34)+","+char(34)+"خيط"+char(34)+","+char(34)+"إعادةمحرف"+char(34)+","+char(34)+"انتظارالكتابة"+char(34)+","+char(34)+"انتظارالاتصال"+char(34)+","+char(34)+"انتظارالفصل"+char(34)+","+char(34)+"انتظارالقراءة"+char(34)+","+char(34)+"كتابة"+char(34)+"]"
 			]
 		]
 	]
@@ -586,121 +4837,993 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"07/02/2025",
-		"18:38:16",
+		"20/02/2025",
+		"23:01:15",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:38:16",
+		"20/02/2025",
+		"23:01:15",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:38:16",
+		"20/02/2025",
+		"23:01:15",
 		"value;;_RV_;;**	Project : Programming Without Coding Technology (PWCT) Version 2.0;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:38:16",
+		"20/02/2025",
+		"23:01:15",
 		"value;;_RV_;;**	File Purpose :  qtcpsocketclass Component;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:38:16",
+		"20/02/2025",
+		"23:01:15",
 		"value;;_RV_;;**	Date : 2021.08.09;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:38:16",
+		"20/02/2025",
+		"23:01:15",
 		"value;;_RV_;;**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:38:16",
+		"20/02/2025",
+		"23:01:15",
 		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:38:16",
+		"20/02/2025",
+		"23:01:15",
 		"leftside;;_RV_;;T_CT_QTCPSOCKETCLASS_IP_TITLE;;_RV_;;rightside;;_RV_;;"+char(34)+"مكون فئة ال QTcpSocket "+char(34)+";;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:38:16",
+		"20/02/2025",
+		"23:01:15",
 		"leftside;;_RV_;;T_CT_QTCPSOCKETCLASS_IP_VALUE;;_RV_;;rightside;;_RV_;;"+char(34)+"اسم الكائن :"+char(34)+";;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:38:16",
+		"20/02/2025",
+		"23:01:15",
 		"leftside;;_RV_;;T_CT_QTCPSOCKETCLASS_IP_VALUE2;;_RV_;;rightside;;_RV_;;"+char(34)+"الميثود : "+char(34)+";;_RV_;;"
 	],
 	[
 		11,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:38:16",
-		"leftside;;_RV_;;T_CT_QTCPSOCKETCLASS_IP_VALUE2LIST;;_RV_;;rightside;;_RV_;;["+char(34)+"abort(void) --> void"+char(34)+","+char(34)+"atEnd(void) --> bool"+char(34)+","+char(34)+"bind(QHostAddress address, int port, QAbstractSocket::BindFlag mode) --> bool"+char(34)+","+char(34)+"blockSignals(bool block) --> bool"+char(34)+","+char(34)+"bytesAvailable(void) --> int"+char(34)+","+char(34)+"bytesToWrite(void) --> int"+char(34)+","+char(34)+"canReadLine(void) --> bool"+char(34)+","+char(34)+"children(void) --> QObjectList"+char(34)+","+char(34)+"close(void) --> void"+char(34)+","+char(34)+"connectToHost(QString hostName, int port, QIODevice::OpenModeFlag openMode, QAbstractSocket::NetworkLayerProtocol protocol) --> void"+char(34)+","+char(34)+"delete(void) --> void"+char(34)+","+char(34)+"deleteLater(void) --> void"+char(34)+","+char(34)+"disconnectFromHost(void) --> void"+char(34)+","+char(34)+"dumpObjectInfo(void) --> void"+char(34)+","+char(34)+"dumpObjectTree(void) --> void"+char(34)+","+char(34)+"error(void) --> int"+char(34)+","+char(34)+"errorString(void) --> QString"+char(34)+","+char(34)+"flush(void) --> bool"+char(34)+","+char(34)+"getaboutToCloseEvent(void) --> char"+char(34)+","+char(34)+"getbytesWrittenEvent(void) --> char"+char(34)+","+char(34)+"getChar(char *c) --> bool"+char(34)+","+char(34)+"getconnectedEvent(void) --> char"+char(34)+","+char(34)+"getdisconnectedEvent(void) --> char"+char(34)+","+char(34)+"geterrorEvent(void) --> char"+char(34)+","+char(34)+"gethostFoundEvent(void) --> char"+char(34)+","+char(34)+"getproxyAuthenticationRequiredEvent(void) --> char"+char(34)+","+char(34)+"getreadChannelFinishedEvent(void) --> char"+char(34)+","+char(34)+"getreadyReadEvent(void) --> char"+char(34)+","+char(34)+"getstateChangedEvent(void) --> char"+char(34)+","+char(34)+"inherits(char *className) --> bool"+char(34)+","+char(34)+"init(parent) --> object"+char(34)+","+char(34)+"installEventFilter(QObject *filterObj) --> void"+char(34)+","+char(34)+"isOpen(void) --> bool"+char(34)+","+char(34)+"isReadable(void) --> bool"+char(34)+","+char(34)+"isSequential(void) --> bool"+char(34)+","+char(34)+"isTextModeEnabled(void) --> bool"+char(34)+","+char(34)+"isValid(void) --> bool"+char(34)+","+char(34)+"isWidgetType(void) --> bool"+char(34)+","+char(34)+"isWritable(void) --> bool"+char(34)+","+char(34)+"killTimer(int id) --> void"+char(34)+","+char(34)+"localAddress(void) --> QHostAddress"+char(34)+","+char(34)+"localPort(void) --> int"+char(34)+","+char(34)+"moveToThread(QThread *targetThread) --> void"+char(34)+","+char(34)+"objectName(void) --> QString"+char(34)+","+char(34)+"objectpointer(void) --> pointer"+char(34)+","+char(34)+"open(QIODevice::OpenMode flags) --> bool"+char(34)+","+char(34)+"openMode(void) --> int"+char(34)+","+char(34)+"parent(void) --> QObject"+char(34)+","+char(34)+"pauseMode(void) --> int"+char(34)+","+char(34)+"peek(char *data, int maxSize) --> int"+char(34)+","+char(34)+"peerAddress(void) --> QHostAddress"+char(34)+","+char(34)+"peerName(void) --> QString"+char(34)+","+char(34)+"peerPort(void) --> int"+char(34)+","+char(34)+"pos(void) --> qint64"+char(34)+","+char(34)+"property(char *name) --> QVariant"+char(34)+","+char(34)+"proxy(void) --> QNetworkProxy"+char(34)+","+char(34)+"putChar(char c) --> bool"+char(34)+","+char(34)+"read(char *data, int maxSize) --> int"+char(34)+","+char(34)+"readAll(void) --> QByteArray"+char(34)+","+char(34)+"readBufferSize(void) --> int"+char(34)+","+char(34)+"readLine(char *data, int maxSize) --> int"+char(34)+","+char(34)+"removeEventFilter(QObject *obj) --> void"+char(34)+","+char(34)+"resume(void) --> void"+char(34)+","+char(34)+"seek(qint64 pos) --> bool"+char(34)+","+char(34)+"setaboutToCloseEvent(char *) --> void"+char(34)+","+char(34)+"setbytesWrittenEvent(char *) --> void"+char(34)+","+char(34)+"setconnectedEvent(char *) --> void"+char(34)+","+char(34)+"setdisconnectedEvent(char *) --> void"+char(34)+","+char(34)+"seterrorEvent(char *) --> void"+char(34)+","+char(34)+"sethostFoundEvent(char *) --> void"+char(34)+","+char(34)+"setObjectName(QString) --> void"+char(34)+","+char(34)+"setParent(QObject *parent) --> void"+char(34)+","+char(34)+"setPauseMode(QAbstractSocket::PauseMode pauseMode) --> void"+char(34)+","+char(34)+"setProperty(char *name, QVariant) --> bool"+char(34)+","+char(34)+"setProperty_2(char *name, int) --> bool"+char(34)+","+char(34)+"setProperty_3(char *name, float) --> bool"+char(34)+","+char(34)+"setProperty_4(char *name, double) --> bool"+char(34)+","+char(34)+"setProperty_5(char *name, QString) --> bool"+char(34)+","+char(34)+"setProperty_double(char *name, double) --> bool"+char(34)+","+char(34)+"setProperty_float(char *name, float) --> bool"+char(34)+","+char(34)+"setProperty_int(char *name, int) --> bool"+char(34)+","+char(34)+"setProperty_string(char *name, QString) --> bool"+char(34)+","+char(34)+"setProxy(QNetworkProxy networkProxy) --> void"+char(34)+","+char(34)+"setproxyAuthenticationRequiredEvent(char *) --> void"+char(34)+","+char(34)+"setReadBufferSize(int size) --> void"+char(34)+","+char(34)+"setreadChannelFinishedEvent(char *) --> void"+char(34)+","+char(34)+"setreadyReadEvent(char *) --> void"+char(34)+","+char(34)+"setSocketDescriptor(qintptr socketDescriptor, QAbstractSocket::SocketState socketState, QIODevice::OpenModeFlag openMode) --> bool"+char(34)+","+char(34)+"setSocketOption(QAbstractSocket::SocketOption option, QVariant value) --> void"+char(34)+","+char(34)+"setstateChangedEvent(char *) --> void"+char(34)+","+char(34)+"setTextModeEnabled(bool enabled) --> void"+char(34)+","+char(34)+"signalsBlocked(void) --> bool"+char(34)+","+char(34)+"size(void) --> qint64"+char(34)+","+char(34)+"socketDescriptor(void) --> int"+char(34)+","+char(34)+"socketOption(QAbstractSocket::SocketOption option) --> QVariant"+char(34)+","+char(34)+"socketType(void) --> int"+char(34)+","+char(34)+"startTimer(int interval) --> int"+char(34)+","+char(34)+"state(void) --> int"+char(34)+","+char(34)+"thread(void) --> QThread"+char(34)+","+char(34)+"ungetChar(char c) --> void"+char(34)+","+char(34)+"waitForBytesWritten(int msecs) --> bool"+char(34)+","+char(34)+"waitForConnected(int msecs) --> bool"+char(34)+","+char(34)+"waitForDisconnected(int msecs) --> bool"+char(34)+","+char(34)+"waitForReadyRead(int msecs) --> bool"+char(34)+","+char(34)+"write(char *data, int maxSize) --> int"+char(34)+"];;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		12,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:38:16",
-		"leftside;;_RV_;;T_CT_QTCPSOCKETCLASS_IP_VALUE3;;_RV_;;rightside;;_RV_;;"+char(34)+"المعطيات :"+char(34)+";;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;T_CT_QTCPSOCKETCLASS_IP_VALUE2LIST = [;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		13,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:38:16",
-		"leftside;;_RV_;;T_CT_QTCPSOCKETCLASS_IP_VALUE4;;_RV_;;rightside;;_RV_;;"+char(34)+"الناتج :"+char(34)+";;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"abort(void) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		14,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:38:16",
-		"leftside;;_RV_;;T_CT_QTCPSOCKETCLASS_IP_VALUE2FUNC;;_RV_;;rightside;;_RV_;;["+char(34)+"abort"+char(34)+","+char(34)+"atend"+char(34)+","+char(34)+"bind"+char(34)+","+char(34)+"blocksignals"+char(34)+","+char(34)+"bytesavailable"+char(34)+","+char(34)+"bytestowrite"+char(34)+","+char(34)+"canreadline"+char(34)+","+char(34)+"children"+char(34)+","+char(34)+"close"+char(34)+","+char(34)+"connecttohost"+char(34)+","+char(34)+"delete"+char(34)+","+char(34)+"deletelater"+char(34)+","+char(34)+"disconnectfromhost"+char(34)+","+char(34)+"dumpobjectinfo"+char(34)+","+char(34)+"dumpobjecttree"+char(34)+","+char(34)+"error"+char(34)+","+char(34)+"errorstring"+char(34)+","+char(34)+"flush"+char(34)+","+char(34)+"getabouttocloseevent"+char(34)+","+char(34)+"getbyteswrittenevent"+char(34)+","+char(34)+"getchar"+char(34)+","+char(34)+"getconnectedevent"+char(34)+","+char(34)+"getdisconnectedevent"+char(34)+","+char(34)+"geterrorevent"+char(34)+","+char(34)+"gethostfoundevent"+char(34)+","+char(34)+"getproxyauthenticationrequiredevent"+char(34)+","+char(34)+"getreadchannelfinishedevent"+char(34)+","+char(34)+"getreadyreadevent"+char(34)+","+char(34)+"getstatechangedevent"+char(34)+","+char(34)+"inherits"+char(34)+","+char(34)+"init"+char(34)+","+char(34)+"installeventfilter"+char(34)+","+char(34)+"isopen"+char(34)+","+char(34)+"isreadable"+char(34)+","+char(34)+"issequential"+char(34)+","+char(34)+"istextmodeenabled"+char(34)+","+char(34)+"isvalid"+char(34)+","+char(34)+"iswidgettype"+char(34)+","+char(34)+"iswritable"+char(34)+","+char(34)+"killtimer"+char(34)+","+char(34)+"localaddress"+char(34)+","+char(34)+"localport"+char(34)+","+char(34)+"movetothread"+char(34)+","+char(34)+"objectname"+char(34)+","+char(34)+"objectpointer"+char(34)+","+char(34)+"open"+char(34)+","+char(34)+"openmode"+char(34)+","+char(34)+"parent"+char(34)+","+char(34)+"pausemode"+char(34)+","+char(34)+"peek"+char(34)+","+char(34)+"peeraddress"+char(34)+","+char(34)+"peername"+char(34)+","+char(34)+"peerport"+char(34)+","+char(34)+"pos"+char(34)+","+char(34)+"property"+char(34)+","+char(34)+"proxy"+char(34)+","+char(34)+"putchar"+char(34)+","+char(34)+"read"+char(34)+","+char(34)+"readall"+char(34)+","+char(34)+"readbuffersize"+char(34)+","+char(34)+"readline"+char(34)+","+char(34)+"removeeventfilter"+char(34)+","+char(34)+"resume"+char(34)+","+char(34)+"seek"+char(34)+","+char(34)+"setabouttocloseevent"+char(34)+","+char(34)+"setbyteswrittenevent"+char(34)+","+char(34)+"setconnectedevent"+char(34)+","+char(34)+"setdisconnectedevent"+char(34)+","+char(34)+"seterrorevent"+char(34)+","+char(34)+"sethostfoundevent"+char(34)+","+char(34)+"setobjectname"+char(34)+","+char(34)+"setparent"+char(34)+","+char(34)+"setpausemode"+char(34)+","+char(34)+"setproperty"+char(34)+","+char(34)+"setproperty_2"+char(34)+","+char(34)+"setproperty_3"+char(34)+","+char(34)+"setproperty_4"+char(34)+","+char(34)+"setproperty_5"+char(34)+","+char(34)+"setproperty_double"+char(34)+","+char(34)+"setproperty_float"+char(34)+","+char(34)+"setproperty_int"+char(34)+","+char(34)+"setproperty_string"+char(34)+","+char(34)+"setproxy"+char(34)+","+char(34)+"setproxyauthenticationrequiredevent"+char(34)+","+char(34)+"setreadbuffersize"+char(34)+","+char(34)+"setreadchannelfinishedevent"+char(34)+","+char(34)+"setreadyreadevent"+char(34)+","+char(34)+"setsocketdescriptor"+char(34)+","+char(34)+"setsocketoption"+char(34)+","+char(34)+"setstatechangedevent"+char(34)+","+char(34)+"settextmodeenabled"+char(34)+","+char(34)+"signalsblocked"+char(34)+","+char(34)+"size"+char(34)+","+char(34)+"socketdescriptor"+char(34)+","+char(34)+"socketoption"+char(34)+","+char(34)+"sockettype"+char(34)+","+char(34)+"starttimer"+char(34)+","+char(34)+"state"+char(34)+","+char(34)+"thread"+char(34)+","+char(34)+"ungetchar"+char(34)+","+char(34)+"waitforbyteswritten"+char(34)+","+char(34)+"waitforconnected"+char(34)+","+char(34)+"waitfordisconnected"+char(34)+","+char(34)+"waitforreadyread"+char(34)+","+char(34)+"write"+char(34)+"];;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"atEnd(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		15,
 		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"bind(QHostAddress address, int port, QAbstractSocket::BindFlag mode) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		16,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"blockSignals(bool block) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		17,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"bytesAvailable(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		18,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"bytesToWrite(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		19,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"canReadLine(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		20,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"children(void) --> QObjectList"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		21,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"close(void) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		22,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"connectToHost(QString hostName, int port, QIODevice::OpenModeFlag openMode, QAbstractSocket::NetworkLayerProtocol protocol) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		23,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"delete(void) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		24,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"deleteLater(void) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		25,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"disconnectFromHost(void) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		26,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"dumpObjectInfo(void) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		27,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"dumpObjectTree(void) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		28,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"error(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		29,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"errorString(void) --> QString"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		30,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"flush(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		31,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"getaboutToCloseEvent(void) --> char"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		32,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"getbytesWrittenEvent(void) --> char"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		33,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"getChar(char *c) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		34,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"getconnectedEvent(void) --> char"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		35,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"getdisconnectedEvent(void) --> char"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		36,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"geterrorEvent(void) --> char"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		37,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"gethostFoundEvent(void) --> char"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		38,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"getproxyAuthenticationRequiredEvent(void) --> char"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		39,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"getreadChannelFinishedEvent(void) --> char"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		40,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"getreadyReadEvent(void) --> char"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		41,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"getstateChangedEvent(void) --> char"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		42,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"inherits(char *className) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		43,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"init(parent) --> object"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		44,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"installEventFilter(QObject *filterObj) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		45,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"isOpen(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		46,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"isReadable(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		47,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"isSequential(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		48,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"isTextModeEnabled(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		49,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"isValid(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		50,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"isWidgetType(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		51,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"isWritable(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		52,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"killTimer(int id) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		53,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"localAddress(void) --> QHostAddress"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		54,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"localPort(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		55,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"moveToThread(QThread *targetThread) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		56,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"objectName(void) --> QString"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		57,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"objectpointer(void) --> pointer"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		58,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"open(QIODevice::OpenMode flags) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		59,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"openMode(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		60,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"parent(void) --> QObject"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		61,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"pauseMode(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		62,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"peek(char *data, int maxSize) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		63,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"peerAddress(void) --> QHostAddress"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		64,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"peerName(void) --> QString"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		65,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"peerPort(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		66,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"pos(void) --> qint64"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		67,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"property(char *name) --> QVariant"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		68,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"proxy(void) --> QNetworkProxy"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		69,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"putChar(char c) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		70,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"read(char *data, int maxSize) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		71,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"readAll(void) --> QByteArray"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		72,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"readBufferSize(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		73,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"readLine(char *data, int maxSize) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		74,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"removeEventFilter(QObject *obj) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		75,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"resume(void) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		76,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"seek(qint64 pos) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		77,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"setaboutToCloseEvent(char *) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		78,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"setbytesWrittenEvent(char *) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		79,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"setconnectedEvent(char *) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		80,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"setdisconnectedEvent(char *) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		81,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"seterrorEvent(char *) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		82,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"sethostFoundEvent(char *) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		83,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"setObjectName(QString) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		84,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"setParent(QObject *parent) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		85,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"setPauseMode(QAbstractSocket::PauseMode pauseMode) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		86,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"setProperty(char *name, QVariant) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		87,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"setProperty_2(char *name, int) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		88,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"setProperty_3(char *name, float) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		89,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"setProperty_4(char *name, double) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		90,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"setProperty_5(char *name, QString) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		91,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"setProperty_double(char *name, double) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		92,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"setProperty_float(char *name, float) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		93,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"setProperty_int(char *name, int) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		94,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"setProperty_string(char *name, QString) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		95,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"setProxy(QNetworkProxy networkProxy) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		96,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"setproxyAuthenticationRequiredEvent(char *) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		97,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"setReadBufferSize(int size) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		98,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"setreadChannelFinishedEvent(char *) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		99,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"setreadyReadEvent(char *) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		100,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"setSocketDescriptor(qintptr socketDescriptor, QAbstractSocket::SocketState socketState, QIODevice::OpenModeFlag openMode) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		101,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"setSocketOption(QAbstractSocket::SocketOption option, QVariant value) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		102,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"setstateChangedEvent(char *) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		103,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"setTextModeEnabled(bool enabled) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		104,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"signalsBlocked(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		105,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"size(void) --> qint64"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		106,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"socketDescriptor(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		107,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"socketOption(QAbstractSocket::SocketOption option) --> QVariant"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		108,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"socketType(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		109,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"startTimer(int interval) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		110,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"state(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		111,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"thread(void) --> QThread"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		112,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"ungetChar(char c) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		113,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"waitForBytesWritten(int msecs) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		114,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"waitForConnected(int msecs) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		115,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"waitForDisconnected(int msecs) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		116,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"waitForReadyRead(int msecs) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		117,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;	"+char(34)+"write(char *data, int maxSize) --> int"+char(34)+";;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		118,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;];;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		119,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:15",
+		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		120,
+		1,
 		"assignment",
-		"07/02/2025",
-		"18:38:16",
-		"leftside;;_RV_;;T_CT_QTCPSOCKETCLASS_IP_VALUE2STEPFUNC;;_RV_;;rightside;;_RV_;;T_CT_QTCPSOCKETCLASS_IP_VALUE2FUNC;;_RV_;;"
+		"20/02/2025",
+		"23:01:15",
+		"leftside;;_RV_;;T_CT_QTCPSOCKETCLASS_IP_VALUE2LIST;;_RV_;;rightside;;_RV_;;["+char(34)+"إلغاء(لاشىء) --> لاشىء"+char(34)+","+char(34)+"فيالنهاية(لاشىء) --> منطقية"+char(34)+","+char(34)+"ربط(عنوان المضيف، عدد صحيح منفذ، علم الربط) --> منطقية"+char(34)+","+char(34)+"حجبالإشارات(منطقية حجب) --> منطقية"+char(34)+","+char(34)+"بايتاتمتاحة(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"بايتاتللكتابة(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"يمكنقراءةالسطر(لاشىء) --> منطقية"+char(34)+","+char(34)+"أطفال(لاشىء) --> قائمةالكائنات"+char(34)+","+char(34)+"إغلاق(لاشىء) --> لاشىء"+char(34)+","+char(34)+"الاتصالبالمضيف(اسم المضيف، عدد صحيح منفذ، علم فتح الوضع، بروتوكول الطبقة الشبكية) --> لاشىء"+char(34)+","+char(34)+"حذف(لاشىء) --> لاشىء"+char(34)+","+char(34)+"احذفلاحقاً(لاشىء) --> لاشىء"+char(34)+","+char(34)+"قطعالاتصالبالمضيف(لاشىء) --> لاشىء"+char(34)+","+char(34)+"تفريغمعلوماتالكائن(لاشىء) --> لاشىء"+char(34)+","+char(34)+"تفريغشجرةالكائن(لاشىء) --> لاشىء"+char(34)+","+char(34)+"خطأ(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"نصالخطأ(لاشىء) --> نص"+char(34)+","+char(34)+"تفريغ(لاشىء) --> منطقية"+char(34)+","+char(34)+"الحصولعلىحدثالإغلاقالمتوقع(لاشىء) --> حرف"+char(34)+","+char(34)+"الحصولعلىحدثالبايتاتالمكتوبة(لاشىء) --> حرف"+char(34)+","+char(34)+"الحصولعلىمحرف(حرف *محرف) --> منطقية"+char(34)+","+char(34)+"الحصولعلىحدثالاتصال(لاشىء) --> حرف"+char(34)+","+char(34)+"الحصولعلىحدثالفصل(لاشىء) --> حرف"+char(34)+","+char(34)+"الحصولعلىحدثالخطأ(لاشىء) --> حرف"+char(34)+","+char(34)+"الحصولعلىحدثالعثورعلىالمضيف(لاشىء) --> حرف"+char(34)+","+char(34)+"الحصولعلىحدثطلبمصادقةالوكيل(لاشىء) --> حرف"+char(34)+","+char(34)+"الحصولعلىحدثانتهاءقناةالقراءة(لاشىء) --> حرف"+char(34)+","+char(34)+"الحصولعلىحدثالقراءةجاهزة(لاشىء) --> حرف"+char(34)+","+char(34)+"الحصولعلىحدثتغييرالحالة(لاشىء) --> حرف"+char(34)+","+char(34)+"يرث(حرف *اسمالفئة) --> منطقية"+char(34)+","+char(34)+"تهيئة(الأصل) --> كائن"+char(34)+","+char(34)+"تثبيتالمرشحالحدث(كائن *مرشحالحدث) --> لاشىء"+char(34)+","+char(34)+"مفتوح(لاشىء) --> منطقية"+char(34)+","+char(34)+"قابلللقراءة(لاشىء) --> منطقية"+char(34)+","+char(34)+"تتابعي(لاشىء) --> منطقية"+char(34)+","+char(34)+"تمكينوضعالنص(لاشىء) --> منطقية"+char(34)+","+char(34)+"صالح(لاشىء) --> منطقية"+char(34)+","+char(34)+"نوعالأداة(لاشىء) --> منطقية"+char(34)+","+char(34)+"قابلللكتابة(لاشىء) --> منطقية"+char(34)+","+char(34)+"إيقافالعداد(عدد صحيح معرف) --> لاشىء"+char(34)+","+char(34)+"العنوانالمحلي(لاشىء) --> عنوانالمضيف"+char(34)+","+char(34)+"المنفذالمحلي(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"نقلالىالخيط(خيط *خيطالمستهدف) --> لاشىء"+char(34)+","+char(34)+"اسمالكائن(لاشىء) --> نص"+char(34)+","+char(34)+"مؤشرالكائن(لاشىء) --> مؤشر"+char(34)+","+char(34)+"فتح(وضعالفتح) --> منطقية"+char(34)+","+char(34)+"وضعالفتح(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"الأصل(لاشىء) --> كائن"+char(34)+","+char(34)+"وضعالتوقف(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"إطلالة(حرف *بيانات، عدد صحيح أقصىحجم) --> عدد صحيح"+char(34)+","+char(34)+"عنوانالنظير(لاشىء) --> عنوانالمضيف"+char(34)+","+char(34)+"اسمالنظير(لاشىء) --> نص"+char(34)+","+char(34)+"منفذالنظير(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"الموضع(لاشىء) --> عددمضاعف64"+char(34)+","+char(34)+"خاصية(حرف *اسم) --> نوعمتغير"+char(34)+","+char(34)+"الوكيل(لاشىء) --> وكيلشبكة"+char(34)+","+char(34)+"إدخالمحرف(حرف محرف) --> منطقية"+char(34)+","+char(34)+"قراءة(حرف *بيانات، عدد صحيح أقصىحجم) --> عدد صحيح"+char(34)+","+char(34)+"قراءةالكل(لاشىء) --> مصفوفةبايتات"+char(34)+","+char(34)+"حجمذاكرةالقراءة(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"قراءةالسطر(حرف *بيانات، عدد صحيح أقصىحجم) --> عدد صحيح"+char(34)+","+char(34)+"إزالةالمرشحالحدث(كائن *كائن) --> لاشىء"+char(34)+","+char(34)+"استئناف(لاشىء) --> لاشىء"+char(34)+","+char(34)+"بحث(عددمضاعف64 الموضع) --> منطقية"+char(34)+","+char(34)+"تعيينحدثالإغلاقالمتوقع(حرف *) --> لاشىء"+char(34)+","+char(34)+"تعيينحدثالبايتاتالمكتوبة(حرف *) --> لاشىء"+char(34)+","+char(34)+"تعيينحدثالاتصال(حرف *) --> لاشىء"+char(34)+","+char(34)+"تعيينحدثالفصل(حرف *) --> لاشىء"+char(34)+","+char(34)+"تعيينحدثالخطأ(حرف *) --> لاشىء"+char(34)+","+char(34)+"تعيينحدثالعثورعلىالمضيف(حرف *) --> لاشىء"+char(34)+","+char(34)+"تعييناسمالكائن(نص) --> لاشىء"+char(34)+","+char(34)+"تعيينالأصل(كائن *الأصل) --> لاشىء"+char(34)+","+char(34)+"تعيينوضعتوقف(وضعالتوقف) --> لاشىء"+char(34)+","+char(34)+"تعيينخاصية(حرف *اسم، نوعمتغير) --> منطقية"+char(34)+","+char(34)+"تعيينخاصية_2(حرف *اسم، عدد صحيح) --> منطقية"+char(34)+","+char(34)+"تعيينخاصية_3(حرف *اسم، عائم) --> منطقية"+char(34)+","+char(34)+"تعيينخاصية_4(حرف *اسم، مزدوج) --> منطقية"+char(34)+","+char(34)+"تعيينخاصية_5(حرف *اسم، نص) --> منطقية"+char(34)+","+char(34)+"تعيينخاصية_مزدوج(حرف *اسم، مزدوج) --> منطقية"+char(34)+","+char(34)+"تعيينخاصية_عائم(حرف *اسم، عائم) --> منطقية"+char(34)+","+char(34)+"تعيينخاصية_عددصحيح(حرف *اسم، عدد صحيح) --> منطقية"+char(34)+","+char(34)+"تعيينخاصية_نص(حرف *اسم، نص) --> منطقية"+char(34)+","+char(34)+"تعيينوكيل(وكيلشبكة) --> لاشىء"+char(34)+","+char(34)+"تعيينحدثطلبمصادقةالوكيل(حرف *) --> لاشىء"+char(34)+","+char(34)+"تعيينحجمذاكرةالقراءة(عدد صحيح الحجم) --> لاشىء"+char(34)+","+char(34)+"تعيينحدثانتهاءقناةالقراءة(حرف *) --> لاشىء"+char(34)+","+char(34)+"تعيينحدثالقراءةجاهزة(حرف *) --> لاشىء"+char(34)+","+char(34)+"تعيينمعرفالمقبس(عددمضاعفsocketDescriptor، حالةالمقبس، علمفتحالوضع) --> منطقية"+char(34)+","+char(34)+"تعيينخيارالمقبس(خيارالمقبس، نوعمتغير القيمة) --> لاشىء"+char(34)+","+char(34)+"تعيينحدثتغييرالحالة(حرف *) --> لاشىء"+char(34)+","+char(34)+"تمكينوضعالنص(منطقية ممكن) --> لاشىء"+char(34)+","+char(34)+"حجبالإشارات(لاشىء) --> منطقية"+char(34)+","+char(34)+"الحجم(لاشىء) --> عددمضاعف64"+char(34)+","+char(34)+"معرفالمقبس(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"خيارالمقبس(خيارالمقبس) --> نوعمتغير"+char(34)+","+char(34)+"نوعالمقبس(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"تشغيلالمؤقت(عدد صحيح الفاصل) --> عدد صحيح"+char(34)+","+char(34)+"الحالة(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"خيط(لاشىء) --> خيط"+char(34)+","+char(34)+"إعادةمحرف(حرف محرف) --> لاشىء"+char(34)+","+char(34)+"انتظارالكتابة(عدد صحيح ميليثانية) --> منطقية"+char(34)+","+char(34)+"انتظارالاتصال(عدد صحيح ميليثانية) --> منطقية"+char(34)+","+char(34)+"انتظارالفصل(عدد صحيح ميليثانية) --> منطقية"+char(34)+","+char(34)+"انتظارالقراءة(عدد صحيح ميليثانية) --> منطقية"+char(34)+","+char(34)+"كتابة(حرف *بيانات، عدد صحيح أقصىحجم) --> عدد صحيح"+char(34)+"];;_RV_;;"
+	],
+	[
+		121,
+		1,
+		"assignment",
+		"20/02/2025",
+		"23:01:15",
+		"leftside;;_RV_;;T_CT_QTCPSOCKETCLASS_IP_VALUE3;;_RV_;;rightside;;_RV_;;"+char(34)+"المعطيات :"+char(34)+";;_RV_;;"
+	],
+	[
+		122,
+		1,
+		"assignment",
+		"20/02/2025",
+		"23:01:15",
+		"leftside;;_RV_;;T_CT_QTCPSOCKETCLASS_IP_VALUE4;;_RV_;;rightside;;_RV_;;"+char(34)+"الناتج :"+char(34)+";;_RV_;;"
+	],
+	[
+		123,
+		1,
+		"assignment",
+		"20/02/2025",
+		"23:01:15",
+		"leftside;;_RV_;;T_CT_QTCPSOCKETCLASS_IP_VALUE2FUNC;;_RV_;;rightside;;_RV_;;["+char(34)+"abort"+char(34)+","+char(34)+"atend"+char(34)+","+char(34)+"bind"+char(34)+","+char(34)+"blocksignals"+char(34)+","+char(34)+"bytesavailable"+char(34)+","+char(34)+"bytestowrite"+char(34)+","+char(34)+"canreadline"+char(34)+","+char(34)+"children"+char(34)+","+char(34)+"close"+char(34)+","+char(34)+"connecttohost"+char(34)+","+char(34)+"delete"+char(34)+","+char(34)+"deletelater"+char(34)+","+char(34)+"disconnectfromhost"+char(34)+","+char(34)+"dumpobjectinfo"+char(34)+","+char(34)+"dumpobjecttree"+char(34)+","+char(34)+"error"+char(34)+","+char(34)+"errorstring"+char(34)+","+char(34)+"flush"+char(34)+","+char(34)+"getabouttocloseevent"+char(34)+","+char(34)+"getbyteswrittenevent"+char(34)+","+char(34)+"getchar"+char(34)+","+char(34)+"getconnectedevent"+char(34)+","+char(34)+"getdisconnectedevent"+char(34)+","+char(34)+"geterrorevent"+char(34)+","+char(34)+"gethostfoundevent"+char(34)+","+char(34)+"getproxyauthenticationrequiredevent"+char(34)+","+char(34)+"getreadchannelfinishedevent"+char(34)+","+char(34)+"getreadyreadevent"+char(34)+","+char(34)+"getstatechangedevent"+char(34)+","+char(34)+"inherits"+char(34)+","+char(34)+"init"+char(34)+","+char(34)+"installeventfilter"+char(34)+","+char(34)+"isopen"+char(34)+","+char(34)+"isreadable"+char(34)+","+char(34)+"issequential"+char(34)+","+char(34)+"istextmodeenabled"+char(34)+","+char(34)+"isvalid"+char(34)+","+char(34)+"iswidgettype"+char(34)+","+char(34)+"iswritable"+char(34)+","+char(34)+"killtimer"+char(34)+","+char(34)+"localaddress"+char(34)+","+char(34)+"localport"+char(34)+","+char(34)+"movetothread"+char(34)+","+char(34)+"objectname"+char(34)+","+char(34)+"objectpointer"+char(34)+","+char(34)+"open"+char(34)+","+char(34)+"openmode"+char(34)+","+char(34)+"parent"+char(34)+","+char(34)+"pausemode"+char(34)+","+char(34)+"peek"+char(34)+","+char(34)+"peeraddress"+char(34)+","+char(34)+"peername"+char(34)+","+char(34)+"peerport"+char(34)+","+char(34)+"pos"+char(34)+","+char(34)+"property"+char(34)+","+char(34)+"proxy"+char(34)+","+char(34)+"putchar"+char(34)+","+char(34)+"read"+char(34)+","+char(34)+"readall"+char(34)+","+char(34)+"readbuffersize"+char(34)+","+char(34)+"readline"+char(34)+","+char(34)+"removeeventfilter"+char(34)+","+char(34)+"resume"+char(34)+","+char(34)+"seek"+char(34)+","+char(34)+"setabouttocloseevent"+char(34)+","+char(34)+"setbyteswrittenevent"+char(34)+","+char(34)+"setconnectedevent"+char(34)+","+char(34)+"setdisconnectedevent"+char(34)+","+char(34)+"seterrorevent"+char(34)+","+char(34)+"sethostfoundevent"+char(34)+","+char(34)+"setobjectname"+char(34)+","+char(34)+"setparent"+char(34)+","+char(34)+"setpausemode"+char(34)+","+char(34)+"setproperty"+char(34)+","+char(34)+"setproperty_2"+char(34)+","+char(34)+"setproperty_3"+char(34)+","+char(34)+"setproperty_4"+char(34)+","+char(34)+"setproperty_5"+char(34)+","+char(34)+"setproperty_double"+char(34)+","+char(34)+"setproperty_float"+char(34)+","+char(34)+"setproperty_int"+char(34)+","+char(34)+"setproperty_string"+char(34)+","+char(34)+"setproxy"+char(34)+","+char(34)+"setproxyauthenticationrequiredevent"+char(34)+","+char(34)+"setreadbuffersize"+char(34)+","+char(34)+"setreadchannelfinishedevent"+char(34)+","+char(34)+"setreadyreadevent"+char(34)+","+char(34)+"setsocketdescriptor"+char(34)+","+char(34)+"setsocketoption"+char(34)+","+char(34)+"setstatechangedevent"+char(34)+","+char(34)+"settextmodeenabled"+char(34)+","+char(34)+"signalsblocked"+char(34)+","+char(34)+"size"+char(34)+","+char(34)+"socketdescriptor"+char(34)+","+char(34)+"socketoption"+char(34)+","+char(34)+"sockettype"+char(34)+","+char(34)+"starttimer"+char(34)+","+char(34)+"state"+char(34)+","+char(34)+"thread"+char(34)+","+char(34)+"ungetchar"+char(34)+","+char(34)+"waitforbyteswritten"+char(34)+","+char(34)+"waitforconnected"+char(34)+","+char(34)+"waitfordisconnected"+char(34)+","+char(34)+"waitforreadyread"+char(34)+","+char(34)+"write"+char(34)+"];;_RV_;;"
+	],
+	[
+		124,
+		1,
+		"assignment",
+		"20/02/2025",
+		"23:01:15",
+		"leftside;;_RV_;;T_CT_QTCPSOCKETCLASS_IP_VALUE2STEPFUNC;;_RV_;;rightside;;_RV_;;["+char(34)+"إلغاء"+char(34)+","+char(34)+"فيالنهاية"+char(34)+","+char(34)+"ربط"+char(34)+","+char(34)+"حجبالإشارات"+char(34)+","+char(34)+"بايتاتمتاحة"+char(34)+","+char(34)+"بايتاتللكتابة"+char(34)+","+char(34)+"يمكنقراءةالسطر"+char(34)+","+char(34)+"أطفال"+char(34)+","+char(34)+"إغلاق"+char(34)+","+char(34)+"الاتصالبالمضيف"+char(34)+","+char(34)+"حذف"+char(34)+","+char(34)+"احذفلاحقاً"+char(34)+","+char(34)+"قطعالاتصالبالمضيف"+char(34)+","+char(34)+"تفريغمعلوماتالكائن"+char(34)+","+char(34)+"تفريغشجرةالكائن"+char(34)+","+char(34)+"خطأ"+char(34)+","+char(34)+"نصالخطأ"+char(34)+","+char(34)+"تفريغ"+char(34)+","+char(34)+"الحصولعلىحدثالإغلاقالمتوقع"+char(34)+","+char(34)+"الحصولعلىحدثالبايتاتالمكتوبة"+char(34)+","+char(34)+"الحصولعلىمحرف"+char(34)+","+char(34)+"الحصولعلىحدثالاتصال"+char(34)+","+char(34)+"الحصولعلىحدثالفصل"+char(34)+","+char(34)+"الحصولعلىحدثالخطأ"+char(34)+","+char(34)+"الحصولعلىحدثالعثورعلىالمضيف"+char(34)+","+char(34)+"الحصولعلىحدثطلبمصادقةالوكيل"+char(34)+","+char(34)+"الحصولعلىحدثانتهاءقناةالقراءة"+char(34)+","+char(34)+"الحصولعلىحدثالقراءةجاهزة"+char(34)+","+char(34)+"الحصولعلىحدثتغييرالحالة"+char(34)+","+char(34)+"يرث"+char(34)+","+char(34)+"تهيئة"+char(34)+","+char(34)+"تثبيتالمرشحالحدث"+char(34)+","+char(34)+"مفتوح"+char(34)+","+char(34)+"قابلللقراءة"+char(34)+","+char(34)+"تتابعي"+char(34)+","+char(34)+"تمكينوضعالنص"+char(34)+","+char(34)+"صالح"+char(34)+","+char(34)+"نوعالأداة"+char(34)+","+char(34)+"قابلللكتابة"+char(34)+","+char(34)+"إيقافالعداد"+char(34)+","+char(34)+"العنوانالمحلي"+char(34)+","+char(34)+"المنفذالمحلي"+char(34)+","+char(34)+"نقلالىالخيط"+char(34)+","+char(34)+"اسمالكائن"+char(34)+","+char(34)+"مؤشرالكائن"+char(34)+","+char(34)+"فتح"+char(34)+","+char(34)+"وضعالفتح"+char(34)+","+char(34)+"الأصل"+char(34)+","+char(34)+"وضعالتوقف"+char(34)+","+char(34)+"إطلالة"+char(34)+","+char(34)+"عنوانالنظير"+char(34)+","+char(34)+"اسمالنظير"+char(34)+","+char(34)+"منفذالنظير"+char(34)+","+char(34)+"الموضع"+char(34)+","+char(34)+"خاصية"+char(34)+","+char(34)+"الوكيل"+char(34)+","+char(34)+"إدخالمحرف"+char(34)+","+char(34)+"قراءة"+char(34)+","+char(34)+"قراءةالكل"+char(34)+","+char(34)+"حجمذاكرةالقراءة"+char(34)+","+char(34)+"قراءةالسطر"+char(34)+","+char(34)+"إزالةالمرشحالحدث"+char(34)+","+char(34)+"استئناف"+char(34)+","+char(34)+"بحث"+char(34)+","+char(34)+"تعيينحدثالإغلاقالمتوقع"+char(34)+","+char(34)+"تعيينحدثالبايتاتالمكتوبة"+char(34)+","+char(34)+"تعيينحدثالاتصال"+char(34)+","+char(34)+"تعيينحدثالفصل"+char(34)+","+char(34)+"تعيينحدثالخطأ"+char(34)+","+char(34)+"تعيينحدثالعثورعلىالمضيف"+char(34)+","+char(34)+"تعييناسمالكائن"+char(34)+","+char(34)+"تعيينالأصل"+char(34)+","+char(34)+"تعيينوضعتوقف"+char(34)+","+char(34)+"تعيينخاصية"+char(34)+","+char(34)+"تعيينخاصية_2"+char(34)+","+char(34)+"تعيينخاصية_3"+char(34)+","+char(34)+"تعيينخاصية_4"+char(34)+","+char(34)+"تعيينخاصية_5"+char(34)+","+char(34)+"تعيينخاصية_مزدوج"+char(34)+","+char(34)+"تعيينخاصية_عائم"+char(34)+","+char(34)+"تعيينخاصية_عددصحيح"+char(34)+","+char(34)+"تعيينخاصية_نص"+char(34)+","+char(34)+"تعيينوكيل"+char(34)+","+char(34)+"تعيينحدثطلبمصادقةالوكيل"+char(34)+","+char(34)+"تعيينحجمذاكرةالقراءة"+char(34)+","+char(34)+"تعيينحدثانتهاءقناةالقراءة"+char(34)+","+char(34)+"تعيينحدثالقراءةجاهزة"+char(34)+","+char(34)+"تعيينمعرفالمقبس"+char(34)+","+char(34)+"تعيينخيارالمقبس"+char(34)+","+char(34)+"تعيينحدثتغييرالحالة"+char(34)+","+char(34)+"تمكينوضعلنص"+char(34)+","+char(34)+"حجبالإشارات"+char(34)+","+char(34)+"الحجم"+char(34)+","+char(34)+"معرفالمقبس"+char(34)+","+char(34)+"خيارالمقبس"+char(34)+","+char(34)+"نوعالمقبس"+char(34)+","+char(34)+"تشغيلالمؤقت"+char(34)+","+char(34)+"الحالة"+char(34)+","+char(34)+"خيط"+char(34)+","+char(34)+"إعادةمحرف"+char(34)+","+char(34)+"انتظارالكتابة"+char(34)+","+char(34)+"انتظارالاتصال"+char(34)+","+char(34)+"انتظارالفصل"+char(34)+","+char(34)+"انتظارالقراءة"+char(34)+","+char(34)+"كتابة"+char(34)+"];;_RV_;;"
 	]
 ]
 

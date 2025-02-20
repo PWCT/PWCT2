@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'english'
-nStepsID                 = 15		
-nInteractionsID          = 15
+nStepsID                 = 108		
+nInteractionsID          = 108
 
 aStepsTable = [
 	[
@@ -433,7 +433,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QPAINTERCLASS_IP_VALUE2STEPFUNC</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QPAINTERCLASS_IP_VALUE2FUNC</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QPAINTERCLASS_IP_VALUE2STEPFUNC</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;خلفية&quot;,&quot;وضعية_الخلفية&quot;,&quot;بدء&quot;,&quot;بدء_الرسم_الأصلي&quot;,&quot;مستطيل_الإحاطة&quot;,&quot;فرشاة&quot;,&quot;أصل_الفرشاة&quot;,&quot;مستطيل_الإحاطة_المقطوع&quot;,&quot;مسار_القص&quot;,&quot;منطقة_القص&quot;,&quot;تحويل_مُدمج&quot;,&quot;وضع_التكوين&quot;,&quot;حذف&quot;,&quot;جهاز&quot;,&quot;تحويل_الجهاز&quot;,&quot;رسم_قوس&quot;,&quot;رسم_وتر&quot;,&quot;رسم_مضلع_محدب&quot;,&quot;رسم_بيضاوي&quot;,&quot;رسم_تشغيل_رمز_الحروف&quot;,&quot;رسم_صورة&quot;,&quot;رسم_خط&quot;,&quot;رسم_الخطوط&quot;,&quot;رسم_المسار&quot;,&quot;رسم_الصورة&quot;,&quot;رسم_فطيرة&quot;,&quot;رسم_بكسل_التكوين&quot;,&quot;رسم_نقطة&quot;,&quot;رسم_النقاط&quot;,&quot;رسم_المضلع&quot;,&quot;رسم_الخط_المتعدد&quot;,&quot;رسم_المستطيل&quot;,&quot;رسم_المستطيلات&quot;,&quot;رسم_مستطيل_مدور&quot;,&quot;رسم_النص_الثابت&quot;,&quot;رسم_النص&quot;,&quot;رسم_بكسل_التكوين_المتكرر&quot;,&quot;إنهاء_الرسم_الأصلي&quot;,&quot;إنهاء_الرسم&quot;,&quot;مسح_المستطيل&quot;,&quot;ملء_المسار&quot;,&quot;ملء_المستطيل&quot;,&quot;الخط&quot;,&quot;معلومات_الخط&quot;,&quot;هل_يوجد_قص&quot;,&quot;تهيئة&quot;,&quot;تهيئة_من&quot;,&quot;هل_نشط&quot;,&quot;اتجاه_التخطيط&quot;,&quot;مؤشر_كائن&quot;,&quot;التعتيم&quot;,&quot;محرك_الرسم&quot;,&quot;قلم&quot;,&quot;تلميحات_الرسم&quot;,&quot;إعادة_تعيين_التحويل&quot;,&quot;استعادة&quot;,&quot;تدوير&quot;,&quot;حفظ&quot;,&quot;مقياس&quot;,&quot;تعيين_الخلفية&quot;,&quot;تعيين_وضعية_الخلفية&quot;,&quot;تعيين_الفرشاة&quot;,&quot;تعيين_أصل_الفرشاة&quot;,&quot;تعيين_مسار_القص&quot;,&quot;تعيين_القص&quot;,&quot;تعيين_مستطيل_القص&quot;,&quot;تعيين_منطقة_القص&quot;,&quot;تعيين_وضع_التكوين&quot;,&quot;تعيين_الخط&quot;,&quot;تعيين_اتجاه_التخطيط&quot;,&quot;تعيين_التعتيم&quot;,&quot;تعيين_القلم&quot;,&quot;تعيين_تلميح_الرسم&quot;,&quot;تعيين_التحويل&quot;,&quot;تعيين_عرض_المنفذ&quot;,&quot;تعيين_التحويل_المرئي_المفعل&quot;,&quot;تعيين_النافذة&quot;,&quot;تعيين_التحويل_العالمي_المفعل&quot;,&quot;تعيين_التحويل_العالمي&quot;,&quot;قص&quot;,&quot;مسار_الحد&quot;,&quot;اختبار_تلميح_الرسم&quot;,&quot;التحويل&quot;,&quot;ترجمة&quot;,&quot;عرض_المنفذ&quot;,&quot;التحويل_المرئي_المفعل&quot;,&quot;نافذة&quot;,&quot;التحويل_العالمي_المفعل&quot;,&quot;التحويل_العالمي&quot;]</font></span>"
 			],
 			[
 				"active",
@@ -441,7 +441,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_QPAINTERCLASS_IP_VALUE2STEPFUNC = T_CT_QPAINTERCLASS_IP_VALUE2FUNC"
+				"T_CT_QPAINTERCLASS_IP_VALUE2STEPFUNC = ["+char(34)+"خلفية"+char(34)+","+char(34)+"وضعية_الخلفية"+char(34)+","+char(34)+"بدء"+char(34)+","+char(34)+"بدء_الرسم_الأصلي"+char(34)+","+char(34)+"مستطيل_الإحاطة"+char(34)+","+char(34)+"فرشاة"+char(34)+","+char(34)+"أصل_الفرشاة"+char(34)+","+char(34)+"مستطيل_الإحاطة_المقطوع"+char(34)+","+char(34)+"مسار_القص"+char(34)+","+char(34)+"منطقة_القص"+char(34)+","+char(34)+"تحويل_مُدمج"+char(34)+","+char(34)+"وضع_التكوين"+char(34)+","+char(34)+"حذف"+char(34)+","+char(34)+"جهاز"+char(34)+","+char(34)+"تحويل_الجهاز"+char(34)+","+char(34)+"رسم_قوس"+char(34)+","+char(34)+"رسم_وتر"+char(34)+","+char(34)+"رسم_مضلع_محدب"+char(34)+","+char(34)+"رسم_بيضاوي"+char(34)+","+char(34)+"رسم_تشغيل_رمز_الحروف"+char(34)+","+char(34)+"رسم_صورة"+char(34)+","+char(34)+"رسم_خط"+char(34)+","+char(34)+"رسم_الخطوط"+char(34)+","+char(34)+"رسم_المسار"+char(34)+","+char(34)+"رسم_الصورة"+char(34)+","+char(34)+"رسم_فطيرة"+char(34)+","+char(34)+"رسم_بكسل_التكوين"+char(34)+","+char(34)+"رسم_نقطة"+char(34)+","+char(34)+"رسم_النقاط"+char(34)+","+char(34)+"رسم_المضلع"+char(34)+","+char(34)+"رسم_الخط_المتعدد"+char(34)+","+char(34)+"رسم_المستطيل"+char(34)+","+char(34)+"رسم_المستطيلات"+char(34)+","+char(34)+"رسم_مستطيل_مدور"+char(34)+","+char(34)+"رسم_النص_الثابت"+char(34)+","+char(34)+"رسم_النص"+char(34)+","+char(34)+"رسم_بكسل_التكوين_المتكرر"+char(34)+","+char(34)+"إنهاء_الرسم_الأصلي"+char(34)+","+char(34)+"إنهاء_الرسم"+char(34)+","+char(34)+"مسح_المستطيل"+char(34)+","+char(34)+"ملء_المسار"+char(34)+","+char(34)+"ملء_المستطيل"+char(34)+","+char(34)+"الخط"+char(34)+","+char(34)+"معلومات_الخط"+char(34)+","+char(34)+"هل_يوجد_قص"+char(34)+","+char(34)+"تهيئة"+char(34)+","+char(34)+"تهيئة_من"+char(34)+","+char(34)+"هل_نشط"+char(34)+","+char(34)+"اتجاه_التخطيط"+char(34)+","+char(34)+"مؤشر_كائن"+char(34)+","+char(34)+"التعتيم"+char(34)+","+char(34)+"محرك_الرسم"+char(34)+","+char(34)+"قلم"+char(34)+","+char(34)+"تلميحات_الرسم"+char(34)+","+char(34)+"إعادة_تعيين_التحويل"+char(34)+","+char(34)+"استعادة"+char(34)+","+char(34)+"تدوير"+char(34)+","+char(34)+"حفظ"+char(34)+","+char(34)+"مقياس"+char(34)+","+char(34)+"تعيين_الخلفية"+char(34)+","+char(34)+"تعيين_وضعية_الخلفية"+char(34)+","+char(34)+"تعيين_الفرشاة"+char(34)+","+char(34)+"تعيين_أصل_الفرشاة"+char(34)+","+char(34)+"تعيين_مسار_القص"+char(34)+","+char(34)+"تعيين_القص"+char(34)+","+char(34)+"تعيين_مستطيل_القص"+char(34)+","+char(34)+"تعيين_منطقة_القص"+char(34)+","+char(34)+"تعيين_وضع_التكوين"+char(34)+","+char(34)+"تعيين_الخط"+char(34)+","+char(34)+"تعيين_اتجاه_التخطيط"+char(34)+","+char(34)+"تعيين_التعتيم"+char(34)+","+char(34)+"تعيين_القلم"+char(34)+","+char(34)+"تعيين_تلميح_الرسم"+char(34)+","+char(34)+"تعيين_التحويل"+char(34)+","+char(34)+"تعيين_عرض_المنفذ"+char(34)+","+char(34)+"تعيين_التحويل_المرئي_المفعل"+char(34)+","+char(34)+"تعيين_النافذة"+char(34)+","+char(34)+"تعيين_التحويل_العالمي_المفعل"+char(34)+","+char(34)+"تعيين_التحويل_العالمي"+char(34)+","+char(34)+"قص"+char(34)+","+char(34)+"مسار_الحد"+char(34)+","+char(34)+"اختبار_تلميح_الرسم"+char(34)+","+char(34)+"التحويل"+char(34)+","+char(34)+"ترجمة"+char(34)+","+char(34)+"عرض_المنفذ"+char(34)+","+char(34)+"التحويل_المرئي_المفعل"+char(34)+","+char(34)+"نافذة"+char(34)+","+char(34)+"التحويل_العالمي_المفعل"+char(34)+","+char(34)+"التحويل_العالمي"+char(34)+"]"
 			],
 			[
 				"interactionid",
@@ -461,7 +461,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"T_CT_QPAINTERCLASS_IP_VALUE2STEPFUNC = T_CT_QPAINTERCLASS_IP_VALUE2FUNC"
+				"T_CT_QPAINTERCLASS_IP_VALUE2STEPFUNC = ["+char(34)+"خلفية"+char(34)+","+char(34)+"وضعية_الخلفية"+char(34)+","+char(34)+"بدء"+char(34)+","+char(34)+"بدء_الرسم_الأصلي"+char(34)+","+char(34)+"مستطيل_الإحاطة"+char(34)+","+char(34)+"فرشاة"+char(34)+","+char(34)+"أصل_الفرشاة"+char(34)+","+char(34)+"مستطيل_الإحاطة_المقطوع"+char(34)+","+char(34)+"مسار_القص"+char(34)+","+char(34)+"منطقة_القص"+char(34)+","+char(34)+"تحويل_مُدمج"+char(34)+","+char(34)+"وضع_التكوين"+char(34)+","+char(34)+"حذف"+char(34)+","+char(34)+"جهاز"+char(34)+","+char(34)+"تحويل_الجهاز"+char(34)+","+char(34)+"رسم_قوس"+char(34)+","+char(34)+"رسم_وتر"+char(34)+","+char(34)+"رسم_مضلع_محدب"+char(34)+","+char(34)+"رسم_بيضاوي"+char(34)+","+char(34)+"رسم_تشغيل_رمز_الحروف"+char(34)+","+char(34)+"رسم_صورة"+char(34)+","+char(34)+"رسم_خط"+char(34)+","+char(34)+"رسم_الخطوط"+char(34)+","+char(34)+"رسم_المسار"+char(34)+","+char(34)+"رسم_الصورة"+char(34)+","+char(34)+"رسم_فطيرة"+char(34)+","+char(34)+"رسم_بكسل_التكوين"+char(34)+","+char(34)+"رسم_نقطة"+char(34)+","+char(34)+"رسم_النقاط"+char(34)+","+char(34)+"رسم_المضلع"+char(34)+","+char(34)+"رسم_الخط_المتعدد"+char(34)+","+char(34)+"رسم_المستطيل"+char(34)+","+char(34)+"رسم_المستطيلات"+char(34)+","+char(34)+"رسم_مستطيل_مدور"+char(34)+","+char(34)+"رسم_النص_الثابت"+char(34)+","+char(34)+"رسم_النص"+char(34)+","+char(34)+"رسم_بكسل_التكوين_المتكرر"+char(34)+","+char(34)+"إنهاء_الرسم_الأصلي"+char(34)+","+char(34)+"إنهاء_الرسم"+char(34)+","+char(34)+"مسح_المستطيل"+char(34)+","+char(34)+"ملء_المسار"+char(34)+","+char(34)+"ملء_المستطيل"+char(34)+","+char(34)+"الخط"+char(34)+","+char(34)+"معلومات_الخط"+char(34)+","+char(34)+"هل_يوجد_قص"+char(34)+","+char(34)+"تهيئة"+char(34)+","+char(34)+"تهيئة_من"+char(34)+","+char(34)+"هل_نشط"+char(34)+","+char(34)+"اتجاه_التخطيط"+char(34)+","+char(34)+"مؤشر_كائن"+char(34)+","+char(34)+"التعتيم"+char(34)+","+char(34)+"محرك_الرسم"+char(34)+","+char(34)+"قلم"+char(34)+","+char(34)+"تلميحات_الرسم"+char(34)+","+char(34)+"إعادة_تعيين_التحويل"+char(34)+","+char(34)+"استعادة"+char(34)+","+char(34)+"تدوير"+char(34)+","+char(34)+"حفظ"+char(34)+","+char(34)+"مقياس"+char(34)+","+char(34)+"تعيين_الخلفية"+char(34)+","+char(34)+"تعيين_وضعية_الخلفية"+char(34)+","+char(34)+"تعيين_الفرشاة"+char(34)+","+char(34)+"تعيين_أصل_الفرشاة"+char(34)+","+char(34)+"تعيين_مسار_القص"+char(34)+","+char(34)+"تعيين_القص"+char(34)+","+char(34)+"تعيين_مستطيل_القص"+char(34)+","+char(34)+"تعيين_منطقة_القص"+char(34)+","+char(34)+"تعيين_وضع_التكوين"+char(34)+","+char(34)+"تعيين_الخط"+char(34)+","+char(34)+"تعيين_اتجاه_التخطيط"+char(34)+","+char(34)+"تعيين_التعتيم"+char(34)+","+char(34)+"تعيين_القلم"+char(34)+","+char(34)+"تعيين_تلميح_الرسم"+char(34)+","+char(34)+"تعيين_التحويل"+char(34)+","+char(34)+"تعيين_عرض_المنفذ"+char(34)+","+char(34)+"تعيين_التحويل_المرئي_المفعل"+char(34)+","+char(34)+"تعيين_النافذة"+char(34)+","+char(34)+"تعيين_التحويل_العالمي_المفعل"+char(34)+","+char(34)+"تعيين_التحويل_العالمي"+char(34)+","+char(34)+"قص"+char(34)+","+char(34)+"مسار_الحد"+char(34)+","+char(34)+"اختبار_تلميح_الرسم"+char(34)+","+char(34)+"التحويل"+char(34)+","+char(34)+"ترجمة"+char(34)+","+char(34)+"عرض_المنفذ"+char(34)+","+char(34)+"التحويل_المرئي_المفعل"+char(34)+","+char(34)+"نافذة"+char(34)+","+char(34)+"التحويل_العالمي_المفعل"+char(34)+","+char(34)+"التحويل_العالمي"+char(34)+"]"
 			]
 		]
 	],
@@ -471,7 +471,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QPAINTERCLASS_IP_VALUE2LIST</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;background(void)&nbsp;--&gt;&nbsp;QBrush&quot;,&quot;backgroundMode(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;begin(QPaintDevice&nbsp;*device)&nbsp;--&gt;&nbsp;bool&quot;,&quot;beginNativePainting(void)&nbsp;--&gt;&nbsp;void&quot;,&quot;boundingRect(int&nbsp;x,&nbsp;int&nbsp;y,&nbsp;int&nbsp;w,&nbsp;int&nbsp;h,&nbsp;int&nbsp;flags,&nbsp;QString&nbsp;text)&nbsp;--&gt;&nbsp;QRect&quot;,&quot;brush(void)&nbsp;--&gt;&nbsp;QBrush&quot;,&quot;brushOrigin(void)&nbsp;--&gt;&nbsp;QPoint&quot;,&quot;clipBoundingRect(void)&nbsp;--&gt;&nbsp;QRectF&quot;,&quot;clipPath(void)&nbsp;--&gt;&nbsp;QPainterPath&quot;,&quot;clipRegion(void)&nbsp;--&gt;&nbsp;QRegion&quot;,&quot;combinedTransform(void)&nbsp;--&gt;&nbsp;QTransform&quot;,&quot;compositionMode(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;delete(void)&nbsp;--&gt;&nbsp;void&quot;,&quot;device(void)&nbsp;--&gt;&nbsp;QPaintDevice&quot;,&quot;deviceTransform(void)&nbsp;--&gt;&nbsp;QTransform&quot;,&quot;drawArc(int&nbsp;x,&nbsp;int&nbsp;y,&nbsp;int&nbsp;width,&nbsp;int&nbsp;height,&nbsp;int&nbsp;startAngle,&nbsp;int&nbsp;spanAngle)&nbsp;--&gt;&nbsp;void&quot;,&quot;drawChord(int&nbsp;x,&nbsp;int&nbsp;y,&nbsp;int&nbsp;width,&nbsp;int&nbsp;height,&nbsp;int&nbsp;startAngle,&nbsp;int&nbsp;spanAngle)&nbsp;--&gt;&nbsp;void&quot;,&quot;drawConvexPolygon(List&nbsp;*pPoints)&nbsp;--&gt;&nbsp;void&quot;,&quot;drawEllipse(int&nbsp;x,&nbsp;int&nbsp;y,&nbsp;int&nbsp;width,&nbsp;int&nbsp;height)&nbsp;--&gt;&nbsp;void&quot;,&quot;drawGlyphRun(QPointF&nbsp;position,&nbsp;QGlyphRun&nbsp;glyphs)&nbsp;--&gt;&nbsp;void&quot;,&quot;drawImage(int&nbsp;x,&nbsp;int&nbsp;y,&nbsp;QImage&nbsp;image)&nbsp;--&gt;&nbsp;void&quot;,&quot;drawLine(int&nbsp;x1,&nbsp;int&nbsp;y1,&nbsp;int&nbsp;x2,&nbsp;int&nbsp;y2)&nbsp;--&gt;&nbsp;void&quot;,&quot;drawLines(QLine&nbsp;*lines,&nbsp;int&nbsp;lineCount)&nbsp;--&gt;&nbsp;void&quot;,&quot;drawPath(QPainterPath&nbsp;path)&nbsp;--&gt;&nbsp;void&quot;,&quot;drawPicture(int&nbsp;x,&nbsp;int&nbsp;y,&nbsp;QPicture&nbsp;picture)&nbsp;--&gt;&nbsp;void&quot;,&quot;drawPie(int&nbsp;x,&nbsp;int&nbsp;y,&nbsp;int&nbsp;width,&nbsp;int&nbsp;height,&nbsp;int&nbsp;startAngle,&nbsp;int&nbsp;spanAngle)&nbsp;--&gt;&nbsp;void&quot;,&quot;drawPixmap(int&nbsp;x,&nbsp;int&nbsp;y,&nbsp;QPixmap)&nbsp;--&gt;&nbsp;void&quot;,&quot;drawPoint(int&nbsp;x,&nbsp;int&nbsp;y)&nbsp;--&gt;&nbsp;void&quot;,&quot;drawPoints(List&nbsp;*pPoints)&nbsp;--&gt;&nbsp;void&quot;,&quot;drawPolygon(List&nbsp;*pPoints,&nbsp;Qt::FillRule&nbsp;fillRule)&nbsp;--&gt;&nbsp;void&quot;,&quot;drawPolyline(List&nbsp;*pPoints)&nbsp;--&gt;&nbsp;void&quot;,&quot;drawRect(int&nbsp;x,&nbsp;int&nbsp;y,&nbsp;int&nbsp;width,&nbsp;int&nbsp;height)&nbsp;--&gt;&nbsp;void&quot;,&quot;drawRects(QRectF&nbsp;*rectangles,&nbsp;int&nbsp;rectCount)&nbsp;--&gt;&nbsp;void&quot;,&quot;drawRoundedRect(int&nbsp;x,&nbsp;int&nbsp;y,&nbsp;int&nbsp;w,&nbsp;int&nbsp;h,&nbsp;qreal&nbsp;xRadius,&nbsp;qreal&nbsp;yRadius,&nbsp;Qt::SizeMode&nbsp;mode)&nbsp;--&gt;&nbsp;void&quot;,&quot;drawStaticText(int&nbsp;left,&nbsp;int&nbsp;top,&nbsp;QStaticText&nbsp;staticText)&nbsp;--&gt;&nbsp;void&quot;,&quot;drawText(int&nbsp;x,&nbsp;int&nbsp;y,&nbsp;QString&nbsp;text)&nbsp;--&gt;&nbsp;void&quot;,&quot;drawTiledPixmap(int&nbsp;x,&nbsp;int&nbsp;y,&nbsp;int&nbsp;width,&nbsp;int&nbsp;height,&nbsp;QPixmap&nbsp;pixmap,&nbsp;int&nbsp;sx,&nbsp;int&nbsp;sy)&nbsp;--&gt;&nbsp;void&quot;,&quot;endNativePainting(void)&nbsp;--&gt;&nbsp;void&quot;,&quot;endpaint(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;eraseRect(int&nbsp;x,&nbsp;int&nbsp;y,&nbsp;int&nbsp;width,&nbsp;int&nbsp;height)&nbsp;--&gt;&nbsp;void&quot;,&quot;fillPath(QPainterPath&nbsp;path,&nbsp;QBrush&nbsp;brush)&nbsp;--&gt;&nbsp;void&quot;,&quot;fillRect(int&nbsp;x,&nbsp;int&nbsp;y,&nbsp;int&nbsp;width,&nbsp;int&nbsp;height,&nbsp;QBrush)&nbsp;--&gt;&nbsp;void&quot;,&quot;font(void)&nbsp;--&gt;&nbsp;QFont&quot;,&quot;fontInfo(void)&nbsp;--&gt;&nbsp;QFontInfo&quot;,&quot;hasClipping(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;init(parent)&nbsp;--&gt;&nbsp;object&quot;,&quot;initFrom(QWidget&nbsp;*widget)&nbsp;--&gt;&nbsp;void&quot;,&quot;isActive(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;layoutDirection(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;objectpointer(void)&nbsp;--&gt;&nbsp;pointer&quot;,&quot;opacity(void)&nbsp;--&gt;&nbsp;double&quot;,&quot;paintEngine(void)&nbsp;--&gt;&nbsp;QPaintEngine&quot;,&quot;pen(void)&nbsp;--&gt;&nbsp;QPen&quot;,&quot;renderHints(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;resetTransform(void)&nbsp;--&gt;&nbsp;void&quot;,&quot;restore(void)&nbsp;--&gt;&nbsp;void&quot;,&quot;rotate(qreal&nbsp;angle)&nbsp;--&gt;&nbsp;void&quot;,&quot;save(void)&nbsp;--&gt;&nbsp;void&quot;,&quot;scale(double&nbsp;sx,&nbsp;double&nbsp;sy)&nbsp;--&gt;&nbsp;void&quot;,&quot;setBackground(QBrush&nbsp;brush)&nbsp;--&gt;&nbsp;void&quot;,&quot;setBackgroundMode(Qt::BGMode&nbsp;mode)&nbsp;--&gt;&nbsp;void&quot;,&quot;setBrush(QBrush&nbsp;brush)&nbsp;--&gt;&nbsp;void&quot;,&quot;setBrushOrigin(int&nbsp;x,&nbsp;int&nbsp;y)&nbsp;--&gt;&nbsp;void&quot;,&quot;setClipPath(QPainterPath&nbsp;path,&nbsp;Qt::ClipOperation&nbsp;operation)&nbsp;--&gt;&nbsp;void&quot;,&quot;setClipping(bool&nbsp;enable)&nbsp;--&gt;&nbsp;void&quot;,&quot;setClipRect(int&nbsp;x,&nbsp;int&nbsp;y,&nbsp;int&nbsp;width,&nbsp;int&nbsp;height,&nbsp;Qt::ClipOperation&nbsp;operation)&nbsp;--&gt;&nbsp;void&quot;,&quot;setClipRegion(QRegion&nbsp;region,&nbsp;Qt::ClipOperation&nbsp;operation)&nbsp;--&gt;&nbsp;void&quot;,&quot;setCompositionMode(QPainter::CompositionMode&nbsp;mode)&nbsp;--&gt;&nbsp;void&quot;,&quot;setFont(QFont&nbsp;font)&nbsp;--&gt;&nbsp;void&quot;,&quot;setLayoutDirection(Qt::LayoutDirection&nbsp;direction)&nbsp;--&gt;&nbsp;void&quot;,&quot;setOpacity(qreal&nbsp;opacity)&nbsp;--&gt;&nbsp;void&quot;,&quot;setPen(QPen&nbsp;pen)&nbsp;--&gt;&nbsp;void&quot;,&quot;setRenderHint(QPainter::RenderHint&nbsp;hint,&nbsp;bool&nbsp;on)&nbsp;--&gt;&nbsp;void&quot;,&quot;setTransform(QTransform&nbsp;transform,&nbsp;bool&nbsp;combine)&nbsp;--&gt;&nbsp;void&quot;,&quot;setViewport(int&nbsp;x,&nbsp;int&nbsp;y,&nbsp;int&nbsp;width,&nbsp;int&nbsp;height)&nbsp;--&gt;&nbsp;void&quot;,&quot;setViewTransformEnabled(bool&nbsp;enable)&nbsp;--&gt;&nbsp;void&quot;,&quot;setWindow(int&nbsp;x,&nbsp;int&nbsp;y,&nbsp;int&nbsp;width,&nbsp;int&nbsp;height)&nbsp;--&gt;&nbsp;void&quot;,&quot;setWorldMatrixEnabled(bool&nbsp;enable)&nbsp;--&gt;&nbsp;void&quot;,&quot;setWorldTransform(&nbsp;QTransform&nbsp;matrix,&nbsp;bool&nbsp;combine)&nbsp;--&gt;&nbsp;void&quot;,&quot;shear(double&nbsp;sh,&nbsp;double&nbsp;sv)&nbsp;--&gt;&nbsp;void&quot;,&quot;strokePath(QPainterPath&nbsp;path,&nbsp;QPen&nbsp;pen)&nbsp;--&gt;&nbsp;void&quot;,&quot;testRenderHint(QPainter::RenderHint&nbsp;hint)&nbsp;--&gt;&nbsp;bool&quot;,&quot;transform(void)&nbsp;--&gt;&nbsp;QTransform&quot;,&quot;translate(double&nbsp;dx,&nbsp;double&nbsp;dy)&nbsp;--&gt;&nbsp;void&quot;,&quot;viewport(void)&nbsp;--&gt;&nbsp;QRect&quot;,&quot;viewTransformEnabled(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;window(void)&nbsp;--&gt;&nbsp;QRect&quot;,&quot;worldMatrixEnabled(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;worldTransform(void)&nbsp;--&gt;&nbsp;QTransform&quot;]</font></span>"
+				"/*"
 			],
 			[
 				"active",
@@ -479,7 +479,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_QPAINTERCLASS_IP_VALUE2LIST = ["+char(34)+"background(void) --> QBrush"+char(34)+","+char(34)+"backgroundMode(void) --> int"+char(34)+","+char(34)+"begin(QPaintDevice *device) --> bool"+char(34)+","+char(34)+"beginNativePainting(void) --> void"+char(34)+","+char(34)+"boundingRect(int x, int y, int w, int h, int flags, QString text) --> QRect"+char(34)+","+char(34)+"brush(void) --> QBrush"+char(34)+","+char(34)+"brushOrigin(void) --> QPoint"+char(34)+","+char(34)+"clipBoundingRect(void) --> QRectF"+char(34)+","+char(34)+"clipPath(void) --> QPainterPath"+char(34)+","+char(34)+"clipRegion(void) --> QRegion"+char(34)+","+char(34)+"combinedTransform(void) --> QTransform"+char(34)+","+char(34)+"compositionMode(void) --> int"+char(34)+","+char(34)+"delete(void) --> void"+char(34)+","+char(34)+"device(void) --> QPaintDevice"+char(34)+","+char(34)+"deviceTransform(void) --> QTransform"+char(34)+","+char(34)+"drawArc(int x, int y, int width, int height, int startAngle, int spanAngle) --> void"+char(34)+","+char(34)+"drawChord(int x, int y, int width, int height, int startAngle, int spanAngle) --> void"+char(34)+","+char(34)+"drawConvexPolygon(List *pPoints) --> void"+char(34)+","+char(34)+"drawEllipse(int x, int y, int width, int height) --> void"+char(34)+","+char(34)+"drawGlyphRun(QPointF position, QGlyphRun glyphs) --> void"+char(34)+","+char(34)+"drawImage(int x, int y, QImage image) --> void"+char(34)+","+char(34)+"drawLine(int x1, int y1, int x2, int y2) --> void"+char(34)+","+char(34)+"drawLines(QLine *lines, int lineCount) --> void"+char(34)+","+char(34)+"drawPath(QPainterPath path) --> void"+char(34)+","+char(34)+"drawPicture(int x, int y, QPicture picture) --> void"+char(34)+","+char(34)+"drawPie(int x, int y, int width, int height, int startAngle, int spanAngle) --> void"+char(34)+","+char(34)+"drawPixmap(int x, int y, QPixmap) --> void"+char(34)+","+char(34)+"drawPoint(int x, int y) --> void"+char(34)+","+char(34)+"drawPoints(List *pPoints) --> void"+char(34)+","+char(34)+"drawPolygon(List *pPoints, Qt::FillRule fillRule) --> void"+char(34)+","+char(34)+"drawPolyline(List *pPoints) --> void"+char(34)+","+char(34)+"drawRect(int x, int y, int width, int height) --> void"+char(34)+","+char(34)+"drawRects(QRectF *rectangles, int rectCount) --> void"+char(34)+","+char(34)+"drawRoundedRect(int x, int y, int w, int h, qreal xRadius, qreal yRadius, Qt::SizeMode mode) --> void"+char(34)+","+char(34)+"drawStaticText(int left, int top, QStaticText staticText) --> void"+char(34)+","+char(34)+"drawText(int x, int y, QString text) --> void"+char(34)+","+char(34)+"drawTiledPixmap(int x, int y, int width, int height, QPixmap pixmap, int sx, int sy) --> void"+char(34)+","+char(34)+"endNativePainting(void) --> void"+char(34)+","+char(34)+"endpaint(void) --> bool"+char(34)+","+char(34)+"eraseRect(int x, int y, int width, int height) --> void"+char(34)+","+char(34)+"fillPath(QPainterPath path, QBrush brush) --> void"+char(34)+","+char(34)+"fillRect(int x, int y, int width, int height, QBrush) --> void"+char(34)+","+char(34)+"font(void) --> QFont"+char(34)+","+char(34)+"fontInfo(void) --> QFontInfo"+char(34)+","+char(34)+"hasClipping(void) --> bool"+char(34)+","+char(34)+"init(parent) --> object"+char(34)+","+char(34)+"initFrom(QWidget *widget) --> void"+char(34)+","+char(34)+"isActive(void) --> bool"+char(34)+","+char(34)+"layoutDirection(void) --> int"+char(34)+","+char(34)+"objectpointer(void) --> pointer"+char(34)+","+char(34)+"opacity(void) --> double"+char(34)+","+char(34)+"paintEngine(void) --> QPaintEngine"+char(34)+","+char(34)+"pen(void) --> QPen"+char(34)+","+char(34)+"renderHints(void) --> int"+char(34)+","+char(34)+"resetTransform(void) --> void"+char(34)+","+char(34)+"restore(void) --> void"+char(34)+","+char(34)+"rotate(qreal angle) --> void"+char(34)+","+char(34)+"save(void) --> void"+char(34)+","+char(34)+"scale(double sx, double sy) --> void"+char(34)+","+char(34)+"setBackground(QBrush brush) --> void"+char(34)+","+char(34)+"setBackgroundMode(Qt::BGMode mode) --> void"+char(34)+","+char(34)+"setBrush(QBrush brush) --> void"+char(34)+","+char(34)+"setBrushOrigin(int x, int y) --> void"+char(34)+","+char(34)+"setClipPath(QPainterPath path, Qt::ClipOperation operation) --> void"+char(34)+","+char(34)+"setClipping(bool enable) --> void"+char(34)+","+char(34)+"setClipRect(int x, int y, int width, int height, Qt::ClipOperation operation) --> void"+char(34)+","+char(34)+"setClipRegion(QRegion region, Qt::ClipOperation operation) --> void"+char(34)+","+char(34)+"setCompositionMode(QPainter::CompositionMode mode) --> void"+char(34)+","+char(34)+"setFont(QFont font) --> void"+char(34)+","+char(34)+"setLayoutDirection(Qt::LayoutDirection direction) --> void"+char(34)+","+char(34)+"setOpacity(qreal opacity) --> void"+char(34)+","+char(34)+"setPen(QPen pen) --> void"+char(34)+","+char(34)+"setRenderHint(QPainter::RenderHint hint, bool on) --> void"+char(34)+","+char(34)+"setTransform(QTransform transform, bool combine) --> void"+char(34)+","+char(34)+"setViewport(int x, int y, int width, int height) --> void"+char(34)+","+char(34)+"setViewTransformEnabled(bool enable) --> void"+char(34)+","+char(34)+"setWindow(int x, int y, int width, int height) --> void"+char(34)+","+char(34)+"setWorldMatrixEnabled(bool enable) --> void"+char(34)+","+char(34)+"setWorldTransform( QTransform matrix, bool combine) --> void"+char(34)+","+char(34)+"shear(double sh, double sv) --> void"+char(34)+","+char(34)+"strokePath(QPainterPath path, QPen pen) --> void"+char(34)+","+char(34)+"testRenderHint(QPainter::RenderHint hint) --> bool"+char(34)+","+char(34)+"transform(void) --> QTransform"+char(34)+","+char(34)+"translate(double dx, double dy) --> void"+char(34)+","+char(34)+"viewport(void) --> QRect"+char(34)+","+char(34)+"viewTransformEnabled(void) --> bool"+char(34)+","+char(34)+"window(void) --> QRect"+char(34)+","+char(34)+"worldMatrixEnabled(void) --> bool"+char(34)+","+char(34)+"worldTransform(void) --> QTransform"+char(34)+"]"
+				"#/*
+"
 			],
 			[
 				"interactionid",
@@ -495,16 +496,3642 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				2
+				1
 			],
 			[
 				"plainname",
-				"T_CT_QPAINTERCLASS_IP_VALUE2LIST = ["+char(34)+"background(void) --> QBrush"+char(34)+","+char(34)+"backgroundMode(void) --> int"+char(34)+","+char(34)+"begin(QPaintDevice *device) --> bool"+char(34)+","+char(34)+"beginNativePainting(void) --> void"+char(34)+","+char(34)+"boundingRect(int x, int y, int w, int h, int flags, QString text) --> QRect"+char(34)+","+char(34)+"brush(void) --> QBrush"+char(34)+","+char(34)+"brushOrigin(void) --> QPoint"+char(34)+","+char(34)+"clipBoundingRect(void) --> QRectF"+char(34)+","+char(34)+"clipPath(void) --> QPainterPath"+char(34)+","+char(34)+"clipRegion(void) --> QRegion"+char(34)+","+char(34)+"combinedTransform(void) --> QTransform"+char(34)+","+char(34)+"compositionMode(void) --> int"+char(34)+","+char(34)+"delete(void) --> void"+char(34)+","+char(34)+"device(void) --> QPaintDevice"+char(34)+","+char(34)+"deviceTransform(void) --> QTransform"+char(34)+","+char(34)+"drawArc(int x, int y, int width, int height, int startAngle, int spanAngle) --> void"+char(34)+","+char(34)+"drawChord(int x, int y, int width, int height, int startAngle, int spanAngle) --> void"+char(34)+","+char(34)+"drawConvexPolygon(List *pPoints) --> void"+char(34)+","+char(34)+"drawEllipse(int x, int y, int width, int height) --> void"+char(34)+","+char(34)+"drawGlyphRun(QPointF position, QGlyphRun glyphs) --> void"+char(34)+","+char(34)+"drawImage(int x, int y, QImage image) --> void"+char(34)+","+char(34)+"drawLine(int x1, int y1, int x2, int y2) --> void"+char(34)+","+char(34)+"drawLines(QLine *lines, int lineCount) --> void"+char(34)+","+char(34)+"drawPath(QPainterPath path) --> void"+char(34)+","+char(34)+"drawPicture(int x, int y, QPicture picture) --> void"+char(34)+","+char(34)+"drawPie(int x, int y, int width, int height, int startAngle, int spanAngle) --> void"+char(34)+","+char(34)+"drawPixmap(int x, int y, QPixmap) --> void"+char(34)+","+char(34)+"drawPoint(int x, int y) --> void"+char(34)+","+char(34)+"drawPoints(List *pPoints) --> void"+char(34)+","+char(34)+"drawPolygon(List *pPoints, Qt::FillRule fillRule) --> void"+char(34)+","+char(34)+"drawPolyline(List *pPoints) --> void"+char(34)+","+char(34)+"drawRect(int x, int y, int width, int height) --> void"+char(34)+","+char(34)+"drawRects(QRectF *rectangles, int rectCount) --> void"+char(34)+","+char(34)+"drawRoundedRect(int x, int y, int w, int h, qreal xRadius, qreal yRadius, Qt::SizeMode mode) --> void"+char(34)+","+char(34)+"drawStaticText(int left, int top, QStaticText staticText) --> void"+char(34)+","+char(34)+"drawText(int x, int y, QString text) --> void"+char(34)+","+char(34)+"drawTiledPixmap(int x, int y, int width, int height, QPixmap pixmap, int sx, int sy) --> void"+char(34)+","+char(34)+"endNativePainting(void) --> void"+char(34)+","+char(34)+"endpaint(void) --> bool"+char(34)+","+char(34)+"eraseRect(int x, int y, int width, int height) --> void"+char(34)+","+char(34)+"fillPath(QPainterPath path, QBrush brush) --> void"+char(34)+","+char(34)+"fillRect(int x, int y, int width, int height, QBrush) --> void"+char(34)+","+char(34)+"font(void) --> QFont"+char(34)+","+char(34)+"fontInfo(void) --> QFontInfo"+char(34)+","+char(34)+"hasClipping(void) --> bool"+char(34)+","+char(34)+"init(parent) --> object"+char(34)+","+char(34)+"initFrom(QWidget *widget) --> void"+char(34)+","+char(34)+"isActive(void) --> bool"+char(34)+","+char(34)+"layoutDirection(void) --> int"+char(34)+","+char(34)+"objectpointer(void) --> pointer"+char(34)+","+char(34)+"opacity(void) --> double"+char(34)+","+char(34)+"paintEngine(void) --> QPaintEngine"+char(34)+","+char(34)+"pen(void) --> QPen"+char(34)+","+char(34)+"renderHints(void) --> int"+char(34)+","+char(34)+"resetTransform(void) --> void"+char(34)+","+char(34)+"restore(void) --> void"+char(34)+","+char(34)+"rotate(qreal angle) --> void"+char(34)+","+char(34)+"save(void) --> void"+char(34)+","+char(34)+"scale(double sx, double sy) --> void"+char(34)+","+char(34)+"setBackground(QBrush brush) --> void"+char(34)+","+char(34)+"setBackgroundMode(Qt::BGMode mode) --> void"+char(34)+","+char(34)+"setBrush(QBrush brush) --> void"+char(34)+","+char(34)+"setBrushOrigin(int x, int y) --> void"+char(34)+","+char(34)+"setClipPath(QPainterPath path, Qt::ClipOperation operation) --> void"+char(34)+","+char(34)+"setClipping(bool enable) --> void"+char(34)+","+char(34)+"setClipRect(int x, int y, int width, int height, Qt::ClipOperation operation) --> void"+char(34)+","+char(34)+"setClipRegion(QRegion region, Qt::ClipOperation operation) --> void"+char(34)+","+char(34)+"setCompositionMode(QPainter::CompositionMode mode) --> void"+char(34)+","+char(34)+"setFont(QFont font) --> void"+char(34)+","+char(34)+"setLayoutDirection(Qt::LayoutDirection direction) --> void"+char(34)+","+char(34)+"setOpacity(qreal opacity) --> void"+char(34)+","+char(34)+"setPen(QPen pen) --> void"+char(34)+","+char(34)+"setRenderHint(QPainter::RenderHint hint, bool on) --> void"+char(34)+","+char(34)+"setTransform(QTransform transform, bool combine) --> void"+char(34)+","+char(34)+"setViewport(int x, int y, int width, int height) --> void"+char(34)+","+char(34)+"setViewTransformEnabled(bool enable) --> void"+char(34)+","+char(34)+"setWindow(int x, int y, int width, int height) --> void"+char(34)+","+char(34)+"setWorldMatrixEnabled(bool enable) --> void"+char(34)+","+char(34)+"setWorldTransform( QTransform matrix, bool combine) --> void"+char(34)+","+char(34)+"shear(double sh, double sv) --> void"+char(34)+","+char(34)+"strokePath(QPainterPath path, QPen pen) --> void"+char(34)+","+char(34)+"testRenderHint(QPainter::RenderHint hint) --> bool"+char(34)+","+char(34)+"transform(void) --> QTransform"+char(34)+","+char(34)+"translate(double dx, double dy) --> void"+char(34)+","+char(34)+"viewport(void) --> QRect"+char(34)+","+char(34)+"viewTransformEnabled(void) --> bool"+char(34)+","+char(34)+"window(void) --> QRect"+char(34)+","+char(34)+"worldMatrixEnabled(void) --> bool"+char(34)+","+char(34)+"worldTransform(void) --> QTransform"+char(34)+"]"
+				"/*"
 			]
 		]
 	],
 	[
 		14,
+		1,
+		[
+			[
+				"name",
+				"T_CT_QPAINTERCLASS_IP_VALUE2LIST = ["
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#T_CT_QPAINTERCLASS_IP_VALUE2LIST = [
+"
+			],
+			[
+				"interactionid",
+				14
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"T_CT_QPAINTERCLASS_IP_VALUE2LIST = ["
+			]
+		]
+	],
+	[
+		15,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"background(void) --> QBrush"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"background(void) --> QBrush"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				15
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"background(void) --> QBrush"+char(34)+","
+			]
+		]
+	],
+	[
+		16,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"backgroundMode(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"backgroundMode(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				16
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"backgroundMode(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		17,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"begin(QPaintDevice *device) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"begin(QPaintDevice *device) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				17
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"begin(QPaintDevice *device) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		18,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"beginNativePainting(void) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"beginNativePainting(void) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				18
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"beginNativePainting(void) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		19,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"boundingRect(int x, int y, int w, int h, int flags, QString text) --> QRect"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"boundingRect(int x, int y, int w, int h, int flags, QString text) --> QRect"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				19
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"boundingRect(int x, int y, int w, int h, int flags, QString text) --> QRect"+char(34)+","
+			]
+		]
+	],
+	[
+		20,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"brush(void) --> QBrush"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"brush(void) --> QBrush"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				20
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"brush(void) --> QBrush"+char(34)+","
+			]
+		]
+	],
+	[
+		21,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"brushOrigin(void) --> QPoint"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"brushOrigin(void) --> QPoint"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				21
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"brushOrigin(void) --> QPoint"+char(34)+","
+			]
+		]
+	],
+	[
+		22,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"clipBoundingRect(void) --> QRectF"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"clipBoundingRect(void) --> QRectF"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				22
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"clipBoundingRect(void) --> QRectF"+char(34)+","
+			]
+		]
+	],
+	[
+		23,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"clipPath(void) --> QPainterPath"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"clipPath(void) --> QPainterPath"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				23
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"clipPath(void) --> QPainterPath"+char(34)+","
+			]
+		]
+	],
+	[
+		24,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"clipRegion(void) --> QRegion"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"clipRegion(void) --> QRegion"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				24
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"clipRegion(void) --> QRegion"+char(34)+","
+			]
+		]
+	],
+	[
+		25,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"combinedTransform(void) --> QTransform"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"combinedTransform(void) --> QTransform"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				25
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"combinedTransform(void) --> QTransform"+char(34)+","
+			]
+		]
+	],
+	[
+		26,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"compositionMode(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"compositionMode(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				26
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"compositionMode(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		27,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"delete(void) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"delete(void) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				27
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"delete(void) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		28,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"device(void) --> QPaintDevice"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"device(void) --> QPaintDevice"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				28
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"device(void) --> QPaintDevice"+char(34)+","
+			]
+		]
+	],
+	[
+		29,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"deviceTransform(void) --> QTransform"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"deviceTransform(void) --> QTransform"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				29
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"deviceTransform(void) --> QTransform"+char(34)+","
+			]
+		]
+	],
+	[
+		30,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"drawArc(int x, int y, int width, int height, int startAngle, int spanAngle) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"drawArc(int x, int y, int width, int height, int startAngle, int spanAngle) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				30
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"drawArc(int x, int y, int width, int height, int startAngle, int spanAngle) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		31,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"drawChord(int x, int y, int width, int height, int startAngle, int spanAngle) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"drawChord(int x, int y, int width, int height, int startAngle, int spanAngle) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				31
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"drawChord(int x, int y, int width, int height, int startAngle, int spanAngle) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		32,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"drawConvexPolygon(List *pPoints) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"drawConvexPolygon(List *pPoints) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				32
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"drawConvexPolygon(List *pPoints) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		33,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"drawEllipse(int x, int y, int width, int height) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"drawEllipse(int x, int y, int width, int height) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				33
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"drawEllipse(int x, int y, int width, int height) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		34,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"drawGlyphRun(QPointF position, QGlyphRun glyphs) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"drawGlyphRun(QPointF position, QGlyphRun glyphs) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				34
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"drawGlyphRun(QPointF position, QGlyphRun glyphs) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		35,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"drawImage(int x, int y, QImage image) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"drawImage(int x, int y, QImage image) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				35
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"drawImage(int x, int y, QImage image) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		36,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"drawLine(int x1, int y1, int x2, int y2) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"drawLine(int x1, int y1, int x2, int y2) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				36
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"drawLine(int x1, int y1, int x2, int y2) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		37,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"drawLines(QLine *lines, int lineCount) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"drawLines(QLine *lines, int lineCount) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				37
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"drawLines(QLine *lines, int lineCount) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		38,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"drawPath(QPainterPath path) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"drawPath(QPainterPath path) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				38
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"drawPath(QPainterPath path) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		39,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"drawPicture(int x, int y, QPicture picture) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"drawPicture(int x, int y, QPicture picture) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				39
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"drawPicture(int x, int y, QPicture picture) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		40,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"drawPie(int x, int y, int width, int height, int startAngle, int spanAngle) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"drawPie(int x, int y, int width, int height, int startAngle, int spanAngle) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				40
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"drawPie(int x, int y, int width, int height, int startAngle, int spanAngle) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		41,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"drawPixmap(int x, int y, QPixmap) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"drawPixmap(int x, int y, QPixmap) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				41
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"drawPixmap(int x, int y, QPixmap) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		42,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"drawPoint(int x, int y) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"drawPoint(int x, int y) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				42
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"drawPoint(int x, int y) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		43,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"drawPoints(List *pPoints) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"drawPoints(List *pPoints) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				43
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"drawPoints(List *pPoints) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		44,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"drawPolygon(List *pPoints, Qt::FillRule fillRule) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"drawPolygon(List *pPoints, Qt::FillRule fillRule) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				44
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"drawPolygon(List *pPoints, Qt::FillRule fillRule) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		45,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"drawPolyline(List *pPoints) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"drawPolyline(List *pPoints) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				45
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"drawPolyline(List *pPoints) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		46,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"drawRect(int x, int y, int width, int height) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"drawRect(int x, int y, int width, int height) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				46
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"drawRect(int x, int y, int width, int height) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		47,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"drawRects(QRectF *rectangles, int rectCount) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"drawRects(QRectF *rectangles, int rectCount) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				47
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"drawRects(QRectF *rectangles, int rectCount) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		48,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"drawRoundedRect(int x, int y, int w, int h, qreal xRadius, qreal yRadius, Qt::SizeMode mode) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"drawRoundedRect(int x, int y, int w, int h, qreal xRadius, qreal yRadius, Qt::SizeMode mode) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				48
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"drawRoundedRect(int x, int y, int w, int h, qreal xRadius, qreal yRadius, Qt::SizeMode mode) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		49,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"drawStaticText(int left, int top, QStaticText staticText) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"drawStaticText(int left, int top, QStaticText staticText) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				49
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"drawStaticText(int left, int top, QStaticText staticText) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		50,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"drawText(int x, int y, QString text) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"drawText(int x, int y, QString text) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				50
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"drawText(int x, int y, QString text) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		51,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"drawTiledPixmap(int x, int y, int width, int height, QPixmap pixmap, int sx, int sy) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"drawTiledPixmap(int x, int y, int width, int height, QPixmap pixmap, int sx, int sy) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				51
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"drawTiledPixmap(int x, int y, int width, int height, QPixmap pixmap, int sx, int sy) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		52,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"endNativePainting(void) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"endNativePainting(void) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				52
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"endNativePainting(void) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		53,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"endpaint(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"endpaint(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				53
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"endpaint(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		54,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"eraseRect(int x, int y, int width, int height) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"eraseRect(int x, int y, int width, int height) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				54
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"eraseRect(int x, int y, int width, int height) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		55,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"fillPath(QPainterPath path, QBrush brush) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"fillPath(QPainterPath path, QBrush brush) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				55
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"fillPath(QPainterPath path, QBrush brush) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		56,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"fillRect(int x, int y, int width, int height, QBrush) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"fillRect(int x, int y, int width, int height, QBrush) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				56
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"fillRect(int x, int y, int width, int height, QBrush) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		57,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"font(void) --> QFont"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"font(void) --> QFont"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				57
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"font(void) --> QFont"+char(34)+","
+			]
+		]
+	],
+	[
+		58,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"fontInfo(void) --> QFontInfo"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"fontInfo(void) --> QFontInfo"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				58
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"fontInfo(void) --> QFontInfo"+char(34)+","
+			]
+		]
+	],
+	[
+		59,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"hasClipping(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"hasClipping(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				59
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"hasClipping(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		60,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"init(parent) --> object"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"init(parent) --> object"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				60
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"init(parent) --> object"+char(34)+","
+			]
+		]
+	],
+	[
+		61,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"initFrom(QWidget *widget) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"initFrom(QWidget *widget) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				61
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"initFrom(QWidget *widget) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		62,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"isActive(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"isActive(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				62
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"isActive(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		63,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"layoutDirection(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"layoutDirection(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				63
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"layoutDirection(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		64,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"objectpointer(void) --> pointer"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"objectpointer(void) --> pointer"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				64
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"objectpointer(void) --> pointer"+char(34)+","
+			]
+		]
+	],
+	[
+		65,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"opacity(void) --> double"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"opacity(void) --> double"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				65
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"opacity(void) --> double"+char(34)+","
+			]
+		]
+	],
+	[
+		66,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"paintEngine(void) --> QPaintEngine"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"paintEngine(void) --> QPaintEngine"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				66
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"paintEngine(void) --> QPaintEngine"+char(34)+","
+			]
+		]
+	],
+	[
+		67,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"pen(void) --> QPen"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"pen(void) --> QPen"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				67
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"pen(void) --> QPen"+char(34)+","
+			]
+		]
+	],
+	[
+		68,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"renderHints(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"renderHints(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				68
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"renderHints(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		69,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"resetTransform(void) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"resetTransform(void) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				69
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"resetTransform(void) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		70,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"restore(void) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"restore(void) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				70
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"restore(void) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		71,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"rotate(qreal angle) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"rotate(qreal angle) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				71
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"rotate(qreal angle) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		72,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"save(void) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"save(void) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				72
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"save(void) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		73,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"scale(double sx, double sy) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"scale(double sx, double sy) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				73
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"scale(double sx, double sy) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		74,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setBackground(QBrush brush) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setBackground(QBrush brush) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				74
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setBackground(QBrush brush) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		75,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setBackgroundMode(Qt::BGMode mode) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setBackgroundMode(Qt::BGMode mode) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				75
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setBackgroundMode(Qt::BGMode mode) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		76,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setBrush(QBrush brush) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setBrush(QBrush brush) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				76
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setBrush(QBrush brush) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		77,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setBrushOrigin(int x, int y) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setBrushOrigin(int x, int y) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				77
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setBrushOrigin(int x, int y) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		78,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setClipPath(QPainterPath path, Qt::ClipOperation operation) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setClipPath(QPainterPath path, Qt::ClipOperation operation) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				78
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setClipPath(QPainterPath path, Qt::ClipOperation operation) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		79,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setClipping(bool enable) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setClipping(bool enable) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				79
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setClipping(bool enable) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		80,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setClipRect(int x, int y, int width, int height, Qt::ClipOperation operation) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setClipRect(int x, int y, int width, int height, Qt::ClipOperation operation) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				80
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setClipRect(int x, int y, int width, int height, Qt::ClipOperation operation) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		81,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setClipRegion(QRegion region, Qt::ClipOperation operation) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setClipRegion(QRegion region, Qt::ClipOperation operation) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				81
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setClipRegion(QRegion region, Qt::ClipOperation operation) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		82,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setCompositionMode(QPainter::CompositionMode mode) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setCompositionMode(QPainter::CompositionMode mode) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				82
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setCompositionMode(QPainter::CompositionMode mode) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		83,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setFont(QFont font) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setFont(QFont font) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				83
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setFont(QFont font) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		84,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setLayoutDirection(Qt::LayoutDirection direction) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setLayoutDirection(Qt::LayoutDirection direction) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				84
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setLayoutDirection(Qt::LayoutDirection direction) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		85,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setOpacity(qreal opacity) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setOpacity(qreal opacity) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				85
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setOpacity(qreal opacity) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		86,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setPen(QPen pen) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setPen(QPen pen) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				86
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setPen(QPen pen) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		87,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setRenderHint(QPainter::RenderHint hint, bool on) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setRenderHint(QPainter::RenderHint hint, bool on) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				87
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setRenderHint(QPainter::RenderHint hint, bool on) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		88,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setTransform(QTransform transform, bool combine) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setTransform(QTransform transform, bool combine) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				88
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setTransform(QTransform transform, bool combine) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		89,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setViewport(int x, int y, int width, int height) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setViewport(int x, int y, int width, int height) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				89
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setViewport(int x, int y, int width, int height) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		90,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setViewTransformEnabled(bool enable) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setViewTransformEnabled(bool enable) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				90
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setViewTransformEnabled(bool enable) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		91,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setWindow(int x, int y, int width, int height) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setWindow(int x, int y, int width, int height) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				91
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setWindow(int x, int y, int width, int height) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		92,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setWorldMatrixEnabled(bool enable) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setWorldMatrixEnabled(bool enable) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				92
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setWorldMatrixEnabled(bool enable) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		93,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setWorldTransform( QTransform matrix, bool combine) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setWorldTransform( QTransform matrix, bool combine) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				93
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setWorldTransform( QTransform matrix, bool combine) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		94,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"shear(double sh, double sv) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"shear(double sh, double sv) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				94
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"shear(double sh, double sv) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		95,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"strokePath(QPainterPath path, QPen pen) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"strokePath(QPainterPath path, QPen pen) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				95
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"strokePath(QPainterPath path, QPen pen) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		96,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"testRenderHint(QPainter::RenderHint hint) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"testRenderHint(QPainter::RenderHint hint) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				96
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"testRenderHint(QPainter::RenderHint hint) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		97,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"transform(void) --> QTransform"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"transform(void) --> QTransform"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				97
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"transform(void) --> QTransform"+char(34)+","
+			]
+		]
+	],
+	[
+		98,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"translate(double dx, double dy) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"translate(double dx, double dy) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				98
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"translate(double dx, double dy) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		99,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"viewport(void) --> QRect"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"viewport(void) --> QRect"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				99
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"viewport(void) --> QRect"+char(34)+","
+			]
+		]
+	],
+	[
+		100,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"viewTransformEnabled(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"viewTransformEnabled(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				100
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"viewTransformEnabled(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		101,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"window(void) --> QRect"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"window(void) --> QRect"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				101
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"window(void) --> QRect"+char(34)+","
+			]
+		]
+	],
+	[
+		102,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"worldMatrixEnabled(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"worldMatrixEnabled(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				102
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"worldMatrixEnabled(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		103,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"worldTransform(void) --> QTransform"+char(34)+""
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"worldTransform(void) --> QTransform"+char(34)+"
+"
+			],
+			[
+				"interactionid",
+				103
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"worldTransform(void) --> QTransform"+char(34)+""
+			]
+		]
+	],
+	[
+		104,
+		1,
+		[
+			[
+				"name",
+				"]"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#]
+"
+			],
+			[
+				"interactionid",
+				104
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"]"
+			]
+		]
+	],
+	[
+		105,
+		1,
+		[
+			[
+				"name",
+				"*/"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#*/
+"
+			],
+			[
+				"interactionid",
+				105
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"*/"
+			]
+		]
+	],
+	[
+		106,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QPAINTERCLASS_IP_VALUE2LIST</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;خلفية(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;فرشاة&quot;,&quot;وضعية_الخلفية(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;عدد_صحيح&quot;,&quot;بدء(&nbsp;جهاز_رسم*&nbsp;)&nbsp;--&gt;&nbsp;منطقي&quot;,&quot;بدء_الرسم_الأصلي(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;مستطيل_الإحاطة(&nbsp;عدد_صحيح&nbsp;س&nbsp;,&nbsp;عدد_صحيح&nbsp;ص&nbsp;,&nbsp;عدد_صحيح&nbsp;عرض&nbsp;,&nbsp;عدد_صحيح&nbsp;ارتفاع&nbsp;,&nbsp;أعلام,&nbsp;سلسلة_نصية&nbsp;)&nbsp;--&gt;&nbsp;مستطيل&quot;,&quot;فرشاة(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;فرشاة&quot;,&quot;أصل_الفرشاة(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;نقطة&quot;,&quot;مستطيل_الإحاطة_المقطوع(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;مستطيل_عائم&quot;,&quot;مسار_القص(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;مسار_الرسام&quot;,&quot;منطقة_القص(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;منطقة&quot;,&quot;تحويل_مُدمج(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;تحويل&quot;,&quot;وضع_التكوين(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;عدد_صحيح&quot;,&quot;حذف(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;جهاز(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;جهاز_رسم&quot;,&quot;تحويل_الجهاز(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;تحويل&quot;,&quot;رسم_قوس(&nbsp;عدد_صحيح&nbsp;س&nbsp;,&nbsp;عدد_صحيح&nbsp;ص&nbsp;,&nbsp;عدد_صحيح&nbsp;عرض&nbsp;,&nbsp;عدد_صحيح&nbsp;ارتفاع&nbsp;,&nbsp;زاوية_البداية,&nbsp;زاوية_المسافة&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;رسم_وتر(&nbsp;عدد_صحيح&nbsp;س&nbsp;,&nbsp;عدد_صحيح&nbsp;ص&nbsp;,&nbsp;عدد_صحيح&nbsp;عرض&nbsp;,&nbsp;عدد_صحيح&nbsp;ارتفاع&nbsp;,&nbsp;زاوية_البداية,&nbsp;زاوية_المسافة&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;رسم_مضلع_محدب(&nbsp;قائمة*&nbsp;نقاط&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;رسم_بيضاوي(&nbsp;عدد_صحيح&nbsp;س&nbsp;,&nbsp;عدد_صحيح&nbsp;ص&nbsp;,&nbsp;عدد_صحيح&nbsp;عرض&nbsp;,&nbsp;عدد_صحيح&nbsp;ارتفاع&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;رسم_تشغيل_رمز_الحروف(&nbsp;نقطة_عائمة&nbsp;موقع,&nbsp;تشغيل_رمز&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;رسم_صورة(&nbsp;عدد_صحيح&nbsp;س&nbsp;,&nbsp;عدد_صحيح&nbsp;ص&nbsp;,&nbsp;صورة_عابرة&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;رسم_خط(&nbsp;عدد_صحيح&nbsp;س١&nbsp;,&nbsp;عدد_صحيح&nbsp;ص١&nbsp;,&nbsp;عدد_صحيح&nbsp;س٢&nbsp;,&nbsp;عدد_صحيح&nbsp;ص٢&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;رسم_الخطوط(&nbsp;خطوط*&nbsp;,&nbsp;عدد_الخطوط&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;رسم_المسار(&nbsp;مسار_الرسام&nbsp;مسار&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;رسم_الصورة(&nbsp;عدد_صحيح&nbsp;س&nbsp;,&nbsp;عدد_صحيح&nbsp;ص&nbsp;,&nbsp;صورة_رسم&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;رسم_فطيرة(&nbsp;عدد_صحيح&nbsp;س&nbsp;,&nbsp;عدد_صحيح&nbsp;ص&nbsp;,&nbsp;عدد_صحيح&nbsp;عرض&nbsp;,&nbsp;عدد_صحيح&nbsp;ارتفاع&nbsp;,&nbsp;زاوية_البداية,&nbsp;زاوية_المسافة&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;رسم_بكسل_التكوين(&nbsp;عدد_صحيح&nbsp;س&nbsp;,&nbsp;عدد_صحيح&nbsp;ص&nbsp;,&nbsp;بكسل_تكوين&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;رسم_نقطة(&nbsp;عدد_صحيح&nbsp;س&nbsp;,&nbsp;عدد_صحيح&nbsp;ص&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;رسم_النقاط(&nbsp;قائمة*&nbsp;نقاط&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;رسم_المضلع(&nbsp;قائمة*&nbsp;نقاط&nbsp;,&nbsp;قاعدة_الملء&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;رسم_الخط_المتعدد(&nbsp;قائمة*&nbsp;نقاط&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;رسم_المستطيل(&nbsp;عدد_صحيح&nbsp;س&nbsp;,&nbsp;عدد_صحيح&nbsp;ص&nbsp;,&nbsp;عدد_صحيح&nbsp;عرض&nbsp;,&nbsp;عدد_صحيح&nbsp;ارتفاع&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;رسم_المستطيلات(&nbsp;مستطيلات_عائمة*&nbsp;,&nbsp;عدد_المستطيلات&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;رسم_مستطيل_مدور(&nbsp;عدد_صحيح&nbsp;س&nbsp;,&nbsp;عدد_صحيح&nbsp;ص&nbsp;,&nbsp;عدد_صحيح&nbsp;عرض&nbsp;,&nbsp;عدد_صحيح&nbsp;ارتفاع&nbsp;,&nbsp;كسر_عشري&nbsp;نصف_قطر_س&nbsp;,&nbsp;كسر_عشري&nbsp;نصف_قطر_ص&nbsp;,&nbsp;وضعية_الحجم&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;رسم_النص_الثابت(&nbsp;يسار,&nbsp;أعلى,&nbsp;نص_ثابت&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;رسم_النص(&nbsp;عدد_صحيح&nbsp;س&nbsp;,&nbsp;عدد_صحيح&nbsp;ص&nbsp;,&nbsp;سلسلة_نصية&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;رسم_بكسل_التكوين_المتكرر(&nbsp;عدد_صحيح&nbsp;س&nbsp;,&nbsp;عدد_صحيح&nbsp;ص&nbsp;,&nbsp;عدد_صحيح&nbsp;عرض&nbsp;,&nbsp;عدد_صحيح&nbsp;ارتفاع&nbsp;,&nbsp;بكسل_تكوين&nbsp;,&nbsp;عدد_صحيح&nbsp;س_بداية,&nbsp;عدد_صحيح&nbsp;ص_بداية&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;إنهاء_الرسم_الأصلي(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;إنهاء_الرسم(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;منطقي&quot;,&quot;مسح_المستطيل(&nbsp;عدد_صحيح&nbsp;س&nbsp;,&nbsp;عدد_صحيح&nbsp;ص&nbsp;,&nbsp;عدد_صحيح&nbsp;عرض&nbsp;,&nbsp;عدد_صحيح&nbsp;ارتفاع&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;ملء_المسار(&nbsp;مسار_الرسام&nbsp;مسار,&nbsp;فرشاة&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;ملء_المستطيل(&nbsp;عدد_صحيح&nbsp;س&nbsp;,&nbsp;عدد_صحيح&nbsp;ص&nbsp;,&nbsp;عدد_صحيح&nbsp;عرض&nbsp;,&nbsp;عدد_صحيح&nbsp;ارتفاع&nbsp;,&nbsp;فرشاة&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;الخط(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;خط&quot;,&quot;معلومات_الخط(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;معلومات_الخط&quot;,&quot;هل_يوجد_قص(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;منطقي&quot;,&quot;تهيئة(&nbsp;الأب&nbsp;)&nbsp;--&gt;&nbsp;كائن&quot;,&quot;تهيئة_من(&nbsp;عنصر_واجهة_المستخدم*&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;هل_نشط(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;منطقي&quot;,&quot;اتجاه_التخطيط(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;عدد_صحيح&quot;,&quot;مؤشر_كائن(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;مؤشر&quot;,&quot;التعتيم(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;مزدوج&quot;,&quot;محرك_الرسم(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;محرك_الرسم&quot;,&quot;قلم(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;قلم&quot;,&quot;تلميحات_الرسم(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;عدد_صحيح&quot;,&quot;إعادة_تعيين_التحويل(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;استعادة(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تدوير(&nbsp;زاوية_عشرية&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;حفظ(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;مقياس(&nbsp;مزدوج&nbsp;س&nbsp;,&nbsp;مزدوج&nbsp;ص&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_الخلفية(&nbsp;فرشاة&nbsp;فرشاة&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_وضعية_الخلفية(&nbsp;وضعية_الخلفية&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_الفرشاة(&nbsp;فرشاة&nbsp;فرشاة&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_أصل_الفرشاة(&nbsp;عدد_صحيح&nbsp;س&nbsp;,&nbsp;عدد_صحيح&nbsp;ص&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_مسار_القص(&nbsp;مسار_الرسام&nbsp;مسار,&nbsp;عملية_القص&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_القص(&nbsp;منطقي&nbsp;تمكين&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_مستطيل_القص(&nbsp;عدد_صحيح&nbsp;س&nbsp;,&nbsp;عدد_صحيح&nbsp;ص&nbsp;,&nbsp;عدد_صحيح&nbsp;عرض&nbsp;,&nbsp;عدد_صحيح&nbsp;ارتفاع&nbsp;,&nbsp;عملية_القص&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_منطقة_القص(&nbsp;منطقة&nbsp;منطقة&nbsp;,&nbsp;عملية_القص&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_وضع_التكوين(&nbsp;وضعية_التكوين&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_الخط(&nbsp;خط&nbsp;خط&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_اتجاه_التخطيط(&nbsp;اتجاه_التخطيط&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_التعتيم(&nbsp;كسر_عشري&nbsp;التعتيم&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_القلم(&nbsp;قلم&nbsp;قلم&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_تلميح_الرسم(&nbsp;تلميح_الرسم&nbsp;تلميح,&nbsp;منطقي&nbsp;تشغيل&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_التحويل(&nbsp;تحويل&nbsp;تحويل,&nbsp;منطقي&nbsp;دمج&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_عرض_المنفذ(&nbsp;عدد_صحيح&nbsp;س&nbsp;,&nbsp;عدد_صحيح&nbsp;ص&nbsp;,&nbsp;عدد_صحيح&nbsp;عرض&nbsp;,&nbsp;عدد_صحيح&nbsp;ارتفاع&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_التحويل_المرئي_المفعل(&nbsp;منطقي&nbsp;تمكين&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_النافذة(&nbsp;عدد_صحيح&nbsp;س&nbsp;,&nbsp;عدد_صحيح&nbsp;ص&nbsp;,&nbsp;عدد_صحيح&nbsp;عرض&nbsp;,&nbsp;عدد_صحيح&nbsp;ارتفاع&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_التحويل_العالمي_المفعل(&nbsp;منطقي&nbsp;تمكين&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_التحويل_العالمي(&nbsp;تحويل&nbsp;مصفوفة,&nbsp;منطقي&nbsp;دمج&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;قص(&nbsp;مزدوج&nbsp;ش&nbsp;,&nbsp;مزدوج&nbsp;ص&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;مسار_الحد(&nbsp;مسار_الرسام&nbsp;مسار,&nbsp;قلم&nbsp;قلم&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;اختبار_تلميح_الرسم(&nbsp;تلميح_الرسم&nbsp;تلميح&nbsp;)&nbsp;--&gt;&nbsp;منطقي&quot;,&quot;التحويل(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;تحويل&quot;,&quot;ترجمة(&nbsp;مزدوج&nbsp;س&nbsp;,&nbsp;مزدوج&nbsp;ص&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;عرض_المنفذ(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;مستطيل&quot;,&quot;التحويل_المرئي_المفعل(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;منطقي&quot;,&quot;نافذة(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;مستطيل&quot;,&quot;التحويل_العالمي_المفعل(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;منطقي&quot;,&quot;التحويل_العالمي(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;تحويل&quot;]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_CT_QPAINTERCLASS_IP_VALUE2LIST = ["+char(34)+"خلفية( لا شيء ) --> فرشاة"+char(34)+","+char(34)+"وضعية_الخلفية( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"بدء( جهاز_رسم* ) --> منطقي"+char(34)+","+char(34)+"بدء_الرسم_الأصلي( لا شيء ) --> لا شيء"+char(34)+","+char(34)+"مستطيل_الإحاطة( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع , أعلام, سلسلة_نصية ) --> مستطيل"+char(34)+","+char(34)+"فرشاة( لا شيء ) --> فرشاة"+char(34)+","+char(34)+"أصل_الفرشاة( لا شيء ) --> نقطة"+char(34)+","+char(34)+"مستطيل_الإحاطة_المقطوع( لا شيء ) --> مستطيل_عائم"+char(34)+","+char(34)+"مسار_القص( لا شيء ) --> مسار_الرسام"+char(34)+","+char(34)+"منطقة_القص( لا شيء ) --> منطقة"+char(34)+","+char(34)+"تحويل_مُدمج( لا شيء ) --> تحويل"+char(34)+","+char(34)+"وضع_التكوين( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"حذف( لا شيء ) --> لا شيء"+char(34)+","+char(34)+"جهاز( لا شيء ) --> جهاز_رسم"+char(34)+","+char(34)+"تحويل_الجهاز( لا شيء ) --> تحويل"+char(34)+","+char(34)+"رسم_قوس( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع , زاوية_البداية, زاوية_المسافة ) --> لا شيء"+char(34)+","+char(34)+"رسم_وتر( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع , زاوية_البداية, زاوية_المسافة ) --> لا شيء"+char(34)+","+char(34)+"رسم_مضلع_محدب( قائمة* نقاط ) --> لا شيء"+char(34)+","+char(34)+"رسم_بيضاوي( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع ) --> لا شيء"+char(34)+","+char(34)+"رسم_تشغيل_رمز_الحروف( نقطة_عائمة موقع, تشغيل_رمز ) --> لا شيء"+char(34)+","+char(34)+"رسم_صورة( عدد_صحيح س , عدد_صحيح ص , صورة_عابرة ) --> لا شيء"+char(34)+","+char(34)+"رسم_خط( عدد_صحيح س١ , عدد_صحيح ص١ , عدد_صحيح س٢ , عدد_صحيح ص٢ ) --> لا شيء"+char(34)+","+char(34)+"رسم_الخطوط( خطوط* , عدد_الخطوط ) --> لا شيء"+char(34)+","+char(34)+"رسم_المسار( مسار_الرسام مسار ) --> لا شيء"+char(34)+","+char(34)+"رسم_الصورة( عدد_صحيح س , عدد_صحيح ص , صورة_رسم ) --> لا شيء"+char(34)+","+char(34)+"رسم_فطيرة( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع , زاوية_البداية, زاوية_المسافة ) --> لا شيء"+char(34)+","+char(34)+"رسم_بكسل_التكوين( عدد_صحيح س , عدد_صحيح ص , بكسل_تكوين ) --> لا شيء"+char(34)+","+char(34)+"رسم_نقطة( عدد_صحيح س , عدد_صحيح ص ) --> لا شيء"+char(34)+","+char(34)+"رسم_النقاط( قائمة* نقاط ) --> لا شيء"+char(34)+","+char(34)+"رسم_المضلع( قائمة* نقاط , قاعدة_الملء ) --> لا شيء"+char(34)+","+char(34)+"رسم_الخط_المتعدد( قائمة* نقاط ) --> لا شيء"+char(34)+","+char(34)+"رسم_المستطيل( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع ) --> لا شيء"+char(34)+","+char(34)+"رسم_المستطيلات( مستطيلات_عائمة* , عدد_المستطيلات ) --> لا شيء"+char(34)+","+char(34)+"رسم_مستطيل_مدور( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع , كسر_عشري نصف_قطر_س , كسر_عشري نصف_قطر_ص , وضعية_الحجم ) --> لا شيء"+char(34)+","+char(34)+"رسم_النص_الثابت( يسار, أعلى, نص_ثابت ) --> لا شيء"+char(34)+","+char(34)+"رسم_النص( عدد_صحيح س , عدد_صحيح ص , سلسلة_نصية ) --> لا شيء"+char(34)+","+char(34)+"رسم_بكسل_التكوين_المتكرر( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع , بكسل_تكوين , عدد_صحيح س_بداية, عدد_صحيح ص_بداية ) --> لا شيء"+char(34)+","+char(34)+"إنهاء_الرسم_الأصلي( لا شيء ) --> لا شيء"+char(34)+","+char(34)+"إنهاء_الرسم( لا شيء ) --> منطقي"+char(34)+","+char(34)+"مسح_المستطيل( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع ) --> لا شيء"+char(34)+","+char(34)+"ملء_المسار( مسار_الرسام مسار, فرشاة ) --> لا شيء"+char(34)+","+char(34)+"ملء_المستطيل( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع , فرشاة ) --> لا شيء"+char(34)+","+char(34)+"الخط( لا شيء ) --> خط"+char(34)+","+char(34)+"معلومات_الخط( لا شيء ) --> معلومات_الخط"+char(34)+","+char(34)+"هل_يوجد_قص( لا شيء ) --> منطقي"+char(34)+","+char(34)+"تهيئة( الأب ) --> كائن"+char(34)+","+char(34)+"تهيئة_من( عنصر_واجهة_المستخدم* ) --> لا شيء"+char(34)+","+char(34)+"هل_نشط( لا شيء ) --> منطقي"+char(34)+","+char(34)+"اتجاه_التخطيط( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"مؤشر_كائن( لا شيء ) --> مؤشر"+char(34)+","+char(34)+"التعتيم( لا شيء ) --> مزدوج"+char(34)+","+char(34)+"محرك_الرسم( لا شيء ) --> محرك_الرسم"+char(34)+","+char(34)+"قلم( لا شيء ) --> قلم"+char(34)+","+char(34)+"تلميحات_الرسم( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"إعادة_تعيين_التحويل( لا شيء ) --> لا شيء"+char(34)+","+char(34)+"استعادة( لا شيء ) --> لا شيء"+char(34)+","+char(34)+"تدوير( زاوية_عشرية ) --> لا شيء"+char(34)+","+char(34)+"حفظ( لا شيء ) --> لا شيء"+char(34)+","+char(34)+"مقياس( مزدوج س , مزدوج ص ) --> لا شيء"+char(34)+","+char(34)+"تعيين_الخلفية( فرشاة فرشاة ) --> لا شيء"+char(34)+","+char(34)+"تعيين_وضعية_الخلفية( وضعية_الخلفية ) --> لا شيء"+char(34)+","+char(34)+"تعيين_الفرشاة( فرشاة فرشاة ) --> لا شيء"+char(34)+","+char(34)+"تعيين_أصل_الفرشاة( عدد_صحيح س , عدد_صحيح ص ) --> لا شيء"+char(34)+","+char(34)+"تعيين_مسار_القص( مسار_الرسام مسار, عملية_القص ) --> لا شيء"+char(34)+","+char(34)+"تعيين_القص( منطقي تمكين ) --> لا شيء"+char(34)+","+char(34)+"تعيين_مستطيل_القص( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع , عملية_القص ) --> لا شيء"+char(34)+","+char(34)+"تعيين_منطقة_القص( منطقة منطقة , عملية_القص ) --> لا شيء"+char(34)+","+char(34)+"تعيين_وضع_التكوين( وضعية_التكوين ) --> لا شيء"+char(34)+","+char(34)+"تعيين_الخط( خط خط ) --> لا شيء"+char(34)+","+char(34)+"تعيين_اتجاه_التخطيط( اتجاه_التخطيط ) --> لا شيء"+char(34)+","+char(34)+"تعيين_التعتيم( كسر_عشري التعتيم ) --> لا شيء"+char(34)+","+char(34)+"تعيين_القلم( قلم قلم ) --> لا شيء"+char(34)+","+char(34)+"تعيين_تلميح_الرسم( تلميح_الرسم تلميح, منطقي تشغيل ) --> لا شيء"+char(34)+","+char(34)+"تعيين_التحويل( تحويل تحويل, منطقي دمج ) --> لا شيء"+char(34)+","+char(34)+"تعيين_عرض_المنفذ( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع ) --> لا شيء"+char(34)+","+char(34)+"تعيين_التحويل_المرئي_المفعل( منطقي تمكين ) --> لا شيء"+char(34)+","+char(34)+"تعيين_النافذة( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع ) --> لا شيء"+char(34)+","+char(34)+"تعيين_التحويل_العالمي_المفعل( منطقي تمكين ) --> لا شيء"+char(34)+","+char(34)+"تعيين_التحويل_العالمي( تحويل مصفوفة, منطقي دمج ) --> لا شيء"+char(34)+","+char(34)+"قص( مزدوج ش , مزدوج ص ) --> لا شيء"+char(34)+","+char(34)+"مسار_الحد( مسار_الرسام مسار, قلم قلم ) --> لا شيء"+char(34)+","+char(34)+"اختبار_تلميح_الرسم( تلميح_الرسم تلميح ) --> منطقي"+char(34)+","+char(34)+"التحويل( لا شيء ) --> تحويل"+char(34)+","+char(34)+"ترجمة( مزدوج س , مزدوج ص ) --> لا شيء"+char(34)+","+char(34)+"عرض_المنفذ( لا شيء ) --> مستطيل"+char(34)+","+char(34)+"التحويل_المرئي_المفعل( لا شيء ) --> منطقي"+char(34)+","+char(34)+"نافذة( لا شيء ) --> مستطيل"+char(34)+","+char(34)+"التحويل_العالمي_المفعل( لا شيء ) --> منطقي"+char(34)+","+char(34)+"التحويل_العالمي( لا شيء ) --> تحويل"+char(34)+"]"
+			],
+			[
+				"interactionid",
+				106
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_CT_QPAINTERCLASS_IP_VALUE2LIST = ["+char(34)+"خلفية( لا شيء ) --> فرشاة"+char(34)+","+char(34)+"وضعية_الخلفية( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"بدء( جهاز_رسم* ) --> منطقي"+char(34)+","+char(34)+"بدء_الرسم_الأصلي( لا شيء ) --> لا شيء"+char(34)+","+char(34)+"مستطيل_الإحاطة( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع , أعلام, سلسلة_نصية ) --> مستطيل"+char(34)+","+char(34)+"فرشاة( لا شيء ) --> فرشاة"+char(34)+","+char(34)+"أصل_الفرشاة( لا شيء ) --> نقطة"+char(34)+","+char(34)+"مستطيل_الإحاطة_المقطوع( لا شيء ) --> مستطيل_عائم"+char(34)+","+char(34)+"مسار_القص( لا شيء ) --> مسار_الرسام"+char(34)+","+char(34)+"منطقة_القص( لا شيء ) --> منطقة"+char(34)+","+char(34)+"تحويل_مُدمج( لا شيء ) --> تحويل"+char(34)+","+char(34)+"وضع_التكوين( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"حذف( لا شيء ) --> لا شيء"+char(34)+","+char(34)+"جهاز( لا شيء ) --> جهاز_رسم"+char(34)+","+char(34)+"تحويل_الجهاز( لا شيء ) --> تحويل"+char(34)+","+char(34)+"رسم_قوس( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع , زاوية_البداية, زاوية_المسافة ) --> لا شيء"+char(34)+","+char(34)+"رسم_وتر( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع , زاوية_البداية, زاوية_المسافة ) --> لا شيء"+char(34)+","+char(34)+"رسم_مضلع_محدب( قائمة* نقاط ) --> لا شيء"+char(34)+","+char(34)+"رسم_بيضاوي( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع ) --> لا شيء"+char(34)+","+char(34)+"رسم_تشغيل_رمز_الحروف( نقطة_عائمة موقع, تشغيل_رمز ) --> لا شيء"+char(34)+","+char(34)+"رسم_صورة( عدد_صحيح س , عدد_صحيح ص , صورة_عابرة ) --> لا شيء"+char(34)+","+char(34)+"رسم_خط( عدد_صحيح س١ , عدد_صحيح ص١ , عدد_صحيح س٢ , عدد_صحيح ص٢ ) --> لا شيء"+char(34)+","+char(34)+"رسم_الخطوط( خطوط* , عدد_الخطوط ) --> لا شيء"+char(34)+","+char(34)+"رسم_المسار( مسار_الرسام مسار ) --> لا شيء"+char(34)+","+char(34)+"رسم_الصورة( عدد_صحيح س , عدد_صحيح ص , صورة_رسم ) --> لا شيء"+char(34)+","+char(34)+"رسم_فطيرة( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع , زاوية_البداية, زاوية_المسافة ) --> لا شيء"+char(34)+","+char(34)+"رسم_بكسل_التكوين( عدد_صحيح س , عدد_صحيح ص , بكسل_تكوين ) --> لا شيء"+char(34)+","+char(34)+"رسم_نقطة( عدد_صحيح س , عدد_صحيح ص ) --> لا شيء"+char(34)+","+char(34)+"رسم_النقاط( قائمة* نقاط ) --> لا شيء"+char(34)+","+char(34)+"رسم_المضلع( قائمة* نقاط , قاعدة_الملء ) --> لا شيء"+char(34)+","+char(34)+"رسم_الخط_المتعدد( قائمة* نقاط ) --> لا شيء"+char(34)+","+char(34)+"رسم_المستطيل( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع ) --> لا شيء"+char(34)+","+char(34)+"رسم_المستطيلات( مستطيلات_عائمة* , عدد_المستطيلات ) --> لا شيء"+char(34)+","+char(34)+"رسم_مستطيل_مدور( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع , كسر_عشري نصف_قطر_س , كسر_عشري نصف_قطر_ص , وضعية_الحجم ) --> لا شيء"+char(34)+","+char(34)+"رسم_النص_الثابت( يسار, أعلى, نص_ثابت ) --> لا شيء"+char(34)+","+char(34)+"رسم_النص( عدد_صحيح س , عدد_صحيح ص , سلسلة_نصية ) --> لا شيء"+char(34)+","+char(34)+"رسم_بكسل_التكوين_المتكرر( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع , بكسل_تكوين , عدد_صحيح س_بداية, عدد_صحيح ص_بداية ) --> لا شيء"+char(34)+","+char(34)+"إنهاء_الرسم_الأصلي( لا شيء ) --> لا شيء"+char(34)+","+char(34)+"إنهاء_الرسم( لا شيء ) --> منطقي"+char(34)+","+char(34)+"مسح_المستطيل( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع ) --> لا شيء"+char(34)+","+char(34)+"ملء_المسار( مسار_الرسام مسار, فرشاة ) --> لا شيء"+char(34)+","+char(34)+"ملء_المستطيل( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع , فرشاة ) --> لا شيء"+char(34)+","+char(34)+"الخط( لا شيء ) --> خط"+char(34)+","+char(34)+"معلومات_الخط( لا شيء ) --> معلومات_الخط"+char(34)+","+char(34)+"هل_يوجد_قص( لا شيء ) --> منطقي"+char(34)+","+char(34)+"تهيئة( الأب ) --> كائن"+char(34)+","+char(34)+"تهيئة_من( عنصر_واجهة_المستخدم* ) --> لا شيء"+char(34)+","+char(34)+"هل_نشط( لا شيء ) --> منطقي"+char(34)+","+char(34)+"اتجاه_التخطيط( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"مؤشر_كائن( لا شيء ) --> مؤشر"+char(34)+","+char(34)+"التعتيم( لا شيء ) --> مزدوج"+char(34)+","+char(34)+"محرك_الرسم( لا شيء ) --> محرك_الرسم"+char(34)+","+char(34)+"قلم( لا شيء ) --> قلم"+char(34)+","+char(34)+"تلميحات_الرسم( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"إعادة_تعيين_التحويل( لا شيء ) --> لا شيء"+char(34)+","+char(34)+"استعادة( لا شيء ) --> لا شيء"+char(34)+","+char(34)+"تدوير( زاوية_عشرية ) --> لا شيء"+char(34)+","+char(34)+"حفظ( لا شيء ) --> لا شيء"+char(34)+","+char(34)+"مقياس( مزدوج س , مزدوج ص ) --> لا شيء"+char(34)+","+char(34)+"تعيين_الخلفية( فرشاة فرشاة ) --> لا شيء"+char(34)+","+char(34)+"تعيين_وضعية_الخلفية( وضعية_الخلفية ) --> لا شيء"+char(34)+","+char(34)+"تعيين_الفرشاة( فرشاة فرشاة ) --> لا شيء"+char(34)+","+char(34)+"تعيين_أصل_الفرشاة( عدد_صحيح س , عدد_صحيح ص ) --> لا شيء"+char(34)+","+char(34)+"تعيين_مسار_القص( مسار_الرسام مسار, عملية_القص ) --> لا شيء"+char(34)+","+char(34)+"تعيين_القص( منطقي تمكين ) --> لا شيء"+char(34)+","+char(34)+"تعيين_مستطيل_القص( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع , عملية_القص ) --> لا شيء"+char(34)+","+char(34)+"تعيين_منطقة_القص( منطقة منطقة , عملية_القص ) --> لا شيء"+char(34)+","+char(34)+"تعيين_وضع_التكوين( وضعية_التكوين ) --> لا شيء"+char(34)+","+char(34)+"تعيين_الخط( خط خط ) --> لا شيء"+char(34)+","+char(34)+"تعيين_اتجاه_التخطيط( اتجاه_التخطيط ) --> لا شيء"+char(34)+","+char(34)+"تعيين_التعتيم( كسر_عشري التعتيم ) --> لا شيء"+char(34)+","+char(34)+"تعيين_القلم( قلم قلم ) --> لا شيء"+char(34)+","+char(34)+"تعيين_تلميح_الرسم( تلميح_الرسم تلميح, منطقي تشغيل ) --> لا شيء"+char(34)+","+char(34)+"تعيين_التحويل( تحويل تحويل, منطقي دمج ) --> لا شيء"+char(34)+","+char(34)+"تعيين_عرض_المنفذ( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع ) --> لا شيء"+char(34)+","+char(34)+"تعيين_التحويل_المرئي_المفعل( منطقي تمكين ) --> لا شيء"+char(34)+","+char(34)+"تعيين_النافذة( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع ) --> لا شيء"+char(34)+","+char(34)+"تعيين_التحويل_العالمي_المفعل( منطقي تمكين ) --> لا شيء"+char(34)+","+char(34)+"تعيين_التحويل_العالمي( تحويل مصفوفة, منطقي دمج ) --> لا شيء"+char(34)+","+char(34)+"قص( مزدوج ش , مزدوج ص ) --> لا شيء"+char(34)+","+char(34)+"مسار_الحد( مسار_الرسام مسار, قلم قلم ) --> لا شيء"+char(34)+","+char(34)+"اختبار_تلميح_الرسم( تلميح_الرسم تلميح ) --> منطقي"+char(34)+","+char(34)+"التحويل( لا شيء ) --> تحويل"+char(34)+","+char(34)+"ترجمة( مزدوج س , مزدوج ص ) --> لا شيء"+char(34)+","+char(34)+"عرض_المنفذ( لا شيء ) --> مستطيل"+char(34)+","+char(34)+"التحويل_المرئي_المفعل( لا شيء ) --> منطقي"+char(34)+","+char(34)+"نافذة( لا شيء ) --> مستطيل"+char(34)+","+char(34)+"التحويل_العالمي_المفعل( لا شيء ) --> منطقي"+char(34)+","+char(34)+"التحويل_العالمي( لا شيء ) --> تحويل"+char(34)+"]"
+			]
+		]
+	],
+	[
+		107,
 		1,
 		[
 			[
@@ -521,7 +4148,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				14
+				107
 			],
 			[
 				"visible",
@@ -542,7 +4169,7 @@ aStepsTable = [
 		]
 	],
 	[
-		15,
+		108,
 		1,
 		[
 			[
@@ -559,7 +4186,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				15
+				108
 			],
 			[
 				"visible",
@@ -586,120 +4213,864 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"07/02/2025",
-		"18:37:45",
+		"20/02/2025",
+		"23:00:55",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:37:45",
+		"20/02/2025",
+		"23:00:55",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:37:45",
+		"20/02/2025",
+		"23:00:55",
 		"value;;_RV_;;**	Project : Programming Without Coding Technology (PWCT) Version 2.0;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:37:45",
+		"20/02/2025",
+		"23:00:55",
 		"value;;_RV_;;**	File Purpose :  qpainterclass Component;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:37:45",
+		"20/02/2025",
+		"23:00:55",
 		"value;;_RV_;;**	Date : 2021.08.09;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:37:45",
+		"20/02/2025",
+		"23:00:55",
 		"value;;_RV_;;**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:37:45",
+		"20/02/2025",
+		"23:00:55",
 		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:37:45",
+		"20/02/2025",
+		"23:00:55",
 		"leftside;;_RV_;;T_CT_QPAINTERCLASS_IP_TITLE;;_RV_;;rightside;;_RV_;;"+char(34)+"مكون فئة ال QPainter"+char(34)+";;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:37:45",
+		"20/02/2025",
+		"23:00:55",
 		"leftside;;_RV_;;T_CT_QPAINTERCLASS_IP_VALUE;;_RV_;;rightside;;_RV_;;"+char(34)+"اسم الكائن :"+char(34)+";;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:37:45",
+		"20/02/2025",
+		"23:00:55",
 		"leftside;;_RV_;;T_CT_QPAINTERCLASS_IP_VALUE2;;_RV_;;rightside;;_RV_;;"+char(34)+"الميثود : "+char(34)+";;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:37:45",
+		"20/02/2025",
+		"23:00:55",
 		"leftside;;_RV_;;T_CT_QPAINTERCLASS_IP_VALUE2FUNC;;_RV_;;rightside;;_RV_;;["+char(34)+"background"+char(34)+","+char(34)+"backgroundmode"+char(34)+","+char(34)+"begin"+char(34)+","+char(34)+"beginnativepainting"+char(34)+","+char(34)+"boundingrect"+char(34)+","+char(34)+"brush"+char(34)+","+char(34)+"brushorigin"+char(34)+","+char(34)+"clipboundingrect"+char(34)+","+char(34)+"clippath"+char(34)+","+char(34)+"clipregion"+char(34)+","+char(34)+"combinedtransform"+char(34)+","+char(34)+"compositionmode"+char(34)+","+char(34)+"delete"+char(34)+","+char(34)+"device"+char(34)+","+char(34)+"devicetransform"+char(34)+","+char(34)+"drawarc"+char(34)+","+char(34)+"drawchord"+char(34)+","+char(34)+"drawconvexpolygon"+char(34)+","+char(34)+"drawellipse"+char(34)+","+char(34)+"drawglyphrun"+char(34)+","+char(34)+"drawimage"+char(34)+","+char(34)+"drawline"+char(34)+","+char(34)+"drawlines"+char(34)+","+char(34)+"drawpath"+char(34)+","+char(34)+"drawpicture"+char(34)+","+char(34)+"drawpie"+char(34)+","+char(34)+"drawpixmap"+char(34)+","+char(34)+"drawpoint"+char(34)+","+char(34)+"drawpoints"+char(34)+","+char(34)+"drawpolygon"+char(34)+","+char(34)+"drawpolyline"+char(34)+","+char(34)+"drawrect"+char(34)+","+char(34)+"drawrects"+char(34)+","+char(34)+"drawroundedrect"+char(34)+","+char(34)+"drawstatictext"+char(34)+","+char(34)+"drawtext"+char(34)+","+char(34)+"drawtiledpixmap"+char(34)+","+char(34)+"endnativepainting"+char(34)+","+char(34)+"endpaint"+char(34)+","+char(34)+"eraserect"+char(34)+","+char(34)+"fillpath"+char(34)+","+char(34)+"fillrect"+char(34)+","+char(34)+"font"+char(34)+","+char(34)+"fontinfo"+char(34)+","+char(34)+"hasclipping"+char(34)+","+char(34)+"init"+char(34)+","+char(34)+"initfrom"+char(34)+","+char(34)+"isactive"+char(34)+","+char(34)+"layoutdirection"+char(34)+","+char(34)+"objectpointer"+char(34)+","+char(34)+"opacity"+char(34)+","+char(34)+"paintengine"+char(34)+","+char(34)+"pen"+char(34)+","+char(34)+"renderhints"+char(34)+","+char(34)+"resettransform"+char(34)+","+char(34)+"restore"+char(34)+","+char(34)+"rotate"+char(34)+","+char(34)+"save"+char(34)+","+char(34)+"scale"+char(34)+","+char(34)+"setbackground"+char(34)+","+char(34)+"setbackgroundmode"+char(34)+","+char(34)+"setbrush"+char(34)+","+char(34)+"setbrushorigin"+char(34)+","+char(34)+"setclippath"+char(34)+","+char(34)+"setclipping"+char(34)+","+char(34)+"setcliprect"+char(34)+","+char(34)+"setclipregion"+char(34)+","+char(34)+"setcompositionmode"+char(34)+","+char(34)+"setfont"+char(34)+","+char(34)+"setlayoutdirection"+char(34)+","+char(34)+"setopacity"+char(34)+","+char(34)+"setpen"+char(34)+","+char(34)+"setrenderhint"+char(34)+","+char(34)+"settransform"+char(34)+","+char(34)+"setviewport"+char(34)+","+char(34)+"setviewtransformenabled"+char(34)+","+char(34)+"setwindow"+char(34)+","+char(34)+"setworldmatrixenabled"+char(34)+","+char(34)+"setworldtransform"+char(34)+","+char(34)+"shear"+char(34)+","+char(34)+"strokepath"+char(34)+","+char(34)+"testrenderhint"+char(34)+","+char(34)+"transform"+char(34)+","+char(34)+"translate"+char(34)+","+char(34)+"viewport"+char(34)+","+char(34)+"viewtransformenabled"+char(34)+","+char(34)+"window"+char(34)+","+char(34)+"worldmatrixenabled"+char(34)+","+char(34)+"worldtransform"+char(34)+"];;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:37:45",
-		"leftside;;_RV_;;T_CT_QPAINTERCLASS_IP_VALUE2STEPFUNC;;_RV_;;rightside;;_RV_;;T_CT_QPAINTERCLASS_IP_VALUE2FUNC;;_RV_;;"
+		"20/02/2025",
+		"23:00:55",
+		"leftside;;_RV_;;T_CT_QPAINTERCLASS_IP_VALUE2STEPFUNC;;_RV_;;rightside;;_RV_;;["+char(34)+"خلفية"+char(34)+","+char(34)+"وضعية_الخلفية"+char(34)+","+char(34)+"بدء"+char(34)+","+char(34)+"بدء_الرسم_الأصلي"+char(34)+","+char(34)+"مستطيل_الإحاطة"+char(34)+","+char(34)+"فرشاة"+char(34)+","+char(34)+"أصل_الفرشاة"+char(34)+","+char(34)+"مستطيل_الإحاطة_المقطوع"+char(34)+","+char(34)+"مسار_القص"+char(34)+","+char(34)+"منطقة_القص"+char(34)+","+char(34)+"تحويل_مُدمج"+char(34)+","+char(34)+"وضع_التكوين"+char(34)+","+char(34)+"حذف"+char(34)+","+char(34)+"جهاز"+char(34)+","+char(34)+"تحويل_الجهاز"+char(34)+","+char(34)+"رسم_قوس"+char(34)+","+char(34)+"رسم_وتر"+char(34)+","+char(34)+"رسم_مضلع_محدب"+char(34)+","+char(34)+"رسم_بيضاوي"+char(34)+","+char(34)+"رسم_تشغيل_رمز_الحروف"+char(34)+","+char(34)+"رسم_صورة"+char(34)+","+char(34)+"رسم_خط"+char(34)+","+char(34)+"رسم_الخطوط"+char(34)+","+char(34)+"رسم_المسار"+char(34)+","+char(34)+"رسم_الصورة"+char(34)+","+char(34)+"رسم_فطيرة"+char(34)+","+char(34)+"رسم_بكسل_التكوين"+char(34)+","+char(34)+"رسم_نقطة"+char(34)+","+char(34)+"رسم_النقاط"+char(34)+","+char(34)+"رسم_المضلع"+char(34)+","+char(34)+"رسم_الخط_المتعدد"+char(34)+","+char(34)+"رسم_المستطيل"+char(34)+","+char(34)+"رسم_المستطيلات"+char(34)+","+char(34)+"رسم_مستطيل_مدور"+char(34)+","+char(34)+"رسم_النص_الثابت"+char(34)+","+char(34)+"رسم_النص"+char(34)+","+char(34)+"رسم_بكسل_التكوين_المتكرر"+char(34)+","+char(34)+"إنهاء_الرسم_الأصلي"+char(34)+","+char(34)+"إنهاء_الرسم"+char(34)+","+char(34)+"مسح_المستطيل"+char(34)+","+char(34)+"ملء_المسار"+char(34)+","+char(34)+"ملء_المستطيل"+char(34)+","+char(34)+"الخط"+char(34)+","+char(34)+"معلومات_الخط"+char(34)+","+char(34)+"هل_يوجد_قص"+char(34)+","+char(34)+"تهيئة"+char(34)+","+char(34)+"تهيئة_من"+char(34)+","+char(34)+"هل_نشط"+char(34)+","+char(34)+"اتجاه_التخطيط"+char(34)+","+char(34)+"مؤشر_كائن"+char(34)+","+char(34)+"التعتيم"+char(34)+","+char(34)+"محرك_الرسم"+char(34)+","+char(34)+"قلم"+char(34)+","+char(34)+"تلميحات_الرسم"+char(34)+","+char(34)+"إعادة_تعيين_التحويل"+char(34)+","+char(34)+"استعادة"+char(34)+","+char(34)+"تدوير"+char(34)+","+char(34)+"حفظ"+char(34)+","+char(34)+"مقياس"+char(34)+","+char(34)+"تعيين_الخلفية"+char(34)+","+char(34)+"تعيين_وضعية_الخلفية"+char(34)+","+char(34)+"تعيين_الفرشاة"+char(34)+","+char(34)+"تعيين_أصل_الفرشاة"+char(34)+","+char(34)+"تعيين_مسار_القص"+char(34)+","+char(34)+"تعيين_القص"+char(34)+","+char(34)+"تعيين_مستطيل_القص"+char(34)+","+char(34)+"تعيين_منطقة_القص"+char(34)+","+char(34)+"تعيين_وضع_التكوين"+char(34)+","+char(34)+"تعيين_الخط"+char(34)+","+char(34)+"تعيين_اتجاه_التخطيط"+char(34)+","+char(34)+"تعيين_التعتيم"+char(34)+","+char(34)+"تعيين_القلم"+char(34)+","+char(34)+"تعيين_تلميح_الرسم"+char(34)+","+char(34)+"تعيين_التحويل"+char(34)+","+char(34)+"تعيين_عرض_المنفذ"+char(34)+","+char(34)+"تعيين_التحويل_المرئي_المفعل"+char(34)+","+char(34)+"تعيين_النافذة"+char(34)+","+char(34)+"تعيين_التحويل_العالمي_المفعل"+char(34)+","+char(34)+"تعيين_التحويل_العالمي"+char(34)+","+char(34)+"قص"+char(34)+","+char(34)+"مسار_الحد"+char(34)+","+char(34)+"اختبار_تلميح_الرسم"+char(34)+","+char(34)+"التحويل"+char(34)+","+char(34)+"ترجمة"+char(34)+","+char(34)+"عرض_المنفذ"+char(34)+","+char(34)+"التحويل_المرئي_المفعل"+char(34)+","+char(34)+"نافذة"+char(34)+","+char(34)+"التحويل_العالمي_المفعل"+char(34)+","+char(34)+"التحويل_العالمي"+char(34)+"];;_RV_;;"
 	],
 	[
 		13,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:37:45",
-		"leftside;;_RV_;;T_CT_QPAINTERCLASS_IP_VALUE2LIST;;_RV_;;rightside;;_RV_;;["+char(34)+"background(void) --> QBrush"+char(34)+","+char(34)+"backgroundMode(void) --> int"+char(34)+","+char(34)+"begin(QPaintDevice *device) --> bool"+char(34)+","+char(34)+"beginNativePainting(void) --> void"+char(34)+","+char(34)+"boundingRect(int x, int y, int w, int h, int flags, QString text) --> QRect"+char(34)+","+char(34)+"brush(void) --> QBrush"+char(34)+","+char(34)+"brushOrigin(void) --> QPoint"+char(34)+","+char(34)+"clipBoundingRect(void) --> QRectF"+char(34)+","+char(34)+"clipPath(void) --> QPainterPath"+char(34)+","+char(34)+"clipRegion(void) --> QRegion"+char(34)+","+char(34)+"combinedTransform(void) --> QTransform"+char(34)+","+char(34)+"compositionMode(void) --> int"+char(34)+","+char(34)+"delete(void) --> void"+char(34)+","+char(34)+"device(void) --> QPaintDevice"+char(34)+","+char(34)+"deviceTransform(void) --> QTransform"+char(34)+","+char(34)+"drawArc(int x, int y, int width, int height, int startAngle, int spanAngle) --> void"+char(34)+","+char(34)+"drawChord(int x, int y, int width, int height, int startAngle, int spanAngle) --> void"+char(34)+","+char(34)+"drawConvexPolygon(List *pPoints) --> void"+char(34)+","+char(34)+"drawEllipse(int x, int y, int width, int height) --> void"+char(34)+","+char(34)+"drawGlyphRun(QPointF position, QGlyphRun glyphs) --> void"+char(34)+","+char(34)+"drawImage(int x, int y, QImage image) --> void"+char(34)+","+char(34)+"drawLine(int x1, int y1, int x2, int y2) --> void"+char(34)+","+char(34)+"drawLines(QLine *lines, int lineCount) --> void"+char(34)+","+char(34)+"drawPath(QPainterPath path) --> void"+char(34)+","+char(34)+"drawPicture(int x, int y, QPicture picture) --> void"+char(34)+","+char(34)+"drawPie(int x, int y, int width, int height, int startAngle, int spanAngle) --> void"+char(34)+","+char(34)+"drawPixmap(int x, int y, QPixmap) --> void"+char(34)+","+char(34)+"drawPoint(int x, int y) --> void"+char(34)+","+char(34)+"drawPoints(List *pPoints) --> void"+char(34)+","+char(34)+"drawPolygon(List *pPoints, Qt::FillRule fillRule) --> void"+char(34)+","+char(34)+"drawPolyline(List *pPoints) --> void"+char(34)+","+char(34)+"drawRect(int x, int y, int width, int height) --> void"+char(34)+","+char(34)+"drawRects(QRectF *rectangles, int rectCount) --> void"+char(34)+","+char(34)+"drawRoundedRect(int x, int y, int w, int h, qreal xRadius, qreal yRadius, Qt::SizeMode mode) --> void"+char(34)+","+char(34)+"drawStaticText(int left, int top, QStaticText staticText) --> void"+char(34)+","+char(34)+"drawText(int x, int y, QString text) --> void"+char(34)+","+char(34)+"drawTiledPixmap(int x, int y, int width, int height, QPixmap pixmap, int sx, int sy) --> void"+char(34)+","+char(34)+"endNativePainting(void) --> void"+char(34)+","+char(34)+"endpaint(void) --> bool"+char(34)+","+char(34)+"eraseRect(int x, int y, int width, int height) --> void"+char(34)+","+char(34)+"fillPath(QPainterPath path, QBrush brush) --> void"+char(34)+","+char(34)+"fillRect(int x, int y, int width, int height, QBrush) --> void"+char(34)+","+char(34)+"font(void) --> QFont"+char(34)+","+char(34)+"fontInfo(void) --> QFontInfo"+char(34)+","+char(34)+"hasClipping(void) --> bool"+char(34)+","+char(34)+"init(parent) --> object"+char(34)+","+char(34)+"initFrom(QWidget *widget) --> void"+char(34)+","+char(34)+"isActive(void) --> bool"+char(34)+","+char(34)+"layoutDirection(void) --> int"+char(34)+","+char(34)+"objectpointer(void) --> pointer"+char(34)+","+char(34)+"opacity(void) --> double"+char(34)+","+char(34)+"paintEngine(void) --> QPaintEngine"+char(34)+","+char(34)+"pen(void) --> QPen"+char(34)+","+char(34)+"renderHints(void) --> int"+char(34)+","+char(34)+"resetTransform(void) --> void"+char(34)+","+char(34)+"restore(void) --> void"+char(34)+","+char(34)+"rotate(qreal angle) --> void"+char(34)+","+char(34)+"save(void) --> void"+char(34)+","+char(34)+"scale(double sx, double sy) --> void"+char(34)+","+char(34)+"setBackground(QBrush brush) --> void"+char(34)+","+char(34)+"setBackgroundMode(Qt::BGMode mode) --> void"+char(34)+","+char(34)+"setBrush(QBrush brush) --> void"+char(34)+","+char(34)+"setBrushOrigin(int x, int y) --> void"+char(34)+","+char(34)+"setClipPath(QPainterPath path, Qt::ClipOperation operation) --> void"+char(34)+","+char(34)+"setClipping(bool enable) --> void"+char(34)+","+char(34)+"setClipRect(int x, int y, int width, int height, Qt::ClipOperation operation) --> void"+char(34)+","+char(34)+"setClipRegion(QRegion region, Qt::ClipOperation operation) --> void"+char(34)+","+char(34)+"setCompositionMode(QPainter::CompositionMode mode) --> void"+char(34)+","+char(34)+"setFont(QFont font) --> void"+char(34)+","+char(34)+"setLayoutDirection(Qt::LayoutDirection direction) --> void"+char(34)+","+char(34)+"setOpacity(qreal opacity) --> void"+char(34)+","+char(34)+"setPen(QPen pen) --> void"+char(34)+","+char(34)+"setRenderHint(QPainter::RenderHint hint, bool on) --> void"+char(34)+","+char(34)+"setTransform(QTransform transform, bool combine) --> void"+char(34)+","+char(34)+"setViewport(int x, int y, int width, int height) --> void"+char(34)+","+char(34)+"setViewTransformEnabled(bool enable) --> void"+char(34)+","+char(34)+"setWindow(int x, int y, int width, int height) --> void"+char(34)+","+char(34)+"setWorldMatrixEnabled(bool enable) --> void"+char(34)+","+char(34)+"setWorldTransform( QTransform matrix, bool combine) --> void"+char(34)+","+char(34)+"shear(double sh, double sv) --> void"+char(34)+","+char(34)+"strokePath(QPainterPath path, QPen pen) --> void"+char(34)+","+char(34)+"testRenderHint(QPainter::RenderHint hint) --> bool"+char(34)+","+char(34)+"transform(void) --> QTransform"+char(34)+","+char(34)+"translate(double dx, double dy) --> void"+char(34)+","+char(34)+"viewport(void) --> QRect"+char(34)+","+char(34)+"viewTransformEnabled(void) --> bool"+char(34)+","+char(34)+"window(void) --> QRect"+char(34)+","+char(34)+"worldMatrixEnabled(void) --> bool"+char(34)+","+char(34)+"worldTransform(void) --> QTransform"+char(34)+"];;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		14,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:37:45",
-		"leftside;;_RV_;;T_CT_QPAINTERCLASS_IP_VALUE3;;_RV_;;rightside;;_RV_;;"+char(34)+"المعطيات :"+char(34)+";;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;T_CT_QPAINTERCLASS_IP_VALUE2LIST = [;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		15,
 		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"background(void) --> QBrush"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		16,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"backgroundMode(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		17,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"begin(QPaintDevice *device) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		18,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"beginNativePainting(void) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		19,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"boundingRect(int x, int y, int w, int h, int flags, QString text) --> QRect"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		20,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"brush(void) --> QBrush"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		21,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"brushOrigin(void) --> QPoint"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		22,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"clipBoundingRect(void) --> QRectF"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		23,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"clipPath(void) --> QPainterPath"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		24,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"clipRegion(void) --> QRegion"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		25,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"combinedTransform(void) --> QTransform"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		26,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"compositionMode(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		27,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"delete(void) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		28,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"device(void) --> QPaintDevice"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		29,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"deviceTransform(void) --> QTransform"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		30,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"drawArc(int x, int y, int width, int height, int startAngle, int spanAngle) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		31,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"drawChord(int x, int y, int width, int height, int startAngle, int spanAngle) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		32,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"drawConvexPolygon(List *pPoints) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		33,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"drawEllipse(int x, int y, int width, int height) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		34,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"drawGlyphRun(QPointF position, QGlyphRun glyphs) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		35,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"drawImage(int x, int y, QImage image) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		36,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"drawLine(int x1, int y1, int x2, int y2) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		37,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"drawLines(QLine *lines, int lineCount) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		38,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"drawPath(QPainterPath path) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		39,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"drawPicture(int x, int y, QPicture picture) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		40,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"drawPie(int x, int y, int width, int height, int startAngle, int spanAngle) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		41,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"drawPixmap(int x, int y, QPixmap) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		42,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"drawPoint(int x, int y) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		43,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"drawPoints(List *pPoints) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		44,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"drawPolygon(List *pPoints, Qt::FillRule fillRule) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		45,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"drawPolyline(List *pPoints) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		46,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"drawRect(int x, int y, int width, int height) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		47,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"drawRects(QRectF *rectangles, int rectCount) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		48,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"drawRoundedRect(int x, int y, int w, int h, qreal xRadius, qreal yRadius, Qt::SizeMode mode) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		49,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"drawStaticText(int left, int top, QStaticText staticText) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		50,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"drawText(int x, int y, QString text) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		51,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"drawTiledPixmap(int x, int y, int width, int height, QPixmap pixmap, int sx, int sy) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		52,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"endNativePainting(void) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		53,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"endpaint(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		54,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"eraseRect(int x, int y, int width, int height) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		55,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"fillPath(QPainterPath path, QBrush brush) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		56,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"fillRect(int x, int y, int width, int height, QBrush) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		57,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"font(void) --> QFont"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		58,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"fontInfo(void) --> QFontInfo"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		59,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"hasClipping(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		60,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"init(parent) --> object"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		61,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"initFrom(QWidget *widget) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		62,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"isActive(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		63,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"layoutDirection(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		64,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"objectpointer(void) --> pointer"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		65,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"opacity(void) --> double"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		66,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"paintEngine(void) --> QPaintEngine"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		67,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"pen(void) --> QPen"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		68,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"renderHints(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		69,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"resetTransform(void) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		70,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"restore(void) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		71,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"rotate(qreal angle) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		72,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"save(void) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		73,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"scale(double sx, double sy) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		74,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"setBackground(QBrush brush) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		75,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"setBackgroundMode(Qt::BGMode mode) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		76,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"setBrush(QBrush brush) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		77,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"setBrushOrigin(int x, int y) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		78,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"setClipPath(QPainterPath path, Qt::ClipOperation operation) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		79,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"setClipping(bool enable) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		80,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"setClipRect(int x, int y, int width, int height, Qt::ClipOperation operation) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		81,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"setClipRegion(QRegion region, Qt::ClipOperation operation) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		82,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"setCompositionMode(QPainter::CompositionMode mode) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		83,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"setFont(QFont font) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		84,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"setLayoutDirection(Qt::LayoutDirection direction) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		85,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"setOpacity(qreal opacity) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		86,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"setPen(QPen pen) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		87,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"setRenderHint(QPainter::RenderHint hint, bool on) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		88,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"setTransform(QTransform transform, bool combine) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		89,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"setViewport(int x, int y, int width, int height) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		90,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"setViewTransformEnabled(bool enable) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		91,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"setWindow(int x, int y, int width, int height) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		92,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"setWorldMatrixEnabled(bool enable) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		93,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"setWorldTransform( QTransform matrix, bool combine) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		94,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"shear(double sh, double sv) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		95,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"strokePath(QPainterPath path, QPen pen) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		96,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"testRenderHint(QPainter::RenderHint hint) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		97,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"transform(void) --> QTransform"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		98,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"translate(double dx, double dy) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		99,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"viewport(void) --> QRect"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		100,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"viewTransformEnabled(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		101,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"window(void) --> QRect"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		102,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"worldMatrixEnabled(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		103,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;	"+char(34)+"worldTransform(void) --> QTransform"+char(34)+";;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		104,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;];;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		105,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:55",
+		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		106,
+		1,
 		"assignment",
-		"07/02/2025",
-		"18:37:45",
+		"20/02/2025",
+		"23:00:55",
+		"leftside;;_RV_;;T_CT_QPAINTERCLASS_IP_VALUE2LIST;;_RV_;;rightside;;_RV_;;["+char(34)+"خلفية( لا شيء ) --> فرشاة"+char(34)+","+char(34)+"وضعية_الخلفية( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"بدء( جهاز_رسم* ) --> منطقي"+char(34)+","+char(34)+"بدء_الرسم_الأصلي( لا شيء ) --> لا شيء"+char(34)+","+char(34)+"مستطيل_الإحاطة( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع , أعلام, سلسلة_نصية ) --> مستطيل"+char(34)+","+char(34)+"فرشاة( لا شيء ) --> فرشاة"+char(34)+","+char(34)+"أصل_الفرشاة( لا شيء ) --> نقطة"+char(34)+","+char(34)+"مستطيل_الإحاطة_المقطوع( لا شيء ) --> مستطيل_عائم"+char(34)+","+char(34)+"مسار_القص( لا شيء ) --> مسار_الرسام"+char(34)+","+char(34)+"منطقة_القص( لا شيء ) --> منطقة"+char(34)+","+char(34)+"تحويل_مُدمج( لا شيء ) --> تحويل"+char(34)+","+char(34)+"وضع_التكوين( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"حذف( لا شيء ) --> لا شيء"+char(34)+","+char(34)+"جهاز( لا شيء ) --> جهاز_رسم"+char(34)+","+char(34)+"تحويل_الجهاز( لا شيء ) --> تحويل"+char(34)+","+char(34)+"رسم_قوس( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع , زاوية_البداية, زاوية_المسافة ) --> لا شيء"+char(34)+","+char(34)+"رسم_وتر( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع , زاوية_البداية, زاوية_المسافة ) --> لا شيء"+char(34)+","+char(34)+"رسم_مضلع_محدب( قائمة* نقاط ) --> لا شيء"+char(34)+","+char(34)+"رسم_بيضاوي( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع ) --> لا شيء"+char(34)+","+char(34)+"رسم_تشغيل_رمز_الحروف( نقطة_عائمة موقع, تشغيل_رمز ) --> لا شيء"+char(34)+","+char(34)+"رسم_صورة( عدد_صحيح س , عدد_صحيح ص , صورة_عابرة ) --> لا شيء"+char(34)+","+char(34)+"رسم_خط( عدد_صحيح س١ , عدد_صحيح ص١ , عدد_صحيح س٢ , عدد_صحيح ص٢ ) --> لا شيء"+char(34)+","+char(34)+"رسم_الخطوط( خطوط* , عدد_الخطوط ) --> لا شيء"+char(34)+","+char(34)+"رسم_المسار( مسار_الرسام مسار ) --> لا شيء"+char(34)+","+char(34)+"رسم_الصورة( عدد_صحيح س , عدد_صحيح ص , صورة_رسم ) --> لا شيء"+char(34)+","+char(34)+"رسم_فطيرة( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع , زاوية_البداية, زاوية_المسافة ) --> لا شيء"+char(34)+","+char(34)+"رسم_بكسل_التكوين( عدد_صحيح س , عدد_صحيح ص , بكسل_تكوين ) --> لا شيء"+char(34)+","+char(34)+"رسم_نقطة( عدد_صحيح س , عدد_صحيح ص ) --> لا شيء"+char(34)+","+char(34)+"رسم_النقاط( قائمة* نقاط ) --> لا شيء"+char(34)+","+char(34)+"رسم_المضلع( قائمة* نقاط , قاعدة_الملء ) --> لا شيء"+char(34)+","+char(34)+"رسم_الخط_المتعدد( قائمة* نقاط ) --> لا شيء"+char(34)+","+char(34)+"رسم_المستطيل( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع ) --> لا شيء"+char(34)+","+char(34)+"رسم_المستطيلات( مستطيلات_عائمة* , عدد_المستطيلات ) --> لا شيء"+char(34)+","+char(34)+"رسم_مستطيل_مدور( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع , كسر_عشري نصف_قطر_س , كسر_عشري نصف_قطر_ص , وضعية_الحجم ) --> لا شيء"+char(34)+","+char(34)+"رسم_النص_الثابت( يسار, أعلى, نص_ثابت ) --> لا شيء"+char(34)+","+char(34)+"رسم_النص( عدد_صحيح س , عدد_صحيح ص , سلسلة_نصية ) --> لا شيء"+char(34)+","+char(34)+"رسم_بكسل_التكوين_المتكرر( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع , بكسل_تكوين , عدد_صحيح س_بداية, عدد_صحيح ص_بداية ) --> لا شيء"+char(34)+","+char(34)+"إنهاء_الرسم_الأصلي( لا شيء ) --> لا شيء"+char(34)+","+char(34)+"إنهاء_الرسم( لا شيء ) --> منطقي"+char(34)+","+char(34)+"مسح_المستطيل( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع ) --> لا شيء"+char(34)+","+char(34)+"ملء_المسار( مسار_الرسام مسار, فرشاة ) --> لا شيء"+char(34)+","+char(34)+"ملء_المستطيل( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع , فرشاة ) --> لا شيء"+char(34)+","+char(34)+"الخط( لا شيء ) --> خط"+char(34)+","+char(34)+"معلومات_الخط( لا شيء ) --> معلومات_الخط"+char(34)+","+char(34)+"هل_يوجد_قص( لا شيء ) --> منطقي"+char(34)+","+char(34)+"تهيئة( الأب ) --> كائن"+char(34)+","+char(34)+"تهيئة_من( عنصر_واجهة_المستخدم* ) --> لا شيء"+char(34)+","+char(34)+"هل_نشط( لا شيء ) --> منطقي"+char(34)+","+char(34)+"اتجاه_التخطيط( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"مؤشر_كائن( لا شيء ) --> مؤشر"+char(34)+","+char(34)+"التعتيم( لا شيء ) --> مزدوج"+char(34)+","+char(34)+"محرك_الرسم( لا شيء ) --> محرك_الرسم"+char(34)+","+char(34)+"قلم( لا شيء ) --> قلم"+char(34)+","+char(34)+"تلميحات_الرسم( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"إعادة_تعيين_التحويل( لا شيء ) --> لا شيء"+char(34)+","+char(34)+"استعادة( لا شيء ) --> لا شيء"+char(34)+","+char(34)+"تدوير( زاوية_عشرية ) --> لا شيء"+char(34)+","+char(34)+"حفظ( لا شيء ) --> لا شيء"+char(34)+","+char(34)+"مقياس( مزدوج س , مزدوج ص ) --> لا شيء"+char(34)+","+char(34)+"تعيين_الخلفية( فرشاة فرشاة ) --> لا شيء"+char(34)+","+char(34)+"تعيين_وضعية_الخلفية( وضعية_الخلفية ) --> لا شيء"+char(34)+","+char(34)+"تعيين_الفرشاة( فرشاة فرشاة ) --> لا شيء"+char(34)+","+char(34)+"تعيين_أصل_الفرشاة( عدد_صحيح س , عدد_صحيح ص ) --> لا شيء"+char(34)+","+char(34)+"تعيين_مسار_القص( مسار_الرسام مسار, عملية_القص ) --> لا شيء"+char(34)+","+char(34)+"تعيين_القص( منطقي تمكين ) --> لا شيء"+char(34)+","+char(34)+"تعيين_مستطيل_القص( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع , عملية_القص ) --> لا شيء"+char(34)+","+char(34)+"تعيين_منطقة_القص( منطقة منطقة , عملية_القص ) --> لا شيء"+char(34)+","+char(34)+"تعيين_وضع_التكوين( وضعية_التكوين ) --> لا شيء"+char(34)+","+char(34)+"تعيين_الخط( خط خط ) --> لا شيء"+char(34)+","+char(34)+"تعيين_اتجاه_التخطيط( اتجاه_التخطيط ) --> لا شيء"+char(34)+","+char(34)+"تعيين_التعتيم( كسر_عشري التعتيم ) --> لا شيء"+char(34)+","+char(34)+"تعيين_القلم( قلم قلم ) --> لا شيء"+char(34)+","+char(34)+"تعيين_تلميح_الرسم( تلميح_الرسم تلميح, منطقي تشغيل ) --> لا شيء"+char(34)+","+char(34)+"تعيين_التحويل( تحويل تحويل, منطقي دمج ) --> لا شيء"+char(34)+","+char(34)+"تعيين_عرض_المنفذ( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع ) --> لا شيء"+char(34)+","+char(34)+"تعيين_التحويل_المرئي_المفعل( منطقي تمكين ) --> لا شيء"+char(34)+","+char(34)+"تعيين_النافذة( عدد_صحيح س , عدد_صحيح ص , عدد_صحيح عرض , عدد_صحيح ارتفاع ) --> لا شيء"+char(34)+","+char(34)+"تعيين_التحويل_العالمي_المفعل( منطقي تمكين ) --> لا شيء"+char(34)+","+char(34)+"تعيين_التحويل_العالمي( تحويل مصفوفة, منطقي دمج ) --> لا شيء"+char(34)+","+char(34)+"قص( مزدوج ش , مزدوج ص ) --> لا شيء"+char(34)+","+char(34)+"مسار_الحد( مسار_الرسام مسار, قلم قلم ) --> لا شيء"+char(34)+","+char(34)+"اختبار_تلميح_الرسم( تلميح_الرسم تلميح ) --> منطقي"+char(34)+","+char(34)+"التحويل( لا شيء ) --> تحويل"+char(34)+","+char(34)+"ترجمة( مزدوج س , مزدوج ص ) --> لا شيء"+char(34)+","+char(34)+"عرض_المنفذ( لا شيء ) --> مستطيل"+char(34)+","+char(34)+"التحويل_المرئي_المفعل( لا شيء ) --> منطقي"+char(34)+","+char(34)+"نافذة( لا شيء ) --> مستطيل"+char(34)+","+char(34)+"التحويل_العالمي_المفعل( لا شيء ) --> منطقي"+char(34)+","+char(34)+"التحويل_العالمي( لا شيء ) --> تحويل"+char(34)+"];;_RV_;;"
+	],
+	[
+		107,
+		1,
+		"assignment",
+		"20/02/2025",
+		"23:00:55",
+		"leftside;;_RV_;;T_CT_QPAINTERCLASS_IP_VALUE3;;_RV_;;rightside;;_RV_;;"+char(34)+"المعطيات :"+char(34)+";;_RV_;;"
+	],
+	[
+		108,
+		1,
+		"assignment",
+		"20/02/2025",
+		"23:00:55",
 		"leftside;;_RV_;;T_CT_QPAINTERCLASS_IP_VALUE4;;_RV_;;rightside;;_RV_;;"+char(34)+"الناتج :"+char(34)+";;_RV_;;"
 	]
 ]

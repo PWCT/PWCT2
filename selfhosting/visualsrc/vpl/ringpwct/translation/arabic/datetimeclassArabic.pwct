@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'english'
-nStepsID                 = 16		
-nInteractionsID          = 16
+nStepsID                 = 26		
+nInteractionsID          = 26
 
 aStepsTable = [
 	[
@@ -472,7 +472,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_DATETIMECLASS_IP_VALUE2STEPFUNC</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_DATETIMECLASS_IP_VALUE2FUNC</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_DATETIMECLASS_IP_VALUE2STEPFUNC</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;اضافة_ايام&quot;,&quot;ساعة&quot;,&quot;تاريخ&quot;,&quot;فرق_ايام&quot;,&quot;وقت&quot;,&quot;قائمة_الوقت&quot;]</font></span>"
 			],
 			[
 				"active",
@@ -480,7 +480,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_DATETIMECLASS_IP_VALUE2STEPFUNC = T_CT_DATETIMECLASS_IP_VALUE2FUNC"
+				"T_CT_DATETIMECLASS_IP_VALUE2STEPFUNC = ["+char(34)+"اضافة_ايام"+char(34)+","+char(34)+"ساعة"+char(34)+","+char(34)+"تاريخ"+char(34)+","+char(34)+"فرق_ايام"+char(34)+","+char(34)+"وقت"+char(34)+","+char(34)+"قائمة_الوقت"+char(34)+"]"
 			],
 			[
 				"interactionid",
@@ -500,7 +500,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"T_CT_DATETIMECLASS_IP_VALUE2STEPFUNC = T_CT_DATETIMECLASS_IP_VALUE2FUNC"
+				"T_CT_DATETIMECLASS_IP_VALUE2STEPFUNC = ["+char(34)+"اضافة_ايام"+char(34)+","+char(34)+"ساعة"+char(34)+","+char(34)+"تاريخ"+char(34)+","+char(34)+"فرق_ايام"+char(34)+","+char(34)+"وقت"+char(34)+","+char(34)+"قائمة_الوقت"+char(34)+"]"
 			]
 		]
 	],
@@ -510,7 +510,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_DATETIMECLASS_IP_VALUE2LIST</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;adddays(cDate,nDays)&nbsp;--&gt;&nbsp;String&quot;,&quot;clock()&nbsp;--&gt;&nbsp;Number&quot;,&quot;date()&nbsp;--&gt;&nbsp;String&quot;,&quot;diffdays(cDate1,cDate2)&nbsp;--&gt;&nbsp;String&quot;,&quot;time()&nbsp;--&gt;&nbsp;String&quot;,&quot;timelist()&nbsp;--&gt;&nbsp;List&quot;]</font></span>"
+				"/*"
 			],
 			[
 				"active",
@@ -518,7 +518,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_DATETIMECLASS_IP_VALUE2LIST = ["+char(34)+"adddays(cDate,nDays) --> String"+char(34)+","+char(34)+"clock() --> Number"+char(34)+","+char(34)+"date() --> String"+char(34)+","+char(34)+"diffdays(cDate1,cDate2) --> String"+char(34)+","+char(34)+"time() --> String"+char(34)+","+char(34)+"timelist() --> List"+char(34)+"]"
+				"#/*
+"
 			],
 			[
 				"interactionid",
@@ -534,16 +535,405 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				2
+				1
 			],
 			[
 				"plainname",
-				"T_CT_DATETIMECLASS_IP_VALUE2LIST = ["+char(34)+"adddays(cDate,nDays) --> String"+char(34)+","+char(34)+"clock() --> Number"+char(34)+","+char(34)+"date() --> String"+char(34)+","+char(34)+"diffdays(cDate1,cDate2) --> String"+char(34)+","+char(34)+"time() --> String"+char(34)+","+char(34)+"timelist() --> List"+char(34)+"]"
+				"/*"
 			]
 		]
 	],
 	[
 		15,
+		1,
+		[
+			[
+				"name",
+				"T_CT_DATETIMECLASS_IP_VALUE2LIST = ["
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#T_CT_DATETIMECLASS_IP_VALUE2LIST = [
+"
+			],
+			[
+				"interactionid",
+				15
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"T_CT_DATETIMECLASS_IP_VALUE2LIST = ["
+			]
+		]
+	],
+	[
+		16,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"adddays(cDate,nDays) --> String"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"adddays(cDate,nDays) --> String"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				16
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"adddays(cDate,nDays) --> String"+char(34)+","
+			]
+		]
+	],
+	[
+		17,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"clock() --> Number"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"clock() --> Number"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				17
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"clock() --> Number"+char(34)+","
+			]
+		]
+	],
+	[
+		18,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"date() --> String"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"date() --> String"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				18
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"date() --> String"+char(34)+","
+			]
+		]
+	],
+	[
+		19,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"diffdays(cDate1,cDate2) --> String"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"diffdays(cDate1,cDate2) --> String"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				19
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"diffdays(cDate1,cDate2) --> String"+char(34)+","
+			]
+		]
+	],
+	[
+		20,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"time() --> String"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"time() --> String"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				20
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"time() --> String"+char(34)+","
+			]
+		]
+	],
+	[
+		21,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"timelist() --> List"+char(34)+""
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"timelist() --> List"+char(34)+"
+"
+			],
+			[
+				"interactionid",
+				21
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"timelist() --> List"+char(34)+""
+			]
+		]
+	],
+	[
+		22,
+		1,
+		[
+			[
+				"name",
+				"]"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#]
+"
+			],
+			[
+				"interactionid",
+				22
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"]"
+			]
+		]
+	],
+	[
+		23,
+		1,
+		[
+			[
+				"name",
+				"*/"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#*/
+"
+			],
+			[
+				"interactionid",
+				23
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"*/"
+			]
+		]
+	],
+	[
+		24,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_DATETIMECLASS_IP_VALUE2LIST</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;اضافة_ايام(تاريخ,عدد_الايام)&nbsp;--&gt;&nbsp;سلسلة&quot;,&quot;ساعة()&nbsp;--&gt;&nbsp;رقم&quot;,&quot;تاريخ()&nbsp;--&gt;&nbsp;سلسلة&quot;,&quot;فرق_ايام(تاريخ1,تاريخ2)&nbsp;--&gt;&nbsp;سلسلة&quot;,&quot;وقت()&nbsp;--&gt;&nbsp;سلسلة&quot;,&quot;قائمة_الوقت()&nbsp;--&gt;&nbsp;قائمة&quot;]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_CT_DATETIMECLASS_IP_VALUE2LIST = ["+char(34)+"اضافة_ايام(تاريخ,عدد_الايام) --> سلسلة"+char(34)+","+char(34)+"ساعة() --> رقم"+char(34)+","+char(34)+"تاريخ() --> سلسلة"+char(34)+","+char(34)+"فرق_ايام(تاريخ1,تاريخ2) --> سلسلة"+char(34)+","+char(34)+"وقت() --> سلسلة"+char(34)+","+char(34)+"قائمة_الوقت() --> قائمة"+char(34)+"]"
+			],
+			[
+				"interactionid",
+				24
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_CT_DATETIMECLASS_IP_VALUE2LIST = ["+char(34)+"اضافة_ايام(تاريخ,عدد_الايام) --> سلسلة"+char(34)+","+char(34)+"ساعة() --> رقم"+char(34)+","+char(34)+"تاريخ() --> سلسلة"+char(34)+","+char(34)+"فرق_ايام(تاريخ1,تاريخ2) --> سلسلة"+char(34)+","+char(34)+"وقت() --> سلسلة"+char(34)+","+char(34)+"قائمة_الوقت() --> قائمة"+char(34)+"]"
+			]
+		]
+	],
+	[
+		25,
 		1,
 		[
 			[
@@ -560,7 +950,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				15
+				25
 			],
 			[
 				"visible",
@@ -581,7 +971,7 @@ aStepsTable = [
 		]
 	],
 	[
-		16,
+		26,
 		1,
 		[
 			[
@@ -598,7 +988,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				16
+				26
 			],
 			[
 				"visible",
@@ -625,128 +1015,208 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"07/02/2025",
-		"18:32:48",
+		"20/02/2025",
+		"22:57:50",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:32:48",
+		"20/02/2025",
+		"22:57:50",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:32:48",
+		"20/02/2025",
+		"22:57:50",
 		"value;;_RV_;;**	Project : Programming Without Coding Technology (PWCT) Version 2.0;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:32:48",
+		"20/02/2025",
+		"22:57:50",
 		"value;;_RV_;;**	File Purpose :  datetimeclass Component;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:32:48",
+		"20/02/2025",
+		"22:57:50",
 		"value;;_RV_;;**	Date : 2018.03.16;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:32:48",
+		"20/02/2025",
+		"22:57:50",
 		"value;;_RV_;;**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:32:48",
+		"20/02/2025",
+		"22:57:50",
 		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:32:48",
+		"20/02/2025",
+		"22:57:50",
 		"leftside;;_RV_;;T_CT_DATETIMECLASS_IP_TITLE;;_RV_;;rightside;;_RV_;;"+char(34)+"مكون فئة الوقت والتاريخ"+char(34)+";;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:32:48",
+		"20/02/2025",
+		"22:57:50",
 		"leftside;;_RV_;;T_CT_DATETIMECLASS_IP_VALUE;;_RV_;;rightside;;_RV_;;"+char(34)+"اسم الكائن :"+char(34)+";;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:32:48",
+		"20/02/2025",
+		"22:57:50",
 		"leftside;;_RV_;;T_CT_DATETIMECLASS_IP_VALUE2;;_RV_;;rightside;;_RV_;;"+char(34)+"الميثود : "+char(34)+";;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:32:48",
+		"20/02/2025",
+		"22:57:50",
 		"leftside;;_RV_;;T_CT_DATETIMECLASS_IP_VALUE2FUNC;;_RV_;;rightside;;_RV_;;["+char(34)+"adddays"+char(34)+","+char(34)+"clock"+char(34)+","+char(34)+"date"+char(34)+","+char(34)+"diffdays"+char(34)+","+char(34)+"time"+char(34)+","+char(34)+"timelist"+char(34)+"];;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:32:48",
+		"20/02/2025",
+		"22:57:50",
 		"value;;_RV_;;Copy the list to support changing the generated method name in the Steps Tree;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:32:48",
-		"leftside;;_RV_;;T_CT_DATETIMECLASS_IP_VALUE2STEPFUNC;;_RV_;;rightside;;_RV_;;T_CT_DATETIMECLASS_IP_VALUE2FUNC;;_RV_;;"
+		"20/02/2025",
+		"22:57:50",
+		"leftside;;_RV_;;T_CT_DATETIMECLASS_IP_VALUE2STEPFUNC;;_RV_;;rightside;;_RV_;;["+char(34)+"اضافة_ايام"+char(34)+","+char(34)+"ساعة"+char(34)+","+char(34)+"تاريخ"+char(34)+","+char(34)+"فرق_ايام"+char(34)+","+char(34)+"وقت"+char(34)+","+char(34)+"قائمة_الوقت"+char(34)+"];;_RV_;;"
 	],
 	[
 		14,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:32:48",
-		"leftside;;_RV_;;T_CT_DATETIMECLASS_IP_VALUE2LIST;;_RV_;;rightside;;_RV_;;["+char(34)+"adddays(cDate,nDays) --> String"+char(34)+","+char(34)+"clock() --> Number"+char(34)+","+char(34)+"date() --> String"+char(34)+","+char(34)+"diffdays(cDate1,cDate2) --> String"+char(34)+","+char(34)+"time() --> String"+char(34)+","+char(34)+"timelist() --> List"+char(34)+"];;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"22:57:50",
+		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		15,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:32:48",
-		"leftside;;_RV_;;T_CT_DATETIMECLASS_IP_VALUE3;;_RV_;;rightside;;_RV_;;"+char(34)+"المعطيات :"+char(34)+";;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"22:57:50",
+		"value;;_RV_;;T_CT_DATETIMECLASS_IP_VALUE2LIST = [;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		16,
 		1,
+		"comment_text",
+		"20/02/2025",
+		"22:57:50",
+		"value;;_RV_;;	"+char(34)+"adddays(cDate,nDays) --> String"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		17,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:57:50",
+		"value;;_RV_;;	"+char(34)+"clock() --> Number"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		18,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:57:50",
+		"value;;_RV_;;	"+char(34)+"date() --> String"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		19,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:57:50",
+		"value;;_RV_;;	"+char(34)+"diffdays(cDate1,cDate2) --> String"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		20,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:57:50",
+		"value;;_RV_;;	"+char(34)+"time() --> String"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		21,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:57:50",
+		"value;;_RV_;;	"+char(34)+"timelist() --> List"+char(34)+";;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		22,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:57:50",
+		"value;;_RV_;;];;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		23,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:57:50",
+		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		24,
+		1,
 		"assignment",
-		"07/02/2025",
-		"18:32:48",
+		"20/02/2025",
+		"22:57:50",
+		"leftside;;_RV_;;T_CT_DATETIMECLASS_IP_VALUE2LIST;;_RV_;;rightside;;_RV_;;["+char(34)+"اضافة_ايام(تاريخ,عدد_الايام) --> سلسلة"+char(34)+","+char(34)+"ساعة() --> رقم"+char(34)+","+char(34)+"تاريخ() --> سلسلة"+char(34)+","+char(34)+"فرق_ايام(تاريخ1,تاريخ2) --> سلسلة"+char(34)+","+char(34)+"وقت() --> سلسلة"+char(34)+","+char(34)+"قائمة_الوقت() --> قائمة"+char(34)+"];;_RV_;;"
+	],
+	[
+		25,
+		1,
+		"assignment",
+		"20/02/2025",
+		"22:57:50",
+		"leftside;;_RV_;;T_CT_DATETIMECLASS_IP_VALUE3;;_RV_;;rightside;;_RV_;;"+char(34)+"المعطيات :"+char(34)+";;_RV_;;"
+	],
+	[
+		26,
+		1,
+		"assignment",
+		"20/02/2025",
+		"22:57:50",
 		"leftside;;_RV_;;T_CT_DATETIMECLASS_IP_VALUE4;;_RV_;;rightside;;_RV_;;"+char(34)+"الناتج :"+char(34)+";;_RV_;;"
 	]
 ]

@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'english'
-nStepsID                 = 15		
-nInteractionsID          = 15
+nStepsID                 = 44		
+nInteractionsID          = 44
 
 aStepsTable = [
 	[
@@ -395,7 +395,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QPENCLASS_IP_VALUE2LIST</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;brush(void)&nbsp;--&gt;&nbsp;QBrush&quot;,&quot;capStyle(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;color(void)&nbsp;--&gt;&nbsp;QColor&quot;,&quot;dashOffset(void)&nbsp;--&gt;&nbsp;double&quot;,&quot;delete(void)&nbsp;--&gt;&nbsp;void&quot;,&quot;init(parent)&nbsp;--&gt;&nbsp;object&quot;,&quot;isCosmetic(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;isSolid(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;joinStyle(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;miterLimit(void)&nbsp;--&gt;&nbsp;double&quot;,&quot;objectpointer(void)&nbsp;--&gt;&nbsp;pointer&quot;,&quot;setBrush(QBrush)&nbsp;--&gt;&nbsp;void&quot;,&quot;setCapStyle(Qt::PenCapStyle&nbsp;style)&nbsp;--&gt;&nbsp;void&quot;,&quot;setColor(QColor)&nbsp;--&gt;&nbsp;void&quot;,&quot;setCosmetic(bool&nbsp;cosmetic)&nbsp;--&gt;&nbsp;void&quot;,&quot;setDashOffset(double&nbsp;offset)&nbsp;--&gt;&nbsp;void&quot;,&quot;setJoinStyle(Qt::PenJoinStyle&nbsp;style)&nbsp;--&gt;&nbsp;void&quot;,&quot;setMiterLimit(double&nbsp;limit)&nbsp;--&gt;&nbsp;void&quot;,&quot;setStyle(Qt::PenStyle&nbsp;style)&nbsp;--&gt;&nbsp;void&quot;,&quot;setWidth(int&nbsp;width)&nbsp;--&gt;&nbsp;void&quot;,&quot;setWidthF(double&nbsp;width)&nbsp;--&gt;&nbsp;void&quot;,&quot;style(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;swap(QPen)&nbsp;--&gt;&nbsp;void&quot;,&quot;width(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;widthF(void)&nbsp;--&gt;&nbsp;double&quot;]</font></span>"
+				"/*"
 			],
 			[
 				"active",
@@ -403,7 +403,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_QPENCLASS_IP_VALUE2LIST = ["+char(34)+"brush(void) --> QBrush"+char(34)+","+char(34)+"capStyle(void) --> int"+char(34)+","+char(34)+"color(void) --> QColor"+char(34)+","+char(34)+"dashOffset(void) --> double"+char(34)+","+char(34)+"delete(void) --> void"+char(34)+","+char(34)+"init(parent) --> object"+char(34)+","+char(34)+"isCosmetic(void) --> bool"+char(34)+","+char(34)+"isSolid(void) --> bool"+char(34)+","+char(34)+"joinStyle(void) --> int"+char(34)+","+char(34)+"miterLimit(void) --> double"+char(34)+","+char(34)+"objectpointer(void) --> pointer"+char(34)+","+char(34)+"setBrush(QBrush) --> void"+char(34)+","+char(34)+"setCapStyle(Qt::PenCapStyle style) --> void"+char(34)+","+char(34)+"setColor(QColor) --> void"+char(34)+","+char(34)+"setCosmetic(bool cosmetic) --> void"+char(34)+","+char(34)+"setDashOffset(double offset) --> void"+char(34)+","+char(34)+"setJoinStyle(Qt::PenJoinStyle style) --> void"+char(34)+","+char(34)+"setMiterLimit(double limit) --> void"+char(34)+","+char(34)+"setStyle(Qt::PenStyle style) --> void"+char(34)+","+char(34)+"setWidth(int width) --> void"+char(34)+","+char(34)+"setWidthF(double width) --> void"+char(34)+","+char(34)+"style(void) --> int"+char(34)+","+char(34)+"swap(QPen) --> void"+char(34)+","+char(34)+"width(void) --> int"+char(34)+","+char(34)+"widthF(void) --> double"+char(34)+"]"
+				"#/*
+"
 			],
 			[
 				"interactionid",
@@ -419,16 +420,1146 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				2
+				1
 			],
 			[
 				"plainname",
-				"T_CT_QPENCLASS_IP_VALUE2LIST = ["+char(34)+"brush(void) --> QBrush"+char(34)+","+char(34)+"capStyle(void) --> int"+char(34)+","+char(34)+"color(void) --> QColor"+char(34)+","+char(34)+"dashOffset(void) --> double"+char(34)+","+char(34)+"delete(void) --> void"+char(34)+","+char(34)+"init(parent) --> object"+char(34)+","+char(34)+"isCosmetic(void) --> bool"+char(34)+","+char(34)+"isSolid(void) --> bool"+char(34)+","+char(34)+"joinStyle(void) --> int"+char(34)+","+char(34)+"miterLimit(void) --> double"+char(34)+","+char(34)+"objectpointer(void) --> pointer"+char(34)+","+char(34)+"setBrush(QBrush) --> void"+char(34)+","+char(34)+"setCapStyle(Qt::PenCapStyle style) --> void"+char(34)+","+char(34)+"setColor(QColor) --> void"+char(34)+","+char(34)+"setCosmetic(bool cosmetic) --> void"+char(34)+","+char(34)+"setDashOffset(double offset) --> void"+char(34)+","+char(34)+"setJoinStyle(Qt::PenJoinStyle style) --> void"+char(34)+","+char(34)+"setMiterLimit(double limit) --> void"+char(34)+","+char(34)+"setStyle(Qt::PenStyle style) --> void"+char(34)+","+char(34)+"setWidth(int width) --> void"+char(34)+","+char(34)+"setWidthF(double width) --> void"+char(34)+","+char(34)+"style(void) --> int"+char(34)+","+char(34)+"swap(QPen) --> void"+char(34)+","+char(34)+"width(void) --> int"+char(34)+","+char(34)+"widthF(void) --> double"+char(34)+"]"
+				"/*"
 			]
 		]
 	],
 	[
 		12,
+		1,
+		[
+			[
+				"name",
+				"T_CT_QPENCLASS_IP_VALUE2LIST = ["
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#T_CT_QPENCLASS_IP_VALUE2LIST = [
+"
+			],
+			[
+				"interactionid",
+				12
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"T_CT_QPENCLASS_IP_VALUE2LIST = ["
+			]
+		]
+	],
+	[
+		13,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"brush(void) --> QBrush"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"brush(void) --> QBrush"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				13
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"brush(void) --> QBrush"+char(34)+","
+			]
+		]
+	],
+	[
+		14,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"capStyle(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"capStyle(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				14
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"capStyle(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		15,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"color(void) --> QColor"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"color(void) --> QColor"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				15
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"color(void) --> QColor"+char(34)+","
+			]
+		]
+	],
+	[
+		16,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"dashOffset(void) --> double"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"dashOffset(void) --> double"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				16
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"dashOffset(void) --> double"+char(34)+","
+			]
+		]
+	],
+	[
+		17,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"delete(void) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"delete(void) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				17
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"delete(void) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		18,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"init(parent) --> object"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"init(parent) --> object"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				18
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"init(parent) --> object"+char(34)+","
+			]
+		]
+	],
+	[
+		19,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"isCosmetic(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"isCosmetic(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				19
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"isCosmetic(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		20,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"isSolid(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"isSolid(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				20
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"isSolid(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		21,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"joinStyle(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"joinStyle(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				21
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"joinStyle(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		22,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"miterLimit(void) --> double"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"miterLimit(void) --> double"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				22
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"miterLimit(void) --> double"+char(34)+","
+			]
+		]
+	],
+	[
+		23,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"objectpointer(void) --> pointer"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"objectpointer(void) --> pointer"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				23
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"objectpointer(void) --> pointer"+char(34)+","
+			]
+		]
+	],
+	[
+		24,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setBrush(QBrush) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setBrush(QBrush) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				24
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setBrush(QBrush) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		25,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setCapStyle(Qt::PenCapStyle style) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setCapStyle(Qt::PenCapStyle style) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				25
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setCapStyle(Qt::PenCapStyle style) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		26,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setColor(QColor) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setColor(QColor) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				26
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setColor(QColor) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		27,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setCosmetic(bool cosmetic) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setCosmetic(bool cosmetic) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				27
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setCosmetic(bool cosmetic) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		28,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setDashOffset(double offset) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setDashOffset(double offset) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				28
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setDashOffset(double offset) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		29,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setJoinStyle(Qt::PenJoinStyle style) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setJoinStyle(Qt::PenJoinStyle style) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				29
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setJoinStyle(Qt::PenJoinStyle style) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		30,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setMiterLimit(double limit) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setMiterLimit(double limit) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				30
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setMiterLimit(double limit) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		31,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setStyle(Qt::PenStyle style) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setStyle(Qt::PenStyle style) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				31
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setStyle(Qt::PenStyle style) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		32,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setWidth(int width) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setWidth(int width) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				32
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setWidth(int width) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		33,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setWidthF(double width) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setWidthF(double width) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				33
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setWidthF(double width) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		34,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"style(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"style(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				34
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"style(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		35,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"swap(QPen) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"swap(QPen) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				35
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"swap(QPen) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		36,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"width(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"width(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				36
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"width(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		37,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"widthF(void) --> double"+char(34)+""
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"widthF(void) --> double"+char(34)+"
+"
+			],
+			[
+				"interactionid",
+				37
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"widthF(void) --> double"+char(34)+""
+			]
+		]
+	],
+	[
+		38,
+		1,
+		[
+			[
+				"name",
+				"]"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#]
+"
+			],
+			[
+				"interactionid",
+				38
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"]"
+			]
+		]
+	],
+	[
+		39,
+		1,
+		[
+			[
+				"name",
+				"*/"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#*/
+"
+			],
+			[
+				"interactionid",
+				39
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"*/"
+			]
+		]
+	],
+	[
+		40,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QPENCLASS_IP_VALUE2LIST</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;فرشاة&nbsp;(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;فرشاة&quot;,&quot;نمط_الطرف&nbsp;(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;عدد_صحيح&quot;,&quot;لون&nbsp;(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;لون&quot;,&quot;انحراف_الشرطة&nbsp;(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;مزدوج&quot;,&quot;حذف&nbsp;(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تهيئة&nbsp;(&nbsp;أصل&nbsp;)&nbsp;--&gt;&nbsp;كائن&quot;,&quot;تجميل&nbsp;(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;منطق&quot;,&quot;صلب&nbsp;(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;منطق&quot;,&quot;نمط_الالتحام&nbsp;(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;عدد_صحيح&quot;,&quot;حد_الزوايا&nbsp;(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;مزدوج&quot;,&quot;مؤشر_الكائن&nbsp;(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;مؤشر&quot;,&quot;تعيين_الفرشاة&nbsp;(&nbsp;فرشاة&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_نمط_الطرف&nbsp;(&nbsp;نمط_طرف&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_اللون&nbsp;(&nbsp;لون&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_التجميل&nbsp;(&nbsp;منطق&nbsp;تجميلي&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_انحراف_الشرطة&nbsp;(&nbsp;انحراف&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_نمط_الالتحام&nbsp;(&nbsp;نمط_الالتحام&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_حد_الزوايا&nbsp;(&nbsp;حد&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_النمط&nbsp;(&nbsp;نمط&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_العرض&nbsp;(&nbsp;عرض&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_العرض_العشري&nbsp;(&nbsp;عرض&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;النمط&nbsp;(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;عدد_صحيح&quot;,&quot;تبديل&nbsp;(&nbsp;قلم&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;العرض&nbsp;(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;عدد_صحيح&quot;,&quot;العرض_العشري&nbsp;(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;مزدوج&quot;]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_CT_QPENCLASS_IP_VALUE2LIST = ["+char(34)+"فرشاة ( لا شيء ) --> فرشاة"+char(34)+","+char(34)+"نمط_الطرف ( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"لون ( لا شيء ) --> لون"+char(34)+","+char(34)+"انحراف_الشرطة ( لا شيء ) --> مزدوج"+char(34)+","+char(34)+"حذف ( لا شيء ) --> لا شيء"+char(34)+","+char(34)+"تهيئة ( أصل ) --> كائن"+char(34)+","+char(34)+"تجميل ( لا شيء ) --> منطق"+char(34)+","+char(34)+"صلب ( لا شيء ) --> منطق"+char(34)+","+char(34)+"نمط_الالتحام ( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"حد_الزوايا ( لا شيء ) --> مزدوج"+char(34)+","+char(34)+"مؤشر_الكائن ( لا شيء ) --> مؤشر"+char(34)+","+char(34)+"تعيين_الفرشاة ( فرشاة ) --> لا شيء"+char(34)+","+char(34)+"تعيين_نمط_الطرف ( نمط_طرف ) --> لا شيء"+char(34)+","+char(34)+"تعيين_اللون ( لون ) --> لا شيء"+char(34)+","+char(34)+"تعيين_التجميل ( منطق تجميلي ) --> لا شيء"+char(34)+","+char(34)+"تعيين_انحراف_الشرطة ( انحراف ) --> لا شيء"+char(34)+","+char(34)+"تعيين_نمط_الالتحام ( نمط_الالتحام ) --> لا شيء"+char(34)+","+char(34)+"تعيين_حد_الزوايا ( حد ) --> لا شيء"+char(34)+","+char(34)+"تعيين_النمط ( نمط ) --> لا شيء"+char(34)+","+char(34)+"تعيين_العرض ( عرض ) --> لا شيء"+char(34)+","+char(34)+"تعيين_العرض_العشري ( عرض ) --> لا شيء"+char(34)+","+char(34)+"النمط ( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"تبديل ( قلم ) --> لا شيء"+char(34)+","+char(34)+"العرض ( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"العرض_العشري ( لا شيء ) --> مزدوج"+char(34)+"]"
+			],
+			[
+				"interactionid",
+				40
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_CT_QPENCLASS_IP_VALUE2LIST = ["+char(34)+"فرشاة ( لا شيء ) --> فرشاة"+char(34)+","+char(34)+"نمط_الطرف ( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"لون ( لا شيء ) --> لون"+char(34)+","+char(34)+"انحراف_الشرطة ( لا شيء ) --> مزدوج"+char(34)+","+char(34)+"حذف ( لا شيء ) --> لا شيء"+char(34)+","+char(34)+"تهيئة ( أصل ) --> كائن"+char(34)+","+char(34)+"تجميل ( لا شيء ) --> منطق"+char(34)+","+char(34)+"صلب ( لا شيء ) --> منطق"+char(34)+","+char(34)+"نمط_الالتحام ( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"حد_الزوايا ( لا شيء ) --> مزدوج"+char(34)+","+char(34)+"مؤشر_الكائن ( لا شيء ) --> مؤشر"+char(34)+","+char(34)+"تعيين_الفرشاة ( فرشاة ) --> لا شيء"+char(34)+","+char(34)+"تعيين_نمط_الطرف ( نمط_طرف ) --> لا شيء"+char(34)+","+char(34)+"تعيين_اللون ( لون ) --> لا شيء"+char(34)+","+char(34)+"تعيين_التجميل ( منطق تجميلي ) --> لا شيء"+char(34)+","+char(34)+"تعيين_انحراف_الشرطة ( انحراف ) --> لا شيء"+char(34)+","+char(34)+"تعيين_نمط_الالتحام ( نمط_الالتحام ) --> لا شيء"+char(34)+","+char(34)+"تعيين_حد_الزوايا ( حد ) --> لا شيء"+char(34)+","+char(34)+"تعيين_النمط ( نمط ) --> لا شيء"+char(34)+","+char(34)+"تعيين_العرض ( عرض ) --> لا شيء"+char(34)+","+char(34)+"تعيين_العرض_العشري ( عرض ) --> لا شيء"+char(34)+","+char(34)+"النمط ( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"تبديل ( قلم ) --> لا شيء"+char(34)+","+char(34)+"العرض ( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"العرض_العشري ( لا شيء ) --> مزدوج"+char(34)+"]"
+			]
+		]
+	],
+	[
+		41,
 		1,
 		[
 			[
@@ -445,7 +1576,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				12
+				41
 			],
 			[
 				"visible",
@@ -466,7 +1597,7 @@ aStepsTable = [
 		]
 	],
 	[
-		13,
+		42,
 		1,
 		[
 			[
@@ -483,7 +1614,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				13
+				42
 			],
 			[
 				"visible",
@@ -504,7 +1635,7 @@ aStepsTable = [
 		]
 	],
 	[
-		14,
+		43,
 		1,
 		[
 			[
@@ -521,7 +1652,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				14
+				43
 			],
 			[
 				"visible",
@@ -542,12 +1673,12 @@ aStepsTable = [
 		]
 	],
 	[
-		15,
+		44,
 		1,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QPENCLASS_IP_VALUE2STEPFUNC</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QPENCLASS_IP_VALUE2FUNC</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QPENCLASS_IP_VALUE2STEPFUNC</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;فرشاة&quot;,&quot;نمط_الطرف&quot;,&quot;لون&quot;,&quot;انحراف_الشرطة&quot;,&quot;حذف&quot;,&quot;تهيئة&quot;,&quot;تجميل&quot;,&quot;صلب&quot;,&quot;نمط_الالتحام&quot;,&quot;حد_الزوايا&quot;,&quot;مؤشر_الكائن&quot;,&quot;تعيين_الفرشاة&quot;,&quot;تعيين_نمط_الطرف&quot;,&quot;تعيين_اللون&quot;,&quot;تعيين_التجميل&quot;,&quot;تعيين_انحراف_الشرطة&quot;,&quot;تعيين_نمط_الالتحام&quot;,&quot;تعيين_حد_الزوايا&quot;,&quot;تعيين_النمط&quot;,&quot;تعيين_العرض&quot;,&quot;تعيين_العرض_العشري&quot;,&quot;النمط&quot;,&quot;تبديل&quot;,&quot;العرض&quot;,&quot;العرض_العشري&quot;]</font></span>"
 			],
 			[
 				"active",
@@ -555,11 +1686,11 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_QPENCLASS_IP_VALUE2STEPFUNC = T_CT_QPENCLASS_IP_VALUE2FUNC"
+				"T_CT_QPENCLASS_IP_VALUE2STEPFUNC = ["+char(34)+"فرشاة"+char(34)+","+char(34)+"نمط_الطرف"+char(34)+","+char(34)+"لون"+char(34)+","+char(34)+"انحراف_الشرطة"+char(34)+","+char(34)+"حذف"+char(34)+","+char(34)+"تهيئة"+char(34)+","+char(34)+"تجميل"+char(34)+","+char(34)+"صلب"+char(34)+","+char(34)+"نمط_الالتحام"+char(34)+","+char(34)+"حد_الزوايا"+char(34)+","+char(34)+"مؤشر_الكائن"+char(34)+","+char(34)+"تعيين_الفرشاة"+char(34)+","+char(34)+"تعيين_نمط_الطرف"+char(34)+","+char(34)+"تعيين_اللون"+char(34)+","+char(34)+"تعيين_التجميل"+char(34)+","+char(34)+"تعيين_انحراف_الشرطة"+char(34)+","+char(34)+"تعيين_نمط_الالتحام"+char(34)+","+char(34)+"تعيين_حد_الزوايا"+char(34)+","+char(34)+"تعيين_النمط"+char(34)+","+char(34)+"تعيين_العرض"+char(34)+","+char(34)+"تعيين_العرض_العشري"+char(34)+","+char(34)+"النمط"+char(34)+","+char(34)+"تبديل"+char(34)+","+char(34)+"العرض"+char(34)+","+char(34)+"العرض_العشري"+char(34)+"]"
 			],
 			[
 				"interactionid",
-				15
+				44
 			],
 			[
 				"visible",
@@ -575,7 +1706,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"T_CT_QPENCLASS_IP_VALUE2STEPFUNC = T_CT_QPENCLASS_IP_VALUE2FUNC"
+				"T_CT_QPENCLASS_IP_VALUE2STEPFUNC = ["+char(34)+"فرشاة"+char(34)+","+char(34)+"نمط_الطرف"+char(34)+","+char(34)+"لون"+char(34)+","+char(34)+"انحراف_الشرطة"+char(34)+","+char(34)+"حذف"+char(34)+","+char(34)+"تهيئة"+char(34)+","+char(34)+"تجميل"+char(34)+","+char(34)+"صلب"+char(34)+","+char(34)+"نمط_الالتحام"+char(34)+","+char(34)+"حد_الزوايا"+char(34)+","+char(34)+"مؤشر_الكائن"+char(34)+","+char(34)+"تعيين_الفرشاة"+char(34)+","+char(34)+"تعيين_نمط_الطرف"+char(34)+","+char(34)+"تعيين_اللون"+char(34)+","+char(34)+"تعيين_التجميل"+char(34)+","+char(34)+"تعيين_انحراف_الشرطة"+char(34)+","+char(34)+"تعيين_نمط_الالتحام"+char(34)+","+char(34)+"تعيين_حد_الزوايا"+char(34)+","+char(34)+"تعيين_النمط"+char(34)+","+char(34)+"تعيين_العرض"+char(34)+","+char(34)+"تعيين_العرض_العشري"+char(34)+","+char(34)+"النمط"+char(34)+","+char(34)+"تبديل"+char(34)+","+char(34)+"العرض"+char(34)+","+char(34)+"العرض_العشري"+char(34)+"]"
 			]
 		]
 	]
@@ -586,121 +1717,353 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"07/02/2025",
-		"18:37:46",
+		"20/02/2025",
+		"23:00:56",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:37:46",
+		"20/02/2025",
+		"23:00:56",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:37:46",
+		"20/02/2025",
+		"23:00:56",
 		"value;;_RV_;;**	Project : Programming Without Coding Technology (PWCT) Version 2.0;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:37:46",
+		"20/02/2025",
+		"23:00:56",
 		"value;;_RV_;;**	File Purpose :  qpenclass Component;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:37:46",
+		"20/02/2025",
+		"23:00:56",
 		"value;;_RV_;;**	Date : 2021.08.09;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:37:46",
+		"20/02/2025",
+		"23:00:56",
 		"value;;_RV_;;**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:37:46",
+		"20/02/2025",
+		"23:00:56",
 		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:37:46",
+		"20/02/2025",
+		"23:00:56",
 		"leftside;;_RV_;;T_CT_QPENCLASS_IP_TITLE;;_RV_;;rightside;;_RV_;;"+char(34)+"مكون فئة ال QPen"+char(34)+";;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:37:46",
+		"20/02/2025",
+		"23:00:56",
 		"leftside;;_RV_;;T_CT_QPENCLASS_IP_VALUE;;_RV_;;rightside;;_RV_;;"+char(34)+"اسم الكائن :"+char(34)+";;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:37:46",
+		"20/02/2025",
+		"23:00:56",
 		"leftside;;_RV_;;T_CT_QPENCLASS_IP_VALUE2;;_RV_;;rightside;;_RV_;;"+char(34)+"الميثود : "+char(34)+";;_RV_;;"
 	],
 	[
 		11,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:37:46",
-		"leftside;;_RV_;;T_CT_QPENCLASS_IP_VALUE2LIST;;_RV_;;rightside;;_RV_;;["+char(34)+"brush(void) --> QBrush"+char(34)+","+char(34)+"capStyle(void) --> int"+char(34)+","+char(34)+"color(void) --> QColor"+char(34)+","+char(34)+"dashOffset(void) --> double"+char(34)+","+char(34)+"delete(void) --> void"+char(34)+","+char(34)+"init(parent) --> object"+char(34)+","+char(34)+"isCosmetic(void) --> bool"+char(34)+","+char(34)+"isSolid(void) --> bool"+char(34)+","+char(34)+"joinStyle(void) --> int"+char(34)+","+char(34)+"miterLimit(void) --> double"+char(34)+","+char(34)+"objectpointer(void) --> pointer"+char(34)+","+char(34)+"setBrush(QBrush) --> void"+char(34)+","+char(34)+"setCapStyle(Qt::PenCapStyle style) --> void"+char(34)+","+char(34)+"setColor(QColor) --> void"+char(34)+","+char(34)+"setCosmetic(bool cosmetic) --> void"+char(34)+","+char(34)+"setDashOffset(double offset) --> void"+char(34)+","+char(34)+"setJoinStyle(Qt::PenJoinStyle style) --> void"+char(34)+","+char(34)+"setMiterLimit(double limit) --> void"+char(34)+","+char(34)+"setStyle(Qt::PenStyle style) --> void"+char(34)+","+char(34)+"setWidth(int width) --> void"+char(34)+","+char(34)+"setWidthF(double width) --> void"+char(34)+","+char(34)+"style(void) --> int"+char(34)+","+char(34)+"swap(QPen) --> void"+char(34)+","+char(34)+"width(void) --> int"+char(34)+","+char(34)+"widthF(void) --> double"+char(34)+"];;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"23:00:56",
+		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		12,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:37:46",
-		"leftside;;_RV_;;T_CT_QPENCLASS_IP_VALUE3;;_RV_;;rightside;;_RV_;;"+char(34)+"المعطيات :"+char(34)+";;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"23:00:56",
+		"value;;_RV_;;T_CT_QPENCLASS_IP_VALUE2LIST = [;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		13,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:37:46",
-		"leftside;;_RV_;;T_CT_QPENCLASS_IP_VALUE4;;_RV_;;rightside;;_RV_;;"+char(34)+"الناتج :"+char(34)+";;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"23:00:56",
+		"value;;_RV_;;	"+char(34)+"brush(void) --> QBrush"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		14,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:37:46",
-		"leftside;;_RV_;;T_CT_QPENCLASS_IP_VALUE2FUNC;;_RV_;;rightside;;_RV_;;["+char(34)+"brush"+char(34)+","+char(34)+"capstyle"+char(34)+","+char(34)+"color"+char(34)+","+char(34)+"dashoffset"+char(34)+","+char(34)+"delete"+char(34)+","+char(34)+"init"+char(34)+","+char(34)+"iscosmetic"+char(34)+","+char(34)+"issolid"+char(34)+","+char(34)+"joinstyle"+char(34)+","+char(34)+"miterlimit"+char(34)+","+char(34)+"objectpointer"+char(34)+","+char(34)+"setbrush"+char(34)+","+char(34)+"setcapstyle"+char(34)+","+char(34)+"setcolor"+char(34)+","+char(34)+"setcosmetic"+char(34)+","+char(34)+"setdashoffset"+char(34)+","+char(34)+"setjoinstyle"+char(34)+","+char(34)+"setmiterlimit"+char(34)+","+char(34)+"setstyle"+char(34)+","+char(34)+"setwidth"+char(34)+","+char(34)+"setwidthf"+char(34)+","+char(34)+"style"+char(34)+","+char(34)+"swap"+char(34)+","+char(34)+"width"+char(34)+","+char(34)+"widthf"+char(34)+"];;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"23:00:56",
+		"value;;_RV_;;	"+char(34)+"capStyle(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		15,
 		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:56",
+		"value;;_RV_;;	"+char(34)+"color(void) --> QColor"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		16,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:56",
+		"value;;_RV_;;	"+char(34)+"dashOffset(void) --> double"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		17,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:56",
+		"value;;_RV_;;	"+char(34)+"delete(void) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		18,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:56",
+		"value;;_RV_;;	"+char(34)+"init(parent) --> object"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		19,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:56",
+		"value;;_RV_;;	"+char(34)+"isCosmetic(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		20,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:56",
+		"value;;_RV_;;	"+char(34)+"isSolid(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		21,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:56",
+		"value;;_RV_;;	"+char(34)+"joinStyle(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		22,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:56",
+		"value;;_RV_;;	"+char(34)+"miterLimit(void) --> double"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		23,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:56",
+		"value;;_RV_;;	"+char(34)+"objectpointer(void) --> pointer"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		24,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:56",
+		"value;;_RV_;;	"+char(34)+"setBrush(QBrush) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		25,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:56",
+		"value;;_RV_;;	"+char(34)+"setCapStyle(Qt::PenCapStyle style) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		26,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:56",
+		"value;;_RV_;;	"+char(34)+"setColor(QColor) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		27,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:56",
+		"value;;_RV_;;	"+char(34)+"setCosmetic(bool cosmetic) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		28,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:56",
+		"value;;_RV_;;	"+char(34)+"setDashOffset(double offset) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		29,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:56",
+		"value;;_RV_;;	"+char(34)+"setJoinStyle(Qt::PenJoinStyle style) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		30,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:56",
+		"value;;_RV_;;	"+char(34)+"setMiterLimit(double limit) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		31,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:56",
+		"value;;_RV_;;	"+char(34)+"setStyle(Qt::PenStyle style) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		32,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:56",
+		"value;;_RV_;;	"+char(34)+"setWidth(int width) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		33,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:56",
+		"value;;_RV_;;	"+char(34)+"setWidthF(double width) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		34,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:56",
+		"value;;_RV_;;	"+char(34)+"style(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		35,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:56",
+		"value;;_RV_;;	"+char(34)+"swap(QPen) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		36,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:56",
+		"value;;_RV_;;	"+char(34)+"width(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		37,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:56",
+		"value;;_RV_;;	"+char(34)+"widthF(void) --> double"+char(34)+";;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		38,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:56",
+		"value;;_RV_;;];;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		39,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:56",
+		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		40,
+		1,
 		"assignment",
-		"07/02/2025",
-		"18:37:46",
-		"leftside;;_RV_;;T_CT_QPENCLASS_IP_VALUE2STEPFUNC;;_RV_;;rightside;;_RV_;;T_CT_QPENCLASS_IP_VALUE2FUNC;;_RV_;;"
+		"20/02/2025",
+		"23:00:56",
+		"leftside;;_RV_;;T_CT_QPENCLASS_IP_VALUE2LIST;;_RV_;;rightside;;_RV_;;["+char(34)+"فرشاة ( لا شيء ) --> فرشاة"+char(34)+","+char(34)+"نمط_الطرف ( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"لون ( لا شيء ) --> لون"+char(34)+","+char(34)+"انحراف_الشرطة ( لا شيء ) --> مزدوج"+char(34)+","+char(34)+"حذف ( لا شيء ) --> لا شيء"+char(34)+","+char(34)+"تهيئة ( أصل ) --> كائن"+char(34)+","+char(34)+"تجميل ( لا شيء ) --> منطق"+char(34)+","+char(34)+"صلب ( لا شيء ) --> منطق"+char(34)+","+char(34)+"نمط_الالتحام ( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"حد_الزوايا ( لا شيء ) --> مزدوج"+char(34)+","+char(34)+"مؤشر_الكائن ( لا شيء ) --> مؤشر"+char(34)+","+char(34)+"تعيين_الفرشاة ( فرشاة ) --> لا شيء"+char(34)+","+char(34)+"تعيين_نمط_الطرف ( نمط_طرف ) --> لا شيء"+char(34)+","+char(34)+"تعيين_اللون ( لون ) --> لا شيء"+char(34)+","+char(34)+"تعيين_التجميل ( منطق تجميلي ) --> لا شيء"+char(34)+","+char(34)+"تعيين_انحراف_الشرطة ( انحراف ) --> لا شيء"+char(34)+","+char(34)+"تعيين_نمط_الالتحام ( نمط_الالتحام ) --> لا شيء"+char(34)+","+char(34)+"تعيين_حد_الزوايا ( حد ) --> لا شيء"+char(34)+","+char(34)+"تعيين_النمط ( نمط ) --> لا شيء"+char(34)+","+char(34)+"تعيين_العرض ( عرض ) --> لا شيء"+char(34)+","+char(34)+"تعيين_العرض_العشري ( عرض ) --> لا شيء"+char(34)+","+char(34)+"النمط ( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"تبديل ( قلم ) --> لا شيء"+char(34)+","+char(34)+"العرض ( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"العرض_العشري ( لا شيء ) --> مزدوج"+char(34)+"];;_RV_;;"
+	],
+	[
+		41,
+		1,
+		"assignment",
+		"20/02/2025",
+		"23:00:56",
+		"leftside;;_RV_;;T_CT_QPENCLASS_IP_VALUE3;;_RV_;;rightside;;_RV_;;"+char(34)+"المعطيات :"+char(34)+";;_RV_;;"
+	],
+	[
+		42,
+		1,
+		"assignment",
+		"20/02/2025",
+		"23:00:56",
+		"leftside;;_RV_;;T_CT_QPENCLASS_IP_VALUE4;;_RV_;;rightside;;_RV_;;"+char(34)+"الناتج :"+char(34)+";;_RV_;;"
+	],
+	[
+		43,
+		1,
+		"assignment",
+		"20/02/2025",
+		"23:00:56",
+		"leftside;;_RV_;;T_CT_QPENCLASS_IP_VALUE2FUNC;;_RV_;;rightside;;_RV_;;["+char(34)+"brush"+char(34)+","+char(34)+"capstyle"+char(34)+","+char(34)+"color"+char(34)+","+char(34)+"dashoffset"+char(34)+","+char(34)+"delete"+char(34)+","+char(34)+"init"+char(34)+","+char(34)+"iscosmetic"+char(34)+","+char(34)+"issolid"+char(34)+","+char(34)+"joinstyle"+char(34)+","+char(34)+"miterlimit"+char(34)+","+char(34)+"objectpointer"+char(34)+","+char(34)+"setbrush"+char(34)+","+char(34)+"setcapstyle"+char(34)+","+char(34)+"setcolor"+char(34)+","+char(34)+"setcosmetic"+char(34)+","+char(34)+"setdashoffset"+char(34)+","+char(34)+"setjoinstyle"+char(34)+","+char(34)+"setmiterlimit"+char(34)+","+char(34)+"setstyle"+char(34)+","+char(34)+"setwidth"+char(34)+","+char(34)+"setwidthf"+char(34)+","+char(34)+"style"+char(34)+","+char(34)+"swap"+char(34)+","+char(34)+"width"+char(34)+","+char(34)+"widthf"+char(34)+"];;_RV_;;"
+	],
+	[
+		44,
+		1,
+		"assignment",
+		"20/02/2025",
+		"23:00:56",
+		"leftside;;_RV_;;T_CT_QPENCLASS_IP_VALUE2STEPFUNC;;_RV_;;rightside;;_RV_;;["+char(34)+"فرشاة"+char(34)+","+char(34)+"نمط_الطرف"+char(34)+","+char(34)+"لون"+char(34)+","+char(34)+"انحراف_الشرطة"+char(34)+","+char(34)+"حذف"+char(34)+","+char(34)+"تهيئة"+char(34)+","+char(34)+"تجميل"+char(34)+","+char(34)+"صلب"+char(34)+","+char(34)+"نمط_الالتحام"+char(34)+","+char(34)+"حد_الزوايا"+char(34)+","+char(34)+"مؤشر_الكائن"+char(34)+","+char(34)+"تعيين_الفرشاة"+char(34)+","+char(34)+"تعيين_نمط_الطرف"+char(34)+","+char(34)+"تعيين_اللون"+char(34)+","+char(34)+"تعيين_التجميل"+char(34)+","+char(34)+"تعيين_انحراف_الشرطة"+char(34)+","+char(34)+"تعيين_نمط_الالتحام"+char(34)+","+char(34)+"تعيين_حد_الزوايا"+char(34)+","+char(34)+"تعيين_النمط"+char(34)+","+char(34)+"تعيين_العرض"+char(34)+","+char(34)+"تعيين_العرض_العشري"+char(34)+","+char(34)+"النمط"+char(34)+","+char(34)+"تبديل"+char(34)+","+char(34)+"العرض"+char(34)+","+char(34)+"العرض_العشري"+char(34)+"];;_RV_;;"
 	]
 ]
 

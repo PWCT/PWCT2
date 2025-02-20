@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'english'
-nStepsID                 = 16		
-nInteractionsID          = 16
+nStepsID                 = 47		
+nInteractionsID          = 47
 
 aStepsTable = [
 	[
@@ -472,7 +472,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_FILECLASS_IP_VALUE2STEPFUNC</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_FILECLASS_IP_VALUE2FUNC</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_FILECLASS_IP_VALUE2STEPFUNC</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;مسح_خطأ&quot;,&quot;اغلاق&quot;,&quot;مجلد&quot;,&quot;نهاية_الملف&quot;,&quot;خطأ&quot;,&quot;يوجد&quot;,&quot;تنظيف&quot;,&quot;قراءة_ملف&quot;,&quot;كتابة_ملف&quot;,&quot;احصل_على_حرف&quot;,&quot;احصل_على_موقع&quot;,&quot;احصل_على_سلسلة&quot;,&quot;فتح&quot;,&quot;طباعة_خطأ&quot;,&quot;ضع_حرف&quot;,&quot;ضع_سلسلة&quot;,&quot;قراءة&quot;,&quot;ازالة&quot;,&quot;اعادة_تسمية&quot;,&quot;اعادة_فتح&quot;,&quot;اعادة_لف&quot;,&quot;بحث&quot;,&quot;تحديد_موقع&quot;,&quot;اخبر&quot;,&quot;ملف_مؤقت&quot;,&quot;ارجاع_حرف&quot;,&quot;كتابة&quot;]</font></span>"
 			],
 			[
 				"active",
@@ -480,7 +480,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_FILECLASS_IP_VALUE2STEPFUNC = T_CT_FILECLASS_IP_VALUE2FUNC"
+				"T_CT_FILECLASS_IP_VALUE2STEPFUNC = ["+char(34)+"مسح_خطأ"+char(34)+","+char(34)+"اغلاق"+char(34)+","+char(34)+"مجلد"+char(34)+","+char(34)+"نهاية_الملف"+char(34)+","+char(34)+"خطأ"+char(34)+","+char(34)+"يوجد"+char(34)+","+char(34)+"تنظيف"+char(34)+","+char(34)+"قراءة_ملف"+char(34)+","+char(34)+"كتابة_ملف"+char(34)+","+char(34)+"احصل_على_حرف"+char(34)+","+char(34)+"احصل_على_موقع"+char(34)+","+char(34)+"احصل_على_سلسلة"+char(34)+","+char(34)+"فتح"+char(34)+","+char(34)+"طباعة_خطأ"+char(34)+","+char(34)+"ضع_حرف"+char(34)+","+char(34)+"ضع_سلسلة"+char(34)+","+char(34)+"قراءة"+char(34)+","+char(34)+"ازالة"+char(34)+","+char(34)+"اعادة_تسمية"+char(34)+","+char(34)+"اعادة_فتح"+char(34)+","+char(34)+"اعادة_لف"+char(34)+","+char(34)+"بحث"+char(34)+","+char(34)+"تحديد_موقع"+char(34)+","+char(34)+"اخبر"+char(34)+","+char(34)+"ملف_مؤقت"+char(34)+","+char(34)+"ارجاع_حرف"+char(34)+","+char(34)+"كتابة"+char(34)+"]"
 			],
 			[
 				"interactionid",
@@ -500,7 +500,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"T_CT_FILECLASS_IP_VALUE2STEPFUNC = T_CT_FILECLASS_IP_VALUE2FUNC"
+				"T_CT_FILECLASS_IP_VALUE2STEPFUNC = ["+char(34)+"مسح_خطأ"+char(34)+","+char(34)+"اغلاق"+char(34)+","+char(34)+"مجلد"+char(34)+","+char(34)+"نهاية_الملف"+char(34)+","+char(34)+"خطأ"+char(34)+","+char(34)+"يوجد"+char(34)+","+char(34)+"تنظيف"+char(34)+","+char(34)+"قراءة_ملف"+char(34)+","+char(34)+"كتابة_ملف"+char(34)+","+char(34)+"احصل_على_حرف"+char(34)+","+char(34)+"احصل_على_موقع"+char(34)+","+char(34)+"احصل_على_سلسلة"+char(34)+","+char(34)+"فتح"+char(34)+","+char(34)+"طباعة_خطأ"+char(34)+","+char(34)+"ضع_حرف"+char(34)+","+char(34)+"ضع_سلسلة"+char(34)+","+char(34)+"قراءة"+char(34)+","+char(34)+"ازالة"+char(34)+","+char(34)+"اعادة_تسمية"+char(34)+","+char(34)+"اعادة_فتح"+char(34)+","+char(34)+"اعادة_لف"+char(34)+","+char(34)+"بحث"+char(34)+","+char(34)+"تحديد_موقع"+char(34)+","+char(34)+"اخبر"+char(34)+","+char(34)+"ملف_مؤقت"+char(34)+","+char(34)+"ارجاع_حرف"+char(34)+","+char(34)+"كتابة"+char(34)+"]"
 			]
 		]
 	],
@@ -510,7 +510,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_FILECLASS_IP_VALUE2LIST</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;clearerr()&quot;,&quot;close()&quot;,&quot;dir(cFolderPath)&nbsp;--&gt;&nbsp;List&quot;,&quot;eof()&nbsp;--&gt;&nbsp;Boolean&quot;,&quot;error()&nbsp;--&gt;&nbsp;Boolean&quot;,&quot;exists(cFileName)&nbsp;--&gt;&nbsp;Boolean&quot;,&quot;flush()&quot;,&quot;fread(nSize)&nbsp;--&gt;&nbsp;String&quot;,&quot;fwrite(cString)&quot;,&quot;getc()&nbsp;--&gt;&nbsp;String&quot;,&quot;getpos()&nbsp;--&gt;&nbsp;poshandle&quot;,&quot;gets(nSize)&nbsp;--&gt;&nbsp;String&quot;,&quot;open(cFileName,cMode)&nbsp;--&gt;&nbsp;FileHandle&quot;,&quot;perror(cErrorMessage)&quot;,&quot;putc(cChar)&quot;,&quot;puts(cString)&quot;,&quot;read(cFileName)&nbsp;--&gt;&nbsp;cFileContent&quot;,&quot;remove(cFileName)&quot;,&quot;rename(cOldFileName,cNewFileName)&quot;,&quot;reopen(cFileName,cMode)&nbsp;--&gt;&nbsp;FileHandle&quot;,&quot;rewind()&quot;,&quot;seek(noffset,nwhence)&nbsp;--&gt;&nbsp;Number&quot;,&quot;setpos(poshandle)&quot;,&quot;tell()&nbsp;--&gt;&nbsp;Number&quot;,&quot;tempfile()&nbsp;--&gt;&nbsp;cTempFileName&quot;,&quot;ungetc(cChar)&quot;,&quot;write(cFileName,cStr)&quot;]</font></span>"
+				"/*"
 			],
 			[
 				"active",
@@ -518,7 +518,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_FILECLASS_IP_VALUE2LIST = ["+char(34)+"clearerr()"+char(34)+","+char(34)+"close()"+char(34)+","+char(34)+"dir(cFolderPath) --> List"+char(34)+","+char(34)+"eof() --> Boolean"+char(34)+","+char(34)+"error() --> Boolean"+char(34)+","+char(34)+"exists(cFileName) --> Boolean"+char(34)+","+char(34)+"flush()"+char(34)+","+char(34)+"fread(nSize) --> String"+char(34)+","+char(34)+"fwrite(cString)"+char(34)+","+char(34)+"getc() --> String"+char(34)+","+char(34)+"getpos() --> poshandle"+char(34)+","+char(34)+"gets(nSize) --> String"+char(34)+","+char(34)+"open(cFileName,cMode) --> FileHandle"+char(34)+","+char(34)+"perror(cErrorMessage)"+char(34)+","+char(34)+"putc(cChar)"+char(34)+","+char(34)+"puts(cString)"+char(34)+","+char(34)+"read(cFileName) --> cFileContent"+char(34)+","+char(34)+"remove(cFileName)"+char(34)+","+char(34)+"rename(cOldFileName,cNewFileName)"+char(34)+","+char(34)+"reopen(cFileName,cMode) --> FileHandle"+char(34)+","+char(34)+"rewind()"+char(34)+","+char(34)+"seek(noffset,nwhence) --> Number"+char(34)+","+char(34)+"setpos(poshandle)"+char(34)+","+char(34)+"tell() --> Number"+char(34)+","+char(34)+"tempfile() --> cTempFileName"+char(34)+","+char(34)+"ungetc(cChar)"+char(34)+","+char(34)+"write(cFileName,cStr)"+char(34)+"]"
+				"#/*
+"
 			],
 			[
 				"interactionid",
@@ -534,16 +535,1224 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				2
+				1
 			],
 			[
 				"plainname",
-				"T_CT_FILECLASS_IP_VALUE2LIST = ["+char(34)+"clearerr()"+char(34)+","+char(34)+"close()"+char(34)+","+char(34)+"dir(cFolderPath) --> List"+char(34)+","+char(34)+"eof() --> Boolean"+char(34)+","+char(34)+"error() --> Boolean"+char(34)+","+char(34)+"exists(cFileName) --> Boolean"+char(34)+","+char(34)+"flush()"+char(34)+","+char(34)+"fread(nSize) --> String"+char(34)+","+char(34)+"fwrite(cString)"+char(34)+","+char(34)+"getc() --> String"+char(34)+","+char(34)+"getpos() --> poshandle"+char(34)+","+char(34)+"gets(nSize) --> String"+char(34)+","+char(34)+"open(cFileName,cMode) --> FileHandle"+char(34)+","+char(34)+"perror(cErrorMessage)"+char(34)+","+char(34)+"putc(cChar)"+char(34)+","+char(34)+"puts(cString)"+char(34)+","+char(34)+"read(cFileName) --> cFileContent"+char(34)+","+char(34)+"remove(cFileName)"+char(34)+","+char(34)+"rename(cOldFileName,cNewFileName)"+char(34)+","+char(34)+"reopen(cFileName,cMode) --> FileHandle"+char(34)+","+char(34)+"rewind()"+char(34)+","+char(34)+"seek(noffset,nwhence) --> Number"+char(34)+","+char(34)+"setpos(poshandle)"+char(34)+","+char(34)+"tell() --> Number"+char(34)+","+char(34)+"tempfile() --> cTempFileName"+char(34)+","+char(34)+"ungetc(cChar)"+char(34)+","+char(34)+"write(cFileName,cStr)"+char(34)+"]"
+				"/*"
 			]
 		]
 	],
 	[
 		15,
+		1,
+		[
+			[
+				"name",
+				"T_CT_FILECLASS_IP_VALUE2LIST = ["
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#T_CT_FILECLASS_IP_VALUE2LIST = [
+"
+			],
+			[
+				"interactionid",
+				15
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"T_CT_FILECLASS_IP_VALUE2LIST = ["
+			]
+		]
+	],
+	[
+		16,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"clearerr()"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"clearerr()"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				16
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"clearerr()"+char(34)+","
+			]
+		]
+	],
+	[
+		17,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"close()"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"close()"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				17
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"close()"+char(34)+","
+			]
+		]
+	],
+	[
+		18,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"dir(cFolderPath) --> List"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"dir(cFolderPath) --> List"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				18
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"dir(cFolderPath) --> List"+char(34)+","
+			]
+		]
+	],
+	[
+		19,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"eof() --> Boolean"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"eof() --> Boolean"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				19
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"eof() --> Boolean"+char(34)+","
+			]
+		]
+	],
+	[
+		20,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"error() --> Boolean"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"error() --> Boolean"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				20
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"error() --> Boolean"+char(34)+","
+			]
+		]
+	],
+	[
+		21,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"exists(cFileName) --> Boolean"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"exists(cFileName) --> Boolean"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				21
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"exists(cFileName) --> Boolean"+char(34)+","
+			]
+		]
+	],
+	[
+		22,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"flush()"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"flush()"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				22
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"flush()"+char(34)+","
+			]
+		]
+	],
+	[
+		23,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"fread(nSize) --> String"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"fread(nSize) --> String"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				23
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"fread(nSize) --> String"+char(34)+","
+			]
+		]
+	],
+	[
+		24,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"fwrite(cString)"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"fwrite(cString)"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				24
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"fwrite(cString)"+char(34)+","
+			]
+		]
+	],
+	[
+		25,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"getc() --> String"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"getc() --> String"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				25
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"getc() --> String"+char(34)+","
+			]
+		]
+	],
+	[
+		26,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"getpos() --> poshandle"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"getpos() --> poshandle"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				26
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"getpos() --> poshandle"+char(34)+","
+			]
+		]
+	],
+	[
+		27,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"gets(nSize) --> String"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"gets(nSize) --> String"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				27
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"gets(nSize) --> String"+char(34)+","
+			]
+		]
+	],
+	[
+		28,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"open(cFileName,cMode) --> FileHandle"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"open(cFileName,cMode) --> FileHandle"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				28
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"open(cFileName,cMode) --> FileHandle"+char(34)+","
+			]
+		]
+	],
+	[
+		29,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"perror(cErrorMessage)"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"perror(cErrorMessage)"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				29
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"perror(cErrorMessage)"+char(34)+","
+			]
+		]
+	],
+	[
+		30,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"putc(cChar)"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"putc(cChar)"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				30
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"putc(cChar)"+char(34)+","
+			]
+		]
+	],
+	[
+		31,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"puts(cString)"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"puts(cString)"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				31
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"puts(cString)"+char(34)+","
+			]
+		]
+	],
+	[
+		32,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"read(cFileName) --> cFileContent"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"read(cFileName) --> cFileContent"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				32
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"read(cFileName) --> cFileContent"+char(34)+","
+			]
+		]
+	],
+	[
+		33,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"remove(cFileName)"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"remove(cFileName)"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				33
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"remove(cFileName)"+char(34)+","
+			]
+		]
+	],
+	[
+		34,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"rename(cOldFileName,cNewFileName)"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"rename(cOldFileName,cNewFileName)"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				34
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"rename(cOldFileName,cNewFileName)"+char(34)+","
+			]
+		]
+	],
+	[
+		35,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"reopen(cFileName,cMode) --> FileHandle"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"reopen(cFileName,cMode) --> FileHandle"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				35
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"reopen(cFileName,cMode) --> FileHandle"+char(34)+","
+			]
+		]
+	],
+	[
+		36,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"rewind()"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"rewind()"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				36
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"rewind()"+char(34)+","
+			]
+		]
+	],
+	[
+		37,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"seek(noffset,nwhence) --> Number"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"seek(noffset,nwhence) --> Number"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				37
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"seek(noffset,nwhence) --> Number"+char(34)+","
+			]
+		]
+	],
+	[
+		38,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setpos(poshandle)"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setpos(poshandle)"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				38
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setpos(poshandle)"+char(34)+","
+			]
+		]
+	],
+	[
+		39,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"tell() --> Number"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"tell() --> Number"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				39
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"tell() --> Number"+char(34)+","
+			]
+		]
+	],
+	[
+		40,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"tempfile() --> cTempFileName"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"tempfile() --> cTempFileName"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				40
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"tempfile() --> cTempFileName"+char(34)+","
+			]
+		]
+	],
+	[
+		41,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"ungetc(cChar)"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"ungetc(cChar)"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				41
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"ungetc(cChar)"+char(34)+","
+			]
+		]
+	],
+	[
+		42,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"write(cFileName,cStr)"+char(34)+""
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"write(cFileName,cStr)"+char(34)+"
+"
+			],
+			[
+				"interactionid",
+				42
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"write(cFileName,cStr)"+char(34)+""
+			]
+		]
+	],
+	[
+		43,
+		1,
+		[
+			[
+				"name",
+				"]"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#]
+"
+			],
+			[
+				"interactionid",
+				43
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"]"
+			]
+		]
+	],
+	[
+		44,
+		1,
+		[
+			[
+				"name",
+				"*/"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#*/
+"
+			],
+			[
+				"interactionid",
+				44
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"*/"
+			]
+		]
+	],
+	[
+		45,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_FILECLASS_IP_VALUE2LIST</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;مسح_خطأ()&quot;,&quot;اغلاق()&quot;,&quot;مجلد(مسار_المجلد)&nbsp;--&gt;&nbsp;قائمة&quot;,&quot;نهاية_الملف()&nbsp;--&gt;&nbsp;منطقي&quot;,&quot;خطأ()&nbsp;--&gt;&nbsp;منطقي&quot;,&quot;يوجد(اسم_الملف)&nbsp;--&gt;&nbsp;منطقي&quot;,&quot;تنظيف()&quot;,&quot;قراءة_ملف(حجم)&nbsp;--&gt;&nbsp;سلسلة&quot;,&quot;كتابة_ملف(سلسلة)&quot;,&quot;احصل_على_حرف()&nbsp;--&gt;&nbsp;سلسلة&quot;,&quot;احصل_على_موقع()&nbsp;--&gt;&nbsp;مؤشر_موقع&quot;,&quot;احصل_على_سلسلة(حجم)&nbsp;--&gt;&nbsp;سلسلة&quot;,&quot;فتح(اسم_الملف,وضع)&nbsp;--&gt;&nbsp;مؤشر_ملف&quot;,&quot;طباعة_خطأ(رسالة_خطأ)&quot;,&quot;ضع_حرف(حرف)&quot;,&quot;ضع_سلسلة(سلسلة)&quot;,&quot;قراءة(اسم_الملف)&nbsp;--&gt;&nbsp;محتوى_الملف&quot;,&quot;ازالة(اسم_الملف)&quot;,&quot;اعادة_تسمية(اسم_الملف_القديم,اسم_الملف_الجديد)&quot;,&quot;اعادة_فتح(اسم_الملف,وضع)&nbsp;--&gt;&nbsp;مؤشر_ملف&quot;,&quot;اعادة_لف()&quot;,&quot;بحث(ازاحة,مرجع)&nbsp;--&gt;&nbsp;رقم&quot;,&quot;تحديد_موقع(مؤشر_موقع)&quot;,&quot;اخبر()&nbsp;--&gt;&nbsp;رقم&quot;,&quot;ملف_مؤقت()&nbsp;--&gt;&nbsp;اسم_الملف_المؤقت&quot;,&quot;ارجاع_حرف(حرف)&quot;,&quot;كتابة(اسم_الملف,سلسلة)&quot;]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_CT_FILECLASS_IP_VALUE2LIST = ["+char(34)+"مسح_خطأ()"+char(34)+","+char(34)+"اغلاق()"+char(34)+","+char(34)+"مجلد(مسار_المجلد) --> قائمة"+char(34)+","+char(34)+"نهاية_الملف() --> منطقي"+char(34)+","+char(34)+"خطأ() --> منطقي"+char(34)+","+char(34)+"يوجد(اسم_الملف) --> منطقي"+char(34)+","+char(34)+"تنظيف()"+char(34)+","+char(34)+"قراءة_ملف(حجم) --> سلسلة"+char(34)+","+char(34)+"كتابة_ملف(سلسلة)"+char(34)+","+char(34)+"احصل_على_حرف() --> سلسلة"+char(34)+","+char(34)+"احصل_على_موقع() --> مؤشر_موقع"+char(34)+","+char(34)+"احصل_على_سلسلة(حجم) --> سلسلة"+char(34)+","+char(34)+"فتح(اسم_الملف,وضع) --> مؤشر_ملف"+char(34)+","+char(34)+"طباعة_خطأ(رسالة_خطأ)"+char(34)+","+char(34)+"ضع_حرف(حرف)"+char(34)+","+char(34)+"ضع_سلسلة(سلسلة)"+char(34)+","+char(34)+"قراءة(اسم_الملف) --> محتوى_الملف"+char(34)+","+char(34)+"ازالة(اسم_الملف)"+char(34)+","+char(34)+"اعادة_تسمية(اسم_الملف_القديم,اسم_الملف_الجديد)"+char(34)+","+char(34)+"اعادة_فتح(اسم_الملف,وضع) --> مؤشر_ملف"+char(34)+","+char(34)+"اعادة_لف()"+char(34)+","+char(34)+"بحث(ازاحة,مرجع) --> رقم"+char(34)+","+char(34)+"تحديد_موقع(مؤشر_موقع)"+char(34)+","+char(34)+"اخبر() --> رقم"+char(34)+","+char(34)+"ملف_مؤقت() --> اسم_الملف_المؤقت"+char(34)+","+char(34)+"ارجاع_حرف(حرف)"+char(34)+","+char(34)+"كتابة(اسم_الملف,سلسلة)"+char(34)+"]"
+			],
+			[
+				"interactionid",
+				45
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_CT_FILECLASS_IP_VALUE2LIST = ["+char(34)+"مسح_خطأ()"+char(34)+","+char(34)+"اغلاق()"+char(34)+","+char(34)+"مجلد(مسار_المجلد) --> قائمة"+char(34)+","+char(34)+"نهاية_الملف() --> منطقي"+char(34)+","+char(34)+"خطأ() --> منطقي"+char(34)+","+char(34)+"يوجد(اسم_الملف) --> منطقي"+char(34)+","+char(34)+"تنظيف()"+char(34)+","+char(34)+"قراءة_ملف(حجم) --> سلسلة"+char(34)+","+char(34)+"كتابة_ملف(سلسلة)"+char(34)+","+char(34)+"احصل_على_حرف() --> سلسلة"+char(34)+","+char(34)+"احصل_على_موقع() --> مؤشر_موقع"+char(34)+","+char(34)+"احصل_على_سلسلة(حجم) --> سلسلة"+char(34)+","+char(34)+"فتح(اسم_الملف,وضع) --> مؤشر_ملف"+char(34)+","+char(34)+"طباعة_خطأ(رسالة_خطأ)"+char(34)+","+char(34)+"ضع_حرف(حرف)"+char(34)+","+char(34)+"ضع_سلسلة(سلسلة)"+char(34)+","+char(34)+"قراءة(اسم_الملف) --> محتوى_الملف"+char(34)+","+char(34)+"ازالة(اسم_الملف)"+char(34)+","+char(34)+"اعادة_تسمية(اسم_الملف_القديم,اسم_الملف_الجديد)"+char(34)+","+char(34)+"اعادة_فتح(اسم_الملف,وضع) --> مؤشر_ملف"+char(34)+","+char(34)+"اعادة_لف()"+char(34)+","+char(34)+"بحث(ازاحة,مرجع) --> رقم"+char(34)+","+char(34)+"تحديد_موقع(مؤشر_موقع)"+char(34)+","+char(34)+"اخبر() --> رقم"+char(34)+","+char(34)+"ملف_مؤقت() --> اسم_الملف_المؤقت"+char(34)+","+char(34)+"ارجاع_حرف(حرف)"+char(34)+","+char(34)+"كتابة(اسم_الملف,سلسلة)"+char(34)+"]"
+			]
+		]
+	],
+	[
+		46,
 		1,
 		[
 			[
@@ -560,7 +1769,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				15
+				46
 			],
 			[
 				"visible",
@@ -581,7 +1790,7 @@ aStepsTable = [
 		]
 	],
 	[
-		16,
+		47,
 		1,
 		[
 			[
@@ -598,7 +1807,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				16
+				47
 			],
 			[
 				"visible",
@@ -625,128 +1834,376 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"07/02/2025",
-		"18:33:16",
+		"20/02/2025",
+		"22:58:07",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:33:16",
+		"20/02/2025",
+		"22:58:07",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:33:16",
+		"20/02/2025",
+		"22:58:07",
 		"value;;_RV_;;**	Project : Programming Without Coding Technology (PWCT) Version 2.0;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:33:16",
+		"20/02/2025",
+		"22:58:07",
 		"value;;_RV_;;**	File Purpose :  fileclass Component;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:33:16",
+		"20/02/2025",
+		"22:58:07",
 		"value;;_RV_;;**	Date : 2018.03.16;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:33:16",
+		"20/02/2025",
+		"22:58:07",
 		"value;;_RV_;;**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:33:16",
+		"20/02/2025",
+		"22:58:07",
 		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:33:16",
+		"20/02/2025",
+		"22:58:07",
 		"leftside;;_RV_;;T_CT_FILECLASS_IP_TITLE;;_RV_;;rightside;;_RV_;;"+char(34)+"مكون فئة الملف"+char(34)+";;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:33:16",
+		"20/02/2025",
+		"22:58:07",
 		"leftside;;_RV_;;T_CT_FILECLASS_IP_VALUE;;_RV_;;rightside;;_RV_;;"+char(34)+"اسم الكائن :"+char(34)+";;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:33:16",
+		"20/02/2025",
+		"22:58:07",
 		"leftside;;_RV_;;T_CT_FILECLASS_IP_VALUE2;;_RV_;;rightside;;_RV_;;"+char(34)+"الميثود : "+char(34)+";;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:33:16",
+		"20/02/2025",
+		"22:58:07",
 		"leftside;;_RV_;;T_CT_FILECLASS_IP_VALUE2FUNC;;_RV_;;rightside;;_RV_;;["+char(34)+"clearerr"+char(34)+","+char(34)+"close"+char(34)+","+char(34)+"dir"+char(34)+","+char(34)+"eof"+char(34)+","+char(34)+"error"+char(34)+","+char(34)+"exists"+char(34)+","+char(34)+"flush"+char(34)+","+char(34)+"fread"+char(34)+","+char(34)+"fwrite"+char(34)+","+char(34)+"getc"+char(34)+","+char(34)+"getpos"+char(34)+","+char(34)+"gets"+char(34)+","+char(34)+"open"+char(34)+","+char(34)+"perror"+char(34)+","+char(34)+"putc"+char(34)+","+char(34)+"puts"+char(34)+","+char(34)+"read"+char(34)+","+char(34)+"remove"+char(34)+","+char(34)+"rename"+char(34)+","+char(34)+"reopen"+char(34)+","+char(34)+"rewind"+char(34)+","+char(34)+"seek"+char(34)+","+char(34)+"setpos"+char(34)+","+char(34)+"tell"+char(34)+","+char(34)+"tempfile"+char(34)+","+char(34)+"ungetc"+char(34)+","+char(34)+"write"+char(34)+"];;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:33:16",
+		"20/02/2025",
+		"22:58:07",
 		"value;;_RV_;;Copy the list to support changing the generated method name in the Steps Tree;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:33:16",
-		"leftside;;_RV_;;T_CT_FILECLASS_IP_VALUE2STEPFUNC;;_RV_;;rightside;;_RV_;;T_CT_FILECLASS_IP_VALUE2FUNC;;_RV_;;"
+		"20/02/2025",
+		"22:58:07",
+		"leftside;;_RV_;;T_CT_FILECLASS_IP_VALUE2STEPFUNC;;_RV_;;rightside;;_RV_;;["+char(34)+"مسح_خطأ"+char(34)+","+char(34)+"اغلاق"+char(34)+","+char(34)+"مجلد"+char(34)+","+char(34)+"نهاية_الملف"+char(34)+","+char(34)+"خطأ"+char(34)+","+char(34)+"يوجد"+char(34)+","+char(34)+"تنظيف"+char(34)+","+char(34)+"قراءة_ملف"+char(34)+","+char(34)+"كتابة_ملف"+char(34)+","+char(34)+"احصل_على_حرف"+char(34)+","+char(34)+"احصل_على_موقع"+char(34)+","+char(34)+"احصل_على_سلسلة"+char(34)+","+char(34)+"فتح"+char(34)+","+char(34)+"طباعة_خطأ"+char(34)+","+char(34)+"ضع_حرف"+char(34)+","+char(34)+"ضع_سلسلة"+char(34)+","+char(34)+"قراءة"+char(34)+","+char(34)+"ازالة"+char(34)+","+char(34)+"اعادة_تسمية"+char(34)+","+char(34)+"اعادة_فتح"+char(34)+","+char(34)+"اعادة_لف"+char(34)+","+char(34)+"بحث"+char(34)+","+char(34)+"تحديد_موقع"+char(34)+","+char(34)+"اخبر"+char(34)+","+char(34)+"ملف_مؤقت"+char(34)+","+char(34)+"ارجاع_حرف"+char(34)+","+char(34)+"كتابة"+char(34)+"];;_RV_;;"
 	],
 	[
 		14,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:33:16",
-		"leftside;;_RV_;;T_CT_FILECLASS_IP_VALUE2LIST;;_RV_;;rightside;;_RV_;;["+char(34)+"clearerr()"+char(34)+","+char(34)+"close()"+char(34)+","+char(34)+"dir(cFolderPath) --> List"+char(34)+","+char(34)+"eof() --> Boolean"+char(34)+","+char(34)+"error() --> Boolean"+char(34)+","+char(34)+"exists(cFileName) --> Boolean"+char(34)+","+char(34)+"flush()"+char(34)+","+char(34)+"fread(nSize) --> String"+char(34)+","+char(34)+"fwrite(cString)"+char(34)+","+char(34)+"getc() --> String"+char(34)+","+char(34)+"getpos() --> poshandle"+char(34)+","+char(34)+"gets(nSize) --> String"+char(34)+","+char(34)+"open(cFileName,cMode) --> FileHandle"+char(34)+","+char(34)+"perror(cErrorMessage)"+char(34)+","+char(34)+"putc(cChar)"+char(34)+","+char(34)+"puts(cString)"+char(34)+","+char(34)+"read(cFileName) --> cFileContent"+char(34)+","+char(34)+"remove(cFileName)"+char(34)+","+char(34)+"rename(cOldFileName,cNewFileName)"+char(34)+","+char(34)+"reopen(cFileName,cMode) --> FileHandle"+char(34)+","+char(34)+"rewind()"+char(34)+","+char(34)+"seek(noffset,nwhence) --> Number"+char(34)+","+char(34)+"setpos(poshandle)"+char(34)+","+char(34)+"tell() --> Number"+char(34)+","+char(34)+"tempfile() --> cTempFileName"+char(34)+","+char(34)+"ungetc(cChar)"+char(34)+","+char(34)+"write(cFileName,cStr)"+char(34)+"];;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"22:58:07",
+		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		15,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:33:16",
-		"leftside;;_RV_;;T_CT_FILECLASS_IP_VALUE3;;_RV_;;rightside;;_RV_;;"+char(34)+"المعطيات :"+char(34)+";;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"22:58:07",
+		"value;;_RV_;;T_CT_FILECLASS_IP_VALUE2LIST = [;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		16,
 		1,
+		"comment_text",
+		"20/02/2025",
+		"22:58:07",
+		"value;;_RV_;;	"+char(34)+"clearerr()"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		17,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:58:07",
+		"value;;_RV_;;	"+char(34)+"close()"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		18,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:58:07",
+		"value;;_RV_;;	"+char(34)+"dir(cFolderPath) --> List"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		19,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:58:07",
+		"value;;_RV_;;	"+char(34)+"eof() --> Boolean"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		20,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:58:07",
+		"value;;_RV_;;	"+char(34)+"error() --> Boolean"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		21,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:58:07",
+		"value;;_RV_;;	"+char(34)+"exists(cFileName) --> Boolean"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		22,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:58:07",
+		"value;;_RV_;;	"+char(34)+"flush()"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		23,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:58:07",
+		"value;;_RV_;;	"+char(34)+"fread(nSize) --> String"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		24,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:58:07",
+		"value;;_RV_;;	"+char(34)+"fwrite(cString)"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		25,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:58:07",
+		"value;;_RV_;;	"+char(34)+"getc() --> String"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		26,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:58:07",
+		"value;;_RV_;;	"+char(34)+"getpos() --> poshandle"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		27,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:58:07",
+		"value;;_RV_;;	"+char(34)+"gets(nSize) --> String"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		28,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:58:07",
+		"value;;_RV_;;	"+char(34)+"open(cFileName,cMode) --> FileHandle"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		29,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:58:07",
+		"value;;_RV_;;	"+char(34)+"perror(cErrorMessage)"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		30,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:58:07",
+		"value;;_RV_;;	"+char(34)+"putc(cChar)"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		31,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:58:07",
+		"value;;_RV_;;	"+char(34)+"puts(cString)"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		32,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:58:07",
+		"value;;_RV_;;	"+char(34)+"read(cFileName) --> cFileContent"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		33,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:58:07",
+		"value;;_RV_;;	"+char(34)+"remove(cFileName)"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		34,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:58:07",
+		"value;;_RV_;;	"+char(34)+"rename(cOldFileName,cNewFileName)"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		35,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:58:07",
+		"value;;_RV_;;	"+char(34)+"reopen(cFileName,cMode) --> FileHandle"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		36,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:58:07",
+		"value;;_RV_;;	"+char(34)+"rewind()"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		37,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:58:07",
+		"value;;_RV_;;	"+char(34)+"seek(noffset,nwhence) --> Number"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		38,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:58:07",
+		"value;;_RV_;;	"+char(34)+"setpos(poshandle)"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		39,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:58:07",
+		"value;;_RV_;;	"+char(34)+"tell() --> Number"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		40,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:58:07",
+		"value;;_RV_;;	"+char(34)+"tempfile() --> cTempFileName"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		41,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:58:07",
+		"value;;_RV_;;	"+char(34)+"ungetc(cChar)"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		42,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:58:07",
+		"value;;_RV_;;	"+char(34)+"write(cFileName,cStr)"+char(34)+";;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		43,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:58:07",
+		"value;;_RV_;;];;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		44,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:58:07",
+		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		45,
+		1,
 		"assignment",
-		"07/02/2025",
-		"18:33:16",
+		"20/02/2025",
+		"22:58:07",
+		"leftside;;_RV_;;T_CT_FILECLASS_IP_VALUE2LIST;;_RV_;;rightside;;_RV_;;["+char(34)+"مسح_خطأ()"+char(34)+","+char(34)+"اغلاق()"+char(34)+","+char(34)+"مجلد(مسار_المجلد) --> قائمة"+char(34)+","+char(34)+"نهاية_الملف() --> منطقي"+char(34)+","+char(34)+"خطأ() --> منطقي"+char(34)+","+char(34)+"يوجد(اسم_الملف) --> منطقي"+char(34)+","+char(34)+"تنظيف()"+char(34)+","+char(34)+"قراءة_ملف(حجم) --> سلسلة"+char(34)+","+char(34)+"كتابة_ملف(سلسلة)"+char(34)+","+char(34)+"احصل_على_حرف() --> سلسلة"+char(34)+","+char(34)+"احصل_على_موقع() --> مؤشر_موقع"+char(34)+","+char(34)+"احصل_على_سلسلة(حجم) --> سلسلة"+char(34)+","+char(34)+"فتح(اسم_الملف,وضع) --> مؤشر_ملف"+char(34)+","+char(34)+"طباعة_خطأ(رسالة_خطأ)"+char(34)+","+char(34)+"ضع_حرف(حرف)"+char(34)+","+char(34)+"ضع_سلسلة(سلسلة)"+char(34)+","+char(34)+"قراءة(اسم_الملف) --> محتوى_الملف"+char(34)+","+char(34)+"ازالة(اسم_الملف)"+char(34)+","+char(34)+"اعادة_تسمية(اسم_الملف_القديم,اسم_الملف_الجديد)"+char(34)+","+char(34)+"اعادة_فتح(اسم_الملف,وضع) --> مؤشر_ملف"+char(34)+","+char(34)+"اعادة_لف()"+char(34)+","+char(34)+"بحث(ازاحة,مرجع) --> رقم"+char(34)+","+char(34)+"تحديد_موقع(مؤشر_موقع)"+char(34)+","+char(34)+"اخبر() --> رقم"+char(34)+","+char(34)+"ملف_مؤقت() --> اسم_الملف_المؤقت"+char(34)+","+char(34)+"ارجاع_حرف(حرف)"+char(34)+","+char(34)+"كتابة(اسم_الملف,سلسلة)"+char(34)+"];;_RV_;;"
+	],
+	[
+		46,
+		1,
+		"assignment",
+		"20/02/2025",
+		"22:58:07",
+		"leftside;;_RV_;;T_CT_FILECLASS_IP_VALUE3;;_RV_;;rightside;;_RV_;;"+char(34)+"المعطيات :"+char(34)+";;_RV_;;"
+	],
+	[
+		47,
+		1,
+		"assignment",
+		"20/02/2025",
+		"22:58:07",
 		"leftside;;_RV_;;T_CT_FILECLASS_IP_VALUE4;;_RV_;;rightside;;_RV_;;"+char(34)+"الناتج :"+char(34)+";;_RV_;;"
 	]
 ]

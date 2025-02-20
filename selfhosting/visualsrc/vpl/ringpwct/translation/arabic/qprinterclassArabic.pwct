@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'english'
-nStepsID                 = 15		
-nInteractionsID          = 15
+nStepsID                 = 69		
+nInteractionsID          = 69
 
 aStepsTable = [
 	[
@@ -395,7 +395,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QPRINTERCLASS_IP_VALUE2LIST</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;abort(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;collateCopies(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;colorMode(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;copyCount(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;creator(void)&nbsp;--&gt;&nbsp;QString&quot;,&quot;delete(void)&nbsp;--&gt;&nbsp;void&quot;,&quot;docName(void)&nbsp;--&gt;&nbsp;QString&quot;,&quot;duplex(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;fontEmbeddingEnabled(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;fromPage(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;fullPage(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;init(parent)&nbsp;--&gt;&nbsp;object&quot;,&quot;isValid(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;newPage(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;objectpointer(void)&nbsp;--&gt;&nbsp;pointer&quot;,&quot;outputFileName(void)&nbsp;--&gt;&nbsp;QString&quot;,&quot;outputFormat(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;pageOrder(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;pageRect(QPrinter::Unit&nbsp;unit)&nbsp;--&gt;&nbsp;QRectF&quot;,&quot;paintEngine(void)&nbsp;--&gt;&nbsp;QPaintEngine&quot;,&quot;paperRect(QPrinter::Unit&nbsp;unit)&nbsp;--&gt;&nbsp;QRectF&quot;,&quot;paperSource(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;printEngine(void)&nbsp;--&gt;&nbsp;QPrintEngine&quot;,&quot;printerName(void)&nbsp;--&gt;&nbsp;QString&quot;,&quot;printerSelectionOption(void)&nbsp;--&gt;&nbsp;QString&quot;,&quot;printerState(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;printProgram(void)&nbsp;--&gt;&nbsp;QString&quot;,&quot;printRange(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;resolution(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;setCollateCopies(bool&nbsp;collate)&nbsp;--&gt;&nbsp;void&quot;,&quot;setColorMode(QPrinter::ColorMode&nbsp;newColorMode)&nbsp;--&gt;&nbsp;void&quot;,&quot;setCopyCount(int&nbsp;count)&nbsp;--&gt;&nbsp;void&quot;,&quot;setCreator(QString)&nbsp;--&gt;&nbsp;void&quot;,&quot;setDocName(QString)&nbsp;--&gt;&nbsp;void&quot;,&quot;setDuplex(QPrinter::DuplexMode&nbsp;duplex)&nbsp;--&gt;&nbsp;void&quot;,&quot;setFontEmbeddingEnabled(bool&nbsp;enable)&nbsp;--&gt;&nbsp;void&quot;,&quot;setFromTo(int&nbsp;from,&nbsp;int&nbsp;to)&nbsp;--&gt;&nbsp;void&quot;,&quot;setFullPage(bool&nbsp;fp)&nbsp;--&gt;&nbsp;void&quot;,&quot;setOutputFileName(QString)&nbsp;--&gt;&nbsp;void&quot;,&quot;setOutputFormat(QPrinter::OutputFormat&nbsp;format)&nbsp;--&gt;&nbsp;void&quot;,&quot;setPageOrder(QPrinter::PageOrder&nbsp;pageOrder)&nbsp;--&gt;&nbsp;void&quot;,&quot;setPageSizeMM(QSizeF)&nbsp;--&gt;&nbsp;void&quot;,&quot;setPaperSource(QPrinter::PaperSource&nbsp;source)&nbsp;--&gt;&nbsp;void&quot;,&quot;setPrinterName(QString)&nbsp;--&gt;&nbsp;void&quot;,&quot;setPrinterSelectionOption(QString)&nbsp;--&gt;&nbsp;void&quot;,&quot;setPrintProgram(QString)&nbsp;--&gt;&nbsp;void&quot;,&quot;setPrintRange(QPrinter::PrintRange)&nbsp;--&gt;&nbsp;void&quot;,&quot;setResolution(int&nbsp;dpi)&nbsp;--&gt;&nbsp;void&quot;,&quot;supportsMultipleCopies(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;toPage(void)&nbsp;--&gt;&nbsp;int&quot;]</font></span>"
+				"/*"
 			],
 			[
 				"active",
@@ -403,7 +403,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_QPRINTERCLASS_IP_VALUE2LIST = ["+char(34)+"abort(void) --> bool"+char(34)+","+char(34)+"collateCopies(void) --> bool"+char(34)+","+char(34)+"colorMode(void) --> int"+char(34)+","+char(34)+"copyCount(void) --> int"+char(34)+","+char(34)+"creator(void) --> QString"+char(34)+","+char(34)+"delete(void) --> void"+char(34)+","+char(34)+"docName(void) --> QString"+char(34)+","+char(34)+"duplex(void) --> int"+char(34)+","+char(34)+"fontEmbeddingEnabled(void) --> bool"+char(34)+","+char(34)+"fromPage(void) --> int"+char(34)+","+char(34)+"fullPage(void) --> bool"+char(34)+","+char(34)+"init(parent) --> object"+char(34)+","+char(34)+"isValid(void) --> bool"+char(34)+","+char(34)+"newPage(void) --> bool"+char(34)+","+char(34)+"objectpointer(void) --> pointer"+char(34)+","+char(34)+"outputFileName(void) --> QString"+char(34)+","+char(34)+"outputFormat(void) --> int"+char(34)+","+char(34)+"pageOrder(void) --> int"+char(34)+","+char(34)+"pageRect(QPrinter::Unit unit) --> QRectF"+char(34)+","+char(34)+"paintEngine(void) --> QPaintEngine"+char(34)+","+char(34)+"paperRect(QPrinter::Unit unit) --> QRectF"+char(34)+","+char(34)+"paperSource(void) --> int"+char(34)+","+char(34)+"printEngine(void) --> QPrintEngine"+char(34)+","+char(34)+"printerName(void) --> QString"+char(34)+","+char(34)+"printerSelectionOption(void) --> QString"+char(34)+","+char(34)+"printerState(void) --> int"+char(34)+","+char(34)+"printProgram(void) --> QString"+char(34)+","+char(34)+"printRange(void) --> int"+char(34)+","+char(34)+"resolution(void) --> int"+char(34)+","+char(34)+"setCollateCopies(bool collate) --> void"+char(34)+","+char(34)+"setColorMode(QPrinter::ColorMode newColorMode) --> void"+char(34)+","+char(34)+"setCopyCount(int count) --> void"+char(34)+","+char(34)+"setCreator(QString) --> void"+char(34)+","+char(34)+"setDocName(QString) --> void"+char(34)+","+char(34)+"setDuplex(QPrinter::DuplexMode duplex) --> void"+char(34)+","+char(34)+"setFontEmbeddingEnabled(bool enable) --> void"+char(34)+","+char(34)+"setFromTo(int from, int to) --> void"+char(34)+","+char(34)+"setFullPage(bool fp) --> void"+char(34)+","+char(34)+"setOutputFileName(QString) --> void"+char(34)+","+char(34)+"setOutputFormat(QPrinter::OutputFormat format) --> void"+char(34)+","+char(34)+"setPageOrder(QPrinter::PageOrder pageOrder) --> void"+char(34)+","+char(34)+"setPageSizeMM(QSizeF) --> void"+char(34)+","+char(34)+"setPaperSource(QPrinter::PaperSource source) --> void"+char(34)+","+char(34)+"setPrinterName(QString) --> void"+char(34)+","+char(34)+"setPrinterSelectionOption(QString) --> void"+char(34)+","+char(34)+"setPrintProgram(QString) --> void"+char(34)+","+char(34)+"setPrintRange(QPrinter::PrintRange) --> void"+char(34)+","+char(34)+"setResolution(int dpi) --> void"+char(34)+","+char(34)+"supportsMultipleCopies(void) --> bool"+char(34)+","+char(34)+"toPage(void) --> int"+char(34)+"]"
+				"#/*
+"
 			],
 			[
 				"interactionid",
@@ -419,16 +420,2121 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				2
+				1
 			],
 			[
 				"plainname",
-				"T_CT_QPRINTERCLASS_IP_VALUE2LIST = ["+char(34)+"abort(void) --> bool"+char(34)+","+char(34)+"collateCopies(void) --> bool"+char(34)+","+char(34)+"colorMode(void) --> int"+char(34)+","+char(34)+"copyCount(void) --> int"+char(34)+","+char(34)+"creator(void) --> QString"+char(34)+","+char(34)+"delete(void) --> void"+char(34)+","+char(34)+"docName(void) --> QString"+char(34)+","+char(34)+"duplex(void) --> int"+char(34)+","+char(34)+"fontEmbeddingEnabled(void) --> bool"+char(34)+","+char(34)+"fromPage(void) --> int"+char(34)+","+char(34)+"fullPage(void) --> bool"+char(34)+","+char(34)+"init(parent) --> object"+char(34)+","+char(34)+"isValid(void) --> bool"+char(34)+","+char(34)+"newPage(void) --> bool"+char(34)+","+char(34)+"objectpointer(void) --> pointer"+char(34)+","+char(34)+"outputFileName(void) --> QString"+char(34)+","+char(34)+"outputFormat(void) --> int"+char(34)+","+char(34)+"pageOrder(void) --> int"+char(34)+","+char(34)+"pageRect(QPrinter::Unit unit) --> QRectF"+char(34)+","+char(34)+"paintEngine(void) --> QPaintEngine"+char(34)+","+char(34)+"paperRect(QPrinter::Unit unit) --> QRectF"+char(34)+","+char(34)+"paperSource(void) --> int"+char(34)+","+char(34)+"printEngine(void) --> QPrintEngine"+char(34)+","+char(34)+"printerName(void) --> QString"+char(34)+","+char(34)+"printerSelectionOption(void) --> QString"+char(34)+","+char(34)+"printerState(void) --> int"+char(34)+","+char(34)+"printProgram(void) --> QString"+char(34)+","+char(34)+"printRange(void) --> int"+char(34)+","+char(34)+"resolution(void) --> int"+char(34)+","+char(34)+"setCollateCopies(bool collate) --> void"+char(34)+","+char(34)+"setColorMode(QPrinter::ColorMode newColorMode) --> void"+char(34)+","+char(34)+"setCopyCount(int count) --> void"+char(34)+","+char(34)+"setCreator(QString) --> void"+char(34)+","+char(34)+"setDocName(QString) --> void"+char(34)+","+char(34)+"setDuplex(QPrinter::DuplexMode duplex) --> void"+char(34)+","+char(34)+"setFontEmbeddingEnabled(bool enable) --> void"+char(34)+","+char(34)+"setFromTo(int from, int to) --> void"+char(34)+","+char(34)+"setFullPage(bool fp) --> void"+char(34)+","+char(34)+"setOutputFileName(QString) --> void"+char(34)+","+char(34)+"setOutputFormat(QPrinter::OutputFormat format) --> void"+char(34)+","+char(34)+"setPageOrder(QPrinter::PageOrder pageOrder) --> void"+char(34)+","+char(34)+"setPageSizeMM(QSizeF) --> void"+char(34)+","+char(34)+"setPaperSource(QPrinter::PaperSource source) --> void"+char(34)+","+char(34)+"setPrinterName(QString) --> void"+char(34)+","+char(34)+"setPrinterSelectionOption(QString) --> void"+char(34)+","+char(34)+"setPrintProgram(QString) --> void"+char(34)+","+char(34)+"setPrintRange(QPrinter::PrintRange) --> void"+char(34)+","+char(34)+"setResolution(int dpi) --> void"+char(34)+","+char(34)+"supportsMultipleCopies(void) --> bool"+char(34)+","+char(34)+"toPage(void) --> int"+char(34)+"]"
+				"/*"
 			]
 		]
 	],
 	[
 		12,
+		1,
+		[
+			[
+				"name",
+				"T_CT_QPRINTERCLASS_IP_VALUE2LIST = ["
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#T_CT_QPRINTERCLASS_IP_VALUE2LIST = [
+"
+			],
+			[
+				"interactionid",
+				12
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"T_CT_QPRINTERCLASS_IP_VALUE2LIST = ["
+			]
+		]
+	],
+	[
+		13,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"abort(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"abort(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				13
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"abort(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		14,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"collateCopies(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"collateCopies(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				14
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"collateCopies(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		15,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"colorMode(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"colorMode(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				15
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"colorMode(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		16,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"copyCount(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"copyCount(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				16
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"copyCount(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		17,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"creator(void) --> QString"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"creator(void) --> QString"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				17
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"creator(void) --> QString"+char(34)+","
+			]
+		]
+	],
+	[
+		18,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"delete(void) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"delete(void) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				18
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"delete(void) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		19,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"docName(void) --> QString"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"docName(void) --> QString"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				19
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"docName(void) --> QString"+char(34)+","
+			]
+		]
+	],
+	[
+		20,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"duplex(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"duplex(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				20
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"duplex(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		21,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"fontEmbeddingEnabled(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"fontEmbeddingEnabled(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				21
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"fontEmbeddingEnabled(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		22,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"fromPage(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"fromPage(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				22
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"fromPage(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		23,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"fullPage(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"fullPage(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				23
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"fullPage(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		24,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"init(parent) --> object"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"init(parent) --> object"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				24
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"init(parent) --> object"+char(34)+","
+			]
+		]
+	],
+	[
+		25,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"isValid(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"isValid(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				25
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"isValid(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		26,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"newPage(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"newPage(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				26
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"newPage(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		27,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"objectpointer(void) --> pointer"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"objectpointer(void) --> pointer"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				27
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"objectpointer(void) --> pointer"+char(34)+","
+			]
+		]
+	],
+	[
+		28,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"outputFileName(void) --> QString"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"outputFileName(void) --> QString"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				28
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"outputFileName(void) --> QString"+char(34)+","
+			]
+		]
+	],
+	[
+		29,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"outputFormat(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"outputFormat(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				29
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"outputFormat(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		30,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"pageOrder(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"pageOrder(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				30
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"pageOrder(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		31,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"pageRect(QPrinter::Unit unit) --> QRectF"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"pageRect(QPrinter::Unit unit) --> QRectF"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				31
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"pageRect(QPrinter::Unit unit) --> QRectF"+char(34)+","
+			]
+		]
+	],
+	[
+		32,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"paintEngine(void) --> QPaintEngine"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"paintEngine(void) --> QPaintEngine"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				32
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"paintEngine(void) --> QPaintEngine"+char(34)+","
+			]
+		]
+	],
+	[
+		33,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"paperRect(QPrinter::Unit unit) --> QRectF"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"paperRect(QPrinter::Unit unit) --> QRectF"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				33
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"paperRect(QPrinter::Unit unit) --> QRectF"+char(34)+","
+			]
+		]
+	],
+	[
+		34,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"paperSource(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"paperSource(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				34
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"paperSource(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		35,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"printEngine(void) --> QPrintEngine"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"printEngine(void) --> QPrintEngine"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				35
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"printEngine(void) --> QPrintEngine"+char(34)+","
+			]
+		]
+	],
+	[
+		36,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"printerName(void) --> QString"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"printerName(void) --> QString"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				36
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"printerName(void) --> QString"+char(34)+","
+			]
+		]
+	],
+	[
+		37,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"printerSelectionOption(void) --> QString"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"printerSelectionOption(void) --> QString"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				37
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"printerSelectionOption(void) --> QString"+char(34)+","
+			]
+		]
+	],
+	[
+		38,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"printerState(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"printerState(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				38
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"printerState(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		39,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"printProgram(void) --> QString"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"printProgram(void) --> QString"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				39
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"printProgram(void) --> QString"+char(34)+","
+			]
+		]
+	],
+	[
+		40,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"printRange(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"printRange(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				40
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"printRange(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		41,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"resolution(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"resolution(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				41
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"resolution(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		42,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setCollateCopies(bool collate) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setCollateCopies(bool collate) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				42
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setCollateCopies(bool collate) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		43,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setColorMode(QPrinter::ColorMode newColorMode) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setColorMode(QPrinter::ColorMode newColorMode) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				43
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setColorMode(QPrinter::ColorMode newColorMode) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		44,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setCopyCount(int count) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setCopyCount(int count) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				44
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setCopyCount(int count) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		45,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setCreator(QString) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setCreator(QString) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				45
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setCreator(QString) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		46,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setDocName(QString) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setDocName(QString) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				46
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setDocName(QString) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		47,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setDuplex(QPrinter::DuplexMode duplex) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setDuplex(QPrinter::DuplexMode duplex) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				47
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setDuplex(QPrinter::DuplexMode duplex) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		48,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setFontEmbeddingEnabled(bool enable) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setFontEmbeddingEnabled(bool enable) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				48
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setFontEmbeddingEnabled(bool enable) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		49,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setFromTo(int from, int to) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setFromTo(int from, int to) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				49
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setFromTo(int from, int to) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		50,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setFullPage(bool fp) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setFullPage(bool fp) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				50
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setFullPage(bool fp) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		51,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setOutputFileName(QString) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setOutputFileName(QString) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				51
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setOutputFileName(QString) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		52,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setOutputFormat(QPrinter::OutputFormat format) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setOutputFormat(QPrinter::OutputFormat format) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				52
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setOutputFormat(QPrinter::OutputFormat format) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		53,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setPageOrder(QPrinter::PageOrder pageOrder) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setPageOrder(QPrinter::PageOrder pageOrder) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				53
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setPageOrder(QPrinter::PageOrder pageOrder) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		54,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setPageSizeMM(QSizeF) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setPageSizeMM(QSizeF) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				54
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setPageSizeMM(QSizeF) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		55,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setPaperSource(QPrinter::PaperSource source) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setPaperSource(QPrinter::PaperSource source) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				55
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setPaperSource(QPrinter::PaperSource source) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		56,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setPrinterName(QString) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setPrinterName(QString) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				56
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setPrinterName(QString) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		57,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setPrinterSelectionOption(QString) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setPrinterSelectionOption(QString) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				57
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setPrinterSelectionOption(QString) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		58,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setPrintProgram(QString) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setPrintProgram(QString) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				58
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setPrintProgram(QString) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		59,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setPrintRange(QPrinter::PrintRange) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setPrintRange(QPrinter::PrintRange) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				59
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setPrintRange(QPrinter::PrintRange) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		60,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setResolution(int dpi) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setResolution(int dpi) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				60
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setResolution(int dpi) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		61,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"supportsMultipleCopies(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"supportsMultipleCopies(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				61
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"supportsMultipleCopies(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		62,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"toPage(void) --> int"+char(34)+""
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"toPage(void) --> int"+char(34)+"
+"
+			],
+			[
+				"interactionid",
+				62
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"toPage(void) --> int"+char(34)+""
+			]
+		]
+	],
+	[
+		63,
+		1,
+		[
+			[
+				"name",
+				"]"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#]
+"
+			],
+			[
+				"interactionid",
+				63
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"]"
+			]
+		]
+	],
+	[
+		64,
+		1,
+		[
+			[
+				"name",
+				"*/"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#*/
+"
+			],
+			[
+				"interactionid",
+				64
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"*/"
+			]
+		]
+	],
+	[
+		65,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QPRINTERCLASS_IP_VALUE2LIST</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;إلغاء(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;منطقي&quot;,&quot;تجميع_النسخ(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;منطقي&quot;,&quot;وضعية_الألوان(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;عدد_صحيح&quot;,&quot;عدد_النسخ(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;عدد_صحيح&quot;,&quot;المنشئ(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;سلسلة_نصية&quot;,&quot;حذف(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;اسم_الوثيقة(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;سلسلة_نصية&quot;,&quot;الازدواج(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;عدد_صحيح&quot;,&quot;تمكين_تضمين_الخط(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;منطقي&quot;,&quot;من_الصفحة(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;عدد_صحيح&quot;,&quot;صفحة_كاملة(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;منطقي&quot;,&quot;تهيئة(&nbsp;الأب&nbsp;)&nbsp;--&gt;&nbsp;كائن&quot;,&quot;هل_صالح(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;منطقي&quot;,&quot;صفحة_جديدة(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;منطقي&quot;,&quot;مؤشر_كائن(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;مؤشر&quot;,&quot;اسم_ملف_الإخراج(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;سلسلة_نصية&quot;,&quot;تنسيق_الإخراج(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;عدد_صحيح&quot;,&quot;ترتيب_الصفحات(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;عدد_صحيح&quot;,&quot;مستطيل_الصفحة(&nbsp;وحدة_الطابعة&nbsp;وحدة&nbsp;)&nbsp;--&gt;&nbsp;مستطيل_عائم&quot;,&quot;محرك_الرسم(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;محرك_الرسم&quot;,&quot;مستطيل_الورق(&nbsp;وحدة_الطابعة&nbsp;وحدة&nbsp;)&nbsp;--&gt;&nbsp;مستطيل_عائم&quot;,&quot;مصدر_الورق(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;عدد_صحيح&quot;,&quot;محرك_الطباعة(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;محرك_الطباعة&quot;,&quot;اسم_الطابعة(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;سلسلة_نصية&quot;,&quot;خيار_اختيار_الطابعة(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;سلسلة_نصية&quot;,&quot;حالة_الطابعة(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;عدد_صحيح&quot;,&quot;برنامج_الطباعة(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;سلسلة_نصية&quot;,&quot;نطاق_الطباعة(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;عدد_صحيح&quot;,&quot;الدقة(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;عدد_صحيح&quot;,&quot;تعيين_تجميع_النسخ(&nbsp;منطقي&nbsp;تجميع&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_وضعية_الألوان(&nbsp;وضعية_الألوان&nbsp;الجديدة&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_عدد_النسخ(&nbsp;عدد_صحيح&nbsp;عدد&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_المنشئ(&nbsp;سلسلة_نصية&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_اسم_الوثيقة(&nbsp;سلسلة_نصية&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_الازدواج(&nbsp;وضعية_الازدواج&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_تمكين_تضمين_الخط(&nbsp;منطقي&nbsp;تمكين&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_من_إلى(&nbsp;عدد_صحيح&nbsp;من,&nbsp;عدد_صحيح&nbsp;إلى&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_صفحة_كاملة(&nbsp;منطقي&nbsp;صفحة_كاملة&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_اسم_ملف_الإخراج(&nbsp;سلسلة_نصية&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_تنسيق_الإخراج(&nbsp;تنسيق_الإخراج&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_ترتيب_الصفحات(&nbsp;ترتيب_الصفحات&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_حجم_الصفحة_مم(&nbsp;حجم_عائم&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_مصدر_الورق(&nbsp;مصدر_الورق&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_اسم_الطابعة(&nbsp;سلسلة_نصية&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_خيار_اختيار_الطابعة(&nbsp;سلسلة_نصية&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_برنامج_الطباعة(&nbsp;سلسلة_نصية&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_نطاق_الطباعة(&nbsp;نطاق_الطباعة&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;تعيين_الدقة(&nbsp;عدد_صحيح&nbsp;نقطة_لكل_بوصة&nbsp;)&nbsp;--&gt;&nbsp;لا&nbsp;شيء&quot;,&quot;يدعم_نسخ_متعددة(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;منطقي&quot;,&quot;إلى_الصفحة(&nbsp;لا&nbsp;شيء&nbsp;)&nbsp;--&gt;&nbsp;عدد_صحيح&quot;]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_CT_QPRINTERCLASS_IP_VALUE2LIST = ["+char(34)+"إلغاء( لا شيء ) --> منطقي"+char(34)+","+char(34)+"تجميع_النسخ( لا شيء ) --> منطقي"+char(34)+","+char(34)+"وضعية_الألوان( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"عدد_النسخ( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"المنشئ( لا شيء ) --> سلسلة_نصية"+char(34)+","+char(34)+"حذف( لا شيء ) --> لا شيء"+char(34)+","+char(34)+"اسم_الوثيقة( لا شيء ) --> سلسلة_نصية"+char(34)+","+char(34)+"الازدواج( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"تمكين_تضمين_الخط( لا شيء ) --> منطقي"+char(34)+","+char(34)+"من_الصفحة( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"صفحة_كاملة( لا شيء ) --> منطقي"+char(34)+","+char(34)+"تهيئة( الأب ) --> كائن"+char(34)+","+char(34)+"هل_صالح( لا شيء ) --> منطقي"+char(34)+","+char(34)+"صفحة_جديدة( لا شيء ) --> منطقي"+char(34)+","+char(34)+"مؤشر_كائن( لا شيء ) --> مؤشر"+char(34)+","+char(34)+"اسم_ملف_الإخراج( لا شيء ) --> سلسلة_نصية"+char(34)+","+char(34)+"تنسيق_الإخراج( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"ترتيب_الصفحات( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"مستطيل_الصفحة( وحدة_الطابعة وحدة ) --> مستطيل_عائم"+char(34)+","+char(34)+"محرك_الرسم( لا شيء ) --> محرك_الرسم"+char(34)+","+char(34)+"مستطيل_الورق( وحدة_الطابعة وحدة ) --> مستطيل_عائم"+char(34)+","+char(34)+"مصدر_الورق( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"محرك_الطباعة( لا شيء ) --> محرك_الطباعة"+char(34)+","+char(34)+"اسم_الطابعة( لا شيء ) --> سلسلة_نصية"+char(34)+","+char(34)+"خيار_اختيار_الطابعة( لا شيء ) --> سلسلة_نصية"+char(34)+","+char(34)+"حالة_الطابعة( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"برنامج_الطباعة( لا شيء ) --> سلسلة_نصية"+char(34)+","+char(34)+"نطاق_الطباعة( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"الدقة( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"تعيين_تجميع_النسخ( منطقي تجميع ) --> لا شيء"+char(34)+","+char(34)+"تعيين_وضعية_الألوان( وضعية_الألوان الجديدة ) --> لا شيء"+char(34)+","+char(34)+"تعيين_عدد_النسخ( عدد_صحيح عدد ) --> لا شيء"+char(34)+","+char(34)+"تعيين_المنشئ( سلسلة_نصية ) --> لا شيء"+char(34)+","+char(34)+"تعيين_اسم_الوثيقة( سلسلة_نصية ) --> لا شيء"+char(34)+","+char(34)+"تعيين_الازدواج( وضعية_الازدواج ) --> لا شيء"+char(34)+","+char(34)+"تعيين_تمكين_تضمين_الخط( منطقي تمكين ) --> لا شيء"+char(34)+","+char(34)+"تعيين_من_إلى( عدد_صحيح من, عدد_صحيح إلى ) --> لا شيء"+char(34)+","+char(34)+"تعيين_صفحة_كاملة( منطقي صفحة_كاملة ) --> لا شيء"+char(34)+","+char(34)+"تعيين_اسم_ملف_الإخراج( سلسلة_نصية ) --> لا شيء"+char(34)+","+char(34)+"تعيين_تنسيق_الإخراج( تنسيق_الإخراج ) --> لا شيء"+char(34)+","+char(34)+"تعيين_ترتيب_الصفحات( ترتيب_الصفحات ) --> لا شيء"+char(34)+","+char(34)+"تعيين_حجم_الصفحة_مم( حجم_عائم ) --> لا شيء"+char(34)+","+char(34)+"تعيين_مصدر_الورق( مصدر_الورق ) --> لا شيء"+char(34)+","+char(34)+"تعيين_اسم_الطابعة( سلسلة_نصية ) --> لا شيء"+char(34)+","+char(34)+"تعيين_خيار_اختيار_الطابعة( سلسلة_نصية ) --> لا شيء"+char(34)+","+char(34)+"تعيين_برنامج_الطباعة( سلسلة_نصية ) --> لا شيء"+char(34)+","+char(34)+"تعيين_نطاق_الطباعة( نطاق_الطباعة ) --> لا شيء"+char(34)+","+char(34)+"تعيين_الدقة( عدد_صحيح نقطة_لكل_بوصة ) --> لا شيء"+char(34)+","+char(34)+"يدعم_نسخ_متعددة( لا شيء ) --> منطقي"+char(34)+","+char(34)+"إلى_الصفحة( لا شيء ) --> عدد_صحيح"+char(34)+"]"
+			],
+			[
+				"interactionid",
+				65
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_CT_QPRINTERCLASS_IP_VALUE2LIST = ["+char(34)+"إلغاء( لا شيء ) --> منطقي"+char(34)+","+char(34)+"تجميع_النسخ( لا شيء ) --> منطقي"+char(34)+","+char(34)+"وضعية_الألوان( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"عدد_النسخ( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"المنشئ( لا شيء ) --> سلسلة_نصية"+char(34)+","+char(34)+"حذف( لا شيء ) --> لا شيء"+char(34)+","+char(34)+"اسم_الوثيقة( لا شيء ) --> سلسلة_نصية"+char(34)+","+char(34)+"الازدواج( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"تمكين_تضمين_الخط( لا شيء ) --> منطقي"+char(34)+","+char(34)+"من_الصفحة( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"صفحة_كاملة( لا شيء ) --> منطقي"+char(34)+","+char(34)+"تهيئة( الأب ) --> كائن"+char(34)+","+char(34)+"هل_صالح( لا شيء ) --> منطقي"+char(34)+","+char(34)+"صفحة_جديدة( لا شيء ) --> منطقي"+char(34)+","+char(34)+"مؤشر_كائن( لا شيء ) --> مؤشر"+char(34)+","+char(34)+"اسم_ملف_الإخراج( لا شيء ) --> سلسلة_نصية"+char(34)+","+char(34)+"تنسيق_الإخراج( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"ترتيب_الصفحات( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"مستطيل_الصفحة( وحدة_الطابعة وحدة ) --> مستطيل_عائم"+char(34)+","+char(34)+"محرك_الرسم( لا شيء ) --> محرك_الرسم"+char(34)+","+char(34)+"مستطيل_الورق( وحدة_الطابعة وحدة ) --> مستطيل_عائم"+char(34)+","+char(34)+"مصدر_الورق( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"محرك_الطباعة( لا شيء ) --> محرك_الطباعة"+char(34)+","+char(34)+"اسم_الطابعة( لا شيء ) --> سلسلة_نصية"+char(34)+","+char(34)+"خيار_اختيار_الطابعة( لا شيء ) --> سلسلة_نصية"+char(34)+","+char(34)+"حالة_الطابعة( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"برنامج_الطباعة( لا شيء ) --> سلسلة_نصية"+char(34)+","+char(34)+"نطاق_الطباعة( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"الدقة( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"تعيين_تجميع_النسخ( منطقي تجميع ) --> لا شيء"+char(34)+","+char(34)+"تعيين_وضعية_الألوان( وضعية_الألوان الجديدة ) --> لا شيء"+char(34)+","+char(34)+"تعيين_عدد_النسخ( عدد_صحيح عدد ) --> لا شيء"+char(34)+","+char(34)+"تعيين_المنشئ( سلسلة_نصية ) --> لا شيء"+char(34)+","+char(34)+"تعيين_اسم_الوثيقة( سلسلة_نصية ) --> لا شيء"+char(34)+","+char(34)+"تعيين_الازدواج( وضعية_الازدواج ) --> لا شيء"+char(34)+","+char(34)+"تعيين_تمكين_تضمين_الخط( منطقي تمكين ) --> لا شيء"+char(34)+","+char(34)+"تعيين_من_إلى( عدد_صحيح من, عدد_صحيح إلى ) --> لا شيء"+char(34)+","+char(34)+"تعيين_صفحة_كاملة( منطقي صفحة_كاملة ) --> لا شيء"+char(34)+","+char(34)+"تعيين_اسم_ملف_الإخراج( سلسلة_نصية ) --> لا شيء"+char(34)+","+char(34)+"تعيين_تنسيق_الإخراج( تنسيق_الإخراج ) --> لا شيء"+char(34)+","+char(34)+"تعيين_ترتيب_الصفحات( ترتيب_الصفحات ) --> لا شيء"+char(34)+","+char(34)+"تعيين_حجم_الصفحة_مم( حجم_عائم ) --> لا شيء"+char(34)+","+char(34)+"تعيين_مصدر_الورق( مصدر_الورق ) --> لا شيء"+char(34)+","+char(34)+"تعيين_اسم_الطابعة( سلسلة_نصية ) --> لا شيء"+char(34)+","+char(34)+"تعيين_خيار_اختيار_الطابعة( سلسلة_نصية ) --> لا شيء"+char(34)+","+char(34)+"تعيين_برنامج_الطباعة( سلسلة_نصية ) --> لا شيء"+char(34)+","+char(34)+"تعيين_نطاق_الطباعة( نطاق_الطباعة ) --> لا شيء"+char(34)+","+char(34)+"تعيين_الدقة( عدد_صحيح نقطة_لكل_بوصة ) --> لا شيء"+char(34)+","+char(34)+"يدعم_نسخ_متعددة( لا شيء ) --> منطقي"+char(34)+","+char(34)+"إلى_الصفحة( لا شيء ) --> عدد_صحيح"+char(34)+"]"
+			]
+		]
+	],
+	[
+		66,
 		1,
 		[
 			[
@@ -445,7 +2551,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				12
+				66
 			],
 			[
 				"visible",
@@ -466,7 +2572,7 @@ aStepsTable = [
 		]
 	],
 	[
-		13,
+		67,
 		1,
 		[
 			[
@@ -483,7 +2589,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				13
+				67
 			],
 			[
 				"visible",
@@ -504,7 +2610,7 @@ aStepsTable = [
 		]
 	],
 	[
-		14,
+		68,
 		1,
 		[
 			[
@@ -521,7 +2627,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				14
+				68
 			],
 			[
 				"visible",
@@ -542,12 +2648,12 @@ aStepsTable = [
 		]
 	],
 	[
-		15,
+		69,
 		1,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QPRINTERCLASS_IP_VALUE2STEPFUNC</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QPRINTERCLASS_IP_VALUE2FUNC</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QPRINTERCLASS_IP_VALUE2STEPFUNC</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;إلغاء&quot;,&quot;تجميع_النسخ&quot;,&quot;وضعية_الألوان&quot;,&quot;عدد_النسخ&quot;,&quot;المنشئ&quot;,&quot;حذف&quot;,&quot;اسم_الوثيقة&quot;,&quot;الازدواج&quot;,&quot;تمكين_تضمين_الخط&quot;,&quot;من_الصفحة&quot;,&quot;صفحة_كاملة&quot;,&quot;تهيئة&quot;,&quot;هل_صالح&quot;,&quot;صفحة_جديدة&quot;,&quot;مؤشر_كائن&quot;,&quot;اسم_ملف_الإخراج&quot;,&quot;تنسيق_الإخراج&quot;,&quot;ترتيب_الصفحات&quot;,&quot;مستطيل_الصفحة&quot;,&quot;محرك_الرسم&quot;,&quot;مستطيل_الورق&quot;,&quot;مصدر_الورق&quot;,&quot;محرك_الطباعة&quot;,&quot;اسم_الطابعة&quot;,&quot;خيار_اختيار_الطابعة&quot;,&quot;حالة_الطابعة&quot;,&quot;برنامج_الطباعة&quot;,&quot;نطاق_الطباعة&quot;,&quot;الدقة&quot;,&quot;تعيين_تجميع_النسخ&quot;,&quot;تعيين_وضعية_الألوان&quot;,&quot;تعيين_عدد_النسخ&quot;,&quot;تعيين_المنشئ&quot;,&quot;تعيين_اسم_الوثيقة&quot;,&quot;تعيين_الازدواج&quot;,&quot;تعيين_تمكين_تضمين_الخط&quot;,&quot;تعيين_من_إلى&quot;,&quot;تعيين_صفحة_كاملة&quot;,&quot;تعيين_اسم_ملف_الإخراج&quot;,&quot;تعيين_تنسيق_الإخراج&quot;,&quot;تعيين_ترتيب_الصفحات&quot;,&quot;تعيين_حجم_الصفحة_مم&quot;,&quot;تعيين_مصدر_الورق&quot;,&quot;تعيين_اسم_الطابعة&quot;,&quot;تعيين_خيار_اختيار_الطابعة&quot;,&quot;تعيين_برنامج_الطباعة&quot;,&quot;تعيين_نطاق_الطباعة&quot;,&quot;تعيين_الدقة&quot;,&quot;يدعم_نسخ_متعددة&quot;,&quot;إلى_الصفحة&quot;]</font></span>"
 			],
 			[
 				"active",
@@ -555,11 +2661,11 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_QPRINTERCLASS_IP_VALUE2STEPFUNC = T_CT_QPRINTERCLASS_IP_VALUE2FUNC"
+				"T_CT_QPRINTERCLASS_IP_VALUE2STEPFUNC = ["+char(34)+"إلغاء"+char(34)+","+char(34)+"تجميع_النسخ"+char(34)+","+char(34)+"وضعية_الألوان"+char(34)+","+char(34)+"عدد_النسخ"+char(34)+","+char(34)+"المنشئ"+char(34)+","+char(34)+"حذف"+char(34)+","+char(34)+"اسم_الوثيقة"+char(34)+","+char(34)+"الازدواج"+char(34)+","+char(34)+"تمكين_تضمين_الخط"+char(34)+","+char(34)+"من_الصفحة"+char(34)+","+char(34)+"صفحة_كاملة"+char(34)+","+char(34)+"تهيئة"+char(34)+","+char(34)+"هل_صالح"+char(34)+","+char(34)+"صفحة_جديدة"+char(34)+","+char(34)+"مؤشر_كائن"+char(34)+","+char(34)+"اسم_ملف_الإخراج"+char(34)+","+char(34)+"تنسيق_الإخراج"+char(34)+","+char(34)+"ترتيب_الصفحات"+char(34)+","+char(34)+"مستطيل_الصفحة"+char(34)+","+char(34)+"محرك_الرسم"+char(34)+","+char(34)+"مستطيل_الورق"+char(34)+","+char(34)+"مصدر_الورق"+char(34)+","+char(34)+"محرك_الطباعة"+char(34)+","+char(34)+"اسم_الطابعة"+char(34)+","+char(34)+"خيار_اختيار_الطابعة"+char(34)+","+char(34)+"حالة_الطابعة"+char(34)+","+char(34)+"برنامج_الطباعة"+char(34)+","+char(34)+"نطاق_الطباعة"+char(34)+","+char(34)+"الدقة"+char(34)+","+char(34)+"تعيين_تجميع_النسخ"+char(34)+","+char(34)+"تعيين_وضعية_الألوان"+char(34)+","+char(34)+"تعيين_عدد_النسخ"+char(34)+","+char(34)+"تعيين_المنشئ"+char(34)+","+char(34)+"تعيين_اسم_الوثيقة"+char(34)+","+char(34)+"تعيين_الازدواج"+char(34)+","+char(34)+"تعيين_تمكين_تضمين_الخط"+char(34)+","+char(34)+"تعيين_من_إلى"+char(34)+","+char(34)+"تعيين_صفحة_كاملة"+char(34)+","+char(34)+"تعيين_اسم_ملف_الإخراج"+char(34)+","+char(34)+"تعيين_تنسيق_الإخراج"+char(34)+","+char(34)+"تعيين_ترتيب_الصفحات"+char(34)+","+char(34)+"تعيين_حجم_الصفحة_مم"+char(34)+","+char(34)+"تعيين_مصدر_الورق"+char(34)+","+char(34)+"تعيين_اسم_الطابعة"+char(34)+","+char(34)+"تعيين_خيار_اختيار_الطابعة"+char(34)+","+char(34)+"تعيين_برنامج_الطباعة"+char(34)+","+char(34)+"تعيين_نطاق_الطباعة"+char(34)+","+char(34)+"تعيين_الدقة"+char(34)+","+char(34)+"يدعم_نسخ_متعددة"+char(34)+","+char(34)+"إلى_الصفحة"+char(34)+"]"
 			],
 			[
 				"interactionid",
-				15
+				69
 			],
 			[
 				"visible",
@@ -575,7 +2681,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"T_CT_QPRINTERCLASS_IP_VALUE2STEPFUNC = T_CT_QPRINTERCLASS_IP_VALUE2FUNC"
+				"T_CT_QPRINTERCLASS_IP_VALUE2STEPFUNC = ["+char(34)+"إلغاء"+char(34)+","+char(34)+"تجميع_النسخ"+char(34)+","+char(34)+"وضعية_الألوان"+char(34)+","+char(34)+"عدد_النسخ"+char(34)+","+char(34)+"المنشئ"+char(34)+","+char(34)+"حذف"+char(34)+","+char(34)+"اسم_الوثيقة"+char(34)+","+char(34)+"الازدواج"+char(34)+","+char(34)+"تمكين_تضمين_الخط"+char(34)+","+char(34)+"من_الصفحة"+char(34)+","+char(34)+"صفحة_كاملة"+char(34)+","+char(34)+"تهيئة"+char(34)+","+char(34)+"هل_صالح"+char(34)+","+char(34)+"صفحة_جديدة"+char(34)+","+char(34)+"مؤشر_كائن"+char(34)+","+char(34)+"اسم_ملف_الإخراج"+char(34)+","+char(34)+"تنسيق_الإخراج"+char(34)+","+char(34)+"ترتيب_الصفحات"+char(34)+","+char(34)+"مستطيل_الصفحة"+char(34)+","+char(34)+"محرك_الرسم"+char(34)+","+char(34)+"مستطيل_الورق"+char(34)+","+char(34)+"مصدر_الورق"+char(34)+","+char(34)+"محرك_الطباعة"+char(34)+","+char(34)+"اسم_الطابعة"+char(34)+","+char(34)+"خيار_اختيار_الطابعة"+char(34)+","+char(34)+"حالة_الطابعة"+char(34)+","+char(34)+"برنامج_الطباعة"+char(34)+","+char(34)+"نطاق_الطباعة"+char(34)+","+char(34)+"الدقة"+char(34)+","+char(34)+"تعيين_تجميع_النسخ"+char(34)+","+char(34)+"تعيين_وضعية_الألوان"+char(34)+","+char(34)+"تعيين_عدد_النسخ"+char(34)+","+char(34)+"تعيين_المنشئ"+char(34)+","+char(34)+"تعيين_اسم_الوثيقة"+char(34)+","+char(34)+"تعيين_الازدواج"+char(34)+","+char(34)+"تعيين_تمكين_تضمين_الخط"+char(34)+","+char(34)+"تعيين_من_إلى"+char(34)+","+char(34)+"تعيين_صفحة_كاملة"+char(34)+","+char(34)+"تعيين_اسم_ملف_الإخراج"+char(34)+","+char(34)+"تعيين_تنسيق_الإخراج"+char(34)+","+char(34)+"تعيين_ترتيب_الصفحات"+char(34)+","+char(34)+"تعيين_حجم_الصفحة_مم"+char(34)+","+char(34)+"تعيين_مصدر_الورق"+char(34)+","+char(34)+"تعيين_اسم_الطابعة"+char(34)+","+char(34)+"تعيين_خيار_اختيار_الطابعة"+char(34)+","+char(34)+"تعيين_برنامج_الطباعة"+char(34)+","+char(34)+"تعيين_نطاق_الطباعة"+char(34)+","+char(34)+"تعيين_الدقة"+char(34)+","+char(34)+"يدعم_نسخ_متعددة"+char(34)+","+char(34)+"إلى_الصفحة"+char(34)+"]"
 			]
 		]
 	]
@@ -586,121 +2692,553 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"07/02/2025",
-		"18:37:51",
+		"20/02/2025",
+		"23:00:59",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:37:51",
+		"20/02/2025",
+		"23:00:59",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:37:51",
+		"20/02/2025",
+		"23:00:59",
 		"value;;_RV_;;**	Project : Programming Without Coding Technology (PWCT) Version 2.0;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:37:51",
+		"20/02/2025",
+		"23:00:59",
 		"value;;_RV_;;**	File Purpose :  qprinterclass Component;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:37:51",
+		"20/02/2025",
+		"23:00:59",
 		"value;;_RV_;;**	Date : 2021.08.09;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:37:51",
+		"20/02/2025",
+		"23:00:59",
 		"value;;_RV_;;**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:37:51",
+		"20/02/2025",
+		"23:00:59",
 		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:37:51",
+		"20/02/2025",
+		"23:00:59",
 		"leftside;;_RV_;;T_CT_QPRINTERCLASS_IP_TITLE;;_RV_;;rightside;;_RV_;;"+char(34)+"مكون فئة ال QPrinter"+char(34)+";;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:37:51",
+		"20/02/2025",
+		"23:00:59",
 		"leftside;;_RV_;;T_CT_QPRINTERCLASS_IP_VALUE;;_RV_;;rightside;;_RV_;;"+char(34)+"اسم الكائن :"+char(34)+";;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:37:51",
+		"20/02/2025",
+		"23:00:59",
 		"leftside;;_RV_;;T_CT_QPRINTERCLASS_IP_VALUE2;;_RV_;;rightside;;_RV_;;"+char(34)+"الميثود : "+char(34)+";;_RV_;;"
 	],
 	[
 		11,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:37:51",
-		"leftside;;_RV_;;T_CT_QPRINTERCLASS_IP_VALUE2LIST;;_RV_;;rightside;;_RV_;;["+char(34)+"abort(void) --> bool"+char(34)+","+char(34)+"collateCopies(void) --> bool"+char(34)+","+char(34)+"colorMode(void) --> int"+char(34)+","+char(34)+"copyCount(void) --> int"+char(34)+","+char(34)+"creator(void) --> QString"+char(34)+","+char(34)+"delete(void) --> void"+char(34)+","+char(34)+"docName(void) --> QString"+char(34)+","+char(34)+"duplex(void) --> int"+char(34)+","+char(34)+"fontEmbeddingEnabled(void) --> bool"+char(34)+","+char(34)+"fromPage(void) --> int"+char(34)+","+char(34)+"fullPage(void) --> bool"+char(34)+","+char(34)+"init(parent) --> object"+char(34)+","+char(34)+"isValid(void) --> bool"+char(34)+","+char(34)+"newPage(void) --> bool"+char(34)+","+char(34)+"objectpointer(void) --> pointer"+char(34)+","+char(34)+"outputFileName(void) --> QString"+char(34)+","+char(34)+"outputFormat(void) --> int"+char(34)+","+char(34)+"pageOrder(void) --> int"+char(34)+","+char(34)+"pageRect(QPrinter::Unit unit) --> QRectF"+char(34)+","+char(34)+"paintEngine(void) --> QPaintEngine"+char(34)+","+char(34)+"paperRect(QPrinter::Unit unit) --> QRectF"+char(34)+","+char(34)+"paperSource(void) --> int"+char(34)+","+char(34)+"printEngine(void) --> QPrintEngine"+char(34)+","+char(34)+"printerName(void) --> QString"+char(34)+","+char(34)+"printerSelectionOption(void) --> QString"+char(34)+","+char(34)+"printerState(void) --> int"+char(34)+","+char(34)+"printProgram(void) --> QString"+char(34)+","+char(34)+"printRange(void) --> int"+char(34)+","+char(34)+"resolution(void) --> int"+char(34)+","+char(34)+"setCollateCopies(bool collate) --> void"+char(34)+","+char(34)+"setColorMode(QPrinter::ColorMode newColorMode) --> void"+char(34)+","+char(34)+"setCopyCount(int count) --> void"+char(34)+","+char(34)+"setCreator(QString) --> void"+char(34)+","+char(34)+"setDocName(QString) --> void"+char(34)+","+char(34)+"setDuplex(QPrinter::DuplexMode duplex) --> void"+char(34)+","+char(34)+"setFontEmbeddingEnabled(bool enable) --> void"+char(34)+","+char(34)+"setFromTo(int from, int to) --> void"+char(34)+","+char(34)+"setFullPage(bool fp) --> void"+char(34)+","+char(34)+"setOutputFileName(QString) --> void"+char(34)+","+char(34)+"setOutputFormat(QPrinter::OutputFormat format) --> void"+char(34)+","+char(34)+"setPageOrder(QPrinter::PageOrder pageOrder) --> void"+char(34)+","+char(34)+"setPageSizeMM(QSizeF) --> void"+char(34)+","+char(34)+"setPaperSource(QPrinter::PaperSource source) --> void"+char(34)+","+char(34)+"setPrinterName(QString) --> void"+char(34)+","+char(34)+"setPrinterSelectionOption(QString) --> void"+char(34)+","+char(34)+"setPrintProgram(QString) --> void"+char(34)+","+char(34)+"setPrintRange(QPrinter::PrintRange) --> void"+char(34)+","+char(34)+"setResolution(int dpi) --> void"+char(34)+","+char(34)+"supportsMultipleCopies(void) --> bool"+char(34)+","+char(34)+"toPage(void) --> int"+char(34)+"];;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		12,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:37:51",
-		"leftside;;_RV_;;T_CT_QPRINTERCLASS_IP_VALUE3;;_RV_;;rightside;;_RV_;;"+char(34)+"المعطيات :"+char(34)+";;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;T_CT_QPRINTERCLASS_IP_VALUE2LIST = [;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		13,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:37:51",
-		"leftside;;_RV_;;T_CT_QPRINTERCLASS_IP_VALUE4;;_RV_;;rightside;;_RV_;;"+char(34)+"الناتج :"+char(34)+";;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"abort(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		14,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:37:51",
-		"leftside;;_RV_;;T_CT_QPRINTERCLASS_IP_VALUE2FUNC;;_RV_;;rightside;;_RV_;;["+char(34)+"abort"+char(34)+","+char(34)+"collatecopies"+char(34)+","+char(34)+"colormode"+char(34)+","+char(34)+"copycount"+char(34)+","+char(34)+"creator"+char(34)+","+char(34)+"delete"+char(34)+","+char(34)+"docname"+char(34)+","+char(34)+"duplex"+char(34)+","+char(34)+"fontembeddingenabled"+char(34)+","+char(34)+"frompage"+char(34)+","+char(34)+"fullpage"+char(34)+","+char(34)+"init"+char(34)+","+char(34)+"isvalid"+char(34)+","+char(34)+"newpage"+char(34)+","+char(34)+"objectpointer"+char(34)+","+char(34)+"outputfilename"+char(34)+","+char(34)+"outputformat"+char(34)+","+char(34)+"pageorder"+char(34)+","+char(34)+"pagerect"+char(34)+","+char(34)+"paintengine"+char(34)+","+char(34)+"paperrect"+char(34)+","+char(34)+"papersource"+char(34)+","+char(34)+"printengine"+char(34)+","+char(34)+"printername"+char(34)+","+char(34)+"printerselectionoption"+char(34)+","+char(34)+"printerstate"+char(34)+","+char(34)+"printprogram"+char(34)+","+char(34)+"printrange"+char(34)+","+char(34)+"resolution"+char(34)+","+char(34)+"setcollatecopies"+char(34)+","+char(34)+"setcolormode"+char(34)+","+char(34)+"setcopycount"+char(34)+","+char(34)+"setcreator"+char(34)+","+char(34)+"setdocname"+char(34)+","+char(34)+"setduplex"+char(34)+","+char(34)+"setfontembeddingenabled"+char(34)+","+char(34)+"setfromto"+char(34)+","+char(34)+"setfullpage"+char(34)+","+char(34)+"setoutputfilename"+char(34)+","+char(34)+"setoutputformat"+char(34)+","+char(34)+"setpageorder"+char(34)+","+char(34)+"setpagesizemm"+char(34)+","+char(34)+"setpapersource"+char(34)+","+char(34)+"setprintername"+char(34)+","+char(34)+"setprinterselectionoption"+char(34)+","+char(34)+"setprintprogram"+char(34)+","+char(34)+"setprintrange"+char(34)+","+char(34)+"setresolution"+char(34)+","+char(34)+"supportsmultiplecopies"+char(34)+","+char(34)+"topage"+char(34)+"];;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"collateCopies(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		15,
 		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"colorMode(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		16,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"copyCount(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		17,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"creator(void) --> QString"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		18,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"delete(void) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		19,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"docName(void) --> QString"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		20,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"duplex(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		21,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"fontEmbeddingEnabled(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		22,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"fromPage(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		23,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"fullPage(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		24,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"init(parent) --> object"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		25,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"isValid(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		26,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"newPage(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		27,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"objectpointer(void) --> pointer"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		28,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"outputFileName(void) --> QString"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		29,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"outputFormat(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		30,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"pageOrder(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		31,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"pageRect(QPrinter::Unit unit) --> QRectF"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		32,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"paintEngine(void) --> QPaintEngine"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		33,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"paperRect(QPrinter::Unit unit) --> QRectF"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		34,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"paperSource(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		35,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"printEngine(void) --> QPrintEngine"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		36,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"printerName(void) --> QString"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		37,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"printerSelectionOption(void) --> QString"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		38,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"printerState(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		39,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"printProgram(void) --> QString"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		40,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"printRange(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		41,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"resolution(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		42,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"setCollateCopies(bool collate) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		43,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"setColorMode(QPrinter::ColorMode newColorMode) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		44,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"setCopyCount(int count) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		45,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"setCreator(QString) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		46,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"setDocName(QString) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		47,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"setDuplex(QPrinter::DuplexMode duplex) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		48,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"setFontEmbeddingEnabled(bool enable) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		49,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"setFromTo(int from, int to) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		50,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"setFullPage(bool fp) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		51,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"setOutputFileName(QString) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		52,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"setOutputFormat(QPrinter::OutputFormat format) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		53,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"setPageOrder(QPrinter::PageOrder pageOrder) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		54,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"setPageSizeMM(QSizeF) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		55,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"setPaperSource(QPrinter::PaperSource source) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		56,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"setPrinterName(QString) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		57,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"setPrinterSelectionOption(QString) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		58,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"setPrintProgram(QString) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		59,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"setPrintRange(QPrinter::PrintRange) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		60,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"setResolution(int dpi) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		61,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"supportsMultipleCopies(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		62,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;	"+char(34)+"toPage(void) --> int"+char(34)+";;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		63,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;];;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		64,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:59",
+		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		65,
+		1,
 		"assignment",
-		"07/02/2025",
-		"18:37:51",
-		"leftside;;_RV_;;T_CT_QPRINTERCLASS_IP_VALUE2STEPFUNC;;_RV_;;rightside;;_RV_;;T_CT_QPRINTERCLASS_IP_VALUE2FUNC;;_RV_;;"
+		"20/02/2025",
+		"23:00:59",
+		"leftside;;_RV_;;T_CT_QPRINTERCLASS_IP_VALUE2LIST;;_RV_;;rightside;;_RV_;;["+char(34)+"إلغاء( لا شيء ) --> منطقي"+char(34)+","+char(34)+"تجميع_النسخ( لا شيء ) --> منطقي"+char(34)+","+char(34)+"وضعية_الألوان( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"عدد_النسخ( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"المنشئ( لا شيء ) --> سلسلة_نصية"+char(34)+","+char(34)+"حذف( لا شيء ) --> لا شيء"+char(34)+","+char(34)+"اسم_الوثيقة( لا شيء ) --> سلسلة_نصية"+char(34)+","+char(34)+"الازدواج( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"تمكين_تضمين_الخط( لا شيء ) --> منطقي"+char(34)+","+char(34)+"من_الصفحة( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"صفحة_كاملة( لا شيء ) --> منطقي"+char(34)+","+char(34)+"تهيئة( الأب ) --> كائن"+char(34)+","+char(34)+"هل_صالح( لا شيء ) --> منطقي"+char(34)+","+char(34)+"صفحة_جديدة( لا شيء ) --> منطقي"+char(34)+","+char(34)+"مؤشر_كائن( لا شيء ) --> مؤشر"+char(34)+","+char(34)+"اسم_ملف_الإخراج( لا شيء ) --> سلسلة_نصية"+char(34)+","+char(34)+"تنسيق_الإخراج( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"ترتيب_الصفحات( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"مستطيل_الصفحة( وحدة_الطابعة وحدة ) --> مستطيل_عائم"+char(34)+","+char(34)+"محرك_الرسم( لا شيء ) --> محرك_الرسم"+char(34)+","+char(34)+"مستطيل_الورق( وحدة_الطابعة وحدة ) --> مستطيل_عائم"+char(34)+","+char(34)+"مصدر_الورق( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"محرك_الطباعة( لا شيء ) --> محرك_الطباعة"+char(34)+","+char(34)+"اسم_الطابعة( لا شيء ) --> سلسلة_نصية"+char(34)+","+char(34)+"خيار_اختيار_الطابعة( لا شيء ) --> سلسلة_نصية"+char(34)+","+char(34)+"حالة_الطابعة( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"برنامج_الطباعة( لا شيء ) --> سلسلة_نصية"+char(34)+","+char(34)+"نطاق_الطباعة( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"الدقة( لا شيء ) --> عدد_صحيح"+char(34)+","+char(34)+"تعيين_تجميع_النسخ( منطقي تجميع ) --> لا شيء"+char(34)+","+char(34)+"تعيين_وضعية_الألوان( وضعية_الألوان الجديدة ) --> لا شيء"+char(34)+","+char(34)+"تعيين_عدد_النسخ( عدد_صحيح عدد ) --> لا شيء"+char(34)+","+char(34)+"تعيين_المنشئ( سلسلة_نصية ) --> لا شيء"+char(34)+","+char(34)+"تعيين_اسم_الوثيقة( سلسلة_نصية ) --> لا شيء"+char(34)+","+char(34)+"تعيين_الازدواج( وضعية_الازدواج ) --> لا شيء"+char(34)+","+char(34)+"تعيين_تمكين_تضمين_الخط( منطقي تمكين ) --> لا شيء"+char(34)+","+char(34)+"تعيين_من_إلى( عدد_صحيح من, عدد_صحيح إلى ) --> لا شيء"+char(34)+","+char(34)+"تعيين_صفحة_كاملة( منطقي صفحة_كاملة ) --> لا شيء"+char(34)+","+char(34)+"تعيين_اسم_ملف_الإخراج( سلسلة_نصية ) --> لا شيء"+char(34)+","+char(34)+"تعيين_تنسيق_الإخراج( تنسيق_الإخراج ) --> لا شيء"+char(34)+","+char(34)+"تعيين_ترتيب_الصفحات( ترتيب_الصفحات ) --> لا شيء"+char(34)+","+char(34)+"تعيين_حجم_الصفحة_مم( حجم_عائم ) --> لا شيء"+char(34)+","+char(34)+"تعيين_مصدر_الورق( مصدر_الورق ) --> لا شيء"+char(34)+","+char(34)+"تعيين_اسم_الطابعة( سلسلة_نصية ) --> لا شيء"+char(34)+","+char(34)+"تعيين_خيار_اختيار_الطابعة( سلسلة_نصية ) --> لا شيء"+char(34)+","+char(34)+"تعيين_برنامج_الطباعة( سلسلة_نصية ) --> لا شيء"+char(34)+","+char(34)+"تعيين_نطاق_الطباعة( نطاق_الطباعة ) --> لا شيء"+char(34)+","+char(34)+"تعيين_الدقة( عدد_صحيح نقطة_لكل_بوصة ) --> لا شيء"+char(34)+","+char(34)+"يدعم_نسخ_متعددة( لا شيء ) --> منطقي"+char(34)+","+char(34)+"إلى_الصفحة( لا شيء ) --> عدد_صحيح"+char(34)+"];;_RV_;;"
+	],
+	[
+		66,
+		1,
+		"assignment",
+		"20/02/2025",
+		"23:00:59",
+		"leftside;;_RV_;;T_CT_QPRINTERCLASS_IP_VALUE3;;_RV_;;rightside;;_RV_;;"+char(34)+"المعطيات :"+char(34)+";;_RV_;;"
+	],
+	[
+		67,
+		1,
+		"assignment",
+		"20/02/2025",
+		"23:00:59",
+		"leftside;;_RV_;;T_CT_QPRINTERCLASS_IP_VALUE4;;_RV_;;rightside;;_RV_;;"+char(34)+"الناتج :"+char(34)+";;_RV_;;"
+	],
+	[
+		68,
+		1,
+		"assignment",
+		"20/02/2025",
+		"23:00:59",
+		"leftside;;_RV_;;T_CT_QPRINTERCLASS_IP_VALUE2FUNC;;_RV_;;rightside;;_RV_;;["+char(34)+"abort"+char(34)+","+char(34)+"collatecopies"+char(34)+","+char(34)+"colormode"+char(34)+","+char(34)+"copycount"+char(34)+","+char(34)+"creator"+char(34)+","+char(34)+"delete"+char(34)+","+char(34)+"docname"+char(34)+","+char(34)+"duplex"+char(34)+","+char(34)+"fontembeddingenabled"+char(34)+","+char(34)+"frompage"+char(34)+","+char(34)+"fullpage"+char(34)+","+char(34)+"init"+char(34)+","+char(34)+"isvalid"+char(34)+","+char(34)+"newpage"+char(34)+","+char(34)+"objectpointer"+char(34)+","+char(34)+"outputfilename"+char(34)+","+char(34)+"outputformat"+char(34)+","+char(34)+"pageorder"+char(34)+","+char(34)+"pagerect"+char(34)+","+char(34)+"paintengine"+char(34)+","+char(34)+"paperrect"+char(34)+","+char(34)+"papersource"+char(34)+","+char(34)+"printengine"+char(34)+","+char(34)+"printername"+char(34)+","+char(34)+"printerselectionoption"+char(34)+","+char(34)+"printerstate"+char(34)+","+char(34)+"printprogram"+char(34)+","+char(34)+"printrange"+char(34)+","+char(34)+"resolution"+char(34)+","+char(34)+"setcollatecopies"+char(34)+","+char(34)+"setcolormode"+char(34)+","+char(34)+"setcopycount"+char(34)+","+char(34)+"setcreator"+char(34)+","+char(34)+"setdocname"+char(34)+","+char(34)+"setduplex"+char(34)+","+char(34)+"setfontembeddingenabled"+char(34)+","+char(34)+"setfromto"+char(34)+","+char(34)+"setfullpage"+char(34)+","+char(34)+"setoutputfilename"+char(34)+","+char(34)+"setoutputformat"+char(34)+","+char(34)+"setpageorder"+char(34)+","+char(34)+"setpagesizemm"+char(34)+","+char(34)+"setpapersource"+char(34)+","+char(34)+"setprintername"+char(34)+","+char(34)+"setprinterselectionoption"+char(34)+","+char(34)+"setprintprogram"+char(34)+","+char(34)+"setprintrange"+char(34)+","+char(34)+"setresolution"+char(34)+","+char(34)+"supportsmultiplecopies"+char(34)+","+char(34)+"topage"+char(34)+"];;_RV_;;"
+	],
+	[
+		69,
+		1,
+		"assignment",
+		"20/02/2025",
+		"23:00:59",
+		"leftside;;_RV_;;T_CT_QPRINTERCLASS_IP_VALUE2STEPFUNC;;_RV_;;rightside;;_RV_;;["+char(34)+"إلغاء"+char(34)+","+char(34)+"تجميع_النسخ"+char(34)+","+char(34)+"وضعية_الألوان"+char(34)+","+char(34)+"عدد_النسخ"+char(34)+","+char(34)+"المنشئ"+char(34)+","+char(34)+"حذف"+char(34)+","+char(34)+"اسم_الوثيقة"+char(34)+","+char(34)+"الازدواج"+char(34)+","+char(34)+"تمكين_تضمين_الخط"+char(34)+","+char(34)+"من_الصفحة"+char(34)+","+char(34)+"صفحة_كاملة"+char(34)+","+char(34)+"تهيئة"+char(34)+","+char(34)+"هل_صالح"+char(34)+","+char(34)+"صفحة_جديدة"+char(34)+","+char(34)+"مؤشر_كائن"+char(34)+","+char(34)+"اسم_ملف_الإخراج"+char(34)+","+char(34)+"تنسيق_الإخراج"+char(34)+","+char(34)+"ترتيب_الصفحات"+char(34)+","+char(34)+"مستطيل_الصفحة"+char(34)+","+char(34)+"محرك_الرسم"+char(34)+","+char(34)+"مستطيل_الورق"+char(34)+","+char(34)+"مصدر_الورق"+char(34)+","+char(34)+"محرك_الطباعة"+char(34)+","+char(34)+"اسم_الطابعة"+char(34)+","+char(34)+"خيار_اختيار_الطابعة"+char(34)+","+char(34)+"حالة_الطابعة"+char(34)+","+char(34)+"برنامج_الطباعة"+char(34)+","+char(34)+"نطاق_الطباعة"+char(34)+","+char(34)+"الدقة"+char(34)+","+char(34)+"تعيين_تجميع_النسخ"+char(34)+","+char(34)+"تعيين_وضعية_الألوان"+char(34)+","+char(34)+"تعيين_عدد_النسخ"+char(34)+","+char(34)+"تعيين_المنشئ"+char(34)+","+char(34)+"تعيين_اسم_الوثيقة"+char(34)+","+char(34)+"تعيين_الازدواج"+char(34)+","+char(34)+"تعيين_تمكين_تضمين_الخط"+char(34)+","+char(34)+"تعيين_من_إلى"+char(34)+","+char(34)+"تعيين_صفحة_كاملة"+char(34)+","+char(34)+"تعيين_اسم_ملف_الإخراج"+char(34)+","+char(34)+"تعيين_تنسيق_الإخراج"+char(34)+","+char(34)+"تعيين_ترتيب_الصفحات"+char(34)+","+char(34)+"تعيين_حجم_الصفحة_مم"+char(34)+","+char(34)+"تعيين_مصدر_الورق"+char(34)+","+char(34)+"تعيين_اسم_الطابعة"+char(34)+","+char(34)+"تعيين_خيار_اختيار_الطابعة"+char(34)+","+char(34)+"تعيين_برنامج_الطباعة"+char(34)+","+char(34)+"تعيين_نطاق_الطباعة"+char(34)+","+char(34)+"تعيين_الدقة"+char(34)+","+char(34)+"يدعم_نسخ_متعددة"+char(34)+","+char(34)+"إلى_الصفحة"+char(34)+"];;_RV_;;"
 	]
 ]
 

@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'english'
-nStepsID                 = 16		
-nInteractionsID          = 16
+nStepsID                 = 22		
+nInteractionsID          = 22
 
 aStepsTable = [
 	[
@@ -472,7 +472,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_INTERNETCLASS_IP_VALUE2STEPFUNC</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_INTERNETCLASS_IP_VALUE2FUNC</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_INTERNETCLASS_IP_VALUE2STEPFUNC</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;تحميل&quot;,&quot;ارسال_بريد_الكتروني&quot;]</font></span>"
 			],
 			[
 				"active",
@@ -480,7 +480,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_INTERNETCLASS_IP_VALUE2STEPFUNC = T_CT_INTERNETCLASS_IP_VALUE2FUNC"
+				"T_CT_INTERNETCLASS_IP_VALUE2STEPFUNC = ["+char(34)+"تحميل"+char(34)+","+char(34)+"ارسال_بريد_الكتروني"+char(34)+"]"
 			],
 			[
 				"interactionid",
@@ -500,7 +500,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"T_CT_INTERNETCLASS_IP_VALUE2STEPFUNC = T_CT_INTERNETCLASS_IP_VALUE2FUNC"
+				"T_CT_INTERNETCLASS_IP_VALUE2STEPFUNC = ["+char(34)+"تحميل"+char(34)+","+char(34)+"ارسال_بريد_الكتروني"+char(34)+"]"
 			]
 		]
 	],
@@ -510,7 +510,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_INTERNETCLASS_IP_VALUE2LIST</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;download(cURL)&nbsp;--&gt;&nbsp;String&quot;,&quot;sendemail(cSMTPServer,cEmail,cPassword,cSender,cReceiver,cCC,cTitle,cContent)&quot;]</font></span>"
+				"/*"
 			],
 			[
 				"active",
@@ -518,7 +518,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_INTERNETCLASS_IP_VALUE2LIST = ["+char(34)+"download(cURL) --> String"+char(34)+","+char(34)+"sendemail(cSMTPServer,cEmail,cPassword,cSender,cReceiver,cCC,cTitle,cContent)"+char(34)+"]"
+				"#/*
+"
 			],
 			[
 				"interactionid",
@@ -534,16 +535,249 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				2
+				1
 			],
 			[
 				"plainname",
-				"T_CT_INTERNETCLASS_IP_VALUE2LIST = ["+char(34)+"download(cURL) --> String"+char(34)+","+char(34)+"sendemail(cSMTPServer,cEmail,cPassword,cSender,cReceiver,cCC,cTitle,cContent)"+char(34)+"]"
+				"/*"
 			]
 		]
 	],
 	[
 		15,
+		1,
+		[
+			[
+				"name",
+				"T_CT_INTERNETCLASS_IP_VALUE2LIST = ["
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#T_CT_INTERNETCLASS_IP_VALUE2LIST = [
+"
+			],
+			[
+				"interactionid",
+				15
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"T_CT_INTERNETCLASS_IP_VALUE2LIST = ["
+			]
+		]
+	],
+	[
+		16,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"download(cURL) --> String"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"download(cURL) --> String"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				16
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"download(cURL) --> String"+char(34)+","
+			]
+		]
+	],
+	[
+		17,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"sendemail(cSMTPServer,cEmail,cPassword,cSender,cReceiver,cCC,cTitle,cContent)"+char(34)+""
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"sendemail(cSMTPServer,cEmail,cPassword,cSender,cReceiver,cCC,cTitle,cContent)"+char(34)+"
+"
+			],
+			[
+				"interactionid",
+				17
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"sendemail(cSMTPServer,cEmail,cPassword,cSender,cReceiver,cCC,cTitle,cContent)"+char(34)+""
+			]
+		]
+	],
+	[
+		18,
+		1,
+		[
+			[
+				"name",
+				"]"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#]
+"
+			],
+			[
+				"interactionid",
+				18
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"]"
+			]
+		]
+	],
+	[
+		19,
+		1,
+		[
+			[
+				"name",
+				"*/"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#*/
+"
+			],
+			[
+				"interactionid",
+				19
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"*/"
+			]
+		]
+	],
+	[
+		20,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_INTERNETCLASS_IP_VALUE2LIST</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;تحميل(رابط)&nbsp;--&gt;&nbsp;سلسلة&quot;,&quot;ارسال_بريد_الكتروني(خادم_SMTP,البريد_الالكتروني,كلمة_المرور,المرسل,المستلم,نسخة,عنوان,محتوى)&quot;]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_CT_INTERNETCLASS_IP_VALUE2LIST = ["+char(34)+"تحميل(رابط) --> سلسلة"+char(34)+","+char(34)+"ارسال_بريد_الكتروني(خادم_SMTP,البريد_الالكتروني,كلمة_المرور,المرسل,المستلم,نسخة,عنوان,محتوى)"+char(34)+"]"
+			],
+			[
+				"interactionid",
+				20
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_CT_INTERNETCLASS_IP_VALUE2LIST = ["+char(34)+"تحميل(رابط) --> سلسلة"+char(34)+","+char(34)+"ارسال_بريد_الكتروني(خادم_SMTP,البريد_الالكتروني,كلمة_المرور,المرسل,المستلم,نسخة,عنوان,محتوى)"+char(34)+"]"
+			]
+		]
+	],
+	[
+		21,
 		1,
 		[
 			[
@@ -560,7 +794,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				15
+				21
 			],
 			[
 				"visible",
@@ -581,7 +815,7 @@ aStepsTable = [
 		]
 	],
 	[
-		16,
+		22,
 		1,
 		[
 			[
@@ -598,7 +832,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				16
+				22
 			],
 			[
 				"visible",
@@ -625,128 +859,176 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"07/02/2025",
-		"18:34:40",
+		"20/02/2025",
+		"22:59:00",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:34:40",
+		"20/02/2025",
+		"22:59:00",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:34:40",
+		"20/02/2025",
+		"22:59:00",
 		"value;;_RV_;;**	Project : Programming Without Coding Technology (PWCT) Version 2.0;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:34:40",
+		"20/02/2025",
+		"22:59:00",
 		"value;;_RV_;;**	File Purpose :  internetclass Component;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:34:40",
+		"20/02/2025",
+		"22:59:00",
 		"value;;_RV_;;**	Date : 2018.03.16;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:34:40",
+		"20/02/2025",
+		"22:59:00",
 		"value;;_RV_;;**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:34:40",
+		"20/02/2025",
+		"22:59:00",
 		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:34:40",
+		"20/02/2025",
+		"22:59:00",
 		"leftside;;_RV_;;T_CT_INTERNETCLASS_IP_TITLE;;_RV_;;rightside;;_RV_;;"+char(34)+"مكون فئة الإنترنت "+char(34)+";;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:34:40",
+		"20/02/2025",
+		"22:59:00",
 		"leftside;;_RV_;;T_CT_INTERNETCLASS_IP_VALUE;;_RV_;;rightside;;_RV_;;"+char(34)+"اسم الكائن :"+char(34)+";;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:34:40",
+		"20/02/2025",
+		"22:59:00",
 		"leftside;;_RV_;;T_CT_INTERNETCLASS_IP_VALUE2;;_RV_;;rightside;;_RV_;;"+char(34)+"الميثود : "+char(34)+";;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:34:40",
+		"20/02/2025",
+		"22:59:00",
 		"leftside;;_RV_;;T_CT_INTERNETCLASS_IP_VALUE2FUNC;;_RV_;;rightside;;_RV_;;["+char(34)+"download"+char(34)+","+char(34)+"sendemail"+char(34)+"];;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:34:40",
+		"20/02/2025",
+		"22:59:00",
 		"value;;_RV_;;Copy the list to support changing the generated method name in the Steps Tree;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:34:40",
-		"leftside;;_RV_;;T_CT_INTERNETCLASS_IP_VALUE2STEPFUNC;;_RV_;;rightside;;_RV_;;T_CT_INTERNETCLASS_IP_VALUE2FUNC;;_RV_;;"
+		"20/02/2025",
+		"22:59:00",
+		"leftside;;_RV_;;T_CT_INTERNETCLASS_IP_VALUE2STEPFUNC;;_RV_;;rightside;;_RV_;;["+char(34)+"تحميل"+char(34)+","+char(34)+"ارسال_بريد_الكتروني"+char(34)+"];;_RV_;;"
 	],
 	[
 		14,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:34:40",
-		"leftside;;_RV_;;T_CT_INTERNETCLASS_IP_VALUE2LIST;;_RV_;;rightside;;_RV_;;["+char(34)+"download(cURL) --> String"+char(34)+","+char(34)+"sendemail(cSMTPServer,cEmail,cPassword,cSender,cReceiver,cCC,cTitle,cContent)"+char(34)+"];;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"22:59:00",
+		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		15,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:34:40",
-		"leftside;;_RV_;;T_CT_INTERNETCLASS_IP_VALUE3;;_RV_;;rightside;;_RV_;;"+char(34)+"المعطيات :"+char(34)+";;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"22:59:00",
+		"value;;_RV_;;T_CT_INTERNETCLASS_IP_VALUE2LIST = [;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		16,
 		1,
+		"comment_text",
+		"20/02/2025",
+		"22:59:00",
+		"value;;_RV_;;	"+char(34)+"download(cURL) --> String"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		17,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:59:00",
+		"value;;_RV_;;	"+char(34)+"sendemail(cSMTPServer,cEmail,cPassword,cSender,cReceiver,cCC,cTitle,cContent)"+char(34)+";;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		18,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:59:00",
+		"value;;_RV_;;];;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		19,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"22:59:00",
+		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		20,
+		1,
 		"assignment",
-		"07/02/2025",
-		"18:34:40",
+		"20/02/2025",
+		"22:59:00",
+		"leftside;;_RV_;;T_CT_INTERNETCLASS_IP_VALUE2LIST;;_RV_;;rightside;;_RV_;;["+char(34)+"تحميل(رابط) --> سلسلة"+char(34)+","+char(34)+"ارسال_بريد_الكتروني(خادم_SMTP,البريد_الالكتروني,كلمة_المرور,المرسل,المستلم,نسخة,عنوان,محتوى)"+char(34)+"];;_RV_;;"
+	],
+	[
+		21,
+		1,
+		"assignment",
+		"20/02/2025",
+		"22:59:00",
+		"leftside;;_RV_;;T_CT_INTERNETCLASS_IP_VALUE3;;_RV_;;rightside;;_RV_;;"+char(34)+"المعطيات :"+char(34)+";;_RV_;;"
+	],
+	[
+		22,
+		1,
+		"assignment",
+		"20/02/2025",
+		"22:59:00",
 		"leftside;;_RV_;;T_CT_INTERNETCLASS_IP_VALUE4;;_RV_;;rightside;;_RV_;;"+char(34)+"الناتج :"+char(34)+";;_RV_;;"
 	]
 ]

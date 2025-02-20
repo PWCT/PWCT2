@@ -641,10 +641,7 @@ class ComponentControllerParent from WindowsControllerParent
 		#	*/
 	} 
 	func Ring2PWCT cCode { 
-		lBeforeScannerStatus = T_RING2PWCT_USEBEFORESCANNER
-		T_RING2PWCT_USEBEFORESCANNER = False
-		parent().ComponentsBrowserWindow().TextualCodeToVisualCode(cCode)
-		T_RING2PWCT_USEBEFORESCANNER = lBeforeScannerStatus
+		parent().ComponentsBrowserWindow().EnglishTextualCodeToVisualCode(cCode)
 		#/*
 		#		Using Expression Builder
 		#	*/

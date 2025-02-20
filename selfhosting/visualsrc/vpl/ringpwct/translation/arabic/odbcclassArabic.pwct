@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'english'
-nStepsID                 = 16		
-nInteractionsID          = 16
+nStepsID                 = 35		
+nInteractionsID          = 35
 
 aStepsTable = [
 	[
@@ -472,7 +472,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_ODBCCLASS_IP_VALUE2STEPFUNC</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_ODBCCLASS_IP_VALUE2FUNC</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_ODBCCLASS_IP_VALUE2STEPFUNC</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;تفعيل_التنفيذ_التلقائي&quot;,&quot;اغلاق&quot;,&quot;عدد_الاعمدة&quot;,&quot;اعمدة&quot;,&quot;تنفيذ&quot;,&quot;اتصال&quot;,&quot;مصادر_البيانات&quot;,&quot;قطع_الاتصال&quot;,&quot;برامج_التشغيل&quot;,&quot;تنفيذ&quot;,&quot;جلب&quot;,&quot;احصل_على_بيانات&quot;,&quot;تهيئة&quot;,&quot;تراجع&quot;,&quot;جداول&quot;]</font></span>"
 			],
 			[
 				"active",
@@ -480,7 +480,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_ODBCCLASS_IP_VALUE2STEPFUNC = T_CT_ODBCCLASS_IP_VALUE2FUNC"
+				"T_CT_ODBCCLASS_IP_VALUE2STEPFUNC = ["+char(34)+"تفعيل_التنفيذ_التلقائي"+char(34)+","+char(34)+"اغلاق"+char(34)+","+char(34)+"عدد_الاعمدة"+char(34)+","+char(34)+"اعمدة"+char(34)+","+char(34)+"تنفيذ"+char(34)+","+char(34)+"اتصال"+char(34)+","+char(34)+"مصادر_البيانات"+char(34)+","+char(34)+"قطع_الاتصال"+char(34)+","+char(34)+"برامج_التشغيل"+char(34)+","+char(34)+"تنفيذ"+char(34)+","+char(34)+"جلب"+char(34)+","+char(34)+"احصل_على_بيانات"+char(34)+","+char(34)+"تهيئة"+char(34)+","+char(34)+"تراجع"+char(34)+","+char(34)+"جداول"+char(34)+"]"
 			],
 			[
 				"interactionid",
@@ -500,7 +500,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"T_CT_ODBCCLASS_IP_VALUE2STEPFUNC = T_CT_ODBCCLASS_IP_VALUE2FUNC"
+				"T_CT_ODBCCLASS_IP_VALUE2STEPFUNC = ["+char(34)+"تفعيل_التنفيذ_التلقائي"+char(34)+","+char(34)+"اغلاق"+char(34)+","+char(34)+"عدد_الاعمدة"+char(34)+","+char(34)+"اعمدة"+char(34)+","+char(34)+"تنفيذ"+char(34)+","+char(34)+"اتصال"+char(34)+","+char(34)+"مصادر_البيانات"+char(34)+","+char(34)+"قطع_الاتصال"+char(34)+","+char(34)+"برامج_التشغيل"+char(34)+","+char(34)+"تنفيذ"+char(34)+","+char(34)+"جلب"+char(34)+","+char(34)+"احصل_على_بيانات"+char(34)+","+char(34)+"تهيئة"+char(34)+","+char(34)+"تراجع"+char(34)+","+char(34)+"جداول"+char(34)+"]"
 			]
 		]
 	],
@@ -510,7 +510,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_ODBCCLASS_IP_VALUE2LIST</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;autocommit(lStatus)&quot;,&quot;close()&quot;,&quot;colcount()&nbsp;--&gt;&nbsp;Number&quot;,&quot;columns(cTableName)&nbsp;--&gt;&nbsp;List&quot;,&quot;commit()&quot;,&quot;connect(cConString)&nbsp;--&gt;&nbsp;lStatus&quot;,&quot;datasources()&nbsp;--&gt;&nbsp;List&quot;,&quot;disconnect()&quot;,&quot;drivers()&nbsp;--&gt;&nbsp;List&quot;,&quot;execute(cSQL)&nbsp;&quot;,&quot;fetch()&quot;,&quot;getdata(nColumn)&nbsp;--&gt;&nbsp;cValue&quot;,&quot;init()&quot;,&quot;rollback()&quot;,&quot;tables()&quot;]</font></span>"
+				"/*"
 			],
 			[
 				"active",
@@ -518,7 +518,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_ODBCCLASS_IP_VALUE2LIST = ["+char(34)+"autocommit(lStatus)"+char(34)+","+char(34)+"close()"+char(34)+","+char(34)+"colcount() --> Number"+char(34)+","+char(34)+"columns(cTableName) --> List"+char(34)+","+char(34)+"commit()"+char(34)+","+char(34)+"connect(cConString) --> lStatus"+char(34)+","+char(34)+"datasources() --> List"+char(34)+","+char(34)+"disconnect()"+char(34)+","+char(34)+"drivers() --> List"+char(34)+","+char(34)+"execute(cSQL) "+char(34)+","+char(34)+"fetch()"+char(34)+","+char(34)+"getdata(nColumn) --> cValue"+char(34)+","+char(34)+"init()"+char(34)+","+char(34)+"rollback()"+char(34)+","+char(34)+"tables()"+char(34)+"]"
+				"#/*
+"
 			],
 			[
 				"interactionid",
@@ -534,16 +535,756 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				2
+				1
 			],
 			[
 				"plainname",
-				"T_CT_ODBCCLASS_IP_VALUE2LIST = ["+char(34)+"autocommit(lStatus)"+char(34)+","+char(34)+"close()"+char(34)+","+char(34)+"colcount() --> Number"+char(34)+","+char(34)+"columns(cTableName) --> List"+char(34)+","+char(34)+"commit()"+char(34)+","+char(34)+"connect(cConString) --> lStatus"+char(34)+","+char(34)+"datasources() --> List"+char(34)+","+char(34)+"disconnect()"+char(34)+","+char(34)+"drivers() --> List"+char(34)+","+char(34)+"execute(cSQL) "+char(34)+","+char(34)+"fetch()"+char(34)+","+char(34)+"getdata(nColumn) --> cValue"+char(34)+","+char(34)+"init()"+char(34)+","+char(34)+"rollback()"+char(34)+","+char(34)+"tables()"+char(34)+"]"
+				"/*"
 			]
 		]
 	],
 	[
 		15,
+		1,
+		[
+			[
+				"name",
+				"T_CT_ODBCCLASS_IP_VALUE2LIST = ["
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#T_CT_ODBCCLASS_IP_VALUE2LIST = [
+"
+			],
+			[
+				"interactionid",
+				15
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"T_CT_ODBCCLASS_IP_VALUE2LIST = ["
+			]
+		]
+	],
+	[
+		16,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"autocommit(lStatus)"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"autocommit(lStatus)"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				16
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"autocommit(lStatus)"+char(34)+","
+			]
+		]
+	],
+	[
+		17,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"close()"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"close()"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				17
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"close()"+char(34)+","
+			]
+		]
+	],
+	[
+		18,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"colcount() --> Number"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"colcount() --> Number"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				18
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"colcount() --> Number"+char(34)+","
+			]
+		]
+	],
+	[
+		19,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"columns(cTableName) --> List"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"columns(cTableName) --> List"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				19
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"columns(cTableName) --> List"+char(34)+","
+			]
+		]
+	],
+	[
+		20,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"commit()"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"commit()"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				20
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"commit()"+char(34)+","
+			]
+		]
+	],
+	[
+		21,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"connect(cConString) --> lStatus"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"connect(cConString) --> lStatus"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				21
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"connect(cConString) --> lStatus"+char(34)+","
+			]
+		]
+	],
+	[
+		22,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"datasources() --> List"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"datasources() --> List"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				22
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"datasources() --> List"+char(34)+","
+			]
+		]
+	],
+	[
+		23,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"disconnect()"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"disconnect()"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				23
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"disconnect()"+char(34)+","
+			]
+		]
+	],
+	[
+		24,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"drivers() --> List"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"drivers() --> List"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				24
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"drivers() --> List"+char(34)+","
+			]
+		]
+	],
+	[
+		25,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"execute(cSQL) "+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"execute(cSQL) "+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				25
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"execute(cSQL) "+char(34)+","
+			]
+		]
+	],
+	[
+		26,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"fetch()"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"fetch()"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				26
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"fetch()"+char(34)+","
+			]
+		]
+	],
+	[
+		27,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"getdata(nColumn) --> cValue"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"getdata(nColumn) --> cValue"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				27
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"getdata(nColumn) --> cValue"+char(34)+","
+			]
+		]
+	],
+	[
+		28,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"init()"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"init()"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				28
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"init()"+char(34)+","
+			]
+		]
+	],
+	[
+		29,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"rollback()"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"rollback()"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				29
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"rollback()"+char(34)+","
+			]
+		]
+	],
+	[
+		30,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"tables()"+char(34)+""
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"tables()"+char(34)+"
+"
+			],
+			[
+				"interactionid",
+				30
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"tables()"+char(34)+""
+			]
+		]
+	],
+	[
+		31,
+		1,
+		[
+			[
+				"name",
+				"]"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#]
+"
+			],
+			[
+				"interactionid",
+				31
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"]"
+			]
+		]
+	],
+	[
+		32,
+		1,
+		[
+			[
+				"name",
+				"*/"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#*/
+"
+			],
+			[
+				"interactionid",
+				32
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"*/"
+			]
+		]
+	],
+	[
+		33,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_ODBCCLASS_IP_VALUE2LIST</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;تفعيل_التنفيذ_التلقائي(حالة)&quot;,&quot;اغلاق()&quot;,&quot;عدد_الاعمدة()&nbsp;--&gt;&nbsp;رقم&quot;,&quot;اعمدة(اسم_الجدول)&nbsp;--&gt;&nbsp;قائمة&quot;,&quot;تنفيذ()&quot;,&quot;اتصال(سلسلة_الاتصال)&nbsp;--&gt;&nbsp;حالة&quot;,&quot;مصادر_البيانات()&nbsp;--&gt;&nbsp;قائمة&quot;,&quot;قطع_الاتصال()&quot;,&quot;برامج_التشغيل()&nbsp;--&gt;&nbsp;قائمة&quot;,&quot;تنفيذ(كود_SQL)&quot;,&quot;جلب()&quot;,&quot;احصل_على_بيانات(عمود)&nbsp;--&gt;&nbsp;قيمة&quot;,&quot;تهيئة()&quot;,&quot;تراجع()&quot;,&quot;جداول()&quot;]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_CT_ODBCCLASS_IP_VALUE2LIST = ["+char(34)+"تفعيل_التنفيذ_التلقائي(حالة)"+char(34)+","+char(34)+"اغلاق()"+char(34)+","+char(34)+"عدد_الاعمدة() --> رقم"+char(34)+","+char(34)+"اعمدة(اسم_الجدول) --> قائمة"+char(34)+","+char(34)+"تنفيذ()"+char(34)+","+char(34)+"اتصال(سلسلة_الاتصال) --> حالة"+char(34)+","+char(34)+"مصادر_البيانات() --> قائمة"+char(34)+","+char(34)+"قطع_الاتصال()"+char(34)+","+char(34)+"برامج_التشغيل() --> قائمة"+char(34)+","+char(34)+"تنفيذ(كود_SQL)"+char(34)+","+char(34)+"جلب()"+char(34)+","+char(34)+"احصل_على_بيانات(عمود) --> قيمة"+char(34)+","+char(34)+"تهيئة()"+char(34)+","+char(34)+"تراجع()"+char(34)+","+char(34)+"جداول()"+char(34)+"]"
+			],
+			[
+				"interactionid",
+				33
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_CT_ODBCCLASS_IP_VALUE2LIST = ["+char(34)+"تفعيل_التنفيذ_التلقائي(حالة)"+char(34)+","+char(34)+"اغلاق()"+char(34)+","+char(34)+"عدد_الاعمدة() --> رقم"+char(34)+","+char(34)+"اعمدة(اسم_الجدول) --> قائمة"+char(34)+","+char(34)+"تنفيذ()"+char(34)+","+char(34)+"اتصال(سلسلة_الاتصال) --> حالة"+char(34)+","+char(34)+"مصادر_البيانات() --> قائمة"+char(34)+","+char(34)+"قطع_الاتصال()"+char(34)+","+char(34)+"برامج_التشغيل() --> قائمة"+char(34)+","+char(34)+"تنفيذ(كود_SQL)"+char(34)+","+char(34)+"جلب()"+char(34)+","+char(34)+"احصل_على_بيانات(عمود) --> قيمة"+char(34)+","+char(34)+"تهيئة()"+char(34)+","+char(34)+"تراجع()"+char(34)+","+char(34)+"جداول()"+char(34)+"]"
+			]
+		]
+	],
+	[
+		34,
 		1,
 		[
 			[
@@ -560,7 +1301,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				15
+				34
 			],
 			[
 				"visible",
@@ -581,7 +1322,7 @@ aStepsTable = [
 		]
 	],
 	[
-		16,
+		35,
 		1,
 		[
 			[
@@ -598,7 +1339,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				16
+				35
 			],
 			[
 				"visible",
@@ -625,128 +1366,280 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"07/02/2025",
-		"18:36:34",
+		"20/02/2025",
+		"23:00:11",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:36:34",
+		"20/02/2025",
+		"23:00:11",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:36:34",
+		"20/02/2025",
+		"23:00:11",
 		"value;;_RV_;;**	Project : Programming Without Coding Technology (PWCT) Version 2.0;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:36:34",
+		"20/02/2025",
+		"23:00:11",
 		"value;;_RV_;;**	File Purpose :  odbcclass Component;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:36:34",
+		"20/02/2025",
+		"23:00:11",
 		"value;;_RV_;;**	Date : 2018.03.16;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:36:34",
+		"20/02/2025",
+		"23:00:11",
 		"value;;_RV_;;**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:36:34",
+		"20/02/2025",
+		"23:00:11",
 		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:36:34",
+		"20/02/2025",
+		"23:00:11",
 		"leftside;;_RV_;;T_CT_ODBCCLASS_IP_TITLE;;_RV_;;rightside;;_RV_;;"+char(34)+"مكون فئة الإتصال عبر ODBC "+char(34)+";;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:36:34",
+		"20/02/2025",
+		"23:00:11",
 		"leftside;;_RV_;;T_CT_ODBCCLASS_IP_VALUE;;_RV_;;rightside;;_RV_;;"+char(34)+"اسم الكائن :"+char(34)+";;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:36:34",
+		"20/02/2025",
+		"23:00:11",
 		"leftside;;_RV_;;T_CT_ODBCCLASS_IP_VALUE2;;_RV_;;rightside;;_RV_;;"+char(34)+"الميثود : "+char(34)+";;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:36:34",
+		"20/02/2025",
+		"23:00:11",
 		"leftside;;_RV_;;T_CT_ODBCCLASS_IP_VALUE2FUNC;;_RV_;;rightside;;_RV_;;["+char(34)+"autocommit"+char(34)+","+char(34)+"close"+char(34)+","+char(34)+"colcount"+char(34)+","+char(34)+"columns"+char(34)+","+char(34)+"commit"+char(34)+","+char(34)+"connect"+char(34)+","+char(34)+"datasources"+char(34)+","+char(34)+"disconnect"+char(34)+","+char(34)+"drivers"+char(34)+","+char(34)+"execute"+char(34)+","+char(34)+"fetch"+char(34)+","+char(34)+"getdata"+char(34)+","+char(34)+"init"+char(34)+","+char(34)+"rollback"+char(34)+","+char(34)+"tables"+char(34)+"];;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:36:34",
+		"20/02/2025",
+		"23:00:11",
 		"value;;_RV_;;Copy the list to support changing the generated method name in the Steps Tree;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:36:34",
-		"leftside;;_RV_;;T_CT_ODBCCLASS_IP_VALUE2STEPFUNC;;_RV_;;rightside;;_RV_;;T_CT_ODBCCLASS_IP_VALUE2FUNC;;_RV_;;"
+		"20/02/2025",
+		"23:00:11",
+		"leftside;;_RV_;;T_CT_ODBCCLASS_IP_VALUE2STEPFUNC;;_RV_;;rightside;;_RV_;;["+char(34)+"تفعيل_التنفيذ_التلقائي"+char(34)+","+char(34)+"اغلاق"+char(34)+","+char(34)+"عدد_الاعمدة"+char(34)+","+char(34)+"اعمدة"+char(34)+","+char(34)+"تنفيذ"+char(34)+","+char(34)+"اتصال"+char(34)+","+char(34)+"مصادر_البيانات"+char(34)+","+char(34)+"قطع_الاتصال"+char(34)+","+char(34)+"برامج_التشغيل"+char(34)+","+char(34)+"تنفيذ"+char(34)+","+char(34)+"جلب"+char(34)+","+char(34)+"احصل_على_بيانات"+char(34)+","+char(34)+"تهيئة"+char(34)+","+char(34)+"تراجع"+char(34)+","+char(34)+"جداول"+char(34)+"];;_RV_;;"
 	],
 	[
 		14,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:36:34",
-		"leftside;;_RV_;;T_CT_ODBCCLASS_IP_VALUE2LIST;;_RV_;;rightside;;_RV_;;["+char(34)+"autocommit(lStatus)"+char(34)+","+char(34)+"close()"+char(34)+","+char(34)+"colcount() --> Number"+char(34)+","+char(34)+"columns(cTableName) --> List"+char(34)+","+char(34)+"commit()"+char(34)+","+char(34)+"connect(cConString) --> lStatus"+char(34)+","+char(34)+"datasources() --> List"+char(34)+","+char(34)+"disconnect()"+char(34)+","+char(34)+"drivers() --> List"+char(34)+","+char(34)+"execute(cSQL) "+char(34)+","+char(34)+"fetch()"+char(34)+","+char(34)+"getdata(nColumn) --> cValue"+char(34)+","+char(34)+"init()"+char(34)+","+char(34)+"rollback()"+char(34)+","+char(34)+"tables()"+char(34)+"];;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"23:00:11",
+		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		15,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:36:34",
-		"leftside;;_RV_;;T_CT_ODBCCLASS_IP_VALUE3;;_RV_;;rightside;;_RV_;;"+char(34)+"المعطيات :"+char(34)+";;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"23:00:11",
+		"value;;_RV_;;T_CT_ODBCCLASS_IP_VALUE2LIST = [;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		16,
 		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:11",
+		"value;;_RV_;;	"+char(34)+"autocommit(lStatus)"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		17,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:11",
+		"value;;_RV_;;	"+char(34)+"close()"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		18,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:11",
+		"value;;_RV_;;	"+char(34)+"colcount() --> Number"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		19,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:11",
+		"value;;_RV_;;	"+char(34)+"columns(cTableName) --> List"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		20,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:11",
+		"value;;_RV_;;	"+char(34)+"commit()"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		21,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:11",
+		"value;;_RV_;;	"+char(34)+"connect(cConString) --> lStatus"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		22,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:11",
+		"value;;_RV_;;	"+char(34)+"datasources() --> List"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		23,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:11",
+		"value;;_RV_;;	"+char(34)+"disconnect()"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		24,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:11",
+		"value;;_RV_;;	"+char(34)+"drivers() --> List"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		25,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:11",
+		"value;;_RV_;;	"+char(34)+"execute(cSQL) "+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		26,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:11",
+		"value;;_RV_;;	"+char(34)+"fetch()"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		27,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:11",
+		"value;;_RV_;;	"+char(34)+"getdata(nColumn) --> cValue"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		28,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:11",
+		"value;;_RV_;;	"+char(34)+"init()"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		29,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:11",
+		"value;;_RV_;;	"+char(34)+"rollback()"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		30,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:11",
+		"value;;_RV_;;	"+char(34)+"tables()"+char(34)+";;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		31,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:11",
+		"value;;_RV_;;];;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		32,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:00:11",
+		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		33,
+		1,
 		"assignment",
-		"07/02/2025",
-		"18:36:34",
+		"20/02/2025",
+		"23:00:11",
+		"leftside;;_RV_;;T_CT_ODBCCLASS_IP_VALUE2LIST;;_RV_;;rightside;;_RV_;;["+char(34)+"تفعيل_التنفيذ_التلقائي(حالة)"+char(34)+","+char(34)+"اغلاق()"+char(34)+","+char(34)+"عدد_الاعمدة() --> رقم"+char(34)+","+char(34)+"اعمدة(اسم_الجدول) --> قائمة"+char(34)+","+char(34)+"تنفيذ()"+char(34)+","+char(34)+"اتصال(سلسلة_الاتصال) --> حالة"+char(34)+","+char(34)+"مصادر_البيانات() --> قائمة"+char(34)+","+char(34)+"قطع_الاتصال()"+char(34)+","+char(34)+"برامج_التشغيل() --> قائمة"+char(34)+","+char(34)+"تنفيذ(كود_SQL)"+char(34)+","+char(34)+"جلب()"+char(34)+","+char(34)+"احصل_على_بيانات(عمود) --> قيمة"+char(34)+","+char(34)+"تهيئة()"+char(34)+","+char(34)+"تراجع()"+char(34)+","+char(34)+"جداول()"+char(34)+"];;_RV_;;"
+	],
+	[
+		34,
+		1,
+		"assignment",
+		"20/02/2025",
+		"23:00:11",
+		"leftside;;_RV_;;T_CT_ODBCCLASS_IP_VALUE3;;_RV_;;rightside;;_RV_;;"+char(34)+"المعطيات :"+char(34)+";;_RV_;;"
+	],
+	[
+		35,
+		1,
+		"assignment",
+		"20/02/2025",
+		"23:00:11",
 		"leftside;;_RV_;;T_CT_ODBCCLASS_IP_VALUE4;;_RV_;;rightside;;_RV_;;"+char(34)+"الناتج :"+char(34)+";;_RV_;;"
 	]
 ]

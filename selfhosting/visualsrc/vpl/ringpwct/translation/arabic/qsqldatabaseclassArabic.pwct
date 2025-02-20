@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'english'
-nStepsID                 = 15		
-nInteractionsID          = 15
+nStepsID                 = 61		
+nInteractionsID          = 61
 
 aStepsTable = [
 	[
@@ -395,7 +395,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QSQLDATABASECLASS_IP_VALUE2LIST</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;addDatabase(QString)&nbsp;--&gt;&nbsp;QSqlDatabase&quot;,&quot;cloneDatabase(QSqlDatabase,&nbsp;QString)&nbsp;--&gt;&nbsp;QSqlDatabase&quot;,&quot;close(void)&nbsp;--&gt;&nbsp;void&quot;,&quot;commit(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;connectionName(void)&nbsp;--&gt;&nbsp;QString&quot;,&quot;connectionNames(void)&nbsp;--&gt;&nbsp;QStringList&quot;,&quot;connectOptions(void)&nbsp;--&gt;&nbsp;QString&quot;,&quot;contains(QString)&nbsp;--&gt;&nbsp;bool&quot;,&quot;database(QString&nbsp;,&nbsp;bool)&nbsp;--&gt;&nbsp;QSqlDatabase&quot;,&quot;databaseName(void)&nbsp;--&gt;&nbsp;QString&quot;,&quot;delete(void)&nbsp;--&gt;&nbsp;void&quot;,&quot;driver(void)&nbsp;--&gt;&nbsp;QSqlDriver&quot;,&quot;driverName(void)&nbsp;--&gt;&nbsp;QString&quot;,&quot;drivers(void)&nbsp;--&gt;&nbsp;QStringList&quot;,&quot;exec(QString)&nbsp;--&gt;&nbsp;QSqlQuery&quot;,&quot;hostName(void)&nbsp;--&gt;&nbsp;QString&quot;,&quot;init(parent)&nbsp;--&gt;&nbsp;object&quot;,&quot;isDriverAvailable(QString)&nbsp;--&gt;&nbsp;bool&quot;,&quot;isOpen(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;isOpenError(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;isValid(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;lastError(void)&nbsp;--&gt;&nbsp;QSqlError&quot;,&quot;numericalPrecisionPolicy(void)&nbsp;--&gt;&nbsp;QSql::NumericalPrecisionPolicy&quot;,&quot;objectpointer(void)&nbsp;--&gt;&nbsp;pointer&quot;,&quot;open(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;password(void)&nbsp;--&gt;&nbsp;QString&quot;,&quot;port(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;primaryIndex(QString)&nbsp;--&gt;&nbsp;QSqlIndex&quot;,&quot;record(QString)&nbsp;--&gt;&nbsp;QSqlRecord&quot;,&quot;registerSqlDriver(QString,&nbsp;QSqlDriverCreatorBase&nbsp;*)&nbsp;--&gt;&nbsp;void&quot;,&quot;removeDatabase(QString)&nbsp;--&gt;&nbsp;void&quot;,&quot;rollback(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;setConnectOptions(QString)&nbsp;--&gt;&nbsp;void&quot;,&quot;setDatabaseName(QString)&nbsp;--&gt;&nbsp;void&quot;,&quot;setHostName(QString)&nbsp;--&gt;&nbsp;void&quot;,&quot;setNumericalPrecisionPolicy(QSql::NumericalPrecisionPolicy&nbsp;precisionPolicy)&nbsp;--&gt;&nbsp;void&quot;,&quot;setPassword(QString)&nbsp;--&gt;&nbsp;void&quot;,&quot;setPort(int&nbsp;port)&nbsp;--&gt;&nbsp;void&quot;,&quot;setUserName(QString)&nbsp;--&gt;&nbsp;void&quot;,&quot;tables(QSql::TableType&nbsp;type)&nbsp;--&gt;&nbsp;QStringList&quot;,&quot;transaction(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;userName(void)&nbsp;--&gt;&nbsp;QString&quot;]</font></span>"
+				"/*"
 			],
 			[
 				"active",
@@ -403,7 +403,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_QSQLDATABASECLASS_IP_VALUE2LIST = ["+char(34)+"addDatabase(QString) --> QSqlDatabase"+char(34)+","+char(34)+"cloneDatabase(QSqlDatabase, QString) --> QSqlDatabase"+char(34)+","+char(34)+"close(void) --> void"+char(34)+","+char(34)+"commit(void) --> bool"+char(34)+","+char(34)+"connectionName(void) --> QString"+char(34)+","+char(34)+"connectionNames(void) --> QStringList"+char(34)+","+char(34)+"connectOptions(void) --> QString"+char(34)+","+char(34)+"contains(QString) --> bool"+char(34)+","+char(34)+"database(QString , bool) --> QSqlDatabase"+char(34)+","+char(34)+"databaseName(void) --> QString"+char(34)+","+char(34)+"delete(void) --> void"+char(34)+","+char(34)+"driver(void) --> QSqlDriver"+char(34)+","+char(34)+"driverName(void) --> QString"+char(34)+","+char(34)+"drivers(void) --> QStringList"+char(34)+","+char(34)+"exec(QString) --> QSqlQuery"+char(34)+","+char(34)+"hostName(void) --> QString"+char(34)+","+char(34)+"init(parent) --> object"+char(34)+","+char(34)+"isDriverAvailable(QString) --> bool"+char(34)+","+char(34)+"isOpen(void) --> bool"+char(34)+","+char(34)+"isOpenError(void) --> bool"+char(34)+","+char(34)+"isValid(void) --> bool"+char(34)+","+char(34)+"lastError(void) --> QSqlError"+char(34)+","+char(34)+"numericalPrecisionPolicy(void) --> QSql::NumericalPrecisionPolicy"+char(34)+","+char(34)+"objectpointer(void) --> pointer"+char(34)+","+char(34)+"open(void) --> bool"+char(34)+","+char(34)+"password(void) --> QString"+char(34)+","+char(34)+"port(void) --> int"+char(34)+","+char(34)+"primaryIndex(QString) --> QSqlIndex"+char(34)+","+char(34)+"record(QString) --> QSqlRecord"+char(34)+","+char(34)+"registerSqlDriver(QString, QSqlDriverCreatorBase *) --> void"+char(34)+","+char(34)+"removeDatabase(QString) --> void"+char(34)+","+char(34)+"rollback(void) --> bool"+char(34)+","+char(34)+"setConnectOptions(QString) --> void"+char(34)+","+char(34)+"setDatabaseName(QString) --> void"+char(34)+","+char(34)+"setHostName(QString) --> void"+char(34)+","+char(34)+"setNumericalPrecisionPolicy(QSql::NumericalPrecisionPolicy precisionPolicy) --> void"+char(34)+","+char(34)+"setPassword(QString) --> void"+char(34)+","+char(34)+"setPort(int port) --> void"+char(34)+","+char(34)+"setUserName(QString) --> void"+char(34)+","+char(34)+"tables(QSql::TableType type) --> QStringList"+char(34)+","+char(34)+"transaction(void) --> bool"+char(34)+","+char(34)+"userName(void) --> QString"+char(34)+"]"
+				"#/*
+"
 			],
 			[
 				"interactionid",
@@ -419,16 +420,1809 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				2
+				1
 			],
 			[
 				"plainname",
-				"T_CT_QSQLDATABASECLASS_IP_VALUE2LIST = ["+char(34)+"addDatabase(QString) --> QSqlDatabase"+char(34)+","+char(34)+"cloneDatabase(QSqlDatabase, QString) --> QSqlDatabase"+char(34)+","+char(34)+"close(void) --> void"+char(34)+","+char(34)+"commit(void) --> bool"+char(34)+","+char(34)+"connectionName(void) --> QString"+char(34)+","+char(34)+"connectionNames(void) --> QStringList"+char(34)+","+char(34)+"connectOptions(void) --> QString"+char(34)+","+char(34)+"contains(QString) --> bool"+char(34)+","+char(34)+"database(QString , bool) --> QSqlDatabase"+char(34)+","+char(34)+"databaseName(void) --> QString"+char(34)+","+char(34)+"delete(void) --> void"+char(34)+","+char(34)+"driver(void) --> QSqlDriver"+char(34)+","+char(34)+"driverName(void) --> QString"+char(34)+","+char(34)+"drivers(void) --> QStringList"+char(34)+","+char(34)+"exec(QString) --> QSqlQuery"+char(34)+","+char(34)+"hostName(void) --> QString"+char(34)+","+char(34)+"init(parent) --> object"+char(34)+","+char(34)+"isDriverAvailable(QString) --> bool"+char(34)+","+char(34)+"isOpen(void) --> bool"+char(34)+","+char(34)+"isOpenError(void) --> bool"+char(34)+","+char(34)+"isValid(void) --> bool"+char(34)+","+char(34)+"lastError(void) --> QSqlError"+char(34)+","+char(34)+"numericalPrecisionPolicy(void) --> QSql::NumericalPrecisionPolicy"+char(34)+","+char(34)+"objectpointer(void) --> pointer"+char(34)+","+char(34)+"open(void) --> bool"+char(34)+","+char(34)+"password(void) --> QString"+char(34)+","+char(34)+"port(void) --> int"+char(34)+","+char(34)+"primaryIndex(QString) --> QSqlIndex"+char(34)+","+char(34)+"record(QString) --> QSqlRecord"+char(34)+","+char(34)+"registerSqlDriver(QString, QSqlDriverCreatorBase *) --> void"+char(34)+","+char(34)+"removeDatabase(QString) --> void"+char(34)+","+char(34)+"rollback(void) --> bool"+char(34)+","+char(34)+"setConnectOptions(QString) --> void"+char(34)+","+char(34)+"setDatabaseName(QString) --> void"+char(34)+","+char(34)+"setHostName(QString) --> void"+char(34)+","+char(34)+"setNumericalPrecisionPolicy(QSql::NumericalPrecisionPolicy precisionPolicy) --> void"+char(34)+","+char(34)+"setPassword(QString) --> void"+char(34)+","+char(34)+"setPort(int port) --> void"+char(34)+","+char(34)+"setUserName(QString) --> void"+char(34)+","+char(34)+"tables(QSql::TableType type) --> QStringList"+char(34)+","+char(34)+"transaction(void) --> bool"+char(34)+","+char(34)+"userName(void) --> QString"+char(34)+"]"
+				"/*"
 			]
 		]
 	],
 	[
 		12,
+		1,
+		[
+			[
+				"name",
+				"T_CT_QSQLDATABASECLASS_IP_VALUE2LIST = ["
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#T_CT_QSQLDATABASECLASS_IP_VALUE2LIST = [
+"
+			],
+			[
+				"interactionid",
+				12
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"T_CT_QSQLDATABASECLASS_IP_VALUE2LIST = ["
+			]
+		]
+	],
+	[
+		13,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"addDatabase(QString) --> QSqlDatabase"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"addDatabase(QString) --> QSqlDatabase"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				13
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"addDatabase(QString) --> QSqlDatabase"+char(34)+","
+			]
+		]
+	],
+	[
+		14,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"cloneDatabase(QSqlDatabase, QString) --> QSqlDatabase"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"cloneDatabase(QSqlDatabase, QString) --> QSqlDatabase"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				14
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"cloneDatabase(QSqlDatabase, QString) --> QSqlDatabase"+char(34)+","
+			]
+		]
+	],
+	[
+		15,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"close(void) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"close(void) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				15
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"close(void) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		16,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"commit(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"commit(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				16
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"commit(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		17,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"connectionName(void) --> QString"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"connectionName(void) --> QString"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				17
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"connectionName(void) --> QString"+char(34)+","
+			]
+		]
+	],
+	[
+		18,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"connectionNames(void) --> QStringList"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"connectionNames(void) --> QStringList"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				18
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"connectionNames(void) --> QStringList"+char(34)+","
+			]
+		]
+	],
+	[
+		19,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"connectOptions(void) --> QString"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"connectOptions(void) --> QString"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				19
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"connectOptions(void) --> QString"+char(34)+","
+			]
+		]
+	],
+	[
+		20,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"contains(QString) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"contains(QString) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				20
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"contains(QString) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		21,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"database(QString , bool) --> QSqlDatabase"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"database(QString , bool) --> QSqlDatabase"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				21
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"database(QString , bool) --> QSqlDatabase"+char(34)+","
+			]
+		]
+	],
+	[
+		22,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"databaseName(void) --> QString"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"databaseName(void) --> QString"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				22
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"databaseName(void) --> QString"+char(34)+","
+			]
+		]
+	],
+	[
+		23,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"delete(void) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"delete(void) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				23
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"delete(void) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		24,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"driver(void) --> QSqlDriver"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"driver(void) --> QSqlDriver"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				24
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"driver(void) --> QSqlDriver"+char(34)+","
+			]
+		]
+	],
+	[
+		25,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"driverName(void) --> QString"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"driverName(void) --> QString"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				25
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"driverName(void) --> QString"+char(34)+","
+			]
+		]
+	],
+	[
+		26,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"drivers(void) --> QStringList"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"drivers(void) --> QStringList"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				26
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"drivers(void) --> QStringList"+char(34)+","
+			]
+		]
+	],
+	[
+		27,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"exec(QString) --> QSqlQuery"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"exec(QString) --> QSqlQuery"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				27
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"exec(QString) --> QSqlQuery"+char(34)+","
+			]
+		]
+	],
+	[
+		28,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"hostName(void) --> QString"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"hostName(void) --> QString"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				28
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"hostName(void) --> QString"+char(34)+","
+			]
+		]
+	],
+	[
+		29,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"init(parent) --> object"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"init(parent) --> object"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				29
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"init(parent) --> object"+char(34)+","
+			]
+		]
+	],
+	[
+		30,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"isDriverAvailable(QString) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"isDriverAvailable(QString) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				30
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"isDriverAvailable(QString) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		31,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"isOpen(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"isOpen(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				31
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"isOpen(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		32,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"isOpenError(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"isOpenError(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				32
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"isOpenError(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		33,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"isValid(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"isValid(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				33
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"isValid(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		34,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"lastError(void) --> QSqlError"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"lastError(void) --> QSqlError"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				34
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"lastError(void) --> QSqlError"+char(34)+","
+			]
+		]
+	],
+	[
+		35,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"numericalPrecisionPolicy(void) --> QSql::NumericalPrecisionPolicy"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"numericalPrecisionPolicy(void) --> QSql::NumericalPrecisionPolicy"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				35
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"numericalPrecisionPolicy(void) --> QSql::NumericalPrecisionPolicy"+char(34)+","
+			]
+		]
+	],
+	[
+		36,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"objectpointer(void) --> pointer"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"objectpointer(void) --> pointer"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				36
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"objectpointer(void) --> pointer"+char(34)+","
+			]
+		]
+	],
+	[
+		37,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"open(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"open(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				37
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"open(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		38,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"password(void) --> QString"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"password(void) --> QString"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				38
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"password(void) --> QString"+char(34)+","
+			]
+		]
+	],
+	[
+		39,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"port(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"port(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				39
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"port(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		40,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"primaryIndex(QString) --> QSqlIndex"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"primaryIndex(QString) --> QSqlIndex"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				40
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"primaryIndex(QString) --> QSqlIndex"+char(34)+","
+			]
+		]
+	],
+	[
+		41,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"record(QString) --> QSqlRecord"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"record(QString) --> QSqlRecord"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				41
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"record(QString) --> QSqlRecord"+char(34)+","
+			]
+		]
+	],
+	[
+		42,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"registerSqlDriver(QString, QSqlDriverCreatorBase *) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"registerSqlDriver(QString, QSqlDriverCreatorBase *) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				42
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"registerSqlDriver(QString, QSqlDriverCreatorBase *) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		43,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"removeDatabase(QString) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"removeDatabase(QString) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				43
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"removeDatabase(QString) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		44,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"rollback(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"rollback(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				44
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"rollback(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		45,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setConnectOptions(QString) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setConnectOptions(QString) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				45
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setConnectOptions(QString) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		46,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setDatabaseName(QString) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setDatabaseName(QString) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				46
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setDatabaseName(QString) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		47,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setHostName(QString) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setHostName(QString) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				47
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setHostName(QString) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		48,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setNumericalPrecisionPolicy(QSql::NumericalPrecisionPolicy precisionPolicy) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setNumericalPrecisionPolicy(QSql::NumericalPrecisionPolicy precisionPolicy) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				48
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setNumericalPrecisionPolicy(QSql::NumericalPrecisionPolicy precisionPolicy) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		49,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setPassword(QString) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setPassword(QString) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				49
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setPassword(QString) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		50,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setPort(int port) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setPort(int port) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				50
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setPort(int port) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		51,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setUserName(QString) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setUserName(QString) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				51
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setUserName(QString) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		52,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"tables(QSql::TableType type) --> QStringList"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"tables(QSql::TableType type) --> QStringList"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				52
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"tables(QSql::TableType type) --> QStringList"+char(34)+","
+			]
+		]
+	],
+	[
+		53,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"transaction(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"transaction(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				53
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"transaction(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		54,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"userName(void) --> QString"+char(34)+""
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"userName(void) --> QString"+char(34)+"
+"
+			],
+			[
+				"interactionid",
+				54
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"userName(void) --> QString"+char(34)+""
+			]
+		]
+	],
+	[
+		55,
+		1,
+		[
+			[
+				"name",
+				"]"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#]
+"
+			],
+			[
+				"interactionid",
+				55
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"]"
+			]
+		]
+	],
+	[
+		56,
+		1,
+		[
+			[
+				"name",
+				"*/"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#*/
+"
+			],
+			[
+				"interactionid",
+				56
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"*/"
+			]
+		]
+	],
+	[
+		57,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QSQLDATABASECLASS_IP_VALUE2LIST</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;إضافة&nbsp;قاعدة&nbsp;بيانات(نص)&nbsp;--&gt;&nbsp;قاعدة&nbsp;بيانات&quot;,&quot;استنساخ&nbsp;قاعدة&nbsp;بيانات(قاعدة&nbsp;بيانات،&nbsp;نص)&nbsp;--&gt;&nbsp;قاعدة&nbsp;بيانات&quot;,&quot;إغلاق(لاشىء)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;التزام(لاشىء)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;اسم&nbsp;الاتصال(لاشىء)&nbsp;--&gt;&nbsp;نص&quot;,&quot;أسماء&nbsp;الاتصال(لاشىء)&nbsp;--&gt;&nbsp;قائمة&nbsp;نصوص&quot;,&quot;خيارات&nbsp;الاتصال(لاشىء)&nbsp;--&gt;&nbsp;نص&quot;,&quot;يحتوي(نص)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;قاعدة&nbsp;بيانات(نص،&nbsp;منطقية)&nbsp;--&gt;&nbsp;قاعدة&nbsp;بيانات&quot;,&quot;اسم&nbsp;قاعدة&nbsp;البيانات(لاشىء)&nbsp;--&gt;&nbsp;نص&quot;,&quot;حذف(لاشىء)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;برنامج&nbsp;التشغيل(لاشىء)&nbsp;--&gt;&nbsp;برنامج&nbsp;تشغيل&quot;,&quot;اسم&nbsp;برنامج&nbsp;التشغيل(لاشىء)&nbsp;--&gt;&nbsp;نص&quot;,&quot;برامج&nbsp;التشغيل(لاشىء)&nbsp;--&gt;&nbsp;قائمة&nbsp;نصوص&quot;,&quot;تنفيذ(نص)&nbsp;--&gt;&nbsp;استعلام&nbsp;قاعدة&nbsp;بيانات&quot;,&quot;اسم&nbsp;المضيف(لاشىء)&nbsp;--&gt;&nbsp;نص&quot;,&quot;تهيئة(الأصل)&nbsp;--&gt;&nbsp;كائن&quot;,&quot;هل&nbsp;برنامج&nbsp;التشغيل&nbsp;متاح(نص)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;مفتوح(لاشىء)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;خطأ&nbsp;في&nbsp;الفتح(لاشىء)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;صالح(لاشىء)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;آخر&nbsp;خطأ(لاشىء)&nbsp;--&gt;&nbsp;خطأ&nbsp;قاعدة&nbsp;بيانات&quot;,&quot;سياسة&nbsp;الدقة&nbsp;التعددية(لاشىء)&nbsp;--&gt;&nbsp;سياسة&nbsp;الدقة&nbsp;التعددية&quot;,&quot;مؤشر&nbsp;الكائن(لاشىء)&nbsp;--&gt;&nbsp;مؤشر&quot;,&quot;فتح(لاشىء)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;كلمة&nbsp;مرور(لاشىء)&nbsp;--&gt;&nbsp;نص&quot;,&quot;منفذ(لاشىء)&nbsp;--&gt;&nbsp;عدد&nbsp;صحيح&quot;,&quot;الفهرس&nbsp;الأساسي(نص)&nbsp;--&gt;&nbsp;فهرس&nbsp;قاعدة&nbsp;بيانات&quot;,&quot;سجل(نص)&nbsp;--&gt;&nbsp;سجل&nbsp;قاعدة&nbsp;بيانات&quot;,&quot;تسجيل&nbsp;برنامج&nbsp;التشغيل(نص،&nbsp;منشئ&nbsp;برنامج&nbsp;التشغيل)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;إزالة&nbsp;قاعدة&nbsp;بيانات(نص)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;تراجع(لاشىء)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;تعيين&nbsp;خيارات&nbsp;الاتصال(نص)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;تعيين&nbsp;اسم&nbsp;قاعدة&nbsp;البيانات(نص)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;تعيين&nbsp;اسم&nbsp;المضيف(نص)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;تعيين&nbsp;سياسة&nbsp;الدقة&nbsp;التعددية(سياسة&nbsp;الدقة&nbsp;التعددية)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;تعيين&nbsp;كلمة&nbsp;المرور(نص)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;تعيين&nbsp;المنفذ(عدد&nbsp;صحيح)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;تعيين&nbsp;اسم&nbsp;المستخدم(نص)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;جداول(نوع&nbsp;الجدول)&nbsp;--&gt;&nbsp;قائمة&nbsp;نصوص&quot;,&quot;معاملة(لاشىء)&nbsp;--&gt;&nbsp;منطقية&quot;,&quot;اسم&nbsp;المستخدم(لاشىء)&nbsp;--&gt;&nbsp;نص&quot;]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_CT_QSQLDATABASECLASS_IP_VALUE2LIST = ["+char(34)+"إضافة قاعدة بيانات(نص) --> قاعدة بيانات"+char(34)+","+char(34)+"استنساخ قاعدة بيانات(قاعدة بيانات، نص) --> قاعدة بيانات"+char(34)+","+char(34)+"إغلاق(لاشىء) --> لاشىء"+char(34)+","+char(34)+"التزام(لاشىء) --> منطقية"+char(34)+","+char(34)+"اسم الاتصال(لاشىء) --> نص"+char(34)+","+char(34)+"أسماء الاتصال(لاشىء) --> قائمة نصوص"+char(34)+","+char(34)+"خيارات الاتصال(لاشىء) --> نص"+char(34)+","+char(34)+"يحتوي(نص) --> منطقية"+char(34)+","+char(34)+"قاعدة بيانات(نص، منطقية) --> قاعدة بيانات"+char(34)+","+char(34)+"اسم قاعدة البيانات(لاشىء) --> نص"+char(34)+","+char(34)+"حذف(لاشىء) --> لاشىء"+char(34)+","+char(34)+"برنامج التشغيل(لاشىء) --> برنامج تشغيل"+char(34)+","+char(34)+"اسم برنامج التشغيل(لاشىء) --> نص"+char(34)+","+char(34)+"برامج التشغيل(لاشىء) --> قائمة نصوص"+char(34)+","+char(34)+"تنفيذ(نص) --> استعلام قاعدة بيانات"+char(34)+","+char(34)+"اسم المضيف(لاشىء) --> نص"+char(34)+","+char(34)+"تهيئة(الأصل) --> كائن"+char(34)+","+char(34)+"هل برنامج التشغيل متاح(نص) --> منطقية"+char(34)+","+char(34)+"مفتوح(لاشىء) --> منطقية"+char(34)+","+char(34)+"خطأ في الفتح(لاشىء) --> منطقية"+char(34)+","+char(34)+"صالح(لاشىء) --> منطقية"+char(34)+","+char(34)+"آخر خطأ(لاشىء) --> خطأ قاعدة بيانات"+char(34)+","+char(34)+"سياسة الدقة التعددية(لاشىء) --> سياسة الدقة التعددية"+char(34)+","+char(34)+"مؤشر الكائن(لاشىء) --> مؤشر"+char(34)+","+char(34)+"فتح(لاشىء) --> منطقية"+char(34)+","+char(34)+"كلمة مرور(لاشىء) --> نص"+char(34)+","+char(34)+"منفذ(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"الفهرس الأساسي(نص) --> فهرس قاعدة بيانات"+char(34)+","+char(34)+"سجل(نص) --> سجل قاعدة بيانات"+char(34)+","+char(34)+"تسجيل برنامج التشغيل(نص، منشئ برنامج التشغيل) --> لاشىء"+char(34)+","+char(34)+"إزالة قاعدة بيانات(نص) --> لاشىء"+char(34)+","+char(34)+"تراجع(لاشىء) --> منطقية"+char(34)+","+char(34)+"تعيين خيارات الاتصال(نص) --> لاشىء"+char(34)+","+char(34)+"تعيين اسم قاعدة البيانات(نص) --> لاشىء"+char(34)+","+char(34)+"تعيين اسم المضيف(نص) --> لاشىء"+char(34)+","+char(34)+"تعيين سياسة الدقة التعددية(سياسة الدقة التعددية) --> لاشىء"+char(34)+","+char(34)+"تعيين كلمة المرور(نص) --> لاشىء"+char(34)+","+char(34)+"تعيين المنفذ(عدد صحيح) --> لاشىء"+char(34)+","+char(34)+"تعيين اسم المستخدم(نص) --> لاشىء"+char(34)+","+char(34)+"جداول(نوع الجدول) --> قائمة نصوص"+char(34)+","+char(34)+"معاملة(لاشىء) --> منطقية"+char(34)+","+char(34)+"اسم المستخدم(لاشىء) --> نص"+char(34)+"]"
+			],
+			[
+				"interactionid",
+				57
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_CT_QSQLDATABASECLASS_IP_VALUE2LIST = ["+char(34)+"إضافة قاعدة بيانات(نص) --> قاعدة بيانات"+char(34)+","+char(34)+"استنساخ قاعدة بيانات(قاعدة بيانات، نص) --> قاعدة بيانات"+char(34)+","+char(34)+"إغلاق(لاشىء) --> لاشىء"+char(34)+","+char(34)+"التزام(لاشىء) --> منطقية"+char(34)+","+char(34)+"اسم الاتصال(لاشىء) --> نص"+char(34)+","+char(34)+"أسماء الاتصال(لاشىء) --> قائمة نصوص"+char(34)+","+char(34)+"خيارات الاتصال(لاشىء) --> نص"+char(34)+","+char(34)+"يحتوي(نص) --> منطقية"+char(34)+","+char(34)+"قاعدة بيانات(نص، منطقية) --> قاعدة بيانات"+char(34)+","+char(34)+"اسم قاعدة البيانات(لاشىء) --> نص"+char(34)+","+char(34)+"حذف(لاشىء) --> لاشىء"+char(34)+","+char(34)+"برنامج التشغيل(لاشىء) --> برنامج تشغيل"+char(34)+","+char(34)+"اسم برنامج التشغيل(لاشىء) --> نص"+char(34)+","+char(34)+"برامج التشغيل(لاشىء) --> قائمة نصوص"+char(34)+","+char(34)+"تنفيذ(نص) --> استعلام قاعدة بيانات"+char(34)+","+char(34)+"اسم المضيف(لاشىء) --> نص"+char(34)+","+char(34)+"تهيئة(الأصل) --> كائن"+char(34)+","+char(34)+"هل برنامج التشغيل متاح(نص) --> منطقية"+char(34)+","+char(34)+"مفتوح(لاشىء) --> منطقية"+char(34)+","+char(34)+"خطأ في الفتح(لاشىء) --> منطقية"+char(34)+","+char(34)+"صالح(لاشىء) --> منطقية"+char(34)+","+char(34)+"آخر خطأ(لاشىء) --> خطأ قاعدة بيانات"+char(34)+","+char(34)+"سياسة الدقة التعددية(لاشىء) --> سياسة الدقة التعددية"+char(34)+","+char(34)+"مؤشر الكائن(لاشىء) --> مؤشر"+char(34)+","+char(34)+"فتح(لاشىء) --> منطقية"+char(34)+","+char(34)+"كلمة مرور(لاشىء) --> نص"+char(34)+","+char(34)+"منفذ(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"الفهرس الأساسي(نص) --> فهرس قاعدة بيانات"+char(34)+","+char(34)+"سجل(نص) --> سجل قاعدة بيانات"+char(34)+","+char(34)+"تسجيل برنامج التشغيل(نص، منشئ برنامج التشغيل) --> لاشىء"+char(34)+","+char(34)+"إزالة قاعدة بيانات(نص) --> لاشىء"+char(34)+","+char(34)+"تراجع(لاشىء) --> منطقية"+char(34)+","+char(34)+"تعيين خيارات الاتصال(نص) --> لاشىء"+char(34)+","+char(34)+"تعيين اسم قاعدة البيانات(نص) --> لاشىء"+char(34)+","+char(34)+"تعيين اسم المضيف(نص) --> لاشىء"+char(34)+","+char(34)+"تعيين سياسة الدقة التعددية(سياسة الدقة التعددية) --> لاشىء"+char(34)+","+char(34)+"تعيين كلمة المرور(نص) --> لاشىء"+char(34)+","+char(34)+"تعيين المنفذ(عدد صحيح) --> لاشىء"+char(34)+","+char(34)+"تعيين اسم المستخدم(نص) --> لاشىء"+char(34)+","+char(34)+"جداول(نوع الجدول) --> قائمة نصوص"+char(34)+","+char(34)+"معاملة(لاشىء) --> منطقية"+char(34)+","+char(34)+"اسم المستخدم(لاشىء) --> نص"+char(34)+"]"
+			]
+		]
+	],
+	[
+		58,
 		1,
 		[
 			[
@@ -445,7 +2239,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				12
+				58
 			],
 			[
 				"visible",
@@ -466,7 +2260,7 @@ aStepsTable = [
 		]
 	],
 	[
-		13,
+		59,
 		1,
 		[
 			[
@@ -483,7 +2277,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				13
+				59
 			],
 			[
 				"visible",
@@ -504,7 +2298,7 @@ aStepsTable = [
 		]
 	],
 	[
-		14,
+		60,
 		1,
 		[
 			[
@@ -521,7 +2315,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				14
+				60
 			],
 			[
 				"visible",
@@ -542,12 +2336,12 @@ aStepsTable = [
 		]
 	],
 	[
-		15,
+		61,
 		1,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QSQLDATABASECLASS_IP_VALUE2STEPFUNC</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QSQLDATABASECLASS_IP_VALUE2FUNC</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QSQLDATABASECLASS_IP_VALUE2STEPFUNC</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;إضافة&nbsp;قاعدة&nbsp;بيانات&quot;,&quot;استنساخ&nbsp;قاعدة&nbsp;بيانات&quot;,&quot;إغلاق&quot;,&quot;التزام&quot;,&quot;اسم&nbsp;الاتصال&quot;,&quot;أسماء&nbsp;الاتصال&quot;,&quot;خيارات&nbsp;الاتصال&quot;,&quot;يحتوي&quot;,&quot;قاعدة&nbsp;بيانات&quot;,&quot;اسم&nbsp;قاعدة&nbsp;البيانات&quot;,&quot;حذف&quot;,&quot;برنامج&nbsp;التشغيل&quot;,&quot;اسم&nbsp;برنامج&nbsp;التشغيل&quot;,&quot;برامج&nbsp;التشغيل&quot;,&quot;تنفيذ&quot;,&quot;اسم&nbsp;المضيف&quot;,&quot;تهيئة&quot;,&quot;هل&nbsp;برنامج&nbsp;التشغيل&nbsp;متاح&quot;,&quot;مفتوح&quot;,&quot;خطأ&nbsp;في&nbsp;الفتح&quot;,&quot;صالح&quot;,&quot;آخر&nbsp;خطأ&quot;,&quot;سياسة&nbsp;الدقة&nbsp;التعددية&quot;,&quot;مؤشر&nbsp;الكائن&quot;,&quot;فتح&quot;,&quot;كلمة&nbsp;مرور&quot;,&quot;منفذ&quot;,&quot;الفهرس&nbsp;الأساسي&quot;,&quot;سجل&quot;,&quot;تسجيل&nbsp;برنامج&nbsp;التشغيل&quot;,&quot;إزالة&nbsp;قاعدة&nbsp;بيانات&quot;,&quot;تراجع&quot;,&quot;تعيين&nbsp;خيارات&nbsp;الاتصال&quot;,&quot;تعيين&nbsp;اسم&nbsp;قاعدة&nbsp;البيانات&quot;,&quot;تعيين&nbsp;اسم&nbsp;المضيف&quot;,&quot;تعيين&nbsp;سياسة&nbsp;الدقة&nbsp;التعددية&quot;,&quot;تعيين&nbsp;كلمة&nbsp;المرور&quot;,&quot;تعيين&nbsp;المنفذ&quot;,&quot;تعيين&nbsp;اسم&nbsp;المستخدم&quot;,&quot;جداول&quot;,&quot;معاملة&quot;,&quot;اسم&nbsp;المستخدم&quot;]</font></span>"
 			],
 			[
 				"active",
@@ -555,11 +2349,11 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_QSQLDATABASECLASS_IP_VALUE2STEPFUNC = T_CT_QSQLDATABASECLASS_IP_VALUE2FUNC"
+				"T_CT_QSQLDATABASECLASS_IP_VALUE2STEPFUNC = ["+char(34)+"إضافة قاعدة بيانات"+char(34)+","+char(34)+"استنساخ قاعدة بيانات"+char(34)+","+char(34)+"إغلاق"+char(34)+","+char(34)+"التزام"+char(34)+","+char(34)+"اسم الاتصال"+char(34)+","+char(34)+"أسماء الاتصال"+char(34)+","+char(34)+"خيارات الاتصال"+char(34)+","+char(34)+"يحتوي"+char(34)+","+char(34)+"قاعدة بيانات"+char(34)+","+char(34)+"اسم قاعدة البيانات"+char(34)+","+char(34)+"حذف"+char(34)+","+char(34)+"برنامج التشغيل"+char(34)+","+char(34)+"اسم برنامج التشغيل"+char(34)+","+char(34)+"برامج التشغيل"+char(34)+","+char(34)+"تنفيذ"+char(34)+","+char(34)+"اسم المضيف"+char(34)+","+char(34)+"تهيئة"+char(34)+","+char(34)+"هل برنامج التشغيل متاح"+char(34)+","+char(34)+"مفتوح"+char(34)+","+char(34)+"خطأ في الفتح"+char(34)+","+char(34)+"صالح"+char(34)+","+char(34)+"آخر خطأ"+char(34)+","+char(34)+"سياسة الدقة التعددية"+char(34)+","+char(34)+"مؤشر الكائن"+char(34)+","+char(34)+"فتح"+char(34)+","+char(34)+"كلمة مرور"+char(34)+","+char(34)+"منفذ"+char(34)+","+char(34)+"الفهرس الأساسي"+char(34)+","+char(34)+"سجل"+char(34)+","+char(34)+"تسجيل برنامج التشغيل"+char(34)+","+char(34)+"إزالة قاعدة بيانات"+char(34)+","+char(34)+"تراجع"+char(34)+","+char(34)+"تعيين خيارات الاتصال"+char(34)+","+char(34)+"تعيين اسم قاعدة البيانات"+char(34)+","+char(34)+"تعيين اسم المضيف"+char(34)+","+char(34)+"تعيين سياسة الدقة التعددية"+char(34)+","+char(34)+"تعيين كلمة المرور"+char(34)+","+char(34)+"تعيين المنفذ"+char(34)+","+char(34)+"تعيين اسم المستخدم"+char(34)+","+char(34)+"جداول"+char(34)+","+char(34)+"معاملة"+char(34)+","+char(34)+"اسم المستخدم"+char(34)+"]"
 			],
 			[
 				"interactionid",
-				15
+				61
 			],
 			[
 				"visible",
@@ -575,7 +2369,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"T_CT_QSQLDATABASECLASS_IP_VALUE2STEPFUNC = T_CT_QSQLDATABASECLASS_IP_VALUE2FUNC"
+				"T_CT_QSQLDATABASECLASS_IP_VALUE2STEPFUNC = ["+char(34)+"إضافة قاعدة بيانات"+char(34)+","+char(34)+"استنساخ قاعدة بيانات"+char(34)+","+char(34)+"إغلاق"+char(34)+","+char(34)+"التزام"+char(34)+","+char(34)+"اسم الاتصال"+char(34)+","+char(34)+"أسماء الاتصال"+char(34)+","+char(34)+"خيارات الاتصال"+char(34)+","+char(34)+"يحتوي"+char(34)+","+char(34)+"قاعدة بيانات"+char(34)+","+char(34)+"اسم قاعدة البيانات"+char(34)+","+char(34)+"حذف"+char(34)+","+char(34)+"برنامج التشغيل"+char(34)+","+char(34)+"اسم برنامج التشغيل"+char(34)+","+char(34)+"برامج التشغيل"+char(34)+","+char(34)+"تنفيذ"+char(34)+","+char(34)+"اسم المضيف"+char(34)+","+char(34)+"تهيئة"+char(34)+","+char(34)+"هل برنامج التشغيل متاح"+char(34)+","+char(34)+"مفتوح"+char(34)+","+char(34)+"خطأ في الفتح"+char(34)+","+char(34)+"صالح"+char(34)+","+char(34)+"آخر خطأ"+char(34)+","+char(34)+"سياسة الدقة التعددية"+char(34)+","+char(34)+"مؤشر الكائن"+char(34)+","+char(34)+"فتح"+char(34)+","+char(34)+"كلمة مرور"+char(34)+","+char(34)+"منفذ"+char(34)+","+char(34)+"الفهرس الأساسي"+char(34)+","+char(34)+"سجل"+char(34)+","+char(34)+"تسجيل برنامج التشغيل"+char(34)+","+char(34)+"إزالة قاعدة بيانات"+char(34)+","+char(34)+"تراجع"+char(34)+","+char(34)+"تعيين خيارات الاتصال"+char(34)+","+char(34)+"تعيين اسم قاعدة البيانات"+char(34)+","+char(34)+"تعيين اسم المضيف"+char(34)+","+char(34)+"تعيين سياسة الدقة التعددية"+char(34)+","+char(34)+"تعيين كلمة المرور"+char(34)+","+char(34)+"تعيين المنفذ"+char(34)+","+char(34)+"تعيين اسم المستخدم"+char(34)+","+char(34)+"جداول"+char(34)+","+char(34)+"معاملة"+char(34)+","+char(34)+"اسم المستخدم"+char(34)+"]"
 			]
 		]
 	]
@@ -586,121 +2380,489 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"07/02/2025",
-		"18:38:05",
+		"20/02/2025",
+		"23:01:08",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:38:05",
+		"20/02/2025",
+		"23:01:08",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:38:05",
+		"20/02/2025",
+		"23:01:08",
 		"value;;_RV_;;**	Project : Programming Without Coding Technology (PWCT) Version 2.0;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:38:05",
+		"20/02/2025",
+		"23:01:08",
 		"value;;_RV_;;**	File Purpose :  qsqldatabaseclass Component;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:38:05",
+		"20/02/2025",
+		"23:01:08",
 		"value;;_RV_;;**	Date : 2021.08.09;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:38:05",
+		"20/02/2025",
+		"23:01:08",
 		"value;;_RV_;;**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:38:05",
+		"20/02/2025",
+		"23:01:08",
 		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:38:05",
+		"20/02/2025",
+		"23:01:08",
 		"leftside;;_RV_;;T_CT_QSQLDATABASECLASS_IP_TITLE;;_RV_;;rightside;;_RV_;;"+char(34)+"مكون فئة ال QSqlDatabase "+char(34)+";;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:38:05",
+		"20/02/2025",
+		"23:01:08",
 		"leftside;;_RV_;;T_CT_QSQLDATABASECLASS_IP_VALUE;;_RV_;;rightside;;_RV_;;"+char(34)+"اسم الكائن :"+char(34)+";;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:38:05",
+		"20/02/2025",
+		"23:01:08",
 		"leftside;;_RV_;;T_CT_QSQLDATABASECLASS_IP_VALUE2;;_RV_;;rightside;;_RV_;;"+char(34)+"الميثود : "+char(34)+";;_RV_;;"
 	],
 	[
 		11,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:38:05",
-		"leftside;;_RV_;;T_CT_QSQLDATABASECLASS_IP_VALUE2LIST;;_RV_;;rightside;;_RV_;;["+char(34)+"addDatabase(QString) --> QSqlDatabase"+char(34)+","+char(34)+"cloneDatabase(QSqlDatabase, QString) --> QSqlDatabase"+char(34)+","+char(34)+"close(void) --> void"+char(34)+","+char(34)+"commit(void) --> bool"+char(34)+","+char(34)+"connectionName(void) --> QString"+char(34)+","+char(34)+"connectionNames(void) --> QStringList"+char(34)+","+char(34)+"connectOptions(void) --> QString"+char(34)+","+char(34)+"contains(QString) --> bool"+char(34)+","+char(34)+"database(QString , bool) --> QSqlDatabase"+char(34)+","+char(34)+"databaseName(void) --> QString"+char(34)+","+char(34)+"delete(void) --> void"+char(34)+","+char(34)+"driver(void) --> QSqlDriver"+char(34)+","+char(34)+"driverName(void) --> QString"+char(34)+","+char(34)+"drivers(void) --> QStringList"+char(34)+","+char(34)+"exec(QString) --> QSqlQuery"+char(34)+","+char(34)+"hostName(void) --> QString"+char(34)+","+char(34)+"init(parent) --> object"+char(34)+","+char(34)+"isDriverAvailable(QString) --> bool"+char(34)+","+char(34)+"isOpen(void) --> bool"+char(34)+","+char(34)+"isOpenError(void) --> bool"+char(34)+","+char(34)+"isValid(void) --> bool"+char(34)+","+char(34)+"lastError(void) --> QSqlError"+char(34)+","+char(34)+"numericalPrecisionPolicy(void) --> QSql::NumericalPrecisionPolicy"+char(34)+","+char(34)+"objectpointer(void) --> pointer"+char(34)+","+char(34)+"open(void) --> bool"+char(34)+","+char(34)+"password(void) --> QString"+char(34)+","+char(34)+"port(void) --> int"+char(34)+","+char(34)+"primaryIndex(QString) --> QSqlIndex"+char(34)+","+char(34)+"record(QString) --> QSqlRecord"+char(34)+","+char(34)+"registerSqlDriver(QString, QSqlDriverCreatorBase *) --> void"+char(34)+","+char(34)+"removeDatabase(QString) --> void"+char(34)+","+char(34)+"rollback(void) --> bool"+char(34)+","+char(34)+"setConnectOptions(QString) --> void"+char(34)+","+char(34)+"setDatabaseName(QString) --> void"+char(34)+","+char(34)+"setHostName(QString) --> void"+char(34)+","+char(34)+"setNumericalPrecisionPolicy(QSql::NumericalPrecisionPolicy precisionPolicy) --> void"+char(34)+","+char(34)+"setPassword(QString) --> void"+char(34)+","+char(34)+"setPort(int port) --> void"+char(34)+","+char(34)+"setUserName(QString) --> void"+char(34)+","+char(34)+"tables(QSql::TableType type) --> QStringList"+char(34)+","+char(34)+"transaction(void) --> bool"+char(34)+","+char(34)+"userName(void) --> QString"+char(34)+"];;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		12,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:38:05",
-		"leftside;;_RV_;;T_CT_QSQLDATABASECLASS_IP_VALUE3;;_RV_;;rightside;;_RV_;;"+char(34)+"المعطيات :"+char(34)+";;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;T_CT_QSQLDATABASECLASS_IP_VALUE2LIST = [;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		13,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:38:05",
-		"leftside;;_RV_;;T_CT_QSQLDATABASECLASS_IP_VALUE4;;_RV_;;rightside;;_RV_;;"+char(34)+"الناتج :"+char(34)+";;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"addDatabase(QString) --> QSqlDatabase"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		14,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:38:05",
-		"leftside;;_RV_;;T_CT_QSQLDATABASECLASS_IP_VALUE2FUNC;;_RV_;;rightside;;_RV_;;["+char(34)+"adddatabase"+char(34)+","+char(34)+"clonedatabase"+char(34)+","+char(34)+"close"+char(34)+","+char(34)+"commit"+char(34)+","+char(34)+"connectionname"+char(34)+","+char(34)+"connectionnames"+char(34)+","+char(34)+"connectoptions"+char(34)+","+char(34)+"contains"+char(34)+","+char(34)+"database"+char(34)+","+char(34)+"databasename"+char(34)+","+char(34)+"delete"+char(34)+","+char(34)+"driver"+char(34)+","+char(34)+"drivername"+char(34)+","+char(34)+"drivers"+char(34)+","+char(34)+"exec"+char(34)+","+char(34)+"hostname"+char(34)+","+char(34)+"init"+char(34)+","+char(34)+"isdriveravailable"+char(34)+","+char(34)+"isopen"+char(34)+","+char(34)+"isopenerror"+char(34)+","+char(34)+"isvalid"+char(34)+","+char(34)+"lasterror"+char(34)+","+char(34)+"numericalprecisionpolicy"+char(34)+","+char(34)+"objectpointer"+char(34)+","+char(34)+"open"+char(34)+","+char(34)+"password"+char(34)+","+char(34)+"port"+char(34)+","+char(34)+"primaryindex"+char(34)+","+char(34)+"record"+char(34)+","+char(34)+"registersqldriver"+char(34)+","+char(34)+"removedatabase"+char(34)+","+char(34)+"rollback"+char(34)+","+char(34)+"setconnectoptions"+char(34)+","+char(34)+"setdatabasename"+char(34)+","+char(34)+"sethostname"+char(34)+","+char(34)+"setnumericalprecisionpolicy"+char(34)+","+char(34)+"setpassword"+char(34)+","+char(34)+"setport"+char(34)+","+char(34)+"setusername"+char(34)+","+char(34)+"tables"+char(34)+","+char(34)+"transaction"+char(34)+","+char(34)+"username"+char(34)+"];;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"cloneDatabase(QSqlDatabase, QString) --> QSqlDatabase"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		15,
 		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"close(void) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		16,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"commit(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		17,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"connectionName(void) --> QString"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		18,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"connectionNames(void) --> QStringList"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		19,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"connectOptions(void) --> QString"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		20,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"contains(QString) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		21,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"database(QString , bool) --> QSqlDatabase"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		22,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"databaseName(void) --> QString"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		23,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"delete(void) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		24,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"driver(void) --> QSqlDriver"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		25,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"driverName(void) --> QString"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		26,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"drivers(void) --> QStringList"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		27,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"exec(QString) --> QSqlQuery"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		28,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"hostName(void) --> QString"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		29,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"init(parent) --> object"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		30,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"isDriverAvailable(QString) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		31,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"isOpen(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		32,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"isOpenError(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		33,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"isValid(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		34,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"lastError(void) --> QSqlError"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		35,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"numericalPrecisionPolicy(void) --> QSql::NumericalPrecisionPolicy"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		36,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"objectpointer(void) --> pointer"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		37,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"open(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		38,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"password(void) --> QString"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		39,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"port(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		40,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"primaryIndex(QString) --> QSqlIndex"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		41,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"record(QString) --> QSqlRecord"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		42,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"registerSqlDriver(QString, QSqlDriverCreatorBase *) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		43,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"removeDatabase(QString) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		44,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"rollback(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		45,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"setConnectOptions(QString) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		46,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"setDatabaseName(QString) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		47,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"setHostName(QString) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		48,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"setNumericalPrecisionPolicy(QSql::NumericalPrecisionPolicy precisionPolicy) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		49,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"setPassword(QString) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		50,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"setPort(int port) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		51,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"setUserName(QString) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		52,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"tables(QSql::TableType type) --> QStringList"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		53,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"transaction(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		54,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;	"+char(34)+"userName(void) --> QString"+char(34)+";;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		55,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;];;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		56,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:01:08",
+		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		57,
+		1,
 		"assignment",
-		"07/02/2025",
-		"18:38:05",
-		"leftside;;_RV_;;T_CT_QSQLDATABASECLASS_IP_VALUE2STEPFUNC;;_RV_;;rightside;;_RV_;;T_CT_QSQLDATABASECLASS_IP_VALUE2FUNC;;_RV_;;"
+		"20/02/2025",
+		"23:01:08",
+		"leftside;;_RV_;;T_CT_QSQLDATABASECLASS_IP_VALUE2LIST;;_RV_;;rightside;;_RV_;;["+char(34)+"إضافة قاعدة بيانات(نص) --> قاعدة بيانات"+char(34)+","+char(34)+"استنساخ قاعدة بيانات(قاعدة بيانات، نص) --> قاعدة بيانات"+char(34)+","+char(34)+"إغلاق(لاشىء) --> لاشىء"+char(34)+","+char(34)+"التزام(لاشىء) --> منطقية"+char(34)+","+char(34)+"اسم الاتصال(لاشىء) --> نص"+char(34)+","+char(34)+"أسماء الاتصال(لاشىء) --> قائمة نصوص"+char(34)+","+char(34)+"خيارات الاتصال(لاشىء) --> نص"+char(34)+","+char(34)+"يحتوي(نص) --> منطقية"+char(34)+","+char(34)+"قاعدة بيانات(نص، منطقية) --> قاعدة بيانات"+char(34)+","+char(34)+"اسم قاعدة البيانات(لاشىء) --> نص"+char(34)+","+char(34)+"حذف(لاشىء) --> لاشىء"+char(34)+","+char(34)+"برنامج التشغيل(لاشىء) --> برنامج تشغيل"+char(34)+","+char(34)+"اسم برنامج التشغيل(لاشىء) --> نص"+char(34)+","+char(34)+"برامج التشغيل(لاشىء) --> قائمة نصوص"+char(34)+","+char(34)+"تنفيذ(نص) --> استعلام قاعدة بيانات"+char(34)+","+char(34)+"اسم المضيف(لاشىء) --> نص"+char(34)+","+char(34)+"تهيئة(الأصل) --> كائن"+char(34)+","+char(34)+"هل برنامج التشغيل متاح(نص) --> منطقية"+char(34)+","+char(34)+"مفتوح(لاشىء) --> منطقية"+char(34)+","+char(34)+"خطأ في الفتح(لاشىء) --> منطقية"+char(34)+","+char(34)+"صالح(لاشىء) --> منطقية"+char(34)+","+char(34)+"آخر خطأ(لاشىء) --> خطأ قاعدة بيانات"+char(34)+","+char(34)+"سياسة الدقة التعددية(لاشىء) --> سياسة الدقة التعددية"+char(34)+","+char(34)+"مؤشر الكائن(لاشىء) --> مؤشر"+char(34)+","+char(34)+"فتح(لاشىء) --> منطقية"+char(34)+","+char(34)+"كلمة مرور(لاشىء) --> نص"+char(34)+","+char(34)+"منفذ(لاشىء) --> عدد صحيح"+char(34)+","+char(34)+"الفهرس الأساسي(نص) --> فهرس قاعدة بيانات"+char(34)+","+char(34)+"سجل(نص) --> سجل قاعدة بيانات"+char(34)+","+char(34)+"تسجيل برنامج التشغيل(نص، منشئ برنامج التشغيل) --> لاشىء"+char(34)+","+char(34)+"إزالة قاعدة بيانات(نص) --> لاشىء"+char(34)+","+char(34)+"تراجع(لاشىء) --> منطقية"+char(34)+","+char(34)+"تعيين خيارات الاتصال(نص) --> لاشىء"+char(34)+","+char(34)+"تعيين اسم قاعدة البيانات(نص) --> لاشىء"+char(34)+","+char(34)+"تعيين اسم المضيف(نص) --> لاشىء"+char(34)+","+char(34)+"تعيين سياسة الدقة التعددية(سياسة الدقة التعددية) --> لاشىء"+char(34)+","+char(34)+"تعيين كلمة المرور(نص) --> لاشىء"+char(34)+","+char(34)+"تعيين المنفذ(عدد صحيح) --> لاشىء"+char(34)+","+char(34)+"تعيين اسم المستخدم(نص) --> لاشىء"+char(34)+","+char(34)+"جداول(نوع الجدول) --> قائمة نصوص"+char(34)+","+char(34)+"معاملة(لاشىء) --> منطقية"+char(34)+","+char(34)+"اسم المستخدم(لاشىء) --> نص"+char(34)+"];;_RV_;;"
+	],
+	[
+		58,
+		1,
+		"assignment",
+		"20/02/2025",
+		"23:01:08",
+		"leftside;;_RV_;;T_CT_QSQLDATABASECLASS_IP_VALUE3;;_RV_;;rightside;;_RV_;;"+char(34)+"المعطيات :"+char(34)+";;_RV_;;"
+	],
+	[
+		59,
+		1,
+		"assignment",
+		"20/02/2025",
+		"23:01:08",
+		"leftside;;_RV_;;T_CT_QSQLDATABASECLASS_IP_VALUE4;;_RV_;;rightside;;_RV_;;"+char(34)+"الناتج :"+char(34)+";;_RV_;;"
+	],
+	[
+		60,
+		1,
+		"assignment",
+		"20/02/2025",
+		"23:01:08",
+		"leftside;;_RV_;;T_CT_QSQLDATABASECLASS_IP_VALUE2FUNC;;_RV_;;rightside;;_RV_;;["+char(34)+"adddatabase"+char(34)+","+char(34)+"clonedatabase"+char(34)+","+char(34)+"close"+char(34)+","+char(34)+"commit"+char(34)+","+char(34)+"connectionname"+char(34)+","+char(34)+"connectionnames"+char(34)+","+char(34)+"connectoptions"+char(34)+","+char(34)+"contains"+char(34)+","+char(34)+"database"+char(34)+","+char(34)+"databasename"+char(34)+","+char(34)+"delete"+char(34)+","+char(34)+"driver"+char(34)+","+char(34)+"drivername"+char(34)+","+char(34)+"drivers"+char(34)+","+char(34)+"exec"+char(34)+","+char(34)+"hostname"+char(34)+","+char(34)+"init"+char(34)+","+char(34)+"isdriveravailable"+char(34)+","+char(34)+"isopen"+char(34)+","+char(34)+"isopenerror"+char(34)+","+char(34)+"isvalid"+char(34)+","+char(34)+"lasterror"+char(34)+","+char(34)+"numericalprecisionpolicy"+char(34)+","+char(34)+"objectpointer"+char(34)+","+char(34)+"open"+char(34)+","+char(34)+"password"+char(34)+","+char(34)+"port"+char(34)+","+char(34)+"primaryindex"+char(34)+","+char(34)+"record"+char(34)+","+char(34)+"registersqldriver"+char(34)+","+char(34)+"removedatabase"+char(34)+","+char(34)+"rollback"+char(34)+","+char(34)+"setconnectoptions"+char(34)+","+char(34)+"setdatabasename"+char(34)+","+char(34)+"sethostname"+char(34)+","+char(34)+"setnumericalprecisionpolicy"+char(34)+","+char(34)+"setpassword"+char(34)+","+char(34)+"setport"+char(34)+","+char(34)+"setusername"+char(34)+","+char(34)+"tables"+char(34)+","+char(34)+"transaction"+char(34)+","+char(34)+"username"+char(34)+"];;_RV_;;"
+	],
+	[
+		61,
+		1,
+		"assignment",
+		"20/02/2025",
+		"23:01:08",
+		"leftside;;_RV_;;T_CT_QSQLDATABASECLASS_IP_VALUE2STEPFUNC;;_RV_;;rightside;;_RV_;;["+char(34)+"إضافة قاعدة بيانات"+char(34)+","+char(34)+"استنساخ قاعدة بيانات"+char(34)+","+char(34)+"إغلاق"+char(34)+","+char(34)+"التزام"+char(34)+","+char(34)+"اسم الاتصال"+char(34)+","+char(34)+"أسماء الاتصال"+char(34)+","+char(34)+"خيارات الاتصال"+char(34)+","+char(34)+"يحتوي"+char(34)+","+char(34)+"قاعدة بيانات"+char(34)+","+char(34)+"اسم قاعدة البيانات"+char(34)+","+char(34)+"حذف"+char(34)+","+char(34)+"برنامج التشغيل"+char(34)+","+char(34)+"اسم برنامج التشغيل"+char(34)+","+char(34)+"برامج التشغيل"+char(34)+","+char(34)+"تنفيذ"+char(34)+","+char(34)+"اسم المضيف"+char(34)+","+char(34)+"تهيئة"+char(34)+","+char(34)+"هل برنامج التشغيل متاح"+char(34)+","+char(34)+"مفتوح"+char(34)+","+char(34)+"خطأ في الفتح"+char(34)+","+char(34)+"صالح"+char(34)+","+char(34)+"آخر خطأ"+char(34)+","+char(34)+"سياسة الدقة التعددية"+char(34)+","+char(34)+"مؤشر الكائن"+char(34)+","+char(34)+"فتح"+char(34)+","+char(34)+"كلمة مرور"+char(34)+","+char(34)+"منفذ"+char(34)+","+char(34)+"الفهرس الأساسي"+char(34)+","+char(34)+"سجل"+char(34)+","+char(34)+"تسجيل برنامج التشغيل"+char(34)+","+char(34)+"إزالة قاعدة بيانات"+char(34)+","+char(34)+"تراجع"+char(34)+","+char(34)+"تعيين خيارات الاتصال"+char(34)+","+char(34)+"تعيين اسم قاعدة البيانات"+char(34)+","+char(34)+"تعيين اسم المضيف"+char(34)+","+char(34)+"تعيين سياسة الدقة التعددية"+char(34)+","+char(34)+"تعيين كلمة المرور"+char(34)+","+char(34)+"تعيين المنفذ"+char(34)+","+char(34)+"تعيين اسم المستخدم"+char(34)+","+char(34)+"جداول"+char(34)+","+char(34)+"معاملة"+char(34)+","+char(34)+"اسم المستخدم"+char(34)+"];;_RV_;;"
 	]
 ]
 

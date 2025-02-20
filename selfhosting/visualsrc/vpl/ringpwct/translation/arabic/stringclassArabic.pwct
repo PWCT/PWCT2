@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'english'
-nStepsID                 = 16		
-nInteractionsID          = 16
+nStepsID                 = 44		
+nInteractionsID          = 44
 
 aStepsTable = [
 	[
@@ -472,7 +472,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_STRINGCLASS_IP_VALUE2STEPFUNC</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_STRINGCLASS_IP_VALUE2FUNC</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_STRINGCLASS_IP_VALUE2STEPFUNC</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;نسخ&quot;,&quot;ينتهي_ب&quot;,&quot;احصل_من&quot;,&quot;تهيئة&quot;,&quot;يسار&quot;,&quot;خطوط&quot;,&quot;أحرف_صغيرة&quot;,&quot;وسط&quot;,&quot;معامل&quot;,&quot;موضع&quot;,&quot;طباعة&quot;,&quot;طباعة_سطر&quot;,&quot;استبدال&quot;,&quot;يمين&quot;,&quot;ضبط&quot;,&quot;حجم&quot;,&quot;تقسيم&quot;,&quot;يبدأ_ب&quot;,&quot;مقارنة_سلسلة&quot;,&quot;الى_ملف&quot;,&quot;الى_قائمة&quot;,&quot;ازالة_المسافات&quot;,&quot;أحرف_كبيرة&quot;,&quot;قيمة&quot;]</font></span>"
 			],
 			[
 				"active",
@@ -480,7 +480,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_STRINGCLASS_IP_VALUE2STEPFUNC = T_CT_STRINGCLASS_IP_VALUE2FUNC"
+				"T_CT_STRINGCLASS_IP_VALUE2STEPFUNC = ["+char(34)+"نسخ"+char(34)+","+char(34)+"ينتهي_ب"+char(34)+","+char(34)+"احصل_من"+char(34)+","+char(34)+"تهيئة"+char(34)+","+char(34)+"يسار"+char(34)+","+char(34)+"خطوط"+char(34)+","+char(34)+"أحرف_صغيرة"+char(34)+","+char(34)+"وسط"+char(34)+","+char(34)+"معامل"+char(34)+","+char(34)+"موضع"+char(34)+","+char(34)+"طباعة"+char(34)+","+char(34)+"طباعة_سطر"+char(34)+","+char(34)+"استبدال"+char(34)+","+char(34)+"يمين"+char(34)+","+char(34)+"ضبط"+char(34)+","+char(34)+"حجم"+char(34)+","+char(34)+"تقسيم"+char(34)+","+char(34)+"يبدأ_ب"+char(34)+","+char(34)+"مقارنة_سلسلة"+char(34)+","+char(34)+"الى_ملف"+char(34)+","+char(34)+"الى_قائمة"+char(34)+","+char(34)+"ازالة_المسافات"+char(34)+","+char(34)+"أحرف_كبيرة"+char(34)+","+char(34)+"قيمة"+char(34)+"]"
 			],
 			[
 				"interactionid",
@@ -500,7 +500,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"T_CT_STRINGCLASS_IP_VALUE2STEPFUNC = T_CT_STRINGCLASS_IP_VALUE2FUNC"
+				"T_CT_STRINGCLASS_IP_VALUE2STEPFUNC = ["+char(34)+"نسخ"+char(34)+","+char(34)+"ينتهي_ب"+char(34)+","+char(34)+"احصل_من"+char(34)+","+char(34)+"تهيئة"+char(34)+","+char(34)+"يسار"+char(34)+","+char(34)+"خطوط"+char(34)+","+char(34)+"أحرف_صغيرة"+char(34)+","+char(34)+"وسط"+char(34)+","+char(34)+"معامل"+char(34)+","+char(34)+"موضع"+char(34)+","+char(34)+"طباعة"+char(34)+","+char(34)+"طباعة_سطر"+char(34)+","+char(34)+"استبدال"+char(34)+","+char(34)+"يمين"+char(34)+","+char(34)+"ضبط"+char(34)+","+char(34)+"حجم"+char(34)+","+char(34)+"تقسيم"+char(34)+","+char(34)+"يبدأ_ب"+char(34)+","+char(34)+"مقارنة_سلسلة"+char(34)+","+char(34)+"الى_ملف"+char(34)+","+char(34)+"الى_قائمة"+char(34)+","+char(34)+"ازالة_المسافات"+char(34)+","+char(34)+"أحرف_كبيرة"+char(34)+","+char(34)+"قيمة"+char(34)+"]"
 			]
 		]
 	],
@@ -510,7 +510,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_STRINGCLASS_IP_VALUE2LIST</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;copy(nCount)&nbsp;--&gt;&nbsp;String&nbsp;(Object)&quot;,&quot;endswith(cSubString)&nbsp;--&gt;&nbsp;Boolean&quot;,&quot;getfrom(nPos1)&quot;,&quot;init(string|number|list)&quot;,&quot;left(nCount)&nbsp;--&gt;&nbsp;String&nbsp;(Object)&quot;,&quot;lines()&nbsp;--&gt;&nbsp;Number&quot;,&quot;lower()&nbsp;--&gt;&nbsp;String&nbsp;(Object)&quot;,&quot;mid(nPos1,nPos2)&nbsp;--&gt;&nbsp;String&nbsp;(Object)&quot;,&quot;operator(cOperator,Para)&nbsp;--&gt;&nbsp;String&nbsp;(Object)&quot;,&quot;pos(cSubString)&nbsp;--&gt;&nbsp;Number&quot;,&quot;print()&quot;,&quot;println()&quot;,&quot;replace(cStr1,cStr2,lCase)&nbsp;--&gt;&nbsp;String&nbsp;(Object)&quot;,&quot;right(nCount)&nbsp;--&gt;&nbsp;String&nbsp;(Object)&quot;,&quot;set(x)&quot;,&quot;size()&nbsp;--&gt;&nbsp;Number&quot;,&quot;split()&nbsp;--&gt;&nbsp;List&quot;,&quot;startswith(cSubString)&nbsp;--&gt;&nbsp;Boolean&quot;,&quot;strcmp(x)&nbsp;--&gt;&nbsp;Number&quot;,&quot;tofile(cFileName)&quot;,&quot;tolist()&nbsp;--&gt;&nbsp;List&quot;,&quot;trim()&nbsp;--&gt;&nbsp;String&nbsp;(Object)&quot;,&quot;upper()&nbsp;--&gt;&nbsp;String&nbsp;(Object)&quot;,&quot;value()&nbsp;--&gt;&nbsp;String&quot;]</font></span>"
+				"/*"
 			],
 			[
 				"active",
@@ -518,7 +518,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_STRINGCLASS_IP_VALUE2LIST = ["+char(34)+"copy(nCount) --> String (Object)"+char(34)+","+char(34)+"endswith(cSubString) --> Boolean"+char(34)+","+char(34)+"getfrom(nPos1)"+char(34)+","+char(34)+"init(string|number|list)"+char(34)+","+char(34)+"left(nCount) --> String (Object)"+char(34)+","+char(34)+"lines() --> Number"+char(34)+","+char(34)+"lower() --> String (Object)"+char(34)+","+char(34)+"mid(nPos1,nPos2) --> String (Object)"+char(34)+","+char(34)+"operator(cOperator,Para) --> String (Object)"+char(34)+","+char(34)+"pos(cSubString) --> Number"+char(34)+","+char(34)+"print()"+char(34)+","+char(34)+"println()"+char(34)+","+char(34)+"replace(cStr1,cStr2,lCase) --> String (Object)"+char(34)+","+char(34)+"right(nCount) --> String (Object)"+char(34)+","+char(34)+"set(x)"+char(34)+","+char(34)+"size() --> Number"+char(34)+","+char(34)+"split() --> List"+char(34)+","+char(34)+"startswith(cSubString) --> Boolean"+char(34)+","+char(34)+"strcmp(x) --> Number"+char(34)+","+char(34)+"tofile(cFileName)"+char(34)+","+char(34)+"tolist() --> List"+char(34)+","+char(34)+"trim() --> String (Object)"+char(34)+","+char(34)+"upper() --> String (Object)"+char(34)+","+char(34)+"value() --> String"+char(34)+"]"
+				"#/*
+"
 			],
 			[
 				"interactionid",
@@ -534,16 +535,1107 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				2
+				1
 			],
 			[
 				"plainname",
-				"T_CT_STRINGCLASS_IP_VALUE2LIST = ["+char(34)+"copy(nCount) --> String (Object)"+char(34)+","+char(34)+"endswith(cSubString) --> Boolean"+char(34)+","+char(34)+"getfrom(nPos1)"+char(34)+","+char(34)+"init(string|number|list)"+char(34)+","+char(34)+"left(nCount) --> String (Object)"+char(34)+","+char(34)+"lines() --> Number"+char(34)+","+char(34)+"lower() --> String (Object)"+char(34)+","+char(34)+"mid(nPos1,nPos2) --> String (Object)"+char(34)+","+char(34)+"operator(cOperator,Para) --> String (Object)"+char(34)+","+char(34)+"pos(cSubString) --> Number"+char(34)+","+char(34)+"print()"+char(34)+","+char(34)+"println()"+char(34)+","+char(34)+"replace(cStr1,cStr2,lCase) --> String (Object)"+char(34)+","+char(34)+"right(nCount) --> String (Object)"+char(34)+","+char(34)+"set(x)"+char(34)+","+char(34)+"size() --> Number"+char(34)+","+char(34)+"split() --> List"+char(34)+","+char(34)+"startswith(cSubString) --> Boolean"+char(34)+","+char(34)+"strcmp(x) --> Number"+char(34)+","+char(34)+"tofile(cFileName)"+char(34)+","+char(34)+"tolist() --> List"+char(34)+","+char(34)+"trim() --> String (Object)"+char(34)+","+char(34)+"upper() --> String (Object)"+char(34)+","+char(34)+"value() --> String"+char(34)+"]"
+				"/*"
 			]
 		]
 	],
 	[
 		15,
+		1,
+		[
+			[
+				"name",
+				"T_CT_STRINGCLASS_IP_VALUE2LIST = ["
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#T_CT_STRINGCLASS_IP_VALUE2LIST = [
+"
+			],
+			[
+				"interactionid",
+				15
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"T_CT_STRINGCLASS_IP_VALUE2LIST = ["
+			]
+		]
+	],
+	[
+		16,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"copy(nCount) --> String (Object)"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"copy(nCount) --> String (Object)"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				16
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"copy(nCount) --> String (Object)"+char(34)+","
+			]
+		]
+	],
+	[
+		17,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"endswith(cSubString) --> Boolean"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"endswith(cSubString) --> Boolean"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				17
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"endswith(cSubString) --> Boolean"+char(34)+","
+			]
+		]
+	],
+	[
+		18,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"getfrom(nPos1)"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"getfrom(nPos1)"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				18
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"getfrom(nPos1)"+char(34)+","
+			]
+		]
+	],
+	[
+		19,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"init(string|number|list)"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"init(string|number|list)"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				19
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"init(string|number|list)"+char(34)+","
+			]
+		]
+	],
+	[
+		20,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"left(nCount) --> String (Object)"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"left(nCount) --> String (Object)"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				20
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"left(nCount) --> String (Object)"+char(34)+","
+			]
+		]
+	],
+	[
+		21,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"lines() --> Number"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"lines() --> Number"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				21
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"lines() --> Number"+char(34)+","
+			]
+		]
+	],
+	[
+		22,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"lower() --> String (Object)"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"lower() --> String (Object)"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				22
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"lower() --> String (Object)"+char(34)+","
+			]
+		]
+	],
+	[
+		23,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"mid(nPos1,nPos2) --> String (Object)"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"mid(nPos1,nPos2) --> String (Object)"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				23
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"mid(nPos1,nPos2) --> String (Object)"+char(34)+","
+			]
+		]
+	],
+	[
+		24,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"operator(cOperator,Para) --> String (Object)"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"operator(cOperator,Para) --> String (Object)"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				24
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"operator(cOperator,Para) --> String (Object)"+char(34)+","
+			]
+		]
+	],
+	[
+		25,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"pos(cSubString) --> Number"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"pos(cSubString) --> Number"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				25
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"pos(cSubString) --> Number"+char(34)+","
+			]
+		]
+	],
+	[
+		26,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"print()"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"print()"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				26
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"print()"+char(34)+","
+			]
+		]
+	],
+	[
+		27,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"println()"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"println()"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				27
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"println()"+char(34)+","
+			]
+		]
+	],
+	[
+		28,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"replace(cStr1,cStr2,lCase) --> String (Object)"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"replace(cStr1,cStr2,lCase) --> String (Object)"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				28
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"replace(cStr1,cStr2,lCase) --> String (Object)"+char(34)+","
+			]
+		]
+	],
+	[
+		29,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"right(nCount) --> String (Object)"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"right(nCount) --> String (Object)"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				29
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"right(nCount) --> String (Object)"+char(34)+","
+			]
+		]
+	],
+	[
+		30,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"set(x)"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"set(x)"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				30
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"set(x)"+char(34)+","
+			]
+		]
+	],
+	[
+		31,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"size() --> Number"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"size() --> Number"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				31
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"size() --> Number"+char(34)+","
+			]
+		]
+	],
+	[
+		32,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"split() --> List"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"split() --> List"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				32
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"split() --> List"+char(34)+","
+			]
+		]
+	],
+	[
+		33,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"startswith(cSubString) --> Boolean"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"startswith(cSubString) --> Boolean"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				33
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"startswith(cSubString) --> Boolean"+char(34)+","
+			]
+		]
+	],
+	[
+		34,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"strcmp(x) --> Number"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"strcmp(x) --> Number"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				34
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"strcmp(x) --> Number"+char(34)+","
+			]
+		]
+	],
+	[
+		35,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"tofile(cFileName)"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"tofile(cFileName)"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				35
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"tofile(cFileName)"+char(34)+","
+			]
+		]
+	],
+	[
+		36,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"tolist() --> List"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"tolist() --> List"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				36
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"tolist() --> List"+char(34)+","
+			]
+		]
+	],
+	[
+		37,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"trim() --> String (Object)"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"trim() --> String (Object)"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				37
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"trim() --> String (Object)"+char(34)+","
+			]
+		]
+	],
+	[
+		38,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"upper() --> String (Object)"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"upper() --> String (Object)"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				38
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"upper() --> String (Object)"+char(34)+","
+			]
+		]
+	],
+	[
+		39,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"value() --> String"+char(34)+""
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"value() --> String"+char(34)+"
+"
+			],
+			[
+				"interactionid",
+				39
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"value() --> String"+char(34)+""
+			]
+		]
+	],
+	[
+		40,
+		1,
+		[
+			[
+				"name",
+				"]"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#]
+"
+			],
+			[
+				"interactionid",
+				40
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"]"
+			]
+		]
+	],
+	[
+		41,
+		1,
+		[
+			[
+				"name",
+				"*/"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#*/
+"
+			],
+			[
+				"interactionid",
+				41
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"*/"
+			]
+		]
+	],
+	[
+		42,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_STRINGCLASS_IP_VALUE2LIST</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;نسخ(عدد)&nbsp;--&gt;&nbsp;سلسلة&nbsp;(كائن)&quot;,&quot;ينتهي_ب(سلسلة_فرعية)&nbsp;--&gt;&nbsp;منطقي&quot;,&quot;احصل_من(موضع1)&quot;,&quot;تهيئة(سلسلة|رقم|قائمة)&quot;,&quot;يسار(عدد)&nbsp;--&gt;&nbsp;سلسلة&nbsp;(كائن)&quot;,&quot;خطوط()&nbsp;--&gt;&nbsp;رقم&quot;,&quot;أحرف_صغيرة()&nbsp;--&gt;&nbsp;سلسلة&nbsp;(كائن)&quot;,&quot;وسط(موضع1,موضع2)&nbsp;--&gt;&nbsp;سلسلة&nbsp;(كائن)&quot;,&quot;معامل(معامل,معامل)&nbsp;--&gt;&nbsp;سلسلة&nbsp;(كائن)&quot;,&quot;موضع(سلسلة_فرعية)&nbsp;--&gt;&nbsp;رقم&quot;,&quot;طباعة()&quot;,&quot;طباعة_سطر()&quot;,&quot;استبدال(سلسلة1,سلسلة2,حالة)&nbsp;--&gt;&nbsp;سلسلة&nbsp;(كائن)&quot;,&quot;يمين(عدد)&nbsp;--&gt;&nbsp;سلسلة&nbsp;(كائن)&quot;,&quot;ضبط(س)&quot;,&quot;حجم()&nbsp;--&gt;&nbsp;رقم&quot;,&quot;تقسيم()&nbsp;--&gt;&nbsp;قائمة&quot;,&quot;يبدأ_ب(سلسلة_فرعية)&nbsp;--&gt;&nbsp;منطقي&quot;,&quot;مقارنة_سلسلة(س)&nbsp;--&gt;&nbsp;رقم&quot;,&quot;الى_ملف(اسم_الملف)&quot;,&quot;الى_قائمة()&nbsp;--&gt;&nbsp;قائمة&quot;,&quot;ازالة_المسافات()&nbsp;--&gt;&nbsp;سلسلة&nbsp;(كائن)&quot;,&quot;أحرف_كبيرة()&nbsp;--&gt;&nbsp;سلسلة&nbsp;(كائن)&quot;,&quot;قيمة()&nbsp;--&gt;&nbsp;سلسلة&quot;]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_CT_STRINGCLASS_IP_VALUE2LIST = ["+char(34)+"نسخ(عدد) --> سلسلة (كائن)"+char(34)+","+char(34)+"ينتهي_ب(سلسلة_فرعية) --> منطقي"+char(34)+","+char(34)+"احصل_من(موضع1)"+char(34)+","+char(34)+"تهيئة(سلسلة|رقم|قائمة)"+char(34)+","+char(34)+"يسار(عدد) --> سلسلة (كائن)"+char(34)+","+char(34)+"خطوط() --> رقم"+char(34)+","+char(34)+"أحرف_صغيرة() --> سلسلة (كائن)"+char(34)+","+char(34)+"وسط(موضع1,موضع2) --> سلسلة (كائن)"+char(34)+","+char(34)+"معامل(معامل,معامل) --> سلسلة (كائن)"+char(34)+","+char(34)+"موضع(سلسلة_فرعية) --> رقم"+char(34)+","+char(34)+"طباعة()"+char(34)+","+char(34)+"طباعة_سطر()"+char(34)+","+char(34)+"استبدال(سلسلة1,سلسلة2,حالة) --> سلسلة (كائن)"+char(34)+","+char(34)+"يمين(عدد) --> سلسلة (كائن)"+char(34)+","+char(34)+"ضبط(س)"+char(34)+","+char(34)+"حجم() --> رقم"+char(34)+","+char(34)+"تقسيم() --> قائمة"+char(34)+","+char(34)+"يبدأ_ب(سلسلة_فرعية) --> منطقي"+char(34)+","+char(34)+"مقارنة_سلسلة(س) --> رقم"+char(34)+","+char(34)+"الى_ملف(اسم_الملف)"+char(34)+","+char(34)+"الى_قائمة() --> قائمة"+char(34)+","+char(34)+"ازالة_المسافات() --> سلسلة (كائن)"+char(34)+","+char(34)+"أحرف_كبيرة() --> سلسلة (كائن)"+char(34)+","+char(34)+"قيمة() --> سلسلة"+char(34)+"]"
+			],
+			[
+				"interactionid",
+				42
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_CT_STRINGCLASS_IP_VALUE2LIST = ["+char(34)+"نسخ(عدد) --> سلسلة (كائن)"+char(34)+","+char(34)+"ينتهي_ب(سلسلة_فرعية) --> منطقي"+char(34)+","+char(34)+"احصل_من(موضع1)"+char(34)+","+char(34)+"تهيئة(سلسلة|رقم|قائمة)"+char(34)+","+char(34)+"يسار(عدد) --> سلسلة (كائن)"+char(34)+","+char(34)+"خطوط() --> رقم"+char(34)+","+char(34)+"أحرف_صغيرة() --> سلسلة (كائن)"+char(34)+","+char(34)+"وسط(موضع1,موضع2) --> سلسلة (كائن)"+char(34)+","+char(34)+"معامل(معامل,معامل) --> سلسلة (كائن)"+char(34)+","+char(34)+"موضع(سلسلة_فرعية) --> رقم"+char(34)+","+char(34)+"طباعة()"+char(34)+","+char(34)+"طباعة_سطر()"+char(34)+","+char(34)+"استبدال(سلسلة1,سلسلة2,حالة) --> سلسلة (كائن)"+char(34)+","+char(34)+"يمين(عدد) --> سلسلة (كائن)"+char(34)+","+char(34)+"ضبط(س)"+char(34)+","+char(34)+"حجم() --> رقم"+char(34)+","+char(34)+"تقسيم() --> قائمة"+char(34)+","+char(34)+"يبدأ_ب(سلسلة_فرعية) --> منطقي"+char(34)+","+char(34)+"مقارنة_سلسلة(س) --> رقم"+char(34)+","+char(34)+"الى_ملف(اسم_الملف)"+char(34)+","+char(34)+"الى_قائمة() --> قائمة"+char(34)+","+char(34)+"ازالة_المسافات() --> سلسلة (كائن)"+char(34)+","+char(34)+"أحرف_كبيرة() --> سلسلة (كائن)"+char(34)+","+char(34)+"قيمة() --> سلسلة"+char(34)+"]"
+			]
+		]
+	],
+	[
+		43,
 		1,
 		[
 			[
@@ -560,7 +1652,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				15
+				43
 			],
 			[
 				"visible",
@@ -581,7 +1673,7 @@ aStepsTable = [
 		]
 	],
 	[
-		16,
+		44,
 		1,
 		[
 			[
@@ -598,7 +1690,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				16
+				44
 			],
 			[
 				"visible",
@@ -625,128 +1717,352 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"07/02/2025",
-		"18:41:14",
+		"20/02/2025",
+		"23:03:06",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:41:14",
+		"20/02/2025",
+		"23:03:06",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:41:14",
+		"20/02/2025",
+		"23:03:06",
 		"value;;_RV_;;**	Project : Programming Without Coding Technology (PWCT) Version 2.0;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:41:14",
+		"20/02/2025",
+		"23:03:06",
 		"value;;_RV_;;**	File Purpose :  stringclass Component;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:41:14",
+		"20/02/2025",
+		"23:03:06",
 		"value;;_RV_;;**	Date : 2017.12.14;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:41:14",
+		"20/02/2025",
+		"23:03:06",
 		"value;;_RV_;;**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:41:14",
+		"20/02/2025",
+		"23:03:06",
 		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:41:14",
+		"20/02/2025",
+		"23:03:06",
 		"leftside;;_RV_;;T_CT_STRINGCLASS_IP_TITLE;;_RV_;;rightside;;_RV_;;"+char(34)+"مكون فئة العبارة الحرفية String"+char(34)+";;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:41:14",
+		"20/02/2025",
+		"23:03:06",
 		"leftside;;_RV_;;T_CT_STRINGCLASS_IP_VALUE;;_RV_;;rightside;;_RV_;;"+char(34)+"اسم الكائن :"+char(34)+";;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:41:14",
+		"20/02/2025",
+		"23:03:06",
 		"leftside;;_RV_;;T_CT_STRINGCLASS_IP_VALUE2;;_RV_;;rightside;;_RV_;;"+char(34)+"الميثود : "+char(34)+";;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:41:14",
+		"20/02/2025",
+		"23:03:06",
 		"leftside;;_RV_;;T_CT_STRINGCLASS_IP_VALUE2FUNC;;_RV_;;rightside;;_RV_;;["+char(34)+"copy"+char(34)+","+char(34)+"endswith"+char(34)+","+char(34)+"getfrom"+char(34)+","+char(34)+"init"+char(34)+","+char(34)+"left"+char(34)+","+char(34)+"lines"+char(34)+","+char(34)+"lower"+char(34)+","+char(34)+"mid"+char(34)+","+char(34)+"operator"+char(34)+","+char(34)+"pos"+char(34)+","+char(34)+"print"+char(34)+","+char(34)+"println"+char(34)+","+char(34)+"replace"+char(34)+","+char(34)+"right"+char(34)+","+char(34)+"set"+char(34)+","+char(34)+"size"+char(34)+","+char(34)+"split"+char(34)+","+char(34)+"startswith"+char(34)+","+char(34)+"strcmp"+char(34)+","+char(34)+"tofile"+char(34)+","+char(34)+"tolist"+char(34)+","+char(34)+"trim"+char(34)+","+char(34)+"upper"+char(34)+","+char(34)+"value"+char(34)+"];;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:41:14",
+		"20/02/2025",
+		"23:03:06",
 		"value;;_RV_;;Copy the list to support changing the generated method name in the Steps Tree;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:41:14",
-		"leftside;;_RV_;;T_CT_STRINGCLASS_IP_VALUE2STEPFUNC;;_RV_;;rightside;;_RV_;;T_CT_STRINGCLASS_IP_VALUE2FUNC;;_RV_;;"
+		"20/02/2025",
+		"23:03:06",
+		"leftside;;_RV_;;T_CT_STRINGCLASS_IP_VALUE2STEPFUNC;;_RV_;;rightside;;_RV_;;["+char(34)+"نسخ"+char(34)+","+char(34)+"ينتهي_ب"+char(34)+","+char(34)+"احصل_من"+char(34)+","+char(34)+"تهيئة"+char(34)+","+char(34)+"يسار"+char(34)+","+char(34)+"خطوط"+char(34)+","+char(34)+"أحرف_صغيرة"+char(34)+","+char(34)+"وسط"+char(34)+","+char(34)+"معامل"+char(34)+","+char(34)+"موضع"+char(34)+","+char(34)+"طباعة"+char(34)+","+char(34)+"طباعة_سطر"+char(34)+","+char(34)+"استبدال"+char(34)+","+char(34)+"يمين"+char(34)+","+char(34)+"ضبط"+char(34)+","+char(34)+"حجم"+char(34)+","+char(34)+"تقسيم"+char(34)+","+char(34)+"يبدأ_ب"+char(34)+","+char(34)+"مقارنة_سلسلة"+char(34)+","+char(34)+"الى_ملف"+char(34)+","+char(34)+"الى_قائمة"+char(34)+","+char(34)+"ازالة_المسافات"+char(34)+","+char(34)+"أحرف_كبيرة"+char(34)+","+char(34)+"قيمة"+char(34)+"];;_RV_;;"
 	],
 	[
 		14,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:41:14",
-		"leftside;;_RV_;;T_CT_STRINGCLASS_IP_VALUE2LIST;;_RV_;;rightside;;_RV_;;["+char(34)+"copy(nCount) --> String (Object)"+char(34)+","+char(34)+"endswith(cSubString) --> Boolean"+char(34)+","+char(34)+"getfrom(nPos1)"+char(34)+","+char(34)+"init(string|number|list)"+char(34)+","+char(34)+"left(nCount) --> String (Object)"+char(34)+","+char(34)+"lines() --> Number"+char(34)+","+char(34)+"lower() --> String (Object)"+char(34)+","+char(34)+"mid(nPos1,nPos2) --> String (Object)"+char(34)+","+char(34)+"operator(cOperator,Para) --> String (Object)"+char(34)+","+char(34)+"pos(cSubString) --> Number"+char(34)+","+char(34)+"print()"+char(34)+","+char(34)+"println()"+char(34)+","+char(34)+"replace(cStr1,cStr2,lCase) --> String (Object)"+char(34)+","+char(34)+"right(nCount) --> String (Object)"+char(34)+","+char(34)+"set(x)"+char(34)+","+char(34)+"size() --> Number"+char(34)+","+char(34)+"split() --> List"+char(34)+","+char(34)+"startswith(cSubString) --> Boolean"+char(34)+","+char(34)+"strcmp(x) --> Number"+char(34)+","+char(34)+"tofile(cFileName)"+char(34)+","+char(34)+"tolist() --> List"+char(34)+","+char(34)+"trim() --> String (Object)"+char(34)+","+char(34)+"upper() --> String (Object)"+char(34)+","+char(34)+"value() --> String"+char(34)+"];;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"23:03:06",
+		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		15,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:41:14",
-		"leftside;;_RV_;;T_CT_STRINGCLASS_IP_VALUE3;;_RV_;;rightside;;_RV_;;"+char(34)+"المعطيات :"+char(34)+";;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"23:03:06",
+		"value;;_RV_;;T_CT_STRINGCLASS_IP_VALUE2LIST = [;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		16,
 		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:06",
+		"value;;_RV_;;	"+char(34)+"copy(nCount) --> String (Object)"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		17,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:06",
+		"value;;_RV_;;	"+char(34)+"endswith(cSubString) --> Boolean"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		18,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:06",
+		"value;;_RV_;;	"+char(34)+"getfrom(nPos1)"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		19,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:06",
+		"value;;_RV_;;	"+char(34)+"init(string|number|list)"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		20,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:06",
+		"value;;_RV_;;	"+char(34)+"left(nCount) --> String (Object)"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		21,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:06",
+		"value;;_RV_;;	"+char(34)+"lines() --> Number"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		22,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:06",
+		"value;;_RV_;;	"+char(34)+"lower() --> String (Object)"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		23,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:06",
+		"value;;_RV_;;	"+char(34)+"mid(nPos1,nPos2) --> String (Object)"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		24,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:06",
+		"value;;_RV_;;	"+char(34)+"operator(cOperator,Para) --> String (Object)"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		25,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:06",
+		"value;;_RV_;;	"+char(34)+"pos(cSubString) --> Number"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		26,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:06",
+		"value;;_RV_;;	"+char(34)+"print()"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		27,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:06",
+		"value;;_RV_;;	"+char(34)+"println()"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		28,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:06",
+		"value;;_RV_;;	"+char(34)+"replace(cStr1,cStr2,lCase) --> String (Object)"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		29,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:06",
+		"value;;_RV_;;	"+char(34)+"right(nCount) --> String (Object)"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		30,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:06",
+		"value;;_RV_;;	"+char(34)+"set(x)"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		31,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:06",
+		"value;;_RV_;;	"+char(34)+"size() --> Number"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		32,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:06",
+		"value;;_RV_;;	"+char(34)+"split() --> List"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		33,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:06",
+		"value;;_RV_;;	"+char(34)+"startswith(cSubString) --> Boolean"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		34,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:06",
+		"value;;_RV_;;	"+char(34)+"strcmp(x) --> Number"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		35,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:06",
+		"value;;_RV_;;	"+char(34)+"tofile(cFileName)"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		36,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:06",
+		"value;;_RV_;;	"+char(34)+"tolist() --> List"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		37,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:06",
+		"value;;_RV_;;	"+char(34)+"trim() --> String (Object)"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		38,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:06",
+		"value;;_RV_;;	"+char(34)+"upper() --> String (Object)"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		39,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:06",
+		"value;;_RV_;;	"+char(34)+"value() --> String"+char(34)+";;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		40,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:06",
+		"value;;_RV_;;];;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		41,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:03:06",
+		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		42,
+		1,
 		"assignment",
-		"07/02/2025",
-		"18:41:14",
+		"20/02/2025",
+		"23:03:06",
+		"leftside;;_RV_;;T_CT_STRINGCLASS_IP_VALUE2LIST;;_RV_;;rightside;;_RV_;;["+char(34)+"نسخ(عدد) --> سلسلة (كائن)"+char(34)+","+char(34)+"ينتهي_ب(سلسلة_فرعية) --> منطقي"+char(34)+","+char(34)+"احصل_من(موضع1)"+char(34)+","+char(34)+"تهيئة(سلسلة|رقم|قائمة)"+char(34)+","+char(34)+"يسار(عدد) --> سلسلة (كائن)"+char(34)+","+char(34)+"خطوط() --> رقم"+char(34)+","+char(34)+"أحرف_صغيرة() --> سلسلة (كائن)"+char(34)+","+char(34)+"وسط(موضع1,موضع2) --> سلسلة (كائن)"+char(34)+","+char(34)+"معامل(معامل,معامل) --> سلسلة (كائن)"+char(34)+","+char(34)+"موضع(سلسلة_فرعية) --> رقم"+char(34)+","+char(34)+"طباعة()"+char(34)+","+char(34)+"طباعة_سطر()"+char(34)+","+char(34)+"استبدال(سلسلة1,سلسلة2,حالة) --> سلسلة (كائن)"+char(34)+","+char(34)+"يمين(عدد) --> سلسلة (كائن)"+char(34)+","+char(34)+"ضبط(س)"+char(34)+","+char(34)+"حجم() --> رقم"+char(34)+","+char(34)+"تقسيم() --> قائمة"+char(34)+","+char(34)+"يبدأ_ب(سلسلة_فرعية) --> منطقي"+char(34)+","+char(34)+"مقارنة_سلسلة(س) --> رقم"+char(34)+","+char(34)+"الى_ملف(اسم_الملف)"+char(34)+","+char(34)+"الى_قائمة() --> قائمة"+char(34)+","+char(34)+"ازالة_المسافات() --> سلسلة (كائن)"+char(34)+","+char(34)+"أحرف_كبيرة() --> سلسلة (كائن)"+char(34)+","+char(34)+"قيمة() --> سلسلة"+char(34)+"];;_RV_;;"
+	],
+	[
+		43,
+		1,
+		"assignment",
+		"20/02/2025",
+		"23:03:06",
+		"leftside;;_RV_;;T_CT_STRINGCLASS_IP_VALUE3;;_RV_;;rightside;;_RV_;;"+char(34)+"المعطيات :"+char(34)+";;_RV_;;"
+	],
+	[
+		44,
+		1,
+		"assignment",
+		"20/02/2025",
+		"23:03:06",
 		"leftside;;_RV_;;T_CT_STRINGCLASS_IP_VALUE4;;_RV_;;rightside;;_RV_;;"+char(34)+"الناتج :"+char(34)+";;_RV_;;"
 	]
 ]

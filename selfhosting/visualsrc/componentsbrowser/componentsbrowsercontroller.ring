@@ -326,6 +326,12 @@ class ComponentsBrowserController from WindowsControllerParent
 			} 
 		} 
 	} 
+	func EnglishTextualCodeToVisualCode cCode { 
+		lBeforeScannerStatus = T_RING2PWCT_USEBEFORESCANNER
+		T_RING2PWCT_USEBEFORESCANNER = False
+		TextualCodeToVisualCode(cCode)
+		T_RING2PWCT_USEBEFORESCANNER = lBeforeScannerStatus
+	} 
 	func OpenSelected  { 
 		#Clear the Search TextBox
 		oView.oTextSearch.SetText("")

@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'english'
-nStepsID                 = 16		
-nInteractionsID          = 16
+nStepsID                 = 40		
+nInteractionsID          = 40
 
 aStepsTable = [
 	[
@@ -472,7 +472,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_STACKCLASS_IP_VALUE2STEPFUNC</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_STACKCLASS_IP_VALUE2FUNC</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_STACKCLASS_IP_VALUE2STEPFUNC</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;اضافة&quot;,&quot;حذف&quot;,&quot;بحث&quot;,&quot;بحث_في_عمود&quot;,&quot;اول&quot;,&quot;تهيئة&quot;,&quot;ادراج&quot;,&quot;عنصر&quot;,&quot;اخير&quot;,&quot;معامل&quot;,&quot;اخراج&quot;,&quot;طباعة&quot;,&quot;طباعة_سطر&quot;,&quot;دفع&quot;,&quot;عكس&quot;,&quot;ضبط&quot;,&quot;حجم&quot;,&quot;فرز&quot;,&quot;تبديل&quot;,&quot;قيمة&quot;]</font></span>"
 			],
 			[
 				"active",
@@ -480,7 +480,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_STACKCLASS_IP_VALUE2STEPFUNC = T_CT_STACKCLASS_IP_VALUE2FUNC"
+				"T_CT_STACKCLASS_IP_VALUE2STEPFUNC = ["+char(34)+"اضافة"+char(34)+","+char(34)+"حذف"+char(34)+","+char(34)+"بحث"+char(34)+","+char(34)+"بحث_في_عمود"+char(34)+","+char(34)+"اول"+char(34)+","+char(34)+"تهيئة"+char(34)+","+char(34)+"ادراج"+char(34)+","+char(34)+"عنصر"+char(34)+","+char(34)+"اخير"+char(34)+","+char(34)+"معامل"+char(34)+","+char(34)+"اخراج"+char(34)+","+char(34)+"طباعة"+char(34)+","+char(34)+"طباعة_سطر"+char(34)+","+char(34)+"دفع"+char(34)+","+char(34)+"عكس"+char(34)+","+char(34)+"ضبط"+char(34)+","+char(34)+"حجم"+char(34)+","+char(34)+"فرز"+char(34)+","+char(34)+"تبديل"+char(34)+","+char(34)+"قيمة"+char(34)+"]"
 			],
 			[
 				"interactionid",
@@ -500,7 +500,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"T_CT_STACKCLASS_IP_VALUE2STEPFUNC = T_CT_STACKCLASS_IP_VALUE2FUNC"
+				"T_CT_STACKCLASS_IP_VALUE2STEPFUNC = ["+char(34)+"اضافة"+char(34)+","+char(34)+"حذف"+char(34)+","+char(34)+"بحث"+char(34)+","+char(34)+"بحث_في_عمود"+char(34)+","+char(34)+"اول"+char(34)+","+char(34)+"تهيئة"+char(34)+","+char(34)+"ادراج"+char(34)+","+char(34)+"عنصر"+char(34)+","+char(34)+"اخير"+char(34)+","+char(34)+"معامل"+char(34)+","+char(34)+"اخراج"+char(34)+","+char(34)+"طباعة"+char(34)+","+char(34)+"طباعة_سطر"+char(34)+","+char(34)+"دفع"+char(34)+","+char(34)+"عكس"+char(34)+","+char(34)+"ضبط"+char(34)+","+char(34)+"حجم"+char(34)+","+char(34)+"فرز"+char(34)+","+char(34)+"تبديل"+char(34)+","+char(34)+"قيمة"+char(34)+"]"
 			]
 		]
 	],
@@ -510,7 +510,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_STACKCLASS_IP_VALUE2LIST</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;add(vValue)&quot;,&quot;delete(nIndex)&quot;,&quot;find(vValue)&nbsp;--&gt;&nbsp;Number&quot;,&quot;findincolumn(nColumn,vValue)&nbsp;--&gt;&nbsp;Number&quot;,&quot;first()&nbsp;--&gt;&nbsp;vItem&quot;,&quot;init(cString|nNumber|aList)&quot;,&quot;insert(nIndex,vValue)&quot;,&quot;item(nIndex)&nbsp;--&gt;&nbsp;vItem&quot;,&quot;last()&nbsp;--&gt;&nbsp;vItem&quot;,&quot;operator(cOperator,Para)&quot;,&quot;pop()&nbsp;--&gt;&nbsp;vItem&quot;,&quot;print()&quot;,&quot;println()&quot;,&quot;push(vValue)&quot;,&quot;reverse()&nbsp;--&gt;&nbsp;List&nbsp;(Object)&quot;,&quot;set(nIndex,Value)&quot;,&quot;size()&nbsp;--&gt;&nbsp;Number&quot;,&quot;sort()&nbsp;--&gt;&nbsp;List&nbsp;(Object)&quot;,&quot;swap(nItem1,nItem2)&quot;,&quot;value()&nbsp;--&gt;&nbsp;List&quot;]</font></span>"
+				"/*"
 			],
 			[
 				"active",
@@ -518,7 +518,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_STACKCLASS_IP_VALUE2LIST = ["+char(34)+"add(vValue)"+char(34)+","+char(34)+"delete(nIndex)"+char(34)+","+char(34)+"find(vValue) --> Number"+char(34)+","+char(34)+"findincolumn(nColumn,vValue) --> Number"+char(34)+","+char(34)+"first() --> vItem"+char(34)+","+char(34)+"init(cString|nNumber|aList)"+char(34)+","+char(34)+"insert(nIndex,vValue)"+char(34)+","+char(34)+"item(nIndex) --> vItem"+char(34)+","+char(34)+"last() --> vItem"+char(34)+","+char(34)+"operator(cOperator,Para)"+char(34)+","+char(34)+"pop() --> vItem"+char(34)+","+char(34)+"print()"+char(34)+","+char(34)+"println()"+char(34)+","+char(34)+"push(vValue)"+char(34)+","+char(34)+"reverse() --> List (Object)"+char(34)+","+char(34)+"set(nIndex,Value)"+char(34)+","+char(34)+"size() --> Number"+char(34)+","+char(34)+"sort() --> List (Object)"+char(34)+","+char(34)+"swap(nItem1,nItem2)"+char(34)+","+char(34)+"value() --> List"+char(34)+"]"
+				"#/*
+"
 			],
 			[
 				"interactionid",
@@ -534,16 +535,951 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				2
+				1
 			],
 			[
 				"plainname",
-				"T_CT_STACKCLASS_IP_VALUE2LIST = ["+char(34)+"add(vValue)"+char(34)+","+char(34)+"delete(nIndex)"+char(34)+","+char(34)+"find(vValue) --> Number"+char(34)+","+char(34)+"findincolumn(nColumn,vValue) --> Number"+char(34)+","+char(34)+"first() --> vItem"+char(34)+","+char(34)+"init(cString|nNumber|aList)"+char(34)+","+char(34)+"insert(nIndex,vValue)"+char(34)+","+char(34)+"item(nIndex) --> vItem"+char(34)+","+char(34)+"last() --> vItem"+char(34)+","+char(34)+"operator(cOperator,Para)"+char(34)+","+char(34)+"pop() --> vItem"+char(34)+","+char(34)+"print()"+char(34)+","+char(34)+"println()"+char(34)+","+char(34)+"push(vValue)"+char(34)+","+char(34)+"reverse() --> List (Object)"+char(34)+","+char(34)+"set(nIndex,Value)"+char(34)+","+char(34)+"size() --> Number"+char(34)+","+char(34)+"sort() --> List (Object)"+char(34)+","+char(34)+"swap(nItem1,nItem2)"+char(34)+","+char(34)+"value() --> List"+char(34)+"]"
+				"/*"
 			]
 		]
 	],
 	[
 		15,
+		1,
+		[
+			[
+				"name",
+				"T_CT_STACKCLASS_IP_VALUE2LIST = ["
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#T_CT_STACKCLASS_IP_VALUE2LIST = [
+"
+			],
+			[
+				"interactionid",
+				15
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"T_CT_STACKCLASS_IP_VALUE2LIST = ["
+			]
+		]
+	],
+	[
+		16,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"add(vValue)"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"add(vValue)"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				16
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"add(vValue)"+char(34)+","
+			]
+		]
+	],
+	[
+		17,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"delete(nIndex)"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"delete(nIndex)"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				17
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"delete(nIndex)"+char(34)+","
+			]
+		]
+	],
+	[
+		18,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"find(vValue) --> Number"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"find(vValue) --> Number"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				18
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"find(vValue) --> Number"+char(34)+","
+			]
+		]
+	],
+	[
+		19,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"findincolumn(nColumn,vValue) --> Number"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"findincolumn(nColumn,vValue) --> Number"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				19
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"findincolumn(nColumn,vValue) --> Number"+char(34)+","
+			]
+		]
+	],
+	[
+		20,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"first() --> vItem"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"first() --> vItem"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				20
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"first() --> vItem"+char(34)+","
+			]
+		]
+	],
+	[
+		21,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"init(cString|nNumber|aList)"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"init(cString|nNumber|aList)"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				21
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"init(cString|nNumber|aList)"+char(34)+","
+			]
+		]
+	],
+	[
+		22,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"insert(nIndex,vValue)"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"insert(nIndex,vValue)"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				22
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"insert(nIndex,vValue)"+char(34)+","
+			]
+		]
+	],
+	[
+		23,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"item(nIndex) --> vItem"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"item(nIndex) --> vItem"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				23
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"item(nIndex) --> vItem"+char(34)+","
+			]
+		]
+	],
+	[
+		24,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"last() --> vItem"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"last() --> vItem"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				24
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"last() --> vItem"+char(34)+","
+			]
+		]
+	],
+	[
+		25,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"operator(cOperator,Para)"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"operator(cOperator,Para)"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				25
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"operator(cOperator,Para)"+char(34)+","
+			]
+		]
+	],
+	[
+		26,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"pop() --> vItem"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"pop() --> vItem"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				26
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"pop() --> vItem"+char(34)+","
+			]
+		]
+	],
+	[
+		27,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"print()"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"print()"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				27
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"print()"+char(34)+","
+			]
+		]
+	],
+	[
+		28,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"println()"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"println()"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				28
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"println()"+char(34)+","
+			]
+		]
+	],
+	[
+		29,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"push(vValue)"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"push(vValue)"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				29
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"push(vValue)"+char(34)+","
+			]
+		]
+	],
+	[
+		30,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"reverse() --> List (Object)"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"reverse() --> List (Object)"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				30
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"reverse() --> List (Object)"+char(34)+","
+			]
+		]
+	],
+	[
+		31,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"set(nIndex,Value)"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"set(nIndex,Value)"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				31
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"set(nIndex,Value)"+char(34)+","
+			]
+		]
+	],
+	[
+		32,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"size() --> Number"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"size() --> Number"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				32
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"size() --> Number"+char(34)+","
+			]
+		]
+	],
+	[
+		33,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"sort() --> List (Object)"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"sort() --> List (Object)"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				33
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"sort() --> List (Object)"+char(34)+","
+			]
+		]
+	],
+	[
+		34,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"swap(nItem1,nItem2)"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"swap(nItem1,nItem2)"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				34
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"swap(nItem1,nItem2)"+char(34)+","
+			]
+		]
+	],
+	[
+		35,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"value() --> List"+char(34)+""
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"value() --> List"+char(34)+"
+"
+			],
+			[
+				"interactionid",
+				35
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"value() --> List"+char(34)+""
+			]
+		]
+	],
+	[
+		36,
+		1,
+		[
+			[
+				"name",
+				"]"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#]
+"
+			],
+			[
+				"interactionid",
+				36
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"]"
+			]
+		]
+	],
+	[
+		37,
+		1,
+		[
+			[
+				"name",
+				"*/"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#*/
+"
+			],
+			[
+				"interactionid",
+				37
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"*/"
+			]
+		]
+	],
+	[
+		38,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_STACKCLASS_IP_VALUE2LIST</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;اضافة(قيمة)&quot;,&quot;حذف(مؤشر)&quot;,&quot;بحث(قيمة)&nbsp;--&gt;&nbsp;رقم&quot;,&quot;بحث_في_عمود(عمود,قيمة)&nbsp;--&gt;&nbsp;رقم&quot;,&quot;اول()&nbsp;--&gt;&nbsp;عنصر&quot;,&quot;تهيئة(سلسلة|رقم|قائمة)&quot;,&quot;ادراج(مؤشر,قيمة)&quot;,&quot;عنصر(مؤشر)&nbsp;--&gt;&nbsp;عنصر&quot;,&quot;اخير()&nbsp;--&gt;&nbsp;عنصر&quot;,&quot;معامل(معامل,معامل)&quot;,&quot;اخراج()&nbsp;--&gt;&nbsp;عنصر&quot;,&quot;طباعة()&quot;,&quot;طباعة_سطر()&quot;,&quot;دفع(قيمة)&quot;,&quot;عكس()&nbsp;--&gt;&nbsp;قائمة&nbsp;(كائن)&quot;,&quot;ضبط(مؤشر,قيمة)&quot;,&quot;حجم()&nbsp;--&gt;&nbsp;رقم&quot;,&quot;فرز()&nbsp;--&gt;&nbsp;قائمة&nbsp;(كائن)&quot;,&quot;تبديل(عنصر1,عنصر2)&quot;,&quot;قيمة()&nbsp;--&gt;&nbsp;قائمة&quot;]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_CT_STACKCLASS_IP_VALUE2LIST = ["+char(34)+"اضافة(قيمة)"+char(34)+","+char(34)+"حذف(مؤشر)"+char(34)+","+char(34)+"بحث(قيمة) --> رقم"+char(34)+","+char(34)+"بحث_في_عمود(عمود,قيمة) --> رقم"+char(34)+","+char(34)+"اول() --> عنصر"+char(34)+","+char(34)+"تهيئة(سلسلة|رقم|قائمة)"+char(34)+","+char(34)+"ادراج(مؤشر,قيمة)"+char(34)+","+char(34)+"عنصر(مؤشر) --> عنصر"+char(34)+","+char(34)+"اخير() --> عنصر"+char(34)+","+char(34)+"معامل(معامل,معامل)"+char(34)+","+char(34)+"اخراج() --> عنصر"+char(34)+","+char(34)+"طباعة()"+char(34)+","+char(34)+"طباعة_سطر()"+char(34)+","+char(34)+"دفع(قيمة)"+char(34)+","+char(34)+"عكس() --> قائمة (كائن)"+char(34)+","+char(34)+"ضبط(مؤشر,قيمة)"+char(34)+","+char(34)+"حجم() --> رقم"+char(34)+","+char(34)+"فرز() --> قائمة (كائن)"+char(34)+","+char(34)+"تبديل(عنصر1,عنصر2)"+char(34)+","+char(34)+"قيمة() --> قائمة"+char(34)+"]"
+			],
+			[
+				"interactionid",
+				38
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_CT_STACKCLASS_IP_VALUE2LIST = ["+char(34)+"اضافة(قيمة)"+char(34)+","+char(34)+"حذف(مؤشر)"+char(34)+","+char(34)+"بحث(قيمة) --> رقم"+char(34)+","+char(34)+"بحث_في_عمود(عمود,قيمة) --> رقم"+char(34)+","+char(34)+"اول() --> عنصر"+char(34)+","+char(34)+"تهيئة(سلسلة|رقم|قائمة)"+char(34)+","+char(34)+"ادراج(مؤشر,قيمة)"+char(34)+","+char(34)+"عنصر(مؤشر) --> عنصر"+char(34)+","+char(34)+"اخير() --> عنصر"+char(34)+","+char(34)+"معامل(معامل,معامل)"+char(34)+","+char(34)+"اخراج() --> عنصر"+char(34)+","+char(34)+"طباعة()"+char(34)+","+char(34)+"طباعة_سطر()"+char(34)+","+char(34)+"دفع(قيمة)"+char(34)+","+char(34)+"عكس() --> قائمة (كائن)"+char(34)+","+char(34)+"ضبط(مؤشر,قيمة)"+char(34)+","+char(34)+"حجم() --> رقم"+char(34)+","+char(34)+"فرز() --> قائمة (كائن)"+char(34)+","+char(34)+"تبديل(عنصر1,عنصر2)"+char(34)+","+char(34)+"قيمة() --> قائمة"+char(34)+"]"
+			]
+		]
+	],
+	[
+		39,
 		1,
 		[
 			[
@@ -560,7 +1496,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				15
+				39
 			],
 			[
 				"visible",
@@ -581,7 +1517,7 @@ aStepsTable = [
 		]
 	],
 	[
-		16,
+		40,
 		1,
 		[
 			[
@@ -598,7 +1534,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				16
+				40
 			],
 			[
 				"visible",
@@ -625,128 +1561,320 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"07/02/2025",
-		"18:39:53",
+		"20/02/2025",
+		"23:02:15",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:39:53",
+		"20/02/2025",
+		"23:02:15",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:39:53",
+		"20/02/2025",
+		"23:02:15",
 		"value;;_RV_;;**	Project : Programming Without Coding Technology (PWCT) Version 2.0;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:39:53",
+		"20/02/2025",
+		"23:02:15",
 		"value;;_RV_;;**	File Purpose :  stackclass Component;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:39:53",
+		"20/02/2025",
+		"23:02:15",
 		"value;;_RV_;;**	Date : 2018.03.16;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:39:53",
+		"20/02/2025",
+		"23:02:15",
 		"value;;_RV_;;**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:39:53",
+		"20/02/2025",
+		"23:02:15",
 		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:39:53",
+		"20/02/2025",
+		"23:02:15",
 		"leftside;;_RV_;;T_CT_STACKCLASS_IP_TITLE;;_RV_;;rightside;;_RV_;;"+char(34)+"مكون فئة الكومة"+char(34)+";;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:39:53",
+		"20/02/2025",
+		"23:02:15",
 		"leftside;;_RV_;;T_CT_STACKCLASS_IP_VALUE;;_RV_;;rightside;;_RV_;;"+char(34)+"اسم الكائن :"+char(34)+";;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:39:53",
+		"20/02/2025",
+		"23:02:15",
 		"leftside;;_RV_;;T_CT_STACKCLASS_IP_VALUE2;;_RV_;;rightside;;_RV_;;"+char(34)+"الميثود : "+char(34)+";;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:39:53",
+		"20/02/2025",
+		"23:02:15",
 		"leftside;;_RV_;;T_CT_STACKCLASS_IP_VALUE2FUNC;;_RV_;;rightside;;_RV_;;["+char(34)+"add"+char(34)+","+char(34)+"delete"+char(34)+","+char(34)+"find"+char(34)+","+char(34)+"findincolumn"+char(34)+","+char(34)+"first"+char(34)+","+char(34)+"init"+char(34)+","+char(34)+"insert"+char(34)+","+char(34)+"item"+char(34)+","+char(34)+"last"+char(34)+","+char(34)+"operator"+char(34)+","+char(34)+"pop"+char(34)+","+char(34)+"print"+char(34)+","+char(34)+"println"+char(34)+","+char(34)+"push"+char(34)+","+char(34)+"reverse"+char(34)+","+char(34)+"set"+char(34)+","+char(34)+"size"+char(34)+","+char(34)+"sort"+char(34)+","+char(34)+"swap"+char(34)+","+char(34)+"value"+char(34)+"];;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"comment_text",
-		"07/02/2025",
-		"18:39:53",
+		"20/02/2025",
+		"23:02:15",
 		"value;;_RV_;;Copy the list to support changing the generated method name in the Steps Tree;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"assignment",
-		"07/02/2025",
-		"18:39:53",
-		"leftside;;_RV_;;T_CT_STACKCLASS_IP_VALUE2STEPFUNC;;_RV_;;rightside;;_RV_;;T_CT_STACKCLASS_IP_VALUE2FUNC;;_RV_;;"
+		"20/02/2025",
+		"23:02:15",
+		"leftside;;_RV_;;T_CT_STACKCLASS_IP_VALUE2STEPFUNC;;_RV_;;rightside;;_RV_;;["+char(34)+"اضافة"+char(34)+","+char(34)+"حذف"+char(34)+","+char(34)+"بحث"+char(34)+","+char(34)+"بحث_في_عمود"+char(34)+","+char(34)+"اول"+char(34)+","+char(34)+"تهيئة"+char(34)+","+char(34)+"ادراج"+char(34)+","+char(34)+"عنصر"+char(34)+","+char(34)+"اخير"+char(34)+","+char(34)+"معامل"+char(34)+","+char(34)+"اخراج"+char(34)+","+char(34)+"طباعة"+char(34)+","+char(34)+"طباعة_سطر"+char(34)+","+char(34)+"دفع"+char(34)+","+char(34)+"عكس"+char(34)+","+char(34)+"ضبط"+char(34)+","+char(34)+"حجم"+char(34)+","+char(34)+"فرز"+char(34)+","+char(34)+"تبديل"+char(34)+","+char(34)+"قيمة"+char(34)+"];;_RV_;;"
 	],
 	[
 		14,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:39:53",
-		"leftside;;_RV_;;T_CT_STACKCLASS_IP_VALUE2LIST;;_RV_;;rightside;;_RV_;;["+char(34)+"add(vValue)"+char(34)+","+char(34)+"delete(nIndex)"+char(34)+","+char(34)+"find(vValue) --> Number"+char(34)+","+char(34)+"findincolumn(nColumn,vValue) --> Number"+char(34)+","+char(34)+"first() --> vItem"+char(34)+","+char(34)+"init(cString|nNumber|aList)"+char(34)+","+char(34)+"insert(nIndex,vValue)"+char(34)+","+char(34)+"item(nIndex) --> vItem"+char(34)+","+char(34)+"last() --> vItem"+char(34)+","+char(34)+"operator(cOperator,Para)"+char(34)+","+char(34)+"pop() --> vItem"+char(34)+","+char(34)+"print()"+char(34)+","+char(34)+"println()"+char(34)+","+char(34)+"push(vValue)"+char(34)+","+char(34)+"reverse() --> List (Object)"+char(34)+","+char(34)+"set(nIndex,Value)"+char(34)+","+char(34)+"size() --> Number"+char(34)+","+char(34)+"sort() --> List (Object)"+char(34)+","+char(34)+"swap(nItem1,nItem2)"+char(34)+","+char(34)+"value() --> List"+char(34)+"];;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"23:02:15",
+		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		15,
 		1,
-		"assignment",
-		"07/02/2025",
-		"18:39:53",
-		"leftside;;_RV_;;T_CT_STACKCLASS_IP_VALUE3;;_RV_;;rightside;;_RV_;;"+char(34)+"المعطيات :"+char(34)+";;_RV_;;"
+		"comment_text",
+		"20/02/2025",
+		"23:02:15",
+		"value;;_RV_;;T_CT_STACKCLASS_IP_VALUE2LIST = [;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		16,
 		1,
+		"comment_text",
+		"20/02/2025",
+		"23:02:15",
+		"value;;_RV_;;	"+char(34)+"add(vValue)"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		17,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:02:15",
+		"value;;_RV_;;	"+char(34)+"delete(nIndex)"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		18,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:02:15",
+		"value;;_RV_;;	"+char(34)+"find(vValue) --> Number"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		19,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:02:15",
+		"value;;_RV_;;	"+char(34)+"findincolumn(nColumn,vValue) --> Number"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		20,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:02:15",
+		"value;;_RV_;;	"+char(34)+"first() --> vItem"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		21,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:02:15",
+		"value;;_RV_;;	"+char(34)+"init(cString|nNumber|aList)"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		22,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:02:15",
+		"value;;_RV_;;	"+char(34)+"insert(nIndex,vValue)"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		23,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:02:15",
+		"value;;_RV_;;	"+char(34)+"item(nIndex) --> vItem"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		24,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:02:15",
+		"value;;_RV_;;	"+char(34)+"last() --> vItem"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		25,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:02:15",
+		"value;;_RV_;;	"+char(34)+"operator(cOperator,Para)"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		26,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:02:15",
+		"value;;_RV_;;	"+char(34)+"pop() --> vItem"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		27,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:02:15",
+		"value;;_RV_;;	"+char(34)+"print()"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		28,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:02:15",
+		"value;;_RV_;;	"+char(34)+"println()"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		29,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:02:15",
+		"value;;_RV_;;	"+char(34)+"push(vValue)"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		30,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:02:15",
+		"value;;_RV_;;	"+char(34)+"reverse() --> List (Object)"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		31,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:02:15",
+		"value;;_RV_;;	"+char(34)+"set(nIndex,Value)"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		32,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:02:15",
+		"value;;_RV_;;	"+char(34)+"size() --> Number"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		33,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:02:15",
+		"value;;_RV_;;	"+char(34)+"sort() --> List (Object)"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		34,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:02:15",
+		"value;;_RV_;;	"+char(34)+"swap(nItem1,nItem2)"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		35,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:02:15",
+		"value;;_RV_;;	"+char(34)+"value() --> List"+char(34)+";;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		36,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:02:15",
+		"value;;_RV_;;];;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		37,
+		1,
+		"comment_text",
+		"20/02/2025",
+		"23:02:15",
+		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		38,
+		1,
 		"assignment",
-		"07/02/2025",
-		"18:39:53",
+		"20/02/2025",
+		"23:02:15",
+		"leftside;;_RV_;;T_CT_STACKCLASS_IP_VALUE2LIST;;_RV_;;rightside;;_RV_;;["+char(34)+"اضافة(قيمة)"+char(34)+","+char(34)+"حذف(مؤشر)"+char(34)+","+char(34)+"بحث(قيمة) --> رقم"+char(34)+","+char(34)+"بحث_في_عمود(عمود,قيمة) --> رقم"+char(34)+","+char(34)+"اول() --> عنصر"+char(34)+","+char(34)+"تهيئة(سلسلة|رقم|قائمة)"+char(34)+","+char(34)+"ادراج(مؤشر,قيمة)"+char(34)+","+char(34)+"عنصر(مؤشر) --> عنصر"+char(34)+","+char(34)+"اخير() --> عنصر"+char(34)+","+char(34)+"معامل(معامل,معامل)"+char(34)+","+char(34)+"اخراج() --> عنصر"+char(34)+","+char(34)+"طباعة()"+char(34)+","+char(34)+"طباعة_سطر()"+char(34)+","+char(34)+"دفع(قيمة)"+char(34)+","+char(34)+"عكس() --> قائمة (كائن)"+char(34)+","+char(34)+"ضبط(مؤشر,قيمة)"+char(34)+","+char(34)+"حجم() --> رقم"+char(34)+","+char(34)+"فرز() --> قائمة (كائن)"+char(34)+","+char(34)+"تبديل(عنصر1,عنصر2)"+char(34)+","+char(34)+"قيمة() --> قائمة"+char(34)+"];;_RV_;;"
+	],
+	[
+		39,
+		1,
+		"assignment",
+		"20/02/2025",
+		"23:02:15",
+		"leftside;;_RV_;;T_CT_STACKCLASS_IP_VALUE3;;_RV_;;rightside;;_RV_;;"+char(34)+"المعطيات :"+char(34)+";;_RV_;;"
+	],
+	[
+		40,
+		1,
+		"assignment",
+		"20/02/2025",
+		"23:02:15",
 		"leftside;;_RV_;;T_CT_STACKCLASS_IP_VALUE4;;_RV_;;rightside;;_RV_;;"+char(34)+"الناتج :"+char(34)+";;_RV_;;"
 	]
 ]

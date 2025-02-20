@@ -9,7 +9,14 @@ T_CT_DEBUGCLASS_IP_VALUE = "اسم الكائن :"
 T_CT_DEBUGCLASS_IP_VALUE2 = "الميثود : "
 T_CT_DEBUGCLASS_IP_VALUE2FUNC = ["assert","eval","raise"]
 #Copy the list to support changing the generated method name in the Steps Tree
-T_CT_DEBUGCLASS_IP_VALUE2STEPFUNC = T_CT_DEBUGCLASS_IP_VALUE2FUNC
-T_CT_DEBUGCLASS_IP_VALUE2LIST = ["assert(cCondition) --> Boolean","eval(cCode) --> vOutput","raise(cError)"]
+T_CT_DEBUGCLASS_IP_VALUE2STEPFUNC = ["تأكيد","تقييم","رفع"]
+#/*
+#T_CT_DEBUGCLASS_IP_VALUE2LIST = [
+#	"assert(cCondition) --> Boolean",
+#	"eval(cCode) --> vOutput",
+#	"raise(cError)"
+#]
+#*/
+T_CT_DEBUGCLASS_IP_VALUE2LIST = ["تأكيد(شرط) --> منطقي","تقييم(كود) --> مخرجات","رفع(خطأ)"]
 T_CT_DEBUGCLASS_IP_VALUE3 = "المعطيات :"
 T_CT_DEBUGCLASS_IP_VALUE4 = "الناتج :"
