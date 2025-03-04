@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'english'
-nStepsID                 = 15		
-nInteractionsID          = 15
+nStepsID                 = 50		
+nInteractionsID          = 50
 
 aStepsTable = [
 	[
@@ -395,7 +395,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QMEDIAPLAYERCLASS_IP_VALUE2LIST</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;bufferStatus(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;currentMedia(void)&nbsp;--&gt;&nbsp;QMediaContent&quot;,&quot;currentNetworkConfiguration(void)&nbsp;--&gt;&nbsp;QNetworkConfiguration&quot;,&quot;delete(void)&nbsp;--&gt;&nbsp;void&quot;,&quot;duration(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;error(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;errorString(void)&nbsp;--&gt;&nbsp;QString&quot;,&quot;init(parent)&nbsp;--&gt;&nbsp;object&quot;,&quot;isAudioAvailable(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;isMuted(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;isSeekable(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;isVideoAvailable(void)&nbsp;--&gt;&nbsp;bool&quot;,&quot;media(void)&nbsp;--&gt;&nbsp;QMediaContent&quot;,&quot;mediaStatus(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;mediaStream(void)&nbsp;--&gt;&nbsp;QIODevice&quot;,&quot;objectpointer(void)&nbsp;--&gt;&nbsp;pointer&quot;,&quot;pause(void)&nbsp;--&gt;&nbsp;void&quot;,&quot;play(void)&nbsp;--&gt;&nbsp;void&quot;,&quot;playbackRate(void)&nbsp;--&gt;&nbsp;qreal&quot;,&quot;playlist(void)&nbsp;--&gt;&nbsp;QMediaPlaylist&quot;,&quot;position(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;setMedia(QUrl)&nbsp;--&gt;&nbsp;void&quot;,&quot;setMuted(bool&nbsp;muted)&nbsp;--&gt;&nbsp;void&quot;,&quot;setPlaybackRate(qreal&nbsp;rate)&nbsp;--&gt;&nbsp;void&quot;,&quot;setPlaylist(QMediaPlaylist&nbsp;*playlist)&nbsp;--&gt;&nbsp;void&quot;,&quot;setPosition(int&nbsp;position)&nbsp;--&gt;&nbsp;void&quot;,&quot;setVideoOutput(QVideoWidget&nbsp;*output)&nbsp;--&gt;&nbsp;void&quot;,&quot;setVolume(int&nbsp;volume)&nbsp;--&gt;&nbsp;void&quot;,&quot;state(void)&nbsp;--&gt;&nbsp;int&quot;,&quot;stop(void)&nbsp;--&gt;&nbsp;void&quot;,&quot;volume(void)&nbsp;--&gt;&nbsp;int&quot;]</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QMEDIAPLAYERCLASS_IP_VALUE3</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;المعطيات&nbsp;:&quot;</font></span>"
 			],
 			[
 				"active",
@@ -403,7 +403,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_QMEDIAPLAYERCLASS_IP_VALUE2LIST = ["+char(34)+"bufferStatus(void) --> int"+char(34)+","+char(34)+"currentMedia(void) --> QMediaContent"+char(34)+","+char(34)+"currentNetworkConfiguration(void) --> QNetworkConfiguration"+char(34)+","+char(34)+"delete(void) --> void"+char(34)+","+char(34)+"duration(void) --> int"+char(34)+","+char(34)+"error(void) --> int"+char(34)+","+char(34)+"errorString(void) --> QString"+char(34)+","+char(34)+"init(parent) --> object"+char(34)+","+char(34)+"isAudioAvailable(void) --> bool"+char(34)+","+char(34)+"isMuted(void) --> bool"+char(34)+","+char(34)+"isSeekable(void) --> bool"+char(34)+","+char(34)+"isVideoAvailable(void) --> bool"+char(34)+","+char(34)+"media(void) --> QMediaContent"+char(34)+","+char(34)+"mediaStatus(void) --> int"+char(34)+","+char(34)+"mediaStream(void) --> QIODevice"+char(34)+","+char(34)+"objectpointer(void) --> pointer"+char(34)+","+char(34)+"pause(void) --> void"+char(34)+","+char(34)+"play(void) --> void"+char(34)+","+char(34)+"playbackRate(void) --> qreal"+char(34)+","+char(34)+"playlist(void) --> QMediaPlaylist"+char(34)+","+char(34)+"position(void) --> int"+char(34)+","+char(34)+"setMedia(QUrl) --> void"+char(34)+","+char(34)+"setMuted(bool muted) --> void"+char(34)+","+char(34)+"setPlaybackRate(qreal rate) --> void"+char(34)+","+char(34)+"setPlaylist(QMediaPlaylist *playlist) --> void"+char(34)+","+char(34)+"setPosition(int position) --> void"+char(34)+","+char(34)+"setVideoOutput(QVideoWidget *output) --> void"+char(34)+","+char(34)+"setVolume(int volume) --> void"+char(34)+","+char(34)+"state(void) --> int"+char(34)+","+char(34)+"stop(void) --> void"+char(34)+","+char(34)+"volume(void) --> int"+char(34)+"]"
+				"T_CT_QMEDIAPLAYERCLASS_IP_VALUE3 = "+char(34)+"المعطيات :"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -423,7 +423,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"T_CT_QMEDIAPLAYERCLASS_IP_VALUE2LIST = ["+char(34)+"bufferStatus(void) --> int"+char(34)+","+char(34)+"currentMedia(void) --> QMediaContent"+char(34)+","+char(34)+"currentNetworkConfiguration(void) --> QNetworkConfiguration"+char(34)+","+char(34)+"delete(void) --> void"+char(34)+","+char(34)+"duration(void) --> int"+char(34)+","+char(34)+"error(void) --> int"+char(34)+","+char(34)+"errorString(void) --> QString"+char(34)+","+char(34)+"init(parent) --> object"+char(34)+","+char(34)+"isAudioAvailable(void) --> bool"+char(34)+","+char(34)+"isMuted(void) --> bool"+char(34)+","+char(34)+"isSeekable(void) --> bool"+char(34)+","+char(34)+"isVideoAvailable(void) --> bool"+char(34)+","+char(34)+"media(void) --> QMediaContent"+char(34)+","+char(34)+"mediaStatus(void) --> int"+char(34)+","+char(34)+"mediaStream(void) --> QIODevice"+char(34)+","+char(34)+"objectpointer(void) --> pointer"+char(34)+","+char(34)+"pause(void) --> void"+char(34)+","+char(34)+"play(void) --> void"+char(34)+","+char(34)+"playbackRate(void) --> qreal"+char(34)+","+char(34)+"playlist(void) --> QMediaPlaylist"+char(34)+","+char(34)+"position(void) --> int"+char(34)+","+char(34)+"setMedia(QUrl) --> void"+char(34)+","+char(34)+"setMuted(bool muted) --> void"+char(34)+","+char(34)+"setPlaybackRate(qreal rate) --> void"+char(34)+","+char(34)+"setPlaylist(QMediaPlaylist *playlist) --> void"+char(34)+","+char(34)+"setPosition(int position) --> void"+char(34)+","+char(34)+"setVideoOutput(QVideoWidget *output) --> void"+char(34)+","+char(34)+"setVolume(int volume) --> void"+char(34)+","+char(34)+"state(void) --> int"+char(34)+","+char(34)+"stop(void) --> void"+char(34)+","+char(34)+"volume(void) --> int"+char(34)+"]"
+				"T_CT_QMEDIAPLAYERCLASS_IP_VALUE3 = "+char(34)+"المعطيات :"+char(34)+""
 			]
 		]
 	],
@@ -433,7 +433,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QMEDIAPLAYERCLASS_IP_VALUE3</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;المعطيات&nbsp;:&quot;</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QMEDIAPLAYERCLASS_IP_VALUE4</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;الناتج&nbsp;:&quot;</font></span>"
 			],
 			[
 				"active",
@@ -441,7 +441,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_QMEDIAPLAYERCLASS_IP_VALUE3 = "+char(34)+"المعطيات :"+char(34)+""
+				"T_CT_QMEDIAPLAYERCLASS_IP_VALUE4 = "+char(34)+"الناتج :"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -461,7 +461,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"T_CT_QMEDIAPLAYERCLASS_IP_VALUE3 = "+char(34)+"المعطيات :"+char(34)+""
+				"T_CT_QMEDIAPLAYERCLASS_IP_VALUE4 = "+char(34)+"الناتج :"+char(34)+""
 			]
 		]
 	],
@@ -471,7 +471,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QMEDIAPLAYERCLASS_IP_VALUE4</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;الناتج&nbsp;:&quot;</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QMEDIAPLAYERCLASS_IP_VALUE2FUNC</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;bufferstatus&quot;,&quot;currentmedia&quot;,&quot;currentnetworkconfiguration&quot;,&quot;delete&quot;,&quot;duration&quot;,&quot;error&quot;,&quot;errorstring&quot;,&quot;init&quot;,&quot;isaudioavailable&quot;,&quot;ismuted&quot;,&quot;isseekable&quot;,&quot;isvideoavailable&quot;,&quot;media&quot;,&quot;mediastatus&quot;,&quot;mediastream&quot;,&quot;objectpointer&quot;,&quot;pause&quot;,&quot;play&quot;,&quot;playbackrate&quot;,&quot;playlist&quot;,&quot;position&quot;,&quot;setmedia&quot;,&quot;setmuted&quot;,&quot;setplaybackrate&quot;,&quot;setplaylist&quot;,&quot;setposition&quot;,&quot;setvideooutput&quot;,&quot;setvolume&quot;,&quot;state&quot;,&quot;stop&quot;,&quot;volume&quot;]</font></span>"
 			],
 			[
 				"active",
@@ -479,7 +479,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_QMEDIAPLAYERCLASS_IP_VALUE4 = "+char(34)+"الناتج :"+char(34)+""
+				"T_CT_QMEDIAPLAYERCLASS_IP_VALUE2FUNC = ["+char(34)+"bufferstatus"+char(34)+","+char(34)+"currentmedia"+char(34)+","+char(34)+"currentnetworkconfiguration"+char(34)+","+char(34)+"delete"+char(34)+","+char(34)+"duration"+char(34)+","+char(34)+"error"+char(34)+","+char(34)+"errorstring"+char(34)+","+char(34)+"init"+char(34)+","+char(34)+"isaudioavailable"+char(34)+","+char(34)+"ismuted"+char(34)+","+char(34)+"isseekable"+char(34)+","+char(34)+"isvideoavailable"+char(34)+","+char(34)+"media"+char(34)+","+char(34)+"mediastatus"+char(34)+","+char(34)+"mediastream"+char(34)+","+char(34)+"objectpointer"+char(34)+","+char(34)+"pause"+char(34)+","+char(34)+"play"+char(34)+","+char(34)+"playbackrate"+char(34)+","+char(34)+"playlist"+char(34)+","+char(34)+"position"+char(34)+","+char(34)+"setmedia"+char(34)+","+char(34)+"setmuted"+char(34)+","+char(34)+"setplaybackrate"+char(34)+","+char(34)+"setplaylist"+char(34)+","+char(34)+"setposition"+char(34)+","+char(34)+"setvideooutput"+char(34)+","+char(34)+"setvolume"+char(34)+","+char(34)+"state"+char(34)+","+char(34)+"stop"+char(34)+","+char(34)+"volume"+char(34)+"]"
 			],
 			[
 				"interactionid",
@@ -499,7 +499,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"T_CT_QMEDIAPLAYERCLASS_IP_VALUE4 = "+char(34)+"الناتج :"+char(34)+""
+				"T_CT_QMEDIAPLAYERCLASS_IP_VALUE2FUNC = ["+char(34)+"bufferstatus"+char(34)+","+char(34)+"currentmedia"+char(34)+","+char(34)+"currentnetworkconfiguration"+char(34)+","+char(34)+"delete"+char(34)+","+char(34)+"duration"+char(34)+","+char(34)+"error"+char(34)+","+char(34)+"errorstring"+char(34)+","+char(34)+"init"+char(34)+","+char(34)+"isaudioavailable"+char(34)+","+char(34)+"ismuted"+char(34)+","+char(34)+"isseekable"+char(34)+","+char(34)+"isvideoavailable"+char(34)+","+char(34)+"media"+char(34)+","+char(34)+"mediastatus"+char(34)+","+char(34)+"mediastream"+char(34)+","+char(34)+"objectpointer"+char(34)+","+char(34)+"pause"+char(34)+","+char(34)+"play"+char(34)+","+char(34)+"playbackrate"+char(34)+","+char(34)+"playlist"+char(34)+","+char(34)+"position"+char(34)+","+char(34)+"setmedia"+char(34)+","+char(34)+"setmuted"+char(34)+","+char(34)+"setplaybackrate"+char(34)+","+char(34)+"setplaylist"+char(34)+","+char(34)+"setposition"+char(34)+","+char(34)+"setvideooutput"+char(34)+","+char(34)+"setvolume"+char(34)+","+char(34)+"state"+char(34)+","+char(34)+"stop"+char(34)+","+char(34)+"volume"+char(34)+"]"
 			]
 		]
 	],
@@ -509,7 +509,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QMEDIAPLAYERCLASS_IP_VALUE2FUNC</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;bufferstatus&quot;,&quot;currentmedia&quot;,&quot;currentnetworkconfiguration&quot;,&quot;delete&quot;,&quot;duration&quot;,&quot;error&quot;,&quot;errorstring&quot;,&quot;init&quot;,&quot;isaudioavailable&quot;,&quot;ismuted&quot;,&quot;isseekable&quot;,&quot;isvideoavailable&quot;,&quot;media&quot;,&quot;mediastatus&quot;,&quot;mediastream&quot;,&quot;objectpointer&quot;,&quot;pause&quot;,&quot;play&quot;,&quot;playbackrate&quot;,&quot;playlist&quot;,&quot;position&quot;,&quot;setmedia&quot;,&quot;setmuted&quot;,&quot;setplaybackrate&quot;,&quot;setplaylist&quot;,&quot;setposition&quot;,&quot;setvideooutput&quot;,&quot;setvolume&quot;,&quot;state&quot;,&quot;stop&quot;,&quot;volume&quot;]</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QMEDIAPLAYERCLASS_IP_VALUE2STEPFUNC</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;حالة&nbsp;الوسيطة&quot;,&quot;الوسائط&nbsp;الحالية&quot;,&quot;تكوين&nbsp;الشبكة&nbsp;الحالية&quot;,&quot;حذف&quot;,&quot;مدة&quot;,&quot;خطأ&quot;,&quot;نص&nbsp;الخطأ&quot;,&quot;تهيئة&quot;,&quot;هل&nbsp;الصوت&nbsp;متاح&quot;,&quot;هل&nbsp;مكتوم&quot;,&quot;هل&nbsp;يمكن&nbsp;البحث&quot;,&quot;هل&nbsp;الفيديو&nbsp;متاح&quot;,&quot;وسائط&quot;,&quot;حالة&nbsp;الوسائط&quot;,&quot;تدفق&nbsp;الوسائط&quot;,&quot;مؤشر&nbsp;الكائن&quot;,&quot;إيقاف&nbsp;مؤقت&quot;,&quot;تشغيل&quot;,&quot;سرعة&nbsp;التشغيل&quot;,&quot;قائمة&nbsp;التشغيل&quot;,&quot;موقع&quot;,&quot;تعيين&nbsp;الوسائط&quot;,&quot;تعيين&nbsp;مكتوم&quot;,&quot;تعيين&nbsp;سرعة&nbsp;التشغيل&quot;,&quot;تعيين&nbsp;قائمة&nbsp;التشغيل&quot;,&quot;تعيين&nbsp;الموقع&quot;,&quot;تعيين&nbsp;خرج&nbsp;الفيديو&quot;,&quot;تعيين&nbsp;الحجم&quot;,&quot;حالة&quot;,&quot;توقف&quot;,&quot;حجم&quot;]</font></span>"
 			],
 			[
 				"active",
@@ -517,7 +517,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_QMEDIAPLAYERCLASS_IP_VALUE2FUNC = ["+char(34)+"bufferstatus"+char(34)+","+char(34)+"currentmedia"+char(34)+","+char(34)+"currentnetworkconfiguration"+char(34)+","+char(34)+"delete"+char(34)+","+char(34)+"duration"+char(34)+","+char(34)+"error"+char(34)+","+char(34)+"errorstring"+char(34)+","+char(34)+"init"+char(34)+","+char(34)+"isaudioavailable"+char(34)+","+char(34)+"ismuted"+char(34)+","+char(34)+"isseekable"+char(34)+","+char(34)+"isvideoavailable"+char(34)+","+char(34)+"media"+char(34)+","+char(34)+"mediastatus"+char(34)+","+char(34)+"mediastream"+char(34)+","+char(34)+"objectpointer"+char(34)+","+char(34)+"pause"+char(34)+","+char(34)+"play"+char(34)+","+char(34)+"playbackrate"+char(34)+","+char(34)+"playlist"+char(34)+","+char(34)+"position"+char(34)+","+char(34)+"setmedia"+char(34)+","+char(34)+"setmuted"+char(34)+","+char(34)+"setplaybackrate"+char(34)+","+char(34)+"setplaylist"+char(34)+","+char(34)+"setposition"+char(34)+","+char(34)+"setvideooutput"+char(34)+","+char(34)+"setvolume"+char(34)+","+char(34)+"state"+char(34)+","+char(34)+"stop"+char(34)+","+char(34)+"volume"+char(34)+"]"
+				"T_CT_QMEDIAPLAYERCLASS_IP_VALUE2STEPFUNC = ["+char(34)+"حالة الوسيطة"+char(34)+","+char(34)+"الوسائط الحالية"+char(34)+","+char(34)+"تكوين الشبكة الحالية"+char(34)+","+char(34)+"حذف"+char(34)+","+char(34)+"مدة"+char(34)+","+char(34)+"خطأ"+char(34)+","+char(34)+"نص الخطأ"+char(34)+","+char(34)+"تهيئة"+char(34)+","+char(34)+"هل الصوت متاح"+char(34)+","+char(34)+"هل مكتوم"+char(34)+","+char(34)+"هل يمكن البحث"+char(34)+","+char(34)+"هل الفيديو متاح"+char(34)+","+char(34)+"وسائط"+char(34)+","+char(34)+"حالة الوسائط"+char(34)+","+char(34)+"تدفق الوسائط"+char(34)+","+char(34)+"مؤشر الكائن"+char(34)+","+char(34)+"إيقاف مؤقت"+char(34)+","+char(34)+"تشغيل"+char(34)+","+char(34)+"سرعة التشغيل"+char(34)+","+char(34)+"قائمة التشغيل"+char(34)+","+char(34)+"موقع"+char(34)+","+char(34)+"تعيين الوسائط"+char(34)+","+char(34)+"تعيين مكتوم"+char(34)+","+char(34)+"تعيين سرعة التشغيل"+char(34)+","+char(34)+"تعيين قائمة التشغيل"+char(34)+","+char(34)+"تعيين الموقع"+char(34)+","+char(34)+"تعيين خرج الفيديو"+char(34)+","+char(34)+"تعيين الحجم"+char(34)+","+char(34)+"حالة"+char(34)+","+char(34)+"توقف"+char(34)+","+char(34)+"حجم"+char(34)+"]"
 			],
 			[
 				"interactionid",
@@ -537,7 +537,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"T_CT_QMEDIAPLAYERCLASS_IP_VALUE2FUNC = ["+char(34)+"bufferstatus"+char(34)+","+char(34)+"currentmedia"+char(34)+","+char(34)+"currentnetworkconfiguration"+char(34)+","+char(34)+"delete"+char(34)+","+char(34)+"duration"+char(34)+","+char(34)+"error"+char(34)+","+char(34)+"errorstring"+char(34)+","+char(34)+"init"+char(34)+","+char(34)+"isaudioavailable"+char(34)+","+char(34)+"ismuted"+char(34)+","+char(34)+"isseekable"+char(34)+","+char(34)+"isvideoavailable"+char(34)+","+char(34)+"media"+char(34)+","+char(34)+"mediastatus"+char(34)+","+char(34)+"mediastream"+char(34)+","+char(34)+"objectpointer"+char(34)+","+char(34)+"pause"+char(34)+","+char(34)+"play"+char(34)+","+char(34)+"playbackrate"+char(34)+","+char(34)+"playlist"+char(34)+","+char(34)+"position"+char(34)+","+char(34)+"setmedia"+char(34)+","+char(34)+"setmuted"+char(34)+","+char(34)+"setplaybackrate"+char(34)+","+char(34)+"setplaylist"+char(34)+","+char(34)+"setposition"+char(34)+","+char(34)+"setvideooutput"+char(34)+","+char(34)+"setvolume"+char(34)+","+char(34)+"state"+char(34)+","+char(34)+"stop"+char(34)+","+char(34)+"volume"+char(34)+"]"
+				"T_CT_QMEDIAPLAYERCLASS_IP_VALUE2STEPFUNC = ["+char(34)+"حالة الوسيطة"+char(34)+","+char(34)+"الوسائط الحالية"+char(34)+","+char(34)+"تكوين الشبكة الحالية"+char(34)+","+char(34)+"حذف"+char(34)+","+char(34)+"مدة"+char(34)+","+char(34)+"خطأ"+char(34)+","+char(34)+"نص الخطأ"+char(34)+","+char(34)+"تهيئة"+char(34)+","+char(34)+"هل الصوت متاح"+char(34)+","+char(34)+"هل مكتوم"+char(34)+","+char(34)+"هل يمكن البحث"+char(34)+","+char(34)+"هل الفيديو متاح"+char(34)+","+char(34)+"وسائط"+char(34)+","+char(34)+"حالة الوسائط"+char(34)+","+char(34)+"تدفق الوسائط"+char(34)+","+char(34)+"مؤشر الكائن"+char(34)+","+char(34)+"إيقاف مؤقت"+char(34)+","+char(34)+"تشغيل"+char(34)+","+char(34)+"سرعة التشغيل"+char(34)+","+char(34)+"قائمة التشغيل"+char(34)+","+char(34)+"موقع"+char(34)+","+char(34)+"تعيين الوسائط"+char(34)+","+char(34)+"تعيين مكتوم"+char(34)+","+char(34)+"تعيين سرعة التشغيل"+char(34)+","+char(34)+"تعيين قائمة التشغيل"+char(34)+","+char(34)+"تعيين الموقع"+char(34)+","+char(34)+"تعيين خرج الفيديو"+char(34)+","+char(34)+"تعيين الحجم"+char(34)+","+char(34)+"حالة"+char(34)+","+char(34)+"توقف"+char(34)+","+char(34)+"حجم"+char(34)+"]"
 			]
 		]
 	],
@@ -547,7 +547,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QMEDIAPLAYERCLASS_IP_VALUE2STEPFUNC</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QMEDIAPLAYERCLASS_IP_VALUE2FUNC</font></span>"
+				"/*"
 			],
 			[
 				"active",
@@ -555,7 +555,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_QMEDIAPLAYERCLASS_IP_VALUE2STEPFUNC = T_CT_QMEDIAPLAYERCLASS_IP_VALUE2FUNC"
+				"#/*
+"
 			],
 			[
 				"interactionid",
@@ -571,11 +572,1375 @@ aStepsTable = [
 			],
 			[
 				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"/*"
+			]
+		]
+	],
+	[
+		16,
+		1,
+		[
+			[
+				"name",
+				"T_CT_QMEDIAPLAYERCLASS_IP_VALUE2LIST = ["
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#T_CT_QMEDIAPLAYERCLASS_IP_VALUE2LIST = [
+"
+			],
+			[
+				"interactionid",
+				16
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"T_CT_QMEDIAPLAYERCLASS_IP_VALUE2LIST = ["
+			]
+		]
+	],
+	[
+		17,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"bufferStatus(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"bufferStatus(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				17
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"bufferStatus(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		18,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"currentMedia(void) --> QMediaContent"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"currentMedia(void) --> QMediaContent"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				18
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"currentMedia(void) --> QMediaContent"+char(34)+","
+			]
+		]
+	],
+	[
+		19,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"currentNetworkConfiguration(void) --> QNetworkConfiguration"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"currentNetworkConfiguration(void) --> QNetworkConfiguration"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				19
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"currentNetworkConfiguration(void) --> QNetworkConfiguration"+char(34)+","
+			]
+		]
+	],
+	[
+		20,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"delete(void) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"delete(void) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				20
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"delete(void) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		21,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"duration(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"duration(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				21
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"duration(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		22,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"error(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"error(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				22
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"error(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		23,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"errorString(void) --> QString"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"errorString(void) --> QString"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				23
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"errorString(void) --> QString"+char(34)+","
+			]
+		]
+	],
+	[
+		24,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"init(parent) --> object"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"init(parent) --> object"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				24
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"init(parent) --> object"+char(34)+","
+			]
+		]
+	],
+	[
+		25,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"isAudioAvailable(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"isAudioAvailable(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				25
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"isAudioAvailable(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		26,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"isMuted(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"isMuted(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				26
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"isMuted(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		27,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"isSeekable(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"isSeekable(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				27
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"isSeekable(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		28,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"isVideoAvailable(void) --> bool"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"isVideoAvailable(void) --> bool"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				28
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"isVideoAvailable(void) --> bool"+char(34)+","
+			]
+		]
+	],
+	[
+		29,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"media(void) --> QMediaContent"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"media(void) --> QMediaContent"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				29
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"media(void) --> QMediaContent"+char(34)+","
+			]
+		]
+	],
+	[
+		30,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"mediaStatus(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"mediaStatus(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				30
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"mediaStatus(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		31,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"mediaStream(void) --> QIODevice"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"mediaStream(void) --> QIODevice"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				31
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"mediaStream(void) --> QIODevice"+char(34)+","
+			]
+		]
+	],
+	[
+		32,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"objectpointer(void) --> pointer"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"objectpointer(void) --> pointer"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				32
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"objectpointer(void) --> pointer"+char(34)+","
+			]
+		]
+	],
+	[
+		33,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"pause(void) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"pause(void) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				33
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"pause(void) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		34,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"play(void) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"play(void) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				34
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"play(void) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		35,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"playbackRate(void) --> qreal"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"playbackRate(void) --> qreal"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				35
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"playbackRate(void) --> qreal"+char(34)+","
+			]
+		]
+	],
+	[
+		36,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"playlist(void) --> QMediaPlaylist"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"playlist(void) --> QMediaPlaylist"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				36
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"playlist(void) --> QMediaPlaylist"+char(34)+","
+			]
+		]
+	],
+	[
+		37,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"position(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"position(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				37
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"position(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		38,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setMedia(QUrl) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setMedia(QUrl) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				38
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setMedia(QUrl) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		39,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setMuted(bool muted) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setMuted(bool muted) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				39
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setMuted(bool muted) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		40,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setPlaybackRate(qreal rate) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setPlaybackRate(qreal rate) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				40
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setPlaybackRate(qreal rate) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		41,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setPlaylist(QMediaPlaylist *playlist) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setPlaylist(QMediaPlaylist *playlist) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				41
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setPlaylist(QMediaPlaylist *playlist) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		42,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setPosition(int position) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setPosition(int position) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				42
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setPosition(int position) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		43,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setVideoOutput(QVideoWidget *output) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setVideoOutput(QVideoWidget *output) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				43
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setVideoOutput(QVideoWidget *output) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		44,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"setVolume(int volume) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"setVolume(int volume) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				44
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"setVolume(int volume) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		45,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"state(void) --> int"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"state(void) --> int"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				45
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"state(void) --> int"+char(34)+","
+			]
+		]
+	],
+	[
+		46,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"stop(void) --> void"+char(34)+","
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"stop(void) --> void"+char(34)+",
+"
+			],
+			[
+				"interactionid",
+				46
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"stop(void) --> void"+char(34)+","
+			]
+		]
+	],
+	[
+		47,
+		1,
+		[
+			[
+				"name",
+				"	"+char(34)+"volume(void) --> int"+char(34)+""
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	"+char(34)+"volume(void) --> int"+char(34)+"
+"
+			],
+			[
+				"interactionid",
+				47
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	"+char(34)+"volume(void) --> int"+char(34)+""
+			]
+		]
+	],
+	[
+		48,
+		1,
+		[
+			[
+				"name",
+				"]"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#]
+"
+			],
+			[
+				"interactionid",
+				48
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"]"
+			]
+		]
+	],
+	[
+		49,
+		1,
+		[
+			[
+				"name",
+				"*/"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#*/
+"
+			],
+			[
+				"interactionid",
+				49
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"*/"
+			]
+		]
+	],
+	[
+		50,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_QMEDIAPLAYERCLASS_IP_VALUE2LIST</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[&quot;حالة&nbsp;المخزن&nbsp;المؤقت(&nbsp;لاشىء&nbsp;)&nbsp;--&gt;&nbsp;عدد&nbsp;صحيح&quot;,&quot;وسائل&nbsp;الإعلام&nbsp;الحالية(&nbsp;لاشىء&nbsp;)&nbsp;--&gt;&nbsp;محتوى&nbsp;الوسائط&quot;,&quot;تكوين&nbsp;الشبكة&nbsp;الحالي(&nbsp;لاشىء&nbsp;)&nbsp;--&gt;&nbsp;تكوين&nbsp;الشبكة&quot;,&quot;حذف(&nbsp;لاشىء&nbsp;)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;مدة(&nbsp;لاشىء&nbsp;)&nbsp;--&gt;&nbsp;عدد&nbsp;صحيح&quot;,&quot;خطأ(&nbsp;لاشىء&nbsp;)&nbsp;--&gt;&nbsp;عدد&nbsp;صحيح&quot;,&quot;نص&nbsp;الخطأ(&nbsp;لاشىء&nbsp;)&nbsp;--&gt;&nbsp;نص&nbsp;سلسلة&quot;,&quot;تهيئة(&nbsp;أصل&nbsp;)&nbsp;--&gt;&nbsp;كائن&quot;,&quot;هل&nbsp;الصوت&nbsp;متاح(&nbsp;لاشىء&nbsp;)&nbsp;--&gt;&nbsp;صحيح&nbsp;/&nbsp;خطأ&quot;,&quot;هل&nbsp;مكتوم(&nbsp;لاشىء&nbsp;)&nbsp;--&gt;&nbsp;صحيح&nbsp;/&nbsp;خطأ&quot;,&quot;هل&nbsp;يمكن&nbsp;البحث(&nbsp;لاشىء&nbsp;)&nbsp;--&gt;&nbsp;صحيح&nbsp;/&nbsp;خطأ&quot;,&quot;هل&nbsp;الفيديو&nbsp;متاح(&nbsp;لاشىء&nbsp;)&nbsp;--&gt;&nbsp;صحيح&nbsp;/&nbsp;خطأ&quot;,&quot;وسائل&nbsp;الإعلام(&nbsp;لاشىء&nbsp;)&nbsp;--&gt;&nbsp;محتوى&nbsp;الوسائط&quot;,&quot;حالة&nbsp;الوسائط(&nbsp;لاشىء&nbsp;)&nbsp;--&gt;&nbsp;عدد&nbsp;صحيح&quot;,&quot;تيار&nbsp;الوسائط(&nbsp;لاشىء&nbsp;)&nbsp;--&gt;&nbsp;جهاز&nbsp;الإدخال&nbsp;/&nbsp;الإخراج&quot;,&quot;مؤشر&nbsp;الكائن(&nbsp;لاشىء&nbsp;)&nbsp;--&gt;&nbsp;مؤشر&quot;,&quot;إيقاف&nbsp;مؤقت(&nbsp;لاشىء&nbsp;)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;تشغيل(&nbsp;لاشىء&nbsp;)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;معدل&nbsp;التشغيل(&nbsp;لاشىء&nbsp;)&nbsp;--&gt;&nbsp;معدل&nbsp;حقيقي&quot;,&quot;قائمة&nbsp;التشغيل(&nbsp;لاشىء&nbsp;)&nbsp;--&gt;&nbsp;قائمة&nbsp;تشغيل&nbsp;الوسائط&quot;,&quot;موقع(&nbsp;لاشىء&nbsp;)&nbsp;--&gt;&nbsp;عدد&nbsp;صحيح&quot;,&quot;تعيين&nbsp;الوسائط(&nbsp;عنوان&nbsp;ورل&nbsp;)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;تعيين&nbsp;مكتوم(&nbsp;صحيح&nbsp;/&nbsp;خطأ&nbsp;مكتوم&nbsp;)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;تعيين&nbsp;معدل&nbsp;التشغيل(&nbsp;معدل&nbsp;حقيقي&nbsp;)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;تعيين&nbsp;قائمة&nbsp;التشغيل(&nbsp;قائمة&nbsp;تشغيل&nbsp;الوسائط&nbsp;*قائمة&nbsp;التشغيل&nbsp;)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;تعيين&nbsp;الموقع(&nbsp;عدد&nbsp;صحيح&nbsp;موقع&nbsp;)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;تعيين&nbsp;خرج&nbsp;الفيديو(&nbsp;أداة&nbsp;فيديو&nbsp;*خرج&nbsp;)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;تعيين&nbsp;الحجم(&nbsp;عدد&nbsp;صحيح&nbsp;حجم&nbsp;)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;حالة(&nbsp;لاشىء&nbsp;)&nbsp;--&gt;&nbsp;عدد&nbsp;صحيح&quot;,&quot;توقف(&nbsp;لاشىء&nbsp;)&nbsp;--&gt;&nbsp;لاشىء&quot;,&quot;حجم(&nbsp;لاشىء&nbsp;)&nbsp;--&gt;&nbsp;عدد&nbsp;صحيح&quot;]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_CT_QMEDIAPLAYERCLASS_IP_VALUE2LIST = ["+char(34)+"حالة المخزن المؤقت( لاشىء ) --> عدد صحيح"+char(34)+","+char(34)+"وسائل الإعلام الحالية( لاشىء ) --> محتوى الوسائط"+char(34)+","+char(34)+"تكوين الشبكة الحالي( لاشىء ) --> تكوين الشبكة"+char(34)+","+char(34)+"حذف( لاشىء ) --> لاشىء"+char(34)+","+char(34)+"مدة( لاشىء ) --> عدد صحيح"+char(34)+","+char(34)+"خطأ( لاشىء ) --> عدد صحيح"+char(34)+","+char(34)+"نص الخطأ( لاشىء ) --> نص سلسلة"+char(34)+","+char(34)+"تهيئة( أصل ) --> كائن"+char(34)+","+char(34)+"هل الصوت متاح( لاشىء ) --> صحيح / خطأ"+char(34)+","+char(34)+"هل مكتوم( لاشىء ) --> صحيح / خطأ"+char(34)+","+char(34)+"هل يمكن البحث( لاشىء ) --> صحيح / خطأ"+char(34)+","+char(34)+"هل الفيديو متاح( لاشىء ) --> صحيح / خطأ"+char(34)+","+char(34)+"وسائل الإعلام( لاشىء ) --> محتوى الوسائط"+char(34)+","+char(34)+"حالة الوسائط( لاشىء ) --> عدد صحيح"+char(34)+","+char(34)+"تيار الوسائط( لاشىء ) --> جهاز الإدخال / الإخراج"+char(34)+","+char(34)+"مؤشر الكائن( لاشىء ) --> مؤشر"+char(34)+","+char(34)+"إيقاف مؤقت( لاشىء ) --> لاشىء"+char(34)+","+char(34)+"تشغيل( لاشىء ) --> لاشىء"+char(34)+","+char(34)+"معدل التشغيل( لاشىء ) --> معدل حقيقي"+char(34)+","+char(34)+"قائمة التشغيل( لاشىء ) --> قائمة تشغيل الوسائط"+char(34)+","+char(34)+"موقع( لاشىء ) --> عدد صحيح"+char(34)+","+char(34)+"تعيين الوسائط( عنوان ورل ) --> لاشىء"+char(34)+","+char(34)+"تعيين مكتوم( صحيح / خطأ مكتوم ) --> لاشىء"+char(34)+","+char(34)+"تعيين معدل التشغيل( معدل حقيقي ) --> لاشىء"+char(34)+","+char(34)+"تعيين قائمة التشغيل( قائمة تشغيل الوسائط *قائمة التشغيل ) --> لاشىء"+char(34)+","+char(34)+"تعيين الموقع( عدد صحيح موقع ) --> لاشىء"+char(34)+","+char(34)+"تعيين خرج الفيديو( أداة فيديو *خرج ) --> لاشىء"+char(34)+","+char(34)+"تعيين الحجم( عدد صحيح حجم ) --> لاشىء"+char(34)+","+char(34)+"حالة( لاشىء ) --> عدد صحيح"+char(34)+","+char(34)+"توقف( لاشىء ) --> لاشىء"+char(34)+","+char(34)+"حجم( لاشىء ) --> عدد صحيح"+char(34)+"]"
+			],
+			[
+				"interactionid",
+				50
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
 				2
 			],
 			[
 				"plainname",
-				"T_CT_QMEDIAPLAYERCLASS_IP_VALUE2STEPFUNC = T_CT_QMEDIAPLAYERCLASS_IP_VALUE2FUNC"
+				"T_CT_QMEDIAPLAYERCLASS_IP_VALUE2LIST = ["+char(34)+"حالة المخزن المؤقت( لاشىء ) --> عدد صحيح"+char(34)+","+char(34)+"وسائل الإعلام الحالية( لاشىء ) --> محتوى الوسائط"+char(34)+","+char(34)+"تكوين الشبكة الحالي( لاشىء ) --> تكوين الشبكة"+char(34)+","+char(34)+"حذف( لاشىء ) --> لاشىء"+char(34)+","+char(34)+"مدة( لاشىء ) --> عدد صحيح"+char(34)+","+char(34)+"خطأ( لاشىء ) --> عدد صحيح"+char(34)+","+char(34)+"نص الخطأ( لاشىء ) --> نص سلسلة"+char(34)+","+char(34)+"تهيئة( أصل ) --> كائن"+char(34)+","+char(34)+"هل الصوت متاح( لاشىء ) --> صحيح / خطأ"+char(34)+","+char(34)+"هل مكتوم( لاشىء ) --> صحيح / خطأ"+char(34)+","+char(34)+"هل يمكن البحث( لاشىء ) --> صحيح / خطأ"+char(34)+","+char(34)+"هل الفيديو متاح( لاشىء ) --> صحيح / خطأ"+char(34)+","+char(34)+"وسائل الإعلام( لاشىء ) --> محتوى الوسائط"+char(34)+","+char(34)+"حالة الوسائط( لاشىء ) --> عدد صحيح"+char(34)+","+char(34)+"تيار الوسائط( لاشىء ) --> جهاز الإدخال / الإخراج"+char(34)+","+char(34)+"مؤشر الكائن( لاشىء ) --> مؤشر"+char(34)+","+char(34)+"إيقاف مؤقت( لاشىء ) --> لاشىء"+char(34)+","+char(34)+"تشغيل( لاشىء ) --> لاشىء"+char(34)+","+char(34)+"معدل التشغيل( لاشىء ) --> معدل حقيقي"+char(34)+","+char(34)+"قائمة التشغيل( لاشىء ) --> قائمة تشغيل الوسائط"+char(34)+","+char(34)+"موقع( لاشىء ) --> عدد صحيح"+char(34)+","+char(34)+"تعيين الوسائط( عنوان ورل ) --> لاشىء"+char(34)+","+char(34)+"تعيين مكتوم( صحيح / خطأ مكتوم ) --> لاشىء"+char(34)+","+char(34)+"تعيين معدل التشغيل( معدل حقيقي ) --> لاشىء"+char(34)+","+char(34)+"تعيين قائمة التشغيل( قائمة تشغيل الوسائط *قائمة التشغيل ) --> لاشىء"+char(34)+","+char(34)+"تعيين الموقع( عدد صحيح موقع ) --> لاشىء"+char(34)+","+char(34)+"تعيين خرج الفيديو( أداة فيديو *خرج ) --> لاشىء"+char(34)+","+char(34)+"تعيين الحجم( عدد صحيح حجم ) --> لاشىء"+char(34)+","+char(34)+"حالة( لاشىء ) --> عدد صحيح"+char(34)+","+char(34)+"توقف( لاشىء ) --> لاشىء"+char(34)+","+char(34)+"حجم( لاشىء ) --> عدد صحيح"+char(34)+"]"
 			]
 		]
 	]
@@ -586,121 +1951,401 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"20/02/2025",
-		"23:00:53",
+		"04/03/2025",
+		"21:40:33",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"20/02/2025",
-		"23:00:53",
+		"04/03/2025",
+		"21:40:33",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"20/02/2025",
-		"23:00:53",
+		"04/03/2025",
+		"21:40:33",
 		"value;;_RV_;;**	Project : Programming Without Coding Technology (PWCT) Version 2.0;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"20/02/2025",
-		"23:00:53",
+		"04/03/2025",
+		"21:40:33",
 		"value;;_RV_;;**	File Purpose :  qmediaplayerclass Component;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"20/02/2025",
-		"23:00:53",
+		"04/03/2025",
+		"21:40:33",
 		"value;;_RV_;;**	Date : 2021.08.09;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"comment_text",
-		"20/02/2025",
-		"23:00:53",
+		"04/03/2025",
+		"21:40:33",
 		"value;;_RV_;;**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"comment_text",
-		"20/02/2025",
-		"23:00:53",
+		"04/03/2025",
+		"21:40:33",
 		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"assignment",
-		"20/02/2025",
-		"23:00:53",
+		"04/03/2025",
+		"21:40:33",
 		"leftside;;_RV_;;T_CT_QMEDIAPLAYERCLASS_IP_TITLE;;_RV_;;rightside;;_RV_;;"+char(34)+"مكون فئة ال QMediaPlayer"+char(34)+";;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"20/02/2025",
-		"23:00:53",
+		"04/03/2025",
+		"21:40:33",
 		"leftside;;_RV_;;T_CT_QMEDIAPLAYERCLASS_IP_VALUE;;_RV_;;rightside;;_RV_;;"+char(34)+"اسم الكائن :"+char(34)+";;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"20/02/2025",
-		"23:00:53",
+		"04/03/2025",
+		"21:40:33",
 		"leftside;;_RV_;;T_CT_QMEDIAPLAYERCLASS_IP_VALUE2;;_RV_;;rightside;;_RV_;;"+char(34)+"الميثود : "+char(34)+";;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"20/02/2025",
-		"23:00:53",
-		"leftside;;_RV_;;T_CT_QMEDIAPLAYERCLASS_IP_VALUE2LIST;;_RV_;;rightside;;_RV_;;["+char(34)+"bufferStatus(void) --> int"+char(34)+","+char(34)+"currentMedia(void) --> QMediaContent"+char(34)+","+char(34)+"currentNetworkConfiguration(void) --> QNetworkConfiguration"+char(34)+","+char(34)+"delete(void) --> void"+char(34)+","+char(34)+"duration(void) --> int"+char(34)+","+char(34)+"error(void) --> int"+char(34)+","+char(34)+"errorString(void) --> QString"+char(34)+","+char(34)+"init(parent) --> object"+char(34)+","+char(34)+"isAudioAvailable(void) --> bool"+char(34)+","+char(34)+"isMuted(void) --> bool"+char(34)+","+char(34)+"isSeekable(void) --> bool"+char(34)+","+char(34)+"isVideoAvailable(void) --> bool"+char(34)+","+char(34)+"media(void) --> QMediaContent"+char(34)+","+char(34)+"mediaStatus(void) --> int"+char(34)+","+char(34)+"mediaStream(void) --> QIODevice"+char(34)+","+char(34)+"objectpointer(void) --> pointer"+char(34)+","+char(34)+"pause(void) --> void"+char(34)+","+char(34)+"play(void) --> void"+char(34)+","+char(34)+"playbackRate(void) --> qreal"+char(34)+","+char(34)+"playlist(void) --> QMediaPlaylist"+char(34)+","+char(34)+"position(void) --> int"+char(34)+","+char(34)+"setMedia(QUrl) --> void"+char(34)+","+char(34)+"setMuted(bool muted) --> void"+char(34)+","+char(34)+"setPlaybackRate(qreal rate) --> void"+char(34)+","+char(34)+"setPlaylist(QMediaPlaylist *playlist) --> void"+char(34)+","+char(34)+"setPosition(int position) --> void"+char(34)+","+char(34)+"setVideoOutput(QVideoWidget *output) --> void"+char(34)+","+char(34)+"setVolume(int volume) --> void"+char(34)+","+char(34)+"state(void) --> int"+char(34)+","+char(34)+"stop(void) --> void"+char(34)+","+char(34)+"volume(void) --> int"+char(34)+"];;_RV_;;"
+		"04/03/2025",
+		"21:40:33",
+		"leftside;;_RV_;;T_CT_QMEDIAPLAYERCLASS_IP_VALUE3;;_RV_;;rightside;;_RV_;;"+char(34)+"المعطيات :"+char(34)+";;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"assignment",
-		"20/02/2025",
-		"23:00:53",
-		"leftside;;_RV_;;T_CT_QMEDIAPLAYERCLASS_IP_VALUE3;;_RV_;;rightside;;_RV_;;"+char(34)+"المعطيات :"+char(34)+";;_RV_;;"
+		"04/03/2025",
+		"21:40:33",
+		"leftside;;_RV_;;T_CT_QMEDIAPLAYERCLASS_IP_VALUE4;;_RV_;;rightside;;_RV_;;"+char(34)+"الناتج :"+char(34)+";;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"assignment",
-		"20/02/2025",
-		"23:00:53",
-		"leftside;;_RV_;;T_CT_QMEDIAPLAYERCLASS_IP_VALUE4;;_RV_;;rightside;;_RV_;;"+char(34)+"الناتج :"+char(34)+";;_RV_;;"
+		"04/03/2025",
+		"21:40:33",
+		"leftside;;_RV_;;T_CT_QMEDIAPLAYERCLASS_IP_VALUE2FUNC;;_RV_;;rightside;;_RV_;;["+char(34)+"bufferstatus"+char(34)+","+char(34)+"currentmedia"+char(34)+","+char(34)+"currentnetworkconfiguration"+char(34)+","+char(34)+"delete"+char(34)+","+char(34)+"duration"+char(34)+","+char(34)+"error"+char(34)+","+char(34)+"errorstring"+char(34)+","+char(34)+"init"+char(34)+","+char(34)+"isaudioavailable"+char(34)+","+char(34)+"ismuted"+char(34)+","+char(34)+"isseekable"+char(34)+","+char(34)+"isvideoavailable"+char(34)+","+char(34)+"media"+char(34)+","+char(34)+"mediastatus"+char(34)+","+char(34)+"mediastream"+char(34)+","+char(34)+"objectpointer"+char(34)+","+char(34)+"pause"+char(34)+","+char(34)+"play"+char(34)+","+char(34)+"playbackrate"+char(34)+","+char(34)+"playlist"+char(34)+","+char(34)+"position"+char(34)+","+char(34)+"setmedia"+char(34)+","+char(34)+"setmuted"+char(34)+","+char(34)+"setplaybackrate"+char(34)+","+char(34)+"setplaylist"+char(34)+","+char(34)+"setposition"+char(34)+","+char(34)+"setvideooutput"+char(34)+","+char(34)+"setvolume"+char(34)+","+char(34)+"state"+char(34)+","+char(34)+"stop"+char(34)+","+char(34)+"volume"+char(34)+"];;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"assignment",
-		"20/02/2025",
-		"23:00:53",
-		"leftside;;_RV_;;T_CT_QMEDIAPLAYERCLASS_IP_VALUE2FUNC;;_RV_;;rightside;;_RV_;;["+char(34)+"bufferstatus"+char(34)+","+char(34)+"currentmedia"+char(34)+","+char(34)+"currentnetworkconfiguration"+char(34)+","+char(34)+"delete"+char(34)+","+char(34)+"duration"+char(34)+","+char(34)+"error"+char(34)+","+char(34)+"errorstring"+char(34)+","+char(34)+"init"+char(34)+","+char(34)+"isaudioavailable"+char(34)+","+char(34)+"ismuted"+char(34)+","+char(34)+"isseekable"+char(34)+","+char(34)+"isvideoavailable"+char(34)+","+char(34)+"media"+char(34)+","+char(34)+"mediastatus"+char(34)+","+char(34)+"mediastream"+char(34)+","+char(34)+"objectpointer"+char(34)+","+char(34)+"pause"+char(34)+","+char(34)+"play"+char(34)+","+char(34)+"playbackrate"+char(34)+","+char(34)+"playlist"+char(34)+","+char(34)+"position"+char(34)+","+char(34)+"setmedia"+char(34)+","+char(34)+"setmuted"+char(34)+","+char(34)+"setplaybackrate"+char(34)+","+char(34)+"setplaylist"+char(34)+","+char(34)+"setposition"+char(34)+","+char(34)+"setvideooutput"+char(34)+","+char(34)+"setvolume"+char(34)+","+char(34)+"state"+char(34)+","+char(34)+"stop"+char(34)+","+char(34)+"volume"+char(34)+"];;_RV_;;"
+		"04/03/2025",
+		"21:40:33",
+		"leftside;;_RV_;;T_CT_QMEDIAPLAYERCLASS_IP_VALUE2STEPFUNC;;_RV_;;rightside;;_RV_;;["+char(34)+"حالة الوسيطة"+char(34)+","+char(34)+"الوسائط الحالية"+char(34)+","+char(34)+"تكوين الشبكة الحالية"+char(34)+","+char(34)+"حذف"+char(34)+","+char(34)+"مدة"+char(34)+","+char(34)+"خطأ"+char(34)+","+char(34)+"نص الخطأ"+char(34)+","+char(34)+"تهيئة"+char(34)+","+char(34)+"هل الصوت متاح"+char(34)+","+char(34)+"هل مكتوم"+char(34)+","+char(34)+"هل يمكن البحث"+char(34)+","+char(34)+"هل الفيديو متاح"+char(34)+","+char(34)+"وسائط"+char(34)+","+char(34)+"حالة الوسائط"+char(34)+","+char(34)+"تدفق الوسائط"+char(34)+","+char(34)+"مؤشر الكائن"+char(34)+","+char(34)+"إيقاف مؤقت"+char(34)+","+char(34)+"تشغيل"+char(34)+","+char(34)+"سرعة التشغيل"+char(34)+","+char(34)+"قائمة التشغيل"+char(34)+","+char(34)+"موقع"+char(34)+","+char(34)+"تعيين الوسائط"+char(34)+","+char(34)+"تعيين مكتوم"+char(34)+","+char(34)+"تعيين سرعة التشغيل"+char(34)+","+char(34)+"تعيين قائمة التشغيل"+char(34)+","+char(34)+"تعيين الموقع"+char(34)+","+char(34)+"تعيين خرج الفيديو"+char(34)+","+char(34)+"تعيين الحجم"+char(34)+","+char(34)+"حالة"+char(34)+","+char(34)+"توقف"+char(34)+","+char(34)+"حجم"+char(34)+"];;_RV_;;"
 	],
 	[
 		15,
 		1,
+		"comment_text",
+		"04/03/2025",
+		"21:40:33",
+		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		16,
+		1,
+		"comment_text",
+		"04/03/2025",
+		"21:40:33",
+		"value;;_RV_;;T_CT_QMEDIAPLAYERCLASS_IP_VALUE2LIST = [;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		17,
+		1,
+		"comment_text",
+		"04/03/2025",
+		"21:40:33",
+		"value;;_RV_;;	"+char(34)+"bufferStatus(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		18,
+		1,
+		"comment_text",
+		"04/03/2025",
+		"21:40:33",
+		"value;;_RV_;;	"+char(34)+"currentMedia(void) --> QMediaContent"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		19,
+		1,
+		"comment_text",
+		"04/03/2025",
+		"21:40:33",
+		"value;;_RV_;;	"+char(34)+"currentNetworkConfiguration(void) --> QNetworkConfiguration"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		20,
+		1,
+		"comment_text",
+		"04/03/2025",
+		"21:40:33",
+		"value;;_RV_;;	"+char(34)+"delete(void) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		21,
+		1,
+		"comment_text",
+		"04/03/2025",
+		"21:40:33",
+		"value;;_RV_;;	"+char(34)+"duration(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		22,
+		1,
+		"comment_text",
+		"04/03/2025",
+		"21:40:33",
+		"value;;_RV_;;	"+char(34)+"error(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		23,
+		1,
+		"comment_text",
+		"04/03/2025",
+		"21:40:33",
+		"value;;_RV_;;	"+char(34)+"errorString(void) --> QString"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		24,
+		1,
+		"comment_text",
+		"04/03/2025",
+		"21:40:33",
+		"value;;_RV_;;	"+char(34)+"init(parent) --> object"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		25,
+		1,
+		"comment_text",
+		"04/03/2025",
+		"21:40:33",
+		"value;;_RV_;;	"+char(34)+"isAudioAvailable(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		26,
+		1,
+		"comment_text",
+		"04/03/2025",
+		"21:40:33",
+		"value;;_RV_;;	"+char(34)+"isMuted(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		27,
+		1,
+		"comment_text",
+		"04/03/2025",
+		"21:40:33",
+		"value;;_RV_;;	"+char(34)+"isSeekable(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		28,
+		1,
+		"comment_text",
+		"04/03/2025",
+		"21:40:33",
+		"value;;_RV_;;	"+char(34)+"isVideoAvailable(void) --> bool"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		29,
+		1,
+		"comment_text",
+		"04/03/2025",
+		"21:40:33",
+		"value;;_RV_;;	"+char(34)+"media(void) --> QMediaContent"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		30,
+		1,
+		"comment_text",
+		"04/03/2025",
+		"21:40:33",
+		"value;;_RV_;;	"+char(34)+"mediaStatus(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		31,
+		1,
+		"comment_text",
+		"04/03/2025",
+		"21:40:33",
+		"value;;_RV_;;	"+char(34)+"mediaStream(void) --> QIODevice"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		32,
+		1,
+		"comment_text",
+		"04/03/2025",
+		"21:40:33",
+		"value;;_RV_;;	"+char(34)+"objectpointer(void) --> pointer"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		33,
+		1,
+		"comment_text",
+		"04/03/2025",
+		"21:40:33",
+		"value;;_RV_;;	"+char(34)+"pause(void) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		34,
+		1,
+		"comment_text",
+		"04/03/2025",
+		"21:40:33",
+		"value;;_RV_;;	"+char(34)+"play(void) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		35,
+		1,
+		"comment_text",
+		"04/03/2025",
+		"21:40:33",
+		"value;;_RV_;;	"+char(34)+"playbackRate(void) --> qreal"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		36,
+		1,
+		"comment_text",
+		"04/03/2025",
+		"21:40:33",
+		"value;;_RV_;;	"+char(34)+"playlist(void) --> QMediaPlaylist"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		37,
+		1,
+		"comment_text",
+		"04/03/2025",
+		"21:40:33",
+		"value;;_RV_;;	"+char(34)+"position(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		38,
+		1,
+		"comment_text",
+		"04/03/2025",
+		"21:40:33",
+		"value;;_RV_;;	"+char(34)+"setMedia(QUrl) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		39,
+		1,
+		"comment_text",
+		"04/03/2025",
+		"21:40:33",
+		"value;;_RV_;;	"+char(34)+"setMuted(bool muted) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		40,
+		1,
+		"comment_text",
+		"04/03/2025",
+		"21:40:33",
+		"value;;_RV_;;	"+char(34)+"setPlaybackRate(qreal rate) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		41,
+		1,
+		"comment_text",
+		"04/03/2025",
+		"21:40:33",
+		"value;;_RV_;;	"+char(34)+"setPlaylist(QMediaPlaylist *playlist) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		42,
+		1,
+		"comment_text",
+		"04/03/2025",
+		"21:40:33",
+		"value;;_RV_;;	"+char(34)+"setPosition(int position) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		43,
+		1,
+		"comment_text",
+		"04/03/2025",
+		"21:40:33",
+		"value;;_RV_;;	"+char(34)+"setVideoOutput(QVideoWidget *output) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		44,
+		1,
+		"comment_text",
+		"04/03/2025",
+		"21:40:33",
+		"value;;_RV_;;	"+char(34)+"setVolume(int volume) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		45,
+		1,
+		"comment_text",
+		"04/03/2025",
+		"21:40:33",
+		"value;;_RV_;;	"+char(34)+"state(void) --> int"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		46,
+		1,
+		"comment_text",
+		"04/03/2025",
+		"21:40:33",
+		"value;;_RV_;;	"+char(34)+"stop(void) --> void"+char(34)+",;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		47,
+		1,
+		"comment_text",
+		"04/03/2025",
+		"21:40:33",
+		"value;;_RV_;;	"+char(34)+"volume(void) --> int"+char(34)+";;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		48,
+		1,
+		"comment_text",
+		"04/03/2025",
+		"21:40:33",
+		"value;;_RV_;;];;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		49,
+		1,
+		"comment_text",
+		"04/03/2025",
+		"21:40:33",
+		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		50,
+		1,
 		"assignment",
-		"20/02/2025",
-		"23:00:53",
-		"leftside;;_RV_;;T_CT_QMEDIAPLAYERCLASS_IP_VALUE2STEPFUNC;;_RV_;;rightside;;_RV_;;T_CT_QMEDIAPLAYERCLASS_IP_VALUE2FUNC;;_RV_;;"
+		"04/03/2025",
+		"21:40:33",
+		"leftside;;_RV_;;T_CT_QMEDIAPLAYERCLASS_IP_VALUE2LIST;;_RV_;;rightside;;_RV_;;["+char(34)+"حالة المخزن المؤقت( لاشىء ) --> عدد صحيح"+char(34)+","+char(34)+"وسائل الإعلام الحالية( لاشىء ) --> محتوى الوسائط"+char(34)+","+char(34)+"تكوين الشبكة الحالي( لاشىء ) --> تكوين الشبكة"+char(34)+","+char(34)+"حذف( لاشىء ) --> لاشىء"+char(34)+","+char(34)+"مدة( لاشىء ) --> عدد صحيح"+char(34)+","+char(34)+"خطأ( لاشىء ) --> عدد صحيح"+char(34)+","+char(34)+"نص الخطأ( لاشىء ) --> نص سلسلة"+char(34)+","+char(34)+"تهيئة( أصل ) --> كائن"+char(34)+","+char(34)+"هل الصوت متاح( لاشىء ) --> صحيح / خطأ"+char(34)+","+char(34)+"هل مكتوم( لاشىء ) --> صحيح / خطأ"+char(34)+","+char(34)+"هل يمكن البحث( لاشىء ) --> صحيح / خطأ"+char(34)+","+char(34)+"هل الفيديو متاح( لاشىء ) --> صحيح / خطأ"+char(34)+","+char(34)+"وسائل الإعلام( لاشىء ) --> محتوى الوسائط"+char(34)+","+char(34)+"حالة الوسائط( لاشىء ) --> عدد صحيح"+char(34)+","+char(34)+"تيار الوسائط( لاشىء ) --> جهاز الإدخال / الإخراج"+char(34)+","+char(34)+"مؤشر الكائن( لاشىء ) --> مؤشر"+char(34)+","+char(34)+"إيقاف مؤقت( لاشىء ) --> لاشىء"+char(34)+","+char(34)+"تشغيل( لاشىء ) --> لاشىء"+char(34)+","+char(34)+"معدل التشغيل( لاشىء ) --> معدل حقيقي"+char(34)+","+char(34)+"قائمة التشغيل( لاشىء ) --> قائمة تشغيل الوسائط"+char(34)+","+char(34)+"موقع( لاشىء ) --> عدد صحيح"+char(34)+","+char(34)+"تعيين الوسائط( عنوان ورل ) --> لاشىء"+char(34)+","+char(34)+"تعيين مكتوم( صحيح / خطأ مكتوم ) --> لاشىء"+char(34)+","+char(34)+"تعيين معدل التشغيل( معدل حقيقي ) --> لاشىء"+char(34)+","+char(34)+"تعيين قائمة التشغيل( قائمة تشغيل الوسائط *قائمة التشغيل ) --> لاشىء"+char(34)+","+char(34)+"تعيين الموقع( عدد صحيح موقع ) --> لاشىء"+char(34)+","+char(34)+"تعيين خرج الفيديو( أداة فيديو *خرج ) --> لاشىء"+char(34)+","+char(34)+"تعيين الحجم( عدد صحيح حجم ) --> لاشىء"+char(34)+","+char(34)+"حالة( لاشىء ) --> عدد صحيح"+char(34)+","+char(34)+"توقف( لاشىء ) --> لاشىء"+char(34)+","+char(34)+"حجم( لاشىء ) --> عدد صحيح"+char(34)+"];;_RV_;;"
 	]
 ]
 
