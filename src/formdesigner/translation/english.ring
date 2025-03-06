@@ -50,6 +50,7 @@ T_FORMDESIGNER_TOOLBAR_SENDTOBACK	= "Send To Back"
 T_FORMDESIGNER_TOOLBAR_DELETE		= "Delete"
 T_FORMDESIGNER_TOOLBAR_SELECTOBJECTS	= "Select Objects"
 
+T_FORMDESIGNER_WINDOW = "Window"
 T_FROMDESIGNER_TOOLBOX_WINDOWTITLE	= "ToolBox"
 T_FROMDESIGNER_TOOLBOX_LOCK		= "Lock"
 T_FROMDESIGNER_TOOLBOX_SELECT		= "Select"
@@ -362,4 +363,4 @@ T_FORMDESIGNER_GUILIB_INFO  = "This application uses the Qt GUI Library through 
 T_FORMDESIGNER_ABOUT_TITLE = "About"
 T_FORMDESIGNER_ABOUT_INFO  = "This application developed using the Ring programming language" + nl +
 		"Ring Version : " + version(True) + nl +
-		"2018-2024, Mahmoud Fayed <msfclipper@yahoo.com>"
+		"2018-2025, Mahmoud Fayed <msfclipper@yahoo.com>"
