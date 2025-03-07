@@ -560,14 +560,16 @@ qt_notoolbararea"
 			cCode = ""
 			for item in aTree {
 				aContent = item[C_TREEMODEL_CONTENT]
-				cCode += aContent[:code] + nl				
+				cCode += aContent[:plainname] + nl				
 			}
 			aWords = sort(split(cCode," "))
-		# Remove Duplication
+		# Remove Duplication and words contains the dot operator
 			cLast = ""
 			for word in aWords {
 				if word != cLast {
-					aItems + word
+					if ! (substr(word,".") or substr(word,"(") ) {
+						aItems + word
+					}
 					cLast = word
 				}
 			}
