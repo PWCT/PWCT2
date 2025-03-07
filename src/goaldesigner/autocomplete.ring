@@ -540,8 +540,8 @@ qt_notoolbararea"
 			if lKnown {
 				aMethodsList = methods(oMyObj)
 				for cMethod in aMethodsList {
-					aItems + (oObj[1]+"."+cMethod+"()")	
-					aItems + ("oView."+oObj[1]+"."+cMethod+"()")	
+					aItems + (oObj[1]+"."+cMethod)	
+					aItems + ("oView."+oObj[1]+"."+cMethod)	
 				}
 			}
 		}
