@@ -471,6 +471,10 @@ qt_notoolbararea"
 			if not find(aItems,"oView."+oObj[1]) {
 				aItems + ("oView."+oObj[1])
 			}
+			# Use this feature in English version 
+				if ! T_LANGUAGE = :English {
+					loop
+				}
 			cClass = classname(oObj[2])
 			lKnown = True
 			switch cClass {
