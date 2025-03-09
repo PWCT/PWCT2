@@ -401,6 +401,7 @@ C_VPL_NAME = 'RingPWCT'
 	load "weblib_template.ring"
 	load "weblib_webpageclass.ring"
 	load "whileloop.ring"
+	load "windowcontroller.ring"
 	load "windowsnl.ring"
 
 	
@@ -800,4 +801,5 @@ C_VPL_NAME = 'RingPWCT'
 	aComponentsFilesList + (cComponentsPath + "weblib_template.ring")
 	aComponentsFilesList + (cComponentsPath + "weblib_webpageclass.ring")
 	aComponentsFilesList + (cComponentsPath + "whileloop.ring")
+	aComponentsFilesList + (cComponentsPath + "windowcontroller.ring")
 	aComponentsFilesList + (cComponentsPath + "windowsnl.ring")
