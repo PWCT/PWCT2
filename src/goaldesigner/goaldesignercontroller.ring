@@ -2107,7 +2107,7 @@ class GoalDesignerController from WindowsControllerParent
 		# Create the Event Code
 			cStr = WindowsNL() + 
 				Tab + "func " + cFunctionName + WindowsNL() +
-				Tab + Tab + "oView {" + WindowsNL() +
+				Tab + Tab + T_FORMEVENTS_VIEWOBJECT +" {" + WindowsNL() +
 				Tab + Tab + Tab + WindowsNL() + 
 					Tab + Tab + "}" + WindowsNL()
 		ComponentsBrowserWindow().EnglishTextualCodeToVisualCode(cStr)
