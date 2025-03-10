@@ -14,35 +14,45 @@ class windowcontrollerComponentController from ComponentControllerParent
 		NewParentStep( T_CT_WINDOWCONTROLLER_ST_WINCNT + StyleData(Variable(:name) ) )
 		SetStepCode( `load "`+ Variable(:name) +`View.ring"` + nl + 
 					 `import System.GUI` + nl +
-					 `if IsMainSourceFile() {` + nl  
+					 `if IsMainSourceFile() {` + nl +  
+					 Variable(:app) + `= new App {` + nl
 		)
 
-			AllowInteraction()
-			NewStep(T_CT_WINDOWCONTROLLER_ST_MAINFILE) 
-			oStep = GetActiveStep()
-			NewParentStep(T_CT_WINDOWCONTROLLER_ST_CLASS + StyleData(Variable(:name) )) 
-				SetStepCode("}" + nl + 
-							`class `+Variable(:name)+`Controller from windowsControllerParent` + nl	+
-							`oView = new `+Variable(:name)+`View`						
-			)
-			AllowInteraction()
-			NewStep(T_CT_WINDOWCONTROLLER_ST_ATTRIBUTES) 
-			AllowInteraction()
-			NewStep(T_CT_WINDOWCONTROLLER_ST_METHODS) 
-			NewParentStep(T_CT_WINDOWCONTROLLER_ST_PRIVATE) 
-			AllowInteraction()
-			NewStep(T_CT_WINDOWCONTROLLER_ST_ATTRIBUTES) 
-			AllowInteraction()
-			NewStep(T_CT_WINDOWCONTROLLER_ST_METHODS) 
-			NewStep(T_CT_WINDOWCONTROLLER_ST_END) 
-			SetActiveStep(oStep)
+		AllowInteraction()
+		NewStep(T_CT_WINDOWCONTROLLER_ST_MAINFILE) 
+		oStep = GetActiveStep()
+		NewParentStep(T_CT_WINDOWCONTROLLER_ST_CLASS + StyleData(Variable(:name) )) 
+
+		if trim(lower(Variable(:view))) != "oview" {
+			cCreateView = Variable(:view) + ` = ref(oView)`
+		else 
+			cCreateView = ""
+		}
+
+		SetStepCode("}" + nl + "}" + nl + 
+						`class `+Variable(:name)+T_CT_WINDOWCONTROLLER_ST_CONTROLLER+` from windowsControllerParent` + nl	+
+						`oView = new `+Variable(:name)+`View` + nl + 
+						cCreateView + nl
+					
+		)
+		AllowInteraction()
+		NewStep(T_CT_WINDOWCONTROLLER_ST_ATTRIBUTES) 
+		AllowInteraction()
+		NewStep(T_CT_WINDOWCONTROLLER_ST_METHODS) 
+		NewParentStep(T_CT_WINDOWCONTROLLER_ST_PRIVATE) 
+		AllowInteraction()
+		NewStep(T_CT_WINDOWCONTROLLER_ST_ATTRIBUTES) 
+		AllowInteraction()
+		NewStep(T_CT_WINDOWCONTROLLER_ST_METHODS) 
+		NewStep(T_CT_WINDOWCONTROLLER_ST_END) 
+		SetActiveStep(oStep)
 
 		return True 
 
 class windowcontrollerComponentView from ComponentViewParent
 	 
 		Title( T_CT_WINDOWCONTROLLER_IP_TITLE )	
-		TextBox( T_CT_WINDOWCONTROLLER_IP_VALUE , :name)
-		TextBox( T_CT_WINDOWCONTROLLER_IP_VALUE2 , :value2)
-		TextBox( T_CT_WINDOWCONTROLLER_IP_VALUE3 , :value3)
+		TextBoxValue( T_CT_WINDOWCONTROLLER_IP_VALUE , :name,T_CT_WINDOWCONTROLLER_IP_NAME)
+		TextBoxValue( T_CT_WINDOWCONTROLLER_IP_VALUE2 , :app,T_CT_WINDOWCONTROLLER_IP_APP)
+		TextBoxValue( T_CT_WINDOWCONTROLLER_IP_VALUE3 , :view,T_CT_WINDOWCONTROLLER_IP_VIEW)
 		PageButtons()
