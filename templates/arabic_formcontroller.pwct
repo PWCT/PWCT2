@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'arabic'
-nStepsID                 = 61		
-nInteractionsID          = 30
+nStepsID                 = 75		
+nInteractionsID          = 34
 
 aStepsTable = [
 	[
@@ -46,12 +46,12 @@ aStepsTable = [
 		]
 	],
 	[
-		51,
+		62,
 		1,
 		[
 			[
 				"name",
-				"إستدعاء الملف <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">filename_view.ring</font></span>"
+				"متحكم النافذة - الاسم: <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">filename_</font></span>"
 			],
 			[
 				"active",
@@ -59,11 +59,15 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"load "+char(34)+"filename_view.ring"+char(34)+""
+				"load "+char(34)+"filename_View.ring"+char(34)+"
+import System.GUI
+if IsMainSourceFile() {
+تطبيق= new App {
+"
 			],
 			[
 				"interactionid",
-				24
+				31
 			],
 			[
 				"visible",
@@ -79,93 +83,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"إستدعاء الملف filename_view.ring"
+				"متحكم النافذة - الاسم: filename_"
 			]
 		]
 	],
 	[
-		6,
-		1,
+		63,
+		62,
 		[
 			[
 				"name",
-				" استخدام الحقيبة   <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">System.GUI</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"import System.GUI"
-			],
-			[
-				"interactionid",
-				4
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"import package  System.GUI"
-			]
-		]
-	],
-	[
-		3,
-		1,
-		[
-			[
-				"name",
-				"إذا <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">isMainSourceFile()</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"if isMainSourceFile() { "
-			],
-			[
-				"interactionid",
-				3
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"If isMainSourceFile"
-			]
-		]
-	],
-	[
-		4,
-		3,
-		[
-			[
-				"name",
-				"ابدأ هنا"
+				"تعليمات الملف الاساسي"
 			],
 			[
 				"active",
@@ -177,7 +105,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				3
+				31
 			],
 			[
 				"visible",
@@ -193,90 +121,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Start Here"
+				"تعليمات الملف الاساسي"
 			]
 		]
 	],
 	[
-		55,
-		4,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">تطبيق</font></span> = تطبيق رسومي جديد"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"load "+char(34)+"guilib.ring"+char(34)+"
-تطبيق =  new qApp {"
-			],
-			[
-				"interactionid",
-				28
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"تطبيق = تطبيق رسومي جديد"
-			]
-		]
-	],
-	[
-		56,
-		55,
-		[
-			[
-				"name",
-				"ابدا هنا"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				28
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"ابدا هنا"
-			]
-		]
-	],
-	[
-		58,
-		56,
+		71,
+		63,
 		[
 			[
 				"name",
@@ -292,7 +143,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				29
+				32
 			],
 			[
 				"visible",
@@ -313,8 +164,8 @@ aStepsTable = [
 		]
 	],
 	[
-		60,
-		56,
+		73,
+		63,
 		[
 			[
 				"name",
@@ -330,7 +181,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				30
+				33
 			],
 			[
 				"visible",
@@ -351,12 +202,12 @@ aStepsTable = [
 		]
 	],
 	[
-		57,
-		55,
+		75,
+		63,
 		[
 			[
 				"name",
-				"نهاية التطبيق الرسومي"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">تنفيذ</font></span>(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
 			],
 			[
 				"active",
@@ -364,12 +215,54 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"exec() 
-}"
+				"exec()"
 			],
 			[
 				"interactionid",
-				28
+				34
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"تنفيذ()"
+			]
+		]
+	],
+	[
+		64,
+		62,
+		[
+			[
+				"name",
+				" الفئة <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">filename_</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"}
+}
+class filename_المتحكم from windowsControllerParent
+oView = new filename_View
+كائن_العرض = ref(oView)
+"
+			],
+			[
+				"interactionid",
+				31
 			],
 			[
 				"visible",
@@ -385,17 +278,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"نهاية التطبيق الرسومي"
+				" الفئة filename_"
 			]
 		]
 	],
 	[
-		5,
-		3,
+		65,
+		64,
 		[
 			[
 				"name",
-				"نهاية الشرط"
+				" الخصائص "
 			],
 			[
 				"active",
@@ -403,11 +296,11 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"}"
+				""
 			],
 			[
 				"interactionid",
-				3
+				31
 			],
 			[
 				"visible",
@@ -415,7 +308,83 @@ aStepsTable = [
 			],
 			[
 				"stepnumber",
+				4
+			],
+			[
+				"steptype",
 				3
+			],
+			[
+				"plainname",
+				" الخصائص "
+			]
+		]
+	],
+	[
+		66,
+		64,
+		[
+			[
+				"name",
+				" الدوال "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				31
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				5
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				" الدوال "
+			]
+		]
+	],
+	[
+		67,
+		64,
+		[
+			[
+				"name",
+				" خاص "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				31
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				6
 			],
 			[
 				"steptype",
@@ -423,51 +392,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"End of IF Statement"
+				" خاص "
 			]
 		]
 	],
 	[
-		14,
-		1,
-		[
-			[
-				"name",
-				" الفئة <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">filename_المتحكم</font></span> من <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">WindowsControllerParent</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"class filename_المتحكم from WindowsControllerParent"
-			],
-			[
-				"interactionid",
-				9
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				" الفئة filename_المتحكم من WindowsControllerParent"
-			]
-		]
-	],
-	[
-		15,
-		14,
+		68,
+		67,
 		[
 			[
 				"name",
@@ -483,7 +414,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				9
+				31
 			],
 			[
 				"visible",
@@ -491,7 +422,7 @@ aStepsTable = [
 			],
 			[
 				"stepnumber",
-				2
+				7
 			],
 			[
 				"steptype",
@@ -504,46 +435,8 @@ aStepsTable = [
 		]
 	],
 	[
-		21,
-		15,
-		[
-			[
-				"name",
-				"إجعل <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oView</font></span> = كائن جديد <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">filename_View</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"oView = new filename_View"
-			],
-			[
-				"interactionid",
-				10
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"oView = New Object SayHelloView"
-			]
-		]
-	],
-	[
-		16,
-		14,
+		69,
+		67,
 		[
 			[
 				"name",
@@ -559,7 +452,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				9
+				31
 			],
 			[
 				"visible",
@@ -567,7 +460,7 @@ aStepsTable = [
 			],
 			[
 				"stepnumber",
-				3
+				8
 			],
 			[
 				"steptype",
@@ -576,6 +469,44 @@ aStepsTable = [
 			[
 				"plainname",
 				" الدوال "
+			]
+		]
+	],
+	[
+		70,
+		67,
+		[
+			[
+				"name",
+				" نهاية الفئة "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				31
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				9
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				" نهاية الفئة "
 			]
 		]
 	]
@@ -591,55 +522,15 @@ aInteractionsTable = [
 		""
 	],
 	[
-		3,
+		31,
 		1,
-		"ifstatement",
-		"16/02/2018",
-		"12:37:36",
-		"condition;;_RV_;;isMainSourceFile();;_RV_;;"
+		"windowcontroller",
+		"10/03/2025",
+		"03:10:03",
+		"name;;_RV_;;filename_;;_RV_;;app;;_RV_;;تطبيق;;_RV_;;view;;_RV_;;كائن_العرض;;_RV_;;"
 	],
 	[
-		4,
-		1,
-		"import",
-		"16/02/2018",
-		"12:37:52",
-		"value;;_RV_;;System.GUI;;_RV_;;"
-	],
-	[
-		9,
-		1,
-		"class",
-		"16/02/2018",
-		"12:39:13",
-		"value;;_RV_;;filename_المتحكم;;_RV_;;value2;;_RV_;;WindowsControllerParent;;_RV_;;value3;;_RV_;;0;;_RV_;;"
-	],
-	[
-		10,
-		1,
-		"newobj",
-		"16/02/2018",
-		"12:39:33",
-		"value;;_RV_;;oView;;_RV_;;value2;;_RV_;;filename_View;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
-	],
-	[
-		24,
-		1,
-		"load",
-		"15/10/2021",
-		"13:22:13",
-		"file;;_RV_;;filename_view.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
-	],
-	[
-		28,
-		1,
-		"newqapp",
-		"26/02/2025",
-		"23:08:51",
-		"value;;_RV_;;تطبيق;;_RV_;;"
-	],
-	[
-		29,
+		32,
 		1,
 		"qappclass",
 		"10/02/2025",
@@ -647,12 +538,20 @@ aInteractionsTable = [
 		"value;;_RV_;;;;_RV_;;value2;;_RV_;;132;;_RV_;;value3;;_RV_;;;;_RV_;;value4;;_RV_;;;;_RV_;;"
 	],
 	[
-		30,
+		33,
 		1,
 		"objectslib",
 		"10/02/2025",
 		"17:08:56",
 		"value;;_RV_;;:filename_المتحكم;;_RV_;;value2;;_RV_;;1;;_RV_;;"
+	],
+	[
+		34,
+		1,
+		"qappclass",
+		"10/03/2025",
+		"03:10:43",
+		"value;;_RV_;;;;_RV_;;value2;;_RV_;;24;;_RV_;;value3;;_RV_;;;;_RV_;;value4;;_RV_;;;;_RV_;;"
 	]
 ]
 
