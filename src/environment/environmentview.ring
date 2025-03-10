@@ -43,6 +43,8 @@ class EnvironmentView from WindowsViewParent
 	lShowWebOptions = True
 
 
+	lRightToLeftWindow = False
+
 	# Create the window and the Controls 
 		win = new qMainWindow()
 		{
@@ -52,7 +54,7 @@ class EnvironmentView from WindowsViewParent
 			}
 
 			setLayoutDirection(T_LAYOUTDIRECTION)
-			if T_LAYOUTDIRECTION and isWindows()
+			if T_LAYOUTDIRECTION and isWindows() and lRightToLeftWindow
 				RightToLeft( winID() )
 			ok
 
