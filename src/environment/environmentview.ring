@@ -1141,7 +1141,7 @@ class EnvironmentView from WindowsViewParent
 		}
 
 		oFilesTreeWidget = new QWidget() {
-
+			setLayoutDirection(T_LAYOUTDIRECTION)
 			hide()	# Work-around on a Bug in Qt (Avoid drawing strange line)
 					# Maybe related also to mobileButtonSize()
 
@@ -1277,7 +1277,10 @@ class EnvironmentView from WindowsViewParent
 				addlayout(oProcesslayout1)			
 			}
 		}
-		oProcessWindow.setlayout(oProcessLayout2)			
+		oProcessWindow { 
+			setLayoutDirection(T_LAYOUTDIRECTION)
+			setlayout(oProcessLayout2)			
+		}
 		oDockOutputWindow = new qDockWidget(win,0) {
 			nWidth = floor(this.oDesktop.Width()*0.15)
 			nHeight = floor(this.oDesktop.Height()*0.1)
