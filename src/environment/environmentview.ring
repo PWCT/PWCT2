@@ -1134,7 +1134,7 @@ class EnvironmentView from WindowsViewParent
 			}
 			setexpanded(myindex,true)
 			if isWindows() {
-				myindex2 = this.ofile.index(this.oDir.currentpath()+"/applications",0)		
+				myindex2 = this.ofile.index(this.oDir.currentpath()+T_APPLICATIONSFOLDER,0)		
 				setrootindex(myindex2)
 			}
 			header().hide()			

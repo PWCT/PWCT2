@@ -389,3 +389,6 @@
 # Form Events 
 	T_FORMEVENTS_PARENTSTEP = "Methods"
 	T_FORMEVENTS_VIEWOBJECT = "oView"
+
+# Applications Folder
+	T_APPLICATIONSFOLDER = "/applications"

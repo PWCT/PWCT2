@@ -1206,7 +1206,7 @@ class EnvironmentController from WindowsControllerParent
 		if (cActiveFileName != Null) and (cActiveFileName != "noname.ring") {
 			this.cCurrentDir = justfilepath(cActiveFileName)
 		else 
-			this.cCurrentDir = PWCT_FOLDER + "/applications"
+			this.cCurrentDir = PWCT_FOLDER + T_APPLICATIONSFOLDER
 		}
 
 	func OSTerminal
@@ -1762,12 +1762,12 @@ class EnvironmentController from WindowsControllerParent
 		nState = oView.oFTAppsCheckbox.checkstate()
 
 		if nState {
-				myindex2 = oView.ofile.index(oView.oDir.currentpath()+"/applications",0)	
+				myindex2 = oView.ofile.index(oView.oDir.currentpath()+T_APPLICATIONSFOLDER,0)	
 				oView.oFilesTree.setrootindex(myindex2)
 		else 
 				myindex2 = oView.ofile.index("",0)
 				oView.oFilesTree.setrootindex(myindex2)
-				myindex2 = oView.ofile.index(oView.oDir.currentpath()+"/applications",0)
+				myindex2 = oView.ofile.index(oView.oDir.currentpath()+T_APPLICATIONSFOLDER,0)
 				oView.oFilesTree.setExpanded(myindex2,true)		
 				oView.oFilesTree.setCurrentIndex(myindex2)	
 		}		

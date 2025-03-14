@@ -392,3 +392,6 @@
 # Form Events 
 	T_FORMEVENTS_PARENTSTEP = "الدوال"
 	T_FORMEVENTS_VIEWOBJECT = "كائن_العرض"
+
+# Applications Folder
+	T_APPLICATIONSFOLDER = "/arabic/applications"
