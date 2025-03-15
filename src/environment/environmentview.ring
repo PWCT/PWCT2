@@ -1119,6 +1119,7 @@ class EnvironmentView from WindowsViewParent
 				myfiles = new qstringlist()
 				myfiles.append("*.pwct")
 				myfiles.append("*.rform")
+				myfiles.append("*.برنامج")
 				setnamefilters(myfiles)	
 				setNameFilterDisables(false)
 			}
