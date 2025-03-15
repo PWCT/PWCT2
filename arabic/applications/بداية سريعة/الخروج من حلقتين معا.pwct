@@ -351,7 +351,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"إذا <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">س&nbsp;=&nbsp;3&nbsp;AND&nbsp;ص&nbsp;=&nbsp;5</font></span>"
+				"إذا <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">س&nbsp;=&nbsp;3&nbsp;&amp;&amp;&nbsp;ص&nbsp;=&nbsp;5</font></span>"
 			],
 			[
 				"active",
@@ -359,7 +359,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if س = 3 AND ص = 5 { "
+				"if س = 3 && ص = 5 { "
 			],
 			[
 				"interactionid",
@@ -379,7 +379,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"إذا س = 3 AND ص = 5"
+				"إذا س = 3 && ص = 5"
 			]
 		]
 	],
@@ -473,7 +473,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"} "
+				"}"
 			],
 			[
 				"interactionid",
@@ -698,7 +698,7 @@ aInteractionsTable = [
 		"ifstatement",
 		"15/03/2025",
 		"16:44:26",
-		"condition;;_RV_;;س = 3 AND ص = 5;;_RV_;;"
+		"condition;;_RV_;;س = 3 && ص = 5;;_RV_;;"
 	],
 	[
 		7,
