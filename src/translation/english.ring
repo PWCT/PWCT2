@@ -20,6 +20,7 @@
 	T_ENV_DOCK_COMPONENTSBROWSER = "Components Browser"
 	T_ENV_DOCK_FORMDESIGNER = "Form Designer"
 	T_ENV_STATUSBAR_READY = "Ready!"
+	T_ENV_STATUSBAR_CHANGEFILETIME = "Change File Time: "
 	T_ENV_MENU_FILE = "File"
 	T_ENV_MENU_EDIT = "Edit"
 	T_ENV_MENU_VIEW = "View" 
@@ -125,6 +126,8 @@
 	T_ENV_OW_SEND = "Send"
 	T_ENV_OW_KILL = "Clear/Stop"
 	T_ENV_OW_INPUT = "Input :"
+
+	
 
 
 # Goal Designer Window

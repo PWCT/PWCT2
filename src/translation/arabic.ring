@@ -20,6 +20,7 @@
 	T_ENV_DOCK_COMPONENTSBROWSER 	= "مستعرض المكونات      "
 	T_ENV_DOCK_FORMDESIGNER = "مصمم النماذج"
 	T_ENV_STATUSBAR_READY = "!جاهز"
+	T_ENV_STATUSBAR_CHANGEFILETIME = "الوقت المستغرق لتغيير الملف: "
 	T_ENV_MENU_FILE = "ملف"
 	T_ENV_MENU_EDIT = "تحرير"
 	T_ENV_MENU_VIEW = "عرض" 
