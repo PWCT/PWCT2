@@ -395,3 +395,7 @@
 
 # Applications Folder
 	T_APPLICATIONSFOLDER = "/applications"
+
+# VSF Extension 
+
+	T_VSF_EXTENSION = "pwct"

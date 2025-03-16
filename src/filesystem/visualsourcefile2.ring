@@ -21,7 +21,7 @@ class VisualSourceFile
 	lUseSystemLog = True
 
 	func RingFileName	
-		return substr(cFileName,".pwct",".ring")
+		return substr(cFileName,"." + T_VSF_EXTENSION,".ring")
 
 
 	/*

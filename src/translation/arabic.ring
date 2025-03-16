@@ -396,3 +396,7 @@
 
 # Applications Folder
 	T_APPLICATIONSFOLDER = "/arabic/applications"
+
+# VSF Extension 
+
+	T_VSF_EXTENSION = "برنامج"

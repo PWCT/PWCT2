@@ -1560,7 +1560,7 @@ class GoalDesignerController from WindowsControllerParent
 	*/
 
 	func setProgramControllerFileName
-		oProgramController.cFileName = substr(oVisualSourceFile.cFileName,".pwct",".ring")
+		oProgramController.cFileName = substr(oVisualSourceFile.cFileName,"." + T_VSF_EXTENSION,".ring")
 
 
 	/*
@@ -1904,7 +1904,7 @@ class GoalDesignerController from WindowsControllerParent
 
 	func GetActiveSourceFile 
 		cActiveFileName = GetActiveFile()
-		cActiveFileName = substr(cActiveFileName,".pwct",".ring")
+		cActiveFileName = substr(cActiveFileName,"." + T_VSF_EXTENSION,".ring")
 		return cActiveFileName
 
 	/*

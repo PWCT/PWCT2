@@ -1104,7 +1104,7 @@ class EnvironmentController from WindowsControllerParent
 		ShowMessageInStatusBar("Ready!")
 
 	func openfile cFileName
-		cFileName = substr(cFileName,".ring",".pwct")
+		cFileName = substr(cFileName,".ring","." + T_VSF_EXTENSION)
 		if fexists(cFileName) {
 			openVisualFile(cFileName)
 		}
@@ -1116,8 +1116,8 @@ class EnvironmentController from WindowsControllerParent
 		return PWCT_FOLDER
 	
 	func GenerateControllerClass cFileName 
-		cFileName = substr(cFileName,".ring",".pwct")
-		cFormName = substr(JustFileName(cFileName),"Controller.pwct","")
+		cFileName = substr(cFileName,".ring","." + T_VSF_EXTENSION)
+		cFormName = substr(JustFileName(cFileName),"Controller."+ T_VSF_EXTENSION,"")
 		if fexists(cFileName) { return }
 		oVisualFile = new VisualSourceFile {
 			if PWCTIsMobile(:formcontrollerfile) {
