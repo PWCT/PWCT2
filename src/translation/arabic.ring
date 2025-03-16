@@ -193,7 +193,7 @@
 
 	T_GD_DM_OPENFILE = "فتح ملف"
 	T_GD_DM_SAVEFILE = "حفظ ملف"
-	T_GD_DM_FILETYPE = "ملفات المصدر(*.pwct)"
+	T_GD_DM_FILETYPE = "ملفات المصدر(*.برنامج)"
 
 	# Program
 
