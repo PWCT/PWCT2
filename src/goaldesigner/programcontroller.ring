@@ -84,14 +84,14 @@ Class ProgramController
 			oGD.parent().oView.oProcessText.setFocus(0)
 		}
 		cDir = currentdir()
-		chdir(JustFilePath(cFile))
+		changeFolder(JustFilePath(cFile))
 		if isBatchFile(cFile) {
 			cCode = RunBatchFile(cFile)
 			oGD.parent().oView.oProcess = RunProcess(cCode,"",oGD.parent().Method(:GetDataAction))
 		else 
 			oGD.parent().oView.oProcess = RunProcess(cRingEXE,cFile,oGD.parent().Method(:GetDataAction))
 		}
-		chdir(cDir)
+		changeFolder(cDir)
 
 	/*
 		Run web application 
@@ -170,11 +170,11 @@ Class ProgramController
 		}
 		RUNTIME_FOLDER = PWCT_FOLDER + "/PWCTApp/runtime"
 		# Create guilib.ring and stdlib.ring 
-			chdir(JustFilePath(cFileName))
+			changeFolder(JustFilePath(cFileName))
 			write("guilib.ring","")
 			write("stdlib.ring","")
 			write("stdlibcore.ring","")
-		chdir(RUNTIME_FOLDER)
+		changeFolder(RUNTIME_FOLDER)
 		# Delete Temp. Files
 			remove("runprogram.ring")
 			remove("programoutput.txt")
@@ -203,7 +203,7 @@ Class ProgramController
 		}
 		oState = ring_state_new()
 		ring_state_mainfile(oState,"runprogram.ring")
-		chdir(RUNTIME_FOLDER)
+		changeFolder(RUNTIME_FOLDER)
 		# This will start a Timer to check the output
 			oGD.EnableCheckOutputOnMobile()
 		# Display the Output
@@ -212,7 +212,7 @@ Class ProgramController
 			remove("runprogram.ring")
 			remove("programinput.txt")
 		# delete guilib.ring and stdlib.ring 
-			chdir(JustFilePath(cFileName))
+			changeFolder(JustFilePath(cFileName))
 			remove("guilib.ring")
 			remove("stdlib.ring")
 			remove("stdlibcore.ring")
@@ -227,7 +227,7 @@ Class ProgramController
 	func CheckOutputOnMobile oGD
 		cDir = CurrentDir()
 		RUNTIME_FOLDER = PWCT_FOLDER + "/PWCTApp/runtime"
-		chdir(RUNTIME_FOLDER)
+		changeFolder(RUNTIME_FOLDER)
 		if fexists("programoutput.txt") {
 			cContent = read("programoutput.txt")
 			if cContent != cOutputFileText {
@@ -236,7 +236,7 @@ Class ProgramController
 				oGD.parent().oView.oDockOutputWindow.raise()
 			}
 		}
-		chdir(cDir)
+		changeFolder(cDir)
 
 	/*
 		Purpose : Prepare the file
@@ -286,14 +286,14 @@ Class ProgramController
 			cFileToRun = FileNameEncoding(cFileName)
 			if isWindows() {
 				cDir = currentdir()
-				chdir(exefolder())
+				changeFolder(exefolder())
 				if ! fexists(cFileToRun) {
 					cFileToRun = cDir+"\"+cFileToRun
 				}
 				cCode = 'start call "' +
 					cFile + '" "' + cFileToRun + '"' + nl
 				system(cCode)
-				chdir(cDir)
+				changeFolder(cDir)
 			elseif isLinux()
 				cCode = 'cd $(dirname "'+cFileToRun+'") ; x-terminal-emulator -e ' +
 				 "'" + 'ring "' + cFileToRun + '" ; read -p "" key;' + "' &" + nl
@@ -312,7 +312,7 @@ Class ProgramController
 	
 		func RunBatchFile cFile
 			if iswindows()
-				chdir(JustFilePath(cFile))
+				changeFolder(JustFilePath(cFile))
 				cCode = cFile
 			else
 				cCode = 'cd $(dirname "'+cFile+'") ; ' + './' + cFile +  nl

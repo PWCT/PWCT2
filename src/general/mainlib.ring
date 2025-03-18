@@ -60,3 +60,16 @@ func FileNameEncoding cFileName
 		}
 	}
 	return cFileName
+
+
+func changeFolder cFolder 
+	if isWindows() {
+		oString = new qString2()
+		oString.Append(cFolder)
+		chdir( oString.tolocal8bit().data() )
+		return 
+	}
+	chdir(cFolder)
+	
+
+	
