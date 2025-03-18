@@ -62,12 +62,17 @@ func FileNameEncoding cFileName
 	return cFileName
 
 
+/*
+	Purpose : Change the current folder
+	Parameters : Folder Name 
+	Output : None
+*/
+
 func changeFolder cFolder 
 	if isWindows() {
 		oString = new qString2()
 		oString.Append(cFolder)
-		chdir( oString.tolocal8bit().data() )
-		return 
+		cFolder = oString.tolocal8bit().data() 
 	}
 	chdir(cFolder)
 	
