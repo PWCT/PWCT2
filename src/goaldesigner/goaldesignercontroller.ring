@@ -2090,7 +2090,7 @@ class GoalDesignerController from WindowsControllerParent
 		# Be sure that we have saved form file 
 			if parent().FormDesigner().ActiveFileName() = "" { return }
 		# Be sure that the Controller class source code is opened
-			cFileNameInFormDesigner = substr(parent().FormDesigner().ActiveFileName(),".rform","Controller."+T_VSF_EXTENSION)
+			cFileNameInFormDesigner = substr(parent().FormDesigner().ActiveFileName(),".rform",T_VSF_CONTROLLER+"."+T_VSF_EXTENSION)
 			if trim(lower(oVisualSourceFile.cFileName)) != trim(lower(cFileNameInFormDesigner)) {
 				return 
 			}

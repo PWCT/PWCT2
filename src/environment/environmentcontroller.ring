@@ -317,7 +317,7 @@ class EnvironmentController from WindowsControllerParent
 		lFormFile = False
 		if right(lower(cFileName),6) = ".rform" {
 			openFormDesignerFile(cFileName)
-			cFileName = substr(cFileName,".rform","controller." + T_VSF_EXTENSION)
+			cFileName = substr(cFileName,".rform",T_VSF_CONTROLLER+"." + T_VSF_EXTENSION)
 			lFormFile = True
  		}
 		if fexists(cFileName) {
@@ -1117,7 +1117,7 @@ class EnvironmentController from WindowsControllerParent
 	
 	func GenerateControllerClass cFileName 
 		cFileName = substr(cFileName,".ring","." + T_VSF_EXTENSION)
-		cFormName = substr(JustFileName(cFileName),"Controller."+ T_VSF_EXTENSION,"")
+		cFormName = substr(JustFileName(cFileName),T_VSF_CONTROLLER+"."+ T_VSF_EXTENSION,"")
 		if fexists(cFileName) { return }
 		oVisualFile = new VisualSourceFile {
 			if PWCTIsMobile(:formcontrollerfile) {

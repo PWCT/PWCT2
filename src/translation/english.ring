@@ -399,3 +399,4 @@
 # VSF Extension 
 
 	T_VSF_EXTENSION = "pwct"
+	T_VSF_CONTROLLER = "controller"

@@ -400,3 +400,4 @@
 # VSF Extension 
 
 	T_VSF_EXTENSION = "برنامج"
+	T_VSF_CONTROLLER = "المتحكم"
