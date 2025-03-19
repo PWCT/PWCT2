@@ -317,7 +317,7 @@ class EnvironmentController from WindowsControllerParent
 		lFormFile = False
 		if right(lower(cFileName),6) = ".rform" {
 			openFormDesignerFile(cFileName)
-			cFileName = substr(cFileName,".rform","controller.pwct")
+			cFileName = substr(cFileName,".rform","controller." + T_VSF_EXTENSION)
 			lFormFile = True
  		}
 		if fexists(cFileName) {
