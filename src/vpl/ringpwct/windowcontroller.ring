@@ -12,7 +12,7 @@ class windowcontrollerComponentController from ComponentControllerParent
 	func GenerateAction 
 
 		NewParentStep( T_CT_WINDOWCONTROLLER_ST_WINCNT + StyleData(Variable(:name) ) )
-		SetStepCode( `load "`+ Variable(:name) +`View.ring"` + nl + 
+		SetStepCode( `load "`+ Variable(:name) +T_CT_WINDOWCONTROLLER_ST_VIEWFILE+`"` + nl + 
 					 `import System.GUI` + nl +
 					 `if IsMainSourceFile() {` + nl +  
 					 Variable(:app) + `= new App {` + nl
