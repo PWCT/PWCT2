@@ -838,7 +838,7 @@ class GoalDesignerController from WindowsControllerParent
 				}
 				if cFileName = NULL { return }
 			else 
-				cFileName = "noname.pwct"
+				cFileName = T_VSF_NONAMEPWCT
 			}
 			# Remove the file from the Active Files List 
 				parent().RemoveFileFromActiveFilesList(lower(oVisualSourceFile.cFileName))
