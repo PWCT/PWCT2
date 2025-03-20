@@ -315,9 +315,9 @@ class EnvironmentController from WindowsControllerParent
 		cFileName = oView.oFile.filepath(oItem)
 			showmessageInStatusBar("Loading File : " + cFileName)
 		lFormFile = False
-		if right(lower(cFileName),6) = ".rform" {
+		if right(lower(cFileName),len(T_PWCT_FORMDESIGNER_FILEEXTENSION)+1) = "." + T_PWCT_FORMDESIGNER_FILEEXTENSION {
 			openFormDesignerFile(cFileName)
-			cFileName = substr(cFileName,".rform",T_VSF_CONTROLLER+"." + T_VSF_EXTENSION)
+			cFileName = substr(cFileName,"." + T_PWCT_FORMDESIGNER_FILEEXTENSION,T_VSF_CONTROLLER+"." + T_VSF_EXTENSION)
 			lFormFile = True
  		}
 		if fexists(cFileName) {

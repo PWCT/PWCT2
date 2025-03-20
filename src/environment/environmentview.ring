@@ -1118,7 +1118,7 @@ class EnvironmentView from WindowsViewParent
 				setrootpath(this.oDir.currentpath())		
 				myfiles = new qstringlist()
 				myfiles.append("*.pwct")
-				myfiles.append("*.rform")
+				myfiles.append("*." + T_PWCT_FORMDESIGNER_FILEEXTENSION)
 				myfiles.append("*.برنامج")
 				setnamefilters(myfiles)	
 				setNameFilterDisables(false)
