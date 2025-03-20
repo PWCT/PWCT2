@@ -870,7 +870,7 @@ class GoalDesignerController from WindowsControllerParent
 	func SaveCurrentFileAction
 		lSaveFlag = False
 		# Check file not saved before 
-		if oVisualSourceFile.cFileName = C_VSF_NOFILENAME {
+		if oVisualSourceFile.cFileName = T_VSF_NONAMEPWCT {
 			SaveFileAction()
 			return 
 		}
@@ -1887,7 +1887,7 @@ class GoalDesignerController from WindowsControllerParent
 		Check if we have active visual source file
 	*/
 	func IsActiveFile
-		if oVisualSourceFile.cFileName = "noname.pwct" {
+		if oVisualSourceFile.cFileName = T_VSF_NONAMEPWCT {
 			return False 
 		} 
 		return True

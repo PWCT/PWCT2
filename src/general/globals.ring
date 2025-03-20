@@ -141,9 +141,6 @@
 	C_TRANSLATION_ENGLISH 			= 0
 	C_ENV_DEFAULT_LANG			= C_TRANSLATION_ENGLISH
 
-# Visual Source file
-	C_VSF_NOFILENAME 			= "noname.pwct"
-
 # Components Path
 	C_CB_COMPONENTSPATH 			= "src/vpl/ringpwct"
 

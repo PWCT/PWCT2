@@ -402,6 +402,8 @@
 	T_VSF_EXTENSION = "برنامج"
 	T_VSF_CONTROLLER = "المتحكم"
 
+	T_VSF_NONAMEPWCT = "بدون اسم.برنامج"
+
 # Form Designer 
 
 	T_PWCT_FORMDESIGNER_FILEEXTENSION = "نموذج"

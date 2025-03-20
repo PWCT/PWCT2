@@ -5,12 +5,11 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-C_VSF_NOFILENAME = "noname.pwct"
 C_VSF_VERSION    = "1.0.0"
 
 class VisualSourceFile
 
-	cFileName = C_VSF_NOFILENAME  # "noname.pwct"
+	cFileName = T_VSF_NONAMEPWCT  # "noname.pwct"
 
 	aStepsTable = []
 	aInteractionsTable = []
@@ -31,7 +30,7 @@ class VisualSourceFile
 	*/
 
 	func IsFileOpened
-		if cFileName = C_VSF_NOFILENAME {
+		if cFileName = T_VSF_NONAMEPWCT {
 			return False
 		}
 		return True

@@ -401,6 +401,8 @@
 	T_VSF_EXTENSION = "pwct"
 	T_VSF_CONTROLLER = "controller"
 
+	T_VSF_NONAMEPWCT = "noname.pwct"
+
 # Form Designer 
 
 	T_PWCT_FORMDESIGNER_FILEEXTENSION = "rform"

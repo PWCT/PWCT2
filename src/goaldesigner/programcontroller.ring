@@ -165,7 +165,7 @@ Class ProgramController
 	*/	
 
 	func RunOnMobile oGD
-		if cFileName = C_FILENONAME {	# noname.pwct 
+		if cFileName = C_FILENONAME {	# noname.ring
 			cFileName = PWCT_FOLDER + "/" + C_FILENONAME
 		}
 		RUNTIME_FOLDER = PWCT_FOLDER + "/PWCTApp/runtime"
@@ -216,7 +216,7 @@ Class ProgramController
 			remove("guilib.ring")
 			remove("stdlib.ring")
 			remove("stdlibcore.ring")
-			remove("noname.ring")	# if we are using noname.pwct 
+			remove("noname.ring")	 
 		
 	/*
 		Purpose : Check output from the application when we run PWCT on Mobile

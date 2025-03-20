@@ -5,11 +5,9 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
-C_VSF_NOFILENAME = "noname.pwct"
-
 class VisualSourceFile
 
-	cFileName = C_VSF_NOFILENAME  # "noname.pwct"
+	cFileName = T_VSF_NONAMEPWCT  # "noname.pwct"
 
 	oDatabase = new Database
 
@@ -35,7 +33,7 @@ class VisualSourceFile
 	*/
 
 	func IsFileOpened
-		if cFileName = C_VSF_NOFILENAME {
+		if cFileName = T_VSF_NONAMEPWCT {
 			return False
 		}
 		return True
