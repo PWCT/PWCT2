@@ -400,7 +400,7 @@
 # VSF Extension 
 
 	T_VSF_EXTENSION = "برنامج"
-	T_VSF_CONTROLLER = "المتحكم"
+	T_VSF_CONTROLLER = "_المتحكم"
 
 	T_VSF_NONAMEPWCT = "بدون اسم.برنامج"
 

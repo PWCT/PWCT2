@@ -169,7 +169,7 @@ if IsMainSourceFile() {
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">افتح&nbsp;النافذة</font></span>(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">:filename_المتحكم</font></span>)"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">افتح&nbsp;النافذة</font></span>(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">:filename__المتحكم</font></span>)"
 			],
 			[
 				"active",
@@ -177,7 +177,7 @@ if IsMainSourceFile() {
 			],
 			[
 				"code",
-				"Open_Window(:filename_المتحكم)"
+				"Open_Window(:filename__المتحكم)"
 			],
 			[
 				"interactionid",
@@ -197,7 +197,7 @@ if IsMainSourceFile() {
 			],
 			[
 				"plainname",
-				"افتح النافذة(:filename_المتحكم)"
+				"افتح النافذة(:filename__المتحكم)"
 			]
 		]
 	],
@@ -255,7 +255,7 @@ if IsMainSourceFile() {
 				"code",
 				"}
 }
-class filename_المتحكم from windowsControllerParent
+class filename__المتحكم from windowsControllerParent
 oView = new filename_View
 كائن_العرض = ref(oView)
 "
@@ -543,7 +543,7 @@ aInteractionsTable = [
 		"objectslib",
 		"10/02/2025",
 		"17:08:56",
-		"value;;_RV_;;:filename_المتحكم;;_RV_;;value2;;_RV_;;1;;_RV_;;"
+		"value;;_RV_;;:filename__المتحكم;;_RV_;;value2;;_RV_;;1;;_RV_;;"
 	],
 	[
 		34,
