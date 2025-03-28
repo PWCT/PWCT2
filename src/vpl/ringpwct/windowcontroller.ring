@@ -11,7 +11,7 @@ class windowcontrollerComponentController from ComponentControllerParent
 
 	func GenerateAction 
 
-		NewParentStep( T_CT_WINDOWCONTROLLER_ST_WINCNT + StyleData(Variable(:name) ) )
+		NewParentStep( T_CT_WINDOWCONTROLLER_ST_WINCNT + StyleData(Variable(:name) + T_CT_WINDOWCONTROLLER_ST_CONTROLLER ) )
 		SetStepCode( `load "`+ Variable(:name) +T_CT_WINDOWCONTROLLER_ST_VIEWFILE+`"` + nl + 
 					 `import System.GUI` + nl +
 					 `if IsMainSourceFile() {` + nl +  
@@ -21,7 +21,7 @@ class windowcontrollerComponentController from ComponentControllerParent
 		AllowInteraction()
 		NewStep(T_CT_WINDOWCONTROLLER_ST_MAINFILE) 
 		oStep = GetActiveStep()
-		NewParentStep(T_CT_WINDOWCONTROLLER_ST_CLASS + StyleData(Variable(:name) )) 
+		NewParentStep(T_CT_WINDOWCONTROLLER_ST_CLASS + StyleData(Variable(:name) + T_CT_WINDOWCONTROLLER_ST_CONTROLLER )) 
 
 		if trim(lower(Variable(:view))) != "oview" {
 			cCreateView = Variable(:view) + ` = ref(oView)`
