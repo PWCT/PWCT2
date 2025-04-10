@@ -407,3 +407,9 @@
 # Form Designer 
 
 	T_PWCT_FORMDESIGNER_FILEEXTENSION = "نموذج"
+
+# Ring2PWCT Logical Operators Text 
+
+	T_RING2PWCT_LOT_AND = " && "
+	T_RING2PWCT_LOT_OR  = " || "
+	T_RING2PWCT_LOT_NOT = " ! "

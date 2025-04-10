@@ -12,6 +12,10 @@
 # Load General Libraries
 	load "general/general.ring"
 
+# Ring2PWCT 
+	load "tools/import/importfiles.ring"
+	load "tools/vsfgenerator/vsfgenerator.ring"
+
 # Load the Translation File
 	load "translation/translation.ring"
 
@@ -41,10 +45,6 @@
 
 # Mobile functions 
 	load "mobile/mobilefunctions.ring"
-
-# Ring2PWCT 
-	load "tools/import/importfiles.ring"
-	load "tools/vsfgenerator/vsfgenerator.ring"
 
 # Load the Expression Builder
 	load "tools/exprbuilder/ExprBuilderController.ring"
