@@ -1210,9 +1210,12 @@ class EnvironmentController from WindowsControllerParent
 		}
 
 	func OSTerminal
+		cDir = currentDir()
 		UpdateCurrentDirectory()
+		oDir = new QDir() 
+		oDir.setCurrent(cCurrentDir)
 		if isWindows() {
-			cCommand = 'start cmd /K "cd ' + cCurrentDir + '"'
+			cCommand = 'start cmd'
 		elseif isLinux()
 			cCommand = "gnome-terminal"
 		elseif isMacosx()
@@ -1221,6 +1224,7 @@ class EnvironmentController from WindowsControllerParent
 			return
 		}
 		system(cCommand)
+		chdir(cDir)
 
 	func OSFilesManager 
 		UpdateCurrentDirectory()
