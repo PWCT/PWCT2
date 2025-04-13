@@ -1253,6 +1253,9 @@ class EnvironmentView from WindowsViewParent
 			}
 			oProcessText = new qlineEdit(oProcessWindow) {
 				setreturnPressedEvent(Method(:SendDataAction))
+				if T_LAYOUTDIRECTION {
+					setAlignment(Qt_AlignRight)
+				}
 			}
 			oProcessbtnSend = new qpushbutton(oProcessWindow) {
 				setText(T_ENV_OW_SEND)	# "Send"
@@ -1271,7 +1274,11 @@ class EnvironmentView from WindowsViewParent
 				Addwidget(oProcessbtnKill)
 			}
 		}
-		oProcessEditbox = new qPlaintextedit(oProcessWindow) 
+		oProcessEditbox = new QTextEdit(oProcessWindow) {
+				if T_LAYOUTDIRECTION { 
+					setAlignment(Qt_AlignRight)
+				}
+		}
 		oProcessLayout2 = new qvboxlayout() {
 			addWidget(this.oProcesseditbox)			
 			if ! PWCTIsMobile(:SendDataToApplication) {
