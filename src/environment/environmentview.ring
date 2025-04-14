@@ -1050,6 +1050,9 @@ class EnvironmentView from WindowsViewParent
 				this.oTxtMainFile = new qLineEdit(this.win) {
 					setStylesheet("border: 0px;  background-color: rgba(0, 0, 0, 0);")
 					setReadOnly(True)
+					if T_LAYOUTDIRECTION {
+						setAlignment(Qt_AlignRight)
+					}
 				}
 				oBtnSetFile = new qtoolbutton(this.win) {
 					setbtnimage(self,AppFile("images/open.png"))
