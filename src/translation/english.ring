@@ -399,7 +399,7 @@
 # VSF Extension 
 
 	T_VSF_EXTENSION = "pwct"
-	T_VSF_CONTROLLER = "controller"
+	T_VSF_CONTROLLER = "Controller"
 
 	T_VSF_NONAMEPWCT = "noname.pwct"
 
