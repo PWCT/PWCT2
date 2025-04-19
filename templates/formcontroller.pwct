@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'english'
-nStepsID                 = 45		
-nInteractionsID          = 20
+nStepsID                 = 60		
+nInteractionsID          = 24
 
 aStepsTable = [
 	[
@@ -46,12 +46,12 @@ aStepsTable = [
 		]
 	],
 	[
-		2,
+		46,
 		1,
 		[
 			[
 				"name",
-				"Load <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">filename_View.ring</font></span>"
+				"Window Controller - Name: <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">filename_Controller</font></span>"
 			],
 			[
 				"active",
@@ -59,11 +59,15 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"load "+char(34)+"filename_View.ring"+char(34)+""
+				"load "+char(34)+"filename_View.ring"+char(34)+"
+import System.GUI
+if IsMainSourceFile() {
+oApp= new App {
+"
 			],
 			[
 				"interactionid",
-				2
+				21
 			],
 			[
 				"visible",
@@ -79,93 +83,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Load filename_View.ring"
+				"Window Controller - Name: filename_Controller"
 			]
 		]
 	],
 	[
-		6,
-		1,
+		47,
+		46,
 		[
 			[
 				"name",
-				"import package  <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">System.GUI</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"import System.GUI"
-			],
-			[
-				"interactionid",
-				4
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"import package  System.GUI"
-			]
-		]
-	],
-	[
-		3,
-		1,
-		[
-			[
-				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">isMainSourceFile()</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"if isMainSourceFile() { "
-			],
-			[
-				"interactionid",
-				3
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"If isMainSourceFile"
-			]
-		]
-	],
-	[
-		4,
-		3,
-		[
-			[
-				"name",
-				"Start Here"
+				"Main File Instructions"
 			],
 			[
 				"active",
@@ -177,7 +105,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				3
+				21
 			],
 			[
 				"visible",
@@ -193,127 +121,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Start Here"
+				"Main File Instructions"
 			]
 		]
 	],
 	[
-		7,
-		4,
-		[
-			[
-				"name",
-				"New Object <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">App</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"new App"
-			],
-			[
-				"interactionid",
-				5
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"App = New Object "
-			]
-		]
-	],
-	[
-		8,
-		7,
-		[
-			[
-				"name",
-				"{"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"{"
-			],
-			[
-				"interactionid",
-				5
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"{"
-			]
-		]
-	],
-	[
-		9,
-		8,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				5
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		11,
-		9,
+		55,
+		47,
 		[
 			[
 				"name",
@@ -329,7 +143,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				6
+				22
 			],
 			[
 				"visible",
@@ -350,8 +164,8 @@ aStepsTable = [
 		]
 	],
 	[
-		12,
-		9,
+		57,
+		47,
 		[
 			[
 				"name",
@@ -367,7 +181,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				7
+				23
 			],
 			[
 				"visible",
@@ -388,8 +202,8 @@ aStepsTable = [
 		]
 	],
 	[
-		13,
-		9,
+		59,
+		47,
 		[
 			[
 				"name",
@@ -405,7 +219,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				8
+				24
 			],
 			[
 				"visible",
@@ -426,12 +240,12 @@ aStepsTable = [
 		]
 	],
 	[
-		10,
-		8,
+		48,
+		46,
 		[
 			[
 				"name",
-				"}"
+				" Class <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">filename_Controller</font></span>"
 			],
 			[
 				"active",
@@ -439,37 +253,118 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"}"
+				"}
+}
+class filename_Controller from windowsControllerParent
+oView = new filename_View
+
+"
 			],
 			[
 				"interactionid",
+				21
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				" Class filename_Controller"
+			]
+		]
+	],
+	[
+		49,
+		48,
+		[
+			[
+				"name",
+				" Attributes "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				21
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				4
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				" Attributes "
+			]
+		]
+	],
+	[
+		50,
+		48,
+		[
+			[
+				"name",
+				" Methods "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				21
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
 				5
 			],
 			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				4
-			],
-			[
 				"steptype",
-				4
+				3
 			],
 			[
 				"plainname",
-				"}"
+				" Methods "
 			]
 		]
 	],
 	[
-		5,
-		3,
+		51,
+		48,
 		[
 			[
 				"name",
-				"End of IF Statement"
+				" Private "
 			],
 			[
 				"active",
@@ -477,11 +372,11 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"}"
+				""
 			],
 			[
 				"interactionid",
-				3
+				21
 			],
 			[
 				"visible",
@@ -489,7 +384,7 @@ aStepsTable = [
 			],
 			[
 				"stepnumber",
-				3
+				6
 			],
 			[
 				"steptype",
@@ -497,51 +392,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"End of IF Statement"
+				" Private "
 			]
 		]
 	],
 	[
-		14,
-		1,
-		[
-			[
-				"name",
-				" Class <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">filename_Controller</font></span> from <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">WindowsControllerParent</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"class filename_Controller from WindowsControllerParent"
-			],
-			[
-				"interactionid",
-				9
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				" Class filename_Controller from WindowsControllerParent"
-			]
-		]
-	],
-	[
-		15,
-		14,
+		52,
+		51,
 		[
 			[
 				"name",
@@ -557,7 +414,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				9
+				21
 			],
 			[
 				"visible",
@@ -565,7 +422,7 @@ aStepsTable = [
 			],
 			[
 				"stepnumber",
-				2
+				7
 			],
 			[
 				"steptype",
@@ -578,46 +435,8 @@ aStepsTable = [
 		]
 	],
 	[
-		21,
-		15,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oView</font></span> = New Object <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">filename_View</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"oView = new filename_View"
-			],
-			[
-				"interactionid",
-				10
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"oView = New Object SayHelloView"
-			]
-		]
-	],
-	[
-		16,
-		14,
+		53,
+		51,
 		[
 			[
 				"name",
@@ -633,7 +452,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				9
+				21
 			],
 			[
 				"visible",
@@ -641,7 +460,7 @@ aStepsTable = [
 			],
 			[
 				"stepnumber",
-				3
+				8
 			],
 			[
 				"steptype",
@@ -650,6 +469,44 @@ aStepsTable = [
 			[
 				"plainname",
 				" Methods "
+			]
+		]
+	],
+	[
+		54,
+		51,
+		[
+			[
+				"name",
+				" End of class "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				21
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				9
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				" End of class "
 			]
 		]
 	]
@@ -665,39 +522,15 @@ aInteractionsTable = [
 		""
 	],
 	[
-		2,
+		21,
 		1,
-		"load",
-		"16/02/2018",
-		"12:37:12",
-		"file;;_RV_;;filename_View;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"windowcontroller",
+		"19/04/2025",
+		"06:28:09",
+		"name;;_RV_;;filename_;;_RV_;;app;;_RV_;;oApp;;_RV_;;view;;_RV_;;oView;;_RV_;;"
 	],
 	[
-		3,
-		1,
-		"ifstatement",
-		"16/02/2018",
-		"12:37:36",
-		"condition;;_RV_;;isMainSourceFile();;_RV_;;"
-	],
-	[
-		4,
-		1,
-		"import",
-		"16/02/2018",
-		"12:37:52",
-		"value;;_RV_;;System.GUI;;_RV_;;"
-	],
-	[
-		5,
-		1,
-		"newobj",
-		"16/02/2018",
-		"12:38:15",
-		"value;;_RV_;;;;_RV_;;value2;;_RV_;;App;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
-	],
-	[
-		6,
+		22,
 		1,
 		"callfunc",
 		"16/02/2018",
@@ -705,7 +538,7 @@ aInteractionsTable = [
 		"name;;_RV_;;StyleFusion;;_RV_;;lparameters;;_RV_;;0;;_RV_;;parameters;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;"
 	],
 	[
-		7,
+		23,
 		1,
 		"callfunc",
 		"16/02/2018",
@@ -713,28 +546,12 @@ aInteractionsTable = [
 		"name;;_RV_;;openWindow;;_RV_;;lparameters;;_RV_;;2;;_RV_;;parameters;;_RV_;;:filename_Controller;;_RV_;;loutput;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;"
 	],
 	[
-		8,
+		24,
 		1,
 		"callfunc",
 		"16/02/2018",
 		"12:38:51",
 		"name;;_RV_;;exec;;_RV_;;lparameters;;_RV_;;0;;_RV_;;parameters;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;"
-	],
-	[
-		9,
-		1,
-		"class",
-		"16/02/2018",
-		"12:39:13",
-		"value;;_RV_;;filename_Controller;;_RV_;;value2;;_RV_;;WindowsControllerParent;;_RV_;;value3;;_RV_;;0;;_RV_;;"
-	],
-	[
-		10,
-		1,
-		"newobj",
-		"16/02/2018",
-		"12:39:33",
-		"value;;_RV_;;oView;;_RV_;;value2;;_RV_;;filename_View;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	]
 ]
 
