@@ -16,6 +16,7 @@ T_ENV_DOCK_GOALDESIGNER = "مصمم الهدف"
 T_ENV_DOCK_COMPONENTSBROWSER = "مستعرض المكونات      "
 T_ENV_DOCK_FORMDESIGNER = "مصمم النماذج"
 T_ENV_STATUSBAR_READY = "!جاهز"
+T_ENV_STATUSBAR_CHANGEFILETIME = "الوقت المستغرق لتغيير الملف: "
 T_ENV_MENU_FILE = "ملف"
 T_ENV_MENU_EDIT = "تحرير"
 T_ENV_MENU_VIEW = "عرض"
@@ -182,7 +183,7 @@ T_GD_BM_CANTMODIFYFUTURE = "لايمكن تعديل المستقبل بينما 
 #Dialog
 T_GD_DM_OPENFILE = "فتح ملف"
 T_GD_DM_SAVEFILE = "حفظ ملف"
-T_GD_DM_FILETYPE = "ملفات المصدر(*.pwct)"
+T_GD_DM_FILETYPE = "ملفات المصدر(*.برنامج)"
 #Program
 T_GD_DEBUG = "تنقيح"
 T_GD_RUN = "تشغيل"
@@ -327,3 +328,16 @@ T_RING2PWCT_USEBEFORESCANNER = True
 load "../tools/import/arabicsyntax.ring"
 #Form Events
 T_FORMEVENTS_PARENTSTEP = "الدوال"
+T_FORMEVENTS_VIEWOBJECT = "كائن_العرض"
+#Applications Folder
+T_APPLICATIONSFOLDER = "/arabic/applications"
+#VSF Extension
+T_VSF_EXTENSION = "برنامج"
+T_VSF_CONTROLLER = "_المتحكم"
+T_VSF_NONAMEPWCT = "بدون اسم.برنامج"
+#Form Designer
+T_PWCT_FORMDESIGNER_FILEEXTENSION = "نموذج"
+#Ring2PWCT Logical Operators Text
+T_RING2PWCT_LOT_AND = " && "
+T_RING2PWCT_LOT_OR = " || "
+T_RING2PWCT_LOT_NOT = " ! "

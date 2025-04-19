@@ -429,13 +429,8 @@ class AutoComplete
 	} 
 	func AddFunctions  { 
 		AddItems(cfunctions())
-		#/*
-		#		Get Autocomplete Items
-		#	*/
 	} 
-	func getAutoCompleteItems oGoalDesigner { 
-		aItems = []
-		#Add objects from the Form Designer
+	func addObjectsFromFormDesigner oGoalDesigner,aItems { 
 		aObjects = oGoalDesigner.parent().formdesigner().oModel.getObjects()
 		nAutoCompleteFormObjectsCache = len(aObjects)
 		for oObj in aObjects step 1 { 
@@ -447,6 +442,10 @@ class AutoComplete
 			} 
 			if  NOT find(aItems,"oView."+oObj[1]) { 
 				aItems+("oView."+oObj[1])
+			} 
+			#Use this feature in English version
+			if !T_LANGUAGE = :English { 
+				loop 1
 			} 
 			cClass = classname(oObj[2])
 			lKnown = True
@@ -513,11 +512,19 @@ class AutoComplete
 			if lKnown { 
 				aMethodsList = methods(oMyObj)
 				for cMethod in aMethodsList step 1 { 
-					aItems+(oObj[1]+"."+cMethod+"()")
-					aItems+("oView."+oObj[1]+"."+cMethod+"()")
+					aItems+(oObj[1]+"."+cMethod)
+					aItems+("oView."+oObj[1]+"."+cMethod)
 				} 
 			} 
 		} 
+		#/*
+		#		Get Autocomplete Items
+		#	*/
+	} 
+	func getAutoCompleteItems oGoalDesigner { 
+		aItems = []
+		#Add objects from the Form Designer
+		addObjectsFromFormDesigner(oGoalDesigner,aItems)
 		#Get Steps Tree Data
 		aTree = oGoalDesigner.oModel.oStepsTreeModel.GetData()
 		nAutoCompleteStepsTreeCache = len(aTree)
@@ -525,14 +532,16 @@ class AutoComplete
 		cCode = ""
 		for item in aTree step 1 { 
 			aContent = item[C_TREEMODEL_CONTENT]
-			cCode += aContent[:code]+nl
+			cCode += aContent[:plainname]+nl
 		} 
 		aWords = sort(split(cCode," "))
-		#Remove Duplication
+		#Remove Duplication and words contains the dot operator
 		cLast = ""
 		for word in aWords step 1 { 
 			if word! = cLast { 
-				aItems+word
+				if !(substr(word,".") OR substr(word,"(")) { 
+					aItems+word
+				} 
 				cLast = word
 			} 
 		} 

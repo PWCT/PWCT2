@@ -398,6 +398,7 @@ load "weblib_stylefunctionsclass.ring"
 load "weblib_template.ring"
 load "weblib_webpageclass.ring"
 load "whileloop.ring"
+load "windowcontroller.ring"
 load "windowsnl.ring"
 #Add components to the Components list
 cComponentsPath = C_CB_COMPONENTSPATH
@@ -793,4 +794,5 @@ aComponentsFilesList+(cComponentsPath+"weblib_stylefunctionsclass.ring")
 aComponentsFilesList+(cComponentsPath+"weblib_template.ring")
 aComponentsFilesList+(cComponentsPath+"weblib_webpageclass.ring")
 aComponentsFilesList+(cComponentsPath+"whileloop.ring")
+aComponentsFilesList+(cComponentsPath+"windowcontroller.ring")
 aComponentsFilesList+(cComponentsPath+"windowsnl.ring")

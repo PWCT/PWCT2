@@ -226,7 +226,11 @@ class GoalDesignerView from WindowsViewParent
 		}
 		win {
 			gdtool = new qtoolbar(win)
-			tool1 = addtoolbar_2(Qt_LeftToolBarArea,gdtool)
+			if T_LAYOUTDIRECTION { 
+				tool1 = addtoolbar_2(Qt_RightToolBarArea,gdtool)
+				else
+					tool1 = addtoolbar_2(Qt_LeftToolBarArea,gdtool)
+			} 
 			gdtool {
 				if this.lUseNewCommentButton { 
 					AddWidget(btnAddStep)

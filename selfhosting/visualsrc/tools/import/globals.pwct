@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'english'
-nStepsID                 = 139		
-nInteractionsID          = 139
+nStepsID                 = 143		
+nInteractionsID          = 143
 
 aStepsTable = [
 	[
@@ -5298,6 +5298,159 @@ aStepsTable = [
 				"C_IGNOREOUTPUT = False"
 			]
 		]
+	],
+	[
+		140,
+		1,
+		[
+			[
+				"name",
+				"Logical Operators Text"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Logical Operators Text
+"
+			],
+			[
+				"interactionid",
+				140
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Logical Operators Text"
+			]
+		]
+	],
+	[
+		141,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_RING2PWCT_LOT_AND</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;&nbsp;AND&nbsp;&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_RING2PWCT_LOT_AND = "+char(34)+" AND "+char(34)+""
+			],
+			[
+				"interactionid",
+				141
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_RING2PWCT_LOT_AND = "+char(34)+" AND "+char(34)+""
+			]
+		]
+	],
+	[
+		142,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_RING2PWCT_LOT_OR</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;&nbsp;OR&nbsp;&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_RING2PWCT_LOT_OR = "+char(34)+" OR "+char(34)+""
+			],
+			[
+				"interactionid",
+				142
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_RING2PWCT_LOT_OR = "+char(34)+" OR "+char(34)+""
+			]
+		]
+	],
+	[
+		143,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_RING2PWCT_LOT_NOT</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;&nbsp;NOT&nbsp;&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_RING2PWCT_LOT_NOT = "+char(34)+" NOT "+char(34)+""
+			],
+			[
+				"interactionid",
+				143
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_RING2PWCT_LOT_NOT = "+char(34)+" NOT "+char(34)+""
+			]
+		]
 	]
 ]
 
@@ -5306,1113 +5459,1145 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"value;;_RV_;;**	Project : Programming Without Coding Technology (PWCT) Version 2.0;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"value;;_RV_;;**	File Purpose : Import Tool - Global Variables;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"value;;_RV_;;**	Date : 2020.02.15;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"value;;_RV_;;**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"value;;_RV_;;Tokens Table;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;C_TOKENTYPE;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;C_TOKENVALUE;;_RV_;;rightside;;_RV_;;2;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;C_TOKENINDEX;;_RV_;;rightside;;_RV_;;3;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"value;;_RV_;;Token Type;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;C_KEYWORD;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;C_OPERATOR;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;C_LITERAL;;_RV_;;rightside;;_RV_;;2;;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;C_NUMBER;;_RV_;;rightside;;_RV_;;3;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;C_IDENTIFIER;;_RV_;;rightside;;_RV_;;4;;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;C_ENDLINE;;_RV_;;rightside;;_RV_;;5;;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;C_COMMENT;;_RV_;;rightside;;_RV_;;6;;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"value;;_RV_;;Keywords List;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;aKEYWORDS;;_RV_;;rightside;;_RV_;;["+char(34)+"IF"+char(34)+","+char(34)+"TO"+char(34)+","+char(34)+"OR"+char(34)+","+char(34)+"AND"+char(34)+","+char(34)+"NOT"+char(34)+","+char(34)+"FOR"+char(34)+","+char(34)+"FOREACH"+char(34)+","+char(34)+"NEW"+char(34)+","+char(34)+"FUNC"+char(34)+","+char(34)+"FROM"+char(34)+","+char(34)+"NEXT"+char(34)+","+char(34)+"LOAD"+char(34)+","+char(34)+"ELSE"+char(34)+","+char(34)+"SEE"+char(34)+","+char(34)+"WHILE"+char(34)+","+char(34)+"OK"+char(34)+","+char(34)+"CLASS"+char(34)+","+char(34)+"RETURN"+char(34)+","+char(34)+"BUT"+char(34)+","+char(34)+"END"+char(34)+","+char(34)+"GIVE"+char(34)+","+char(34)+"BYE"+char(34)+","+char(34)+"EXIT"+char(34)+","+char(34)+"TRY"+char(34)+","+char(34)+"CATCH"+char(34)+","+char(34)+"DONE"+char(34)+","+char(34)+"SWITCH"+char(34)+","+char(34)+"ON"+char(34)+","+char(34)+"OTHER"+char(34)+","+char(34)+"OFF"+char(34)+","+char(34)+"IN"+char(34)+","+char(34)+"LOOP"+char(34)+","+char(34)+"PACKAGE"+char(34)+","+char(34)+"IMPORT"+char(34)+","+char(34)+"PRIVATE"+char(34)+","+char(34)+"STEP"+char(34)+","+char(34)+"DO"+char(34)+","+char(34)+"AGAIN"+char(34)+","+char(34)+"CALL"+char(34)+","+char(34)+"ELSEIF"+char(34)+","+char(34)+"PUT"+char(34)+","+char(34)+"GET"+char(34)+","+char(34)+"CASE"+char(34)+","+char(34)+"DEF"+char(34)+","+char(34)+"ENDFUNC"+char(34)+","+char(34)+"ENDCLASS"+char(34)+","+char(34)+"ENDPACKAGE"+char(34)+","+char(34)+"ENDIF"+char(34)+","+char(34)+"ENDFOR"+char(34)+","+char(34)+"ENDWHILE"+char(34)+","+char(34)+"ENDSWITCH"+char(34)+","+char(34)+"ENDTRY"+char(34)+","+char(34)+"FUNCTION"+char(34)+","+char(34)+"ENDFUNCTION"+char(34)+","+char(34)+"BREAK"+char(34)+","+char(34)+"CONTINUE"+char(34)+","+char(34)+"CHANGERINGKEYWORD"+char(34)+","+char(34)+"CHANGERINGOPERATOR"+char(34)+","+char(34)+"LOADSYNTAX"+char(34)+"];;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"value;;_RV_;;Keywords Constants 	;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_IF;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_TO;;_RV_;;rightside;;_RV_;;2;;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_OR;;_RV_;;rightside;;_RV_;;3;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_AND;;_RV_;;rightside;;_RV_;;4;;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_NOT;;_RV_;;rightside;;_RV_;;5;;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_FOR;;_RV_;;rightside;;_RV_;;6;;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_FOREACH;;_RV_;;rightside;;_RV_;;7;;_RV_;;"
 	],
 	[
 		30,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_NEW;;_RV_;;rightside;;_RV_;;8;;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_FUNC;;_RV_;;rightside;;_RV_;;9;;_RV_;;"
 	],
 	[
 		32,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_FROM;;_RV_;;rightside;;_RV_;;10;;_RV_;;"
 	],
 	[
 		33,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_NEXT;;_RV_;;rightside;;_RV_;;11;;_RV_;;"
 	],
 	[
 		34,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_LOAD;;_RV_;;rightside;;_RV_;;12;;_RV_;;"
 	],
 	[
 		35,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_ELSE;;_RV_;;rightside;;_RV_;;13;;_RV_;;"
 	],
 	[
 		36,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_SEE;;_RV_;;rightside;;_RV_;;14;;_RV_;;"
 	],
 	[
 		37,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_WHILE;;_RV_;;rightside;;_RV_;;15;;_RV_;;"
 	],
 	[
 		38,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_OK;;_RV_;;rightside;;_RV_;;16;;_RV_;;"
 	],
 	[
 		39,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_CLASS;;_RV_;;rightside;;_RV_;;17;;_RV_;;"
 	],
 	[
 		40,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_RETURN;;_RV_;;rightside;;_RV_;;18;;_RV_;;"
 	],
 	[
 		41,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_BUT;;_RV_;;rightside;;_RV_;;19;;_RV_;;"
 	],
 	[
 		42,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_END;;_RV_;;rightside;;_RV_;;20;;_RV_;;"
 	],
 	[
 		43,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_GIVE;;_RV_;;rightside;;_RV_;;21;;_RV_;;"
 	],
 	[
 		44,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_BYE;;_RV_;;rightside;;_RV_;;22;;_RV_;;"
 	],
 	[
 		45,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_EXIT;;_RV_;;rightside;;_RV_;;23;;_RV_;;"
 	],
 	[
 		46,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_TRY;;_RV_;;rightside;;_RV_;;24;;_RV_;;"
 	],
 	[
 		47,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_CATCH;;_RV_;;rightside;;_RV_;;25;;_RV_;;"
 	],
 	[
 		48,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_DONE;;_RV_;;rightside;;_RV_;;26;;_RV_;;"
 	],
 	[
 		49,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_SWITCH;;_RV_;;rightside;;_RV_;;27;;_RV_;;"
 	],
 	[
 		50,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_ON;;_RV_;;rightside;;_RV_;;28;;_RV_;;"
 	],
 	[
 		51,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_OTHER;;_RV_;;rightside;;_RV_;;29;;_RV_;;"
 	],
 	[
 		52,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_OFF;;_RV_;;rightside;;_RV_;;30;;_RV_;;"
 	],
 	[
 		53,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_IN;;_RV_;;rightside;;_RV_;;31;;_RV_;;"
 	],
 	[
 		54,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_LOOP;;_RV_;;rightside;;_RV_;;32;;_RV_;;"
 	],
 	[
 		55,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_PACKAGE;;_RV_;;rightside;;_RV_;;33;;_RV_;;"
 	],
 	[
 		56,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_IMPORT;;_RV_;;rightside;;_RV_;;34;;_RV_;;"
 	],
 	[
 		57,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_PRIVATE;;_RV_;;rightside;;_RV_;;35;;_RV_;;"
 	],
 	[
 		58,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_STEP;;_RV_;;rightside;;_RV_;;36;;_RV_;;"
 	],
 	[
 		59,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_DO;;_RV_;;rightside;;_RV_;;37;;_RV_;;"
 	],
 	[
 		60,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_AGAIN;;_RV_;;rightside;;_RV_;;38;;_RV_;;"
 	],
 	[
 		61,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_CALL;;_RV_;;rightside;;_RV_;;39;;_RV_;;"
 	],
 	[
 		62,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_ELSEIF;;_RV_;;rightside;;_RV_;;40;;_RV_;;"
 	],
 	[
 		63,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_PUT;;_RV_;;rightside;;_RV_;;41;;_RV_;;"
 	],
 	[
 		64,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_GET;;_RV_;;rightside;;_RV_;;42;;_RV_;;"
 	],
 	[
 		65,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_CASE;;_RV_;;rightside;;_RV_;;43;;_RV_;;"
 	],
 	[
 		66,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_DEF;;_RV_;;rightside;;_RV_;;44;;_RV_;;"
 	],
 	[
 		67,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_ENDFUNC;;_RV_;;rightside;;_RV_;;45;;_RV_;;"
 	],
 	[
 		68,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_ENDCLASS;;_RV_;;rightside;;_RV_;;46;;_RV_;;"
 	],
 	[
 		69,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_ENDPACKAGE;;_RV_;;rightside;;_RV_;;47;;_RV_;;"
 	],
 	[
 		70,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_ENDIF;;_RV_;;rightside;;_RV_;;48;;_RV_;;"
 	],
 	[
 		71,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_ENDFOR;;_RV_;;rightside;;_RV_;;49;;_RV_;;"
 	],
 	[
 		72,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_ENDWHILE;;_RV_;;rightside;;_RV_;;50;;_RV_;;"
 	],
 	[
 		73,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_ENDSWITCH;;_RV_;;rightside;;_RV_;;51;;_RV_;;"
 	],
 	[
 		74,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_ENDTRY;;_RV_;;rightside;;_RV_;;52;;_RV_;;"
 	],
 	[
 		75,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_FUNCTION;;_RV_;;rightside;;_RV_;;53;;_RV_;;"
 	],
 	[
 		76,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_ENDFUNCTION;;_RV_;;rightside;;_RV_;;54;;_RV_;;"
 	],
 	[
 		77,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_BREAK;;_RV_;;rightside;;_RV_;;55;;_RV_;;"
 	],
 	[
 		78,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_CONTINUE;;_RV_;;rightside;;_RV_;;56;;_RV_;;"
 	],
 	[
 		79,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_CHANGERINGKEYWORD;;_RV_;;rightside;;_RV_;;57;;_RV_;;"
 	],
 	[
 		80,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_CHANGERINGOPERATOR;;_RV_;;rightside;;_RV_;;58;;_RV_;;"
 	],
 	[
 		81,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;K_LOADSYNTAX;;_RV_;;rightside;;_RV_;;59;;_RV_;;"
 	],
 	[
 		82,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"value;;_RV_;;Operators;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		83,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;OP_PLUS;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		84,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;OP_MINUS;;_RV_;;rightside;;_RV_;;2;;_RV_;;"
 	],
 	[
 		85,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;OP_MUL;;_RV_;;rightside;;_RV_;;3;;_RV_;;"
 	],
 	[
 		86,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;OP_DIV;;_RV_;;rightside;;_RV_;;4;;_RV_;;"
 	],
 	[
 		87,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;OP_REM;;_RV_;;rightside;;_RV_;;5;;_RV_;;"
 	],
 	[
 		88,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;OP_DOT;;_RV_;;rightside;;_RV_;;6;;_RV_;;"
 	],
 	[
 		89,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;OP_FOPEN;;_RV_;;rightside;;_RV_;;7;;_RV_;;"
 	],
 	[
 		90,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;OP_FCLOSE;;_RV_;;rightside;;_RV_;;8;;_RV_;;"
 	],
 	[
 		91,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;OP_EQUAL;;_RV_;;rightside;;_RV_;;9;;_RV_;;"
 	],
 	[
 		92,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;OP_COMMA;;_RV_;;rightside;;_RV_;;10;;_RV_;;"
 	],
 	[
 		93,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;OP_NOT;;_RV_;;rightside;;_RV_;;11;;_RV_;;"
 	],
 	[
 		94,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;OP_GREATER;;_RV_;;rightside;;_RV_;;12;;_RV_;;"
 	],
 	[
 		95,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;OP_LESS;;_RV_;;rightside;;_RV_;;13;;_RV_;;"
 	],
 	[
 		96,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;OP_LOPEN;;_RV_;;rightside;;_RV_;;14;;_RV_;;"
 	],
 	[
 		97,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;OP_LCLOSE;;_RV_;;rightside;;_RV_;;15;;_RV_;;"
 	],
 	[
 		98,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;OP_RANGE;;_RV_;;rightside;;_RV_;;16;;_RV_;;"
 	],
 	[
 		99,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;OP_BRACEOPEN;;_RV_;;rightside;;_RV_;;17;;_RV_;;"
 	],
 	[
 		100,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;OP_BRACECLOSE;;_RV_;;rightside;;_RV_;;18;;_RV_;;"
 	],
 	[
 		101,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;OP_BITAND;;_RV_;;rightside;;_RV_;;19;;_RV_;;"
 	],
 	[
 		102,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;OP_BITOR;;_RV_;;rightside;;_RV_;;20;;_RV_;;"
 	],
 	[
 		103,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;OP_BITNOT;;_RV_;;rightside;;_RV_;;21;;_RV_;;"
 	],
 	[
 		104,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;OP_XOR;;_RV_;;rightside;;_RV_;;22;;_RV_;;"
 	],
 	[
 		105,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"value;;_RV_;;Error Messages (Parser)	;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		106,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;ERROR_PARALIST;;_RV_;;rightside;;_RV_;;"+char(34)+"Error (C1) : Error in parameters list, expected identifier"+char(34)+";;_RV_;;"
 	],
 	[
 		107,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;ERROR_CLASSNAME;;_RV_;;rightside;;_RV_;;"+char(34)+"Error (C2) : Error in class name"+char(34)+";;_RV_;;"
 	],
 	[
 		108,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;ERROR_OK;;_RV_;;rightside;;_RV_;;"+char(34)+"Error (C3) : Unclosed control strucutre, 'ok' is missing"+char(34)+";;_RV_;;"
 	],
 	[
 		109,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;ERROR_END;;_RV_;;rightside;;_RV_;;"+char(34)+"Error (C4) : Unclosed control strucutre, 'end' is missing"+char(34)+";;_RV_;;"
 	],
 	[
 		110,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;ERROR_NEXT;;_RV_;;rightside;;_RV_;;"+char(34)+"Error (C5) : Unclosed control strucutre, next is missing"+char(34)+";;_RV_;;"
 	],
 	[
 		111,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;ERROR_FUNCNAME;;_RV_;;rightside;;_RV_;;"+char(34)+"Error (C6) : Error in function name"+char(34)+";;_RV_;;"
 	],
 	[
 		112,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;ERROR_LISTITEM;;_RV_;;rightside;;_RV_;;"+char(34)+"Error (C7) : Error in list items"+char(34)+";;_RV_;;"
 	],
 	[
 		113,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;ERROR_MISSPARENTHESES;;_RV_;;rightside;;_RV_;;"+char(34)+"Error (C8) : Parentheses ')' is missing "+char(34)+";;_RV_;;"
 	],
 	[
 		114,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;ERROR_MISSBRACKETS;;_RV_;;rightside;;_RV_;;"+char(34)+"Error (C9) : Brackets ']' is missing "+char(34)+";;_RV_;;"
 	],
 	[
 		115,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;ERROR_PRENTCLASSNAME;;_RV_;;rightside;;_RV_;;"+char(34)+"Error (C10) : Error in parent class name"+char(34)+";;_RV_;;"
 	],
 	[
 		116,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;ERROR_EXPROPERATOR;;_RV_;;rightside;;_RV_;;"+char(34)+"Error (C11) : Error in expression operator"+char(34)+";;_RV_;;"
 	],
 	[
 		117,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;ERROR_NOCLASSDEFINED;;_RV_;;rightside;;_RV_;;"+char(34)+"Error (C12) :No class definition"+char(34)+";;_RV_;;"
 	],
 	[
 		118,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;ERROR_VARNAME;;_RV_;;rightside;;_RV_;;"+char(34)+"Error (C13) : Error in variable name"+char(34)+";;_RV_;;"
 	],
 	[
 		119,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;ERROR_NOCATCH;;_RV_;;rightside;;_RV_;;"+char(34)+"Error (C14) : Try/Catch miss the Catch keyword!"+char(34)+";;_RV_;;"
 	],
 	[
 		120,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;ERROR_NODONE;;_RV_;;rightside;;_RV_;;"+char(34)+"Error (C15) : Try/Catch miss the Done keyword!"+char(34)+";;_RV_;;"
 	],
 	[
 		121,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;ERROR_SWITCHEXPR;;_RV_;;rightside;;_RV_;;"+char(34)+"Error (C16) : Error in Switch statement expression!"+char(34)+";;_RV_;;"
 	],
 	[
 		122,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;ERROR_SWITCHOFF;;_RV_;;rightside;;_RV_;;"+char(34)+"Error (C17) : Switch statement without OFF"+char(34)+";;_RV_;;"
 	],
 	[
 		123,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;ERROR_BRACESNOTCLOSED;;_RV_;;rightside;;_RV_;;"+char(34)+"Error (C18) : Missing closing brace for the block opened!"+char(34)+";;_RV_;;"
 	],
 	[
 		124,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;ERROR_NUMERICOVERFLOW;;_RV_;;rightside;;_RV_;;"+char(34)+"Error (C19) : Numeric Overflow!"+char(34)+";;_RV_;;"
 	],
 	[
 		125,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;ERROR_PACKAGENAME;;_RV_;;rightside;;_RV_;;"+char(34)+"Error (C20) : Error in package name"+char(34)+";;_RV_;;"
 	],
 	[
 		126,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;ERROR_AGAIN;;_RV_;;rightside;;_RV_;;"+char(34)+"Error (C21) : Unclosed control strucutre, 'again' is missing"+char(34)+";;_RV_;;"
 	],
 	[
 		127,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;ERROR_FUNCREDEFINE;;_RV_;;rightside;;_RV_;;"+char(34)+"Error (C22) : Function redefinition, function is already defined!"+char(34)+";;_RV_;;"
 	],
 	[
 		128,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;ERROR_USINGBRACTAFTERNUM;;_RV_;;rightside;;_RV_;;"+char(34)+"Error (C23) : Using '(' after number!"+char(34)+";;_RV_;;"
 	],
 	[
 		129,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;ERROR_PARENTLIKESUBCLASS;;_RV_;;rightside;;_RV_;;"+char(34)+"Error (C24) : The parent class name is identical to the subclass name"+char(34)+";;_RV_;;"
 	],
 	[
 		130,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;ERROR_ACCESSSELFREF;;_RV_;;rightside;;_RV_;;"+char(34)+"Error (C25) : Trying to access the self reference after the object name"+char(34)+";;_RV_;;"
 	],
 	[
 		131,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;ERROR_CLASSREDEFINE;;_RV_;;rightside;;_RV_;;"+char(34)+"Error (C26) : Class redefinition, class is already defined!"+char(34)+";;_RV_;;"
 	],
 	[
 		132,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;RING_PARSER_WARNING_EXITOUTSIDELOOP;;_RV_;;rightside;;_RV_;;"+char(34)+"Warning (W6) : Using the EXIT command outside loop!"+char(34)+";;_RV_;;"
 	],
 	[
 		133,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;RING_PARSER_WARNING_LOOPOUTSIDELOOP;;_RV_;;rightside;;_RV_;;"+char(34)+"Warning (W7) : Using the LOOP command outside loop"+char(34)+";;_RV_;;"
 	],
 	[
 		134,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"value;;_RV_;;Instruction Parameters Buffer;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		135,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;C_CLEARBUFFER;;_RV_;;rightside;;_RV_;;True;;_RV_;;"
 	],
 	[
 		136,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;C_KEEPBUFFER;;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
 		137,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"value;;_RV_;;Print Output;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		138,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;C_PRINTOUTPUT;;_RV_;;rightside;;_RV_;;True;;_RV_;;"
 	],
 	[
 		139,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:55",
+		"19/04/2025",
+		"06:53:50",
 		"leftside;;_RV_;;C_IGNOREOUTPUT;;_RV_;;rightside;;_RV_;;False;;_RV_;;"
+	],
+	[
+		140,
+		1,
+		"comment_text",
+		"19/04/2025",
+		"06:53:50",
+		"value;;_RV_;;Logical Operators Text;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		141,
+		1,
+		"assignment",
+		"19/04/2025",
+		"06:53:50",
+		"leftside;;_RV_;;T_RING2PWCT_LOT_AND;;_RV_;;rightside;;_RV_;;"+char(34)+" AND "+char(34)+";;_RV_;;"
+	],
+	[
+		142,
+		1,
+		"assignment",
+		"19/04/2025",
+		"06:53:50",
+		"leftside;;_RV_;;T_RING2PWCT_LOT_OR;;_RV_;;rightside;;_RV_;;"+char(34)+" OR "+char(34)+";;_RV_;;"
+	],
+	[
+		143,
+		1,
+		"assignment",
+		"19/04/2025",
+		"06:53:50",
+		"leftside;;_RV_;;T_RING2PWCT_LOT_NOT;;_RV_;;rightside;;_RV_;;"+char(34)+" NOT "+char(34)+";;_RV_;;"
 	]
 ]
 

@@ -3384,6 +3384,44 @@ aStepsTable = [
 		[
 			[
 				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oGD.parent().oView.oProcessText.setFocus(2)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"oGD.parent().oView.oProcessText.setFocus(2)"
+			],
+			[
+				"interactionid",
+				68
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"oGD.parent().oView.oProcessText.setFocus(2)"
+			]
+		]
+	],
+	[
+		95,
+		92,
+		[
+			[
+				"name",
 				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFile</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFileName</font></span>"
 			],
 			[
@@ -3396,7 +3434,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				68
+				69
 			],
 			[
 				"visible",
@@ -3417,7 +3455,7 @@ aStepsTable = [
 		]
 	],
 	[
-		95,
+		96,
 		92,
 		[
 			[
@@ -3434,7 +3472,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				69
+				70
 			],
 			[
 				"visible",
@@ -3455,8 +3493,8 @@ aStepsTable = [
 		]
 	],
 	[
+		97,
 		96,
-		95,
 		[
 			[
 				"name",
@@ -3472,7 +3510,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				69
+				70
 			],
 			[
 				"visible",
@@ -3493,8 +3531,8 @@ aStepsTable = [
 		]
 	],
 	[
-		98,
-		96,
+		99,
+		97,
 		[
 			[
 				"name",
@@ -3510,7 +3548,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				70
+				71
 			],
 			[
 				"visible",
@@ -3531,8 +3569,8 @@ aStepsTable = [
 		]
 	],
 	[
-		97,
-		95,
+		98,
+		96,
 		[
 			[
 				"name",
@@ -3548,7 +3586,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				69
+				70
 			],
 			[
 				"visible",
@@ -3569,7 +3607,7 @@ aStepsTable = [
 		]
 	],
 	[
-		99,
+		100,
 		92,
 		[
 			[
@@ -3586,7 +3624,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				71
+				72
 			],
 			[
 				"visible",
@@ -3607,7 +3645,7 @@ aStepsTable = [
 		]
 	],
 	[
-		100,
+		101,
 		92,
 		[
 			[
@@ -3624,7 +3662,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				72
+				73
 			],
 			[
 				"visible",
@@ -3645,8 +3683,8 @@ aStepsTable = [
 		]
 	],
 	[
+		102,
 		101,
-		100,
 		[
 			[
 				"name",
@@ -3662,7 +3700,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				72
+				73
 			],
 			[
 				"visible",
@@ -3683,8 +3721,8 @@ aStepsTable = [
 		]
 	],
 	[
-		103,
-		101,
+		104,
+		102,
 		[
 			[
 				"name",
@@ -3700,7 +3738,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				73
+				74
 			],
 			[
 				"visible",
@@ -3721,8 +3759,8 @@ aStepsTable = [
 		]
 	],
 	[
-		102,
-		100,
+		103,
+		101,
 		[
 			[
 				"name",
@@ -3738,7 +3776,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				72
+				73
 			],
 			[
 				"visible",
@@ -3759,7 +3797,7 @@ aStepsTable = [
 		]
 	],
 	[
-		104,
+		105,
 		92,
 		[
 			[
@@ -3773,44 +3811,6 @@ aStepsTable = [
 			[
 				"code",
 				"cDir = currentdir()"
-			],
-			[
-				"interactionid",
-				74
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"cDir = currentdir()"
-			]
-		]
-	],
-	[
-		105,
-		92,
-		[
-			[
-				"name",
-				"chdir(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">JustFilePath(cFile)</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"chdir(JustFilePath(cFile))"
 			],
 			[
 				"interactionid",
@@ -3830,12 +3830,50 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"chdir(JustFilePath(cFile))"
+				"cDir = currentdir()"
 			]
 		]
 	],
 	[
 		106,
+		92,
+		[
+			[
+				"name",
+				"changeFolder(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">JustFilePath(cFile)</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"changeFolder(JustFilePath(cFile))"
+			],
+			[
+				"interactionid",
+				76
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"changeFolder(JustFilePath(cFile))"
+			]
+		]
+	],
+	[
+		107,
 		92,
 		[
 			[
@@ -3852,7 +3890,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				76
+				77
 			],
 			[
 				"visible",
@@ -3873,8 +3911,8 @@ aStepsTable = [
 		]
 	],
 	[
+		108,
 		107,
-		106,
 		[
 			[
 				"name",
@@ -3890,7 +3928,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				76
+				77
 			],
 			[
 				"visible",
@@ -3911,8 +3949,8 @@ aStepsTable = [
 		]
 	],
 	[
-		109,
-		107,
+		110,
+		108,
 		[
 			[
 				"name",
@@ -3925,44 +3963,6 @@ aStepsTable = [
 			[
 				"code",
 				"cCode = RunBatchFile(cFile)"
-			],
-			[
-				"interactionid",
-				77
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"cCode = RunBatchFile(cFile)"
-			]
-		]
-	],
-	[
-		110,
-		107,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oGD.parent().oView.oProcess</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">RunProcess(cCode,&quot;&quot;,oGD.parent().Method(:GetDataAction))</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"oGD.parent().oView.oProcess = RunProcess(cCode,"+char(34)+""+char(34)+",oGD.parent().Method(:GetDataAction))"
 			],
 			[
 				"interactionid",
@@ -3982,13 +3982,51 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"oGD.parent().oView.oProcess = RunProcess(cCode,"+char(34)+""+char(34)+",oGD.parent().Method(:GetDataAction))"
+				"cCode = RunBatchFile(cFile)"
 			]
 		]
 	],
 	[
 		111,
-		107,
+		108,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oGD.parent().oView.oProcess</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">RunProcess(cCode,&quot;&quot;,oGD.parent().Method(:GetDataAction))</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"oGD.parent().oView.oProcess = RunProcess(cCode,"+char(34)+""+char(34)+",oGD.parent().Method(:GetDataAction))"
+			],
+			[
+				"interactionid",
+				79
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"oGD.parent().oView.oProcess = RunProcess(cCode,"+char(34)+""+char(34)+",oGD.parent().Method(:GetDataAction))"
+			]
+		]
+	],
+	[
+		112,
+		108,
 		[
 			[
 				"name",
@@ -4004,7 +4042,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				79
+				80
 			],
 			[
 				"visible",
@@ -4025,8 +4063,8 @@ aStepsTable = [
 		]
 	],
 	[
+		113,
 		112,
-		111,
 		[
 			[
 				"name",
@@ -4042,7 +4080,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				79
+				80
 			],
 			[
 				"visible",
@@ -4063,8 +4101,8 @@ aStepsTable = [
 		]
 	],
 	[
+		114,
 		113,
-		112,
 		[
 			[
 				"name",
@@ -4080,7 +4118,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				80
+				81
 			],
 			[
 				"visible",
@@ -4101,8 +4139,8 @@ aStepsTable = [
 		]
 	],
 	[
-		108,
-		106,
+		109,
+		107,
 		[
 			[
 				"name",
@@ -4118,7 +4156,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				76
+				77
 			],
 			[
 				"visible",
@@ -4139,50 +4177,12 @@ aStepsTable = [
 		]
 	],
 	[
-		114,
-		92,
-		[
-			[
-				"name",
-				"chdir(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cDir</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"chdir(cDir)"
-			],
-			[
-				"interactionid",
-				81
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"chdir(cDir)"
-			]
-		]
-	],
-	[
 		115,
 		92,
 		[
 			[
 				"name",
-				"/*"
+				"changeFolder(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cDir</font></span>)"
 			],
 			[
 				"active",
@@ -4190,8 +4190,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"#/*
-"
+				"changeFolder(cDir)"
 			],
 			[
 				"interactionid",
@@ -4207,11 +4206,11 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				1
+				2
 			],
 			[
 				"plainname",
-				"/*"
+				"changeFolder(cDir)"
 			]
 		]
 	],
@@ -4221,7 +4220,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"		Run web application"
+				"/*"
 			],
 			[
 				"active",
@@ -4229,7 +4228,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"#		Run web application
+				"#/*
 "
 			],
 			[
@@ -4250,12 +4249,51 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"		Run web application"
+				"/*"
 			]
 		]
 	],
 	[
 		117,
+		92,
+		[
+			[
+				"name",
+				"		Run web application"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#		Run web application
+"
+			],
+			[
+				"interactionid",
+				84
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"		Run web application"
+			]
+		]
+	],
+	[
+		118,
 		92,
 		[
 			[
@@ -4273,7 +4311,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				84
+				85
 			],
 			[
 				"visible",
@@ -4332,7 +4370,7 @@ aStepsTable = [
 		]
 	],
 	[
-		118,
+		119,
 		10,
 		[
 			[
@@ -4349,7 +4387,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				85
+				86
 			],
 			[
 				"visible",
@@ -4370,8 +4408,8 @@ aStepsTable = [
 		]
 	],
 	[
+		120,
 		119,
-		118,
 		[
 			[
 				"name",
@@ -4387,7 +4425,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				85
+				86
 			],
 			[
 				"visible",
@@ -4408,8 +4446,8 @@ aStepsTable = [
 		]
 	],
 	[
-		121,
-		119,
+		122,
+		120,
 		[
 			[
 				"name",
@@ -4425,7 +4463,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				86
+				87
 			],
 			[
 				"visible",
@@ -4446,8 +4484,8 @@ aStepsTable = [
 		]
 	],
 	[
+		123,
 		122,
-		121,
 		[
 			[
 				"name",
@@ -4463,7 +4501,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				86
+				87
 			],
 			[
 				"visible",
@@ -4484,8 +4522,8 @@ aStepsTable = [
 		]
 	],
 	[
-		124,
-		122,
+		125,
+		123,
 		[
 			[
 				"name",
@@ -4501,7 +4539,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				87
+				88
 			],
 			[
 				"visible",
@@ -4522,8 +4560,8 @@ aStepsTable = [
 		]
 	],
 	[
-		125,
-		122,
+		126,
+		123,
 		[
 			[
 				"name",
@@ -4539,7 +4577,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				88
+				89
 			],
 			[
 				"visible",
@@ -4560,12 +4598,88 @@ aStepsTable = [
 		]
 	],
 	[
-		123,
-		121,
+		124,
+		122,
 		[
 			[
 				"name",
 				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				87
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		127,
+		120,
+		[
+			[
+				"name",
+				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">true</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"return true"
+			],
+			[
+				"interactionid",
+				90
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Return true"
+			]
+		]
+	],
+	[
+		121,
+		119,
+		[
+			[
+				"name",
+				"End of Function"
 			],
 			[
 				"active",
@@ -4593,88 +4707,12 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"End of IF Statement"
-			]
-		]
-	],
-	[
-		126,
-		119,
-		[
-			[
-				"name",
-				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">true</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"return true"
-			],
-			[
-				"interactionid",
-				89
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Return true"
-			]
-		]
-	],
-	[
-		120,
-		118,
-		[
-			[
-				"name",
-				"End of Function"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				85
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
 				"End of Function"
 			]
 		]
 	],
 	[
-		127,
+		128,
 		10,
 		[
 			[
@@ -4691,7 +4729,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				90
+				91
 			],
 			[
 				"visible",
@@ -4712,8 +4750,8 @@ aStepsTable = [
 		]
 	],
 	[
+		129,
 		128,
-		127,
 		[
 			[
 				"name",
@@ -4729,7 +4767,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				90
+				91
 			],
 			[
 				"visible",
@@ -4750,8 +4788,8 @@ aStepsTable = [
 		]
 	],
 	[
-		130,
-		128,
+		131,
+		129,
 		[
 			[
 				"name",
@@ -4767,7 +4805,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				91
+				92
 			],
 			[
 				"visible",
@@ -4788,8 +4826,8 @@ aStepsTable = [
 		]
 	],
 	[
-		131,
-		128,
+		132,
+		129,
 		[
 			[
 				"name",
@@ -4806,7 +4844,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				92
+				93
 			],
 			[
 				"visible",
@@ -4827,8 +4865,8 @@ aStepsTable = [
 		]
 	],
 	[
-		132,
-		128,
+		133,
+		129,
 		[
 			[
 				"name",
@@ -4844,7 +4882,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				93
+				94
 			],
 			[
 				"visible",
@@ -4865,8 +4903,8 @@ aStepsTable = [
 		]
 	],
 	[
-		129,
-		127,
+		130,
+		128,
 		[
 			[
 				"name",
@@ -4882,7 +4920,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				90
+				91
 			],
 			[
 				"visible",
@@ -4903,7 +4941,7 @@ aStepsTable = [
 		]
 	],
 	[
-		133,
+		134,
 		10,
 		[
 			[
@@ -4920,7 +4958,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				94
+				95
 			],
 			[
 				"visible",
@@ -4941,8 +4979,8 @@ aStepsTable = [
 		]
 	],
 	[
+		135,
 		134,
-		133,
 		[
 			[
 				"name",
@@ -4958,7 +4996,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				94
+				95
 			],
 			[
 				"visible",
@@ -4979,8 +5017,8 @@ aStepsTable = [
 		]
 	],
 	[
-		136,
-		134,
+		137,
+		135,
 		[
 			[
 				"name",
@@ -4996,7 +5034,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				95
+				96
 			],
 			[
 				"visible",
@@ -5017,8 +5055,8 @@ aStepsTable = [
 		]
 	],
 	[
-		137,
-		134,
+		138,
+		135,
 		[
 			[
 				"name",
@@ -5034,7 +5072,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				96
+				97
 			],
 			[
 				"visible",
@@ -5055,8 +5093,8 @@ aStepsTable = [
 		]
 	],
 	[
+		139,
 		138,
-		137,
 		[
 			[
 				"name",
@@ -5072,7 +5110,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				96
+				97
 			],
 			[
 				"visible",
@@ -5093,8 +5131,8 @@ aStepsTable = [
 		]
 	],
 	[
-		140,
-		138,
+		141,
+		139,
 		[
 			[
 				"name",
@@ -5110,7 +5148,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				97
+				98
 			],
 			[
 				"visible",
@@ -5131,8 +5169,8 @@ aStepsTable = [
 		]
 	],
 	[
-		139,
-		137,
+		140,
+		138,
 		[
 			[
 				"name",
@@ -5148,7 +5186,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				96
+				97
 			],
 			[
 				"visible",
@@ -5169,8 +5207,8 @@ aStepsTable = [
 		]
 	],
 	[
-		141,
-		134,
+		142,
+		135,
 		[
 			[
 				"name",
@@ -5186,7 +5224,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				98
+				99
 			],
 			[
 				"visible",
@@ -5207,8 +5245,8 @@ aStepsTable = [
 		]
 	],
 	[
+		143,
 		142,
-		141,
 		[
 			[
 				"name",
@@ -5224,7 +5262,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				98
+				99
 			],
 			[
 				"visible",
@@ -5245,8 +5283,8 @@ aStepsTable = [
 		]
 	],
 	[
-		144,
-		142,
+		145,
+		143,
 		[
 			[
 				"name",
@@ -5262,7 +5300,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				99
+				100
 			],
 			[
 				"visible",
@@ -5283,8 +5321,8 @@ aStepsTable = [
 		]
 	],
 	[
+		146,
 		145,
-		144,
 		[
 			[
 				"name",
@@ -5300,7 +5338,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				99
+				100
 			],
 			[
 				"visible",
@@ -5321,8 +5359,8 @@ aStepsTable = [
 		]
 	],
 	[
-		147,
-		145,
+		148,
+		146,
 		[
 			[
 				"name",
@@ -5338,7 +5376,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				100
+				101
 			],
 			[
 				"visible",
@@ -5359,8 +5397,8 @@ aStepsTable = [
 		]
 	],
 	[
-		148,
-		145,
+		149,
+		146,
 		[
 			[
 				"name",
@@ -5376,7 +5414,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				101
+				102
 			],
 			[
 				"visible",
@@ -5397,8 +5435,8 @@ aStepsTable = [
 		]
 	],
 	[
+		150,
 		149,
-		148,
 		[
 			[
 				"name",
@@ -5414,7 +5452,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				101
+				102
 			],
 			[
 				"visible",
@@ -5435,8 +5473,8 @@ aStepsTable = [
 		]
 	],
 	[
+		151,
 		150,
-		149,
 		[
 			[
 				"name",
@@ -5452,7 +5490,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				101
+				102
 			],
 			[
 				"visible",
@@ -5473,8 +5511,8 @@ aStepsTable = [
 		]
 	],
 	[
-		152,
-		150,
+		153,
+		151,
 		[
 			[
 				"name",
@@ -5487,44 +5525,6 @@ aStepsTable = [
 			[
 				"code",
 				"setApplicationPath(this.cWebApplicationFolder)"
-			],
-			[
-				"interactionid",
-				102
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"setApplicationPath(this.cWebApplicationFolder)"
-			]
-		]
-	],
-	[
-		153,
-		150,
-		[
-			[
-				"name",
-				"PrepareConfigurationFile(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"PrepareConfigurationFile()"
 			],
 			[
 				"interactionid",
@@ -5544,17 +5544,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"PrepareConfigurationFile()"
+				"setApplicationPath(this.cWebApplicationFolder)"
 			]
 		]
 	],
 	[
 		154,
-		150,
+		151,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cServerExe</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">getserverExeFile()</font></span>"
+				"PrepareConfigurationFile(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
 			],
 			[
 				"active",
@@ -5562,7 +5562,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"cServerExe = getserverExeFile()"
+				"PrepareConfigurationFile()"
 			],
 			[
 				"interactionid",
@@ -5582,55 +5582,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"cServerExe = getserverExeFile()"
-			]
-		]
-	],
-	[
-		151,
-		149,
-		[
-			[
-				"name",
-				"}"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"}"
-			],
-			[
-				"interactionid",
-				101
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				4
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"}"
+				"PrepareConfigurationFile()"
 			]
 		]
 	],
 	[
 		155,
-		145,
+		151,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oGD.parent().oView.oProcess</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">RunProcess(cCurrentDir+&quot;batch\killwebserver.bat&quot;,&quot;&quot;,oGD.parent().Method(:GetDataAction))</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cServerExe</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">getserverExeFile()</font></span>"
 			],
 			[
 				"active",
@@ -5638,7 +5600,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"oGD.parent().oView.oProcess = RunProcess(cCurrentDir+"+char(34)+"batch\killwebserver.bat"+char(34)+","+char(34)+""+char(34)+",oGD.parent().Method(:GetDataAction))"
+				"cServerExe = getserverExeFile()"
 			],
 			[
 				"interactionid",
@@ -5658,17 +5620,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"oGD.parent().oView.oProcess = RunProcess(cCurrentDir+"+char(34)+"batch\killwebserver.bat"+char(34)+","+char(34)+""+char(34)+",oGD.parent().Method(:GetDataAction))"
+				"cServerExe = getserverExeFile()"
 			]
 		]
 	],
 	[
-		156,
-		145,
+		152,
+		150,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oGD.parent().oView.oProcess.waitForFinished(3000)</font></span>"
+				"}"
 			],
 			[
 				"active",
@@ -5676,7 +5638,45 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"oGD.parent().oView.oProcess.waitForFinished(3000)"
+				"}"
+			],
+			[
+				"interactionid",
+				102
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				4
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"}"
+			]
+		]
+	],
+	[
+		156,
+		146,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oGD.parent().oView.oProcess</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">RunProcess(cCurrentDir+&quot;batch\killwebserver.bat&quot;,&quot;&quot;,oGD.parent().Method(:GetDataAction))</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"oGD.parent().oView.oProcess = RunProcess(cCurrentDir+"+char(34)+"batch\killwebserver.bat"+char(34)+","+char(34)+""+char(34)+",oGD.parent().Method(:GetDataAction))"
 			],
 			[
 				"interactionid",
@@ -5696,17 +5696,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"oGD.parent().oView.oProcess.waitForFinished(3000)"
+				"oGD.parent().oView.oProcess = RunProcess(cCurrentDir+"+char(34)+"batch\killwebserver.bat"+char(34)+","+char(34)+""+char(34)+",oGD.parent().Method(:GetDataAction))"
 			]
 		]
 	],
 	[
 		157,
-		145,
+		146,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oWebServerProcess</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">RunProcess(cServerEXE,&quot;&quot;,oGD.parent().Method(:GetDataAction))</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oGD.parent().oView.oProcess.waitForFinished(3000)</font></span>"
 			],
 			[
 				"active",
@@ -5714,7 +5714,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"oWebServerProcess = RunProcess(cServerEXE,"+char(34)+""+char(34)+",oGD.parent().Method(:GetDataAction))"
+				"oGD.parent().oView.oProcess.waitForFinished(3000)"
 			],
 			[
 				"interactionid",
@@ -5734,17 +5734,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"oWebServerProcess = RunProcess(cServerEXE,"+char(34)+""+char(34)+",oGD.parent().Method(:GetDataAction))"
+				"oGD.parent().oView.oProcess.waitForFinished(3000)"
 			]
 		]
 	],
 	[
 		158,
-		145,
+		146,
 		[
 			[
 				"name",
-				"sleep(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">3</font></span>)"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oWebServerProcess</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">RunProcess(cServerEXE,&quot;&quot;,oGD.parent().Method(:GetDataAction))</font></span>"
 			],
 			[
 				"active",
@@ -5752,7 +5752,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"sleep(3)"
+				"oWebServerProcess = RunProcess(cServerEXE,"+char(34)+""+char(34)+",oGD.parent().Method(:GetDataAction))"
 			],
 			[
 				"interactionid",
@@ -5772,13 +5772,51 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"sleep(3)"
+				"oWebServerProcess = RunProcess(cServerEXE,"+char(34)+""+char(34)+",oGD.parent().Method(:GetDataAction))"
 			]
 		]
 	],
 	[
 		159,
-		145,
+		146,
+		[
+			[
+				"name",
+				"sleep(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">3</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"sleep(3)"
+			],
+			[
+				"interactionid",
+				109
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"sleep(3)"
+			]
+		]
+	],
+	[
+		160,
+		146,
 		[
 			[
 				"name",
@@ -5794,7 +5832,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				109
+				110
 			],
 			[
 				"visible",
@@ -5815,8 +5853,616 @@ aStepsTable = [
 		]
 	],
 	[
-		146,
+		147,
+		145,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				100
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		161,
+		143,
+		[
+			[
+				"name",
+				"New Object <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">QDesktopServices</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"new QDesktopServices"
+			],
+			[
+				"interactionid",
+				111
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"New Object QDesktopServices"
+			]
+		]
+	],
+	[
+		162,
+		161,
+		[
+			[
+				"name",
+				"{"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"{"
+			],
+			[
+				"interactionid",
+				111
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"{"
+			]
+		]
+	],
+	[
+		163,
+		162,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				111
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		165,
+		163,
+		[
+			[
+				"name",
+				"OpenURL(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&nbsp;new&nbsp;qURL(&quot;http://localhost:8080/&quot;+JustFileName(cFile))</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"OpenURL( new qURL("+char(34)+"http://localhost:8080/"+char(34)+"+JustFileName(cFile)))"
+			],
+			[
+				"interactionid",
+				112
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"OpenURL( new qURL("+char(34)+"http://localhost:8080/"+char(34)+"+JustFileName(cFile)))"
+			]
+		]
+	],
+	[
+		164,
+		162,
+		[
+			[
+				"name",
+				"}"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"}"
+			],
+			[
+				"interactionid",
+				111
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				4
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"}"
+			]
+		]
+	],
+	[
+		166,
+		143,
+		[
+			[
+				"name",
+				"Else"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"else"
+			],
+			[
+				"interactionid",
+				113
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Else"
+			]
+		]
+	],
+	[
+		167,
+		166,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				113
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		168,
+		167,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cWebURL</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFile</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cWebURL = cFile"
+			],
+			[
+				"interactionid",
+				114
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cWebURL = cFile"
+			]
+		]
+	],
+	[
+		169,
+		167,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nPos</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">substr(cWebURL,&quot;htdocs&quot;)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"nPos = substr(cWebURL,"+char(34)+"htdocs"+char(34)+")"
+			],
+			[
+				"interactionid",
+				115
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"nPos = substr(cWebURL,"+char(34)+"htdocs"+char(34)+")"
+			]
+		]
+	],
+	[
+		170,
+		167,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cWebURL</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">substr(cWebURL,nPOS+7)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cWebURL = substr(cWebURL,nPOS+7)"
+			],
+			[
+				"interactionid",
+				116
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cWebURL = substr(cWebURL,nPOS+7)"
+			]
+		]
+	],
+	[
+		171,
+		167,
+		[
+			[
+				"name",
+				"New Object <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">QDesktopServices</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"new QDesktopServices"
+			],
+			[
+				"interactionid",
+				117
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"New Object QDesktopServices"
+			]
+		]
+	],
+	[
+		172,
+		171,
+		[
+			[
+				"name",
+				"{"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"{"
+			],
+			[
+				"interactionid",
+				117
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"{"
+			]
+		]
+	],
+	[
+		173,
+		172,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				117
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		175,
+		173,
+		[
+			[
+				"name",
+				"OpenURL(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&nbsp;new&nbsp;qURL(&quot;http://localhost/&quot;+cWebURL)</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"OpenURL( new qURL("+char(34)+"http://localhost/"+char(34)+"+cWebURL))"
+			],
+			[
+				"interactionid",
+				118
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"OpenURL( new qURL("+char(34)+"http://localhost/"+char(34)+"+cWebURL))"
+			]
+		]
+	],
+	[
+		174,
+		172,
+		[
+			[
+				"name",
+				"}"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"}"
+			],
+			[
+				"interactionid",
+				117
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				4
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"}"
+			]
+		]
+	],
+	[
 		144,
+		142,
 		[
 			[
 				"name",
@@ -5853,616 +6499,8 @@ aStepsTable = [
 		]
 	],
 	[
-		160,
-		142,
-		[
-			[
-				"name",
-				"New Object <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">QDesktopServices</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"new QDesktopServices"
-			],
-			[
-				"interactionid",
-				110
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"New Object QDesktopServices"
-			]
-		]
-	],
-	[
-		161,
-		160,
-		[
-			[
-				"name",
-				"{"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"{"
-			],
-			[
-				"interactionid",
-				110
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"{"
-			]
-		]
-	],
-	[
-		162,
-		161,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				110
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		164,
-		162,
-		[
-			[
-				"name",
-				"OpenURL(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&nbsp;new&nbsp;qURL(&quot;http://localhost:8080/&quot;+JustFileName(cFile))</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"OpenURL( new qURL("+char(34)+"http://localhost:8080/"+char(34)+"+JustFileName(cFile)))"
-			],
-			[
-				"interactionid",
-				111
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"OpenURL( new qURL("+char(34)+"http://localhost:8080/"+char(34)+"+JustFileName(cFile)))"
-			]
-		]
-	],
-	[
-		163,
-		161,
-		[
-			[
-				"name",
-				"}"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"}"
-			],
-			[
-				"interactionid",
-				110
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				4
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"}"
-			]
-		]
-	],
-	[
-		165,
-		142,
-		[
-			[
-				"name",
-				"Else"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"else"
-			],
-			[
-				"interactionid",
-				112
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Else"
-			]
-		]
-	],
-	[
-		166,
-		165,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				112
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		167,
-		166,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cWebURL</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFile</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"cWebURL = cFile"
-			],
-			[
-				"interactionid",
-				113
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"cWebURL = cFile"
-			]
-		]
-	],
-	[
-		168,
-		166,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nPos</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">substr(cWebURL,&quot;htdocs&quot;)</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"nPos = substr(cWebURL,"+char(34)+"htdocs"+char(34)+")"
-			],
-			[
-				"interactionid",
-				114
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"nPos = substr(cWebURL,"+char(34)+"htdocs"+char(34)+")"
-			]
-		]
-	],
-	[
-		169,
-		166,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cWebURL</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">substr(cWebURL,nPOS+7)</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"cWebURL = substr(cWebURL,nPOS+7)"
-			],
-			[
-				"interactionid",
-				115
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"cWebURL = substr(cWebURL,nPOS+7)"
-			]
-		]
-	],
-	[
-		170,
-		166,
-		[
-			[
-				"name",
-				"New Object <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">QDesktopServices</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"new QDesktopServices"
-			],
-			[
-				"interactionid",
-				116
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"New Object QDesktopServices"
-			]
-		]
-	],
-	[
-		171,
-		170,
-		[
-			[
-				"name",
-				"{"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"{"
-			],
-			[
-				"interactionid",
-				116
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"{"
-			]
-		]
-	],
-	[
-		172,
-		171,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				116
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		174,
-		172,
-		[
-			[
-				"name",
-				"OpenURL(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&nbsp;new&nbsp;qURL(&quot;http://localhost/&quot;+cWebURL)</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"OpenURL( new qURL("+char(34)+"http://localhost/"+char(34)+"+cWebURL))"
-			],
-			[
-				"interactionid",
-				117
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"OpenURL( new qURL("+char(34)+"http://localhost/"+char(34)+"+cWebURL))"
-			]
-		]
-	],
-	[
-		173,
-		171,
-		[
-			[
-				"name",
-				"}"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"}"
-			],
-			[
-				"interactionid",
-				116
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				4
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"}"
-			]
-		]
-	],
-	[
-		143,
-		141,
-		[
-			[
-				"name",
-				"End of IF Statement"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				98
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of IF Statement"
-			]
-		]
-	],
-	[
-		175,
-		134,
+		176,
+		135,
 		[
 			[
 				"name",
@@ -6475,45 +6513,6 @@ aStepsTable = [
 			[
 				"code",
 				"#/*
-"
-			],
-			[
-				"interactionid",
-				118
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"/*"
-			]
-		]
-	],
-	[
-		176,
-		134,
-		[
-			[
-				"name",
-				"		Purpose : Run Process"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"#		Purpose : Run Process
 "
 			],
 			[
@@ -6534,17 +6533,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"		Purpose : Run Process"
+				"/*"
 			]
 		]
 	],
 	[
 		177,
-		134,
+		135,
 		[
 			[
 				"name",
-				"		Parameters : Program, Arguments and Method for Get Data Event"
+				"		Purpose : Run Process"
 			],
 			[
 				"active",
@@ -6552,7 +6551,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"#		Parameters : Program, Arguments and Method for Get Data Event
+				"#		Purpose : Run Process
 "
 			],
 			[
@@ -6573,17 +6572,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"		Parameters : Program, Arguments and Method for Get Data Event"
+				"		Purpose : Run Process"
 			]
 		]
 	],
 	[
 		178,
-		134,
+		135,
 		[
 			[
 				"name",
-				"		Output :  None"
+				"		Parameters : Program, Arguments and Method for Get Data Event"
 			],
 			[
 				"active",
@@ -6591,7 +6590,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"#		Output :  None
+				"#		Parameters : Program, Arguments and Method for Get Data Event
 "
 			],
 			[
@@ -6612,17 +6611,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"		Output :  None"
+				"		Parameters : Program, Arguments and Method for Get Data Event"
 			]
 		]
 	],
 	[
 		179,
-		134,
+		135,
 		[
 			[
 				"name",
-				"	*/"
+				"		Output :  None"
 			],
 			[
 				"active",
@@ -6630,7 +6629,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"#	*/
+				"#		Output :  None
 "
 			],
 			[
@@ -6651,13 +6650,52 @@ aStepsTable = [
 			],
 			[
 				"plainname",
+				"		Output :  None"
+			]
+		]
+	],
+	[
+		180,
+		135,
+		[
+			[
+				"name",
+				"	*/"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	*/
+"
+			],
+			[
+				"interactionid",
+				123
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
 				"	*/"
 			]
 		]
 	],
 	[
-		135,
-		133,
+		136,
+		134,
 		[
 			[
 				"name",
@@ -6673,7 +6711,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				94
+				95
 			],
 			[
 				"visible",
@@ -6694,7 +6732,7 @@ aStepsTable = [
 		]
 	],
 	[
-		180,
+		181,
 		10,
 		[
 			[
@@ -6711,7 +6749,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				123
+				124
 			],
 			[
 				"visible",
@@ -6732,8 +6770,8 @@ aStepsTable = [
 		]
 	],
 	[
+		182,
 		181,
-		180,
 		[
 			[
 				"name",
@@ -6749,7 +6787,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				123
+				124
 			],
 			[
 				"visible",
@@ -6770,8 +6808,8 @@ aStepsTable = [
 		]
 	],
 	[
-		183,
-		181,
+		184,
+		182,
 		[
 			[
 				"name",
@@ -6787,7 +6825,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				124
+				125
 			],
 			[
 				"visible",
@@ -6808,8 +6846,8 @@ aStepsTable = [
 		]
 	],
 	[
-		184,
-		181,
+		185,
+		182,
 		[
 			[
 				"name",
@@ -6825,7 +6863,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				125
+				126
 			],
 			[
 				"visible",
@@ -6846,8 +6884,8 @@ aStepsTable = [
 		]
 	],
 	[
+		186,
 		185,
-		184,
 		[
 			[
 				"name",
@@ -6863,7 +6901,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				125
+				126
 			],
 			[
 				"visible",
@@ -6884,8 +6922,8 @@ aStepsTable = [
 		]
 	],
 	[
+		187,
 		186,
-		185,
 		[
 			[
 				"name",
@@ -6901,7 +6939,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				125
+				126
 			],
 			[
 				"visible",
@@ -6922,8 +6960,8 @@ aStepsTable = [
 		]
 	],
 	[
-		188,
-		186,
+		189,
+		187,
 		[
 			[
 				"name",
@@ -6939,7 +6977,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				126
+				127
 			],
 			[
 				"visible",
@@ -6960,8 +6998,8 @@ aStepsTable = [
 		]
 	],
 	[
+		190,
 		189,
-		188,
 		[
 			[
 				"name",
@@ -6977,7 +7015,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				126
+				127
 			],
 			[
 				"visible",
@@ -6998,8 +7036,8 @@ aStepsTable = [
 		]
 	],
 	[
-		191,
-		189,
+		192,
+		190,
 		[
 			[
 				"name",
@@ -7015,7 +7053,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				127
+				128
 			],
 			[
 				"visible",
@@ -7036,8 +7074,8 @@ aStepsTable = [
 		]
 	],
 	[
-		190,
-		188,
+		191,
+		189,
 		[
 			[
 				"name",
@@ -7053,7 +7091,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				126
+				127
 			],
 			[
 				"visible",
@@ -7074,8 +7112,8 @@ aStepsTable = [
 		]
 	],
 	[
-		187,
-		185,
+		188,
+		186,
 		[
 			[
 				"name",
@@ -7091,7 +7129,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				125
+				126
 			],
 			[
 				"visible",
@@ -7112,8 +7150,8 @@ aStepsTable = [
 		]
 	],
 	[
-		192,
-		181,
+		193,
+		182,
 		[
 			[
 				"name",
@@ -7129,7 +7167,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				128
+				129
 			],
 			[
 				"visible",
@@ -7150,8 +7188,8 @@ aStepsTable = [
 		]
 	],
 	[
+		194,
 		193,
-		192,
 		[
 			[
 				"name",
@@ -7167,7 +7205,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				128
+				129
 			],
 			[
 				"visible",
@@ -7188,8 +7226,8 @@ aStepsTable = [
 		]
 	],
 	[
+		195,
 		194,
-		193,
 		[
 			[
 				"name",
@@ -7205,7 +7243,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				128
+				129
 			],
 			[
 				"visible",
@@ -7226,8 +7264,8 @@ aStepsTable = [
 		]
 	],
 	[
-		196,
-		194,
+		197,
+		195,
 		[
 			[
 				"name",
@@ -7240,44 +7278,6 @@ aStepsTable = [
 			[
 				"code",
 				"setprogram(cProgram)"
-			],
-			[
-				"interactionid",
-				129
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"setprogram(cProgram)"
-			]
-		]
-	],
-	[
-		197,
-		194,
-		[
-			[
-				"name",
-				"setarguments(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">ostringlist</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"setarguments(ostringlist)"
 			],
 			[
 				"interactionid",
@@ -7297,17 +7297,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"setarguments(ostringlist)"
+				"setprogram(cProgram)"
 			]
 		]
 	],
 	[
 		198,
-		194,
+		195,
 		[
 			[
 				"name",
-				"setreadyreadstandardoutputevent(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cGetDataFunc</font></span>)"
+				"setarguments(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">ostringlist</font></span>)"
 			],
 			[
 				"active",
@@ -7315,7 +7315,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"setreadyreadstandardoutputevent(cGetDataFunc)"
+				"setarguments(ostringlist)"
 			],
 			[
 				"interactionid",
@@ -7335,13 +7335,51 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"setreadyreadstandardoutputevent(cGetDataFunc)"
+				"setarguments(ostringlist)"
 			]
 		]
 	],
 	[
 		199,
-		194,
+		195,
+		[
+			[
+				"name",
+				"setreadyreadstandardoutputevent(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cGetDataFunc</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"setreadyreadstandardoutputevent(cGetDataFunc)"
+			],
+			[
+				"interactionid",
+				132
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"setreadyreadstandardoutputevent(cGetDataFunc)"
+			]
+		]
+	],
+	[
+		200,
+		195,
 		[
 			[
 				"name",
@@ -7357,7 +7395,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				132
+				133
 			],
 			[
 				"visible",
@@ -7378,8 +7416,8 @@ aStepsTable = [
 		]
 	],
 	[
-		195,
-		193,
+		196,
+		194,
 		[
 			[
 				"name",
@@ -7395,7 +7433,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				128
+				129
 			],
 			[
 				"visible",
@@ -7416,8 +7454,8 @@ aStepsTable = [
 		]
 	],
 	[
-		200,
-		181,
+		201,
+		182,
 		[
 			[
 				"name",
@@ -7433,7 +7471,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				133
+				134
 			],
 			[
 				"visible",
@@ -7454,8 +7492,8 @@ aStepsTable = [
 		]
 	],
 	[
-		201,
-		181,
+		202,
+		182,
 		[
 			[
 				"name",
@@ -7468,45 +7506,6 @@ aStepsTable = [
 			[
 				"code",
 				"#/*
-"
-			],
-			[
-				"interactionid",
-				134
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"/*"
-			]
-		]
-	],
-	[
-		202,
-		181,
-		[
-			[
-				"name",
-				"		Purpose : Run on Mobile"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"#		Purpose : Run on Mobile
 "
 			],
 			[
@@ -7527,17 +7526,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"		Purpose : Run on Mobile"
+				"/*"
 			]
 		]
 	],
 	[
 		203,
-		181,
+		182,
 		[
 			[
 				"name",
-				"		Parameters : Goal Designer Object"
+				"		Purpose : Run on Mobile"
 			],
 			[
 				"active",
@@ -7545,7 +7544,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"#		Parameters : Goal Designer Object
+				"#		Purpose : Run on Mobile
 "
 			],
 			[
@@ -7566,17 +7565,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"		Parameters : Goal Designer Object"
+				"		Purpose : Run on Mobile"
 			]
 		]
 	],
 	[
 		204,
-		181,
+		182,
 		[
 			[
 				"name",
-				"		Output : None"
+				"		Parameters : Goal Designer Object"
 			],
 			[
 				"active",
@@ -7584,7 +7583,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"#		Output : None
+				"#		Parameters : Goal Designer Object
 "
 			],
 			[
@@ -7605,17 +7604,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"		Output : None"
+				"		Parameters : Goal Designer Object"
 			]
 		]
 	],
 	[
 		205,
-		181,
+		182,
 		[
 			[
 				"name",
-				"	*/"
+				"		Output : None"
 			],
 			[
 				"active",
@@ -7623,7 +7622,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"#	*/
+				"#		Output : None
 "
 			],
 			[
@@ -7644,13 +7643,52 @@ aStepsTable = [
 			],
 			[
 				"plainname",
+				"		Output : None"
+			]
+		]
+	],
+	[
+		206,
+		182,
+		[
+			[
+				"name",
+				"	*/"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	*/
+"
+			],
+			[
+				"interactionid",
+				139
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
 				"	*/"
 			]
 		]
 	],
 	[
-		182,
-		180,
+		183,
+		181,
 		[
 			[
 				"name",
@@ -7666,7 +7704,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				123
+				124
 			],
 			[
 				"visible",
@@ -7687,7 +7725,7 @@ aStepsTable = [
 		]
 	],
 	[
-		206,
+		207,
 		10,
 		[
 			[
@@ -7704,7 +7742,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				139
+				140
 			],
 			[
 				"visible",
@@ -7725,8 +7763,8 @@ aStepsTable = [
 		]
 	],
 	[
+		208,
 		207,
-		206,
 		[
 			[
 				"name",
@@ -7742,7 +7780,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				139
+				140
 			],
 			[
 				"visible",
@@ -7763,8 +7801,8 @@ aStepsTable = [
 		]
 	],
 	[
-		209,
-		207,
+		210,
+		208,
 		[
 			[
 				"name",
@@ -7780,7 +7818,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				140
+				141
 			],
 			[
 				"visible",
@@ -7801,8 +7839,8 @@ aStepsTable = [
 		]
 	],
 	[
+		211,
 		210,
-		209,
 		[
 			[
 				"name",
@@ -7818,7 +7856,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				140
+				141
 			],
 			[
 				"visible",
@@ -7839,12 +7877,12 @@ aStepsTable = [
 		]
 	],
 	[
-		212,
-		210,
+		213,
+		211,
 		[
 			[
 				"name",
-				"noname.pwct"
+				"noname.ring"
 			],
 			[
 				"active",
@@ -7852,12 +7890,12 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"#noname.pwct
+				"#noname.ring
 "
 			],
 			[
 				"interactionid",
-				141
+				142
 			],
 			[
 				"visible",
@@ -7873,13 +7911,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"noname.pwct"
+				"noname.ring"
 			]
 		]
 	],
 	[
-		213,
-		210,
+		214,
+		211,
 		[
 			[
 				"name",
@@ -7895,7 +7933,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				142
+				143
 			],
 			[
 				"visible",
@@ -7916,8 +7954,8 @@ aStepsTable = [
 		]
 	],
 	[
-		211,
-		209,
+		212,
+		210,
 		[
 			[
 				"name",
@@ -7933,7 +7971,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				140
+				141
 			],
 			[
 				"visible",
@@ -7954,8 +7992,8 @@ aStepsTable = [
 		]
 	],
 	[
-		214,
-		207,
+		215,
+		208,
 		[
 			[
 				"name",
@@ -7971,7 +8009,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				143
+				144
 			],
 			[
 				"visible",
@@ -7992,8 +8030,8 @@ aStepsTable = [
 		]
 	],
 	[
-		215,
-		207,
+		216,
+		208,
 		[
 			[
 				"name",
@@ -8010,7 +8048,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				144
+				145
 			],
 			[
 				"visible",
@@ -8031,50 +8069,12 @@ aStepsTable = [
 		]
 	],
 	[
-		216,
-		207,
-		[
-			[
-				"name",
-				"chdir(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">JustFilePath(cFileName)</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"chdir(JustFilePath(cFileName))"
-			],
-			[
-				"interactionid",
-				145
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"chdir(JustFilePath(cFileName))"
-			]
-		]
-	],
-	[
 		217,
-		207,
+		208,
 		[
 			[
 				"name",
-				"write(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;guilib.ring&quot;,&quot;&quot;</font></span>)"
+				"changeFolder(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">JustFilePath(cFileName)</font></span>)"
 			],
 			[
 				"active",
@@ -8082,7 +8082,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"write("+char(34)+"guilib.ring"+char(34)+","+char(34)+""+char(34)+")"
+				"changeFolder(JustFilePath(cFileName))"
 			],
 			[
 				"interactionid",
@@ -8102,17 +8102,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"write("+char(34)+"guilib.ring"+char(34)+","+char(34)+""+char(34)+")"
+				"changeFolder(JustFilePath(cFileName))"
 			]
 		]
 	],
 	[
 		218,
-		207,
+		208,
 		[
 			[
 				"name",
-				"write(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;stdlib.ring&quot;,&quot;&quot;</font></span>)"
+				"write(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;guilib.ring&quot;,&quot;&quot;</font></span>)"
 			],
 			[
 				"active",
@@ -8120,7 +8120,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"write("+char(34)+"stdlib.ring"+char(34)+","+char(34)+""+char(34)+")"
+				"write("+char(34)+"guilib.ring"+char(34)+","+char(34)+""+char(34)+")"
 			],
 			[
 				"interactionid",
@@ -8140,17 +8140,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"write("+char(34)+"stdlib.ring"+char(34)+","+char(34)+""+char(34)+")"
+				"write("+char(34)+"guilib.ring"+char(34)+","+char(34)+""+char(34)+")"
 			]
 		]
 	],
 	[
 		219,
-		207,
+		208,
 		[
 			[
 				"name",
-				"write(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;stdlibcore.ring&quot;,&quot;&quot;</font></span>)"
+				"write(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;stdlib.ring&quot;,&quot;&quot;</font></span>)"
 			],
 			[
 				"active",
@@ -8158,7 +8158,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"write("+char(34)+"stdlibcore.ring"+char(34)+","+char(34)+""+char(34)+")"
+				"write("+char(34)+"stdlib.ring"+char(34)+","+char(34)+""+char(34)+")"
 			],
 			[
 				"interactionid",
@@ -8178,17 +8178,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"write("+char(34)+"stdlibcore.ring"+char(34)+","+char(34)+""+char(34)+")"
+				"write("+char(34)+"stdlib.ring"+char(34)+","+char(34)+""+char(34)+")"
 			]
 		]
 	],
 	[
 		220,
-		207,
+		208,
 		[
 			[
 				"name",
-				"chdir(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">RUNTIME_FOLDER</font></span>)"
+				"write(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;stdlibcore.ring&quot;,&quot;&quot;</font></span>)"
 			],
 			[
 				"active",
@@ -8196,7 +8196,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"chdir(RUNTIME_FOLDER)"
+				"write("+char(34)+"stdlibcore.ring"+char(34)+","+char(34)+""+char(34)+")"
 			],
 			[
 				"interactionid",
@@ -8216,13 +8216,51 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"chdir(RUNTIME_FOLDER)"
+				"write("+char(34)+"stdlibcore.ring"+char(34)+","+char(34)+""+char(34)+")"
 			]
 		]
 	],
 	[
 		221,
-		207,
+		208,
+		[
+			[
+				"name",
+				"changeFolder(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">RUNTIME_FOLDER</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"changeFolder(RUNTIME_FOLDER)"
+			],
+			[
+				"interactionid",
+				150
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"changeFolder(RUNTIME_FOLDER)"
+			]
+		]
+	],
+	[
+		222,
+		208,
 		[
 			[
 				"name",
@@ -8239,7 +8277,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				150
+				151
 			],
 			[
 				"visible",
@@ -8260,8 +8298,8 @@ aStepsTable = [
 		]
 	],
 	[
-		222,
-		207,
+		223,
+		208,
 		[
 			[
 				"name",
@@ -8274,44 +8312,6 @@ aStepsTable = [
 			[
 				"code",
 				"remove("+char(34)+"runprogram.ring"+char(34)+")"
-			],
-			[
-				"interactionid",
-				151
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"remove("+char(34)+"runprogram.ring"+char(34)+")"
-			]
-		]
-	],
-	[
-		223,
-		207,
-		[
-			[
-				"name",
-				"remove(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;programoutput.txt&quot;</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"remove("+char(34)+"programoutput.txt"+char(34)+")"
 			],
 			[
 				"interactionid",
@@ -8331,17 +8331,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"remove("+char(34)+"programoutput.txt"+char(34)+")"
+				"remove("+char(34)+"runprogram.ring"+char(34)+")"
 			]
 		]
 	],
 	[
 		224,
-		207,
+		208,
 		[
 			[
 				"name",
-				"remove(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;programinput.txt&quot;</font></span>)"
+				"remove(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;programoutput.txt&quot;</font></span>)"
 			],
 			[
 				"active",
@@ -8349,7 +8349,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"remove("+char(34)+"programinput.txt"+char(34)+")"
+				"remove("+char(34)+"programoutput.txt"+char(34)+")"
 			],
 			[
 				"interactionid",
@@ -8369,17 +8369,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"remove("+char(34)+"programinput.txt"+char(34)+")"
+				"remove("+char(34)+"programoutput.txt"+char(34)+")"
 			]
 		]
 	],
 	[
 		225,
-		207,
+		208,
 		[
 			[
 				"name",
-				"freopen(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;programoutput.txt&quot;,&quot;w+&quot;,stdout</font></span>)"
+				"remove(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;programinput.txt&quot;</font></span>)"
 			],
 			[
 				"active",
@@ -8387,7 +8387,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"freopen("+char(34)+"programoutput.txt"+char(34)+","+char(34)+"w+"+char(34)+",stdout)"
+				"remove("+char(34)+"programinput.txt"+char(34)+")"
 			],
 			[
 				"interactionid",
@@ -8407,13 +8407,51 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"freopen("+char(34)+"programoutput.txt"+char(34)+","+char(34)+"w+"+char(34)+",stdout)"
+				"remove("+char(34)+"programinput.txt"+char(34)+")"
 			]
 		]
 	],
 	[
 		226,
-		207,
+		208,
+		[
+			[
+				"name",
+				"freopen(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;programoutput.txt&quot;,&quot;w+&quot;,stdout</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"freopen("+char(34)+"programoutput.txt"+char(34)+","+char(34)+"w+"+char(34)+",stdout)"
+			],
+			[
+				"interactionid",
+				155
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"freopen("+char(34)+"programoutput.txt"+char(34)+","+char(34)+"w+"+char(34)+",stdout)"
+			]
+		]
+	],
+	[
+		227,
+		208,
 		[
 			[
 				"name",
@@ -8429,7 +8467,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				155
+				156
 			],
 			[
 				"visible",
@@ -8450,8 +8488,8 @@ aStepsTable = [
 		]
 	],
 	[
-		227,
-		207,
+		228,
+		208,
 		[
 			[
 				"name",
@@ -8464,45 +8502,6 @@ aStepsTable = [
 			[
 				"code",
 				"#We use runprogram.ring instead of using cFileName directly
-"
-			],
-			[
-				"interactionid",
-				156
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"We use runprogram.ring instead of using cFileName directly"
-			]
-		]
-	],
-	[
-		228,
-		207,
-		[
-			[
-				"name",
-				"Just to get more control in the future, Where we can add more code"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"#Just to get more control in the future, Where we can add more code
 "
 			],
 			[
@@ -8523,17 +8522,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Just to get more control in the future, Where we can add more code"
+				"We use runprogram.ring instead of using cFileName directly"
 			]
 		]
 	],
 	[
 		229,
-		207,
+		208,
 		[
 			[
 				"name",
-				"Before running the program"
+				"Just to get more control in the future, Where we can add more code"
 			],
 			[
 				"active",
@@ -8541,7 +8540,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"#Before running the program
+				"#Just to get more control in the future, Where we can add more code
 "
 			],
 			[
@@ -8562,13 +8561,52 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Before running the program"
+				"Just to get more control in the future, Where we can add more code"
 			]
 		]
 	],
 	[
 		230,
-		207,
+		208,
+		[
+			[
+				"name",
+				"Before running the program"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Before running the program
+"
+			],
+			[
+				"interactionid",
+				159
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Before running the program"
+			]
+		]
+	],
+	[
+		231,
+		208,
 		[
 			[
 				"name",
@@ -8584,7 +8622,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				159
+				160
 			],
 			[
 				"visible",
@@ -8605,8 +8643,8 @@ aStepsTable = [
 		]
 	],
 	[
-		231,
-		207,
+		232,
+		208,
 		[
 			[
 				"name",
@@ -8622,7 +8660,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				160
+				161
 			],
 			[
 				"visible",
@@ -8643,8 +8681,8 @@ aStepsTable = [
 		]
 	],
 	[
+		233,
 		232,
-		231,
 		[
 			[
 				"name",
@@ -8660,7 +8698,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				160
+				161
 			],
 			[
 				"visible",
@@ -8681,8 +8719,8 @@ aStepsTable = [
 		]
 	],
 	[
-		234,
-		232,
+		235,
+		233,
 		[
 			[
 				"name",
@@ -8698,7 +8736,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				161
+				162
 			],
 			[
 				"visible",
@@ -8719,8 +8757,8 @@ aStepsTable = [
 		]
 	],
 	[
-		233,
-		231,
+		234,
+		232,
 		[
 			[
 				"name",
@@ -8736,7 +8774,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				160
+				161
 			],
 			[
 				"visible",
@@ -8757,8 +8795,8 @@ aStepsTable = [
 		]
 	],
 	[
-		235,
-		207,
+		236,
+		208,
 		[
 			[
 				"name",
@@ -8771,44 +8809,6 @@ aStepsTable = [
 			[
 				"code",
 				"cCode += "+char(34)+"$cMainSourceFile = '"+char(34)+"+cFileName+"+char(34)+"'"+char(34)+"+nl"
-			],
-			[
-				"interactionid",
-				162
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"cCode += "+char(34)+"$cMainSourceFile = '"+char(34)+"+cFileName+"+char(34)+"'"+char(34)+"+nl"
-			]
-		]
-	],
-	[
-		236,
-		207,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cCode&nbsp;+=&nbsp;&#039;load&nbsp;&quot;&#039;+cFileName+&#039;&quot;&#039;</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"cCode += 'load "+char(34)+"'+cFileName+'"+char(34)+"'"
 			],
 			[
 				"interactionid",
@@ -8828,13 +8828,51 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"cCode += 'load "+char(34)+"'+cFileName+'"+char(34)+"'"
+				"cCode += "+char(34)+"$cMainSourceFile = '"+char(34)+"+cFileName+"+char(34)+"'"+char(34)+"+nl"
 			]
 		]
 	],
 	[
 		237,
-		207,
+		208,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cCode&nbsp;+=&nbsp;&#039;load&nbsp;&quot;&#039;+cFileName+&#039;&quot;&#039;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cCode += 'load "+char(34)+"'+cFileName+'"+char(34)+"'"
+			],
+			[
+				"interactionid",
+				164
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cCode += 'load "+char(34)+"'+cFileName+'"+char(34)+"'"
+			]
+		]
+	],
+	[
+		238,
+		208,
 		[
 			[
 				"name",
@@ -8850,7 +8888,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				164
+				165
 			],
 			[
 				"visible",
@@ -8871,8 +8909,8 @@ aStepsTable = [
 		]
 	],
 	[
-		238,
-		207,
+		239,
+		208,
 		[
 			[
 				"name",
@@ -8888,7 +8926,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				165
+				166
 			],
 			[
 				"visible",
@@ -8909,8 +8947,8 @@ aStepsTable = [
 		]
 	],
 	[
+		240,
 		239,
-		238,
 		[
 			[
 				"name",
@@ -8926,7 +8964,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				165
+				166
 			],
 			[
 				"visible",
@@ -8947,8 +8985,8 @@ aStepsTable = [
 		]
 	],
 	[
-		241,
-		239,
+		242,
+		240,
 		[
 			[
 				"name",
@@ -8964,7 +9002,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				166
+				167
 			],
 			[
 				"visible",
@@ -8985,8 +9023,8 @@ aStepsTable = [
 		]
 	],
 	[
-		240,
-		238,
+		241,
+		239,
 		[
 			[
 				"name",
@@ -9002,7 +9040,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				165
+				166
 			],
 			[
 				"visible",
@@ -9023,8 +9061,8 @@ aStepsTable = [
 		]
 	],
 	[
-		242,
-		207,
+		243,
+		208,
 		[
 			[
 				"name",
@@ -9040,7 +9078,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				167
+				168
 			],
 			[
 				"visible",
@@ -9061,8 +9099,8 @@ aStepsTable = [
 		]
 	],
 	[
-		243,
-		207,
+		244,
+		208,
 		[
 			[
 				"name",
@@ -9078,7 +9116,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				168
+				169
 			],
 			[
 				"visible",
@@ -9099,8 +9137,8 @@ aStepsTable = [
 		]
 	],
 	[
+		245,
 		244,
-		243,
 		[
 			[
 				"name",
@@ -9116,7 +9154,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				168
+				169
 			],
 			[
 				"visible",
@@ -9137,8 +9175,8 @@ aStepsTable = [
 		]
 	],
 	[
-		246,
-		244,
+		247,
+		245,
 		[
 			[
 				"name",
@@ -9154,7 +9192,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				169
+				170
 			],
 			[
 				"visible",
@@ -9175,8 +9213,8 @@ aStepsTable = [
 		]
 	],
 	[
-		247,
-		244,
+		248,
+		245,
 		[
 			[
 				"name",
@@ -9192,7 +9230,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				170
+				171
 			],
 			[
 				"visible",
@@ -9213,8 +9251,8 @@ aStepsTable = [
 		]
 	],
 	[
-		245,
-		243,
+		246,
+		244,
 		[
 			[
 				"name",
@@ -9230,7 +9268,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				168
+				169
 			],
 			[
 				"visible",
@@ -9251,8 +9289,8 @@ aStepsTable = [
 		]
 	],
 	[
-		248,
-		207,
+		249,
+		208,
 		[
 			[
 				"name",
@@ -9265,44 +9303,6 @@ aStepsTable = [
 			[
 				"code",
 				"oState = ring_state_new()"
-			],
-			[
-				"interactionid",
-				171
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"oState = ring_state_new()"
-			]
-		]
-	],
-	[
-		249,
-		207,
-		[
-			[
-				"name",
-				"ring_state_mainfile(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oState,&quot;runprogram.ring&quot;</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"ring_state_mainfile(oState,"+char(34)+"runprogram.ring"+char(34)+")"
 			],
 			[
 				"interactionid",
@@ -9322,17 +9322,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"ring_state_mainfile(oState,"+char(34)+"runprogram.ring"+char(34)+")"
+				"oState = ring_state_new()"
 			]
 		]
 	],
 	[
 		250,
-		207,
+		208,
 		[
 			[
 				"name",
-				"chdir(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">RUNTIME_FOLDER</font></span>)"
+				"ring_state_mainfile(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oState,&quot;runprogram.ring&quot;</font></span>)"
 			],
 			[
 				"active",
@@ -9340,7 +9340,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"chdir(RUNTIME_FOLDER)"
+				"ring_state_mainfile(oState,"+char(34)+"runprogram.ring"+char(34)+")"
 			],
 			[
 				"interactionid",
@@ -9360,17 +9360,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"chdir(RUNTIME_FOLDER)"
+				"ring_state_mainfile(oState,"+char(34)+"runprogram.ring"+char(34)+")"
 			]
 		]
 	],
 	[
 		251,
-		207,
+		208,
 		[
 			[
 				"name",
-				"This will start a Timer to check the output"
+				"changeFolder(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">RUNTIME_FOLDER</font></span>)"
 			],
 			[
 				"active",
@@ -9378,8 +9378,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"#This will start a Timer to check the output
-"
+				"changeFolder(RUNTIME_FOLDER)"
 			],
 			[
 				"interactionid",
@@ -9395,21 +9394,21 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				1
+				2
 			],
 			[
 				"plainname",
-				"This will start a Timer to check the output"
+				"changeFolder(RUNTIME_FOLDER)"
 			]
 		]
 	],
 	[
 		252,
-		207,
+		208,
 		[
 			[
 				"name",
-				"Display the Output"
+				"This will start a Timer to check the output"
 			],
 			[
 				"active",
@@ -9417,7 +9416,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"#Display the Output
+				"#This will start a Timer to check the output
 "
 			],
 			[
@@ -9438,13 +9437,52 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Display the Output"
+				"This will start a Timer to check the output"
 			]
 		]
 	],
 	[
 		253,
-		207,
+		208,
+		[
+			[
+				"name",
+				"Display the Output"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Display the Output
+"
+			],
+			[
+				"interactionid",
+				176
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Display the Output"
+			]
+		]
+	],
+	[
+		254,
+		208,
 		[
 			[
 				"name",
@@ -9460,7 +9498,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				176
+				177
 			],
 			[
 				"visible",
@@ -9481,8 +9519,8 @@ aStepsTable = [
 		]
 	],
 	[
-		254,
-		207,
+		255,
+		208,
 		[
 			[
 				"name",
@@ -9498,7 +9536,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				177
+				178
 			],
 			[
 				"visible",
@@ -9519,8 +9557,8 @@ aStepsTable = [
 		]
 	],
 	[
-		255,
-		207,
+		256,
+		208,
 		[
 			[
 				"name",
@@ -9537,7 +9575,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				178
+				179
 			],
 			[
 				"visible",
@@ -9558,8 +9596,8 @@ aStepsTable = [
 		]
 	],
 	[
-		256,
-		207,
+		257,
+		208,
 		[
 			[
 				"name",
@@ -9572,44 +9610,6 @@ aStepsTable = [
 			[
 				"code",
 				"remove("+char(34)+"runprogram.ring"+char(34)+")"
-			],
-			[
-				"interactionid",
-				179
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"remove("+char(34)+"runprogram.ring"+char(34)+")"
-			]
-		]
-	],
-	[
-		257,
-		207,
-		[
-			[
-				"name",
-				"remove(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;programinput.txt&quot;</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"remove("+char(34)+"programinput.txt"+char(34)+")"
 			],
 			[
 				"interactionid",
@@ -9629,13 +9629,51 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"remove("+char(34)+"programinput.txt"+char(34)+")"
+				"remove("+char(34)+"runprogram.ring"+char(34)+")"
 			]
 		]
 	],
 	[
 		258,
-		207,
+		208,
+		[
+			[
+				"name",
+				"remove(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;programinput.txt&quot;</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"remove("+char(34)+"programinput.txt"+char(34)+")"
+			],
+			[
+				"interactionid",
+				181
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"remove("+char(34)+"programinput.txt"+char(34)+")"
+			]
+		]
+	],
+	[
+		259,
+		208,
 		[
 			[
 				"name",
@@ -9652,7 +9690,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				181
+				182
 			],
 			[
 				"visible",
@@ -9673,50 +9711,12 @@ aStepsTable = [
 		]
 	],
 	[
-		259,
-		207,
-		[
-			[
-				"name",
-				"chdir(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">JustFilePath(cFileName)</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"chdir(JustFilePath(cFileName))"
-			],
-			[
-				"interactionid",
-				182
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"chdir(JustFilePath(cFileName))"
-			]
-		]
-	],
-	[
 		260,
-		207,
+		208,
 		[
 			[
 				"name",
-				"remove(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;guilib.ring&quot;</font></span>)"
+				"changeFolder(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">JustFilePath(cFileName)</font></span>)"
 			],
 			[
 				"active",
@@ -9724,7 +9724,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"remove("+char(34)+"guilib.ring"+char(34)+")"
+				"changeFolder(JustFilePath(cFileName))"
 			],
 			[
 				"interactionid",
@@ -9744,17 +9744,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"remove("+char(34)+"guilib.ring"+char(34)+")"
+				"changeFolder(JustFilePath(cFileName))"
 			]
 		]
 	],
 	[
 		261,
-		207,
+		208,
 		[
 			[
 				"name",
-				"remove(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;stdlib.ring&quot;</font></span>)"
+				"remove(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;guilib.ring&quot;</font></span>)"
 			],
 			[
 				"active",
@@ -9762,7 +9762,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"remove("+char(34)+"stdlib.ring"+char(34)+")"
+				"remove("+char(34)+"guilib.ring"+char(34)+")"
 			],
 			[
 				"interactionid",
@@ -9782,17 +9782,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"remove("+char(34)+"stdlib.ring"+char(34)+")"
+				"remove("+char(34)+"guilib.ring"+char(34)+")"
 			]
 		]
 	],
 	[
 		262,
-		207,
+		208,
 		[
 			[
 				"name",
-				"remove(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;stdlibcore.ring&quot;</font></span>)"
+				"remove(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;stdlib.ring&quot;</font></span>)"
 			],
 			[
 				"active",
@@ -9800,7 +9800,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"remove("+char(34)+"stdlibcore.ring"+char(34)+")"
+				"remove("+char(34)+"stdlib.ring"+char(34)+")"
 			],
 			[
 				"interactionid",
@@ -9820,13 +9820,51 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"remove("+char(34)+"stdlibcore.ring"+char(34)+")"
+				"remove("+char(34)+"stdlib.ring"+char(34)+")"
 			]
 		]
 	],
 	[
 		263,
-		207,
+		208,
+		[
+			[
+				"name",
+				"remove(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;stdlibcore.ring&quot;</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"remove("+char(34)+"stdlibcore.ring"+char(34)+")"
+			],
+			[
+				"interactionid",
+				186
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"remove("+char(34)+"stdlibcore.ring"+char(34)+")"
+			]
+		]
+	],
+	[
+		264,
+		208,
 		[
 			[
 				"name",
@@ -9842,7 +9880,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				186
+				187
 			],
 			[
 				"visible",
@@ -9863,47 +9901,8 @@ aStepsTable = [
 		]
 	],
 	[
-		264,
-		207,
-		[
-			[
-				"name",
-				"if we are using noname.pwct"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"#if we are using noname.pwct
-"
-			],
-			[
-				"interactionid",
-				187
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"if we are using noname.pwct"
-			]
-		]
-	],
-	[
 		265,
-		207,
+		208,
 		[
 			[
 				"name",
@@ -9942,7 +9941,7 @@ aStepsTable = [
 	],
 	[
 		266,
-		207,
+		208,
 		[
 			[
 				"name",
@@ -9981,7 +9980,7 @@ aStepsTable = [
 	],
 	[
 		267,
-		207,
+		208,
 		[
 			[
 				"name",
@@ -10020,7 +10019,7 @@ aStepsTable = [
 	],
 	[
 		268,
-		207,
+		208,
 		[
 			[
 				"name",
@@ -10059,7 +10058,7 @@ aStepsTable = [
 	],
 	[
 		269,
-		207,
+		208,
 		[
 			[
 				"name",
@@ -10097,8 +10096,8 @@ aStepsTable = [
 		]
 	],
 	[
-		208,
-		206,
+		209,
+		207,
 		[
 			[
 				"name",
@@ -10114,7 +10113,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				139
+				140
 			],
 			[
 				"visible",
@@ -10292,7 +10291,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"chdir(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">RUNTIME_FOLDER</font></span>)"
+				"changeFolder(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">RUNTIME_FOLDER</font></span>)"
 			],
 			[
 				"active",
@@ -10300,7 +10299,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"chdir(RUNTIME_FOLDER)"
+				"changeFolder(RUNTIME_FOLDER)"
 			],
 			[
 				"interactionid",
@@ -10320,7 +10319,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"chdir(RUNTIME_FOLDER)"
+				"changeFolder(RUNTIME_FOLDER)"
 			]
 		]
 	],
@@ -10710,7 +10709,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"chdir(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cDir</font></span>)"
+				"changeFolder(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cDir</font></span>)"
 			],
 			[
 				"active",
@@ -10718,7 +10717,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"chdir(cDir)"
+				"changeFolder(cDir)"
 			],
 			[
 				"interactionid",
@@ -10738,7 +10737,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"chdir(cDir)"
+				"changeFolder(cDir)"
 			]
 		]
 	],
@@ -12708,7 +12707,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"chdir(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">exefolder()</font></span>)"
+				"changeFolder(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">exefolder()</font></span>)"
 			],
 			[
 				"active",
@@ -12716,7 +12715,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"chdir(exefolder())"
+				"changeFolder(exefolder())"
 			],
 			[
 				"interactionid",
@@ -12736,7 +12735,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"chdir(exefolder())"
+				"changeFolder(exefolder())"
 			]
 		]
 	],
@@ -12974,7 +12973,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"chdir(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cDir</font></span>)"
+				"changeFolder(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cDir</font></span>)"
 			],
 			[
 				"active",
@@ -12982,7 +12981,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"chdir(cDir)"
+				"changeFolder(cDir)"
 			],
 			[
 				"interactionid",
@@ -13002,7 +13001,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"chdir(cDir)"
+				"changeFolder(cDir)"
 			]
 		]
 	],
@@ -13848,7 +13847,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"chdir(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">JustFilePath(cFile)</font></span>)"
+				"changeFolder(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">JustFilePath(cFile)</font></span>)"
 			],
 			[
 				"active",
@@ -13856,7 +13855,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"chdir(JustFilePath(cFile))"
+				"changeFolder(JustFilePath(cFile))"
 			],
 			[
 				"interactionid",
@@ -13876,7 +13875,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"chdir(JustFilePath(cFile))"
+				"changeFolder(JustFilePath(cFile))"
 			]
 		]
 	],
@@ -14191,2120 +14190,2120 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;**	Project : Programming Without Coding Technology (PWCT) Version 2.0;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;**	File Purpose :  Program Controller Class;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;**	Date : 2017.02.06;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"class",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;ProgramController;;_RV_;;value2;;_RV_;;;;_RV_;;value3;;_RV_;;2;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"leftside;;_RV_;;cFileName;;_RV_;;rightside;;_RV_;;C_FILENONAME;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;"+char(34)+"noname.ring"+char(34)+";;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"leftside;;_RV_;;cSourceCode;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"leftside;;_RV_;;cCurrentDir;;_RV_;;rightside;;_RV_;;CurrentDir()+"+char(34)+"/"+char(34)+";;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;The Goal Designer Folder;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"ifstatement",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"condition;;_RV_;;isWindows();;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"leftside;;_RV_;;cDebugBatch;;_RV_;;rightside;;_RV_;;CurrentDir()+"+char(34)+"\batch\run.bat"+char(34)+";;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"leftside;;_RV_;;cRunBatch;;_RV_;;rightside;;_RV_;;CurrentDir()+"+char(34)+"\batch\run2.bat"+char(34)+";;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"else",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		""
 	],
 	[
 		18,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"leftside;;_RV_;;cDebugBatch;;_RV_;;rightside;;_RV_;;CurrentDir()+"+char(34)+"/batch/run.sh"+char(34)+";;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"leftside;;_RV_;;cRunBatch;;_RV_;;rightside;;_RV_;;CurrentDir()+"+char(34)+"/batch/run2.sh"+char(34)+";;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"leftside;;_RV_;;lSetFocusToInput;;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"leftside;;_RV_;;oState;;_RV_;;rightside;;_RV_;;NULL;;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"leftside;;_RV_;;cWebApplicationFolder;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"leftside;;_RV_;;lMainFile;;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"leftside;;_RV_;;cOutputFileText;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"leftside;;_RV_;;lTestQML;;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;		Purpose : Debug;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;		Parameters : Goal Designer Object;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;		Output :  None;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		30,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;	*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"func",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"name;;_RV_;;Debug;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		32,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;Prepare;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		33,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;Save the source code to the file;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		34,
 		1,
 		"ifstatement",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"condition;;_RV_;;PWCTIsMobile(:RunApplication);;_RV_;;"
 	],
 	[
 		35,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;RunOnMobile;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		36,
 		1,
 		"else",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		""
 	],
 	[
 		37,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;RunBatch;;_RV_;;parameters;;_RV_;;cDebugBatch;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		38,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		39,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;		Purpose : Run;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		40,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;		Parameters : Goal Designer Object;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		41,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;		Output :  None;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		42,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;	*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		43,
 		1,
 		"func",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"name;;_RV_;;Run;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		44,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;Prepare;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		45,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;Save the source code to the file;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		46,
 		1,
 		"ifstatement",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"condition;;_RV_;;PWCTIsMobile(:RunApplication);;_RV_;;"
 	],
 	[
 		47,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;RunOnMobile;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		48,
 		1,
 		"else",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		""
 	],
 	[
 		49,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;RunBatch;;_RV_;;parameters;;_RV_;;cRunBatch;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		50,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		51,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;		Purpose : Run GUI Application;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		52,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;		Parameters : goal designer object;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		53,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;		Output :  None;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		54,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;	*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		55,
 		1,
 		"func",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"name;;_RV_;;RunGUI;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		56,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;Prepare;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		57,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;Save the source code to the file;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		58,
 		1,
 		"ifstatement",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"condition;;_RV_;;PWCTIsMobile(:RunApplication);;_RV_;;"
 	],
 	[
 		59,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;RunOnMobile;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		60,
 		1,
 		"else",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		""
 	],
 	[
 		61,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;RunGUIDesktop;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		62,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		63,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;		Purpose : Run GUI Application - Desktop;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		64,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;		Parameters : goal designer object;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		65,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;		Output :  None;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		66,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;	*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		67,
 		1,
 		"func",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"name;;_RV_;;RunGUIDesktop;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		68,
 		1,
-		"assignment",
-		"04/03/2025",
-		"21:26:21",
-		"leftside;;_RV_;;cFile;;_RV_;;rightside;;_RV_;;cFileName;;_RV_;;"
+		"freetyping",
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;oGD.parent().oView.oProcessText.setFocus(2);;_RV_;;"
 	],
 	[
 		69,
 		1,
-		"ifstatement",
-		"04/03/2025",
-		"21:26:21",
-		"condition;;_RV_;;oGD.lFullScreen = False;;_RV_;;"
+		"assignment",
+		"19/04/2025",
+		"06:52:59",
+		"leftside;;_RV_;;cFile;;_RV_;;rightside;;_RV_;;cFileName;;_RV_;;"
 	],
 	[
 		70,
 		1,
-		"freetyping",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;oGD.parent().oView.oDockOutputWindow.raise();;_RV_;;"
+		"ifstatement",
+		"19/04/2025",
+		"06:52:59",
+		"condition;;_RV_;;oGD.lFullScreen = False;;_RV_;;"
 	],
 	[
 		71,
 		1,
 		"freetyping",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;oGD.parent().oView.oProcessEditbox.setplaintext("+char(34)+""+char(34)+");;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;oGD.parent().oView.oDockOutputWindow.raise();;_RV_;;"
 	],
 	[
 		72,
 		1,
-		"ifstatement",
-		"04/03/2025",
-		"21:26:21",
-		"condition;;_RV_;;lSetFocusToInput;;_RV_;;"
+		"freetyping",
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;oGD.parent().oView.oProcessEditbox.setplaintext("+char(34)+""+char(34)+");;_RV_;;"
 	],
 	[
 		73,
 		1,
-		"freetyping",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;oGD.parent().oView.oProcessText.setFocus(0);;_RV_;;"
+		"ifstatement",
+		"19/04/2025",
+		"06:52:59",
+		"condition;;_RV_;;lSetFocusToInput;;_RV_;;"
 	],
 	[
 		74,
 		1,
-		"assignment",
-		"04/03/2025",
-		"21:26:21",
-		"leftside;;_RV_;;cDir;;_RV_;;rightside;;_RV_;;currentdir();;_RV_;;"
+		"freetyping",
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;oGD.parent().oView.oProcessText.setFocus(0);;_RV_;;"
 	],
 	[
 		75,
 		1,
-		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;chdir;;_RV_;;parameters;;_RV_;;JustFilePath(cFile);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"assignment",
+		"19/04/2025",
+		"06:52:59",
+		"leftside;;_RV_;;cDir;;_RV_;;rightside;;_RV_;;currentdir();;_RV_;;"
 	],
 	[
 		76,
 		1,
-		"ifstatement",
-		"04/03/2025",
-		"21:26:21",
-		"condition;;_RV_;;isBatchFile(cFile);;_RV_;;"
+		"callfunc",
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;changeFolder;;_RV_;;parameters;;_RV_;;JustFilePath(cFile);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		77,
 		1,
-		"assignment",
-		"04/03/2025",
-		"21:26:21",
-		"leftside;;_RV_;;cCode;;_RV_;;rightside;;_RV_;;RunBatchFile(cFile);;_RV_;;"
+		"ifstatement",
+		"19/04/2025",
+		"06:52:59",
+		"condition;;_RV_;;isBatchFile(cFile);;_RV_;;"
 	],
 	[
 		78,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:21",
-		"leftside;;_RV_;;oGD.parent().oView.oProcess;;_RV_;;rightside;;_RV_;;RunProcess(cCode,"+char(34)+""+char(34)+",oGD.parent().Method(:GetDataAction));;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"leftside;;_RV_;;cCode;;_RV_;;rightside;;_RV_;;RunBatchFile(cFile);;_RV_;;"
 	],
 	[
 		79,
 		1,
-		"else",
-		"04/03/2025",
-		"21:26:21",
-		""
+		"assignment",
+		"19/04/2025",
+		"06:52:59",
+		"leftside;;_RV_;;oGD.parent().oView.oProcess;;_RV_;;rightside;;_RV_;;RunProcess(cCode,"+char(34)+""+char(34)+",oGD.parent().Method(:GetDataAction));;_RV_;;"
 	],
 	[
 		80,
 		1,
-		"assignment",
-		"04/03/2025",
-		"21:26:21",
-		"leftside;;_RV_;;oGD.parent().oView.oProcess;;_RV_;;rightside;;_RV_;;RunProcess(cRingEXE,cFile,oGD.parent().Method(:GetDataAction));;_RV_;;"
+		"else",
+		"19/04/2025",
+		"06:52:59",
+		""
 	],
 	[
 		81,
 		1,
-		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;chdir;;_RV_;;parameters;;_RV_;;cDir;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"assignment",
+		"19/04/2025",
+		"06:52:59",
+		"leftside;;_RV_;;oGD.parent().oView.oProcess;;_RV_;;rightside;;_RV_;;RunProcess(cRingEXE,cFile,oGD.parent().Method(:GetDataAction));;_RV_;;"
 	],
 	[
 		82,
 		1,
-		"comment_text",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"callfunc",
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;changeFolder;;_RV_;;parameters;;_RV_;;cDir;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		83,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;		Run web application;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		84,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;	*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;		Run web application;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		85,
 		1,
-		"func",
-		"04/03/2025",
-		"21:26:21",
-		"name;;_RV_;;checkWebApplication;;_RV_;;parameters;;_RV_;;cFileName;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"comment_text",
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;	*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		86,
 		1,
-		"ifstatement",
-		"04/03/2025",
-		"21:26:21",
-		"condition;;_RV_;;left(read(cFileName),2)! = "+char(34)+"#!"+char(34)+";;_RV_;;"
+		"func",
+		"19/04/2025",
+		"06:52:59",
+		"name;;_RV_;;checkWebApplication;;_RV_;;parameters;;_RV_;;cFileName;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		87,
 		1,
-		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;msginfo;;_RV_;;parameters;;_RV_;;"+char(34)+"Sorry"+char(34)+","+char(34)+"This is not CGI web application!"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"ifstatement",
+		"19/04/2025",
+		"06:52:59",
+		"condition;;_RV_;;left(read(cFileName),2)! = "+char(34)+"#!"+char(34)+";;_RV_;;"
 	],
 	[
 		88,
 		1,
-		"return",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;false;;_RV_;;"
+		"callfunc",
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;msginfo;;_RV_;;parameters;;_RV_;;"+char(34)+"Sorry"+char(34)+","+char(34)+"This is not CGI web application!"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		89,
 		1,
 		"return",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;true;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;false;;_RV_;;"
 	],
 	[
 		90,
 		1,
-		"func",
-		"04/03/2025",
-		"21:26:21",
-		"name;;_RV_;;RunInBrowser;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"return",
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;true;;_RV_;;"
 	],
 	[
 		91,
 		1,
-		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;Prepare;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"func",
+		"19/04/2025",
+		"06:52:59",
+		"name;;_RV_;;RunInBrowser;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		92,
 		1,
-		"comment_text",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;Save the source code to the file;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"callfunc",
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;Prepare;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		93,
 		1,
-		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;RunWebApplication;;_RV_;;parameters;;_RV_;;oGD,cFileName;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"comment_text",
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;Save the source code to the file;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		94,
 		1,
-		"func",
-		"04/03/2025",
-		"21:26:21",
-		"name;;_RV_;;RunWebApplication;;_RV_;;parameters;;_RV_;;oGD,cFile;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"callfunc",
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;RunWebApplication;;_RV_;;parameters;;_RV_;;oGD,cFileName;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		95,
 		1,
-		"assignment",
-		"04/03/2025",
-		"21:26:21",
-		"leftside;;_RV_;;cFile;;_RV_;;rightside;;_RV_;;FileNameEncoding(cFile);;_RV_;;"
+		"func",
+		"19/04/2025",
+		"06:52:59",
+		"name;;_RV_;;RunWebApplication;;_RV_;;parameters;;_RV_;;oGD,cFile;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		96,
 		1,
-		"ifstatement",
-		"04/03/2025",
-		"21:26:21",
-		"condition;;_RV_;;!checkWebApplication(cFile);;_RV_;;"
+		"assignment",
+		"19/04/2025",
+		"06:52:59",
+		"leftside;;_RV_;;cFile;;_RV_;;rightside;;_RV_;;FileNameEncoding(cFile);;_RV_;;"
 	],
 	[
 		97,
 		1,
-		"return",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;;;_RV_;;"
+		"ifstatement",
+		"19/04/2025",
+		"06:52:59",
+		"condition;;_RV_;;!checkWebApplication(cFile);;_RV_;;"
 	],
 	[
 		98,
 		1,
-		"ifstatement",
-		"04/03/2025",
-		"21:26:21",
-		"condition;;_RV_;;isWindows();;_RV_;;"
+		"return",
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		99,
 		1,
 		"ifstatement",
-		"04/03/2025",
-		"21:26:21",
-		"condition;;_RV_;;cWebApplicationFolder! = JustFilePath(cFile);;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"condition;;_RV_;;isWindows();;_RV_;;"
 	],
 	[
 		100,
 		1,
-		"assignment",
-		"04/03/2025",
-		"21:26:21",
-		"leftside;;_RV_;;cWebApplicationFolder;;_RV_;;rightside;;_RV_;;JustFilePath(cFile);;_RV_;;"
+		"ifstatement",
+		"19/04/2025",
+		"06:52:59",
+		"condition;;_RV_;;cWebApplicationFolder! = JustFilePath(cFile);;_RV_;;"
 	],
 	[
 		101,
 		1,
-		"newobj",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;;;_RV_;;value2;;_RV_;;ServerPrepare;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"19/04/2025",
+		"06:52:59",
+		"leftside;;_RV_;;cWebApplicationFolder;;_RV_;;rightside;;_RV_;;JustFilePath(cFile);;_RV_;;"
 	],
 	[
 		102,
 		1,
-		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setApplicationPath;;_RV_;;parameters;;_RV_;;this.cWebApplicationFolder;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"newobj",
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;;;_RV_;;value2;;_RV_;;ServerPrepare;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		103,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;PrepareConfigurationFile;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setApplicationPath;;_RV_;;parameters;;_RV_;;this.cWebApplicationFolder;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		104,
 		1,
-		"assignment",
-		"04/03/2025",
-		"21:26:21",
-		"leftside;;_RV_;;cServerExe;;_RV_;;rightside;;_RV_;;getserverExeFile();;_RV_;;"
+		"callfunc",
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;PrepareConfigurationFile;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		105,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:21",
-		"leftside;;_RV_;;oGD.parent().oView.oProcess;;_RV_;;rightside;;_RV_;;RunProcess(cCurrentDir+"+char(34)+"batch\killwebserver.bat"+char(34)+","+char(34)+""+char(34)+",oGD.parent().Method(:GetDataAction));;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"leftside;;_RV_;;cServerExe;;_RV_;;rightside;;_RV_;;getserverExeFile();;_RV_;;"
 	],
 	[
 		106,
 		1,
-		"freetyping",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;oGD.parent().oView.oProcess.waitForFinished(3000);;_RV_;;"
+		"assignment",
+		"19/04/2025",
+		"06:52:59",
+		"leftside;;_RV_;;oGD.parent().oView.oProcess;;_RV_;;rightside;;_RV_;;RunProcess(cCurrentDir+"+char(34)+"batch\killwebserver.bat"+char(34)+","+char(34)+""+char(34)+",oGD.parent().Method(:GetDataAction));;_RV_;;"
 	],
 	[
 		107,
 		1,
-		"assignment",
-		"04/03/2025",
-		"21:26:21",
-		"leftside;;_RV_;;oWebServerProcess;;_RV_;;rightside;;_RV_;;RunProcess(cServerEXE,"+char(34)+""+char(34)+",oGD.parent().Method(:GetDataAction));;_RV_;;"
+		"freetyping",
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;oGD.parent().oView.oProcess.waitForFinished(3000);;_RV_;;"
 	],
 	[
 		108,
 		1,
-		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;sleep;;_RV_;;parameters;;_RV_;;3;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"assignment",
+		"19/04/2025",
+		"06:52:59",
+		"leftside;;_RV_;;oWebServerProcess;;_RV_;;rightside;;_RV_;;RunProcess(cServerEXE,"+char(34)+""+char(34)+",oGD.parent().Method(:GetDataAction));;_RV_;;"
 	],
 	[
 		109,
 		1,
-		"freetyping",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;oGD.parent().oView.oProcessEditbox.setplaintext("+char(34)+""+char(34)+");;_RV_;;"
+		"callfunc",
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;sleep;;_RV_;;parameters;;_RV_;;3;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		110,
 		1,
-		"newobj",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;;;_RV_;;value2;;_RV_;;QDesktopServices;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"freetyping",
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;oGD.parent().oView.oProcessEditbox.setplaintext("+char(34)+""+char(34)+");;_RV_;;"
 	],
 	[
 		111,
 		1,
-		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;OpenURL;;_RV_;;parameters;;_RV_;; new qURL("+char(34)+"http://localhost:8080/"+char(34)+"+JustFileName(cFile));;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"newobj",
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;;;_RV_;;value2;;_RV_;;QDesktopServices;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		112,
 		1,
-		"else",
-		"04/03/2025",
-		"21:26:21",
-		""
+		"callfunc",
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;OpenURL;;_RV_;;parameters;;_RV_;; new qURL("+char(34)+"http://localhost:8080/"+char(34)+"+JustFileName(cFile));;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		113,
 		1,
-		"assignment",
-		"04/03/2025",
-		"21:26:21",
-		"leftside;;_RV_;;cWebURL;;_RV_;;rightside;;_RV_;;cFile;;_RV_;;"
+		"else",
+		"19/04/2025",
+		"06:52:59",
+		""
 	],
 	[
 		114,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:21",
-		"leftside;;_RV_;;nPos;;_RV_;;rightside;;_RV_;;substr(cWebURL,"+char(34)+"htdocs"+char(34)+");;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"leftside;;_RV_;;cWebURL;;_RV_;;rightside;;_RV_;;cFile;;_RV_;;"
 	],
 	[
 		115,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:21",
-		"leftside;;_RV_;;cWebURL;;_RV_;;rightside;;_RV_;;substr(cWebURL,nPOS+7);;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"leftside;;_RV_;;nPos;;_RV_;;rightside;;_RV_;;substr(cWebURL,"+char(34)+"htdocs"+char(34)+");;_RV_;;"
 	],
 	[
 		116,
 		1,
-		"newobj",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;;;_RV_;;value2;;_RV_;;QDesktopServices;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"19/04/2025",
+		"06:52:59",
+		"leftside;;_RV_;;cWebURL;;_RV_;;rightside;;_RV_;;substr(cWebURL,nPOS+7);;_RV_;;"
 	],
 	[
 		117,
 		1,
-		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;OpenURL;;_RV_;;parameters;;_RV_;; new qURL("+char(34)+"http://localhost/"+char(34)+"+cWebURL);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"newobj",
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;;;_RV_;;value2;;_RV_;;QDesktopServices;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		118,
 		1,
-		"comment_text",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"callfunc",
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;OpenURL;;_RV_;;parameters;;_RV_;; new qURL("+char(34)+"http://localhost/"+char(34)+"+cWebURL);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		119,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;		Purpose : Run Process;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		120,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;		Parameters : Program, Arguments and Method for Get Data Event;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;		Purpose : Run Process;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		121,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;		Output :  None;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;		Parameters : Program, Arguments and Method for Get Data Event;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		122,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;	*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;		Output :  None;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		123,
 		1,
-		"func",
-		"04/03/2025",
-		"21:26:21",
-		"name;;_RV_;;RunProcess;;_RV_;;parameters;;_RV_;;cProgram,cArg,cGetDataFunc;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"comment_text",
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;	*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		124,
 		1,
-		"assignment",
-		"04/03/2025",
-		"21:26:21",
-		"leftside;;_RV_;;aPara;;_RV_;;rightside;;_RV_;;split(cArg,"+char(34)+","+char(34)+");;_RV_;;"
+		"func",
+		"19/04/2025",
+		"06:52:59",
+		"name;;_RV_;;RunProcess;;_RV_;;parameters;;_RV_;;cProgram,cArg,cGetDataFunc;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		125,
 		1,
-		"newobj",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;oStringList;;_RV_;;value2;;_RV_;;qStringlist;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
+		"assignment",
+		"19/04/2025",
+		"06:52:59",
+		"leftside;;_RV_;;aPara;;_RV_;;rightside;;_RV_;;split(cArg,"+char(34)+","+char(34)+");;_RV_;;"
 	],
 	[
 		126,
 		1,
-		"forinloop",
-		"04/03/2025",
-		"21:26:21",
-		"variable;;_RV_;;cPara;;_RV_;;in;;_RV_;;aPara;;_RV_;;step;;_RV_;;1;;_RV_;;"
+		"newobj",
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;oStringList;;_RV_;;value2;;_RV_;;qStringlist;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		127,
 		1,
-		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;append;;_RV_;;parameters;;_RV_;;cPara;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"forinloop",
+		"19/04/2025",
+		"06:52:59",
+		"variable;;_RV_;;cPara;;_RV_;;in;;_RV_;;aPara;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		128,
 		1,
-		"newobj",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;oProcess;;_RV_;;value2;;_RV_;;qprocess;;_RV_;;value3;;_RV_;;NULL;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
+		"callfunc",
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;append;;_RV_;;parameters;;_RV_;;cPara;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		129,
 		1,
-		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setprogram;;_RV_;;parameters;;_RV_;;cProgram;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"newobj",
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;oProcess;;_RV_;;value2;;_RV_;;qprocess;;_RV_;;value3;;_RV_;;NULL;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		130,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setarguments;;_RV_;;parameters;;_RV_;;ostringlist;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setprogram;;_RV_;;parameters;;_RV_;;cProgram;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		131,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setreadyreadstandardoutputevent;;_RV_;;parameters;;_RV_;;cGetDataFunc;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setarguments;;_RV_;;parameters;;_RV_;;ostringlist;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		132,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;start_3;;_RV_;;parameters;;_RV_;;QIODevice_ReadWrite;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setreadyreadstandardoutputevent;;_RV_;;parameters;;_RV_;;cGetDataFunc;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		133,
 		1,
-		"return",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;oProcess;;_RV_;;"
+		"callfunc",
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;start_3;;_RV_;;parameters;;_RV_;;QIODevice_ReadWrite;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		134,
 		1,
-		"comment_text",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"return",
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;oProcess;;_RV_;;"
 	],
 	[
 		135,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;		Purpose : Run on Mobile;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		136,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;		Parameters : Goal Designer Object;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;		Purpose : Run on Mobile;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		137,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;		Output : None;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;		Parameters : Goal Designer Object;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		138,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;	*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;		Output : None;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		139,
 		1,
-		"func",
-		"04/03/2025",
-		"21:26:21",
-		"name;;_RV_;;RunOnMobile;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"comment_text",
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;	*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		140,
 		1,
-		"ifstatement",
-		"04/03/2025",
-		"21:26:21",
-		"condition;;_RV_;;cFileName = C_FILENONAME;;_RV_;;"
+		"func",
+		"19/04/2025",
+		"06:52:59",
+		"name;;_RV_;;RunOnMobile;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		141,
 		1,
-		"comment_text",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;noname.pwct;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"ifstatement",
+		"19/04/2025",
+		"06:52:59",
+		"condition;;_RV_;;cFileName = C_FILENONAME;;_RV_;;"
 	],
 	[
 		142,
 		1,
-		"assignment",
-		"04/03/2025",
-		"21:26:21",
-		"leftside;;_RV_;;cFileName;;_RV_;;rightside;;_RV_;;PWCT_FOLDER+"+char(34)+"/"+char(34)+"+C_FILENONAME;;_RV_;;"
+		"comment_text",
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;noname.ring;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		143,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:21",
-		"leftside;;_RV_;;RUNTIME_FOLDER;;_RV_;;rightside;;_RV_;;PWCT_FOLDER+"+char(34)+"/PWCTApp/runtime"+char(34)+";;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"leftside;;_RV_;;cFileName;;_RV_;;rightside;;_RV_;;PWCT_FOLDER+"+char(34)+"/"+char(34)+"+C_FILENONAME;;_RV_;;"
 	],
 	[
 		144,
 		1,
-		"comment_text",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;Create guilib.ring and stdlib.ring;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"19/04/2025",
+		"06:52:59",
+		"leftside;;_RV_;;RUNTIME_FOLDER;;_RV_;;rightside;;_RV_;;PWCT_FOLDER+"+char(34)+"/PWCTApp/runtime"+char(34)+";;_RV_;;"
 	],
 	[
 		145,
 		1,
-		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;chdir;;_RV_;;parameters;;_RV_;;JustFilePath(cFileName);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"comment_text",
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;Create guilib.ring and stdlib.ring;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		146,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;write;;_RV_;;parameters;;_RV_;;"+char(34)+"guilib.ring"+char(34)+","+char(34)+""+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;changeFolder;;_RV_;;parameters;;_RV_;;JustFilePath(cFileName);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		147,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;write;;_RV_;;parameters;;_RV_;;"+char(34)+"stdlib.ring"+char(34)+","+char(34)+""+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;write;;_RV_;;parameters;;_RV_;;"+char(34)+"guilib.ring"+char(34)+","+char(34)+""+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		148,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;write;;_RV_;;parameters;;_RV_;;"+char(34)+"stdlibcore.ring"+char(34)+","+char(34)+""+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;write;;_RV_;;parameters;;_RV_;;"+char(34)+"stdlib.ring"+char(34)+","+char(34)+""+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		149,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;chdir;;_RV_;;parameters;;_RV_;;RUNTIME_FOLDER;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;write;;_RV_;;parameters;;_RV_;;"+char(34)+"stdlibcore.ring"+char(34)+","+char(34)+""+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		150,
 		1,
-		"comment_text",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;Delete Temp. Files;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"callfunc",
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;changeFolder;;_RV_;;parameters;;_RV_;;RUNTIME_FOLDER;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		151,
 		1,
-		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;remove;;_RV_;;parameters;;_RV_;;"+char(34)+"runprogram.ring"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"comment_text",
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;Delete Temp. Files;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		152,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;remove;;_RV_;;parameters;;_RV_;;"+char(34)+"programoutput.txt"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;remove;;_RV_;;parameters;;_RV_;;"+char(34)+"runprogram.ring"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		153,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;remove;;_RV_;;parameters;;_RV_;;"+char(34)+"programinput.txt"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;remove;;_RV_;;parameters;;_RV_;;"+char(34)+"programoutput.txt"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		154,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;freopen;;_RV_;;parameters;;_RV_;;"+char(34)+"programoutput.txt"+char(34)+","+char(34)+"w+"+char(34)+",stdout;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;remove;;_RV_;;parameters;;_RV_;;"+char(34)+"programinput.txt"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		155,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;freopen;;_RV_;;parameters;;_RV_;;"+char(34)+"programinput.txt"+char(34)+","+char(34)+"r"+char(34)+",stdin;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;freopen;;_RV_;;parameters;;_RV_;;"+char(34)+"programoutput.txt"+char(34)+","+char(34)+"w+"+char(34)+",stdout;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		156,
 		1,
-		"comment_text",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;We use runprogram.ring instead of using cFileName directly;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"callfunc",
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;freopen;;_RV_;;parameters;;_RV_;;"+char(34)+"programinput.txt"+char(34)+","+char(34)+"r"+char(34)+",stdin;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		157,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;Just to get more control in the future, Where we can add more code;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;We use runprogram.ring instead of using cFileName directly;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		158,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;Before running the program;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;Just to get more control in the future, Where we can add more code;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		159,
 		1,
-		"assignment",
-		"04/03/2025",
-		"21:26:21",
-		"leftside;;_RV_;;cCode;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
+		"comment_text",
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;Before running the program;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		160,
 		1,
-		"ifstatement",
-		"04/03/2025",
-		"21:26:21",
-		"condition;;_RV_;;PWCTIsMobile(:MobileAppLibs);;_RV_;;"
+		"assignment",
+		"19/04/2025",
+		"06:52:59",
+		"leftside;;_RV_;;cCode;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		161,
 		1,
-		"assignment",
-		"04/03/2025",
-		"21:26:21",
-		"leftside;;_RV_;;cCode;;_RV_;;rightside;;_RV_;;'load "+char(34)+"mobileapplibs.ring"+char(34)+"'+nl+'load "+char(34)+"mobileapplibs2.ring"+char(34)+"'+nl+'load "+char(34)+"mobileapplibs3.ring"+char(34)+"'+nl;;_RV_;;"
+		"ifstatement",
+		"19/04/2025",
+		"06:52:59",
+		"condition;;_RV_;;PWCTIsMobile(:MobileAppLibs);;_RV_;;"
 	],
 	[
 		162,
 		1,
-		"freetyping",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;cCode += "+char(34)+"$cMainSourceFile = '"+char(34)+"+cFileName+"+char(34)+"'"+char(34)+"+nl;;_RV_;;"
+		"assignment",
+		"19/04/2025",
+		"06:52:59",
+		"leftside;;_RV_;;cCode;;_RV_;;rightside;;_RV_;;'load "+char(34)+"mobileapplibs.ring"+char(34)+"'+nl+'load "+char(34)+"mobileapplibs2.ring"+char(34)+"'+nl+'load "+char(34)+"mobileapplibs3.ring"+char(34)+"'+nl;;_RV_;;"
 	],
 	[
 		163,
 		1,
 		"freetyping",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;cCode += 'load "+char(34)+"'+cFileName+'"+char(34)+"';;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;cCode += "+char(34)+"$cMainSourceFile = '"+char(34)+"+cFileName+"+char(34)+"'"+char(34)+"+nl;;_RV_;;"
 	],
 	[
 		164,
 		1,
-		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;write;;_RV_;;parameters;;_RV_;;"+char(34)+"runprogram.ring"+char(34)+",cCode;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"freetyping",
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;cCode += 'load "+char(34)+"'+cFileName+'"+char(34)+"';;_RV_;;"
 	],
 	[
 		165,
 		1,
-		"ifstatement",
-		"04/03/2025",
-		"21:26:21",
-		"condition;;_RV_;;!isNULL(oState);;_RV_;;"
+		"callfunc",
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;write;;_RV_;;parameters;;_RV_;;"+char(34)+"runprogram.ring"+char(34)+",cCode;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		166,
 		1,
-		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;ring_state_delete;;_RV_;;parameters;;_RV_;;oState;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"ifstatement",
+		"19/04/2025",
+		"06:52:59",
+		"condition;;_RV_;;!isNULL(oState);;_RV_;;"
 	],
 	[
 		167,
 		1,
-		"assignment",
-		"04/03/2025",
-		"21:26:21",
-		"leftside;;_RV_;;cOutputFileText;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
+		"callfunc",
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;ring_state_delete;;_RV_;;parameters;;_RV_;;oState;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		168,
 		1,
-		"ifstatement",
-		"04/03/2025",
-		"21:26:21",
-		"condition;;_RV_;;lTestQML;;_RV_;;"
+		"assignment",
+		"19/04/2025",
+		"06:52:59",
+		"leftside;;_RV_;;cOutputFileText;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		169,
 		1,
-		"freetyping",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;oGD.parent().oView.win.hide();;_RV_;;"
+		"ifstatement",
+		"19/04/2025",
+		"06:52:59",
+		"condition;;_RV_;;lTestQML;;_RV_;;"
 	],
 	[
 		170,
 		1,
-		"callmethod",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;PWCT_App;;_RV_;;name;;_RV_;;processevents;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"freetyping",
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;oGD.parent().oView.win.hide();;_RV_;;"
 	],
 	[
 		171,
 		1,
-		"assignment",
-		"04/03/2025",
-		"21:26:21",
-		"leftside;;_RV_;;oState;;_RV_;;rightside;;_RV_;;ring_state_new();;_RV_;;"
+		"callmethod",
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;PWCT_App;;_RV_;;name;;_RV_;;processevents;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		172,
 		1,
-		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;ring_state_mainfile;;_RV_;;parameters;;_RV_;;oState,"+char(34)+"runprogram.ring"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"assignment",
+		"19/04/2025",
+		"06:52:59",
+		"leftside;;_RV_;;oState;;_RV_;;rightside;;_RV_;;ring_state_new();;_RV_;;"
 	],
 	[
 		173,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;chdir;;_RV_;;parameters;;_RV_;;RUNTIME_FOLDER;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;ring_state_mainfile;;_RV_;;parameters;;_RV_;;oState,"+char(34)+"runprogram.ring"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		174,
 		1,
-		"comment_text",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;This will start a Timer to check the output;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"callfunc",
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;changeFolder;;_RV_;;parameters;;_RV_;;RUNTIME_FOLDER;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		175,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;Display the Output;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;This will start a Timer to check the output;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		176,
 		1,
-		"callmethod",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oGD;;_RV_;;name;;_RV_;;EnableCheckOutputOnMobile;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"comment_text",
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;Display the Output;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		177,
 		1,
-		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;CheckOutputOnMobile;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"callmethod",
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oGD;;_RV_;;name;;_RV_;;EnableCheckOutputOnMobile;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		178,
 		1,
-		"comment_text",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;Delete Temp. Files;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"callfunc",
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;CheckOutputOnMobile;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		179,
 		1,
-		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;remove;;_RV_;;parameters;;_RV_;;"+char(34)+"runprogram.ring"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"comment_text",
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;Delete Temp. Files;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		180,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;remove;;_RV_;;parameters;;_RV_;;"+char(34)+"programinput.txt"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;remove;;_RV_;;parameters;;_RV_;;"+char(34)+"runprogram.ring"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		181,
 		1,
-		"comment_text",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;delete guilib.ring and stdlib.ring;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"callfunc",
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;remove;;_RV_;;parameters;;_RV_;;"+char(34)+"programinput.txt"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		182,
 		1,
-		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;chdir;;_RV_;;parameters;;_RV_;;JustFilePath(cFileName);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"comment_text",
+		"19/04/2025",
+		"06:52:59",
+		"value;;_RV_;;delete guilib.ring and stdlib.ring;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		183,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;remove;;_RV_;;parameters;;_RV_;;"+char(34)+"guilib.ring"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;changeFolder;;_RV_;;parameters;;_RV_;;JustFilePath(cFileName);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		184,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;remove;;_RV_;;parameters;;_RV_;;"+char(34)+"stdlib.ring"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;remove;;_RV_;;parameters;;_RV_;;"+char(34)+"guilib.ring"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		185,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;remove;;_RV_;;parameters;;_RV_;;"+char(34)+"stdlibcore.ring"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;remove;;_RV_;;parameters;;_RV_;;"+char(34)+"stdlib.ring"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		186,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;remove;;_RV_;;parameters;;_RV_;;"+char(34)+"noname.ring"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;remove;;_RV_;;parameters;;_RV_;;"+char(34)+"stdlibcore.ring"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		187,
 		1,
-		"comment_text",
-		"04/03/2025",
-		"21:26:21",
-		"value;;_RV_;;if we are using noname.pwct;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"callfunc",
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;remove;;_RV_;;parameters;;_RV_;;"+char(34)+"noname.ring"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		188,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		189,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;		Purpose : Check output from the application when we run PWCT on Mobile;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		190,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;		Parameters : None;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		191,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;		Output : None;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		192,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;	*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		193,
 		1,
 		"func",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"name;;_RV_;;CheckOutputOnMobile;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		194,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"leftside;;_RV_;;cDir;;_RV_;;rightside;;_RV_;;CurrentDir();;_RV_;;"
 	],
 	[
 		195,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"leftside;;_RV_;;RUNTIME_FOLDER;;_RV_;;rightside;;_RV_;;PWCT_FOLDER+"+char(34)+"/PWCTApp/runtime"+char(34)+";;_RV_;;"
 	],
 	[
 		196,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;chdir;;_RV_;;parameters;;_RV_;;RUNTIME_FOLDER;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;changeFolder;;_RV_;;parameters;;_RV_;;RUNTIME_FOLDER;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		197,
 		1,
 		"ifstatement",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"condition;;_RV_;;fexists("+char(34)+"programoutput.txt"+char(34)+");;_RV_;;"
 	],
 	[
 		198,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"leftside;;_RV_;;cContent;;_RV_;;rightside;;_RV_;;read("+char(34)+"programoutput.txt"+char(34)+");;_RV_;;"
 	],
 	[
 		199,
 		1,
 		"ifstatement",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"condition;;_RV_;;cContent! = cOutputFileText;;_RV_;;"
 	],
 	[
 		200,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"leftside;;_RV_;;cOutputFileText;;_RV_;;rightside;;_RV_;;cContent;;_RV_;;"
 	],
 	[
 		201,
 		1,
 		"freetyping",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;oGD.parent().oView.oProcessEditbox.setplaintext(cContent);;_RV_;;"
 	],
 	[
 		202,
 		1,
 		"freetyping",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;oGD.parent().oView.oDockOutputWindow.raise();;_RV_;;"
 	],
 	[
 		203,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;chdir;;_RV_;;parameters;;_RV_;;cDir;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;changeFolder;;_RV_;;parameters;;_RV_;;cDir;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		204,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		205,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;		Purpose : Prepare the file;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		206,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;		Parameters : Goal Designer Object;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		207,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;		Output : None;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		208,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;	*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		209,
 		1,
 		"func",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"name;;_RV_;;Prepare;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		210,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"leftside;;_RV_;;nCodeGenTime;;_RV_;;rightside;;_RV_;;clock();;_RV_;;"
 	],
 	[
 		211,
 		1,
 		"callmethod",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oSystemLog;;_RV_;;name;;_RV_;;addMessage;;_RV_;;parameters;;_RV_;;"+char(34)+"Start of code generation"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		212,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;Get the Source Code;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		213,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;GetCode;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		214,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;Save the code to the file;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		215,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SaveToFile;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		216,
 		1,
 		"callmethod",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oSystemLog;;_RV_;;name;;_RV_;;addMessage;;_RV_;;parameters;;_RV_;;"+char(34)+"End of code generation"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		217,
 		1,
 		"callmethod",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oSystemLog;;_RV_;;name;;_RV_;;addMessage;;_RV_;;parameters;;_RV_;;"+char(34)+"Code generation time (Clocks) : "+char(34)+"+(clock()-nCodeGenTime);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		218,
 		1,
 		"callmethod",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oSystemLog;;_RV_;;name;;_RV_;;addMessage;;_RV_;;parameters;;_RV_;;"+char(34)+"Code generation time (Seconds): "+char(34)+"+((clock()-nCodeGenTime)/clocksPerSecond());;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		219,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		220,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;			Purpose : Get the Source Code;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		221,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;			Parameters : Goal Designer Object;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		222,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;			Output : the source code;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		223,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;		*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		224,
 		1,
 		"func",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"name;;_RV_;;GetCode;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		225,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		226,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;			Purpose : Save to file;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		227,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;			Parameters : None;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		228,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;			Output : None;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		229,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;		*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		230,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"leftside;;_RV_;;cSourceCode;;_RV_;;rightside;;_RV_;;oGD.oModel.StepsTreeCode();;_RV_;;"
 	],
 	[
 		231,
 		1,
 		"func",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"name;;_RV_;;SaveToFile;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		232,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"leftside;;_RV_;;cFile;;_RV_;;rightside;;_RV_;;oGD.oVisualSourceFile.RingFileName();;_RV_;;"
 	],
 	[
 		233,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;write;;_RV_;;parameters;;_RV_;;FileNameEncoding(cFile),cSourceCode;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		234,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		235,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;			Purpose : Run Batch File;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		236,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;			Parameters : The file Name and parameters;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		237,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;			Output : None;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		238,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;		*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		239,
 		1,
 		"func",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"name;;_RV_;;RunBatch;;_RV_;;parameters;;_RV_;;cFile;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		240,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"leftside;;_RV_;;cFileToRun;;_RV_;;rightside;;_RV_;;FileNameEncoding(cFileName);;_RV_;;"
 	],
 	[
 		241,
 		1,
 		"ifstatement",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"condition;;_RV_;;isWindows();;_RV_;;"
 	],
 	[
 		242,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"leftside;;_RV_;;cDir;;_RV_;;rightside;;_RV_;;currentdir();;_RV_;;"
 	],
 	[
 		243,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;chdir;;_RV_;;parameters;;_RV_;;exefolder();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;changeFolder;;_RV_;;parameters;;_RV_;;exefolder();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		244,
 		1,
 		"ifstatement",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"condition;;_RV_;;!fexists(cFileToRun);;_RV_;;"
 	],
 	[
 		245,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"leftside;;_RV_;;cFileToRun;;_RV_;;rightside;;_RV_;;cDir+"+char(34)+"\"+char(34)+"+cFileToRun;;_RV_;;"
 	],
 	[
 		246,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"leftside;;_RV_;;cCode;;_RV_;;rightside;;_RV_;;'start call "+char(34)+"'+cFile+'"+char(34)+" "+char(34)+"'+cFileToRun+'"+char(34)+"'+nl;;_RV_;;"
 	],
 	[
 		247,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;system;;_RV_;;parameters;;_RV_;;cCode;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		248,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;chdir;;_RV_;;parameters;;_RV_;;cDir;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;changeFolder;;_RV_;;parameters;;_RV_;;cDir;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		249,
 		1,
 		"elseif",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"condition;;_RV_;;isLinux();;_RV_;;"
 	],
 	[
 		250,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"leftside;;_RV_;;cCode;;_RV_;;rightside;;_RV_;;'cd $(dirname "+char(34)+"'+cFileToRun+'"+char(34)+") ; x-terminal-emulator -e '+"+char(34)+"'"+char(34)+"+'ring "+char(34)+"'+cFileToRun+'"+char(34)+" ; read -p "+char(34)+""+char(34)+" key;'+"+char(34)+"' &"+char(34)+"+nl;;_RV_;;"
 	],
 	[
 		251,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;system;;_RV_;;parameters;;_RV_;;cCode;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		252,
 		1,
 		"else",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		""
 	],
 	[
 		253,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"leftside;;_RV_;;cCode;;_RV_;;rightside;;_RV_;;'cd $(dirname "+char(34)+"'+cFileToRun+'"+char(34)+") ; '+' ring "+char(34)+"'+cFileToRun+'"+char(34)+"'+nl;;_RV_;;"
 	],
 	[
 		254,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;system;;_RV_;;parameters;;_RV_;;cCode;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		255,
 		1,
 		"func",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"name;;_RV_;;isBatchFile;;_RV_;;parameters;;_RV_;;cFile;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		256,
 		1,
 		"ifstatement",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"condition;;_RV_;;right(lower(trim(cFile)),4) = "+char(34)+".bat"+char(34)+" OR right(lower(trim(cFile)),3) = "+char(34)+".sh"+char(34)+";;_RV_;;"
 	],
 	[
 		257,
 		1,
 		"return",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;True;;_RV_;;"
 	],
 	[
 		258,
 		1,
 		"return",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;False;;_RV_;;"
 	],
 	[
 		259,
 		1,
 		"func",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"name;;_RV_;;RunBatchFile;;_RV_;;parameters;;_RV_;;cFile;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		260,
 		1,
 		"ifstatement",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"condition;;_RV_;;iswindows();;_RV_;;"
 	],
 	[
 		261,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:21",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;chdir;;_RV_;;parameters;;_RV_;;JustFilePath(cFile);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"19/04/2025",
+		"06:52:59",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;changeFolder;;_RV_;;parameters;;_RV_;;JustFilePath(cFile);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		262,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"leftside;;_RV_;;cCode;;_RV_;;rightside;;_RV_;;cFile;;_RV_;;"
 	],
 	[
 		263,
 		1,
 		"else",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		""
 	],
 	[
 		264,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"leftside;;_RV_;;cCode;;_RV_;;rightside;;_RV_;;'cd $(dirname "+char(34)+"'+cFile+'"+char(34)+") ; '+"+char(34)+"./"+char(34)+"+cFile+nl;;_RV_;;"
 	],
 	[
 		265,
 		1,
 		"return",
-		"04/03/2025",
-		"21:26:21",
+		"19/04/2025",
+		"06:52:59",
 		"value;;_RV_;;cCode;;_RV_;;"
 	]
 ]

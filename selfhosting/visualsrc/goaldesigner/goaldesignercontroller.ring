@@ -781,7 +781,7 @@ class GoalDesignerController from WindowsControllerParent
 				return 
 			} 
 			else
-				cFileName = "noname.pwct"
+				cFileName = T_VSF_NONAMEPWCT
 		} 
 		#Remove the file from the Active Files List
 		parent().RemoveFileFromActiveFilesList(lower(oVisualSourceFile.cFileName))
@@ -811,7 +811,7 @@ class GoalDesignerController from WindowsControllerParent
 	func SaveCurrentFileAction  { 
 		lSaveFlag = False
 		#Check file not saved before
-		if oVisualSourceFile.cFileName = C_VSF_NOFILENAME { 
+		if oVisualSourceFile.cFileName = T_VSF_NONAMEPWCT { 
 			SaveFileAction()
 			return 
 		} 
@@ -1466,7 +1466,7 @@ class GoalDesignerController from WindowsControllerParent
 		#	*/
 	} 
 	func setProgramControllerFileName  { 
-		oProgramController.cFileName = substr(oVisualSourceFile.cFileName,".pwct",".ring")
+		oProgramController.cFileName = substr(oVisualSourceFile.cFileName,"."+T_VSF_EXTENSION,".ring")
 		#/*
 		#		Purpose : Font Action
 		#		Parameters : None
@@ -1760,7 +1760,7 @@ class GoalDesignerController from WindowsControllerParent
 		#	*/
 	} 
 	func IsActiveFile  { 
-		if oVisualSourceFile.cFileName = "noname.pwct" { 
+		if oVisualSourceFile.cFileName = T_VSF_NONAMEPWCT { 
 			return False
 		} 
 		return True
@@ -1776,7 +1776,7 @@ class GoalDesignerController from WindowsControllerParent
 	} 
 	func GetActiveSourceFile  { 
 		cActiveFileName = GetActiveFile()
-		cActiveFileName = substr(cActiveFileName,".pwct",".ring")
+		cActiveFileName = substr(cActiveFileName,"."+T_VSF_EXTENSION,".ring")
 		return cActiveFileName
 		#/*
 		#		Switch goal designer window to full screen or switch full screen to window
@@ -1960,7 +1960,7 @@ class GoalDesignerController from WindowsControllerParent
 			return 
 		} 
 		#Be sure that the Controller class source code is opened
-		cFileNameInFormDesigner = substr(parent().FormDesigner().ActiveFileName(),".rform","Controller.pwct")
+		cFileNameInFormDesigner = substr(parent().FormDesigner().ActiveFileName(),"."+T_PWCT_FORMDESIGNER_FILEEXTENSION,T_VSF_CONTROLLER+"."+T_VSF_EXTENSION)
 		if trim(lower(oVisualSourceFile.cFileName))! = trim(lower(cFileNameInFormDesigner)) { 
 			return 
 		} 
@@ -1971,7 +1971,7 @@ class GoalDesignerController from WindowsControllerParent
 		#Select the Step (Methods) as parent
 		SelectStepByName(T_FORMEVENTS_PARENTSTEP)
 		#Create the Event Code
-		cStr = WindowsNL()+Tab+"func "+cFunctionName+WindowsNL()+Tab+Tab+"oView {"+WindowsNL()+Tab+Tab+Tab+WindowsNL()+Tab+Tab+"}"+WindowsNL()
+		cStr = WindowsNL()+Tab+"func "+cFunctionName+WindowsNL()+Tab+Tab+T_FORMEVENTS_VIEWOBJECT+" {"+WindowsNL()+Tab+Tab+Tab+WindowsNL()+Tab+Tab+"}"+WindowsNL()
 		ComponentsBrowserWindow().EnglishTextualCodeToVisualCode(cStr)
 	} 
 	func DropEvent  { 

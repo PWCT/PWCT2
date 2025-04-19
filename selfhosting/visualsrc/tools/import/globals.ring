@@ -136,3 +136,7 @@ C_KEEPBUFFER = False
 #Print Output
 C_PRINTOUTPUT = True
 C_IGNOREOUTPUT = False
+#Logical Operators Text
+T_RING2PWCT_LOT_AND = " AND "
+T_RING2PWCT_LOT_OR = " OR "
+T_RING2PWCT_LOT_NOT = " NOT "

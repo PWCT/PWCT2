@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'english'
-nStepsID                 = 269		
-nInteractionsID          = 169
+nStepsID                 = 281		
+nInteractionsID          = 175
 
 aStepsTable = [
 	[
@@ -5304,123 +5304,6 @@ qt_notoolbararea"+char(34)+""
 		]
 	],
 	[
-		118,
-		115,
-		[
-			[
-				"name",
-				"/*"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"#/*
-"
-			],
-			[
-				"interactionid",
-				71
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"/*"
-			]
-		]
-	],
-	[
-		119,
-		115,
-		[
-			[
-				"name",
-				"		Get Autocomplete Items"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"#		Get Autocomplete Items
-"
-			],
-			[
-				"interactionid",
-				72
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"		Get Autocomplete Items"
-			]
-		]
-	],
-	[
-		120,
-		115,
-		[
-			[
-				"name",
-				"	*/"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"#	*/
-"
-			],
-			[
-				"interactionid",
-				73
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"	*/"
-			]
-		]
-	],
-	[
 		116,
 		114,
 		[
@@ -5459,12 +5342,12 @@ qt_notoolbararea"+char(34)+""
 		]
 	],
 	[
-		121,
+		118,
 		10,
 		[
 			[
 				"name",
-				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">getAutoCompleteItems</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oGoalDesigner</font></span>"
+				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">addObjectsFromFormDesigner</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oGoalDesigner,aItems</font></span>"
 			],
 			[
 				"active",
@@ -5472,11 +5355,11 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"code",
-				"func getAutoCompleteItems oGoalDesigner { "
+				"func addObjectsFromFormDesigner oGoalDesigner,aItems { "
 			],
 			[
 				"interactionid",
-				74
+				71
 			],
 			[
 				"visible",
@@ -5492,13 +5375,13 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"plainname",
-				"function getAutoCompleteItems oGoalDesigner"
+				"function addObjectsFromFormDesigner oGoalDesigner,aItems"
 			]
 		]
 	],
 	[
-		122,
-		121,
+		119,
+		118,
 		[
 			[
 				"name",
@@ -5514,7 +5397,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				74
+				71
 			],
 			[
 				"visible",
@@ -5535,85 +5418,8 @@ qt_notoolbararea"+char(34)+""
 		]
 	],
 	[
-		124,
-		122,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aItems</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[]</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"aItems = []"
-			],
-			[
-				"interactionid",
-				75
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"aItems = []"
-			]
-		]
-	],
-	[
-		125,
-		122,
-		[
-			[
-				"name",
-				"Add objects from the Form Designer"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"#Add objects from the Form Designer
-"
-			],
-			[
-				"interactionid",
-				76
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"Add objects from the Form Designer"
-			]
-		]
-	],
-	[
-		126,
-		122,
+		121,
+		119,
 		[
 			[
 				"name",
@@ -5629,7 +5435,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				77
+				72
 			],
 			[
 				"visible",
@@ -5650,8 +5456,8 @@ qt_notoolbararea"+char(34)+""
 		]
 	],
 	[
-		127,
 		122,
+		119,
 		[
 			[
 				"name",
@@ -5667,7 +5473,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				78
+				73
 			],
 			[
 				"visible",
@@ -5688,8 +5494,8 @@ qt_notoolbararea"+char(34)+""
 		]
 	],
 	[
-		128,
-		122,
+		123,
+		119,
 		[
 			[
 				"name",
@@ -5705,7 +5511,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				79
+				74
 			],
 			[
 				"visible",
@@ -5726,8 +5532,388 @@ qt_notoolbararea"+char(34)+""
 		]
 	],
 	[
+		124,
+		123,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				74
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		126,
+		124,
+		[
+			[
+				"name",
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oObj[1]&nbsp;=&nbsp;&quot;Window&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"if oObj[1] = "+char(34)+"Window"+char(34)+" { "
+			],
+			[
+				"interactionid",
+				75
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"If oObj[1] = "+char(34)+"Window"+char(34)+""
+			]
+		]
+	],
+	[
+		127,
+		126,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				75
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
 		129,
+		127,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oObj[1]</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;win&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"oObj[1] = "+char(34)+"win"+char(34)+""
+			],
+			[
+				"interactionid",
+				76
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"oObj[1] = "+char(34)+"win"+char(34)+""
+			]
+		]
+	],
+	[
 		128,
+		126,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				75
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		130,
+		124,
+		[
+			[
+				"name",
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&nbsp;NOT&nbsp;find(aItems,oObj[1])</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"if  NOT find(aItems,oObj[1]) { "
+			],
+			[
+				"interactionid",
+				77
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"If  NOT find(aItems,oObj[1])"
+			]
+		]
+	],
+	[
+		131,
+		130,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				77
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		133,
+		131,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aItems+oObj[1]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"aItems+oObj[1]"
+			],
+			[
+				"interactionid",
+				78
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"aItems+oObj[1]"
+			]
+		]
+	],
+	[
+		132,
+		130,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				77
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		134,
+		124,
+		[
+			[
+				"name",
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&nbsp;NOT&nbsp;find(aItems,&quot;oView.&quot;+oObj[1])</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"if  NOT find(aItems,"+char(34)+"oView."+char(34)+"+oObj[1]) { "
+			],
+			[
+				"interactionid",
+				79
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"If  NOT find(aItems,"+char(34)+"oView."+char(34)+"+oObj[1])"
+			]
+		]
+	],
+	[
+		135,
+		134,
 		[
 			[
 				"name",
@@ -5764,12 +5950,12 @@ qt_notoolbararea"+char(34)+""
 		]
 	],
 	[
-		131,
-		129,
+		137,
+		135,
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oObj[1]&nbsp;=&nbsp;&quot;Window&quot;</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aItems+(&quot;oView.&quot;+oObj[1])</font></span>"
 			],
 			[
 				"active",
@@ -5777,7 +5963,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"code",
-				"if oObj[1] = "+char(34)+"Window"+char(34)+" { "
+				"aItems+("+char(34)+"oView."+char(34)+"+oObj[1])"
 			],
 			[
 				"interactionid",
@@ -5797,17 +5983,17 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"plainname",
-				"If oObj[1] = "+char(34)+"Window"+char(34)+""
+				"aItems+("+char(34)+"oView."+char(34)+"+oObj[1])"
 			]
 		]
 	],
 	[
-		132,
-		131,
+		136,
+		134,
 		[
 			[
 				"name",
-				"Start Here"
+				"End of IF Statement"
 			],
 			[
 				"active",
@@ -5815,11 +6001,11 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"code",
-				""
+				"} "
 			],
 			[
 				"interactionid",
-				80
+				79
 			],
 			[
 				"visible",
@@ -5827,25 +6013,25 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"stepnumber",
-				2
-			],
-			[
-				"steptype",
 				3
 			],
 			[
+				"steptype",
+				4
+			],
+			[
 				"plainname",
-				"Start Here"
+				"End of IF Statement"
 			]
 		]
 	],
 	[
-		134,
-		132,
+		138,
+		124,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oObj[1]</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;win&quot;</font></span>"
+				"Use this feature in English version"
 			],
 			[
 				"active",
@@ -5853,7 +6039,8 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"code",
-				"oObj[1] = "+char(34)+"win"+char(34)+""
+				"#Use this feature in English version
+"
 			],
 			[
 				"interactionid",
@@ -5869,211 +6056,21 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"steptype",
-				2
+				1
 			],
 			[
 				"plainname",
-				"oObj[1] = "+char(34)+"win"+char(34)+""
-			]
-		]
-	],
-	[
-		133,
-		131,
-		[
-			[
-				"name",
-				"End of IF Statement"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				80
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of IF Statement"
-			]
-		]
-	],
-	[
-		135,
-		129,
-		[
-			[
-				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&nbsp;NOT&nbsp;find(aItems,oObj[1])</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"if  NOT find(aItems,oObj[1]) { "
-			],
-			[
-				"interactionid",
-				82
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"If  NOT find(aItems,oObj[1])"
-			]
-		]
-	],
-	[
-		136,
-		135,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				82
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		138,
-		136,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aItems+oObj[1]</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"aItems+oObj[1]"
-			],
-			[
-				"interactionid",
-				83
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"aItems+oObj[1]"
-			]
-		]
-	],
-	[
-		137,
-		135,
-		[
-			[
-				"name",
-				"End of IF Statement"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				82
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of IF Statement"
+				"Use this feature in English version"
 			]
 		]
 	],
 	[
 		139,
-		129,
+		124,
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&nbsp;NOT&nbsp;find(aItems,&quot;oView.&quot;+oObj[1])</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">!T_LANGUAGE&nbsp;=&nbsp;:English</font></span>"
 			],
 			[
 				"active",
@@ -6081,11 +6078,11 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"code",
-				"if  NOT find(aItems,"+char(34)+"oView."+char(34)+"+oObj[1]) { "
+				"if !T_LANGUAGE = :English { "
 			],
 			[
 				"interactionid",
-				84
+				82
 			],
 			[
 				"visible",
@@ -6101,7 +6098,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"plainname",
-				"If  NOT find(aItems,"+char(34)+"oView."+char(34)+"+oObj[1])"
+				"If !T_LANGUAGE = :English"
 			]
 		]
 	],
@@ -6123,7 +6120,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				84
+				82
 			],
 			[
 				"visible",
@@ -6149,7 +6146,7 @@ qt_notoolbararea"+char(34)+""
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aItems+(&quot;oView.&quot;+oObj[1])</font></span>"
+				"Loop <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1</font></span>"
 			],
 			[
 				"active",
@@ -6157,11 +6154,11 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"code",
-				"aItems+("+char(34)+"oView."+char(34)+"+oObj[1])"
+				"loop 1"
 			],
 			[
 				"interactionid",
-				85
+				83
 			],
 			[
 				"visible",
@@ -6177,7 +6174,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"plainname",
-				"aItems+("+char(34)+"oView."+char(34)+"+oObj[1])"
+				"Loop 1"
 			]
 		]
 	],
@@ -6199,7 +6196,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				84
+				82
 			],
 			[
 				"visible",
@@ -6221,7 +6218,7 @@ qt_notoolbararea"+char(34)+""
 	],
 	[
 		143,
-		129,
+		124,
 		[
 			[
 				"name",
@@ -6237,7 +6234,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				86
+				84
 			],
 			[
 				"visible",
@@ -6259,7 +6256,7 @@ qt_notoolbararea"+char(34)+""
 	],
 	[
 		144,
-		129,
+		124,
 		[
 			[
 				"name",
@@ -6275,7 +6272,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				87
+				85
 			],
 			[
 				"visible",
@@ -6297,7 +6294,7 @@ qt_notoolbararea"+char(34)+""
 	],
 	[
 		145,
-		129,
+		124,
 		[
 			[
 				"name",
@@ -6313,7 +6310,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				88
+				86
 			],
 			[
 				"visible",
@@ -6351,7 +6348,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				88
+				86
 			],
 			[
 				"visible",
@@ -6389,7 +6386,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				89
+				87
 			],
 			[
 				"visible",
@@ -6427,7 +6424,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				89
+				87
 			],
 			[
 				"visible",
@@ -6465,7 +6462,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				90
+				88
 			],
 			[
 				"visible",
@@ -6503,7 +6500,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				91
+				89
 			],
 			[
 				"visible",
@@ -6541,7 +6538,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				91
+				89
 			],
 			[
 				"visible",
@@ -6579,7 +6576,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				92
+				90
 			],
 			[
 				"visible",
@@ -6617,7 +6614,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				93
+				91
 			],
 			[
 				"visible",
@@ -6655,7 +6652,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				93
+				91
 			],
 			[
 				"visible",
@@ -6693,7 +6690,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				94
+				92
 			],
 			[
 				"visible",
@@ -6731,7 +6728,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				95
+				93
 			],
 			[
 				"visible",
@@ -6769,7 +6766,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				95
+				93
 			],
 			[
 				"visible",
@@ -6807,7 +6804,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				96
+				94
 			],
 			[
 				"visible",
@@ -6845,7 +6842,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				97
+				95
 			],
 			[
 				"visible",
@@ -6883,7 +6880,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				97
+				95
 			],
 			[
 				"visible",
@@ -6921,7 +6918,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				98
+				96
 			],
 			[
 				"visible",
@@ -6959,7 +6956,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				99
+				97
 			],
 			[
 				"visible",
@@ -6997,7 +6994,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				99
+				97
 			],
 			[
 				"visible",
@@ -7035,7 +7032,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				100
+				98
 			],
 			[
 				"visible",
@@ -7073,7 +7070,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				101
+				99
 			],
 			[
 				"visible",
@@ -7111,7 +7108,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				101
+				99
 			],
 			[
 				"visible",
@@ -7149,7 +7146,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				102
+				100
 			],
 			[
 				"visible",
@@ -7187,7 +7184,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				103
+				101
 			],
 			[
 				"visible",
@@ -7225,7 +7222,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				103
+				101
 			],
 			[
 				"visible",
@@ -7263,7 +7260,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				104
+				102
 			],
 			[
 				"visible",
@@ -7301,7 +7298,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				105
+				103
 			],
 			[
 				"visible",
@@ -7339,7 +7336,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				105
+				103
 			],
 			[
 				"visible",
@@ -7377,7 +7374,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				106
+				104
 			],
 			[
 				"visible",
@@ -7415,7 +7412,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				107
+				105
 			],
 			[
 				"visible",
@@ -7453,7 +7450,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				107
+				105
 			],
 			[
 				"visible",
@@ -7491,7 +7488,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				108
+				106
 			],
 			[
 				"visible",
@@ -7529,7 +7526,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				109
+				107
 			],
 			[
 				"visible",
@@ -7567,7 +7564,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				109
+				107
 			],
 			[
 				"visible",
@@ -7605,7 +7602,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				110
+				108
 			],
 			[
 				"visible",
@@ -7643,7 +7640,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				111
+				109
 			],
 			[
 				"visible",
@@ -7681,7 +7678,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				111
+				109
 			],
 			[
 				"visible",
@@ -7719,7 +7716,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				112
+				110
 			],
 			[
 				"visible",
@@ -7757,7 +7754,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				113
+				111
 			],
 			[
 				"visible",
@@ -7795,7 +7792,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				113
+				111
 			],
 			[
 				"visible",
@@ -7833,7 +7830,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				114
+				112
 			],
 			[
 				"visible",
@@ -7871,7 +7868,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				115
+				113
 			],
 			[
 				"visible",
@@ -7909,7 +7906,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				115
+				113
 			],
 			[
 				"visible",
@@ -7947,7 +7944,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				116
+				114
 			],
 			[
 				"visible",
@@ -7985,7 +7982,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				117
+				115
 			],
 			[
 				"visible",
@@ -8023,7 +8020,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				117
+				115
 			],
 			[
 				"visible",
@@ -8061,7 +8058,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				118
+				116
 			],
 			[
 				"visible",
@@ -8099,7 +8096,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				119
+				117
 			],
 			[
 				"visible",
@@ -8137,7 +8134,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				119
+				117
 			],
 			[
 				"visible",
@@ -8175,7 +8172,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				120
+				118
 			],
 			[
 				"visible",
@@ -8213,7 +8210,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				121
+				119
 			],
 			[
 				"visible",
@@ -8251,7 +8248,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				121
+				119
 			],
 			[
 				"visible",
@@ -8289,7 +8286,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				122
+				120
 			],
 			[
 				"visible",
@@ -8327,7 +8324,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				123
+				121
 			],
 			[
 				"visible",
@@ -8365,7 +8362,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				123
+				121
 			],
 			[
 				"visible",
@@ -8403,7 +8400,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				124
+				122
 			],
 			[
 				"visible",
@@ -8441,7 +8438,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				125
+				123
 			],
 			[
 				"visible",
@@ -8479,7 +8476,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				125
+				123
 			],
 			[
 				"visible",
@@ -8517,7 +8514,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				126
+				124
 			],
 			[
 				"visible",
@@ -8555,7 +8552,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				127
+				125
 			],
 			[
 				"visible",
@@ -8593,7 +8590,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				127
+				125
 			],
 			[
 				"visible",
@@ -8631,7 +8628,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				128
+				126
 			],
 			[
 				"visible",
@@ -8669,7 +8666,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				129
+				127
 			],
 			[
 				"visible",
@@ -8707,7 +8704,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				129
+				127
 			],
 			[
 				"visible",
@@ -8745,7 +8742,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				130
+				128
 			],
 			[
 				"visible",
@@ -8783,7 +8780,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				131
+				129
 			],
 			[
 				"visible",
@@ -8821,7 +8818,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				131
+				129
 			],
 			[
 				"visible",
@@ -8859,7 +8856,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				132
+				130
 			],
 			[
 				"visible",
@@ -8897,7 +8894,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				133
+				131
 			],
 			[
 				"visible",
@@ -8935,7 +8932,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				133
+				131
 			],
 			[
 				"visible",
@@ -8973,7 +8970,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				134
+				132
 			],
 			[
 				"visible",
@@ -9011,7 +9008,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				135
+				133
 			],
 			[
 				"visible",
@@ -9049,7 +9046,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				135
+				133
 			],
 			[
 				"visible",
@@ -9087,7 +9084,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				136
+				134
 			],
 			[
 				"visible",
@@ -9125,7 +9122,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				137
+				135
 			],
 			[
 				"visible",
@@ -9163,7 +9160,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				137
+				135
 			],
 			[
 				"visible",
@@ -9201,7 +9198,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				138
+				136
 			],
 			[
 				"visible",
@@ -9239,7 +9236,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				139
+				137
 			],
 			[
 				"visible",
@@ -9277,7 +9274,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				139
+				137
 			],
 			[
 				"visible",
@@ -9315,7 +9312,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				140
+				138
 			],
 			[
 				"visible",
@@ -9353,7 +9350,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				141
+				139
 			],
 			[
 				"visible",
@@ -9391,7 +9388,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				141
+				139
 			],
 			[
 				"visible",
@@ -9429,7 +9426,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				142
+				140
 			],
 			[
 				"visible",
@@ -9467,7 +9464,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				143
+				141
 			],
 			[
 				"visible",
@@ -9505,7 +9502,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				143
+				141
 			],
 			[
 				"visible",
@@ -9543,7 +9540,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				144
+				142
 			],
 			[
 				"visible",
@@ -9581,7 +9578,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				145
+				143
 			],
 			[
 				"visible",
@@ -9619,7 +9616,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				145
+				143
 			],
 			[
 				"visible",
@@ -9657,7 +9654,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				146
+				144
 			],
 			[
 				"visible",
@@ -9695,7 +9692,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				88
+				86
 			],
 			[
 				"visible",
@@ -9717,7 +9714,7 @@ qt_notoolbararea"+char(34)+""
 	],
 	[
 		235,
-		129,
+		124,
 		[
 			[
 				"name",
@@ -9733,7 +9730,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				147
+				145
 			],
 			[
 				"visible",
@@ -9771,7 +9768,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				147
+				145
 			],
 			[
 				"visible",
@@ -9809,7 +9806,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				148
+				146
 			],
 			[
 				"visible",
@@ -9847,7 +9844,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				149
+				147
 			],
 			[
 				"visible",
@@ -9885,7 +9882,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				149
+				147
 			],
 			[
 				"visible",
@@ -9911,7 +9908,7 @@ qt_notoolbararea"+char(34)+""
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aItems+(oObj[1]+&quot;.&quot;+cMethod+&quot;()&quot;)</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aItems+(oObj[1]+&quot;.&quot;+cMethod)</font></span>"
 			],
 			[
 				"active",
@@ -9919,11 +9916,11 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"code",
-				"aItems+(oObj[1]+"+char(34)+"."+char(34)+"+cMethod+"+char(34)+"()"+char(34)+")"
+				"aItems+(oObj[1]+"+char(34)+"."+char(34)+"+cMethod)"
 			],
 			[
 				"interactionid",
-				150
+				148
 			],
 			[
 				"visible",
@@ -9939,7 +9936,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"plainname",
-				"aItems+(oObj[1]+"+char(34)+"."+char(34)+"+cMethod+"+char(34)+"()"+char(34)+")"
+				"aItems+(oObj[1]+"+char(34)+"."+char(34)+"+cMethod)"
 			]
 		]
 	],
@@ -9949,7 +9946,7 @@ qt_notoolbararea"+char(34)+""
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aItems+(&quot;oView.&quot;+oObj[1]+&quot;.&quot;+cMethod+&quot;()&quot;)</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aItems+(&quot;oView.&quot;+oObj[1]+&quot;.&quot;+cMethod)</font></span>"
 			],
 			[
 				"active",
@@ -9957,11 +9954,11 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"code",
-				"aItems+("+char(34)+"oView."+char(34)+"+oObj[1]+"+char(34)+"."+char(34)+"+cMethod+"+char(34)+"()"+char(34)+")"
+				"aItems+("+char(34)+"oView."+char(34)+"+oObj[1]+"+char(34)+"."+char(34)+"+cMethod)"
 			],
 			[
 				"interactionid",
-				151
+				149
 			],
 			[
 				"visible",
@@ -9977,7 +9974,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"plainname",
-				"aItems+("+char(34)+"oView."+char(34)+"+oObj[1]+"+char(34)+"."+char(34)+"+cMethod+"+char(34)+"()"+char(34)+")"
+				"aItems+("+char(34)+"oView."+char(34)+"+oObj[1]+"+char(34)+"."+char(34)+"+cMethod)"
 			]
 		]
 	],
@@ -9999,7 +9996,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				149
+				147
 			],
 			[
 				"visible",
@@ -10037,7 +10034,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				147
+				145
 			],
 			[
 				"visible",
@@ -10058,889 +10055,12 @@ qt_notoolbararea"+char(34)+""
 		]
 	],
 	[
-		130,
-		128,
-		[
-			[
-				"name",
-				"End of For Loop"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				79
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of For Loop"
-			]
-		]
-	],
-	[
-		244,
-		122,
-		[
-			[
-				"name",
-				"Get Steps Tree Data"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"#Get Steps Tree Data
-"
-			],
-			[
-				"interactionid",
-				152
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"Get Steps Tree Data"
-			]
-		]
-	],
-	[
-		245,
-		122,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aTree</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oGoalDesigner.oModel.oStepsTreeModel.GetData()</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"aTree = oGoalDesigner.oModel.oStepsTreeModel.GetData()"
-			],
-			[
-				"interactionid",
-				153
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"aTree = oGoalDesigner.oModel.oStepsTreeModel.GetData()"
-			]
-		]
-	],
-	[
-		246,
-		122,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nAutoCompleteStepsTreeCache</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">len(aTree)</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"nAutoCompleteStepsTreeCache = len(aTree)"
-			],
-			[
-				"interactionid",
-				154
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"nAutoCompleteStepsTreeCache = len(aTree)"
-			]
-		]
-	],
-	[
-		247,
-		122,
-		[
-			[
-				"name",
-				"Add words from Steps Tree"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"#Add words from Steps Tree
-"
-			],
-			[
-				"interactionid",
-				155
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"Add words from Steps Tree"
-			]
-		]
-	],
-	[
-		248,
-		122,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cCode</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;&quot;</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"cCode = "+char(34)+""+char(34)+""
-			],
-			[
-				"interactionid",
-				156
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"cCode = "+char(34)+""+char(34)+""
-			]
-		]
-	],
-	[
-		249,
-		122,
-		[
-			[
-				"name",
-				"For <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">item</font></span> in <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aTree</font></span> step <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"for item in aTree step 1 { "
-			],
-			[
-				"interactionid",
-				157
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"For item in aTree step 1"
-			]
-		]
-	],
-	[
-		250,
-		249,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				157
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		252,
-		250,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aContent</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">item[C_TREEMODEL_CONTENT]</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"aContent = item[C_TREEMODEL_CONTENT]"
-			],
-			[
-				"interactionid",
-				158
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"aContent = item[C_TREEMODEL_CONTENT]"
-			]
-		]
-	],
-	[
-		253,
-		250,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cCode&nbsp;+=&nbsp;aContent[:code]+nl</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"cCode += aContent[:code]+nl"
-			],
-			[
-				"interactionid",
-				159
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"cCode += aContent[:code]+nl"
-			]
-		]
-	],
-	[
-		251,
-		249,
-		[
-			[
-				"name",
-				"End of For Loop"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				157
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of For Loop"
-			]
-		]
-	],
-	[
-		254,
-		122,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aWords</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">sort(split(cCode,&quot;&nbsp;&quot;))</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"aWords = sort(split(cCode,"+char(34)+" "+char(34)+"))"
-			],
-			[
-				"interactionid",
-				160
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"aWords = sort(split(cCode,"+char(34)+" "+char(34)+"))"
-			]
-		]
-	],
-	[
-		255,
-		122,
-		[
-			[
-				"name",
-				"Remove Duplication"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"#Remove Duplication
-"
-			],
-			[
-				"interactionid",
-				161
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"Remove Duplication"
-			]
-		]
-	],
-	[
-		256,
-		122,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cLast</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;&quot;</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"cLast = "+char(34)+""+char(34)+""
-			],
-			[
-				"interactionid",
-				162
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"cLast = "+char(34)+""+char(34)+""
-			]
-		]
-	],
-	[
-		257,
-		122,
-		[
-			[
-				"name",
-				"For <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">word</font></span> in <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aWords</font></span> step <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"for word in aWords step 1 { "
-			],
-			[
-				"interactionid",
-				163
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"For word in aWords step 1"
-			]
-		]
-	],
-	[
-		258,
-		257,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				163
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		260,
-		258,
-		[
-			[
-				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">word!&nbsp;=&nbsp;cLast</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"if word! = cLast { "
-			],
-			[
-				"interactionid",
-				164
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"If word! = cLast"
-			]
-		]
-	],
-	[
-		261,
-		260,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				164
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		263,
-		261,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aItems+word</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"aItems+word"
-			],
-			[
-				"interactionid",
-				165
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"aItems+word"
-			]
-		]
-	],
-	[
-		264,
-		261,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cLast</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">word</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"cLast = word"
-			],
-			[
-				"interactionid",
-				166
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"cLast = word"
-			]
-		]
-	],
-	[
-		262,
-		260,
-		[
-			[
-				"name",
-				"End of IF Statement"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				164
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of IF Statement"
-			]
-		]
-	],
-	[
-		259,
-		257,
-		[
-			[
-				"name",
-				"End of For Loop"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				163
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of For Loop"
-			]
-		]
-	],
-	[
-		265,
-		122,
-		[
-			[
-				"name",
-				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aItems</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"return aItems"
-			],
-			[
-				"interactionid",
-				167
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Return aItems"
-			]
-		]
-	],
-	[
+		125,
 		123,
-		121,
 		[
 			[
 				"name",
-				"End of Function"
+				"End of For Loop"
 			],
 			[
 				"active",
@@ -10968,17 +10088,17 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"plainname",
-				"End of Function"
+				"End of For Loop"
 			]
 		]
 	],
 	[
-		266,
-		10,
+		244,
+		119,
 		[
 			[
 				"name",
-				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">CheckUsingAutoCompleteCache</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oGoalDesigner</font></span>"
+				"/*"
 			],
 			[
 				"active",
@@ -10986,7 +10106,850 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"code",
-				"func CheckUsingAutoCompleteCache oGoalDesigner { "
+				"#/*
+"
+			],
+			[
+				"interactionid",
+				150
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"/*"
+			]
+		]
+	],
+	[
+		245,
+		119,
+		[
+			[
+				"name",
+				"		Get Autocomplete Items"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#		Get Autocomplete Items
+"
+			],
+			[
+				"interactionid",
+				151
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"		Get Autocomplete Items"
+			]
+		]
+	],
+	[
+		246,
+		119,
+		[
+			[
+				"name",
+				"	*/"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	*/
+"
+			],
+			[
+				"interactionid",
+				152
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	*/"
+			]
+		]
+	],
+	[
+		120,
+		118,
+		[
+			[
+				"name",
+				"End of Function"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				71
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of Function"
+			]
+		]
+	],
+	[
+		247,
+		10,
+		[
+			[
+				"name",
+				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">getAutoCompleteItems</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oGoalDesigner</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"func getAutoCompleteItems oGoalDesigner { "
+			],
+			[
+				"interactionid",
+				153
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"function getAutoCompleteItems oGoalDesigner"
+			]
+		]
+	],
+	[
+		248,
+		247,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				153
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		250,
+		248,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aItems</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"aItems = []"
+			],
+			[
+				"interactionid",
+				154
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"aItems = []"
+			]
+		]
+	],
+	[
+		251,
+		248,
+		[
+			[
+				"name",
+				"Add objects from the Form Designer"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Add objects from the Form Designer
+"
+			],
+			[
+				"interactionid",
+				155
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Add objects from the Form Designer"
+			]
+		]
+	],
+	[
+		252,
+		248,
+		[
+			[
+				"name",
+				"addObjectsFromFormDesigner(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oGoalDesigner,aItems</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"addObjectsFromFormDesigner(oGoalDesigner,aItems)"
+			],
+			[
+				"interactionid",
+				156
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"addObjectsFromFormDesigner(oGoalDesigner,aItems)"
+			]
+		]
+	],
+	[
+		253,
+		248,
+		[
+			[
+				"name",
+				"Get Steps Tree Data"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Get Steps Tree Data
+"
+			],
+			[
+				"interactionid",
+				157
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Get Steps Tree Data"
+			]
+		]
+	],
+	[
+		254,
+		248,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aTree</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oGoalDesigner.oModel.oStepsTreeModel.GetData()</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"aTree = oGoalDesigner.oModel.oStepsTreeModel.GetData()"
+			],
+			[
+				"interactionid",
+				158
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"aTree = oGoalDesigner.oModel.oStepsTreeModel.GetData()"
+			]
+		]
+	],
+	[
+		255,
+		248,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nAutoCompleteStepsTreeCache</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">len(aTree)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"nAutoCompleteStepsTreeCache = len(aTree)"
+			],
+			[
+				"interactionid",
+				159
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"nAutoCompleteStepsTreeCache = len(aTree)"
+			]
+		]
+	],
+	[
+		256,
+		248,
+		[
+			[
+				"name",
+				"Add words from Steps Tree"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Add words from Steps Tree
+"
+			],
+			[
+				"interactionid",
+				160
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Add words from Steps Tree"
+			]
+		]
+	],
+	[
+		257,
+		248,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cCode</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cCode = "+char(34)+""+char(34)+""
+			],
+			[
+				"interactionid",
+				161
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cCode = "+char(34)+""+char(34)+""
+			]
+		]
+	],
+	[
+		258,
+		248,
+		[
+			[
+				"name",
+				"For <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">item</font></span> in <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aTree</font></span> step <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"for item in aTree step 1 { "
+			],
+			[
+				"interactionid",
+				162
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"For item in aTree step 1"
+			]
+		]
+	],
+	[
+		259,
+		258,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				162
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		261,
+		259,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aContent</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">item[C_TREEMODEL_CONTENT]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"aContent = item[C_TREEMODEL_CONTENT]"
+			],
+			[
+				"interactionid",
+				163
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"aContent = item[C_TREEMODEL_CONTENT]"
+			]
+		]
+	],
+	[
+		262,
+		259,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cCode&nbsp;+=&nbsp;aContent[:plainname]+nl</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cCode += aContent[:plainname]+nl"
+			],
+			[
+				"interactionid",
+				164
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cCode += aContent[:plainname]+nl"
+			]
+		]
+	],
+	[
+		260,
+		258,
+		[
+			[
+				"name",
+				"End of For Loop"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				162
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of For Loop"
+			]
+		]
+	],
+	[
+		263,
+		248,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aWords</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">sort(split(cCode,&quot;&nbsp;&quot;))</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"aWords = sort(split(cCode,"+char(34)+" "+char(34)+"))"
+			],
+			[
+				"interactionid",
+				165
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"aWords = sort(split(cCode,"+char(34)+" "+char(34)+"))"
+			]
+		]
+	],
+	[
+		264,
+		248,
+		[
+			[
+				"name",
+				"Remove Duplication and words contains the dot operator"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Remove Duplication and words contains the dot operator
+"
+			],
+			[
+				"interactionid",
+				166
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Remove Duplication and words contains the dot operator"
+			]
+		]
+	],
+	[
+		265,
+		248,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cLast</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cLast = "+char(34)+""+char(34)+""
+			],
+			[
+				"interactionid",
+				167
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cLast = "+char(34)+""+char(34)+""
+			]
+		]
+	],
+	[
+		266,
+		248,
+		[
+			[
+				"name",
+				"For <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">word</font></span> in <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aWords</font></span> step <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"for word in aWords step 1 { "
 			],
 			[
 				"interactionid",
@@ -11006,7 +10969,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"plainname",
-				"function CheckUsingAutoCompleteCache oGoalDesigner"
+				"For word in aWords step 1"
 			]
 		]
 	],
@@ -11054,6 +11017,500 @@ qt_notoolbararea"+char(34)+""
 		[
 			[
 				"name",
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">word!&nbsp;=&nbsp;cLast</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"if word! = cLast { "
+			],
+			[
+				"interactionid",
+				169
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"If word! = cLast"
+			]
+		]
+	],
+	[
+		270,
+		269,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				169
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		272,
+		270,
+		[
+			[
+				"name",
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">!(substr(word,&quot;.&quot;)&nbsp;OR&nbsp;substr(word,&quot;(&quot;))</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"if !(substr(word,"+char(34)+"."+char(34)+") OR substr(word,"+char(34)+"("+char(34)+")) { "
+			],
+			[
+				"interactionid",
+				170
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"If !(substr(word,"+char(34)+"."+char(34)+") OR substr(word,"+char(34)+"("+char(34)+"))"
+			]
+		]
+	],
+	[
+		273,
+		272,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				170
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		275,
+		273,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aItems+word</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"aItems+word"
+			],
+			[
+				"interactionid",
+				171
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"aItems+word"
+			]
+		]
+	],
+	[
+		274,
+		272,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				170
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		276,
+		270,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cLast</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">word</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cLast = word"
+			],
+			[
+				"interactionid",
+				172
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cLast = word"
+			]
+		]
+	],
+	[
+		271,
+		269,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				169
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		268,
+		266,
+		[
+			[
+				"name",
+				"End of For Loop"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				168
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of For Loop"
+			]
+		]
+	],
+	[
+		277,
+		248,
+		[
+			[
+				"name",
+				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aItems</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"return aItems"
+			],
+			[
+				"interactionid",
+				173
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Return aItems"
+			]
+		]
+	],
+	[
+		249,
+		247,
+		[
+			[
+				"name",
+				"End of Function"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				153
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of Function"
+			]
+		]
+	],
+	[
+		278,
+		10,
+		[
+			[
+				"name",
+				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">CheckUsingAutoCompleteCache</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oGoalDesigner</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"func CheckUsingAutoCompleteCache oGoalDesigner { "
+			],
+			[
+				"interactionid",
+				174
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"function CheckUsingAutoCompleteCache oGoalDesigner"
+			]
+		]
+	],
+	[
+		279,
+		278,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				174
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		281,
+		279,
+		[
+			[
+				"name",
 				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(len(&nbsp;oGoalDesigner.&nbsp;oModel.&nbsp;oStepsTreeModel.&nbsp;aList&nbsp;)&nbsp;=&nbsp;oGoalDesigner.&nbsp;nAutoCompleteStepsTreeCache&nbsp;)&nbsp;&nbsp;and&nbsp;(&nbsp;len(&nbsp;oGoalDesigner.&nbsp;parent()&nbsp;.&nbsp;formdesigner()&nbsp;.&nbsp;oModel.&nbsp;getObjects()&nbsp;)&nbsp;=&nbsp;oGoalDesigner.&nbsp;nAutoCompleteFormObjectsCache&nbsp;)&nbsp;</font></span>"
 			],
 			[
@@ -11066,7 +11523,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				169
+				175
 			],
 			[
 				"visible",
@@ -11087,8 +11544,8 @@ qt_notoolbararea"+char(34)+""
 		]
 	],
 	[
-		268,
-		266,
+		280,
+		278,
 		[
 			[
 				"name",
@@ -11104,7 +11561,7 @@ qt_notoolbararea"+char(34)+""
 			],
 			[
 				"interactionid",
-				168
+				174
 			],
 			[
 				"visible",
@@ -11283,280 +11740,280 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"value;;_RV_;;**	Project : Programming Without Coding Technology (PWCT) Version 2.0;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"value;;_RV_;;**	File Purpose :  Auto-complete;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"value;;_RV_;;**	Date : 2019.10.21;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"value;;_RV_;;**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"class",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"value;;_RV_;;AutoComplete;;_RV_;;value2;;_RV_;;;;_RV_;;value3;;_RV_;;2;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"leftside;;_RV_;;lAddCommonStrings;;_RV_;;rightside;;_RV_;;True;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"leftside;;_RV_;;lAddLanguageItems;;_RV_;;rightside;;_RV_;;True;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"leftside;;_RV_;;lAddRingFunctions;;_RV_;;rightside;;_RV_;;True;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"newobj",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"value;;_RV_;;oList;;_RV_;;value2;;_RV_;;qStringList;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddDefaultItems;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"leftside;;_RV_;;nSize;;_RV_;;rightside;;_RV_;;oList.count();;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"leftside;;_RV_;;lSupportAutoComplete;;_RV_;;rightside;;_RV_;;True;;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"ifstatement",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"condition;;_RV_;;PWCTIsMobile(:AutoComplete);;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"leftside;;_RV_;;lSupportAutoComplete;;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"func",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"name;;_RV_;;AddDefaultItems;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"value;;_RV_;;Add Common Strings;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"ifstatement",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"condition;;_RV_;;lAddCommonStrings;;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddCommonStrings;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"value;;_RV_;;Add GUI Items;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"ifstatement",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"condition;;_RV_;;lAddLanguageItems;;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddLanguageItems;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"value;;_RV_;;Add Constants;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"value;;_RV_;;Add Ring Functions;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddConstants;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"ifstatement",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"condition;;_RV_;;lAddRingFunctions;;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddFunctions;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		30,
 		1,
 		"func",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"name;;_RV_;;AddCommonStrings;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddItems;;_RV_;;parameters;;_RV_;;["+char(34)+"Hello"+char(34)+","+char(34)+"World"+char(34)+","+char(34)+"Welcome"+char(34)+","+char(34)+"Enter"+char(34)+","+char(34)+"your"+char(34)+","+char(34)+"name"+char(34)+","+char(34)+"What"+char(34)+","+char(34)+"is"+char(34)+","+char(34)+"zero"+char(34)+","+char(34)+"one"+char(34)+","+char(34)+"two"+char(34)+","+char(34)+"three"+char(34)+","+char(34)+"four"+char(34)+","+char(34)+"five"+char(34)+","+char(34)+"six"+char(34)+","+char(34)+"seven"+char(34)+","+char(34)+"eight"+char(34)+","+char(34)+"nine"+char(34)+","+char(34)+"ten"+char(34)+","+char(34)+"True"+char(34)+","+char(34)+"False"+char(34)+","+char(34)+"nX"+char(34)+","+char(34)+"nY"+char(34)+","+char(34)+"nZ"+char(34)+","+char(34)+"cName"+char(34)+"];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		32,
 		1,
 		"func",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"name;;_RV_;;AddLanguageItems;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		33,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddItems;;_RV_;;parameters;;_RV_;;["+char(34)+"oView"+char(34)+","+char(34)+"oView {}"+char(34)+","+char(34)+"self"+char(34)+","+char(34)+"this"+char(34)+"];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		34,
 		1,
 		"func",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"name;;_RV_;;AddConstants;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		35,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"leftside;;_RV_;;cConstants;;_RV_;;rightside;;_RV_;;"+char(34)+"qt_alignleft
 qt_alignright
 qt_alignhcenter
@@ -11906,1072 +12363,1120 @@ qt_notoolbararea"+char(34)+";;_RV_;;"
 		36,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddItems;;_RV_;;parameters;;_RV_;;str2List(cConstants);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		37,
 		1,
 		"func",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"name;;_RV_;;AddItems;;_RV_;;parameters;;_RV_;;aList;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		38,
 		1,
 		"forinloop",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"variable;;_RV_;;cItem;;_RV_;;in;;_RV_;;aList;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		39,
 		1,
 		"callmethod",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oList;;_RV_;;name;;_RV_;;append;;_RV_;;parameters;;_RV_;;cItem;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		40,
 		1,
 		"func",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"name;;_RV_;;DeleteExtraItems;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		41,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"leftside;;_RV_;;nMax;;_RV_;;rightside;;_RV_;;oList.count();;_RV_;;"
 	],
 	[
 		42,
 		1,
 		"forloop",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"start;;_RV_;;t = nSize+1;;_RV_;;to;;_RV_;;nMax;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		43,
 		1,
 		"callmethod",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oList;;_RV_;;name;;_RV_;;removelast;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		44,
 		1,
 		"func",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"name;;_RV_;;loadExtraItems;;_RV_;;parameters;;_RV_;;oGoalDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		45,
 		1,
 		"ifstatement",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"condition;;_RV_;;CheckUsingAutoCompleteCache(oGoalDesigner);;_RV_;;"
 	],
 	[
 		46,
 		1,
 		"return",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		47,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"value;;_RV_;;Delete Extra (Dynamic) Items;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		48,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"value;;_RV_;;Add the Dynamic Items;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		49,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DeleteExtraItems;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		50,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddItems;;_RV_;;parameters;;_RV_;;getAutoCompleteItems(oGoalDesigner);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		51,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"value;;_RV_;;Remove Duplication;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		52,
 		1,
 		"callmethod",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oList;;_RV_;;name;;_RV_;;removeDuplicates;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		53,
 		1,
 		"func",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"name;;_RV_;;supportControl;;_RV_;;parameters;;_RV_;;oGoalDesigner,oGUIControl;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		54,
 		1,
 		"return",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"value;;_RV_;;supportControlImplementation( oGoalDesigner, oGUIControl, True ) ;;_RV_;;"
 	],
 	[
 		55,
 		1,
 		"func",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"name;;_RV_;;supportControlWithoutSettingItAsParent;;_RV_;;parameters;;_RV_;;oGoalDesigner,oGUIControl;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		56,
 		1,
 		"return",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"value;;_RV_;;supportControlImplementation( oGoalDesigner, oGUIControl, False ) ;;_RV_;;"
 	],
 	[
 		57,
 		1,
 		"func",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"name;;_RV_;;supportControlImplementation;;_RV_;;parameters;;_RV_;;oGoalDesigner,oGUIControl,lSetParent;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		58,
 		1,
 		"ifstatement",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"condition;;_RV_;; NOT lSupportAutoComplete;;_RV_;;"
 	],
 	[
 		59,
 		1,
 		"return",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		60,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;loadExtraItems;;_RV_;;parameters;;_RV_;;oGoalDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		61,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"value;;_RV_;;Create the Completer Object;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		62,
 		1,
 		"ifstatement",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"condition;;_RV_;;lSetParent;;_RV_;;"
 	],
 	[
 		63,
 		1,
 		"newobj",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"value;;_RV_;;oCompleter;;_RV_;;value2;;_RV_;;qCompleter4;;_RV_;;value3;;_RV_;;oList,oGUIControl;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		64,
 		1,
 		"else",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		""
 	],
 	[
 		65,
 		1,
 		"newobj",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"value;;_RV_;;oCompleter;;_RV_;;value2;;_RV_;;qCompleter4;;_RV_;;value3;;_RV_;;oList,NULL;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		66,
 		1,
 		"callmethod",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oCompleter;;_RV_;;name;;_RV_;;setCaseSensitivity;;_RV_;;parameters;;_RV_;;Qt_CaseInsensitive;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		67,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"value;;_RV_;;Use the Completer Object;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		68,
 		1,
 		"callmethod",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oGUIControl;;_RV_;;name;;_RV_;;setCompleter;;_RV_;;parameters;;_RV_;;oCompleter;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		69,
 		1,
 		"func",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"name;;_RV_;;AddFunctions;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		70,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddItems;;_RV_;;parameters;;_RV_;;cfunctions();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		71,
 		1,
-		"comment_text",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"func",
+		"19/04/2025",
+		"06:52:07",
+		"name;;_RV_;;addObjectsFromFormDesigner;;_RV_;;parameters;;_RV_;;oGoalDesigner,aItems;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		72,
 		1,
-		"comment_text",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;		Get Autocomplete Items;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"19/04/2025",
+		"06:52:07",
+		"leftside;;_RV_;;aObjects;;_RV_;;rightside;;_RV_;;oGoalDesigner.parent().formdesigner().oModel.getObjects();;_RV_;;"
 	],
 	[
 		73,
 		1,
-		"comment_text",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;	*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"19/04/2025",
+		"06:52:07",
+		"leftside;;_RV_;;nAutoCompleteFormObjectsCache;;_RV_;;rightside;;_RV_;;len(aObjects);;_RV_;;"
 	],
 	[
 		74,
 		1,
-		"func",
-		"04/03/2025",
-		"21:25:58",
-		"name;;_RV_;;getAutoCompleteItems;;_RV_;;parameters;;_RV_;;oGoalDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"forinloop",
+		"19/04/2025",
+		"06:52:07",
+		"variable;;_RV_;;oObj;;_RV_;;in;;_RV_;;aObjects;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		75,
 		1,
-		"assignment",
-		"04/03/2025",
-		"21:25:58",
-		"leftside;;_RV_;;aItems;;_RV_;;rightside;;_RV_;;[];;_RV_;;"
+		"ifstatement",
+		"19/04/2025",
+		"06:52:07",
+		"condition;;_RV_;;oObj[1] = "+char(34)+"Window"+char(34)+";;_RV_;;"
 	],
 	[
 		76,
 		1,
-		"comment_text",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;Add objects from the Form Designer;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"19/04/2025",
+		"06:52:07",
+		"leftside;;_RV_;;oObj[1];;_RV_;;rightside;;_RV_;;"+char(34)+"win"+char(34)+";;_RV_;;"
 	],
 	[
 		77,
 		1,
-		"assignment",
-		"04/03/2025",
-		"21:25:58",
-		"leftside;;_RV_;;aObjects;;_RV_;;rightside;;_RV_;;oGoalDesigner.parent().formdesigner().oModel.getObjects();;_RV_;;"
+		"ifstatement",
+		"19/04/2025",
+		"06:52:07",
+		"condition;;_RV_;; NOT find(aItems,oObj[1]);;_RV_;;"
 	],
 	[
 		78,
 		1,
-		"assignment",
-		"04/03/2025",
-		"21:25:58",
-		"leftside;;_RV_;;nAutoCompleteFormObjectsCache;;_RV_;;rightside;;_RV_;;len(aObjects);;_RV_;;"
+		"freetyping",
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;aItems+oObj[1];;_RV_;;"
 	],
 	[
 		79,
 		1,
-		"forinloop",
-		"04/03/2025",
-		"21:25:58",
-		"variable;;_RV_;;oObj;;_RV_;;in;;_RV_;;aObjects;;_RV_;;step;;_RV_;;1;;_RV_;;"
+		"ifstatement",
+		"19/04/2025",
+		"06:52:07",
+		"condition;;_RV_;; NOT find(aItems,"+char(34)+"oView."+char(34)+"+oObj[1]);;_RV_;;"
 	],
 	[
 		80,
 		1,
-		"ifstatement",
-		"04/03/2025",
-		"21:25:58",
-		"condition;;_RV_;;oObj[1] = "+char(34)+"Window"+char(34)+";;_RV_;;"
+		"freetyping",
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;aItems+("+char(34)+"oView."+char(34)+"+oObj[1]);;_RV_;;"
 	],
 	[
 		81,
 		1,
-		"assignment",
-		"04/03/2025",
-		"21:25:58",
-		"leftside;;_RV_;;oObj[1];;_RV_;;rightside;;_RV_;;"+char(34)+"win"+char(34)+";;_RV_;;"
+		"comment_text",
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;Use this feature in English version;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		82,
 		1,
 		"ifstatement",
-		"04/03/2025",
-		"21:25:58",
-		"condition;;_RV_;; NOT find(aItems,oObj[1]);;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"condition;;_RV_;;!T_LANGUAGE = :English;;_RV_;;"
 	],
 	[
 		83,
 		1,
-		"freetyping",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;aItems+oObj[1];;_RV_;;"
+		"loop",
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;1;;_RV_;;"
 	],
 	[
 		84,
 		1,
-		"ifstatement",
-		"04/03/2025",
-		"21:25:58",
-		"condition;;_RV_;; NOT find(aItems,"+char(34)+"oView."+char(34)+"+oObj[1]);;_RV_;;"
+		"assignment",
+		"19/04/2025",
+		"06:52:07",
+		"leftside;;_RV_;;cClass;;_RV_;;rightside;;_RV_;;classname(oObj[2]);;_RV_;;"
 	],
 	[
 		85,
 		1,
-		"freetyping",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;aItems+("+char(34)+"oView."+char(34)+"+oObj[1]);;_RV_;;"
+		"assignment",
+		"19/04/2025",
+		"06:52:07",
+		"leftside;;_RV_;;lKnown;;_RV_;;rightside;;_RV_;;True;;_RV_;;"
 	],
 	[
 		86,
 		1,
-		"assignment",
-		"04/03/2025",
-		"21:25:58",
-		"leftside;;_RV_;;cClass;;_RV_;;rightside;;_RV_;;classname(oObj[2]);;_RV_;;"
+		"switch",
+		"19/04/2025",
+		"06:52:07",
+		"variable;;_RV_;;cClass;;_RV_;;"
 	],
 	[
 		87,
 		1,
-		"assignment",
-		"04/03/2025",
-		"21:25:58",
-		"leftside;;_RV_;;lKnown;;_RV_;;rightside;;_RV_;;True;;_RV_;;"
+		"case",
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;"+char(34)+"formdesigner_qwidget"+char(34)+";;_RV_;;"
 	],
 	[
 		88,
 		1,
-		"switch",
-		"04/03/2025",
-		"21:25:58",
-		"variable;;_RV_;;cClass;;_RV_;;"
+		"newobj",
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qwidget;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		89,
 		1,
 		"case",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;"+char(34)+"formdesigner_qwidget"+char(34)+";;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;"+char(34)+"formdesigner_qlabel"+char(34)+";;_RV_;;"
 	],
 	[
 		90,
 		1,
 		"newobj",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qwidget;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qlabel;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		91,
 		1,
 		"case",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;"+char(34)+"formdesigner_qlabel"+char(34)+";;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;"+char(34)+"formdesigner_qpushbutton"+char(34)+";;_RV_;;"
 	],
 	[
 		92,
 		1,
 		"newobj",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qlabel;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qpushbutton;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		93,
 		1,
 		"case",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;"+char(34)+"formdesigner_qpushbutton"+char(34)+";;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;"+char(34)+"formdesigner_qlineedit"+char(34)+";;_RV_;;"
 	],
 	[
 		94,
 		1,
 		"newobj",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qpushbutton;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qlineedit;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		95,
 		1,
 		"case",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;"+char(34)+"formdesigner_qlineedit"+char(34)+";;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;"+char(34)+"formdesigner_qtextedit"+char(34)+";;_RV_;;"
 	],
 	[
 		96,
 		1,
 		"newobj",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qlineedit;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qtextedit;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		97,
 		1,
 		"case",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;"+char(34)+"formdesigner_qtextedit"+char(34)+";;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;"+char(34)+"formdesigner_qlistwidget"+char(34)+";;_RV_;;"
 	],
 	[
 		98,
 		1,
 		"newobj",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qtextedit;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qlistwidget;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		99,
 		1,
 		"case",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;"+char(34)+"formdesigner_qlistwidget"+char(34)+";;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;"+char(34)+"formdesigner_qcheckbox"+char(34)+";;_RV_;;"
 	],
 	[
 		100,
 		1,
 		"newobj",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qlistwidget;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qcheckbox;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		101,
 		1,
 		"case",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;"+char(34)+"formdesigner_qcheckbox"+char(34)+";;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;"+char(34)+"formdesigner_qimage"+char(34)+";;_RV_;;"
 	],
 	[
 		102,
 		1,
 		"newobj",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qcheckbox;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qlabel;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		103,
 		1,
 		"case",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;"+char(34)+"formdesigner_qimage"+char(34)+";;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;"+char(34)+"formdesigner_qslider"+char(34)+";;_RV_;;"
 	],
 	[
 		104,
 		1,
 		"newobj",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qlabel;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qslider;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		105,
 		1,
 		"case",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;"+char(34)+"formdesigner_qslider"+char(34)+";;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;"+char(34)+"formdesigner_qprogressbar"+char(34)+";;_RV_;;"
 	],
 	[
 		106,
 		1,
 		"newobj",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qslider;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qprogressbar;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		107,
 		1,
 		"case",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;"+char(34)+"formdesigner_qprogressbar"+char(34)+";;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;"+char(34)+"formdesigner_qspinbox"+char(34)+";;_RV_;;"
 	],
 	[
 		108,
 		1,
 		"newobj",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qprogressbar;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qspinbox;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		109,
 		1,
 		"case",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;"+char(34)+"formdesigner_qspinbox"+char(34)+";;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;"+char(34)+"formdesigner_qcombobox"+char(34)+";;_RV_;;"
 	],
 	[
 		110,
 		1,
 		"newobj",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qspinbox;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qcombobox;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		111,
 		1,
 		"case",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;"+char(34)+"formdesigner_qcombobox"+char(34)+";;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;"+char(34)+"formdesigner_qdatetimeedit"+char(34)+";;_RV_;;"
 	],
 	[
 		112,
 		1,
 		"newobj",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qcombobox;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qdatetimeedit;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		113,
 		1,
 		"case",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;"+char(34)+"formdesigner_qdatetimeedit"+char(34)+";;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;"+char(34)+"formdesigner_qtablewidget"+char(34)+";;_RV_;;"
 	],
 	[
 		114,
 		1,
 		"newobj",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qdatetimeedit;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qtablewidget;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		115,
 		1,
 		"case",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;"+char(34)+"formdesigner_qtablewidget"+char(34)+";;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;"+char(34)+"formdesigner_qtreewidget"+char(34)+";;_RV_;;"
 	],
 	[
 		116,
 		1,
 		"newobj",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qtablewidget;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qtreewidget;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		117,
 		1,
 		"case",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;"+char(34)+"formdesigner_qtreewidget"+char(34)+";;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;"+char(34)+"formdesigner_qradiobutton"+char(34)+";;_RV_;;"
 	],
 	[
 		118,
 		1,
 		"newobj",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qtreewidget;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qradiobutton;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		119,
 		1,
 		"case",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;"+char(34)+"formdesigner_qradiobutton"+char(34)+";;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;"+char(34)+"formdesigner_qwebview"+char(34)+";;_RV_;;"
 	],
 	[
 		120,
 		1,
 		"newobj",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qradiobutton;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qwebview;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		121,
 		1,
 		"case",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;"+char(34)+"formdesigner_qwebview"+char(34)+";;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;"+char(34)+"formdesigner_qdial"+char(34)+";;_RV_;;"
 	],
 	[
 		122,
 		1,
 		"newobj",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qwebview;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qdial;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		123,
 		1,
 		"case",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;"+char(34)+"formdesigner_qdial"+char(34)+";;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;"+char(34)+"formdesigner_qvideowidget"+char(34)+";;_RV_;;"
 	],
 	[
 		124,
 		1,
 		"newobj",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qdial;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qvideowidget;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		125,
 		1,
 		"case",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;"+char(34)+"formdesigner_qvideowidget"+char(34)+";;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;"+char(34)+"formdesigner_qframe"+char(34)+";;_RV_;;"
 	],
 	[
 		126,
 		1,
 		"newobj",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qvideowidget;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qframe;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		127,
 		1,
 		"case",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;"+char(34)+"formdesigner_qframe"+char(34)+";;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;"+char(34)+"formdesigner_qlcdnumber"+char(34)+";;_RV_;;"
 	],
 	[
 		128,
 		1,
 		"newobj",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qframe;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qlcdnumber;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		129,
 		1,
 		"case",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;"+char(34)+"formdesigner_qlcdnumber"+char(34)+";;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;"+char(34)+"formdesigner_qhyperlink"+char(34)+";;_RV_;;"
 	],
 	[
 		130,
 		1,
 		"newobj",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qlcdnumber;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qlabel;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		131,
 		1,
 		"case",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;"+char(34)+"formdesigner_qhyperlink"+char(34)+";;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;"+char(34)+"formdesigner_qtimer"+char(34)+";;_RV_;;"
 	],
 	[
 		132,
 		1,
 		"newobj",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qlabel;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qtimer;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		133,
 		1,
 		"case",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;"+char(34)+"formdesigner_qtimer"+char(34)+";;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;"+char(34)+"formdesigner_qallevents"+char(34)+";;_RV_;;"
 	],
 	[
 		134,
 		1,
 		"newobj",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qtimer;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qallevents;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		135,
 		1,
 		"case",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;"+char(34)+"formdesigner_qallevents"+char(34)+";;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;"+char(34)+"formdesigner_qlayout"+char(34)+";;_RV_;;"
 	],
 	[
 		136,
 		1,
 		"newobj",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qallevents;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qvboxlayout;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		137,
 		1,
 		"case",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;"+char(34)+"formdesigner_qlayout"+char(34)+";;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;"+char(34)+"formdesigner_qtabwidget"+char(34)+";;_RV_;;"
 	],
 	[
 		138,
 		1,
 		"newobj",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qvboxlayout;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qtabwidget;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		139,
 		1,
 		"case",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;"+char(34)+"formdesigner_qtabwidget"+char(34)+";;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;"+char(34)+"formdesigner_qstatusbar"+char(34)+";;_RV_;;"
 	],
 	[
 		140,
 		1,
 		"newobj",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qtabwidget;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qstatusbar;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		141,
 		1,
 		"case",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;"+char(34)+"formdesigner_qstatusbar"+char(34)+";;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;"+char(34)+"formdesigner_qtoolbar"+char(34)+";;_RV_;;"
 	],
 	[
 		142,
 		1,
 		"newobj",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qstatusbar;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qtoolbar;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		143,
 		1,
-		"case",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;"+char(34)+"formdesigner_qtoolbar"+char(34)+";;_RV_;;"
+		"else",
+		"19/04/2025",
+		"06:52:07",
+		""
 	],
 	[
 		144,
 		1,
-		"newobj",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;oMyObj;;_RV_;;value2;;_RV_;;qtoolbar;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"19/04/2025",
+		"06:52:07",
+		"leftside;;_RV_;;lKnown;;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
 		145,
 		1,
-		"else",
-		"04/03/2025",
-		"21:25:58",
-		""
+		"ifstatement",
+		"19/04/2025",
+		"06:52:07",
+		"condition;;_RV_;;lKnown;;_RV_;;"
 	],
 	[
 		146,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:58",
-		"leftside;;_RV_;;lKnown;;_RV_;;rightside;;_RV_;;False;;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"leftside;;_RV_;;aMethodsList;;_RV_;;rightside;;_RV_;;methods(oMyObj);;_RV_;;"
 	],
 	[
 		147,
 		1,
-		"ifstatement",
-		"04/03/2025",
-		"21:25:58",
-		"condition;;_RV_;;lKnown;;_RV_;;"
+		"forinloop",
+		"19/04/2025",
+		"06:52:07",
+		"variable;;_RV_;;cMethod;;_RV_;;in;;_RV_;;aMethodsList;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		148,
 		1,
-		"assignment",
-		"04/03/2025",
-		"21:25:58",
-		"leftside;;_RV_;;aMethodsList;;_RV_;;rightside;;_RV_;;methods(oMyObj);;_RV_;;"
+		"freetyping",
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;aItems+(oObj[1]+"+char(34)+"."+char(34)+"+cMethod);;_RV_;;"
 	],
 	[
 		149,
 		1,
-		"forinloop",
-		"04/03/2025",
-		"21:25:58",
-		"variable;;_RV_;;cMethod;;_RV_;;in;;_RV_;;aMethodsList;;_RV_;;step;;_RV_;;1;;_RV_;;"
+		"freetyping",
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;aItems+("+char(34)+"oView."+char(34)+"+oObj[1]+"+char(34)+"."+char(34)+"+cMethod);;_RV_;;"
 	],
 	[
 		150,
 		1,
-		"freetyping",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;aItems+(oObj[1]+"+char(34)+"."+char(34)+"+cMethod+"+char(34)+"()"+char(34)+");;_RV_;;"
+		"comment_text",
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		151,
 		1,
-		"freetyping",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;aItems+("+char(34)+"oView."+char(34)+"+oObj[1]+"+char(34)+"."+char(34)+"+cMethod+"+char(34)+"()"+char(34)+");;_RV_;;"
+		"comment_text",
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;		Get Autocomplete Items;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		152,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;Get Steps Tree Data;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;	*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		153,
 		1,
-		"assignment",
-		"04/03/2025",
-		"21:25:58",
-		"leftside;;_RV_;;aTree;;_RV_;;rightside;;_RV_;;oGoalDesigner.oModel.oStepsTreeModel.GetData();;_RV_;;"
+		"func",
+		"19/04/2025",
+		"06:52:07",
+		"name;;_RV_;;getAutoCompleteItems;;_RV_;;parameters;;_RV_;;oGoalDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		154,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:58",
-		"leftside;;_RV_;;nAutoCompleteStepsTreeCache;;_RV_;;rightside;;_RV_;;len(aTree);;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"leftside;;_RV_;;aItems;;_RV_;;rightside;;_RV_;;[];;_RV_;;"
 	],
 	[
 		155,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;Add words from Steps Tree;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;Add objects from the Form Designer;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		156,
 		1,
-		"assignment",
-		"04/03/2025",
-		"21:25:58",
-		"leftside;;_RV_;;cCode;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
+		"callfunc",
+		"19/04/2025",
+		"06:52:07",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;addObjectsFromFormDesigner;;_RV_;;parameters;;_RV_;;oGoalDesigner,aItems;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		157,
 		1,
-		"forinloop",
-		"04/03/2025",
-		"21:25:58",
-		"variable;;_RV_;;item;;_RV_;;in;;_RV_;;aTree;;_RV_;;step;;_RV_;;1;;_RV_;;"
+		"comment_text",
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;Get Steps Tree Data;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		158,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:58",
-		"leftside;;_RV_;;aContent;;_RV_;;rightside;;_RV_;;item[C_TREEMODEL_CONTENT];;_RV_;;"
+		"19/04/2025",
+		"06:52:07",
+		"leftside;;_RV_;;aTree;;_RV_;;rightside;;_RV_;;oGoalDesigner.oModel.oStepsTreeModel.GetData();;_RV_;;"
 	],
 	[
 		159,
 		1,
-		"freetyping",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;cCode += aContent[:code]+nl;;_RV_;;"
+		"assignment",
+		"19/04/2025",
+		"06:52:07",
+		"leftside;;_RV_;;nAutoCompleteStepsTreeCache;;_RV_;;rightside;;_RV_;;len(aTree);;_RV_;;"
 	],
 	[
 		160,
 		1,
-		"assignment",
-		"04/03/2025",
-		"21:25:58",
-		"leftside;;_RV_;;aWords;;_RV_;;rightside;;_RV_;;sort(split(cCode,"+char(34)+" "+char(34)+"));;_RV_;;"
+		"comment_text",
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;Add words from Steps Tree;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		161,
 		1,
-		"comment_text",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;Remove Duplication;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"19/04/2025",
+		"06:52:07",
+		"leftside;;_RV_;;cCode;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		162,
 		1,
-		"assignment",
-		"04/03/2025",
-		"21:25:58",
-		"leftside;;_RV_;;cLast;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
+		"forinloop",
+		"19/04/2025",
+		"06:52:07",
+		"variable;;_RV_;;item;;_RV_;;in;;_RV_;;aTree;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		163,
 		1,
-		"forinloop",
-		"04/03/2025",
-		"21:25:58",
-		"variable;;_RV_;;word;;_RV_;;in;;_RV_;;aWords;;_RV_;;step;;_RV_;;1;;_RV_;;"
+		"assignment",
+		"19/04/2025",
+		"06:52:07",
+		"leftside;;_RV_;;aContent;;_RV_;;rightside;;_RV_;;item[C_TREEMODEL_CONTENT];;_RV_;;"
 	],
 	[
 		164,
 		1,
-		"ifstatement",
-		"04/03/2025",
-		"21:25:58",
-		"condition;;_RV_;;word! = cLast;;_RV_;;"
+		"freetyping",
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;cCode += aContent[:plainname]+nl;;_RV_;;"
 	],
 	[
 		165,
 		1,
-		"freetyping",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;aItems+word;;_RV_;;"
+		"assignment",
+		"19/04/2025",
+		"06:52:07",
+		"leftside;;_RV_;;aWords;;_RV_;;rightside;;_RV_;;sort(split(cCode,"+char(34)+" "+char(34)+"));;_RV_;;"
 	],
 	[
 		166,
 		1,
-		"assignment",
-		"04/03/2025",
-		"21:25:58",
-		"leftside;;_RV_;;cLast;;_RV_;;rightside;;_RV_;;word;;_RV_;;"
+		"comment_text",
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;Remove Duplication and words contains the dot operator;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		167,
 		1,
-		"return",
-		"04/03/2025",
-		"21:25:58",
-		"value;;_RV_;;aItems;;_RV_;;"
+		"assignment",
+		"19/04/2025",
+		"06:52:07",
+		"leftside;;_RV_;;cLast;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		168,
 		1,
-		"func",
-		"04/03/2025",
-		"21:25:58",
-		"name;;_RV_;;CheckUsingAutoCompleteCache;;_RV_;;parameters;;_RV_;;oGoalDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"forinloop",
+		"19/04/2025",
+		"06:52:07",
+		"variable;;_RV_;;word;;_RV_;;in;;_RV_;;aWords;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		169,
 		1,
+		"ifstatement",
+		"19/04/2025",
+		"06:52:07",
+		"condition;;_RV_;;word! = cLast;;_RV_;;"
+	],
+	[
+		170,
+		1,
+		"ifstatement",
+		"19/04/2025",
+		"06:52:07",
+		"condition;;_RV_;;!(substr(word,"+char(34)+"."+char(34)+") OR substr(word,"+char(34)+"("+char(34)+"));;_RV_;;"
+	],
+	[
+		171,
+		1,
+		"freetyping",
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;aItems+word;;_RV_;;"
+	],
+	[
+		172,
+		1,
+		"assignment",
+		"19/04/2025",
+		"06:52:07",
+		"leftside;;_RV_;;cLast;;_RV_;;rightside;;_RV_;;word;;_RV_;;"
+	],
+	[
+		173,
+		1,
 		"return",
-		"04/03/2025",
-		"21:25:58",
+		"19/04/2025",
+		"06:52:07",
+		"value;;_RV_;;aItems;;_RV_;;"
+	],
+	[
+		174,
+		1,
+		"func",
+		"19/04/2025",
+		"06:52:07",
+		"name;;_RV_;;CheckUsingAutoCompleteCache;;_RV_;;parameters;;_RV_;;oGoalDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+	],
+	[
+		175,
+		1,
+		"return",
+		"19/04/2025",
+		"06:52:07",
 		"value;;_RV_;;(len( oGoalDesigner. oModel. oStepsTreeModel. aList ) = oGoalDesigner. nAutoCompleteStepsTreeCache )  and ( len( oGoalDesigner. parent() . formdesigner() . oModel. getObjects() ) = oGoalDesigner. nAutoCompleteFormObjectsCache ) ;;_RV_;;"
 	]
 ]

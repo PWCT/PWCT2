@@ -39,6 +39,7 @@ class EnvironmentView from WindowsViewParent
 	lShowLanguageMenu = False
 	lShowDistributeMenu = True
 	lShowWebOptions = True
+	lRightToLeftWindow = False
 	#Create the window and the Controls
 	win = new qMainWindow()
 	{
@@ -47,7 +48,7 @@ class EnvironmentView from WindowsViewParent
 			resize(800,600)
 		} 
 		setLayoutDirection(T_LAYOUTDIRECTION)
-		if T_LAYOUTDIRECTION AND isWindows() { 
+		if T_LAYOUTDIRECTION AND isWindows() AND lRightToLeftWindow { 
 			RightToLeft(winID())
 		} 
 		setWindowTitle(T_ENV_TITLE)
@@ -1171,6 +1172,9 @@ class EnvironmentView from WindowsViewParent
 				{
 					setStylesheet("border: 0px;  background-color: rgba(0, 0, 0, 0);")
 					setReadOnly(True)
+					if T_LAYOUTDIRECTION { 
+						setAlignment(Qt_AlignRight)
+					} 
 				}
 				oBtnSetFile = new qtoolbutton(this.win)
 				{
@@ -1249,7 +1253,8 @@ class EnvironmentView from WindowsViewParent
 				setrootpath(this.oDir.currentpath())
 				myfiles = new qstringlist()
 				myfiles.append("*.pwct")
-				myfiles.append("*.rform")
+				myfiles.append("*."+T_PWCT_FORMDESIGNER_FILEEXTENSION)
+				myfiles.append("*.برنامج")
 				setnamefilters(myfiles)
 				setNameFilterDisables(false)
 			}
@@ -1265,13 +1270,14 @@ class EnvironmentView from WindowsViewParent
 			} 
 			setexpanded(myindex,true)
 			if isWindows() { 
-				myindex2 = this.ofile.index(this.oDir.currentpath()+"/applications",0)
+				myindex2 = this.ofile.index(this.oDir.currentpath()+T_APPLICATIONSFOLDER,0)
 				setrootindex(myindex2)
 			} 
 			header().hide()
 		}
 		oFilesTreeWidget = new QWidget()
 		{
+			setLayoutDirection(T_LAYOUTDIRECTION)
 			#Work-around on a Bug in Qt (Avoid drawing strange line)
 			#Maybe related also to mobileButtonSize()
 			hide()
@@ -1392,6 +1398,9 @@ class EnvironmentView from WindowsViewParent
 			oProcessText = new qlineEdit(oProcessWindow)
 			{
 				setreturnPressedEvent(Method(:SendDataAction))
+				if T_LAYOUTDIRECTION { 
+					setAlignment(Qt_AlignRight)
+				} 
 			}
 			oProcessbtnSend = new qpushbutton(oProcessWindow)
 			{
@@ -1414,7 +1423,12 @@ class EnvironmentView from WindowsViewParent
 				Addwidget(oProcessbtnKill)
 			}
 		} 
-		oProcessEditbox = new qPlaintextedit(oProcessWindow)
+		oProcessEditbox = new QTextEdit(oProcessWindow)
+		{
+			if T_LAYOUTDIRECTION { 
+				setAlignment(Qt_AlignRight)
+			} 
+		}
 		oProcessLayout2 = new qvboxlayout()
 		{
 			addWidget(this.oProcesseditbox)
@@ -1422,7 +1436,10 @@ class EnvironmentView from WindowsViewParent
 				addlayout(oProcesslayout1)
 			} 
 		}
-		oProcessWindow.setlayout(oProcessLayout2)
+		oProcessWindow {
+			setLayoutDirection(T_LAYOUTDIRECTION)
+			setlayout(oProcessLayout2)
+		}
 		oDockOutputWindow = new qDockWidget(win,0)
 		{
 			nWidth = floor(this.oDesktop.Width()*0.15)

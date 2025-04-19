@@ -113,8 +113,6 @@ C_STEPSTREE_BACKCOLOR = "white"
 C_TRANSLATION_ARABIC = 1
 C_TRANSLATION_ENGLISH = 0
 C_ENV_DEFAULT_LANG = C_TRANSLATION_ENGLISH
-#Visual Source file
-C_VSF_NOFILENAME = "noname.pwct"
 #Components Path
 C_CB_COMPONENTSPATH = "src/vpl/ringpwct"
 #Enviroment Mode

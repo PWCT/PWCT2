@@ -9,6 +9,9 @@ load "stdlibcore.ring"
 load "guilib.ring"
 #Load General Libraries
 load "general/general.ring"
+#Ring2PWCT
+load "tools/import/importfiles.ring"
+load "tools/vsfgenerator/vsfgenerator.ring"
 #Load the Translation File
 load "translation/translation.ring"
 #Load the Environment Files
@@ -29,9 +32,6 @@ load "formdesigner/formdesigner.ring"
 load "../extensions/libdepwin/Apache2.2/ring/prepare.ring"
 #Mobile functions
 load "mobile/mobilefunctions.ring"
-#Ring2PWCT
-load "tools/import/importfiles.ring"
-load "tools/vsfgenerator/vsfgenerator.ring"
 #Load the Expression Builder
 load "tools/exprbuilder/ExprBuilderController.ring"
 #RightToLeft() function

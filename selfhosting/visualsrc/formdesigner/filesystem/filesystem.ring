@@ -6,7 +6,7 @@
 #*/
 package formdesigner
 class FormDesignerFileSystem from ObjectsParent
-	cFileName = "noname.rform"
+	cFileName = T_FORMDESIGNER_NONAMEFILE
 	oGenerator = new FormDesignerCodeGenerator
 	lUseFileDialogStaticMethods = !isWebAssembly()
 	oNewFileDialog = new QFileDialog(NULL)
@@ -16,7 +16,7 @@ class FormDesignerFileSystem from ObjectsParent
 		setWindowTitle("New Form")
 		setLabelText(QFileDialog_Accept,"Save")
 		setNameFilter("Form files (*.rform *)")
-		setDefaultSuffix("rform")
+		setDefaultSuffix(T_FORMDESIGNER_FILEEXTENSION)
 		setFileMode(QFileDialog_AnyFile)
 		setViewMode(QFileDialog_List)
 		setOption(QFileDialog_ShowDirsOnly,False)
@@ -28,7 +28,7 @@ class FormDesignerFileSystem from ObjectsParent
 		setWindowTitle("Open Form")
 		setLabelText(QFileDialog_Accept,"Open")
 		setNameFilter("Form files (*.rform *)")
-		setDefaultSuffix("rform")
+		setDefaultSuffix(T_FORMDESIGNER_FILEEXTENSION)
 		setFileMode(QFileDialog_ExistingFile)
 		setViewMode(QFileDialog_List)
 		setOption(QFileDialog_ShowDirsOnly,False)
@@ -40,7 +40,7 @@ class FormDesignerFileSystem from ObjectsParent
 		setWindowTitle("Save Form")
 		setLabelText(QFileDialog_Accept,"Save")
 		setNameFilter("Form files (*.rform *)")
-		setDefaultSuffix("rform")
+		setDefaultSuffix(T_FORMDESIGNER_FILEEXTENSION)
 		setFileMode(QFileDialog_AnyFile)
 		setViewMode(QFileDialog_List)
 		setOption(QFileDialog_ShowDirsOnly,False)
@@ -89,7 +89,7 @@ class FormDesignerFileSystem from ObjectsParent
 		if lUseFileDialogStaticMethods { 
 			oFileDialog = new qfiledialog(oDesigner.oView.win)
 			{
-				cInputFileName = getsavefilename(oDesigner.oView.win,"New Form",cDir,"*.rform")
+				cInputFileName = getsavefilename(oDesigner.oView.win,"New Form",cDir,"*."+T_FORMDESIGNER_FILEEXTENSION)
 			}
 			if cInputFileName = NULL { 
 				return 
@@ -102,7 +102,7 @@ class FormDesignerFileSystem from ObjectsParent
 					oNewFileDialog.setDirectory(cDir)
 					oNewFileDialog.show()
 					else
-						cFileName = "noname.rform"
+						cFileName = T_FORMDESIGNER_NONAMEFILE
 						startNewForm(oDesigner)
 				} 
 		} 
@@ -141,13 +141,13 @@ class FormDesignerFileSystem from ObjectsParent
 	func OpenControllerClassInParent oDesigner { 
 		if oDesigner.IsParent() { 
 			if isMethod(oDesigner.Parent(),"openfile") { 
-				cDir = oDesigner.Parent().openfile(substr(cFileName,".rform","Controller.ring"))
+				cDir = oDesigner.Parent().openfile(substr(cFileName,"."+T_FORMDESIGNER_FILEEXTENSION,T_FILENAME_CONTROLLER+".ring"))
 			} 
 		} 
 	} 
 	func AddExtensionToName cInputFileName { 
-		if  NOT right(lower(cInputFileName),5) = "rform" { 
-			cInputFileName += ".rform"
+		if  NOT right(lower(cInputFileName),len(T_FORMDESIGNER_FILEEXTENSION)) = T_FORMDESIGNER_FILEEXTENSION { 
+			cInputFileName += "."+T_FORMDESIGNER_FILEEXTENSION
 		} 
 		return cInputFileName
 	} 
@@ -155,7 +155,7 @@ class FormDesignerFileSystem from ObjectsParent
 		#Delete objects
 		DeleteAllObjects(oDesigner)
 		#No File Name
-		cFileName = "noname.rform"
+		cFileName = T_FORMDESIGNER_NONAMEFILE
 		PrepareTheForm(oDesigner)
 		#Tell the Parent (Ring Notepad for example)
 		if oDesigner.isParent() { 
@@ -187,7 +187,7 @@ class FormDesignerFileSystem from ObjectsParent
 		if lUseFileDialogStaticMethods { 
 			oFileDialog = new qfiledialog(oDesigner.oView.win)
 			{
-				cInputFileName = getopenfilename(oDesigner.oView.win,"Open Form",cDir,"*.rform")
+				cInputFileName = getopenfilename(oDesigner.oView.win,"Open Form",cDir,"*."+T_FORMDESIGNER_FILEEXTENSION)
 			}
 			if cInputFileName = NULL { 
 				return 
@@ -212,7 +212,7 @@ class FormDesignerFileSystem from ObjectsParent
 	} 
 	func SaveAction oDesigner { 
 		#Check file not saved before
-		if cFileName = "noname.rform" { 
+		if cFileName = T_FORMDESIGNER_NONAMEFILE { 
 			SaveFile(oDesigner)
 			return 
 		} 
@@ -220,7 +220,7 @@ class FormDesignerFileSystem from ObjectsParent
 	} 
 	func SaveIfOnlyFileIsOpened oDesigner { 
 		#Used by Ring Notepad to Save before Run
-		if cFileName! = "noname.rform" { 
+		if cFileName! = T_FORMDESIGNER_NONAMEFILE { 
 			SaveFormToFile(oDesigner)
 		} 
 	} 
@@ -233,7 +233,7 @@ class FormDesignerFileSystem from ObjectsParent
 		if lUseFileDialogStaticMethods { 
 			oFileDialog = new qfiledialog(oDesigner.oView.win)
 			{
-				cInputFileName = getsavefilename(oDesigner.oView.win,"Save Form",cDir,"*.rform")
+				cInputFileName = getsavefilename(oDesigner.oView.win,"Save Form",cDir,"*."+T_FORMDESIGNER_FILEEXTENSION)
 			}
 			if cInputFileName = NULL { 
 				return 

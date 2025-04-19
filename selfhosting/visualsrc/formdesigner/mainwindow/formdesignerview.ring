@@ -61,7 +61,7 @@ class FormDesignerView from WindowsViewParent
 	lUseWebAssemblyMEMFS = !isWebAssembly()
 	func CreateMainWindow oModel { 
 		#Create the form
-		oModel.AddObject("Window", new FormDesigner_qWidget() {
+		oModel.AddObject(T_FORMDESIGNER_WINDOW, new FormDesigner_qWidget() {
 			setWindowTitle(T_FORMDESIGNER_FORMTITLE)
 			#"Form1"
 		}
@@ -769,7 +769,7 @@ class FormDesignerView from WindowsViewParent
 		{
 			setWidget(oToolBox)
 			if  NOT isMobile() { 
-				setMiniMumWidth(this.oDesktop.Width()*0.12)
+				setMiniMumWidth(this.oDesktop.Width()*0.15)
 			} 
 			setwidgetresizable(True)
 		}
@@ -1082,7 +1082,7 @@ class FormDesignerView from WindowsViewParent
 			setAlternatingRowColors(true)
 			setitemChangedEvent(this.Method(:UpdateProperties))
 			if T_LAYOUTDIRECTION { 
-				setminimumwidth(this.oDesktop.width()*0.21)
+				setminimumwidth(this.oDesktop.width()*0.23)
 				else
 					setminimumwidth(this.oDesktop.width()*0.22)
 			} 

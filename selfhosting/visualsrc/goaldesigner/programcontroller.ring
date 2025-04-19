@@ -71,6 +71,7 @@ class ProgramController
 		#	*/
 	} 
 	func RunGUIDesktop oGD { 
+		oGD.parent().oView.oProcessText.setFocus(2)
 		cFile = cFileName
 		if oGD.lFullScreen = False { 
 			oGD.parent().oView.oDockOutputWindow.raise()
@@ -80,14 +81,14 @@ class ProgramController
 			oGD.parent().oView.oProcessText.setFocus(0)
 		} 
 		cDir = currentdir()
-		chdir(JustFilePath(cFile))
+		changeFolder(JustFilePath(cFile))
 		if isBatchFile(cFile) { 
 			cCode = RunBatchFile(cFile)
 			oGD.parent().oView.oProcess = RunProcess(cCode,"",oGD.parent().Method(:GetDataAction))
 			else
 				oGD.parent().oView.oProcess = RunProcess(cRingEXE,cFile,oGD.parent().Method(:GetDataAction))
 		} 
-		chdir(cDir)
+		changeFolder(cDir)
 		#/*
 		#		Run web application
 		#	*/
@@ -167,16 +168,16 @@ class ProgramController
 	} 
 	func RunOnMobile oGD { 
 		if cFileName = C_FILENONAME { 
-			#noname.pwct
+			#noname.ring
 			cFileName = PWCT_FOLDER+"/"+C_FILENONAME
 		} 
 		RUNTIME_FOLDER = PWCT_FOLDER+"/PWCTApp/runtime"
 		#Create guilib.ring and stdlib.ring
-		chdir(JustFilePath(cFileName))
+		changeFolder(JustFilePath(cFileName))
 		write("guilib.ring","")
 		write("stdlib.ring","")
 		write("stdlibcore.ring","")
-		chdir(RUNTIME_FOLDER)
+		changeFolder(RUNTIME_FOLDER)
 		#Delete Temp. Files
 		remove("runprogram.ring")
 		remove("programoutput.txt")
@@ -203,7 +204,7 @@ class ProgramController
 		} 
 		oState = ring_state_new()
 		ring_state_mainfile(oState,"runprogram.ring")
-		chdir(RUNTIME_FOLDER)
+		changeFolder(RUNTIME_FOLDER)
 		#This will start a Timer to check the output
 		#Display the Output
 		oGD.EnableCheckOutputOnMobile()
@@ -212,12 +213,11 @@ class ProgramController
 		remove("runprogram.ring")
 		remove("programinput.txt")
 		#delete guilib.ring and stdlib.ring
-		chdir(JustFilePath(cFileName))
+		changeFolder(JustFilePath(cFileName))
 		remove("guilib.ring")
 		remove("stdlib.ring")
 		remove("stdlibcore.ring")
 		remove("noname.ring")
-		#if we are using noname.pwct
 		#/*
 		#		Purpose : Check output from the application when we run PWCT on Mobile
 		#		Parameters : None
@@ -227,7 +227,7 @@ class ProgramController
 	func CheckOutputOnMobile oGD { 
 		cDir = CurrentDir()
 		RUNTIME_FOLDER = PWCT_FOLDER+"/PWCTApp/runtime"
-		chdir(RUNTIME_FOLDER)
+		changeFolder(RUNTIME_FOLDER)
 		if fexists("programoutput.txt") { 
 			cContent = read("programoutput.txt")
 			if cContent! = cOutputFileText { 
@@ -236,7 +236,7 @@ class ProgramController
 				oGD.parent().oView.oDockOutputWindow.raise()
 			} 
 		} 
-		chdir(cDir)
+		changeFolder(cDir)
 		#/*
 		#		Purpose : Prepare the file
 		#		Parameters : Goal Designer Object
@@ -281,13 +281,13 @@ private
 		cFileToRun = FileNameEncoding(cFileName)
 		if isWindows() { 
 			cDir = currentdir()
-			chdir(exefolder())
+			changeFolder(exefolder())
 			if !fexists(cFileToRun) { 
 				cFileToRun = cDir+"\"+cFileToRun
 			} 
 			cCode = 'start call "'+cFile+'" "'+cFileToRun+'"'+nl
 			system(cCode)
-			chdir(cDir)
+			changeFolder(cDir)
 			elseif isLinux()
 				cCode = 'cd $(dirname "'+cFileToRun+'") ; x-terminal-emulator -e '+"'"+'ring "'+cFileToRun+'" ; read -p "" key;'+"' &"+nl
 				system(cCode)
@@ -304,7 +304,7 @@ private
 	} 
 	func RunBatchFile cFile { 
 		if iswindows() { 
-			chdir(JustFilePath(cFile))
+			changeFolder(JustFilePath(cFile))
 			cCode = cFile
 			else
 				cCode = 'cd $(dirname "'+cFile+'") ; '+"./"+cFile+nl

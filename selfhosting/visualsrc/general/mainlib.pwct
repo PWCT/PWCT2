@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'english'
-nStepsID                 = 74		
-nInteractionsID          = 47
+nStepsID                 = 89		
+nInteractionsID          = 58
 
 aStepsTable = [
 	[
@@ -2790,6 +2790,201 @@ aStepsTable = [
 		]
 	],
 	[
+		75,
+		62,
+		[
+			[
+				"name",
+				"/*"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#/*
+"
+			],
+			[
+				"interactionid",
+				48
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"/*"
+			]
+		]
+	],
+	[
+		76,
+		62,
+		[
+			[
+				"name",
+				"	Purpose : Change the current folder"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	Purpose : Change the current folder
+"
+			],
+			[
+				"interactionid",
+				49
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	Purpose : Change the current folder"
+			]
+		]
+	],
+	[
+		77,
+		62,
+		[
+			[
+				"name",
+				"	Parameters : Folder Name"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	Parameters : Folder Name
+"
+			],
+			[
+				"interactionid",
+				50
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	Parameters : Folder Name"
+			]
+		]
+	],
+	[
+		78,
+		62,
+		[
+			[
+				"name",
+				"	Output : None"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	Output : None
+"
+			],
+			[
+				"interactionid",
+				51
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	Output : None"
+			]
+		]
+	],
+	[
+		79,
+		62,
+		[
+			[
+				"name",
+				"*/"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#*/
+"
+			],
+			[
+				"interactionid",
+				52
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"*/"
+			]
+		]
+	],
+	[
 		63,
 		61,
 		[
@@ -2826,6 +3021,386 @@ aStepsTable = [
 				"End of Function"
 			]
 		]
+	],
+	[
+		80,
+		1,
+		[
+			[
+				"name",
+				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">changeFolder</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFolder</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"func changeFolder cFolder { "
+			],
+			[
+				"interactionid",
+				53
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"function changeFolder cFolder"
+			]
+		]
+	],
+	[
+		81,
+		80,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				53
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		83,
+		81,
+		[
+			[
+				"name",
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">isWindows()</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"if isWindows() { "
+			],
+			[
+				"interactionid",
+				54
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"If isWindows()"
+			]
+		]
+	],
+	[
+		84,
+		83,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				54
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		86,
+		84,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oString</font></span> = New Object <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">qString2</font></span>(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"oString = new qString2()"
+			],
+			[
+				"interactionid",
+				55
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"oString = New Object qString2()"
+			]
+		]
+	],
+	[
+		87,
+		84,
+		[
+			[
+				"name",
+				"oString.Append( <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFolder</font></span> )"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"oString.Append(cFolder)"
+			],
+			[
+				"interactionid",
+				56
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"oString.Append( cFolder )"
+			]
+		]
+	],
+	[
+		88,
+		84,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFolder</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oString.tolocal8bit().data()</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cFolder = oString.tolocal8bit().data()"
+			],
+			[
+				"interactionid",
+				57
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cFolder = oString.tolocal8bit().data()"
+			]
+		]
+	],
+	[
+		85,
+		83,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				54
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		89,
+		81,
+		[
+			[
+				"name",
+				"chdir(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFolder</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"chdir(cFolder)"
+			],
+			[
+				"interactionid",
+				58
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"chdir(cFolder)"
+			]
+		]
+	],
+	[
+		82,
+		80,
+		[
+			[
+				"name",
+				"End of Function"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				53
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of Function"
+			]
+		]
 	]
 ]
 
@@ -2834,377 +3409,465 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"value;;_RV_;;**	Project : Programming Without Coding Technology (PWCT) Version 2.0;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"value;;_RV_;;** 	File Purpose : Main Library (Common Functions);;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"value;;_RV_;;**	Date : 2017.12.03;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"value;;_RV_;;** 	Author : Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"load",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"file;;_RV_;;stdlibcore.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"ifstatement",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"condition;;_RV_;;isMainSourceFile();;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"leftside;;_RV_;;mylist;;_RV_;;rightside;;_RV_;;[1,2,3,"+char(34)+"four"+char(34)+","+char(34)+"five"+char(34)+",[:six = 6,:seven = 7],8,:nine,:ten];;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"print",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"text;;_RV_;;list2RingCode(mylist);;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"func",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"name;;_RV_;;List2RingCode;;_RV_;;parameters;;_RV_;;aList;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"leftside;;_RV_;;cCode;;_RV_;;rightside;;_RV_;;"+char(34)+"["+char(34)+"+Windowsnl();;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"leftside;;_RV_;;lStart;;_RV_;;rightside;;_RV_;;True;;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"forinloop",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"variable;;_RV_;;item;;_RV_;;in;;_RV_;;aList;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"ifstatement",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"condition;;_RV_;;!lStart;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"freetyping",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"value;;_RV_;;cCode += "+char(34)+","+char(34)+";;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"else",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		""
 	],
 	[
 		19,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"leftside;;_RV_;;lStart;;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"ifstatement",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"condition;;_RV_;;isString(item);;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"freetyping",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"value;;_RV_;;cCode += '"+char(34)+"'+item+'"+char(34)+"';;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"elseif",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"condition;;_RV_;;isnumber(item);;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"freetyping",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"value;;_RV_;;cCode += ("+char(34)+""+char(34)+"+item);;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"elseif",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"condition;;_RV_;;islist(item);;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"freetyping",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"value;;_RV_;;cCode += List2RingCode(item);;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"freetyping",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"value;;_RV_;;cCode += windowsnl()+"+char(34)+"]"+char(34)+";;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"return",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"value;;_RV_;;cCode;;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"func",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"name;;_RV_;;RemoveFirstTabs;;_RV_;;parameters;;_RV_;;cString,nCount;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"leftside;;_RV_;;aList;;_RV_;;rightside;;_RV_;;str2list(cString);;_RV_;;"
 	],
 	[
 		30,
 		1,
 		"forinloop",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"variable;;_RV_;;item;;_RV_;;in;;_RV_;;aList;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"ifstatement",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"condition;;_RV_;;left(item,nCount) = Copy(char(9),nCount);;_RV_;;"
 	],
 	[
 		32,
 		1,
 		"ifstatement",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"condition;;_RV_;;len(item) > nCount;;_RV_;;"
 	],
 	[
 		33,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"leftside;;_RV_;;item;;_RV_;;rightside;;_RV_;;substr(item,nCount+1);;_RV_;;"
 	],
 	[
 		34,
 		1,
 		"return",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"value;;_RV_;;list2str( aList ) ;;_RV_;;"
 	],
 	[
 		35,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		36,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"value;;_RV_;;	Purpose : Set the Encoding;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		37,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"value;;_RV_;;	Parameters : File Name;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		38,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"value;;_RV_;;	Output : File Name after changing the Encoding to local8bit;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		39,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		40,
 		1,
 		"func",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"name;;_RV_;;FileNameEncoding;;_RV_;;parameters;;_RV_;;cFileName;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		41,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"value;;_RV_;;Starting from Ring 1.16 - We don't need this function;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		42,
 		1,
 		"ifstatement",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"condition;;_RV_;;number(version()) <= 1.15;;_RV_;;"
 	],
 	[
 		43,
 		1,
 		"ifstatement",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"condition;;_RV_;;isWindows();;_RV_;;"
 	],
 	[
 		44,
 		1,
 		"newobj",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"value;;_RV_;;oString;;_RV_;;value2;;_RV_;;qString2;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		45,
 		1,
 		"callmethod",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oString;;_RV_;;name;;_RV_;;Append;;_RV_;;parameters;;_RV_;;cFileName;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		46,
 		1,
 		"return",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"value;;_RV_;;oString. tolocal8bit() . data() ;;_RV_;;"
 	],
 	[
 		47,
 		1,
 		"return",
-		"04/03/2025",
-		"21:25:54",
+		"19/04/2025",
+		"06:52:02",
 		"value;;_RV_;;cFileName;;_RV_;;"
+	],
+	[
+		48,
+		1,
+		"comment_text",
+		"19/04/2025",
+		"06:52:02",
+		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		49,
+		1,
+		"comment_text",
+		"19/04/2025",
+		"06:52:02",
+		"value;;_RV_;;	Purpose : Change the current folder;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		50,
+		1,
+		"comment_text",
+		"19/04/2025",
+		"06:52:02",
+		"value;;_RV_;;	Parameters : Folder Name;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		51,
+		1,
+		"comment_text",
+		"19/04/2025",
+		"06:52:02",
+		"value;;_RV_;;	Output : None;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		52,
+		1,
+		"comment_text",
+		"19/04/2025",
+		"06:52:02",
+		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		53,
+		1,
+		"func",
+		"19/04/2025",
+		"06:52:02",
+		"name;;_RV_;;changeFolder;;_RV_;;parameters;;_RV_;;cFolder;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+	],
+	[
+		54,
+		1,
+		"ifstatement",
+		"19/04/2025",
+		"06:52:02",
+		"condition;;_RV_;;isWindows();;_RV_;;"
+	],
+	[
+		55,
+		1,
+		"newobj",
+		"19/04/2025",
+		"06:52:02",
+		"value;;_RV_;;oString;;_RV_;;value2;;_RV_;;qString2;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;2;;_RV_;;"
+	],
+	[
+		56,
+		1,
+		"callmethod",
+		"19/04/2025",
+		"06:52:02",
+		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oString;;_RV_;;name;;_RV_;;Append;;_RV_;;parameters;;_RV_;;cFolder;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		57,
+		1,
+		"assignment",
+		"19/04/2025",
+		"06:52:02",
+		"leftside;;_RV_;;cFolder;;_RV_;;rightside;;_RV_;;oString.tolocal8bit().data();;_RV_;;"
+	],
+	[
+		58,
+		1,
+		"callfunc",
+		"19/04/2025",
+		"06:52:02",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;chdir;;_RV_;;parameters;;_RV_;;cFolder;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	]
 ]
 

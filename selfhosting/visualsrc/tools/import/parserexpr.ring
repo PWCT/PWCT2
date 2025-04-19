@@ -12,7 +12,7 @@ class ParserExpr
 			while iskeyword(K_AND) OR isoperator("&&") OR iskeyword(K_OR) OR isoperator("||") { 
 				if iskeyword(K_AND) OR isoperator("&&") { 
 					if iskeyword(K_AND) { 
-						manualAddToSecondTextBuffer(" AND ")
+						manualAddToSecondTextBuffer(T_RING2PWCT_LOT_AND)
 					} 
 					nexttoken()
 					IGNORENEWLINE()
@@ -22,7 +22,7 @@ class ParserExpr
 					} 
 					else
 						if iskeyword(K_OR) { 
-							manualAddToSecondTextBuffer(" OR ")
+							manualAddToSecondTextBuffer(T_RING2PWCT_LOT_OR)
 						} 
 						nexttoken()
 						IGNORENEWLINE()
@@ -40,7 +40,7 @@ class ParserExpr
 		#/* LogicNot --> Not EqualOrNot */
 		if iskeyword(K_NOT) OR isoperator2(OP_NOT) { 
 			if iskeyword(K_NOT) { 
-				manualAddToSecondTextBuffer(" NOT ")
+				manualAddToSecondTextBuffer(T_RING2PWCT_LOT_NOT)
 			} 
 			nexttoken()
 			IGNORENEWLINE()

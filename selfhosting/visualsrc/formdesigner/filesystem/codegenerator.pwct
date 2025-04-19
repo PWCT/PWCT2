@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'english'
-nStepsID                 = 137		
-nInteractionsID          = 93
+nStepsID                 = 138		
+nInteractionsID          = 94
 
 aStepsTable = [
 	[
@@ -547,7 +547,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cSourceFileName</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">substr(cFormFileName,&quot;.rform&quot;,&quot;View.ring&quot;)</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cSourceFileName</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">substr(cFormFileName,&quot;.&quot;+T_FORMDESIGNER_FILEEXTENSION,T_FORMDESIGNER_VIEWFILE)</font></span>"
 			],
 			[
 				"active",
@@ -555,7 +555,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"cSourceFileName = substr(cFormFileName,"+char(34)+".rform"+char(34)+","+char(34)+"View.ring"+char(34)+")"
+				"cSourceFileName = substr(cFormFileName,"+char(34)+"."+char(34)+"+T_FORMDESIGNER_FILEEXTENSION,T_FORMDESIGNER_VIEWFILE)"
 			],
 			[
 				"interactionid",
@@ -575,7 +575,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"cSourceFileName = substr(cFormFileName,"+char(34)+".rform"+char(34)+","+char(34)+"View.ring"+char(34)+")"
+				"cSourceFileName = substr(cFormFileName,"+char(34)+"."+char(34)+"+T_FORMDESIGNER_FILEEXTENSION,T_FORMDESIGNER_VIEWFILE)"
 			]
 		]
 	],
@@ -585,7 +585,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFormName</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">GetFileNameOnlyWithoutPath(substr(cFormFileName,&quot;.rform&quot;,&quot;&quot;))</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFormName</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">GetFileNameOnlyWithoutPath(substr(cFormFileName,&quot;.&quot;+T_FORMDESIGNER_FILEEXTENSION,&quot;&quot;))</font></span>"
 			],
 			[
 				"active",
@@ -593,7 +593,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"cFormName = GetFileNameOnlyWithoutPath(substr(cFormFileName,"+char(34)+".rform"+char(34)+","+char(34)+""+char(34)+"))"
+				"cFormName = GetFileNameOnlyWithoutPath(substr(cFormFileName,"+char(34)+"."+char(34)+"+T_FORMDESIGNER_FILEEXTENSION,"+char(34)+""+char(34)+"))"
 			],
 			[
 				"interactionid",
@@ -613,7 +613,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"cFormName = GetFileNameOnlyWithoutPath(substr(cFormFileName,"+char(34)+".rform"+char(34)+","+char(34)+""+char(34)+"))"
+				"cFormName = GetFileNameOnlyWithoutPath(substr(cFormFileName,"+char(34)+"."+char(34)+"+T_FORMDESIGNER_FILEEXTENSION,"+char(34)+""+char(34)+"))"
 			]
 		]
 	],
@@ -2301,7 +2301,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cSourceFileName</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">substr(cFormFileName,&quot;.rform&quot;,&quot;Controller.ring&quot;)</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cSourceFileName</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">substr(cFormFileName,&quot;.&quot;+T_FORMDESIGNER_FILEEXTENSION,T_FILENAME_CONTROLLER+&quot;.ring&quot;)</font></span>"
 			],
 			[
 				"active",
@@ -2309,7 +2309,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"cSourceFileName = substr(cFormFileName,"+char(34)+".rform"+char(34)+","+char(34)+"Controller.ring"+char(34)+")"
+				"cSourceFileName = substr(cFormFileName,"+char(34)+"."+char(34)+"+T_FORMDESIGNER_FILEEXTENSION,T_FILENAME_CONTROLLER+"+char(34)+".ring"+char(34)+")"
 			],
 			[
 				"interactionid",
@@ -2329,7 +2329,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"cSourceFileName = substr(cFormFileName,"+char(34)+".rform"+char(34)+","+char(34)+"Controller.ring"+char(34)+")"
+				"cSourceFileName = substr(cFormFileName,"+char(34)+"."+char(34)+"+T_FORMDESIGNER_FILEEXTENSION,T_FILENAME_CONTROLLER+"+char(34)+".ring"+char(34)+")"
 			]
 		]
 	],
@@ -2531,7 +2531,7 @@ aStepsTable = [
 				"name",
 				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cOutput</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&#039;#&nbsp;Form/Window&nbsp;Controller&nbsp;-&nbsp;Source&nbsp;Code&nbsp;File
 
-load&nbsp;&quot;#{f1}View.ring&quot;
+load&nbsp;&quot;#{f1}#{f6}&quot;
 
 #{f4}
 
@@ -2556,7 +2556,7 @@ class&nbsp;#{f2}&nbsp;from&nbsp;windowsControllerParent
 				"code",
 				"cOutput = '# Form/Window Controller - Source Code File
 
-load "+char(34)+"#{f1}View.ring"+char(34)+"
+load "+char(34)+"#{f1}#{f6}"+char(34)+"
 
 #{f4}
 
@@ -2593,7 +2593,7 @@ class #{f2} from windowsControllerParent
 				"plainname",
 				"cOutput = '# Form/Window Controller - Source Code File
 
-load "+char(34)+"#{f1}View.ring"+char(34)+"
+load "+char(34)+"#{f1}#{f6}"+char(34)+"
 
 #{f4}
 
@@ -2618,7 +2618,7 @@ class #{f2} from windowsControllerParent
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cOutput</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">substr(cOutput,&quot;#{f1}&quot;,cFormName)</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cOutput</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">substr(cOutput,&quot;#{f6}&quot;,T_FORMDESIGNER_VIEWFILE)</font></span>"
 			],
 			[
 				"active",
@@ -2626,7 +2626,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"code",
-				"cOutput = substr(cOutput,"+char(34)+"#{f1}"+char(34)+",cFormName)"
+				"cOutput = substr(cOutput,"+char(34)+"#{f6}"+char(34)+",T_FORMDESIGNER_VIEWFILE)"
 			],
 			[
 				"interactionid",
@@ -2646,7 +2646,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"plainname",
-				"cOutput = substr(cOutput,"+char(34)+"#{f1}"+char(34)+",cFormName)"
+				"cOutput = substr(cOutput,"+char(34)+"#{f6}"+char(34)+",T_FORMDESIGNER_VIEWFILE)"
 			]
 		]
 	],
@@ -2656,7 +2656,7 @@ class #{f2} from windowsControllerParent
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cOutput</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">substr(cOutput,&quot;#{f2}&quot;,cClassName2)</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cOutput</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">substr(cOutput,&quot;#{f1}&quot;,cFormName)</font></span>"
 			],
 			[
 				"active",
@@ -2664,7 +2664,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"code",
-				"cOutput = substr(cOutput,"+char(34)+"#{f2}"+char(34)+",cClassName2)"
+				"cOutput = substr(cOutput,"+char(34)+"#{f1}"+char(34)+",cFormName)"
 			],
 			[
 				"interactionid",
@@ -2684,12 +2684,50 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"plainname",
-				"cOutput = substr(cOutput,"+char(34)+"#{f2}"+char(34)+",cClassName2)"
+				"cOutput = substr(cOutput,"+char(34)+"#{f1}"+char(34)+",cFormName)"
 			]
 		]
 	],
 	[
 		75,
+		18,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cOutput</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">substr(cOutput,&quot;#{f2}&quot;,cClassName2)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cOutput = substr(cOutput,"+char(34)+"#{f2}"+char(34)+",cClassName2)"
+			],
+			[
+				"interactionid",
+				56
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cOutput = substr(cOutput,"+char(34)+"#{f2}"+char(34)+",cClassName2)"
+			]
+		]
+	],
+	[
+		76,
 		18,
 		[
 			[
@@ -2706,7 +2744,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				56
+				57
 			],
 			[
 				"visible",
@@ -2727,7 +2765,7 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
-		76,
+		77,
 		18,
 		[
 			[
@@ -2744,7 +2782,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				57
+				58
 			],
 			[
 				"visible",
@@ -2765,8 +2803,8 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
+		78,
 		77,
-		76,
 		[
 			[
 				"name",
@@ -2782,7 +2820,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				57
+				58
 			],
 			[
 				"visible",
@@ -2803,8 +2841,8 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
-		79,
-		77,
+		80,
+		78,
 		[
 			[
 				"name",
@@ -2817,44 +2855,6 @@ class #{f2} from windowsControllerParent
 			[
 				"code",
 				"cOutput = substr(cOutput,"+char(34)+"#{f4}"+char(34)+","+char(34)+"import System.GUI"+char(34)+")"
-			],
-			[
-				"interactionid",
-				58
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"cOutput = substr(cOutput,"+char(34)+"#{f4}"+char(34)+","+char(34)+"import System.GUI"+char(34)+")"
-			]
-		]
-	],
-	[
-		80,
-		77,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cOutput</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">substr(cOutput,&quot;#{f5}&quot;,&quot;App&quot;)</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"cOutput = substr(cOutput,"+char(34)+"#{f5}"+char(34)+","+char(34)+"App"+char(34)+")"
 			],
 			[
 				"interactionid",
@@ -2874,13 +2874,51 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"plainname",
-				"cOutput = substr(cOutput,"+char(34)+"#{f5}"+char(34)+","+char(34)+"App"+char(34)+")"
+				"cOutput = substr(cOutput,"+char(34)+"#{f4}"+char(34)+","+char(34)+"import System.GUI"+char(34)+")"
 			]
 		]
 	],
 	[
 		81,
-		77,
+		78,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cOutput</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">substr(cOutput,&quot;#{f5}&quot;,&quot;App&quot;)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cOutput = substr(cOutput,"+char(34)+"#{f5}"+char(34)+","+char(34)+"App"+char(34)+")"
+			],
+			[
+				"interactionid",
+				60
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cOutput = substr(cOutput,"+char(34)+"#{f5}"+char(34)+","+char(34)+"App"+char(34)+")"
+			]
+		]
+	],
+	[
+		82,
+		78,
 		[
 			[
 				"name",
@@ -2896,7 +2934,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				60
+				61
 			],
 			[
 				"visible",
@@ -2917,8 +2955,8 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
+		83,
 		82,
-		81,
 		[
 			[
 				"name",
@@ -2934,7 +2972,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				60
+				61
 			],
 			[
 				"visible",
@@ -2955,8 +2993,8 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
+		84,
 		83,
-		82,
 		[
 			[
 				"name",
@@ -2969,44 +3007,6 @@ class #{f2} from windowsControllerParent
 			[
 				"code",
 				"cOutput = substr(cOutput,"+char(34)+"#{f4}"+char(34)+","+char(34)+""+char(34)+")"
-			],
-			[
-				"interactionid",
-				61
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"cOutput = substr(cOutput,"+char(34)+"#{f4}"+char(34)+","+char(34)+""+char(34)+")"
-			]
-		]
-	],
-	[
-		84,
-		82,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cOutput</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">substr(cOutput,&quot;#{f5}&quot;,&quot;qApp&quot;)</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"cOutput = substr(cOutput,"+char(34)+"#{f5}"+char(34)+","+char(34)+"qApp"+char(34)+")"
 			],
 			[
 				"interactionid",
@@ -3026,13 +3026,51 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"plainname",
+				"cOutput = substr(cOutput,"+char(34)+"#{f4}"+char(34)+","+char(34)+""+char(34)+")"
+			]
+		]
+	],
+	[
+		85,
+		83,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cOutput</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">substr(cOutput,&quot;#{f5}&quot;,&quot;qApp&quot;)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cOutput = substr(cOutput,"+char(34)+"#{f5}"+char(34)+","+char(34)+"qApp"+char(34)+")"
+			],
+			[
+				"interactionid",
+				63
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
 				"cOutput = substr(cOutput,"+char(34)+"#{f5}"+char(34)+","+char(34)+"qApp"+char(34)+")"
 			]
 		]
 	],
 	[
-		78,
-		76,
+		79,
+		77,
 		[
 			[
 				"name",
@@ -3048,7 +3086,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				57
+				58
 			],
 			[
 				"visible",
@@ -3069,7 +3107,7 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
-		85,
+		86,
 		18,
 		[
 			[
@@ -3083,44 +3121,6 @@ class #{f2} from windowsControllerParent
 			[
 				"code",
 				"cOutput = substr(cOutput,nl,WindowsNL())"
-			],
-			[
-				"interactionid",
-				63
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"cOutput = substr(cOutput,nl,WindowsNL())"
-			]
-		]
-	],
-	[
-		86,
-		18,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cSourceFileName</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oDesigner.oFile.FileNameEncoding(cSourceFileName)</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"cSourceFileName = oDesigner.oFile.FileNameEncoding(cSourceFileName)"
 			],
 			[
 				"interactionid",
@@ -3140,12 +3140,50 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"plainname",
-				"cSourceFileName = oDesigner.oFile.FileNameEncoding(cSourceFileName)"
+				"cOutput = substr(cOutput,nl,WindowsNL())"
 			]
 		]
 	],
 	[
 		87,
+		18,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cSourceFileName</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oDesigner.oFile.FileNameEncoding(cSourceFileName)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cSourceFileName = oDesigner.oFile.FileNameEncoding(cSourceFileName)"
+			],
+			[
+				"interactionid",
+				65
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cSourceFileName = oDesigner.oFile.FileNameEncoding(cSourceFileName)"
+			]
+		]
+	],
+	[
+		88,
 		18,
 		[
 			[
@@ -3162,7 +3200,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				65
+				66
 			],
 			[
 				"visible",
@@ -3221,7 +3259,7 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
-		88,
+		89,
 		11,
 		[
 			[
@@ -3238,7 +3276,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				66
+				67
 			],
 			[
 				"visible",
@@ -3259,8 +3297,8 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
+		90,
 		89,
-		88,
 		[
 			[
 				"name",
@@ -3276,7 +3314,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				66
+				67
 			],
 			[
 				"visible",
@@ -3297,8 +3335,8 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
-		91,
-		89,
+		92,
+		90,
 		[
 			[
 				"name",
@@ -3314,7 +3352,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				67
+				68
 			],
 			[
 				"visible",
@@ -3335,8 +3373,8 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
+		93,
 		92,
-		91,
 		[
 			[
 				"name",
@@ -3352,7 +3390,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				67
+				68
 			],
 			[
 				"visible",
@@ -3373,8 +3411,8 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
-		94,
-		92,
+		95,
+		93,
 		[
 			[
 				"name",
@@ -3390,7 +3428,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				68
+				69
 			],
 			[
 				"visible",
@@ -3411,8 +3449,8 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
+		96,
 		95,
-		94,
 		[
 			[
 				"name",
@@ -3428,7 +3466,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				68
+				69
 			],
 			[
 				"visible",
@@ -3449,8 +3487,8 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
-		97,
-		95,
+		98,
+		96,
 		[
 			[
 				"name",
@@ -3466,7 +3504,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				69
+				70
 			],
 			[
 				"visible",
@@ -3487,8 +3525,46 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
-		96,
+		97,
+		95,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				69
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
 		94,
+		92,
 		[
 			[
 				"name",
@@ -3525,12 +3601,12 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
-		93,
 		91,
+		89,
 		[
 			[
 				"name",
-				"End of IF Statement"
+				"End of Function"
 			],
 			[
 				"active",
@@ -3558,50 +3634,12 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"plainname",
-				"End of IF Statement"
-			]
-		]
-	],
-	[
-		90,
-		88,
-		[
-			[
-				"name",
-				"End of Function"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				66
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
 				"End of Function"
 			]
 		]
 	],
 	[
-		98,
+		99,
 		11,
 		[
 			[
@@ -3618,7 +3656,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				70
+				71
 			],
 			[
 				"visible",
@@ -3639,8 +3677,8 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
+		100,
 		99,
-		98,
 		[
 			[
 				"name",
@@ -3656,7 +3694,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				70
+				71
 			],
 			[
 				"visible",
@@ -3677,8 +3715,8 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
-		101,
-		99,
+		102,
+		100,
 		[
 			[
 				"name",
@@ -3691,44 +3729,6 @@ class #{f2} from windowsControllerParent
 			[
 				"code",
 				"cClassName = substr(cClassName,"+char(34)+" "+char(34)+","+char(34)+"_"+char(34)+")"
-			],
-			[
-				"interactionid",
-				71
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"cClassName = substr(cClassName,"+char(34)+" "+char(34)+","+char(34)+"_"+char(34)+")"
-			]
-		]
-	],
-	[
-		102,
-		99,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cClassName</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">substr(cClassName,&quot;-&quot;,&quot;_&quot;)</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"cClassName = substr(cClassName,"+char(34)+"-"+char(34)+","+char(34)+"_"+char(34)+")"
 			],
 			[
 				"interactionid",
@@ -3748,13 +3748,51 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"plainname",
-				"cClassName = substr(cClassName,"+char(34)+"-"+char(34)+","+char(34)+"_"+char(34)+")"
+				"cClassName = substr(cClassName,"+char(34)+" "+char(34)+","+char(34)+"_"+char(34)+")"
 			]
 		]
 	],
 	[
 		103,
-		99,
+		100,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cClassName</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">substr(cClassName,&quot;-&quot;,&quot;_&quot;)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cClassName = substr(cClassName,"+char(34)+"-"+char(34)+","+char(34)+"_"+char(34)+")"
+			],
+			[
+				"interactionid",
+				73
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cClassName = substr(cClassName,"+char(34)+"-"+char(34)+","+char(34)+"_"+char(34)+")"
+			]
+		]
+	],
+	[
+		104,
+		100,
 		[
 			[
 				"name",
@@ -3770,7 +3808,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				73
+				74
 			],
 			[
 				"visible",
@@ -3791,8 +3829,8 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
-		104,
-		99,
+		105,
+		100,
 		[
 			[
 				"name",
@@ -3808,7 +3846,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				74
+				75
 			],
 			[
 				"visible",
@@ -3829,8 +3867,8 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
-		100,
-		98,
+		101,
+		99,
 		[
 			[
 				"name",
@@ -3846,7 +3884,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				70
+				71
 			],
 			[
 				"visible",
@@ -3867,7 +3905,7 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
-		105,
+		106,
 		11,
 		[
 			[
@@ -3884,7 +3922,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				75
+				76
 			],
 			[
 				"visible",
@@ -3905,8 +3943,8 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
+		107,
 		106,
-		105,
 		[
 			[
 				"name",
@@ -3922,7 +3960,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				75
+				76
 			],
 			[
 				"visible",
@@ -3943,8 +3981,8 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
-		108,
-		106,
+		109,
+		107,
 		[
 			[
 				"name",
@@ -3957,44 +3995,6 @@ class #{f2} from windowsControllerParent
 			[
 				"code",
 				"cFN = cFileName"
-			],
-			[
-				"interactionid",
-				76
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"cFN = cFileName"
-			]
-		]
-	],
-	[
-		109,
-		106,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nCount</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">0</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"nCount = 0"
 			],
 			[
 				"interactionid",
@@ -4014,13 +4014,51 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"plainname",
-				"nCount = 0"
+				"cFN = cFileName"
 			]
 		]
 	],
 	[
 		110,
-		106,
+		107,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nCount</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">0</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"nCount = 0"
+			],
+			[
+				"interactionid",
+				78
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"nCount = 0"
+			]
+		]
+	],
+	[
+		111,
+		107,
 		[
 			[
 				"name",
@@ -4036,7 +4074,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				78
+				79
 			],
 			[
 				"visible",
@@ -4057,8 +4095,8 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
+		112,
 		111,
-		110,
 		[
 			[
 				"name",
@@ -4074,7 +4112,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				78
+				79
 			],
 			[
 				"visible",
@@ -4095,8 +4133,8 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
-		113,
-		111,
+		114,
+		112,
 		[
 			[
 				"name",
@@ -4112,7 +4150,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				79
+				80
 			],
 			[
 				"visible",
@@ -4133,8 +4171,8 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
+		115,
 		114,
-		113,
 		[
 			[
 				"name",
@@ -4150,7 +4188,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				79
+				80
 			],
 			[
 				"visible",
@@ -4171,8 +4209,8 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
-		116,
-		114,
+		117,
+		115,
 		[
 			[
 				"name",
@@ -4188,7 +4226,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				80
+				81
 			],
 			[
 				"visible",
@@ -4209,8 +4247,8 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
-		117,
-		114,
+		118,
+		115,
 		[
 			[
 				"name",
@@ -4226,7 +4264,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				81
+				82
 			],
 			[
 				"visible",
@@ -4247,12 +4285,88 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
-		115,
-		113,
+		116,
+		114,
 		[
 			[
 				"name",
 				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				80
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		119,
+		112,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nCount++</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"nCount++"
+			],
+			[
+				"interactionid",
+				83
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"nCount++"
+			]
+		]
+	],
+	[
+		113,
+		111,
+		[
+			[
+				"name",
+				"End of For Loop"
 			],
 			[
 				"active",
@@ -4280,89 +4394,13 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"plainname",
-				"End of IF Statement"
-			]
-		]
-	],
-	[
-		118,
-		111,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nCount++</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"nCount++"
-			],
-			[
-				"interactionid",
-				82
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"nCount++"
-			]
-		]
-	],
-	[
-		112,
-		110,
-		[
-			[
-				"name",
-				"End of For Loop"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				78
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
 				"End of For Loop"
 			]
 		]
 	],
 	[
-		119,
-		106,
+		120,
+		107,
 		[
 			[
 				"name",
@@ -4378,7 +4416,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				83
+				84
 			],
 			[
 				"visible",
@@ -4399,8 +4437,8 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
-		107,
-		105,
+		108,
+		106,
 		[
 			[
 				"name",
@@ -4416,7 +4454,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				75
+				76
 			],
 			[
 				"visible",
@@ -4437,7 +4475,7 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
-		120,
+		121,
 		11,
 		[
 			[
@@ -4454,7 +4492,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				84
+				85
 			],
 			[
 				"visible",
@@ -4475,8 +4513,8 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
+		122,
 		121,
-		120,
 		[
 			[
 				"name",
@@ -4492,7 +4530,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				84
+				85
 			],
 			[
 				"visible",
@@ -4513,8 +4551,8 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
-		123,
-		121,
+		124,
+		122,
 		[
 			[
 				"name",
@@ -4530,7 +4568,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				85
+				86
 			],
 			[
 				"visible",
@@ -4551,8 +4589,8 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
-		122,
-		120,
+		123,
+		121,
 		[
 			[
 				"name",
@@ -4568,7 +4606,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				84
+				85
 			],
 			[
 				"visible",
@@ -4589,7 +4627,7 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
-		124,
+		125,
 		11,
 		[
 			[
@@ -4606,7 +4644,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				86
+				87
 			],
 			[
 				"visible",
@@ -4627,8 +4665,8 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
+		126,
 		125,
-		124,
 		[
 			[
 				"name",
@@ -4644,7 +4682,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				86
+				87
 			],
 			[
 				"visible",
@@ -4665,8 +4703,8 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
-		127,
-		125,
+		128,
+		126,
 		[
 			[
 				"name",
@@ -4682,7 +4720,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				87
+				88
 			],
 			[
 				"visible",
@@ -4703,8 +4741,8 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
-		126,
-		124,
+		127,
+		125,
 		[
 			[
 				"name",
@@ -4720,7 +4758,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				86
+				87
 			],
 			[
 				"visible",
@@ -4741,7 +4779,7 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
-		128,
+		129,
 		11,
 		[
 			[
@@ -4758,7 +4796,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				88
+				89
 			],
 			[
 				"visible",
@@ -4779,8 +4817,8 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
+		130,
 		129,
-		128,
 		[
 			[
 				"name",
@@ -4796,7 +4834,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				88
+				89
 			],
 			[
 				"visible",
@@ -4817,8 +4855,8 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
-		131,
-		129,
+		132,
+		130,
 		[
 			[
 				"name",
@@ -4834,7 +4872,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				89
+				90
 			],
 			[
 				"visible",
@@ -4855,8 +4893,8 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
-		132,
-		129,
+		133,
+		130,
 		[
 			[
 				"name",
@@ -4872,7 +4910,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				90
+				91
 			],
 			[
 				"visible",
@@ -4893,8 +4931,8 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
+		134,
 		133,
-		132,
 		[
 			[
 				"name",
@@ -4910,7 +4948,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				90
+				91
 			],
 			[
 				"visible",
@@ -4931,8 +4969,8 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
-		135,
-		133,
+		136,
+		134,
 		[
 			[
 				"name",
@@ -4945,44 +4983,6 @@ class #{f2} from windowsControllerParent
 			[
 				"code",
 				"oObject = oDesigner.oModel.GetObjects()[x][2]"
-			],
-			[
-				"interactionid",
-				91
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"oObject = oDesigner.oModel.GetObjects()[x][2]"
-			]
-		]
-	],
-	[
-		136,
-		133,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cCode&nbsp;+=&nbsp;oObject.GenerateCode(oDesigner)</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"cCode += oObject.GenerateCode(oDesigner)"
 			],
 			[
 				"interactionid",
@@ -5002,13 +5002,51 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"plainname",
+				"oObject = oDesigner.oModel.GetObjects()[x][2]"
+			]
+		]
+	],
+	[
+		137,
+		134,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cCode&nbsp;+=&nbsp;oObject.GenerateCode(oDesigner)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cCode += oObject.GenerateCode(oDesigner)"
+			],
+			[
+				"interactionid",
+				93
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
 				"cCode += oObject.GenerateCode(oDesigner)"
 			]
 		]
 	],
 	[
-		134,
-		132,
+		135,
+		133,
 		[
 			[
 				"name",
@@ -5024,7 +5062,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				90
+				91
 			],
 			[
 				"visible",
@@ -5045,8 +5083,8 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
-		137,
-		129,
+		138,
+		130,
 		[
 			[
 				"name",
@@ -5062,7 +5100,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				93
+				94
 			],
 			[
 				"visible",
@@ -5083,8 +5121,8 @@ class #{f2} from windowsControllerParent
 		]
 	],
 	[
-		130,
-		128,
+		131,
+		129,
 		[
 			[
 				"name",
@@ -5100,7 +5138,7 @@ class #{f2} from windowsControllerParent
 			],
 			[
 				"interactionid",
-				88
+				89
 			],
 			[
 				"visible",
@@ -5279,427 +5317,427 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"value;;_RV_;;**	Project : Form Designer;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"value;;_RV_;;**	File Purpose :  Code Generator;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"value;;_RV_;;**	Date : 2017.04.29;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"value;;_RV_;;**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"package",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"value;;_RV_;;formdesigner;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"class",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"value;;_RV_;;FormDesignerCodeGenerator;;_RV_;;value2;;_RV_;;;;_RV_;;value3;;_RV_;;2;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"freetyping",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"value;;_RV_;;cSourceFileName;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"func",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"name;;_RV_;;Generate;;_RV_;;parameters;;_RV_;;oDesigner,cFormFileName;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:19",
-		"leftside;;_RV_;;cSourceFileName;;_RV_;;rightside;;_RV_;;substr(cFormFileName,"+char(34)+".rform"+char(34)+","+char(34)+"View.ring"+char(34)+");;_RV_;;"
+		"19/04/2025",
+		"06:50:57",
+		"leftside;;_RV_;;cSourceFileName;;_RV_;;rightside;;_RV_;;substr(cFormFileName,"+char(34)+"."+char(34)+"+T_FORMDESIGNER_FILEEXTENSION,T_FORMDESIGNER_VIEWFILE);;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:19",
-		"leftside;;_RV_;;cFormName;;_RV_;;rightside;;_RV_;;GetFileNameOnlyWithoutPath(substr(cFormFileName,"+char(34)+".rform"+char(34)+","+char(34)+""+char(34)+"));;_RV_;;"
+		"19/04/2025",
+		"06:50:57",
+		"leftside;;_RV_;;cFormName;;_RV_;;rightside;;_RV_;;GetFileNameOnlyWithoutPath(substr(cFormFileName,"+char(34)+"."+char(34)+"+T_FORMDESIGNER_FILEEXTENSION,"+char(34)+""+char(34)+"));;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"leftside;;_RV_;;cClassName;;_RV_;;rightside;;_RV_;;cFormName+"+char(34)+"View"+char(34)+";;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"leftside;;_RV_;;cClassName;;_RV_;;rightside;;_RV_;;PrepareClassName(cClassName);;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"leftside;;_RV_;;cClassName2;;_RV_;;rightside;;_RV_;;cFormName+"+char(34)+"Controller"+char(34)+";;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"leftside;;_RV_;;cClassName2;;_RV_;;rightside;;_RV_;;PrepareClassName(cClassName2);;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"value;;_RV_;;Index start from 1;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"value;;_RV_;;Add the File Header;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"leftside;;_RV_;;lIndexStartFrom1;;_RV_;;rightside;;_RV_;;NOT oDesigner.oModel.FormObject().IndexTypeValue();;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"leftside;;_RV_;;cOutput;;_RV_;;rightside;;_RV_;;"+char(34)+"# Form/Window View - Generated Source Code File "+char(34)+"+nl+"+char(34)+"# Generated by the Ring "+char(34)+"+version()+"+char(34)+" Form Designer"+char(34)+"+nl+"+char(34)+"# Date : "+char(34)+"+date()+nl+"+char(34)+"# Time : "+char(34)+"+time()+nl+nl;;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"value;;_RV_;;Write general code to show the window;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"freetyping",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"value;;_RV_;;cOutput += 'Load "+char(34)+"stdlibcore.ring"+char(34)+"'+nl;;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"ifstatement",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"condition;;_RV_;;oDesigner.oModel.FormObject().GUILibraryValue() = 0;;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"freetyping",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"value;;_RV_;;cOutput += 'Load "+char(34)+"guilib.ring"+char(34)+"'+nl+nl;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"else",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		""
 	],
 	[
 		27,
 		1,
 		"freetyping",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"value;;_RV_;;cOutput += 'Load "+char(34)+"lightguilib.ring"+char(34)+"'+nl+nl;;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"ifstatement",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"condition;;_RV_;;lIndexStartFrom1;;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"freetyping",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"value;;_RV_;;cOutput += "+char(34)+"import System.GUI"+char(34)+"+nl+nl;;_RV_;;"
 	],
 	[
 		30,
 		1,
 		"freetyping",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"value;;_RV_;;cOutput += "+char(34)+"if IsMainSourceFile() { "+char(34)+"+nl;;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"freetyping",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"value;;_RV_;;cOutput += char(9)+"+char(34)+"new App {"+char(34)+"+nl;;_RV_;;"
 	],
 	[
 		32,
 		1,
 		"else",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		""
 	],
 	[
 		33,
 		1,
 		"freetyping",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"value;;_RV_;;cOutput += "+char(34)+"if IsMainSourceFile() { "+char(34)+"+nl;;_RV_;;"
 	],
 	[
 		34,
 		1,
 		"freetyping",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"value;;_RV_;;cOutput += char(9)+"+char(34)+"new qApp {"+char(34)+"+nl;;_RV_;;"
 	],
 	[
 		35,
 		1,
 		"freetyping",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"value;;_RV_;;cOutput += char(9)+char(9)+"+char(34)+"StyleFusion()"+char(34)+"+nl+char(9)+char(9)+"+char(34)+"new "+char(34)+"+cClassName+"+char(34)+" { win.show() } "+char(34)+"+nl+char(9)+char(9)+"+char(34)+"exec()"+char(34)+"+nl+char(9)+"+char(34)+"}"+char(34)+"+nl+"+char(34)+"}"+char(34)+"+nl+nl;;_RV_;;"
 	],
 	[
 		36,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"value;;_RV_;;Write the Class;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		37,
 		1,
 		"freetyping",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"value;;_RV_;;cOutput += "+char(34)+"class "+char(34)+"+cClassName+"+char(34)+" from WindowsViewParent"+char(34)+"+nl;;_RV_;;"
 	],
 	[
 		38,
 		1,
 		"ifstatement",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"condition;;_RV_;;lIndexStartFrom1;;_RV_;;"
 	],
 	[
 		39,
 		1,
 		"freetyping",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"value;;_RV_;;cOutput += char(9)+"+char(34)+"win = new MainWindow() { "+char(34)+"+nl;;_RV_;;"
 	],
 	[
 		40,
 		1,
 		"else",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		""
 	],
 	[
 		41,
 		1,
 		"freetyping",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"value;;_RV_;;cOutput += char(9)+"+char(34)+"win = new qMainWindow() { "+char(34)+"+nl;;_RV_;;"
 	],
 	[
 		42,
 		1,
 		"freetyping",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"value;;_RV_;;cOutput += GenerateWindowCode(oDesigner)+GenerateObjectsCode(oDesigner)+GenerateWindowCodeAfterObjects(oDesigner)+char(9)+"+char(34)+"}"+char(34)+"+nl+nl;;_RV_;;"
 	],
 	[
 		43,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"value;;_RV_;;Add the End of file;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		44,
 		1,
 		"freetyping",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"value;;_RV_;;cOutput += "+char(34)+"# End of the Generated Source Code File..."+char(34)+";;_RV_;;"
 	],
 	[
 		45,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"leftside;;_RV_;;cOutput;;_RV_;;rightside;;_RV_;;substr(cOutput,nl,WindowsNL());;_RV_;;"
 	],
 	[
 		46,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"leftside;;_RV_;;cSourceFileName;;_RV_;;rightside;;_RV_;;oDesigner.oFile.FileNameEncoding(cSourceFileName);;_RV_;;"
 	],
 	[
 		47,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;write;;_RV_;;parameters;;_RV_;;cSourceFileName,cOutput;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		48,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"value;;_RV_;;Write the Controller Source File;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		49,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:19",
-		"leftside;;_RV_;;cSourceFileName;;_RV_;;rightside;;_RV_;;substr(cFormFileName,"+char(34)+".rform"+char(34)+","+char(34)+"Controller.ring"+char(34)+");;_RV_;;"
+		"19/04/2025",
+		"06:50:57",
+		"leftside;;_RV_;;cSourceFileName;;_RV_;;rightside;;_RV_;;substr(cFormFileName,"+char(34)+"."+char(34)+"+T_FORMDESIGNER_FILEEXTENSION,T_FILENAME_CONTROLLER+"+char(34)+".ring"+char(34)+");;_RV_;;"
 	],
 	[
 		50,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;GenerateControllerClassInParent;;_RV_;;parameters;;_RV_;;oDesigner,cSourceFileName;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		51,
 		1,
 		"ifstatement",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"condition;;_RV_;;fexists(cSourceFileName);;_RV_;;"
 	],
 	[
 		52,
 		1,
 		"return",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		53,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"leftside;;_RV_;;cOutput;;_RV_;;rightside;;_RV_;;'# Form/Window Controller - Source Code File
 
-load "+char(34)+"#{f1}View.ring"+char(34)+"
+load "+char(34)+"#{f1}#{f6}"+char(34)+"
 
 #{f4}
 
@@ -5720,320 +5758,328 @@ class #{f2} from windowsControllerParent
 		54,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:19",
-		"leftside;;_RV_;;cOutput;;_RV_;;rightside;;_RV_;;substr(cOutput,"+char(34)+"#{f1}"+char(34)+",cFormName);;_RV_;;"
+		"19/04/2025",
+		"06:50:57",
+		"leftside;;_RV_;;cOutput;;_RV_;;rightside;;_RV_;;substr(cOutput,"+char(34)+"#{f6}"+char(34)+",T_FORMDESIGNER_VIEWFILE);;_RV_;;"
 	],
 	[
 		55,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:19",
-		"leftside;;_RV_;;cOutput;;_RV_;;rightside;;_RV_;;substr(cOutput,"+char(34)+"#{f2}"+char(34)+",cClassName2);;_RV_;;"
+		"19/04/2025",
+		"06:50:57",
+		"leftside;;_RV_;;cOutput;;_RV_;;rightside;;_RV_;;substr(cOutput,"+char(34)+"#{f1}"+char(34)+",cFormName);;_RV_;;"
 	],
 	[
 		56,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:19",
-		"leftside;;_RV_;;cOutput;;_RV_;;rightside;;_RV_;;substr(cOutput,"+char(34)+"#{f3}"+char(34)+",cClassName);;_RV_;;"
+		"19/04/2025",
+		"06:50:57",
+		"leftside;;_RV_;;cOutput;;_RV_;;rightside;;_RV_;;substr(cOutput,"+char(34)+"#{f2}"+char(34)+",cClassName2);;_RV_;;"
 	],
 	[
 		57,
 		1,
-		"ifstatement",
-		"04/03/2025",
-		"21:25:19",
-		"condition;;_RV_;;lIndexStartFrom1;;_RV_;;"
+		"assignment",
+		"19/04/2025",
+		"06:50:57",
+		"leftside;;_RV_;;cOutput;;_RV_;;rightside;;_RV_;;substr(cOutput,"+char(34)+"#{f3}"+char(34)+",cClassName);;_RV_;;"
 	],
 	[
 		58,
 		1,
-		"assignment",
-		"04/03/2025",
-		"21:25:19",
-		"leftside;;_RV_;;cOutput;;_RV_;;rightside;;_RV_;;substr(cOutput,"+char(34)+"#{f4}"+char(34)+","+char(34)+"import System.GUI"+char(34)+");;_RV_;;"
+		"ifstatement",
+		"19/04/2025",
+		"06:50:57",
+		"condition;;_RV_;;lIndexStartFrom1;;_RV_;;"
 	],
 	[
 		59,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:19",
-		"leftside;;_RV_;;cOutput;;_RV_;;rightside;;_RV_;;substr(cOutput,"+char(34)+"#{f5}"+char(34)+","+char(34)+"App"+char(34)+");;_RV_;;"
+		"19/04/2025",
+		"06:50:57",
+		"leftside;;_RV_;;cOutput;;_RV_;;rightside;;_RV_;;substr(cOutput,"+char(34)+"#{f4}"+char(34)+","+char(34)+"import System.GUI"+char(34)+");;_RV_;;"
 	],
 	[
 		60,
 		1,
-		"else",
-		"04/03/2025",
-		"21:25:19",
-		""
+		"assignment",
+		"19/04/2025",
+		"06:50:57",
+		"leftside;;_RV_;;cOutput;;_RV_;;rightside;;_RV_;;substr(cOutput,"+char(34)+"#{f5}"+char(34)+","+char(34)+"App"+char(34)+");;_RV_;;"
 	],
 	[
 		61,
 		1,
-		"assignment",
-		"04/03/2025",
-		"21:25:19",
-		"leftside;;_RV_;;cOutput;;_RV_;;rightside;;_RV_;;substr(cOutput,"+char(34)+"#{f4}"+char(34)+","+char(34)+""+char(34)+");;_RV_;;"
+		"else",
+		"19/04/2025",
+		"06:50:57",
+		""
 	],
 	[
 		62,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:19",
-		"leftside;;_RV_;;cOutput;;_RV_;;rightside;;_RV_;;substr(cOutput,"+char(34)+"#{f5}"+char(34)+","+char(34)+"qApp"+char(34)+");;_RV_;;"
+		"19/04/2025",
+		"06:50:57",
+		"leftside;;_RV_;;cOutput;;_RV_;;rightside;;_RV_;;substr(cOutput,"+char(34)+"#{f4}"+char(34)+","+char(34)+""+char(34)+");;_RV_;;"
 	],
 	[
 		63,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:19",
-		"leftside;;_RV_;;cOutput;;_RV_;;rightside;;_RV_;;substr(cOutput,nl,WindowsNL());;_RV_;;"
+		"19/04/2025",
+		"06:50:57",
+		"leftside;;_RV_;;cOutput;;_RV_;;rightside;;_RV_;;substr(cOutput,"+char(34)+"#{f5}"+char(34)+","+char(34)+"qApp"+char(34)+");;_RV_;;"
 	],
 	[
 		64,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:19",
-		"leftside;;_RV_;;cSourceFileName;;_RV_;;rightside;;_RV_;;oDesigner.oFile.FileNameEncoding(cSourceFileName);;_RV_;;"
+		"19/04/2025",
+		"06:50:57",
+		"leftside;;_RV_;;cOutput;;_RV_;;rightside;;_RV_;;substr(cOutput,nl,WindowsNL());;_RV_;;"
 	],
 	[
 		65,
 		1,
-		"callfunc",
-		"04/03/2025",
-		"21:25:19",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;write;;_RV_;;parameters;;_RV_;;cSourceFileName,cOutput;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"assignment",
+		"19/04/2025",
+		"06:50:57",
+		"leftside;;_RV_;;cSourceFileName;;_RV_;;rightside;;_RV_;;oDesigner.oFile.FileNameEncoding(cSourceFileName);;_RV_;;"
 	],
 	[
 		66,
 		1,
-		"func",
-		"04/03/2025",
-		"21:25:19",
-		"name;;_RV_;;GenerateControllerClassInParent;;_RV_;;parameters;;_RV_;;oDesigner,cSourceFileName;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"callfunc",
+		"19/04/2025",
+		"06:50:57",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;write;;_RV_;;parameters;;_RV_;;cSourceFileName,cOutput;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		67,
 		1,
-		"ifstatement",
-		"04/03/2025",
-		"21:25:19",
-		"condition;;_RV_;;oDesigner.IsParent();;_RV_;;"
+		"func",
+		"19/04/2025",
+		"06:50:57",
+		"name;;_RV_;;GenerateControllerClassInParent;;_RV_;;parameters;;_RV_;;oDesigner,cSourceFileName;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		68,
 		1,
 		"ifstatement",
-		"04/03/2025",
-		"21:25:19",
-		"condition;;_RV_;;isMethod(oDesigner.Parent(),"+char(34)+"generatecontrollerclass"+char(34)+");;_RV_;;"
+		"19/04/2025",
+		"06:50:57",
+		"condition;;_RV_;;oDesigner.IsParent();;_RV_;;"
 	],
 	[
 		69,
 		1,
-		"assignment",
-		"04/03/2025",
-		"21:25:19",
-		"leftside;;_RV_;;cDir;;_RV_;;rightside;;_RV_;;oDesigner.Parent().GenerateControllerClass(cSourceFileName);;_RV_;;"
+		"ifstatement",
+		"19/04/2025",
+		"06:50:57",
+		"condition;;_RV_;;isMethod(oDesigner.Parent(),"+char(34)+"generatecontrollerclass"+char(34)+");;_RV_;;"
 	],
 	[
 		70,
 		1,
-		"func",
-		"04/03/2025",
-		"21:25:19",
-		"name;;_RV_;;PrepareClassName;;_RV_;;parameters;;_RV_;;cClassName;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"19/04/2025",
+		"06:50:57",
+		"leftside;;_RV_;;cDir;;_RV_;;rightside;;_RV_;;oDesigner.Parent().GenerateControllerClass(cSourceFileName);;_RV_;;"
 	],
 	[
 		71,
 		1,
-		"assignment",
-		"04/03/2025",
-		"21:25:19",
-		"leftside;;_RV_;;cClassName;;_RV_;;rightside;;_RV_;;substr(cClassName,"+char(34)+" "+char(34)+","+char(34)+"_"+char(34)+");;_RV_;;"
+		"func",
+		"19/04/2025",
+		"06:50:57",
+		"name;;_RV_;;PrepareClassName;;_RV_;;parameters;;_RV_;;cClassName;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		72,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:19",
-		"leftside;;_RV_;;cClassName;;_RV_;;rightside;;_RV_;;substr(cClassName,"+char(34)+"-"+char(34)+","+char(34)+"_"+char(34)+");;_RV_;;"
+		"19/04/2025",
+		"06:50:57",
+		"leftside;;_RV_;;cClassName;;_RV_;;rightside;;_RV_;;substr(cClassName,"+char(34)+" "+char(34)+","+char(34)+"_"+char(34)+");;_RV_;;"
 	],
 	[
 		73,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:19",
-		"leftside;;_RV_;;cClassName;;_RV_;;rightside;;_RV_;;substr(cClassName,"+char(34)+"."+char(34)+","+char(34)+"_"+char(34)+");;_RV_;;"
+		"19/04/2025",
+		"06:50:57",
+		"leftside;;_RV_;;cClassName;;_RV_;;rightside;;_RV_;;substr(cClassName,"+char(34)+"-"+char(34)+","+char(34)+"_"+char(34)+");;_RV_;;"
 	],
 	[
 		74,
 		1,
-		"return",
-		"04/03/2025",
-		"21:25:19",
-		"value;;_RV_;;cClassName;;_RV_;;"
+		"assignment",
+		"19/04/2025",
+		"06:50:57",
+		"leftside;;_RV_;;cClassName;;_RV_;;rightside;;_RV_;;substr(cClassName,"+char(34)+"."+char(34)+","+char(34)+"_"+char(34)+");;_RV_;;"
 	],
 	[
 		75,
 		1,
-		"func",
-		"04/03/2025",
-		"21:25:19",
-		"name;;_RV_;;GetFileNameOnlyWithoutPath;;_RV_;;parameters;;_RV_;;cFileName;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"return",
+		"19/04/2025",
+		"06:50:57",
+		"value;;_RV_;;cClassName;;_RV_;;"
 	],
 	[
 		76,
 		1,
-		"assignment",
-		"04/03/2025",
-		"21:25:19",
-		"leftside;;_RV_;;cFN;;_RV_;;rightside;;_RV_;;cFileName;;_RV_;;"
+		"func",
+		"19/04/2025",
+		"06:50:57",
+		"name;;_RV_;;GetFileNameOnlyWithoutPath;;_RV_;;parameters;;_RV_;;cFileName;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		77,
 		1,
 		"assignment",
-		"04/03/2025",
-		"21:25:19",
-		"leftside;;_RV_;;nCount;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:50:57",
+		"leftside;;_RV_;;cFN;;_RV_;;rightside;;_RV_;;cFileName;;_RV_;;"
 	],
 	[
 		78,
 		1,
-		"forloop",
-		"04/03/2025",
-		"21:25:19",
-		"start;;_RV_;;x = len(cFileName);;_RV_;;to;;_RV_;;1;;_RV_;;step;;_RV_;;-1;;_RV_;;"
+		"assignment",
+		"19/04/2025",
+		"06:50:57",
+		"leftside;;_RV_;;nCount;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		79,
 		1,
-		"ifstatement",
-		"04/03/2025",
-		"21:25:19",
-		"condition;;_RV_;;cFileName[x] = "+char(34)+"/"+char(34)+" OR cFileName[x] = "+char(34)+"\"+char(34)+";;_RV_;;"
+		"forloop",
+		"19/04/2025",
+		"06:50:57",
+		"start;;_RV_;;x = len(cFileName);;_RV_;;to;;_RV_;;1;;_RV_;;step;;_RV_;;-1;;_RV_;;"
 	],
 	[
 		80,
 		1,
-		"assignment",
-		"04/03/2025",
-		"21:25:19",
-		"leftside;;_RV_;;cFN;;_RV_;;rightside;;_RV_;;right(cFileName,nCount);;_RV_;;"
+		"ifstatement",
+		"19/04/2025",
+		"06:50:57",
+		"condition;;_RV_;;cFileName[x] = "+char(34)+"/"+char(34)+" OR cFileName[x] = "+char(34)+"\"+char(34)+";;_RV_;;"
 	],
 	[
 		81,
 		1,
-		"exit",
-		"04/03/2025",
-		"21:25:19",
-		"value;;_RV_;;1;;_RV_;;"
+		"assignment",
+		"19/04/2025",
+		"06:50:57",
+		"leftside;;_RV_;;cFN;;_RV_;;rightside;;_RV_;;right(cFileName,nCount);;_RV_;;"
 	],
 	[
 		82,
 		1,
-		"freetyping",
-		"04/03/2025",
-		"21:25:19",
-		"value;;_RV_;;nCount++;;_RV_;;"
+		"exit",
+		"19/04/2025",
+		"06:50:57",
+		"value;;_RV_;;1;;_RV_;;"
 	],
 	[
 		83,
 		1,
-		"return",
-		"04/03/2025",
-		"21:25:19",
-		"value;;_RV_;;cFN;;_RV_;;"
+		"freetyping",
+		"19/04/2025",
+		"06:50:57",
+		"value;;_RV_;;nCount++;;_RV_;;"
 	],
 	[
 		84,
 		1,
-		"func",
-		"04/03/2025",
-		"21:25:19",
-		"name;;_RV_;;GenerateWindowCode;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"return",
+		"19/04/2025",
+		"06:50:57",
+		"value;;_RV_;;cFN;;_RV_;;"
 	],
 	[
 		85,
 		1,
-		"return",
-		"04/03/2025",
-		"21:25:19",
-		"value;;_RV_;;oDesigner. oModel. FormObject() . GenerateCode( oDesigner ) ;;_RV_;;"
+		"func",
+		"19/04/2025",
+		"06:50:57",
+		"name;;_RV_;;GenerateWindowCode;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		86,
 		1,
-		"func",
-		"04/03/2025",
-		"21:25:19",
-		"name;;_RV_;;GenerateWindowCodeAfterObjects;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"return",
+		"19/04/2025",
+		"06:50:57",
+		"value;;_RV_;;oDesigner. oModel. FormObject() . GenerateCode( oDesigner ) ;;_RV_;;"
 	],
 	[
 		87,
 		1,
-		"return",
-		"04/03/2025",
-		"21:25:19",
-		"value;;_RV_;;oDesigner. oModel. FormObject() . GenerateCodeAfterObjects( oDesigner ) ;;_RV_;;"
+		"func",
+		"19/04/2025",
+		"06:50:57",
+		"name;;_RV_;;GenerateWindowCodeAfterObjects;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		88,
 		1,
-		"func",
-		"04/03/2025",
-		"21:25:19",
-		"name;;_RV_;;GenerateObjectsCode;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"return",
+		"19/04/2025",
+		"06:50:57",
+		"value;;_RV_;;oDesigner. oModel. FormObject() . GenerateCodeAfterObjects( oDesigner ) ;;_RV_;;"
 	],
 	[
 		89,
 		1,
-		"assignment",
-		"04/03/2025",
-		"21:25:19",
-		"leftside;;_RV_;;cCode;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
+		"func",
+		"19/04/2025",
+		"06:50:57",
+		"name;;_RV_;;GenerateObjectsCode;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		90,
 		1,
-		"forloop",
-		"04/03/2025",
-		"21:25:19",
-		"start;;_RV_;;x = 2;;_RV_;;to;;_RV_;;len(oDesigner.oModel.GetObjects());;_RV_;;step;;_RV_;;1;;_RV_;;"
+		"assignment",
+		"19/04/2025",
+		"06:50:57",
+		"leftside;;_RV_;;cCode;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		91,
 		1,
-		"assignment",
-		"04/03/2025",
-		"21:25:19",
-		"leftside;;_RV_;;oObject;;_RV_;;rightside;;_RV_;;oDesigner.oModel.GetObjects()[x][2];;_RV_;;"
+		"forloop",
+		"19/04/2025",
+		"06:50:57",
+		"start;;_RV_;;x = 2;;_RV_;;to;;_RV_;;len(oDesigner.oModel.GetObjects());;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		92,
 		1,
-		"freetyping",
-		"04/03/2025",
-		"21:25:19",
-		"value;;_RV_;;cCode += oObject.GenerateCode(oDesigner);;_RV_;;"
+		"assignment",
+		"19/04/2025",
+		"06:50:57",
+		"leftside;;_RV_;;oObject;;_RV_;;rightside;;_RV_;;oDesigner.oModel.GetObjects()[x][2];;_RV_;;"
 	],
 	[
 		93,
 		1,
+		"freetyping",
+		"19/04/2025",
+		"06:50:57",
+		"value;;_RV_;;cCode += oObject.GenerateCode(oDesigner);;_RV_;;"
+	],
+	[
+		94,
+		1,
 		"return",
-		"04/03/2025",
-		"21:25:19",
+		"19/04/2025",
+		"06:50:57",
 		"value;;_RV_;;cCode;;_RV_;;"
 	]
 ]

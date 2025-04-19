@@ -4,9 +4,8 @@
 #**	Date : 2017.01.09
 #**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 #*/
-C_VSF_NOFILENAME = "noname.pwct"
 class VisualSourceFile
-	cFileName = C_VSF_NOFILENAME
+	cFileName = T_VSF_NONAMEPWCT
 	#"noname.pwct"
 	oDatabase = new Database
 	aStepsTable = []
@@ -16,7 +15,7 @@ class VisualSourceFile
 	lUseSystemLog = True
 	lSaveToRingCode = True
 	func RingFileName  { 
-		return substr( cFileName,".pwct" ,".ring" ) 
+		return substr( cFileName,"." + T_VSF_EXTENSION,".ring" ) 
 		#/*
 		#		Purpose : Check if a file is opened
 		#		Parameters : None
@@ -24,7 +23,7 @@ class VisualSourceFile
 		#	*/
 	} 
 	func IsFileOpened  { 
-		if cFileName = C_VSF_NOFILENAME { 
+		if cFileName = T_VSF_NONAMEPWCT { 
 			return False
 		} 
 		return True

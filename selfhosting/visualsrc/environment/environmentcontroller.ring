@@ -277,14 +277,14 @@ class EnvironmentController from WindowsControllerParent
 		cFileName = oView.oFile.filepath(oItem)
 		showmessageInStatusBar("Loading File : "+cFileName)
 		lFormFile = False
-		if right(lower(cFileName),6) = ".rform" { 
+		if right(lower(cFileName),len(T_PWCT_FORMDESIGNER_FILEEXTENSION)+1) = "."+T_PWCT_FORMDESIGNER_FILEEXTENSION { 
 			openFormDesignerFile(cFileName)
-			cFileName = substr(cFileName,".rform","controller.pwct")
+			cFileName = substr(cFileName,"."+T_PWCT_FORMDESIGNER_FILEEXTENSION,T_VSF_CONTROLLER+"."+T_VSF_EXTENSION)
 			lFormFile = True
 		} 
 		if fexists(cFileName) { 
 			openVisualFile(cFileName)
-			showmessageInStatusBar("Change File Time: "+((clock()-nClock)/Clockspersecond()))
+			showmessageInStatusBar(T_ENV_STATUSBAR_CHANGEFILETIME+((clock()-nClock)/Clockspersecond()))
 		} 
 		if lFormFile { 
 			oView.oDockFormDesigner.raise()
@@ -921,7 +921,7 @@ class EnvironmentController from WindowsControllerParent
 		ShowMessageInStatusBar("Ready!")
 	} 
 	func openfile cFileName { 
-		cFileName = substr(cFileName,".ring",".pwct")
+		cFileName = substr(cFileName,".ring","."+T_VSF_EXTENSION)
 		if fexists(cFileName) { 
 			openVisualFile(cFileName)
 		} 
@@ -933,8 +933,8 @@ class EnvironmentController from WindowsControllerParent
 		return PWCT_FOLDER
 	} 
 	func GenerateControllerClass cFileName { 
-		cFileName = substr(cFileName,".ring",".pwct")
-		cFormName = substr(JustFileName(cFileName),"Controller.pwct","")
+		cFileName = substr(cFileName,".ring","."+T_VSF_EXTENSION)
+		cFormName = substr(JustFileName(cFileName),T_VSF_CONTROLLER+"."+T_VSF_EXTENSION,"")
 		if fexists(cFileName) { 
 			return 
 		} 
@@ -1029,13 +1029,16 @@ class EnvironmentController from WindowsControllerParent
 		if (cActiveFileName! = Null) AND (cActiveFileName! = "noname.ring") { 
 			this.cCurrentDir = justfilepath(cActiveFileName)
 			else
-				this.cCurrentDir = PWCT_FOLDER+"/applications"
+				this.cCurrentDir = PWCT_FOLDER+T_APPLICATIONSFOLDER
 		} 
 	} 
 	func OSTerminal  { 
+		cDir = currentDir()
 		UpdateCurrentDirectory()
+		oDir = new QDir()
+		oDir.setCurrent(cCurrentDir)
 		if isWindows() { 
-			cCommand = 'start cmd /K "cd '+cCurrentDir+'"'
+			cCommand = "start cmd"
 			elseif isLinux()
 				cCommand = "gnome-terminal"
 			elseif isMacosx()
@@ -1044,6 +1047,7 @@ class EnvironmentController from WindowsControllerParent
 				return 
 		} 
 		system(cCommand)
+		chdir(cDir)
 	} 
 	func OSFilesManager  { 
 		UpdateCurrentDirectory()
@@ -1623,12 +1627,12 @@ class EnvironmentController from WindowsControllerParent
 	func AppsCheckbox  { 
 		nState = oView.oFTAppsCheckbox.checkstate()
 		if nState { 
-			myindex2 = oView.ofile.index(oView.oDir.currentpath()+"/applications",0)
+			myindex2 = oView.ofile.index(oView.oDir.currentpath()+T_APPLICATIONSFOLDER,0)
 			oView.oFilesTree.setrootindex(myindex2)
 			else
 				myindex2 = oView.ofile.index("",0)
 				oView.oFilesTree.setrootindex(myindex2)
-				myindex2 = oView.ofile.index(oView.oDir.currentpath()+"/applications",0)
+				myindex2 = oView.ofile.index(oView.oDir.currentpath()+T_APPLICATIONSFOLDER,0)
 				oView.oFilesTree.setExpanded(myindex2,true)
 				oView.oFilesTree.setCurrentIndex(myindex2)
 		} 

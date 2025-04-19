@@ -473,7 +473,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Load the Translation File"
+				"Ring2PWCT"
 			],
 			[
 				"active",
@@ -481,7 +481,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"#Load the Translation File
+				"#Ring2PWCT
 "
 			],
 			[
@@ -502,782 +502,12 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Load the Translation File"
+				"Ring2PWCT"
 			]
 		]
 	],
 	[
 		14,
-		1,
-		[
-			[
-				"name",
-				"Load <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">translation/translation.ring</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"load "+char(34)+"translation/translation.ring"+char(34)+""
-			],
-			[
-				"interactionid",
-				14
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Load translation/translation.ring"
-			]
-		]
-	],
-	[
-		15,
-		1,
-		[
-			[
-				"name",
-				"Load the Environment Files"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"#Load the Environment Files
-"
-			],
-			[
-				"interactionid",
-				15
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"Load the Environment Files"
-			]
-		]
-	],
-	[
-		16,
-		1,
-		[
-			[
-				"name",
-				"Load <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">environment/environment.ring</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"load "+char(34)+"environment/environment.ring"+char(34)+""
-			],
-			[
-				"interactionid",
-				16
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Load environment/environment.ring"
-			]
-		]
-	],
-	[
-		17,
-		1,
-		[
-			[
-				"name",
-				"Load the Goal Designer Files"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"#Load the Goal Designer Files
-"
-			],
-			[
-				"interactionid",
-				17
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"Load the Goal Designer Files"
-			]
-		]
-	],
-	[
-		18,
-		1,
-		[
-			[
-				"name",
-				"Load <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">goaldesigner/goaldesigner.ring</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"load "+char(34)+"goaldesigner/goaldesigner.ring"+char(34)+""
-			],
-			[
-				"interactionid",
-				18
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Load goaldesigner/goaldesigner.ring"
-			]
-		]
-	],
-	[
-		19,
-		1,
-		[
-			[
-				"name",
-				"Load the Components Browser Files"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"#Load the Components Browser Files
-"
-			],
-			[
-				"interactionid",
-				19
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"Load the Components Browser Files"
-			]
-		]
-	],
-	[
-		20,
-		1,
-		[
-			[
-				"name",
-				"Load <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">componentsbrowser/componentsbrowser.ring</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"load "+char(34)+"componentsbrowser/componentsbrowser.ring"+char(34)+""
-			],
-			[
-				"interactionid",
-				20
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Load componentsbrowser/componentsbrowser.ring"
-			]
-		]
-	],
-	[
-		21,
-		1,
-		[
-			[
-				"name",
-				"Load the component classes"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"#Load the component classes
-"
-			],
-			[
-				"interactionid",
-				21
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"Load the component classes"
-			]
-		]
-	],
-	[
-		22,
-		1,
-		[
-			[
-				"name",
-				"Load <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">component/component.ring</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"load "+char(34)+"component/component.ring"+char(34)+""
-			],
-			[
-				"interactionid",
-				22
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Load component/component.ring"
-			]
-		]
-	],
-	[
-		23,
-		1,
-		[
-			[
-				"name",
-				"Load the File System Files"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"#Load the File System Files
-"
-			],
-			[
-				"interactionid",
-				23
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"Load the File System Files"
-			]
-		]
-	],
-	[
-		24,
-		1,
-		[
-			[
-				"name",
-				"Load <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">filesystem/filesystem.ring</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"load "+char(34)+"filesystem/filesystem.ring"+char(34)+""
-			],
-			[
-				"interactionid",
-				24
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Load filesystem/filesystem.ring"
-			]
-		]
-	],
-	[
-		25,
-		1,
-		[
-			[
-				"name",
-				"Load Components"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"#Load Components
-"
-			],
-			[
-				"interactionid",
-				25
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"Load Components"
-			]
-		]
-	],
-	[
-		26,
-		1,
-		[
-			[
-				"name",
-				"Load <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">vpl/ringpwct/ringpwct.ring</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"load "+char(34)+"vpl/ringpwct/ringpwct.ring"+char(34)+""
-			],
-			[
-				"interactionid",
-				26
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Load vpl/ringpwct/ringpwct.ring"
-			]
-		]
-	],
-	[
-		27,
-		1,
-		[
-			[
-				"name",
-				"Load the Form Designer"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"#Load the Form Designer
-"
-			],
-			[
-				"interactionid",
-				27
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"Load the Form Designer"
-			]
-		]
-	],
-	[
-		28,
-		1,
-		[
-			[
-				"name",
-				"Load <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">formdesigner/formdesigner.ring</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"load "+char(34)+"formdesigner/formdesigner.ring"+char(34)+""
-			],
-			[
-				"interactionid",
-				28
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Load formdesigner/formdesigner.ring"
-			]
-		]
-	],
-	[
-		29,
-		1,
-		[
-			[
-				"name",
-				"Load the Web Server - ServerPrepare Class"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"#Load the Web Server - ServerPrepare Class
-"
-			],
-			[
-				"interactionid",
-				29
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"Load the Web Server - ServerPrepare Class"
-			]
-		]
-	],
-	[
-		30,
-		1,
-		[
-			[
-				"name",
-				"Load <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">../extensions/libdepwin/Apache2.2/ring/prepare.ring</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"load "+char(34)+"../extensions/libdepwin/Apache2.2/ring/prepare.ring"+char(34)+""
-			],
-			[
-				"interactionid",
-				30
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Load ../extensions/libdepwin/Apache2.2/ring/prepare.ring"
-			]
-		]
-	],
-	[
-		31,
-		1,
-		[
-			[
-				"name",
-				"Mobile functions"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"#Mobile functions
-"
-			],
-			[
-				"interactionid",
-				31
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"Mobile functions"
-			]
-		]
-	],
-	[
-		32,
-		1,
-		[
-			[
-				"name",
-				"Load <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">mobile/mobilefunctions.ring</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"load "+char(34)+"mobile/mobilefunctions.ring"+char(34)+""
-			],
-			[
-				"interactionid",
-				32
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Load mobile/mobilefunctions.ring"
-			]
-		]
-	],
-	[
-		33,
-		1,
-		[
-			[
-				"name",
-				"Ring2PWCT"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"#Ring2PWCT
-"
-			],
-			[
-				"interactionid",
-				33
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"Ring2PWCT"
-			]
-		]
-	],
-	[
-		34,
 		1,
 		[
 			[
@@ -1294,7 +524,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				34
+				14
 			],
 			[
 				"visible",
@@ -1315,7 +545,7 @@ aStepsTable = [
 		]
 	],
 	[
-		35,
+		15,
 		1,
 		[
 			[
@@ -1329,6 +559,776 @@ aStepsTable = [
 			[
 				"code",
 				"load "+char(34)+"tools/vsfgenerator/vsfgenerator.ring"+char(34)+""
+			],
+			[
+				"interactionid",
+				15
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Load tools/vsfgenerator/vsfgenerator.ring"
+			]
+		]
+	],
+	[
+		16,
+		1,
+		[
+			[
+				"name",
+				"Load the Translation File"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Load the Translation File
+"
+			],
+			[
+				"interactionid",
+				16
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Load the Translation File"
+			]
+		]
+	],
+	[
+		17,
+		1,
+		[
+			[
+				"name",
+				"Load <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">translation/translation.ring</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"load "+char(34)+"translation/translation.ring"+char(34)+""
+			],
+			[
+				"interactionid",
+				17
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Load translation/translation.ring"
+			]
+		]
+	],
+	[
+		18,
+		1,
+		[
+			[
+				"name",
+				"Load the Environment Files"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Load the Environment Files
+"
+			],
+			[
+				"interactionid",
+				18
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Load the Environment Files"
+			]
+		]
+	],
+	[
+		19,
+		1,
+		[
+			[
+				"name",
+				"Load <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">environment/environment.ring</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"load "+char(34)+"environment/environment.ring"+char(34)+""
+			],
+			[
+				"interactionid",
+				19
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Load environment/environment.ring"
+			]
+		]
+	],
+	[
+		20,
+		1,
+		[
+			[
+				"name",
+				"Load the Goal Designer Files"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Load the Goal Designer Files
+"
+			],
+			[
+				"interactionid",
+				20
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Load the Goal Designer Files"
+			]
+		]
+	],
+	[
+		21,
+		1,
+		[
+			[
+				"name",
+				"Load <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">goaldesigner/goaldesigner.ring</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"load "+char(34)+"goaldesigner/goaldesigner.ring"+char(34)+""
+			],
+			[
+				"interactionid",
+				21
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Load goaldesigner/goaldesigner.ring"
+			]
+		]
+	],
+	[
+		22,
+		1,
+		[
+			[
+				"name",
+				"Load the Components Browser Files"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Load the Components Browser Files
+"
+			],
+			[
+				"interactionid",
+				22
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Load the Components Browser Files"
+			]
+		]
+	],
+	[
+		23,
+		1,
+		[
+			[
+				"name",
+				"Load <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">componentsbrowser/componentsbrowser.ring</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"load "+char(34)+"componentsbrowser/componentsbrowser.ring"+char(34)+""
+			],
+			[
+				"interactionid",
+				23
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Load componentsbrowser/componentsbrowser.ring"
+			]
+		]
+	],
+	[
+		24,
+		1,
+		[
+			[
+				"name",
+				"Load the component classes"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Load the component classes
+"
+			],
+			[
+				"interactionid",
+				24
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Load the component classes"
+			]
+		]
+	],
+	[
+		25,
+		1,
+		[
+			[
+				"name",
+				"Load <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">component/component.ring</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"load "+char(34)+"component/component.ring"+char(34)+""
+			],
+			[
+				"interactionid",
+				25
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Load component/component.ring"
+			]
+		]
+	],
+	[
+		26,
+		1,
+		[
+			[
+				"name",
+				"Load the File System Files"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Load the File System Files
+"
+			],
+			[
+				"interactionid",
+				26
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Load the File System Files"
+			]
+		]
+	],
+	[
+		27,
+		1,
+		[
+			[
+				"name",
+				"Load <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">filesystem/filesystem.ring</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"load "+char(34)+"filesystem/filesystem.ring"+char(34)+""
+			],
+			[
+				"interactionid",
+				27
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Load filesystem/filesystem.ring"
+			]
+		]
+	],
+	[
+		28,
+		1,
+		[
+			[
+				"name",
+				"Load Components"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Load Components
+"
+			],
+			[
+				"interactionid",
+				28
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Load Components"
+			]
+		]
+	],
+	[
+		29,
+		1,
+		[
+			[
+				"name",
+				"Load <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">vpl/ringpwct/ringpwct.ring</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"load "+char(34)+"vpl/ringpwct/ringpwct.ring"+char(34)+""
+			],
+			[
+				"interactionid",
+				29
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Load vpl/ringpwct/ringpwct.ring"
+			]
+		]
+	],
+	[
+		30,
+		1,
+		[
+			[
+				"name",
+				"Load the Form Designer"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Load the Form Designer
+"
+			],
+			[
+				"interactionid",
+				30
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Load the Form Designer"
+			]
+		]
+	],
+	[
+		31,
+		1,
+		[
+			[
+				"name",
+				"Load <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">formdesigner/formdesigner.ring</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"load "+char(34)+"formdesigner/formdesigner.ring"+char(34)+""
+			],
+			[
+				"interactionid",
+				31
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Load formdesigner/formdesigner.ring"
+			]
+		]
+	],
+	[
+		32,
+		1,
+		[
+			[
+				"name",
+				"Load the Web Server - ServerPrepare Class"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Load the Web Server - ServerPrepare Class
+"
+			],
+			[
+				"interactionid",
+				32
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Load the Web Server - ServerPrepare Class"
+			]
+		]
+	],
+	[
+		33,
+		1,
+		[
+			[
+				"name",
+				"Load <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">../extensions/libdepwin/Apache2.2/ring/prepare.ring</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"load "+char(34)+"../extensions/libdepwin/Apache2.2/ring/prepare.ring"+char(34)+""
+			],
+			[
+				"interactionid",
+				33
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Load ../extensions/libdepwin/Apache2.2/ring/prepare.ring"
+			]
+		]
+	],
+	[
+		34,
+		1,
+		[
+			[
+				"name",
+				"Mobile functions"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#Mobile functions
+"
+			],
+			[
+				"interactionid",
+				34
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"Mobile functions"
+			]
+		]
+	],
+	[
+		35,
+		1,
+		[
+			[
+				"name",
+				"Load <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">mobile/mobilefunctions.ring</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"load "+char(34)+"mobile/mobilefunctions.ring"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -1348,7 +1348,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Load tools/vsfgenerator/vsfgenerator.ring"
+				"Load mobile/mobilefunctions.ring"
 			]
 		]
 	],
@@ -1704,336 +1704,336 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"04/03/2025",
-		"21:26:34",
+		"19/04/2025",
+		"06:53:19",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:34",
+		"19/04/2025",
+		"06:53:19",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:34",
+		"19/04/2025",
+		"06:53:19",
 		"value;;_RV_;;**	Project : Programming Without Coding Technology (PWCT) Version 2.0;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:34",
+		"19/04/2025",
+		"06:53:19",
 		"value;;_RV_;;**	File Purpose :  PWCT Main File;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:34",
+		"19/04/2025",
+		"06:53:19",
 		"value;;_RV_;;**	Date : 2016.10.25;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:34",
+		"19/04/2025",
+		"06:53:19",
 		"value;;_RV_;;**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:34",
+		"19/04/2025",
+		"06:53:19",
 		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:34",
+		"19/04/2025",
+		"06:53:19",
 		"value;;_RV_;;Load Ring Libraries;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"load",
-		"04/03/2025",
-		"21:26:34",
+		"19/04/2025",
+		"06:53:19",
 		"file;;_RV_;;stdlibcore.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"load",
-		"04/03/2025",
-		"21:26:34",
+		"19/04/2025",
+		"06:53:19",
 		"file;;_RV_;;guilib.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:34",
+		"19/04/2025",
+		"06:53:19",
 		"value;;_RV_;;Load General Libraries;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"load",
-		"04/03/2025",
-		"21:26:34",
+		"19/04/2025",
+		"06:53:19",
 		"file;;_RV_;;general/general.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:34",
-		"value;;_RV_;;Load the Translation File;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"19/04/2025",
+		"06:53:19",
+		"value;;_RV_;;Ring2PWCT;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"load",
-		"04/03/2025",
-		"21:26:34",
-		"file;;_RV_;;translation/translation.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"19/04/2025",
+		"06:53:19",
+		"file;;_RV_;;tools/import/importfiles.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		15,
 		1,
-		"comment_text",
-		"04/03/2025",
-		"21:26:34",
-		"value;;_RV_;;Load the Environment Files;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"load",
+		"19/04/2025",
+		"06:53:19",
+		"file;;_RV_;;tools/vsfgenerator/vsfgenerator.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		16,
 		1,
-		"load",
-		"04/03/2025",
-		"21:26:34",
-		"file;;_RV_;;environment/environment.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"comment_text",
+		"19/04/2025",
+		"06:53:19",
+		"value;;_RV_;;Load the Translation File;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		17,
 		1,
-		"comment_text",
-		"04/03/2025",
-		"21:26:34",
-		"value;;_RV_;;Load the Goal Designer Files;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"load",
+		"19/04/2025",
+		"06:53:19",
+		"file;;_RV_;;translation/translation.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		18,
 		1,
-		"load",
-		"04/03/2025",
-		"21:26:34",
-		"file;;_RV_;;goaldesigner/goaldesigner.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"comment_text",
+		"19/04/2025",
+		"06:53:19",
+		"value;;_RV_;;Load the Environment Files;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		19,
 		1,
-		"comment_text",
-		"04/03/2025",
-		"21:26:34",
-		"value;;_RV_;;Load the Components Browser Files;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"load",
+		"19/04/2025",
+		"06:53:19",
+		"file;;_RV_;;environment/environment.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		20,
 		1,
-		"load",
-		"04/03/2025",
-		"21:26:34",
-		"file;;_RV_;;componentsbrowser/componentsbrowser.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"comment_text",
+		"19/04/2025",
+		"06:53:19",
+		"value;;_RV_;;Load the Goal Designer Files;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		21,
 		1,
-		"comment_text",
-		"04/03/2025",
-		"21:26:34",
-		"value;;_RV_;;Load the component classes;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"load",
+		"19/04/2025",
+		"06:53:19",
+		"file;;_RV_;;goaldesigner/goaldesigner.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		22,
 		1,
-		"load",
-		"04/03/2025",
-		"21:26:34",
-		"file;;_RV_;;component/component.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"comment_text",
+		"19/04/2025",
+		"06:53:19",
+		"value;;_RV_;;Load the Components Browser Files;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		23,
 		1,
-		"comment_text",
-		"04/03/2025",
-		"21:26:34",
-		"value;;_RV_;;Load the File System Files;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"load",
+		"19/04/2025",
+		"06:53:19",
+		"file;;_RV_;;componentsbrowser/componentsbrowser.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		24,
 		1,
-		"load",
-		"04/03/2025",
-		"21:26:34",
-		"file;;_RV_;;filesystem/filesystem.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"comment_text",
+		"19/04/2025",
+		"06:53:19",
+		"value;;_RV_;;Load the component classes;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		25,
 		1,
-		"comment_text",
-		"04/03/2025",
-		"21:26:34",
-		"value;;_RV_;;Load Components;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"load",
+		"19/04/2025",
+		"06:53:19",
+		"file;;_RV_;;component/component.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		26,
 		1,
-		"load",
-		"04/03/2025",
-		"21:26:34",
-		"file;;_RV_;;vpl/ringpwct/ringpwct.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"comment_text",
+		"19/04/2025",
+		"06:53:19",
+		"value;;_RV_;;Load the File System Files;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		27,
 		1,
-		"comment_text",
-		"04/03/2025",
-		"21:26:34",
-		"value;;_RV_;;Load the Form Designer;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"load",
+		"19/04/2025",
+		"06:53:19",
+		"file;;_RV_;;filesystem/filesystem.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		28,
 		1,
-		"load",
-		"04/03/2025",
-		"21:26:34",
-		"file;;_RV_;;formdesigner/formdesigner.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"comment_text",
+		"19/04/2025",
+		"06:53:19",
+		"value;;_RV_;;Load Components;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		29,
 		1,
-		"comment_text",
-		"04/03/2025",
-		"21:26:34",
-		"value;;_RV_;;Load the Web Server - ServerPrepare Class;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"load",
+		"19/04/2025",
+		"06:53:19",
+		"file;;_RV_;;vpl/ringpwct/ringpwct.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		30,
 		1,
-		"load",
-		"04/03/2025",
-		"21:26:34",
-		"file;;_RV_;;../extensions/libdepwin/Apache2.2/ring/prepare.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"comment_text",
+		"19/04/2025",
+		"06:53:19",
+		"value;;_RV_;;Load the Form Designer;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		31,
 		1,
-		"comment_text",
-		"04/03/2025",
-		"21:26:34",
-		"value;;_RV_;;Mobile functions;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"load",
+		"19/04/2025",
+		"06:53:19",
+		"file;;_RV_;;formdesigner/formdesigner.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		32,
 		1,
-		"load",
-		"04/03/2025",
-		"21:26:34",
-		"file;;_RV_;;mobile/mobilefunctions.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"comment_text",
+		"19/04/2025",
+		"06:53:19",
+		"value;;_RV_;;Load the Web Server - ServerPrepare Class;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		33,
 		1,
-		"comment_text",
-		"04/03/2025",
-		"21:26:34",
-		"value;;_RV_;;Ring2PWCT;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"load",
+		"19/04/2025",
+		"06:53:19",
+		"file;;_RV_;;../extensions/libdepwin/Apache2.2/ring/prepare.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		34,
 		1,
-		"load",
-		"04/03/2025",
-		"21:26:34",
-		"file;;_RV_;;tools/import/importfiles.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"comment_text",
+		"19/04/2025",
+		"06:53:19",
+		"value;;_RV_;;Mobile functions;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		35,
 		1,
 		"load",
-		"04/03/2025",
-		"21:26:34",
-		"file;;_RV_;;tools/vsfgenerator/vsfgenerator.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"19/04/2025",
+		"06:53:19",
+		"file;;_RV_;;mobile/mobilefunctions.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		36,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:34",
+		"19/04/2025",
+		"06:53:19",
 		"value;;_RV_;;Load the Expression Builder;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		37,
 		1,
 		"load",
-		"04/03/2025",
-		"21:26:34",
+		"19/04/2025",
+		"06:53:19",
 		"file;;_RV_;;tools/exprbuilder/ExprBuilderController.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		38,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:34",
+		"19/04/2025",
+		"06:53:19",
 		"value;;_RV_;;RightToLeft() function;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		39,
 		1,
 		"ifstatement",
-		"04/03/2025",
-		"21:26:34",
+		"19/04/2025",
+		"06:53:19",
 		"condition;;_RV_;;isWindows() AND T_LAYOUTDIRECTION;;_RV_;;"
 	],
 	[
 		40,
 		1,
 		"load",
-		"04/03/2025",
-		"21:26:34",
+		"19/04/2025",
+		"06:53:19",
 		"file;;_RV_;;winlib.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		41,
 		1,
 		"comment_text",
-		"04/03/2025",
-		"21:26:34",
+		"19/04/2025",
+		"06:53:19",
 		"value;;_RV_;;Run PWCT Environment (See environment/environment.ring);;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		42,
 		1,
 		"callfunc",
-		"04/03/2025",
-		"21:26:34",
+		"19/04/2025",
+		"06:53:19",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;StartEnvironment;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	]
 ]
