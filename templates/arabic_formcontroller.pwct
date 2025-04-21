@@ -258,6 +258,8 @@ if IsMainSourceFile() {
 class filename__المتحكم from windowsControllerParent
 oView = new filename_View
 كائن_العرض = ref(oView)
+addAttribute(oView,'نافذة')
+oView.نافذة = oView.win
 "
 			],
 			[
