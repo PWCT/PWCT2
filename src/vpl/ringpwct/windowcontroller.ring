@@ -25,6 +25,10 @@ class windowcontrollerComponentController from ComponentControllerParent
 
 		if trim(lower(Variable(:view))) != "oview" {
 			cCreateView = Variable(:view) + ` = ref(oView)`
+			if T_LAYOUTDIRECTION {
+				cCreateView += nl + "addAttribute(oView,'نافذة')"
+				cCreateView += nl + "oView.نافذة = oView.win"
+			}
 		else 
 			cCreateView = ""
 		}
