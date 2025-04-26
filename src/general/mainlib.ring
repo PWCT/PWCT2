@@ -54,10 +54,9 @@ func FileNameEncoding cFileName
     # Starting from Ring 1.16 - We don't need this function
 	if number(version()) <= 1.15 {
 		if isWindows() {
-			oString = new qString2()
-			oString.Append(cFileName)
-			return oString.tolocal8bit().data()
+			return fileSystemToLocal8Bit(cFileName)
 		}
+
 	}
 	return cFileName
 
@@ -69,12 +68,14 @@ func FileNameEncoding cFileName
 */
 
 func changeFolder cFolder 
-	if isWindows() {
-		oString = new qString2()
-		oString.Append(cFolder)
-		cFolder = oString.tolocal8bit().data() 
-	}
+	cFolder = fileSystemToLocal8Bit(cFolder)
 	chdir(cFolder)
 	
-
+func fileSystemToLocal8Bit cName 
+	if isWindows() {
+		oString = new qString2()
+		oString.Append(cName)
+		cName = oString.tolocal8bit().data() 
+	}
+	return cName 
 	
