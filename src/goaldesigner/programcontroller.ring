@@ -291,6 +291,7 @@ Class ProgramController
 				if ! fexists(cFileToRun) {
 					cFileToRun = cDir+"\"+cFileToRun
 				}
+				cFileToRun = fileSystemToLocal8Bit(cFileToRun)
 				cCode = 'start call "' +
 					cFile + '" "' + cFileToRun + '"' + nl
 				system(cCode)
