@@ -21,7 +21,7 @@ load "english.ring"
 func UseArabic 
 	# Check System Parameters 
 		for item in sysargv item = lower(item) next 
-		if find(sysargv, :arabic) { return True }
+		if find(sysargv, :Arabic) { return True }
 	# Check Settings File 
 		C_ENV_DEFAULT_LANG = C_TRANSLATION_ENGLISH
 		cCurrentDir = CurrentDir() + "/"	# The PWCT Folder
