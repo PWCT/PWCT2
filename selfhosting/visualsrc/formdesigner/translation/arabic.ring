@@ -5,7 +5,7 @@
 #**	Date : 2018.04.09
 #** 	Author : Mahmoud Fayed <msfclipper@yahoo.com>
 #*/
-T_LANGUAGE = "arabic"
+T_LANGUAGE = :Arabic
 T_LAYOUTDIRECTION = 1
 #Right to Left
 T_FORMDESIGNER_FORMDESIGNER = "مصمم النماذج"
@@ -326,4 +326,4 @@ T_FORMDESIGNER_HYPERLINK_URLTEXT = "لغة البرمجة رينج"
 T_FILENAME_CONTROLLER = "_المتحكم"
 T_FORMDESIGNER_FILEEXTENSION = "نموذج"
 T_FORMDESIGNER_NONAMEFILE = "بدون_اسم.نموذج"
-T_FORMDESIGNER_VIEWFILE = "العرض.ring"
+T_FORMDESIGNER_VIEWFILE = "_العرض.ring"

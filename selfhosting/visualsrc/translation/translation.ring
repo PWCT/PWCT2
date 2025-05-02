@@ -18,7 +18,7 @@ func UseArabic  {
 	for item in sysargv step 1 { 
 		item = lower(item)
 	} 
-	if find(sysargv,:arabic) { 
+	if find(sysargv,:Arabic) { 
 		return True
 	} 
 	#Check Settings File

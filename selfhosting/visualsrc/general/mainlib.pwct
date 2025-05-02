@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'english'
-nStepsID                 = 89		
-nInteractionsID          = 58
+nStepsID                 = 92		
+nInteractionsID          = 59
 
 aStepsTable = [
 	[
@@ -2567,7 +2567,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oString</font></span> = New Object <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">qString2</font></span>(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">fileSystemToLocal8Bit(&nbsp;cFileName&nbsp;)&nbsp;</font></span>"
 			],
 			[
 				"active",
@@ -2575,7 +2575,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"oString = new qString2()"
+				"return fileSystemToLocal8Bit( cFileName ) "
 			],
 			[
 				"interactionid",
@@ -2595,83 +2595,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"oString = New Object qString2()"
-			]
-		]
-	],
-	[
-		72,
-		69,
-		[
-			[
-				"name",
-				"oString.Append( <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFileName</font></span> )"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"oString.Append(cFileName)"
-			],
-			[
-				"interactionid",
-				45
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"oString.Append( cFileName )"
-			]
-		]
-	],
-	[
-		73,
-		69,
-		[
-			[
-				"name",
-				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oString.&nbsp;tolocal8bit()&nbsp;.&nbsp;data()&nbsp;</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"return oString. tolocal8bit() . data() "
-			],
-			[
-				"interactionid",
-				46
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Return oString. tolocal8bit() . data() "
+				"Return fileSystemToLocal8Bit( cFileName ) "
 			]
 		]
 	],
@@ -2752,7 +2676,7 @@ aStepsTable = [
 		]
 	],
 	[
-		74,
+		72,
 		62,
 		[
 			[
@@ -2769,7 +2693,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				47
+				45
 			],
 			[
 				"visible",
@@ -2790,7 +2714,7 @@ aStepsTable = [
 		]
 	],
 	[
-		75,
+		73,
 		62,
 		[
 			[
@@ -2804,6 +2728,84 @@ aStepsTable = [
 			[
 				"code",
 				"#/*
+"
+			],
+			[
+				"interactionid",
+				46
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"/*"
+			]
+		]
+	],
+	[
+		74,
+		62,
+		[
+			[
+				"name",
+				"	Purpose : Change the current folder"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	Purpose : Change the current folder
+"
+			],
+			[
+				"interactionid",
+				47
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"	Purpose : Change the current folder"
+			]
+		]
+	],
+	[
+		75,
+		62,
+		[
+			[
+				"name",
+				"	Parameters : Folder Name"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#	Parameters : Folder Name
 "
 			],
 			[
@@ -2824,7 +2826,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"/*"
+				"	Parameters : Folder Name"
 			]
 		]
 	],
@@ -2834,7 +2836,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"	Purpose : Change the current folder"
+				"	Output : None"
 			],
 			[
 				"active",
@@ -2842,7 +2844,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"#	Purpose : Change the current folder
+				"#	Output : None
 "
 			],
 			[
@@ -2863,90 +2865,12 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"	Purpose : Change the current folder"
+				"	Output : None"
 			]
 		]
 	],
 	[
 		77,
-		62,
-		[
-			[
-				"name",
-				"	Parameters : Folder Name"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"#	Parameters : Folder Name
-"
-			],
-			[
-				"interactionid",
-				50
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"	Parameters : Folder Name"
-			]
-		]
-	],
-	[
-		78,
-		62,
-		[
-			[
-				"name",
-				"	Output : None"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"#	Output : None
-"
-			],
-			[
-				"interactionid",
-				51
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				1
-			],
-			[
-				"plainname",
-				"	Output : None"
-			]
-		]
-	],
-	[
-		79,
 		62,
 		[
 			[
@@ -2964,7 +2888,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				52
+				50
 			],
 			[
 				"visible",
@@ -3023,7 +2947,7 @@ aStepsTable = [
 		]
 	],
 	[
-		80,
+		78,
 		1,
 		[
 			[
@@ -3040,7 +2964,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				53
+				51
 			],
 			[
 				"visible",
@@ -3061,8 +2985,8 @@ aStepsTable = [
 		]
 	],
 	[
-		81,
-		80,
+		79,
+		78,
 		[
 			[
 				"name",
@@ -3078,7 +3002,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				53
+				51
 			],
 			[
 				"visible",
@@ -3099,12 +3023,12 @@ aStepsTable = [
 		]
 	],
 	[
-		83,
 		81,
+		79,
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">isWindows()</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFolder</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">fileSystemToLocal8Bit(cFolder)</font></span>"
 			],
 			[
 				"active",
@@ -3112,7 +3036,121 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if isWindows() { "
+				"cFolder = fileSystemToLocal8Bit(cFolder)"
+			],
+			[
+				"interactionid",
+				52
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cFolder = fileSystemToLocal8Bit(cFolder)"
+			]
+		]
+	],
+	[
+		82,
+		79,
+		[
+			[
+				"name",
+				"chdir(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFolder</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"chdir(cFolder)"
+			],
+			[
+				"interactionid",
+				53
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"chdir(cFolder)"
+			]
+		]
+	],
+	[
+		80,
+		78,
+		[
+			[
+				"name",
+				"End of Function"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				51
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of Function"
+			]
+		]
+	],
+	[
+		83,
+		1,
+		[
+			[
+				"name",
+				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">fileSystemToLocal8Bit</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cName</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"func fileSystemToLocal8Bit cName { "
 			],
 			[
 				"interactionid",
@@ -3132,7 +3170,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If isWindows()"
+				"function fileSystemToLocal8Bit cName"
 			]
 		]
 	],
@@ -3180,6 +3218,82 @@ aStepsTable = [
 		[
 			[
 				"name",
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">isWindows()</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"if isWindows() { "
+			],
+			[
+				"interactionid",
+				55
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"If isWindows()"
+			]
+		]
+	],
+	[
+		87,
+		86,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				55
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		89,
+		87,
+		[
+			[
+				"name",
 				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oString</font></span> = New Object <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">qString2</font></span>(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
 			],
 			[
@@ -3192,7 +3306,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				55
+				56
 			],
 			[
 				"visible",
@@ -3213,12 +3327,12 @@ aStepsTable = [
 		]
 	],
 	[
+		90,
 		87,
-		84,
 		[
 			[
 				"name",
-				"oString.Append( <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFolder</font></span> )"
+				"oString.Append( <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cName</font></span> )"
 			],
 			[
 				"active",
@@ -3226,45 +3340,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"oString.Append(cFolder)"
-			],
-			[
-				"interactionid",
-				56
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"oString.Append( cFolder )"
-			]
-		]
-	],
-	[
-		88,
-		84,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFolder</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oString.tolocal8bit().data()</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"cFolder = oString.tolocal8bit().data()"
+				"oString.Append(cName)"
 			],
 			[
 				"interactionid",
@@ -3284,7 +3360,121 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"cFolder = oString.tolocal8bit().data()"
+				"oString.Append( cName )"
+			]
+		]
+	],
+	[
+		91,
+		87,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cName</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oString.tolocal8bit().data()</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cName = oString.tolocal8bit().data()"
+			],
+			[
+				"interactionid",
+				58
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cName = oString.tolocal8bit().data()"
+			]
+		]
+	],
+	[
+		88,
+		86,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				55
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		92,
+		84,
+		[
+			[
+				"name",
+				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cName</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"return cName"
+			],
+			[
+				"interactionid",
+				59
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Return cName"
 			]
 		]
 	],
@@ -3294,7 +3484,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"End of IF Statement"
+				"End of Function"
 			],
 			[
 				"active",
@@ -3322,82 +3512,6 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"End of IF Statement"
-			]
-		]
-	],
-	[
-		89,
-		81,
-		[
-			[
-				"name",
-				"chdir(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFolder</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"chdir(cFolder)"
-			],
-			[
-				"interactionid",
-				58
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"chdir(cFolder)"
-			]
-		]
-	],
-	[
-		82,
-		80,
-		[
-			[
-				"name",
-				"End of Function"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				53
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
 				"End of Function"
 			]
 		]
@@ -3409,465 +3523,473 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"value;;_RV_;;**	Project : Programming Without Coding Technology (PWCT) Version 2.0;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"value;;_RV_;;** 	File Purpose : Main Library (Common Functions);;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"value;;_RV_;;**	Date : 2017.12.03;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"comment_text",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"value;;_RV_;;** 	Author : Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"comment_text",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"load",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"file;;_RV_;;stdlibcore.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"ifstatement",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"condition;;_RV_;;isMainSourceFile();;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"leftside;;_RV_;;mylist;;_RV_;;rightside;;_RV_;;[1,2,3,"+char(34)+"four"+char(34)+","+char(34)+"five"+char(34)+",[:six = 6,:seven = 7],8,:nine,:ten];;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"print",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"text;;_RV_;;list2RingCode(mylist);;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;0;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"func",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"name;;_RV_;;List2RingCode;;_RV_;;parameters;;_RV_;;aList;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"assignment",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"leftside;;_RV_;;cCode;;_RV_;;rightside;;_RV_;;"+char(34)+"["+char(34)+"+Windowsnl();;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"assignment",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"leftside;;_RV_;;lStart;;_RV_;;rightside;;_RV_;;True;;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"forinloop",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"variable;;_RV_;;item;;_RV_;;in;;_RV_;;aList;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"ifstatement",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"condition;;_RV_;;!lStart;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"freetyping",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"value;;_RV_;;cCode += "+char(34)+","+char(34)+";;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"else",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		""
 	],
 	[
 		19,
 		1,
 		"assignment",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"leftside;;_RV_;;lStart;;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"ifstatement",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"condition;;_RV_;;isString(item);;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"freetyping",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"value;;_RV_;;cCode += '"+char(34)+"'+item+'"+char(34)+"';;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"elseif",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"condition;;_RV_;;isnumber(item);;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"freetyping",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"value;;_RV_;;cCode += ("+char(34)+""+char(34)+"+item);;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"elseif",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"condition;;_RV_;;islist(item);;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"freetyping",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"value;;_RV_;;cCode += List2RingCode(item);;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"freetyping",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"value;;_RV_;;cCode += windowsnl()+"+char(34)+"]"+char(34)+";;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"return",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"value;;_RV_;;cCode;;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"func",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"name;;_RV_;;RemoveFirstTabs;;_RV_;;parameters;;_RV_;;cString,nCount;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"assignment",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"leftside;;_RV_;;aList;;_RV_;;rightside;;_RV_;;str2list(cString);;_RV_;;"
 	],
 	[
 		30,
 		1,
 		"forinloop",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"variable;;_RV_;;item;;_RV_;;in;;_RV_;;aList;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"ifstatement",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"condition;;_RV_;;left(item,nCount) = Copy(char(9),nCount);;_RV_;;"
 	],
 	[
 		32,
 		1,
 		"ifstatement",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"condition;;_RV_;;len(item) > nCount;;_RV_;;"
 	],
 	[
 		33,
 		1,
 		"assignment",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"leftside;;_RV_;;item;;_RV_;;rightside;;_RV_;;substr(item,nCount+1);;_RV_;;"
 	],
 	[
 		34,
 		1,
 		"return",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"value;;_RV_;;list2str( aList ) ;;_RV_;;"
 	],
 	[
 		35,
 		1,
 		"comment_text",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		36,
 		1,
 		"comment_text",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"value;;_RV_;;	Purpose : Set the Encoding;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		37,
 		1,
 		"comment_text",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"value;;_RV_;;	Parameters : File Name;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		38,
 		1,
 		"comment_text",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"value;;_RV_;;	Output : File Name after changing the Encoding to local8bit;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		39,
 		1,
 		"comment_text",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		40,
 		1,
 		"func",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"name;;_RV_;;FileNameEncoding;;_RV_;;parameters;;_RV_;;cFileName;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		41,
 		1,
 		"comment_text",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"value;;_RV_;;Starting from Ring 1.16 - We don't need this function;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		42,
 		1,
 		"ifstatement",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"condition;;_RV_;;number(version()) <= 1.15;;_RV_;;"
 	],
 	[
 		43,
 		1,
 		"ifstatement",
-		"19/04/2025",
-		"06:52:02",
+		"02/05/2025",
+		"05:47:16",
 		"condition;;_RV_;;isWindows();;_RV_;;"
 	],
 	[
 		44,
 		1,
-		"newobj",
-		"19/04/2025",
-		"06:52:02",
-		"value;;_RV_;;oString;;_RV_;;value2;;_RV_;;qString2;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;2;;_RV_;;"
+		"return",
+		"02/05/2025",
+		"05:47:16",
+		"value;;_RV_;;fileSystemToLocal8Bit( cFileName ) ;;_RV_;;"
 	],
 	[
 		45,
 		1,
-		"callmethod",
-		"19/04/2025",
-		"06:52:02",
-		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oString;;_RV_;;name;;_RV_;;Append;;_RV_;;parameters;;_RV_;;cFileName;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"return",
+		"02/05/2025",
+		"05:47:16",
+		"value;;_RV_;;cFileName;;_RV_;;"
 	],
 	[
 		46,
 		1,
-		"return",
-		"19/04/2025",
-		"06:52:02",
-		"value;;_RV_;;oString. tolocal8bit() . data() ;;_RV_;;"
+		"comment_text",
+		"02/05/2025",
+		"05:47:16",
+		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		47,
 		1,
-		"return",
-		"19/04/2025",
-		"06:52:02",
-		"value;;_RV_;;cFileName;;_RV_;;"
+		"comment_text",
+		"02/05/2025",
+		"05:47:16",
+		"value;;_RV_;;	Purpose : Change the current folder;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		48,
 		1,
 		"comment_text",
-		"19/04/2025",
-		"06:52:02",
-		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"02/05/2025",
+		"05:47:16",
+		"value;;_RV_;;	Parameters : Folder Name;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		49,
 		1,
 		"comment_text",
-		"19/04/2025",
-		"06:52:02",
-		"value;;_RV_;;	Purpose : Change the current folder;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"02/05/2025",
+		"05:47:16",
+		"value;;_RV_;;	Output : None;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		50,
 		1,
 		"comment_text",
-		"19/04/2025",
-		"06:52:02",
-		"value;;_RV_;;	Parameters : Folder Name;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"02/05/2025",
+		"05:47:16",
+		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		51,
 		1,
-		"comment_text",
-		"19/04/2025",
-		"06:52:02",
-		"value;;_RV_;;	Output : None;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"func",
+		"02/05/2025",
+		"05:47:16",
+		"name;;_RV_;;changeFolder;;_RV_;;parameters;;_RV_;;cFolder;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		52,
 		1,
-		"comment_text",
-		"19/04/2025",
-		"06:52:02",
-		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"02/05/2025",
+		"05:47:16",
+		"leftside;;_RV_;;cFolder;;_RV_;;rightside;;_RV_;;fileSystemToLocal8Bit(cFolder);;_RV_;;"
 	],
 	[
 		53,
 		1,
-		"func",
-		"19/04/2025",
-		"06:52:02",
-		"name;;_RV_;;changeFolder;;_RV_;;parameters;;_RV_;;cFolder;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"callfunc",
+		"02/05/2025",
+		"05:47:16",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;chdir;;_RV_;;parameters;;_RV_;;cFolder;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		54,
 		1,
-		"ifstatement",
-		"19/04/2025",
-		"06:52:02",
-		"condition;;_RV_;;isWindows();;_RV_;;"
+		"func",
+		"02/05/2025",
+		"05:47:16",
+		"name;;_RV_;;fileSystemToLocal8Bit;;_RV_;;parameters;;_RV_;;cName;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		55,
 		1,
-		"newobj",
-		"19/04/2025",
-		"06:52:02",
-		"value;;_RV_;;oString;;_RV_;;value2;;_RV_;;qString2;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;2;;_RV_;;"
+		"ifstatement",
+		"02/05/2025",
+		"05:47:16",
+		"condition;;_RV_;;isWindows();;_RV_;;"
 	],
 	[
 		56,
 		1,
-		"callmethod",
-		"19/04/2025",
-		"06:52:02",
-		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oString;;_RV_;;name;;_RV_;;Append;;_RV_;;parameters;;_RV_;;cFolder;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"newobj",
+		"02/05/2025",
+		"05:47:16",
+		"value;;_RV_;;oString;;_RV_;;value2;;_RV_;;qString2;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		57,
 		1,
-		"assignment",
-		"19/04/2025",
-		"06:52:02",
-		"leftside;;_RV_;;cFolder;;_RV_;;rightside;;_RV_;;oString.tolocal8bit().data();;_RV_;;"
+		"callmethod",
+		"02/05/2025",
+		"05:47:16",
+		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oString;;_RV_;;name;;_RV_;;Append;;_RV_;;parameters;;_RV_;;cName;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		58,
 		1,
-		"callfunc",
-		"19/04/2025",
-		"06:52:02",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;chdir;;_RV_;;parameters;;_RV_;;cFolder;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"assignment",
+		"02/05/2025",
+		"05:47:16",
+		"leftside;;_RV_;;cName;;_RV_;;rightside;;_RV_;;oString.tolocal8bit().data();;_RV_;;"
+	],
+	[
+		59,
+		1,
+		"return",
+		"02/05/2025",
+		"05:47:16",
+		"value;;_RV_;;cName;;_RV_;;"
 	]
 ]
 

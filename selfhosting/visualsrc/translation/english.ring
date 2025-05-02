@@ -5,7 +5,7 @@
 #**	Date : 2016.10.25
 #** 	Author : Mahmoud Fayed <msfclipper@yahoo.com>
 #*/
-T_LANGUAGE = "English"
+T_LANGUAGE = :English
 #Layout Direction
 T_LAYOUTDIRECTION = 0
 #Left to Right

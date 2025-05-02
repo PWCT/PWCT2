@@ -976,6 +976,10 @@ class EnvironmentController from WindowsControllerParent
 		SaveBeforeRunning()
 		cAppToRun = exefolder()+"/ring2exe"
 		cPara = cActiveFileName
+		if T_LANGUAGE! = :English { 
+			cPara = substr(cPara,justFileName(cActiveFileName),"PWCT2_Ring_App.ring")
+			write(cPara,read(cActiveFileName))
+		} 
 		switch nOption { 
 			case 1
 				#ringo
