@@ -406,3 +406,9 @@
 # Form Designer 
 
 	T_PWCT_FORMDESIGNER_FILEEXTENSION = "rform"
+
+# Output Window - Error Messages Translation 
+
+	T_OUTPUT_ERRORMSG = []
+
+
