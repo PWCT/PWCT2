@@ -835,6 +835,7 @@ class EnvironmentController from WindowsControllerParent
 			if isWindows() {
 				cText += WindowsNL()
 			}
+			cText = this.translateErrorMessages(cText)
  			oProcessEditbox.insertplaintext(cText)
 			oCursor = oProcessEditbox.textcursor()
 			nPos = max(len(oProcessEditbox.toplaintext())-1,0)
@@ -842,6 +843,18 @@ class EnvironmentController from WindowsControllerParent
 			oCursor.setPosition(nPos,QTextCursor_MoveAnchor)
 			oProcessEditbox.setTextCursor(oCursor)
 		}
+
+	/*
+		Purpose : Translate runtime error messages 
+		Parameters : String (Program output)
+		Output : String (Program output after translation)
+	*/
+
+	func translateErrorMessages cText
+		for aList in T_OUTPUT_ERRORMSG {
+			cText = subStr(cText,aList[1],aList[2])
+		}
+		return cText 
 
 	/*
 		Purpose : Save Settings 
