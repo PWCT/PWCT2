@@ -851,10 +851,16 @@ class EnvironmentController from WindowsControllerParent
 	*/
 
 	func translateErrorMessages cText
+		cOut = cText 
 		for aList in T_OUTPUT_ERRORMSG {
-			cText = subStr(cText,aList[1],aList[2])
+			cOut = subStr(cOut,aList[1],aList[2])
 		}
-		return cText 
+		if cOut != cText {
+			for aList in T_OUTPUT_ERRORMSGLEVEL2 {
+				cOut = subStr(cOut,aList[1],aList[2])
+			}
+		}
+		return cOut 
 
 	/*
 		Purpose : Save Settings 

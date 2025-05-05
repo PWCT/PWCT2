@@ -409,6 +409,6 @@
 
 # Output Window - Error Messages Translation 
 
-	T_OUTPUT_ERRORMSG = []
-
+	T_OUTPUT_ERRORMSG		= []
+	T_OUTPUT_ERRORMSGLEVEL2 = []
 
