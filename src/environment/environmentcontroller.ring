@@ -856,9 +856,18 @@ class EnvironmentController from WindowsControllerParent
 			cOut = subStr(cOut,aList[1],aList[2])
 		}
 		if cOut != cText {
+
+			cFile = parent().oVisualSourceFile.cFileName
+			cFile = substr(cFile,"."+T_VSF_EXTENSION,".ring")
+			cStr = new QString2()
+			cStr.append(cFile)
+			cBytes = cStr.tolocal8bit().data()
+			cOut = subStr(cOut,cBytes,cFile)
+
 			for aList in T_OUTPUT_ERRORMSGLEVEL2 {
 				cOut = subStr(cOut,aList[1],aList[2])
 			}
+
 		}
 		return cOut 
 
