@@ -12,10 +12,11 @@ Class LoadComponentController from ComponentControllerParent
 	func GenerateAction 
 
 		cFile = Variable(:file)
-		
+		cFileInCode = cFile
+
 		# No Extension
 		if not substr(cFile,".") {
-			cFile += ".ring"
+			cFileInCode += ".ring"
 		}
 		
 		# Type 
@@ -32,7 +33,7 @@ Class LoadComponentController from ComponentControllerParent
 		}
 						
 		NewStep(cStepStart + StyleData(cFile)   )  
-			SetStepCode("load " + cStart + '"' + cFile + '"')
+			SetStepCode("load " + cStart + '"' + cFileInCode + '"')
 
 		return True 
 
