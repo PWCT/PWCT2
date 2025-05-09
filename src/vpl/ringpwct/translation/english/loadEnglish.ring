@@ -8,6 +8,9 @@
 
 # Load Component
 
+	# File Extension Translation 
+		T_CT_LOAD_ST_EXT = []
+
 	# Steps Tree
 		T_CT_LOAD_ST_LOAD = "Load "
 		T_CT_LOAD_ST_PACKAGE = "package "

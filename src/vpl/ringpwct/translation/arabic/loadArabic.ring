@@ -8,6 +8,11 @@
 
 # Load Component
 
+	# File Extension Translation 
+		T_CT_LOAD_ST_EXT = [
+				[".برنامج",".ring"]
+		]
+
 	# Steps Tree
 		T_CT_LOAD_ST_LOAD = "إستدعاء الملف "
 		T_CT_LOAD_ST_PACKAGE = "حقيبة "

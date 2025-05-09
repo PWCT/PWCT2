@@ -18,7 +18,12 @@ Class LoadComponentController from ComponentControllerParent
 		if not substr(cFile,".") {
 			cFileInCode += ".ring"
 		}
-		
+
+		# File Extension translation 
+		for aExt in T_CT_LOAD_ST_EXT {
+			cFileInCode = substr(cFileInCode,aExt[1],aExt[2])
+		}
+	
 		# Type 
 		switch Variable(:type) {
 			case 1
