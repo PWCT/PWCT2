@@ -417,6 +417,8 @@
 # Output Window - Error Messages Translation 
 
 	T_OUTPUT_ERRORMSG = [
+		["Error (E9) : Can't open file","لايمكن فتح الملف"],
+		["Error (C27) : Syntax Error!","خطأ فى صياغة الجملة"],
 	    ["Error (R1) : Can't divide by zero", "خطأ (1) : لا يمكن القسمة على صفر"],
 	    ["Error (R2) : Array Access (Index out of range)", "خطأ (2) : الوصول إلى المصفوفة (المؤشر خارج النطاق)"],
 	    ["Error (R3) : Calling Function without definition", "خطأ (3) : استدعاء دالة بدون تعريف"],
@@ -475,6 +477,7 @@
 
 	T_OUTPUT_ERRORMSGLEVEL2 = [
 		["Line","سطر"],
+		["errors count","عدد الأخطاء"],
 		["in file","في الملف"],
 		[".ring",".برنامج"]
 	]
