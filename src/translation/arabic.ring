@@ -417,8 +417,16 @@
 # Output Window - Error Messages Translation 
 
 	T_OUTPUT_ERRORMSG = [
-		["Error (E9) : Can't open file","لايمكن فتح الملف"],
-		["Error (C27) : Syntax Error!","خطأ فى صياغة الجملة"],
+	    ["Error (E1) : Caught SegFault!", "خطأ (ب1) : تم اكتشاف خطأ في الذاكرة"],
+	    ["Error (E2) : Out of Memory!", "خطأ (ب2) : نفاد الذاكرة"],
+	    ["Error (E3) : Deleting scope while no scope!", "خطأ (ب3) : حذف النطاق بدون وجود نطاق!"],
+	    ["Error (E4) : Long VM Instruction!", "خطأ (ب4) : تعليمات طويلة في الجهاز الافتراضي!"],
+	    ["Error (E5) : The file type is not correct - the VM expects a Ring object file", "خطأ (ب5) : نوع الملف غير صحيح - الجهاز الافتراضي يتوقع ملف كائن Ring"],
+	    ["Error (E6) : The Ring Object File version is not correct!", "خطأ (ب6) : إصدار ملف كائن الرينج غير صحيح!"],
+	    ["Error (E7) : Internal error in using sscanf() function!", "خطأ (ب7) : خطأ داخلي في استخدام الدالة sscanf()!"],
+	    ["Error (E8) : Internal error in using fscanf() function!", "خطأ (ب8) : خطأ داخلي في استخدام الدالة fscanf()!"],
+	    ["Error (E9) : Can't open file", "خطأ (ب9) : لا يمكن فتح الملف"],
+  	    ["Error (C27) : Syntax Error!","خطأ فى صياغة الجملة"],
 	    ["Error (R1) : Can't divide by zero", "خطأ (1) : لا يمكن القسمة على صفر"],
 	    ["Error (R2) : Array Access (Index out of range)", "خطأ (2) : الوصول إلى المصفوفة (المؤشر خارج النطاق)"],
 	    ["Error (R3) : Calling Function without definition", "خطأ (3) : استدعاء دالة بدون تعريف"],
