@@ -725,6 +725,7 @@ class EnvironmentController from WindowsControllerParent
 			if isWindows() { 
 				cText += WindowsNL()
 			} 
+			cText = this.translateErrorMessages(cText)
 			oProcessEditbox.insertplaintext(cText)
 			oCursor = oProcessEditbox.textcursor()
 			nPos = max(len(oProcessEditbox.toplaintext())-1,0)
@@ -732,6 +733,29 @@ class EnvironmentController from WindowsControllerParent
 			oCursor.setPosition(nPos,QTextCursor_MoveAnchor)
 			oProcessEditbox.setTextCursor(oCursor)
 		}
+		#/*
+		#		Purpose : Translate runtime error messages
+		#		Parameters : String (Program output)
+		#		Output : String (Program output after translation)
+		#	*/
+	} 
+	func translateErrorMessages cText { 
+		cOut = cText
+		for aList in T_OUTPUT_ERRORMSG step 1 { 
+			cOut = subStr(cOut,aList[1],aList[2])
+		} 
+		if cOut! = cText { 
+			cFile = parent().oVisualSourceFile.cFileName
+			cFile = substr(cFile,"."+T_VSF_EXTENSION,".ring")
+			cStr = new QString2()
+			cStr.append(cFile)
+			cBytes = cStr.tolocal8bit().data()
+			cOut = subStr(cOut,cBytes,cFile)
+			for aList in T_OUTPUT_ERRORMSGLEVEL2 step 1 { 
+				cOut = subStr(cOut,aList[1],aList[2])
+			} 
+		} 
+		return cOut
 		#/*
 		#		Purpose : Save Settings
 		#		Parameters : None

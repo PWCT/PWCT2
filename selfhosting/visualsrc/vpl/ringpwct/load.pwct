@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'english'
-nStepsID                 = 57		
-nInteractionsID          = 34
+nStepsID                 = 63		
+nInteractionsID          = 38
 
 aStepsTable = [
 	[
@@ -547,6 +547,44 @@ aStepsTable = [
 		[
 			[
 				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFileInCode</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFile</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cFileInCode = cFile"
+			],
+			[
+				"interactionid",
+				12
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cFileInCode = cFile"
+			]
+		]
+	],
+	[
+		21,
+		17,
+		[
+			[
+				"name",
 				"No Extension"
 			],
 			[
@@ -560,7 +598,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				12
+				13
 			],
 			[
 				"visible",
@@ -581,7 +619,7 @@ aStepsTable = [
 		]
 	],
 	[
-		21,
+		22,
 		17,
 		[
 			[
@@ -598,7 +636,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				13
+				14
 			],
 			[
 				"visible",
@@ -619,8 +657,8 @@ aStepsTable = [
 		]
 	],
 	[
+		23,
 		22,
-		21,
 		[
 			[
 				"name",
@@ -636,7 +674,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				13
+				14
 			],
 			[
 				"visible",
@@ -657,12 +695,12 @@ aStepsTable = [
 		]
 	],
 	[
-		24,
-		22,
+		25,
+		23,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFile&nbsp;+=&nbsp;&quot;.ring&quot;</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFileInCode&nbsp;+=&nbsp;&quot;.ring&quot;</font></span>"
 			],
 			[
 				"active",
@@ -670,11 +708,11 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"cFile += "+char(34)+".ring"+char(34)+""
+				"cFileInCode += "+char(34)+".ring"+char(34)+""
 			],
 			[
 				"interactionid",
-				14
+				15
 			],
 			[
 				"visible",
@@ -690,13 +728,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"cFile += "+char(34)+".ring"+char(34)+""
+				"cFileInCode += "+char(34)+".ring"+char(34)+""
 			]
 		]
 	],
 	[
-		23,
-		21,
+		24,
+		22,
 		[
 			[
 				"name",
@@ -712,7 +750,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				13
+				14
 			],
 			[
 				"visible",
@@ -733,7 +771,198 @@ aStepsTable = [
 		]
 	],
 	[
-		25,
+		26,
+		17,
+		[
+			[
+				"name",
+				"File Extension translation"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"#File Extension translation
+"
+			],
+			[
+				"interactionid",
+				16
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				1
+			],
+			[
+				"plainname",
+				"File Extension translation"
+			]
+		]
+	],
+	[
+		27,
+		17,
+		[
+			[
+				"name",
+				"For <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aExt</font></span> in <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_LOAD_ST_EXT</font></span> step <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"for aExt in T_CT_LOAD_ST_EXT step 1 { "
+			],
+			[
+				"interactionid",
+				17
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"For aExt in T_CT_LOAD_ST_EXT step 1"
+			]
+		]
+	],
+	[
+		28,
+		27,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				17
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		30,
+		28,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFileInCode</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">substr(cFileInCode,aExt[1],aExt[2])</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cFileInCode = substr(cFileInCode,aExt[1],aExt[2])"
+			],
+			[
+				"interactionid",
+				18
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cFileInCode = substr(cFileInCode,aExt[1],aExt[2])"
+			]
+		]
+	],
+	[
+		29,
+		27,
+		[
+			[
+				"name",
+				"End of For Loop"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				17
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of For Loop"
+			]
+		]
+	],
+	[
+		31,
 		17,
 		[
 			[
@@ -751,7 +980,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				15
+				19
 			],
 			[
 				"visible",
@@ -772,7 +1001,7 @@ aStepsTable = [
 		]
 	],
 	[
-		26,
+		32,
 		17,
 		[
 			[
@@ -789,7 +1018,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				16
+				20
 			],
 			[
 				"visible",
@@ -810,236 +1039,8 @@ aStepsTable = [
 		]
 	],
 	[
-		27,
-		26,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				16
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		29,
-		27,
-		[
-			[
-				"name",
-				"Case <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"case 1"
-			],
-			[
-				"interactionid",
-				17
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Case 1"
-			]
-		]
-	],
-	[
-		30,
-		29,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				17
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		31,
-		30,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cStart</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;&quot;</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"cStart = "+char(34)+""+char(34)+""
-			],
-			[
-				"interactionid",
-				18
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"cStart = "+char(34)+""+char(34)+""
-			]
-		]
-	],
-	[
+		33,
 		32,
-		30,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cStepStart</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_LOAD_ST_LOAD</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"cStepStart = T_CT_LOAD_ST_LOAD"
-			],
-			[
-				"interactionid",
-				19
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"cStepStart = T_CT_LOAD_ST_LOAD"
-			]
-		]
-	],
-	[
-		33,
-		27,
-		[
-			[
-				"name",
-				"Case <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">2</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"case 2"
-			],
-			[
-				"interactionid",
-				20
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Case 2"
-			]
-		]
-	],
-	[
-		34,
-		33,
 		[
 			[
 				"name",
@@ -1077,11 +1078,11 @@ aStepsTable = [
 	],
 	[
 		35,
-		34,
+		33,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cStart</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;package&nbsp;&quot;</font></span>"
+				"Case <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1</font></span>"
 			],
 			[
 				"active",
@@ -1089,7 +1090,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"cStart = "+char(34)+"package "+char(34)+""
+				"case 1"
 			],
 			[
 				"interactionid",
@@ -1109,13 +1110,241 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"cStart = "+char(34)+"package "+char(34)+""
+				"Case 1"
 			]
 		]
 	],
 	[
 		36,
-		34,
+		35,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				21
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		37,
+		36,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cStart</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cStart = "+char(34)+""+char(34)+""
+			],
+			[
+				"interactionid",
+				22
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cStart = "+char(34)+""+char(34)+""
+			]
+		]
+	],
+	[
+		38,
+		36,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cStepStart</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_LOAD_ST_LOAD</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cStepStart = T_CT_LOAD_ST_LOAD"
+			],
+			[
+				"interactionid",
+				23
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cStepStart = T_CT_LOAD_ST_LOAD"
+			]
+		]
+	],
+	[
+		39,
+		33,
+		[
+			[
+				"name",
+				"Case <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">2</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"case 2"
+			],
+			[
+				"interactionid",
+				24
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Case 2"
+			]
+		]
+	],
+	[
+		40,
+		39,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				24
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		41,
+		40,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cStart</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;package&nbsp;&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cStart = "+char(34)+"package "+char(34)+""
+			],
+			[
+				"interactionid",
+				25
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cStart = "+char(34)+"package "+char(34)+""
+			]
+		]
+	],
+	[
+		42,
+		40,
 		[
 			[
 				"name",
@@ -1131,7 +1360,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				22
+				26
 			],
 			[
 				"visible",
@@ -1152,8 +1381,8 @@ aStepsTable = [
 		]
 	],
 	[
-		37,
-		27,
+		43,
+		33,
 		[
 			[
 				"name",
@@ -1169,7 +1398,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				23
+				27
 			],
 			[
 				"visible",
@@ -1190,8 +1419,8 @@ aStepsTable = [
 		]
 	],
 	[
-		38,
-		37,
+		44,
+		43,
 		[
 			[
 				"name",
@@ -1207,7 +1436,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				23
+				27
 			],
 			[
 				"visible",
@@ -1228,8 +1457,8 @@ aStepsTable = [
 		]
 	],
 	[
-		39,
-		38,
+		45,
+		44,
 		[
 			[
 				"name",
@@ -1245,7 +1474,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				24
+				28
 			],
 			[
 				"visible",
@@ -1266,8 +1495,8 @@ aStepsTable = [
 		]
 	],
 	[
-		40,
-		38,
+		46,
+		44,
 		[
 			[
 				"name",
@@ -1283,7 +1512,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				25
+				29
 			],
 			[
 				"visible",
@@ -1304,8 +1533,8 @@ aStepsTable = [
 		]
 	],
 	[
-		28,
-		26,
+		34,
+		32,
 		[
 			[
 				"name",
@@ -1321,7 +1550,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				16
+				20
 			],
 			[
 				"visible",
@@ -1342,7 +1571,7 @@ aStepsTable = [
 		]
 	],
 	[
-		41,
+		47,
 		17,
 		[
 			[
@@ -1359,7 +1588,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				26
+				30
 			],
 			[
 				"visible",
@@ -1380,12 +1609,12 @@ aStepsTable = [
 		]
 	],
 	[
-		42,
+		48,
 		17,
 		[
 			[
 				"name",
-				"SetStepCode(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;load&nbsp;&quot;+cStart+&#039;&quot;&#039;+cFile+&#039;&quot;&#039;</font></span>)"
+				"SetStepCode(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;load&nbsp;&quot;+cStart+&#039;&quot;&#039;+cFileInCode+&#039;&quot;&#039;</font></span>)"
 			],
 			[
 				"active",
@@ -1393,11 +1622,11 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"SetStepCode("+char(34)+"load "+char(34)+"+cStart+'"+char(34)+"'+cFile+'"+char(34)+"')"
+				"SetStepCode("+char(34)+"load "+char(34)+"+cStart+'"+char(34)+"'+cFileInCode+'"+char(34)+"')"
 			],
 			[
 				"interactionid",
-				27
+				31
 			],
 			[
 				"visible",
@@ -1413,12 +1642,12 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"SetStepCode("+char(34)+"load "+char(34)+"+cStart+'"+char(34)+"'+cFile+'"+char(34)+"')"
+				"SetStepCode("+char(34)+"load "+char(34)+"+cStart+'"+char(34)+"'+cFileInCode+'"+char(34)+"')"
 			]
 		]
 	],
 	[
-		43,
+		49,
 		17,
 		[
 			[
@@ -1435,7 +1664,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				28
+				32
 			],
 			[
 				"visible",
@@ -1646,7 +1875,7 @@ aStepsTable = [
 		]
 	],
 	[
-		44,
+		50,
 		1,
 		[
 			[
@@ -1663,7 +1892,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				29
+				33
 			],
 			[
 				"visible",
@@ -1684,8 +1913,8 @@ aStepsTable = [
 		]
 	],
 	[
-		45,
-		44,
+		51,
+		50,
 		[
 			[
 				"name",
@@ -1701,7 +1930,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				29
+				33
 			],
 			[
 				"visible",
@@ -1722,8 +1951,8 @@ aStepsTable = [
 		]
 	],
 	[
+		57,
 		51,
-		45,
 		[
 			[
 				"name",
@@ -1736,234 +1965,6 @@ aStepsTable = [
 			[
 				"code",
 				"Title(T_CT_LOAD_IP_TITLE)"
-			],
-			[
-				"interactionid",
-				30
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Title(T_CT_LOAD_IP_TITLE)"
-			]
-		]
-	],
-	[
-		52,
-		45,
-		[
-			[
-				"name",
-				"TextBoxValue(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_LOAD_IP_FILE,:file,T_CT_LOAD_IP_FILE_VALUE</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"TextBoxValue(T_CT_LOAD_IP_FILE,:file,T_CT_LOAD_IP_FILE_VALUE)"
-			],
-			[
-				"interactionid",
-				31
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"TextBoxValue(T_CT_LOAD_IP_FILE,:file,T_CT_LOAD_IP_FILE_VALUE)"
-			]
-		]
-	],
-	[
-		53,
-		45,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">ListBox(T_CT_LOAD_IP_TYPE,:type,T_CT_LOAD_IP_TYPELIST)</font></span> {"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"ListBox(T_CT_LOAD_IP_TYPE,:type,T_CT_LOAD_IP_TYPELIST) {"
-			],
-			[
-				"interactionid",
-				32
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"ListBox(T_CT_LOAD_IP_TYPE,:type,T_CT_LOAD_IP_TYPELIST) {"
-			]
-		]
-	],
-	[
-		54,
-		53,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				32
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		56,
-		54,
-		[
-			[
-				"name",
-				"setcurrentrow(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1,QItemSelectionModel_Clear|QItemSelectionModel_Select</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"setcurrentrow(1,QItemSelectionModel_Clear|QItemSelectionModel_Select)"
-			],
-			[
-				"interactionid",
-				33
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"setcurrentrow(1,QItemSelectionModel_Clear|QItemSelectionModel_Select)"
-			]
-		]
-	],
-	[
-		55,
-		53,
-		[
-			[
-				"name",
-				"}"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"}"
-			],
-			[
-				"interactionid",
-				32
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"}"
-			]
-		]
-	],
-	[
-		57,
-		45,
-		[
-			[
-				"name",
-				"PageButtons(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"PageButtons()"
 			],
 			[
 				"interactionid",
@@ -1983,13 +1984,241 @@ aStepsTable = [
 			],
 			[
 				"plainname",
+				"Title(T_CT_LOAD_IP_TITLE)"
+			]
+		]
+	],
+	[
+		58,
+		51,
+		[
+			[
+				"name",
+				"TextBoxValue(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_LOAD_IP_FILE,:file,T_CT_LOAD_IP_FILE_VALUE</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"TextBoxValue(T_CT_LOAD_IP_FILE,:file,T_CT_LOAD_IP_FILE_VALUE)"
+			],
+			[
+				"interactionid",
+				35
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"TextBoxValue(T_CT_LOAD_IP_FILE,:file,T_CT_LOAD_IP_FILE_VALUE)"
+			]
+		]
+	],
+	[
+		59,
+		51,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">ListBox(T_CT_LOAD_IP_TYPE,:type,T_CT_LOAD_IP_TYPELIST)</font></span> {"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"ListBox(T_CT_LOAD_IP_TYPE,:type,T_CT_LOAD_IP_TYPELIST) {"
+			],
+			[
+				"interactionid",
+				36
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"ListBox(T_CT_LOAD_IP_TYPE,:type,T_CT_LOAD_IP_TYPELIST) {"
+			]
+		]
+	],
+	[
+		60,
+		59,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				36
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		62,
+		60,
+		[
+			[
+				"name",
+				"setcurrentrow(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1,QItemSelectionModel_Clear|QItemSelectionModel_Select</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"setcurrentrow(1,QItemSelectionModel_Clear|QItemSelectionModel_Select)"
+			],
+			[
+				"interactionid",
+				37
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"setcurrentrow(1,QItemSelectionModel_Clear|QItemSelectionModel_Select)"
+			]
+		]
+	],
+	[
+		61,
+		59,
+		[
+			[
+				"name",
+				"}"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"}"
+			],
+			[
+				"interactionid",
+				36
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"}"
+			]
+		]
+	],
+	[
+		63,
+		51,
+		[
+			[
+				"name",
+				"PageButtons(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"PageButtons()"
+			],
+			[
+				"interactionid",
+				38
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
 				"PageButtons()"
 			]
 		]
 	],
 	[
-		46,
-		44,
+		52,
+		50,
 		[
 			[
 				"name",
@@ -2005,7 +2234,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				29
+				33
 			],
 			[
 				"visible",
@@ -2026,8 +2255,8 @@ aStepsTable = [
 		]
 	],
 	[
-		47,
-		44,
+		53,
+		50,
 		[
 			[
 				"name",
@@ -2043,7 +2272,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				29
+				33
 			],
 			[
 				"visible",
@@ -2064,8 +2293,8 @@ aStepsTable = [
 		]
 	],
 	[
-		48,
-		47,
+		54,
+		53,
 		[
 			[
 				"name",
@@ -2081,7 +2310,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				29
+				33
 			],
 			[
 				"visible",
@@ -2102,8 +2331,8 @@ aStepsTable = [
 		]
 	],
 	[
-		49,
-		47,
+		55,
+		53,
 		[
 			[
 				"name",
@@ -2119,7 +2348,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				29
+				33
 			],
 			[
 				"visible",
@@ -2140,8 +2369,8 @@ aStepsTable = [
 		]
 	],
 	[
-		50,
-		47,
+		56,
+		53,
 		[
 			[
 				"name",
@@ -2157,7 +2386,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				29
+				33
 			],
 			[
 				"visible",
@@ -2184,272 +2413,304 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"02/05/2025",
-		"05:53:34",
+		"01/06/2025",
+		"18:27:12",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"02/05/2025",
-		"05:53:34",
+		"01/06/2025",
+		"18:27:12",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"02/05/2025",
-		"05:53:34",
+		"01/06/2025",
+		"18:27:12",
 		"value;;_RV_;;**	Project : Programming Without Coding Technology (PWCT) Version 2.0;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"02/05/2025",
-		"05:53:34",
+		"01/06/2025",
+		"18:27:12",
 		"value;;_RV_;;**	File Purpose :  Return Component;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"02/05/2025",
-		"05:53:34",
+		"01/06/2025",
+		"18:27:12",
 		"value;;_RV_;;**	Date : 2017.07.16;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"comment_text",
-		"02/05/2025",
-		"05:53:34",
+		"01/06/2025",
+		"18:27:12",
 		"value;;_RV_;;**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"comment_text",
-		"02/05/2025",
-		"05:53:34",
+		"01/06/2025",
+		"18:27:12",
 		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"class",
-		"02/05/2025",
-		"05:53:34",
+		"01/06/2025",
+		"18:27:12",
 		"value;;_RV_;;LoadComponentController;;_RV_;;value2;;_RV_;;ComponentControllerParent;;_RV_;;value3;;_RV_;;2;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"newobj",
-		"02/05/2025",
-		"05:53:34",
+		"01/06/2025",
+		"18:27:12",
 		"value;;_RV_;;oView;;_RV_;;value2;;_RV_;;LoadComponentView;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"func",
-		"02/05/2025",
-		"05:53:34",
+		"01/06/2025",
+		"18:27:12",
 		"name;;_RV_;;GenerateAction;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"02/05/2025",
-		"05:53:34",
+		"01/06/2025",
+		"18:27:12",
 		"leftside;;_RV_;;cFile;;_RV_;;rightside;;_RV_;;Variable(:file);;_RV_;;"
 	],
 	[
 		12,
 		1,
-		"comment_text",
-		"02/05/2025",
-		"05:53:34",
-		"value;;_RV_;;No Extension;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"01/06/2025",
+		"18:27:12",
+		"leftside;;_RV_;;cFileInCode;;_RV_;;rightside;;_RV_;;cFile;;_RV_;;"
 	],
 	[
 		13,
 		1,
-		"ifstatement",
-		"02/05/2025",
-		"05:53:34",
-		"condition;;_RV_;; NOT substr(cFile,"+char(34)+"."+char(34)+");;_RV_;;"
+		"comment_text",
+		"01/06/2025",
+		"18:27:12",
+		"value;;_RV_;;No Extension;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		14,
 		1,
-		"freetyping",
-		"02/05/2025",
-		"05:53:34",
-		"value;;_RV_;;cFile += "+char(34)+".ring"+char(34)+";;_RV_;;"
+		"ifstatement",
+		"01/06/2025",
+		"18:27:12",
+		"condition;;_RV_;; NOT substr(cFile,"+char(34)+"."+char(34)+");;_RV_;;"
 	],
 	[
 		15,
 		1,
-		"comment_text",
-		"02/05/2025",
-		"05:53:34",
-		"value;;_RV_;;Type;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"freetyping",
+		"01/06/2025",
+		"18:27:12",
+		"value;;_RV_;;cFileInCode += "+char(34)+".ring"+char(34)+";;_RV_;;"
 	],
 	[
 		16,
 		1,
-		"switch",
-		"02/05/2025",
-		"05:53:34",
-		"variable;;_RV_;;Variable(:type);;_RV_;;"
+		"comment_text",
+		"01/06/2025",
+		"18:27:12",
+		"value;;_RV_;;File Extension translation;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		17,
 		1,
-		"case",
-		"02/05/2025",
-		"05:53:34",
-		"value;;_RV_;;1;;_RV_;;"
+		"forinloop",
+		"01/06/2025",
+		"18:27:12",
+		"variable;;_RV_;;aExt;;_RV_;;in;;_RV_;;T_CT_LOAD_ST_EXT;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"assignment",
-		"02/05/2025",
-		"05:53:34",
-		"leftside;;_RV_;;cStart;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
+		"01/06/2025",
+		"18:27:12",
+		"leftside;;_RV_;;cFileInCode;;_RV_;;rightside;;_RV_;;substr(cFileInCode,aExt[1],aExt[2]);;_RV_;;"
 	],
 	[
 		19,
 		1,
-		"assignment",
-		"02/05/2025",
-		"05:53:34",
-		"leftside;;_RV_;;cStepStart;;_RV_;;rightside;;_RV_;;T_CT_LOAD_ST_LOAD;;_RV_;;"
+		"comment_text",
+		"01/06/2025",
+		"18:27:12",
+		"value;;_RV_;;Type;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		20,
 		1,
-		"case",
-		"02/05/2025",
-		"05:53:34",
-		"value;;_RV_;;2;;_RV_;;"
+		"switch",
+		"01/06/2025",
+		"18:27:12",
+		"variable;;_RV_;;Variable(:type);;_RV_;;"
 	],
 	[
 		21,
 		1,
-		"assignment",
-		"02/05/2025",
-		"05:53:34",
-		"leftside;;_RV_;;cStart;;_RV_;;rightside;;_RV_;;"+char(34)+"package "+char(34)+";;_RV_;;"
+		"case",
+		"01/06/2025",
+		"18:27:12",
+		"value;;_RV_;;1;;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"assignment",
-		"02/05/2025",
-		"05:53:34",
-		"leftside;;_RV_;;cStepStart;;_RV_;;rightside;;_RV_;;T_CT_LOAD_ST_LOAD+T_CT_LOAD_ST_PACKAGE;;_RV_;;"
+		"01/06/2025",
+		"18:27:12",
+		"leftside;;_RV_;;cStart;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		23,
 		1,
-		"case",
-		"02/05/2025",
-		"05:53:34",
-		"value;;_RV_;;3;;_RV_;;"
+		"assignment",
+		"01/06/2025",
+		"18:27:12",
+		"leftside;;_RV_;;cStepStart;;_RV_;;rightside;;_RV_;;T_CT_LOAD_ST_LOAD;;_RV_;;"
 	],
 	[
 		24,
 		1,
-		"assignment",
-		"02/05/2025",
-		"05:53:34",
-		"leftside;;_RV_;;cStart;;_RV_;;rightside;;_RV_;;"+char(34)+"again "+char(34)+";;_RV_;;"
+		"case",
+		"01/06/2025",
+		"18:27:12",
+		"value;;_RV_;;2;;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"assignment",
-		"02/05/2025",
-		"05:53:34",
-		"leftside;;_RV_;;cStepStart;;_RV_;;rightside;;_RV_;;T_CT_LOAD_ST_LOAD+T_CT_LOAD_ST_AGAIN;;_RV_;;"
+		"01/06/2025",
+		"18:27:12",
+		"leftside;;_RV_;;cStart;;_RV_;;rightside;;_RV_;;"+char(34)+"package "+char(34)+";;_RV_;;"
 	],
 	[
 		26,
 		1,
-		"callfunc",
-		"02/05/2025",
-		"05:53:34",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;NewStep;;_RV_;;parameters;;_RV_;;cStepStart+StyleData(cFile);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"assignment",
+		"01/06/2025",
+		"18:27:12",
+		"leftside;;_RV_;;cStepStart;;_RV_;;rightside;;_RV_;;T_CT_LOAD_ST_LOAD+T_CT_LOAD_ST_PACKAGE;;_RV_;;"
 	],
 	[
 		27,
 		1,
-		"callfunc",
-		"02/05/2025",
-		"05:53:34",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetStepCode;;_RV_;;parameters;;_RV_;;"+char(34)+"load "+char(34)+"+cStart+'"+char(34)+"'+cFile+'"+char(34)+"';;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"case",
+		"01/06/2025",
+		"18:27:12",
+		"value;;_RV_;;3;;_RV_;;"
 	],
 	[
 		28,
 		1,
-		"return",
-		"02/05/2025",
-		"05:53:34",
-		"value;;_RV_;;True;;_RV_;;"
+		"assignment",
+		"01/06/2025",
+		"18:27:12",
+		"leftside;;_RV_;;cStart;;_RV_;;rightside;;_RV_;;"+char(34)+"again "+char(34)+";;_RV_;;"
 	],
 	[
 		29,
 		1,
-		"class",
-		"02/05/2025",
-		"05:53:34",
-		"value;;_RV_;;LoadComponentView;;_RV_;;value2;;_RV_;;ComponentViewParent;;_RV_;;value3;;_RV_;;2;;_RV_;;"
+		"assignment",
+		"01/06/2025",
+		"18:27:12",
+		"leftside;;_RV_;;cStepStart;;_RV_;;rightside;;_RV_;;T_CT_LOAD_ST_LOAD+T_CT_LOAD_ST_AGAIN;;_RV_;;"
 	],
 	[
 		30,
 		1,
 		"callfunc",
-		"02/05/2025",
-		"05:53:34",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;Title;;_RV_;;parameters;;_RV_;;T_CT_LOAD_IP_TITLE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"01/06/2025",
+		"18:27:12",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;NewStep;;_RV_;;parameters;;_RV_;;cStepStart+StyleData(cFile);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"callfunc",
-		"02/05/2025",
-		"05:53:34",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;TextBoxValue;;_RV_;;parameters;;_RV_;;T_CT_LOAD_IP_FILE,:file,T_CT_LOAD_IP_FILE_VALUE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"01/06/2025",
+		"18:27:12",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetStepCode;;_RV_;;parameters;;_RV_;;"+char(34)+"load "+char(34)+"+cStart+'"+char(34)+"'+cFileInCode+'"+char(34)+"';;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		32,
 		1,
-		"accessobject",
-		"02/05/2025",
-		"05:53:34",
-		"value;;_RV_;;ListBox(T_CT_LOAD_IP_TYPE,:type,T_CT_LOAD_IP_TYPELIST);;_RV_;;"
+		"return",
+		"01/06/2025",
+		"18:27:12",
+		"value;;_RV_;;True;;_RV_;;"
 	],
 	[
 		33,
 		1,
-		"callfunc",
-		"02/05/2025",
-		"05:53:34",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setcurrentrow;;_RV_;;parameters;;_RV_;;1,QItemSelectionModel_Clear|QItemSelectionModel_Select;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"class",
+		"01/06/2025",
+		"18:27:12",
+		"value;;_RV_;;LoadComponentView;;_RV_;;value2;;_RV_;;ComponentViewParent;;_RV_;;value3;;_RV_;;2;;_RV_;;"
 	],
 	[
 		34,
 		1,
 		"callfunc",
-		"02/05/2025",
-		"05:53:34",
+		"01/06/2025",
+		"18:27:12",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;Title;;_RV_;;parameters;;_RV_;;T_CT_LOAD_IP_TITLE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		35,
+		1,
+		"callfunc",
+		"01/06/2025",
+		"18:27:12",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;TextBoxValue;;_RV_;;parameters;;_RV_;;T_CT_LOAD_IP_FILE,:file,T_CT_LOAD_IP_FILE_VALUE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		36,
+		1,
+		"accessobject",
+		"01/06/2025",
+		"18:27:12",
+		"value;;_RV_;;ListBox(T_CT_LOAD_IP_TYPE,:type,T_CT_LOAD_IP_TYPELIST);;_RV_;;"
+	],
+	[
+		37,
+		1,
+		"callfunc",
+		"01/06/2025",
+		"18:27:12",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setcurrentrow;;_RV_;;parameters;;_RV_;;1,QItemSelectionModel_Clear|QItemSelectionModel_Select;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		38,
+		1,
+		"callfunc",
+		"01/06/2025",
+		"18:27:12",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;PageButtons;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	]
 ]

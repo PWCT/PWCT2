@@ -337,3 +337,6 @@ T_VSF_CONTROLLER = "Controller"
 T_VSF_NONAMEPWCT = "noname.pwct"
 #Form Designer
 T_PWCT_FORMDESIGNER_FILEEXTENSION = "rform"
+#Output Window - Error Messages Translation
+T_OUTPUT_ERRORMSG = []
+T_OUTPUT_ERRORMSGLEVEL2 = []

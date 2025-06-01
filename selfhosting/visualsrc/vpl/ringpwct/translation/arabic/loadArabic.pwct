@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'english'
-nStepsID                 = 19		
-nInteractionsID          = 19
+nStepsID                 = 21		
+nInteractionsID          = 21
 
 aStepsTable = [
 	[
@@ -359,7 +359,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Steps Tree"
+				"File Extension Translation"
 			],
 			[
 				"active",
@@ -367,7 +367,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"#Steps Tree
+				"#File Extension Translation
 "
 			],
 			[
@@ -388,7 +388,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Steps Tree"
+				"File Extension Translation"
 			]
 		]
 	],
@@ -398,7 +398,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_LOAD_ST_LOAD</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;إستدعاء&nbsp;الملف&nbsp;&quot;</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_LOAD_ST_EXT</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">[[&quot;.برنامج&quot;,&quot;.ring&quot;]]</font></span>"
 			],
 			[
 				"active",
@@ -406,7 +406,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_LOAD_ST_LOAD = "+char(34)+"إستدعاء الملف "+char(34)+""
+				"T_CT_LOAD_ST_EXT = [["+char(34)+".برنامج"+char(34)+","+char(34)+".ring"+char(34)+"]]"
 			],
 			[
 				"interactionid",
@@ -426,7 +426,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"T_CT_LOAD_ST_LOAD = "+char(34)+"إستدعاء الملف "+char(34)+""
+				"T_CT_LOAD_ST_EXT = [["+char(34)+".برنامج"+char(34)+","+char(34)+".ring"+char(34)+"]]"
 			]
 		]
 	],
@@ -436,7 +436,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_LOAD_ST_PACKAGE</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;حقيبة&nbsp;&quot;</font></span>"
+				"Steps Tree"
 			],
 			[
 				"active",
@@ -444,7 +444,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_LOAD_ST_PACKAGE = "+char(34)+"حقيبة "+char(34)+""
+				"#Steps Tree
+"
 			],
 			[
 				"interactionid",
@@ -460,11 +461,11 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				2
+				1
 			],
 			[
 				"plainname",
-				"T_CT_LOAD_ST_PACKAGE = "+char(34)+"حقيبة "+char(34)+""
+				"Steps Tree"
 			]
 		]
 	],
@@ -474,7 +475,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_LOAD_ST_AGAIN</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;مرة&nbsp;اخري&nbsp;&quot;</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_LOAD_ST_LOAD</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;إستدعاء&nbsp;الملف&nbsp;&quot;</font></span>"
 			],
 			[
 				"active",
@@ -482,7 +483,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_LOAD_ST_AGAIN = "+char(34)+"مرة اخري "+char(34)+""
+				"T_CT_LOAD_ST_LOAD = "+char(34)+"إستدعاء الملف "+char(34)+""
 			],
 			[
 				"interactionid",
@@ -502,7 +503,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"T_CT_LOAD_ST_AGAIN = "+char(34)+"مرة اخري "+char(34)+""
+				"T_CT_LOAD_ST_LOAD = "+char(34)+"إستدعاء الملف "+char(34)+""
 			]
 		]
 	],
@@ -512,7 +513,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Interaction Page"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_LOAD_ST_PACKAGE</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;حقيبة&nbsp;&quot;</font></span>"
 			],
 			[
 				"active",
@@ -520,8 +521,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"#Interaction Page
-"
+				"T_CT_LOAD_ST_PACKAGE = "+char(34)+"حقيبة "+char(34)+""
 			],
 			[
 				"interactionid",
@@ -537,11 +537,11 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				1
+				2
 			],
 			[
 				"plainname",
-				"Interaction Page"
+				"T_CT_LOAD_ST_PACKAGE = "+char(34)+"حقيبة "+char(34)+""
 			]
 		]
 	],
@@ -551,7 +551,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_LOAD_IP_TITLE</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;مكون&nbsp;إستدعاء&nbsp;الملف&quot;</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_LOAD_ST_AGAIN</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;مرة&nbsp;اخري&nbsp;&quot;</font></span>"
 			],
 			[
 				"active",
@@ -559,7 +559,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_LOAD_IP_TITLE = "+char(34)+"مكون إستدعاء الملف"+char(34)+""
+				"T_CT_LOAD_ST_AGAIN = "+char(34)+"مرة اخري "+char(34)+""
 			],
 			[
 				"interactionid",
@@ -579,7 +579,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"T_CT_LOAD_IP_TITLE = "+char(34)+"مكون إستدعاء الملف"+char(34)+""
+				"T_CT_LOAD_ST_AGAIN = "+char(34)+"مرة اخري "+char(34)+""
 			]
 		]
 	],
@@ -589,7 +589,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_LOAD_IP_FILE</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;إسم&nbsp;الملف&nbsp;:&nbsp;&quot;</font></span>"
+				"Interaction Page"
 			],
 			[
 				"active",
@@ -597,7 +597,8 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_LOAD_IP_FILE = "+char(34)+"إسم الملف : "+char(34)+""
+				"#Interaction Page
+"
 			],
 			[
 				"interactionid",
@@ -613,11 +614,11 @@ aStepsTable = [
 			],
 			[
 				"steptype",
-				2
+				1
 			],
 			[
 				"plainname",
-				"T_CT_LOAD_IP_FILE = "+char(34)+"إسم الملف : "+char(34)+""
+				"Interaction Page"
 			]
 		]
 	],
@@ -627,7 +628,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_LOAD_IP_FILE_VALUE</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;stdlib.ring&quot;</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_LOAD_IP_TITLE</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;مكون&nbsp;إستدعاء&nbsp;الملف&quot;</font></span>"
 			],
 			[
 				"active",
@@ -635,7 +636,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"T_CT_LOAD_IP_FILE_VALUE = "+char(34)+"stdlib.ring"+char(34)+""
+				"T_CT_LOAD_IP_TITLE = "+char(34)+"مكون إستدعاء الملف"+char(34)+""
 			],
 			[
 				"interactionid",
@@ -655,12 +656,88 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"T_CT_LOAD_IP_FILE_VALUE = "+char(34)+"stdlib.ring"+char(34)+""
+				"T_CT_LOAD_IP_TITLE = "+char(34)+"مكون إستدعاء الملف"+char(34)+""
 			]
 		]
 	],
 	[
 		18,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_LOAD_IP_FILE</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;إسم&nbsp;الملف&nbsp;:&nbsp;&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_CT_LOAD_IP_FILE = "+char(34)+"إسم الملف : "+char(34)+""
+			],
+			[
+				"interactionid",
+				18
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_CT_LOAD_IP_FILE = "+char(34)+"إسم الملف : "+char(34)+""
+			]
+		]
+	],
+	[
+		19,
+		1,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">T_CT_LOAD_IP_FILE_VALUE</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;stdlib.ring&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"T_CT_LOAD_IP_FILE_VALUE = "+char(34)+"stdlib.ring"+char(34)+""
+			],
+			[
+				"interactionid",
+				19
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"T_CT_LOAD_IP_FILE_VALUE = "+char(34)+"stdlib.ring"+char(34)+""
+			]
+		]
+	],
+	[
+		20,
 		1,
 		[
 			[
@@ -677,7 +754,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				18
+				20
 			],
 			[
 				"visible",
@@ -698,7 +775,7 @@ aStepsTable = [
 		]
 	],
 	[
-		19,
+		21,
 		1,
 		[
 			[
@@ -715,7 +792,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				19
+				21
 			],
 			[
 				"visible",
@@ -742,152 +819,168 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"02/05/2025",
-		"06:03:13",
+		"01/06/2025",
+		"18:36:09",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"02/05/2025",
-		"06:03:13",
+		"01/06/2025",
+		"18:36:09",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"02/05/2025",
-		"06:03:13",
+		"01/06/2025",
+		"18:36:09",
 		"value;;_RV_;;**	Project : Programming Without Coding Technology (PWCT) Version 2.0;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"02/05/2025",
-		"06:03:13",
+		"01/06/2025",
+		"18:36:09",
 		"value;;_RV_;;** 	File Purpose : Translation File;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"02/05/2025",
-		"06:03:13",
+		"01/06/2025",
+		"18:36:09",
 		"value;;_RV_;;** 	Language : Arabic;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"comment_text",
-		"02/05/2025",
-		"06:03:13",
+		"01/06/2025",
+		"18:36:09",
 		"value;;_RV_;;**	Date : 2017.07.19;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"comment_text",
-		"02/05/2025",
-		"06:03:13",
+		"01/06/2025",
+		"18:36:09",
 		"value;;_RV_;;** 	Author : Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"comment_text",
-		"02/05/2025",
-		"06:03:13",
+		"01/06/2025",
+		"18:36:09",
 		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"comment_text",
-		"02/05/2025",
-		"06:03:13",
+		"01/06/2025",
+		"18:36:09",
 		"value;;_RV_;;Load Component;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"comment_text",
-		"02/05/2025",
-		"06:03:13",
-		"value;;_RV_;;Steps Tree;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"01/06/2025",
+		"18:36:09",
+		"value;;_RV_;;File Extension Translation;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"02/05/2025",
-		"06:03:13",
-		"leftside;;_RV_;;T_CT_LOAD_ST_LOAD;;_RV_;;rightside;;_RV_;;"+char(34)+"إستدعاء الملف "+char(34)+";;_RV_;;"
+		"01/06/2025",
+		"18:36:09",
+		"leftside;;_RV_;;T_CT_LOAD_ST_EXT;;_RV_;;rightside;;_RV_;;[["+char(34)+".برنامج"+char(34)+","+char(34)+".ring"+char(34)+"]];;_RV_;;"
 	],
 	[
 		12,
 		1,
-		"assignment",
-		"02/05/2025",
-		"06:03:13",
-		"leftside;;_RV_;;T_CT_LOAD_ST_PACKAGE;;_RV_;;rightside;;_RV_;;"+char(34)+"حقيبة "+char(34)+";;_RV_;;"
+		"comment_text",
+		"01/06/2025",
+		"18:36:09",
+		"value;;_RV_;;Steps Tree;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"assignment",
-		"02/05/2025",
-		"06:03:13",
-		"leftside;;_RV_;;T_CT_LOAD_ST_AGAIN;;_RV_;;rightside;;_RV_;;"+char(34)+"مرة اخري "+char(34)+";;_RV_;;"
+		"01/06/2025",
+		"18:36:09",
+		"leftside;;_RV_;;T_CT_LOAD_ST_LOAD;;_RV_;;rightside;;_RV_;;"+char(34)+"إستدعاء الملف "+char(34)+";;_RV_;;"
 	],
 	[
 		14,
 		1,
-		"comment_text",
-		"02/05/2025",
-		"06:03:13",
-		"value;;_RV_;;Interaction Page;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"01/06/2025",
+		"18:36:09",
+		"leftside;;_RV_;;T_CT_LOAD_ST_PACKAGE;;_RV_;;rightside;;_RV_;;"+char(34)+"حقيبة "+char(34)+";;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"assignment",
-		"02/05/2025",
-		"06:03:13",
-		"leftside;;_RV_;;T_CT_LOAD_IP_TITLE;;_RV_;;rightside;;_RV_;;"+char(34)+"مكون إستدعاء الملف"+char(34)+";;_RV_;;"
+		"01/06/2025",
+		"18:36:09",
+		"leftside;;_RV_;;T_CT_LOAD_ST_AGAIN;;_RV_;;rightside;;_RV_;;"+char(34)+"مرة اخري "+char(34)+";;_RV_;;"
 	],
 	[
 		16,
 		1,
-		"assignment",
-		"02/05/2025",
-		"06:03:13",
-		"leftside;;_RV_;;T_CT_LOAD_IP_FILE;;_RV_;;rightside;;_RV_;;"+char(34)+"إسم الملف : "+char(34)+";;_RV_;;"
+		"comment_text",
+		"01/06/2025",
+		"18:36:09",
+		"value;;_RV_;;Interaction Page;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"assignment",
-		"02/05/2025",
-		"06:03:13",
-		"leftside;;_RV_;;T_CT_LOAD_IP_FILE_VALUE;;_RV_;;rightside;;_RV_;;"+char(34)+"stdlib.ring"+char(34)+";;_RV_;;"
+		"01/06/2025",
+		"18:36:09",
+		"leftside;;_RV_;;T_CT_LOAD_IP_TITLE;;_RV_;;rightside;;_RV_;;"+char(34)+"مكون إستدعاء الملف"+char(34)+";;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"assignment",
-		"02/05/2025",
-		"06:03:13",
-		"leftside;;_RV_;;T_CT_LOAD_IP_TYPE;;_RV_;;rightside;;_RV_;;"+char(34)+"النوع : "+char(34)+";;_RV_;;"
+		"01/06/2025",
+		"18:36:09",
+		"leftside;;_RV_;;T_CT_LOAD_IP_FILE;;_RV_;;rightside;;_RV_;;"+char(34)+"إسم الملف : "+char(34)+";;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"assignment",
-		"02/05/2025",
-		"06:03:13",
+		"01/06/2025",
+		"18:36:09",
+		"leftside;;_RV_;;T_CT_LOAD_IP_FILE_VALUE;;_RV_;;rightside;;_RV_;;"+char(34)+"stdlib.ring"+char(34)+";;_RV_;;"
+	],
+	[
+		20,
+		1,
+		"assignment",
+		"01/06/2025",
+		"18:36:09",
+		"leftside;;_RV_;;T_CT_LOAD_IP_TYPE;;_RV_;;rightside;;_RV_;;"+char(34)+"النوع : "+char(34)+";;_RV_;;"
+	],
+	[
+		21,
+		1,
+		"assignment",
+		"01/06/2025",
+		"18:36:09",
 		"leftside;;_RV_;;T_CT_LOAD_IP_TYPELIST;;_RV_;;rightside;;_RV_;;["+char(34)+"مشاركة النطاق العام"+char(34)+","+char(34)+"فى نطاق عام مستقل"+char(34)+","+char(34)+"نفس الملف مرة اخري"+char(34)+"];;_RV_;;"
 	]
 ]

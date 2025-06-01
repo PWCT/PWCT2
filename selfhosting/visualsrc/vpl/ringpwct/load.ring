@@ -8,9 +8,14 @@ class LoadComponentController from ComponentControllerParent
 	oView = new LoadComponentView
 	func GenerateAction  { 
 		cFile = Variable(:file)
+		cFileInCode = cFile
 		#No Extension
 		if  NOT substr(cFile,".") { 
-			cFile += ".ring"
+			cFileInCode += ".ring"
+		} 
+		#File Extension translation
+		for aExt in T_CT_LOAD_ST_EXT step 1 { 
+			cFileInCode = substr(cFileInCode,aExt[1],aExt[2])
 		} 
 		#Type
 		switch Variable(:type) { 
@@ -25,7 +30,7 @@ class LoadComponentController from ComponentControllerParent
 				cStepStart = T_CT_LOAD_ST_LOAD+T_CT_LOAD_ST_AGAIN
 		} 
 		NewStep(cStepStart+StyleData(cFile))
-		SetStepCode("load "+cStart+'"'+cFile+'"')
+		SetStepCode("load "+cStart+'"'+cFileInCode+'"')
 		return True
 	} 
 private
