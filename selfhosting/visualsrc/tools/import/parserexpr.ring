@@ -448,10 +448,10 @@ class ParserExpr
 			x = factor()
 			return x
 			elseif isoperator2(OP_BITNOT)
-				#/* bitnot (~) Expr */
+				#/* bitnot (~) Factor */
 				nexttoken()
 				#/* Generate Code */
-				x = expr()
+				x = factor()
 				return x
 				#/* Factor --> & */
 			elseif isoperator2(OP_BITAND)
