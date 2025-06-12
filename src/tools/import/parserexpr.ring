@@ -446,9 +446,9 @@ class ParserExpr
 			/* Generate Code */
 			return x 
 		elseif isoperator2(OP_BITNOT)
-			/* bitnot (~) Expr */
+			/* bitnot (~) Factor */
 			nexttoken()
-			x = expr()
+			x = factor()
 			/* Generate Code */
 			return x 
 		/* Factor --> & */
