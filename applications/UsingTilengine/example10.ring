@@ -97,9 +97,9 @@ func raster_callback  {
 		elseif line >= 152
 			pos = lerp(line,152,224,pos_background[5],pos_background[6])
 	} 
-	if pos! = -1 { 
+	if pos != -1 { 
 		TLN_SetLayerPosition(LAYER_BACKGROUND,pos,0)
-	} 
+	}
 	# /* background color gradients */
 	if line < 112 { 
 		InterpolateColor(line,0,112,sky[1],sky[2],color)

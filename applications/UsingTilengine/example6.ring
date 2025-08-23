@@ -62,14 +62,14 @@ func main  {
 			elseif (s <= -a)
 				s += a
 		} 
-		if (s! = 0) { 
+		if (s != 0) { 
 			angle = angle%360
 			if (angle < 0) { 
 				angle += 360
 			} 
 			x += CalcSin(angle,s)
 			y -= CalcCos(angle,s)
-		} 
+		}
 		# /* render to window */
 		TLN_DrawFrame(0)
 	} 

@@ -97,9 +97,9 @@ func raster_callback  {
 		elseif (line = 208||line = 216||line = 224||line = 232)
 			pos = lerp(line,208,232,xpos*1,xpos*2)
 	} 
-	if (pos! = -1) { 
+	if (pos != -1) { 
 		TLN_SetLayerPosition(LAYER_BACKGROUND,pos,0)
-	} 
+	}
 	# /* foreground layer */
 	pos = -1
 	if (line = 0) { 
@@ -107,9 +107,9 @@ func raster_callback  {
 		elseif (line = 216)
 			pos = xpos*3
 	} 
-	if (pos! = -1) { 
+	if (pos != -1) { 
 		TLN_SetLayerPosition(LAYER_FOREGROUND,pos,0)
-	} 
+	}
 } 
 func lerp x,x0,x1,fx0,fx1 { 
 	# /* linear interploation */

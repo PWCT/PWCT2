@@ -52,13 +52,13 @@ while TLN_ProcessWindow() {
 			xworld += 3
 	} 
 	# /* update on change */
-	if xworld! = oldx { 
+	if xworld != oldx { 
 		TLN_SetLayerPosition(LAYER_FOREGROUND,xworld,32)
 		TLN_SetLayerPosition(LAYER_MIDDLEGROUND,xworld/2,0)
 		TLN_SetLayerPosition(LAYER_BACKGROUND,xworld/3,0)
 		TLN_SetSpritePosition(0,xplayer-xworld,yplayer)
 		oldx = xworld
-	} 
+	}
 } 
 # /* release resources */
 TLN_DeleteTilemap(foreground)
