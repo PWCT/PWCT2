@@ -1,6 +1,6 @@
-# The Ring Standard Library
-# Game Engine for 2D Games
-# Flappy Bird 3000 Game
+#The Ring Standard Library
+#Game Engine for 2D Games
+#Flappy Bird 3000 Game
 oGameState = NULL
 if isAndroid() { 
 	GAME_FPS = 15
@@ -176,7 +176,7 @@ func playstart oGame {
 						} 
 						nCol = getcol(px,0)
 						if nCol = 11 OR nCol = 15 OR nCol = 19 OR nCol = 23 OR nCol = 27 { 
-							if nCol! = oGameState.lastcol { 
+							if nCol != oGameState.lastcol { 
 								oGameState.lastcol = nCol
 								oGameState.Score += 100
 								oGame {
@@ -189,7 +189,7 @@ func playstart oGame {
 							} 
 						} 
 					}
-					if oSelf.getvalue(px+40,py)! = 0 OR oSelf.getvalue(px+40,py+40)! = 0 OR oSelf.getvalue(px,py)! = 0 OR oSelf.getvalue(px,py+40)! = 0 { 
+					if oSelf.getvalue(px+40,py) != 0 OR oSelf.getvalue(px+40,py+40) != 0 OR oSelf.getvalue(px,py) != 0 OR oSelf.getvalue(px,py+40) != 0 { 
 						oGameState.gameresult = true
 						oGame {
 							oGame.aObjects[3] {
@@ -296,6 +296,9 @@ func playstart oGame {
 					text = "Score : "+oGameState.score
 				}
 			}
+		}
+		Sound {
+			file = "sound/music2.wav"
 		}
 	}
 } 
