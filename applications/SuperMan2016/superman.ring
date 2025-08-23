@@ -1,6 +1,6 @@
-# The Ring Standard Library
-# Game Engine for 2D Games
-# SuperMan Game
+#The Ring Standard Library
+#Game Engine for 2D Games
+#SuperMan Game
 oGameState = NULL
 load "gameengine.ring"
 func main  { 
@@ -278,7 +278,7 @@ func playstart oGame {
 								x -= 7
 								if x <= 0 { 
 									x += 10
-									if oGame.aObjects[2].x! = 0 { 
+									if oGame.aObjects[2].x != 0 { 
 										oGame.aObjects[2].x += 50
 										callenemystate(oGame)
 										x += 50
@@ -297,13 +297,13 @@ func playstart oGame {
 						oGameState.moveplayer = FALSE
 				} 
 				if oGameState.moveplayer = TRUE { 
-					# left
+					#left
 					if aMouseList[GE_MOUSE_X] < oSelf.X { 
 						call oself.keypress(oGame,oSelf,Key_left)
 						else
 							call oself.keypress(oGame,oSelf,Key_right)
 					} 
-					# up
+					#up
 					if aMouseList[GE_MOUSE_Y] < oSelf.Y { 
 						call oself.keypress(oGame,oSelf,Key_up)
 						else
@@ -602,6 +602,6 @@ class GameState
 	playerwin = false
 	DoorKey = false
 	playerindex = 4
-	value = 1000
+	value = 5000
 	moveplayer = false
 private
