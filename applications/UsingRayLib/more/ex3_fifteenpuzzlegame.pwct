@@ -2141,7 +2141,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">left</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">((empty&nbsp;=&nbsp;tile-1)&nbsp;AND&nbsp;(tile%4!&nbsp;=&nbsp;1))</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">left</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">((empty&nbsp;=&nbsp;tile-1)&nbsp;AND&nbsp;(tile%4&nbsp;!=&nbsp;1))</font></span>"
 			],
 			[
 				"active",
@@ -2149,7 +2149,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"left = ((empty = tile-1) AND (tile%4! = 1))"
+				"left = ((empty = tile-1) AND (tile%4 != 1))"
 			],
 			[
 				"interactionid",
@@ -2169,7 +2169,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"left = ((empty = tile-1) AND (tile%4! = 1))"
+				"left = ((empty = tile-1) AND (tile%4 != 1))"
 			]
 		]
 	],
@@ -2179,7 +2179,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">right</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">((empty&nbsp;=&nbsp;tile+1)&nbsp;AND&nbsp;(tile%4!&nbsp;=&nbsp;0))</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">right</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">((empty&nbsp;=&nbsp;tile+1)&nbsp;AND&nbsp;(tile%4&nbsp;!=&nbsp;0))</font></span>"
 			],
 			[
 				"active",
@@ -2187,7 +2187,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"right = ((empty = tile+1) AND (tile%4! = 0))"
+				"right = ((empty = tile+1) AND (tile%4 != 0))"
 			],
 			[
 				"interactionid",
@@ -2207,7 +2207,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"right = ((empty = tile+1) AND (tile%4! = 0))"
+				"right = ((empty = tile+1) AND (tile%4 != 0))"
 			]
 		]
 	],
@@ -3129,7 +3129,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">left</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">((empty&nbsp;=&nbsp;tile-1)&nbsp;AND&nbsp;(tile%4!&nbsp;=&nbsp;1))</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">left</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">((empty&nbsp;=&nbsp;tile-1)&nbsp;AND&nbsp;(tile%4&nbsp;!=&nbsp;1))</font></span>"
 			],
 			[
 				"active",
@@ -3137,7 +3137,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"left = ((empty = tile-1) AND (tile%4! = 1))"
+				"left = ((empty = tile-1) AND (tile%4 != 1))"
 			],
 			[
 				"interactionid",
@@ -3157,7 +3157,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"left = ((empty = tile-1) AND (tile%4! = 1))"
+				"left = ((empty = tile-1) AND (tile%4 != 1))"
 			]
 		]
 	],
@@ -3167,7 +3167,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">right</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">((empty&nbsp;=&nbsp;tile+1)&nbsp;AND&nbsp;(tile%4!&nbsp;=&nbsp;0))</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">right</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">((empty&nbsp;=&nbsp;tile+1)&nbsp;AND&nbsp;(tile%4&nbsp;!=&nbsp;0))</font></span>"
 			],
 			[
 				"active",
@@ -3175,7 +3175,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"right = ((empty = tile+1) AND (tile%4! = 0))"
+				"right = ((empty = tile+1) AND (tile%4 != 0))"
 			],
 			[
 				"interactionid",
@@ -3195,7 +3195,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"right = ((empty = tile+1) AND (tile%4! = 0))"
+				"right = ((empty = tile+1) AND (tile%4 != 0))"
 			]
 		]
 	],
@@ -4228,7 +4228,7 @@ aInteractionsTable = [
 		"assignment",
 		"10/09/2024",
 		"16:11:28",
-		"leftside;;_RV_;;left;;_RV_;;rightside;;_RV_;;((empty = tile-1) AND (tile%4! = 1));;_RV_;;"
+		"leftside;;_RV_;;left;;_RV_;;rightside;;_RV_;;((empty = tile-1) AND (tile%4 != 1));;_RV_;;"
 	],
 	[
 		44,
@@ -4236,7 +4236,7 @@ aInteractionsTable = [
 		"assignment",
 		"10/09/2024",
 		"16:11:28",
-		"leftside;;_RV_;;right;;_RV_;;rightside;;_RV_;;((empty = tile+1) AND (tile%4! = 0));;_RV_;;"
+		"leftside;;_RV_;;right;;_RV_;;rightside;;_RV_;;((empty = tile+1) AND (tile%4 != 0));;_RV_;;"
 	],
 	[
 		45,
@@ -4364,7 +4364,7 @@ aInteractionsTable = [
 		"assignment",
 		"10/09/2024",
 		"16:11:28",
-		"leftside;;_RV_;;left;;_RV_;;rightside;;_RV_;;((empty = tile-1) AND (tile%4! = 1));;_RV_;;"
+		"leftside;;_RV_;;left;;_RV_;;rightside;;_RV_;;((empty = tile-1) AND (tile%4 != 1));;_RV_;;"
 	],
 	[
 		61,
@@ -4372,7 +4372,7 @@ aInteractionsTable = [
 		"assignment",
 		"10/09/2024",
 		"16:11:28",
-		"leftside;;_RV_;;right;;_RV_;;rightside;;_RV_;;((empty = tile+1) AND (tile%4! = 0));;_RV_;;"
+		"leftside;;_RV_;;right;;_RV_;;rightside;;_RV_;;((empty = tile+1) AND (tile%4 != 0));;_RV_;;"
 	],
 	[
 		62,

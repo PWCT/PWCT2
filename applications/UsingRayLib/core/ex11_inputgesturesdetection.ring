@@ -26,8 +26,8 @@ while !WindowShouldClose() {
 	lastGesture = currentGesture
 	currentGesture = GetGestureDetected()
 	touchPosition = GetTouchPosition(0)
-	if CheckCollisionPointRec(touchPosition,touchArea) AND (currentGesture! = GESTURE_NONE) { 
-		if currentGesture! = lastGesture { 
+	if CheckCollisionPointRec(touchPosition,touchArea) AND (currentGesture != GESTURE_NONE) { 
+		if currentGesture != lastGesture { 
 			switch currentGesture { 
 				case GESTURE_TAP
 					gestureStrings[gesturesCount] = "GESTURE TAP"
@@ -58,8 +58,8 @@ while !WindowShouldClose() {
 				} 
 				gesturesCount = 1
 			} 
-		} 
-	} 
+		}
+	}
 	#----------------------------------------------------------------------------------
 	#Draw
 	#----------------------------------------------------------------------------------
@@ -82,9 +82,9 @@ while !WindowShouldClose() {
 	} 
 	DrawRectangleLines(10,29,200,screenHeight-50,GRAY)
 	DrawText("DETECTED GESTURES",50,15,10,GRAY)
-	if currentGesture! = GESTURE_NONE { 
+	if currentGesture != GESTURE_NONE { 
 		DrawCircleV(touchPosition,30,MAROON)
-	} 
+	}
 	#----------------------------------------------------------------------------------
 	EndDrawing()
 } 

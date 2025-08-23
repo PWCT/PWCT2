@@ -1161,7 +1161,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">CheckCollisionPointRec(touchPosition,touchArea)&nbsp;AND&nbsp;(currentGesture!&nbsp;=&nbsp;GESTURE_NONE)</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">CheckCollisionPointRec(touchPosition,touchArea)&nbsp;AND&nbsp;(currentGesture&nbsp;!=&nbsp;GESTURE_NONE)</font></span>"
 			],
 			[
 				"active",
@@ -1169,7 +1169,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if CheckCollisionPointRec(touchPosition,touchArea) AND (currentGesture! = GESTURE_NONE) { "
+				"if CheckCollisionPointRec(touchPosition,touchArea) AND (currentGesture != GESTURE_NONE) { "
 			],
 			[
 				"interactionid",
@@ -1189,7 +1189,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If CheckCollisionPointRec(touchPosition,touchArea) AND (currentGesture! = GESTURE_NONE)"
+				"If CheckCollisionPointRec(touchPosition,touchArea) AND (currentGesture != GESTURE_NONE)"
 			]
 		]
 	],
@@ -1237,7 +1237,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">currentGesture!&nbsp;=&nbsp;lastGesture</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">currentGesture&nbsp;!=&nbsp;lastGesture</font></span>"
 			],
 			[
 				"active",
@@ -1245,7 +1245,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if currentGesture! = lastGesture { "
+				"if currentGesture != lastGesture { "
 			],
 			[
 				"interactionid",
@@ -1265,7 +1265,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If currentGesture! = lastGesture"
+				"If currentGesture != lastGesture"
 			]
 		]
 	],
@@ -2956,7 +2956,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"} "
+				"}"
 			],
 			[
 				"interactionid",
@@ -2994,7 +2994,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"} "
+				"}"
 			],
 			[
 				"interactionid",
@@ -4053,7 +4053,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">currentGesture!&nbsp;=&nbsp;GESTURE_NONE</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">currentGesture&nbsp;!=&nbsp;GESTURE_NONE</font></span>"
 			],
 			[
 				"active",
@@ -4061,7 +4061,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if currentGesture! = GESTURE_NONE { "
+				"if currentGesture != GESTURE_NONE { "
 			],
 			[
 				"interactionid",
@@ -4081,7 +4081,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If currentGesture! = GESTURE_NONE"
+				"If currentGesture != GESTURE_NONE"
 			]
 		]
 	],
@@ -4175,7 +4175,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"} "
+				"}"
 			],
 			[
 				"interactionid",
@@ -4749,7 +4749,7 @@ aInteractionsTable = [
 		"ifstatement",
 		"10/09/2024",
 		"15:53:53",
-		"condition;;_RV_;;CheckCollisionPointRec(touchPosition,touchArea) AND (currentGesture! = GESTURE_NONE);;_RV_;;"
+		"condition;;_RV_;;CheckCollisionPointRec(touchPosition,touchArea) AND (currentGesture != GESTURE_NONE);;_RV_;;"
 	],
 	[
 		31,
@@ -4757,7 +4757,7 @@ aInteractionsTable = [
 		"ifstatement",
 		"10/09/2024",
 		"15:53:53",
-		"condition;;_RV_;;currentGesture! = lastGesture;;_RV_;;"
+		"condition;;_RV_;;currentGesture != lastGesture;;_RV_;;"
 	],
 	[
 		32,
@@ -5133,7 +5133,7 @@ aInteractionsTable = [
 		"ifstatement",
 		"10/09/2024",
 		"15:53:53",
-		"condition;;_RV_;;currentGesture! = GESTURE_NONE;;_RV_;;"
+		"condition;;_RV_;;currentGesture != GESTURE_NONE;;_RV_;;"
 	],
 	[
 		79,

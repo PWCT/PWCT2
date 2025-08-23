@@ -45,8 +45,8 @@ func scramble () {
 		tile = random(15)+1
 		up = (empty = (tile-4))
 		down = (empty = (tile+4))
-		left = ((empty = tile-1) AND (tile%4! = 1))
-		right = ((empty = tile+1) AND (tile%4! = 0))
+		left = ((empty = tile-1) AND (tile%4 != 1))
+		right = ((empty = tile+1) AND (tile%4 != 0))
 		move = (up OR down OR left OR right)
 		if (move = true) { 
 			tiles[empty] = tiles[tile]
@@ -67,8 +67,8 @@ func movetiles () {
 	tile = nr
 	up = (empty = (tile-4))
 	down = (empty = (tile+4))
-	left = ((empty = tile-1) AND (tile%4! = 1))
-	right = ((empty = tile+1) AND (tile%4! = 0))
+	left = ((empty = tile-1) AND (tile%4 != 1))
+	right = ((empty = tile+1) AND (tile%4 != 0))
 	move = (up OR down OR left OR right)
 	if (move = true) { 
 		tiles[empty] = tiles[tile]

@@ -147,7 +147,7 @@ class player
 			myplayer.speed += LO*dT
 			myplayer.canjump = false
 			else
-				if it! = 0 { 
+				if it != 0 { 
 					itemslen = len(grounditems)
 					if myplayer.position.z < myPlayerLastPositionZ { 
 						if grounditems[it].position.z > GI.position.z { 
@@ -158,7 +158,7 @@ class player
 								grounditems[it].position.z += 300
 							} 
 					} 
-				} 
+				}
 				myplayer.canjump = true
 		} 
 	} 
