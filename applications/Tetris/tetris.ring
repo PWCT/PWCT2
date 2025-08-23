@@ -1,45 +1,45 @@
-# Map Size
+#Map Size
 C_LEVEL_ROWSCOUNT = 20
 C_LEVEL_COLSCOUNT = 10
-# Map Items
+#Map Items
 C_EMPTY = 1
 C_BLOCK = 2
-# The Map Data
+#The Map Data
 aLevel = []
-# Block Data
+#Block Data
 clearLevelData()
 aBlock = []
 nShape = 1
 cDirection = :Down
-# For Game Restart
+#For Game Restart
 aLevelCopy = aLevel
-# Timers
+#Timers
 nKeyClock = clock()
 nMoveClock = clock()
-# Game Over
+#Game Over
 nRotateClock = clock()
 lGameOver = False
-# Speed
+#Speed
 nKeyboardSpeed = 10
 nMovementSpeed = 10
-# Score
+#Score
 nScore = 0
-# Rotation
+#Rotation
 nRotationIndex = 1
-# ============================================================================#
-# Game User Interface
-# ============================================================================#
+#============================================================================#
+#Game User Interface
+#============================================================================#
 load "gameengine.ring"
 func main  { 
-	# Set the Window width & height
+	#Set the Window width & height
 	GE_SCREEN_W = 300
 	GE_SCREEN_H = 650
 	oGame = new Game
 	{
-		# Set the Window title & icon
+		#Set the Window title & icon
 		title = "Tetris"
 		icon = "images/block4.png"
-		# Display the score!
+		#Display the score!
 		text {
 			name = :Score
 			size = 16
@@ -50,29 +50,29 @@ func main  {
 			animate = False
 			text = "Score : "+nScore
 		}
-		# The Game Map is used for drawing the blocks
+		#The Game Map is used for drawing the blocks
 		Map {
-			# Set a name for the object, to get it using oGame.Find()
+			#Set a name for the object, to get it using oGame.Find()
 			name = "map"
-			# Leave a space for the Score text
+			#Leave a space for the Score text
 			y = 50
-			# Set the block width & height
+			#Set the block width & height
 			blockwidth = 30
 			blockheight = 30
-			# Load the Map Data
+			#Load the Map Data
 			aMap = aLevel
 			aImages = ["images/empty.png","images/block1.png","images/block2.png","images/block3.png","images/block4.png","images/block5.png","images/block6.png"]
-			# Respond to Keyboard Events
+			#Respond to Keyboard Events
 			keypress = func oGame,oSelf,nkey {
-				# Don't respond if we have (Game Over)
+				#Don't respond if we have (Game Over)
 				if lGameOver { 
 					return 
 				} 
-				# Avoid getting many keys in short time
+				#Avoid getting many keys in short time
 				if (clock()-nKeyClock) < clockspersecond()/nKeyboardSpeed { 
 					return 
 				} 
-				# Check the key
+				#Check the key
 				nKeyClock = Clock()
 				switch nkey { 
 					case Key_Esc
@@ -90,7 +90,7 @@ func main  {
 						cDirection = :Rotate
 				} 
 			}
-			# Update the State, i.e. Draw & Move the blocks!	
+			#Update the State, i.e. Draw & Move the blocks!	
 			state = func oGame,oSelf {
 				if clock()-nMoveClock >= clockspersecond()/nMovementSpeed { 
 					nMoveClock = clock()
@@ -98,25 +98,25 @@ func main  {
 				} 
 			}
 		}
-		# Start the game by adding new block!
+		#Start the game by adding new block!
 		AddNewShape(self)
 	}
-	# ============================================================================#
-	# Game Logic
-	# ============================================================================#
+	#============================================================================#
+	#Game Logic
+	#============================================================================#
 } 
 func MoveBlock oGame,oMap { 
-	# Don't move the blocks if we have (Game Over)
+	#Don't move the blocks if we have (Game Over)
 	if lGameOver { 
 		return 
 	} 
-	# Display the Shape
+	#Display the Shape
 	for t = len(aBlock) to 1 step -1 { 
 		aHead = aBlock[t]
 		ShowCell(aHead)
 	} 
 	UpdateGameMap(oGame)
-	# Get a copy from the game data
+	#Get a copy from the game data
 	aLevelCopy = aLevel
 	aBlockCopy = aBlock
 	switch cDirection { 
@@ -140,44 +140,44 @@ func MoveBlock oGame,oMap {
 	UpdateGameMap(oGame)
 } 
 func MoveRightOrLeft oGame,oMap,aLevelCopy,aBlockCopy,nLimit,nIncrement { 
-	# Next move will be Down
+	#Next move will be Down
 	cDirection = :Down
-	# Don't go outsize the screen (Right|Left Corner)
+	#Don't go outsize the screen (Right|Left Corner)
 	for t = 1 to len(aBlock) step 1 { 
 		aHead = aBlock[t]
-		# Be sure we have a move down!
+		#Be sure we have a move down!
 		if aHead[2] = nLimit { 
 			MoveBlock(oGame,oMap)
 			return True
 		} 
 	} 
-	# Hide Shape Blocks, Then Move one step to the Right|Left	
+	#Hide Shape Blocks, Then Move one step to the Right|Left	
 	for t = 1 to len(aBlock) step 1 { 
 		aHead = aBlock[t]
 		HideCell(aHead)
 		aHead[2] = aHead[2]+nIncrement
 		aBlock[t] = aHead
 	} 
-	# Move the shape only if the move is possible for all of the shape blocks	
+	#Move the shape only if the move is possible for all of the shape blocks	
 	if MoveShapeIfPossible(oGame,oMap,aLevelCopy,aBlockCopy,True) { 
 		return True
 	} 
-	# Be sure we have a move down! even if someone keep pressing the Right key
+	#Be sure we have a move down! even if someone keep pressing the Right key
 	MoveBlock(oGame,oMap)
 	return False
-	# False means Return from the end of the function
+	#False means Return from the end of the function
 } 
 func MoveShapeIfPossible oGame,oMap,aLevelCopy,aBlockCopy,lCallMoveDown { 
-	# Move the shape only if the move is possible for all of the shape blocks	
+	#Move the shape only if the move is possible for all of the shape blocks	
 	for t = 1 to len(aBlock) step 1 { 
 		aHead = aBlock[t]
 		if aHead[1] < 1 OR aHead[2] < 1 { 
 			loop 1
 		} 
-		if aLevel[aHead[1]][aHead[2]]! = C_EMPTY { 
+		if aLevel[aHead[1]][aHead[2]] != C_EMPTY { 
 			aLevel = aLevelCopy
 			aBlock = aBlockCopy
-			# Be sure we have a move down!
+			#Be sure we have a move down!
 			if lCallMoveDown { 
 				ShowShape()
 				MoveBlock(oGame,oMap)
@@ -189,7 +189,7 @@ func MoveShapeIfPossible oGame,oMap,aLevelCopy,aBlockCopy,lCallMoveDown {
 	return False
 } 
 func MoveDown oGame,oMap,aLevelCopy,aBlockCopy { 
-	# Hide Shape Blocks then move one step down
+	#Hide Shape Blocks then move one step down
 	for t = len(aBlock) to 1 step -1 { 
 		aHead = aBlock[t]
 		if aHead[1] = C_LEVEL_ROWSCOUNT { 
@@ -201,40 +201,40 @@ func MoveDown oGame,oMap,aLevelCopy,aBlockCopy {
 		aHead[1]++
 		aBlock[t] = aHead
 	} 
-	# Move the shape only if the move is possible for all of the shape blocks	
+	#Move the shape only if the move is possible for all of the shape blocks	
 	for t = 1 to len(aBlock) step 1 { 
 		aHead = aBlock[t]
 		if aHead[1] < 1 OR aHead[2] < 1 { 
 			loop 1
 		} 
-		if aLevel[aHead[1]][aHead[2]]! = C_EMPTY { 
+		if aLevel[aHead[1]][aHead[2]] != C_EMPTY { 
 			aLevel = aLevelCopy
 			NewShape(oGame)
 			return True
 		} 
 		ShowCell(aHead)
 	} 
-	# Tells caller that Return from the end of the function
+	#Tells caller that Return from the end of the function
 	return False
 } 
 func HideCell aCell { 
-	# Check if we are outside the screen
+	#Check if we are outside the screen
 	if IsOutsideTheScreen(aCell) { 
 		return 
 	} 
-	# Hide the block
+	#Hide the block
 	aLevel[aCell[1]][aCell[2]] = C_EMPTY
 } 
 func ShowCell aCell { 
-	# Check if we are outside the screen
+	#Check if we are outside the screen
 	if IsOutsideTheScreen(aCell) { 
 		return 
 	} 
-	# Dispaly the block
+	#Display the block
 	aLevel[aCell[1]][aCell[2]] = C_BLOCK
 } 
 func IsOutsideTheScreen aCell { 
-	# Check if a point is outside the screen corners
+	#Check if a point is outside the screen corners
 	x = aCell[2]
 	y = aCell[1]
 	if x < 1 OR y < 1 OR x > C_LEVEL_COLSCOUNT OR y > C_LEVEL_ROWSCOUNT { 
@@ -243,16 +243,16 @@ func IsOutsideTheScreen aCell {
 	return False
 } 
 func UpdateGameMap oGame { 
-	# Move the Map Data from the aLevel list to the Map Object (For Dispaly)
+	#Move the Map Data from the aLevel list to the Map Object (For Display)
 	oGame.find(:Map).aMap = aLevel
 } 
 func DisplayGameOver oGame { 
-	# Call this function one time
+	#Call this function one time
 	if lGameOver { 
 		return 
 	} 
 	lGameOver = True
-	# Create a Text Object for the Game Over message
+	#Create a Text Object for the Game Over message
 	oGame {
 		text {
 			size = 30
@@ -261,16 +261,16 @@ func DisplayGameOver oGame {
 			x = 5
 			y = 10
 			color = rgb(0,0,0)
-			# Animation Part =================================================
+			#Animation Part =================================================
 			animate = true
-			# Use Animation
+			#Use Animation
 			direction = GE_DIRECTION_INCVERTICAL
-			# Increase y
+			#Increase y
 			point = 550
-			# Continue until y=500
+			#Continue until y=500
 			nStep = 12
-			# Each time y+= 6
-			# =================================================================
+			#Each time y+= 6
+			#=================================================================
 			state = func oGame,oSelf {
 				if oSelf.y >= oSelf.point { 
 					oGame.Remove(oSelf.nIndex)
@@ -281,24 +281,24 @@ func DisplayGameOver oGame {
 	}
 } 
 func Restart oGame { 
-	# Set The Map Data
-	# Add the Block
+	#Set The Map Data
+	#Add the Block
 	clearLevelData()
 	AddNewShape(oGame)
-	# Restart the Level
+	#Restart the Level
 	cDirection = :Down
 	UpdateGameMap(oGame)
 	lGameOver = False
-	# Set the Speed
+	#Set the Speed
 	nMovementSpeed = 10
-	# Set the score
+	#Set the score
 	nScore = 0
 	oGame.find(:Score).text = "Score : "+nScore
-	# Rotation
+	#Rotation
 	nRotationIndex = 1
 } 
 func ClearLevelData  { 
-	# Set all cells to Empty
+	#Set all cells to Empty
 	aLevel = list(C_LEVEL_ROWSCOUNT)
 	for nRow = 1 to C_LEVEL_ROWSCOUNT step 1 { 
 		aLevel[nRow] = list(C_LEVEL_COLSCOUNT)
@@ -308,50 +308,50 @@ func ClearLevelData  {
 	} 
 } 
 func NewShape oGame { 
-	# Before inserting new blocks, check complete rows and game over 	
+	#Before inserting new blocks, check complete rows and game over 	
 	CheckCompleteRow(oGame)
 	CheckGameOver(oGame)
 	AddNewShape(oGame)
 } 
 func AddNewShape oGame { 
-	# Support different shapes
+	#Support different shapes
 	nShape = Random(6)+1
-	# The second cell is used as a center for the Rotation
+	#The second cell is used as a center for the Rotation
 	switch nShape { 
 		case 1
-			# O
+			#O
 			aBlock = [[1,1],[2,1],[1,2],[2,2]]
 		case 2
-			# I
+			#I
 			aBlock = [[1,2],[2,2],[3,2],[4,2]]
 		case 3
-			# S
+			#S
 			aBlock = [[3,1],[3,2],[2,2],[2,3]]
 		case 4
-			# Z
+			#Z
 			aBlock = [[1,1],[1,2],[2,2],[2,3]]
 		case 5
-			# L
+			#L
 			aBlock = [[1,1],[2,1],[3,1],[3,2]]
 		case 6
-			# J
+			#J
 			aBlock = [[1,2],[2,2],[3,2],[3,1]]
 		case 7
-			# T
+			#T
 			aBlock = [[2,1],[2,2],[2,3],[3,2]]
 	} 
-	# Start the Shape outside the screen
+	#Start the Shape outside the screen
 	for t = 1 to len(aBlock) step 1 { 
 		aBlock[t][1] = aBlock[t][1]-4
 	} 
-	# Start the Shape at random position 	
+	#Start the Shape at random position 	
 	nXMove = random(6)
-	if nXMove! = 0 { 
+	if nXMove != 0 { 
 		for t = 1 to len(aBlock) step 1 { 
 			aBlock[t][2] += nXMove
 		} 
 	} 
-	# Select shape style to be different from the previous one	
+	#Select shape style to be different from the previous one	
 	nOldStyle = C_BLOCK
 	C_BLOCK = random(6)+2
 	if nOldStyle = C_BLOCK { 
@@ -360,20 +360,20 @@ func AddNewShape oGame {
 	if C_BLOCK > 7 { 
 		C_BLOCK = 2
 	} 
-	# Display the block and set the default speed
+	#Display the block and set the default speed
 	ShowShape()
 	nMovementSpeed = 10
 	nRotationIndex = 1
 } 
 func ShowShape  { 
-	# Show the different cells in the shape
+	#Show the different cells in the shape
 	for t = len(aBlock) to 1 step -1 { 
 		aHead = aBlock[t]
 		ShowCell(aHead)
 	} 
 } 
 func CheckGameOver oGame { 
-	# When we can't insert new shapes, display (Game Over) message!
+	#When we can't insert new shapes, display (Game Over) message!
 	for t = 1 to len(aBlock) step 1 { 
 		if aBlock[t][1] < 1 OR aBlock[t][2] < 1 { 
 			DisplayGameOver(oGame)
@@ -382,59 +382,59 @@ func CheckGameOver oGame {
 	} 
 } 
 func CheckCompleteRow oGame { 
-	# Scan Rows from the bottom to up
+	#Scan Rows from the bottom to up
 	for nRow = C_LEVEL_ROWSCOUNT to 1 step -1 { 
 		lDeleteRow = True
-		# Check if we can't delete a row
+		#Check if we can't delete a row
 		for nCol = 1 to C_LEVEL_COLSCOUNT step 1 { 
 			if aLevel[nRow][nCol] = C_EMPTY { 
 				lDeleteRow = False
 				exit 1
 			} 
 		} 
-		# Delete the row 			
-		# Increase the score
+		#Delete the row 			
+		#Increase the score
 		if lDeleteRow { 
 			nScore += 10
-			# Remove the row blocks
+			#Remove the row blocks
 			del(aLevel,nRow)
-			# Move other rows down
+			#Move other rows down
 			insert(aLevel,0,list(C_LEVEL_COLSCOUNT))
 			for nCol = 1 to C_LEVEL_COLSCOUNT step 1 { 
 				aLevel[1][nCol] = C_EMPTY
 			} 
 			UpdateGameMap(oGame)
-			# Update the Score
+			#Update the Score
 			oGame.find(:Score).text = "Score : "+nScore
-			# Draw Objects
-			# Wait half second
+			#Draw Objects
+			#Wait half second
 			oGame.DrawObjs()
 			Delay(0.5)
-			# Support nested rows deletion
+			#Support nested rows deletion
 			nRow++
 		} 
 	} 
 	UpdateGameMap(oGame)
 } 
 func Delay nTime { 
-	# Wait for some time (nTime in seconds)
+	#Wait for some time (nTime in seconds)
 	t1 = clock()
 	while clock()-t1 < (nTime*Clockspersecond()) { 
 	} 
 } 
 func RotateShape oGame,oMap,aLevelCopy,aBlockCopy { 
 	cDirection = :Down
-	# Don't respond many times in short time
+	#Don't respond many times in short time
 	if (clock()-nRotateClock)/clockspersecond() < 0.3 { 
 		MoveBlock(oGame,oMap)
 		return 
 	} 
-	# Avoid O Shape
+	#Avoid O Shape
 	nRotateClock = clock()
 	if nShape = 1 { 
 		return 
 	} 
-	# Apply the rotation
+	#Apply the rotation
 	for t = 1 to len(aBlock) step 1 { 
 		aHead = aBlock[t]
 		HideCell(aHead)
@@ -444,40 +444,40 @@ func RotateShape oGame,oMap,aLevelCopy,aBlockCopy {
 		px = aBlockCopy[2][2]
 		x2 = (y1+px-py)
 		y2 = (px+py-x1)
-		# I Shape Rotation
+		#I Shape Rotation
 		if nShape = 2 { 
 			switch nRotationIndex { 
 				case 1
-					# Do Nothing
+					#Do Nothing
 				case 2
-					# Increment Y,X
+					#Increment Y,X
 					x2++
 					y2++
 				case 3
-					# Do Nothing
+					#Do Nothing
 				case 4
-					# Decrement Y,X
+					#Decrement Y,X
 					x2--
 					y2--
 			} 
 		} 
 		aBlock[t][1] = y2
 		aBlock[t][2] = x2
-		# Avoid rotation outside the screen borders
+		#Avoid rotation outside the screen borders
 		if IsOutsideTheScreen(aBlock[t]) { 
 			aBlock = aBlockCopy
 			return True
 		} 
 	} 
-	# Check for collisions 	
+	#Check for collisions 	
 	if MoveShapeIfPossible(oGame,oMap,aLevelCopy,aBlockCopy,True) { 
 		return True
 	} 
-	# We did the rotation, Update the Rotation index
+	#We did the rotation, Update the Rotation index
 	nRotationIndex++
 	if nRotationIndex = 5 { 
 		nRotationIndex = 1
 	} 
-	# Be sure we have a move down! even if someone keep pressing the Right key
+	#Be sure we have a move down! even if someone keep pressing the Right key
 	MoveBlock(oGame,oMap)
 } 
