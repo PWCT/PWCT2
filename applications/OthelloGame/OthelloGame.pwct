@@ -14566,7 +14566,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oldArray[Row][Col]!&nbsp;=&nbsp;bArray[Row][Col]</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oldArray[Row][Col]&nbsp;!=&nbsp;bArray[Row][Col]</font></span>"
 			],
 			[
 				"active",
@@ -14574,7 +14574,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if oldArray[Row][Col]! = bArray[Row][Col] { "
+				"if oldArray[Row][Col] != bArray[Row][Col] { "
 			],
 			[
 				"interactionid",
@@ -14594,7 +14594,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If oldArray[Row][Col]! = bArray[Row][Col]"
+				"If oldArray[Row][Col] != bArray[Row][Col]"
 			]
 		]
 	],
@@ -14840,7 +14840,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"} "
+				"}"
 			],
 			[
 				"interactionid",
@@ -15212,7 +15212,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oldArray[Row][Col]!&nbsp;=&nbsp;bArray[Row][Col]</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oldArray[Row][Col]&nbsp;!=&nbsp;bArray[Row][Col]</font></span>"
 			],
 			[
 				"active",
@@ -15220,7 +15220,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if oldArray[Row][Col]! = bArray[Row][Col] { "
+				"if oldArray[Row][Col] != bArray[Row][Col] { "
 			],
 			[
 				"interactionid",
@@ -15240,7 +15240,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If oldArray[Row][Col]! = bArray[Row][Col]"
+				"If oldArray[Row][Col] != bArray[Row][Col]"
 			]
 		]
 	],
@@ -15486,7 +15486,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"} "
+				"}"
 			],
 			[
 				"interactionid",
@@ -16162,7 +16162,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">bArray[h][v]!&nbsp;=&nbsp;&quot;E&quot;</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">bArray[h][v]&nbsp;!=&nbsp;&quot;E&quot;</font></span>"
 			],
 			[
 				"active",
@@ -16170,7 +16170,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if bArray[h][v]! = "+char(34)+"E"+char(34)+" { "
+				"if bArray[h][v] != "+char(34)+"E"+char(34)+" { "
 			],
 			[
 				"interactionid",
@@ -16190,7 +16190,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If bArray[h][v]! = "+char(34)+"E"+char(34)+""
+				"If bArray[h][v] != "+char(34)+"E"+char(34)+""
 			]
 		]
 	],
@@ -16284,7 +16284,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"} "
+				"}"
 			],
 			[
 				"interactionid",
@@ -26893,7 +26893,7 @@ aInteractionsTable = [
 		"ifstatement",
 		"25/04/2023",
 		"20:42:24",
-		"condition;;_RV_;;oldArray[Row][Col]! = bArray[Row][Col];;_RV_;;"
+		"condition;;_RV_;;oldArray[Row][Col] != bArray[Row][Col];;_RV_;;"
 	],
 	[
 		968,
@@ -26965,7 +26965,7 @@ aInteractionsTable = [
 		"ifstatement",
 		"25/04/2023",
 		"20:42:24",
-		"condition;;_RV_;;oldArray[Row][Col]! = bArray[Row][Col];;_RV_;;"
+		"condition;;_RV_;;oldArray[Row][Col] != bArray[Row][Col];;_RV_;;"
 	],
 	[
 		978,
@@ -27061,7 +27061,7 @@ aInteractionsTable = [
 		"ifstatement",
 		"25/04/2023",
 		"20:42:24",
-		"condition;;_RV_;;bArray[h][v]! = "+char(34)+"E"+char(34)+";;_RV_;;"
+		"condition;;_RV_;;bArray[h][v] != "+char(34)+"E"+char(34)+";;_RV_;;"
 	],
 	[
 		992,

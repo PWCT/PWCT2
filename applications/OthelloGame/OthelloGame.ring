@@ -317,12 +317,12 @@
 			for Col = 1 to Size step 1 { 
 				if bArray[Row][Col] = "W" { 
 					see "W "
-					if oldArray[Row][Col]! = bArray[Row][Col] { 
+					if oldArray[Row][Col] != bArray[Row][Col] { 
 						if !isMobile() { 
 							app.processevents()
 							sleep(0.2)
 						} 
-					} 
+					}
 					Button[Row][Col] {
 						setIcon( new qIcon( new qPixMap(AppFile("white.jpg"))))
 						setIconSize( new qSize(bWidth,bHeight))
@@ -330,12 +330,12 @@
 				} 
 				if bArray[Row][Col] = "B" { 
 					see "B "
-					if oldArray[Row][Col]! = bArray[Row][Col] { 
+					if oldArray[Row][Col] != bArray[Row][Col] { 
 						if !isMobile() { 
 							app.processevents()
 							sleep(0.2)
 						} 
-					} 
+					}
 					Button[Row][Col] {
 						setIcon( new qIcon( new qPixMap(AppFile("black.jpg"))))
 						setIconSize( new qSize(bWidth,bHeight))
@@ -349,9 +349,9 @@
 		see nl
 		for h = 1 to Size step 1 { 
 			for v = 1 to Size step 1 { 
-				if bArray[h][v]! = "E" { 
+				if bArray[h][v] != "E" { 
 					Button[h][v].blockSignals(true)
-				} 
+				}
 			} 
 		} 
 		curColor = otherColor
