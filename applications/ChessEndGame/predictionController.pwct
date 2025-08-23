@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'english'
-nStepsID                 = 108		
-nInteractionsID          = 73
+nStepsID                 = 113		
+nInteractionsID          = 76
 
 aStepsTable = [
 	[
@@ -3125,7 +3125,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"curl_easy_setopt(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">curl,CURLOPT_POST,1</font></span>)"
+				"curl_easy_setopt(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">curl,CURLOPT_USERAGENT,&quot;curl/7.54.1&quot;</font></span>)"
 			],
 			[
 				"active",
@@ -3133,7 +3133,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"curl_easy_setopt(curl,CURLOPT_POST,1)"
+				"curl_easy_setopt(curl,CURLOPT_USERAGENT,"+char(34)+"curl/7.54.1"+char(34)+")"
 			],
 			[
 				"interactionid",
@@ -3153,7 +3153,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"curl_easy_setopt(curl,CURLOPT_POST,1)"
+				"curl_easy_setopt(curl,CURLOPT_USERAGENT,"+char(34)+"curl/7.54.1"+char(34)+")"
 			]
 		]
 	],
@@ -3163,7 +3163,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"curl_easy_setopt(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">curl,CURLOPT_USERAGENT,&quot;Ring&quot;</font></span>)"
+				"curl_easy_setopt(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">curl,CURLOPT_POST,1</font></span>)"
 			],
 			[
 				"active",
@@ -3171,7 +3171,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"curl_easy_setopt(curl,CURLOPT_USERAGENT,"+char(34)+"Ring"+char(34)+")"
+				"curl_easy_setopt(curl,CURLOPT_POST,1)"
 			],
 			[
 				"interactionid",
@@ -3191,7 +3191,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"curl_easy_setopt(curl,CURLOPT_USERAGENT,"+char(34)+"Ring"+char(34)+")"
+				"curl_easy_setopt(curl,CURLOPT_POST,1)"
 			]
 		]
 	],
@@ -3201,7 +3201,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"curl_easy_setopt(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">curl,CURLOPT_SSL_VERIFYPEER,FALSE</font></span>)"
+				"curl_easy_setopt(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">curl,CURLOPT_USERAGENT,&quot;Ring&quot;</font></span>)"
 			],
 			[
 				"active",
@@ -3209,7 +3209,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"curl_easy_setopt(curl,CURLOPT_SSL_VERIFYPEER,FALSE)"
+				"curl_easy_setopt(curl,CURLOPT_USERAGENT,"+char(34)+"Ring"+char(34)+")"
 			],
 			[
 				"interactionid",
@@ -3229,7 +3229,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"curl_easy_setopt(curl,CURLOPT_SSL_VERIFYPEER,FALSE)"
+				"curl_easy_setopt(curl,CURLOPT_USERAGENT,"+char(34)+"Ring"+char(34)+")"
 			]
 		]
 	],
@@ -3239,7 +3239,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"curl_easy_setopt(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">curl,CURLOPT_SSL_VERIFYHOST,2</font></span>)"
+				"curl_easy_setopt(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">curl,CURLOPT_SSL_VERIFYPEER,FALSE</font></span>)"
 			],
 			[
 				"active",
@@ -3247,7 +3247,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"curl_easy_setopt(curl,CURLOPT_SSL_VERIFYHOST,2)"
+				"curl_easy_setopt(curl,CURLOPT_SSL_VERIFYPEER,FALSE)"
 			],
 			[
 				"interactionid",
@@ -3267,12 +3267,50 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"curl_easy_setopt(curl,CURLOPT_SSL_VERIFYHOST,2)"
+				"curl_easy_setopt(curl,CURLOPT_SSL_VERIFYPEER,FALSE)"
 			]
 		]
 	],
 	[
 		92,
+		75,
+		[
+			[
+				"name",
+				"curl_easy_setopt(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">curl,CURLOPT_SSL_VERIFYHOST,2</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"curl_easy_setopt(curl,CURLOPT_SSL_VERIFYHOST,2)"
+			],
+			[
+				"interactionid",
+				59
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"curl_easy_setopt(curl,CURLOPT_SSL_VERIFYHOST,2)"
+			]
+		]
+	],
+	[
+		93,
 		75,
 		[
 			[
@@ -3290,7 +3328,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				59
+				60
 			],
 			[
 				"visible",
@@ -3311,7 +3349,7 @@ aStepsTable = [
 		]
 	],
 	[
-		93,
+		94,
 		75,
 		[
 			[
@@ -3325,44 +3363,6 @@ aStepsTable = [
 			[
 				"code",
 				"mylist = curl_slist_append(null,"+char(34)+"accept-encoding: identity"+char(34)+")"
-			],
-			[
-				"interactionid",
-				60
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"mylist = curl_slist_append(null,"+char(34)+"accept-encoding: identity"+char(34)+")"
-			]
-		]
-	],
-	[
-		94,
-		75,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">mylist</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">curl_slist_append(mylist,&quot;authorization:&nbsp;Bearer&nbsp;&quot;+my_api_key)</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"mylist = curl_slist_append(mylist,"+char(34)+"authorization: Bearer "+char(34)+"+my_api_key)"
 			],
 			[
 				"interactionid",
@@ -3382,7 +3382,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"mylist = curl_slist_append(mylist,"+char(34)+"authorization: Bearer "+char(34)+"+my_api_key)"
+				"mylist = curl_slist_append(null,"+char(34)+"accept-encoding: identity"+char(34)+")"
 			]
 		]
 	],
@@ -3392,7 +3392,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">mylist</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">curl_slist_append(mylist,&quot;connection:&nbsp;close&quot;)</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">mylist</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">curl_slist_append(mylist,&quot;authorization:&nbsp;Bearer&nbsp;&quot;+my_api_key)</font></span>"
 			],
 			[
 				"active",
@@ -3400,7 +3400,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"mylist = curl_slist_append(mylist,"+char(34)+"connection: close"+char(34)+")"
+				"mylist = curl_slist_append(mylist,"+char(34)+"authorization: Bearer "+char(34)+"+my_api_key)"
 			],
 			[
 				"interactionid",
@@ -3420,7 +3420,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"mylist = curl_slist_append(mylist,"+char(34)+"connection: close"+char(34)+")"
+				"mylist = curl_slist_append(mylist,"+char(34)+"authorization: Bearer "+char(34)+"+my_api_key)"
 			]
 		]
 	],
@@ -3430,7 +3430,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">mylist</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">curl_slist_append(mylist,&quot;content-length:&nbsp;&quot;+len(my_body))</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">mylist</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">curl_slist_append(mylist,&quot;connection:&nbsp;close&quot;)</font></span>"
 			],
 			[
 				"active",
@@ -3438,7 +3438,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"mylist = curl_slist_append(mylist,"+char(34)+"content-length: "+char(34)+"+len(my_body))"
+				"mylist = curl_slist_append(mylist,"+char(34)+"connection: close"+char(34)+")"
 			],
 			[
 				"interactionid",
@@ -3458,7 +3458,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"mylist = curl_slist_append(mylist,"+char(34)+"content-length: "+char(34)+"+len(my_body))"
+				"mylist = curl_slist_append(mylist,"+char(34)+"connection: close"+char(34)+")"
 			]
 		]
 	],
@@ -3468,7 +3468,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">mylist</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">curl_slist_append(mylist,&quot;content-type:&nbsp;application/json&quot;)</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">mylist</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">curl_slist_append(mylist,&quot;content-length:&nbsp;&quot;+len(my_body))</font></span>"
 			],
 			[
 				"active",
@@ -3476,7 +3476,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"mylist = curl_slist_append(mylist,"+char(34)+"content-type: application/json"+char(34)+")"
+				"mylist = curl_slist_append(mylist,"+char(34)+"content-length: "+char(34)+"+len(my_body))"
 			],
 			[
 				"interactionid",
@@ -3496,7 +3496,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"mylist = curl_slist_append(mylist,"+char(34)+"content-type: application/json"+char(34)+")"
+				"mylist = curl_slist_append(mylist,"+char(34)+"content-length: "+char(34)+"+len(my_body))"
 			]
 		]
 	],
@@ -3506,7 +3506,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"curl_easy_setopt(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">curl,CURLOPT_HTTPHEADER,mylist</font></span>)"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">mylist</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">curl_slist_append(mylist,&quot;content-type:&nbsp;application/json&quot;)</font></span>"
 			],
 			[
 				"active",
@@ -3514,7 +3514,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"curl_easy_setopt(curl,CURLOPT_HTTPHEADER,mylist)"
+				"mylist = curl_slist_append(mylist,"+char(34)+"content-type: application/json"+char(34)+")"
 			],
 			[
 				"interactionid",
@@ -3534,12 +3534,50 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"curl_easy_setopt(curl,CURLOPT_HTTPHEADER,mylist)"
+				"mylist = curl_slist_append(mylist,"+char(34)+"content-type: application/json"+char(34)+")"
 			]
 		]
 	],
 	[
 		99,
+		75,
+		[
+			[
+				"name",
+				"curl_easy_setopt(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">curl,CURLOPT_HTTPHEADER,mylist</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"curl_easy_setopt(curl,CURLOPT_HTTPHEADER,mylist)"
+			],
+			[
+				"interactionid",
+				66
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"curl_easy_setopt(curl,CURLOPT_HTTPHEADER,mylist)"
+			]
+		]
+	],
+	[
+		100,
 		75,
 		[
 			[
@@ -3557,7 +3595,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				66
+				67
 			],
 			[
 				"visible",
@@ -3578,7 +3616,7 @@ aStepsTable = [
 		]
 	],
 	[
-		100,
+		101,
 		75,
 		[
 			[
@@ -3595,7 +3633,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				67
+				68
 			],
 			[
 				"visible",
@@ -3616,7 +3654,7 @@ aStepsTable = [
 		]
 	],
 	[
-		101,
+		102,
 		75,
 		[
 			[
@@ -3634,7 +3672,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				68
+				69
 			],
 			[
 				"visible",
@@ -3655,7 +3693,7 @@ aStepsTable = [
 		]
 	],
 	[
-		102,
+		103,
 		75,
 		[
 			[
@@ -3669,44 +3707,6 @@ aStepsTable = [
 			[
 				"code",
 				"curl_easy_setopt(curl,CURLOPT_POSTFIELDS,my_body)"
-			],
-			[
-				"interactionid",
-				69
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"curl_easy_setopt(curl,CURLOPT_POSTFIELDS,my_body)"
-			]
-		]
-	],
-	[
-		103,
-		75,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cOutput</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">curl_easy_perform_silent(curl)</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"cOutput = curl_easy_perform_silent(curl)"
 			],
 			[
 				"interactionid",
@@ -3726,12 +3726,202 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"cOutput = curl_easy_perform_silent(curl)"
+				"curl_easy_setopt(curl,CURLOPT_POSTFIELDS,my_body)"
 			]
 		]
 	],
 	[
 		104,
+		75,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cOutput</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">curl_easy_perform_silent(curl)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cOutput = curl_easy_perform_silent(curl)"
+			],
+			[
+				"interactionid",
+				71
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cOutput = curl_easy_perform_silent(curl)"
+			]
+		]
+	],
+	[
+		105,
+		75,
+		[
+			[
+				"name",
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cOutput&nbsp;=&nbsp;NULL</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"if cOutput = NULL { "
+			],
+			[
+				"interactionid",
+				72
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"If cOutput = NULL"
+			]
+		]
+	],
+	[
+		106,
+		105,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				72
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		108,
+		106,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cOutput</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;Can&#039;t&nbsp;connect&nbsp;to&nbsp;the&nbsp;Model&nbsp;to&nbsp;predict&nbsp;the&nbsp;game&nbsp;result.&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cOutput = "+char(34)+"Can't connect to the Model to predict the game result."+char(34)+""
+			],
+			[
+				"interactionid",
+				73
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cOutput = "+char(34)+"Can't connect to the Model to predict the game result."+char(34)+""
+			]
+		]
+	],
+	[
+		107,
+		105,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				72
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		109,
 		75,
 		[
 			[
@@ -3748,7 +3938,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				71
+				74
 			],
 			[
 				"visible",
@@ -3807,7 +3997,7 @@ aStepsTable = [
 		]
 	],
 	[
-		105,
+		110,
 		17,
 		[
 			[
@@ -3824,7 +4014,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				72
+				75
 			],
 			[
 				"visible",
@@ -3845,8 +4035,8 @@ aStepsTable = [
 		]
 	],
 	[
-		106,
-		105,
+		111,
+		110,
 		[
 			[
 				"name",
@@ -3862,7 +4052,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				72
+				75
 			],
 			[
 				"visible",
@@ -3883,8 +4073,8 @@ aStepsTable = [
 		]
 	],
 	[
-		108,
-		106,
+		113,
+		111,
 		[
 			[
 				"name",
@@ -3900,7 +4090,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				73
+				76
 			],
 			[
 				"visible",
@@ -3921,8 +4111,8 @@ aStepsTable = [
 		]
 	],
 	[
-		107,
-		105,
+		112,
+		110,
 		[
 			[
 				"name",
@@ -3938,7 +4128,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				72
+				75
 			],
 			[
 				"visible",
@@ -4117,584 +4307,608 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		""
 	],
 	[
 		2,
 		1,
 		"load",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"file;;_RV_;;libcurl.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"load",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"file;;_RV_;;predictionView.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"import",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"value;;_RV_;;System.GUI;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"ifstatement",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"condition;;_RV_;;IsMainSourceFile();;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"newobj",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"value;;_RV_;;;;_RV_;;value2;;_RV_;;App;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"callfunc",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;StyleFusion;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"callfunc",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;openWindow;;_RV_;;parameters;;_RV_;;:predictionController;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"callfunc",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;exec;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"class",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"value;;_RV_;;predictionController;;_RV_;;value2;;_RV_;;windowsControllerParent;;_RV_;;value3;;_RV_;;2;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"newobj",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"value;;_RV_;;oView;;_RV_;;value2;;_RV_;;predictionView;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"accessobject",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"value;;_RV_;;oView;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"callmethod",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;txtWKF;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+"a"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"callmethod",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;txtWKR;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+"1"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"callmethod",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;txtWRF;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+"b"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"callmethod",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;txtWRR;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+"3"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"callmethod",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;txtBKF;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+"c"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"callmethod",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;txtBKR;;_RV_;;name;;_RV_;;setText;;_RV_;;parameters;;_RV_;;"+char(34)+"2"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"callmethod",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;listAlgorithm;;_RV_;;name;;_RV_;;setCurrentRow;;_RV_;;parameters;;_RV_;;1,QItemSelectionModel_Select;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"freetyping",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"value;;_RV_;;my_URL;;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"freetyping",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"value;;_RV_;;my_api_key;;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"func",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"name;;_RV_;;predict;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"switch",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"variable;;_RV_;;oView.listAlgorithm.CurrentRow();;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"case",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"value;;_RV_;;1;;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"callfunc",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;predictDecisionForest;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"case",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"value;;_RV_;;2;;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"callfunc",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;predictDecisionJungle;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"case",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"value;;_RV_;;3;;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"callfunc",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;predictMulticlassNeuralNetwork;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		30,
 		1,
 		"case",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"value;;_RV_;;4;;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"callfunc",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;predictLogisticRegression;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		32,
 		1,
 		"callfunc",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;predictGameResult;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		33,
 		1,
 		"func",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"name;;_RV_;;predictDecisionForest;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		34,
 		1,
 		"assignment",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"leftside;;_RV_;;my_URL;;_RV_;;rightside;;_RV_;;"+char(34)+"https://ussouthcentral.services.azureml.net/workspaces/ed4a059d4bdd45da81d441bcd146f8f5/services/2d4f4c8aaf5046579e95c53a5967638e/execute?api-version=2.0&format=swagger"+char(34)+";;_RV_;;"
 	],
 	[
 		35,
 		1,
 		"assignment",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"leftside;;_RV_;;my_api_key;;_RV_;;rightside;;_RV_;;"+char(34)+"3UmdB2F2xfOvH9PdO98ewAMdady7f36HRimoqt6fsxTn3sjpEKQhN9zT75LPocOhn7rBayF/lFRVh0qXAS6OMQ=="+char(34)+";;_RV_;;"
 	],
 	[
 		36,
 		1,
 		"func",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"name;;_RV_;;predictDecisionJungle;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		37,
 		1,
 		"assignment",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"leftside;;_RV_;;my_URL;;_RV_;;rightside;;_RV_;;"+char(34)+"https://ussouthcentral.services.azureml.net/workspaces/ed4a059d4bdd45da81d441bcd146f8f5/services/2010be66531940ee887edef97c06208b/execute?api-version=2.0&format=swagger"+char(34)+";;_RV_;;"
 	],
 	[
 		38,
 		1,
 		"assignment",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"leftside;;_RV_;;my_api_key;;_RV_;;rightside;;_RV_;;"+char(34)+"amKBSrusAWGSHNft86lhmXuLoCnjDEm55HXgdHsPUj3z+h6PcYD6vGk5yS7Jkdnljq3TEP39fNFoovwDL2gwcg=="+char(34)+";;_RV_;;"
 	],
 	[
 		39,
 		1,
 		"func",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"name;;_RV_;;predictMulticlassNeuralNetwork;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		40,
 		1,
 		"assignment",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"leftside;;_RV_;;my_URL;;_RV_;;rightside;;_RV_;;"+char(34)+"https://ussouthcentral.services.azureml.net/workspaces/ed4a059d4bdd45da81d441bcd146f8f5/services/55d686ab00804cabaebb72a231a4b56c/execute?api-version=2.0&format=swagger"+char(34)+";;_RV_;;"
 	],
 	[
 		41,
 		1,
 		"assignment",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"leftside;;_RV_;;my_api_key;;_RV_;;rightside;;_RV_;;"+char(34)+"GPLQWdLPeo1QkQeFQpHjcrUOYMpIBeXxGu8HQ3KxT5kFJbqpSsfXj79diJBN2f/CuQFo2sHHpW4Mv+BghZv2lA=="+char(34)+";;_RV_;;"
 	],
 	[
 		42,
 		1,
 		"func",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"name;;_RV_;;predictLogisticRegression;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		43,
 		1,
 		"assignment",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"leftside;;_RV_;;my_URL;;_RV_;;rightside;;_RV_;;"+char(34)+"https://ussouthcentral.services.azureml.net/workspaces/ed4a059d4bdd45da81d441bcd146f8f5/services/0f79b953e2ae48dd8868195abdb5a787/execute?api-version=2.0&format=swagger"+char(34)+";;_RV_;;"
 	],
 	[
 		44,
 		1,
 		"assignment",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"leftside;;_RV_;;my_api_key;;_RV_;;rightside;;_RV_;;"+char(34)+"yB5mc3WNBXLv7wKdAdD9MsXul5TluVszOOif8A8u0P7R+akPzhyjogCCqu4iHYxNAPx8q+pA5nyqv7lC0Jm9ug=="+char(34)+";;_RV_;;"
 	],
 	[
 		45,
 		1,
 		"func",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"name;;_RV_;;predictGameResult;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		46,
 		1,
 		"assignment",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"leftside;;_RV_;;my_body;;_RV_;;rightside;;_RV_;;'{"+char(34)+"Inputs"+char(34)+": {"+char(34)+"input1"+char(34)+": [{"+char(34)+"WhiteKingFile"+char(34)+": "+char(34)+"#{f1}"+char(34)+", "+char(34)+"WhiteKingRank"+char(34)+": "+char(34)+"#{f2}"+char(34)+", "+char(34)+"WhiteRockFile"+char(34)+": "+char(34)+"#{f3}"+char(34)+", "+char(34)+"WhiteRockRank"+char(34)+": "+char(34)+"#{f4}"+char(34)+", "+char(34)+"BlackKingFile"+char(34)+": "+char(34)+"#{f5}"+char(34)+", "+char(34)+"BlackKingRank"+char(34)+": "+char(34)+"#{f6}"+char(34)+", "+char(34)+"GameResult"+char(34)+": "+char(34)+""+char(34)+"}]}, "+char(34)+"GlobalParameters"+char(34)+": {}}';;_RV_;;"
 	],
 	[
 		47,
 		1,
 		"accessobject",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"value;;_RV_;;oView;;_RV_;;"
 	],
 	[
 		48,
 		1,
 		"assignment",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"leftside;;_RV_;;my_body;;_RV_;;rightside;;_RV_;;substr(my_body,"+char(34)+"#{f1}"+char(34)+",txtWKF.text());;_RV_;;"
 	],
 	[
 		49,
 		1,
 		"assignment",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"leftside;;_RV_;;my_body;;_RV_;;rightside;;_RV_;;substr(my_body,"+char(34)+"#{f2}"+char(34)+",txtWKR.text());;_RV_;;"
 	],
 	[
 		50,
 		1,
 		"assignment",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"leftside;;_RV_;;my_body;;_RV_;;rightside;;_RV_;;substr(my_body,"+char(34)+"#{f3}"+char(34)+",txtWRF.text());;_RV_;;"
 	],
 	[
 		51,
 		1,
 		"assignment",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"leftside;;_RV_;;my_body;;_RV_;;rightside;;_RV_;;substr(my_body,"+char(34)+"#{f4}"+char(34)+",txtWRR.text());;_RV_;;"
 	],
 	[
 		52,
 		1,
 		"assignment",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"leftside;;_RV_;;my_body;;_RV_;;rightside;;_RV_;;substr(my_body,"+char(34)+"#{f5}"+char(34)+",txtBKF.text());;_RV_;;"
 	],
 	[
 		53,
 		1,
 		"assignment",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"leftside;;_RV_;;my_body;;_RV_;;rightside;;_RV_;;substr(my_body,"+char(34)+"#{f6}"+char(34)+",txtBKR.text());;_RV_;;"
 	],
 	[
 		54,
 		1,
 		"assignment",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
 		"leftside;;_RV_;;curl;;_RV_;;rightside;;_RV_;;curl_easy_init();;_RV_;;"
 	],
 	[
 		55,
 		1,
 		"callfunc",
-		"13/03/2024",
-		"22:06:44",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;curl_easy_setopt;;_RV_;;parameters;;_RV_;;curl,CURLOPT_POST,1;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"23/08/2025",
+		"20:00:49",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;curl_easy_setopt;;_RV_;;parameters;;_RV_;;curl,CURLOPT_USERAGENT,"+char(34)+"curl/7.54.1"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		56,
 		1,
 		"callfunc",
-		"13/03/2024",
-		"22:06:44",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;curl_easy_setopt;;_RV_;;parameters;;_RV_;;curl,CURLOPT_USERAGENT,"+char(34)+"Ring"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"23/08/2025",
+		"20:00:49",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;curl_easy_setopt;;_RV_;;parameters;;_RV_;;curl,CURLOPT_POST,1;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		57,
 		1,
 		"callfunc",
-		"13/03/2024",
-		"22:06:44",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;curl_easy_setopt;;_RV_;;parameters;;_RV_;;curl,CURLOPT_SSL_VERIFYPEER,FALSE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"23/08/2025",
+		"20:00:49",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;curl_easy_setopt;;_RV_;;parameters;;_RV_;;curl,CURLOPT_USERAGENT,"+char(34)+"Ring"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		58,
 		1,
 		"callfunc",
-		"13/03/2024",
-		"22:06:44",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;curl_easy_setopt;;_RV_;;parameters;;_RV_;;curl,CURLOPT_SSL_VERIFYHOST,2;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"23/08/2025",
+		"20:00:49",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;curl_easy_setopt;;_RV_;;parameters;;_RV_;;curl,CURLOPT_SSL_VERIFYPEER,FALSE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		59,
 		1,
-		"comment_text",
-		"13/03/2024",
-		"22:06:44",
-		"value;;_RV_;;Header;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"callfunc",
+		"23/08/2025",
+		"20:00:49",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;curl_easy_setopt;;_RV_;;parameters;;_RV_;;curl,CURLOPT_SSL_VERIFYHOST,2;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		60,
 		1,
-		"assignment",
-		"13/03/2024",
-		"22:06:44",
-		"leftside;;_RV_;;mylist;;_RV_;;rightside;;_RV_;;curl_slist_append(null,"+char(34)+"accept-encoding: identity"+char(34)+");;_RV_;;"
+		"comment_text",
+		"23/08/2025",
+		"20:00:49",
+		"value;;_RV_;;Header;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		61,
 		1,
 		"assignment",
-		"13/03/2024",
-		"22:06:44",
-		"leftside;;_RV_;;mylist;;_RV_;;rightside;;_RV_;;curl_slist_append(mylist,"+char(34)+"authorization: Bearer "+char(34)+"+my_api_key);;_RV_;;"
+		"23/08/2025",
+		"20:00:49",
+		"leftside;;_RV_;;mylist;;_RV_;;rightside;;_RV_;;curl_slist_append(null,"+char(34)+"accept-encoding: identity"+char(34)+");;_RV_;;"
 	],
 	[
 		62,
 		1,
 		"assignment",
-		"13/03/2024",
-		"22:06:44",
-		"leftside;;_RV_;;mylist;;_RV_;;rightside;;_RV_;;curl_slist_append(mylist,"+char(34)+"connection: close"+char(34)+");;_RV_;;"
+		"23/08/2025",
+		"20:00:49",
+		"leftside;;_RV_;;mylist;;_RV_;;rightside;;_RV_;;curl_slist_append(mylist,"+char(34)+"authorization: Bearer "+char(34)+"+my_api_key);;_RV_;;"
 	],
 	[
 		63,
 		1,
 		"assignment",
-		"13/03/2024",
-		"22:06:44",
-		"leftside;;_RV_;;mylist;;_RV_;;rightside;;_RV_;;curl_slist_append(mylist,"+char(34)+"content-length: "+char(34)+"+len(my_body));;_RV_;;"
+		"23/08/2025",
+		"20:00:49",
+		"leftside;;_RV_;;mylist;;_RV_;;rightside;;_RV_;;curl_slist_append(mylist,"+char(34)+"connection: close"+char(34)+");;_RV_;;"
 	],
 	[
 		64,
 		1,
 		"assignment",
-		"13/03/2024",
-		"22:06:44",
-		"leftside;;_RV_;;mylist;;_RV_;;rightside;;_RV_;;curl_slist_append(mylist,"+char(34)+"content-type: application/json"+char(34)+");;_RV_;;"
+		"23/08/2025",
+		"20:00:49",
+		"leftside;;_RV_;;mylist;;_RV_;;rightside;;_RV_;;curl_slist_append(mylist,"+char(34)+"content-length: "+char(34)+"+len(my_body));;_RV_;;"
 	],
 	[
 		65,
 		1,
-		"callfunc",
-		"13/03/2024",
-		"22:06:44",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;curl_easy_setopt;;_RV_;;parameters;;_RV_;;curl,CURLOPT_HTTPHEADER,mylist;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"assignment",
+		"23/08/2025",
+		"20:00:49",
+		"leftside;;_RV_;;mylist;;_RV_;;rightside;;_RV_;;curl_slist_append(mylist,"+char(34)+"content-type: application/json"+char(34)+");;_RV_;;"
 	],
 	[
 		66,
 		1,
-		"comment_text",
-		"13/03/2024",
-		"22:06:44",
-		"value;;_RV_;;Website;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"callfunc",
+		"23/08/2025",
+		"20:00:49",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;curl_easy_setopt;;_RV_;;parameters;;_RV_;;curl,CURLOPT_HTTPHEADER,mylist;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		67,
 		1,
-		"callfunc",
-		"13/03/2024",
-		"22:06:44",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;curl_easy_setopt;;_RV_;;parameters;;_RV_;;curl,CURLOPT_URL,my_URL;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"comment_text",
+		"23/08/2025",
+		"20:00:49",
+		"value;;_RV_;;Website;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		68,
 		1,
-		"comment_text",
-		"13/03/2024",
-		"22:06:44",
-		"value;;_RV_;;Body;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"callfunc",
+		"23/08/2025",
+		"20:00:49",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;curl_easy_setopt;;_RV_;;parameters;;_RV_;;curl,CURLOPT_URL,my_URL;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		69,
 		1,
-		"callfunc",
-		"13/03/2024",
-		"22:06:44",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;curl_easy_setopt;;_RV_;;parameters;;_RV_;;curl,CURLOPT_POSTFIELDS,my_body;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"comment_text",
+		"23/08/2025",
+		"20:00:49",
+		"value;;_RV_;;Body;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		70,
 		1,
-		"assignment",
-		"13/03/2024",
-		"22:06:44",
-		"leftside;;_RV_;;cOutput;;_RV_;;rightside;;_RV_;;curl_easy_perform_silent(curl);;_RV_;;"
+		"callfunc",
+		"23/08/2025",
+		"20:00:49",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;curl_easy_setopt;;_RV_;;parameters;;_RV_;;curl,CURLOPT_POSTFIELDS,my_body;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		71,
 		1,
-		"freetyping",
-		"13/03/2024",
-		"22:06:44",
-		"value;;_RV_;;oView.txtOutput.setText(cOutput);;_RV_;;"
+		"assignment",
+		"23/08/2025",
+		"20:00:49",
+		"leftside;;_RV_;;cOutput;;_RV_;;rightside;;_RV_;;curl_easy_perform_silent(curl);;_RV_;;"
 	],
 	[
 		72,
 		1,
-		"func",
-		"13/03/2024",
-		"22:06:44",
-		"name;;_RV_;;closeWindow;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"ifstatement",
+		"23/08/2025",
+		"20:00:49",
+		"condition;;_RV_;;cOutput = NULL;;_RV_;;"
 	],
 	[
 		73,
 		1,
+		"assignment",
+		"23/08/2025",
+		"20:00:49",
+		"leftside;;_RV_;;cOutput;;_RV_;;rightside;;_RV_;;"+char(34)+"Can't connect to the Model to predict the game result."+char(34)+";;_RV_;;"
+	],
+	[
+		74,
+		1,
 		"freetyping",
-		"13/03/2024",
-		"22:06:44",
+		"23/08/2025",
+		"20:00:49",
+		"value;;_RV_;;oView.txtOutput.setText(cOutput);;_RV_;;"
+	],
+	[
+		75,
+		1,
+		"func",
+		"23/08/2025",
+		"20:00:49",
+		"name;;_RV_;;closeWindow;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+	],
+	[
+		76,
+		1,
+		"freetyping",
+		"23/08/2025",
+		"20:00:49",
 		"value;;_RV_;;oView.win.close();;_RV_;;"
 	]
 ]

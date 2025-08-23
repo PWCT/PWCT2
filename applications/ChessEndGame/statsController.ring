@@ -1,3 +1,6 @@
+#=============================================#
+#Form/Window Controller - Source Code File
+#=============================================#
 load "statsView.ring"
 load "data/dataset.ring"
 import System.GUI
@@ -26,7 +29,7 @@ class statsController from windowsControllerParent
 	{
 		move(450,10)
 		engine().AddImportPath(exefolder()+"qml")
-		setSource( new qURL("hello.qml"))
+		setSource( new qURL("file:///"+CurrentDir()+"/hello.qml"))
 	}
 	func loadTheData  { 
 		#Count the Values
@@ -73,7 +76,7 @@ class statsController from windowsControllerParent
 		nIndex = oView.statsTableWidget.currentrow()
 		writeQMLfile(aStats[nIndex][1],"Other",aStats[nIndex][2],C_RECORDSCOUNT-aStats[nIndex][2])
 		oQuick.engine().clearcomponentcache()
-		oQuick.setSource( new qURL("hello.qml"))
+		oQuick.setSource( new qURL("file:///"+CurrentDir()+"/hello.qml"))
 		oQuick.setupdatesenabled(True)
 	} 
 private
