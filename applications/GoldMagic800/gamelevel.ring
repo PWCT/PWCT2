@@ -268,9 +268,9 @@ class GameLevel
 		return True
 	} 
 	func IsWall Y,X { 
-		if aLevel[Y][X] = C_WALL OR aLevel[Y][X] = C_GOLDCUBE OR (aLevel[Y][X] = C_DOOR AND nActiveDoor! = 1) OR (aLevel[Y][X] = C_DOOR2 AND nActiveDoor! = 2) OR (aLevel[Y][X] = C_DOOR3 AND nActiveDoor! = 3) OR (aLevel[Y][X] = C_DOOR4 AND nActiveDoor! = 4) OR (aLevel[Y][X] = C_DOOR5 AND nActiveDoor! = 5) OR (aLevel[Y][X] = C_DOOR6 AND nActiveDoor! = 6) OR (aLevel[Y][X] = C_DOOR7 AND nActiveDoor! = 7) OR (aLevel[Y][X] = C_DOOR8 AND nActiveDoor! = 8) OR (aLevel[Y][X] = C_DOOR9 AND nActiveDoor! = 9) OR (aLevel[Y][X] = C_DOOR10 AND nActiveDoor! = 10) OR (aLevel[Y][X] = C_DOOR11 AND nActiveDoor! = 11) OR (aLevel[Y][X] = C_DOOR12 AND nActiveDoor! = 12) OR (aLevel[Y][X] = C_DOOR13 AND nActiveDoor! = 13) OR (aLevel[Y][X] = C_DOOR14 AND nActiveDoor! = 14) OR (aLevel[Y][X] = C_DOOR15 AND nActiveDoor! = 15) OR (aLevel[Y][X] = C_DOOR16 AND nActiveDoor! = 16) { 
+		if aLevel[Y][X] = C_WALL OR aLevel[Y][X] = C_GOLDCUBE OR (aLevel[Y][X] = C_DOOR AND nActiveDoor != 1) OR (aLevel[Y][X] = C_DOOR2 AND nActiveDoor != 2) OR (aLevel[Y][X] = C_DOOR3 AND nActiveDoor != 3) OR (aLevel[Y][X] = C_DOOR4 AND nActiveDoor != 4) OR (aLevel[Y][X] = C_DOOR5 AND nActiveDoor != 5) OR (aLevel[Y][X] = C_DOOR6 AND nActiveDoor != 6) OR (aLevel[Y][X] = C_DOOR7 AND nActiveDoor != 7) OR (aLevel[Y][X] = C_DOOR8 AND nActiveDoor != 8) OR (aLevel[Y][X] = C_DOOR9 AND nActiveDoor != 9) OR (aLevel[Y][X] = C_DOOR10 AND nActiveDoor != 10) OR (aLevel[Y][X] = C_DOOR11 AND nActiveDoor != 11) OR (aLevel[Y][X] = C_DOOR12 AND nActiveDoor != 12) OR (aLevel[Y][X] = C_DOOR13 AND nActiveDoor != 13) OR (aLevel[Y][X] = C_DOOR14 AND nActiveDoor != 14) OR (aLevel[Y][X] = C_DOOR15 AND nActiveDoor != 15) OR (aLevel[Y][X] = C_DOOR16 AND nActiveDoor != 16) { 
 			return True
-		} 
+		}
 		return False
 	} 
 	func LevelStyle  { 

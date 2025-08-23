@@ -5785,7 +5785,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">mouse_x!&nbsp;=&nbsp;Last_Mouse_X&nbsp;OR&nbsp;mouse_y!&nbsp;=&nbsp;Last_Mouse_y</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">mouse_x&nbsp;!=&nbsp;Last_Mouse_X&nbsp;OR&nbsp;mouse_y&nbsp;!=&nbsp;Last_Mouse_y</font></span>"
 			],
 			[
 				"active",
@@ -5793,7 +5793,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if mouse_x! = Last_Mouse_X OR mouse_y! = Last_Mouse_y { "
+				"if mouse_x != Last_Mouse_X OR mouse_y != Last_Mouse_y { "
 			],
 			[
 				"interactionid",
@@ -5813,7 +5813,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If mouse_x! = Last_Mouse_X OR mouse_y! = Last_Mouse_y"
+				"If mouse_x != Last_Mouse_X OR mouse_y != Last_Mouse_y"
 			]
 		]
 	],
@@ -5907,7 +5907,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"} "
+				"}"
 			],
 			[
 				"interactionid",
@@ -14343,7 +14343,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">SCREEN_W_2D!&nbsp;=&nbsp;SCREEN_W&nbsp;OR&nbsp;SCREEN_H_2D!&nbsp;=&nbsp;SCREEN_H</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">SCREEN_W_2D&nbsp;!=&nbsp;SCREEN_W&nbsp;OR&nbsp;SCREEN_H_2D&nbsp;!=&nbsp;SCREEN_H</font></span>"
 			],
 			[
 				"active",
@@ -14351,7 +14351,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if SCREEN_W_2D! = SCREEN_W OR SCREEN_H_2D! = SCREEN_H { "
+				"if SCREEN_W_2D != SCREEN_W OR SCREEN_H_2D != SCREEN_H { "
 			],
 			[
 				"interactionid",
@@ -14371,7 +14371,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If SCREEN_W_2D! = SCREEN_W OR SCREEN_H_2D! = SCREEN_H"
+				"If SCREEN_W_2D != SCREEN_W OR SCREEN_H_2D != SCREEN_H"
 			]
 		]
 	],
@@ -14465,7 +14465,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"} "
+				"}"
 			],
 			[
 				"interactionid",
@@ -14609,7 +14609,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">SCREEN_W_2D!&nbsp;=&nbsp;SCREEN_W&nbsp;OR&nbsp;SCREEN_H_2D!&nbsp;=&nbsp;SCREEN_H</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">SCREEN_W_2D&nbsp;!=&nbsp;SCREEN_W&nbsp;OR&nbsp;SCREEN_H_2D&nbsp;!=&nbsp;SCREEN_H</font></span>"
 			],
 			[
 				"active",
@@ -14617,7 +14617,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if SCREEN_W_2D! = SCREEN_W OR SCREEN_H_2D! = SCREEN_H { "
+				"if SCREEN_W_2D != SCREEN_W OR SCREEN_H_2D != SCREEN_H { "
 			],
 			[
 				"interactionid",
@@ -14637,7 +14637,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If SCREEN_W_2D! = SCREEN_W OR SCREEN_H_2D! = SCREEN_H"
+				"If SCREEN_W_2D != SCREEN_W OR SCREEN_H_2D != SCREEN_H"
 			]
 		]
 	],
@@ -14769,7 +14769,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"} "
+				"}"
 			],
 			[
 				"interactionid",
@@ -17188,7 +17188,7 @@ aInteractionsTable = [
 		"ifstatement",
 		"27/08/2021",
 		"08:39:59",
-		"condition;;_RV_;;mouse_x! = Last_Mouse_X OR mouse_y! = Last_Mouse_y;;_RV_;;"
+		"condition;;_RV_;;mouse_x != Last_Mouse_X OR mouse_y != Last_Mouse_y;;_RV_;;"
 	],
 	[
 		127,
@@ -18316,7 +18316,7 @@ aInteractionsTable = [
 		"ifstatement",
 		"27/08/2021",
 		"08:39:59",
-		"condition;;_RV_;;SCREEN_W_2D! = SCREEN_W OR SCREEN_H_2D! = SCREEN_H;;_RV_;;"
+		"condition;;_RV_;;SCREEN_W_2D != SCREEN_W OR SCREEN_H_2D != SCREEN_H;;_RV_;;"
 	],
 	[
 		268,
@@ -18340,7 +18340,7 @@ aInteractionsTable = [
 		"ifstatement",
 		"27/08/2021",
 		"08:39:59",
-		"condition;;_RV_;;SCREEN_W_2D! = SCREEN_W OR SCREEN_H_2D! = SCREEN_H;;_RV_;;"
+		"condition;;_RV_;;SCREEN_W_2D != SCREEN_W OR SCREEN_H_2D != SCREEN_H;;_RV_;;"
 	],
 	[
 		271,

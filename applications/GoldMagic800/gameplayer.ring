@@ -140,11 +140,11 @@ class GamePlayer
 		if aLevel[nPlayerY][nPlayerX] = nCheck { 
 			oGameSound.PlayLevelSound()
 			ConvertGoldToWall()
-			if nActiveDoor! = nDoorsCount { 
+			if nActiveDoor != nDoorsCount { 
 				nActiveDoor++
 				else
 					return True
-			} 
+			}
 		} 
 		return False
 	} 

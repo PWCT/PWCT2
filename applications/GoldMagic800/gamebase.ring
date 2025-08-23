@@ -128,9 +128,9 @@ class GameBase
 					last_mouse_y = mouse_y
 					mouse_x = al_get_allegro_event_mouse_x(ev)
 					mouse_y = al_get_allegro_event_mouse_y(ev)
-					if mouse_x! = Last_Mouse_X OR mouse_y! = Last_Mouse_y { 
+					if mouse_x != Last_Mouse_X OR mouse_y != Last_Mouse_y { 
 						lMouseMove = True
-					} 
+					}
 				case ALLEGRO_EVENT_MOUSE_ENTER_DISPLAY
 				case ALLEGRO_EVENT_MOUSE_BUTTON_DOWN
 					Mouse_Button_Down = True
@@ -293,15 +293,15 @@ class GameBase
 			bitmapScreen2D = al_create_bitmap(SCREEN_W_2D,SCREEN_H_2D)
 			CheckFatalError(bitmapScreen2D,"Can't create the Screen Buffer : "+SCREEN_W_2D+" x "+SCREEN_H_2D)
 		} 
-		if SCREEN_W_2D! = SCREEN_W OR SCREEN_H_2D! = SCREEN_H { 
+		if SCREEN_W_2D != SCREEN_W OR SCREEN_H_2D != SCREEN_H { 
 			al_set_target_bitmap(bitmapScreen2D)
-		} 
+		}
 	} 
 	func End2DScreen  { 
-		if SCREEN_W_2D! = SCREEN_W OR SCREEN_H_2D! = SCREEN_H { 
+		if SCREEN_W_2D != SCREEN_W OR SCREEN_H_2D != SCREEN_H { 
 			al_set_target_bitmap(al_get_backbuffer(display))
 			al_draw_scaled_bitmap(bitmapScreen2D,0,0,SCREEN_W_2D,SCREEN_H_2D,0,0,SCREEN_W,SCREEN_H,0)
-		} 
+		}
 	} 
 	func Position2D_Y Y { 
 		return Y*(SCREEN_H/SCREEN_H_2D)

@@ -16,11 +16,11 @@ class GameMainMenu
 					loop 1
 				} 
 				if Mouse_Y >= Position2D_Y(SCREEN_H_2D-850+(100*x)) AND Mouse_Y <= Position2D_Y(SCREEN_H_2D-850+(100*x)+100) AND Mouse_X >= Position2D_X((SCREEN_W_2D/2)-250) AND Mouse_X <= Position2D_X((SCREEN_W_2D/2)-250+600) { 
-					if nActiveItem! = X { 
+					if nActiveItem != X { 
 						oGameSound.StopMenuChangeSound()
 						oGameSound.PlayMenuChangeSound()
 						nActiveItem = X
-					} 
+					}
 				} 
 			} 
 		} 

@@ -1074,7 +1074,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nActiveItem!&nbsp;=&nbsp;X</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nActiveItem&nbsp;!=&nbsp;X</font></span>"
 			],
 			[
 				"active",
@@ -1082,7 +1082,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if nActiveItem! = X { "
+				"if nActiveItem != X { "
 			],
 			[
 				"interactionid",
@@ -1102,7 +1102,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If nActiveItem! = X"
+				"If nActiveItem != X"
 			]
 		]
 	],
@@ -1272,7 +1272,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"} "
+				"}"
 			],
 			[
 				"interactionid",
@@ -5812,7 +5812,7 @@ aInteractionsTable = [
 		"ifstatement",
 		"27/08/2021",
 		"08:40:19",
-		"condition;;_RV_;;nActiveItem! = X;;_RV_;;"
+		"condition;;_RV_;;nActiveItem != X;;_RV_;;"
 	],
 	[
 		22,
