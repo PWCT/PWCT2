@@ -180,7 +180,7 @@ class TimeMachineController
 			#We will repeat the process until we find a visible step after this step
 			#Get the Next step after this step
 			nPos = oModel.oStepsTreeModel.SiblingDown(nStepID)
-			if nPos! = 0 { 
+			if nPos != 0 { 
 				nStepID2 = oModel.oStepsTreeModel.GetData()[nPos][C_TREEMODEL_NODEID]
 				nStepIID2 = oModel.oStepsTreeModel.GetData()[nPos][C_TREEMODEL_CONTENT][:interactionid]
 				if nStepIID2 < nStepIID { 

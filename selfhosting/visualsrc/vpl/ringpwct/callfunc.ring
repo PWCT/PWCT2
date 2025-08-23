@@ -29,7 +29,7 @@ class CallFuncComponentController from ComponentControllerParent
 			else
 				cOutput = ""
 		} 
-		if cOutput! = NULL { 
+		if cOutput != NULL { 
 			cOutputEqual = cOutput+" = "
 			else
 				cOutputEqual = ""

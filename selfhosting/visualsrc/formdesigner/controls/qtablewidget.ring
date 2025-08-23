@@ -367,15 +367,15 @@ class FormDesigner_QTableWidget from QLineEdit
 	} 
 	func GenerateCustomCode oDesigner { 
 		cOutput = ""
-		if RowCountValue()! = NULL { 
+		if RowCountValue() != NULL { 
 			cOutput += "setRowCount(#{f1})"+nl
 			cOutput = substr(cOutput,"#{f1}",RowCountValue())
 		} 
-		if ColumnCountValue()! = NULL { 
+		if ColumnCountValue() != NULL { 
 			cOutput += "setColumnCount(#{f1})"+nl
 			cOutput = substr(cOutput,"#{f1}",ColumnCountValue())
 		} 
-		if HorizontalHeadersValue()! = NULL { 
+		if HorizontalHeadersValue() != NULL { 
 			aTempList = Split(HorizontalHeadersValue(),",")
 			nPos = oDesigner.oModel.FormObject().IndexStart()
 			for item in aTempList step 1 { 
@@ -385,7 +385,7 @@ class FormDesigner_QTableWidget from QLineEdit
 				nPos++
 			} 
 		} 
-		if ColumnsWidthValue()! = NULL { 
+		if ColumnsWidthValue() != NULL { 
 			aTempList = Split(ColumnsWidthValue(),",")
 			nPos = oDesigner.oModel.FormObject().IndexStart()
 			for item in aTempList step 1 { 
@@ -395,11 +395,11 @@ class FormDesigner_QTableWidget from QLineEdit
 				nPos++
 			} 
 		} 
-		if HorizontalHeaderStyleValue()! = NULL { 
+		if HorizontalHeaderStyleValue() != NULL { 
 			cOutput += 'horizontalHeader().setStyleSheet("#{f1}")'+nl
 			cOutput = substr(cOutput,"#{f1}",HorizontalHeaderStyle())
 		} 
-		if VerticalHeaderStyleValue()! = NULL { 
+		if VerticalHeaderStyleValue() != NULL { 
 			cOutput += 'verticalHeader().setStyleSheet("#{f1}")'+nl
 			cOutput = substr(cOutput,"#{f1}",VerticalHeaderStyleValue())
 		} 

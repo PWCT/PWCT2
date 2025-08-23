@@ -254,7 +254,7 @@ class StepsTreeView from TreeControl
 					NewLabelStyle(oLabel,[:id = GetIDByObj(item)])
 					else
 						cText = item.text(0)
-						if left(cText,C_COMMENTMARKSIZE)! = C_COMMENTMARK { 
+						if left(cText,C_COMMENTMARKSIZE) != C_COMMENTMARK { 
 							item.settext(0,C_COMMENTMARK+item.text(0))
 						} 
 				} 
@@ -345,10 +345,10 @@ class StepsTreeView from TreeControl
 		if BlockStyleNotSupported() { 
 			return 
 		} 
-		if aPara[:id]! = NULL { 
+		if aPara[:id] != NULL { 
 			aPara[:StepType] = GoalDesigner().oModel.GetStepType(aPara[:id])
 		} 
-		if aPara[:StepType]! = NULL { 
+		if aPara[:StepType] != NULL { 
 			if aPara[:StepType] = C_STEPTYPE_COMMENT { 
 				oLabel.setText(ItemLabelTextWithoutImages(oLabel))
 				return 

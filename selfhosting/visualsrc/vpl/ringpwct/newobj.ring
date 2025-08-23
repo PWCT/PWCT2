@@ -9,7 +9,7 @@ class newobjComponentController from ComponentControllerParent
 	aAllowEmptyValue = [:value,:value3]
 	func GenerateAction  { 
 		cInit = ""
-		if Variable(:init) AND Variable(:value3) = NULL AND right(Variable(:value2),2)! = "()" { 
+		if Variable(:init) AND Variable(:value3) = NULL AND right(Variable(:value2),2) != "()" { 
 			cInit = "()"
 		} 
 		if Variable(:value) = NULL { 

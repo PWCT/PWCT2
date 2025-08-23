@@ -275,7 +275,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(item[1]!&nbsp;=&nbsp;&quot;ringpwct.ring&quot;)&nbsp;AND&nbsp;substr(item[1],&quot;.ring&quot;)</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(item[1]&nbsp;!=&nbsp;&quot;ringpwct.ring&quot;)&nbsp;AND&nbsp;substr(item[1],&quot;.ring&quot;)</font></span>"
 			],
 			[
 				"active",
@@ -283,7 +283,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if (item[1]! = "+char(34)+"ringpwct.ring"+char(34)+") AND substr(item[1],"+char(34)+".ring"+char(34)+") { "
+				"if (item[1] != "+char(34)+"ringpwct.ring"+char(34)+") AND substr(item[1],"+char(34)+".ring"+char(34)+") { "
 			],
 			[
 				"interactionid",
@@ -303,7 +303,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If (item[1]! = "+char(34)+"ringpwct.ring"+char(34)+") AND substr(item[1],"+char(34)+".ring"+char(34)+")"
+				"If (item[1] != "+char(34)+"ringpwct.ring"+char(34)+") AND substr(item[1],"+char(34)+".ring"+char(34)+")"
 			]
 		]
 	],
@@ -1049,72 +1049,72 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"01/06/2025",
-		"18:24:24",
+		"23/08/2025",
+		"08:07:50",
 		""
 	],
 	[
 		2,
 		1,
 		"load",
-		"01/06/2025",
-		"18:24:24",
+		"23/08/2025",
+		"08:07:50",
 		"file;;_RV_;;stdlib.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"print",
-		"01/06/2025",
-		"18:24:24",
+		"23/08/2025",
+		"08:07:50",
 		"text;;_RV_;;Started;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:24:24",
+		"23/08/2025",
+		"08:07:50",
 		"leftside;;_RV_;;aFiles;;_RV_;;rightside;;_RV_;;dir("+char(34)+"ringpwct"+char(34)+");;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:24:24",
+		"23/08/2025",
+		"08:07:50",
 		"leftside;;_RV_;;aFiles2;;_RV_;;rightside;;_RV_;;[];;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"forinloop",
-		"01/06/2025",
-		"18:24:24",
+		"23/08/2025",
+		"08:07:50",
 		"variable;;_RV_;;item;;_RV_;;in;;_RV_;;aFiles;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:24:24",
-		"condition;;_RV_;;(item[1]! = "+char(34)+"ringpwct.ring"+char(34)+") AND substr(item[1],"+char(34)+".ring"+char(34)+");;_RV_;;"
+		"23/08/2025",
+		"08:07:50",
+		"condition;;_RV_;;(item[1] != "+char(34)+"ringpwct.ring"+char(34)+") AND substr(item[1],"+char(34)+".ring"+char(34)+");;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:24:24",
+		"23/08/2025",
+		"08:07:50",
 		"value;;_RV_;;aFiles2+item[1];;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:24:24",
+		"23/08/2025",
+		"08:07:50",
 		"leftside;;_RV_;;cContent;;_RV_;;rightside;;_RV_;;"+char(34)+"/*
 **	Project 	: Programming Without Coding Technology (PWCT) Version 2.0
 **	File Purpose 	: Load RingPWCT Components 
@@ -1132,24 +1132,24 @@ C_VPL_NAME = 'RingPWCT'
 		10,
 		1,
 		"forinloop",
-		"01/06/2025",
-		"18:24:24",
+		"23/08/2025",
+		"08:07:50",
 		"variable;;_RV_;;cFile;;_RV_;;in;;_RV_;;aFiles2;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:24:24",
+		"23/08/2025",
+		"08:07:50",
 		"value;;_RV_;;cContent += (Char(9)+'load "+char(34)+"'+cFile+'"+char(34)+"'+nl);;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:24:24",
+		"23/08/2025",
+		"08:07:50",
 		"value;;_RV_;;cContent += "+char(34)+"
 	
 # Add components to the Components list 
@@ -1162,48 +1162,48 @@ C_VPL_NAME = 'RingPWCT'
 		13,
 		1,
 		"forinloop",
-		"01/06/2025",
-		"18:24:24",
+		"23/08/2025",
+		"08:07:50",
 		"variable;;_RV_;;cFile;;_RV_;;in;;_RV_;;aFiles2;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:24:24",
+		"23/08/2025",
+		"08:07:50",
 		"value;;_RV_;;cContent += (Char(9)+'aComponentsFilesList + (cComponentsPath + "+char(34)+"'+cFile+'"+char(34)+")'+nl);;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"print",
-		"01/06/2025",
-		"18:24:24",
+		"23/08/2025",
+		"08:07:50",
 		"text;;_RV_;;Writing ringpwct.ring;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:24:24",
+		"23/08/2025",
+		"08:07:50",
 		"leftside;;_RV_;;cContent;;_RV_;;rightside;;_RV_;;substr(cContent,nl,windowsnl());;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:24:24",
+		"23/08/2025",
+		"08:07:50",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;write;;_RV_;;parameters;;_RV_;;"+char(34)+"ringpwct\ringpwct.ring"+char(34)+",cContent;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"print",
-		"01/06/2025",
-		"18:24:24",
+		"23/08/2025",
+		"08:07:50",
 		"text;;_RV_;;Done;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	]
 ]

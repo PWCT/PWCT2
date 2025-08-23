@@ -744,7 +744,7 @@ class EnvironmentController from WindowsControllerParent
 		for aList in T_OUTPUT_ERRORMSG step 1 { 
 			cOut = subStr(cOut,aList[1],aList[2])
 		} 
-		if cOut! = cText { 
+		if cOut != cText { 
 			cFile = parent().oVisualSourceFile.cFileName
 			cFile = substr(cFile,"."+T_VSF_EXTENSION,".ring")
 			cStr = new QString2()
@@ -933,7 +933,7 @@ class EnvironmentController from WindowsControllerParent
 			oView.oFilesTree.blocksignals(False)
 		} 
 		oView.oDockFormDesigner.show()
-		if cFileName! = cFormFile { 
+		if cFileName != cFormFile { 
 			cFormFile = cFileName
 			FormDesigner().openFile(cFileName)
 		} 
@@ -1000,7 +1000,7 @@ class EnvironmentController from WindowsControllerParent
 		SaveBeforeRunning()
 		cAppToRun = exefolder()+"/ring2exe"
 		cPara = cActiveFileName
-		if T_LANGUAGE! = :English { 
+		if T_LANGUAGE != :English { 
 			cPara = substr(cPara,justFileName(cActiveFileName),"PWCT2_Ring_App.ring")
 			write(cPara,read(cActiveFileName))
 		} 
@@ -1054,7 +1054,7 @@ class EnvironmentController from WindowsControllerParent
 	} 
 	func UpdateCurrentDirectory  { 
 		cActiveFileName = parent().GetActiveSourceFile()
-		if (cActiveFileName! = Null) AND (cActiveFileName! = "noname.ring") { 
+		if (cActiveFileName != Null) AND (cActiveFileName != "noname.ring") { 
 			this.cCurrentDir = justfilepath(cActiveFileName)
 			else
 				this.cCurrentDir = PWCT_FOLDER+T_APPLICATIONSFOLDER

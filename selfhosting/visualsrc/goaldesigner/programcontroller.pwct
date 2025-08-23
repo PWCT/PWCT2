@@ -4451,7 +4451,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">left(read(cFileName),2)!&nbsp;=&nbsp;&quot;#!&quot;</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">left(read(cFileName),2)&nbsp;!=&nbsp;&quot;#!&quot;</font></span>"
 			],
 			[
 				"active",
@@ -4459,7 +4459,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if left(read(cFileName),2)! = "+char(34)+"#!"+char(34)+" { "
+				"if left(read(cFileName),2) != "+char(34)+"#!"+char(34)+" { "
 			],
 			[
 				"interactionid",
@@ -4479,7 +4479,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If left(read(cFileName),2)! = "+char(34)+"#!"+char(34)+""
+				"If left(read(cFileName),2) != "+char(34)+"#!"+char(34)+""
 			]
 		]
 	],
@@ -5288,7 +5288,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cWebApplicationFolder!&nbsp;=&nbsp;JustFilePath(cFile)</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cWebApplicationFolder&nbsp;!=&nbsp;JustFilePath(cFile)</font></span>"
 			],
 			[
 				"active",
@@ -5296,7 +5296,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if cWebApplicationFolder! = JustFilePath(cFile) { "
+				"if cWebApplicationFolder != JustFilePath(cFile) { "
 			],
 			[
 				"interactionid",
@@ -5316,7 +5316,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If cWebApplicationFolder! = JustFilePath(cFile)"
+				"If cWebApplicationFolder != JustFilePath(cFile)"
 			]
 		]
 	],
@@ -10443,7 +10443,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cContent!&nbsp;=&nbsp;cOutputFileText</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cContent&nbsp;!=&nbsp;cOutputFileText</font></span>"
 			],
 			[
 				"active",
@@ -10451,7 +10451,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if cContent! = cOutputFileText { "
+				"if cContent != cOutputFileText { "
 			],
 			[
 				"interactionid",
@@ -10471,7 +10471,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If cContent! = cOutputFileText"
+				"If cContent != cOutputFileText"
 			]
 		]
 	],
@@ -14228,2128 +14228,2128 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;**	Project : Programming Without Coding Technology (PWCT) Version 2.0;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;**	File Purpose :  Program Controller Class;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;**	Date : 2017.02.06;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"class",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;ProgramController;;_RV_;;value2;;_RV_;;;;_RV_;;value3;;_RV_;;2;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;cFileName;;_RV_;;rightside;;_RV_;;C_FILENONAME;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;"+char(34)+"noname.ring"+char(34)+";;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;cSourceCode;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;cCurrentDir;;_RV_;;rightside;;_RV_;;CurrentDir()+"+char(34)+"/"+char(34)+";;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;The Goal Designer Folder;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"condition;;_RV_;;isWindows();;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;cDebugBatch;;_RV_;;rightside;;_RV_;;CurrentDir()+"+char(34)+"\batch\run.bat"+char(34)+";;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;cRunBatch;;_RV_;;rightside;;_RV_;;CurrentDir()+"+char(34)+"\batch\run2.bat"+char(34)+";;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"else",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		""
 	],
 	[
 		18,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;cDebugBatch;;_RV_;;rightside;;_RV_;;CurrentDir()+"+char(34)+"/batch/run.sh"+char(34)+";;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;cRunBatch;;_RV_;;rightside;;_RV_;;CurrentDir()+"+char(34)+"/batch/run2.sh"+char(34)+";;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;lSetFocusToInput;;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;oState;;_RV_;;rightside;;_RV_;;NULL;;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;cWebApplicationFolder;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;lMainFile;;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;cOutputFileText;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;lTestQML;;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;		Purpose : Debug;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;		Parameters : Goal Designer Object;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;		Output :  None;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		30,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;	*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"func",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"name;;_RV_;;Debug;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		32,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;Prepare;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		33,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;Save the source code to the file;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		34,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"condition;;_RV_;;PWCTIsMobile(:RunApplication);;_RV_;;"
 	],
 	[
 		35,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;RunOnMobile;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		36,
 		1,
 		"else",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		""
 	],
 	[
 		37,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;RunBatch;;_RV_;;parameters;;_RV_;;cDebugBatch;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		38,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		39,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;		Purpose : Run;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		40,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;		Parameters : Goal Designer Object;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		41,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;		Output :  None;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		42,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;	*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		43,
 		1,
 		"func",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"name;;_RV_;;Run;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		44,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;Prepare;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		45,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;Save the source code to the file;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		46,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"condition;;_RV_;;PWCTIsMobile(:RunApplication);;_RV_;;"
 	],
 	[
 		47,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;RunOnMobile;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		48,
 		1,
 		"else",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		""
 	],
 	[
 		49,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;RunBatch;;_RV_;;parameters;;_RV_;;cRunBatch;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		50,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		51,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;		Purpose : Run GUI Application;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		52,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;		Parameters : goal designer object;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		53,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;		Output :  None;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		54,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;	*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		55,
 		1,
 		"func",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"name;;_RV_;;RunGUI;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		56,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;Prepare;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		57,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;Save the source code to the file;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		58,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"condition;;_RV_;;PWCTIsMobile(:RunApplication);;_RV_;;"
 	],
 	[
 		59,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;RunOnMobile;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		60,
 		1,
 		"else",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		""
 	],
 	[
 		61,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;RunGUIDesktop;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		62,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		63,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;		Purpose : Run GUI Application - Desktop;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		64,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;		Parameters : goal designer object;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		65,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;		Output :  None;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		66,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;	*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		67,
 		1,
 		"func",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"name;;_RV_;;RunGUIDesktop;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		68,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;oGD.parent().oView.oProcessText.setFocus(2);;_RV_;;"
 	],
 	[
 		69,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;cFile;;_RV_;;rightside;;_RV_;;cFileName;;_RV_;;"
 	],
 	[
 		70,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"condition;;_RV_;;oGD.lFullScreen = False;;_RV_;;"
 	],
 	[
 		71,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;oGD.parent().oView.oDockOutputWindow.raise();;_RV_;;"
 	],
 	[
 		72,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;oGD.parent().oView.oProcessEditbox.setplaintext("+char(34)+""+char(34)+");;_RV_;;"
 	],
 	[
 		73,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"condition;;_RV_;;lSetFocusToInput;;_RV_;;"
 	],
 	[
 		74,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;oGD.parent().oView.oProcessText.setFocus(0);;_RV_;;"
 	],
 	[
 		75,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;cDir;;_RV_;;rightside;;_RV_;;currentdir();;_RV_;;"
 	],
 	[
 		76,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;changeFolder;;_RV_;;parameters;;_RV_;;JustFilePath(cFile);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		77,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"condition;;_RV_;;isBatchFile(cFile);;_RV_;;"
 	],
 	[
 		78,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;cCode;;_RV_;;rightside;;_RV_;;RunBatchFile(cFile);;_RV_;;"
 	],
 	[
 		79,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;oGD.parent().oView.oProcess;;_RV_;;rightside;;_RV_;;RunProcess(cCode,"+char(34)+""+char(34)+",oGD.parent().Method(:GetDataAction));;_RV_;;"
 	],
 	[
 		80,
 		1,
 		"else",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		""
 	],
 	[
 		81,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;oGD.parent().oView.oProcess;;_RV_;;rightside;;_RV_;;RunProcess(cRingEXE,cFile,oGD.parent().Method(:GetDataAction));;_RV_;;"
 	],
 	[
 		82,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;changeFolder;;_RV_;;parameters;;_RV_;;cDir;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		83,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		84,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;		Run web application;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		85,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;	*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		86,
 		1,
 		"func",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"name;;_RV_;;checkWebApplication;;_RV_;;parameters;;_RV_;;cFileName;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		87,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:22:02",
-		"condition;;_RV_;;left(read(cFileName),2)! = "+char(34)+"#!"+char(34)+";;_RV_;;"
+		"23/08/2025",
+		"08:06:16",
+		"condition;;_RV_;;left(read(cFileName),2) != "+char(34)+"#!"+char(34)+";;_RV_;;"
 	],
 	[
 		88,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;msginfo;;_RV_;;parameters;;_RV_;;"+char(34)+"Sorry"+char(34)+","+char(34)+"This is not CGI web application!"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		89,
 		1,
 		"return",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;false;;_RV_;;"
 	],
 	[
 		90,
 		1,
 		"return",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;true;;_RV_;;"
 	],
 	[
 		91,
 		1,
 		"func",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"name;;_RV_;;RunInBrowser;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		92,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;Prepare;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		93,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;Save the source code to the file;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		94,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;RunWebApplication;;_RV_;;parameters;;_RV_;;oGD,cFileName;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		95,
 		1,
 		"func",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"name;;_RV_;;RunWebApplication;;_RV_;;parameters;;_RV_;;oGD,cFile;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		96,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;cFile;;_RV_;;rightside;;_RV_;;FileNameEncoding(cFile);;_RV_;;"
 	],
 	[
 		97,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"condition;;_RV_;;!checkWebApplication(cFile);;_RV_;;"
 	],
 	[
 		98,
 		1,
 		"return",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		99,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"condition;;_RV_;;isWindows();;_RV_;;"
 	],
 	[
 		100,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:22:02",
-		"condition;;_RV_;;cWebApplicationFolder! = JustFilePath(cFile);;_RV_;;"
+		"23/08/2025",
+		"08:06:16",
+		"condition;;_RV_;;cWebApplicationFolder != JustFilePath(cFile);;_RV_;;"
 	],
 	[
 		101,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;cWebApplicationFolder;;_RV_;;rightside;;_RV_;;JustFilePath(cFile);;_RV_;;"
 	],
 	[
 		102,
 		1,
 		"newobj",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;;;_RV_;;value2;;_RV_;;ServerPrepare;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		103,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setApplicationPath;;_RV_;;parameters;;_RV_;;this.cWebApplicationFolder;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		104,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;PrepareConfigurationFile;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		105,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;cServerExe;;_RV_;;rightside;;_RV_;;getserverExeFile();;_RV_;;"
 	],
 	[
 		106,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;oGD.parent().oView.oProcess;;_RV_;;rightside;;_RV_;;RunProcess(cCurrentDir+"+char(34)+"batch\killwebserver.bat"+char(34)+","+char(34)+""+char(34)+",oGD.parent().Method(:GetDataAction));;_RV_;;"
 	],
 	[
 		107,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;oGD.parent().oView.oProcess.waitForFinished(3000);;_RV_;;"
 	],
 	[
 		108,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;oWebServerProcess;;_RV_;;rightside;;_RV_;;RunProcess(cServerEXE,"+char(34)+""+char(34)+",oGD.parent().Method(:GetDataAction));;_RV_;;"
 	],
 	[
 		109,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;sleep;;_RV_;;parameters;;_RV_;;3;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		110,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;oGD.parent().oView.oProcessEditbox.setplaintext("+char(34)+""+char(34)+");;_RV_;;"
 	],
 	[
 		111,
 		1,
 		"newobj",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;;;_RV_;;value2;;_RV_;;QDesktopServices;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		112,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;OpenURL;;_RV_;;parameters;;_RV_;; new qURL("+char(34)+"http://localhost:8080/"+char(34)+"+JustFileName(cFile));;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		113,
 		1,
 		"else",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		""
 	],
 	[
 		114,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;cWebURL;;_RV_;;rightside;;_RV_;;cFile;;_RV_;;"
 	],
 	[
 		115,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;nPos;;_RV_;;rightside;;_RV_;;substr(cWebURL,"+char(34)+"htdocs"+char(34)+");;_RV_;;"
 	],
 	[
 		116,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;cWebURL;;_RV_;;rightside;;_RV_;;substr(cWebURL,nPOS+7);;_RV_;;"
 	],
 	[
 		117,
 		1,
 		"newobj",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;;;_RV_;;value2;;_RV_;;QDesktopServices;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		118,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;OpenURL;;_RV_;;parameters;;_RV_;; new qURL("+char(34)+"http://localhost/"+char(34)+"+cWebURL);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		119,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		120,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;		Purpose : Run Process;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		121,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;		Parameters : Program, Arguments and Method for Get Data Event;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		122,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;		Output :  None;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		123,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;	*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		124,
 		1,
 		"func",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"name;;_RV_;;RunProcess;;_RV_;;parameters;;_RV_;;cProgram,cArg,cGetDataFunc;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		125,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;aPara;;_RV_;;rightside;;_RV_;;split(cArg,"+char(34)+","+char(34)+");;_RV_;;"
 	],
 	[
 		126,
 		1,
 		"newobj",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;oStringList;;_RV_;;value2;;_RV_;;qStringlist;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		127,
 		1,
 		"forinloop",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"variable;;_RV_;;cPara;;_RV_;;in;;_RV_;;aPara;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		128,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;append;;_RV_;;parameters;;_RV_;;cPara;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		129,
 		1,
 		"newobj",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;oProcess;;_RV_;;value2;;_RV_;;qprocess;;_RV_;;value3;;_RV_;;NULL;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		130,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setprogram;;_RV_;;parameters;;_RV_;;cProgram;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		131,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setarguments;;_RV_;;parameters;;_RV_;;ostringlist;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		132,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setreadyreadstandardoutputevent;;_RV_;;parameters;;_RV_;;cGetDataFunc;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		133,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;start_3;;_RV_;;parameters;;_RV_;;QIODevice_ReadWrite;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		134,
 		1,
 		"return",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;oProcess;;_RV_;;"
 	],
 	[
 		135,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		136,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;		Purpose : Run on Mobile;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		137,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;		Parameters : Goal Designer Object;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		138,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;		Output : None;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		139,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;	*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		140,
 		1,
 		"func",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"name;;_RV_;;RunOnMobile;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		141,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"condition;;_RV_;;cFileName = C_FILENONAME;;_RV_;;"
 	],
 	[
 		142,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;noname.ring;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		143,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;cFileName;;_RV_;;rightside;;_RV_;;PWCT_FOLDER+"+char(34)+"/"+char(34)+"+C_FILENONAME;;_RV_;;"
 	],
 	[
 		144,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;RUNTIME_FOLDER;;_RV_;;rightside;;_RV_;;PWCT_FOLDER+"+char(34)+"/PWCTApp/runtime"+char(34)+";;_RV_;;"
 	],
 	[
 		145,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;Create guilib.ring and stdlib.ring;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		146,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;changeFolder;;_RV_;;parameters;;_RV_;;JustFilePath(cFileName);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		147,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;write;;_RV_;;parameters;;_RV_;;"+char(34)+"guilib.ring"+char(34)+","+char(34)+""+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		148,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;write;;_RV_;;parameters;;_RV_;;"+char(34)+"stdlib.ring"+char(34)+","+char(34)+""+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		149,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;write;;_RV_;;parameters;;_RV_;;"+char(34)+"stdlibcore.ring"+char(34)+","+char(34)+""+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		150,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;changeFolder;;_RV_;;parameters;;_RV_;;RUNTIME_FOLDER;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		151,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;Delete Temp. Files;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		152,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;remove;;_RV_;;parameters;;_RV_;;"+char(34)+"runprogram.ring"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		153,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;remove;;_RV_;;parameters;;_RV_;;"+char(34)+"programoutput.txt"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		154,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;remove;;_RV_;;parameters;;_RV_;;"+char(34)+"programinput.txt"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		155,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;freopen;;_RV_;;parameters;;_RV_;;"+char(34)+"programoutput.txt"+char(34)+","+char(34)+"w+"+char(34)+",stdout;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		156,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;freopen;;_RV_;;parameters;;_RV_;;"+char(34)+"programinput.txt"+char(34)+","+char(34)+"r"+char(34)+",stdin;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		157,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;We use runprogram.ring instead of using cFileName directly;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		158,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;Just to get more control in the future, Where we can add more code;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		159,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;Before running the program;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		160,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;cCode;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		161,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"condition;;_RV_;;PWCTIsMobile(:MobileAppLibs);;_RV_;;"
 	],
 	[
 		162,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;cCode;;_RV_;;rightside;;_RV_;;'load "+char(34)+"mobileapplibs.ring"+char(34)+"'+nl+'load "+char(34)+"mobileapplibs2.ring"+char(34)+"'+nl+'load "+char(34)+"mobileapplibs3.ring"+char(34)+"'+nl;;_RV_;;"
 	],
 	[
 		163,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;cCode += "+char(34)+"$cMainSourceFile = '"+char(34)+"+cFileName+"+char(34)+"'"+char(34)+"+nl;;_RV_;;"
 	],
 	[
 		164,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;cCode += 'load "+char(34)+"'+cFileName+'"+char(34)+"';;_RV_;;"
 	],
 	[
 		165,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;write;;_RV_;;parameters;;_RV_;;"+char(34)+"runprogram.ring"+char(34)+",cCode;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		166,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"condition;;_RV_;;!isNULL(oState);;_RV_;;"
 	],
 	[
 		167,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;ring_state_delete;;_RV_;;parameters;;_RV_;;oState;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		168,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;cOutputFileText;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		169,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"condition;;_RV_;;lTestQML;;_RV_;;"
 	],
 	[
 		170,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;oGD.parent().oView.win.hide();;_RV_;;"
 	],
 	[
 		171,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;PWCT_App;;_RV_;;name;;_RV_;;processevents;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		172,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;oState;;_RV_;;rightside;;_RV_;;ring_state_new();;_RV_;;"
 	],
 	[
 		173,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;ring_state_mainfile;;_RV_;;parameters;;_RV_;;oState,"+char(34)+"runprogram.ring"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		174,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;changeFolder;;_RV_;;parameters;;_RV_;;RUNTIME_FOLDER;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		175,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;This will start a Timer to check the output;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		176,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;Display the Output;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		177,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oGD;;_RV_;;name;;_RV_;;EnableCheckOutputOnMobile;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		178,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;CheckOutputOnMobile;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		179,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;Delete Temp. Files;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		180,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;remove;;_RV_;;parameters;;_RV_;;"+char(34)+"runprogram.ring"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		181,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;remove;;_RV_;;parameters;;_RV_;;"+char(34)+"programinput.txt"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		182,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;delete guilib.ring and stdlib.ring;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		183,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;changeFolder;;_RV_;;parameters;;_RV_;;JustFilePath(cFileName);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		184,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;remove;;_RV_;;parameters;;_RV_;;"+char(34)+"guilib.ring"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		185,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;remove;;_RV_;;parameters;;_RV_;;"+char(34)+"stdlib.ring"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		186,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;remove;;_RV_;;parameters;;_RV_;;"+char(34)+"stdlibcore.ring"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		187,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;remove;;_RV_;;parameters;;_RV_;;"+char(34)+"noname.ring"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		188,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		189,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;		Purpose : Check output from the application when we run PWCT on Mobile;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		190,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;		Parameters : None;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		191,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;		Output : None;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		192,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;	*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		193,
 		1,
 		"func",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"name;;_RV_;;CheckOutputOnMobile;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		194,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;cDir;;_RV_;;rightside;;_RV_;;CurrentDir();;_RV_;;"
 	],
 	[
 		195,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;RUNTIME_FOLDER;;_RV_;;rightside;;_RV_;;PWCT_FOLDER+"+char(34)+"/PWCTApp/runtime"+char(34)+";;_RV_;;"
 	],
 	[
 		196,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;changeFolder;;_RV_;;parameters;;_RV_;;RUNTIME_FOLDER;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		197,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"condition;;_RV_;;fexists("+char(34)+"programoutput.txt"+char(34)+");;_RV_;;"
 	],
 	[
 		198,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;cContent;;_RV_;;rightside;;_RV_;;read("+char(34)+"programoutput.txt"+char(34)+");;_RV_;;"
 	],
 	[
 		199,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:22:02",
-		"condition;;_RV_;;cContent! = cOutputFileText;;_RV_;;"
+		"23/08/2025",
+		"08:06:16",
+		"condition;;_RV_;;cContent != cOutputFileText;;_RV_;;"
 	],
 	[
 		200,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;cOutputFileText;;_RV_;;rightside;;_RV_;;cContent;;_RV_;;"
 	],
 	[
 		201,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;oGD.parent().oView.oProcessEditbox.setplaintext(cContent);;_RV_;;"
 	],
 	[
 		202,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;oGD.parent().oView.oDockOutputWindow.raise();;_RV_;;"
 	],
 	[
 		203,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;changeFolder;;_RV_;;parameters;;_RV_;;cDir;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		204,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		205,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;		Purpose : Prepare the file;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		206,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;		Parameters : Goal Designer Object;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		207,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;		Output : None;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		208,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;	*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		209,
 		1,
 		"func",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"name;;_RV_;;Prepare;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		210,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;nCodeGenTime;;_RV_;;rightside;;_RV_;;clock();;_RV_;;"
 	],
 	[
 		211,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oSystemLog;;_RV_;;name;;_RV_;;addMessage;;_RV_;;parameters;;_RV_;;"+char(34)+"Start of code generation"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		212,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;Get the Source Code;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		213,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;GetCode;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		214,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;Save the code to the file;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		215,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SaveToFile;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		216,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oSystemLog;;_RV_;;name;;_RV_;;addMessage;;_RV_;;parameters;;_RV_;;"+char(34)+"End of code generation"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		217,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oSystemLog;;_RV_;;name;;_RV_;;addMessage;;_RV_;;parameters;;_RV_;;"+char(34)+"Code generation time (Clocks) : "+char(34)+"+(clock()-nCodeGenTime);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		218,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oSystemLog;;_RV_;;name;;_RV_;;addMessage;;_RV_;;parameters;;_RV_;;"+char(34)+"Code generation time (Seconds): "+char(34)+"+((clock()-nCodeGenTime)/clocksPerSecond());;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		219,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		220,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;			Purpose : Get the Source Code;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		221,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;			Parameters : Goal Designer Object;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		222,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;			Output : the source code;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		223,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;		*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		224,
 		1,
 		"func",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"name;;_RV_;;GetCode;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		225,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		226,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;			Purpose : Save to file;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		227,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;			Parameters : None;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		228,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;			Output : None;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		229,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;		*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		230,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;cSourceCode;;_RV_;;rightside;;_RV_;;oGD.oModel.StepsTreeCode();;_RV_;;"
 	],
 	[
 		231,
 		1,
 		"func",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"name;;_RV_;;SaveToFile;;_RV_;;parameters;;_RV_;;oGD;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		232,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;cFile;;_RV_;;rightside;;_RV_;;oGD.oVisualSourceFile.RingFileName();;_RV_;;"
 	],
 	[
 		233,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;write;;_RV_;;parameters;;_RV_;;FileNameEncoding(cFile),cSourceCode;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		234,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		235,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;			Purpose : Run Batch File;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		236,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;			Parameters : The file Name and parameters;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		237,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;			Output : None;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		238,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;		*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		239,
 		1,
 		"func",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"name;;_RV_;;RunBatch;;_RV_;;parameters;;_RV_;;cFile;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		240,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;cFileToRun;;_RV_;;rightside;;_RV_;;FileNameEncoding(cFileName);;_RV_;;"
 	],
 	[
 		241,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"condition;;_RV_;;isWindows();;_RV_;;"
 	],
 	[
 		242,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;cDir;;_RV_;;rightside;;_RV_;;currentdir();;_RV_;;"
 	],
 	[
 		243,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;changeFolder;;_RV_;;parameters;;_RV_;;exefolder();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		244,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"condition;;_RV_;;!fexists(cFileToRun);;_RV_;;"
 	],
 	[
 		245,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;cFileToRun;;_RV_;;rightside;;_RV_;;cDir+"+char(34)+"\"+char(34)+"+cFileToRun;;_RV_;;"
 	],
 	[
 		246,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;cFileToRun;;_RV_;;rightside;;_RV_;;fileSystemToLocal8Bit(cFileToRun);;_RV_;;"
 	],
 	[
 		247,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;cCode;;_RV_;;rightside;;_RV_;;'start call "+char(34)+"'+cFile+'"+char(34)+" "+char(34)+"'+cFileToRun+'"+char(34)+"'+nl;;_RV_;;"
 	],
 	[
 		248,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;system;;_RV_;;parameters;;_RV_;;cCode;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		249,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;changeFolder;;_RV_;;parameters;;_RV_;;cDir;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		250,
 		1,
 		"elseif",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"condition;;_RV_;;isLinux();;_RV_;;"
 	],
 	[
 		251,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;cCode;;_RV_;;rightside;;_RV_;;'cd $(dirname "+char(34)+"'+cFileToRun+'"+char(34)+") ; x-terminal-emulator -e '+"+char(34)+"'"+char(34)+"+'ring "+char(34)+"'+cFileToRun+'"+char(34)+" ; read -p "+char(34)+""+char(34)+" key;'+"+char(34)+"' &"+char(34)+"+nl;;_RV_;;"
 	],
 	[
 		252,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;system;;_RV_;;parameters;;_RV_;;cCode;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		253,
 		1,
 		"else",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		""
 	],
 	[
 		254,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;cCode;;_RV_;;rightside;;_RV_;;'cd $(dirname "+char(34)+"'+cFileToRun+'"+char(34)+") ; '+' ring "+char(34)+"'+cFileToRun+'"+char(34)+"'+nl;;_RV_;;"
 	],
 	[
 		255,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;system;;_RV_;;parameters;;_RV_;;cCode;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		256,
 		1,
 		"func",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"name;;_RV_;;isBatchFile;;_RV_;;parameters;;_RV_;;cFile;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		257,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"condition;;_RV_;;right(lower(trim(cFile)),4) = "+char(34)+".bat"+char(34)+" OR right(lower(trim(cFile)),3) = "+char(34)+".sh"+char(34)+";;_RV_;;"
 	],
 	[
 		258,
 		1,
 		"return",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;True;;_RV_;;"
 	],
 	[
 		259,
 		1,
 		"return",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;False;;_RV_;;"
 	],
 	[
 		260,
 		1,
 		"func",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"name;;_RV_;;RunBatchFile;;_RV_;;parameters;;_RV_;;cFile;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		261,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"condition;;_RV_;;iswindows();;_RV_;;"
 	],
 	[
 		262,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;changeFolder;;_RV_;;parameters;;_RV_;;JustFilePath(cFile);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		263,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;cCode;;_RV_;;rightside;;_RV_;;cFile;;_RV_;;"
 	],
 	[
 		264,
 		1,
 		"else",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		""
 	],
 	[
 		265,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"leftside;;_RV_;;cCode;;_RV_;;rightside;;_RV_;;'cd $(dirname "+char(34)+"'+cFile+'"+char(34)+") ; '+"+char(34)+"./"+char(34)+"+cFile+nl;;_RV_;;"
 	],
 	[
 		266,
 		1,
 		"return",
-		"01/06/2025",
-		"18:22:02",
+		"23/08/2025",
+		"08:06:16",
 		"value;;_RV_;;cCode;;_RV_;;"
 	]
 ]

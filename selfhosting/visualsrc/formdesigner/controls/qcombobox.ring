@@ -118,14 +118,14 @@ class FormDesigner_QComboBox from QComboBox
 	} 
 	func GenerateCustomCode oDesigner { 
 		cOutput = ""
-		if cItemsValue()! = NULL { 
+		if cItemsValue() != NULL { 
 			aItems = split(cItemsValue(),",")
 			for item in aItems step 1 { 
 				cOutput += 'AddItem("#{f1}",0)'+nl
 				cOutput = substr(cOutput,"#{f1}",oDesigner.PrepareStringForFormFile(Item))
 			} 
 		} 
-		if cCurrentIndexValue()! = NULL { 
+		if cCurrentIndexValue() != NULL { 
 			cOutput += "setcurrentIndex(#{f1})"+nl
 			cOutput = substr(cOutput,"#{f1}",ccurrentIndexValue())
 		} 

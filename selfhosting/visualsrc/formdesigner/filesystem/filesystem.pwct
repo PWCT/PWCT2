@@ -10329,7 +10329,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFileName!&nbsp;=&nbsp;T_FORMDESIGNER_NONAMEFILE</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cFileName&nbsp;!=&nbsp;T_FORMDESIGNER_NONAMEFILE</font></span>"
 			],
 			[
 				"active",
@@ -10337,7 +10337,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if cFileName! = T_FORMDESIGNER_NONAMEFILE { "
+				"if cFileName != T_FORMDESIGNER_NONAMEFILE { "
 			],
 			[
 				"interactionid",
@@ -10357,7 +10357,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If cFileName! = T_FORMDESIGNER_NONAMEFILE"
+				"If cFileName != T_FORMDESIGNER_NONAMEFILE"
 			]
 		]
 	],
@@ -13301,7 +13301,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">x!&nbsp;=&nbsp;len(aObjectsList)</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">x&nbsp;!=&nbsp;len(aObjectsList)</font></span>"
 			],
 			[
 				"active",
@@ -13309,7 +13309,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if x! = len(aObjectsList) { "
+				"if x != len(aObjectsList) { "
 			],
 			[
 				"interactionid",
@@ -13329,7 +13329,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If x! = len(aObjectsList)"
+				"If x != len(aObjectsList)"
 			]
 		]
 	],
@@ -16121,7 +16121,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">itemdata[:IndexType]!&nbsp;=&nbsp;NULL</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">itemdata[:IndexType]&nbsp;!=&nbsp;NULL</font></span>"
 			],
 			[
 				"active",
@@ -16129,7 +16129,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if itemdata[:IndexType]! = NULL { "
+				"if itemdata[:IndexType] != NULL { "
 			],
 			[
 				"interactionid",
@@ -16149,7 +16149,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If itemdata[:IndexType]! = NULL"
+				"If itemdata[:IndexType] != NULL"
 			]
 		]
 	],
@@ -16387,7 +16387,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">itemdata[:GUILibrary]!&nbsp;=&nbsp;NULL</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">itemdata[:GUILibrary]&nbsp;!=&nbsp;NULL</font></span>"
 			],
 			[
 				"active",
@@ -16395,7 +16395,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if itemdata[:GUILibrary]! = NULL { "
+				"if itemdata[:GUILibrary] != NULL { "
 			],
 			[
 				"interactionid",
@@ -16415,7 +16415,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If itemdata[:GUILibrary]! = NULL"
+				"If itemdata[:GUILibrary] != NULL"
 			]
 		]
 	],
@@ -23839,3504 +23839,3504 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"01/06/2025",
-		"18:20:00",
+		"23/08/2025",
+		"08:04:58",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;**	Project : Form Designer;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;**	File Purpose :  File System;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;**	Date : 2017.04.29;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"package",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;formdesigner;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"class",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;FormDesignerFileSystem;;_RV_;;value2;;_RV_;;ObjectsParent;;_RV_;;value3;;_RV_;;2;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;cFileName;;_RV_;;rightside;;_RV_;;T_FORMDESIGNER_NONAMEFILE;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"newobj",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oGenerator;;_RV_;;value2;;_RV_;;FormDesignerCodeGenerator;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;lUseFileDialogStaticMethods;;_RV_;;rightside;;_RV_;;!isWebAssembly();;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"newobj",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oNewFileDialog;;_RV_;;value2;;_RV_;;QFileDialog;;_RV_;;value3;;_RV_;;NULL;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setFilter;;_RV_;;parameters;;_RV_;;QDir_AllEntries|QDir_Hidden|QDir_System;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setFileSelectedevent;;_RV_;;parameters;;_RV_;;Method("+char(34)+"oFile.NewFileDialogOperation()"+char(34)+");;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setWindowTitle;;_RV_;;parameters;;_RV_;;"+char(34)+"New Form"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setLabelText;;_RV_;;parameters;;_RV_;;QFileDialog_Accept,"+char(34)+"Save"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setNameFilter;;_RV_;;parameters;;_RV_;;"+char(34)+"Form files (*.rform *)"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setDefaultSuffix;;_RV_;;parameters;;_RV_;;T_FORMDESIGNER_FILEEXTENSION;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setFileMode;;_RV_;;parameters;;_RV_;;QFileDialog_AnyFile;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setViewMode;;_RV_;;parameters;;_RV_;;QFileDialog_List;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setOption;;_RV_;;parameters;;_RV_;;QFileDialog_ShowDirsOnly,False;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"newobj",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oOpenFileDialog;;_RV_;;value2;;_RV_;;QFileDialog;;_RV_;;value3;;_RV_;;NULL;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setFilter;;_RV_;;parameters;;_RV_;;QDir_AllEntries|QDir_Hidden|QDir_System;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setFileSelectedevent;;_RV_;;parameters;;_RV_;;Method("+char(34)+"oFile.OpenFileDialogOperation()"+char(34)+");;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setWindowTitle;;_RV_;;parameters;;_RV_;;"+char(34)+"Open Form"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setLabelText;;_RV_;;parameters;;_RV_;;QFileDialog_Accept,"+char(34)+"Open"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setNameFilter;;_RV_;;parameters;;_RV_;;"+char(34)+"Form files (*.rform *)"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setDefaultSuffix;;_RV_;;parameters;;_RV_;;T_FORMDESIGNER_FILEEXTENSION;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		30,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setFileMode;;_RV_;;parameters;;_RV_;;QFileDialog_ExistingFile;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setViewMode;;_RV_;;parameters;;_RV_;;QFileDialog_List;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		32,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setOption;;_RV_;;parameters;;_RV_;;QFileDialog_ShowDirsOnly,False;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		33,
 		1,
 		"newobj",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oSaveFileDialog;;_RV_;;value2;;_RV_;;QFileDialog;;_RV_;;value3;;_RV_;;NULL;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		34,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setFilter;;_RV_;;parameters;;_RV_;;QDir_AllEntries|QDir_Hidden|QDir_System;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		35,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setFileSelectedevent;;_RV_;;parameters;;_RV_;;Method("+char(34)+"oFile.SaveFileDialogOperation()"+char(34)+");;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		36,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setWindowTitle;;_RV_;;parameters;;_RV_;;"+char(34)+"Save Form"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		37,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setLabelText;;_RV_;;parameters;;_RV_;;QFileDialog_Accept,"+char(34)+"Save"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		38,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setNameFilter;;_RV_;;parameters;;_RV_;;"+char(34)+"Form files (*.rform *)"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		39,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setDefaultSuffix;;_RV_;;parameters;;_RV_;;T_FORMDESIGNER_FILEEXTENSION;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		40,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setFileMode;;_RV_;;parameters;;_RV_;;QFileDialog_AnyFile;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		41,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setViewMode;;_RV_;;parameters;;_RV_;;QFileDialog_List;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		42,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setOption;;_RV_;;parameters;;_RV_;;QFileDialog_ShowDirsOnly,False;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		43,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;cInputFileName;;_RV_;;"
 	],
 	[
 		44,
 		1,
 		"func",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"name;;_RV_;;FormDesigner;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		45,
 		1,
 		"return",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;Me() ;;_RV_;;"
 	],
 	[
 		46,
 		1,
 		"func",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"name;;_RV_;;GetFileNameFromDialog;;_RV_;;parameters;;_RV_;;oDialog;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		47,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;cInputFileName;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		48,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"condition;;_RV_;;oDialog.selectedfiles().count() = 0;;_RV_;;"
 	],
 	[
 		49,
 		1,
 		"return",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		50,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;cInputFileName;;_RV_;;rightside;;_RV_;;oDialog.selectedfiles().at(0);;_RV_;;"
 	],
 	[
 		51,
 		1,
 		"func",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"name;;_RV_;;NewFileDialogOperation;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		52,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;GetFileNameFromDialog;;_RV_;;parameters;;_RV_;;oNewFileDialog;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		53,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;NewFileDialogSaveAction;;_RV_;;parameters;;_RV_;;FormDesigner();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		54,
 		1,
 		"func",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"name;;_RV_;;OpenFileDialogOperation;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		55,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;GetFileNameFromDialog;;_RV_;;parameters;;_RV_;;oOpenFileDialog;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		56,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;OpenFileDialogOpenAction;;_RV_;;parameters;;_RV_;;FormDesigner();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		57,
 		1,
 		"func",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"name;;_RV_;;SaveFileDialogOperation;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		58,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;GetFileNameFromDialog;;_RV_;;parameters;;_RV_;;oSaveFileDialog;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		59,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SaveFileDialogSaveAction;;_RV_;;parameters;;_RV_;;FormDesigner();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		60,
 		1,
 		"func",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"name;;_RV_;;SetFileName;;_RV_;;parameters;;_RV_;;cFile;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		61,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;cFileName;;_RV_;;rightside;;_RV_;;cFile;;_RV_;;"
 	],
 	[
 		62,
 		1,
 		"func",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"name;;_RV_;;GetFileName;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		63,
 		1,
 		"return",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;cFileName;;_RV_;;"
 	],
 	[
 		64,
 		1,
 		"func",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"name;;_RV_;;ActiveDir;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		65,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;cDir;;_RV_;;rightside;;_RV_;;CurrentDir();;_RV_;;"
 	],
 	[
 		66,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"condition;;_RV_;;oDesigner.IsParent();;_RV_;;"
 	],
 	[
 		67,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"condition;;_RV_;;isMethod(oDesigner.Parent(),"+char(34)+"getactivefolder"+char(34)+");;_RV_;;"
 	],
 	[
 		68,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;cDir;;_RV_;;rightside;;_RV_;;oDesigner.Parent().GetActiveFolder();;_RV_;;"
 	],
 	[
 		69,
 		1,
 		"return",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;cDir;;_RV_;;"
 	],
 	[
 		70,
 		1,
 		"func",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"name;;_RV_;;NewAction;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		71,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;Set the file Name;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		72,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;cDir;;_RV_;;rightside;;_RV_;;ActiveDir(oDesigner);;_RV_;;"
 	],
 	[
 		73,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"condition;;_RV_;;lUseFileDialogStaticMethods;;_RV_;;"
 	],
 	[
 		74,
 		1,
 		"newobj",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oFileDialog;;_RV_;;value2;;_RV_;;qfiledialog;;_RV_;;value3;;_RV_;;oDesigner.oView.win;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		75,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;cInputFileName;;_RV_;;rightside;;_RV_;;getsavefilename(oDesigner.oView.win,"+char(34)+"New Form"+char(34)+",cDir,"+char(34)+"*."+char(34)+"+T_FORMDESIGNER_FILEEXTENSION);;_RV_;;"
 	],
 	[
 		76,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"condition;;_RV_;;cInputFileName = NULL;;_RV_;;"
 	],
 	[
 		77,
 		1,
 		"return",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		78,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;cInputFileName;;_RV_;;rightside;;_RV_;;AddExtensionToName(cInputFileName);;_RV_;;"
 	],
 	[
 		79,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;cFileName;;_RV_;;rightside;;_RV_;;cInputFileName;;_RV_;;"
 	],
 	[
 		80,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;startNewForm;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		81,
 		1,
 		"else",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		""
 	],
 	[
 		82,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"condition;;_RV_;;oDesigner.oView.lUseWebAssemblyMEMFS;;_RV_;;"
 	],
 	[
 		83,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oNewFileDialog;;_RV_;;name;;_RV_;;setDirectory;;_RV_;;parameters;;_RV_;;cDir;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		84,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oNewFileDialog;;_RV_;;name;;_RV_;;show;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		85,
 		1,
 		"else",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		""
 	],
 	[
 		86,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;cFileName;;_RV_;;rightside;;_RV_;;T_FORMDESIGNER_NONAMEFILE;;_RV_;;"
 	],
 	[
 		87,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;startNewForm;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		88,
 		1,
 		"func",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"name;;_RV_;;NewFileDialogSaveAction;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		89,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"condition;;_RV_;;cInputFileName = NULL;;_RV_;;"
 	],
 	[
 		90,
 		1,
 		"return",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		91,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;cInputFileName;;_RV_;;rightside;;_RV_;;AddExtensionToName(cInputFileName);;_RV_;;"
 	],
 	[
 		92,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;cFileName;;_RV_;;rightside;;_RV_;;cInputFileName;;_RV_;;"
 	],
 	[
 		93,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;startNewForm;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		94,
 		1,
 		"func",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"name;;_RV_;;startNewForm;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		95,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;Delete Objects;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		96,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DeleteAllObjects;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		97,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;Set Default Form Properties;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		98,
 		1,
 		"accessobject",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oView.oSub;;_RV_;;"
 	],
 	[
 		99,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;blocksignals;;_RV_;;parameters;;_RV_;;True;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		100,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;move;;_RV_;;parameters;;_RV_;;100,100;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		101,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;resize;;_RV_;;parameters;;_RV_;;400,400;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		102,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setWindowTitle;;_RV_;;parameters;;_RV_;;"+char(34)+"Form1"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		103,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;blocksignals;;_RV_;;parameters;;_RV_;;False;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		104,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.FormObject().setWindowTitle("+char(34)+"Form1"+char(34)+");;_RV_;;"
 	],
 	[
 		105,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.FormObject().setBackColor("+char(34)+""+char(34)+");;_RV_;;"
 	],
 	[
 		106,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.FormObject().setWindowFlagsValue("+char(34)+""+char(34)+");;_RV_;;"
 	],
 	[
 		107,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.FormObject().setMenubarValue("+char(34)+""+char(34)+");;_RV_;;"
 	],
 	[
 		108,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.FormObject().setMainLayoutValue("+char(34)+""+char(34)+");;_RV_;;"
 	],
 	[
 		109,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;Save Form;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		110,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SaveFormToFile;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		111,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;Properties;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		112,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;Open controller class in Ring Notepad;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		113,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;ObjectProperties;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		114,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;OpenControllerClassInParent;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		115,
 		1,
 		"func",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"name;;_RV_;;OpenControllerClassInParent;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		116,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"condition;;_RV_;;oDesigner.IsParent();;_RV_;;"
 	],
 	[
 		117,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"condition;;_RV_;;isMethod(oDesigner.Parent(),"+char(34)+"openfile"+char(34)+");;_RV_;;"
 	],
 	[
 		118,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;cDir;;_RV_;;rightside;;_RV_;;oDesigner.Parent().openfile(substr(cFileName,"+char(34)+"."+char(34)+"+T_FORMDESIGNER_FILEEXTENSION,T_FILENAME_CONTROLLER+"+char(34)+".ring"+char(34)+"));;_RV_;;"
 	],
 	[
 		119,
 		1,
 		"func",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"name;;_RV_;;AddExtensionToName;;_RV_;;parameters;;_RV_;;cInputFileName;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		120,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"condition;;_RV_;; NOT right(lower(cInputFileName),len(T_FORMDESIGNER_FILEEXTENSION)) = T_FORMDESIGNER_FILEEXTENSION;;_RV_;;"
 	],
 	[
 		121,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;cInputFileName += "+char(34)+"."+char(34)+"+T_FORMDESIGNER_FILEEXTENSION;;_RV_;;"
 	],
 	[
 		122,
 		1,
 		"return",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;cInputFileName;;_RV_;;"
 	],
 	[
 		123,
 		1,
 		"func",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"name;;_RV_;;CloseAction;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		124,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;Delete objects;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		125,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DeleteAllObjects;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		126,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;No File Name;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		127,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;cFileName;;_RV_;;rightside;;_RV_;;T_FORMDESIGNER_NONAMEFILE;;_RV_;;"
 	],
 	[
 		128,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;PrepareTheForm;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		129,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;Tell the Parent (Ring Notepad for example);;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		130,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"condition;;_RV_;;oDesigner.isParent();;_RV_;;"
 	],
 	[
 		131,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"condition;;_RV_;;isMethod(oDesigner.Parent(),"+char(34)+"clearactiveformfile"+char(34)+");;_RV_;;"
 	],
 	[
 		132,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.Parent().ClearActiveFormFile();;_RV_;;"
 	],
 	[
 		133,
 		1,
 		"func",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"name;;_RV_;;PrepareTheForm;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		134,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;Default Properties;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		135,
 		1,
 		"accessobject",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oView.oSub;;_RV_;;"
 	],
 	[
 		136,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;blocksignals;;_RV_;;parameters;;_RV_;;True;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		137,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;move;;_RV_;;parameters;;_RV_;;100,100;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		138,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;resize;;_RV_;;parameters;;_RV_;;400,400;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		139,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setWindowTitle;;_RV_;;parameters;;_RV_;;"+char(34)+"Form 1"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		140,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;show;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		141,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;blocksignals;;_RV_;;parameters;;_RV_;;False;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		142,
 		1,
 		"accessobject",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.FormObject();;_RV_;;"
 	],
 	[
 		143,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setBackColor;;_RV_;;parameters;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		144,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setWindowTitle;;_RV_;;parameters;;_RV_;;"+char(34)+"Form 1"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		145,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;Properties;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		146,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;ObjectProperties;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		147,
 		1,
 		"func",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"name;;_RV_;;OpenAction;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		148,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;Get the file Name;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		149,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;cDir;;_RV_;;rightside;;_RV_;;ActiveDir(oDesigner);;_RV_;;"
 	],
 	[
 		150,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"condition;;_RV_;;lUseFileDialogStaticMethods;;_RV_;;"
 	],
 	[
 		151,
 		1,
 		"newobj",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oFileDialog;;_RV_;;value2;;_RV_;;qfiledialog;;_RV_;;value3;;_RV_;;oDesigner.oView.win;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		152,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;cInputFileName;;_RV_;;rightside;;_RV_;;getopenfilename(oDesigner.oView.win,"+char(34)+"Open Form"+char(34)+",cDir,"+char(34)+"*."+char(34)+"+T_FORMDESIGNER_FILEEXTENSION);;_RV_;;"
 	],
 	[
 		153,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"condition;;_RV_;;cInputFileName = NULL;;_RV_;;"
 	],
 	[
 		154,
 		1,
 		"return",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		155,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;cFileName;;_RV_;;rightside;;_RV_;;cInputFileName;;_RV_;;"
 	],
 	[
 		156,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;LoadFormFromFile;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		157,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;Open controller class in Ring Notepad;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		158,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;OpenControllerClassInParent;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		159,
 		1,
 		"else",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		""
 	],
 	[
 		160,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oOpenFileDialog;;_RV_;;name;;_RV_;;setDirectory;;_RV_;;parameters;;_RV_;;cDir;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		161,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oOpenFileDialog;;_RV_;;name;;_RV_;;show;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		162,
 		1,
 		"func",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"name;;_RV_;;OpenFileDialogOpenAction;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		163,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"condition;;_RV_;;cInputFileName = NULL;;_RV_;;"
 	],
 	[
 		164,
 		1,
 		"return",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		165,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;cFileName;;_RV_;;rightside;;_RV_;;cInputFileName;;_RV_;;"
 	],
 	[
 		166,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;LoadFormFromFile;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		167,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;Open controller class in Ring Notepad;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		168,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;OpenControllerClassInParent;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		169,
 		1,
 		"func",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"name;;_RV_;;SaveAction;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		170,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;Check file not saved before;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		171,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"condition;;_RV_;;cFileName = T_FORMDESIGNER_NONAMEFILE;;_RV_;;"
 	],
 	[
 		172,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SaveFile;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		173,
 		1,
 		"return",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		174,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SaveFormToFile;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		175,
 		1,
 		"func",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"name;;_RV_;;SaveIfOnlyFileIsOpened;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		176,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;Used by Ring Notepad to Save before Run;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		177,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:20:01",
-		"condition;;_RV_;;cFileName! = T_FORMDESIGNER_NONAMEFILE;;_RV_;;"
+		"23/08/2025",
+		"08:04:58",
+		"condition;;_RV_;;cFileName != T_FORMDESIGNER_NONAMEFILE;;_RV_;;"
 	],
 	[
 		178,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SaveFormToFile;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		179,
 		1,
 		"func",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"name;;_RV_;;SaveAsAction;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		180,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SaveFile;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		181,
 		1,
 		"func",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"name;;_RV_;;SaveFile;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		182,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;Set the file Name;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		183,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;cDir;;_RV_;;rightside;;_RV_;;ActiveDir(oDesigner);;_RV_;;"
 	],
 	[
 		184,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"condition;;_RV_;;lUseFileDialogStaticMethods;;_RV_;;"
 	],
 	[
 		185,
 		1,
 		"newobj",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oFileDialog;;_RV_;;value2;;_RV_;;qfiledialog;;_RV_;;value3;;_RV_;;oDesigner.oView.win;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		186,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;cInputFileName;;_RV_;;rightside;;_RV_;;getsavefilename(oDesigner.oView.win,"+char(34)+"Save Form"+char(34)+",cDir,"+char(34)+"*."+char(34)+"+T_FORMDESIGNER_FILEEXTENSION);;_RV_;;"
 	],
 	[
 		187,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"condition;;_RV_;;cInputFileName = NULL;;_RV_;;"
 	],
 	[
 		188,
 		1,
 		"return",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		189,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;cInputFileName;;_RV_;;rightside;;_RV_;;AddExtensionToName(cInputFileName);;_RV_;;"
 	],
 	[
 		190,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;cFileName;;_RV_;;rightside;;_RV_;;cInputFileName;;_RV_;;"
 	],
 	[
 		191,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SaveFormToFile;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		192,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;Open controller class in Ring Notepad;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		193,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;OpenControllerClassInParent;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		194,
 		1,
 		"else",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		""
 	],
 	[
 		195,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oSaveFileDialog;;_RV_;;name;;_RV_;;setDirectory;;_RV_;;parameters;;_RV_;;cDir;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		196,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oSaveFileDialog;;_RV_;;name;;_RV_;;show;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		197,
 		1,
 		"func",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"name;;_RV_;;SaveFileDialogSaveAction;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		198,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"condition;;_RV_;;cInputFileName = NULL;;_RV_;;"
 	],
 	[
 		199,
 		1,
 		"return",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		200,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;cInputFileName;;_RV_;;rightside;;_RV_;;AddExtensionToName(cInputFileName);;_RV_;;"
 	],
 	[
 		201,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;cFileName;;_RV_;;rightside;;_RV_;;cInputFileName;;_RV_;;"
 	],
 	[
 		202,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SaveFormToFile;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		203,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;Open controller class in Ring Notepad;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		204,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;OpenControllerClassInParent;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		205,
 		1,
 		"func",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"name;;_RV_;;FormFileContent;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		206,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;cHeader;;_RV_;;rightside;;_RV_;;"+char(34)+"# Start Form Designer File"+char(34)+"+nl;;_RV_;;"
 	],
 	[
 		207,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;cEnd;;_RV_;;rightside;;_RV_;;"+char(34)+"# End Form Designer File"+char(34)+";;_RV_;;"
 	],
 	[
 		208,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;Save the Objects Data;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		209,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;cContent;;_RV_;;rightside;;_RV_;;Objects2String(oDesigner,oDesigner.oModel.aObjectsList);;_RV_;;"
 	],
 	[
 		210,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;Write the Form File;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		211,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;cFileContent;;_RV_;;rightside;;_RV_;;cHeader+cContent+cEnd;;_RV_;;"
 	],
 	[
 		212,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;cFileContent;;_RV_;;rightside;;_RV_;;substr(cFileContent,nl,windowsnl());;_RV_;;"
 	],
 	[
 		213,
 		1,
 		"return",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;cFileContent;;_RV_;;"
 	],
 	[
 		214,
 		1,
 		"func",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"name;;_RV_;;SaveFormToFile;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		215,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;write;;_RV_;;parameters;;_RV_;;FileNameEncoding(cFileName),FormFileContent(oDesigner);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		216,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;Generate Code;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		217,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oGenerator;;_RV_;;name;;_RV_;;Generate;;_RV_;;parameters;;_RV_;;oDesigner,cFileName;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		218,
 		1,
 		"func",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"name;;_RV_;;Objects2String;;_RV_;;parameters;;_RV_;;oDesigner,aObjectsList;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		219,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;Start of The List;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		220,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;cContent;;_RV_;;rightside;;_RV_;;"+char(34)+"aObjectsList = ["+char(34)+"+nl;;_RV_;;"
 	],
 	[
 		221,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;Objects;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		222,
 		1,
 		"forloop",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"start;;_RV_;;x = 1;;_RV_;;to;;_RV_;;len(aObjectsList);;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		223,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;aObject;;_RV_;;rightside;;_RV_;;aObjectsList[x];;_RV_;;"
 	],
 	[
 		224,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;cObjContent;;_RV_;;rightside;;_RV_;;Copy(char(9),1)+'[ :name = "+char(34)+"#{f1}"+char(34)+" , :id = #{f2} , :classname = "+char(34)+"#{f3}"+char(34)+" , :data = ['+nl;;_RV_;;"
 	],
 	[
 		225,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;cObjContent += aObject[2].ObjectDataAsString(oDesigner,2)+nl;;_RV_;;"
 	],
 	[
 		226,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;cObjContent += Copy(char(9),2)+"+char(34)+"]"+char(34)+"+nl+Copy(char(9),1)+"+char(34)+"]"+char(34)+";;_RV_;;"
 	],
 	[
 		227,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;cObjContent;;_RV_;;rightside;;_RV_;;substr(cObjContent,"+char(34)+"#{f1}"+char(34)+",aObject[1]);;_RV_;;"
 	],
 	[
 		228,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;cObjContent;;_RV_;;rightside;;_RV_;;substr(cObjContent,"+char(34)+"#{f2}"+char(34)+","+char(34)+""+char(34)+"+aObject[3]);;_RV_;;"
 	],
 	[
 		229,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;cObjContent;;_RV_;;rightside;;_RV_;;substr(cObjContent,"+char(34)+"#{f3}"+char(34)+",classname(aObject[2]));;_RV_;;"
 	],
 	[
 		230,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:20:01",
-		"condition;;_RV_;;x! = len(aObjectsList);;_RV_;;"
+		"23/08/2025",
+		"08:04:58",
+		"condition;;_RV_;;x != len(aObjectsList);;_RV_;;"
 	],
 	[
 		231,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;cObjContent += "+char(34)+","+char(34)+";;_RV_;;"
 	],
 	[
 		232,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;cObjContent += nl;;_RV_;;"
 	],
 	[
 		233,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;cContent += cObjContent;;_RV_;;"
 	],
 	[
 		234,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;End of The List;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		235,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;cContent += "+char(34)+"]"+char(34)+"+nl;;_RV_;;"
 	],
 	[
 		236,
 		1,
 		"return",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;cContent;;_RV_;;"
 	],
 	[
 		237,
 		1,
 		"func",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"name;;_RV_;;DeleteAllobjects;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		238,
 		1,
 		"forloop",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"start;;_RV_;;x = 2;;_RV_;;to;;_RV_;;len(oDesigner.oModel.aObjectsList);;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		239,
 		1,
 		"accessobject",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.aObjectsList[x][2];;_RV_;;"
 	],
 	[
 		240,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oCorners;;_RV_;;name;;_RV_;;close;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		241,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;close;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		242,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DeleteAllObjectsFromModel;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		243,
 		1,
 		"func",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"name;;_RV_;;DeleteAllObjectsFromModel;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		244,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.DeleteAllObjects();;_RV_;;"
 	],
 	[
 		245,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;AddObjectsToCombo;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		246,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;AddObjectProperties;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		247,
 		1,
 		"func",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"name;;_RV_;;LoadFormFromFile;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		248,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;Disable Updates;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		249,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oView.oSub.setupdatesenabled(False);;_RV_;;"
 	],
 	[
 		250,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oView.oSub.blocksignals(True);;_RV_;;"
 	],
 	[
 		251,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;Delete objects;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		252,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DeleteAllObjects;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		253,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;Create New Form;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		254,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;PrepareTheForm;;_RV_;;parameters;;_RV_;;oDesigner;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		255,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;Load the Form Data;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		256,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;eval;;_RV_;;parameters;;_RV_;;read(FileNameEncoding(cFileName));;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		257,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;Create Objects;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		258,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;CreateFormObjects;;_RV_;;parameters;;_RV_;;oDesigner,aObjectsList;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		259,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;Enable Updates;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		260,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oView.oSub.setupdatesenabled(True);;_RV_;;"
 	],
 	[
 		261,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oView.oSub.blocksignals(False);;_RV_;;"
 	],
 	[
 		262,
 		1,
 		"func",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"name;;_RV_;;CreateFormObjects;;_RV_;;parameters;;_RV_;;oDesigner,aObjectsList;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		263,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;Use the List data to create the objects;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		264,
 		1,
 		"forinloop",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"variable;;_RV_;;item;;_RV_;;in;;_RV_;;aObjectsList;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		265,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;cClass;;_RV_;;rightside;;_RV_;;item[:classname];;_RV_;;"
 	],
 	[
 		266,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"leftside;;_RV_;;itemdata;;_RV_;;rightside;;_RV_;;item[:data];;_RV_;;"
 	],
 	[
 		267,
 		1,
 		"switch",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"variable;;_RV_;;cClass;;_RV_;;"
 	],
 	[
 		268,
 		1,
 		"case",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;:formdesigner_qwidget;;_RV_;;"
 	],
 	[
 		269,
 		1,
 		"accessobject",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oView.oSub;;_RV_;;"
 	],
 	[
 		270,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;blocksignals;;_RV_;;parameters;;_RV_;;True;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		271,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;move;;_RV_;;parameters;;_RV_;;itemdata[:x],itemdata[:y];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		272,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;resize;;_RV_;;parameters;;_RV_;;itemdata[:width],itemdata[:height];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		273,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setWindowTitle;;_RV_;;parameters;;_RV_;;itemdata[:title];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		274,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;show;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		275,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;blocksignals;;_RV_;;parameters;;_RV_;;False;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		276,
 		1,
 		"accessobject",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.FormObject();;_RV_;;"
 	],
 	[
 		277,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setWindowTitle;;_RV_;;parameters;;_RV_;;itemdata[:title];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		278,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setBackColor;;_RV_;;parameters;;_RV_;;itemdata[:backcolor];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		279,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setWindowFlagsValue;;_RV_;;parameters;;_RV_;;itemdata[:windowflags];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		280,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setMenubarValue;;_RV_;;parameters;;_RV_;;itemdata[:Menubar];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		281,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setMainLayoutValue;;_RV_;;parameters;;_RV_;;itemdata[:MainLayout];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		282,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setWindowIconValue;;_RV_;;parameters;;_RV_;;itemdata[:WindowIcon];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		283,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:20:01",
-		"condition;;_RV_;;itemdata[:IndexType]! = NULL;;_RV_;;"
+		"23/08/2025",
+		"08:04:58",
+		"condition;;_RV_;;itemdata[:IndexType] != NULL;;_RV_;;"
 	],
 	[
 		284,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setIndexTypeValue;;_RV_;;parameters;;_RV_;;itemdata[:IndexType];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		285,
 		1,
 		"else",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		""
 	],
 	[
 		286,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setIndexTypeValue;;_RV_;;parameters;;_RV_;;0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		287,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:20:01",
-		"condition;;_RV_;;itemdata[:GUILibrary]! = NULL;;_RV_;;"
+		"23/08/2025",
+		"08:04:58",
+		"condition;;_RV_;;itemdata[:GUILibrary] != NULL;;_RV_;;"
 	],
 	[
 		288,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setGUILibraryValue;;_RV_;;parameters;;_RV_;;itemdata[:GUILibrary];;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		289,
 		1,
 		"else",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		""
 	],
 	[
 		290,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;setGUILibraryValue;;_RV_;;parameters;;_RV_;;0;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		291,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;show;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		292,
 		1,
 		"case",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;:FormDesigner_QLabel;;_RV_;;"
 	],
 	[
 		293,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;HideCorners;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		294,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.AddLabel( new FormDesigner_QLabel(oDesigner.oModel.CurrentParentByName(itemdata[:parent])));;_RV_;;"
 	],
 	[
 		295,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;CreateControlEventsCornersNoInit;;_RV_;;parameters;;_RV_;;item[:name],oDesigner.oModel.LabelsCount();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		296,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.ActiveObject().RestoreProperties(oDesigner,item);;_RV_;;"
 	],
 	[
 		297,
 		1,
 		"case",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;:FormDesigner_QPushButton;;_RV_;;"
 	],
 	[
 		298,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;HideCorners;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		299,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.AddPushButton( new FormDesigner_QPushButton(oDesigner.oModel.CurrentParentByName(itemdata[:parent])));;_RV_;;"
 	],
 	[
 		300,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;CreateControlEventsCornersNoInit;;_RV_;;parameters;;_RV_;;item[:name],oDesigner.oModel.PushButtonsCount();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		301,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.ActiveObject().RestoreProperties(oDesigner,item);;_RV_;;"
 	],
 	[
 		302,
 		1,
 		"case",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;:FormDesigner_QLineEdit;;_RV_;;"
 	],
 	[
 		303,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;HideCorners;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		304,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.AddLineEdit( new FormDesigner_QLineEdit(oDesigner.oModel.CurrentParentByName(itemdata[:parent])));;_RV_;;"
 	],
 	[
 		305,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;CreateControlEventsCornersNoInit;;_RV_;;parameters;;_RV_;;item[:name],oDesigner.oModel.LineEditsCount();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		306,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.ActiveObject().RestoreProperties(oDesigner,item);;_RV_;;"
 	],
 	[
 		307,
 		1,
 		"case",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;:FormDesigner_QTextEdit;;_RV_;;"
 	],
 	[
 		308,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;HideCorners;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		309,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.AddLineEdit( new FormDesigner_QTextEdit(oDesigner.oModel.CurrentParentByName(itemdata[:parent])));;_RV_;;"
 	],
 	[
 		310,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;CreateControlEventsCornersNoInit;;_RV_;;parameters;;_RV_;;item[:name],oDesigner.oModel.TextEditsCount();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		311,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.ActiveObject().RestoreProperties(oDesigner,item);;_RV_;;"
 	],
 	[
 		312,
 		1,
 		"case",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;:FormDesigner_QListWidget;;_RV_;;"
 	],
 	[
 		313,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;HideCorners;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		314,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.AddListWidget( new FormDesigner_QListWidget(oDesigner.oModel.CurrentParentByName(itemdata[:parent])));;_RV_;;"
 	],
 	[
 		315,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;CreateControlEventsCornersNoInit;;_RV_;;parameters;;_RV_;;item[:name],oDesigner.oModel.ListWidgetsCount();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		316,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.ActiveObject().RestoreProperties(oDesigner,item);;_RV_;;"
 	],
 	[
 		317,
 		1,
 		"case",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;:FormDesigner_QCheckBox;;_RV_;;"
 	],
 	[
 		318,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;HideCorners;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		319,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.AddCheckBox( new FormDesigner_QCheckBox(oDesigner.oModel.CurrentParentByName(itemdata[:parent])));;_RV_;;"
 	],
 	[
 		320,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;CreateControlEventsCornersNoInit;;_RV_;;parameters;;_RV_;;item[:name],oDesigner.oModel.CheckBoxesCount();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		321,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.ActiveObject().RestoreProperties(oDesigner,item);;_RV_;;"
 	],
 	[
 		322,
 		1,
 		"case",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;:FormDesigner_QImage;;_RV_;;"
 	],
 	[
 		323,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;HideCorners;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		324,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.AddImage( new FormDesigner_QImage(oDesigner.oModel.CurrentParentByName(itemdata[:parent])));;_RV_;;"
 	],
 	[
 		325,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;CreateControlEventsCornersNoInit;;_RV_;;parameters;;_RV_;;item[:name],oDesigner.oModel.ImagesCount();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		326,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.ActiveObject().RestoreProperties(oDesigner,item);;_RV_;;"
 	],
 	[
 		327,
 		1,
 		"case",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;:FormDesigner_QSlider;;_RV_;;"
 	],
 	[
 		328,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;HideCorners;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		329,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.AddSlider( new FormDesigner_QSlider(oDesigner.oModel.CurrentParentByName(itemdata[:parent])));;_RV_;;"
 	],
 	[
 		330,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;CreateControlEventsCornersNoInit;;_RV_;;parameters;;_RV_;;item[:name],oDesigner.oModel.SlidersCount();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		331,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.ActiveObject().RestoreProperties(oDesigner,item);;_RV_;;"
 	],
 	[
 		332,
 		1,
 		"case",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;:FormDesigner_QProgressbar;;_RV_;;"
 	],
 	[
 		333,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;HideCorners;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		334,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.AddProgressBar( new FormDesigner_QProgressBar(oDesigner.oModel.CurrentParentByName(itemdata[:parent])));;_RV_;;"
 	],
 	[
 		335,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;CreateControlEventsCornersNoInit;;_RV_;;parameters;;_RV_;;item[:name],oDesigner.oModel.ProgressBarsCount();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		336,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.ActiveObject().RestoreProperties(oDesigner,item);;_RV_;;"
 	],
 	[
 		337,
 		1,
 		"case",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;:FormDesigner_QSpinBox;;_RV_;;"
 	],
 	[
 		338,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;HideCorners;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		339,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.AddSpinBox( new FormDesigner_QSpinBox(oDesigner.oModel.CurrentParentByName(itemdata[:parent])));;_RV_;;"
 	],
 	[
 		340,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;CreateControlEventsCornersNoInit;;_RV_;;parameters;;_RV_;;item[:name],oDesigner.oModel.SpinBoxesCount();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		341,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.ActiveObject().RestoreProperties(oDesigner,item);;_RV_;;"
 	],
 	[
 		342,
 		1,
 		"case",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;:FormDesigner_QComboBox;;_RV_;;"
 	],
 	[
 		343,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;HideCorners;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		344,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.AddComboBox( new FormDesigner_QCombobox(oDesigner.oModel.CurrentParentByName(itemdata[:parent])));;_RV_;;"
 	],
 	[
 		345,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;CreateControlEventsCornersNoInit;;_RV_;;parameters;;_RV_;;item[:name],oDesigner.oModel.ComboBoxesCount();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		346,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.ActiveObject().RestoreProperties(oDesigner,item);;_RV_;;"
 	],
 	[
 		347,
 		1,
 		"case",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;:FormDesigner_QDateTimeEdit;;_RV_;;"
 	],
 	[
 		348,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;HideCorners;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		349,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.AddDateTimeEdit( new FormDesigner_QDateTimeEdit(oDesigner.oModel.CurrentParentByName(itemdata[:parent])));;_RV_;;"
 	],
 	[
 		350,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;CreateControlEventsCornersNoInit;;_RV_;;parameters;;_RV_;;item[:name],oDesigner.oModel.DateTimeEditsCount();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		351,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.ActiveObject().RestoreProperties(oDesigner,item);;_RV_;;"
 	],
 	[
 		352,
 		1,
 		"case",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;:FormDesigner_QTableWidget;;_RV_;;"
 	],
 	[
 		353,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;HideCorners;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		354,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.AddTableWidget( new FormDesigner_QTableWidget(oDesigner.oModel.CurrentParentByName(itemdata[:parent])));;_RV_;;"
 	],
 	[
 		355,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;CreateControlEventsCornersNoInit;;_RV_;;parameters;;_RV_;;item[:name],oDesigner.oModel.TableWidgetsCount();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		356,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.ActiveObject().RestoreProperties(oDesigner,item);;_RV_;;"
 	],
 	[
 		357,
 		1,
 		"case",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;:FormDesigner_QTreeWidget;;_RV_;;"
 	],
 	[
 		358,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;HideCorners;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		359,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.AddTreeWidget( new FormDesigner_QTreeWidget(oDesigner.oModel.CurrentParentByName(itemdata[:parent])));;_RV_;;"
 	],
 	[
 		360,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;CreateControlEventsCornersNoInit;;_RV_;;parameters;;_RV_;;item[:name],oDesigner.oModel.TreeWidgetsCount();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		361,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.ActiveObject().RestoreProperties(oDesigner,item);;_RV_;;"
 	],
 	[
 		362,
 		1,
 		"case",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;:FormDesigner_QRadioButton;;_RV_;;"
 	],
 	[
 		363,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;HideCorners;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		364,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.AddRadioButton( new FormDesigner_QRadioButton(oDesigner.oModel.CurrentParentByName(itemdata[:parent])));;_RV_;;"
 	],
 	[
 		365,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;CreateControlEventsCornersNoInit;;_RV_;;parameters;;_RV_;;item[:name],oDesigner.oModel.RadioButtonsCount();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		366,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.ActiveObject().RestoreProperties(oDesigner,item);;_RV_;;"
 	],
 	[
 		367,
 		1,
 		"case",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;:FormDesigner_QWebView;;_RV_;;"
 	],
 	[
 		368,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;HideCorners;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		369,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.AddWebView( new FormDesigner_QWebView(oDesigner.oModel.CurrentParentByName(itemdata[:parent])));;_RV_;;"
 	],
 	[
 		370,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;CreateControlEventsCornersNoInit;;_RV_;;parameters;;_RV_;;item[:name],oDesigner.oModel.WebViewsCount();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		371,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.ActiveObject().RestoreProperties(oDesigner,item);;_RV_;;"
 	],
 	[
 		372,
 		1,
 		"case",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;:FormDesigner_QDial;;_RV_;;"
 	],
 	[
 		373,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;HideCorners;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		374,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.AddDial( new FormDesigner_QDial(oDesigner.oModel.CurrentParentByName(itemdata[:parent])));;_RV_;;"
 	],
 	[
 		375,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;CreateControlEventsCornersNoInit;;_RV_;;parameters;;_RV_;;item[:name],oDesigner.oModel.DialsCount();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		376,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.ActiveObject().RestoreProperties(oDesigner,item);;_RV_;;"
 	],
 	[
 		377,
 		1,
 		"case",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;:FormDesigner_QVideoWidget;;_RV_;;"
 	],
 	[
 		378,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;HideCorners;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		379,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.AddVideoWidget( new FormDesigner_QVideoWidget(oDesigner.oModel.CurrentParentByName(itemdata[:parent])));;_RV_;;"
 	],
 	[
 		380,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;CreateControlEventsCornersNoInit;;_RV_;;parameters;;_RV_;;item[:name],oDesigner.oModel.VideoWidgetsCount();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		381,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.ActiveObject().RestoreProperties(oDesigner,item);;_RV_;;"
 	],
 	[
 		382,
 		1,
 		"case",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;:FormDesigner_QFrame3;;_RV_;;"
 	],
 	[
 		383,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;HideCorners;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		384,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.AddFrame( new FormDesigner_QFrame3(oDesigner.oModel.CurrentParentByName(itemdata[:parent])));;_RV_;;"
 	],
 	[
 		385,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;CreateControlEventsCornersNoInit;;_RV_;;parameters;;_RV_;;item[:name],oDesigner.oModel.FramesCount();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		386,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.ActiveObject().RestoreProperties(oDesigner,item);;_RV_;;"
 	],
 	[
 		387,
 		1,
 		"case",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;:FormDesigner_QLCDNumber;;_RV_;;"
 	],
 	[
 		388,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;HideCorners;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		389,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.AddLCDNumber( new FormDesigner_QLCDNumber(oDesigner.oModel.CurrentParentByName(itemdata[:parent])));;_RV_;;"
 	],
 	[
 		390,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;CreateControlEventsCornersNoInit;;_RV_;;parameters;;_RV_;;item[:name],oDesigner.oModel.LCDNumbersCount();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		391,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.ActiveObject().RestoreProperties(oDesigner,item);;_RV_;;"
 	],
 	[
 		392,
 		1,
 		"case",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;:FormDesigner_QHyperLink;;_RV_;;"
 	],
 	[
 		393,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;HideCorners;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		394,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.AddHyperLink( new FormDesigner_QHyperLink(oDesigner.oModel.CurrentParentByName(itemdata[:parent])));;_RV_;;"
 	],
 	[
 		395,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;CreateControlEventsCornersNoInit;;_RV_;;parameters;;_RV_;;item[:name],oDesigner.oModel.HyperLinksCount();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		396,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.ActiveObject().RestoreProperties(oDesigner,item);;_RV_;;"
 	],
 	[
 		397,
 		1,
 		"case",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;:FormDesigner_QTimer;;_RV_;;"
 	],
 	[
 		398,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;HideCorners;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		399,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.AddTimer( new FormDesigner_QTimer(oDesigner.oModel.CurrentParentByName(itemdata[:parent])));;_RV_;;"
 	],
 	[
 		400,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;CreateControlEventsCornersNoInit;;_RV_;;parameters;;_RV_;;item[:name],oDesigner.oModel.TimersCount();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		401,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.ActiveObject().RestoreProperties(oDesigner,item);;_RV_;;"
 	],
 	[
 		402,
 		1,
 		"case",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;:FormDesigner_QAllEvents;;_RV_;;"
 	],
 	[
 		403,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;HideCorners;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		404,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.AddAllEvents( new FormDesigner_QAllEvents(oDesigner.oModel.CurrentParentByName(itemdata[:parent])));;_RV_;;"
 	],
 	[
 		405,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;CreateControlEventsCornersNoInit;;_RV_;;parameters;;_RV_;;item[:name],oDesigner.oModel.AllEventsCount();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		406,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.ActiveObject().RestoreProperties(oDesigner,item);;_RV_;;"
 	],
 	[
 		407,
 		1,
 		"case",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;:FormDesigner_QLayout;;_RV_;;"
 	],
 	[
 		408,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;HideCorners;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		409,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.AddLayout( new FormDesigner_QLayout(oDesigner.oModel.CurrentParentByName(itemdata[:parent])));;_RV_;;"
 	],
 	[
 		410,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;CreateControlEventsCornersNoInit;;_RV_;;parameters;;_RV_;;item[:name],oDesigner.oModel.LayoutsCount();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		411,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.ActiveObject().RestoreProperties(oDesigner,item);;_RV_;;"
 	],
 	[
 		412,
 		1,
 		"case",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;:FormDesigner_QTabWidget;;_RV_;;"
 	],
 	[
 		413,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;HideCorners;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		414,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.AddTab( new FormDesigner_QTabWidget(oDesigner.oModel.CurrentParentByName(itemdata[:parent])));;_RV_;;"
 	],
 	[
 		415,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;CreateControlEventsCornersNoInit;;_RV_;;parameters;;_RV_;;item[:name],oDesigner.oModel.TabsCount();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		416,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.ActiveObject().RestoreProperties(oDesigner,item);;_RV_;;"
 	],
 	[
 		417,
 		1,
 		"case",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;:FormDesigner_QStatusbar;;_RV_;;"
 	],
 	[
 		418,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;HideCorners;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		419,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.AddStatusbar( new FormDesigner_QStatusBar(oDesigner.oModel.CurrentParentByName(itemdata[:parent])));;_RV_;;"
 	],
 	[
 		420,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;CreateControlEventsCornersNoInit;;_RV_;;parameters;;_RV_;;item[:name],oDesigner.oModel.StatusBarsCount();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		421,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.ActiveObject().RestoreProperties(oDesigner,item);;_RV_;;"
 	],
 	[
 		422,
 		1,
 		"case",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;:FormDesigner_QToolbar;;_RV_;;"
 	],
 	[
 		423,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;HideCorners;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		424,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.AddToolbar( new FormDesigner_QToolbar(oDesigner.oModel.CurrentParentByName(itemdata[:parent])));;_RV_;;"
 	],
 	[
 		425,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;CreateControlEventsCornersNoInit;;_RV_;;parameters;;_RV_;;item[:name],oDesigner.oModel.ToolbarsCount();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		426,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oDesigner.oModel.ActiveObject().RestoreProperties(oDesigner,item);;_RV_;;"
 	],
 	[
 		427,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;Objects List;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		428,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;Object Properties;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		429,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;AddObjectsToCombo;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		430,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oDesigner;;_RV_;;name;;_RV_;;ObjectProperties;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		431,
 		1,
 		"func",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"name;;_RV_;;FileNameEncoding;;_RV_;;parameters;;_RV_;;cFileName;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		432,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;Starting from Ring 1.16 - We don't need this function;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		433,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"condition;;_RV_;;number(version()) <= 1.15;;_RV_;;"
 	],
 	[
 		434,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"condition;;_RV_;;isWindows();;_RV_;;"
 	],
 	[
 		435,
 		1,
 		"newobj",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oString;;_RV_;;value2;;_RV_;;qString2;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;2;;_RV_;;"
 	],
 	[
 		436,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oString;;_RV_;;name;;_RV_;;Append;;_RV_;;parameters;;_RV_;;cFileName;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		437,
 		1,
 		"return",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;oString. tolocal8bit() . data() ;;_RV_;;"
 	],
 	[
 		438,
 		1,
 		"return",
-		"01/06/2025",
-		"18:20:01",
+		"23/08/2025",
+		"08:04:58",
 		"value;;_RV_;;cFileName;;_RV_;;"
 	]
 ]

@@ -149,7 +149,7 @@ class ComponentsBrowserController from WindowsControllerParent
 			cStepCode = aContent[:code]
 			cStepName = lower(cStepName)
 			cFind = lower(cFind)
-			if left(cStepName,len(cFind)) = cFind AND trim(cStepCode)! = NULL { 
+			if left(cStepName,len(cFind)) = cFind AND trim(cStepCode) != NULL { 
 				nID = item[C_TREEMODEL_NODEID]
 				oItem = oView.oComponentsTree.GetObjByID(nID)
 				oView.oComponentsTree.SetCurrentItem(oItem,0)
@@ -198,7 +198,7 @@ class ComponentsBrowserController from WindowsControllerParent
 			cStepCode = aContent[:code]
 			cStepName = lower(cStepName)
 			cFind = lower(cFind)
-			if left(cStepName,len(cFind)) = cFind AND trim(cStepCode)! = NULL { 
+			if left(cStepName,len(cFind)) = cFind AND trim(cStepCode) != NULL { 
 				lSearchResult = True
 				return [lSearchResult, cFind+" --> [ " + aContent[: plainname]+" ]" ]
 			} 
@@ -473,7 +473,7 @@ class ComponentsBrowserController from WindowsControllerParent
 			cStepCode = aContent[:code]
 			cStepName = lower(cStepName)
 			cFind = lower(cFind)
-			if left(cStepName,len(cFind)) = cFind AND trim(cStepCode)! = NULL { 
+			if left(cStepName,len(cFind)) = cFind AND trim(cStepCode) != NULL { 
 				nID = item[C_TREEMODEL_NODEID]
 				OpenSelectedByID(nID)
 				return True

@@ -196,14 +196,14 @@ class FormDesigner_QListWidget from QLineEdit
 	} 
 	func GenerateCustomCode oDesigner { 
 		cOutput = ""
-		if cItemsValue()! = NULL { 
+		if cItemsValue() != NULL { 
 			aItems = split(cItemsValue(),",")
 			for item in aItems step 1 { 
 				cOutput += 'AddItem("#{f1}")'+nl
 				cOutput = substr(cOutput,"#{f1}",oDesigner.PrepareStringForFormFile(Item))
 			} 
 		} 
-		if cCurrentRowValue()! = NULL { 
+		if cCurrentRowValue() != NULL { 
 			cOutput += "setcurrentRow(#{f1},2)"+nl
 			cOutput = substr(cOutput,"#{f1}",ccurrentRowValue())
 		} 

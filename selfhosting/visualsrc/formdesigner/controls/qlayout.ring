@@ -109,7 +109,7 @@ class FormDesigner_QLayout from QLabel
 	} 
 	func GenerateCustomCode oDesigner { 
 		cOutput = ""
-		if LayoutObjectsValue()! = NULL { 
+		if LayoutObjectsValue() != NULL { 
 			aItems = split(LayoutObjectsValue(),",")
 			for item in aItems step 1 { 
 				if  NOT oDesigner.oModel.GetObjectClassByName(item) = "formdesigner_qlayout" { 

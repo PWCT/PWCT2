@@ -733,7 +733,7 @@ class FormDesignerController from WindowsControllerParent
 						oModel.RemoveSelectedObject(nObjectIndex)
 						oModel.GetObjectByIndex(nObjectIndex).oCorners.Hide()
 						else
-							if classname(oModel.GetObjectByIndex(nObjectIndex))! = "formdesigner_qwidget" { 
+							if classname(oModel.GetObjectByIndex(nObjectIndex)) != "formdesigner_qwidget" { 
 								oModel.GetObjectByIndex(nObjectIndex).MousePressMany(self)
 							} 
 					} 
@@ -760,7 +760,7 @@ class FormDesignerController from WindowsControllerParent
 						oModel.ActiveObject().oCorners.Show()
 						oModel.AddSelectedObject(nOldCurrentIndex)
 						#Draw old current object corners
-						if classname(oModel.GetObjectByIndex(nOldCurrentIndex))! = "formdesigner_qwidget" { 
+						if classname(oModel.GetObjectByIndex(nOldCurrentIndex)) != "formdesigner_qwidget" { 
 							oModel.getobjectByIndex(nOldCurrentIndex).oCorners.show()
 						} 
 						oModel.AddSelectedObject(nObjectIndex)
@@ -769,7 +769,7 @@ class FormDesignerController from WindowsControllerParent
 					} 
 			} 
 			ChangeObjectByCode(nObjectIndex-1)
-			if classname(oModel.ActiveObject())! = "formdesigner_qwidget" { 
+			if classname(oModel.ActiveObject()) != "formdesigner_qwidget" { 
 				oModel.ActiveObject().MousePress(self)
 			} 
 		} 
@@ -779,12 +779,12 @@ class FormDesignerController from WindowsControllerParent
 		if oView.oToolBtn1.ischecked() { 
 			#Select Mode
 			if oModel.IsManySelected() { 
-				if classname(oModel.GetObjectByIndex(nObjectIndex))! = "formdesigner_qwidget" { 
+				if classname(oModel.GetObjectByIndex(nObjectIndex)) != "formdesigner_qwidget" { 
 					oModel.GetObjectByIndex(nObjectIndex).MouseReleaseMany(self)
 				} 
 				return 
 			} 
-			if classname(oModel.ActiveObject())! = "formdesigner_qwidget" { 
+			if classname(oModel.ActiveObject()) != "formdesigner_qwidget" { 
 				oModel.ActiveObject().MouseRelease(self)
 			} 
 		} 
@@ -794,12 +794,12 @@ class FormDesignerController from WindowsControllerParent
 		if oView.oToolBtn1.ischecked() { 
 			#Select Mode
 			if oModel.IsManySelected() { 
-				if classname(oModel.GetObjectByIndex(nObjectIndex))! = "formdesigner_qwidget" { 
+				if classname(oModel.GetObjectByIndex(nObjectIndex)) != "formdesigner_qwidget" { 
 					oModel.GetObjectByIndex(nObjectIndex).MouseMoveMany(self)
 				} 
 				return 
 			} 
-			if classname(oModel.ActiveObject())! = "formdesigner_qwidget" { 
+			if classname(oModel.ActiveObject()) != "formdesigner_qwidget" { 
 				oModel.ActiveObject().MouseMove(self)
 			} 
 		} 
@@ -1332,7 +1332,7 @@ class FormDesignerController from WindowsControllerParent
 			item = aObjects[x]
 			oObject = item[2]
 			oObject.oCorners.Show()
-			if nCount+1! = len(aObjects) { 
+			if nCount+1 != len(aObjects) { 
 				oModel.AddSelectedObject(x)
 			} 
 		} 

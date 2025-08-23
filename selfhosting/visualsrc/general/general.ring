@@ -9,6 +9,6 @@ load "mainlib.ring"
 load "log.ring"
 load "quickmsgController.ring"
 #We need this on macOS when we run the executable from finder!
-if ismacosx() AND justfilename(exefilename())! = "ring" { 
+if ismacosx() AND justfilename(exefilename()) != "ring" { 
 	chdir(exefolder())
 } 

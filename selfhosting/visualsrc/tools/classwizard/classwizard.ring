@@ -25,7 +25,7 @@ cCode3 = nl+"T_CT_"+Upper(cClassName)+"CLASS_IP_VALUE2FUNC = ["+nl
 x = 1
 for cMethod in aMethods step 1 { 
 	cCode += copy(tab,3)+"case "+x+' cFunc = "'+cMethod+'"'+nl
-	if x! = 1 { 
+	if x != 1 { 
 		cCode2 += ","
 	} 
 	cCode2 += '"'+cMethod+'"'

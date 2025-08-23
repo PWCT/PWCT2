@@ -15,10 +15,10 @@ class newtimerComponentController from ComponentControllerParent
 				cOutCode = Variable(:value)+" = "
 		} 
 		cCode = ""
-		if Variable(:value3)! = NULL { 
+		if Variable(:value3) != NULL { 
 			cCode += "setinterval("+Variable(:value3)+")"+nl
 		} 
-		if Variable(:value4)! = NULL { 
+		if Variable(:value4) != NULL { 
 			cCode += "settimeoutevent("+Variable(:value4)+")"+nl
 		} 
 		if Variable(:value5) { 

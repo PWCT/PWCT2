@@ -44,7 +44,7 @@ class ComponentControllerParent from WindowsControllerParent
 		cStepName = parent().prepareStepName(cStep)
 		if nInteractionMode = C_INTERACTIONMODE_MODIFY { 
 			nStepID = SelectStep()
-			if nStepID! = -1 { 
+			if nStepID != -1 { 
 				return EditStepName( cStepName, nStepID ) 
 			} 
 			#In some cases nStepID will become NULL
@@ -55,7 +55,7 @@ class ComponentControllerParent from WindowsControllerParent
 		} 
 		#We do this check to avoid generating new IID while
 		#We are modifying the component
-		if nInteractionMode! = C_INTERACTIONMODE_MODIFY { 
+		if nInteractionMode != C_INTERACTIONMODE_MODIFY { 
 			SaveRoot()
 		} 
 		nStepNumber++
@@ -72,11 +72,11 @@ class ComponentControllerParent from WindowsControllerParent
 		cStepName = parent().prepareStepName(cStep)
 		if nInteractionMode = C_INTERACTIONMODE_MODIFY { 
 			nStepID = SelectStep()
-			if nStepID! = -1 { 
+			if nStepID != -1 { 
 				return EditStepName( cStepName, nStepID ) 
 			} 
 		} 
-		if nInteractionMode! = C_INTERACTIONMODE_MODIFY { 
+		if nInteractionMode != C_INTERACTIONMODE_MODIFY { 
 			SaveRoot()
 		} 
 		nStepNumber++
@@ -344,7 +344,7 @@ class ComponentControllerParent from WindowsControllerParent
 			return 
 		} 
 		if nInteractionMode = C_INTERACTIONMODE_MODIFY OR (CheckInteract() AND RulesAllow()) { 
-			if nInteractionMode! = C_INTERACTIONMODE_MODIFY { 
+			if nInteractionMode != C_INTERACTIONMODE_MODIFY { 
 				parent().TimeMachineGotoPresent()
 			} 
 			if GenerateAction() { 
@@ -584,7 +584,7 @@ class ComponentControllerParent from WindowsControllerParent
 	func common_callobjectmethod cFunc,cFuncName { 
 		#Set the Object Name if it was written
 		#Object Name is optional because we can use braces { }
-		if Variable(:Value)! = NULL { 
+		if Variable(:Value) != NULL { 
 			cObjectNameForStepName = StepData(:Value)+"."
 			cObjectNameForStepCode = Variable(:Value)+"."
 			else
@@ -592,7 +592,7 @@ class ComponentControllerParent from WindowsControllerParent
 				cObjectNameForStepCode = ""
 		} 
 		#Set the Output variable if it was written
-		if Variable(:Value4)! = NULL { 
+		if Variable(:Value4) != NULL { 
 			cOutputNameForStepName = StepData(:Value4)+" = "
 			cOutputNameForStepCode = Variable(:Value4)+" = "
 			else

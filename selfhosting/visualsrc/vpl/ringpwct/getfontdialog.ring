@@ -8,7 +8,7 @@ class getfontdialogComponentController from ComponentControllerParent
 	oView = new getfontdialogComponentView
 	func GenerateAction  { 
 		cCurrentFontValue = ""
-		if Variable(:value)! = NULL { 
+		if Variable(:value) != NULL { 
 			cCurrentFontValue = "setcurrentfont("+Variable(:Value)+")"+nl
 		} 
 		NewStep(StepData(:Value2)+" = "+T_CT_GETFONTDIALOG_ST_VALUE)

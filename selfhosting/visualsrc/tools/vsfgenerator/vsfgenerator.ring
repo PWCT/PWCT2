@@ -761,7 +761,7 @@ class VSFGenerator
 	} 
 	func AddCallFunction cFunction,cParameters { 
 		lParameters = False
-		if cParameters! = NULL { 
+		if cParameters != NULL { 
 			lParameters = C_CheckboxTrue
 		} 
 		#Use the Interaction Page
@@ -777,7 +777,7 @@ class VSFGenerator
 	} 
 	func AddCallMethod cObject,cMethod,cParameters { 
 		lParameters = False
-		if cParameters! = NULL { 
+		if cParameters != NULL { 
 			lParameters = C_CheckboxTrue
 		} 
 		#Use the Interaction Page

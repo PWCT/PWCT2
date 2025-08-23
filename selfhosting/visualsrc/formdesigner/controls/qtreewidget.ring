@@ -330,7 +330,7 @@ class FormDesigner_QTreeWidget from QLineEdit
 		cOutput = ""
 		cOutput += "setColumnCount(#{f1})"+nl
 		cOutput = substr(cOutput,"#{f1}",ColumnCountValue())
-		if HeaderLabelsValue()! = NULL { 
+		if HeaderLabelsValue() != NULL { 
 			cOutput += "oList = new qstringlist() {"+nl
 			aItems = split(HeaderLabelsValue(),",")
 			for item in aItems step 1 { 

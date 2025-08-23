@@ -47,7 +47,7 @@ class CommonAttributesMethods
 		cCurrentParentName = cValue
 	} 
 	func updatestylesheets  { 
-		if cTextColor! = NULL { 
+		if cTextColor != NULL { 
 			setstylesheet("color:"+cTextColor+";background-color:"+cBackColor+";")
 			else
 				setstylesheet("background-color:"+cBackColor+";")
@@ -210,7 +210,7 @@ class CommonAttributesMethods
 		cOutput = substr(cOutput,"#{f3}",""+y())
 		cOutput = substr(cOutput,"#{f4}",""+width())
 		cOutput = substr(cOutput,"#{f5}",""+height())
-		if textcolor()! = NULL { 
+		if textcolor() != NULL { 
 			cOutput = substr(cOutput,"#{f6}",textcolor())
 			else
 				cOutput = substr(cOutput,"#{f6}","none")
@@ -257,7 +257,7 @@ class CommonAttributesMethods
 		if substr(cEvent,"(") > 0 { 
 			cCode = substr(cCode,char(34)+cReplace+char(34),cReplace)
 			else
-				if cEvent! = "" { 
+				if cEvent != "" { 
 					cCode = substr(cCode,char(34)+cReplace+char(34),"Method(:"+cReplace+")")
 				} 
 		} 

@@ -472,7 +472,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">ismacosx()&nbsp;AND&nbsp;justfilename(exefilename())!&nbsp;=&nbsp;&quot;ring&quot;</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">ismacosx()&nbsp;AND&nbsp;justfilename(exefilename())&nbsp;!=&nbsp;&quot;ring&quot;</font></span>"
 			],
 			[
 				"active",
@@ -480,7 +480,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if ismacosx() AND justfilename(exefilename())! = "+char(34)+"ring"+char(34)+" { "
+				"if ismacosx() AND justfilename(exefilename()) != "+char(34)+"ring"+char(34)+" { "
 			],
 			[
 				"interactionid",
@@ -500,7 +500,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If ismacosx() AND justfilename(exefilename())! = "+char(34)+"ring"+char(34)+""
+				"If ismacosx() AND justfilename(exefilename()) != "+char(34)+"ring"+char(34)+""
 			]
 		]
 	],
@@ -625,112 +625,112 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"01/06/2025",
-		"18:20:58",
+		"23/08/2025",
+		"08:05:34",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:58",
+		"23/08/2025",
+		"08:05:34",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:58",
+		"23/08/2025",
+		"08:05:34",
 		"value;;_RV_;;**	Project : Programming Without Coding Technology (PWCT) Version 2.0;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:58",
+		"23/08/2025",
+		"08:05:34",
 		"value;;_RV_;;**	File Purpose :  General;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:58",
+		"23/08/2025",
+		"08:05:34",
 		"value;;_RV_;;**	Date : 2019.02.01;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:58",
+		"23/08/2025",
+		"08:05:34",
 		"value;;_RV_;;**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:58",
+		"23/08/2025",
+		"08:05:34",
 		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"load",
-		"01/06/2025",
-		"18:20:58",
+		"23/08/2025",
+		"08:05:34",
 		"file;;_RV_;;globals.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"load",
-		"01/06/2025",
-		"18:20:58",
+		"23/08/2025",
+		"08:05:34",
 		"file;;_RV_;;mainlib.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"load",
-		"01/06/2025",
-		"18:20:58",
+		"23/08/2025",
+		"08:05:34",
 		"file;;_RV_;;log.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"load",
-		"01/06/2025",
-		"18:20:58",
+		"23/08/2025",
+		"08:05:34",
 		"file;;_RV_;;quickmsgController.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:20:58",
+		"23/08/2025",
+		"08:05:34",
 		"value;;_RV_;;We need this on macOS when we run the executable from finder!;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:20:58",
-		"condition;;_RV_;;ismacosx() AND justfilename(exefilename())! = "+char(34)+"ring"+char(34)+";;_RV_;;"
+		"23/08/2025",
+		"08:05:34",
+		"condition;;_RV_;;ismacosx() AND justfilename(exefilename()) != "+char(34)+"ring"+char(34)+";;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:20:58",
+		"23/08/2025",
+		"08:05:34",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;chdir;;_RV_;;parameters;;_RV_;;exefolder();;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	]
 ]

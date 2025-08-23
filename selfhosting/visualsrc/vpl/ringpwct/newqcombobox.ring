@@ -15,32 +15,32 @@ class newqcomboboxComponentController from ComponentControllerParent
 				cOutCode = Variable(:value)+" = "
 		} 
 		cCode = ""
-		if Variable(:value2)! = NULL { 
+		if Variable(:value2) != NULL { 
 			cCode += "aItemsList ="+Variable(:value2)+nl+'for x in aItemsList additem(""+x,0) next'+nl
 		} 
-		if Variable(:value3)! = NULL { 
+		if Variable(:value3) != NULL { 
 			nTop = Variable(:value3)
 			else
 				nTop = 10
 		} 
-		if Variable(:value4)! = NULL { 
+		if Variable(:value4) != NULL { 
 			nLeft = Variable(:value4)
 			else
 				nLeft = 10
 		} 
 		cCode += "move("+nLeft+","+nTop+")"+nl
-		if Variable(:value5)! = NULL { 
+		if Variable(:value5) != NULL { 
 			nWidth = Variable(:value5)
 			else
 				nWidth = 100
 		} 
-		if Variable(:value6)! = NULL { 
+		if Variable(:value6) != NULL { 
 			nHeight = Variable(:value6)
 			else
 				nHeight = 30
 		} 
 		cCode += "resize("+nWidth+","+nHeight+")"+nl
-		if Variable(:value7)! = NULL { 
+		if Variable(:value7) != NULL { 
 			cCode += "setStyleSheet("+Variable(:value7)+")"+nl
 		} 
 		NewParentStep(cOutStep+T_CT_NEWQCOMBOBOX_ST_NEWQCOMBOBOX)

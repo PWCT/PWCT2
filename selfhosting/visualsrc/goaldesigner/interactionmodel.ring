@@ -128,7 +128,7 @@ class InteractionModel
 		#Find the interaction record
 		nPos = find(aList,nStepInteractionID,C_INTERACTIONRECORD_ID)
 		#Delete the record
-		if nPos! = 0 { 
+		if nPos != 0 { 
 			#Check that we have the record
 			#Add the interaction record to the deleted list		
 			aDeletedInteractions+aList[nPos]

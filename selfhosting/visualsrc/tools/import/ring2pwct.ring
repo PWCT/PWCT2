@@ -20,7 +20,7 @@ func GetParameters cProgramName {
 	#Linux | macOS --->  ring
 	#Remove .exe from the file name
 	cEXEFileName = substr(cEXEFileName,".exe","")
-	if cEXEFileName! = cProgramName { 
+	if cEXEFileName != cProgramName { 
 		nStart = 3
 		else
 			#ringpm.exe

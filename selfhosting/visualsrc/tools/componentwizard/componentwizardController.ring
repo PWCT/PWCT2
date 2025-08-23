@@ -224,7 +224,7 @@ class componentwizardController from windowsControllerParent
 				} 
 				cStepName += " +  T_CT_"+cComponent+"_ST_VALUE"+t+" + StepData(:Value"+t+")"
 				cStepCode += " + Variable(:Value"+t+")"
-				if x! = nParaCount { 
+				if x != nParaCount { 
 					cStepCode += ' + "," '
 					else
 						cStepCode += ' + ")" '
@@ -287,12 +287,12 @@ class componentwizardController from windowsControllerParent
 					else
 						t = x
 				} 
-				if x! = 1 { 
+				if x != 1 { 
 					cStepName += " +  "
 				} 
 				cStepName += "T_CT_"+cComponent+"_ST_VALUE"+t+" + StepData(:Value"+t+")"
 				cStepCode += " + Variable(:Value"+t+")"
-				if x! = nParaCount { 
+				if x != nParaCount { 
 					cStepCode += ' + "," '
 					else
 						cStepCode += ' + ")" '

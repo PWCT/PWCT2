@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'english'
-nStepsID                 = 393		
-nInteractionsID          = 213
+nStepsID                 = 402		
+nInteractionsID          = 219
 
 aStepsTable = [
 	[
@@ -1003,7 +1003,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Again <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(nActiveToken!&nbsp;=&nbsp;nTokensCount)</font></span>"
+				"Again <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(nActiveToken&nbsp;!=&nbsp;nTokensCount)</font></span>"
 			],
 			[
 				"active",
@@ -1011,7 +1011,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"again (nActiveToken! = nTokensCount)"
+				"again (nActiveToken != nTokensCount)"
 			],
 			[
 				"interactionid",
@@ -1031,7 +1031,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Again (nActiveToken! = nTokensCount)"
+				"Again (nActiveToken != nTokensCount)"
 			]
 		]
 	],
@@ -6131,6 +6131,348 @@ aStepsTable = [
 		]
 	],
 	[
+		170,
+		140,
+		[
+			[
+				"name",
+				"Else If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cTokenValue&nbsp;=&nbsp;&quot;&lt;=&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"elseif cTokenValue = "+char(34)+"<="+char(34)+""
+			],
+			[
+				"interactionid",
+				97
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Else If cTokenValue = "+char(34)+""
+			]
+		]
+	],
+	[
+		171,
+		170,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				97
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		172,
+		171,
+		[
+			[
+				"name",
+				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;&nbsp;&lt;=&nbsp;&quot;&nbsp;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"return "+char(34)+" <= "+char(34)+" "
+			],
+			[
+				"interactionid",
+				98
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Return "+char(34)+" "
+			]
+		]
+	],
+	[
+		173,
+		140,
+		[
+			[
+				"name",
+				"Else If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cTokenValue&nbsp;=&nbsp;&quot;&gt;=&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"elseif cTokenValue = "+char(34)+">="+char(34)+""
+			],
+			[
+				"interactionid",
+				99
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Else If cTokenValue = "+char(34)+">="+char(34)+""
+			]
+		]
+	],
+	[
+		174,
+		173,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				99
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		175,
+		174,
+		[
+			[
+				"name",
+				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;&nbsp;&gt;=&nbsp;&quot;&nbsp;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"return "+char(34)+" >= "+char(34)+" "
+			],
+			[
+				"interactionid",
+				100
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Return "+char(34)+" >= "+char(34)+" "
+			]
+		]
+	],
+	[
+		176,
+		140,
+		[
+			[
+				"name",
+				"Else If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cTokenValue&nbsp;=&nbsp;&quot;!=&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"elseif cTokenValue = "+char(34)+"!="+char(34)+""
+			],
+			[
+				"interactionid",
+				101
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Else If cTokenValue = "+char(34)+"!="+char(34)+""
+			]
+		]
+	],
+	[
+		177,
+		176,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				101
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		178,
+		177,
+		[
+			[
+				"name",
+				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;&nbsp;!=&nbsp;&quot;&nbsp;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"return "+char(34)+" != "+char(34)+" "
+			],
+			[
+				"interactionid",
+				102
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Return "+char(34)+" != "+char(34)+" "
+			]
+		]
+	],
+	[
 		141,
 		139,
 		[
@@ -6207,7 +6549,7 @@ aStepsTable = [
 		]
 	],
 	[
-		170,
+		179,
 		129,
 		[
 			[
@@ -6224,7 +6566,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				97
+				103
 			],
 			[
 				"visible",
@@ -6321,7 +6663,7 @@ aStepsTable = [
 		]
 	],
 	[
-		171,
+		180,
 		10,
 		[
 			[
@@ -6338,7 +6680,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				98
+				104
 			],
 			[
 				"visible",
@@ -6359,8 +6701,8 @@ aStepsTable = [
 		]
 	],
 	[
-		172,
-		171,
+		181,
+		180,
 		[
 			[
 				"name",
@@ -6376,7 +6718,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				98
+				104
 			],
 			[
 				"visible",
@@ -6397,8 +6739,8 @@ aStepsTable = [
 		]
 	],
 	[
-		174,
-		172,
+		183,
+		181,
 		[
 			[
 				"name",
@@ -6414,7 +6756,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				99
+				105
 			],
 			[
 				"visible",
@@ -6435,8 +6777,8 @@ aStepsTable = [
 		]
 	],
 	[
-		173,
-		171,
+		182,
+		180,
 		[
 			[
 				"name",
@@ -6452,7 +6794,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				98
+				104
 			],
 			[
 				"visible",
@@ -6473,7 +6815,7 @@ aStepsTable = [
 		]
 	],
 	[
-		175,
+		184,
 		10,
 		[
 			[
@@ -6490,7 +6832,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				100
+				106
 			],
 			[
 				"visible",
@@ -6511,8 +6853,8 @@ aStepsTable = [
 		]
 	],
 	[
-		176,
-		175,
+		185,
+		184,
 		[
 			[
 				"name",
@@ -6528,7 +6870,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				100
+				106
 			],
 			[
 				"visible",
@@ -6549,8 +6891,8 @@ aStepsTable = [
 		]
 	],
 	[
-		178,
-		176,
+		187,
+		185,
 		[
 			[
 				"name",
@@ -6566,7 +6908,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				101
+				107
 			],
 			[
 				"visible",
@@ -6587,8 +6929,8 @@ aStepsTable = [
 		]
 	],
 	[
-		177,
-		175,
+		186,
+		184,
 		[
 			[
 				"name",
@@ -6604,7 +6946,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				100
+				106
 			],
 			[
 				"visible",
@@ -6625,7 +6967,7 @@ aStepsTable = [
 		]
 	],
 	[
-		179,
+		188,
 		10,
 		[
 			[
@@ -6642,7 +6984,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				102
+				108
 			],
 			[
 				"visible",
@@ -6663,8 +7005,8 @@ aStepsTable = [
 		]
 	],
 	[
-		180,
-		179,
+		189,
+		188,
 		[
 			[
 				"name",
@@ -6680,7 +7022,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				102
+				108
 			],
 			[
 				"visible",
@@ -6701,8 +7043,8 @@ aStepsTable = [
 		]
 	],
 	[
-		182,
-		180,
+		191,
+		189,
 		[
 			[
 				"name",
@@ -6718,7 +7060,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				103
+				109
 			],
 			[
 				"visible",
@@ -6739,8 +7081,8 @@ aStepsTable = [
 		]
 	],
 	[
-		181,
-		179,
+		190,
+		188,
 		[
 			[
 				"name",
@@ -6756,7 +7098,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				102
+				108
 			],
 			[
 				"visible",
@@ -6777,7 +7119,7 @@ aStepsTable = [
 		]
 	],
 	[
-		183,
+		192,
 		10,
 		[
 			[
@@ -6794,7 +7136,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				104
+				110
 			],
 			[
 				"visible",
@@ -6815,8 +7157,8 @@ aStepsTable = [
 		]
 	],
 	[
-		184,
-		183,
+		193,
+		192,
 		[
 			[
 				"name",
@@ -6832,7 +7174,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				104
+				110
 			],
 			[
 				"visible",
@@ -6853,8 +7195,8 @@ aStepsTable = [
 		]
 	],
 	[
-		186,
-		184,
+		195,
+		193,
 		[
 			[
 				"name",
@@ -6870,7 +7212,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				105
+				111
 			],
 			[
 				"visible",
@@ -6891,8 +7233,8 @@ aStepsTable = [
 		]
 	],
 	[
-		185,
-		183,
+		194,
+		192,
 		[
 			[
 				"name",
@@ -6908,7 +7250,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				104
+				110
 			],
 			[
 				"visible",
@@ -6929,7 +7271,7 @@ aStepsTable = [
 		]
 	],
 	[
-		187,
+		196,
 		10,
 		[
 			[
@@ -6946,7 +7288,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				106
+				112
 			],
 			[
 				"visible",
@@ -6967,8 +7309,8 @@ aStepsTable = [
 		]
 	],
 	[
-		188,
-		187,
+		197,
+		196,
 		[
 			[
 				"name",
@@ -6984,7 +7326,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				106
+				112
 			],
 			[
 				"visible",
@@ -7005,8 +7347,8 @@ aStepsTable = [
 		]
 	],
 	[
-		190,
-		188,
+		199,
+		197,
 		[
 			[
 				"name",
@@ -7022,7 +7364,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				107
+				113
 			],
 			[
 				"visible",
@@ -7043,8 +7385,8 @@ aStepsTable = [
 		]
 	],
 	[
-		189,
-		187,
+		198,
+		196,
 		[
 			[
 				"name",
@@ -7060,7 +7402,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				106
+				112
 			],
 			[
 				"visible",
@@ -7081,7 +7423,7 @@ aStepsTable = [
 		]
 	],
 	[
-		191,
+		200,
 		10,
 		[
 			[
@@ -7098,7 +7440,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				108
+				114
 			],
 			[
 				"visible",
@@ -7119,8 +7461,8 @@ aStepsTable = [
 		]
 	],
 	[
-		192,
-		191,
+		201,
+		200,
 		[
 			[
 				"name",
@@ -7136,7 +7478,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				108
+				114
 			],
 			[
 				"visible",
@@ -7157,8 +7499,8 @@ aStepsTable = [
 		]
 	],
 	[
-		194,
-		192,
+		203,
+		201,
 		[
 			[
 				"name",
@@ -7174,7 +7516,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				109
+				115
 			],
 			[
 				"visible",
@@ -7195,8 +7537,8 @@ aStepsTable = [
 		]
 	],
 	[
-		193,
-		191,
+		202,
+		200,
 		[
 			[
 				"name",
@@ -7212,7 +7554,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				108
+				114
 			],
 			[
 				"visible",
@@ -7233,7 +7575,7 @@ aStepsTable = [
 		]
 	],
 	[
-		195,
+		204,
 		10,
 		[
 			[
@@ -7250,7 +7592,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				110
+				116
 			],
 			[
 				"visible",
@@ -7271,8 +7613,8 @@ aStepsTable = [
 		]
 	],
 	[
-		196,
-		195,
+		205,
+		204,
 		[
 			[
 				"name",
@@ -7288,7 +7630,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				110
+				116
 			],
 			[
 				"visible",
@@ -7309,8 +7651,8 @@ aStepsTable = [
 		]
 	],
 	[
-		198,
-		196,
+		207,
+		205,
 		[
 			[
 				"name",
@@ -7326,7 +7668,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				111
+				117
 			],
 			[
 				"visible",
@@ -7347,8 +7689,8 @@ aStepsTable = [
 		]
 	],
 	[
-		199,
-		198,
+		208,
+		207,
 		[
 			[
 				"name",
@@ -7364,7 +7706,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				111
+				117
 			],
 			[
 				"visible",
@@ -7385,8 +7727,8 @@ aStepsTable = [
 		]
 	],
 	[
-		201,
-		199,
+		210,
+		208,
 		[
 			[
 				"name",
@@ -7402,7 +7744,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				112
+				118
 			],
 			[
 				"visible",
@@ -7423,8 +7765,8 @@ aStepsTable = [
 		]
 	],
 	[
-		202,
-		201,
+		211,
+		210,
 		[
 			[
 				"name",
@@ -7440,7 +7782,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				112
+				118
 			],
 			[
 				"visible",
@@ -7461,8 +7803,8 @@ aStepsTable = [
 		]
 	],
 	[
-		204,
-		202,
+		213,
+		211,
 		[
 			[
 				"name",
@@ -7478,7 +7820,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				113
+				119
 			],
 			[
 				"visible",
@@ -7499,8 +7841,8 @@ aStepsTable = [
 		]
 	],
 	[
-		203,
-		201,
+		212,
+		210,
 		[
 			[
 				"name",
@@ -7516,7 +7858,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				112
+				118
 			],
 			[
 				"visible",
@@ -7537,8 +7879,8 @@ aStepsTable = [
 		]
 	],
 	[
-		205,
-		199,
+		214,
+		208,
 		[
 			[
 				"name",
@@ -7554,7 +7896,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				114
+				120
 			],
 			[
 				"visible",
@@ -7575,8 +7917,8 @@ aStepsTable = [
 		]
 	],
 	[
-		206,
-		199,
+		215,
+		208,
 		[
 			[
 				"name",
@@ -7592,7 +7934,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				115
+				121
 			],
 			[
 				"visible",
@@ -7613,8 +7955,8 @@ aStepsTable = [
 		]
 	],
 	[
-		207,
-		199,
+		216,
+		208,
 		[
 			[
 				"name",
@@ -7630,7 +7972,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				116
+				122
 			],
 			[
 				"visible",
@@ -7651,8 +7993,8 @@ aStepsTable = [
 		]
 	],
 	[
-		200,
-		198,
+		209,
+		207,
 		[
 			[
 				"name",
@@ -7668,7 +8010,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				111
+				117
 			],
 			[
 				"visible",
@@ -7689,8 +8031,8 @@ aStepsTable = [
 		]
 	],
 	[
-		208,
-		196,
+		217,
+		205,
 		[
 			[
 				"name",
@@ -7706,7 +8048,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				117
+				123
 			],
 			[
 				"visible",
@@ -7727,8 +8069,8 @@ aStepsTable = [
 		]
 	],
 	[
-		197,
-		195,
+		206,
+		204,
 		[
 			[
 				"name",
@@ -7744,7 +8086,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				110
+				116
 			],
 			[
 				"visible",
@@ -7765,7 +8107,7 @@ aStepsTable = [
 		]
 	],
 	[
-		209,
+		218,
 		10,
 		[
 			[
@@ -7782,7 +8124,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				118
+				124
 			],
 			[
 				"visible",
@@ -7803,8 +8145,8 @@ aStepsTable = [
 		]
 	],
 	[
-		210,
-		209,
+		219,
+		218,
 		[
 			[
 				"name",
@@ -7820,7 +8162,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				118
+				124
 			],
 			[
 				"visible",
@@ -7841,8 +8183,8 @@ aStepsTable = [
 		]
 	],
 	[
-		212,
-		210,
+		221,
+		219,
 		[
 			[
 				"name",
@@ -7858,7 +8200,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				119
+				125
 			],
 			[
 				"visible",
@@ -7879,8 +8221,8 @@ aStepsTable = [
 		]
 	],
 	[
-		213,
-		212,
+		222,
+		221,
 		[
 			[
 				"name",
@@ -7896,7 +8238,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				119
+				125
 			],
 			[
 				"visible",
@@ -7917,8 +8259,8 @@ aStepsTable = [
 		]
 	],
 	[
-		215,
-		213,
+		224,
+		222,
 		[
 			[
 				"name",
@@ -7934,7 +8276,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				120
+				126
 			],
 			[
 				"visible",
@@ -7955,8 +8297,8 @@ aStepsTable = [
 		]
 	],
 	[
-		214,
-		212,
+		223,
+		221,
 		[
 			[
 				"name",
@@ -7972,7 +8314,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				119
+				125
 			],
 			[
 				"visible",
@@ -7993,8 +8335,8 @@ aStepsTable = [
 		]
 	],
 	[
-		216,
-		210,
+		225,
+		219,
 		[
 			[
 				"name",
@@ -8010,7 +8352,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				121
+				127
 			],
 			[
 				"visible",
@@ -8031,8 +8373,8 @@ aStepsTable = [
 		]
 	],
 	[
-		217,
-		216,
+		226,
+		225,
 		[
 			[
 				"name",
@@ -8048,7 +8390,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				121
+				127
 			],
 			[
 				"visible",
@@ -8069,8 +8411,8 @@ aStepsTable = [
 		]
 	],
 	[
-		219,
-		217,
+		228,
+		226,
 		[
 			[
 				"name",
@@ -8086,7 +8428,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				122
+				128
 			],
 			[
 				"visible",
@@ -8107,8 +8449,8 @@ aStepsTable = [
 		]
 	],
 	[
-		218,
-		216,
+		227,
+		225,
 		[
 			[
 				"name",
@@ -8124,7 +8466,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				121
+				127
 			],
 			[
 				"visible",
@@ -8141,49 +8483,49 @@ aStepsTable = [
 			[
 				"plainname",
 				"End of IF Statement"
-			]
-		]
-	],
-	[
-		211,
-		209,
-		[
-			[
-				"name",
-				"End of Function"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				118
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of Function"
 			]
 		]
 	],
 	[
 		220,
+		218,
+		[
+			[
+				"name",
+				"End of Function"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				124
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of Function"
+			]
+		]
+	],
+	[
+		229,
 		10,
 		[
 			[
@@ -8200,7 +8542,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				123
+				129
 			],
 			[
 				"visible",
@@ -8221,8 +8563,8 @@ aStepsTable = [
 		]
 	],
 	[
-		221,
-		220,
+		230,
+		229,
 		[
 			[
 				"name",
@@ -8238,7 +8580,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				123
+				129
 			],
 			[
 				"visible",
@@ -8259,8 +8601,8 @@ aStepsTable = [
 		]
 	],
 	[
-		223,
-		221,
+		232,
+		230,
 		[
 			[
 				"name",
@@ -8276,7 +8618,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				124
+				130
 			],
 			[
 				"visible",
@@ -8297,8 +8639,8 @@ aStepsTable = [
 		]
 	],
 	[
-		224,
-		223,
+		233,
+		232,
 		[
 			[
 				"name",
@@ -8314,7 +8656,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				124
+				130
 			],
 			[
 				"visible",
@@ -8335,8 +8677,8 @@ aStepsTable = [
 		]
 	],
 	[
-		226,
-		224,
+		235,
+		233,
 		[
 			[
 				"name",
@@ -8352,7 +8694,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				125
+				131
 			],
 			[
 				"visible",
@@ -8373,8 +8715,8 @@ aStepsTable = [
 		]
 	],
 	[
-		225,
-		223,
+		234,
+		232,
 		[
 			[
 				"name",
@@ -8390,7 +8732,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				124
+				130
 			],
 			[
 				"visible",
@@ -8411,8 +8753,8 @@ aStepsTable = [
 		]
 	],
 	[
-		227,
-		221,
+		236,
+		230,
 		[
 			[
 				"name",
@@ -8428,7 +8770,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				126
+				132
 			],
 			[
 				"visible",
@@ -8449,8 +8791,8 @@ aStepsTable = [
 		]
 	],
 	[
-		228,
-		227,
+		237,
+		236,
 		[
 			[
 				"name",
@@ -8466,7 +8808,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				126
+				132
 			],
 			[
 				"visible",
@@ -8487,8 +8829,8 @@ aStepsTable = [
 		]
 	],
 	[
-		230,
-		228,
+		239,
+		237,
 		[
 			[
 				"name",
@@ -8504,7 +8846,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				127
+				133
 			],
 			[
 				"visible",
@@ -8525,8 +8867,8 @@ aStepsTable = [
 		]
 	],
 	[
-		229,
-		227,
+		238,
+		236,
 		[
 			[
 				"name",
@@ -8542,7 +8884,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				126
+				132
 			],
 			[
 				"visible",
@@ -8559,49 +8901,49 @@ aStepsTable = [
 			[
 				"plainname",
 				"End of IF Statement"
-			]
-		]
-	],
-	[
-		222,
-		220,
-		[
-			[
-				"name",
-				"End of Function"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				123
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of Function"
 			]
 		]
 	],
 	[
 		231,
+		229,
+		[
+			[
+				"name",
+				"End of Function"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				129
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of Function"
+			]
+		]
+	],
+	[
+		240,
 		10,
 		[
 			[
@@ -8618,7 +8960,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				128
+				134
 			],
 			[
 				"visible",
@@ -8639,8 +8981,8 @@ aStepsTable = [
 		]
 	],
 	[
-		232,
-		231,
+		241,
+		240,
 		[
 			[
 				"name",
@@ -8656,7 +8998,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				128
+				134
 			],
 			[
 				"visible",
@@ -8677,8 +9019,8 @@ aStepsTable = [
 		]
 	],
 	[
-		234,
-		232,
+		243,
+		241,
 		[
 			[
 				"name",
@@ -8694,7 +9036,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				129
+				135
 			],
 			[
 				"visible",
@@ -8715,8 +9057,8 @@ aStepsTable = [
 		]
 	],
 	[
-		233,
-		231,
+		242,
+		240,
 		[
 			[
 				"name",
@@ -8732,7 +9074,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				128
+				134
 			],
 			[
 				"visible",
@@ -8753,7 +9095,7 @@ aStepsTable = [
 		]
 	],
 	[
-		235,
+		244,
 		10,
 		[
 			[
@@ -8770,7 +9112,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				130
+				136
 			],
 			[
 				"visible",
@@ -8791,8 +9133,8 @@ aStepsTable = [
 		]
 	],
 	[
-		236,
-		235,
+		245,
+		244,
 		[
 			[
 				"name",
@@ -8808,7 +9150,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				130
+				136
 			],
 			[
 				"visible",
@@ -8829,8 +9171,8 @@ aStepsTable = [
 		]
 	],
 	[
-		238,
-		236,
+		247,
+		245,
 		[
 			[
 				"name",
@@ -8846,7 +9188,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				131
+				137
 			],
 			[
 				"visible",
@@ -8867,8 +9209,8 @@ aStepsTable = [
 		]
 	],
 	[
-		237,
-		235,
+		246,
+		244,
 		[
 			[
 				"name",
@@ -8884,7 +9226,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				130
+				136
 			],
 			[
 				"visible",
@@ -8905,7 +9247,7 @@ aStepsTable = [
 		]
 	],
 	[
-		239,
+		248,
 		10,
 		[
 			[
@@ -8922,7 +9264,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				132
+				138
 			],
 			[
 				"visible",
@@ -8943,8 +9285,8 @@ aStepsTable = [
 		]
 	],
 	[
-		240,
-		239,
+		249,
+		248,
 		[
 			[
 				"name",
@@ -8960,7 +9302,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				132
+				138
 			],
 			[
 				"visible",
@@ -8981,8 +9323,8 @@ aStepsTable = [
 		]
 	],
 	[
-		242,
-		240,
+		251,
+		249,
 		[
 			[
 				"name",
@@ -8998,7 +9340,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				133
+				139
 			],
 			[
 				"visible",
@@ -9019,8 +9361,8 @@ aStepsTable = [
 		]
 	],
 	[
-		241,
-		239,
+		250,
+		248,
 		[
 			[
 				"name",
@@ -9036,7 +9378,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				132
+				138
 			],
 			[
 				"visible",
@@ -9057,7 +9399,7 @@ aStepsTable = [
 		]
 	],
 	[
-		243,
+		252,
 		10,
 		[
 			[
@@ -9074,7 +9416,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				134
+				140
 			],
 			[
 				"visible",
@@ -9095,8 +9437,8 @@ aStepsTable = [
 		]
 	],
 	[
-		244,
-		243,
+		253,
+		252,
 		[
 			[
 				"name",
@@ -9112,7 +9454,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				134
+				140
 			],
 			[
 				"visible",
@@ -9133,8 +9475,8 @@ aStepsTable = [
 		]
 	],
 	[
-		246,
-		244,
+		255,
+		253,
 		[
 			[
 				"name",
@@ -9150,7 +9492,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				135
+				141
 			],
 			[
 				"visible",
@@ -9171,8 +9513,8 @@ aStepsTable = [
 		]
 	],
 	[
-		245,
-		243,
+		254,
+		252,
 		[
 			[
 				"name",
@@ -9188,7 +9530,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				134
+				140
 			],
 			[
 				"visible",
@@ -9209,7 +9551,7 @@ aStepsTable = [
 		]
 	],
 	[
-		247,
+		256,
 		10,
 		[
 			[
@@ -9226,7 +9568,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				136
+				142
 			],
 			[
 				"visible",
@@ -9247,8 +9589,8 @@ aStepsTable = [
 		]
 	],
 	[
-		248,
-		247,
+		257,
+		256,
 		[
 			[
 				"name",
@@ -9264,7 +9606,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				136
+				142
 			],
 			[
 				"visible",
@@ -9285,8 +9627,8 @@ aStepsTable = [
 		]
 	],
 	[
-		250,
-		248,
+		259,
+		257,
 		[
 			[
 				"name",
@@ -9302,7 +9644,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				137
+				143
 			],
 			[
 				"visible",
@@ -9323,8 +9665,8 @@ aStepsTable = [
 		]
 	],
 	[
-		249,
-		247,
+		258,
+		256,
 		[
 			[
 				"name",
@@ -9340,7 +9682,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				136
+				142
 			],
 			[
 				"visible",
@@ -9361,7 +9703,7 @@ aStepsTable = [
 		]
 	],
 	[
-		251,
+		260,
 		10,
 		[
 			[
@@ -9378,7 +9720,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				138
+				144
 			],
 			[
 				"visible",
@@ -9399,8 +9741,8 @@ aStepsTable = [
 		]
 	],
 	[
-		252,
-		251,
+		261,
+		260,
 		[
 			[
 				"name",
@@ -9416,7 +9758,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				138
+				144
 			],
 			[
 				"visible",
@@ -9437,8 +9779,8 @@ aStepsTable = [
 		]
 	],
 	[
-		254,
-		252,
+		263,
+		261,
 		[
 			[
 				"name",
@@ -9454,7 +9796,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				139
+				145
 			],
 			[
 				"visible",
@@ -9475,8 +9817,8 @@ aStepsTable = [
 		]
 	],
 	[
-		253,
-		251,
+		262,
+		260,
 		[
 			[
 				"name",
@@ -9492,7 +9834,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				138
+				144
 			],
 			[
 				"visible",
@@ -9513,7 +9855,7 @@ aStepsTable = [
 		]
 	],
 	[
-		255,
+		264,
 		10,
 		[
 			[
@@ -9530,7 +9872,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				140
+				146
 			],
 			[
 				"visible",
@@ -9551,8 +9893,8 @@ aStepsTable = [
 		]
 	],
 	[
-		256,
-		255,
+		265,
+		264,
 		[
 			[
 				"name",
@@ -9568,7 +9910,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				140
+				146
 			],
 			[
 				"visible",
@@ -9589,8 +9931,8 @@ aStepsTable = [
 		]
 	],
 	[
-		258,
-		256,
+		267,
+		265,
 		[
 			[
 				"name",
@@ -9606,7 +9948,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				141
+				147
 			],
 			[
 				"visible",
@@ -9627,8 +9969,8 @@ aStepsTable = [
 		]
 	],
 	[
-		257,
-		255,
+		266,
+		264,
 		[
 			[
 				"name",
@@ -9644,7 +9986,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				140
+				146
 			],
 			[
 				"visible",
@@ -9665,7 +10007,7 @@ aStepsTable = [
 		]
 	],
 	[
-		259,
+		268,
 		10,
 		[
 			[
@@ -9682,7 +10024,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				142
+				148
 			],
 			[
 				"visible",
@@ -9703,8 +10045,8 @@ aStepsTable = [
 		]
 	],
 	[
-		260,
-		259,
+		269,
+		268,
 		[
 			[
 				"name",
@@ -9720,7 +10062,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				142
+				148
 			],
 			[
 				"visible",
@@ -9741,8 +10083,8 @@ aStepsTable = [
 		]
 	],
 	[
-		262,
-		260,
+		271,
+		269,
 		[
 			[
 				"name",
@@ -9758,7 +10100,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				143
+				149
 			],
 			[
 				"visible",
@@ -9779,8 +10121,8 @@ aStepsTable = [
 		]
 	],
 	[
-		261,
-		259,
+		270,
+		268,
 		[
 			[
 				"name",
@@ -9796,7 +10138,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				142
+				148
 			],
 			[
 				"visible",
@@ -9817,7 +10159,7 @@ aStepsTable = [
 		]
 	],
 	[
-		263,
+		272,
 		10,
 		[
 			[
@@ -9834,7 +10176,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				144
+				150
 			],
 			[
 				"visible",
@@ -9855,8 +10197,8 @@ aStepsTable = [
 		]
 	],
 	[
-		264,
-		263,
+		273,
+		272,
 		[
 			[
 				"name",
@@ -9872,7 +10214,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				144
+				150
 			],
 			[
 				"visible",
@@ -9893,8 +10235,8 @@ aStepsTable = [
 		]
 	],
 	[
-		266,
-		264,
+		275,
+		273,
 		[
 			[
 				"name",
@@ -9910,7 +10252,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				145
+				151
 			],
 			[
 				"visible",
@@ -9931,8 +10273,8 @@ aStepsTable = [
 		]
 	],
 	[
-		265,
-		263,
+		274,
+		272,
 		[
 			[
 				"name",
@@ -9948,7 +10290,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				144
+				150
 			],
 			[
 				"visible",
@@ -9969,7 +10311,7 @@ aStepsTable = [
 		]
 	],
 	[
-		267,
+		276,
 		10,
 		[
 			[
@@ -9986,7 +10328,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				146
+				152
 			],
 			[
 				"visible",
@@ -10007,8 +10349,8 @@ aStepsTable = [
 		]
 	],
 	[
-		268,
-		267,
+		277,
+		276,
 		[
 			[
 				"name",
@@ -10024,7 +10366,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				146
+				152
 			],
 			[
 				"visible",
@@ -10045,8 +10387,8 @@ aStepsTable = [
 		]
 	],
 	[
-		270,
-		268,
+		279,
+		277,
 		[
 			[
 				"name",
@@ -10062,7 +10404,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				147
+				153
 			],
 			[
 				"visible",
@@ -10083,8 +10425,8 @@ aStepsTable = [
 		]
 	],
 	[
-		269,
-		267,
+		278,
+		276,
 		[
 			[
 				"name",
@@ -10100,7 +10442,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				146
+				152
 			],
 			[
 				"visible",
@@ -10121,7 +10463,7 @@ aStepsTable = [
 		]
 	],
 	[
-		271,
+		280,
 		10,
 		[
 			[
@@ -10138,7 +10480,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				148
+				154
 			],
 			[
 				"visible",
@@ -10159,8 +10501,8 @@ aStepsTable = [
 		]
 	],
 	[
-		272,
-		271,
+		281,
+		280,
 		[
 			[
 				"name",
@@ -10176,7 +10518,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				148
+				154
 			],
 			[
 				"visible",
@@ -10197,8 +10539,8 @@ aStepsTable = [
 		]
 	],
 	[
-		274,
-		272,
+		283,
+		281,
 		[
 			[
 				"name",
@@ -10214,7 +10556,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				149
+				155
 			],
 			[
 				"visible",
@@ -10235,388 +10577,8 @@ aStepsTable = [
 		]
 	],
 	[
-		275,
-		274,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				149
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		277,
-		275,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nActiveToken</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">x</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"nActiveToken = x"
-			],
-			[
-				"interactionid",
-				150
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"nActiveToken = x"
-			]
-		]
-	],
-	[
-		278,
-		275,
-		[
-			[
-				"name",
-				"loadtoken(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"loadtoken()"
-			],
-			[
-				"interactionid",
-				151
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"loadtoken()"
-			]
-		]
-	],
-	[
-		279,
-		275,
-		[
-			[
-				"name",
-				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1&nbsp;</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"return 1 "
-			],
-			[
-				"interactionid",
-				152
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Return 1 "
-			]
-		]
-	],
-	[
-		276,
-		274,
-		[
-			[
-				"name",
-				"End of IF Statement"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				149
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of IF Statement"
-			]
-		]
-	],
-	[
-		280,
-		272,
-		[
-			[
-				"name",
-				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">0&nbsp;</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"return 0 "
-			],
-			[
-				"interactionid",
-				153
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Return 0 "
-			]
-		]
-	],
-	[
-		273,
-		271,
-		[
-			[
-				"name",
-				"End of Function"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				148
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of Function"
-			]
-		]
-	],
-	[
-		281,
-		10,
-		[
-			[
-				"name",
-				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">passNewLine</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"func passNewLine  { "
-			],
-			[
-				"interactionid",
-				154
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"function passNewLine "
-			]
-		]
-	],
-	[
-		282,
-		281,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				154
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
 		284,
-		282,
-		[
-			[
-				"name",
-				"While <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">passepslion()</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"while passepslion() { "
-			],
-			[
-				"interactionid",
-				155
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"While passepslion()"
-			]
-		]
-	],
-	[
-		285,
-		284,
+		283,
 		[
 			[
 				"name",
@@ -10658,7 +10620,121 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"End of While Loop"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nActiveToken</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">x</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"nActiveToken = x"
+			],
+			[
+				"interactionid",
+				156
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"nActiveToken = x"
+			]
+		]
+	],
+	[
+		287,
+		284,
+		[
+			[
+				"name",
+				"loadtoken(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"loadtoken()"
+			],
+			[
+				"interactionid",
+				157
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"loadtoken()"
+			]
+		]
+	],
+	[
+		288,
+		284,
+		[
+			[
+				"name",
+				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1&nbsp;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"return 1 "
+			],
+			[
+				"interactionid",
+				158
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Return 1 "
+			]
+		]
+	],
+	[
+		285,
+		283,
+		[
+			[
+				"name",
+				"End of IF Statement"
 			],
 			[
 				"active",
@@ -10686,13 +10762,51 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"End of While Loop"
+				"End of IF Statement"
 			]
 		]
 	],
 	[
-		283,
+		289,
 		281,
+		[
+			[
+				"name",
+				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">0&nbsp;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"return 0 "
+			],
+			[
+				"interactionid",
+				159
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Return 0 "
+			]
+		]
+	],
+	[
+		282,
+		280,
 		[
 			[
 				"name",
@@ -10729,7 +10843,235 @@ aStepsTable = [
 		]
 	],
 	[
-		287,
+		290,
+		10,
+		[
+			[
+				"name",
+				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">passNewLine</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"func passNewLine  { "
+			],
+			[
+				"interactionid",
+				160
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"function passNewLine "
+			]
+		]
+	],
+	[
+		291,
+		290,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				160
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		293,
+		291,
+		[
+			[
+				"name",
+				"While <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">passepslion()</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"while passepslion() { "
+			],
+			[
+				"interactionid",
+				161
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"While passepslion()"
+			]
+		]
+	],
+	[
+		294,
+		293,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				161
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		295,
+		293,
+		[
+			[
+				"name",
+				"End of While Loop"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				161
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of While Loop"
+			]
+		]
+	],
+	[
+		292,
+		290,
+		[
+			[
+				"name",
+				"End of Function"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				160
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of Function"
+			]
+		]
+	],
+	[
+		296,
 		10,
 		[
 			[
@@ -10746,7 +11088,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				156
+				162
 			],
 			[
 				"visible",
@@ -10767,8 +11109,8 @@ aStepsTable = [
 		]
 	],
 	[
-		288,
-		287,
+		297,
+		296,
 		[
 			[
 				"name",
@@ -10784,7 +11126,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				156
+				162
 			],
 			[
 				"visible",
@@ -10805,8 +11147,8 @@ aStepsTable = [
 		]
 	],
 	[
-		290,
-		288,
+		299,
+		297,
 		[
 			[
 				"name",
@@ -10823,7 +11165,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				157
+				163
 			],
 			[
 				"visible",
@@ -10844,8 +11186,8 @@ aStepsTable = [
 		]
 	],
 	[
-		291,
-		288,
+		300,
+		297,
 		[
 			[
 				"name",
@@ -10861,7 +11203,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				158
+				164
 			],
 			[
 				"visible",
@@ -10878,386 +11220,6 @@ aStepsTable = [
 			[
 				"plainname",
 				"If isendline()"
-			]
-		]
-	],
-	[
-		292,
-		291,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				158
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		294,
-		292,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nLineNumber</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cTokenValue</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"nLineNumber = cTokenValue"
-			],
-			[
-				"interactionid",
-				159
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"nLineNumber = cTokenValue"
-			]
-		]
-	],
-	[
-		295,
-		292,
-		[
-			[
-				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nexttoken()</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"if nexttoken() { "
-			],
-			[
-				"interactionid",
-				160
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"If nexttoken()"
-			]
-		]
-	],
-	[
-		296,
-		295,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				160
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		298,
-		296,
-		[
-			[
-				"name",
-				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">True</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"return True"
-			],
-			[
-				"interactionid",
-				161
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Return True"
-			]
-		]
-	],
-	[
-		297,
-		295,
-		[
-			[
-				"name",
-				"End of IF Statement"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				160
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of IF Statement"
-			]
-		]
-	],
-	[
-		293,
-		291,
-		[
-			[
-				"name",
-				"End of IF Statement"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				158
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of IF Statement"
-			]
-		]
-	],
-	[
-		299,
-		288,
-		[
-			[
-				"name",
-				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">False</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"return False"
-			],
-			[
-				"interactionid",
-				162
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Return False"
-			]
-		]
-	],
-	[
-		289,
-		287,
-		[
-			[
-				"name",
-				"End of Function"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				156
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of Function"
-			]
-		]
-	],
-	[
-		300,
-		10,
-		[
-			[
-				"name",
-				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">currentToken</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"func currentToken  { "
-			],
-			[
-				"interactionid",
-				163
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"function currentToken "
 			]
 		]
 	],
@@ -11279,7 +11241,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				163
+				164
 			],
 			[
 				"visible",
@@ -11305,6 +11267,386 @@ aStepsTable = [
 		[
 			[
 				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nLineNumber</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cTokenValue</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"nLineNumber = cTokenValue"
+			],
+			[
+				"interactionid",
+				165
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"nLineNumber = cTokenValue"
+			]
+		]
+	],
+	[
+		304,
+		301,
+		[
+			[
+				"name",
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nexttoken()</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"if nexttoken() { "
+			],
+			[
+				"interactionid",
+				166
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"If nexttoken()"
+			]
+		]
+	],
+	[
+		305,
+		304,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				166
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		307,
+		305,
+		[
+			[
+				"name",
+				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">True</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"return True"
+			],
+			[
+				"interactionid",
+				167
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Return True"
+			]
+		]
+	],
+	[
+		306,
+		304,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				166
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		302,
+		300,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				164
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		308,
+		297,
+		[
+			[
+				"name",
+				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">False</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"return False"
+			],
+			[
+				"interactionid",
+				168
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Return False"
+			]
+		]
+	],
+	[
+		298,
+		296,
+		[
+			[
+				"name",
+				"End of Function"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				162
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of Function"
+			]
+		]
+	],
+	[
+		309,
+		10,
+		[
+			[
+				"name",
+				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">currentToken</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"func currentToken  { "
+			],
+			[
+				"interactionid",
+				169
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"function currentToken "
+			]
+		]
+	],
+	[
+		310,
+		309,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				169
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		312,
+		310,
+		[
+			[
+				"name",
 				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nActiveToken</font></span>"
 			],
 			[
@@ -11317,7 +11659,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				164
+				170
 			],
 			[
 				"visible",
@@ -11338,8 +11680,8 @@ aStepsTable = [
 		]
 	],
 	[
-		302,
-		300,
+		311,
+		309,
 		[
 			[
 				"name",
@@ -11355,7 +11697,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				163
+				169
 			],
 			[
 				"visible",
@@ -11376,7 +11718,7 @@ aStepsTable = [
 		]
 	],
 	[
-		304,
+		313,
 		10,
 		[
 			[
@@ -11393,7 +11735,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				165
+				171
 			],
 			[
 				"visible",
@@ -11414,8 +11756,8 @@ aStepsTable = [
 		]
 	],
 	[
-		305,
-		304,
+		314,
+		313,
 		[
 			[
 				"name",
@@ -11431,7 +11773,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				165
+				171
 			],
 			[
 				"visible",
@@ -11452,8 +11794,8 @@ aStepsTable = [
 		]
 	],
 	[
-		307,
-		305,
+		316,
+		314,
 		[
 			[
 				"name",
@@ -11469,7 +11811,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				166
+				172
 			],
 			[
 				"visible",
@@ -11490,8 +11832,8 @@ aStepsTable = [
 		]
 	],
 	[
-		308,
-		307,
+		317,
+		316,
 		[
 			[
 				"name",
@@ -11507,7 +11849,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				166
+				172
 			],
 			[
 				"visible",
@@ -11528,8 +11870,8 @@ aStepsTable = [
 		]
 	],
 	[
-		310,
-		308,
+		319,
+		317,
 		[
 			[
 				"name",
@@ -11545,7 +11887,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				167
+				173
 			],
 			[
 				"visible",
@@ -11566,8 +11908,8 @@ aStepsTable = [
 		]
 	],
 	[
-		311,
-		308,
+		320,
+		317,
 		[
 			[
 				"name",
@@ -11583,7 +11925,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				168
+				174
 			],
 			[
 				"visible",
@@ -11604,8 +11946,8 @@ aStepsTable = [
 		]
 	],
 	[
-		312,
-		308,
+		321,
+		317,
 		[
 			[
 				"name",
@@ -11621,7 +11963,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				169
+				175
 			],
 			[
 				"visible",
@@ -11642,8 +11984,8 @@ aStepsTable = [
 		]
 	],
 	[
-		313,
-		308,
+		322,
+		317,
 		[
 			[
 				"name",
@@ -11659,7 +12001,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				170
+				176
 			],
 			[
 				"visible",
@@ -11680,8 +12022,8 @@ aStepsTable = [
 		]
 	],
 	[
-		314,
-		308,
+		323,
+		317,
 		[
 			[
 				"name",
@@ -11697,7 +12039,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				171
+				177
 			],
 			[
 				"visible",
@@ -11718,8 +12060,8 @@ aStepsTable = [
 		]
 	],
 	[
-		309,
-		307,
+		318,
+		316,
 		[
 			[
 				"name",
@@ -11735,7 +12077,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				166
+				172
 			],
 			[
 				"visible",
@@ -11756,8 +12098,8 @@ aStepsTable = [
 		]
 	],
 	[
-		315,
-		305,
+		324,
+		314,
 		[
 			[
 				"name",
@@ -11773,7 +12115,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				172
+				178
 			],
 			[
 				"visible",
@@ -11794,8 +12136,8 @@ aStepsTable = [
 		]
 	],
 	[
-		316,
-		315,
+		325,
+		324,
 		[
 			[
 				"name",
@@ -11811,7 +12153,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				172
+				178
 			],
 			[
 				"visible",
@@ -11832,8 +12174,8 @@ aStepsTable = [
 		]
 	],
 	[
-		318,
-		316,
+		327,
+		325,
 		[
 			[
 				"name",
@@ -11849,7 +12191,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				173
+				179
 			],
 			[
 				"visible",
@@ -11870,278 +12212,12 @@ aStepsTable = [
 		]
 	],
 	[
-		317,
-		315,
-		[
-			[
-				"name",
-				"End of IF Statement"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				172
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of IF Statement"
-			]
-		]
-	],
-	[
-		306,
-		304,
-		[
-			[
-				"name",
-				"End of Function"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				165
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of Function"
-			]
-		]
-	],
-	[
-		319,
-		10,
-		[
-			[
-				"name",
-				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">generate</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aCommand,lClear</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"func generate aCommand,lClear { "
-			],
-			[
-				"interactionid",
-				174
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"function generate aCommand,lClear"
-			]
-		]
-	],
-	[
-		320,
-		319,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				174
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		322,
-		320,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aParseTree+aCommand</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"aParseTree+aCommand"
-			],
-			[
-				"interactionid",
-				175
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"aParseTree+aCommand"
-			]
-		]
-	],
-	[
-		323,
-		320,
-		[
-			[
-				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">lClear</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"if lClear { "
-			],
-			[
-				"interactionid",
-				176
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"If lClear"
-			]
-		]
-	],
-	[
-		324,
-		323,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				176
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
 		326,
 		324,
 		[
 			[
 				"name",
-				"clearTextBuffer(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+				"End of IF Statement"
 			],
 			[
 				"active",
@@ -12149,45 +12225,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"clearTextBuffer()"
-			],
-			[
-				"interactionid",
-				177
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"clearTextBuffer()"
-			]
-		]
-	],
-	[
-		327,
-		324,
-		[
-			[
-				"name",
-				"clearInstructionParameters(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"clearInstructionParameters()"
+				"} "
 			],
 			[
 				"interactionid",
@@ -12199,44 +12237,6 @@ aStepsTable = [
 			],
 			[
 				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"clearInstructionParameters()"
-			]
-		]
-	],
-	[
-		325,
-		323,
-		[
-			[
-				"name",
-				"End of IF Statement"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				176
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
 				3
 			],
 			[
@@ -12250,8 +12250,8 @@ aStepsTable = [
 		]
 	],
 	[
-		321,
-		319,
+		315,
+		313,
 		[
 			[
 				"name",
@@ -12267,7 +12267,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				174
+				171
 			],
 			[
 				"visible",
@@ -12293,7 +12293,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">getParseTree</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>"
+				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">generate</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aCommand,lClear</font></span>"
 			],
 			[
 				"active",
@@ -12301,11 +12301,11 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"func getParseTree  { "
+				"func generate aCommand,lClear { "
 			],
 			[
 				"interactionid",
-				179
+				180
 			],
 			[
 				"visible",
@@ -12321,7 +12321,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"function getParseTree "
+				"function generate aCommand,lClear"
 			]
 		]
 	],
@@ -12343,7 +12343,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				179
+				180
 			],
 			[
 				"visible",
@@ -12369,7 +12369,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aParseTree</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aParseTree+aCommand</font></span>"
 			],
 			[
 				"active",
@@ -12377,83 +12377,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"return aParseTree"
-			],
-			[
-				"interactionid",
-				180
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Return aParseTree"
-			]
-		]
-	],
-	[
-		330,
-		328,
-		[
-			[
-				"name",
-				"End of Function"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				179
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of Function"
-			]
-		]
-	],
-	[
-		332,
-		10,
-		[
-			[
-				"name",
-				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">currentInstruction</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"func currentInstruction  { "
+				"aParseTree+aCommand"
 			],
 			[
 				"interactionid",
@@ -12473,7 +12397,45 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"function currentInstruction "
+				"aParseTree+aCommand"
+			]
+		]
+	],
+	[
+		332,
+		329,
+		[
+			[
+				"name",
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">lClear</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"if lClear { "
+			],
+			[
+				"interactionid",
+				182
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"If lClear"
 			]
 		]
 	],
@@ -12495,7 +12457,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				181
+				182
 			],
 			[
 				"visible",
@@ -12521,7 +12483,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">len(&nbsp;aParseTree&nbsp;)&nbsp;</font></span>"
+				"clearTextBuffer(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
 			],
 			[
 				"active",
@@ -12529,11 +12491,11 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"return len( aParseTree ) "
+				"clearTextBuffer()"
 			],
 			[
 				"interactionid",
-				182
+				183
 			],
 			[
 				"visible",
@@ -12549,13 +12511,89 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Return len( aParseTree ) "
+				"clearTextBuffer()"
+			]
+		]
+	],
+	[
+		336,
+		333,
+		[
+			[
+				"name",
+				"clearInstructionParameters(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"clearInstructionParameters()"
+			],
+			[
+				"interactionid",
+				184
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"clearInstructionParameters()"
 			]
 		]
 	],
 	[
 		334,
 		332,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				182
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		330,
+		328,
 		[
 			[
 				"name",
@@ -12571,7 +12609,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				181
+				180
 			],
 			[
 				"visible",
@@ -12592,12 +12630,12 @@ aStepsTable = [
 		]
 	],
 	[
-		336,
+		337,
 		10,
 		[
 			[
 				"name",
-				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">printParseTree</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>"
+				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">getParseTree</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>"
 			],
 			[
 				"active",
@@ -12605,11 +12643,11 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"func printParseTree  { "
+				"func getParseTree  { "
 			],
 			[
 				"interactionid",
-				183
+				185
 			],
 			[
 				"visible",
@@ -12625,13 +12663,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"function printParseTree "
+				"function getParseTree "
 			]
 		]
 	],
 	[
+		338,
 		337,
-		336,
 		[
 			[
 				"name",
@@ -12647,7 +12685,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				183
+				185
 			],
 			[
 				"visible",
@@ -12668,84 +12706,46 @@ aStepsTable = [
 		]
 	],
 	[
+		340,
+		338,
+		[
+			[
+				"name",
+				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aParseTree</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"return aParseTree"
+			],
+			[
+				"interactionid",
+				186
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Return aParseTree"
+			]
+		]
+	],
+	[
 		339,
 		337,
-		[
-			[
-				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Parse&nbsp;Tree...</font></span> (New Line) "
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"? "+char(34)+"Parse Tree..."+char(34)+""
-			],
-			[
-				"interactionid",
-				184
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Print Parse Tree... (New Line) "
-			]
-		]
-	],
-	[
-		340,
-		337,
-		[
-			[
-				"name",
-				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">List2Code(aParseTree)</font></span> (New Line) "
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"? List2Code(aParseTree)"
-			],
-			[
-				"interactionid",
-				185
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Print List2Code(aParseTree) (New Line) "
-			]
-		]
-	],
-	[
-		338,
-		336,
 		[
 			[
 				"name",
@@ -12761,7 +12761,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				183
+				185
 			],
 			[
 				"visible",
@@ -12787,7 +12787,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">TokensText</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nFrom,nTo</font></span>"
+				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">currentInstruction</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>"
 			],
 			[
 				"active",
@@ -12795,11 +12795,11 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"func TokensText nFrom,nTo { "
+				"func currentInstruction  { "
 			],
 			[
 				"interactionid",
-				186
+				187
 			],
 			[
 				"visible",
@@ -12815,7 +12815,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"function TokensText nFrom,nTo"
+				"function currentInstruction "
 			]
 		]
 	],
@@ -12837,7 +12837,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				186
+				187
 			],
 			[
 				"visible",
@@ -12863,7 +12863,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cTokensText</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;&quot;</font></span>"
+				"Return <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">len(&nbsp;aParseTree&nbsp;)&nbsp;</font></span>"
 			],
 			[
 				"active",
@@ -12871,45 +12871,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"cTokensText = "+char(34)+""+char(34)+""
-			],
-			[
-				"interactionid",
-				187
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"cTokensText = "+char(34)+""+char(34)+""
-			]
-		]
-	],
-	[
-		345,
-		342,
-		[
-			[
-				"name",
-				"For <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">t&nbsp;=&nbsp;nFrom</font></span> to <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nTo</font></span> step <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"for t = nFrom to nTo step 1 { "
+				"return len( aParseTree ) "
 			],
 			[
 				"interactionid",
@@ -12929,7 +12891,83 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"For t = nFrom to nTo step 1"
+				"Return len( aParseTree ) "
+			]
+		]
+	],
+	[
+		343,
+		341,
+		[
+			[
+				"name",
+				"End of Function"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				187
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of Function"
+			]
+		]
+	],
+	[
+		345,
+		10,
+		[
+			[
+				"name",
+				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">printParseTree</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"func printParseTree  { "
+			],
+			[
+				"interactionid",
+				189
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"function printParseTree "
 			]
 		]
 	],
@@ -12951,7 +12989,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				188
+				189
 			],
 			[
 				"visible",
@@ -12977,7 +13015,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aToken</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aTokens[t]</font></span>"
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">Parse&nbsp;Tree...</font></span> (New Line) "
 			],
 			[
 				"active",
@@ -12985,7 +13023,83 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"aToken = aTokens[t]"
+				"? "+char(34)+"Parse Tree..."+char(34)+""
+			],
+			[
+				"interactionid",
+				190
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print Parse Tree... (New Line) "
+			]
+		]
+	],
+	[
+		349,
+		346,
+		[
+			[
+				"name",
+				"Print <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">List2Code(aParseTree)</font></span> (New Line) "
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"? List2Code(aParseTree)"
+			],
+			[
+				"interactionid",
+				191
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Print List2Code(aParseTree) (New Line) "
+			]
+		]
+	],
+	[
+		347,
+		345,
+		[
+			[
+				"name",
+				"End of Function"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
 			],
 			[
 				"interactionid",
@@ -12997,63 +13111,25 @@ aStepsTable = [
 			],
 			[
 				"stepnumber",
-				1
+				3
 			],
 			[
 				"steptype",
-				2
+				4
 			],
 			[
 				"plainname",
-				"aToken = aTokens[t]"
-			]
-		]
-	],
-	[
-		349,
-		346,
-		[
-			[
-				"name",
-				"Switch <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aToken[C_TOKENTYPE]</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"switch aToken[C_TOKENTYPE] { "
-			],
-			[
-				"interactionid",
-				190
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Switch aToken[C_TOKENTYPE]"
+				"End of Function"
 			]
 		]
 	],
 	[
 		350,
-		349,
+		10,
 		[
 			[
 				"name",
-				"Start Here"
+				"function <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">TokensText</font></span> <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nFrom,nTo</font></span>"
 			],
 			[
 				"active",
@@ -13061,121 +13137,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				""
-			],
-			[
-				"interactionid",
-				190
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		352,
-		350,
-		[
-			[
-				"name",
-				"Case <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">C_KEYWORD</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"case C_KEYWORD"
-			],
-			[
-				"interactionid",
-				191
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Case C_KEYWORD"
-			]
-		]
-	],
-	[
-		353,
-		352,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				191
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		354,
-		353,
-		[
-			[
-				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cTokensText</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"if cTokensText { "
+				"func TokensText nFrom,nTo { "
 			],
 			[
 				"interactionid",
@@ -13195,7 +13157,121 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If cTokensText"
+				"function TokensText nFrom,nTo"
+			]
+		]
+	],
+	[
+		351,
+		350,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				192
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		353,
+		351,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cTokensText</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">&quot;&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cTokensText = "+char(34)+""+char(34)+""
+			],
+			[
+				"interactionid",
+				193
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cTokensText = "+char(34)+""+char(34)+""
+			]
+		]
+	],
+	[
+		354,
+		351,
+		[
+			[
+				"name",
+				"For <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">t&nbsp;=&nbsp;nFrom</font></span> to <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nTo</font></span> step <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">1</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"for t = nFrom to nTo step 1 { "
+			],
+			[
+				"interactionid",
+				194
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"For t = nFrom to nTo step 1"
 			]
 		]
 	],
@@ -13217,7 +13293,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				192
+				194
 			],
 			[
 				"visible",
@@ -13243,7 +13319,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cTokensText&nbsp;+=&nbsp;&quot;&nbsp;&quot;</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aToken</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aTokens[t]</font></span>"
 			],
 			[
 				"active",
@@ -13251,11 +13327,11 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"cTokensText += "+char(34)+" "+char(34)+""
+				"aToken = aTokens[t]"
 			],
 			[
 				"interactionid",
-				193
+				195
 			],
 			[
 				"visible",
@@ -13271,55 +13347,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"cTokensText += "+char(34)+" "+char(34)+""
-			]
-		]
-	],
-	[
-		356,
-		354,
-		[
-			[
-				"name",
-				"End of IF Statement"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				192
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of IF Statement"
+				"aToken = aTokens[t]"
 			]
 		]
 	],
 	[
 		358,
-		353,
+		355,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cTokensText&nbsp;+=&nbsp;lower(aKeywords[0+aToken[C_TOKENVALUE]])+&quot;&nbsp;&quot;</font></span>"
+				"Switch <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aToken[C_TOKENTYPE]</font></span>"
 			],
 			[
 				"active",
@@ -13327,121 +13365,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"cTokensText += lower(aKeywords[0+aToken[C_TOKENVALUE]])+"+char(34)+" "+char(34)+""
-			],
-			[
-				"interactionid",
-				194
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"cTokensText += lower(aKeywords[0+aToken[C_TOKENVALUE]])+"+char(34)+" "+char(34)+""
-			]
-		]
-	],
-	[
-		359,
-		350,
-		[
-			[
-				"name",
-				"Case <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">C_OPERATOR</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"case C_OPERATOR"
-			],
-			[
-				"interactionid",
-				195
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Case C_OPERATOR"
-			]
-		]
-	],
-	[
-		360,
-		359,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				195
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		361,
-		360,
-		[
-			[
-				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(len(cTokensText)&nbsp;&gt;&nbsp;1)&nbsp;AND&nbsp;(right(cTokensText,1)!&nbsp;=&nbsp;&quot;&nbsp;&quot;)</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"if (len(cTokensText) > 1) AND (right(cTokensText,1)! = "+char(34)+" "+char(34)+") { "
+				"switch aToken[C_TOKENTYPE] { "
 			],
 			[
 				"interactionid",
@@ -13461,13 +13385,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If (len(cTokensText) > 1) AND (right(cTokensText,1)! = "+char(34)+" "+char(34)+")"
+				"Switch aToken[C_TOKENTYPE]"
 			]
 		]
 	],
 	[
-		362,
-		361,
+		359,
+		358,
 		[
 			[
 				"name",
@@ -13504,12 +13428,88 @@ aStepsTable = [
 		]
 	],
 	[
-		364,
+		361,
+		359,
+		[
+			[
+				"name",
+				"Case <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">C_KEYWORD</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"case C_KEYWORD"
+			],
+			[
+				"interactionid",
+				197
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Case C_KEYWORD"
+			]
+		]
+	],
+	[
+		362,
+		361,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				197
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		363,
 		362,
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aToken[C_TOKENVALUE]&nbsp;=&nbsp;&quot;)&quot;&nbsp;OR&nbsp;aToken[C_TOKENVALUE]&nbsp;=&nbsp;&quot;}&quot;</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cTokensText</font></span>"
 			],
 			[
 				"active",
@@ -13517,11 +13517,11 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if aToken[C_TOKENVALUE] = "+char(34)+")"+char(34)+" OR aToken[C_TOKENVALUE] = "+char(34)+"}"+char(34)+" { "
+				"if cTokensText { "
 			],
 			[
 				"interactionid",
-				197
+				198
 			],
 			[
 				"visible",
@@ -13537,89 +13537,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If aToken[C_TOKENVALUE] = "+char(34)+")"+char(34)+" OR aToken[C_TOKENVALUE] = "+char(34)+"}"+char(34)+""
+				"If cTokensText"
 			]
 		]
 	],
 	[
-		365,
 		364,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				197
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		367,
-		365,
-		[
-			[
-				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">right(cTokensText,1)!&nbsp;=&nbsp;&quot;(&quot;&nbsp;OR&nbsp;right(cTokensText,1)&nbsp;=&nbsp;&quot;{&quot;</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"if right(cTokensText,1)! = "+char(34)+"("+char(34)+" OR right(cTokensText,1) = "+char(34)+"{"+char(34)+" { "
-			],
-			[
-				"interactionid",
-				198
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"If right(cTokensText,1)! = "+char(34)+"("+char(34)+" OR right(cTokensText,1) = "+char(34)+"{"+char(34)+""
-			]
-		]
-	],
-	[
-		368,
-		367,
+		363,
 		[
 			[
 				"name",
@@ -13656,8 +13580,8 @@ aStepsTable = [
 		]
 	],
 	[
-		370,
-		368,
+		366,
+		364,
 		[
 			[
 				"name",
@@ -13694,8 +13618,8 @@ aStepsTable = [
 		]
 	],
 	[
-		369,
-		367,
+		365,
+		363,
 		[
 			[
 				"name",
@@ -13732,8 +13656,388 @@ aStepsTable = [
 		]
 	],
 	[
-		366,
-		364,
+		367,
+		362,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cTokensText&nbsp;+=&nbsp;lower(aKeywords[0+aToken[C_TOKENVALUE]])+&quot;&nbsp;&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cTokensText += lower(aKeywords[0+aToken[C_TOKENVALUE]])+"+char(34)+" "+char(34)+""
+			],
+			[
+				"interactionid",
+				200
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cTokensText += lower(aKeywords[0+aToken[C_TOKENVALUE]])+"+char(34)+" "+char(34)+""
+			]
+		]
+	],
+	[
+		368,
+		359,
+		[
+			[
+				"name",
+				"Case <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">C_OPERATOR</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"case C_OPERATOR"
+			],
+			[
+				"interactionid",
+				201
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Case C_OPERATOR"
+			]
+		]
+	],
+	[
+		369,
+		368,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				201
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		370,
+		369,
+		[
+			[
+				"name",
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(len(cTokensText)&nbsp;&gt;&nbsp;1)&nbsp;AND&nbsp;(right(cTokensText,1)&nbsp;!=&nbsp;&quot;&nbsp;&quot;)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"if (len(cTokensText) > 1) AND (right(cTokensText,1) != "+char(34)+" "+char(34)+") { "
+			],
+			[
+				"interactionid",
+				202
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"If (len(cTokensText) > 1) AND (right(cTokensText,1) != "+char(34)+" "+char(34)+")"
+			]
+		]
+	],
+	[
+		371,
+		370,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				202
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		373,
+		371,
+		[
+			[
+				"name",
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aToken[C_TOKENVALUE]&nbsp;=&nbsp;&quot;)&quot;&nbsp;OR&nbsp;aToken[C_TOKENVALUE]&nbsp;=&nbsp;&quot;}&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"if aToken[C_TOKENVALUE] = "+char(34)+")"+char(34)+" OR aToken[C_TOKENVALUE] = "+char(34)+"}"+char(34)+" { "
+			],
+			[
+				"interactionid",
+				203
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"If aToken[C_TOKENVALUE] = "+char(34)+")"+char(34)+" OR aToken[C_TOKENVALUE] = "+char(34)+"}"+char(34)+""
+			]
+		]
+	],
+	[
+		374,
+		373,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				203
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		376,
+		374,
+		[
+			[
+				"name",
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">right(cTokensText,1)&nbsp;!=&nbsp;&quot;(&quot;&nbsp;OR&nbsp;right(cTokensText,1)&nbsp;=&nbsp;&quot;{&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"if right(cTokensText,1) != "+char(34)+"("+char(34)+" OR right(cTokensText,1) = "+char(34)+"{"+char(34)+" { "
+			],
+			[
+				"interactionid",
+				204
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"If right(cTokensText,1) != "+char(34)+"("+char(34)+" OR right(cTokensText,1) = "+char(34)+"{"+char(34)+""
+			]
+		]
+	],
+	[
+		377,
+		376,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				204
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		379,
+		377,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cTokensText&nbsp;+=&nbsp;&quot;&nbsp;&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cTokensText += "+char(34)+" "+char(34)+""
+			],
+			[
+				"interactionid",
+				205
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cTokensText += "+char(34)+" "+char(34)+""
+			]
+		]
+	],
+	[
+		378,
+		376,
 		[
 			[
 				"name",
@@ -13749,7 +14053,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				197
+				204
 			],
 			[
 				"visible",
@@ -13770,12 +14074,924 @@ aStepsTable = [
 		]
 	],
 	[
-		363,
-		361,
+		375,
+		373,
 		[
 			[
 				"name",
 				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				203
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		372,
+		370,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				202
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		380,
+		369,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cTokensText&nbsp;+=&nbsp;aToken[C_TOKENVALUE]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cTokensText += aToken[C_TOKENVALUE]"
+			],
+			[
+				"interactionid",
+				206
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cTokensText += aToken[C_TOKENVALUE]"
+			]
+		]
+	],
+	[
+		381,
+		369,
+		[
+			[
+				"name",
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aToken[C_TOKENVALUE]&nbsp;=&nbsp;&quot;)&quot;&nbsp;OR&nbsp;aToken[C_TOKENVALUE]&nbsp;=&nbsp;&quot;{&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"if aToken[C_TOKENVALUE] = "+char(34)+")"+char(34)+" OR aToken[C_TOKENVALUE] = "+char(34)+"{"+char(34)+" { "
+			],
+			[
+				"interactionid",
+				207
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"If aToken[C_TOKENVALUE] = "+char(34)+")"+char(34)+" OR aToken[C_TOKENVALUE] = "+char(34)+"{"+char(34)+""
+			]
+		]
+	],
+	[
+		382,
+		381,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				207
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		384,
+		382,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cTokensText&nbsp;+=&nbsp;&quot;&nbsp;&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cTokensText += "+char(34)+" "+char(34)+""
+			],
+			[
+				"interactionid",
+				208
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cTokensText += "+char(34)+" "+char(34)+""
+			]
+		]
+	],
+	[
+		383,
+		381,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				207
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		385,
+		359,
+		[
+			[
+				"name",
+				"Case <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">C_LITERAL</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"case C_LITERAL"
+			],
+			[
+				"interactionid",
+				209
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Case C_LITERAL"
+			]
+		]
+	],
+	[
+		386,
+		385,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				209
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		387,
+		386,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cTokensText&nbsp;+=&nbsp;valueAsString(aToken[C_TOKENVALUE])+&quot;&nbsp;&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cTokensText += valueAsString(aToken[C_TOKENVALUE])+"+char(34)+" "+char(34)+""
+			],
+			[
+				"interactionid",
+				210
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cTokensText += valueAsString(aToken[C_TOKENVALUE])+"+char(34)+" "+char(34)+""
+			]
+		]
+	],
+	[
+		388,
+		359,
+		[
+			[
+				"name",
+				"Case <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">C_NUMBER</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"case C_NUMBER"
+			],
+			[
+				"interactionid",
+				211
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Case C_NUMBER"
+			]
+		]
+	],
+	[
+		389,
+		388,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				211
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		390,
+		389,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cTokensText&nbsp;+=&nbsp;&quot;&quot;+aToken[C_TOKENVALUE]+&quot;&nbsp;&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cTokensText += "+char(34)+""+char(34)+"+aToken[C_TOKENVALUE]+"+char(34)+" "+char(34)+""
+			],
+			[
+				"interactionid",
+				212
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cTokensText += "+char(34)+""+char(34)+"+aToken[C_TOKENVALUE]+"+char(34)+" "+char(34)+""
+			]
+		]
+	],
+	[
+		391,
+		359,
+		[
+			[
+				"name",
+				"Case <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">C_IDENTIFIER</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"case C_IDENTIFIER"
+			],
+			[
+				"interactionid",
+				213
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Case C_IDENTIFIER"
+			]
+		]
+	],
+	[
+		392,
+		391,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				213
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		393,
+		392,
+		[
+			[
+				"name",
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(len(cTokensText)&nbsp;&gt;&nbsp;1)&nbsp;AND&nbsp;(right(cTokensText,1)&nbsp;!=&nbsp;&quot;&nbsp;&quot;)</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"if (len(cTokensText) > 1) AND (right(cTokensText,1) != "+char(34)+" "+char(34)+") { "
+			],
+			[
+				"interactionid",
+				214
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"If (len(cTokensText) > 1) AND (right(cTokensText,1) != "+char(34)+" "+char(34)+")"
+			]
+		]
+	],
+	[
+		394,
+		393,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				214
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		396,
+		394,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cTokensText&nbsp;+=&nbsp;&quot;&nbsp;&quot;</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cTokensText += "+char(34)+" "+char(34)+""
+			],
+			[
+				"interactionid",
+				215
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cTokensText += "+char(34)+" "+char(34)+""
+			]
+		]
+	],
+	[
+		395,
+		393,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				214
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		397,
+		392,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cTokensText&nbsp;+=&nbsp;&quot;&quot;+aToken[C_TOKENVALUE]</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"cTokensText += "+char(34)+""+char(34)+"+aToken[C_TOKENVALUE]"
+			],
+			[
+				"interactionid",
+				216
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"cTokensText += "+char(34)+""+char(34)+"+aToken[C_TOKENVALUE]"
+			]
+		]
+	],
+	[
+		398,
+		359,
+		[
+			[
+				"name",
+				"Case <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">C_ENDLINE</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"case C_ENDLINE"
+			],
+			[
+				"interactionid",
+				217
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Case C_ENDLINE"
+			]
+		]
+	],
+	[
+		399,
+		398,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				217
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		400,
+		359,
+		[
+			[
+				"name",
+				"Case <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">C_COMMENT</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"case C_COMMENT"
+			],
+			[
+				"interactionid",
+				218
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Case C_COMMENT"
+			]
+		]
+	],
+	[
+		401,
+		400,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				218
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		360,
+		358,
+		[
+			[
+				"name",
+				"End of Switch"
 			],
 			[
 				"active",
@@ -13803,169 +15019,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"End of IF Statement"
+				"End of Switch"
 			]
 		]
 	],
 	[
-		371,
-		360,
+		356,
+		354,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cTokensText&nbsp;+=&nbsp;aToken[C_TOKENVALUE]</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"cTokensText += aToken[C_TOKENVALUE]"
-			],
-			[
-				"interactionid",
-				200
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"cTokensText += aToken[C_TOKENVALUE]"
-			]
-		]
-	],
-	[
-		372,
-		360,
-		[
-			[
-				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">aToken[C_TOKENVALUE]&nbsp;=&nbsp;&quot;)&quot;&nbsp;OR&nbsp;aToken[C_TOKENVALUE]&nbsp;=&nbsp;&quot;{&quot;</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"if aToken[C_TOKENVALUE] = "+char(34)+")"+char(34)+" OR aToken[C_TOKENVALUE] = "+char(34)+"{"+char(34)+" { "
-			],
-			[
-				"interactionid",
-				201
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"If aToken[C_TOKENVALUE] = "+char(34)+")"+char(34)+" OR aToken[C_TOKENVALUE] = "+char(34)+"{"+char(34)+""
-			]
-		]
-	],
-	[
-		373,
-		372,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				201
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		375,
-		373,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cTokensText&nbsp;+=&nbsp;&quot;&nbsp;&quot;</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"cTokensText += "+char(34)+" "+char(34)+""
-			],
-			[
-				"interactionid",
-				202
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"cTokensText += "+char(34)+" "+char(34)+""
-			]
-		]
-	],
-	[
-		374,
-		372,
-		[
-			[
-				"name",
-				"End of IF Statement"
+				"End of For Loop"
 			],
 			[
 				"active",
@@ -13977,7 +15041,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				201
+				194
 			],
 			[
 				"visible",
@@ -13993,735 +15057,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"End of IF Statement"
+				"End of For Loop"
 			]
 		]
 	],
 	[
-		376,
-		350,
-		[
-			[
-				"name",
-				"Case <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">C_LITERAL</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"case C_LITERAL"
-			],
-			[
-				"interactionid",
-				203
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Case C_LITERAL"
-			]
-		]
-	],
-	[
-		377,
-		376,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				203
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		378,
-		377,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cTokensText&nbsp;+=&nbsp;valueAsString(aToken[C_TOKENVALUE])+&quot;&nbsp;&quot;</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"cTokensText += valueAsString(aToken[C_TOKENVALUE])+"+char(34)+" "+char(34)+""
-			],
-			[
-				"interactionid",
-				204
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"cTokensText += valueAsString(aToken[C_TOKENVALUE])+"+char(34)+" "+char(34)+""
-			]
-		]
-	],
-	[
-		379,
-		350,
-		[
-			[
-				"name",
-				"Case <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">C_NUMBER</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"case C_NUMBER"
-			],
-			[
-				"interactionid",
-				205
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Case C_NUMBER"
-			]
-		]
-	],
-	[
-		380,
-		379,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				205
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		381,
-		380,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cTokensText&nbsp;+=&nbsp;&quot;&quot;+aToken[C_TOKENVALUE]+&quot;&nbsp;&quot;</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"cTokensText += "+char(34)+""+char(34)+"+aToken[C_TOKENVALUE]+"+char(34)+" "+char(34)+""
-			],
-			[
-				"interactionid",
-				206
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"cTokensText += "+char(34)+""+char(34)+"+aToken[C_TOKENVALUE]+"+char(34)+" "+char(34)+""
-			]
-		]
-	],
-	[
-		382,
-		350,
-		[
-			[
-				"name",
-				"Case <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">C_IDENTIFIER</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"case C_IDENTIFIER"
-			],
-			[
-				"interactionid",
-				207
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Case C_IDENTIFIER"
-			]
-		]
-	],
-	[
-		383,
-		382,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				207
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		384,
-		383,
-		[
-			[
-				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">(len(cTokensText)&nbsp;&gt;&nbsp;1)&nbsp;AND&nbsp;(right(cTokensText,1)!&nbsp;=&nbsp;&quot;&nbsp;&quot;)</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"if (len(cTokensText) > 1) AND (right(cTokensText,1)! = "+char(34)+" "+char(34)+") { "
-			],
-			[
-				"interactionid",
-				208
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"If (len(cTokensText) > 1) AND (right(cTokensText,1)! = "+char(34)+" "+char(34)+")"
-			]
-		]
-	],
-	[
-		385,
-		384,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				208
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		387,
-		385,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cTokensText&nbsp;+=&nbsp;&quot;&nbsp;&quot;</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"cTokensText += "+char(34)+" "+char(34)+""
-			],
-			[
-				"interactionid",
-				209
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"cTokensText += "+char(34)+" "+char(34)+""
-			]
-		]
-	],
-	[
-		386,
-		384,
-		[
-			[
-				"name",
-				"End of IF Statement"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				208
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of IF Statement"
-			]
-		]
-	],
-	[
-		388,
-		383,
-		[
-			[
-				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cTokensText&nbsp;+=&nbsp;&quot;&quot;+aToken[C_TOKENVALUE]</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"cTokensText += "+char(34)+""+char(34)+"+aToken[C_TOKENVALUE]"
-			],
-			[
-				"interactionid",
-				210
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"cTokensText += "+char(34)+""+char(34)+"+aToken[C_TOKENVALUE]"
-			]
-		]
-	],
-	[
-		389,
-		350,
-		[
-			[
-				"name",
-				"Case <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">C_ENDLINE</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"case C_ENDLINE"
-			],
-			[
-				"interactionid",
-				211
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Case C_ENDLINE"
-			]
-		]
-	],
-	[
-		390,
-		389,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				211
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		391,
-		350,
-		[
-			[
-				"name",
-				"Case <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">C_COMMENT</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"case C_COMMENT"
-			],
-			[
-				"interactionid",
-				212
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"Case C_COMMENT"
-			]
-		]
-	],
-	[
-		392,
-		391,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				212
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
+		402,
 		351,
-		349,
-		[
-			[
-				"name",
-				"End of Switch"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				190
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of Switch"
-			]
-		]
-	],
-	[
-		347,
-		345,
-		[
-			[
-				"name",
-				"End of For Loop"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"} "
-			],
-			[
-				"interactionid",
-				188
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				4
-			],
-			[
-				"plainname",
-				"End of For Loop"
-			]
-		]
-	],
-	[
-		393,
-		342,
 		[
 			[
 				"name",
@@ -14737,7 +15079,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				213
+				219
 			],
 			[
 				"visible",
@@ -14758,8 +15100,8 @@ aStepsTable = [
 		]
 	],
 	[
-		343,
-		341,
+		352,
+		350,
 		[
 			[
 				"name",
@@ -14775,7 +15117,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				186
+				192
 			],
 			[
 				"visible",
@@ -14954,1704 +15296,1752 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"value;;_RV_;;**	Project : Programming Without Coding Technology (PWCT) Version 2.0;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"value;;_RV_;;**	File Purpose : Import Tool - Parser;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"value;;_RV_;;**	Date : 2020.02.15;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"value;;_RV_;;**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"class",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"value;;_RV_;;ParserTokens;;_RV_;;value2;;_RV_;;;;_RV_;;value3;;_RV_;;2;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"func",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"name;;_RV_;;setTokens;;_RV_;;parameters;;_RV_;;aList;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"leftside;;_RV_;;aTokens;;_RV_;;rightside;;_RV_;;aList;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"leftside;;_RV_;;nActiveToken;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"leftside;;_RV_;;nTokensCount;;_RV_;;rightside;;_RV_;;len(aTokens);;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"func",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"name;;_RV_;;start;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;nextToken;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"doagain",
-		"01/06/2025",
-		"18:23:54",
-		"condition;;_RV_;;(nActiveToken! = nTokensCount);;_RV_;;"
+		"23/08/2025",
+		"08:07:30",
+		"condition;;_RV_;;(nActiveToken != nTokensCount);;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"condition;;_RV_;;!mainClass();;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;error;;_RV_;;parameters;;_RV_;;"+char(34)+"Parsing Error!"+char(34)+";;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"return",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"value;;_RV_;;False;;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"return",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"value;;_RV_;;True;;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"func",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"name;;_RV_;;ignoreNewLine;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;DisableBufferFlag;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"whileloop",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"condition;;_RV_;;epslion();;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;EnableBufferFlag;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"func",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"name;;_RV_;;epslion;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"condition;;_RV_;;isendline();;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"condition;;_RV_;;nexttoken() OR nTokensCount = 1;;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"return",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"value;;_RV_;;True;;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"condition;;_RV_;;isComment();;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"callmethod",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"loutput;;_RV_;;0;;_RV_;;object;;_RV_;;oTarget;;_RV_;;name;;_RV_;;GenerateComment;;_RV_;;parameters;;_RV_;;self;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		30,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"condition;;_RV_;;nexttoken();;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"return",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"value;;_RV_;;True;;_RV_;;"
 	],
 	[
 		32,
 		1,
 		"return",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"value;;_RV_;;False;;_RV_;;"
 	],
 	[
 		33,
 		1,
 		"func",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"name;;_RV_;;loadToken;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		34,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"leftside;;_RV_;;aActiveToken;;_RV_;;rightside;;_RV_;;aTokens[nActiveToken];;_RV_;;"
 	],
 	[
 		35,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"leftside;;_RV_;;nTokenType;;_RV_;;rightside;;_RV_;;aActiveToken[C_TOKENTYPE];;_RV_;;"
 	],
 	[
 		36,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"leftside;;_RV_;;cTokenValue;;_RV_;;rightside;;_RV_;;aActiveToken[C_TOKENVALUE];;_RV_;;"
 	],
 	[
 		37,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"leftside;;_RV_;;nTokenIndex;;_RV_;;rightside;;_RV_;;aActiveToken[C_TOKENINDEX];;_RV_;;"
 	],
 	[
 		38,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"condition;;_RV_;;lBufferFlag;;_RV_;;"
 	],
 	[
 		39,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddToTextBuffer;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		40,
 		1,
 		"func",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"name;;_RV_;;clearTextBuffer;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		41,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"leftside;;_RV_;;cBuffer;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		42,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"leftside;;_RV_;;cBuffer2;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		43,
 		1,
 		"func",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"name;;_RV_;;addParameter;;_RV_;;parameters;;_RV_;;cAttribute;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		44,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"leftside;;_RV_;;aInstructionParameters[cAttribute];;_RV_;;rightside;;_RV_;;cBuffer;;_RV_;;"
 	],
 	[
 		45,
 		1,
 		"return",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"value;;_RV_;;cBuffer;;_RV_;;"
 	],
 	[
 		46,
 		1,
 		"func",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"name;;_RV_;;addParameterAndValue;;_RV_;;parameters;;_RV_;;cAttribute,cValue;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		47,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"leftside;;_RV_;;aInstructionParameters[cAttribute];;_RV_;;rightside;;_RV_;;cValue;;_RV_;;"
 	],
 	[
 		48,
 		1,
 		"return",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		49,
 		1,
 		"func",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"name;;_RV_;;addParameterFromSecondBuffer;;_RV_;;parameters;;_RV_;;cAttribute;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		50,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"leftside;;_RV_;;aInstructionParameters[cAttribute];;_RV_;;rightside;;_RV_;;cBuffer2;;_RV_;;"
 	],
 	[
 		51,
 		1,
 		"return",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"value;;_RV_;;cBuffer2;;_RV_;;"
 	],
 	[
 		52,
 		1,
 		"func",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"name;;_RV_;;parameter;;_RV_;;parameters;;_RV_;;cAttribute;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		53,
 		1,
 		"return",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"value;;_RV_;;aInstructionParameters[ cAttribute];;_RV_;;"
 	],
 	[
 		54,
 		1,
 		"func",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"name;;_RV_;;clearInstructionParameters;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		55,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"leftside;;_RV_;;aInstructionParameters;;_RV_;;rightside;;_RV_;;[];;_RV_;;"
 	],
 	[
 		56,
 		1,
 		"func",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"name;;_RV_;;addParameterToInstruction;;_RV_;;parameters;;_RV_;;nIns,cAttribute;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		57,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"leftside;;_RV_;;aParseTree[nIns][cAttribute];;_RV_;;rightside;;_RV_;;cBuffer;;_RV_;;"
 	],
 	[
 		58,
 		1,
 		"func",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"name;;_RV_;;addParameterToInstructionFromSecondBuffer;;_RV_;;parameters;;_RV_;;nIns,cAttribute;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		59,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"leftside;;_RV_;;aParseTree[nIns][cAttribute];;_RV_;;rightside;;_RV_;;cBuffer2;;_RV_;;"
 	],
 	[
 		60,
 		1,
 		"func",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"name;;_RV_;;valueAsString;;_RV_;;parameters;;_RV_;;cValue;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		61,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"value;;_RV_;;Add "+char(34)+" "+char(34)+" or ' ' or ` `;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		62,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"condition;;_RV_;;substr(cValue,'"+char(34)+"') = 0;;_RV_;;"
 	],
 	[
 		63,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"leftside;;_RV_;;cChar;;_RV_;;rightside;;_RV_;;'"+char(34)+"';;_RV_;;"
 	],
 	[
 		64,
 		1,
 		"elseif",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"condition;;_RV_;;substr(cValue,"+char(34)+"'"+char(34)+") = 0;;_RV_;;"
 	],
 	[
 		65,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"leftside;;_RV_;;cChar;;_RV_;;rightside;;_RV_;;"+char(34)+"'"+char(34)+";;_RV_;;"
 	],
 	[
 		66,
 		1,
 		"else",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		""
 	],
 	[
 		67,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"leftside;;_RV_;;cChar;;_RV_;;rightside;;_RV_;;"+char(34)+"`"+char(34)+";;_RV_;;"
 	],
 	[
 		68,
 		1,
 		"return",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"value;;_RV_;;cChar+ cValue+ cChar;;_RV_;;"
 	],
 	[
 		69,
 		1,
 		"func",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"name;;_RV_;;processToken;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		70,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"value;;_RV_;;We use cTokenValue2 to avoid updating cTokenValue;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		71,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"value;;_RV_;;Because ValueAsString() could be called many times;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		72,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"condition;;_RV_;;Find([C_LITERAL,C_NUMBER,C_OPERATOR,C_IDENTIFIER],nTokenType);;_RV_;;"
 	],
 	[
 		73,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"leftside;;_RV_;;cTokenValue2;;_RV_;;rightside;;_RV_;;cTokenValue;;_RV_;;"
 	],
 	[
 		74,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"condition;;_RV_;;nTokenType = C_LITERAL;;_RV_;;"
 	],
 	[
 		75,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"leftside;;_RV_;;cTokenValue2;;_RV_;;rightside;;_RV_;;ValueAsString(cTokenValue);;_RV_;;"
 	],
 	[
 		76,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"condition;;_RV_;;nTokenType = C_OPERATOR;;_RV_;;"
 	],
 	[
 		77,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"condition;;_RV_;;cTokenValue = "+char(34)+"?"+char(34)+";;_RV_;;"
 	],
 	[
 		78,
 		1,
 		"return",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		79,
 		1,
 		"elseif",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"condition;;_RV_;;cTokenValue = "+char(34)+"="+char(34)+";;_RV_;;"
 	],
 	[
 		80,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"condition;;_RV_;;right(cBuffer,3) = "+char(34)+" < "+char(34)+" OR right(cBuffer,3) = "+char(34)+" > "+char(34)+";;_RV_;;"
 	],
 	[
 		81,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"leftside;;_RV_;;cBuffer;;_RV_;;rightside;;_RV_;;left(cBuffer,len(cBuffer)-1)+"+char(34)+"= "+char(34)+";;_RV_;;"
 	],
 	[
 		82,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"leftside;;_RV_;;cBuffer2;;_RV_;;rightside;;_RV_;;left(cBuffer2,len(cBuffer2)-1)+"+char(34)+"= "+char(34)+";;_RV_;;"
 	],
 	[
 		83,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"leftside;;_RV_;;cTokenValue;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		84,
 		1,
 		"return",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"value;;_RV_;;;;_RV_;;"
 	],
 	[
 		85,
 		1,
 		"else",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		""
 	],
 	[
 		86,
 		1,
 		"return",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"value;;_RV_;;"+char(34)+" = "+char(34)+" ;;_RV_;;"
 	],
 	[
 		87,
 		1,
 		"elseif",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"condition;;_RV_;;cTokenValue = "+char(34)+"+="+char(34)+";;_RV_;;"
 	],
 	[
 		88,
 		1,
 		"return",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"value;;_RV_;;"+char(34)+" += "+char(34)+" ;;_RV_;;"
 	],
 	[
 		89,
 		1,
 		"elseif",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"condition;;_RV_;;cTokenValue = "+char(34)+"-="+char(34)+";;_RV_;;"
 	],
 	[
 		90,
 		1,
 		"return",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"value;;_RV_;;"+char(34)+" -= "+char(34)+" ;;_RV_;;"
 	],
 	[
 		91,
 		1,
 		"elseif",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"condition;;_RV_;;cTokenValue = "+char(34)+"*="+char(34)+";;_RV_;;"
 	],
 	[
 		92,
 		1,
 		"return",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"value;;_RV_;;"+char(34)+" *= "+char(34)+" ;;_RV_;;"
 	],
 	[
 		93,
 		1,
 		"elseif",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"condition;;_RV_;;cTokenValue = "+char(34)+"<"+char(34)+";;_RV_;;"
 	],
 	[
 		94,
 		1,
 		"return",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"value;;_RV_;;"+char(34)+" < "+char(34)+" ;;_RV_;;"
 	],
 	[
 		95,
 		1,
 		"elseif",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"condition;;_RV_;;cTokenValue = "+char(34)+">"+char(34)+";;_RV_;;"
 	],
 	[
 		96,
 		1,
 		"return",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"value;;_RV_;;"+char(34)+" > "+char(34)+" ;;_RV_;;"
 	],
 	[
 		97,
 		1,
-		"return",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;cTokenValue2;;_RV_;;"
+		"elseif",
+		"23/08/2025",
+		"08:07:30",
+		"condition;;_RV_;;cTokenValue = "+char(34)+"<="+char(34)+";;_RV_;;"
 	],
 	[
 		98,
 		1,
-		"func",
-		"01/06/2025",
-		"18:23:54",
-		"name;;_RV_;;addToTextBuffer;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"return",
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;"+char(34)+" <= "+char(34)+" ;;_RV_;;"
 	],
 	[
 		99,
 		1,
-		"freetyping",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;cBuffer += ProcessToken();;_RV_;;"
+		"elseif",
+		"23/08/2025",
+		"08:07:30",
+		"condition;;_RV_;;cTokenValue = "+char(34)+">="+char(34)+";;_RV_;;"
 	],
 	[
 		100,
 		1,
-		"func",
-		"01/06/2025",
-		"18:23:54",
-		"name;;_RV_;;manualAddToTextBuffer;;_RV_;;parameters;;_RV_;;cText;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"return",
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;"+char(34)+" >= "+char(34)+" ;;_RV_;;"
 	],
 	[
 		101,
 		1,
-		"freetyping",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;cBuffer += cText;;_RV_;;"
+		"elseif",
+		"23/08/2025",
+		"08:07:30",
+		"condition;;_RV_;;cTokenValue = "+char(34)+"!="+char(34)+";;_RV_;;"
 	],
 	[
 		102,
 		1,
-		"func",
-		"01/06/2025",
-		"18:23:54",
-		"name;;_RV_;;manualAddToSecondTextBuffer;;_RV_;;parameters;;_RV_;;cText;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"return",
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;"+char(34)+" != "+char(34)+" ;;_RV_;;"
 	],
 	[
 		103,
 		1,
-		"freetyping",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;cBuffer2 += cText;;_RV_;;"
+		"return",
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;cTokenValue2;;_RV_;;"
 	],
 	[
 		104,
 		1,
 		"func",
-		"01/06/2025",
-		"18:23:54",
-		"name;;_RV_;;addToSecondTextBuffer;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"23/08/2025",
+		"08:07:30",
+		"name;;_RV_;;addToTextBuffer;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		105,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;cBuffer2 += ProcessToken();;_RV_;;"
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;cBuffer += ProcessToken();;_RV_;;"
 	],
 	[
 		106,
 		1,
 		"func",
-		"01/06/2025",
-		"18:23:54",
-		"name;;_RV_;;enableBufferFlag;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"23/08/2025",
+		"08:07:30",
+		"name;;_RV_;;manualAddToTextBuffer;;_RV_;;parameters;;_RV_;;cText;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		107,
 		1,
-		"assignment",
-		"01/06/2025",
-		"18:23:54",
-		"leftside;;_RV_;;lBufferFlag;;_RV_;;rightside;;_RV_;;True;;_RV_;;"
+		"freetyping",
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;cBuffer += cText;;_RV_;;"
 	],
 	[
 		108,
 		1,
 		"func",
-		"01/06/2025",
-		"18:23:54",
-		"name;;_RV_;;disableBufferFlag;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"23/08/2025",
+		"08:07:30",
+		"name;;_RV_;;manualAddToSecondTextBuffer;;_RV_;;parameters;;_RV_;;cText;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		109,
 		1,
-		"assignment",
-		"01/06/2025",
-		"18:23:54",
-		"leftside;;_RV_;;lBufferFlag;;_RV_;;rightside;;_RV_;;False;;_RV_;;"
+		"freetyping",
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;cBuffer2 += cText;;_RV_;;"
 	],
 	[
 		110,
 		1,
 		"func",
-		"01/06/2025",
-		"18:23:54",
-		"name;;_RV_;;nextToken;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"23/08/2025",
+		"08:07:30",
+		"name;;_RV_;;addToSecondTextBuffer;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		111,
 		1,
-		"ifstatement",
-		"01/06/2025",
-		"18:23:54",
-		"condition;;_RV_;;nActiveToken < nTokensCount;;_RV_;;"
+		"freetyping",
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;cBuffer2 += ProcessToken();;_RV_;;"
 	],
 	[
 		112,
 		1,
-		"ifstatement",
-		"01/06/2025",
-		"18:23:54",
-		"condition;;_RV_;;lBufferFlag;;_RV_;;"
+		"func",
+		"23/08/2025",
+		"08:07:30",
+		"name;;_RV_;;enableBufferFlag;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		113,
 		1,
-		"callfunc",
-		"01/06/2025",
-		"18:23:54",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddToSecondTextBuffer;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"23/08/2025",
+		"08:07:30",
+		"leftside;;_RV_;;lBufferFlag;;_RV_;;rightside;;_RV_;;True;;_RV_;;"
 	],
 	[
 		114,
 		1,
-		"freetyping",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;nActiveToken++;;_RV_;;"
+		"func",
+		"23/08/2025",
+		"08:07:30",
+		"name;;_RV_;;disableBufferFlag;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		115,
 		1,
-		"callfunc",
-		"01/06/2025",
-		"18:23:54",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;LoadToken;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"23/08/2025",
+		"08:07:30",
+		"leftside;;_RV_;;lBufferFlag;;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
 		116,
 		1,
-		"return",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;True;;_RV_;;"
+		"func",
+		"23/08/2025",
+		"08:07:30",
+		"name;;_RV_;;nextToken;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		117,
 		1,
-		"return",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;False;;_RV_;;"
+		"ifstatement",
+		"23/08/2025",
+		"08:07:30",
+		"condition;;_RV_;;nActiveToken < nTokensCount;;_RV_;;"
 	],
 	[
 		118,
 		1,
-		"func",
-		"01/06/2025",
-		"18:23:54",
-		"name;;_RV_;;removeCurrentTokenFromBuffer;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"ifstatement",
+		"23/08/2025",
+		"08:07:30",
+		"condition;;_RV_;;lBufferFlag;;_RV_;;"
 	],
 	[
 		119,
 		1,
-		"ifstatement",
-		"01/06/2025",
-		"18:23:54",
-		"condition;;_RV_;;right(cBuffer,len(cTokenValue)) = cTokenValue;;_RV_;;"
+		"callfunc",
+		"23/08/2025",
+		"08:07:30",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AddToSecondTextBuffer;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		120,
 		1,
-		"assignment",
-		"01/06/2025",
-		"18:23:54",
-		"leftside;;_RV_;;cBuffer;;_RV_;;rightside;;_RV_;;left(cBuffer,len(cBuffer)-len(cTokenValue));;_RV_;;"
+		"freetyping",
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;nActiveToken++;;_RV_;;"
 	],
 	[
 		121,
 		1,
-		"ifstatement",
-		"01/06/2025",
-		"18:23:54",
-		"condition;;_RV_;;right(cBuffer2,len(cTokenValue)) = cTokenValue;;_RV_;;"
+		"callfunc",
+		"23/08/2025",
+		"08:07:30",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;LoadToken;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		122,
 		1,
-		"assignment",
-		"01/06/2025",
-		"18:23:54",
-		"leftside;;_RV_;;cBuffer2;;_RV_;;rightside;;_RV_;;left(cBuffer2,len(cBuffer2)-len(cTokenValue));;_RV_;;"
+		"return",
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;True;;_RV_;;"
 	],
 	[
 		123,
 		1,
-		"func",
-		"01/06/2025",
-		"18:23:54",
-		"name;;_RV_;;removeOpenedBraceFromBuffer;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"return",
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;False;;_RV_;;"
 	],
 	[
 		124,
 		1,
-		"ifstatement",
-		"01/06/2025",
-		"18:23:54",
-		"condition;;_RV_;;right(cBuffer,1) = "+char(34)+"{"+char(34)+";;_RV_;;"
+		"func",
+		"23/08/2025",
+		"08:07:30",
+		"name;;_RV_;;removeCurrentTokenFromBuffer;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		125,
 		1,
-		"assignment",
-		"01/06/2025",
-		"18:23:54",
-		"leftside;;_RV_;;cBuffer;;_RV_;;rightside;;_RV_;;left(cBuffer,len(cBuffer)-1);;_RV_;;"
+		"ifstatement",
+		"23/08/2025",
+		"08:07:30",
+		"condition;;_RV_;;right(cBuffer,len(cTokenValue)) = cTokenValue;;_RV_;;"
 	],
 	[
 		126,
 		1,
-		"ifstatement",
-		"01/06/2025",
-		"18:23:54",
-		"condition;;_RV_;;right(cBuffer2,1) = "+char(34)+"{"+char(34)+";;_RV_;;"
+		"assignment",
+		"23/08/2025",
+		"08:07:30",
+		"leftside;;_RV_;;cBuffer;;_RV_;;rightside;;_RV_;;left(cBuffer,len(cBuffer)-len(cTokenValue));;_RV_;;"
 	],
 	[
 		127,
 		1,
-		"assignment",
-		"01/06/2025",
-		"18:23:54",
-		"leftside;;_RV_;;cBuffer2;;_RV_;;rightside;;_RV_;;left(cBuffer2,len(cBuffer2)-1);;_RV_;;"
+		"ifstatement",
+		"23/08/2025",
+		"08:07:30",
+		"condition;;_RV_;;right(cBuffer2,len(cTokenValue)) = cTokenValue;;_RV_;;"
 	],
 	[
 		128,
 		1,
-		"func",
-		"01/06/2025",
-		"18:23:54",
-		"name;;_RV_;;isKeyword;;_RV_;;parameters;;_RV_;;cKeyword;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"23/08/2025",
+		"08:07:30",
+		"leftside;;_RV_;;cBuffer2;;_RV_;;rightside;;_RV_;;left(cBuffer2,len(cBuffer2)-len(cTokenValue));;_RV_;;"
 	],
 	[
 		129,
 		1,
-		"return",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;nTokenType= C_KEYWORD and Number( cTokenValue ) = cKeyword;;_RV_;;"
+		"func",
+		"23/08/2025",
+		"08:07:30",
+		"name;;_RV_;;removeOpenedBraceFromBuffer;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		130,
 		1,
-		"func",
-		"01/06/2025",
-		"18:23:54",
-		"name;;_RV_;;isOperator;;_RV_;;parameters;;_RV_;;cOperator;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"ifstatement",
+		"23/08/2025",
+		"08:07:30",
+		"condition;;_RV_;;right(cBuffer,1) = "+char(34)+"{"+char(34)+";;_RV_;;"
 	],
 	[
 		131,
 		1,
-		"return",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;nTokenType= C_OPERATOR and cTokenValue= cOperator;;_RV_;;"
+		"assignment",
+		"23/08/2025",
+		"08:07:30",
+		"leftside;;_RV_;;cBuffer;;_RV_;;rightside;;_RV_;;left(cBuffer,len(cBuffer)-1);;_RV_;;"
 	],
 	[
 		132,
 		1,
-		"func",
-		"01/06/2025",
-		"18:23:54",
-		"name;;_RV_;;isLiteral;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"ifstatement",
+		"23/08/2025",
+		"08:07:30",
+		"condition;;_RV_;;right(cBuffer2,1) = "+char(34)+"{"+char(34)+";;_RV_;;"
 	],
 	[
 		133,
 		1,
-		"return",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;nTokenType= C_LITERAL;;_RV_;;"
+		"assignment",
+		"23/08/2025",
+		"08:07:30",
+		"leftside;;_RV_;;cBuffer2;;_RV_;;rightside;;_RV_;;left(cBuffer2,len(cBuffer2)-1);;_RV_;;"
 	],
 	[
 		134,
 		1,
 		"func",
-		"01/06/2025",
-		"18:23:54",
-		"name;;_RV_;;isNumber;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"23/08/2025",
+		"08:07:30",
+		"name;;_RV_;;isKeyword;;_RV_;;parameters;;_RV_;;cKeyword;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		135,
 		1,
 		"return",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;nTokenType= C_NUMBER;;_RV_;;"
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;nTokenType= C_KEYWORD and Number( cTokenValue ) = cKeyword;;_RV_;;"
 	],
 	[
 		136,
 		1,
 		"func",
-		"01/06/2025",
-		"18:23:54",
-		"name;;_RV_;;isIdentifier;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"23/08/2025",
+		"08:07:30",
+		"name;;_RV_;;isOperator;;_RV_;;parameters;;_RV_;;cOperator;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		137,
 		1,
 		"return",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;nTokenType= C_IDENTIFIER;;_RV_;;"
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;nTokenType= C_OPERATOR and cTokenValue= cOperator;;_RV_;;"
 	],
 	[
 		138,
 		1,
 		"func",
-		"01/06/2025",
-		"18:23:54",
-		"name;;_RV_;;isEndLine;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"23/08/2025",
+		"08:07:30",
+		"name;;_RV_;;isLiteral;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		139,
 		1,
 		"return",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;nTokenType= C_ENDLINE;;_RV_;;"
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;nTokenType= C_LITERAL;;_RV_;;"
 	],
 	[
 		140,
 		1,
 		"func",
-		"01/06/2025",
-		"18:23:54",
-		"name;;_RV_;;isComment;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"23/08/2025",
+		"08:07:30",
+		"name;;_RV_;;isNumber;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		141,
 		1,
 		"return",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;nTokenType= C_COMMENT;;_RV_;;"
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;nTokenType= C_NUMBER;;_RV_;;"
 	],
 	[
 		142,
 		1,
 		"func",
-		"01/06/2025",
-		"18:23:54",
-		"name;;_RV_;;isAnyKeyword;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"23/08/2025",
+		"08:07:30",
+		"name;;_RV_;;isIdentifier;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		143,
 		1,
 		"return",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;nTokenType= C_KEYWORD;;_RV_;;"
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;nTokenType= C_IDENTIFIER;;_RV_;;"
 	],
 	[
 		144,
 		1,
 		"func",
-		"01/06/2025",
-		"18:23:54",
-		"name;;_RV_;;isAnyOperator;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"23/08/2025",
+		"08:07:30",
+		"name;;_RV_;;isEndLine;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		145,
 		1,
 		"return",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;nTokenType= C_OPERATOR;;_RV_;;"
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;nTokenType= C_ENDLINE;;_RV_;;"
 	],
 	[
 		146,
 		1,
 		"func",
-		"01/06/2025",
-		"18:23:54",
-		"name;;_RV_;;isOperator2;;_RV_;;parameters;;_RV_;;nIndex;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"23/08/2025",
+		"08:07:30",
+		"name;;_RV_;;isComment;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		147,
 		1,
 		"return",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;nTokenType= C_OPERATOR and nTokenIndex= nIndex;;_RV_;;"
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;nTokenType= C_COMMENT;;_RV_;;"
 	],
 	[
 		148,
 		1,
 		"func",
-		"01/06/2025",
-		"18:23:54",
-		"name;;_RV_;;setToken;;_RV_;;parameters;;_RV_;;x;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"23/08/2025",
+		"08:07:30",
+		"name;;_RV_;;isAnyKeyword;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		149,
 		1,
-		"ifstatement",
-		"01/06/2025",
-		"18:23:54",
-		"condition;;_RV_;;x >= 1 AND x <= nTokensCount;;_RV_;;"
+		"return",
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;nTokenType= C_KEYWORD;;_RV_;;"
 	],
 	[
 		150,
 		1,
-		"assignment",
-		"01/06/2025",
-		"18:23:54",
-		"leftside;;_RV_;;nActiveToken;;_RV_;;rightside;;_RV_;;x;;_RV_;;"
+		"func",
+		"23/08/2025",
+		"08:07:30",
+		"name;;_RV_;;isAnyOperator;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		151,
 		1,
-		"callfunc",
-		"01/06/2025",
-		"18:23:54",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;loadtoken;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"return",
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;nTokenType= C_OPERATOR;;_RV_;;"
 	],
 	[
 		152,
 		1,
-		"return",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;1 ;;_RV_;;"
+		"func",
+		"23/08/2025",
+		"08:07:30",
+		"name;;_RV_;;isOperator2;;_RV_;;parameters;;_RV_;;nIndex;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		153,
 		1,
 		"return",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;0 ;;_RV_;;"
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;nTokenType= C_OPERATOR and nTokenIndex= nIndex;;_RV_;;"
 	],
 	[
 		154,
 		1,
 		"func",
-		"01/06/2025",
-		"18:23:54",
-		"name;;_RV_;;passNewLine;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"23/08/2025",
+		"08:07:30",
+		"name;;_RV_;;setToken;;_RV_;;parameters;;_RV_;;x;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		155,
 		1,
-		"whileloop",
-		"01/06/2025",
-		"18:23:54",
-		"condition;;_RV_;;passepslion();;_RV_;;"
+		"ifstatement",
+		"23/08/2025",
+		"08:07:30",
+		"condition;;_RV_;;x >= 1 AND x <= nTokensCount;;_RV_;;"
 	],
 	[
 		156,
 		1,
-		"func",
-		"01/06/2025",
-		"18:23:54",
-		"name;;_RV_;;passEpslion;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"23/08/2025",
+		"08:07:30",
+		"leftside;;_RV_;;nActiveToken;;_RV_;;rightside;;_RV_;;x;;_RV_;;"
 	],
 	[
 		157,
 		1,
-		"comment_text",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;/* used after factor - identifier to allow {  } in new line */;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"callfunc",
+		"23/08/2025",
+		"08:07:30",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;loadtoken;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		158,
 		1,
-		"ifstatement",
-		"01/06/2025",
-		"18:23:54",
-		"condition;;_RV_;;isendline();;_RV_;;"
+		"return",
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;1 ;;_RV_;;"
 	],
 	[
 		159,
 		1,
-		"assignment",
-		"01/06/2025",
-		"18:23:54",
-		"leftside;;_RV_;;nLineNumber;;_RV_;;rightside;;_RV_;;cTokenValue;;_RV_;;"
+		"return",
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;0 ;;_RV_;;"
 	],
 	[
 		160,
 		1,
-		"ifstatement",
-		"01/06/2025",
-		"18:23:54",
-		"condition;;_RV_;;nexttoken();;_RV_;;"
+		"func",
+		"23/08/2025",
+		"08:07:30",
+		"name;;_RV_;;passNewLine;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		161,
 		1,
-		"return",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;True;;_RV_;;"
+		"whileloop",
+		"23/08/2025",
+		"08:07:30",
+		"condition;;_RV_;;passepslion();;_RV_;;"
 	],
 	[
 		162,
 		1,
-		"return",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;False;;_RV_;;"
+		"func",
+		"23/08/2025",
+		"08:07:30",
+		"name;;_RV_;;passEpslion;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		163,
 		1,
-		"func",
-		"01/06/2025",
-		"18:23:54",
-		"name;;_RV_;;currentToken;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"comment_text",
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;/* used after factor - identifier to allow {  } in new line */;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		164,
 		1,
-		"return",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;nActiveToken;;_RV_;;"
+		"ifstatement",
+		"23/08/2025",
+		"08:07:30",
+		"condition;;_RV_;;isendline();;_RV_;;"
 	],
 	[
 		165,
 		1,
-		"func",
-		"01/06/2025",
-		"18:23:54",
-		"name;;_RV_;;error;;_RV_;;parameters;;_RV_;;cMsg;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"23/08/2025",
+		"08:07:30",
+		"leftside;;_RV_;;nLineNumber;;_RV_;;rightside;;_RV_;;cTokenValue;;_RV_;;"
 	],
 	[
 		166,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:23:54",
-		"condition;;_RV_;;lOnErrorPrintMsg;;_RV_;;"
+		"23/08/2025",
+		"08:07:30",
+		"condition;;_RV_;;nexttoken();;_RV_;;"
 	],
 	[
 		167,
 		1,
-		"print",
-		"01/06/2025",
-		"18:23:54",
-		"text;;_RV_;;PWCT 2.0 - Import Tool;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"return",
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;True;;_RV_;;"
 	],
 	[
 		168,
 		1,
-		"print",
-		"01/06/2025",
-		"18:23:54",
-		"text;;_RV_;;Compiler Error!;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"return",
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;False;;_RV_;;"
 	],
 	[
 		169,
 		1,
-		"print",
-		"01/06/2025",
-		"18:23:54",
-		"text;;_RV_;;"+char(34)+"Token Number : "+char(34)+"+nActiveToken;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"func",
+		"23/08/2025",
+		"08:07:30",
+		"name;;_RV_;;currentToken;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		170,
 		1,
-		"print",
-		"01/06/2025",
-		"18:23:54",
-		"text;;_RV_;;"+char(34)+"Line Number  : "+char(34)+"+nLineNumber;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"return",
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;nActiveToken;;_RV_;;"
 	],
 	[
 		171,
 		1,
-		"print",
-		"01/06/2025",
-		"18:23:54",
-		"text;;_RV_;;cMsg;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"func",
+		"23/08/2025",
+		"08:07:30",
+		"name;;_RV_;;error;;_RV_;;parameters;;_RV_;;cMsg;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		172,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:23:54",
-		"condition;;_RV_;;lOnErrorShutDown;;_RV_;;"
+		"23/08/2025",
+		"08:07:30",
+		"condition;;_RV_;;lOnErrorPrintMsg;;_RV_;;"
 	],
 	[
 		173,
 		1,
-		"callfunc",
-		"01/06/2025",
-		"18:23:54",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;ShutDown;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"print",
+		"23/08/2025",
+		"08:07:30",
+		"text;;_RV_;;PWCT 2.0 - Import Tool;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		174,
 		1,
-		"func",
-		"01/06/2025",
-		"18:23:54",
-		"name;;_RV_;;generate;;_RV_;;parameters;;_RV_;;aCommand,lClear;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"print",
+		"23/08/2025",
+		"08:07:30",
+		"text;;_RV_;;Compiler Error!;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		175,
 		1,
-		"freetyping",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;aParseTree+aCommand;;_RV_;;"
+		"print",
+		"23/08/2025",
+		"08:07:30",
+		"text;;_RV_;;"+char(34)+"Token Number : "+char(34)+"+nActiveToken;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		176,
 		1,
-		"ifstatement",
-		"01/06/2025",
-		"18:23:54",
-		"condition;;_RV_;;lClear;;_RV_;;"
+		"print",
+		"23/08/2025",
+		"08:07:30",
+		"text;;_RV_;;"+char(34)+"Line Number  : "+char(34)+"+nLineNumber;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		177,
 		1,
-		"callfunc",
-		"01/06/2025",
-		"18:23:54",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;clearTextBuffer;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"print",
+		"23/08/2025",
+		"08:07:30",
+		"text;;_RV_;;cMsg;;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		178,
 		1,
-		"callfunc",
-		"01/06/2025",
-		"18:23:54",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;clearInstructionParameters;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"ifstatement",
+		"23/08/2025",
+		"08:07:30",
+		"condition;;_RV_;;lOnErrorShutDown;;_RV_;;"
 	],
 	[
 		179,
 		1,
-		"func",
-		"01/06/2025",
-		"18:23:54",
-		"name;;_RV_;;getParseTree;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"callfunc",
+		"23/08/2025",
+		"08:07:30",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;ShutDown;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		180,
 		1,
-		"return",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;aParseTree;;_RV_;;"
+		"func",
+		"23/08/2025",
+		"08:07:30",
+		"name;;_RV_;;generate;;_RV_;;parameters;;_RV_;;aCommand,lClear;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		181,
 		1,
-		"func",
-		"01/06/2025",
-		"18:23:54",
-		"name;;_RV_;;currentInstruction;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"freetyping",
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;aParseTree+aCommand;;_RV_;;"
 	],
 	[
 		182,
 		1,
-		"return",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;len( aParseTree ) ;;_RV_;;"
+		"ifstatement",
+		"23/08/2025",
+		"08:07:30",
+		"condition;;_RV_;;lClear;;_RV_;;"
 	],
 	[
 		183,
 		1,
-		"func",
-		"01/06/2025",
-		"18:23:54",
-		"name;;_RV_;;printParseTree;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"callfunc",
+		"23/08/2025",
+		"08:07:30",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;clearTextBuffer;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		184,
 		1,
-		"print",
-		"01/06/2025",
-		"18:23:54",
-		"text;;_RV_;;Parse Tree...;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"callfunc",
+		"23/08/2025",
+		"08:07:30",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;clearInstructionParameters;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		185,
 		1,
-		"print",
-		"01/06/2025",
-		"18:23:54",
-		"text;;_RV_;;List2Code(aParseTree);;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
+		"func",
+		"23/08/2025",
+		"08:07:30",
+		"name;;_RV_;;getParseTree;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		186,
 		1,
-		"func",
-		"01/06/2025",
-		"18:23:54",
-		"name;;_RV_;;TokensText;;_RV_;;parameters;;_RV_;;nFrom,nTo;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
+		"return",
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;aParseTree;;_RV_;;"
 	],
 	[
 		187,
 		1,
-		"assignment",
-		"01/06/2025",
-		"18:23:54",
-		"leftside;;_RV_;;cTokensText;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
+		"func",
+		"23/08/2025",
+		"08:07:30",
+		"name;;_RV_;;currentInstruction;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		188,
 		1,
-		"forloop",
-		"01/06/2025",
-		"18:23:54",
-		"start;;_RV_;;t = nFrom;;_RV_;;to;;_RV_;;nTo;;_RV_;;step;;_RV_;;1;;_RV_;;"
+		"return",
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;len( aParseTree ) ;;_RV_;;"
 	],
 	[
 		189,
 		1,
-		"assignment",
-		"01/06/2025",
-		"18:23:54",
-		"leftside;;_RV_;;aToken;;_RV_;;rightside;;_RV_;;aTokens[t];;_RV_;;"
+		"func",
+		"23/08/2025",
+		"08:07:30",
+		"name;;_RV_;;printParseTree;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		190,
 		1,
-		"switch",
-		"01/06/2025",
-		"18:23:54",
-		"variable;;_RV_;;aToken[C_TOKENTYPE];;_RV_;;"
+		"print",
+		"23/08/2025",
+		"08:07:30",
+		"text;;_RV_;;Parse Tree...;;_RV_;;type;;_RV_;;1;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		191,
 		1,
-		"case",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;C_KEYWORD;;_RV_;;"
+		"print",
+		"23/08/2025",
+		"08:07:30",
+		"text;;_RV_;;List2Code(aParseTree);;_RV_;;type;;_RV_;;2;;_RV_;;newline;;_RV_;;2;;_RV_;;"
 	],
 	[
 		192,
 		1,
-		"ifstatement",
-		"01/06/2025",
-		"18:23:54",
-		"condition;;_RV_;;cTokensText;;_RV_;;"
+		"func",
+		"23/08/2025",
+		"08:07:30",
+		"name;;_RV_;;TokensText;;_RV_;;parameters;;_RV_;;nFrom,nTo;;_RV_;;lparameters;;_RV_;;2;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		193,
 		1,
-		"freetyping",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;cTokensText += "+char(34)+" "+char(34)+";;_RV_;;"
+		"assignment",
+		"23/08/2025",
+		"08:07:30",
+		"leftside;;_RV_;;cTokensText;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		194,
 		1,
-		"freetyping",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;cTokensText += lower(aKeywords[0+aToken[C_TOKENVALUE]])+"+char(34)+" "+char(34)+";;_RV_;;"
+		"forloop",
+		"23/08/2025",
+		"08:07:30",
+		"start;;_RV_;;t = nFrom;;_RV_;;to;;_RV_;;nTo;;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		195,
 		1,
-		"case",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;C_OPERATOR;;_RV_;;"
+		"assignment",
+		"23/08/2025",
+		"08:07:30",
+		"leftside;;_RV_;;aToken;;_RV_;;rightside;;_RV_;;aTokens[t];;_RV_;;"
 	],
 	[
 		196,
 		1,
-		"ifstatement",
-		"01/06/2025",
-		"18:23:54",
-		"condition;;_RV_;;(len(cTokensText) > 1) AND (right(cTokensText,1)! = "+char(34)+" "+char(34)+");;_RV_;;"
+		"switch",
+		"23/08/2025",
+		"08:07:30",
+		"variable;;_RV_;;aToken[C_TOKENTYPE];;_RV_;;"
 	],
 	[
 		197,
 		1,
-		"ifstatement",
-		"01/06/2025",
-		"18:23:54",
-		"condition;;_RV_;;aToken[C_TOKENVALUE] = "+char(34)+")"+char(34)+" OR aToken[C_TOKENVALUE] = "+char(34)+"}"+char(34)+";;_RV_;;"
+		"case",
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;C_KEYWORD;;_RV_;;"
 	],
 	[
 		198,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:23:54",
-		"condition;;_RV_;;right(cTokensText,1)! = "+char(34)+"("+char(34)+" OR right(cTokensText,1) = "+char(34)+"{"+char(34)+";;_RV_;;"
+		"23/08/2025",
+		"08:07:30",
+		"condition;;_RV_;;cTokensText;;_RV_;;"
 	],
 	[
 		199,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"value;;_RV_;;cTokensText += "+char(34)+" "+char(34)+";;_RV_;;"
 	],
 	[
 		200,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;cTokensText += aToken[C_TOKENVALUE];;_RV_;;"
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;cTokensText += lower(aKeywords[0+aToken[C_TOKENVALUE]])+"+char(34)+" "+char(34)+";;_RV_;;"
 	],
 	[
 		201,
 		1,
-		"ifstatement",
-		"01/06/2025",
-		"18:23:54",
-		"condition;;_RV_;;aToken[C_TOKENVALUE] = "+char(34)+")"+char(34)+" OR aToken[C_TOKENVALUE] = "+char(34)+"{"+char(34)+";;_RV_;;"
+		"case",
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;C_OPERATOR;;_RV_;;"
 	],
 	[
 		202,
 		1,
-		"freetyping",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;cTokensText += "+char(34)+" "+char(34)+";;_RV_;;"
+		"ifstatement",
+		"23/08/2025",
+		"08:07:30",
+		"condition;;_RV_;;(len(cTokensText) > 1) AND (right(cTokensText,1) != "+char(34)+" "+char(34)+");;_RV_;;"
 	],
 	[
 		203,
 		1,
-		"case",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;C_LITERAL;;_RV_;;"
+		"ifstatement",
+		"23/08/2025",
+		"08:07:30",
+		"condition;;_RV_;;aToken[C_TOKENVALUE] = "+char(34)+")"+char(34)+" OR aToken[C_TOKENVALUE] = "+char(34)+"}"+char(34)+";;_RV_;;"
 	],
 	[
 		204,
 		1,
-		"freetyping",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;cTokensText += valueAsString(aToken[C_TOKENVALUE])+"+char(34)+" "+char(34)+";;_RV_;;"
+		"ifstatement",
+		"23/08/2025",
+		"08:07:30",
+		"condition;;_RV_;;right(cTokensText,1) != "+char(34)+"("+char(34)+" OR right(cTokensText,1) = "+char(34)+"{"+char(34)+";;_RV_;;"
 	],
 	[
 		205,
 		1,
-		"case",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;C_NUMBER;;_RV_;;"
+		"freetyping",
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;cTokensText += "+char(34)+" "+char(34)+";;_RV_;;"
 	],
 	[
 		206,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;cTokensText += "+char(34)+""+char(34)+"+aToken[C_TOKENVALUE]+"+char(34)+" "+char(34)+";;_RV_;;"
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;cTokensText += aToken[C_TOKENVALUE];;_RV_;;"
 	],
 	[
 		207,
 		1,
-		"case",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;C_IDENTIFIER;;_RV_;;"
+		"ifstatement",
+		"23/08/2025",
+		"08:07:30",
+		"condition;;_RV_;;aToken[C_TOKENVALUE] = "+char(34)+")"+char(34)+" OR aToken[C_TOKENVALUE] = "+char(34)+"{"+char(34)+";;_RV_;;"
 	],
 	[
 		208,
 		1,
-		"ifstatement",
-		"01/06/2025",
-		"18:23:54",
-		"condition;;_RV_;;(len(cTokensText) > 1) AND (right(cTokensText,1)! = "+char(34)+" "+char(34)+");;_RV_;;"
+		"freetyping",
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;cTokensText += "+char(34)+" "+char(34)+";;_RV_;;"
 	],
 	[
 		209,
 		1,
-		"freetyping",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;cTokensText += "+char(34)+" "+char(34)+";;_RV_;;"
+		"case",
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;C_LITERAL;;_RV_;;"
 	],
 	[
 		210,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;cTokensText += "+char(34)+""+char(34)+"+aToken[C_TOKENVALUE];;_RV_;;"
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;cTokensText += valueAsString(aToken[C_TOKENVALUE])+"+char(34)+" "+char(34)+";;_RV_;;"
 	],
 	[
 		211,
 		1,
 		"case",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;C_ENDLINE;;_RV_;;"
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;C_NUMBER;;_RV_;;"
 	],
 	[
 		212,
 		1,
-		"case",
-		"01/06/2025",
-		"18:23:54",
-		"value;;_RV_;;C_COMMENT;;_RV_;;"
+		"freetyping",
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;cTokensText += "+char(34)+""+char(34)+"+aToken[C_TOKENVALUE]+"+char(34)+" "+char(34)+";;_RV_;;"
 	],
 	[
 		213,
 		1,
+		"case",
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;C_IDENTIFIER;;_RV_;;"
+	],
+	[
+		214,
+		1,
+		"ifstatement",
+		"23/08/2025",
+		"08:07:30",
+		"condition;;_RV_;;(len(cTokensText) > 1) AND (right(cTokensText,1) != "+char(34)+" "+char(34)+");;_RV_;;"
+	],
+	[
+		215,
+		1,
+		"freetyping",
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;cTokensText += "+char(34)+" "+char(34)+";;_RV_;;"
+	],
+	[
+		216,
+		1,
+		"freetyping",
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;cTokensText += "+char(34)+""+char(34)+"+aToken[C_TOKENVALUE];;_RV_;;"
+	],
+	[
+		217,
+		1,
+		"case",
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;C_ENDLINE;;_RV_;;"
+	],
+	[
+		218,
+		1,
+		"case",
+		"23/08/2025",
+		"08:07:30",
+		"value;;_RV_;;C_COMMENT;;_RV_;;"
+	],
+	[
+		219,
+		1,
 		"return",
-		"01/06/2025",
-		"18:23:54",
+		"23/08/2025",
+		"08:07:30",
 		"value;;_RV_;;cTokensText;;_RV_;;"
 	]
 ]

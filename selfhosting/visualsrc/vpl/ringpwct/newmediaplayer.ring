@@ -15,13 +15,13 @@ class newmediaplayerComponentController from ComponentControllerParent
 				cOutCode = Variable(:value)+" = "
 		} 
 		cCode = ""
-		if Variable(:value2)! = NULL { 
+		if Variable(:value2) != NULL { 
 			cCode += 'setmedia(new qurl("'+Variable(:value2)+'"))'+nl
 		} 
-		if Variable(:value3)! = NULL { 
+		if Variable(:value3) != NULL { 
 			cCode += "setvideooutput("+Variable(:value3)+")"+nl
 		} 
-		if Variable(:value4)! = NULL { 
+		if Variable(:value4) != NULL { 
 			cCode += "setposition("+Variable(:value4)+")"+nl
 		} 
 		NewParentStep(cOutStep+T_CT_NEWQMEDIAPLAYER_ST_NEWQMEDIAPLAYER)

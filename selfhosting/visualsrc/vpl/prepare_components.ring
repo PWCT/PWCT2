@@ -3,7 +3,7 @@ load "stdlib.ring"
 aFiles = dir("ringpwct")
 aFiles2 = []
 for item in aFiles step 1 { 
-	if (item[1]! = "ringpwct.ring") AND substr(item[1],".ring") { 
+	if (item[1] != "ringpwct.ring") AND substr(item[1],".ring") { 
 		aFiles2+item[1]
 	} 
 } 

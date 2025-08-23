@@ -13,7 +13,7 @@ class windowcontrollerComponentController from ComponentControllerParent
 		NewStep(T_CT_WINDOWCONTROLLER_ST_MAINFILE)
 		oStep = GetActiveStep()
 		NewParentStep(T_CT_WINDOWCONTROLLER_ST_CLASS+StyleData(Variable(:name)+T_CT_WINDOWCONTROLLER_ST_CONTROLLER))
-		if trim(lower(Variable(:view)))! = "oview" { 
+		if trim(lower(Variable(:view))) != "oview" { 
 			cCreateView = Variable(:view)+" = ref(oView)"
 			if T_LAYOUTDIRECTION { 
 				cCreateView += nl+"addAttribute(oView,'نافذة')"

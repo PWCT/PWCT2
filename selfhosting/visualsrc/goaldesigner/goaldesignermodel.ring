@@ -137,7 +137,7 @@ class GoalDesignerModel
 		cSteps = ""
 		for x in oStepsTreeModel.getdata() step 1 { 
 			#Calculate Tabs
-			if x[C_TREEMODEL_PARENTID]! = nLastParent { 
+			if x[C_TREEMODEL_PARENTID] != nLastParent { 
 				nLastParent = x[C_TREEMODEL_PARENTID]
 				if findParent(aParent,nLastParent) = 0 { 
 					aParent+x
@@ -164,9 +164,9 @@ class GoalDesignerModel
 			nTabs = Copy(Char(9),len(aParent)-nBackTabs)
 			if x[C_TREEMODEL_CONTENT][:visible] AND x[C_TREEMODEL_CONTENT][:active] { 
 				if lGenerateComments AND (x[C_TREEMODEL_CONTENT][:steptype] = C_STEPTYPE_COMMENT) { 
-					if x[C_TREEMODEL_NODEID]! = 1 { 
+					if x[C_TREEMODEL_NODEID] != 1 { 
 						#Avoid the Start Point
-						if trim(x[C_TREEMODEL_CONTENT][:plainname])! = NULL { 
+						if trim(x[C_TREEMODEL_CONTENT][:plainname]) != NULL { 
 							cCommentStart = "#"
 							if left(trim(x[C_TREEMODEL_CONTENT][:plainname]),1) = "#" { 
 								cCommentStart = ""
@@ -178,16 +178,16 @@ class GoalDesignerModel
 						} 
 					} 
 					else
-						if trim(x[C_TREEMODEL_CONTENT][:code])! = NULL { 
+						if trim(x[C_TREEMODEL_CONTENT][:code]) != NULL { 
 							cCode += AddTabsToCodeOfMultipleLines(x[C_TREEMODEL_CONTENT][:code],nTabs)
 						} 
 				} 
 			} 
 			if x[C_TREEMODEL_CONTENT][:visible] { 
-				if x[C_TREEMODEL_NODEID]! = 1 { 
+				if x[C_TREEMODEL_NODEID] != 1 { 
 					#Avoid the Start Point
 					if x[C_TREEMODEL_CONTENT][:steptype] = C_STEPTYPE_COMMENT { 
-						if trim(x[C_TREEMODEL_CONTENT][:plainname])! = NULL { 
+						if trim(x[C_TREEMODEL_CONTENT][:plainname]) != NULL { 
 							aLines = str2list(trim(x[C_TREEMODEL_CONTENT][:plainname]))
 							for cLine in aLines step 1 { 
 								cCommentStart = "#"
@@ -415,7 +415,7 @@ class GoalDesignerModel
 		#Check if the root is a Generated Step (Component)
 		nIID = oStepsTreeModel.aBuffer[1][C_TREEMODEL_CONTENT][:interactionid]
 		cComponent = oInteractionModelBuffer.getInteractionComponent(nIID)
-		if cComponent! = NULL { 
+		if cComponent != NULL { 
 			#Not Comment
 			return [cComponent]
 		} 

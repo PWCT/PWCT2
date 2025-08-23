@@ -9,7 +9,7 @@ class CallMethodComponentController from ComponentControllerParent
 	aAllowEmptyValue = [:parameters,:output]
 	func GenerateAction  { 
 		cObject = ""
-		if variable(:object)! = NULL { 
+		if variable(:object) != NULL { 
 			cObject = variable(:object)+"."
 		} 
 		if Variable(:lParameters) { 
@@ -24,7 +24,7 @@ class CallMethodComponentController from ComponentControllerParent
 			else
 				cOutput = ""
 		} 
-		if cOutput! = NULL { 
+		if cOutput != NULL { 
 			cOutputEqual = cOutput+" = "
 			else
 				cOutputEqual = ""

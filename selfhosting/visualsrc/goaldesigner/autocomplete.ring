@@ -538,7 +538,7 @@ class AutoComplete
 		#Remove Duplication and words contains the dot operator
 		cLast = ""
 		for word in aWords step 1 { 
-			if word! = cLast { 
+			if word != cLast { 
 				if !(substr(word,".") OR substr(word,"(")) { 
 					aItems+word
 				} 

@@ -94,7 +94,7 @@ class ProgramController
 		#	*/
 	} 
 	func checkWebApplication cFileName { 
-		if left(read(cFileName),2)! = "#!" { 
+		if left(read(cFileName),2) != "#!" { 
 			msginfo("Sorry","This is not CGI web application!")
 			return false
 		} 
@@ -111,7 +111,7 @@ class ProgramController
 			return 
 		} 
 		if isWindows() { 
-			if cWebApplicationFolder! = JustFilePath(cFile) { 
+			if cWebApplicationFolder != JustFilePath(cFile) { 
 				cWebApplicationFolder = JustFilePath(cFile)
 				new ServerPrepare
 				{
@@ -230,7 +230,7 @@ class ProgramController
 		changeFolder(RUNTIME_FOLDER)
 		if fexists("programoutput.txt") { 
 			cContent = read("programoutput.txt")
-			if cContent! = cOutputFileText { 
+			if cContent != cOutputFileText { 
 				cOutputFileText = cContent
 				oGD.parent().oView.oProcessEditbox.setplaintext(cContent)
 				oGD.parent().oView.oDockOutputWindow.raise()

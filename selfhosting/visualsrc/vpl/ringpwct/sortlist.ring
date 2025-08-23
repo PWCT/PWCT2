@@ -11,7 +11,7 @@ class sortlistComponentController from ComponentControllerParent
 		if Variable(:value2) = NULL { 
 			NewStep(StepData(:value4)+" = "+T_CT_SORT_ST_SORT+StepData(:value))
 			SetStepCode(Variable(:value4)+" = sort("+Variable(:value)+")")
-			elseif Variable(:value2)! = NULL AND Variable(:value3) = NULL
+			elseif Variable(:value2) != NULL AND Variable(:value3) = NULL
 				NewStep(StepData(:value4)+" = "+T_CT_SORT_ST_SORT+StepData(:value)+T_CT_SORT_ST_COLUMN+StepData(:value2))
 				SetStepCode(Variable(:value4)+" = sort("+Variable(:value)+","+Variable(:value2)+")")
 			else

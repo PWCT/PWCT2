@@ -69,7 +69,7 @@ class Target
 		oParser {
 			cExpr = Parameter(:Expression)
 			#Because we may have Assignment Component during expression
-			if Parameter(:LeftSide)! = "" { 
+			if Parameter(:LeftSide) != "" { 
 				cExpr = Parameter(:LeftSide)+cExpr
 			} 
 			#Don't generate empty lines

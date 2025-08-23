@@ -8,7 +8,7 @@ class getcolordialogComponentController from ComponentControllerParent
 	oView = new getcolordialogComponentView
 	func GenerateAction  { 
 		cIsResultValue = "exec()"
-		if Variable(:value)! = NULL { 
+		if Variable(:value) != NULL { 
 			cIsResultValue = Variable(:Value)+" = exec()"+nl
 		} 
 		NewStep(StepData(:Value2)+" = "+T_CT_GETCOLORDIALOG_ST_VALUE)

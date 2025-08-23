@@ -24,7 +24,7 @@ cCode2 = "["
 x = 1
 for cMethod in aConstants step 1 { 
 	cCode += copy(tab,3)+"case "+x+' cFunc = "'+cMethod+'"'+nl
-	if x! = 1 { 
+	if x != 1 { 
 		cCode2 += ","
 	} 
 	cCode2 += '"'+cMethod+'"'

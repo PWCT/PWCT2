@@ -22,12 +22,12 @@ class comment_headerComponentController from ComponentControllerParent
 		} 
 		cHTML = substr(cHTML,"#{f1}",cValue)
 		cHTML = substr(cHTML,"#{f2}",Variable(:Value2))
-		if trim(Variable(:Value3))! = NULL { 
+		if trim(Variable(:Value3)) != NULL { 
 			cHTML = substr(cHTML,"#{f3}","color:"+Variable(:Value3)+";")
 			else
 				cHTML = substr(cHTML,"#{f3}","")
 		} 
-		if trim(Variable(:Value5))! = NULL { 
+		if trim(Variable(:Value5)) != NULL { 
 			cHTML = substr(cHTML,"#{f4}","background-color:"+Variable(:Value5)+";")
 			else
 				cHTML = substr(cHTML,"#{f4}","")

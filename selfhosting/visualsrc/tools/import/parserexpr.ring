@@ -52,7 +52,7 @@ class ParserExpr
 		#/* EqualOrNot --> Compare { =|!= Compare } */
 		if compare() { 
 			x = 1
-			while isoperator2(OP_EQUAL) OR isoperator2(OP_NOT) { 
+			while isoperator2(OP_EQUAL) OR isoperator2(OP_NOT) OR isoperator("!=") { 
 				if isoperator2(OP_NOT) { 
 					nexttoken()
 					IGNORENEWLINE()
@@ -67,6 +67,14 @@ class ParserExpr
 							error(ERROR_EXPROPERATOR)
 							return False
 					} 
+					elseif isoperator("!=")
+						#Starting from Ring 1.24
+						nexttoken()
+						IGNORENEWLINE()
+						x = compare()
+						if x = 0 { 
+							return False
+						} 
 					else
 						nexttoken()
 						IGNORENEWLINE()
@@ -84,7 +92,7 @@ class ParserExpr
 		#/* Compare --> BitORXOR { <|>|<=|>= BITORXOR } */
 		if bitorxor() { 
 			x = 1
-			while isoperator2(OP_LESS) OR isoperator2(OP_GREATER) { 
+			while isoperator2(OP_LESS) OR isoperator2(OP_GREATER) OR isoperator("<=") OR isoperator(">=") { 
 				nEqual = 0
 				if isoperator2(OP_LESS) { 
 					nexttoken()
@@ -92,6 +100,7 @@ class ParserExpr
 					if isoperator2(OP_EQUAL) { 
 						nEqual = 1
 						nexttoken()
+						IGNORENEWLINE()
 					} 
 					x = bitorxor()
 					if x = 0 { 
@@ -102,6 +111,24 @@ class ParserExpr
 						else
 							#/* Generate Code */
 					} 
+					elseif isoperator("<=")
+						#Starting from Ring 1.24
+						nEqual = 1
+						nexttoken()
+						IGNORENEWLINE()
+						x = bitorxor()
+						if x = 0 { 
+							return False
+						} 
+					elseif isoperator(">=")
+						#Starting from Ring 1.24
+						nEqual = 1
+						nexttoken()
+						IGNORENEWLINE()
+						x = bitorxor()
+						if x = 0 { 
+							return False
+						} 
 					else
 						nexttoken()
 						IGNORENEWLINE()
@@ -339,7 +366,7 @@ class ParserExpr
 					nNewObject = 0
 					x = expr()
 					cRS = AddParameterFromSecondBuffer(:RightSide)
-					if cRS! = "" { 
+					if cRS != "" { 
 						#Remove '=' operator  in the start
 						if left(cRS,1) = "=" { 
 							cRS = trim(substr(cRS,2))
@@ -348,7 +375,7 @@ class ParserExpr
 								cRS = trim(substr(cRS,4))
 								aInstructionParameters[:RightSide] = cRS
 						} 
-						if trim(aInstructionParameters[:LeftSide])! = NULL { 
+						if trim(aInstructionParameters[:LeftSide]) != NULL { 
 							if left(trim(aInstructionParameters[:RightSide]),4) = "new " { 
 								aInstructionParameters[:Expression] = " = "+cRS
 								oTarget.GenerateExpressionCommand(self)

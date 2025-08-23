@@ -17,7 +17,7 @@ class ParserTokens
 				error("Parsing Error!")
 				return False
 			} 
-		again (nActiveToken! = nTokensCount)
+		again (nActiveToken != nTokensCount)
 		return True
 	} 
 	func ignoreNewLine  { 
@@ -118,6 +118,12 @@ class ParserTokens
 						return " < " 
 					elseif cTokenValue = ">"
 						return " > " 
+					elseif cTokenValue = "<="
+						return " <= " 
+					elseif cTokenValue = ">="
+						return " >= " 
+					elseif cTokenValue = "!="
+						return " != " 
 				} 
 			} 
 			return cTokenValue2
@@ -263,9 +269,9 @@ class ParserTokens
 					} 
 					cTokensText += lower(aKeywords[0+aToken[C_TOKENVALUE]])+" "
 				case C_OPERATOR
-					if (len(cTokensText) > 1) AND (right(cTokensText,1)! = " ") { 
+					if (len(cTokensText) > 1) AND (right(cTokensText,1) != " ") { 
 						if aToken[C_TOKENVALUE] = ")" OR aToken[C_TOKENVALUE] = "}" { 
-							if right(cTokensText,1)! = "(" OR right(cTokensText,1) = "{" { 
+							if right(cTokensText,1) != "(" OR right(cTokensText,1) = "{" { 
 								cTokensText += " "
 							} 
 						} 
@@ -279,7 +285,7 @@ class ParserTokens
 				case C_NUMBER
 					cTokensText += ""+aToken[C_TOKENVALUE]+" "
 				case C_IDENTIFIER
-					if (len(cTokensText) > 1) AND (right(cTokensText,1)! = " ") { 
+					if (len(cTokensText) > 1) AND (right(cTokensText,1) != " ") { 
 						cTokensText += " "
 					} 
 					cTokensText += ""+aToken[C_TOKENVALUE]

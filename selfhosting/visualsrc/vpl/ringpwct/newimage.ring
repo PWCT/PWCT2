@@ -15,32 +15,32 @@ class newimageComponentController from ComponentControllerParent
 				cOutCode = Variable(:value)+" = "
 		} 
 		cCode = ""
-		if Variable(:value2)! = NULL { 
+		if Variable(:value2) != NULL { 
 			nTop = Variable(:value2)
 			else
 				nTop = 10
 		} 
-		if Variable(:value3)! = NULL { 
+		if Variable(:value3) != NULL { 
 			nLeft = Variable(:value3)
 			else
 				nLeft = 10
 		} 
 		cCode += "move("+nLeft+","+nTop+")"+nl
-		if Variable(:value4)! = NULL { 
+		if Variable(:value4) != NULL { 
 			nWidth = Variable(:value4)
 			else
 				nWidth = 300
 		} 
-		if Variable(:value5)! = NULL { 
+		if Variable(:value5) != NULL { 
 			nHeight = Variable(:value5)
 			else
 				nHeight = 300
 		} 
 		cCode += "resize("+nWidth+","+nHeight+")"+nl
-		if Variable(:value6)! = NULL { 
+		if Variable(:value6) != NULL { 
 			cCode += "setStyleSheet("+Variable(:value6)+")"+nl
 		} 
-		if Variable(:value8)! = NULL { 
+		if Variable(:value8) != NULL { 
 			cCode += "labelimage = new qpixmap("+Variable(:value8)+")"+nl+"setpixmap(labelimage)"+nl
 			if Variable(:value5) = NULL AND Variable(:value6) = NULL { 
 				cCode += "resize(labelimage.width(),labelimage.height())"+nl

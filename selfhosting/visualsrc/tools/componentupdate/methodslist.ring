@@ -22,7 +22,7 @@ for item in aList step 1 {
 		if find(["qdialslider","refmeta_is","refmeta_ispackage"],cClass) { 
 			cClass = ""
 		} 
-		if trim(cClass)! = NULL { 
+		if trim(cClass) != NULL { 
 			aClasses+cClass
 		} 
 	} 

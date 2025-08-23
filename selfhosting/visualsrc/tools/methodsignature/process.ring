@@ -11,7 +11,7 @@ aProcess = []
 func main  { 
 	for cLine in aList step 1 { 
 		cLine = trim(cLine)
-		if cLine! = NULL { 
+		if cLine != NULL { 
 			process(cLine)
 		} 
 	} 

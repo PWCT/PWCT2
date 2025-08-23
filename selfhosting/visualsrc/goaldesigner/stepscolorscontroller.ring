@@ -36,7 +36,7 @@ class StepsColorsController from WindowsControllerParent
 			case 11
 				cColor = C_STEPSTREE_BACKCOLOR
 		} 
-		if len(cColor)! = 7 { 
+		if len(cColor) != 7 { 
 			cColor = "#000000"
 		} 
 		oColor = new QColor()

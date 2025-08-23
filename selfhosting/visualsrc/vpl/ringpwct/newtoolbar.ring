@@ -15,29 +15,29 @@ class newtoolbarComponentController from ComponentControllerParent
 				cOutCode = Variable(:value)+" = "
 		} 
 		cCode = ""
-		if Variable(:value2)! = NULL { 
+		if Variable(:value2) != NULL { 
 			nTop = Variable(:value2)
 			else
 				nTop = 0
 		} 
-		if Variable(:value3)! = NULL { 
+		if Variable(:value3) != NULL { 
 			nLeft = Variable(:value3)
 			else
 				nLeft = 0
 		} 
 		cCode += "move("+nLeft+","+nTop+")"+nl
-		if Variable(:value4)! = NULL { 
+		if Variable(:value4) != NULL { 
 			nWidth = Variable(:value4)
 			else
 				nWidth = 300
 		} 
-		if Variable(:value5)! = NULL { 
+		if Variable(:value5) != NULL { 
 			nHeight = Variable(:value5)
 			else
 				nHeight = 30
 		} 
 		cCode += "resize("+nWidth+","+nHeight+")"+nl
-		if Variable(:value6)! = NULL { 
+		if Variable(:value6) != NULL { 
 			cCode += "setStyleSheet("+Variable(:value6)+")"+nl
 		} 
 		NewParentStep(cOutStep+T_CT_NEWQTOOLBAR_ST_NEWQTOOLBAR)

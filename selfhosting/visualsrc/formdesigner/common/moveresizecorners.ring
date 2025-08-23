@@ -225,7 +225,7 @@ class MoveResizeCorners
 	} 
 	func MobileEventDelay  { 
 		if isMobile() { 
-			if nClockValue! = 0 AND clock()-nClockValue < nClocksCount { 
+			if nClockValue != 0 AND clock()-nClockValue < nClocksCount { 
 				return True
 			} 
 			nClockValue = clock()

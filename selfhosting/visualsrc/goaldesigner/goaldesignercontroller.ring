@@ -210,7 +210,7 @@ class GoalDesignerController from WindowsControllerParent
 	func SelectStep nIID,nStepNumber { 
 		nStepID = oModel.GetStepIDbyIID(nIID,nStepNumber)
 		oItem = NULL
-		if nStepID! = -1 { 
+		if nStepID != -1 { 
 			oItem = oView.oStepsTree.GetObjByID(nStepID)
 		} 
 		return [oItem, nStepID]
@@ -609,7 +609,7 @@ class GoalDesignerController from WindowsControllerParent
 			return 
 		} 
 		#Avoid generated steps (Not Comment)
-		if nStepType! = C_STEPTYPE_COMMENT { 
+		if nStepType != C_STEPTYPE_COMMENT { 
 			oView.oStepCode.setText(oModel.GetStepCode(nStepID))
 			oView.oStepCode.setEnabled(False)
 			return 
@@ -1257,7 +1257,7 @@ class GoalDesignerController from WindowsControllerParent
 	func CloseAllInteractionPages  { 
 		for nWindowID in aInteractionPagesWindows step 1 { 
 			nPos = Get_Window_Pos(nWindowID)
-			if nPos! = 0 { 
+			if nPos != 0 { 
 				GetObjectByID(nWindowID).closeAction()
 			} 
 		} 
@@ -1269,7 +1269,7 @@ class GoalDesignerController from WindowsControllerParent
 	func RefreshInteractionPagesColors  { 
 		for nWindowID in aInteractionPagesWindows step 1 { 
 			nPos = Get_Window_Pos(nWindowID)
-			if nPos! = 0 { 
+			if nPos != 0 { 
 				GetObjectByID(nWindowID).oView.setTitleColors()
 			} 
 		} 
@@ -1613,7 +1613,7 @@ class GoalDesignerController from WindowsControllerParent
 			return ["SP" ]
 		} 
 		aParents = []
-		while nStepID! = 1 { 
+		while nStepID != 1 { 
 			nIID = oModel.GetInteractionID(nStepID)
 			cFile = oModel.GetInteractionComponent(nIID)
 			aParents+cFile
@@ -1961,7 +1961,7 @@ class GoalDesignerController from WindowsControllerParent
 		} 
 		#Be sure that the Controller class source code is opened
 		cFileNameInFormDesigner = substr(parent().FormDesigner().ActiveFileName(),"."+T_PWCT_FORMDESIGNER_FILEEXTENSION,T_VSF_CONTROLLER+"."+T_VSF_EXTENSION)
-		if trim(lower(oVisualSourceFile.cFileName))! = trim(lower(cFileNameInFormDesigner)) { 
+		if trim(lower(oVisualSourceFile.cFileName)) != trim(lower(cFileNameInFormDesigner)) { 
 			return 
 		} 
 		#Be sure that the event code doesn't contains (, ', ", ` and spaces

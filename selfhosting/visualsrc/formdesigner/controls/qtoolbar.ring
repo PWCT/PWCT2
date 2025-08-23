@@ -87,7 +87,7 @@ class FormDesigner_QToolBar from QLabel
 	} 
 	func GenerateCustomCode oDesigner { 
 		cOutput = ""
-		if ToolbarObjectsValue()! = NULL { 
+		if ToolbarObjectsValue() != NULL { 
 			aItems = split(ToolbarObjectsValue(),",")
 			for item in aItems step 1 { 
 				if  NOT std_lower(Item) = "separator" { 

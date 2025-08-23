@@ -43,7 +43,7 @@ class PlayAsMovieController
 		oGoalDesignerController {
 			oView.timerTM.Stop()
 			nValue = oView.sliderTimeMachine.Value()
-			if nValue! = oView.sliderTimeMachine.getInteractionPoints() { 
+			if nValue != oView.sliderTimeMachine.getInteractionPoints() { 
 				#Get the Interaction Information
 				nTMValue = oView.sliderTimeMachine.GetActiveInteraction()
 				nIID = oModel.oInteractionModel.GetInteractionID(nTMValue+1)

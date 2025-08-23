@@ -132,19 +132,19 @@ class FormDesigner_QProgressbar from QLineEdit
 		cOutput = ""
 		cOutput += "setOrientation(#{f1})"+nl
 		cOutput = substr(cOutput,"#{f1}",""+(OrientationValue()+1))
-		if Minimumvalue()! = NULL { 
+		if Minimumvalue() != NULL { 
 			cOutput += "setMinimum(#{f1})"+nl
 			cOutput = substr(cOutput,"#{f1}",""+MinimumValue())
 		} 
-		if Maximumvalue()! = NULL { 
+		if Maximumvalue() != NULL { 
 			cOutput += "setMaximum(#{f1})"+nl
 			cOutput = substr(cOutput,"#{f1}",""+MaximumValue())
 		} 
-		if Rangevalue()! = NULL { 
+		if Rangevalue() != NULL { 
 			cOutput += "setRange(#{f1})"+nl
 			cOutput = substr(cOutput,"#{f1}",""+RangeValue())
 		} 
-		if ValueValue()! = NULL { 
+		if ValueValue() != NULL { 
 			cOutput += "setValue(#{f1})"+nl
 			cOutput = substr(cOutput,"#{f1}",""+ValueValue())
 		} 

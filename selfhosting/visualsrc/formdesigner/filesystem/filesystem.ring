@@ -220,7 +220,7 @@ class FormDesignerFileSystem from ObjectsParent
 	} 
 	func SaveIfOnlyFileIsOpened oDesigner { 
 		#Used by Ring Notepad to Save before Run
-		if cFileName! = T_FORMDESIGNER_NONAMEFILE { 
+		if cFileName != T_FORMDESIGNER_NONAMEFILE { 
 			SaveFormToFile(oDesigner)
 		} 
 	} 
@@ -285,7 +285,7 @@ class FormDesignerFileSystem from ObjectsParent
 			cObjContent = substr(cObjContent,"#{f1}",aObject[1])
 			cObjContent = substr(cObjContent,"#{f2}",""+aObject[3])
 			cObjContent = substr(cObjContent,"#{f3}",classname(aObject[2]))
-			if x! = len(aObjectsList) { 
+			if x != len(aObjectsList) { 
 				cObjContent += ","
 			} 
 			cObjContent += nl
@@ -347,12 +347,12 @@ class FormDesignerFileSystem from ObjectsParent
 						setMenubarValue(itemdata[:Menubar])
 						setMainLayoutValue(itemdata[:MainLayout])
 						setWindowIconValue(itemdata[:WindowIcon])
-						if itemdata[:IndexType]! = NULL { 
+						if itemdata[:IndexType] != NULL { 
 							setIndexTypeValue(itemdata[:IndexType])
 							else
 								setIndexTypeValue(0)
 						} 
-						if itemdata[:GUILibrary]! = NULL { 
+						if itemdata[:GUILibrary] != NULL { 
 							setGUILibraryValue(itemdata[:GUILibrary])
 							else
 								setGUILibraryValue(0)

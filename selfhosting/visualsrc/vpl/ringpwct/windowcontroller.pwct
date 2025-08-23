@@ -737,7 +737,7 @@ aStepsTable = [
 		[
 			[
 				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">trim(lower(Variable(:view)))!&nbsp;=&nbsp;&quot;oview&quot;</font></span>"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">trim(lower(Variable(:view)))&nbsp;!=&nbsp;&quot;oview&quot;</font></span>"
 			],
 			[
 				"active",
@@ -745,7 +745,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"if trim(lower(Variable(:view)))! = "+char(34)+"oview"+char(34)+" { "
+				"if trim(lower(Variable(:view))) != "+char(34)+"oview"+char(34)+" { "
 			],
 			[
 				"interactionid",
@@ -765,7 +765,7 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If trim(lower(Variable(:view)))! = "+char(34)+"oview"+char(34)+""
+				"If trim(lower(Variable(:view))) != "+char(34)+"oview"+char(34)+""
 			]
 		]
 	],
@@ -2334,336 +2334,336 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"value;;_RV_;;**	Project : Programming Without Coding Technology (PWCT) Version 2.0;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"value;;_RV_;;**	File Purpose :  windowcontroller Component;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"value;;_RV_;;**	Date : 2025.03.09;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"value;;_RV_;;**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"comment_text",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"class",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"value;;_RV_;;windowcontrollerComponentController;;_RV_;;value2;;_RV_;;ComponentControllerParent;;_RV_;;value3;;_RV_;;2;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"newobj",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"value;;_RV_;;oView;;_RV_;;value2;;_RV_;;windowcontrollerComponentView;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"func",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"name;;_RV_;;GenerateAction;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;output;;_RV_;;;;_RV_;;loutput;;_RV_;;0;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;NewParentStep;;_RV_;;parameters;;_RV_;;T_CT_WINDOWCONTROLLER_ST_WINCNT+StyleData(Variable(:name)+T_CT_WINDOWCONTROLLER_ST_CONTROLLER);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetStepCode;;_RV_;;parameters;;_RV_;;'load "+char(34)+"'+Variable(:name)+T_CT_WINDOWCONTROLLER_ST_VIEWFILE+'"+char(34)+"'+nl+"+char(34)+"import System.GUI"+char(34)+"+nl+"+char(34)+"if IsMainSourceFile() {"+char(34)+"+nl+Variable(:app)+"+char(34)+"= new App {"+char(34)+"+nl;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AllowInteraction;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;NewStep;;_RV_;;parameters;;_RV_;;T_CT_WINDOWCONTROLLER_ST_MAINFILE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"leftside;;_RV_;;oStep;;_RV_;;rightside;;_RV_;;GetActiveStep();;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;NewParentStep;;_RV_;;parameters;;_RV_;;T_CT_WINDOWCONTROLLER_ST_CLASS+StyleData(Variable(:name)+T_CT_WINDOWCONTROLLER_ST_CONTROLLER);;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:54:25",
-		"condition;;_RV_;;trim(lower(Variable(:view)))! = "+char(34)+"oview"+char(34)+";;_RV_;;"
+		"23/08/2025",
+		"08:27:22",
+		"condition;;_RV_;;trim(lower(Variable(:view))) != "+char(34)+"oview"+char(34)+";;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"leftside;;_RV_;;cCreateView;;_RV_;;rightside;;_RV_;;Variable(:view)+"+char(34)+" = ref(oView)"+char(34)+";;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"ifstatement",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"condition;;_RV_;;T_LAYOUTDIRECTION;;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"value;;_RV_;;cCreateView += nl+"+char(34)+"addAttribute(oView,'نافذة')"+char(34)+";;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"freetyping",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"value;;_RV_;;cCreateView += nl+"+char(34)+"oView.نافذة = oView.win"+char(34)+";;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"else",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		""
 	],
 	[
 		23,
 		1,
 		"assignment",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"leftside;;_RV_;;cCreateView;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetStepCode;;_RV_;;parameters;;_RV_;;"+char(34)+"}"+char(34)+"+nl+"+char(34)+"}"+char(34)+"+nl+"+char(34)+"class "+char(34)+"+Variable(:name)+T_CT_WINDOWCONTROLLER_ST_CONTROLLER+"+char(34)+" from windowsControllerParent"+char(34)+"+nl+"+char(34)+"oView = new "+char(34)+"+Variable(:name)+"+char(34)+"View"+char(34)+"+nl+cCreateView+nl;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AllowInteraction;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;NewStep;;_RV_;;parameters;;_RV_;;T_CT_WINDOWCONTROLLER_ST_ATTRIBUTES;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AllowInteraction;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;NewStep;;_RV_;;parameters;;_RV_;;T_CT_WINDOWCONTROLLER_ST_METHODS;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;NewParentStep;;_RV_;;parameters;;_RV_;;T_CT_WINDOWCONTROLLER_ST_PRIVATE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		30,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AllowInteraction;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;NewStep;;_RV_;;parameters;;_RV_;;T_CT_WINDOWCONTROLLER_ST_ATTRIBUTES;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		32,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;AllowInteraction;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		33,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;NewStep;;_RV_;;parameters;;_RV_;;T_CT_WINDOWCONTROLLER_ST_METHODS;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		34,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;NewStep;;_RV_;;parameters;;_RV_;;T_CT_WINDOWCONTROLLER_ST_END;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		35,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;SetActiveStep;;_RV_;;parameters;;_RV_;;oStep;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		36,
 		1,
 		"return",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"value;;_RV_;;True;;_RV_;;"
 	],
 	[
 		37,
 		1,
 		"class",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"value;;_RV_;;windowcontrollerComponentView;;_RV_;;value2;;_RV_;;ComponentViewParent;;_RV_;;value3;;_RV_;;2;;_RV_;;"
 	],
 	[
 		38,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;Title;;_RV_;;parameters;;_RV_;;T_CT_WINDOWCONTROLLER_IP_TITLE;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		39,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;TextBoxValue;;_RV_;;parameters;;_RV_;;T_CT_WINDOWCONTROLLER_IP_VALUE,:name,T_CT_WINDOWCONTROLLER_IP_NAME;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		40,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;TextBoxValue;;_RV_;;parameters;;_RV_;;T_CT_WINDOWCONTROLLER_IP_VALUE2,:app,T_CT_WINDOWCONTROLLER_IP_APP;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		41,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;TextBoxValue;;_RV_;;parameters;;_RV_;;T_CT_WINDOWCONTROLLER_IP_VALUE3,:view,T_CT_WINDOWCONTROLLER_IP_VIEW;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		42,
 		1,
 		"callfunc",
-		"01/06/2025",
-		"18:54:25",
+		"23/08/2025",
+		"08:27:22",
 		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;PageButtons;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	]
 ]
