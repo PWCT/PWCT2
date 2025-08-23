@@ -1,8 +1,9 @@
-# /*
-# ** Application  : Cards Game
-# */
+#/*
+#** Application  : Cards Game
+#*/
+load "stdlibcore.ring"
 load "lightguilib.ring"
-# Global variables and constants used by the main menu
+#Global variables and constants used by the main menu
 oGame = NULL
 oApp = NULL
 winMenu = NULL
@@ -81,7 +82,7 @@ func CloseGame  {
 	oApp.quit()
 } 
 func LoadCardsGame  { 
-	# Load Images	
+	#Load Images	
 	oPic = new QPixmap(AppFile("cards.jpg"))
 	oPic2 = oPic.copy(0,(124*4)+1,79,124)
 	Player1EatPic = oPic.copy(80,(124*4)+1,79,124)
@@ -95,7 +96,7 @@ func LoadCardsGame  {
 			aGameValues+(y1+1)
 		} 
 	} 
-	# Start the Game		
+	#Start the Game		
 	nPlayer1Score = 0
 	nPlayer2Score = 0
 	do 
@@ -109,7 +110,7 @@ func LoadCardsGame  {
 	again oGame.lnewgame
 } 
 class Game
-	# Setting properties based on platform
+	#Setting properties based on platform
 	C_BTNIMAGEWIDTH = floor(C_WIDTH*0.057)
 	C_BTNIMAGEHEIGHT = floor(C_HEIGHT*0.16)
 	C_PLAYERTITLEHEIGHT = floor(C_HEIGHT*0.16)
@@ -119,7 +120,7 @@ class Game
 		else
 			nCardsCount = 10
 	} 
-	# From the Game State
+	#From the Game State
 	oPic
 	oPic2
 	Player1EatPic
@@ -128,7 +129,7 @@ class Game
 	aGameValues
 	nPlayer1Score
 	nPlayer2Score
-	# The Game Window	
+	#The Game Window	
 	win1
 	layout1
 	label1
@@ -144,14 +145,14 @@ class Game
 	aValues
 	aStatusValues = aStatus
 	aStatusValues2 = aStatus
-	# Playing with the computer
+	#Playing with the computer
 	oOnePlayerTimer
 	aComputerActions = []
-	# More attributes
+	#More attributes
 	lnewgame = false
 	nDelayEat = 0.5
-	nDelayNewGame = 1
-	nDelayComputer = 0.2
+	nDelayNewGame = 0.5
+	nDelayComputer = 0.3
 	func loadGame poPic,poPic2,pPlayer1Eatpic,pPlayer2Eatpic,paGameCards,paGameValues,pnPlayer1Score,pnPlayer2Score { 
 		oPic = poPic
 		oPic2 = poPic2
@@ -286,14 +287,14 @@ class Game
 			Player2Eat(x,aStatusValues2[x])
 			checknewgame()
 			if nGameMode = C_GAMEMODE_ONEPLAYER { 
-				delay(nDelayComputer)
+				sleep(nDelayComputer)
 				ComputerAction()
 			} 
 		} 
 	} 
 	func Player1Eat nPos,nValue { 
 		oApp.processEvents()
-		delay(nDelayEat)
+		sleep(nDelayEat)
 		lEat = false
 		for x = 1 to nCardsCount step 1 { 
 			if aStatus2[x] = 1 AND (aStatusValues2[x] = nValue OR nValue = 5) { 
@@ -302,7 +303,7 @@ class Game
 				lEat = True
 				nPlayer1Score++
 			} 
-			if (x! = nPos) AND (aStatus[x] = 1) AND (aStatusValues[x] = nValue OR nValue = 5) { 
+			if (x != nPos) AND (aStatus[x] = 1) AND (aStatusValues[x] = nValue OR nValue = 5) { 
 				aStatus[x] = 2
 				setButtonImage(aBtns[x],Player1EatPic)
 				lEat = True
@@ -318,7 +319,7 @@ class Game
 	} 
 	func Player2Eat nPos,nValue { 
 		oApp.processEvents()
-		delay(nDelayEat)
+		sleep(nDelayEat)
 		lEat = false
 		for x = 1 to nCardsCount step 1 { 
 			if aStatus[x] = 1 AND (aStatusValues[x] = nValue OR nValue = 5) { 
@@ -327,7 +328,7 @@ class Game
 				lEat = True
 				nPlayer2Score++
 			} 
-			if (x! = nPos) AND (aStatus2[x] = 1) AND (aStatusValues2[x] = nValue OR nValue = 5) { 
+			if (x != nPos) AND (aStatus2[x] = 1) AND (aStatusValues2[x] = nValue OR nValue = 5) { 
 				aStatus2[x] = 2
 				setButtonImage(aBtns2[x],Player2EatPic)
 				lEat = True
@@ -354,7 +355,7 @@ class Game
 				oOnePlayerTimer.stop()
 			} 
 			oApp.processEvents()
-			delay(nDelayNewGame)
+			sleep(nDelayNewGame)
 			win1.close()
 		} 
 	} 
@@ -371,11 +372,6 @@ class Game
 		} 
 		return true
 	} 
-	func delay x { 
-		nTime = x*1000
-		oTest = new qTest
-		oTest.qsleep(nTime)
-	} 
 	func ComputerAction  { 
 		oOnePlayerTimer.stop()
 		aOptions = 1:nCardsCount
@@ -387,7 +383,7 @@ class Game
 				} 
 			} 
 		} 
-		# Repeat until you find new (unopened) card
+		#Repeat until you find new (unopened) card
 		if len(aComputerActions) < nCardsCount { 
 			nCardNumber = Random(len(aOptions))
 			if nCardNumber = 0 { 
