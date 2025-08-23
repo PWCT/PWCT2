@@ -55,7 +55,7 @@ class ParserExpr
 		/* EqualOrNot --> Compare { =|!= Compare } */
 		if compare() {
 			x = 1 
-			while isoperator2(OP_EQUAL) or isoperator2(OP_NOT)  {
+			while isoperator2(OP_EQUAL) or isoperator2(OP_NOT) or isoperator("!=") {
 				if isoperator2(OP_NOT) {
 					nexttoken()
 					IGNORENEWLINE() 
@@ -70,6 +70,13 @@ class ParserExpr
 						error(ERROR_EXPROPERATOR)
 						return False 
 					}
+				elseif isoperator("!=")	# Starting from Ring 1.24
+						nexttoken()
+						IGNORENEWLINE()
+						x = compare()
+						if x = 0 {
+							return False 
+						}
 				else 
 					nexttoken()
 					IGNORENEWLINE()
@@ -87,7 +94,7 @@ class ParserExpr
 		/* Compare --> BitORXOR { <|>|<=|>= BITORXOR } */
 		if bitorxor() {
 			x = 1 
-			while isoperator2(OP_LESS) or isoperator2(OP_GREATER) {
+			while isoperator2(OP_LESS) or isoperator2(OP_GREATER) or isoperator("<=") or isoperator(">="){
 				nEqual = 0 
 				if isoperator2(OP_LESS) {
 					nexttoken()
@@ -95,6 +102,7 @@ class ParserExpr
 					if isoperator2(OP_EQUAL) {
 						nEqual = 1 
 						nexttoken()
+						IGNORENEWLINE()
 					}
 					x = bitorxor()
 					if x = 0 {
@@ -105,6 +113,22 @@ class ParserExpr
 					else
 						/* Generate Code */
 					}
+				elseif isoperator("<=")	# Starting from Ring 1.24
+					nEqual = 1 
+					nexttoken()
+					IGNORENEWLINE()
+					x = bitorxor()
+					if x = 0 {
+						return False 
+					}
+				elseif isoperator(">=")	# Starting from Ring 1.24
+						nEqual = 1 
+						nexttoken()
+						IGNORENEWLINE() 
+						x = bitorxor()
+						if x = 0 {
+							return False 
+						}
 				else 
 					nexttoken()
 					IGNORENEWLINE() 
