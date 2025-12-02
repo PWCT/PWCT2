@@ -484,6 +484,12 @@ class ParserStmt
 		if epslion() { 
 			return True
 		} 
+		#/* Statement --> Comma */
+		if isoperator2(OP_COMMA) { 
+			nexttoken()
+			clearTextBuffer()
+			return True
+		} 
 		#/* Statement --> Expr */
 		if expr() { 
 			if isOperator(")") { 
