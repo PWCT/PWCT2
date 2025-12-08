@@ -296,16 +296,22 @@ class ParserTokens
 		} 		
 		return cTokensText	
 
-	func keywordtoidentifier lKeywordRepresentAnIdentifier
+	func keywordtoidentifier
 
 		nTokenType = C_IDENTIFIER
+		cTokenValue = lower(aKeywords[0+cTokenValue])
 
 	func processkeywords
+
+		if number(version()) < 1.25 { return }
 
 		if (isanykeyword() &&
 		    /* Check keywords that are in the middle of instructions */
 		    (iskeyword(K_TO) || iskeyword(K_IN) ||
 		     iskeyword(K_FROM) || iskeyword(K_STEP) ||
+			/* Check keywords related to classes identifiers */
+			 iskeyword(K_THIS) || iskeyword(K_SELF) ||
+			  iskeyword(K_SUPER) ||
 		     /* Check keywords releated to if-statement */
 		     ((! nIfCounter) &&
 		      (iskeyword(K_BUT) || iskeyword(K_OK))) ||
@@ -321,11 +327,7 @@ class ParserTokens
 		     /* Check keywords shared by if-statement and switch-statement */
 		     ((! nIfCounter) && ( ! nSwitchCounter ) &&
 		      (iskeyword(K_ELSE) || iskeyword(K_OTHER))))) {
-			keywordtoidentifier(false)
-		/* Check keywords related to classes identifiers */
-		elseif (isanykeyword() &&
-			 (iskeyword(K_THIS) || iskeyword(K_SELF) ||
-			  iskeyword(K_SUPER))) 
-			keywordtoidentifier(true)
+			keywordtoidentifier()
+
 		}
 
