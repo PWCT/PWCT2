@@ -6,6 +6,7 @@
 */
 
 load "stdlibcore.ring"
+load "tokenslib.ring"
 load "globals.ring"
 load "uilib.ring"
 load "scanner.ring"
