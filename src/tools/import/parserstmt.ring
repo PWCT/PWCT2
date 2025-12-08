@@ -177,6 +177,7 @@ class ParserStmt
 		}
 		/* Statement --> IF Expr Statements OK */
 		if iskeyword(K_IF) {
+			nIfCounter++
 			ClearTextBuffer()
 			nexttoken()
 			IGNORENEWLINE() 
@@ -233,11 +234,13 @@ class ParserStmt
 					oTarget.GenerateBlockEnd(self)
 					nexttoken()
 					clearTextBuffer()
+					nIfCounter--
 					return True 
 				else
 					error(ERROR_OK)
 				}
 			}
+			nIfCounter--
 			return False 
 		}
 		/* Statement --> WHILE Expr Statements END */
@@ -276,6 +279,7 @@ class ParserStmt
 		}
 		/* Statement --> DO Statements AGAIN Expr */
 		if iskeyword(K_DO) {
+			nDoAgainCounter++
 			clearTextBuffer()
 			/*
 			**  Generate Code 
@@ -303,11 +307,13 @@ class ParserStmt
 					/* Generate Code (Test Condition) */
 					nAssignmentFlag = 1 
 					clearTextBuffer()
+					nDoAgainCounter--
 					return True 
 				}
 			else
 				error(ERROR_AGAIN)
 			}
+			nDoAgainCounter--
 			return False 
 		}
 		/* Statement --> Return Expr */
@@ -326,6 +332,7 @@ class ParserStmt
 		}
 		/* Statement --> Try {Statement} Catch {Statement} Done */
 		if iskeyword(K_TRY) {
+			nTryCatchCounter++
 			clearTextBuffer()
 			nexttoken()
 			IGNORENEWLINE() 
@@ -361,6 +368,7 @@ class ParserStmt
 					nexttoken()
 					/* Generate Code */
 					clearTextBuffer()
+					nTryCatchCounter--
 					return True 
 				else
 					error(ERROR_NODONE)
@@ -368,6 +376,8 @@ class ParserStmt
 			else
 				error(ERROR_NOCATCH)
 			}
+			nTryCatchCounter--
+			return False 
 		}
 		/* Statement --> Bye (Close the Program) */
 		if iskeyword(K_BYE) {
@@ -410,6 +420,7 @@ class ParserStmt
 		}
 		/* Statement --> Switch  Expr { ON|CASE Expr {Statement} } OFF */
 		if iskeyword(K_SWITCH) {
+			nSwitchCounter++
 			clearTextBuffer()
 			nexttoken()
 			IGNORENEWLINE() 
@@ -461,6 +472,7 @@ class ParserStmt
 				if iskeyword(K_OFF) or iskeyword(K_END) or iskeyword(K_ENDSWITCH) or csbraceend() {
 					nexttoken()
 					clearTextBuffer()
+					nSwitchCounter--
 					return True 
 				else
 					error(ERROR_SWITCHOFF)
@@ -468,6 +480,8 @@ class ParserStmt
 			else
 				error(ERROR_SWITCHEXPR)
 			}
+			nSwitchCounter--
+			return False
 		}
 		/* Statement --> Import Identifier { '.' Identifier } */
 		if iskeyword(K_IMPORT) {
