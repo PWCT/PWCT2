@@ -56,6 +56,10 @@ class Parser
 		nFuncCallOnly 	= 0 
 		nControlStructureExpr 	= 0 
 		nControlStructureBrace 	= 0 
+		nIfCounter = 0
+		nSwitchCounter = 0
+		nTryCatchCounter = 0
+		nDoAgainCounter = 0
 
 	# Object provide methods determines what to generate (Instructions)	
 		oTarget = new Target 
