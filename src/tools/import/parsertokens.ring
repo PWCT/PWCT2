@@ -292,3 +292,36 @@ class ParserTokens
 			}
 		} 		
 		return cTokensText	
+
+	func processkeywords() {
+	/*
+	**  Change some keywords to identifiers (Useful for Natural Commands using Classes/Braces)
+	**  Check if we have a keyword
+	*/
+	if (isanykeyword() &&
+	    /* Check keywords that are in the middle of instructions */
+	    (iskeyword(K_TO) || iskeyword(K_IN) ||
+	     iskeyword(K_FROM) || iskeyword(K_STEP) ||
+	     /* Check keywords releated to if-statement */
+	     ((! nIfCounter) &&
+	      (iskeyword(K_BUT) || iskeyword(K_OK))) ||
+	     /* Check keywords related to Switch-statement */
+	     ((! nSwitchCounter) &&
+	      (iskeyword(K_ON) || iskeyword(K_CASE) ||
+	       iskeyword(K_OFF))) ||
+	     /* Check keywrods related to Try-Catch-Done statement */
+	     ((! nTryCatchCounter) &&
+	      (iskeyword(K_CATCH) || iskeyword(K_DONE))) ||
+	     /* Check the Again keyword */
+	     ((! nDoAgainCounter) && (iskeyword(K_AGAIN))) ||
+	     /* Check keywords shared by if-statement and switch-statement */
+	     ((! nIfCounter) && ( ! nSwitchCounter ) &&
+	      (iskeyword(K_ELSE) || iskeyword(K_OTHER))))) {
+		keywordtoidentifier(false)
+	/* Check keywords related to classes identifiers */
+	elseif (isanykeyword(pParser) &&
+		 (iskeyword(K_THIS) || iskeyword(K_SELF) ||
+		  iskeyword(K_SUPER))) 
+		keywordtoidentifier(true)
+	}
+}
