@@ -310,10 +310,11 @@ class ParserTokens
 			 iskeyword(K_MAIN) || iskeyword(K_INIT) || iskeyword(K_OPERATOR) ||
 			 iskeyword(K_BRACESTART) || iskeyword(K_BRACEEXPREVAL) ||
 			 iskeyword(K_BRACEERROR) || iskeyword(K_BRACEEND) ||
-		    /* Check keywords that are in the middle of instructions */
+		    /* Check keywords related to the for-loop */
 			((! nForCounter) &&
-		    (iskeyword(K_TO) || iskeyword(K_IN) ||
-		     iskeyword(K_FROM) || iskeyword(K_STEP) )) ||
+		    (iskeyword(K_TO) || iskeyword(K_IN) || iskeyword(K_STEP) )) ||
+		     /* Check keywords releated to if-statement */
+		     ((! nFromCounter) && iskeyword(K_FROM) ) ||
 		     /* Check keywords releated to if-statement */
 		     ((! nIfCounter) &&
 		      (iskeyword(K_BUT) || iskeyword(K_OK))) ||

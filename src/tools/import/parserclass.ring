@@ -10,6 +10,7 @@ class ParserClass
 	func mainclass
 		/* Statement --> Class Identifier  [ From Identifier ] */
 		if iskeyword(K_CLASS) {
+			nFromCounter++
 			ClearTextBuffer()
 			nexttoken()
 			RemoveOpenedBraceFromBuffer()
@@ -24,6 +25,7 @@ class ParserClass
 					if namedotname() {
 						/* Generate Code */
 					else
+						nFromCounter--
 						error(ERROR_PRENTCLASSNAME)
 						return False 
 					}
@@ -44,9 +46,10 @@ class ParserClass
 				}
 				oTarget.GenerateDefineClass(self)
 				oTarget.GenerateBlockStart(self)
-
+				nFromCounter--
 				return bracesandend(1,K_ENDCLASS) 
 			else
+				nFromCounter--
 				error(ERROR_CLASSNAME)
 				return False 
 			}
