@@ -306,15 +306,16 @@ class ParserTokens
 		if number(version()) < 1.25 { return }
 
 		if (isanykeyword() &&
-		    /* Check keywords that are in the middle of instructions */
-		    (iskeyword(K_TO) || iskeyword(K_IN) ||
-		     iskeyword(K_FROM) || iskeyword(K_STEP) ||
 			/* Check keywords related to classes identifiers */
-			 iskeyword(K_THIS) || iskeyword(K_SELF) ||
+			( iskeyword(K_THIS) || iskeyword(K_SELF) ||
 			  iskeyword(K_SUPER) ||
 			 iskeyword(K_MAIN) || iskeyword(K_INIT) || iskeyword(K_OPERATOR) ||
 			 iskeyword(K_BRACESTART) || iskeyword(K_BRACEEXPREVAL) ||
 			 iskeyword(K_BRACEERROR) || iskeyword(K_BRACEEND) ||
+		    /* Check keywords that are in the middle of instructions */
+			((! nForCounter) &&
+		    (iskeyword(K_TO) || iskeyword(K_IN) ||
+		     iskeyword(K_FROM) || iskeyword(K_STEP) )) ||
 		     /* Check keywords releated to if-statement */
 		     ((! nIfCounter) &&
 		      (iskeyword(K_BUT) || iskeyword(K_OK))) ||

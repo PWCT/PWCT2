@@ -56,6 +56,7 @@ class Parser
 		nFuncCallOnly 	= 0 
 		nControlStructureExpr 	= 0 
 		nControlStructureBrace 	= 0 
+		nForCounter = 0
 		nIfCounter = 0
 		nSwitchCounter = 0
 		nTryCatchCounter = 0

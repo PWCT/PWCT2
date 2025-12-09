@@ -84,6 +84,7 @@ class ParserStmt
 		}
 		/* Statement --> For Identifier = Expr to Expr {Statement} Next  |  For Identifier in Expr {Statemen */
 		if iskeyword(K_FOR) or isKeyword(K_FOREACH) {
+			nForCounter++
 			clearTextBuffer()
 			nexttoken()
 			IGNORENEWLINE() 
@@ -116,6 +117,7 @@ class ParserStmt
 								/* Step <expr> */
 								x = parsestep()
 								if x = 0 {
+									nForCounter--
 									return False 
 								}
 								oTarget.GenerateForLoop(self)
@@ -130,6 +132,7 @@ class ParserStmt
 									/* Generate Code */
 									nexttoken()
 									clearTextBuffer()
+									nForCounter--
 									return True 
 								else
 									error(ERROR_NEXT)
@@ -152,6 +155,7 @@ class ParserStmt
 						/* Step <expr> */
 						x = parsestep()
 						if x = 0 {
+							nForCounter--
 							return False 
 						}
 						oTarget.GenerateForInLoop(self)
@@ -166,6 +170,7 @@ class ParserStmt
 							nexttoken()
 							/* Generate Code */
 							clearTextBuffer()
+							nForCounter--
 							return True 
 						else
 							error(ERROR_NEXT)
@@ -173,6 +178,7 @@ class ParserStmt
 					}
 				}
 			}
+			nForCounter--
 			return False 
 		}
 		/* Statement --> IF Expr Statements OK */
