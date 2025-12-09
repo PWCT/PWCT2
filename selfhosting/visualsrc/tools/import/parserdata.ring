@@ -57,6 +57,7 @@ class Parser
 	nSwitchCounter = 0
 	nTryCatchCounter = 0
 	nDoAgainCounter = 0
+	nFromCounter = 0
 	#Object provide methods determines what to generate (Instructions)	
 	#Shutdown when error happens ?
 	oTarget = new Target
