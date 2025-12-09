@@ -312,6 +312,9 @@ class ParserTokens
 			/* Check keywords related to classes identifiers */
 			 iskeyword(K_THIS) || iskeyword(K_SELF) ||
 			  iskeyword(K_SUPER) ||
+			 iskeyword(K_MAIN) || iskeyword(K_INIT) || iskeyword(K_OPERATOR) ||
+			 iskeyword(K_BRACESTART) || iskeyword(K_BRACEEXPREVAL) ||
+			 iskeyword(K_BRACEERROR) || iskeyword(K_BRACEEND) ||
 		     /* Check keywords releated to if-statement */
 		     ((! nIfCounter) &&
 		      (iskeyword(K_BUT) || iskeyword(K_OK))) ||
