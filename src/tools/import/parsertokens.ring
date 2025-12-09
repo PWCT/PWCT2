@@ -47,6 +47,7 @@ class ParserTokens
 		nTokenType 	= aActiveToken[C_TOKENTYPE]
 		cTokenValue 	= aActiveToken[C_TOKENVALUE]
 		nTokenIndex 	= aActiveToken[C_TOKENINDEX]
+		processkeywords()
 		if lBufferFlag {
 			AddToTextBuffer()
 		}
@@ -189,10 +190,7 @@ class ParserTokens
 
 	func isNumber return nTokenType = C_NUMBER
 
-	func isIdentifier 
-
-		processkeywords()
-		return nTokenType = C_IDENTIFIER
+	func isIdentifier return nTokenType = C_IDENTIFIER
 
 	func isEndLine return nTokenType = C_ENDLINE
 
