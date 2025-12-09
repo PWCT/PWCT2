@@ -45,6 +45,7 @@ class ParserTokens
 		nTokenType = aActiveToken[C_TOKENTYPE]
 		cTokenValue = aActiveToken[C_TOKENVALUE]
 		nTokenIndex = aActiveToken[C_TOKENINDEX]
+		processkeywords()
 		if lBufferFlag { 
 			AddToTextBuffer()
 		} 
@@ -294,5 +295,24 @@ class ParserTokens
 			} 
 		} 
 		return cTokensText
+	} 
+	func keywordtoidentifier  { 
+		nTokenType = C_IDENTIFIER
+		cTokenValue = lower(aKeywords[0+cTokenValue])
+	} 
+	func processkeywords  { 
+		if number(version()) < 1.25 { 
+			return 
+		} 
+		#/* Check keywords related to classes identifiers */
+		#/* Check keywords that are in the middle of instructions */
+		#/* Check keywords releated to if-statement */
+		#/* Check keywords related to Switch-statement */
+		#/* Check keywrods related to Try-Catch-Done statement */
+		#/* Check the Again keyword */
+		#/* Check keywords shared by if-statement and switch-statement */
+		if (isanykeyword()&&(iskeyword(K_THIS)||iskeyword(K_SELF)||iskeyword(K_SUPER)||iskeyword(K_MAIN)||iskeyword(K_INIT)||iskeyword(K_OPERATOR)||iskeyword(K_BRACESTART)||iskeyword(K_BRACEEXPREVAL)||iskeyword(K_BRACEERROR)||iskeyword(K_BRACEEND)||((!nForCounter)&&(iskeyword(K_TO)||iskeyword(K_IN)||iskeyword(K_FROM)||iskeyword(K_STEP)))||((!nIfCounter)&&(iskeyword(K_BUT)||iskeyword(K_OK)))||((!nSwitchCounter)&&(iskeyword(K_ON)||iskeyword(K_CASE)||iskeyword(K_OFF)))||((!nTryCatchCounter)&&(iskeyword(K_CATCH)||iskeyword(K_DONE)))||((!nDoAgainCounter)&&(iskeyword(K_AGAIN)))||((!nIfCounter)&&(!nSwitchCounter)&&(iskeyword(K_ELSE)||iskeyword(K_OTHER))))) { 
+			keywordtoidentifier()
+		} 
 	} 
 private

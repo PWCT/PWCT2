@@ -1,10 +1,11 @@
-func main  { 
-	try { 
+func main {
+	try {
 		1/0
 	catch 
-		? :error
-	} 
-} 
-func one  { 
+		? :error 
+	}
+}
+
+func one {
 	? :one
-} 
+}

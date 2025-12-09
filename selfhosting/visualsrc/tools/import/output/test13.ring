@@ -3,10 +3,9 @@ new qApp
 {
 	oWidget = new QWidget()
 	oView = new Qt3DWindow()
-	oView.defaultFrameGraph().setClearColor(
-		new QColor() {
-			setRGB(0,0,0,255)
-		}
+	oView.defaultFrameGraph().setClearColor( new QColor() {
+		setRGB(0,0,0,255)
+	}
 	)
 	oContainer = oWidget.createWindowContainer(oView,oWidget,0)
 	oRootEntity = new QEntity(oContainer)
@@ -42,20 +41,18 @@ new qApp
 	oQ = new QQuaternion(0,0,0,0)
 	oTableTransform.setRotation(oQ.fromAxisAndAngle( new QVector3D(0,1,1),-180))
 	oTableModelMaterial = new QPhongMaterial(oTableEntity)
-	oTableModelMaterial.setDiffuse(
-		new QColor() {
-			setRGB(255,255,255,255)
-		}
+	oTableModelMaterial.setDiffuse( new QColor() {
+		setRGB(255,255,255,255)
+	}
 	)
 	oTableEntity.addComponent(oTableModel)
 	oTableEntity.addComponent(oTableModelmaterial)
 	oTableEntity.addComponent(oTableTransform)
 	oFirstLightEntity = new QEntity(oRootEntity)
 	oFirstLight = new QPointLight(oFirstLightEntity)
-	oFirstLight.setColor(
-		new qColor() {
-			setRGB(128,128,128,128)
-		}
+	oFirstLight.setColor( new qColor() {
+		setRGB(128,128,128,128)
+	}
 	)
 	oFirstLight.setIntensity(1)
 	oFirstLightTransform = new QTransform(oFirstLightEntity)
@@ -70,10 +67,9 @@ new qApp
 		aCats[n][:oCatModel] = new QMesh(aCats[n][:oCatModelEntity])
 		aCats[n][:oCatModel].setSource( new qURL("file:///"+CurrentDir()+"/assets/model/Lucky_Cat.obj"))
 		aCats[n][:oCatModelMaterial] = new QPhongMaterial(aCats[n][:oCatModel])
-		aCats[n][:oCatModelMaterial].setDiffuse(
-			new QColor() {
-				setRGB(255,255,255,255)
-			}
+		aCats[n][:oCatModelMaterial].setDiffuse( new QColor() {
+			setRGB(255,255,255,255)
+		}
 		)
 		aCats[n][:oCatModelTransform] = new QTransform(aCats[n][:oCatModelEntity])
 		aCats[n][:oCatModelTransform].setScale(0.01)
@@ -86,10 +82,9 @@ new qApp
 	} 
 	oSecondLightEntity = new QEntity(oRootEntity)
 	oSecondLight = new QPointLight(oSecondLightEntity)
-	oSecondLight.setColor(
-		new qColor() {
-			setRGB(255,255,255,255)
-		}
+	oSecondLight.setColor( new qColor() {
+		setRGB(255,255,255,255)
+	}
 	)
 	oSecondLight.setIntensity(1)
 	oSecondLightTransform = new QTransform(oSecondLightEntity)
@@ -108,10 +103,9 @@ new qApp
 	oQ = new QQuaternion(0,0,0,0)
 	oRobotTransform.setRotation(oQ.fromAxisAndAngle( new QVector3D(0,1,1),170))
 	oRobotMaterial = new QPhongMaterial(oRobotEntity)
-	oRobotMaterial.setDiffuse(
-		new QColor() {
-			setRGB(128,128,128,255)
-		}
+	oRobotMaterial.setDiffuse( new QColor() {
+		setRGB(128,128,128,255)
+	}
 	)
 	oRobotEntity.addComponent(oRobotModel)
 	oRobotEntity.addComponent(oRobotTransform)

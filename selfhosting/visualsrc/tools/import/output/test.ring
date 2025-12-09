@@ -1,9 +1,9 @@
-#/*
-#**	Project : Programming Without Coding Technology (PWCT) Version 2.0
-#**	File Purpose : Import Tool - Test File
-#**	Date : 2020.02.15
-#**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
-#*/
+/*
+**	Project : Programming Without Coding Technology (PWCT) Version 2.0
+**	File Purpose : Import Tool - Test File
+**	Date : 2020.02.15
+**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
+*/
 load "stdlib.ring"
 load "guilib.ring"
 try { 
@@ -31,12 +31,12 @@ if 1+2 = 3 {
 	? "True Answer"
 } 
 x = 10
-while x > 0 { 
+while x>0 { 
 	? "x = "+x
 	x--
 } 
 x = 10
-while x > 0 { 
+while x>0 { 
 	? "x = "+x
 	x--
 } 
@@ -73,7 +73,7 @@ x = 10
 do 
 	? "x = "+x
 	x--
-again x > 0
+again x>0
 x = 3
 switch x { 
 	case 1
@@ -93,23 +93,23 @@ catch
 } 
 import myfirstPackage
 myobj = new myclass()
-{
-	myobj.myclass_m1()
-	myobj.myclass_m2()
-}
+	 {
+		myobj.myclass_m1()
+		myobj.myclass_m2()
+	}
 myfunc = func  {
 	? "test"
 }
 call myfunc()
 myobj2 = new myclass()
-{
-	myclass_m1()
-	myclass_m2()
-}
+	 {
+		myclass_m1()
+		myclass_m2()
+	}
 myobj3 = new myclass
-{
-	? "just a test!"
-}
+	 {
+		? "just a test!"
+	}
 myobj3 {
 	? "Another test!"
 }
@@ -132,7 +132,7 @@ func test x,y {
 	? "Hello from Test!"
 } 
 func sum a,b,c { 
-	return a+ b+ c
+	return a+b+c
 } 
 func testif  { 
 	if x = 1 { 

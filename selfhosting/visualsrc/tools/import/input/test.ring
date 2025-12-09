@@ -1,20 +1,22 @@
-#/*
-#**	Project : Programming Without Coding Technology (PWCT) Version 2.0
-#**	File Purpose : Import Tool - Test File
-#**	Date : 2020.02.15
-#**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
-#*/
+/*
+**	Project : Programming Without Coding Technology (PWCT) Version 2.0
+**	File Purpose : Import Tool - Test File
+**	Date : 2020.02.15
+**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
+*/
+
 load "stdlib.ring"
 load "guilib.ring"
-try { 
-	print("test"+x+"','"+"nice")
+
+try
+	print("test" + x + "','" + "nice")
 catch 
-} 
+done
+
 import System.GUI
+
 cName = "ring"
-one()
-two()
-three()
+one() two() three()
 test(1,2)
 sum(1,2,3)
 see "Hello, World!"+(3*2)+cName
@@ -22,184 +24,190 @@ see "Welcome to the Ring programming language"
 see "Ring is a great language!"
 ? "The current Ring version is Ring 1.15"
 ? "Hello, World!"+(3*2)+cName
-if 3 = 1+2 { 
+if 3=1+2
 	? "True"
 	? "Nice work!"
 	? "Now the import feature works fine"
-} 
-if 1+2 = 3 { 
+ok
+if 1+2=3 {
 	? "True Answer"
-} 
+}
 x = 10
-while x > 0 { 
-	? "x = "+x
+while x > 0
+	? "x = " + x 
 	x--
-} 
+end
+
 x = 10
-while x > 0 { 
-	? "x = "+x
+while x > 0 {
+	? "x = " + x 
 	x--
-} 
+}
+
 startScene = new StartScene
-while !WindowShouldClose() { 
+
+while !WindowShouldClose()
 	? :good
-	exit 1
-} 
-if x = 1 { 
+	exit
+end 
+
+if x = 1 
 	? "one"
-	elseif x = 2
-		? "two"
-	elseif x = 3
-		? "three"
-	elseif x = 4
-		? "four"
-	else
-		? "other number"
-} 
-for x = 1 to 10 step 1 { 
+but x = 2
+	? "two"
+but x = 3
+	? "three"
+but x = 4
+	? "four"
+else 
+	? "other number" 
+ok
+for x=1 to 10
 	? x
-	if x = 3 { 
-		loop 1
-	} 
-	if x = 7 { 
-		exit 1
-	} 
-} 
+	if x = 3 
+		loop
+	ok
+	if x = 7
+		exit 
+	ok
+next 
 aList = [1,2,3]
-for x in aList step 1 { 
+for x in aList 
 	? x
-} 
+next
+
 x = 10
 do 
-	? "x = "+x
+	? "x = " + x 
 	x--
 again x > 0
+
 x = 3
-switch x { 
-	case 1
+switch x
+	on 1
 		? "One"
-	case 2
+	on 2
 		? "Two"
-	case 3
+	on 3 
 		? "Three"
-	else
+	other 
 		? "Other number"
-} 
-try { 
+off
+
+try	
 	? "Try some code"
 	1/0
 catch 
 	? "Catch the error"
-} 
+end
+
 import myfirstPackage
-myobj = new myclass()
-{
+myobj = new myclass() {
 	myobj.myclass_m1()
 	myobj.myclass_m2()
 }
-myfunc = func  {
-	? "test"
-}
+
+myfunc = func { ? "test" }
 call myfunc()
-myobj2 = new myclass()
-{
+
+myobj2 = new myclass() {
 	myclass_m1()
 	myclass_m2()
 }
-myobj3 = new myclass
-{
+
+myobj3 = new myclass {
 	? "just a test!"
 }
+
 myobj3 {
 	? "Another test!"
 }
+
 ? "Thanks"
 ? "End of program!"
+
 myend()
-func myend  { 
-	shutdown(0)
-} 
-func one  { 
+
+func myend
+	bye
+
+func one 
 	? "hello from one"
-} 
-func two  { 
+
+func two
 	? "hello from two"
-} 
-func three  { 
+
+func three 
 	? "hello from three "
-} 
-func test x,y { 
+
+func test x,y
 	? "Hello from Test!"
-} 
-func sum a,b,c { 
-	return a+ b+ c
-} 
-func testif  { 
-	if x = 1 { 
-		if y = 2 { 
-			if z = 3 { 
-				if r = nice() { 
+
+func sum a,b,c
+	return a+b+c
+
+func testif 
+	if x = 1 
+		if y = 2
+			if z = 3
+				if r = nice()
 					? "r test"
-				} 
+				ok
 				? "z test"
-			} 
+			ok
 			? "y test"
-		} 
+		ok
 		? "x test"
-	} 
-} 
-func testgive  { 
-	? "Enter Name: "
-	give name
-	? "Hello "+name
-} 
-func WindowShouldClose  { 
+	ok
+end 
+
+func testgive 
+	? "Enter Name: " give name 
+	? "Hello " + name 
+
+func WindowShouldClose 
 	return false
-} 
+
 class StartScene
-private
-package MyFirstPackage
+
+Package MyFirstPackage
+
 class myparent
-private
-class myclass from myparent
+
+class myclass from myparent 
 	? "hello from myclass"
-	func init  { 
-		return self
-	} 
-	func myclass_m1  { 
+	func init
+		return self 
+	func myclass_m1 
 		? "m1"
-	} 
-	func myclass_m2  { 
+	func myclass_m2
 		? "m2"
-	} 
-private
-	? "myclass - private section"
-	func private_method1  { 
-		? "private method 1"
-	} 
-	func private_method2  { 
-		? "private method 2"
-	} 
-package Application.Sales.Database
+	private 
+		? "myclass - private section"
+		func private_method1
+			? "private method 1"
+		func private_method2
+			? "private method 2"
+
+
+Package Application.Sales.Database
+
 class human
 	? "hello from human"
-	func humanname  { 
+	func humanname 
 		? "human name"
-	} 
-	func humanage  { 
+	func humanage
 		? "human age"
-	} 
-private
-	? "human - private section"
-class employee from human
+	private 
+		? "human - private section"
+class employee from human 
 	? "hello from employee"
-	func employeejob  { 
+	func employeejob
 		? "job"
-	} 
-	func salary  { 
+	func salary
 		? "salary"
-	} 
-private
-	func oldsalary  { 
-		? "old salary"
-	} 
+	private 
+		func oldsalary
+			? "old salary"
+
+

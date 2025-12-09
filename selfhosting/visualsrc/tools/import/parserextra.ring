@@ -126,7 +126,7 @@ class ParserExtra
 			else
 				#/* Generate Code */
 		} 
-		addParameterFromSecondBuffer(: step)
+		addParameterFromSecondBuffer(:step)
 		return 1 
 	} 
 	func csexpr  { 

@@ -54,7 +54,7 @@ class Generator
 					popParent()
 				case : if
 					AddIfExpression(aCommand[:Expression])
-				case : but
+				case :but
 					AddButExpression(aCommand[:Expression])
 				case : else
 					AddElse()
@@ -67,9 +67,9 @@ class Generator
 				case : while
 					AddWhileExpression(aCommand[:Expression])
 				case : for
-					AddForLoop(aCommand[:Start],aCommand[: to],aCommand[: step])
+					AddForLoop(aCommand[:Start],aCommand[:to],aCommand[:step])
 				case :ForIn
-					AddForInLoop(aCommand[:Variable],aCommand[: in],aCommand[: step])
+					AddForInLoop(aCommand[:Variable],aCommand[:in],aCommand[:step])
 				case :DoAgain
 					AddDoAgainExpression(aCommand[:Expression])
 				case : exit
@@ -80,7 +80,7 @@ class Generator
 					AddBye(aCommand[:Value])
 				case : try
 					AddTry()
-				case : catch
+				case :catch
 					AddCatch()
 				case : func
 					AddFuncParameters(aCommand[: function],aCommand[:Parameters])

@@ -86,22 +86,22 @@ class Target
 	} 
 	func GenerateButExpr oParser { 
 		oParser {
-			Generate([:Command = : but,:Expression = Parameter(:Condition)],C_CLEARBUFFER)
+			Generate([:Command = :but,:Expression = Parameter(:Condition)],C_CLEARBUFFER)
 		}
 	} 
 	func GenerateElse oParser { 
 		oParser {
-			Generate([:Command = : else],C_CLEARBUFFER)
+			Generate([:Command = :else],C_CLEARBUFFER)
 		}
 	} 
 	func GenerateForLoop oParser { 
 		oParser {
-			Generate([:Command = : for,:Start = Parameter(:Start),: to = Parameter(: to),: step = Parameter(: step)],C_CLEARBUFFER)
+			Generate([:Command = : for,:Start = Parameter(:Start),:to = Parameter(:to),:step = Parameter(:step)],C_CLEARBUFFER)
 		}
 	} 
 	func GenerateForInLoop oParser { 
 		oParser {
-			Generate([:Command = :ForIn,:Variable = Parameter(:Variable),: in = Parameter(: in),: step = Parameter(: step)],C_CLEARBUFFER)
+			Generate([:Command = :ForIn,:Variable = Parameter(:Variable),:in = Parameter(:in),:step = Parameter(:step)],C_CLEARBUFFER)
 		}
 	} 
 	func GenerateDoAgainExpr oParser { 
@@ -151,7 +151,7 @@ class Target
 	} 
 	func GenerateCatch oParser { 
 		oParser {
-			Generate([:Command = : catch],C_KEEPBUFFER)
+			Generate([:Command = :catch],C_KEEPBUFFER)
 		}
 	} 
 	func GenerateAssignment oParser { 

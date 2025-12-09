@@ -1,1 +1,1 @@
-return new qDate() { setDate( y, m, d ) }
+return new qDate() { setDate( y , m , d ) }

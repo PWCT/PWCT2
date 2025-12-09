@@ -9,7 +9,7 @@ load "../vsfgenerator/generator.ring"
 lTestFiles = True
 if isMainSourceFile() { 
 	if lTestFiles { 
-		ImportFile("input/test17.ring","output/test17.pwct",C_PRINTOUTPUT)
+		ImportFile("input/test18.ring","output/test18.pwct",C_PRINTOUTPUT)
 		else
 			? RingCode2PWCT("if x = 3 ? :Three ok")
 	} 

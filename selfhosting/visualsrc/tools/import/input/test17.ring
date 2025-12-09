@@ -1,1 +1,1 @@
-eval("oObject = new "+cComponentName+:ComponentController)
+eval("oObject = new " + cComponentName+:ComponentController)

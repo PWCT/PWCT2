@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'english'
-nStepsID                 = 67		
-nInteractionsID          = 61
+nStepsID                 = 72		
+nInteractionsID          = 66
 
 aStepsTable = [
 	[
@@ -2170,6 +2170,196 @@ aStepsTable = [
 		[
 			[
 				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nForCounter</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">0</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"nForCounter = 0"
+			],
+			[
+				"interactionid",
+				56
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"nForCounter = 0"
+			]
+		]
+	],
+	[
+		63,
+		9,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nIfCounter</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">0</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"nIfCounter = 0"
+			],
+			[
+				"interactionid",
+				57
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"nIfCounter = 0"
+			]
+		]
+	],
+	[
+		64,
+		9,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nSwitchCounter</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">0</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"nSwitchCounter = 0"
+			],
+			[
+				"interactionid",
+				58
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"nSwitchCounter = 0"
+			]
+		]
+	],
+	[
+		65,
+		9,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nTryCatchCounter</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">0</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"nTryCatchCounter = 0"
+			],
+			[
+				"interactionid",
+				59
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"nTryCatchCounter = 0"
+			]
+		]
+	],
+	[
+		66,
+		9,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">nDoAgainCounter</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">0</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"nDoAgainCounter = 0"
+			],
+			[
+				"interactionid",
+				60
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"nDoAgainCounter = 0"
+			]
+		]
+	],
+	[
+		67,
+		9,
+		[
+			[
+				"name",
 				"Object provide methods determines what to generate (Instructions)	"
 			],
 			[
@@ -2183,7 +2373,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				56
+				61
 			],
 			[
 				"visible",
@@ -2204,7 +2394,7 @@ aStepsTable = [
 		]
 	],
 	[
-		63,
+		68,
 		9,
 		[
 			[
@@ -2222,7 +2412,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				57
+				62
 			],
 			[
 				"visible",
@@ -2243,7 +2433,7 @@ aStepsTable = [
 		]
 	],
 	[
-		64,
+		69,
 		9,
 		[
 			[
@@ -2260,7 +2450,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				58
+				63
 			],
 			[
 				"visible",
@@ -2281,7 +2471,7 @@ aStepsTable = [
 		]
 	],
 	[
-		65,
+		70,
 		9,
 		[
 			[
@@ -2298,7 +2488,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				59
+				64
 			],
 			[
 				"visible",
@@ -2319,7 +2509,7 @@ aStepsTable = [
 		]
 	],
 	[
-		66,
+		71,
 		9,
 		[
 			[
@@ -2337,7 +2527,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				60
+				65
 			],
 			[
 				"visible",
@@ -2358,7 +2548,7 @@ aStepsTable = [
 		]
 	],
 	[
-		67,
+		72,
 		9,
 		[
 			[
@@ -2375,7 +2565,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				61
+				66
 			],
 			[
 				"visible",
@@ -2592,488 +2782,528 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"value;;_RV_;;**	Project : Programming Without Coding Technology (PWCT) Version 2.0;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"value;;_RV_;;**	File Purpose : Import Tool - Parser;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"value;;_RV_;;**	Date : 2020.02.15;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"value;;_RV_;;**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"class",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"value;;_RV_;;Parser;;_RV_;;value2;;_RV_;;;;_RV_;;value3;;_RV_;;2;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"value;;_RV_;;All Tokens Data;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"assignment",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"leftside;;_RV_;;aTokens;;_RV_;;rightside;;_RV_;;[];;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"assignment",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"leftside;;_RV_;;nActiveToken;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"assignment",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"leftside;;_RV_;;nTokensCount;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"value;;_RV_;;The Current Token Data	;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"assignment",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"leftside;;_RV_;;aActiveToken;;_RV_;;rightside;;_RV_;;[];;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"assignment",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"leftside;;_RV_;;nTokenType;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"assignment",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"leftside;;_RV_;;cTokenValue;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"assignment",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"leftside;;_RV_;;nTokenIndex;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"value;;_RV_;;Parsing Output (List of Instructions) 	;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"assignment",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"leftside;;_RV_;;aParseTree;;_RV_;;rightside;;_RV_;;[];;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"value;;_RV_;;Buffer for Instruction Data (Merge data from many tokens);;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"assignment",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"leftside;;_RV_;;cBuffer;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"value;;_RV_;;Any token that we read using LoadToken;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"assignment",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"leftside;;_RV_;;cBuffer2;;_RV_;;rightside;;_RV_;;"+char(34)+""+char(34)+";;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"value;;_RV_;;Tokens before using NextToken;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"value;;_RV_;;			To understand the different between cBuffer and cBuffer2;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"value;;_RV_;;			cBuffer2 is used when we have;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"value;;_RV_;;				statement --> Expression;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"value;;_RV_;;			Where we use;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		30,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"value;;_RV_;;				AddParameterFromSecondBuffer(:Expression);;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"value;;_RV_;;				oTarget.GenerateExpressionCommand(self);;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		32,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"value;;_RV_;;			To use cBuffer2 instead of cBuffer;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		33,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"value;;_RV_;;			Because if we have source code like;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		34,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"value;;_RV_;;				one() two() three();;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		35,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"value;;_RV_;;			That call three functions;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		36,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"value;;_RV_;;			Using cBuffer will generate code like;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		37,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"value;;_RV_;;				one() two;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		38,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"value;;_RV_;;			But using cBuffer2 will generate step like;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		39,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"value;;_RV_;;				one();;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		40,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"value;;_RV_;;			Where we avoid the token (two);;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		41,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"value;;_RV_;;		*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		42,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"value;;_RV_;;Flag (Add token value to the buffer);;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		43,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"value;;_RV_;;We disable this flag when we use IGNORENEWLINE;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		44,
 		1,
 		"assignment",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"leftside;;_RV_;;lBufferFlag;;_RV_;;rightside;;_RV_;;True;;_RV_;;"
 	],
 	[
 		45,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"value;;_RV_;;List of instructions parameters;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		46,
 		1,
 		"assignment",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"leftside;;_RV_;;aInstructionParameters;;_RV_;;rightside;;_RV_;;[];;_RV_;;"
 	],
 	[
 		47,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"value;;_RV_;;More Data (Useful for Parsing State);;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		48,
 		1,
 		"assignment",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"leftside;;_RV_;;nLineNumber;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		49,
 		1,
 		"assignment",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"leftside;;_RV_;;nAssignmentFlag;;_RV_;;rightside;;_RV_;;1;;_RV_;;"
 	],
 	[
 		50,
 		1,
 		"assignment",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"leftside;;_RV_;;nClassStart;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		51,
 		1,
 		"assignment",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"leftside;;_RV_;;nBraceFlag;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		52,
 		1,
 		"assignment",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"leftside;;_RV_;;nNewObject;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		53,
 		1,
 		"assignment",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"leftside;;_RV_;;nFuncCallOnly;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		54,
 		1,
 		"assignment",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"leftside;;_RV_;;nControlStructureExpr;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		55,
 		1,
 		"assignment",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
 		"leftside;;_RV_;;nControlStructureBrace;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		56,
 		1,
-		"comment_text",
-		"23/08/2025",
-		"08:07:25",
-		"value;;_RV_;;Object provide methods determines what to generate (Instructions)	;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"09/12/2025",
+		"05:39:50",
+		"leftside;;_RV_;;nForCounter;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		57,
 		1,
-		"comment_text",
-		"23/08/2025",
-		"08:07:25",
-		"value;;_RV_;;Shutdown when error happens ?;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"09/12/2025",
+		"05:39:50",
+		"leftside;;_RV_;;nIfCounter;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		58,
 		1,
-		"newobj",
-		"23/08/2025",
-		"08:07:25",
-		"value;;_RV_;;oTarget;;_RV_;;value2;;_RV_;;Target;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"09/12/2025",
+		"05:39:50",
+		"leftside;;_RV_;;nSwitchCounter;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		59,
 		1,
 		"assignment",
-		"23/08/2025",
-		"08:07:25",
-		"leftside;;_RV_;;lOnErrorShutDown;;_RV_;;rightside;;_RV_;;True;;_RV_;;"
+		"09/12/2025",
+		"05:39:50",
+		"leftside;;_RV_;;nTryCatchCounter;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		60,
 		1,
-		"comment_text",
-		"23/08/2025",
-		"08:07:25",
-		"value;;_RV_;;Print error message;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"09/12/2025",
+		"05:39:50",
+		"leftside;;_RV_;;nDoAgainCounter;;_RV_;;rightside;;_RV_;;0;;_RV_;;"
 	],
 	[
 		61,
 		1,
+		"comment_text",
+		"09/12/2025",
+		"05:39:50",
+		"value;;_RV_;;Object provide methods determines what to generate (Instructions)	;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		62,
+		1,
+		"comment_text",
+		"09/12/2025",
+		"05:39:50",
+		"value;;_RV_;;Shutdown when error happens ?;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		63,
+		1,
+		"newobj",
+		"09/12/2025",
+		"05:39:50",
+		"value;;_RV_;;oTarget;;_RV_;;value2;;_RV_;;Target;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;0;;_RV_;;init;;_RV_;;0;;_RV_;;"
+	],
+	[
+		64,
+		1,
 		"assignment",
-		"23/08/2025",
-		"08:07:25",
+		"09/12/2025",
+		"05:39:50",
+		"leftside;;_RV_;;lOnErrorShutDown;;_RV_;;rightside;;_RV_;;True;;_RV_;;"
+	],
+	[
+		65,
+		1,
+		"comment_text",
+		"09/12/2025",
+		"05:39:50",
+		"value;;_RV_;;Print error message;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+	],
+	[
+		66,
+		1,
+		"assignment",
+		"09/12/2025",
+		"05:39:50",
 		"leftside;;_RV_;;lOnErrorPrintMsg;;_RV_;;rightside;;_RV_;;True;;_RV_;;"
 	]
 ]
