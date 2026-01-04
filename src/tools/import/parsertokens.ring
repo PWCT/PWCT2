@@ -310,7 +310,7 @@ class ParserTokens
 			 iskeyword(K_MAIN) || iskeyword(K_INIT) || iskeyword(K_OPERATOR) ||
 			 iskeyword(K_RINGVMSEE) || iskeyword(K_RINGVMGIVE) || iskeyword(K_RINGVMERRORHANDLER) ||
 			 iskeyword(K_BRACESTART) || iskeyword(K_BRACEEXPREVAL) ||
-			 iskeyword(K_BRACEERROR) || iskeyword(K_BRACEEND) ||
+			 iskeyword(K_BRACEERROR) || iskeyword(K_BRACENEWLINE) || iskeyword(K_BRACEEND) ||
 		    /* Check keywords related to the for-loop */
 			((! nForCounter) &&
 		    (iskeyword(K_TO) || iskeyword(K_IN) || iskeyword(K_STEP) )) ||
