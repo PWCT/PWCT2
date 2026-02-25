@@ -70,7 +70,7 @@ Alternatively, you can check GitHub releases to download a binary release for Wi
 
 Check the Documents folder for HTML/CHM/PDF files.
 
-Online version: https://doublesvsoop.sourceforge.net/pwct2
+Online version: https://pwct.github.io/docs/index.html
 
 # 🖼️Screen Shots
 
