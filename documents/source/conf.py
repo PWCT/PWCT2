@@ -37,7 +37,9 @@ extensions = [
     'sphinx.ext.mathjax',
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
-    "sphinx_rtd_theme"
+    "sphinx_rtd_theme",
+    "sphinx_copybutton",
+    "sphinx_rtd_dark_mode"
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -119,8 +121,8 @@ todo_include_todos = True
 # a list of builtin themes.
 # html_theme = 'classic' 
 
-html_theme = "classic"
-#html_theme = "sphinx_rtd_theme"
+#html_theme = "classic"
+html_theme = "sphinx_rtd_theme"
 
 html_logo = "images/logo/pwctdoclogo.jpg"
 
