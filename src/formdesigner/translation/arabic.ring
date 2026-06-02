@@ -366,9 +366,9 @@ T_FORMDESIGNER_GUILIB_INFO  = "تم التطوير باستخدام مكتبة Q
 T_FORMDESIGNER_ABOUT_TITLE = "حول البرنامج"
 T_FORMDESIGNER_ABOUT_INFO  = "تم التطوير بإستخدام لغة البرمجة رينج Ring" + nl +
 		"إصدار الرينج : " + version(True) + nl +
-		"2018-2025, محمود سمير فايد <msfclipper@yahoo.com>"
+		"2018-2026, محمود سمير فايد <msfclipper@yahoo.com>"
 
-T_FORMDESIGNER_HYPERLINK_URL = "http://www.ring-lang.net"
+T_FORMDESIGNER_HYPERLINK_URL = "http://ring-lang.github.io"
 T_FORMDESIGNER_HYPERLINK_URLTEXT = "لغة البرمجة رينج"
 
 T_FILENAME_CONTROLLER = "_المتحكم"

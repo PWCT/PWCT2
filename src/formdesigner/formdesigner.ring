@@ -32,6 +32,7 @@
 # Load Standard Libraries
 	load "guilib.ring"
 	load "stdlibcore.ring"
+	load "tokenslib.ring"
 
 # Load The Translation File
 	if isMainSourceFile() {
@@ -132,11 +133,15 @@
 	$cCurrentDir = CurrentDir() + "/"
 
 # Start the Application
-	oFDApp = new qApp {
-		if IsMainSourceFile() {	# Because oFDApp is used in other classes 
+	oFDApp = new QApp {
+		if isMainSourceFile() {	# Because oFDApp is used in other classes 
 			$FDSubApp = False
-			StyleFusion()
-			Open_Window(:FormDesignerController)
+			if isWebAssembly() {
+				styleFusionBlack()
+			else 
+				styleFusion()
+			}
+			openWindow(:FormDesignerController)
 			exec()
 		else 
 			$FDSubApp = True
