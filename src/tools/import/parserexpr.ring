@@ -585,6 +585,11 @@ class ParserExpr
 		if iskeyword(K_CALL) {
 			manualAddToSecondTextBuffer("call ")
 			nexttoken()
+			lCallAsMethod = False
+			if isoperator2(OP_BRACEOPEN) {
+				lCallAsMethod = True
+				nexttoken()
+			}
 			if isidentifier() {
 				/* Generate Code */
 				/* Generate Location for nPC of Getter */
@@ -594,7 +599,11 @@ class ParserExpr
 					return False 
 				}
 				if isoperator2(OP_FOPEN) {
-					return mixer() 
+					x = mixer() 
+					if x and lCallAsMethod and isoperator2(OP_BRACECLOSE) {
+						nexttoken()
+					}
+					return x
 				else
 					return False 
 				}
