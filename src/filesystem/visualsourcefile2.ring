@@ -172,7 +172,12 @@ class VisualSourceFile
 
 	func LoadTables
 		Log("Start load tables")
-		eval( read( FileNameEncoding(cFileName) ) )
+		cPWCTFileContent = read( FileNameEncoding(cFileName) ) 
+		if ! checkRingCode([:code = substr(cPWCTFileContent,"char(34)","") ]) {
+			? "Sorry, The file: " + cFileName +  " doesn't pass the security check!"
+			return
+		}
+		eval( cPWCTFileContent )
 		if lUseSystemLog {
 			oSystemLog.addMessage("End load tables")
 		}
