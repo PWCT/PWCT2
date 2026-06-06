@@ -75,7 +75,6 @@ Class ProgramController
 	*/
 
 	func RunGUIDesktop oGD
-		oGD.parent().oView.oProcessText.setFocus(2)
 		cFile = cFileName
 		if oGD.lFullScreen = False {
 			oGD.parent().oView.oDockOutputWindow.raise()
