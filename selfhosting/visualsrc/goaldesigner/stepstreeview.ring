@@ -23,7 +23,7 @@ class StepsTreeView from TreeControl
 	lLabelStyle = True
 	lLabelStyleGradient = True
 	nGoalDesignerWindowID = 0
-	func Init win { 
+	func init win { 
 		if lUseLabels = False { 
 			init2(win)
 			else
@@ -38,7 +38,7 @@ class StepsTreeView from TreeControl
 			setverticalscrollbarpolicy(Qt_ScrollBarAlwaysOn)
 			setcolumnwidth(0,2000)
 		} 
-		return self
+		return self 
 		#/*
 		#		The next method is the same as Init
 		#		but uses AddStartPoint2() to create the item without
@@ -48,7 +48,7 @@ class StepsTreeView from TreeControl
 	func Init2 win { 
 		super.init(win)
 		AddStartPoint2()
-		return self
+		return self 
 	} 
 	func AddStartPoint  { 
 		setcolumncount(1)

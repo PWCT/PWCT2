@@ -3,8 +3,8 @@
 cVisualSourceFileVersion = '1.0.0'
 cVisualLanguageName      = 'RingPWCT'
 cNaturalLanguageName     = 'english'
-nStepsID                 = 111		
-nInteractionsID          = 101
+nStepsID                 = 118		
+nInteractionsID          = 105
 
 aStepsTable = [
 	[
@@ -1212,6 +1212,44 @@ aStepsTable = [
 		[
 			[
 				"name",
+				"Load <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">tokenslib.ring</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"load "+char(34)+"tokenslib.ring"+char(34)+""
+			],
+			[
+				"interactionid",
+				32
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Load tokenslib.ring"
+			]
+		]
+	],
+	[
+		33,
+		1,
+		[
+			[
+				"name",
 				"Load The Translation File"
 			],
 			[
@@ -1225,7 +1263,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				32
+				33
 			],
 			[
 				"visible",
@@ -1246,7 +1284,7 @@ aStepsTable = [
 		]
 	],
 	[
-		33,
+		34,
 		1,
 		[
 			[
@@ -1263,7 +1301,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				33
+				34
 			],
 			[
 				"visible",
@@ -1284,8 +1322,8 @@ aStepsTable = [
 		]
 	],
 	[
+		35,
 		34,
-		33,
 		[
 			[
 				"name",
@@ -1301,7 +1339,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				33
+				34
 			],
 			[
 				"visible",
@@ -1322,8 +1360,8 @@ aStepsTable = [
 		]
 	],
 	[
-		36,
-		34,
+		37,
+		35,
 		[
 			[
 				"name",
@@ -1339,7 +1377,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				34
+				35
 			],
 			[
 				"visible",
@@ -1360,8 +1398,8 @@ aStepsTable = [
 		]
 	],
 	[
-		35,
-		33,
+		36,
+		34,
 		[
 			[
 				"name",
@@ -1377,7 +1415,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				33
+				34
 			],
 			[
 				"visible",
@@ -1398,7 +1436,7 @@ aStepsTable = [
 		]
 	],
 	[
-		37,
+		38,
 		1,
 		[
 			[
@@ -1416,7 +1454,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				35
+				36
 			],
 			[
 				"visible",
@@ -1437,7 +1475,7 @@ aStepsTable = [
 		]
 	],
 	[
-		38,
+		39,
 		1,
 		[
 			[
@@ -1454,7 +1492,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				36
+				37
 			],
 			[
 				"visible",
@@ -1475,7 +1513,7 @@ aStepsTable = [
 		]
 	],
 	[
-		39,
+		40,
 		1,
 		[
 			[
@@ -1492,7 +1530,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				37
+				38
 			],
 			[
 				"visible",
@@ -1513,7 +1551,7 @@ aStepsTable = [
 		]
 	],
 	[
-		40,
+		41,
 		1,
 		[
 			[
@@ -1530,7 +1568,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				38
+				39
 			],
 			[
 				"visible",
@@ -1551,7 +1589,7 @@ aStepsTable = [
 		]
 	],
 	[
-		41,
+		42,
 		1,
 		[
 			[
@@ -1568,7 +1606,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				39
+				40
 			],
 			[
 				"visible",
@@ -1589,7 +1627,7 @@ aStepsTable = [
 		]
 	],
 	[
-		42,
+		43,
 		1,
 		[
 			[
@@ -1606,7 +1644,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				40
+				41
 			],
 			[
 				"visible",
@@ -1627,7 +1665,7 @@ aStepsTable = [
 		]
 	],
 	[
-		43,
+		44,
 		1,
 		[
 			[
@@ -1645,7 +1683,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				41
+				42
 			],
 			[
 				"visible",
@@ -1666,7 +1704,7 @@ aStepsTable = [
 		]
 	],
 	[
-		44,
+		45,
 		1,
 		[
 			[
@@ -1683,7 +1721,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				42
+				43
 			],
 			[
 				"visible",
@@ -1704,7 +1742,7 @@ aStepsTable = [
 		]
 	],
 	[
-		45,
+		46,
 		1,
 		[
 			[
@@ -1721,7 +1759,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				43
+				44
 			],
 			[
 				"visible",
@@ -1742,7 +1780,7 @@ aStepsTable = [
 		]
 	],
 	[
-		46,
+		47,
 		1,
 		[
 			[
@@ -1759,7 +1797,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				44
+				45
 			],
 			[
 				"visible",
@@ -1780,7 +1818,7 @@ aStepsTable = [
 		]
 	],
 	[
-		47,
+		48,
 		1,
 		[
 			[
@@ -1797,7 +1835,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				45
+				46
 			],
 			[
 				"visible",
@@ -1818,7 +1856,7 @@ aStepsTable = [
 		]
 	],
 	[
-		48,
+		49,
 		1,
 		[
 			[
@@ -1835,7 +1873,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				46
+				47
 			],
 			[
 				"visible",
@@ -1856,7 +1894,7 @@ aStepsTable = [
 		]
 	],
 	[
-		49,
+		50,
 		1,
 		[
 			[
@@ -1874,7 +1912,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				47
+				48
 			],
 			[
 				"visible",
@@ -1895,7 +1933,7 @@ aStepsTable = [
 		]
 	],
 	[
-		50,
+		51,
 		1,
 		[
 			[
@@ -1912,7 +1950,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				48
+				49
 			],
 			[
 				"visible",
@@ -1933,7 +1971,7 @@ aStepsTable = [
 		]
 	],
 	[
-		51,
+		52,
 		1,
 		[
 			[
@@ -1950,7 +1988,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				49
+				50
 			],
 			[
 				"visible",
@@ -1971,7 +2009,7 @@ aStepsTable = [
 		]
 	],
 	[
-		52,
+		53,
 		1,
 		[
 			[
@@ -1988,7 +2026,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				50
+				51
 			],
 			[
 				"visible",
@@ -2009,7 +2047,7 @@ aStepsTable = [
 		]
 	],
 	[
-		53,
+		54,
 		1,
 		[
 			[
@@ -2026,7 +2064,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				51
+				52
 			],
 			[
 				"visible",
@@ -2047,7 +2085,7 @@ aStepsTable = [
 		]
 	],
 	[
-		54,
+		55,
 		1,
 		[
 			[
@@ -2064,7 +2102,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				52
+				53
 			],
 			[
 				"visible",
@@ -2085,7 +2123,7 @@ aStepsTable = [
 		]
 	],
 	[
-		55,
+		56,
 		1,
 		[
 			[
@@ -2102,7 +2140,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				53
+				54
 			],
 			[
 				"visible",
@@ -2123,7 +2161,7 @@ aStepsTable = [
 		]
 	],
 	[
-		56,
+		57,
 		1,
 		[
 			[
@@ -2140,7 +2178,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				54
+				55
 			],
 			[
 				"visible",
@@ -2161,7 +2199,7 @@ aStepsTable = [
 		]
 	],
 	[
-		57,
+		58,
 		1,
 		[
 			[
@@ -2178,7 +2216,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				55
+				56
 			],
 			[
 				"visible",
@@ -2199,7 +2237,7 @@ aStepsTable = [
 		]
 	],
 	[
-		58,
+		59,
 		1,
 		[
 			[
@@ -2216,7 +2254,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				56
+				57
 			],
 			[
 				"visible",
@@ -2237,7 +2275,7 @@ aStepsTable = [
 		]
 	],
 	[
-		59,
+		60,
 		1,
 		[
 			[
@@ -2254,7 +2292,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				57
+				58
 			],
 			[
 				"visible",
@@ -2275,7 +2313,7 @@ aStepsTable = [
 		]
 	],
 	[
-		60,
+		61,
 		1,
 		[
 			[
@@ -2292,7 +2330,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				58
+				59
 			],
 			[
 				"visible",
@@ -2313,7 +2351,7 @@ aStepsTable = [
 		]
 	],
 	[
-		61,
+		62,
 		1,
 		[
 			[
@@ -2330,7 +2368,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				59
+				60
 			],
 			[
 				"visible",
@@ -2351,7 +2389,7 @@ aStepsTable = [
 		]
 	],
 	[
-		62,
+		63,
 		1,
 		[
 			[
@@ -2368,7 +2406,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				60
+				61
 			],
 			[
 				"visible",
@@ -2389,7 +2427,7 @@ aStepsTable = [
 		]
 	],
 	[
-		63,
+		64,
 		1,
 		[
 			[
@@ -2406,7 +2444,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				61
+				62
 			],
 			[
 				"visible",
@@ -2427,7 +2465,7 @@ aStepsTable = [
 		]
 	],
 	[
-		64,
+		65,
 		1,
 		[
 			[
@@ -2444,7 +2482,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				62
+				63
 			],
 			[
 				"visible",
@@ -2465,7 +2503,7 @@ aStepsTable = [
 		]
 	],
 	[
-		65,
+		66,
 		1,
 		[
 			[
@@ -2482,7 +2520,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				63
+				64
 			],
 			[
 				"visible",
@@ -2503,7 +2541,7 @@ aStepsTable = [
 		]
 	],
 	[
-		66,
+		67,
 		1,
 		[
 			[
@@ -2520,7 +2558,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				64
+				65
 			],
 			[
 				"visible",
@@ -2541,7 +2579,7 @@ aStepsTable = [
 		]
 	],
 	[
-		67,
+		68,
 		1,
 		[
 			[
@@ -2558,7 +2596,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				65
+				66
 			],
 			[
 				"visible",
@@ -2579,7 +2617,7 @@ aStepsTable = [
 		]
 	],
 	[
-		68,
+		69,
 		1,
 		[
 			[
@@ -2596,7 +2634,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				66
+				67
 			],
 			[
 				"visible",
@@ -2617,7 +2655,7 @@ aStepsTable = [
 		]
 	],
 	[
-		69,
+		70,
 		1,
 		[
 			[
@@ -2634,7 +2672,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				67
+				68
 			],
 			[
 				"visible",
@@ -2655,7 +2693,7 @@ aStepsTable = [
 		]
 	],
 	[
-		70,
+		71,
 		1,
 		[
 			[
@@ -2672,7 +2710,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				68
+				69
 			],
 			[
 				"visible",
@@ -2693,7 +2731,7 @@ aStepsTable = [
 		]
 	],
 	[
-		71,
+		72,
 		1,
 		[
 			[
@@ -2710,7 +2748,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				69
+				70
 			],
 			[
 				"visible",
@@ -2731,7 +2769,7 @@ aStepsTable = [
 		]
 	],
 	[
-		72,
+		73,
 		1,
 		[
 			[
@@ -2748,7 +2786,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				70
+				71
 			],
 			[
 				"visible",
@@ -2769,7 +2807,7 @@ aStepsTable = [
 		]
 	],
 	[
-		73,
+		74,
 		1,
 		[
 			[
@@ -2786,7 +2824,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				71
+				72
 			],
 			[
 				"visible",
@@ -2807,7 +2845,7 @@ aStepsTable = [
 		]
 	],
 	[
-		74,
+		75,
 		1,
 		[
 			[
@@ -2824,7 +2862,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				72
+				73
 			],
 			[
 				"visible",
@@ -2845,7 +2883,7 @@ aStepsTable = [
 		]
 	],
 	[
-		75,
+		76,
 		1,
 		[
 			[
@@ -2862,7 +2900,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				73
+				74
 			],
 			[
 				"visible",
@@ -2883,7 +2921,7 @@ aStepsTable = [
 		]
 	],
 	[
-		76,
+		77,
 		1,
 		[
 			[
@@ -2900,7 +2938,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				74
+				75
 			],
 			[
 				"visible",
@@ -2921,7 +2959,7 @@ aStepsTable = [
 		]
 	],
 	[
-		77,
+		78,
 		1,
 		[
 			[
@@ -2939,7 +2977,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				75
+				76
 			],
 			[
 				"visible",
@@ -2960,7 +2998,7 @@ aStepsTable = [
 		]
 	],
 	[
-		78,
+		79,
 		1,
 		[
 			[
@@ -2977,7 +3015,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				76
+				77
 			],
 			[
 				"visible",
@@ -2998,7 +3036,7 @@ aStepsTable = [
 		]
 	],
 	[
-		79,
+		80,
 		1,
 		[
 			[
@@ -3015,7 +3053,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				77
+				78
 			],
 			[
 				"visible",
@@ -3036,7 +3074,7 @@ aStepsTable = [
 		]
 	],
 	[
-		80,
+		81,
 		1,
 		[
 			[
@@ -3053,7 +3091,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				78
+				79
 			],
 			[
 				"visible",
@@ -3074,7 +3112,7 @@ aStepsTable = [
 		]
 	],
 	[
-		81,
+		82,
 		1,
 		[
 			[
@@ -3092,7 +3130,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				79
+				80
 			],
 			[
 				"visible",
@@ -3113,7 +3151,7 @@ aStepsTable = [
 		]
 	],
 	[
-		82,
+		83,
 		1,
 		[
 			[
@@ -3130,7 +3168,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				80
+				81
 			],
 			[
 				"visible",
@@ -3151,7 +3189,7 @@ aStepsTable = [
 		]
 	],
 	[
-		83,
+		84,
 		1,
 		[
 			[
@@ -3168,7 +3206,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				81
+				82
 			],
 			[
 				"visible",
@@ -3189,7 +3227,7 @@ aStepsTable = [
 		]
 	],
 	[
-		84,
+		85,
 		1,
 		[
 			[
@@ -3207,7 +3245,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				82
+				83
 			],
 			[
 				"visible",
@@ -3228,7 +3266,7 @@ aStepsTable = [
 		]
 	],
 	[
-		85,
+		86,
 		1,
 		[
 			[
@@ -3245,7 +3283,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				83
+				84
 			],
 			[
 				"visible",
@@ -3266,7 +3304,7 @@ aStepsTable = [
 		]
 	],
 	[
-		86,
+		87,
 		1,
 		[
 			[
@@ -3284,7 +3322,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				84
+				85
 			],
 			[
 				"visible",
@@ -3305,7 +3343,7 @@ aStepsTable = [
 		]
 	],
 	[
-		87,
+		88,
 		1,
 		[
 			[
@@ -3322,7 +3360,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				85
+				86
 			],
 			[
 				"visible",
@@ -3343,8 +3381,8 @@ aStepsTable = [
 		]
 	],
 	[
+		89,
 		88,
-		87,
 		[
 			[
 				"name",
@@ -3360,7 +3398,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				85
+				86
 			],
 			[
 				"visible",
@@ -3381,8 +3419,8 @@ aStepsTable = [
 		]
 	],
 	[
-		90,
-		88,
+		91,
+		89,
 		[
 			[
 				"name",
@@ -3395,44 +3433,6 @@ aStepsTable = [
 			[
 				"code",
 				"mergemethods(cClassName,:MoveResizeCorners)"
-			],
-			[
-				"interactionid",
-				86
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"mergemethods(cClassName,:MoveResizeCorners)"
-			]
-		]
-	],
-	[
-		91,
-		88,
-		[
-			[
-				"name",
-				"mergemethods(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cClassName,:CommonAttributesMethods</font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"mergemethods(cClassName,:CommonAttributesMethods)"
 			],
 			[
 				"interactionid",
@@ -3452,13 +3452,51 @@ aStepsTable = [
 			],
 			[
 				"plainname",
+				"mergemethods(cClassName,:MoveResizeCorners)"
+			]
+		]
+	],
+	[
+		92,
+		89,
+		[
+			[
+				"name",
+				"mergemethods(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">cClassName,:CommonAttributesMethods</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"mergemethods(cClassName,:CommonAttributesMethods)"
+			],
+			[
+				"interactionid",
+				88
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
 				"mergemethods(cClassName,:CommonAttributesMethods)"
 			]
 		]
 	],
 	[
-		89,
-		87,
+		90,
+		88,
 		[
 			[
 				"name",
@@ -3474,7 +3512,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				85
+				86
 			],
 			[
 				"visible",
@@ -3495,7 +3533,7 @@ aStepsTable = [
 		]
 	],
 	[
-		92,
+		93,
 		1,
 		[
 			[
@@ -3513,7 +3551,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				88
+				89
 			],
 			[
 				"visible",
@@ -3534,7 +3572,7 @@ aStepsTable = [
 		]
 	],
 	[
-		93,
+		94,
 		1,
 		[
 			[
@@ -3551,7 +3589,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				89
+				90
 			],
 			[
 				"visible",
@@ -3572,7 +3610,7 @@ aStepsTable = [
 		]
 	],
 	[
-		94,
+		95,
 		1,
 		[
 			[
@@ -3590,7 +3628,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				90
+				91
 			],
 			[
 				"visible",
@@ -3611,7 +3649,7 @@ aStepsTable = [
 		]
 	],
 	[
-		95,
+		96,
 		1,
 		[
 			[
@@ -3628,7 +3666,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				91
+				92
 			],
 			[
 				"visible",
@@ -3649,7 +3687,7 @@ aStepsTable = [
 		]
 	],
 	[
-		96,
+		97,
 		1,
 		[
 			[
@@ -3667,7 +3705,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				92
+				93
 			],
 			[
 				"visible",
@@ -3688,12 +3726,12 @@ aStepsTable = [
 		]
 	],
 	[
-		97,
+		98,
 		1,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oFDApp</font></span> = New Object <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">qApp</font></span>"
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">oFDApp</font></span> = New Object <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">QApp</font></span>"
 			],
 			[
 				"active",
@@ -3701,121 +3739,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"oFDApp = new qApp"
-			],
-			[
-				"interactionid",
-				93
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"oFDApp = New Object qApp"
-			]
-		]
-	],
-	[
-		98,
-		97,
-		[
-			[
-				"name",
-				"{"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"{"
-			],
-			[
-				"interactionid",
-				93
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				2
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"{"
-			]
-		]
-	],
-	[
-		99,
-		98,
-		[
-			[
-				"name",
-				"Start Here"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				""
-			],
-			[
-				"interactionid",
-				93
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				3
-			],
-			[
-				"steptype",
-				3
-			],
-			[
-				"plainname",
-				"Start Here"
-			]
-		]
-	],
-	[
-		101,
-		99,
-		[
-			[
-				"name",
-				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">IsMainSourceFile()</font></span>"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"if IsMainSourceFile() { "
+				"oFDApp = new QApp"
 			],
 			[
 				"interactionid",
@@ -3835,13 +3759,51 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"If IsMainSourceFile()"
+				"oFDApp = New Object QApp"
 			]
 		]
 	],
 	[
-		102,
-		101,
+		99,
+		98,
+		[
+			[
+				"name",
+				"{"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"{"
+			],
+			[
+				"interactionid",
+				94
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"{"
+			]
+		]
+	],
+	[
+		100,
+		99,
 		[
 			[
 				"name",
@@ -3865,6 +3827,82 @@ aStepsTable = [
 			],
 			[
 				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		102,
+		100,
+		[
+			[
+				"name",
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">isMainSourceFile()</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"if isMainSourceFile() { "
+			],
+			[
+				"interactionid",
+				95
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"If isMainSourceFile()"
+			]
+		]
+	],
+	[
+		103,
+		102,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				95
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
 				2
 			],
 			[
@@ -3878,8 +3916,8 @@ aStepsTable = [
 		]
 	],
 	[
-		104,
-		102,
+		105,
+		103,
 		[
 			[
 				"name",
@@ -3896,7 +3934,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				95
+				96
 			],
 			[
 				"visible",
@@ -3917,8 +3955,8 @@ aStepsTable = [
 		]
 	],
 	[
-		105,
-		102,
+		106,
+		103,
 		[
 			[
 				"name",
@@ -3931,44 +3969,6 @@ aStepsTable = [
 			[
 				"code",
 				"$FDSubApp = False"
-			],
-			[
-				"interactionid",
-				96
-			],
-			[
-				"visible",
-				1
-			],
-			[
-				"stepnumber",
-				1
-			],
-			[
-				"steptype",
-				2
-			],
-			[
-				"plainname",
-				"$FDSubApp = False"
-			]
-		]
-	],
-	[
-		106,
-		102,
-		[
-			[
-				"name",
-				"StyleFusion(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
-			],
-			[
-				"active",
-				1
-			],
-			[
-				"code",
-				"StyleFusion()"
 			],
 			[
 				"interactionid",
@@ -3988,17 +3988,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"StyleFusion()"
+				"$FDSubApp = False"
 			]
 		]
 	],
 	[
 		107,
-		102,
+		103,
 		[
 			[
 				"name",
-				"Open_Window(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">:FormDesignerController</font></span>)"
+				"If <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">isWebAssembly()</font></span>"
 			],
 			[
 				"active",
@@ -4006,7 +4006,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"Open_Window(:FormDesignerController)"
+				"if isWebAssembly() { "
 			],
 			[
 				"interactionid",
@@ -4026,17 +4026,17 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"Open_Window(:FormDesignerController)"
+				"If isWebAssembly()"
 			]
 		]
 	],
 	[
 		108,
-		102,
+		107,
 		[
 			[
 				"name",
-				"exec(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+				"Start Here"
 			],
 			[
 				"active",
@@ -4044,7 +4044,45 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"exec()"
+				""
+			],
+			[
+				"interactionid",
+				98
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		110,
+		108,
+		[
+			[
+				"name",
+				"styleFusionBlack(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"styleFusionBlack()"
 			],
 			[
 				"interactionid",
@@ -4064,13 +4102,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"exec()"
+				"styleFusionBlack()"
 			]
 		]
 	],
 	[
-		109,
-		102,
+		111,
+		108,
 		[
 			[
 				"name",
@@ -4107,8 +4145,8 @@ aStepsTable = [
 		]
 	],
 	[
-		110,
-		109,
+		112,
+		111,
 		[
 			[
 				"name",
@@ -4145,12 +4183,12 @@ aStepsTable = [
 		]
 	],
 	[
-		111,
-		110,
+		113,
+		112,
 		[
 			[
 				"name",
-				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">$FDSubApp</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">True</font></span>"
+				"styleFusion(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
 			],
 			[
 				"active",
@@ -4158,7 +4196,7 @@ aStepsTable = [
 			],
 			[
 				"code",
-				"$FDSubApp = True"
+				"styleFusion()"
 			],
 			[
 				"interactionid",
@@ -4178,13 +4216,13 @@ aStepsTable = [
 			],
 			[
 				"plainname",
-				"$FDSubApp = True"
+				"styleFusion()"
 			]
 		]
 	],
 	[
-		103,
-		101,
+		109,
+		107,
 		[
 			[
 				"name",
@@ -4200,7 +4238,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				94
+				98
 			],
 			[
 				"visible",
@@ -4221,8 +4259,236 @@ aStepsTable = [
 		]
 	],
 	[
-		100,
-		98,
+		114,
+		103,
+		[
+			[
+				"name",
+				"openWindow(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">:FormDesignerController</font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"openWindow(:FormDesignerController)"
+			],
+			[
+				"interactionid",
+				102
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"openWindow(:FormDesignerController)"
+			]
+		]
+	],
+	[
+		115,
+		103,
+		[
+			[
+				"name",
+				"exec(<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+"></font></span>)"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"exec()"
+			],
+			[
+				"interactionid",
+				103
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"exec()"
+			]
+		]
+	],
+	[
+		116,
+		103,
+		[
+			[
+				"name",
+				"Else"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"else"
+			],
+			[
+				"interactionid",
+				104
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"Else"
+			]
+		]
+	],
+	[
+		117,
+		116,
+		[
+			[
+				"name",
+				"Start Here"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				""
+			],
+			[
+				"interactionid",
+				104
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				2
+			],
+			[
+				"steptype",
+				3
+			],
+			[
+				"plainname",
+				"Start Here"
+			]
+		]
+	],
+	[
+		118,
+		117,
+		[
+			[
+				"name",
+				"<span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">$FDSubApp</font></span> = <span style="+char(34)+"background-color:C_STEPCOLOR_DATA_BACKCOLOR"+char(34)+"><font color="+char(34)+"C_STEPCOLOR_DATA_TEXT"+char(34)+">True</font></span>"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"$FDSubApp = True"
+			],
+			[
+				"interactionid",
+				105
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				1
+			],
+			[
+				"steptype",
+				2
+			],
+			[
+				"plainname",
+				"$FDSubApp = True"
+			]
+		]
+	],
+	[
+		104,
+		102,
+		[
+			[
+				"name",
+				"End of IF Statement"
+			],
+			[
+				"active",
+				1
+			],
+			[
+				"code",
+				"} "
+			],
+			[
+				"interactionid",
+				95
+			],
+			[
+				"visible",
+				1
+			],
+			[
+				"stepnumber",
+				3
+			],
+			[
+				"steptype",
+				4
+			],
+			[
+				"plainname",
+				"End of IF Statement"
+			]
+		]
+	],
+	[
+		101,
+		99,
 		[
 			[
 				"name",
@@ -4238,7 +4504,7 @@ aStepsTable = [
 			],
 			[
 				"interactionid",
-				93
+				94
 			],
 			[
 				"visible",
@@ -4265,808 +4531,840 @@ aInteractionsTable = [
 		1,
 		1,
 		"",
-		"23/08/2025",
-		"08:04:59",
+		"06/06/2026",
+		"14:33:23",
 		""
 	],
 	[
 		2,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:04:59",
+		"06/06/2026",
+		"14:33:23",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		3,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:04:59",
+		"06/06/2026",
+		"14:33:23",
 		"value;;_RV_;;**	Project : Form Designer;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		4,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:04:59",
+		"06/06/2026",
+		"14:33:23",
 		"value;;_RV_;;**	File Purpose :  Main File;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		5,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:04:59",
+		"06/06/2026",
+		"14:33:23",
 		"value;;_RV_;;**	Date : 2017.02.17;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		6,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:04:59",
+		"06/06/2026",
+		"14:33:23",
 		"value;;_RV_;;**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		7,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:04:59",
+		"06/06/2026",
+		"14:33:23",
 		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		8,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:04:59",
+		"06/06/2026",
+		"14:33:23",
 		"value;;_RV_;;/*;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		9,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:04:59",
+		"06/06/2026",
+		"14:33:23",
 		"value;;_RV_;;	API : Using the Form Designer in Another Application;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		10,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:04:59",
+		"06/06/2026",
+		"14:33:23",
 		"value;;_RV_;;	      Like Ring Notepad;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		11,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:04:59",
+		"06/06/2026",
+		"14:33:23",
 		"value;;_RV_;;;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		12,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:04:59",
+		"06/06/2026",
+		"14:33:23",
 		"value;;_RV_;;	The Form Designer check for the next methods;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		13,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:04:59",
+		"06/06/2026",
+		"14:33:23",
 		"value;;_RV_;;	In the Parent Application (Optional Methods);;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		14,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:04:59",
+		"06/06/2026",
+		"14:33:23",
 		"value;;_RV_;;	See : formdesigner/filesystem/filesystem.ring;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		15,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:04:59",
+		"06/06/2026",
+		"14:33:23",
 		"value;;_RV_;;		GetActiveFolder() 		;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		16,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:04:59",
+		"06/06/2026",
+		"14:33:23",
 		"value;;_RV_;;		OpenFile(cControllerFile)	;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		17,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:04:59",
+		"06/06/2026",
+		"14:33:23",
 		"value;;_RV_;;		ClearActiveFormFile() 	;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		18,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:04:59",
+		"06/06/2026",
+		"14:33:23",
 		"value;;_RV_;;	See : formdesigner/codegenerator.ring;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		19,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:04:59",
+		"06/06/2026",
+		"14:33:23",
 		"value;;_RV_;;		GenerateControllerClass();;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		20,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:04:59",
+		"06/06/2026",
+		"14:33:23",
 		"value;;_RV_;;	See : formdesigner/mainwindow/formdesignerController.ring;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		21,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:04:59",
+		"06/06/2026",
+		"14:33:23",
 		"value;;_RV_;;		NewEventName(cFunctionName)	;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		22,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:04:59",
+		"06/06/2026",
+		"14:33:23",
 		"value;;_RV_;;;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		23,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:04:59",
+		"06/06/2026",
+		"14:33:23",
 		"value;;_RV_;;	The Parent Application can use the next methods in the Form Designer;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		24,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:04:59",
+		"06/06/2026",
+		"14:33:23",
 		"value;;_RV_;;		OpenFile(cFormFileName);;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		25,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:04:59",
+		"06/06/2026",
+		"14:33:23",
 		"value;;_RV_;;		ActiveFileName() --> cFormFileName;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		26,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:04:59",
+		"06/06/2026",
+		"14:33:23",
 		"value;;_RV_;;		SaveIfOnlyFileIsOpened();;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		27,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:04:59",
+		"06/06/2026",
+		"14:33:23",
 		"value;;_RV_;;;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		28,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:04:59",
+		"06/06/2026",
+		"14:33:23",
 		"value;;_RV_;;*/;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		29,
 		1,
 		"comment_text",
-		"23/08/2025",
-		"08:04:59",
+		"06/06/2026",
+		"14:33:23",
 		"value;;_RV_;;Load Standard Libraries;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		30,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
+		"06/06/2026",
+		"14:33:23",
 		"file;;_RV_;;guilib.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		31,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
+		"06/06/2026",
+		"14:33:23",
 		"file;;_RV_;;stdlibcore.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		32,
 		1,
-		"comment_text",
-		"23/08/2025",
-		"08:04:59",
-		"value;;_RV_;;Load The Translation File;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"load",
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;tokenslib.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		33,
 		1,
-		"ifstatement",
-		"23/08/2025",
-		"08:04:59",
-		"condition;;_RV_;;isMainSourceFile();;_RV_;;"
+		"comment_text",
+		"06/06/2026",
+		"14:33:23",
+		"value;;_RV_;;Load The Translation File;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		34,
 		1,
-		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;translation/english.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"ifstatement",
+		"06/06/2026",
+		"14:33:23",
+		"condition;;_RV_;;isMainSourceFile();;_RV_;;"
 	],
 	[
 		35,
 		1,
-		"comment_text",
-		"23/08/2025",
-		"08:04:59",
-		"value;;_RV_;;Load Main Window Files;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"load",
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;translation/english.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		36,
 		1,
-		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;mainwindow/qwidget.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"comment_text",
+		"06/06/2026",
+		"14:33:23",
+		"value;;_RV_;;Load Main Window Files;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		37,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;mainwindow/formdesignercontroller.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;mainwindow/qwidget.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		38,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;mainwindow/formdesignermodel.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;mainwindow/formdesignercontroller.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		39,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;mainwindow/formdesignerview.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;mainwindow/formdesignermodel.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		40,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;mainwindow/formdesignergeneral.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;mainwindow/formdesignerview.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		41,
 		1,
-		"comment_text",
-		"23/08/2025",
-		"08:04:59",
-		"value;;_RV_;;Load Sub Windows/Systems;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"load",
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;mainwindow/formdesignergeneral.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		42,
 		1,
-		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;menubardesigner/menubardesignerController.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"comment_text",
+		"06/06/2026",
+		"14:33:23",
+		"value;;_RV_;;Load Sub Windows/Systems;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		43,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;windowflags/windowflagsController.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;menubardesigner/menubardesignerController.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		44,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;windowobjects/windowobjectscontroller.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;windowflags/windowflagsController.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		45,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;objectsorder/objectsorderController.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;windowobjects/windowobjectscontroller.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		46,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;selobjects/selobjectsController.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;objectsorder/objectsorderController.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		47,
 		1,
-		"comment_text",
-		"23/08/2025",
-		"08:04:59",
-		"value;;_RV_;;Load Controls;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"load",
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;selobjects/selobjectsController.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		48,
 		1,
-		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;controls/qlabel.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"comment_text",
+		"06/06/2026",
+		"14:33:23",
+		"value;;_RV_;;Load Controls;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		49,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;controls/qpushbutton.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;controls/qlabel.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		50,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;controls/qlineedit.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;controls/qpushbutton.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		51,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;controls/qtextedit.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;controls/qlineedit.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		52,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;controls/qlistwidget.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;controls/qtextedit.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		53,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;controls/qcheckbox.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;controls/qlistwidget.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		54,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;controls/qimage.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;controls/qcheckbox.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		55,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;controls/qslider.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;controls/qimage.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		56,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;controls/qprogressbar.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;controls/qslider.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		57,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;controls/qspinbox.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;controls/qprogressbar.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		58,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;controls/qcombobox.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;controls/qspinbox.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		59,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;controls/qdatetimeedit.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;controls/qcombobox.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		60,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;controls/qtablewidget.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;controls/qdatetimeedit.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		61,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;controls/qtreewidget.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;controls/qtablewidget.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		62,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;controls/qradiobutton.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;controls/qtreewidget.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		63,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;controls/qwebview.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;controls/qradiobutton.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		64,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;controls/qdial.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;controls/qwebview.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		65,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;controls/qvideowidget.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;controls/qdial.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		66,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;controls/qframe3.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;controls/qvideowidget.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		67,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;controls/qlcdnumber.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;controls/qframe3.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		68,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;controls/qhyperlink.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;controls/qlcdnumber.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		69,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;controls/qtimer.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;controls/qhyperlink.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		70,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;controls/qallevents.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;controls/qtimer.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		71,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;controls/qlayout.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;controls/qallevents.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		72,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;controls/qtabwidget.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;controls/qlayout.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		73,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;controls/qstatusbar.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;controls/qtabwidget.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		74,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;controls/qtoolbar.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;controls/qstatusbar.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		75,
 		1,
-		"comment_text",
-		"23/08/2025",
-		"08:04:59",
-		"value;;_RV_;;Common/Shared Classes between controls;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"load",
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;controls/qtoolbar.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		76,
 		1,
-		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;common/commonattributesmethods.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"comment_text",
+		"06/06/2026",
+		"14:33:23",
+		"value;;_RV_;;Common/Shared Classes between controls;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		77,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;common/moveresizecorners.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;common/commonattributesmethods.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		78,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;common/objectcorners.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;common/moveresizecorners.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		79,
 		1,
-		"comment_text",
-		"23/08/2025",
-		"08:04:59",
-		"value;;_RV_;;Load File System;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"load",
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;common/objectcorners.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		80,
 		1,
-		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;filesystem/filesystem.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"comment_text",
+		"06/06/2026",
+		"14:33:23",
+		"value;;_RV_;;Load File System;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		81,
 		1,
 		"load",
-		"23/08/2025",
-		"08:04:59",
-		"file;;_RV_;;filesystem/codegenerator.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;filesystem/filesystem.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		82,
 		1,
-		"comment_text",
-		"23/08/2025",
-		"08:04:59",
-		"value;;_RV_;;Access the package classes;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"load",
+		"06/06/2026",
+		"14:33:23",
+		"file;;_RV_;;filesystem/codegenerator.ring;;_RV_;;type;;_RV_;;1;;_RV_;;"
 	],
 	[
 		83,
 		1,
-		"import",
-		"23/08/2025",
-		"08:04:59",
-		"value;;_RV_;;formdesigner;;_RV_;;"
+		"comment_text",
+		"06/06/2026",
+		"14:33:23",
+		"value;;_RV_;;Access the package classes;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		84,
 		1,
-		"comment_text",
-		"23/08/2025",
-		"08:04:59",
-		"value;;_RV_;;Prepare Controls Classes;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"import",
+		"06/06/2026",
+		"14:33:23",
+		"value;;_RV_;;formdesigner;;_RV_;;"
 	],
 	[
 		85,
 		1,
-		"forinloop",
-		"23/08/2025",
-		"08:04:59",
-		"variable;;_RV_;;cClassName;;_RV_;;in;;_RV_;;[:FormDesigner_QLabel,:FormDesigner_QPushButton,:FormDesigner_QLineEdit,:FormDesigner_QTextEdit,:FormDesigner_QListWidget,:FormDesigner_QCheckBox,:FormDesigner_QImage,:FormDesigner_QSlider,:FormDesigner_QProgressbar,:FormDesigner_QSpinBox,:FormDesigner_QComboBox,:FormDesigner_QDateTimeEdit,:FormDesigner_QTableWidget,:FormDesigner_QTreeWidget,:FormDesigner_QRadioButton,:FormDesigner_QWebView,:FormDesigner_QDial,:FormDesigner_QVideoWidget,:FormDesigner_QFrame3,:FormDesigner_QLCDNumber,:FormDesigner_QHyperLink,:FormDesigner_QTimer,:FormDesigner_QAllEvents,:FormDesigner_QLayout,:FormDesigner_QTabWidget,:FormDesigner_QStatusBar,:FormDesigner_QToolbar];;_RV_;;step;;_RV_;;1;;_RV_;;"
+		"comment_text",
+		"06/06/2026",
+		"14:33:23",
+		"value;;_RV_;;Prepare Controls Classes;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		86,
 		1,
-		"callfunc",
-		"23/08/2025",
-		"08:04:59",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;mergemethods;;_RV_;;parameters;;_RV_;;cClassName,:MoveResizeCorners;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"forinloop",
+		"06/06/2026",
+		"14:33:23",
+		"variable;;_RV_;;cClassName;;_RV_;;in;;_RV_;;[:FormDesigner_QLabel,:FormDesigner_QPushButton,:FormDesigner_QLineEdit,:FormDesigner_QTextEdit,:FormDesigner_QListWidget,:FormDesigner_QCheckBox,:FormDesigner_QImage,:FormDesigner_QSlider,:FormDesigner_QProgressbar,:FormDesigner_QSpinBox,:FormDesigner_QComboBox,:FormDesigner_QDateTimeEdit,:FormDesigner_QTableWidget,:FormDesigner_QTreeWidget,:FormDesigner_QRadioButton,:FormDesigner_QWebView,:FormDesigner_QDial,:FormDesigner_QVideoWidget,:FormDesigner_QFrame3,:FormDesigner_QLCDNumber,:FormDesigner_QHyperLink,:FormDesigner_QTimer,:FormDesigner_QAllEvents,:FormDesigner_QLayout,:FormDesigner_QTabWidget,:FormDesigner_QStatusBar,:FormDesigner_QToolbar];;_RV_;;step;;_RV_;;1;;_RV_;;"
 	],
 	[
 		87,
 		1,
 		"callfunc",
-		"23/08/2025",
-		"08:04:59",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;mergemethods;;_RV_;;parameters;;_RV_;;cClassName,:CommonAttributesMethods;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;mergemethods;;_RV_;;parameters;;_RV_;;cClassName,:MoveResizeCorners;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		88,
 		1,
-		"comment_text",
-		"23/08/2025",
-		"08:04:59",
-		"value;;_RV_;;Constants and Public Variables;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"callfunc",
+		"06/06/2026",
+		"14:33:23",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;mergemethods;;_RV_;;parameters;;_RV_;;cClassName,:CommonAttributesMethods;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
 	],
 	[
 		89,
 		1,
-		"assignment",
-		"23/08/2025",
-		"08:04:59",
-		"leftside;;_RV_;;C_AFTERCOMMON;;_RV_;;rightside;;_RV_;;8;;_RV_;;"
+		"comment_text",
+		"06/06/2026",
+		"14:33:23",
+		"value;;_RV_;;Constants and Public Variables;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		90,
 		1,
-		"comment_text",
-		"23/08/2025",
-		"08:04:59",
-		"value;;_RV_;;Index After common properties;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"06/06/2026",
+		"14:33:23",
+		"leftside;;_RV_;;C_AFTERCOMMON;;_RV_;;rightside;;_RV_;;8;;_RV_;;"
 	],
 	[
 		91,
 		1,
-		"assignment",
-		"23/08/2025",
-		"08:04:59",
-		"leftside;;_RV_;;$cCurrentDir;;_RV_;;rightside;;_RV_;;CurrentDir()+"+char(34)+"/"+char(34)+";;_RV_;;"
+		"comment_text",
+		"06/06/2026",
+		"14:33:23",
+		"value;;_RV_;;Index After common properties;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		92,
 		1,
-		"comment_text",
-		"23/08/2025",
-		"08:04:59",
-		"value;;_RV_;;Start the Application;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"06/06/2026",
+		"14:33:23",
+		"leftside;;_RV_;;$cCurrentDir;;_RV_;;rightside;;_RV_;;CurrentDir()+"+char(34)+"/"+char(34)+";;_RV_;;"
 	],
 	[
 		93,
 		1,
-		"newobj",
-		"23/08/2025",
-		"08:04:59",
-		"value;;_RV_;;oFDApp;;_RV_;;value2;;_RV_;;qApp;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
+		"comment_text",
+		"06/06/2026",
+		"14:33:23",
+		"value;;_RV_;;Start the Application;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		94,
 		1,
-		"ifstatement",
-		"23/08/2025",
-		"08:04:59",
-		"condition;;_RV_;;IsMainSourceFile();;_RV_;;"
+		"newobj",
+		"06/06/2026",
+		"14:33:23",
+		"value;;_RV_;;oFDApp;;_RV_;;value2;;_RV_;;QApp;;_RV_;;value3;;_RV_;;;;_RV_;;braces;;_RV_;;2;;_RV_;;init;;_RV_;;0;;_RV_;;"
 	],
 	[
 		95,
 		1,
-		"comment_text",
-		"23/08/2025",
-		"08:04:59",
-		"value;;_RV_;;Because oFDApp is used in other classes;;_RV_;;value2;;_RV_;;0;;_RV_;;"
+		"ifstatement",
+		"06/06/2026",
+		"14:33:23",
+		"condition;;_RV_;;isMainSourceFile();;_RV_;;"
 	],
 	[
 		96,
 		1,
-		"assignment",
-		"23/08/2025",
-		"08:04:59",
-		"leftside;;_RV_;;$FDSubApp;;_RV_;;rightside;;_RV_;;False;;_RV_;;"
+		"comment_text",
+		"06/06/2026",
+		"14:33:23",
+		"value;;_RV_;;Because oFDApp is used in other classes;;_RV_;;value2;;_RV_;;0;;_RV_;;"
 	],
 	[
 		97,
 		1,
-		"callfunc",
-		"23/08/2025",
-		"08:04:59",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;StyleFusion;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"assignment",
+		"06/06/2026",
+		"14:33:23",
+		"leftside;;_RV_;;$FDSubApp;;_RV_;;rightside;;_RV_;;False;;_RV_;;"
 	],
 	[
 		98,
 		1,
-		"callfunc",
-		"23/08/2025",
-		"08:04:59",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;Open_Window;;_RV_;;parameters;;_RV_;;:FormDesignerController;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+		"ifstatement",
+		"06/06/2026",
+		"14:33:23",
+		"condition;;_RV_;;isWebAssembly();;_RV_;;"
 	],
 	[
 		99,
 		1,
 		"callfunc",
-		"23/08/2025",
-		"08:04:59",
-		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;exec;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+		"06/06/2026",
+		"14:33:23",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;styleFusionBlack;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
 	],
 	[
 		100,
 		1,
 		"else",
-		"23/08/2025",
-		"08:04:59",
+		"06/06/2026",
+		"14:33:23",
 		""
 	],
 	[
 		101,
 		1,
+		"callfunc",
+		"06/06/2026",
+		"14:33:23",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;styleFusion;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+	],
+	[
+		102,
+		1,
+		"callfunc",
+		"06/06/2026",
+		"14:33:23",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;openWindow;;_RV_;;parameters;;_RV_;;:FormDesignerController;;_RV_;;lparameters;;_RV_;;2;;_RV_;;"
+	],
+	[
+		103,
+		1,
+		"callfunc",
+		"06/06/2026",
+		"14:33:23",
+		"loutput;;_RV_;;0;;_RV_;;name;;_RV_;;exec;;_RV_;;parameters;;_RV_;;;;_RV_;;lparameters;;_RV_;;0;;_RV_;;"
+	],
+	[
+		104,
+		1,
+		"else",
+		"06/06/2026",
+		"14:33:23",
+		""
+	],
+	[
+		105,
+		1,
 		"assignment",
-		"23/08/2025",
-		"08:04:59",
+		"06/06/2026",
+		"14:33:23",
 		"leftside;;_RV_;;$FDSubApp;;_RV_;;rightside;;_RV_;;True;;_RV_;;"
 	]
 ]

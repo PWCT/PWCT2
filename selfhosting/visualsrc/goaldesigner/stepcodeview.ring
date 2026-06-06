@@ -17,7 +17,7 @@ class StepCodeView from QTextEdit
 		super.init(win)
 		font = new qFont("",0,0,0)
 		font.setpixelsize(nFontSize)
-		return self
+		return self 
 		#/*
 		#		The next method increase the font size by 2 points
 		#		Parameters : None

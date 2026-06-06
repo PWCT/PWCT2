@@ -4,6 +4,7 @@
 #**	Date : 2021.02.02
 #**	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 #*/
+load "tokenslib.ring"
 C_VSF_VERSION = "1.0.0"
 class VisualSourceFile
 	cFileName = T_VSF_NONAMEPWCT
@@ -149,7 +150,12 @@ class VisualSourceFile
 	} 
 	func LoadTables  { 
 		Log("Start load tables")
-		eval(read(FileNameEncoding(cFileName)))
+		cPWCTFileContent = read(FileNameEncoding(cFileName))
+		if !checkRingCode([:code = substr(cPWCTFileContent,"char(34)","")]) { 
+			? "Sorry, The file: "+cFileName+" doesn't pass the security check!"
+			return 
+		} 
+		eval(cPWCTFileContent)
 		if lUseSystemLog { 
 			oSystemLog.addMessage("End load tables")
 		} 

@@ -21,14 +21,14 @@ class ComponentsTreeView from StepsTreeView
 	#		Parameters : None
 	#		Output : reference to the object (Self)
 	#	*/
-	func Init win { 
+	func init win { 
 		if  NOT lUseLabels { 
 			super.init2(win)
 			TreeStyle()
 			else
 				super.init(win)
 		} 
-		return self
+		return self 
 	} 
 	func TreeStyle  { 
 		setStyleSheet("QTreeWidget { color: "+C_COMPONENTSBROWSER_COLOR+"; font-size: "+nFontSize+"pt  } "+'QTreeWidget::branch:open { image: url("'+C_LABELIMAGE_NODEICON+'") }'+"QTreeWidget::!active { selection-background-color:rgba(0,65,255,255) ; selection-color:white; } ; "+'QTreeWidget::branch:closed:has-children { image: url("'+C_LABELIMAGE_NODEICON+'") }')

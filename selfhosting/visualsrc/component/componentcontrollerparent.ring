@@ -408,7 +408,7 @@ class ComponentControllerParent from WindowsControllerParent
 		if PWCTIsMobile(:InteractionPage) { 
 			oView.win.showmaximized()
 			else
-				Super.Start()
+				super.Start()
 		} 
 		oView.win.activateWindow()
 		#/*
@@ -440,7 +440,7 @@ class ComponentControllerParent from WindowsControllerParent
 		#		Parameters : Text as String
 		#		Output : Styled Text as String
 		#	*/
-		Super.CloseAction()
+		super.CloseAction()
 	} 
 	func StyleData cText { 
 		return oStyle. text( htmlspecialchars( cText ) ,"C_STEPCOLOR_DATA_TEXT" ,"C_STEPCOLOR_DATA_BACKCOLOR" ) 

@@ -404,7 +404,7 @@ class ComponentsBrowserController from WindowsControllerParent
 		if PWCTisMobile(:ComponentsBrowser) { 
 			oView.win.showmaximized()
 			else
-				Super.Start()
+				super.Start()
 		} 
 		oView.win.activateWindow()
 		oView.oTextSearch.SetFocus(0)
@@ -442,7 +442,7 @@ class ComponentsBrowserController from WindowsControllerParent
 		#/*
 		#		Update the font size
 		#	*/
-		Super.CloseAction()
+		super.CloseAction()
 	} 
 	func UpdateFontSize nSize { 
 		oView.oComponentsTree {

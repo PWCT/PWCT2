@@ -1,12 +1,16 @@
 load "stdlib.ring"
+
 ? "Started"
+
 aFiles = dir("ringpwct")
 aFiles2 = []
-for item in aFiles step 1 { 
-	if (item[1] != "ringpwct.ring") AND substr(item[1],".ring") { 
-		aFiles2+item[1]
-	} 
-} 
+
+for item in aFiles
+	if (item[1] != "ringpwct.ring") and substr(item[1],".ring") 
+		aFiles2 + item[1]
+	ok
+next
+
 cContent = "/*
 **	Project 	: Programming Without Coding Technology (PWCT) Version 2.0
 **	File Purpose 	: Load RingPWCT Components 
@@ -19,9 +23,11 @@ C_VPL_NAME = 'RingPWCT'
 # Load RingPWCT Components 
 
 "
-for cFile in aFiles2 step 1 { 
-	cContent += (Char(9)+'load "'+cFile+'"'+nl)
-} 
+
+for cFile in aFiles2
+	cContent += (Char(9) + 'load "' + cFile + '"' + nl)
+next
+
 cContent += "
 	
 # Add components to the Components list 
@@ -29,10 +35,13 @@ cContent += "
 	cComponentsPath = C_CB_COMPONENTSPATH
 
 "
-for cFile in aFiles2 step 1 { 
-	cContent += (Char(9)+'aComponentsFilesList + (cComponentsPath + "'+cFile+'")'+nl)
-} 
+
+for cFile in aFiles2
+	cContent += (Char(9) + 'aComponentsFilesList + (cComponentsPath + "' + cFile + '")' + nl)
+next
+
 ? "Writing ringpwct.ring"
 cContent = substr(cContent,nl,windowsnl())
 write("ringpwct\ringpwct.ring",cContent)
+
 ? "Done"

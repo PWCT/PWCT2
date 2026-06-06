@@ -19,7 +19,7 @@ class TreeLabel from Qwidget
 		setenabled(false)
 		oPad.setText("")
 		setLayout(oLayout)
-		return self
+		return self 
 	} 
 	func setStyleSheet cStyle { 
 		oLabel.setStyleSheet(cStyle)

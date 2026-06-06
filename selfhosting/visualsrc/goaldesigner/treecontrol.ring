@@ -35,7 +35,7 @@ class TreeControl from qTreeWidget
 		font.setpixelsize(nFontSize)
 		#setUniformRowHeights(True)
 		setAnimated(False)
-		return self
+		return self 
 		#/*
 		#		The next method Add new node to the Tree control	
 		#		Parameters : The Parent Node ID, The Node ID, The Node Text

@@ -276,7 +276,7 @@ T_IP_OK = "حسنا"
 T_IP_CLOSE = "اغلاق"
 #About
 T_ABOUT_TITLE = "حول المشروع"
-T_ABOUT_DEVELOPER = "2023-2025, مشروع تقنية البرمجة بدون كود"
+T_ABOUT_DEVELOPER = "2023-2026, مشروع تقنية البرمجة بدون كود"
 #GUI Library
 T_GUILIB_TITLE = "الواجهة الرسومية"
 T_GUILIB_INFO = "هذا المشروع يستخدم مكتبة Qt من خلال RingQt"

@@ -152,6 +152,10 @@ class MenubarDesignerController from windowsControllerParent
 		if cString = NULL { 
 			return 
 		} 
+		if !checkRingCode([:code = cString]) { 
+			? "Sorry, the menu code doesn't pass the security check!"
+			return 
+		} 
 		eval(cString)
 		AddChildren(oRoot,aMenuData[:Children])
 	} 

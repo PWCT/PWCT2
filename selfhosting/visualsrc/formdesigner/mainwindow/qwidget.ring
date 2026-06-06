@@ -26,7 +26,7 @@ class FormDesigner_QWidget from QWidget
 	lMove = False
 	func init  { 
 		super.init()
-		return self
+		return self 
 	} 
 	func GUILibraryValue  { 
 		return nGUILibrary
@@ -394,6 +394,10 @@ class FormDesigner_QWidget from QWidget
 		return cCode
 	} 
 	func GenerateMenubarCode cMenu { 
+		if !checkRingCode([:code = cMenu]) { 
+			? "Sorry, the menu code doesn't pass the security check!"
+			return 
+		} 
 		eval(cMenu)
 		nMenubarCounter = [0,0]
 		cCode = "oMenuBar = new qmenubar(win) {"+nl

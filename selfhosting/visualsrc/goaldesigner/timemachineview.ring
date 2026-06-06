@@ -21,7 +21,7 @@ class TimeMachineView from QSlider
 		setMaximum(nInteractionPoints)
 		setorientation(Qt_Horizontal)
 		#we return self to be able to use braces {} after calling init()
-		return self
+		return self 
 		#/*
 		#		The next method set the Maximum Interactions Count
 		#		Then move to the last value (last Interaction)

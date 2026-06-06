@@ -10,6 +10,7 @@ class ParserStmt
 		#/* Statement --> Load Literal */
 		if iskeyword(K_LOAD) { 
 			clearTextBuffer()
+			nLoadCounter++
 			nexttoken()
 			nLoadType = 1
 			#/* Load Package Command */
@@ -20,6 +21,7 @@ class ParserStmt
 					nLoadType = 3
 					nexttoken()
 			} 
+			nLoadCounter--
 			AddParameterAndValue(:Type,nLoadType)
 			if isliteral() { 
 				nexttoken()

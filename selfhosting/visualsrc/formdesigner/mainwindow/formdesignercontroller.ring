@@ -630,9 +630,9 @@ class FormDesignerController from WindowsControllerParent
 			#				  be sure that the event will be defined for the correct object that will be
 			#				  created from this class.
 			#				*/
-			setmousebuttonpressevent(This.Method(:ActiveObjectMousePress+"("+this.oModel.GetCurrentID()+")"))
-			setMouseButtonReleaseEvent(This.Method(:ActiveObjectMouseRelease+"("+this.oModel.GetCurrentID()+")"))
-			setMouseMoveEvent(This.Method(:ActiveObjectMouseMove+"("+this.oModel.GetCurrentID()+")"))
+			setmousebuttonpressevent(this.Method(:ActiveObjectMousePress+"("+this.oModel.GetCurrentID()+")"))
+			setMouseButtonReleaseEvent(this.Method(:ActiveObjectMouseRelease+"("+this.oModel.GetCurrentID()+")"))
+			setMouseMoveEvent(this.Method(:ActiveObjectMouseMove+"("+this.oModel.GetCurrentID()+")"))
 		}
 		oModel.ActiveObject().installeventfilter(oFilter)
 		oModel.ActiveObject().oFilter = oFilter
@@ -1284,7 +1284,7 @@ class FormDesignerController from WindowsControllerParent
 			oView.win.parentwidget().Hide()
 			return 
 		} 
-		Super.CloseAction()
+		super.CloseAction()
 	} 
 	func Duplicate  { 
 		#Selected objects - if we have many objects selected

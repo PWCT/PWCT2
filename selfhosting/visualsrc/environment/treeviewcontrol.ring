@@ -17,7 +17,7 @@ class TreeViewControl from qtreeview
 		setUniformRowHeights(True)
 		setAnimated(False)
 		UpdateFontSize()
-		return self
+		return self 
 	} 
 	func IncreaseFontSize  { 
 		if nFontSize >= 72 { 

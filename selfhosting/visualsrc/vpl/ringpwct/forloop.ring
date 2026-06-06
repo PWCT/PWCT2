@@ -7,8 +7,8 @@
 class ForLoopComponentController from ComponentControllerParent
 	oView = new ForLoopComponentView
 	func GenerateAction  { 
-		NewParentStep(T_CT_FORLOOP_ST_FOR+StyleData(Variable(:start))+" "+T_CT_FORLOOP_ST_TO+StyleData(Variable(: to))+" "+T_CT_FORLOOP_ST_STEP+StyleData(Variable(: step)))
-		SetStepCode("for "+Variable(:start)+" to "+Variable(: to)+" step "+Variable(: step)+" { ")
+		NewParentStep(T_CT_FORLOOP_ST_FOR+StyleData(Variable(:start))+" "+T_CT_FORLOOP_ST_TO+StyleData(Variable(:to))+" "+T_CT_FORLOOP_ST_STEP+StyleData(Variable(:step)))
+		SetStepCode("for "+Variable(:start)+" to "+Variable(:to)+" step "+Variable(:step)+" { ")
 		AllowInteraction()
 		NewStep(T_CT_FORLOOP_ST_STARTHERE)
 		#"Start Here"
@@ -26,8 +26,8 @@ class ForLoopComponentView from ComponentViewParent
 	#"Start : "
 	TextBoxValue(T_CT_FORLOOP_IP_START,:start,T_CT_FORLOOP_IP_STARTVALUE)
 	#"to : "
-	TextBoxValue(T_CT_FORLOOP_IP_TO,: to,"10")
+	TextBoxValue(T_CT_FORLOOP_IP_TO,:to,"10")
 	#"Step : "
-	TextBoxValue(T_CT_FORLOOP_IP_STEP,: step,"1")
+	TextBoxValue(T_CT_FORLOOP_IP_STEP,:step,"1")
 	PageButtons()
 private

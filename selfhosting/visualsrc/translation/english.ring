@@ -276,7 +276,7 @@ T_IP_OK = "Ok"
 T_IP_CLOSE = "Close"
 #About
 T_ABOUT_TITLE = "About"
-T_ABOUT_DEVELOPER = "Programming Without Coding Technology (PWCT)"+nl+"Version: 2.0 Rev. 2025.10.04"+nl+"2023-2025, Mahmoud Fayed"
+T_ABOUT_DEVELOPER = "Programming Without Coding Technology (PWCT)"+nl+"Version: 2.0 Rev. 2026.06.06"+nl+"2023-2026, Mahmoud Fayed"
 #GUI Library
 T_GUILIB_TITLE = "GUI Library"
 T_GUILIB_INFO = "This application uses the Qt GUI Library through RingQt"

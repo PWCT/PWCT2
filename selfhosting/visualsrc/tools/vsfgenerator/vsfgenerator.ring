@@ -446,7 +446,7 @@ class VSFGenerator
 			cStep = "1"
 		} 
 		#Use the Interaction Page
-		nIID = UseComponent("forloop",[:start = cStart,: to = cTo,: step = cStep])
+		nIID = UseComponent("forloop",[:start = cStart,:to = cTo,:step = cStep])
 		#Generate the Step and the Code
 		nStepNumber = 1
 		nStepID = AddGeneratedStep(nParentID,T_CT_FORLOOP_ST_FOR+StyleData(cStart)+" "+T_CT_FORLOOP_ST_TO+StyleData(cTo)+" "+T_CT_FORLOOP_ST_STEP+StyleData(cStep),nIID,nStepNumber,C_STEPTYPE_ROOT)
@@ -469,7 +469,7 @@ class VSFGenerator
 			cStep = "1"
 		} 
 		#Use the Interaction Page
-		nIID = UseComponent("forinloop",[:variable = cVariable,: in = cIn,: step = cStep])
+		nIID = UseComponent("forinloop",[:variable = cVariable,:in = cIn,:step = cStep])
 		#Generate the Step and the Code
 		nStepNumber = 1
 		nStepID = AddGeneratedStep(nParentID,T_CT_FORINLOOP_ST_FOR+StyleData(cVariable)+" "+T_CT_FORINLOOP_ST_IN+StyleData(cIn)+" "+T_CT_FORINLOOP_ST_STEP+StyleData(cStep),nIID,nStepNumber,C_STEPTYPE_ROOT)
