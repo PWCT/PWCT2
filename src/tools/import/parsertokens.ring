@@ -327,7 +327,7 @@ class ParserTokens
 		     ((! nTryCatchCounter) &&
 		      (iskeyword(K_CATCH) || iskeyword(K_DONE))) ||
 		     /* Check the Again keyword */
-		     ((! nDoAgainCounter) && (iskeyword(K_AGAIN))) ||
+		     ((! nDoAgainCounter) && (! nLoadCounter) && (iskeyword(K_AGAIN))) ||
 		     /* Check keywords shared by if-statement and switch-statement */
 		     ((! nIfCounter) && ( ! nSwitchCounter ) &&
 		      (iskeyword(K_ELSE) || iskeyword(K_OTHER))))) {

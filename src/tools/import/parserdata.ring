@@ -62,6 +62,7 @@ class Parser
 		nTryCatchCounter = 0
 		nDoAgainCounter = 0
 		nFromCounter = 0
+		nLoadCounter = 0
 
 	# Object provide methods determines what to generate (Instructions)	
 		oTarget = new Target 
