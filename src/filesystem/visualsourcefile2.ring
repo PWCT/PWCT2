@@ -5,6 +5,8 @@
 **	Author :  Mahmoud Fayed <msfclipper@yahoo.com>
 */
 
+load "tokenslib.ring"
+
 C_VSF_VERSION    = "1.0.0"
 
 class VisualSourceFile
